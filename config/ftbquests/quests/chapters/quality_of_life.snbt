@@ -1,0 +1,344 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "quality_of_life"
+	group: "28726466D987C725"
+	icon: "create:crafting_blueprint"
+	id: "67F6F5055518AC4F"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "effortlessbuilding:reach_upgrade1"
+			id: "3754DD882E5E6E37"
+			shape: "rsquare"
+			tasks: [{
+				id: "6BAA2573B24B0BD7"
+				title: "Effortless Building"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: -2.5d
+		}
+		{
+			icon: "travelanchors:travel_anchor"
+			id: "2092BC62D0ABB53F"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "24453FAD009278C1"
+					item: "travelanchors:travel_anchor"
+					type: "item"
+				}
+				{
+					id: "46B3170CFFC70CD7"
+					item: "travelanchors:travel_staff"
+					type: "item"
+				}
+			]
+			title: "Travel Anchors and Travel Staff"
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			icon: "functionalstorage:oak_1"
+			id: "5F17F1158F33BF30"
+			shape: "rsquare"
+			tasks: [{
+				id: "7CFC899DD7721354"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "Any #functionalstorage:drawer"
+				type: "item"
+			}]
+			title: "Functional Storage"
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			id: "2D522E868DFD339A"
+			shape: "rsquare"
+			tasks: [{
+				id: "322F15DEB6137FBD"
+				item: "itemcollectors:basic_collector"
+				type: "item"
+			}]
+			title: "Item Collectors"
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			id: "069CEEF34F469ADE"
+			shape: "rsquare"
+			tasks: [{
+				id: "1C116CCF53EC0709"
+				item: {
+					Count: 1b
+					id: "simplybackpacks:commonbackpack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Backpacks"
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			id: "7403111E2D8E1EDB"
+			shape: "rsquare"
+			tasks: [{
+				id: "036AD2025E2A209B"
+				item: "xtonesreworked:xtone_tile"
+				type: "item"
+			}]
+			title: "Xtones"
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			icon: "architects_palette:abyssaline"
+			id: "5D369315B632436F"
+			shape: "rsquare"
+			tasks: [{
+				id: "633549F4F9B8A804"
+				title: "Architect's Palette"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			icon: "dustrial_decor:industrial_iron_block"
+			id: "064FA34CC2599EBE"
+			shape: "rsquare"
+			tasks: [{
+				id: "7A657F38412F3CBC"
+				title: "'Durstrial Decor"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			icon: "fantasyfurniture:nordic/bed_single"
+			id: "043100DC9FEC89E7"
+			shape: "rsquare"
+			tasks: [{
+				id: "7DB860B42FC87155"
+				title: "Fantasy Furniture"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			id: "402F4F6E8631D2CB"
+			shape: "rsquare"
+			tasks: [{
+				id: "037092F02AD46BA6"
+				item: "create:clipboard"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			id: "633BCF86D1CD7C76"
+			shape: "rsquare"
+			tasks: [{
+				id: "19CD6F9C8139343A"
+				item: "fluxnetworks:flux_controller"
+				type: "item"
+			}]
+			title: "Flux Networks"
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			id: "50AF80B4A20370F4"
+			shape: "rsquare"
+			tasks: [{
+				id: "07A5BC0DBC6A3476"
+				item: "jecalculation:item_calculator_craft"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			id: "3232A7A69C2905D9"
+			shape: "rsquare"
+			tasks: [{
+				id: "792BCDE083DD56CF"
+				item: "laserio:laser_node"
+				type: "item"
+			}]
+			title: "LaserIO"
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			id: "0A8700DFAE371A36"
+			shape: "rsquare"
+			tasks: [{
+				id: "0B344D1B6347ECA7"
+				item: {
+					Count: 1b
+					id: "rechiseled:chisel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Rechiseled"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			id: "6E45F559B61A2CC4"
+			shape: "rsquare"
+			tasks: [{
+				id: "4077A935C3E469E7"
+				item: "create:crafting_blueprint"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			id: "7CBFEE2EF25C562C"
+			shape: "rsquare"
+			tasks: [{
+				id: "513DC60FF01AFFA2"
+				item: {
+					Count: 1b
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.5d
+		}
+		{
+			id: "6DEDF965FFD12B7B"
+			shape: "rsquare"
+			tasks: [{
+				id: "06123F1FF50AD404"
+				item: {
+					Count: 1b
+					id: "jetboots:jetboots"
+					tag: {
+						bml-item-xp: 0
+						energy: 0
+						jetboots-muffled: 1b
+						jetboots-upgrade-muffled: 1b
+						jetboots-upgrade-shock-absorber: 1b
+						jetboots-upgrade-thruster: 1b
+						max_energy: 2880000
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.5d
+		}
+		{
+			id: "48D2144395562A62"
+			shape: "rsquare"
+			tasks: [{
+				id: "457960EC0164CC29"
+				item: {
+					Count: 1b
+					id: "enderchests:ender_chest"
+					tag: {
+						code: "000"
+						owner: "all"
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			id: "5CA8EFB9CE8473FB"
+			shape: "rsquare"
+			tasks: [{
+				id: "02D516C817862D95"
+				item: {
+					Count: 1b
+					id: "endertanks:ender_tank"
+					tag: {
+						code: "000"
+						owner: "all"
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			id: "3883FCBF2C286141"
+			rewards: [
+				{
+					count: 16
+					id: "5AF5AB053C826FC3"
+					item: "komarumod:komaru_powder"
+					type: "item"
+				}
+				{
+					id: "3716891B141ACB9B"
+					item: "komarumod:komaru_spawn_egg"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "4F7887A26E18BC9C"
+				item: "komarumod:komaru_powder"
+				type: "item"
+			}]
+			title: "Komaru Cat"
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			icon: "pipez:item_pipe"
+			id: "5DEBB63E9EE8A6B0"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "23FC4616C9936CE9"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					id: "31779798A2A0ADFC"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "24F35CD4D0B08500"
+					item: "pipez:energy_pipe"
+					type: "item"
+				}
+				{
+					id: "7DEB0F6A66FFD525"
+					item: "pipez:universal_pipe"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 1.5d
+		}
+	]
+	title: "Quality Of Life"
+}

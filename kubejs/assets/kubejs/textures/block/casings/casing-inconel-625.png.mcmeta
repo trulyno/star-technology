@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/casing-inconel-625-ctm"
+    }
+}

@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modular_powersuits"
+	group: "28726466D987C725"
+	id: "1110A8E03318F838"
+	order_index: 3
+	quest_links: [ ]
+	quests: [{
+		id: "0AC96645D1F544EB"
+		tasks: [{
+			id: "522E59B8ECDFDD61"
+			title: "WIP"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Modular Powersuits"
+}

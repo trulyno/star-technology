@@ -1,0 +1,240 @@
+{
+  "Dimensions": {
+  
+    "End": {
+    
+      // Should end generate as in default world type? [default: false]
+      "Default": true,
+      
+      // Should the main island be generated as normal? [default: true]
+      "mainIsland": true
+    },
+    
+    "Nether": {
+    
+      // Should nether generate as in default world type? [default: false]
+      "Default": true
+    },
+    
+    "Overworld": {
+    
+      // Should overworld generate as in default world type? [default: false]
+      "Default": false
+    }
+  },
+  
+  "Inventory": {
+  
+    // Should all items be reset on first world join? [default: false]
+    // This will delete all the items given on spawn from other mods guide books.
+    "clearInv": false,
+    
+    // Should players' items be dropped when leaving a team? [default: true]
+    "dropItems": true
+  },
+  
+  "Spawn": {
+  
+    // The dimension the islands will be generated in.
+    "dimension": "minecraft:overworld",
+    
+    // The entities which you can interact with within the spawn protection
+    // This is a resource list. See https://moddingx.org/libx/org/moddingx/libx/util/data/ResourceList.html#use_resource_lists_in_configs
+    "interactionEntitiesInSpawnProtection": {
+      "allow_list": true,
+      "elements": []
+    },
+    
+    // The radius to find a valid spawn if no given spawn is valid
+    // Minimum: 0
+    "radius": 50,
+    
+    // A list of event types which will be prevented:
+    //    interact_entities = Interacting with entities, e.g. riding a pig
+    //    interact_blocks   = Interacting with blocks, e.g. activating buttons, placing, or destroying blocks
+    //    mob_griefing      = Mobs destroying the world
+    //    explosions        = TNT, creeper, or other explosions
+    //    crop_grow         = Crops increasing their growth status
+    //    mobs_spawn        = Mobs spawning
+    //    mobs_spawn_egg    = Mobs being summoned using a spawn egg
+    //    damage            = Attacking others, or getting attacked
+    //    healing           = Getting healed and saturated on spawn
+    "spawnProtectionEvents": [
+      "interact_entities",
+      "interact_blocks",
+      "mob_griefing",
+      "explosions",
+      "crop_grow",
+      "mobs_spawn",
+      "mobs_spawn_egg",
+      "damage",
+      "healing"
+    ],
+    
+    // The radius of chunks where to apply spawn protection. In this area, only op players can avoid this.
+    "spawnProtectionRadius": 0,
+    
+    "Height": {
+    
+      // If the spawn height type is set to "range", this offset will be used to slightly move the spawn height in any direction.
+      // Negative values go down, positive values go up.
+      "offset": 0,
+      
+      // You can set a range from minY to maxY. minY is the bottom spawn position. maxY is the top spawn dimension.
+      // If you set the spawn height type to "set", the bottom value will be used for a set height. Otherwise, the height will be calculated.
+      "range": {
+        "bottom": 64,
+        "top": 319
+      },
+      
+      // set:
+      //    Uses the bottom height of the range
+      // range_top:
+      //    Searches from the top position down to the bottom position for a valid spawn.
+      //    If no valid position was found, the top position will be used.
+      // range_bottom:
+      //    Searches from the top position down to the bottom position for a valid spawn.
+      //    If no valid position was found, the bottom position will be used.
+      // Allowed values: set, range_bottom, range_top
+      "spawnType": "set"
+    }
+  },
+  
+  // With this you can configure the structures and features which are generated.
+  // INFO: You can also just use the modid as wildcard for all features/structures from this mod.
+  // WARNING: Some features like trees need special surface!
+  // WARNING: This only works for vanilla dimensions (Overworld, Nether, End)
+  "Structures": {
+  
+    // All the features that should be generated.
+    // A list with all possible structures can be found in config/skyblockbuilder/data/features.txt
+    // INFO: The two default values are required for the obsidian towers in end. If this is missing, they will be first generated when respawning the dragon.
+    // This is a resource list. See https://moddingx.org/libx/org/moddingx/libx/util/data/ResourceList.html#use_resource_lists_in_configs
+    "generationFeatures": {
+      "allow_list": true,
+      "elements": [
+        "minecraft:end_spike",
+        "minecraft:end_gateway_return"
+      ]
+    },
+    
+    // All the structures that should be generated.
+    // A list with all possible structures can be found in config/skyblockbuilder/data/structures.txt
+    // This is a resource list. See https://moddingx.org/libx/org/moddingx/libx/util/data/ResourceList.html#use_resource_lists_in_configs
+    "generationStructures": {
+      "allow_list": true,
+      "elements": [
+        "minecraft:fortress"
+      ]
+    }
+  },
+  
+  "Utility": {
+  
+    // Should players be able to create their own team? [default: false]
+    "createOwnTeam": false,
+    
+    // Force the check if the world is skyblock
+    // This enables the commands in worlds without any skyblock dimension
+    // USE AT YOUR OWN RISK, NO SUPPORT FOR DEFAULT WORLDS WITH THIS ENABLED
+    "forceSkyblockCheck": false,
+    
+    // Should players be able to leave their team or invite others? [default: true]
+    "selfManage": true,
+    
+    "Spawns": {
+    
+      // Should players be able to modify their spawn positions? [default: true]
+      "modifySpawns": true,
+      
+      // The range from island center for possible spawns to add. [default: 50]
+      "range": 50
+    },
+    
+    "Teleports": {
+    
+      // Should players be able to visit other island? [default: true]
+      "allowVisits": true,
+      
+      // Should players be able to teleport to another dimension? [default: true]
+      "crossDimensionTeleportation": true,
+      
+      // Should players be able to teleport to their home island? [default: true]
+      "home": true,
+      
+      // Cooldown in ticks for teleporting back home. [default: 3600 = 3min]
+      "homeCooldown": 3600,
+      
+      // Should players be able to teleport to spawn? [default: true]
+      "spawn": true,
+      
+      // Cooldown in ticks for teleporting to spawn. [default: 3600 = 3min]
+      "spawnCooldown": 3600,
+      
+      // Dimensions in this list are not allowed for executing teleportation commands. Inverted behaviour if you set "allow_list" to true.
+      // This is a resource list. See https://moddingx.org/libx/org/moddingx/libx/util/data/ResourceList.html#use_resource_lists_in_configs
+      "teleportationDimensions": {
+        "allow_list": false,
+        "elements": []
+      }
+    }
+  },
+  
+  "World": {
+  
+    // A list of biomes for each dimension.
+    // You can not use this for the end dimension. The end dimension will always have it's five biomes.
+    // Overworld has all oceans by default because animals cannot spawn in these biomes.
+    // These are resource lists. See https://moddingx.org/libx/org/moddingx/libx/util/data/ResourceList.html#use_resource_lists_in_configs
+    "biomes": {
+      "minecraft:overworld": {
+        "allow_list": false,
+        "elements": [
+          "minecraft:*ocean*"
+        ]
+      },
+      "minecraft:the_nether": {
+        "allow_list": false,
+        "elements": []
+      }
+    },
+    
+    "carvers": {
+      "minecraft:overworld": {
+        "allow_list": true,
+        "elements": []
+      },
+      "minecraft:the_nether": {
+        "allow_list": true,
+        "elements": []
+      },
+      "minecraft:the_end": {
+        "allow_list": true,
+        "elements": []
+      }
+    },
+    
+    // Distance between islands in overworld [default: 8192]
+    // nether the distance is 1/8
+    // Range: 64 - 29999900
+    "islandDistance": 8192,
+    
+    // The offset from 0, 0 to generate the islands
+    // Can be used to generate them in the middle of .mca files
+    "offset": 0,
+    
+    // Sea level in world [default: 63]
+    "seaHeight": 63,
+    
+    // Should a surface be generated in the dimensions? [default: false]
+    "surface": false,
+    
+    // The block settings for generating the different dimensions surfaces.
+    // Same format as flat world generation settings (blocks only)
+    "surfaceSettings": {
+      "minecraft:overworld": "minecraft:bedrock,2*minecraft:dirt,minecraft:grass_block",
+      "minecraft:the_nether": "",
+      "minecraft:the_end": ""
+    }
+  }
+}

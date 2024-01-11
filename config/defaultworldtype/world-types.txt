@@ -1,0 +1,8 @@
+7 possible world presets found: 
+minecraft:normal
+minecraft:large_biomes
+minecraft:amplified
+minecraft:single_biome_surface
+minecraft:flat
+minecraft:debug_all_block_states
+skyblockbuilder:skyblock

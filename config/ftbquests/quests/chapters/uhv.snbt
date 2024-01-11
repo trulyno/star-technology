@@ -1,0 +1,1092 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uhv"
+	group: "1E0FC4EA21F735F7"
+	icon: "gtceu:stellarium_ingot"
+	id: "27C57B31BBF451B1"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["044F3247E310F9F4"]
+			id: "14506694E63A261E"
+			subtitle: "First and Only UHV Circuit"
+			tasks: [{
+				id: "59B57DB8FD1DFABE"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"14506694E63A261E"
+				"0FCA067D856A6055"
+			]
+			id: "4C7CD9819879840E"
+			tasks: [{
+				id: "29A45CDA70AB6DDB"
+				item: "gtceu:uv_parallel_hatch"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2C006A93E128422B"]
+			id: "4E14DC61C2965221"
+			tasks: [{
+				id: "17507F188E6EB5BA"
+				item: "gtceu:neutronium_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E14DC61C2965221"]
+			id: "013127A70E06C675"
+			tasks: [{
+				id: "48093E8936D9863F"
+				item: "gtceu:empty_tier_iii_battery"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0F67F5EAADD6F3F5"
+				"013127A70E06C675"
+			]
+			id: "586AB341D20272CF"
+			tasks: [{
+				id: "418718BABF6EF7F9"
+				item: "gtceu:uv_lapotronic_battery"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"14506694E63A261E"
+				"4E14DC61C2965221"
+			]
+			id: "2428CDACC50BA15A"
+			tasks: [{
+				id: "3817345074EC2C75"
+				item: "gtceu:max_battery"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2428CDACC50BA15A"
+				"013127A70E06C675"
+			]
+			id: "31364EBBBBF06EC2"
+			tasks: [{
+				id: "20CB45BF05B03802"
+				item: "gtceu:uhv_ultimate_battery"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4E14DC61C2965221"]
+			id: "167152458E82C374"
+			tasks: [{
+				id: "60123D66B3BEA708"
+				item: "gtceu:uhv_machine_hull"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"167152458E82C374"
+				"4A04BAD52D0623F0"
+				"14506694E63A261E"
+			]
+			id: "50D89F8E0A3E36E0"
+			tasks: [{
+				id: "6D46A391A4DBC3E2"
+				item: "gtceu:uhv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E14DC61C2965221"]
+			id: "044E5AA1732183D8"
+			tasks: [{
+				id: "550C89E25AE17261"
+				item: "gtceu:neutronium_boule"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["044E5AA1732183D8"]
+			id: "31D80EA194F93E5B"
+			tasks: [{
+				id: "109EB6986E7D888E"
+				item: "gtceu:neutronium_wafer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E14DC61C2965221"]
+			id: "4A04BAD52D0623F0"
+			tasks: [{
+				id: "326B76B679277510"
+				item: "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["31D80EA194F93E5B"]
+			icon: "gtceu:highly_advanced_soc_wafer"
+			id: "2F5D2D8888E7429F"
+			tasks: [
+				{
+					id: "56693F888379DF12"
+					item: "gtceu:highly_advanced_soc_wafer"
+					type: "item"
+				}
+				{
+					id: "07C1FE170AB80413"
+					item: "gtceu:black_glass_lens"
+					type: "item"
+				}
+				{
+					id: "20E357E3FDBEBBCC"
+					item: "gtceu:highly_advanced_soc"
+					type: "item"
+				}
+			]
+			title: "Cheapest LuV Circuits"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["50D89F8E0A3E36E0"]
+			id: "00B95B1B2174F644"
+			tasks: [{
+				id: "67ADCD8B95A887F4"
+				item: "gtceu:uhv_energy_input_hatch_4a"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["167152458E82C374"]
+			id: "0ADEBF35C8049C63"
+			tasks: [
+				{
+					id: "3ABA97F4EAEC4C02"
+					item: "gtceu:uv_substation_input_hatch_64a"
+					type: "item"
+				}
+				{
+					id: "7914B952636369DB"
+					item: "gtceu:uv_substation_output_hatch_64a"
+					type: "item"
+				}
+			]
+			title: "UV Substation Energy Hatches"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7D5577A180C68AA8"]
+			id: "0B4FD56C178B15D1"
+			tasks: [{
+				id: "2DB269451B57DA06"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0B4FD56C178B15D1"]
+			icon: "gtceu:echo_bucket"
+			id: "7604B56AABBE3DC4"
+			tasks: [{
+				id: "495436B484BC6654"
+				title: "Echo Fluid"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"7604B56AABBE3DC4"
+				"4E14DC61C2965221"
+			]
+			id: "78E0723033CCFC02"
+			tasks: [{
+				id: "0225A9C0CC42F5F8"
+				item: "gtceu:raw_void_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["78E0723033CCFC02"]
+			id: "5CDC3409105B6D75"
+			tasks: [{
+				id: "77E4B576429363CE"
+				item: "gtceu:heat_chamber"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5CDC3409105B6D75"]
+			id: "09F73A5A9A233726"
+			tasks: [{
+				id: "4180113D36E8FC09"
+				item: "gtceu:void_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["09F73A5A9A233726"]
+			id: "367362293862BF6A"
+			tasks: [{
+				id: "2BF2B10F172C8224"
+				item: "gtceu:large_rotor_machine"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["367362293862BF6A"]
+			id: "0813FA7876948CF5"
+			tasks: [{
+				id: "18841C5F65FE3ADB"
+				item: "kubejs:crude_stargate_rod"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"0813FA7876948CF5"
+				"7A79CBE76B2D8C57"
+			]
+			id: "245F72C8D752E025"
+			tasks: [{
+				id: "28B1314116EFF7C0"
+				item: "gtceu:super_pressure_heat_chamber"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["245F72C8D752E025"]
+			id: "47B968694A1FF38F"
+			tasks: [{
+				id: "559B961EAB4ECAC4"
+				item: "kubejs:stargate_rod"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"1DA5BAABECC00E69"
+				"34F047D69D07EA1F"
+			]
+			id: "34B31735F164AB7B"
+			tasks: [{
+				id: "058B980C298EBBA4"
+				item: "gtceu:screret_runic_laser_source_base_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["34B31735F164AB7B"]
+			id: "57B19AD75A264473"
+			tasks: [{
+				id: "7A97C3995D304F58"
+				item: "gtceu:screret_runic_laser_source_base_exquisite_gem"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"57B19AD75A264473"
+				"6BEA4086546A618F"
+				"4DDCEF757661EFA2"
+			]
+			id: "717D87BBAEECDE8D"
+			tasks: [{
+				id: "273751B117878789"
+				item: "kubejs:runic_wave_generator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["717D87BBAEECDE8D"]
+			id: "5C1E6827142C0E87"
+			tasks: [{
+				id: "7CE15D8344935BBC"
+				item: "kubejs:laser_casing"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5C1E6827142C0E87"]
+			id: "3E9DE720F4C2754A"
+			tasks: [{
+				id: "2104E62637AA272A"
+				item: "gtceu:runic_circuitry_assembling_station"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3E9DE720F4C2754A"
+				"5D26D8A585CBC5F6"
+			]
+			id: "57AF043C42A6B3FC"
+			tasks: [
+				{
+					id: "3C87761BB9297783"
+					item: "kubejs:runic_engraved_plating"
+					type: "item"
+				}
+				{
+					id: "61B069D75EFCC817"
+					item: "kubejs:runic_pathway_engraved_plating"
+					type: "item"
+				}
+			]
+			title: "Runic Platings"
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"52C417598CD27607"
+				"104E609EE8AAA736"
+			]
+			id: "5D26D8A585CBC5F6"
+			tasks: [{
+				id: "6B7804A9D17A6A84"
+				item: "gtceu:large_quantum_compressor"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"57AF043C42A6B3FC"
+				"47B968694A1FF38F"
+			]
+			id: "24645C21DAF85683"
+			tasks: [{
+				id: "3F6288ED9833878E"
+				item: "gtceu:stargate_component_assembly"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["40BD031656C5C770"]
+			id: "52C417598CD27607"
+			tasks: [{
+				id: "1B0C722947D9C20D"
+				item: "gtceu:trinaquadalloy_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["46683DBE381B4CED"]
+			id: "34F047D69D07EA1F"
+			tasks: [{
+				id: "59AA2116E83E0034"
+				item: "gtceu:naquadic_netherite_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"468E6EB4A10C8177"
+				"1A61999E056B781C"
+			]
+			id: "46683DBE381B4CED"
+			tasks: [{
+				id: "229304ABA43528A6"
+				item: "gtceu:pure_netherite_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3A14AF8160DC83F2"]
+			id: "1A61999E056B781C"
+			tasks: [{
+				id: "7584FC0FF922D2B2"
+				item: "gtceu:tetrachloroethylene_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"6CBCC53FCC444BB0"
+				"3BD7D986DFBEEB52"
+			]
+			id: "468E6EB4A10C8177"
+			tasks: [{
+				id: "604415675BDCDD4B"
+				item: "gtceu:purified_debris_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["29BE6E7B9C89AA5A"]
+			id: "3BD7D986DFBEEB52"
+			tasks: [{
+				id: "504B84B218D1BFD8"
+				item: "gtceu:chlorine_trifluoride_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1B9A1FB92DD0CB54"]
+			icon: "gtceu:ethane_bucket"
+			id: "3F72AB1BFC2193D2"
+			tasks: [{
+				id: "1B48D40F55C83166"
+				title: "Ethane"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3F72AB1BFC2193D2"]
+			icon: "gtceu:dichloroethane_bucket"
+			id: "3A14AF8160DC83F2"
+			tasks: [{
+				id: "2974D2610319D8F9"
+				title: "Dichloroethane"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6BEA4086546A618F"]
+			id: "280EADC466E9EB75"
+			tasks: [{
+				id: "3BCF591762EC1C21"
+				item: "gtceu:melodium_single_wire"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4DDCEF757661EFA2"]
+			id: "68D0A1EBA0DC7974"
+			tasks: [{
+				id: "653B688F980BCE47"
+				item: "gtceu:stellarium_single_wire"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4B216211BC32371F"]
+			id: "4DDCEF757661EFA2"
+			tasks: [{
+				id: "7BDBF2A55805B718"
+				item: "gtceu:stellarium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4B216211BC32371F"]
+			id: "6BEA4086546A618F"
+			tasks: [{
+				id: "7985CF5A01F2C28B"
+				item: "gtceu:melodium_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["24645C21DAF85683"]
+			icon: "sgjourney:classic_stargate"
+			id: "577135238331AF90"
+			rewards: [{
+				auto: "enabled"
+				command: "/gamestage set @a one"
+				icon: "ae2:singularity"
+				id: "35635B838D8C8938"
+				title: "Access to Abydos"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "3451FDA9D110EC8C"
+					item: "sgjourney:classic_stargate_base_block"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "05246C82F6D94B32"
+					item: "sgjourney:classic_stargate_chevron_block"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "0910FD044A6F883F"
+					item: "sgjourney:classic_stargate_ring_block"
+					type: "item"
+				}
+				{
+					id: "28C0134DBEE678FD"
+					item: "sgjourney:classic_dhd"
+					type: "item"
+				}
+				{
+					id: "5E1B3F863C36088E"
+					item: "sgjourney:basic_interface"
+					type: "item"
+				}
+			]
+			title: "Classic Stargate"
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"14506694E63A261E"
+				"188E19BC3918A16A"
+			]
+			id: "2C006A93E128422B"
+			tasks: [{
+				id: "1F045CAFADFCBF13"
+				item: "gtceu:uv_fusion_reactor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4E3BD4FB4FFA6E40"]
+			id: "188E19BC3918A16A"
+			tasks: [{
+				id: "75FA4B591111380D"
+				item: "gtceu:enriched_naquadah_trinium_europium_duranide_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6ECFE297E7C8F876"]
+			id: "4E3BD4FB4FFA6E40"
+			tasks: [{
+				id: "4E4653953F17B8A3"
+				item: "gtceu:duranium_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["577135238331AF90"]
+			id: "1FDBEF0D1B492E84"
+			tasks: [{
+				dimension: "sgjourney:abydos"
+				id: "6BCD1FA86867E384"
+				title: "Exploring Abydos"
+				type: "dimension"
+			}]
+			x: 14.0d
+			y: -6.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["577135238331AF90"]
+			description: ["26-6-14-31-11-29"]
+			id: "7B520BCB9AAEED25"
+			rewards: [{
+				auto: "enabled"
+				command: "/sgjourney stargateNetwork address sgjourney:abydos"
+				icon: "minecraft:sand"
+				id: "6208F5254BDA7F99"
+				player_command: true
+				title: "Find out the coordinates of Abydos"
+				type: "command"
+			}]
+			tasks: [{
+				id: "5C91A882428DFD20"
+				title: "Give me the coordinates!"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1FDBEF0D1B492E84"]
+			id: "0BB68CCEA5DC0130"
+			tasks: [
+				{
+					id: "131312CDCEECA10D"
+					item: "gtceu:raw_titanite"
+					type: "item"
+				}
+				{
+					id: "69D96C9D09FEAEB5"
+					item: "gtceu:raw_zapolite"
+					type: "item"
+				}
+			]
+			title: "Titanite and Zapolite from mining"
+			x: 16.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1FDBEF0D1B492E84"]
+			id: "007C98925BD9AD94"
+			tasks: [
+				{
+					id: "09CAF530257AC92D"
+					item: "gtceu:abydos_titanite_rich_magma_bucket"
+					type: "item"
+				}
+				{
+					id: "798B0A900FA8882F"
+					item: "gtceu:abydos_zapolite_rich_magma_bucket"
+					type: "item"
+				}
+			]
+			title: "Titanite and Zapolite from fluid drilling"
+			x: 16.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1FDBEF0D1B492E84"]
+			id: "697A503F52A3EC87"
+			tasks: [
+				{
+					id: "7D50920274FC75EF"
+					item: "gtceu:raw_crookesite"
+					type: "item"
+				}
+				{
+					id: "17603C1C9DC549BD"
+					item: "gtceu:raw_calaverite"
+					type: "item"
+				}
+				{
+					id: "3CE440E3083F890E"
+					item: "gtceu:raw_celestine"
+					type: "item"
+				}
+			]
+			title: "Other Ores"
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["697A503F52A3EC87"]
+			hide_dependent_lines: true
+			id: "55567ECCE99E8B49"
+			tasks: [
+				{
+					id: "436F74542FC29DD4"
+					item: "gtceu:selenium_dust"
+					type: "item"
+				}
+				{
+					id: "1366A0ACB5A1339F"
+					item: "gtceu:tellurium_dust"
+					type: "item"
+				}
+				{
+					id: "2874DF81A3B3C859"
+					item: "gtceu:thulium_dust"
+					type: "item"
+				}
+				{
+					id: "646C833E77F1D0FF"
+					item: "gtceu:strontium_dust"
+					type: "item"
+				}
+			]
+			title: "Selenium, Tellurium, Thulium and Strontium"
+			x: 14.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0BB68CCEA5DC0130"]
+			id: "4F8D21296827D1AD"
+			tasks: [{
+				id: "227A93CD25722463"
+				item: "gtceu:titanite_dust"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6D9D31BEE724E7F2"]
+			dependency_requirement: "one_completed"
+			id: "0089F6F35F6A6D28"
+			tasks: [{
+				id: "09A71EB4BB60CF8E"
+				item: "gtceu:perchloric_acid_bucket"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"4F8D21296827D1AD"
+				"0089F6F35F6A6D28"
+			]
+			icon: "gtceu:titanite_slurry_bucket"
+			id: "76BB49EA2F8C8418"
+			tasks: [{
+				id: "4A4E441370E79840"
+				title: "Titanite Slurry"
+				type: "checkmark"
+			}]
+			x: 18.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["76BB49EA2F8C8418"]
+			icon: "gtceu:titanite_slurry_residue_bucket"
+			id: "17AD5BD369DBCF5E"
+			tasks: [{
+				id: "54947FD72A51DE3E"
+				title: "Titanite Slurry Residue"
+				type: "checkmark"
+			}]
+			x: 20.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["76BB49EA2F8C8418"]
+			icon: "gtceu:silica_gel_bucket"
+			id: "613FE1BB4D37A22C"
+			tasks: [{
+				id: "2C4FC2CC5FA349BA"
+				title: "Silica Gel"
+				type: "checkmark"
+			}]
+			x: 18.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["76BB49EA2F8C8418"]
+			id: "3809ECA4699A5AF4"
+			tasks: [{
+				id: "697286F7107598C8"
+				item: "gtceu:calcium_perchlorate_dust"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"613FE1BB4D37A22C"
+				"3809ECA4699A5AF4"
+			]
+			id: "5681158CE5ECDB30"
+			tasks: [{
+				id: "3A52F22C1133D51D"
+				title: "Regenerating Perchloric Acid"
+				type: "checkmark"
+			}]
+			x: 20.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["17AD5BD369DBCF5E"]
+			icon: "gtceu:hydroxo_dioxo_titanite_mixture_bucket"
+			id: "12AFAFD4FD726D67"
+			tasks: [{
+				id: "101FF86F8D838379"
+				title: "Hydroxo-Dioxo-Titanite Mixture"
+				type: "checkmark"
+			}]
+			x: 20.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["12AFAFD4FD726D67"]
+			icon: "gtceu:titanite_residue_bucket"
+			id: "14364B4B7E290CCE"
+			tasks: [{
+				id: "141AA84704977F14"
+				title: "Titanite Residue"
+				type: "checkmark"
+			}]
+			x: 22.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["14364B4B7E290CCE"]
+			icon: "gtceu:titanium_tetrachloride_mixture_bucket"
+			id: "65B1F8E4C4CDAD8B"
+			tasks: [{
+				id: "4500D9F8E7BB7CAE"
+				title: "Titanium Tetrachloride Mixture"
+				type: "checkmark"
+			}]
+			x: 24.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["65B1F8E4C4CDAD8B"]
+			id: "111516870D977C44"
+			tasks: [{
+				id: "6E99A9B5888271E6"
+				item: "gtceu:zirconium_tetrachloride_dust"
+				type: "item"
+			}]
+			x: 26.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["111516870D977C44"]
+			id: "2D1F62416590FC00"
+			tasks: [{
+				id: "0F3E093034C5B6FD"
+				item: "gtceu:zirconium_dust"
+				type: "item"
+			}]
+			x: 28.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4F8D21296827D1AD"]
+			id: "38FAD7E2C453D10D"
+			tasks: [{
+				id: "2D57137549EF64C7"
+				item: "gtceu:zapolite_dust"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["38FAD7E2C453D10D"]
+			id: "7C0F6207DFA26BCC"
+			tasks: [{
+				id: "6EF43BC8CCADB4D5"
+				item: "gtceu:zapolgium_aluminium_oxide_dust"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["38FAD7E2C453D10D"]
+			id: "71CF2837E1F88AC3"
+			tasks: [{
+				id: "5B5CEB7E83543C4F"
+				item: "gtceu:zapolgium_diiodide_dioxide_dust"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"71CF2837E1F88AC3"
+				"01D9F08B12E02CC9"
+			]
+			dependency_requirement: "one_completed"
+			id: "72737D5C12B3B400"
+			tasks: [{
+				id: "51BABDFB08982126"
+				item: "gtceu:zapolgium_oxide_dust"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["72737D5C12B3B400"]
+			id: "2E4C5DB602A7403D"
+			tasks: [{
+				id: "5266E525BD07B934"
+				item: "gtceu:zapolgium_chloride_dust"
+				type: "item"
+			}]
+			x: 22.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2E4C5DB602A7403D"]
+			id: "77F4963F778517A9"
+			tasks: [{
+				id: "7EDB3920F06DF54A"
+				item: "gtceu:zapolgium_hydroxide_dust"
+				type: "item"
+			}]
+			x: 24.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["77F4963F778517A9"]
+			id: "2B1050AAB6B57B0F"
+			tasks: [{
+				id: "26BC179F9583CC93"
+				item: "gtceu:zapolgium_ingot"
+				type: "item"
+			}]
+			x: 26.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7C0F6207DFA26BCC"]
+			id: "01D9F08B12E02CC9"
+			tasks: [{
+				id: "443F35F3AE563E49"
+				item: "gtceu:zapolgium_diiodide_oxide_dust"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2B1050AAB6B57B0F"]
+			id: "46B43CDBEAF1A28C"
+			tasks: [{
+				id: "6A9A9B1ACCF937B4"
+				item: "gtceu:zalloy_ingot"
+				type: "item"
+			}]
+			x: 28.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2D1F62416590FC00"]
+			id: "40001BD6EF2654FF"
+			tasks: [{
+				id: "09FCB4AAEF708A1D"
+				item: "gtceu:zircalloy_4_ingot"
+				type: "item"
+			}]
+			x: 28.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["55567ECCE99E8B49"]
+			id: "298E322F3995F264"
+			tasks: [{
+				id: "0EC5FB12865D7E45"
+				item: "gtceu:iron_selenide_over_strontium_titanium_oxide_single_wire"
+				type: "item"
+			}]
+			x: 30.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["77F05A54938E0BDE"]
+			id: "46C3AB9364094AE6"
+			tasks: [{
+				id: "4DF9CA870A36E028"
+				item: "gtceu:indium_tin_lead_cadmium_soldering_alloy_dust"
+				type: "item"
+			}]
+			x: 32.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2D1F62416590FC00"]
+			id: "58D9414E13399D32"
+			tasks: [{
+				id: "211DB52E95CE0AAC"
+				item: "gtceu:zirconium_selenide_diiodide_single_cable"
+				type: "item"
+			}]
+			x: 30.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"46B43CDBEAF1A28C"
+				"58D9414E13399D32"
+				"298E322F3995F264"
+				"46C3AB9364094AE6"
+				"40001BD6EF2654FF"
+			]
+			icon: "gtceu:uhv_robot_arm"
+			id: "2D7D70001327DC22"
+			tasks: [{
+				id: "2AFE97634DC3CC2E"
+				title: "UHV Components"
+				type: "checkmark"
+			}]
+			x: 30.0d
+			y: -10.0d
+		}
+	]
+	title: "UHV"
+}

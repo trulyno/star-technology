@@ -1,0 +1,1097 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "nuclear_fission"
+	group: "28726466D987C725"
+	icon: "nuclearcraft:fission_reactor_controller"
+	id: "24D008972AF0082B"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4C3C66BD2BC8D2A7"]
+			icon: "gtceu:pitchblende_dust"
+			id: "767219E6E2E6D139"
+			tasks: [
+				{
+					id: "32A0B3C562377AE3"
+					item: "gtceu:pitchblende_crushed_ore"
+					type: "item"
+				}
+				{
+					id: "3EAD980A2F9DC2BF"
+					item: "gtceu:pitchblende_dust"
+					type: "item"
+				}
+			]
+			title: "Pitchblende"
+			x: -18.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["767219E6E2E6D139"]
+			id: "512259E6067EAC80"
+			tasks: [{
+				id: "4023A2DEE5D03C08"
+				item: "gtceu:thorium_dust"
+				type: "item"
+			}]
+			x: -16.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["767219E6E2E6D139"]
+			id: "555B28C8AC833058"
+			tasks: [{
+				id: "66D0E2B168B11A63"
+				item: "gtceu:uraninite_dust"
+				type: "item"
+			}]
+			x: -18.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["555B28C8AC833058"]
+			icon: "gtceu:uranium_hexafluoride_bucket"
+			id: "5778B52027965868"
+			tasks: [{
+				id: "5CE95134761EC0C7"
+				title: "Uranium Hexafluoride"
+				type: "checkmark"
+			}]
+			x: -16.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5778B52027965868"]
+			icon: "gtceu:enriched_uranium_hexafluoride_bucket"
+			id: "4A55AE6E3D3CDC2F"
+			tasks: [{
+				id: "2DB4739397E52ECC"
+				title: "Enriched Uranium Hexafluoride"
+				type: "checkmark"
+			}]
+			x: -14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4A55AE6E3D3CDC2F"]
+			id: "4E46414C104D0F9D"
+			tasks: [{
+				id: "1F41CDE9BB705CC3"
+				item: "gtceu:uranium_235_dust"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5778B52027965868"]
+			icon: "gtceu:depleted_uranium_hexafluoride_bucket"
+			id: "6A7BD0D6EA2FCDC7"
+			tasks: [{
+				id: "412C061DB1FF421B"
+				title: "Depleted Uranium Hexafluoride"
+				type: "checkmark"
+			}]
+			x: -14.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6A7BD0D6EA2FCDC7"]
+			id: "6D5C505E58961562"
+			tasks: [{
+				id: "7686E3AA33366971"
+				item: "gtceu:uranium_dust"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["512259E6067EAC80"]
+			id: "6AD8C3F9639C236E"
+			shape: "square"
+			tasks: [{
+				id: "1C219EE57403D00D"
+				item: "nuclearcraft:thorium_232"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6AD8C3F9639C236E"]
+			id: "20B71FEF62270ED4"
+			shape: "diamond"
+			tasks: [{
+				id: "55C4C54AD8D6D8F3"
+				item: "nuclearcraft:fuel_thorium_tbu"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"20B71FEF62270ED4"
+				"6D5C505E58961562"
+			]
+			dependency_requirement: "one_completed"
+			id: "684D41D9754A9255"
+			tasks: [{
+				id: "6ED3FF6E1D0509C6"
+				item: "nuclearcraft:uranium_238"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["20B71FEF62270ED4"]
+			dependency_requirement: "one_completed"
+			id: "566870992D5221A0"
+			tasks: [{
+				id: "64D2E9D4FCFAB43D"
+				item: "nuclearcraft:uranium_233"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["20B71FEF62270ED4"]
+			id: "3C9BC8AC87B7AACB"
+			tasks: [{
+				id: "7B1E32F2EF2D2268"
+				item: "nuclearcraft:neptunium_236"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["20B71FEF62270ED4"]
+			id: "7891E74FE9267612"
+			tasks: [{
+				id: "4E0CE475F25A7643"
+				item: "nuclearcraft:neptunium_237"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"20B71FEF62270ED4"
+				"2888B9702D886078"
+				"27AD3B7997505218"
+				"46DA840A5A4BC530"
+				"346E715E3C75852D"
+				"5D4BA3AE1551B2AA"
+				"5E5E3E303935F5E7"
+			]
+			dependency_requirement: "one_completed"
+			id: "67E788F7480392E1"
+			tasks: [{
+				id: "00A901C0A904E808"
+				item: "nuclearcraft:caesium_137_dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"20B71FEF62270ED4"
+				"2888B9702D886078"
+				"27AD3B7997505218"
+				"46DA840A5A4BC530"
+				"346E715E3C75852D"
+				"50624866AF551174"
+				"14E48F3EC1BDEDD7"
+				"4C14EEEA39B62EAE"
+				"7CE7E789CB306B89"
+			]
+			dependency_requirement: "one_completed"
+			id: "1F12B21D023F6FE5"
+			tasks: [{
+				id: "0F2252FA2B40D481"
+				item: "nuclearcraft:strontium_90_dust"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["67E788F7480392E1"]
+			id: "5849C2A6B22FB44B"
+			shape: "square"
+			tasks: [{
+				id: "63BFF42EDA584813"
+				item: "gtceu:barium_dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1F12B21D023F6FE5"]
+			id: "5494ECE711E7051E"
+			shape: "square"
+			tasks: [{
+				id: "5623DE1DBE3331F8"
+				item: "nuclearcraft:zirconium_dust"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"4E46414C104D0F9D"
+				"46DA840A5A4BC530"
+			]
+			dependency_requirement: "one_completed"
+			id: "22996060DE87D215"
+			tasks: [{
+				id: "51E044C9222B2A39"
+				item: "nuclearcraft:uranium_235"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"22996060DE87D215"
+				"5244A4B8996133AE"
+			]
+			dependency_requirement: "one_completed"
+			id: "6D23203112E7B676"
+			shape: "square"
+			tasks: [{
+				id: "67FF736579B6AB0E"
+				item: "gtceu:lead_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["566870992D5221A0"]
+			id: "7D3086A55B8DEEC3"
+			shape: "square"
+			tasks: [{
+				id: "13999F28F1228802"
+				item: "gtceu:bismuth_dust"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"3C9BC8AC87B7AACB"
+				"7891E74FE9267612"
+			]
+			id: "5D4BA3AE1551B2AA"
+			shape: "diamond"
+			tasks: [{
+				id: "310205BE06FDA599"
+				item: "nuclearcraft:fuel_neptunium_hen_236"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3C9BC8AC87B7AACB"
+				"7891E74FE9267612"
+			]
+			id: "5E5E3E303935F5E7"
+			shape: "diamond"
+			tasks: [{
+				id: "7BBA5C578EC2926C"
+				item: "nuclearcraft:fuel_neptunium_len_236"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5D4BA3AE1551B2AA"
+				"5E5E3E303935F5E7"
+				"2888B9702D886078"
+			]
+			dependency_requirement: "one_completed"
+			id: "3BEA3E799816AAE3"
+			tasks: [{
+				id: "1CDDC20913A6694D"
+				item: "nuclearcraft:plutonium_241"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"5D4BA3AE1551B2AA"
+				"5E5E3E303935F5E7"
+				"46DA840A5A4BC530"
+				"2888B9702D886078"
+				"346E715E3C75852D"
+				"27AD3B7997505218"
+			]
+			dependency_requirement: "one_completed"
+			id: "10BFB106920BD6C9"
+			tasks: [{
+				id: "663477FEE09E869A"
+				item: "nuclearcraft:plutonium_242"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5D4BA3AE1551B2AA"
+				"5E5E3E303935F5E7"
+				"76BD295D9851DB0F"
+				"1E2407265B1B8216"
+				"4B2150E83597D470"
+				"49FE7795A4DB6DC1"
+				"1BE3CF59CBD3586F"
+				"0ACEB9B99ECA01BE"
+				"21FBB3BA5BA4F113"
+				"7FA86E4349B3C7B9"
+			]
+			dependency_requirement: "one_completed"
+			id: "7DBCAD19CF92FA45"
+			tasks: [{
+				id: "37B2362A05EC49FB"
+				item: "gtceu:molybdenum_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3BEA3E799816AAE3"
+				"10BFB106920BD6C9"
+			]
+			id: "14E48F3EC1BDEDD7"
+			shape: "diamond"
+			tasks: [{
+				id: "3B71454EF9B87EC4"
+				item: "nuclearcraft:fuel_plutonium_lep_241"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3BEA3E799816AAE3"
+				"10BFB106920BD6C9"
+			]
+			id: "7CE7E789CB306B89"
+			shape: "diamond"
+			tasks: [{
+				id: "37439BCC9EA53508"
+				item: "nuclearcraft:fuel_plutonium_hep_241"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"14E48F3EC1BDEDD7"
+				"7CE7E789CB306B89"
+				"46DA840A5A4BC530"
+				"2888B9702D886078"
+				"346E715E3C75852D"
+				"27AD3B7997505218"
+				"4C14EEEA39B62EAE"
+				"50624866AF551174"
+			]
+			dependency_requirement: "one_completed"
+			id: "773A55B6E0B9A1CB"
+			tasks: [{
+				id: "0DEEEF9530728D52"
+				item: "nuclearcraft:americium_243"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"14E48F3EC1BDEDD7"
+				"7CE7E789CB306B89"
+				"50624866AF551174"
+				"4B2150E83597D470"
+				"49FE7795A4DB6DC1"
+			]
+			dependency_requirement: "one_completed"
+			id: "04DB293AF780B430"
+			tasks: [{
+				id: "7EC7DD1082393A24"
+				item: "nuclearcraft:curium_246"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"14E48F3EC1BDEDD7"
+				"76BD295D9851DB0F"
+				"1E2407265B1B8216"
+				"4B2150E83597D470"
+				"1BE3CF59CBD3586F"
+				"0ACEB9B99ECA01BE"
+				"21FBB3BA5BA4F113"
+			]
+			dependency_requirement: "one_completed"
+			id: "2A731958C57CB10A"
+			tasks: [{
+				id: "553D328067621221"
+				item: "nuclearcraft:berkelium_247"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"14E48F3EC1BDEDD7"
+				"4C14EEEA39B62EAE"
+				"50624866AF551174"
+				"76BD295D9851DB0F"
+				"76BD295D9851DB0F"
+				"1E2407265B1B8216"
+				"4B2150E83597D470"
+				"49FE7795A4DB6DC1"
+				"6DA7DBCFC3B71C31"
+				"5F360209427C49BF"
+				"0EA37291A496BB84"
+				"2C83F00C981F4CFF"
+				"70F320185438CD3F"
+				"0E250F2E7B7DC004"
+			]
+			dependency_requirement: "one_completed"
+			id: "41BD8974A3F43361"
+			tasks: [{
+				id: "32693DBBF52C8464"
+				item: "nuclearcraft:promethium_147_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["41BD8974A3F43361"]
+			id: "087998D190610924"
+			shape: "square"
+			tasks: [{
+				id: "5A90F7670C2BA670"
+				item: "gtceu:neodymium_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["773A55B6E0B9A1CB"]
+			id: "5244A4B8996133AE"
+			shape: "square"
+			tasks: [{
+				id: "2EC0BC04615C1C03"
+				item: "nuclearcraft:plutonium_238"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7CE7E789CB306B89"]
+			id: "67529C7CF928F884"
+			tasks: [{
+				id: "27A2131ADF7FFB9D"
+				item: "nuclearcraft:americium_241"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"566870992D5221A0"
+				"684D41D9754A9255"
+			]
+			id: "46DA840A5A4BC530"
+			shape: "diamond"
+			tasks: [{
+				id: "53B60A92B5FDC4EB"
+				item: "nuclearcraft:fuel_uranium_heu_233"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"566870992D5221A0"
+				"684D41D9754A9255"
+			]
+			id: "2888B9702D886078"
+			shape: "diamond"
+			tasks: [{
+				id: "36257AB7F6C9856D"
+				item: "nuclearcraft:fuel_uranium_leu_233"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"22996060DE87D215"
+				"684D41D9754A9255"
+			]
+			id: "346E715E3C75852D"
+			shape: "diamond"
+			tasks: [{
+				id: "258CEAFFCC3EA5E1"
+				item: "nuclearcraft:fuel_uranium_heu_235"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"22996060DE87D215"
+				"684D41D9754A9255"
+			]
+			id: "27AD3B7997505218"
+			shape: "diamond"
+			tasks: [{
+				id: "291E44BD8E90F1EB"
+				item: "nuclearcraft:fuel_uranium_leu_235"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"346E715E3C75852D"
+				"27AD3B7997505218"
+			]
+			dependency_requirement: "one_completed"
+			id: "21526BFEC59A5C78"
+			tasks: [{
+				id: "5EA03AE07713857E"
+				item: "nuclearcraft:plutonium_239"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"21526BFEC59A5C78"
+				"10BFB106920BD6C9"
+			]
+			id: "4C14EEEA39B62EAE"
+			shape: "diamond"
+			tasks: [{
+				id: "6ABE58F814618FCA"
+				item: "nuclearcraft:fuel_plutonium_hep_239"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"21526BFEC59A5C78"
+				"10BFB106920BD6C9"
+			]
+			id: "50624866AF551174"
+			shape: "diamond"
+			tasks: [{
+				id: "1B2A33699E7173CC"
+				item: "nuclearcraft:fuel_plutonium_lep_239"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4C14EEEA39B62EAE"
+				"4B2150E83597D470"
+				"49FE7795A4DB6DC1"
+			]
+			id: "02D1D2E7F0CE05C8"
+			tasks: [{
+				id: "788ECAC8A74ABE7F"
+				item: "nuclearcraft:curium_243"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"02D1D2E7F0CE05C8"
+				"04DB293AF780B430"
+			]
+			id: "76BD295D9851DB0F"
+			shape: "diamond"
+			tasks: [{
+				id: "216948F22105D3C2"
+				item: "nuclearcraft:fuel_curium_hecm_243"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"02D1D2E7F0CE05C8"
+				"04DB293AF780B430"
+			]
+			id: "1E2407265B1B8216"
+			shape: "diamond"
+			tasks: [{
+				id: "456AF3E61181FE07"
+				item: "nuclearcraft:fuel_curium_lecm_243"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"76BD295D9851DB0F"
+				"1E2407265B1B8216"
+				"49FE7795A4DB6DC1"
+				"21FBB3BA5BA4F113"
+			]
+			id: "4D49ADCEF884A0F9"
+			tasks: [{
+				id: "4E160D974922B33F"
+				item: "nuclearcraft:berkelium_248"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["76BD295D9851DB0F"]
+			id: "3F97D4F0F150C557"
+			tasks: [{
+				id: "32DBC1A5227B9275"
+				item: "nuclearcraft:curium_245"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1E2407265B1B8216"
+				"1BE3CF59CBD3586F"
+				"0ACEB9B99ECA01BE"
+			]
+			id: "0690B86E39A4420A"
+			tasks: [{
+				id: "768E1F26BF9893E7"
+				item: "nuclearcraft:curium_247"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"67529C7CF928F884"
+				"773A55B6E0B9A1CB"
+			]
+			id: "4B2150E83597D470"
+			shape: "diamond"
+			tasks: [{
+				id: "7746ABECCFBCFB21"
+				item: "nuclearcraft:fuel_americium_hea_242"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"67529C7CF928F884"
+				"773A55B6E0B9A1CB"
+			]
+			id: "49FE7795A4DB6DC1"
+			shape: "diamond"
+			tasks: [{
+				id: "42B55914F143097D"
+				item: "nuclearcraft:fuel_americium_lea_242"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3F97D4F0F150C557"
+				"04DB293AF780B430"
+			]
+			id: "1BE3CF59CBD3586F"
+			shape: "diamond"
+			tasks: [{
+				id: "0D73BE52300C7E03"
+				item: "nuclearcraft:fuel_curium_hecm_245"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3F97D4F0F150C557"
+				"04DB293AF780B430"
+			]
+			id: "0ACEB9B99ECA01BE"
+			shape: "diamond"
+			tasks: [{
+				id: "3469D06328CEE9A6"
+				item: "nuclearcraft:fuel_curium_lecm_245"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0690B86E39A4420A"
+				"04DB293AF780B430"
+			]
+			id: "7FA86E4349B3C7B9"
+			shape: "diamond"
+			tasks: [{
+				id: "7CB60AC42FC5115C"
+				item: "nuclearcraft:fuel_curium_lecm_247"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0690B86E39A4420A"
+				"04DB293AF780B430"
+			]
+			id: "21FBB3BA5BA4F113"
+			shape: "diamond"
+			tasks: [{
+				id: "11B469A01FE42D94"
+				item: "nuclearcraft:fuel_curium_hecm_247"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2A731958C57CB10A"
+				"4D49ADCEF884A0F9"
+			]
+			id: "6DA7DBCFC3B71C31"
+			shape: "diamond"
+			tasks: [{
+				id: "735C20B26B94EE67"
+				item: "nuclearcraft:fuel_berkelium_heb_248"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2A731958C57CB10A"
+				"4D49ADCEF884A0F9"
+			]
+			id: "5F360209427C49BF"
+			shape: "diamond"
+			tasks: [{
+				id: "6D5BF71EAC8BF64C"
+				item: "nuclearcraft:fuel_berkelium_leb_248"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1BE3CF59CBD3586F"
+				"0ACEB9B99ECA01BE"
+				"21FBB3BA5BA4F113"
+				"7FA86E4349B3C7B9"
+			]
+			id: "518AA6DE47DEE80E"
+			tasks: [{
+				id: "1F5FC0E230C34068"
+				item: "nuclearcraft:europium_155_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["518AA6DE47DEE80E"]
+			id: "6874190B4AF228B7"
+			shape: "square"
+			tasks: [{
+				id: "3D12DCF70BEAD538"
+				item: "nuclearcraft:gadolinium_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"1BE3CF59CBD3586F"
+				"0ACEB9B99ECA01BE"
+				"21FBB3BA5BA4F113"
+				"7FA86E4349B3C7B9"
+				"6DA7DBCFC3B71C31"
+				"5F360209427C49BF"
+			]
+			id: "3BD8CBF4AB3CF7B1"
+			tasks: [{
+				id: "534A6452286FE33F"
+				item: "nuclearcraft:californium_249"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"21FBB3BA5BA4F113"
+				"6DA7DBCFC3B71C31"
+				"5F360209427C49BF"
+			]
+			id: "17F82A662FA358E3"
+			tasks: [{
+				id: "4496365CEC087AAE"
+				item: "nuclearcraft:californium_251"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6DA7DBCFC3B71C31"]
+			id: "7AD985E0884001B8"
+			tasks: [{
+				id: "34A901BD78C31600"
+				item: "nuclearcraft:californium_252"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"6DA7DBCFC3B71C31"
+				"5F360209427C49BF"
+				"0EA37291A496BB84"
+				"2C83F00C981F4CFF"
+				"70F320185438CD3F"
+				"0E250F2E7B7DC004"
+			]
+			id: "58D6F67AD0346260"
+			tasks: [{
+				id: "59CB1D1EA4842772"
+				item: "nuclearcraft:ruthenium_106_dust"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["58D6F67AD0346260"]
+			id: "4D1E99A3355ADCB3"
+			shape: "square"
+			tasks: [{
+				id: "64E9438FC66D96AD"
+				item: "gtceu:palladium_dust"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"7AD985E0884001B8"
+				"17F82A662FA358E3"
+			]
+			id: "70F320185438CD3F"
+			shape: "diamond"
+			tasks: [{
+				id: "316D612B7FD5CE30"
+				item: "nuclearcraft:fuel_californium_hecf_251"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7AD985E0884001B8"
+				"17F82A662FA358E3"
+			]
+			id: "0E250F2E7B7DC004"
+			shape: "diamond"
+			tasks: [{
+				id: "2DB8425DEEC075FD"
+				item: "nuclearcraft:fuel_californium_lecf_251"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3BD8CBF4AB3CF7B1"
+				"7AD985E0884001B8"
+			]
+			id: "0EA37291A496BB84"
+			shape: "diamond"
+			tasks: [{
+				id: "4B0DB006F801E504"
+				item: "nuclearcraft:fuel_californium_hecf_249"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7AD985E0884001B8"
+				"3BD8CBF4AB3CF7B1"
+			]
+			id: "2C83F00C981F4CFF"
+			shape: "diamond"
+			tasks: [{
+				id: "14C0932C8E8256B0"
+				item: "nuclearcraft:fuel_californium_lecf_249"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0EA37291A496BB84"]
+			id: "3E6EB4A9915DF427"
+			tasks: [{
+				id: "6CDD2C580065E6F4"
+				item: "nuclearcraft:californium_250"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["20B71FEF62270ED4"]
+			description: [
+				"This Quest is asking for the materials for a Fission Reactor that can run TBU fuel."
+				"To build the reactor, make a hollow cube out of the casing and/or glass. Place the controller in the middle of one of the bottom edges. Place the port anywhere on the side but not on the edges. For the inside, use the following structure: "
+				"&lBottom Layer&r:"
+				"&bCryotheum&r|&bCryotheum&r|&bCryotheum&r"
+				"&0Fuel cell&r  |&0Fuel cell&r  |&0Fuel cell&r"
+				"&bCryothem&r|&bCryotheum&r|&bCryotheum&r"
+				"&lMiddle Layer&r:"
+				"&0Fuel Cell&r|&0Fuel Cell&r|&0Fuel Cell&r"
+				"&0Fuel Cell&r|&1Water Sink&r|&0Fuel Cell&r"
+				"&0Fuel Cell&r|&0Fuel Cell&r|&0Fuel Cell&r"
+				"&lTop Layer&r:"
+				"&bCryotheum&r|&bCryotheum&r|&bCryotheum&r"
+				"&0Fuel cell&r  |&0Fuel cell&r  |&0Fuel cell&r"
+				"&bCryothem&r|&bCryotheum&r|&bCryotheum&r"
+			]
+			icon: "nuclearcraft:fission_reactor_controller"
+			id: "6B0FDDBCD3226344"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "6F279129623A33D9"
+					item: "nuclearcraft:fission_reactor_controller"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "24955E1469A0C919"
+					item: "nuclearcraft:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "753F8F39AC4FA2C9"
+					item: "nuclearcraft:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					id: "4D6670E2ADB8BB0B"
+					item: "nuclearcraft:fission_reactor_port"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "30B367C8D2BF783D"
+					item: "nuclearcraft:fission_reactor_solid_fuel_cell"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "05A932DF9A89E435"
+					item: "nuclearcraft:cryotheum_heat_sink"
+					type: "item"
+				}
+				{
+					id: "21A8A0F189A4B24C"
+					item: "nuclearcraft:water_heat_sink"
+					type: "item"
+				}
+			]
+			title: "Fission Reactor"
+			x: -14.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6B0FDDBCD3226344"]
+			description: ["You can have AI design a suitable fission reactor for you! Just go to https://leu-235.com"]
+			id: "035592E7ADB995B0"
+			tasks: [{
+				id: "1ABA1E040C465DE5"
+				title: "Fission Reactor Designing"
+				type: "checkmark"
+			}]
+			x: -16.0d
+			y: -5.0d
+		}
+	]
+	title: "Nuclear Fission"
+}

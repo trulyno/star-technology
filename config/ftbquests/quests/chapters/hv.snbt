@@ -1,0 +1,364 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hv"
+	group: "1E0FC4EA21F735F7"
+	icon: "gtceu:lumium_ingot"
+	id: "7F313EFBB767669E"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"5E2E5FC816035B38"
+				"5463333A3ABFBD75"
+				"2086812F98F824BD"
+				"2F897A5AB8DB44D3"
+			]
+			id: "2B04B8EFBDFEB04B"
+			tasks: [{
+				id: "79514C069E60B4B7"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["03982B9C6CA63308"]
+			id: "5463333A3ABFBD75"
+			tasks: [{
+				id: "16CA44D9F032ADC6"
+				item: "gtceu:transistor"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37B2ECF1EC5319B3"]
+			icon: "gtceu:ram_wafer"
+			id: "5E2E5FC816035B38"
+			tasks: [
+				{
+					id: "4D24D8173BED3FCC"
+					item: "gtceu:ram_wafer"
+					type: "item"
+				}
+				{
+					id: "3E722DE46156ADDC"
+					item: "gtceu:emerald_lens"
+					type: "item"
+				}
+				{
+					id: "739367DD288EE8E9"
+					item: "gtceu:ram_chip"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["64024DD15B5DADC9"]
+			id: "2F897A5AB8DB44D3"
+			tasks: [{
+				id: "61B196C9AF9FC131"
+				item: "gtceu:annealed_copper_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4F2BE6B11FFE9A45"]
+			id: "6AA0E3A987E31BE0"
+			tasks: [{
+				id: "633C1F52D3FEDEA6"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4F2BE6B11FFE9A45"]
+			id: "0DEC5400680148EB"
+			tasks: [{
+				id: "5B95278E2E2E7031"
+				item: "gtceu:lumium_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0DEC5400680148EB"]
+			id: "4AB0F9CA0F8FA406"
+			tasks: [{
+				id: "45A24BBEBA96446F"
+				item: "gtceu:lumium_single_wire"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4AB0F9CA0F8FA406"
+				"317CB8073A46DAA1"
+				"2B04B8EFBDFEB04B"
+			]
+			id: "52FB84BFA4DD1403"
+			tasks: [{
+				id: "4B9938D5F9B50DD5"
+				item: "gtceu:hv_4a_energy_converter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6AA0E3A987E31BE0"]
+			id: "317CB8073A46DAA1"
+			tasks: [{
+				id: "5D932E53B1CA89FB"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["317CB8073A46DAA1"]
+			id: "2EB9C467436964BD"
+			tasks: [{
+				id: "1CAA12E6C6208FD5"
+				item: "gtceu:hv_assembler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2EB9C467436964BD"]
+			id: "4C3C66BD2BC8D2A7"
+			tasks: [{
+				id: "4AD00A8BA61F696C"
+				item: "exnihilosequentia:diamond_mesh"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2EB9C467436964BD"]
+			id: "70F45CC944CA8992"
+			tasks: [{
+				id: "1C54CE92669F463C"
+				item: "exmachinis:gold_upgrade"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2EB9C467436964BD"]
+			id: "622FF7689C5D4BE9"
+			tasks: [{
+				id: "20E8A53D640E5914"
+				item: "gtceu:energy_crystal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["03982B9C6CA63308"]
+			id: "616AF54971D361A2"
+			tasks: [{
+				id: "1A22A416FA0C5CAB"
+				item: "gtceu:plastic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2EB9C467436964BD"]
+			id: "2A9276BBA1B261C1"
+			tasks: [
+				{
+					id: "06506BE743069B10"
+					item: "gtceu:smd_transistor"
+					type: "item"
+				}
+				{
+					id: "57E9A233147C164B"
+					item: "gtceu:smd_resistor"
+					type: "item"
+				}
+				{
+					id: "262B080EE1D27AD7"
+					item: "gtceu:smd_capacitor"
+					type: "item"
+				}
+				{
+					id: "76D7344DC7BE86BD"
+					item: "gtceu:smd_diode"
+					type: "item"
+				}
+				{
+					id: "1118FD2D0F0FB827"
+					item: "gtceu:smd_inductor"
+					type: "item"
+				}
+			]
+			title: "SMDs"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B04B8EFBDFEB04B"]
+			id: "1016000E0BF22612"
+			tasks: [{
+				id: "0CFF31EBD1F2D3F0"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"616AF54971D361A2"
+				"1016000E0BF22612"
+				"35718756323DF385"
+			]
+			id: "1C9E399CE5562973"
+			subtitle: "Third and Last LV Circuit"
+			tasks: [{
+				id: "52CE7E1DFB86C24D"
+				item: "gtceu:microchip_processor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1C9E399CE5562973"]
+			id: "584DD28EA43FB5BF"
+			subtitle: "Third and Last MV Circuit"
+			tasks: [{
+				id: "6D1281316C966D8D"
+				item: "gtceu:micro_processor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["584DD28EA43FB5BF"]
+			id: "3BE2CAFE659C79DC"
+			subtitle: "Second HV Circuit"
+			tasks: [{
+				id: "71652E771C655EA1"
+				item: "gtceu:micro_processor_assembly"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"37B2ECF1EC5319B3"
+				"1549828A7E1B26F6"
+			]
+			icon: "gtceu:cpu_wafer"
+			id: "35718756323DF385"
+			tasks: [
+				{
+					id: "287307CB1DED7770"
+					item: "gtceu:cpu_wafer"
+					type: "item"
+				}
+				{
+					id: "5A86FD2B35F96898"
+					item: "gtceu:diamond_lens"
+					type: "item"
+				}
+				{
+					id: "5B40E05F59BF9F95"
+					item: "gtceu:cpu_chip"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1549828A7E1B26F6"
+				"37B2ECF1EC5319B3"
+			]
+			icon: "gtceu:lpic_wafer"
+			id: "3F4326C1E3B31376"
+			tasks: [
+				{
+					id: "53343AF6D6E0C7BE"
+					item: "gtceu:lpic_wafer"
+					type: "item"
+				}
+				{
+					id: "5D37C15C22B044C1"
+					item: "gtceu:orange_glass_lens"
+					type: "item"
+				}
+				{
+					id: "5ECB3EC6A4863AD4"
+					item: "gtceu:lpic_chip"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3F4326C1E3B31376"
+				"2EB9C467436964BD"
+			]
+			id: "4AF4B14FA9CB1591"
+			tasks: [{
+				id: "65B60EC240539446"
+				item: "gtceu:hv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2B04B8EFBDFEB04B"]
+			id: "1BB378E8136B28C0"
+			tasks: [{
+				id: "79662AA44422E4A7"
+				item: "gtceu:multi_smelter"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2EB9C467436964BD"]
+			id: "2EF4A5C35B70D058"
+			tasks: [{
+				id: "6C63041C2B936DD9"
+				item: "kubejs:hv_upgrade_kit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "HV"
+}
