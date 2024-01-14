@@ -349,6 +349,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x strontium', '1x carbon', '4x oxygen')
         .color(0xe6ffff)
         .iconSet(GTMaterialIconSet.GEM_VERTICAL);
+
+    event.create('npk_solution')
+        .fluid()
+        .color(0xb8c3f5);
+
+        
 });
 
 // GTCEuStartupEvents.registry('gtceu:material', event => {
