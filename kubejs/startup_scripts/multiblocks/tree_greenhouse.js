@@ -2,7 +2,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('tree_greenhouse')
         .category('tree_greenhouse')
         .setEUIO('in')
-        .setMaxIOSize(1, 2, 3, 1)
+        .setMaxIOSize(2, 2, 3, 1)
         .setSound(GTSoundEntries.BOILER);
 });
 
