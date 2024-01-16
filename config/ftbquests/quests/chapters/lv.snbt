@@ -14,12 +14,14 @@
 				"1C2D07E0CBA206EC"
 			]
 			id: "27C811CBD873B7E3"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "5DF1CE1A667690BC"
 				item: "gtceu:lv_machine_hull"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -28,14 +30,16 @@
 				"4542E3E43C6C21A3"
 				"27C811CBD873B7E3"
 			]
+			description: ["This block transforms EU into RF, but you can reverse this conversion by using a mallet on it"]
 			id: "5A25ED8F7222CEC5"
+			shape: "gear"
 			tasks: [{
 				id: "60A0B363D4EFBD01"
 				item: "gtceu:lv_4a_energy_converter"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 0.0d
+			x: -4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -45,14 +49,16 @@
 				"6EA934E702391338"
 			]
 			id: "52AFE5CDFB1C3CFF"
+			shape: "gear"
+			size: 1.5d
 			subtitle: "First LV Circuit"
 			tasks: [{
 				id: "2DB689E2C5F4A3F1"
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0BA9FC3D83C62E2A"]
@@ -62,8 +68,8 @@
 				item: "gtceu:resistor"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: -8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0BA9FC3D83C62E2A"]
@@ -73,8 +79,8 @@
 				item: "gtceu:resin_printed_circuit_board"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: -8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1C2D07E0CBA206EC"]
@@ -84,8 +90,8 @@
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.0d
+			x: -8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -98,8 +104,8 @@
 				item: "gtceu:red_alloy_single_cable"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["47DCC1226738BD5B"]
@@ -109,7 +115,7 @@
 				item: "gtceu:tin_single_cable"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -4.0d
 			y: 0.0d
 		}
 		{
@@ -120,19 +126,21 @@
 				item: "gtceu:rubber_plate"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -6.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["591DED14FE286BD7"]
+			description: ["This the LV Superconductor"]
 			id: "4542E3E43C6C21A3"
+			shape: "rsquare"
 			tasks: [{
 				id: "309C6188726F8FB4"
 				item: "gtceu:soul_infused_single_wire"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.0d
+			x: -2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["462E016CCFCD4DAA"]
@@ -142,8 +150,8 @@
 				item: "thermal:slime_mushroom_spores"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 0.0d
+			x: -12.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0478033E13CF24CD"]
@@ -153,7 +161,7 @@
 				item: "minecraft:slime_ball"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -12.0d
 			y: 2.0d
 		}
 		{
@@ -164,11 +172,12 @@
 				item: "gtceu:sticky_resin"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -10.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["52AFE5CDFB1C3CFF"]
+			description: ["This is a very easy way of generating RF for LV machines"]
 			id: "55B04DE4E7DE8E34"
 			tasks: [
 				{
@@ -181,14 +190,8 @@
 					item: "create_new_age:generator_coil"
 					type: "item"
 				}
-				{
-					count: 12L
-					id: "7DE37BB96BA83DE9"
-					item: "create_new_age:magnetite_block"
-					type: "item"
-				}
 			]
-			x: 0.0d
+			x: -6.0d
 			y: 4.0d
 		}
 		{
@@ -199,8 +202,8 @@
 				item: "create_new_age:copper_wire"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 4.0d
+			x: -8.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["00C1E60AC07CFEF5"]
@@ -211,8 +214,8 @@
 				item: "create_new_age:overcharged_iron_wire"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 6.0d
+			x: -8.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["526E148C3F82F16C"]
@@ -223,8 +226,8 @@
 				item: "create_new_age:overcharged_golden_wire"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 8.0d
+			x: -8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6FC6D55D5CCDFA56"]
@@ -235,11 +238,11 @@
 				item: "create_new_age:overcharged_diamond_wire"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 10.0d
+			x: -8.0d
+			y: 12.0d
 		}
 		{
-			dependencies: ["55B04DE4E7DE8E34"]
+			dependencies: ["525A37425A3F17C5"]
 			id: "377246C11DD320DA"
 			optional: true
 			tasks: [{
@@ -247,8 +250,8 @@
 				item: "create_new_age:redstone_magnet"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 6.0d
+			x: -6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["377246C11DD320DA"]
@@ -259,8 +262,8 @@
 				item: "create_new_age:layered_magnet"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 8.0d
+			x: -6.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["40D24F3F6CF56415"]
@@ -271,8 +274,8 @@
 				item: "create_new_age:fluxuated_magnetite"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 10.0d
+			x: -6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["55B04DE4E7DE8E34"]
@@ -282,7 +285,7 @@
 				item: "create_new_age:energiser_t1"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -4.0d
 			y: 6.0d
 		}
 		{
@@ -294,7 +297,7 @@
 				item: "create_new_age:energiser_t2"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -4.0d
 			y: 8.0d
 		}
 		{
@@ -306,18 +309,18 @@
 				item: "create_new_age:energiser_t3"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -4.0d
 			y: 10.0d
 		}
 		{
-			dependencies: ["27C811CBD873B7E3"]
+			dependencies: ["308D2B3E4E93E626"]
 			id: "69A67DFA27D75D4F"
 			tasks: [{
 				id: "2FEAF74C7503F08C"
 				item: "gtceu:lv_electric_motor"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -328,7 +331,7 @@
 				item: "gtceu:lv_electric_piston"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.0d
 			y: 2.0d
 		}
 		{
@@ -339,7 +342,7 @@
 				item: "gtceu:lv_robot_arm"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.0d
 			y: 4.0d
 		}
 		{
@@ -350,7 +353,7 @@
 				item: "gtceu:lv_conveyor_module"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.0d
 			y: 6.0d
 		}
 		{
@@ -361,8 +364,8 @@
 				item: "gtceu:lv_electric_pump"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 0.0d
+			x: 10.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -375,8 +378,8 @@
 				item: "gtceu:lv_assembler"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 4.0d
+			x: 10.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["300CC62C2E30EE26"]
@@ -386,8 +389,8 @@
 				item: "exnihilosequentia:flint_mesh"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 4.0d
+			x: 12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["27C811CBD873B7E3"]
@@ -398,7 +401,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["69A67DFA27D75D4F"]
@@ -408,7 +411,7 @@
 				item: "gtceu:lv_wiremill"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 8.0d
 			y: -2.0d
 		}
 		{
@@ -419,7 +422,7 @@
 				item: "gtceu:lv_chemical_reactor"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 6.0d
 			y: -2.0d
 		}
 		{
@@ -431,7 +434,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3FEF201811BE4163"]
@@ -441,7 +444,7 @@
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 10.0d
 			y: 2.0d
 		}
 		{
@@ -452,8 +455,8 @@
 				item: "gtceu:lv_lathe"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 2.0d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3FEF201811BE4163"]
@@ -463,8 +466,8 @@
 				item: "gtceu:lv_macerator"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 2.0d
+			x: 10.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1963F7EE14C490D0"]
@@ -474,19 +477,19 @@
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 0.0d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["2EC2F46E06FF9950"]
+			dependencies: ["1963F7EE14C490D0"]
 			id: "1288306C2B655CE0"
 			tasks: [{
 				id: "1E24872D16D58904"
 				item: "gtceu:lv_fluid_solidifier"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -2.0d
+			x: 12.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3FEF201811BE4163"]
@@ -496,7 +499,7 @@
 				item: "gtceu:lv_forge_hammer"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 6.0d
 			y: 2.0d
 		}
 		{
@@ -507,7 +510,7 @@
 				item: "gtceu:lv_centrifuge"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -521,8 +524,8 @@
 				item: "gtceu:graphite_dust"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 4.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4189D7638919CF96"]
@@ -543,8 +546,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.0d
+			x: 4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["49498C41CA45236C"]
@@ -554,8 +557,8 @@
 				item: "gtceu:lv_arc_furnace"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 8.0d
+			x: 14.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -568,8 +571,8 @@
 				item: "gtceu:tempered_glass"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 8.0d
+			x: 16.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7E750B9955FD62B7"]
@@ -579,8 +582,8 @@
 				item: "thermal:obsidian_glass"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 6.0d
+			x: 18.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["21543739405B1F0E"]
@@ -599,8 +602,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 6.0d
+			x: 18.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5A25ED8F7222CEC5"]
@@ -610,8 +613,8 @@
 				item: "thermal:dynamo_stirling"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.0d
+			x: -2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["27C811CBD873B7E3"]
@@ -622,7 +625,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["27C811CBD873B7E3"]
@@ -632,8 +635,8 @@
 				item: "gtceu:lv_electrolyzer"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3073A4454F838179"]
@@ -643,22 +646,22 @@
 				item: "gtceu:cobalt_dust"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 6.0d
+			x: 4.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["4B7245BF43A01BAD"]
+			dependencies: ["1963F7EE14C490D0"]
 			id: "18484AE6E55278CA"
 			tasks: [{
 				id: "5F7C7ED4EA50F113"
 				item: "gtceu:lv_gas_collector"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 8.0d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["480D897424EF8D14"]
+			dependencies: ["69A67DFA27D75D4F"]
 			id: "4B7245BF43A01BAD"
 			tasks: [{
 				id: "66F1A8BCA7FE04B1"
@@ -666,7 +669,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7088F83F73C1F722"]
@@ -683,8 +686,8 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
-			y: 8.0d
+			x: 16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["06364BB267D849F1"]
@@ -695,7 +698,7 @@
 				title: "Sulfur Dioxide"
 				type: "checkmark"
 			}]
-			x: 10.0d
+			x: 6.0d
 			y: -4.0d
 		}
 		{
@@ -707,8 +710,8 @@
 				title: "Sulfur Trioxide"
 				type: "checkmark"
 			}]
-			x: 12.0d
-			y: -4.0d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["29A63CDD33D1069E"]
@@ -718,8 +721,8 @@
 				item: "gtceu:sulfuric_acid_bucket"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -4.0d
+			x: 6.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["2C5DA1896F275550"]
@@ -729,19 +732,20 @@
 				item: "gtceu:sodium_bisulfate_dust"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -4.0d
+			x: 8.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["49984AE8EF94B9A0"]
 			id: "3184995EBA22F540"
+			shape: "octagon"
 			tasks: [{
 				id: "17A7B16E02144A7D"
 				item: "gtceu:sodium_persulfate_bucket"
 				type: "item"
 			}]
-			x: 18.0d
-			y: -4.0d
+			x: 10.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["49984AE8EF94B9A0"]
@@ -751,19 +755,20 @@
 				item: "gtceu:hydrochloric_acid_bucket"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -2.0d
+			x: 8.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1008CF0C59AE7056"]
 			id: "63154C896DDB6F3A"
+			shape: "octagon"
 			tasks: [{
 				id: "572A6E419091C9B2"
 				item: "gtceu:iron_iii_chloride_bucket"
 				type: "item"
 			}]
-			x: 18.0d
-			y: -2.0d
+			x: 10.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6E4B3F7B1624CA13"]
@@ -773,30 +778,32 @@
 				item: "gtceu:electric_blast_furnace"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 4.0d
+			x: 14.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0FCB10159A8E572F"]
 			id: "62BB54F3EE1A0966"
+			shape: "octagon"
 			tasks: [{
 				id: "77404F87F878CAFD"
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 6.0d
+			x: 14.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0FCB10159A8E572F"]
 			id: "156FCDF9DDCBD947"
+			shape: "octagon"
 			tasks: [{
 				id: "6BB6B9E8B3688749"
 				item: "gtceu:signalum_ingot"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 2.0d
+			x: 16.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["27C811CBD873B7E3"]
@@ -806,8 +813,8 @@
 				item: "gtceu:lv_super_chest"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.0d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["27C811CBD873B7E3"]
@@ -817,7 +824,7 @@
 				item: "gtceu:primitive_alloy_smelter"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 0.0d
 			y: -2.0d
 		}
 		{
@@ -828,7 +835,7 @@
 				item: "gtceu:kinetic_ore_factory"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 0.0d
 			y: -4.0d
 		}
 		{
@@ -839,8 +846,8 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -6.0d
+			x: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["041B9E334DAF4555"]
@@ -850,8 +857,8 @@
 				item: "gtceu:red_alloy_ingot"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -4.0d
+			x: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -864,8 +871,8 @@
 				item: "gtceu:invar_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.0d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -878,8 +885,8 @@
 				item: "gtceu:soul_infused_ingot"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -4.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0897FECA3E66208F"]
@@ -889,8 +896,8 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -6.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["02FCF02FB80ECD2F"]
@@ -900,8 +907,8 @@
 				item: "thermal:device_rock_gen"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["27682F534C4405E5"]
@@ -911,8 +918,8 @@
 				item: "thermal_extra:soul_sand_dust"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -6.0d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["64730F02258B0BB8"]
@@ -922,8 +929,8 @@
 				item: "minecraft:soul_sand"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -6.0d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["18484AE6E55278CA"]
@@ -934,8 +941,30 @@
 				title: "Air"
 				type: "checkmark"
 			}]
-			x: 10.0d
-			y: 8.0d
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55B04DE4E7DE8E34"]
+			id: "525A37425A3F17C5"
+			tasks: [{
+				id: "10D4012D96777CD2"
+				item: "create_new_age:magnetite_block"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["480D897424EF8D14"]
+			id: "016FB5B376D17866"
+			tasks: [{
+				id: "3CF35A37B2345B45"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
 		}
 	]
 	title: "LV"
