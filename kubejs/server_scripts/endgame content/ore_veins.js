@@ -1,5 +1,8 @@
 
 GTCEuServerEvents.oreVeins(event => {
+
+    event.removeAll();
+
     event.add('start:zapolite_vein', vein => {
         vein.weight(600)
         vein.clusterSize(60)
@@ -115,4 +118,55 @@ GTCEuServerEvents.oreVeins(event => {
             .radius(5)
         )
     });
+
+    // event.add('start:mythrillium_vein', vein => {
+    //     vein.weight(800)
+    //     vein.clusterSize(40)
+    //     vein.density(0.35)
+    //     vein.discardChanceOnAirExposure(0)
+
+    //     vein.layer('netherrack')
+
+    //     vein.heightRangeUniform(10, 200)
+
+    //     vein.layeredVeinGenerator(generator => generator
+    //         .buildLayerPattern(pattern => pattern
+    //             .layer(l => l.weight(3).mat(GTMaterials.get('mythrilium')).size(2, 4))       
+    //         )
+    //     )
+    // });
+
+    // event.add('start:adamantite_vein', vein => {
+    //     vein.weight(800)
+    //     vein.clusterSize(40)
+    //     vein.density(0.35)
+    //     vein.discardChanceOnAirExposure(0)
+
+    //     vein.layer('netherrack')
+
+    //     vein.heightRangeUniform(10, 200)
+
+    //     vein.layeredVeinGenerator(generator => generator
+    //         .buildLayerPattern(pattern => pattern
+    //             .layer(l => l.weight(3).mat(GTMaterials.get('adamantite')).size(2, 4))              
+    //         )
+    //     )
+    // });
+
+    // event.add('start:estalt_vein', vein => {
+    //     vein.weight(800)
+    //     vein.clusterSize(40)
+    //     vein.density(0.35)
+    //     vein.discardChanceOnAirExposure(0)
+
+    //     vein.layer('netherrack')
+
+    //     vein.heightRangeUniform(10, 200)
+
+    //     vein.layeredVeinGenerator(generator => generator
+    //         .buildLayerPattern(pattern => pattern
+    //             .layer(l => l.weight(3).mat(GTMaterials.get('estaltine')).size(2, 4))              
+    //         )
+    //     )
+    // });
 });

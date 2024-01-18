@@ -45,7 +45,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get('pure_netherite'))
         .color(0x1a0d00)
         .iconSet(GTMaterialIconSet.DULL)
-        .blastTemp(3300, $BlastProperty.GasTier.LOW, GTValues.V[GTValues.EV], 1200)
+        .blastTemp(3300, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.EV], 1200)
         .flags(GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_RING);
 
@@ -60,7 +60,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('7x naquadria', '2x pure_netherite', '5x neutronium', '16x fluorine')
         .color(0xccff33)
         .iconSet(GTMaterialIconSet.DULL)
-        .blastTemp(24000, $BlastProperty.GasTier.HIGHEST, GTValues.V[GTValues.UHV], 6000)
+        .blastTemp(24000, $BlastProperty.GasTier.HIGHEST, GTValues.VA[GTValues.UV], 6000)
         .flags(GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_FRAME);
 

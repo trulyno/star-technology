@@ -23,6 +23,42 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletedYield(50)
         
     });
+
+    event.add('start:nether_mythrilium_rich_magma_deposit', vein => {
+        vein.addSpawnDimension('minecraft:the_nether')
+        vein.fluid(() => Fluid.of('gtceu:nether_mythrilium_rich_magma').fluid)
+        vein.weight(500)
+        vein.minimumYield(120)
+        vein.maximumYield(720)
+        vein.depletionAmount(2)
+        vein.depletionChance(1)
+        vein.depletedYield(50)
+        
+    });
+
+    event.add('start:nether_adamantite_rich_magma_deposit', vein => {
+        vein.addSpawnDimension('minecraft:the_nether')
+        vein.fluid(() => Fluid.of('gtceu:nether_adamantite_rich_magma').fluid)
+        vein.weight(500)
+        vein.minimumYield(120)
+        vein.maximumYield(720)
+        vein.depletionAmount(2)
+        vein.depletionChance(1)
+        vein.depletedYield(50)
+        
+    });
+
+    event.add('start:nether_estaltine_rich_magma_deposit', vein => {
+        vein.addSpawnDimension('minecraft:the_nether')
+        vein.fluid(() => Fluid.of('gtceu:nether_estaltine_rich_magma').fluid)
+        vein.weight(500)
+        vein.minimumYield(120)
+        vein.maximumYield(720)
+        vein.depletionAmount(2)
+        vein.depletionChance(1)
+        vein.depletedYield(50)
+        
+    });
     // event.modify(GTCEu.id('light_oil_deposit'), vein => {
     //     vein.biomes(0, 'sgjourney:abydos_desert')
     //     vein.biomes(0, 'sgjourney:abydos_spires')

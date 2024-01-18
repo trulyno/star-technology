@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .components('35x steel', '10x chromium', '4x nickel', '1x manganese', '1x silicon')
         .color(0x800040)
-        .blastTemp(3500, $BlastProperty.GasTier.LOW, GTValues.V[GTValues.EV], 1500)
+        .blastTemp(3500, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.EV], 1500)
         .iconSet(GTMaterialIconSet.METALLIC)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME);
 
@@ -20,7 +20,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .components('7x nickel', '2x chromium', '1x steel')
         .color(0xa3a375)
-        .blastTemp(3500, $BlastProperty.GasTier.LOW, GTValues.V[GTValues.EV], 1500)
+        .blastTemp(3500, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.EV], 1500)
         .iconSet(GTMaterialIconSet.SHINY)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME);
 

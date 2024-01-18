@@ -1,0 +1,341 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uev"
+	group: "1E0FC4EA21F735F7"
+	id: "4EB4AC96F8E9F7F1"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2D7D70001327DC22"]
+			id: "32980F30BBEEB30D"
+			rewards: [{
+				command: "/gamestages add @a two"
+				id: "6BF4F9A6EC03BC93"
+				type: "command"
+			}]
+			tasks: [{
+				id: "3BDE218823B7678D"
+				item: "sgjourney:milky_way_stargate"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3412C8DB236BE6B1"]
+			id: "1A5EB0113E03D44D"
+			tasks: [{
+				id: "4F704F7DC6D6B62E"
+				item: "gtceu:mythrilium_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1A5EB0113E03D44D"]
+			id: "187D742F2AB52954"
+			tasks: [{
+				id: "6CAF4D920CD5CC82"
+				item: "gtceu:trichloromythrilium_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["187D742F2AB52954"]
+			id: "4B1FDE17932295C0"
+			tasks: [{
+				id: "1A393B833DCB239A"
+				item: "gtceu:mythrilium_oxide_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4B1FDE17932295C0"]
+			id: "73660CA0B0F64204"
+			tasks: [{
+				id: "328A0BE1968A65AD"
+				item: "gtceu:mythril_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["32980F30BBEEB30D"]
+			id: "3412C8DB236BE6B1"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "2C25665376FB3BEE"
+				title: "Exploring The Nether"
+				type: "dimension"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3412C8DB236BE6B1"]
+			id: "4BE1E6556D0D85C9"
+			tasks: [{
+				id: "0C5AAA14A6606F0E"
+				item: "gtceu:adamantite_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4BE1E6556D0D85C9"]
+			id: "7E4D3C49EF3D0976"
+			tasks: [{
+				id: "1F88972DABFC6FBC"
+				item: "gtceu:adamantite_hydroxide_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7E4D3C49EF3D0976"]
+			id: "56760FB34A29DEC5"
+			tasks: [{
+				id: "01FB0376B091FB42"
+				item: "gtceu:adamantite_oxide_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56760FB34A29DEC5"]
+			id: "7CBE55D9D1C4F892"
+			tasks: [{
+				id: "1465CF57B420ED4E"
+				item: "gtceu:adamantine_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"73660CA0B0F64204"
+				"7CBE55D9D1C4F892"
+				"6D61B9B6D61DBF76"
+			]
+			dependency_requirement: "one_completed"
+			id: "08AF894E413FDA38"
+			tasks: [{
+				id: "31B64522C0225316"
+				item: "gtceu:nether_rare_earth_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3412C8DB236BE6B1"]
+			id: "7EE3CA329A5C5993"
+			tasks: [{
+				id: "67CF2543F4CB78CE"
+				item: "gtceu:estaltine_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7EE3CA329A5C5993"]
+			id: "4E2181B0A452BD88"
+			tasks: [{
+				id: "55D8F1827102B616"
+				item: "gtceu:estaltine_sulfate_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4E2181B0A452BD88"]
+			id: "32D4911C38665620"
+			tasks: [{
+				id: "46D44A05A1F03860"
+				item: "gtceu:estaltine_fluoride_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["32D4911C38665620"]
+			id: "01BB4F5315B6CB47"
+			tasks: [{
+				id: "78B30E00C252C799"
+				item: "gtceu:estaltine_hydroxide_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["01BB4F5315B6CB47"]
+			id: "049CAC450783EA9D"
+			tasks: [{
+				id: "67C4C6188C0029F7"
+				item: "gtceu:estaltine_oxide_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["049CAC450783EA9D"]
+			id: "6D61B9B6D61DBF76"
+			tasks: [{
+				id: "7C831CDADE9E0A8F"
+				item: "gtceu:estalt_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["08AF894E413FDA38"]
+			id: "7C8F41843E5EA734"
+			tasks: [
+				{
+					id: "59685ACB33967B8F"
+					item: "gtceu:polonium_dust"
+					type: "item"
+				}
+				{
+					id: "579CDCF0C48CEB74"
+					item: "gtceu:astatine_dust"
+					type: "item"
+				}
+				{
+					id: "53F7EED3EF8201C8"
+					item: "gtceu:hafnium_dust"
+					type: "item"
+				}
+				{
+					id: "5E38A5CF611C52FB"
+					item: "gtceu:seaborgium_dust"
+					type: "item"
+				}
+				{
+					id: "0187776FADFD401E"
+					item: "gtceu:flerovium_dust"
+					type: "item"
+				}
+				{
+					id: "674F5D536AE0555E"
+					item: "gtceu:oganesson_bucket"
+					type: "item"
+				}
+			]
+			title: "Polonium, Astatine, Seaborgium, Hafnium, Flerovium and Oganesson"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6ADA4149BABD157B"]
+			id: "0CDCACDC045C08F1"
+			tasks: [{
+				id: "2BE123EEEAF9CB04"
+				item: "gtceu:calamatium_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["663DD0793B704A0C"]
+			id: "4E9313DFD7875499"
+			tasks: [{
+				id: "58C2A1B37DAE7BE1"
+				item: "gtceu:isovol_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["5DD45C6950AA7DFA"]
+			id: "6ADA4149BABD157B"
+			tasks: [{
+				id: "6D1169D6CB484102"
+				item: "gtceu:calamatium_fluoride_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6DC5297757DEF56B"]
+			id: "663DD0793B704A0C"
+			tasks: [{
+				id: "7F923C91D6A8B482"
+				item: "gtceu:isovol_fluoride_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6D61B9B6D61DBF76"]
+			icon: "gtceu:impure_calamatium_solution_bucket"
+			id: "7B351655F2DBF1ED"
+			tasks: [{
+				id: "55A36AF89116C856"
+				title: "Impure Calamatium Solution"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7B351655F2DBF1ED"]
+			icon: "gtceu:calamatium_solution_bucket"
+			id: "5DD45C6950AA7DFA"
+			tasks: [{
+				id: "7D9899902D5EDC60"
+				title: "Calamatium Solution"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["30CB96AFFB5EDE2E"]
+			icon: "gtceu:isovol_solution_bucket"
+			id: "6DC5297757DEF56B"
+			tasks: [{
+				id: "7A8BBF4F750D9033"
+				title: "Isovol Solution"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6D61B9B6D61DBF76"]
+			icon: "gtceu:impure_isovol_solution_bucket"
+			id: "30CB96AFFB5EDE2E"
+			tasks: [{
+				id: "74F05F64F3282493"
+				title: "Impure Isovol Solution"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 4.0d
+		}
+	]
+	title: "UEV"
+}

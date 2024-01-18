@@ -1,5 +1,4 @@
-
-const newLocal = ServerEvents.recipes(event => {
+ServerEvents.recipes(event => {
 
     function treeGrowing(type) {
         event.recipes.gtceu.tree_greenhouse(`${type}_growing`)

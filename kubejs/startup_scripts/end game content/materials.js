@@ -8,18 +8,38 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('echo', -1, -1, -1, null, 'Ec', false);
     event.create('zapolgium', 141, 217, -1, null, 'Zg', false);
     event.create('uhh', -1, -1, -1, null, '?', false);
+    event.create('mythril', 132, 193, -1, null, 'My', false);
+    event.create('adamantine', 131, 182, -1, null, 'Ad', false);
+    event.create('estalt', 133, 199, -1, null, 'El', false);
+    event.create('calamatium', 134, 211, -1, null, 'Ct', false);
+    event.create('isovol', 135, 221, -1, null, 'Is', false);
 });
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
+    GTMaterials.Oganesson.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    GTMaterials.Oganesson.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.GAS, new GTFluidBuilder())
+    GTMaterials.Iodine.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    GTMaterials.Iodine.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.GAS, new GTFluidBuilder())
+
     GTMaterials.Zirconium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Zirconium.setProperty(PropertyKey.BLAST, new $BlastProperty(8000, 'higher', GTValues.V[GTValues.LuV], 800));
-    GTMaterials.Iodine.setProperty(PropertyKey.DUST, new $DustProperty());
     GTMaterials.Selenium.setProperty(PropertyKey.DUST, new $DustProperty());
     GTMaterials.Strontium.setProperty(PropertyKey.DUST, new $DustProperty());
     GTMaterials.Thulium.setProperty(PropertyKey.DUST, new $DustProperty());
     GTMaterials.Tellurium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Tellurium.setProperty(PropertyKey.BLAST, new $BlastProperty(8000, 'high', GTValues.V[GTValues.LuV], 500));
+    GTMaterials.Tellurium.setProperty(PropertyKey.BLAST, new $BlastProperty(10000, 'higher', GTValues.VA[GTValues.ZPM], 700));
+    GTMaterials.Polonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    GTMaterials.Polonium.setProperty(PropertyKey.BLAST, new $BlastProperty(10000, 'higher', GTValues.VA[GTValues.ZPM], 600));
+    GTMaterials.Astatine.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    GTMaterials.Astatine.setProperty(PropertyKey.BLAST, new $BlastProperty(10000, 'higher', GTValues.VA[GTValues.ZPM], 800));
+    GTMaterials.Hafnium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    GTMaterials.Hafnium.setProperty(PropertyKey.BLAST, new $BlastProperty(10000, 'higher', GTValues.VA[GTValues.ZPM], 900));
+    GTMaterials.Seaborgium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    GTMaterials.Seaborgium.setProperty(PropertyKey.BLAST, new $BlastProperty(10000, 'higher', GTValues.VA[GTValues.ZPM], 1000));
+    GTMaterials.Flerovium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    GTMaterials.Flerovium.setProperty(PropertyKey.BLAST, new $BlastProperty(10000, 'higher', GTValues.VA[GTValues.LuV], 900));
+    
 
     GTMaterials.Zirconium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE);
 
@@ -41,7 +61,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('void')
         .components('1x echo', '1x neutronium')
         .ingot(1)
-        .blastTemp(10799, $BlastProperty.GasTier.HIGHEST, GTValues.V[GTValues.UEV], 8000)
+        .blastTemp(10799, $BlastProperty.GasTier.HIGHEST, GTValues.VA[GTValues.UEV], 8000)
         .color(0x001a1a)
         .iconSet(GTMaterialIconSet.DULL)
         .flags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD);
@@ -64,7 +84,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get('zapolgium'))
         .color(0xcc00cc)
         .iconSet(GTMaterialIconSet.DULL)
-        .blastTemp(10799, 'highest', GTValues.V[GTValues.UHV], 1600);
+        .blastTemp(10799, 'highest', GTValues.VA[GTValues.UHV], 1600);
 
     event.create('magnetic_zapolgium')
         .ingot()
@@ -280,7 +300,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('3x zapolgium', '4x duranium', '2x europium')
         .color(0xff66ff)
         .iconSet(GTMaterialIconSet.METALLIC)
-        .blastTemp(10799, 'highest', GTValues.V[GTValues.LuV], 6000)
+        .blastTemp(10799, 'highest', GTValues.VA[GTValues.LuV], 6000)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_RING);
 
     event.create('zirconium_selenide_diiodide')
@@ -289,7 +309,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x zirconium', '1x selenium', '2x iodine')
         .color(0x6600cc)
         .iconSet(GTMaterialIconSet.DULL)
-        .blastTemp(8900, 'higher', GTValues.V[GTValues.LuV], 4000)
+        .blastTemp(8900, 'higher', GTValues.VA[GTValues.LuV], 4000)
         .cableProperties(GTValues.V[GTValues.UHV], 8, 16, false);
 
     event.create('indium_tin_lead_cadmium_soldering_alloy')
@@ -305,7 +325,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('251x zirconium', '3x tin', '2x chromium', '1x iron')
         .color(0xff9999)
         .iconSet(GTMaterialIconSet.DULL)
-        .blastTemp(8900, 'higher', GTValues.V[GTValues.LuV], 2000)
+        .blastTemp(8900, 'higher', GTValues.VA[GTValues.LuV], 2000)
         .flags(GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_ROTOR);
 
     event.create('iron_selenide')
@@ -333,7 +353,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x iron_selenide', '1x strontium_titanium_oxide')
         .color(0x66ff33)
         .iconSet(GTMaterialIconSet.DULL)
-        .blastTemp(10299, 'highest', GTValues.V[GTValues.UV], 2500)
+        .blastTemp(10299, 'highest', GTValues.VA[GTValues.UV], 2500)
         .cableProperties(GTValues.V[GTValues.UHV], 4, 0, true);
 
     event.create('strontianite')
@@ -350,13 +370,206 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xe6ffff)
         .iconSet(GTMaterialIconSet.GEM_VERTICAL);
 
+    event.create('mythril')
+        .ingot()
+        .fluid()
+        .element(GTElements.get('mythril'))
+        .color(0x006666)
+        .blastTemp(10299, 'highest', GTValues.VA[GTValues.ZPM], 3000)
+        .iconSet(GTMaterialIconSet.METALLIC);
+
+    event.create('adamantine')
+        .ingot()
+        .fluid()
+        .element(GTElements.get('adamantine'))
+        .color(0xe60000)
+        .blastTemp(10299, 'highest', GTValues.VA[GTValues.ZPM], 3000)
+        .iconSet(GTMaterialIconSet.METALLIC);
+
+    event.create('estalt')
+        .ingot()
+        .fluid()
+        .element(GTElements.get('estalt'))
+        .color(0xff5050)
+        .blastTemp(10299, 'highest', GTValues.VA[GTValues.ZPM], 3000)
+        .iconSet(GTMaterialIconSet.DULL);
+
+    event.create('mythrilium')
+        .dust()
+        .ore(4, 2)
+        .components('1x mythril', '1x silicon', '6x fluorine')
+        .color(0x660033)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create('trichloromythrilium')
+        .dust()
+        .components('1x mythril', '3x chlorine')
+        .color(0x333300)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create('mythrilium_oxide')
+        .dust()
+        .components('1x mythril', '1x oxygen')
+        .color(0x003300)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create('nether_rare_earth')
+        .dust()
+        .components('1x uhh')
+        .color(0x800000)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create('adamantite')
+        .dust()
+        .ore(4, 2)
+        .components('1x adamantine', '3x fluorine', '1x antimony')
+        .color(0x3333cc)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create('adamantite_hydroxide')
+        .dust()
+        .components('1x adamantine', '3x oxygen', '3x hydrogen')
+        .color(0xcc0099)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create('adamantite_oxide')
+        .dust()
+        .components('2x adamantine', '3x oxygen')
+        .color(0xcc6699)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create('sodium_fluoride')
+        .dust()
+        .components('1x sodium', '1x fluorine')
+        .color(0x6600ff);
+
+    event.create('estaltine')
+        .dust()
+        .ore(4, 2)
+        .components('4x estalt', '1x sulfur')
+        .color(0x800000)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create('estaltine_sulfate')
+        .dust()
+        .components('1x estalt', '2x sulfur', '8x oxygen')
+        .color(0xcc6699)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create('estaltine_fluoride')
+        .dust()
+        .components('1x estalt', '4x fluorine')
+        .color(0xffcc66)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create('estaltine_hydroxide')
+        .dust()
+        .components('1x estalt', '4x oxygen', '4x hydrogen')
+        .color(0xff3300)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create('estaltine_oxide')
+        .dust()
+        .components('1x estalt', '2x oxygen')
+        .color(0x990000)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create('polonium_dioxide')
+        .dust()
+        .components('1x polonium', '2x oxygen')
+        .color(0xcccccc);
+
+    event.create('astatine_oxide')
+        .dust()
+        .components('1x astatine', '3x oxygen')
+        .color(0xcccc00);
+
+    event.create('lanthanum_triastatate')
+        .dust()
+        .components('1x lanthanum', '3x astatine_oxide')
+        .color(0xcccccc);
+
+    event.create('hafnium_diboride')
+        .dust()
+        .components('1x hafnium', '2x boron')
+        .color(0x0066cc);
+
+    event.create('seaborgium_oxychloride')
+        .dust()
+        .components('1x seaborgium', '2x oxygen', '2x chlorine')
+        .color(0x669900);
+
+    event.create('flerovium_oxide')
+        .dust()
+        .components('2x flerovium', '4x oxygen')
+        .color(0x669999);
+
+    event.create('oganesson_diiodide')
+        .fluid()
+        .components('1x oganesson', '2x iodine')
+        .color(0xffcccc);
+
+    event.create('nether_mythrilium_rich_magma')
+        .fluid()
+        .components('5x mythrilium')
+        .color(0x333300);
+
+    event.create('nether_adamantite_rich_magma')
+        .fluid()
+        .components('5x adamantite')
+        .color(0x660000);
+
+    event.create('nether_estaltine_rich_magma')
+        .fluid()
+        .components('5x estaltine')
+        .color(0x009999);
+
     event.create('npk_solution')
         .fluid()
         .color(0xb8c3f5);
 
-        
-});
+    event.create('calamatium')
+        .ingot()
+        .fluid()
+        .element(GTElements.get('calamatium'))
+        .color(0x660000)
+        .iconSet(GTMaterialIconSet.DULL)
+        .blastTemp(11799, 'highest', GTValues.VA[GTValues.UV], 2750)
 
-// GTCEuStartupEvents.registry('gtceu:material', event => {
-//     GTMaterials.get('zapolgium').getProperty(PropertyKey.INGOT).setMagneticMaterial(GTMaterials.get('magnetic_zapolgium'));
-// });
+    event.create('isovol')
+        .ingot()
+        .fluid()
+        .element(GTElements.get('isovol'))
+        .color(0x290066)
+        .iconSet(GTMaterialIconSet.DULL)
+        .blastTemp(12499, 'highest', GTValues.VA[GTValues.UV], 2750)
+
+    event.create('impure_calamatium_solution')
+        .fluid()
+        .color(0x990000);
+
+    event.create('impure_isovol_solution')
+        .fluid()
+        .color(0x000066);
+
+    event.create('calamatium_solution')
+        .fluid()
+        .color(0xe60000);
+
+    event.create('isovol_solution')
+        .fluid()
+        .color(0x6600cc);
+
+    event.create('calamatium_fluoride')
+        .dust()
+        .components('1x calamatium', '2x fluorine')
+        .color(0xcc0066)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);;
+
+    event.create('isovol_fluoride')
+        .dust()
+        .components('1x isovol', '2x fluorine')
+        .color(0x9900ff)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);;
+    
+});

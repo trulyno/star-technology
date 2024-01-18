@@ -19,7 +19,6 @@
 			y: 1.0d
 		}
 		{
-			description: ["Try running around your crops"]
 			id: "3CF6E632CC7D6856"
 			tasks: [{
 				id: "3B55918F1165E854"
@@ -150,7 +149,6 @@
 		}
 		{
 			dependencies: ["1DF912172D11E3CF"]
-			description: ["You can make dirt easily by sieving coarse dirt"]
 			id: "114F9DE75452E66B"
 			tasks: [{
 				id: "2F2A169DC7130123"
@@ -497,7 +495,6 @@
 		}
 		{
 			dependencies: ["6F62E5BFF7224E36"]
-			description: ["Using wrought iron takes less time than iron"]
 			id: "1C2D07E0CBA206EC"
 			tasks: [{
 				id: "228C753188BFFF1D"

@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('heat_chamber')
         .category('heat_chamber')
         .setEUIO('in')
-        .setMaxIOSize(1, 1, 0, 0)
+        .setMaxIOSize(4, 4, 4, 4)
         .setSound(GTSoundEntries.ARC);
 });
 
@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('heat_chamber', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('heat_chamber')
-        .recipeModifier(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
+        .recipeModifier(GTRecipeModifiers.PARALLEL_HATCH.apply(OverclockingLogic.PERFECT_OVERCLOCK, GTRecipeModifiers.ELECTRIC_OVERCLOCK))
         .appearanceBlock(GCyMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('     EEE     ', '             ', '             ', '             ', '             ', '             ','     EEE     ', '             ', '             ', '             ','     EEE     ', '             ', '             ', '             ', '             ', '             ','     EEE     ')
@@ -30,6 +30,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('H', Predicates.blocks(GCyMBlocks.CASING_HIGH_TEMPERATURE_SMELTING.get()) //htsm 1 casing GCyMBlocks.CASING_STRESS_PROOF.get()
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('A', Predicates.heatingCoils()) // coils
             .where('N', Predicates.blocks('gtceu:neutronium_frame')) // neutronium frame

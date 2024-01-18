@@ -172,7 +172,7 @@
 				item: "gtceu:dragonsteel_ingot"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.0d
 			y: 4.0d
 		}
 		{
@@ -181,6 +181,17 @@
 			tasks: [{
 				id: "273C3753DB74A541"
 				item: "gtceu:dragonsteel_single_wire"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0DD4FD595BC7DA95"]
+			id: "7368E40ADB8E28EA"
+			tasks: [{
+				id: "5718458A4F4BEA79"
+				item: "gtceu:chemical_plant"
 				type: "item"
 			}]
 			x: 0.0d
