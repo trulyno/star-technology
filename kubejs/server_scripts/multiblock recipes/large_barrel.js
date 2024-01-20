@@ -24,6 +24,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('minecraft:clay')
         .duration(1);
 
+    event.recipes.gtceu.large_barrel('to_ssand')
+        .itemInputs('minecraft:sand')
+        .inputFluids('exnihilosequentia:witch_water 100')
+        .itemOutputs('minecraft:soul_sand')
+        .duration(1);
+
     event.recipes.gtceu.large_barrel('to_slime')
         .itemInputs('#forge:mushrooms')
         .inputFluids('exnihilosequentia:witch_water 1000')

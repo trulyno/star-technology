@@ -204,7 +204,7 @@
     "material.seaborgium_oxychloride": "Seaborgium Oxychloride",
     "material.flerovium_oxide": "Flerovium Oxide",
     "material.oganesson_diiodide": "Oganesson Diiodide",
-    "material.npk_solution": "Npk Solution",
+    "material.npk_solution": "NPK Solution",
     "material.calamatium": "Calamatium",
     "material.isovol": "Isovol",
     "material.impure_calamatium_solution": "Impure Calamatium Solution",
@@ -212,5 +212,8 @@
     "material.calamatium_solution": "Calamatium Solution",
     "material.isovol_solution": "Isovol Solution",
     "material.calamatium_fluoride": "Calamatium Fluoride",
-    "material.isovol_fluoride": "Isovol Fluoride"
+    "material.isovol_fluoride": "Isovol Fluoride",
+    "material.xeproda": "Xeproda",
+    "material.rhexis": "Rhexis",
+    "material.chalyblux": "Chalyblux"
 }

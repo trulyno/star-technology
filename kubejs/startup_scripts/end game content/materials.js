@@ -13,6 +13,9 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('estalt', 133, 199, -1, null, 'El', false);
     event.create('calamatium', 134, 211, -1, null, 'Ct', false);
     event.create('isovol', 135, 221, -1, null, 'Is', false);
+    event.create('xeproda', 136, 265, -1, null, 'Xp', false);
+    event.create('rhexis', 137, 298, -1, null, 'Rx', false);
+    event.create('chalyblux', 138, 312, -1, null, 'Cx', false);
 });
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -301,7 +304,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xff66ff)
         .iconSet(GTMaterialIconSet.METALLIC)
         .blastTemp(10799, 'highest', GTValues.VA[GTValues.LuV], 6000)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_RING);
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_RING)
+        .cableProperties(GTValues.V[GTValues.UV], 2, 4, false);
 
     event.create('zirconium_selenide_diiodide')
         .ingot()
@@ -534,7 +538,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get('calamatium'))
         .color(0x660000)
         .iconSet(GTMaterialIconSet.DULL)
-        .blastTemp(11799, 'highest', GTValues.VA[GTValues.UV], 2750)
+        .blastTemp(11799, 'highest', GTValues.VA[GTValues.UV], 2750);
 
     event.create('isovol')
         .ingot()
@@ -542,7 +546,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get('isovol'))
         .color(0x290066)
         .iconSet(GTMaterialIconSet.DULL)
-        .blastTemp(12499, 'highest', GTValues.VA[GTValues.UV], 2750)
+        .blastTemp(12499, 'highest', GTValues.VA[GTValues.UV], 2750);
 
     event.create('impure_calamatium_solution')
         .fluid()
@@ -564,12 +568,36 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .components('1x calamatium', '2x fluorine')
         .color(0xcc0066)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);;
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
 
     event.create('isovol_fluoride')
         .dust()
         .components('1x isovol', '2x fluorine')
         .color(0x9900ff)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);;
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION);
+
+    event.create('xeproda')
+        .ingot()
+        .fluid()
+        .element(GTElements.get('xeproda'))
+        .color(0x1a0d00)
+        .iconSet(GTMaterialIconSet.DULL)
+        .blastTemp(12499, 'highest', GTValues.VA[GTValues.UV], 3750);
+
+    event.create('rhexis')
+        .ingot()
+        .fluid()
+        .element(GTElements.get('rhexis'))
+        .color(0x330000)
+        .iconSet(GTMaterialIconSet.DULL)
+        .blastTemp(12499, 'highest', GTValues.VA[GTValues.UV], 4750);
+
+    event.create('chalyblux')
+        .ingot()
+        .fluid()
+        .element(GTElements.get('chalyblux'))
+        .color(0xffcccc)
+        .iconSet(GTMaterialIconSet.DULL)
+        .blastTemp(12499, 'highest', GTValues.VA[GTValues.UV], 5750);
     
 });

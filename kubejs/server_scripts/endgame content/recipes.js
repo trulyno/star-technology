@@ -327,4 +327,11 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:oganesson_diiodide 1000')
         .duration(920)
         .EUt(30000);
+
+    event.recipes.gtceu.assembler('zalloy_coil')
+        .itemInputs('8x gtceu:zalloy_double_wire', '8x gtceu:neutronium_foil')
+        .inputFluids('gtceu:tritanium 144')
+        .itemOutputs('kubejs:zalloy_coil_block')
+        .duration(900)
+        .EUt(GTValues.VHA[GTValues.UHV]);
 });
