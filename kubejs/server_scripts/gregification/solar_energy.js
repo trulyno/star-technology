@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         .EUt(30);
 
     event.recipes.gtceu.circuit_assembler('basic_solar_cell')
-        .itemInputs('gtceu:silicon_plate', 'solarenergy:basic_energy_core', '2x #forge:circuits/lv', '2x gtceu:tin_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:silicon_plate', 'solarenergy:basic_energy_core', '2x #gtceu:circuits/lv', '2x gtceu:tin_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 12')
         .itemOutputs('solarenergy:basic_solar_cell')
         .duration(200)
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         .circuit(0);
 
     event.recipes.gtceu.circuit_assembler('regular_solar_cell')
-        .itemInputs('gtceu:plastic_printed_circuit_board', 'solarenergy:regular_energy_core', '2x #forge:circuits/mv', '2x gtceu:copper_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:plastic_printed_circuit_board', 'solarenergy:regular_energy_core', '2x #gtceu:circuits/mv', '2x gtceu:copper_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 36')
         .itemOutputs('solarenergy:regular_solar_cell')
         .duration(200)
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         .circuit(0);
 
     event.recipes.gtceu.circuit_assembler('intermediate_solar_cell')
-        .itemInputs('gtceu:plastic_printed_circuit_board', 'solarenergy:intermediate_energy_core', '2x #forge:circuits/hv', '2x gtceu:gold_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:plastic_printed_circuit_board', 'solarenergy:intermediate_energy_core', '2x #gtceu:circuits/hv', '2x gtceu:gold_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 36')
         .itemOutputs('solarenergy:intermediate_solar_cell')
         .duration(200)
@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
         .circuit(0);
 
     event.recipes.gtceu.circuit_assembler('advanced_solar_cell')
-        .itemInputs('gtceu:epoxy_printed_circuit_board', 'solarenergy:advanced_energy_core', '2x #forge:circuits/ev', '2x gtceu:aluminium_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:epoxy_printed_circuit_board', 'solarenergy:advanced_energy_core', '2x #gtceu:circuits/ev', '2x gtceu:aluminium_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 72')
         .itemOutputs('solarenergy:advanced_solar_cell')
         .duration(200)
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         .circuit(0);
 
     event.recipes.gtceu.circuit_assembler('elite_solar_cell')
-        .itemInputs('gtceu:fiber_reinforced_printed_circuit_board', 'solarenergy:elite_energy_core', '2x #forge:circuits/iv', '2x gtceu:platinum_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:fiber_reinforced_printed_circuit_board', 'solarenergy:elite_energy_core', '2x #gtceu:circuits/iv', '2x gtceu:platinum_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 144')
         .itemOutputs('solarenergy:elite_solar_cell')
         .duration(200)
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         .circuit(0);
 
     event.recipes.gtceu.circuit_assembler('ultimate_solar_cell')
-        .itemInputs('gtceu:multilayer_fiber_reinforced_printed_circuit_board', 'solarenergy:ultimate_energy_core', '2x #forge:circuits/luv', '2x gtceu:niobium_titanium_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:multilayer_fiber_reinforced_printed_circuit_board', 'solarenergy:ultimate_energy_core', '2x #gtceu:circuits/luv', '2x gtceu:niobium_titanium_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 216')
         .itemOutputs('solarenergy:ultimate_solar_cell')
         .duration(200)
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
         .circuit(0);
 
     event.recipes.gtceu.circuit_assembler('basic_battery_cell')
-        .itemInputs('gtceu:silicon_plate', 'solarenergy:basic_energy_core', '#forge:circuits/lv', '2x gtceu:tin_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:silicon_plate', 'solarenergy:basic_energy_core', '#gtceu:circuits/lv', '2x gtceu:tin_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 12')
         .itemOutputs('solarenergy:basic_battery_cell')
         .duration(200)
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.circuit_assembler('regular_battery_cell')
-        .itemInputs('gtceu:plastic_printed_circuit_board', 'solarenergy:regular_energy_core', '#forge:circuits/mv', '2x gtceu:copper_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:plastic_printed_circuit_board', 'solarenergy:regular_energy_core', '#gtceu:circuits/mv', '2x gtceu:copper_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 36')
         .itemOutputs('solarenergy:regular_battery_cell')
         .duration(200)
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.circuit_assembler('intermediate_battery_cell')
-        .itemInputs('gtceu:plastic_printed_circuit_board', 'solarenergy:intermediate_energy_core', '#forge:circuits/hv', '2x gtceu:gold_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:plastic_printed_circuit_board', 'solarenergy:intermediate_energy_core', '#gtceu:circuits/hv', '2x gtceu:gold_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 36')
         .itemOutputs('solarenergy:intermediate_battery_cell')
         .duration(200)
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.circuit_assembler('advanced_battery_cell')
-        .itemInputs('gtceu:epoxy_printed_circuit_board', 'solarenergy:advanced_energy_core', '#forge:circuits/ev', '2x gtceu:aluminium_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:epoxy_printed_circuit_board', 'solarenergy:advanced_energy_core', '#gtceu:circuits/ev', '2x gtceu:aluminium_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 72')
         .itemOutputs('solarenergy:advanced_battery_cell')
         .duration(200)
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.circuit_assembler('elite_battery_cell')
-        .itemInputs('gtceu:fiber_reinforced_printed_circuit_board', 'solarenergy:elite_energy_core', '#forge:circuits/iv', '2x gtceu:platinum_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:fiber_reinforced_printed_circuit_board', 'solarenergy:elite_energy_core', '#gtceu:circuits/iv', '2x gtceu:platinum_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 144')
         .itemOutputs('solarenergy:elite_battery_cell')
         .duration(200)
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.circuit_assembler('ultimate_battery_cell')
-        .itemInputs('gtceu:multilayer_fiber_reinforced_printed_circuit_board', 'solarenergy:ultimate_energy_core', '#forge:circuits/luv', '2x gtceu:niobium_titanium_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:multilayer_fiber_reinforced_printed_circuit_board', 'solarenergy:ultimate_energy_core', '#gtceu:circuits/luv', '2x gtceu:niobium_titanium_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 216')
         .itemOutputs('solarenergy:ultimate_battery_cell')
         .duration(200)
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.circuit_assembler('basic_dense_battery_cell')
-        .itemInputs('gtceu:multilayer_fiber_reinforced_printed_circuit_board', 'solarenergy:basic_dense_energy_core', '2x #forge:circuits/luv', '2x gtceu:niobium_titanium_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:multilayer_fiber_reinforced_printed_circuit_board', 'solarenergy:basic_dense_energy_core', '2x #gtceu:circuits/luv', '2x gtceu:niobium_titanium_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 216')
         .itemOutputs('solarenergy:basic_dense_battery_cell')
         .duration(200)
@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.circuit_assembler('regular_dense_battery_cell')
-        .itemInputs('gtceu:wetware_printed_circuit_board', 'solarenergy:regular_dense_energy_core', '#forge:circuits/zpm', '2x gtceu:vanadium_gallium_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:wetware_printed_circuit_board', 'solarenergy:regular_dense_energy_core', '#gtceu:circuits/zpm', '2x gtceu:vanadium_gallium_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 288')
         .itemOutputs('solarenergy:regular_dense_battery_cell')
         .duration(200)
@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.circuit_assembler('intermediate_dense_battery_cell')
-        .itemInputs('gtceu:wetware_printed_circuit_board', 'solarenergy:intermediate_dense_energy_core', '2x #forge:circuits/zpm', '2x gtceu:vanadium_gallium_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:wetware_printed_circuit_board', 'solarenergy:intermediate_dense_energy_core', '2x #gtceu:circuits/zpm', '2x gtceu:vanadium_gallium_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 360')
         .itemOutputs('solarenergy:intermediate_dense_battery_cell')
         .duration(200)
@@ -144,7 +144,7 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.circuit_assembler('advanced_dense_battery_cell')
-        .itemInputs('gtceu:wetware_printed_circuit_board', 'solarenergy:advanced_dense_energy_core', '#forge:circuits/uv', '2x gtceu:yttrium_barium_cuprate_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:wetware_printed_circuit_board', 'solarenergy:advanced_dense_energy_core', '#gtceu:circuits/uv', '2x gtceu:yttrium_barium_cuprate_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 432')
         .itemOutputs('solarenergy:advanced_dense_battery_cell')
         .duration(200)
@@ -152,7 +152,7 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.circuit_assembler('elite_dense_battery_cell')
-        .itemInputs('gtceu:wetware_printed_circuit_board', 'solarenergy:elite_dense_energy_core', '2x #forge:circuits/uv', '2x gtceu:yttrium_barium_cuprate_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:wetware_printed_circuit_board', 'solarenergy:elite_dense_energy_core', '2x #gtceu:circuits/uv', '2x gtceu:yttrium_barium_cuprate_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 504')
         .itemOutputs('solarenergy:elite_dense_battery_cell')
         .duration(200)
@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.circuit_assembler('ultimate_dense_battery_cell')
-        .itemInputs('gtceu:wetware_printed_circuit_board', 'solarenergy:ultimate_dense_energy_core', '#forge:circuits/uhv', '2x gtceu:europium_single_cable', '4x minecraft:glass_pane')
+        .itemInputs('gtceu:wetware_printed_circuit_board', 'solarenergy:ultimate_dense_energy_core', '#gtceu:circuits/uhv', '2x gtceu:europium_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 576')
         .itemOutputs('solarenergy:ultimate_dense_battery_cell')
         .duration(200)

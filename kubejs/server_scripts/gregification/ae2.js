@@ -112,41 +112,41 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({output: 'ae2:cell_component_4k'}, 
         'ae2:calculation_processor',
-        '#forge:circuits/lv'
+        '#gtceu:circuits/lv'
     );
 
     event.replaceInput({output: 'ae2:cell_component_16k'}, 
         'ae2:calculation_processor',
-        '#forge:circuits/mv'
+        '#gtceu:circuits/mv'
     );
 
     event.replaceInput({output: 'ae2:cell_component_64k'}, 
         'ae2:calculation_processor',
-        '#forge:circuits/hv'
+        '#gtceu:circuits/hv'
     );
 
     event.replaceInput({output: 'ae2:cell_component_256k'}, 
         'ae2:calculation_processor',
-        '#forge:circuits/ev'
+        '#gtceu:circuits/ev'
     );
 
     event.replaceInput({output: 'ae2additions:cell_component_1024'}, 
         'ae2:engineering_processor',
-        '#forge:circuits/iv'
+        '#gtceu:circuits/iv'
     );
 
     event.replaceInput({output: 'ae2additions:cell_component_4096'}, 
         'ae2:engineering_processor',
-        '#forge:circuits/luv'
+        '#gtceu:circuits/luv'
     );
 
     event.replaceInput({output: 'ae2additions:cell_component_16384'}, 
         'ae2:engineering_processor',
-        '#forge:circuits/zpm'
+        '#gtceu:circuits/zpm'
     );
 
     event.replaceInput({output: 'ae2additions:cell_component_65536'}, 
         'ae2:engineering_processor',
-        '#forge:circuits/uv'
+        '#gtceu:circuits/uv'
     );
 })

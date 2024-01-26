@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:soul_infused_single_wire',
-        C: '#forge:circuits/lv',
+        C: '#gtceu:circuits/lv',
         S: 'gtceu:lv_machine_hull'
     });
 
@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:soul_infused_quadruple_wire',
-        C: '#forge:circuits/lv',
+        C: '#gtceu:circuits/lv',
         S: 'gtceu:lv_machine_hull'
     });
 
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:soul_infused_octal_wire',
-        C: '#forge:circuits/lv',
+        C: '#gtceu:circuits/lv',
         S: 'gtceu:lv_machine_hull'
     });
 
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:soul_infused_hex_wire',
-        C: '#forge:circuits/lv',
+        C: '#gtceu:circuits/lv',
         S: 'gtceu:lv_machine_hull'
     });
 
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:signalum_single_wire',
-        C: '#forge:circuits/mv',
+        C: '#gtceu:circuits/mv',
         S: 'gtceu:mv_machine_hull'
     });
 
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:signalum_quadruple_wire',
-        C: '#forge:circuits/mv',
+        C: '#gtceu:circuits/mv',
         S: 'gtceu:mv_machine_hull'
     });
 
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:signalum_octal_wire',
-        C: '#forge:circuits/mv',
+        C: '#gtceu:circuits/mv',
         S: 'gtceu:mv_machine_hull'
     });
 
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:signalum_hex_wire',
-        C: '#forge:circuits/mv',
+        C: '#gtceu:circuits/mv',
         S: 'gtceu:mv_machine_hull'
     });
 
@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:lumium_single_wire',
-        C: '#forge:circuits/hv',
+        C: '#gtceu:circuits/hv',
         S: 'gtceu:hv_machine_hull'
     });
 
@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:lumium_quadruple_wire',
-        C: '#forge:circuits/hv',
+        C: '#gtceu:circuits/hv',
         S: 'gtceu:hv_machine_hull'
     });
 
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:lumium_octal_wire',
-        C: '#forge:circuits/hv',
+        C: '#gtceu:circuits/hv',
         S: 'gtceu:hv_machine_hull'
     });
 
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:lumium_hex_wire',
-        C: '#forge:circuits/hv',
+        C: '#gtceu:circuits/hv',
         S: 'gtceu:hv_machine_hull'
     });
 
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:enderium_single_wire',
-        C: '#forge:circuits/ev',
+        C: '#gtceu:circuits/ev',
         S: 'gtceu:ev_machine_hull'
     });
 
@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:enderium_quadruple_wire',
-        C: '#forge:circuits/ev',
+        C: '#gtceu:circuits/ev',
         S: 'gtceu:ev_machine_hull'
     });
 
@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:enderium_octal_wire',
-        C: '#forge:circuits/ev',
+        C: '#gtceu:circuits/ev',
         S: 'gtceu:ev_machine_hull'
     });
 
@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:enderium_hex_wire',
-        C: '#forge:circuits/ev',
+        C: '#gtceu:circuits/ev',
         S: 'gtceu:ev_machine_hull'
     });
 
@@ -172,7 +172,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:shellite_single_wire',
-        C: '#forge:circuits/iv',
+        C: '#gtceu:circuits/iv',
         S: 'gtceu:iv_machine_hull'
     });
 
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:shellite_quadruple_wire',
-        C: '#forge:circuits/iv',
+        C: '#gtceu:circuits/iv',
         S: 'gtceu:iv_machine_hull'
     });
 
@@ -192,7 +192,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:shellite_octal_wire',
-        C: '#forge:circuits/iv',
+        C: '#gtceu:circuits/iv',
         S: 'gtceu:iv_machine_hull'
     });
 
@@ -202,7 +202,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:shellite_hex_wire',
-        C: '#forge:circuits/iv',
+        C: '#gtceu:circuits/iv',
         S: 'gtceu:iv_machine_hull'
     });
 
@@ -213,7 +213,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:twinite_single_wire',
-        C: '#forge:circuits/luv',
+        C: '#gtceu:circuits/luv',
         S: 'gtceu:luv_machine_hull'
     });
 
@@ -223,7 +223,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:twinite_quadruple_wire',
-        C: '#forge:circuits/luv',
+        C: '#gtceu:circuits/luv',
         S: 'gtceu:luv_machine_hull'
     });
 
@@ -233,7 +233,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:twinite_octal_wire',
-        C: '#forge:circuits/luv',
+        C: '#gtceu:circuits/luv',
         S: 'gtceu:luv_machine_hull'
     });
 
@@ -243,7 +243,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:twinite_hex_wire',
-        C: '#forge:circuits/luv',
+        C: '#gtceu:circuits/luv',
         S: 'gtceu:luv_machine_hull'
     });
 
@@ -254,7 +254,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:dragonsteel_single_wire',
-        C: '#forge:circuits/zpm',
+        C: '#gtceu:circuits/zpm',
         S: 'gtceu:zpm_machine_hull'
     });
 
@@ -264,7 +264,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:dragonsteel_quadruple_wire',
-        C: '#forge:circuits/zpm',
+        C: '#gtceu:circuits/zpm',
         S: 'gtceu:zpm_machine_hull'
     });
 
@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:dragonsteel_octal_wire',
-        C: '#forge:circuits/zpm',
+        C: '#gtceu:circuits/zpm',
         S: 'gtceu:zpm_machine_hull'
     });
 
@@ -284,7 +284,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:dragonsteel_hex_wire',
-        C: '#forge:circuits/zpm',
+        C: '#gtceu:circuits/zpm',
         S: 'gtceu:zpm_machine_hull'
     });
 
@@ -295,7 +295,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:prismalium_single_wire',
-        C: '#forge:circuits/uv',
+        C: '#gtceu:circuits/uv',
         S: 'gtceu:uv_machine_hull'
     });
 
@@ -305,7 +305,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:prismalium_quadruple_wire',
-        C: '#forge:circuits/uv',
+        C: '#gtceu:circuits/uv',
         S: 'gtceu:uv_machine_hull'
     });
 
@@ -315,7 +315,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:prismalium_octal_wire',
-        C: '#forge:circuits/uv',
+        C: '#gtceu:circuits/uv',
         S: 'gtceu:uv_machine_hull'
     });
 
@@ -325,7 +325,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:prismalium_hex_wire',
-        C: '#forge:circuits/uv',
+        C: '#gtceu:circuits/uv',
         S: 'gtceu:uv_machine_hull'
     });
 
@@ -336,7 +336,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:stellarium_single_wire',
-        C: '#forge:circuits/uhv',
+        C: '#gtceu:circuits/uhv',
         S: 'gtceu:uhv_machine_hull'
     });
 
@@ -346,7 +346,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:stellarium_quadruple_wire',
-        C: '#forge:circuits/uhv',
+        C: '#gtceu:circuits/uhv',
         S: 'gtceu:uhv_machine_hull'
     });
 
@@ -356,7 +356,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:stellarium_octal_wire',
-        C: '#forge:circuits/uhv',
+        C: '#gtceu:circuits/uhv',
         S: 'gtceu:uhv_machine_hull'
     });
 
@@ -366,7 +366,7 @@ ServerEvents.recipes(event => {
         'WSW'
     ], {
         W: 'gtceu:stellarium_hex_wire',
-        C: '#forge:circuits/uhv',
+        C: '#gtceu:circuits/uhv',
         S: 'gtceu:uhv_machine_hull'
     });
 });

@@ -357,6 +357,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x iron_selenide', '1x strontium_titanium_oxide')
         .color(0x66ff33)
         .iconSet(GTMaterialIconSet.DULL)
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE)
         .blastTemp(10299, 'highest', GTValues.VA[GTValues.UV], 2500)
         .cableProperties(GTValues.V[GTValues.UHV], 4, 0, true);
 

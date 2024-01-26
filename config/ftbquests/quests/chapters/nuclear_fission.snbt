@@ -15,7 +15,7 @@
 			tasks: [
 				{
 					id: "32A0B3C562377AE3"
-					item: "gtceu:pitchblende_crushed_ore"
+					item: "gtceu:crushed_pitchblende_ore"
 					type: "item"
 				}
 				{

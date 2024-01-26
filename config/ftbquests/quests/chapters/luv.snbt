@@ -724,7 +724,7 @@
 			id: "0FA485A1BBD0BF30"
 			tasks: [{
 				id: "72DA0EEE04BB9B5E"
-				item: "gtceu:emerald_exquisite_gem"
+				item: "gtceu:exquisite_emerald_gem"
 				type: "item"
 			}]
 			x: 10.0d

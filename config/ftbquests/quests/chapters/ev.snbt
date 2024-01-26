@@ -167,7 +167,7 @@
 			id: "2B2B6762D67ACA47"
 			tasks: [{
 				id: "0C6A46D727EC05D1"
-				item: "gtceu:titanium_hot_ingot"
+				item: "gtceu:hot_titanium_ingot"
 				type: "item"
 			}]
 			x: -13.0d
@@ -382,7 +382,7 @@
 			id: "538A8449F5A5A0DD"
 			tasks: [{
 				id: "3304AEF8C8C16B3D"
-				item: "gtceu:cooperite_purified_ore"
+				item: "gtceu:purified_cooperite_ore"
 				type: "item"
 			}]
 			x: -11.0d

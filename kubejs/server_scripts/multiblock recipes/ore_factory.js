@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         'WPW'
     ], {
         G: 'gtceu:bronze_gear',
-        C: '#forge:circuits/lv',
+        C: '#gtceu:circuits/lv',
         P: 'gtceu:steel_plate',
         L: 'gtceu:lv_machine_hull',
         W: 'gtceu:tin_single_cable'

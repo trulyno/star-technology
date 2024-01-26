@@ -214,6 +214,17 @@
 			x: 2.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["0FCA067D856A6055"]
+			id: "4B4037AE298B73FE"
+			tasks: [{
+				id: "2C2C49BBB7559DD4"
+				item: "gtceu:cleaning_maintenance_hatch"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
 	]
 	title: "UV"
 }
