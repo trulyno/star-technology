@@ -218,6 +218,7 @@ function newFunction() {
         //     .fluid()
         //     .components('1x hydrogen', '1x iodine', '3x oxygen')
         //     .color(0xcc33ff);
+        
         event.create('iodargyrite')
             .dust()
             .ore(4, 3)
@@ -667,7 +668,6 @@ function newFunction() {
             .gem()
             .color(0x440065)
             .iconSet(GTMaterialIconSet.GEM_VERTICAL);
-        
 
     });
 }
