@@ -655,7 +655,7 @@ ServerEvents.recipes(event => {
         .EUt(120);
 
     event.recipes.gtceu.assembler('fission_reactor_controller')
-        .itemInputs('4x nuclearcraft:fission_reactor_casing', '2x nuclearcraft:plate_advanced', '2x #forge:circuits/ev')
+        .itemInputs('4x nuclearcraft:fission_reactor_casing', '2x nuclearcraft:plate_advanced', '2x #gtceu:circuits/ev')
         .itemOutputs('nuclearcraft:fission_reactor_controller')
         .duration(1200)
         .EUt(1800);
