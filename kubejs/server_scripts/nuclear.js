@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         E: 'gtceu:hv_emitter',
         G: 'gtceu:black_bronze_gear',
         R: 'gtceu:hv_sensor',
-        C: '#forge:circuits/ev',
+        C: '#gtceu:circuits/ev',
         F: 'gtceu:stainless_steel_frame',
         D: 'gtceu:steel_double_plate'
     });
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
         'GHG',
         'PGP'
     ], {
-        C: '#forge:circuits/ev',
+        C: '#gtceu:circuits/ev',
         G: 'gtceu:black_bronze_gear',
         H: 'gtceu:hv_machine_hull',
         P: 'gtceu:aluminium_large_fluid_pipe'

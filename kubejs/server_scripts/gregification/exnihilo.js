@@ -8,19 +8,19 @@ ServerEvents.recipes(event => {
         .EUt(120);
 
     event.recipes.gtceu.assembler('gold_upgrade')
-        .itemInputs('gtceu:silicon_plate', '#forge:circuits/hv', '16x gtceu:electrum_foil')
+        .itemInputs('gtceu:silicon_plate', '#gtceu:circuits/hv', '16x gtceu:electrum_foil')
         .itemOutputs('exmachinis:gold_upgrade')
         .duration(600)
         .EUt(250);
 
     event.recipes.gtceu.assembler('diamond_upgrade')
-        .itemInputs('gtceu:silicon_plate', '#forge:circuits/ev', '16x gtceu:stainless_steel_foil')
+        .itemInputs('gtceu:silicon_plate', '#gtceu:circuits/ev', '16x gtceu:stainless_steel_foil')
         .itemOutputs('exmachinis:diamond_upgrade')
         .duration(600)
         .EUt(1280);
 
     event.recipes.gtceu.assembler('netherite_upgrade')
-        .itemInputs('gtceu:silicon_plate', '#forge:circuits/iv', '4x minecraft:netherite_ingot')
+        .itemInputs('gtceu:silicon_plate', '#gtceu:circuits/iv', '4x minecraft:netherite_ingot')
         .itemOutputs('exmachinis:netherite_upgrade')
         .duration(600)
         .EUt(5200);

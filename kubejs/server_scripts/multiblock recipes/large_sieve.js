@@ -2,7 +2,7 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('large_sieve')
-        .itemInputs('gtceu:iv_machine_hull', '2x #forge:circuits/iv', '2x gtceu:tungsten_steel_double_plate' ,'4x gtceu:tungsten_carbide_gear')
+        .itemInputs('gtceu:iv_machine_hull', '2x #gtceu:circuits/iv', '2x gtceu:tungsten_steel_double_plate' ,'4x gtceu:tungsten_carbide_gear')
         .itemOutputs('gtceu:large_sieve')
         .duration(1200)
         .EUt(1240);

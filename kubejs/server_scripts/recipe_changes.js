@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
         'SSS'
     ], {
         S: 'gtceu:steel_plate',
-        C: '#forge:circuits/lv',
+        C: '#gtceu:circuits/lv',
         K: 'minecraft:charcoal',
         s: 'create:shaft'
     });

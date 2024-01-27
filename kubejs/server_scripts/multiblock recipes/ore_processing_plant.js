@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         'WPW'
     ], {
         G: 'gtceu:tungsten_carbide_gear',
-        C: '#forge:circuits/iv',
+        C: '#gtceu:circuits/iv',
         P: 'gtceu:tungsten_carbide_plate',
         L: 'gtceu:iv_machine_hull',
         W: 'gtceu:platinum_single_cable'

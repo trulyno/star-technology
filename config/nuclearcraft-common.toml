@@ -143,7 +143,7 @@
 	heat_multiplier_cap = 3.0
 	#Each attachment of moderator to fuel cell will increase fuel FE generation by given percent value.
 	#Range: 0.0 ~ 1000.0
-	moderator_fe_multiplier = 16.67
+	moderator_fe_multiplier = 500
 	#Each attachment of moderator to fuel cell will increase fuel heat generation by given percent value.
 	#Range: 0.0 ~ 1000.0
 	moderator_heat_multiplier = 33.34

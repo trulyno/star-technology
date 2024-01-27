@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
         M: 'gtceu:lv_electric_motor',
         H: 'gtceu:lv_machine_hull',
         S: 'gtceu:steel_plate',
-        C: '#forge:circuits/mv'
+        C: '#gtceu:circuits/mv'
     });
 
 });

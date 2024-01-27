@@ -15,48 +15,63 @@ ServerEvents.recipes(event => {
     // Tier 1
     event.recipes.gtceu.essence_burning('water_essence_burning_0')
         .itemInputs('mysticalagriculture:water_essence')
-        .outputFluids('gtceu:distilled_water 250')
+        .outputFluids('gtceu:distilled_water 2500')
         .duration(200)
         .EUt(20)
         .circuit(0);
 
     event.recipes.gtceu.essence_burning('water_essence_burning_1')
         .itemInputs('mysticalagriculture:water_essence')
-        .outputFluids('gtceu:salt_water 500')
+        .outputFluids('gtceu:salt_water 5000')
         .duration(200)
         .EUt(20)
         .circuit(1);
 
-    event.recipes.gtceu.essence_burning('water_essence_burnin_2')
+    event.recipes.gtceu.essence_burning('water_essence_burning_2')
         .itemInputs('mysticalagriculture:water_essence')
-        .outputFluids('exnihilosequentia:witch_water 1000')
+        .outputFluids('exnihilosequentia:witch_water 5000')
         .duration(200)
         .EUt(20)
         .circuit(2);
 
     event.recipes.gtceu.essence_burning('water_essence_burning_3')
         .itemInputs('mysticalagriculture:water_essence')
-        .outputFluids('exnihilosequentia:sea_water 1000')
+        .outputFluids('exnihilosequentia:sea_water 5000')
         .duration(200)
         .EUt(20)
         .circuit(3);
 
-    event.recipes.gtceu.essence_burning('air_essence_burning')
+    event.recipes.gtceu.essence_burning('air_essence_burning_1')
         .itemInputs('mysticalagriculture:air_essence')
         .outputFluids('gtceu:air 16000')
         .duration(200)
-        .EUt(20);
+        .EUt(20)
+        .circuit(1);
+
+    event.recipes.gtceu.essence_burning('air_essence_burning_2')
+        .itemInputs('mysticalagriculture:air_essence')
+        .outputFluids('gtceu:nether_air 16000')
+        .duration(200)
+        .EUt(1560)
+        .circuit(2);
+
+    event.recipes.gtceu.essence_burning('air_essence_burning_3')
+        .itemInputs('mysticalagriculture:air_essence')
+        .outputFluids('gtceu:ender_air 16000')
+        .duration(200)
+        .EUt(1560)
+        .circuit(3);
 
     event.recipes.gtceu.essence_burning('fire_essence_burning_0')
         .itemInputs('mysticalagriculture:fire_essence')
-        .outputFluids('minecraft:lava 1000')
+        .outputFluids('minecraft:lava 5000')
         .duration(200)
         .EUt(400)
         .circuit(0);
 
     event.recipes.gtceu.essence_burning('fire_essence_burning_1')
         .itemInputs('mysticalagriculture:fire_essence')
-        .outputFluids('gtceu:blaze 1000')
+        .outputFluids('gtceu:blaze 288')
         .duration(200)
         .EUt(400)
         .circuit(1);

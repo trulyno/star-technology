@@ -89,7 +89,7 @@
 				item: "gtceu:lumium_ingot"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -6.0d
 			y: -4.0d
 		}
 		{
@@ -358,6 +358,17 @@
 			}]
 			x: 0.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["317CB8073A46DAA1"]
+			id: "33339A18F81A6BDA"
+			tasks: [{
+				id: "1D4066E0A2E6D30A"
+				item: "gtceu:auto_maintenance_hatch"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
 		}
 	]
 	title: "HV"

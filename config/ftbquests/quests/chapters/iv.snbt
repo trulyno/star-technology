@@ -764,7 +764,7 @@
 			id: "3695831C8345B3C3"
 			tasks: [{
 				id: "0E6D4CAFF2E2E910"
-				item: "gtceu:borosilicate_glass_fine_wire"
+				item: "gtceu:fine_borosilicate_glass_wire"
 				type: "item"
 			}]
 			x: -14.5d
@@ -798,12 +798,12 @@
 			tasks: [
 				{
 					id: "7E7666B2AF821D7B"
-					item: "gtceu:galena_purified_ore"
+					item: "gtceu:purified_galena_ore"
 					type: "item"
 				}
 				{
 					id: "70D079E29147F3CB"
-					item: "gtceu:sphalerite_purified_ore"
+					item: "gtceu:purified_sphalerite_ore"
 					type: "item"
 				}
 			]

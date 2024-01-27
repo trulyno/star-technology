@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('drackion_runic_laser_gen')
         .itemInputs('gtceu:screret_runic_laser_source_base_exquisite_gem', '2x gtceu:uv_field_generator', '4x gtceu:uv_sensor', '4x gtceu:uv_emitter', 
             '16x gtceu:energy_cluster', '16x gtceu:energy_cluster', '16x gtceu:energy_cluster','16x gtceu:energy_cluster', 
-            '4x #forge:circuits/uhv', '16x gtceu:uv_voltage_coil', '4x gtceu:neutron_reflector', '24x gtceu:stellarium_screw',
+            '4x #gtceu:circuits/uhv', '16x gtceu:uv_voltage_coil', '4x gtceu:neutron_reflector', '24x gtceu:stellarium_screw',
             '64x gtceu:uhpic_wafer', '64x gtceu:uhpic_wafer', '16x gtceu:melodium_foil', '16x gtceu:prismalium_foil')
         .inputFluids('gtceu:neutronium 63000', 'gtceu:polybenzimidazole 54000', 'gtceu:naquadria 32000')
         .itemOutputs('kubejs:runic_wave_generator')
@@ -189,8 +189,8 @@ ServerEvents.recipes(event => {
         .EUt(400000);
     
     event.recipes.gtceu.assembly_line('comupation_super_matrix')
-        .itemInputs('gtceu:melodium_frame', '16x #forge:circuits/uhv', '16x #forge:circuits/uhv', '16x #forge:circuits/uhv', 
-                '16x #forge:circuits/uhv', '16x #forge:circuits/uhv', '16x #forge:circuits/uhv', '16x #forge:circuits/uhv', '48x gtceu:prismalium_screw')
+        .itemInputs('gtceu:melodium_frame', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', 
+                '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '48x gtceu:prismalium_screw')
         .inputFluids('gtceu:soldering_alloy 40000')
         .itemOutputs('kubejs:computational_super_matrix')
         .duration(12000)
@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.assembly_line('heat_chamber')
-        .itemInputs('gtceu:iridium_frame', '4x #forge:circuits/zpm', 'gtceu:rhodium_plated_palladium_double_plate', 
+        .itemInputs('gtceu:iridium_frame', '4x #gtceu:circuits/zpm', 'gtceu:rhodium_plated_palladium_double_plate', 
                     'gtceu:tritanium_double_plate', 'gtceu:zpm_field_generator', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
                     '32x gtceu:uhpic_chip', '48x gtceu:dragonsteel_single_wire')
         .inputFluids('gtceu:hsss 6912', 'gtceu:niobium_nitride 1728')
@@ -214,7 +214,7 @@ ServerEvents.recipes(event => {
         .EUt(90000);
 
     event.recipes.gtceu.assembly_line('super_heat_chamber')
-        .itemInputs('gtceu:heat_chamber', '4x #forge:circuits/uv', 'gtceu:dragonsteel_double_plate', 
+        .itemInputs('gtceu:heat_chamber', '4x #gtceu:circuits/uv', 'gtceu:dragonsteel_double_plate', 
                     'gtceu:titanium_carbide_double_plate', 'gtceu:uv_field_generator', '64x gtceu:uhpic_chip', 
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip', '48x gtceu:prismalium_single_wire')
         .inputFluids('gtceu:hsse 6912', 'gtceu:niobium_titanium 1728')
@@ -223,7 +223,7 @@ ServerEvents.recipes(event => {
         .EUt(90000);
 
     event.recipes.gtceu.assembly_line('large_rotor_machine')
-        .itemInputs('gtceu:shellite_frame', '4x #forge:circuits/luv', 'gtceu:vanadium_gallium_double_plate', 
+        .itemInputs('gtceu:shellite_frame', '4x #gtceu:circuits/luv', 'gtceu:vanadium_gallium_double_plate', 
                     'gtceu:red_steel_double_plate', 'gtceu:luv_field_generator', '2x gtceu:luv_electric_motor', '64x gtceu:uhpic_chip', 
                     '32x gtceu:uhpic_chip', '4x gtceu:advanced_power_thruster', '4x gtceu:hssg_spring')
         .inputFluids('gtceu:soldering_alloy 3456', 'gtceu:yttrium_barium_cuprate 5184')
@@ -232,7 +232,7 @@ ServerEvents.recipes(event => {
         .EUt(90000);
 
     event.recipes.gtceu.assembly_line('runic_engraver')
-        .itemInputs('gtceu:lumium_frame', '4x #forge:circuits/uv', 'gtceu:tantalum_carbide_double_plate', 
+        .itemInputs('gtceu:lumium_frame', '4x #gtceu:circuits/uv', 'gtceu:tantalum_carbide_double_plate', 
                     'gtceu:titanium_carbide_double_plate', '2x gtceu:uv_field_generator', '4x gtceu:uv_emitter', '64x gtceu:uhpic_chip', 
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '48x gtceu:blue_alloy_screw', 'gtceu:gravi_star')
         .inputFluids('gtceu:hsse 5184', 'gtceu:hssg 5184', 'gtceu:hsss 5184')
@@ -241,7 +241,7 @@ ServerEvents.recipes(event => {
         .EUt(90000);
 
     event.recipes.gtceu.assembly_line('quantum_compressor')
-        .itemInputs('gtceu:melodium_frame', '3x #forge:circuits/uv', 'gtceu:trinaquadalloy_double_plate', 
+        .itemInputs('gtceu:melodium_frame', '3x #gtceu:circuits/uv', 'gtceu:trinaquadalloy_double_plate', 
                     'gtceu:trinaquadalloy_double_plate', '2x gtceu:uv_field_generator', '16x gtceu:uv_electric_piston', '64x gtceu:uhpic_chip', 
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
                     '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip', '48x gtceu:tritanium_screw')
@@ -261,7 +261,7 @@ ServerEvents.recipes(event => {
         .EUt(90000);
 
     event.recipes.gtceu.assembly_line('stargate_component_assembly')
-        .itemInputs('gtceu:prismalium_frame', '4x #forge:circuits/uhv', '2x gtceu:uv_field_generator', '8x gtceu:gravi_star', 
+        .itemInputs('gtceu:prismalium_frame', '4x #gtceu:circuits/uhv', '2x gtceu:uv_field_generator', '8x gtceu:gravi_star', 
                     '4x gtceu:uv_robot_arm', '4x gtceu:uv_robot_arm', '4x gtceu:uv_robot_arm', '4x gtceu:uv_robot_arm', 
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
                     '56x gtceu:stellarium_screw', '32x gtceu:melodium_single_wire')

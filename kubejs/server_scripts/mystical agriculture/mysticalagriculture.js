@@ -91,33 +91,40 @@ ServerEvents.recipes(event => {
         .EUt(400)
         .circuit(12);
 
+    event.recipes.gtceu.mixer('nickel_essence_mix')
+        .itemInputs('15x mysticalagriculture:stone_essence', '7x mysticalagriculture:fire_essence', '7x mysticalagriculture:water_essence')
+        .itemOutputs('mysticalagriculture:tin_essence')
+        .duration(400)
+        .EUt(400)
+        .circuit(13);
+
     event.recipes.gtceu.mixer('lead_essence_mix')
         .itemInputs('17x mysticalagriculture:stone_essence', '10x mysticalagriculture:fire_essence', '5x mysticalagriculture:water_essence')
         .itemOutputs('mysticalagriculture:lead_essence')
         .duration(400)
         .EUt(400)
-        .circuit(13);
+        .circuit(14);
 
     event.recipes.gtceu.mixer('zinc_essence_mix')
         .itemInputs('5x mysticalagriculture:stone_essence', '3x mysticalagriculture:fire_essence', '2x mysticalagriculture:water_essence')
         .itemOutputs('mysticalagriculture:zinc_essence')
         .duration(400)
         .EUt(400)
-        .circuit(14);
+        .circuit(15);
 
     event.recipes.gtceu.mixer('gold_essence_mix')
         .itemInputs('21x mysticalagriculture:stone_essence', '17x mysticalagriculture:fire_essence', '12x mysticalagriculture:water_essence')
         .itemOutputs('mysticalagriculture:gold_essence')
         .duration(400)
         .EUt(400)
-        .circuit(15);
+        .circuit(16);
 
     event.recipes.gtceu.mixer('silver_essence_mix')
         .itemInputs('19x mysticalagriculture:stone_essence', '15x mysticalagriculture:fire_essence', '10x mysticalagriculture:water_essence')
         .itemOutputs('mysticalagriculture:silver_essence')
         .duration(400)
         .EUt(400)
-        .circuit(16);
+        .circuit(17);
 
     event.recipes.gtceu.mixer('diamond_essence_mix')
         .itemInputs('64x mysticalagriculture:coal_essence', '64x mysticalagriculture:fire_essence')
@@ -173,7 +180,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('mysticalagriculture:aluminum_essence')
         .duration(400)
         .EUt(1024)
-        .circuit(17);
+        .circuit(18);
 
     event.recipes.gtceu.mixer('antimony_essence_mix')
         .itemInputs('29x mysticalagriculture:earth_essence', '12x mysticalagriculture:sulfur_essence', '10x mysticalagriculture:stone_essence')
@@ -421,7 +428,7 @@ ServerEvents.recipes(event => {
         'PHP',
         'CMC'
     ], {
-        C: '#forge:circuits/lv',
+        C: '#gtceu:circuits/lv',
         G: '#forge:glass',
         E: 'gtceu:lv_emitter',
         P: 'gtceu:steel_plate',
@@ -435,7 +442,7 @@ ServerEvents.recipes(event => {
         'PHP',
         'CMC'
     ], {
-        C: '#forge:circuits/mv',
+        C: '#gtceu:circuits/mv',
         G: '#forge:glass',
         E: 'gtceu:mv_emitter',
         P: 'gtceu:aluminium_plate',
@@ -449,7 +456,7 @@ ServerEvents.recipes(event => {
         'PHP',
         'CMC'
     ], {
-        C: '#forge:circuits/hv',
+        C: '#gtceu:circuits/hv',
         G: 'gtceu:tempered_glass',
         E: 'gtceu:hv_emitter',
         P: 'gtceu:stainless_steel_plate',
@@ -463,7 +470,7 @@ ServerEvents.recipes(event => {
         'PHP',
         'CMC'
     ], {
-        C: '#forge:circuits/ev',
+        C: '#gtceu:circuits/ev',
         G: 'gtceu:tempered_glass',
         E: 'gtceu:ev_emitter',
         P: 'gtceu:titanium_plate',
@@ -477,7 +484,7 @@ ServerEvents.recipes(event => {
         'PHP',
         'CMC'
     ], {
-        C: '#forge:circuits/iv',
+        C: '#gtceu:circuits/iv',
         G: 'gtceu:laminated_glass',
         E: 'gtceu:iv_emitter',
         P: 'gtceu:tungsten_steel_plate',
@@ -491,7 +498,7 @@ ServerEvents.recipes(event => {
         'PHP',
         'CMC'
     ], {
-        C: '#forge:circuits/luv',
+        C: '#gtceu:circuits/luv',
         G: 'gtceu:laminated_glass',
         E: 'gtceu:luv_emitter',
         P: 'gtceu:rhodium_plated_palladium_plate',
@@ -505,7 +512,7 @@ ServerEvents.recipes(event => {
         'PHP',
         'CMC'
     ], {
-        C: '#forge:circuits/zpm',
+        C: '#gtceu:circuits/zpm',
         G: 'gtceu:fusion_glass',
         E: 'gtceu:zpm_emitter',
         P: 'gtceu:naquadah_alloy_plate',
@@ -519,7 +526,7 @@ ServerEvents.recipes(event => {
         'PHP',
         'CMC'
     ], {
-        C: '#forge:circuits/uv',
+        C: '#gtceu:circuits/uv',
         G: 'gtceu:fusion_glass',
         E: 'gtceu:uv_emitter',
         P: 'gtceu:darmstadtium_plate',
@@ -533,7 +540,7 @@ ServerEvents.recipes(event => {
         'GHG',
         'CPC'
     ], {
-        C: '#forge:circuits/lv',
+        C: '#gtceu:circuits/lv',
         R: 'gtceu:tin_rotor',
         G: '#forge:glass',
         E: 'gtceu:lv_emitter',
@@ -547,7 +554,7 @@ ServerEvents.recipes(event => {
         'GHG',
         'CPC'
     ], {
-        C: '#forge:circuits/mv',
+        C: '#gtceu:circuits/mv',
         R: 'gtceu:bronze_rotor',
         G: '#forge:glass',
         E: 'gtceu:mv_emitter',
@@ -561,7 +568,7 @@ ServerEvents.recipes(event => {
         'GHG',
         'CPC'
     ], {
-        C: '#forge:circuits/hv',
+        C: '#gtceu:circuits/hv',
         R: 'gtceu:steel_rotor',
         G: 'gtceu:tempered_glass',
         E: 'gtceu:hv_emitter',
@@ -575,7 +582,7 @@ ServerEvents.recipes(event => {
         'GHG',
         'CPC'
     ], {
-        C: '#forge:circuits/ev',
+        C: '#gtceu:circuits/ev',
         R: 'gtceu:stainless_steel_rotor',
         G: 'gtceu:tempered_glass',
         E: 'gtceu:ev_emitter',
@@ -589,7 +596,7 @@ ServerEvents.recipes(event => {
         'GHG',
         'CPC'
     ], {
-        C: '#forge:circuits/iv',
+        C: '#gtceu:circuits/iv',
         R: 'gtceu:tungsten_steel_rotor',
         G: 'gtceu:laminated_glass',
         E: 'gtceu:iv_emitter',
@@ -603,7 +610,7 @@ ServerEvents.recipes(event => {
         'GHG',
         'CPC'
     ], {
-        C: '#forge:circuits/luv',
+        C: '#gtceu:circuits/luv',
         R: 'gtceu:rhodium_plated_palladium_rotor',
         G: 'gtceu:laminated_glass',
         E: 'gtceu:luv_emitter',
@@ -617,7 +624,7 @@ ServerEvents.recipes(event => {
         'GHG',
         'CPC'
     ], {
-        C: '#forge:circuits/zpm',
+        C: '#gtceu:circuits/zpm',
         R: 'gtceu:naquadah_alloy_rotor',
         G: 'gtceu:fusion_glass',
         E: 'gtceu:zpm_emitter',
@@ -631,7 +638,7 @@ ServerEvents.recipes(event => {
         'GHG',
         'CPC'
     ], {
-        C: '#forge:circuits/uv',
+        C: '#gtceu:circuits/uv',
         R: 'gtceu:darmstadtium_rotor',
         G: 'gtceu:fusion_glass',
         E: 'gtceu:uv_emitter',
@@ -646,7 +653,7 @@ ServerEvents.recipes(event => {
         'CSC'
     ], {
         P: 'gtceu:invar_double_plate',
-        S: '#forge:circuits/hv',
+        S: '#gtceu:circuits/hv',
         E: 'gtceu:mv_emitter',
         H: 'gtceu:heatproof_machine_casing',
         C: 'gtceu:gold_single_cable'
@@ -658,7 +665,7 @@ ServerEvents.recipes(event => {
         'CAC'
     ], {
         P: 'gtceu:stainless_steel_double_plate',
-        A: '#forge:circuits/ev',
+        A: '#gtceu:circuits/ev',
         S: 'gtceu:hv_sensor',
         E: 'gtceu:hv_emitter',
         H: 'gtceu:clean_machine_casing',

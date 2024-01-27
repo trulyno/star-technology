@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     ], {
         S: 'minecraft:stone',
         G: '#forge:glass',
-        C: '#forge:circuits/lv'
+        C: '#gtceu:circuits/lv'
     });
 
     event.shaped(Item.of('2x functionalstorage:ender_drawer'), [
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
         O: 'minecraft:obsidian',
         G: '#forge:glass',
         P: 'minecraft:ender_pearl',
-        C: '#forge:circuits/lv'
+        C: '#gtceu:circuits/lv'
     });
 
 });
