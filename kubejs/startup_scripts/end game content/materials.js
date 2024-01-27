@@ -603,6 +603,8 @@ function newFunction() {
             .iconSet(GTMaterialIconSet.DULL)
             .blastTemp(12499, 'highest', GTValues.VA[GTValues.UV], 5750);
 
+}
+
         event.create('inferium')
             .fluid()
             .element(GTElements.get('inferium'))
@@ -670,4 +672,4 @@ function newFunction() {
             .iconSet(GTMaterialIconSet.GEM_VERTICAL);
 
     });
-}
+
