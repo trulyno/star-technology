@@ -15,4 +15,18 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VHA[GTValues.LuV]);
 
+    event.recipes.gtceu.chemical_plant('polybenzimidazole_with_phenol')
+        .inputFluids('gtceu:benzene 2000', 'gtceu:phenol 1000', 'gtceu:carbon_dioxide 2000', 'gtceu:ammonia 4000', 'gtceu:oxygen 4000')
+        .outputFluids('gtceu:polybenzimidazole 1000', 'minecraft:water 9000')
+        .circuit(24)
+        .duration(400)
+        .EUt(GTValues.VHA[GTValues.ZPM]);
+
+    event.recipes.gtceu.chemical_plant('polybenzimidazole_without_phenol')
+        .inputFluids('gtceu:benzene 3000', 'gtceu:carbon_dioxide 2000', 'gtceu:ammonia 4000', 'gtceu:oxygen 5000')
+        .outputFluids('gtceu:polybenzimidazole 1000', 'minecraft:water 9000')
+        .circuit(25)
+        .duration(400)
+        .EUt(GTValues.VHA[GTValues.ZPM]);
+
 });
