@@ -105,4 +105,52 @@ ServerEvents.recipes(event => {
         .duration(1800)
         .EUt(480);
 
+    event.recipes.gtceu.chemical_reactor('draconic_wetware_circuit_board_sodium')
+        .itemInputs('kubejs:draconic_wetware_circuit_board', '48x gtceu:trinium_foil')
+        .inputFluids('gtceu:sodium_persulfate 20000')
+        .itemOutputs('kubejs:draconic_wetware_printed_circuit_board')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(2100)
+        .EUt(GTValues.VA[GTValues.EV]);
+
+    event.recipes.gtceu.large_chemical_reactor('draconic_wetware_circuit_board_sodium')
+        .itemInputs('48x gtceu:trinium_foil', 'kubejs:draconic_wetware_circuit_board')
+        .inputFluids('gtceu:sodium_persulfate 20000')
+        .itemOutputs('kubejs:draconic_wetware_printed_circuit_board')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(2100)
+        .EUt(GTValues.VA[GTValues.EV]);
+
+    event.recipes.gtceu.chemical_reactor('draconic_wetware_circuit_board_iron')
+        .itemInputs('kubejs:draconic_wetware_circuit_board', '48x gtceu:trinium_foil')
+        .inputFluids('gtceu:iron_iii_chloride 10000')
+        .itemOutputs('kubejs:draconic_wetware_printed_circuit_board')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(2100)
+        .EUt(GTValues.VA[GTValues.EV]);
+
+    event.recipes.gtceu.large_chemical_reactor('draconic_wetware_circuit_board_iron')
+        .itemInputs('48x gtceu:trinium_foil', 'kubejs:draconic_wetware_circuit_board')
+        .inputFluids('gtceu:iron_iii_chloride 10000')
+        .itemOutputs('kubejs:draconic_wetware_printed_circuit_board')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(2100)
+        .EUt(GTValues.VA[GTValues.EV]);
+
+    event.recipes.gtceu.chemical_reactor('draconic_wetware_circuit_board_copper')
+        .itemInputs('kubejs:draconic_wetware_circuit_board', '48x gtceu:trinium_foil')
+        .inputFluids('gtceu:cupric_chloride_solution 5000')
+        .itemOutputs('kubejs:draconic_wetware_printed_circuit_board')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(2100)
+        .EUt(GTValues.VA[GTValues.EV]);
+
+    event.recipes.gtceu.large_chemical_reactor('draconic_wetware_circuit_board_copper')
+        .itemInputs('48x gtceu:trinium_foil', 'kubejs:draconic_wetware_circuit_board')
+        .inputFluids('gtceu:cupric_chloride_solution 5000')
+        .itemOutputs('kubejs:draconic_wetware_printed_circuit_board')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(2100)
+        .EUt(GTValues.VA[GTValues.EV]);
+
 });
