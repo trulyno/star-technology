@@ -12,6 +12,7 @@
 			id: "32980F30BBEEB30D"
 			rewards: [{
 				command: "/gamestages add @a two"
+				icon: "ae2:singularity"
 				id: "6BF4F9A6EC03BC93"
 				type: "command"
 			}]
@@ -20,8 +21,8 @@
 				item: "sgjourney:milky_way_stargate"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -6.0d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3412C8DB236BE6B1"]
@@ -31,8 +32,8 @@
 				item: "gtceu:mythrilium_dust"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.0d
+			x: 1.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1A5EB0113E03D44D"]
@@ -42,8 +43,8 @@
 				item: "gtceu:trichloromythrilium_dust"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.0d
+			x: 3.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["187D742F2AB52954"]
@@ -53,8 +54,8 @@
 				item: "gtceu:mythrilium_oxide_dust"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
+			x: 5.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["4B1FDE17932295C0"]
@@ -64,8 +65,8 @@
 				item: "gtceu:mythril_dust"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 0.0d
+			x: 7.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["32980F30BBEEB30D"]
@@ -76,7 +77,7 @@
 				title: "Exploring The Nether"
 				type: "dimension"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: -4.0d
 		}
 		{
@@ -87,8 +88,8 @@
 				item: "gtceu:adamantite_dust"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: 3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4BE1E6556D0D85C9"]
@@ -98,8 +99,8 @@
 				item: "gtceu:adamantite_hydroxide_dust"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -2.0d
+			x: 5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7E4D3C49EF3D0976"]
@@ -109,8 +110,8 @@
 				item: "gtceu:adamantite_oxide_dust"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.0d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["56760FB34A29DEC5"]
@@ -120,8 +121,8 @@
 				item: "gtceu:adamantine_dust"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 0.0d
+			x: 7.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -136,8 +137,8 @@
 				item: "gtceu:nether_rare_earth_dust"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.0d
+			x: 9.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3412C8DB236BE6B1"]
@@ -147,8 +148,8 @@
 				item: "gtceu:estaltine_dust"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.0d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7EE3CA329A5C5993"]
@@ -158,8 +159,8 @@
 				item: "gtceu:estaltine_sulfate_dust"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4E2181B0A452BD88"]
@@ -169,7 +170,7 @@
 				item: "gtceu:estaltine_fluoride_dust"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 3.5d
 			y: 0.0d
 		}
 		{
@@ -180,8 +181,8 @@
 				item: "gtceu:estaltine_hydroxide_dust"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.0d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["01BB4F5315B6CB47"]
@@ -191,8 +192,8 @@
 				item: "gtceu:estaltine_oxide_dust"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["049CAC450783EA9D"]
@@ -202,8 +203,8 @@
 				item: "gtceu:estalt_dust"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 9.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["08AF894E413FDA38"]
@@ -241,8 +242,8 @@
 				}
 			]
 			title: "Polonium, Astatine, Seaborgium, Hafnium, Flerovium and Oganesson"
-			x: 6.0d
-			y: 2.0d
+			x: 11.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6ADA4149BABD157B"]
@@ -252,8 +253,8 @@
 				item: "gtceu:calamatium_dust"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 10.0d
+			x: 9.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["663DD0793B704A0C"]
@@ -263,8 +264,8 @@
 				item: "gtceu:isovol_dust"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 10.0d
+			x: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5DD45C6950AA7DFA"]
@@ -274,8 +275,8 @@
 				item: "gtceu:calamatium_fluoride_dust"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 8.0d
+			x: 9.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6DC5297757DEF56B"]
@@ -285,8 +286,8 @@
 				item: "gtceu:isovol_fluoride_dust"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 8.0d
+			x: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6D61B9B6D61DBF76"]
@@ -297,8 +298,8 @@
 				title: "Impure Calamatium Solution"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: 9.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7B351655F2DBF1ED"]
@@ -309,8 +310,8 @@
 				title: "Calamatium Solution"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 6.0d
+			x: 9.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["30CB96AFFB5EDE2E"]
@@ -321,8 +322,8 @@
 				title: "Isovol Solution"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: 6.0d
+			x: 7.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6D61B9B6D61DBF76"]
@@ -333,8 +334,183 @@
 				title: "Impure Isovol Solution"
 				type: "checkmark"
 			}]
-			x: 3.5d
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["32980F30BBEEB30D"]
+			id: "6C8F98B9CB134F3A"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "392D5B4B64E1A28B"
+				title: "Exploring The End"
+				type: "dimension"
+			}]
+			x: -6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6C8F98B9CB134F3A"]
+			id: "16BD49C0B4C6790A"
+			tasks: [{
+				id: "4399CEB889A605F3"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["16BD49C0B4C6790A"]
+			id: "436D1165ADC2CB6A"
+			tasks: [{
+				id: "2039C607EFB103AD"
+				item: "kubejs:draconic_scale_cells"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["16BD49C0B4C6790A"]
+			id: "4EC0771280EE794F"
+			tasks: [{
+				id: "77404AE72DBE077B"
+				item: "kubejs:draconic_brain_matter_cells"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["467AEA4595E0A438"]
+			id: "1237F5A70ABDD269"
+			tasks: [{
+				id: "4AC5C57CA1D8EFDB"
+				item: "kubejs:lactating_draconic_cells"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["16BD49C0B4C6790A"]
+			id: "467AEA4595E0A438"
+			tasks: [{
+				id: "1411E5AECF8018E0"
+				item: "kubejs:draconic_stem_cells"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D7D70001327DC22"]
+			id: "3F1732BFB7114714"
+			tasks: [{
+				id: "54BF7CFC6535B80A"
+				item: "kubejs:draconic_wetware_circuit_board"
+				type: "item"
+			}]
+			x: -4.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["3F1732BFB7114714"]
+			id: "1204241283022C60"
+			tasks: [{
+				id: "5BEC4585C8559B67"
+				item: "kubejs:draconic_wetware_printed_circuit_board"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4EC0771280EE794F"
+				"1204241283022C60"
+			]
+			id: "74801ACC18266400"
+			tasks: [{
+				id: "71D82D927D243EC8"
+				item: "kubejs:draconic_neuro_processing_unit"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["74801ACC18266400"]
+			id: "3A21320E05A75507"
+			subtitle: "Third and Final UV Circuit"
+			tasks: [{
+				id: "5D7790CD756986D5"
+				item: "kubejs:draconic_wetware_processor"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3A21320E05A75507"]
+			id: "3413CAC9FFC705B5"
+			subtitle: "Second and Final UHV Circuit"
+			tasks: [{
+				id: "41A0273D28D7F207"
+				item: "kubejs:draconic_wetware_processor_assembly"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3413CAC9FFC705B5"]
+			id: "5916135178DDCEA0"
+			subtitle: "First and Only UEV Circuit"
+			tasks: [{
+				id: "59E039D68EBB2718"
+				item: "kubejs:draconic_wetware_processor_computer"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1237F5A70ABDD269"]
+			id: "0698E4F7CBF1A94F"
+			tasks: [{
+				id: "558EC9CAD96F677A"
+				title: "Dragon Milk Plasma"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["16BD49C0B4C6790A"]
+			id: "4DA3B7CF73844261"
+			tasks: [{
+				id: "1251533E390D0BBD"
+				title: "Dragon Egg Shell Dust"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"436D1165ADC2CB6A"
+				"4DA3B7CF73844261"
+			]
+			id: "394E1EA568AE1772"
+			tasks: [{
+				id: "0D909CFE44517965"
+				title: "Draconic Forge"
+				type: "checkmark"
+			}]
+			x: -10.5d
+			y: 0.0d
 		}
 	]
 	title: "UEV"

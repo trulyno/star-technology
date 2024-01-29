@@ -7,16 +7,16 @@
 	order_index: 11
 	quest_links: [ ]
 	quests: [{
-		dependencies: ["32980F30BBEEB30D"]
-		id: "6C8F98B9CB134F3A"
+		dependencies: ["5916135178DDCEA0"]
+		id: "66CD58F264AFBAD0"
+		subtitle: "First and Only UIV Circuit"
 		tasks: [{
-			dimension: "minecraft:the_end"
-			id: "392D5B4B64E1A28B"
-			title: "Exploring The End"
-			type: "dimension"
+			id: "50FE334D3195A42A"
+			item: "kubejs:draconic_wetware_processor_mainframe"
+			type: "item"
 		}]
-		x: 32.0d
-		y: -6.0d
+		x: 0.0d
+		y: 0.0d
 	}]
 	title: "UIV"
 }
