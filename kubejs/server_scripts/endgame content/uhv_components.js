@@ -43,8 +43,8 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(250000);
 
-    event.recipes.gtceu.assembly_line('uhv_field_generator')
-        .itemInputs('gtceu:zalloy_frame', '6x gtceu:zalloy_plate', '2x gtceu:gravi_star', '2x kubejs:uhv_emitter', '2x #gtceu:circuits/uhv', '#gtceu:circuits/uhv', '64x gtceu:iron_selenide_over_strontium_titantium_oxide_fine_wire', '64x gtceu:iron_selenide_over_strontium_titantium_oxide_fine_wire', '4x gtceu:zirconium_selenide_diiodide_single_cable')
+        event.recipes.gtceu.assembly_line('uhv_field_generator')
+        .itemInputs('gtceu:zalloy_frame', '6x gtceu:zalloy_plate', '2x gtceu:gravi_star', '2x kubejs:uhv_emitter', '2x #gtceu:circuits/uhv', '64x gtceu:fine_iron_selenide_over_strontium_titanium_oxide_wire', '64x gtceu:fine_iron_selenide_over_strontium_titanium_oxide_wire', '4x gtceu:zirconium_selenide_diiodide_single_cable')
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1728', 'gtceu:naquadria 576')
         .itemOutputs('gtceu:uhv_field_generator')
         .duration(600)
