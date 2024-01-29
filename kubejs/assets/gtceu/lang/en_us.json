@@ -215,5 +215,7 @@
     "material.gtceu.isovol_fluoride": "Isovol Fluoride",
     "material.gtceu.xeproda": "Xeproda",
     "material.gtceu.rhexis": "Rhexis",
-    "material.gtceu.chalyblux": "Chalyblux"
+    "material.gtceu.chalyblux": "Chalyblux",
+    "material.gtceu.copper_chloride": "Copper(I) Chloride",
+    "material.gtceu.cupric_chloride_solution": "Cupric Chloride Solution"
 }

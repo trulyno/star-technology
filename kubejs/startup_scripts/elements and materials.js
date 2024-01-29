@@ -1023,6 +1023,15 @@ materialRegistry(event => {
         .fluid()
         .color(0xb8c3f5);
 
+    event.create('copper_chloride')
+        .dust()
+        .components('1x copper', '1x chlorine');
+
+    event.create('cupric_chloride_solution')
+        .fluid()
+        .components('1x copper_chloride', '1x hydrochloric_acid')
+        .color(0x336600);
+
     // Ores and bedrock fluids
     // Abydos
     event.create('titanite')
