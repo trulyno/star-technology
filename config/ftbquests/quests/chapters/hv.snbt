@@ -89,7 +89,7 @@
 				item: "gtceu:lumium_ingot"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: -4.0d
 		}
 		{
@@ -100,8 +100,8 @@
 				item: "gtceu:lumium_single_wire"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -2.0d
+			x: -6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -115,8 +115,8 @@
 				item: "gtceu:hv_4a_energy_converter"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6AA0E3A987E31BE0"]
@@ -369,6 +369,17 @@
 			}]
 			x: -4.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["317CB8073A46DAA1"]
+			id: "3CAD6E196CA24CE4"
+			tasks: [{
+				id: "7A7F6D74F2B86A8E"
+				item: "gtceu:cupric_chloride_solution_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
 		}
 	]
 	title: "HV"

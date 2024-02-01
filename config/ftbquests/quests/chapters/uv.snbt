@@ -23,7 +23,7 @@
 		{
 			dependencies: ["2A1E7FFF329651CD"]
 			id: "044F3247E310F9F4"
-			subtitle: "Second and Final UV Circuit"
+			subtitle: "Second UV Circuit"
 			tasks: [{
 				id: "502ADDC07AB2318A"
 				item: "gtceu:wetware_processor_computer"
