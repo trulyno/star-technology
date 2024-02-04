@@ -42,6 +42,7 @@ ServerEvents.recipes(event => {
     sieve('string', 0.05, dirt, 'minecraft:sunflower', false);
     sieve('string', 0.05, dirt, 'minecraft:sugar_cane', false);
     sieve('string', 0.03, dirt, 'minecraft:cocoa_beans', false);
+    sieve('string', 0.3, dirt, 'thermal:flax_seeds', false);
     sieve('string', 0.3, dirt, 'thermal:slime_mushroom_spores', false);
     sieve('string', 0.05, sand, 'exnihilosequentia:brain_coral_larva', true);
     sieve('string', 0.05, sand, 'exnihilosequentia:tube_coral_larva', true);
