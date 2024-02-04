@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.centrifuge('debris_dust')
         .itemInputs('mysticalagriculture:nether_agglomeratio')
-        .chancedOutput('gtceu:debris_tiny_dust', 200, 500)
+        .chancedOutput('gtceu:tiny_debris_dust', 200, 500)
         .duration(20)
         .EUt(6500)
         .circuit(1);
@@ -19,9 +19,9 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_chemical_reactor('purified_debris_dust')
         .itemInputs('gtceu:debris_dust')
         .inputFluids('gtceu:chlorine_trifluoride 100')
-        .itemOutputs('gtceu:purified_debris_dust', '3x gtceu:titanium_trifluoride_tiny_dust')
+        .itemOutputs('gtceu:purified_debris_dust', '3x gtceu:tiny_titanium_trifluoride_dust')
         .outputFluids('gtceu:sulfur_dichloride 50')
-        .chancedOutput('gtceu:purified_debris_small_dust', 2500, 1000)
+        .chancedOutput('gtceu:small_purified_debris_dust', 2500, 1000)
         .duration(200)
         .EUt(6500);
 

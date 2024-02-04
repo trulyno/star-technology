@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.macerator('nether_star_dust')
         .itemInputs('mysticalagradditions:nether_star_shard')
-        .itemOutputs('gtceu:nether_star_small_dust')
+        .itemOutputs('gtceu:small_nether_star_dust')
         .duration(400)
         .EUt(496);
 

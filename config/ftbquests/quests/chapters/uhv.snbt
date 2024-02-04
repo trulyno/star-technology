@@ -11,7 +11,7 @@
 		{
 			dependencies: ["044F3247E310F9F4"]
 			id: "14506694E63A261E"
-			subtitle: "First and Only UHV Circuit"
+			subtitle: "Firs UHV Circuit"
 			tasks: [{
 				id: "59B57DB8FD1DFABE"
 				item: "gtceu:wetware_processor_mainframe"
@@ -702,7 +702,7 @@
 			]
 			title: "Titanite and Zapolite from mining"
 			x: 16.0d
-			y: -6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1FDBEF0D1B492E84"]
@@ -778,14 +778,18 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["0BB68CCEA5DC0130"]
+			dependencies: [
+				"0BB68CCEA5DC0130"
+				"007C98925BD9AD94"
+			]
+			dependency_requirement: "one_completed"
 			id: "4F8D21296827D1AD"
 			tasks: [{
 				id: "227A93CD25722463"
 				item: "gtceu:titanite_dust"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 16.0d
 			y: -6.0d
 		}
 		{
@@ -797,8 +801,8 @@
 				item: "gtceu:perchloric_acid_bucket"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -4.0d
+			x: 18.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -825,7 +829,7 @@
 				type: "checkmark"
 			}]
 			x: 20.0d
-			y: -6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["76BB49EA2F8C8418"]
@@ -836,7 +840,7 @@
 				title: "Silica Gel"
 				type: "checkmark"
 			}]
-			x: 18.0d
+			x: 16.0d
 			y: -2.0d
 		}
 		{
@@ -847,8 +851,8 @@
 				item: "gtceu:calcium_perchlorate_dust"
 				type: "item"
 			}]
-			x: 20.0d
-			y: -4.0d
+			x: 18.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -861,8 +865,8 @@
 				title: "Regenerating Perchloric Acid"
 				type: "checkmark"
 			}]
-			x: 20.0d
-			y: -2.0d
+			x: 16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["17AD5BD369DBCF5E"]
@@ -874,7 +878,7 @@
 				type: "checkmark"
 			}]
 			x: 20.0d
-			y: -8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["12AFAFD4FD726D67"]
@@ -886,7 +890,7 @@
 				type: "checkmark"
 			}]
 			x: 22.0d
-			y: -8.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["14364B4B7E290CCE"]
@@ -897,8 +901,8 @@
 				title: "Titanium Tetrachloride Mixture"
 				type: "checkmark"
 			}]
-			x: 24.0d
-			y: -8.0d
+			x: 22.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["65B1F8E4C4CDAD8B"]
@@ -908,8 +912,8 @@
 				item: "gtceu:zirconium_tetrachloride_dust"
 				type: "item"
 			}]
-			x: 26.0d
-			y: -8.0d
+			x: 24.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["111516870D977C44"]
@@ -919,8 +923,8 @@
 				item: "gtceu:zirconium_dust"
 				type: "item"
 			}]
-			x: 28.0d
-			y: -8.0d
+			x: 24.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4F8D21296827D1AD"]
@@ -941,8 +945,8 @@
 				item: "gtceu:zapolgium_aluminium_oxide_dust"
 				type: "item"
 			}]
-			x: 18.0d
-			y: -10.0d
+			x: 20.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["38FAD7E2C453D10D"]
@@ -953,7 +957,7 @@
 				type: "item"
 			}]
 			x: 20.0d
-			y: -10.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -967,8 +971,8 @@
 				item: "gtceu:zapolgium_oxide_dust"
 				type: "item"
 			}]
-			x: 20.0d
-			y: -12.0d
+			x: 22.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["72737D5C12B3B400"]
@@ -979,7 +983,7 @@
 				type: "item"
 			}]
 			x: 22.0d
-			y: -12.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["2E4C5DB602A7403D"]
@@ -990,7 +994,7 @@
 				type: "item"
 			}]
 			x: 24.0d
-			y: -12.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["77F4963F778517A9"]
@@ -1000,8 +1004,8 @@
 				item: "gtceu:zapolgium_ingot"
 				type: "item"
 			}]
-			x: 26.0d
-			y: -12.0d
+			x: 24.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["7C0F6207DFA26BCC"]
@@ -1011,8 +1015,8 @@
 				item: "gtceu:zapolgium_diiodide_oxide_dust"
 				type: "item"
 			}]
-			x: 18.0d
-			y: -12.0d
+			x: 20.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["2B1050AAB6B57B0F"]
@@ -1022,8 +1026,8 @@
 				item: "gtceu:zalloy_ingot"
 				type: "item"
 			}]
-			x: 28.0d
-			y: -12.0d
+			x: 26.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["2D1F62416590FC00"]
@@ -1033,8 +1037,8 @@
 				item: "gtceu:zircalloy_4_ingot"
 				type: "item"
 			}]
-			x: 28.0d
-			y: -10.0d
+			x: 24.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["55567ECCE99E8B49"]
@@ -1044,8 +1048,8 @@
 				item: "gtceu:iron_selenide_over_strontium_titanium_oxide_single_wire"
 				type: "item"
 			}]
-			x: 30.0d
-			y: -12.0d
+			x: 28.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["77F05A54938E0BDE"]
@@ -1055,8 +1059,8 @@
 				item: "gtceu:indium_tin_lead_cadmium_soldering_alloy_dust"
 				type: "item"
 			}]
-			x: 32.0d
-			y: -12.0d
+			x: 28.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2D1F62416590FC00"]
@@ -1066,8 +1070,8 @@
 				item: "gtceu:zirconium_selenide_diiodide_single_cable"
 				type: "item"
 			}]
-			x: 30.0d
-			y: -8.0d
+			x: 26.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1084,8 +1088,8 @@
 				title: "UHV Components"
 				type: "checkmark"
 			}]
-			x: 30.0d
-			y: -10.0d
+			x: 26.0d
+			y: -8.0d
 		}
 	]
 	title: "UHV"

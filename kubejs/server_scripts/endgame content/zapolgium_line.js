@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.electromagnetic_separator('zapolite_proc_1')
         .itemInputs('gtceu:zapolite_dust')
         .itemOutputs('gtceu:zapolgium_aluminium_oxide_dust')
-        .chancedOutput('gtceu:zapolgium_diiodide_dioxide_small_dust', 4000, 1000)
+        .chancedOutput('gtceu:small_zapolgium_diiodide_dioxide_dust', 4000, 1000)
         .duration(400)
         .EUt(6400);
 
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.electric_blast_furnace('zapolgium_proc_5')
         .itemInputs('gtceu:zapolgium_hydroxide_dust', 'gtceu:carbon_dust')
-        .itemOutputs('gtceu:zapolgium_hot_ingot')
+        .itemOutputs('gtceu:hot_zapolgium_ingot')
         .outputFluids('gtceu:carbon_monoxide 1000', 'gtceu:steam 1000')
         .blastFurnaceTemp(10299)
         .duration(8000)

@@ -53,43 +53,43 @@ ServerEvents.recipes(event => {
     sieve('string', 0.05, sand, 'minecraft:seagrass', true);
 
     // gravel and blackstone
-    sieve('string', 0.45, gravel, 'gtceu:iron_crushed_ore', false);
-    sieve('string', 0.25, gravel, 'gtceu:magnetite_crushed_ore', false);
-    sieve('string', 0.35, gravel, 'gtceu:copper_crushed_ore', false);
-    sieve('string', 0.3, gravel, 'gtceu:tin_crushed_ore', false);
-    sieve('string', 0.25, gravel, 'gtceu:sphalerite_crushed_ore', false);
-    sieve('string', 0.4, black, 'gtceu:galena_crushed_ore', false);
-    sieve('string', 0.3, black, 'gtceu:stibnite_crushed_ore', false);  
+    sieve('string', 0.45, gravel, 'gtceu:crushed_iron_ore', false);
+    sieve('string', 0.25, gravel, 'gtceu:crushed_magnetite_ore', false);
+    sieve('string', 0.35, gravel, 'gtceu:crushed_copper_ore', false);
+    sieve('string', 0.3, gravel, 'gtceu:crushed_tin_ore', false);
+    sieve('string', 0.25, gravel, 'gtceu:crushed_sphalerite_ore', false);
+    sieve('string', 0.4, black, 'gtceu:crushed_galena_ore', false);
+    sieve('string', 0.3, black, 'gtceu:crushed_stibnite_ore', false);  
 
-    sieve('flint', 0.1, gravel, 'gtceu:silver_crushed_ore', false);
-    sieve('flint', 0.05, gravel, 'gtceu:gold_crushed_ore', false);
-    sieve('flint', 0.2, black, 'gtceu:pentlandite_crushed_ore', false);
-    sieve('flint', 0.25, gravel, 'gtceu:chalcopyrite_crushed_ore', false);
-    sieve('flint', 0.25, black, 'gtceu:bornite_crushed_ore', false);
-    sieve('flint', 0.25, gravel, 'gtceu:cassiterite_crushed_ore', false);
+    sieve('flint', 0.1, gravel, 'gtceu:crushed_silver_ore', false);
+    sieve('flint', 0.05, gravel, 'gtceu:crushed_gold_ore', false);
+    sieve('flint', 0.2, black, 'gtceu:crushed_pentlandite_ore', false);
+    sieve('flint', 0.25, gravel, 'gtceu:crushed_chalcopyrite_ore', false);
+    sieve('flint', 0.25, black, 'gtceu:crushed_bornite_ore', false);
+    sieve('flint', 0.25, gravel, 'gtceu:crushed_cassiterite_ore', false);
     
-    sieve('iron', 0.12, gravel, 'gtceu:pyrolusite_crushed_ore', false);
-    sieve('iron', 0.05, gravel, 'gtceu:lepidolite_crushed_ore', false);
-    sieve('iron', 0.1, black, 'gtceu:cobaltite_crushed_ore', false);
-    sieve('iron', 0.16, black, 'gtceu:beryllium_crushed_ore', false);
-    sieve('iron', 0.21, black, 'gtceu:chromite_crushed_ore', false);
-    sieve('iron', 0.05, gravel, 'gtceu:pyrochlore_crushed_ore', false);
-    sieve('iron', 0.05, gravel, 'gtceu:vanadium_magnetite_crushed_ore', false);
+    sieve('iron', 0.12, gravel, 'gtceu:crushed_pyrolusite_ore', false);
+    sieve('iron', 0.05, gravel, 'gtceu:crushed_lepidolite_ore', false);
+    sieve('iron', 0.1, black, 'gtceu:crushed_cobaltite_ore', false);
+    sieve('iron', 0.16, black, 'gtceu:crushed_beryllium_ore', false);
+    sieve('iron', 0.21, black, 'gtceu:crushed_chromite_ore', false);
+    sieve('iron', 0.05, gravel, 'gtceu:crushed_pyrochlore_ore', false);
+    sieve('iron', 0.05, gravel, 'gtceu:crushed_vanadium_magnetite_ore', false);
 
-    sieve('diamond', 0.12, black, 'gtceu:molybdenite_crushed_ore', false);
-    sieve('diamond', 0.02, black, 'gtceu:pitchblende_crushed_ore', false);
-    sieve('diamond', 0.05, gravel, 'gtceu:tantalite_crushed_ore', false);
-    sieve('diamond', 0.075, black, 'gtceu:ilmenite_crushed_ore', false);
-    sieve('diamond', 0.18, gravel, 'gtceu:bauxite_crushed_ore', false);
-    sieve('diamond', 0.02, gravel, 'gtceu:pollucite_crushed_ore', false);
+    sieve('diamond', 0.12, black, 'gtceu:crushed_molybdenite_ore', false);
+    sieve('diamond', 0.02, black, 'gtceu:crushed_pitchblende_ore', false);
+    sieve('diamond', 0.05, gravel, 'gtceu:crushed_tantalite_ore', false);
+    sieve('diamond', 0.075, black, 'gtceu:crushed_ilmenite_ore', false);
+    sieve('diamond', 0.18, gravel, 'gtceu:crushed_bauxite_ore', false);
+    sieve('diamond', 0.02, gravel, 'gtceu:crushed_pollucite_ore', false);
 
-    sieve('emerald', 0.15, gravel, 'gtceu:tungstate_crushed_ore', false);
-    sieve('emerald', 0.125, gravel, 'gtceu:scheelite_crushed_ore', false);
-    sieve('emerald', 0.35, black, 'gtceu:bastnasite_crushed_ore', false);
-    sieve('emerald', 0.25, black, 'gtceu:cooperite_crushed_ore', false);
-    sieve('emerald', 0.12, black, 'gtceu:barite_crushed_ore', false);
+    sieve('emerald', 0.15, gravel, 'gtceu:crushed_tungstate_ore', false);
+    sieve('emerald', 0.125, gravel, 'gtceu:crushed_scheelite_ore', false);
+    sieve('emerald', 0.35, black, 'gtceu:crushed_bastnasite_ore', false);
+    sieve('emerald', 0.25, black, 'gtceu:crushed_cooperite_ore', false);
+    sieve('emerald', 0.12, black, 'gtceu:crushed_barite_ore', false);
 
-    sieve('netherite', 0.01, black, 'gtceu:naquadah_crushed_ore', false);
+    sieve('netherite', 0.01, black, 'gtceu:crushed_naquadah_ore', false);
 
     // sand
     sieve('string', 0.075, sand, 'minecraft:diamond', false);
@@ -98,27 +98,27 @@ ServerEvents.recipes(event => {
     sieve('string', 0.05, sand, 'minecraft:emerald', false);
     sieve('string', 0.2, sand, 'minecraft:quartz', false);
 
-    sieve('flint', 0.075, sand, 'gtceu:diamond_crushed_ore', false);
-    sieve('flint', 0.05, sand, 'gtceu:emerald_crushed_ore', false);
-    sieve('flint', 0.1, sand, 'gtceu:green_sapphire_crushed_ore', false);
-    sieve('flint', 0.1, sand, 'gtceu:sapphire_crushed_ore', false);
-    sieve('flint', 0.1, sand, 'gtceu:ruby_crushed_ore', false);
+    sieve('flint', 0.075, sand, 'gtceu:crushed_diamond_ore', false);
+    sieve('flint', 0.05, sand, 'gtceu:crushed_emerald_ore', false);
+    sieve('flint', 0.1, sand, 'gtceu:crushed_green_sapphire_ore', false);
+    sieve('flint', 0.1, sand, 'gtceu:crushed_sapphire_ore', false);
+    sieve('flint', 0.1, sand, 'gtceu:crushed_ruby_ore', false);
     // sieve('flint', 0.1, sand, 'gtceu:raw_opal', false);
     sieve('flint', 0.1, sand, 'minecraft:coal', false);
-    sieve('flint', 0.1, sand, 'gtceu:quartzite_crushed_ore', false);
-    sieve('flint', 0.1, sand, 'gtceu:certus_quartz_crushed_ore', false);
-    sieve('flint', 0.1, sand, 'gtceu:salt_crushed_ore', false);
-    sieve('flint', 0.1, sand, 'gtceu:rock_salt_crushed_ore', false);
-    sieve('flint', 0.1, sand, 'gtceu:saltpeter_crushed_ore', false);
-    sieve('flint', 0.1, sand, 'gtceu:realgar_crushed_ore', false);
+    sieve('flint', 0.1, sand, 'gtceu:crushed_quartzite_ore', false);
+    sieve('flint', 0.1, sand, 'gtceu:crushed_certus_quartz_ore', false);
+    sieve('flint', 0.1, sand, 'gtceu:crushed_salt_ore', false);
+    sieve('flint', 0.1, sand, 'gtceu:crushed_rock_salt_ore', false);
+    sieve('flint', 0.1, sand, 'gtceu:crushed_saltpeter_ore', false);
+    sieve('flint', 0.1, sand, 'gtceu:crushed_realgar_ore', false);
 
-    sieve('iron', 0.14, sand, 'gtceu:blue_topaz_crushed_ore', false);
-    sieve('iron', 0.14, sand, 'gtceu:topaz_crushed_ore', false);
-    sieve('iron', 0.08, sand, 'gtceu:yellow_garnet_crushed_ore', false);
-    sieve('iron', 0.08, sand, 'gtceu:red_garnet_crushed_ore', false);
-    sieve('iron', 0.1, sand, 'gtceu:garnet_sand_crushed_ore', false);
-    sieve('iron', 0.2, sand, 'gtceu:apatite_crushed_ore', false);
-    sieve('iron', 0.15, sand, 'gtceu:monazite_crushed_ore', false);
+    sieve('iron', 0.14, sand, 'gtceu:crushed_blue_topaz_ore', false);
+    sieve('iron', 0.14, sand, 'gtceu:crushed_topaz_ore', false);
+    sieve('iron', 0.08, sand, 'gtceu:crushed_yellow_garnet_ore', false);
+    sieve('iron', 0.08, sand, 'gtceu:crushed_red_garnet_ore', false);
+    sieve('iron', 0.1, sand, 'gtceu:crushed_garnet_sand_ore', false);
+    sieve('iron', 0.2, sand, 'gtceu:crushed_apatite_ore', false);
+    sieve('iron', 0.15, sand, 'gtceu:crushed_monazite_ore', false);
 
     //sieve('diamond', 0.01, sand, 'mmt:moonstone', false);
     //sieve('diamond', 0.01, sand, 'mmt:sunstone', false);
@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
     // dust
     sieve('string', 0.4, dust, 'minecraft:redstone', false);
     sieve('string', 0.4, dust, 'minecraft:glowstone_dust', false);
-    sieve('string', 0.3, dust, 'gtceu:sulfur_tiny_dust', false);
+    sieve('string', 0.3, dust, 'gtceu:tiny_sulfur_dust', false);
     sieve('string', 0.05, dust, 'minecraft:ender_pearl', false);
     sieve('netherite', 0.01, dust, 'minecraft:echo_shard', false);
 

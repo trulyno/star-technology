@@ -14,11 +14,11 @@ ServerEvents.recipes(event => {
         .duration(6000)
         .EUt(28700);
 
-    event.remove({output: 'gtceu:void_hot_ingot'});
+    event.remove({output: 'gtceu:hot_void_ingot'});
 
     event.recipes.gtceu.heat_chamber('crude_to_void_ingot')
         .itemInputs('gtceu:raw_void_ingot')
-        .itemOutputs('gtceu:void_hot_ingot')
+        .itemOutputs('gtceu:hot_void_ingot')
         .blastFurnaceTemp(10799)
         .duration(16000)
         .EUt(28700);

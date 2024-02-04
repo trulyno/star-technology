@@ -14,85 +14,85 @@ ServerEvents.recipes(event => {
     });
 
     event.recipes.gtceu.ore_processing_plant('iron_opp')
-        .itemInputs('gtceu:iron_crushed_ore')
+        .itemInputs('gtceu:crushed_iron_ore')
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:iron_dust')
         .chancedOutput('gtceu:iron_dust', 9500, 50)
-        .chancedOutput('gtceu:nickel_small_dust', 6500, 100)
-        .chancedOutput('gtceu:tin_tiny_dust', 5250, 50)
+        .chancedOutput('gtceu:small_nickel_dust', 6500, 100)
+        .chancedOutput('gtceu:tiny_tin_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
     event.recipes.gtceu.ore_processing_plant('magnetite_opp')
-        .itemInputs('gtceu:magnetite_crushed_ore')
+        .itemInputs('gtceu:crushed_magnetite_ore')
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:magnetite_dust')
         .chancedOutput('gtceu:magnetite_dust', 9500, 50)
-        .chancedOutput('gtceu:gold_small_dust', 6500, 100)
-        .chancedOutput('gtceu:gold_tiny_dust', 5250, 50)
+        .chancedOutput('gtceu:small_gold_dust', 6500, 100)
+        .chancedOutput('gtceu:tiny_gold_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
     event.recipes.gtceu.ore_processing_plant('copper_opp')
-        .itemInputs('gtceu:copper_crushed_ore')
+        .itemInputs('gtceu:crushed_copper_ore')
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:copper_dust')
         .chancedOutput('gtceu:copper_dust', 9500, 50)
-        .chancedOutput('gtceu:gold_small_dust', 6500, 100)
-        .chancedOutput('gtceu:nickel_tiny_dust', 5250, 50)
+        .chancedOutput('gtceu:small_gold_dust', 6500, 100)
+        .chancedOutput('gtceu:tiny_nickel_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
     event.recipes.gtceu.ore_processing_plant('tin_opp')
-        .itemInputs('gtceu:tin_crushed_ore')
+        .itemInputs('gtceu:crushed_tin_ore')
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:tin_dust')
         .chancedOutput('gtceu:tin_dust', 9500, 50)
-        .chancedOutput('gtceu:iron_small_dust', 6500, 100)
-        .chancedOutput('gtceu:zinc_tiny_dust', 5250, 50)
+        .chancedOutput('gtceu:small_iron_dust', 6500, 100)
+        .chancedOutput('gtceu:tiny_zinc_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
     event.recipes.gtceu.ore_processing_plant('sphalerite_opp')
-        .itemInputs('gtceu:sphalerite_crushed_ore')
+        .itemInputs('gtceu:crushed_sphalerite_ore')
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:sphalerite_dust')
         .chancedOutput('gtceu:sphalerite_dust', 9500, 50)
-        .chancedOutput('gtceu:gallium_small_dust', 6500, 100)
-        .chancedOutput('gtceu:sulfur_tiny_dust', 5250, 50)
+        .chancedOutput('gtceu:small_gallium_dust', 6500, 100)
+        .chancedOutput('gtceu:tiny_sulfur_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
     event.recipes.gtceu.ore_processing_plant('galena_opp')
-        .itemInputs('gtceu:galena_crushed_ore')
+        .itemInputs('gtceu:crushed_galena_ore')
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:galena_dust')
         .chancedOutput('gtceu:galena_dust', 9500, 50)
-        .chancedOutput('gtceu:silver_small_dust', 6500, 100)
-        .chancedOutput('gtceu:sulfur_tiny_dust', 5250, 50)
+        .chancedOutput('gtceu:small_silver_dust', 6500, 100)
+        .chancedOutput('gtceu:tiny_sulfur_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
     event.recipes.gtceu.ore_processing_plant('stibnite_opp')
-        .itemInputs('gtceu:stibnite_crushed_ore')
+        .itemInputs('gtceu:crushed_stibnite_ore')
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:stibnite_dust')
         .chancedOutput('gtceu:stibnite_dust', 9500, 50)
-        .chancedOutput('gtceu:antimony_small_dust', 6500, 100)
-        .chancedOutput('gtceu:sulfur_tiny_dust', 5250, 50)
+        .chancedOutput('gtceu:small_antimony_dust', 6500, 100)
+        .chancedOutput('gtceu:tiny_sulfur_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
 
     function opp1(voltage, material, secondary, tertiary, quaternary) {
         event.recipes.gtceu.ore_processing_plant(`${material}_opp`)
-            .itemInputs(`gtceu:${material}_crushed_ore`)
+            .itemInputs(`gtceu:crushed_${material}_ore`)
             .inputFluids(`${(voltage >= 512) ? 'gtceu:sodium_persulfate' : 'gtceu:distilled_water'} 100`)
             .itemOutputs(`gtceu:${material}_dust`)
             .chancedOutput(`gtceu:${material}_dust`, 7500, 150)
-            .chancedOutput(`gtceu:${secondary}_small_dust`, 5500, 100)
-            .chancedOutput(`gtceu:${tertiary}_tiny_dust`, 3250, 50)
-            .chancedOutput(`gtceu:${quaternary}_tiny_dust`, 1750, 100)
+            .chancedOutput(`gtceu:small_${secondary}_dust`, 5500, 100)
+            .chancedOutput(`gtceu:tiny_${tertiary}_dust`, 3250, 50)
+            .chancedOutput(`gtceu:tiny_${quaternary}_dust`, 1750, 100)
             .duration(240)
             .EUt(voltage * 0.5);
     }
@@ -132,13 +132,13 @@ ServerEvents.recipes(event => {
 
     function opp2(voltage, material, secondary, tertiary, quaternary) {
         event.recipes.gtceu.ore_processing_plant(`${material}_opp`)
-            .itemInputs(`gtceu:${material}_crushed_ore`)
+            .itemInputs(`gtceu:crushed_${material}_ore`)
             .inputFluids('gtceu:sodium_persulfate 500')
             .itemOutputs(`gtceu:${material}_dust`)
             .chancedOutput(`gtceu:${material}_dust`, 7500, 150)
             .chancedOutput(`gtceu:${secondary}_dust`, 5500, 100)
-            .chancedOutput(`gtceu:${tertiary}_tiny_dust`, 3250, 50)
-            .chancedOutput(`gtceu:${quaternary}_tiny_dust`, 1750, 100)
+            .chancedOutput(`gtceu:tiny_${tertiary}_dust`, 3250, 50)
+            .chancedOutput(`gtceu:tiny_${quaternary}_dust`, 1750, 100)
             .duration(320)
             .EUt(voltage * 0.75);
     }

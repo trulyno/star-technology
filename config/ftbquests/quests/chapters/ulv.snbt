@@ -19,25 +19,15 @@
 			y: 1.0d
 		}
 		{
-			id: "3CF6E632CC7D6856"
-			tasks: [{
-				id: "3B55918F1165E854"
-				item: "thermal:flax"
-				type: "item"
-			}]
-			x: -9.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["3CF6E632CC7D6856"]
+			dependencies: ["2B1B7C866E961A68"]
 			id: "2E9AA11F694F2BED"
 			tasks: [{
 				id: "6B287D54B185FC50"
 				item: "minecraft:string"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -1.0d
+			x: -7.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2E9AA11F694F2BED"]
@@ -715,6 +705,34 @@
 			}]
 			x: -1.0d
 			y: 15.0d
+		}
+		{
+			dependencies: ["6F6BC9F29C31FB5E"]
+			id: "2C30C61EE8FD5564"
+			tasks: [{
+				id: "3641F869BFBA5472"
+				item: {
+					Count: 1b
+					id: "exnihilosequentia:wooden_crook"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2C30C61EE8FD5564"]
+			id: "2B1B7C866E961A68"
+			tasks: [{
+				id: "247E7214802A580F"
+				item: "exnihilosequentia:silkworm"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.0d
 		}
 	]
 	title: "ULV"

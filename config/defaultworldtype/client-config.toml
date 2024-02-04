@@ -1,5 +1,5 @@
 
 [world-preset]
 	#Type in the name from the world type which should be selected by default.
-	world-preset = "skyblockbuilder:skyblock"
+	world-preset = "mcskyblock:skyblock"
 

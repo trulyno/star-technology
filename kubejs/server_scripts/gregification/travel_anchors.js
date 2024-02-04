@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         'SPS',
         'DSD'
     ], {
-        D: 'gtceu:steel_double_plate',
+        D: 'gtceu:double_steel_plate',
         S: 'gtceu:steel_plate',
         P: 'minecraft:ender_pearl'
     });

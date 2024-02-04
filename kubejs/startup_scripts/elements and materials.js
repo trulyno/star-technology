@@ -5,7 +5,7 @@ function materialRegistry(func) { GTCEuStartupEvents.registry('gtceu:material', 
 const $IngotProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty');
 const $DustProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.DustProperty');
 const $FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty');
-const $BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty')
+const $BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty');
 
 // Icon Sets
 const DULL = GTMaterialIconSet.DULL;
@@ -299,14 +299,6 @@ elementRegistry(event => {
 */
 materialRegistry(event => {
 
-    // Material modification
-    GTMaterials.Lead.addFlags(gear);
-    GTMaterials.Silver.addFlags(gear);
-    GTMaterials.Naquadah.addFlags(dense_plate);
-    GTMaterials.NaquadahEnriched.addFlags(dense_plate);
-    GTMaterials.Neutronium.addFlags(foil);
-    GTMaterials.Zirconium.addFlags(fine_wire); 
-
     // Periodic table materials
     // Ingots
     periodicTableElement('zirconium', 'ingot');
@@ -330,7 +322,14 @@ materialRegistry(event => {
     periodicTableElement('oganesson', 'gas');
 
     // PLasmas
-    
+
+    // Material modification
+    GTMaterials.Lead.addFlags(gear);
+    GTMaterials.Silver.addFlags(gear);
+    GTMaterials.Naquadah.addFlags(dense_plate);
+    GTMaterials.NaquadahEnriched.addFlags(dense_plate);
+    GTMaterials.Neutronium.addFlags(foil);
+    GTMaterials.Zirconium.addFlags(fine_wire);     
 
     // Blast Properties of periodic table metals
     blastProperty('zirconium', 8000, 'higher', VA('zpm'), 800);

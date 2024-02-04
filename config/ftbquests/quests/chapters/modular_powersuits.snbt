@@ -6,15 +6,1051 @@
 	id: "1110A8E03318F838"
 	order_index: 3
 	quest_links: [ ]
-	quests: [{
-		id: "0AC96645D1F544EB"
-		tasks: [{
-			id: "522E59B8ECDFDD61"
-			title: "WIP"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["0B920BEEC675B1B3"]
+			id: "33922E73EDFAF0AB"
+			tasks: [{
+				id: "075F9A833909D2F8"
+				item: "powersuits:tinkertable"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["33922E73EDFAF0AB"]
+			id: "04182C94DE45A5D6"
+			tasks: [{
+				id: "019B6D3CA539CE4B"
+				item: {
+					Count: 1b
+					id: "powersuits:powerarmor_head"
+					tag: {
+						MMModItem: {
+							render: {
+								colors: [I; ]
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33922E73EDFAF0AB"]
+			id: "1CB5549723778D28"
+			tasks: [{
+				id: "641D2F9C9AC877DA"
+				item: {
+					Count: 1b
+					id: "powersuits:powerarmor_torso"
+					tag: {
+						MMModItem: {
+							render: {
+								colors: [I; ]
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["33922E73EDFAF0AB"]
+			id: "57138F8A4BB31A7C"
+			tasks: [{
+				id: "0AC00A3F8347CA65"
+				item: {
+					Count: 1b
+					id: "powersuits:powerarmor_legs"
+					tag: {
+						MMModItem: {
+							render: {
+								colors: [I; ]
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33922E73EDFAF0AB"]
+			id: "5A0B597A64DFFBD4"
+			tasks: [{
+				id: "795D42D5FD6025CD"
+				item: {
+					Count: 1b
+					id: "powersuits:powerarmor_feet"
+					tag: {
+						MMModItem: {
+							render: {
+								colors: [I; ]
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["33922E73EDFAF0AB"]
+			id: "1544BDEDFB44D048"
+			tasks: [{
+				id: "52D670C7C2EDB40B"
+				item: {
+					Count: 1b
+					id: "powersuits:powerfist"
+					tag: {
+						MMModItem: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"5A0B597A64DFFBD4"
+				"1CB5549723778D28"
+				"04182C94DE45A5D6"
+				"57138F8A4BB31A7C"
+				"1544BDEDFB44D048"
+			]
+			dependency_requirement: "one_completed"
+			id: "34D073B4FA3251AA"
+			tasks: [{
+				id: "57CB19485048268C"
+				item: {
+					Count: 1b
+					id: "numina:battery_basic"
+					tag: {
+						MMModModule: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["34D073B4FA3251AA"]
+			id: "732A0C0F530D8DE5"
+			tasks: [{
+				id: "1FAF680661B37369"
+				item: {
+					Count: 1b
+					id: "numina:battery_advanced"
+					tag: {
+						MMModModule: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["732A0C0F530D8DE5"]
+			id: "50D84EE3767B6A08"
+			tasks: [{
+				id: "20FF248CDB30B110"
+				item: {
+					Count: 1b
+					id: "numina:battery_elite"
+					tag: {
+						MMModModule: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["50D84EE3767B6A08"]
+			id: "5143AB33BE723F74"
+			tasks: [{
+				id: "73D766A61BA499F8"
+				item: {
+					Count: 1b
+					id: "numina:battery_ultimate"
+					tag: {
+						MMModModule: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5A0B597A64DFFBD4"
+				"1CB5549723778D28"
+				"04182C94DE45A5D6"
+				"57138F8A4BB31A7C"
+			]
+			id: "35ABD8817F21C030"
+			tasks: [{
+				id: "56AAB050ACC8AD83"
+				item: "powersuits:plating_iron"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35ABD8817F21C030"]
+			id: "1E03061886AA6B4A"
+			tasks: [{
+				id: "646D6ED153BEB4F6"
+				item: "powersuits:plating_diamond"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1E03061886AA6B4A"]
+			id: "2ABEA2049EC2FDC3"
+			tasks: [{
+				id: "01B8C64D4BC6931C"
+				item: "powersuits:plating_netherite"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2ABEA2049EC2FDC3"]
+			id: "66BCA4487FA89683"
+			tasks: [{
+				id: "2F4EE4D393ED70F7"
+				item: {
+					Count: 1b
+					id: "powersuits:energy_shield"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5A0B597A64DFFBD4"
+				"1CB5549723778D28"
+				"04182C94DE45A5D6"
+				"57138F8A4BB31A7C"
+			]
+			dependency_requirement: "one_completed"
+			id: "0DE4359956A75A6F"
+			tasks: [{
+				id: "10252A116FE6BB82"
+				item: {
+					Count: 1b
+					id: "powersuits:transparent_armor"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04182C94DE45A5D6"]
+			id: "50A278D566E1E582"
+			tasks: [{
+				id: "09E362980DCE397F"
+				item: {
+					Count: 1b
+					id: "minecraft:clock"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["04182C94DE45A5D6"]
+			id: "53AF555C5BE179DE"
+			tasks: [{
+				id: "59F0424A1055B923"
+				item: {
+					Count: 1b
+					id: "powersuits:auto_feeder"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["04182C94DE45A5D6"]
+			id: "154FF98EAED4DC76"
+			tasks: [{
+				id: "6F64ECD47B64F856"
+				item: {
+					Count: 1b
+					id: "powersuits:night_vision"
+					tag: {
+						MMModModule: {
+							Active: 1b
+							added: 1b
+							removed: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["04182C94DE45A5D6"]
+			id: "6950923ED7E4FC30"
+			tasks: [{
+				id: "19344D6D33F2BC2C"
+				item: {
+					Count: 1b
+					id: "powersuits:binoculars"
+					tag: {
+						MMModModule: {
+							Active: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["04182C94DE45A5D6"]
+			id: "7D912B709F7D6494"
+			tasks: [{
+				id: "14F0229F86C77690"
+				item: {
+					Count: 1b
+					id: "minecraft:compass"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04182C94DE45A5D6"]
+			id: "066393BB6179052B"
+			tasks: [{
+				id: "49DE0D5A98C9D6CE"
+				item: {
+					Count: 1b
+					id: "powersuits:flight_control"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["04182C94DE45A5D6"]
+			id: "580413399E30E3DE"
+			tasks: [{
+				id: "1A46BC8E114809C9"
+				item: {
+					Count: 1b
+					id: "powersuits:generator_solar"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["580413399E30E3DE"]
+			id: "297261219F0C21B4"
+			tasks: [{
+				id: "1944637E08A08631"
+				item: {
+					Count: 1b
+					id: "powersuits:generator_solar_adv"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1CB5549723778D28"]
+			id: "155CE983885A0257"
+			tasks: [{
+				id: "549D687CA98E617D"
+				item: {
+					Count: 1b
+					id: "powersuits:invisibility"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1CB5549723778D28"]
+			id: "608D26A873A587AE"
+			tasks: [{
+				id: "2C1D3CB7463921EC"
+				item: {
+					Count: 1b
+					id: "powersuits:parachute"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1CB5549723778D28"]
+			id: "64489FA8BECBDB14"
+			tasks: [{
+				id: "707459B18CB889E6"
+				item: {
+					Count: 1b
+					id: "powersuits:jetpack"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1CB5549723778D28"]
+			id: "6D7259A0BCA08DFE"
+			tasks: [{
+				id: "2739CF1527DFE2BD"
+				item: {
+					Count: 1b
+					id: "powersuits:glider"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1CB5549723778D28"]
+			id: "75CE8BECA6807282"
+			tasks: [{
+				id: "2D7C50F95090F649"
+				item: {
+					Count: 1b
+					id: "powersuits:generator_thermal"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1CB5549723778D28"]
+			id: "66F2B7AF1659D8BA"
+			tasks: [{
+				id: "31C3C80E19302F11"
+				item: {
+					Count: 1b
+					id: "powersuits:mob_repulsor"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1CB5549723778D28"]
+			id: "07E525C8E66DC059"
+			tasks: [{
+				id: "1EB4F85A20149565"
+				item: {
+					Count: 1b
+					id: "powersuits:fluid_tank"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1CB5549723778D28"]
+			id: "1F8C0955CD9597EB"
+			tasks: [{
+				id: "6AE2889C0047FB87"
+				item: {
+					Count: 1b
+					id: "powersuits:cooling_system"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1CB5549723778D28"]
+			id: "031E46F27B4477DD"
+			tasks: [{
+				id: "7387D9AA5F060F3E"
+				item: "powersuits:piglin_pacification_module"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1CB5549723778D28"]
+			id: "29460270755BD3F6"
+			tasks: [{
+				id: "6E68DDF9D05D4DA5"
+				item: {
+					Count: 1b
+					id: "powersuits:magnet"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["57138F8A4BB31A7C"]
+			id: "393D4928878092A5"
+			tasks: [{
+				id: "075502EFFB2EED7E"
+				item: {
+					Count: 1b
+					id: "powersuits:climb_assist"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57138F8A4BB31A7C"]
+			id: "73F5C69D8407F189"
+			tasks: [{
+				id: "24DA7ABAD65AB369"
+				item: {
+					Count: 1b
+					id: "powersuits:jump_assist"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57138F8A4BB31A7C"]
+			id: "427C59D95915D450"
+			tasks: [{
+				id: "1263D6808E0705E0"
+				item: {
+					Count: 1b
+					id: "powersuits:sprint_assist"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57138F8A4BB31A7C"]
+			id: "27EA471B8F210999"
+			tasks: [{
+				id: "3AF74BEB816DC0C6"
+				item: {
+					Count: 1b
+					id: "powersuits:swim_assist"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57138F8A4BB31A7C"]
+			id: "1D901A49A654B9C4"
+			tasks: [{
+				id: "26AEAFBB9959A4BF"
+				item: {
+					Count: 1b
+					id: "powersuits:generator_kinetic"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A0B597A64DFFBD4"]
+			id: "4CDF462058B44637"
+			tasks: [{
+				id: "440ADEAF45087C66"
+				item: {
+					Count: 1b
+					id: "powersuits:jet_boots"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5A0B597A64DFFBD4"]
+			id: "029C48E4F8EA9009"
+			tasks: [{
+				id: "16390126DC3FFB72"
+				item: {
+					Count: 1b
+					id: "powersuits:shock_absorber"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "162B02BC1CCBF7AD"
+			tasks: [{
+				id: "6680317E24734DDC"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "1428E3597762BDFF"
+			tasks: [{
+				id: "18C5A73AA3A05336"
+				item: "powersuits:axe"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "760D487ED22B15F0"
+			tasks: [{
+				id: "60074B411CE9137D"
+				item: "powersuits:pickaxe"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "59E7ADBCE200C04E"
+			tasks: [{
+				id: "096454EF81D8818A"
+				item: "powersuits:diamond_pick_upgrade"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "4AA01F0514EE7CC8"
+			tasks: [{
+				id: "3BE393255E337177"
+				item: "powersuits:hoe"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "7E8E7DD6DAE29211"
+			tasks: [{
+				id: "5A216C2AD4F4FB93"
+				item: "powersuits:leaf_blower"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "4E62D916A87A1E35"
+			tasks: [{
+				id: "43CB149561B6BACF"
+				item: {
+					Count: 1b
+					id: "powersuits:luxcapacitor_module"
+					tag: {
+						MMModModule: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "1F9449EA669573EE"
+			tasks: [{
+				id: "45D30F277821FBD7"
+				item: "powersuits:melee_assist"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "31BA72190DA64CA7"
+			tasks: [{
+				id: "661F8453EB60C9E5"
+				item: "powersuits:plasma_cannon"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "1771B53DF7834F6F"
+			tasks: [{
+				id: "09373E105BA4C3D7"
+				item: {
+					Count: 1b
+					id: "powersuits:railgun"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "0C4657F89DE907DE"
+			tasks: [{
+				id: "577AF025668F9863"
+				item: "powersuits:blink_drive"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "1725D7E2E6CDA667"
+			tasks: [{
+				id: "44573968C9236A0B"
+				item: "powersuits:dim_rift_gen"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "34157F6C33D1B6F3"
+			tasks: [{
+				id: "1460307B87ABC80F"
+				item: "powersuits:shears"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "20A888576F6D5714"
+			tasks: [{
+				id: "29D84F30BB17F468"
+				item: "powersuits:shovel"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "1B72E2C08AFA7E48"
+			tasks: [{
+				id: "331740EE68647792"
+				item: {
+					Count: 1b
+					id: "powersuits:tunnel_bore"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "2BE8E0D3B939E611"
+			tasks: [{
+				id: "0815030A718597B5"
+				item: {
+					Count: 1b
+					id: "powersuits:vein_miner"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "4E9DDB390FB23FBF"
+			tasks: [{
+				id: "73F9462625C26EB7"
+				item: {
+					Count: 1b
+					id: "powersuits:aqua_affinity"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "4E8A780EE84EE17F"
+			tasks: [{
+				id: "173761463827C1F3"
+				item: {
+					Count: 1b
+					id: "powersuits:fortune"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "28921CC33AE240F6"
+			tasks: [{
+				id: "176C52AC0BBE5D61"
+				item: {
+					Count: 1b
+					id: "powersuits:silk_touch"
+					tag: {
+						MMModModule: {
+							Active: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "3658443290C5BC65"
+			tasks: [{
+				id: "033408154BE8DD6A"
+				item: "powersuits:blade_launcher"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "3898A3282960A2FC"
+			tasks: [{
+				id: "7CE7E66D7BF71DF4"
+				item: "powersuits:lightning_summoner"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1544BDEDFB44D048"]
+			id: "0B137714F6B9A5EA"
+			tasks: [{
+				id: "196EB9D778D07652"
+				item: "powersuits:flint_and_steel"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.5d
+		}
+		{
+			id: "2655A16CA985C2C7"
+			tasks: [{
+				id: "426286EF323C18B3"
+				title: "WIP"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+	]
 	title: "Modular Powersuits"
 }

@@ -285,7 +285,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.essence_burning('silver_essence_burning_0')
         .itemInputs('mysticalagriculture:silver_essence')
-        .itemOutputs('16x thermal:raw_tin')
+        .itemOutputs('16x gtceu:raw_silver')
         .duration(200)
         .EUt(80)
         .circuit(0);
@@ -327,7 +327,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.essence_burning('sulfur_essence_burning_0')
         .itemInputs('mysticalagriculture:sulfur_essence')
-        .itemOutputs('16x gtceu:sulfur_dust')
+        .itemOutputs('16x gtceu:raw_sulfur')
         .duration(200)
         .EUt(80)
         .circuit(0);

@@ -74,41 +74,6 @@
 			x: -4.0d
 			y: 0.0d
 		}
-		{
-			description: [
-				"If you encounter broken recipes on first launch, you can do one of these to fix it:"
-				"1) Re-enter the world"
-				"2) Enable cheats and do a /reload"
-				"This usually fixes it and you won't encouter the issue anymore."
-				"The cause of the issue is still unknown and we are trying to track it down."
-			]
-			icon: {
-				Count: 1b
-				id: "powersuits:aoe_pick_upgrade2"
-				tag: {
-					MMModModule: {
-						Active: 1b
-					}
-				}
-			}
-			id: "56CB7EB1F1236710"
-			rewards: [{
-				command: "/reload"
-				icon: "ae2:singularity"
-				id: "53EC2AC0A12B15FC"
-				title: "Reload the world"
-				type: "command"
-			}]
-			shape: "rsquare"
-			size: 3.0d
-			tasks: [{
-				id: "48B57475B5A2EAC5"
-				title: "Help! Recipes are broken!"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 4.0d
-		}
 	]
 	title: "Welcome!"
 }

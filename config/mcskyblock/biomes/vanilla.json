@@ -1,0 +1,308 @@
+[
+  {
+    "biome": "minecraft:frozen_ocean",
+    "base": "minecraft:blue_ice"
+  },
+  {
+    "biome": "minecraft:savanna_plateau",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:acacia_sapling"
+  },
+  {
+    "biome": "minecraft:taiga",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:rose_bush"
+  },
+  {
+    "biome": "minecraft:savanna",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:acacia_sapling"
+  },
+  {
+    "biome": "minecraft:swamp",
+    "base": "minecraft:mud",
+    "accessory": "minecraft:peony"
+  },
+  {
+    "biome": "minecraft:dripstone_caves",
+    "base": "minecraft:dripstone_block",
+    "accessory": "minecraft:pointed_dripstone"
+  },
+  {
+    "biome": "minecraft:basalt_deltas",
+    "base": "minecraft:basalt",
+    "accessory": "minecraft:magma_block"
+  },
+  {
+    "biome": "minecraft:ice_spikes",
+    "base": "minecraft:blue_ice",
+    "accessory": "minecraft:packed_ice"
+  },
+  {
+    "biome": "minecraft:frozen_peaks",
+    "base": "minecraft:packed_ice",
+    "accessory": "minecraft:blue_ice"
+  },
+  {
+    "biome": "minecraft:crimson_forest",
+    "base": "minecraft:crimson_nylium",
+    "accessory": "minecraft:crimson_fungus"
+  },
+  {
+    "biome": "minecraft:dark_forest",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:dark_oak_sapling"
+  },
+  {
+    "biome": "minecraft:lush_caves",
+    "base": "minecraft:moss_block",
+    "accessory": "minecraft:flowering_azalea"
+  },
+  {
+    "biome": "minecraft:old_growth_spruce_taiga",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:dark_oak_sapling"
+  },
+  {
+    "biome": "minecraft:deep_dark",
+    "base": "minecraft:sculk_catalyst",
+    "accessory": "minecraft:sculk_shrieker"
+  },
+  {
+    "biome": "minecraft:frozen_river",
+    "base": "minecraft:ice"
+  },
+  {
+    "biome": "minecraft:lukewarm_ocean",
+    "base": "minecraft:bubble_coral_block",
+    "accessory": "minecraft:water"
+  },
+  {
+    "biome": "minecraft:warm_ocean",
+    "base": "minecraft:brain_coral_block",
+    "accessory": "minecraft:water"
+  },
+  {
+    "biome": "minecraft:mushroom_fields",
+    "base": "minecraft:mycelium",
+    "accessory": "minecraft:red_mushroom"
+  },
+  {
+    "biome": "minecraft:forest",
+    "base": "minecraft:podzol",
+    "accessory": "minecraft:spruce_sapling"
+  },
+  {
+    "biome": "minecraft:end_midlands",
+    "base": "minecraft:end_stone",
+    "accessory": "minecraft:chorus_flower"
+  },
+  {
+    "biome": "minecraft:windswept_forest",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:raw_iron_block"
+  },
+  {
+    "biome": "minecraft:deep_ocean",
+    "base": "mcskyblock:static_gravel",
+    "accessory": "minecraft:dried_kelp_block"
+  },
+  {
+    "biome": "minecraft:sunflower_plains",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:sunflower"
+  },
+  {
+    "biome": "minecraft:stony_peaks",
+    "base": "minecraft:andesite",
+    "accessory": "minecraft:calcite"
+  },
+  {
+    "biome": "minecraft:stony_shore",
+    "base": "mcskyblock:static_sand",
+    "accessory": "minecraft:stone"
+  },
+  {
+    "biome": "minecraft:nether_wastes",
+    "base": "minecraft:netherrack",
+    "accessory": "minecraft:brown_mushroom"
+  },
+  {
+    "biome": "minecraft:flower_forest",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:lilac"
+  },
+  {
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "base": "minecraft:fire_coral_block",
+    "accessory": "minecraft:water"
+  },
+  {
+    "biome": "minecraft:old_growth_birch_forest",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:dark_oak_sapling"
+  },
+  {
+    "biome": "minecraft:desert",
+    "base": "minecraft:sandstone",
+    "accessory": "minecraft:cactus"
+  },
+  {
+    "biome": "minecraft:snowy_taiga",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:spruce_sapling"
+  },
+  {
+    "biome": "minecraft:beach",
+    "base": "mcskyblock:static_sand",
+    "accessory": "minecraft:sugar_cane"
+  },
+  {
+    "biome": "minecraft:grove",
+    "base": "minecraft:snow_block",
+    "accessory": "minecraft:spruce_sapling"
+  },
+  {
+    "biome": "minecraft:deep_frozen_ocean",
+    "base": "minecraft:packed_ice"
+  },
+  {
+    "biome": "minecraft:river",
+    "base": "mcskyblock:static_sand",
+    "fluid": "minecraft:water"
+  },
+  {
+    "biome": "minecraft:old_growth_pine_taiga",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:dark_oak_sapling"
+  },
+  {
+    "biome": "minecraft:deep_cold_ocean",
+    "base": "mcskyblock:static_gravel",
+    "accessory": "minecraft:dried_kelp_block"
+  },
+  {
+    "biome": "minecraft:windswept_gravelly_hills",
+    "base": "mcskyblock:static_gravel",
+    "accessory": "minecraft:gravel"
+  },
+  {
+    "biome": "minecraft:snowy_plains",
+    "base": "minecraft:snow_block",
+    "accessory": "minecraft:snow"
+  },
+  {
+    "biome": "minecraft:end_highlands",
+    "base": "minecraft:end_stone",
+    "accessory": "minecraft:chorus_flower"
+  },
+  {
+    "biome": "minecraft:jagged_peaks",
+    "base": "minecraft:ice",
+    "accessory": "minecraft:stone"
+  },
+  {
+    "biome": "minecraft:eroded_badlands",
+    "base": "minecraft:red_terracotta",
+    "accessory": "minecraft:dead_bush"
+  },
+  {
+    "biome": "minecraft:bamboo_jungle",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:bamboo"
+  },
+  {
+    "biome": "minecraft:plains",
+    "base": "minecraft:grass_block",
+    "fluid": "minecraft:water",
+    "accessory": "minecraft:oak_sapling"
+  },
+  {
+    "biome": "minecraft:end_barrens",
+    "base": "minecraft:end_stone",
+    "accessory": "minecraft:chorus_flower"
+  },
+  {
+    "biome": "minecraft:small_end_islands",
+    "base": "minecraft:void"
+  },
+  {
+    "biome": "minecraft:meadow",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:bee_nest"
+  },
+  {
+    "biome": "minecraft:the_end",
+    "base": "minecraft:void"
+  },
+  {
+    "biome": "minecraft:snowy_beach",
+    "base": "mcskyblock:static_sand",
+    "accessory": "minecraft:snow"
+  },
+  {
+    "biome": "minecraft:sparse_jungle",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:jungle_sapling"
+  },
+  {
+    "biome": "minecraft:jungle",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:jungle_sapling"
+  },
+  {
+    "biome": "minecraft:snowy_slopes",
+    "base": "minecraft:snow_block",
+    "accessory": "minecraft:snow"
+  },
+  {
+    "biome": "minecraft:mangrove_swamp",
+    "base": "minecraft:muddy_mangrove_roots",
+    "accessory": "minecraft:potted_mangrove_propagule"
+  },
+  {
+    "biome": "minecraft:birch_forest",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:birch_sapling"
+  },
+  {
+    "biome": "minecraft:ocean",
+    "base": "minecraft:clay",
+    "accessory": "minecraft:water"
+  },
+  {
+    "biome": "minecraft:cold_ocean",
+    "base": "mcskyblock:static_gravel",
+    "accessory": "minecraft:dried_kelp_block"
+  },
+  {
+    "biome": "minecraft:warped_forest",
+    "base": "minecraft:warped_nylium",
+    "accessory": "minecraft:warped_fungus"
+  },
+  {
+    "biome": "minecraft:soul_sand_valley",
+    "base": "minecraft:soul_soil",
+    "accessory": "minecraft:bone_block"
+  },
+  {
+    "biome": "minecraft:badlands",
+    "base": "minecraft:terracotta",
+    "accessory": "minecraft:dead_bush"
+  },
+  {
+    "biome": "minecraft:windswept_hills",
+    "base": "minecraft:grass_block",
+    "accessory": "minecraft:raw_copper_block"
+  },
+  {
+    "biome": "minecraft:windswept_savanna",
+    "base": "minecraft:coarse_dirt",
+    "accessory": "minecraft:acacia_sapling"
+  },
+  {
+    "biome": "minecraft:wooded_badlands",
+    "base": "minecraft:orange_terracotta",
+    "accessory": "minecraft:oak_sapling"
+  }
+]

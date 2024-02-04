@@ -237,4 +237,9 @@ ServerEvents.recipes(event => {
     event.recipes.create.pressing('gtceu:bronze_plate', 'gtceu:bronze_ingot');
   
     event.replaceInput({id: 'enderchests:ender_pouch'}, 'minecraft:leather', 'gtceu:carbon_fiber_plate');
+
+    
+
+    
+
 });

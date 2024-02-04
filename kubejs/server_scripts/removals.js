@@ -66,8 +66,6 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'mysticaladaptations'});
     event.remove({ mod: 'mobilebeacon'});
     event.remove({ mod: 'extendedcrafting'});
-    event.remove({ mod: 'powersuits'});
-    event.remove({ mod: 'numina'});
     event.remove({ mod: 'sgjourney'});
     event.remove({ mod: 'jetboots'});
 

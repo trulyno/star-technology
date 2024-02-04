@@ -5,4 +5,4 @@ minecraft:amplified
 minecraft:single_biome_surface
 minecraft:flat
 minecraft:debug_all_block_states
-skyblockbuilder:skyblock
+mcskyblock:skyblock
