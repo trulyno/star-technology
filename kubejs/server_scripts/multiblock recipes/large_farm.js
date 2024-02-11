@@ -27,6 +27,7 @@ ServerEvents.recipes(event => {
             .chancedInput('minecraft:bone_meal', 2500, 0)
             .itemOutputs(`32x ${crop[i]}`)
             .chancedOutput(seed[i], 5000, 0)
+            .circuit(1)
             .duration(140);
 
         event.recipes.gtceu.large_farm(`${crop[i]}_harvest_with_compost`)
@@ -34,6 +35,7 @@ ServerEvents.recipes(event => {
             .chancedInput('thermal:compost', 2500, 0)
             .itemOutputs(`48x ${crop[i]}`)
             .chancedOutput(seed[i], 5000, 0)
+            .circuit(2)
             .duration(100);
 
         event.recipes.gtceu.large_farm(`${crop[i]}_harvest_with_fertilizer`)
@@ -41,6 +43,7 @@ ServerEvents.recipes(event => {
             .chancedInput('gtceu:fertilizer', 2500, 0)
             .itemOutputs(`64x ${crop[i]}`)
             .chancedOutput(seed[i], 5000, 0)
+            .circuit(3)
             .duration(40);
     }
 });

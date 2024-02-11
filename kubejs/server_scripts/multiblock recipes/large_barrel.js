@@ -101,4 +101,5 @@ ServerEvents.recipes(event => {
     concreteRecipe(event, "red");
     concreteRecipe(event, "white");
     concreteRecipe(event, "yellow");
+    concreteRecipe(event, "pink");
 });
