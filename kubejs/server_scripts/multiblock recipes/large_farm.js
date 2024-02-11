@@ -20,6 +20,7 @@ ServerEvents.recipes(event => {
             .notConsumable(`8x ${seed[i]}`)
             .itemOutputs(`16x ${crop[i]}`)
             .chancedOutput(seed[i], 5000, 0)
+            .circuit(0)
             .duration(200);
 
         event.recipes.gtceu.large_farm(`${crop[i]}_harvest_with_bone_meal`)
