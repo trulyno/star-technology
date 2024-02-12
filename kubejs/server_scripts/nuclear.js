@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         R: 'gtceu:hv_sensor',
         C: '#gtceu:circuits/ev',
         F: 'gtceu:stainless_steel_frame',
-        D: 'gtceu:steel_double_plate'
+        D: 'gtceu:double_steel_plate'
     });
 
     event.shaped(Item.of('gtceu:nuclear_turbine'), [

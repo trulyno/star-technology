@@ -652,7 +652,7 @@ ServerEvents.recipes(event => {
         'EHE',
         'CSC'
     ], {
-        P: 'gtceu:invar_double_plate',
+        P: 'gtceu:double_invar_plate',
         S: '#gtceu:circuits/hv',
         E: 'gtceu:mv_emitter',
         H: 'gtceu:heatproof_machine_casing',
@@ -664,7 +664,7 @@ ServerEvents.recipes(event => {
         'EHE',
         'CAC'
     ], {
-        P: 'gtceu:stainless_steel_double_plate',
+        P: 'gtceu:double_stainless_steel_plate',
         A: '#gtceu:circuits/ev',
         S: 'gtceu:hv_sensor',
         E: 'gtceu:hv_emitter',

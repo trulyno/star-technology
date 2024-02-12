@@ -2,7 +2,7 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('cobbleworks')
-        .itemInputs('gtceu:iv_machine_hull', '2x #gtceu:circuits/iv', '2x gtceu:maraging_steel_300_double_plate' ,'4x gtceu:tungsten_carbide_gear')
+        .itemInputs('gtceu:iv_machine_hull', '2x #gtceu:circuits/iv', '2x gtceu:double_maraging_steel_300_plate' ,'4x gtceu:tungsten_carbide_gear')
         .itemOutputs('gtceu:cobbleworks')
         .duration(1200)
         .EUt(1240);
