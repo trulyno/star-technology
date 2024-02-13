@@ -283,6 +283,17 @@ StartupEvents.registry('block', event => {
         .textureOverrideRenderer('minecraft:block/cube_all',
         { 'all': new ResourceLocation('kubejs', 'block/casings/casing-inconel-625') });
 
+    event.create('wood_casing', 'gtceu:renderer')
+        .displayName('Treatedwood Reinforced Casing')
+        .hardness(5)
+        .resistance(1)
+        .material('wood')
+        .requiresTool(true)
+        .tagBlock("mineable/axe")
+        .tagBlock('minecraft:needs_stone_tool')
+        .textureOverrideRenderer('minecraft:block/cube_all',
+        { 'all': new ResourceLocation('kubejs', 'block/casings/casing-wood')});
+
     // Custom Coils
     event.create('zalloy_coil_block', 'gtceu:coil')
         .temperature(13499)
@@ -305,4 +316,19 @@ StartupEvents.registry('block', event => {
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
         .textureAll('kubejs:block/casings/laser_casing');
+
+    // Meshblock for Kinetic Sieve
+
+    event.create('meshblock')
+        .displayName('Treatedwood Reinforced Mesh')
+        .hardness(2)
+        .resistance(2)
+        .material('wood')
+        .transparent(true)
+        .defaultTranslucent() 
+        .requiresTool(false)
+        .tagBlock("mineable/axe")
+        .tagBlock('minecraft:needs_stone_tool')
+        .textureAll('kubejs:block/multiblock/meshblock');
+
 });
