@@ -1389,13 +1389,14 @@ materialRegistry(event => {
 
     event.create('disodium_salt_of_hydroquinone')
         .dust()
-        .color(0xf2f2ff)
+        .components('6x carbon','4x hydrogen','2x oxygen','2x sodium')
+        .color(0xeaeaf9)
         .flags(no_decomp);
 
     event.create('hydroquinone')
         .dust()
         .components('6x carbon','6x hydrogen','2x oxygen')
-        .color(0xf2f2ff);
+        .color(0xf9f9ff);
 
     event.create('carbon_acid')
         .gas()
@@ -1410,7 +1411,7 @@ materialRegistry(event => {
     event.create('4_fluorobenzoyl_chloride')
         .fluid()
         .components('7x carbon','4x hydrogen','1x chlorine','1x fluorine','1x oxygen')
-        .color(0xffffe0);
+        .color(0xfffff0);
     
     event.create('benzoyl_chloride')
         .fluid()
@@ -1420,12 +1421,7 @@ materialRegistry(event => {
     event.create('benzotrichloride')
         .fluid()
         .components('7x carbon','5x hydrogen','3x chlorine')
-        .color(0xfff8dc);
-
-    event.create('toulene')
-        .fluid()
-        .components('6x carbon','5x hydrogen','1x methane')
-        .color(0x322a18);
+        .color(0xddd8bc);
 
     event.create('44_difluorobenzophenone') //naming like this: 4_4_di... will make kubejs go error to annoy you :)
         .dust()
@@ -1437,6 +1433,7 @@ materialRegistry(event => {
         .polymer()
         .components('19x carbon','12x hydrogen','3x oxygen') 
         .color(0xccbba7)
-        .flags(no_decomp);
-
+        .flags(no_decomp)
+        .flags(foil, plates, ring);
+    
 });
