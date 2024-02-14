@@ -226,5 +226,20 @@
     "material.gtceu.benzoyl_chloride": "Benzoyl Chloride",
     "material.gtceu.benzotrichloride": "Benzotrichloride",
     "material.gtceu.44_difluorobenzophenone": "4,4-Difluorobenzophenone",
-    "material.gtceu.polyether_ether_ketone": "Polyether Ether Ketone"
+    "material.gtceu.polyether_ether_ketone": "Polyether Ether Ketone",
+    "material.gtceu.diatron": "Diatron",
+    "material.gtceu.inferium_diatron": "Inferium Diatron",
+    "material.gtceu.prudentium_diatron": "Prudentium Diatron",
+    "material.gtceu.tertium_diatron": "Tertium Diatron",
+    "material.gtceu.imperium_diatron": "Imperium Diatron",
+    "material.gtceu.supremium_diatron": "Supremium Diatron",
+    "material.gtceu.awakened_supremium_diatron": "Awakened Supremium Diatron",
+    "material.gtceu.insanium_diatron": "Insanium Diatron",
+    "material.gtceu.inferium_steel": "Inferium Steel",
+    "material.gtceu.prudentium_steel": "Prudentium Steel",
+    "material.gtceu.tertium_steel": "Tertium Steel",
+    "material.gtceu.imperium_steel": "Imperium Steel",
+    "material.gtceu.supremium_steel": "Supremium Steel",
+    "material.gtceu.awakened_supremium_steel": "Awakened Supremium Steel",
+    "material.gtceu.insanium_steel": "Insanium Steel"
 }
