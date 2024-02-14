@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
     //effortless chemical plant recipe (UEV or UIV? or UXV?)
     
     event.recipes.gtceu.chemical_plant('effortless_PEEK_process')
-        .inputFluids('gtceu:benzene 3000','gtceu:methanol 1000','gtceu:propene 1000')
+        .inputFluids('gtceu:benzene 3000','gtceu:methanol 1000','gtceu:propene 1000','gtceu:oxygen 8000')
         .itemInputs('gtceu:soda_ash_dust')
         .outputFluids('gtceu:polyether_ether_ketone 1008','gtceu:acetone 1000','gtceu:carbon_acid 1000','minecraft:water 4000')
         .itemOutputs('gtceu:sodium_oxide_dust')
