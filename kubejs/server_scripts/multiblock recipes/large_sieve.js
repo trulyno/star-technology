@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
             '64x gtceu:crushed_emerald_ore', '64x gtceu:crushed_saltpeter_ore', '64x gtceu:crushed_ruby_ore', '64x gtceu:crushed_realgar_ore', 
             '64x gtceu:crushed_rock_salt_ore', '64x gtceu:crushed_salt_ore', '64x gtceu:crushed_certus_quartz_ore', '64x gtceu:crushed_sapphire_ore',
             '64x gtceu:crushed_monazite_ore', '64x gtceu:crushed_topaz_ore', '64x gtceu:crushed_yellow_garnet_ore', '64x gtceu:crushed_red_garnet_ore', 
-            '64x gtceu:crushed_apatite_ore', '64x gtceu:crushed_blue_topaz_ore', '64x gtceu:crushed_garnet_sand_ore')
+            '64x gtceu:crushed_apatite_ore', '64x gtceu:crushed_blue_topaz_ore', '64x gtceu:crushed_garnet_sand_ore','64x gtceu:crushed_zeolite_ore')
         .duration(400)
         .EUt(6400);
 

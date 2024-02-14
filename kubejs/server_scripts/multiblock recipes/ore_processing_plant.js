@@ -105,7 +105,6 @@ ServerEvents.recipes(event => {
     opp1(32, 'pentlandite', 'cobalt', 'iron', 'sulfur');
     opp1(32, 'rock_salt', 'salt', 'salt', 'borax');
     opp1(32, 'salt', 'rock_salt', 'rock_salt', 'borax');
-   
 
     opp1(128, 'monazite', 'thorium', 'thorium', 'neodymium');
     opp1(128, 'lepidolite', 'lithium', 'lithium', 'caesium');
@@ -125,10 +124,13 @@ ServerEvents.recipes(event => {
     opp1(512, 'tantalite', 'manganese', 'niobium', 'niobium');
     opp1(512, 'pollucite', 'caesium', 'aluminium', 'aluminium');
 
+
     opp1(2048, 'cooperite', 'palladium', 'nickel', 'nickel');
     opp1(2048, 'bastnasite', 'neodymium', 'neodymium', 'rare_earth');
     opp1(2048, 'tungstate', 'silver', 'manganese', 'lithium');
     opp1(2048, 'scheelite', 'manganese', 'manganese', 'molybdenum');
+
+    opp1(2048, 'zeolite', 'calcium', 'aluminium', 'silicon');
 
     function opp2(voltage, material, secondary, tertiary, quaternary) {
         event.recipes.gtceu.ore_processing_plant(`${material}_opp`)
@@ -157,5 +159,6 @@ ServerEvents.recipes(event => {
     opp2(8192, 'berzelianite', 'umangite', 'aguilarite', 'polybasite', 'berzelianite');
     opp2(8192, 'umangite', 'berzelianite', 'aguilarite', 'polybasite', 'umangite');
     opp2(8192, 'aguilarite', 'berzelianite', 'umangite', 'polybasite', 'aguilarite');
+    
 
 });

@@ -217,5 +217,14 @@
     "material.gtceu.rhexis": "Rhexis",
     "material.gtceu.chalyblux": "Chalyblux",
     "material.gtceu.copper_chloride": "Copper(I) Chloride",
-    "material.gtceu.cupric_chloride_solution": "Cupric Chloride Solution"
+    "material.gtceu.cupric_chloride_solution": "Cupric Chloride Solution",
+    "material.gtceu.disodium_salt_of_hydroquinone": "Disodium Salt of Hydroquinone",
+    "material.gtceu.hydroquinone": "Hydroquinone",
+    "material.gtceu.carbon_acid": "Carbon Acid",
+    "material.gtceu.fluorobenzene": "Fluorobenzene",
+    "material.gtceu.4_fluorobenzoyl_chloride": "4-Fluorobenzoyl Chloride",
+    "material.gtceu.benzoyl_chloride": "Benzoyl Chloride",
+    "material.gtceu.benzotrichloride": "Benzotrichloride",
+    "material.gtceu.44_difluorobenzophenone": "4,4-Difluorobenzophenone",
+    "material.gtceu.polyether_ether_ketone": "Polyether Ether Ketone"
 }
