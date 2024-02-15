@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
         .duration(120)
         .EUt(GTValues.VA[GTValues.HV]);
 
-    event.recipes.gtceu.large_chemical_reactor('PEEK_process')
+    event.recipes.gtceu.large_chemical_reactor('peek_process')
         .itemInputs('gtceu:44_difluorobenzophenone_dust','gtceu:disodium_salt_of_hydroquinone_dust')
         .outputFluids('gtceu:polyether_ether_ketone 1008')
         .itemOutputs('2x gtceu:sodium_fluoride_dust')
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
 
     //effortless chemical plant recipe (UEV or UIV? or UXV?)
     
-    event.recipes.gtceu.chemical_plant('effortless_PEEK_process')
+    event.recipes.gtceu.chemical_plant('effortless_peek_process')
         .inputFluids('gtceu:benzene 3000','gtceu:methanol 1000','gtceu:propene 1000','gtceu:oxygen 8000')
         .itemInputs('gtceu:soda_ash_dust')
         .outputFluids('gtceu:polyether_ether_ketone 1008','gtceu:acetone 1000','gtceu:carbon_acid 1000','minecraft:water 4000')
