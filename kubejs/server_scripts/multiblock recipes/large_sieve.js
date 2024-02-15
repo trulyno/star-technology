@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('64x gtceu:crushed_tin_ore', '64x gtceu:crushed_copper_ore', '64x gtceu:crushed_iron_ore', '64x gtceu:crushed_sphalerite_ore', '64x gtceu:crushed_magnetite_ore',
             '64x gtceu:crushed_chalcopyrite_ore', '64x gtceu:crushed_gold_ore', '64x gtceu:crushed_cassiterite_ore', '64x gtceu:crushed_silver_ore',
             '64x gtceu:crushed_pyrochlore_ore', '64x gtceu:crushed_vanadium_magnetite_ore', '64x gtceu:crushed_lepidolite_ore', '64x gtceu:crushed_pyrolusite_ore',
-            '64x gtceu:crushed_bauxite_ore', '64x gtceu:crushed_pollucite_ore', '64x gtceu:crushed_tantalite_ore',
+            '64x gtceu:crushed_bauxite_ore', '64x gtceu:crushed_pollucite_ore', '64x gtceu:crushed_tantalite_ore', '64x gtceu:crushed_rutile_ore',
             '64x gtceu:crushed_tungstate_ore', '64x gtceu:crushed_scheelite_ore')
         .duration(400)
         .EUt(6400);

@@ -83,6 +83,7 @@ ServerEvents.recipes(event => {
     sieve('diamond', 0.075, black, 'gtceu:crushed_ilmenite_ore', false);
     sieve('diamond', 0.18, gravel, 'gtceu:crushed_bauxite_ore', false);
     sieve('diamond', 0.02, gravel, 'gtceu:crushed_pollucite_ore', false);
+    sieve('diamond', 0.08, gravel, 'gtceu:crushed_rutile_ore', false);
 
     sieve('emerald', 0.15, gravel, 'gtceu:crushed_tungstate_ore', false);
     sieve('emerald', 0.125, gravel, 'gtceu:crushed_scheelite_ore', false);
