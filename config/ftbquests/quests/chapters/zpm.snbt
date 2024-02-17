@@ -197,6 +197,106 @@
 			x: 0.0d
 			y: 4.0d
 		}
+		{
+			dependencies: [
+				"7368E40ADB8E28EA"
+				"0761CA60F2636913"
+				"2E237496D12A9452"
+			]
+			id: "0D9E12B7F79A6B98"
+			tasks: [{
+				id: "3B7F721D01FC4F60"
+				item: "gtceu:polyether_ether_ketone_bucket"
+				type: "item"
+			}]
+			title: "PEEK Plastic"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7FF83553E5473A75"]
+			id: "2E237496D12A9452"
+			tasks: [{
+				id: "60A0A4120BE86C81"
+				item: "gtceu:disodium_salt_of_hydroquinone_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1B9A1FB92DD0CB54"]
+			id: "7FF83553E5473A75"
+			tasks: [{
+				id: "52056373D8B3A239"
+				item: "gtceu:hydroquinone_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"7C6B1DCC1103F05A"
+				"097481AFB40E6781"
+			]
+			id: "0761CA60F2636913"
+			tasks: [{
+				id: "74C6F82DA6FE8E91"
+				item: "gtceu:44_difluorobenzophenone_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1B9A1FB92DD0CB54"]
+			icon: "gtceu:fluorobenzene_bucket"
+			id: "097481AFB40E6781"
+			tasks: [{
+				id: "36C3B7F3537ADF2F"
+				title: "Fluorobenzene"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0CE28F687171C3D2"]
+			icon: "gtceu:4_fluorobenzoyl_chloride_bucket"
+			id: "7C6B1DCC1103F05A"
+			tasks: [{
+				id: "6FE27DDF54A61C7E"
+				title: "4-Fluorobenzoyl Chloride"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3D30FB6A7305E76F"]
+			icon: "gtceu:benzoyl_chloride_bucket"
+			id: "0CE28F687171C3D2"
+			tasks: [{
+				id: "60D68B4E965E8057"
+				title: "Benzoyl Chloride"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1B9A1FB92DD0CB54"]
+			icon: "gtceu:benzotrichloride_bucket"
+			id: "3D30FB6A7305E76F"
+			tasks: [{
+				id: "4AE6847DE556F90D"
+				title: "Benzotrichloride"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
 	]
 	title: "ZPM"
 }

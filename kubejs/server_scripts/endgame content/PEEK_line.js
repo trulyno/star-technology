@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.IV]);
     
     event.recipes.gtceu.chemical_plant('benzotrichloride_process') //needs light in reaction, so why not chemical plant?
-        .inputFluids('gtceu:toulene 1000','gtceu:chlorine 3000')
+        .inputFluids('gtceu:toluene 1000','gtceu:chlorine 3000')
         .outputFluids('gtceu:benzotrichloride 1000','gtceu:hydrogen 3000')
         .duration(50)
         .EUt(GTValues.VHA[GTValues.ZPM]);
