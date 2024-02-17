@@ -241,5 +241,7 @@
     "material.gtceu.imperium_steel": "Imperium Steel",
     "material.gtceu.supremium_steel": "Supremium Steel",
     "material.gtceu.awakened_supremium_steel": "Awakened Supremium Steel",
-    "material.gtceu.insanium_steel": "Insanium Steel"
+    "material.gtceu.insanium_steel": "Insanium Steel",
+    "block.gtceu.kinetic_sieve": "Kinetic Sieve",
+    "gtcey.kinetic_sieve": "Kinetic Sieve"
 }
