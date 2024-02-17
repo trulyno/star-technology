@@ -14,6 +14,12 @@
 				"1C2D07E0CBA206EC"
 			]
 			id: "27C811CBD873B7E3"
+			rewards: [{
+				count: 2
+				id: "51EA577C8FB00CE3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -32,6 +38,11 @@
 			]
 			description: ["This block transforms EU into RF, but you can reverse this conversion by using a mallet on it"]
 			id: "5A25ED8F7222CEC5"
+			rewards: [{
+				id: "48E8EC21F60B11A3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "60A0B363D4EFBD01"
@@ -49,6 +60,12 @@
 				"6EA934E702391338"
 			]
 			id: "52AFE5CDFB1C3CFF"
+			rewards: [{
+				count: 4
+				id: "50D1A2088DC39610"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "First LV Circuit"
@@ -63,6 +80,11 @@
 		{
 			dependencies: ["0BA9FC3D83C62E2A"]
 			id: "0CB9D5046A480F33"
+			rewards: [{
+				id: "6F65D5010B4462C9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6E676637B81A0926"
 				item: "gtceu:resistor"
@@ -74,6 +96,11 @@
 		{
 			dependencies: ["0BA9FC3D83C62E2A"]
 			id: "03AA8F4B7056180F"
+			rewards: [{
+				id: "190391B8BA5782A0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3328A49E8FC1D03B"
 				item: "gtceu:resin_printed_circuit_board"
@@ -85,6 +112,11 @@
 		{
 			dependencies: ["1C2D07E0CBA206EC"]
 			id: "6B255027F843D56B"
+			rewards: [{
+				id: "3D76D4119A4738E4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "714EBE61E5F53B03"
 				item: "gtceu:vacuum_tube"
@@ -99,6 +131,11 @@
 				"5D9A9B22F24A2BE3"
 			]
 			id: "6EA934E702391338"
+			rewards: [{
+				id: "7AF3AFDA74234179"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4CCAC09A72C2F3D6"
 				item: "gtceu:red_alloy_single_cable"
@@ -110,6 +147,11 @@
 		{
 			dependencies: ["47DCC1226738BD5B"]
 			id: "61A2E0C369FE072D"
+			rewards: [{
+				id: "6A97C7E685416825"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3D6B9FC9E1206303"
 				item: "gtceu:tin_single_cable"
@@ -121,6 +163,11 @@
 		{
 			dependencies: ["790FD3E20F554EBA"]
 			id: "47DCC1226738BD5B"
+			rewards: [{
+				id: "14F097A5998EE32A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5737B86E9141AE5F"
 				item: "gtceu:rubber_plate"
@@ -133,6 +180,11 @@
 			dependencies: ["591DED14FE286BD7"]
 			description: ["This the LV Superconductor"]
 			id: "4542E3E43C6C21A3"
+			rewards: [{
+				id: "292F3BFFFB7B2164"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [{
 				id: "309C6188726F8FB4"
@@ -145,6 +197,11 @@
 		{
 			dependencies: ["462E016CCFCD4DAA"]
 			id: "0478033E13CF24CD"
+			rewards: [{
+				id: "0AEDE58A2EC41889"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "58D3EA558062D0E2"
 				item: "thermal:slime_mushroom_spores"
@@ -156,6 +213,11 @@
 		{
 			dependencies: ["0478033E13CF24CD"]
 			id: "4D272E89B95D35F9"
+			rewards: [{
+				id: "4ADBA573141993EE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2B7A7A3AD78A7A3A"
 				item: "minecraft:slime_ball"
@@ -167,6 +229,11 @@
 		{
 			dependencies: ["4D272E89B95D35F9"]
 			id: "0BA9FC3D83C62E2A"
+			rewards: [{
+				id: "0F60637203DB86E8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "32B8705D002560AC"
 				item: "gtceu:sticky_resin"
@@ -179,6 +246,12 @@
 			dependencies: ["52AFE5CDFB1C3CFF"]
 			description: ["This is a very easy way of generating RF for LV machines"]
 			id: "55B04DE4E7DE8E34"
+			rewards: [{
+				count: 2
+				id: "603B09EF487FFCDA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "0E2A9DCF0E08D43E"
@@ -197,6 +270,11 @@
 		{
 			dependencies: ["55B04DE4E7DE8E34"]
 			id: "00C1E60AC07CFEF5"
+			rewards: [{
+				id: "061395B1BF839403"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "206B8A98B78B4AF2"
 				item: "create_new_age:copper_wire"
@@ -209,6 +287,11 @@
 			dependencies: ["00C1E60AC07CFEF5"]
 			id: "526E148C3F82F16C"
 			optional: true
+			rewards: [{
+				id: "4F2E516C22524ACD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5B7D7E4D42CAE77B"
 				item: "create_new_age:overcharged_iron_wire"
@@ -221,6 +304,11 @@
 			dependencies: ["526E148C3F82F16C"]
 			id: "6FC6D55D5CCDFA56"
 			optional: true
+			rewards: [{
+				id: "265FF0520D21E93C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6446B2C803C63EF2"
 				item: "create_new_age:overcharged_golden_wire"
@@ -233,6 +321,11 @@
 			dependencies: ["6FC6D55D5CCDFA56"]
 			id: "23F7257C22D9C0E1"
 			optional: true
+			rewards: [{
+				id: "1730BE95DC856C0F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "062B4AA3F68EEAC7"
 				item: "create_new_age:overcharged_diamond_wire"
@@ -245,6 +338,11 @@
 			dependencies: ["525A37425A3F17C5"]
 			id: "377246C11DD320DA"
 			optional: true
+			rewards: [{
+				id: "1D76ADC7A3691959"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "34646766963E2B91"
 				item: "create_new_age:redstone_magnet"
@@ -257,6 +355,11 @@
 			dependencies: ["377246C11DD320DA"]
 			id: "40D24F3F6CF56415"
 			optional: true
+			rewards: [{
+				id: "0C9B60CB0810A63F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "52C7FA392A46A9F8"
 				item: "create_new_age:layered_magnet"
@@ -269,6 +372,11 @@
 			dependencies: ["40D24F3F6CF56415"]
 			id: "3307B565157FA498"
 			optional: true
+			rewards: [{
+				id: "696198C6A1B42C84"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7CD933FC3E81FC2F"
 				item: "create_new_age:fluxuated_magnetite"
@@ -280,6 +388,11 @@
 		{
 			dependencies: ["55B04DE4E7DE8E34"]
 			id: "7F72477A4A1DD37A"
+			rewards: [{
+				id: "638737C6DB0E5EBF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1E2FC1BC16B6F135"
 				item: "create_new_age:energiser_t1"
@@ -292,6 +405,11 @@
 			dependencies: ["7F72477A4A1DD37A"]
 			id: "3189CA5F5A599ED2"
 			optional: true
+			rewards: [{
+				id: "2EA069CE409AA9B0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3A34A06EC9A1020D"
 				item: "create_new_age:energiser_t2"
@@ -304,6 +422,11 @@
 			dependencies: ["3189CA5F5A599ED2"]
 			id: "6B663F8DB4369E90"
 			optional: true
+			rewards: [{
+				id: "02E49FE9D31AA41D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1E6A8AF807AD18AF"
 				item: "create_new_age:energiser_t3"
@@ -315,6 +438,11 @@
 		{
 			dependencies: ["308D2B3E4E93E626"]
 			id: "69A67DFA27D75D4F"
+			rewards: [{
+				id: "0CB419BF1B61CD71"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2FEAF74C7503F08C"
 				item: "gtceu:lv_electric_motor"
@@ -326,6 +454,11 @@
 		{
 			dependencies: ["69A67DFA27D75D4F"]
 			id: "3FEF201811BE4163"
+			rewards: [{
+				id: "754DF2FCDC20F01E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "67A0696D03F01A0F"
 				item: "gtceu:lv_electric_piston"
@@ -337,6 +470,11 @@
 		{
 			dependencies: ["3FEF201811BE4163"]
 			id: "1769C41D27095E83"
+			rewards: [{
+				id: "0965A9E122148B9C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7F4750B71A84C5A3"
 				item: "gtceu:lv_robot_arm"
@@ -348,6 +486,11 @@
 		{
 			dependencies: ["69A67DFA27D75D4F"]
 			id: "014F4B8FD9AD55F7"
+			rewards: [{
+				id: "52C33A9273E3AAD0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "719A462802965BBE"
 				item: "gtceu:lv_conveyor_module"
@@ -359,6 +502,11 @@
 		{
 			dependencies: ["69A67DFA27D75D4F"]
 			id: "1963F7EE14C490D0"
+			rewards: [{
+				id: "351005CDC2D4DD95"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2CF294080FC0EC24"
 				item: "gtceu:lv_electric_pump"
@@ -373,6 +521,11 @@
 				"1769C41D27095E83"
 			]
 			id: "300CC62C2E30EE26"
+			rewards: [{
+				id: "25A5A0A66E0B09AD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "65F604F7F73C06F6"
 				item: "gtceu:lv_assembler"
@@ -384,6 +537,12 @@
 		{
 			dependencies: ["300CC62C2E30EE26"]
 			id: "6E4B3F7B1624CA13"
+			rewards: [{
+				count: 2
+				id: "620B19AF64208F9C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "301A3D45EB0D7C92"
 				item: "exnihilosequentia:flint_mesh"
@@ -395,6 +554,11 @@
 		{
 			dependencies: ["27C811CBD873B7E3"]
 			id: "4189D7638919CF96"
+			rewards: [{
+				id: "5D97E16A175E114A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4BBB01E8C9812C14"
 				item: "gtceu:lv_alloy_smelter"
@@ -406,6 +570,11 @@
 		{
 			dependencies: ["69A67DFA27D75D4F"]
 			id: "31CED9BCB2D31370"
+			rewards: [{
+				id: "265250D15717ACDD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4B984EFC876FF8B2"
 				item: "gtceu:lv_wiremill"
@@ -417,6 +586,11 @@
 		{
 			dependencies: ["69A67DFA27D75D4F"]
 			id: "06364BB267D849F1"
+			rewards: [{
+				id: "09452E08C5933207"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "47D721024372F47C"
 				item: "gtceu:lv_chemical_reactor"
@@ -428,6 +602,11 @@
 		{
 			dependencies: ["27C811CBD873B7E3"]
 			id: "308D2B3E4E93E626"
+			rewards: [{
+				id: "098FF2A7CE6E5F07"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "08E60843B46EFA9E"
 				item: "gtceu:lv_polarizer"
@@ -439,6 +618,11 @@
 		{
 			dependencies: ["3FEF201811BE4163"]
 			id: "237B328898882C5E"
+			rewards: [{
+				id: "06F42F3190E8FE4F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5A734006F234D1B8"
 				item: "gtceu:lv_bender"
@@ -450,6 +634,11 @@
 		{
 			dependencies: ["3FEF201811BE4163"]
 			id: "24E6CC11C92E2FB3"
+			rewards: [{
+				id: "1523C8945CF92F40"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "382764E41B47039F"
 				item: "gtceu:lv_lathe"
@@ -461,6 +650,11 @@
 		{
 			dependencies: ["3FEF201811BE4163"]
 			id: "04CA00B950D83892"
+			rewards: [{
+				id: "3AF284E443050E53"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4E9FFC1D6DFCB6CC"
 				item: "gtceu:lv_macerator"
@@ -472,6 +666,11 @@
 		{
 			dependencies: ["1963F7EE14C490D0"]
 			id: "2EC2F46E06FF9950"
+			rewards: [{
+				id: "6BC3349E644D9F9D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "59E5DD692729083E"
 				item: "gtceu:lv_extractor"
@@ -483,6 +682,11 @@
 		{
 			dependencies: ["1963F7EE14C490D0"]
 			id: "1288306C2B655CE0"
+			rewards: [{
+				id: "3C4F0030F2F5D264"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1E24872D16D58904"
 				item: "gtceu:lv_fluid_solidifier"
@@ -494,6 +698,11 @@
 		{
 			dependencies: ["3FEF201811BE4163"]
 			id: "41B6E5D61B7F043F"
+			rewards: [{
+				id: "52C62B0D8399D692"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3CB06D6DA60ADA68"
 				item: "gtceu:lv_forge_hammer"
@@ -505,6 +714,11 @@
 		{
 			dependencies: ["69A67DFA27D75D4F"]
 			id: "4FBEFFE7B92E35B7"
+			rewards: [{
+				id: "209AE0DBFD1B0BF0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1343B67ECAA77038"
 				item: "gtceu:lv_centrifuge"
@@ -519,6 +733,11 @@
 				"6E4B3F7B1624CA13"
 			]
 			id: "49498C41CA45236C"
+			rewards: [{
+				id: "3DF99EAB9DAEB841"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1E971A11F27CD423"
 				item: "gtceu:graphite_dust"
@@ -530,6 +749,11 @@
 		{
 			dependencies: ["4189D7638919CF96"]
 			id: "7B62606375AD371B"
+			rewards: [{
+				id: "34DF215FEECB8431"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "352AD1A01CC914AB"
 				item: {
@@ -552,6 +776,11 @@
 		{
 			dependencies: ["49498C41CA45236C"]
 			id: "64024DD15B5DADC9"
+			rewards: [{
+				id: "46123CAE71F07545"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "21DBF03BF56CC8FF"
 				item: "gtceu:lv_arc_furnace"
@@ -566,6 +795,11 @@
 				"56D0CEFDF40A05E4"
 			]
 			id: "7E750B9955FD62B7"
+			rewards: [{
+				id: "2E89D1C56316FE77"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2E6AEF6A0F7F6586"
 				item: "gtceu:tempered_glass"
@@ -577,6 +811,11 @@
 		{
 			dependencies: ["7E750B9955FD62B7"]
 			id: "21543739405B1F0E"
+			rewards: [{
+				id: "0C6F7231889FCC38"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "44B674F938FCA074"
 				item: "thermal:obsidian_glass"
@@ -588,6 +827,12 @@
 		{
 			dependencies: ["21543739405B1F0E"]
 			id: "265E8CC1A7020A5B"
+			rewards: [{
+				count: 2
+				id: "163461E5DFD7CF00"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7F2F14F5648253A9"
 				item: {
@@ -608,6 +853,11 @@
 		{
 			dependencies: ["5A25ED8F7222CEC5"]
 			id: "35997E4CBD9F51AF"
+			rewards: [{
+				id: "5256D987642E69B2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3C9D75358C704FA7"
 				item: "thermal:dynamo_stirling"
@@ -619,6 +869,39 @@
 		{
 			dependencies: ["27C811CBD873B7E3"]
 			id: "3073A4454F838179"
+			rewards: [
+				{
+					id: "309AC0F59C454F39"
+					item: {
+						Count: 1b
+						id: "create:schematic"
+						tag: {
+							Anchor: {
+								X: 0
+								Y: 0
+								Z: 0
+							}
+							Bounds: [
+								5
+								7
+								5
+							]
+							Deployed: 0b
+							File: "electrico_kinetic_factory.nbt"
+							Mirror: "NONE"
+							Owner: "trulyno"
+							Rotation: "NONE"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4590EB14C80E2DF3"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "1B6589856AD3AC3B"
 				item: "gtceu:electrico_kinetic_ore_factory"
@@ -630,6 +913,11 @@
 		{
 			dependencies: ["27C811CBD873B7E3"]
 			id: "158F516999A2699C"
+			rewards: [{
+				id: "1EB176704C582840"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7A70175C85D100C7"
 				item: "gtceu:lv_electrolyzer"
@@ -641,6 +929,11 @@
 		{
 			dependencies: ["3073A4454F838179"]
 			id: "480D897424EF8D14"
+			rewards: [{
+				id: "4E1F829347930507"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "652773EC86D3C049"
 				item: "gtceu:cobalt_dust"
@@ -652,6 +945,11 @@
 		{
 			dependencies: ["1963F7EE14C490D0"]
 			id: "18484AE6E55278CA"
+			rewards: [{
+				id: "33CA6F6D55284CD0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5F7C7ED4EA50F113"
 				item: "gtceu:lv_gas_collector"
@@ -663,6 +961,11 @@
 		{
 			dependencies: ["69A67DFA27D75D4F"]
 			id: "4B7245BF43A01BAD"
+			rewards: [{
+				id: "6E6DE98B5AC135D6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "66F1A8BCA7FE04B1"
 				item: "gtceu:lv_mixer"
@@ -674,6 +977,11 @@
 		{
 			dependencies: ["7088F83F73C1F722"]
 			id: "56D0CEFDF40A05E4"
+			rewards: [{
+				id: "205977886C0530D5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "286C19F052A76243"
@@ -686,6 +994,7 @@
 					type: "item"
 				}
 			]
+			title: "Oxygen and Nitrogen"
 			x: 16.0d
 			y: 0.0d
 		}
@@ -716,6 +1025,11 @@
 		{
 			dependencies: ["29A63CDD33D1069E"]
 			id: "2C5DA1896F275550"
+			rewards: [{
+				id: "29E0EA36FEACF23D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "77995E5CCF7AAC5D"
 				item: "gtceu:sulfuric_acid_bucket"
@@ -727,6 +1041,11 @@
 		{
 			dependencies: ["2C5DA1896F275550"]
 			id: "49984AE8EF94B9A0"
+			rewards: [{
+				id: "588A24DE6201CA7A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0E0062F2899EF7C7"
 				item: "gtceu:sodium_bisulfate_dust"
@@ -738,6 +1057,11 @@
 		{
 			dependencies: ["49984AE8EF94B9A0"]
 			id: "3184995EBA22F540"
+			rewards: [{
+				id: "0DC3F7EDDA1061E7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "octagon"
 			tasks: [{
 				id: "17A7B16E02144A7D"
@@ -750,6 +1074,11 @@
 		{
 			dependencies: ["49984AE8EF94B9A0"]
 			id: "1008CF0C59AE7056"
+			rewards: [{
+				id: "1CA49D79023EC676"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2B55A3FB81E2B08C"
 				item: "gtceu:hydrochloric_acid_bucket"
@@ -761,6 +1090,11 @@
 		{
 			dependencies: ["1008CF0C59AE7056"]
 			id: "63154C896DDB6F3A"
+			rewards: [{
+				id: "5327E20690D1632E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "octagon"
 			tasks: [{
 				id: "572A6E419091C9B2"
@@ -773,6 +1107,39 @@
 		{
 			dependencies: ["6E4B3F7B1624CA13"]
 			id: "0FCB10159A8E572F"
+			rewards: [
+				{
+					id: "13961B421A4E891E"
+					item: {
+						Count: 1b
+						id: "create:schematic"
+						tag: {
+							Anchor: {
+								X: 0
+								Y: 0
+								Z: 0
+							}
+							Bounds: [
+								3
+								4
+								3
+							]
+							Deployed: 0b
+							File: "ebf.nbt"
+							Mirror: "NONE"
+							Owner: "trulyno"
+							Rotation: "NONE"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6B7A677ADC782181"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "1221FFF2D9C09D1F"
 				item: "gtceu:electric_blast_furnace"
@@ -784,6 +1151,11 @@
 		{
 			dependencies: ["0FCB10159A8E572F"]
 			id: "62BB54F3EE1A0966"
+			rewards: [{
+				id: "6493D7D1A0F039C0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "octagon"
 			tasks: [{
 				id: "77404F87F878CAFD"
@@ -796,6 +1168,11 @@
 		{
 			dependencies: ["0FCB10159A8E572F"]
 			id: "156FCDF9DDCBD947"
+			rewards: [{
+				id: "2E95F5501808A81F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "octagon"
 			tasks: [{
 				id: "6BB6B9E8B3688749"
@@ -808,6 +1185,11 @@
 		{
 			dependencies: ["27C811CBD873B7E3"]
 			id: "6B1D70CD2D99D203"
+			rewards: [{
+				id: "5EDCB055B9FFAA5B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5D7B00D972527278"
 				item: "gtceu:lv_super_chest"
@@ -819,6 +1201,38 @@
 		{
 			dependencies: ["27C811CBD873B7E3"]
 			id: "041B9E334DAF4555"
+			rewards: [
+				{
+					id: "5A70C45DBCF314B7"
+					item: {
+						Count: 1b
+						id: "create:schematic"
+						tag: {
+							Anchor: {
+								X: 0
+								Y: 0
+								Z: 0
+							}
+							Bounds: [
+								5
+								4
+								5
+							]
+							Deployed: 0b
+							File: "primitive_alloy_smelter.nbt"
+							Mirror: "NONE"
+							Owner: "trulyno"
+							Rotation: "NONE"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1EBD672C9126EB5C"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "78AAFF63BD907B8B"
 				item: "gtceu:primitive_alloy_smelter"
@@ -830,6 +1244,39 @@
 		{
 			dependencies: ["27C811CBD873B7E3"]
 			id: "0897FECA3E66208F"
+			rewards: [
+				{
+					id: "262CA582CCBD172A"
+					item: {
+						Count: 1b
+						id: "create:schematic"
+						tag: {
+							Anchor: {
+								X: 0
+								Y: 0
+								Z: 0
+							}
+							Bounds: [
+								5
+								7
+								5
+							]
+							Deployed: 0b
+							File: "kinetic_ore_factory.nbt"
+							Mirror: "NONE"
+							Owner: "trulyno"
+							Rotation: "NONE"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "65E5CDAF864A470C"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7E38E4BE494ADCF5"
 				item: "gtceu:kinetic_ore_factory"
@@ -841,6 +1288,11 @@
 		{
 			dependencies: ["0897FECA3E66208F"]
 			id: "0FB5E8DA28421E24"
+			rewards: [{
+				id: "671A576A4CA23616"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5EEB457E43AFC887"
 				item: "minecraft:gold_ingot"
@@ -852,6 +1304,11 @@
 		{
 			dependencies: ["041B9E334DAF4555"]
 			id: "5D9A9B22F24A2BE3"
+			rewards: [{
+				id: "6D531BA83EC07B1E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "75DAAFD01EB6639B"
 				item: "gtceu:red_alloy_ingot"
@@ -866,6 +1323,11 @@
 				"041B9E334DAF4555"
 			]
 			id: "02FCF02FB80ECD2F"
+			rewards: [{
+				id: "36EAB953C7A65F75"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3ED9A18C8D115ACA"
 				item: "gtceu:invar_ingot"
@@ -880,6 +1342,11 @@
 				"5F4BEB467221AD84"
 			]
 			id: "591DED14FE286BD7"
+			rewards: [{
+				id: "377A51B4AEA59245"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "03A833B1DE0953A4"
 				item: "gtceu:soul_infused_ingot"
@@ -891,6 +1358,11 @@
 		{
 			dependencies: ["0897FECA3E66208F"]
 			id: "526B1E1D952E5F4E"
+			rewards: [{
+				id: "35EA1B1B636F8104"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "02D58C94AEE3FE89"
 				item: "gtceu:nickel_ingot"
@@ -902,6 +1374,12 @@
 		{
 			dependencies: ["02FCF02FB80ECD2F"]
 			id: "5CAA3E0391E2652E"
+			rewards: [{
+				count: 2
+				id: "53DC3BD4BB06E99E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "26C11F90C17DC798"
 				item: "thermal:device_rock_gen"
@@ -913,6 +1391,11 @@
 		{
 			dependencies: ["27682F534C4405E5"]
 			id: "5F4BEB467221AD84"
+			rewards: [{
+				id: "4B9228C534991975"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "307ACFDF5713D79A"
 				item: "thermal_extra:soul_sand_dust"
@@ -924,6 +1407,11 @@
 		{
 			dependencies: ["64730F02258B0BB8"]
 			id: "27682F534C4405E5"
+			rewards: [{
+				id: "0BAAD23E04BECCE5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "51C8A667996EDAD2"
 				item: "minecraft:soul_sand"
@@ -947,6 +1435,11 @@
 		{
 			dependencies: ["55B04DE4E7DE8E34"]
 			id: "525A37425A3F17C5"
+			rewards: [{
+				id: "3FF8EF2A89E8F7D8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "10D4012D96777CD2"
 				item: "create_new_age:magnetite_block"
@@ -958,6 +1451,11 @@
 		{
 			dependencies: ["480D897424EF8D14"]
 			id: "016FB5B376D17866"
+			rewards: [{
+				id: "6CC66B837E234F76"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3CF35A37B2345B45"
 				item: "gtceu:lv_cutter"

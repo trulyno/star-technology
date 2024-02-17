@@ -160,17 +160,6 @@
 			y: -0.5d
 		}
 		{
-			id: "50AF80B4A20370F4"
-			shape: "rsquare"
-			tasks: [{
-				id: "07A5BC0DBC6A3476"
-				item: "jecalculation:item_calculator_craft"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -0.5d
-		}
-		{
 			id: "3232A7A69C2905D9"
 			shape: "rsquare"
 			tasks: [{
@@ -207,7 +196,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 0.5d
+			y: -0.5d
 		}
 		{
 			id: "7CBFEE2EF25C562C"
@@ -337,7 +326,7 @@
 				}
 			]
 			x: -6.5d
-			y: 1.5d
+			y: 0.5d
 		}
 	]
 	title: "Quality Of Life"

@@ -1,0 +1,259 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "shop"
+	group: "28726466D987C725"
+	id: "37A847E834E8225E"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			dependencies: ["1C2D07E0CBA206EC"]
+			icon: "gtceu:steel_ingot"
+			id: "1E29A7DF2974C18E"
+			rewards: [{
+				count: 32
+				id: "72C1210B0FF8B50E"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "0521C92D4D191430"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "32 Steel"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6A6B53C8C4D8DC78"]
+			icon: "gtceu:bronze_ingot"
+			id: "0AA2CEFA3E1FEE71"
+			rewards: [{
+				count: 64
+				id: "6CCCAE40886CAB51"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "083137C16119556D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "64 Bronze"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1DF912172D11E3CF"]
+			icon: "minecraft:gravel"
+			id: "46578FE1EA5C98CB"
+			rewards: [{
+				count: 64
+				id: "7C46663B69116187"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "09F6535F44B6BFB6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "64 Gravel"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1BD95B9B7C22E139"]
+			icon: "minecraft:charcoal"
+			id: "5C7426EF069214CC"
+			rewards: [{
+				count: 64
+				id: "088C4EDDAFBE1146"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "3D366D137B9BDA8D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "64 Charcoal"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6F6BC9F29C31FB5E"]
+			icon: "minecraft:oak_log"
+			id: "694978682B1EF055"
+			rewards: [{
+				count: 64
+				id: "66629D7D04A3EDF1"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "374D58706F135B94"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "64 Logs"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["27C811CBD873B7E3"]
+			icon: "gtceu:lv_input_bus"
+			id: "3B34BEDF39E2156A"
+			rewards: [
+				{
+					count: 4
+					id: "2C224F1F69995EC6"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6742B4785E8930D0"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3B813B048B1DD94F"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "62C9F4C9ECFD6324"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "53EF65E0D2341CD8"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1BB7CF432E24ED1F"
+					item: "gtceu:duct_tape"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "1F4118539E566DE8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Bus/Hatch Pack"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["52AFE5CDFB1C3CFF"]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "46C8B2E63C5F0F9D"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "51C57E3B57BE26AF"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "178B6FEC06A5FFC8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "16 LV Circuits"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["62BB54F3EE1A0966"]
+			icon: "gtceu:aluminium_ingot"
+			id: "07857C610B0F7B5E"
+			rewards: [{
+				count: 32
+				id: "4E14AD657F3487A0"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 3L
+				id: "29A7CD2E337DCCD1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "32 Aluminium"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3184995EBA22F540"]
+			icon: {
+				Count: 1b
+				id: "gtceu:steel_fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 8000
+						FluidName: "gtceu:sodium_persulfate"
+					}
+				}
+			}
+			id: "42B07D5F22A06E33"
+			rewards: [{
+				count: 2
+				id: "4E2EA0E041834C7E"
+				item: {
+					Count: 1b
+					id: "gtceu:steel_fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 8000
+							FluidName: "gtceu:sodium_persulfate"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "228EDA21BF0B91E9"
+				item: { Count: 4b, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "Sodium Persulfate"
+			x: 1.5d
+			y: 0.5d
+		}
+	]
+	title: "Shop"
+}

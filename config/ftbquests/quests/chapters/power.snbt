@@ -878,6 +878,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["4D219BFDAB49076C"]
 			id: "4C9D66505AF82D34"
 			shape: "square"
 			tasks: [{
@@ -901,6 +902,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["1996BA6B166BE144"]
 			id: "11CE96B729527074"
 			shape: "square"
 			tasks: [{
