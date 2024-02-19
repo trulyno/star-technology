@@ -1135,6 +1135,7 @@
 		{
 			dependencies: ["2EEB000E7916D0D7"]
 			id: "1340997F0E979E1B"
+			optional: true
 			tasks: [{
 				id: "45F869A460C3649E"
 				item: "gtceu:nuclear_turbine"
