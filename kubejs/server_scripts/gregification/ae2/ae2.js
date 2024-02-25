@@ -77,25 +77,25 @@ ServerEvents.recipes(event => {
         .EUt(65);
 
     event.recipes.gtceu.forming_press('press_calculation')
-        .itemInputs('gtceu:stainless_steel_double_plate', 'ae2:certus_quartz_crystal')
+        .itemInputs('gtceu:double_stainless_steel_plate', 'ae2:certus_quartz_crystal')
         .itemOutputs('ae2:calculation_processor_press')
         .duration(300)
         .EUt(65);
 
     event.recipes.gtceu.forming_press('press_engineering')
-        .itemInputs('gtceu:stainless_steel_double_plate', 'minecraft:diamond')
+        .itemInputs('gtceu:double_stainless_steel_plate', 'minecraft:diamond')
         .itemOutputs('ae2:engineering_processor_press')
         .duration(300)
         .EUt(65);
 
     event.recipes.gtceu.forming_press('press_logic')
-        .itemInputs('gtceu:stainless_steel_double_plate', 'minecraft:gold_ingot')
+        .itemInputs('gtceu:double_stainless_steel_plate', 'minecraft:gold_ingot')
         .itemOutputs('ae2:logic_processor_press')
         .duration(300)
         .EUt(65);
 
     event.recipes.gtceu.forming_press('silicon_logic')
-        .itemInputs('gtceu:stainless_steel_double_plate', 'gtceu:silicon_dust')
+        .itemInputs('gtceu:double_stainless_steel_plate', 'gtceu:silicon_dust')
         .itemOutputs('ae2:silicon_press')
         .duration(300)
         .EUt(65);

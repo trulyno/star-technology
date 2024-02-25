@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         'CTC',
         ' C '
     ], {
-        C: 'gtceu:copper_double_plate',
+        C: 'gtceu:double_copper_plate',
         T: 'gtceu:tin_plate'
     });
 

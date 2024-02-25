@@ -1033,7 +1033,7 @@
 			id: "09B1DEBA1E9EBB61"
 			tasks: [{
 				id: "2D18E6D508FC9653"
-				item: "gtceu:tungstensteel_coil_block"
+				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
 			x: -9.0d
@@ -1135,6 +1135,7 @@
 		{
 			dependencies: ["2EEB000E7916D0D7"]
 			id: "1340997F0E979E1B"
+			optional: true
 			tasks: [{
 				id: "45F869A460C3649E"
 				item: "gtceu:nuclear_turbine"

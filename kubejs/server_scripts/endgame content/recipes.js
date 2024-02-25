@@ -2,7 +2,7 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_rotor_machine('crude_stargate_rod')
-        .itemInputs('gtceu:void_long_rod', '64x gtceu:weapon_grade_naquadah_foil', '64x gtceu:neutronium_foil', '64x gtceu:weapon_grade_naquadah_foil', '32x gtceu:neutronium_foil', '64x gtceu:weapon_grade_naquadah_foil', '32x gtceu:neutronium_foil', '64x gtceu:weapon_grade_naquadah_foil')
+        .itemInputs('gtceu:long_void_rod', '64x gtceu:weapon_grade_naquadah_foil', '64x gtceu:neutronium_foil', '64x gtceu:weapon_grade_naquadah_foil', '32x gtceu:neutronium_foil', '64x gtceu:weapon_grade_naquadah_foil', '32x gtceu:neutronium_foil', '64x gtceu:weapon_grade_naquadah_foil')
         .itemOutputs('kubejs:crude_stargate_rod')
         .duration(1600)
         .EUt(29000);
@@ -25,63 +25,63 @@ ServerEvents.recipes(event => {
 
     // runic pathay plating
     event.recipes.gtceu.runic_circuitry_assembling_station('pathway_count_1x')
-        .itemInputs('gtceu:naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:iron"}').strongNBT())
+        .itemInputs('gtceu:dense_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:iron"}').strongNBT())
         .itemOutputs('kubejs:runic_pathway_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(6000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('pathway_count_2x')
-        .itemInputs('gtceu:naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:copper"}').strongNBT())
+        .itemInputs('gtceu:dense_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:copper"}').strongNBT())
         .itemOutputs('2x kubejs:runic_pathway_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(6000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('pathway_count_3x')
-        .itemInputs('gtceu:naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:tin"}').strongNBT())
+        .itemInputs('gtceu:dense_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:tin"}').strongNBT())
         .itemOutputs('3x kubejs:runic_pathway_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(6000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('pathway_count_4x')
-        .itemInputs('gtceu:naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:nickel"}').strongNBT())
+        .itemInputs('gtceu:dense_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:nickel"}').strongNBT())
         .itemOutputs('4x kubejs:runic_pathway_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(6000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('pathway_time_1')
-        .itemInputs('gtceu:naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lead"}').strongNBT())
+        .itemInputs('gtceu:dense_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lead"}').strongNBT())
         .itemOutputs('kubejs:runic_pathway_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(5000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('pathway_time_2')
-        .itemInputs('gtceu:naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:silver"}').strongNBT())
+        .itemInputs('gtceu:dense_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:silver"}').strongNBT())
         .itemOutputs('kubejs:runic_pathway_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(4000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('pathway_time_3')
-        .itemInputs('gtceu:naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:gold"}').strongNBT())
+        .itemInputs('gtceu:dense_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:gold"}').strongNBT())
         .itemOutputs('kubejs:runic_pathway_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(3000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('pathway_time_4')
-        .itemInputs('gtceu:naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:aluminium"}').strongNBT())
+        .itemInputs('gtceu:dense_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:aluminium"}').strongNBT())
         .itemOutputs('kubejs:runic_pathway_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(2500)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('pathway_mixed')
-        .itemInputs('gtceu:naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:platinum"}').strongNBT())
+        .itemInputs('gtceu:dense_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:platinum"}').strongNBT())
         .itemOutputs('3x kubejs:runic_pathway_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(3000)
@@ -89,63 +89,63 @@ ServerEvents.recipes(event => {
 
     // runic plating
     event.recipes.gtceu.runic_circuitry_assembling_station('runic_count_1x')
-        .itemInputs('gtceu:enriched_naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:iron"}').strongNBT())
+        .itemInputs('gtceu:dense_enriched_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:iron"}').strongNBT())
         .itemOutputs('kubejs:runic_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(8000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('runic_count_2x')
-        .itemInputs('gtceu:enriched_naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:copper"}').strongNBT())
+        .itemInputs('gtceu:dense_enriched_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:copper"}').strongNBT())
         .itemOutputs('2x kubejs:runic_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(8000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('runic_count_3x')
-        .itemInputs('gtceu:enriched_naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:tin"}').strongNBT())
+        .itemInputs('gtceu:dense_enriched_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:tin"}').strongNBT())
         .itemOutputs('3x kubejs:runic_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(8000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('runic_count_4x')
-        .itemInputs('gtceu:enriched_naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:nickel"}').strongNBT())
+        .itemInputs('gtceu:dense_enriched_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:nickel"}').strongNBT())
         .itemOutputs('4x kubejs:runic_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(8000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('runic_time_1')
-        .itemInputs('gtceu:enriched_naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lead"}').strongNBT())
+        .itemInputs('gtceu:dense_enriched_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lead"}').strongNBT())
         .itemOutputs('kubejs:runic_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(7000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('runic_time_2')
-        .itemInputs('gtceu:enriched_naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:silver"}').strongNBT())
+        .itemInputs('gtceu:dense_enriched_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:silver"}').strongNBT())
         .itemOutputs('kubejs:runic_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(6000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('runic_time_3')
-        .itemInputs('gtceu:enriched_naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:gold"}').strongNBT())
+        .itemInputs('gtceu:dense_enriched_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:gold"}').strongNBT())
         .itemOutputs('kubejs:runic_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(5000)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('runic_time_4')
-        .itemInputs('gtceu:enriched_naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:aluminium"}').strongNBT())
+        .itemInputs('gtceu:dense_enriched_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:aluminium"}').strongNBT())
         .itemOutputs('kubejs:runic_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(4500)
         .EUt(100000);
 
     event.recipes.gtceu.runic_circuitry_assembling_station('runic_mixed')
-        .itemInputs('gtceu:enriched_naquadah_dense_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:platinum"}').strongNBT())
+        .itemInputs('gtceu:dense_enriched_naquadah_plate', Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:platinum"}').strongNBT())
         .itemOutputs('3x kubejs:runic_engraved_plating')
         .blastFurnaceTemp(10500)
         .duration(5000)
@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
         .EUt(100000);
 
     event.recipes.gtceu.assembly_line('drackion_runic_laser_gen')
-        .itemInputs('gtceu:screret_runic_laser_source_base_exquisite_gem', '2x gtceu:uv_field_generator', '4x gtceu:uv_sensor', '4x gtceu:uv_emitter', 
+        .itemInputs('gtceu:exquisite_screret_runic_laser_source_base_gem', '2x gtceu:uv_field_generator', '4x gtceu:uv_sensor', '4x gtceu:uv_emitter', 
             '16x gtceu:energy_cluster', '16x gtceu:energy_cluster', '16x gtceu:energy_cluster','16x gtceu:energy_cluster', 
             '4x #gtceu:circuits/uhv', '16x gtceu:uv_voltage_coil', '4x gtceu:neutron_reflector', '24x gtceu:stellarium_screw',
             '64x gtceu:uhpic_wafer', '64x gtceu:uhpic_wafer', '16x gtceu:melodium_foil', '16x gtceu:prismalium_foil')
@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
         .EUt(369000);
 
     event.recipes.gtceu.assembler('laser_casing')
-        .itemInputs('6x gtceu:stellarium_double_plate', 'gtceu:stellarium_frame', 'kubejs:runic_wave_generator', 'gtceu:uv_field_generator', 'gtceu:uv_emitter')
+        .itemInputs('6x gtceu:double_stellarium_plate', 'gtceu:stellarium_frame', 'kubejs:runic_wave_generator', 'gtceu:uv_field_generator', 'gtceu:uv_emitter')
         .itemOutputs('kubejs:laser_casing')
         .duration(1200)
         .EUt(75000)
@@ -205,8 +205,8 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.assembly_line('heat_chamber')
-        .itemInputs('gtceu:iridium_frame', '4x #gtceu:circuits/zpm', 'gtceu:rhodium_plated_palladium_double_plate', 
-                    'gtceu:tritanium_double_plate', 'gtceu:zpm_field_generator', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
+        .itemInputs('gtceu:iridium_frame', '4x #gtceu:circuits/zpm', 'gtceu:double_rhodium_plated_palladium_plate', 
+                    'gtceu:double_tritanium_plate', 'gtceu:zpm_field_generator', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
                     '32x gtceu:uhpic_chip', '48x gtceu:dragonsteel_single_wire')
         .inputFluids('gtceu:hsss 6912', 'gtceu:niobium_nitride 1728')
         .itemOutputs('gtceu:heat_chamber')
@@ -214,8 +214,8 @@ ServerEvents.recipes(event => {
         .EUt(90000);
 
     event.recipes.gtceu.assembly_line('super_heat_chamber')
-        .itemInputs('gtceu:heat_chamber', '4x #gtceu:circuits/uv', 'gtceu:dragonsteel_double_plate', 
-                    'gtceu:titanium_carbide_double_plate', 'gtceu:uv_field_generator', '64x gtceu:uhpic_chip', 
+        .itemInputs('gtceu:heat_chamber', '4x #gtceu:circuits/uv', 'gtceu:double_dragonsteel_plate', 
+                    'gtceu:double_titanium_carbide_plate', 'gtceu:uv_field_generator', '64x gtceu:uhpic_chip', 
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip', '48x gtceu:prismalium_single_wire')
         .inputFluids('gtceu:hsse 6912', 'gtceu:niobium_titanium 1728')
         .itemOutputs('gtceu:super_pressure_heat_chamber')
@@ -223,8 +223,8 @@ ServerEvents.recipes(event => {
         .EUt(90000);
 
     event.recipes.gtceu.assembly_line('large_rotor_machine')
-        .itemInputs('gtceu:shellite_frame', '4x #gtceu:circuits/luv', 'gtceu:vanadium_gallium_double_plate', 
-                    'gtceu:red_steel_double_plate', 'gtceu:luv_field_generator', '2x gtceu:luv_electric_motor', '64x gtceu:uhpic_chip', 
+        .itemInputs('gtceu:shellite_frame', '4x #gtceu:circuits/luv', 'gtceu:double_vanadium_gallium_plate', 
+                    'gtceu:double_red_steel_plate', 'gtceu:luv_field_generator', '2x gtceu:luv_electric_motor', '64x gtceu:uhpic_chip', 
                     '32x gtceu:uhpic_chip', '4x gtceu:advanced_power_thruster', '4x gtceu:hssg_spring')
         .inputFluids('gtceu:soldering_alloy 3456', 'gtceu:yttrium_barium_cuprate 5184')
         .itemOutputs('gtceu:large_rotor_machine')
@@ -232,8 +232,8 @@ ServerEvents.recipes(event => {
         .EUt(90000);
 
     event.recipes.gtceu.assembly_line('runic_engraver')
-        .itemInputs('gtceu:lumium_frame', '4x #gtceu:circuits/uv', 'gtceu:tantalum_carbide_double_plate', 
-                    'gtceu:titanium_carbide_double_plate', '2x gtceu:uv_field_generator', '4x gtceu:uv_emitter', '64x gtceu:uhpic_chip', 
+        .itemInputs('gtceu:lumium_frame', '4x #gtceu:circuits/uv', 'gtceu:double_tantalum_carbide_plate', 
+                    'gtceu:double_titanium_carbide_plate', '2x gtceu:uv_field_generator', '4x gtceu:uv_emitter', '64x gtceu:uhpic_chip', 
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '48x gtceu:blue_alloy_screw', 'gtceu:gravi_star')
         .inputFluids('gtceu:hsse 5184', 'gtceu:hssg 5184', 'gtceu:hsss 5184')
         .itemOutputs('gtceu:runic_circuitry_assembling_station')
@@ -241,8 +241,8 @@ ServerEvents.recipes(event => {
         .EUt(90000);
 
     event.recipes.gtceu.assembly_line('quantum_compressor')
-        .itemInputs('gtceu:melodium_frame', '3x #gtceu:circuits/uv', 'gtceu:trinaquadalloy_double_plate', 
-                    'gtceu:trinaquadalloy_double_plate', '2x gtceu:uv_field_generator', '16x gtceu:uv_electric_piston', '64x gtceu:uhpic_chip', 
+        .itemInputs('gtceu:melodium_frame', '3x #gtceu:circuits/uv', 'gtceu:double_trinaquadalloy_plate', 
+                    'gtceu:double_trinaquadalloy_plate', '2x gtceu:uv_field_generator', '16x gtceu:uv_electric_piston', '64x gtceu:uhpic_chip', 
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
                     '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip', '48x gtceu:tritanium_screw')
         .inputFluids('gtceu:hsse 5184', 'gtceu:hssg 5184', 'gtceu:hsss 5184')
@@ -251,7 +251,7 @@ ServerEvents.recipes(event => {
         .EUt(90000);
 
     event.recipes.gtceu.assembly_line('basic_energy_interface')
-        .itemInputs('kubejs:stellarium_casing', '2x gtceu:iridium_double_plate', 'gtceu:uv_voltage_coil', 
+        .itemInputs('kubejs:stellarium_casing', '2x gtceu:double_iridium_plate', 'gtceu:uv_voltage_coil', 
                     '4x gtceu:stellarium_hex_wire', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip')

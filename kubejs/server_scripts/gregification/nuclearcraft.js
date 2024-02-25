@@ -631,13 +631,13 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.assembler('plate_basic')
-        .itemInputs('gtceu:black_steel_plate', '2x gtceu:graphite_dust', '16x gtceu:annealed_copper_fine_wire', '4x gtceu:aluminium_screw')
+        .itemInputs('gtceu:black_steel_plate', '2x gtceu:graphite_dust', '16x gtceu:fine_annealed_copper_wire', '4x gtceu:aluminium_screw')
         .itemOutputs('nuclearcraft:plate_basic')
         .duration(120)
         .EUt(240);
 
     event.recipes.gtceu.assembler('advanced_plating')
-        .itemInputs('nuclearcraft:plate_basic', '2x nuclearcraft:tough_alloy_ingot', '32x gtceu:red_alloy_fine_wire', '4x gtceu:blue_alloy_screw')
+        .itemInputs('nuclearcraft:plate_basic', '2x nuclearcraft:tough_alloy_ingot', '32x gtceu:fine_red_alloy_wire', '4x gtceu:blue_alloy_screw')
         .itemOutputs('nuclearcraft:plate_advanced')
         .duration(280)
         .EUt(240);

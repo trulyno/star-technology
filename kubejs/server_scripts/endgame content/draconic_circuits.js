@@ -34,15 +34,15 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.assembly_line('draconic_processor_supercomputer')
-        .itemInputs('2x gtceu:neutronium_frame', '2x kubejs:draconic_wetware_processor_assembly', '16x gtceu:advanced_smd_diode', '32x gtceu:nor_memory_chip', '64x gtceu:ram_chip', '32x gtceu:fine_uranium_rhodium_dinaquadide_wire', '64x gtceu:polybenzimidazole_foil', '4x gtceu:tritanium_plate')
+        .itemInputs('2x gtceu:neutronium_frame', '2x kubejs:draconic_wetware_processor_assembly', '16x gtceu:advanced_smd_diode', '32x gtceu:nor_memory_chip', '64x gtceu:ram_chip', '32x gtceu:fine_uranium_rhodium_dinaquadide_wire', '64x gtceu:polyether_ether_ketone_foil', '4x gtceu:tritanium_plate')
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1152')
         .itemOutputs('kubejs:draconic_wetware_processor_computer')
         .duration(400)
         .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.assembly_line('draconic_processor_mainframe')
-        .itemInputs('2x gtceu:neutronium_frame', '2x kubejs:draconic_wetware_processor_computer', '48x gtceu:advanced_smd_diode', '48x gtceu:advanced_smd_capacitor', '48x gtceu:advanced_smd_transistor', '48x gtceu:advanced_smd_resistor', '48x gtceu:advanced_smd_inductor', '64x gtceu:polybenzimidazole_foil', '32x gtceu:polybenzimidazole_foil', '64x gtceu:ram_chip', '2x gtceu:ruthenium_trinium_americium_neutronate_double_wire', '16x gtceu:tritanium_plate')
-        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 2880', 'gtceu:polybenzimidazole 1152')
+        .itemInputs('2x gtceu:neutronium_frame', '2x kubejs:draconic_wetware_processor_computer', '48x gtceu:advanced_smd_diode', '48x gtceu:advanced_smd_capacitor', '48x gtceu:advanced_smd_transistor', '48x gtceu:advanced_smd_resistor', '48x gtceu:advanced_smd_inductor', '64x gtceu:polyether_ether_ketone_foil', '32x gtceu:polyether_ether_ketone_foil', '64x gtceu:ram_chip', '2x gtceu:ruthenium_trinium_americium_neutronate_double_wire', '16x gtceu:tritanium_plate')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 2880', 'gtceu:polyether_ether_ketone 1152')
         .itemOutputs('kubejs:draconic_wetware_processor_mainframe')
         .duration(2000)
         .EUt(GTValues.VHA[GTValues.UHV]);

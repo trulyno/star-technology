@@ -168,42 +168,42 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.assembler('basic_solar_generator')
-        .itemInputs('3x gtceu:steel_double_plate', '3x gtceu:silicon_wafer', 'solarenergy:basic_solar_cell')
+        .itemInputs('3x gtceu:double_steel_plate', '3x gtceu:silicon_wafer', 'solarenergy:basic_solar_cell')
         .inputFluids('gtceu:soldering_alloy 144')
         .itemOutputs('solarenergy:basic_solar_generator')
         .duration(200)
         .EUt(28);
 
     event.recipes.gtceu.assembler('regular_solar_generator')
-        .itemInputs('3x gtceu:aluminium_double_plate', '3x gtceu:silicon_wafer', 'solarenergy:regular_solar_cell')
+        .itemInputs('3x gtceu:double_aluminium_plate', '3x gtceu:silicon_wafer', 'solarenergy:regular_solar_cell')
         .inputFluids('gtceu:soldering_alloy 288')
         .itemOutputs('solarenergy:regular_solar_generator')
         .duration(200)
         .EUt(80);
 
     event.recipes.gtceu.assembler('intermediate_solar_generator')
-        .itemInputs('3x gtceu:stainless_steel_double_plate', '3x gtceu:silicon_wafer', 'solarenergy:intermediate_solar_cell')
+        .itemInputs('3x gtceu:double_stainless_steel_plate', '3x gtceu:silicon_wafer', 'solarenergy:intermediate_solar_cell')
         .inputFluids('gtceu:soldering_alloy 432')
         .itemOutputs('solarenergy:intermediate_solar_generator')
         .duration(200)
         .EUt(460);
 
     event.recipes.gtceu.assembler('advanced_solar_generator')
-        .itemInputs('3x gtceu:titanium_double_plate', '3x gtceu:silicon_wafer', 'solarenergy:advanced_solar_cell')
+        .itemInputs('3x gtceu:double_titanium_plate', '3x gtceu:silicon_wafer', 'solarenergy:advanced_solar_cell')
         .inputFluids('gtceu:soldering_alloy 576')
         .itemOutputs('solarenergy:advanced_solar_generator')
         .duration(200)
         .EUt(1024);
 
     event.recipes.gtceu.assembler('elite_solar_generator')
-        .itemInputs('3x gtceu:tungsten_steel_double_plate', '3x gtceu:silicon_wafer', 'solarenergy:elite_solar_cell')
+        .itemInputs('3x gtceu:double_tungsten_steel_plate', '3x gtceu:silicon_wafer', 'solarenergy:elite_solar_cell')
         .inputFluids('gtceu:soldering_alloy 864')
         .itemOutputs('solarenergy:elite_solar_generator')
         .duration(200)
         .EUt(4600);
 
     event.recipes.gtceu.assembler('ultimate_solar_generator')
-        .itemInputs('3x gtceu:rhodium_plated_palladium_double_plate', '3x gtceu:silicon_wafer', 'solarenergy:ultimate_solar_cell')
+        .itemInputs('3x gtceu:double_rhodium_plated_palladium_plate', '3x gtceu:silicon_wafer', 'solarenergy:ultimate_solar_cell')
         .inputFluids('gtceu:soldering_alloy 1008')
         .itemOutputs('solarenergy:ultimate_solar_generator')
         .duration(200)

@@ -25,7 +25,7 @@
 		{
 			description: [
 				"     Red screens flash and alarms are going off. Everyone in the room is evacuating. The experiment is a failure. There is little time before this this building will explode. But you notice something... the gate ... is opening! You stare in awe and think: \"Yes! My theories were right and I figured out what was the problem!\". You don't notice the others calling out to you to run. But it was too late. A failure is still a failure and the gate engulfs everything in the room."
-				"    You wake up stranded on a floating island in an alternate dimension. The only things you have is a tree, a water sourse and soem plants. But you are not dicouraged. As the world's greatest scientist you can use these maetrials to developt technology at faster rate than anyone. You can try once again interdimensional travel. For that you will have to make from almost nothing everything, to develop up to draconic and even star technology. You &oWILL&r succed. You &oWILL&r return home."
+				"    You wake up stranded on a floating island in an alternate dimension. The only things you have is a tree and some dirt around it. But you are not discouraged. As the world's greatest scientist you can use these materials to develop technology at faster rate than anyone. You can try once again interdimensional travel. For that you will have to make from almost nothing everything, to develop up to draconic and even star technology. You &oWILL&r succed. You &oWILL&r return home."
 				"     &lWelcome to Star Technology.&r"
 			]
 			icon: "effortlessbuilding:building_techniques_book"
@@ -61,6 +61,7 @@
 				"&cBeta 3 HOTFIX1:&r Fixed broken charges recipes. Fixed unreasonable rmps for the Electrico-Kinetic Ore Factory. Added a way to convert NuclearCraft plutonium239 and plutonium241 to their GregTech material. Removed coke to graphite recipe. Buffed chance for nether star essence in its recipe. Changed emerald and diamond crushed ore from string mesh to flint mesh."
 				"&cBeta 3 HOTFIX 2:&r Changed carbon brushes recipe from coke to charcoal. Added Create Diesel Generators to fix the imposibility to make a proper create steam engine. Added recipe for create belts from rubber. Reduced durations of several thermal augments. Added press recipes for some materials. Changed ender pouch recipe from leather to carbon fiber plates."
 				"&cBeta 3 HOTFIX 3:&r Added the mod Foad My F***ing Tags. Fixed several recipes using double plates. Fixed NuclearCraft fuel recipes. Fixed some mystical agriculture recipes. Fixed stirling dynamo recipe."
+				"&l&bChangelogs after beta 3 are available on the official discord server.&r&r"
 			]
 			icon: "minecraft:writable_book"
 			id: "6B4342686B40399C"
@@ -73,6 +74,34 @@
 			}]
 			x: -4.0d
 			y: 0.0d
+		}
+		{
+			description: ["&bhttps://discord.com/invite/numxrCgrCG&r"]
+			icon: "kubejs:coin"
+			id: "081D95CD02F8C2C4"
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				id: "44F369504FE5C739"
+				title: "Official Discord Server!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			description: ["There are currently no official server files available. If you want to make a server with this modpack, first of all download the modpack zip from curseforge.com. Make a basic forge server using the forge version of the pack. Copy the contents from the modpack zip file to the server folder. From your instance of the modpack(the client), copy the mod files into the mods folder of the server. Remove client side mods. If you don't know which to remove, removing oculus and panorama seems enough to get the server working."]
+			icon: "kubejs:draconic_wetware_processor_mainframe"
+			id: "2929B62A2918CD84"
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				id: "2510943267CA9994"
+				title: "Server Files"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.5d
 		}
 	]
 	title: "Welcome!"

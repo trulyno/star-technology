@@ -154,14 +154,14 @@ ServerEvents.recipes(event => {
         'PFP',
         'PWP'
     ], {
-        P: 'gtceu:trinaquadalloy_double_plate',
+        P: 'gtceu:double_trinaquadalloy_plate',
         F: 'gtceu:trinaquadalloy_frame',
         H: '#forge:tools/hammers',
         W: '#forge:tools/wrenches'
     });
 
     event.recipes.gtceu.assembler('atomic_casing')
-        .itemInputs('6x gtceu:trinaquadalloy_double_plate', 'gtceu:trinaquadalloy_frame')
+        .itemInputs('6x gtceu:double_trinaquadalloy_plate', 'gtceu:trinaquadalloy_frame')
         .itemOutputs('2x gtceu:atomic_casing')
         .duration(50)
         .EUt(16)

@@ -45,4 +45,32 @@ ServerEvents.recipes(event => {
         .itemOutputs('powersuits:powerfist')
         .duration(1200)
         .EUt(GTValues.VA[GTValues.IV]);
+
+    event.recipes.gtceu.assembler('numina:battery_basic')
+        .itemInputs('2x #gtceu:circuits/ev', 'gtceu:lapotron_crystal', '2x gtceu:shellite_double_wire', '2x gtceu:iridium_plate', 'gtceu:double_battery_alloy_plate')
+        .itemOutputs('numina:battery_basic')
+        .inputFluids('gtceu:soldering_alloy 720')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.IV]);
+    
+    event.recipes.gtceu.assembler('numina:battery_advanced')
+        .itemInputs('2x #gtceu:circuits/iv', 'gtceu:lapotronic_energy_orb', '2x gtceu:shellite_quadruple_wire', '8x gtceu:fine_rhodium_wire', '2x gtceu:double_battery_alloy_plate')
+        .itemOutputs('numina:battery_advanced')
+        .inputFluids('gtceu:soldering_alloy 1440')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.IV]);
+    
+    event.recipes.gtceu.assembler('numina:battery_elite')
+        .itemInputs('2x #gtceu:circuits/luv', 'gtceu:lapotronic_energy_orb_cluster', '4x gtceu:twinite_quadruple_wire', '16x gtceu:fine_rhodium_wire', '24x gtceu:ruthenium_foil', '8x gtceu:double_battery_alloy_plate')
+        .itemOutputs('numina:battery_elite')
+        .inputFluids('gtceu:soldering_alloy 2160')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.assembly_line('numina:battery_ultimate')
+        .itemInputs('2x #gtceu:circuits/zpm', 'gtceu:energy_module', '8x gtceu:dragonsteel_hex_wire', '64x gtceu:advanced_smd_transistor', '64x gtceu:advanced_smd_resistor', '64x gtceu:advanced_smd_capacitor', '64x gtceu:advanced_smd_diode', '64x gtceu:advanced_smd_inductor', 'gtceu:zpm_voltage_coil', '32x gtceu:double_battery_alloy_plate', '2x gtceu:uhpic_chip' )
+        .inputFluids('gtceu:soldering_alloy 4608', 'gtceu:naquadria 3456')
+        .itemOutputs('numina:battery_ultimate')
+        .duration(2400)
+        .EUt(GTValues.VA[GTValues.ZPM]);
 });

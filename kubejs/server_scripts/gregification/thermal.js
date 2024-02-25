@@ -475,8 +475,8 @@ ServerEvents.recipes(event => {
         'S S',
         'BBB'
     ], {
-        S: 'gtceu:stainless_steel_double_plate',
-        B: 'gtceu:black_steel_double_plate'
+        S: 'gtceu:double_stainless_steel_plate',
+        B: 'gtceu:double_black_steel_plate'
     });
 
     event.recipes.create.item_application('thermal:fluid_cell', ['thermal:fluid_cell_frame', 'create:fluid_tank']);
