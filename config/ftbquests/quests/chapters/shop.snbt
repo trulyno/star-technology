@@ -171,6 +171,7 @@
 			y: 0.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["52AFE5CDFB1C3CFF"]
 			icon: "gtceu:basic_electronic_circuit"
 			id: "46C8B2E63C5F0F9D"
@@ -253,6 +254,52 @@
 			title: "Sodium Persulfate"
 			x: 1.5d
 			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0DA0992F206EC0A2"]
+			icon: {
+				Count: 1b
+				id: "jetboots:jetboots"
+				tag: {
+					bml-item-xp: 0
+					energy: 0
+					jetboots-muffled: 1b
+					jetboots-upgrade-muffled: 1b
+					jetboots-upgrade-shock-absorber: 1b
+					jetboots-upgrade-thruster: 1b
+					max_energy: 2880000
+				}
+			}
+			id: "169A5A9ED201C8FE"
+			optional: true
+			rewards: [{
+				id: "2CE17CD3594DD62B"
+				item: {
+					Count: 1b
+					id: "jetboots:jetboots"
+					tag: {
+						bml-item-xp: 0
+						energy: 0
+						jetboots-muffled: 1b
+						jetboots-upgrade-muffled: 1b
+						jetboots-upgrade-shock-absorber: 1b
+						jetboots-upgrade-thruster: 1b
+						max_energy: 2880000
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "35043ED69DBF26DB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Jet Boots"
+			x: -1.5d
+			y: 1.5d
 		}
 	]
 	title: "Shop"

@@ -206,12 +206,6 @@ ServerEvents.recipes(event => {
         M: 'gtceu:magnetite_dust'
     });
 
-    event.recipes.gtceu.assembler('rocket_boots') 
-        .itemInputs('minecraft:iron_boots', '8x gtceu:carbon_fiber_plate', '2x gtceu:mv_sodium_battery', '2x gtceu:power_thruster')
-        .itemOutputs(Item.of('jetboots:jetboots', '{bml-item-xp:0,energy:0,jetboots-muffled:1b,jetboots-upgrade-muffled:1b,jetboots-upgrade-shock-absorber:1b,jetboots-upgrade-thruster:1b,max_energy:2880000}'))
-        .duration(3600)
-        .EUt(120);
-
     event.recipes.gtceu.macerator('plutonium239')
         .itemInputs('nuclearcraft:plutonium_239')
         .itemOutputs('gtceu:plutonium_dust')
