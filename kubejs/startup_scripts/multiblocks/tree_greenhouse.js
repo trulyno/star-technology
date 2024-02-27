@@ -21,7 +21,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('HHHHHHH', 'FB###BF', 'FB###BF', 'FB###BF', '#F###F#')
             .aisle('HHHCHHH', '#FGGGF#', '#FGGGF#', '#FGGGF#', '##FFF##')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('H', Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()).setMinGlobalLimited(41)
+            .where('H', Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()).setMinGlobalLimited(39)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('B', Predicates.blocks('thermal_extra:soul_infused_block'))
