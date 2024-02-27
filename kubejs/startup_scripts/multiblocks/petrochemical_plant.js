@@ -39,7 +39,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('I', Predicates.abilities(PartAbility.IMPORT_FLUIDS))
             .where('O', Predicates.abilities(PartAbility.EXPORT_FLUIDS))
             .where('i', Predicates.abilities(PartAbility.IMPORT_ITEMS))
-            .where('E', Predicates.abilities(PartAbility.INPUT_ENERGY))
+            .where('E', Predicates.abilities(PartAbility.INPUT_ENERGY).or(Predicates.blocks(GCyMBlocks.CASING_CORROSION_PROOF.get())))
             .where('F', Predicates.blocks('gtceu:naquadah_alloy_frame'))
             .where('K', Predicates.blocks(GTBlocks.CASING_PTFE_INERT.get()))
             .where('L', Predicates.blocks(GCyMBlocks.CASING_SHOCK_PROOF.get()))
