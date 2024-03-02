@@ -29,4 +29,41 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
+        event.recipes.gtceu.chemical_plant('plat_line')
+        .itemInputs('6x gtceu:platinum_group_sludge_dust')
+        .inputFluids('gtceu:aqua_regia 1500')
+        .itemOutputs('gtceu:platinum_dust', 'gtceu:palladium_dust', 'gtceu:ruthenium_dust', 'gtceu:rhodium_dust', 'gtceu:osmium_dust', 'gtceu:iridium_dust')
+        .outputFluids('gtceu:nitric_acid 500', 'gtceu:hydrochloric_acid 1000')
+        .duration(600)
+        .EUt(GTValues.VHA[GTValues.ZPM]);
+
+    event.recipes.gtceu.chemical_plant('sulfuric_acid')
+        .itemInputs('gtceu:sulfur_dust')
+        .inputFluids('minecraft:water 4000')
+        .outputFluids('gtceu:sulfuric_acid 1000')
+        .duration(320)
+        .EUt(480)
+        .circuit(24);
+
+    event.recipes.gtceu.chemical_plant('ptfe')
+        .itemInputs('2x gtceu:carbon_dust')
+        .inputFluids('gtceu:fluorine 4000')
+        .outputFluids('gtceu:tetrafluoroethylene 1000')
+        .duration(480)
+        .EUt(GTValues.VHA[GTValues.LuV]);
+
+    event.recipes.gtceu.chemical_plant('epoxy')
+        .inputFluids('gtceu:benzene 2000', 'gtceu:propene 2000', 'gtceu:chlorine 2000', 'gtceu:oxygen 4000')
+        .outputFluids('gtceu:epoxy 1000', 'gtceu:hydrochloric_acid 1000')
+        .duration(500)
+        .EUt(GTValues.VHA[GTValues.ZPM]);
+
+    event.recipes.gtceu.chemical_plant('naquadah_line')
+        .itemInputs('2x gtceu:naquadah_dust')
+        .inputFluids('gtceu:fluoroantimonic_acid 1000')
+        .itemOutputs('gtceu:enriched_naquadah_dust', 'gtceu:naquadria_dust', 'gtceu:trinium_dust', 'gtceu:antimony_dust', 'gtceu:indium_phosphide_dust')
+        .outputFluids('gtceu:hydrogen 2000', 'gtceu:fluorine 7000')
+        .duration(800)
+        .EUt(GTValues.VHA[GTValues.ZPM]);
+
 });
