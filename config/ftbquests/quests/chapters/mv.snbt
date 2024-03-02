@@ -15,6 +15,12 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "5D43EC6DDFFDCD71"
+			rewards: [{
+				count: 2
+				id: "01124DC0EE495DB6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "108E8E3AFD4B6640"
 				item: "gtceu:phenolic_printed_circuit_board"
@@ -26,6 +32,11 @@
 		{
 			dependencies: ["156FCDF9DDCBD947"]
 			id: "01375467B7114842"
+			rewards: [{
+				id: "791DA98C46163B63"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5D78A472AE5940BF"
 				item: "gtceu:signalum_single_wire"
@@ -41,6 +52,11 @@
 				"37F3B8660C089DD7"
 			]
 			id: "159303E910FD649D"
+			rewards: [{
+				id: "34312914FBFD3F07"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "70EFAE54207960A4"
 				item: "gtceu:mv_4a_energy_converter"
@@ -55,6 +71,12 @@
 				"5D43EC6DDFFDCD71"
 			]
 			id: "00E8243C8BCD5821"
+			rewards: [{
+				count: 4
+				id: "7D67AAC393FE2C1C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			subtitle: "First MV Circuit"
 			tasks: [{
 				id: "4DFE0F7D06CEF162"
@@ -67,6 +89,11 @@
 		{
 			dependencies: ["47DEF280997F7450"]
 			id: "5961A67BD49C20E5"
+			rewards: [{
+				id: "411EAAEA99AEB1AF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "34DBA62AA6CDA99E"
 				item: "gtceu:diode"
@@ -81,6 +108,11 @@
 				"6FD14A87A71A5DA6"
 			]
 			id: "47DEF280997F7450"
+			rewards: [{
+				id: "4426801B4F75B8FF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "343A81E9D37794C7"
 				item: "gtceu:gallium_arsenide_dust"
@@ -92,6 +124,11 @@
 		{
 			dependencies: ["6E4B3F7B1624CA13"]
 			id: "3A3721F8017ACBB6"
+			rewards: [{
+				id: "028937A685E46A90"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "16F8FF7159AEECE4"
 				item: "gtceu:realgar_dust"
@@ -103,6 +140,11 @@
 		{
 			dependencies: ["6E4B3F7B1624CA13"]
 			id: "6FD14A87A71A5DA6"
+			rewards: [{
+				id: "6CA55D0F201ACB84"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "09F93624A44ACB93"
 				item: "gtceu:sphalerite_dust"
@@ -114,6 +156,12 @@
 		{
 			dependencies: ["00E8243C8BCD5821"]
 			id: "3C25047EFEC3BE14"
+			rewards: [{
+				count: 2
+				id: "0E84EFDE2AE97B65"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3A6832658B4FC994"
 				item: "gtceu:tree_greenhouse"
@@ -125,6 +173,11 @@
 		{
 			dependencies: ["62BB54F3EE1A0966"]
 			id: "37F3B8660C089DD7"
+			rewards: [{
+				id: "4AB541C88413315C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4B7329110A6FCEF2"
 				item: "gtceu:mv_machine_hull"
@@ -136,6 +189,12 @@
 		{
 			dependencies: ["37F3B8660C089DD7"]
 			id: "5BB7FA85A9B0526E"
+			rewards: [{
+				count: 2
+				id: "6D44742291118E5C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6DD74BD1720D3E5E"
 				item: "gtceu:pyrolyse_oven"
@@ -147,6 +206,11 @@
 		{
 			dependencies: ["47DEF280997F7450"]
 			id: "418081957E3667CA"
+			rewards: [{
+				id: "2627234A0A1489DB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "45B29FB75D20FC72"
 				item: "gtceu:silicon_boule"
@@ -158,6 +222,11 @@
 		{
 			dependencies: ["37F3B8660C089DD7"]
 			id: "67F660E7A338854F"
+			rewards: [{
+				id: "2C55A8BA6EB6A73F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0FA11A52C45261F4"
 				item: "gtceu:mv_autoclave"
@@ -169,6 +238,11 @@
 		{
 			dependencies: ["0E52C853D137C515"]
 			id: "1549828A7E1B26F6"
+			rewards: [{
+				id: "4428C50E6562AB63"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "136379BC7B0ACBD0"
 				item: "gtceu:silicon_wafer"
@@ -180,17 +254,27 @@
 		{
 			dependencies: ["00E8243C8BCD5821"]
 			id: "21EEBF103BCAAEE1"
+			rewards: [{
+				id: "06F4EC92E285A9AA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5078B1041D513BA1"
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -5.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["67F660E7A338854F"]
 			id: "16672FD3F3C5CDD2"
+			rewards: [{
+				id: "6E4EE46624A4C467"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5328CB9F3364CF28"
 				item: "ae2:certus_quartz_crystal"
@@ -202,6 +286,11 @@
 		{
 			dependencies: ["16672FD3F3C5CDD2"]
 			id: "5DAE74A31C76FF30"
+			rewards: [{
+				id: "1B20974F5C2995E8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6D85CAF6A5C7BC31"
 				item: "ae2:energy_acceptor"
@@ -213,6 +302,12 @@
 		{
 			dependencies: ["398526BE0D07093D"]
 			id: "03982B9C6CA63308"
+			rewards: [{
+				count: 2
+				id: "1240A61BAF5FF99B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6EEA0CB0BAB084F8"
 				item: "gtceu:polyethylene_bucket"
@@ -224,6 +319,12 @@
 		{
 			dependencies: ["6796CA8B7972C242"]
 			id: "5E5C091AA4289288"
+			rewards: [{
+				count: 2
+				id: "5EFF965CC65FBED4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5E1EA2AFC2B2E4A7"
 				item: "gtceu:polyvinyl_chloride_bucket"
@@ -262,6 +363,11 @@
 		{
 			dependencies: ["281C44FC2C79B33B"]
 			id: "03886371AB338954"
+			rewards: [{
+				id: "1B29B2B715F1CB3C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7ACED6C6968B30D0"
 				item: "gtceu:ethanol_bucket"
@@ -285,6 +391,11 @@
 		{
 			dependencies: ["04CA00B950D83892"]
 			id: "1891239B16CB13AC"
+			rewards: [{
+				id: "3166E838AAAA214F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5137D594C397B1B0"
 				item: "gtceu:bio_chaff"
@@ -296,6 +407,12 @@
 		{
 			dependencies: ["37F3B8660C089DD7"]
 			id: "0DA0992F206EC0A2"
+			rewards: [{
+				count: 2
+				id: "7B09D167C2E86FC0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7E69DDD14C290210"
 				item: "gtceu:mv_assembler"
@@ -306,18 +423,12 @@
 		}
 		{
 			dependencies: ["0DA0992F206EC0A2"]
-			id: "7C7FDC8FF8EB07BD"
-			tasks: [{
-				id: "6814B519008368FB"
-				item: "exmachinis:flux_sieve"
+			id: "107E622BB28FD61A"
+			rewards: [{
+				id: "182AA927C38A2890"
+				item: "kubejs:coin"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["0DA0992F206EC0A2"]
-			id: "107E622BB28FD61A"
 			tasks: [{
 				id: "4A1F22E6E4B5C7C3"
 				item: "exnihilosequentia:iron_mesh"
@@ -333,6 +444,11 @@
 				"32E5FE10E933FFDE"
 			]
 			id: "0E52C853D137C515"
+			rewards: [{
+				id: "586FAEAD30FC473D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "576CFF1DD712F379"
 				item: "gtceu:mv_cutter"
@@ -344,6 +460,11 @@
 		{
 			dependencies: ["37F3B8660C089DD7"]
 			id: "37B2ECF1EC5319B3"
+			rewards: [{
+				id: "084565FF108B1F81"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "72D73B343605D061"
 				item: "gtceu:mv_laser_engraver"
@@ -359,6 +480,11 @@
 			]
 			icon: "gtceu:ulpic_wafer"
 			id: "0772DEEBCB0BD2A8"
+			rewards: [{
+				id: "25443AAE6DCAAEAB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "3D83FCFEB49F7A5F"
@@ -382,6 +508,12 @@
 		{
 			dependencies: ["0772DEEBCB0BD2A8"]
 			id: "4F2BE6B11FFE9A45"
+			rewards: [{
+				count: 2
+				id: "04DEFF2F9BD04991"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1E81B286C5930B41"
 				item: "gtceu:mv_energy_input_hatch"
@@ -396,6 +528,12 @@
 				"21EEBF103BCAAEE1"
 			]
 			id: "2943A46D9E1A6332"
+			rewards: [{
+				count: 2
+				id: "1C184F4A3F9AF019"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			subtitle: "Second LV Circuit"
 			tasks: [{
 				id: "5725B499BFF585B2"
@@ -408,6 +546,12 @@
 		{
 			dependencies: ["2943A46D9E1A6332"]
 			id: "2086812F98F824BD"
+			rewards: [{
+				count: 2
+				id: "669C21538B16BDAA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			subtitle: "Second MV Circuit"
 			tasks: [{
 				id: "347F68015D0DAEB4"
@@ -424,6 +568,11 @@
 			]
 			icon: "gtceu:ilc_wafer"
 			id: "680EDA2B83992CB1"
+			rewards: [{
+				id: "62799B18C4F9673B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "05028099D4B7286D"
@@ -447,6 +596,11 @@
 		{
 			dependencies: ["03982B9C6CA63308"]
 			id: "1D5C514B452E6041"
+			rewards: [{
+				id: "19339352969A9472"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2F735907F5C6329E"
 				item: "gtceu:lv_super_tank"
@@ -458,6 +612,11 @@
 		{
 			dependencies: ["107E622BB28FD61A"]
 			id: "1F8774DA0E6DEA82"
+			rewards: [{
+				id: "5E22111E03005E7A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "277CCB00A5C49F14"
 				item: "gtceu:monazite_dust"
@@ -469,6 +628,11 @@
 		{
 			dependencies: ["1F8774DA0E6DEA82"]
 			id: "77BDCC61EAC7F9A7"
+			rewards: [{
+				id: "56ED2EC2DFF6CC55"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "32EFBEFDFA860F18"
 				item: "gtceu:rare_earth_dust"
@@ -480,6 +644,11 @@
 		{
 			dependencies: ["77BDCC61EAC7F9A7"]
 			id: "34ED6B25A620D25C"
+			rewards: [{
+				id: "08ED6118168BB926"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "5FA44E885F9036EE"
@@ -519,6 +688,11 @@
 		{
 			dependencies: ["0FCB10159A8E572F"]
 			id: "32E5FE10E933FFDE"
+			rewards: [{
+				id: "700CCF5C05EADD7D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "75A0145D51E2C227"
 				item: "gtceu:vanadium_steel_ingot"
@@ -530,12 +704,17 @@
 		{
 			dependencies: ["0DA0992F206EC0A2"]
 			id: "02DB2A59E95E138C"
+			rewards: [{
+				id: "3BB45878727C5D66"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7898148CCB5C6FDE"
 				item: "kubejs:mv_upgrade_kit"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.0d
 			y: 1.0d
 		}
 	]

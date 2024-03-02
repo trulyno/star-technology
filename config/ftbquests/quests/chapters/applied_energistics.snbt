@@ -680,7 +680,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["369E90E2807E6776"]
+			dependencies: [
+				"369E90E2807E6776"
+				"317CB8073A46DAA1"
+			]
 			id: "6E87714E5BF8C48B"
 			shape: "rsquare"
 			tasks: [{

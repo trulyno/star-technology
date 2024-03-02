@@ -159,7 +159,7 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -13.0d
 			y: -1.5d
 		}
 		{
@@ -170,7 +170,7 @@
 				item: "gtceu:hot_titanium_ingot"
 				type: "item"
 			}]
-			x: -13.0d
+			x: -15.0d
 			y: -1.5d
 		}
 		{
@@ -182,7 +182,7 @@
 				title: "Titanium Tetrachloride"
 				type: "checkmark"
 			}]
-			x: -15.0d
+			x: -17.0d
 			y: -1.5d
 		}
 		{
@@ -194,7 +194,7 @@
 				type: "item"
 			}]
 			x: -17.0d
-			y: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["76FA96D95627E860"]
@@ -237,7 +237,7 @@
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -11.0d
 			y: -1.5d
 		}
 		{
@@ -313,7 +313,7 @@
 				type: "item"
 			}]
 			x: -11.0d
-			y: 2.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["393A7F05DB259D95"]
@@ -324,7 +324,7 @@
 				type: "item"
 			}]
 			x: -13.0d
-			y: 4.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["393A7F05DB259D95"]
@@ -334,8 +334,8 @@
 				item: "gtceu:tungstate_dust"
 				type: "item"
 			}]
-			x: -13.0d
-			y: 2.5d
+			x: -11.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -349,8 +349,8 @@
 				item: "gtceu:tungstic_acid_dust"
 				type: "item"
 			}]
-			x: -13.0d
-			y: 6.5d
+			x: -15.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["238BE73907C32884"]
@@ -360,8 +360,8 @@
 				item: "gtceu:tungsten_dust"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 4.5d
+			x: -13.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -385,8 +385,8 @@
 				item: "gtceu:purified_cooperite_ore"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 6.5d
+			x: -9.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -683,7 +683,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["2FBA7503010CA930"]
@@ -1135,7 +1135,6 @@
 		{
 			dependencies: ["2EEB000E7916D0D7"]
 			id: "1340997F0E979E1B"
-			optional: true
 			tasks: [{
 				id: "45F869A460C3649E"
 				item: "gtceu:nuclear_turbine"
@@ -1143,6 +1142,17 @@
 			}]
 			x: -15.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["05D1ECC9AE687683"]
+			id: "3CAD6E196CA24CE4"
+			tasks: [{
+				id: "7A7F6D74F2B86A8E"
+				item: "gtceu:cupric_chloride_solution_bucket"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -1.5d
 		}
 	]
 	title: "EV"

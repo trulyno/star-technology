@@ -221,7 +221,7 @@
 				item: "gtceu:disodium_salt_of_hydroquinone_dust"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: 6.0d
 		}
 		{
@@ -232,7 +232,7 @@
 				item: "gtceu:hydroquinone_dust"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 4.0d
 			y: 6.0d
 		}
 		{
@@ -246,8 +246,8 @@
 				item: "gtceu:44_difluorobenzophenone_dust"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 6.0d
+			x: 0.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1B9A1FB92DD0CB54"]
@@ -258,8 +258,8 @@
 				title: "Fluorobenzene"
 				type: "checkmark"
 			}]
-			x: -1.0d
-			y: 7.0d
+			x: 2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0CE28F687171C3D2"]
@@ -271,7 +271,7 @@
 				type: "checkmark"
 			}]
 			x: -2.0d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3D30FB6A7305E76F"]
@@ -282,7 +282,7 @@
 				title: "Benzoyl Chloride"
 				type: "checkmark"
 			}]
-			x: -3.0d
+			x: -2.0d
 			y: 6.0d
 		}
 		{

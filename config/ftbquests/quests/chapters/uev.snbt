@@ -16,6 +16,7 @@
 				id: "6BF4F9A6EC03BC93"
 				type: "command"
 			}]
+			subtitle: "Currently Uncraftable"
 			tasks: [{
 				id: "3BDE218823B7678D"
 				item: "sgjourney:milky_way_stargate"

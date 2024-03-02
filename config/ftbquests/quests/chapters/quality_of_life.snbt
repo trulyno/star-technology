@@ -145,7 +145,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: -0.5d
+			y: -1.5d
 		}
 		{
 			id: "633BCF86D1CD7C76"
@@ -197,21 +197,6 @@
 			}]
 			x: -6.5d
 			y: -0.5d
-		}
-		{
-			id: "7CBFEE2EF25C562C"
-			shape: "rsquare"
-			tasks: [{
-				id: "513DC60FF01AFFA2"
-				item: {
-					Count: 1b
-					id: "naturescompass:naturescompass"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -8.5d
-			y: -1.5d
 		}
 		{
 			id: "6DEDF965FFD12B7B"
@@ -327,6 +312,31 @@
 			]
 			x: -6.5d
 			y: 0.5d
+		}
+		{
+			icon: "toms_storage:ts.wireless_terminal"
+			id: "5E87737A633D46AA"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "38CF53A4F1F9F2CC"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+				{
+					id: "15966988265F673A"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+				{
+					id: "7E683222B8A28565"
+					item: "toms_storage:ts.wireless_terminal"
+					type: "item"
+				}
+			]
+			title: "Tom's Simple Storage Mod"
+			x: -8.5d
+			y: -0.5d
 		}
 	]
 	title: "Quality Of Life"
