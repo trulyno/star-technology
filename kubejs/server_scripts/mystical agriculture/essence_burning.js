@@ -829,7 +829,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.essence_burning('molybdenum_essence_burning_0')
         .itemInputs('mysticalagriculture:molybdenum_essence')
         .inputFluids(metal)
-        .itemOutputs('16x gtceu:raw_pyrolusite')
+        .itemOutputs('16x gtceu:raw_molybdenite')
         .outputFluids(metalDepleted)
         .duration(200)
         .EUt(6400)
