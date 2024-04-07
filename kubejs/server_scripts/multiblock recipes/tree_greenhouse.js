@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
             .duration(600)
             .EUt(20);
 
-        event.recipes.gtceu.tree_greenhouse(`${type}_CO2_growing`)
+        event.recipes.gtceu.tree_greenhouse(`${type}_co2_growing`)
             .notConsumable(`minecraft:${type}_sapling`)
             .itemOutputs(`64x minecraft:${type}_log`)
             .outputFluids('gtceu:oxygen 1000')
@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
             .circuit(2)
             .EUt(20);
 
-        event.recipes.gtceu.tree_greenhouse(`${type}_NPKCO2_growing`)
+        event.recipes.gtceu.tree_greenhouse(`${type}_npkco2_growing`)
             .notConsumable(`minecraft:${type}_sapling`)
             .itemOutputs(`128x minecraft:${type}_log`)
             .outputFluids('gtceu:oxygen 2500')
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
         .EUt(20);
 
 
-    event.recipes.gtceu.tree_greenhouse(`mangrove_CO2_growing`)
+    event.recipes.gtceu.tree_greenhouse(`mangrove_co2_growing`)
         .notConsumable(`minecraft:mangrove_propagule`)
         .itemOutputs(`64x minecraft:mangrove_log`)
         .outputFluids('gtceu:oxygen 1000')
@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
         .circuit(2)
         .EUt(512 * 0.75);
 
-    event.recipes.gtceu.tree_greenhouse(`mangrove_NPKCO2_growing`)
+    event.recipes.gtceu.tree_greenhouse(`mangrove_npkco2_growing`)
         .notConsumable(`minecraft:mangrove_propagule`)
         .itemOutputs(`128x minecraft:mangrove_log`)
         .outputFluids('gtceu:oxygen 2500')
