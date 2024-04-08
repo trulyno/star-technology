@@ -18,8 +18,8 @@ ServerEvents.recipes(event => {
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:iron_dust')
         .chancedOutput('gtceu:iron_dust', 9500, 50)
-        .chancedOutput('gtceu:small_nickel_dust', 6500, 100)
-        .chancedOutput('gtceu:tiny_tin_dust', 5250, 50)
+        .chancedOutput('gtceu:nickel_dust', 6500, 100)
+        .chancedOutput('gtceu:tin_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
@@ -28,8 +28,8 @@ ServerEvents.recipes(event => {
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:magnetite_dust')
         .chancedOutput('gtceu:magnetite_dust', 9500, 50)
-        .chancedOutput('gtceu:small_gold_dust', 6500, 100)
-        .chancedOutput('gtceu:tiny_gold_dust', 5250, 50)
+        .chancedOutput('gtceu:gold_dust', 6500, 100)
+        .chancedOutput('gtceu:gold_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
@@ -38,8 +38,8 @@ ServerEvents.recipes(event => {
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:copper_dust')
         .chancedOutput('gtceu:copper_dust', 9500, 50)
-        .chancedOutput('gtceu:small_gold_dust', 6500, 100)
-        .chancedOutput('gtceu:tiny_nickel_dust', 5250, 50)
+        .chancedOutput('gtceu:gold_dust', 6500, 100)
+        .chancedOutput('gtceu:nickel_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
@@ -48,8 +48,8 @@ ServerEvents.recipes(event => {
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:tin_dust')
         .chancedOutput('gtceu:tin_dust', 9500, 50)
-        .chancedOutput('gtceu:small_iron_dust', 6500, 100)
-        .chancedOutput('gtceu:tiny_zinc_dust', 5250, 50)
+        .chancedOutput('gtceu:iron_dust', 6500, 100)
+        .chancedOutput('gtceu:zinc_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
@@ -58,8 +58,8 @@ ServerEvents.recipes(event => {
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:sphalerite_dust')
         .chancedOutput('gtceu:sphalerite_dust', 9500, 50)
-        .chancedOutput('gtceu:small_gallium_dust', 6500, 100)
-        .chancedOutput('gtceu:tiny_sulfur_dust', 5250, 50)
+        .chancedOutput('gtceu:gallium_dust', 6500, 100)
+        .chancedOutput('gtceu:sulfur_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
@@ -68,8 +68,8 @@ ServerEvents.recipes(event => {
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:galena_dust')
         .chancedOutput('gtceu:galena_dust', 9500, 50)
-        .chancedOutput('gtceu:small_silver_dust', 6500, 100)
-        .chancedOutput('gtceu:tiny_sulfur_dust', 5250, 50)
+        .chancedOutput('gtceu:silver_dust', 6500, 100)
+        .chancedOutput('gtceu:sulfur_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
@@ -78,8 +78,8 @@ ServerEvents.recipes(event => {
         .inputFluids('minecraft:water 100')
         .itemOutputs('gtceu:stibnite_dust')
         .chancedOutput('gtceu:stibnite_dust', 9500, 50)
-        .chancedOutput('gtceu:small_antimony_dust', 6500, 100)
-        .chancedOutput('gtceu:tiny_sulfur_dust', 5250, 50)
+        .chancedOutput('gtceu:antimony_dust', 6500, 100)
+        .chancedOutput('gtceu:sulfur_dust', 5250, 50)
         .duration(160)
         .EUt(28);
 
@@ -90,9 +90,9 @@ ServerEvents.recipes(event => {
             .inputFluids(`${(voltage >= 512) ? 'gtceu:sodium_persulfate' : 'gtceu:distilled_water'} 100`)
             .itemOutputs(`gtceu:${material}_dust`)
             .chancedOutput(`gtceu:${material}_dust`, 7500, 150)
-            .chancedOutput(`gtceu:small_${secondary}_dust`, 5500, 100)
-            .chancedOutput(`gtceu:tiny_${tertiary}_dust`, 3250, 50)
-            .chancedOutput(`gtceu:tiny_${quaternary}_dust`, 1750, 100)
+            .chancedOutput(`gtceu:${secondary}_dust`, 5500, 100)
+            .chancedOutput(`gtceu:${tertiary}_dust`, 3250, 50)
+            .chancedOutput(`gtceu:${quaternary}_dust`, 1750, 100)
             .duration(240)
             .EUt(voltage * 0.5);
     }
@@ -139,8 +139,8 @@ ServerEvents.recipes(event => {
             .itemOutputs(`gtceu:${material}_dust`)
             .chancedOutput(`gtceu:${material}_dust`, 7500, 150)
             .chancedOutput(`gtceu:${secondary}_dust`, 5500, 100)
-            .chancedOutput(`gtceu:tiny_${tertiary}_dust`, 3250, 50)
-            .chancedOutput(`gtceu:tiny_${quaternary}_dust`, 1750, 100)
+            .chancedOutput(`gtceu:${tertiary}_dust`, 3250, 50)
+            .chancedOutput(`gtceu:${quaternary}_dust`, 1750, 100)
             .duration(320)
             .EUt(voltage * 0.75);
     }
