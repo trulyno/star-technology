@@ -245,5 +245,6 @@
     "block.gtceu.kinetic_sieve": "Kinetic Sieve",
     "gtceu.kinetic_sieve": "Kinetic Sieve",
     "block.gtceu.petrochemistry_plant": "Petrochemistry Plant",
-    "gtceu.petrochemistry_plant": "Oil Refining"
+    "gtceu.petrochemistry_plant": "Oil Refining",
+    "material.gtceu.star_steel": "Star Steel"
 }
