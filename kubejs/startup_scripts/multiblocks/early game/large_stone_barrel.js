@@ -4,7 +4,6 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('large_stone_barrel')
         .category('large_stone_barrel')
-        .setEUIO('in')
         .setMaxIOSize(2, 1, 2, 1)
         .setSound(GTSoundEntries.BATH);
 });

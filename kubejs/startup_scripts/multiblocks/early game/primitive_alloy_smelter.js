@@ -5,7 +5,6 @@ const $PrimitiveWorkableMachine = Java.loadClass('com.gregtechceu.gtceu.common.m
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('primitive_alloy_smelter')
         .category('primitive_alloy_smelter')
-        .setEUIO('in')
         .setMaxIOSize(3, 2, 0, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.FIRE);
