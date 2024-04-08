@@ -31,6 +31,7 @@ ServerEvents.recipes(event => {
         'exnihilosequentia:fluid_item/ens_end_stone', 'exnihilosequentia:fluid_item/ens_netherrack', 'gtceu:shapeless/dust_bronze',
         'gtceu:shapeless/dust_brass', 'create:mixing/brass_ingot', 'minecraft:ender_eye', 'create_new_age:shaped/carbon_brushes',
         'create_new_age:shaped/basic_motor_extension', 'create_new_age:advanced_motor_extension', 'create_new_age:shaped/redstone_magnet',
+        'ae2:transform/damaged_budding_quartz', 'ae2:transform/chipped_budding_quartz', 'ae2:transform/flawed_budding_quartz'
     ];
 
     const toRemoveType = ['thermal:sawmill', 'thermal:pulverizer', 'thermal:insolator', 'thermal:centrifuge', 'thermal:crucible', 'thermal:chiller', 'thermal:refinery', 'thermal:pyrolyzer',
