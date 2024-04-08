@@ -1305,6 +1305,14 @@ materialRegistry(event => {
         .blastTemp(10299, 'highest', VA('uv'), 2500)
         .cableProperties(V('uhv'), 4, 0, true);
 
+    event.create('star_steel')
+        .ingot()
+        .fluid()
+        .components('2x steel', '1x mystery')
+        .color(0xccffcc)
+        .flags(no_decomp, plates, rod, frame)
+        .iconSet(METALLIC);
+
     // Mythril Line
     event.create('trichloromythrilium')
         .dust()

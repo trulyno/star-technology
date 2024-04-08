@@ -4,39 +4,6 @@ ServerEvents.recipes(event => {
     //AncientSkies idea
     //Uncrafting Crafting Storage/Storage Cells
     function applEn(ae2) {
-        function ae2add(ae2a) {
-
-            event.recipes.gtceu.packer(`start:crafting_storage_${ae2a}_uncrafting`)
-                .itemInputs(`ae2additions:${ae2a}k_crafting_storage`)
-                .itemOutputs(`ae2additions:cell_component_${ae2a}`)
-                .itemOutputs('ae2:crafting_unit')
-                .circuit(2)
-                .duration(100)
-                .EUt(7);
-
-            event.recipes.gtceu.packer(`start:storage_cell_${ae2a}_uncrafting`)
-                .itemInputs(`ae2additions:item_storage_cell_${ae2a}`)
-                .itemOutputs(`ae2additions:cell_component_${ae2a}`)
-                .itemOutputs('ae2:item_cell_housing')
-                .circuit(2)
-                .duration(100)
-                .EUt(7);
-
-            event.recipes.gtceu.packer(`start:fluid_cell${ae2a}_uncrafting`)
-                .itemInputs(`ae2additions:fluid_storage_cell_${ae2a}`)
-                .itemOutputs(`ae2additions:cell_component_${ae2a}`)
-                .itemOutputs('ae2:fluid_cell_housing')
-                .circuit(2)
-                .duration(100)
-                .EUt(7);
-
-        }
-
-        ae2add(1024);
-        ae2add(4096);
-        ae2add(16384);
-        ae2add(65536);
-
         event.recipes.gtceu.packer(`start:crafting_storage_${ae2}k_uncrafting`)
             .itemInputs(`ae2:${ae2}k_crafting_storage`)
             .itemOutputs(`ae2:cell_component_${ae2}k`)
@@ -66,6 +33,39 @@ ServerEvents.recipes(event => {
     applEn(16);
     applEn(64);
     applEn(256);
+    
+    function ae2add(ae2a) {
+
+        event.recipes.gtceu.packer(`start:crafting_storage_${ae2a}_uncrafting`)
+            .itemInputs(`ae2additions:${ae2a}k_crafting_storage`)
+            .itemOutputs(`ae2additions:cell_component_${ae2a}`)
+            .itemOutputs('ae2:crafting_unit')
+            .circuit(2)
+            .duration(100)
+            .EUt(7);
+
+        event.recipes.gtceu.packer(`start:storage_cell_${ae2a}_uncrafting`)
+            .itemInputs(`ae2additions:item_storage_cell_${ae2a}`)
+            .itemOutputs(`ae2additions:cell_component_${ae2a}`)
+            .itemOutputs('ae2:item_cell_housing')
+            .circuit(2)
+            .duration(100)
+            .EUt(7);
+
+        event.recipes.gtceu.packer(`start:fluid_cell${ae2a}_uncrafting`)
+            .itemInputs(`ae2additions:fluid_storage_cell_${ae2a}`)
+            .itemOutputs(`ae2additions:cell_component_${ae2a}`)
+            .itemOutputs('ae2:fluid_cell_housing')
+            .circuit(2)
+            .duration(100)
+            .EUt(7);
+
+    }
+
+    ae2add(1024);
+    ae2add(4096);
+    ae2add(16384);
+    ae2add(65536);
 
 
     //Colouring/Uncolouring Cables with a Chemical Bath 
