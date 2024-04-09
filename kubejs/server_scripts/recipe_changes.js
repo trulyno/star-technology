@@ -232,7 +232,7 @@ ServerEvents.recipes(event => {
   
     event.replaceInput({id: 'enderchests:ender_pouch'}, 'minecraft:leather', 'gtceu:carbon_fiber_plate');
 
-    
+    event.replaceInput({id: 'create_new_age:shaped/fluxuated_magnetite'}, 'create_new_age:overcharged_gold', 'gtceu:neodymium_dust');
 
     
 
