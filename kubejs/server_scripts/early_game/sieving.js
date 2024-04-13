@@ -133,5 +133,12 @@ ServerEvents.recipes(event => {
 
     sieve('flint', 0.25, dust, 'ae2:sky_dust', false);
     
+    // xycraft gems
+    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_blue', true);
+    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_red', true);
+    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_green', true);
+    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_light', true);
+    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_dark', true);
+    
 });
 
