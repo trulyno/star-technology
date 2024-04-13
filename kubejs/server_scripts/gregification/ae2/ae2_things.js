@@ -150,9 +150,9 @@ ServerEvents.recipes(event => {
         metaltype("iron", 2);
         metaltype("steel", 4);
         metaltype("aluminium", 6);
-        metaltype("stainless_steel", 8);
-        metaltype("titanium", 16);
-        metaltype("tungsten_steel", 32);
+        metaltype("kanthal", 8);
+        metaltype("tungsten", 16);
+        metaltype("rtm_alloy", 32);
 
     }
 
