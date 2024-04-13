@@ -231,8 +231,15 @@ ServerEvents.recipes(event => {
     event.recipes.create.pressing('gtceu:bronze_plate', 'gtceu:bronze_ingot');
   
     event.replaceInput({id: 'enderchests:ender_pouch'}, 'minecraft:leather', 'gtceu:carbon_fiber_plate');
-
-    event.replaceInput({id: 'create_new_age:shaped/fluxuated_magnetite'}, 'create_new_age:overcharged_gold', 'gtceu:neodymium_dust');
+    event.shaped(Item.of('create_new_age:netherite_magnet'), [
+        'MNM',
+        'NEN',
+        'MNM'
+    ], {
+        M: 'create_new_age:fluxuateted_magnetite',
+        N: 'gtceu:neodymium_ingot',
+        E: 'gtceu:energium_dust'
+    });
 
     
 
