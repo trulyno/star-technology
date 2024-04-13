@@ -21,8 +21,9 @@ ServerEvents.recipes(event => {
     // event.remove({mod: 'nuclearcraft', type: 'minecraft:shaped'});
     // event.remove({mod: 'nuclearcraft', type: 'minecraft:shapeless'});
 
-    event.remove({not: {type: 'nuclearcraft:fission_reactor_controller'}, mod: 'nuclearcraft'});
+    event.remove({not: {id: /nuclearcraft:fusion_core.*/}, mod: 'nuclearcraft'});
     event.remove({output: /nuclearcraft:fuel_.*/});
+    event.remove({output: 'nuclearcraft:fusion_core'});
 
     // isotopes
     const Th232 = 'nuclearcraft:thorium_232';
@@ -850,4 +851,54 @@ ServerEvents.recipes(event => {
         .itemOutputs('nuclearcraft:magnesium_heat_sink')
         .duration(320)
         .EUt(250);
+
+    event.recipes.gtceu.assembler('qnp')
+        .itemInputs('gtceu:long_tungsten_steel_rod', 'gtceu:tungsten_steel_drill_head', '2x gtceu:electrum_foil', 'gtceu:iv_power_unit')
+        .itemOutputs('nuclearcraft:qnp')
+        .duration(500)
+        .EUt(3000);
+
+    function fission(fuel) {
+        event.custom({
+            "type": "nuclearcraft:fission_reactor_controller",
+            "input": [
+                {
+                    "item": `nuclearcraft:fuel_${fuel}`
+                }
+            ],
+            "output": [
+                {
+                    "item": `nuclearcraft:depleted_fuel_${fuel}`
+                }
+            ],
+            "powerModifier": 1.0,
+            "radiation": 1.0,
+            "timeModifier": 1.0
+        });
+    }
+    fission('americium_hea_242');
+    fission('americium_lea_242');
+    fission('berkelium_heb_248');
+    fission('berkelium_leb_248');
+    fission('californium_hecf_249');
+    fission('californium_lecf_249');
+    fission('californium_hecf_251');
+    fission('californium_lecf_251');
+    fission('curium_hecm_243');
+    fission('curium_lecm_243');
+    fission('curium_hecm_245');
+    fission('curium_lecm_245');
+    fission('curium_hecm_247');
+    fission('curium_lecm_247');
+    fission('neptunium_hen_236');
+    fission('neptunium_len_236');
+    fission('plutonium_hep_239');
+    fission('plutonium_lep_239');
+    fission('plutonium_hep_241');
+    fission('plutonium_lep_241');
+    fission('thorium_tbu');
+    fission('uranium_heu_233');
+    fission('uranium_leu_233');
+    fission('uranium_heu_235');
+    fission('uranium_leu_235');
 });
