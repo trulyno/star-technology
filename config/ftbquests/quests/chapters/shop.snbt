@@ -349,6 +349,7 @@
 			y: 1.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["1549828A7E1B26F6"]
 			icon: "gtceu:silicon_wafer"
 			id: "00D589BF5FA06BB3"
