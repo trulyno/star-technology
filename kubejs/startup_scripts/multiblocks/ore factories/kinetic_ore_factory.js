@@ -2,7 +2,6 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('kinetic_ore_factory')
         .category('kinetic_ore_factory')
-        .setEUIO('in')
         .setMaxIOSize(1, 4, 1, 0)
         .setSound(GTSoundEntries.BATH);
 });
