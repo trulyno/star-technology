@@ -3,17 +3,17 @@ ServerEvents.recipes(event => {
         event.remove('gtceu:electrolyzer/decomposition_electrolyzing_sodium_bicarbonate');
 
 
-    event.recipes.gtceu.large_chemical_reactor('tiny_toulene_process')
+    event.recipes.gtceu.large_chemical_reactor('tiny_toluene_process')
         .itemInputs('gtceu:tiny_zeolite_dust') //maybe NC?
         .inputFluids('gtceu:benzene 1000','gtceu:methanol 1000')
-        .outputFluids('gtceu:toulene 1000','minecraft:water 1000')
+        .outputFluids('gtceu:toluene 1000','minecraft:water 1000')
         .duration(110)
         .EUt(GTValues.VHA[GTValues.EV]);
 
-    event.recipes.gtceu.large_chemical_reactor('toulene_process')
+    event.recipes.gtceu.large_chemical_reactor('toluene_process')
         .itemInputs('gtceu:zeolite_dust') //maybe NC?
         .inputFluids('gtceu:benzene 9000','gtceu:methanol 9000')
-        .outputFluids('gtceu:toulene 9000','minecraft:water 9000')
+        .outputFluids('gtceu:toluene 9000','minecraft:water 9000')
         .duration(200)
         .EUt(GTValues.VHA[GTValues.IV]);
     
