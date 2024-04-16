@@ -63,7 +63,7 @@ recipes:
 
   # Whether to make the Flint and Steel recipe require steel parts.
   # Default: true.
-  flintAndSteelRequireSteel: true
+  flintAndSteelRequireSteel: false
 
   # Whether to remove Vanilla Block Recipes from the Crafting Table.
   # Default: false
