@@ -308,6 +308,7 @@ materialRegistry(event => {
     periodicTableElement('hafnium', 'ingot');
     periodicTableElement('seaborgium', 'ingot');
     periodicTableElement('flerovium', 'ingot');
+    periodicTableElement('rhenium', 'ingot');
 
     // Dusts
     periodicTableElement('selenium', 'dust');
@@ -337,7 +338,8 @@ materialRegistry(event => {
     blastProperty('polonium', 10000, 'higher', VA('zpm'), 600);
     blastProperty('astatine', 10000, 'higher', VA('zpm'), 800);
     blastProperty('hafnium', 10000, 'higher', VA('zpm'), 900);
-    blastProperty('seaborgium', 10000, 'higher', VA('zpm'), 1000)
+    blastProperty('rhenium', 10000, 'higher', VA('zpm'), 900);
+    blastProperty('seaborgium', 10000, 'higher', VA('zpm'), 1000);
     blastProperty('flerovium', 10000, 'higher', VA('luv'), 900);
 
     // Materials from elements
@@ -1167,6 +1169,13 @@ materialRegistry(event => {
         .ore(4, 2)
         .components('4x estalt', '1x sulfur')
         .color(0x800000)
+        .flags(no_decomp);
+
+    event.create('rheniite')
+        .dust()
+        .ore(4, 2)
+        .components('1x rhenium', '2x sulfur')
+        .color(0x4e6344)
         .flags(no_decomp);
 
     event.create('nether_mythrilium_rich_magma')
