@@ -312,7 +312,7 @@ materialRegistry(event => {
     // Dusts
     periodicTableElement('selenium', 'dust');
     periodicTableElement('strontium', 'dust');
-    periodicTableElement('thulium', 'dust');
+    periodicTableElement('thallium', 'dust');
 
     // Liquids
 
@@ -1067,7 +1067,7 @@ materialRegistry(event => {
     event.create('crookesite')
         .dust()
         .ore(4, 3)
-        .components('7x copper', '1x thulium', '4x selenium')
+        .components('7x copper', '1x thallium', '4x selenium')
         .color(0x00ff99)
 
     event.create('calaverite')
