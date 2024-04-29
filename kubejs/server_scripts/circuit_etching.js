@@ -8,6 +8,14 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VHA[GTValues.HV]);
 
+    event.recipes.gtceu.large_chemical_reactor('copper_chloride')
+        .itemInputs('1x gtceu:copper_dust')
+        .inputFluids('gtceu:chlorine 1000')
+        .itemOutputs('2x gtceu:copper_chloride_dust')
+        .duration(600)
+        .EUt(GTValues.VHA[GTValues.HV]);
+
+
     event.recipes.gtceu.mixer('cupric_chloride_solution')
         .itemInputs('1x gtceu:copper_chloride_dust')
         .inputFluids('gtceu:hydrochloric_acid 1000')
