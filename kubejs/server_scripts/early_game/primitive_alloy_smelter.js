@@ -1,18 +1,18 @@
 
 ServerEvents.recipes(event => {
 
-    event.shaped(Item.of('gtceu:primitive_alloy_smelter'), [
-        'HRS',
-        'PBR',
-        'FRS'
-    ], {
-        H: '#forge:tools/hammers',
-        R: 'gtceu:bronze_rod',
-        S: 'gtceu:bronze_screw',
-        P: 'gtceu:bronze_plate',
-        B: 'gtceu:firebricks',
-        F: '#forge:tools/screwdrivers'
-    });
+    // event.shaped(Item.of('gtceu:primitive_alloy_smelter'), [
+    //     'HRS',
+    //     'PBR',
+    //     'FRS'
+    // ], {
+    //     H: '#forge:tools/hammers',
+    //     R: 'gtceu:bronze_rod',
+    //     S: 'gtceu:bronze_screw',
+    //     P: 'gtceu:bronze_plate',
+    //     B: 'gtceu:firebricks',
+    //     F: '#forge:tools/screwdrivers'
+    // });
 
     // Red Alloy
     event.recipes.gtceu.primitive_alloy_smelter('primitive_red_alloy_ingot_coal')
