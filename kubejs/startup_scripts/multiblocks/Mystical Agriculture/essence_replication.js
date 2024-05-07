@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('essence_replicator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('essence_replication')
-        .recipeModifier(GTRecipeModifiers.PARALLEL_HATCH.apply(OverclockingLogic.PERFECT_OVERCLOCK, GTRecipeModifiers.ELECTRIC_OVERCLOCK))
+        .recipeModifiers(GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
         .appearanceBlock(GTBlocks.CASING_INVAR_HEATPROOF)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('IIIII', '#####', '#####', '#####', 'IIIII')

@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('ore_processing_plant', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('ore_processing_plant')
-        .recipeModifier(GTRecipeModifiers.PARALLEL_HATCH.apply(OverclockingLogic.PERFECT_OVERCLOCK, GTRecipeModifiers.ELECTRIC_OVERCLOCK))
+        .recipeModifiers(GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' AAA ', ' FFF ', ' FFF ', '  F  ', '     ', '     ', '     ')

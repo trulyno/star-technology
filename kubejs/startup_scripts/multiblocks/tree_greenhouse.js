@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('tree_greenhouse', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('tree_greenhouse')
-        .recipeModifier(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
+        .recipeModifiers(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('HHHHHHH', '#FGGGF#', '#FGGGF#', '#FGGGF#', '##FFF##')

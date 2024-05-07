@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('super_pressure_heat_chamber', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('super_pressure_heat_chamber')
-        .recipeModifier(GTRecipeModifiers.PARALLEL_HATCH.apply(OverclockingLogic.PERFECT_OVERCLOCK, GTRecipeModifiers.ELECTRIC_OVERCLOCK))
+        .recipeModifiers(GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
         .appearanceBlock(GCyMBlocks.CASING_STRESS_PROOF)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('HHH SSS HHH', '     S     ', '    SSS    ', '    SSS    ', '   S S S   ', ' SS SSS SS ', 'SSSSSSSSSSS', ' SS SSS SS ', '   S S S   ', '    SSS    ', '    SSS    ', '     S     ', 'HHH SSS HHH')
