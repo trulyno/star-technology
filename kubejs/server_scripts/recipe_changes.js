@@ -26,6 +26,7 @@ ServerEvents.recipes(event => {
     );
 
     event.recipes.create.mixing('3x gtceu:bronze_ingot', ['3x minecraft:copper_ingot', '#forge:ingots/tin']).heatRequirement('lowheated');
+    event.recipes.create.mixing('1x gtceu:red_alloy_ingot', ['minecraft:copper_ingot', '4x minecraft:redstone']).heatRequirement('lowheated');
     event.recipes.create.mixing('3x gtceu:brass_ingot', ['3x minecraft:copper_ingot', '#forge:ingots/zinc']).heatRequirement('lowheated');
 
     event.shaped(Item.of('gtceu:wood_plate'), [
@@ -49,6 +50,18 @@ ServerEvents.recipes(event => {
         .inputFluids('thermal:latex 250')
         .itemOutputs('thermal:rubber')
         .duration(120)
+        .EUt(8);
+
+    event.recipes.gtceu.extractor('latex_extraction')
+        .itemInputs('thermal:rubber')
+        .outputFluids('thermal:latex 250')
+        .duration(120)
+        .EUt(8);
+
+    event.recipes.gtceu.chemical_reactor('latex_rubber')
+        .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
+        .outputFluids('gtceu:rubber 576')
+        .duration(240)
         .EUt(8);
 
     event.recipes.gtceu.extractor('nether_agglomeration')
