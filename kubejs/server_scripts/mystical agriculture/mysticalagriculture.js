@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer('nickel_essence_mix')
         .itemInputs('15x mysticalagriculture:stone_essence', '7x mysticalagriculture:fire_essence', '7x mysticalagriculture:water_essence')
-        .itemOutputs('mysticalagriculture:tin_essence')
+        .itemOutputs('mysticalagriculture:nickel_essence')
         .duration(400)
         .EUt(400)
         .circuit(13);

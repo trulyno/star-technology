@@ -159,6 +159,6 @@ ServerEvents.recipes(event => {
     opp2(8192, 'berzelianite', 'umangite', 'aguilarite', 'polybasite', 'berzelianite');
     opp2(8192, 'umangite', 'berzelianite', 'aguilarite', 'polybasite', 'umangite');
     opp2(8192, 'aguilarite', 'berzelianite', 'umangite', 'polybasite', 'aguilarite');
-    
+    opp2(8192, 'rheniite', 'molybdenite', 'sulfur', 'molybdenum', 'rheniite');
 
 });
