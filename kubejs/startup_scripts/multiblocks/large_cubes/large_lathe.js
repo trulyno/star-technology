@@ -16,6 +16,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1)))
             .where(' ', Predicates.air())
             .build())
-        .workableCasingRenderer("kubejs:block/casings/bismuth_bronze_casing",
+        .workableCasingRenderer("kubejs:block/casings/bizmuth_bronze_casing",
         "gtceu:block/multiblock/electric_blast_furnace", false);
 });
