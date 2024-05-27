@@ -344,7 +344,7 @@ StartupEvents.registry('block', event => {
         .textureOverrideRenderer('minecraft:block/cube_all',
         { 'all': new ResourceLocation('kubejs', 'block/casings/machine_casing_peek')});
 
-    event.create('beryllium_aluminium_casing')
+    event.create('beryllium_aluminium_alloy_casing')
         .displayName('Beryllium-Aluminium Casing')
         .hardness(5)
         .resistance(1)

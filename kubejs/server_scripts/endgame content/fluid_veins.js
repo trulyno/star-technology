@@ -1,7 +1,7 @@
 // In server events
 GTCEuServerEvents.fluidVeins(event => {
   event.add('start:abydos_titanite_rich_magma_deposit', vein => {
-    vein.addSpawnDimension('sgjourney:abydos')
+    vein.dimensions('sgjourney:abydos')
     vein.fluid(() => Fluid.of('gtceu:abydos_titanite_rich_magma').fluid)
     vein.weight(600)
     vein.minimumYield(120)
@@ -12,7 +12,7 @@ GTCEuServerEvents.fluidVeins(event => {
   })
 
   event.add('start:abydos_zapolite_rich_magma_deposit', vein => {
-    vein.addSpawnDimension('sgjourney:abydos')
+    vein.dimensions('sgjourney:abydos')
     vein.fluid(() => Fluid.of('gtceu:abydos_zapolite_rich_magma').fluid)
     vein.weight(500)
     vein.minimumYield(120)
@@ -23,7 +23,7 @@ GTCEuServerEvents.fluidVeins(event => {
   })
 
   event.add('start:nether_mythrilium_rich_magma_deposit', vein => {
-    vein.addSpawnDimension('minecraft:the_nether')
+    vein.dimensions('minecraft:the_nether')
     vein.fluid(() => Fluid.of('gtceu:nether_mythrilium_rich_magma').fluid)
     vein.weight(500)
     vein.minimumYield(120)
@@ -34,7 +34,7 @@ GTCEuServerEvents.fluidVeins(event => {
   })
 
   event.add('start:nether_adamantite_rich_magma_deposit', vein => {
-    vein.addSpawnDimension('minecraft:the_nether')
+    vein.dimensions('minecraft:the_nether')
     vein.fluid(() => Fluid.of('gtceu:nether_adamantite_rich_magma').fluid)
     vein.weight(500)
     vein.minimumYield(120)
@@ -45,7 +45,7 @@ GTCEuServerEvents.fluidVeins(event => {
   })
 
   event.add('start:nether_estaltine_rich_magma_deposit', vein => {
-    vein.addSpawnDimension('minecraft:the_nether')
+    vein.dimensions('minecraft:the_nether')
     vein.fluid(() => Fluid.of('gtceu:nether_estaltine_rich_magma').fluid)
     vein.weight(500)
     vein.minimumYield(120)
