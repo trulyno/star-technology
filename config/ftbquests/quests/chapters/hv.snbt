@@ -521,6 +521,91 @@
 			x: -2.0d
 			y: -6.0d
 		}
+		{
+			dependencies: [
+				"622FF7689C5D4BE9"
+				"0A3B1E1E24C7053D"
+			]
+			id: "2B064B48B36F71DB"
+			rewards: [{
+				count: 4
+				id: "2D172E1EE143A442"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "37EC420C13593519"
+				item: {
+					Count: 1b
+					id: "gtceu:advanced_electric_jetpack"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["622FF7689C5D4BE9"]
+			id: "227FF624DA142892"
+			rewards: [{
+				count: 4
+				id: "1F06384FCCA59F80"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7028A139065DE27F"
+					item: {
+						Count: 1b
+						id: "gtceu:nanomuscle_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "70D7625C730C75F5"
+					item: {
+						Count: 1b
+						id: "gtceu:nanomuscle_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6644624E212362E4"
+					item: {
+						Count: 1b
+						id: "gtceu:nanomuscle_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "057007C78C3ED2BC"
+					item: {
+						Count: 1b
+						id: "gtceu:nanomuscle_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "NanoMuscle Armor"
+			x: 2.0d
+			y: -6.0d
+		}
 	]
 	title: "HV"
 }

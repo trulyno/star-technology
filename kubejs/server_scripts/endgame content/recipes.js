@@ -290,7 +290,21 @@ ServerEvents.recipes(event => {
         .duration(360)
         .EUt(320);
 
+    event.recipes.gtceu.large_chemical_reactor('strontium_oxide')
+        .itemInputs('gtceu:strontium_dust')
+        .inputFluids('gtceu:oxygen 1000')
+        .itemOutputs('2x gtceu:strontium_oxide_dust')
+        .duration(360)
+        .EUt(320);
+
     event.recipes.gtceu.chemical_reactor('titanium_oxide')
+        .itemInputs('gtceu:titanium_dust')
+        .inputFluids('gtceu:oxygen 1000')
+        .itemOutputs('2x gtceu:titanium_oxide_dust')
+        .duration(360)
+        .EUt(320);
+
+    event.recipes.gtceu.large_chemical_reactor('titanium_oxide')
         .itemInputs('gtceu:titanium_dust')
         .inputFluids('gtceu:oxygen 1000')
         .itemOutputs('2x gtceu:titanium_oxide_dust')
@@ -304,6 +318,12 @@ ServerEvents.recipes(event => {
         .EUt(420);
 
     event.recipes.gtceu.chemical_reactor('iron_selenide')
+        .itemInputs('gtceu:iron_dust', 'gtceu:selenium_dust')
+        .itemOutputs('gtceu:iron_selenide_dust')
+        .duration(360)
+        .EUt(1460);
+
+    event.recipes.gtceu.large_chemical_reactor('iron_selenide')
         .itemInputs('gtceu:iron_dust', 'gtceu:selenium_dust')
         .itemOutputs('gtceu:iron_selenide_dust')
         .duration(360)

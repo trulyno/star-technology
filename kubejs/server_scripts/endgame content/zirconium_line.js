@@ -15,6 +15,14 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(120);
 
+    event.recipes.gtceu.large_chemical_reactor('perchloric_acid')
+        .itemInputs('gtceu:sodium_perchlorate_dust')
+        .inputFluids('gtceu:hydrochloric_acid 1000')
+        .outputFluids('gtceu:perchloric_acid 1000')
+        .itemOutputs('gtceu:salt_dust')
+        .duration(200)
+        .EUt(120);
+
     event.recipes.gtceu.mixer('titanite_proc_1')
         .itemInputs('gtceu:titanite_dust')
         .inputFluids('gtceu:perchloric_acid 3000')
@@ -30,6 +38,14 @@ ServerEvents.recipes(event => {
         .EUt(28000);
 
     event.recipes.gtceu.chemical_reactor('calcium_perchlorate_to_perchloric_acid')
+        .itemInputs('gtceu:calcium_perchlorate_dust')
+        .inputFluids('gtceu:sulfuric_acid 1000')
+        .itemOutputs('gtceu:calcium_sulfate_dust')
+        .outputFluids('gtceu:perchloric_acid 2000')
+        .duration(120)
+        .EUt(496);
+
+    event.recipes.gtceu.large_chemical_reactor('calcium_perchlorate_to_perchloric_acid')
         .itemInputs('gtceu:calcium_perchlorate_dust')
         .inputFluids('gtceu:sulfuric_acid 1000')
         .itemOutputs('gtceu:calcium_sulfate_dust')

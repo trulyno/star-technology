@@ -64,6 +64,12 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(8);
 
+    event.recipes.gtceu.large_chemical_reactor('latex_rubber')
+        .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
+        .outputFluids('gtceu:rubber 576')
+        .duration(240)
+        .EUt(8);
+
     event.recipes.gtceu.extractor('nether_agglomeration')
         .itemInputs('gtceu:netherrack_dust')
         .itemOutputs('mysticalagriculture:nether_agglomeratio')
@@ -140,7 +146,7 @@ ServerEvents.recipes(event => {
         .duration(5)
         .EUt(30);
 
-    const types = ['soul_infused', 'signalum', 'lumium', 'enderium', 'shellite', 'twinite', 'dragonsteel', 'prismalium', 'melodium', 'stellarium', 'austenitic_stainless_steel_304', 'inconel_625'];
+    const types = ['soul_infused', 'signalum', 'lumium', 'enderium', 'shellite', 'twinite', 'dragonsteel', 'prismalium', 'melodium', 'stellarium', 'austenitic_stainless_steel_304', 'inconel_625', 'birmabright', 'duralumin', 'hydronalium', 'beryllium_aluminium_alloy', 'elgiloy', 'beryllium_bronze', 'silicon_bronze', 'kovar', 'zamak', 'tumbaga', 'sterling_silver', 'blue_steel', 'red_steel'];
 
     types.forEach(element => {
         event.shaped(Item.of(`2x kubejs:${element}_casing`), [
@@ -254,6 +260,117 @@ ServerEvents.recipes(event => {
         E: 'gtceu:energium_dust'
     });
 
-    
+    event.recipes.thermal.lapidary_fuel('gtceu:diatron_gem', 750000);
+    event.recipes.thermal.lapidary_fuel('gtceu:flawless_diatron_gem', 750000 * 2.5);
+    event.recipes.thermal.lapidary_fuel('gtceu:exquisite_diatron_gem', 750000 * 6.25);
+
+    event.recipes.gtceu.mixer('diatron_dust')
+        .itemInputs('3x gtceu:energium_dust', '2x gtceu:diamond_dust')
+        .itemOutputs('5x gtceu:diatron_dust')
+        .duration(200)
+        .EUt(480);
+
+    event.recipes.gtceu.autoclave('diatron_water')
+        .itemInputs('gtceu:diatron_dust')
+        .inputFluids('minecraft:water 250')
+        .chancedOutput('gtceu:diatron_gem', 7000, 1000)
+        .duration(1200)
+        .EUt(24);
+
+    event.recipes.gtceu.autoclave('diatron_dis_water')
+        .itemInputs('gtceu:diatron_dust')
+        .inputFluids('gtceu:distilled_water 50')
+        .itemOutputs('gtceu:diatron_gem')
+        .duration(600)
+        .EUt(24);
+
+    event.recipes.gtceu.mixer('birmabright')
+        .itemInputs('7x gtceu:aluminium_dust', '2x gtceu:magnesium_dust', '1x gtceu:manganese_dust')
+        .itemOutputs('10x gtceu:birmabright_dust')
+        .duration(350)
+        .EUt(GTValues.VHA[GTValues.HV])
+        .circuit(1);
+
+    event.recipes.gtceu.mixer('duralumin')
+        .itemInputs('4x gtceu:aluminium_dust', '3x gtceu:copper_dust', '1x gtceu:magnesium_dust', '1x gtceu:manganese_dust')
+        .itemOutputs('9x gtceu:duralumin_dust')
+        .duration(400)
+        .EUt(GTValues.VHA[GTValues.HV])
+        .circuit(1);
+
+    event.recipes.gtceu.mixer('beryllium_aluminium_alloy')
+        .itemInputs('7x gtceu:beryllium_dust', '1x gtceu:aluminium_dust')
+        .itemOutputs('8x gtceu:beryllium_aluminium_alloy_dust')
+        .duration(310)
+        .EUt(GTValues.VHA[GTValues.HV])
+        .circuit(1);
+
+    event.recipes.gtceu.mixer('hydronalium')
+        .itemInputs('6x gtceu:aluminium_dust', '3x gtceu:magnesium_dust', '1x gtceu:manganese_dust')
+        .itemOutputs('10x gtceu:hydronalium_dust')
+        .duration(410)
+        .EUt(GTValues.VHA[GTValues.HV])
+        .circuit(2);
+
+    event.recipes.gtceu.mixer('elgiloy')
+        .itemInputs('4x gtceu:cobalt_dust', '2x gtceu:chromium_dust', '1x gtceu:nickel_dust', '1x gtceu:steel_dust', '1x gtceu:molybdenum_dust', '1x gtceu:manganese_dust')
+        .itemOutputs('10x gtceu:elgiloy_dust')
+        .duration(420)
+        .EUt(GTValues.VHA[GTValues.HV]);
+
+    event.recipes.gtceu.mixer('beryllium_bronze')
+        .itemInputs('10x gtceu:copper_dust', '1x gtceu:beryllium_dust')
+        .itemOutputs('11x gtceu:beryllium_bronze_dust')
+        .duration(290)
+        .EUt(GTValues.VHA[GTValues.HV])
+        .circuit(1);
+
+    event.recipes.gtceu.mixer('silicon_bronze')
+        .itemInputs('32x gtceu:copper_dust', '2x gtceu:silicon_dust', '1x gtceu:manganese_dust')
+        .itemOutputs('35x gtceu:silicon_bronze_dust')
+        .duration(600)
+        .EUt(GTValues.VHA[GTValues.HV])
+        .circuit(1);
+
+    event.recipes.gtceu.mixer('kovar')
+        .itemInputs('18x gtceu:iron_dust', '11x gtceu:nickel_dust', '6x gtceu:cobalt_dust')
+        .itemOutputs('35x gtceu:kovar_dust')
+        .duration(450)
+        .EUt(GTValues.VHA[GTValues.HV])
+        .circuit(3);
+
+    event.recipes.gtceu.mixer('zamak')
+        .itemInputs('1x gtceu:zinc_dust', '4x gtceu:aluminium_dust', '3x gtceu:copper_dust')
+        .itemOutputs('8x gtceu:zamak_dust')
+        .duration(350)
+        .EUt(GTValues.VHA[GTValues.HV])
+        .circuit(3);
+
+    event.recipes.gtceu.mixer('tumbaga')
+        .itemInputs('20x gtceu:copper_dust', '6x gtceu:gold_dust', '1x gtceu:silver_dust')
+        .itemOutputs('27x gtceu:tumbaga_dust')
+        .duration(470)
+        .EUt(GTValues.VHA[GTValues.HV])
+        .circuit(3);
+
+    event.recipes.gtceu.assembler('multiblock_upgrade_kit')
+        .itemInputs('thermal:lumium_glass', '#gtceu:circuits/ev', '2x gtceu:double_signalum_plate', '12x gtceu:cobalt_foil')
+        .itemOutputs('kubejs:multiblock_upgrade_kit')
+        .duration(800)
+        .EUt(GTValues.V[GTValues.HV]);
+
+    event.recipes.create.item_application('gtceu:t_large_bender', ['gtceu:hv_bender', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:t_large_centrifuge', ['gtceu:hv_centrifuge', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:t_large_electrolyzer', ['gtceu:hv_electrolyzer', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:t_large_extruder', ['gtceu:hv_extruder', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:t_large_forming_press', ['gtceu:hv_forming_press', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:t_large_lathe', ['gtceu:hv_lathe', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:t_large_mixer', ['gtceu:hv_mixer', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:t_large_ore_washer', ['gtceu:hv_ore_washer', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:t_large_sifter', ['gtceu:hv_sifter', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:t_large_thermal_centrifuge', ['gtceu:hv_thermal_centrifuge', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:t_large_wiremill', ['gtceu:hv_wiremill', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:t_large_macerator', ['gtceu:hv_macerator', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:large_rock_crusher', ['gtceu:hv_rock_crusher', 'kubejs:multiblock_upgrade_kit']);
 
 });

@@ -717,6 +717,29 @@
 			x: 1.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["62BB54F3EE1A0966"]
+			id: "0A3B1E1E24C7053D"
+			rewards: [{
+				count: 3
+				id: "4A4237EED58BB964"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A1EF6D703ED48EB"
+				item: {
+					Count: 1b
+					id: "gtceu:electric_jetpack"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.0d
+		}
 	]
 	title: "MV"
 }

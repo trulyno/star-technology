@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
         .EUt(16);
 
     event.recipes.gtceu.alloy_smelter('star_steel')
-        .itemInputs('ae2:fluix_crystal', '2x gtceu:steel_ingot')
+        .itemInputs('ae2:sky_dust', '2x gtceu:steel_ingot')
         .itemOutputs('3x gtceu:star_steel_ingot')
         .duration(160)
         .EUt(56);

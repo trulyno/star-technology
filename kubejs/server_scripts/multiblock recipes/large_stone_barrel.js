@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_stone_barrel('tuff_pebbles')
         .inputFluids('minecraft:lava 1', 'minecraft:water 1')
         .chancedOutput('exnihilosequentia:tuff_pebble', 7500, 0)
-        .circuit(3)
+        .circuit(7)
         .duration(1);
 
     event.recipes.gtceu.large_stone_barrel('dripstone_pebbles')

@@ -51,8 +51,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_barrel('slimeshroom_dupe')
         .notConsumable('thermal:slime_mushroom_spores')
         .inputFluids('exnihilosequentia:witch_water 100')
-        .chancedOutput('thermal:slime_mushroom_spores', 5000, 0)
-        .duration(800);
+        .chancedOutput('thermal:slime_mushroom_spores', 9500, 0)
+        .duration(20);
 
     event.shapeless(Item.of('3x minecraft:brown_mushroom'), ['minecraft:brown_mushroom_block', '#forge:tools/mortars']);
     event.recipes.gtceu.macerator('brown_mushrooms')

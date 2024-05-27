@@ -195,7 +195,10 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["462E016CCFCD4DAA"]
+			dependencies: [
+				"462E016CCFCD4DAA"
+				"3F3E3CD778320054"
+			]
 			id: "0478033E13CF24CD"
 			rewards: [{
 				id: "0AEDE58A2EC41889"
@@ -869,39 +872,12 @@
 		{
 			dependencies: ["27C811CBD873B7E3"]
 			id: "3073A4454F838179"
-			rewards: [
-				{
-					id: "309AC0F59C454F39"
-					item: {
-						Count: 1b
-						id: "create:schematic"
-						tag: {
-							Anchor: {
-								X: 0
-								Y: 0
-								Z: 0
-							}
-							Bounds: [
-								5
-								7
-								5
-							]
-							Deployed: 0b
-							File: "electrico_kinetic_factory.nbt"
-							Mirror: "NONE"
-							Owner: "trulyno"
-							Rotation: "NONE"
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 2
-					id: "4590EB14C80E2DF3"
-					item: "kubejs:coin"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 2
+				id: "4590EB14C80E2DF3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1B6589856AD3AC3B"
 				item: "gtceu:electrico_kinetic_ore_factory"
@@ -1107,39 +1083,12 @@
 		{
 			dependencies: ["6E4B3F7B1624CA13"]
 			id: "0FCB10159A8E572F"
-			rewards: [
-				{
-					id: "13961B421A4E891E"
-					item: {
-						Count: 1b
-						id: "create:schematic"
-						tag: {
-							Anchor: {
-								X: 0
-								Y: 0
-								Z: 0
-							}
-							Bounds: [
-								3
-								4
-								3
-							]
-							Deployed: 0b
-							File: "ebf.nbt"
-							Mirror: "NONE"
-							Owner: "trulyno"
-							Rotation: "NONE"
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 4
-					id: "6B7A677ADC782181"
-					item: "kubejs:coin"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "6B7A677ADC782181"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1221FFF2D9C09D1F"
 				item: "gtceu:electric_blast_furnace"
@@ -1200,83 +1149,13 @@
 		}
 		{
 			dependencies: ["27C811CBD873B7E3"]
-			id: "041B9E334DAF4555"
-			rewards: [
-				{
-					id: "5A70C45DBCF314B7"
-					item: {
-						Count: 1b
-						id: "create:schematic"
-						tag: {
-							Anchor: {
-								X: 0
-								Y: 0
-								Z: 0
-							}
-							Bounds: [
-								5
-								4
-								5
-							]
-							Deployed: 0b
-							File: "primitive_alloy_smelter.nbt"
-							Mirror: "NONE"
-							Owner: "trulyno"
-							Rotation: "NONE"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1EBD672C9126EB5C"
-					item: "kubejs:coin"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "78AAFF63BD907B8B"
-				item: "gtceu:primitive_alloy_smelter"
+			id: "0897FECA3E66208F"
+			rewards: [{
+				count: 2
+				id: "65E5CDAF864A470C"
+				item: "kubejs:coin"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["27C811CBD873B7E3"]
-			id: "0897FECA3E66208F"
-			rewards: [
-				{
-					id: "262CA582CCBD172A"
-					item: {
-						Count: 1b
-						id: "create:schematic"
-						tag: {
-							Anchor: {
-								X: 0
-								Y: 0
-								Z: 0
-							}
-							Bounds: [
-								5
-								7
-								5
-							]
-							Deployed: 0b
-							File: "kinetic_ore_factory.nbt"
-							Mirror: "NONE"
-							Owner: "trulyno"
-							Rotation: "NONE"
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 2
-					id: "65E5CDAF864A470C"
-					item: "kubejs:coin"
-					type: "item"
-				}
-			]
 			tasks: [{
 				id: "7E38E4BE494ADCF5"
 				item: "gtceu:kinetic_ore_factory"
@@ -1302,7 +1181,8 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["041B9E334DAF4555"]
+			dependencies: ["2AB0BAA6F02C9C3D"]
+			description: ["How do you get red alloy? You can make it in a Create mixer setup!"]
 			id: "5D9A9B22F24A2BE3"
 			rewards: [{
 				id: "6D531BA83EC07B1E"
@@ -1318,10 +1198,8 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"526B1E1D952E5F4E"
-				"041B9E334DAF4555"
-			]
+			dependencies: ["526B1E1D952E5F4E"]
+			description: ["Yet another mixer setup recipe."]
 			id: "02FCF02FB80ECD2F"
 			rewards: [{
 				id: "36EAB953C7A65F75"
@@ -1463,6 +1341,55 @@
 			}]
 			x: 4.0d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"087998D190610924"
+				"3307B565157FA498"
+			]
+			id: "17878D8FE10C8E5F"
+			tasks: [{
+				id: "4E43BEA6D47C4E7B"
+				item: "create_new_age:netherite_magnet"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["0FB5E8DA28421E24"]
+			id: "0A7E804767506D89"
+			optional: true
+			rewards: [{
+				id: "46B1079D4DC3F4CD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C426120F7C81436"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0A7E804767506D89"]
+			id: "1F5A1B493682A32D"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "2B79B5601FD7CF2C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "021E21F18E1C280C"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
 		}
 	]
 	title: "LV"

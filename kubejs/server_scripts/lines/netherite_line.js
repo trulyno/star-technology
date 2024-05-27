@@ -38,7 +38,19 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(22);
 
+    event.recipes.gtceu.large_chemical_reactor('chlorine_trifluoride')
+        .inputFluids('gtceu:chlorine 1000', 'gtceu:fluorine 3000')
+        .outputFluids('gtceu:chlorine_trifluoride 1000')
+        .duration(800)
+        .EUt(22);
+
     event.recipes.gtceu.chemical_reactor('dichloroethylene')
+        .inputFluids('gtceu:ethane 1000', 'gtceu:chlorine 2000')
+        .outputFluids('gtceu:dichloroethane 1000', 'gtceu:hydrochloric_acid 2000')
+        .duration(200)
+        .EUt(120);
+
+    event.recipes.gtceu.large_chemical_reactor('dichloroethylene')
         .inputFluids('gtceu:ethane 1000', 'gtceu:chlorine 2000')
         .outputFluids('gtceu:dichloroethane 1000', 'gtceu:hydrochloric_acid 2000')
         .duration(200)
@@ -50,4 +62,9 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(200);
 
+    event.recipes.gtceu.large_chemical_reactor('tetrachloroetylene')
+        .inputFluids('gtceu:dichloroethane', 'gtceu:chlorine 6000')
+        .outputFluids('gtceu:tetrachloroethylene 1000', 'gtceu:hydrochloric_acid 4000')
+        .duration(600)
+        .EUt(200);
 });

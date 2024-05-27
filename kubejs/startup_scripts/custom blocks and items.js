@@ -183,6 +183,10 @@ StartupEvents.registry('item', event => {
     event.create('draconic_scale_cells')
         .displayName('Draconic Scale Cells')
         .texture('kubejs:item/draconic_scale_cells');
+
+    event.create('multiblock_upgrade_kit')
+        .displayName('Multiblock Upgrade Kit')
+        .texture('kubejs:item/upgrade_kit');
 });
 
 // Custom Blocks
@@ -193,6 +197,9 @@ StartupEvents.registry('block', event => {
         .hardness(10)
         .resistance(1)
         .lightLevel(0)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
         .textureOverrideRenderer('minecraft:block/cube_all',
             { 'all': new ResourceLocation('kubejs', 'block/casings/casing-soul-infused') });
             
@@ -201,6 +208,9 @@ StartupEvents.registry('block', event => {
         .hardness(10)
         .resistance(1)
         .lightLevel(2)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
         .textureOverrideRenderer('minecraft:block/cube_all',
             { 'all': new ResourceLocation('kubejs', 'block/casings/casing-signalum') });
 
@@ -208,6 +218,9 @@ StartupEvents.registry('block', event => {
         .hardness(10)
         .resistance(1)
         .lightLevel(2)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
         .textureOverrideRenderer('minecraft:block/cube_all',
             { 'all': new ResourceLocation('kubejs', 'block/casings/casing-lumium') });
 
@@ -216,6 +229,9 @@ StartupEvents.registry('block', event => {
         .hardness(10)
         .resistance(1)
         .lightLevel(0)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
         .textureOverrideRenderer('minecraft:block/cube_all',
             { 'all': new ResourceLocation('kubejs', 'block/casings/casing-enderium') });
 
@@ -224,6 +240,9 @@ StartupEvents.registry('block', event => {
         .hardness(10)
         .resistance(1)
         .lightLevel(0)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
         .textureOverrideRenderer('minecraft:block/cube_all',
             { 'all': new ResourceLocation('kubejs', 'block/casings/casing-shellite') });
 
@@ -232,6 +251,9 @@ StartupEvents.registry('block', event => {
         .hardness(10)
         .resistance(1)
         .lightLevel(0)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
         .textureOverrideRenderer('minecraft:block/cube_all',
             { 'all': new ResourceLocation('kubejs', 'block/casings/casing-twinite') });
 
@@ -240,6 +262,9 @@ StartupEvents.registry('block', event => {
         .hardness(10)
         .resistance(1)
         .lightLevel(0)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
         .textureOverrideRenderer('minecraft:block/cube_all',
             { 'all': new ResourceLocation('kubejs', 'block/casings/casing-dragonsteel') });
 
@@ -248,6 +273,9 @@ StartupEvents.registry('block', event => {
         .hardness(10)
         .resistance(1)
         .lightLevel(2)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
         .textureOverrideRenderer('minecraft:block/cube_all',
             { 'all': new ResourceLocation('kubejs', 'block/casings/casing-prismalium') });
 
@@ -256,6 +284,9 @@ StartupEvents.registry('block', event => {
         .hardness(10)
         .resistance(1)
         .lightLevel(2)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
         .textureOverrideRenderer('minecraft:block/cube_all',
             { 'all': new ResourceLocation('kubejs', 'block/casings/casing-melodium') });
 
@@ -264,6 +295,9 @@ StartupEvents.registry('block', event => {
         .hardness(10)
         .resistance(1)
         .lightLevel(2)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
         .textureOverrideRenderer('minecraft:block/cube_all',
             { 'all': new ResourceLocation('kubejs', 'block/casings/casing-stellarium') });
 
@@ -272,6 +306,9 @@ StartupEvents.registry('block', event => {
         .hardness(2)
         .resistance(3)
         .lightLevel(0)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
         .textureOverrideRenderer('minecraft:block/cube_all',
         { 'all': new ResourceLocation('kubejs', 'block/casings/casing-austenitic-stainless-steel-304') });
 
@@ -280,6 +317,9 @@ StartupEvents.registry('block', event => {
         .hardness(2)
         .resistance(3)
         .lightLevel(0)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
         .textureOverrideRenderer('minecraft:block/cube_all',
         { 'all': new ResourceLocation('kubejs', 'block/casings/casing-inconel-625') });
 
@@ -293,6 +333,133 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_stone_tool')
         .textureOverrideRenderer('minecraft:block/cube_all',
         { 'all': new ResourceLocation('kubejs', 'block/casings/casing-wood')});
+
+    event.create('peek_casing', 'gtceu:renderer')
+        .displayName('PEEK Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureOverrideRenderer('minecraft:block/cube_all',
+        { 'all': new ResourceLocation('kubejs', 'block/casings/machine_casing_peek')});
+
+    event.create('beryllium_aluminium_casing')
+        .displayName('Beryllium-Aluminium Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/beryllium-aluminium_casing');
+
+    event.create('birmabright_casing')
+        .displayName('Birmabright Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/birmabright_casing');
+
+    event.create('beryllium_bronze_casing')
+        .displayName('Beryllium Bronze Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/bismuth_bronze_casing');
+
+    event.create('blue_steel_casing')
+        .displayName('Blue Steel Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/blue_steel_casing');
+
+    event.create('duralumin_casing')
+        .displayName('Duralumin Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/duralumin_casing');
+
+    event.create('elgiloy_casing')
+        .displayName('Elgiloy Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/elgiloy_casing');
+
+    event.create('hydronalium_casing')
+        .displayName('Hydronalium Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/hydronallium_casing');
+
+    event.create('kovar_casing')
+        .displayName('Kovar Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/kovar_casing');
+
+    event.create('red_steel_casing')
+        .displayName('Red Steel Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/red_steel_casing');
+
+    event.create('silicon_bronze_casing')
+        .displayName('Silicon Bronze Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/silicon_bronze_casing');
+
+    event.create('sterling_silver_casing')
+        .displayName('Sterling Silver Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/sterling_silver_casing');
+
+    event.create('zamak_casing')
+        .displayName('Zamak Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/zamak_casing');
+
+    event.create('tumbaga_casing')
+        .displayName('Tumbaga Casing')
+        .hardness(5)
+        .resistance(1)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/tumbaga_casing');
 
     // Custom Coils
     event.create('zalloy_coil_block', 'gtceu:coil')

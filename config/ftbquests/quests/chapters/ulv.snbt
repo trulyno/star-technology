@@ -20,7 +20,8 @@
 				item: "minecraft:oak_log"
 				type: "item"
 			}]
-			x: -11.0d
+			title: "Woody begginings"
+			x: -9.0d
 			y: 1.0d
 		}
 		{
@@ -41,6 +42,7 @@
 		}
 		{
 			dependencies: ["2E9AA11F694F2BED"]
+			description: ["Now you can generate resources. This will be your main source of resources."]
 			id: "3F3E3CD778320054"
 			rewards: [{
 				id: "00E490746BC1868D"
@@ -69,7 +71,7 @@
 				type: "item"
 			}]
 			title: "Sieve"
-			x: -9.0d
+			x: -11.0d
 			y: 1.0d
 		}
 		{
@@ -107,11 +109,8 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"3F3E3CD778320054"
-				"462E016CCFCD4DAA"
-			]
-			description: ["Place the mesh you crafted in the sieve. Now start sieving dirt for stone pebbles. Those will be your initial source of stone. Later you will be able to make an automated cobblestone generator."]
+			dependencies: ["6F6BC9F29C31FB5E"]
+			description: ["The dirt contains some pebbles and you can extract them! Shift right-click the dirt and you shall get pebbles!"]
 			id: "5EDE27AC0D2E089A"
 			rewards: [{
 				count: 2
@@ -124,6 +123,7 @@
 				item: "exnihilosequentia:stone_pebble"
 				type: "item"
 			}]
+			title: "Pebbles from nothing..."
 			x: -7.0d
 			y: 1.0d
 		}
@@ -164,13 +164,15 @@
 				id: "688AFC903EA17473"
 				item: {
 					Count: 1b
-					id: "exnihilosequentia:wooden_hammer"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "exnihilosequentia:hammer"
 					}
 				}
+				title: "Any #exnihilosequentia:hammer"
 				type: "item"
 			}]
+			title: "Hammer"
 			x: -3.0d
 			y: 1.0d
 		}
@@ -500,19 +502,24 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "5114B5EFABE9833A"
-				item: "create:water_wheel"
-				type: "item"
-			}]
+			subtitle: "Don't worry. Water wheel spam is good for SU."
+			tasks: [
+				{
+					id: "5114B5EFABE9833A"
+					item: "create:water_wheel"
+					type: "item"
+				}
+				{
+					id: "3B68A197BAE4E8FE"
+					item: "create:large_water_wheel"
+					type: "item"
+				}
+			]
 			x: 3.0d
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"6E0AACD6B55F5575"
-				"73E02F929D718620"
-			]
+			dependencies: ["73E02F929D718620"]
 			id: "20E212A187D42415"
 			rewards: [{
 				id: "04733C62F9931518"
@@ -531,6 +538,7 @@
 			dependencies: ["5901D32D9B89F5F8"]
 			description: ["The Mechanical Press can make some plates for cheaper than in crafting table. You will also need it to make firebricks for 3 multiblock machines."]
 			id: "6E0AACD6B55F5575"
+			optional: true
 			rewards: [{
 				id: "6A096A1F5C17F873"
 				item: "kubejs:coin"
@@ -567,14 +575,14 @@
 				}
 				{
 					id: "4B9A68415BC20B06"
-					item: "createlowheated:charcoal_burner"
+					item: "createlowheated:basic_burner"
 					type: "item"
 				}
 				{
 					id: "4859D49498CDE5AE"
 					item: {
 						Count: 1b
-						id: "firesticks:fire_stick"
+						id: "minecraft:flint_and_steel"
 						tag: {
 							Damage: 0
 						}
@@ -582,7 +590,7 @@
 					type: "item"
 				}
 			]
-			title: "Mixer Setup"
+			title: "Mixer Setup for alloying"
 			x: 3.0d
 			y: 3.0d
 		}
@@ -683,38 +691,11 @@
 			]
 			description: ["Primitive Blast Furnace is your first steel source. It is best to use wrought iron, as the duration will be shorter."]
 			id: "6F62E5BFF7224E36"
-			rewards: [
-				{
-					id: "4E8495CF4FC8E664"
-					item: {
-						Count: 1b
-						id: "create:schematic"
-						tag: {
-							Anchor: {
-								X: 0
-								Y: 0
-								Z: 0
-							}
-							Bounds: [
-								3
-								4
-								3
-							]
-							Deployed: 0b
-							File: "primitive_blast_furnace.nbt"
-							Mirror: "NONE"
-							Owner: "trulyno"
-							Rotation: "NONE"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5AC0902F6BDB4269"
-					item: "kubejs:coin"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "5AC0902F6BDB4269"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7452BCE7F2F99F0D"
 				item: "gtceu:primitive_blast_furnace"
@@ -838,38 +819,11 @@
 			dependencies: ["73E02F929D718620"]
 			description: ["The coke oven can turn logs into charcoal and creosote. You can autoextract the creosote using a coke oven hatch."]
 			id: "74654E9B54B46682"
-			rewards: [
-				{
-					id: "2D3C4949AF1F0F05"
-					item: {
-						Count: 1b
-						id: "create:schematic"
-						tag: {
-							Anchor: {
-								X: 0
-								Y: 0
-								Z: 0
-							}
-							Bounds: [
-								3
-								3
-								3
-							]
-							Deployed: 0b
-							File: "coke_oven.nbt"
-							Mirror: "NONE"
-							Owner: "trulyno"
-							Rotation: "NONE"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "03820BFA40789B46"
-					item: "kubejs:coin"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "03820BFA40789B46"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "75C2CEE4A19989FE"
 				item: "gtceu:coke_oven"
@@ -915,38 +869,11 @@
 			dependencies: ["40491E2463C0EDFD"]
 			description: ["The Large Barrel can duplicate sliitake spores, which are a source of slime."]
 			id: "4435C4894C4BD3BA"
-			rewards: [
-				{
-					id: "62BF9C6A0E0DF7F3"
-					item: {
-						Count: 1b
-						id: "create:schematic"
-						tag: {
-							Anchor: {
-								X: 0
-								Y: 0
-								Z: 0
-							}
-							Bounds: [
-								3
-								4
-								3
-							]
-							Deployed: 0b
-							File: "large_barrel.nbt"
-							Mirror: "NONE"
-							Owner: "trulyno"
-							Rotation: "NONE"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "3A59E9570565F88D"
-					item: "kubejs:coin"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "3A59E9570565F88D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2A34A49EEEEC437F"
 				item: "gtceu:large_barrel"
@@ -962,38 +889,11 @@
 			]
 			description: ["The Large Stone Barrel is stone generator as well as a lava generator."]
 			id: "7A345A3F75438789"
-			rewards: [
-				{
-					id: "662975AA6E559BB5"
-					item: {
-						Count: 1b
-						id: "create:schematic"
-						tag: {
-							Anchor: {
-								X: 0
-								Y: 0
-								Z: 0
-							}
-							Bounds: [
-								3
-								4
-								3
-							]
-							Deployed: 0b
-							File: "large_stone_barrel.nbt"
-							Mirror: "NONE"
-							Owner: "trulyno"
-							Rotation: "NONE"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "53F2DF09DF115AC9"
-					item: "kubejs:coin"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "53F2DF09DF115AC9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2CCAA568DC494CA9"
 				item: "gtceu:large_stone_barrel"
@@ -1040,6 +940,7 @@
 			dependencies: ["6E0AACD6B55F5575"]
 			description: ["Pressing down seeds will produce plant oil."]
 			id: "5104F093EC41B6DE"
+			optional: true
 			rewards: [{
 				id: "192535E28EC1844E"
 				item: "kubejs:coin"
@@ -1057,6 +958,7 @@
 			dependencies: ["2AB0BAA6F02C9C3D"]
 			description: ["You can ferment certain organic materials into ethanol inside the basin. Just slap a lid on top of a basin and fill it with potatoes."]
 			id: "45009C39DE025A36"
+			optional: true
 			rewards: [{
 				id: "5E927646F22697C2"
 				item: "kubejs:coin"
@@ -1077,6 +979,7 @@
 			]
 			description: ["Mix plant oil and ethanol together for bio diesel. This is a crude form though and you will not be able to use it in GregTech generators, but you can use it in diesel engines to produce more stress units."]
 			id: "435527E6C4D218A5"
+			optional: true
 			rewards: [{
 				id: "6BDB6F5CFA54C4DB"
 				item: "kubejs:coin"
@@ -1093,6 +996,7 @@
 		{
 			dependencies: ["435527E6C4D218A5"]
 			id: "1BEB4C8A49FACC76"
+			optional: true
 			rewards: [{
 				id: "706384D67E5EF5E7"
 				item: "kubejs:coin"
@@ -1109,6 +1013,7 @@
 		{
 			dependencies: ["435527E6C4D218A5"]
 			id: "576B279682D613EF"
+			optional: true
 			rewards: [{
 				id: "43F5C7A61A68A5A1"
 				item: "kubejs:coin"
@@ -1125,6 +1030,7 @@
 		{
 			dependencies: ["576B279682D613EF"]
 			id: "3EEE0066B01F8FD7"
+			optional: true
 			rewards: [{
 				id: "235D3B8D81B36293"
 				item: "kubejs:coin"
@@ -1142,38 +1048,11 @@
 			dependencies: ["40491E2463C0EDFD"]
 			description: ["Large Farms are automated farms. You can make enough potatoes to carry your ethanol production."]
 			id: "56265DC432D1A4E6"
-			rewards: [
-				{
-					id: "7B18D4E98FBB2E07"
-					item: {
-						Count: 1b
-						id: "create:schematic"
-						tag: {
-							Anchor: {
-								X: 0
-								Y: 0
-								Z: 0
-							}
-							Bounds: [
-								5
-								4
-								5
-							]
-							Deployed: 0b
-							File: "large_farm.nbt"
-							Mirror: "NONE"
-							Owner: "trulyno"
-							Rotation: "NONE"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1485D3C77DA93880"
-					item: "kubejs:coin"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "1485D3C77DA93880"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3EAD34CB015A5A20"
 				item: "gtceu:large_farm"

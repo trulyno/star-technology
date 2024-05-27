@@ -330,7 +330,9 @@ materialRegistry(event => {
     GTMaterials.Naquadah.addFlags(dense_plate);
     GTMaterials.NaquadahEnriched.addFlags(dense_plate);
     GTMaterials.Neutronium.addFlags(foil);
-    GTMaterials.Zirconium.addFlags(fine_wire);     
+    GTMaterials.Zirconium.addFlags(fine_wire); 
+    GTMaterials.RedSteel.addFlags(rod, frame);
+    GTMaterials.SterlingSilver.addFlags(rod, frame);      
 
     // Blast Properties of periodic table metals
     blastProperty('zirconium', 8000, 'higher', VA('zpm'), 800);
@@ -475,6 +477,7 @@ materialRegistry(event => {
 
     event.create('shellite')
         .ingot(1)
+        .fluid()
         .components('1x black_bronze', '3x signalum')
         .color(0x9933ff)
         .iconSet(SHINY)
@@ -485,6 +488,7 @@ materialRegistry(event => {
 
     event.create('twinite')
         .ingot(1)
+        .fluid()
         .components('3x enderium', '2x amethyst', '1x lumium')
         .color(0xf66999)
         .iconSet(SHINY)
@@ -495,6 +499,7 @@ materialRegistry(event => {
 
     event.create('dragonsteel')
         .ingot(1)
+        .fluid()
         .components('4x tungsten', '8x shellite', '2x twinite')
         .color(0x3333cc)
         .iconSet(SHINY)
@@ -627,7 +632,7 @@ materialRegistry(event => {
         .components('7x naquadria', '2x pure_netherite', '5x neutronium', '16x fluorine')
         .color(0xccff33)
         .iconSet(DULL)
-        .blastTemp(24000, 'low', VA('uv'), 6000)
+        .blastTemp(10500, 'low', VA('uv'), 6000)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame);
 
@@ -848,48 +853,6 @@ materialRegistry(event => {
     event.create('diatron')
         .gem()
         .color(0x6699ff)
-        .iconSet(LAPIS)
-        .flags(no_decomp);
-
-    event.create('inferium_diatron')
-        .gem()
-        .color(0x66ff33)
-        .iconSet(LAPIS)
-        .flags(no_decomp);
-
-    event.create('prudentium_diatron')
-        .gem()
-        .color(0x336600)
-        .iconSet(LAPIS)
-        .flags(no_decomp);
-
-    event.create('tertium_diatron')
-        .gem()
-        .color(0xff6600)
-        .iconSet(LAPIS)
-        .flags(no_decomp);
-
-    event.create('imperium_diatron')
-        .gem()
-        .color(0x0099ff)
-        .iconSet(LAPIS)
-        .flags(no_decomp);
-
-    event.create('supremium_diatron')
-        .gem()
-        .color(0xff0000)
-        .iconSet(LAPIS)
-        .flags(no_decomp);
-
-    event.create('awakened_supremium_diatron')
-        .gem()
-        .color(0xff3300)
-        .iconSet(LAPIS)
-        .flags(no_decomp);
-
-    event.create('insanium_diatron')
-        .gem()
-        .color(0x9900cc)
         .iconSet(LAPIS)
         .flags(no_decomp);
 
@@ -1453,4 +1416,85 @@ materialRegistry(event => {
         .flags(no_decomp)
         .flags(foil, plates, ring);
     
+     // Large Multis
+
+     event.create('birmabright')
+     .ingot()
+     .components('7x aluminium', '2x magnesium', '1x manganese')
+     .color(0xbfbfbf)
+     .flags(plates, frame, rod)
+     .iconSet(DULL)
+     .blastTemp(2200, 'low', VA('mv'), 2000);
+
+ event.create('duralumin')
+     .ingot()
+     .components('4x aluminium', '3x copper', '1x magnesium', '1x manganese')
+     .color(0x66ccff)
+     .flags(plates, frame, rod)
+     .iconSet(DULL)
+     .blastTemp(2200, 'low', VA('mv'), 2000);
+
+ event.create('hydronalium')
+     .ingot()
+     .components('6x aluminium', '3x magnesium', '1x manganese')
+     .color(0x660000)
+     .flags(plates, frame, rod)
+     .iconSet(DULL)
+     .blastTemp(2200, 'low', VA('mv'), 2000);
+
+ event.create('beryllium_aluminium_alloy')
+     .ingot()
+     .components('7x beryllium', '1x aluminium')
+     .color(0x006699)
+     .flags(plates, frame, rod)
+     .iconSet(DULL)
+     .blastTemp(2200, 'low', VA('mv'), 2000);
+
+ event.create('elgiloy')
+     .ingot()
+     .components('4x cobalt', '2x chromium', '1x nickel', '1x steel', '1x molybdenum', '1x manganese')
+     .color(0xff00ff)
+     .flags(plates, frame, rod)
+     .iconSet(DULL)
+     .blastTemp(2200, 'low', VA('mv'), 2000);
+
+ event.create('beryllium_bronze')
+     .ingot()
+     .components('10x copper', '1x beryllium')
+     .color(0x003300)
+     .flags(plates, frame, rod)
+     .iconSet(DULL)
+     .blastTemp(2200, 'low', VA('mv'), 2000);
+
+ event.create('silicon_bronze')
+     .ingot()
+     .components('32x copper', '2x silicon', '1x manganese')
+     .color(0x1a1a1a)
+     .flags(plates, frame, rod)
+     .iconSet(DULL)
+     .blastTemp(2200, 'low', VA('mv'), 2000);
+
+ event.create('kovar')
+     .ingot()
+     .components('18x iron', '11x nickel', '6x cobalt')
+     .color(0x000080)
+     .flags(plates, frame, rod)
+     .iconSet(DULL)
+     .blastTemp(2200, 'low', VA('mv'), 2000);
+
+ event.create('zamak')
+     .ingot()
+     .components('1x zinc', '4x aluminium', '3x copper')
+     .color(0x8c8c8c)
+     .flags(plates, frame, rod)
+     .iconSet(DULL)
+     .blastTemp(2200, 'low', VA('mv'), 2000);
+
+ event.create('tumbaga')
+     .ingot()
+     .components('20x copper', '6x gold', '1x silver')
+     .color(0xffdb4d)
+     .flags(plates, frame, rod)
+     .iconSet(METALLIC)
+     .blastTemp(2200, 'low', VA('mv'), 2000);
 });

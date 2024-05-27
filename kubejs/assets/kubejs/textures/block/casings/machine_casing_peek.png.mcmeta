@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/machine_casing_peek_ctm"
+    }
+}

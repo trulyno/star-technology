@@ -63,29 +63,29 @@ ServerEvents.recipes(event => {
     nuc_turb('nuc_turbine_2',hot_nak, nak, 2048);
     nuc_turb('nuc_turbine_3',hot_pcb_coolant, pcb_coolant, 8192);
 
-    event.shaped(Item.of('gtceu:nuclear_reactor'), [
-        'EGR',
-        'CFC',
-        'DGD'
-    ], {
-        E: 'gtceu:hv_emitter',
-        G: 'gtceu:black_bronze_gear',
-        R: 'gtceu:hv_sensor',
-        C: '#gtceu:circuits/ev',
-        F: 'gtceu:stainless_steel_frame',
-        D: 'gtceu:double_steel_plate'
-    });
+    // event.shaped(Item.of('gtceu:nuclear_reactor'), [
+    //     'EGR',
+    //     'CFC',
+    //     'DGD'
+    // ], {
+    //     E: 'gtceu:hv_emitter',
+    //     G: 'gtceu:black_bronze_gear',
+    //     R: 'gtceu:hv_sensor',
+    //     C: '#gtceu:circuits/ev',
+    //     F: 'gtceu:stainless_steel_frame',
+    //     D: 'gtceu:double_steel_plate'
+    // });
 
-    event.shaped(Item.of('gtceu:nuclear_turbine'), [
-        'CGC',
-        'GHG',
-        'PGP'
-    ], {
-        C: '#gtceu:circuits/ev',
-        G: 'gtceu:black_bronze_gear',
-        H: 'gtceu:hv_machine_hull',
-        P: 'gtceu:aluminium_large_fluid_pipe'
-    });
+    // event.shaped(Item.of('gtceu:nuclear_turbine'), [
+    //     'CGC',
+    //     'GHG',
+    //     'PGP'
+    // ], {
+    //     C: '#gtceu:circuits/ev',
+    //     G: 'gtceu:black_bronze_gear',
+    //     H: 'gtceu:hv_machine_hull',
+    //     P: 'gtceu:aluminium_large_fluid_pipe'
+    // });
 
     event.shapeless(th_rod, ['9x gtceu:thorium_dust']);
     event.shapeless(u_rod, ['gtceu:uranium_235_dust', '8x gtceu:uranium_dust']);

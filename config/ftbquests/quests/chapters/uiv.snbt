@@ -9,6 +9,12 @@
 	quests: [{
 		dependencies: ["5916135178DDCEA0"]
 		id: "66CD58F264AFBAD0"
+		rewards: [{
+			count: 4
+			id: "43CA2A6C228D8D4B"
+			item: "kubejs:coin"
+			type: "item"
+		}]
 		subtitle: "First and Only UIV Circuit"
 		tasks: [{
 			id: "50FE334D3195A42A"

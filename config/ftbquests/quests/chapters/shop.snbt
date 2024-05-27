@@ -5,7 +5,7 @@
 	group: "28726466D987C725"
 	icon: "kubejs:coin"
 	id: "37A847E834E8225E"
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -124,25 +124,25 @@
 			id: "3B34BEDF39E2156A"
 			rewards: [
 				{
-					count: 4
+					count: 8
 					id: "2C224F1F69995EC6"
 					item: "gtceu:lv_input_bus"
 					type: "item"
 				}
 				{
-					count: 4
+					count: 8
 					id: "6742B4785E8930D0"
 					item: "gtceu:lv_output_bus"
 					type: "item"
 				}
 				{
-					count: 4
+					count: 8
 					id: "3B813B048B1DD94F"
 					item: "gtceu:lv_input_hatch"
 					type: "item"
 				}
 				{
-					count: 4
+					count: 8
 					id: "62C9F4C9ECFD6324"
 					item: "gtceu:lv_output_hatch"
 					type: "item"
@@ -388,8 +388,75 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "Stainless Steel"
+			title: "32 Stainless Steel"
 			x: 0.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1C2D07E0CBA206EC"]
+			icon: {
+				Count: 1b
+				id: "gtceu:hv_item_magnet"
+				tag: {
+					Charge: 1600000L
+				}
+			}
+			id: "6D8A717267308C50"
+			rewards: [{
+				id: "687C53C6956663BE"
+				item: {
+					Count: 1b
+					id: "gtceu:hv_item_magnet"
+					tag: {
+						Charge: 1600000L
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "0B93BA1EDBDFF5E3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Magnet"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2BD7F4FFE21EF3F9"]
+			icon: "fluxnetworks:flux_point"
+			id: "1E4A1D40A74B104B"
+			rewards: [
+				{
+					auto: "enabled"
+					count: 8
+					id: "510DF7C903067301"
+					item: "fluxnetworks:flux_plug"
+					team_reward: false
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					count: 8
+					id: "07000DB7B883DE02"
+					item: "fluxnetworks:flux_point"
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "10ABAF18BDC97282"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Flux Networks Connectors Pack"
+			x: 2.5d
 			y: 1.5d
 		}
 	]

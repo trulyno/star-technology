@@ -8,6 +8,13 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UV]);
 
+    event.recipes.gtceu.assembler('peek_casing')
+        .itemInputs('gtceu:robust_machine_casing')
+        .inputFluids('gtceu:polyether_ether_ketone 216')
+        .itemOutputs('kubejs:peek_casing')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
     event.recipes.gtceu.chemical_plant('fluoroantimonic_acid')
         .itemInputs('gtceu:antimony_dust')
         .inputFluids('gtceu:hydrogen 2000', 'gtceu:fluorine 7000')

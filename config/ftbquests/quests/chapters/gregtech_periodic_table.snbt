@@ -90,7 +90,7 @@
 			y: -3.5d
 		}
 		{
-			description: ["There are currently no official server files available. If you want to make a server with this modpack, first of all download the modpack zip from curseforge.com. Make a basic forge server using the forge version of the pack. Copy the contents from the modpack zip file to the server folder. From your instance of the modpack(the client), copy the mod files into the mods folder of the server. Remove client side mods. If you don't know which to remove, removing oculus and panorama seems enough to get the server working."]
+			description: ["Server files are available on CurseForge!"]
 			icon: "kubejs:draconic_wetware_processor_mainframe"
 			id: "2929B62A2918CD84"
 			shape: "rsquare"

@@ -109,6 +109,114 @@ ServerEvents.recipes(event => {
         .EUt(120)
         .circuit(0);
 
+    event.recipes.gtceu.large_chemical_reactor('ethylene_oxide')
+        .inputFluids('gtceu:ethylene 1000', 'gtceu:oxygen 1000')
+        .notConsumable('gtceu:silver_oxide_dust')
+        .outputFluids('gtceu:ethylene_oxide 1000')
+        .duration(640)
+        .EUt(120)
+        .circuit(5);
+
+    event.recipes.gtceu.large_chemical_reactor('ethylene_glycol')
+        .inputFluids('gtceu:ethylene_oxide 1000', 'minecraft:water 1000')
+        .outputFluids('gtceu:ethylene_glycol 1000')
+        .duration(680)
+        .EUt(120)
+        .circuit(0);
+
+    event.recipes.gtceu.large_chemical_reactor('diethylene_glycol')
+        .inputFluids('gtceu:ethylene_oxide 2000', 'minecraft:water 1000')
+        .outputFluids('gtceu:diethylene_glycol 1000')
+        .duration(740)
+        .EUt(120)
+        .circuit(1);
+
+    event.recipes.gtceu.large_chemical_reactor('triethylene_glycol')
+        .inputFluids('gtceu:ethylene_oxide 3000', 'gtceu:oxygen 1000')
+        .outputFluids('gtceu:triethylene_glycol 1000')
+        .duration(880)
+        .EUt(120)
+        .circuit(2);
+
+    event.recipes.gtceu.large_chemical_reactor('sodium_chlorate')
+        .inputFluids('gtceu:salt_water 1000', 'gtceu:oxygen 3000')
+        .itemOutputs('gtceu:sodium_chlorate_dust')
+        .outputFluids('minecraft:water 1000')
+        .duration(320)
+        .EUt(120);
+    
+    event.recipes.gtceu.large_chemical_reactor('sodium_perchlorate')
+        .itemInputs('gtceu:sodium_chlorate_dust')
+        .inputFluids('gtceu:oxygen 1000')
+        .itemOutputs('gtceu:sodium_perchlorate_dust')
+        .duration(440)
+        .EUt(120);
+
+    event.recipes.gtceu.large_chemical_reactor('lithium_perchlorate')
+        .itemInputs('gtceu:sodium_perchlorate_dust', 'gtceu:lithium_chloride_dust')
+        .inputFluids('minecraft:water 1000')
+        .itemOutputs('gtceu:lithium_perchlorate_dust')
+        .outputFluids('gtceu:salt_water 1000')
+        .duration(560)
+        .EUt(120);
+
+    event.recipes.gtceu.large_chemical_reactor('potassium_hydroxide')
+        .itemInputs('gtceu:potassium_dust')
+        .inputFluids('minecraft:water 1000')
+        .itemOutputs('gtceu:potassium_hydroxide_dust')
+        .outputFluids('gtceu:hydrogen 1000')
+        .duration(100)
+        .EUt(120);
+
+    event.recipes.gtceu.large_chemical_reactor('sodium_hydroxide')
+        .itemInputs('gtceu:sodium_dust')
+        .inputFluids('minecraft:water 1000')
+        .itemOutputs('gtceu:sodium_hydroxide_dust')
+        .outputFluids('gtceu:hydrogen 1000')
+        .duration(100)
+        .EUt(120);
+
+    event.recipes.gtceu.large_chemical_reactor('silver_oxide')
+        .itemInputs('2x gtceu:silver_dust')
+        .inputFluids('gtceu:oxygen 1000')
+        .itemOutputs('3x gtceu:silver_oxide_dust')
+        .duration(120)
+        .EUt(32);
+
+    event.recipes.gtceu.large_chemical_reactor('sulfur_dichloride')
+        .itemInputs('#forge:dusts/sulfur')
+        .inputFluids('gtceu:chlorine 2000')
+        .outputFluids('gtceu:sulfur_dichloride 1000')
+        .duration(120)
+        .EUt(120);
+
+    event.recipes.gtceu.large_chemical_reactor('thionyl_chloride')
+        .inputFluids('gtceu:sulfur_dioxide 1000', 'gtceu:chlorine 2000')
+        .outputFluids('gtceu:thionyl_chloride 1000')
+        .duration(120)
+        .EUt(120);
+
+    event.recipes.gtceu.large_chemical_reactor('sulfonyl_chloride')
+        .inputFluids('gtceu:sulfur_trioxide 1000', 'gtceu:sulfur_dichloride 1000')
+        .outputFluids('gtceu:sulfuryl_chloride 1000', 'gtceu:sulfur_dioxide 1000')
+        .duration(180)
+        .EUt(120);
+
+    event.recipes.gtceu.large_chemical_reactor('triglycol_dichloride')
+        .inputFluids('gtceu:sulfuryl_chloride 1000', 'gtceu:triethylene_glycol 1000', 'gtceu:oxygen 1000')
+        .outputFluids('gtceu:triglycol_dichloride 1000', 'gtceu:sulfuric_acid 1000')
+        .duration(220)
+        .EUt(120); 
+
+    event.recipes.gtceu.large_chemical_reactor('12-crown-4')
+        .itemInputs('2x gtceu:sodium_hydroxide_dust')
+        .inputFluids('gtceu:triglycol_dichloride 1000', 'gtceu:ethylene_glycol 1000')
+        .itemOutputs('2x gtceu:salt_dust')
+        .outputFluids('gtceu:12_crown_4 1000', 'minecraft:water 2000')
+        .duration(1200)
+        .EUt(120)
+        .circuit(0);
+
     event.recipes.gtceu.mixer('12-crown-4-li')
         .itemInputs('gtceu:lithium_perchlorate_dust', 'gtceu:sodium_dust')
         .inputFluids('gtceu:12_crown_4 1000')
@@ -126,6 +234,15 @@ ServerEvents.recipes(event => {
         .EUt(120)
         .circuit(1);
 
+    event.recipes.gtceu.large_chemical_reactor('15-crown-5')
+        .itemInputs('2x gtceu:sodium_hydroxide_dust')
+        .inputFluids('gtceu:triglycol_dichloride 1000', 'gtceu:diethylene_glycol 1000')
+        .itemOutputs('2x gtceu:salt_dust')
+        .outputFluids('gtceu:15_crown_5 1000', 'minecraft:water 2000')
+        .duration(1200)
+        .EUt(120)
+        .circuit(1);
+
     event.recipes.gtceu.mixer('15-crown-5-na')
         .itemInputs('gtceu:sodium_perchlorate_dust', 'gtceu:lithium_dust')
         .inputFluids('gtceu:15_crown_5 1000')
@@ -135,6 +252,15 @@ ServerEvents.recipes(event => {
         .EUt(120);
 
     event.recipes.gtceu.chemical_reactor('18-crown-6')
+        .itemInputs('2x gtceu:potassium_hydroxide_dust')
+        .inputFluids('gtceu:triglycol_dichloride 1000', 'gtceu:triethylene_glycol 1000')
+        .itemOutputs('2x gtceu:rock_salt_dust')
+        .outputFluids('gtceu:18_crown_6 1000', 'minecraft:water 2000')
+        .duration(1200)
+        .EUt(120)
+        .circuit(2);
+
+    event.recipes.gtceu.large_chemical_reactor('18-crown-6')
         .itemInputs('2x gtceu:potassium_hydroxide_dust')
         .inputFluids('gtceu:triglycol_dichloride 1000', 'gtceu:triethylene_glycol 1000')
         .itemOutputs('2x gtceu:rock_salt_dust')
@@ -188,6 +314,13 @@ ServerEvents.recipes(event => {
         .EUt(1024);
 
     event.recipes.gtceu.chemical_reactor('sodium_azide')
+        .itemInputs('gtceu:sodium_dust')
+        .inputFluids('gtceu:nitrogen 3000')
+        .itemOutputs('4x gtceu:sodium_azide_dust')
+        .duration(220)
+        .EUt(396);
+
+    event.recipes.gtceu.large_chemical_reactor('sodium_azide')
         .itemInputs('gtceu:sodium_dust')
         .inputFluids('gtceu:nitrogen 3000')
         .itemOutputs('4x gtceu:sodium_azide_dust')

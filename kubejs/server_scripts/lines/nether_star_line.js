@@ -8,21 +8,13 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(7680);
 
-     event.recipes.gtceu.large_chemical_reactor('blizz_dust')
+    event.recipes.gtceu.large_chemical_reactor('blizz_dust')
         .itemInputs('gtceu:cobalt_dust')
         .inputFluids('gtceu:fluorine 1000')
         .itemOutputs('thermal:blizz_powder')
         .duration(200)
         .EUt(7680);
 
-    event.recipes.gtceu.chemical_reactor('blitz_dust')
-        .itemInputs('gtceu:platinum_dust')
-        .inputFluids('gtceu:deuterium 1000')
-        .itemOutputs('thermal:blitz_powder')
-        .duration(200)
-        .EUt(1920);
-
-    
     event.recipes.gtceu.chemical_reactor('blitz_dust')
         .itemInputs('gtceu:platinum_dust')
         .inputFluids('gtceu:deuterium 1000')

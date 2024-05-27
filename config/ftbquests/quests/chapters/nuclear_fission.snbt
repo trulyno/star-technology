@@ -5,7 +5,7 @@
 	group: "28726466D987C725"
 	icon: "nuclearcraft:fission_reactor_controller"
 	id: "24D008972AF0082B"
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -241,7 +241,7 @@
 			shape: "square"
 			tasks: [{
 				id: "5623DE1DBE3331F8"
-				item: "nuclearcraft:zirconium_dust"
+				item: "gtceu:zirconium_dust"
 				type: "item"
 			}]
 			x: -10.0d

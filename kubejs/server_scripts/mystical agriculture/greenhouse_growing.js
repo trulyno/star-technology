@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
             .chancedInput(dust, 1000, 0)
             .chancedOutput(`mysticalagriculture:${type}_essence`, 7500, 500)
             .inputFluids('minecraft:water 100')
-            .duration(800)
+            .duration(400)
             .EUt(eut);
     }
 

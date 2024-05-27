@@ -74,187 +74,213 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(250);
 
-    event.recipes.gtceu.forming_press('leu233')
+        event.recipes.gtceu.forming_press('leu233')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${U233}`, `8x ${U238}`)
         .itemOutputs('nuclearcraft:fuel_uranium_leu_233')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(0);
 
     event.recipes.gtceu.forming_press('heu233')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`3x ${U233}`, `6x ${U238}`)
         .itemOutputs('nuclearcraft:fuel_uranium_heu_233')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(1);
     
     event.recipes.gtceu.forming_press('leu235')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${U235}`, `8x ${U238}`)
         .itemOutputs('nuclearcraft:fuel_uranium_leu_235')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(0);
 
-    event.recipes.gtceu.forming_press('leu235ft')
+    event.recipes.gtceu.forming_press('leu235gt')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${GTU235}`, `8x ${GTU238}`)
         .itemOutputs('nuclearcraft:fuel_uranium_leu_235')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(1);
 
     event.recipes.gtceu.forming_press('heu235')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`3x ${U235}`, `6x ${U238}`)
         .itemOutputs('nuclearcraft:fuel_uranium_heu_235')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(0);
 
     event.recipes.gtceu.forming_press('heu235gt')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`3x ${GTU235}`, `6x ${GTU238}`)
         .itemOutputs('nuclearcraft:fuel_uranium_heu_235')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(1);
 
     event.recipes.gtceu.forming_press('len236')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${Np236}`, `8x ${Np237}`)
         .itemOutputs('nuclearcraft:fuel_neptunium_len_236')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(0);
 
     event.recipes.gtceu.forming_press('hen236')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`3x ${Np236}`, `6x ${Np237}`)
         .itemOutputs('nuclearcraft:fuel_neptunium_hen_236')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(1);
 
     event.recipes.gtceu.forming_press('lecm243')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${Cm243}`, `8x ${Cm246}`)
         .itemOutputs('nuclearcraft:fuel_curium_lecm_243')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(0);
 
     event.recipes.gtceu.forming_press('hecm243')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`3x ${Cm243}`, `6x ${Cm246}`)
         .itemOutputs('nuclearcraft:fuel_curium_hecm_243')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(1);
 
-        event.recipes.gtceu.forming_press('lecm245')
-            .notConsumable('gtceu:cylinder_casting_mold')
+    event.recipes.gtceu.forming_press('lecm245')
+        .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${Cm245}`, `8x ${Cm246}`)
         .itemOutputs('nuclearcraft:fuel_curium_lecm_245')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(0);
 
     event.recipes.gtceu.forming_press('hecm245')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`3x ${Cm245}`, `6x ${Cm246}`)
         .itemOutputs('nuclearcraft:fuel_curium_hecm_245')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(1);
 
     event.recipes.gtceu.forming_press('lecm247')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${Cm247}`, `8x ${Cm246}`)
         .itemOutputs('nuclearcraft:fuel_curium_lecm_247')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(0);
 
     event.recipes.gtceu.forming_press('hecm247')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`3x ${Cm247}`, `6x ${Cm246}`)
         .itemOutputs('nuclearcraft:fuel_curium_hecm_247')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(1);
 
     event.recipes.gtceu.forming_press('leb248')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${Bk248}`, `8x ${Bk248}`)
         .itemOutputs('nuclearcraft:fuel_berkelium_leb_248')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(0);
 
     event.recipes.gtceu.forming_press('heb248')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`3x ${Bk248}`, `6x ${Bk247}`)
         .itemOutputs('nuclearcraft:fuel_berkelium_heb_248')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(1);
 
     event.recipes.gtceu.forming_press('lecf249')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${Cf249}`, `8x ${Cf252}`)
         .itemOutputs('nuclearcraft:fuel_californium_lecf_249')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(0);
 
     event.recipes.gtceu.forming_press('hecf249')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`3x ${Cf249}`, `6x ${Cf252}`)
         .itemOutputs('nuclearcraft:fuel_californium_hecf_249')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(1);
 
     event.recipes.gtceu.forming_press('lecf251')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${Cf251}`, `8x ${Cf252}`)
         .itemOutputs('nuclearcraft:fuel_californium_lecf_251')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(0);
 
     event.recipes.gtceu.forming_press('hecf251')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`3x ${Cf251}`, `6x ${Cf252}`)
         .itemOutputs('nuclearcraft:fuel_californium_hecf_251')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(1);
 
     event.recipes.gtceu.forming_press('lea242')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${Am242}`, `8x ${Am243}`)
         .itemOutputs('nuclearcraft:fuel_americium_lea_242')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(0);
 
     event.recipes.gtceu.forming_press('hea242')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`3x ${Am242}`, `6x ${Am243}`)
         .itemOutputs('nuclearcraft:fuel_americium_hea_242')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(1);
 
     event.recipes.gtceu.forming_press('lep239')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${Pu239}`, `8x ${Pu242}`)
         .itemOutputs('nuclearcraft:fuel_plutonium_lep_239')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(0);
 
     event.recipes.gtceu.forming_press('hep239')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`3x ${Pu239}`, `6x ${Pu242}`)
         .itemOutputs('nuclearcraft:fuel_plutonium_hep_239')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(1);
 
     event.recipes.gtceu.forming_press('lep241')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${Pu241}`, `8x ${Pu242}`)
         .itemOutputs('nuclearcraft:fuel_plutonium_lep_241')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(0);
 
     event.recipes.gtceu.forming_press('hep241')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`3x ${Pu241}`, `6x ${Pu242}`)
         .itemOutputs('nuclearcraft:fuel_plutonium_hep_241')
         .duration(400)
-        .EUt(250);
+        .EUt(250)
+        .circuit(1);
 
     event.recipes.gtceu.centrifuge('tbu_reprocessing')
         .itemInputs('nuclearcraft:depleted_fuel_thorium_tbu')  
@@ -412,6 +438,35 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(2000);
 
+    event.recipes.gtceu.centrifuge('uranium_235_isotope_separation')
+        .itemInputs('4x gtceu:uranium_235_dust')
+        .itemOutputs(U235)
+        .duration(240)
+        .EUt(2000);
+
+    event.recipes.gtceu.centrifuge('uranium_isotope_separation')
+        .itemInputs('4x gtceu:uranium_dust')
+        .itemOutputs(U238)
+        .duration(240)
+        .EUt(2000);
+
+    event.recipes.gtceu.centrifuge('thorium_isotope_conversion')
+        .itemInputs(Th232)
+        .itemOutputs('4x gtceu:thorium_dust')
+        .duration(240)
+        .EUt(2000);
+
+    event.recipes.gtceu.centrifuge('uranium_235_isotope_conversion')
+        .itemInputs(U235)
+        .itemOutputs('4x gtceu:uranium_235_dust')
+        .duration(240)
+        .EUt(2000);
+
+    event.recipes.gtceu.centrifuge('uranium_isotope_conversion')
+        .itemInputs(U238)
+        .itemOutputs('4x gtceu:uranium_dust')
+        .duration(240)
+        .EUt(2000);
     
     event.recipes.gtceu.extractor(U238)
         .itemInputs(U238)
@@ -820,6 +875,13 @@ ServerEvents.recipes(event => {
         .EUt(250);
 
     event.recipes.gtceu.chemical_reactor('slurry_ice')
+        .itemInputs('thermal:blizz_powder')
+        .inputFluids('gtceu:ice 500', 'gtceu:ethanol 250')
+        .outputFluids('nuclearcraft:slurry_ice 1000')
+        .duration(450)
+        .EUt(250);
+
+    event.recipes.gtceu.large_chemical_reactor('slurry_ice')
         .itemInputs('thermal:blizz_powder')
         .inputFluids('gtceu:ice 500', 'gtceu:ethanol 250')
         .outputFluids('nuclearcraft:slurry_ice 1000')
