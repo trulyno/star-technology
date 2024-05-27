@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('chemical_builder', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('chemical_builder')
-        .recipeModifiers(GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('TFFFT', 'T   T', 'T   T', 'T   T', 'T   T', 'T   T', 'TFFFT')
             .aisle('FKKKF', ' KKK ', '  K  ', '     ', '  K  ', ' KKK ', 'FEEEF')

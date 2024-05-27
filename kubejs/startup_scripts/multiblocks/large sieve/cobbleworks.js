@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('cobbleworks', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('cobbleworks')
-        .recipeModifiers(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
+        .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .appearanceBlock(GCyMBlocks.CASING_STRESS_PROOF)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('FTTTF', 'FSSSF', 'FSISF', 'FSSSF', 'FTTTF')

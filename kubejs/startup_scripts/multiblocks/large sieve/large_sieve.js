@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_sieve')
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
-        .recipeModifiers(GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('TTOTT', 'FTTTF', 'F   F', 'F   F', 'F   F', 'F   F', 'TTTTT')
             .aisle('TTPTT', 'TTFTT', ' SSS ', '  S  ', '  S  ', ' SSS ', 'TTFTT')
