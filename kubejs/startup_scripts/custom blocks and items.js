@@ -467,7 +467,7 @@ StartupEvents.registry('block', event => {
         .level(24)
         .energyDiscount(16)
         .tier(10)
-        .coilMaterial(GTMaterials.get('zalloy'))
+        .coilMaterial(() => GTMaterials.get('zalloy'))
         .texture('kubejs:block/coils/machine_coil_zalloy')
         .hardness(5)
         .requiresTool(true)
