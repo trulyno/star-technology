@@ -43,6 +43,15 @@ ServerEvents.recipes(event => {
         P: '#forge:glass_panes'
     });
 
+    event.shaped(Item.of('8x gtceu:compressed_fireclay'), [
+        'DDD',
+        'DMD',
+        'DDD'
+    ], {
+        'D': 'gtceu:fireclay_dust',
+        'M': 'gtceu:brick_wooden_form'
+    }).keepIngredient('gtceu:brick_wooden_form');
+
     event.recipes.create.mixing('4x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated');
     event.recipes.create.pressing('gtceu:rubber_plate', 'thermal:cured_rubber');
 
