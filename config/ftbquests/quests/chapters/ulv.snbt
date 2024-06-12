@@ -867,7 +867,7 @@
 		}
 		{
 			dependencies: ["40491E2463C0EDFD"]
-			description: ["The Large Barrel can duplicate sliitake spores, which are a source of slime."]
+			description: ["The Large Barrel can duplicate slitake spores, which are a source of slime."]
 			id: "4435C4894C4BD3BA"
 			rewards: [{
 				id: "3A59E9570565F88D"
