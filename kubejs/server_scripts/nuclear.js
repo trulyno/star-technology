@@ -113,3 +113,58 @@ ServerEvents.recipes(event => {
         .EUt(420);
 
 });
+
+ServerEvents.recipes(event =>{
+    const nc_ingots = [
+        'nuclearcraft:manganese_oxide_ingot',
+        'nuclearcraft:niobium_tin_ingot',
+        'nuclearcraft:graphite_ingot',
+        'nuclearcraft:lithium_ingot',
+        'nuclearcraft:carbon_manganese_ingot',
+        'nuclearcraft:silicon_carbide_ingot',
+        'nuclearcraft:beryllium_ingot',
+        'nuclearcraft:palladium_ingot',
+        'nuclearcraft:zirconium_molybdenum_ingot',
+        'nuclearcraft:thorium_ingot',
+        'nuclearcraft:yttrium_ingot',
+        'nuclearcraft:zircaloy_ingot',
+        'nuclearcraft:shibuichi_ingot',
+        'nuclearcraft:tungsten_carbide_ingot',
+        'nuclearcraft:stainless_steel_ingot',
+        'nuclearcraft:magnesium_ingot',
+        'nuclearcraft:sodium_ingot',
+        'nuclearcraft:tin_silver_ingot',
+        'nuclearcraft:pyrolitic_carbon_ingot',
+        'nuclearcraft:manganese_dioxide_ingot',
+        'nuclearcraft:sic_sic_cmc_ingot',
+        'nuclearcraft:manganese_ingot',
+        'nuclearcraft:aluminum_ingot',
+        'nuclearcraft:super_alloy_ingot',
+        'nuclearcraft:titanium_ingot',
+        'nuclearcraft:potassium_ingot',
+        'nuclearcraft:niobium_titanium_ingot',
+        'nuclearcraft:niobium_ingot',
+        'nuclearcraft:hsla_steel_ingot',
+        'nuclearcraft:nichrome_ingot',
+        'nuclearcraft:boron_ingot',
+        'nuclearcraft:chromium_ingot',
+        'nuclearcraft:magnesium_diboride_ingot',
+        'nuclearcraft:hafnium_ingot',
+        'nuclearcraft:calcium_ingot',
+        'nuclearcraft:strontium_ingot',
+        'nuclearcraft:lithium_manganese_dioxide_ingot',
+        'nuclearcraft:osmiridium_ingot',
+        'nuclearcraft:lead_platinum_ingot',
+        'nuclearcraft:ferroboron_ingot',
+        'nuclearcraft:thermoconducting_ingot',
+        'nuclearcraft:extreme_ingot',
+        'nuclearcraft:tough_alloy_ingot',
+        'nuclearcraft:hard_carbon_ingot',
+        'nuclearcraft:zirconium_ingot',
+    ];
+    nc_ingots.forEach((smelting)=>{
+        //event.remove({output:`${recipes}`, type: 'minecraft:smelting'})
+        event.remove([{ type: 'minecraft:smelting', output: `${smelting}` }, { type: 'minecraft:blasting', output: `${smelting}` }])
+    });
+    event.remove({output: 'nuclearcraft:zirconium_ingot'})
+});
