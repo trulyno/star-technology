@@ -19,7 +19,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('ISSSI', '#FGF#', '#FGF#', '#FGF#', 'ISSSI')
             .aisle('IICII', '#####', '#####', '#####', 'IIIII')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('I', Predicates.blocks(GTBlocks.CASING_INVAR_HEATPROOF.get()).setMinGlobalLimited(26)
+            .where('I', Predicates.blocks(GTBlocks.CASING_INVAR_HEATPROOF.get()).setMinGlobalLimited(23)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
