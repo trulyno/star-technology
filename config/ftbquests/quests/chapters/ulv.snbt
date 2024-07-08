@@ -459,7 +459,7 @@
 				"304EDF2AC023A26F"
 			]
 			description: [
-				"This block can harvest water from infinite water sources. Place two water sources noxt to this, and it'll start harvesting. To get the water out of the accumulator, you will need pipes. A good first pipe to use is the Create pipe. Using the pump, you can extract the water. Later you can use pipez pipes to extract without needing to use rotation."
+				"This block can harvest water from infinite water sources. Place two water sources next to this, and it'll start harvesting. To get the water out of the accumulator, you will need pipes. A good first pipe to use is the Create pipe. Using the pump, you can extract the water. Later you can use pipez pipes to extract without needing to use rotation."
 				"Note that you have no way of extracting water using GregTech pipes until LV."
 			]
 			id: "1A68764673949115"
