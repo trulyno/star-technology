@@ -9,7 +9,8 @@
 	quest_links: [ ]
 	quests: [
 		{
-			icon: "effortlessbuilding:reach_upgrade1"
+			description: ["Alleviates having to place blocks one by one by providing several build modes. Useful in conjunction with vein miner to speed up early game grind! (Default key = Left-Alt)"]
+			icon: "effortlessbuilding:elastic_hand"
 			id: "3754DD882E5E6E37"
 			shape: "rsquare"
 			tasks: [{
@@ -21,6 +22,8 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["1C2D07E0CBA206EC"]
+			description: ["Useful for getting around quickly."]
 			icon: "travelanchors:travel_anchor"
 			id: "2092BC62D0ABB53F"
 			shape: "rsquare"
@@ -41,6 +44,8 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["6F6BC9F29C31FB5E"]
+			description: ["Drawers are going to be your best friend for deep item storage for a while, so be sure to make plenty."]
 			icon: "functionalstorage:oak_1"
 			id: "5F17F1158F33BF30"
 			shape: "rsquare"
@@ -61,6 +66,8 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["1C2D07E0CBA206EC"]
+			description: ["Instantly picks up items in a configurable 11x11x11 range. For a pre-steel alternative try the Vacuumulator!"]
 			id: "2D522E868DFD339A"
 			shape: "rsquare"
 			tasks: [{
@@ -73,6 +80,7 @@
 			y: -2.5d
 		}
 		{
+			description: ["It's a good idea to make space for all the greg tools you are going to need."]
 			id: "069CEEF34F469ADE"
 			shape: "rsquare"
 			tasks: [{
@@ -89,6 +97,10 @@
 			y: -2.5d
 		}
 		{
+			description: [
+				"Adds a variety of modern, futuristic, and fantasy style decorative building blocks."
+				"&mBecause I know how much you missed Ztones from GTNH&r"
+			]
 			id: "7403111E2D8E1EDB"
 			shape: "rsquare"
 			tasks: [{
@@ -101,6 +113,7 @@
 			y: -1.5d
 		}
 		{
+			description: ["\"A collection of blocks designed to bring new colors and textures to your builds. The mod aims to cover all sorts of uses and environments.\""]
 			icon: "architects_palette:abyssaline"
 			id: "5D369315B632436F"
 			shape: "rsquare"
@@ -113,6 +126,7 @@
 			y: -1.5d
 		}
 		{
+			description: ["Bring your factory to life! With these blocks, the children will be yearning for the coal mines in no time."]
 			icon: "dustrial_decor:industrial_iron_block"
 			id: "064FA34CC2599EBE"
 			shape: "rsquare"
@@ -125,6 +139,7 @@
 			y: -1.5d
 		}
 		{
+			description: ["... And maybe &oyou&r yearn for a cozy cottage."]
 			icon: "fantasyfurniture:nordic/bed_single"
 			id: "043100DC9FEC89E7"
 			shape: "rsquare"
@@ -137,6 +152,8 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["5901D32D9B89F5F8"]
+			description: ["The clipboard is good for writing down to-do lists with toggleable checkmarks and can be placed in world. Good to use in conjunction with EMI's \"a\" on recipe feature."]
 			id: "402F4F6E8631D2CB"
 			shape: "rsquare"
 			tasks: [{
@@ -148,6 +165,8 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["2BD7F4FFE21EF3F9"]
+			description: ["Cross-dimensional wireless power transfer made easy. If you consider EV easy."]
 			id: "633BCF86D1CD7C76"
 			shape: "rsquare"
 			tasks: [{
@@ -160,6 +179,7 @@
 			y: -0.5d
 		}
 		{
+			description: ["Transfer your Items/Energy/Fluids around with cute little lasers. See the patchouli book to get started."]
 			id: "3232A7A69C2905D9"
 			shape: "rsquare"
 			tasks: [{
@@ -172,6 +192,7 @@
 			y: -0.5d
 		}
 		{
+			description: ["Another fantastic decor mod!"]
 			id: "0A8700DFAE371A36"
 			shape: "rsquare"
 			tasks: [{
@@ -188,6 +209,7 @@
 			y: -0.5d
 		}
 		{
+			description: ["Works like a painting and is useful for quickly crafting repetitive recipes."]
 			id: "6E45F559B61A2CC4"
 			shape: "rsquare"
 			tasks: [{
@@ -199,6 +221,8 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["169A5A9ED201C8FE"]
+			description: ["Grants creative flight at the expense of RF."]
 			id: "6DEDF965FFD12B7B"
 			shape: "rsquare"
 			tasks: [{
@@ -222,6 +246,8 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["27C811CBD873B7E3"]
+			description: ["You're gonna need a lot of greg machines for this one. You may want to get an epoxy line going first."]
 			id: "48D2144395562A62"
 			shape: "rsquare"
 			tasks: [{
@@ -240,6 +266,10 @@
 			y: 0.5d
 		}
 		{
+			description: [
+				"Tranfer your fluids around with ease."
+				"Pro Tip: You can get blaze early on by centrifuging a magma cream which comes from a Create basin."
+			]
 			id: "5CA8EFB9CE8473FB"
 			shape: "rsquare"
 			tasks: [{
@@ -259,6 +289,7 @@
 		}
 		{
 			can_repeat: true
+			description: ["Komaru <3"]
 			id: "3883FCBF2C286141"
 			rewards: [
 				{
@@ -284,6 +315,7 @@
 			y: 0.5d
 		}
 		{
+			description: ["Hassle-free pipes with pipez!"]
 			icon: "pipez:item_pipe"
 			id: "5DEBB63E9EE8A6B0"
 			shape: "rsquare"
@@ -314,6 +346,11 @@
 			y: 0.5d
 		}
 		{
+			dependencies: [
+				"462E016CCFCD4DAA"
+				"3F3E3CD778320054"
+			]
+			description: ["Early alternative to AE. Makes greg bearable. This should be a top priority along with a colossal chest for mass storage."]
 			icon: "toms_storage:ts.wireless_terminal"
 			id: "5E87737A633D46AA"
 			shape: "rsquare"
