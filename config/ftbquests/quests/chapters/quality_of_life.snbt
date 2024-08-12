@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["76506FA07526B0E9"]
 			icon: "effortlessbuilding:reach_upgrade1"
 			id: "3754DD882E5E6E37"
 			shape: "rsquare"
@@ -17,10 +18,11 @@
 				title: "Effortless Building"
 				type: "checkmark"
 			}]
-			x: -8.5d
-			y: -2.5d
+			x: -10.5d
+			y: -1.0d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			icon: "travelanchors:travel_anchor"
 			id: "2092BC62D0ABB53F"
 			shape: "rsquare"
@@ -37,10 +39,11 @@
 				}
 			]
 			title: "Travel Anchors and Travel Staff"
-			x: -7.5d
-			y: -2.5d
+			x: -4.0d
+			y: -3.5d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			icon: "functionalstorage:oak_1"
 			id: "5F17F1158F33BF30"
 			shape: "rsquare"
@@ -57,10 +60,11 @@
 				type: "item"
 			}]
 			title: "Functional Storage"
-			x: -6.5d
-			y: -2.5d
+			x: -7.5d
+			y: 2.0d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			id: "2D522E868DFD339A"
 			shape: "rsquare"
 			tasks: [{
@@ -69,10 +73,11 @@
 				type: "item"
 			}]
 			title: "Item Collectors"
-			x: -5.5d
-			y: -2.5d
+			x: -6.5d
+			y: 2.0d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			id: "069CEEF34F469ADE"
 			shape: "rsquare"
 			tasks: [{
@@ -85,58 +90,63 @@
 				type: "item"
 			}]
 			title: "Backpacks"
-			x: -4.5d
-			y: -2.5d
+			x: -10.0d
+			y: 0.5d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			id: "7403111E2D8E1EDB"
-			shape: "rsquare"
+			shape: "hexagon"
 			tasks: [{
 				id: "036AD2025E2A209B"
 				item: "xtonesreworked:xtone_tile"
 				type: "item"
 			}]
 			title: "Xtones"
-			x: -7.5d
-			y: -1.5d
+			x: -6.5d
+			y: -6.0d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			icon: "architects_palette:abyssaline"
 			id: "5D369315B632436F"
-			shape: "rsquare"
+			shape: "hexagon"
 			tasks: [{
 				id: "633549F4F9B8A804"
 				title: "Architect's Palette"
 				type: "checkmark"
 			}]
-			x: -6.5d
-			y: -1.5d
+			x: -8.5d
+			y: -5.5d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			icon: "dustrial_decor:industrial_iron_block"
 			id: "064FA34CC2599EBE"
-			shape: "rsquare"
+			shape: "hexagon"
 			tasks: [{
 				id: "7A657F38412F3CBC"
 				title: "'Durstrial Decor"
 				type: "checkmark"
 			}]
 			x: -5.5d
-			y: -1.5d
+			y: -5.5d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			icon: "fantasyfurniture:nordic/bed_single"
 			id: "043100DC9FEC89E7"
-			shape: "rsquare"
+			shape: "hexagon"
 			tasks: [{
 				id: "7DB860B42FC87155"
 				title: "Fantasy Furniture"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: -1.5d
+			x: -9.5d
+			y: -4.5d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			id: "402F4F6E8631D2CB"
 			shape: "rsquare"
 			tasks: [{
@@ -144,22 +154,11 @@
 				item: "create:clipboard"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -1.5d
+			x: -9.0d
+			y: 1.5d
 		}
 		{
-			id: "633BCF86D1CD7C76"
-			shape: "rsquare"
-			tasks: [{
-				id: "19CD6F9C8139343A"
-				item: "fluxnetworks:flux_controller"
-				type: "item"
-			}]
-			title: "Flux Networks"
-			x: -7.5d
-			y: -0.5d
-		}
-		{
+			dependencies: ["76506FA07526B0E9"]
 			id: "3232A7A69C2905D9"
 			shape: "rsquare"
 			tasks: [{
@@ -168,12 +167,13 @@
 				type: "item"
 			}]
 			title: "LaserIO"
-			x: -5.5d
-			y: -0.5d
+			x: -5.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			id: "0A8700DFAE371A36"
-			shape: "rsquare"
+			shape: "hexagon"
 			tasks: [{
 				id: "0B344D1B6347ECA7"
 				item: {
@@ -185,9 +185,10 @@
 			}]
 			title: "Rechiseled"
 			x: -4.5d
-			y: -0.5d
+			y: -4.5d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			id: "6E45F559B61A2CC4"
 			shape: "rsquare"
 			tasks: [{
@@ -195,10 +196,11 @@
 				item: "create:crafting_blueprint"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -0.5d
+			x: -10.5d
+			y: -2.0d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			id: "6DEDF965FFD12B7B"
 			shape: "rsquare"
 			tasks: [{
@@ -218,10 +220,11 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.5d
+			x: -10.0d
+			y: -3.5d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			id: "48D2144395562A62"
 			shape: "rsquare"
 			tasks: [{
@@ -236,10 +239,11 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
-			y: 0.5d
+			x: -3.5d
+			y: -2.0d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			id: "5CA8EFB9CE8473FB"
 			shape: "rsquare"
 			tasks: [{
@@ -254,11 +258,12 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.5d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
 			can_repeat: true
+			dependencies: ["76506FA07526B0E9"]
 			id: "3883FCBF2C286141"
 			rewards: [
 				{
@@ -273,17 +278,19 @@
 					type: "item"
 				}
 			]
-			shape: "rsquare"
+			shape: "gear"
+			size: 4.0d
 			tasks: [{
 				id: "4F7887A26E18BC9C"
 				item: "komarumod:komaru_powder"
 				type: "item"
 			}]
 			title: "Komaru Cat"
-			x: -8.5d
-			y: 0.5d
+			x: -7.0d
+			y: -1.0d
 		}
 		{
+			dependencies: ["76506FA07526B0E9"]
 			icon: "pipez:item_pipe"
 			id: "5DEBB63E9EE8A6B0"
 			shape: "rsquare"
@@ -310,10 +317,11 @@
 					type: "item"
 				}
 			]
-			x: -6.5d
+			x: -4.0d
 			y: 0.5d
 		}
 		{
+			description: ["Move tom's to the ULV chapter (or the beginning chapter)?"]
 			icon: "toms_storage:ts.wireless_terminal"
 			id: "5E87737A633D46AA"
 			shape: "rsquare"
@@ -335,8 +343,33 @@
 				}
 			]
 			title: "Tom's Simple Storage Mod"
-			x: -8.5d
-			y: -0.5d
+			x: -10.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["76506FA07526B0E9"]
+			id: "726F023FDABDCF90"
+			shape: "hexagon"
+			tasks: [{
+				id: "354107435EAEA293"
+				item: "chipped:botanist_workbench"
+				type: "item"
+			}]
+			title: "Chipped"
+			x: -7.5d
+			y: -6.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "76506FA07526B0E9"
+			size: 1.5d
+			tasks: [{
+				id: "2BF0AEF1BA1124E8"
+				title: "Quality of Life"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: -4.0d
 		}
 	]
 	title: "Quality Of Life"
