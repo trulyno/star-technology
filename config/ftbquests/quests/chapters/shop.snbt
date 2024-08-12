@@ -5,6 +5,18 @@
 	group: "28726466D987C725"
 	icon: "kubejs:coin"
 	id: "37A847E834E8225E"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 4.0d
+		hover: [ ]
+		image: "kubejs:item/coin"
+		rotation: 0.0d
+		width: 4.0d
+		x: 0.5d
+		y: -3.0d
+	}]
 	order_index: 5
 	quest_links: [ ]
 	quests: [
