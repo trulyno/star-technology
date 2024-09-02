@@ -298,7 +298,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('10x gtceu:birmabright_dust')
         .duration(350)
         .EUt(GTValues.VHA[GTValues.HV])
-        .circuit(1);
+        .circuit(3);
 
     event.recipes.gtceu.mixer('duralumin')
         .itemInputs('4x gtceu:aluminium_dust', '3x gtceu:copper_dust', '1x gtceu:magnesium_dust', '1x gtceu:manganese_dust')
@@ -360,7 +360,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('27x gtceu:tumbaga_dust')
         .duration(470)
         .EUt(GTValues.VHA[GTValues.HV])
-        .circuit(3);
+        .circuit(4);
 
     event.recipes.gtceu.assembler('multiblock_upgrade_kit')
         .itemInputs('thermal:lumium_glass', '#gtceu:circuits/ev', '2x gtceu:double_signalum_plate', '12x gtceu:cobalt_foil')
