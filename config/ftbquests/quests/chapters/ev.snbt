@@ -442,7 +442,7 @@
 			}]
 			tasks: [{
 				id: "6BE59CDB3C9CA033"
-				item: "exnihilosequentia:emerald_mesh"
+				item: "exdeorum:diamond_mesh"
 				type: "item"
 			}]
 			x: -11.0d

@@ -1,0 +1,6 @@
+// Compost colors for simplybackpacks. You may add your own colors, change existing ones, or remove colors that aren't needed.
+commonbackpack, #fff2e3
+epicbackpack, #ffbbf5
+rarebackpack, #b8ffff
+ultimatebackpack, #695148
+uncommonbackpack, #ffff97

@@ -1,0 +1,2 @@
+// Compost colors for ae2netanalyser. You may add your own colors, change existing ones, or remove colors that aren't needed.
+network_analyser, #6b73a7

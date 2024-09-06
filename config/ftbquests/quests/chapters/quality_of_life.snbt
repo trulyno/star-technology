@@ -47,7 +47,7 @@
 			tasks: [{
 				id: "7CFC899DD7721354"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "functionalstorage:drawer"
@@ -78,7 +78,7 @@
 			tasks: [{
 				id: "1C116CCF53EC0709"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "simplybackpacks:commonbackpack"
 					tag: { }
 				}
@@ -177,7 +177,7 @@
 			tasks: [{
 				id: "0B344D1B6347ECA7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "rechiseled:chisel"
 					tag: { }
 				}
@@ -204,7 +204,7 @@
 			tasks: [{
 				id: "06123F1FF50AD404"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "jetboots:jetboots"
 					tag: {
 						bml-item-xp: 0
@@ -227,7 +227,7 @@
 			tasks: [{
 				id: "457960EC0164CC29"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "enderchests:ender_chest"
 					tag: {
 						code: "000"
@@ -245,7 +245,7 @@
 			tasks: [{
 				id: "02D516C817862D95"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "endertanks:ender_tank"
 					tag: {
 						code: "000"

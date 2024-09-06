@@ -1,0 +1,17 @@
+// Compost colors for create_new_age. You may add your own colors, change existing ones, or remove colors that aren't needed.
+blank_circuit, #dcdcdc
+copper_circuit, #ffc8b4
+copper_wire, #a45c3e
+incomplete_fuel, #a7abab
+incomplete_wire, #4d2a11
+nuclear_fuel, #c5d0cd
+overcharged_diamond, #32ffff
+overcharged_diamond_wire, #417f72
+overcharged_gold, #feffac
+overcharged_golden_sheet, #ddffd3
+overcharged_golden_wire, #ac731f
+overcharged_iron, #c0fffc
+overcharged_iron_sheet, #bcffff
+overcharged_iron_wire, #8e7c6e
+radioactive_thorium, #ddd4c0
+thorium, #fad9b5

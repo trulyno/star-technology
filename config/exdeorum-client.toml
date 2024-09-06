@@ -1,0 +1,8 @@
+
+#Client configuration for Ex Deorum
+[client]
+	#Whether to use a simplified renderer for infested leaves (reduces FPS lag with lots of infested trees)
+	use_fast_infested_leaves = false
+	#Whether compost in barrels appears as rainbow colored during the month of June
+	rainbow_compost_during_june = true
+

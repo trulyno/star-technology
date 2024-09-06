@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`32x minecraft:${type}_log`)
             .inputFluids('minecraft:water 100')
             .duration(600)
+            .circuit(0)
             .EUt(20);
 
         event.recipes.gtceu.tree_greenhouse(`${type}_co2_growing`)
@@ -41,6 +42,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(`32x minecraft:mangrove_log`)
         .inputFluids('minecraft:water 100')
         .duration(400)
+        .circuit(0)
         .EUt(20);
 
 

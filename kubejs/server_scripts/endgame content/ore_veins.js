@@ -68,8 +68,8 @@ GTCEuServerEvents.oreVeins(event => {
         vein.discardChanceOnAirExposure(0)
 
         vein.layer('abydos')
-        vein.dimensions('sgjourney:abydos')
-        vein.biomes('#sgjourney:abydos_desert')
+        // vein.dimensions('sgjourney:abydos')
+        // vein.biomes('sgjourney:abydos_desert')
 
         vein.heightRangeUniform(10, 60)
 

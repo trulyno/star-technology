@@ -29,15 +29,15 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.cobbleworks(`cobble_to_dust_${i + 8}`)
             .chancedFluidInput('minecraft:water 1', 1, 0)
             .chancedFluidInput('minecraft:lava 1', 1, 0)
-            .itemOutputs(`${overclock[i]}x exnihilosequentia:dust`)
+            .itemOutputs(`${overclock[i]}x exdeorum:dust`)
             .duration(60 * (i + 1))
             .EUt(320)
             .circuit(i + 8);
 
         event.recipes.gtceu.cobbleworks(`blackstone_to_crushed_blackstone_${i}`)
-            .chancedFluidInput('exnihilosequentia:witch_water 1', 1, 0)
+            .chancedFluidInput('exdeorum:witch_water 1', 1, 0)
             .chancedFluidInput('minecraft:lava 1', 1, 0)
-            .itemOutputs(`${overclock[i]}x exnihilosequentia:crushed_blackstone`)
+            .itemOutputs(`${overclock[i]}x exdeorum:crushed_blackstone`)
             .duration(20 * (i + 1))
             .EUt(320)
             .circuit(i);

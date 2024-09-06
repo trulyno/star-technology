@@ -8,49 +8,49 @@ ServerEvents.recipes(event => {
     ], {
         P: 'gtceu:treated_wood_planks',
         S: 'gtceu:treated_wood_rod',
-        B: '#exnihilosequentia:barrels',
+        B: '#exdeorum:barrels',
         I: 'gtceu:wrought_iron_plate'
     });
 
     event.recipes.gtceu.large_barrel('witch_water')
-        .notConsumable('exnihilosequentia:mycelium_spores')
+        .notConsumable('exdeorum:mycelium_spores')
         .inputFluids('minecraft:water 1000')
-        .outputFluids('exnihilosequentia:witch_water 1000')
+        .outputFluids('exdeorum:witch_water 1000')
         .duration(80);
 
     event.recipes.gtceu.large_barrel('to_clay')
-        .itemInputs('exnihilosequentia:dust')
+        .itemInputs('exdeorum:dust')
         .inputFluids('minecraft:water 1000')
         .itemOutputs('minecraft:clay')
         .duration(1);
 
     event.recipes.gtceu.large_barrel('to_ssand')
         .itemInputs('minecraft:sand')
-        .inputFluids('exnihilosequentia:witch_water 100')
+        .inputFluids('exdeorum:witch_water 100')
         .itemOutputs('minecraft:soul_sand')
         .duration(1);
 
     event.recipes.gtceu.large_barrel('to_slime')
         .itemInputs('#forge:mushrooms')
-        .inputFluids('exnihilosequentia:witch_water 1000')
+        .inputFluids('exdeorum:witch_water 1000')
         .itemOutputs('minecraft:slime_block')
         .duration(1);
 
     event.recipes.gtceu.large_barrel('to_bshroom')
-        .itemInputs('exnihilosequentia:mycelium_spores')
-        .inputFluids('exnihilosequentia:witch_water 1000')
+        .itemInputs('exdeorum:mycelium_spores')
+        .inputFluids('exdeorum:witch_water 1000')
         .itemOutputs('minecraft:brown_mushroom_block')
         .duration(1);
 
     event.recipes.gtceu.large_barrel('to_rshroom')
         .itemInputs('minecraft:brown_mushroom_block')
-        .inputFluids('exnihilosequentia:witch_water 1000')
+        .inputFluids('exdeorum:witch_water 1000')
         .itemOutputs('minecraft:red_mushroom_block')
         .duration(1);
 
     event.recipes.gtceu.large_barrel('slimeshroom_dupe')
         .notConsumable('thermal:slime_mushroom_spores')
-        .inputFluids('exnihilosequentia:witch_water 100')
+        .inputFluids('exdeorum:witch_water 100')
         .chancedOutput('thermal:slime_mushroom_spores', 9500, 0)
         .duration(20);
 

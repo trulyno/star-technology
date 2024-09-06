@@ -827,7 +827,6 @@
 				command: "/sgjourney stargateNetwork address sgjourney:abydos"
 				icon: "minecraft:sand"
 				id: "6208F5254BDA7F99"
-				player_command: true
 				title: "Find out the coordinates of Abydos"
 				type: "command"
 			}]

@@ -1,0 +1,18 @@
+// Compost colors for mysticaladaptations. You may add your own colors, change existing ones, or remove colors that aren't needed.
+insanium_axe, #8a4ea7
+insanium_boots, #c846ff
+insanium_bow, #440b5f
+insanium_chestplate, #aa08f4
+insanium_crossbow, #6b1194
+insanium_fishing_rod, #5b336e
+insanium_helmet, #d06bff
+insanium_hoe, #8341a1
+insanium_leggings, #ca55ff
+insanium_paxel, #832fab
+insanium_pickaxe, #9037b9
+insanium_scythe, #640093
+insanium_shears, #8e00d2
+insanium_shovel, #9b4bc0
+insanium_sickle, #8200be
+insanium_sword, #8012b2
+insanium_watering_can, #eb84ff

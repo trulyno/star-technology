@@ -1,0 +1,11 @@
+// Compost colors for xycraft_world. You may add your own colors, change existing ones, or remove colors that aren't needed.
+aluminum_ingot, #cde0e4
+aluminum_nugget, #afc2cc
+aluminum_torch, #bba17c
+copper_torch, #a1a45c
+raw_aluminum, #bccacf
+xychorium_gem_blue, #76ffff
+xychorium_gem_dark, #7d70a4
+xychorium_gem_green, #97ffa2
+xychorium_gem_light, #ffffff
+xychorium_gem_red, #ff98a1

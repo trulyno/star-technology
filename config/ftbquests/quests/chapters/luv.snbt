@@ -1501,7 +1501,7 @@
 				{
 					id: "18E02DC69E8F75D5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:quarktech_helmet"
 						tag: {
 							Damage: 0
@@ -1512,7 +1512,7 @@
 				{
 					id: "053F3EA3A354876A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:quarktech_chestplate"
 						tag: {
 							Damage: 0
@@ -1523,7 +1523,7 @@
 				{
 					id: "04BBC724D38B575E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:quarktech_leggings"
 						tag: {
 							Damage: 0
@@ -1534,7 +1534,7 @@
 				{
 					id: "002E56DA15C27E28"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:quarktech_boots"
 						tag: {
 							Damage: 0

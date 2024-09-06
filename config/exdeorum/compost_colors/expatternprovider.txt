@@ -1,0 +1,12 @@
+// Compost colors for expatternprovider. You may add your own colors, change existing ones, or remove colors that aren't needed.
+drive_upgrade, #c2c0bf
+infinity_cell, #577fe6
+interface_upgrade, #e3f7ff
+io_bus_upgrade, #dae7f2
+me_packing_tape, #ac76b8
+package, #9a48ae
+pattern_modifier, #c9e4cd
+pattern_provider_upgrade, #ffffda
+pattern_terminal_upgrade, #edc6f2
+wireless_ex_pat, #d6c5e0
+wireless_tool, #667d66

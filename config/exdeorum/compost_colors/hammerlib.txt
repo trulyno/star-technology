@@ -1,0 +1,9 @@
+// Compost colors for hammerlib. You may add your own colors, change existing ones, or remove colors that aren't needed.
+gears/copper, #da6546
+gears/diamond, #5fffff
+gears/gold, #ffff50
+gears/iron, #ffffff
+gears/netherite, #373033
+gears/stone, #9d9d9d
+gears/wooden, #dea858
+wrench, #646b6e

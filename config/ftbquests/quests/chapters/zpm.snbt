@@ -420,7 +420,7 @@
 			tasks: [{
 				id: "3149A95F901C97C9"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:advanced_quarktech_chestplate"
 					tag: {
 						Damage: 0

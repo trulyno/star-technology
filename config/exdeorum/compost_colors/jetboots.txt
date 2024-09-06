@@ -1,0 +1,15 @@
+// Compost colors for jetboots. You may add your own colors, change existing ones, or remove colors that aren't needed.
+armor_core, #d2b576
+engine_upgrade, #e1c376
+guardian_helmet, #b4937a
+guardian_jacket, #692020
+guardian_pants, #b0c22
+guardian_sword, #7d8ea1
+jetboots, #25262c
+jetboots_template, #5c7083
+muffled_upgrade, #fac366
+obsidian_infused_gold, #d9be5a
+rocket_boots, #475458
+shock_absorber_upgrade, #ebda86
+thruster_upgrade, #dabe76
+underwater_upgrade, #edd697

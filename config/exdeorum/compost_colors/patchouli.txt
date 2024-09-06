@@ -1,0 +1,2 @@
+// Compost colors for patchouli. You may add your own colors, change existing ones, or remove colors that aren't needed.
+guide_book, #a0987a

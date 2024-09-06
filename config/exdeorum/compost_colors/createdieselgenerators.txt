@@ -1,0 +1,15 @@
+// Compost colors for createdieselgenerators. You may add your own colors, change existing ones, or remove colors that aren't needed.
+biodiesel_bucket, #c2a793
+crude_oil_bucket, #87898a
+diesel_bucket, #c2b293
+distillation_controller, #b1b2b2
+engine_piston, #c5c5c5
+engine_silencer, #bbbfbe
+engine_turbocharger, #909191
+ethanol_bucket, #c5c2b5
+gasoline_bucket, #c0b9a4
+kelp_handle, #4b473d
+lighter, #e09d5e
+oil_scanner, #9e9b94
+plant_oil_bucket, #d0cab5
+wood_chip, #be985f

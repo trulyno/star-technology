@@ -1,0 +1,3 @@
+// Compost colors for gravestone. You may add your own colors, change existing ones, or remove colors that aren't needed.
+gravestone, #aeaeae
+obituary, #ffffff

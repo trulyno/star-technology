@@ -1,22 +1,19 @@
 {
-  "_README": "https://gitlab.com/CDAGaming/CraftPresence/-/wikis/home",
-  "_SOURCE": "https://gitlab.com/CDAGaming/CraftPresence",
   "_schemaVersion": 6,
-  "_lastMCVersionId": 760,
+  "_lastMCVersionId": 763,
   "generalSettings": {
     "detectATLauncherInstance": false,
-    "detectCurseManifest": true,
+    "detectCurseManifest": false,
     "detectMultiMCManifest": false,
     "detectMCUpdaterInstance": false,
     "detectTechnicPack": false,
-    "detectModrinthPack": true,
+    "detectModrinthPack": false,
     "detectBiomeData": false,
-    "detectDimensionData": true,
-    "detectWorldData": true,
-    "clientId": "762726289341677668",
-    "defaultIcon": "modpack_logo",
+    "detectDimensionData": false,
+    "detectWorldData": false,
+    "clientId": "1272208350544924835",
+    "defaultIcon": "startlogo",
     "enableJoinRequests": false,
-    "partyPrivacyLevel": 1,
     "preferredClientLevel": 3,
     "resetTimeOnInit": false,
     "autoRegister": false
@@ -38,7 +35,10 @@
       "overworld": {
         "data": {
           "enabled": false,
-          "useAsMain": true,
+          "useAsMain": false,
+          "isInstance": false,
+          "activityType": 0,
+          "partyPrivacy": 1,
           "details": "{player.name} is in The Overworld",
           "gameState": "",
           "largeImageKey": "overworld",
@@ -58,7 +58,10 @@
       "the_nether": {
         "data": {
           "enabled": false,
-          "useAsMain": true,
+          "useAsMain": false,
+          "isInstance": false,
+          "activityType": 0,
+          "partyPrivacy": 1,
           "details": "{player.name} is in The Nether",
           "gameState": "",
           "largeImageKey": "nether",
@@ -78,7 +81,10 @@
       "the_end": {
         "data": {
           "enabled": false,
-          "useAsMain": true,
+          "useAsMain": false,
+          "isInstance": false,
+          "activityType": 0,
+          "partyPrivacy": 1,
           "details": "{player.name} is in The End",
           "gameState": "",
           "largeImageKey": "end",
@@ -105,8 +111,11 @@
       "default": {
         "textOverride": "Playing on {server.motd.raw}",
         "data": {
-          "enabled": true,
-          "useAsMain": true,
+          "enabled": false,
+          "useAsMain": false,
+          "isInstance": false,
+          "activityType": 0,
+          "partyPrivacy": 1,
           "details": "Playing on {server.name} with {server.players.current} players",
           "gameState": "Playing online",
           "largeImageKey": "mclogonew",
@@ -129,8 +138,11 @@
     "mainMenuData": {
       "textOverride": "In the Main Menu",
       "data": {
-        "enabled": true,
-        "useAsMain": true,
+        "enabled": false,
+        "useAsMain": false,
+        "isInstance": false,
+        "activityType": 0,
+        "partyPrivacy": 1,
         "details": "{player.name} is currently lazy",
         "gameState": "Chilling in the menu",
         "largeImageKey": "mclogonew",
@@ -150,8 +162,11 @@
     "loadingData": {
       "textOverride": "Loading...",
       "data": {
-        "enabled": true,
-        "useAsMain": true,
+        "enabled": false,
+        "useAsMain": false,
+        "isInstance": false,
+        "activityType": 0,
+        "partyPrivacy": 1,
         "details": "Star Technology is loading",
         "gameState": "Game Starting...",
         "largeImageKey": "mclogonew",
@@ -169,13 +184,37 @@
       }
     },
     "lanData": {
-      "textOverride": "Playing on a LAN Server"
+      "textOverride": "Playing on a LAN Server",
+      "data": {
+        "enabled": true,
+        "useAsMain": false,
+        "isInstance": false,
+        "activityType": 0,
+        "partyPrivacy": 1,
+        "details": "",
+        "gameState": "",
+        "largeImageKey": "",
+        "largeImageText": "",
+        "smallImageKey": "",
+        "smallImageText": "",
+        "startTimestamp": "",
+        "endTimestamp": "",
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
+      }
     },
     "singleplayerData": {
       "textOverride": "Playing Singleplayer",
       "data": {
-        "enabled": true,
-        "useAsMain": true,
+        "enabled": false,
+        "useAsMain": false,
+        "isInstance": false,
+        "activityType": 0,
+        "partyPrivacy": 1,
         "details": "Currently In {dimension.name}",
         "gameState": "Playing lonely mode",
         "largeImageKey": "mclogonew",
@@ -191,6 +230,9 @@
           }
         }
       }
+    },
+    "realmData": {
+      "textOverride": "Playing on {server.motd.raw}"
     }
   },
   "advancedSettings": {
@@ -207,8 +249,11 @@
       "guiData": {
         "JoinMultiplayerScreen": {
           "data": {
-            "enabled": true,
-            "useAsMain": true,
+            "enabled": false,
+            "useAsMain": false,
+            "isInstance": false,
+            "activityType": 0,
+            "partyPrivacy": 1,
             "details": "{player.name} is looking for a server",
             "gameState": "Searching for friends",
             "largeImageKey": "mclogonew",
@@ -227,8 +272,11 @@
         },
         "LevelLoadingScreen": {
           "data": {
-            "enabled": true,
-            "useAsMain": true,
+            "enabled": false,
+            "useAsMain": false,
+            "isInstance": false,
+            "activityType": 0,
+            "partyPrivacy": 1,
             "details": "{player.name} is joining a game",
             "gameState": "Joining Game",
             "largeImageKey": "mclogonew",
@@ -250,8 +298,11 @@
         },
         "RealmsScreen": {
           "data": {
-            "enabled": true,
-            "useAsMain": true,
+            "enabled": false,
+            "useAsMain": false,
+            "isInstance": false,
+            "activityType": 0,
+            "partyPrivacy": 1,
             "details": "{player.name} is looking for a Realm",
             "gameState": "Browsing Realms",
             "largeImageKey": "mclogonew",
@@ -270,8 +321,11 @@
         },
         "ReceivingLevelScreen": {
           "data": {
-            "enabled": true,
-            "useAsMain": true,
+            "enabled": false,
+            "useAsMain": false,
+            "isInstance": false,
+            "activityType": 0,
+            "partyPrivacy": 1,
             "details": "{player.name} is joining a game",
             "gameState": "Joining Game",
             "largeImageKey": "mclogonew",
@@ -310,82 +364,44 @@
     "serverIconEndpoint": "https://api.mcsrvstat.us/icon/{server.address.short}",
     "playerSkinEndpoint": "https://mc-heads.net/avatar/{getOrDefault(player.uuid.short, player.name)}",
     "allowDuplicatePackets": false,
-    "maxConnectionAttempts": 10
+    "maxConnectionAttempts": 10,
+    "enableClassGraph": false
   },
   "accessibilitySettings": {
-    "tooltipBackground": {
-      "start": {
-        "red": 16,
-        "green": 0,
-        "blue": 16,
-        "alpha": 240
-      }
-    },
-    "tooltipBorder": {
-      "start": {
-        "red": 80,
-        "green": 0,
-        "blue": 255,
-        "alpha": 80
-      },
-      "end": {
-        "red": 40,
-        "green": 0,
-        "blue": 127,
-        "alpha": 80
-      }
-    },
-    "guiBackground": {
-      "start": {
-        "red": 64,
-        "green": 64,
-        "blue": 64,
-        "alpha": 255
-      },
-      "texLocation": "minecraft:textures/gui/options_background.png"
-    },
-    "worldGuiBackground": {
-      "start": {
-        "red": 16,
-        "green": 16,
-        "blue": 16,
-        "alpha": 192
-      },
-      "end": {
-        "red": 16,
-        "green": 16,
-        "blue": 16,
-        "alpha": 208
-      }
-    },
     "languageId": "en_us",
     "stripTranslationColors": false,
+    "stripTranslationFormatting": false,
     "stripExtraGuiElements": false,
-    "renderTooltips": true,
-    "configKeyCode": 331
+    "configKeyCode": -1
   },
   "displaySettings": {
     "presenceData": {
       "enabled": true,
       "useAsMain": true,
-      "details": "Playing Star Technology",
+      "isInstance": false,
+      "activityType": 0,
+      "partyPrivacy": 1,
+      "details": "Playing Star Technology on {general.version}",
       "gameState": "",
-      "largeImageKey": "{randomString('mclogonew','')}",
-      "largeImageText": "It's Minecraft {general.version}, but modded",
-      "smallImageKey": "mclogo",
-      "smallImageText": "{general.mods} mods installed",
+      "largeImageKey": "startlogo",
+      "largeImageText": "Trying to return home",
+      "smallImageKey": "",
+      "smallImageText": "Trying to get home",
       "startTimestamp": "{data.general.time}",
       "endTimestamp": "",
       "buttons": {
+        "button_1": {
+          "label": "Join Star Technology Discord",
+          "url": "https://discord.gg/numxrCgrCG"
+        },
         "default": {
-          "label": "Example Text",
-          "url": "https://google.com"
+          "label": "Join Star Technology Discord",
+          "url": "https://discord.gg/numxrCgrCG"
         }
       }
     },
     "dynamicIcons": {
-      "default": "https://via.placeholder.com/256.png",
-      "trulyno": "https://mc-heads.net/avatar/d7cdfd58190f4354acb6da7cf5e0a99c"
+      "default": "https://via.placeholder.com/256.png"
     },
     "dynamicVariables": {
       "default": "Example Text",

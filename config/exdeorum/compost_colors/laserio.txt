@@ -1,0 +1,17 @@
+// Compost colors for laserio. You may add your own colors, change existing ones, or remove colors that aren't needed.
+card_cloner, #a7ae9e
+card_energy, #ffffcd
+card_fluid, #daddee
+card_holder, #f8fff8
+card_item, #daebcc
+card_redstone, #fff8ee
+filter_basic, #dcd6cd
+filter_count, #ede6ed
+filter_mod, #e6e8f1
+filter_nbt, #f0f5ee
+filter_tag, #fffff7
+laser_wrench, #e8cfd6
+logic_chip, #ffffff
+logic_chip_raw, #ffffff
+overclocker_card, #ead9b8
+overclocker_node, #84a19e

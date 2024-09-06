@@ -1,0 +1,19 @@
+// Compost colors for manyideas_core. You may add your own colors, change existing ones, or remove colors that aren't needed.
+dye_rainbow, #fff2ed
+panel_acacia, #ffeacf
+panel_birch, #ffffff
+panel_crimson, #cc5486
+panel_dark_oak, #d2bfae
+panel_jungle, #ffffe7
+panel_oak, #ffffe6
+panel_spruce, #f1dabf
+panel_warped, #57dedc
+plate_copper, #ff976f
+plate_gold, #ffff52
+plate_iron, #ebe7e6
+plate_quartz, #ffffff
+rainbow_stained_glass_pane, #ccb898
+redstone_key, #cfa4a1
+saw_diamond, #94ffff
+saw_iron, #ffffff
+saw_stone, #c3c3c3

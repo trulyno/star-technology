@@ -1,0 +1,19 @@
+// Compost colors for webdisplays. You may add your own colors, change existing ones, or remove colors that aren't needed.
+craftcomp_backlight, #fffff2
+craftcomp_badextcard, #19da00
+craftcomp_batcell, #6f0000
+craftcomp_batpack, #800000
+craftcomp_extcard, #15ea00
+craftcomp_laserdiode, #ffffb2
+craftcomp_peripheral, #bcd0d9
+craftcomp_stonekey, #a5a5a5
+craftcomp_upgrade, #443d3d
+keyboard, #ffffff
+laserpointer, #a17373
+linker, #b6b2af
+ownerthief, #ffffff
+screencfg, #4d5757
+upgrade_gps, #443d3d
+upgrade_lasermouse, #443d3d
+upgrade_redinput, #443d3d
+upgrade_redoutput, #443d3d

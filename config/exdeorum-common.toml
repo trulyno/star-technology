@@ -1,0 +1,43 @@
+
+#Common configuration for Ex Deorum
+[common]
+	#Whether the Void World type is set as the default world preset in world creation screen and server.properties.
+	set_void_world_as_default = false
+	#If the Void World type is selected, whether the Nether world generation is overridden to a void world. Changes take effect after reopening the world.
+	void_nether_generation = true
+	#If the Void World type is selected, whether the End world generation is overridden to a void world. Changes take effect after reopening the world.
+	void_end_generation = true
+
+	#For recipes automatically added by Ex Deorum for other mods, some mods may add two of the same item (ex. Tin Ore). When Ex Deorum adds a recipe for those kinds of items, you may choose which item of the two (or more) is chosen as the crafting result.
+	[common.preferred_tag_items]
+		#The ID of the item to use for Ex Deorum recipes that craft into Aluminum Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_aluminum_ore = "minecraft:air"
+		#The ID of the item to use for Ex Deorum recipes that craft into Cobalt Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_cobalt_ore = "tconstruct:cobalt_ore"
+		#The ID of the item to use for Ex Deorum recipes that craft into Silver Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_silver_ore = "minecraft:air"
+		#The ID of the item to use for Ex Deorum recipes that craft into Lead Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_lead_ore = "minecraft:air"
+		#The ID of the item to use for Ex Deorum recipes that craft into Platinum Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_platinum_ore = "minecraft:air"
+		#The ID of the item to use for Ex Deorum recipes that craft into Nickel Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_nickel_ore = "minecraft:air"
+		#The ID of the item to use for Ex Deorum recipes that craft into Uranium Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_uranium_ore = "minecraft:air"
+		#The ID of the item to use for Ex Deorum recipes that craft into Osmium Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_osmium_ore = "minecraft:air"
+		#The ID of the item to use for Ex Deorum recipes that craft into Tin Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_tin_ore = "minecraft:air"
+		#The ID of the item to use for Ex Deorum recipes that craft into Zinc Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_zinc_ore = "minecraft:air"
+		#The ID of the item to use for Ex Deorum recipes that craft into Iridium Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_iridium_ore = "minecraft:air"
+		#The ID of the item to use for Ex Deorum recipes that craft into Thorium Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_thorium_ore = "minecraft:air"
+		#The ID of the item to use for Ex Deorum recipes that craft into Magnesium Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_magnesium_ore = "minecraft:air"
+		#The ID of the item to use for Ex Deorum recipes that craft into Lithium Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_lithium_ore = "minecraft:air"
+		#The ID of the item to use for Ex Deorum recipes that craft into Boron Ore. Leave as air for default preference, which chooses alphabetically by mod name.
+		preferred_boron_ore = "minecraft:air"
+

@@ -1,0 +1,35 @@
+#How far (in blocks) you can be before a screen starts rendering
+#Range: 0.0 ~ 1.7976931348623157E308
+load_distance = 30.0
+#How far you can be before a screen stops rendering
+#Range: 0.0 ~ 1.7976931348623157E308
+unload_distance = 32.0
+#The resolution that minePads should use
+#Smaller values produce lower qualities, higher values produce higher qualities
+#Due to how web browsers work however, the larger this value is, the smaller text is
+#Also, higher values will invariably lag more
+#A good goto value for this would be the height of your monitor, in pixels
+#A standard monitor is (at least currently) 1080
+#Range: > 0
+pad_resolution = 720
+#When this is true, the minePad is placed off to the side of the screen when held, so it's visible but doesn't take up too much of the screen
+#When this is false, the minePad is placed closer to the center of the screen, allow it to be seen better, but taking up more of your view
+side_pad = true
+#If the left and right buttons should be swapped when using a laser
+switch_buttons = false
+
+#AutoVolume makes audio fade off based on distance
+#Currently, this seems to not work
+[auto_volume]
+	#Whether or not auto volume should be enabled
+	enabled = true
+	#How loud youtube should be by default
+	#Range: 0.0 ~ 100.0
+	youtube_volume = 100.0
+	#Distance after which you can't hear anything (in blocks)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	dist0 = 30.0
+	#Distance after which the sound starts dropping (in blocks)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	dist100 = 10.0
+

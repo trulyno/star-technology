@@ -1,0 +1,7 @@
+// Compost colors for toms_storage. You may add your own colors, change existing ones, or remove colors that aren't needed.
+ts.adv_wireless_terminal, #68615f
+ts.item_filter, #9b6f48
+ts.paint_kit, #bf8e80
+ts.polymorphic_item_filter, #837247
+ts.tag_item_filter, #976432
+ts.wireless_terminal, #8d7348

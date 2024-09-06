@@ -1,0 +1,2 @@
+// Compost colors for rechiseled. You may add your own colors, change existing ones, or remove colors that aren't needed.
+chisel, #5f4a3c

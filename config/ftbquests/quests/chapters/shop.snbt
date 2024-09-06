@@ -219,7 +219,7 @@
 			can_repeat: true
 			dependencies: ["3184995EBA22F540"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:steel_fluid_cell"
 				tag: {
 					Fluid: {
@@ -233,7 +233,7 @@
 				count: 2
 				id: "4E2EA0E041834C7E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:steel_fluid_cell"
 					tag: {
 						Fluid: {
@@ -248,7 +248,7 @@
 				consume_items: true
 				count: 4L
 				id: "228EDA21BF0B91E9"
-				item: { Count: 4b, id: "kubejs:coin" }
+				item: { Count: 4, id: "kubejs:coin" }
 				type: "item"
 			}]
 			title: "Sodium Persulfate"
@@ -259,7 +259,7 @@
 			can_repeat: true
 			dependencies: ["0DA0992F206EC0A2"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "jetboots:jetboots"
 				tag: {
 					bml-item-xp: 0
@@ -275,7 +275,7 @@
 			rewards: [{
 				id: "2CE17CD3594DD62B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "jetboots:jetboots"
 					tag: {
 						bml-item-xp: 0
@@ -396,7 +396,7 @@
 			can_repeat: true
 			dependencies: ["1C2D07E0CBA206EC"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:hv_item_magnet"
 				tag: {
 					Charge: 1600000L
@@ -406,7 +406,7 @@
 			rewards: [{
 				id: "687C53C6956663BE"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:hv_item_magnet"
 					tag: {
 						Charge: 1600000L

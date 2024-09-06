@@ -1,0 +1,20 @@
+// Compost colors for framedblocks. You may add your own colors, change existing ones, or remove colors that aren't needed.
+framed_bars, #5b3e08
+framed_blueprint, #9e9eff
+framed_door, #916e29
+framed_flower_pot, #503400
+framed_glowing_item_frame, #c98c4b
+framed_hammer, #785e2d
+framed_hanging_sign, #876b33
+framed_iron_door, #a1875a
+framed_item_frame, #a86b39
+framed_key, #9a7f4a
+framed_lever, #625133
+framed_pane, #a57c47
+framed_redstone_torch, #cd5022
+framed_reinforcement, #2c1e44
+framed_screwdriver, #cdbea1
+framed_sign, #8c6828
+framed_soul_torch, #5e6f52
+framed_torch, #896e2f
+framed_wrench, #795b22

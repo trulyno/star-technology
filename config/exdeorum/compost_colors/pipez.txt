@@ -1,0 +1,8 @@
+// Compost colors for pipez. You may add your own colors, change existing ones, or remove colors that aren't needed.
+advanced_upgrade, #64ffe7
+basic_upgrade, #e1fcdd
+filter_destination_tool, #906b76
+improved_upgrade, #fef03e
+infinity_upgrade, #804bed
+ultimate_upgrade, #475c40
+wrench, #ebf5ea

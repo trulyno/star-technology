@@ -1,0 +1,3 @@
+// Compost colors for enderchests. You may add your own colors, change existing ones, or remove colors that aren't needed.
+ender_bag, #252239
+ender_pouch, #39443c

@@ -1,0 +1,3 @@
+// Compost colors for colossalchests. You may add your own colors, change existing ones, or remove colors that aren't needed.
+upgrade_tool, #ffffff
+upgrade_tool_reverse, #ffffff

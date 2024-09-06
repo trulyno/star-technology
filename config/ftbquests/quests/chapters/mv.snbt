@@ -431,7 +431,7 @@
 			}]
 			tasks: [{
 				id: "4A1F22E6E4B5C7C3"
-				item: "exnihilosequentia:iron_mesh"
+				item: "exdeorum:iron_mesh"
 				type: "item"
 			}]
 			x: 1.0d
@@ -729,7 +729,7 @@
 			tasks: [{
 				id: "7A1EF6D703ED48EB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:electric_jetpack"
 					tag: {
 						Damage: 0

@@ -1,0 +1,23 @@
+// Compost colors for architects_palette. You may add your own colors, change existing ones, or remove colors that aren't needed.
+acacia_totem_wing, #ff833e
+algal_blend, #9ebb64
+algal_brick, #4b584e
+cerebral_plate, #b9b28c
+entwine_bars, #2caf9b
+entwine_rod, #ffffff
+hazard_sign, #e7ca5e
+nether_brass_blend, #c3a88a
+nether_brass_chain, #73685a
+nether_brass_ingot, #caaf90
+nether_brass_nugget, #c0a787
+nether_brass_torch, #b6b478
+oracle_jelly, #a870b9
+sunmetal_bars, #a46c5e
+sunmetal_blend, #bc8069
+sunmetal_brick, #905e55
+twisted_door, #9e8694
+twisted_sapling, #86578e
+unobtanium, #bc48c3
+wardstone_blend, #6cbc
+wardstone_brick, #4508a
+withered_bone, #363939

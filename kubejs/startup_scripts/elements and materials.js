@@ -175,6 +175,7 @@ function VHA(voltage) {
 }
 
 function periodicTableElement(material, type) {
+
     let mat = GTMaterials.get(material);
     switch(type) {
         case 'ingot': mat.setProperty(PropertyKey.INGOT, new $IngotProperty()); break;
@@ -188,6 +189,25 @@ function periodicTableElement(material, type) {
                 }
             break;
     }
+
+    // let mat = GTMaterials.get(material);
+    // switch(type) {
+    //     case 'ingot': mat.setProperty(PropertyKey.INGOT, new $IngotProperty()); break;
+    //     case 'dust': mat.setProperty(PropertyKey.DUST, new $DustProperty()); break;
+    //     case 'fluid': case 'gas': case 'plasma': case 'molten': {
+    //         let prop = new $FluidProperty();
+    //         let key;
+    //         switch(type) {
+    //             case 'fluid': key = GTFluidStorageKeys.LIQUID;
+    //             case 'gas': key = GTFluidStorageKeys.GAS;
+    //             case 'plasma': key = GTFluidStorageKeys.PLASMA;
+    //             case 'molten': key = GTFluidStorageKeys.MOLTEN;
+    //         }
+    //         prop.getStorage().enqueueRegistration(key, new GTFluidBuilder());
+    //         mat.setProperty(PropertyKey.FLUID, prop); 
+    //     }
+    //         break;
+    // }
 }
 
 function blastProperty(material, temperature, gasTier, voltage, duration) {
@@ -217,7 +237,7 @@ elementRegistry(event => {
     event.create('pure_netherite', 124, 345, -1, null, '*Nr*', false);
 
     // Classic Stargate
-    event.create('echo', -1, -1, -1, null, 'Ec', false);
+    event.create('echo_r', -1, -1, -1, null, 'Ec', false);
 
     // Abydos Materials
     event.create('zapolgium', 141, 217, -1, null, 'Zg', false);
@@ -319,7 +339,7 @@ materialRegistry(event => {
 
 
     // Gasses
-    periodicTableElement('iodine', 'gas');
+    // periodicTableElement('iodine', 'gas');
     periodicTableElement('oganesson', 'gas');
 
     // PLasmas
@@ -601,10 +621,10 @@ materialRegistry(event => {
         .components('1x chlorine', '3x fluorine')
         .color(0xb3ff99);
 
-    event.create('dichloroethane')
-        .fluid()
-        .components('2x carbon', '4x hydrogen', '2x chlorine')
-        .color(0x99ccff);
+    // event.create('dichloroethane')
+    //     .fluid()
+    //     .components('2x carbon', '4x hydrogen', '2x chlorine')
+    //     .color(0x99ccff);
 
     event.create('tetrachloroethylene')
         .fluid()
@@ -683,10 +703,10 @@ materialRegistry(event => {
         .components('2x carbon', '4x hydrogen', '1x oxygen')
         .color(0xd9d9d9);
 
-    event.create('potassium_hydroxide')
-        .dust()
-        .components('1x potassium', '1x oxygen', '1x hydrogen')
-        .color(0xffcc99);
+    // event.create('potassium_hydroxide')
+    //     .dust()
+    //     .components('1x potassium', '1x oxygen', '1x hydrogen')
+    //     .color(0xffcc99);
 
     event.create('lithium_perchlorate')
         .dust()
@@ -857,20 +877,20 @@ materialRegistry(event => {
         .flags(no_decomp);
 
     // Echo/Void Line
-    event.create('echo')
-        .element(GTElements.get('echo'))
+    event.create('echo_r')
+        .element(GTElements.get('echo_r'))
         .fluid()
         .color(0x003333)
         .iconSet(DULL);
 
     event.create('raw_void')
-        .components('1x echo', '1x neutronium')
+        .components('1x echo_r', '1x neutronium')
         .ingot(1)
         .color(0x006666)
         .iconSet(DULL);
 
     event.create('void')
-        .components('1x echo', '1x neutronium')
+        .components('1x echo_r', '1x neutronium')
         .ingot(1)
         .blastTemp(10799, 'highest', VA('uev'), 8000)
         .color(0x001a1a)

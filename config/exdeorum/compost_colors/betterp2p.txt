@@ -1,0 +1,2 @@
+// Compost colors for betterp2p. You may add your own colors, change existing ones, or remove colors that aren't needed.
+advanced_memory_card, #c5aeb5

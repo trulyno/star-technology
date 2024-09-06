@@ -548,7 +548,7 @@
 			}]
 			tasks: [{
 				id: "301A3D45EB0D7C92"
-				item: "exnihilosequentia:flint_mesh"
+				item: "exdeorum:flint_mesh"
 				type: "item"
 			}]
 			x: 12.0d
@@ -760,7 +760,7 @@
 			tasks: [{
 				id: "352AD1A01CC914AB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "thermal:energy_cell"
 					tag: {
 						BlockEntityTag: {
@@ -839,7 +839,7 @@
 			tasks: [{
 				id: "7F2F14F5648253A9"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "kubejs:lv_upgrade_kit"
 					tag: {
 						AugmentData: {
@@ -1344,8 +1344,8 @@
 		}
 		{
 			dependencies: [
-				"087998D190610924"
 				"3307B565157FA498"
+				"34ED6B25A620D25C"
 			]
 			id: "17878D8FE10C8E5F"
 			tasks: [{

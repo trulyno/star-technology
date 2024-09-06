@@ -1,0 +1,10 @@
+// Compost colors for effortlessbuilding. You may add your own colors, change existing ones, or remove colors that aren't needed.
+building_techniques_book, #d6a8a5
+diamond_randomizer_bag, #fded2
+elastic_hand, #58daff
+golden_randomizer_bag, #ffda22
+muscles, #ffbb96
+randomizer_bag, #fcbc93
+reach_upgrade1, #abdc7d
+reach_upgrade2, #ffc286
+reach_upgrade3, #cda1ed

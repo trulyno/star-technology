@@ -1,0 +1,3 @@
+// Compost colors for aeinfinitybooster. You may add your own colors, change existing ones, or remove colors that aren't needed.
+dimension_card, #787a48
+infinity_card, #836655

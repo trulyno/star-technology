@@ -51,7 +51,7 @@
 			}]
 			tasks: [{
 				id: "227BDFB19AEDCC64"
-				item: "exnihilosequentia:string_mesh"
+				item: "exdeorum:string_mesh"
 				type: "item"
 			}]
 			x: -7.0d
@@ -67,7 +67,7 @@
 			}]
 			tasks: [{
 				id: "2956DB659D25DB23"
-				item: "exnihilosequentia:oak_sieve"
+				item: "exdeorum:oak_sieve"
 				type: "item"
 			}]
 			title: "Sieve"
@@ -84,7 +84,7 @@
 			}]
 			tasks: [{
 				id: "3B069B9FA93E4F94"
-				item: "exnihilosequentia:oak_crucible"
+				item: "exdeorum:oak_crucible"
 				type: "item"
 			}]
 			title: "Crucible"
@@ -101,7 +101,7 @@
 			}]
 			tasks: [{
 				id: "55AD3B5E1779BD00"
-				item: "exnihilosequentia:oak_barrel"
+				item: "exdeorum:oak_barrel"
 				type: "item"
 			}]
 			title: "Barrel"
@@ -120,7 +120,7 @@
 			}]
 			tasks: [{
 				id: "56F5CAA43109980D"
-				item: "exnihilosequentia:stone_pebble"
+				item: "exdeorum:stone_pebble"
 				type: "item"
 			}]
 			title: "Pebbles from nothing..."
@@ -163,13 +163,13 @@
 			tasks: [{
 				id: "688AFC903EA17473"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
-						value: "exnihilosequentia:hammer"
+						value: "exdeorum:hammers"
 					}
 				}
-				title: "Any #exnihilosequentia:hammer"
+				title: "Any hammer"
 				type: "item"
 			}]
 			title: "Hammer"
@@ -253,7 +253,7 @@
 			}]
 			tasks: [{
 				id: "5298C9857E387B0F"
-				item: "exnihilosequentia:dust"
+				item: "exdeorum:dust"
 				type: "item"
 			}]
 			x: -1.0d
@@ -289,7 +289,7 @@
 			}]
 			tasks: [{
 				id: "5D12B01DE9B156BA"
-				item: "exnihilosequentia:porcelain_clay"
+				item: "exdeorum:porcelain_clay_ball"
 				type: "item"
 			}]
 			x: -7.0d
@@ -338,7 +338,7 @@
 			}]
 			tasks: [{
 				id: "140A038212BE1F20"
-				item: "exnihilosequentia:fired_crucible"
+				item: "exdeorum:porcelain_crucible"
 				type: "item"
 			}]
 			x: -7.0d
@@ -356,7 +356,7 @@
 			tasks: [{
 				id: "148309F997529233"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "woodenbucket:wooden_bucket"
 					tag: {
 						Damage: 0
@@ -384,7 +384,7 @@
 			tasks: [{
 				id: "3AC2D6B9DA998586"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "woodenbucket:wooden_bucket"
 					tag: {
 						Damage: 0
@@ -406,7 +406,7 @@
 				"Using pipes(for example Create pipes), constantly supply stone barrels with water. On top of the barrels, have lava. it doesn't have to be a source block, it can be flowing lava as well."
 				"Using hoppers or Create chutes, harvest thecobblestone from under the barrels."
 			]
-			icon: "exnihilosequentia:stone_barrel"
+			icon: "exdeorum:stone_barrel"
 			id: "104C638A49643965"
 			rewards: [{
 				id: "50E7ADF262E73508"
@@ -431,7 +431,7 @@
 			}]
 			tasks: [{
 				id: "69BFF06AC85BA285"
-				item: "exnihilosequentia:crushed_blackstone"
+				item: "exdeorum:crushed_blackstone"
 				type: "item"
 			}]
 			x: -3.0d
@@ -581,7 +581,7 @@
 				{
 					id: "4859D49498CDE5AE"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:flint_and_steel"
 						tag: {
 							Damage: 0
@@ -867,7 +867,7 @@
 		}
 		{
 			dependencies: ["40491E2463C0EDFD"]
-			description: ["The Large Barrel can duplicate slitake spores, which are a source of slime."]
+			description: ["The Large Barrel can duplicate sliitake spores, which are a source of slime."]
 			id: "4435C4894C4BD3BA"
 			rewards: [{
 				id: "3A59E9570565F88D"
@@ -918,7 +918,7 @@
 			tasks: [{
 				id: "4A73C6458104351E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "thermal:fluid_cell"
 					tag: {
 						BlockEntityTag: {
@@ -1073,8 +1073,8 @@
 			tasks: [{
 				id: "3641F869BFBA5472"
 				item: {
-					Count: 1b
-					id: "exnihilosequentia:wooden_crook"
+					Count: 1
+					id: "exdeorum:crook"
 					tag: {
 						Damage: 0
 					}
@@ -1095,7 +1095,7 @@
 			}]
 			tasks: [{
 				id: "247E7214802A580F"
-				item: "exnihilosequentia:silkworm"
+				item: "exdeorum:silk_worm"
 				type: "item"
 			}]
 			x: -9.0d

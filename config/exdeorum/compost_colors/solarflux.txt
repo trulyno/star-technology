@@ -1,0 +1,20 @@
+// Compost colors for solarflux. You may add your own colors, change existing ones, or remove colors that aren't needed.
+ae2/energy_upgrade, #d3d2d3
+blank_upgrade, #6b7278
+blazing_coating, #ffd31f
+block_charging_upgrade, #4e6c6b
+capacity_upgrade, #896262
+dispersive_upgrade, #52787d
+efficiency_upgrade, #826666
+emerald_glass, #79ffbe
+ender_glass, #66c6af
+furnace_upgrade, #896c62
+mirror, #c6c6c6
+photovoltaic_cell_1, #57bcea
+photovoltaic_cell_2, #3080c8
+photovoltaic_cell_3, #194b8d
+photovoltaic_cell_4, #613e0a
+photovoltaic_cell_5, #3d5200
+photovoltaic_cell_6, #4b04
+transfer_rate_upgrade, #806666
+traversal_upgrade, #698762

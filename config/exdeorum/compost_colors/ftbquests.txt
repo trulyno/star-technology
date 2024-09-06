@@ -1,0 +1,4 @@
+// Compost colors for ftbquests. You may add your own colors, change existing ones, or remove colors that aren't needed.
+book, #766c51
+missing_item, #d68cd9
+task_screen_configurator, #585890

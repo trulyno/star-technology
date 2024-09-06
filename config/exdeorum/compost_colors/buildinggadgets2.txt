@@ -1,0 +1,8 @@
+// Compost colors for buildinggadgets2. You may add your own colors, change existing ones, or remove colors that aren't needed.
+gadget_building, #f2fce4
+gadget_copy_paste, #ffffff
+gadget_cut_paste, #9e9a86
+gadget_destruction, #e3cabf
+gadget_exchanging, #d2dcca
+redprint, #ff1e1e
+template, #d2e8ff

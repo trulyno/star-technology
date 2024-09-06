@@ -1,0 +1,5 @@
+// Compost colors for exmachinis. You may add your own colors, change existing ones, or remove colors that aren't needed.
+comparator_upgrade, #b59486
+diamond_upgrade, #a2c6b8
+gold_upgrade, #d0c398
+netherite_upgrade, #9ea094

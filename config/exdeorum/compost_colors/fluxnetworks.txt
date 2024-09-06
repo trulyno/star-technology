@@ -1,0 +1,5 @@
+// Compost colors for fluxnetworks. You may add your own colors, change existing ones, or remove colors that aren't needed.
+admin_configurator, #236258
+flux_configurator, #edfcfa
+flux_core, #ffffff
+flux_dust, #e0e0e

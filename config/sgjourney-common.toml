@@ -45,14 +45,39 @@
 			#Range: 10 ~ 2280
 			max_wormhole_open_time = 450
 			#If false, the Wormhole connection can only be ended from the dialing side
-			end_connection_from_both_ends = false
+			end_connection_from_both_ends = true
 			#ENABLED - Two way travel possible; CREATIVE_ONLY - Two way travel limited to Players in Creative Mode; DISABLED - Two way travel impossible
 			#Allowed Values: ENABLED, CREATIVE_ONLY, DISABLED
 			two_way_wormholes = "CREATIVE_ONLY"
 			#If true, going through the wrong side of the wormhole will result in death
 			reverse_wormhole_kills = true
+			#If true, allow the destruction of Blocks by Kawooshes
+			kawoosh_destroys_blocks = true
+			#If true, allow the disintegration of Entities by Kawooshes
+			kawoosh_disintegrates_entities = true
+			#If true, allow the disintegration of Items by Kawooshes
+			kawoosh_disintegrates_items = true
+			#Decides if 8-chevron addresses can be used for dialing within the same galaxy
+			allow_interstellar_8_chevron_addresses = false
+			#Decides if two Stargates from the same Solar System should be able to connect
+			allow_system_wide_connections = true
 			#Enables the use of redstone for manual Stargate dialing
 			enable_redstone_dialing = true
+			#The maximum amount of blocks allowed within the ring area before Stargate becomes obstructed
+			#Range: 1 ~ 21
+			max_obstructive_blocks = 12
+			#Enables choosing the Address when first creating a Stargate by right-clicking it with a renamed Control Crystal
+			enable_address_choice = false
+			#Enables upgrading the Classic Stargate
+			enable_classic_stargate_upgrades = true
+			#Enables creating Stargate Variants
+			enable_stargate_variants = true
+			#If true, Stargate item will always display the 9-Chevron Address of the Stargate in the inventory
+			always_display_stargate_id = false
+			#If true, the Universe Stargate will always rotate in the best direction; If false, the Universe Stargate will alternate between rotation directions
+			universe_stargate_best_direction = true
+			#If true, the Universe Stargate will rotate faster (Fast full rotation takes 108 ticks, slow full toration takes 162 ticks)
+			universe_fast_rotation = true
 			#FAST - Incoming Chevrons take 4 Ticks to lock; MEDIUM - Incoming Chevrons take 8 Ticks to lock; SLOW - Incoming Chevrons take 12 Ticks to lock
 			#Allowed Values: SLOW, MEDIUM, FAST
 			universe_chevron_lock_speed = "SLOW"
@@ -69,7 +94,7 @@
 			#Allowed Values: SLOW, MEDIUM, FAST
 			tollan_chevron_lock_speed = "MEDIUM"
 			#The maximum connection time can be extended by increasing the energy input
-			enable_energy_bypass = true
+			enable_energy_bypass = false
 			#If true, the wormhole will draw power from both connected Stargates
 			can_draw_power_from_both_ends = false
 			#The amount of energy cost of keeping the wormhole open each tick for system-wide connections
@@ -90,29 +115,15 @@
 			#The amount of energy required to establish a connection outside the galaxy
 			#Range: 0 ~ 9223372036854775807
 			intergalactic_connection_energy_cost = 100000000
-			#The energy required to keep the Stargate open after exceeding the maximum open time is multiplied by this number
-			#Range: > 1
-			energy_bypass_multiplier = 100000
-			#If true, allow the destruction of Blocks by Kawooshes
-			kawoosh_destroys_blocks = true
-			#If true, allow the disintegration of Entities by Kawooshes
-			kawoosh_disintegrates_entities = true
-			#If true, allow the disintegration of Items by Kawooshes
-			kawoosh_disintegrates_items = true
-			#Enables upgrading the Classic Stargate
-			enable_classic_stargate_upgrades = true
-			#Enables creating Stargate Variants
-			enable_stargate_variants = true
-			#If true, Stargate item will always display the 9-Chevron Address of the Stargate in the inventory
-			always_display_stargate_id = false
 			#The maximum amount of energy the Stargate can hold
 			#Range: 0 ~ 9223372036854775807
 			stargate_energy_capacity = 1000000000000
 			#The maximum amount of energy the Stargate can receive at once
 			#Range: 0 ~ 9223372036854775807
 			stargate_energy_max_receive = 1000000000000
-			#Enables choosing the Address when first creating a Stargate by right-clicking it with a renamed Control Crystal
-			enable_address_choice = false
+			#The energy required to keep the Stargate open after exceeding the maximum open time is multiplied by this number
+			#Range: > 1
+			energy_bypass_multiplier = 100000
 
 	["Stargate Journey Common Config"."Naquadah Generator Config"]
 
@@ -154,28 +165,6 @@
 			#Stargates Network will not consider DHDs when choosing preferred Stargate
 			disable_dhd_preference = false
 
-	["Stargate Journey Common Config"."Tech Config"]
-
-		["Stargate Journey Common Config"."Tech Config".server]
-			#If true Kara Kesh won't require its user to have Naquadah in their bloodstream
-			disable_kara_kesh_requirements = true
-
-	["Stargate Journey Common Config"."Genetic Config"]
-
-		["Stargate Journey Common Config"."Genetic Config".server]
-			#Percentage of Players who will inherit the Ancient Gene
-			#Range: 0 ~ 100
-			player_ata_gene_inheritance_chance = 30
-			#Percentage of Villagers who will inherit the Ancient Gene
-			#Range: 0 ~ 100
-			villager_player_ata_gene_inheritance_chance = 30
-			#Probability of the Prototype Ancient Gene Therapy working
-			#Range: 0 ~ 100
-			prototype_ata_gene_therapy_success_rate = 50
-			#Probability of the Ancient Gene Therapy working
-			#Range: 0 ~ 100
-			ata_gene_therapy_success_rate = 100
-
 	["Stargate Journey Common Config"."Generation Config"]
 
 		["Stargate Journey Common Config"."Generation Config".server]
@@ -197,4 +186,26 @@
 			#Z chunk bounds within which a Buried Stargate may generate
 			#Range: 0 ~ 64
 			buried_stargate_generation_z_bound = 64
+
+	["Stargate Journey Common Config"."Tech Config"]
+
+		["Stargate Journey Common Config"."Tech Config".server]
+			#If true Kara Kesh won't require its user to have Naquadah in their bloodstream
+			disable_kara_kesh_requirements = true
+
+	["Stargate Journey Common Config"."Genetic Config"]
+
+		["Stargate Journey Common Config"."Genetic Config".server]
+			#Percentage of Players who will inherit the Ancient Gene
+			#Range: 0 ~ 100
+			player_ata_gene_inheritance_chance = 30
+			#Percentage of Villagers who will inherit the Ancient Gene
+			#Range: 0 ~ 100
+			villager_player_ata_gene_inheritance_chance = 30
+			#Probability of the Prototype Ancient Gene Therapy working
+			#Range: 0 ~ 100
+			prototype_ata_gene_therapy_success_rate = 50
+			#Probability of the Ancient Gene Therapy working
+			#Range: 0 ~ 100
+			ata_gene_therapy_success_rate = 100
 

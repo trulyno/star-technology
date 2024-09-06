@@ -20,6 +20,8 @@ ServerEvents.recipes(event => {
     // Dynamo recipes
     event.remove({ output: /thermal:dynamo*/ });
 
+    event.remove({mod: 'thermal_extra'})
+
     event.shaped(Item.of('thermal:dynamo_stirling'), [
         ' C ',
         'PGP',
@@ -102,7 +104,7 @@ ServerEvents.recipes(event => {
     // Upgrade augments
     event.recipes.gtceu.assembler('lv_kit')
         .itemInputs('4x gtceu:invar_plate', 'thermal:obsidian_glass', 'gtceu:bronze_gear', '#gtceu:circuits/lv')
-        .itemOutputs(Item.of('kubejs:lv_upgrade_kit', '{AugmentData:{Type: Upgrade, BaseMod:4f}}'))
+        .itemOutputs(Item.of('kubejs:lv_upgrade_kit', '{AugmentData:{BaseMod:4.0f,Type:"Upgrade"}}'))
         .duration(600)
         .EUt(28);
 
@@ -296,31 +298,31 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_smelter('rf_coil_2')
         .itemInputs('thermal:rf_coil_augment', '2x gtceu:soul_infused_gear')
-        .itemOutputs('thermal_extra:rf_coil_augment_1')
+        .itemOutputs('thermal_extra:soul_infused_rf_coil_augment')
         .duration(600)
         .EUt(28);
 
     event.recipes.gtceu.alloy_smelter('rf_coil_3')
-        .itemInputs('thermal_extra:rf_coil_augment_1', '2x gtceu:enderium_gear')
-        .itemOutputs('thermal_extra:rf_coil_augment_2')
+        .itemInputs('thermal_extra:soul_infused_rf_coil_augment', '2x gtceu:enderium_gear')
+        .itemOutputs('thermal_extra:twinite_rf_coil_augment')
         .duration(600)
         .EUt(112);
 
     event.recipes.gtceu.alloy_smelter('rf_coil_4')
-        .itemInputs('thermal_extra:rf_coil_augment_2', '2x gtceu:shellite_gear')
-        .itemOutputs('thermal_extra:rf_coil_augment_3')
+        .itemInputs('thermal_extra:twinite_rf_coil_augment', '2x gtceu:shellite_gear')
+        .itemOutputs('thermal_extra:shellite_rf_coil_augment')
         .duration(600)
         .EUt(496);
 
     event.recipes.gtceu.alloy_smelter('rf_coil_5')
-        .itemInputs('thermal_extra:rf_coil_augment_3', '2x gtceu:twinite_gear')
-        .itemOutputs('thermal_extra:rf_coil_augment_4')
+        .itemInputs('thermal_extra:shellite_rf_coil_augment', '2x gtceu:twinite_gear')
+        .itemOutputs('thermal_extra:dragonsteel_rf_coil_augment')
         .duration(600)
         .EUt(1625);
 
     event.recipes.gtceu.alloy_smelter('rf_coil_6')
-        .itemInputs('thermal_extra:rf_coil_augment_4', '2x gtceu:dragonsteel_gear')
-        .itemOutputs('thermal_extra:rf_coil_augment_5')
+        .itemInputs('thermal_extra:dragonsteel_rf_coil_augment', '2x gtceu:dragonsteel_gear')
+        .itemOutputs('thermal_extra:abyssal_rf_coil_augment')
         .duration(600)
         .EUt(6500);
 
@@ -336,31 +338,31 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_smelter('rf_coil_storage_2')
         .itemInputs('thermal:rf_coil_storage_augment', '2x gtceu:soul_infused_gear')
-        .itemOutputs('thermal_extra:rf_coil_storage_augment_1')
+        .itemOutputs('thermal_extra:soul_infused_rf_coil_storage_augment')
         .duration(600)
         .EUt(28);
 
     event.recipes.gtceu.alloy_smelter('rf_coil_storage_3')
-        .itemInputs('thermal_extra:rf_coil_storage_augment_1', 'gtceu:enderium_gear')
-        .itemOutputs('thermal_extra:rf_coil_storage_augment_2')
+        .itemInputs('thermal_extra:soul_infused_rf_coil_storage_augment', 'gtceu:enderium_gear')
+        .itemOutputs('thermal_extra:twinite_rf_coil_storage_augment')
         .duration(600)
         .EUt(112);
 
     event.recipes.gtceu.alloy_smelter('rf_coil_storage_4')
-        .itemInputs('thermal_extra:rf_coil_storage_augment_2', '2x gtceu:shellite_gear')
-        .itemOutputs('thermal_extra:rf_coil_storage_augment_3')
+        .itemInputs('thermal_extra:twinite_rf_coil_storage_augment', '2x gtceu:shellite_gear')
+        .itemOutputs('thermal_extra:shellite_rf_coil_storage_augment')
         .duration(600)
         .EUt(496);
 
     event.recipes.gtceu.alloy_smelter('rf_coil_storage_5')
-        .itemInputs('thermal_extra:rf_coil_storage_augment_3', '2x gtceu:twinite_gear')
-        .itemOutputs('thermal_extra:rf_coil_storage_augment_4')
+        .itemInputs('thermal_extra:shellite_rf_coil_storage_augment', '2x gtceu:twinite_gear')
+        .itemOutputs('thermal_extra:dragonsteel_rf_coil_storage_augment')
         .duration(600)
         .EUt(1625);
 
     event.recipes.gtceu.alloy_smelter('rf_coil_storage_6')
-        .itemInputs('thermal_extra:rf_coil_storage_augment_4', '2x gtceu:dragonsteel_gear')
-        .itemOutputs('thermal_extra:rf_coil_storage_augment_5')
+        .itemInputs('thermal_extra:dragonsteel_rf_coil_storage_augment', '2x gtceu:dragonsteel_gear')
+        .itemOutputs('thermal_extra:abyssal_rf_coil_storage_augment')
         .duration(600)
         .EUt(6500);
 
@@ -376,31 +378,31 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_smelter('rf_coil_xfer_2')
         .itemInputs('thermal:rf_coil_xfer_augment', '2x gtceu:soul_infused_gear')
-        .itemOutputs('thermal_extra:rf_coil_xfer_augment_1')
+        .itemOutputs('thermal_extra:soul_infused_rf_coil_xfer_augment')
         .duration(600)
         .EUt(28);
 
     event.recipes.gtceu.alloy_smelter('rf_coil_xfer_3')
-        .itemInputs('thermal_extra:rf_coil_xfer_augment_1', '2x gtceu:enderium_gear')
-        .itemOutputs('thermal_extra:rf_coil_xfer_augment_2')
+        .itemInputs('thermal_extra:soul_infused_rf_coil_xfer_augment', '2x gtceu:enderium_gear')
+        .itemOutputs('thermal_extra:twinite_rf_coil_xfer_augment')
         .duration(2400)
         .EUt(112);
 
     event.recipes.gtceu.alloy_smelter('rf_coil_xfer_4')
-        .itemInputs('thermal_extra:rf_coil_xfer_augment_2', '2x gtceu:shellite_gear')
-        .itemOutputs('thermal_extra:rf_coil_xfer_augment_3')
+        .itemInputs('thermal_extra:twinite_rf_coil_xfer_augment', '2x gtceu:shellite_gear')
+        .itemOutputs('thermal_extra:shellite_rf_coil_xfer_augment')
         .duration(600)
         .EUt(496);
 
     event.recipes.gtceu.alloy_smelter('rf_coil_xfer_5')
-        .itemInputs('thermal_extra:rf_coil_xfer_augment_3', '2x gtceu:twinite_gear')
-        .itemOutputs('thermal_extra:rf_coil_xfer_augment_4')
+        .itemInputs('thermal_extra:shellite_rf_coil_xfer_augment', '2x gtceu:twinite_gear')
+        .itemOutputs('thermal_extra:dragonsteel_rf_coil_xfer_augment')
         .duration(600)
         .EUt(1625);
 
     event.recipes.gtceu.alloy_smelter('rf_coil_xfer_6')
-        .itemInputs('thermal_extra:rf_coil_xfer_augment_4', '2x gtceu:dragonsteel_gear')
-        .itemOutputs('thermal_extra:rf_coil_xfer_augment_5')
+        .itemInputs('thermal_extra:dragonsteel_rf_coil_xfer_augment', '2x gtceu:dragonsteel_gear')
+        .itemOutputs('thermal_extra:abyssal_rf_coil_xfer_augment')
         .duration(600)
         .EUt(6500);
 
@@ -416,40 +418,40 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_smelter('fluid_tank_2')
         .itemInputs('thermal:fluid_tank_augment', '2x gtceu:soul_infused_gear')
-        .itemOutputs('thermal_extra:fluid_tank_augment_1')
+        .itemOutputs('thermal_extra:soul_infused_fluid_tank_augment')
         .duration(600)
         .EUt(28);
 
     event.recipes.gtceu.alloy_smelter('fluid_tank_3')
-        .itemInputs('thermal_extra:fluid_tank_augment_1', '2x gtceu:enderium_gear')
-        .itemOutputs('thermal_extra:fluid_tank_augment_2')
+        .itemInputs('thermal_extra:soul_infused_fluid_tank_augment', '2x gtceu:enderium_gear')
+        .itemOutputs('thermal_extra:twinite_fluid_tank_augment')
         .duration(600)
         .EUt(112);
 
     event.recipes.gtceu.alloy_smelter('fluid_tank_4')
-        .itemInputs('thermal_extra:fluid_tank_augment_2', '2x gtceu:shellite_gear')
-        .itemOutputs('thermal_extra:fluid_tank_augment_3')
+        .itemInputs('thermal_extra:twinite_fluid_tank_augment', '2x gtceu:shellite_gear')
+        .itemOutputs('thermal_extra:shellite_fluid_tank_augment')
         .duration(600)
         .EUt(496);
 
     event.recipes.gtceu.alloy_smelter('fluid_tank_5')
-        .itemInputs('thermal_extra:fluid_tank_augment_3', '2x gtceu:twinite_gear')
-        .itemOutputs('thermal_extra:fluid_tank_augment_4')
+        .itemInputs('thermal_extra:shellite_fluid_tank_augment', '2x gtceu:twinite_gear')
+        .itemOutputs('thermal_extra:dragonsteel_fluid_tank_augment')
         .duration(600)
         .EUt(1625);
 
     event.recipes.gtceu.alloy_smelter('fluid_tank_6')
-        .itemInputs('thermal_extra:fluid_tank_augment_4', '2x gtceu:dragonsteel_gear')
-        .itemOutputs('thermal_extra:fluid_tank_augment_5')
+        .itemInputs('thermal_extra:dragonsteel_fluid_tank_augment', '2x gtceu:dragonsteel_gear')
+        .itemOutputs('thermal_extra:abyssal_fluid_tank_augment')
         .duration(600)
         .EUt(6500);
 
-    event.recipes.gtceu.fluid_solidifier('fluid_tank_7')
-        .itemInputs('thermal_extra:fluid_tank_augment_5')
-        .inputFluids('thermal_extra:refined_sunflower_oil 1000')
-        .itemOutputs('thermal_extra:fluid_tank_augment_6')
-        .duration(600)
-        .EUt(6500);
+    // event.recipes.gtceu.fluid_solidifier('fluid_tank_7')
+    //     .itemInputs('thermal_extra:fluid_tank_augment_5')
+    //     .inputFluids('thermal_extra:refined_sunflower_oil 1000')
+    //     .itemOutputs('thermal_extra:fluid_tank_augment_6')
+    //     .duration(600)
+    //     .EUt(6500);
 
     event.shaped(Item.of('thermal:energy_cell_frame'), [
         'LEL',

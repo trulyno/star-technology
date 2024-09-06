@@ -94,7 +94,7 @@
 			tasks: [{
 				id: "40359C43057FF2B8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ae2:energy_cell"
 					tag: { }
 				}
@@ -110,7 +110,7 @@
 			tasks: [{
 				id: "14C20BDFE2D489C8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ae2:dense_energy_cell"
 					tag: { }
 				}
@@ -736,7 +736,7 @@
 			shape: "rsquare"
 			tasks: [{
 				id: "1D3CC1EC0D089E93"
-				item: "eterminal:ex_pattern_access_part"
+				item: "expatternprovider:ex_pattern_access_part"
 				type: "item"
 			}]
 			x: -3.0d

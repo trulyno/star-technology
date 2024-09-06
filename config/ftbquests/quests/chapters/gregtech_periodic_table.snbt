@@ -3,14 +3,14 @@
 	default_quest_shape: ""
 	filename: "gregtech_periodic_table"
 	group: ""
-	icon: "infinity_provider:builder"
+	icon: "gtceu:creative_energy"
 	id: "5453BAD898EBDE83"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			description: ["Star Technology is one of the first GregTech Modern packs! Embark on a journey to create many stargates, simulate microuniverses and develop technology!"]
-			icon: "infinity_provider:builder"
+			icon: "gtceu:creative_energy"
 			id: "0965CF6D6253FE35"
 			shape: "rsquare"
 			size: 5.0d

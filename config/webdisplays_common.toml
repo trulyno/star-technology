@@ -1,0 +1,36 @@
+#If true, breaking the minePad is required to craft upgrades.
+hard_recipes = true
+#If true, the ownership thief item will be disabled
+disable_ownership_thief = false
+
+#Options for the miniserver
+[mini_server]
+	#The port used by miniserv. 0 to disable
+	#Range: 0 ~ 32767
+	miniserv_port = 25566
+	#The amount of data that can be uploaded to miniserv, in KiB (so 1024 = 1 MiO)
+	#Range: 0 ~ 9223372036854775807
+	miniserv_quota = 1920
+
+#Options for the in world screen blocks
+[screen_options]
+	#The maximum value screen's horizontal resolution, in pixels
+	#Range: > 0
+	max_resolution_x = 1920
+	#The maximum value screen's vertical resolution, in pixels
+	#Range: > 0
+	max_resolution_y = 1080
+	#The maximum width for the screen multiblock, in blocks
+	#Range: > 0
+	max_width = 16
+	#The maximum height for the screen multiblock, in blocks
+	#Range: > 0
+	max_height = 16
+
+#Options for the browsers (both the minePad and the screens)
+[browser_options]
+	#The page which screens should open up to when turning on
+	blacklist = ""
+	#The page which screens should open up to when turning on
+	home_page = "mod://webdisplays/main.html"
+

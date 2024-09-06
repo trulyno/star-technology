@@ -643,7 +643,7 @@
 			}]
 			tasks: [{
 				id: "46B0B018F0FE67AB"
-				item: "exnihilosequentia:netherite_mesh"
+				item: "exdeorum:netherite_mesh"
 				type: "item"
 			}]
 			x: 1.5d
@@ -2172,7 +2172,7 @@
 			tasks: [{
 				id: "0723F238A1D36CD7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:avanced_nanomuscle_chestplate"
 					tag: {
 						Damage: 0

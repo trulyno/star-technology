@@ -486,11 +486,11 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(30);
 
-    event.recipes.gtceu.extractor(U235)
-        .itemInputs(U235)
-        .itemOutputs('gtceu:lead_dust')
-        .duration(240)
-        .EUt(30);
+    // event.recipes.gtceu.extractor(U235)
+    //     .itemInputs(U235)
+    //     .itemOutputs('gtceu:lead_dust')
+    //     .duration(240)
+    //     .EUt(30);
 
     event.recipes.gtceu.extractor(U235)
         .itemInputs(GTU235)

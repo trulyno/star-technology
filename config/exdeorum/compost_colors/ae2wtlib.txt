@@ -1,0 +1,6 @@
+// Compost colors for ae2wtlib. You may add your own colors, change existing ones, or remove colors that aren't needed.
+magnet_card, #dee0e4
+quantum_bridge_card, #f0e1fb
+wireless_pattern_access_terminal, #e8d9f0
+wireless_pattern_encoding_terminal, #e0cfe8
+wireless_universal_terminal, #f2e4f8
