@@ -8,7 +8,7 @@ ServerEvents.tags('item', event => {
 });
 
 ServerEvents.tags('item', event=>{
-    const nc_plates = [
+    const plates = [
         'nuclearcraft:ferroboron_plate',
         'nuclearcraft:aluminum_plate',
         'nuclearcraft:graphite_plate',
@@ -100,7 +100,7 @@ ServerEvents.tags('item', event=>{
         'nuclearcraft:bismuth_dust',
         'nuclearcraft:chromium_dust'
     ]
-    const nc_ingots = [
+    const ingots = [
         'nuclearcraft:manganese_oxide_ingot',
         'nuclearcraft:niobium_tin_ingot',
         'nuclearcraft:graphite_ingot',
@@ -193,10 +193,10 @@ ServerEvents.tags('item', event=>{
     blocks.forEach((item)=>{
         event.removeAllTagsFrom(`${item}`)
     });
-    nc_ingots.forEach((item)=>{
+    ingots.forEach((item)=>{
         event.removeAllTagsFrom(`${item}`)
     });
-    nc_plates.forEach((item)=>{
+    plates.forEach((item)=>{
         event.removeAllTagsFrom(`${item}`)
     });
     gems.forEach((item)=>{
