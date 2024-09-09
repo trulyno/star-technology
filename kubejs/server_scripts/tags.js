@@ -26,7 +26,7 @@ ServerEvents.tags('item', event=>{
         'nuclearcraft:lithium_manganese_dioxide_plate',
         'nuclearcraft:boron_plate'
     ]
-    const nc_dust = [
+    const dust = [
         'nuclearcraft:germanium_dust',
         'nuclearcraft:zircaloy_dust',
         'nuclearcraft:yttrium_dust',
@@ -141,8 +141,11 @@ ServerEvents.tags('item', event=>{
         'nuclearcraft:osmiridium_ingot',
         'nuclearcraft:lead_platinum_ingot',
         'nuclearcraft:zirconium_ingot',
+        'thermalendergy:melodium_ingot',
+        'thermalendergy:prismalium_ingot',
+        'thermalendergy:stellarium_ingot',
     ]
-    const nc_blocks = [
+    const blocks = [
         'nuclearcraft:supercold_ice_block',
         'nuclearcraft:magnesium_block',
         'nuclearcraft:aluminum_block',
@@ -156,8 +159,11 @@ ServerEvents.tags('item', event=>{
         'nuclearcraft:uranium238_block',
         'nuclearcraft:beryllium_block',
         'nuclearcraft:plutonium238_block',
+        'thermalendergy:melodium_block',
+        'thermalendergy:prismalium_block',
+        'thermalendergy:stellarium_block',
     ]
-    const nc_nuggets = [
+    const nuggets = [
         'nuclearcraft:magnesium_nugget',
         'nuclearcraft:spaxelhoe_tough',
         'nuclearcraft:spaxelhoe_thorium',
@@ -167,8 +173,11 @@ ServerEvents.tags('item', event=>{
         'nuclearcraft:beryllium_nugget',
         'nuclearcraft:zirconium_nugget',
         'nuclearcraft:boron_nugget',
+        'thermalendergy:melodium_nugget',
+        'thermalendergy:prismalium_nugget',
+        'thermalendergy:stellarium_nugget',
     ]
-    const nc_gems = [
+    const gems = [
         'nuclearcraft:boron_arsenide_gem',
         'nuclearcraft:carobbiite_gem',
         'nuclearcraft:silicon_gem',
@@ -178,10 +187,10 @@ ServerEvents.tags('item', event=>{
         'nuclearcraft:boron_nitride_gem',
     ]
 
-    nc_dust.forEach((item)=> {
+    dust.forEach((item)=> {
         event.removeAllTagsFrom(`${item}`)
     });
-    nc_blocks.forEach((item)=>{
+    blocks.forEach((item)=>{
         event.removeAllTagsFrom(`${item}`)
     });
     nc_ingots.forEach((item)=>{
@@ -190,10 +199,10 @@ ServerEvents.tags('item', event=>{
     nc_plates.forEach((item)=>{
         event.removeAllTagsFrom(`${item}`)
     });
-    nc_gems.forEach((item)=>{
+    gems.forEach((item)=>{
         event.removeAllTagsFrom(`${item}`)
     });
-    nc_nuggets.forEach((item)=>{
+    nuggets.forEach((item)=>{
         event.removeAllTagsFrom(`${item}`)
     });
 });
