@@ -78,14 +78,14 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer('melodium_dust')
         .itemInputs('14x gtceu:electrum_dust', '3x gtceu:amethyst_dust', '4x gtceu:darmstadtium_dust', '7x gtceu:europium_dust')
-        .inputFluids('gtceu:mercury_barium_calcium_cuprate 2000')
+        .inputFluids('gtceu:mercury_barium_calcium_cuprate 288')
         .itemOutputs('30x gtceu:melodium_dust')
         .duration(1100)
         .EUt(100000);
 
     event.recipes.gtceu.mixer('stellarium_dust')
         .itemInputs('4x gtceu:melodium_dust', '1x gtceu:dragonsteel_dust')
-        .inputFluids('gtceu:neutronium 12000')
+        .inputFluids('gtceu:neutronium 1728')
         .itemOutputs('17x gtceu:stellarium_dust')
         .duration(1200)
         .EUt(456000);
