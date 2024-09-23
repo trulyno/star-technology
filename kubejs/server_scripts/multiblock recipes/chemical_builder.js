@@ -63,14 +63,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.IV])
         .circuit(6);
 
-    event.recipes.gtceu.chemical_builder('benzene')
-        .itemInputs('6x gtceu:carbon_dust')
-        .inputFluids('gtceu:hydrogen 6000')
-        .outputFluids('gtceu:benzene 1000')
-        .duration(240)
-        .EUt(GTValues.VHA[GTValues.IV])
-        .circuit(7);
-
     event.recipes.gtceu.chemical_builder('butadiene')
         .itemInputs('4x gtceu:carbon_dust')
         .inputFluids('gtceu:hydrogen 6000')
@@ -127,4 +119,11 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.IV])
         .circuit(14);
 
+        event.recipes.gtceu.chemical_builder('benzene')
+        .itemInputs('6x gtceu:carbon_dust')
+        .inputFluids('gtceu:hydrogen 6000')
+        .outputFluids('gtceu:benzene 1000')
+        .duration(240)
+        .EUt(GTValues.VHA[GTValues.IV])
+        .circuit(15);
 });
