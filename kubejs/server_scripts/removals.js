@@ -79,4 +79,5 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'minecraft:netherite_scrap'});
     event.remove({ input: 'minecraft:ancient_debris'});
     event.remove({ output: 'minecraft:netherite_ingot'});
+    event.remove({ id: 'gtceu:centrifuge/magma_cream_separation'}); 
 });
