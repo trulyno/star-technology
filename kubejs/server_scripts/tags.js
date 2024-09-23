@@ -143,7 +143,7 @@ ServerEvents.tags('item', event=>{
         'nuclearcraft:zirconium_ingot',
         'thermalendergy:melodium_ingot',
         'thermalendergy:prismalium_ingot',
-        'thermalendergy:stellarium_ingot',
+        'thermalendergy:stellarium_ingot'
     ]
     const blocks = [
         'nuclearcraft:supercold_ice_block',
@@ -161,7 +161,7 @@ ServerEvents.tags('item', event=>{
         'nuclearcraft:plutonium238_block',
         'thermalendergy:melodium_block',
         'thermalendergy:prismalium_block',
-        'thermalendergy:stellarium_block',
+        'thermalendergy:stellarium_block'
     ]
     const nuggets = [
         'nuclearcraft:magnesium_nugget',
@@ -175,7 +175,7 @@ ServerEvents.tags('item', event=>{
         'nuclearcraft:boron_nugget',
         'thermalendergy:melodium_nugget',
         'thermalendergy:prismalium_nugget',
-        'thermalendergy:stellarium_nugget',
+        'thermalendergy:stellarium_nugget'
     ]
     const gems = [
         'nuclearcraft:boron_arsenide_gem',

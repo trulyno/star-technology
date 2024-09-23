@@ -202,8 +202,8 @@ ServerEvents.recipes(event => {
         .itemOutputs('minecraft:blackstone')
         .duration(16)
         .EUt(7)
-        ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
-        ["addData(java.lang.String,java.lang.String)"]("fluidB", "minecraft:water")
+        .addDataString("fluidA", "minecraft:lava")
+        .addDataString("fluidB", "minecraft:water")
         .addCondition($RockBreakerCondition.INSTANCE);
 
     event.shaped(Item.of('create_new_age:carbon_brushes'), [
@@ -396,3 +396,20 @@ ServerEvents.recipes(event => {
     });
 
 });
+
+BlockEvents.rightClicked('minecraft:grass_block', event => {
+    if (event.player.isCrouching() && event.player.getMainHandItem() == null) {
+        if (Math.random() < 0.75) {
+            event.block.popItemFromFace(Item.of('exdeorum:stone_pebble'), 'up');
+        }
+        if (Math.random() < 0.5) {
+            event.block.popItemFromFace(Item.of('exdeorum:andesite_pebble'), 'up');
+        }
+        if (Math.random() < 0.5) {
+            event.block.popItemFromFace(Item.of('exdeorum:granite_pebble'), 'up');
+        }
+        if (Math.random() < 0.5) {
+            event.block.popItemFromFace(Item.of('exdeorum:diorite_pebble'), 'up');
+        }
+    }
+})

@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	filename: "quality_of_life"
 	group: "28726466D987C725"
 	icon: "create:crafting_blueprint"
@@ -17,28 +17,38 @@
 				title: "Effortless Building"
 				type: "checkmark"
 			}]
-			x: -8.5d
-			y: -2.5d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
-			icon: "travelanchors:travel_anchor"
+			icon: "enderio:travel_anchor"
 			id: "2092BC62D0ABB53F"
 			shape: "rsquare"
 			tasks: [
 				{
 					id: "24453FAD009278C1"
-					item: "travelanchors:travel_anchor"
+					item: "enderio:travel_anchor"
 					type: "item"
 				}
 				{
 					id: "46B3170CFFC70CD7"
-					item: "travelanchors:travel_staff"
+					item: {
+						Count: 1
+						id: "enderio:staff_of_travelling"
+						tag: {
+							Energy: {
+								EnergyStored: 0
+								MaxEnergyStored: 100000
+								MaxEnergyUse: 100000
+							}
+						}
+					}
 					type: "item"
 				}
 			]
 			title: "Travel Anchors and Travel Staff"
-			x: -7.5d
-			y: -2.5d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			icon: "functionalstorage:oak_1"
@@ -57,8 +67,8 @@
 				type: "item"
 			}]
 			title: "Functional Storage"
-			x: -6.5d
-			y: -2.5d
+			x: 5.0d
+			y: 1.0d
 		}
 		{
 			id: "2D522E868DFD339A"
@@ -69,7 +79,7 @@
 				type: "item"
 			}]
 			title: "Item Collectors"
-			x: -5.5d
+			x: 5.0d
 			y: -2.5d
 		}
 		{
@@ -85,8 +95,8 @@
 				type: "item"
 			}]
 			title: "Backpacks"
-			x: -4.5d
-			y: -2.5d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			id: "7403111E2D8E1EDB"
@@ -97,7 +107,7 @@
 				type: "item"
 			}]
 			title: "Xtones"
-			x: -7.5d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
@@ -109,7 +119,7 @@
 				title: "Architect's Palette"
 				type: "checkmark"
 			}]
-			x: -6.5d
+			x: -1.0d
 			y: -1.5d
 		}
 		{
@@ -121,8 +131,8 @@
 				title: "'Durstrial Decor"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: -1.5d
+			x: -1.0d
+			y: -2.5d
 		}
 		{
 			icon: "fantasyfurniture:nordic/bed_single"
@@ -133,8 +143,8 @@
 				title: "Fantasy Furniture"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: -1.5d
+			x: -1.0d
+			y: -0.5d
 		}
 		{
 			id: "402F4F6E8631D2CB"
@@ -144,20 +154,8 @@
 				item: "create:clipboard"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -1.5d
-		}
-		{
-			id: "633BCF86D1CD7C76"
-			shape: "rsquare"
-			tasks: [{
-				id: "19CD6F9C8139343A"
-				item: "fluxnetworks:flux_controller"
-				type: "item"
-			}]
-			title: "Flux Networks"
-			x: -7.5d
-			y: -0.5d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			id: "3232A7A69C2905D9"
@@ -168,8 +166,8 @@
 				type: "item"
 			}]
 			title: "LaserIO"
-			x: -5.5d
-			y: -0.5d
+			x: 4.0d
+			y: -1.5d
 		}
 		{
 			id: "0A8700DFAE371A36"
@@ -184,8 +182,8 @@
 				type: "item"
 			}]
 			title: "Rechiseled"
-			x: -4.5d
-			y: -0.5d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			id: "6E45F559B61A2CC4"
@@ -195,8 +193,8 @@
 				item: "create:crafting_blueprint"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -0.5d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			id: "6DEDF965FFD12B7B"
@@ -218,8 +216,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.5d
+			x: 4.0d
+			y: 2.5d
 		}
 		{
 			id: "48D2144395562A62"
@@ -236,8 +234,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
-			y: 0.5d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			id: "5CA8EFB9CE8473FB"
@@ -254,8 +252,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.5d
+			x: 5.0d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
@@ -273,15 +271,16 @@
 					type: "item"
 				}
 			]
-			shape: "rsquare"
+			shape: "diamond"
+			size: 3.0d
 			tasks: [{
 				id: "4F7887A26E18BC9C"
 				item: "komarumod:komaru_powder"
 				type: "item"
 			}]
 			title: "Komaru Cat"
-			x: -8.5d
-			y: 0.5d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			icon: "pipez:item_pipe"
@@ -306,12 +305,11 @@
 				{
 					id: "7DEB0F6A66FFD525"
 					item: "pipez:universal_pipe"
-					optional_task: true
 					type: "item"
 				}
 			]
-			x: -6.5d
-			y: 0.5d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			icon: "toms_storage:ts.wireless_terminal"
@@ -335,8 +333,200 @@
 				}
 			]
 			title: "Tom's Simple Storage Mod"
-			x: -8.5d
-			y: -0.5d
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			id: "6F7DBE1A83CBAE01"
+			shape: "square"
+			tasks: [{
+				id: "3597FE7ABFAC7F7F"
+				item: "modularrouters:modular_router"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			id: "2D1CB7C4C50BE9C2"
+			shape: "rsquare"
+			tasks: [{
+				id: "60BDD275630295C0"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "enderio:fluid_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:pressurized_fluid_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:ender_fluid_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:redstone_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:item_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:dense_me_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:me_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:uv_energy_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:zpm_energy_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:luv_energy_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:uhv_energy_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:iv_energy_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:hv_energy_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:ev_energy_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:lv_energy_conduit"
+							}
+							{
+								Count: 1b
+								id: "enderio:mv_energy_conduit"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "EnderIO Conduits"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			id: "465BF8413CF5ED94"
+			shape: "rsquare"
+			tasks: [{
+				id: "6C5BED573AEB47E6"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "enderio:basic_item_filter"
+							}
+							{
+								Count: 1b
+								id: "enderio:advanced_item_filter"
+							}
+							{
+								Count: 1b
+								id: "enderio:basic_fluid_filter"
+							}
+							{
+								Count: 1b
+								id: "enderio:redstone_not_filter"
+							}
+							{
+								Count: 1b
+								id: "enderio:redstone_or_filter"
+							}
+							{
+								Count: 1b
+								id: "enderio:redstone_xor_filter"
+							}
+							{
+								Count: 1b
+								id: "enderio:redstone_xnor_filter"
+							}
+							{
+								Count: 1b
+								id: "enderio:redstone_toggle_filter"
+							}
+							{
+								Count: 1b
+								id: "enderio:redstone_counting_filter"
+							}
+							{
+								Count: 1b
+								id: "enderio:redstone_sensor_filter"
+							}
+							{
+								Count: 1b
+								id: "enderio:redstone_timer_filter"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "EnderIO Filters"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			id: "22109450130397B1"
+			shape: "rsquare"
+			tasks: [{
+				id: "0F384B24997CCB51"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "enderio:extraction_speed_upgrade_1"
+							}
+							{
+								Count: 1b
+								id: "enderio:extraction_speed_upgrade_2"
+							}
+							{
+								Count: 1b
+								id: "enderio:extraction_speed_upgrade_3"
+							}
+							{
+								Count: 1b
+								id: "enderio:extraction_speed_upgrade_4"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "EnderIO Upgrades"
+			x: 3.0d
+			y: -2.5d
 		}
 	]
 	title: "Quality Of Life"

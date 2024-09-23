@@ -180,14 +180,17 @@ function periodicTableElement(material, type) {
     switch(type) {
         case 'ingot': mat.setProperty(PropertyKey.INGOT, new $IngotProperty()); break;
         case 'dust': mat.setProperty(PropertyKey.DUST, new $DustProperty()); break;
-        case 'fluid': case 'gas': case 'plasma': case 'molten': mat.setProperty(PropertyKey.FLUID, new $FluidProperty()); 
-                switch(type) {
-                    case 'fluid': mat.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.LIQUID, new GTFluidBuilder()); break;
-                    case 'gas': mat.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.GAS, new GTFluidBuilder()); break;
-                    case 'plasma': mat.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.PLASMA, new GTFluidBuilder()); break;
-                    case 'molten': mat.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.MOLTEN, new GTFluidBuilder()); break;
-                }
+        case 'fluid': case 'gas': case 'plasma': case 'molten': {
+            let prop = new $FluidProperty();
+            switch(type) {
+                case 'fluid': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.LIQUID, new GTFluidBuilder()); break;
+                case 'gas': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.GAS, new GTFluidBuilder()); break;
+                case 'plasma': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.PLASMA, new GTFluidBuilder()); break;
+                case 'molten': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.MOLTEN, new GTFluidBuilder()); break;
+            }
+            mat.setProperty(PropertyKey.FLUID, prop); 
             break;
+        }  
     }
 
     // let mat = GTMaterials.get(material);
@@ -1430,6 +1433,7 @@ materialRegistry(event => {
         .flags(no_decomp);
     
     event.create('polyether_ether_ketone')
+        .fluid()
         .polymer()
         .components('19x carbon','12x hydrogen','3x oxygen') 
         .color(0xccbba7)

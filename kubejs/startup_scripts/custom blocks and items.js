@@ -65,75 +65,87 @@ StartupEvents.registry('item', event => {
 
     event.create('lv_upgrade_kit')
         .displayName('LV Upgrade Kit')
+        .tooltip("Augment for dynamos, energy cells, fluid cells adn other Thermal Series machines")
         .texture('kubejs:item/lv_upgrade_kit');
 
     event.create('mv_upgrade_kit')
         .displayName('MV Upgrade Kit')
+        .tooltip("Augment for dynamos, energy cells, fluid cells adn other Thermal Series machines")
         .texture('kubejs:item/mv_upgrade_kit');
 
     event.create('hv_upgrade_kit')
         .displayName('HV Upgrade Kit')
+        .tooltip("Augment for dynamos, energy cells, fluid cells adn other Thermal Series machines")
         .texture('kubejs:item/hv_upgrade_kit');
 
     event.create('ev_upgrade_kit')
         .displayName('EV Upgrade Kit')
+        .tooltip("Augment for dynamos, energy cells, fluid cells adn other Thermal Series machines")
         .texture('kubejs:item/ev_upgrade_kit');
 
     event.create('lv_arc_kit')
         .displayName('LV Auxiliary Reaction Chamber Kit')
+        .tooltip("Augment for dynamos")
         .texture('kubejs:item/lv_arc_kit');
 
     event.create('mv_arc_kit')
         .displayName('MV Auxiliary Reaction Chamber Kit')
+        .tooltip("Augment for dynamos")
         .texture('kubejs:item/mv_arc_kit');
 
     event.create('hv_arc_kit')
         .displayName('HV Auxiliary Reaction Chamber Kit')
+        .tooltip("Augment for dynamos")
         .texture('kubejs:item/hv_arc_kit');
 
     event.create('ev_arc_kit')
         .displayName('EV Auxiliary Reaction Chamber Kit')
+        .tooltip("Augment for dynamos")
         .texture('kubejs:item/ev_arc_kit');
 
     event.create('lv_mci_kit')
         .displayName('LV Multi-cycle Injectors Kit')
+        .tooltip("Augment for dynamos")
         .texture('kubejs:item/lv_mci_kit');
 
     event.create('mv_mci_kit')
         .displayName('MV Multi-cycle Injectors Kit')
+        .tooltip("Augment for dynamos")
         .texture('kubejs:item/mv_mci_kit');
 
     event.create('hv_mci_kit')
         .displayName('HV Multi-cycle Injectors Kit')
+        .tooltip("Augment for dynamos")
         .texture('kubejs:item/hv_mci_kit');
 
     event.create('ev_mci_kit')
         .displayName('EV Multi-cycle Injectors Kit')
+        .tooltip("Augment for dynamos")
         .texture('kubejs:item/ev_mci_kit');
 
     event.create('coin')
         .displayName('StarT Coin')
         .texture('kubejs:item/coin');
 
-    event.create('uhv_emitter')
-        .displayName('UHV Emitter')
-        .texture('kubejs:item/emitters/uhv_emitter');
+    // event.create('uhv_emitter')
+    //     .displayName('UHV Emitter')
+    //     .texture('kubejs:item/emitters/uhv_emitter');
 
-    event.create('uev_emitter')
-        .displayName('UEV Emitter')
-        .texture('kubejs:item/emitters/uev_emitter');
+    // event.create('uev_emitter')
+    //     .displayName('UEV Emitter')
+    //     .texture('kubejs:item/emitters/uev_emitter');
 
-    event.create('uiv_emitter')
-        .displayName('UIV Emitter')
-        .texture('kubejs:item/emitters/uiv_emitter');
+    // event.create('uiv_emitter')
+    //     .displayName('UIV Emitter')
+    //     .texture('kubejs:item/emitters/uiv_emitter');
 
-    event.create('uxv_emitter')
-        .displayName('UXV Emitter')
-        .texture('kubejs:item/emitters/uxv_emitter');
+    // event.create('uxv_emitter')
+    //     .displayName('UXV Emitter')
+    //     .texture('kubejs:item/emitters/uxv_emitter');
 
-    event.create('opv_emitter')
-        .displayName('OpV Emitter')
-        .texture('kubejs:item/emitters/opv_emitter');
+    // event.create('opv_emitter')
+    //     .displayName('OpV Emitter')
+    //     .texture('kubejs:item/emitters/opv_emitter');
 
     event.create('draconic_wetware_circuit_board')
         .displayName('Draconic Wetware Circuit Board')
@@ -190,7 +202,7 @@ StartupEvents.registry('item', event => {
 
     ['basic', 'regular', 'intermediate', 'advanced', 'elite', 'ultimate'].forEach(tier => {
         event.create(`${tier}_energy_core`)
-            .displayName(`${tier.charAt(0).toUpperCase() + tier.slice(1)} Energy Core`);
+            .displayName(`${tier.charAt(0).toUpperCase() + tier.slice(1)} Energy Core`).texture(`kubejs:item/${tier}_energy_core`);
     })
 });
 
@@ -198,7 +210,7 @@ StartupEvents.registry('item', event => {
 StartupEvents.registry('block', event => {
 
     // Custom Casings
-    event.create('soul_infused_casing', 'gtceu:renderer')
+    event.create('soul_infused_casing')
         .hardness(10)
         .resistance(1)
         .lightLevel(0)
@@ -206,10 +218,9 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-            { 'all': new ResourceLocation('kubejs', 'block/casings/casing-soul-infused') });
+        .textureAll('kubejs:block/casings/casing-soul-infused');
             
-    event.create('signalum_casing', 'gtceu:renderer')
+    event.create('signalum_casing')
         .displayName('Ultra High Pressure and Temperature Resistant Signalum Casing')
         .hardness(10)
         .resistance(1)
@@ -218,10 +229,9 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-            { 'all': new ResourceLocation('kubejs', 'block/casings/casing-signalum') });
+        .textureAll('kubejs:block/casings/casing-signalum');
 
-    event.create('lumium_casing', 'gtceu:renderer')
+    event.create('lumium_casing')
         .hardness(10)
         .resistance(1)
         .lightLevel(2)
@@ -229,10 +239,9 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-            { 'all': new ResourceLocation('kubejs', 'block/casings/casing-lumium') });
+        .textureAll('kubejs:block/casings/casing-lumium');
 
-    event.create('enderium_casing', 'gtceu:renderer')
+    event.create('enderium_casing')
         .displayName('Thermal Fluctuation Proof Enderium Casing')
         .hardness(10)
         .resistance(1)
@@ -241,10 +250,9 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-            { 'all': new ResourceLocation('kubejs', 'block/casings/casing-enderium') });
+        .textureAll('kubejs:block/casings/casing-enderium');
 
-    event.create('shellite_casing', 'gtceu:renderer')
+    event.create('shellite_casing')
         .displayName('Ultra-Resistant Shellite Casing')
         .hardness(10)
         .resistance(1)
@@ -253,10 +261,9 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-            { 'all': new ResourceLocation('kubejs', 'block/casings/casing-shellite') });
+        .textureAll('kubejs:block/casings/casing-shellite');
 
-    event.create('twinite_casing', 'gtceu:renderer')
+    event.create('twinite_casing')
         .displayName('Bend-Resistant Twinite Casing')
         .hardness(10)
         .resistance(1)
@@ -265,10 +272,9 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-            { 'all': new ResourceLocation('kubejs', 'block/casings/casing-twinite') });
+        .textureAll('kubejs:block/casings/casing-twinite');
 
-    event.create('dragonsteel_casing', 'gtceu:renderer')
+    event.create('dragonsteel_casing')
         .displayName('Unbendable Dragonsteel Casing')
         .hardness(10)
         .resistance(1)
@@ -277,10 +283,9 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-            { 'all': new ResourceLocation('kubejs', 'block/casings/casing-dragonsteel') });
+        .textureAll('kubejs:block/casings/casing-dragonsteel');
 
-    event.create('prismalium_casing', 'gtceu:renderer')
+    event.create('prismalium_casing')
         .displayName('Transportation Prismalium Casing')
         .hardness(10)
         .resistance(1)
@@ -289,10 +294,9 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-            { 'all': new ResourceLocation('kubejs', 'block/casings/casing-prismalium') });
+        .textureAll('kubejs:block/casings/casing-prismalium');
 
-    event.create('melodium_casing', 'gtceu:renderer')
+    event.create('melodium_casing')
         .displayName('Reinforced Melodium Casing')
         .hardness(10)
         .resistance(1)
@@ -301,10 +305,9 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-            { 'all': new ResourceLocation('kubejs', 'block/casings/casing-melodium') });
+        .textureAll('kubejs:block/casings/casing-melodium');
 
-    event.create('stellarium_casing', 'gtceu:renderer')
+    event.create('stellarium_casing')
         .displayName('Structurally Integral Stellarium Casing')
         .hardness(10)
         .resistance(1)
@@ -313,10 +316,9 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-            { 'all': new ResourceLocation('kubejs', 'block/casings/casing-stellarium') });
+        .textureAll('kubejs:block/casings/casing-stellarium');
 
-    event.create('austenitic_stainless_steel_304_casing', 'gtceu:renderer')
+    event.create('austenitic_stainless_steel_304_casing')
         .displayName('Austenitic Stainless Steel 304 Nuclear Casing')
         .hardness(2)
         .resistance(3)
@@ -325,10 +327,9 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-        { 'all': new ResourceLocation('kubejs', 'block/casings/casing-austenitic-stainless-steel-304') });
+        .textureAll('kubejs:block/casings/casing-austenitic-stainless-steel-304');
 
-    event.create('inconel_625_casing', 'gtceu:renderer')
+    event.create('inconel_625_casing')
         .displayName('Inconel 625 Thermal Fluctuation Resistant Casing')
         .hardness(2)
         .resistance(3)
@@ -337,10 +338,9 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-        { 'all': new ResourceLocation('kubejs', 'block/casings/casing-inconel-625') });
+        .textureAll('kubejs:block/casings/casing-inconel-625');
 
-    event.create('wood_casing', 'gtceu:renderer')
+    event.create('wood_casing')
         .displayName('Treatedwood Reinforced Casing')
         .hardness(5)
         .resistance(1)
@@ -348,10 +348,9 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/axe")
         .tagBlock('minecraft:needs_stone_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-        { 'all': new ResourceLocation('kubejs', 'block/casings/casing-wood')});
+        .textureAll('kubejs:block/casings/casing-wood');
 
-    event.create('peek_casing', 'gtceu:renderer')
+    event.create('peek_casing')
         .displayName('PEEK Casing')
         .hardness(5)
         .resistance(1)
@@ -359,8 +358,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureOverrideRenderer('minecraft:block/cube_all',
-        { 'all': new ResourceLocation('kubejs', 'block/casings/machine_casing_peek')});
+        .textureAll('kubejs:block/casings/machine_casing_peek');
 
     event.create('beryllium_aluminium_alloy_casing')
         .displayName('Beryllium-Aluminium Casing')
@@ -499,7 +497,7 @@ StartupEvents.registry('block', event => {
         .energyDiscount(16)
         .tier(10)
         .coilMaterial(() => GTMaterials.get('zalloy'))
-        .texture('kubejs:block/coils/machine_coil_zalloy')
+        .textureAll('kubejs:block/coils/machine_coil_zalloy')
         .hardness(5)
         .soundType('metal')
         .requiresTool(true)

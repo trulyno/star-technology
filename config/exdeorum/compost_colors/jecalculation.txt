@@ -1,0 +1,3 @@
+// Compost colors for jecalculation. You may add your own colors, change existing ones, or remove colors that aren't needed.
+item_calculator_craft, #d3f1ed
+item_calculator_math, #f0e6d4

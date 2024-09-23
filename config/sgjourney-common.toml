@@ -37,6 +37,9 @@
 			#The maximum amount of energy an Advanced Crystal Interface can transfer at once
 			#Range: 1 ~ 2147483647
 			advanced_crystal_interface_max_transfer = 100000000
+			#The default amount of energy the Interface will try to provide until it stops
+			#Range: 1 ~ 2147483647
+			default_energy_target = 200000
 
 	["Stargate Journey Common Config"."Stargate Config"]
 
@@ -124,34 +127,39 @@
 			#The energy required to keep the Stargate open after exceeding the maximum open time is multiplied by this number
 			#Range: > 1
 			energy_bypass_multiplier = 100000
+			#If true, Stargate will load the chunk it's in while it's connected to another Stargate
+			stargate_loads_chunk_when_connected = true
 
 	["Stargate Journey Common Config"."Naquadah Generator Config"]
 
 		["Stargate Journey Common Config"."Naquadah Generator Config".server]
-			#The amount of time in ticks for which the Mark I Naquadah Generator will generate energy from one piece of Weapons Grade Naquadah
-			#Range: > 1
+			#The amount of time in ticks for which the Mark I Naquadah Generator will generate energy from one unit of fuel
+			#Range: 1 ~ 9223372036854775807
 			naquadah_generator_mark_i_reaction_time = 100
 			#The amount of FE generated per one tick of reaction by the Mark I Naquadah Generator
-			#Range: > 1
+			#Range: 1 ~ 9223372036854775807
 			naquadah_generator_mark_i_energy_per_tick = 1000
 			#The amount of energy a Mark I Naquadah Generator can hold
-			#Range: > 1
+			#Range: 1 ~ 9223372036854775807
 			naquadah_generator_mark_i_capacity = 10000000
 			#The maximum amount of energy a Mark I Naquadah Generator can transfer at once
-			#Range: > 1
+			#Range: 1 ~ 9223372036854775807
 			naquadah_generator_mark_i_max_transfer = 100000
-			#The amount of time in ticks for which the Mark II Naquadah Generator will generate energy from one piece of Weapons Grade Naquadah
-			#Range: > 1
+			#The amount of time in ticks for which the Mark II Naquadah Generator will generate energy from one unit of fuel
+			#Range: 1 ~ 9223372036854775807
 			naquadah_generator_mark_ii_reaction_time = 150
 			#The amount of FE generated per one tick of reaction by the Mark II Naquadah Generator
-			#Range: > 1
+			#Range: 1 ~ 9223372036854775807
 			naquadah_generator_mark_ii_energy_per_tick = 1200
 			#The amount of energy a Mark II Naquadah Generator can hold
-			#Range: > 1
+			#Range: 1 ~ 9223372036854775807
 			naquadah_generator_mark_ii_capacity = 100000000
 			#The maximum amount of energy a Mark II Naquadah Generator can transfer at once
-			#Range: > 1
+			#Range: 1 ~ 9223372036854775807
 			naquadah_generator_mark_ii_max_transfer = 1000000
+			#The maximum amount of fuel stored in a single Naquadah Fuel Rod
+			#Range: > 1
+			naquadah_rod_max_fuel = 256
 
 	["Stargate Journey Common Config"."Stargate Network Config"]
 
@@ -192,6 +200,27 @@
 		["Stargate Journey Common Config"."Tech Config".server]
 			#If true Kara Kesh won't require its user to have Naquadah in their bloodstream
 			disable_kara_kesh_requirements = true
+			#The amount of Heavy Liquid Naquadah a Personal Shield can hold
+			#Range: 1 ~ 10000
+			personal_shield_capacity = 300
+			#The amount of energy an Energy Crystal can hold
+			#Range: 1 ~ 9223372036854775807
+			energy_crystal_capacity = 50000
+			#The amount of energy an Advanced Energy Crystal can hold
+			#Range: 1 ~ 9223372036854775807
+			advanced_energy_crystal_capacity = 100000
+			#The amount of energy that can be transfered into and out of an Energy Crystal per tick
+			#Range: 1 ~ 9223372036854775807
+			energy_crystal_max_transfer = 1500
+			#The amount of energy that can be transfered into and out of an Advanced Energy Crystal per tick
+			#Range: 1 ~ 9223372036854775807
+			advanced_energy_crystal_max_transfer = 3000
+			#The amount of energy a Transfer Crystal can transfer per tick
+			#Range: 1 ~ 9223372036854775807
+			transfer_crystal_max_transfer = 2500
+			#The amount of energy an Advanced Transfer Crystal can transfer per tick
+			#Range: 1 ~ 9223372036854775807
+			advanced_transfer_crystal_max_transfer = 5000
 
 	["Stargate Journey Common Config"."Genetic Config"]
 
@@ -208,4 +237,56 @@
 			#Probability of the Ancient Gene Therapy working
 			#Range: 0 ~ 100
 			ata_gene_therapy_success_rate = 100
+
+	["Stargate Journey Common Config"."Iris Config"]
+
+		["Stargate Journey Common Config"."Iris Config".server]
+			#If true, players in Creative Mode will be able to pass through the Stargate even when the Iris is closed on the other side
+			creative_ignores_iris = false
+			#The Iris can break any Blocks with Block Strength below the Iris Strength
+			#Range: 0.0 ~ 1.7976931348623157E308
+			iris_breaking_strength = 0.5
+			#Durability of the Copper Iris
+			#Range: > 1
+			copper_iris_durability = 1024
+			#Durability of the Iron Iris
+			#Range: > 1
+			iron_iris_durability = 2048
+			#Durability of the Gold Iris
+			#Range: > 1
+			gold_iris_durability = 1024
+			#Durability of the Diamond Iris
+			#Range: > 1
+			diamond_iris_durability = 8192
+			#Durability of the Netherite Iris
+			#Range: > 1
+			netherite_iris_durability = 16384
+			#Durability of the Naquadah Alloy Iris
+			#Range: > 1
+			naquadah_alloy_iris_durability = 8192
+			#Durability of the Trinium Iris
+			#Range: > 1
+			trinium_iris_durability = 16384
+			#Durability of the Bronze Iris
+			#Range: > 1
+			bronze_iris_durability = 4096
+			#Durability of the Steel Iris
+			#Range: > 1
+			steel_iris_durability = 4096
+
+	["Stargate Journey Common Config"."Transmission Config"]
+
+		["Stargate Journey Common Config"."Transmission Config".server]
+			#Max number of times a transmission can be forwarded before it disappears
+			#Range: 1 ~ 16
+			max_transmission_jumps = 1
+			#Max distance from which the GDO transmission can reach a transmission receiver
+			#Range: 1 ~ 128
+			max_gdo_transmission_distance = 20
+			#Max distance from which the Transceiver transmission can reach a transmission receiver
+			#Range: 1 ~ 128
+			max_transceiver_transmission_distance = 20
+			#Max distance from which the Stargate transmission can reach a transmission receiver
+			#Range: 1 ~ 128
+			max_stargate_transmission_distance = 20
 

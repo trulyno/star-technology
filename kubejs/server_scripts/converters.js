@@ -1,6 +1,8 @@
 
 ServerEvents.recipes(event => {
 
+    event.remove({ output: /gtceu:.*_energy_converter/ });
+
     // LV soul infused
     event.shaped(Item.of('gtceu:lv_1a_energy_converter'), [
         '   ',

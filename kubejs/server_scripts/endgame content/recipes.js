@@ -256,7 +256,7 @@ ServerEvents.recipes(event => {
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip')
         .inputFluids('gtceu:sodium_potassium 49000', 'gtceu:soldering_alloy 36864')
-        .itemOutputs('sgjourney:basic_interface')
+        .itemOutputs('sgjourney:crystal_interface')
         .duration(84000)
         .EUt(90000);
 

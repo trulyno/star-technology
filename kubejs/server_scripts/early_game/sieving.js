@@ -70,6 +70,7 @@ ServerEvents.recipes(event => {
         { item: 'exdeorum:diorite_pebble', maxAmount: 1, chance: 0.1 },
         { item: 'exdeorum:diorite_pebble', maxAmount: 1, chance: 0.5 },
         { item: 'minecraft:spruce_sapling', maxAmount: 1, chance: 0.05 },
+        { item: 'minecraft:cherry_sapling', maxAmount: 1, chance: 0.05 },
         { item: 'exdeorum:tuff_pebble', maxAmount: 1, chance: 0.1 },
         { item: 'exdeorum:tuff_pebble', maxAmount: 1, chance: 0.5 },
         { item: 'thermal:flax_seeds', maxAmount: 1, chance: 0.3 },
@@ -114,7 +115,7 @@ ServerEvents.recipes(event => {
     string(gravel, [
         { item: 'gtceu:crushed_sphalerite_ore', maxAmount: 1, chance: 0.25 },
         { item: 'gtceu:crushed_iron_ore', maxAmount: 1, chance: 0.45 },
-        { item: 'gtceu:crushed_copper_ore', maxAmount: 1, chance: 0.35 },
+        { item: 'gtceu:crushed_copper_ore', maxAmount: 1, chance: 0.65 },
         { item: 'gtceu:crushed_tin_ore', maxAmount: 1, chance: 0.3 },
         { item: 'gtceu:crushed_magnetite_ore', maxAmount: 1, chance: 0.25 }
     ]);
@@ -235,7 +236,7 @@ ServerEvents.recipes(event => {
     ]);
 
     sieve('golden', black, [
-        { item: 'gtceu:crushed_pitchblende_ore', maxAmount: 1, chance: 0.02 },
+        { item: 'gtceu:crushed_pitchblende_ore', maxAmount: 1, chance: 0.1 },
         { item: 'gtceu:crushed_molybdenite_ore', maxAmount: 1, chance: 0.12 },
         { item: 'gtceu:crushed_ilmenite_ore', maxAmount: 1, chance: 0.075 },
     ]);

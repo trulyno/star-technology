@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:benzene 1000')
         .duration(240)
         .EUt(GTValues.VHA[GTValues.IV])
-        .circuit(7);
+        .circuit(15);
 
     event.recipes.gtceu.chemical_builder('butadiene')
         .itemInputs('4x gtceu:carbon_dust')

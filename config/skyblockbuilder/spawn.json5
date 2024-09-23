@@ -2,11 +2,30 @@
   // The dimension the islands will be generated in.
   "dimension": "minecraft:overworld",
   
+  // The blocks which you can interact with within the spawn protection
+  // This is a resource list. See https://moddingx.org/libx/org/moddingx/libx/util/data/ResourceList.html#use_resource_lists_in_configs
+  "interactionBlocksInSpawnProtection": {
+    "allow_list": true,
+    "elements": [
+      "gravestone:gravestone",
+      "tombstone:grave_simple"
+    ]
+  },
+  
   // The entities which you can interact with within the spawn protection
   // This is a resource list. See https://moddingx.org/libx/org/moddingx/libx/util/data/ResourceList.html#use_resource_lists_in_configs
   "interactionEntitiesInSpawnProtection": {
     "allow_list": true,
     "elements": []
+  },
+  
+  // The items which you can interact with within the spawn protection
+  // This is a resource list. See https://moddingx.org/libx/org/moddingx/libx/util/data/ResourceList.html#use_resource_lists_in_configs
+  "interactionItemsInSpawnProtection": {
+    "allow_list": true,
+    "elements": [
+      "tombstone:grave_key"
+    ]
   },
   
   // The radius to find a valid spawn if no given spawn is valid

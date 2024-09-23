@@ -10,30 +10,8 @@
 	quests: [
 		{
 			can_repeat: true
-			dependencies: ["1C2D07E0CBA206EC"]
-			icon: "gtceu:steel_ingot"
-			id: "1E29A7DF2974C18E"
-			rewards: [{
-				count: 32
-				id: "72C1210B0FF8B50E"
-				item: "gtceu:steel_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				count: 4L
-				id: "0521C92D4D191430"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			title: "32 Steel"
-			x: 2.5d
-			y: -0.5d
-		}
-		{
-			can_repeat: true
-			dependencies: ["6A6B53C8C4D8DC78"]
-			icon: "gtceu:bronze_ingot"
+			dependencies: ["10126B9D6EC90F59"]
+			icon: { Count: 64, id: "gtceu:bronze_ingot" }
 			id: "0AA2CEFA3E1FEE71"
 			rewards: [{
 				count: 64
@@ -41,21 +19,22 @@
 				item: "gtceu:bronze_ingot"
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [{
 				consume_items: true
 				count: 4L
-				id: "083137C16119556D"
-				item: "kubejs:coin"
+				id: "73CC5DA13DC8B3F3"
+				item: { Count: 4, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "64 Bronze"
-			x: 1.5d
-			y: -0.5d
+			title: "Bronze"
+			x: -4.0d
+			y: -2.5d
 		}
 		{
 			can_repeat: true
-			dependencies: ["1DF912172D11E3CF"]
-			icon: "minecraft:gravel"
+			dependencies: ["6C7DB3F0C3B85B9B"]
+			icon: { Count: 64, id: "minecraft:gravel" }
 			id: "46578FE1EA5C98CB"
 			rewards: [{
 				count: 64
@@ -63,63 +42,90 @@
 				item: "minecraft:gravel"
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [{
 				consume_items: true
-				id: "09F6535F44B6BFB6"
+				id: "30A4D69EE2FB28C8"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "64 Gravel"
-			x: 0.5d
-			y: -0.5d
+			title: "Gravel"
+			x: -1.0d
+			y: -2.5d
 		}
 		{
 			can_repeat: true
-			dependencies: ["1BD95B9B7C22E139"]
-			icon: "minecraft:charcoal"
+			icon: { Count: 64, id: "minecraft:oak_log" }
 			id: "5C7426EF069214CC"
 			rewards: [{
 				count: 64
 				id: "088C4EDDAFBE1146"
-				item: "minecraft:charcoal"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				count: 2L
-				id: "3D366D137B9BDA8D"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			title: "64 Charcoal"
-			x: -0.5d
-			y: -0.5d
-		}
-		{
-			can_repeat: true
-			dependencies: ["6F6BC9F29C31FB5E"]
-			icon: "minecraft:oak_log"
-			id: "694978682B1EF055"
-			rewards: [{
-				count: 64
-				id: "66629D7D04A3EDF1"
 				item: "minecraft:oak_log"
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [{
 				consume_items: true
 				count: 2L
-				id: "374D58706F135B94"
-				item: "kubejs:coin"
+				id: "3E4DA3847BA74964"
+				item: { Count: 2, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "64 Logs"
-			x: -1.5d
-			y: -0.5d
+			title: "Wood"
+			x: -3.0d
+			y: -2.5d
 		}
 		{
 			can_repeat: true
-			dependencies: ["27C811CBD873B7E3"]
+			dependencies: ["1F5CCE8CFD02903A"]
+			icon: {
+				Count: 1
+				id: "exdeorum:flint_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "694978682B1EF055"
+			rewards: [{
+				id: "5DC1177B2FF40D0C"
+				item: {
+					Count: 1
+					id: "exdeorum:flint_mesh"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:fortune"
+							lvl: 3s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "63A8C927CCB10956"
+					item: "exdeorum:flint_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "74D6374B2D508F32"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune Your Flint Mesh"
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["124EDCAB18E85B9D"]
 			icon: "gtceu:lv_input_bus"
 			id: "3B34BEDF39E2156A"
 			rewards: [
@@ -160,104 +166,21 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			tasks: [{
 				consume_items: true
 				count: 8L
-				id: "1F4118539E566DE8"
-				item: "kubejs:coin"
+				id: "7D8A1A51390919EE"
+				item: { Count: 8, id: "kubejs:coin" }
 				type: "item"
 			}]
 			title: "Bus/Hatch Pack"
-			x: -1.5d
-			y: 0.5d
+			x: -3.5d
+			y: -1.5d
 		}
 		{
 			can_repeat: true
-			dependencies: ["52AFE5CDFB1C3CFF"]
-			icon: "gtceu:basic_electronic_circuit"
-			id: "46C8B2E63C5F0F9D"
-			rewards: [{
-				count: 16
-				id: "51C57E3B57BE26AF"
-				item: "gtceu:basic_electronic_circuit"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				count: 16L
-				id: "178B6FEC06A5FFC8"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			title: "16 LV Circuits"
-			x: -0.5d
-			y: 0.5d
-		}
-		{
-			can_repeat: true
-			dependencies: ["62BB54F3EE1A0966"]
-			icon: "gtceu:aluminium_ingot"
-			id: "07857C610B0F7B5E"
-			rewards: [{
-				count: 32
-				id: "4E14AD657F3487A0"
-				item: "gtceu:aluminium_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				count: 6L
-				id: "29A7CD2E337DCCD1"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			title: "32 Aluminium"
-			x: 0.5d
-			y: 0.5d
-		}
-		{
-			can_repeat: true
-			dependencies: ["3184995EBA22F540"]
-			icon: {
-				Count: 1
-				id: "gtceu:steel_fluid_cell"
-				tag: {
-					Fluid: {
-						Amount: 8000
-						FluidName: "gtceu:sodium_persulfate"
-					}
-				}
-			}
-			id: "42B07D5F22A06E33"
-			rewards: [{
-				count: 2
-				id: "4E2EA0E041834C7E"
-				item: {
-					Count: 1
-					id: "gtceu:steel_fluid_cell"
-					tag: {
-						Fluid: {
-							Amount: 8000
-							FluidName: "gtceu:sodium_persulfate"
-						}
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				count: 4L
-				id: "228EDA21BF0B91E9"
-				item: { Count: 4, id: "kubejs:coin" }
-				type: "item"
-			}]
-			title: "Sodium Persulfate"
-			x: 1.5d
-			y: 0.5d
-		}
-		{
-			can_repeat: true
-			dependencies: ["0DA0992F206EC0A2"]
+			dependencies: ["7EC83EEF3F7A89B8"]
 			icon: {
 				Count: 1
 				id: "jetboots:jetboots"
@@ -289,20 +212,21 @@
 				}
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [{
 				consume_items: true
 				count: 64L
-				id: "35043ED69DBF26DB"
-				item: "kubejs:coin"
+				id: "2A1B6AC84DAE5E37"
+				item: { Count: 64, id: "kubejs:coin" }
 				type: "item"
 			}]
 			title: "Jet Boots"
-			x: -1.5d
-			y: 1.5d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			can_repeat: true
-			dependencies: ["5463333A3ABFBD75"]
+			dependencies: ["707733C864B8729C"]
 			icon: "gtceu:transistor"
 			id: "11BF4EA56A26D47B"
 			rewards: [
@@ -337,64 +261,43 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			tasks: [{
 				consume_items: true
 				count: 12L
-				id: "21E6011F6DA54D34"
-				item: "kubejs:coin"
+				id: "08147B13F7E6C19C"
+				item: { Count: 12, id: "kubejs:coin" }
 				type: "item"
 			}]
 			title: "Basic Circuit Components"
-			x: -0.5d
-			y: 1.5d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			can_repeat: true
-			dependencies: ["1549828A7E1B26F6"]
-			icon: "gtceu:silicon_wafer"
+			dependencies: ["0DEEBB486450E74E"]
+			icon: { Count: 32, id: "gtceu:silicon_wafer" }
 			id: "00D589BF5FA06BB3"
 			rewards: [{
-				count: 16
+				count: 32
 				id: "487AC8A3C687553C"
 				item: "gtceu:silicon_wafer"
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [{
-				consume_items: true
 				count: 8L
-				id: "0FE172641E286F73"
-				item: "kubejs:coin"
+				id: "4B35842F4BF21BF6"
+				item: { Count: 8, id: "kubejs:coin" }
 				type: "item"
 			}]
 			title: "Wafers"
-			x: 2.5d
-			y: 0.5d
+			x: 1.0d
+			y: -2.5d
 		}
 		{
 			can_repeat: true
-			dependencies: ["6AA0E3A987E31BE0"]
-			icon: "gtceu:stainless_steel_ingot"
-			id: "664A0E4E2E78C3FB"
-			rewards: [{
-				count: 32
-				id: "042F9C35711BDAD2"
-				item: "gtceu:stainless_steel_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				count: 8L
-				id: "288EF2880F32E6C8"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			title: "32 Stainless Steel"
-			x: 0.5d
-			y: 1.5d
-		}
-		{
-			can_repeat: true
-			dependencies: ["1C2D07E0CBA206EC"]
+			dependencies: ["124EDCAB18E85B9D"]
 			icon: {
 				Count: 1
 				id: "gtceu:hv_item_magnet"
@@ -414,20 +317,21 @@
 				}
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [{
 				consume_items: true
 				count: 32L
-				id: "0B93BA1EDBDFF5E3"
-				item: "kubejs:coin"
+				id: "074300E20DAD117A"
+				item: { Count: 32, id: "kubejs:coin" }
 				type: "item"
 			}]
 			title: "Magnet"
-			x: 1.5d
-			y: 1.5d
+			x: 2.0d
+			y: -2.5d
 		}
 		{
 			can_repeat: true
-			dependencies: ["2BD7F4FFE21EF3F9"]
+			dependencies: ["1820787D031EAB15"]
 			icon: "fluxnetworks:flux_point"
 			id: "1E4A1D40A74B104B"
 			rewards: [
@@ -448,16 +352,2404 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			tasks: [{
 				consume_items: true
 				count: 16L
-				id: "10ABAF18BDC97282"
-				item: "kubejs:coin"
+				id: "67D7FD4B8098C4BF"
+				item: { Count: 16, id: "kubejs:coin" }
 				type: "item"
 			}]
 			title: "Flux Networks Connectors Pack"
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["390CB178FC2D2CCC"]
+			icon: { Count: 16, id: "gtceu:steel_ingot" }
+			id: "6398A8AA213DCA02"
+			rewards: [{
+				count: 16
+				id: "25D3999C25E7D7FD"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "54D4FCCAC6478FD2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Steel"
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["60F649FC6E64DFD9"]
+			icon: { Count: 16, id: "gtceu:aluminium_ingot" }
+			id: "3CBC4D03CA481757"
+			rewards: [{
+				count: 16
+				id: "4DDFD05D68B04E71"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "72270DE78C95102B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Aluminium"
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7E6BF5B40EA057F5"]
+			icon: { Count: 16, id: "gtceu:stainless_steel_ingot" }
+			id: "75F58C5B5089085C"
+			rewards: [{
+				count: 16
+				id: "27D8F293EBF0806F"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "31201B2031CCE989"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Stainless Steel"
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["586E4409BEF993FD"]
+			icon: { Count: 16, id: "gtceu:titanium_ingot" }
+			id: "1FB7685565AC4703"
+			rewards: [{
+				count: 16
+				id: "0D24DF7E3CF7AC22"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "31F7C546F28694F0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Titanium"
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4BCE8A9EBDF113CE"]
+			icon: { Count: 16, id: "gtceu:tungsten_steel_ingot" }
+			id: "27981BCACA9A36FF"
+			rewards: [{
+				count: 16
+				id: "238772ED48815A3E"
+				item: "gtceu:tungsten_steel_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 24L
+				id: "2A6D571D7AC7EA26"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Tungsten Steel"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1C154476DB77B773"]
+			icon: { Count: 16, id: "gtceu:rhodium_plated_palladium_ingot" }
+			id: "465529DB399DFC0F"
+			rewards: [{
+				count: 16
+				id: "2FFA5C76F537F2ED"
+				item: "gtceu:rhodium_plated_palladium_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "7D7EC0DB437DAA3D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Rhodium Plated Palladium"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2587E109968EFBB4"]
+			icon: { Count: 16, id: "gtceu:naquadah_ingot" }
+			id: "73CD5F0A87F340EB"
+			rewards: [{
+				count: 16
+				id: "667008D09F81B2E2"
+				item: "gtceu:naquadah_alloy_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 40L
+				id: "55017E64513E72AD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Naquadah Alloy"
 			x: 2.5d
-			y: 1.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["27C0ED4305E84D21"]
+			icon: { Count: 16, id: "gtceu:darmstadtium_ingot" }
+			id: "16C6C65AA362C121"
+			rewards: [{
+				count: 16
+				id: "6A66A3EA1CA2D173"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 48L
+				id: "26BAE64DB7008221"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Darmstadtium"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5BDA17962F4630EB"]
+			icon: { Count: 16, id: "gtceu:neutronium_ingot" }
+			id: "457EFE12D6D421A7"
+			rewards: [{
+				count: 16
+				id: "12106142E815A379"
+				item: "gtceu:neutronium_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "7374FFD57E9CA519"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Neutronium"
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["53E98CFC7934FA67"]
+			icon: { Count: 16, id: "gtceu:basic_electronic_circuit" }
+			id: "3B0194BB5769AF29"
+			rewards: [{
+				count: 16
+				id: "65C5F9BDC53689F9"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "7DBE71CFE8B5DF07"
+				item: { Count: 4, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "LV Circuits"
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7836F17B34B47B16"]
+			icon: { Count: 12, id: "gtceu:good_electronic_circuit" }
+			id: "7A190A198FE42047"
+			rewards: [{
+				count: 12
+				id: "0C6C599ABEBBBA0D"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 12L
+				id: "486BB3DB925F76F0"
+				item: { Count: 4, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "MV Circuits"
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["73931EAA3EC5C9A9"]
+			icon: { Count: 10, id: "gtceu:advanced_integrated_circuit" }
+			id: "2C0031FF5C5B444C"
+			rewards: [{
+				count: 10
+				id: "14A3ED567B1BC3E5"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "756E576AEF96F988"
+				item: { Count: 4, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "HV Circuits"
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["52FE319F5E176C37"]
+			icon: { Count: 8, id: "gtceu:micro_processor_computer" }
+			id: "017A2CD82D56969A"
+			rewards: [{
+				count: 8
+				id: "176A1D6DD84ADC3D"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 20L
+				id: "0FEAA700102AE6A5"
+				item: { Count: 4, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "EV Circuits"
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["62BA581B2918BB7B"]
+			icon: { Count: 6, id: "gtceu:micro_processor_mainframe" }
+			id: "52DD5020950CC1FA"
+			rewards: [{
+				count: 6
+				id: "613FA1DD90B6474C"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 24L
+				id: "45494F776677EA22"
+				item: { Count: 4, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "IV Circuits"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["53A9F3758C218CDC"]
+			icon: { Count: 4, id: "gtceu:nano_processor_mainframe" }
+			id: "7A487C3931997719"
+			rewards: [{
+				count: 4
+				id: "5E0980756D95A661"
+				item: "gtceu:nano_processor_mainframe"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "4F152473A1DAA5BE"
+				item: { Count: 4, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "LuV Circuits"
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["79428BAEAA7856E1"]
+			icon: { Count: 3, id: "gtceu:quantum_processor_mainframe" }
+			id: "6C496B6F76ECAD88"
+			rewards: [{
+				count: 3
+				id: "04D8F950896F7BB6"
+				item: "gtceu:quantum_processor_mainframe"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 40L
+				id: "1BBF875311735C4A"
+				item: { Count: 4, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "ZPM Circuits"
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3FC351F05F2AC743"]
+			icon: { Count: 2, id: "gtceu:crystal_processor_mainframe" }
+			id: "38E6B3EBC483B21F"
+			rewards: [{
+				count: 2
+				id: "16C3772605027212"
+				item: "gtceu:crystal_processor_mainframe"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 48L
+				id: "3CB4EA4116243F88"
+				item: { Count: 4, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "UV Circuits"
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["707C2E9BA62A60C5"]
+			icon: "gtceu:wetware_processor_mainframe"
+			id: "54562180EA00C939"
+			rewards: [{
+				id: "0234D6BB39A30A44"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "2D4CBDE33F3E41CD"
+				item: { Count: 4, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "UHV Circuits"
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["26D3E2C0599B43B2"]
+			icon: {
+				Count: 1
+				id: "exdeorum:string_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "38F6D390818E34A1"
+			rewards: [{
+				id: "41FE7F9FA9C83F58"
+				item: {
+					Count: 1
+					id: "exdeorum:string_mesh"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:fortune"
+							lvl: 3s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "425FD56B90832122"
+					item: "exdeorum:string_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "26D94ED65BEE0DDC"
+					item: { Count: 4, id: "kubejs:coin" }
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune Your String Mesh"
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6D35986F79B17912"]
+			icon: {
+				Count: 1
+				id: "exdeorum:iron_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "44413FB3A6716F5A"
+			rewards: [{
+				id: "13F4E860F9C2F73E"
+				item: {
+					Count: 1
+					id: "exdeorum:iron_mesh"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:fortune"
+							lvl: 3s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "571859B8DF7EF7D1"
+					item: "exdeorum:iron_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 6L
+					id: "1D382AF5534202C7"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune Your Iron Mesh"
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7014892C27EC22B7"]
+			icon: {
+				Count: 1
+				id: "exdeorum:golden_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "6357640D88FA93C2"
+			rewards: [{
+				id: "2659942480796E56"
+				item: {
+					Count: 1
+					id: "exdeorum:golden_mesh"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:fortune"
+							lvl: 3s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "1722F86CFB5F67A1"
+					item: "exdeorum:golden_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 7L
+					id: "377AA748AFA2A9FC"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune Your Diamond Mesh"
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6EF7F39B52B77535"]
+			icon: {
+				Count: 1
+				id: "exdeorum:diamond_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "4FB2E6761DC8D654"
+			rewards: [{
+				id: "490B36C229E550E0"
+				item: {
+					Count: 1
+					id: "exdeorum:diamond_mesh"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:fortune"
+							lvl: 3s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "797B5286B0C89A8A"
+					item: "exdeorum:diamond_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "37F11FE1687C3775"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune Your Emerald Mesh"
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3D3E637BCB06115F"]
+			icon: {
+				Count: 1
+				id: "exdeorum:netherite_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "3CA677F7BD2232DD"
+			rewards: [{
+				id: "3EB06A790DDBA97C"
+				item: {
+					Count: 1
+					id: "exdeorum:netherite_mesh"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:fortune"
+							lvl: 3s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "57A7F2FDACA1B964"
+					item: "exdeorum:netherite_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 9L
+					id: "3B740243F15D5F94"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune Your Netherite Mesh"
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["26D3E2C0599B43B2"]
+			icon: {
+				Count: 1
+				id: "exdeorum:string_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "1F38B36608488252"
+			rewards: [{
+				id: "185E82BDEAD4D6E3"
+				item: {
+					Count: 1
+					id: "exdeorum:string_mesh"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:efficiency"
+							lvl: 5s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "661C89B6A3FEDFCD"
+					item: "exdeorum:string_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "302D831DF6F17340"
+					item: { Count: 4, id: "kubejs:coin" }
+					type: "item"
+				}
+			]
+			title: "Enchant with Efficiency Your String Mesh"
+			x: -3.0d
+			y: -6.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1F5CCE8CFD02903A"]
+			icon: {
+				Count: 1
+				id: "exdeorum:flint_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "533025EDBB0EFDDC"
+			rewards: [{
+				id: "5080FC4B4BAD15EA"
+				item: {
+					Count: 1
+					id: "exdeorum:flint_mesh"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:efficiency"
+							lvl: 5s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "7C858C139CF51BFC"
+					item: "exdeorum:flint_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "2767D96B124E6B99"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Efficiency Your Flint Mesh"
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6D35986F79B17912"]
+			icon: {
+				Count: 1
+				id: "exdeorum:iron_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "3A9A3318D7BAA784"
+			rewards: [{
+				id: "2AEDB43683F828CF"
+				item: {
+					Count: 1
+					id: "exdeorum:iron_mesh"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:efficiency"
+							lvl: 5s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "5E21F03B7225BD29"
+					item: "exdeorum:iron_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 6L
+					id: "004DE79745B48F4E"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Efficiency Your Iron Mesh"
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7014892C27EC22B7"]
+			icon: {
+				Count: 1
+				id: "exdeorum:golden_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "22AD388EDD1E3E5B"
+			rewards: [{
+				id: "70852963AA0FF27E"
+				item: {
+					Count: 1
+					id: "exdeorum:golden_mesh"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:efficiency"
+							lvl: 5s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "173B5295C7E6D12B"
+					item: "exdeorum:golden_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 7L
+					id: "395B4F0E60ACD6BC"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Efficiency Your Diamond Mesh"
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6EF7F39B52B77535"]
+			icon: {
+				Count: 1
+				id: "exdeorum:diamond_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "638037CD7EE74995"
+			rewards: [{
+				id: "0C25448FF71626A7"
+				item: {
+					Count: 1
+					id: "exdeorum:diamond_mesh"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:efficiency"
+							lvl: 5s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "61BEBADDC280347B"
+					item: "exdeorum:diamond_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "76B97D009DEB905D"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Efficiency Your Emerald Mesh"
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3D3E637BCB06115F"]
+			icon: {
+				Count: 1
+				id: "exdeorum:netherite_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "00727DFA86DC4813"
+			rewards: [{
+				id: "0F53D53AEBDF3985"
+				item: {
+					Count: 1
+					id: "exdeorum:netherite_mesh"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:efficiency"
+							lvl: 5s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "671BB96C54B44A18"
+					item: "exdeorum:netherite_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 9L
+					id: "67F926B244BE1E74"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Efficiency Your Netherite Mesh"
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["26D3E2C0599B43B2"]
+			icon: {
+				Count: 1
+				id: "exdeorum:string_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "53F7C1FF73472973"
+			rewards: [{
+				id: "7C3B25220E6DAFA3"
+				item: {
+					Count: 1
+					id: "exdeorum:string_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "1E9280CC106CAAFF"
+					item: {
+						Count: 1
+						id: "exdeorum:string_mesh"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "7DF8B866499D3C50"
+					item: { Count: 4, id: "kubejs:coin" }
+					type: "item"
+				}
+			]
+			title: "Enchant with Efficiency Your Fortune String Mesh"
+			x: -3.5d
+			y: -7.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["26D3E2C0599B43B2"]
+			icon: {
+				Count: 1
+				id: "exdeorum:string_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "5F3DEC781922DEC9"
+			rewards: [{
+				id: "7B9618C612531343"
+				item: {
+					Count: 1
+					id: "exdeorum:string_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "06DA5607ECC1661B"
+					item: {
+						Count: 1
+						id: "exdeorum:string_mesh"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "1A903A23CF63F4A7"
+					item: { Count: 4, id: "kubejs:coin" }
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune Your Efficiency String Mesh"
+			x: -3.0d
+			y: -8.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1F5CCE8CFD02903A"]
+			icon: {
+				Count: 1
+				id: "exdeorum:flint_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "68109FAB2DF05CA0"
+			rewards: [{
+				id: "627FFD42C2043610"
+				item: {
+					Count: 1
+					id: "exdeorum:flint_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "62461F3396D29BD3"
+					item: {
+						Count: 1
+						id: "exdeorum:flint_mesh"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "54DFC5EAAB0EED8D"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Efficiency Your Fortune Flint Mesh"
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1F5CCE8CFD02903A"]
+			icon: {
+				Count: 1
+				id: "exdeorum:flint_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "04926527B9019B9B"
+			rewards: [{
+				id: "199E9D4BE3338F7B"
+				item: {
+					Count: 1
+					id: "exdeorum:flint_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "0A0513DDF4D9B7AC"
+					item: {
+						Count: 1
+						id: "exdeorum:flint_mesh"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "20C10C8276267600"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune Your Efficiency Flint Mesh"
+			x: -2.0d
+			y: -8.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6D35986F79B17912"]
+			icon: {
+				Count: 1
+				id: "exdeorum:iron_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "32A6F7DCB68FED06"
+			rewards: [{
+				id: "516BA39BA4B4B937"
+				item: {
+					Count: 1
+					id: "exdeorum:string_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "15BE139DB7A5D565"
+					item: {
+						Count: 1
+						id: "exdeorum:iron_mesh"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 6L
+					id: "1DAE489DA6167132"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Efficiency Your Fortune Iron Mesh"
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6D35986F79B17912"]
+			icon: {
+				Count: 1
+				id: "exdeorum:iron_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "2F64BAC40E62CD9F"
+			rewards: [{
+				id: "778803FC0297B802"
+				item: {
+					Count: 1
+					id: "exdeorum:iron_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "684251205B927BFD"
+					item: {
+						Count: 1
+						id: "exdeorum:iron_mesh"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 6L
+					id: "780F4F90185D9DE2"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune Your Efficiency Iron Mesh"
+			x: -1.0d
+			y: -8.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7014892C27EC22B7"]
+			icon: {
+				Count: 1
+				id: "exdeorum:golden_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "327CB0524A79027A"
+			rewards: [{
+				id: "0FBE0A1043389FAD"
+				item: {
+					Count: 1
+					id: "exdeorum:golden_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "66DB881359151273"
+					item: {
+						Count: 1
+						id: "exdeorum:golden_mesh"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 7L
+					id: "5893EF8B1E9BDC59"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Efficiency Your Fortune Diamond Mesh"
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7014892C27EC22B7"]
+			icon: {
+				Count: 1
+				id: "exdeorum:golden_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "0472764D65089A0B"
+			rewards: [{
+				id: "4AC9E91C64C67CA8"
+				item: {
+					Count: 1
+					id: "exdeorum:golden_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "727F28330FF60765"
+					item: {
+						Count: 1
+						id: "exdeorum:golden_mesh"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 7L
+					id: "2E42BE0FAD78792D"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune Your Efficiency Diamond Mesh"
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6EF7F39B52B77535"]
+			icon: {
+				Count: 1
+				id: "exdeorum:diamond_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "41DBAE666DE25EBE"
+			rewards: [{
+				id: "108121B077CCC9FF"
+				item: {
+					Count: 1
+					id: "exdeorum:diamond_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "7C5D569F36D648B0"
+					item: {
+						Count: 1
+						id: "exdeorum:diamond_mesh"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "70984A24AD8A709B"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Efficiency Your Fortune Emerald Mesh"
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6EF7F39B52B77535"]
+			icon: {
+				Count: 1
+				id: "exdeorum:diamond_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "0185BEAF9CCB40D1"
+			rewards: [{
+				id: "4645DA3C26DE3F57"
+				item: {
+					Count: 1
+					id: "exdeorum:diamond_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "2D26D8958EA565EA"
+					item: {
+						Count: 1
+						id: "exdeorum:diamond_mesh"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "6807EB81E95CEFB3"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune Your Efficiency Emerald Mesh"
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3D3E637BCB06115F"]
+			icon: {
+				Count: 1
+				id: "exdeorum:netherite_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "3AB035DBD32F0720"
+			rewards: [{
+				id: "45A52E6C751DC3DB"
+				item: {
+					Count: 1
+					id: "exdeorum:netherite_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "790343B55BA8B32B"
+					item: {
+						Count: 1
+						id: "exdeorum:netherite_mesh"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 9L
+					id: "45C36034A86D901A"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Efficiency Your Fortune Netherite Mesh"
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3D3E637BCB06115F"]
+			icon: {
+				Count: 1
+				id: "exdeorum:netherite_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "724E9E7917EE06AE"
+			rewards: [{
+				id: "33B540ABDE35DF7D"
+				item: {
+					Count: 1
+					id: "exdeorum:netherite_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "6E0A2C768DF0AFAB"
+					item: {
+						Count: 1
+						id: "exdeorum:netherite_mesh"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 9L
+					id: "7C3440E783284477"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune Your Efficiency Netherite Mesh"
+			x: 2.0d
+			y: -8.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["26D3E2C0599B43B2"]
+			icon: {
+				Count: 1
+				id: "exdeorum:string_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "55AB09B50F6C6180"
+			rewards: [{
+				id: "1A125B2191226FB3"
+				item: {
+					Count: 1
+					id: "exdeorum:string_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "5AC4C4F5843C6759"
+					item: "exdeorum:string_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "585509399B85AEA1"
+					item: { Count: 4, id: "kubejs:coin" }
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune and Efficiecy Your String Mesh"
+			x: -3.5d
+			y: -9.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1F5CCE8CFD02903A"]
+			icon: {
+				Count: 1
+				id: "exdeorum:flint_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "02A8017B0D05738F"
+			rewards: [{
+				id: "59E62BD390C4B753"
+				item: {
+					Count: 1
+					id: "exdeorum:flint_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "4210CD3DA604E36D"
+					item: "exdeorum:flint_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 10L
+					id: "24595AD766BA7355"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune and Efficiency Your Flint Mesh"
+			x: -2.5d
+			y: -9.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6D35986F79B17912"]
+			icon: {
+				Count: 1
+				id: "exdeorum:iron_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "12F26FB03272BC7E"
+			rewards: [{
+				id: "187FC7FA19BAB978"
+				item: {
+					Count: 1
+					id: "exdeorum:iron_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "035D8838C2625767"
+					item: "exdeorum:iron_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 12L
+					id: "72CCDA9F6274417F"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune and Efficiency Your Iron Mesh"
+			x: -1.5d
+			y: -9.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7014892C27EC22B7"]
+			icon: {
+				Count: 1
+				id: "exdeorum:golden_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "374A5D83BE352BEE"
+			rewards: [{
+				id: "223469E266E8C880"
+				item: {
+					Count: 1
+					id: "exdeorum:golden_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "42D22FDF41EF8F4D"
+					item: "exdeorum:golden_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 14L
+					id: "3270CC4211B5ED66"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune and Efficiency Your Diamond Mesh"
+			x: -0.5d
+			y: -9.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6EF7F39B52B77535"]
+			icon: {
+				Count: 1
+				id: "exdeorum:diamond_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "1B05C283659AEAE7"
+			rewards: [{
+				id: "2EAE5DE7EB7F1717"
+				item: {
+					Count: 1
+					id: "exdeorum:diamond_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "7776B050FE4F82C7"
+					item: "exdeorum:diamond_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 16L
+					id: "745370861B707C79"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune and Efficiency Your Emerald Mesh"
+			x: 0.5d
+			y: -9.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3D3E637BCB06115F"]
+			icon: {
+				Count: 1
+				id: "exdeorum:netherite_mesh"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+			id: "377C6E38801A3E3A"
+			rewards: [{
+				id: "6B5C33917123AFC2"
+				item: {
+					Count: 1
+					id: "exdeorum:netherite_mesh"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					consume_items: true
+					id: "438BB80C91F29BF6"
+					item: "exdeorum:netherite_mesh"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 18L
+					id: "4677DFD24AC82FD8"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Enchant with Fortune and Efficiency Your Netherite Mesh"
+			x: 1.5d
+			y: -9.5d
+		}
+		{
+			can_repeat: true
+			icon: { Count: 64, id: "minecraft:charcoal" }
+			id: "47AEE7B7165A1554"
+			rewards: [{
+				count: 64
+				id: "2576AFBCBAA87F4A"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "18A4595ECE276AA6"
+				item: { Count: 2, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "Charcoal"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "gtceu:diamond_axe"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						DisableShields: 1b
+						TreeFelling: 1b
+					}
+					GT.Tool: {
+						AttackDamage: 12.0f
+						AttackSpeed: -3.1000001f
+						Damage: 0
+						HarvestLevel: 3
+						MaxDamage: 767
+						ToolSpeed: 8.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "3E4F0F966FFBEA0E"
+			rewards: [
+				{
+					id: "0A4C6633464E8500"
+					item: {
+						Count: 1
+						id: "gtceu:diamond_pickaxe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 8.0f
+								AttackSpeed: -2.7f
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 767
+								ToolSpeed: 10.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2E0FE9E101218FCF"
+					item: {
+						Count: 1
+						id: "gtceu:diamond_axe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								AttackDamage: 12.0f
+								AttackSpeed: -3.1000001f
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 767
+								ToolSpeed: 8.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "11848A6B8F01F56E"
+					item: {
+						Count: 1
+						id: "thermal:satchel"
+						tag: {
+							ItemInv: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "535C9A5DD34E9700"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					id: "32DB3DA27E572CEA"
+					item: {
+						Count: 1
+						id: "exdeorum:bone_crook"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "01FA1C18B3DC7FF1"
+					item: {
+						Count: 1
+						id: "exdeorum:diamond_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "3BC5D6314FEEC217"
+				item: { Count: 2, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "Starting Gear"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1
+				id: "gtceu:diamond_hammer"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 3
+						MaxDamage: 767
+						ToolSpeed: 10.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "227CB1C8FD784E2B"
+			rewards: [
+				{
+					id: "6C816C94721F7BB7"
+					item: {
+						Count: 1
+						id: "gtceu:diamond_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 767
+								ToolSpeed: 10.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "474885D1140F609E"
+					item: {
+						Count: 1
+						id: "gtceu:diamond_file"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 767
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "06409222AC4AE236"
+					item: {
+						Count: 1
+						id: "gtceu:diamond_wire_cutter"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 767
+								ToolSpeed: 10.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "27443772E2FAEFC3"
+					item: {
+						Count: 1
+						id: "gtceu:diamond_saw"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								AttackDamage: 6.0f
+								AttackSpeed: -2.5f
+								Damage: 0
+								MaxDamage: 767
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00766F06149B7402"
+					item: {
+						Count: 1
+						id: "gtceu:diamond_screwdriver"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 767
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "320072B6EBD6B3E7"
+					item: {
+						Count: 1
+						id: "gtceu:diamond_wrench"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 767
+								ToolSpeed: 10.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "14C55314AC51A08F"
+					item: {
+						Count: 1
+						id: "gtceu:diamond_crowbar"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 767
+								ToolSpeed: 10.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "44DB2732EB72879A"
+					item: {
+						Count: 1
+						id: "gtceu:damascus_steel_mortar"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 1023
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "21A92EBBA28330FE"
+				item: { Count: 2, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "Tool Pack"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			icon: "effortlessbuilding:elastic_hand"
+			id: "2DFC6496C56829BF"
+			rewards: [
+				{
+					id: "7AD97E2524BA3372"
+					item: "effortlessbuilding:reach_upgrade1"
+					type: "item"
+				}
+				{
+					id: "26E0D47E6EF04777"
+					item: "effortlessbuilding:reach_upgrade2"
+					type: "item"
+				}
+				{
+					id: "58B827491331327F"
+					item: "effortlessbuilding:reach_upgrade3"
+					type: "item"
+				}
+				{
+					id: "0EAC387AD48FD4EC"
+					item: "effortlessbuilding:muscles"
+					type: "item"
+				}
+				{
+					id: "03C021308CBA9294"
+					item: "effortlessbuilding:elastic_hand"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				count: 20L
+				id: "4EEE370B1BC4B3FE"
+				item: { Count: 2, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "Effortless Building Pack"
+			x: -0.5d
+			y: -1.5d
 		}
 	]
 	title: "Shop"
