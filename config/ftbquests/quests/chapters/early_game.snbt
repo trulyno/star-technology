@@ -24,7 +24,7 @@
 				item: "minecraft:oak_log"
 				type: "item"
 			}]
-			title: "Chopping some trees down"
+			title: "Getting Wood"
 			x: 6.5d
 			y: -1.5d
 		}
@@ -44,6 +44,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
+			subtitle: "The great industrial revolution"
 			tasks: [{
 				id: "42EC3C955620DEAF"
 				item: {
@@ -73,7 +74,7 @@
 				title: "Any LV Converter"
 				type: "item"
 			}]
-			title: "The great industrial revolution"
+			title: "LV Converters"
 			x: 18.5d
 			y: -1.5d
 		}
@@ -87,6 +88,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Wormy business"
 			tasks: [
 				{
 					id: "121605AC618CD9F0"
@@ -110,7 +112,7 @@
 					type: "item"
 				}
 			]
-			title: "Wormy buisiness"
+			title: "Silkworms"
 			x: 6.5d
 			y: -5.5d
 		}
@@ -128,6 +130,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Your first sieve and mesh"
 			tasks: [
 				{
 					id: "6465D0617E5F08D3"
@@ -140,7 +143,7 @@
 					type: "item"
 				}
 			]
-			title: "Sieve and mesh"
+			title: "Sieves and Stones"
 			x: 9.0d
 			y: -5.5d
 		}
@@ -154,6 +157,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Where's my water?"
 			tasks: [
 				{
 					id: "1D63B14A7B78BA38"
@@ -176,7 +180,7 @@
 					type: "item"
 				}
 			]
-			title: "I need water"
+			title: "Oak Crucible"
 			x: 8.0d
 			y: 3.0d
 		}
@@ -191,6 +195,7 @@
 				type: "item"
 			}]
 			size: 1.5d
+			subtitle: "Pebble for days"
 			tasks: [
 				{
 					count: 4L
@@ -204,7 +209,7 @@
 					type: "item"
 				}
 			]
-			title: "Pebble for days"
+			title: "Skipping Stones"
 			x: 10.5d
 			y: -5.5d
 		}
@@ -332,7 +337,7 @@
 					type: "item"
 				}
 			]
-			title: "Oh the dirty goodness"
+			title: "Down and Dirty"
 			x: 10.5d
 			y: -7.5d
 		}
@@ -376,7 +381,7 @@
 					type: "item"
 				}
 			]
-			title: "Resources for days"
+			title: "String Mesh Resources"
 			x: 10.5d
 			y: -3.5d
 		}
@@ -402,6 +407,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
+			subtitle: "Your first circuits"
 			tasks: [{
 				id: "498DA55A2FC533E7"
 				item: "gtceu:basic_electronic_circuit"
@@ -415,7 +421,6 @@
 				"46E41B05B9F6FA82"
 				"64F15C7160BF5CBB"
 			]
-			description: ["The heart of every LV machine."]
 			icon: "gtceu:lv_machine_hull"
 			id: "124EDCAB18E85B9D"
 			rewards: [{
@@ -426,6 +431,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
+			subtitle: "The heart of every LV machine."
 			tasks: [
 				{
 					count: 9L
@@ -470,19 +476,24 @@
 			}]
 			tasks: [
 				{
-					count: 8L
-					id: "5B92704ADA1ED558"
-					item: "gtceu:soul_infused_ingot"
+					id: "57A3E9445639D32D"
+					item: {
+						Count: 1
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "^gtceu:soul_infused.*_wire"
+						}
+					}
+					title: "Any Soul-Infused Wire"
 					type: "item"
 				}
 				{
-					count: 4L
-					id: "2FAC2F7346D72D55"
-					item: { Count: 4, id: "gtceu:soul_infused_single_wire" }
+					id: "38F028A627A3BC0E"
+					item: "gtceu:soul_infused_ingot"
 					type: "item"
 				}
 			]
-			title: "Soul Infused wires"
+			title: "Soul Infused Wires"
 			x: 18.5d
 			y: 0.5d
 		}
@@ -512,12 +523,12 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Get your plates cheap"
 			tasks: [{
 				id: "5985F80DB2755FBC"
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			title: "Get your plates cheap"
 			x: 11.5d
 			y: -0.5d
 		}
@@ -551,7 +562,7 @@
 					type: "item"
 				}
 			]
-			title: "Latex extraction"
+			title: "Latex Extraction"
 			x: 12.5d
 			y: -1.5d
 		}
@@ -566,6 +577,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
+			subtitle: "Getting Greggy"
 			tasks: [
 				{
 					id: "15ECABD057EAF7EC"
@@ -664,7 +676,7 @@
 					type: "item"
 				}
 			]
-			title: "Tools for days"
+			title: "GT Tools"
 			x: 12.5d
 			y: -3.5d
 		}
@@ -675,12 +687,14 @@
 				""
 				"You should post proof of your own sizzles in our discord!"
 			]
+			icon: "gtceu:wrought_iron_ingot"
 			id: "143BB2B07A083CC0"
 			rewards: [{
 				id: "633BF5B0D7F6A702"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Sizzle."
 			tasks: [
 				{
 					id: "5D6B7415C84C5AB7"
@@ -693,7 +707,7 @@
 					type: "item"
 				}
 			]
-			title: "Frying iron on a campfire"
+			title: "Wrought Iron"
 			x: 11.5d
 			y: -2.5d
 		}
@@ -707,6 +721,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Making your first alloys"
 			tasks: [
 				{
 					id: "2864B3BEE03A6DEB"
@@ -735,7 +750,7 @@
 					type: "item"
 				}
 			]
-			title: "Mixer setup for alloying"
+			title: "Low-Heated Mixer Setup"
 			x: 10.5d
 			y: 0.5d
 		}
@@ -752,6 +767,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Insulation for your cables"
 			tasks: [
 				{
 					count: 4L
@@ -766,14 +782,14 @@
 					type: "item"
 				}
 			]
-			title: "Insulation for your cables"
+			title: "First Rubber"
 			x: 12.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["03ACC7D2577A2C66"]
 			description: ["Take a barrel of water and add some dust, you get a block of clay. How neat is that."]
-			icon: "exdeorum:oak_barrel"
+			icon: "minecraft:clay"
 			id: "2D1184752D7ACA66"
 			rewards: [{
 				id: "33CC60792D4A7D78"
@@ -792,7 +808,7 @@
 					type: "item"
 				}
 			]
-			title: "Clay production"
+			title: "Clay"
 			x: 14.5d
 			y: 4.5d
 		}
@@ -805,7 +821,7 @@
 			description: [
 				"It's your very first multiblock! "
 				""
-				"This bad boy will make you steel at a slow rate and isn't fun to automate due to the lack of buses but there is a better version on the horizon."
+				"This bad boy will make you steel at a slow rate and isn't possible to automate, but there is a better version on the horizon."
 			]
 			icon: "gtceu:primitive_blast_furnace"
 			id: "390CB178FC2D2CCC"
@@ -830,11 +846,6 @@
 					type: "item"
 				}
 				{
-					id: "5B377DAE10F60C4E"
-					item: "gtceu:brick_wooden_form"
-					type: "item"
-				}
-				{
 					count: 32L
 					id: "0B97B97EE13093E6"
 					item: { Count: 32, id: "gtceu:firebricks" }
@@ -846,7 +857,7 @@
 					type: "item"
 				}
 			]
-			title: "Primitive steelworks"
+			title: "Primitive Blast Furnace"
 			x: 14.5d
 			y: -1.5d
 		}
@@ -924,7 +935,7 @@
 					type: "item"
 				}
 			]
-			title: "Slime and resin"
+			title: "Slimy and Sticky"
 			x: 14.5d
 			y: -7.5d
 		}
@@ -950,7 +961,7 @@
 					type: "item"
 				}
 			]
-			title: "Circuit board"
+			title: "Resin Circuit Boards"
 			x: 16.5d
 			y: -5.5d
 		}
@@ -986,6 +997,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "At least you don't need an alloy smelter."
 			tasks: [
 				{
 					id: "2313CA9D520D2E49"
@@ -1048,7 +1060,7 @@
 				item: "minecraft:soul_sand"
 				type: "item"
 			}]
-			title: "Soul Sand production"
+			title: "Soul Sand"
 			x: 18.5d
 			y: 4.5d
 		}
@@ -1221,6 +1233,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Making fertilizer"
 			tasks: [
 				{
 					id: "0AA82205EB48B8FC"
@@ -1233,7 +1246,7 @@
 					type: "item"
 				}
 			]
-			title: "Making fertilizer"
+			title: "Composter"
 			x: 6.5d
 			y: 2.5d
 		}
@@ -1250,6 +1263,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Making Lava"
 			tasks: [
 				{
 					count: 7L
@@ -1263,7 +1277,7 @@
 					type: "item"
 				}
 			]
-			title: "Making lava"
+			title: "Crucible"
 			x: 8.5d
 			y: 4.5d
 		}
@@ -1640,6 +1654,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
+			subtitle: "Making me stressed."
 			tasks: [{
 				id: "24F7B0D9B772576B"
 				item: {
@@ -1664,7 +1679,7 @@
 				}
 				type: "item"
 			}]
-			title: "Make me stressed"
+			title: "First SU"
 			x: 8.5d
 			y: 0.5d
 		}
@@ -1678,6 +1693,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Getting steamy"
 			tasks: [
 				{
 					id: "063024CA166A03AF"
@@ -1700,7 +1716,7 @@
 					type: "item"
 				}
 			]
-			title: "Stressful steam"
+			title: "Steam Boilers"
 			x: 8.5d
 			y: -1.5d
 		}
@@ -1710,6 +1726,7 @@
 				"70BE6905EC722DCA"
 			]
 			description: ["Burning Biofuel is an amazing way to generate large amounts of Stress Units for create however requires you to create your first processing line to keep everything running!"]
+			icon: "createdieselgenerators:diesel_engine"
 			id: "00DD4784E0E6821D"
 			optional: true
 			rewards: [{
@@ -1763,7 +1780,7 @@
 					type: "item"
 				}
 			]
-			title: "Diesel rocks"
+			title: "Diesel Generators"
 			x: 10.5d
 			y: 2.5d
 		}
@@ -1779,6 +1796,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Intelligent fluid storage"
 			tasks: [{
 				id: "5D34C297BA1F64B7"
 				item: {
@@ -1797,7 +1815,7 @@
 				}
 				type: "item"
 			}]
-			title: "Inteligent fluid storage"
+			title: "Fluid Cells"
 			x: 13.5d
 			y: 1.5d
 		}
@@ -1828,7 +1846,7 @@
 		}
 		{
 			dependencies: ["29F1EAF3E87A50F5"]
-			description: ["By putting a bucket of lava ontop of a stone barrel filled with water you can create a single cobblestone. By pumping water into the barrel as quick as you can, you can make lots of cobblestone in a very short time in a compact manor."]
+			description: ["By putting a bucket of lava ontop of a stone barrel filled with water you can create a single cobblestone. By pumping water into the barrel as quick as you can, you can make lots of cobblestone in a very short time in a compact manner. "]
 			id: "0742EF8F43044102"
 			rewards: [{
 				count: 2
@@ -1849,7 +1867,7 @@
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
-			description: ["There are two ways to make witch water, either through the large barrel or by having a normal barrel full of water on top of mycelium."]
+			description: ["There are two ways to make witch water, either through the large barrel or by having a normal barrel full of water on top of mycelium. The normal barrel is considerably slower."]
 			id: "7E72B9CC8631769D"
 			tasks: [{
 				id: "229C871547C31632"
@@ -1866,7 +1884,7 @@
 				}
 				type: "item"
 			}]
-			title: "Making Witch Water?"
+			title: "Witch Water"
 			x: 12.5d
 			y: -8.5d
 		}
@@ -1884,6 +1902,7 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
+			title: "Nickel"
 			x: 16.5d
 			y: 2.5d
 		}
@@ -1901,13 +1920,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Basic Automation"
 			tasks: [{
 				count: 2L
 				id: "3E1B548747A6F526"
 				item: { Count: 2, id: "create:crushing_wheel" }
 				type: "item"
 			}]
-			title: "Basic Automation"
+			title: "Crushing Wheels"
 			x: 8.5d
 			y: 2.0d
 		}
