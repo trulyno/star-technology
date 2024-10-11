@@ -1,4 +1,5 @@
 {
+	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "shop"
@@ -119,7 +120,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune Your Flint Mesh"
+			title: "Enchant your Flint Mesh with Fortune"
 			x: -2.5d
 			y: -5.5d
 		}
@@ -286,9 +287,10 @@
 			}]
 			shape: "rsquare"
 			tasks: [{
+				consume_items: true
 				count: 8L
 				id: "4B35842F4BF21BF6"
-				item: { Count: 8, id: "kubejs:coin" }
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			title: "Wafers"
@@ -821,7 +823,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune Your String Mesh"
+			title: "Enchant your String Mesh with Fortune"
 			x: -3.5d
 			y: -5.5d
 		}
@@ -869,7 +871,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune Your Iron Mesh"
+			title: "Enchant your Iron Mesh with Fortune"
 			x: -1.5d
 			y: -5.5d
 		}
@@ -917,7 +919,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune Your Diamond Mesh"
+			title: "Enchant your Diamond Mesh with Fortune"
 			x: -0.5d
 			y: -5.5d
 		}
@@ -965,7 +967,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune Your Emerald Mesh"
+			title: "Enchant your Emerald Mesh with Fortune"
 			x: 0.5d
 			y: -5.5d
 		}
@@ -1013,7 +1015,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune Your Netherite Mesh"
+			title: "Enchant your Netherite Mesh with Fortune"
 			x: 1.5d
 			y: -5.5d
 		}
@@ -1061,7 +1063,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Efficiency Your String Mesh"
+			title: "Enchant your String Mesh with Efficiency"
 			x: -3.0d
 			y: -6.5d
 		}
@@ -1109,7 +1111,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Efficiency Your Flint Mesh"
+			title: "Enchant your Flint Mesh with Efficiency"
 			x: -2.0d
 			y: -6.5d
 		}
@@ -1157,7 +1159,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Efficiency Your Iron Mesh"
+			title: "Enchant your Iron Mesh with Efficiency"
 			x: -1.0d
 			y: -6.5d
 		}
@@ -1205,7 +1207,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Efficiency Your Diamond Mesh"
+			title: "Enchant your Diamond Mesh with Efficiency"
 			x: 0.0d
 			y: -6.5d
 		}
@@ -1253,7 +1255,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Efficiency Your Emerald Mesh"
+			title: "Enchant your Emerald Mesh with Efficiency"
 			x: 1.0d
 			y: -6.5d
 		}
@@ -1301,7 +1303,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Efficiency Your Netherite Mesh"
+			title: "Enchant your Netherite Mesh with Efficiency"
 			x: 2.0d
 			y: -6.5d
 		}
@@ -1364,7 +1366,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Efficiency Your Fortune String Mesh"
+			title: "Enchant your Fortune String Mesh with Efficiency"
 			x: -3.5d
 			y: -7.5d
 		}
@@ -1427,7 +1429,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune Your Efficiency String Mesh"
+			title: "Enchant your Efficiency String Mesh with Fortune"
 			x: -3.0d
 			y: -8.5d
 		}
@@ -1490,7 +1492,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Efficiency Your Fortune Flint Mesh"
+			title: "Enchant your Fortune Flint Mesh with Efficiency"
 			x: -2.5d
 			y: -7.5d
 		}
@@ -1553,7 +1555,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune Your Efficiency Flint Mesh"
+			title: "Enchant your Efficiency Flint Mesh with Fortune"
 			x: -2.0d
 			y: -8.5d
 		}
@@ -1616,7 +1618,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Efficiency Your Fortune Iron Mesh"
+			title: "Enchant your Fortune Iron Mesh with Efficiency"
 			x: -1.5d
 			y: -7.5d
 		}
@@ -1679,7 +1681,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune Your Efficiency Iron Mesh"
+			title: "Enchant your Efficiency Iron Mesh with Fortune"
 			x: -1.0d
 			y: -8.5d
 		}
@@ -1742,7 +1744,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Efficiency Your Fortune Diamond Mesh"
+			title: "Enchant your Fortune Diamond Mesh with Efficiency"
 			x: -0.5d
 			y: -7.5d
 		}
@@ -1805,7 +1807,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune Your Efficiency Diamond Mesh"
+			title: "Enchant your Efficiency Diamond Mesh with Fortune"
 			x: 0.0d
 			y: -8.5d
 		}
@@ -1868,7 +1870,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Efficiency Your Fortune Emerald Mesh"
+			title: "Enchant your Fortune Emerald Mesh with Efficiency"
 			x: 0.5d
 			y: -7.5d
 		}
@@ -1931,7 +1933,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune Your Efficiency Emerald Mesh"
+			title: "Enchant your Efficiency Emerald Mesh with Fortune"
 			x: 1.0d
 			y: -8.5d
 		}
@@ -1994,7 +1996,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Efficiency Your Fortune Netherite Mesh"
+			title: "Enchant your Fortune Netherite Mesh with Efficiency"
 			x: 1.5d
 			y: -7.5d
 		}
@@ -2057,7 +2059,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune Your Efficiency Netherite Mesh"
+			title: "Enchant your Efficiency Netherite Mesh with Fortune"
 			x: 2.0d
 			y: -8.5d
 		}
@@ -2111,7 +2113,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune and Efficiecy Your String Mesh"
+			title: "Enchant your String Mesh with Fortune and Efficiency"
 			x: -3.5d
 			y: -9.5d
 		}
@@ -2165,7 +2167,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune and Efficiency Your Flint Mesh"
+			title: "Enchant your Flint Mesh with Fortune and Efficiency"
 			x: -2.5d
 			y: -9.5d
 		}
@@ -2219,7 +2221,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune and Efficiency Your Iron Mesh"
+			title: "Enchant your Iron Mesh with Fortune and Efficiency"
 			x: -1.5d
 			y: -9.5d
 		}
@@ -2273,7 +2275,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune and Efficiency Your Diamond Mesh"
+			title: "Enchant your Diamond Mesh with Fortune and Efficiency"
 			x: -0.5d
 			y: -9.5d
 		}
@@ -2327,7 +2329,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune and Efficiency Your Emerald Mesh"
+			title: "Enchant your Emerald Mesh with Fortune and Efficiency"
 			x: 0.5d
 			y: -9.5d
 		}
@@ -2381,7 +2383,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchant with Fortune and Efficiency Your Netherite Mesh"
+			title: "Enchant your Netherite Mesh with Fortune and Efficiency"
 			x: 1.5d
 			y: -9.5d
 		}
