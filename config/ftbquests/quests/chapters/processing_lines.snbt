@@ -1750,8 +1750,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "04768DDF307A00AE"
-				item: "gtceu:small_debris_dust"
+				id: "5C8E8A7CD129D71C"
+				item: "gtceu:small_purified_debris_dust"
 				type: "item"
 			}]
 			x: 17.5d
@@ -3469,4 +3469,3 @@
 	]
 	title: "Processing Lines"
 }
-
