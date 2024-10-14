@@ -401,6 +401,16 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(8);
 
+    // Mycelium Leather
+
+    event.recipes.create.pressing('kubejs:compressed_mycelium', 'kubejs:mycelium_growth');
+    event.smoking('kubejs:smoked_mycelium', 'kubejs:compressed_mycelium');
+    event.recipes.create.pressing('minecraft:leather', 'kubejs:smoked_mycelium');
+    event.recipes.gtceu.large_barrel('growing_mycelium')
+        .duration(600)
+        .notConsumable('gtceu:wood_dust')
+        .notConsumable('exdeorum:mycelium_spores')
+        .itemOutputs('kubejs:mycelium_growth')
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {
