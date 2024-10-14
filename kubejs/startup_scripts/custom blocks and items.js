@@ -204,9 +204,11 @@ StartupEvents.registry('item', event => {
         event.create(`${tier}_energy_core`)
             .displayName(`${tier.charAt(0).toUpperCase() + tier.slice(1)} Energy Core`).texture(`kubejs:item/${tier}_energy_core`);
     })
-    event.create('compressed_mycelium')
-    event.create('smoked_mycelium')
-    event.create('mycelium_growth')
+
+    // Mycelium Leather
+    event.create('compressed_mycelium');
+    event.create('smoked_mycelium');
+    event.create('mycelium_growth');
 });
 
 // Custom Blocks
@@ -531,5 +533,5 @@ StartupEvents.registry('block', event => {
         .tagBlock("mineable/axe")
         .tagBlock('minecraft:needs_stone_tool')
         .textureAll('kubejs:block/multiblock/meshblock');
-    
+
 });
