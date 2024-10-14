@@ -394,6 +394,12 @@ ServerEvents.recipes(event => {
         "consumes_additive": false,
         "result": "minecraft:cobblestone"
     });
+    event.recipes.create.pressing('minecraft:leather', 'exdeorum:mycelium_spores');
+    event.recipes.gtceu.compressor('mycelium_leather')
+        .itemInputs('exdeorum:mycelium_spores')
+        .itemOutputs('minecraft:leather')
+        .duration(50)
+        .EUt(8);
 
 });
 

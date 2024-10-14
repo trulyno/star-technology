@@ -102,4 +102,10 @@ ServerEvents.recipes(event => {
     concreteRecipe(event, "white");
     concreteRecipe(event, "yellow");
     concreteRecipe(event, "pink");
+
+    event.recipes.gtceu.large_barrel('mycelium_spores')
+        .itemInputs('#forge:mushrooms')
+        .inputFluids(Fluid.of('exdeorum:witch_water', 2500))
+        .itemOutputs('exdeorum:mycelium_spores')
+        .duration(300)
 });
