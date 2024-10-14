@@ -102,4 +102,27 @@ ServerEvents.recipes(event => {
     concreteRecipe(event, "white");
     concreteRecipe(event, "yellow");
     concreteRecipe(event, "pink");
+
+    // Mycelium Growths
+
+    event.recipes.gtceu.large_barrel('mycelium_growth_compost')
+        .duration(400)
+        .itemInputs('thermal:compost', 'exdeorum:mycelium_spores')
+        .itemOutputs('kubejs:mycelium_growth')
+    event.recipes.gtceu.large_barrel('mycelium_growth_bonemeal')
+        .duration(600)
+        .itemInputs('minecraft:bone_meal', 'exdeorum:mycelium_spores')
+        .itemOutputs('kubejs:mycelium_growth')
+    event.recipes.gtceu.large_barrel('mycelium_growth_sawdust')
+        .duration(400)
+        .itemInputs('gtceu:wood_dust', 'exdeorum:mycelium_spores')
+        .itemOutputs('kubejs:mycelium_growth')
+
+    // Mycelium Spores
+    event.recipes.gtceu.large_barrel('mycelium_spores')
+        .duration(300)
+        .notConsumable('minecraft:red_mushroom_block')
+        .itemInputs('4x minecraft:dirt')
+        .inputFluids('exdeorum:witch_water 750')
+        .chancedOutput('exdeorum:mycelium_spores', 8500, 0)
 });
