@@ -1715,7 +1715,7 @@
 		}
 		{
 			dependencies: ["6131A76D203DE6AB"]
-			description: ["These can replace your old Cleanroom Filters, and turn it into a Sterile Cleanroom."]
+			description: ["These can replace your old Cleanroom Filters, and turn it into a Sterile Cleanroom. Do keep in mind that normal Cleanroom recipes do not work inside a Sterile Cleanroom"]
 			id: "6CC13BE9AD447218"
 			subtitle: "It wasn't clean enough"
 			tasks: [{
