@@ -1338,18 +1338,27 @@
 				"56BA79287C4DBE52"
 				"0A03B4D352DCF148"
 			]
-			description: ["Your first Hot Ingot. And because the quest devs are so nice, you get to hold it."]
+			description: ["Your first Hot Ingot. And because the quest devs are so nice, and listened to Coooleen, you don't have to hold it."]
+			icon: "gtceu:hot_kanthal_ingot"
 			id: "7A9839144373C80D"
 			rewards: [{
 				id: "123D34BFA3D2CC82"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "18994B62B989B575"
-				item: "gtceu:hot_kanthal_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5B7CA74E5D333B07"
+					title: "Hot Kanthal Ingot"
+					type: "checkmark"
+				}
+				{
+					id: "23BDE4A57B08177F"
+					item: "gtceu:hot_kanthal_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 0.5d
 			y: -0.5d
 		}
@@ -1431,17 +1440,26 @@
 		{
 			dependencies: ["0E61DC74B2E2C962"]
 			description: ["You might also want to cool these through a Chemical Bath till you gain access to the Vacuum Freezer."]
+			icon: "gtceu:hot_silicon_ingot"
 			id: "4783029C26DC0368"
 			rewards: [{
 				id: "371125EA2779CE55"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "7631C268AE59E7CE"
-				item: "gtceu:hot_silicon_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2D880B939AE8FF0C"
+					title: "Hot Silicon Ingot"
+					type: "checkmark"
+				}
+				{
+					id: "3F1A978EF851D6A3"
+					item: "gtceu:hot_silicon_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 1.5d
 			y: -5.5d
 		}
