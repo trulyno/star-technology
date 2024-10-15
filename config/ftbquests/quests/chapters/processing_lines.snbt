@@ -2901,7 +2901,7 @@
 			y: 15.5d
 		}
 		{
-			description: ["Try using the Aquatic Entangler to automate this."]
+			description: ["Try using the Aquatic Entangler to automate this. If it is too slow, you can upgrade it with the Upgrade Kits you made before. These increase the amount of fish per catch by quite a bit."]
 			id: "0128E6664C030597"
 			rewards: [{
 				id: "11D0C56C90AC8399"
