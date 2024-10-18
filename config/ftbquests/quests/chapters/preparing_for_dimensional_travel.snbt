@@ -755,11 +755,6 @@
 					title: "Abydos coordinates"
 					type: "command"
 				}
-				{
-					id: "42830B44E3283962"
-					item: "kubejs:coin"
-					type: "item"
-				}
 			]
 			tasks: [{
 				id: "110810FCBC6D0A65"
