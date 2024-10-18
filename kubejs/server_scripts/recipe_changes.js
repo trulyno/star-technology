@@ -395,6 +395,11 @@ ServerEvents.recipes(event => {
         "result": "minecraft:cobblestone"
     });
 
+    // Mycelium Leather
+
+    event.recipes.create.pressing('kubejs:compressed_mycelium', 'kubejs:mycelium_growth');
+    event.smoking('kubejs:smoked_mycelium', 'kubejs:compressed_mycelium');
+    event.recipes.create.pressing('minecraft:leather', 'kubejs:smoked_mycelium');
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {
