@@ -534,7 +534,7 @@
 				item: "gtceu:melodium_single_wire"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -9.0d
 			y: -5.5d
 		}
 		{
@@ -550,11 +550,15 @@
 				item: "gtceu:melodium_ingot"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -7.0d
 			y: -5.5d
 		}
 		{
-			dependencies: ["678B90BF2ACE2BBA"]
+			dependencies: [
+				"678B90BF2ACE2BBA"
+				"52B553FDB34B1475"
+				"7FD0034E639F3B2D"
+			]
 			id: "253AECE450920D99"
 			rewards: [{
 				id: "409F545D75A4CDF9"
@@ -566,7 +570,7 @@
 				item: "gtceu:stellarium_ingot"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -5.0d
 			y: -5.5d
 		}
 		{
@@ -582,7 +586,7 @@
 				item: "gtceu:stellarium_single_wire"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -3.0d
 			y: -5.5d
 		}
 		{
@@ -747,15 +751,13 @@
 			can_repeat: true
 			dependencies: ["2EDE996312B1C69E"]
 			id: "5097F10D8D36FEB7"
-			rewards: [
-				{
-					command: "/sgjourney stargateNetwork address sgjourney:abydos"
-					icon: "minecraft:sand"
-					id: "5C531A9D6C31870F"
-					title: "Abydos coordinates"
-					type: "command"
-				}
-			]
+			rewards: [{
+				command: "/sgjourney stargateNetwork address sgjourney:abydos"
+				icon: "minecraft:sand"
+				id: "5C531A9D6C31870F"
+				title: "Abydos coordinates"
+				type: "command"
+			}]
 			tasks: [{
 				id: "110810FCBC6D0A65"
 				title: "Get Abydos Coordinates"
@@ -775,6 +777,29 @@
 			}]
 			x: 6.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["707C2E9BA62A60C5"]
+			description: [":)"]
+			id: "71EF6EABFC7B219E"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 4
+				id: "1EC996BE83B7F534"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				count: 64L
+				id: "66646162023CE3B2"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			title: "Surprise"
+			x: -11.0d
+			y: 6.5d
 		}
 	]
 	title: "Making the Classic Stargate"
