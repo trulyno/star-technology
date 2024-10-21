@@ -15,6 +15,7 @@ ServerEvents.recipes(event => {
     const pcb_coolant = 'gtceu:pcb_coolant 1';
     const hot_pcb_coolant = 'gtceu:hot_pcbcoolant 4';
     // add a comment
+    // add onother comment
 
     function nuc_fiss(rod, dep_rod, time_in_min) {
         event.recipes.gtceu.nuclear_reactor(`${rod}_1`)
