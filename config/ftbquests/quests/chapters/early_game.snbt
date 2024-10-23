@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["16A9D8E864A18B9E"]
 			description: ["The start of any skyblock pack, hope you like tree chopping."]
 			id: "5B3D8132C90D790B"
 			rewards: [{
@@ -1954,6 +1955,26 @@
 			title: "The Batch Crafter"
 			x: 18.5d
 			y: -6.0d
+		}
+		{
+			description: [
+				"The Questbook takes you through the entire modpack, step by step. Here are a few things you should know"
+				"- Mechanics: A small chapter explaining some GregTech mechanics"
+				"- Processing Lines: This is a chapter explaining complicated processing lines"
+				"- Line of Progression: This chapter shows you all multiblocks and tiered items"
+				"- Challenge Quests: Throughout the main questline, there are hidden quests for doing special tasks, try finding them all"
+			]
+			id: "16A9D8E864A18B9E"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Read this"
+			tasks: [{
+				id: "1CBDC019CAC3E9C8"
+				title: "Ready, set, go"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -1.5d
 		}
 	]
 	title: "Early Game"
