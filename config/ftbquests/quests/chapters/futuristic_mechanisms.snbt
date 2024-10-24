@@ -1727,6 +1727,29 @@
 			x: 17.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["3FC351F05F2AC743"]
+			description: ["For those who made it here, congrats on being so persistent, you can finally rest now, knowing that there was another 64 Circuit quest."]
+			id: "154FD9DCD875A2C2"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 4
+				id: "487AC2B0BC005A69"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				count: 64L
+				id: "32BA18E67182AAA2"
+				item: { Count: 64, id: "gtceu:crystal_processor_mainframe" }
+				type: "item"
+			}]
+			title: "Remember this?"
+			x: 13.0d
+			y: -1.0d
+		}
 	]
 	title: "Futuristic Mechanisms"
 }

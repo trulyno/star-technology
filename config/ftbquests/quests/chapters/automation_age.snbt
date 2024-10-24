@@ -2272,6 +2272,73 @@
 			x: 9.5d
 			y: 11.5d
 		}
+		{
+			dependencies: ["4FFD2642BC183495"]
+			description: ["Just why?"]
+			id: "74192E3B5EDDCA39"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 4
+				id: "231B2C18117E1941"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "0A713361925DE900"
+				item: "gtceu:prospector.luv"
+				type: "item"
+			}]
+			title: "Going that extra mile"
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2CABFCC73E33E133"]
+			description: ["Solar power is great, but this isn't what we meant when we said that."]
+			id: "7167D5936AF4F86A"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 4
+				id: "4B52C62655EE9462"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "0FBC974F632B7085"
+				item: "gtceu:ulv_solar_panel"
+				type: "item"
+			}]
+			title: "Solar Power"
+			x: 17.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["17C1292018AE363E"]
+			description: ["Making a max sized Cleanroom is mandatory, trust me."]
+			id: "775486BEBAFE1146"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 4
+				id: "4A4E248B76EB43A6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				count: 168L
+				id: "3EB984220385E68B"
+				item: { Count: 168, id: "gtceu:filter_casing" }
+				type: "item"
+			}]
+			title: "Time for a big one"
+			x: 2.5d
+			y: 2.5d
+		}
 	]
 	title: "Automation Age"
 }

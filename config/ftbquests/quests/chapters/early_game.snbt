@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["16A9D8E864A18B9E"]
 			description: ["The start of any skyblock pack, hope you like tree chopping."]
 			id: "5B3D8132C90D790B"
 			rewards: [{
@@ -1910,6 +1911,70 @@
 			title: "Basic Automation"
 			x: 8.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["70BE6905EC722DCA"]
+			id: "43D450D7593274DB"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 4
+				id: "1825444B20E034C6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				advancement: "create:stressometer_maxed"
+				criterion: ""
+				id: "02E3EDBD90C554B5"
+				type: "advancement"
+			}]
+			title: "Walking on the edge"
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["20A12F3B992762F0"]
+			id: "624FAD2F168BD51B"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 4
+				id: "60B3325A32D89874"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				count: 64L
+				id: "2ADC9F25BAFCEF9E"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "The Batch Crafter"
+			x: 18.5d
+			y: -6.0d
+		}
+		{
+			description: [
+				"The Questbook takes you through the entire modpack, step by step. Here are a few things you should know"
+				"- Mechanics: A small chapter explaining some GregTech mechanics"
+				"- Processing Lines: This is a chapter explaining complicated processing lines"
+				"- Line of Progression: This chapter shows you all multiblocks and tiered items"
+				"- Challenge Quests: Throughout the main questline, there are hidden quests for doing special tasks, try finding them all"
+			]
+			id: "16A9D8E864A18B9E"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Read this"
+			tasks: [{
+				id: "1CBDC019CAC3E9C8"
+				title: "Ready, set, go"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -1.5d
 		}
 	]
 	title: "Early Game"
