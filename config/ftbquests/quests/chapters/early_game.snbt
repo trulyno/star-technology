@@ -81,7 +81,7 @@
 		{
 			dependencies: ["5B3D8132C90D790B"]
 			description: ["Crook leaves and infest some more leaves and watch the string come rolling in."]
-			icon: "exdeorum:silk_worm"
+			icon: "exnihilosequentia:silkworm"
 			id: "7717C0904590E303"
 			rewards: [{
 				id: "5380F2CC96F110C1"
@@ -93,16 +93,17 @@
 					id: "121605AC618CD9F0"
 					item: {
 						Count: 1
-						id: "exdeorum:crook"
+						id: "itemfilters:tag"
 						tag: {
-							Damage: 0
+							value: "exnihilosequentia:crook"
 						}
 					}
+					title: "Any Crook"
 					type: "item"
 				}
 				{
 					id: "500B92E80E4385E4"
-					item: "exdeorum:silk_worm"
+					item: "exnihilosequentia:silkworm"
 					type: "item"
 				}
 				{
@@ -122,7 +123,7 @@
 				""
 				"I recommend finding out a way to automate this as you won't get access to easy automation for flint meshes and above till HV."
 			]
-			icon: "exdeorum:string_mesh"
+			icon: "exnihilosequentia:string_mesh"
 			id: "26D3E2C0599B43B2"
 			rewards: [{
 				id: "53AC48361C91255D"
@@ -132,12 +133,19 @@
 			tasks: [
 				{
 					id: "6465D0617E5F08D3"
-					item: "exdeorum:oak_sieve"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "exnihilosequentia:sieves"
+						}
+					}
+					title: "Any Sieve"
 					type: "item"
 				}
 				{
 					id: "265F42A889691127"
-					item: "exdeorum:string_mesh"
+					item: "exnihilosequentia:string_mesh"
 					type: "item"
 				}
 			]
@@ -148,7 +156,7 @@
 		{
 			dependencies: ["5B3D8132C90D790B"]
 			description: ["Created to be left behind after you get two buckets of water."]
-			icon: "exdeorum:oak_crucible"
+			icon: "exnihilosequentia:oak_crucible"
 			id: "03ACC7D2577A2C66"
 			rewards: [{
 				id: "19602A061AC57EFF"
@@ -158,7 +166,14 @@
 			tasks: [
 				{
 					id: "1D63B14A7B78BA38"
-					item: "exdeorum:oak_crucible"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "exnihilosequentia:crucibles"
+						}
+					}
+					title: "Any Crucibles"
 					type: "item"
 				}
 				{
@@ -196,7 +211,10 @@
 				{
 					count: 4L
 					id: "18540F033A0DC299"
-					item: { Count: 4, id: "exdeorum:stone_pebble" }
+					item: {
+						Count: 4
+						id: "exdeorum:stone_pebble"
+					}
 					type: "item"
 				}
 				{
@@ -225,7 +243,7 @@
 				{
 					count: 4L
 					id: "059DCAFCCFDED10B"
-					item: { Count: 4, id: "exdeorum:blackstone_pebble" }
+					item: "exnihilosequentia:blackstone_pebble"
 					type: "item"
 				}
 				{
@@ -235,7 +253,7 @@
 				}
 				{
 					id: "39C8DFC876E33DA9"
-					item: "exdeorum:crushed_blackstone"
+					item: "exnihilosequentia:crushed_blackstone"
 					type: "item"
 				}
 			]
@@ -259,7 +277,7 @@
 						Count: 1
 						id: "itemfilters:tag"
 						tag: {
-							value: "exdeorum:hammers"
+							value: "exnihilosequentia:hammer"
 						}
 					}
 					title: "Any hammer"
@@ -277,7 +295,7 @@
 				}
 				{
 					id: "0E442497B1CEEB4C"
-					item: "exdeorum:dust"
+					item: "exnihilosequentia:dust"
 					type: "item"
 				}
 			]
@@ -324,7 +342,7 @@
 				}
 				{
 					id: "38AD2B4A34552396"
-					item: "exdeorum:mycelium_spores"
+					item: "exnihilosequentia:mycelium_spores"
 					type: "item"
 				}
 				{
@@ -774,7 +792,7 @@
 		{
 			dependencies: ["03ACC7D2577A2C66"]
 			description: ["Take a barrel of water and add some dust, you get a block of clay. How neat is that."]
-			icon: "exdeorum:oak_barrel"
+			icon: "exnihilosequentia:oak_barrel"
 			id: "2D1184752D7ACA66"
 			rewards: [{
 				id: "33CC60792D4A7D78"
@@ -784,7 +802,14 @@
 			tasks: [
 				{
 					id: "5089EB61032A0C7D"
-					item: "exdeorum:oak_barrel"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "exnihilosequentia:barrels"
+						}
+					}
+					title: "Any Barrels"
 					type: "item"
 				}
 				{
@@ -1244,7 +1269,7 @@
 				"634FB21D521253CF"
 			]
 			description: ["Lava gives you access to cobblestone which will contain everything you might ever need in life. You could also use it as a fuel, no one here is judging you."]
-			icon: "exdeorum:porcelain_crucible"
+			icon: "exnihilosequentia:fired_crucible"
 			id: "29F1EAF3E87A50F5"
 			rewards: [{
 				id: "737438312AE496B4"
@@ -1255,12 +1280,12 @@
 				{
 					count: 7L
 					id: "1B1757C9B87730C5"
-					item: { Count: 7, id: "exdeorum:porcelain_clay_ball" }
+					item: "exnihilosequentia:porcelain_clay"
 					type: "item"
 				}
 				{
 					id: "096224F9DA71BC98"
-					item: "exdeorum:porcelain_crucible"
+					item: "exnihilosequentia:fired_crucible"
 					type: "item"
 				}
 			]
@@ -1841,7 +1866,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "6966C74177CE78EF"
-				item: "exdeorum:stone_barrel"
+				item: "exnihilosequentia:stone_barrel"
 				type: "item"
 			}]
 			title: "Easy Cobble Generator"

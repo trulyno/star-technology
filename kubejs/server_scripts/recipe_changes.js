@@ -1,4 +1,4 @@
-const $RockBreakerCondition = Java.loadClass('com.gregtechceu.gtceu.common.recipe.RockBreakerCondition')  
+// const $RockBreakerCondition = Java.loadClass('com.gregtechceu.gtceu.common.recipe.RockBreakerCondition')  
 
 ServerEvents.recipes(event => {
 
@@ -23,6 +23,11 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
         'gtceu:iron_screw',
         'gtceu:wrought_iron_screw'
+    );
+
+    event.replaceInput({ id: 'gtceu:macerator/macerate_nether_star_lens' },
+        '#forge:lenses/white',
+        'gtceu:nether_star_lens'
     );
 
     event.recipes.create.mixing('3x gtceu:bronze_ingot', ['3x minecraft:copper_ingot', '#forge:ingots/tin']).heatRequirement('lowheated');
@@ -74,6 +79,24 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:rubber 576')
         .duration(240)
         .EUt(8);
+    //Recipe conflict fix
+    //ethane+chlorine
+    event.remove({id: 'gtceu:chemical_reactor/vinyl_chloride_from_ethane'})
+    event.recipes.gtceu.chemical_reactor('vinyl_chloride_from_ethane')
+        .inputFluids('gtceu:chlorine 4000', 'gtceu:ethane 1000')
+        .outputFluids('gtceu:vinyl_chloride 1000','gtceu:hydrochloric_acid 3000')
+        .duration(160)
+        .EUt(30)
+        .circuit(1);
+    
+    event.remove({id: 'gtceu:chemical_reactor/dichloroethane'})
+    event.recipes.gtceu.chemical_reactor('dichloroethane')
+        .inputFluids('gtceu:ethane 1000', 'gtceu:chlorine 2000')
+        .outputFluids('gtceu:dichloroethane 1000','gtceu:hydrochloric_acid 2000')
+        .duration(200)
+        .EUt(120)
+        .circuit(0);
+    //remove the code above when GT fixes it
 
     event.recipes.gtceu.large_chemical_reactor('latex_rubber')
         .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
@@ -203,8 +226,8 @@ ServerEvents.recipes(event => {
         .duration(16)
         .EUt(7)
         .addDataString("fluidA", "minecraft:lava")
-        .addDataString("fluidB", "minecraft:water")
-        .addCondition($RockBreakerCondition.INSTANCE);
+        .addDataString("fluidB", "minecraft:water");
+        // .addCondition($RockBreakerCondition.INSTANCE);
 
     event.shaped(Item.of('create_new_age:carbon_brushes'), [
         'SCS',
@@ -383,8 +406,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.item_application('gtceu:t_large_wiremill', ['gtceu:hv_wiremill', 'kubejs:multiblock_upgrade_kit']);
     event.recipes.create.item_application('gtceu:t_large_macerator', ['gtceu:hv_macerator', 'kubejs:multiblock_upgrade_kit']);
     event.recipes.create.item_application('gtceu:large_rock_crusher', ['gtceu:hv_rock_crusher', 'kubejs:multiblock_upgrade_kit']);
-
-
+/*
     event.remove({id: 'exdeorum:barrel_fluid_mixing/stone'});
     event.custom({
         "type": "exdeorum:barrel_fluid_mixing",
@@ -394,7 +416,7 @@ ServerEvents.recipes(event => {
         "consumes_additive": false,
         "result": "minecraft:cobblestone"
     });
-
+*/
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {

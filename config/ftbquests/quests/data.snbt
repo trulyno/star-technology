@@ -10,6 +10,7 @@
 	emergency_items: [{ Count: 1, id: "minecraft:oak_sapling" }]
 	emergency_items_cooldown: 600
 	grid_scale: 0.5d
+	icon: "gtceu:creative_computation_provider"
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0
@@ -18,5 +19,6 @@
 	}
 	pause_game: false
 	progression_mode: "linear"
+	title: "Star Technology"
 	version: 13
 }

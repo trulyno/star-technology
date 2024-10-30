@@ -48,8 +48,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:ethane 1000', 'gtceu:chlorine 2000')
         .outputFluids('gtceu:dichloroethane 1000', 'gtceu:hydrochloric_acid 2000')
         .duration(200)
-        .EUt(120)
-        .circuit(1);
+        .EUt(120);
 
     event.recipes.gtceu.large_chemical_reactor('dichloroethylene')
         .inputFluids('gtceu:ethane 1000', 'gtceu:chlorine 2000')

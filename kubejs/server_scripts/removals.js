@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(event => {
     const toRemoveOutput = ['thermal:machine_furnace', 'thermal:machine_sawmill',
         'thermal:machine_pulverizer', 'thermal:machine_insolator', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery',
@@ -14,25 +13,24 @@ ServerEvents.recipes(event => {
         'itemcollectors:basic_collector', 'itemcollectors:advanced_collector', 'create_new_age:heat_pipe', 'create_new_age:heat_pump', 'create_new_age:heater',
         'create_new_age:stirling_engine', 'create_new_age:reactor_casing', 'create_new_age:reactor_rod', 'create_new_age:reactor_glass', 'create_new_age:reactor_fuel_acceptor',
         'create_new_age:reactor_heat_vent', 'create_new_age:basic_solar_heating_plate', 'create_new_age:advanced_solar_heating_plate', 'create_new_age:nuclear_fuel', 
-        'create_new_age:blank_circuit', 'create_new_age:copper_circuit', 'create_new_age:thorium', 'create_new_age:radioactive_thorium', 'exdeorum:blaze_doll', 
-        'exdeorum:enderman_doll', 'exdeorum:shulker_doll', 'exdeorum:guardian_doll', 'exdeorum:bee_doll', 'exdeorum:porcelain_doll',
-        'createdieselgenerators:kelp_handle', 'createdieselgenerators:distillation_controller', 'createdieselgenerators:', 'createdieselgenerators:lighter',
+        'create_new_age:blank_circuit', 'create_new_age:copper_circuit', 'create_new_age:thorium', 'create_new_age:radioactive_thorium', 'exnihilosequentia:porcelain_doll',
+        'exmachinis:flux_sieve', 'createdieselgenerators:kelp_handle', 'createdieselgenerators:distillation_controller', 'createdieselgenerators:', 'createdieselgenerators:lighter',
         'createdieselgenerators:chemical_sprayer', 'createdieselgenerators:oil_detector', 'createdieselgenerators:pumpjack_bearing', 'createdieselgenerators:pumpjack_head',
-        'createdieselgenerators:pumpjack_crank', 'createdieselgenerators:canister', 'createdieselgenerators:oil_barrel', 'createdieselgenerators:asphalt', 'createdieselgenerators:asphalt_slab', 'createdieselgenerators:asphalt_stairs',
-        'createdieselgenerators:diesel', 'createdieselgenerators:gasoline',  'ae2:charger', 'ae2:drive', 'ae2:chest', 'createdieselgenerators:pumpjack_hole', 'expatternprovider:ex_inscriber', 
-        'expatternprovider:ex_charger', 'expatternprovider:crystal_fixer', 'expatternprovider:canner', 'exmachinis:item_buffer', 'ae2:crystal_resonance_generator', 'ae2:vibration_chamber',
-        'exdeorum:mechanical_sieve', 'exdeorum:mechanical_hammer', 'systeams:frost_boiler', 'thermalendergy:melodium_ingot', 'thermalendergy:prismalium_ingot', 'thermalendergy:stellarium_ingot',
-        'thermalendergy:melodium_block', 'thermalendergy:prismalium_block', 'thermalendergy:stellarium_block', 'thermalendergy:melodium_nugget', 'thermalendergy:prismalium_nugget','thermalendergy:stellarium_nugget',
-        'exdeorum:golden_mesh', 'enderio:energy_conduit'
+        'createdieselgenerators:pumpjack_crank', 'createdieselgenerators:canister', 'createdieselgenerators:oil_barrel', 'createdieselgenerators:asphalt', 'createdieselgenerators:asphalt_slab',
+        'createdieselgenerators:asphalt_stairs', 'createdieselgenerators:diesel', 'createdieselgenerators:gasoline',  'ae2:charger', 'ae2:drive', 'ae2:chest', 'createdieselgenerators:pumpjack_hole',
+        'expatternprovider:ex_inscriber', 'expatternprovider:ex_charger', 'expatternprovider:crystal_fixer', 'expatternprovider:canner', 'exmachinis:item_buffer', 'ae2:crystal_resonance_generator',
+        'ae2:vibration_chamber', 'systeams:frost_boiler', 'thermalendergy:melodium_ingot', 'thermalendergy:prismalium_ingot', 'thermalendergy:stellarium_ingot', 'thermalendergy:melodium_block',
+        'thermalendergy:prismalium_block', 'thermalendergy:stellarium_block', 'thermalendergy:melodium_nugget', 'thermalendergy:prismalium_nugget','thermalendergy:stellarium_nugget',
+        'enderio:energy_conduit'
     ];
     const toRemoveId = ['thermal:slime_mushroom_spores', 'thermal_extra:sticky_ball_to_paper', 'farmersdelight:paper_from_tree_bark',
-        'create:pressing/sugar_cane', 'exnihilo:fluid_item/ens_slime', 'gtceu:shaped/good_circuit_board',
+        'create:pressing/sugar_cane', 'exnihilosequentia:precipitate/ens_slime', 'gtceu:shaped/good_circuit_board',
         'thermal:rubber_from_vine', 'thermal:rubber_from_dandelion', 'thermal:smelting/cured_rubber_from_smelting',
         'thermal:rf_coil', 'create:haunting/crimson_fungus', 'create:haunting/warped_fungus', 'create:compat/ae2/milling/sky_stone_block',
         'create:compat/ae2/milling/fluix_crystal', 'create:compat/ae2/milling/ender_pearl', 'create:compat/ae2/milling/certus_quartz',
         'create:crushing/raw_platinum_ore', 'create:crushing/raw_platinum_block', 'create:crushing/raw_uranium_ore',
         'create:crushing/raw_uranium_block', 'create:crafting/appliances/slime_ball', 'minecraft:fire_charge',
-        'exdeorum:fluid_item/ens_end_stone', 'exdeorum:fluid_item/ens_netherrack', 'gtceu:shapeless/dust_bronze',
+        'exnihilosequentia:precipitate/ens_end_stone', 'exnihilosequentia:precipitate/ens_netherrack', 'gtceu:shapeless/dust_bronze',
         'gtceu:shapeless/dust_brass', 'create:mixing/brass_ingot', 'minecraft:ender_eye', 'create_new_age:shaped/carbon_brushes',
         'create_new_age:shaped/basic_motor_extension', 'create_new_age:advanced_motor_extension', 'create_new_age:shaped/redstone_magnet',
         'ae2:transform/damaged_budding_quartz', 'ae2:transform/chipped_budding_quartz', 'ae2:transform/flawed_budding_quartz',
@@ -58,21 +56,24 @@ ServerEvents.recipes(event => {
         event.remove({ type: element});
     });
 
-    event.remove({ output: /exdeorum:compressed_.*/ });
-    event.remove({ output: /exdeorum:.*_compressed_sieve/ });
-    event.remove({ id: /minecraft:.*_from_compressed_/ });
-    event.remove({ id: /exdeorum:.*_from_compressed_/ });
-
     event.remove({ input: 'minecraft:fire_charge'});
 
-    event.remove({ type: 'exdeorum:sieve', input: '#forge:gravel'});
-    event.remove({ type: 'exdeorum:sieve', input: 'exdeorum:crushed_netherrack'});
-    event.remove({ type: 'exdeorum:sieve', input: '#minecraft:sand'});
-    event.remove({ type: 'exdeorum:sieve', input: 'minecraft:sand'});
-    event.remove({ type: 'exdeorum:sieve', input: 'exdeorum:dust'});
-    event.remove({ type: 'exdeorum:sieve', input: 'minecraft:soul_sand'});
-    event.remove({ type: 'exdeorum:sieve', input: 'exdeorum:crushed_end_stone'});
-
+    event.remove({ id: 'exnihilosequentia:ens_flint_mesh'})
+    event.remove({ id: 'exnihilosequentia:ens_iron_mesh'})
+    event.remove({ id: 'exnihilosequentia:ens_diamond_mesh'})
+    event.remove({ id: 'exnihilosequentia:ens_emerald_mesh'})
+    event.remove({ id: 'exnihilosequentia:ens_netherite_mesh'})
+    event.remove({ type: 'exnihilosequentia:sifting'})
+    /*
+    event.remove({ input: '#exnihilosequentia:mesh', input: '#forge:gravel'});
+    event.remove({ input: '#exnihilosequentia:mesh', input: 'exnihilosequentia:crushed_netherrack'});
+    event.remove({ input: '#exnihilosequentia:mesh', input: '#minecraft:sand'});
+    event.remove({ input: '#exnihilosequentia:mesh', input: 'minecraft:sand'});
+    event.remove({ input: '#exnihilosequentia:mesh', input: 'exnihilosequentia:dust'});
+    event.remove({ input: '#exnihilosequentia:mesh', input: 'minecraft:soul_sand'});
+    event.remove({ input: '#exnihilosequentia:mesh', input: 'exnihilosequentia:crushed_end_stone'});
+    event.remove({ input: '#exnihilosequentia:mesh', input: '#forge:leaves'})
+    */
     event.remove({ input: 'minecraft:fire_charge'});
     event.remove({ input: 'thermal:earth_charge'});
     event.remove({ mod: 'mysticalagriculture'});
@@ -89,4 +90,5 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'minecraft:netherite_scrap'});
     event.remove({ input: 'minecraft:ancient_debris'});
     event.remove({ output: 'minecraft:netherite_ingot'});
+    event.remove({ id: 'gtceu:centrifuge/magma_cream_separation'}); 
 });

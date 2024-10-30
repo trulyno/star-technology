@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(event => {
 
     event.shaped(Item.of('gtceu:kinetic_ore_factory'), [

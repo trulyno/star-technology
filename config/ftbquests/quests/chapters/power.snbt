@@ -17,7 +17,7 @@
 				item: "thermal:dynamo_stirling"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.0d
 			y: 0.5d
 		}
 		{
@@ -29,7 +29,7 @@
 				item: "thermal:dynamo_lapidary"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 0.0d
 			y: 0.5d
 		}
 		{
@@ -53,8 +53,8 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 0.5d
+			x: -5.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6952D4FF38BE8183"]
@@ -65,8 +65,8 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.5d
+			x: -6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3EFA6C0507041E4C"]
@@ -77,8 +77,8 @@
 				item: "mysticalagradditions:inferium_coal"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.5d
+			x: -7.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3CF055943BFD3CD1"]
@@ -89,8 +89,8 @@
 				item: "mysticalagradditions:prudentium_coal"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 0.5d
+			x: -8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5F4670FBF12F4E85"]
@@ -102,7 +102,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1EC33A1B699E013C"]
@@ -114,7 +114,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["14DA2BDED60BD66C"]
@@ -126,7 +126,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["365B7388D4BDC328"]
@@ -138,7 +138,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["092ACDF732CE78F0"]
@@ -149,7 +149,7 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.0d
 			y: 0.5d
 		}
 		{
@@ -162,8 +162,8 @@
 				item: "thermal_extra:refined_sunflower_oil_bucket"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 1.5d
+			x: -3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0F70A4555874E56E"]
@@ -174,8 +174,8 @@
 				item: "gtceu:bio_diesel_bucket"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 1.5d
+			x: -5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["28FB566FC1E35413"]
@@ -186,8 +186,8 @@
 				item: "thermal:refined_fuel_bucket"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 1.5d
+			x: -6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7242D13C6F27BECB"]
@@ -198,8 +198,8 @@
 				item: "gtceu:diesel_bucket"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 1.5d
+			x: -7.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0C81D0F1D42C092B"]
@@ -211,7 +211,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7E508B071C59EB73"]
@@ -223,7 +223,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["285392E7B24481C3"]
@@ -235,7 +235,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["614071EB90CB89F5"]
@@ -256,7 +256,7 @@
 				}
 			]
 			title: "Steam Dynamo"
-			x: -3.5d
+			x: -4.0d
 			y: -1.5d
 		}
 		{
@@ -887,8 +887,8 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: 3.0d
+			x: 1.0d
+			y: 2.0d
 		}
 		{
 			id: "3DB836585182F614"
@@ -897,7 +897,7 @@
 				item: "kubejs:basic_energy_core"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: -6.0d
 		}
 		{
@@ -908,7 +908,7 @@
 				item: "kubejs:regular_energy_core"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: -5.0d
 		}
 		{
@@ -919,7 +919,7 @@
 				item: "kubejs:intermediate_energy_core"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: -4.0d
 		}
 		{
@@ -930,7 +930,7 @@
 				item: "kubejs:advanced_energy_core"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: -3.0d
 		}
 		{
@@ -941,7 +941,7 @@
 				item: "kubejs:elite_energy_core"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: -2.0d
 		}
 		{
@@ -952,7 +952,7 @@
 				item: "kubejs:ultimate_energy_core"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: -1.0d
 		}
 		{
@@ -1029,7 +1029,7 @@
 				item: "solarflux:sp_1"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: -6.0d
 		}
 		{
@@ -1040,7 +1040,7 @@
 				item: "solarflux:sp_2"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: -5.0d
 		}
 		{
@@ -1051,7 +1051,7 @@
 				item: "solarflux:sp_3"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: -4.0d
 		}
 		{
@@ -1062,7 +1062,7 @@
 				item: "solarflux:sp_4"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: -3.0d
 		}
 		{
@@ -1073,7 +1073,7 @@
 				item: "solarflux:sp_5"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: -2.0d
 		}
 		{
@@ -1084,7 +1084,7 @@
 				item: "solarflux:sp_6"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: -1.0d
 		}
 		{
@@ -1365,8 +1365,31 @@
 				}
 			]
 			title: "Diatrons"
-			x: 1.0d
+			x: 2.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["723224D36C88ACA9"]
+			description: ["The last 2 Solar Panels are merely compressed variants of the previous ones, to allow for more compact solar setups"]
+			id: "2D9EFD27A3C32062"
+			tasks: [{
+				id: "4C72E978BB38D646"
+				item: "solarflux:sp_7"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D9EFD27A3C32062"]
+			id: "1F83DC0B3C633298"
+			tasks: [{
+				id: "7222356ABCE66FCC"
+				item: "solarflux:sp_8"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
 		}
 	]
 	title: "Power"

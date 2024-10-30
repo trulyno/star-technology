@@ -63,12 +63,6 @@
     "hud.status": true,
     "hud.contents": true
   },
-  "exdeorum": {
-    "infested_leaves": true,
-    "barrel": true,
-    "crucible": true,
-    "sieve": true
-  },
   "gtceu": {
     "primitive_pump": true,
     "auto_output_info": true,
@@ -138,6 +132,12 @@
     "hud.rgb16": true,
     "hud": true,
     "hud.redstone": true
+  },
+  "exnihilosequentia": {
+    "barrel": true,
+    "crucible": true,
+    "sieve": true,
+    "infesting_leaves": true
   },
   "mysticalagradditions": {
     "infused_farmland": true

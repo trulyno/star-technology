@@ -105,7 +105,7 @@
     "gtceu.large_quantum_compressor": "Quantum Compression",
     "block.gtceu.runic_circuitry_assembling_station": "Runic Circuitry Assembly Station",
     "gtceu.runic_circuitry_assembling_station": "Runic Circuitry Assembly Station",
-    "block.gtceu.electrico_kinetic_ore_factory": "Electrico-Kinetic Ore Factory",
+    "block.gtceu.electrico_kinetic_ore_factory": "Electro-Kinetic Ore Factory",
     "gtceu.electrico_kinetic_ore_factory": "Ore Processing",
     "block.gtceu.large_stone_barrel": "Large Stone Barrel",
     "gtceu.large_stone_barrel": "Large Stone Barrel",
@@ -331,5 +331,19 @@
     "block.gtceu.lv_kinetic_mixer": "LV Kinetic Mixer",
     "block.gtceu.mv_kinetic_mixer": "MV Kinetic Mixer",
     "block.gtceu.hv_kinetic_mixer": "HV Kinetic Mixer",
-    "block.gtceu.ev_kinetic_mixer": "EV Kinetic Mixer"
+    "block.gtceu.ev_kinetic_mixer": "EV Kinetic Mixer",
+
+    "gtceu.kinetic_filtrator": "Kinetic Filtrator",
+    "block.gtceu.kinetic_filtrator": "Kinetic Filtrator",
+    "gtceu.electro_kinetic_filtrator": "Electro-Kinetic Filtrator",
+    "block.gtceu.electro_kinetic_filtrator": "Electro-Kinetic Filtrator",
+
+    "gtceu.pressure_heater": "Pressure Heater",
+    "block.gtceu.pressure_heater": "Pressure Heater",
+
+    "gtceu.rock_sifter": "Rock Sifter",
+    "block.gtceu.rock_sifter": "Rock Sifter",
+
+    "gtceu.void_excavator": "Void Excavator",
+    "block.gtceu.void_excavator": "Void Excavator"
 }
