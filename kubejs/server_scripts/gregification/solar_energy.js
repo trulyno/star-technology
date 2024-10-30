@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(event => {
 
     // event.remove({id: /solarflux:.*_solar_generator/});
@@ -236,6 +235,20 @@ ServerEvents.recipes(event => {
         .itemInputs('3x gtceu:double_rhodium_plated_palladium_plate', '3x gtceu:silicon_wafer', 'solarflux:photovoltaic_cell_6')
         .inputFluids('gtceu:soldering_alloy 1008')
         .itemOutputs('solarflux:sp_6')
+        .duration(200)
+        .EUt(16000);
+
+    event.recipes.gtceu.assembler('solar_generator_7')
+        .itemInputs('4x solarflux:sp_6', '#gtceu:circuits/zpm')
+        .inputFluids('gtceu:soldering_alloy 1008')
+        .itemOutputs('solarflux:sp_7')
+        .duration(200)
+        .EUt(16000);
+
+    event.recipes.gtceu.assembler('solar_generator_8')
+        .itemInputs('4x solarflux:sp_7', '#gtceu:circuits/uv')
+        .inputFluids('gtceu:soldering_alloy 1008')
+        .itemOutputs('solarflux:sp_8')
         .duration(200)
         .EUt(16000);
 
