@@ -664,7 +664,7 @@ materialRegistry(event => {
         .components('7x naquadria', '2x pure_netherite', '5x neutronium', '16x fluorine')
         .color(0xccff33)
         .iconSet(DULL)
-        .blastTemp(10500, 'low', VA('uv'), 6000)
+        .blastTemp(10500, 'low', VA('zpm'), 6000)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame);
 
