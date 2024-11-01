@@ -204,6 +204,11 @@ StartupEvents.registry('item', event => {
         event.create(`${tier}_energy_core`)
             .displayName(`${tier.charAt(0).toUpperCase() + tier.slice(1)} Energy Core`).texture(`kubejs:item/${tier}_energy_core`);
     })
+
+    event.create('sugar_coke')
+        .burnTime(800)
+        .displayName("Sugar Coke")
+        .texture('kubejs:item/sugar_coke')
 });
 
 // Custom Blocks
