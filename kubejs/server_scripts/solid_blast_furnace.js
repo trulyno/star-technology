@@ -16,6 +16,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:sugar_coke')
         .outputFluids(Fluid.of('gtceu:creosote', 250))
         .itemInputs('4x minecraft:sugar_cane')
+        .duration(600)
 
     event.shaped(Item.of('gtceu:solid_blast_furnace'), [
         'HRS',
