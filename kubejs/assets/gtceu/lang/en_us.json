@@ -334,5 +334,6 @@
     "block.gtceu.ev_kinetic_mixer": "EV Kinetic Mixer",
 
     "block.gtceu.solid_blast_furnace": "Solid Blast Furnace",
-    "block.gtceu.solid_blast_furnace.tooltip": "§7A Primitive Blast Furnace with automation access"
+    "block.gtceu.solid_blast_furnace.@Tooltip0": "§7An upgraded Primitive Blast Furnace",
+    "gtceu.solid_blast_furnace": "Solid Blast Furnace"
 }
