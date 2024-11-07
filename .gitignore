@@ -1,0 +1,15 @@
+# Ignore eveything so repository can be used in game instance
+/*
+
+# Add directories with soure code
+!/config/
+!/defaultconfigs/
+!/kubejs/
+!/mods/panorama/
+!/scripts/
+
+# Add files in main directory
+!LICENSE
+!README.md
+!panorama.dat
+!.gitignore
