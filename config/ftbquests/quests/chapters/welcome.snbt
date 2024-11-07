@@ -1,26 +1,25 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
-	filename: "gregtech_periodic_table"
+	default_quest_shape: "rsquare"
+	filename: "welcome"
 	group: ""
-	icon: "infinity_provider:builder"
-	id: "5453BAD898EBDE83"
+	icon: "gtceu:creative_energy"
+	id: "75840ED996FEA6DB"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			description: ["Star Technology is one of the first GregTech Modern packs! Embark on a journey to create many stargates, simulate microuniverses and develop technology!"]
-			icon: "infinity_provider:builder"
-			id: "0965CF6D6253FE35"
-			shape: "rsquare"
+			icon: "gtceu:creative_energy"
+			id: "7168A2D5D4EE14E9"
 			size: 5.0d
 			tasks: [{
-				id: "00639774AC35B90E"
+				id: "40AC940F2E8BD9BD"
 				title: "Welcome!"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: 1.0d
+			y: 0.5d
 		}
 		{
 			description: [
@@ -29,16 +28,15 @@
 				"     &lWelcome to Star Technology.&r"
 			]
 			icon: "effortlessbuilding:building_techniques_book"
-			id: "6C64EDDD0D89A53D"
-			shape: "rsquare"
+			id: "0873486517E58FE4"
 			size: 3.0d
 			tasks: [{
-				id: "2F459D9084BC1266"
+				id: "5C150CA08542BEFA"
 				title: "Lore"
 				type: "checkmark"
 			}]
-			x: 4.0d
-			y: 0.0d
+			x: 5.0d
+			y: 0.5d
 		}
 		{
 			description: [
@@ -64,45 +62,42 @@
 				"&l&bChangelogs after beta 3 are available on the official discord server.&r&r"
 			]
 			icon: "minecraft:writable_book"
-			id: "6B4342686B40399C"
-			shape: "rsquare"
+			id: "7389DA5CB69998BC"
 			size: 3.0d
 			tasks: [{
-				id: "2833DE2C3F94B4FC"
+				id: "44A22BC4153F3FD6"
 				title: "Developer Log"
 				type: "checkmark"
 			}]
-			x: -4.0d
-			y: 0.0d
+			x: -3.0d
+			y: 0.5d
 		}
 		{
 			description: ["&bhttps://discord.com/invite/numxrCgrCG&r"]
 			icon: "kubejs:coin"
-			id: "081D95CD02F8C2C4"
-			shape: "rsquare"
+			id: "0B677BF5FCD2884F"
 			size: 2.0d
 			tasks: [{
-				id: "44F369504FE5C739"
+				id: "7CDB90799C05C11A"
 				title: "Official Discord Server!"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: -3.5d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
 			description: ["Server files are available on CurseForge!"]
 			icon: "kubejs:draconic_wetware_processor_mainframe"
-			id: "2929B62A2918CD84"
-			shape: "rsquare"
+			id: "00C537F19FBE1A6E"
 			size: 2.0d
 			tasks: [{
-				id: "2510943267CA9994"
+				id: "657AC8F72A9732C5"
 				title: "Server Files"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 3.5d
+			x: 1.0d
+			y: 4.0d
 		}
 	]
-	title: "Welcome!"
+	title: "Welcome"
 }

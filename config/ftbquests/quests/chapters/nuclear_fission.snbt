@@ -9,7 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4C3C66BD2BC8D2A7"]
 			icon: "gtceu:pitchblende_dust"
 			id: "767219E6E2E6D139"
 			tasks: [
