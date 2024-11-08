@@ -243,14 +243,14 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 1008')
         .itemOutputs('solarflux:sp_7')
         .duration(200)
-        .EUt(16000);
+        .EUt(102400);
 
     event.recipes.gtceu.assembler('solar_generator_8')
         .itemInputs('4x solarflux:sp_7', '#gtceu:circuits/uv')
         .inputFluids('gtceu:soldering_alloy 1008')
         .itemOutputs('solarflux:sp_8')
         .duration(200)
-        .EUt(16000);
+        .EUt(160000);
 
     // event.recipes.gtceu.assembler('basic_battery')
     //     .itemInputs('gtceu:ulv_machine_hull', 'solarflux:basic_battery_cell')
