@@ -277,11 +277,10 @@ ServerEvents.recipes(event => {
         R: 'gtceu:rubber_plate'
     });
 
-    event.recipes.create.pressing('gtceu:lead_plate', 'gtceu:lead_ingot');
-    event.recipes.create.pressing('gtceu:silver_plate', 'gtceu:silver_ingot');
-    event.recipes.create.pressing('gtceu:tin_plate', 'gtceu:tin_ingot');
-    event.recipes.create.pressing('gtceu:zinc_plate', 'gtceu:zinc_ingot');
-    event.recipes.create.pressing('gtceu:bronze_plate', 'gtceu:bronze_ingot');
+    //plates
+    ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass'].forEach(type => {
+        event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`);
+    });
   
     event.replaceInput({id: 'enderchests:ender_pouch'}, 'minecraft:leather', 'gtceu:carbon_fiber_plate');
     event.shaped(Item.of('create_new_age:netherite_magnet'), [

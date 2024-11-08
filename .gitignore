@@ -8,6 +8,9 @@
 !/mods/panorama/
 !/scripts/
 
+/config/jei/world/
+/config/worldedit/
+
 # Add files in main directory
 !LICENSE
 !README.md
