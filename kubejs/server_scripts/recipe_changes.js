@@ -30,12 +30,6 @@ ServerEvents.recipes(event => {
         'gtceu:nether_star_lens'
     );
 
-    event.recipes.create.mixing('3x gtceu:bronze_ingot', ['3x minecraft:copper_ingot', '#forge:ingots/tin']).heatRequirement('lowheated');
-    event.recipes.create.mixing('1x gtceu:red_alloy_ingot', ['minecraft:copper_ingot', '4x minecraft:redstone']).heatRequirement('lowheated');
-    event.recipes.create.mixing('3x gtceu:brass_ingot', ['3x minecraft:copper_ingot', '#forge:ingots/zinc']).heatRequirement('lowheated');
-    event.recipes.create.mixing('2x gtceu:invar_ingot', ['2x minecraft:iron_ingot', '#forge:ingots/nickel']).heatRequirement('lowheated');
-    event.recipes.create.mixing('1x gtceu:soul_infused_ingot', ['2x thermal_extra:soul_sand_dust', '#forge:ingots/invar']).heatRequirement('lowheated');
-
     event.shaped(Item.of('gtceu:wood_plate'), [
         'SSS'
     ], {
