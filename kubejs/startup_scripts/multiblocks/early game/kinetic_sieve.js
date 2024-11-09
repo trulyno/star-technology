@@ -27,5 +27,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('.', Predicates.any())
             .build())
         .workableCasingRenderer("kubejs:block/casings/casing-wood",
-        "gtceu:block/multiblock/coke_oven", false);
+        "gtceu:block/machines/macerator", false);
 });

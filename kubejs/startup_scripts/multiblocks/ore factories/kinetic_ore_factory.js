@@ -27,5 +27,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("gtceu:block/casings/solid/machine_primitive_bricks",
-        "gtceu:block/multiblock/primitive_blast_furnace", false);
+        "kubejs:block/multiblock/primitive_blast_furnace", false);
 });
