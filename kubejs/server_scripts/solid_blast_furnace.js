@@ -32,19 +32,19 @@ ServerEvents.recipes(event => {
     });
 
     // Magnetite-Steel
-    event.recipes.gtceu.solid_blast_furnace("sbf/magnetite_dust/silicon_dioxide/silicon")
+    event.recipes.gtceu.solid_blast_furnace("magnetite_dust_metallurgy")
        .itemInputs("6x gtceu:magnetite_dust", "2x gtceu:silicon_dust", "2x #kubejs:sbf_fuels")
-       .itemOutputs("2x minecraft:iron_ingot", "6x gtceu:silicon_dioxide_dust", "2x gtceu:tiny_pile_of_dark_ashes")
+       .itemOutputs("2x minecraft:iron_ingot", "6x gtceu:silicon_dioxide_dust", "2x gtceu:tiny_dark_ashes")
        .duration(600)
-    event.recipes.gtceu.solid_blast_furnace("sbf/iron_ingot/steel/silicon_dioxide")
+    event.recipes.gtceu.solid_blast_furnace("steel_from_iron_and_silicon_dioxide")
        .itemInputs("minecraft:iron_ingot", "3x gtceu:silicon_dioxide_dust", "1x #kubejs:sbf_fuels")
-       .itemOutputs("gtceu:steel_ingot", "gtceu:silicon_dust", "1x gtceu:tiny_pile_of_dark_ashes")
+       .itemOutputs("gtceu:steel_ingot", "gtceu:silicon_dust", "1x gtceu:tiny_dark_ashes")
        .duration(300)
 
 
     // Sphalerite-Sulfur
-    event.recipes.gtceu.solid_blast_furnace("sbf/sphalerite/sulfur/andesite")
+    event.recipes.gtceu.solid_blast_furnace("sphalerite_metallurgy")
         .itemInputs("2x gtceu:sphalerite_dust", "4x minecraft:andesite", "1x #kubejs:sbf_fuels")
-        .itemOutputs("12x create:andesite_alloy", "1x gtceu:sulfur_dust", "1x gtceu:tiny_pile_of_dark_ashes")
+        .itemOutputs("12x create:andesite_alloy", "1x gtceu:sulfur_dust", "1x gtceu:tiny_dark_ashes")
         .duration(200)
 });
