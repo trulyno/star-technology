@@ -26,5 +26,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.air())
             .build())
         .workableCasingRenderer("kubejs:block/casings/red_steel_casing",
-        "gtceu:block/multiblock/electric_blast_furnace", false);
+        "gtceu:block/machines/rock_crusher", false);
 });
