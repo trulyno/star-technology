@@ -1017,9 +1017,8 @@
 			dependencies: ["664E782C6A24D9F1"]
 			id: "49A3D4B23D3A7D13"
 			tasks: [{
-				count: 2L
 				id: "72498B3E8CEF5049"
-				item: { Count: 2, id: "gtceu:large_packer" }
+				item: "gtceu:large_packer"
 				type: "item"
 			}]
 			x: -6.0d

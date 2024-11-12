@@ -437,7 +437,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["586E4409BEF993FD"]
+			dependencies: ["235423100BBE5C81"]
 			icon: { Count: 16, id: "gtceu:titanium_ingot" }
 			id: "1FB7685565AC4703"
 			rewards: [{
