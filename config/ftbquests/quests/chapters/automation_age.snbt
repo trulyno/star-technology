@@ -71,8 +71,8 @@
 				}
 			]
 			title: "RAM Chips"
-			x: -0.5d
-			y: -2.0d
+			x: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -167,7 +167,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -471,7 +471,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
@@ -569,8 +569,8 @@
 				item: "gtceu:energy_crystal"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -4.5d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -624,8 +624,8 @@
 				}
 			]
 			title: "NanoMuscle™ Suite"
-			x: 1.5d
-			y: -4.5d
+			x: 0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1138,8 +1138,8 @@
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 11.5d
+			x: 12.5d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1799,8 +1799,8 @@
 				item: "gtceu:iv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -4.5d
+			x: 7.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4A45669665626026"]
@@ -1815,7 +1815,7 @@
 				item: "gtceu:iv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 7.5d
 			y: -4.5d
 		}
 		{
@@ -1853,8 +1853,8 @@
 				item: "gtceu:shellite_single_wire"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.5d
+			x: 6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -1870,8 +1870,8 @@
 				item: "gtceu:shellite_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -4.5d
+			x: 6.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2D4F9DFF6B559C65"]
@@ -2338,6 +2338,29 @@
 			title: "Time for a big one"
 			x: 2.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["3B2D79D40B9617D5"]
+			description: [
+				"The Nuclear Reactor allows for easy recipes when making Uranium-235 and Plutonium-239, and also functions as quite a powerful energy generator, capable of producing 8 EV amps, or 2 IV amps at once. "
+				"This does mean you need either a 16A EV or 4A IV energy hatch."
+			]
+			id: "68865F1DDBFFFACE"
+			rewards: [{
+				count: 2
+				id: "7E70C6C6130F88D8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "388DD36D47A45596"
+				item: "gtceu:nuclear_reactor"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 11.5d
 		}
 	]
 	title: "Automation Age"

@@ -704,6 +704,7 @@
 			description: ["By primitively heating a mixer, you can start to make your first alloys."]
 			icon: "create:mechanical_mixer"
 			id: "3F74E863172E757F"
+			optional: true
 			rewards: [{
 				id: "06C779CFE9AA509E"
 				item: "kubejs:coin"
@@ -887,7 +888,11 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["3F74E863172E757F"]
+			dependencies: [
+				"3F74E863172E757F"
+				"4FC0832128C3109C"
+			]
+			dependency_requirement: "one_completed"
 			description: ["The most valuable alloy you can make right now due to how much you will need for circuits."]
 			id: "0843E56CA39E9822"
 			rewards: [{
@@ -1245,7 +1250,7 @@
 				"634FB21D521253CF"
 			]
 			description: ["Lava gives you access to cobblestone which will contain everything you might ever need in life. You could also use it as a fuel, no one here is judging you."]
-			icon: "exnihilosequentia:porcelain_crucible"
+			icon: "exnihilosequentia:fired_crucible"
 			id: "29F1EAF3E87A50F5"
 			rewards: [{
 				id: "737438312AE496B4"
@@ -1256,15 +1261,12 @@
 				{
 					count: 7L
 					id: "1B1757C9B87730C5"
-					item: {
-						Count: 7
-						id: "exnihilosequentia:porcelain_clay_ball"
-					}
+					item: "exnihilosequentia:porcelain_clay"
 					type: "item"
 				}
 				{
 					id: "096224F9DA71BC98"
-					item: "exnihilosequentia:porcelain_crucible"
+					item: "exnihilosequentia:fired_crucible"
 					type: "item"
 				}
 			]
@@ -1807,7 +1809,11 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["3F74E863172E757F"]
+			dependencies: [
+				"3F74E863172E757F"
+				"4FC0832128C3109C"
+			]
+			dependency_requirement: "one_completed"
 			description: ["Create gives you access to your first alloys at a slightly lower ratio per ingot. Good in the early game, but might want to upgrade once you hit LV."]
 			id: "10126B9D6EC90F59"
 			rewards: [{
@@ -1979,6 +1985,37 @@
 			}]
 			x: 4.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["3D0F6CA8028C074B"]
+			description: ["An alternative to the mixer from create."]
+			id: "4FC0832128C3109C"
+			optional: true
+			rewards: [{
+				id: "2F0BBAA2B20AC700"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5FE87B919AB2D575"
+					item: "gtceu:bronze_dust"
+					type: "item"
+				}
+				{
+					id: "4B8861A9C241D93A"
+					item: "gtceu:copper_dust"
+					type: "item"
+				}
+				{
+					id: "4F1C9A96AF1EE13C"
+					item: "gtceu:zinc_dust"
+					type: "item"
+				}
+			]
+			title: "Mixing Dusts"
+			x: 15.5d
+			y: -0.5d
 		}
 	]
 	title: "Early Game"

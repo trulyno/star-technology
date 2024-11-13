@@ -164,7 +164,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2587E109968EFBB4"]
@@ -180,7 +180,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1135,7 +1135,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
@@ -1150,8 +1150,8 @@
 				item: "gtceu:dragonsteel_ingot"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 5.0d
+			x: 13.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["7FD0034E639F3B2D"]
@@ -1167,7 +1167,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["3BA6406400A63937"]
@@ -1185,7 +1185,7 @@
 				item: "gtceu:naquadah_coil_block"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 14.0d
 			y: 6.0d
 		}
 		{
@@ -1209,7 +1209,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["111033FEFA89BA91"]
@@ -1272,7 +1272,7 @@
 				item: "gtceu:zpm_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 10.0d
 			y: 6.0d
 		}
 		{
@@ -1295,20 +1295,25 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["35829E28221CB70E"]
+			dependencies: [
+				"35829E28221CB70E"
+				"3FC351F05F2AC743"
+			]
 			id: "3E1CA9FFB9953F42"
 			rewards: [{
 				id: "7AEC3EEA2DC10C04"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "4538BE544847BA96"
 				item: "gtceu:chemical_plant"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 4.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
@@ -1323,8 +1328,8 @@
 				item: "gtceu:indium_tin_barium_titanium_cuprate_ingot"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 6.0d
+			x: 16.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1349,7 +1354,6 @@
 			dependencies: [
 				"05F2C7351FF1B0E5"
 				"3BA6406400A63937"
-				"1BF95852C7E1741E"
 			]
 			icon: "gtceu:uhpic_chip"
 			id: "5BA69EDC3C223B2C"
@@ -1475,19 +1479,21 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3F4C068368F97580"]
+			dependencies: ["35829E28221CB70E"]
 			id: "1EE4E8301E0FD1C7"
 			rewards: [{
 				id: "50735AA038809909"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "1FA489745B229229"
 				item: "gtceu:chemical_builder"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 14.0d
 			y: 4.0d
 		}
 		{
@@ -1524,31 +1530,6 @@
 			}]
 			x: 20.0d
 			y: 6.0d
-		}
-		{
-			dependencies: ["1BF95852C7E1741E"]
-			icon: "gtceu:advanced_soc"
-			id: "6921BA3516ABF047"
-			rewards: [{
-				id: "049C6EF55B5090EA"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "74DD658906541792"
-					item: "gtceu:advanced_soc_wafer"
-					type: "item"
-				}
-				{
-					id: "447D8CCBC72F3060"
-					item: "gtceu:advanced_soc"
-					type: "item"
-				}
-			]
-			title: "ASoC Chips"
-			x: 20.0d
-			y: 8.0d
 		}
 		{
 			dependencies: ["6131A76D203DE6AB"]

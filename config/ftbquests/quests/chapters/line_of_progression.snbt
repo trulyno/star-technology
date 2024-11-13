@@ -335,12 +335,6 @@
 			y: -29.5d
 		}
 		{
-			id: "1FD8F110F69697CB"
-			linked_quest: "3E1CA9FFB9953F42"
-			x: -18.0d
-			y: -29.5d
-		}
-		{
 			id: "2A2B52C80535703B"
 			linked_quest: "1EE4E8301E0FD1C7"
 			x: -18.0d
@@ -1358,6 +1352,7 @@
 			y: -20.0d
 		}
 		{
+			dependencies: ["4B51B15B49620F57"]
 			id: "3953F99FD9B7CB61"
 			tasks: [{
 				id: "6E7C9CDE540B69E8"
@@ -1685,6 +1680,18 @@
 			}]
 			x: -9.5d
 			y: -23.5d
+		}
+		{
+			dependencies: ["3E1CA9FFB9953F42"]
+			disable_toast: true
+			id: "4640656DC355D2F1"
+			tasks: [{
+				id: "2434D2E99E39F08E"
+				item: "gtceu:chemical_plant"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -29.5d
 		}
 	]
 	title: "Line Of Progression"

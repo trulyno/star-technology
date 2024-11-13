@@ -21,28 +21,18 @@
 			y: 2.5d
 		}
 		{
-			icon: "enderio:travel_anchor"
+			icon: "travelanchors:travel_anchor"
 			id: "2092BC62D0ABB53F"
 			shape: "rsquare"
 			tasks: [
 				{
 					id: "24453FAD009278C1"
-					item: "enderio:travel_anchor"
+					item: "travelanchors:travel_anchor"
 					type: "item"
 				}
 				{
 					id: "46B3170CFFC70CD7"
-					item: {
-						Count: 1
-						id: "enderio:staff_of_travelling"
-						tag: {
-							Energy: {
-								EnergyStored: 0
-								MaxEnergyStored: 100000
-								MaxEnergyUse: 100000
-							}
-						}
-					}
+					item: "travelanchors:travel_staff"
 					type: "item"
 				}
 			]
