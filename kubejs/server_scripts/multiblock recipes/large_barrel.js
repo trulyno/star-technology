@@ -107,15 +107,15 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_barrel('mycelium_growth_compost')
         .duration(400)
-        .itemInputs('thermal:compost', 'exdeorum:mycelium_spores')
+        .itemInputs('thermal:compost', 'exnihilosequentia:mycelium_spores')
         .itemOutputs('kubejs:mycelium_growth')
     event.recipes.gtceu.large_barrel('mycelium_growth_bonemeal')
         .duration(600)
-        .itemInputs('minecraft:bone_meal', 'exdeorum:mycelium_spores')
+        .itemInputs('minecraft:bone_meal', 'exnihilosequentia:mycelium_spores')
         .itemOutputs('kubejs:mycelium_growth')
     event.recipes.gtceu.large_barrel('mycelium_growth_sawdust')
         .duration(400)
-        .itemInputs('gtceu:wood_dust', 'exdeorum:mycelium_spores')
+        .itemInputs('gtceu:wood_dust', 'exnihilosequentia:mycelium_spores')
         .itemOutputs('kubejs:mycelium_growth')
 
     // Mycelium Spores
@@ -123,6 +123,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .notConsumable('minecraft:red_mushroom_block')
         .itemInputs('4x minecraft:dirt')
-        .inputFluids('exdeorum:witch_water 750')
-        .chancedOutput('exdeorum:mycelium_spores', 8500, 0)
+        .inputFluids('exnihilosequentia:witch_water 750')
+        .chancedOutput('exnihilosequentia:mycelium_spores', 8500, 0)
 });
