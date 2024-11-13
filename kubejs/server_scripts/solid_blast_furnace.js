@@ -1,22 +1,10 @@
-ServerEvents.tags('item', event => {
-    event.add('kubejs:sbf_fuels', [
-        'minecraft:coal', 
-        'gtceu:coke_gem', 
-        'minecraft:charcoal', 
-        'gtceu:charcoal_dust', 
-        'gtceu:coal_dust',
-        'kubejs:sugar_coke'
-    ])
-})
-
-
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.coke_oven('sugar_coke')
-        .itemOutputs('kubejs:sugar_coke')
-        .outputFluids(Fluid.of('gtceu:creosote', 250))
-        .itemInputs('4x minecraft:sugar_cane')
-        .duration(600)
+        .itemOutputs('minecraft:charcoal')
+        .outputFluids(Fluid.of('gtceu:creosote', 50))
+        .itemInputs('8x minecraft:sugar_cane')
+        .duration(1200)
 
     event.shaped(Item.of('gtceu:solid_blast_furnace'), [
         'HRS',
@@ -31,20 +19,44 @@ ServerEvents.recipes(event => {
         F: '#forge:tools/screwdrivers'
     });
 
-    // Magnetite-Steel
-    event.recipes.gtceu.solid_blast_furnace("magnetite_dust_metallurgy")
-       .itemInputs("6x gtceu:magnetite_dust", "2x gtceu:silicon_dust", "2x #kubejs:sbf_fuels")
-       .itemOutputs("2x minecraft:iron_ingot", "6x gtceu:silicon_dioxide_dust", "2x gtceu:tiny_dark_ashes")
-       .duration(600)
-    event.recipes.gtceu.solid_blast_furnace("steel_from_iron_and_silicon_dioxide")
-       .itemInputs("minecraft:iron_ingot", "3x gtceu:silicon_dioxide_dust", "1x #kubejs:sbf_fuels")
-       .itemOutputs("gtceu:steel_ingot", "gtceu:silicon_dust", "1x gtceu:tiny_dark_ashes")
-       .duration(300)
-
-
-    // Sphalerite-Sulfur
-    event.recipes.gtceu.solid_blast_furnace("sphalerite_metallurgy")
-        .itemInputs("2x gtceu:sphalerite_dust", "4x minecraft:andesite", "1x #kubejs:sbf_fuels")
-        .itemOutputs("12x create:andesite_alloy", "1x gtceu:sulfur_dust", "1x gtceu:tiny_dark_ashes")
-        .duration(200)
+    const fuel = [
+        "gtceu:charcoal_dust",
+        "gtceu:coal_dust",
+        "minecraft:coal",
+        "minecraft:charcoal"
+    ];
+    const goodFuel = [
+        "gtceu:coke_gem",
+        "gtceu:coke_dust"
+    ];
+    fuel.forEach(fuel => {
+        var cutFuel = fuel.slice(fuel.indexOf(":")+1)
+        event.recipes.gtceu.solid_blast_furnace(`silicon_from_silicon_dioxide/${cutFuel}`)
+            .itemInputs("6x gtceu:silicon_dioxide_dust", "4x gtceu:carbon_dust", `2x ${fuel}`)
+            .itemOutputs("2x gtceu:silicon_dust", "2x gtceu:tiny_dark_ash_dust")
+            .duration(1000);
+        event.recipes.gtceu.solid_blast_furnace(`steel_from_magnetite_dust/${cutFuel}`)
+            .itemInputs("7x gtceu:magnetite_dust", "2x gtceu:silicon_dust", `2x ${fuel}`)
+            .itemOutputs("3x gtceu:steel_ingot", "6x gtceu:silicon_dioxide_dust", "2x gtceu:tiny_dark_ash_dust")
+            .duration(1500);
+        event.recipes.gtceu.solid_blast_furnace(`sulfur_from_sphalerite/${cutFuel}`)
+            .itemInputs("2x gtceu:sphalerite_dust", "4x minecraft:andesite", `2x ${fuel}`)
+            .itemOutputs("12x create:andesite_alloy", "1x gtceu:sulfur_dust", "2x gtceu:tiny_dark_ash_dust")
+            .duration(200);
+    });
+    goodFuel.forEach(fuel => {
+        var cutFuel = fuel.slice(fuel.indexOf(":")+1)
+        event.recipes.gtceu.solid_blast_furnace(`silicon_from_silicon_dioxide/${cutFuel}`)
+            .itemInputs("6x gtceu:silicon_dioxide_dust", "4x gtceu:carbon_dust", `2x ${fuel}`)
+            .itemOutputs("2x gtceu:silicon_dust", "2x gtceu:tiny_dark_ash_dust")
+            .duration(750);
+        event.recipes.gtceu.solid_blast_furnace(`steel_from_magnetite_dust/${cutFuel}`)
+            .itemInputs("7x gtceu:magnetite_dust", "2x gtceu:silicon_dust", `2x ${fuel}`)
+            .itemOutputs("3x gtceu:steel_ingot", "6x gtceu:silicon_dioxide_dust", "2x gtceu:tiny_dark_ash_dust")
+            .duration(1125);
+        event.recipes.gtceu.solid_blast_furnace(`sulfur_from_sphalerite/${cutFuel}`)
+            .itemInputs("2x gtceu:sphalerite_dust", "4x minecraft:andesite", `2x ${fuel}`)
+            .itemOutputs("12x create:andesite_alloy", "1x gtceu:sulfur_dust", "2x gtceu:tiny_dark_ash_dust")
+            .duration(150);
+    });
 });
