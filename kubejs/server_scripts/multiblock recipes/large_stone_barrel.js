@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
     ], {
         P: 'minecraft:stone',
         S: 'gtceu:treated_wood_rod',
-        B: 'exdeorum:stone_barrel',
+        B: 'exnihilosequentia:stone_barrel',
         I: 'gtceu:wrought_iron_plate'
     });
 
@@ -32,61 +32,61 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_stone_barrel('cobble_pebbles')
         .inputFluids('minecraft:lava 1', 'minecraft:water 1')
-        .chancedOutput('exdeorum:stone_pebble', 7500, 0)
+        .chancedOutput('exnihilosequentia:stone_pebble', 7500, 0)
         .circuit(0)
         .duration(1);
 
     event.recipes.gtceu.large_stone_barrel('andesite_pebbles')
         .inputFluids('minecraft:lava 1', 'minecraft:water 1')
-        .chancedOutput('exdeorum:andesite_pebble', 7500, 0)
+        .chancedOutput('exnihilosequentia:andesite_pebble', 7500, 0)
         .circuit(1)
         .duration(1);
 
     event.recipes.gtceu.large_stone_barrel('diorite_pebbles')
         .inputFluids('minecraft:lava 1', 'minecraft:water 1')
-        .chancedOutput('exdeorum:diorite_pebble', 7500, 0)
+        .chancedOutput('exnihilosequentia:diorite_pebble', 7500, 0)
         .circuit(2)
         .duration(1);
     
     event.recipes.gtceu.large_stone_barrel('granite_pebbles')
         .inputFluids('minecraft:lava 1', 'minecraft:water 1')
-        .chancedOutput('exdeorum:granite_pebble', 7500, 0)
+        .chancedOutput('exnihilosequentia:granite_pebble', 7500, 0)
         .circuit(3)
         .duration(1);
 
     event.recipes.gtceu.large_stone_barrel('tuff_pebbles')
         .inputFluids('minecraft:lava 1', 'minecraft:water 1')
-        .chancedOutput('exdeorum:tuff_pebble', 7500, 0)
+        .chancedOutput('exnihilosequentia:tuff_pebble', 7500, 0)
         .circuit(7)
         .duration(1);
 
-    // event.recipes.gtceu.large_stone_barrel('dripstone_pebbles')
-    //     .inputFluids('minecraft:lava 1', 'minecraft:water 1')
-    //     .chancedOutput('exdeorum:dripstone_pebble', 7500, 0)
-    //     .circuit(4)
-    //     .duration(1);
+    event.recipes.gtceu.large_stone_barrel('dripstone_pebbles')
+        .inputFluids('minecraft:lava 1', 'minecraft:water 1')
+        .chancedOutput('exnihilosequentia:dripstone_pebble', 7500, 0)
+        .circuit(4)
+        .duration(1);
 
     event.recipes.gtceu.large_stone_barrel('deepslate_pebbles')
         .inputFluids('minecraft:lava 2', 'minecraft:water 2')
-        .chancedOutput('exdeorum:deepslate_pebble', 7500, 0)
+        .chancedOutput('exnihilosequentia:deepslate_pebble', 7500, 0)
         .circuit(5)
         .duration(1);
 
     event.recipes.gtceu.large_stone_barrel('calcite_pebbles')
         .inputFluids('minecraft:lava 1', 'minecraft:water 1')
-        .chancedOutput('exdeorum:calcite_pebble', 7500, 0)
+        .chancedOutput('exnihilosequentia:calcite_pebble', 7500, 0)
         .circuit(6)
         .duration(1);
 
     event.recipes.gtceu.large_stone_barrel('blackstone_pebbles')
-        .inputFluids('minecraft:lava 1', 'exdeorum:witch_water 1')
-        .chancedOutput('exdeorum:blackstone_pebble', 7500, 0)
+        .inputFluids('minecraft:lava 1', 'exnihilosequentia:witch_water 1')
+        .chancedOutput('exnihilosequentia:blackstone_pebble', 7500, 0)
         .circuit(0)
         .duration(1);
 
     event.recipes.gtceu.large_stone_barrel('basalt_pebbles')
-        .inputFluids('minecraft:lava 1', 'exdeorum:witch_water 1')
-        .chancedOutput('exdeorum:basalt_pebble', 7500, 0)
+        .inputFluids('minecraft:lava 1', 'exnihilosequentia:witch_water 1')
+        .chancedOutput('exnihilosequentia:basalt_pebble', 7500, 0)
         .circuit(1)
         .duration(1);
 });

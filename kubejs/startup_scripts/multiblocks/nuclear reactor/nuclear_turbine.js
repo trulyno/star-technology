@@ -12,7 +12,7 @@
 //     event.create('nuclear_turbine', 'multiblock' /*, (holder) => new LargeTurbineMachine(holder, GTValues.HV)*/)
 //         .rotationState(RotationState.NON_Y_AXIS)
 //         .recipeType('nuclear_turbine')
-//         // .recipeModifier((machine, recipe) => LargeTurbineMachine.recipeModifier(machine, recipe), true)
+//         .recipeModifier((machine, recipe) => LargeTurbineMachine.recipeModifier(machine, recipe), true)
 //         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
 //         .pattern(definition => FactoryBlockPattern.start()  
 //             .aisle('  HHH SSS HHH  ', '   H  SES  H   ', '  HHH SSS HHH  ')

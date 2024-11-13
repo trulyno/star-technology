@@ -11,13 +11,14 @@
 		{
 			id: "56B697F3D73D8A5F"
 			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "32777659F80D9947"
 				item: "mysticalagriculture:inferium_essence"
 				type: "item"
 			}]
 			x: -7.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["56B697F3D73D8A5F"]
@@ -29,7 +30,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["01D112D51BBE3D90"]
@@ -41,7 +42,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["56B3C3437ED6767A"]
@@ -53,7 +54,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2E2F3E90BB63363D"]
@@ -77,7 +78,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -5.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["60220FD4C658E3E1"]
@@ -89,95 +90,55 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["56B697F3D73D8A5F"]
+			hide_dependent_lines: true
 			id: "38351B708EBA5528"
 			tasks: [{
 				id: "3CF3FAD2F6AEF981"
 				item: "mysticalagriculture:air_essence"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["38351B708EBA5528"]
-			id: "385CEEDBC47A0A0F"
-			tasks: [{
-				id: "5AC2A76EA7F49C53"
-				item: "mysticalagriculture:air_seeds"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 5.0d
+			x: -1.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["56B697F3D73D8A5F"]
+			hide_dependent_lines: true
 			id: "7A378D0908AE6744"
 			tasks: [{
 				id: "05DE408F90E5074D"
 				item: "mysticalagriculture:earth_essence"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["7A378D0908AE6744"]
-			id: "2B45C53F6AB2810F"
-			tasks: [{
-				id: "7883791A296127EC"
-				item: "mysticalagriculture:earth_seeds"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 5.0d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["56B697F3D73D8A5F"]
+			hide_dependent_lines: true
 			id: "2A51036C7A74D5CC"
 			tasks: [{
 				id: "7B8D4C1EE0A6C08C"
 				item: "mysticalagriculture:water_essence"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2A51036C7A74D5CC"]
-			id: "41BA03A99741E508"
-			tasks: [{
-				id: "66AC3463D2F6E622"
-				item: "mysticalagriculture:water_seeds"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 5.0d
+			x: 1.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["56B697F3D73D8A5F"]
+			hide_dependent_lines: true
 			id: "26874A1DDDAF1CA3"
 			tasks: [{
 				id: "3B43C444CFC17A97"
 				item: "mysticalagriculture:fire_essence"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["26874A1DDDAF1CA3"]
-			id: "346DCE3B88C2DDB8"
-			tasks: [{
-				id: "20EBADAC273FBAE6"
-				item: "mysticalagriculture:fire_seeds"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 5.0d
+			x: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -185,24 +146,14 @@
 				"26874A1DDDAF1CA3"
 				"7A378D0908AE6744"
 			]
+			hide_dependent_lines: true
 			id: "1C7BB73E5BFEF10A"
 			tasks: [{
 				id: "0CF28CD96BFF7AD9"
 				item: "mysticalagriculture:stone_essence"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["1C7BB73E5BFEF10A"]
-			id: "55CF59BFB2BB28DE"
-			tasks: [{
-				id: "2A61255C14BEABE6"
-				item: "mysticalagriculture:stone_seeds"
-				type: "item"
-			}]
-			x: -2.0d
+			x: -2.5d
 			y: 5.0d
 		}
 		{
@@ -211,24 +162,14 @@
 				"26874A1DDDAF1CA3"
 				"7A378D0908AE6744"
 			]
+			hide_dependent_lines: true
 			id: "7FA6CFD5AE681336"
 			tasks: [{
 				id: "639F3E8A8AFCB99B"
 				item: "mysticalagriculture:dirt_essence"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["7FA6CFD5AE681336"]
-			id: "06644953EBA7C9A7"
-			tasks: [{
-				id: "0FD12DD69AD90F4E"
-				item: "mysticalagriculture:dirt_seeds"
-				type: "item"
-			}]
-			x: -1.0d
+			x: 2.5d
 			y: 5.0d
 		}
 		{
@@ -237,24 +178,14 @@
 				"2A51036C7A74D5CC"
 				"7A378D0908AE6744"
 			]
+			hide_dependent_lines: true
 			id: "3A57AB05C754EC43"
 			tasks: [{
 				id: "29AD050AD351DA52"
 				item: "mysticalagriculture:wood_essence"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["3A57AB05C754EC43"]
-			id: "36915C48124FA94A"
-			tasks: [{
-				id: "2FF6D4F164CE5066"
-				item: "mysticalagriculture:wood_seeds"
-				type: "item"
-			}]
-			x: 0.0d
+			x: -0.5d
 			y: 5.0d
 		}
 		{
@@ -268,18 +199,7 @@
 				item: "mysticalagriculture:ice_essence"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["432D9C0395AD8945"]
-			id: "76BD71D5F1C8EA2E"
-			tasks: [{
-				id: "728C86B907DA87E7"
-				item: "mysticalagriculture:ice_seeds"
-				type: "item"
-			}]
-			x: 1.0d
+			x: 1.5d
 			y: 5.0d
 		}
 		{
@@ -287,24 +207,14 @@
 				"3A57AB05C754EC43"
 				"26874A1DDDAF1CA3"
 			]
+			hide_dependent_lines: true
 			id: "00E0A2A6ED4F8A2F"
 			tasks: [{
 				id: "40F9F27B65BA84BE"
 				item: "mysticalagriculture:coal_essence"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["00E0A2A6ED4F8A2F"]
-			id: "168F6C69CB5282F5"
-			tasks: [{
-				id: "32F76FB45C94D58C"
-				item: "mysticalagriculture:coal_seeds"
-				type: "item"
-			}]
-			x: 2.0d
+			x: -1.5d
 			y: 5.0d
 		}
 		{
@@ -313,24 +223,14 @@
 				"38351B708EBA5528"
 				"7FA6CFD5AE681336"
 			]
+			hide_dependent_lines: true
 			id: "433E31BBB73FE3A3"
 			tasks: [{
 				id: "2204775C0735C28E"
 				item: "mysticalagriculture:dye_essence"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["433E31BBB73FE3A3"]
-			id: "5B5052C20E7D9D32"
-			tasks: [{
-				id: "5472C3E3314E1AAA"
-				item: "mysticalagriculture:dye_seeds"
-				type: "item"
-			}]
-			x: 3.0d
+			x: 3.5d
 			y: 5.0d
 		}
 		{
@@ -339,46 +239,26 @@
 				"2A51036C7A74D5CC"
 				"3A57AB05C754EC43"
 			]
+			hide_dependent_lines: true
 			id: "7836ECD05F001FF0"
 			tasks: [{
 				id: "6D0BF9159E2D99CC"
 				item: "mysticalagriculture:nature_essence"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["7836ECD05F001FF0"]
-			id: "6E75A6EF1B04A540"
-			tasks: [{
-				id: "4691BBF7763BE6F2"
-				item: "mysticalagriculture:nature_seeds"
-				type: "item"
-			}]
-			x: 4.0d
+			x: 0.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["7836ECD05F001FF0"]
+			hide_dependent_lines: true
 			id: "3FFF83B44C77414A"
 			tasks: [{
 				id: "595FD27B43A3A68B"
 				item: "mysticalagriculture:life_essence"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["3FFF83B44C77414A"]
-			id: "24CB118EE2193726"
-			tasks: [{
-				id: "3E1C00C61402083C"
-				item: "mysticalagriculture:life_seeds"
-				type: "item"
-			}]
-			x: 5.0d
+			x: 1.0d
 			y: 3.0d
 		}
 		{
@@ -387,25 +267,15 @@
 				"26874A1DDDAF1CA3"
 				"2A51036C7A74D5CC"
 			]
+			hide_dependent_lines: true
 			id: "54FFE44A7DDD84AD"
 			tasks: [{
 				id: "7B69251A302428F4"
 				item: "mysticalagriculture:iron_essence"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["54FFE44A7DDD84AD"]
-			id: "2F89000DBEC3ADFC"
-			tasks: [{
-				id: "44A98A5F4AFDA896"
-				item: "mysticalagriculture:iron_seeds"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 3.0d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -413,6 +283,7 @@
 				"26874A1DDDAF1CA3"
 				"2A51036C7A74D5CC"
 			]
+			hide_dependent_lines: true
 			id: "56A10DA87155CD39"
 			tasks: [{
 				id: "459A0A5388408057"
@@ -420,18 +291,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["56A10DA87155CD39"]
-			id: "153A942AF97DDEEC"
-			tasks: [{
-				id: "525B04D76171BB80"
-				item: "mysticalagriculture:copper_seeds"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -445,43 +305,22 @@
 				item: "mysticalagriculture:tin_essence"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["16B4E2C89C1470DC"]
-			id: "04E705A5EE9FE0CD"
-			tasks: [{
-				id: "19E25F159F8285EA"
-				item: "mysticalagriculture:tin_seeds"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 3.0d
+			x: -3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"00E0A2A6ED4F8A2F"
 				"26874A1DDDAF1CA3"
 			]
+			hide_dependent_lines: true
 			id: "1E1EF797DFA378A5"
 			tasks: [{
 				id: "45CD6ED102CDE59C"
 				item: "mysticalagriculture:diamond_essence"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["1E1EF797DFA378A5"]
-			id: "70DDC8D0811622EF"
-			tasks: [{
-				id: "3622CFF2A8A60CBA"
-				item: "mysticalagriculture:diamond_seeds"
-				type: "item"
-			}]
-			x: 2.0d
+			x: 0.0d
 			y: 3.0d
 		}
 		{
@@ -490,25 +329,15 @@
 				"26874A1DDDAF1CA3"
 				"2A51036C7A74D5CC"
 			]
+			hide_dependent_lines: true
 			id: "1FCC274B027FD50D"
 			tasks: [{
 				id: "5A0BF590770700A5"
 				item: "mysticalagriculture:nickel_essence"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["1FCC274B027FD50D"]
-			id: "4C5B20C2C46E53F8"
-			tasks: [{
-				id: "0DD78BE1E4EA73AA"
-				item: "mysticalagriculture:nickel_seeds"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 3.0d
+			x: -4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -516,25 +345,15 @@
 				"26874A1DDDAF1CA3"
 				"2A51036C7A74D5CC"
 			]
+			hide_dependent_lines: true
 			id: "4AC5675A19FF8A18"
 			tasks: [{
 				id: "6DD37BDCA64317AF"
 				item: "mysticalagriculture:lead_essence"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["4AC5675A19FF8A18"]
-			id: "642174CBD67A80F1"
-			tasks: [{
-				id: "734A6FADB02E35A4"
-				item: "mysticalagriculture:lead_seeds"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 3.0d
+			x: -3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -548,19 +367,8 @@
 				item: "mysticalagriculture:glowstone_essence"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["50AA52F2FFD414D3"]
-			id: "72F5852197B8DBB0"
-			tasks: [{
-				id: "2A06300327AB5E3C"
-				item: "mysticalagriculture:glowstone_seeds"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 3.0d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -568,25 +376,15 @@
 				"26874A1DDDAF1CA3"
 				"433E31BBB73FE3A3"
 			]
+			hide_dependent_lines: true
 			id: "01A1A684A06400DC"
 			tasks: [{
 				id: "1B764A91362F2B8A"
 				item: "mysticalagriculture:sulfur_essence"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["01A1A684A06400DC"]
-			id: "004AA433F615FBEA"
-			tasks: [{
-				id: "2BCEF8E6F1207331"
-				item: "mysticalagriculture:sulfur_seeds"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 3.0d
+			x: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -600,19 +398,8 @@
 				item: "mysticalagriculture:redstone_essence"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["1C8DAB37D3B1ADD9"]
-			id: "6A8A6190AC90E8FF"
-			tasks: [{
-				id: "7AC082C57062F20E"
-				item: "mysticalagriculture:redstone_seeds"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 3.0d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -626,19 +413,8 @@
 				item: "mysticalagriculture:lapis_lazuli_essence"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["41ED6D8F4CBABB03"]
-			id: "24FD7997949FAA19"
-			tasks: [{
-				id: "1028763C14B82515"
-				item: "mysticalagriculture:lapis_lazuli_seeds"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 3.0d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -646,25 +422,15 @@
 				"26874A1DDDAF1CA3"
 				"433E31BBB73FE3A3"
 			]
+			hide_dependent_lines: true
 			id: "5CBCC150F84FDE88"
 			tasks: [{
 				id: "0A72517D7C97EA60"
 				item: "mysticalagriculture:nether_quartz_essence"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["5CBCC150F84FDE88"]
-			id: "0F12A867EDBDA1CC"
-			tasks: [{
-				id: "486F6CFA3049FA20"
-				item: "mysticalagriculture:nether_quartz_seeds"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 3.0d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -672,25 +438,15 @@
 				"26874A1DDDAF1CA3"
 				"433E31BBB73FE3A3"
 			]
+			hide_dependent_lines: true
 			id: "7C550C34DDFDD746"
 			tasks: [{
 				id: "3F4850C3934E7BA9"
 				item: "mysticalagriculture:amethyst_essence"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["7C550C34DDFDD746"]
-			id: "737FB64832B2AA8C"
-			tasks: [{
-				id: "4EF2D80D06E3FDC3"
-				item: "mysticalagriculture:amethyst_seeds"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 3.0d
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -704,19 +460,8 @@
 				item: "mysticalagriculture:gold_essence"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["3630E2354CAE560D"]
-			id: "5CFC944091DF6F3B"
-			tasks: [{
-				id: "5C196EA3CA2FB3DA"
-				item: "mysticalagriculture:gold_seeds"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.0d
+			x: -4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -730,19 +475,8 @@
 				item: "mysticalagriculture:zinc_essence"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["600C68A6B3860141"]
-			id: "4979C88E2561829E"
-			tasks: [{
-				id: "7F4D1B88773FCD93"
-				item: "mysticalagriculture:zinc_seeds"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 3.0d
+			x: -2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3FFF83B44C77414A"]
@@ -752,18 +486,7 @@
 				item: "mysticalagriculture:enderman_essence"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7EBC869AEE92E452"]
-			id: "360E37F33D474DB0"
-			tasks: [{
-				id: "767FDB144616A071"
-				item: "mysticalagriculture:enderman_seeds"
-				type: "item"
-			}]
-			x: 3.0d
+			x: 1.5d
 			y: 1.0d
 		}
 		{
@@ -774,19 +497,8 @@
 				item: "mysticalagriculture:slime_essence"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 2.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["32391FA217887AC5"]
-			id: "02750DCD0BC6DDE0"
-			tasks: [{
-				id: "3148D8A2EA0354FA"
-				item: "mysticalagriculture:slime_seeds"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 1.0d
 		}
 		{
 			dependencies: ["3FFF83B44C77414A"]
@@ -796,18 +508,7 @@
 				item: "mysticalagriculture:prismarine_essence"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["78ADC2FA4F532A03"]
-			id: "640C0E9888421CD2"
-			tasks: [{
-				id: "25019EEA16B96107"
-				item: "mysticalagriculture:prismarine_seeds"
-				type: "item"
-			}]
-			x: 5.0d
+			x: 2.5d
 			y: 1.0d
 		}
 		{
@@ -818,19 +519,8 @@
 				item: "mysticalagriculture:blaze_essence"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["5182004E4AA2B1C3"]
-			id: "13E76790321D27A6"
-			tasks: [{
-				id: "5414E25AB02F3242"
-				item: "mysticalagriculture:blaze_seeds"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -1.0d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3FFF83B44C77414A"]
@@ -840,19 +530,8 @@
 				item: "mysticalagriculture:blizz_essence"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["7BECB788CE6A488A"]
-			id: "2DDC74751128107C"
-			tasks: [{
-				id: "780F372769D2FD85"
-				item: "mysticalagriculture:blizz_seeds"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -1.0d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3FFF83B44C77414A"]
@@ -862,19 +541,8 @@
 				item: "mysticalagriculture:blitz_essence"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["541316BA2C4F2013"]
-			id: "6C801F4256C1B031"
-			tasks: [{
-				id: "77C0FCCFE311A593"
-				item: "mysticalagriculture:blitz_seeds"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -1.0d
+			x: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3FFF83B44C77414A"]
@@ -884,19 +552,8 @@
 				item: "mysticalagriculture:basalz_essence"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["1C69FFC21B256DEE"]
-			id: "3619AA626EFF5BEC"
-			tasks: [{
-				id: "20B33187A9DAB4E8"
-				item: "mysticalagriculture:basalz_seeds"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -1.0d
+			x: 1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -910,18 +567,7 @@
 				item: "mysticalagriculture:emerald_essence"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["35C7A94BECD94748"]
-			id: "1E8640D518AEDE44"
-			tasks: [{
-				id: "413B0C23EB53DAD4"
-				item: "mysticalagriculture:emerald_seeds"
-				type: "item"
-			}]
-			x: -6.0d
+			x: -2.5d
 			y: 1.0d
 		}
 		{
@@ -930,24 +576,14 @@
 				"7C550C34DDFDD746"
 				"1E1EF797DFA378A5"
 			]
+			hide_dependent_lines: true
 			id: "571124D1AC5B3986"
 			tasks: [{
 				id: "43FE7A54FD176262"
 				item: "mysticalagriculture:certus_quartz_essence"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["571124D1AC5B3986"]
-			id: "5DC28107A5BB3490"
-			tasks: [{
-				id: "3654B23730C898B5"
-				item: "mysticalagriculture:certus_quartz_seeds"
-				type: "item"
-			}]
-			x: -5.0d
+			x: 4.5d
 			y: 1.0d
 		}
 		{
@@ -956,24 +592,14 @@
 				"5CBCC150F84FDE88"
 				"433E31BBB73FE3A3"
 			]
+			hide_dependent_lines: true
 			id: "7BB1DEFF61304927"
 			tasks: [{
 				id: "6002788DCB63311A"
 				item: "mysticalagriculture:ruby_essence"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7BB1DEFF61304927"]
-			id: "53F1F15134A32B42"
-			tasks: [{
-				id: "558FCA5DF46B4401"
-				item: "mysticalagriculture:ruby_seeds"
-				type: "item"
-			}]
-			x: -4.0d
+			x: -4.5d
 			y: 1.0d
 		}
 		{
@@ -987,18 +613,7 @@
 				item: "mysticalagriculture:saltpeter_essence"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["45A308BB4D520292"]
-			id: "46E13A9AE01A354D"
-			tasks: [{
-				id: "514698F334FF873F"
-				item: "mysticalagriculture:saltpeter_seeds"
-				type: "item"
-			}]
-			x: -3.0d
+			x: -0.5d
 			y: 1.0d
 		}
 		{
@@ -1006,25 +621,15 @@
 				"7A378D0908AE6744"
 				"1C7BB73E5BFEF10A"
 			]
+			hide_dependent_lines: true
 			id: "102CF32B6FB093BA"
 			tasks: [{
 				id: "1B6ED1626CA0762F"
 				item: "mysticalagriculture:salts_essence"
 				type: "item"
 			}]
-			x: -2.0d
+			x: 0.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["102CF32B6FB093BA"]
-			id: "2D0F1085216ACF84"
-			tasks: [{
-				id: "4F62F8F39C2237C5"
-				item: "mysticalagriculture:salts_seeds"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1032,25 +637,15 @@
 				"54FFE44A7DDD84AD"
 				"5E7D047B235A9B34"
 			]
+			hide_dependent_lines: true
 			id: "2B7C5B2F9E98F1A0"
 			tasks: [{
 				id: "77DFCDDE63E6E483"
 				item: "mysticalagriculture:garnet_essence"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -4.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["2B7C5B2F9E98F1A0"]
-			id: "7C0872021460599B"
-			tasks: [{
-				id: "3920CCC4D70D6668"
-				item: "mysticalagriculture:garnet_seeds"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1058,25 +653,15 @@
 				"1C7BB73E5BFEF10A"
 				"7A378D0908AE6744"
 			]
+			hide_dependent_lines: true
 			id: "51BA5B19B455D233"
 			tasks: [{
 				id: "440F6F84DEA4A1E2"
 				item: "mysticalagriculture:apatite_essence"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 4.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["51BA5B19B455D233"]
-			id: "0E2CF32F87E0F9E8"
-			tasks: [{
-				id: "5ADB5DFCB5F908EA"
-				item: "mysticalagriculture:apatite_seeds"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 1.0d
 		}
 		{
 			dependencies: ["5E7D047B235A9B34"]
@@ -1086,19 +671,8 @@
 				item: "mysticalagriculture:sapphire_essence"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -2.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["08BBF8D7FDF00425"]
-			id: "12C0BE978489C4B3"
-			tasks: [{
-				id: "53D0D3B18156AC6B"
-				item: "mysticalagriculture:sapphire_seeds"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1106,25 +680,15 @@
 				"26874A1DDDAF1CA3"
 				"5E7D047B235A9B34"
 			]
+			hide_dependent_lines: true
 			id: "2422A707D07866EB"
 			tasks: [{
 				id: "73976D38F83F59D1"
 				item: "mysticalagriculture:topaz_essence"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -3.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["2422A707D07866EB"]
-			id: "3F765A4813009B41"
-			tasks: [{
-				id: "6A962D99BA46C2A3"
-				item: "mysticalagriculture:topaz_seeds"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1141,17 +705,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["58E25CA6B70548D2"]
-			id: "00FBB78EA65BB9D1"
-			tasks: [{
-				id: "4BAB82D4EB502C38"
-				item: "mysticalagriculture:realgar_seeds"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 1.0d
-		}
-		{
 			dependencies: [
 				"102CF32B6FB093BA"
 				"5E7D047B235A9B34"
@@ -1162,23 +715,12 @@
 				item: "mysticalagriculture:lepidolite_essence"
 				type: "item"
 			}]
-			x: 7.0d
+			x: -5.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3F96EFD86E1A78A1"]
-			id: "79539019391712FC"
-			tasks: [{
-				id: "6F0E1E57E7A85D1D"
-				item: "mysticalagriculture:lepidolite_seeds"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 1.0d
-		}
-		{
 			dependencies: [
-				"5B5052C20E7D9D32"
+				"433E31BBB73FE3A3"
 				"7A378D0908AE6744"
 				"1C7BB73E5BFEF10A"
 			]
@@ -1188,19 +730,8 @@
 				item: "mysticalagriculture:cobaltite_essence"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 5.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["0BD41DC3D4D5F5BB"]
-			id: "77A47BCB2DF24C1C"
-			tasks: [{
-				id: "09695C917F730383"
-				item: "mysticalagriculture:cobaltite_seeds"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 1.0d
 		}
 		{
 			dependencies: ["51BA5B19B455D233"]
@@ -1210,19 +741,8 @@
 				item: "mysticalagriculture:monazite_essence"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["5E63356573257FCC"]
-			id: "14C874E5CC08E4A5"
-			tasks: [{
-				id: "0DEB29C5DD1F4A5F"
-				item: "mysticalagriculture:monazite_seeds"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -1.0d
+			x: 5.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1230,24 +750,14 @@
 				"01A1A684A06400DC"
 				"1C7BB73E5BFEF10A"
 			]
+			hide_dependent_lines: true
 			id: "5C70FDF9640E2376"
 			tasks: [{
 				id: "5DBCB633EA640CC7"
 				item: "mysticalagriculture:antimony_essence"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5C70FDF9640E2376"]
-			id: "38966A0D15DB7152"
-			tasks: [{
-				id: "00F0D0FFDDF73926"
-				item: "mysticalagriculture:antimony_seeds"
-				type: "item"
-			}]
-			x: 9.0d
+			x: 5.5d
 			y: 1.0d
 		}
 		{
@@ -1256,24 +766,14 @@
 				"26874A1DDDAF1CA3"
 				"7FA6CFD5AE681336"
 			]
+			hide_dependent_lines: true
 			id: "5E7D047B235A9B34"
 			tasks: [{
 				id: "23F7C73104893557"
 				item: "mysticalagriculture:aluminum_essence"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5E7D047B235A9B34"]
-			id: "5809D0BE5BE246A9"
-			tasks: [{
-				id: "4E15DB542AD6EC87"
-				item: "mysticalagriculture:aluminum_seeds"
-				type: "item"
-			}]
-			x: 10.0d
+			x: -3.5d
 			y: 1.0d
 		}
 		{
@@ -1288,19 +788,8 @@
 				item: "mysticalagriculture:uranium_essence"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2C20C34FF81539D7"]
-			id: "3D5D886DD5F09162"
-			tasks: [{
-				id: "3D9576B4C9642CA1"
-				item: "mysticalagriculture:uranium_seeds"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -1.0d
+			x: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7BB1DEFF61304927"]
@@ -1310,19 +799,8 @@
 				item: "mysticalagriculture:chrome_essence"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["3E5C9F9CCECB2AEC"]
-			id: "102CBB27003502D6"
-			tasks: [{
-				id: "59B1E17094877F90"
-				item: "mysticalagriculture:chrome_seeds"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -1.0d
+			x: 5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1336,19 +814,8 @@
 				item: "mysticalagriculture:molybdenum_essence"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["5E2337F0467FC00C"]
-			id: "46E43D61F73410D3"
-			tasks: [{
-				id: "3B433C4EC30A6197"
-				item: "mysticalagriculture:molybdenum_seeds"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -1.0d
+			x: -3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2142753CCA47D3DE"]
@@ -1358,41 +825,20 @@
 				item: "mysticalagriculture:tantalum_essence"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["07895E684C78C55B"]
-			id: "043ECC1BB7E08430"
-			tasks: [{
-				id: "0D23D304CF801394"
-				item: "mysticalagriculture:tantalum_seeds"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -1.0d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2B7C5B2F9E98F1A0"]
+			hide_dependent_lines: true
 			id: "2142753CCA47D3DE"
 			tasks: [{
 				id: "05D065A64C168AD4"
 				item: "mysticalagriculture:manganese_essence"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2142753CCA47D3DE"]
-			id: "2BDC76B71CF1265C"
-			tasks: [{
-				id: "1AEA5C4E0848EF7A"
-				item: "mysticalagriculture:manganese_seeds"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -1.0d
+			x: 3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1406,19 +852,8 @@
 				item: "mysticalagriculture:platinum_essence"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["4EC15C3BFF40C196"]
-			id: "16B78BD456B900FD"
-			tasks: [{
-				id: "61DBA491F4B73ECF"
-				item: "mysticalagriculture:platinum_seeds"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -1.0d
+			x: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1432,19 +867,8 @@
 				item: "mysticalagriculture:titanium_essence"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["310C3E32A4D433F6"]
-			id: "66053E14781EF819"
-			tasks: [{
-				id: "0EFB9236FCA4320B"
-				item: "mysticalagriculture:titanium_seeds"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -1.0d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1458,19 +882,8 @@
 				item: "mysticalagriculture:caesium_essence"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["5352BCC9385B3CF8"]
-			id: "2F2AFD383AAF353F"
-			tasks: [{
-				id: "5175EB6B4FE52AD5"
-				item: "mysticalagriculture:caesium_seeds"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -1.0d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1484,19 +897,8 @@
 				item: "mysticalagriculture:cerium_essence"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["6ED859669AA81C44"]
-			id: "5C9F54DECA0668E3"
-			tasks: [{
-				id: "162BE87F799E9CCB"
-				item: "mysticalagriculture:cerium_seeds"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -1.0d
+			x: -4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["56A10DA87155CD39"]
@@ -1506,19 +908,8 @@
 				item: "mysticalagriculture:chalcopyrite_essence"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["13776F374B1DE1F8"]
-			id: "41C3B64CFA4A61BE"
-			tasks: [{
-				id: "3A26E0DE4C376F4C"
-				item: "mysticalagriculture:chalcopyrite_seeds"
-				type: "item"
-			}]
-			x: 8.0d
-			y: -1.0d
+			x: 4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1532,41 +923,20 @@
 				item: "mysticalagriculture:niobium_essence"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["611127A958068922"]
-			id: "0B4AA43FA32AC856"
-			tasks: [{
-				id: "48F8CD88ABBE0559"
-				item: "mysticalagriculture:niobium_seeds"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -1.0d
+			x: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6823588331374DE5"]
+			hide_dependent_lines: true
 			id: "4E577EF028A1E249"
 			tasks: [{
 				id: "7F47A1FAA7CC3529"
 				item: "mysticalagriculture:tungsten_essence"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["4E577EF028A1E249"]
-			id: "31DE198C2221F384"
-			tasks: [{
-				id: "358CD3E700CAFAA4"
-				item: "mysticalagriculture:tungsten_seeds"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -3.0d
+			x: 0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -1574,25 +944,15 @@
 				"5CBCC150F84FDE88"
 				"1C7BB73E5BFEF10A"
 			]
+			hide_dependent_lines: true
 			id: "6823588331374DE5"
 			tasks: [{
 				id: "62142F7F9BCD9D6D"
 				item: "mysticalagriculture:barium_essence"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.5d
 			y: -4.0d
-		}
-		{
-			dependencies: ["6823588331374DE5"]
-			id: "24E052E212417D33"
-			tasks: [{
-				id: "7A182614380C6B08"
-				item: "mysticalagriculture:barium_seeds"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -3.0d
 		}
 		{
 			dependencies: ["4E577EF028A1E249"]
@@ -1602,19 +962,8 @@
 				item: "mysticalagriculture:naquadah_essence"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["68C8A39BA0B446E2"]
-			id: "4D1F5B8D6AA24DCD"
-			tasks: [{
-				id: "7087A6E87DC2562A"
-				item: "mysticalagriculture:naquadah_seeds"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -5.0d
+			x: 0.5d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -1628,19 +977,8 @@
 				item: "mysticalagriculture:silver_essence"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["3833C5B31BFDB229"]
-			id: "15B72324F0BFB4E3"
-			tasks: [{
-				id: "7044AF8C09A3CD1D"
-				item: "mysticalagriculture:silver_seeds"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 3.0d
+			x: -2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1655,11 +993,14 @@
 				title: "12-Crown-4 (Li)"
 				type: "checkmark"
 			}]
-			x: -8.0d
+			x: -9.0d
 			y: 1.0d
 		}
 		{
-			dependencies: ["52B4ECEDABA275E0"]
+			dependencies: [
+				"52B4ECEDABA275E0"
+				"6D9D31BEE724E7F2"
+			]
 			icon: "gtceu:15_crown_5_na_bucket"
 			id: "5BA4AA05957C3680"
 			shape: "hexagon"
@@ -1668,11 +1009,14 @@
 				title: "15-Crown-5 (Na)"
 				type: "checkmark"
 			}]
-			x: -8.0d
+			x: -9.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["1BE177A3432F9704"]
+			dependencies: [
+				"1BE177A3432F9704"
+				"09B67D709C612B3A"
+			]
 			icon: "gtceu:18_crown_6_k_bucket"
 			id: "0305CA2E461A29ED"
 			shape: "hexagon"
@@ -1681,8 +1025,8 @@
 				title: "18-Crown-6 (K)"
 				type: "checkmark"
 			}]
-			x: -8.0d
-			y: -2.0d
+			x: -9.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1696,7 +1040,7 @@
 				title: "12-Crown-4"
 				type: "checkmark"
 			}]
-			x: -10.0d
+			x: -10.5d
 			y: 1.0d
 		}
 		{
@@ -1711,7 +1055,7 @@
 				title: "15-Crown-5"
 				type: "checkmark"
 			}]
-			x: -10.0d
+			x: -10.5d
 			y: 0.0d
 		}
 		{
@@ -1727,33 +1071,34 @@
 				title: "18-Crown-6"
 				type: "checkmark"
 			}]
-			x: -10.0d
-			y: -2.0d
+			x: -10.5d
+			y: -1.0d
 		}
 		{
-			dependencies: [
-				"6D9D31BEE724E7F2"
-				"5BA4AA05957C3680"
-			]
+			dependencies: ["7FB28453EDD67A57"]
+			dependency_requirement: "one_completed"
+			hide_dependent_lines: true
 			id: "47E764421365FF63"
 			tasks: [{
 				id: "0E90B5A1E37E63B8"
 				item: "gtceu:lithium_perchlorate_dust"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 0.0d
+			x: -12.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7FB28453EDD67A57"]
+			dependency_requirement: "one_completed"
+			hide_dependent_lines: true
 			id: "6D9D31BEE724E7F2"
 			tasks: [{
 				id: "340CD89384FEFC65"
 				item: "gtceu:sodium_perchlorate_dust"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -1.0d
+			x: -10.5d
+			y: 2.5d
 		}
 		{
 			id: "7FB28453EDD67A57"
@@ -1762,8 +1107,8 @@
 				item: "gtceu:sodium_chlorate_dust"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -1.0d
+			x: -12.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6F8B3F5A095B6D14"]
@@ -1786,7 +1131,7 @@
 				title: "Diethylene Glycol"
 				type: "checkmark"
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: 0.0d
 		}
 		{
@@ -1798,7 +1143,7 @@
 				title: "Ethylene Glycol"
 				type: "checkmark"
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: 1.0d
 		}
 		{
@@ -1809,8 +1154,8 @@
 				title: "Ethylene Oxide"
 				type: "checkmark"
 			}]
-			x: -12.0d
-			y: 1.0d
+			x: -13.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1824,7 +1169,7 @@
 				title: "Triglycol Dichloride"
 				type: "checkmark"
 			}]
-			x: -10.0d
+			x: -12.0d
 			y: -1.0d
 		}
 		{
@@ -1836,7 +1181,7 @@
 				title: "Sulfuryl Chloride"
 				type: "checkmark"
 			}]
-			x: -11.0d
+			x: -13.5d
 			y: -1.0d
 		}
 		{
@@ -1847,7 +1192,7 @@
 				title: "Sulfur Dichloride"
 				type: "checkmark"
 			}]
-			x: -12.0d
+			x: -15.0d
 			y: -1.0d
 		}
 		{
@@ -1858,8 +1203,8 @@
 				title: "Thionyl Chloride"
 				type: "checkmark"
 			}]
-			x: -12.0d
-			y: -5.0d
+			x: -15.0d
+			y: -4.0d
 		}
 		{
 			icon: "gtceu:toluene_bucket"
@@ -1869,8 +1214,8 @@
 				title: "Toluene"
 				type: "checkmark"
 			}]
-			x: -12.0d
-			y: -4.0d
+			x: -15.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1883,8 +1228,8 @@
 				item: "gtceu:4_toluenesulfonyl_chloride_dust"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -4.0d
+			x: -13.5d
+			y: -3.0d
 		}
 		{
 			id: "70848C5FEC0ACB9D"
@@ -1893,8 +1238,8 @@
 				item: "gtceu:potassium_hydroxide_dust"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -3.0d
+			x: -10.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1908,8 +1253,8 @@
 				item: "gtceu:triethylene_glycol_ditosylate_dust"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -4.0d
+			x: -12.0d
+			y: -3.0d
 		}
 		{
 			id: "14835CC7EAFEFD41"
@@ -1918,8 +1263,8 @@
 				item: "gtceu:soda_ash_dust"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -6.0d
+			x: -12.0d
+			y: -5.0d
 		}
 		{
 			id: "4D227ECFC561C524"
@@ -1928,8 +1273,8 @@
 				item: "gtceu:sodium_azide_dust"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -6.0d
+			x: -15.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -1942,8 +1287,8 @@
 				item: "gtceu:triethylene_glycol_diazide_dust"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -5.0d
+			x: -13.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1FBBE8D45D0A6105"]
@@ -1953,8 +1298,8 @@
 				item: "gtceu:triethylene_glycol_diamine_dust"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -5.0d
+			x: -12.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -1969,11 +1314,14 @@
 				title: "2.2.2-Cryptand"
 				type: "checkmark"
 			}]
-			x: -9.0d
-			y: -5.0d
+			x: -10.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["6248DA726DD737E9"]
+			dependencies: [
+				"6248DA726DD737E9"
+				"47E764421365FF63"
+			]
 			icon: "gtceu:cryptand_li_bucket"
 			id: "5CD6970DA4F94C3B"
 			shape: "hexagon"
@@ -1982,11 +1330,14 @@
 				title: "2.2.2-Cryptand (Li)"
 				type: "checkmark"
 			}]
-			x: -8.0d
-			y: -6.0d
+			x: -9.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["6248DA726DD737E9"]
+			dependencies: [
+				"6248DA726DD737E9"
+				"6D9D31BEE724E7F2"
+			]
 			icon: "gtceu:cryptand_na_bucket"
 			id: "4DD1697CC78CC83C"
 			shape: "hexagon"
@@ -1995,11 +1346,14 @@
 				title: "2.2.2-Cryptand (Na)"
 				type: "checkmark"
 			}]
-			x: -8.0d
+			x: -9.0d
 			y: -5.0d
 		}
 		{
-			dependencies: ["6248DA726DD737E9"]
+			dependencies: [
+				"6248DA726DD737E9"
+				"09B67D709C612B3A"
+			]
 			icon: "gtceu:cryptand_k_bucket"
 			id: "182B1B1A1DFEF069"
 			shape: "hexagon"
@@ -2008,7 +1362,7 @@
 				title: "2.2.2-Cryptand (K)"
 				type: "checkmark"
 			}]
-			x: -8.0d
+			x: -9.0d
 			y: -4.0d
 		}
 		{
@@ -2019,8 +1373,8 @@
 				item: "gtceu:essence_replicator"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: -12.5d
+			y: -8.0d
 		}
 		{
 			id: "63A83F8EC256BE94"
@@ -2030,31 +1384,144 @@
 				item: "gtceu:essence_enchancer"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -4.0d
+			x: -11.5d
+			y: -8.0d
 		}
 		{
 			id: "39189DA37201FB2D"
 			shape: "rsquare"
 			tasks: [{
-				id: "167E2FEBD757F0B0"
-				item: "gtceu:lv_mystical_greenhouse"
+				id: "7B6AA0A208BA5F87"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Mystical Greenhouses\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_mystical_greenhouse"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_mystical_greenhouse"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_mystical_greenhouse"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_mystical_greenhouse"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_mystical_greenhouse"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_mystical_greenhouse"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_mystical_greenhouse"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_mystical_greenhouse"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: -5.0d
+			title: "Mystical Greenhouse"
+			x: -11.5d
+			y: -7.0d
 		}
 		{
 			id: "1DEE4153C7FBD7AC"
 			shape: "rsquare"
 			tasks: [{
-				id: "7A835634AF94BC0F"
-				item: "gtceu:lv_essence_burner"
+				id: "5399FC263D894E2B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Essence Burners\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_essence_burner"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_essence_burner"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_essence_burner"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_essence_burner"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_essence_burner"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_essence_burner"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_essence_burner"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_essence_burner"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: -5.0d
+			title: "Essence Burning"
+			x: -12.5d
+			y: -7.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "09B67D709C612B3A"
+			tasks: [{
+				id: "1F272826D7253CCA"
+				item: "gtceu:rock_salt_dust"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"47E764421365FF63"
+				"6D9D31BEE724E7F2"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Both Lithium Persulfate Dust and Sodium Persulfate Dust can be additionally required by using the opposing liquid allowing you to recycle the catalyst infinately as long as the respective Lithium/Sodium is available."]
+			id: "31FE488A7302A0D2"
+			tasks: [{
+				id: "39AAE923E4183A6D"
+				title: "MA Chemical Looping"
+				type: "checkmark"
+			}]
+			x: -10.5d
+			y: 4.0d
 		}
 	]
-	title: "Mystical Agriculture (gregified)"
+	title: "Mystical Agriculture Gregified"
 }

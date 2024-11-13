@@ -26,32 +26,32 @@ ServerEvents.recipes(event => {
         .EUt(5200);
 
     event.recipes.gtceu.assembler('flint_mesh')
-        .itemInputs('exdeorum:string_mesh', '6x minecraft:flint')
-        .itemOutputs('exdeorum:flint_mesh')
+        .itemInputs('exnihilosequentia:string_mesh', '6x minecraft:flint')
+        .itemOutputs('exnihilosequentia:flint_mesh')
         .duration(300)
         .EUt(22);
 
     event.recipes.gtceu.assembler('iron_mesh')
-        .itemInputs('exdeorum:flint_mesh', '16x gtceu:wrought_iron_foil')
-        .itemOutputs('exdeorum:iron_mesh')
+        .itemInputs('exnihilosequentia:flint_mesh', '16x gtceu:wrought_iron_foil')
+        .itemOutputs('exnihilosequentia:iron_mesh')
         .duration(300)
         .EUt(78);
 
-    event.recipes.gtceu.assembler('golden_mesh')
-        .itemInputs('exdeorum:iron_mesh', '16x #forge:dusts/diamond')
-        .itemOutputs('exdeorum:golden_mesh')
+    event.recipes.gtceu.assembler('diamond_mesh')
+        .itemInputs('exnihilosequentia:iron_mesh', '16x #forge:dusts/diamond')
+        .itemOutputs('exnihilosequentia:diamond_mesh')
         .duration(300)
         .EUt(345);
 
-    event.recipes.gtceu.assembler('diamond_mesh')
-        .itemInputs('exdeorum:golden_mesh', '16x #forge:dusts/emerald')
-        .itemOutputs('exdeorum:diamond_mesh')
+    event.recipes.gtceu.assembler('emerald_mesh')
+        .itemInputs('exnihilosequentia:diamond_mesh', '16x #forge:dusts/emerald')
+        .itemOutputs('exnihilosequentia:emerald_mesh')
         .duration(300)
         .EUt(1024);
 
     event.recipes.gtceu.assembler('netherite_mesh')
-        .itemInputs('exdeorum:diamond_mesh', '4x minecraft:netherite_ingot')
-        .itemOutputs('exdeorum:netherite_mesh')
+        .itemInputs('exnihilosequentia:emerald_mesh', '4x minecraft:netherite_ingot')
+        .itemOutputs('exnihilosequentia:netherite_mesh')
         .duration(300)
         .EUt(4096);
 
@@ -63,13 +63,13 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.forge_hammer('sand_to_dust')
         .itemInputs('minecraft:sand')
-        .itemOutputs('exdeorum:dust')
+        .itemOutputs('exnihilosequentia:dust')
         .duration(10)
         .EUt(16);
 
     event.recipes.gtceu.macerator('crushed_blackstone')
         .itemInputs('minecraft:blackstone')
-        .itemOutputs('exdeorum:crushed_blackstone')
+        .itemOutputs('exnihilosequentia:crushed_blackstone')
         .duration(10)
         .EUt(8);
 

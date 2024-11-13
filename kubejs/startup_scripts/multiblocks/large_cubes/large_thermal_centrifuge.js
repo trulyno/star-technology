@@ -17,5 +17,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.air())
             .build())
         .workableCasingRenderer("kubejs:block/casings/silicon_bronze_casing",
-        "gtceu:block/multiblock/electric_blast_furnace", false);
+        "gtceu:block/machines/thermal_centrifuge", false);
 });

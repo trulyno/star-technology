@@ -25,5 +25,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.air())
             .build())
         .workableCasingRenderer("minecraft:block/stone",
-        "gtceu:block/multiblock/coke_oven", false);
+        "kubejs:block/multiblock/primitive_blast_furnace", false);
 });

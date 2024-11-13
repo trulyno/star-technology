@@ -1,0 +1,26 @@
+# Ignore eveything so repository can be used in game instance
+/*
+
+# Add directories with soure code
+!/config/
+!/defaultconfigs/
+!/kubejs/
+!/mods/panorama/
+!/scripts/
+
+/config/jei/world/
+/config/worldedit/
+
+# Block these specific files (why does this not work aAHAHHHAHHHHH)
+/config/embeddium-fingerprint.json
+/config/embeddium-options.json
+/config/embeddium++.toml
+/config/fml.toml
+/config/jei/recipe-category-sort-order.init
+/config/oculus.properties
+
+# Add files in main directory
+!LICENSE
+!README.md
+!panorama.dat
+!.gitignore

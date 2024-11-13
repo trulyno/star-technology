@@ -65,22 +65,22 @@ StartupEvents.registry('item', event => {
 
     event.create('lv_upgrade_kit')
         .displayName('LV Upgrade Kit')
-        .tooltip("Augment for dynamos, energy cells, fluid cells adn other Thermal Series machines")
+        .tooltip("Augment for dynamos, energy cells, fluid cells and other Thermal Series machines")
         .texture('kubejs:item/lv_upgrade_kit');
 
     event.create('mv_upgrade_kit')
         .displayName('MV Upgrade Kit')
-        .tooltip("Augment for dynamos, energy cells, fluid cells adn other Thermal Series machines")
+        .tooltip("Augment for dynamos, energy cells, fluid cells and other Thermal Series machines")
         .texture('kubejs:item/mv_upgrade_kit');
 
     event.create('hv_upgrade_kit')
         .displayName('HV Upgrade Kit')
-        .tooltip("Augment for dynamos, energy cells, fluid cells adn other Thermal Series machines")
+        .tooltip("Augment for dynamos, energy cells, fluid cells and other Thermal Series machines")
         .texture('kubejs:item/hv_upgrade_kit');
 
     event.create('ev_upgrade_kit')
         .displayName('EV Upgrade Kit')
-        .tooltip("Augment for dynamos, energy cells, fluid cells adn other Thermal Series machines")
+        .tooltip("Augment for dynamos, energy cells, fluid cells and other Thermal Series machines")
         .texture('kubejs:item/ev_upgrade_kit');
 
     event.create('lv_arc_kit')

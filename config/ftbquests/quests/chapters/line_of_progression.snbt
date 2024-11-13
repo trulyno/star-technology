@@ -171,7 +171,7 @@
 			y: -17.0d
 		}
 		{
-			icon: "exdeorum:string_mesh"
+			icon: "exnihilosequentia:string_mesh"
 			id: "206F61D1A0C2C729"
 			linked_quest: "26D3E2C0599B43B2"
 			title: "String Mesh"
@@ -335,12 +335,6 @@
 			y: -29.5d
 		}
 		{
-			id: "1FD8F110F69697CB"
-			linked_quest: "3E1CA9FFB9953F42"
-			x: -18.0d
-			y: -29.5d
-		}
-		{
 			id: "2A2B52C80535703B"
 			linked_quest: "1EE4E8301E0FD1C7"
 			x: -18.0d
@@ -450,7 +444,7 @@
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
-			icon: "exdeorum:dust"
+			icon: "exnihilosequentia:dust"
 			id: "0A428EB5B9A7FDB2"
 			tasks: [
 				{
@@ -480,7 +474,7 @@
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
-			icon: "exdeorum:crushed_blackstone"
+			icon: "exnihilosequentia:crushed_blackstone"
 			id: "4B254D95C1CE1400"
 			tasks: [
 				{
@@ -600,7 +594,7 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			icon: "exdeorum:dust"
+			icon: "exnihilosequentia:dust"
 			id: "434F70C2D8F6C8AE"
 			tasks: [{
 				id: "4E39610E6E361B18"
@@ -613,7 +607,7 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			icon: "exdeorum:crushed_blackstone"
+			icon: "exnihilosequentia:crushed_blackstone"
 			id: "3243C24ECB7A8F7C"
 			tasks: [
 				{
@@ -708,7 +702,7 @@
 		}
 		{
 			dependencies: ["6D35986F79B17912"]
-			icon: "exdeorum:crushed_blackstone"
+			icon: "exnihilosequentia:crushed_blackstone"
 			id: "58D75D2CC4D64870"
 			tasks: [
 				{
@@ -758,7 +752,7 @@
 		}
 		{
 			dependencies: ["7014892C27EC22B7"]
-			icon: "exdeorum:crushed_blackstone"
+			icon: "exnihilosequentia:crushed_blackstone"
 			id: "6B695D3B2E2B1D73"
 			tasks: [
 				{
@@ -804,7 +798,7 @@
 		}
 		{
 			dependencies: ["6EF7F39B52B77535"]
-			icon: "exdeorum:crushed_blackstone"
+			icon: "exnihilosequentia:crushed_blackstone"
 			id: "417A0E744EC808D5"
 			tasks: [
 				{
@@ -829,7 +823,7 @@
 		}
 		{
 			dependencies: ["3D3E637BCB06115F"]
-			icon: "exdeorum:dust"
+			icon: "exnihilosequentia:dust"
 			id: "5E8847ECC9663B38"
 			tasks: [{
 				id: "2E72EEED6536CAC7"
@@ -842,7 +836,7 @@
 		}
 		{
 			dependencies: ["3D3E637BCB06115F"]
-			icon: "exdeorum:crushed_blackstone"
+			icon: "exnihilosequentia:crushed_blackstone"
 			id: "285824011BF65A01"
 			tasks: [{
 				id: "270E8419A06F1172"
@@ -1017,9 +1011,8 @@
 			dependencies: ["664E782C6A24D9F1"]
 			id: "49A3D4B23D3A7D13"
 			tasks: [{
-				count: 2L
 				id: "72498B3E8CEF5049"
-				item: { Count: 2, id: "gtceu:large_packer" }
+				item: "gtceu:large_packer"
 				type: "item"
 			}]
 			x: -6.0d
@@ -1359,6 +1352,7 @@
 			y: -20.0d
 		}
 		{
+			dependencies: ["4B51B15B49620F57"]
 			id: "3953F99FD9B7CB61"
 			tasks: [{
 				id: "6E7C9CDE540B69E8"
@@ -1686,6 +1680,18 @@
 			}]
 			x: -9.5d
 			y: -23.5d
+		}
+		{
+			dependencies: ["3E1CA9FFB9953F42"]
+			disable_toast: true
+			id: "4640656DC355D2F1"
+			tasks: [{
+				id: "2434D2E99E39F08E"
+				item: "gtceu:chemical_plant"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -29.5d
 		}
 	]
 	title: "Line Of Progression"

@@ -17,8 +17,8 @@
 				item: "thermal:dynamo_stirling"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.5d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["614071EB90CB89F5"]
@@ -29,8 +29,8 @@
 				item: "thermal:dynamo_lapidary"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 0.5d
+			x: -0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["614071EB90CB89F5"]
@@ -53,8 +53,8 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 0.5d
+			x: -5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6952D4FF38BE8183"]
@@ -65,8 +65,8 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.5d
+			x: -6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3EFA6C0507041E4C"]
@@ -77,8 +77,8 @@
 				item: "mysticalagradditions:inferium_coal"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.5d
+			x: -7.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3CF055943BFD3CD1"]
@@ -89,8 +89,8 @@
 				item: "mysticalagradditions:prudentium_coal"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 0.5d
+			x: -8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5F4670FBF12F4E85"]
@@ -102,7 +102,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1EC33A1B699E013C"]
@@ -114,7 +114,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["14DA2BDED60BD66C"]
@@ -126,7 +126,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["365B7388D4BDC328"]
@@ -138,7 +138,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["092ACDF732CE78F0"]
@@ -149,8 +149,8 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.5d
+			x: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7910F6A8087A9E85"]
@@ -162,8 +162,8 @@
 				item: "thermal_extra:refined_sunflower_oil_bucket"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 1.5d
+			x: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0F70A4555874E56E"]
@@ -174,8 +174,8 @@
 				item: "gtceu:bio_diesel_bucket"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 1.5d
+			x: -5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["28FB566FC1E35413"]
@@ -186,8 +186,8 @@
 				item: "thermal:refined_fuel_bucket"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 1.5d
+			x: -6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7242D13C6F27BECB"]
@@ -198,8 +198,8 @@
 				item: "gtceu:diesel_bucket"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 1.5d
+			x: -7.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0C81D0F1D42C092B"]
@@ -211,7 +211,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7E508B071C59EB73"]
@@ -223,7 +223,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["285392E7B24481C3"]
@@ -235,7 +235,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["614071EB90CB89F5"]
@@ -647,7 +647,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["38B3A7FC309E12E2"]
@@ -659,7 +659,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["38B3A7FC309E12E2"]
@@ -671,7 +671,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["38B3A7FC309E12E2"]
@@ -683,7 +683,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["7B0133D388101F68"]
@@ -696,7 +696,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -712,7 +712,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -728,7 +728,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -744,7 +744,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -760,7 +760,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -776,7 +776,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5B72F7526494EAEC"]
@@ -789,7 +789,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -805,7 +805,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -821,7 +821,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -837,7 +837,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -853,7 +853,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -869,7 +869,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["53A9F3758C218CDC"]
@@ -887,8 +887,8 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: 3.0d
+			x: 3.5d
+			y: 0.5d
 		}
 		{
 			id: "3DB836585182F614"
@@ -897,7 +897,7 @@
 				item: "kubejs:basic_energy_core"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: -6.0d
 		}
 		{
@@ -908,7 +908,7 @@
 				item: "kubejs:regular_energy_core"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: -5.0d
 		}
 		{
@@ -919,7 +919,7 @@
 				item: "kubejs:intermediate_energy_core"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: -4.0d
 		}
 		{
@@ -930,7 +930,7 @@
 				item: "kubejs:advanced_energy_core"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: -3.0d
 		}
 		{
@@ -941,7 +941,7 @@
 				item: "kubejs:elite_energy_core"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: -2.0d
 		}
 		{
@@ -952,7 +952,7 @@
 				item: "kubejs:ultimate_energy_core"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: -1.0d
 		}
 		{
@@ -1029,7 +1029,7 @@
 				item: "solarflux:sp_1"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: -6.0d
 		}
 		{
@@ -1040,7 +1040,7 @@
 				item: "solarflux:sp_2"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: -5.0d
 		}
 		{
@@ -1051,7 +1051,7 @@
 				item: "solarflux:sp_3"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: -4.0d
 		}
 		{
@@ -1062,7 +1062,7 @@
 				item: "solarflux:sp_4"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: -3.0d
 		}
 		{
@@ -1073,7 +1073,7 @@
 				item: "solarflux:sp_5"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: -2.0d
 		}
 		{
@@ -1084,7 +1084,7 @@
 				item: "solarflux:sp_6"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: -1.0d
 		}
 		{
@@ -1097,7 +1097,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3D7D8957CA87BD5B"]
@@ -1109,7 +1109,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["491BF8666FA2A7EF"]
@@ -1121,7 +1121,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["78B1A1CA6A212782"]
@@ -1133,7 +1133,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["236E72B65F673929"]
@@ -1145,7 +1145,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["78D71074F1F5968D"]
@@ -1157,7 +1157,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["163EBD85D51E8A69"]
@@ -1169,7 +1169,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["60ABC9DCF52162F4"]
@@ -1181,7 +1181,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4ECCE25882A4F0CF"]
@@ -1193,7 +1193,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["70A1DC9EE2DE8423"]
@@ -1205,7 +1205,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["30280927DB01667B"]
@@ -1217,7 +1217,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["55B9847036689E7A"]
@@ -1229,7 +1229,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["029793B32E3D59C6"]
@@ -1241,7 +1241,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["687FD96782794F52"]
@@ -1253,7 +1253,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["540B9FC923867850"]
@@ -1265,7 +1265,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -1365,8 +1365,31 @@
 				}
 			]
 			title: "Diatrons"
-			x: 1.0d
-			y: 0.5d
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["723224D36C88ACA9"]
+			description: ["The last 2 Solar Panels are merely compressed variants of the previous ones, to allow for more compact solar setups"]
+			id: "2D9EFD27A3C32062"
+			tasks: [{
+				id: "4C72E978BB38D646"
+				item: "solarflux:sp_7"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D9EFD27A3C32062"]
+			id: "1F83DC0B3C633298"
+			tasks: [{
+				id: "7222356ABCE66FCC"
+				item: "solarflux:sp_8"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
 		}
 	]
 	title: "Power"

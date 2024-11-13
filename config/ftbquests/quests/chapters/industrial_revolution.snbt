@@ -294,7 +294,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "36F3F8DD14E01A1C"
-				item: "exdeorum:flint_mesh"
+				item: "exnihilosequentia:flint_mesh"
 				type: "item"
 			}]
 			x: -0.5d
@@ -1231,7 +1231,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "6408A4D29DB3C957"
-				item: "exdeorum:iron_mesh"
+				item: "exnihilosequentia:iron_mesh"
 				type: "item"
 			}]
 			x: 9.5d
@@ -1338,18 +1338,27 @@
 				"56BA79287C4DBE52"
 				"0A03B4D352DCF148"
 			]
-			description: ["Your first Hot Ingot. And because the quest devs are so nice, you get to hold it."]
+			description: ["Your first Hot Ingot. And because the quest devs are so nice, and listened to Coooleen, you don't have to hold it."]
+			icon: "gtceu:hot_kanthal_ingot"
 			id: "7A9839144373C80D"
 			rewards: [{
 				id: "123D34BFA3D2CC82"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "18994B62B989B575"
-				item: "gtceu:hot_kanthal_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5B7CA74E5D333B07"
+					title: "Hot Kanthal Ingot"
+					type: "checkmark"
+				}
+				{
+					id: "23BDE4A57B08177F"
+					item: "gtceu:hot_kanthal_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 0.5d
 			y: -0.5d
 		}
@@ -1431,17 +1440,26 @@
 		{
 			dependencies: ["0E61DC74B2E2C962"]
 			description: ["You might also want to cool these through a Chemical Bath till you gain access to the Vacuum Freezer."]
+			icon: "gtceu:hot_silicon_ingot"
 			id: "4783029C26DC0368"
 			rewards: [{
 				id: "371125EA2779CE55"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "7631C268AE59E7CE"
-				item: "gtceu:hot_silicon_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2D880B939AE8FF0C"
+					title: "Hot Silicon Ingot"
+					type: "checkmark"
+				}
+				{
+					id: "3F1A978EF851D6A3"
+					item: "gtceu:hot_silicon_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 1.5d
 			y: -5.5d
 		}
@@ -1822,6 +1840,99 @@
 			}]
 			x: -8.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["1A9E5F3F6CE13465"]
+			description: ["Physics is wondering how you managed to compress fluids eightfold."]
+			id: "0D2967CEED23950B"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 4
+				id: "4E468F88CD48D5DF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "61CE0F73A6C7541F"
+				item: "gtceu:ev_super_tank"
+				type: "item"
+			}]
+			title: "This isn't right"
+			x: -12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["73125407EA6D21EC"]
+			description: ["Shouldn't you consider voiding items right about now?"]
+			id: "37792694CA384580"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 4
+				id: "2FAAEF289615F8B9"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "7047750E1872E0DC"
+				item: "gtceu:ev_super_chest"
+				type: "item"
+			}]
+			title: "I have a lot of stuff"
+			x: -12.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4783029C26DC0368"]
+			description: ["We made the quests optional, but did you really think we would leave it be just like that?"]
+			id: "69069D8936BFD494"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 4
+				id: "310772D39100E843"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				count: 64L
+				id: "22D553699F5EEC92"
+				item: "gtceu:hot_silicon_ingot"
+				type: "item"
+			}]
+			title: "Burning your fingers"
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["54549EC141659C30"]
+			description: ["A useless item, that has long been forgotten."]
+			id: "6CB8257D07187859"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 4
+				id: "42F10428D8556C04"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "352F3633C9D9F0F8"
+				item: "gtceu:lv_kinetic_mixer"
+				type: "item"
+			}]
+			title: "Why would you make this?"
+			x: -3.5d
+			y: -4.5d
 		}
 	]
 	title: "Industrial Revolution"
