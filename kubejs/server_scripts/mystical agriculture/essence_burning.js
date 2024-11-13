@@ -29,14 +29,14 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.essence_burning('water_essence_burning_2')
         .itemInputs('mysticalagriculture:water_essence')
-        .outputFluids('exdeorum:witch_water 5000')
+        .outputFluids('exnihilosequentia:witch_water 5000')
         .duration(100)
         .EUt(20)
         .circuit(2);
 
     event.recipes.gtceu.essence_burning('water_essence_burning_3')
         .itemInputs('mysticalagriculture:water_essence')
-        .outputFluids('exdeorum:sea_water 5000')
+        .outputFluids('exnihilosequentia:sea_water 5000')
         .duration(100)
         .EUt(20)
         .circuit(3);

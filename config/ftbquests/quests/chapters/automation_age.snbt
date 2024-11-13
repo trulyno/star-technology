@@ -467,7 +467,7 @@
 			}]
 			tasks: [{
 				id: "2AF25CB188374485"
-				item: "exdeorum:golden_mesh"
+				item: "exnihilosequentia:diamond_mesh"
 				type: "item"
 			}]
 			x: 6.5d
@@ -1063,7 +1063,7 @@
 			}]
 			tasks: [{
 				id: "4203DBCF6D0304D2"
-				item: "exdeorum:diamond_mesh"
+				item: "exnihilosequentia:emerald_mesh"
 				type: "item"
 			}]
 			x: 7.5d
@@ -1911,7 +1911,7 @@
 			}]
 			tasks: [{
 				id: "1B6FE12983A94BAA"
-				item: "exdeorum:netherite_mesh"
+				item: "exnihilosequentia:netherite_mesh"
 				type: "item"
 			}]
 			x: 9.5d

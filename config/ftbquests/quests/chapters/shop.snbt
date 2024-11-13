@@ -81,7 +81,7 @@
 			dependencies: ["1F5CCE8CFD02903A"]
 			icon: {
 				Count: 1
-				id: "exdeorum:flint_mesh"
+				id: "exnihilosequentia:flint_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -94,7 +94,7 @@
 				id: "5DC1177B2FF40D0C"
 				item: {
 					Count: 1
-					id: "exdeorum:flint_mesh"
+					id: "exnihilosequentia:flint_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:fortune"
@@ -109,7 +109,7 @@
 				{
 					consume_items: true
 					id: "63A8C927CCB10956"
-					item: "exdeorum:flint_mesh"
+					item: "exnihilosequentia:flint_mesh"
 					type: "item"
 				}
 				{
@@ -784,7 +784,7 @@
 			dependencies: ["26D3E2C0599B43B2"]
 			icon: {
 				Count: 1
-				id: "exdeorum:string_mesh"
+				id: "exnihilosequentia:string_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -797,7 +797,7 @@
 				id: "41FE7F9FA9C83F58"
 				item: {
 					Count: 1
-					id: "exdeorum:string_mesh"
+					id: "exnihilosequentia:string_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:fortune"
@@ -812,7 +812,7 @@
 				{
 					consume_items: true
 					id: "425FD56B90832122"
-					item: "exdeorum:string_mesh"
+					item: "exnihilosequentia:string_mesh"
 					type: "item"
 				}
 				{
@@ -832,7 +832,7 @@
 			dependencies: ["6D35986F79B17912"]
 			icon: {
 				Count: 1
-				id: "exdeorum:iron_mesh"
+				id: "exnihilosequentia:iron_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -845,7 +845,7 @@
 				id: "13F4E860F9C2F73E"
 				item: {
 					Count: 1
-					id: "exdeorum:iron_mesh"
+					id: "exnihilosequentia:iron_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:fortune"
@@ -860,7 +860,7 @@
 				{
 					consume_items: true
 					id: "571859B8DF7EF7D1"
-					item: "exdeorum:iron_mesh"
+					item: "exnihilosequentia:iron_mesh"
 					type: "item"
 				}
 				{
@@ -880,7 +880,7 @@
 			dependencies: ["7014892C27EC22B7"]
 			icon: {
 				Count: 1
-				id: "exdeorum:golden_mesh"
+				id: "exnihilosequentia:diamond_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -893,7 +893,7 @@
 				id: "2659942480796E56"
 				item: {
 					Count: 1
-					id: "exdeorum:golden_mesh"
+					id: "exnihilosequentia:diamond_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:fortune"
@@ -908,7 +908,7 @@
 				{
 					consume_items: true
 					id: "1722F86CFB5F67A1"
-					item: "exdeorum:golden_mesh"
+					item: "exnihilosequentia:diamond_mesh"
 					type: "item"
 				}
 				{
@@ -928,7 +928,7 @@
 			dependencies: ["6EF7F39B52B77535"]
 			icon: {
 				Count: 1
-				id: "exdeorum:diamond_mesh"
+				id: "exnihilosequentia:emerald_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -941,7 +941,7 @@
 				id: "490B36C229E550E0"
 				item: {
 					Count: 1
-					id: "exdeorum:diamond_mesh"
+					id: "exnihilosequentia:emerald_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:fortune"
@@ -956,7 +956,7 @@
 				{
 					consume_items: true
 					id: "797B5286B0C89A8A"
-					item: "exdeorum:diamond_mesh"
+					item: "exnihilosequentia:emerald_mesh"
 					type: "item"
 				}
 				{
@@ -976,7 +976,7 @@
 			dependencies: ["3D3E637BCB06115F"]
 			icon: {
 				Count: 1
-				id: "exdeorum:netherite_mesh"
+				id: "exnihilosequentia:netherite_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -989,7 +989,7 @@
 				id: "3EB06A790DDBA97C"
 				item: {
 					Count: 1
-					id: "exdeorum:netherite_mesh"
+					id: "exnihilosequentia:netherite_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:fortune"
@@ -1004,7 +1004,7 @@
 				{
 					consume_items: true
 					id: "57A7F2FDACA1B964"
-					item: "exdeorum:netherite_mesh"
+					item: "exnihilosequentia:netherite_mesh"
 					type: "item"
 				}
 				{
@@ -1024,7 +1024,7 @@
 			dependencies: ["26D3E2C0599B43B2"]
 			icon: {
 				Count: 1
-				id: "exdeorum:string_mesh"
+				id: "exnihilosequentia:string_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1037,7 +1037,7 @@
 				id: "185E82BDEAD4D6E3"
 				item: {
 					Count: 1
-					id: "exdeorum:string_mesh"
+					id: "exnihilosequentia:string_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:efficiency"
@@ -1052,7 +1052,7 @@
 				{
 					consume_items: true
 					id: "661C89B6A3FEDFCD"
-					item: "exdeorum:string_mesh"
+					item: "exnihilosequentia:string_mesh"
 					type: "item"
 				}
 				{
@@ -1072,7 +1072,7 @@
 			dependencies: ["1F5CCE8CFD02903A"]
 			icon: {
 				Count: 1
-				id: "exdeorum:flint_mesh"
+				id: "exnihilosequentia:flint_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1085,7 +1085,7 @@
 				id: "5080FC4B4BAD15EA"
 				item: {
 					Count: 1
-					id: "exdeorum:flint_mesh"
+					id: "exnihilosequentia:flint_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:efficiency"
@@ -1100,7 +1100,7 @@
 				{
 					consume_items: true
 					id: "7C858C139CF51BFC"
-					item: "exdeorum:flint_mesh"
+					item: "exnihilosequentia:flint_mesh"
 					type: "item"
 				}
 				{
@@ -1120,7 +1120,7 @@
 			dependencies: ["6D35986F79B17912"]
 			icon: {
 				Count: 1
-				id: "exdeorum:iron_mesh"
+				id: "exnihilosequentia:iron_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1133,7 +1133,7 @@
 				id: "2AEDB43683F828CF"
 				item: {
 					Count: 1
-					id: "exdeorum:iron_mesh"
+					id: "exnihilosequentia:iron_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:efficiency"
@@ -1148,7 +1148,7 @@
 				{
 					consume_items: true
 					id: "5E21F03B7225BD29"
-					item: "exdeorum:iron_mesh"
+					item: "exnihilosequentia:iron_mesh"
 					type: "item"
 				}
 				{
@@ -1168,7 +1168,7 @@
 			dependencies: ["7014892C27EC22B7"]
 			icon: {
 				Count: 1
-				id: "exdeorum:golden_mesh"
+				id: "exnihilosequentia:diamond_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1181,7 +1181,7 @@
 				id: "70852963AA0FF27E"
 				item: {
 					Count: 1
-					id: "exdeorum:golden_mesh"
+					id: "exnihilosequentia:diamond_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:efficiency"
@@ -1196,7 +1196,7 @@
 				{
 					consume_items: true
 					id: "173B5295C7E6D12B"
-					item: "exdeorum:golden_mesh"
+					item: "exnihilosequentia:diamond_mesh"
 					type: "item"
 				}
 				{
@@ -1216,7 +1216,7 @@
 			dependencies: ["6EF7F39B52B77535"]
 			icon: {
 				Count: 1
-				id: "exdeorum:diamond_mesh"
+				id: "exnihilosequentia:emerald_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1229,7 +1229,7 @@
 				id: "0C25448FF71626A7"
 				item: {
 					Count: 1
-					id: "exdeorum:diamond_mesh"
+					id: "exnihilosequentia:emerald_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:efficiency"
@@ -1244,7 +1244,7 @@
 				{
 					consume_items: true
 					id: "61BEBADDC280347B"
-					item: "exdeorum:diamond_mesh"
+					item: "exnihilosequentia:emerald_mesh"
 					type: "item"
 				}
 				{
@@ -1264,7 +1264,7 @@
 			dependencies: ["3D3E637BCB06115F"]
 			icon: {
 				Count: 1
-				id: "exdeorum:netherite_mesh"
+				id: "exnihilosequentia:netherite_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1277,7 +1277,7 @@
 				id: "0F53D53AEBDF3985"
 				item: {
 					Count: 1
-					id: "exdeorum:netherite_mesh"
+					id: "exnihilosequentia:netherite_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:efficiency"
@@ -1292,7 +1292,7 @@
 				{
 					consume_items: true
 					id: "671BB96C54B44A18"
-					item: "exdeorum:netherite_mesh"
+					item: "exnihilosequentia:netherite_mesh"
 					type: "item"
 				}
 				{
@@ -1312,7 +1312,7 @@
 			dependencies: ["26D3E2C0599B43B2"]
 			icon: {
 				Count: 1
-				id: "exdeorum:string_mesh"
+				id: "exnihilosequentia:string_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1325,7 +1325,7 @@
 				id: "7C3B25220E6DAFA3"
 				item: {
 					Count: 1
-					id: "exdeorum:string_mesh"
+					id: "exnihilosequentia:string_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1348,7 +1348,7 @@
 					id: "1E9280CC106CAAFF"
 					item: {
 						Count: 1
-						id: "exdeorum:string_mesh"
+						id: "exnihilosequentia:string_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:fortune"
@@ -1375,7 +1375,7 @@
 			dependencies: ["26D3E2C0599B43B2"]
 			icon: {
 				Count: 1
-				id: "exdeorum:string_mesh"
+				id: "exnihilosequentia:string_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1388,7 +1388,7 @@
 				id: "7B9618C612531343"
 				item: {
 					Count: 1
-					id: "exdeorum:string_mesh"
+					id: "exnihilosequentia:string_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1411,7 +1411,7 @@
 					id: "06DA5607ECC1661B"
 					item: {
 						Count: 1
-						id: "exdeorum:string_mesh"
+						id: "exnihilosequentia:string_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:efficiency"
@@ -1438,7 +1438,7 @@
 			dependencies: ["1F5CCE8CFD02903A"]
 			icon: {
 				Count: 1
-				id: "exdeorum:flint_mesh"
+				id: "exnihilosequentia:flint_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1451,7 +1451,7 @@
 				id: "627FFD42C2043610"
 				item: {
 					Count: 1
-					id: "exdeorum:flint_mesh"
+					id: "exnihilosequentia:flint_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1474,7 +1474,7 @@
 					id: "62461F3396D29BD3"
 					item: {
 						Count: 1
-						id: "exdeorum:flint_mesh"
+						id: "exnihilosequentia:flint_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:fortune"
@@ -1501,7 +1501,7 @@
 			dependencies: ["1F5CCE8CFD02903A"]
 			icon: {
 				Count: 1
-				id: "exdeorum:flint_mesh"
+				id: "exnihilosequentia:flint_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1514,7 +1514,7 @@
 				id: "199E9D4BE3338F7B"
 				item: {
 					Count: 1
-					id: "exdeorum:flint_mesh"
+					id: "exnihilosequentia:flint_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1537,7 +1537,7 @@
 					id: "0A0513DDF4D9B7AC"
 					item: {
 						Count: 1
-						id: "exdeorum:flint_mesh"
+						id: "exnihilosequentia:flint_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:efficiency"
@@ -1564,7 +1564,7 @@
 			dependencies: ["6D35986F79B17912"]
 			icon: {
 				Count: 1
-				id: "exdeorum:iron_mesh"
+				id: "exnihilosequentia:iron_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1577,7 +1577,7 @@
 				id: "516BA39BA4B4B937"
 				item: {
 					Count: 1
-					id: "exdeorum:string_mesh"
+					id: "exnihilosequentia:string_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1600,7 +1600,7 @@
 					id: "15BE139DB7A5D565"
 					item: {
 						Count: 1
-						id: "exdeorum:iron_mesh"
+						id: "exnihilosequentia:iron_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:fortune"
@@ -1627,7 +1627,7 @@
 			dependencies: ["6D35986F79B17912"]
 			icon: {
 				Count: 1
-				id: "exdeorum:iron_mesh"
+				id: "exnihilosequentia:iron_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1640,7 +1640,7 @@
 				id: "778803FC0297B802"
 				item: {
 					Count: 1
-					id: "exdeorum:iron_mesh"
+					id: "exnihilosequentia:iron_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1663,7 +1663,7 @@
 					id: "684251205B927BFD"
 					item: {
 						Count: 1
-						id: "exdeorum:iron_mesh"
+						id: "exnihilosequentia:iron_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:efficiency"
@@ -1690,7 +1690,7 @@
 			dependencies: ["7014892C27EC22B7"]
 			icon: {
 				Count: 1
-				id: "exdeorum:golden_mesh"
+				id: "exnihilosequentia:diamond_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1703,7 +1703,7 @@
 				id: "0FBE0A1043389FAD"
 				item: {
 					Count: 1
-					id: "exdeorum:golden_mesh"
+					id: "exnihilosequentia:diamond_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1726,7 +1726,7 @@
 					id: "66DB881359151273"
 					item: {
 						Count: 1
-						id: "exdeorum:golden_mesh"
+						id: "exnihilosequentia:diamond_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:fortune"
@@ -1753,7 +1753,7 @@
 			dependencies: ["7014892C27EC22B7"]
 			icon: {
 				Count: 1
-				id: "exdeorum:golden_mesh"
+				id: "exnihilosequentia:diamond_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1766,7 +1766,7 @@
 				id: "4AC9E91C64C67CA8"
 				item: {
 					Count: 1
-					id: "exdeorum:golden_mesh"
+					id: "exnihilosequentia:diamond_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1789,7 +1789,7 @@
 					id: "727F28330FF60765"
 					item: {
 						Count: 1
-						id: "exdeorum:golden_mesh"
+						id: "exnihilosequentia:diamond_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:efficiency"
@@ -1816,7 +1816,7 @@
 			dependencies: ["6EF7F39B52B77535"]
 			icon: {
 				Count: 1
-				id: "exdeorum:diamond_mesh"
+				id: "exnihilosequentia:emerald_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1829,7 +1829,7 @@
 				id: "108121B077CCC9FF"
 				item: {
 					Count: 1
-					id: "exdeorum:diamond_mesh"
+					id: "exnihilosequentia:emerald_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1852,7 +1852,7 @@
 					id: "7C5D569F36D648B0"
 					item: {
 						Count: 1
-						id: "exdeorum:diamond_mesh"
+						id: "exnihilosequentia:emerald_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:fortune"
@@ -1879,7 +1879,7 @@
 			dependencies: ["6EF7F39B52B77535"]
 			icon: {
 				Count: 1
-				id: "exdeorum:diamond_mesh"
+				id: "exnihilosequentia:emerald_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1892,7 +1892,7 @@
 				id: "4645DA3C26DE3F57"
 				item: {
 					Count: 1
-					id: "exdeorum:diamond_mesh"
+					id: "exnihilosequentia:emerald_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1915,7 +1915,7 @@
 					id: "2D26D8958EA565EA"
 					item: {
 						Count: 1
-						id: "exdeorum:diamond_mesh"
+						id: "exnihilosequentia:emerald_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:efficiency"
@@ -1942,7 +1942,7 @@
 			dependencies: ["3D3E637BCB06115F"]
 			icon: {
 				Count: 1
-				id: "exdeorum:netherite_mesh"
+				id: "exnihilosequentia:netherite_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1955,7 +1955,7 @@
 				id: "45A52E6C751DC3DB"
 				item: {
 					Count: 1
-					id: "exdeorum:netherite_mesh"
+					id: "exnihilosequentia:netherite_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1978,7 +1978,7 @@
 					id: "790343B55BA8B32B"
 					item: {
 						Count: 1
-						id: "exdeorum:netherite_mesh"
+						id: "exnihilosequentia:netherite_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:fortune"
@@ -2005,7 +2005,7 @@
 			dependencies: ["3D3E637BCB06115F"]
 			icon: {
 				Count: 1
-				id: "exdeorum:netherite_mesh"
+				id: "exnihilosequentia:netherite_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -2018,7 +2018,7 @@
 				id: "33B540ABDE35DF7D"
 				item: {
 					Count: 1
-					id: "exdeorum:netherite_mesh"
+					id: "exnihilosequentia:netherite_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2041,7 +2041,7 @@
 					id: "6E0A2C768DF0AFAB"
 					item: {
 						Count: 1
-						id: "exdeorum:netherite_mesh"
+						id: "exnihilosequentia:netherite_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:efficiency"
@@ -2068,7 +2068,7 @@
 			dependencies: ["26D3E2C0599B43B2"]
 			icon: {
 				Count: 1
-				id: "exdeorum:string_mesh"
+				id: "exnihilosequentia:string_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -2081,7 +2081,7 @@
 				id: "1A125B2191226FB3"
 				item: {
 					Count: 1
-					id: "exdeorum:string_mesh"
+					id: "exnihilosequentia:string_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2102,7 +2102,7 @@
 				{
 					consume_items: true
 					id: "5AC4C4F5843C6759"
-					item: "exdeorum:string_mesh"
+					item: "exnihilosequentia:string_mesh"
 					type: "item"
 				}
 				{
@@ -2122,7 +2122,7 @@
 			dependencies: ["1F5CCE8CFD02903A"]
 			icon: {
 				Count: 1
-				id: "exdeorum:flint_mesh"
+				id: "exnihilosequentia:flint_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -2135,7 +2135,7 @@
 				id: "59E62BD390C4B753"
 				item: {
 					Count: 1
-					id: "exdeorum:flint_mesh"
+					id: "exnihilosequentia:flint_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2156,7 +2156,7 @@
 				{
 					consume_items: true
 					id: "4210CD3DA604E36D"
-					item: "exdeorum:flint_mesh"
+					item: "exnihilosequentia:flint_mesh"
 					type: "item"
 				}
 				{
@@ -2176,7 +2176,7 @@
 			dependencies: ["6D35986F79B17912"]
 			icon: {
 				Count: 1
-				id: "exdeorum:iron_mesh"
+				id: "exnihilosequentia:iron_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -2189,7 +2189,7 @@
 				id: "187FC7FA19BAB978"
 				item: {
 					Count: 1
-					id: "exdeorum:iron_mesh"
+					id: "exnihilosequentia:iron_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2210,7 +2210,7 @@
 				{
 					consume_items: true
 					id: "035D8838C2625767"
-					item: "exdeorum:iron_mesh"
+					item: "exnihilosequentia:iron_mesh"
 					type: "item"
 				}
 				{
@@ -2230,7 +2230,7 @@
 			dependencies: ["7014892C27EC22B7"]
 			icon: {
 				Count: 1
-				id: "exdeorum:golden_mesh"
+				id: "exnihilosequentia:diamond_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -2243,7 +2243,7 @@
 				id: "223469E266E8C880"
 				item: {
 					Count: 1
-					id: "exdeorum:golden_mesh"
+					id: "exnihilosequentia:diamond_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2264,7 +2264,7 @@
 				{
 					consume_items: true
 					id: "42D22FDF41EF8F4D"
-					item: "exdeorum:golden_mesh"
+					item: "exnihilosequentia:diamond_mesh"
 					type: "item"
 				}
 				{
@@ -2284,7 +2284,7 @@
 			dependencies: ["6EF7F39B52B77535"]
 			icon: {
 				Count: 1
-				id: "exdeorum:diamond_mesh"
+				id: "exnihilosequentia:emerald_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -2297,7 +2297,7 @@
 				id: "2EAE5DE7EB7F1717"
 				item: {
 					Count: 1
-					id: "exdeorum:diamond_mesh"
+					id: "exnihilosequentia:emerald_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2318,7 +2318,7 @@
 				{
 					consume_items: true
 					id: "7776B050FE4F82C7"
-					item: "exdeorum:diamond_mesh"
+					item: "exnihilosequentia:emerald_mesh"
 					type: "item"
 				}
 				{
@@ -2338,7 +2338,7 @@
 			dependencies: ["3D3E637BCB06115F"]
 			icon: {
 				Count: 1
-				id: "exdeorum:netherite_mesh"
+				id: "exnihilosequentia:netherite_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -2351,7 +2351,7 @@
 				id: "6B5C33917123AFC2"
 				item: {
 					Count: 1
-					id: "exdeorum:netherite_mesh"
+					id: "exnihilosequentia:netherite_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2372,7 +2372,7 @@
 				{
 					consume_items: true
 					id: "438BB80C91F29BF6"
-					item: "exdeorum:netherite_mesh"
+					item: "exnihilosequentia:netherite_mesh"
 					type: "item"
 				}
 				{
@@ -2498,7 +2498,7 @@
 					id: "32DB3DA27E572CEA"
 					item: {
 						Count: 1
-						id: "exdeorum:bone_crook"
+						id: "exnihilosequentia:diamond_crook"
 						tag: {
 							Damage: 0
 						}
@@ -2509,7 +2509,7 @@
 					id: "01FA1C18B3DC7FF1"
 					item: {
 						Count: 1
-						id: "exdeorum:diamond_hammer"
+						id: "exnihilosequentia:diamond_hammer"
 						tag: {
 							Damage: 0
 						}

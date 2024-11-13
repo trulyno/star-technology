@@ -171,7 +171,7 @@
 			y: -17.0d
 		}
 		{
-			icon: "exdeorum:string_mesh"
+			icon: "exnihilosequentia:string_mesh"
 			id: "206F61D1A0C2C729"
 			linked_quest: "26D3E2C0599B43B2"
 			title: "String Mesh"
@@ -450,7 +450,7 @@
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
-			icon: "exdeorum:dust"
+			icon: "exnihilosequentia:dust"
 			id: "0A428EB5B9A7FDB2"
 			tasks: [
 				{
@@ -480,7 +480,7 @@
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
-			icon: "exdeorum:crushed_blackstone"
+			icon: "exnihilosequentia:crushed_blackstone"
 			id: "4B254D95C1CE1400"
 			tasks: [
 				{
@@ -600,7 +600,7 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			icon: "exdeorum:dust"
+			icon: "exnihilosequentia:dust"
 			id: "434F70C2D8F6C8AE"
 			tasks: [{
 				id: "4E39610E6E361B18"
@@ -613,7 +613,7 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			icon: "exdeorum:crushed_blackstone"
+			icon: "exnihilosequentia:crushed_blackstone"
 			id: "3243C24ECB7A8F7C"
 			tasks: [
 				{
@@ -708,7 +708,7 @@
 		}
 		{
 			dependencies: ["6D35986F79B17912"]
-			icon: "exdeorum:crushed_blackstone"
+			icon: "exnihilosequentia:crushed_blackstone"
 			id: "58D75D2CC4D64870"
 			tasks: [
 				{
@@ -758,7 +758,7 @@
 		}
 		{
 			dependencies: ["7014892C27EC22B7"]
-			icon: "exdeorum:crushed_blackstone"
+			icon: "exnihilosequentia:crushed_blackstone"
 			id: "6B695D3B2E2B1D73"
 			tasks: [
 				{
@@ -804,7 +804,7 @@
 		}
 		{
 			dependencies: ["6EF7F39B52B77535"]
-			icon: "exdeorum:crushed_blackstone"
+			icon: "exnihilosequentia:crushed_blackstone"
 			id: "417A0E744EC808D5"
 			tasks: [
 				{
@@ -829,7 +829,7 @@
 		}
 		{
 			dependencies: ["3D3E637BCB06115F"]
-			icon: "exdeorum:dust"
+			icon: "exnihilosequentia:dust"
 			id: "5E8847ECC9663B38"
 			tasks: [{
 				id: "2E72EEED6536CAC7"
@@ -842,7 +842,7 @@
 		}
 		{
 			dependencies: ["3D3E637BCB06115F"]
-			icon: "exdeorum:crushed_blackstone"
+			icon: "exnihilosequentia:crushed_blackstone"
 			id: "285824011BF65A01"
 			tasks: [{
 				id: "270E8419A06F1172"

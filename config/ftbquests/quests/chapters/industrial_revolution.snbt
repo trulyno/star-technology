@@ -294,7 +294,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "36F3F8DD14E01A1C"
-				item: "exdeorum:flint_mesh"
+				item: "exnihilosequentia:flint_mesh"
 				type: "item"
 			}]
 			x: -0.5d
@@ -1231,7 +1231,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "6408A4D29DB3C957"
-				item: "exdeorum:iron_mesh"
+				item: "exnihilosequentia:iron_mesh"
 				type: "item"
 			}]
 			x: 9.5d

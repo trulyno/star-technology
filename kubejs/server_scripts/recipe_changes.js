@@ -400,17 +400,6 @@ ServerEvents.recipes(event => {
     event.recipes.create.item_application('gtceu:t_large_macerator', ['gtceu:hv_macerator', 'kubejs:multiblock_upgrade_kit']);
     event.recipes.create.item_application('gtceu:large_rock_crusher', ['gtceu:hv_rock_crusher', 'kubejs:multiblock_upgrade_kit']);
 
-
-    event.remove({id: 'exdeorum:barrel_fluid_mixing/stone'});
-    event.custom({
-        "type": "exdeorum:barrel_fluid_mixing",
-        "additive_fluid": "minecraft:lava",
-        "base_fluid": "minecraft:water",
-        "base_fluid_amount": 1000,
-        "consumes_additive": false,
-        "result": "minecraft:cobblestone"
-    });
-
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {
