@@ -893,6 +893,7 @@
 			dependencies: [
 				"261B946701411D9C"
 				"7908E8C196F82F9B"
+				"119983C3240B8F66"
 			]
 			dependency_requirement: "one_completed"
 			description: ["Made with either Sodium Persulfate or Iron III Chloride. Both are explained in the Processing Lines chapter."]
