@@ -81,6 +81,10 @@ recipes:
   # Default: false
   harderCircuitRecipes: false
 
+  # Whether to nerf machine controller recipes.
+  # Default: false
+  hardMultiRecipes: false
+
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: true
   enchantedTools: true
@@ -235,11 +239,6 @@ machines:
   # Default: "raw"
   bedrockOreDropTagPrefix: raw
 
-  # WARNING: THIS IS NO LONGER SUPPORTED AND WILL BE REMOVED!
-  # This option only exists to provide backwards compatibility until the Processing Array will be removed in 1.3.0
-  # Default: false
-  doProcessingArray: true
-
   # Makes nearly every GCYM Multiblock require blocks which set their maximum voltages.
   # Default: false
   enableTieredCasings: false
@@ -251,6 +250,18 @@ machines:
   # Minimum distance betweeb Long Distance Fluid Pipe Endpoints
   # Default: 50
   ldFluidPipeMinDistance: 50
+
+  # Whether ONLY owners can open a machine gui
+  # Default: false
+  onlyOwnerGUI: false
+
+  # Whether ONLY owners can break a machine
+  # Default: false
+  onlyOwnerBreak: false
+
+  # Minimum op level to bypass the ownership checks
+  # Default: 2
+  ownerOPBypass: 2
 
   # If High Tier (>UV-tier) GT content should be registered.
   # Items and Machines enabled with this config will have missing recipes by default.
@@ -272,6 +283,10 @@ machines:
   # When enabled it, Dual Hatch will can used to assemble line and so on.
   # Need restart Minecraft to apply.
   enableMoreDualHatchAbility: false
+
+  # Default maximum parallel of steam multiblocks
+  # Default: 8
+  steamMultiParallelAmount: 8
 
   # Small Steam Boiler Options
   smallBoilers:
@@ -400,6 +415,10 @@ tools:
   # Default: 16
   sprayCanChainLength: 16
 
+  # Delay in ticks between each log being broken when tree felling
+  # Default: 2
+  treeFellingDelay: 2
+
   # NanoSaber Options
   nanoSaber:
     # The additional damage added when the NanoSaber is powered.
@@ -502,6 +521,51 @@ compat:
     # Default: 1.0AE/t
     meHatchEnergyUsage: 1.0
 
+  # Config options regarding GTCEu compatibility with minimap mods
+  minimap:
+    # The radius, in blocks, that picking up a surface rock will search for veins in.
+    # -1 to disable.
+    # Default: 24
+    surfaceRockProspectRange: 24
+
+    # The radius, in blocks, that clicking an ore block will search for veins in.
+    # -1 to disable
+    # Default: 24
+    oreBlockProspectRange: 24
+
+    # The map scale at which displayed ores will stop scaling.
+    oreScaleStop: 1.0
+
+    # The size, in pixels, of ore icons on the map
+    oreIconSize: 32
+
+    # The string prepending ore names in the ore vein tooltip
+    oreNamePrefix: - 
+
+    # The color to draw a box around the ore icon with.
+    # Accepts either an ARGB hex color prefixed with # or the string 'material' to use the ore's material color
+    borderColor: #00000000
+
+    # Which part of the screen to anchor buttons to
+    # Default: "BOTTOM_LEFT"
+    buttonAnchor: BOTTOM_LEFT
+
+    # Which direction the buttons will go
+    # Default: "HORIZONTAL"
+    direction: HORIZONTAL
+
+    # How horizontally far away from the anchor to place the buttons
+    # Default: 20
+    xOffset: 20
+
+    # How vertically far away from the anchor to place the buttons
+    # Default: 0
+    yOffset: 0
+
+    # Whether to put buttons on a separate toolbar on the right instead of the map type toolbar in JourneyMap.
+    # Default: true
+    rightToolbar: true
+
   # Whether to hide facades of all blocks in JEI and creative search menu.
   # Default: true
   hideFacadesInJEI: true
@@ -530,6 +594,10 @@ dev:
   # Debug ore vein placement? (will print placed veins to server's debug.log)
   # Default: false (no placement printout in debug.log)
   debugWorldgen: false
+
+  # Generate ores in superflat worlds?
+  # Default: false
+  doSuperflatOres: false
 
   # Dump all registered GT recipes?
   # Default: false

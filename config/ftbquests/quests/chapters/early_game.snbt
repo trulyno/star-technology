@@ -1863,18 +1863,8 @@
 			description: ["There are two ways to make witch water, either through the large barrel or by having a normal barrel full of water on top of mycelium."]
 			id: "7E72B9CC8631769D"
 			tasks: [{
-				id: "229C871547C31632"
-				item: {
-					Count: 1
-					id: "woodenbucket:wooden_bucket"
-					tag: {
-						Damage: 0
-						Fluid: {
-							Amount: 1000
-							FluidName: "exnihilosequentia:witch_water"
-						}
-					}
-				}
+				id: "6CCD95924315B284"
+				item: "exnihilosequentia:witch_water_bucket"
 				type: "item"
 			}]
 			title: "Making Witch Water?"
