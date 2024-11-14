@@ -17,6 +17,7 @@ ServerEvents.recipes(event => {
 
     // packmode the if packmode !== hard then do ^ else v 
 
+    
     event.recipes.create.mixing(Fluid.of('gtceu:brass', 432), [Fluid.of('gtceu:copper', 432), Fluid.of('gtceu:tin', 144)]).heatRequirement('lowheated');
     event.recipes.create.compacting('1x gtceu:brass_ingot', Fluid.of('gtceu:brass', 144));
     

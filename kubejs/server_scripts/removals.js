@@ -90,4 +90,15 @@ ServerEvents.recipes(event => {
     event.remove({ input: 'minecraft:ancient_debris'});
     event.remove({ output: 'minecraft:netherite_ingot'});
     event.remove({ id: 'gtceu:centrifuge/magma_cream_separation'}); 
+
+    //packmode thingy
+
+    event.remove({id: 'exdeorum:crook/silkworm'});
+    event.remove({id: 'gtceu:shapeless/dust_bronze'});
+    event.remove({id: 'gtceu:shapeless/dust_brass'});
+    event.remove({id: 'thermal:fire_charge'});
+    event.remove({id: 'create:mixing/brass_ingot'});
+    event.remove({id: 'exdeorum:barrel_fluid_mixing/stone'});
+    event.remove({id: 'gtceu:smelting/smelt_dust_galvanized_steel_to_ingot'});
+    event.remove({id: 'thermal:flax_seeds'});
 });

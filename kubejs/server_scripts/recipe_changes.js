@@ -385,21 +385,39 @@ ServerEvents.recipes(event => {
     event.recipes.create.item_application('gtceu:t_large_macerator', ['gtceu:hv_macerator', 'kubejs:multiblock_upgrade_kit']);
     event.recipes.create.item_application('gtceu:large_rock_crusher', ['gtceu:hv_rock_crusher', 'kubejs:multiblock_upgrade_kit']);
 
+    //packmode
+
+    event.recipes.create.mixing('2x gtceu:galvanized_steel_ingot', ['2x gtceu:steel_ingot', Fluid.of('gtceu:zinc', 144)]).heatRequirement('lowheated');
+    event.recipes.create.mixing(Fluid.of('gtceu:copper', 144), ['1x minecraft:copper_ingot', Fluid.of('minecraft:lava', 100)]).heatRequirement('lowheated');
+    event.recipes.create.mixing(Fluid.of('gtceu:zinc', 144), ['1x gtceu:zinc_ingot', Fluid.of('minecraft:lava', 100)]).heatRequirement('lowheated');
+    event.recipes.create.mixing(Fluid.of('gtceu:tin', 144), ['1x gtceu:tin_ingot', Fluid.of('minecraft:lava', 100)]).heatRequirement('lowheated');
+    
+    event.recipes.gtceu.mixer('galvanized_steel_mixer')
+            .itemInputs('3x gtceu:steel_ingot')
+            .inputFluids('gtceu:zinc 144')
+            .itemOutputs('4x gtceu:galvanized_steel_ingot')
+            .duration(120)
+            .EUt(8);
+    
+
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {
     if (event.player.isCrouching() && event.player.getMainHandItem() == null) {
-        if (Math.random() < 0.75) {
+        if (Math.random() < 0.18) {
             event.block.popItemFromFace(Item.of('exdeorum:stone_pebble'), 'up');
         }
-        if (Math.random() < 0.5) {
+        if (Math.random() < 0.13) {
             event.block.popItemFromFace(Item.of('exdeorum:andesite_pebble'), 'up');
         }
-        if (Math.random() < 0.5) {
+        if (Math.random() < 0.12) {
             event.block.popItemFromFace(Item.of('exdeorum:granite_pebble'), 'up');
         }
-        if (Math.random() < 0.5) {
+        if (Math.random() < 0.12) {
             event.block.popItemFromFace(Item.of('exdeorum:diorite_pebble'), 'up');
+        }
+        if (Math.random() < 0.0001) {
+            event.block.popItemFromFace(Item.of('minecraft:cookie'), 'up');
         }
     }
 })
