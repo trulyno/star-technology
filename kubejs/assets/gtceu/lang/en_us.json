@@ -330,5 +330,7 @@
     "block.gtceu.lv_kinetic_mixer": "LV Kinetic Mixer",
     "block.gtceu.mv_kinetic_mixer": "MV Kinetic Mixer",
     "block.gtceu.hv_kinetic_mixer": "HV Kinetic Mixer",
-    "block.gtceu.ev_kinetic_mixer": "EV Kinetic Mixer"
+    "block.gtceu.ev_kinetic_mixer": "EV Kinetic Mixer",
+
+    "material.gtceu.galvanized_steel": "Galvanized Steel"
 }

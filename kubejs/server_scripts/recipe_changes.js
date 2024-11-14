@@ -25,10 +25,12 @@ ServerEvents.recipes(event => {
         'gtceu:wrought_iron_screw'
     );
 
-    event.replaceInput({ id: 'gtceu:macerator/macerate_nether_star_lens' },
-        '#forge:lenses/white',
-        'gtceu:nether_star_lens'
-    );
+    //event.recipes.create.mixing('3x gtceu:bronze_ingot', ['3x minecraft:copper_ingot', '#forge:ingots/tin']).heatRequirement('lowheated');
+    //event.recipes.create.mixing('1x gtceu:red_alloy_ingot', ['minecraft:copper_ingot', '4x minecraft:redstone']).heatRequirement('lowheated');
+    //event.recipes.create.mixing('3x gtceu:brass_ingot', ['3x minecraft:copper_ingot', '#forge:ingots/zinc']).heatRequirement('lowheated');
+    //event.recipes.create.mixing('2x gtceu:invar_ingot', ['2x minecraft:iron_ingot', '#forge:ingots/nickel']).heatRequirement('lowheated');
+    //event.recipes.create.mixing('1x gtceu:soul_infused_ingot', ['2x thermal_extra:soul_sand_dust', '#forge:ingots/invar']).heatRequirement('lowheated');
+    // again pack mode stuffs
 
     event.shaped(Item.of('gtceu:wood_plate'), [
         'SSS'
@@ -73,24 +75,6 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:rubber 576')
         .duration(240)
         .EUt(8);
-    //Recipe conflict fix
-    //ethane+chlorine
-    event.remove({id: 'gtceu:chemical_reactor/vinyl_chloride_from_ethane'})
-    event.recipes.gtceu.chemical_reactor('vinyl_chloride_from_ethane')
-        .inputFluids('gtceu:chlorine 4000', 'gtceu:ethane 1000')
-        .outputFluids('gtceu:vinyl_chloride 1000','gtceu:hydrochloric_acid 3000')
-        .duration(160)
-        .EUt(30)
-        .circuit(1);
-    
-    event.remove({id: 'gtceu:chemical_reactor/dichloroethane'})
-    event.recipes.gtceu.chemical_reactor('dichloroethane')
-        .inputFluids('gtceu:ethane 1000', 'gtceu:chlorine 2000')
-        .outputFluids('gtceu:dichloroethane 1000','gtceu:hydrochloric_acid 2000')
-        .duration(200)
-        .EUt(120)
-        .circuit(0);
-    //remove the code above when GT fixes it
 
     event.recipes.gtceu.large_chemical_reactor('latex_rubber')
         .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
@@ -271,10 +255,11 @@ ServerEvents.recipes(event => {
         R: 'gtceu:rubber_plate'
     });
 
-    //plates
-    ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron'].forEach(type => {
-        event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`);
-    });
+    event.recipes.create.pressing('gtceu:lead_plate', 'gtceu:lead_ingot');
+    event.recipes.create.pressing('gtceu:silver_plate', 'gtceu:silver_ingot');
+    event.recipes.create.pressing('gtceu:tin_plate', 'gtceu:tin_ingot');
+    event.recipes.create.pressing('gtceu:zinc_plate', 'gtceu:zinc_ingot');
+    event.recipes.create.pressing('gtceu:bronze_plate', 'gtceu:bronze_ingot');
   
     event.replaceInput({id: 'enderchests:ender_pouch'}, 'minecraft:leather', 'gtceu:carbon_fiber_plate');
     event.shaped(Item.of('create_new_age:netherite_magnet'), [
