@@ -54,6 +54,7 @@ ServerEvents.recipes(event => {
     }).keepIngredient('gtceu:brick_wooden_form');
 
     event.recipes.create.mixing('4x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated');
+
     event.recipes.create.pressing('gtceu:rubber_plate', 'thermal:cured_rubber');
 
     event.recipes.gtceu.fluid_solidifier('gtceu:raw_rubber')
@@ -73,6 +74,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:rubber 576')
         .duration(240)
         .EUt(8);
+
     //Recipe conflict fix
     //ethane+chlorine
     event.remove({id: 'gtceu:chemical_reactor/vinyl_chloride_from_ethane'})
@@ -82,7 +84,8 @@ ServerEvents.recipes(event => {
         .duration(160)
         .EUt(30)
         .circuit(1);
-    
+
+    //remove the code above when GT fixes it
     event.remove({id: 'gtceu:chemical_reactor/dichloroethane'})
     event.recipes.gtceu.chemical_reactor('dichloroethane')
         .inputFluids('gtceu:ethane 1000', 'gtceu:chlorine 2000')
@@ -90,7 +93,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(120)
         .circuit(0);
-    //remove the code above when GT fixes it
 
     event.recipes.gtceu.large_chemical_reactor('latex_rubber')
         .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
@@ -400,21 +402,25 @@ ServerEvents.recipes(event => {
     event.recipes.create.item_application('gtceu:t_large_macerator', ['gtceu:hv_macerator', 'kubejs:multiblock_upgrade_kit']);
     event.recipes.create.item_application('gtceu:large_rock_crusher', ['gtceu:hv_rock_crusher', 'kubejs:multiblock_upgrade_kit']);
 
+    // Mycelium Leather
+    event.recipes.create.pressing('kubejs:compressed_mycelium', 'kubejs:mycelium_growth');
+    event.smoking('kubejs:smoked_mycelium', 'kubejs:compressed_mycelium');
+    event.recipes.create.pressing('minecraft:leather', 'kubejs:smoked_mycelium');
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {
     if (event.player.isCrouching() && event.player.getMainHandItem() == null) {
         if (Math.random() < 0.75) {
-            event.block.popItemFromFace(Item.of('exdeorum:stone_pebble'), 'up');
+            event.block.popItemFromFace(Item.of('exnihilosequentia:stone_pebble'), 'up');
         }
         if (Math.random() < 0.5) {
-            event.block.popItemFromFace(Item.of('exdeorum:andesite_pebble'), 'up');
+            event.block.popItemFromFace(Item.of('exnihilosequentia:andesite_pebble'), 'up');
         }
         if (Math.random() < 0.5) {
-            event.block.popItemFromFace(Item.of('exdeorum:granite_pebble'), 'up');
+            event.block.popItemFromFace(Item.of('exnihilosequentia:granite_pebble'), 'up');
         }
         if (Math.random() < 0.5) {
-            event.block.popItemFromFace(Item.of('exdeorum:diorite_pebble'), 'up');
+            event.block.popItemFromFace(Item.of('exnihilosequentia:diorite_pebble'), 'up');
         }
     }
 })
