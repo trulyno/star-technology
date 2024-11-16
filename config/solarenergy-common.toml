@@ -1,0 +1,30 @@
+
+[general]
+	logLevel = "INFO"
+
+[solarGenerator]
+	#Keeps generating energy when it's raining
+	generatesWhileRaining = true
+	#Enables realistic energy generation (which varies with available sunlight)
+	realisticGeneration = false
+	basicSolarGeneratorMultiplier = 1.0
+	regularSolarGeneratorMultiplier = 1.0
+	intermediateSolarGeneratorMultiplier = 1.0
+	advancedSolarGeneratorMultiplier = 1.0
+	eliteSolarGeneratorMultiplier = 1.0
+	ultimateSolarGeneratorMultiplier = 1.0
+
+[battery]
+	basicBatteryMultiplier = 1.0
+	regularBatteryMultiplier = 1.0
+	intermediateBatteryMultiplier = 1.0
+	advancedBatteryMultiplier = 1.0
+	eliteBatteryMultiplier = 1.0
+	ultimateBatteryMultiplier = 1.0
+	basicDenseBatteryMultiplier = 1.0
+	regularDenseBatteryMultiplier = 1.0
+	intermediateDenseBatteryMultiplier = 1.0
+	advancedDenseBatteryMultiplier = 1.0
+	eliteDenseBatteryMultiplier = 1.0
+	ultimateDenseBatteryMultiplier = 1.0
+

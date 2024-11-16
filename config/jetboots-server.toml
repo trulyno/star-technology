@@ -1,0 +1,203 @@
+
+#General settings
+[general]
+	#Default maximum power for jetboots
+	#Range: > 0
+	defaultMaxPower = 1000000
+	#Cost per tick to use jetboots
+	#Range: > 0
+	powerCost = 50
+
+[leveling]
+	#The base xp required to level up a levelable items
+	#Range: > 100
+	baseLevelXp = 500
+	#The xp multiplier added ot the base xp required for each level
+	#Range: 1.0 ~ 1.7976931348623157E308
+	levelXpMultiplier = 1.1
+	#How often in ticks the player can earn xp by flying with jetboots (Only for jetboots)
+	#Range: 20 ~ 1200
+	ticksBetweenFlightXp = 80
+	#Xp awarded for flying with the jetboots
+	#Range: 1 ~ 100
+	flightXp = 8
+	#Lower bound for xp awarded for taking damage
+	#Range: 1.0 ~ 100.0
+	hurtXpMin = 3.0
+	#Modifier that the damage amount on hurt gets multiplied with
+	#Will used in the following way, clamp(damage * modifier, min, max)
+	#Gets added to all levelable armor
+	#Range: 1.0 ~ 100.0
+	hurtXpModifier = 1.0
+	#Upper bound for xp awarded for taking damage
+	#Range: 1.0 ~ 300.0
+	hurtXpMax = 10.0
+	#Lower bound for xp awarded for dealing damage
+	#Range: 1.0 ~ 100.0
+	attackXpMin = 1.0
+	#Modifier that the damage amount on attack gets multiplied with
+	#Will used in the following way, clamp(damage * modifier, min, max)
+	#Gets added to The Godslayer
+	#Range: 1.0 ~ 100.0
+	attackXpModifier = 1.0
+	#Upper bound for xp awarded for dealing damage
+	#Range: 1.0 ~ 300.0
+	attackXpMax = 8.0
+	#Lower bound for xp awarded for flying with rocket boots
+	#Range: 1 ~ 100
+	rocketXpMin = 1
+	#Modifier that the flight ticks gets multiplied with
+	#Will used in the following way, clamp(ticks * modifier, min, max)
+	#Gets added Rocket Boots
+	#Range: 0.10000000149011612 ~ 10.0
+	rocketXpModifier = 0.10000000149011612
+	#Upper bound for xp awarded for flying with rocket boots
+	#Range: 1 ~ 300
+	rocketXpMax = 15
+	#Does items become soulbound upon reaching 90% leveled up
+	itemsBecomeSoulbound = true
+
+	[leveling.helmet]
+		#The max level of the helmet
+		#If set to 0 it will cause the max value to be applied when the item is crafted
+		#Range: > 0
+		helmetMaxLevel = 10
+		#The base damage reducation amount of the helmet
+		#Range: 2.0 ~ 20.0
+		helmetBaseDamageReducation = 3.0
+		#The max damage reducation amount of the helmet
+		#Range: 2.0 ~ 20.0
+		helmetMaxDamageReducation = 6.0
+		#The base toughness amount of the helmet
+		#Range: 0.0 ~ 20.0
+		helmetBaseToughness = 0.0
+		#The max toughness amount of the helmet
+		#Range: 0.0 ~ 20.0
+		helmetMaxToughness = 4.0
+		#The base knockback resistance amount of the helmet
+		#Range: 0.0 ~ 20.0
+		helmetBaseKnockbackResistance = 0.0
+		#The max knockback resistance amount of the helmet
+		#Range: 0.0 ~ 20.0
+		helmetMaxKnockbackResistance = 2.0
+
+	[leveling.jacket]
+		#The max level of the jacket
+		#If set to 0 it will cause the max value to be applied when the item is crafted
+		#Range: > 0
+		jacketMaxLevel = 10
+		#The base damage reducation amount of the jacket
+		#Range: 3.0 ~ 20.0
+		jacketBaseDamageReducation = 6.0
+		#The max damage reducation amount of the jacket
+		#Range: 3.0 ~ 20.0
+		jacketMaxDamageReducation = 10.0
+		#The base toughness amount of the jacket
+		#Range: 0.0 ~ 20.0
+		jacketBaseToughness = 0.0
+		#The max toughness amount of the jacket
+		#Range: 0.0 ~ 20.0
+		jacketMaxToughness = 4.0
+		#The base knockback resistance amount of the jacket
+		#Range: 0.0 ~ 20.0
+		jacketBaseKnockbackResistance = 0.0
+		#The max knockback resistance amount of the jacket
+		#Range: 0.0 ~ 20.0
+		jacketMaxKnockbackResistance = 2.0
+
+	[leveling.pants]
+		#The max level of the pants
+		#If set to 0 it will cause the max value to be applied when the item is crafted
+		#Range: > 0
+		pantsMaxLevel = 10
+		#The base damage reducation amount of the pants
+		#Range: 2.0 ~ 20.0
+		pantsBaseDamageReducation = 5.0
+		#The max damage reducation amount of the pants
+		#Range: 2.0 ~ 20.0
+		pantsMaxDamageReducation = 8.0
+		#The base toughness amount of the pants
+		#Range: 0.0 ~ 20.0
+		pantsBaseToughness = 0.0
+		#The max toughness amount of the pants
+		#Range: 0.0 ~ 20.0
+		pantsMaxToughness = 4.0
+		#The base knockback resistance amount of the pants
+		#Range: 0.0 ~ 20.0
+		pantsBaseKnockbackResistance = 0.0
+		#The max knockback resistance amount of the pants
+		#Range: 0.0 ~ 20.0
+		pantsMaxKnockbackResistance = 2.0
+
+	[leveling.jetboots]
+		#The max level of the jetboots
+		#If set to 0 it will cause the max value to be applied when the item is crafted
+		#Range: > 0
+		jetbootsMaxLevel = 10
+		#The base damage reducation amount of the jetboots
+		#Range: 2.0 ~ 20.0
+		jetbootsBaseDamageReducation = 2.0
+		#The max damage reducation amount of the jetboots
+		#Range: 2.0 ~ 20.0
+		jetbootsMaxDamageReducation = 6.0
+		#The base toughness amount of the jetboots
+		#Range: 0.0 ~ 20.0
+		jetbootsBaseToughness = 0.0
+		#The max toughness amount of the jetboots
+		#Range: 0.0 ~ 20.0
+		jetbootsMaxToughness = 4.0
+		#The base knockback resistance amount of the jetboots
+		#Range: 0.0 ~ 20.0
+		jetbootsBaseKnockbackResistance = 0.0
+		#The max knockback resistance amount of the jetboots
+		#Range: 0.0 ~ 20.0
+		jetbootsMaxKnockbackResistance = 2.0
+
+	[leveling.rocketboots]
+		#The max level of the rocketboots
+		#If set to 0 it will cause the max value to be applied when the item is crafted
+		#Range: > 0
+		rocketbootsMaxLevel = 3
+		#The base damage reducation amount of the rocketboots
+		#Range: 2.0 ~ 20.0
+		rocketbootsBaseDamageReducation = 2.0
+		#The max damage reducation amount of the rocketboots
+		#Range: 2.0 ~ 20.0
+		rocketbootsMaxDamageReducation = 4.0
+		#The base toughness amount of the rocketboots
+		#Range: 0.0 ~ 20.0
+		rocketbootsBaseToughness = 0.0
+		#The max toughness amount of the rocketboots
+		#Range: 0.0 ~ 20.0
+		rocketbootsMaxToughness = 2.0
+		#The base knockback resistance amount of the rocketboots
+		#Range: 0.0 ~ 20.0
+		rocketbootsBaseKnockbackResistance = 0.0
+		#The max knockback resistance amount of the rocketboots
+		#Range: 0.0 ~ 20.0
+		rocketbootsMaxKnockbackResistance = 0.0
+		#The base time that rocketboots can fly
+		#Range: 20 ~ 300
+		rocketbootsBaseFlightTime = 100
+		#The max time that rocketboots can fly
+		#Range: 50 ~ 400
+		rocketbootsMaxFlightTime = 150
+
+	[leveling.sword]
+		#The max level of the sword
+		#If set to 0 it will cause the max value to be applied when the item is crafted
+		#Range: > 0
+		swordMaxLevel = 10
+		#The base attack damage of the sword
+		#Range: 4.0 ~ 1.7976931348623157E308
+		swordBaseAttackDamage = 5.0
+		#The max attack damage of the sword
+		#Range: 4.0 ~ 1.7976931348623157E308
+		swordMaxAttackDamage = 11.0
+		#The base attack speed modifier of the sword
+		#Range: -2.4000000953674316 ~ -0.0
+		swordBaseAttackSpeed = -2.4000000953674316
+		#The max attack speed modifier of the sword
+		#Range: -2.4000000953674316 ~ -0.0
+		swordMaxAttackSpeed = -1.600000023841858
+

@@ -1,0 +1,40 @@
+
+[debug]
+	#Track allocated OpenGL textures to make sure there's no leak
+	checkForVRAMLeak = false
+
+[exampleBrowser]
+	#Set this to false if you don't want to enable the F10 browser.
+	enable = true
+	#The home page of the F10 browser.
+	home = "https://google.com"
+
+[main]
+	#Set this to true if your Java process hangs after closing Minecraft
+	#This is disabled by default because it makes the launcher think Minecraft crashed...
+	shutdownJcef = false
+	#Whether or not MCEF should favor downloading JCEF from a git repo
+	#The download process from git is faster, and will likely also be more up to date.
+	favorGit = true
+	#Do not update binaries.
+	skipUpdates = false
+	#A list of URLs to fallback to.
+	fallbackUrlsGit = ""
+	#Tells in the chat if a new version of MCEF is available (broken).
+	warnUpdates = true
+	#Only enable secure (HTTPS) mirror
+	#This should be kept to true unless you know what you're doing.
+	secureMirrorsOnly = true
+	#A URL that contains every MCEF resources; for instance https://montoyo.net/jcef.
+	forcedMirror = ""
+	#Command line arguments passed to CEF
+	#For advanced users.
+	cefArgs = ""
+
+[render]
+	#Zeros out the graphical information buffer before drawing to the screen; makes the game run slower, but may reduce graphical glitches
+	zero_buffer = true
+	#If this is true, MCEF ticks at the start of each frame (Runs at the game's FPS)
+	#If this is false, MCEF ticks at the start of each tick (Runs at 20 fps)
+	high_fps = true
+
