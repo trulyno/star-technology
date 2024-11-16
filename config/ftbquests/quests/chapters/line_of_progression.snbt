@@ -11,163 +11,163 @@
 		{
 			id: "0BB74BB2179D1EE3"
 			linked_quest: "20A12F3B992762F0"
-			x: -11.0d
+			x: -9.5d
 			y: -29.0d
 		}
 		{
 			id: "6DC46A9130054F17"
 			linked_quest: "3B81632EF4586280"
-			x: -11.0d
+			x: -9.5d
 			y: -30.5d
 		}
 		{
 			id: "776BEF122AA67CE7"
 			linked_quest: "7836F17B34B47B16"
-			x: -11.0d
+			x: -9.5d
 			y: -27.5d
 		}
 		{
 			id: "5D04E91BABB908BD"
 			linked_quest: "70875F86587758D7"
-			x: -9.5d
+			x: -8.0d
 			y: -29.0d
 		}
 		{
 			id: "20A329C5E31804FC"
 			linked_quest: "23D3BED4F1968AD6"
-			x: -9.5d
+			x: -8.0d
 			y: -27.5d
 		}
 		{
 			id: "0D4FCC2A57D9CC38"
 			linked_quest: "73931EAA3EC5C9A9"
-			x: -9.5d
+			x: -8.0d
 			y: -26.0d
 		}
 		{
 			id: "3704FB1B6F971E41"
 			linked_quest: "088FE0CF9D07F9C6"
-			x: -8.0d
+			x: -6.5d
 			y: -29.0d
 		}
 		{
 			id: "25D74DD92BBCFCC3"
 			linked_quest: "363F5B598683A074"
-			x: -8.0d
+			x: -6.5d
 			y: -27.5d
 		}
 		{
 			id: "198F1866583016C8"
 			linked_quest: "7399429099302C6C"
-			x: -8.0d
+			x: -6.5d
 			y: -26.0d
 		}
 		{
 			id: "2DFE5AD66EBD118F"
 			linked_quest: "52FE319F5E176C37"
-			x: -8.0d
+			x: -6.5d
 			y: -24.5d
 		}
 		{
 			id: "1E25708ED026D474"
 			linked_quest: "62BA581B2918BB7B"
-			x: -8.0d
+			x: -6.5d
 			y: -23.0d
 		}
 		{
 			id: "1A81FEB878D2E821"
 			linked_quest: "0514DE717001A062"
-			x: -6.5d
+			x: -5.0d
 			y: -26.0d
 		}
 		{
 			id: "3959159D9A23E4D9"
 			linked_quest: "497833345EB46A47"
-			x: -6.5d
+			x: -5.0d
 			y: -24.5d
 		}
 		{
 			id: "11D511076D303258"
 			linked_quest: "0C0C0FBDE1760110"
-			x: -6.5d
+			x: -5.0d
 			y: -23.0d
 		}
 		{
 			id: "52F4E84F3BFC7D8C"
 			linked_quest: "53A9F3758C218CDC"
-			x: -6.5d
+			x: -5.0d
 			y: -21.5d
 		}
 		{
 			id: "67BF77667CC175ED"
 			linked_quest: "06780B462515CAE2"
-			x: -5.0d
+			x: -3.5d
 			y: -24.5d
 		}
 		{
 			id: "6A645D3E42F96459"
 			linked_quest: "4E77319DB3B30062"
-			x: -5.0d
+			x: -3.5d
 			y: -23.0d
 		}
 		{
 			id: "6A0A1A59BBA636FB"
 			linked_quest: "421DF7880AD00F58"
-			x: -5.0d
+			x: -3.5d
 			y: -21.5d
 		}
 		{
 			id: "44C05669AD959C08"
 			linked_quest: "79428BAEAA7856E1"
-			x: -5.0d
+			x: -3.5d
 			y: -20.0d
 		}
 		{
 			id: "3296AB708049D9CD"
 			linked_quest: "70C2BB4FAA2FB1F2"
-			x: -3.5d
+			x: -2.0d
 			y: -23.0d
 		}
 		{
 			id: "29E17D70643091AF"
 			linked_quest: "744CAEF994308983"
-			x: -3.5d
+			x: -2.0d
 			y: -21.5d
 		}
 		{
 			id: "68F275E2F86A90D9"
 			linked_quest: "30A1077A14212FE2"
-			x: -3.5d
+			x: -2.0d
 			y: -20.0d
 		}
 		{
 			id: "46DF42F4B5D32E52"
 			linked_quest: "3FC351F05F2AC743"
-			x: -3.5d
+			x: -2.0d
 			y: -18.5d
 		}
 		{
 			id: "2962CE7698F4AA72"
 			linked_quest: "0962C36622E385B8"
-			x: -2.0d
+			x: -0.5d
 			y: -21.5d
 		}
 		{
 			id: "435BB61E021C8D1B"
 			linked_quest: "1F79E45EF7810DFF"
-			x: -2.0d
+			x: -0.5d
 			y: -20.0d
 		}
 		{
 			id: "58580939166771A6"
 			linked_quest: "4C5DBB94345FF33B"
-			x: -2.0d
+			x: -0.5d
 			y: -18.5d
 		}
 		{
 			id: "0CF0B36FA1A0ABE2"
 			linked_quest: "707C2E9BA62A60C5"
-			x: -2.0d
+			x: -0.5d
 			y: -17.0d
 		}
 		{
@@ -176,157 +176,157 @@
 			linked_quest: "26D3E2C0599B43B2"
 			title: "String Mesh"
 			x: -0.5d
-			y: -30.5d
+			y: -31.0d
 		}
 		{
 			id: "53126C7D84181F06"
 			linked_quest: "1F5CCE8CFD02903A"
 			x: -0.5d
-			y: -29.0d
+			y: -29.5d
 		}
 		{
 			id: "5F265E199CE1311E"
 			linked_quest: "7014892C27EC22B7"
 			x: -0.5d
-			y: -26.0d
+			y: -26.5d
 		}
 		{
 			id: "7D9D876BC5534377"
 			linked_quest: "6D35986F79B17912"
 			x: -0.5d
-			y: -27.5d
+			y: -28.0d
 		}
 		{
 			id: "70A68B5A1F1C48E3"
 			linked_quest: "6EF7F39B52B77535"
 			x: -0.5d
-			y: -24.5d
+			y: -25.0d
 		}
 		{
 			id: "22440663DF37EEDB"
 			linked_quest: "3D3E637BCB06115F"
 			x: -0.5d
-			y: -23.0d
+			y: -23.5d
 		}
 		{
 			id: "2944146ABA34CB5B"
 			linked_quest: "5C15427D1679D4C3"
-			x: -4.0d
-			y: -30.5d
+			x: -7.5d
+			y: -31.0d
 		}
 		{
 			id: "6D220F5D5B6F0922"
 			linked_quest: "6EB85BBD539AEB57"
 			x: -4.0d
-			y: -29.0d
+			y: -31.0d
 		}
 		{
 			id: "2B30EE9B2767B72D"
 			linked_quest: "5C302CB1A1068EE1"
 			x: -4.0d
-			y: -27.5d
+			y: -29.5d
 		}
 		{
 			id: "607658C8752D8C32"
 			linked_quest: "0F7A1EA1AB52F795"
 			x: -4.0d
-			y: -26.0d
+			y: -28.0d
 		}
 		{
 			id: "0D386219B03B2DDA"
 			linked_quest: "390CB178FC2D2CCC"
 			x: -18.0d
-			y: -27.0d
+			y: -27.5d
 		}
 		{
 			id: "0AA45EE8F8DDAA79"
 			linked_quest: "397C622B06B1165A"
 			x: -19.5d
-			y: -27.0d
+			y: -27.5d
 		}
 		{
 			id: "29B89BAD4869C0B7"
 			linked_quest: "0E88CB5E68212006"
 			x: -19.5d
-			y: -25.5d
+			y: -26.0d
 		}
 		{
 			id: "547840F25F7878E6"
 			linked_quest: "0AB3A8C14C3A0512"
 			x: -16.5d
-			y: -25.5d
+			y: -26.0d
 		}
 		{
 			id: "54316E61B087A5B2"
 			linked_quest: "0FBB34B21DA41C5D"
-			x: -14.0d
-			y: -24.0d
+			x: -14.5d
+			y: -24.5d
 		}
 		{
 			id: "4DEE790493AEC480"
 			linked_quest: "0094C2E72105E8CA"
-			x: -12.5d
-			y: -27.0d
+			x: -13.0d
+			y: -27.5d
 		}
 		{
 			id: "09F13FAB5E31E5A6"
 			linked_quest: "22F56435C5449158"
-			x: -14.0d
-			y: -25.5d
+			x: -14.5d
+			y: -26.0d
 		}
 		{
 			id: "1D9B1F10D853D607"
 			linked_quest: "14417CCE1E25C9C6"
 			x: -18.0d
-			y: -21.5d
+			y: -22.5d
 		}
 		{
 			id: "5906FFC09AD776DA"
 			linked_quest: "27E9698231A04022"
 			x: -19.5d
-			y: -21.5d
+			y: -22.5d
 		}
 		{
 			id: "08B738B0A46F9692"
 			linked_quest: "3477B2FEEF0DF44C"
 			x: -16.5d
-			y: -21.5d
+			y: -22.5d
 		}
 		{
 			id: "29C41C8067A33A92"
 			linked_quest: "22BC7BDE5E132A30"
 			x: -19.5d
-			y: -20.0d
+			y: -21.0d
 		}
 		{
 			id: "5D754D0F151C19E0"
 			linked_quest: "6AC8588F6172617D"
 			x: -18.0d
-			y: -18.5d
+			y: -19.5d
 		}
 		{
 			id: "0E8B8DC038F36861"
 			linked_quest: "63A83F8EC256BE94"
 			x: -16.5d
-			y: -18.5d
+			y: -19.5d
 		}
 		{
 			id: "3677C604206C9227"
 			linked_quest: "71089CC35D7621E2"
 			x: -15.0d
-			y: -17.0d
+			y: -18.0d
 		}
 		{
 			id: "2CC795FE94B7576A"
 			linked_quest: "27BB890712D84505"
 			x: -16.5d
-			y: -17.0d
+			y: -18.0d
 		}
 		{
 			id: "1DD2FE27D7803ABB"
 			linked_quest: "1820787D031EAB15"
-			x: -8.0d
-			y: -18.5d
+			x: -8.5d
+			y: -19.5d
 		}
 		{
 			id: "231466CD54505A13"
@@ -405,7 +405,7 @@
 			]
 			title: "Gravel"
 			x: 1.0d
-			y: -30.5d
+			y: -31.0d
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
@@ -440,7 +440,7 @@
 			]
 			title: "Sand"
 			x: 2.5d
-			y: -30.5d
+			y: -31.0d
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
@@ -470,7 +470,7 @@
 			]
 			title: "Dust"
 			x: 4.0d
-			y: -30.5d
+			y: -31.0d
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
@@ -490,7 +490,7 @@
 			]
 			title: "Blackstone"
 			x: 5.5d
-			y: -30.5d
+			y: -31.0d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -520,7 +520,7 @@
 			]
 			title: "Gravel"
 			x: 1.0d
-			y: -29.0d
+			y: -29.5d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -590,7 +590,7 @@
 			]
 			title: "Sand"
 			x: 2.5d
-			y: -29.0d
+			y: -29.5d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -603,7 +603,7 @@
 			}]
 			title: "Dust"
 			x: 4.0d
-			y: -29.0d
+			y: -29.5d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -623,7 +623,7 @@
 			]
 			title: "Blackstone"
 			x: 5.5d
-			y: -29.0d
+			y: -29.5d
 		}
 		{
 			dependencies: ["6D35986F79B17912"]
@@ -653,7 +653,7 @@
 			]
 			title: "Gravel"
 			x: 1.0d
-			y: -27.5d
+			y: -28.0d
 		}
 		{
 			dependencies: ["6D35986F79B17912"]
@@ -698,7 +698,7 @@
 			]
 			title: "Sand"
 			x: 2.5d
-			y: -27.5d
+			y: -28.0d
 		}
 		{
 			dependencies: ["6D35986F79B17912"]
@@ -723,7 +723,7 @@
 			]
 			title: "Blackstone"
 			x: 5.5d
-			y: -27.5d
+			y: -28.0d
 		}
 		{
 			dependencies: ["7014892C27EC22B7"]
@@ -748,7 +748,7 @@
 			]
 			title: "Gravel"
 			x: 1.0d
-			y: -26.0d
+			y: -26.5d
 		}
 		{
 			dependencies: ["7014892C27EC22B7"]
@@ -773,7 +773,7 @@
 			]
 			title: "Blackstone"
 			x: 5.5d
-			y: -26.0d
+			y: -26.5d
 		}
 		{
 			dependencies: ["6EF7F39B52B77535"]
@@ -794,7 +794,7 @@
 			]
 			title: "Gravel"
 			x: 1.0d
-			y: -24.5d
+			y: -25.0d
 		}
 		{
 			dependencies: ["6EF7F39B52B77535"]
@@ -819,7 +819,7 @@
 			]
 			title: "Blackstone"
 			x: 5.5d
-			y: -24.5d
+			y: -25.0d
 		}
 		{
 			dependencies: ["3D3E637BCB06115F"]
@@ -832,7 +832,7 @@
 			}]
 			title: "Dust"
 			x: 4.0d
-			y: -23.0d
+			y: -23.5d
 		}
 		{
 			dependencies: ["3D3E637BCB06115F"]
@@ -845,7 +845,7 @@
 			}]
 			title: "Blackstone"
 			x: 5.5d
-			y: -23.0d
+			y: -23.5d
 		}
 		{
 			dependencies: ["22BC7BDE5E132A30"]
@@ -856,7 +856,7 @@
 				type: "item"
 			}]
 			x: -19.5d
-			y: -18.5d
+			y: -19.5d
 		}
 		{
 			dependencies: ["6D775A2A1E350BC6"]
@@ -867,7 +867,7 @@
 				type: "item"
 			}]
 			x: -19.5d
-			y: -17.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["170C262792DA7123"]
@@ -878,8 +878,8 @@
 				item: "gtceu:distillation_tower"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -25.5d
+			x: -13.0d
+			y: -26.0d
 		}
 		{
 			dependencies: [
@@ -905,8 +905,8 @@
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -24.0d
+			x: -13.0d
+			y: -24.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -917,7 +917,7 @@
 				type: "item"
 			}]
 			x: -19.5d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -928,7 +928,7 @@
 				type: "item"
 			}]
 			x: -18.0d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -939,7 +939,7 @@
 				type: "item"
 			}]
 			x: -16.5d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -950,7 +950,7 @@
 				type: "item"
 			}]
 			x: -15.0d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -961,7 +961,7 @@
 				type: "item"
 			}]
 			x: -13.5d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -972,7 +972,7 @@
 				type: "item"
 			}]
 			x: -12.0d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -983,7 +983,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -994,7 +994,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -1005,7 +1005,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -1016,7 +1016,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -1027,7 +1027,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -1038,7 +1038,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -1049,7 +1049,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -1060,7 +1060,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -1071,7 +1071,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -1082,7 +1082,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -1093,7 +1093,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -1104,7 +1104,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -14.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -1114,8 +1114,8 @@
 				item: "gtceu:large_cutter"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -14.5d
+			x: 3.0d
+			y: -17.0d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -1125,8 +1125,8 @@
 				item: "gtceu:large_distillery"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -14.5d
+			x: 4.5d
+			y: -17.0d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -1136,8 +1136,8 @@
 				item: "gtceu:large_extractor"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -14.5d
+			x: 6.0d
+			y: -17.0d
 		}
 		{
 			dependencies: ["0E88CB5E68212006"]
@@ -1148,7 +1148,7 @@
 				type: "item"
 			}]
 			x: -19.5d
-			y: -24.0d
+			y: -24.5d
 		}
 		{
 			id: "58AADBEEA6CD4CA6"
@@ -1158,7 +1158,7 @@
 				type: "item"
 			}]
 			x: -15.0d
-			y: -21.5d
+			y: -22.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -1168,8 +1168,8 @@
 				item: "gtceu:t_large_bender"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -18.5d
+			x: -13.0d
+			y: -19.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -1179,8 +1179,8 @@
 				item: "gtceu:t_large_centrifuge"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -18.5d
+			x: -11.5d
+			y: -19.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -1190,8 +1190,8 @@
 				item: "gtceu:t_large_electrolyzer"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -18.5d
+			x: -10.0d
+			y: -19.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -1201,8 +1201,8 @@
 				item: "gtceu:t_large_extruder"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -20.0d
+			x: -13.0d
+			y: -21.0d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -1212,8 +1212,8 @@
 				item: "gtceu:t_large_forming_press"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -20.0d
+			x: -11.5d
+			y: -21.0d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -1223,8 +1223,8 @@
 				item: "gtceu:t_large_lathe"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -20.0d
+			x: -10.0d
+			y: -21.0d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -1234,8 +1234,8 @@
 				item: "gtceu:t_large_macerator"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -21.5d
+			x: -13.0d
+			y: -22.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -1245,8 +1245,8 @@
 				item: "gtceu:t_large_mixer"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -21.5d
+			x: -11.5d
+			y: -22.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -1256,8 +1256,8 @@
 				item: "gtceu:t_large_ore_washer"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -21.5d
+			x: -10.0d
+			y: -22.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -1267,8 +1267,8 @@
 				item: "gtceu:large_rock_crusher"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -17.0d
+			x: -13.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -1278,8 +1278,8 @@
 				item: "gtceu:t_large_sifter"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -17.0d
+			x: -11.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -1289,8 +1289,8 @@
 				item: "gtceu:t_large_thermal_centrifuge"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -17.0d
+			x: -10.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -1300,8 +1300,8 @@
 				item: "gtceu:t_large_wiremill"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -20.0d
+			x: -8.5d
+			y: -21.0d
 		}
 		{
 			dependencies: [
@@ -1336,8 +1336,8 @@
 				item: "gtceu:mega_vacuum_freezer"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -17.0d
+			x: -8.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["2F4B998D20856E2B"]
@@ -1349,7 +1349,7 @@
 				type: "item"
 			}]
 			x: -18.0d
-			y: -20.0d
+			y: -21.0d
 		}
 		{
 			dependencies: ["4B51B15B49620F57"]
@@ -1359,7 +1359,7 @@
 				item: "gtceu:cupronickel_coil_block"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -9.5d
 			y: -32.5d
 		}
 		{
@@ -1374,7 +1374,7 @@
 				item: "gtceu:kanthal_coil_block"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -8.0d
 			y: -32.5d
 		}
 		{
@@ -1389,7 +1389,7 @@
 				item: "gtceu:nichrome_coil_block"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.5d
 			y: -32.5d
 		}
 		{
@@ -1404,7 +1404,7 @@
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.0d
 			y: -32.5d
 		}
 		{
@@ -1419,7 +1419,7 @@
 				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -3.5d
 			y: -32.5d
 		}
 		{
@@ -1434,7 +1434,7 @@
 				item: "gtceu:naquadah_coil_block"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.0d
 			y: -32.5d
 		}
 		{
@@ -1449,7 +1449,7 @@
 				item: "gtceu:trinium_coil_block"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -0.5d
 			y: -32.5d
 		}
 		{
@@ -1464,7 +1464,7 @@
 				item: "gtceu:tritanium_coil_block"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: -32.5d
 		}
 		{
@@ -1475,7 +1475,7 @@
 				item: "kubejs:zalloy_coil_block"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: -32.5d
 		}
 		{
@@ -1514,8 +1514,8 @@
 				}
 			]
 			title: "Basic Chips"
-			x: -2.5d
-			y: -30.5d
+			x: -6.0d
+			y: -31.0d
 		}
 		{
 			dependencies: ["6EB85BBD539AEB57"]
@@ -1549,7 +1549,7 @@
 			]
 			title: "Better Chips"
 			x: -2.5d
-			y: -29.0d
+			y: -31.0d
 		}
 		{
 			dependencies: ["0F7A1EA1AB52F795"]
@@ -1561,7 +1561,7 @@
 			}]
 			title: "Highly Advanced Chips"
 			x: -2.5d
-			y: -26.0d
+			y: -28.0d
 		}
 		{
 			dependencies: ["5C302CB1A1068EE1"]
@@ -1580,7 +1580,7 @@
 			]
 			title: "Advanced Chips"
 			x: -2.5d
-			y: -27.5d
+			y: -29.5d
 		}
 		{
 			disable_toast: true
@@ -1598,7 +1598,7 @@
 				}
 			]
 			x: -2.5d
-			y: -24.5d
+			y: -26.5d
 		}
 		{
 			dependencies: [
@@ -1613,7 +1613,7 @@
 				type: "item"
 			}]
 			x: -18.0d
-			y: -25.5d
+			y: -26.0d
 		}
 		{
 			dependencies: [
@@ -1628,7 +1628,7 @@
 				type: "item"
 			}]
 			x: -18.0d
-			y: -24.0d
+			y: -24.5d
 		}
 		{
 			dependencies: ["17C1292018AE363E"]
@@ -1639,8 +1639,8 @@
 				item: "gtceu:cleanroom"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -27.0d
+			x: -14.5d
+			y: -27.5d
 		}
 		{
 			dependencies: ["3D0F6CA8028C074B"]
@@ -1652,7 +1652,7 @@
 				type: "item"
 			}]
 			x: -16.5d
-			y: -27.0d
+			y: -27.5d
 		}
 		{
 			dependencies: [
@@ -1678,7 +1678,7 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: -9.5d
+			x: -8.0d
 			y: -23.5d
 		}
 		{
@@ -1692,6 +1692,116 @@
 			}]
 			x: -18.0d
 			y: -29.5d
+		}
+		{
+			dependencies: ["62BA581B2918BB7B"]
+			id: "6C6BD459EC785524"
+			tasks: [{
+				id: "02B80B4707C41992"
+				item: "kubejs:iv_universal_circuit"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -23.0d
+		}
+		{
+			dependencies: ["52FE319F5E176C37"]
+			id: "2C1F52216F0003E6"
+			tasks: [{
+				id: "7CD0CAE01546EEB9"
+				item: "kubejs:ev_universal_circuit"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -24.5d
+		}
+		{
+			dependencies: ["73931EAA3EC5C9A9"]
+			id: "4CDBB14A234A17CC"
+			tasks: [{
+				id: "62DFADAAB182EEAF"
+				item: "kubejs:hv_universal_circuit"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -26.0d
+		}
+		{
+			dependencies: ["7836F17B34B47B16"]
+			id: "5E106516E1301149"
+			tasks: [{
+				id: "60BB405CE6E39232"
+				item: "kubejs:mv_universal_circuit"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -27.5d
+		}
+		{
+			dependencies: ["20A12F3B992762F0"]
+			id: "088E1B8DCADB8E5F"
+			tasks: [{
+				id: "0663B9E066B17558"
+				item: "kubejs:lv_universal_circuit"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -29.0d
+		}
+		{
+			dependencies: ["3B81632EF4586280"]
+			id: "725838B2E5E0F1ED"
+			tasks: [{
+				id: "03CF650CB7C72095"
+				item: "kubejs:ulv_universal_circuit"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -30.5d
+		}
+		{
+			dependencies: ["53A9F3758C218CDC"]
+			id: "780DE9C5FAC1A07B"
+			tasks: [{
+				id: "60F21FFB33D8FCB2"
+				item: "kubejs:luv_universal_circuit"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -21.5d
+		}
+		{
+			dependencies: ["79428BAEAA7856E1"]
+			id: "68F9735CB776A7A5"
+			tasks: [{
+				id: "5A0D53C0B8BFACF3"
+				item: "kubejs:zpm_universal_circuit"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["3FC351F05F2AC743"]
+			id: "0D4D54F0410EB78A"
+			tasks: [{
+				id: "753E7D945E8041B9"
+				item: "kubejs:uv_universal_circuit"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -18.5d
+		}
+		{
+			dependencies: ["707C2E9BA62A60C5"]
+			id: "435A9E0547D1D700"
+			tasks: [{
+				id: "52E18B22878011BB"
+				item: "kubejs:uhv_universal_circuit"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -17.0d
 		}
 	]
 	title: "Line Of Progression"

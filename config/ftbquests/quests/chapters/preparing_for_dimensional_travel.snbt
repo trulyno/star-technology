@@ -744,7 +744,7 @@
 				}
 			]
 			title: "This is what you have been waiting for"
-			x: 3.5d
+			x: 3.0d
 			y: -3.5d
 		}
 		{
@@ -763,7 +763,7 @@
 				title: "Get Abydos Coordinates"
 				type: "checkmark"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: -6.5d
 		}
 		{
@@ -775,7 +775,7 @@
 				title: "STOP!!! CONTENT NOT YET READY!"
 				type: "checkmark"
 			}]
-			x: 6.0d
+			x: 5.5d
 			y: -3.5d
 		}
 		{

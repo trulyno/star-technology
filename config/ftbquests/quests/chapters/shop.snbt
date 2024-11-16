@@ -1,12 +1,19 @@
 {
-	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "shop"
 	group: "28726466D987C725"
 	icon: "kubejs:coin"
-	id: "37A847E834E8225E"
-	order_index: 5
+	id: "3CEC7F7BAD54E4C6"
+	images: [{
+		height: 5.0d
+		image: "kubejs:item/coin"
+		rotation: 0.0d
+		width: 5.0d
+		x: 0.0d
+		y: -4.5d
+	}]
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -29,8 +36,8 @@
 				type: "item"
 			}]
 			title: "Bronze"
-			x: -4.0d
-			y: -2.5d
+			x: -5.0d
+			y: -3.5d
 		}
 		{
 			can_repeat: true
@@ -51,8 +58,8 @@
 				type: "item"
 			}]
 			title: "Gravel"
-			x: -1.0d
-			y: -2.5d
+			x: -5.0d
+			y: -2.0d
 		}
 		{
 			can_repeat: true
@@ -73,8 +80,8 @@
 				type: "item"
 			}]
 			title: "Wood"
-			x: -3.0d
-			y: -2.5d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
 			can_repeat: true
@@ -121,8 +128,8 @@
 				}
 			]
 			title: "Enchant your Flint Mesh with Fortune"
-			x: -2.5d
-			y: -5.5d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -176,8 +183,8 @@
 				type: "item"
 			}]
 			title: "Bus/Hatch Pack"
-			x: -3.5d
-			y: -1.5d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			can_repeat: true
@@ -222,8 +229,8 @@
 				type: "item"
 			}]
 			title: "Jet Boots"
-			x: 0.0d
-			y: -2.5d
+			x: -3.5d
+			y: -5.5d
 		}
 		{
 			can_repeat: true
@@ -271,8 +278,8 @@
 				type: "item"
 			}]
 			title: "Basic Circuit Components"
-			x: 4.0d
-			y: -2.5d
+			x: -3.5d
+			y: -4.0d
 		}
 		{
 			can_repeat: true
@@ -294,7 +301,7 @@
 				type: "item"
 			}]
 			title: "Wafers"
-			x: 1.0d
+			x: -3.5d
 			y: -2.5d
 		}
 		{
@@ -329,7 +336,7 @@
 			}]
 			title: "Magnet"
 			x: 2.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			can_repeat: true
@@ -363,8 +370,8 @@
 				type: "item"
 			}]
 			title: "Flux Networks Connectors Pack"
-			x: 3.0d
-			y: -2.5d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
 			can_repeat: true
@@ -386,8 +393,8 @@
 				type: "item"
 			}]
 			title: "Steel"
-			x: -3.5d
-			y: -3.5d
+			x: -6.0d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -409,8 +416,8 @@
 				type: "item"
 			}]
 			title: "Aluminium"
-			x: -2.5d
-			y: -3.5d
+			x: -4.5d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -432,8 +439,8 @@
 				type: "item"
 			}]
 			title: "Stainless Steel"
-			x: -1.5d
-			y: -3.5d
+			x: -3.0d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -455,8 +462,8 @@
 				type: "item"
 			}]
 			title: "Titanium"
-			x: -0.5d
-			y: -3.5d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -478,8 +485,8 @@
 				type: "item"
 			}]
 			title: "Tungsten Steel"
-			x: 0.5d
-			y: -3.5d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -502,7 +509,7 @@
 			}]
 			title: "Rhodium Plated Palladium"
 			x: 1.5d
-			y: -3.5d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -524,8 +531,8 @@
 				type: "item"
 			}]
 			title: "Naquadah Alloy"
-			x: 2.5d
-			y: -3.5d
+			x: 3.0d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -547,8 +554,8 @@
 				type: "item"
 			}]
 			title: "Darmstadtium"
-			x: 3.5d
-			y: -3.5d
+			x: 4.5d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -570,8 +577,8 @@
 				type: "item"
 			}]
 			title: "Neutronium"
-			x: 4.5d
-			y: -3.5d
+			x: 6.0d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -593,8 +600,8 @@
 				type: "item"
 			}]
 			title: "LV Circuits"
-			x: -4.0d
-			y: -4.5d
+			x: -6.0d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
@@ -616,8 +623,8 @@
 				type: "item"
 			}]
 			title: "MV Circuits"
-			x: -3.0d
-			y: -4.5d
+			x: -4.5d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
@@ -639,8 +646,8 @@
 				type: "item"
 			}]
 			title: "HV Circuits"
-			x: -2.0d
-			y: -4.5d
+			x: -3.0d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
@@ -662,8 +669,8 @@
 				type: "item"
 			}]
 			title: "EV Circuits"
-			x: -1.0d
-			y: -4.5d
+			x: -1.5d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
@@ -686,7 +693,7 @@
 			}]
 			title: "IV Circuits"
 			x: 0.0d
-			y: -4.5d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
@@ -708,8 +715,8 @@
 				type: "item"
 			}]
 			title: "LuV Circuits"
-			x: 1.0d
-			y: -4.5d
+			x: 1.5d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
@@ -731,8 +738,8 @@
 				type: "item"
 			}]
 			title: "ZPM Circuits"
-			x: 2.0d
-			y: -4.5d
+			x: 3.0d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
@@ -754,8 +761,8 @@
 				type: "item"
 			}]
 			title: "UV Circuits"
-			x: 3.0d
-			y: -4.5d
+			x: 4.5d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
@@ -776,8 +783,8 @@
 				type: "item"
 			}]
 			title: "UHV Circuits"
-			x: 4.0d
-			y: -4.5d
+			x: 6.0d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
@@ -824,8 +831,8 @@
 				}
 			]
 			title: "Enchant your String Mesh with Fortune"
-			x: -3.5d
-			y: -5.5d
+			x: 1.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -872,8 +879,8 @@
 				}
 			]
 			title: "Enchant your Iron Mesh with Fortune"
-			x: -1.5d
-			y: -5.5d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -920,8 +927,8 @@
 				}
 			]
 			title: "Enchant your Diamond Mesh with Fortune"
-			x: -0.5d
-			y: -5.5d
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -968,8 +975,8 @@
 				}
 			]
 			title: "Enchant your Emerald Mesh with Fortune"
-			x: 0.5d
-			y: -5.5d
+			x: 5.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -1016,8 +1023,8 @@
 				}
 			]
 			title: "Enchant your Netherite Mesh with Fortune"
-			x: 1.5d
-			y: -5.5d
+			x: 6.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -1064,8 +1071,8 @@
 				}
 			]
 			title: "Enchant your String Mesh with Efficiency"
-			x: -3.0d
-			y: -6.5d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -1112,8 +1119,8 @@
 				}
 			]
 			title: "Enchant your Flint Mesh with Efficiency"
-			x: -2.0d
-			y: -6.5d
+			x: -2.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -1160,8 +1167,8 @@
 				}
 			]
 			title: "Enchant your Iron Mesh with Efficiency"
-			x: -1.0d
-			y: -6.5d
+			x: -3.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -1208,8 +1215,8 @@
 				}
 			]
 			title: "Enchant your Diamond Mesh with Efficiency"
-			x: 0.0d
-			y: -6.5d
+			x: -4.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -1256,8 +1263,8 @@
 				}
 			]
 			title: "Enchant your Emerald Mesh with Efficiency"
-			x: 1.0d
-			y: -6.5d
+			x: -5.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -1304,12 +1311,15 @@
 				}
 			]
 			title: "Enchant your Netherite Mesh with Efficiency"
-			x: 2.0d
-			y: -6.5d
+			x: -6.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
-			dependencies: ["26D3E2C0599B43B2"]
+			dependencies: [
+				"26D3E2C0599B43B2"
+				"38F6D390818E34A1"
+			]
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:string_mesh"
@@ -1367,12 +1377,15 @@
 				}
 			]
 			title: "Enchant your Fortune String Mesh with Efficiency"
-			x: -3.5d
-			y: -7.5d
+			x: 1.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["26D3E2C0599B43B2"]
+			dependencies: [
+				"26D3E2C0599B43B2"
+				"1F38B36608488252"
+			]
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:string_mesh"
@@ -1430,12 +1443,15 @@
 				}
 			]
 			title: "Enchant your Efficiency String Mesh with Fortune"
-			x: -3.0d
-			y: -8.5d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["1F5CCE8CFD02903A"]
+			dependencies: [
+				"1F5CCE8CFD02903A"
+				"694978682B1EF055"
+			]
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:flint_mesh"
@@ -1493,12 +1509,15 @@
 				}
 			]
 			title: "Enchant your Fortune Flint Mesh with Efficiency"
-			x: -2.5d
-			y: -7.5d
+			x: 2.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["1F5CCE8CFD02903A"]
+			dependencies: [
+				"1F5CCE8CFD02903A"
+				"533025EDBB0EFDDC"
+			]
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:flint_mesh"
@@ -1556,12 +1575,15 @@
 				}
 			]
 			title: "Enchant your Efficiency Flint Mesh with Fortune"
-			x: -2.0d
-			y: -8.5d
+			x: -2.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["6D35986F79B17912"]
+			dependencies: [
+				"6D35986F79B17912"
+				"44413FB3A6716F5A"
+			]
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:iron_mesh"
@@ -1619,12 +1641,15 @@
 				}
 			]
 			title: "Enchant your Fortune Iron Mesh with Efficiency"
-			x: -1.5d
-			y: -7.5d
+			x: 3.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["6D35986F79B17912"]
+			dependencies: [
+				"6D35986F79B17912"
+				"3A9A3318D7BAA784"
+			]
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:iron_mesh"
@@ -1682,12 +1707,15 @@
 				}
 			]
 			title: "Enchant your Efficiency Iron Mesh with Fortune"
-			x: -1.0d
-			y: -8.5d
+			x: -3.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["7014892C27EC22B7"]
+			dependencies: [
+				"7014892C27EC22B7"
+				"6357640D88FA93C2"
+			]
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:diamond_mesh"
@@ -1745,12 +1773,15 @@
 				}
 			]
 			title: "Enchant your Fortune Diamond Mesh with Efficiency"
-			x: -0.5d
-			y: -7.5d
+			x: 4.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["7014892C27EC22B7"]
+			dependencies: [
+				"7014892C27EC22B7"
+				"22AD388EDD1E3E5B"
+			]
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:diamond_mesh"
@@ -1808,12 +1839,15 @@
 				}
 			]
 			title: "Enchant your Efficiency Diamond Mesh with Fortune"
-			x: 0.0d
-			y: -8.5d
+			x: -4.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["6EF7F39B52B77535"]
+			dependencies: [
+				"6EF7F39B52B77535"
+				"4FB2E6761DC8D654"
+			]
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:emerald_mesh"
@@ -1871,12 +1905,15 @@
 				}
 			]
 			title: "Enchant your Fortune Emerald Mesh with Efficiency"
-			x: 0.5d
-			y: -7.5d
+			x: 5.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["6EF7F39B52B77535"]
+			dependencies: [
+				"6EF7F39B52B77535"
+				"638037CD7EE74995"
+			]
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:emerald_mesh"
@@ -1934,12 +1971,15 @@
 				}
 			]
 			title: "Enchant your Efficiency Emerald Mesh with Fortune"
-			x: 1.0d
-			y: -8.5d
+			x: -5.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["3D3E637BCB06115F"]
+			dependencies: [
+				"3D3E637BCB06115F"
+				"3CA677F7BD2232DD"
+			]
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:netherite_mesh"
@@ -1997,12 +2037,15 @@
 				}
 			]
 			title: "Enchant your Fortune Netherite Mesh with Efficiency"
-			x: 1.5d
-			y: -7.5d
+			x: 6.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["3D3E637BCB06115F"]
+			dependencies: [
+				"3D3E637BCB06115F"
+				"00727DFA86DC4813"
+			]
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:netherite_mesh"
@@ -2060,8 +2103,8 @@
 				}
 			]
 			title: "Enchant your Efficiency Netherite Mesh with Fortune"
-			x: 2.0d
-			y: -8.5d
+			x: -6.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
@@ -2114,8 +2157,8 @@
 				}
 			]
 			title: "Enchant your String Mesh with Fortune and Efficiency"
-			x: -3.5d
-			y: -9.5d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			can_repeat: true
@@ -2168,8 +2211,8 @@
 				}
 			]
 			title: "Enchant your Flint Mesh with Fortune and Efficiency"
-			x: -2.5d
-			y: -9.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			can_repeat: true
@@ -2222,8 +2265,8 @@
 				}
 			]
 			title: "Enchant your Iron Mesh with Fortune and Efficiency"
-			x: -1.5d
-			y: -9.5d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
@@ -2276,8 +2319,8 @@
 				}
 			]
 			title: "Enchant your Diamond Mesh with Fortune and Efficiency"
-			x: -0.5d
-			y: -9.5d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			can_repeat: true
@@ -2330,8 +2373,8 @@
 				}
 			]
 			title: "Enchant your Emerald Mesh with Fortune and Efficiency"
-			x: 0.5d
-			y: -9.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			can_repeat: true
@@ -2384,8 +2427,8 @@
 				}
 			]
 			title: "Enchant your Netherite Mesh with Fortune and Efficiency"
-			x: 1.5d
-			y: -9.5d
+			x: 0.0d
+			y: 7.0d
 		}
 		{
 			can_repeat: true
@@ -2406,8 +2449,8 @@
 				type: "item"
 			}]
 			title: "Charcoal"
-			x: -2.0d
-			y: -2.5d
+			x: 5.0d
+			y: -3.5d
 		}
 		{
 			icon: {
@@ -2526,8 +2569,8 @@
 				type: "item"
 			}]
 			title: "Starting Gear"
-			x: -2.5d
-			y: -1.5d
+			x: 3.5d
+			y: -2.5d
 		}
 		{
 			can_repeat: true
@@ -2708,8 +2751,8 @@
 				type: "item"
 			}]
 			title: "Tool Pack"
-			x: -1.5d
-			y: -1.5d
+			x: 3.5d
+			y: -4.0d
 		}
 		{
 			icon: "effortlessbuilding:elastic_hand"
@@ -2750,8 +2793,8 @@
 				type: "item"
 			}]
 			title: "Effortless Building Pack"
-			x: -0.5d
-			y: -1.5d
+			x: 3.5d
+			y: -5.5d
 		}
 	]
 	title: "Shop"
