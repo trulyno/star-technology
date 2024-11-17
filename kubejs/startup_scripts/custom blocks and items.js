@@ -1,4 +1,3 @@
-
 // Custom Items
 StartupEvents.registry('item', event => {
     event.create('naquadic_netherite_fibers')
@@ -7,61 +6,61 @@ StartupEvents.registry('item', event => {
         .tooltip('The strongest armor material');
 
     event.create('crude_stargate_rod')
-        .texture('kubejs:item/crude_stargate_rod')
+        .texture('kubejs:item/gate_items/crude_stargate_rod')
         .rarity('rare')
         .tooltip("It doesn't seem ready for use quite yet...");
 
     event.create('stargate_rod')
-        .texture('kubejs:item/stargate_rod')
+        .texture('kubejs:item/gate_items/stargate_rod')
         .rarity('epic')
         .tooltip('The muscles of a stargate, if you will...');
 
     event.create('runic_engraved_plating')
         .displayName('Runic-Engraved Plating')
-        .texture('kubejs:item/rune_engraved_plating')
+        .texture('kubejs:item/gate_items/rune_engraved_plating')
         .rarity('epic')
         .tooltip('Mikerooni + Runes = Mikerunies');
 
     event.create('runic_pathway_engraved_plating')
         .displayName('Runic Pathway-Engraved Plating')
-        .texture('kubejs:item/runic_pathway_engraved_plating')
+        .texture('kubejs:item/gate_items/runic_pathway_engraved_plating')
         .rarity('rare');
 
     event.create('runic_wave_generator')
         .displayName('Drack-ion Runic Wave Generator')
-        .texture('kubejs:item/drack-ion_runic_wave_generator')
+        .texture('kubejs:item/gate_items/drack-ion_runic_wave_generator')
         .rarity('epic');
 
     event.create('computational_super_matrix')
         .displayName('Computation Supermatrix')
-        .texture('kubejs:item/computation-super-matrix')
+        .texture('kubejs:item/gate_items/computation-super-matrix')
         .rarity('rare');
 
     event.create('thorium_fuel_rod')
         .displayName('Thorium Fuel Rod')
-        .texture('kubejs:item/thorium_fuel_rod');
+        .texture('kubejs:item/nuclear_rods/thorium_fuel_rod');
 
     event.create('highly_enriched_uranium_fuel_rod')
         .displayName('Highly Enriched Uranium Fuel Rod')
         .tooltip('20 BILLION CALORIES :trolllaugh:')
-        .texture('kubejs:item/high_enriched_uranium_fuel_rod');
+        .texture('kubejs:item/nuclear_rods/high_enriched_uranium_fuel_rod');
 
     event.create('low_enriched_uranium_fuel_rod')
         .displayName('Low Enriched Uranium Fuel Rod')
-        .texture('kubejs:item/low_enriched_uranium_fuel_rod');
+        .texture('kubejs:item/nuclear_rods/low_enriched_uranium_fuel_rod');
 
     event.create('depleted_thorium_fuel_rod')
         .displayName('Depleted Thorium Fuel Rod')
-        .texture('kubejs:item/depleted_thorium_fuel_rod');
+        .texture('kubejs:item/nuclear_rods/depleted_thorium_fuel_rod');
 
     event.create('depleted_highly_enriched_uranium_fuel_rod')
         .displayName('Depleted Highly Enriched Uranium Fuel Rod')
         .tooltip('No more 20 billion calories :waaaaaaaaah')
-        .texture('kubejs:item/depleted_high_enriched_uranium_rod');
+        .texture('kubejs:item/nuclear_rods/depleted_high_enriched_uranium_rod');
 
     event.create('depleted_low_enriched_uranium_fuel_rod')
         .displayName('Depleted Low Enriched Uranium Fuel Rod')
-        .texture('kubejs:item/depleted_low_enriched_uranium_rod');
+        .texture('kubejs:item/nuclear_rods/depleted_low_enriched_uranium_rod');
 
     event.create('coin')
         .displayName('StarT Coin')
@@ -122,27 +121,28 @@ StartupEvents.registry('item', event => {
 
     event.create('draconic_stem_cells')
         .displayName('Draconic Stem Cells')
-        .texture('kubejs:item/draconic_stem_cells');
+        .texture('kubejs:item/draconic/draconic_stem_cells');
 
     event.create('lactating_draconic_cells')
         .displayName('Lactating Draconic Cells')
-        .texture('kubejs:item/lactating_draconic_cells');
+        .texture('kubejs:item/draconic/lactating_draconic_cells');
 
     event.create('draconic_brain_matter_cells')
         .displayName('Draconic Brain Matter Cells')
-        .texture('kubejs:item/draconic_brain_matter_cells');
+        .texture('kubejs:item/draconic/draconic_brain_matter_cells');
 
     event.create('draconic_scale_cells')
         .displayName('Draconic Scale Cells')
-        .texture('kubejs:item/draconic_scale_cells');
+        .texture('kubejs:item/draconic/draconic_scale_cells');
 
     event.create('multiblock_upgrade_kit')
         .displayName('Multiblock Upgrade Kit')
-        .texture('kubejs:item/upgrade_kit');
+        .texture('kubejs:item/kits/upgrade_kit');
 
     ['basic', 'regular', 'intermediate', 'advanced', 'elite', 'ultimate'].forEach(tier => {
         event.create(`${tier}_energy_core`)
-            .displayName(`${tier.charAt(0).toUpperCase() + tier.slice(1)} Energy Core`).texture(`kubejs:item/${tier}_energy_core`);
+            .displayName(`${tier.charAt(0).toUpperCase() + tier.slice(1)} Energy Core`)
+            .texture(`kubejs:item/energy_cores/${tier}_energy_core`);
     })
 
     // Mycelium Leather
