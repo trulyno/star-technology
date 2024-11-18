@@ -569,7 +569,7 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			description: ["The Electric Blast Furnace (EBF for short) is a better furnace, which you will need for most of your ingots going forward."]
+			description: ["The Electric Blast Furnace (EBF for short) is a better furnace, which you will need for most of your ingots going forward. If you are curious about how to use the EBF for MV recipes, look at the mechanics chapter, inside the overclock quest."]
 			icon: "gtceu:electric_blast_furnace"
 			id: "56BA79287C4DBE52"
 			rewards: [{
