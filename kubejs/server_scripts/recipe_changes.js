@@ -406,6 +406,31 @@ ServerEvents.recipes(event => {
     event.recipes.create.pressing('kubejs:compressed_mycelium', 'kubejs:mycelium_growth');
     event.smoking('kubejs:smoked_mycelium', 'kubejs:compressed_mycelium');
     event.recipes.create.pressing('minecraft:leather', 'kubejs:smoked_mycelium');
+
+    // Warping recipes
+    [{input: 'architects_palette:abyssaline_lamp', output: 'architects_palette:hadaline_lamp'},
+        {input: 'architects_palette:abyssaline_pillar', output: 'architects_palette:hadaline_pillar'},
+        {input: 'architects_palette:abyssaline_bricks', output: 'architects_palette:hadaline_bricks'},
+        {input: 'architects_palette:chiseled_abyssaline_bricks', output: 'chiseled_architects_palette:chiseled_hadaline_bricks'},
+        {input: 'architects_palette:sunstone', output: 'architects_palette:moonstone'},
+        {input: 'gtceu:steel_ingot', output: 'architects_palette:unobtanium'},
+        {input: 'minecraft:granite', output: 'architects_palette:onyx'},
+        {input: '#minecraft:logs', output: 'architects_palette:twisted_log'},
+        {input: 'architects_palette:abyssaline', output: 'architects_palette:hadaline'},
+        {input: 'architects_palette:abyssaline_tiles', output: 'architects_palette:hadaline_tiles'},
+        {input: '#minecraft:planks', output: 'architects_palette:twisted_planks'},
+        {input: 'minecraft:diorite', output: 'architects_palette:nebulite'},
+        {input: 'architects_palette:rotten_flesh_block', output: 'architects_palette:entrails'},
+        {input: 'minecraft:blackstone', output: 'architects_palette:craterstone'},
+        {input: 'minecraft:andesite', output: 'architects_palette:esoterrack'},
+        {input: 'minecraft:polished_blackstone_bricks', output: 'architects_palette:moonshale_bricks'},
+        {input: 'minecraft:basalt', output: 'architects_palette:moonshale'},
+        {input: '#minecraft:saplings', output: 'architects_palette:twisted_sapling'},
+        {input: '#minecraft:leaves', output: 'architects_palette:twisted_leaves'}
+    ].forEach((prop) => {
+        event.recipes.create.haunting(Item.of(prop.output), Item.of(prop.input));
+    });
+
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {
@@ -423,4 +448,4 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
             event.block.popItemFromFace(Item.of('exnihilosequentia:diorite_pebble'), 'up');
         }
     }
-})
+});
