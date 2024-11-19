@@ -1,61 +1,88 @@
 
 ["Stellar View Client Config"]
 
-	["Stellar View Client Config".client]
-		#Replaces the Vanilla Overworld sky with Stellar View sky
-		replace_overworld = true
-		#Replaces the Vanilla End sky with Stellar View sky
-		replace_end = false
-		#Removes Stars
-		disable_stars = false
-		#Stars will be visible during the day
-		day_stars = false
-		#Makes Stars brighter
-		bright_stars = true
-		#Stars will become smaller the further away they are
-		distance_star_size = true
-		#Stars will become less bright the further away they are
-		distance_star_brightness = true
-		#All stars will have the same brightness
-		uniform_star_brightness = false
-		#All spectral types will be distributed equally, as opposed to a more realistic distribution (About 75% class M stars)
-		equal_spectral_types = false
-		#All stars will have the same color (White)
-		uniform_star_color = false
-		#Disables the Sun
-		disable_sun = false
-		#Disables the Moon
-		disable_moon = false
-		#Disables Moon phases
-		disable_moon_phases = false
-		#Chance of a meteor shower happening each day
-		#Range: 0 ~ 100
-		meteor_shower_chance = 10
-		#Chance of a shooting star appearing each 1000 ticks
-		#Range: 0 ~ 100
-		shooting_star_chance = 10
-		#Specifies the number of days it takes for the Earth to complete one orbit around the Sun
-		#Range: 1 ~ 512
-		overworld_year_length = 96
-		#Controls how much the Overworld sky rotates when moving along the Z-axis
-		#Range: 1 ~ 3000
-		overworld_z_rotation_multiplier = 3000
-		#Specifies Milky Way X position
-		#Range: -45 ~ 45
-		milky_way_x = 0
-		#Specifies Milky Way Y position
-		#Range: -45 ~ 45
-		milky_way_y = 0
-		#Specifies Milky Way Z position
-		#Range: -45 ~ 45
-		milky_way_z = 16
-		#Specifies Milky Way Alpha rotation
-		#Range: 0 ~ 360
-		milky_way_x_axis_rotation = 18
-		#Specifies Milky Way Beta rotation
-		#Range: 0 ~ 360
-		milky_way_y_axis_rotation = 0
-		#Specifies Milky Way Gamma rotation
-		#Range: 0 ~ 360
-		milky_way_z_axis_rotation = 90
+	["Stellar View Client Config"."General Config"]
+
+		["Stellar View Client Config"."General Config".client]
+			#Gets rid of any rotation caused by the view center, making the space XYZ coordinates align with the XYZ directions in Minecraft
+			disable_view_center_rotation = false
+			#Removes Stars
+			disable_stars = false
+			#Makes Stars brighter
+			bright_stars = true
+
+	["Stellar View Client Config"."Overworld Config"]
+
+		["Stellar View Client Config"."Overworld Config".client]
+			#Controls how much the Overworld sky rotates when moving along the Z-axis
+			#Range: 0 ~ 3000
+			overworld_z_rotation_multiplier = 3000
+
+			["Stellar View Client Config"."Overworld Config".client.overworld]
+				#Replaces the Vanilla Overworld sky with Stellar View sky
+				replace_vanilla = true
+				#Prioritizes config over information from resourcepacks
+				config_priority = false
+				#Stars will always be visible, even during daytime
+				stars_always_visible = false
+				#Chance of a meteor shower happening each day
+				#Range: 0 ~ 100
+				meteor_shower_chance = 10
+				#Chance of a shooting star appearing each 1000 ticks
+				#Range: 0 ~ 100
+				shooting_star_chance = 10
+				#Specifies Sol X offset
+				#Range: -120 ~ 120
+				sol_x_offset = 0
+				#Specifies Sol Y offset
+				#Range: -120 ~ 120
+				sol_y_offset = 0
+				#Specifies Sol Z offset
+				#Range: -120 ~ 120
+				sol_z_offset = 0
+				#Specifies Sol X-axis rotation
+				#Range: 0 ~ 360
+				sol_x_rotation = 0
+				#Specifies Sol Y-axis rotation
+				#Range: 0 ~ 360
+				sol_y_rotation = 0
+				#Specifies Sol Z-axis rotation
+				#Range: 0 ~ 360
+				sol_z_rotation = 0
+
+	["Stellar View Client Config"."Nether Config"]
+
+		["Stellar View Client Config"."Nether Config".client]
+
+			["Stellar View Client Config"."Nether Config".client.nether]
+				#Replaces the Vanilla Nether sky with Stellar View sky
+				replace_vanilla = true
+				#Prioritizes config over information from resourcepacks
+				config_priority = false
+				#Stars will always be visible, even during daytime
+				stars_always_visible = false
+				#Chance of a meteor shower happening each day
+				#Range: 0 ~ 100
+				meteor_shower_chance = 10
+				#Chance of a shooting star appearing each 1000 ticks
+				#Range: 0 ~ 100
+				shooting_star_chance = 10
+
+	["Stellar View Client Config"."End Config"]
+
+		["Stellar View Client Config"."End Config".client]
+
+			["Stellar View Client Config"."End Config".client.end]
+				#Replaces the Vanilla End sky with Stellar View sky
+				replace_vanilla = true
+				#Prioritizes config over information from resourcepacks
+				config_priority = false
+				#Stars will always be visible, even during daytime
+				stars_always_visible = true
+				#Chance of a meteor shower happening each day
+				#Range: 0 ~ 100
+				meteor_shower_chance = 10
+				#Chance of a shooting star appearing each 1000 ticks
+				#Range: 0 ~ 100
+				shooting_star_chance = 10
 

@@ -1,9 +1,8 @@
-8 possible world presets found:
-- "minecraft:amplified"
-- "skyblockbuilder:skyblock"
+7 possible world presets found:
 - "minecraft:flat"
 - "minecraft:large_biomes"
+- "skyblockbuilder:skyblock"
 - "minecraft:single_biome_surface"
-- "minecraft:normal"
+- "minecraft:amplified"
 - "minecraft:debug_all_block_states"
-- "exdeorum:void_world"
+- "minecraft:normal"
