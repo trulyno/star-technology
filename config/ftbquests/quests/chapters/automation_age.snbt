@@ -1083,8 +1083,8 @@
 				item: "exmachinis:diamond_upgrade"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 11.5d
+			x: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["6060E79B2D08912D"]
@@ -1148,7 +1148,6 @@
 				"2B695762FC4A7686"
 			]
 			description: ["Distilling each air type will give you access to a variety of diffent chemicals, all of which will be useful in one way or another."]
-			hide_dependent_lines: true
 			id: "39FF89B370D09B88"
 			rewards: [{
 				count: 2
@@ -1519,7 +1518,7 @@
 		{
 			dependencies: [
 				"62BA581B2918BB7B"
-				"39FF89B370D09B88"
+				"2DB216B224F2E8EF"
 			]
 			id: "574ECD841D0D2AD7"
 			rewards: [{
@@ -2269,7 +2268,7 @@
 				item: "gtceu:alloy_blast_smelter"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 13.5d
 			y: 11.5d
 		}
 		{
@@ -2292,7 +2291,23 @@
 				item: "gtceu:nuclear_reactor"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 9.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"39FF89B370D09B88"
+				"68865F1DDBFFFACE"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependent_lines: true
+			id: "2DB216B224F2E8EF"
+			tasks: [{
+				id: "5BC0FD5122614E2B"
+				item: "gtceu:radon_bucket"
+				type: "item"
+			}]
+			x: 7.5d
 			y: 11.5d
 		}
 	]

@@ -122,7 +122,7 @@
 		{
 			dependencies: [
 				"6F008C23D5DE50D6"
-				"39FF89B370D09B88"
+				"2DB216B224F2E8EF"
 			]
 			icon: "gtceu:qbit_cpu_chip"
 			id: "1E1DF0982ECDD7D0"
