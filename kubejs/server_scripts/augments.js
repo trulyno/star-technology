@@ -7,21 +7,21 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(28);
 
-    event.recipes.gtceu.assembler('upgrade_augment_2')
+    event.recipes.gtceu.assembler('mv_kit')
         .itemInputs('4x gtceu:electrum_plate', 'thermal:signalum_glass', 'gtceu:steel_gear', '#gtceu:circuits/mv')
         .inputFluids('gtceu:redstone 720')
         .itemOutputs(Item.of('kubejs:mv_upgrade_kit', '{AugmentData:{Type: Upgrade, BaseMod:16f}}'))
         .duration(600)
         .EUt(112);
 
-    event.recipes.gtceu.assembler('upgrade_augment_3')
+    event.recipes.gtceu.assembler('hv_kit')
         .itemInputs('4x gtceu:lumium_plate', 'thermal:lumium_glass', 'gtceu:aluminium_gear', '#gtceu:circuits/hv')
         .inputFluids('gtceu:glowstone 720')
         .itemOutputs(Item.of('kubejs:hv_upgrade_kit', '{AugmentData:{Type: Upgrade, BaseMod:64f}}'))
         .duration(600)
         .EUt(496);
 
-    event.recipes.gtceu.assembler('upgrade_augment_4')
+    event.recipes.gtceu.assembler('ev_kit')
         .itemInputs('4x gtceu:soul_infused_plate', 'thermal:enderium_glass', 'gtceu:stainless_steel_gear', '#gtceu:circuits/ev')
         .inputFluids('thermal:ender 750')
         .itemOutputs(Item.of('kubejs:ev_upgrade_kit', '{AugmentData:{Type: Upgrade, BaseMod:256f}}'))
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
         .EUt(1625);
 
     //rfc kits
-    event.shaped(Item.of('kubejs:ulv_rfc_kit'), [
+    event.shaped(Item.of('kubejs:ulv_rfc_kit', '{AugmentData:{Type: RF, RFMax:4f, RFXfer:4f}}'), [
         ' G ',
         'SCS',
         ' G '
@@ -91,36 +91,36 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_smelter('kubejs:lv_rfc_kit')
         .itemInputs('kubejs:ulv_rfc_kit', '2x gtceu:soul_infused_gear')
-        .itemOutputs(Item.of('kubejs:lv_rfc_kit'))
+        .itemOutputs(Item.of('kubejs:lv_rfc_kit', '{AugmentData:{Type: RF, RFMax:8f, RFXfer:8f}}'))
         .duration(600)
         .EUt(28);
 
     event.recipes.gtceu.alloy_smelter('mv_rfc_kit')
         .itemInputs('kubejs:lv_rfc_kit', '2x gtceu:signalum_gear')
-        .itemOutputs(Item.of('kubejs:mv_rfc_kit'))
+        .itemOutputs(Item.of('kubejs:mv_rfc_kit', '{AugmentData:{Type: RF, RFMax:12f, RFXfer:12f}}'))
         .duration(600)
         .EUt(112);
 
     event.recipes.gtceu.alloy_smelter('hv_rfc_kit')
         .itemInputs('kubejs:mv_rfc_kit', '2x gtceu:lumium_gear')
-        .itemOutputs(Item.of('kubejs:hv_rfc_kit'))
+        .itemOutputs(Item.of('kubejs:hv_rfc_kit', '{AugmentData:{Type: RF, RFMax:16f, RFXfer:16f}}'))
         .duration(600)
         .EUt(496);
 
     event.recipes.gtceu.alloy_smelter('ev_rfc_kit')
         .itemInputs('kubejs:hv_rfc_kit', '2x gtceu:enderium_gear')
-        .itemOutputs(Item.of('kubejs:ev_rfc_kit'))
+        .itemOutputs(Item.of('kubejs:ev_rfc_kit', '{AugmentData:{Type: RF, RFMax:20f, RFXfer:20f}}'))
         .duration(600)
         .EUt(1625);
 
     event.recipes.gtceu.alloy_smelter('iv_rfc_kit')
         .itemInputs('kubejs:ev_rfc_kit', '2x gtceu:shellite_gear')
-        .itemOutputs(Item.of('kubejs:iv_rfc_kit'))
+        .itemOutputs(Item.of('kubejs:iv_rfc_kit', '{AugmentData:{Type: RF, RFMax:24f, RFXfer:24f}}'))
         .duration(600)
         .EUt(6500);
 
     //rfs
-    event.shaped(Item.of('kubejs:ulv_rfs_kit'), [
+    event.shaped(Item.of('kubejs:ulv_rfs_kit', '{AugmentData:{Type: RF, RFMax:6f, RFXfer:2f}}'), [
         ' S ',
         'GCG',
         ' G '
@@ -132,36 +132,36 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_smelter('lv_rfs_kit')
         .itemInputs('kubejs:ulv_rfs_kit', '2x gtceu:soul_infused_gear')
-        .itemOutputs(Item.of('kubejs:lv_rfs_kit'))
+        .itemOutputs(Item.of('kubejs:lv_rfs_kit', '{AugmentData:{Type: RF, RFMax:10f, RFXfer:4f}}'))
         .duration(600)
         .EUt(28);
 
     event.recipes.gtceu.alloy_smelter('mv_rfs_kit')
         .itemInputs('kubejs:lv_rfs_kit', '2x gtceu:signalum_gear')
-        .itemOutputs(Item.of('kubejs:mv_rfs_kit'))
+        .itemOutputs(Item.of('kubejs:mv_rfs_kit', '{AugmentData:{Type: RF, RFMax:14f, RFXfer:6f}}'))
         .duration(600)
         .EUt(112);
 
     event.recipes.gtceu.alloy_smelter('hv_rfs_kit')
         .itemInputs('kubejs:mv_rfs_kit', '2x gtceu:lumium_gear')
-        .itemOutputs(Item.of('kubejs:hv_rfs_kit'))
+        .itemOutputs(Item.of('kubejs:hv_rfs_kit', '{AugmentData:{Type: RF, RFMax:18f, RFXfer:8f}}'))
         .duration(600)
         .EUt(496);
 
     event.recipes.gtceu.alloy_smelter('ev_rfs_kit')
         .itemInputs('kubejs:hv_rfs_kit', '2x gtceu:enderium_gear')
-        .itemOutputs(Item.of('kubejs:ev_rfs_kit'))
+        .itemOutputs(Item.of('kubejs:ev_rfs_kit', '{AugmentData:{Type: RF, RFMax:22f, RFXfer:10f}}'))
         .duration(600)
         .EUt(1625);
 
     event.recipes.gtceu.alloy_smelter('iv_rfs_kit')
         .itemInputs('kubejs:ev_rfs_kit', '2x gtceu:shellite_gear')
-        .itemOutputs(Item.of('kubejs:iv_rfs_kit'))
+        .itemOutputs(Item.of('kubejs:iv_rfs_kit', '{AugmentData:{Type: RF, RFMax:26f, RFXfer:12f}}'))
         .duration(600)
         .EUt(6500);
 
     //rft
-    event.shaped(Item.of('kubejs:ulv_rft_kit'), [
+    event.shaped(Item.of('kubejs:ulv_rft_kit', '{AugmentData:{Type: RF, RFMax:2f, RFXfer:6f}}'), [
         ' S ',
         'SCS',
         ' G '
@@ -173,36 +173,36 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_smelter('lv_rft_kit')
         .itemInputs('kubejs:ulv_rft_kit', '2x gtceu:soul_infused_gear')
-        .itemOutputs(Item.of('kubejs:lv_rft_kit'))
+        .itemOutputs(Item.of('kubejs:lv_rft_kit', '{AugmentData:{Type: RF, RFMax:4f, RFXfer:10f}}'))
         .duration(600)
         .EUt(28);
 
     event.recipes.gtceu.alloy_smelter('mv_rft_kit')
         .itemInputs('kubejs:lv_rft_kit', '2x gtceu:signalum_gear')
-        .itemOutputs(Item.of('kubejs:mv_rft_kit'))
+        .itemOutputs(Item.of('kubejs:mv_rft_kit', '{AugmentData:{Type: RF, RFMax:6f, RFXfer:14f}}'))
         .duration(600)
         .EUt(112);
 
     event.recipes.gtceu.alloy_smelter('hv_rft_kit')
         .itemInputs('kubejs:mv_rft_kit', '2x gtceu:lumium_gear')
-        .itemOutputs(Item.of('kubejs:hv_rft_kit'))
+        .itemOutputs(Item.of('kubejs:hv_rft_kit', '{AugmentData:{Type: RF, RFMax:8f, RFXfer:18f}}'))
         .duration(600)
         .EUt(496);
 
     event.recipes.gtceu.alloy_smelter('ev_rft_kit')
         .itemInputs('kubejs:hv_rft_kit', '2x gtceu:enderium_gear')
-        .itemOutputs(Item.of('kubejs:ev_rft_kit'))
+        .itemOutputs(Item.of('kubejs:ev_rft_kit', '{AugmentData:{Type: RF, RFMax:10f, RFXfer:22f}}'))
         .duration(600)
         .EUt(1625);
 
     event.recipes.gtceu.alloy_smelter('iv_rft_kit')
         .itemInputs('kubejs:ev_rft_kit', '2x gtceu:shellite_gear')
-        .itemOutputs(Item.of('kubejs:iv_rft_kit'))
+        .itemOutputs(Item.of('kubejs:iv_rft_kit', '{AugmentData:{Type: RF, RFMax:12f, RFXfer:26f}}'))
         .duration(600)
         .EUt(6500);
 
     //fls
-    event.shaped(Item.of('kubejs:ulv_fls_kit'), [
+    event.shaped(Item.of('kubejs:ulv_fls_kit', '{AugmentData:{Type: Fluid, FluidMax:4f}}'), [
         'RIR',
         'IGI',
         'RIR'
@@ -214,31 +214,31 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_smelter('lv_fls_kit')
         .itemInputs('kubejs:ulv_fls_kit', '2x gtceu:soul_infused_gear')
-        .itemOutputs(Item.of('kubejs:lv_fls_kit'))
+        .itemOutputs(Item.of('kubejs:lv_fls_kit', '{AugmentData:{Type: Fluid, FluidMax:8f}}'))
         .duration(600)
         .EUt(28);
 
     event.recipes.gtceu.alloy_smelter('mv_fls_kit')
         .itemInputs('kubejs:lv_fls_kit', '2x gtceu:signalum_gear')
-        .itemOutputs(Item.of('kubejs:mv_fls_kit'))
+        .itemOutputs(Item.of('kubejs:mv_fls_kit', '{AugmentData:{Type: Fluid, FluidMax:12f}}'))
         .duration(600)
         .EUt(112);
 
     event.recipes.gtceu.alloy_smelter('hv_fls_kit')
         .itemInputs('kubejs:mv_fls_kit', '2x gtceu:lumium_gear')
-        .itemOutputs(Item.of('kubejs:hv_fls_kit'))
+        .itemOutputs(Item.of('kubejs:hv_fls_kit', '{AugmentData:{Type: Fluid, FluidMax:16f}}'))
         .duration(600)
         .EUt(496);
 
     event.recipes.gtceu.alloy_smelter('ev_fls_kit')
         .itemInputs('kubejs:hv_fls_kit', '2x gtceu:enderium_gear')
-        .itemOutputs(Item.of('kubejs:ev_fls_kit'))
+        .itemOutputs(Item.of('kubejs:ev_fls_kit', '{AugmentData:{Type: Fluid, FluidMax:20f}}'))
         .duration(600)
         .EUt(1625);
 
     event.recipes.gtceu.alloy_smelter('iv_fls_kit')
         .itemInputs('kubejs:ev_fls_kit', '2x gtceu:shellite_gear')
-        .itemOutputs(Item.of('kubejs:iv_fls_kit'))
+        .itemOutputs(Item.of('kubejs:iv_fls_kit', '{AugmentData:{Type: Fluid, FluidMax:24f}}'))
         .duration(600)
         .EUt(6500);
 
