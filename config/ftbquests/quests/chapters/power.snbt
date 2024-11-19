@@ -479,54 +479,6 @@
 		}
 		{
 			dependencies: ["614071EB90CB89F5"]
-			id: "3E40CE4FC476739E"
-			shape: "square"
-			tasks: [{
-				id: "08EA7A53187B588E"
-				item: "kubejs:lv_upgrade_kit"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["3E40CE4FC476739E"]
-			id: "0D043BA5C8442DE1"
-			shape: "square"
-			tasks: [{
-				id: "386FE1FBD6C1FCD7"
-				item: "kubejs:mv_upgrade_kit"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["0D043BA5C8442DE1"]
-			id: "707C4C164020AD5C"
-			shape: "square"
-			tasks: [{
-				id: "7DC477616D867666"
-				item: "kubejs:hv_upgrade_kit"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["707C4C164020AD5C"]
-			id: "4D2E4A1F5884BD5B"
-			shape: "square"
-			tasks: [{
-				id: "6897C5E1CA3EBC21"
-				item: "kubejs:ev_upgrade_kit"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["614071EB90CB89F5"]
 			id: "08F1DEFEB060C74C"
 			shape: "square"
 			tasks: [{
@@ -1646,6 +1598,86 @@
 			}]
 			x: -7.0d
 			y: 0.0d
+		}
+		{
+			id: "3A485956C34C8840"
+			tasks: [{
+				id: "23098FEE229E0194"
+				item: {
+					Count: 1
+					id: "kubejs:mv_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 16.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			id: "50DED4576C89E893"
+			tasks: [{
+				id: "0B56EB7746082D00"
+				item: {
+					Count: 1
+					id: "kubejs:lv_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 4.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			id: "3FE17E376E30FFE4"
+			tasks: [{
+				id: "5F12A9B7928071B1"
+				item: {
+					Count: 1
+					id: "kubejs:hv_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 64.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"3FE17E376E30FFE4"
+				"60EB030A899ADE28"
+			]
+			id: "40F4E7B58257EF09"
+			tasks: [{
+				id: "702CE165410C9FCC"
+				item: {
+					Count: 1
+					id: "kubejs:ev_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 256.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -6.0d
 		}
 	]
 	title: "Power"

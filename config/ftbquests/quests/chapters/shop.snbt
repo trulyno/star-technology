@@ -117,6 +117,7 @@
 					consume_items: true
 					id: "63A8C927CCB10956"
 					item: "exnihilosequentia:flint_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -820,6 +821,7 @@
 					consume_items: true
 					id: "425FD56B90832122"
 					item: "exnihilosequentia:string_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -868,6 +870,7 @@
 					consume_items: true
 					id: "571859B8DF7EF7D1"
 					item: "exnihilosequentia:iron_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -916,6 +919,7 @@
 					consume_items: true
 					id: "1722F86CFB5F67A1"
 					item: "exnihilosequentia:diamond_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -964,6 +968,7 @@
 					consume_items: true
 					id: "797B5286B0C89A8A"
 					item: "exnihilosequentia:emerald_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1012,6 +1017,7 @@
 					consume_items: true
 					id: "57A7F2FDACA1B964"
 					item: "exnihilosequentia:netherite_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1060,6 +1066,7 @@
 					consume_items: true
 					id: "661C89B6A3FEDFCD"
 					item: "exnihilosequentia:string_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1108,6 +1115,7 @@
 					consume_items: true
 					id: "7C858C139CF51BFC"
 					item: "exnihilosequentia:flint_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1156,6 +1164,7 @@
 					consume_items: true
 					id: "5E21F03B7225BD29"
 					item: "exnihilosequentia:iron_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1204,6 +1213,7 @@
 					consume_items: true
 					id: "173B5295C7E6D12B"
 					item: "exnihilosequentia:diamond_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1252,6 +1262,7 @@
 					consume_items: true
 					id: "61BEBADDC280347B"
 					item: "exnihilosequentia:emerald_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1300,6 +1311,7 @@
 					consume_items: true
 					id: "671BB96C54B44A18"
 					item: "exnihilosequentia:netherite_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1320,6 +1332,7 @@
 				"26D3E2C0599B43B2"
 				"38F6D390818E34A1"
 			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:string_mesh"
@@ -1366,6 +1379,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1386,6 +1400,7 @@
 				"26D3E2C0599B43B2"
 				"1F38B36608488252"
 			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:string_mesh"
@@ -1432,6 +1447,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1452,6 +1468,7 @@
 				"1F5CCE8CFD02903A"
 				"694978682B1EF055"
 			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:flint_mesh"
@@ -1498,6 +1515,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1518,6 +1536,7 @@
 				"1F5CCE8CFD02903A"
 				"533025EDBB0EFDDC"
 			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:flint_mesh"
@@ -1564,6 +1583,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1584,6 +1604,7 @@
 				"6D35986F79B17912"
 				"44413FB3A6716F5A"
 			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:iron_mesh"
@@ -1630,6 +1651,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1650,6 +1672,7 @@
 				"6D35986F79B17912"
 				"3A9A3318D7BAA784"
 			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:iron_mesh"
@@ -1696,6 +1719,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1716,6 +1740,7 @@
 				"7014892C27EC22B7"
 				"6357640D88FA93C2"
 			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:diamond_mesh"
@@ -1762,6 +1787,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1782,6 +1808,7 @@
 				"7014892C27EC22B7"
 				"22AD388EDD1E3E5B"
 			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:diamond_mesh"
@@ -1828,6 +1855,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1848,6 +1876,7 @@
 				"6EF7F39B52B77535"
 				"4FB2E6761DC8D654"
 			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:emerald_mesh"
@@ -1894,6 +1923,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1914,6 +1944,7 @@
 				"6EF7F39B52B77535"
 				"638037CD7EE74995"
 			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:emerald_mesh"
@@ -1960,6 +1991,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1980,6 +2012,7 @@
 				"3D3E637BCB06115F"
 				"3CA677F7BD2232DD"
 			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:netherite_mesh"
@@ -2026,6 +2059,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2046,6 +2080,7 @@
 				"3D3E637BCB06115F"
 				"00727DFA86DC4813"
 			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
 				id: "exnihilosequentia:netherite_mesh"
@@ -2092,6 +2127,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2109,16 +2145,7 @@
 		{
 			can_repeat: true
 			dependencies: ["26D3E2C0599B43B2"]
-			icon: {
-				Count: 1
-				id: "exnihilosequentia:string_mesh"
-				tag: {
-					Enchantments: [{
-						id: "minecraft:fortune"
-						lvl: 3s
-					}]
-				}
-			}
+			icon: "exnihilosequentia:string_mesh"
 			id: "55AB09B50F6C6180"
 			rewards: [{
 				id: "1A125B2191226FB3"
@@ -2146,6 +2173,7 @@
 					consume_items: true
 					id: "5AC4C4F5843C6759"
 					item: "exnihilosequentia:string_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2200,6 +2228,7 @@
 					consume_items: true
 					id: "4210CD3DA604E36D"
 					item: "exnihilosequentia:flint_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2254,6 +2283,7 @@
 					consume_items: true
 					id: "035D8838C2625767"
 					item: "exnihilosequentia:iron_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2308,6 +2338,7 @@
 					consume_items: true
 					id: "42D22FDF41EF8F4D"
 					item: "exnihilosequentia:diamond_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2362,6 +2393,7 @@
 					consume_items: true
 					id: "7776B050FE4F82C7"
 					item: "exnihilosequentia:emerald_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2416,6 +2448,7 @@
 					consume_items: true
 					id: "438BB80C91F29BF6"
 					item: "exnihilosequentia:netherite_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{

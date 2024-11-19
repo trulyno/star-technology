@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["This questpage was redesigned by KillLaAqua"]
 			id: "56B697F3D73D8A5F"
 			shape: "hexagon"
 			size: 1.5d
