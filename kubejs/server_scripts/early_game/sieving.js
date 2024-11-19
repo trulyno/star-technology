@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
     // gravel and blackstone
     sieve('string', 0.45, gravel, 'gtceu:crushed_iron_ore', false);
     sieve('string', 0.25, gravel, 'gtceu:crushed_magnetite_ore', false);
-    sieve('string', 0.35, gravel, 'gtceu:crushed_copper_ore', false);
+    sieve('string', 0.65, gravel, 'gtceu:crushed_copper_ore', false);
     sieve('string', 0.3, gravel, 'gtceu:crushed_tin_ore', false);
     sieve('string', 0.25, gravel, 'gtceu:crushed_sphalerite_ore', false);
     sieve('string', 0.4, black, 'gtceu:crushed_galena_ore', false);
@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
     sieve('iron', 0.05, gravel, 'gtceu:crushed_vanadium_magnetite_ore', false);
 
     sieve('diamond', 0.12, black, 'gtceu:crushed_molybdenite_ore', false);
-    sieve('diamond', 0.02, black, 'gtceu:crushed_pitchblende_ore', false);
+    sieve('diamond', 0.1, black, 'gtceu:crushed_pitchblende_ore', false);
     sieve('diamond', 0.05, gravel, 'gtceu:crushed_tantalite_ore', false);
     sieve('diamond', 0.075, black, 'gtceu:crushed_ilmenite_ore', false);
     sieve('diamond', 0.18, gravel, 'gtceu:crushed_bauxite_ore', false);
