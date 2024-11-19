@@ -1319,6 +1319,7 @@
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
+			description: ["Used for active transformers and in some other crafting recipes as wire superconductor."]
 			id: "04BFFBF024D019BD"
 			rewards: [{
 				id: "490E264AD034153D"
@@ -1328,25 +1329,6 @@
 			tasks: [{
 				id: "3D08BBB7210575AC"
 				item: "gtceu:indium_tin_barium_titanium_cuprate_ingot"
-				type: "item"
-			}]
-			x: 16.0d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"04BFFBF024D019BD"
-				"5BA69EDC3C223B2C"
-			]
-			id: "000ABDE1A9DB5A32"
-			rewards: [{
-				id: "1A5F74F462B76807"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "038FF8798DCC3360"
-				item: "gtceu:active_transformer"
 				type: "item"
 			}]
 			x: 16.0d
@@ -1377,8 +1359,8 @@
 				}
 			]
 			title: "UHPIC Chips"
-			x: 18.0d
-			y: 6.0d
+			x: 19.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2911EC7333E0E9C5"]
@@ -1410,7 +1392,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2911EC7333E0E9C5"]
@@ -1465,6 +1447,7 @@
 				"3F4C068368F97580"
 				"6131A76D203DE6AB"
 				"5C4593033E521E71"
+				"5BA69EDC3C223B2C"
 			]
 			id: "0B7A0924AFE58559"
 			rewards: [{
@@ -1478,7 +1461,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["35829E28221CB70E"]
@@ -1511,7 +1494,7 @@
 				item: "gtceu:cleaning_maintenance_hatch"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 16.0d
 			y: 4.0d
 		}
 		{
@@ -1566,7 +1549,7 @@
 				type: "item"
 			}]
 			x: 20.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["155947C2913FFA42"]
@@ -1582,7 +1565,7 @@
 				type: "item"
 			}]
 			x: 20.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3BA6406400A63937"]
@@ -1597,8 +1580,8 @@
 				item: "gtceu:naquadah_boule"
 				type: "item"
 			}]
-			x: 20.0d
-			y: 4.0d
+			x: 18.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3325914DB92AEF1B"]
@@ -1614,7 +1597,7 @@
 				type: "item"
 			}]
 			x: 20.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["36C01453717B249D"]
@@ -1630,7 +1613,7 @@
 				type: "item"
 			}]
 			x: 20.0d
-			y: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1707,8 +1690,8 @@
 				type: "item"
 			}]
 			title: "Sterile Cleanroom"
-			x: 17.0d
-			y: 1.0d
+			x: 18.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [

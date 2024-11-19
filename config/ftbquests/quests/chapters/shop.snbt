@@ -584,12 +584,12 @@
 		{
 			can_repeat: true
 			dependencies: ["53E98CFC7934FA67"]
-			icon: { Count: 16, id: "gtceu:basic_electronic_circuit" }
+			icon: "kubejs:lv_universal_circuit"
 			id: "3B0194BB5769AF29"
 			rewards: [{
 				count: 16
 				id: "65C5F9BDC53689F9"
-				item: "gtceu:basic_electronic_circuit"
+				item: "kubejs:lv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -607,12 +607,12 @@
 		{
 			can_repeat: true
 			dependencies: ["7836F17B34B47B16"]
-			icon: { Count: 12, id: "gtceu:good_electronic_circuit" }
+			icon: "kubejs:mv_universal_circuit"
 			id: "7A190A198FE42047"
 			rewards: [{
 				count: 12
 				id: "0C6C599ABEBBBA0D"
-				item: "gtceu:good_electronic_circuit"
+				item: "kubejs:mv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -630,12 +630,12 @@
 		{
 			can_repeat: true
 			dependencies: ["73931EAA3EC5C9A9"]
-			icon: { Count: 10, id: "gtceu:advanced_integrated_circuit" }
+			icon: "kubejs:hv_universal_circuit"
 			id: "2C0031FF5C5B444C"
 			rewards: [{
 				count: 10
 				id: "14A3ED567B1BC3E5"
-				item: "gtceu:advanced_integrated_circuit"
+				item: "kubejs:hv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -653,12 +653,12 @@
 		{
 			can_repeat: true
 			dependencies: ["52FE319F5E176C37"]
-			icon: { Count: 8, id: "gtceu:micro_processor_computer" }
+			icon: "kubejs:ev_universal_circuit"
 			id: "017A2CD82D56969A"
 			rewards: [{
 				count: 8
 				id: "176A1D6DD84ADC3D"
-				item: "gtceu:micro_processor_computer"
+				item: "kubejs:ev_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -676,12 +676,12 @@
 		{
 			can_repeat: true
 			dependencies: ["62BA581B2918BB7B"]
-			icon: { Count: 6, id: "gtceu:micro_processor_mainframe" }
+			icon: "kubejs:iv_universal_circuit"
 			id: "52DD5020950CC1FA"
 			rewards: [{
 				count: 6
 				id: "613FA1DD90B6474C"
-				item: "gtceu:micro_processor_mainframe"
+				item: "kubejs:iv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -699,12 +699,12 @@
 		{
 			can_repeat: true
 			dependencies: ["53A9F3758C218CDC"]
-			icon: { Count: 4, id: "gtceu:nano_processor_mainframe" }
+			icon: "kubejs:luv_universal_circuit"
 			id: "7A487C3931997719"
 			rewards: [{
 				count: 4
 				id: "5E0980756D95A661"
-				item: "gtceu:nano_processor_mainframe"
+				item: "kubejs:luv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -722,12 +722,12 @@
 		{
 			can_repeat: true
 			dependencies: ["79428BAEAA7856E1"]
-			icon: { Count: 3, id: "gtceu:quantum_processor_mainframe" }
+			icon: "kubejs:zpm_universal_circuit"
 			id: "6C496B6F76ECAD88"
 			rewards: [{
 				count: 3
 				id: "04D8F950896F7BB6"
-				item: "gtceu:quantum_processor_mainframe"
+				item: "kubejs:zpm_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -745,12 +745,12 @@
 		{
 			can_repeat: true
 			dependencies: ["3FC351F05F2AC743"]
-			icon: { Count: 2, id: "gtceu:crystal_processor_mainframe" }
+			icon: "kubejs:uv_universal_circuit"
 			id: "38E6B3EBC483B21F"
 			rewards: [{
 				count: 2
 				id: "16C3772605027212"
-				item: "gtceu:crystal_processor_mainframe"
+				item: "kubejs:uv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -768,11 +768,11 @@
 		{
 			can_repeat: true
 			dependencies: ["707C2E9BA62A60C5"]
-			icon: "gtceu:wetware_processor_mainframe"
+			icon: "kubejs:uhv_universal_circuit"
 			id: "54562180EA00C939"
 			rewards: [{
 				id: "0234D6BB39A30A44"
-				item: "gtceu:wetware_processor_mainframe"
+				item: "kubejs:uhv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"

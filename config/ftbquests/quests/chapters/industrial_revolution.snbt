@@ -206,8 +206,8 @@
 				item: "gtceu:lv_macerator"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -0.5d
+			x: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["523F20DC5FA04229"]
@@ -1841,18 +1841,6 @@
 			}]
 			x: -8.5d
 			y: -1.5d
-		}
-		{
-			dependencies: ["1F5CCE8CFD02903A"]
-			description: ["An easier Blast Furnace, that can be automated, but does not accept charcoal."]
-			id: "13CAFC28BEB19F58"
-			tasks: [{
-				id: "1A71305816212275"
-				item: "gtceu:solid_blast_furnace"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 0.5d
 		}
 	]
 	title: "Industrial Revolution"
