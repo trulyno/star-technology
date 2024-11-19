@@ -36,13 +36,20 @@ ServerEvents.recipes(event => {
         S: '#minecraft:wooden_slabs'
     });
 
+    //glass tube shenanigans
     event.shaped(Item.of('gtceu:glass_tube'), [
         '   ',
         'PPP',
         'PPP'
     ], {
-        P: '#forge:glass_panes'
+        P: 'minecraft:glass_pane'
     });
+
+    ['tiled','framed','horizontal_framed','vertical_framed'].forEach(type => {
+        event.remove({ id: `create:smelting/glass_pane_from_${type}_glass_pane`})
+    });
+
+    event.remove({ id: 'create:splashing/stained_glass'})
 
     event.shaped(Item.of('8x gtceu:compressed_fireclay'), [
         'DDD',
