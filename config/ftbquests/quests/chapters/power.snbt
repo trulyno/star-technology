@@ -1600,6 +1600,10 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"50DED4576C89E893"
+				"38C4FC58A4482F83"
+			]
 			id: "3A485956C34C8840"
 			tasks: [{
 				id: "23098FEE229E0194"
@@ -1619,6 +1623,10 @@
 			y: -4.0d
 		}
 		{
+			dependencies: [
+				"614071EB90CB89F5"
+				"574CA65B67D79A6E"
+			]
 			id: "50DED4576C89E893"
 			tasks: [{
 				id: "0B56EB7746082D00"
@@ -1638,6 +1646,10 @@
 			y: -3.0d
 		}
 		{
+			dependencies: [
+				"759FF87FC22D814D"
+				"3A485956C34C8840"
+			]
 			id: "3FE17E376E30FFE4"
 			tasks: [{
 				id: "5F12A9B7928071B1"
