@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:distilled_water 100')
         .itemOutputs('kubejs:depleted_thorium_fuel_rod')
         .duration(600)
-        .EUt(-16384);
+        .EUt(-4096);
 
     //uranium 238
     event.recipes.gtceu.nuclear_fission('uranium_238')
@@ -15,6 +15,6 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:distilled_water 100')
         .itemOutputs('kubejs:depleted_low_enriched_uranium_fuel_rod')
         .duration(600)
-        .EUt(-16384);
+        .EUt(-4096);
     
 });
