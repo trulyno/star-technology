@@ -154,7 +154,6 @@
 		}
 		{
 			dependencies: ["7910F6A8087A9E85"]
-			hide_until_deps_visible: false
 			id: "0F70A4555874E56E"
 			shape: "square"
 			tasks: [{

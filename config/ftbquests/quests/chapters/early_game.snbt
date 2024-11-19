@@ -1913,50 +1913,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["70BE6905EC722DCA"]
-			id: "43D450D7593274DB"
-			invisible: true
-			optional: true
-			rewards: [{
-				count: 4
-				id: "1825444B20E034C6"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "octagon"
-			tasks: [{
-				advancement: "create:stressometer_maxed"
-				criterion: ""
-				id: "02E3EDBD90C554B5"
-				type: "advancement"
-			}]
-			title: "Walking on the edge"
-			x: 7.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["20A12F3B992762F0"]
-			id: "624FAD2F168BD51B"
-			invisible: true
-			optional: true
-			rewards: [{
-				count: 4
-				id: "60B3325A32D89874"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "octagon"
-			tasks: [{
-				count: 64L
-				id: "2ADC9F25BAFCEF9E"
-				item: "gtceu:basic_electronic_circuit"
-				type: "item"
-			}]
-			title: "The Batch Crafter"
-			x: 18.5d
-			y: -6.0d
-		}
-		{
 			description: [
 				"The Questbook takes you through the entire modpack, step by step. Here are a few things you should know"
 				"- Mechanics: A small chapter explaining some GregTech mechanics"
