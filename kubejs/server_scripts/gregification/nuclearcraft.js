@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(250);
 
-        event.recipes.gtceu.forming_press('leu233')
+    event.recipes.gtceu.forming_press('leu233')
         .notConsumable('gtceu:cylinder_casting_mold')
         .itemInputs(`1x ${U233}`, `8x ${U238}`)
         .itemOutputs('nuclearcraft:fuel_uranium_leu_233')
@@ -436,37 +436,43 @@ ServerEvents.recipes(event => {
         .itemInputs('4x gtceu:thorium_dust')
         .itemOutputs(Th232)
         .duration(240)
-        .EUt(2000);
+        .EUt(2000)
+        .circuit(1);
 
     event.recipes.gtceu.centrifuge('uranium_235_isotope_separation')
         .itemInputs('4x gtceu:uranium_235_dust')
         .itemOutputs(U235)
         .duration(240)
-        .EUt(2000);
+        .EUt(2000)
+        .circuit(1);
 
     event.recipes.gtceu.centrifuge('uranium_isotope_separation')
         .itemInputs('4x gtceu:uranium_dust')
         .itemOutputs(U238)
         .duration(240)
-        .EUt(2000);
+        .EUt(2000)
+        .circuit(1);
 
     event.recipes.gtceu.centrifuge('thorium_isotope_conversion')
         .itemInputs(Th232)
         .itemOutputs('4x gtceu:thorium_dust')
         .duration(240)
-        .EUt(2000);
+        .EUt(2000)
+        .circuit(2);
 
     event.recipes.gtceu.centrifuge('uranium_235_isotope_conversion')
         .itemInputs(U235)
         .itemOutputs('4x gtceu:uranium_235_dust')
         .duration(240)
-        .EUt(2000);
+        .EUt(2000)
+        .circuit(2);
 
     event.recipes.gtceu.centrifuge('uranium_isotope_conversion')
         .itemInputs(U238)
         .itemOutputs('4x gtceu:uranium_dust')
         .duration(240)
-        .EUt(2000);
+        .EUt(2000)
+        .circuit(2);
     
     event.recipes.gtceu.extractor(U238)
         .itemInputs(U238)
@@ -636,243 +642,243 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(30);
 
-    event.recipes.gtceu.alloy_smelter('ferroboron')
-        .itemInputs('gtceu:steel_ingot', 'gtceu:boron_dust')
-        .itemOutputs('2x nuclearcraft:ferroboron_ingot')
-        .duration(400)
-        .EUt(240);
+    // event.recipes.gtceu.alloy_smelter('ferroboron')
+    //     .itemInputs('gtceu:steel_ingot', 'gtceu:boron_dust')
+    //     .itemOutputs('2x nuclearcraft:ferroboron_ingot')
+    //     .duration(400)
+    //     .EUt(240);
 
-    event.recipes.gtceu.alloy_smelter('tough_alloy')
-        .itemInputs('nuclearcraft:ferroboron_ingot', 'gtceu:lithium_dust')
-        .itemOutputs('2x nuclearcraft:tough_alloy_ingot')
-        .duration(400)
-        .EUt(240);
+    // event.recipes.gtceu.alloy_smelter('tough_alloy')
+    //     .itemInputs('nuclearcraft:ferroboron_ingot', 'gtceu:lithium_dust')
+    //     .itemOutputs('2x nuclearcraft:tough_alloy_ingot')
+    //     .duration(400)
+    //     .EUt(240);
 
-    event.recipes.gtceu.bender('tough_alloy_plate')
-        .itemInputs('nuclearcraft:tough_alloy_ingot')
-        .itemOutputs('nuclearcraft:tough_alloy_plate')
-        .duration(480)
-        .EUt(128)
-        .circuit(1);
+    // event.recipes.gtceu.bender('tough_alloy_plate')
+    //     .itemInputs('nuclearcraft:tough_alloy_ingot')
+    //     .itemOutputs('nuclearcraft:tough_alloy_plate')
+    //     .duration(480)
+    //     .EUt(128)
+    //     .circuit(1);
 
-    event.recipes.gtceu.alloy_smelter('hard_carbon')
-        .itemInputs('gtceu:graphite_dust', 'gtceu:diamond_dust')
-        .itemOutputs('2x nuclearcraft:hard_carbon_ingot')
-        .duration(400)
-        .EUt(240);
+    // event.recipes.gtceu.alloy_smelter('hard_carbon')
+    //     .itemInputs('gtceu:graphite_dust', 'gtceu:diamond_dust')
+    //     .itemOutputs('2x nuclearcraft:hard_carbon_ingot')
+    //     .duration(400)
+    //     .EUt(240);
 
-    event.recipes.gtceu.alloy_smelter('extreme')
-        .itemInputs('nuclearcraft:tough_alloy_ingot', 'nuclearcraft:hard_carbon_ingot')
-        .itemOutputs('2x nuclearcraft:extreme_ingot')
-        .duration(400)
-        .EUt(240);
+    // event.recipes.gtceu.alloy_smelter('extreme')
+    //     .itemInputs('nuclearcraft:tough_alloy_ingot', 'nuclearcraft:hard_carbon_ingot')
+    //     .itemOutputs('2x nuclearcraft:extreme_ingot')
+    //     .duration(400)
+    //     .EUt(240);
 
-    event.recipes.gtceu.mixer('boron_arsenide')
-        .itemInputs('6x gtceu:boron_dust', 'gtceu:arsenic_dust')
-        .itemOutputs('7x nuclearcraft:boron_arsenide_dust')
-        .duration(620)
-        .EUt(120);
+    // event.recipes.gtceu.mixer('boron_arsenide')
+    //     .itemInputs('6x gtceu:boron_dust', 'gtceu:arsenic_dust')
+    //     .itemOutputs('7x nuclearcraft:boron_arsenide_dust')
+    //     .duration(620)
+    //     .EUt(120);
 
-    event.recipes.gtceu.alloy_smelter('thermoconducting')
-        .itemInputs('nuclearcraft:extreme_ingot', 'nuclearcraft:boron_arsenide_dust')
-        .itemOutputs('2x nuclearcraft:thermoconducting_ingot')
-        .duration(400)
-        .EUt(240);
+    // event.recipes.gtceu.alloy_smelter('thermoconducting')
+    //     .itemInputs('nuclearcraft:extreme_ingot', 'nuclearcraft:boron_arsenide_dust')
+    //     .itemOutputs('2x nuclearcraft:thermoconducting_ingot')
+    //     .duration(400)
+    //     .EUt(240);
 
-    event.recipes.gtceu.bender('thermoconducting_plate')
-        .itemInputs('nuclearcraft:thermoconducting_ingot')
-        .itemOutputs('nuclearcraft:thermoconducting_plate')
-        .duration(480)
-        .EUt(128)
-        .circuit(1);
+    // event.recipes.gtceu.bender('thermoconducting_plate')
+    //     .itemInputs('nuclearcraft:thermoconducting_ingot')
+    //     .itemOutputs('nuclearcraft:thermoconducting_plate')
+    //     .duration(480)
+    //     .EUt(128)
+    //     .circuit(1);
 
-    event.recipes.gtceu.assembler('plate_basic')
-        .itemInputs('gtceu:black_steel_plate', '2x gtceu:graphite_dust', '16x gtceu:fine_annealed_copper_wire', '4x gtceu:aluminium_screw')
-        .itemOutputs('nuclearcraft:plate_basic')
-        .duration(120)
-        .EUt(240);
+    // event.recipes.gtceu.assembler('plate_basic')
+    //     .itemInputs('gtceu:black_steel_plate', '2x gtceu:graphite_dust', '16x gtceu:fine_annealed_copper_wire', '4x gtceu:aluminium_screw')
+    //     .itemOutputs('nuclearcraft:plate_basic')
+    //     .duration(120)
+    //     .EUt(240);
 
-    event.recipes.gtceu.assembler('advanced_plating')
-        .itemInputs('nuclearcraft:plate_basic', '2x nuclearcraft:tough_alloy_ingot', '32x gtceu:fine_red_alloy_wire', '4x gtceu:blue_alloy_screw')
-        .itemOutputs('nuclearcraft:plate_advanced')
-        .duration(280)
-        .EUt(240);
+    // event.recipes.gtceu.assembler('advanced_plating')
+    //     .itemInputs('nuclearcraft:plate_basic', '2x nuclearcraft:tough_alloy_ingot', '32x gtceu:fine_red_alloy_wire', '4x gtceu:blue_alloy_screw')
+    //     .itemOutputs('nuclearcraft:plate_advanced')
+    //     .duration(280)
+    //     .EUt(240);
 
-    event.recipes.gtceu.assembler('fission_casing')
-        .itemInputs('4x gtceu:lead_plate', '4x nuclearcraft:plate_advanced', 'nuclearcraft:tough_alloy_ingot')
-        .itemOutputs('4x nuclearcraft:fission_reactor_casing')
-        .duration(420)
-        .EUt(1500);
+    // event.recipes.gtceu.assembler('fission_casing')
+    //     .itemInputs('4x gtceu:lead_plate', '4x nuclearcraft:plate_advanced', 'nuclearcraft:tough_alloy_ingot')
+    //     .itemOutputs('4x nuclearcraft:fission_reactor_casing')
+    //     .duration(420)
+    //     .EUt(1500);
 
-    event.recipes.gtceu.alloy_smelter('fission_reactor_glass')
-        .itemInputs('nuclearcraft:fission_reactor_casing', 'thermal:obsidian_glass')
-        .itemOutputs('2x nuclearcraft:fission_reactor_glass')
-        .duration(320)
-        .EUt(120);
+    // event.recipes.gtceu.alloy_smelter('fission_reactor_glass')
+    //     .itemInputs('nuclearcraft:fission_reactor_casing', 'thermal:obsidian_glass')
+    //     .itemOutputs('2x nuclearcraft:fission_reactor_glass')
+    //     .duration(320)
+    //     .EUt(120);
 
-    event.recipes.gtceu.assembler('fission_reactor_controller')
-        .itemInputs('4x nuclearcraft:fission_reactor_casing', '2x nuclearcraft:plate_advanced', '2x #gtceu:circuits/ev')
-        .itemOutputs('nuclearcraft:fission_reactor_controller')
-        .duration(1200)
-        .EUt(1800);
+    // event.recipes.gtceu.assembler('fission_reactor_controller')
+    //     .itemInputs('4x nuclearcraft:fission_reactor_casing', '2x nuclearcraft:plate_advanced', '2x #gtceu:circuits/ev')
+    //     .itemOutputs('nuclearcraft:fission_reactor_controller')
+    //     .duration(1200)
+    //     .EUt(1800);
 
-    event.recipes.gtceu.assembler('fission_reactor_port')
-        .itemInputs('nuclearcraft:fission_reactor_casing', '2x nuclearcraft:plate_advanced', '4x nuclearcraft:tough_alloy_plate', '2x gtceu:hv_robot_arm')
-        .itemOutputs('nuclearcraft:fission_reactor_port')
-        .duration(1200)
-        .EUt(1800);
+    // event.recipes.gtceu.assembler('fission_reactor_port')
+    //     .itemInputs('nuclearcraft:fission_reactor_casing', '2x nuclearcraft:plate_advanced', '4x nuclearcraft:tough_alloy_plate', '2x gtceu:hv_robot_arm')
+    //     .itemOutputs('nuclearcraft:fission_reactor_port')
+    //     .duration(1200)
+    //     .EUt(1800);
 
-    event.recipes.gtceu.assembler('fission_fuel_cell')
-        .itemInputs('4x gtceu:lead_ingot', '4x thermal:obsidian_glass')
-        .itemOutputs('nuclearcraft:fission_reactor_solid_fuel_cell')
-        .duration(530)
-        .EUt(230);
+    // event.recipes.gtceu.assembler('fission_fuel_cell')
+    //     .itemInputs('4x gtceu:lead_ingot', '4x thermal:obsidian_glass')
+    //     .itemOutputs('nuclearcraft:fission_reactor_solid_fuel_cell')
+    //     .duration(530)
+    //     .EUt(230);
 
-    event.recipes.gtceu.assembler('heat_sink')
-        .itemInputs('4x nuclearcraft:tough_alloy_plate', '2x nuclearcraft:thermoconducting_plate', '2x minecraft:iron_bars', 'gtceu:stainless_steel_fluid_cell')
-        .itemOutputs('nuclearcraft:empty_heat_sink')
-        .duration(410)
-        .EUt(240);
+    // event.recipes.gtceu.assembler('heat_sink')
+    //     .itemInputs('4x nuclearcraft:tough_alloy_plate', '2x nuclearcraft:thermoconducting_plate', '2x minecraft:iron_bars', 'gtceu:stainless_steel_fluid_cell')
+    //     .itemOutputs('nuclearcraft:empty_heat_sink')
+    //     .duration(410)
+    //     .EUt(240);
 
-    event.recipes.gtceu.canner('glowstone_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x minecraft:glowstone_dust')
-        .itemOutputs('nuclearcraft:glowstone_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('glowstone_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x minecraft:glowstone_dust')
+    //     .itemOutputs('nuclearcraft:glowstone_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('obsidian_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:obsidian_dust')
-        .itemOutputs('nuclearcraft:obsidian_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('obsidian_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:obsidian_dust')
+    //     .itemOutputs('nuclearcraft:obsidian_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('iron_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:iron_dust')
-        .itemOutputs('nuclearcraft:iron_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('iron_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:iron_dust')
+    //     .itemOutputs('nuclearcraft:iron_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('lead_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:lead_dust')
-        .itemOutputs('nuclearcraft:lead_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('lead_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:lead_dust')
+    //     .itemOutputs('nuclearcraft:lead_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('boron_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:boron_dust')
-        .itemOutputs('nuclearcraft:boron_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('boron_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:boron_dust')
+    //     .itemOutputs('nuclearcraft:boron_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('manganese_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:manganese_dust')
-        .itemOutputs('nuclearcraft:manganese_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('manganese_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:manganese_dust')
+    //     .itemOutputs('nuclearcraft:manganese_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('enderium_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:enderium_dust')
-        .itemOutputs('nuclearcraft:enderium_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('enderium_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:enderium_dust')
+    //     .itemOutputs('nuclearcraft:enderium_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('prismarine_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x minecraft:prismarine_shard')
-        .itemOutputs('nuclearcraft:prismarine_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('prismarine_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x minecraft:prismarine_shard')
+    //     .itemOutputs('nuclearcraft:prismarine_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-     event.recipes.gtceu.canner('silver_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:silver_dust')
-        .itemOutputs('nuclearcraft:silver_heat_sink')
-        .duration(320)
-        .EUt(250);
+    //  event.recipes.gtceu.canner('silver_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:silver_dust')
+    //     .itemOutputs('nuclearcraft:silver_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('slime_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x minecraft:slime_ball')
-        .itemOutputs('nuclearcraft:slime_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('slime_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x minecraft:slime_ball')
+    //     .itemOutputs('nuclearcraft:slime_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('arsenic_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:arsenic_dust')
-        .itemOutputs('nuclearcraft:arsenic_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('arsenic_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:arsenic_dust')
+    //     .itemOutputs('nuclearcraft:arsenic_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('diamond_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:diamond_dust')
-        .itemOutputs('nuclearcraft:diamond_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('diamond_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:diamond_dust')
+    //     .itemOutputs('nuclearcraft:diamond_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('lapis_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:lapis_dust')
-        .itemOutputs('nuclearcraft:lapis_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('lapis_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:lapis_dust')
+    //     .itemOutputs('nuclearcraft:lapis_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('lithium_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:lithium_dust')
-        .itemOutputs('nuclearcraft:lithium_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('lithium_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:lithium_dust')
+    //     .itemOutputs('nuclearcraft:lithium_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('gold_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:gold_dust')
-        .itemOutputs('nuclearcraft:gold_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('gold_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:gold_dust')
+    //     .itemOutputs('nuclearcraft:gold_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('redstone_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x minecraft:redstone')
-        .itemOutputs('nuclearcraft:redstone_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('redstone_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x minecraft:redstone')
+    //     .itemOutputs('nuclearcraft:redstone_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('copper_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:copper_dust')
-        .itemOutputs('nuclearcraft:copper_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('copper_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:copper_dust')
+    //     .itemOutputs('nuclearcraft:copper_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('tin_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:tin_dust')
-        .itemOutputs('nuclearcraft:tin_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('tin_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:tin_dust')
+    //     .itemOutputs('nuclearcraft:tin_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('emerald_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:emerald_dust')
-        .itemOutputs('nuclearcraft:emerald_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('emerald_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:emerald_dust')
+    //     .itemOutputs('nuclearcraft:emerald_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('aluminium_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:aluminium_dust')
-        .itemOutputs('nuclearcraft:aluminum_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('aluminium_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:aluminium_dust')
+    //     .itemOutputs('nuclearcraft:aluminum_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('quartz_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:nether_quartz_dust')
-        .itemOutputs('nuclearcraft:quartz_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('quartz_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:nether_quartz_dust')
+    //     .itemOutputs('nuclearcraft:quartz_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('helium_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink')
-        .inputFluids('gtceu:liquid_helium 1000')
-        .itemOutputs('nuclearcraft:liquid_helium_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('helium_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink')
+    //     .inputFluids('gtceu:liquid_helium 1000')
+    //     .itemOutputs('nuclearcraft:liquid_helium_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('nitrogen_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink')
-        .inputFluids('gtceu:nitrogen 1000')
-        .itemOutputs('nuclearcraft:liquid_nitrogen_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('nitrogen_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink')
+    //     .inputFluids('gtceu:nitrogen 1000')
+    //     .itemOutputs('nuclearcraft:liquid_nitrogen_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
     event.recipes.gtceu.chemical_reactor('slurry_ice')
         .itemInputs('thermal:blizz_powder')
@@ -894,31 +900,31 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(250);
 
-    event.recipes.gtceu.canner('cryotheum_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink')
-        .inputFluids('nuclearcraft:cryotheum 1000')
-        .itemOutputs('nuclearcraft:cryotheum_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('cryotheum_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink')
+    //     .inputFluids('nuclearcraft:cryotheum 1000')
+    //     .itemOutputs('nuclearcraft:cryotheum_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('water_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink')
-        .inputFluids('minecraft:water 1000')
-        .itemOutputs('nuclearcraft:water_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('water_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink')
+    //     .inputFluids('minecraft:water 1000')
+    //     .itemOutputs('nuclearcraft:water_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.canner('magnesium_heat_sink')
-        .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:magnesium_dust')
-        .itemOutputs('nuclearcraft:magnesium_heat_sink')
-        .duration(320)
-        .EUt(250);
+    // event.recipes.gtceu.canner('magnesium_heat_sink')
+    //     .itemInputs('nuclearcraft:empty_heat_sink', '4x gtceu:magnesium_dust')
+    //     .itemOutputs('nuclearcraft:magnesium_heat_sink')
+    //     .duration(320)
+    //     .EUt(250);
 
-    event.recipes.gtceu.assembler('qnp')
-        .itemInputs('gtceu:long_tungsten_steel_rod', 'gtceu:tungsten_steel_drill_head', '2x gtceu:electrum_foil', 'gtceu:iv_power_unit')
-        .itemOutputs('nuclearcraft:qnp')
-        .duration(500)
-        .EUt(3000);
+    // event.recipes.gtceu.assembler('qnp')
+    //     .itemInputs('gtceu:long_tungsten_steel_rod', 'gtceu:tungsten_steel_drill_head', '2x gtceu:electrum_foil', 'gtceu:iv_power_unit')
+    //     .itemOutputs('nuclearcraft:qnp')
+    //     .duration(500)
+    //     .EUt(3000);
 
     function fission(fuel) {
         event.custom({
