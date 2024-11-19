@@ -1,9 +1,9 @@
 
 ServerEvents.recipes(event => {
     const dirt = 'minecraft:dirt';
-    const gravel = '#forge:gravel';
+    const gravel = 'minecraft:gravel';
     const cdirt = 'minecraft:coarse_dirt';
-    const sand = '#minecraft:sand';
+    const sand = 'minecraft:sand';
     const dust = 'exnihilosequentia:dust';
     const black = 'exnihilosequentia:crushed_blackstone'
     const netherrack = 'exnihilosequentia:crushed_netherrack'

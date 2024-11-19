@@ -19,6 +19,7 @@
 /config/fml.toml
 /config/jei/recipe-category-sort-order.init
 /config/oculus.properties
+/config/emi.css
 
 # Add files in main directory
 !LICENSE
