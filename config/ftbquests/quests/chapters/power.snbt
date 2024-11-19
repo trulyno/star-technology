@@ -154,7 +154,7 @@
 		}
 		{
 			dependencies: ["7910F6A8087A9E85"]
-			hide: false
+			hide_until_deps_visible: false
 			id: "0F70A4555874E56E"
 			shape: "square"
 			tasks: [{
@@ -532,7 +532,17 @@
 			shape: "square"
 			tasks: [{
 				id: "47B43BAD0AA3B791"
-				item: "kubejs:lv_arc_kit"
+				item: {
+					Count: 1
+					id: "kubejs:lv_arc_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 0.95f
+							DynamoPower: 0.5f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: -0.5d
@@ -544,7 +554,17 @@
 			shape: "square"
 			tasks: [{
 				id: "1784B159D603DC45"
-				item: "kubejs:mv_arc_kit"
+				item: {
+					Count: 1
+					id: "kubejs:mv_arc_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 0.9f
+							DynamoPower: 0.75f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 0.5d
@@ -556,7 +576,17 @@
 			shape: "square"
 			tasks: [{
 				id: "2B79348BC44F6C9C"
-				item: "kubejs:hv_arc_kit"
+				item: {
+					Count: 1
+					id: "kubejs:hv_arc_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 0.8f
+							DynamoPower: 1.0f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 1.5d
@@ -568,7 +598,17 @@
 			shape: "square"
 			tasks: [{
 				id: "6B0FEFA3DD061DBB"
-				item: "kubejs:ev_arc_kit"
+				item: {
+					Count: 1
+					id: "kubejs:ev_arc_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 0.75f
+							DynamoPower: 2.0f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 2.5d
@@ -580,7 +620,16 @@
 			shape: "square"
 			tasks: [{
 				id: "1693CBDB66379472"
-				item: "kubejs:lv_mci_kit"
+				item: {
+					Count: 1
+					id: "kubejs:lv_mci_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 1.1f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: -0.5d
@@ -592,7 +641,16 @@
 			shape: "square"
 			tasks: [{
 				id: "2DDD24ABA6AD377A"
-				item: "kubejs:mv_mci_kit"
+				item: {
+					Count: 1
+					id: "kubejs:mv_mci_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 1.25f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 0.5d
@@ -604,7 +662,16 @@
 			shape: "square"
 			tasks: [{
 				id: "1465BABECD269969"
-				item: "kubejs:hv_mci_kit"
+				item: {
+					Count: 1
+					id: "kubejs:hv_mci_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 1.5f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 1.5d
@@ -616,7 +683,16 @@
 			shape: "square"
 			tasks: [{
 				id: "0DA081A760A80400"
-				item: "kubejs:ev_mci_kit"
+				item: {
+					Count: 1
+					id: "kubejs:ev_mci_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 2.0f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 2.5d
@@ -655,7 +731,17 @@
 			shape: "square"
 			tasks: [{
 				id: "41968F3C354DAD17"
-				item: "thermal:rf_coil_augment"
+				item: {
+					Count: 1
+					id: "kubejs:ulv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 4.0f
+							RFXfer: 4.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 2.0d
@@ -667,7 +753,17 @@
 			shape: "square"
 			tasks: [{
 				id: "563B24DA069D5083"
-				item: "thermal:rf_coil_storage_augment"
+				item: {
+					Count: 1
+					id: "kubejs:ulv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 6.0f
+							RFXfer: 2.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 2.0d
@@ -679,7 +775,17 @@
 			shape: "square"
 			tasks: [{
 				id: "1F960D6A6D6BFA4F"
-				item: "thermal:rf_coil_xfer_augment"
+				item: {
+					Count: 1
+					id: "kubejs:ulv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 2.0f
+							RFXfer: 6.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 2.0d
@@ -1093,7 +1199,17 @@
 			shape: "square"
 			tasks: [{
 				id: "18CB8B8A02758B25"
-				item: "thermal_extra:soul_infused_rf_coil_augment"
+				item: {
+					Count: 1
+					id: "kubejs:lv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 8.0f
+							RFXfer: 8.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 3.0d
@@ -1105,7 +1221,17 @@
 			shape: "square"
 			tasks: [{
 				id: "4F7E4E5D6BBB24E9"
-				item: "thermal_extra:twinite_rf_coil_augment"
+				item: {
+					Count: 1
+					id: "kubejs:mv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 12.0f
+							RFXfer: 12.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 4.0d
@@ -1117,7 +1243,17 @@
 			shape: "square"
 			tasks: [{
 				id: "7C86DEF22DA4E81F"
-				item: "thermal_extra:shellite_rf_coil_augment"
+				item: {
+					Count: 1
+					id: "kubejs:hv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 16.0f
+							RFXfer: 16.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 5.0d
@@ -1129,7 +1265,17 @@
 			shape: "square"
 			tasks: [{
 				id: "6CDD7D73AA074B52"
-				item: "thermal_extra:dragonsteel_rf_coil_augment"
+				item: {
+					Count: 1
+					id: "kubejs:ev_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 20.0f
+							RFXfer: 20.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 6.0d
@@ -1141,7 +1287,17 @@
 			shape: "square"
 			tasks: [{
 				id: "4B65762707C83A48"
-				item: "thermal_extra:abyssal_rf_coil_augment"
+				item: {
+					Count: 1
+					id: "kubejs:iv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 24.0f
+							RFXfer: 24.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 7.0d
@@ -1153,7 +1309,17 @@
 			shape: "square"
 			tasks: [{
 				id: "1D5B87DBD2522002"
-				item: "thermal_extra:soul_infused_rf_coil_storage_augment"
+				item: {
+					Count: 1
+					id: "kubejs:lv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 10.0f
+							RFXfer: 4.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 3.0d
@@ -1165,7 +1331,17 @@
 			shape: "square"
 			tasks: [{
 				id: "1FB19D7662EA6EDA"
-				item: "thermal_extra:twinite_rf_coil_storage_augment"
+				item: {
+					Count: 1
+					id: "kubejs:mv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 14.0f
+							RFXfer: 6.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 4.0d
@@ -1177,7 +1353,17 @@
 			shape: "square"
 			tasks: [{
 				id: "4F4D904DA92EBCB8"
-				item: "thermal_extra:shellite_rf_coil_storage_augment"
+				item: {
+					Count: 1
+					id: "kubejs:hv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 18.0f
+							RFXfer: 8.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 5.0d
@@ -1189,7 +1375,17 @@
 			shape: "square"
 			tasks: [{
 				id: "141A8C5D70DBB669"
-				item: "thermal_extra:dragonsteel_rf_coil_storage_augment"
+				item: {
+					Count: 1
+					id: "kubejs:ev_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 22.0f
+							RFXfer: 10.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 6.0d
@@ -1201,7 +1397,17 @@
 			shape: "square"
 			tasks: [{
 				id: "35F847D5B7184974"
-				item: "thermal_extra:abyssal_rf_coil_storage_augment"
+				item: {
+					Count: 1
+					id: "kubejs:iv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 26.0f
+							RFXfer: 12.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 7.0d
@@ -1213,7 +1419,17 @@
 			shape: "square"
 			tasks: [{
 				id: "3D6F579A8941E448"
-				item: "thermal_extra:soul_infused_rf_coil_xfer_augment"
+				item: {
+					Count: 1
+					id: "kubejs:lv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 4.0f
+							RFXfer: 10.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 3.0d
@@ -1225,7 +1441,17 @@
 			shape: "square"
 			tasks: [{
 				id: "2E843D0C4862956E"
-				item: "thermal_extra:twinite_rf_coil_xfer_augment"
+				item: {
+					Count: 1
+					id: "kubejs:mv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 6.0f
+							RFXfer: 14.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 4.0d
@@ -1237,7 +1463,17 @@
 			shape: "square"
 			tasks: [{
 				id: "32E48EE4D3D005C3"
-				item: "thermal_extra:shellite_rf_coil_xfer_augment"
+				item: {
+					Count: 1
+					id: "kubejs:hv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 8.0f
+							RFXfer: 18.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 5.0d
@@ -1249,7 +1485,17 @@
 			shape: "square"
 			tasks: [{
 				id: "0AC9A2FC340C52AF"
-				item: "thermal_extra:dragonsteel_rf_coil_xfer_augment"
+				item: {
+					Count: 1
+					id: "kubejs:ev_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 10.0f
+							RFXfer: 22.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 6.0d
@@ -1261,7 +1507,17 @@
 			shape: "square"
 			tasks: [{
 				id: "3FC977BEDC5F39D8"
-				item: "thermal_extra:abyssal_rf_coil_xfer_augment"
+				item: {
+					Count: 1
+					id: "kubejs:iv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 12.0f
+							RFXfer: 26.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 7.0d
@@ -1346,6 +1602,7 @@
 		}
 		{
 			dependencies: ["1DBE1786C8F14A9E"]
+			description: ["Diatrons are the best lapidary dynamo fuel. Even the lowest tier of diatrons has energy-positive prodution!"]
 			id: "5DDDD7D45FF6A06D"
 			tasks: [
 				{
