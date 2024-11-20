@@ -78,7 +78,6 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'sgjourney'});
     event.remove({ mod: 'jetboots'});
 
-    event.remove({ input: 'mmt:scrap_clump'});
     event.remove({ input: 'minecraft:netherite_scrap'});
     event.remove({ output: 'minecraft:netherite_scrap'});
     event.remove({ input: 'minecraft:ancient_debris'});
