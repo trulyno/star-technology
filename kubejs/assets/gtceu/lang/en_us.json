@@ -334,5 +334,7 @@
 
     "block.gtceu.solid_blast_furnace": "Solid Blast Furnace",
     "block.gtceu.solid_blast_furnace.@Tooltip0": "§7An upgraded Primitive Blast Furnace",
-    "gtceu.solid_blast_furnace": "Solid Blast Furnace"
+    "gtceu.solid_blast_furnace": "Solid Blast Furnace",
+
+    "gtceu.jei.ore_vein.zapolite_vein": "Abydos Zapolite Vein"
 }
