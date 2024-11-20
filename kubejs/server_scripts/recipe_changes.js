@@ -438,6 +438,13 @@ ServerEvents.recipes(event => {
         event.recipes.create.haunting(Item.of(prop.output), Item.of(prop.input));
     });
 
+    event.remove({ id:'exnihilosequentia:solidify/ens_cobblestone' })
+    event.custom({
+        "type": "exnihilosequentia:solidifying",
+        "fluidInTank": "minecraft:water 1000",
+        "fluidOnTop": "minecraft:lava 1000",
+        "result": "minecraft:cobblestone"
+    });
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {
