@@ -18,7 +18,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				count: 4L
 				id: "7EB89FC397247C3F"
@@ -26,7 +26,7 @@
 				type: "item"
 			}]
 			title: "Chopping some trees down"
-			x: 6.5d
+			x: -0.5d
 			y: -1.5d
 		}
 		{
@@ -75,8 +75,8 @@
 				type: "item"
 			}]
 			title: "The great industrial revolution"
-			x: 18.5d
-			y: -1.5d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -113,8 +113,8 @@
 				}
 			]
 			title: "Wormy buisiness"
-			x: 6.5d
-			y: -5.5d
+			x: -0.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7717C0904590E303"]
@@ -143,8 +143,8 @@
 				}
 			]
 			title: "Sieve and Mesh"
-			x: 9.0d
-			y: -5.5d
+			x: 2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -179,8 +179,8 @@
 				}
 			]
 			title: "I need water"
-			x: 8.0d
-			y: 3.0d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			description: ["By shift-right clicking Grass, you can get pebbles for the basic stone types."]
@@ -192,7 +192,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [
 				{
 					count: 4L
@@ -207,8 +207,8 @@
 				}
 			]
 			title: "Pebble for days"
-			x: 10.5d
-			y: -5.5d
+			x: 1.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -241,8 +241,8 @@
 				}
 			]
 			title: "Blackstone Sieving"
-			x: 8.5d
-			y: -7.5d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["07CBF849162D7BDF"]
@@ -283,8 +283,8 @@
 				}
 			]
 			title: "Hammering stuff down"
-			x: 8.5d
-			y: -3.5d
+			x: 1.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["07CBF849162D7BDF"]
@@ -300,8 +300,8 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -4.5d
+			x: 3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
@@ -335,8 +335,8 @@
 				}
 			]
 			title: "Oh the dirty goodness"
-			x: 10.5d
-			y: -7.5d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -379,8 +379,8 @@
 				}
 			]
 			title: "Resources for days"
-			x: 10.5d
-			y: -3.5d
+			x: 3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -395,6 +395,7 @@
 				""
 				"I hope you made enough for a few of these right away as you are going to need quite a few of these."
 			]
+			hide_dependent_lines: true
 			id: "20A12F3B992762F0"
 			rewards: [{
 				count: 2
@@ -409,8 +410,8 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 18.5d
-			y: -3.5d
+			x: 9.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -454,8 +455,8 @@
 				}
 			]
 			title: "LV Machine Hull"
-			x: 16.5d
-			y: 0.5d
+			x: 12.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -485,8 +486,8 @@
 				}
 			]
 			title: "Soul Infused Wires"
-			x: 18.5d
-			y: 0.5d
+			x: 10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
@@ -502,8 +503,8 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -1.5d
+			x: 5.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["039D327E919878BF"]
@@ -520,8 +521,8 @@
 				type: "item"
 			}]
 			title: "Get your Plates cheap"
-			x: 11.5d
-			y: -0.5d
+			x: 7.0d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -554,12 +555,13 @@
 				}
 			]
 			title: "Latex extraction"
-			x: 12.5d
-			y: -1.5d
+			x: 10.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
 			description: ["Every greg master needs their toolbelt fully stocked to get their first machines ready. We recommend starting with Iron/Wrought Iron and Flint where possible."]
+			hide_dependent_lines: true
 			id: "3D0F6CA8028C074B"
 			rewards: [{
 				id: "783CFA9C4F222736"
@@ -667,8 +669,8 @@
 				}
 			]
 			title: "Tools for days"
-			x: 12.5d
-			y: -3.5d
+			x: 2.25d
+			y: -6.5d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
@@ -696,8 +698,8 @@
 				}
 			]
 			title: "Frying iron on a Campfire"
-			x: 11.5d
-			y: -2.5d
+			x: 5.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["039D327E919878BF"]
@@ -739,8 +741,8 @@
 				}
 			]
 			title: "Mixer setup for alloying"
-			x: 10.5d
-			y: 0.5d
+			x: 7.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -770,8 +772,8 @@
 				}
 			]
 			title: "Insulation for your cables"
-			x: 12.5d
-			y: 0.5d
+			x: 12.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["03ACC7D2577A2C66"]
@@ -796,8 +798,8 @@
 				}
 			]
 			title: "Clay production"
-			x: 14.5d
-			y: 4.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -850,8 +852,8 @@
 				}
 			]
 			title: "Primitive steelworks"
-			x: 14.5d
-			y: -1.5d
+			x: 5.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["390CB178FC2D2CCC"]
@@ -884,8 +886,8 @@
 				}
 			]
 			title: "Steel"
-			x: 16.5d
-			y: -1.5d
+			x: 9.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -907,8 +909,8 @@
 				type: "item"
 			}]
 			title: "Red Alloy"
-			x: 15.5d
-			y: -2.5d
+			x: 9.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
@@ -932,8 +934,8 @@
 				}
 			]
 			title: "Slime and Resin"
-			x: 14.5d
-			y: -7.5d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6D5287A0FB892DFF"]
@@ -958,8 +960,8 @@
 				}
 			]
 			title: "Circuit board"
-			x: 16.5d
-			y: -5.5d
+			x: 8.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -980,8 +982,8 @@
 				type: "item"
 			}]
 			title: "Resistors"
-			x: 14.5d
-			y: -5.5d
+			x: 6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3D0F6CA8028C074B"]
@@ -1016,8 +1018,8 @@
 				}
 			]
 			title: "Glassworks"
-			x: 14.5d
-			y: -3.5d
+			x: 10.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1038,8 +1040,8 @@
 				type: "item"
 			}]
 			title: "Vacuum Tubes"
-			x: 16.5d
-			y: -3.5d
+			x: 10.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2D1184752D7ACA66"]
@@ -1056,8 +1058,8 @@
 				type: "item"
 			}]
 			title: "Soul Sand production"
-			x: 18.5d
-			y: 4.5d
+			x: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0E47ACCDF46E6B1F"]
@@ -1074,12 +1076,13 @@
 				type: "item"
 			}]
 			title: "Invar"
-			x: 17.5d
-			y: 1.5d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
 			description: ["You're going to need a lot of these so you better start processing your ores!"]
+			hide_dependent_lines: true
 			id: "708A5EE75EC40FAD"
 			rewards: [{
 				id: "1F2D0F0BB1CD6772"
@@ -1091,8 +1094,8 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 2.5d
+			x: 5.5d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -1185,8 +1188,8 @@
 					type: "item"
 				}
 			]
-			x: 14.5d
-			y: 2.5d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["550A27AA2B500111"]
@@ -1211,8 +1214,8 @@
 				}
 			]
 			title: "Infinite Water"
-			x: 6.5d
-			y: -7.5d
+			x: 0.25d
+			y: -2.25d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -1241,8 +1244,8 @@
 				}
 			]
 			title: "Making fertilizer"
-			x: 6.5d
-			y: 2.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1271,11 +1274,14 @@
 				}
 			]
 			title: "Making lava"
-			x: 8.5d
-			y: 4.5d
+			x: 1.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["3D0F6CA8028C074B"]
+			dependencies: [
+				"3D0F6CA8028C074B"
+				"2D1184752D7ACA66"
+			]
 			description: ["A staple of any greg tech pack. Upgrade your coal into coke, and get some tasty creosote to coat your planks in."]
 			icon: "gtceu:coke_oven"
 			id: "07C5B4C5EE2F948D"
@@ -1284,6 +1290,8 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "gear"
+			size: 1.5d
 			tasks: [
 				{
 					count: 117L
@@ -1315,8 +1323,8 @@
 				}
 			]
 			title: "Coke Oven"
-			x: 12.5d
-			y: -5.5d
+			x: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
@@ -1391,8 +1399,8 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: -7.0d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
@@ -1503,8 +1511,8 @@
 					type: "item"
 				}
 			]
-			x: 13.5d
-			y: -6.5d
+			x: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
@@ -1615,8 +1623,8 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
-			y: -6.5d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6C7DB3F0C3B85B9B"]
@@ -1633,8 +1641,8 @@
 				type: "item"
 			}]
 			title: "Duplicating dirt"
-			x: 7.5d
-			y: -2.5d
+			x: -0.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["039D327E919878BF"]
@@ -1672,8 +1680,8 @@
 				type: "item"
 			}]
 			title: "Make me stressed"
-			x: 8.5d
-			y: 0.5d
+			x: 5.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
@@ -1708,8 +1716,8 @@
 				}
 			]
 			title: "Stressful steam"
-			x: 8.5d
-			y: -1.5d
+			x: 5.0d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -1771,8 +1779,8 @@
 				}
 			]
 			title: "Diesel rocks"
-			x: 10.5d
-			y: 2.5d
+			x: 6.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -1805,8 +1813,8 @@
 				type: "item"
 			}]
 			title: "Intelligent fluid storage"
-			x: 13.5d
-			y: 1.5d
+			x: 11.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1834,8 +1842,8 @@
 				}
 			]
 			title: "Bronze and Brass"
-			x: 11.5d
-			y: 1.5d
+			x: 7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["29F1EAF3E87A50F5"]
@@ -1855,8 +1863,8 @@
 				type: "item"
 			}]
 			title: "Easy Cobble Generator"
-			x: 6.5d
-			y: 4.5d
+			x: -0.75d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
@@ -1868,8 +1876,8 @@
 				type: "item"
 			}]
 			title: "Making Witch Water?"
-			x: 12.5d
-			y: -8.5d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
@@ -1885,8 +1893,8 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 2.5d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
@@ -1909,8 +1917,8 @@
 				type: "item"
 			}]
 			title: "Basic Automation"
-			x: 8.5d
-			y: 2.0d
+			x: 4.0d
+			y: -9.5d
 		}
 		{
 			description: [
@@ -1918,6 +1926,8 @@
 				"- Mechanics: A small chapter explaining some GregTech mechanics"
 				"- Processing Lines: This is a chapter explaining complicated processing lines"
 				"- Line of Progression: This chapter shows you all multiblocks and tiered items"
+				""
+				"A Special Thanks to KillLaAqua for redesigning the node structure of this chapter."
 			]
 			id: "16A9D8E864A18B9E"
 			shape: "diamond"
@@ -1928,12 +1938,13 @@
 				title: "Ready, set, go"
 				type: "checkmark"
 			}]
-			x: 4.5d
+			x: -2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3D0F6CA8028C074B"]
 			description: ["An alternative to the mixer from create."]
+			hide_dependency_lines: false
 			id: "4FC0832128C3109C"
 			optional: true
 			rewards: [{
@@ -1959,9 +1970,26 @@
 				}
 			]
 			title: "Mixing Dusts"
-			x: 15.5d
-			y: -0.5d
+			x: 8.0d
+			y: -5.25d
+		}
+		{
+			dependencies: ["124EDCAB18E85B9D"]
+			id: "3FB8E0105D2C20B4"
+			rewards: [{
+				id: "79C586E97770FB74"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2AA27D335CF0EDED"
+				item: "gtceu:solid_blast_furnace"
+				type: "item"
+			}]
+			title: "Better Steel"
+			x: 13.5d
+			y: -2.5d
 		}
 	]
-	title: "Early Game"
+	title: "Kill's Cleaner Early Game"
 }
