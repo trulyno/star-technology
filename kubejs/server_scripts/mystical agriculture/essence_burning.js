@@ -222,7 +222,7 @@ ServerEvents.recipes(event => {
             .circuit(i);
     }
 
-    const stone = ['minecraft:stone', 'minecraft:cobblestone', 'minecraft:diorite', 'minecraft:granite', 'minecraft:andesite', 'minecraft:deepslate', 'minecraft:tuff', 'minecraft:calcite'];
+    const stone = ['minecraft:stone', 'minecraft:cobblestone', 'minecraft:diorite', 'minecraft:granite', 'minecraft:andesite', 'minecraft:deepslate', 'minecraft:tuff', 'minecraft:calcite', 'gtceu:red_granite'];
 
     for (let i = 0; i < stone.length; i++) {
         event.recipes.gtceu.essence_burning('stone_essence_burning_' + i)
