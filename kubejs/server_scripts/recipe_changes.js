@@ -438,6 +438,26 @@ ServerEvents.recipes(event => {
         event.recipes.create.haunting(Item.of(prop.output), Item.of(prop.input));
     });
 
+    //UHV transformer fix
+    event.shaped(Item.of('gtceu:uhv_transformer_1a'), [
+        'UCC',
+        'CH ',
+        'UCC'], {
+        U: 'gtceu:uhpic_chip',
+        C: 'gtceu:europium_single_cable',
+        H: 'gtceu:uhv_machine_hull'
+    });
+    //rutile fix
+    event.remove({ id: 'gtceu:electric_blast_furnace/rutile_from_ilmenite' })
+    event.recipes.gtceu.electric_blast_furnace('electric_blast_furnace/rutile_from_ilmenite')
+        .itemInputs('10x gtceu:ilmenite_dust', '2x gtceu:carbon_dust')
+        .itemOutputs('2x gtceu:wrought_iron_ingot','2x gtceu:rutile_dust')
+        .outputFluids('gtceu:carbon_monoxide 2000')
+        .blastFurnaceTemp(1700)
+        .duration(1600)
+        .EUt(480);
+
+    //cobblestone farm fix
     event.remove({ id:'exnihilosequentia:solidify/ens_cobblestone' })
     event.custom({
         "type": "exnihilosequentia:solidifying",
