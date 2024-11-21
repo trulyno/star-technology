@@ -21,25 +21,24 @@ ServerEvents.recipes(event => {
         'createdieselgenerators:pumpjack_crank', 'createdieselgenerators:canister', 'createdieselgenerators:oil_barrel', 'createdieselgenerators:asphalt', 'createdieselgenerators:asphalt_slab', 'createdieselgenerators:asphalt_stairs',
         'createdieselgenerators:diesel', 'createdieselgenerators:gasoline',  'ae2:charger', 'ae2:drive', 'ae2:chest', 'createdieselgenerators:pumpjack_hole', 'expatternprovider:ex_inscriber', 
         'expatternprovider:ex_charger', 'expatternprovider:crystal_fixer', 'expatternprovider:canner', 'exmachinis:item_buffer', 'ae2:crystal_resonance_generator', 'ae2:vibration_chamber',
-        'exnihilosequentia:mechanical_sieve', 'exnihilosequentia:mechanical_hammer', 'systeams:frost_boiler', 'thermalendergy:melodium_ingot', 'thermalendergy:prismalium_ingot', 'thermalendergy:stellarium_ingot',
+        'systeams:frost_boiler', 'thermalendergy:melodium_ingot', 'thermalendergy:prismalium_ingot', 'thermalendergy:stellarium_ingot',
         'thermalendergy:melodium_block', 'thermalendergy:prismalium_block', 'thermalendergy:stellarium_block', 'thermalendergy:melodium_nugget', 'thermalendergy:prismalium_nugget','thermalendergy:stellarium_nugget',
-        'exnihilosequentia:golden_mesh', 'enderio:energy_conduit'
     ];
     const toRemoveId = ['thermal:slime_mushroom_spores', 'thermal_extra:sticky_ball_to_paper', 'farmersdelight:paper_from_tree_bark',
-        'create:pressing/sugar_cane', 'exnihilo:fluid_item/ens_slime', 'gtceu:shaped/good_circuit_board',
+        'create:pressing/sugar_cane', 'exnihilo:precipitate/ens_slime', 'gtceu:shaped/good_circuit_board',
         'thermal:rubber_from_vine', 'thermal:rubber_from_dandelion', 'thermal:smelting/cured_rubber_from_smelting',
         'thermal:rf_coil', 'create:haunting/crimson_fungus', 'create:haunting/warped_fungus', 'create:compat/ae2/milling/sky_stone_block',
         'create:compat/ae2/milling/fluix_crystal', 'create:compat/ae2/milling/ender_pearl', 'create:compat/ae2/milling/certus_quartz',
         'create:crushing/raw_platinum_ore', 'create:crushing/raw_platinum_block', 'create:crushing/raw_uranium_ore',
         'create:crushing/raw_uranium_block', 'create:crafting/appliances/slime_ball', 'minecraft:fire_charge',
-        'exnihilosequentia:fluid_item/ens_end_stone', 'exnihilosequentia:fluid_item/ens_netherrack', 'gtceu:shapeless/dust_bronze',
+        'exnihilosequentia:precipitate/ens_end_stone', 'exnihilosequentia:precipitate/ens_netherrack', 'gtceu:shapeless/dust_bronze',
         'gtceu:shapeless/dust_brass', 'create:mixing/brass_ingot', 'minecraft:ender_eye', 'create_new_age:shaped/carbon_brushes',
         'create_new_age:shaped/basic_motor_extension', 'create_new_age:advanced_motor_extension', 'create_new_age:shaped/redstone_magnet',
         'ae2:transform/damaged_budding_quartz', 'ae2:transform/chipped_budding_quartz', 'ae2:transform/flawed_budding_quartz',
         'ae2:network/crafting/molecular_assembler', 'ae2:network/blocks/pattern_providers_interface', 'ae2:network/crafting/cpu_crafting_unit',
         'ae2:network/blocks/energy_energy_acceptor', 'ae2:network/blocks/interfaces_interface', 'ae2:network/blocks/io_condenser',
         'ae2:network/blocks/cell_workbench', 'ae2:network/blocks/spatial_io_port', 'ae2:network/blocks/io_port', 'a2:network/cables/covered_fluix', 'ae2:network/parts/quartz_fiber_part',
-        'ae2:network/cables/glass_fluix', 'exnihilosequentia:barrel_fluid_mixing/blackstone', 'exnihilosequentia:barrel_fluid_mixing/netherrack'
+        'ae2:network/cables/glass_fluix'
     ];
 
     const toRemoveType = ['thermal:sawmill', 'thermal:pulverizer', 'thermal:insolator', 'thermal:centrifuge', 'thermal:crucible', 'thermal:chiller', 'thermal:refinery', 'thermal:pyrolyzer',
