@@ -1,2 +1,0 @@
-// Compost colors for komarumod. You may add your own colors, change existing ones, or remove colors that aren't needed.
-komaru_powder, #d7d9de
