@@ -124,7 +124,7 @@
 			id: "1D223731850769CF"
 			optional: true
 			rewards: [{
-				command: "/ae2 channelmode 2x"
+				command: "/ae2 channelmode x2"
 				icon: "ae2:singularity"
 				id: "54D4CA19DD85D1DA"
 				type: "command"
