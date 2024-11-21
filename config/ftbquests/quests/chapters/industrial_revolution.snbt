@@ -65,8 +65,8 @@
 				item: "gtceu:lv_lathe"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -3.5d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -569,7 +569,7 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			description: ["The Electric Blast Furnace (EBF for short) is a better furnace, which you will need for most of your ingots going forward."]
+			description: ["The Electric Blast Furnace (EBF for short) is a better furnace, which you will need for most of your ingots going forward. If you are curious about how to use the EBF for MV recipes, look at the mechanics chapter, inside the overclock quest."]
 			icon: "gtceu:electric_blast_furnace"
 			id: "56BA79287C4DBE52"
 			rewards: [{
@@ -893,6 +893,7 @@
 			dependencies: [
 				"261B946701411D9C"
 				"7908E8C196F82F9B"
+				"119983C3240B8F66"
 			]
 			dependency_requirement: "one_completed"
 			description: ["Made with either Sodium Persulfate or Iron III Chloride. Both are explained in the Processing Lines chapter."]
@@ -1840,99 +1841,6 @@
 			}]
 			x: -8.5d
 			y: -1.5d
-		}
-		{
-			dependencies: ["1A9E5F3F6CE13465"]
-			description: ["Physics is wondering how you managed to compress fluids eightfold."]
-			id: "0D2967CEED23950B"
-			invisible: true
-			optional: true
-			rewards: [{
-				count: 4
-				id: "4E468F88CD48D5DF"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "octagon"
-			tasks: [{
-				id: "61CE0F73A6C7541F"
-				item: "gtceu:ev_super_tank"
-				type: "item"
-			}]
-			title: "This isn't right"
-			x: -12.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["73125407EA6D21EC"]
-			description: ["Shouldn't you consider voiding items right about now?"]
-			id: "37792694CA384580"
-			invisible: true
-			optional: true
-			rewards: [{
-				count: 4
-				id: "2FAAEF289615F8B9"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
-				type: "item"
-			}]
-			shape: "octagon"
-			tasks: [{
-				id: "7047750E1872E0DC"
-				item: "gtceu:ev_super_chest"
-				type: "item"
-			}]
-			title: "I have a lot of stuff"
-			x: -12.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["4783029C26DC0368"]
-			description: ["We made the quests optional, but did you really think we would leave it be just like that?"]
-			id: "69069D8936BFD494"
-			invisible: true
-			optional: true
-			rewards: [{
-				count: 4
-				id: "310772D39100E843"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "octagon"
-			tasks: [{
-				count: 64L
-				id: "22D553699F5EEC92"
-				item: "gtceu:hot_silicon_ingot"
-				type: "item"
-			}]
-			title: "Burning your fingers"
-			x: -0.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["54549EC141659C30"]
-			description: ["A useless item, that has long been forgotten."]
-			id: "6CB8257D07187859"
-			invisible: true
-			optional: true
-			rewards: [{
-				count: 4
-				id: "42F10428D8556C04"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "octagon"
-			tasks: [{
-				id: "352F3633C9D9F0F8"
-				item: "gtceu:lv_kinetic_mixer"
-				type: "item"
-			}]
-			title: "Why would you make this?"
-			x: -3.5d
-			y: -4.5d
 		}
 	]
 	title: "Industrial Revolution"

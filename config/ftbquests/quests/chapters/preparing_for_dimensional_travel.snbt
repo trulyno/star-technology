@@ -744,7 +744,7 @@
 				}
 			]
 			title: "This is what you have been waiting for"
-			x: 3.5d
+			x: 3.0d
 			y: -3.5d
 		}
 		{
@@ -763,7 +763,7 @@
 				title: "Get Abydos Coordinates"
 				type: "checkmark"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: -6.5d
 		}
 		{
@@ -775,31 +775,8 @@
 				title: "STOP!!! CONTENT NOT YET READY!"
 				type: "checkmark"
 			}]
-			x: 6.0d
+			x: 5.5d
 			y: -3.5d
-		}
-		{
-			dependencies: ["707C2E9BA62A60C5"]
-			description: [":)"]
-			id: "71EF6EABFC7B219E"
-			invisible: true
-			optional: true
-			rewards: [{
-				count: 4
-				id: "1EC996BE83B7F534"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "octagon"
-			tasks: [{
-				count: 64L
-				id: "66646162023CE3B2"
-				item: "gtceu:wetware_processor_mainframe"
-				type: "item"
-			}]
-			title: "Surprise"
-			x: -11.0d
-			y: 6.5d
 		}
 	]
 	title: "Making the Classic Stargate"

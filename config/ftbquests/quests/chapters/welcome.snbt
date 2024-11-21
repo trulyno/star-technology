@@ -98,6 +98,106 @@
 			x: 1.0d
 			y: 4.0d
 		}
+		{
+			can_repeat: true
+			icon: "ae2:controller"
+			id: "01D554315C80E32A"
+			optional: true
+			rewards: [{
+				command: "/ae2 channelmode default"
+				icon: "ae2:singularity"
+				id: "1D572460D352C71E"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "393E31B11D51498A"
+				type: "checkmark"
+			}]
+			title: "Turn on AE2 Channels"
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			can_repeat: true
+			icon: "ae2:controller"
+			id: "1D223731850769CF"
+			optional: true
+			rewards: [{
+				command: "/ae2 channelmode x2"
+				icon: "ae2:singularity"
+				id: "54D4CA19DD85D1DA"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "3CAB0FFD4B992B4C"
+				type: "checkmark"
+			}]
+			title: "Turn on AE2 Channels x2"
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			icon: "ae2:controller"
+			id: "650968485BE86ECC"
+			optional: true
+			rewards: [{
+				command: "/ae2 channelmode x3"
+				icon: "ae2:singularity"
+				id: "4AC0AA5B4584E54A"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "0163CFF55BAB86F4"
+				type: "checkmark"
+			}]
+			title: "Turn on AE2 Channels x3"
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			can_repeat: true
+			icon: "ae2:controller"
+			id: "2EE5068AEA2B2F0C"
+			optional: true
+			rewards: [{
+				command: "/ae2 channelmode x4"
+				icon: "ae2:singularity"
+				id: "55E25D0F70A7EE4D"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "4BC87C6C2733C4F9"
+				type: "checkmark"
+			}]
+			title: "Turn on AE2 Channels x4"
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			icon: "ae2:controller"
+			id: "3CCF44ACC8A78039"
+			optional: true
+			rewards: [{
+				command: "/ae2 channelmode infinite"
+				icon: "ae2:singularity"
+				id: "78355C4A04F1FBD1"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "55AA30056411A62E"
+				type: "checkmark"
+			}]
+			title: "Turn off AE2 Channels"
+			x: 3.5d
+			y: 5.0d
+		}
 	]
 	title: "Welcome"
 }

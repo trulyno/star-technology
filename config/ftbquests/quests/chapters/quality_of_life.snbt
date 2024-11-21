@@ -21,28 +21,18 @@
 			y: 2.5d
 		}
 		{
-			icon: "enderio:travel_anchor"
+			icon: "travelanchors:travel_anchor"
 			id: "2092BC62D0ABB53F"
 			shape: "rsquare"
 			tasks: [
 				{
 					id: "24453FAD009278C1"
-					item: "enderio:travel_anchor"
+					item: "travelanchors:travel_anchor"
 					type: "item"
 				}
 				{
 					id: "46B3170CFFC70CD7"
-					item: {
-						Count: 1
-						id: "enderio:staff_of_travelling"
-						tag: {
-							Energy: {
-								EnergyStored: 0
-								MaxEnergyStored: 100000
-								MaxEnergyUse: 100000
-							}
-						}
-					}
+					item: "travelanchors:travel_staff"
 					type: "item"
 				}
 			]
@@ -346,187 +336,6 @@
 			}]
 			x: -1.0d
 			y: 1.0d
-		}
-		{
-			id: "2D1CB7C4C50BE9C2"
-			shape: "rsquare"
-			tasks: [{
-				id: "60BDD275630295C0"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "enderio:fluid_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:pressurized_fluid_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:ender_fluid_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:redstone_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:item_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:dense_me_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:me_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:uv_energy_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:zpm_energy_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:luv_energy_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:uhv_energy_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:iv_energy_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:hv_energy_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:ev_energy_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:lv_energy_conduit"
-							}
-							{
-								Count: 1b
-								id: "enderio:mv_energy_conduit"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "EnderIO Conduits"
-			x: 1.0d
-			y: -2.5d
-		}
-		{
-			id: "465BF8413CF5ED94"
-			shape: "rsquare"
-			tasks: [{
-				id: "6C5BED573AEB47E6"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "enderio:basic_item_filter"
-							}
-							{
-								Count: 1b
-								id: "enderio:advanced_item_filter"
-							}
-							{
-								Count: 1b
-								id: "enderio:basic_fluid_filter"
-							}
-							{
-								Count: 1b
-								id: "enderio:redstone_not_filter"
-							}
-							{
-								Count: 1b
-								id: "enderio:redstone_or_filter"
-							}
-							{
-								Count: 1b
-								id: "enderio:redstone_xor_filter"
-							}
-							{
-								Count: 1b
-								id: "enderio:redstone_xnor_filter"
-							}
-							{
-								Count: 1b
-								id: "enderio:redstone_toggle_filter"
-							}
-							{
-								Count: 1b
-								id: "enderio:redstone_counting_filter"
-							}
-							{
-								Count: 1b
-								id: "enderio:redstone_sensor_filter"
-							}
-							{
-								Count: 1b
-								id: "enderio:redstone_timer_filter"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "EnderIO Filters"
-			x: 2.0d
-			y: -2.5d
-		}
-		{
-			id: "22109450130397B1"
-			shape: "rsquare"
-			tasks: [{
-				id: "0F384B24997CCB51"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "enderio:extraction_speed_upgrade_1"
-							}
-							{
-								Count: 1b
-								id: "enderio:extraction_speed_upgrade_2"
-							}
-							{
-								Count: 1b
-								id: "enderio:extraction_speed_upgrade_3"
-							}
-							{
-								Count: 1b
-								id: "enderio:extraction_speed_upgrade_4"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "EnderIO Upgrades"
-			x: 3.0d
-			y: -2.5d
 		}
 	]
 	title: "Quality Of Life"

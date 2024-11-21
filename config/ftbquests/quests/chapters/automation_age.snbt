@@ -71,8 +71,8 @@
 				}
 			]
 			title: "RAM Chips"
-			x: -0.5d
-			y: -2.0d
+			x: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -167,7 +167,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -202,7 +202,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
@@ -263,7 +263,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["363F5B598683A074"]
@@ -471,7 +471,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
@@ -569,8 +569,8 @@
 				item: "gtceu:energy_crystal"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -4.5d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -624,8 +624,8 @@
 				}
 			]
 			title: "NanoMuscle™ Suite"
-			x: 1.5d
-			y: -4.5d
+			x: 0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -956,8 +956,8 @@
 				item: "gtceu:prospector.hv"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 5.5d
+			x: -2.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["170C262792DA7123"]
@@ -1083,8 +1083,8 @@
 				item: "exmachinis:diamond_upgrade"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 11.5d
+			x: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["6060E79B2D08912D"]
@@ -1138,8 +1138,8 @@
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 11.5d
+			x: 12.5d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1148,7 +1148,6 @@
 				"2B695762FC4A7686"
 			]
 			description: ["Distilling each air type will give you access to a variety of diffent chemicals, all of which will be useful in one way or another."]
-			hide_dependent_lines: true
 			id: "39FF89B370D09B88"
 			rewards: [{
 				count: 2
@@ -1519,7 +1518,7 @@
 		{
 			dependencies: [
 				"62BA581B2918BB7B"
-				"39FF89B370D09B88"
+				"2DB216B224F2E8EF"
 			]
 			id: "574ECD841D0D2AD7"
 			rewards: [{
@@ -1799,8 +1798,8 @@
 				item: "gtceu:iv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -4.5d
+			x: 7.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4A45669665626026"]
@@ -1815,7 +1814,7 @@
 				item: "gtceu:iv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 7.5d
 			y: -4.5d
 		}
 		{
@@ -1853,8 +1852,8 @@
 				item: "gtceu:shellite_single_wire"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.5d
+			x: 6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -1870,8 +1869,8 @@
 				item: "gtceu:shellite_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -4.5d
+			x: 6.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2D4F9DFF6B559C65"]
@@ -2269,75 +2268,47 @@
 				item: "gtceu:alloy_blast_smelter"
 				type: "item"
 			}]
+			x: 13.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["3B2D79D40B9617D5"]
+			description: [
+				"The Nuclear Reactor allows for easy recipes when making Uranium-235 and Plutonium-239, and also functions as quite a powerful energy generator, capable of producing 8 EV amps, or 2 IV amps at once. "
+				"This does mean you need either a 16A EV or 4A IV energy hatch."
+			]
+			id: "68865F1DDBFFFACE"
+			rewards: [{
+				count: 2
+				id: "7E70C6C6130F88D8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "388DD36D47A45596"
+				item: "gtceu:nuclear_reactor"
+				type: "item"
+			}]
 			x: 9.5d
 			y: 11.5d
 		}
 		{
-			dependencies: ["4FFD2642BC183495"]
-			description: ["Just why?"]
-			id: "74192E3B5EDDCA39"
-			invisible: true
-			optional: true
-			rewards: [{
-				count: 4
-				id: "231B2C18117E1941"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "octagon"
+			dependencies: [
+				"39FF89B370D09B88"
+				"68865F1DDBFFFACE"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependent_lines: true
+			id: "2DB216B224F2E8EF"
 			tasks: [{
-				id: "0A713361925DE900"
-				item: "gtceu:prospector.luv"
+				id: "5BC0FD5122614E2B"
+				item: "gtceu:radon_bucket"
 				type: "item"
 			}]
-			title: "Going that extra mile"
-			x: -2.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["2CABFCC73E33E133"]
-			description: ["Solar power is great, but this isn't what we meant when we said that."]
-			id: "7167D5936AF4F86A"
-			invisible: true
-			optional: true
-			rewards: [{
-				count: 4
-				id: "4B52C62655EE9462"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "octagon"
-			tasks: [{
-				id: "0FBC974F632B7085"
-				item: "gtceu:ulv_solar_panel"
-				type: "item"
-			}]
-			title: "Solar Power"
-			x: 17.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["17C1292018AE363E"]
-			description: ["Making a max sized Cleanroom is mandatory, trust me."]
-			id: "775486BEBAFE1146"
-			invisible: true
-			optional: true
-			rewards: [{
-				count: 4
-				id: "4A4E248B76EB43A6"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "octagon"
-			tasks: [{
-				count: 168L
-				id: "3EB984220385E68B"
-				item: { Count: 168, id: "gtceu:filter_casing" }
-				type: "item"
-			}]
-			title: "Time for a big one"
-			x: 2.5d
-			y: 2.5d
+			x: 7.5d
+			y: 11.5d
 		}
 	]
 	title: "Automation Age"
