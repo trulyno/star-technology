@@ -18,7 +18,7 @@
 		passive: 4000
 	}
 	pause_game: false
-	progression_mode: "linear"
+	progression_mode: "flexible"
 	title: "Star Technology"
 	version: 13
 }
