@@ -56,12 +56,8 @@ ServerEvents.recipes(event => {
         .EUt(7);
 
     event.remove({output: 'create:andesite_alloy'});
-    //event.shapeless('2x create:andesite_alloy', ['2x minecraft:iron_nugget', '2x exdeorum:andesite_pebble']);
-    //event.shapeless('16x create:andesite_alloy', ['4x minecraft:andesite', '5x minecraft:iron_nugget']);
-    event.recipes.gtceu.primitive_blast_furnace('andesite_alloy')
-    .itemInputs('minecraft:andesite','minecraft:iron_nugget')
-    .itemOutputs('3x create:andesite_alloy')
-    .duration(800);
+    event.shapeless('2x create:andesite_alloy', ['2x minecraft:iron_nugget', '2x exnihilosequentia:andesite_pebble']);
+    event.shapeless('16x create:andesite_alloy', ['4x minecraft:andesite', '5x minecraft:iron_nugget']);
     
     event.shaped('create:precision_mechanism', [
         'NBN',

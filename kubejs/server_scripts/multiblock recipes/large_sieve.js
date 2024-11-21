@@ -29,13 +29,13 @@ ServerEvents.recipes(event => {
         .EUt(6400);
 
     event.recipes.gtceu.large_sieve('dust_sieving')
-        .itemInputs('64x exdeorum:dust')
+        .itemInputs('64x exnihilosequentia:dust')
         .itemOutputs('64x minecraft:ender_pearl', '64x minecraft:glowstone_dust', '64x minecraft:redstone', '64x gtceu:sulfur_dust', '64x ae2:sky_dust', '64x minecraft:echo_shard')
         .duration(400)
         .EUt(6400);
 
     event.recipes.gtceu.large_sieve('blackstone_sieving')
-        .itemInputs('64x exdeorum:crushed_blackstone')
+        .itemInputs('64x exnihilosequentia:crushed_blackstone')
         .itemOutputs('64x gtceu:crushed_stibnite_ore', '64x gtceu:crushed_galena_ore', '64x gtceu:crushed_pentlandite_ore', '64x gtceu:crushed_bornite_ore', 
             '64x gtceu:crushed_cobaltite_ore', '64x gtceu:crushed_chromite_ore', '64x gtceu:crushed_beryllium_ore', '64x gtceu:crushed_pitchblende_ore', 
             '64x gtceu:crushed_ilmenite_ore', '64x gtceu:crushed_molybdenite_ore', '64x gtceu:crushed_bastnasite_ore', '64x gtceu:crushed_barite_ore', 

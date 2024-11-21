@@ -44,8 +44,8 @@ ServerEvents.recipes(event => {
         .EUt(345);
 
     event.recipes.gtceu.assembler('emerald_mesh')
-        .itemInputs('exnihilosequentia:emerald_mesh', '16x #forge:dusts/emerald')
-        .itemOutputs('exnihilosequentia:diamond_mesh')
+        .itemInputs('exnihilosequentia:diamond_mesh', '16x #forge:dusts/emerald')
+        .itemOutputs('exnihilosequentia:emerald_mesh')
         .duration(300)
         .EUt(1024);
 
