@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
     });
 
     const tier3 = ['emerald', 'certus_quartz', 'ruby', 'saltpeter', 'salts', 'garnet', 'apatite', 'sapphire', 'topaz',
-                    'enderman', 'slime', 'prismarine', 'realgar', 'lepidolite', 'cobaltite', 'antimony', 'aluminum'];
+                    'enderman', 'slime', 'prismarine', 'realgar', 'lepidolite', 'cobaltite', 'antimony', 'aluminum', 'skeleton'];
 
     tier3.forEach(element => {
         greenHouseGrowing(element, dust3);

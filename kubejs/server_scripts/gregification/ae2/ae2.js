@@ -100,6 +100,31 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(65);
 
+    event.recipes.gtceu.assembler('1024k_cell_component_stem_skip')
+    .itemInputs('4x gtceu:tungsten_steel_plate', '4x gtceu:stem_cells', '#gtceu:circuits/iv', '16x ae2:logic_processor')
+    .itemOutputs('ae2additions:cell_component_1024')
+    .duration(200)
+    .EUt(7680);
+
+    
+    event.recipes.gtceu.assembler('4096k_cell_component')
+    .itemInputs('4x gtceu:rhodium_plated_palladium_plate', '2x ae2additions:cell_component_1024', '#gtceu:circuits/luv')
+    .itemOutputs('ae2additions:cell_component_4096')
+    .duration(200)
+    .EUt(30720);
+
+      event.recipes.gtceu.assembler('16384k_cell_component')
+    .itemInputs('4x gtceu:naquadah_alloy_plate', '2x ae2additions:cell_component_4096', '#gtceu:circuits/zpm')
+    .itemOutputs('ae2additions:cell_component_16834')
+    .duration(200)
+    .EUt(122880);
+
+       event.recipes.gtceu.assembler('65536k_cell_component')
+    .itemInputs('4x gtceu:darmstadtium_plate', '2x ae2additions:cell_component_16384', '#gtceu:circuits/uv')
+    .itemOutputs('ae2additions:cell_component_65536')
+    .duration(200)
+    .EUt(491520);
+    
     event.shaped(Item.of('ae2:controller'), [
         'HFH',
         'FCF',
@@ -289,4 +314,4 @@ ServerEvents.recipes(event => {
             D: 'gtceu:star_steel_plate',
             E: '#forge:ingots/copper'
         });
-})
+})  

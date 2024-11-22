@@ -1,746 +1,1106 @@
 
 ServerEvents.recipes(event => {
 
-    const dust1 = 'mysticalagriculture:inferium_essence';
-    const dust2 = 'mysticalagriculture:prudentium_essence';
-    const dust3 = 'mysticalagriculture:tertium_essence';
-    const dust4 = 'mysticalagriculture:imperium_essence';
-    const dust5 = 'mysticalagriculture:supremium_essence';
-    const dust6 = 'mysticalagriculture:awakened_supremium_essence';
-    const dust7 = 'mysticalagradditions:insanium_essence';
+    const cryptand = 'gtceu:cryptand 1';
+    const gem = 'gtceu:12_crown_4_li 100';
+    const gemDepleted = 'gtceu:12_crown_4 100';
+    const gemCryptand = 'gtceu:cryptand_li 1';
+    const metal = 'gtceu:15_crown_5_na 100';
+    const metalDepleted = 'gtceu:15_crown_5 100';
+    const metalCryptand = 'gtceu:cryptand_na 1';
+    const dust = 'gtceu:18_crown_6_k 100';
+    const dustDepleted = 'gtceu:18_crown_6 100';
+    const dustCryptand = 'gtceu:cryptand_k 1';
 
-    // essence recipes (SUBJECT OF CHANGE)
-    event.recipes.gtceu.mixer('inferium_essence')
-        .itemInputs('gtceu:phosphorus_dust', 'gtceu:beryllium_dust')
-        .inputFluids('gtceu:glowstone 144')
-        .itemOutputs(dust1)
-        .duration(200)
-        .EUt(80);
-
-    // Mixer and extractor recipes
-    event.recipes.gtceu.mixer('wood_essence_mix')
-        .itemInputs('4x mysticalagriculture:air_essence', '3x mysticalagriculture:water_essence', '8x mysticalagriculture:earth_essence')
-        .itemOutputs('mysticalagriculture:wood_essence')
-        .duration(200)
-        .EUt(400)
+    // Tier 1
+    event.recipes.gtceu.essence_burning('water_essence_burning_0')
+        .itemInputs('mysticalagriculture:water_essence')
+        .outputFluids('gtceu:distilled_water 2500')
+        .duration(100)
+        .EUt(20)
         .circuit(0);
 
-    event.recipes.gtceu.mixer('stone_essence_mix')
-        .itemInputs('2x mysticalagriculture:air_essence', '4x mysticalagriculture:fire_essence', '4x mysticalagriculture:earth_essence')
-        .itemOutputs('mysticalagriculture:stone_essence')
-        .duration(200)
-        .EUt(400)
+    event.recipes.gtceu.essence_burning('water_essence_burning_1')
+        .itemInputs('mysticalagriculture:water_essence')
+        .outputFluids('gtceu:salt_water 5000')
+        .duration(100)
+        .EUt(20)
         .circuit(1);
 
-    event.recipes.gtceu.mixer('dirt_essence_mix')
-        .itemInputs('2x mysticalagriculture:water_essence', '3x mysticalagriculture:fire_essence', '6x mysticalagriculture:earth_essence')
-        .itemOutputs('mysticalagriculture:dirt_essence')
-        .duration(200)
-        .EUt(400)
+    event.recipes.gtceu.essence_burning('water_essence_burning_2')
+        .itemInputs('mysticalagriculture:water_essence')
+        .outputFluids('exnihilosequentia:witch_water 5000')
+        .duration(100)
+        .EUt(20)
         .circuit(2);
 
-    event.recipes.gtceu.mixer('ice_essence_mix')
-        .itemInputs('mysticalagriculture:air_essence', '7x mysticalagriculture:water_essence')
-        .itemOutputs('mysticalagriculture:ice_essence')
-        .duration(200)
-        .EUt(400)
+    event.recipes.gtceu.essence_burning('water_essence_burning_3')
+        .itemInputs('mysticalagriculture:water_essence')
+        .outputFluids('exnihilosequentia:sea_water 5000')
+        .duration(100)
+        .EUt(20)
         .circuit(3);
 
-    event.recipes.gtceu.mixer('nature_essence_mix')
-        .itemInputs('3x mysticalagriculture:wood_essence', '4x mysticalagriculture:earth_essence', '2x mysticalagriculture:water_essence')
-        .itemOutputs('mysticalagriculture:nature_essence')
-        .duration(200)
-        .EUt(1024);
+    event.recipes.gtceu.essence_burning('air_essence_burning_1')
+        .itemInputs('mysticalagriculture:air_essence')
+        .outputFluids('gtceu:air 16000')
+        .duration(100)
+        .EUt(20)
+        .circuit(1);
 
-    event.recipes.gtceu.mixer('dye_essence_mix')
-        .itemInputs('2x mysticalagriculture:dirt_essence', '4x mysticalagriculture:fire_essence', '2x mysticalagriculture:air_essence')
-        .itemOutputs('mysticalagriculture:dye_essence')
-        .duration(200)
-        .EUt(1024);
+    event.recipes.gtceu.essence_burning('air_essence_burning_2')
+        .itemInputs('mysticalagriculture:air_essence')
+        .outputFluids('gtceu:nether_air 16000')
+        .duration(100)
+        .EUt(1560)
+        .circuit(2);
 
-    event.recipes.gtceu.mixer('coal_essence_mix')
-        .itemInputs('8x mysticalagriculture:wood_essence', '4x mysticalagriculture:fire_essence')
-        .itemOutputs('mysticalagriculture:coal_essence')
-        .duration(200)
-        .EUt(1024);
+    event.recipes.gtceu.essence_burning('air_essence_burning_3')
+        .itemInputs('mysticalagriculture:air_essence')
+        .outputFluids('gtceu:ender_air 16000')
+        .duration(100)
+        .EUt(1560)
+        .circuit(3);
 
-    event.recipes.gtceu.extractor('life_essence_extraction')
-        .itemInputs('mysticalagriculture:nature_essence')
-        .chancedOutput('mysticalagriculture:life_essence', 100, 0)
-        .duration(200)
-        .EUt(400);
-
-    event.recipes.gtceu.mixer('iron_essence_mix')
-        .itemInputs('12x mysticalagriculture:stone_essence', '7x mysticalagriculture:fire_essence', '3x mysticalagriculture:water_essence')
-        .itemOutputs('mysticalagriculture:iron_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(10);
-
-    event.recipes.gtceu.mixer('copper_essence_mix')
-        .itemInputs('8x mysticalagriculture:stone_essence', '12x mysticalagriculture:fire_essence', '6x mysticalagriculture:water_essence')
-        .itemOutputs('mysticalagriculture:copper_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(11);
-
-    event.recipes.gtceu.mixer('tin_essence_mix')
-        .itemInputs('10x mysticalagriculture:stone_essence', '5x mysticalagriculture:fire_essence', '4x mysticalagriculture:water_essence')
-        .itemOutputs('mysticalagriculture:tin_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(12);
-
-    event.recipes.gtceu.mixer('nickel_essence_mix')
-        .itemInputs('15x mysticalagriculture:stone_essence', '7x mysticalagriculture:fire_essence', '7x mysticalagriculture:water_essence')
-        .itemOutputs('mysticalagriculture:nickel_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(13);
-
-    event.recipes.gtceu.mixer('lead_essence_mix')
-        .itemInputs('17x mysticalagriculture:stone_essence', '10x mysticalagriculture:fire_essence', '5x mysticalagriculture:water_essence')
-        .itemOutputs('mysticalagriculture:lead_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(14);
-
-    event.recipes.gtceu.mixer('zinc_essence_mix')
-        .itemInputs('5x mysticalagriculture:stone_essence', '3x mysticalagriculture:fire_essence', '2x mysticalagriculture:water_essence')
-        .itemOutputs('mysticalagriculture:zinc_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(15);
-
-    event.recipes.gtceu.mixer('gold_essence_mix')
-        .itemInputs('21x mysticalagriculture:stone_essence', '17x mysticalagriculture:fire_essence', '12x mysticalagriculture:water_essence')
-        .itemOutputs('mysticalagriculture:gold_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(16);
-
-    event.recipes.gtceu.mixer('silver_essence_mix')
-        .itemInputs('19x mysticalagriculture:stone_essence', '15x mysticalagriculture:fire_essence', '10x mysticalagriculture:water_essence')
-        .itemOutputs('mysticalagriculture:silver_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(17);
-
-    event.recipes.gtceu.mixer('diamond_essence_mix')
-        .itemInputs('64x mysticalagriculture:coal_essence', '64x mysticalagriculture:fire_essence')
-        .itemOutputs('mysticalagriculture:diamond_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(10);
-
-    event.recipes.gtceu.mixer('redstone_essence_mix')
-        .itemInputs('11x mysticalagriculture:earth_essence', '5x mysticalagriculture:fire_essence', '4x mysticalagriculture:dye_essence')
-        .itemOutputs('mysticalagriculture:redstone_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(10);
-
-    event.recipes.gtceu.mixer('glowstone_essence_mix')
-        .itemInputs('9x mysticalagriculture:earth_essence', '8x mysticalagriculture:fire_essence', '5x mysticalagriculture:dye_essence')
-        .itemOutputs('mysticalagriculture:glowstone_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(11);
-
-    event.recipes.gtceu.mixer('nether_quartz_essence_mix')
-        .itemInputs('13x mysticalagriculture:earth_essence', '16x mysticalagriculture:fire_essence', '1x mysticalagriculture:dye_essence')
-        .itemOutputs('mysticalagriculture:nether_quartz_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(12);
-
-    event.recipes.gtceu.mixer('lapis_lazuli_essence_mix')
-        .itemInputs('7x mysticalagriculture:earth_essence', '4x mysticalagriculture:fire_essence', '6x mysticalagriculture:dye_essence')
-        .itemOutputs('mysticalagriculture:lapis_lazuli_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(13);
-
-    event.recipes.gtceu.mixer('sulfur_essence_mix')
-        .itemInputs('23x mysticalagriculture:earth_essence', '15x mysticalagriculture:fire_essence', '6x mysticalagriculture:dye_essence')
-        .itemOutputs('mysticalagriculture:sulfur_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(14);
-
-    event.recipes.gtceu.mixer('amethyst_essence_mix')
-        .itemInputs('11x mysticalagriculture:earth_essence', '3x mysticalagriculture:fire_essence', '8x mysticalagriculture:dye_essence')
-        .itemOutputs('mysticalagriculture:amethyst_essence')
-        .duration(200)
-        .EUt(400)
-        .circuit(15);
-
-    event.recipes.gtceu.mixer('aluminium_essence_mix')
-        .itemInputs('32x mysticalagriculture:earth_essence', '17x mysticalagriculture:fire_essence', '20x mysticalagriculture:water_essence')
-        .itemOutputs('mysticalagriculture:aluminum_essence')
-        .duration(200)
-        .EUt(1024)
-        .circuit(18);
-
-    event.recipes.gtceu.mixer('antimony_essence_mix')
-        .itemInputs('29x mysticalagriculture:earth_essence', '12x mysticalagriculture:sulfur_essence', '10x mysticalagriculture:stone_essence')
-        .itemOutputs('mysticalagriculture:antimony_essence')
-        .duration(200)
-        .EUt(1024)
-        .circuit(17);
-
-    event.recipes.gtceu.mixer('cobaltite_essence_mix')
-        .itemInputs('40x mysticalagriculture:earth_essence', '21x mysticalagriculture:dye_essence', '15x mysticalagriculture:stone_essence')
-        .itemOutputs('mysticalagriculture:cobaltite_essence')
-        .duration(200)
-        .EUt(1024)
-        .circuit(18);
-
-    event.recipes.gtceu.mixer('emerald_essence_mix')
-        .itemInputs('5x mysticalagriculture:aluminum_essence', '41x mysticalagriculture:dye_essence', '43x mysticalagriculture:fire_essence')
-        .itemOutputs('mysticalagriculture:emerald_essence')
-        .duration(200)
-        .EUt(1024)
-        .circuit(16);
-
-    event.recipes.gtceu.mixer('certus_quartz_essence_mix')
-        .itemInputs('12x mysticalagriculture:nether_quartz_essence', '1x mysticalagriculture:amethyst_essence', '1x mysticalagriculture:diamond_essence')
-        .itemOutputs('mysticalagriculture:certus_quartz_essence')
-        .duration(200)
-        .EUt(1024)
-        .circuit(17);
-
-    event.recipes.gtceu.mixer('ruby_essence_mix')
-        .itemInputs('15x mysticalagriculture:nether_quartz_essence', '5x mysticalagriculture:aluminum_essence', '45x mysticalagriculture:dye_essence')
-        .itemOutputs('mysticalagriculture:ruby_essence')
-        .duration(200)
-        .EUt(1024)
-        .circuit(18);
-
-    event.recipes.gtceu.mixer('salts_essence_mix')
-        .itemInputs('32x mysticalagriculture:stone_essence', '32x mysticalagriculture:earth_essence')
-        .itemOutputs('mysticalagriculture:salts_essence')
-        .duration(200)
-        .EUt(1024)
-        .circuit(19);
-
-    event.recipes.gtceu.mixer('saltpeter_essence_mix')
-        .itemInputs('32x mysticalagriculture:stone_essence', '32x mysticalagriculture:earth_essence')
-        .itemOutputs('mysticalagriculture:saltpeter_essence')
-        .duration(200)
-        .EUt(1024)
-        .circuit(20);
-
-    event.recipes.gtceu.mixer('lepidolite_essence_mix')
-        .itemInputs('2x mysticalagriculture:aluminum_essence', '4x mysticalagriculture:salts_essence')
-        .itemOutputs('mysticalagriculture:lepidolite_essence')
-        .duration(200)
-        .EUt(1024)
-        .circuit(21);
-
-    event.recipes.gtceu.mixer('realgar_essence_mix')
-        .itemInputs('13x mysticalagriculture:nether_quartz_essence', '14x mysticalagriculture:sulfur_essence')
-        .itemOutputs('mysticalagriculture:realgar_essence')
-        .duration(200)
-        .EUt(1024)
-        .circuit(22);
-
-    event.recipes.gtceu.mixer('garnet_essence_mix')
-        .itemInputs('15x mysticalagriculture:iron_essence', '5x mysticalagriculture:aluminum_essence', '15x mysticalagriculture:nether_quartz_essence')
-        .itemOutputs('mysticalagriculture:garnet_essence')
-        .duration(200)
-        .EUt(1024)
-        .circuit(23);
-
-    event.recipes.gtceu.mixer('apatite_essence_mix')
-        .itemInputs('53x mysticalagriculture:stone_essence', '10x mysticalagriculture:nether_quartz_essence', '24x mysticalagriculture:earth_essence')
-        .itemOutputs('mysticalagriculture:apatite_essence')
-        .duration(200)
-        .EUt(1024)
-        .circuit(23);
-
-    event.recipes.gtceu.extractor('sapphire_essence_extraction')
-        .itemInputs('mysticalagriculture:aluminum_essence')
-        .chancedOutput('mysticalagriculture:sapphire_essence', 1000, 0)
-        .duration(200)
-        .EUt(1024);
-
-    event.recipes.gtceu.mixer('topaz_essence_mix')
-        .itemInputs('61x mysticalagriculture:stone_essence', '2x mysticalagriculture:aluminum_essence', '53x mysticalagriculture:fire_essence')
-        .itemOutputs('mysticalagriculture:topaz_essence')
-        .duration(200)
-        .EUt(1024)
-        .circuit(24);
-
-    event.recipes.gtceu.extractor('monazite_essence_extraction')
-        .itemInputs('mysticalagriculture:apatite_essence')
-        .chancedOutput('mysticalagriculture:monazite_essence', 1000, 0)
-        .duration(200)
-        .EUt(6400);
-
-    event.recipes.gtceu.mixer('uranium_essence_mix')
-        .itemInputs('64x mysticalagriculture:stone_essence', '54x mysticalagriculture:lead_essence', '63x mysticalagriculture:nether_quartz_essence')
-        .itemOutputs('mysticalagriculture:uranium_essence')
-        .duration(200)
-        .EUt(6400)
-        .circuit(25);
-
-    event.recipes.gtceu.extractor('chrome_essence_extraction')
-        .itemInputs('mysticalagriculture:ruby_essence')
-        .chancedOutput('mysticalagriculture:chrome_essence', 2000, 0)
-        .duration(200)
-        .EUt(6400);
-
-    event.recipes.gtceu.mixer('molybdenum_essence_mix')
-        .itemInputs('59x mysticalagriculture:stone_essence', '31x mysticalagriculture:lead_essence', '61x mysticalagriculture:certus_quartz_essence')
-        .itemOutputs('mysticalagriculture:molybdenum_essence')
-        .duration(200)
-        .EUt(6400)
-        .circuit(26);
-
-    event.recipes.gtceu.mixer('manganese_essence_mix')
-        .itemInputs('12x mysticalagriculture:garnet_essence', '45x mysticalagriculture:fire_essence', '60x mysticalagriculture:nether_quartz_essence')
-        .itemOutputs('mysticalagriculture:manganese_essence')
-        .duration(200)
-        .EUt(6400)
-        .circuit(27);
-
-    event.recipes.gtceu.extractor('tantalum_essence_extraction')
-        .itemInputs('mysticalagriculture:manganese_essence')
-        .chancedOutput('mysticalagriculture:tantalum_essence', 1000, 0)
-        .duration(200)
-        .EUt(6400);
-
-    event.recipes.gtceu.mixer('titanium_essence_mix')
-        .itemInputs('60x mysticalagriculture:iron_essence', '49x mysticalagriculture:aluminum_essence', '64x mysticalagriculture:fire_essence')
-        .itemOutputs('mysticalagriculture:titanium_essence')
-        .duration(200)
-        .EUt(6400)
-        .circuit(28);
-
-    event.recipes.gtceu.mixer('niobium_essence_mix')
-        .itemInputs('64x mysticalagriculture:stone_essence', '23x mysticalagriculture:antimony_essence', '64x mysticalagriculture:fire_essence')
-        .itemOutputs('mysticalagriculture:niobium_essence')
-        .duration(200)
-        .EUt(6400)
-        .circuit(29);
-
-    event.recipes.gtceu.mixer('platinum_essence_mix')
-        .itemInputs('48x mysticalagriculture:nickel_essence', '32x mysticalagriculture:sulfur_essence', '64x mysticalagriculture:fire_essence')
-        .itemOutputs('mysticalagriculture:platinum_essence')
-        .duration(200)
-        .EUt(6400)
-        .circuit(29);
-
-    event.recipes.gtceu.mixer('caesium_essence_mix')
-        .itemInputs('24x mysticalagriculture:aluminum_essence', '48x mysticalagriculture:nether_quartz_essence', '55x mysticalagriculture:earth_essence')
-        .itemOutputs('mysticalagriculture:caesium_essence')
-        .duration(200)
-        .EUt(6400)
-        .circuit(30);
-
-    event.recipes.gtceu.mixer('cerium_essence_mix')
-        .itemInputs('33x mysticalagriculture:topaz_essence', '48x mysticalagriculture:coal_essence', '59x mysticalagriculture:earth_essence')
-        .itemOutputs('mysticalagriculture:cerium_essence')
-        .duration(200)
-        .EUt(6400)
-        .circuit(31);
-
-    event.recipes.gtceu.extractor('chalcopyrite_essence_extraction')
-        .itemInputs('mysticalagriculture:copper_essence')
-        .chancedOutput('mysticalagriculture:chalcopyrite_essence', 3500, 0)
-        .duration(200)
-        .EUt(6400);
-
-    event.recipes.gtceu.extractor('tungtsen_essence_extraction')
-        .itemInputs('mysticalagriculture:barium_essence')
-        .chancedOutput('mysticalagriculture:tungsten_essence', 4000, 0)
-        .duration(200)
-        .EUt(16000);
-
-    event.recipes.gtceu.mixer('barium_essence_mix')
-        .itemInputs('59x mysticalagriculture:stone_essence', '64x mysticalagriculture:sulfur_essence', '59x mysticalagriculture:nether_quartz_essence')
-        .itemOutputs('mysticalagriculture:barium_essence')
-        .duration(200)
-        .EUt(16000)
-        .circuit(32);
-
-    event.recipes.gtceu.extractor('naquadah_essence_extraction')
-        .itemInputs('mysticalagriculture:tungsten_essence')
-        .chancedOutput('mysticalagriculture:naquadah_essence', 950, 0)
-        .duration(200)
-        .EUt(100000);
-
-
-    // Seed recipes
-    function toSeeds(element) {
-        event.recipes.gtceu.compressor(`${element}_seeds_recipe`)
-            .itemInputs(`16x mysticalagriculture:${element}_essence`)
-            .itemOutputs(`mysticalagriculture:${element}_seeds`)
-            .duration(800)
-            .EUt(20);
-    }
-
-    const seeds = ['air', 'earth', 'fire', 'water', 'wood', 'stone', 'dirt', 'ice', 'nature', 'dye', 'coal',
-        'iron', 'copper', 'tin', 'nickel', 'lead', 'zinc', 'gold', 'diamond', 'redstone', 'glowstone', 'life',
-        'nether_quartz', 'lapis_lazuli', 'sulfur', 'amethyst', 'silver', 'emerald', 'certus_quartz', 'ruby',
-        'saltpeter', 'salts', 'garnet', 'apatite', 'sapphire', 'topaz', 'enderman', 'slime', 'prismarine',
-        'realgar', 'lepidolite', 'cobaltite', 'antimony', 'aluminum', 'monazite', 'uranium', 'chrome',
-        'molybdenum', 'tantalum', 'manganese', 'platinum', 'titanium', 'caesium', 'blaze', 'blizz', 'blitz',
-        'basalz', 'cerium', 'chalcopyrite', 'niobium', 'tungsten', 'barium', 'naquadah'];
-
-    seeds.forEach(element => {
-        toSeeds(element);
-    });
-
-    // Centrifuging recipes
-    event.recipes.gtceu.centrifuge('elements_from_essence')
-        .itemInputs(dust1)
-        .chancedOutput('mysticalagriculture:air_essence', 2500, 0)
-        .chancedOutput('mysticalagriculture:earth_essence', 2500, 0)
-        .chancedOutput('mysticalagriculture:water_essence', 2500, 0)
-        .chancedOutput('mysticalagriculture:fire_essence', 2500, 0)
-        .duration(600)
-        .EUt(80);
-
-    event.recipes.gtceu.centrifuge('life_essence_centrifuging_0')
-        .itemInputs('6x mysticalagriculture:life_essence')
-        .chancedOutput('mysticalagriculture:enderman_essence', 1500, 500)
-        .chancedOutput('mysticalagriculture:slime_essence', 4500, 500)
-        .chancedOutput('mysticalagriculture:prismarine_essence', 1500, 500)
-        .duration(600)
+    event.recipes.gtceu.essence_burning('fire_essence_burning_0')
+        .itemInputs('mysticalagriculture:fire_essence')
+        .outputFluids('minecraft:lava 5000')
+        .duration(100)
         .EUt(400)
         .circuit(0);
 
-    event.recipes.gtceu.centrifuge('life_essence_centrifuging_1')
-        .itemInputs('32x mysticalagriculture:life_essence')
-        .chancedOutput('mysticalagriculture:blaze_essence', 6500, 500)
-        .chancedOutput('mysticalagriculture:blitz_essence', 1500, 500)
-        .chancedOutput('mysticalagriculture:basalz_essence', 4500, 500)
-        .chancedOutput('mysticalagriculture:blizz_essence', 1500, 500)
-        .duration(600)
+    event.recipes.gtceu.essence_burning('fire_essence_burning_1')
+        .itemInputs('mysticalagriculture:fire_essence')
+        .outputFluids('gtceu:blaze 288')
+        .duration(100)
+        .EUt(400)
+        .circuit(1);
+
+    event.recipes.gtceu.essence_burning('wood_essence_burning_0')
+        .itemInputs('mysticalagriculture:wood_essence')
+        .itemOutputs('32x minecraft:oak_log')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('wood_essence_burning_1')
+        .itemInputs('mysticalagriculture:wood_essence')
+        .itemOutputs('32x minecraft:birch_log')
+        .duration(100)
+        .EUt(80)
+        .circuit(1);
+
+    event.recipes.gtceu.essence_burning('wood_essence_burning_2')
+        .itemInputs('mysticalagriculture:wood_essence')
+        .itemOutputs('32x minecraft:spruce_log')
+        .duration(100)
+        .EUt(80)
+        .circuit(2);
+
+    event.recipes.gtceu.essence_burning('wood_essence_burning_3')
+        .itemInputs('mysticalagriculture:wood_essence')
+        .itemOutputs('32x minecraft:acacia_log')
+        .duration(100)
+        .EUt(80)
+        .circuit(3);
+
+    event.recipes.gtceu.essence_burning('wood_essence_burning_4')
+        .itemInputs('mysticalagriculture:wood_essence')
+        .itemOutputs('32x minecraft:jungle_log')
+        .duration(100)
+        .EUt(80)
+        .circuit(4);
+
+    event.recipes.gtceu.essence_burning('wood_essence_burning_5')
+        .itemInputs('mysticalagriculture:wood_essence')
+        .itemOutputs('32x minecraft:dark_oak_log')
+        .duration(100)
+        .EUt(80)
+        .circuit(5);
+
+    event.recipes.gtceu.essence_burning('wood_essence_burning_6')
+        .itemInputs('mysticalagriculture:wood_essence')
+        .itemOutputs('32x minecraft:mangrove_log')
+        .duration(100)
+        .EUt(80)
+        .circuit(6);
+
+    event.recipes.gtceu.essence_burning('wood_essence_burning_7')
+        .itemInputs('mysticalagriculture:wood_essence')
+        .itemOutputs('32x gtceu:rubber_log')
+        .duration(100)
+        .EUt(80)
+        .circuit(7);
+
+    event.recipes.gtceu.essence_burning('dirt_essence_burning_0')
+        .itemInputs('mysticalagriculture:dirt_essence')
+        .itemOutputs('32x minecraft:dirt')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('dirt_essence_burning_1')
+        .itemInputs('mysticalagriculture:dirt_essence')
+        .itemOutputs('32x minecraft:coarse_dirt')
+        .duration(100)
+        .EUt(80)
+        .circuit(1);
+
+    event.recipes.gtceu.essence_burning('dirt_essence_burning_2')
+        .itemInputs('mysticalagriculture:dirt_essence')
+        .itemOutputs('32x minecraft:rooted_dirt')
+        .duration(100)
+        .EUt(80)
+        .circuit(2);
+
+    event.recipes.gtceu.essence_burning('dirt_essence_burning_3')
+        .itemInputs('mysticalagriculture:dirt_essence')
+        .itemOutputs('32x minecraft:mud')
+        .duration(100)
+        .EUt(80)
+        .circuit(3);
+
+    event.recipes.gtceu.essence_burning('ice_essence_burning_0')
+        .itemInputs('mysticalagriculture:ice_essence')
+        .itemOutputs('32x minecraft:ice')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+     event.recipes.gtceu.essence_burning('ice_essence_burning_1')
+        .itemInputs('mysticalagriculture:ice_essence')
+        .itemOutputs('32x minecraft:packed_ice')
+        .duration(100)
+        .EUt(80)
+        .circuit(1);
+
+    event.recipes.gtceu.essence_burning('ice_essence_burning_2')
+        .itemInputs('mysticalagriculture:ice_essence')
+        .itemOutputs('32x minecraft:blue_ice')
+        .duration(100)
+        .EUt(80)
+        .circuit(2);
+
+    event.recipes.gtceu.essence_burning('coal_essence_burning_0')
+        .itemInputs('mysticalagriculture:coal_essence')
+        .itemOutputs('32x minecraft:coal')
+        .duration(100)
+        .EUt(400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('coal_essence_burning_1')
+        .itemInputs('mysticalagriculture:coal_essence')
+        .itemOutputs('16x gtceu:coke_gem')
+        .duration(100)
+        .EUt(400)
+        .circuit(1);
+
+    const dyes = ['minecraft:white_dye', 'minecraft:orange_dye', 'minecraft:magenta_dye', 'minecraft:light_blue_dye', 'minecraft:yellow_dye',
+    'minecraft:lime_dye', 'minecraft:pink_dye', 'minecraft:gray_dye', 'minecraft:light_gray_dye', 'minecraft:cyan_dye', 'minecraft:purple_dye',
+    'minecraft:blue_dye', 'minecraft:brown_dye', 'minecraft:green_dye', 'minecraft:red_dye', 'minecraft:black_dye'];
+
+    for (let i = 0; i < dyes.length; i++) {
+        event.recipes.gtceu.essence_burning('dye_essence_burning_' + i)
+            .itemInputs('mysticalagriculture:dye_essence')
+            .itemOutputs('16x ' + dyes[i])
+            .duration(100)
+            .EUt(400)
+            .circuit(i);
+    }
+
+    const crops = ['minecraft:wheat', 'minecraft:carrot', 'minecraft:potato', 'minecraft:beetroot', 'minecraft:melon', 'minecraft:pumpkin', 'farmersdelight:cabbage', 'farmersdelight:tomato',
+    'farmersdelight:onion', 'farmersdelight:rice', 'thermal:amaranth', 'thermal:barley', 'thermal:corn', 'thermal:flax', 'thermal:sadiroot', 'thermal:spinach',
+    'thermal:bell_pepper', 'thermal:eggplant', 'thermal:green_bean', 'thermal:peanut', 'thermal:strawberry', 'thermal:coffee', 'thermal:hops', 'thermal:tea', 'thermal:frost_melon'
+    ];
+
+    for (let i = 0; i < crops.length; i++) {
+        event.recipes.gtceu.essence_burning('nature_essence_burning_' + i)
+            .itemInputs('mysticalagriculture:nature_essence')
+            .itemOutputs('16x ' + crops[i])
+            .duration(100)
+            .EUt(20)
+            .circuit(i);
+    }
+
+    const stone = ['minecraft:stone', 'minecraft:cobblestone', 'minecraft:diorite', 'minecraft:granite', 'minecraft:andesite', 'minecraft:deepslate', 'minecraft:tuff', 'minecraft:calcite'];
+
+    for (let i = 0; i < stone.length; i++) {
+        event.recipes.gtceu.essence_burning('stone_essence_burning_' + i)
+            .itemInputs('mysticalagriculture:stone_essence')
+            .itemOutputs('16x ' + stone[i])
+            .duration(100)
+            .EUt(20)
+            .circuit(i);
+    }
+
+    // tier 2
+    event.recipes.gtceu.essence_burning('iron_essence_burning_0')
+        .itemInputs('mysticalagriculture:iron_essence')
+        .itemOutputs('16x minecraft:raw_iron')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('copper_essence_burning_0')
+        .itemInputs('mysticalagriculture:copper_essence')
+        .itemOutputs('16x minecraft:raw_copper')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('gold_essence_burning_0')
+        .itemInputs('mysticalagriculture:gold_essence')
+        .itemOutputs('16x minecraft:raw_gold')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('nickel_essence_burning_0')
+        .itemInputs('mysticalagriculture:nickel_essence')
+        .itemOutputs('16x gtceu:raw_pentlandite')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('tin_essence_burning_0')
+        .itemInputs('mysticalagriculture:tin_essence')
+        .itemOutputs('16x gtceu:raw_cassiterite')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('lead_essence_burning_0')
+        .itemInputs('mysticalagriculture:lead_essence')
+        .itemOutputs('16x gtceu:raw_galena')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('zinc_essence_burning_0')
+        .itemInputs('mysticalagriculture:zinc_essence')
+        .itemOutputs('16x gtceu:raw_sphalerite')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('silver_essence_burning_0')
+        .itemInputs('mysticalagriculture:silver_essence')
+        .itemOutputs('16x gtceu:raw_silver')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('diamond_essence_burning_0')
+        .itemInputs('mysticalagriculture:diamond_essence')
+        .itemOutputs('16x gtceu:raw_diamond')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('redstone_essence_burning_0')
+        .itemInputs('mysticalagriculture:redstone_essence')
+        .itemOutputs('16x gtceu:raw_redstone')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('glowstone_essence_burning_0')
+        .itemInputs('mysticalagriculture:glowstone_essence')
+        .itemOutputs('16x minecraft:glowstone_dust')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('nether_quartz_essence_burning_0')
+        .itemInputs('mysticalagriculture:nether_quartz_essence')
+        .itemOutputs('16x gtceu:raw_nether_quartz')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('lapis_lazuli_essence_burning_0')
+        .itemInputs('mysticalagriculture:lapis_lazuli_essence')
+        .itemOutputs('16x gtceu:raw_lapis')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('sulfur_essence_burning_0')
+        .itemInputs('mysticalagriculture:sulfur_essence')
+        .itemOutputs('16x gtceu:raw_sulfur')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('amethyst_essence_burning_0')
+        .itemInputs('mysticalagriculture:amethyst_essence')
+        .itemOutputs('16x gtceu:raw_amethyst')
+        .duration(100)
+        .EUt(80)
+        .circuit(0);
+
+    // Tier 3 (crown ethers)
+    event.recipes.gtceu.essence_burning('enderman_essence_burning_0')
+        .itemInputs('mysticalagriculture:enderman_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x minecraft:ender_pearl')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('enderman_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:enderman_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x minecraft:ender_pearl')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('slime_essence_burning_0')
+        .itemInputs('mysticalagriculture:slime_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x minecraft:slime_ball')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('slime_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:slime_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x minecraft:slime_ball')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('slime_essence_burning_1')
+        .itemInputs('mysticalagriculture:slime_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:plant_ball')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(400)
+        .circuit(1);
+
+    event.recipes.gtceu.essence_burning('slime_essence_burning_1_cryptand')
+        .itemInputs('mysticalagriculture:slime_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:plant_ball')
+        .outputFluids(cryptand)
+        .duration(100)
         .EUt(6400)
         .circuit(1);
 
-    // Machine recipes
-    event.shaped(Item.of('gtceu:lv_mystical_greenhouse'), [
-        'CGE',
-        'PHP',
-        'CMC'
-    ], {
-        C: '#gtceu:circuits/lv',
-        G: '#forge:glass',
-        E: 'gtceu:lv_emitter',
-        P: 'gtceu:steel_plate',
-        H: 'gtceu:lv_machine_hull',
-        M: 'gtceu:lv_electric_pump',
-        C: 'gtceu:tin_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('prismarine_essence_burning_0')
+        .itemInputs('mysticalagriculture:prismarine_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x minecraft:prismarine_shard')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(400)
+        .circuit(0);
 
-    event.shaped(Item.of('gtceu:mv_mystical_greenhouse'), [
-        'CGE',
-        'PHP',
-        'CMC'
-    ], {
-        C: '#gtceu:circuits/mv',
-        G: '#forge:glass',
-        E: 'gtceu:mv_emitter',
-        P: 'gtceu:aluminium_plate',
-        H: 'gtceu:mv_machine_hull',
-        M: 'gtceu:mv_electric_pump',
-        C: 'gtceu:copper_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('prismarine_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:prismarine_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x minecraft:prismarine_shard')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
 
-    event.shaped(Item.of('gtceu:hv_mystical_greenhouse'), [
-        'CGE',
-        'PHP',
-        'CMC'
-    ], {
-        C: '#gtceu:circuits/hv',
-        G: 'gtceu:tempered_glass',
-        E: 'gtceu:hv_emitter',
-        P: 'gtceu:stainless_steel_plate',
-        H: 'gtceu:hv_machine_hull',
-        M: 'gtceu:hv_electric_pump',
-        C: 'gtceu:gold_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('prismarine_essence_burning_1')
+        .itemInputs('mysticalagriculture:prismarine_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x minecraft:prismarine_crystals')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(400)
+        .circuit(1);
 
-    event.shaped(Item.of('gtceu:ev_mystical_greenhouse'), [
-        'CGE',
-        'PHP',
-        'CMC'
-    ], {
-        C: '#gtceu:circuits/ev',
-        G: 'gtceu:tempered_glass',
-        E: 'gtceu:ev_emitter',
-        P: 'gtceu:titanium_plate',
-        H: 'gtceu:ev_machine_hull',
-        M: 'gtceu:ev_electric_pump',
-        C: 'gtceu:aluminium_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('prismarine_essence_burning_1_cryptand')
+        .itemInputs('mysticalagriculture:prismarine_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x minecraft:prismarine_crystals')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(6400)
+        .circuit(1);
 
-    event.shaped(Item.of('gtceu:iv_mystical_greenhouse'), [
-        'CGE',
-        'PHP',
-        'CMC'
-    ], {
-        C: '#gtceu:circuits/iv',
-        G: 'gtceu:laminated_glass',
-        E: 'gtceu:iv_emitter',
-        P: 'gtceu:tungsten_steel_plate',
-        H: 'gtceu:iv_machine_hull',
-        M: 'gtceu:iv_electric_pump',
-        C: 'gtceu:platinum_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('emerald_essence_burning_0')
+        .itemInputs('mysticalagriculture:emerald_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:raw_emerald')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
 
-    event.shaped(Item.of('gtceu:luv_mystical_greenhouse'), [
-        'CGE',
-        'PHP',
-        'CMC'
-    ], {
-        C: '#gtceu:circuits/luv',
-        G: 'gtceu:laminated_glass',
-        E: 'gtceu:luv_emitter',
-        P: 'gtceu:rhodium_plated_palladium_plate',
-        H: 'gtceu:luv_machine_hull',
-        M: 'gtceu:luv_electric_pump',
-        C: 'gtceu:niobium_titanium_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('emerald_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:emerald_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:raw_emerald')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
 
-    event.shaped(Item.of('gtceu:zpm_mystical_greenhouse'), [
-        'CGE',
-        'PHP',
-        'CMC'
-    ], {
-        C: '#gtceu:circuits/zpm',
-        G: 'gtceu:fusion_glass',
-        E: 'gtceu:zpm_emitter',
-        P: 'gtceu:naquadah_alloy_plate',
-        H: 'gtceu:zpm_machine_hull',
-        M: 'gtceu:zpm_electric_pump',
-        C: 'gtceu:vanadium_gallium_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('certus_quartz_essence_burning_0')
+        .itemInputs('mysticalagriculture:certus_quartz_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:raw_certus_quartz')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
 
-    event.shaped(Item.of('gtceu:uv_mystical_greenhouse'), [
-        'CGE',
-        'PHP',
-        'CMC'
-    ], {
-        C: '#gtceu:circuits/uv',
-        G: 'gtceu:fusion_glass',
-        E: 'gtceu:uv_emitter',
-        P: 'gtceu:darmstadtium_plate',
-        H: 'gtceu:uv_machine_hull',
-        M: 'gtceu:uv_electric_pump',
-        C: 'gtceu:yttrium_barium_cuprate_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('certus_quartz_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:certus_quartz_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:raw_certus_quartz')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
 
-    event.shaped(Item.of('gtceu:lv_essence_burner'), [
-        'CRE',
-        'GHG',
-        'CPC'
-    ], {
-        C: '#gtceu:circuits/lv',
-        R: 'gtceu:tin_rotor',
-        G: '#forge:glass',
-        E: 'gtceu:lv_emitter',
-        H: 'gtceu:lv_machine_hull',
-        P: 'gtceu:lv_electric_pump',
-        C: 'gtceu:tin_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('ruby_essence_burning_0')
+        .itemInputs('mysticalagriculture:ruby_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:raw_ruby')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
 
-    event.shaped(Item.of('gtceu:mv_essence_burner'), [
-        'CRE',
-        'GHG',
-        'CPC'
-    ], {
-        C: '#gtceu:circuits/mv',
-        R: 'gtceu:bronze_rotor',
-        G: '#forge:glass',
-        E: 'gtceu:mv_emitter',
-        H: 'gtceu:mv_machine_hull',
-        P: 'gtceu:mv_electric_pump',
-        C: 'gtceu:copper_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('ruby_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:ruby_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:raw_ruby')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
 
-    event.shaped(Item.of('gtceu:hv_essence_burner'), [
-        'CRE',
-        'GHG',
-        'CPC'
-    ], {
-        C: '#gtceu:circuits/hv',
-        R: 'gtceu:steel_rotor',
-        G: 'gtceu:tempered_glass',
-        E: 'gtceu:hv_emitter',
-        H: 'gtceu:hv_machine_hull',
-        P: 'gtceu:hv_electric_pump',
-        C: 'gtceu:gold_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('garnet_essence_burning_0')
+        .itemInputs('mysticalagriculture:garnet_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:raw_red_garnet')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
 
-    event.shaped(Item.of('gtceu:ev_essence_burner'), [
-        'CRE',
-        'GHG',
-        'CPC'
-    ], {
-        C: '#gtceu:circuits/ev',
-        R: 'gtceu:stainless_steel_rotor',
-        G: 'gtceu:tempered_glass',
-        E: 'gtceu:ev_emitter',
-        H: 'gtceu:ev_machine_hull',
-        P: 'gtceu:ev_electric_pump',
-        C: 'gtceu:aluminium_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('garnet_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:garnet_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:raw_red_garnet')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
 
-    event.shaped(Item.of('gtceu:iv_essence_burner'), [
-        'CRE',
-        'GHG',
-        'CPC'
-    ], {
-        C: '#gtceu:circuits/iv',
-        R: 'gtceu:tungsten_steel_rotor',
-        G: 'gtceu:laminated_glass',
-        E: 'gtceu:iv_emitter',
-        H: 'gtceu:iv_machine_hull',
-        P: 'gtceu:iv_electric_pump',
-        C: 'gtceu:platinum_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('garnet_essence_burning_1')
+        .itemInputs('mysticalagriculture:garnet_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:raw_yellow_garnet')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(1);
 
-    event.shaped(Item.of('gtceu:luv_essence_burner'), [
-        'CRE',
-        'GHG',
-        'CPC'
-    ], {
-        C: '#gtceu:circuits/luv',
-        R: 'gtceu:rhodium_plated_palladium_rotor',
-        G: 'gtceu:laminated_glass',
-        E: 'gtceu:luv_emitter',
-        H: 'gtceu:luv_machine_hull',
-        P: 'gtceu:luv_electric_pump',
-        C: 'gtceu:niobium_titanium_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('garnet_essence_burning_1_cryptand')
+        .itemInputs('mysticalagriculture:garnet_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:raw_yellow_garnet')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(1);
 
-    event.shaped(Item.of('gtceu:zpm_essence_burner'), [
-        'CRE',
-        'GHG',
-        'CPC'
-    ], {
-        C: '#gtceu:circuits/zpm',
-        R: 'gtceu:naquadah_alloy_rotor',
-        G: 'gtceu:fusion_glass',
-        E: 'gtceu:zpm_emitter',
-        H: 'gtceu:zpm_machine_hull',
-        P: 'gtceu:zpm_electric_pump',
-        C: 'gtceu:vanadium_gallium_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('garnet_essence_burning_2')
+        .itemInputs('mysticalagriculture:garnet_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:raw_garnet_sand')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(2);
 
-    event.shaped(Item.of('gtceu:uv_essence_burner'), [
-        'CRE',
-        'GHG',
-        'CPC'
-    ], {
-        C: '#gtceu:circuits/uv',
-        R: 'gtceu:darmstadtium_rotor',
-        G: 'gtceu:fusion_glass',
-        E: 'gtceu:uv_emitter',
-        H: 'gtceu:uv_machine_hull',
-        P: 'gtceu:uv_electric_pump',
-        C: 'gtceu:yttrium_barium_cuprate_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('garnet_essence_burning_2_cryptand')
+        .itemInputs('mysticalagriculture:garnet_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:raw_garnet_sand')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(2);
 
-    event.shaped(Item.of('gtceu:essence_replicator'), [
-        'PSP',
-        'EHE',
-        'CSC'
-    ], {
-        P: 'gtceu:double_invar_plate',
-        S: '#gtceu:circuits/hv',
-        E: 'gtceu:mv_emitter',
-        H: 'gtceu:heatproof_machine_casing',
-        C: 'gtceu:gold_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('apatite_essence_burning_0')
+        .itemInputs('mysticalagriculture:apatite_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:raw_apatite')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
 
-    event.shaped(Item.of('gtceu:essence_enchancer'), [
-        'SAP',
-        'EHE',
-        'CAC'
-    ], {
-        P: 'gtceu:double_stainless_steel_plate',
-        A: '#gtceu:circuits/ev',
-        S: 'gtceu:hv_sensor',
-        E: 'gtceu:hv_emitter',
-        H: 'gtceu:clean_machine_casing',
-        C: 'gtceu:aluminium_single_cable'
-    });
+    event.recipes.gtceu.essence_burning('apatite_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:apatite_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:raw_apatite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
 
-    event.recipes.gtceu.chemical_reactor('inferium_coal')
-        .itemInputs('minecraft:coal', 'mysticalagriculture:inferium_essence')
-        .itemOutputs('mysticalagradditions:inferium_coal')
-        .duration(200)
-        .EUt(20);
+    event.recipes.gtceu.essence_burning('sapphire_essence_burning_0')
+        .itemInputs('mysticalagriculture:sapphire_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:raw_sapphire')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
 
-    event.recipes.gtceu.chemical_reactor('prudentium_coal')
-        .itemInputs('mysticalagradditions:inferium_coal', 'mysticalagriculture:prudentium_essence')
-        .itemOutputs('mysticalagradditions:prudentium_coal')
-        .duration(200)
-        .EUt(20);
+    event.recipes.gtceu.essence_burning('sapphire_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:sapphire_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:raw_sapphire')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
 
-    event.recipes.gtceu.chemical_reactor('tertium_coal')
-        .itemInputs('mysticalagradditions:prudentium_coal', 'mysticalagriculture:tertium_essence')
-        .itemOutputs('mysticalagradditions:tertium_coal')
-        .duration(200)
-        .EUt(80);
+    event.recipes.gtceu.essence_burning('sapphire_essence_burning_1')
+        .itemInputs('mysticalagriculture:sapphire_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:raw_green_sapphire')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(1);
 
-    event.recipes.gtceu.chemical_reactor('imperium_coal')
-        .itemInputs('mysticalagradditions:tertium_coal', 'mysticalagriculture:imperium_essence')
-        .itemOutputs('mysticalagradditions:imperium_coal')
-        .duration(200)
-        .EUt(80);
+    event.recipes.gtceu.essence_burning('sapphire_essence_burning_1_cryptand')
+        .itemInputs('mysticalagriculture:sapphire_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:raw_green_sapphire')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(1);
 
-    event.recipes.gtceu.chemical_reactor('supremium_coal')
-        .itemInputs('mysticalagradditions:imperium_coal', 'mysticalagriculture:supremium_essence')
-        .itemOutputs('mysticalagradditions:supremium_coal')
-        .duration(200)
-        .EUt(80);
+    event.recipes.gtceu.essence_burning('topaz_essence_burning_0')
+        .itemInputs('mysticalagriculture:topaz_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:raw_topaz')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
 
-    event.recipes.gtceu.chemical_reactor('insanium_coal')
-        .itemInputs('mysticalagradditions:supremium_coal', 'mysticalagradditions:insanium_essence')
-        .itemOutputs('mysticalagradditions:insanium_coal')
-        .duration(200)
-        .EUt(400);
+    event.recipes.gtceu.essence_burning('topaz_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:topaz_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:raw_topaz')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
 
-    event.recipes.gtceu.large_chemical_reactor('inferium_coal')
-        .itemInputs('minecraft:coal', 'mysticalagriculture:inferium_essence')
-        .itemOutputs('mysticalagradditions:inferium_coal')
-        .duration(200)
-        .EUt(20);
+    event.recipes.gtceu.essence_burning('topaz_essence_burning_1')
+        .itemInputs('mysticalagriculture:topaz_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:raw_blue_topaz')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(1);
 
-    event.recipes.gtceu.large_chemical_reactor('prudentium_coal')
-        .itemInputs('mysticalagradditions:inferium_coal', 'mysticalagriculture:prudentium_essence')
-        .itemOutputs('mysticalagradditions:prudentium_coal')
-        .duration(200)
-        .EUt(20);
+    event.recipes.gtceu.essence_burning('topaz_essence_burning_1_cryptand')
+        .itemInputs('mysticalagriculture:topaz_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:raw_blue_topaz')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(1);
 
-    event.recipes.gtceu.large_chemical_reactor('tertium_coal')
-        .itemInputs('mysticalagradditions:prudentium_coal', 'mysticalagriculture:tertium_essence')
-        .itemOutputs('mysticalagradditions:tertium_coal')
-        .duration(200)
-        .EUt(80);
+    event.recipes.gtceu.essence_burning('realgar_essence_burning_0')
+        .itemInputs('mysticalagriculture:realgar_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:raw_realgar')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
 
-    event.recipes.gtceu.large_chemical_reactor('imperium_coal')
-        .itemInputs('mysticalagradditions:tertium_coal', 'mysticalagriculture:imperium_essence')
-        .itemOutputs('mysticalagradditions:imperium_coal')
-        .duration(200)
-        .EUt(80);
+    event.recipes.gtceu.essence_burning('realgar_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:realgar_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:raw_realgar')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
 
-    event.recipes.gtceu.large_chemical_reactor('supremium_coal')
-        .itemInputs('mysticalagradditions:imperium_coal', 'mysticalagriculture:supremium_essence')
-        .itemOutputs('mysticalagradditions:supremium_coal')
-        .duration(200)
-        .EUt(80);
+    event.recipes.gtceu.essence_burning('saltpeter_essence_burning_0')
+        .itemInputs('mysticalagriculture:saltpeter_essence')
+        .inputFluids(dust)
+        .itemOutputs('16x gtceu:raw_saltpeter')
+        .outputFluids(dustDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
 
-    event.recipes.gtceu.large_chemical_reactor('insanium_coal')
-        .itemInputs('mysticalagradditions:supremium_coal', 'mysticalagradditions:insanium_essence')
-        .itemOutputs('mysticalagradditions:insanium_coal')
-        .duration(200)
-        .EUt(400);
+    event.recipes.gtceu.essence_burning('saltpeter_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:saltpeter_essence')
+        .inputFluids(dustCryptand)
+        .itemOutputs('64x gtceu:raw_saltpeter')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('salts_essence_burning_0')
+        .itemInputs('mysticalagriculture:salts_essence')
+        .inputFluids(dust)
+        .itemOutputs('16x gtceu:raw_salt')
+        .outputFluids(dustDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('salts_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:salts_essence')
+        .inputFluids(dustCryptand)
+        .itemOutputs('64x gtceu:raw_salt')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('salts_essence_burning_1')
+        .itemInputs('mysticalagriculture:salts_essence')
+        .inputFluids(dust)
+        .itemOutputs('16x gtceu:raw_rock_salt')
+        .outputFluids(dustDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(1);
+
+    event.recipes.gtceu.essence_burning('salts_essence_burning_1_cryptand')
+        .itemInputs('mysticalagriculture:salts_essence')
+        .inputFluids(dustCryptand)
+        .itemOutputs('64x gtceu:raw_rock_salt')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(1);
+
+    event.recipes.gtceu.essence_burning('lepidolite_essence_burning_0')
+        .itemInputs('mysticalagriculture:lepidolite_essence')
+        .inputFluids(dust)
+        .itemOutputs('16x gtceu:raw_lepidolite')
+        .outputFluids(dustDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('lepidolite_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:lepidolite_essence')
+        .inputFluids(dustCryptand)
+        .itemOutputs('64x gtceu:raw_lepidolite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('antimony_essence_burning_0')
+        .itemInputs('mysticalagriculture:antimony_essence')
+        .inputFluids(metal)
+        .itemOutputs('16x gtceu:raw_stibnite')
+        .outputFluids(metalDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('antimony_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:antimony_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('64x gtceu:raw_stibnite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('cobaltite_essence_burning_0')
+        .itemInputs('mysticalagriculture:cobaltite_essence')
+        .inputFluids(metal)
+        .itemOutputs('16x gtceu:raw_cobaltite')
+        .outputFluids(metalDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('cobaltite_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:cobaltite_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('64x gtceu:raw_cobaltite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('aluminum_essence_burning_0')
+        .itemInputs('mysticalagriculture:aluminum_essence')
+        .inputFluids(metal)
+        .itemOutputs('16x gtceu:raw_bauxite')
+        .outputFluids(metalDepleted)
+        .duration(100)
+        .EUt(1024)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('aluminum_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:aluminum_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('64x gtceu:raw_bauxite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(16000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('monazite_essence_burning_0')
+        .itemInputs('mysticalagriculture:monazite_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x gtceu:raw_monazite')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('monazite_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:monazite_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x gtceu:raw_monazite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('uranium_essence_burning_0')
+        .itemInputs('mysticalagriculture:uranium_essence')
+        .inputFluids(metal)
+        .itemOutputs('16x gtceu:raw_pitchblende')
+        .outputFluids(metalDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('uranium_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:uranium_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('64x gtceu:raw_pitchblende')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('chrome_essence_burning_0')
+        .itemInputs('mysticalagriculture:chrome_essence')
+        .inputFluids(metal)
+        .itemOutputs('16x gtceu:raw_chromite')
+        .outputFluids(metalDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('chrome_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:chrome_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('64x gtceu:raw_chromite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('molybdenum_essence_burning_0')
+        .itemInputs('mysticalagriculture:molybdenum_essence')
+        .inputFluids(metal)
+        .itemOutputs('16x gtceu:raw_molybdenite')
+        .outputFluids(metalDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('molybdenum_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:molybdenum_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('64x gtceu:raw_molybdenite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('tantalum_essence_burning_0')
+        .itemInputs('mysticalagriculture:tantalum_essence')
+        .inputFluids(metal)
+        .itemOutputs('16x gtceu:raw_tantalite')
+        .outputFluids(metalDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('tantalum_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:tantalum_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('64x gtceu:raw_tantalite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('manganese_essence_burning_0')
+        .itemInputs('mysticalagriculture:manganese_essence')
+        .inputFluids(metal)
+        .itemOutputs('16x gtceu:raw_pyrolusite')
+        .outputFluids(metalDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('manganese_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:manganese_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('64x gtceu:raw_pyrolusite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('platinum_essence_burning_0')
+        .itemInputs('mysticalagriculture:platinum_essence')
+        .inputFluids(metal)
+        .itemOutputs('16x gtceu:raw_cooperite')
+        .outputFluids(metalDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('platinum_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:platinum_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('64x gtceu:raw_cooperite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('titanium_essence_burning_0')
+        .itemInputs('mysticalagriculture:titanium_essence')
+        .inputFluids(metal)
+        .itemOutputs('16x gtceu:raw_ilmenite')
+        .outputFluids(metalDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('titanium_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:titanium_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('64x gtceu:raw_ilmenite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('niobium_essence_burning_0')
+        .itemInputs('mysticalagriculture:niobium_essence')
+        .inputFluids(metal)
+        .itemOutputs('16x gtceu:raw_pyrochlore')
+        .outputFluids(metalDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('niobium_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:niobium_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('64x gtceu:raw_pyrochlore')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('caesium_essence_burning_0')
+        .itemInputs('mysticalagriculture:caesium_essence')
+        .inputFluids(dust)
+        .itemOutputs('16x gtceu:raw_pollucite')
+        .outputFluids(dustDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('caesium_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:caesium_essence')
+        .inputFluids(dustCryptand)
+        .itemOutputs('64x gtceu:raw_pollucite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('cerium_essence_burning_0')
+        .itemInputs('mysticalagriculture:cerium_essence')
+        .inputFluids(dust)
+        .itemOutputs('16x gtceu:raw_bastnasite')
+        .outputFluids(dustDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('cerium_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:cerium_essence')
+        .inputFluids(dustCryptand)
+        .itemOutputs('64x gtceu:raw_bastnasite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('chalcopyrite_essence_burning_0')
+        .itemInputs('mysticalagriculture:chalcopyrite_essence')
+        .inputFluids(dust)
+        .itemOutputs('16x gtceu:raw_chalcopyrite')
+        .outputFluids(dustDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('chalcopyrite_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:chalcopyrite_essence')
+        .inputFluids(dustCryptand)
+        .itemOutputs('64x gtceu:raw_chalcopyrite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('blaze_essence_burning_0')
+        .itemInputs('mysticalagriculture:blaze_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x minecraft:blaze_rod')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('blaze_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:blaze_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x minecraft:blaze_rod')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('blizz_essence_burning_0')
+        .itemInputs('mysticalagriculture:blizz_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x thermal:blizz_rod')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('blizz_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:blizz_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x thermal:blizz_rod')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('blitz_essence_burning_0')
+        .itemInputs('mysticalagriculture:blitz_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x thermal:blitz_rod')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('blitz_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:blitz_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x thermal:blitz_rod')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('basalz_essence_burning_0')
+        .itemInputs('mysticalagriculture:basalz_essence')
+        .inputFluids(gem)
+        .itemOutputs('16x thermal:basalz_rod')
+        .outputFluids(gemDepleted)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('basalz_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:basalz_essence')
+        .inputFluids(gemCryptand)
+        .itemOutputs('64x thermal:basalz_rod')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('tungsten_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:tungsten_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('24x gtceu:raw_tungstate')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(6400)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('tungsten_essence_burning_1_cryptand')
+        .itemInputs('mysticalagriculture:tungsten_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('24x gtceu:raw_scheelite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(1);
+
+    event.recipes.gtceu.essence_burning('barium_essence_burning_0_cryptand')
+        .itemInputs('mysticalagriculture:barium_essence')
+        .inputFluids(dustCryptand)
+        .itemOutputs('32x gtceu:raw_barite')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(100000)
+        .circuit(0);
+
+    event.recipes.gtceu.essence_burning('naquadah_essence_burning_1_cryptand')
+        .itemInputs('mysticalagriculture:naquadah_essence')
+        .inputFluids(metalCryptand)
+        .itemOutputs('12x gtceu:raw_naquadah')
+        .outputFluids(cryptand)
+        .duration(100)
+        .EUt(250000)
+        .circuit(0);
+                 
+    event.recipes.gtceu.essence_burning('skeleton_essence_burning_0')
+        .itemInputs('mysticalagriculture:skeleton_essence')
+        .itemOutputs('16x minecraft:bone')
+        .duration(100)
+        .EUt(80)
+        .circuit(0)
+        
 });
