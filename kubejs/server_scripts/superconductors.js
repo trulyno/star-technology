@@ -93,10 +93,10 @@ ServerEvents.recipes(event => {
     // Replaces
     ['soul_infused','signalum','lumium','enderium','shellite','twinite','dragonsteel','prismalium','melodium','stellarium'].forEach(material => {
         ['dust','nugget','ingot','gear','plate','rod'].forEach(type =>{
-            event.replaceInput({input: `#forge:${type}s/${material}`}, `#forge:${type}s/${material}`, `gtceu:${material}_${type}`);
+            event.replaceInput({not: {input: `#forge:${type}s`}, input: `#forge:${type}s/${material}`}, `#forge:${type}s/${material}`, `gtceu:${material}_${type}`);
             event.replaceOutput({output: `#forge:${type}s/${material}`}, `#forge:${type}s/${material}`, `gtceu:${material}_${type}`);
         });
-        event.replaceInput({input: `#forge:storage_blocks/${material}`}, `#forge:storage_blocks/${material}`, `gtceu:${material}_block`);
+        event.replaceInput({not: {input: `#forge:storage_blocks`}, input: `#forge:storage_blocks/${material}`}, `#forge:storage_blocks/${material}`, `gtceu:${material}_block`);
         event.replaceOutput({output: `#forge:storage_blocks/${material}`}, `#forge:storage_blocks/${material}`, `gtceu:${material}_block`);
     });
    
