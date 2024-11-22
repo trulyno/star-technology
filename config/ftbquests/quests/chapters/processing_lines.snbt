@@ -160,6 +160,7 @@
 		{
 			dependencies: ["12C9427A04A2F550"]
 			id: "7AAAAF625777D732"
+			optional: true
 			rewards: [{
 				id: "5DD52E98A4667B61"
 				item: "kubejs:coin"
@@ -177,6 +178,7 @@
 			dependencies: ["7AAAAF625777D732"]
 			icon: "gtceu:biomass_bucket"
 			id: "513461D53353670F"
+			optional: true
 			rewards: [{
 				id: "67D10F36FD9EA2CB"
 				item: "kubejs:coin"
@@ -199,7 +201,11 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["513461D53353670F"]
+			dependencies: [
+				"513461D53353670F"
+				"3F74E863172E757F"
+			]
+			dependency_requirement: "one_completed"
 			description: ["Can alternatively be made with basins, see the first chapter for reference."]
 			icon: "gtceu:ethanol_bucket"
 			id: "3CB84935C465C540"
@@ -216,8 +222,24 @@
 				}
 				{
 					id: "566C0C5863929151"
-					item: "gtceu:ethanol_bucket"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "createdieselgenerators:ethanol_bucket"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ethanol_bucket"
+								}
+							]
+						}
+					}
 					optional_task: true
+					title: "Ethanol"
 					type: "item"
 				}
 			]
