@@ -35,14 +35,14 @@ ServerEvents.recipes(event => {
 
     // LV
     // Busses
-    event.shaped(Item.of('gtceu:ulv_input_bus'), [
+    event.shaped(Item.of('gtceu:lv_input_bus'), [
         ' C ',
         ' M ',
         '   '], {
         C: 'gtceu:wood_crate',
         M: 'gtceu:ulv_machine_hull'
     });
-    event.shaped(Item.of('gtceu:ulv_output_bus'), [
+    event.shaped(Item.of('gtceu:lv_output_bus'), [
         '   ',
         ' M ',
         ' C '], {
@@ -50,14 +50,14 @@ ServerEvents.recipes(event => {
         M: 'gtceu:ulv_machine_hull'
     });
     // Hatches
-    event.shaped(Item.of('gtceu:ulv_input_hatch'), [
+    event.shaped(Item.of('gtceu:lv_input_hatch'), [
         ' G ',
         ' M ',
         '   '], {
         G: 'gtceu:wood_drum',
         M: 'gtceu:ulv_machine_hull'
     });
-    event.shaped(Item.of('gtceu:ulv_output_hatch'), [
+    event.shaped(Item.of('gtceu:lv_output_hatch'), [
         '   ',
         ' M ',
         ' G '], {
