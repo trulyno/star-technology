@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ type: 'exnihilosequentia:sifting', input: '#forge:gravel'});
     event.remove({ type: 'exnihilosequentia:sifting', input: 'exnihilosequentia:crushed_netherrack'});
-    event.remove({ type: 'exnihilosequentia:sifting', input: '#minecraft:sand'});
+    event.remove({ type: 'exnihilosequentia:sifting', input: '#minecraft:leaves'});
     event.remove({ type: 'exnihilosequentia:sifting', input: 'minecraft:sand'});
     event.remove({ type: 'exnihilosequentia:sifting', input: 'exnihilosequentia:dust'});
     event.remove({ type: 'exnihilosequentia:sifting', input: 'minecraft:soul_sand'});
