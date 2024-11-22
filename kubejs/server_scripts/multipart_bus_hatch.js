@@ -40,14 +40,14 @@ ServerEvents.recipes(event => {
         ' M ',
         '   '], {
         C: 'gtceu:wood_crate',
-        M: 'gtceu:ulv_machine_hull'
+        M: 'gtceu:lv_machine_hull'
     });
     event.shaped(Item.of('gtceu:lv_output_bus'), [
         '   ',
         ' M ',
         ' C '], {
         C: 'gtceu:wood_crate',
-        M: 'gtceu:ulv_machine_hull'
+        M: 'gtceu:lv_machine_hull'
     });
     // Hatches
     event.shaped(Item.of('gtceu:lv_input_hatch'), [
@@ -55,14 +55,14 @@ ServerEvents.recipes(event => {
         ' M ',
         '   '], {
         G: 'gtceu:wood_drum',
-        M: 'gtceu:ulv_machine_hull'
+        M: 'gtceu:lv_machine_hull'
     });
     event.shaped(Item.of('gtceu:lv_output_hatch'), [
         '   ',
         ' M ',
         ' G '], {
         G: 'gtceu:wood_drum',
-        M: 'gtceu:ulv_machine_hull'
+        M: 'gtceu:lv_machine_hull'
     });
 
 });
