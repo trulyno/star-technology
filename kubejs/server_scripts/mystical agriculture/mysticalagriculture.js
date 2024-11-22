@@ -408,6 +408,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('mysticalagriculture:enderman_essence', 1500, 500)
         .chancedOutput('mysticalagriculture:slime_essence', 4500, 500)
         .chancedOutput('mysticalagriculture:prismarine_essence', 1500, 500)
+        .chancedOutput('mysticalagriculture:skeleton_essence', 5000, 500)
         .duration(600)
         .EUt(400)
         .circuit(0);
