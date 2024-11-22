@@ -1094,5 +1094,13 @@ ServerEvents.recipes(event => {
         .outputFluids(cryptand)
         .duration(100)
         .EUt(250000)
-        .circuit(0);
+        .circuit(0
+                 
+    event.recipes.gtceu.essence_burning('skeleton_essence_burning_0')
+        .itemInputs('mysticalagriculture:skeleton_essence')
+        .itemOutputs('16x minecraft:bone')
+        .duration(100)
+        .EUt(80)
+        .circuit(0););
+    
 });
