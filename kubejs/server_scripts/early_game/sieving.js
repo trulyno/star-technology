@@ -2,12 +2,9 @@
 ServerEvents.recipes(event => {
     const dirt = 'minecraft:dirt';
     const gravel = 'minecraft:gravel';
-    const cdirt = 'minecraft:coarse_dirt';
     const sand = 'minecraft:sand';
     const dust = 'exnihilosequentia:dust';
-    const black = 'exnihilosequentia:crushed_blackstone'
-    const netherrack = 'exnihilosequentia:crushed_netherrack'
-    const endstone = 'exnihilo:crushed_end_stone'
+    const black = 'exnihilosequentia:crushed_blackstone';
 
     function sieve(mesh, chance, input, result, wlog) {
         event.custom({
