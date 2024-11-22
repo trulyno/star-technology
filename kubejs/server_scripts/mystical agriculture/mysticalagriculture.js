@@ -384,7 +384,7 @@ ServerEvents.recipes(event => {
     const seeds = ['air', 'earth', 'fire', 'water', 'wood', 'stone', 'dirt', 'ice', 'nature', 'dye', 'coal',
         'iron', 'copper', 'tin', 'nickel', 'lead', 'zinc', 'gold', 'diamond', 'redstone', 'glowstone', 'life',
         'nether_quartz', 'lapis_lazuli', 'sulfur', 'amethyst', 'silver', 'emerald', 'certus_quartz', 'ruby',
-        'saltpeter', 'salts', 'garnet', 'apatite', 'sapphire', 'topaz', 'enderman', 'slime', 'prismarine', 'skeleton'
+        'saltpeter', 'salts', 'garnet', 'apatite', 'sapphire', 'topaz', 'enderman', 'slime', 'prismarine', 'skeleton', 
         'realgar', 'lepidolite', 'cobaltite', 'antimony', 'aluminum', 'monazite', 'uranium', 'chrome',
         'molybdenum', 'tantalum', 'manganese', 'platinum', 'titanium', 'caesium', 'blaze', 'blizz', 'blitz',
         'basalz', 'cerium', 'chalcopyrite', 'niobium', 'tungsten', 'barium', 'naquadah'];
