@@ -139,6 +139,10 @@ StartupEvents.registry('item', event => {
         .displayName('Multiblock Upgrade Kit')
         .texture('kubejs:item/kits/upgrade_kit');
 
+    event.create('crystallised_akreyrium')
+        .displayName('Crystallised Akreyrium')
+        .texture('kubejs:item/crystallised_akreyrium');
+
     ['basic', 'regular', 'intermediate', 'advanced', 'elite', 'ultimate'].forEach(tier => {
         event.create(`${tier}_energy_core`)
             .displayName(`${tier.charAt(0).toUpperCase() + tier.slice(1)} Energy Core`)

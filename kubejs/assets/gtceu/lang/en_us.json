@@ -336,5 +336,38 @@
     "block.gtceu.solid_blast_furnace.@Tooltip0": "§7An upgraded Primitive Blast Furnace",
     "gtceu.solid_blast_furnace": "Solid Blast Furnace",
 
-    "gtceu.jei.ore_vein.zapolite_vein": "Abydos Zapolite Vein"
+    "gtceu.jei.ore_vein.zapolite_vein": "Abydos Zapolite Vein",
+    "material.gtceu.gritty_akreyrium": "Gritty Akreyrium",
+    "material.gtceu.lepton_sparse_akreyrium": "Lepton-Sparse Akreyrium",
+    "material.gtceu.sparse_electron_akreyrium": "Electron-Sparse Akreyrium",
+    "material.gtceu.sparse_muon_akreyrium": "Muon-Sparse Akreyrium",
+    "material.gtceu.sparse_tau_akreyrium": "Tau-Sparse Akreyrium",
+    "material.gtceu.dense_electron_akreyrium": "Electron-Dense Akreyrium",
+    "material.gtceu.dense_muon_akreyrium": "Muon-Dense Akreyrium",
+    "material.gtceu.dense_tau_akreyrium": "Tau-Dense Akreyrium",
+    "material.gtceu.utopian_akreyrium": "Utopian Akreyrium",
+
+    "block.gtceu.cyclonic_crystalline_sieve": "Cyclonic Crystalline Sieve",
+    "block.gtceu.cyclonic_crystalline_sieve.tooltip.0": "§a§lAkreyrium §a§lProcessing",
+    "block.gtceu.cyclonic_crystalline_sieve.tooltip.1": "§7A specialized machine designed to sieve fluids which have been permeated by the harsh climate of Abydos. By passing the material through a fine mesh under controlled cyclonic forces repeatedly, it efficiently purifies the material into a usable form while pulling out fine particles of crystalised material.",
+    "gtceu.cyclonic_crystalline_sieve": "Cyclonic Crystalline Sieve",
+
+    "block.gtceu.leptonic_manifold_quantiser": "Leptonic Manifold Quantiser",
+    "block.gtceu.leptonic_manifold_quantiser.tooltip.0": "§a§lAkreyrium §a§lProcessing",
+    "block.gtceu.leptonic_manifold_quantiser.tooltip.1": "§7By applying advanced quantisation techniques, it splits the material into distinct forms based on the specific leption variation of the material, enabling targeted applications for more advanced extraction systems.",
+    "block.gtceu.leptonic_manifold_quantiser.tooltip.2": "§6Lepton Quantisation:",
+    "block.gtceu.leptonic_manifold_quantiser.tooltip.3": "§7This multiblock produces one of the possible lepton variations (electron, muon, tau) of Akreyrium with an equal chance of each occuring.",
+    "gtceu.leptonic_manifold_quantiser": "Leptonic Manifold Quantiser",
+
+    "block.gtceu.leptonic_convergence_injector": "Leptonic Convergence Injector",
+    "block.gtceu.leptonic_convergence_injector.tooltip.0": "§a§lAkreyrium §a§lProcessing",
+    "block.gtceu.leptonic_convergence_injector.tooltip.1": "§7A high-density synthesis unit designed to inject, compress and align the leptonic structures of materials utilising a suitable catalyst. through this process, the material is transformed into a lepton-dense form, which is optimised for advanced applications.",
+    "gtceu.leptonic_convergence_injector": "Leptonic Convergence Injector",
+
+    "block.gtceu.folding_akreyrium_stabiliser": "Folding Akreyrium Stabiliser",
+    "block.gtceu.folding_akreyrium_stabiliser.tooltip.0": "§a§lAkreyrium §a§lProcessing",
+    "block.gtceu.folding_akreyrium_stabiliser.tooltip.1": "§7A reintegration device designed to recombine Akreyrium. By folding the distinct variants of Akreyrium through a precise stabilization matrix over a crystal, a highly refined and pure version of Akreyrium can be obtained.",
+    "block.gtceu.folding_akreyrium_stabiliser.tooltip.2": "§6Stabilisation Matrix Lens:",
+    "block.gtceu.folding_akreyrium_stabiliser.tooltip.3": "§7The folding stabiliser utilises a lens to focus the reintegration, The proper type should be chosen based on the Akreyrium variant, reinsertion is necessary after every use.",
+    "gtceu.folding_akreyrium_stabiliser": "Folding Akreyrium Stabiliser"
 }
