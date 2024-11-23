@@ -6,39 +6,39 @@ function unify(type, regex) {
     ServerEvents.tags('item', (event) => {
         // Initialize some variables
         
-        let rodObjects = event.get(`forge:${type}`).getObjectIds();
-        let rodTypes = [];
+        let itemObjects = event.get(`forge:${type}`).getObjectIds();
+        let types = [];
         let failedItems = [];
-        let rods = [];
+        let items = [];
 
 
-        rodObjects.forEach((o) => {
-            rods.push(Item.of(o).getId())
+        itemObjects.forEach((o) => {
+            items.push(Item.of(o).getId())
         })
-        console.log(rods)
-        // Adds every subtag of #forge:rods to rodTypes
+        console.log(items)
+        // Adds every subtag of #forge:items to types
 
-        rods.forEach((i) => {
+        items.forEach((i) => {
             if(regex.test(i)) {
                 let mat = i.slice(i.indexOf(":") + 1, i.lastIndexOf("_"));
-                if (!rodTypes.includes(`forge:${type}/${mat}`)) {
-                    rodTypes.push(`forge:${type}/${mat}`);
+                if (!types.includes(`forge:${type}/${mat}`)) {
+                    types.push(`forge:${type}/${mat}`);
                 }
             }
         });
-        console.log(rodTypes)
+        console.log(types)
 
         // Removes Non-GT items from tags that contain a GT item.
 
-        rodTypes.forEach((tag) => {
+        types.forEach((tag) => {
             console.log(tag)
             let itemObjects = event.get(tag.replace('#', '')).getObjectIds();
-            let items = [];
+            let items2 = [];
             itemObjects.forEach(item => {
-                items.push(Item.of(item).getId())
+                items2.push(Item.of(item).getId())
             })
         
-            items.forEach((i) => {
+            items2.forEach((i) => {
                 // This code runs for every item.
         
                 if (/^gtceu:.*/.test(i)) {
@@ -80,4 +80,5 @@ unify('ingots', /.*/);
 unify('nuggets', /.*/);
 unify('storage_blocks', /.*/);
 unify('gears', /.*/);
+unify('dusts', /.*/);
 
