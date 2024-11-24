@@ -9,39 +9,6 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(2097152);
 
-    // For when the core mod is actually added, Add this recipe to the addRecipes java!:
-    // // Get recipes for our leptonic manifold quantiser.
-    // GTRecipeType LEPTONIC_MANIFOLD_QUANTISER_TYPE = GTRecipeTypes.get("leptonic_manifold_quantiser");
-
-    // // KubeJS Interop, get materials registered.
-    // Material lepton_sparse_akreyrium = GTCEuAPI.materialManager.getMaterial("gtceu:lepton_sparse_akreyrium");
-    // Material sparse_electron_akreyrium = GTCEuAPI.materialManager.getMaterial("gtceu:sparse_electron_akreyrium");
-    // Material sparse_muon_akreyrium = GTCEuAPI.materialManager.getMaterial("gtceu:sparse_muon_akreyrium");
-    // Material sparse_tau_akreyrium = GTCEuAPI.materialManager.getMaterial("gtceu:sparse_tau_akreyrium");
-
-    // // Add our recipe but in java
-    // LEPTONIC_MANIFOLD_QUANTISER_TYPE.recipeBuilder("akreyrium_quantising")
-    //     .inputFluids(lepton_sparse_akreyrium.getFluid(1000))
-    //     .chancedFluidOutputLogic(ChanceLogic.XOR)
-    //     .chancedOutput(sparse_electron_akreyrium.getFluid(1000), 33_33, 0)
-    //     .chancedOutput(sparse_muon_akreyrium.getFluid(1000), 66_66, 0)
-    //     .chancedOutput(sparse_tau_akreyrium.getFluid(1000), 100_00, 0)
-    //     .duration(1200)
-    //     .EUt(2097152)
-    //     .save(provider);
-
-    // Requires this mixin which fixes some GT issue..
-    // @Mixin(ChanceLogic.class)
-    // public class ChanceCapRerollMixin {
-    //     // We make a mixin to reroll fields in ChanceLogic on retrieval if the retrieved
-    //     // chance is somehow greater than the max
-    //     @Inject(method = "getCachedChance", at = @At("HEAD"), remap = false)
-    //     private static void onGetCachedChance(Content entry, @Nullable Object2IntMap<?> cache, CallbackInfoReturnable<Integer> cir) {
-    //         if (cache != null && cache.containsKey(entry.content) && cache.getInt(entry.content) > entry.maxChance) {
-    //             ((Object2IntMap) cache).put(entry.content, GTValues.RNG.nextInt(entry.maxChance));
-    //         }
-    //     }
-    // }
     event.recipes.gtceu.leptonic_convergence_injector('electron_densification')
         .inputFluids('gtceu:sparse_electron_akreyrium 1000')
         .inputFluids("gtceu:twinite 144")

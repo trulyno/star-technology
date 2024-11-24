@@ -356,7 +356,7 @@
     "block.gtceu.leptonic_manifold_quantiser.tooltip.0": "§a§lAkreyrium §a§lProcessing",
     "block.gtceu.leptonic_manifold_quantiser.tooltip.1": "§7By applying advanced quantisation techniques, it splits the material into distinct forms based on the specific leption variation of the material, enabling targeted applications for more advanced extraction systems.",
     "block.gtceu.leptonic_manifold_quantiser.tooltip.2": "§6Lepton Quantisation:",
-    "block.gtceu.leptonic_manifold_quantiser.tooltip.3": "§7This multiblock produces one of the possible lepton variations (electron, muon, tau) of Akreyrium with an equal chance of each occuring.",
+    "block.gtceu.leptonic_manifold_quantiser.tooltip.3": "§7This multiblock produces one of the possible lepton variations (electron, muon, tau) of Akreyrium.",
     "gtceu.leptonic_manifold_quantiser": "Leptonic Manifold Quantiser",
 
     "block.gtceu.leptonic_convergence_injector": "Leptonic Convergence Injector",
