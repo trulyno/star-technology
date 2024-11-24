@@ -662,6 +662,7 @@ materialRegistry(event => {
 
     event.create('weapon_grade_naquadah')
         .ingot()
+        .fluid()
         .components('7x naquadria', '2x pure_netherite', '5x neutronium', '16x fluorine')
         .color(0xccff33)
         .iconSet(DULL)
