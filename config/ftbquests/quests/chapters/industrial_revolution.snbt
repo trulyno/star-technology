@@ -1,0 +1,1847 @@
+{
+	autofocus_id: "4B51B15B49620F57"
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "industrial_revolution"
+	group: "1E0FC4EA21F735F7"
+	icon: "ae2:controller"
+	id: "05330DA4070C75C9"
+	order_index: 1
+	quest_links: [{
+		id: "6C0C5B78AF1106A2"
+		linked_quest: "38B3A7FC309E12E2"
+		x: -7.5d
+		y: -4.5d
+	}]
+	quests: [
+		{
+			dependencies: ["523F20DC5FA04229"]
+			description: ["Gives you plates at a 1:1 ratio."]
+			id: "12F01BF7D567FEC3"
+			rewards: [{
+				id: "590C29E52588F372"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "55A719F2411027E5"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["234CE57A62FB8D82"]
+			description: ["1 ingot into 2 wires, a better bargain can't be made."]
+			id: "4E724D0920A2DF55"
+			rewards: [{
+				id: "2E9A160DB32441DD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "20935AA31E082AA1"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["523F20DC5FA04229"]
+			description: ["Gives you 2 rods per ingot."]
+			id: "77A36FD20946C8A0"
+			rewards: [{
+				id: "35E8F3C1454E2165"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "07069974491D8BDE"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["53E98CFC7934FA67"]
+			description: ["Gives metals magnetic charge. Also functions as an energizer."]
+			id: "71DAA3541CEC96DD"
+			rewards: [{
+				id: "2E661C9DC9B246EA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E0D589B31B99119"
+				item: "gtceu:lv_polarizer"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["71DAA3541CEC96DD"]
+			description: ["A LV component thats used everywhere."]
+			id: "234CE57A62FB8D82"
+			rewards: [{
+				count: 2
+				id: "2102792C882DD121"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "4179261E3E8278E0"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"53E98CFC7934FA67"
+				"397C622B06B1165A"
+			]
+			description: ["A faster and more advanced version of the Kinetic Ore Factory, capable of handling higher tier ores."]
+			id: "0E88CB5E68212006"
+			rewards: [{
+				id: "33061CD7DE7F3DEE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7DB1C06536CCB7BD"
+				item: "gtceu:electrico_kinetic_ore_factory"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["53E98CFC7934FA67"]
+			description: ["Smelts alloys for cheaper."]
+			id: "568B71C405BD66DF"
+			rewards: [{
+				id: "5717FA9D67E3371B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "509058FE888BDB2F"
+				item: "gtceu:lv_alloy_smelter"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["234CE57A62FB8D82"]
+			description: ["Used mostly for mixing dusts into more complicated substances"]
+			id: "54549EC141659C30"
+			rewards: [{
+				id: "3F9D23A8F9E2DCA8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "23835C7892641376"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["234CE57A62FB8D82"]
+			description: ["Used for a ton of chemical recipes."]
+			id: "1AAB9C20E833029A"
+			rewards: [{
+				id: "5889CD9E578BE2CB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "01BAFD93542B4E5B"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["234CE57A62FB8D82"]
+			id: "523F20DC5FA04229"
+			rewards: [{
+				id: "02E8DB758E894C43"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "256294F0A593FE51"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["523F20DC5FA04229"]
+			description: ["This can crush Blackstone, and a bunch of other things."]
+			id: "39F4B61B17304481"
+			rewards: [{
+				id: "3D6F3F6B21B141CC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7608BF4B3E0A89E6"
+				item: "gtceu:lv_macerator"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["523F20DC5FA04229"]
+			description: ["This can be used for automating gravel, sand and dust."]
+			id: "6E92236103190E99"
+			rewards: [{
+				id: "610552038D184592"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B7F592EA2F09D2F"
+				item: "gtceu:lv_forge_hammer"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["523F20DC5FA04229"]
+			description: ["Precise item moving across machines."]
+			id: "436A7D2511096831"
+			rewards: [{
+				id: "47C83736AF8E692A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F1D29B4E596A6A4"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["234CE57A62FB8D82"]
+			description: ["Can move items in and out of a machine, without needing extra blocks."]
+			id: "02B8D64EAE39BA08"
+			rewards: [{
+				id: "2CF6BECD00AB4913"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "34235E1BB153B077"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"02B8D64EAE39BA08"
+				"436A7D2511096831"
+			]
+			description: ["The assembler is an advanced crafting machine, that can make a ton of items for cheaper."]
+			id: "4B51B15B49620F57"
+			rewards: [{
+				id: "693E60F2920C36CD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "014FCFBEBB4654A3"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4B51B15B49620F57"]
+			description: ["A new tier of mesh, which gives completely different resources."]
+			id: "1F5CCE8CFD02903A"
+			rewards: [{
+				count: 2
+				id: "7F197D253C0E829C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "36F3F8DD14E01A1C"
+				item: "exnihilosequentia:flint_mesh"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5AA77BA8B764A2AA"
+				"02B8D64EAE39BA08"
+			]
+			description: ["Can cut blocks into plates, and rods into bolts at a 1:4 ratio. This also unlocks Diamond GT Tools, which have a lot more durability."]
+			id: "4A4989A767F3825D"
+			rewards: [{
+				id: "6FAD7A703B5EE2CF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "77CBA980EB1269D9"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5D3B5EF195A3093B"]
+			id: "5AA77BA8B764A2AA"
+			rewards: [{
+				id: "4D56E3C5935202AB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "45976A531138031F"
+				item: "gtceu:cobalt_brass_buzz_saw_blade"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0E88CB5E68212006"]
+			description: ["New processing multiblock, brings new resources that will be useful."]
+			id: "5D3B5EF195A3093B"
+			rewards: [{
+				id: "6EEC913BD06C07C4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "58AC287A9ADF2052"
+				item: "gtceu:cobalt_dust"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["234CE57A62FB8D82"]
+			description: ["Using the force of spinny things, this machine separates liquids, gasses and items."]
+			id: "1B97E56660BDCEF6"
+			rewards: [{
+				id: "791327B6B4AF7203"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B4922F8227BF4A6"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["234CE57A62FB8D82"]
+			id: "2AFD24A844E49C42"
+			rewards: [{
+				id: "2585095E52FBBD42"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5A9BD6AD60502B7C"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"4A4989A767F3825D"
+				"2AFD24A844E49C42"
+			]
+			description: ["Collects Air at circuit 1, which can be centrifuged for Nitrogen and Oxygen. If you need a lot of Oxygen, it is recommended to use a different way, check the Processing Lines chapter for reference."]
+			id: "4503C48C47348B74"
+			rewards: [{
+				id: "4F0B4DCF0F98747E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2DFB0C4FB11B6AD8"
+				item: "gtceu:lv_gas_collector"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2AFD24A844E49C42"]
+			description: ["This can be used for cheaper gears, and making hardened glass."]
+			id: "620F1881452C03B6"
+			rewards: [{
+				id: "5F9BA44DD14A19AF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00F029CC0B2A50A5"
+				item: "gtceu:lv_fluid_solidifier"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2AFD24A844E49C42"]
+			description: ["Turns item into their liquid forms."]
+			id: "7844913D9059D182"
+			rewards: [{
+				id: "6679E1A4653C52CB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "128E68E7F9B31109"
+				item: "gtceu:lv_extractor"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["53E98CFC7934FA67"]
+			description: ["Usefull for separating items in their base forms."]
+			id: "3A15777DD813EE71"
+			rewards: [{
+				id: "52E6F6B56D322690"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5155E69F57873538"
+				item: "gtceu:lv_electrolyzer"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1F5CCE8CFD02903A"]
+			description: ["You'll need to process some diamond ore for this."]
+			id: "10F2237FF0C87F62"
+			rewards: [{
+				id: "21E84874107E268E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00D39231F1909F1B"
+				item: "gtceu:graphite_dust"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["10F2237FF0C87F62"]
+			description: ["Uses Oxygen to operate, and is able to recycle machines in their base resources."]
+			id: "76B701A5EF4C1EF1"
+			rewards: [{
+				id: "3CF14AD07DB1686B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1BA5775C359F54A1"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["76B701A5EF4C1EF1"]
+			description: ["A better type of glass, used in many machines and multiblocks."]
+			id: "3C38935EF800E3CF"
+			rewards: [{
+				id: "5C0D44D865936DB8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A7A11871205A2C3"
+				item: "gtceu:tempered_glass"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3C38935EF800E3CF"]
+			id: "38A4A5FB19EB4AB9"
+			rewards: [{
+				id: "06B988807550F9B3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "44BE119EB12AE1EE"
+				item: "thermal:obsidian_glass"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["38A4A5FB19EB4AB9"]
+			description: ["Used to upgrade Thermal machines, such as Flux Cells and Dynamos by 4 times."]
+			id: "574CA65B67D79A6E"
+			rewards: [{
+				id: "3B2963F6CA12BFDF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "49CE7C3C268CD584"
+				item: {
+					Count: 1
+					id: "kubejs:lv_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 4.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["53E98CFC7934FA67"]
+			description: ["Super Chests grant massive storage capacity, with the first tier of super chest handling as much items as a fully upgraded drawer."]
+			id: "73125407EA6D21EC"
+			rewards: [{
+				id: "5A3838D031ABA355"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "78151C0C5AFE7159"
+				item: "gtceu:lv_super_chest"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1F5CCE8CFD02903A"]
+			description: ["The Electric Blast Furnace (EBF for short) is a better furnace, which you will need for most of your ingots going forward. If you are curious about how to use the EBF for MV recipes, look at the mechanics chapter, inside the overclock quest."]
+			icon: "gtceu:electric_blast_furnace"
+			id: "56BA79287C4DBE52"
+			rewards: [{
+				count: 2
+				id: "2E79F5C61F91FC82"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "74D648A7F47605A0"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7F5DC531E333C572"
+					item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "225C0227C18C8198"
+					item: { Count: 9, id: "gtceu:heatproof_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "20E3CC024E45ADE0"
+					item: { Count: 2, id: "gtceu:lv_energy_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "7CA6F4141B9582C8"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "26C2A736BDC1FAD9"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "3801B25C5CB79172"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "59C7F30E47B821EA"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+				{
+					id: "3E7DAB71EB2E714A"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "4B47C01D2B36D72A"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+			]
+			title: "Electric Blast Furnace (EBF)"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["56BA79287C4DBE52"]
+			id: "1A638BE0C6031CC5"
+			rewards: [{
+				id: "1E25AB67DE54679E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C41FF2169E7FFB2"
+				item: "gtceu:signalum_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["56BA79287C4DBE52"]
+			description: ["This is your MV material, will be needed in vast quantities."]
+			id: "60F649FC6E64DFD9"
+			rewards: [{
+				id: "38F829CD52ACC0A7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B6708DA072BDBEA"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1A638BE0C6031CC5"]
+			description: ["MV superconductor that can hold 16 amps through only a 1x cable allowing power to be used by many machines for cheap."]
+			id: "495F95F1D47A3321"
+			rewards: [{
+				id: "32188AC403316EA2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "21288F2AE82BEEE3"
+				item: "gtceu:signalum_single_wire"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1F5CCE8CFD02903A"]
+			id: "5BF06BFED6E52523"
+			rewards: [{
+				id: "48ABA260B49D0D83"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68FE101F487833A7"
+				item: "gtceu:realgar_dust"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"5BF06BFED6E52523"
+				"3F116A55E0215095"
+			]
+			id: "77FB57773EFE8D6C"
+			rewards: [{
+				id: "21CFB2F082FD4C2E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B57AB4AFE22CE07"
+				item: "gtceu:gallium_arsenide_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["397C622B06B1165A"]
+			id: "3F116A55E0215095"
+			rewards: [{
+				id: "5FDBAD28EF9411D8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "28138A28685FB883"
+				item: "gtceu:sphalerite_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["77FB57773EFE8D6C"]
+			description: ["Another type of component for circuits used in MV and above."]
+			id: "683FD2FC0B64739A"
+			rewards: [{
+				id: "4882F8DD5EAAE4C4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "45465759214C6D02"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"77FB57773EFE8D6C"
+				"56BA79287C4DBE52"
+			]
+			id: "5C15427D1679D4C3"
+			rewards: [{
+				id: "2A2893A1B960213D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5749A951E36D7B6D"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5C15427D1679D4C3"
+				"580BFECBF63DAC5D"
+			]
+			description: ["Every boule needs to be cut down into wafers for further processing."]
+			id: "0DEEBB486450E74E"
+			rewards: [{
+				count: 2
+				id: "323753DF9149A500"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "106E569467CB03C4"
+				item: "gtceu:silicon_wafer"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["56BA79287C4DBE52"]
+			id: "47027B245D1C7A2E"
+			rewards: [{
+				id: "3CB0CBEB70D0F2AB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "01B8A7854E27519D"
+				item: "gtceu:vanadium_steel_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"47027B245D1C7A2E"
+				"12C9427A04A2F550"
+			]
+			description: ["The MV Cutter can cut Wafers from Silicon Boules, which are used for better circuit recipes."]
+			id: "580BFECBF63DAC5D"
+			rewards: [{
+				id: "664E644502AE2C77"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25F202BD3E793DD0"
+				item: "gtceu:mv_cutter"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["60F649FC6E64DFD9"]
+			description: ["The heart of every MV machine."]
+			id: "12C9427A04A2F550"
+			rewards: [{
+				id: "76BDA69ED8BAB9FD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D3D8100269A3459"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"495F95F1D47A3321"
+				"12C9427A04A2F550"
+			]
+			description: ["This converter makes 4A of MV power, instead of LV."]
+			id: "1F693ACD14436D87"
+			rewards: [{
+				id: "0EEF835BE5647FBD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "069128AB645C2532"
+				item: "gtceu:mv_4a_energy_converter"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["12C9427A04A2F550"]
+			description: ["Wafers on their own are kinda useless. By using a colored lens, you can inscribe them with the Laser Engraver, making them more usefull."]
+			id: "491C4CECC6C24DDF"
+			rewards: [{
+				id: "1671366165B56302"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0181A504EF0DD8EC"
+				item: "gtceu:mv_laser_engraver"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"261B946701411D9C"
+				"7908E8C196F82F9B"
+				"119983C3240B8F66"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Made with either Sodium Persulfate or Iron III Chloride. Both are explained in the Processing Lines chapter."]
+			id: "6D8E5B0E49056FDC"
+			rewards: [{
+				id: "3EB1FEC1E125F68C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A82678F9E5DC31B"
+				item: "gtceu:phenolic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"683FD2FC0B64739A"
+				"6D8E5B0E49056FDC"
+				"20A12F3B992762F0"
+			]
+			id: "7836F17B34B47B16"
+			rewards: [{
+				count: 2
+				id: "7D1CA49B9DBB8459"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "4362380E2C0F1E25"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7836F17B34B47B16"]
+			description: ["Makes all your circuits going forward, and makes the older ones for cheaper prices."]
+			id: "707733C864B8729C"
+			rewards: [{
+				id: "2FC1EE7643113986"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "30784C286176D04A"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7836F17B34B47B16"]
+			description: ["An instant tree farm."]
+			id: "2F4B998D20856E2B"
+			rewards: [{
+				id: "11BFF2E7331E5C09"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1485C10F20D2BD6F"
+				item: "gtceu:tree_greenhouse"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"12C9427A04A2F550"
+				"24DF9557A927B2B5"
+			]
+			description: ["Used primarily for making Charcoal and Coal Coke."]
+			id: "0AB3A8C14C3A0512"
+			rewards: [{
+				id: "62842FFE70DEB525"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "327430270A92C05F"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"707733C864B8729C"
+				"590380B77F8EF17D"
+			]
+			description: ["Cheaper LV Circuit."]
+			id: "70875F86587758D7"
+			rewards: [{
+				id: "33AAB8FC1F3008AF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Second LV Circuit"
+			tasks: [{
+				id: "6724AF723E65C21F"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["70875F86587758D7"]
+			description: ["Cheaper MV Circuit."]
+			id: "23D3BED4F1968AD6"
+			rewards: [{
+				id: "295C26334A202535"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Second MV Circuit"
+			tasks: [{
+				id: "1CFD541C64D50B64"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"0DEEBB486450E74E"
+				"491C4CECC6C24DDF"
+			]
+			description: ["This chip will be used to make better LV circuits, which can be upgraded to even higher tiers."]
+			icon: "gtceu:ilc_chip"
+			id: "590380B77F8EF17D"
+			rewards: [{
+				id: "2BB07344C488A780"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "00CC423C3E223E09"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:lenses/red"
+						}
+					}
+					title: "Any Red Lenses"
+					type: "item"
+				}
+				{
+					id: "1232D48FFF388B69"
+					item: "gtceu:ilc_wafer"
+					type: "item"
+				}
+				{
+					id: "4660AD9CC8DF3D25"
+					item: "gtceu:ilc_chip"
+					type: "item"
+				}
+			]
+			title: "IC Chips"
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"491C4CECC6C24DDF"
+				"0DEEBB486450E74E"
+			]
+			description: ["This chip is used for creating a hatch to give MV power to multiblocks as well as transform power to MV"]
+			icon: "gtceu:ulpic_chip"
+			id: "79AA3AF63E976038"
+			rewards: [{
+				id: "309AB16B73A3768D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "411363DA556F2AF2"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:lenses/blue"
+						}
+					}
+					title: "Any Blue Lenses"
+					type: "item"
+				}
+				{
+					id: "393AAA5C3FAFC495"
+					item: "gtceu:ulpic_wafer"
+					type: "item"
+				}
+				{
+					id: "2EA969074D91327C"
+					item: "gtceu:ulpic_chip"
+					type: "item"
+				}
+			]
+			title: "ULPIC Chips"
+			x: 8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"79AA3AF63E976038"
+				"12C9427A04A2F550"
+			]
+			description: ["These can be used to overclock your EBF again, this time to HV."]
+			hide_dependent_lines: true
+			id: "0A03B4D352DCF148"
+			rewards: [{
+				count: 2
+				id: "6AB657851A053BB4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7452592DFEBC7C44"
+				item: "gtceu:mv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["12C9427A04A2F550"]
+			description: ["You should get the hang of it now right? Higher tier of machine = more and faster recipes."]
+			id: "7EC83EEF3F7A89B8"
+			rewards: [{
+				id: "103D493E1BB9765B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "61B3BB2C2EEB1B21"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["12C9427A04A2F550"]
+			description: ["Used to grow crystals from dusts."]
+			id: "25068C8099952D6A"
+			rewards: [{
+				id: "20BA46997A59AA15"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F2ED3D51A1B5C9C"
+				item: "gtceu:mv_autoclave"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"53E98CFC7934FA67"
+				"261174370DC87FCB"
+			]
+			description: [
+				"Super Tanks store a large amount of liquids. "
+				"However, they do need Polyethylene to be made. Check the Processing lines chapter for more information."
+			]
+			id: "1A9E5F3F6CE13465"
+			rewards: [{
+				id: "0DD4BBA61877A159"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "305C09441378F429"
+				item: "gtceu:lv_super_tank"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7EC83EEF3F7A89B8"]
+			description: ["4x as efficient as the LV one."]
+			id: "38C4FC58A4482F83"
+			rewards: [{
+				id: "23701926BCA340FC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "400416FA464177FB"
+				item: {
+					Count: 1
+					id: "kubejs:mv_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 16.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7EC83EEF3F7A89B8"]
+			description: ["The 3rd tier of mesh, will give you access to new resources to progress."]
+			id: "6D35986F79B17912"
+			rewards: [{
+				count: 2
+				id: "0D559D2ABBE98BD4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6408A4D29DB3C957"
+				item: "exnihilosequentia:iron_mesh"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6D35986F79B17912"]
+			description: ["By processing this dust, you will gain access to rare earth which contains a number of other resources."]
+			id: "3A76F21DD2A31324"
+			rewards: [{
+				id: "3E897BC0D4A6AA34"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7ED06915581A8D75"
+				item: "gtceu:monazite_dust"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3A76F21DD2A31324"]
+			id: "182E932DAC15B0B0"
+			rewards: [{
+				id: "5222480C0D765EF4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D7BB0405952185D"
+				item: "gtceu:rare_earth_dust"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["182E932DAC15B0B0"]
+			description: ["Neodynium is gonna be used for higher motor tiers, and Neodynium Magnets."]
+			hide_dependent_lines: true
+			id: "2C404AE10029FCD4"
+			rewards: [{
+				id: "473BE4E7B57E5CD3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2C62C8A037C09032"
+					item: "gtceu:cadmium_dust"
+					type: "item"
+				}
+				{
+					id: "19E88383752F60EA"
+					item: "gtceu:neodymium_dust"
+					type: "item"
+				}
+				{
+					id: "070411AC196B2910"
+					item: "gtceu:samarium_dust"
+					type: "item"
+				}
+				{
+					id: "07BAF0628D7C2599"
+					item: "gtceu:cerium_dust"
+					type: "item"
+				}
+				{
+					id: "0455AF027853BEC6"
+					item: "gtceu:yttrium_dust"
+					type: "item"
+				}
+				{
+					id: "441B274AEF898C64"
+					item: "gtceu:lanthanum_dust"
+					type: "item"
+				}
+			]
+			title: "Rare Earth Metals"
+			x: 11.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25068C8099952D6A"]
+			description: ["AE2's backbone material."]
+			id: "6896F9AF41EE8571"
+			rewards: [{
+				id: "7C19B021AC9106CC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "235D4BCFE60C7A06"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"56BA79287C4DBE52"
+				"0A03B4D352DCF148"
+			]
+			description: ["Your first Hot Ingot. And because the quest devs are so nice, and listened to Coooleen, you don't have to hold it."]
+			icon: "gtceu:hot_kanthal_ingot"
+			id: "7A9839144373C80D"
+			rewards: [{
+				id: "123D34BFA3D2CC82"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5B7CA74E5D333B07"
+					title: "Hot Kanthal Ingot"
+					type: "checkmark"
+				}
+				{
+					id: "23BDE4A57B08177F"
+					item: "gtceu:hot_kanthal_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"56BA79287C4DBE52"
+				"0A03B4D352DCF148"
+			]
+			id: "7E6BF5B40EA057F5"
+			rewards: [{
+				id: "6B7F70F97846F1E0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F24988BD4A109CA"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7E6BF5B40EA057F5"]
+			description: ["Easy automated sieving in 1 block."]
+			id: "2B21C19628DCEA2A"
+			rewards: [{
+				count: 2
+				id: "571DA13EAD49E660"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "040A13BBD68FB949"
+				item: "exmachinis:flux_sieve"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7A9839144373C80D"]
+			id: "6749EECB949732DB"
+			rewards: [{
+				id: "6C027EFC8EC67C50"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F0CE5F4E86938FE"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6749EECB949732DB"]
+			description: ["Kanthal Coils are the second tier of coils. All recipes in the EBF have both a minimum coil and energy tier requirement. If these conditions are not met, the EBF won't operate."]
+			id: "0E61DC74B2E2C962"
+			rewards: [{
+				count: 2
+				id: "4CF641039036DCBE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "4A7C512E88334559"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0E61DC74B2E2C962"]
+			description: ["You might also want to cool these through a Chemical Bath till you gain access to the Vacuum Freezer."]
+			icon: "gtceu:hot_silicon_ingot"
+			id: "4783029C26DC0368"
+			rewards: [{
+				id: "371125EA2779CE55"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2D880B939AE8FF0C"
+					title: "Hot Silicon Ingot"
+					type: "checkmark"
+				}
+				{
+					id: "3F1A978EF851D6A3"
+					item: "gtceu:hot_silicon_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4783029C26DC0368"]
+			description: ["Now you've cooled your first silicon ingots, you can finally make use of all the silicon thats lying about your base."]
+			id: "4ED724D5B94CFA3A"
+			rewards: [{
+				id: "6D0CFE337FF1273C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "21CA64D75BCC468B"
+				item: "gtceu:silicon_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6896F9AF41EE8571"]
+			description: ["Power Hatch for your ME network."]
+			id: "0A98FE21C12F1199"
+			rewards: [{
+				count: 2
+				id: "5342304D15756502"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0E687BD5E4F49922"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1F5CCE8CFD02903A"]
+			description: ["Use these to press plates into printed circuits."]
+			hide_dependency_lines: true
+			id: "4CCB2727C13AEBDD"
+			rewards: [{
+				id: "4F8FC78D0F3D8220"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "33061CD6B2159A31"
+					item: "ae2:calculation_processor_press"
+					type: "item"
+				}
+				{
+					id: "19173EDEB2E73CA4"
+					item: "ae2:engineering_processor_press"
+					type: "item"
+				}
+				{
+					id: "71596AC78B0F9B31"
+					item: "ae2:logic_processor_press"
+					type: "item"
+				}
+				{
+					id: "66FDCD0D41605D62"
+					item: "ae2:silicon_press"
+					type: "item"
+				}
+			]
+			title: "Inscriber Presses"
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"4CCB2727C13AEBDD"
+				"4ED724D5B94CFA3A"
+			]
+			description: ["You are gonna need a lot of these."]
+			id: "16A71D038D996289"
+			rewards: [{
+				count: 2
+				id: "7110B623B1739C0F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2C95AC0370765770"
+					item: "ae2:printed_silicon"
+					type: "item"
+				}
+				{
+					id: "5A0144B78FDA7BE5"
+					item: "ae2:printed_calculation_processor"
+					type: "item"
+				}
+				{
+					id: "4304604DD6280C67"
+					item: "ae2:printed_engineering_processor"
+					type: "item"
+				}
+				{
+					id: "670B22BE5094B880"
+					item: "ae2:printed_logic_processor"
+					type: "item"
+				}
+			]
+			title: "Printed Circuits"
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["53E98CFC7934FA67"]
+			description: ["Carbon Brushes are the preferred method for FE generation. For more information, check the ponder screen."]
+			id: "35D6B5C30A3A2AE0"
+			rewards: [{
+				count: 2
+				id: "64BDF9C5A61F9360"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "19DAF95B3B02C898"
+					item: "create_new_age:carbon_brushes"
+					type: "item"
+				}
+				{
+					id: "1E6E55C936ADC107"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["35D6B5C30A3A2AE0"]
+			description: ["Allows you to charge items with create and RF, gets replaced by the Polarizer."]
+			id: "75BF415FDA4AB79F"
+			rewards: [{
+				id: "132FAA64056A92B7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F8E186966636A72"
+				item: "create_new_age:energiser_t1"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["75BF415FDA4AB79F"]
+			id: "04876D3FDD4BE6F7"
+			rewards: [{
+				id: "5D789862F72388DD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "346FB054BF59B5F9"
+				item: "create_new_age:energiser_t2"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["04876D3FDD4BE6F7"]
+			id: "34C1C09B74C46FC4"
+			rewards: [{
+				count: 2
+				id: "530D9311FA779FD8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "34C52DB045E6EE96"
+				item: "create_new_age:energiser_t3"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["35D6B5C30A3A2AE0"]
+			id: "125AA2F183B4FBB9"
+			rewards: [{
+				id: "63CCF2CF19EFF471"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0FE70ED313B3EB02"
+				item: "create_new_age:magnetite_block"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["125AA2F183B4FBB9"]
+			id: "574E12BF11F87405"
+			rewards: [{
+				id: "0F6620276F589F98"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "55AF0038AB45E89A"
+				item: "create_new_age:redstone_magnet"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["574E12BF11F87405"]
+			id: "5FD374ACECB3E571"
+			rewards: [{
+				id: "7F063396C160F9C5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "79E55E81CF1C0897"
+				item: "create_new_age:layered_magnet"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5FD374ACECB3E571"]
+			id: "32EFD02E4B6969EC"
+			rewards: [{
+				id: "3F8CD5D0B5FEE79F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3F50D488E4667501"
+				item: "create_new_age:fluxuated_magnetite"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"2C404AE10029FCD4"
+				"32EFD02E4B6969EC"
+			]
+			id: "1510334BF8ED8EBC"
+			rewards: [{
+				count: 2
+				id: "5034A8F9F0DAB02D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "5216A845C701E1D0"
+				item: "create_new_age:netherite_magnet"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["35D6B5C30A3A2AE0"]
+			description: ["Can be used to transfer 1,024 RF around your base. (Can go through walls)"]
+			id: "714E51B6F0863FA6"
+			rewards: [{
+				id: "18BA41FB4C25940D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "078E62C529D838AE"
+				item: "create_new_age:copper_wire"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["714E51B6F0863FA6"]
+			description: ["Can be used to transfer 2,048 RF around your base. (Can go through walls)"]
+			id: "24EC88E9B8205348"
+			rewards: [{
+				id: "1E0F138D5B9169DB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "26494F2662579770"
+				item: "create_new_age:overcharged_iron_wire"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["24EC88E9B8205348"]
+			description: ["Can be used to transfer 4,096 RF around your base. (Can go through walls)"]
+			id: "3CD2FE0563B226A7"
+			rewards: [{
+				id: "1A538CA5A0B836AB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32E48F0DE5C51C94"
+				item: "create_new_age:overcharged_golden_wire"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3CD2FE0563B226A7"]
+			description: ["Can be used to transfer 8,192 RF around your base. (Can go through walls)"]
+			id: "539B5C30BFD9AB6B"
+			rewards: [{
+				count: 2
+				id: "4FCA0EA49FE0E507"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "6CB8E160285CE446"
+				item: "create_new_age:overcharged_diamond_wire"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["12C9427A04A2F550"]
+			description: ["A better coating for your cables, will be needed for later cables as well."]
+			id: "270CE5B8D718F8C2"
+			rewards: [{
+				id: "4FF5666DB3AE5E52"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "39E2C438D28BEDB7"
+				item: "gtceu:silicone_rubber_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["20A12F3B992762F0"]
+			id: "53E98CFC7934FA67"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 8L
+				id: "239235F1614EEEA3"
+				item: { Count: 8, id: "gtceu:basic_electronic_circuit" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.5d
+		}
+	]
+	title: "Industrial Revolution"
+}

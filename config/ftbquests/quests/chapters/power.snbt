@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	filename: "power"
 	group: "28726466D987C725"
 	icon: "thermalendergy:endergy_upgrade_3"
@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["27C811CBD873B7E3"]
+			dependencies: ["614071EB90CB89F5"]
 			id: "102F057123D31D85"
 			shape: "square"
 			tasks: [{
@@ -17,11 +17,11 @@
 				item: "thermal:dynamo_stirling"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["300CC62C2E30EE26"]
+			dependencies: ["614071EB90CB89F5"]
 			id: "092ACDF732CE78F0"
 			shape: "square"
 			tasks: [{
@@ -29,11 +29,11 @@
 				item: "thermal:dynamo_lapidary"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.0d
+			x: -0.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["300CC62C2E30EE26"]
+			dependencies: ["614071EB90CB89F5"]
 			id: "7910F6A8087A9E85"
 			shape: "square"
 			tasks: [{
@@ -41,8 +41,8 @@
 				item: "thermal:dynamo_compression"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.0d
+			x: -2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["102F057123D31D85"]
@@ -53,8 +53,8 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 0.0d
+			x: -5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6952D4FF38BE8183"]
@@ -65,8 +65,8 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: -6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3EFA6C0507041E4C"]
@@ -77,8 +77,8 @@
 				item: "mysticalagradditions:inferium_coal"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.0d
+			x: -7.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3CF055943BFD3CD1"]
@@ -89,8 +89,8 @@
 				item: "mysticalagradditions:prudentium_coal"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 0.0d
+			x: -8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5F4670FBF12F4E85"]
@@ -101,8 +101,8 @@
 				item: "mysticalagradditions:tertium_coal"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: -8.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1EC33A1B699E013C"]
@@ -113,8 +113,8 @@
 				item: "mysticalagradditions:imperium_coal"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.0d
+			x: -8.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["14DA2BDED60BD66C"]
@@ -125,8 +125,8 @@
 				item: "mysticalagradditions:supremium_coal"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 0.0d
+			x: -8.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["365B7388D4BDC328"]
@@ -138,7 +138,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 0.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["092ACDF732CE78F0"]
@@ -149,12 +149,11 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -1.0d
+			x: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7910F6A8087A9E85"]
-			hide: false
 			id: "0F70A4555874E56E"
 			shape: "square"
 			tasks: [{
@@ -162,8 +161,8 @@
 				item: "thermal_extra:refined_sunflower_oil_bucket"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.0d
+			x: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0F70A4555874E56E"]
@@ -174,8 +173,8 @@
 				item: "gtceu:bio_diesel_bucket"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.0d
+			x: -5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["28FB566FC1E35413"]
@@ -186,8 +185,8 @@
 				item: "thermal:refined_fuel_bucket"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 1.0d
+			x: -6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7242D13C6F27BECB"]
@@ -198,8 +197,8 @@
 				item: "gtceu:diesel_bucket"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 1.0d
+			x: -7.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0C81D0F1D42C092B"]
@@ -210,8 +209,8 @@
 				item: "gtceu:cetane_boosted_diesel_bucket"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 1.0d
+			x: -7.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7E508B071C59EB73"]
@@ -222,8 +221,8 @@
 				item: "gtceu:gasoline_bucket"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 1.0d
+			x: -7.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["285392E7B24481C3"]
@@ -235,10 +234,10 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 1.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["0DA0992F206EC0A2"]
+			dependencies: ["614071EB90CB89F5"]
 			icon: "systeams:steam_dynamo"
 			id: "67452BE135FAD1C3"
 			shape: "square"
@@ -256,8 +255,8 @@
 				}
 			]
 			title: "Steam Dynamo"
-			x: 0.0d
-			y: -2.0d
+			x: -3.5d
+			y: -1.5d
 		}
 		{
 			description: [
@@ -269,11 +268,11 @@
 			id: "614071EB90CB89F5"
 			tasks: [{
 				id: "0020A1ED81A0ACE0"
-				title: "Why use thermal dynamos?"
+				title: "Why use Thermal Dynamos?"
 				type: "checkmark"
 			}]
-			x: -1.0d
-			y: -2.0d
+			x: -2.0d
+			y: -1.0d
 		}
 		{
 			description: [
@@ -287,11 +286,15 @@
 				title: "Why use GregTech energy generators?"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: -2.0d
+			x: 5.5d
+			y: -4.5d
 		}
 		{
-			dependencies: ["317CB8073A46DAA1"]
+			dependencies: [
+				"3CB63B290C9EFAA2"
+				"73931EAA3EC5C9A9"
+				"05C51AB556798DB5"
+			]
 			id: "56D5E9ED8C8868FE"
 			shape: "square"
 			tasks: [{
@@ -299,11 +302,15 @@
 				item: "gtceu:steam_large_turbine"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.0d
+			x: 4.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["05D1ECC9AE687683"]
+			dependencies: [
+				"74749B089D50329C"
+				"62BA581B2918BB7B"
+				"3686ABF30E4B9ED6"
+			]
 			id: "1AE561E8FE98FB21"
 			shape: "square"
 			tasks: [{
@@ -311,11 +318,15 @@
 				item: "gtceu:large_combustion_engine"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -3.0d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["2FCBD505C66C64E9"]
+			dependencies: [
+				"4D9DAED52FF74B8B"
+				"53A9F3758C218CDC"
+				"1AE561E8FE98FB21"
+			]
 			id: "6624D08A013284D5"
 			shape: "square"
 			tasks: [{
@@ -323,11 +334,15 @@
 				item: "gtceu:extreme_combustion_engine"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -2.0d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["05D1ECC9AE687683"]
+			dependencies: [
+				"74749B089D50329C"
+				"52FE319F5E176C37"
+				"2E47A710168F7FF8"
+			]
 			id: "2B9567A9F12BC62F"
 			shape: "square"
 			tasks: [{
@@ -335,11 +350,15 @@
 				item: "gtceu:gas_large_turbine"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -3.0d
+			x: 7.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["7D08C93B6EB3B6BC"]
+			dependencies: [
+				"023794367F1B28D1"
+				"53A9F3758C218CDC"
+				"7DDFBCDFC3F09A6B"
+			]
 			id: "6622E66A2FA19BA1"
 			shape: "square"
 			tasks: [{
@@ -347,11 +366,11 @@
 				item: "gtceu:plasma_large_turbine"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -3.0d
+			x: 5.5d
+			y: -6.0d
 		}
 		{
-			dependencies: ["27C811CBD873B7E3"]
+			dependencies: ["7DDFBCDFC3F09A6B"]
 			id: "214ADEEEA6FFF4BC"
 			shape: "square"
 			tasks: [{
@@ -359,8 +378,8 @@
 				item: "gtceu:lv_steam_turbine"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -4.0d
+			x: 4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["214ADEEEA6FFF4BC"]
@@ -371,11 +390,11 @@
 				item: "gtceu:mv_steam_turbine"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -5.0d
+			x: 4.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["214ADEEEA6FFF4BC"]
+			dependencies: ["739ACFDA803EE16C"]
 			id: "05C51AB556798DB5"
 			shape: "square"
 			tasks: [{
@@ -383,11 +402,11 @@
 				item: "gtceu:hv_steam_turbine"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -6.0d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["27C811CBD873B7E3"]
+			dependencies: ["7DDFBCDFC3F09A6B"]
 			id: "52D3EE2184A501B8"
 			shape: "square"
 			tasks: [{
@@ -395,8 +414,8 @@
 				item: "gtceu:lv_combustion"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -4.0d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["52D3EE2184A501B8"]
@@ -407,11 +426,11 @@
 				item: "gtceu:mv_combustion"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -5.0d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["52D3EE2184A501B8"]
+			dependencies: ["031AC34BAC9179F0"]
 			id: "3686ABF30E4B9ED6"
 			shape: "square"
 			tasks: [{
@@ -419,11 +438,11 @@
 				item: "gtceu:hv_combustion"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -6.0d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["27C811CBD873B7E3"]
+			dependencies: ["7DDFBCDFC3F09A6B"]
 			id: "2D7AD0E25BF9F651"
 			shape: "square"
 			tasks: [{
@@ -431,8 +450,8 @@
 				item: "gtceu:lv_gas_turbine"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.0d
+			x: 7.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2D7AD0E25BF9F651"]
@@ -443,8 +462,8 @@
 				item: "gtceu:mv_gas_turbine"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -5.0d
+			x: 7.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["526C13FC32CED748"]
@@ -455,68 +474,30 @@
 				item: "gtceu:hv_gas_turbine"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -6.0d
+			x: 7.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["102F057123D31D85"]
-			id: "3E40CE4FC476739E"
-			shape: "square"
-			tasks: [{
-				id: "08EA7A53187B588E"
-				item: "kubejs:lv_upgrade_kit"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["3E40CE4FC476739E"]
-			id: "0D043BA5C8442DE1"
-			shape: "square"
-			tasks: [{
-				id: "386FE1FBD6C1FCD7"
-				item: "kubejs:mv_upgrade_kit"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["0D043BA5C8442DE1"]
-			id: "707C4C164020AD5C"
-			shape: "square"
-			tasks: [{
-				id: "7DC477616D867666"
-				item: "kubejs:hv_upgrade_kit"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["707C4C164020AD5C"]
-			id: "4D2E4A1F5884BD5B"
-			shape: "square"
-			tasks: [{
-				id: "6897C5E1CA3EBC21"
-				item: "kubejs:ev_upgrade_kit"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["102F057123D31D85"]
+			dependencies: ["614071EB90CB89F5"]
 			id: "08F1DEFEB060C74C"
 			shape: "square"
 			tasks: [{
 				id: "47B43BAD0AA3B791"
-				item: "kubejs:lv_arc_kit"
+				item: {
+					Count: 1
+					id: "kubejs:lv_arc_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 0.95f
+							DynamoPower: 0.5f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 0.0d
+			x: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["08F1DEFEB060C74C"]
@@ -524,11 +505,21 @@
 			shape: "square"
 			tasks: [{
 				id: "1784B159D603DC45"
-				item: "kubejs:mv_arc_kit"
+				item: {
+					Count: 1
+					id: "kubejs:mv_arc_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 0.9f
+							DynamoPower: 0.75f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.0d
+			x: 0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["238AD90B9828A7B0"]
@@ -536,11 +527,21 @@
 			shape: "square"
 			tasks: [{
 				id: "2B79348BC44F6C9C"
-				item: "kubejs:hv_arc_kit"
+				item: {
+					Count: 1
+					id: "kubejs:hv_arc_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 0.8f
+							DynamoPower: 1.0f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: 1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["612BB2D1A5C10C7B"]
@@ -548,23 +549,42 @@
 			shape: "square"
 			tasks: [{
 				id: "6B0FEFA3DD061DBB"
-				item: "kubejs:ev_arc_kit"
+				item: {
+					Count: 1
+					id: "kubejs:ev_arc_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 0.75f
+							DynamoPower: 2.0f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: 0.0d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["102F057123D31D85"]
+			dependencies: ["614071EB90CB89F5"]
 			id: "7B16D5BEC4CDB611"
 			shape: "square"
 			tasks: [{
 				id: "1693CBDB66379472"
-				item: "kubejs:lv_mci_kit"
+				item: {
+					Count: 1
+					id: "kubejs:lv_mci_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 1.1f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 1.0d
+			x: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7B16D5BEC4CDB611"]
@@ -572,11 +592,20 @@
 			shape: "square"
 			tasks: [{
 				id: "2DDD24ABA6AD377A"
-				item: "kubejs:mv_mci_kit"
+				item: {
+					Count: 1
+					id: "kubejs:mv_mci_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 1.25f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.0d
+			x: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1B43A54DA21C5F87"]
@@ -584,11 +613,20 @@
 			shape: "square"
 			tasks: [{
 				id: "1465BABECD269969"
-				item: "kubejs:hv_mci_kit"
+				item: {
+					Count: 1
+					id: "kubejs:hv_mci_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 1.5f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.0d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["206E8AD2E23335B9"]
@@ -596,20 +634,33 @@
 			shape: "square"
 			tasks: [{
 				id: "0DA081A760A80400"
-				item: "kubejs:ev_mci_kit"
+				item: {
+					Count: 1
+					id: "kubejs:ev_mci_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 2.0f
+							Type: "Dynamo"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: 1.0d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["7B62606375AD371B"]
+			dependencies: ["568B71C405BD66DF"]
 			id: "38B3A7FC309E12E2"
-			shape: "rsquare"
+			rewards: [{
+				id: "3A1BB8F69976E897"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0233177A0F6796D8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "thermal:energy_cell"
 					tag: {
 						BlockEntityTag: {
@@ -622,8 +673,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: 3.5d
+			x: 1.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["38B3A7FC309E12E2"]
@@ -631,71 +682,21 @@
 			shape: "square"
 			tasks: [{
 				id: "41968F3C354DAD17"
-				item: "thermal:rf_coil_augment"
+				item: {
+					Count: 1
+					id: "kubejs:ulv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 4.0f
+							RFXfer: 4.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["61E90638F79C5867"]
-			id: "28D272CD3ABBFBB2"
-			shape: "square"
-			tasks: [{
-				id: "3F891829FF6DF64C"
-				item: "thermal_extra:rf_coil_augment_1"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["28D272CD3ABBFBB2"]
-			id: "4DBAF2567FE93721"
-			shape: "square"
-			tasks: [{
-				id: "06FBA76976890B34"
-				item: "thermal_extra:rf_coil_augment_2"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["4DBAF2567FE93721"]
-			id: "5CB817D66487C640"
-			shape: "square"
-			tasks: [{
-				id: "024A072BBE689682"
-				item: "thermal_extra:rf_coil_augment_3"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["5CB817D66487C640"]
-			id: "3A5F23607D56951C"
-			shape: "square"
-			tasks: [{
-				id: "04B58D5EC736B14A"
-				item: "thermal_extra:rf_coil_augment_4"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["3A5F23607D56951C"]
-			id: "3A6A72A0940531EC"
-			shape: "square"
-			tasks: [{
-				id: "2BC511CEFE0D760F"
-				item: "thermal_extra:rf_coil_augment_5"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 2.5d
+			x: 2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["38B3A7FC309E12E2"]
@@ -703,71 +704,21 @@
 			shape: "square"
 			tasks: [{
 				id: "563B24DA069D5083"
-				item: "thermal:rf_coil_storage_augment"
+				item: {
+					Count: 1
+					id: "kubejs:ulv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 6.0f
+							RFXfer: 2.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["78D71074F1F5968D"]
-			id: "77C78ECA18BFBB1C"
-			shape: "square"
-			tasks: [{
-				id: "45F67D88311FCDA1"
-				item: "thermal_extra:rf_coil_storage_augment_1"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["77C78ECA18BFBB1C"]
-			id: "03377B437580F483"
-			shape: "square"
-			tasks: [{
-				id: "2A51B15596F91B5F"
-				item: "thermal_extra:rf_coil_storage_augment_2"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["03377B437580F483"]
-			id: "77BC98683735265F"
-			shape: "square"
-			tasks: [{
-				id: "58C2AA112D6F16AD"
-				item: "thermal_extra:rf_coil_storage_augment_3"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["77BC98683735265F"]
-			id: "7A775EC99884D663"
-			shape: "square"
-			tasks: [{
-				id: "463981BBBC127B52"
-				item: "thermal_extra:rf_coil_storage_augment_4"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["7A775EC99884D663"]
-			id: "618F5344824E5C69"
-			shape: "square"
-			tasks: [{
-				id: "0974565F4340CD02"
-				item: "thermal_extra:rf_coil_storage_augment_5"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 3.5d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["38B3A7FC309E12E2"]
@@ -775,74 +726,25 @@
 			shape: "square"
 			tasks: [{
 				id: "1F960D6A6D6BFA4F"
-				item: "thermal:rf_coil_xfer_augment"
+				item: {
+					Count: 1
+					id: "kubejs:ulv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 2.0f
+							RFXfer: 6.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 4.5d
+			x: 2.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["30280927DB01667B"]
-			id: "06880EB78987B8CD"
-			shape: "square"
-			tasks: [{
-				id: "26F81311A55BD634"
-				item: "thermal_extra:rf_coil_xfer_augment_1"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["06880EB78987B8CD"]
-			id: "77A9E0DF90782CF4"
-			shape: "square"
-			tasks: [{
-				id: "6228D52348F3263C"
-				item: "thermal_extra:rf_coil_xfer_augment_2"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["77A9E0DF90782CF4"]
-			id: "67568B18473C88D6"
-			shape: "square"
-			tasks: [{
-				id: "5A668D9E69F693BD"
-				item: "thermal_extra:rf_coil_xfer_augment_3"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["67568B18473C88D6"]
-			id: "48F4B7C8CC8BAF16"
-			shape: "square"
-			tasks: [{
-				id: "765610CFFD22E3FD"
-				item: "thermal_extra:rf_coil_xfer_augment_4"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["48F4B7C8CC8BAF16"]
-			id: "50B874C970B00A2A"
-			shape: "square"
-			tasks: [{
-				id: "17C04931FFBC4FF1"
-				item: "thermal_extra:rf_coil_xfer_augment_5"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["317CB8073A46DAA1"]
+			dependencies: ["7B0133D388101F68"]
+			disable_toast: true
 			id: "2DE603ADDFA5D7F3"
 			shape: "square"
 			tasks: [{
@@ -850,11 +752,15 @@
 				item: "gtceu:energy_crystal"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: -0.5d
+			y: 4.5d
 		}
 		{
-			dependencies: ["2DE603ADDFA5D7F3"]
+			dependencies: [
+				"2DE603ADDFA5D7F3"
+				"352B3D23A2C7DE74"
+			]
+			disable_toast: true
 			id: "32BB14C7461C4C42"
 			shape: "square"
 			tasks: [{
@@ -862,11 +768,15 @@
 				item: "gtceu:lapotron_crystal"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.5d
+			x: -1.5d
+			y: 4.5d
 		}
 		{
-			dependencies: ["32BB14C7461C4C42"]
+			dependencies: [
+				"32BB14C7461C4C42"
+				"16D1B8E5F2A87F4E"
+			]
+			disable_toast: true
 			id: "4D219BFDAB49076C"
 			shape: "square"
 			tasks: [{
@@ -874,11 +784,15 @@
 				item: "gtceu:lapotronic_energy_orb"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.5d
+			x: -2.5d
+			y: 4.5d
 		}
 		{
-			dependencies: ["4D219BFDAB49076C"]
+			dependencies: [
+				"4D219BFDAB49076C"
+				"03FF61D56AA8ED91"
+			]
+			disable_toast: true
 			id: "4C9D66505AF82D34"
 			shape: "square"
 			tasks: [{
@@ -886,11 +800,15 @@
 				item: "gtceu:lapotronic_energy_orb_cluster"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 2.5d
+			x: -2.5d
+			y: 3.5d
 		}
 		{
-			dependencies: ["4D219BFDAB49076C"]
+			dependencies: [
+				"4D219BFDAB49076C"
+				"151C2D784700BD49"
+			]
+			disable_toast: true
 			id: "1996BA6B166BE144"
 			shape: "square"
 			tasks: [{
@@ -898,11 +816,15 @@
 				item: "gtceu:energy_cluster"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.5d
+			x: -3.5d
+			y: 4.5d
 		}
 		{
-			dependencies: ["1996BA6B166BE144"]
+			dependencies: [
+				"1996BA6B166BE144"
+				"50835055C3D1050C"
+			]
+			disable_toast: true
 			id: "11CE96B729527074"
 			shape: "square"
 			tasks: [{
@@ -910,23 +832,28 @@
 				item: "gtceu:max_battery"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: -4.5d
+			y: 4.5d
 		}
 		{
-			dependencies: ["5F9D3B0A9969F833"]
+			dependencies: ["5B72F7526494EAEC"]
+			disable_toast: true
 			id: "7539CDA12A346BFA"
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "08C27BACFDCAC812"
 				item: "gtceu:power_substation"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: -0.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["7539CDA12A346BFA"]
+			dependencies: [
+				"7539CDA12A346BFA"
+				"5BC9DEBA51D83A33"
+			]
+			disable_toast: true
 			id: "30F7DF961EA75625"
 			shape: "square"
 			tasks: [{
@@ -934,11 +861,15 @@
 				item: "gtceu:ev_lapotronic_battery"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.5d
+			x: -1.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["30F7DF961EA75625"]
+			dependencies: [
+				"30F7DF961EA75625"
+				"1AC791ABC70E8699"
+			]
+			disable_toast: true
 			id: "16F4A2F1DDE5B417"
 			shape: "square"
 			tasks: [{
@@ -946,11 +877,15 @@
 				item: "gtceu:iv_lapotronic_battery"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.5d
+			x: -2.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["16F4A2F1DDE5B417"]
+			dependencies: [
+				"16F4A2F1DDE5B417"
+				"10B333DE4129BDC9"
+			]
+			disable_toast: true
 			id: "45E01095749CA1A4"
 			shape: "square"
 			tasks: [{
@@ -958,11 +893,15 @@
 				item: "gtceu:luv_lapotronic_battery"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.5d
+			x: -3.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["45E01095749CA1A4"]
+			dependencies: [
+				"45E01095749CA1A4"
+				"795726537DF2E183"
+			]
+			disable_toast: true
 			id: "3E34ACE4E9AB1289"
 			shape: "square"
 			tasks: [{
@@ -970,11 +909,15 @@
 				item: "gtceu:zpm_lapotronic_battery"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.5d
+			x: -4.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["3E34ACE4E9AB1289"]
+			dependencies: [
+				"3E34ACE4E9AB1289"
+				"745470CF31319CAA"
+			]
+			disable_toast: true
 			id: "56EC7CA17CF63DF9"
 			shape: "square"
 			tasks: [{
@@ -982,14 +925,13 @@
 				item: "gtceu:uv_lapotronic_battery"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 4.5d
+			x: -5.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["629000221AC9FBFB"]
+			dependencies: ["53A9F3758C218CDC"]
 			icon: "gtceu:active_transformer"
 			id: "2FCCE10E5C3E858D"
-			shape: "rsquare"
 			tasks: [
 				{
 					id: "5426A745F5BAA6DA"
@@ -1002,584 +944,752 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			id: "3DB836585182F614"
+			tasks: [{
+				id: "5AFD383C58F00AFC"
+				item: "kubejs:basic_energy_core"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3DB836585182F614"]
+			id: "120C7AB980EAE90D"
+			tasks: [{
+				id: "587F1FE713F04F02"
+				item: "kubejs:regular_energy_core"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["120C7AB980EAE90D"]
+			id: "6E149057874AC992"
+			tasks: [{
+				id: "264FDE7BA1BFD770"
+				item: "kubejs:intermediate_energy_core"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6E149057874AC992"]
+			id: "5B70B50435FD572D"
+			tasks: [{
+				id: "60393B8F173667FF"
+				item: "kubejs:advanced_energy_core"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5B70B50435FD572D"]
+			id: "6F4474291CE8042C"
+			tasks: [{
+				id: "33CB0C708F1ACCC9"
+				item: "kubejs:elite_energy_core"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6F4474291CE8042C"]
+			id: "21C399BC8BE2785F"
+			tasks: [{
+				id: "6B0B411795F0AB60"
+				item: "kubejs:ultimate_energy_core"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3DB836585182F614"]
+			id: "2C72517EAF0E4F9E"
+			tasks: [{
+				id: "284C2ED5169DA23C"
+				item: "solarflux:photovoltaic_cell_1"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["120C7AB980EAE90D"]
+			id: "590C298B843E22D5"
+			tasks: [{
+				id: "7816AA5137301A94"
+				item: "solarflux:photovoltaic_cell_2"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6E149057874AC992"]
+			id: "0035C9FAB741E166"
+			tasks: [{
+				id: "08575E0E0090D598"
+				item: "solarflux:photovoltaic_cell_3"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5B70B50435FD572D"]
+			id: "620F96D00BB9BFD0"
+			tasks: [{
+				id: "34A45E0E16ED6B9D"
+				item: "solarflux:photovoltaic_cell_4"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6F4474291CE8042C"]
+			id: "18F6E5836D82D628"
+			tasks: [{
+				id: "0453AB2CCB7F5AF0"
+				item: "solarflux:photovoltaic_cell_5"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["21C399BC8BE2785F"]
+			id: "72DDEB53C9BDDBFC"
+			tasks: [{
+				id: "192DCD37C60A6BF1"
+				item: "solarflux:photovoltaic_cell_6"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2C72517EAF0E4F9E"]
+			id: "0C98CEC5242B2FB0"
+			tasks: [{
+				id: "0DDAB3E70391476D"
+				item: "solarflux:sp_1"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["590C298B843E22D5"]
+			id: "4A2B54786509F5E4"
+			tasks: [{
+				id: "0F635DF4A11646AB"
+				item: "solarflux:sp_2"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0035C9FAB741E166"]
+			id: "4DA961ED5AF34D63"
+			tasks: [{
+				id: "51EDB1B37B3DE1BE"
+				item: "solarflux:sp_3"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["620F96D00BB9BFD0"]
+			id: "7E26E2727F86A2CE"
+			tasks: [{
+				id: "5C2DFEC63170686D"
+				item: "solarflux:sp_4"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["18F6E5836D82D628"]
+			id: "470AEDAED3B9A2AA"
+			tasks: [{
+				id: "794967CF7B95255A"
+				item: "solarflux:sp_5"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["72DDEB53C9BDDBFC"]
+			id: "723224D36C88ACA9"
+			tasks: [{
+				id: "1CED4230D5648B99"
+				item: "solarflux:sp_6"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["61E90638F79C5867"]
+			id: "3D7D8957CA87BD5B"
+			shape: "square"
+			tasks: [{
+				id: "18CB8B8A02758B25"
+				item: {
+					Count: 1
+					id: "kubejs:lv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 8.0f
+							RFXfer: 8.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
 			y: 3.5d
 		}
 		{
-			dependencies: ["21EEBF103BCAAEE1"]
-			id: "7A82F1458656224F"
-			tasks: [{
-				id: "38E92C4D69DA6018"
-				item: "solarenergy:basic_energy_core"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["7A82F1458656224F"]
-			id: "00C276FD0E80C727"
+			dependencies: ["3D7D8957CA87BD5B"]
+			id: "491BF8666FA2A7EF"
 			shape: "square"
 			tasks: [{
-				id: "7413C1A15FCD477D"
-				item: "solarenergy:basic_battery_cell"
+				id: "4F7E4E5D6BBB24E9"
+				item: {
+					Count: 1
+					id: "kubejs:mv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 12.0f
+							RFXfer: 12.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.0d
+			x: 4.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["7A82F1458656224F"]
-			id: "598360A81D2472CA"
+			dependencies: ["491BF8666FA2A7EF"]
+			id: "78B1A1CA6A212782"
 			shape: "square"
 			tasks: [{
-				id: "4BC0B0E3CE94E0B1"
-				item: "solarenergy:basic_solar_cell"
+				id: "7C86DEF22DA4E81F"
+				item: {
+					Count: 1
+					id: "kubejs:hv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 16.0f
+							RFXfer: 16.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: -4.0d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["598360A81D2472CA"]
-			id: "7513532D3D07AF59"
-			shape: "rsquare"
-			tasks: [{
-				id: "38F0F902874681FF"
-				item: "solarenergy:basic_solar_generator"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["00C276FD0E80C727"]
-			id: "45AFE4A402BECD13"
-			shape: "rsquare"
-			tasks: [{
-				id: "31D54046CAA15F07"
-				item: "solarenergy:basic_battery"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["7A82F1458656224F"]
-			id: "51E8676BAA9FF976"
-			tasks: [{
-				id: "44385DC9D83B570D"
-				item: "solarenergy:regular_energy_core"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["51E8676BAA9FF976"]
-			id: "5F431BC9E4EC5A88"
-			tasks: [{
-				id: "04BD007AA3E1A90F"
-				item: "solarenergy:intermediate_energy_core"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["5F431BC9E4EC5A88"]
-			id: "617100D01DA0E085"
-			tasks: [{
-				id: "0ED0378AA21A3AAC"
-				item: "solarenergy:advanced_energy_core"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["617100D01DA0E085"]
-			id: "37F817D93B8B509C"
-			tasks: [{
-				id: "50EE28271AED5CEC"
-				item: "solarenergy:elite_energy_core"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["37F817D93B8B509C"]
-			id: "42E9A33BE1938DD6"
-			tasks: [{
-				id: "37A1EA98EFADBB1A"
-				item: "solarenergy:ultimate_energy_core"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["42E9A33BE1938DD6"]
-			id: "0CF112882B13E220"
-			tasks: [{
-				id: "5F2A7CDEF55F97ED"
-				item: "solarenergy:basic_dense_energy_core"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["0CF112882B13E220"]
-			id: "02E44487951A1802"
-			tasks: [{
-				id: "73FF66E59408663E"
-				item: "solarenergy:regular_dense_energy_core"
-				type: "item"
-			}]
-			x: -9.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["02E44487951A1802"]
-			id: "47E0E0E95A3390C1"
-			tasks: [{
-				id: "77DE03E739BF7120"
-				item: "solarenergy:intermediate_dense_energy_core"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["47E0E0E95A3390C1"]
-			id: "342F921AF9F1040E"
-			tasks: [{
-				id: "7C80785A6EBC1AAE"
-				item: "solarenergy:advanced_dense_energy_core"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["342F921AF9F1040E"]
-			id: "27119FD53FB197A8"
-			tasks: [{
-				id: "0FA73EA608D1605D"
-				item: "solarenergy:elite_dense_energy_core"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["27119FD53FB197A8"]
-			id: "24C29C2C4E2E849A"
-			tasks: [{
-				id: "08C833C104D59813"
-				item: "solarenergy:ultimate_dense_energy_core"
-				type: "item"
-			}]
-			x: -13.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["51E8676BAA9FF976"]
-			id: "593C31AD5A4545FD"
+			dependencies: ["78B1A1CA6A212782"]
+			id: "236E72B65F673929"
 			shape: "square"
 			tasks: [{
-				id: "65FB7450D8EAC700"
-				item: "solarenergy:regular_solar_cell"
+				id: "6CDD7D73AA074B52"
+				item: {
+					Count: 1
+					id: "kubejs:ev_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 20.0f
+							RFXfer: 20.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: -4.0d
+			x: 6.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["5F431BC9E4EC5A88"]
-			id: "4EC83647898ECAAD"
+			dependencies: ["236E72B65F673929"]
+			id: "5376F03AB2358ABD"
 			shape: "square"
 			tasks: [{
-				id: "27D850B58A17F254"
-				item: "solarenergy:intermediate_solar_cell"
+				id: "4B65762707C83A48"
+				item: {
+					Count: 1
+					id: "kubejs:iv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 24.0f
+							RFXfer: 24.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: -4.0d
+			x: 7.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["617100D01DA0E085"]
-			id: "04B48E9C3283D0B4"
+			dependencies: ["78D71074F1F5968D"]
+			id: "163EBD85D51E8A69"
 			shape: "square"
 			tasks: [{
-				id: "43CDEA0FC6BA866F"
-				item: "solarenergy:advanced_solar_cell"
+				id: "1D5B87DBD2522002"
+				item: {
+					Count: 1
+					id: "kubejs:lv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 10.0f
+							RFXfer: 4.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: -4.0d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["37F817D93B8B509C"]
-			id: "08DEEFC8B13C2B92"
+			dependencies: ["163EBD85D51E8A69"]
+			id: "60ABC9DCF52162F4"
 			shape: "square"
 			tasks: [{
-				id: "09AF4B0B588BF8CA"
-				item: "solarenergy:elite_solar_cell"
+				id: "1FB19D7662EA6EDA"
+				item: {
+					Count: 1
+					id: "kubejs:mv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 14.0f
+							RFXfer: 6.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: -4.0d
+			x: 4.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["42E9A33BE1938DD6"]
-			id: "6ADBA87665969F39"
+			dependencies: ["60ABC9DCF52162F4"]
+			id: "4ECCE25882A4F0CF"
 			shape: "square"
 			tasks: [{
-				id: "141C84324D590545"
-				item: "solarenergy:ultimate_solar_cell"
+				id: "4F4D904DA92EBCB8"
+				item: {
+					Count: 1
+					id: "kubejs:hv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 18.0f
+							RFXfer: 8.0f
+							Type: "RF"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: -4.0d
+			x: 5.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["7A82F1458656224F"]
-			id: "74B6241C70DF25AF"
-			shape: "circle"
+			dependencies: ["4ECCE25882A4F0CF"]
+			id: "70A1DC9EE2DE8423"
+			shape: "square"
 			tasks: [{
-				id: "2CF089799B6B5352"
-				item: "solarenergy:energy_assembler"
+				id: "141A8C5D70DBB669"
+				item: {
+					Count: 1
+					id: "kubejs:ev_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 22.0f
+							RFXfer: 10.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["70A1DC9EE2DE8423"]
+			id: "2CFE7A1607973DFA"
+			shape: "square"
+			tasks: [{
+				id: "35F847D5B7184974"
+				item: {
+					Count: 1
+					id: "kubejs:iv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 26.0f
+							RFXfer: 12.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["30280927DB01667B"]
+			id: "55B9847036689E7A"
+			shape: "square"
+			tasks: [{
+				id: "3D6F579A8941E448"
+				item: {
+					Count: 1
+					id: "kubejs:lv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 4.0f
+							RFXfer: 10.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["55B9847036689E7A"]
+			id: "029793B32E3D59C6"
+			shape: "square"
+			tasks: [{
+				id: "2E843D0C4862956E"
+				item: {
+					Count: 1
+					id: "kubejs:mv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 6.0f
+							RFXfer: 14.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["029793B32E3D59C6"]
+			id: "687FD96782794F52"
+			shape: "square"
+			tasks: [{
+				id: "32E48EE4D3D005C3"
+				item: {
+					Count: 1
+					id: "kubejs:hv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 8.0f
+							RFXfer: 18.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["687FD96782794F52"]
+			id: "540B9FC923867850"
+			shape: "square"
+			tasks: [{
+				id: "0AC9A2FC340C52AF"
+				item: {
+					Count: 1
+					id: "kubejs:ev_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 10.0f
+							RFXfer: 22.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["540B9FC923867850"]
+			id: "70336D85646A2506"
+			shape: "square"
+			tasks: [{
+				id: "3FC977BEDC5F39D8"
+				item: {
+					Count: 1
+					id: "kubejs:iv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 12.0f
+							RFXfer: 26.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1820787D031EAB15"]
+			id: "6BE70F5B5287034B"
+			tasks: [{
+				id: "26102F77CB1B39D6"
+				item: "fluxnetworks:flux_dust"
 				type: "item"
 			}]
 			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6BE70F5B5287034B"]
+			id: "69F43BE9D0935398"
+			tasks: [{
+				id: "77A1F9E62DE67358"
+				item: "fluxnetworks:flux_controller"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["69F43BE9D0935398"]
+			id: "63BC24882A9477FC"
+			tasks: [{
+				id: "660384F905E060F0"
+				item: "fluxnetworks:basic_flux_storage"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["69F43BE9D0935398"]
+			id: "0B5F19D1FB43ACF5"
+			tasks: [{
+				id: "4CEF6EE62E77E81C"
+				item: "fluxnetworks:flux_plug"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["69F43BE9D0935398"]
+			id: "5F0540C28B46F4B4"
+			tasks: [{
+				id: "11D42B54E7FC569D"
+				item: "fluxnetworks:flux_point"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["63BC24882A9477FC"]
+			id: "0E5CA4D9E70B6765"
+			tasks: [{
+				id: "793F4AC360E0901D"
+				item: "fluxnetworks:herculean_flux_storage"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0E5CA4D9E70B6765"]
+			id: "25E66BD9F536A3F2"
+			tasks: [{
+				id: "5ADC12CE566588F7"
+				item: "fluxnetworks:gargantuan_flux_storage"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1DBE1786C8F14A9E"]
+			description: ["Diatrons are the best lapidary dynamo fuel. Even the lowest tier of diatrons has energy-positive prodution!"]
+			id: "5DDDD7D45FF6A06D"
+			tasks: [
+				{
+					id: "309ACF2504979D68"
+					item: "gtceu:diatron_gem"
+					type: "item"
+				}
+				{
+					id: "3EA7E938215E73EF"
+					item: "gtceu:flawless_diatron_gem"
+					type: "item"
+				}
+				{
+					id: "511F5D3DA96605F8"
+					item: "gtceu:exquisite_diatron_gem"
+					type: "item"
+				}
+			]
+			title: "Diatrons"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["723224D36C88ACA9"]
+			description: ["The last 2 Solar Panels are merely compressed variants of the previous ones, to allow for more compact solar setups"]
+			id: "2D9EFD27A3C32062"
+			tasks: [{
+				id: "4C72E978BB38D646"
+				item: "solarflux:sp_7"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D9EFD27A3C32062"]
+			id: "1F83DC0B3C633298"
+			tasks: [{
+				id: "7222356ABCE66FCC"
+				item: "solarflux:sp_8"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"50DED4576C89E893"
+				"38C4FC58A4482F83"
+			]
+			id: "3A485956C34C8840"
+			tasks: [{
+				id: "23098FEE229E0194"
+				item: {
+					Count: 1
+					id: "kubejs:mv_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 16.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"614071EB90CB89F5"
+				"574CA65B67D79A6E"
+			]
+			id: "50DED4576C89E893"
+			tasks: [{
+				id: "0B56EB7746082D00"
+				item: {
+					Count: 1
+					id: "kubejs:lv_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 4.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"759FF87FC22D814D"
+				"3A485956C34C8840"
+			]
+			id: "3FE17E376E30FFE4"
+			tasks: [{
+				id: "5F12A9B7928071B1"
+				item: {
+					Count: 1
+					id: "kubejs:hv_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 64.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
 			y: -5.0d
 		}
 		{
-			dependencies: ["593C31AD5A4545FD"]
-			id: "7EFB4C3D5A6BD706"
-			shape: "rsquare"
+			dependencies: [
+				"3FE17E376E30FFE4"
+				"60EB030A899ADE28"
+			]
+			id: "40F4E7B58257EF09"
 			tasks: [{
-				id: "762A189BE5728D7C"
-				item: "solarenergy:regular_solar_generator"
+				id: "702CE165410C9FCC"
+				item: {
+					Count: 1
+					id: "kubejs:ev_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 256.0f
+							Type: "Upgrade"
+						}
+					}
+				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["4EC83647898ECAAD"]
-			id: "624396E026095B32"
-			shape: "rsquare"
-			tasks: [{
-				id: "650D880AAECAEDC2"
-				item: "solarenergy:intermediate_solar_generator"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["04B48E9C3283D0B4"]
-			id: "255A3B752C135767"
-			shape: "rsquare"
-			tasks: [{
-				id: "23C7BFD12D3C54BD"
-				item: "solarenergy:advanced_solar_generator"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["08DEEFC8B13C2B92"]
-			id: "1DEC16BCB4940FF9"
-			shape: "rsquare"
-			tasks: [{
-				id: "551AA73AFF11F41C"
-				item: "solarenergy:elite_solar_generator"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["6ADBA87665969F39"]
-			id: "609ABADA2F63CE6E"
-			shape: "rsquare"
-			tasks: [{
-				id: "12146DB856D6572E"
-				item: "solarenergy:ultimate_solar_generator"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["51E8676BAA9FF976"]
-			id: "00256CB23D69C250"
-			shape: "square"
-			tasks: [{
-				id: "21F34C0F618B6073"
-				item: "solarenergy:regular_battery_cell"
-				type: "item"
-			}]
-			x: -3.0d
+			x: -3.5d
 			y: -6.0d
-		}
-		{
-			dependencies: ["5F431BC9E4EC5A88"]
-			id: "30293F42A39E4303"
-			shape: "square"
-			tasks: [{
-				id: "4FCFBFDD58F604F3"
-				item: "solarenergy:intermediate_battery_cell"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["617100D01DA0E085"]
-			id: "2198087D82DA2198"
-			shape: "square"
-			tasks: [{
-				id: "3EC25F1F045F11C7"
-				item: "solarenergy:advanced_battery_cell"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["37F817D93B8B509C"]
-			id: "2D2830A5B513066A"
-			shape: "square"
-			tasks: [{
-				id: "78770BAC684B94FB"
-				item: "solarenergy:elite_battery_cell"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["42E9A33BE1938DD6"]
-			id: "0ABDE4F4089048C9"
-			shape: "square"
-			tasks: [{
-				id: "4FA1C9503688A2EC"
-				item: "solarenergy:ultimate_battery_cell"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["0CF112882B13E220"]
-			id: "5069DA38DE40529A"
-			shape: "square"
-			tasks: [{
-				id: "4E8A224E7950EF76"
-				item: "solarenergy:basic_dense_battery_cell"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["02E44487951A1802"]
-			id: "4A72976BE8828D90"
-			shape: "square"
-			tasks: [{
-				id: "317ACDF51F85B751"
-				item: "solarenergy:regular_dense_battery_cell"
-				type: "item"
-			}]
-			x: -9.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["47E0E0E95A3390C1"]
-			id: "720230310A5FF34E"
-			shape: "square"
-			tasks: [{
-				id: "5C0779DCC5CA2790"
-				item: "solarenergy:intermediate_dense_battery_cell"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["342F921AF9F1040E"]
-			id: "7DCD10BAA2D2F13C"
-			shape: "square"
-			tasks: [{
-				id: "76FB92AFD38DDE11"
-				item: "solarenergy:advanced_dense_battery_cell"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["27119FD53FB197A8"]
-			id: "1D80E85CE582F4C6"
-			shape: "square"
-			tasks: [{
-				id: "1174192FEDCA570A"
-				item: "solarenergy:elite_dense_battery_cell"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["24C29C2C4E2E849A"]
-			id: "362D6FB7FF85EB53"
-			shape: "square"
-			tasks: [{
-				id: "70B66C38AB90A070"
-				item: "solarenergy:ultimate_dense_battery_cell"
-				type: "item"
-			}]
-			x: -13.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["00256CB23D69C250"]
-			id: "1B56D0F060376C33"
-			shape: "rsquare"
-			tasks: [{
-				id: "038E867A530B407E"
-				item: "solarenergy:regular_battery"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["30293F42A39E4303"]
-			id: "6C2E007FFE7F5226"
-			shape: "rsquare"
-			tasks: [{
-				id: "2E76C4FA71AD58CF"
-				item: "solarenergy:intermediate_battery"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["2198087D82DA2198"]
-			id: "0A176185E57E2560"
-			shape: "rsquare"
-			tasks: [{
-				id: "632B7CFFCAC3CBCC"
-				item: "solarenergy:advanced_battery"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["2D2830A5B513066A"]
-			id: "6FEBA3C8C6533B33"
-			shape: "rsquare"
-			tasks: [{
-				id: "7E28E0AB74C55E8E"
-				item: "solarenergy:elite_battery"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["0ABDE4F4089048C9"]
-			id: "6BA60203B50762F2"
-			shape: "rsquare"
-			tasks: [{
-				id: "0D7775D9205FCAA6"
-				item: "solarenergy:ultimate_battery"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["5069DA38DE40529A"]
-			id: "05BD48434F81EAA5"
-			shape: "rsquare"
-			tasks: [{
-				id: "64BE4D2F6FFA1A17"
-				item: "solarenergy:basic_dense_battery"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["4A72976BE8828D90"]
-			id: "3D364508EDD5548F"
-			shape: "rsquare"
-			tasks: [{
-				id: "4EAF8DEA5407003A"
-				item: "solarenergy:regular_dense_battery"
-				type: "item"
-			}]
-			x: -9.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["720230310A5FF34E"]
-			id: "026EAA5A5F8C3CA5"
-			shape: "rsquare"
-			tasks: [{
-				id: "519214EB8F6AFDB5"
-				item: "solarenergy:intermediate_dense_battery"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["7DCD10BAA2D2F13C"]
-			id: "41B9325CBF56FEB3"
-			shape: "rsquare"
-			tasks: [{
-				id: "05C39E25ABD6679E"
-				item: "solarenergy:advanced_dense_battery"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["1D80E85CE582F4C6"]
-			id: "4C65B6D80E6D169A"
-			shape: "rsquare"
-			tasks: [{
-				id: "486B90B27578DFF4"
-				item: "solarenergy:elite_dense_battery"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["362D6FB7FF85EB53"]
-			id: "60AC67D930806570"
-			shape: "rsquare"
-			tasks: [{
-				id: "454289E29EA6DBAB"
-				item: "solarenergy:ultimate_dense_battery"
-				type: "item"
-			}]
-			x: -13.0d
-			y: -7.0d
 		}
 	]
 	title: "Power"

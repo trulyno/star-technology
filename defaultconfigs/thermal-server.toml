@@ -1,113 +1,4 @@
 
-[Dynamos]
-
-	[Dynamos.Stirling]
-		#This sets the base power generation (RF/t) for the Stirling Dynamo.
-		#Range: 10 ~ 200
-		"Base Power" = 128
-
-	[Dynamos.Compression]
-		#This sets the base power generation (RF/t) for the Compression Dynamo.
-		#Range: 10 ~ 200
-		"Base Power" = 200
-
-	[Dynamos.Magmatic]
-		#This sets the base power generation (RF/t) for the Magmatic Dynamo.
-		#Range: 10 ~ 200
-		"Base Power" = 200
-
-	[Dynamos.Numismatic]
-		#This sets the base power generation (RF/t) for the Numismatic Dynamo.
-		#Range: 10 ~ 200
-		"Base Power" = 200
-
-	[Dynamos.Lapidary]
-		#This sets the base power generation (RF/t) for the Lapidary Dynamo.
-		#Range: 10 ~ 200
-		"Base Power" = 200
-
-	[Dynamos.Disenchantment]
-		#This sets the base power generation (RF/t) for the Disenchantment Dynamo.
-		#Range: 10 ~ 200
-		"Base Power" = 200
-
-	[Dynamos.Gourmand]
-		#This sets the base power generation (RF/t) for the Gourmand Dynamo.
-		#Range: 10 ~ 200
-		"Base Power" = 200
-
-[Machines]
-
-	[Machines.Furnace]
-		#This sets the base power consumption (RF/t) for the Redstone Furnace.
-		#Range: 1 ~ 200
-		"Base Power" = 20
-
-	[Machines.Sawmill]
-		#This sets the base power consumption (RF/t) for the Sawmill.
-		#Range: 1 ~ 200
-		"Base Power" = 20
-
-	[Machines.Pulverizer]
-		#This sets the base power consumption (RF/t) for the Pulverizer.
-		#Range: 1 ~ 200
-		"Base Power" = 20
-
-	[Machines.Smelter]
-		#This sets the base power consumption (RF/t) for the Induction Smelter.
-		#Range: 1 ~ 200
-		"Base Power" = 20
-
-	[Machines.Insolator]
-		#This sets the base power consumption (RF/t) for the Phytogenic Insolator.
-		#Range: 1 ~ 200
-		"Base Power" = 20
-
-	[Machines.Centrifuge]
-		#This sets the base power consumption (RF/t) for the Centrifugal Separator.
-		#Range: 1 ~ 200
-		"Base Power" = 20
-
-	[Machines.Press]
-		#This sets the base power consumption (RF/t) for the Multiservo Press.
-		#Range: 1 ~ 200
-		"Base Power" = 20
-
-	[Machines.Crucible]
-		#This sets the base power consumption (RF/t) for the Magma Crucible.
-		#Range: 1 ~ 200
-		"Base Power" = 80
-
-	[Machines.Chiller]
-		#This sets the base power consumption (RF/t) for the Blast Chiller.
-		#Range: 1 ~ 200
-		"Base Power" = 20
-
-	[Machines.Refinery]
-		#This sets the base power consumption (RF/t) for the Fractionating Still.
-		#Range: 1 ~ 200
-		"Base Power" = 20
-
-	[Machines.Pyrolyzer]
-		#This sets the base power consumption (RF/t) for the Pyrolyzer.
-		#Range: 1 ~ 200
-		"Base Power" = 5
-
-	[Machines.Bottler]
-		#This sets the base power consumption (RF/t) for the Fluid Encapsulator.
-		#Range: 1 ~ 200
-		"Base Power" = 20
-
-	[Machines.Brewer]
-		#This sets the base power consumption (RF/t) for the Crystallizer.
-		#Range: 1 ~ 200
-		"Base Power" = 5
-
-	[Machines.Crafter]
-		#This sets the base power consumption (RF/t) for the Sequential Fabricator.
-		#Range: 1 ~ 200
-		"Base Power" = 20
-
 ["Global Options"]
 	#If TRUE, Redstone Flux will act as its own energy system and will NOT be interoperable with 'Forge Energy' - only enable this if you absolutely know what you are doing and want the Thermal Series to use a unique energy system.
 	"Standalone Redstone Flux" = false
@@ -197,6 +88,201 @@
 		"Water Source Time Constant Reduction" = 20
 		#If TRUE, the Aquatic Entangler will have particle effects when operating.
 		Particles = true
+
+[Recipes]
+
+	[Recipes.Furnace]
+		#This sets the recipe energy multiplier for the Redstone Furnace. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Sawmill]
+		#If TRUE, default Log processing recipes will be automatically created for the Sawmill. Datapack recipes will take priority over these.
+		"Default Log Recipes" = true
+		#This sets the recipe energy multiplier for the Sawmill. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Pulverizer]
+		#If TRUE, default Furnace-Based processing recipes will be automatically created for the Pulverizer. Datapack recipes will take priority over these.
+		"Default Furnace-Based Recipes" = true
+		#This sets the recipe energy multiplier for the Pulverizer. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Smelter]
+		#If TRUE, default Furnace-Based processing recipes will be automatically created for the Smelter. Datapack recipes will take priority over these.
+		"Default Furnace-Based Recipes" = true
+		#This sets the recipe energy multiplier for the Induction Smelter. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Insolator]
+		#This sets the recipe energy multiplier for the Phytogenic Insolator. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Centrifuge]
+		#This sets the recipe energy multiplier for the Centrifugal Seperator. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Press]
+		#This sets the recipe energy multiplier for the Multiservo Press. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Crucible]
+		#This sets the recipe energy multiplier for the Magma Crucible. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Chiller]
+		#This sets the recipe energy multiplier for the Blast Chiller. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Refinery]
+		#This sets the recipe energy multiplier for the Fractionating Still. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Pyrolyzer]
+		#This sets the recipe energy multiplier for the Pyrolyzer. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Bottler]
+		#If TRUE, Bucket filling recipes will be automatically created for the Fluid Encapsulator.
+		"Default Bucket Recipes" = true
+		#If TRUE, Florb filling recipes will be automatically created for the Fluid Encapsulator.
+		"Default Florb Recipes" = true
+		#If TRUE, Potion filling recipes will be automatically created for the Fluid Encapsulator.
+		"Default Potion Recipes" = true
+		#This sets the recipe energy multiplier for the Fluid Encapsulator. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Brewer]
+		#If TRUE, default Potion recipes will be automatically created for the Alchemical Imbuer.
+		"Default Potion Recipes" = true
+		#This sets the recipe energy multiplier for the Crystallizer. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Crafter]
+		#This sets the recipe energy multiplier for the Sequential Fabricator. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+[Dynamos]
+
+	[Dynamos.Stirling]
+		#This sets the base power generation (RF/t) for the Stirling Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 128
+
+	[Dynamos.Compression]
+		#This sets the base power generation (RF/t) for the Compression Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 200
+
+	[Dynamos.Magmatic]
+		#This sets the base power generation (RF/t) for the Magmatic Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 200
+
+	[Dynamos.Numismatic]
+		#This sets the base power generation (RF/t) for the Numismatic Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 200
+
+	[Dynamos.Lapidary]
+		#This sets the base power generation (RF/t) for the Lapidary Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 200
+
+	[Dynamos.Disenchantment]
+		#This sets the base power generation (RF/t) for the Disenchantment Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 200
+
+	[Dynamos.Gourmand]
+		#This sets the base power generation (RF/t) for the Gourmand Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 200
+
+[Machines]
+
+	[Machines.Furnace]
+		#This sets the base power consumption (RF/t) for the Redstone Furnace.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Sawmill]
+		#This sets the base power consumption (RF/t) for the Sawmill.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Pulverizer]
+		#This sets the base power consumption (RF/t) for the Pulverizer.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Smelter]
+		#This sets the base power consumption (RF/t) for the Induction Smelter.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Insolator]
+		#This sets the base power consumption (RF/t) for the Phytogenic Insolator.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Centrifuge]
+		#This sets the base power consumption (RF/t) for the Centrifugal Separator.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Press]
+		#This sets the base power consumption (RF/t) for the Multiservo Press.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Crucible]
+		#This sets the base power consumption (RF/t) for the Magma Crucible.
+		#Range: 1 ~ 32000
+		"Base Power" = 80
+
+	[Machines.Chiller]
+		#This sets the base power consumption (RF/t) for the Blast Chiller.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Refinery]
+		#This sets the base power consumption (RF/t) for the Fractionating Still.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Pyrolyzer]
+		#This sets the base power consumption (RF/t) for the Pyrolyzer.
+		#Range: 1 ~ 32000
+		"Base Power" = 5
+
+	[Machines.Bottler]
+		#This sets the base power consumption (RF/t) for the Fluid Encapsulator.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Brewer]
+		#This sets the base power consumption (RF/t) for the Crystallizer.
+		#Range: 1 ~ 32000
+		"Base Power" = 5
+
+	[Machines.Crafter]
+		#This sets the base power consumption (RF/t) for the Sequential Fabricator.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
 
 [Crops]
 	#If TRUE, some Thermal Cultivation seeds will be able to drop from grass. Disabling this will ignore any datapack setting using Thermal's 'seeds_from_grass' Global Loot Modifier.

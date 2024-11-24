@@ -24,7 +24,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('H', Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()).setMinGlobalLimited(39)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
-            .where('B', Predicates.blocks('thermal_extra:soul_infused_block'))
+            .where('B', Predicates.blocks('gtceu:soul_infused_block'))
             .where('O', Predicates.blocks('minecraft:oak_log'))
             .where('L', Predicates.blocks('minecraft:oak_leaves'))
             .where('D', Predicates.blocks('minecraft:dirt'))

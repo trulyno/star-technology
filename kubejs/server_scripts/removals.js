@@ -19,16 +19,19 @@ ServerEvents.recipes(event => {
         'createdieselgenerators:kelp_handle', 'createdieselgenerators:distillation_controller', 'createdieselgenerators:', 'createdieselgenerators:lighter',
         'createdieselgenerators:chemical_sprayer', 'createdieselgenerators:oil_detector', 'createdieselgenerators:pumpjack_bearing', 'createdieselgenerators:pumpjack_head',
         'createdieselgenerators:pumpjack_crank', 'createdieselgenerators:canister', 'createdieselgenerators:oil_barrel', 'createdieselgenerators:asphalt', 'createdieselgenerators:asphalt_slab', 'createdieselgenerators:asphalt_stairs',
-        'createdieselgenerators:diesel', 'createdieselgenerators:gasoline',  'ae2:charger', 'ae2:drive', 'ae2:chest'
+        'createdieselgenerators:diesel', 'createdieselgenerators:gasoline',  'ae2:charger', 'ae2:drive', 'ae2:chest', 'createdieselgenerators:pumpjack_hole', 'expatternprovider:ex_inscriber', 
+        'expatternprovider:ex_charger', 'expatternprovider:crystal_fixer', 'expatternprovider:canner', 'exmachinis:item_buffer', 'ae2:crystal_resonance_generator', 'ae2:vibration_chamber',
+        'systeams:frost_boiler', 'thermalendergy:melodium_ingot', 'thermalendergy:prismalium_ingot', 'thermalendergy:stellarium_ingot',
+        'thermalendergy:melodium_block', 'thermalendergy:prismalium_block', 'thermalendergy:stellarium_block', 'thermalendergy:melodium_nugget', 'thermalendergy:prismalium_nugget','thermalendergy:stellarium_nugget',
     ];
     const toRemoveId = ['thermal:slime_mushroom_spores', 'thermal_extra:sticky_ball_to_paper', 'farmersdelight:paper_from_tree_bark',
-        'create:pressing/sugar_cane', 'exnihilo:fluid_item/ens_slime', 'gtceu:shaped/good_circuit_board',
+        'create:pressing/sugar_cane', 'exnihilo:precipitate/ens_slime', 'gtceu:shaped/good_circuit_board',
         'thermal:rubber_from_vine', 'thermal:rubber_from_dandelion', 'thermal:smelting/cured_rubber_from_smelting',
         'thermal:rf_coil', 'create:haunting/crimson_fungus', 'create:haunting/warped_fungus', 'create:compat/ae2/milling/sky_stone_block',
         'create:compat/ae2/milling/fluix_crystal', 'create:compat/ae2/milling/ender_pearl', 'create:compat/ae2/milling/certus_quartz',
         'create:crushing/raw_platinum_ore', 'create:crushing/raw_platinum_block', 'create:crushing/raw_uranium_ore',
         'create:crushing/raw_uranium_block', 'create:crafting/appliances/slime_ball', 'minecraft:fire_charge',
-        'exnihilosequentia:fluid_item/ens_end_stone', 'exnihilosequentia:fluid_item/ens_netherrack', 'gtceu:shapeless/dust_bronze',
+        'exnihilosequentia:precipitate/ens_end_stone', 'exnihilosequentia:precipitate/ens_netherrack', 'gtceu:shapeless/dust_bronze',
         'gtceu:shapeless/dust_brass', 'create:mixing/brass_ingot', 'minecraft:ender_eye', 'create_new_age:shaped/carbon_brushes',
         'create_new_age:shaped/basic_motor_extension', 'create_new_age:advanced_motor_extension', 'create_new_age:shaped/redstone_magnet',
         'ae2:transform/damaged_budding_quartz', 'ae2:transform/chipped_budding_quartz', 'ae2:transform/flawed_budding_quartz',
@@ -56,13 +59,13 @@ ServerEvents.recipes(event => {
 
     event.remove({ input: 'minecraft:fire_charge'});
 
-    event.remove({ type: 'exnihilosequentia:sieve', input: '#forge:gravel'});
-    event.remove({ type: 'exnihilosequentia:sieve', input: 'exnihilosequentia:crushed_netherrack'});
-    event.remove({ type: 'exnihilosequentia:sieve', input: '#minecraft:sand'});
-    event.remove({ type: 'exnihilosequentia:sieve', input: 'minecraft:sand'});
-    event.remove({ type: 'exnihilosequentia:sieve', input: 'exnihilosequentia:dust'});
-    event.remove({ type: 'exnihilosequentia:sieve', input: 'minecraft:soul_sand'});
-    event.remove({ type: 'exnihilosequentia:sieve', input: 'exnihilosequentia:crushed_end_stone'});
+    event.remove({ type: 'exnihilosequentia:sifting', input: '#forge:gravel'});
+    event.remove({ type: 'exnihilosequentia:sifting', input: 'exnihilosequentia:crushed_netherrack'});
+    event.remove({ type: 'exnihilosequentia:sifting', input: '#minecraft:leaves'});
+    event.remove({ type: 'exnihilosequentia:sifting', input: 'minecraft:sand'});
+    event.remove({ type: 'exnihilosequentia:sifting', input: 'exnihilosequentia:dust'});
+    event.remove({ type: 'exnihilosequentia:sifting', input: 'minecraft:soul_sand'});
+    event.remove({ type: 'exnihilosequentia:sifting', input: 'exnihilosequentia:crushed_end_stone'});
 
     event.remove({ input: 'minecraft:fire_charge'});
     event.remove({ input: 'thermal:earth_charge'});
@@ -74,9 +77,11 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'sgjourney'});
     event.remove({ mod: 'jetboots'});
 
-    event.remove({ input: 'mmt:scrap_clump'});
+    event.remove({ output: /nuclearcraft:.*/})
+
     event.remove({ input: 'minecraft:netherite_scrap'});
     event.remove({ output: 'minecraft:netherite_scrap'});
     event.remove({ input: 'minecraft:ancient_debris'});
     event.remove({ output: 'minecraft:netherite_ingot'});
+
 });

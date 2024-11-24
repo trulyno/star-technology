@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	filename: "quality_of_life"
 	group: "28726466D987C725"
 	icon: "create:crafting_blueprint"
@@ -17,8 +17,8 @@
 				title: "Effortless Building"
 				type: "checkmark"
 			}]
-			x: -8.5d
-			y: -2.5d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			icon: "travelanchors:travel_anchor"
@@ -37,8 +37,8 @@
 				}
 			]
 			title: "Travel Anchors and Travel Staff"
-			x: -7.5d
-			y: -2.5d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			icon: "functionalstorage:oak_1"
@@ -47,7 +47,7 @@
 			tasks: [{
 				id: "7CFC899DD7721354"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "functionalstorage:drawer"
@@ -57,8 +57,8 @@
 				type: "item"
 			}]
 			title: "Functional Storage"
-			x: -6.5d
-			y: -2.5d
+			x: 5.0d
+			y: 1.0d
 		}
 		{
 			id: "2D522E868DFD339A"
@@ -69,7 +69,7 @@
 				type: "item"
 			}]
 			title: "Item Collectors"
-			x: -5.5d
+			x: 5.0d
 			y: -2.5d
 		}
 		{
@@ -78,15 +78,15 @@
 			tasks: [{
 				id: "1C116CCF53EC0709"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "simplybackpacks:commonbackpack"
 					tag: { }
 				}
 				type: "item"
 			}]
 			title: "Backpacks"
-			x: -4.5d
-			y: -2.5d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			id: "7403111E2D8E1EDB"
@@ -97,7 +97,7 @@
 				type: "item"
 			}]
 			title: "Xtones"
-			x: -7.5d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
@@ -109,7 +109,7 @@
 				title: "Architect's Palette"
 				type: "checkmark"
 			}]
-			x: -6.5d
+			x: -1.0d
 			y: -1.5d
 		}
 		{
@@ -121,8 +121,8 @@
 				title: "'Durstrial Decor"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: -1.5d
+			x: -1.0d
+			y: -2.5d
 		}
 		{
 			icon: "fantasyfurniture:nordic/bed_single"
@@ -133,8 +133,8 @@
 				title: "Fantasy Furniture"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: -1.5d
+			x: -1.0d
+			y: -0.5d
 		}
 		{
 			id: "402F4F6E8631D2CB"
@@ -144,20 +144,8 @@
 				item: "create:clipboard"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -1.5d
-		}
-		{
-			id: "633BCF86D1CD7C76"
-			shape: "rsquare"
-			tasks: [{
-				id: "19CD6F9C8139343A"
-				item: "fluxnetworks:flux_controller"
-				type: "item"
-			}]
-			title: "Flux Networks"
-			x: -7.5d
-			y: -0.5d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			id: "3232A7A69C2905D9"
@@ -168,8 +156,8 @@
 				type: "item"
 			}]
 			title: "LaserIO"
-			x: -5.5d
-			y: -0.5d
+			x: 4.0d
+			y: -1.5d
 		}
 		{
 			id: "0A8700DFAE371A36"
@@ -177,15 +165,15 @@
 			tasks: [{
 				id: "0B344D1B6347ECA7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "rechiseled:chisel"
 					tag: { }
 				}
 				type: "item"
 			}]
 			title: "Rechiseled"
-			x: -4.5d
-			y: -0.5d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			id: "6E45F559B61A2CC4"
@@ -195,8 +183,8 @@
 				item: "create:crafting_blueprint"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -0.5d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			id: "6DEDF965FFD12B7B"
@@ -204,7 +192,7 @@
 			tasks: [{
 				id: "06123F1FF50AD404"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "jetboots:jetboots"
 					tag: {
 						bml-item-xp: 0
@@ -218,8 +206,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.5d
+			x: 4.0d
+			y: 2.5d
 		}
 		{
 			id: "48D2144395562A62"
@@ -227,7 +215,7 @@
 			tasks: [{
 				id: "457960EC0164CC29"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "enderchests:ender_chest"
 					tag: {
 						code: "000"
@@ -236,8 +224,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
-			y: 0.5d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			id: "5CA8EFB9CE8473FB"
@@ -245,7 +233,7 @@
 			tasks: [{
 				id: "02D516C817862D95"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "endertanks:ender_tank"
 					tag: {
 						code: "000"
@@ -254,8 +242,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.5d
+			x: 5.0d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
@@ -273,15 +261,16 @@
 					type: "item"
 				}
 			]
-			shape: "rsquare"
+			shape: "diamond"
+			size: 3.0d
 			tasks: [{
 				id: "4F7887A26E18BC9C"
 				item: "komarumod:komaru_powder"
 				type: "item"
 			}]
 			title: "Komaru Cat"
-			x: -8.5d
-			y: 0.5d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			icon: "pipez:item_pipe"
@@ -306,12 +295,11 @@
 				{
 					id: "7DEB0F6A66FFD525"
 					item: "pipez:universal_pipe"
-					optional_task: true
 					type: "item"
 				}
 			]
-			x: -6.5d
-			y: 0.5d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			icon: "toms_storage:ts.wireless_terminal"
@@ -335,8 +323,19 @@
 				}
 			]
 			title: "Tom's Simple Storage Mod"
-			x: -8.5d
-			y: -0.5d
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			id: "6F7DBE1A83CBAE01"
+			shape: "square"
+			tasks: [{
+				id: "3597FE7ABFAC7F7F"
+				item: "modularrouters:modular_router"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
 		}
 	]
 	title: "Quality Of Life"

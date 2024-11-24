@@ -6,5 +6,6 @@
   "dataPacks": {
     "enabled": true,
     "additionalFolders": []
-  }
+  },
+  "displaySourceName": true
 }

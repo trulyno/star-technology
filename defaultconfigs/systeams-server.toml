@@ -2,10 +2,13 @@
 #---------------
 #The amount of steam 1mb of water makes.
 #Range: 0.1 ~ 10.0
-water_to_steam_ratio = 2.0
+water_to_steam_ratio = 5.0
 #The multiplier on the steam dynamo's RF/t
 #Range: 0.05 ~ 10.0
 steam_dynamo_output_multiplier = 10.0
+#If the Dynamo in dynamo augment tooltips should be replaced with Dynamo & Boiler
+#This doesn't have as much support for translations (it can still be translated with the key info.systeams.augment.type.DynamoBoiler)
+replace_dynamo_augment_tooltips = true
 
 ["Steam Values"]
 	#The number of mb of steam produced per RF of energy usually produced by the same fuel in a dynamo
@@ -26,25 +29,29 @@ steam_dynamo_output_multiplier = 10.0
 	gourmand = 0.5
 	#Range: 0.05 ~ 100.0
 	pneumatic = 0.5
+	#Range: 0.05 ~ 100.0
+	frost = 0.5
 
 ["Boiler Speed Multipliers"]
 	#The speed multiplier on each boiler's mB/t
 	#Range: 0.05 ~ 20.0
-	stirling = 2.0
+	stirling = 5.0
 	#Range: 0.05 ~ 20.0
-	magmatic = 2.0
+	magmatic = 15.0
 	#Range: 0.05 ~ 20.0
-	compression = 2.0
+	compression = 15.0
 	#Range: 0.05 ~ 20.0
-	numismatic = 2.0
+	numismatic = 15.0
 	#Range: 0.05 ~ 20.0
-	lapidary = 2.0
+	lapidary = 15.0
 	#Range: 0.05 ~ 20.0
-	disenchantment = 2.0
+	disenchantment = 15.0
 	#Range: 0.05 ~ 20.0
-	gourmand = 2.0
+	gourmand = 15.0
 	#Range: 0.05 ~ 20.0
-	pneumatic = 2.0
+	pneumatic = 15.0
+	#Range: 0.05 ~ 20.0
+	frost = 15.0
 
 ["Integration settings"]
 	#If you can shift right click a Pneumatic Boiler with an Advanced Pneumatic Tube to convert it to a Pneumatic Dynamo

@@ -1,0 +1,81 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "adventures_in_abydos"
+	group: "1E0FC4EA21F735F7"
+	icon: "minecraft:sand"
+	id: "459D60183D34C29E"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2EDE996312B1C69E"]
+			id: "493DD013C818BB7B"
+			size: 2.0d
+			subtitle: "One step closer to home..."
+			tasks: [{
+				id: "015668E3D80CF755"
+				title: "A new world!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["493DD013C818BB7B"]
+			id: "00DC693A9BC918BA"
+			tasks: [{
+				id: "27824725D17228E4"
+				item: "gtceu:gritty_akreyrium_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00DC693A9BC918BA"]
+			id: "284C9C61E04A9589"
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "587482AC00B2717E"
+					item: "gtceu:folding_akreyrium_stabiliser"
+					type: "item"
+				}
+				{
+					id: "1DB416BB0EECD277"
+					item: "gtceu:leptonic_manifold_quantiser"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4A546561D53C5B72"
+					item: "gtceu:leptonic_convergence_injector"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4367C8CEB3C0C0BA"
+					item: "gtceu:cyclonic_crystalline_sieve"
+					type: "item"
+				}
+			]
+			title: "Akreyrium Processing Machinery"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["284C9C61E04A9589"]
+			id: "5A1633D085393F39"
+			tasks: [{
+				id: "1656FEA54B607E79"
+				item: "gtceu:utopian_akreyrium_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+	]
+	title: "Adventures in Abydos"
+}

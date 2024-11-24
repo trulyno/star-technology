@@ -1,4 +1,3 @@
-
 // Ignore this
 function elementRegistry(func) { GTCEuStartupEvents.registry('gtceu:element', func); };
 function materialRegistry(func) { GTCEuStartupEvents.registry('gtceu:material', func); };
@@ -175,19 +174,42 @@ function VHA(voltage) {
 }
 
 function periodicTableElement(material, type) {
+
     let mat = GTMaterials.get(material);
     switch(type) {
         case 'ingot': mat.setProperty(PropertyKey.INGOT, new $IngotProperty()); break;
         case 'dust': mat.setProperty(PropertyKey.DUST, new $DustProperty()); break;
-        case 'fluid': case 'gas': case 'plasma': case 'molten': mat.setProperty(PropertyKey.FLUID, new $FluidProperty()); 
-                switch(type) {
-                    case 'fluid': mat.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.LIQUID, new GTFluidBuilder()); break;
-                    case 'gas': mat.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.GAS, new GTFluidBuilder()); break;
-                    case 'plasma': mat.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.PLASMA, new GTFluidBuilder()); break;
-                    case 'molten': mat.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.MOLTEN, new GTFluidBuilder()); break;
-                }
+        case 'fluid': case 'gas': case 'plasma': case 'molten': {
+            let prop = new $FluidProperty();
+            switch(type) {
+                case 'fluid': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.LIQUID, new GTFluidBuilder()); break;
+                case 'gas': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.GAS, new GTFluidBuilder()); break;
+                case 'plasma': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.PLASMA, new GTFluidBuilder()); break;
+                case 'molten': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.MOLTEN, new GTFluidBuilder()); break;
+            }
+            mat.setProperty(PropertyKey.FLUID, prop); 
             break;
+        }  
     }
+
+    // let mat = GTMaterials.get(material);
+    // switch(type) {
+    //     case 'ingot': mat.setProperty(PropertyKey.INGOT, new $IngotProperty()); break;
+    //     case 'dust': mat.setProperty(PropertyKey.DUST, new $DustProperty()); break;
+    //     case 'fluid': case 'gas': case 'plasma': case 'molten': {
+    //         let prop = new $FluidProperty();
+    //         let key;
+    //         switch(type) {
+    //             case 'fluid': key = GTFluidStorageKeys.LIQUID;
+    //             case 'gas': key = GTFluidStorageKeys.GAS;
+    //             case 'plasma': key = GTFluidStorageKeys.PLASMA;
+    //             case 'molten': key = GTFluidStorageKeys.MOLTEN;
+    //         }
+    //         prop.getStorage().enqueueRegistration(key, new GTFluidBuilder());
+    //         mat.setProperty(PropertyKey.FLUID, prop); 
+    //     }
+    //         break;
+    // }
 }
 
 function blastProperty(material, temperature, gasTier, voltage, duration) {
@@ -217,7 +239,7 @@ elementRegistry(event => {
     event.create('pure_netherite', 124, 345, -1, null, '*Nr*', false);
 
     // Classic Stargate
-    event.create('echo', -1, -1, -1, null, 'Ec', false);
+    event.create('echo_r', -1, -1, -1, null, 'Ec', false);
 
     // Abydos Materials
     event.create('zapolgium', 141, 217, -1, null, 'Zg', false);
@@ -319,7 +341,7 @@ materialRegistry(event => {
 
 
     // Gasses
-    periodicTableElement('iodine', 'gas');
+    // periodicTableElement('iodine', 'gas');
     periodicTableElement('oganesson', 'gas');
 
     // PLasmas
@@ -330,6 +352,7 @@ materialRegistry(event => {
     GTMaterials.Naquadah.addFlags(dense_plate);
     GTMaterials.NaquadahEnriched.addFlags(dense_plate);
     GTMaterials.Neutronium.addFlags(foil);
+    GTMaterials.Europium.addFlags(small_spring);
     GTMaterials.Zirconium.addFlags(fine_wire); 
     GTMaterials.RedSteel.addFlags(rod, frame);
     GTMaterials.SterlingSilver.addFlags(rod, frame);      
@@ -431,7 +454,7 @@ materialRegistry(event => {
     event.create('mystery')
         .element(GTElements.get('mystery'));
 
-    // Thermal Superconductors
+    // Thermal Superconductors (twinite and higher rotor values by @richie3366
     event.create('soul_infused')
         .ingot(1)
         .fluid()
@@ -440,7 +463,8 @@ materialRegistry(event => {
         .iconSet(SHINY)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('lv'), 4, 0, true);
+        .cableProperties(V('lv'), 4, 0, true)
+        .rotorStats(140, 130, 3, 37600);
 
     event.create('signalum')
         .ingot(1)
@@ -451,7 +475,8 @@ materialRegistry(event => {
         .blastTemp(1700, 'low', VA('mv'), 1200)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('mv'), 16, 0, true);
+        .cableProperties(V('mv'), 16, 0, true)
+        .rotorStats(130, 140, 3, 24000);
 
     event.create('lumium')
         .ingot(1)
@@ -462,7 +487,8 @@ materialRegistry(event => {
         .blastTemp(1700, 'low', VA('hv'), 1500)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('hv'), 16, 0, true);
+        .cableProperties(V('hv'), 16, 0, true)
+        .rotorStats(150, 130, 3, 24000);
 
     event.create('enderium')
         .ingot(1)
@@ -473,7 +499,8 @@ materialRegistry(event => {
         .blastTemp(3500, 'low', VA('ev'), 1500)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('ev'), 32, 0, true);
+        .cableProperties(V('ev'), 32, 0, true)
+        .rotorStats(130, 160, 3, 45600);
 
     event.create('shellite')
         .ingot(1)
@@ -484,7 +511,8 @@ materialRegistry(event => {
         .blastTemp(4400, 'mid', VA('iv'), 1800)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('iv'), 64, 0, true);
+        .cableProperties(V('iv'), 64, 0, true)
+        .rotorStats(140, 150, 3, 37600);
 
     event.create('twinite')
         .ingot(1)
@@ -495,7 +523,8 @@ materialRegistry(event => {
         .blastTemp(5300, 'mid', VA('luv'), 2100)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('luv'), 64, 0, true);
+        .cableProperties(V('luv'), 64, 0, true)
+        .rotorStats(400, 200, 3, 24000);
 
     event.create('dragonsteel')
         .ingot(1)
@@ -506,7 +535,8 @@ materialRegistry(event => {
         .blastTemp(7100, 'high', VA('zpm'), 2400)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('zpm'), 64, 0, true);
+        .cableProperties(V('zpm'), 64, 0, true)
+        .rotorStats(800, 400, 3, 32000);
 
     event.create('prismalium')
         .ingot(1)
@@ -517,7 +547,8 @@ materialRegistry(event => {
         .blastTemp(9000, 'high', VA('zpm'), 2700)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('uv'), 32, 0, true);
+        .cableProperties(V('uv'), 32, 0, true)
+        .rotorStats(1600, 800, 3, 48000);
 
     event.create('melodium')
         .ingot(1)
@@ -528,7 +559,8 @@ materialRegistry(event => {
         .blastTemp(10000, 'higher', VA('uv'), 3000)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('uv'), 256, 0, true);
+        .cableProperties(V('uv'), 256, 0, true)
+        .rotorStats(3200, 1600, 3, 64000);
 
     event.create('stellarium')
         .ingot(1)
@@ -539,7 +571,8 @@ materialRegistry(event => {
         .blastTemp(10799, 'highest', VA('uhv'), 6000)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('uhv'), 512, 0, true);
+        .cableProperties(V('uhv'), 512, 0, true)
+        .rotorStats(6400, 3200, 3, 96000);
 
     // Nuclear Reactor Materials
     event.create('austenitic_stainless_steel_304')
@@ -601,10 +634,10 @@ materialRegistry(event => {
         .components('1x chlorine', '3x fluorine')
         .color(0xb3ff99);
 
-    event.create('dichloroethane')
-        .fluid()
-        .components('2x carbon', '4x hydrogen', '2x chlorine')
-        .color(0x99ccff);
+    // event.create('dichloroethane')
+    //     .fluid()
+    //     .components('2x carbon', '4x hydrogen', '2x chlorine')
+    //     .color(0x99ccff);
 
     event.create('tetrachloroethylene')
         .fluid()
@@ -629,10 +662,11 @@ materialRegistry(event => {
 
     event.create('weapon_grade_naquadah')
         .ingot()
+        .fluid()
         .components('7x naquadria', '2x pure_netherite', '5x neutronium', '16x fluorine')
         .color(0xccff33)
         .iconSet(DULL)
-        .blastTemp(10500, 'low', VA('uv'), 6000)
+        .blastTemp(10500, 'low', VA('zpm'), 6000)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame);
 
@@ -683,10 +717,10 @@ materialRegistry(event => {
         .components('2x carbon', '4x hydrogen', '1x oxygen')
         .color(0xd9d9d9);
 
-    event.create('potassium_hydroxide')
-        .dust()
-        .components('1x potassium', '1x oxygen', '1x hydrogen')
-        .color(0xffcc99);
+    // event.create('potassium_hydroxide')
+    //     .dust()
+    //     .components('1x potassium', '1x oxygen', '1x hydrogen')
+    //     .color(0xffcc99);
 
     event.create('lithium_perchlorate')
         .dust()
@@ -857,20 +891,20 @@ materialRegistry(event => {
         .flags(no_decomp);
 
     // Echo/Void Line
-    event.create('echo')
-        .element(GTElements.get('echo'))
+    event.create('echo_r')
+        .element(GTElements.get('echo_r'))
         .fluid()
         .color(0x003333)
         .iconSet(DULL);
 
     event.create('raw_void')
-        .components('1x echo', '1x neutronium')
+        .components('1x echo_r', '1x neutronium')
         .ingot(1)
         .color(0x006666)
         .iconSet(DULL);
 
     event.create('void')
-        .components('1x echo', '1x neutronium')
+        .components('1x echo_r', '1x neutronium')
         .ingot(1)
         .blastTemp(10799, 'highest', VA('uev'), 8000)
         .color(0x001a1a)
@@ -1410,6 +1444,7 @@ materialRegistry(event => {
         .flags(no_decomp);
     
     event.create('polyether_ether_ketone')
+        .fluid()
         .polymer()
         .components('19x carbon','12x hydrogen','3x oxygen') 
         .color(0xccbba7)
@@ -1497,4 +1532,46 @@ materialRegistry(event => {
      .flags(plates, frame, rod)
      .iconSet(METALLIC)
      .blastTemp(2200, 'low', VA('mv'), 2000);
+
+
+    // Akreyium Line
+    
+    event.create('utopian_akreyrium')
+        .fluid()
+        .element(GTElements.get('akreyrium'))
+        .color(0xFFFFFF);
+    
+    event.create('dense_electron_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get('akreyrium'))
+
+    event.create('dense_muon_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get('akreyrium'))
+
+    event.create('dense_tau_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get('akreyrium'))
+
+    event.create('sparse_electron_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get('akreyrium'))
+
+    event.create('sparse_muon_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get('akreyrium'))
+
+    event.create('sparse_tau_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get('akreyrium'))
+
+    event.create('lepton_sparse_akreyrium')
+        .fluid()
+        .element(GTElements.get('akreyrium'))
+        .color(0x6E6E87);
+
+    event.create('gritty_akreyrium')
+        .fluid()
+        .element(GTElements.get('akreyrium'))
+        .color(0x464655);
 });

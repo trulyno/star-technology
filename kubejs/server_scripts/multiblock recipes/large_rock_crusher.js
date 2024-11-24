@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         .EUt(240);
 
     event.recipes.gtceu.large_rock_crusher('blackstone')
-        .notConsumable('minecraft:basalt')
+        .notConsumable('minecraft:blackstone')
         .notConsumableFluid('minecraft:water 1000')
         .notConsumableFluid('minecraft:lava 1000')
         .itemOutputs('minecraft:blackstone')

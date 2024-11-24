@@ -1,0 +1,1808 @@
+{
+	autofocus_id: "12CC0981524E1563"
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "line_of_progression"
+	group: ""
+	icon: "gtceu:assembly_line"
+	id: "330C551154E3E367"
+	order_index: 3
+	quest_links: [
+		{
+			id: "0BB74BB2179D1EE3"
+			linked_quest: "20A12F3B992762F0"
+			x: -9.5d
+			y: -29.0d
+		}
+		{
+			id: "6DC46A9130054F17"
+			linked_quest: "3B81632EF4586280"
+			x: -9.5d
+			y: -30.5d
+		}
+		{
+			id: "776BEF122AA67CE7"
+			linked_quest: "7836F17B34B47B16"
+			x: -9.5d
+			y: -27.5d
+		}
+		{
+			id: "5D04E91BABB908BD"
+			linked_quest: "70875F86587758D7"
+			x: -8.0d
+			y: -29.0d
+		}
+		{
+			id: "20A329C5E31804FC"
+			linked_quest: "23D3BED4F1968AD6"
+			x: -8.0d
+			y: -27.5d
+		}
+		{
+			id: "0D4FCC2A57D9CC38"
+			linked_quest: "73931EAA3EC5C9A9"
+			x: -8.0d
+			y: -26.0d
+		}
+		{
+			id: "3704FB1B6F971E41"
+			linked_quest: "088FE0CF9D07F9C6"
+			x: -6.5d
+			y: -29.0d
+		}
+		{
+			id: "25D74DD92BBCFCC3"
+			linked_quest: "363F5B598683A074"
+			x: -6.5d
+			y: -27.5d
+		}
+		{
+			id: "198F1866583016C8"
+			linked_quest: "7399429099302C6C"
+			x: -6.5d
+			y: -26.0d
+		}
+		{
+			id: "2DFE5AD66EBD118F"
+			linked_quest: "52FE319F5E176C37"
+			x: -6.5d
+			y: -24.5d
+		}
+		{
+			id: "1E25708ED026D474"
+			linked_quest: "62BA581B2918BB7B"
+			x: -6.5d
+			y: -23.0d
+		}
+		{
+			id: "1A81FEB878D2E821"
+			linked_quest: "0514DE717001A062"
+			x: -5.0d
+			y: -26.0d
+		}
+		{
+			id: "3959159D9A23E4D9"
+			linked_quest: "497833345EB46A47"
+			x: -5.0d
+			y: -24.5d
+		}
+		{
+			id: "11D511076D303258"
+			linked_quest: "0C0C0FBDE1760110"
+			x: -5.0d
+			y: -23.0d
+		}
+		{
+			id: "52F4E84F3BFC7D8C"
+			linked_quest: "53A9F3758C218CDC"
+			x: -5.0d
+			y: -21.5d
+		}
+		{
+			id: "67BF77667CC175ED"
+			linked_quest: "06780B462515CAE2"
+			x: -3.5d
+			y: -24.5d
+		}
+		{
+			id: "6A645D3E42F96459"
+			linked_quest: "4E77319DB3B30062"
+			x: -3.5d
+			y: -23.0d
+		}
+		{
+			id: "6A0A1A59BBA636FB"
+			linked_quest: "421DF7880AD00F58"
+			x: -3.5d
+			y: -21.5d
+		}
+		{
+			id: "44C05669AD959C08"
+			linked_quest: "79428BAEAA7856E1"
+			x: -3.5d
+			y: -20.0d
+		}
+		{
+			id: "3296AB708049D9CD"
+			linked_quest: "70C2BB4FAA2FB1F2"
+			x: -2.0d
+			y: -23.0d
+		}
+		{
+			id: "29E17D70643091AF"
+			linked_quest: "744CAEF994308983"
+			x: -2.0d
+			y: -21.5d
+		}
+		{
+			id: "68F275E2F86A90D9"
+			linked_quest: "30A1077A14212FE2"
+			x: -2.0d
+			y: -20.0d
+		}
+		{
+			id: "46DF42F4B5D32E52"
+			linked_quest: "3FC351F05F2AC743"
+			x: -2.0d
+			y: -18.5d
+		}
+		{
+			id: "2962CE7698F4AA72"
+			linked_quest: "0962C36622E385B8"
+			x: -0.5d
+			y: -21.5d
+		}
+		{
+			id: "435BB61E021C8D1B"
+			linked_quest: "1F79E45EF7810DFF"
+			x: -0.5d
+			y: -20.0d
+		}
+		{
+			id: "58580939166771A6"
+			linked_quest: "4C5DBB94345FF33B"
+			x: -0.5d
+			y: -18.5d
+		}
+		{
+			id: "0CF0B36FA1A0ABE2"
+			linked_quest: "707C2E9BA62A60C5"
+			x: -0.5d
+			y: -17.0d
+		}
+		{
+			icon: "exnihilosequentia:string_mesh"
+			id: "206F61D1A0C2C729"
+			linked_quest: "26D3E2C0599B43B2"
+			title: "String Mesh"
+			x: -0.5d
+			y: -31.0d
+		}
+		{
+			id: "53126C7D84181F06"
+			linked_quest: "1F5CCE8CFD02903A"
+			x: -0.5d
+			y: -29.5d
+		}
+		{
+			id: "5F265E199CE1311E"
+			linked_quest: "7014892C27EC22B7"
+			x: -0.5d
+			y: -26.5d
+		}
+		{
+			id: "7D9D876BC5534377"
+			linked_quest: "6D35986F79B17912"
+			x: -0.5d
+			y: -28.0d
+		}
+		{
+			id: "70A68B5A1F1C48E3"
+			linked_quest: "6EF7F39B52B77535"
+			x: -0.5d
+			y: -25.0d
+		}
+		{
+			id: "22440663DF37EEDB"
+			linked_quest: "3D3E637BCB06115F"
+			x: -0.5d
+			y: -23.5d
+		}
+		{
+			id: "2944146ABA34CB5B"
+			linked_quest: "5C15427D1679D4C3"
+			x: -7.5d
+			y: -31.0d
+		}
+		{
+			id: "6D220F5D5B6F0922"
+			linked_quest: "6EB85BBD539AEB57"
+			x: -4.0d
+			y: -31.0d
+		}
+		{
+			id: "2B30EE9B2767B72D"
+			linked_quest: "5C302CB1A1068EE1"
+			x: -4.0d
+			y: -29.5d
+		}
+		{
+			id: "607658C8752D8C32"
+			linked_quest: "0F7A1EA1AB52F795"
+			x: -4.0d
+			y: -28.0d
+		}
+		{
+			id: "0D386219B03B2DDA"
+			linked_quest: "390CB178FC2D2CCC"
+			x: -18.0d
+			y: -27.5d
+		}
+		{
+			id: "0AA45EE8F8DDAA79"
+			linked_quest: "397C622B06B1165A"
+			x: -19.5d
+			y: -27.5d
+		}
+		{
+			id: "29B89BAD4869C0B7"
+			linked_quest: "0E88CB5E68212006"
+			x: -19.5d
+			y: -26.0d
+		}
+		{
+			id: "547840F25F7878E6"
+			linked_quest: "0AB3A8C14C3A0512"
+			x: -16.5d
+			y: -26.0d
+		}
+		{
+			id: "54316E61B087A5B2"
+			linked_quest: "0FBB34B21DA41C5D"
+			x: -14.5d
+			y: -24.5d
+		}
+		{
+			id: "4DEE790493AEC480"
+			linked_quest: "0094C2E72105E8CA"
+			x: -13.0d
+			y: -27.5d
+		}
+		{
+			id: "09F13FAB5E31E5A6"
+			linked_quest: "22F56435C5449158"
+			x: -14.5d
+			y: -26.0d
+		}
+		{
+			id: "1D9B1F10D853D607"
+			linked_quest: "14417CCE1E25C9C6"
+			x: -18.0d
+			y: -22.5d
+		}
+		{
+			id: "5906FFC09AD776DA"
+			linked_quest: "27E9698231A04022"
+			x: -19.5d
+			y: -22.5d
+		}
+		{
+			id: "08B738B0A46F9692"
+			linked_quest: "3477B2FEEF0DF44C"
+			x: -16.5d
+			y: -22.5d
+		}
+		{
+			id: "29C41C8067A33A92"
+			linked_quest: "22BC7BDE5E132A30"
+			x: -19.5d
+			y: -21.0d
+		}
+		{
+			id: "5D754D0F151C19E0"
+			linked_quest: "6AC8588F6172617D"
+			x: -18.0d
+			y: -19.5d
+		}
+		{
+			id: "0E8B8DC038F36861"
+			linked_quest: "63A83F8EC256BE94"
+			x: -16.5d
+			y: -19.5d
+		}
+		{
+			id: "3677C604206C9227"
+			linked_quest: "71089CC35D7621E2"
+			x: -15.0d
+			y: -18.0d
+		}
+		{
+			id: "2CC795FE94B7576A"
+			linked_quest: "27BB890712D84505"
+			x: -16.5d
+			y: -18.0d
+		}
+		{
+			id: "1DD2FE27D7803ABB"
+			linked_quest: "1820787D031EAB15"
+			x: -8.5d
+			y: -19.5d
+		}
+		{
+			id: "231466CD54505A13"
+			linked_quest: "67ABB3BF6D0C183B"
+			x: -19.5d
+			y: -29.5d
+		}
+		{
+			id: "2A2B52C80535703B"
+			linked_quest: "1EE4E8301E0FD1C7"
+			x: -18.0d
+			y: -31.0d
+		}
+		{
+			id: "3B7B8853F2299D4D"
+			linked_quest: "60ECE277341A9408"
+			x: -16.0d
+			y: -29.5d
+		}
+		{
+			id: "336508F193ECD87F"
+			linked_quest: "59711F987DE95924"
+			x: -14.5d
+			y: -31.0d
+		}
+		{
+			id: "3C58025F18501529"
+			linked_quest: "027C5CE3CFCB5649"
+			x: -14.5d
+			y: -29.5d
+		}
+		{
+			id: "257E0109D4E6C15D"
+			linked_quest: "6D169C5E35C9EF6C"
+			x: -16.0d
+			y: -32.5d
+		}
+		{
+			id: "6C146A3CFDB256A1"
+			linked_quest: "1004D6D7636E0321"
+			x: -14.5d
+			y: -32.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["26D3E2C0599B43B2"]
+			icon: "minecraft:gravel"
+			id: "7EEA6D61D8920798"
+			tasks: [
+				{
+					id: "720D0AB3B89AB72C"
+					item: "gtceu:crushed_magnetite_ore"
+					type: "item"
+				}
+				{
+					id: "2877586403823DAC"
+					item: "gtceu:crushed_sphalerite_ore"
+					type: "item"
+				}
+				{
+					id: "0D50289FB5CA3CC4"
+					item: "gtceu:crushed_tin_ore"
+					type: "item"
+				}
+				{
+					id: "00C023FCE5A1162C"
+					item: "gtceu:crushed_copper_ore"
+					type: "item"
+				}
+				{
+					id: "4F48CC8FEAFDBA90"
+					item: "gtceu:crushed_iron_ore"
+					type: "item"
+				}
+			]
+			title: "Gravel"
+			x: 1.0d
+			y: -31.0d
+		}
+		{
+			dependencies: ["26D3E2C0599B43B2"]
+			icon: "minecraft:sand"
+			id: "5F073604E08D305C"
+			tasks: [
+				{
+					id: "4BB67ACDCBF61266"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "77739D4705D259B1"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "5CC2B720AA19FE36"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					id: "459BE4DC9D394ED7"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "10081AA592B01C3C"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+			]
+			title: "Sand"
+			x: 2.5d
+			y: -31.0d
+		}
+		{
+			dependencies: ["26D3E2C0599B43B2"]
+			icon: "exnihilosequentia:dust"
+			id: "0A428EB5B9A7FDB2"
+			tasks: [
+				{
+					id: "1D337699B2A33BFF"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "330E8DE6D45D1E90"
+					item: "gtceu:tiny_sulfur_dust"
+					type: "item"
+				}
+				{
+					id: "11C3C9BDF56F7399"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+				{
+					id: "72D1B62D1062DF5C"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			title: "Dust"
+			x: 4.0d
+			y: -31.0d
+		}
+		{
+			dependencies: ["26D3E2C0599B43B2"]
+			icon: "exnihilosequentia:crushed_blackstone"
+			id: "4B254D95C1CE1400"
+			tasks: [
+				{
+					id: "5FECD4B14E82BC27"
+					item: "gtceu:crushed_stibnite_ore"
+					type: "item"
+				}
+				{
+					id: "7BC52C158538357F"
+					item: "gtceu:crushed_galena_ore"
+					type: "item"
+				}
+			]
+			title: "Blackstone"
+			x: 5.5d
+			y: -31.0d
+		}
+		{
+			dependencies: ["1F5CCE8CFD02903A"]
+			icon: "minecraft:gravel"
+			id: "19AC94D9874A0BE1"
+			tasks: [
+				{
+					id: "43C293A5D5B2D36A"
+					item: "gtceu:crushed_gold_ore"
+					type: "item"
+				}
+				{
+					id: "47C2F0EEAA078B81"
+					item: "gtceu:crushed_silver_ore"
+					type: "item"
+				}
+				{
+					id: "5C157ECFBF767D7A"
+					item: "gtceu:crushed_chalcopyrite_ore"
+					type: "item"
+				}
+				{
+					id: "5C290787E812787A"
+					item: "gtceu:crushed_cassiterite_ore"
+					type: "item"
+				}
+			]
+			title: "Gravel"
+			x: 1.0d
+			y: -29.5d
+		}
+		{
+			dependencies: ["1F5CCE8CFD02903A"]
+			icon: "minecraft:sand"
+			id: "110682F7AF18F703"
+			tasks: [
+				{
+					id: "3703E49776144988"
+					item: "gtceu:crushed_emerald_ore"
+					type: "item"
+				}
+				{
+					id: "3DF498BCC822986A"
+					item: "gtceu:crushed_diamond_ore"
+					type: "item"
+				}
+				{
+					id: "193382B823E52339"
+					item: "gtceu:crushed_salt_ore"
+					type: "item"
+				}
+				{
+					id: "13C8866B753217BE"
+					item: "gtceu:crushed_ruby_ore"
+					type: "item"
+				}
+				{
+					id: "4EFE4A11045907BC"
+					item: "gtceu:crushed_realgar_ore"
+					type: "item"
+				}
+				{
+					id: "6AB8247B4795D87B"
+					item: "gtceu:crushed_green_sapphire_ore"
+					type: "item"
+				}
+				{
+					id: "35D25A8FFD6C2ED2"
+					item: "gtceu:crushed_sapphire_ore"
+					type: "item"
+				}
+				{
+					id: "5AA2E71CA6C2993A"
+					item: "gtceu:crushed_certus_quartz_ore"
+					type: "item"
+				}
+				{
+					id: "38B092F98DE7745C"
+					item: "gtceu:crushed_saltpeter_ore"
+					type: "item"
+				}
+				{
+					id: "07ED4F6BA0D4ED1F"
+					item: "gtceu:crushed_quartzite_ore"
+					type: "item"
+				}
+				{
+					id: "36063F199FB71C09"
+					item: "gtceu:crushed_rock_salt_ore"
+					type: "item"
+				}
+				{
+					id: "648AD525521DA1DC"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			title: "Sand"
+			x: 2.5d
+			y: -29.5d
+		}
+		{
+			dependencies: ["1F5CCE8CFD02903A"]
+			icon: "exnihilosequentia:dust"
+			id: "434F70C2D8F6C8AE"
+			tasks: [{
+				id: "4E39610E6E361B18"
+				item: "ae2:sky_dust"
+				type: "item"
+			}]
+			title: "Dust"
+			x: 4.0d
+			y: -29.5d
+		}
+		{
+			dependencies: ["1F5CCE8CFD02903A"]
+			icon: "exnihilosequentia:crushed_blackstone"
+			id: "3243C24ECB7A8F7C"
+			tasks: [
+				{
+					id: "211CF4F710F501FB"
+					item: "gtceu:crushed_pentlandite_ore"
+					type: "item"
+				}
+				{
+					id: "448F2DCA01FB681A"
+					item: "gtceu:crushed_bornite_ore"
+					type: "item"
+				}
+			]
+			title: "Blackstone"
+			x: 5.5d
+			y: -29.5d
+		}
+		{
+			dependencies: ["6D35986F79B17912"]
+			icon: "minecraft:gravel"
+			id: "646B90B1C94B2A81"
+			tasks: [
+				{
+					id: "03FDC9A68101A88D"
+					item: "gtceu:crushed_pyrochlore_ore"
+					type: "item"
+				}
+				{
+					id: "50C600D4F9FFA249"
+					item: "gtceu:crushed_vanadium_magnetite_ore"
+					type: "item"
+				}
+				{
+					id: "1DAD0D52D21AC4F5"
+					item: "gtceu:crushed_lepidolite_ore"
+					type: "item"
+				}
+				{
+					id: "1291111C0FB6750E"
+					item: "gtceu:crushed_pyrolusite_ore"
+					type: "item"
+				}
+			]
+			title: "Gravel"
+			x: 1.0d
+			y: -28.0d
+		}
+		{
+			dependencies: ["6D35986F79B17912"]
+			icon: "minecraft:sand"
+			id: "52C43CAE5CFEBCDE"
+			tasks: [
+				{
+					id: "6E0AA292D1BA7A15"
+					item: "gtceu:crushed_yellow_garnet_ore"
+					type: "item"
+				}
+				{
+					id: "4DE90BE38EC64B87"
+					item: "gtceu:crushed_red_garnet_ore"
+					type: "item"
+				}
+				{
+					id: "197721228EB739CD"
+					item: "gtceu:crushed_garnet_sand_ore"
+					type: "item"
+				}
+				{
+					id: "6D7A6B7672E91B8A"
+					item: "gtceu:crushed_blue_topaz_ore"
+					type: "item"
+				}
+				{
+					id: "0B89F4E3341A365D"
+					item: "gtceu:crushed_topaz_ore"
+					type: "item"
+				}
+				{
+					id: "66C243C95FBD2C8D"
+					item: "gtceu:crushed_monazite_ore"
+					type: "item"
+				}
+				{
+					id: "031B577560457F5B"
+					item: "gtceu:crushed_apatite_ore"
+					type: "item"
+				}
+			]
+			title: "Sand"
+			x: 2.5d
+			y: -28.0d
+		}
+		{
+			dependencies: ["6D35986F79B17912"]
+			icon: "exnihilosequentia:crushed_blackstone"
+			id: "58D75D2CC4D64870"
+			tasks: [
+				{
+					id: "373042D4F333C348"
+					item: "gtceu:crushed_cobaltite_ore"
+					type: "item"
+				}
+				{
+					id: "6F549E6FA9730849"
+					item: "gtceu:crushed_beryllium_ore"
+					type: "item"
+				}
+				{
+					id: "3970120451CA1B68"
+					item: "gtceu:crushed_chromite_ore"
+					type: "item"
+				}
+			]
+			title: "Blackstone"
+			x: 5.5d
+			y: -28.0d
+		}
+		{
+			dependencies: ["7014892C27EC22B7"]
+			icon: "minecraft:gravel"
+			id: "31AED064564BFAD6"
+			tasks: [
+				{
+					id: "09CDC8AEA8237A55"
+					item: "gtceu:crushed_pollucite_ore"
+					type: "item"
+				}
+				{
+					id: "1129288D1A9B062B"
+					item: "gtceu:crushed_tantalite_ore"
+					type: "item"
+				}
+				{
+					id: "2136AD2A2F8E0C3B"
+					item: "gtceu:crushed_bauxite_ore"
+					type: "item"
+				}
+			]
+			title: "Gravel"
+			x: 1.0d
+			y: -26.5d
+		}
+		{
+			dependencies: ["7014892C27EC22B7"]
+			icon: "exnihilosequentia:crushed_blackstone"
+			id: "6B695D3B2E2B1D73"
+			tasks: [
+				{
+					id: "5F9183633677BB7A"
+					item: "gtceu:crushed_pitchblende_ore"
+					type: "item"
+				}
+				{
+					id: "2F8D0756D400B501"
+					item: "gtceu:crushed_molybdenite_ore"
+					type: "item"
+				}
+				{
+					id: "1BAC93DE5CA888D4"
+					item: "gtceu:crushed_ilmenite_ore"
+					type: "item"
+				}
+			]
+			title: "Blackstone"
+			x: 5.5d
+			y: -26.5d
+		}
+		{
+			dependencies: ["6EF7F39B52B77535"]
+			hide_details_until_startable: false
+			icon: "minecraft:gravel"
+			id: "39942D0C47ED9CB2"
+			tasks: [
+				{
+					id: "286C34257A953D7A"
+					item: "gtceu:crushed_scheelite_ore"
+					type: "item"
+				}
+				{
+					id: "764243B6D13B903C"
+					item: "gtceu:crushed_tungstate_ore"
+					type: "item"
+				}
+			]
+			title: "Gravel"
+			x: 1.0d
+			y: -25.0d
+		}
+		{
+			dependencies: ["6EF7F39B52B77535"]
+			icon: "exnihilosequentia:crushed_blackstone"
+			id: "417A0E744EC808D5"
+			tasks: [
+				{
+					id: "6FD885B4D04BAA71"
+					item: "gtceu:crushed_barite_ore"
+					type: "item"
+				}
+				{
+					id: "3BD69377385CF87D"
+					item: "gtceu:crushed_cooperite_ore"
+					type: "item"
+				}
+				{
+					id: "193FF5FDC8C67509"
+					item: "gtceu:crushed_bastnasite_ore"
+					type: "item"
+				}
+			]
+			title: "Blackstone"
+			x: 5.5d
+			y: -25.0d
+		}
+		{
+			dependencies: ["3D3E637BCB06115F"]
+			icon: "exnihilosequentia:dust"
+			id: "5E8847ECC9663B38"
+			tasks: [{
+				id: "2E72EEED6536CAC7"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			title: "Dust"
+			x: 4.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["3D3E637BCB06115F"]
+			icon: "exnihilosequentia:crushed_blackstone"
+			id: "285824011BF65A01"
+			tasks: [{
+				id: "270E8419A06F1172"
+				item: "gtceu:crushed_naquadah_ore"
+				type: "item"
+			}]
+			title: "Blackstone"
+			x: 5.5d
+			y: -23.5d
+		}
+		{
+			dependencies: ["22BC7BDE5E132A30"]
+			id: "6D775A2A1E350BC6"
+			tasks: [{
+				id: "75026AAB9D9D3C23"
+				item: "gtceu:hv_fluid_drilling_rig"
+				type: "item"
+			}]
+			x: -19.5d
+			y: -19.5d
+		}
+		{
+			dependencies: ["6D775A2A1E350BC6"]
+			id: "0ED5E8AC0475F563"
+			tasks: [{
+				id: "366F75A06808A17C"
+				item: "gtceu:ev_fluid_drilling_rig"
+				type: "item"
+			}]
+			x: -19.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["170C262792DA7123"]
+			disable_toast: true
+			id: "0183D39774E45B1E"
+			tasks: [{
+				id: "0F7A2FB63078891D"
+				item: "gtceu:distillation_tower"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -26.0d
+		}
+		{
+			dependencies: [
+				"3883C93F8D66832B"
+				"314B6ABE72E4A438"
+			]
+			disable_toast: true
+			id: "5B91E94506FB37D6"
+			tasks: [{
+				id: "5E8B1849D3F9B987"
+				item: "gtceu:uv_fusion_reactor"
+				type: "item"
+			}]
+			x: -19.5d
+			y: -32.5d
+		}
+		{
+			dependencies: ["1646D6D439B260D3"]
+			disable_toast: true
+			id: "65DD77206CD0F62E"
+			tasks: [{
+				id: "4DC2770EA0E4DC78"
+				item: "gtceu:vacuum_freezer"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -24.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "5EB4F32BB2D7C767"
+			tasks: [{
+				id: "7D9BC867354BAC2A"
+				item: "gtceu:large_wiremill"
+				type: "item"
+			}]
+			x: -19.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "2D06343DA0AE385D"
+			tasks: [{
+				id: "6EFE5792EC6DDABE"
+				item: "gtceu:large_solidifier"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "0AE5A4CEBEC411DE"
+			tasks: [{
+				id: "7833B837A57DB5D1"
+				item: "gtceu:large_extruder"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "67BF548E2BB3F95C"
+			tasks: [{
+				id: "7CA3310358A96DBF"
+				item: "gtceu:large_electrolyzer"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "66BF04FC2C167FDF"
+			tasks: [{
+				id: "0B2E22EA7BA14A2F"
+				item: "gtceu:large_mixer"
+				type: "item"
+			}]
+			x: -13.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "4DE92CAED3589D92"
+			tasks: [{
+				id: "7AE2999A80678AFB"
+				item: "gtceu:large_maceration_tower"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "1B56E40CF014C828"
+			tasks: [{
+				id: "32B252742D150EC4"
+				item: "gtceu:large_chemical_bath"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "321B68DE96AE643F"
+			tasks: [{
+				id: "5A8F130133D92568"
+				item: "gtceu:large_centrifuge"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "2D04CCACEC66B665"
+			tasks: [{
+				id: "2DB90F89745876FE"
+				item: "gtceu:large_electromagnet"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "49A3D4B23D3A7D13"
+			tasks: [{
+				id: "72498B3E8CEF5049"
+				item: "gtceu:large_packer"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "5A2E03371878B71F"
+			tasks: [{
+				id: "5EA488BA4349E10C"
+				item: "gtceu:large_assembler"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "66D1847B0B6339F0"
+			tasks: [{
+				id: "6C68E24A4CDB8EE3"
+				item: "gtceu:large_circuit_assembler"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "530FCE6EB8ECB940"
+			tasks: [{
+				id: "2B3DAA190E208EBC"
+				item: "gtceu:large_arc_smelter"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "55BA27C50ABD7DFE"
+			tasks: [{
+				id: "395626DCA69792CF"
+				item: "gtceu:large_engraving_laser"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "43ACC82B51542663"
+			tasks: [{
+				id: "2C5FADA2D14435B9"
+				item: "gtceu:large_sifting_funnel"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "75B87BC3FBF43FB7"
+			tasks: [{
+				id: "2CFE4B9783BAE927"
+				item: "gtceu:large_autoclave"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "704A946AB6DE9D0C"
+			tasks: [{
+				id: "4C769A23C78FE4C8"
+				item: "gtceu:large_material_press"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "0298631C6013DED8"
+			tasks: [{
+				id: "6904228C948D82E3"
+				item: "gtceu:large_brewer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "2C419C6E6E00A03C"
+			tasks: [{
+				id: "1BDCE2E527C0CE37"
+				item: "gtceu:large_cutter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "0F33FE3187239AC2"
+			tasks: [{
+				id: "20A0796B548090BA"
+				item: "gtceu:large_distillery"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -17.0d
+		}
+		{
+			dependencies: ["664E782C6A24D9F1"]
+			id: "1C9F042709DE5E65"
+			tasks: [{
+				id: "341D28CC00EE1210"
+				item: "gtceu:large_extractor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["0E88CB5E68212006"]
+			id: "0DA1386616FF7222"
+			tasks: [{
+				id: "56B4BFF756DD4479"
+				item: "gtceu:ore_processing_plant"
+				type: "item"
+			}]
+			x: -19.5d
+			y: -24.5d
+		}
+		{
+			id: "58AADBEEA6CD4CA6"
+			tasks: [{
+				id: "2B4C68687B69E3D6"
+				item: "gtceu:kinetic_sieve"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -22.5d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "2A4ADA60ED0822C7"
+			tasks: [{
+				id: "3267D621EBB9BC1D"
+				item: "gtceu:t_large_bender"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "1AB8E29FA21BD408"
+			tasks: [{
+				id: "669730006162BE04"
+				item: "gtceu:t_large_centrifuge"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -19.5d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "55CAE95D3AB63248"
+			tasks: [{
+				id: "494534B7C29BBBDC"
+				item: "gtceu:t_large_electrolyzer"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "4C27B297A4B5F45F"
+			tasks: [{
+				id: "1C55F90B23EB1250"
+				item: "gtceu:t_large_extruder"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -21.0d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "009654AEFA064052"
+			tasks: [{
+				id: "5059B4B176EC8FAB"
+				item: "gtceu:t_large_forming_press"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -21.0d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "43135C5E0B0271F1"
+			tasks: [{
+				id: "7AE5FF18C606B6E6"
+				item: "gtceu:t_large_lathe"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -21.0d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "21A87168234EF982"
+			tasks: [{
+				id: "0014207C7D41916F"
+				item: "gtceu:t_large_macerator"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -22.5d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "113B1C2BA5D4CB7C"
+			tasks: [{
+				id: "7F7241E21FDD7B46"
+				item: "gtceu:t_large_mixer"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -22.5d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "6979FEE5E13ACA67"
+			tasks: [{
+				id: "3A1839AFE1C3DDAA"
+				item: "gtceu:t_large_ore_washer"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -22.5d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "67B8679BF9E725ED"
+			tasks: [{
+				id: "471779B5A8268A5D"
+				item: "gtceu:large_rock_crusher"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "064CCB31CE894F3A"
+			tasks: [{
+				id: "715E406699782C41"
+				item: "gtceu:t_large_sifter"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "4454DADE9081BE82"
+			tasks: [{
+				id: "786042B22563D37E"
+				item: "gtceu:t_large_thermal_centrifuge"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "4C84753CD4E74A24"
+			tasks: [{
+				id: "78D77C06114E09F9"
+				item: "gtceu:t_large_wiremill"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -21.0d
+		}
+		{
+			dependencies: [
+				"5BA69EDC3C223B2C"
+				"52B553FDB34B1475"
+			]
+			id: "29624C6DE10DEC12"
+			tasks: [{
+				id: "357F9BCE8FDA3C99"
+				item: "gtceu:large_quantum_compressor"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -31.0d
+		}
+		{
+			dependencies: ["2587E109968EFBB4"]
+			id: "31FA0BC9A6B88728"
+			tasks: [{
+				id: "2853D759911F03E8"
+				item: "gtceu:mega_blast_furnace"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -32.5d
+		}
+		{
+			dependencies: ["2587E109968EFBB4"]
+			id: "30A974D5B70D9BA6"
+			tasks: [{
+				id: "0FF4C89E0631917D"
+				item: "gtceu:mega_vacuum_freezer"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["2F4B998D20856E2B"]
+			disable_toast: true
+			id: "3E82F7977DB1C10A"
+			tasks: [{
+				id: "6EA680C1D6716BBC"
+				item: "gtceu:tree_greenhouse"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -21.0d
+		}
+		{
+			dependencies: ["4B51B15B49620F57"]
+			id: "3953F99FD9B7CB61"
+			tasks: [{
+				id: "6E7C9CDE540B69E8"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -32.5d
+		}
+		{
+			dependencies: [
+				"3953F99FD9B7CB61"
+				"0E61DC74B2E2C962"
+			]
+			disable_toast: true
+			id: "2DC49C15916A65C2"
+			tasks: [{
+				id: "29E9C0E62F507901"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -32.5d
+		}
+		{
+			dependencies: [
+				"2DC49C15916A65C2"
+				"1DA6B3308C263A6F"
+			]
+			disable_toast: true
+			id: "29A965DF6AD94B80"
+			tasks: [{
+				id: "3B880A2C75C79995"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -32.5d
+		}
+		{
+			dependencies: [
+				"29A965DF6AD94B80"
+				"3B2D79D40B9617D5"
+			]
+			disable_toast: true
+			id: "760F3F2D5BAA554D"
+			tasks: [{
+				id: "648045D6D6349B5B"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -32.5d
+		}
+		{
+			dependencies: [
+				"760F3F2D5BAA554D"
+				"689150D2A185216C"
+			]
+			disable_toast: true
+			id: "289AF2AEBB2759A5"
+			tasks: [{
+				id: "2FAB11F6589A021D"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -32.5d
+		}
+		{
+			dependencies: [
+				"289AF2AEBB2759A5"
+				"65D76272BA5E67FC"
+			]
+			disable_toast: true
+			id: "6FCC918C3F8DF9D2"
+			tasks: [{
+				id: "7E7F096E2ECD2644"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -32.5d
+		}
+		{
+			dependencies: [
+				"6FCC918C3F8DF9D2"
+				"36C01453717B249D"
+			]
+			disable_toast: true
+			id: "5EBE45141E470090"
+			tasks: [{
+				id: "139A6FA8B8551CF7"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -32.5d
+		}
+		{
+			dependencies: [
+				"5EBE45141E470090"
+				"678B90BF2ACE2BBA"
+			]
+			disable_toast: true
+			id: "761E799972E221FF"
+			tasks: [{
+				id: "01E7438144206D7A"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -32.5d
+		}
+		{
+			dependencies: ["761E799972E221FF"]
+			id: "26172AE6B7457FF3"
+			tasks: [{
+				id: "01BDFBE32900BB05"
+				item: "kubejs:zalloy_coil_block"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -32.5d
+		}
+		{
+			dependencies: ["5C15427D1679D4C3"]
+			id: "799097E0842CBF97"
+			tasks: [
+				{
+					id: "5AD036D3DB1F79A5"
+					item: "gtceu:ilc_chip"
+					type: "item"
+				}
+				{
+					id: "3E78C7462829AA44"
+					item: "gtceu:ram_chip"
+					type: "item"
+				}
+				{
+					id: "27C8554BDFEFDBAC"
+					item: "gtceu:lpic_chip"
+					type: "item"
+				}
+				{
+					id: "1CDB1B12AE013E35"
+					item: "gtceu:ulpic_chip"
+					type: "item"
+				}
+				{
+					id: "39936BBFEBC673B9"
+					item: "gtceu:simple_soc"
+					type: "item"
+				}
+				{
+					id: "7896AC7FB3C81862"
+					item: "gtceu:cpu_chip"
+					type: "item"
+				}
+			]
+			title: "Basic Chips"
+			x: -6.0d
+			y: -31.0d
+		}
+		{
+			dependencies: ["6EB85BBD539AEB57"]
+			id: "603BAC558368B935"
+			tasks: [
+				{
+					id: "373022AEC280DFC3"
+					item: "gtceu:mpic_chip"
+					type: "item"
+				}
+				{
+					id: "20D4567707EF8912"
+					item: "gtceu:nor_memory_chip"
+					type: "item"
+				}
+				{
+					id: "4FC91DE7FD05DECD"
+					item: "gtceu:nand_memory_chip"
+					type: "item"
+				}
+				{
+					id: "7F56BD495A81F5AF"
+					item: "gtceu:hpic_chip"
+					type: "item"
+				}
+				{
+					id: "64E87566C7E798EE"
+					item: "gtceu:soc"
+					type: "item"
+				}
+			]
+			title: "Better Chips"
+			x: -2.5d
+			y: -31.0d
+		}
+		{
+			dependencies: ["0F7A1EA1AB52F795"]
+			id: "4B83C0BEDE616449"
+			tasks: [{
+				id: "70C1C8DDF44068E1"
+				item: "gtceu:highly_advanced_soc"
+				type: "item"
+			}]
+			title: "Highly Advanced Chips"
+			x: -2.5d
+			y: -28.0d
+		}
+		{
+			dependencies: ["5C302CB1A1068EE1"]
+			id: "2FF72B005CDCDC1A"
+			tasks: [
+				{
+					id: "40B51C6418980A77"
+					item: "gtceu:advanced_soc"
+					type: "item"
+				}
+				{
+					id: "6D13AC255D3CD92C"
+					item: "gtceu:uhpic_chip"
+					type: "item"
+				}
+			]
+			title: "Advanced Chips"
+			x: -2.5d
+			y: -29.5d
+		}
+		{
+			disable_toast: true
+			id: "32BC114D5C9630BC"
+			tasks: [
+				{
+					id: "4FCD731015994620"
+					item: "gtceu:nano_cpu_chip"
+					type: "item"
+				}
+				{
+					id: "2AB2CDE635028F83"
+					item: "gtceu:qbit_cpu_chip"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -26.5d
+		}
+		{
+			dependencies: [
+				"390CB178FC2D2CCC"
+				"56BA79287C4DBE52"
+			]
+			disable_toast: true
+			id: "54507D70A9146F13"
+			tasks: [{
+				id: "450790DB3D88B542"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -26.0d
+		}
+		{
+			dependencies: [
+				"54507D70A9146F13"
+				"649596731FFA9C9A"
+			]
+			disable_toast: true
+			id: "33CDF6961474D5D8"
+			tasks: [{
+				id: "4AF093A5C148C3D6"
+				item: "gtceu:multi_smelter"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -24.5d
+		}
+		{
+			dependencies: ["17C1292018AE363E"]
+			disable_toast: true
+			id: "2ECE0A000153328C"
+			tasks: [{
+				id: "3B7A0C0319A04D42"
+				item: "gtceu:cleanroom"
+				type: "item"
+			}]
+			x: -14.5d
+			y: -27.5d
+		}
+		{
+			dependencies: ["3D0F6CA8028C074B"]
+			disable_toast: true
+			id: "24DF9557A927B2B5"
+			tasks: [{
+				id: "5A392C9F3FA864E4"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -27.5d
+		}
+		{
+			dependencies: [
+				"67ABB3BF6D0C183B"
+				"2911EC7333E0E9C5"
+			]
+			disable_toast: true
+			id: "3883C93F8D66832B"
+			tasks: [{
+				id: "3667178AAE6464EE"
+				item: "gtceu:zpm_fusion_reactor"
+				type: "item"
+			}]
+			x: -19.5d
+			y: -31.0d
+		}
+		{
+			id: "12CC0981524E1563"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "03D2F19E7E4E8C5A"
+				title: "positioner"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["3E1CA9FFB9953F42"]
+			disable_toast: true
+			id: "4640656DC355D2F1"
+			tasks: [{
+				id: "2434D2E99E39F08E"
+				item: "gtceu:chemical_plant"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -29.5d
+		}
+		{
+			dependencies: ["62BA581B2918BB7B"]
+			id: "6C6BD459EC785524"
+			tasks: [{
+				id: "02B80B4707C41992"
+				item: "kubejs:iv_universal_circuit"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -23.0d
+		}
+		{
+			dependencies: ["52FE319F5E176C37"]
+			id: "2C1F52216F0003E6"
+			tasks: [{
+				id: "7CD0CAE01546EEB9"
+				item: "kubejs:ev_universal_circuit"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -24.5d
+		}
+		{
+			dependencies: ["73931EAA3EC5C9A9"]
+			id: "4CDBB14A234A17CC"
+			tasks: [{
+				id: "62DFADAAB182EEAF"
+				item: "kubejs:hv_universal_circuit"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -26.0d
+		}
+		{
+			dependencies: ["7836F17B34B47B16"]
+			id: "5E106516E1301149"
+			tasks: [{
+				id: "60BB405CE6E39232"
+				item: "kubejs:mv_universal_circuit"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -27.5d
+		}
+		{
+			dependencies: ["20A12F3B992762F0"]
+			id: "088E1B8DCADB8E5F"
+			tasks: [{
+				id: "0663B9E066B17558"
+				item: "kubejs:lv_universal_circuit"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -29.0d
+		}
+		{
+			dependencies: ["3B81632EF4586280"]
+			id: "725838B2E5E0F1ED"
+			tasks: [{
+				id: "03CF650CB7C72095"
+				item: "kubejs:ulv_universal_circuit"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -30.5d
+		}
+		{
+			dependencies: ["53A9F3758C218CDC"]
+			id: "780DE9C5FAC1A07B"
+			tasks: [{
+				id: "60F21FFB33D8FCB2"
+				item: "kubejs:luv_universal_circuit"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -21.5d
+		}
+		{
+			dependencies: ["79428BAEAA7856E1"]
+			id: "68F9735CB776A7A5"
+			tasks: [{
+				id: "5A0D53C0B8BFACF3"
+				item: "kubejs:zpm_universal_circuit"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["3FC351F05F2AC743"]
+			id: "0D4D54F0410EB78A"
+			tasks: [{
+				id: "753E7D945E8041B9"
+				item: "kubejs:uv_universal_circuit"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -18.5d
+		}
+		{
+			dependencies: ["707C2E9BA62A60C5"]
+			id: "435A9E0547D1D700"
+			tasks: [{
+				id: "52E18B22878011BB"
+				item: "kubejs:uhv_universal_circuit"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -17.0d
+		}
+	]
+	title: "Line Of Progression"
+}

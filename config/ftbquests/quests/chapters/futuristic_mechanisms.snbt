@@ -1,0 +1,1713 @@
+{
+	autofocus_id: "6DD3126E3C45D1E7"
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "futuristic_mechanisms"
+	group: "1E0FC4EA21F735F7"
+	icon: "gtceu:tritanium_coil_block"
+	id: "450EB2B6DF25A9EC"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0C0C0FBDE1760110"]
+			id: "53A9F3758C218CDC"
+			rewards: [{
+				count: 2
+				id: "72989DDB2342C439"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "First LuV Circuit"
+			tasks: [{
+				id: "20C545A5E6AEBCD3"
+				item: "gtceu:nano_processor_mainframe"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53A9F3758C218CDC"]
+			id: "4ED562DC235425FE"
+			rewards: [{
+				id: "0BF583291888CC61"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "422FD4146C1EE470"
+				item: "gtceu:iv_circuit_assembler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4ED562DC235425FE"
+				"1E1DF0982ECDD7D0"
+			]
+			id: "06780B462515CAE2"
+			rewards: [{
+				id: "0042B422FDE78615"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Third and last EV Circuit"
+			tasks: [{
+				id: "164C8699E8E8A418"
+				item: "gtceu:quantum_processor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["06780B462515CAE2"]
+			id: "4E77319DB3B30062"
+			rewards: [{
+				id: "6EBB7F12D50D2065"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Third IV Circuit"
+			tasks: [{
+				id: "20A76951A903E9FE"
+				item: "gtceu:quantum_processor_assembly"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4E77319DB3B30062"]
+			id: "421DF7880AD00F58"
+			rewards: [{
+				id: "75A789B63E3B56E6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Second LuV Circuit"
+			tasks: [{
+				id: "7ADF139AA061F5C9"
+				item: "gtceu:quantum_processor_computer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["421DF7880AD00F58"]
+			id: "79428BAEAA7856E1"
+			rewards: [{
+				count: 2
+				id: "63ACBBB31B900669"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "First ZPM Circuit"
+			tasks: [{
+				id: "72A07FE53F5C09E6"
+				item: "gtceu:quantum_processor_mainframe"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6F008C23D5DE50D6"
+				"2DB216B224F2E8EF"
+			]
+			icon: "gtceu:qbit_cpu_chip"
+			id: "1E1DF0982ECDD7D0"
+			rewards: [{
+				id: "37F1B1BDC8F9BCEC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7DBC330554665F14"
+					item: "gtceu:qbit_cpu_wafer"
+					type: "item"
+				}
+				{
+					id: "65474F45F287C9C6"
+					item: "gtceu:qbit_cpu_chip"
+					type: "item"
+				}
+			]
+			title: "Qubit Chips"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"35829E28221CB70E"
+				"79428BAEAA7856E1"
+			]
+			id: "576C0430D0CDE409"
+			rewards: [{
+				id: "2A59039A50A0888F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "083C79FF40E02B9E"
+				item: "gtceu:zpm_energy_input_hatch"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2587E109968EFBB4"]
+			id: "35829E28221CB70E"
+			rewards: [{
+				id: "58719E52927020B2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1EAA417B6BDC58D1"
+				item: "gtceu:zpm_machine_hull"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"023794367F1B28D1"
+				"53A9F3758C218CDC"
+				"4B57B668B5220591"
+			]
+			id: "0DCF962900689BCB"
+			rewards: [{
+				id: "33B473DAB97A8F7E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1529E40FF7AB68B4"
+				item: "gtceu:luv_4a_energy_converter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C154476DB77B773"]
+			id: "023794367F1B28D1"
+			rewards: [{
+				id: "61FD6180318E16CB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "22E598CF312F187B"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["46D5CAA2666803D4"]
+			id: "4B57B668B5220591"
+			rewards: [{
+				id: "5052F88D4E468733"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "545D3332D00DE7DB"
+				item: "gtceu:twinite_single_wire"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["689150D2A185216C"]
+			id: "46D5CAA2666803D4"
+			rewards: [{
+				id: "341E094C2A4457B1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A3DDF9C1C75E713"
+				item: "gtceu:twinite_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53A9F3758C218CDC"]
+			id: "6AA4CC44DE1C8E1E"
+			rewards: [{
+				id: "25146C72761442AB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5F12F55ECEA80854"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "34F3742247E21B44"
+					item: "gtceu:quarktech_chestplate"
+					type: "item"
+				}
+				{
+					id: "1E27F6A173353C14"
+					item: "gtceu:quarktech_leggings"
+					type: "item"
+				}
+				{
+					id: "10EDB814526F0E3A"
+					item: "gtceu:quarktech_boots"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["79428BAEAA7856E1"]
+			id: "1602A4A4D00C9724"
+			rewards: [{
+				id: "6258F31650FF7A3F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "44C67D9DEE480D8C"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3B2D79D40B9617D5"]
+			id: "1C154476DB77B773"
+			rewards: [{
+				id: "0419477D99487D84"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "12C22E49B4DF501E"
+				item: "gtceu:rhodium_plated_palladium_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["53A9F3758C218CDC"]
+			id: "0A6534BD104A2B08"
+			rewards: [{
+				id: "2AF0B6296A1A21B6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "714B6A8A7559E9B5"
+				item: "gtceu:iv_parallel_hatch"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"53A9F3758C218CDC"
+				"020048FAC9576691"
+			]
+			id: "5B72F7526494EAEC"
+			rewards: [{
+				count: 2
+				id: "55FD9CBF1F723138"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "135438AA0603B762"
+				item: "gtceu:power_substation"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30F3A744CD40A14A"]
+			id: "020048FAC9576691"
+			rewards: [{
+				id: "35A919741028DC9B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6FF7150FB49BBC1A"
+				item: "gtceu:laminated_glass"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3306CAE5E57839A2"]
+			id: "30F3A744CD40A14A"
+			rewards: [{
+				id: "4BE1025669695243"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C46EC3EC41D6F8A"
+				item: "gtceu:polyvinyl_butyral_plate"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"020048FAC9576691"
+				"138E77CDBA50A619"
+			]
+			id: "0094C2E72105E8CA"
+			rewards: [{
+				id: "7FBA27D256DA3CC5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "74F58207D106C0AD"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"64033BFF2EAE4FDB"
+				"023794367F1B28D1"
+			]
+			id: "67ABB3BF6D0C183B"
+			rewards: [{
+				count: 2
+				id: "5F2C2C1290F3D15D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "77583C68BD5BD029"
+				item: "gtceu:luv_fusion_reactor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0094C2E72105E8CA"]
+			id: "64033BFF2EAE4FDB"
+			rewards: [{
+				id: "7FC61A61F78CFFF1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B49E5ADC45364D4"
+				item: "gtceu:iv_scanner"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5B72F7526494EAEC"]
+			id: "51DE4937635274FD"
+			rewards: [{
+				id: "65EEBF04B8BC7795"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5CE152B9D9C4BCDC"
+				item: "gtceu:empty_tier_i_battery"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["51DE4937635274FD"]
+			id: "5BC9DEBA51D83A33"
+			rewards: [{
+				id: "32F914783CC3E902"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0A399248677C0EF3"
+				item: "gtceu:ev_lapotronic_battery"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["51DE4937635274FD"]
+			id: "1AC791ABC70E8699"
+			rewards: [{
+				id: "2FE0ECB18AABD219"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "39CC4C4A36912D6E"
+				item: "gtceu:iv_lapotronic_battery"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5B72F7526494EAEC"]
+			id: "5633ED567D7B86AA"
+			rewards: [{
+				id: "23C89E35E45FFD6F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1C6ACFD31BF47379"
+					item: "gtceu:ev_substation_input_hatch_64a"
+					type: "item"
+				}
+				{
+					id: "09F4A83989293DC0"
+					item: "gtceu:ev_substation_output_hatch_64a"
+					type: "item"
+				}
+			]
+			title: "EV Substation Hatches"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B2D79D40B9617D5"]
+			id: "138E77CDBA50A619"
+			rewards: [{
+				id: "32D1F5F6C962CF95"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "60AC9666C8EB2BDB"
+				item: "gtceu:ruridit_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["64033BFF2EAE4FDB"]
+			id: "03FF61D56AA8ED91"
+			rewards: [{
+				id: "69A89E57E0707ADA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A8BED0DDE320BA0"
+				item: "gtceu:lapotronic_energy_orb_cluster"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"138E77CDBA50A619"
+				"03FF61D56AA8ED91"
+			]
+			id: "62F32607FEE899CF"
+			rewards: [{
+				id: "70E9BD365598DDBF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "33A8AB55BA4EECA5"
+				item: "gtceu:empty_tier_ii_battery"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["64033BFF2EAE4FDB"]
+			id: "111033FEFA89BA91"
+			rewards: [{
+				id: "156DFECBB9DB81AC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F343C6C06572DEB"
+				item: "gtceu:luv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["64033BFF2EAE4FDB"]
+			id: "5AD5C15F6C0F4BC2"
+			rewards: [{
+				id: "0D40F72D1AD2976D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B5F5922F210E355"
+				item: "gtceu:luv_sensor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["64033BFF2EAE4FDB"]
+			id: "127464E65103D2B0"
+			rewards: [{
+				id: "376C7937D2F3B34E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25E722D912A6C4AB"
+				item: "gtceu:data_bank"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["127464E65103D2B0"]
+			description: ["This multiblock provides computation to the research station. By playing around with components, you can generate enough computation to research things."]
+			id: "560993E111853A54"
+			rewards: [{
+				id: "3111C1D18A8EDA14"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E2AFC73A37B8B2B"
+				item: "gtceu:high_performance_computation_array"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"2658276EC0740F69"
+				"127464E65103D2B0"
+			]
+			description: ["Scanner are not powerful enough to research high tier technologies. This multiblock can research almost anything!"]
+			id: "19D9B5FFD3D767C2"
+			rewards: [{
+				id: "4D684E30086622BA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "60F340D7244C3FE9"
+				item: "gtceu:research_station"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5AD5C15F6C0F4BC2"]
+			id: "2658276EC0740F69"
+			rewards: [{
+				id: "24A06EEB6F3AD62E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "27291DB8A9020833"
+				item: "gtceu:luv_scanner"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["67ABB3BF6D0C183B"]
+			id: "084F23122E4CA277"
+			rewards: [{
+				id: "18753214A5A7C922"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "566709F0A48CEA6F"
+				item: "gtceu:europium_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"111033FEFA89BA91"
+				"5ECF1A3EBB3F1BE5"
+			]
+			id: "5C96AA366006C8DD"
+			rewards: [{
+				id: "40E1D547DCFCDE48"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E0F00C5EA6EE683"
+				item: "gtceu:crystal_soc"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5935F9CB5E1C099B"]
+			id: "5ECF1A3EBB3F1BE5"
+			rewards: [{
+				id: "562C42F51A774506"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7072FB0FDC3E471E"
+				item: "gtceu:crystal_cpu"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5E3F7C06E05628F6"]
+			id: "5935F9CB5E1C099B"
+			rewards: [{
+				id: "6D21EFBC4AF34C2E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4742FFEC7CE93B56"
+				item: "gtceu:engraved_crystal_chip"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"084F23122E4CA277"
+				"55D75F03238F3A14"
+			]
+			id: "5E3F7C06E05628F6"
+			rewards: [{
+				id: "7719AC7553258A91"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A8D14AA8B888DE8"
+				item: "gtceu:raw_crystal_chip"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			id: "55D75F03238F3A14"
+			rewards: [{
+				id: "5DD6403A93F81CB4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73D704EF2E4A92C8"
+				item: "gtceu:exquisite_emerald_gem"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5E3F7C06E05628F6"]
+			id: "2A80DC12DB5E0594"
+			rewards: [{
+				id: "35A71ADD271119FE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "50479BFB83C47E18"
+				item: "gtceu:raw_crystal_chip_parts"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5ECF1A3EBB3F1BE5"
+				"51C60C25C3C9C770"
+			]
+			id: "70C2BB4FAA2FB1F2"
+			rewards: [{
+				id: "56B39A2AA597E2EB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Fourth and Last IV Circuit"
+			tasks: [{
+				id: "34016CEFEA9D36EA"
+				item: "gtceu:crystal_processor"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["70C2BB4FAA2FB1F2"]
+			id: "744CAEF994308983"
+			rewards: [{
+				id: "458003E1AE20D22C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Third LuV Circuit"
+			tasks: [{
+				id: "1BCF982F0F5D3507"
+				item: "gtceu:crystal_processor_assembly"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["744CAEF994308983"]
+			id: "30A1077A14212FE2"
+			rewards: [{
+				id: "737AC7BF3CFB4A57"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Second ZPM Circuit"
+			tasks: [{
+				id: "30E09846ADCAD743"
+				item: "gtceu:crystal_processor_computer"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30A1077A14212FE2"]
+			id: "3FC351F05F2AC743"
+			rewards: [{
+				count: 2
+				id: "34A0BAA2A5496AA4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "First UV Circuit"
+			tasks: [{
+				id: "5511FF0C044D185E"
+				item: "gtceu:crystal_processor_mainframe"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F01DA287A2BF588"]
+			id: "51C60C25C3C9C770"
+			rewards: [{
+				id: "00AEF84146E7088E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7ED4E5387122C18A"
+				item: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0F2727801B71CA1C"]
+			id: "6F01DA287A2BF588"
+			rewards: [{
+				id: "2923BD63D4946705"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "05CA0720A2FA071B"
+				item: "gtceu:multilayer_fiber_reinforced_circuit_board"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["79428BAEAA7856E1"]
+			id: "175837CCB419A09F"
+			rewards: [{
+				id: "2B6F63BA1BE0BD52"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "18DAA94C2466BD1B"
+				item: "gtceu:luv_parallel_hatch"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["79428BAEAA7856E1"]
+			id: "150C7E0C42E85710"
+			rewards: [{
+				id: "26B8944E78C28041"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "570F029AC3465189"
+				item: "gtceu:energy_module"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["150C7E0C42E85710"]
+			id: "795726537DF2E183"
+			rewards: [{
+				id: "76F390620149B1FF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "05C550C971929778"
+				item: "gtceu:zpm_lapotronic_battery"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F01DA287A2BF588"]
+			id: "02580708BFAA1E19"
+			rewards: [{
+				id: "0DFCFE7C9D576CFE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73BF5F96D0E4F806"
+				item: "gtceu:wetware_circuit_board"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["02580708BFAA1E19"]
+			id: "68F878EC21CA1749"
+			rewards: [{
+				id: "56392F64C5AB9C20"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E04DF96C447E29C"
+				item: "gtceu:wetware_printed_circuit_board"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"68F878EC21CA1749"
+				"3EEEC61CEE1B6BB2"
+			]
+			id: "18D5591BF53AD07F"
+			rewards: [{
+				id: "343F9831B0A2B25F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5993D645BF787D73"
+				item: "gtceu:neuro_processing_unit"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"18D5591BF53AD07F"
+				"2BA3AAAB77C094BC"
+			]
+			id: "0962C36622E385B8"
+			rewards: [{
+				id: "4941AC6DED0CF180"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Fourth and Last LuV Circuit"
+			tasks: [{
+				id: "3EE0849FE28BA5A7"
+				item: "gtceu:wetware_processor"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6ABD35ABBB380F42"]
+			id: "3EEEC61CEE1B6BB2"
+			rewards: [{
+				id: "4A93870D2CD9AA9D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "16B0E8905C58CC4C"
+				item: "gtceu:stem_cells"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3B2D79D40B9617D5"]
+			id: "2BA3AAAB77C094BC"
+			rewards: [{
+				id: "525DCAE4CC4387C2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "250C485A76370A39"
+				item: "gtceu:yttrium_barium_cuprate_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1F79E45EF7810DFF"]
+			id: "4C5DBB94345FF33B"
+			rewards: [{
+				count: 2
+				id: "726C0F265411F3FF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Second UV Circuit"
+			tasks: [{
+				id: "52C4CAEB98BC9833"
+				item: "gtceu:wetware_processor_computer"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0962C36622E385B8"]
+			id: "1F79E45EF7810DFF"
+			rewards: [{
+				id: "4BA6C2666FDBB98A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Third and Last ZPM Circuit"
+			tasks: [{
+				id: "26A0FC39A8C48BC1"
+				item: "gtceu:wetware_processor_assembly"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"19BBC64C57C460E6"
+				"3FC351F05F2AC743"
+			]
+			id: "2911EC7333E0E9C5"
+			rewards: [{
+				count: 2
+				id: "7935EC0DC708A8B4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5DAE21D68E963FA2"
+				item: "gtceu:zpm_fusion_reactor"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36C01453717B249D"]
+			id: "19BBC64C57C460E6"
+			rewards: [{
+				id: "7189EF3CC98D90C2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6959C43A0841789A"
+				item: "gtceu:uranium_rhodium_dinaquadide_ingot"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["65D76272BA5E67FC"]
+			id: "2587E109968EFBB4"
+			rewards: [{
+				id: "414F4C818DD7C865"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "715FDD56CD8929DB"
+				item: "gtceu:naquadah_alloy_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["65D76272BA5E67FC"]
+			id: "7FD0034E639F3B2D"
+			rewards: [{
+				id: "1DFD1F5E0925002E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "74B0FA44BAE3AC99"
+				item: "gtceu:dragonsteel_ingot"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7FD0034E639F3B2D"]
+			id: "5DA5E5818EA124EF"
+			rewards: [{
+				id: "0FF52A06FBFE67EB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1930C38061885B83"
+				item: "gtceu:dragonsteel_single_wire"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3BA6406400A63937"]
+			id: "65D76272BA5E67FC"
+			rewards: [{
+				count: 2
+				id: "6754BF74B255BB22"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "60D6A384EA56EC82"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"576C0430D0CDE409"
+				"2612A32BC45C1863"
+			]
+			hide_dependent_lines: true
+			id: "36C01453717B249D"
+			rewards: [{
+				count: 2
+				id: "431D295C28914985"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2A5CE0D929D533DF"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["111033FEFA89BA91"]
+			id: "62F3093B80681573"
+			rewards: [{
+				id: "47B89C0D0CDEDB4D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2ACDCE53A217B5F4"
+				item: "gtceu:luv_energy_input_hatch_4a"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["62F3093B80681573"]
+			id: "2094349C5A01C5F9"
+			rewards: [{
+				id: "39C4805A05646615"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A999B8F79418937"
+				item: "gtceu:luv_energy_input_hatch_16a"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["576C0430D0CDE409"]
+			id: "417038F9E5A88B5C"
+			rewards: [{
+				id: "362676299F561784"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "67DFDC5071EC319B"
+				item: "gtceu:zpm_energy_input_hatch_4a"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["417038F9E5A88B5C"]
+			id: "4E9EFF82E64FB6E4"
+			rewards: [{
+				id: "28DEA73C24266421"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "651D9A1998D2063C"
+				item: "gtceu:zpm_energy_input_hatch_16a"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"35829E28221CB70E"
+				"3FC351F05F2AC743"
+			]
+			id: "69E5F396CF39B8DC"
+			rewards: [{
+				id: "51E1CD8D8A80FE4F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B6D3C225AC57280"
+				item: "gtceu:zpm_parallel_hatch"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"35829E28221CB70E"
+				"3FC351F05F2AC743"
+			]
+			id: "3E1CA9FFB9953F42"
+			rewards: [{
+				id: "7AEC3EEA2DC10C04"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "4538BE544847BA96"
+				item: "gtceu:chemical_plant"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["65D76272BA5E67FC"]
+			description: ["Used for active transformers and in some other crafting recipes as wire superconductor."]
+			id: "04BFFBF024D019BD"
+			rewards: [{
+				id: "490E264AD034153D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D08BBB7210575AC"
+				item: "gtceu:indium_tin_barium_titanium_cuprate_ingot"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"05F2C7351FF1B0E5"
+				"3BA6406400A63937"
+			]
+			icon: "gtceu:uhpic_chip"
+			id: "5BA69EDC3C223B2C"
+			rewards: [{
+				id: "6A4C228C23FD6C39"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4569F8A976468DF1"
+					item: "gtceu:uhpic_wafer"
+					type: "item"
+				}
+				{
+					id: "0FE8E61B0BA1BBE9"
+					item: "gtceu:uhpic_chip"
+					type: "item"
+				}
+			]
+			title: "UHPIC Chips"
+			x: 19.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2911EC7333E0E9C5"]
+			id: "27C0ED4305E84D21"
+			rewards: [{
+				id: "5709D05E17D64016"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68CB622EF69BE297"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["27C0ED4305E84D21"]
+			id: "3F4C068368F97580"
+			rewards: [{
+				id: "7F984E43D779DF67"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2577C7EC42AF00C9"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2911EC7333E0E9C5"]
+			id: "6131A76D203DE6AB"
+			rewards: [{
+				id: "2E02C7F31E491B63"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2BBE74D890CCE073"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2911EC7333E0E9C5"]
+			id: "70AA84848FB2A9BB"
+			rewards: [{
+				id: "21196D5D522B50E4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "17298D2E3FB3047D"
+				item: "gtceu:americium_ingot"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["70AA84848FB2A9BB"]
+			id: "151C2D784700BD49"
+			rewards: [{
+				id: "254AC143BB4AD963"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "374B25EB1C691ADD"
+				item: "gtceu:energy_cluster"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3F4C068368F97580"
+				"6131A76D203DE6AB"
+				"5C4593033E521E71"
+				"5BA69EDC3C223B2C"
+			]
+			id: "0B7A0924AFE58559"
+			rewards: [{
+				id: "0014E23E60199689"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "665B54DC59BD0C0A"
+				item: "gtceu:uv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["35829E28221CB70E"]
+			id: "1EE4E8301E0FD1C7"
+			rewards: [{
+				id: "50735AA038809909"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1FA489745B229229"
+				item: "gtceu:chemical_builder"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3F4C068368F97580"]
+			id: "3391903EBBB3F308"
+			rewards: [{
+				id: "3D02DB60D7DF9311"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A13CC613F192AAC"
+				item: "gtceu:cleaning_maintenance_hatch"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5C302CB1A1068EE1"]
+			id: "1BF95852C7E1741E"
+			rewards: [{
+				count: 2
+				id: "7E6A0397EA576123"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3CD2554A7F8ABCAD"
+				item: "gtceu:naquadah_wafer"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6131A76D203DE6AB"]
+			id: "678B90BF2ACE2BBA"
+			rewards: [{
+				count: 2
+				id: "7582ACFD521E00FD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7E9779497F7473C0"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0B7A0924AFE58559"]
+			id: "155947C2913FFA42"
+			rewards: [{
+				id: "4F48E68186A91F73"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "453615A4AC786A1B"
+				item: "gtceu:uv_energy_input_hatch_4a"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["155947C2913FFA42"]
+			id: "1B4B0A67B86B7D58"
+			rewards: [{
+				id: "345DB7848D31D095"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E19C77A6DF82D47"
+				item: "gtceu:uv_energy_input_hatch_16a"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3BA6406400A63937"]
+			id: "5C302CB1A1068EE1"
+			rewards: [{
+				id: "4D0459C42287FFAE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66E89212F5C9DBC8"
+				item: "gtceu:naquadah_boule"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3325914DB92AEF1B"]
+			id: "5C4593033E521E71"
+			rewards: [{
+				id: "6259E7F2F823FE21"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73B42566D0AB59B4"
+				item: "gtceu:prismalium_single_wire"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36C01453717B249D"]
+			id: "3325914DB92AEF1B"
+			rewards: [{
+				id: "16B7D64B08F260A6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "74E917DBC5C19568"
+				item: "gtceu:prismalium_ingot"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"678B90BF2ACE2BBA"
+				"3B69844600AD5430"
+			]
+			id: "02606EBF230281A3"
+			rewards: [{
+				id: "5B35E700C78BA190"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "381449DAB65244AF"
+				item: "gtceu:enriched_naquadah_trinium_europium_duranide_ingot"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2911EC7333E0E9C5"]
+			hide_dependency_lines: true
+			id: "3B69844600AD5430"
+			rewards: [{
+				id: "3F2B0E0D1987FEED"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C8488F1A6D476E9"
+				item: "gtceu:duranium_ingot"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -6.0d
+		}
+		{
+			id: "6DD3126E3C45D1E7"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "5FE3039DA31A92F4"
+				title: "positioner"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["62F32607FEE899CF"]
+			id: "10B333DE4129BDC9"
+			rewards: [{
+				id: "7E47AECAAC44131E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FEF19F707C48B20"
+				item: "gtceu:luv_lapotronic_battery"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6131A76D203DE6AB"]
+			description: ["These can replace your old Cleanroom Filters, and turn it into a Sterile Cleanroom. Do keep in mind that normal Cleanroom recipes do not work inside a Sterile Cleanroom"]
+			id: "6CC13BE9AD447218"
+			subtitle: "It wasn't clean enough"
+			tasks: [{
+				id: "1B9835C2886C3C1D"
+				item: "gtceu:sterilizing_filter_casing"
+				type: "item"
+			}]
+			title: "Sterile Cleanroom"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"560993E111853A54"
+				"19D9B5FFD3D767C2"
+			]
+			description: ["Unfortunately, you can connect only one HPCA to the research station. However, this multiblock can route the computation from several HPCAs into the research station!"]
+			id: "0687F0D2A9EC1AA4"
+			tasks: [{
+				id: "64FD2ED3BC05E047"
+				item: "gtceu:network_switch"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+	]
+	title: "Futuristic Mechanisms"
+}

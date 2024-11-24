@@ -54,6 +54,8 @@
 	#How much half hearts damage a pebble should do. (Default: 0)
 	#Range: > 0
 	pebbleDamage = 0
+	#Should pebbles be throwable? (Default: true)
+	enableThrowable = false
 
 #Ore Configs
 [ore]
