@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         .itemInputs('1x kubejs:crystallised_akreyrium', "1x gtceu:gray_glass_lens")
         .itemOutputs('1x gtceu:gray_glass_lens')
         .outputFluids("gtceu:utopian_akreyrium 10")
-        .duration(3600)
+        .duration(900)
         .EUt(524288);
 
     event.recipes.gtceu.folding_akreyrium_stabiliser('electron_stabilisation')

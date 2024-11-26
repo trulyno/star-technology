@@ -22,7 +22,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.any())
             .where('X', Predicates.blocks('gtceu:fusion_glass')
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where("B", Predicates.blocks("gtceu:fusion_glass"))
             .where('D', Predicates.blocks('gtceu:high_power_casing'))
