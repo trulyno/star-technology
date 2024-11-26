@@ -281,7 +281,7 @@ ServerEvents.recipes(event => {
     });
 
     //plates
-    ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron'].forEach(type => {
+    ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron','brass'].forEach(type => {
         event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`);
     });
     ['iron', 'copper', 'gold'].forEach(type => {
