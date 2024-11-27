@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
         .itemInputs('1x kubejs:crystallised_akreyrium', "1x gtceu:magenta_glass_lens")
         .itemOutputs('1x gtceu:magenta_glass_lens')
         .outputFluids("gtceu:utopian_akreyrium 500")
-        .duration(3600)
+        .duration(900)
         .EUt(524288);
 
     event.recipes.gtceu.folding_akreyrium_stabiliser('muon_stabilisation')
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         .itemInputs('1x kubejs:crystallised_akreyrium', "1x gtceu:lime_glass_lens")
         .itemOutputs('1x gtceu:lime_glass_lens')
         .outputFluids("gtceu:utopian_akreyrium 500")
-        .duration(3600)
+        .duration(900)
         .EUt(524288);
 
     event.recipes.gtceu.folding_akreyrium_stabiliser('tau_stabilisation')
@@ -59,6 +59,6 @@ ServerEvents.recipes(event => {
         .itemInputs('1x kubejs:crystallised_akreyrium', "1x gtceu:light_blue_glass_lens")
         .itemOutputs('1x gtceu:light_blue_glass_lens')
         .outputFluids("gtceu:utopian_akreyrium 500")
-        .duration(3600)
+        .duration(900)
         .EUt(524288);
 });
