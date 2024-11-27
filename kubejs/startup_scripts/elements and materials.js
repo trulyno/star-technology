@@ -243,6 +243,7 @@ elementRegistry(event => {
 
     // Abydos Materials
     event.create('zapolgium', 141, 217, -1, null, 'Zg', false);
+    event.create('akreyrium', -1, -1, -1, null, 'Ak', false);
 
     // Nether Materials
     event.create('mythril', 132, 193, -1, null, 'My', false);
@@ -1031,7 +1032,7 @@ materialRegistry(event => {
         .color(0x336600);
 
     // Ores and bedrock fluids
-    // Abydos
+    
     event.create('titanite')
         .dust()
         .ore(4, 3)
@@ -1574,4 +1575,9 @@ materialRegistry(event => {
         .fluid()
         .element(GTElements.get('akreyrium'))
         .color(0x464655);
+
+    event.create('akreyrium_pcb_graphite_nanoparticle_coolant')
+        .fluid()
+        .color(0x676763);
+
 });
