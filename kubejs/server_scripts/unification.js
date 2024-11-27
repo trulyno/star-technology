@@ -13,14 +13,16 @@ function unify(type, regex) {
 
 
         itemObjects.forEach((o) => {
-            items.push(Item.of(o).getId())
+            // Convert the items to string IDs because if you don't nothing works
+            items.push(Item.of(o).getId());
         })
-        console.log(items)
-        // Adds every subtag of #forge:items to types
 
         items.forEach((i) => {
+            // Checks for the blacklisted items regex; items that should be skipped to avoid errors
             if(regex.test(i)) {
+                // Skip out the characters before the : and after the last _; the material
                 let mat = i.slice(i.indexOf(":") + 1, i.lastIndexOf("_"));
+                // Push the type into the types folder to avoid duplicates (When there's more than one rod with the same tag)
                 if (!types.includes(`forge:${type}/${mat}`)) {
                     types.push(`forge:${type}/${mat}`);
                 }
@@ -28,21 +30,17 @@ function unify(type, regex) {
         });
         console.log(types)
 
-        // Removes Non-GT items from tags that contain a GT item.
-
         types.forEach((tag) => {
-            console.log(tag)
+            // Creates a variable with all of the items in the tag
             let itemObjects = event.get(tag.replace('#', '')).getObjectIds();
             let items2 = [];
+            // Converts items to string ids because again, if you don't everything breaks)
             itemObjects.forEach(item => {
-                items2.push(Item.of(item).getId())
+                items2.push(Item.of(item).getId());
             })
-        
             items2.forEach((i) => {
-                // This code runs for every item.
-        
+                // If the item is from GT, mark the tag for unification
                 if (/^gtceu:.*/.test(i)) {
-                    // If the item is from GregTech, mark other items in this tag for removal
                     removable = true;
                 } else {
                     // If the item isn't from GregTech, mark it as a 'failed item'
@@ -50,27 +48,32 @@ function unify(type, regex) {
                 }
             });
             if (removable) {
-                // If the tag was marked for removal, remove all 'failed items'
+                // If the tag was marked for removal, remove all 'failed items' and their recipes
         
                 failedItems.forEach((failedItem) => {
                         event.removeAllTagsFrom(failedItem);
-                });
+                }); 
+                console.log(`cleaned up tag ${tag}`);
+    
                 failedItems.forEach(i => {
                     uselessItems.push(i)
-                })
+                });
 
-                removable = false
+                removable = false;
                 
+            } else {
+            console.log(`skipped unification of tag ${tag}`);
             }
-            failedItems = []
+            failedItems = [];
         });
     });
 
     ServerEvents.recipes(event => {
         uselessItems.forEach(item => {
-            event.remove({ output: item })
+            // remove recipes for items whos tags were remove
+            event.remove({ output: item });
         })
-        uselessItems = []
+        uselessItems = [];
     })
 } 
 
