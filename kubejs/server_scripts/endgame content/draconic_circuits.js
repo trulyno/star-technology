@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.circuit_assembler('draconic_wetware_microchip_processor')
         .itemInputs('kubejs:draconic_wetware_printed_circuit_board', 'gtceu:crystal_soc', 'gtceu:qbit_cpu_chip', '6x gtceu:advanced_smd_capacitor', '6x gtceu:advanced_smd_transistor', '8x gtceu:fine_yttrium_barium_cuprate_wire')
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 72')
-        .itemOutputs('1x kubejs:draconic_wetware_microchip_processor')
+        .itemOutputs('3x kubejs:draconic_wetware_microchip_processor')
         .duration(600)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VHA[GTValues.UV]);
