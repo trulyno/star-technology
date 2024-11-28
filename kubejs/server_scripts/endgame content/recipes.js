@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of("gtceu:exquisite_screret_runic_laser_source_base_gem"))
                 .EUt(369000)
-                .CWUt(96)
+                .CWUt(124)
         )
         .duration(64000)
         .EUt(369000);
@@ -259,7 +259,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of("kubejs:laser_casing"))
                 .EUt(90000)
-                .CWUt(96)
+                .CWUt(124)
         )
         .duration(82000)
         .EUt(90000);
@@ -296,7 +296,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of("kubejs:stargate_rod"))
                 .EUt(90000)
-                .CWUt(96)
+                .CWUt(144)
         )
         .EUt(90000);
 
