@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of("gtceu:exquisite_screret_runic_laser_source_base_gem"))
                 .EUt(369000)
-                .CWUt(124)
+                .CWUt(128)
         )
         .duration(64000)
         .EUt(369000);
@@ -199,6 +199,12 @@ ServerEvents.recipes(event => {
                 '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '48x gtceu:prismalium_screw')
         .inputFluids('gtceu:soldering_alloy 40000')
         .itemOutputs('kubejs:computational_super_matrix')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of("gtceu:wetware_processor_mainframe"))
+                .EUt(90000)
+                .CWUt(128)
+        )
         .duration(12000)
         .EUt(90000);
 
@@ -259,7 +265,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of("kubejs:laser_casing"))
                 .EUt(90000)
-                .CWUt(124)
+                .CWUt(128)
         )
         .duration(82000)
         .EUt(90000);
