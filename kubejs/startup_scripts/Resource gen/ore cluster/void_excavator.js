@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('void_excavator')
         .category('void_excavator')
-        .setMaxIOSize(2, 6, 1, 2)
+        .setMaxIOSize(0, 9, 1, 2)
         .setSound(GTSoundEntries.MACERATOR);
 });
 
