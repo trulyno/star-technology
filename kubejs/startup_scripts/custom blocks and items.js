@@ -1,4 +1,3 @@
-
 // Custom Items
 StartupEvents.registry('item', event => {
     event.create('naquadic_netherite_fibers')
@@ -7,121 +6,61 @@ StartupEvents.registry('item', event => {
         .tooltip('The strongest armor material');
 
     event.create('crude_stargate_rod')
-        .texture('kubejs:item/rods/crude_stargate_rod')
+        .texture('kubejs:item/gate_items/crude_stargate_rod')
         .rarity('rare')
         .tooltip("It doesn't seem ready for use quite yet...");
 
     event.create('stargate_rod')
-        .texture('kubejs:item/rods/stargate_rod')
+        .texture('kubejs:item/gate_items/stargate_rod')
         .rarity('epic')
         .tooltip('The muscles of a stargate, if you will...');
 
     event.create('runic_engraved_plating')
         .displayName('Runic-Engraved Plating')
-        .texture('kubejs:item/rune_engraved_plating')
+        .texture('kubejs:item/gate_items/rune_engraved_plating')
         .rarity('epic')
         .tooltip('Mikerooni + Runes = Mikerunies');
 
     event.create('runic_pathway_engraved_plating')
         .displayName('Runic Pathway-Engraved Plating')
-        .texture('kubejs:item/runic_pathway_engraved_plating')
+        .texture('kubejs:item/gate_items/runic_pathway_engraved_plating')
         .rarity('rare');
 
     event.create('runic_wave_generator')
         .displayName('Drack-ion Runic Wave Generator')
-        .texture('kubejs:item/drac/drack-ion_runic_wave_generator')
+        .texture('kubejs:item/gate_items/drack-ion_runic_wave_generator')
         .rarity('epic');
 
     event.create('computational_super_matrix')
         .displayName('Computation Supermatrix')
-        .texture('kubejs:item/computation-super-matrix')
+        .texture('kubejs:item/gate_items/computation-super-matrix')
         .rarity('rare');
 
     event.create('thorium_fuel_rod')
         .displayName('Thorium Fuel Rod')
-        .texture('kubejs:item/rods/thorium_fuel_rod');
+        .texture('kubejs:item/nuclear_rods/thorium_fuel_rod');
 
     event.create('highly_enriched_uranium_fuel_rod')
         .displayName('Highly Enriched Uranium Fuel Rod')
         .tooltip('20 BILLION CALORIES :trolllaugh:')
-        .texture('kubejs:item/rods/high_enriched_uranium_fuel_rod');
+        .texture('kubejs:item/nuclear_rods/high_enriched_uranium_fuel_rod');
 
     event.create('low_enriched_uranium_fuel_rod')
         .displayName('Low Enriched Uranium Fuel Rod')
-        .texture('kubejs:item/rods/low_enriched_uranium_fuel_rod');
+        .texture('kubejs:item/nuclear_rods/low_enriched_uranium_fuel_rod');
 
     event.create('depleted_thorium_fuel_rod')
         .displayName('Depleted Thorium Fuel Rod')
-        .texture('kubejs:item/rods/depleted_thorium_fuel_rod');
+        .texture('kubejs:item/nuclear_rods/depleted_thorium_fuel_rod');
 
     event.create('depleted_highly_enriched_uranium_fuel_rod')
         .displayName('Depleted Highly Enriched Uranium Fuel Rod')
         .tooltip('No more 20 billion calories :waaaaaaaaah')
-        .texture('kubejs:item/rods/depleted_high_enriched_uranium_rod');
+        .texture('kubejs:item/nuclear_rods/depleted_high_enriched_uranium_rod');
 
     event.create('depleted_low_enriched_uranium_fuel_rod')
         .displayName('Depleted Low Enriched Uranium Fuel Rod')
-        .texture('kubejs:item/rods/depleted_low_enriched_uranium_rod');
-
-    event.create('lv_upgrade_kit')
-        .displayName('LV Upgrade Kit')
-        .tooltip("Augment for dynamos, energy cells, fluid cells adn other Thermal Series machines")
-        .texture('kubejs:item/kits/lv_upgrade_kit');
-
-    event.create('mv_upgrade_kit')
-        .displayName('MV Upgrade Kit')
-        .tooltip("Augment for dynamos, energy cells, fluid cells adn other Thermal Series machines")
-        .texture('kubejs:item/kits/mv_upgrade_kit');
-
-    event.create('hv_upgrade_kit')
-        .displayName('HV Upgrade Kit')
-        .tooltip("Augment for dynamos, energy cells, fluid cells adn other Thermal Series machines")
-        .texture('kubejs:item/kits/hv_upgrade_kit');
-
-    event.create('ev_upgrade_kit')
-        .displayName('EV Upgrade Kit')
-        .tooltip("Augment for dynamos, energy cells, fluid cells adn other Thermal Series machines")
-        .texture('kubejs:item/kits/ev_upgrade_kit');
-
-    event.create('lv_arc_kit')
-        .displayName('LV Auxiliary Reaction Chamber Kit')
-        .tooltip("Augment for dynamos")
-        .texture('kubejs:item/kits/lv_arc_kit');
-
-    event.create('mv_arc_kit')
-        .displayName('MV Auxiliary Reaction Chamber Kit')
-        .tooltip("Augment for dynamos")
-        .texture('kubejs:item/kits/mv_arc_kit');
-
-    event.create('hv_arc_kit')
-        .displayName('HV Auxiliary Reaction Chamber Kit')
-        .tooltip("Augment for dynamos")
-        .texture('kubejs:item/kits/hv_arc_kit');
-
-    event.create('ev_arc_kit')
-        .displayName('EV Auxiliary Reaction Chamber Kit')
-        .tooltip("Augment for dynamos")
-        .texture('kubejs:item/kits/ev_arc_kit');
-
-    event.create('lv_mci_kit')
-        .displayName('LV Multi-cycle Injectors Kit')
-        .tooltip("Augment for dynamos")
-        .texture('kubejs:item/kits/lv_mci_kit');
-
-    event.create('mv_mci_kit')
-        .displayName('MV Multi-cycle Injectors Kit')
-        .tooltip("Augment for dynamos")
-        .texture('kubejs:item/kits/mv_mci_kit');
-
-    event.create('hv_mci_kit')
-        .displayName('HV Multi-cycle Injectors Kit')
-        .tooltip("Augment for dynamos")
-        .texture('kubejs:item/kits/hv_mci_kit');
-
-    event.create('ev_mci_kit')
-        .displayName('EV Multi-cycle Injectors Kit')
-        .tooltip("Augment for dynamos")
-        .texture('kubejs:item/kits/ev_mci_kit');
+        .texture('kubejs:item/nuclear_rods/depleted_low_enriched_uranium_rod');
 
     event.create('coin')
         .displayName('StarT Coin')
@@ -182,19 +121,19 @@ StartupEvents.registry('item', event => {
 
     event.create('draconic_stem_cells')
         .displayName('Draconic Stem Cells')
-        .texture('kubejs:item/drac/draconic_stem_cells');
+        .texture('kubejs:item/draconic/draconic_stem_cells');
 
     event.create('lactating_draconic_cells')
         .displayName('Lactating Draconic Cells')
-        .texture('kubejs:item/drac/lactating_draconic_cells');
+        .texture('kubejs:item/draconic/lactating_draconic_cells');
 
     event.create('draconic_brain_matter_cells')
         .displayName('Draconic Brain Matter Cells')
-        .texture('kubejs:item/drac/draconic_brain_matter_cells');
+        .texture('kubejs:item/draconic/draconic_brain_matter_cells');
 
     event.create('draconic_scale_cells')
         .displayName('Draconic Scale Cells')
-        .texture('kubejs:item/drac/draconic_scale_cells');
+        .texture('kubejs:item/draconic/draconic_scale_cells');
 
     event.create('multiblock_upgrade_kit')
         .displayName('Multiblock Upgrade Kit')
@@ -206,6 +145,28 @@ StartupEvents.registry('item', event => {
             .texture(`kubejs:item/energy_cores/${tier}_energy_core`);
     });
 
+    // Mycelium Leather
+    event.create('compressed_mycelium');
+    event.create('smoked_mycelium');
+    event.create('mycelium_growth');
+
+    // Universal Circuits
+
+    const circuitTiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev"];
+
+    let tier_capitalized;
+    circuitTiers.forEach(tier => {
+        if(tier == 'luv') {
+            tier_capitalized = 'LuV';
+        } else {
+            tier_capitalized = tier.toUpperCase();
+        };
+        event.create(`${tier}_universal_circuit`)
+            .texture(`kubejs:item/universal_circuits/${tier}_universal_circuit`)
+            .displayName(`${tier_capitalized} Universal Circuit`)
+            .tooltip('§o§7For use with AE2 autocrafting');
+    });
+    
     //plant balls
     ['plants', 'roots', 'seeds', 'compost'].forEach(type => {
         event.create(`ball_${type}`)
@@ -243,7 +204,6 @@ StartupEvents.registry('item', event => {
     event.create(`cracked_blue_topaz_geode`)
         .displayName(`Cracked Blue Topaz Geode`)
         .texture(`kubejs:item/geodes/cracked_blue_topaz_geode`);
-    
 });
 
 // Custom Blocks
@@ -537,7 +497,6 @@ StartupEvents.registry('block', event => {
         .energyDiscount(16)
         .tier(10)
         .coilMaterial(() => GTMaterials.get('zalloy'))
-        .textureAll('kubejs:block/coils/machine_coil_zalloy')
         .hardness(5)
         .soundType('metal')
         .requiresTool(true)
@@ -568,42 +527,5 @@ StartupEvents.registry('block', event => {
         .tagBlock("mineable/axe")
         .tagBlock('minecraft:needs_stone_tool')
         .textureAll('kubejs:block/multiblock/meshblock');
-
-    //Coagulated blocks
-    event.create('coagulated_iron_mixture')
-        .displayName('Coagulated Iron Mixture')
-        .hardness(5)
-        .resistance(5)
-        .material('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .textureAll('kubejs:block/coagulated_iron_mixture');
-
-    event.create('coagulated_copper_mixture')
-        .displayName('Coagulated Copper Mixture')
-        .hardness(5)
-        .resistance(5)
-        .material('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .textureAll('kubejs:block/coagulated_copper_mixture');
-
-    event.create('coagulated_quartz_mixture')
-        .displayName('Coagulated Quartz Mixture')
-        .hardness(5)
-        .resistance(5)
-        .material('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .textureAll('kubejs:block/coagulated_quartz_mixture');
-
-    event.create('coagulated_lava')
-        .displayName('Coagulated Lava')
-        .hardness(5)
-        .resistance(5)
-        .material('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .textureAll('kubejs:block/coagulated_lava');
 
 });

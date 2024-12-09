@@ -30,25 +30,26 @@ ServerEvents.recipes(event => {
         'gtceu:nether_star_lens'
     );
 
-    event.recipes.create.mixing('3x gtceu:bronze_ingot', ['3x minecraft:copper_ingot', '#forge:ingots/tin']).heatRequirement('lowheated');
-    event.recipes.create.mixing('1x gtceu:red_alloy_ingot', ['minecraft:copper_ingot', '4x minecraft:redstone']).heatRequirement('lowheated');
-    event.recipes.create.mixing('3x gtceu:brass_ingot', ['3x minecraft:copper_ingot', '#forge:ingots/zinc']).heatRequirement('lowheated');
-    event.recipes.create.mixing('2x gtceu:invar_ingot', ['2x minecraft:iron_ingot', '#forge:ingots/nickel']).heatRequirement('lowheated');
-    event.recipes.create.mixing('1x gtceu:soul_infused_ingot', ['2x thermal_extra:soul_sand_dust', '#forge:ingots/invar']).heatRequirement('lowheated');
-
     event.shaped(Item.of('gtceu:wood_plate'), [
         'SSS'
     ], {
         S: '#minecraft:wooden_slabs'
     });
 
+    //glass tube shenanigans
     event.shaped(Item.of('gtceu:glass_tube'), [
         '   ',
         'PPP',
         'PPP'
     ], {
-        P: '#forge:glass_panes'
+        P: 'minecraft:glass_pane'
     });
+
+    ['tiled','framed','horizontal_framed','vertical_framed'].forEach(type => {
+        event.remove({ id: `create:smelting/glass_pane_from_${type}_glass_pane`})
+    });
+
+    event.remove({ id: 'create:splashing/stained_glass'})
 
     event.shaped(Item.of('8x gtceu:compressed_fireclay'), [
         'DDD',
@@ -60,6 +61,7 @@ ServerEvents.recipes(event => {
     }).keepIngredient('gtceu:brick_wooden_form');
 
     event.recipes.create.mixing('4x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated');
+
     event.recipes.create.pressing('gtceu:rubber_plate', 'thermal:cured_rubber');
 
     event.recipes.gtceu.fluid_solidifier('gtceu:raw_rubber')
@@ -79,6 +81,25 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:rubber 576')
         .duration(240)
         .EUt(8);
+
+    //Recipe conflict fix
+    //ethane+chlorine
+    event.remove({id: 'gtceu:chemical_reactor/vinyl_chloride_from_ethane'})
+    event.recipes.gtceu.chemical_reactor('vinyl_chloride_from_ethane')
+        .inputFluids('gtceu:chlorine 4000', 'gtceu:ethane 1000')
+        .outputFluids('gtceu:vinyl_chloride 1000','gtceu:hydrochloric_acid 3000')
+        .duration(160)
+        .EUt(30)
+        .circuit(1);
+
+    //remove the code above when GT fixes it
+    event.remove({id: 'gtceu:chemical_reactor/dichloroethane'})
+    event.recipes.gtceu.chemical_reactor('dichloroethane')
+        .inputFluids('gtceu:ethane 1000', 'gtceu:chlorine 2000')
+        .outputFluids('gtceu:dichloroethane 1000','gtceu:hydrochloric_acid 2000')
+        .duration(200)
+        .EUt(120)
+        .circuit(0);
 
     event.recipes.gtceu.large_chemical_reactor('latex_rubber')
         .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
@@ -259,11 +280,10 @@ ServerEvents.recipes(event => {
         R: 'gtceu:rubber_plate'
     });
 
-    event.recipes.create.pressing('gtceu:lead_plate', 'gtceu:lead_ingot');
-    event.recipes.create.pressing('gtceu:silver_plate', 'gtceu:silver_ingot');
-    event.recipes.create.pressing('gtceu:tin_plate', 'gtceu:tin_ingot');
-    event.recipes.create.pressing('gtceu:zinc_plate', 'gtceu:zinc_ingot');
-    event.recipes.create.pressing('gtceu:bronze_plate', 'gtceu:bronze_ingot');
+    //plates
+    ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron'].forEach(type => {
+        event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`);
+    });
   
     event.replaceInput({id: 'enderchests:ender_pouch'}, 'minecraft:leather', 'gtceu:carbon_fiber_plate');
     event.shaped(Item.of('create_new_age:netherite_magnet'), [
@@ -388,32 +408,78 @@ ServerEvents.recipes(event => {
     event.recipes.create.item_application('gtceu:t_large_wiremill', ['gtceu:hv_wiremill', 'kubejs:multiblock_upgrade_kit']);
     event.recipes.create.item_application('gtceu:t_large_macerator', ['gtceu:hv_macerator', 'kubejs:multiblock_upgrade_kit']);
     event.recipes.create.item_application('gtceu:large_rock_crusher', ['gtceu:hv_rock_crusher', 'kubejs:multiblock_upgrade_kit']);
-/*
-    event.remove({id: 'exdeorum:barrel_fluid_mixing/stone'});
+
+    // Mycelium Leather
+    event.recipes.create.pressing('kubejs:compressed_mycelium', 'kubejs:mycelium_growth');
+    event.smoking('kubejs:smoked_mycelium', 'kubejs:compressed_mycelium');
+    event.recipes.create.pressing('minecraft:leather', 'kubejs:smoked_mycelium');
+
+    // Warping recipes
+    [{input: 'architects_palette:abyssaline_lamp', output: 'architects_palette:hadaline_lamp'},
+        {input: 'architects_palette:abyssaline_pillar', output: 'architects_palette:hadaline_pillar'},
+        {input: 'architects_palette:abyssaline_bricks', output: 'architects_palette:hadaline_bricks'},
+        {input: 'architects_palette:chiseled_abyssaline_bricks', output: 'chiseled_architects_palette:chiseled_hadaline_bricks'},
+        {input: 'architects_palette:sunstone', output: 'architects_palette:moonstone'},
+        {input: 'gtceu:steel_ingot', output: 'architects_palette:unobtanium'},
+        {input: 'minecraft:granite', output: 'architects_palette:onyx'},
+        {input: '#minecraft:logs', output: 'architects_palette:twisted_log'},
+        {input: 'architects_palette:abyssaline', output: 'architects_palette:hadaline'},
+        {input: 'architects_palette:abyssaline_tiles', output: 'architects_palette:hadaline_tiles'},
+        {input: '#minecraft:planks', output: 'architects_palette:twisted_planks'},
+        {input: 'minecraft:diorite', output: 'architects_palette:nebulite'},
+        {input: 'architects_palette:rotten_flesh_block', output: 'architects_palette:entrails'},
+        {input: 'minecraft:blackstone', output: 'architects_palette:craterstone'},
+        {input: 'minecraft:andesite', output: 'architects_palette:esoterrack'},
+        {input: 'minecraft:polished_blackstone_bricks', output: 'architects_palette:moonshale_bricks'},
+        {input: 'minecraft:basalt', output: 'architects_palette:moonshale'},
+        {input: '#minecraft:saplings', output: 'architects_palette:twisted_sapling'},
+        {input: '#minecraft:leaves', output: 'architects_palette:twisted_leaves'}
+    ].forEach((prop) => {
+        event.recipes.create.haunting(Item.of(prop.output), Item.of(prop.input));
+    });
+
+    //UHV transformer fix
+    event.shaped(Item.of('gtceu:uhv_transformer_1a'), [
+        'UCC',
+        'CH ',
+        'UCC'], {
+        U: 'gtceu:uhpic_chip',
+        C: 'gtceu:europium_single_cable',
+        H: 'gtceu:uhv_machine_hull'
+    });
+    //rutile fix
+    event.remove({ id: 'gtceu:electric_blast_furnace/rutile_from_ilmenite' })
+    event.recipes.gtceu.electric_blast_furnace('electric_blast_furnace/rutile_from_ilmenite')
+        .itemInputs('10x gtceu:ilmenite_dust', '2x gtceu:carbon_dust')
+        .itemOutputs('2x gtceu:wrought_iron_ingot','2x gtceu:rutile_dust')
+        .outputFluids('gtceu:carbon_monoxide 2000')
+        .blastFurnaceTemp(1700)
+        .duration(1600)
+        .EUt(480);
+
+    //cobblestone farm fix
+    event.remove({ id:'exnihilosequentia:solidify/ens_cobblestone' })
     event.custom({
-        "type": "exdeorum:barrel_fluid_mixing",
-        "additive_fluid": "minecraft:lava",
-        "base_fluid": "minecraft:water",
-        "base_fluid_amount": 1000,
-        "consumes_additive": false,
+        "type": "exnihilosequentia:solidifying",
+        "fluidInTank": "minecraft:water 1000",
+        "fluidOnTop": "minecraft:lava 1000",
         "result": "minecraft:cobblestone"
     });
-*/
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {
     if (event.player.isCrouching() && event.player.getMainHandItem() == null) {
         if (Math.random() < 0.75) {
-            event.block.popItemFromFace(Item.of('exdeorum:stone_pebble'), 'up');
+            event.block.popItemFromFace(Item.of('exnihilosequentia:stone_pebble'), 'up');
         }
         if (Math.random() < 0.5) {
-            event.block.popItemFromFace(Item.of('exdeorum:andesite_pebble'), 'up');
+            event.block.popItemFromFace(Item.of('exnihilosequentia:andesite_pebble'), 'up');
         }
         if (Math.random() < 0.5) {
-            event.block.popItemFromFace(Item.of('exdeorum:granite_pebble'), 'up');
+            event.block.popItemFromFace(Item.of('exnihilosequentia:granite_pebble'), 'up');
         }
         if (Math.random() < 0.5) {
-            event.block.popItemFromFace(Item.of('exdeorum:diorite_pebble'), 'up');
+            event.block.popItemFromFace(Item.of('exnihilosequentia:diorite_pebble'), 'up');
         }
     }
-})
+});

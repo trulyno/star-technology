@@ -1,3 +1,4 @@
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('component_assembly')
         .category('component_assembly')

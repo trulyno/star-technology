@@ -161,9 +161,8 @@
     "material.gtceu.strontianite": "Strontianite",
     "material.gtceu.celestine": "Celestine",
     "material.gtceu.indium_tin_lead_cadmium_soldering_alloy": "Indium-Tin-Lead-Cadmium Soldering Alloy",
-    "gtceu.nuclear_reactor": "Nuclear Reactor",
+    "gtceu.nuclear_fission": "Nuclear Fission",
     "block.gtceu.nuclear_reactor": "Nuclear Reactor",
-    "gtceu.nuclear_reactor.tooltip": "DEPRECATED. Will be removed next update!",
     "gtceu.nuclear_turbine": "Nuclear Turbine",
     "block.gtceu.nuclear_turbine": "Nuclear Turbine",
     "gtceu.nuclear_turbine.tooltip": "DEPRECATED. Will be removed next update!",
@@ -346,4 +345,10 @@
 
     "gtceu.void_excavator": "Void Excavator",
     "block.gtceu.void_excavator": "Void Excavator"
+    
+    "block.gtceu.solid_blast_furnace": "Solid Blast Furnace",
+    "block.gtceu.solid_blast_furnace.@Tooltip0": "§7An upgraded Primitive Blast Furnace",
+    "gtceu.solid_blast_furnace": "Solid Blast Furnace",
+
+    "gtceu.jei.ore_vein.zapolite_vein": "Abydos Zapolite Vein"
 }

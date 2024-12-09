@@ -1,12 +1,19 @@
 {
-	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "shop"
 	group: "28726466D987C725"
 	icon: "kubejs:coin"
-	id: "37A847E834E8225E"
-	order_index: 5
+	id: "3CEC7F7BAD54E4C6"
+	images: [{
+		height: 5.0d
+		image: "kubejs:item/coin"
+		rotation: 0.0d
+		width: 5.0d
+		x: 0.0d
+		y: -4.5d
+	}]
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -29,8 +36,8 @@
 				type: "item"
 			}]
 			title: "Bronze"
-			x: -4.0d
-			y: -2.5d
+			x: -5.0d
+			y: -3.5d
 		}
 		{
 			can_repeat: true
@@ -51,8 +58,8 @@
 				type: "item"
 			}]
 			title: "Gravel"
-			x: -1.0d
-			y: -2.5d
+			x: -5.0d
+			y: -2.0d
 		}
 		{
 			can_repeat: true
@@ -73,15 +80,15 @@
 				type: "item"
 			}]
 			title: "Wood"
-			x: -3.0d
-			y: -2.5d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
 			can_repeat: true
 			dependencies: ["1F5CCE8CFD02903A"]
 			icon: {
 				Count: 1
-				id: "exdeorum:flint_mesh"
+				id: "exnihilosequentia:flint_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -94,7 +101,7 @@
 				id: "5DC1177B2FF40D0C"
 				item: {
 					Count: 1
-					id: "exdeorum:flint_mesh"
+					id: "exnihilosequentia:flint_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:fortune"
@@ -109,7 +116,8 @@
 				{
 					consume_items: true
 					id: "63A8C927CCB10956"
-					item: "exdeorum:flint_mesh"
+					item: "exnihilosequentia:flint_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -121,8 +129,8 @@
 				}
 			]
 			title: "Enchant your Flint Mesh with Fortune"
-			x: -2.5d
-			y: -5.5d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -176,8 +184,8 @@
 				type: "item"
 			}]
 			title: "Bus/Hatch Pack"
-			x: -3.5d
-			y: -1.5d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			can_repeat: true
@@ -222,8 +230,8 @@
 				type: "item"
 			}]
 			title: "Jet Boots"
-			x: 0.0d
-			y: -2.5d
+			x: -3.5d
+			y: -5.5d
 		}
 		{
 			can_repeat: true
@@ -271,8 +279,8 @@
 				type: "item"
 			}]
 			title: "Basic Circuit Components"
-			x: 4.0d
-			y: -2.5d
+			x: -3.5d
+			y: -4.0d
 		}
 		{
 			can_repeat: true
@@ -294,7 +302,7 @@
 				type: "item"
 			}]
 			title: "Wafers"
-			x: 1.0d
+			x: -3.5d
 			y: -2.5d
 		}
 		{
@@ -329,7 +337,7 @@
 			}]
 			title: "Magnet"
 			x: 2.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			can_repeat: true
@@ -363,8 +371,8 @@
 				type: "item"
 			}]
 			title: "Flux Networks Connectors Pack"
-			x: 3.0d
-			y: -2.5d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
 			can_repeat: true
@@ -386,8 +394,8 @@
 				type: "item"
 			}]
 			title: "Steel"
-			x: -3.5d
-			y: -3.5d
+			x: -6.0d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -409,8 +417,8 @@
 				type: "item"
 			}]
 			title: "Aluminium"
-			x: -2.5d
-			y: -3.5d
+			x: -4.5d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -432,12 +440,12 @@
 				type: "item"
 			}]
 			title: "Stainless Steel"
-			x: -1.5d
-			y: -3.5d
+			x: -3.0d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
-			dependencies: ["586E4409BEF993FD"]
+			dependencies: ["235423100BBE5C81"]
 			icon: { Count: 16, id: "gtceu:titanium_ingot" }
 			id: "1FB7685565AC4703"
 			rewards: [{
@@ -455,8 +463,8 @@
 				type: "item"
 			}]
 			title: "Titanium"
-			x: -0.5d
-			y: -3.5d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -478,8 +486,8 @@
 				type: "item"
 			}]
 			title: "Tungsten Steel"
-			x: 0.5d
-			y: -3.5d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -502,7 +510,7 @@
 			}]
 			title: "Rhodium Plated Palladium"
 			x: 1.5d
-			y: -3.5d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -524,8 +532,8 @@
 				type: "item"
 			}]
 			title: "Naquadah Alloy"
-			x: 2.5d
-			y: -3.5d
+			x: 3.0d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -547,8 +555,8 @@
 				type: "item"
 			}]
 			title: "Darmstadtium"
-			x: 3.5d
-			y: -3.5d
+			x: 4.5d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -570,18 +578,18 @@
 				type: "item"
 			}]
 			title: "Neutronium"
-			x: 4.5d
-			y: -3.5d
+			x: 6.0d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["53E98CFC7934FA67"]
-			icon: { Count: 16, id: "gtceu:basic_electronic_circuit" }
+			icon: "kubejs:lv_universal_circuit"
 			id: "3B0194BB5769AF29"
 			rewards: [{
 				count: 16
 				id: "65C5F9BDC53689F9"
-				item: "gtceu:basic_electronic_circuit"
+				item: "kubejs:lv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -593,18 +601,18 @@
 				type: "item"
 			}]
 			title: "LV Circuits"
-			x: -4.0d
-			y: -4.5d
+			x: -6.0d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["7836F17B34B47B16"]
-			icon: { Count: 12, id: "gtceu:good_electronic_circuit" }
+			icon: "kubejs:mv_universal_circuit"
 			id: "7A190A198FE42047"
 			rewards: [{
 				count: 12
 				id: "0C6C599ABEBBBA0D"
-				item: "gtceu:good_electronic_circuit"
+				item: "kubejs:mv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -616,18 +624,18 @@
 				type: "item"
 			}]
 			title: "MV Circuits"
-			x: -3.0d
-			y: -4.5d
+			x: -4.5d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["73931EAA3EC5C9A9"]
-			icon: { Count: 10, id: "gtceu:advanced_integrated_circuit" }
+			icon: "kubejs:hv_universal_circuit"
 			id: "2C0031FF5C5B444C"
 			rewards: [{
 				count: 10
 				id: "14A3ED567B1BC3E5"
-				item: "gtceu:advanced_integrated_circuit"
+				item: "kubejs:hv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -639,18 +647,18 @@
 				type: "item"
 			}]
 			title: "HV Circuits"
-			x: -2.0d
-			y: -4.5d
+			x: -3.0d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["52FE319F5E176C37"]
-			icon: { Count: 8, id: "gtceu:micro_processor_computer" }
+			icon: "kubejs:ev_universal_circuit"
 			id: "017A2CD82D56969A"
 			rewards: [{
 				count: 8
 				id: "176A1D6DD84ADC3D"
-				item: "gtceu:micro_processor_computer"
+				item: "kubejs:ev_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -662,18 +670,18 @@
 				type: "item"
 			}]
 			title: "EV Circuits"
-			x: -1.0d
-			y: -4.5d
+			x: -1.5d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["62BA581B2918BB7B"]
-			icon: { Count: 6, id: "gtceu:micro_processor_mainframe" }
+			icon: "kubejs:iv_universal_circuit"
 			id: "52DD5020950CC1FA"
 			rewards: [{
 				count: 6
 				id: "613FA1DD90B6474C"
-				item: "gtceu:micro_processor_mainframe"
+				item: "kubejs:iv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -686,17 +694,17 @@
 			}]
 			title: "IV Circuits"
 			x: 0.0d
-			y: -4.5d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["53A9F3758C218CDC"]
-			icon: { Count: 4, id: "gtceu:nano_processor_mainframe" }
+			icon: "kubejs:luv_universal_circuit"
 			id: "7A487C3931997719"
 			rewards: [{
 				count: 4
 				id: "5E0980756D95A661"
-				item: "gtceu:nano_processor_mainframe"
+				item: "kubejs:luv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -708,18 +716,18 @@
 				type: "item"
 			}]
 			title: "LuV Circuits"
-			x: 1.0d
-			y: -4.5d
+			x: 1.5d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["79428BAEAA7856E1"]
-			icon: { Count: 3, id: "gtceu:quantum_processor_mainframe" }
+			icon: "kubejs:zpm_universal_circuit"
 			id: "6C496B6F76ECAD88"
 			rewards: [{
 				count: 3
 				id: "04D8F950896F7BB6"
-				item: "gtceu:quantum_processor_mainframe"
+				item: "kubejs:zpm_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -731,18 +739,18 @@
 				type: "item"
 			}]
 			title: "ZPM Circuits"
-			x: 2.0d
-			y: -4.5d
+			x: 3.0d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["3FC351F05F2AC743"]
-			icon: { Count: 2, id: "gtceu:crystal_processor_mainframe" }
+			icon: "kubejs:uv_universal_circuit"
 			id: "38E6B3EBC483B21F"
 			rewards: [{
 				count: 2
 				id: "16C3772605027212"
-				item: "gtceu:crystal_processor_mainframe"
+				item: "kubejs:uv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -754,17 +762,17 @@
 				type: "item"
 			}]
 			title: "UV Circuits"
-			x: 3.0d
-			y: -4.5d
+			x: 4.5d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["707C2E9BA62A60C5"]
-			icon: "gtceu:wetware_processor_mainframe"
+			icon: "kubejs:uhv_universal_circuit"
 			id: "54562180EA00C939"
 			rewards: [{
 				id: "0234D6BB39A30A44"
-				item: "gtceu:wetware_processor_mainframe"
+				item: "kubejs:uhv_universal_circuit"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -776,15 +784,15 @@
 				type: "item"
 			}]
 			title: "UHV Circuits"
-			x: 4.0d
-			y: -4.5d
+			x: 6.0d
+			y: -0.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["26D3E2C0599B43B2"]
 			icon: {
 				Count: 1
-				id: "exdeorum:string_mesh"
+				id: "exnihilosequentia:string_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -797,7 +805,7 @@
 				id: "41FE7F9FA9C83F58"
 				item: {
 					Count: 1
-					id: "exdeorum:string_mesh"
+					id: "exnihilosequentia:string_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:fortune"
@@ -812,7 +820,8 @@
 				{
 					consume_items: true
 					id: "425FD56B90832122"
-					item: "exdeorum:string_mesh"
+					item: "exnihilosequentia:string_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -824,15 +833,15 @@
 				}
 			]
 			title: "Enchant your String Mesh with Fortune"
-			x: -3.5d
-			y: -5.5d
+			x: 1.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["6D35986F79B17912"]
 			icon: {
 				Count: 1
-				id: "exdeorum:iron_mesh"
+				id: "exnihilosequentia:iron_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -845,7 +854,7 @@
 				id: "13F4E860F9C2F73E"
 				item: {
 					Count: 1
-					id: "exdeorum:iron_mesh"
+					id: "exnihilosequentia:iron_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:fortune"
@@ -860,7 +869,8 @@
 				{
 					consume_items: true
 					id: "571859B8DF7EF7D1"
-					item: "exdeorum:iron_mesh"
+					item: "exnihilosequentia:iron_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -872,15 +882,15 @@
 				}
 			]
 			title: "Enchant your Iron Mesh with Fortune"
-			x: -1.5d
-			y: -5.5d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["7014892C27EC22B7"]
 			icon: {
 				Count: 1
-				id: "exdeorum:golden_mesh"
+				id: "exnihilosequentia:diamond_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -893,7 +903,7 @@
 				id: "2659942480796E56"
 				item: {
 					Count: 1
-					id: "exdeorum:golden_mesh"
+					id: "exnihilosequentia:diamond_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:fortune"
@@ -908,7 +918,8 @@
 				{
 					consume_items: true
 					id: "1722F86CFB5F67A1"
-					item: "exdeorum:golden_mesh"
+					item: "exnihilosequentia:diamond_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -920,15 +931,15 @@
 				}
 			]
 			title: "Enchant your Diamond Mesh with Fortune"
-			x: -0.5d
-			y: -5.5d
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["6EF7F39B52B77535"]
 			icon: {
 				Count: 1
-				id: "exdeorum:diamond_mesh"
+				id: "exnihilosequentia:emerald_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -941,7 +952,7 @@
 				id: "490B36C229E550E0"
 				item: {
 					Count: 1
-					id: "exdeorum:diamond_mesh"
+					id: "exnihilosequentia:emerald_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:fortune"
@@ -956,7 +967,8 @@
 				{
 					consume_items: true
 					id: "797B5286B0C89A8A"
-					item: "exdeorum:diamond_mesh"
+					item: "exnihilosequentia:emerald_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -968,15 +980,15 @@
 				}
 			]
 			title: "Enchant your Emerald Mesh with Fortune"
-			x: 0.5d
-			y: -5.5d
+			x: 5.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["3D3E637BCB06115F"]
 			icon: {
 				Count: 1
-				id: "exdeorum:netherite_mesh"
+				id: "exnihilosequentia:netherite_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -989,7 +1001,7 @@
 				id: "3EB06A790DDBA97C"
 				item: {
 					Count: 1
-					id: "exdeorum:netherite_mesh"
+					id: "exnihilosequentia:netherite_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:fortune"
@@ -1004,7 +1016,8 @@
 				{
 					consume_items: true
 					id: "57A7F2FDACA1B964"
-					item: "exdeorum:netherite_mesh"
+					item: "exnihilosequentia:netherite_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1016,15 +1029,15 @@
 				}
 			]
 			title: "Enchant your Netherite Mesh with Fortune"
-			x: 1.5d
-			y: -5.5d
+			x: 6.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["26D3E2C0599B43B2"]
 			icon: {
 				Count: 1
-				id: "exdeorum:string_mesh"
+				id: "exnihilosequentia:string_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1037,7 +1050,7 @@
 				id: "185E82BDEAD4D6E3"
 				item: {
 					Count: 1
-					id: "exdeorum:string_mesh"
+					id: "exnihilosequentia:string_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:efficiency"
@@ -1052,7 +1065,8 @@
 				{
 					consume_items: true
 					id: "661C89B6A3FEDFCD"
-					item: "exdeorum:string_mesh"
+					item: "exnihilosequentia:string_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1064,15 +1078,15 @@
 				}
 			]
 			title: "Enchant your String Mesh with Efficiency"
-			x: -3.0d
-			y: -6.5d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["1F5CCE8CFD02903A"]
 			icon: {
 				Count: 1
-				id: "exdeorum:flint_mesh"
+				id: "exnihilosequentia:flint_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1085,7 +1099,7 @@
 				id: "5080FC4B4BAD15EA"
 				item: {
 					Count: 1
-					id: "exdeorum:flint_mesh"
+					id: "exnihilosequentia:flint_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:efficiency"
@@ -1100,7 +1114,8 @@
 				{
 					consume_items: true
 					id: "7C858C139CF51BFC"
-					item: "exdeorum:flint_mesh"
+					item: "exnihilosequentia:flint_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1112,15 +1127,15 @@
 				}
 			]
 			title: "Enchant your Flint Mesh with Efficiency"
-			x: -2.0d
-			y: -6.5d
+			x: -2.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["6D35986F79B17912"]
 			icon: {
 				Count: 1
-				id: "exdeorum:iron_mesh"
+				id: "exnihilosequentia:iron_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1133,7 +1148,7 @@
 				id: "2AEDB43683F828CF"
 				item: {
 					Count: 1
-					id: "exdeorum:iron_mesh"
+					id: "exnihilosequentia:iron_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:efficiency"
@@ -1148,7 +1163,8 @@
 				{
 					consume_items: true
 					id: "5E21F03B7225BD29"
-					item: "exdeorum:iron_mesh"
+					item: "exnihilosequentia:iron_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1160,15 +1176,15 @@
 				}
 			]
 			title: "Enchant your Iron Mesh with Efficiency"
-			x: -1.0d
-			y: -6.5d
+			x: -3.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["7014892C27EC22B7"]
 			icon: {
 				Count: 1
-				id: "exdeorum:golden_mesh"
+				id: "exnihilosequentia:diamond_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1181,7 +1197,7 @@
 				id: "70852963AA0FF27E"
 				item: {
 					Count: 1
-					id: "exdeorum:golden_mesh"
+					id: "exnihilosequentia:diamond_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:efficiency"
@@ -1196,7 +1212,8 @@
 				{
 					consume_items: true
 					id: "173B5295C7E6D12B"
-					item: "exdeorum:golden_mesh"
+					item: "exnihilosequentia:diamond_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1208,15 +1225,15 @@
 				}
 			]
 			title: "Enchant your Diamond Mesh with Efficiency"
-			x: 0.0d
-			y: -6.5d
+			x: -4.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["6EF7F39B52B77535"]
 			icon: {
 				Count: 1
-				id: "exdeorum:diamond_mesh"
+				id: "exnihilosequentia:emerald_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1229,7 +1246,7 @@
 				id: "0C25448FF71626A7"
 				item: {
 					Count: 1
-					id: "exdeorum:diamond_mesh"
+					id: "exnihilosequentia:emerald_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:efficiency"
@@ -1244,7 +1261,8 @@
 				{
 					consume_items: true
 					id: "61BEBADDC280347B"
-					item: "exdeorum:diamond_mesh"
+					item: "exnihilosequentia:emerald_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1256,15 +1274,15 @@
 				}
 			]
 			title: "Enchant your Emerald Mesh with Efficiency"
-			x: 1.0d
-			y: -6.5d
+			x: -5.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["3D3E637BCB06115F"]
 			icon: {
 				Count: 1
-				id: "exdeorum:netherite_mesh"
+				id: "exnihilosequentia:netherite_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1277,7 +1295,7 @@
 				id: "0F53D53AEBDF3985"
 				item: {
 					Count: 1
-					id: "exdeorum:netherite_mesh"
+					id: "exnihilosequentia:netherite_mesh"
 					tag: {
 						Enchantments: [{
 							id: "minecraft:efficiency"
@@ -1292,7 +1310,8 @@
 				{
 					consume_items: true
 					id: "671BB96C54B44A18"
-					item: "exdeorum:netherite_mesh"
+					item: "exnihilosequentia:netherite_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1304,15 +1323,19 @@
 				}
 			]
 			title: "Enchant your Netherite Mesh with Efficiency"
-			x: 2.0d
-			y: -6.5d
+			x: -6.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
-			dependencies: ["26D3E2C0599B43B2"]
+			dependencies: [
+				"26D3E2C0599B43B2"
+				"38F6D390818E34A1"
+			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
-				id: "exdeorum:string_mesh"
+				id: "exnihilosequentia:string_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1325,7 +1348,7 @@
 				id: "7C3B25220E6DAFA3"
 				item: {
 					Count: 1
-					id: "exdeorum:string_mesh"
+					id: "exnihilosequentia:string_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1348,7 +1371,7 @@
 					id: "1E9280CC106CAAFF"
 					item: {
 						Count: 1
-						id: "exdeorum:string_mesh"
+						id: "exnihilosequentia:string_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:fortune"
@@ -1356,6 +1379,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1367,15 +1391,19 @@
 				}
 			]
 			title: "Enchant your Fortune String Mesh with Efficiency"
-			x: -3.5d
-			y: -7.5d
+			x: 1.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["26D3E2C0599B43B2"]
+			dependencies: [
+				"26D3E2C0599B43B2"
+				"1F38B36608488252"
+			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
-				id: "exdeorum:string_mesh"
+				id: "exnihilosequentia:string_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1388,7 +1416,7 @@
 				id: "7B9618C612531343"
 				item: {
 					Count: 1
-					id: "exdeorum:string_mesh"
+					id: "exnihilosequentia:string_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1411,7 +1439,7 @@
 					id: "06DA5607ECC1661B"
 					item: {
 						Count: 1
-						id: "exdeorum:string_mesh"
+						id: "exnihilosequentia:string_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:efficiency"
@@ -1419,6 +1447,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1430,15 +1459,19 @@
 				}
 			]
 			title: "Enchant your Efficiency String Mesh with Fortune"
-			x: -3.0d
-			y: -8.5d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["1F5CCE8CFD02903A"]
+			dependencies: [
+				"1F5CCE8CFD02903A"
+				"694978682B1EF055"
+			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
-				id: "exdeorum:flint_mesh"
+				id: "exnihilosequentia:flint_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1451,7 +1484,7 @@
 				id: "627FFD42C2043610"
 				item: {
 					Count: 1
-					id: "exdeorum:flint_mesh"
+					id: "exnihilosequentia:flint_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1474,7 +1507,7 @@
 					id: "62461F3396D29BD3"
 					item: {
 						Count: 1
-						id: "exdeorum:flint_mesh"
+						id: "exnihilosequentia:flint_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:fortune"
@@ -1482,6 +1515,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1493,15 +1527,19 @@
 				}
 			]
 			title: "Enchant your Fortune Flint Mesh with Efficiency"
-			x: -2.5d
-			y: -7.5d
+			x: 2.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["1F5CCE8CFD02903A"]
+			dependencies: [
+				"1F5CCE8CFD02903A"
+				"533025EDBB0EFDDC"
+			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
-				id: "exdeorum:flint_mesh"
+				id: "exnihilosequentia:flint_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1514,7 +1552,7 @@
 				id: "199E9D4BE3338F7B"
 				item: {
 					Count: 1
-					id: "exdeorum:flint_mesh"
+					id: "exnihilosequentia:flint_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1537,7 +1575,7 @@
 					id: "0A0513DDF4D9B7AC"
 					item: {
 						Count: 1
-						id: "exdeorum:flint_mesh"
+						id: "exnihilosequentia:flint_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:efficiency"
@@ -1545,6 +1583,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1556,15 +1595,19 @@
 				}
 			]
 			title: "Enchant your Efficiency Flint Mesh with Fortune"
-			x: -2.0d
-			y: -8.5d
+			x: -2.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["6D35986F79B17912"]
+			dependencies: [
+				"6D35986F79B17912"
+				"44413FB3A6716F5A"
+			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
-				id: "exdeorum:iron_mesh"
+				id: "exnihilosequentia:iron_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1577,7 +1620,7 @@
 				id: "516BA39BA4B4B937"
 				item: {
 					Count: 1
-					id: "exdeorum:string_mesh"
+					id: "exnihilosequentia:string_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1600,7 +1643,7 @@
 					id: "15BE139DB7A5D565"
 					item: {
 						Count: 1
-						id: "exdeorum:iron_mesh"
+						id: "exnihilosequentia:iron_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:fortune"
@@ -1608,6 +1651,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1619,15 +1663,19 @@
 				}
 			]
 			title: "Enchant your Fortune Iron Mesh with Efficiency"
-			x: -1.5d
-			y: -7.5d
+			x: 3.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["6D35986F79B17912"]
+			dependencies: [
+				"6D35986F79B17912"
+				"3A9A3318D7BAA784"
+			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
-				id: "exdeorum:iron_mesh"
+				id: "exnihilosequentia:iron_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1640,7 +1688,7 @@
 				id: "778803FC0297B802"
 				item: {
 					Count: 1
-					id: "exdeorum:iron_mesh"
+					id: "exnihilosequentia:iron_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1663,7 +1711,7 @@
 					id: "684251205B927BFD"
 					item: {
 						Count: 1
-						id: "exdeorum:iron_mesh"
+						id: "exnihilosequentia:iron_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:efficiency"
@@ -1671,6 +1719,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1682,15 +1731,19 @@
 				}
 			]
 			title: "Enchant your Efficiency Iron Mesh with Fortune"
-			x: -1.0d
-			y: -8.5d
+			x: -3.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["7014892C27EC22B7"]
+			dependencies: [
+				"7014892C27EC22B7"
+				"6357640D88FA93C2"
+			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
-				id: "exdeorum:golden_mesh"
+				id: "exnihilosequentia:diamond_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1703,7 +1756,7 @@
 				id: "0FBE0A1043389FAD"
 				item: {
 					Count: 1
-					id: "exdeorum:golden_mesh"
+					id: "exnihilosequentia:diamond_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1726,7 +1779,7 @@
 					id: "66DB881359151273"
 					item: {
 						Count: 1
-						id: "exdeorum:golden_mesh"
+						id: "exnihilosequentia:diamond_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:fortune"
@@ -1734,6 +1787,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1745,15 +1799,19 @@
 				}
 			]
 			title: "Enchant your Fortune Diamond Mesh with Efficiency"
-			x: -0.5d
-			y: -7.5d
+			x: 4.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["7014892C27EC22B7"]
+			dependencies: [
+				"7014892C27EC22B7"
+				"22AD388EDD1E3E5B"
+			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
-				id: "exdeorum:golden_mesh"
+				id: "exnihilosequentia:diamond_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1766,7 +1824,7 @@
 				id: "4AC9E91C64C67CA8"
 				item: {
 					Count: 1
-					id: "exdeorum:golden_mesh"
+					id: "exnihilosequentia:diamond_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1789,7 +1847,7 @@
 					id: "727F28330FF60765"
 					item: {
 						Count: 1
-						id: "exdeorum:golden_mesh"
+						id: "exnihilosequentia:diamond_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:efficiency"
@@ -1797,6 +1855,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1808,15 +1867,19 @@
 				}
 			]
 			title: "Enchant your Efficiency Diamond Mesh with Fortune"
-			x: 0.0d
-			y: -8.5d
+			x: -4.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["6EF7F39B52B77535"]
+			dependencies: [
+				"6EF7F39B52B77535"
+				"4FB2E6761DC8D654"
+			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
-				id: "exdeorum:diamond_mesh"
+				id: "exnihilosequentia:emerald_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1829,7 +1892,7 @@
 				id: "108121B077CCC9FF"
 				item: {
 					Count: 1
-					id: "exdeorum:diamond_mesh"
+					id: "exnihilosequentia:emerald_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1852,7 +1915,7 @@
 					id: "7C5D569F36D648B0"
 					item: {
 						Count: 1
-						id: "exdeorum:diamond_mesh"
+						id: "exnihilosequentia:emerald_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:fortune"
@@ -1860,6 +1923,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1871,15 +1935,19 @@
 				}
 			]
 			title: "Enchant your Fortune Emerald Mesh with Efficiency"
-			x: 0.5d
-			y: -7.5d
+			x: 5.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["6EF7F39B52B77535"]
+			dependencies: [
+				"6EF7F39B52B77535"
+				"638037CD7EE74995"
+			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
-				id: "exdeorum:diamond_mesh"
+				id: "exnihilosequentia:emerald_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1892,7 +1960,7 @@
 				id: "4645DA3C26DE3F57"
 				item: {
 					Count: 1
-					id: "exdeorum:diamond_mesh"
+					id: "exnihilosequentia:emerald_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1915,7 +1983,7 @@
 					id: "2D26D8958EA565EA"
 					item: {
 						Count: 1
-						id: "exdeorum:diamond_mesh"
+						id: "exnihilosequentia:emerald_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:efficiency"
@@ -1923,6 +1991,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1934,15 +2003,19 @@
 				}
 			]
 			title: "Enchant your Efficiency Emerald Mesh with Fortune"
-			x: 1.0d
-			y: -8.5d
+			x: -5.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["3D3E637BCB06115F"]
+			dependencies: [
+				"3D3E637BCB06115F"
+				"3CA677F7BD2232DD"
+			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
-				id: "exdeorum:netherite_mesh"
+				id: "exnihilosequentia:netherite_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -1955,7 +2028,7 @@
 				id: "45A52E6C751DC3DB"
 				item: {
 					Count: 1
-					id: "exdeorum:netherite_mesh"
+					id: "exnihilosequentia:netherite_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -1978,7 +2051,7 @@
 					id: "790343B55BA8B32B"
 					item: {
 						Count: 1
-						id: "exdeorum:netherite_mesh"
+						id: "exnihilosequentia:netherite_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:fortune"
@@ -1986,6 +2059,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1997,15 +2071,19 @@
 				}
 			]
 			title: "Enchant your Fortune Netherite Mesh with Efficiency"
-			x: 1.5d
-			y: -7.5d
+			x: 6.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			dependencies: ["3D3E637BCB06115F"]
+			dependencies: [
+				"3D3E637BCB06115F"
+				"00727DFA86DC4813"
+			]
+			dependency_requirement: "one_started"
 			icon: {
 				Count: 1
-				id: "exdeorum:netherite_mesh"
+				id: "exnihilosequentia:netherite_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -2018,7 +2096,7 @@
 				id: "33B540ABDE35DF7D"
 				item: {
 					Count: 1
-					id: "exdeorum:netherite_mesh"
+					id: "exnihilosequentia:netherite_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2041,7 +2119,7 @@
 					id: "6E0A2C768DF0AFAB"
 					item: {
 						Count: 1
-						id: "exdeorum:netherite_mesh"
+						id: "exnihilosequentia:netherite_mesh"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:efficiency"
@@ -2049,6 +2127,7 @@
 							}]
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2060,28 +2139,19 @@
 				}
 			]
 			title: "Enchant your Efficiency Netherite Mesh with Fortune"
-			x: 2.0d
-			y: -8.5d
+			x: -6.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
 			dependencies: ["26D3E2C0599B43B2"]
-			icon: {
-				Count: 1
-				id: "exdeorum:string_mesh"
-				tag: {
-					Enchantments: [{
-						id: "minecraft:fortune"
-						lvl: 3s
-					}]
-				}
-			}
+			icon: "exnihilosequentia:string_mesh"
 			id: "55AB09B50F6C6180"
 			rewards: [{
 				id: "1A125B2191226FB3"
 				item: {
 					Count: 1
-					id: "exdeorum:string_mesh"
+					id: "exnihilosequentia:string_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2102,7 +2172,8 @@
 				{
 					consume_items: true
 					id: "5AC4C4F5843C6759"
-					item: "exdeorum:string_mesh"
+					item: "exnihilosequentia:string_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2114,15 +2185,15 @@
 				}
 			]
 			title: "Enchant your String Mesh with Fortune and Efficiency"
-			x: -3.5d
-			y: -9.5d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			can_repeat: true
 			dependencies: ["1F5CCE8CFD02903A"]
 			icon: {
 				Count: 1
-				id: "exdeorum:flint_mesh"
+				id: "exnihilosequentia:flint_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -2135,7 +2206,7 @@
 				id: "59E62BD390C4B753"
 				item: {
 					Count: 1
-					id: "exdeorum:flint_mesh"
+					id: "exnihilosequentia:flint_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2156,7 +2227,8 @@
 				{
 					consume_items: true
 					id: "4210CD3DA604E36D"
-					item: "exdeorum:flint_mesh"
+					item: "exnihilosequentia:flint_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2168,15 +2240,15 @@
 				}
 			]
 			title: "Enchant your Flint Mesh with Fortune and Efficiency"
-			x: -2.5d
-			y: -9.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			can_repeat: true
 			dependencies: ["6D35986F79B17912"]
 			icon: {
 				Count: 1
-				id: "exdeorum:iron_mesh"
+				id: "exnihilosequentia:iron_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -2189,7 +2261,7 @@
 				id: "187FC7FA19BAB978"
 				item: {
 					Count: 1
-					id: "exdeorum:iron_mesh"
+					id: "exnihilosequentia:iron_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2210,7 +2282,8 @@
 				{
 					consume_items: true
 					id: "035D8838C2625767"
-					item: "exdeorum:iron_mesh"
+					item: "exnihilosequentia:iron_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2222,15 +2295,15 @@
 				}
 			]
 			title: "Enchant your Iron Mesh with Fortune and Efficiency"
-			x: -1.5d
-			y: -9.5d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
 			dependencies: ["7014892C27EC22B7"]
 			icon: {
 				Count: 1
-				id: "exdeorum:golden_mesh"
+				id: "exnihilosequentia:diamond_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -2243,7 +2316,7 @@
 				id: "223469E266E8C880"
 				item: {
 					Count: 1
-					id: "exdeorum:golden_mesh"
+					id: "exnihilosequentia:diamond_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2264,7 +2337,8 @@
 				{
 					consume_items: true
 					id: "42D22FDF41EF8F4D"
-					item: "exdeorum:golden_mesh"
+					item: "exnihilosequentia:diamond_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2276,15 +2350,15 @@
 				}
 			]
 			title: "Enchant your Diamond Mesh with Fortune and Efficiency"
-			x: -0.5d
-			y: -9.5d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			can_repeat: true
 			dependencies: ["6EF7F39B52B77535"]
 			icon: {
 				Count: 1
-				id: "exdeorum:diamond_mesh"
+				id: "exnihilosequentia:emerald_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -2297,7 +2371,7 @@
 				id: "2EAE5DE7EB7F1717"
 				item: {
 					Count: 1
-					id: "exdeorum:diamond_mesh"
+					id: "exnihilosequentia:emerald_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2318,7 +2392,8 @@
 				{
 					consume_items: true
 					id: "7776B050FE4F82C7"
-					item: "exdeorum:diamond_mesh"
+					item: "exnihilosequentia:emerald_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2330,15 +2405,15 @@
 				}
 			]
 			title: "Enchant your Emerald Mesh with Fortune and Efficiency"
-			x: 0.5d
-			y: -9.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			can_repeat: true
 			dependencies: ["3D3E637BCB06115F"]
 			icon: {
 				Count: 1
-				id: "exdeorum:netherite_mesh"
+				id: "exnihilosequentia:netherite_mesh"
 				tag: {
 					Enchantments: [{
 						id: "minecraft:fortune"
@@ -2351,7 +2426,7 @@
 				id: "6B5C33917123AFC2"
 				item: {
 					Count: 1
-					id: "exdeorum:netherite_mesh"
+					id: "exnihilosequentia:netherite_mesh"
 					tag: {
 						Enchantments: [
 							{
@@ -2372,7 +2447,8 @@
 				{
 					consume_items: true
 					id: "438BB80C91F29BF6"
-					item: "exdeorum:netherite_mesh"
+					item: "exnihilosequentia:netherite_mesh"
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -2384,8 +2460,8 @@
 				}
 			]
 			title: "Enchant your Netherite Mesh with Fortune and Efficiency"
-			x: 1.5d
-			y: -9.5d
+			x: 0.0d
+			y: 7.0d
 		}
 		{
 			can_repeat: true
@@ -2406,8 +2482,8 @@
 				type: "item"
 			}]
 			title: "Charcoal"
-			x: -2.0d
-			y: -2.5d
+			x: 5.0d
+			y: -3.5d
 		}
 		{
 			icon: {
@@ -2498,7 +2574,7 @@
 					id: "32DB3DA27E572CEA"
 					item: {
 						Count: 1
-						id: "exdeorum:bone_crook"
+						id: "exnihilosequentia:diamond_crook"
 						tag: {
 							Damage: 0
 						}
@@ -2509,7 +2585,7 @@
 					id: "01FA1C18B3DC7FF1"
 					item: {
 						Count: 1
-						id: "exdeorum:diamond_hammer"
+						id: "exnihilosequentia:diamond_hammer"
 						tag: {
 							Damage: 0
 						}
@@ -2526,8 +2602,8 @@
 				type: "item"
 			}]
 			title: "Starting Gear"
-			x: -2.5d
-			y: -1.5d
+			x: 3.5d
+			y: -2.5d
 		}
 		{
 			can_repeat: true
@@ -2708,8 +2784,8 @@
 				type: "item"
 			}]
 			title: "Tool Pack"
-			x: -1.5d
-			y: -1.5d
+			x: 3.5d
+			y: -4.0d
 		}
 		{
 			icon: "effortlessbuilding:elastic_hand"
@@ -2750,8 +2826,8 @@
 				type: "item"
 			}]
 			title: "Effortless Building Pack"
-			x: -0.5d
-			y: -1.5d
+			x: 3.5d
+			y: -5.5d
 		}
 	]
 	title: "Shop"

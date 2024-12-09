@@ -1,2 +1,0 @@
-// Compost colors for skyblockbuilder. You may add your own colors, change existing ones, or remove colors that aren't needed.
-structure_saver, #4a5bdd

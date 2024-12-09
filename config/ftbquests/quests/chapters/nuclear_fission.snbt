@@ -1,8 +1,9 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "nuclear_fission"
-	group: "28726466D987C725"
+	group: ""
 	icon: "nuclearcraft:fission_reactor_controller"
 	id: "24D008972AF0082B"
 	order_index: 4
@@ -22,10 +23,16 @@
 					item: "gtceu:pitchblende_dust"
 					type: "item"
 				}
+				{
+					id: "36E0024101BA46F8"
+					item: "mysticalagradditions:creative_essence"
+					title: "Funny Non Completion Item"
+					type: "item"
+				}
 			]
 			title: "Pitchblende"
-			x: -18.0d
-			y: 1.0d
+			x: -15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["767219E6E2E6D139"]
@@ -35,8 +42,8 @@
 				item: "gtceu:thorium_dust"
 				type: "item"
 			}]
-			x: -16.0d
-			y: 1.0d
+			x: -13.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["767219E6E2E6D139"]
@@ -46,8 +53,8 @@
 				item: "gtceu:uraninite_dust"
 				type: "item"
 			}]
-			x: -18.0d
-			y: 3.0d
+			x: -15.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["555B28C8AC833058"]
@@ -58,8 +65,8 @@
 				title: "Uranium Hexafluoride"
 				type: "checkmark"
 			}]
-			x: -16.0d
-			y: 3.0d
+			x: -13.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5778B52027965868"]
@@ -70,8 +77,8 @@
 				title: "Enriched Uranium Hexafluoride"
 				type: "checkmark"
 			}]
-			x: -14.0d
-			y: 3.0d
+			x: -12.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4A55AE6E3D3CDC2F"]
@@ -81,8 +88,8 @@
 				item: "gtceu:uranium_235_dust"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 3.0d
+			x: -10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5778B52027965868"]
@@ -93,8 +100,8 @@
 				title: "Depleted Uranium Hexafluoride"
 				type: "checkmark"
 			}]
-			x: -14.0d
-			y: 1.0d
+			x: -12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6A7BD0D6EA2FCDC7"]
@@ -104,8 +111,8 @@
 				item: "gtceu:uranium_dust"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -1.0d
+			x: -12.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["512259E6067EAC80"]
@@ -116,8 +123,8 @@
 				item: "nuclearcraft:thorium_232"
 				type: "item"
 			}]
-			x: -16.0d
-			y: -1.0d
+			x: -13.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6AD8C3F9639C236E"]
@@ -128,7 +135,7 @@
 				item: "nuclearcraft:fuel_thorium_tbu"
 				type: "item"
 			}]
-			x: -14.0d
+			x: -12.0d
 			y: -3.0d
 		}
 		{
@@ -143,7 +150,7 @@
 				item: "nuclearcraft:uranium_238"
 				type: "item"
 			}]
-			x: -12.0d
+			x: -10.5d
 			y: -3.0d
 		}
 		{
@@ -155,8 +162,8 @@
 				item: "nuclearcraft:uranium_233"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -1.0d
+			x: -10.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["20B71FEF62270ED4"]
@@ -166,7 +173,7 @@
 				item: "nuclearcraft:neptunium_236"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -7.5d
 			y: -3.0d
 		}
 		{
@@ -177,8 +184,8 @@
 				item: "nuclearcraft:neptunium_237"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -1.0d
+			x: -7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -197,8 +204,8 @@
 				item: "nuclearcraft:caesium_137_dust"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 1.0d
+			x: -7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -219,8 +226,8 @@
 				item: "nuclearcraft:strontium_90_dust"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 3.0d
+			x: -9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["67E788F7480392E1"]
@@ -231,8 +238,8 @@
 				item: "gtceu:barium_dust"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 3.0d
+			x: -7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1F12B21D023F6FE5"]
@@ -243,8 +250,8 @@
 				item: "gtceu:zirconium_dust"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 5.0d
+			x: -9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -258,8 +265,8 @@
 				item: "nuclearcraft:uranium_235"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 1.0d
+			x: -10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -275,7 +282,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["566870992D5221A0"]
@@ -286,8 +293,8 @@
 				item: "gtceu:bismuth_dust"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -5.0d
+			x: -10.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -302,7 +309,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -332,8 +339,8 @@
 				item: "nuclearcraft:plutonium_241"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -1.0d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -351,7 +358,7 @@
 				item: "nuclearcraft:plutonium_242"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.5d
 			y: -3.0d
 		}
 		{
@@ -374,8 +381,8 @@
 				item: "gtceu:molybdenum_dust"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 3.0d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -389,8 +396,8 @@
 				item: "nuclearcraft:fuel_plutonium_lep_241"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.0d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -404,8 +411,8 @@
 				item: "nuclearcraft:fuel_plutonium_hep_241"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -1.0d
+			x: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -425,8 +432,8 @@
 				item: "nuclearcraft:americium_243"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.0d
+			x: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -443,8 +450,8 @@
 				item: "nuclearcraft:curium_246"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.0d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -463,8 +470,8 @@
 				item: "nuclearcraft:berkelium_247"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -1.0d
+			x: 4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -490,8 +497,8 @@
 				item: "nuclearcraft:promethium_147_dust"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.0d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["41BD8974A3F43361"]
@@ -502,8 +509,8 @@
 				item: "gtceu:neodymium_dust"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 5.0d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["773A55B6E0B9A1CB"]
@@ -514,8 +521,8 @@
 				item: "nuclearcraft:plutonium_238"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 1.0d
+			x: -4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7CE7E789CB306B89"]
@@ -525,8 +532,8 @@
 				item: "nuclearcraft:americium_241"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.0d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -540,8 +547,8 @@
 				item: "nuclearcraft:fuel_uranium_heu_233"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -1.0d
+			x: -9.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -555,7 +562,7 @@
 				item: "nuclearcraft:fuel_uranium_leu_233"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.0d
 			y: -3.0d
 		}
 		{
@@ -570,8 +577,8 @@
 				item: "nuclearcraft:fuel_uranium_heu_235"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -5.0d
+			x: -9.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -585,8 +592,8 @@
 				item: "nuclearcraft:fuel_uranium_leu_235"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 1.0d
+			x: -9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -600,8 +607,8 @@
 				item: "nuclearcraft:plutonium_239"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -5.0d
+			x: -4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -615,8 +622,8 @@
 				item: "nuclearcraft:fuel_plutonium_hep_239"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -5.0d
+			x: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -630,7 +637,7 @@
 				item: "nuclearcraft:fuel_plutonium_lep_239"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.0d
 			y: -3.0d
 		}
 		{
@@ -645,7 +652,7 @@
 				item: "nuclearcraft:curium_243"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 1.5d
 			y: -3.0d
 		}
 		{
@@ -660,8 +667,8 @@
 				item: "nuclearcraft:fuel_curium_hecm_243"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -5.0d
+			x: 3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -675,7 +682,7 @@
 				item: "nuclearcraft:fuel_curium_lecm_243"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 3.0d
 			y: -3.0d
 		}
 		{
@@ -691,8 +698,8 @@
 				item: "nuclearcraft:berkelium_248"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 1.0d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["76BD295D9851DB0F"]
@@ -702,8 +709,8 @@
 				item: "nuclearcraft:curium_245"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 1.0d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -717,8 +724,8 @@
 				item: "nuclearcraft:curium_247"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.0d
+			x: 1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -732,8 +739,8 @@
 				item: "nuclearcraft:fuel_americium_hea_242"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -1.0d
+			x: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -747,8 +754,8 @@
 				item: "nuclearcraft:fuel_americium_lea_242"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -762,8 +769,8 @@
 				item: "nuclearcraft:fuel_curium_hecm_245"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.0d
+			x: 3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -777,8 +784,8 @@
 				item: "nuclearcraft:fuel_curium_lecm_245"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 1.0d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -792,8 +799,8 @@
 				item: "nuclearcraft:fuel_curium_lecm_247"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 5.0d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -807,8 +814,8 @@
 				item: "nuclearcraft:fuel_curium_hecm_247"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -822,8 +829,8 @@
 				item: "nuclearcraft:fuel_berkelium_heb_248"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -1.0d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -837,8 +844,8 @@
 				item: "nuclearcraft:fuel_berkelium_leb_248"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 1.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -853,8 +860,8 @@
 				item: "nuclearcraft:europium_155_dust"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 5.0d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["518AA6DE47DEE80E"]
@@ -865,8 +872,8 @@
 				item: "nuclearcraft:gadolinium_dust"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 7.0d
+			x: 1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -883,8 +890,8 @@
 				item: "nuclearcraft:californium_249"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -1.0d
+			x: 7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -898,8 +905,8 @@
 				item: "nuclearcraft:californium_251"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 3.0d
+			x: 7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6DA7DBCFC3B71C31"]
@@ -909,8 +916,8 @@
 				item: "nuclearcraft:californium_252"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 1.0d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -927,8 +934,8 @@
 				item: "nuclearcraft:ruthenium_106_dust"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 5.0d
+			x: 7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["58D6F67AD0346260"]
@@ -939,8 +946,8 @@
 				item: "gtceu:palladium_dust"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 7.0d
+			x: 7.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -954,8 +961,8 @@
 				item: "nuclearcraft:fuel_californium_hecf_251"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 1.0d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -969,8 +976,8 @@
 				item: "nuclearcraft:fuel_californium_lecf_251"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 3.0d
+			x: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -984,7 +991,7 @@
 				item: "nuclearcraft:fuel_californium_hecf_249"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 9.0d
 			y: -3.0d
 		}
 		{
@@ -999,8 +1006,8 @@
 				item: "nuclearcraft:fuel_californium_lecf_249"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -1.0d
+			x: 9.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0EA37291A496BB84"]
@@ -1010,7 +1017,7 @@
 				item: "nuclearcraft:californium_250"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 7.5d
 			y: -3.0d
 		}
 		{
@@ -1076,8 +1083,8 @@
 				}
 			]
 			title: "Fission Reactor"
-			x: -14.0d
-			y: -5.0d
+			x: -12.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6B0FDDBCD3226344"]
@@ -1088,9 +1095,9 @@
 				title: "Fission Reactor Designing"
 				type: "checkmark"
 			}]
-			x: -16.0d
-			y: -5.0d
+			x: -13.5d
+			y: -4.5d
 		}
 	]
-	title: "Nuclear Fission"
+	title: "[Deprecated] Nuclear Fission"
 }

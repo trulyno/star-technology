@@ -352,6 +352,7 @@ materialRegistry(event => {
     GTMaterials.Naquadah.addFlags(dense_plate);
     GTMaterials.NaquadahEnriched.addFlags(dense_plate);
     GTMaterials.Neutronium.addFlags(foil);
+    GTMaterials.Europium.addFlags(small_spring);
     GTMaterials.Zirconium.addFlags(fine_wire); 
     GTMaterials.RedSteel.addFlags(rod, frame);
     GTMaterials.SterlingSilver.addFlags(rod, frame);      
