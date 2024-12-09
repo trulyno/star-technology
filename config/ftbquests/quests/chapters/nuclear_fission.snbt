@@ -1,5 +1,6 @@
 {
 	always_invisible: true
+	autofocus_id: "5244A4B8996133AE"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "nuclear_fission"

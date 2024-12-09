@@ -25,6 +25,6 @@ ServerEvents.recipes(event => {
         .chancedOutput('kubejs:amethyst_geode', 6000, 2000)
         .duration(300)
         .inputStress(256)
-        .EUt(60);
+        .EUt(28);
 
 })

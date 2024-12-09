@@ -34,7 +34,7 @@ config/jei/recipe-category-sort-order.init
 config/oculus.properties
 config/emi.css
 config/jei/world/
-
+ 
 # special ignores for Ultra
 config/worldedit/
 schematics/
