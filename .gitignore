@@ -1,4 +1,30 @@
-# Specific exclusion
+# Ignore the following files/folders
+backups/
+disabledmods/
+ESM/
+jarmods/
+ldlib/
+local/
+logs/
+modernfix/
+mods/
+panoramas/
+patchouli_books/
+resourcepacks/
+saves/
+shaderpacks/
+skyblockbuilder/
+wd_filehost/
+instance.json
+instance.png
+options.txt
+patchouli_data.json
+rhino.local.properties
+usercache.json
+usernamecache.json
+wd_next.txt
+
+## nested files/folders
 config/embeddium-fingerprint.json
 config/embeddium-options.json
 config/embeddium++.toml
@@ -6,24 +32,8 @@ config/fml.toml
 config/jei/recipe-category-sort-order.init
 config/oculus.properties
 config/emi.css
-dimensions.txt
-
 config/jei/world/
+
+# special ignores for Ultra
 config/worldedit/
-
-# Ignore eveything so repository can be used in game instance
-*
-
-# Add directories with soure code
-!config/
-!defaultconfigs/
-!kubejs/
-!mods/panorama/
-!scripts/
-!panoramas/
-
-# Add files in main directory
-!LICENSE
-!README.md
-!panorama.dat
-!.gitignore
+schematics/
