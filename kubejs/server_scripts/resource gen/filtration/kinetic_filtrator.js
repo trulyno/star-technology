@@ -40,4 +40,5 @@ ServerEvents.recipes(event => {
         .duration(320)
         .inputStress(128)
         .rpm(128);
-})
+        
+});

@@ -46,4 +46,4 @@ ServerEvents.recipes(event => {
         .rpm(128)
         .EUt(28);
 
-})
+});
