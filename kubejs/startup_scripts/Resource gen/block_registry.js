@@ -1,32 +1,16 @@
 StartupEvents.registry('block', event => {
     
     //Coagulated blocks
-    event.create('coagulated_iron_mixture')
-        .displayName('Coagulated Iron Mixture')
-        .hardness(5)
-        .resistance(5)
-        .material('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .textureAll('kubejs:block/coagulated_iron_mixture');
-
-    event.create('coagulated_copper_mixture')
-        .displayName('Coagulated Copper Mixture')
-        .hardness(5)
-        .resistance(5)
-        .material('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .textureAll('kubejs:block/coagulated_copper_mixture');
-
-    event.create('coagulated_quartz_mixture')
-        .displayName('Coagulated Quartz Mixture')
-        .hardness(5)
-        .resistance(5)
-        .material('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .textureAll('kubejs:block/coagulated_quartz_mixture');
+    ['iron', 'copper', 'quartz'].forEach(type => {
+        event.create(`coagulated_${type}_mixture`)
+            .displayName(`Coagulated ${type.charAt(0).toUpperCase() + type.slice(1)} Mixture`)
+            .hardness(5)
+            .resistance(5)
+            .material('stone')
+            .requiresTool(true)
+            .tagBlock("mineable/pickaxe")
+            .textureAll(`kubejs:block/resource_gen/coagulated_${type}_mixture`);
+    });
 
     event.create('coagulated_lava')
         .displayName('Coagulated Lava')
@@ -35,6 +19,6 @@ StartupEvents.registry('block', event => {
         .material('stone')
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
-        .textureAll('kubejs:block/coagulated_lava');
+        .textureAll('kubejs:block/resource_gen/coagulated_lava');
         
 });
