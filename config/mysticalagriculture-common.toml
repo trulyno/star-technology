@@ -1,84 +1,48 @@
 
 #General configuration options.
 [General]
-	#The amount of uses the basic Infusion Crystal should have.
-	#Range: > 10
-	infusionCrystalUses = 1000
-	#Should the Wither drop Cognizant Dust when killed with a Mystical Enlightenment enchanted essence weapon?
-	witherDropsCognizant = false
-	#Should vanilla crafting recipes for seeds be generated?
-	seedCraftingRecipes = false
-	#Should the Wither drop essence when killed with an essence weapon?
-	witherDropsEssence = false
-	#Should the Ender Dragon drop Cognizant Dust when killed with a Mystical Enlightenment enchanted essence weapon?
-	dragonDropsCognizant = false
-	#Should wearing a full set of Awakened Supremium armor grant the Plant Growth AOE set bonus?
-	awakenedSupremiumSetBonus = false
-	#Should Supremium Tools be enchantable in an Enchanting Table?
-	enchantableSupremiumTools = true
-	#The amount of time in seconds between each Growth Accelerator growth tick.
-	#Range: > 1
-	growthAcceleratorCooldown = 10
-	#Should fake players be able to use watering cans?
-	fakePlayerWatering = false
-	#Should the Ender Dragon drop essence when killed with an essence weapon?
-	dragonDropsEssence = false
-	#Should right clicking on Farmland with an Essence create Essence Farmland?
-	essenceFarmlandConversion = false
-	#Should crops have a chance of dropping a second seed when harvested?
-	secondarySeedDrops = false
-	#The percentage chance that harvesting a Resource Crop will drop a Fertilized Essence.
-	#Range: 0.0 ~ 1.0
-	fertilizedEssenceChance = 0.0
 	#The percentage chance that a passive or hostile mob will drop an Inferium Essence when killed.
 	#Range: 0.0 ~ 1.0
 	inferiumDropChance = 0.0
+	#The amount of uses the basic Infusion Crystal should have.
+	#Range: > 10
+	infusionCrystalUses = 1000
+	#The amount of time in seconds between each Growth Accelerator growth tick.
+	#Range: > 1
+	growthAcceleratorCooldown = 10
+	#The percentage chance that harvesting a Resource Crop will drop a Fertilized Essence.
+	#Range: 0.0 ~ 1.0
+	fertilizedEssenceChance = 0.1
+	#Should crops have a chance of dropping a second seed when harvested?
+	secondarySeedDrops = false
+	#Should the Wither drop essence when killed with an essence weapon?
+	witherDropsEssence = true
+	#Should the Wither drop Cognizant Dust when killed with a Mystical Enlightenment enchanted essence weapon?
+	witherDropsCognizant = true
+	#Should the Ender Dragon drop essence when killed with an essence weapon?
+	dragonDropsEssence = false
+	#Should the Ender Dragon drop Cognizant Dust when killed with a Mystical Enlightenment enchanted essence weapon?
+	dragonDropsCognizant = false
+	#Should right clicking on Farmland with an Essence create Essence Farmland?
+	essenceFarmlandConversion = false
+	#Should vanilla crafting recipes for seeds be generated?
+	seedCraftingRecipes = false
+	#Should Supremium Tools be enchantable in an Enchanting Table?
+	enchantableSupremiumTools = true
+	#Should fake players be able to use watering cans?
+	fakePlayerWatering = false
+	#Should wearing a full set of Awakened Supremium armor grant the Plant Growth AOE set bonus?
+	awakenedSupremiumSetBonus = false
 
 #World generation options.
 [World]
-	#The percentage chance a Soulium Ore spawns in a Soulstone cluster.
-	#Range: 0.0 ~ 1.0
-	souliumOreChance = 0
-	#The minimum Y level that Prosperity Ore veins can spawn.
-	#Range: -64 ~ 319
-	prosperitySpawnMinY = -60
-	#The maximum Y level that Inferium Ore veins can spawn.
-	#Range: -64 ~ 319
-	inferiumSpawnMaxY = 64
-	#Should Inferium Ore generate in the world?
-	generateInferiumOre = false
-	#The maximum amount of Soulstone blocks that can spawn in a vein.
-	#Range: 0 ~ 64
-	soulstoneSpawnSize = 0
-	#How many Soulstone veins should spawn in a chunk.
-	generateSoulstone = false
-	#How many Soulstone veins should spawn in a chunk.
-	#Range: 0 ~ 128
-	soulstoneSpawnRate = 4
-	#The maximum amount of Prosperity Ore blocks that can spawn in a vein.
-	#Range: 0 ~ 64
-	prosperitySpawnSize = 8
-	#How many Inferium Ore veins should spawn in a chunk.
-	#Range: 0 ~ 128
-	inferiumSpawnRate = 16
-	#The maximum amount of Inferium Ore blocks that can spawn in a vein.
-	#Range: 0 ~ 64
-	inferiumSpawnSize = 8
-	#The minimum Y level that Soulstone veins can spawn.
-	#Range: 0 ~ 128
-	soulstoneSpawnMinY = 0
-	#How many Prosperity Ore veins should spawn in a chunk.
-	#Range: 0 ~ 128
-	prosperitySpawnRate = 12
-	#The maximum Y level that Inferium Ore veins can spawn.
-	#Range: -64 ~ 319
-	inferiumSpawnMinY = -32
-	#The maximum Y level that Prosperity Ore veins can spawn.
-	#Range: -64 ~ 319
-	prosperitySpawnMaxY = 24
-	#The maximum Y level that Soulstone veins can spawn.
-	#Range: 0 ~ 128
-	soulstoneSpawnMaxY = 128
 	#Should Prosperity Ore generate in the world?
 	generateProsperityOre = false
+	#Should Inferium Ore generate in the world?
+	generateInferiumOre = false
+	#Should Soulstone generate in the world?
+	generateSoulstone = false
+	#The percentage chance a Soulium Ore spawns in a Soulstone cluster.
+	#Range: 0.0 ~ 1.0
+	souliumOreChance = 0.0
 

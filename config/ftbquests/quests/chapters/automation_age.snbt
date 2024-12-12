@@ -1,0 +1,2315 @@
+{
+	autofocus_id: "47CD61D6ECD3DC7D"
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "automation_age"
+	group: "1E0FC4EA21F735F7"
+	icon: "gtceu:micro_processor_mainframe"
+	id: "4BF4EE11E23C71FC"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"610F82CD4219EA33"
+				"5A5B3008DBE79D69"
+				"33EAC0B36C9AE671"
+				"23D3BED4F1968AD6"
+			]
+			id: "73931EAA3EC5C9A9"
+			rewards: [{
+				count: 2
+				id: "7FFA32EF0930598E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "First HV circuit"
+			tasks: [{
+				id: "3A642B129CDFDF9D"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0DEEBB486450E74E"
+				"491C4CECC6C24DDF"
+			]
+			icon: "gtceu:ram_chip"
+			id: "610F82CD4219EA33"
+			rewards: [{
+				id: "7C819A6EBDC64873"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "23CB8943BB00D3CE"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:lenses/green"
+						}
+					}
+					title: "Any Green Lenses"
+					type: "item"
+				}
+				{
+					id: "6A3064B0A6DF734E"
+					item: "gtceu:ram_wafer"
+					type: "item"
+				}
+				{
+					id: "72F06BA2200B68AB"
+					item: "gtceu:ram_chip"
+					type: "item"
+				}
+			]
+			title: "RAM Chips"
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"261174370DC87FCB"
+				"7EC83EEF3F7A89B8"
+			]
+			description: ["The final component needed for circuits, you will be able to upgrade these however."]
+			id: "5A5B3008DBE79D69"
+			rewards: [{
+				id: "775091B04625733B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "11207DC62461D6E1"
+				item: "gtceu:transistor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["76B701A5EF4C1EF1"]
+			description: ["Oxidised copper is used for a number of recipes in wire and bolt form."]
+			id: "33EAC0B36C9AE671"
+			rewards: [{
+				id: "06597DE77AAF151D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "166425005C92E0CA"
+				item: "gtceu:annealed_copper_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"73931EAA3EC5C9A9"
+				"68EB3C1DABB1869C"
+				"3CB63B290C9EFAA2"
+			]
+			description: ["Lets you turn your RF into HV power."]
+			id: "34EF34E0E41A6618"
+			rewards: [{
+				id: "65CC51C78EE6F9E2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "71AF286F6CD44B51"
+				item: "gtceu:hv_4a_energy_converter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3F49250E7CE2E282"]
+			description: ["HV superconductor, can hold 16 amps on the 1x cable."]
+			id: "68EB3C1DABB1869C"
+			rewards: [{
+				id: "0ECE3B40ACFB4B01"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DBC9A51999131B1"
+				item: "gtceu:lumium_single_wire"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"56BA79287C4DBE52"
+				"0A03B4D352DCF148"
+			]
+			description: ["Another useful alloy made in the EBF."]
+			id: "3F49250E7CE2E282"
+			rewards: [{
+				id: "512E1AEBD727940D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4554283A64CAC1E3"
+				item: "gtceu:lumium_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7E6BF5B40EA057F5"
+				"261174370DC87FCB"
+			]
+			id: "3CB63B290C9EFAA2"
+			rewards: [{
+				id: "0103A1EEE577BCBC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "07B955A8525595AE"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["73931EAA3EC5C9A9"]
+			id: "75942788374CDEF3"
+			rewards: [{
+				id: "47D65386785B5F06"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66B81E7AFD836D1A"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["73931EAA3EC5C9A9"]
+			description: [
+				"A multiblock that has two uses, either smelting normal items or creating alloys at an extreme rate."
+				""
+				"This is very useful when making printed circuits."
+			]
+			id: "649596731FFA9C9A"
+			rewards: [{
+				id: "1CC5497D89B6D364"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "017B5D18BA10FDF9"
+				item: "gtceu:multi_smelter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["088FE0CF9D07F9C6"]
+			description: ["This is the final version of the MV circuit, however just like the LV circuit, there is a cheaper recipe that unlocks later on."]
+			id: "363F5B598683A074"
+			rewards: [{
+				id: "3A3BA9FB7E4765D6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Third and last MV circuit"
+			tasks: [{
+				id: "0637F58BAD80A44A"
+				item: "gtceu:micro_processor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"75942788374CDEF3"
+				"470EBC3C75C6748E"
+				"41D5FABA8D0BB0AC"
+			]
+			description: ["This is the final version of the LV circuit, however with a bit more progression you will gain access to an even cheaper recipe for it."]
+			id: "088FE0CF9D07F9C6"
+			rewards: [{
+				id: "36565CD30876ABD0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Third and last LV circuit"
+			tasks: [{
+				id: "11003EED75374430"
+				item: "gtceu:microchip_processor"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["363F5B598683A074"]
+			id: "7399429099302C6C"
+			rewards: [{
+				id: "4962712B3775941E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Second HV circuit"
+			tasks: [{
+				id: "2E2AE862474C9506"
+				item: "gtceu:micro_processor_assembly"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"7399429099302C6C"
+				"17C1292018AE363E"
+			]
+			description: ["The new HV circuit can be upgraded into an EV circuit, allowing you to make upgrades to all your machines."]
+			id: "52FE319F5E176C37"
+			rewards: [{
+				count: 2
+				id: "553F96E9B7B1DD15"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "First EV circuit"
+			tasks: [{
+				id: "269EFDE7CEAC3968"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"0DEEBB486450E74E"
+				"491C4CECC6C24DDF"
+			]
+			description: ["Every circuit needs a cpu."]
+			icon: "gtceu:cpu_chip"
+			id: "470EBC3C75C6748E"
+			rewards: [{
+				id: "09900C2F1810939C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4C04A47D0D3EA70A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:lenses/light_blue"
+						}
+					}
+					title: "Any Light Blue Lenses"
+					type: "item"
+				}
+				{
+					id: "1A1986FD48A7F1D5"
+					item: "gtceu:cpu_wafer"
+					type: "item"
+				}
+				{
+					id: "36C6E366D255035A"
+					item: "gtceu:cpu_chip"
+					type: "item"
+				}
+			]
+			title: "CPU Chips"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["261174370DC87FCB"]
+			id: "41D5FABA8D0BB0AC"
+			rewards: [{
+				id: "138F9541C5275C03"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "11E2B1CE93A78156"
+				item: "gtceu:plastic_printed_circuit_board"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3CB63B290C9EFAA2"
+				"73931EAA3EC5C9A9"
+			]
+			description: ["Gotten annoyed that you have to tape or repair your machines every so often? Well just replace it with one of these and never have to worry about maintanace again."]
+			id: "0F144FEF99D7D04C"
+			rewards: [{
+				id: "5A529DFCB691E409"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D5911CFC8C67F3F"
+				item: "gtceu:auto_maintenance_hatch"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3CB63B290C9EFAA2"]
+			id: "1B697A89954BA5FE"
+			rewards: [{
+				count: 2
+				id: "2D9D2C20FC58CB35"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "390A4D9FADC01BDB"
+				item: "gtceu:hv_assembler"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2681E878121B1CF6"
+				"1B697A89954BA5FE"
+			]
+			description: ["Time for an EV EBF."]
+			id: "50CBF077613B6161"
+			rewards: [{
+				id: "5894C32B49A197DE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2193D5FE7D39CE36"
+				item: "gtceu:hv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"491C4CECC6C24DDF"
+				"0DEEBB486450E74E"
+			]
+			description: ["This chip is used to make HV energy hatches and transformers."]
+			icon: "gtceu:lpic_chip"
+			id: "2681E878121B1CF6"
+			rewards: [{
+				id: "3C610FA61B1ADEE0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0451A16C50687AA3"
+					item: "gtceu:orange_glass_lens"
+					type: "item"
+				}
+				{
+					id: "0AA7ABF6563A0D8D"
+					item: "gtceu:lpic_wafer"
+					type: "item"
+				}
+				{
+					id: "4D25FCC34285F20E"
+					item: "gtceu:lpic_chip"
+					type: "item"
+				}
+			]
+			title: "LPIC Chips"
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1B697A89954BA5FE"]
+			description: ["4th tier of mesh which gives you access to new ores for Gravel and Blackstone."]
+			id: "7014892C27EC22B7"
+			rewards: [{
+				id: "0C78A233E971D5DF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2AF25CB188374485"
+				item: "exnihilosequentia:diamond_mesh"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1B697A89954BA5FE"]
+			description: ["Used in flux sieves, it amplifies production, by processing more items at once."]
+			id: "479D3537E1245CA6"
+			rewards: [{
+				id: "32203DD6AC94185B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B02878D7E16D0BE"
+				item: "exmachinis:gold_upgrade"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1B697A89954BA5FE"]
+			description: ["The first upgrade to every circuit component. Is more resource efficent and gives more per craft."]
+			id: "55D8D982524DA85E"
+			rewards: [{
+				id: "596F793272FE0A6A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "294B85DC19339833"
+					item: "gtceu:smd_transistor"
+					type: "item"
+				}
+				{
+					id: "28D6190898B881E4"
+					item: "gtceu:smd_resistor"
+					type: "item"
+				}
+				{
+					id: "406D5FB6A2769E57"
+					item: "gtceu:smd_capacitor"
+					type: "item"
+				}
+				{
+					id: "4E1EBFE665F88378"
+					item: "gtceu:smd_diode"
+					type: "item"
+				}
+				{
+					id: "5B1405C53FBEB9DF"
+					item: "gtceu:smd_inductor"
+					type: "item"
+				}
+			]
+			title: "SMD's"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1B697A89954BA5FE"]
+			description: ["Will increase the power of anything thermal by 64x."]
+			id: "759FF87FC22D814D"
+			rewards: [{
+				id: "76A50DFAE09F8998"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0482AB16D0A2ECAC"
+				item: {
+					Count: 1
+					id: "kubejs:hv_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 64.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2D089B0427CFDBBE"]
+			id: "7B0133D388101F68"
+			rewards: [{
+				id: "3FDC70995B21E529"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "317E07281DE7EE72"
+				item: "gtceu:energy_crystal"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3CB63B290C9EFAA2"]
+			id: "2D089B0427CFDBBE"
+			rewards: [{
+				id: "289E7492A240586B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "128A6C1123F9D708"
+				item: "gtceu:hv_autoclave"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7B0133D388101F68"]
+			description: ["Armor with build in night vision and step assist."]
+			id: "7E670308A773A07E"
+			rewards: [{
+				id: "6B9D1D6EEF48C5A4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "14A5548742BCF392"
+					item: {
+						Count: 1
+						id: "gtceu:nanomuscle_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "12F5CEAF69599D24"
+					item: "gtceu:nanomuscle_chestplate"
+					type: "item"
+				}
+				{
+					id: "36E4C90918F7F813"
+					item: "gtceu:nanomuscle_leggings"
+					type: "item"
+				}
+				{
+					id: "75022F4E9D05EDFC"
+					item: "gtceu:nanomuscle_boots"
+					type: "item"
+				}
+			]
+			title: "NanoMuscle™ Suite"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"73931EAA3EC5C9A9"
+				"3CB63B290C9EFAA2"
+			]
+			hide_dependency_lines: true
+			id: "17C1292018AE363E"
+			rewards: [{
+				id: "0DF694E3A6C0799D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E6892722E099A15"
+				item: "gtceu:cleanroom"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["52FE319F5E176C37"]
+			description: ["EV circuits gives you access to the HV circuit assembler. I recommend putting this in your cleanroom to save time."]
+			id: "47CD61D6ECD3DC7D"
+			rewards: [{
+				id: "02612C98685AC3EB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "05DB4511B7178ADC"
+				item: "gtceu:hv_circuit_assembler"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"52FE319F5E176C37"
+				"55D8D982524DA85E"
+				"47CD61D6ECD3DC7D"
+			]
+			description: ["The end of the circuit upgrade chain will bring you into IV, bet you didnt expect that."]
+			id: "62BA581B2918BB7B"
+			rewards: [{
+				count: 2
+				id: "28AD2132C6479CB0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "First IV circuit"
+			tasks: [{
+				id: "46ED792D357D166C"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"74749B089D50329C"
+				"52FE319F5E176C37"
+				"77303F30F0A44393"
+			]
+			description: ["Allows you to turn RF into EV power."]
+			id: "5D3006AB62E2CE9B"
+			rewards: [{
+				id: "601186952EBAB995"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "45B9F274CC64B9AC"
+				item: "gtceu:ev_4a_energy_converter"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5BA3F17E1C7BE599"]
+			description: ["EV superconductor, can hold 32 amps in a 1x cable."]
+			id: "77303F30F0A44393"
+			rewards: [{
+				id: "59B7A01CB85BA964"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "08934794978054AA"
+				item: "gtceu:enderium_single_wire"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1DA6B3308C263A6F"]
+			id: "5BA3F17E1C7BE599"
+			rewards: [{
+				id: "363322517E6CC58D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "101C2CEFF6C83034"
+				item: "gtceu:enderium_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"0E61DC74B2E2C962"
+				"1646D6D439B260D3"
+			]
+			hide_dependency_lines: true
+			id: "32B878D63A6AB6D3"
+			rewards: [{
+				id: "6998E98E8D6DD7F7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "78170AF74F7CC5C2"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["32B878D63A6AB6D3"]
+			description: ["3rd tier of coils for your EBF to allow you to increase the heat even more. Will start making hot ingots more often."]
+			id: "1DA6B3308C263A6F"
+			rewards: [{
+				id: "4741EA9D2EA236FC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A871C7A95D0D312"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["235423100BBE5C81"]
+			description: ["The heart of every EV machine."]
+			id: "74749B089D50329C"
+			rewards: [{
+				id: "27CD4AD7BE3E9087"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E4B244D7882FC11"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"5BA3F17E1C7BE599"
+				"6060E79B2D08912D"
+			]
+			description: ["Will increase the power of anything thermal by 256x. This is the final upgrade you can make for them."]
+			id: "60EB030A899ADE28"
+			rewards: [{
+				id: "510254539341E7E3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "697234FAEC3D54FE"
+				item: {
+					Count: 1
+					id: "kubejs:ev_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 256.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["74749B089D50329C"]
+			id: "6060E79B2D08912D"
+			rewards: [{
+				count: 2
+				id: "66C5AD2F5A6D654C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "549FD3371DC001BF"
+				item: "gtceu:ev_assembler"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["52FE319F5E176C37"]
+			id: "1646D6D439B260D3"
+			rewards: [{
+				id: "7429BB3E22C2DF27"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E24C96B312C91B2"
+				item: "gtceu:vacuum_freezer"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["52FE319F5E176C37"]
+			id: "5B70B63D4157594F"
+			rewards: [{
+				count: 2
+				id: "642F8A4F1ECE22CD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "37415A4D42D8E939"
+				item: "kubejs:multiblock_upgrade_kit"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"52FE319F5E176C37"
+				"1B0A7CF5BE5D71FE"
+			]
+			description: ["A very tall multiblock that allows you to distill one chemical into many other chemicals."]
+			id: "170C262792DA7123"
+			rewards: [{
+				id: "45C8F1B5FB0A96CA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00CA3AFAC664FE60"
+				item: "gtceu:distillation_tower"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["22BC7BDE5E132A30"]
+			icon: "gtceu:oil_bucket"
+			id: "1B0A7CF5BE5D71FE"
+			rewards: [{
+				id: "78976723BD15C03B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73EEEC72819C9305"
+				title: "Oil"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4FFD2642BC183495"]
+			description: ["Allows you to pump oil from the void. I don't know how that works though."]
+			id: "22BC7BDE5E132A30"
+			rewards: [{
+				id: "26043A495658B8EF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "731F1719BD4A073C"
+				item: "gtceu:mv_fluid_drilling_rig"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"7399429099302C6C"
+				"23D3BED4F1968AD6"
+			]
+			description: [
+				"Allows you to scan your surounding chunks for fluids. "
+				""
+				"Spoilers, its going to be oil."
+			]
+			hide_dependency_lines: true
+			id: "4FFD2642BC183495"
+			rewards: [{
+				id: "08BAC9B75D29DFC8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "39F1C5A4137CC90D"
+				item: "gtceu:prospector.hv"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["170C262792DA7123"]
+			description: ["Just mix the oil products with some hydrogen to clean it."]
+			icon: "gtceu:sulfur_dust"
+			id: "1A05644388327FA4"
+			rewards: [{
+				id: "1A4C0A26489CA02E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F4744E75B385516"
+				title: "Desulfurizing"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1A05644388327FA4"]
+			description: ["Choose an oil biproduct and get it cracked to allow even further processing."]
+			id: "22F56435C5449158"
+			rewards: [{
+				id: "336298AD9BCF6974"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0654E39159A0538C"
+				item: "gtceu:cracker"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["22F56435C5449158"]
+			description: ["I hope you like having many distilation towers."]
+			id: "439D8AE6D3DC41AF"
+			rewards: [{
+				count: 2
+				id: "0C782E6F3678C392"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "4436BD62EA28EC5E"
+				title: "Byproduct distilling"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["439D8AE6D3DC41AF"]
+			description: ["Another material that can be used to coat cables, is the most efficent resource wise."]
+			id: "38C9D56C7F821B5C"
+			rewards: [{
+				id: "31FAA10AB69D2B2D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4416AAB9DA71C4E1"
+				item: "gtceu:styrene_butadiene_rubber_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"4BCE8A9EBDF113CE"
+				"6060E79B2D08912D"
+				"2D4F9DFF6B559C65"
+			]
+			description: ["Allows you to run your multiblocks off of pure EV power, or even overclock to IV."]
+			id: "75CCD3B6125B55C4"
+			rewards: [{
+				id: "7F2DC78F0E3D256E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "402FDDE07E8539B9"
+				item: "gtceu:ev_energy_input_hatch"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6060E79B2D08912D"]
+			description: ["5th tier of mesh which gives you access to even more ores for Gravel and Blackstone."]
+			id: "6EF7F39B52B77535"
+			rewards: [{
+				id: "1ACBED7914011CCA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4203DBCF6D0304D2"
+				item: "exnihilosequentia:emerald_mesh"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6060E79B2D08912D"]
+			description: ["First RF sieve that can process 64 items at a time when you have 3 of these in the machine."]
+			id: "650D48314E95F0F9"
+			rewards: [{
+				id: "5D7141A90571D1AF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3CBC07B7C9128AEB"
+				item: "exmachinis:diamond_upgrade"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6060E79B2D08912D"]
+			description: ["Large battery for EV. Can be used to charge tools and machines."]
+			id: "352B3D23A2C7DE74"
+			rewards: [{
+				id: "7BA1830DEF738680"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5872584F4F503A02"
+				item: "gtceu:lapotron_crystal"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"4BCE8A9EBDF113CE"
+				"6060E79B2D08912D"
+			]
+			id: "3B2D79D40B9617D5"
+			rewards: [{
+				id: "732A7D6E95439379"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5F7791E30C08A2D8"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["1E981BDF3F2C577D"]
+			description: ["This is the IV material, you're going to need a lot of this like every other main voltage material."]
+			id: "4BCE8A9EBDF113CE"
+			rewards: [{
+				id: "0CB27DBB660355C2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "48C00FFCC5A1B693"
+				item: "gtceu:tungsten_steel_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"1646D6D439B260D3"
+				"23A6938803281145"
+				"2B695762FC4A7686"
+			]
+			description: ["Distilling each air type will give you access to a variety of diffent chemicals, all of which will be useful in one way or another."]
+			id: "39FF89B370D09B88"
+			rewards: [{
+				count: 2
+				id: "416E66E544A563FC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "24B7A3B0E4C6D805"
+					item: "gtceu:liquid_air_bucket"
+					type: "item"
+				}
+				{
+					id: "4D8A038B8589DD34"
+					item: "gtceu:liquid_nether_air_bucket"
+					type: "item"
+				}
+				{
+					id: "68CD5E7FD8D9C5EF"
+					item: "gtceu:liquid_ender_air_bucket"
+					type: "item"
+				}
+			]
+			title: "Distilling Liquid Air"
+			x: 5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["74749B089D50329C"]
+			description: ["The best Circuit Board liquid."]
+			id: "001252911D2DA7C3"
+			rewards: [{
+				id: "04F9F912A7019060"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "505135D8C35F05FA"
+				item: "gtceu:cupric_chloride_solution_bucket"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2CABFCC73E33E133"]
+			description: ["This chip is used for making EV leveled energy hatches and transformers."]
+			icon: "gtceu:mpic_chip"
+			id: "2D4F9DFF6B559C65"
+			rewards: [{
+				id: "75C3D00737014C3F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "31DE2CEF7FC2AE07"
+					item: "gtceu:brown_glass_lens"
+					type: "item"
+				}
+				{
+					id: "4C279F1227E00850"
+					item: "gtceu:mpic_wafer"
+					type: "item"
+				}
+				{
+					id: "48DA734B58553FC4"
+					item: "gtceu:mpic_chip"
+					type: "item"
+				}
+			]
+			title: "MPIC Chips"
+			x: 13.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6EB85BBD539AEB57"]
+			id: "2CABFCC73E33E133"
+			rewards: [{
+				count: 2
+				id: "4012A41A880533F7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "35C2BFACE894E725"
+				item: "gtceu:phosphorus_wafer"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["75CCD3B6125B55C4"]
+			id: "32FF3127152DCD7D"
+			rewards: [{
+				id: "3C609B1EA15887CC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "298F75D8F1019C19"
+				item: "gtceu:ev_energy_input_hatch_4a"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["32FF3127152DCD7D"]
+			id: "65705AECA837EE4C"
+			rewards: [{
+				id: "05AD2B7C5A5ECE0E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BA958DF8CB1D0EE"
+				item: "gtceu:ev_energy_input_hatch_16a"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2231C06CE59E0074"]
+			description: ["Second tier of Boule. Can be used to make new types of chips as well as make older types more efficently."]
+			id: "6EB85BBD539AEB57"
+			rewards: [{
+				id: "0E4C76EDAE1E68F1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F941D087C846423"
+				item: "gtceu:phosphorus_boule"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["32EF0A93C1C5F429"]
+			id: "2231C06CE59E0074"
+			rewards: [{
+				id: "437765BD288B060E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "791C2651737D5B63"
+				item: "gtceu:phosphorus_dust"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6D35986F79B17912"]
+			description: ["Aquired from Apatite or Monazite processing."]
+			hide_dependency_lines: true
+			id: "32EF0A93C1C5F429"
+			rewards: [{
+				id: "707941A79A8B418A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "26526B2121D0A317"
+				item: "gtceu:phosphate_dust"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2CABFCC73E33E133"]
+			icon: "gtceu:soc"
+			id: "4C9AB0E06EB7C099"
+			rewards: [{
+				id: "1A3C9897E5D5AB62"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Cheaper LV and MV Circuits"
+			tasks: [
+				{
+					id: "3E6960F178BA0BF3"
+					item: "gtceu:yellow_glass_lens"
+					type: "item"
+				}
+				{
+					id: "4C83CA52492C81B0"
+					item: "gtceu:soc_wafer"
+					type: "item"
+				}
+				{
+					id: "630C2AFD1AB1C84C"
+					item: "gtceu:soc"
+					type: "item"
+				}
+			]
+			title: "SoC Chips"
+			x: 15.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"23A6938803281145"
+				"0B9C9B50CBD06F13"
+			]
+			description: ["We recommend using Mystical Agriculture to create this once you gain access to it."]
+			id: "2B695762FC4A7686"
+			rewards: [{
+				id: "059875F4497E4EA9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7AF1BAB9B4390EB3"
+				item: "gtceu:ender_air_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0F1D766E2E2EEEB5"]
+			description: ["We recommend using Mystical Agriculture to create this once you gain access to it."]
+			id: "23A6938803281145"
+			rewards: [{
+				id: "11386D4E5873ED47"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "64B499458C1F62D4"
+				item: "gtceu:nether_air_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["5E1E1A4F5036A6EA"]
+			id: "0B9C9B50CBD06F13"
+			rewards: [{
+				id: "43C38518BA14FB01"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2448F8220FDCFE44"
+				item: "mysticalagriculture:end_agglomeratio"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["549B363564644706"]
+			id: "0F1D766E2E2EEEB5"
+			rewards: [{
+				id: "5EE84E5EE3586E86"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0670EDADED37A8C8"
+				item: "mysticalagriculture:nether_agglomeratio"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0725DE9E90815AB4"]
+			id: "549B363564644706"
+			rewards: [{
+				id: "7BE8C8DF5473190B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3BD6AB9C714C8D5D"
+				item: "gtceu:netherrack_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["4E9FAED9D889160A"]
+			id: "5E1E1A4F5036A6EA"
+			rewards: [{
+				id: "7ECD96DDE51CD967"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F17577A8F6302A7"
+				item: "gtceu:endstone_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1820787D031EAB15"]
+			description: ["Make some endstone and get to processing it."]
+			id: "4E9FAED9D889160A"
+			rewards: [{
+				id: "2EA67AA0DED02E19"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7190C3BB30387607"
+				item: "minecraft:end_stone"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1820787D031EAB15"]
+			description: ["Make some netherack and get to processing it."]
+			id: "0725DE9E90815AB4"
+			rewards: [{
+				id: "5F7A11F57B0F3C94"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "14C28144E7157D9E"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0F0FEE1952A3CB4F"]
+			description: ["Now you have PTFE, you can make one of the most useful multiblocks, the Large Chemical Reactor (LCR for short). You will have so many of these by the end of the pack."]
+			id: "1820787D031EAB15"
+			rewards: [{
+				count: 2
+				id: "3C77881803A22D67"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "03C25F040094BAEF"
+				item: "gtceu:large_chemical_reactor"
+				type: "item"
+			}]
+			title: "Large Chemical Reactor (LCR)"
+			x: -0.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"62BA581B2918BB7B"
+				"2DB216B224F2E8EF"
+			]
+			id: "574ECD841D0D2AD7"
+			rewards: [{
+				id: "454446B7F35018F3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7AC03ACF566B052E"
+				item: "gtceu:ev_circuit_assembler"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"574ECD841D0D2AD7"
+				"6F008C23D5DE50D6"
+				"059FD3E475A05070"
+			]
+			description: ["The final HV circuit. Like previous circuits, this has a cheaper recipe once you gain access to a new chip."]
+			id: "0514DE717001A062"
+			rewards: [{
+				id: "546570E01303C2B2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Third and last HV Circuit"
+			tasks: [{
+				id: "2715D4C52D4AA483"
+				item: "gtceu:nano_processor"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["059FD3E475A05070"]
+			description: ["Used to store patterns for the Assembly Line."]
+			id: "507FE905D3BB8B3D"
+			rewards: [{
+				id: "542233E8F0EBA3E3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "16B08A1A4A0D9778"
+				item: "gtceu:data_orb"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0514DE717001A062"]
+			id: "497833345EB46A47"
+			rewards: [{
+				id: "22E64E86F277012F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "Second EV Circuit"
+			tasks: [{
+				id: "07F894DAEF532D68"
+				item: "gtceu:nano_processor_assembly"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"497833345EB46A47"
+				"737C84EA25886EC9"
+			]
+			id: "0C0C0FBDE1760110"
+			rewards: [{
+				count: 2
+				id: "253695E092304D40"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Second IV circuit"
+			tasks: [{
+				id: "77593C4C1AF06416"
+				item: "gtceu:nano_processor_computer"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1CBC8466E47BE834"]
+			description: ["The spoils from the massive expoy processing line."]
+			id: "059FD3E475A05070"
+			rewards: [{
+				id: "1F3EC27C4996E6A2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C6166D8F0801317"
+				item: "gtceu:epoxy_printed_circuit_board"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"470EBC3C75C6748E"
+				"17C1292018AE363E"
+			]
+			description: ["A different way to make chips, got to cover some with chemicals."]
+			hide_dependency_lines: true
+			icon: "gtceu:nano_cpu_chip"
+			id: "6F008C23D5DE50D6"
+			rewards: [{
+				id: "77E8DB9F8F608296"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "53C362EB686FE9E5"
+					item: "gtceu:nano_cpu_wafer"
+					type: "item"
+				}
+				{
+					id: "2BB009388102DA85"
+					item: "gtceu:nano_cpu_chip"
+					type: "item"
+				}
+			]
+			title: "Nano CPU Chips"
+			x: 12.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["076532C492102F8E"]
+			id: "1CBC8466E47BE834"
+			rewards: [{
+				id: "76F45AF6DBAA9BD1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "47663F5233857A34"
+				item: "gtceu:epoxy_circuit_board"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4D49884E7F5BCBB4"]
+			id: "076532C492102F8E"
+			rewards: [{
+				id: "7C1232DD7919F311"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0AC1FC00AE6E6754"
+				item: "gtceu:epoxy_plate"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2CABFCC73E33E133"]
+			description: ["These chips will be needed in almost every other circuit from now on, might want to keep a lot of these in stock."]
+			icon: "gtceu:nor_memory_chip"
+			id: "737C84EA25886EC9"
+			rewards: [{
+				id: "0841DE5676812FEF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "25B0DF166BBC970A"
+					item: "gtceu:pink_glass_lens"
+					type: "item"
+				}
+				{
+					id: "2BFAF15BFD996818"
+					item: "gtceu:nor_memory_wafer"
+					type: "item"
+				}
+				{
+					id: "3EF9B0B8F348D754"
+					item: "gtceu:nor_memory_chip"
+					type: "item"
+				}
+			]
+			title: "NOR Memory Chips"
+			x: 15.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"4D9DAED52FF74B8B"
+				"5CB82E9BED342EB2"
+				"05F2C7351FF1B0E5"
+			]
+			description: ["Lets you power your multiblocks with IV or overclock to Luv."]
+			id: "7CACFC7C9101EA59"
+			rewards: [{
+				id: "524F28B3FD185A74"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73B830846E24D824"
+				item: "gtceu:iv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"62BA581B2918BB7B"
+				"4D9DAED52FF74B8B"
+			]
+			description: ["IV Assembly Machine, used to make higher tier coils and energy hatches. Can be upgraded into the Assembly Machine multiblock's controller."]
+			id: "5CB82E9BED342EB2"
+			rewards: [{
+				count: 2
+				id: "5E45BE6C805396E0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "24B1FDE1602503C0"
+				item: "gtceu:iv_assembler"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4BCE8A9EBDF113CE"]
+			description: ["The heart of every IV machine."]
+			hide_dependency_lines: true
+			id: "4D9DAED52FF74B8B"
+			rewards: [{
+				id: "2F601584CF53D9C4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32785844C4B7FCAF"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7CACFC7C9101EA59"]
+			id: "4A45669665626026"
+			rewards: [{
+				id: "5DE3ED7BA8D48DB0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "60A364BE951EC68E"
+				item: "gtceu:iv_energy_input_hatch_4a"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4A45669665626026"]
+			id: "528253AC30E635F1"
+			rewards: [{
+				id: "6EA3EBDFA6E4910A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "473DA2A69E1E3ABC"
+				item: "gtceu:iv_energy_input_hatch_16a"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"15CAE17A4EF1F7E9"
+				"62BA581B2918BB7B"
+				"4D9DAED52FF74B8B"
+			]
+			description: ["Lets you turn your RF into 4amps of IV power."]
+			id: "7392E56AAA2E5790"
+			rewards: [{
+				id: "3D3BB2114B527507"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2659F92AD382E36F"
+				item: "gtceu:iv_4a_energy_converter"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1C05C80BCB4736B6"]
+			description: ["IV superconductor, can hold 64 amps in a 1x cable."]
+			id: "15CAE17A4EF1F7E9"
+			rewards: [{
+				id: "258640534B0E3510"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "03E3301B94855BCD"
+				item: "gtceu:shellite_single_wire"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B2D79D40B9617D5"]
+			hide_dependency_lines: true
+			id: "1C05C80BCB4736B6"
+			rewards: [{
+				id: "415D9C74355CF8C9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "45A95EC9F95DEAB7"
+				item: "gtceu:shellite_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2D4F9DFF6B559C65"]
+			description: ["This chip is used in both IV and Luv energy hatches and transformers as well as assembly line casings."]
+			hide_dependency_lines: true
+			icon: "gtceu:hpic_chip"
+			id: "05F2C7351FF1B0E5"
+			rewards: [{
+				id: "422D2728910C5664"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0805322CDFFA96C4"
+					item: "gtceu:hpic_wafer"
+					type: "item"
+				}
+				{
+					id: "5BCFA707AD63D315"
+					item: "gtceu:hpic_chip"
+					type: "item"
+				}
+			]
+			title: "HPIC Chips"
+			x: 8.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5CB82E9BED342EB2"]
+			description: ["Final tier of mesh, used to gain access to naquadah."]
+			id: "3D3E637BCB06115F"
+			rewards: [{
+				id: "7AA6F0E33CE16999"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B6FE12983A94BAA"
+				item: "exnihilosequentia:netherite_mesh"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5CB82E9BED342EB2"]
+			description: ["The best upgrade for the RF Sieves, allows a stack to be processed every second with a single upgrade."]
+			id: "26B9FFEC6658E721"
+			rewards: [{
+				id: "1890818E8BD8994D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "789C09AB426C067A"
+				item: "exmachinis:netherite_upgrade"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"1464BB7890AA8482"
+				"5CB82E9BED342EB2"
+				"61ABF5D51A3B9771"
+			]
+			description: ["Massive handheld IV power storage, can be used to charge Greg Tech Tools or inserted into a machine to give it power directly."]
+			id: "16D1B8E5F2A87F4E"
+			rewards: [{
+				id: "129AA33520AFCCA7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "280F1B2EC9414D47"
+				item: "gtceu:lapotronic_energy_orb"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["352B3D23A2C7DE74"]
+			description: ["Even your batteries need its own circuit boards now."]
+			hide_dependency_lines: true
+			id: "1464BB7890AA8482"
+			rewards: [{
+				id: "3F98064EA5D12E58"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "44D748A964F114CA"
+				item: "gtceu:engraved_lapotron_crystal_chip"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0F2727801B71CA1C"]
+			id: "61ABF5D51A3B9771"
+			rewards: [{
+				id: "444E2AEE99EE595F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73B6DA4D86FB8BCE"
+				item: "gtceu:fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["45AAA2B53069E806"]
+			id: "0F2727801B71CA1C"
+			rewards: [{
+				id: "4084C406BC962C35"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "29C1D9FE302F1761"
+				item: "gtceu:fiber_reinforced_circuit_board"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"5B575348D2A871BB"
+				"4FF433145C67693F"
+			]
+			dependency_requirement: "one_completed"
+			id: "45AAA2B53069E806"
+			rewards: [{
+				id: "3F8E9A77567332AE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "581445F1FCBAE363"
+				item: "gtceu:reinforced_epoxy_resin_plate"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.5d
+		}
+		{
+			id: "5B575348D2A871BB"
+			optional: true
+			rewards: [{
+				id: "70A331233F13EF2E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E28C749EBE13073"
+				item: "gtceu:fine_borosilicate_glass_wire"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 0.5d
+		}
+		{
+			id: "4FF433145C67693F"
+			optional: true
+			rewards: [{
+				id: "046C4EC8F24182DD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "641801B89910C82D"
+				item: "gtceu:carbon_fibers"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"630C93730FCF07D7"
+				"71A44D3F0F20E329"
+				"687C720033164A7B"
+				"5CB82E9BED342EB2"
+			]
+			description: ["The second upgrade to all the circuit components. Very resource efficent and is needed for high tier circuits."]
+			id: "18A88F62B17CE9EC"
+			rewards: [{
+				id: "2CA1A500A6D1550C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2CEDB1F05707F923"
+					item: "gtceu:advanced_smd_transistor"
+					type: "item"
+				}
+				{
+					id: "066D949FDC06886C"
+					item: "gtceu:advanced_smd_resistor"
+					type: "item"
+				}
+				{
+					id: "2CD6393494062964"
+					item: "gtceu:advanced_smd_capacitor"
+					type: "item"
+				}
+				{
+					id: "576EAB2EE3918FE4"
+					item: "gtceu:advanced_smd_diode"
+					type: "item"
+				}
+				{
+					id: "52C59EC1C501C7F2"
+					item: "gtceu:advanced_smd_inductor"
+					type: "item"
+				}
+			]
+			title: "Advanced SMD's"
+			x: 11.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"5CB82E9BED342EB2"
+				"06FCA7209B892A81"
+				"358F96208922007B"
+			]
+			description: ["HSS-G coils will give you the heat to make HSS-E and HSS-S ingots. Thats not going to get confusing at all."]
+			id: "689150D2A185216C"
+			rewards: [{
+				id: "0E893C06186BCA22"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6FE19902DE5F4BA3"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3B2D79D40B9617D5"]
+			hide_dependency_lines: true
+			id: "06FCA7209B892A81"
+			rewards: [{
+				id: "19AE750E78CB2C8B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0A2F13EE4FEA94D1"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1DA6B3308C263A6F"]
+			hide_dependency_lines: true
+			id: "358F96208922007B"
+			rewards: [{
+				id: "1725203A0B7992E9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A09B64FB9877BD9"
+				item: "gtceu:tungsten_carbide_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["689150D2A185216C"]
+			id: "630C93730FCF07D7"
+			rewards: [{
+				id: "2731573D0E9BEDAA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "03867E58409BC47E"
+				item: "gtceu:hsse_ingot"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["689150D2A185216C"]
+			id: "71A44D3F0F20E329"
+			rewards: [{
+				id: "101A195EDCC51F0C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D2BDB9119DCE84A"
+				item: "gtceu:hsss_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			id: "687C720033164A7B"
+			rewards: [{
+				id: "0BD87C29D60BCC50"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "183A8C7C5EB87034"
+				item: "gtceu:graphene_dust"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"5CB82E9BED342EB2"
+				"182D948925141764"
+			]
+			description: ["Massive multiblock that will allow you to get a stack of every resource from a sieveable material."]
+			hide_dependency_lines: true
+			id: "71089CC35D7621E2"
+			rewards: [{
+				count: 2
+				id: "78A22FC2B2061C58"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "75A5F9CD68C971AD"
+				item: "gtceu:large_sieve"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5CB82E9BED342EB2"
+				"182D948925141764"
+			]
+			description: ["Quick gravel, sand, dust and blackstone in a multiblock form!"]
+			hide_dependency_lines: true
+			id: "27BB890712D84505"
+			rewards: [{
+				count: 2
+				id: "3366274EFED8C45E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "079F5D94C600ED8A"
+				item: "gtceu:cobbleworks"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3B2D79D40B9617D5"]
+			description: ["This multiblock allows you to create even more complex alloys, you will need to cool these in a Vacuum Freezer however."]
+			id: "664E782C6A24D9F1"
+			rewards: [{
+				count: 2
+				id: "3683772979FB1CC1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "72734C915CE67884"
+				item: "gtceu:alloy_blast_smelter"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["3B2D79D40B9617D5"]
+			description: [
+				"The Nuclear Reactor allows for easy recipes when making Uranium-235 and Plutonium-239, and also functions as quite a powerful energy generator, capable of producing 8 EV amps, or 2 IV amps at once. "
+				"This does mean you need either a 16A EV or 4A IV energy hatch."
+			]
+			id: "68865F1DDBFFFACE"
+			rewards: [{
+				count: 2
+				id: "7E70C6C6130F88D8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "388DD36D47A45596"
+				item: "gtceu:nuclear_reactor"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"39FF89B370D09B88"
+				"68865F1DDBFFFACE"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependent_lines: true
+			id: "2DB216B224F2E8EF"
+			tasks: [{
+				id: "5BC0FD5122614E2B"
+				item: "gtceu:radon_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 11.5d
+		}
+	]
+	title: "Automation Age"
+}

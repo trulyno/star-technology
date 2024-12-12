@@ -1,0 +1,200 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "mechanics"
+	group: ""
+	icon: "farmersdelight:purple_hanging_canvas_sign"
+	id: "39DD95CA65C51B2C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Building your first multiblock may seem daunting, but dont fret as theres an easy guide for any multiblock through EMI!"
+				""
+				"By looking at the uses on a multiblock controller in EMI, you will be shown everyblock needed with the amount alongside a physical display that you can look at layer by layer to help you build it."
+				""
+				"Most multiblocks can accept multiple input bus/hatches however there is a minimum to casings a machine needs so if yours isn't forming then try replacing some of them with casing."
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "73D5AA58DE5B72AA"
+			tasks: [{
+				id: "7ACFE29FEF327178"
+				title: "Multiblock Creation"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"If you are running low on resources but want to speed up production, you can use one side of an already exsisting multiblock and build a second one off of it!"
+				""
+				"You can share almost any blocks in a multiblock as well like coils, and input and output bus/hatches. The item will say if its not allowed to be shared."
+			]
+			icon: "gtceu:multi_smelter"
+			id: "48374090EA89E869"
+			tasks: [{
+				id: "7A308EF75BC2E098"
+				title: "Multiblock Wall Sharing"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"Worried your multiblock extruder is going to use the wrong cast? Well theres a feature to stop that!"
+				""
+				"If you enable distinct buses on every input bus on a multiblock then it will seperate the ingredients thats stored in each one. "
+				"This means that if you insert a material into the bus with a certain cast, it can only ever use that cast and never any in other buses."
+			]
+			icon: "gtceu:mv_input_bus"
+			id: "2757CDEC1D8F5CCE"
+			tasks: [{
+				id: "2119AA3F34C6DB0F"
+				title: "Item Bus"
+				type: "checkmark"
+			}]
+			title: "Distinct Buses"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"If you put two energy hatches onto a multiblock, it will allow you to \"Overclock\" the machine to the next voltage tier. "
+				"This is used quite a lot in the EBF to give you access to the next voltage tier of material but can be used on almost any other multiblock."
+				""
+				"Examples of multiblocks that cannot form with 2 energy hatches is the Circuit and Normal Assembler to not allow progress skipping."
+			]
+			icon: "gtceu:lv_energy_input_hatch"
+			id: "34EDF98BDC245F77"
+			tasks: [{
+				id: "71D295023BB7E3F5"
+				title: "Overclocking"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"When using a multiblock version of a single block, you have the option to \"Perfect Overclock\" the machine."
+				"You can access this in the same way as a normal Overclock however it will decrease the processing time even more!"
+				""
+				"To see the speeds when Perfect Overclocking, do Shift + Left Click on the voltage button on the bottom of the recipe on EMI"
+			]
+			icon: "gtceu:ev_energy_input_hatch"
+			id: "0C78BD4A7A0B98E4"
+			tasks: [{
+				id: "1869A59961DFCE24"
+				title: "Perfect Overclocking"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"One benefit of gaining access to the Large Chemical Reactor (LCR) is that you now have access to some chemical skips."
+				""
+				"Every recipe in this multiblock that uses Circuit 24 will usually only use the base chemicals which will allow you to compact long chemical lines down into a single machine."
+				""
+				"A few examples of this is most acids, and liquid epoxy."
+			]
+			icon: "gtceu:large_chemical_reactor"
+			id: "0F4C5DF2922568B2"
+			tasks: [{
+				id: "70814049DBEF16DA"
+				title: "Large Chemical Reactor Skips"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"Fluid Output hatches have the power to be locked to only accept a certain fluid. This can be useful in multiblocks like the Large Chemical Reactor and the Distilation Tower which usually will have multiple fluids being made in the same machine."
+				""
+				"You can use this to have processing lines without fluids going to the wrong machine or the wrong tank and stopping the machine."
+				""
+				"&l&4WARNING"
+				""
+				"Due to a bug in Greg Tech, Greg filters can break when the world reloads, we recommend using a different mod so you don't run into any issues."
+			]
+			icon: "gtceu:mv_input_hatch"
+			id: "4A4275186719AD8D"
+			tasks: [{
+				id: "5948FBA874C4FE68"
+				title: "Lockable Fluid Buses"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Each voltage tier has a cable material that is counted as a super conductor, which means there is no energy loss on a line of cables as well as being able to hold a higher amount of amperage."
+				""
+				"These consist of:"
+				"&5LV:&r Soul Infused"
+				"&5MV:&r Signalum"
+				"&5HV:&r Lumium"
+				"&5EV:&r Enderium"
+				"&5IV:&r Shellite"
+				"&5Luv:&r Twinite"
+				"&5ZPM:&r Dragonsteel"
+				"&5UV:&r Prismalium and Melodium"
+				"&5UHV:&r Stellarium"
+			]
+			icon: "gtceu:soul_infused_hex_wire"
+			id: "18080B4F89AD24D2"
+			tasks: [{
+				id: "2902228D7DFFED96"
+				title: "Cable Superconductors"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"Throughout progression, you may want to check back at older circuit tiers to see if you have gained access to a more efficent recipe."
+				""
+				"This could be upgrading from basic components to SMD components or advanced SMD components, or gaining access to a new wafer type that can change the entire recipe."
+				""
+				"Not only are these recipes cheaper, but they usually give a much higher quantity per craft for both components AND circuits"
+			]
+			icon: "gtceu:basic_integrated_circuit"
+			id: "6F7EE9A1BC718801"
+			tasks: [{
+				id: "5C3E946968BBEC0C"
+				title: "Cheaper Circuit Recipes"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"EMI/JEI has its own intergration into Greg Tech that allows the user to more easily figure out recipes like,"
+				""
+				"&5-&r The minimum voltage tier of the recipe being on the bottom right"
+				"&5-&r Allowing you to see the speed of the recipe at each voltage tier "
+				"&5-&r Showing the speeds for Perfect Overclocking"
+				"&5-&r Having a preview of every multiblock in the pack"
+			]
+			id: "69D57FE912CAF112"
+			subtitle: "NOTE: EMI is disabled because of an incompatibility! It'll be back when it'll fix the issue."
+			tasks: [{
+				id: "0D132FC336812CBD"
+				title: "EMI Tricks"
+				type: "checkmark"
+			}]
+			title: "EMI/JEI Tricks"
+			x: 0.0d
+			y: -3.5d
+		}
+	]
+	title: "Mechanics"
+}

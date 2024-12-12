@@ -1,0 +1,3582 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "processing_lines"
+	group: ""
+	icon: "gtceu:lv_chemical_reactor"
+	id: "2742F3918C76DA81"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1AAB9C20E833029A"]
+			icon: "gtceu:sulfur_dioxide_bucket"
+			id: "01D6ADBBE3E5907F"
+			rewards: [{
+				id: "504D56385BDF5F7C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4F001CD88F377225"
+					type: "checkmark"
+				}
+				{
+					id: "7794C8DC74A8CC24"
+					item: "gtceu:sulfur_dioxide_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Sulfur Dioxide"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["01D6ADBBE3E5907F"]
+			icon: "gtceu:sulfur_trioxide_bucket"
+			id: "7F22CD2F778802BE"
+			rewards: [{
+				id: "6041620B09747377"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3BC73684BC154A06"
+					title: "Sulfur Trioxide"
+					type: "checkmark"
+				}
+				{
+					id: "5A0E3F507C5E6087"
+					item: "gtceu:sulfur_trioxide_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7F22CD2F778802BE"]
+			description: ["Sulfuric acid is used in a ton of recipes. Once you have sufficient resource generation, automating this on passive is a must."]
+			id: "104CAE7C2406E9BF"
+			rewards: [{
+				count: 2
+				id: "0BC7DA908D7B23E6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6552C17A2EBF9E53"
+				item: "gtceu:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["104CAE7C2406E9BF"]
+			id: "46EE735CCA50C1C4"
+			rewards: [{
+				id: "28060D378BB8B2D1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "20F299B460AE6308"
+				item: "gtceu:sodium_bisulfate_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["104CAE7C2406E9BF"]
+			icon: "gtceu:hydrochloric_acid_bucket"
+			id: "348A5FD9441DCD71"
+			rewards: [{
+				id: "7ECC2B1C1CE096E0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4D8F720BB22F7474"
+					title: "Hydrochloric Acid"
+					type: "checkmark"
+				}
+				{
+					id: "14EF29A02B12786B"
+					item: "gtceu:hydrochloric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["348A5FD9441DCD71"]
+			id: "261B946701411D9C"
+			rewards: [{
+				count: 2
+				id: "6F25CE774644785E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0586F43798712494"
+				item: "gtceu:iron_iii_chloride_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["46EE735CCA50C1C4"]
+			id: "7908E8C196F82F9B"
+			rewards: [{
+				count: 2
+				id: "1438A70E4616CF5B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2DA3353FE91AA245"
+				item: "gtceu:sodium_persulfate_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["12C9427A04A2F550"]
+			id: "7AAAAF625777D732"
+			optional: true
+			rewards: [{
+				id: "5DD52E98A4667B61"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "22C4DA1CD37C60EA"
+				item: "gtceu:bio_chaff"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7AAAAF625777D732"]
+			icon: "gtceu:biomass_bucket"
+			id: "513461D53353670F"
+			optional: true
+			rewards: [{
+				id: "67D10F36FD9EA2CB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "20ADD35560F5A11B"
+					title: "Biomass"
+					type: "checkmark"
+				}
+				{
+					id: "7A575FF769D52652"
+					item: "gtceu:biomass_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"513461D53353670F"
+				"3F74E863172E757F"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Can alternatively be made with basins, see the first chapter for reference."]
+			icon: "gtceu:ethanol_bucket"
+			id: "3CB84935C465C540"
+			rewards: [{
+				id: "6B1FD536ABA0B827"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "419F116AD4733E56"
+					title: "Ethanol"
+					type: "checkmark"
+				}
+				{
+					id: "566C0C5863929151"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "createdieselgenerators:ethanol_bucket"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ethanol_bucket"
+								}
+							]
+						}
+					}
+					optional_task: true
+					title: "Ethanol"
+					type: "item"
+				}
+			]
+			title: "Ethanol"
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3CB84935C465C540"]
+			icon: "gtceu:ethylene_bucket"
+			id: "6C643B76213EC43F"
+			rewards: [{
+				id: "34CC8DBF1D25033D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4F81151616E89614"
+					title: "Ethylene"
+					type: "checkmark"
+				}
+				{
+					id: "677BF235C9B7C8AA"
+					item: "gtceu:ethylene_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6C643B76213EC43F"]
+			id: "261174370DC87FCB"
+			rewards: [{
+				count: 2
+				id: "11DEF5DA13E9823B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7A12ED4EDA0740A8"
+				item: "gtceu:polyethylene_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6C643B76213EC43F"]
+			icon: "gtceu:vinyl_chloride_bucket"
+			id: "0A4509293E0BCD6C"
+			rewards: [{
+				id: "7099223AFF355414"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4E58A7986F1D5BE6"
+					title: "Vinyl Chloride"
+					type: "checkmark"
+				}
+				{
+					id: "4614D41BF479034E"
+					item: "gtceu:vinyl_chloride_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0A4509293E0BCD6C"]
+			id: "250C897A70DB797F"
+			rewards: [{
+				count: 2
+				id: "48674A88D38F3164"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7E618CA67ACA1E02"
+				item: "gtceu:polyvinyl_chloride_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6EF7F39B52B77535"]
+			id: "50FC2373E2304403"
+			rewards: [{
+				id: "2A8E6185B1A99314"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C403A24F53F5CAD"
+				item: "gtceu:purified_cooperite_ore"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["50FC2373E2304403"]
+			id: "5B9586B718641184"
+			rewards: [{
+				id: "7FCDE03B603FE95A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "02C6286F4279E9E2"
+				item: "gtceu:platinum_group_sludge_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["5B9586B718641184"]
+			id: "6ACB1A16D492CAFC"
+			rewards: [{
+				id: "483425AB3481FF08"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "54D9E94ED526FA37"
+				item: "gtceu:platinum_raw_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5B9586B718641184"]
+			id: "1527CD336742FE55"
+			rewards: [{
+				id: "5080953286F1C162"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2DE02D4B93A3448A"
+				item: "gtceu:palladium_raw_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["5B9586B718641184"]
+			id: "0C4B03DB8E28129A"
+			rewards: [{
+				id: "0F9D79FB81F1CF24"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "69C979F293BCBDDD"
+				item: "gtceu:inert_metal_mixture_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["5B9586B718641184"]
+			id: "1667CD60FF78DE24"
+			rewards: [{
+				id: "412ED68191DB5E23"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "09EFDEEF7AAB5796"
+				item: "gtceu:rarest_metal_mixture_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["1667CD60FF78DE24"]
+			id: "0273A37252F8B98F"
+			rewards: [{
+				id: "3679BE6491EEB677"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68B89F3A83C345E7"
+				item: "gtceu:iridium_metal_residue_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["1667CD60FF78DE24"]
+			icon: "gtceu:acidic_osmium_solution_bucket"
+			id: "27D411A047EDAEDB"
+			rewards: [{
+				id: "2701E4987DD09157"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "069673AEFB5037EE"
+					title: "Acidic Osmium Solution"
+					type: "checkmark"
+				}
+				{
+					id: "4151B98CA0851377"
+					item: "gtceu:acidic_osmium_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["0273A37252F8B98F"]
+			id: "66288D3E5DF9D718"
+			rewards: [{
+				id: "28926A7F7D49D649"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7BF0A3868D192F0D"
+				item: "gtceu:iridium_chloride_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["66288D3E5DF9D718"]
+			id: "205A52778B5A37CA"
+			rewards: [{
+				count: 2
+				id: "483496B387FF80FE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0096E50FB49DCACE"
+				item: "gtceu:iridium_dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["27D411A047EDAEDB"]
+			id: "377766418A81500B"
+			rewards: [{
+				id: "7EE6D77EF71256CD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4CB239D4ED121744"
+				item: "gtceu:osmium_tetroxide_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["377766418A81500B"]
+			id: "3E8F007EF8A9C17B"
+			rewards: [{
+				count: 2
+				id: "412A762D2B764696"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1628ED349C8D3392"
+				item: "gtceu:osmium_dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["1527CD336742FE55"]
+			id: "6AC355D9FE3CD715"
+			rewards: [{
+				count: 2
+				id: "14270027998E7AEE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "603CC7DDB200A2F7"
+				item: "gtceu:palladium_dust"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 16.25d
+		}
+		{
+			dependencies: ["6ACB1A16D492CAFC"]
+			id: "1235F3E896EBE02E"
+			rewards: [{
+				count: 2
+				id: "26B0D8FD8D7D833B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "37E1465E2CB7C587"
+				item: "gtceu:platinum_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 13.25d
+		}
+		{
+			dependencies: ["0C4B03DB8E28129A"]
+			id: "0B520297F18E0838"
+			rewards: [{
+				id: "774812D420EC3740"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "173ACD0A504FC83E"
+				item: "gtceu:ruthenium_tetroxide_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["0B520297F18E0838"]
+			id: "54EA865EC1ABDA36"
+			rewards: [{
+				count: 2
+				id: "23F173D7B1EB6A85"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "637D49E05649FDA9"
+				item: "gtceu:ruthenium_dust"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["0C4B03DB8E28129A"]
+			icon: "gtceu:rhodium_sulfate_bucket"
+			id: "2E75ABB0371138E7"
+			rewards: [{
+				id: "2E5FBE93D053D9EA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "29F52086D31D7845"
+					title: "Rhodium Sulfate"
+					type: "checkmark"
+				}
+				{
+					id: "456483326B0C2F1C"
+					item: "gtceu:rhodium_sulfate_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["2E75ABB0371138E7"]
+			id: "5715CE8D6BCCC4AA"
+			rewards: [{
+				count: 2
+				id: "106BC895EB339D01"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "187392B5F9E85984"
+				item: "gtceu:rhodium_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 17.75d
+		}
+		{
+			dependencies: ["6373DC17B2A31150"]
+			id: "0F0FEE1952A3CB4F"
+			rewards: [{
+				count: 2
+				id: "16208DE9C54C2942"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "29F7F8F52E7C764E"
+				item: "gtceu:polytetrafluoroethylene_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"24822D31D8005519"
+				"5EEC5C529072CE0F"
+			]
+			icon: "gtceu:tetrafluoroethylene_bucket"
+			id: "6373DC17B2A31150"
+			rewards: [{
+				id: "3B3713C402D711CD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1AC8263E17A28078"
+					title: "Tetrafluoroethylene"
+					type: "checkmark"
+				}
+				{
+					id: "7C18E9C91E4FF03D"
+					item: "gtceu:tetrafluoroethylene_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B21198EDF0CB4E3"]
+			icon: "gtceu:chloroform_bucket"
+			id: "24822D31D8005519"
+			rewards: [{
+				id: "4B68883D770D0D4C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "089B70E61E159675"
+					title: "Chloroform"
+					type: "checkmark"
+				}
+				{
+					id: "6EEFFAC2C84B8362"
+					item: "gtceu:chloroform_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6A1E44C0D4F8DF06"]
+			icon: "gtceu:hydrofluoric_acid_bucket"
+			id: "5EEC5C529072CE0F"
+			rewards: [{
+				id: "0235047CB9F5EE12"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3EE73A010E54EFC9"
+					title: "Hydrofluoric Acid"
+					type: "checkmark"
+				}
+				{
+					id: "6CD770E8DE080659"
+					item: "gtceu:hydrofluoric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			icon: "gtceu:methane_bucket"
+			id: "0B21198EDF0CB4E3"
+			rewards: [{
+				id: "171DB8F93E8AF4F7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "765A4DC2FB58644A"
+					title: "Methane"
+					type: "checkmark"
+				}
+				{
+					id: "110269CAD9A0C897"
+					item: "gtceu:methane_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			icon: "gtceu:fluorine_bucket"
+			id: "6A1E44C0D4F8DF06"
+			rewards: [{
+				id: "75D8BC0EB8B62823"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5B55244AE6F023BF"
+					title: "Fluorine"
+					type: "checkmark"
+				}
+				{
+					id: "6642F090CFA0DFA5"
+					item: "gtceu:fluorine_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["12C9427A04A2F550"]
+			id: "7E14E3162365490A"
+			rewards: [{
+				id: "452EEE3ADC00C51C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A4567839176F033"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7E14E3162365490A"]
+			id: "5F8E68F8612179A8"
+			rewards: [{
+				id: "24CF57BE05B2135D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1250A7476412F9E8"
+				item: "minecraft:clay"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5F8E68F8612179A8"]
+			id: "74E43E78D07AE3B6"
+			rewards: [{
+				id: "6B80FF0F1571F64F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BADBA41D7D14C91"
+				item: "gtceu:clay_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			id: "12EBA56BB84D5973"
+			rewards: [{
+				id: "69D7152A1A6B66BD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "242C1B2FDF971298"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["12EBA56BB84D5973"]
+			id: "1C44CB3E58DD6320"
+			rewards: [{
+				id: "4CB42B9926FD0EDA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "197E63EC882D01F8"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1C44CB3E58DD6320"]
+			id: "7BF5902BE68E8516"
+			rewards: [{
+				id: "66733AA7A8B269F5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5D2F634072003123"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7BF5902BE68E8516"]
+			id: "08BC0E5B4F39EEB9"
+			rewards: [{
+				id: "15EDE73246C44EA8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0BEE2C0FB54BB888"
+				item: "gtceu:flint_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["08BC0E5B4F39EEB9"]
+			id: "7A7CF6B84469AC1D"
+			rewards: [{
+				id: "0E6533A5A9B225CA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1AE277058B4754F5"
+				item: "gtceu:silicon_dioxide_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7A7CF6B84469AC1D"]
+			id: "1B22A06EA1BA398B"
+			rewards: [{
+				count: 2
+				id: "009BFAB6F913736C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "665369CA200D41E6"
+				item: "gtceu:oxygen_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"7A7CF6B84469AC1D"
+				"74E43E78D07AE3B6"
+			]
+			dependency_requirement: "one_completed"
+			id: "0A0A9F0FCD1480C0"
+			rewards: [{
+				id: "26D7F0C564C1325E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "5178449FC9815680"
+				item: "gtceu:silicon_dust"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["74E43E78D07AE3B6"]
+			id: "0C029ABAE1BD9231"
+			rewards: [{
+				count: 2
+				id: "068EB9404C4674C0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "43AC218E45B17748"
+				item: "gtceu:aluminium_dust"
+				type: "item"
+			}]
+			x: 5.25d
+			y: 2.5d
+		}
+		{
+			dependencies: ["74E43E78D07AE3B6"]
+			id: "09287F72DB40D61E"
+			rewards: [{
+				id: "6763EA6D4983D803"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "6F86F7AF1D648929"
+				item: "gtceu:lithium_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["74E43E78D07AE3B6"]
+			id: "6B36075239F9F339"
+			rewards: [{
+				id: "5E813CBC31A8AC41"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "4291FA287DABF6DF"
+				item: "gtceu:sodium_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"280321FFF3410457"
+				"50C5B2905989AF34"
+			]
+			id: "1A4583EB1A3D538F"
+			rewards: [{
+				count: 2
+				id: "021625137DEB9EC3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3254097569D4F452"
+				item: "gtceu:polybenzimidazole_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["21E9A460C3186F79"]
+			icon: "gtceu:diaminobenzidine_bucket"
+			id: "280321FFF3410457"
+			rewards: [{
+				id: "10DA4F2DBBF990DD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5138666FCD1BF732"
+					title: "Diaminobenzidine"
+					type: "checkmark"
+				}
+				{
+					id: "2145A021B85CDECB"
+					item: "gtceu:diaminobenzidine_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 20.5d
+		}
+		{
+			dependencies: [
+				"4709B17964A4948C"
+				"5CC771EE56C124DE"
+			]
+			icon: "gtceu:nitrochlorobenzene_bucket"
+			id: "21E9A460C3186F79"
+			rewards: [{
+				id: "258996792FC8DC20"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "716853FA571D1365"
+					title: "Nitrochlorobenzene"
+					type: "checkmark"
+				}
+				{
+					id: "18C82C2FAB885E97"
+					item: "gtceu:nitrochlorobenzene_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 20.0d
+		}
+		{
+			icon: "gtceu:nitration_mixture_bucket"
+			id: "4709B17964A4948C"
+			rewards: [{
+				id: "74A7F56B034929AD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "24A0DDF33003AE6E"
+					title: "Nitration Mixture"
+					type: "checkmark"
+				}
+				{
+					id: "5BE2F60892B49610"
+					item: "gtceu:nitration_mixture_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["170C262792DA7123"]
+			icon: "gtceu:chlorobenzene_bucket"
+			id: "5CC771EE56C124DE"
+			rewards: [{
+				id: "4BEF49450E6C0855"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6AF71D0B8CCC68DB"
+					title: "Chlorobenzene"
+					type: "checkmark"
+				}
+				{
+					id: "54241B0ED3EACDFF"
+					item: "gtceu:chlorobenzene_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["326468D9C3B3A99D"]
+			icon: "gtceu:diphenyl_isophthalate_bucket"
+			id: "50C5B2905989AF34"
+			rewards: [{
+				id: "200E8FE456DED03A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0A3BB8126F2E0289"
+					title: "Diphenyl Isophthalate"
+					type: "checkmark"
+				}
+				{
+					id: "140CF8ABC216B98C"
+					item: "gtceu:diphenyl_isophthalate_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"1B4EE859F06B93B6"
+				"50935F187F392F12"
+			]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:phthalic_acid_bucket"
+			id: "326468D9C3B3A99D"
+			rewards: [{
+				id: "3A69FE40AD96C6CE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0C74CC27D0A941BF"
+					title: "Phythalic Acid"
+					type: "checkmark"
+				}
+				{
+					id: "1EA32AD5C3115D44"
+					item: "gtceu:phthalic_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["321F095189668BAD"]
+			icon: "gtceu:potassium_dust"
+			id: "1B4EE859F06B93B6"
+			optional: true
+			rewards: [{
+				id: "46C83D043E6C8D8C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "172AFA586B9E7D40"
+					item: "gtceu:potassium_dust"
+					type: "item"
+				}
+				{
+					id: "12C9B8173AB4C9E9"
+					title: "Naphthalene"
+					type: "checkmark"
+				}
+				{
+					id: "1909480E0DE741BD"
+					item: "gtceu:naphthalene_bucket"
+					type: "item"
+				}
+			]
+			title: "Potassium Dust and Naphthalene"
+			x: 1.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["0AB3A8C14C3A0512"]
+			icon: "gtceu:wood_tar_bucket"
+			id: "321F095189668BAD"
+			rewards: [{
+				id: "457CDFDB0119A1EB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1DEBB2E13E431142"
+					title: "Wood Tar"
+					type: "checkmark"
+				}
+				{
+					id: "363690EF79E0BCFE"
+					item: "gtceu:wood_tar_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["321F095189668BAD"]
+			icon: "gtceu:potassium_dichromate_dust"
+			id: "50935F187F392F12"
+			optional: true
+			rewards: [{
+				id: "44001075B994A8C0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "58C93343388BEC78"
+					item: "gtceu:potassium_dichromate_dust"
+					type: "item"
+				}
+				{
+					id: "23DD4F8D3734EE17"
+					title: "Dimethylbenzene"
+					type: "checkmark"
+				}
+				{
+					id: "544307D705B42131"
+					item: "gtceu:dimethylbenzene_bucket"
+					type: "item"
+				}
+			]
+			title: "Potassium Dichromate Dust and Dimethylbenzene"
+			x: 1.5d
+			y: 22.5d
+		}
+		{
+			dependencies: ["58F32D7141E0996D"]
+			description: ["Processing Ilmenite gives Rutile as byproduct, and you can electrolyze the Ilmenite dust for more Rutile yield."]
+			id: "61A21D40EC64D60E"
+			rewards: [{
+				id: "748CC17B7223D902"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2EE3ADE8A9C85BC1"
+				item: "gtceu:rutile_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7014892C27EC22B7"]
+			id: "58F32D7141E0996D"
+			rewards: [{
+				id: "5F8EF20F0C6F5846"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D987B924F07A133"
+				item: "gtceu:crushed_ilmenite_ore"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["61A21D40EC64D60E"]
+			icon: "gtceu:titanium_tetrachloride_bucket"
+			id: "161D162CA760018E"
+			rewards: [{
+				id: "1C52CBDD90DD7142"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "399EE9678941AB20"
+					title: "Titanium Tetrachloride"
+					type: "checkmark"
+				}
+				{
+					id: "3E65462F4B493035"
+					item: "gtceu:titanium_tetrachloride_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["161D162CA760018E"]
+			icon: "gtceu:hot_titanium_ingot"
+			id: "76C3740D5841D569"
+			rewards: [{
+				id: "28BF92955D9707A2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3215A0791594DDE9"
+					title: "Hot Titanium Ingot"
+					type: "checkmark"
+				}
+				{
+					id: "0D0DB4928437F32D"
+					item: "gtceu:hot_titanium_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["76C3740D5841D569"]
+			id: "235423100BBE5C81"
+			rewards: [{
+				count: 2
+				id: "7B6CDF12B323DD36"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "05E94C4A12151ADC"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6EF7F39B52B77535"]
+			id: "13520BA0C530C2AF"
+			rewards: [{
+				id: "4D6CDBD6D35B3276"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "16C6C2DD8370648A"
+				item: "gtceu:crushed_scheelite_ore"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["6EF7F39B52B77535"]
+			id: "58C27E0C30A5C15E"
+			rewards: [{
+				id: "5282210FADF515F1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6EFADBC2CA612546"
+				item: "gtceu:crushed_tungstate_ore"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"568D47BC3D755702"
+				"70D3D824909811F2"
+			]
+			id: "652ED98223A71FDB"
+			rewards: [{
+				id: "136F9D45220AC08D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "589B038BC6657947"
+				item: "gtceu:tungstic_acid_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["652ED98223A71FDB"]
+			id: "1E981BDF3F2C577D"
+			rewards: [{
+				count: 2
+				id: "144A56F323EFAA89"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1728C98C68596F28"
+				item: "gtceu:tungsten_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["13520BA0C530C2AF"]
+			id: "70D3D824909811F2"
+			rewards: [{
+				id: "1BAAD01BF083EF9D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7651830A6F6A193C"
+				item: "gtceu:scheelite_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["58C27E0C30A5C15E"]
+			id: "568D47BC3D755702"
+			rewards: [{
+				id: "15EDD4D5D6E0717E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "539D6BE8B0593B0E"
+				item: "gtceu:tungstate_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["7F33069798736793"]
+			id: "26B448FBF4855DB4"
+			rewards: [{
+				id: "2E3FB3BF8652214E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D85536B1C92743A"
+				item: "thermal:earth_charge"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["158885A1FD330FD8"]
+			id: "3E3E29B333CCDBA7"
+			rewards: [{
+				id: "2F29EFD0A5E67B88"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "06E5A6CA95E793A1"
+				item: "minecraft:fire_charge"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["161853249C63EDCB"]
+			id: "61B03163F6A65B9A"
+			rewards: [{
+				id: "5F376BBBCF39BE8E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "464242B326E23E77"
+				item: "thermal:lightning_charge"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6172BFE1494E9D28"]
+			id: "1DE8AC3387F38088"
+			rewards: [{
+				id: "79001C66CD601EB0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "52F24ADF28E4611C"
+				item: "thermal:ice_charge"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3CB63B290C9EFAA2"]
+			id: "7F33069798736793"
+			rewards: [{
+				id: "5736210CDD3AF46D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "06ACB796440BE407"
+				item: "thermal:basalz_powder"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3CB63B290C9EFAA2"]
+			id: "158885A1FD330FD8"
+			rewards: [{
+				id: "1945B4F57208CD93"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7338A8F59E1CB259"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["74749B089D50329C"]
+			id: "161853249C63EDCB"
+			rewards: [{
+				id: "3DFE9388ED52D674"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A61D3F70A96B3E7"
+				item: "thermal:blitz_powder"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4D9DAED52FF74B8B"]
+			id: "6172BFE1494E9D28"
+			rewards: [{
+				id: "139FF026FF066F03"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "45F4833CDD7ACB56"
+				item: "thermal:blizz_powder"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"26B448FBF4855DB4"
+				"3E3E29B333CCDBA7"
+				"1DE8AC3387F38088"
+				"61B03163F6A65B9A"
+			]
+			id: "488ED4F4C784C537"
+			rewards: [{
+				id: "1BC0DB91720B5652"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D86917424050C84"
+				item: "mysticalagriculture:nether_star_essence"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["488ED4F4C784C537"]
+			id: "090275078106B752"
+			rewards: [{
+				id: "2A03210375AB68FB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4DEDAE2321A09E17"
+				item: "mysticalagradditions:nether_star_shard"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["090275078106B752"]
+			id: "4FD165BABC36DAB7"
+			rewards: [{
+				id: "3297C148C2D26AC2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3EB1225649414C41"
+				item: "gtceu:nether_star_dust"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"4FD165BABC36DAB7"
+				"0FBB34B21DA41C5D"
+			]
+			id: "4BCC078B76C6CAE3"
+			rewards: [{
+				count: 2
+				id: "5581F9D5E4B543D7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5BA4E21E748E4B05"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 0.5d
+		}
+		{
+			id: "0FBB34B21DA41C5D"
+			rewards: [{
+				id: "59D8586B6C398E76"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66C9130F74AFECC6"
+				item: "gtceu:implosion_compressor"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0F1D766E2E2EEEB5"]
+			id: "1C5BF4BBF693A39E"
+			rewards: [{
+				id: "4378033D8DFC9752"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "55F839BB36781B0B"
+				item: "mysticalagriculture:nether_agglomeratio"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1C5BF4BBF693A39E"]
+			id: "58037316F922EBF0"
+			rewards: [{
+				id: "16FE1ED167B72C29"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "619C5BEFBEF584B7"
+				item: "gtceu:tiny_debris_dust"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"58037316F922EBF0"
+				"7427421F567D8165"
+			]
+			id: "3AA8F5EDD58D4F43"
+			rewards: [{
+				id: "5CC21824570FFA97"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5D8589BE2043E0A9"
+				item: "gtceu:debris_dust"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3AA8F5EDD58D4F43"]
+			description: ["(Almost) free Netherite."]
+			id: "346DEF55D35A9E96"
+			rewards: [{
+				id: "233F857C3896F903"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C8E8A7CD129D71C"
+				item: "gtceu:small_purified_debris_dust"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3AA8F5EDD58D4F43"]
+			description: ["Throw this into an electrolyzer to get back your previous dust."]
+			id: "2F561AA9ED46E0F8"
+			rewards: [{
+				id: "72D45ACF9927C41F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "37F45CA125CA76FC"
+				item: "gtceu:purified_debris_dust"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3AA8F5EDD58D4F43"]
+			id: "11FF8831D1DE5D7B"
+			rewards: [{
+				id: "0A9DD37FC85851BC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B0374A44EBC8D3D"
+				item: "gtceu:tiny_titanium_trifluoride_dust"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["11FF8831D1DE5D7B"]
+			id: "0BEDF4FEED71D9F4"
+			rewards: [{
+				id: "6B3465BD26ACBCF4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "633F2BFE133A0DC3"
+				item: "gtceu:titanium_trifluoride_dust"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A667B2D4AB99C9A"]
+			id: "586E4409BEF993FD"
+			rewards: [{
+				id: "797CBD3C1A766EB1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "24299B0118670FCE"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0BEDF4FEED71D9F4"]
+			icon: "gtceu:hot_titanium_ingot"
+			id: "7A667B2D4AB99C9A"
+			rewards: [{
+				id: "41135761138E35CA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "632427F657A7003C"
+					title: "Hot Titanium Ingot"
+					type: "checkmark"
+				}
+				{
+					id: "5C12B2E777198BD0"
+					item: "gtceu:hot_titanium_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 19.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3AA8F5EDD58D4F43"]
+			icon: "gtceu:sulfur_dichloride_bucket"
+			id: "1847E243F16A769B"
+			rewards: [{
+				id: "3D9E54F341EE365E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2C2C90EDD06D87E6"
+					title: "Sulfur Dichloride"
+					type: "checkmark"
+				}
+				{
+					id: "59386F6B96C9499C"
+					item: "gtceu:sulfur_dichloride_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 17.5d
+			y: 3.5d
+		}
+		{
+			icon: "gtceu:chlorine_trifluoride_bucket"
+			id: "7427421F567D8165"
+			rewards: [{
+				id: "640CB39955431275"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "20F3E88E8DB52339"
+					title: "Chlorine Trifluoride"
+					type: "checkmark"
+				}
+				{
+					id: "2F863BC02E2139A8"
+					item: "gtceu:chlorine_trifluoride_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["346DEF55D35A9E96"]
+			id: "4D387E12A6D1B8F3"
+			rewards: [{
+				id: "37166B38AE698E8C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "676EEF30C7E38825"
+				item: "gtceu:purified_debris_dust"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4D387E12A6D1B8F3"]
+			id: "279251A8D5A997DF"
+			rewards: [{
+				id: "7D195ACF134C27B8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "08BAECF5EFE0C57F"
+				item: "gtceu:debris_dust"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["279251A8D5A997DF"]
+			id: "37C381390F132628"
+			rewards: [{
+				count: 2
+				id: "74B0724A8D100C5C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "06118F93B34D6C03"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			x: 22.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5E7E3629AB2080AD"]
+			id: "182D948925141764"
+			rewards: [{
+				count: 2
+				id: "0CA41BC7433A6C64"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3D3EAFC988A29CCA"
+				item: "gtceu:pure_netherite_ingot"
+				type: "item"
+			}]
+			x: 22.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["22F5AAAB28375626"]
+			icon: "gtceu:hot_pure_netherite_ingot"
+			id: "5E7E3629AB2080AD"
+			rewards: [{
+				id: "279F9B71D909323B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4F29D2326E02AFD4"
+					title: "Hot Pure Netherite Ingot"
+					type: "checkmark"
+				}
+				{
+					id: "6C6CD428BFC76129"
+					item: "gtceu:hot_pure_netherite_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 21.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"4D387E12A6D1B8F3"
+				"2DF4548C7D832B0C"
+			]
+			id: "22F5AAAB28375626"
+			rewards: [{
+				id: "6D928314ACAAD0EA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "087E6210A57FFD32"
+				item: "gtceu:pure_netherite_dust"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7435A8AEF5E25F38"]
+			icon: "gtceu:tetrachloroethylene_bucket"
+			id: "2DF4548C7D832B0C"
+			rewards: [{
+				id: "1F3EFBB2719F523F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "615439B1D90A3017"
+					title: "Tetrachloroethylene"
+					type: "checkmark"
+				}
+				{
+					id: "5626AEFE63CC382C"
+					item: "gtceu:tetrachloroethylene_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["12C9427A04A2F550"]
+			icon: "gtceu:dichloroethane_bucket"
+			id: "7435A8AEF5E25F38"
+			rewards: [{
+				id: "357B0223E63E384C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2FC7FD124DE2CC42"
+					title: "Dichloroethane"
+					type: "checkmark"
+				}
+				{
+					id: "4E62433A5DF0708F"
+					item: "gtceu:dichloroethane_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 16.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0AB3A8C14C3A0512"]
+			icon: "gtceu:charcoal_byproducts_bucket"
+			id: "45B0C4853DA47A48"
+			rewards: [{
+				id: "485801109C28DC08"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "31E64D1FD085B9F9"
+					title: "Charcoal Byproducts"
+					type: "checkmark"
+				}
+				{
+					id: "38AC9CEB7C1EF6B8"
+					item: "gtceu:charcoal_byproducts_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["45B0C4853DA47A48"]
+			icon: "gtceu:wood_vinegar_bucket"
+			id: "767CC03EDC618C0B"
+			rewards: [{
+				id: "26C0A855F4BF0BA5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7EDA664C4AE2E70C"
+					title: "Wood Vinegar"
+					type: "checkmark"
+				}
+				{
+					id: "49260E0640A95E6D"
+					item: "gtceu:wood_vinegar_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["45B0C4853DA47A48"]
+			icon: "gtceu:wood_tar_bucket"
+			id: "1A1969BCD61B4F09"
+			rewards: [{
+				id: "10BB885581AA92BB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "38B4C17E7B182F39"
+					title: "Wood Tar"
+					type: "checkmark"
+				}
+				{
+					id: "207735D2073038D6"
+					item: "gtceu:wood_tar_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1A1969BCD61B4F09"]
+			icon: "gtceu:phenol_bucket"
+			id: "06D185CA6A89A1C5"
+			rewards: [{
+				id: "7D5C40E51F4147FE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "067431C22BEBCE55"
+					title: "Phenol"
+					type: "checkmark"
+				}
+				{
+					id: "069D8BCF3E858BDC"
+					item: "gtceu:phenol_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 15.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["767CC03EDC618C0B"]
+			icon: "gtceu:acetone_bucket"
+			id: "09BF3EE7A61F477D"
+			rewards: [{
+				id: "19BE613E41BC45D6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5697A9E7FBD7B9A8"
+					title: "Acetone"
+					type: "checkmark"
+				}
+				{
+					id: "303B1894421E910D"
+					item: "gtceu:acetone_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 16.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"09BF3EE7A61F477D"
+				"06D185CA6A89A1C5"
+			]
+			icon: "gtceu:bisphenol_a_bucket"
+			id: "2925AF0F89984867"
+			rewards: [{
+				id: "20E3EDE479048904"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "455E3D3C6EE0445E"
+					title: "Bisphenol A"
+					type: "checkmark"
+				}
+				{
+					id: "4A58112F879CE78B"
+					item: "gtceu:bisphenol_a_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"73A2A993EF325299"
+				"7DF87CEDE533948D"
+				"629C4DE28BB97660"
+				"2F55E0917FE80801"
+			]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:epichlorohydrin_bucket"
+			id: "5779DD6EE8570223"
+			rewards: [{
+				id: "2F60E57CDC77939A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "55746ED641BD5B30"
+					title: "Epichlorohydrin"
+					type: "checkmark"
+				}
+				{
+					id: "02861E666CB99D62"
+					item: "gtceu:epichlorohydrin_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 15.5d
+			y: 10.0d
+		}
+		{
+			description: ["This recipe is quite easy to make."]
+			icon: "gtceu:propene_bucket"
+			id: "7DF87CEDE533948D"
+			optional: true
+			rewards: [{
+				id: "05ACACD3B8CC82AF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "04580F1A50CD22F6"
+					title: "Propene and Hypochlorous Acid"
+					type: "checkmark"
+				}
+				{
+					id: "13457D05B7F14983"
+					item: "gtceu:propene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3132FB637535B811"
+					item: "gtceu:hypochlorous_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 10.5d
+		}
+		{
+			description: ["This recipe is the easiest to make."]
+			icon: "gtceu:propene_bucket"
+			id: "629C4DE28BB97660"
+			optional: true
+			rewards: [{
+				id: "7278DFBF6A403549"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2C5B2A46AA946E7A"
+					title: "Propene, Chlorine and Water"
+					type: "checkmark"
+				}
+				{
+					id: "1522B74B5AED9E1E"
+					item: "gtceu:propene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1A0798C44C12F3F8"
+					item: "gtceu:chlorine_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 11.0d
+		}
+		{
+			description: ["This recipe has the least amount of byproducts."]
+			icon: "gtceu:glycerol_bucket"
+			id: "2F55E0917FE80801"
+			optional: true
+			rewards: [{
+				id: "7681DD610B248265"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "10373E891DA5F3A6"
+					title: "Glycerol and Hydrochloric Acid"
+					type: "checkmark"
+				}
+				{
+					id: "16C6661DD43BF9AA"
+					item: "gtceu:glycerol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "701E14B8E02A28A5"
+					item: "gtceu:hydrochloric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 9.0d
+		}
+		{
+			icon: "gtceu:allyl_chloride_bucket"
+			id: "73A2A993EF325299"
+			optional: true
+			rewards: [{
+				id: "7D4585F620F68E99"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "79B0A1AADC878B14"
+					title: "Allyl Chloride and Hypochlorous Acid"
+					type: "checkmark"
+				}
+				{
+					id: "54A152EB5B1114FC"
+					item: "gtceu:allyl_chloride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5A6EDD972CC91ADD"
+					item: "gtceu:hypochlorous_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"5779DD6EE8570223"
+				"2925AF0F89984867"
+			]
+			id: "4D49884E7F5BCBB4"
+			rewards: [{
+				count: 2
+				id: "24676EE1C5879961"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "75339BE52888E7C7"
+				item: "gtceu:epoxy_bucket"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3CB63B290C9EFAA2"]
+			id: "4D291AFA1EF8782F"
+			rewards: [{
+				id: "0C8CAE4C0C863B84"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "462D2A404EDBD65D"
+				item: "gtceu:biphenyl_dust"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["4D291AFA1EF8782F"]
+			icon: "gtceu:polychlorinated_biphenyl_bucket"
+			id: "4586CC1689328291"
+			rewards: [{
+				id: "2C621E9BCF7675CE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "537553E20AB578FF"
+					title: "Polychlorinated Biphenyl"
+					type: "checkmark"
+				}
+				{
+					id: "1E4205A0124ADC1E"
+					item: "gtceu:polychlorinated_biphenyl_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 16.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["4586CC1689328291"]
+			id: "707905962BA36098"
+			rewards: [{
+				count: 2
+				id: "7447E9F124101EF0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "423AA6B3AAF61530"
+				item: "gtceu:pcb_coolant_bucket"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 11.5d
+		}
+		{
+			icon: "gtceu:acetic_acid_bucket"
+			id: "06FBC454DC18AABA"
+			rewards: [{
+				id: "459A86257961050A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "43E9B9E4B544E4E9"
+					title: "Acetic Acid"
+					type: "checkmark"
+				}
+				{
+					id: "19A236C98C1E5CAB"
+					item: "gtceu:acetic_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["06FBC454DC18AABA"]
+			icon: "gtceu:vinyl_acetate_bucket"
+			id: "718F143E6E120E52"
+			rewards: [{
+				id: "3CE977ACCA734006"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5418E2E385B6D16C"
+					title: "Vinyl Acetate"
+					type: "checkmark"
+				}
+				{
+					id: "1B254D9003B30922"
+					item: "gtceu:vinyl_acetate_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["718F143E6E120E52"]
+			icon: "gtceu:polyvinyl_acetate_bucket"
+			id: "03B49B558B85346B"
+			rewards: [{
+				id: "491895A8EEE8F491"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0A7287ABB26F2946"
+					title: "Polyvinyl Acetate"
+					type: "checkmark"
+				}
+				{
+					id: "464E7DD53060BE32"
+					item: "gtceu:polyvinyl_acetate_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"7F66E57359872C20"
+				"03B49B558B85346B"
+			]
+			id: "3306CAE5E57839A2"
+			rewards: [{
+				count: 2
+				id: "5A6838A9D34FB482"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7667A76F17AA4586"
+				item: "gtceu:polyvinyl_butyral_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["3CB63B290C9EFAA2"]
+			icon: "gtceu:butyraldehyde_bucket"
+			id: "7F66E57359872C20"
+			rewards: [{
+				id: "3FA825FAE1712AB2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0A18B444703C80DF"
+					title: "Butyraldehyde"
+					type: "checkmark"
+				}
+				{
+					id: "13739B1382DFD9AD"
+					item: "gtceu:butyraldehyde_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["111033FEFA89BA91"]
+			icon: "gtceu:benzotrichloride_bucket"
+			id: "45A9F1311DE2EC8C"
+			rewards: [{
+				id: "7640B85BBAAE4BBB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "165E6F73EECBA545"
+					title: "Benzotrichloride "
+					type: "checkmark"
+				}
+				{
+					id: "7D3DEFA6EFA5F6D1"
+					item: "gtceu:benzotrichloride_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 21.0d
+		}
+		{
+			dependencies: ["45A9F1311DE2EC8C"]
+			icon: "gtceu:benzoyl_chloride_bucket"
+			id: "5C6292D4310F7FE8"
+			rewards: [{
+				id: "06F7469658E56252"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6A4058C726B18B53"
+					title: "Benzoyl Chloride"
+					type: "checkmark"
+				}
+				{
+					id: "7F47EBAD88627CE1"
+					item: "gtceu:benzoyl_chloride_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["5C6292D4310F7FE8"]
+			icon: "gtceu:4_fluorobenzoyl_chloride_bucket"
+			id: "30FD1FE7A169A54C"
+			rewards: [{
+				id: "4ACDB97305A712CD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5BBE3A601DE2510F"
+					title: "4-Fluorobenzoyl Chloride"
+					type: "checkmark"
+				}
+				{
+					id: "24CE4FC60D25B1D4"
+					item: "gtceu:4_fluorobenzoyl_chloride_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 15.5d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"3795EC974FF83A9D"
+				"30FD1FE7A169A54C"
+			]
+			id: "2394F95015C80B9E"
+			rewards: [{
+				id: "45FE2DB97B862C20"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68AEE79B6A644011"
+				item: "gtceu:44_difluorobenzophenone_dust"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["7CACFC7C9101EA59"]
+			icon: "gtceu:fluorobenzene_bucket"
+			id: "3795EC974FF83A9D"
+			rewards: [{
+				id: "7FDB88E9A8A82F67"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "55F9C5BAC7588287"
+					title: "Fluorobenzene"
+					type: "checkmark"
+				}
+				{
+					id: "4E879049653E9419"
+					item: "gtceu:fluorobenzene_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 15.0d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"2394F95015C80B9E"
+				"15BA6EAEA42C19B2"
+			]
+			id: "1A04D10394CDCEFC"
+			rewards: [{
+				count: 2
+				id: "56B5546717E953F3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2D383F949A73446B"
+				item: "gtceu:polyether_ether_ketone_bucket"
+				type: "item"
+			}]
+			title: "Liquid PEEK Plastic"
+			x: 19.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["50F41A8BF1BF3220"]
+			id: "15BA6EAEA42C19B2"
+			rewards: [{
+				id: "1AD2C61D38054306"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25C1AACB85083F5D"
+				item: "gtceu:disodium_salt_of_hydroquinone_dust"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["111033FEFA89BA91"]
+			id: "50F41A8BF1BF3220"
+			rewards: [{
+				id: "4666FFCE63AB2844"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "277874478919DB30"
+				item: "gtceu:hydroquinone_dust"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["6CC13BE9AD447218"]
+			description: ["This entire processing line requires a Sterile Cleanroom"]
+			icon: "gtceu:bacteria_bucket"
+			id: "01451A3C3D4EEFF7"
+			rewards: [{
+				id: "4C1053A75056ED1B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2D8F6349C93CF4F3"
+					title: "Bacteria"
+					type: "checkmark"
+				}
+				{
+					id: "0827AE3C2AB5AF77"
+					item: "gtceu:bacteria_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["01451A3C3D4EEFF7"]
+			icon: "gtceu:bacterial_sludge_bucket"
+			id: "33C2AFA111CF7C98"
+			rewards: [{
+				id: "50975AF9278C10AD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "21616B295435DFE6"
+					title: "Bacterial Sludge"
+					type: "checkmark"
+				}
+				{
+					id: "7F31F5FF6095645B"
+					item: "gtceu:bacterial_sludge_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["33C2AFA111CF7C98"]
+			icon: "gtceu:enriched_bacterial_sludge_bucket"
+			id: "26318CF977A284B2"
+			rewards: [{
+				id: "0F192394DE3CCB9D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4AD47F06181F764B"
+					title: "Enriched Bacterial Sludge"
+					type: "checkmark"
+				}
+				{
+					id: "4F3CE5E38E4149EE"
+					item: "gtceu:enriched_bacterial_sludge_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 15.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["26318CF977A284B2"]
+			icon: "gtceu:mutagen_bucket"
+			id: "7225AAC3B26C0723"
+			rewards: [{
+				id: "66DF39522187E64E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1DEEFE1E85E3E67F"
+					title: "Mutagen"
+					type: "checkmark"
+				}
+				{
+					id: "1EE54DBE4DC8939C"
+					item: "gtceu:mutagen_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 17.0d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"7225AAC3B26C0723"
+				"455438D39BFFCE52"
+				"0128E6664C030597"
+			]
+			icon: "gtceu:raw_growth_medium_bucket"
+			id: "6BF8E7DE8FFA0C09"
+			rewards: [{
+				id: "47B760BFEA316571"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7A9E5A4678A587FF"
+					title: "Raw Growth Medium"
+					type: "checkmark"
+				}
+				{
+					id: "21037A8F38706D84"
+					item: "gtceu:raw_growth_medium_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 18.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["6BF8E7DE8FFA0C09"]
+			id: "6ABD35ABBB380F42"
+			rewards: [{
+				count: 2
+				id: "50F55286EAFA6580"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2880B2250CE81EDA"
+				item: "gtceu:sterilized_growth_medium_bucket"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 15.5d
+		}
+		{
+			description: ["Try using the Aquatic Entangler to automate this. If it is too slow, you can upgrade it with the Upgrade Kits you made before. These increase the amount of fish per catch by quite a bit."]
+			id: "0128E6664C030597"
+			rewards: [{
+				id: "11D0C56C90AC8399"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "31033BDE74426D24"
+				item: "gtceu:meat_dust"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["0128E6664C030597"]
+			id: "4DD3FABBA646F75B"
+			rewards: [{
+				id: "3C9681B262D7879F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "02151C651FFC0B6F"
+				item: "gtceu:collagen_dust"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4DD3FABBA646F75B"]
+			icon: "gtceu:gelatin_mixture_bucket"
+			id: "7CA26BAAB7DFAA71"
+			rewards: [{
+				id: "6D6D7B4198996760"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "425092CB8DE66C1A"
+					title: "Gelatin Mixture"
+					type: "checkmark"
+				}
+				{
+					id: "60AB34BD449AC847"
+					item: "gtceu:gelatin_mixture_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 19.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["7CA26BAAB7DFAA71"]
+			id: "26014C1654D00A65"
+			rewards: [{
+				id: "099955B8101367CA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "612ABAA3AE42D230"
+				item: "gtceu:gelatin_dust"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["26014C1654D00A65"]
+			id: "455438D39BFFCE52"
+			rewards: [{
+				id: "7FD5C015A68D5790"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C8545014A03EF00"
+				item: "gtceu:agar_dust"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["26D3E2C0599B43B2"]
+			id: "4EDE77E1B5577399"
+			rewards: [{
+				id: "758AFE6322709793"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0B1085D38AF4EC23"
+					item: "gtceu:purified_galena_ore"
+					type: "item"
+				}
+				{
+					id: "1AC0BED2CBBA2BB3"
+					item: "gtceu:purified_sphalerite_ore"
+					type: "item"
+				}
+			]
+			title: "Purified Galena and Sphalerite"
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["4EDE77E1B5577399"]
+			icon: "gtceu:indium_concentrate_bucket"
+			id: "1EAFC66AEAE5A7A2"
+			rewards: [{
+				id: "37BC8E7D86105537"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "556B050A71284138"
+					title: "Indium Concentrate"
+					type: "checkmark"
+				}
+				{
+					id: "0AF996335A4556A9"
+					item: "gtceu:indium_concentrate_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["1EAFC66AEAE5A7A2"]
+			id: "074A6D7A3072E11F"
+			rewards: [{
+				id: "4D2A1016FA78DECF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F037F9E7977B3F2"
+				item: "gtceu:indium_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["074A6D7A3072E11F"]
+			id: "215D430EAC4CE323"
+			rewards: [{
+				count: 2
+				id: "3BB551FF59977818"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5E39429845B3D06E"
+				item: "gtceu:indium_gallium_phosphide_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"3D3E637BCB06115F"
+				"71089CC35D7621E2"
+			]
+			dependency_requirement: "one_completed"
+			id: "42CFC3424A541A3C"
+			rewards: [{
+				id: "1837B2A552914C58"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "502F8D8E12994B54"
+				item: "gtceu:naquadah_dust"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["42CFC3424A541A3C"]
+			icon: "gtceu:impure_enriched_naquadah_solution_bucket"
+			id: "32A3380851C2BE42"
+			rewards: [{
+				id: "78255245582A8AE8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7136DFF09AA7BC52"
+					title: "Impure Enriched Naquadah Solution"
+					type: "checkmark"
+				}
+				{
+					id: "17E574C25666E556"
+					item: "gtceu:impure_enriched_naquadah_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["42CFC3424A541A3C"]
+			icon: "gtceu:impure_naquadria_solution_bucket"
+			id: "0F9360D5C143E481"
+			rewards: [{
+				id: "3701D0F187305526"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "492FE4B7ECA6E918"
+					title: "Impure Naquadria Solution"
+					type: "checkmark"
+				}
+				{
+					id: "5C706B76ECF70712"
+					item: "gtceu:impure_naquadria_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["0F9360D5C143E481"]
+			icon: "gtceu:naquadria_solution_bucket"
+			id: "3E7EC8E1908F4BAF"
+			rewards: [{
+				id: "7892AC213E436F76"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "21946AD58215C114"
+					title: "Naquadria Solution"
+					type: "checkmark"
+				}
+				{
+					id: "7EFA88FB9DAD32C0"
+					item: "gtceu:naquadria_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["3E7EC8E1908F4BAF"]
+			icon: "gtceu:acidic_naquadria_solution_bucket"
+			id: "2DDA6D95E108F921"
+			rewards: [{
+				id: "2ED80CDCF6518BE1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0FAFD8BB55DFB562"
+					title: "Acidic Naquadria Solution"
+					type: "checkmark"
+				}
+				{
+					id: "7A1FBA13530EDE8F"
+					item: "gtceu:acidic_naquadria_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 17.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["2DDA6D95E108F921"]
+			id: "62752D23F0FF6163"
+			rewards: [{
+				id: "7805F1E0371A8679"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DC8195B2D49C3EC"
+				item: "gtceu:naquadria_sulfate_dust"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["62752D23F0FF6163"]
+			icon: "gtceu:hot_naquadria_ingot"
+			id: "7C22D569C168A723"
+			rewards: [{
+				id: "3A9BE5B0AA2B30C6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3B22F23AC9EB610D"
+					title: "Hot Naquadria Ingot"
+					type: "checkmark"
+				}
+				{
+					id: "772C2F28D6ED34E1"
+					item: "gtceu:hot_naquadria_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 20.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["42CFC3424A541A3C"]
+			icon: "gtceu:hot_naquadah_ingot"
+			id: "1F58848F0EB6F9A5"
+			rewards: [{
+				id: "291923F765B852D6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "766D60D47E925191"
+					title: "Hot Naquadah Ingot"
+					type: "checkmark"
+				}
+				{
+					id: "1A9537FC0825E2E5"
+					item: "gtceu:hot_naquadah_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["1F58848F0EB6F9A5"]
+			id: "3BA6406400A63937"
+			rewards: [{
+				count: 2
+				id: "55D9E035536B93ED"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5DF48907782D1F08"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["32A3380851C2BE42"]
+			id: "79B600284764E64E"
+			rewards: [{
+				id: "701FDEEEFB494FCC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1240FCC6CF8703BC"
+				item: "gtceu:trinium_sulfide_dust"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["32A3380851C2BE42"]
+			icon: "gtceu:enriched_naquadah_solution_bucket"
+			id: "49B3612FE96C3E86"
+			rewards: [{
+				id: "65C575B154995136"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6F911F6763651807"
+					title: "Enriched Naquadah Solution"
+					type: "checkmark"
+				}
+				{
+					id: "7828276E58BB8367"
+					item: "gtceu:enriched_naquadah_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 17.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["49B3612FE96C3E86"]
+			icon: "gtceu:acidic_enriched_naquadah_solution_bucket"
+			id: "2E051475D251252A"
+			rewards: [{
+				id: "4E378F280CD4D575"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6FAE9986209778DB"
+					title: "Acidic Enriched Naquadah Solution"
+					type: "checkmark"
+				}
+				{
+					id: "0E4F5993A7D11CA5"
+					item: "gtceu:acidic_enriched_naquadah_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 19.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["79B600284764E64E"]
+			icon: "gtceu:hot_trinium_ingot"
+			id: "325C2CCC67FAD708"
+			rewards: [{
+				id: "1980BE00702325A2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0E3BEB1853E2D4D2"
+					title: "Hot Trinium Ingot"
+					type: "checkmark"
+				}
+				{
+					id: "32D4286B313C6A5D"
+					item: "gtceu:hot_trinium_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["325C2CCC67FAD708"]
+			id: "2612A32BC45C1863"
+			rewards: [{
+				count: 2
+				id: "32FA42CE21999F74"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1DFB5AB065F1CC42"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["2E051475D251252A"]
+			id: "36862EB1FAE44DB5"
+			rewards: [{
+				id: "1B3C36697992768D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4AB3A49E69573780"
+				item: "gtceu:enriched_naquadah_sulfate_dust"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["36862EB1FAE44DB5"]
+			icon: "gtceu:hot_enriched_naquadah_ingot"
+			id: "19673A384920A242"
+			rewards: [{
+				id: "3BC73885A0F81A02"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1DA32B6D8D9E851F"
+					title: "Hot Enriched Naquadah Ingot"
+					type: "checkmark"
+				}
+				{
+					id: "66D9E71A6BE9CDA0"
+					item: "gtceu:hot_enriched_naquadah_ingot"
+					type: "item"
+				}
+			]
+			x: 22.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["19673A384920A242"]
+			id: "56A383575492A5A6"
+			rewards: [{
+				count: 2
+				id: "38A68A3C77A842D8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3CCCC57901BE7C1B"
+				item: "gtceu:enriched_naquadah_ingot"
+				type: "item"
+			}]
+			x: 23.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["7C22D569C168A723"]
+			id: "047BC1ADAD402D80"
+			rewards: [{
+				count: 2
+				id: "764C963C6635BF5E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "58D5C0353676B961"
+				item: "gtceu:naquadria_ingot"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"3AC92138809F3783"
+				"1B97E56660BDCEF6"
+			]
+			id: "0D874BC533C5F885"
+			rewards: [{
+				id: "50C24325AE2650B2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B847FE3A84D316B"
+				item: "thermal:slime_mushroom_spores"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0D874BC533C5F885"]
+			id: "324FB533DE3A06AE"
+			rewards: [{
+				id: "482784ADB15FFDB8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "588458C1D7C7F63E"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["324FB533DE3A06AE"]
+			id: "5A5DBA2EFDDED959"
+			rewards: [{
+				id: "2E0D6EF743C50A1A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "17FF10A9E29671D2"
+				item: "gtceu:raw_rubber_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A5DBA2EFDDED959"]
+			id: "64B4D4FC48AA717F"
+			rewards: [{
+				count: 2
+				id: "501986542F3FAECB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3A9C45327855D2F5"
+				item: "gtceu:rubber_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["324FB533DE3A06AE"]
+			id: "119983C3240B8F66"
+			rewards: [{
+				count: 2
+				id: "17991F1918A38035"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "279A231A3A5A6526"
+				item: "gtceu:glue_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+	]
+	title: "Processing Lines"
+}

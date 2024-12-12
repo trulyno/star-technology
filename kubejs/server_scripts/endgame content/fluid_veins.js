@@ -54,6 +54,17 @@ GTCEuServerEvents.fluidVeins(event => {
     vein.depletionChance(1)
     vein.depletedYield(50)
   })
+
+  event.add('start:gritty_akreyrium', vein => {
+    vein.dimensions('sgjourney:abydos')
+    vein.fluid(() => Fluid.of('gtceu:gritty_akreyrium').fluid)
+    vein.weight(300)
+    vein.minimumYield(2020)
+    vein.maximumYield(3020)
+    vein.depletionAmount(2)
+    vein.depletionChance(1)
+    vein.depletedYield(50)
+  })
   // event.modify(GTCEu.id('light_oil_deposit'), vein => {
   //     vein.biomes(0, 'sgjourney:abydos_desert')
   //     vein.biomes(0, 'sgjourney:abydos_spires')

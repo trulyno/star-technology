@@ -1,0 +1,783 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "preparing_for_dimensional_travel"
+	group: "1E0FC4EA21F735F7"
+	icon: "sgjourney:classic_stargate"
+	id: "62A72817F92AC262"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4C5DBB94345FF33B"]
+			id: "707C2E9BA62A60C5"
+			rewards: [{
+				id: "68F68AD8D2B5B5C2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "First UHV Circuit"
+			tasks: [{
+				id: "7D57266E37ABED15"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"5BDA17962F4630EB"
+				"707C2E9BA62A60C5"
+			]
+			id: "50835055C3D1050C"
+			rewards: [{
+				id: "376F5CA7A76E5595"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32F2236E48F0431C"
+				item: "gtceu:max_battery"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["707C2E9BA62A60C5"]
+			id: "314B6ABE72E4A438"
+			rewards: [{
+				id: "4AEEE108E1D4A0B9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "63A31B4C5E81DA04"
+				item: "gtceu:uv_fusion_reactor"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["314B6ABE72E4A438"]
+			id: "5BDA17962F4630EB"
+			rewards: [{
+				id: "126A15799F034C62"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7451A866F7DF568E"
+				item: "gtceu:neutronium_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5BDA17962F4630EB"]
+			id: "3ECCE739DE8F5F2C"
+			rewards: [{
+				id: "05B980D048CE49A6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1FE5F219B493E573"
+				item: "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5BDA17962F4630EB"
+				"1A4583EB1A3D538F"
+			]
+			id: "5C39B74171CC21F9"
+			rewards: [{
+				id: "5CA930AF2F7159B4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "488237F46BD12A0D"
+				item: "gtceu:uhv_machine_hull"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"707C2E9BA62A60C5"
+				"5C39B74171CC21F9"
+			]
+			id: "11D51899B980082B"
+			rewards: [{
+				id: "4A95DD52173CD514"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F1FA7FAE4CDE99A"
+				item: "gtceu:uhv_energy_input_hatch"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["11D51899B980082B"]
+			id: "44B43694312BAAC8"
+			rewards: [{
+				id: "1B1D53E67881871E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "191E9C431286F067"
+				item: "gtceu:uhv_energy_input_hatch_4a"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["44B43694312BAAC8"]
+			id: "581B9922CC4B457F"
+			rewards: [{
+				id: "1600271A98F70DD6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D302EA0D6EC6870"
+				item: "gtceu:uhv_energy_input_hatch_16a"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["707C2E9BA62A60C5"]
+			id: "27E656FA93E2A1F4"
+			rewards: [{
+				id: "0706712F08817428"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "24F1943A992D624E"
+				item: "gtceu:uv_parallel_hatch"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"50835055C3D1050C"
+				"43A620DF574E2488"
+			]
+			id: "2BAE934A80152FA1"
+			rewards: [{
+				id: "493686963AE42B5D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E5EA950F103D84F"
+				item: "gtceu:uhv_ultimate_battery"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5BDA17962F4630EB"]
+			id: "43A620DF574E2488"
+			rewards: [{
+				id: "41C5BA1892167E8F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73CBB3A5A4690753"
+				item: "gtceu:empty_tier_iii_battery"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["43A620DF574E2488"]
+			id: "745470CF31319CAA"
+			rewards: [{
+				id: "38D0A70220C4FA98"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "44A6C92C952DB065"
+				item: "gtceu:uv_lapotronic_battery"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1AC8CBF01196D1F3"]
+			id: "3FE0B664F2D15942"
+			rewards: [{
+				id: "2AD5E87948B5AC82"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A3F83FB2817AD19"
+				item: "gtceu:highly_advanced_soc_wafer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0F7A1EA1AB52F795"]
+			id: "1AC8CBF01196D1F3"
+			rewards: [{
+				id: "450BDA1E05949086"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "72F5DF7EB10A1938"
+				item: "gtceu:neutronium_wafer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5BDA17962F4630EB"]
+			id: "0F7A1EA1AB52F795"
+			rewards: [{
+				id: "7AC1A089B613C7E0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B33D272E549765B"
+				item: "gtceu:neutronium_boule"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"239A0034C8425661"
+				"5BDA17962F4630EB"
+			]
+			id: "0889A97E22C484CC"
+			rewards: [{
+				id: "16F19C7637E2AF1A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4889E04488AC39F2"
+				item: "gtceu:raw_void_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5BA69EDC3C223B2C"]
+			id: "60ECE277341A9408"
+			rewards: [{
+				id: "0788765E136344DB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2BDD6909E418101F"
+				item: "gtceu:heat_chamber"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"60ECE277341A9408"
+				"0889A97E22C484CC"
+			]
+			id: "7A5734E3CF682EBA"
+			rewards: [{
+				count: 2
+				id: "3455956EE2EEDE25"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1FE87B4D652A171F"
+				item: "gtceu:void_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5BA69EDC3C223B2C"]
+			id: "027C5CE3CFCB5649"
+			rewards: [{
+				id: "2754B5FB6A2040D7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1009DD7D04373375"
+				item: "gtceu:large_rotor_machine"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"027C5CE3CFCB5649"
+				"7A5734E3CF682EBA"
+			]
+			id: "5E9936C099FF589C"
+			rewards: [{
+				id: "23AEEE272F5D9CF4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1FA23DAE21C8EBF8"
+				item: "kubejs:crude_stargate_rod"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["348D6E3A94706230"]
+			id: "239A0034C8425661"
+			rewards: [{
+				id: "2B8D782903A05942"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F233B828108A0AF"
+				item: "gtceu:echo_r_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3D3E637BCB06115F"]
+			id: "348D6E3A94706230"
+			rewards: [{
+				id: "71BE79092CABFD49"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F6FF65177CFC94D"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"42CFC3424A541A3C"
+				"182D948925141764"
+			]
+			id: "1C515302A357B1B8"
+			rewards: [{
+				id: "12E2FCC74183EAE8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "462D1C2DAFBB310A"
+				item: "gtceu:naquadic_netherite_dust"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1C515302A357B1B8"]
+			id: "5C3AF136913CF8BE"
+			rewards: [{
+				id: "2C14933D6E2FE182"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E3D5994571FD867"
+				item: "gtceu:screret_runic_laser_source_base_dust"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5C3AF136913CF8BE"]
+			id: "3B85A08B2E08C6FC"
+			rewards: [{
+				id: "172F89E3898466D1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7ACA7956E870B321"
+				item: "gtceu:exquisite_screret_runic_laser_source_base_gem"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"3B85A08B2E08C6FC"
+				"52B553FDB34B1475"
+				"253AECE450920D99"
+			]
+			id: "75F0388FAB52E0B3"
+			rewards: [{
+				count: 2
+				id: "1AAE3502E0E6B801"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6FBE4B007B074145"
+				item: "kubejs:runic_wave_generator"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["75F0388FAB52E0B3"]
+			id: "10D78E10735CD210"
+			rewards: [{
+				id: "28F0D1651720B232"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "11DEAB85B8592993"
+				item: "kubejs:laser_casing"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"10D78E10735CD210"
+				"7FFCAD92772A175F"
+			]
+			id: "6D169C5E35C9EF6C"
+			rewards: [{
+				count: 2
+				id: "09391672D5C2E949"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "58C2D53C66E327CB"
+				item: "gtceu:runic_circuitry_assembling_station"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["52B553FDB34B1475"]
+			id: "622066696CCF9754"
+			rewards: [{
+				id: "4B152FC8755839FB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "56BFA0DDAB4186C6"
+				item: "gtceu:melodium_single_wire"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["678B90BF2ACE2BBA"]
+			id: "52B553FDB34B1475"
+			rewards: [{
+				id: "38E6C28F0D06015A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6DCB4B5D70F0A053"
+				item: "gtceu:melodium_ingot"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"678B90BF2ACE2BBA"
+				"52B553FDB34B1475"
+				"7FD0034E639F3B2D"
+			]
+			id: "253AECE450920D99"
+			rewards: [{
+				id: "409F545D75A4CDF9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C144C6A0C57FED2"
+				item: "gtceu:stellarium_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["253AECE450920D99"]
+			id: "55102B0E5D0238E1"
+			rewards: [{
+				id: "00184F2D04EEDEDA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "204C763B962F836E"
+				item: "gtceu:stellarium_single_wire"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"5E9936C099FF589C"
+				"59711F987DE95924"
+			]
+			id: "3792C5D89B1301A0"
+			rewards: [{
+				count: 2
+				id: "323908ADE771116D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "54650CBE65808315"
+				item: "kubejs:stargate_rod"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7FFCAD92772A175F"]
+			id: "1004D6D7636E0321"
+			rewards: [{
+				count: 2
+				id: "40B91E2A3CCDE76A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2299AC60A218E4E5"
+				item: "gtceu:stargate_component_assembly"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6D169C5E35C9EF6C"]
+			id: "0508AE03C730BE6C"
+			rewards: [{
+				id: "4A6DA0895E0B5CE8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2B3B1DF6E853151E"
+					item: "kubejs:runic_pathway_engraved_plating"
+					type: "item"
+				}
+				{
+					id: "0D4EE0EF97FB9A90"
+					item: "kubejs:runic_engraved_plating"
+					type: "item"
+				}
+			]
+			title: "Engraved Runes"
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["60ECE277341A9408"]
+			id: "59711F987DE95924"
+			rewards: [{
+				id: "5B47D30E03A77548"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "175B360D69C79895"
+				item: "gtceu:super_pressure_heat_chamber"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5BDA17962F4630EB"]
+			hide_dependency_lines: true
+			id: "7FFCAD92772A175F"
+			rewards: [{
+				id: "656D18CC58D84EFA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7ED8708DCDB4BEEA"
+				item: "gtceu:gravi_star"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"1004D6D7636E0321"
+				"3792C5D89B1301A0"
+				"0508AE03C730BE6C"
+			]
+			icon: "sgjourney:classic_stargate"
+			id: "2EDE996312B1C69E"
+			rewards: [
+				{
+					auto: "invisible"
+					icon: "ae2:singularity"
+					id: "3AF1F23EC9DE8A8F"
+					ignore_reward_blocking: true
+					stage: "one"
+					title: "Abydos access pass (VIP)"
+					type: "gamestage"
+				}
+				{
+					id: "0140B5989624AB19"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Making the Classic Stargate"
+			tasks: [
+				{
+					id: "4FDCAABF5C65ADD0"
+					item: "sgjourney:classic_stargate_base_block"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "29BB80ACBD2EF3B2"
+					item: { Count: 9, id: "sgjourney:classic_stargate_chevron_block" }
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "14FD7F965EB6A4B7"
+					item: { Count: 14, id: "sgjourney:classic_stargate_ring_block" }
+					type: "item"
+				}
+				{
+					id: "5E3D0721A944BC88"
+					item: "sgjourney:classic_dhd"
+					type: "item"
+				}
+				{
+					id: "6FA846A042C52F32"
+					item: "sgjourney:crystal_interface"
+					type: "item"
+				}
+			]
+			title: "This is what you have been waiting for"
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2EDE996312B1C69E"]
+			id: "5097F10D8D36FEB7"
+			rewards: [{
+				command: "/sgjourney stargateNetwork address sgjourney:abydos"
+				icon: "minecraft:sand"
+				id: "5C531A9D6C31870F"
+				title: "Abydos coordinates"
+				type: "command"
+			}]
+			tasks: [{
+				id: "110810FCBC6D0A65"
+				title: "Get Abydos Coordinates"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2EDE996312B1C69E"]
+			id: "170CF69CE6B7BF98"
+			size: 2.0d
+			tasks: [{
+				id: "7DE809989E4AD345"
+				title: "STOP!!! CONTENT NOT YET READY!"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+	]
+	title: "Making the Classic Stargate"
+}
