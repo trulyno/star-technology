@@ -447,6 +447,23 @@ ServerEvents.recipes(event => {
         C: 'gtceu:europium_single_cable',
         H: 'gtceu:uhv_machine_hull'
     });
+    event.shaped(Item.of('gtceu:uhv_transformer_2a'), [
+        'UCC',
+        'CH ',
+        'UCC'], {
+        U: 'gtceu:uhpic_chip',
+        C: 'gtceu:europium_double_cable',
+        H: 'gtceu:uhv_machine_hull'
+    });
+    event.shaped(Item.of('gtceu:uhv_transformer_4a'), [
+        'UCC',
+        'CH ',
+        'UCC'], {
+        U: 'gtceu:uhpic_chip',
+        C: 'gtceu:europium_quadruple_cable',
+        H: 'gtceu:uhv_machine_hull'
+    });
+    
     //rutile fix
     event.remove({ id: 'gtceu:electric_blast_furnace/rutile_from_ilmenite' })
     event.recipes.gtceu.electric_blast_furnace('electric_blast_furnace/rutile_from_ilmenite')
