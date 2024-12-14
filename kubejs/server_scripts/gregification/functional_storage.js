@@ -85,4 +85,27 @@ ServerEvents.recipes(event => {
         C: '#gtceu:circuits/lv'
     });
 
+    [
+        '1',
+        '2',
+        '4'
+    ].forEach(size => {
+        event.remove({ output: `functionalstorage:framed_${size}` });
+        event.shapeless(`1x functionalstorage:framed_${size}`, [`1x functionalstorage:oak_${size}`, 'framedblocks:framed_hammer']);
+    })
+    event.shapeless('1x functionalstorage:framed_storage_controller', ['functionalstorage:storage_controller', 'framedblocks:framed_hammer']);
+
+    event.shaped('1x functionalstorage:redstone_upgrade', [
+        ' R ',
+        'PCP',
+        ' R '
+    ], {
+        R: "#forge:dusts/redstone",
+        C: "minecraft:comparator",
+        P: "#forge:plates/iron"
+    });
+
+    event.shapeless('functionalstorage:pusher_upgrade', [Item.of('functionalstorage:puller_upgrade').ignoreNBT(), '#forge:tools/screwdrivers']);
+    event.shapeless('functionalstorage:puller_upgrade', [Item.of('functionalstorage:pusher_upgrade').ignoreNBT(), '#forge:tools/screwdrivers']);
+
 });
