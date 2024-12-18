@@ -651,8 +651,8 @@
 				}
 			]
 			title: "Engraved Runes"
-			x: 1.25d
-			y: -5.25d
+			x: 3.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["60ECE277341A9408"]
@@ -765,7 +765,7 @@
 				type: "checkmark"
 			}]
 			x: 5.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -780,7 +780,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 4.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["56D5872D2C33A9CC"]
@@ -791,7 +791,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7A38469EAAABEAAE"]
@@ -804,7 +804,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["348D6E3A94706230"]
@@ -814,7 +814,7 @@
 				item: "kubejs:coordinate_crystal"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -1.0d
 			y: 4.5d
 		}
 		{
@@ -825,7 +825,7 @@
 				item: "kubejs:computational_super_matrix"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.0d
 			y: 6.5d
 		}
 		{
