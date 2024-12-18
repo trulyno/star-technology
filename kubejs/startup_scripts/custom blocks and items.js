@@ -86,6 +86,7 @@ StartupEvents.registry('item', event => {
     //     .displayName('OpV Emitter')
     //     .texture('kubejs:item/emitters/opv_emitter');
 
+    
     event.create('draconic_wetware_circuit_board')
         .displayName('Draconic Wetware Circuit Board')
         .texture('kubejs:item/circuits/draconic_wetware_circuit_board');
@@ -98,6 +99,11 @@ StartupEvents.registry('item', event => {
         .displayName('Draconic Neuro Processing Unit')
         .tooltip('Neuro-sama!')
         .texture('kubejs:item/circuits/draconic_neuro_processing_unit');
+
+    event.create('draconic_wetware_microchip_processor')
+        .displayName('Draconic Wetware Microchip Processor')
+        .tooltip('§5Dr. Conic approved ZPM Circuit')
+        .texture('kubejs:item/circuits/draconic_wetware_microchip_processor');
 
     event.create('draconic_wetware_processor')
         .displayName('Draconic Wetware Processor')

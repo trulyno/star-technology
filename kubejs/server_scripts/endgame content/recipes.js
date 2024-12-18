@@ -164,6 +164,12 @@ ServerEvents.recipes(event => {
             '64x gtceu:uhpic_wafer', '64x gtceu:uhpic_wafer', '16x gtceu:melodium_foil', '16x gtceu:prismalium_foil')
         .inputFluids('gtceu:neutronium 63000', 'gtceu:polybenzimidazole 54000', 'gtceu:naquadria 32000')
         .itemOutputs('kubejs:runic_wave_generator')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of("gtceu:exquisite_screret_runic_laser_source_base_gem"))
+                .EUt(369000)
+                .CWUt(128)
+        )
         .duration(64000)
         .EUt(369000);
 
@@ -193,6 +199,12 @@ ServerEvents.recipes(event => {
                 '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '48x gtceu:prismalium_screw')
         .inputFluids('gtceu:soldering_alloy 40000')
         .itemOutputs('kubejs:computational_super_matrix')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of("gtceu:wetware_processor_mainframe"))
+                .EUt(90000)
+                .CWUt(128)
+        )
         .duration(12000)
         .EUt(90000);
 
@@ -219,6 +231,12 @@ ServerEvents.recipes(event => {
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip', '48x gtceu:prismalium_single_wire')
         .inputFluids('gtceu:hsse 6912', 'gtceu:niobium_titanium 1728')
         .itemOutputs('gtceu:super_pressure_heat_chamber')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of("gtceu:heat_chamber"))
+                .EUt(90000)
+                .CWUt(64)
+        )
         .duration(46000)
         .EUt(90000);
 
@@ -228,6 +246,12 @@ ServerEvents.recipes(event => {
                     '32x gtceu:uhpic_chip', '4x gtceu:advanced_power_thruster', '4x gtceu:hssg_spring')
         .inputFluids('gtceu:soldering_alloy 3456', 'gtceu:yttrium_barium_cuprate 5184')
         .itemOutputs('gtceu:large_rotor_machine')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of("gtceu:long_void_rod"))
+                .EUt(90000)
+                .CWUt(64)
+        )
         .duration(12000)
         .EUt(90000);
 
@@ -237,6 +261,12 @@ ServerEvents.recipes(event => {
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '48x gtceu:blue_alloy_screw', 'gtceu:gravi_star')
         .inputFluids('gtceu:hsse 5184', 'gtceu:hssg 5184', 'gtceu:hsss 5184')
         .itemOutputs('gtceu:runic_circuitry_assembling_station')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of("kubejs:laser_casing"))
+                .EUt(90000)
+                .CWUt(128)
+        )
         .duration(82000)
         .EUt(90000);
 
@@ -268,6 +298,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:prismalium 36864', 'gtceu:pcb_coolant 64000', 'gtceu:osmiridium 73728')
         .itemOutputs('gtceu:stargate_component_assembly')
         .duration(128000)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of("kubejs:stargate_rod"))
+                .EUt(90000)
+                .CWUt(144)
+        )
         .EUt(90000);
 
     event.recipes.gtceu.assembler('clasic_dhd')
