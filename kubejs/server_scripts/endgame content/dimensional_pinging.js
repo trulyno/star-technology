@@ -2,36 +2,38 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.laser_engraver('coordinate_crystal')
         .itemInputs('2x gtceu:exquisite_echo_shard_gem')
-        .notConsumable('gtceu:black_len')
+        .notConsumable('gtceu:black_glass_lens')
         .itemOutputs('kubejs:coordinate_crystal')
         .duration(1200)
-        .EUt(GTValues.VHA[GTValues.ZPM])
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
     //Dimensional Finder Controller
     
     // Machine recipes
+    
     event.recipes.gtceu.assembly_line('dimensional_finder')
-    .itemInputs(
-        'gtceu:uv_scanner','16x gtceu:uv_scanner','16x gtceu:uv_scanner','16x gtceu:uv_scanner','16x gtceu:uv_scanner',
-        '64x gtceu:fine_trinaquadalloy_wire','64x gtceu:fine_trinaquadalloy_wire', '8x #gtceu:circuits/uv', '3x gtceu:fusion_glass'
-    )
-    .inputFluids(
-        'gtceu:naquadria 34992',
-        'gtceu:neutronium 13248',
-        'gtceu:echo_r 11520'
-    )
-    .itemOutputs('kubejs:dimensional_finder')
-    .duration(36000)
-    .stationResearch(
-        researchRecipeBuilder => researchRecipeBuilder
-            .researchStack(Item.of("kubejs:coordinate_crystal"))
-            .EUt(GTValues.VHA[GTValues.UV])
-            .CWUt(128)
+        .itemInputs(
+            'gtceu:uv_scanner','16x gtceu:uv_scanner','16x gtceu:uv_scanner','16x gtceu:uv_scanner','16x gtceu:uv_scanner',
+            '64x gtceu:fine_trinaquadalloy_wire','64x gtceu:fine_trinaquadalloy_wire', '8x #gtceu:circuits/uv', '3x gtceu:fusion_glass'
         )
-        .EUt(GTValues.VHA[GTValues.UV]); 
+        .inputFluids(
+            'gtceu:naquadria 34992',
+            'gtceu:neutronium 13248',
+            'gtceu:echo_r 11520'
+        )
+        .itemOutputs('kubejs:dimensional_finder')
+        .duration(36000)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of("kubejs:coordinate_crystal"))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(128)
+            )
+            .EUt(GTValues.VHA[GTValues.UV]); 
+
     //Coordinate Crystals
     
-        event.recipes.gtceu.dimensional_finder('abydos_coordinate_crystal')
+    event.recipes.gtceu.dimensional_finder('abydos_coordinate_crystal')
         .itemInputs('kubejs:coordinate_crystal', 'minecraft:sand', 'gtceu:uv_sensor')
         .inputFluids('gtceu:naquadria 9072')
         .chancedOutput('kubejs:abydos_coordinate_crystal', 250, 50)
