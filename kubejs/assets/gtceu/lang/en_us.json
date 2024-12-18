@@ -369,5 +369,7 @@
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.1": "§7A reintegration device designed to recombine Akreyrium. By folding the distinct variants of Akreyrium through a precise stabilization matrix over a crystal, a highly refined and pure version of Akreyrium can be obtained.",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.2": "§6Stabilisation Matrix Lens:",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.3": "§7The folding stabiliser utilises a lens to focus the reintegration, The proper type should be chosen based on the Akreyrium variant, reinsertion is necessary after every use.",
-    "gtceu.folding_akreyrium_stabiliser": "Folding Akreyrium Stabiliser"
+    "gtceu.folding_akreyrium_stabiliser": "Folding Akreyrium Stabiliser",
+
+    "gtceu.machine.energy_converter.tooltip_tool_usage": "Starts as §fEU Converter§7, use Soft Mallet to change"
 }
