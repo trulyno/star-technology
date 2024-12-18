@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(event => {
     
     event.recipes.gtceu.assembly_line('uhv_electric_motor')
@@ -111,4 +110,5 @@ ServerEvents.recipes(event => {
         )
         .duration(600)
         .EUt(250000);
+
 });
