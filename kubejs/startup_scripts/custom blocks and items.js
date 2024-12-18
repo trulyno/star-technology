@@ -5,37 +5,6 @@ StartupEvents.registry('item', event => {
         .rarity('rare')
         .tooltip('The strongest armor material');
 
-    event.create('crude_stargate_rod')
-        .texture('kubejs:item/gate_items/crude_stargate_rod')
-        .rarity('rare')
-        .tooltip("It doesn't seem ready for use quite yet...");
-
-    event.create('stargate_rod')
-        .texture('kubejs:item/gate_items/stargate_rod')
-        .rarity('epic')
-        .tooltip('The muscles of a stargate, if you will...');
-
-    event.create('runic_engraved_plating')
-        .displayName('Runic-Engraved Plating')
-        .texture('kubejs:item/gate_items/rune_engraved_plating')
-        .rarity('epic')
-        .tooltip('Mikerooni + Runes = Mikerunies');
-
-    event.create('runic_pathway_engraved_plating')
-        .displayName('Runic Pathway-Engraved Plating')
-        .texture('kubejs:item/gate_items/runic_pathway_engraved_plating')
-        .rarity('rare');
-
-    event.create('runic_wave_generator')
-        .displayName('Drack-ion Runic Wave Generator')
-        .texture('kubejs:item/gate_items/drack-ion_runic_wave_generator')
-        .rarity('epic');
-
-    event.create('computational_super_matrix')
-        .displayName('Computation Supermatrix')
-        .texture('kubejs:item/gate_items/computation-super-matrix')
-        .rarity('rare');
-
     event.create('thorium_fuel_rod')
         .displayName('Thorium Fuel Rod')
         .texture('kubejs:item/nuclear_rods/thorium_fuel_rod');
@@ -177,47 +146,93 @@ StartupEvents.registry('item', event => {
             .tooltip('§o§7For use with AE2 autocrafting');
     });
 
+    //Gate Parts
+
+    event.create('crude_stargate_rod')
+        .texture('kubejs:item/gate_items/crude_stargate_rod')
+        .rarity('rare')
+        .tooltip("It doesn't seem ready for use quite yet...");
+
+    event.create('stargate_rod')
+        .texture('kubejs:item/gate_items/stargate_rod')
+        .rarity('epic')
+        .tooltip('The muscles of a stargate, if you will...');
+
+    event.create('runic_engraved_plating')
+        .displayName('Runic-Engraved Plating')
+        .texture('kubejs:item/gate_items/rune_engraved_plating')
+        .rarity('epic')
+        .tooltip('Mikerooni + Runes = Mikerunies');
+
+    event.create('runic_pathway_engraved_plating')
+        .displayName('Runic Pathway-Engraved Plating')
+        .texture('kubejs:item/gate_items/runic_pathway_engraved_plating')
+        .rarity('rare');
+
+    event.create('runic_wave_generator')
+        .displayName('Drack-ion Runic Wave Generator')
+        .texture('kubejs:item/gate_items/drack-ion_runic_wave_generator')
+        .rarity('epic');
+
+    event.create('computational_super_matrix')
+        .displayName('Computation Supermatrix')
+        .texture('kubejs:item/gate_items/computation-super-matrix')
+        .rarity('rare');
+
+    event.create('classic_stargate_computer_core')
+        .displayName('Classic Encoded Computational Unit')
+        .rarity('uncommon')
+        .texture('kubejs:item/gate_items/classic_computational_core');
+    
     //Dimensional Pinging
 
     event.create('coordinate_crystal')
         .displayName('Blank Dimensional Coordinate Crystal')
         .rarity('rare')
-        .tooltip('If you are lucky you may find Home');
+        .tooltip('If you are lucky you may find Home')
+        .texture('kubejs:item/coordinate_crystals/blank_coordinate_crystal');
 
     event.create('abydos_coordinate_crystal')
         .displayName('Abydos Inscribed Coordinate Crystal')
         .rarity('epic')
-        .tooltip('The Ancient Sands');
+        .tooltip('The Ancient Sands')
+        .texture('kubejs:item/coordinate_crystals/abydos_coordinate_crystal');
         
     event.create('nether_coordinate_crystal')
         .displayName('Nether Inscribed Coordinate Crystal')
         .rarity('epic')
-        .tooltip('The Burning Hells');
+        .tooltip('The Burning Hells')
+        .texture('kubejs:item/coordinate_crystals/nether_coordinate_crystal');
 
     event.create('end_coordinate_crystal')
         .displayName('End Inscribed Coordinate Crystal')
         .rarity('epic')
-        .tooltip('The Draconic Void');
+        .tooltip('The Draconic Void')
+        .texture('kubejs:item/coordinate_crystals/end_coordinate_crystal');
 
     event.create('lantea_coordinate_crystal')
         .displayName('Lantea Inscribed Coordinate Crystal')
         .rarity('epic')
-        .tooltip('The Endless Seas');
+        .tooltip('The Endless Seas')
+        .texture('kubejs:item/coordinate_crystals/lantea_coordinate_crystal');
 
     event.create('cavum_coordinate_crystal')
         .displayName('Cavum Inscribed Coordinate Crystal')
         .rarity('epic')
-        .tooltip('The Failing Abyss');
+        .tooltip('The Failing Abyss')
+        .texture('kubejs:item/coordinate_crystals/cavum_coordinate_crystal');
 
     event.create('sea_coordinate_crystal')
         .displayName('Fractured Sea Coordinate Crystal')
         .rarity('epic')
-        .tooltip('The final steps...');
+        .tooltip('The final steps...')
+        .texture('kubejs:item/coordinate_crystals/sea_coordinate_crystal');
 
     event.create('void_coordinate_crystal')
         .displayName('Fractured Void Coordinate Crystal')
         .rarity('epic')
-        .tooltip('...to get Home');
+        .tooltip('...to get Home')
+        .texture('kubejs:item/coordinate_crystals/void_coordinate_crystal');
 
 });
 

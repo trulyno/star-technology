@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
         .duration(32000)
         .EUt(400000);
     
-    event.recipes.gtceu.assembly_line('comupation_super_matrix')
+    event.recipes.gtceu.assembly_line('compuation_super_matrix')
         .itemInputs('gtceu:melodium_frame', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', 
                 '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '48x gtceu:prismalium_screw')
         .inputFluids('gtceu:soldering_alloy 40000')
@@ -207,9 +207,23 @@ ServerEvents.recipes(event => {
         )
         .duration(12000)
         .EUt(90000);
+//classic_stargate_computer_core
+    event.recipes.gtceu.assembly_line('classic_stargate_computer_core')
+            .itemInputs('gtceu:stellarium_frame', '16x gtceu:ruthenium_trinium_americium_neutronate_single_wire', '16x gtceu:ruthenium_trinium_americium_neutronate_single_wire',
+                 '64x gtceu:uhpic_chip', 'kubejs:computational_super_matrix', 'kubejs:computational_super_matrix', 'kubejs:computational_super_matrix', 'kubejs:computational_super_matrix')
+            .inputFluids('gtceu:soldering_alloy 69420', 'gtceu:sterilized_growth_medium 13500')
+            .itemOutputs('kubejs:classic_stargate_computer_core')
+            .duration(24000)
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of("kubejs:abydos_coordinate_crystal"))
+                    .EUt(GTValues.VHA[GTValues.UV])
+                    .CWUt(144)
+            )
+            .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.stargate_component_assembly('classic_stargate_base_block')
-        .itemInputs('48x kubejs:stargate_rod', 'gtceu:stellarium_frame', '22x gtceu:naquadah_alloy_plate', '24x kubejs:runic_pathway_engraved_plating', '16x kubejs:runic_engraved_plating', '4x kubejs:computational_super_matrix')
+        .itemInputs('48x kubejs:stargate_rod', 'gtceu:stellarium_frame', '22x gtceu:naquadah_alloy_plate', '24x kubejs:runic_pathway_engraved_plating', '16x kubejs:runic_engraved_plating', 'kubejs:classic_stargate_computer_core')
         .inputFluids('gtceu:soldering_alloy 12000', 'gtceu:naquadria 56000')
         .itemOutputs('sgjourney:classic_stargate_base_block')
         .duration(48000)
