@@ -494,4 +494,46 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_stone_tool')
         .textureAll('kubejs:block/multiblock/meshblock');
 
+    //Dimensional Pinging
+
+    event.create('coordinate_crystal')
+        .displayName('Blank Dimensional Coordinate Crystal')
+        .rarity('rare')
+        .tooltip('If you are lucky you may find Home')
+
+    event.create('abydos_coordinate_crystal')
+        .displayName('Abydos Inscribed Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('The Ancient Sands')
+        
+    event.create('nether_coordinate_crystal')
+        .displayName('Nether Inscribed Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('The Burning Hells')
+
+    event.create('end_coordinate_crystal')
+        .displayName('End Inscribed Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('The Draconic Void')
+
+    event.create('lantea_coordinate_crystal')
+        .displayName('Lantea Inscribed Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('The Endless Seas')
+
+    event.create('cavum_coordinate_crystal')
+        .displayName('Cavum Inscribed Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('The Failing Abyss')
+
+    event.create('sea_coordinate_crystal')
+        .displayName('Fractured Sea Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('The final steps...')
+
+    event.create('void_coordinate_crystal')
+        .displayName('Fractured Void Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('...to get Home')
+
 });

@@ -1574,4 +1574,5 @@ materialRegistry(event => {
         .fluid()
         .element(GTElements.get('akreyrium'))
         .color(0x464655);
+
 });
