@@ -372,3 +372,10 @@ ServerEvents.recipes(event => {
         S: 'gtceu:uhv_machine_hull'
     });
 });
+
+BlockEvents.placed(event => {
+	let block = event.getBlock();
+	if (/^gtceu:.*energy_converter$/.test(block.getId())) {
+        block.mergeEntityData({ energyContainer: { feToEu: true } });
+	};
+});
