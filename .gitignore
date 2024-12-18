@@ -1,30 +1,5 @@
-# Specific exclusion
-config/embeddium-fingerprint.json
-config/embeddium-options.json
-config/embeddium++.toml
-config/fml.toml
-config/jei/recipe-category-sort-order.init
-config/oculus.properties
-config/emi.css
-
-config/jei/world/
-config/worldedit/
-
-config/badmobs-common.toml
-config/extendedcrafting-common.toml
-config/mysticaladaptations-common.toml
-config/mysticalagradditions-common.toml
-config/mysticalagriculture-common.toml
-config/sgjourney-common.toml
-config/defaultworldtype/client-config.toml
-config/jei/jei-client.ini
-config/jei/jei-colors.ini
-config/jei/jei-debug.ini
-config/jei/jei-mod-id-format.ini
-config/skyblockbuilder/data/dimensions.txt
-
 # Ignore eveything so repository can be used in game instance
-*
+/*
 
 # Add directories with soure code
 !config/
@@ -39,4 +14,24 @@ config/skyblockbuilder/data/dimensions.txt
 !README.md
 !panorama.dat
 !.gitignore
+!.gitattributes
 
+# Specific exclusion
+config/embeddium-fingerprint.json
+config/embeddium-options.json
+config/embeddium++.toml
+config/fml.toml
+config/oculus.properties
+config/emi.css
+
+config/jei/*
+config/worldedit/
+
+config/badmobs-common.toml
+config/extendedcrafting-common.toml
+config/mysticaladaptations-common.toml
+config/mysticalagradditions-common.toml
+config/mysticalagriculture-common.toml
+config/sgjourney-common.toml
+config/defaultworldtype/client-config.toml
+config/skyblockbuilder/data/dimensions.txt
