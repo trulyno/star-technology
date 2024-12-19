@@ -19,7 +19,7 @@ var ekofProcessableTiers = {
       { material: "bornite", secondary: "gold", tertiary: "pyrite", quaternary: "cobalt" },
       { material: "pentlandite", secondary: "cobalt", tertiary: "iron", quaternary: "sulfur" },
       { material: "rock_salt", secondary: "salt", tertiary: "salt", quaternary: "borax" },
-      { material: "salt", secondary: "rock_salt", tertiary: "rock_salt", quaternary: "borax" },
+      { material: "salt", secondary: "rock_salt", tertiary: "rock_salt", quaternary: "borax" }
     ],
   
     128: [
@@ -28,23 +28,18 @@ var ekofProcessableTiers = {
       { material: "pyrochlore", secondary: "apatite", tertiary: "apatite", quaternary: "calcium" },
       { material: "pyrolusite", secondary: "manganese", tertiary: "manganese", quaternary: "tantalite" },
       { material: "cobaltite", secondary: "cobalt", tertiary: "sulfur", quaternary: "cobalt" },
-      {
-        material: "apatite",
-        secondary: "tricalcium_phosphate",
-        tertiary: "tricalcium_phosphate",
-        quaternary: "phosphate",
-      },
+      { material: "apatite", secondary: "tricalcium_phosphate", tertiary: "tricalcium_phosphate", quaternary: "phosphate" }
     ],
   
     512: [
       { material: "bauxite", secondary: "gallium", tertiary: "grossular", quaternary: "rutile" },
       { material: "pitchblende", secondary: "thorium", tertiary: "thorium", quaternary: "uraninite" },
-      { material: "ilmenite", secondary: "iron", tertiary: "iron", quaternary: "rutile" },
+      { material: "ilmenite", secondary: "iron", tertiary: "iron", quaternary: "rutile" }
     ],
   
     2048: [
       { material: "cooperite", secondary: "palladium", tertiary: "nickel", quaternary: "nickel" },
-      { material: "bastnasite", secondary: "neodymium", tertiary: "neodymium", quaternary: "rare_earth" },
+      { material: "bastnasite", secondary: "neodymium", tertiary: "neodymium", quaternary: "rare_earth" }
     ],
   };
   
