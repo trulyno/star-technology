@@ -56,9 +56,11 @@ var ekofProcessableTiers = {
       L: "gtceu:lv_machine_hull",
       W: "gtceu:tin_single_cable",
     });
+  });
   
-    function ekof_basic(rpm, material, secondary, tertiary) {
-      const itemName = `gtceu:crushed_${material}_ore`;
+  function ekof_basic(rpm, material, secondary, tertiary) {
+    const itemName = `gtceu:crushed_${material}_ore`;
+    ServerEvents.recipes((event) => {
       event.recipes.gtceu
         .electrico_kinetic_ore_factory(`${material}_e_ore_factory`)
         .itemInputs(itemName)
@@ -71,10 +73,16 @@ var ekofProcessableTiers = {
         .inputStress(256)
         .rpm(rpm == 2048 ? 256 : rpm == 512 ? 192 : rpm)
         .EUt(28);
-    }
+    });
   
-    function ekof(rpm, material, secondary, tertiary, quaternary) {
-      const itemName = `gtceu:crushed_${material}_ore`;
+    ServerEvents.tags("item", (event) => {
+      event.add(`kubejs:ekof_processable_${rpm}`, itemName);
+    });
+  }
+  
+  function ekof(rpm, material, secondary, tertiary, quaternary) {
+    const itemName = `gtceu:crushed_${material}_ore`;
+    ServerEvents.recipes((event) => {
       event.recipes.gtceu
         .electrico_kinetic_ore_factory(`${material}_e_ore_factory`)
         .itemInputs(itemName)
@@ -88,24 +96,21 @@ var ekofProcessableTiers = {
         .inputStress(rpm * 4)
         .rpm(rpm == 2048 ? 256 : rpm == 512 ? 192 : rpm)
         .EUt(rpm * 0.75);
-    }
+    });
   
-    // Iterate over each tier and processable item and register the recipes
-    Object.keys(ekofProcessableTiers).forEach((tier) => {
-      ekofProcessableTiers[tier].forEach((item) => {
-        if (item.quaternary) {
-          ekof(tier, item.material, item.secondary, item.tertiary, item.quaternary);
-        } else {
-          ekof_basic(tier, item.material, item.secondary, item.tertiary);
-        }
-      });
+    ServerEvents.tags("item", (event) => {
+      event.add(`kubejs:ekof_processable_${rpm}`, itemName);
+    });
+  }
+  
+  // Iterate over each tier and processable item and register the recipes
+  Object.keys(ekofProcessableTiers).forEach((tier) => {
+    ekofProcessableTiers[tier].forEach((item) => {
+      if (item.quaternary) {
+        ekof(tier, item.material, item.secondary, item.tertiary, item.quaternary);
+      } else {
+        ekof_basic(tier, item.material, item.secondary, item.tertiary);
+      }
     });
   });
   
-  ServerEvents.tags("item", (event) => {
-    Object.keys(ekofProcessableTiers).forEach((tier) => {
-      ekofProcessableTiers[tier].forEach((item) => {
-        event.add(`kubejs:ekof_processable_${tier}`, `gtceu:crushed_${item.material}_ore`);
-      });
-    });
-  });
