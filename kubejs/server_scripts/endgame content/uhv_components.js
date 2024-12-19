@@ -2,7 +2,7 @@
 ServerEvents.recipes(event => {
     
     event.recipes.gtceu.assembly_line('uhv_electric_motor')
-        .itemInputs('gtceu:long_magnetic_zapolgium_rod', '4x gtceu:long_zalloy_rod', '8x gtceu:zalloy_round', '64x gtceu:fine_zirconium_wire', '64x gtceu:fine_zirconium_wire', '2x gtceu:zirconium_selenide_diiodide_single_cable')
+        .itemInputs('gtceu:long_magnetic_pure_netherite_rod', '4x gtceu:long_zalloy_rod', '8x gtceu:zalloy_round', '64x gtceu:fine_zirconium_wire', '64x gtceu:fine_zirconium_wire', '2x gtceu:zirconium_selenide_diiodide_single_cable')
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 576', 'gtceu:lubricant 1000', 'gtceu:naquadria 576')
         .itemOutputs('gtceu:uhv_electric_motor')
         .stationResearch(

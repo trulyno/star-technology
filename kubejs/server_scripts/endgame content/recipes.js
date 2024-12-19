@@ -389,7 +389,13 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:zapolgium_ingot')
         .itemOutputs('gtceu:magnetic_zapolgium_ingot')
         .duration(80)
-        .EUt(50000);
+        .EUt(GTValues.VA[GTValues.ZPM]);
+
+    event.recipes.gtceu.polarizer('magnetic_pure_netherite')
+        .itemInputs('gtceu:pure_netherite_ingot')
+        .itemOutputs('gtceu:magnetic_pure_netherite_ingot')
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.centrifuge('nether_rare_earth')
         .itemInputs('gtceu:nether_rare_earth_dust')

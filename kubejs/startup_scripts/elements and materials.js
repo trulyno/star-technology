@@ -373,10 +373,7 @@ materialRegistry(event => {
         .ingot()
         .element(GTElements.get('zapolgium'))
         .color(0xcc00cc)
-        .iconSet(magnetic)
-        .ingotSmeltInto(GTMaterials.get('zapolgium'))
-        .arcSmeltInto(GTMaterials.get('zapolgium'))
-        .macerateInto(GTMaterials.get('zapolgium'))
+        .iconSet(MAGNETIC)
         .flags(rod, long_rod, magnetic);
 
     event.create('zapolgium')
@@ -384,7 +381,6 @@ materialRegistry(event => {
         .element(GTElements.get('zapolgium'))
         .color(0xcc00cc)
         .iconSet(DULL)
-        .polarizesInto(GTMaterials.get('magnetic_zapolgium'))
         .blastTemp(10799, 'highest', VA('uhv'), 1600);
 
     event.create('xeproda')
@@ -654,6 +650,13 @@ materialRegistry(event => {
         .blastTemp(3300, 'low', VA('ev'), 1200)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring);
+
+    event.create('magnetic_pure_netherite')
+        .ingot()
+        .element(GTElements.get('pure_netherite'))
+        .color(0x1a0d00)
+        .iconSet(MAGNETIC)
+        .flags(rod, long_rod, magnetic);
 
     event.create('naquadic_netherite')
         .gem(0)
