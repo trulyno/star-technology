@@ -51,7 +51,7 @@ var ekofProcessableTiers = {
   ServerEvents.tags("item", (event) => {
     Object.keys(ekofProcessableTiers).forEach((tier) => {
       ekofProcessableTiers[tier].forEach((item) => {
-        event.add(`startech:ekof_processable_${tier}`, `gtceu:crushed_${item.material}_ore`);
+        event.add(`start:ekof_processable_${tier}`, `gtceu:crushed_${item.material}_ore`);
       });
     });
   });
