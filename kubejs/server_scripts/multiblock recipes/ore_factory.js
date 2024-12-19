@@ -48,14 +48,6 @@ var ekofProcessableTiers = {
     ],
   };
   
-  ServerEvents.tags("item", (event) => {
-    Object.keys(ekofProcessableTiers).forEach((tier) => {
-      ekofProcessableTiers[tier].forEach((item) => {
-        event.add(`kubejs:ekof_processable_${tier}`, `gtceu:crushed_${item.material}_ore`);
-      });
-    });
-  });
-  
   ServerEvents.recipes((event) => {
     event.shaped(Item.of("gtceu:electrico_kinetic_ore_factory"), ["GCG", "PLP", "WPW"], {
       G: "gtceu:bronze_gear",
@@ -110,3 +102,10 @@ var ekofProcessableTiers = {
     });
   });
   
+  ServerEvents.tags("item", (event) => {
+    Object.keys(ekofProcessableTiers).forEach((tier) => {
+      ekofProcessableTiers[tier].forEach((item) => {
+        event.add(`kubejs:ekof_processable_${tier}`, `gtceu:crushed_${item.material}_ore`);
+      });
+    });
+  });
