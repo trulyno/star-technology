@@ -35,7 +35,11 @@
 				"20A12F3B992762F0"
 				"3AF688ADC18E580C"
 			]
-			description: ["The converter blocks will become the backbone of your base, turning RF to EU to a 4 to 1 ratio. You can have multiple of these on a single line of cables only if the cables can support the amps."]
+			description: [
+				"The converter blocks will become the backbone of your base, turning RF to EU to a 4 to 1 ratio. You can have multiple of these on a single line of cables only if the cables can support the amps."
+				""
+				"If you are having issues try bonking it with a \"soft mallet\""
+			]
 			id: "511898EE4087FED7"
 			rewards: [{
 				count: 2

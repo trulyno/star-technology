@@ -21,16 +21,15 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.electrolyzer('zapolite_proc_2_a_2')
         .itemInputs('gtceu:zapolgium_diiodide_oxide_dust')
-        .itemOutputs('gtceu:zapolgium_oxide_dust')
-        .outputFluids('gtceu:iodine 2000')
+        .itemOutputs('gtceu:zapolgium_oxide_dust', '2x gtceu:iodine_dust')
         .duration(600)
         .EUt(16000);
 
     event.recipes.gtceu.large_chemical_reactor('zapolite_proc_2_b_1')
         .itemInputs('gtceu:zapolgium_diiodide_dioxide_dust')
         .inputFluids('gtceu:hydrogen 2000')
-        .itemOutputs('gtceu:zapolgium_oxide_dust')
-        .outputFluids('gtceu:iodine 2000', 'minecraft:water 1000')
+        .itemOutputs('gtceu:zapolgium_oxide_dust', '2x gtceu:iodine_dust')
+        .outputFluids('minecraft:water 1000')
         .duration(300)
         .EUt(20000);
 

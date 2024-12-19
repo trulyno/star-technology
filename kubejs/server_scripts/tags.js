@@ -1,5 +1,6 @@
 
 ServerEvents.tags('item', event => {
+    event.add('gtceu:circuits/zpm', 'kubejs:draconic_wetware_microchip_processor');
     event.add('gtceu:circuits/uv', 'kubejs:draconic_wetware_processor');
     event.add('gtceu:circuits/uhv', 'kubejs:draconic_wetware_processor_assembly');
     event.add('gtceu:circuits/uev', 'kubejs:draconic_wetware_processor_computer');
