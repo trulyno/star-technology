@@ -24,7 +24,7 @@
 				item: "gtceu:wetware_processor_mainframe"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -7.0d
 			y: 6.5d
 		}
 		{
@@ -44,7 +44,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 6.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
@@ -73,13 +73,13 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "7451A866F7DF568E"
 				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -7.0d
 			y: 2.5d
 		}
 		{
@@ -95,8 +95,8 @@
 				item: "gtceu:ruthenium_trinium_americium_neutronate_ingot"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 2.5d
+			x: -9.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -114,8 +114,8 @@
 				item: "gtceu:uhv_machine_hull"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 0.5d
+			x: -11.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -134,7 +134,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: 0.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["11D51899B980082B"]
@@ -149,8 +149,8 @@
 				item: "gtceu:uhv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 1.5d
+			x: -11.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["44B43694312BAAC8"]
@@ -165,8 +165,8 @@
 				item: "gtceu:uhv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 3.5d
+			x: -13.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
@@ -181,8 +181,8 @@
 				item: "gtceu:uv_parallel_hatch"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 5.5d
+			x: -9.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -201,7 +201,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 6.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
@@ -216,8 +216,8 @@
 				item: "gtceu:empty_tier_iii_battery"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.5d
+			x: -5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["43A620DF574E2488"]
@@ -232,8 +232,8 @@
 				item: "gtceu:uv_lapotronic_battery"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 6.5d
+			x: -3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1AC8CBF01196D1F3"]
@@ -248,8 +248,8 @@
 				item: "gtceu:highly_advanced_soc_wafer"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 4.5d
+			x: -9.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0F7A1EA1AB52F795"]
@@ -266,8 +266,8 @@
 				item: "gtceu:neutronium_wafer"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.5d
+			x: -7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
@@ -282,8 +282,8 @@
 				item: "gtceu:neutronium_boule"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 2.5d
+			x: -7.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -317,8 +317,8 @@
 				item: "gtceu:heat_chamber"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 0.5d
+			x: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -339,11 +339,14 @@
 				item: "gtceu:void_ingot"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.5d
+			x: -5.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["5BA69EDC3C223B2C"]
+			dependencies: [
+				"5BA69EDC3C223B2C"
+				"7A5734E3CF682EBA"
+			]
 			id: "027C5CE3CFCB5649"
 			rewards: [{
 				id: "2754B5FB6A2040D7"
@@ -356,13 +359,10 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -1.5d
+			y: -3.5d
 		}
 		{
-			dependencies: [
-				"027C5CE3CFCB5649"
-				"7A5734E3CF682EBA"
-			]
+			dependencies: ["027C5CE3CFCB5649"]
 			id: "5E9936C099FF589C"
 			rewards: [{
 				id: "23AEEE272F5D9CF4"
@@ -390,8 +390,8 @@
 				item: "gtceu:echo_r_bucket"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -1.5d
+			x: -3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3D3E637BCB06115F"]
@@ -406,8 +406,8 @@
 				item: "minecraft:echo_shard"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -1.5d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -426,7 +426,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: -1.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["1C515302A357B1B8"]
@@ -441,8 +441,8 @@
 				item: "gtceu:screret_runic_laser_source_base_dust"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -3.5d
+			x: -7.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["5C3AF136913CF8BE"]
@@ -457,8 +457,8 @@
 				item: "gtceu:exquisite_screret_runic_laser_source_base_gem"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -3.5d
+			x: -5.0d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -481,7 +481,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: -3.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["75F0388FAB52E0B3"]
@@ -497,7 +497,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -3.5d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -518,8 +518,8 @@
 				item: "gtceu:runic_circuitry_assembling_station"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -3.5d
+			x: 0.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["52B553FDB34B1475"]
@@ -534,8 +534,8 @@
 				item: "gtceu:melodium_single_wire"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -5.5d
+			x: -7.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["678B90BF2ACE2BBA"]
@@ -550,8 +550,8 @@
 				item: "gtceu:melodium_ingot"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -5.5d
+			x: -5.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -570,8 +570,8 @@
 				item: "gtceu:stellarium_ingot"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -5.5d
+			x: -7.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["253AECE450920D99"]
@@ -586,8 +586,8 @@
 				item: "gtceu:stellarium_single_wire"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -5.5d
+			x: -9.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -627,8 +627,8 @@
 				item: "gtceu:stargate_component_assembly"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -5.5d
+			x: 0.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6D169C5E35C9EF6C"]
@@ -651,8 +651,8 @@
 				}
 			]
 			title: "Engraved Runes"
-			x: 1.0d
-			y: -3.5d
+			x: 3.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["60ECE277341A9408"]
@@ -667,7 +667,7 @@
 				item: "gtceu:super_pressure_heat_chamber"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -1.0d
 			y: 0.5d
 		}
 		{
@@ -684,14 +684,15 @@
 				item: "gtceu:gravi_star"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -5.5d
+			x: -1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"1004D6D7636E0321"
 				"3792C5D89B1301A0"
 				"0508AE03C730BE6C"
+				"43B5477B959B2736"
 			]
 			icon: "sgjourney:classic_stargate"
 			id: "2EDE996312B1C69E"
@@ -749,7 +750,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["2EDE996312B1C69E"]
+			dependencies: ["66D2FB63E81E03AB"]
 			id: "5097F10D8D36FEB7"
 			rewards: [{
 				command: "/sgjourney stargateNetwork address sgjourney:abydos"
@@ -763,19 +764,112 @@
 				title: "Get Abydos Coordinates"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -6.5d
+			x: 5.5d
+			y: 0.5d
 		}
 		{
-			dependencies: ["2EDE996312B1C69E"]
-			id: "170CF69CE6B7BF98"
-			size: 2.0d
+			dependencies: [
+				"664F435508073B8E"
+				"66D2FB63E81E03AB"
+			]
+			id: "43B5477B959B2736"
+			shape: "gear"
 			tasks: [{
-				id: "7DE809989E4AD345"
-				title: "STOP!!! CONTENT NOT YET READY!"
-				type: "checkmark"
+				id: "71743E4A3E64FED2"
+				item: "kubejs:classic_stargate_computer_core"
+				type: "item"
 			}]
-			x: 5.5d
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["56D5872D2C33A9CC"]
+			id: "66D2FB63E81E03AB"
+			tasks: [{
+				id: "0D5B1D6D6083AF47"
+				item: "kubejs:abydos_coordinate_crystal"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A38469EAAABEAAE"]
+			id: "56D5872D2C33A9CC"
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "14B6FCC56B147A0C"
+				item: "gtceu:dimensional_finder"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["348D6E3A94706230"]
+			id: "7A38469EAAABEAAE"
+			tasks: [{
+				id: "78DA046B7DA56437"
+				item: "kubejs:coordinate_crystal"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["707C2E9BA62A60C5"]
+			id: "664F435508073B8E"
+			tasks: [{
+				id: "11FCA5CC298E1D30"
+				item: "kubejs:computational_super_matrix"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3ECCE739DE8F5F2C"]
+			id: "2EE4C6540FE3D4CF"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5D2487028586DCD8"
+				item: "gtceu:mega_blast_furnace"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3ECCE739DE8F5F2C"]
+			id: "17C47EC4E8337D7B"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "01A147F41AAF7876"
+				item: "gtceu:mega_vacuum_freezer"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2EDE996312B1C69E"
+				"5097F10D8D36FEB7"
+			]
+			icon: "minecraft:sand"
+			id: "1FB502D770A4A59B"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "sgjourney:abydos"
+				id: "57F00393CAEA3780"
+				type: "dimension"
+			}]
+			title: "To Abydos"
+			x: 6.0d
 			y: -3.5d
 		}
 	]
