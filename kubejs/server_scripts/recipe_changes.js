@@ -438,13 +438,49 @@ ServerEvents.recipes(event => {
         event.recipes.create.haunting(Item.of(prop.output), Item.of(prop.input));
     });
 
+    //UHV Energy Type Hatch Fix
+
+    event.replaceInput(
+        {output: ['gtceu:uhv_energy_input_hatch', 'gtceu:uhv_energy_output_hatch']},
+        'gtceu:ruthenium_trinium_americium_neutronate_double_wire',
+        'kubejs:uhv_voltage_coil'
+    );
+
     //UHV transformer fix
     event.shaped(Item.of('gtceu:uhv_transformer_1a'), [
         'UCC',
-        'CH ',
+        'KH ',
         'UCC'], {
+        K: 'gtceu:zirconium_selenide_diiodide_single_cable',
         U: 'gtceu:uhpic_chip',
         C: 'gtceu:europium_single_cable',
+        H: 'gtceu:uhv_machine_hull'
+    });
+    event.shaped(Item.of('gtceu:uhv_transformer_2a'), [
+        'UCC',
+        'KH ',
+        'UCC'], {
+        K: 'gtceu:zirconium_selenide_diiodide_double_cable',
+        U: 'gtceu:uhpic_chip',
+        C: 'gtceu:europium_double_cable',
+        H: 'gtceu:uhv_machine_hull'
+    });
+    event.shaped(Item.of('gtceu:uhv_transformer_4a'), [
+        'UCC',
+        'KH ',
+        'UCC'], {
+        K: 'gtceu:zirconium_selenide_diiodide_quadruple_cable',
+        U: 'gtceu:uhpic_chip',
+        C: 'gtceu:europium_single_cable',
+        H: 'gtceu:uhv_machine_hull'
+    });
+    event.shaped(Item.of('gtceu:uhv_transformer_16a'), [
+        'UCC',
+        'KH ',
+        'UCC'], {
+        K: 'gtceu:zirconium_selenide_diiodide_hex_cable',
+        U: 'gtceu:uhpic_chip',
+        C: 'gtceu:europium_hex_cable',
         H: 'gtceu:uhv_machine_hull'
     });
     //rutile fix

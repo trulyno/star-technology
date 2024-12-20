@@ -1311,7 +1311,7 @@ materialRegistry(event => {
         .components('1x iron_selenide', '1x strontium_titanium_oxide')
         .color(0x66ff33)
         .iconSet(DULL)
-        .flags(fine_wire)
+        .flags(fine_wire, bolt_and_screw)
         .blastTemp(10299, 'highest', VA('uv'), 2500)
         .cableProperties(V('uhv'), 4, 0, true);
 

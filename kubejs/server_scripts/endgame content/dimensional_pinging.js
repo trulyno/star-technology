@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
                 .EUt(GTValues.VHA[GTValues.UV])
                 .CWUt(128)
             )
-            .EUt(GTValues.VHA[GTValues.UV]); 
+        .EUt(GTValues.VHA[GTValues.UV]); 
 
     //Coordinate Crystals
     
