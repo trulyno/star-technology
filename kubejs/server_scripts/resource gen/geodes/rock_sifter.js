@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     
     event.shaped(
-        Item.of('gtceu:rock_sifter'),[
+        Item.of('gtceu:rock_filtrator'),[
           'ABA',
           'BCB',
           'ABA'
@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
           C: 'gtceu:steel_machine_casing'
     });
     
-    event.recipes.gtceu.rock_sifter('geode_harvesting')
+    event.recipes.gtceu.rock_filtrator('geode_harvesting')
         .itemInputs('64x minecraft:gravel')
         .chancedOutput('kubejs:diamond_geode', 3500, 500)
         .chancedOutput('kubejs:emerald_geode', 3500, 500)

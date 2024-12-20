@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     
     event.shaped(
-        Item.of('gtceu:pressure_heater'),[
+        Item.of('gtceu:heated_cracking_unit'),[
             'ABC',
             'DEA',
             'ABF'
@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     });    
 
     ['diamond', 'emerald', 'ruby', 'green_sapphire', 'sapphire', 'quartzite', 'certus_quartz', 'blue_topaz', 'topaz', 'amethyst'].forEach(type => {
-        event.recipes.gtceu.pressure_heater(`${type}_cracking`)
+        event.recipes.gtceu.heated_cracking_unit(`${type}_cracking`)
             .itemInputs(`kubejs:${type}_geode`)
             .itemOutputs(`kubejs:cracked_${type}_geode`)
             .blastFurnaceTemp(1800)

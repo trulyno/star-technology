@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
             .EUt(24);
     });
 
-    event.recipes.gtceu.void_excavator(`mining`)
+    event.recipes.gtceu.void_miner(`mining`)
         .inputFluids(`gtceu:drilling_fluid 10000`)
         .chancedOutput(`5x kubejs:coal_cluster`, 5000, 1000)
         .chancedOutput(`2x kubejs:gold_cluster`, 4000, 750)
