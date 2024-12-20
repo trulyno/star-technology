@@ -371,10 +371,13 @@
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.3": "§7The folding stabiliser utilises a lens to focus the reintegration, The proper type should be chosen based on the Akreyrium variant, reinsertion is necessary after every use.",
     "gtceu.folding_akreyrium_stabiliser": "Folding Akreyrium Stabiliser",
 
+    "gtceu.machine.energy_converter.tooltip_tool_usage": "Starts as §fEU Converter§7, use Soft Mallet to change"
+
     "material.gtceu.akreyrium_pcb_graphite_nanoparticle_coolant": "Ak-PCB Graphite Nanoparticle Coolant",
 
     "block.gtceu.dimensional_finder": "Dimensional Finder",
     "block.gtceu.dimensional_finder.tooltip.0": "Get Dimensionally Pinged",
 
     "material.gtceu.magnetic_pure_netherite": "Magnetic Pure Netherite"
+
 }
