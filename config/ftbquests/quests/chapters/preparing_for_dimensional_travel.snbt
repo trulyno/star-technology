@@ -121,6 +121,8 @@
 			dependencies: [
 				"707C2E9BA62A60C5"
 				"5C39B74171CC21F9"
+				"73D0DC357821B395"
+				"5BDA17962F4630EB"
 			]
 			id: "11D51899B980082B"
 			rewards: [{
@@ -181,8 +183,8 @@
 				item: "gtceu:uv_parallel_hatch"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 6.5d
+			x: -7.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -774,6 +776,7 @@
 			]
 			id: "43B5477B959B2736"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "71743E4A3E64FED2"
 				item: "kubejs:classic_stargate_computer_core"
@@ -797,7 +800,7 @@
 			dependencies: ["7A38469EAAABEAAE"]
 			id: "56D5872D2C33A9CC"
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "14B6FCC56B147A0C"
 				item: "gtceu:dimensional_finder"
@@ -825,7 +828,7 @@
 				item: "kubejs:computational_super_matrix"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -1.0d
 			y: 6.5d
 		}
 		{
@@ -871,6 +874,19 @@
 			title: "To Abydos"
 			x: 6.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["707C2E9BA62A60C5"]
+			id: "73D0DC357821B395"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2FE87DC0C4C6A37C"
+				item: "gtceu:component_part_assembly"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 6.5d
 		}
 	]
 	title: "Making the Classic Stargate"
