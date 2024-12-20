@@ -131,13 +131,17 @@ StartupEvents.registry('item', event => {
 
     // Universal Circuits
 
-    const circuitTiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev"];
+    const circuitTiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv", "uxv", "opv"];
 
     let tier_capitalized;
     circuitTiers.forEach(tier => {
         if(tier == 'luv') {
             tier_capitalized = 'LuV';
-        } else {
+        }
+        else if (tier == 'opv') {
+            tier_capitalized = "OpV";
+        }
+        else {
             tier_capitalized = tier.toUpperCase();
         };
         event.create(`${tier}_universal_circuit`)
