@@ -119,7 +119,7 @@
     "material.gtceu.hot_pcbcoolant": "Hot PCB Coolant",
     "material.gtceu.perchloric_acid": "Perchloric Acid",
     "material.gtceu.zapolgium": "Zapolgium",
-    "material.gtceu.magnetic_zapolgium": "Zapolgium",
+    "material.gtceu.magnetic_zapolgium": "Magnetic Zapolgium",  
     "material.gtceu.titanite_slurry": "Titanite Slurry",
     "material.gtceu.silica_gel": "Silica Gel",
     "material.gtceu.titanite_slurry_residue": "Titanite Slurry Residue",
@@ -372,4 +372,12 @@
     "gtceu.folding_akreyrium_stabiliser": "Folding Akreyrium Stabiliser",
 
     "gtceu.machine.energy_converter.tooltip_tool_usage": "Starts as §fEU Converter§7, use Soft Mallet to change"
+
+    "material.gtceu.akreyrium_pcb_graphite_nanoparticle_coolant": "Ak-PCB Graphite Nanoparticle Coolant",
+
+    "block.gtceu.dimensional_finder": "Dimensional Finder",
+    "block.gtceu.dimensional_finder.tooltip.0": "Get Dimensionally Pinged",
+
+    "material.gtceu.magnetic_pure_netherite": "Magnetic Pure Netherite"
+
 }
