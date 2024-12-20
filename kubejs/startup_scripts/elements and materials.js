@@ -352,7 +352,7 @@ materialRegistry(event => {
     GTMaterials.Silver.addFlags(gear);
     GTMaterials.Naquadah.addFlags(dense_plate);
     GTMaterials.NaquadahEnriched.addFlags(dense_plate);
-    GTMaterials.Neutronium.addFlags(foil);
+    GTMaterials.Neutronium.addFlags(foil, small_gear);
     GTMaterials.Europium.addFlags(small_spring);
     GTMaterials.Zirconium.addFlags(fine_wire); 
     GTMaterials.RedSteel.addFlags(rod, frame);
@@ -461,7 +461,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('lv'), 4, 0, true)
-        .rotorStats(140, 130, 3, 37600);
+        .rotorStats(150, 130, 3, 37600);
 
     event.create('signalum')
         .ingot(1)
@@ -473,7 +473,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('mv'), 16, 0, true)
-        .rotorStats(130, 140, 3, 24000);
+        .rotorStats(190, 150, 3, 24000);
 
     event.create('lumium')
         .ingot(1)
@@ -485,7 +485,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('hv'), 16, 0, true)
-        .rotorStats(150, 130, 3, 24000);
+        .rotorStats(220, 170, 3, 24000);
 
     event.create('enderium')
         .ingot(1)
@@ -497,7 +497,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('ev'), 32, 0, true)
-        .rotorStats(130, 160, 3, 45600);
+        .rotorStats(300, 190, 3, 45600);
 
     event.create('shellite')
         .ingot(1)
@@ -509,7 +509,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('iv'), 64, 0, true)
-        .rotorStats(140, 150, 3, 37600);
+        .rotorStats(450, 220, 3, 37600);
 
     event.create('twinite')
         .ingot(1)
@@ -521,7 +521,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('luv'), 64, 0, true)
-        .rotorStats(400, 200, 3, 24000);
+        .rotorStats(700, 260, 3, 24000);
 
     event.create('dragonsteel')
         .ingot(1)
@@ -533,7 +533,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('zpm'), 64, 0, true)
-        .rotorStats(800, 400, 3, 32000);
+        .rotorStats(1100, 380, 3, 32000);
 
     event.create('prismalium')
         .ingot(1)
@@ -545,7 +545,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('uv'), 32, 0, true)
-        .rotorStats(1600, 800, 3, 48000);
+        .rotorStats(1600, 470, 3, 48000);
 
     event.create('melodium')
         .ingot(1)
@@ -557,7 +557,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('uv'), 256, 0, true)
-        .rotorStats(3200, 1600, 3, 64000);
+        .rotorStats(2000, 550, 3, 64000);
 
     event.create('stellarium')
         .ingot(1)
@@ -569,7 +569,19 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('uhv'), 512, 0, true)
-        .rotorStats(6400, 3200, 3, 96000);
+        .rotorStats(2800, 660, 3, 96000);
+
+    event.create('ancient_runicalium')
+        .ingot(2)
+        .fluid()
+        .components('5x zapolgium', '18x stellarium', '8x zirconium')
+        .color(0xFAB922)
+        .iconSet(SHINY)
+        .blastTemp(11749, 'highest', VA('uev'), 8400)
+        .flags(foil, gear, long_rod, plates,
+            rod, rotor, small_gear, ring, frame)
+        .cableProperties(V('uev'), 1024, 0, true)
+        .rotorStats(5000, 720, 3, 128000);
 
     // Nuclear Reactor Materials
     event.create('austenitic_stainless_steel_304')
