@@ -9,6 +9,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('electro_kinetic_filtrator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('electro_kinetic_filtrator')
+        .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
+        .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('BBBBB', 'SSSSS', 'SXXXS', 'SSSSS')
             .aisle('BBBBB', 'SPPPS', 'XMMMX', 'STTTS')
