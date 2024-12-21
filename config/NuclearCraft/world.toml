@@ -1,7 +1,0 @@
-
-[Dimension]
-	#Register Wasteland Dimension
-	wasteland = false
-	#Dimension ID for Wasteland
-	wastelandID = -4848
-
