@@ -1,11 +1,10 @@
 ServerEvents.recipes(event => {
     
-    event.shaped(
-        Item.of('gtceu:heated_cracking_unit'),[
+    event.shaped('gtceu:heated_cracking_unit',[
             'ABC',
             'DEA',
             'ABF'
-          ],{
+        ],{
             A: '#gtceu:circuits/lv',
             B: 'gtceu:lv_electric_motor',
             C: 'gtceu:tempered_glass',
