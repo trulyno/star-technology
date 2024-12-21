@@ -260,9 +260,8 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/component_part/opv_voltage_coil')
         .displayName('Overpowered Voltage Coil')
         .tooltip('Beyond Comprehension Coil');
-
+  
     const partTiers = ["uhv", "uev", "uiv", "uxv", "opv"];
-
     let tier_proper;
     partTiers.forEach(tier => {
         if(tier == 'opv') {
@@ -270,7 +269,6 @@ StartupEvents.registry('item', event => {
         } else {
             tier_proper = tier.toUpperCase();
         };
-         
         event.create(`${tier}_computational_matrix`)
             .texture(`kubejs:item/component_part/${tier}_computational_matrix`)
             .displayName(`${tier_proper} Computational Matrix`)
@@ -303,9 +301,21 @@ StartupEvents.registry('item', event => {
             .texture(`kubejs:item/component_part/${tier}_micropower_router`)
             .displayName(`${tier_proper} Micro-Power Router`)
             .tooltip('A Shocking Addition');
-
     });
-
+    //Bacterial Growth
+    const HydroCarbon = ['Methane','Ethane','Propane','Butane','Octane','Ethylene','Propene',
+        'Butene','Butadiene','Benzene','Toluene','Methanol','Acetone','Acetic_Acid','Methyl_Acetate',
+        'Ethanol','Creosore','Phenol','Dimethylbenzene','Ethylbenzene','Naphtalene']
+    const prod = ['1', '2', '3', '4', '5']
+    const cons = ['1', '2', '3', '4', '5']
+        
+    HydroCarbon.forEach(type => {
+        prod.forEach(prod => {
+        cons.forEach(cons => {
+            event.create(`${type.toLowerCase()}_bacteria_group_type_${prod}_${cons}`)
+                .texture(`kubejs:item/bacterias/bacteria_group_type_${prod}_${cons}`)
+                .displayName(`${type.replace(/_/g, ' ')} Bacterial Group`)
+      })})});
 });
 
 // Custom Blocks
