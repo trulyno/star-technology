@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
       C: 'gtceu:steel_machine_casing'
   });
 
-  event.shaped('gtceu:rock_filtrator',[
+  event.shaped('gtceu:rock_sifter',[
       'ABA',
       'BCB',
       'ABA'
