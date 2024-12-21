@@ -1,6 +1,6 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-    event.create('pressure_heater')
-        .category('pressure_heater')
+    event.create('pressure_cracker')
+        .category('pressure_cracker')
         .setMaxIOSize(2, 2, 0, 0)
         .setSound(GTSoundEntries.FIRE);
 });
@@ -8,7 +8,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('pressure_cracker', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('pressure_heater')
+        .recipeType('pressure_cracker')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(GTBlocks.CASING_INVAR_HEATPROOF)
         .pattern(definition => FactoryBlockPattern.start()
