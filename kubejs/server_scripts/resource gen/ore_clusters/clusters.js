@@ -17,12 +17,12 @@ ServerEvents.recipes(event => {
         'ABC',
         'ADE',
         'FBC'],{
-        A: 'gtceu:shellite_hex_wire',
-        B: 'gtceu:iv_field_generator',
-        C: 'gtceu:iv_electric_piston',
+        A: 'gtceu:twinite_hex_wire',
+        B: 'gtceu:luv_field_generator',
+        C: 'gtceu:luv_electric_piston',
         D: 'gtceu:luv_large_miner',
-        E: '#gtceu:circuits/iv',
-        F: 'gtceu:iv_robot_arm'
+        E: '#gtceu:circuits/luv',
+        F: 'gtceu:luv_robot_arm'
     });
 
     ['coal', 'gold', 'lapis', 'pentlandite', 'realgar', 'silver', 'stibnite'].forEach(type => {
