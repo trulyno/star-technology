@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks('gtceu:steel_frame'))
             .where('G', Predicates.blocks('gtceu:tempered_glass'))
             .where('B', Predicates.blocks('gtceu:cupronickel_coil_block'))
-            .where('C', Predicates.any())
+            .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_solid_steel",
         "gtceu:block/multiblock/cracking_unit", false);

@@ -21,9 +21,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(2))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2)))
-            .where('R', Predicates.blocks('gtceu:steel_firebox_casing'))
+            .where('B', Predicates.blocks('gtceu:steel_firebox_casing'))
             .where('F', Predicates.blocks('gtceu:steel_frame'))
-            .where('E', Predicates.blocks('gtceu:steel_gearbox'))
+            .where('G', Predicates.blocks('gtceu:steel_gearbox'))
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_solid_steel",
