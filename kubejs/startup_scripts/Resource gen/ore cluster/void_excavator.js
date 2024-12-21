@@ -18,7 +18,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('SSSSS', '#ERE#', '#EGE#', '##E##', '##E##', '##E##', '##E##', '#####', '#####', '#####', '#####', '#####')
             .aisle('#SCS#', '##E##', '##E##', '##E##', '#####', '#####', '#####', '#####', '#####', '#####', '#####', '#####')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('S', Predicates.blocks('gtceu:robust_machine_casing').setMinGlobalLimited(8)
+            .where('S', Predicates.blocks('gtceu:robust_machine_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(2))
