@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer('weapon_grade_naquadah')
         .itemInputs('2x gtceu:pure_netherite_dust', '5x gtceu:neutronium_dust')
-        .inputFluids('gtceu:naquadria 7000', 'gtceu:fluorine 16000')
+        .inputFluids('gtceu:naquadria 1008', 'gtceu:fluorine 16000')
         .itemOutputs('30x gtceu:weapon_grade_naquadah_dust')
         .duration(1200)
         .EUt(346000);
@@ -438,32 +438,51 @@ ServerEvents.recipes(event => {
         event.recipes.create.haunting(Item.of(prop.output), Item.of(prop.input));
     });
 
+    //UHV Energy Type Hatch Fix
+
+    event.replaceInput(
+        {output: ['gtceu:uhv_energy_input_hatch', 'gtceu:uhv_energy_output_hatch']},
+        'gtceu:ruthenium_trinium_americium_neutronate_double_wire',
+        'kubejs:uhv_voltage_coil'
+    );
+
     //UHV transformer fix
     event.shaped(Item.of('gtceu:uhv_transformer_1a'), [
         'UCC',
-        'CH ',
+        'KH ',
         'UCC'], {
+        K: 'gtceu:zirconium_selenide_diiodide_single_cable',
         U: 'gtceu:uhpic_chip',
         C: 'gtceu:europium_single_cable',
         H: 'gtceu:uhv_machine_hull'
     });
     event.shaped(Item.of('gtceu:uhv_transformer_2a'), [
         'UCC',
-        'CH ',
+        'KH ',
         'UCC'], {
+        K: 'gtceu:zirconium_selenide_diiodide_double_cable',
         U: 'gtceu:uhpic_chip',
         C: 'gtceu:europium_double_cable',
         H: 'gtceu:uhv_machine_hull'
     });
     event.shaped(Item.of('gtceu:uhv_transformer_4a'), [
         'UCC',
-        'CH ',
+        'KH ',
         'UCC'], {
+        K: 'gtceu:zirconium_selenide_diiodide_quadruple_cable',
         U: 'gtceu:uhpic_chip',
-        C: 'gtceu:europium_quadruple_cable',
+        C: 'gtceu:europium_single_cable',
         H: 'gtceu:uhv_machine_hull'
     });
-    
+    event.shaped(Item.of('gtceu:uhv_transformer_16a'), [
+        'UCC',
+        'KH ',
+        'UCC'], {
+        K: 'gtceu:zirconium_selenide_diiodide_hex_cable',
+        U: 'gtceu:uhpic_chip',
+        C: 'gtceu:europium_hex_cable',
+        H: 'gtceu:uhv_machine_hull'
+    });
     //rutile fix
     event.remove({ id: 'gtceu:electric_blast_furnace/rutile_from_ilmenite' })
     event.recipes.gtceu.electric_blast_furnace('electric_blast_furnace/rutile_from_ilmenite')

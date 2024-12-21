@@ -5,37 +5,6 @@ StartupEvents.registry('item', event => {
         .rarity('rare')
         .tooltip('The strongest armor material');
 
-    event.create('crude_stargate_rod')
-        .texture('kubejs:item/gate_items/crude_stargate_rod')
-        .rarity('rare')
-        .tooltip("It doesn't seem ready for use quite yet...");
-
-    event.create('stargate_rod')
-        .texture('kubejs:item/gate_items/stargate_rod')
-        .rarity('epic')
-        .tooltip('The muscles of a stargate, if you will...');
-
-    event.create('runic_engraved_plating')
-        .displayName('Runic-Engraved Plating')
-        .texture('kubejs:item/gate_items/rune_engraved_plating')
-        .rarity('epic')
-        .tooltip('Mikerooni + Runes = Mikerunies');
-
-    event.create('runic_pathway_engraved_plating')
-        .displayName('Runic Pathway-Engraved Plating')
-        .texture('kubejs:item/gate_items/runic_pathway_engraved_plating')
-        .rarity('rare');
-
-    event.create('runic_wave_generator')
-        .displayName('Drack-ion Runic Wave Generator')
-        .texture('kubejs:item/gate_items/drack-ion_runic_wave_generator')
-        .rarity('epic');
-
-    event.create('computational_super_matrix')
-        .displayName('Computation Supermatrix')
-        .texture('kubejs:item/gate_items/computation-super-matrix')
-        .rarity('rare');
-
     event.create('thorium_fuel_rod')
         .displayName('Thorium Fuel Rod')
         .texture('kubejs:item/nuclear_rods/thorium_fuel_rod');
@@ -86,6 +55,7 @@ StartupEvents.registry('item', event => {
     //     .displayName('OpV Emitter')
     //     .texture('kubejs:item/emitters/opv_emitter');
 
+    
     event.create('draconic_wetware_circuit_board')
         .displayName('Draconic Wetware Circuit Board')
         .texture('kubejs:item/circuits/draconic_wetware_circuit_board');
@@ -98,6 +68,11 @@ StartupEvents.registry('item', event => {
         .displayName('Draconic Neuro Processing Unit')
         .tooltip('Neuro-sama!')
         .texture('kubejs:item/circuits/draconic_neuro_processing_unit');
+
+    event.create('draconic_wetware_microchip_processor')
+        .displayName('Draconic Wetware Microchip Processor')
+        .tooltip('§5Dr. Conic approved ZPM Circuit')
+        .texture('kubejs:item/circuits/draconic_wetware_microchip_processor');
 
     event.create('draconic_wetware_processor')
         .displayName('Draconic Wetware Processor')
@@ -156,13 +131,17 @@ StartupEvents.registry('item', event => {
 
     // Universal Circuits
 
-    const circuitTiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev"];
+    const circuitTiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv", "uxv", "opv"];
 
     let tier_capitalized;
     circuitTiers.forEach(tier => {
         if(tier == 'luv') {
             tier_capitalized = 'LuV';
-        } else {
+        }
+        else if (tier == 'opv') {
+            tier_capitalized = "OpV";
+        }
+        else {
             tier_capitalized = tier.toUpperCase();
         };
         event.create(`${tier}_universal_circuit`)
@@ -170,6 +149,163 @@ StartupEvents.registry('item', event => {
             .displayName(`${tier_capitalized} Universal Circuit`)
             .tooltip('§o§7For use with AE2 autocrafting');
     });
+
+    //Gate Parts
+
+    event.create('crude_stargate_rod')
+        .texture('kubejs:item/gate_items/crude_stargate_rod')
+        .rarity('rare')
+        .tooltip("It doesn't seem ready for use quite yet...");
+
+    event.create('stargate_rod')
+        .texture('kubejs:item/gate_items/stargate_rod')
+        .rarity('epic')
+        .tooltip('The muscles of a stargate, if you will...');
+
+    event.create('runic_engraved_plating')
+        .displayName('Runic-Engraved Plating')
+        .texture('kubejs:item/gate_items/rune_engraved_plating')
+        .rarity('epic')
+        .tooltip('Mikerooni + Runes = Mikerunies');
+
+    event.create('runic_pathway_engraved_plating')
+        .displayName('Runic Pathway-Engraved Plating')
+        .texture('kubejs:item/gate_items/runic_pathway_engraved_plating')
+        .rarity('rare');
+
+    event.create('runic_wave_generator')
+        .displayName('Drack-ion Runic Wave Generator')
+        .texture('kubejs:item/gate_items/drack-ion_runic_wave_generator')
+        .rarity('epic');
+
+    event.create('computational_super_matrix')
+        .displayName('Computation Supermatrix')
+        .texture('kubejs:item/gate_items/computation-super-matrix')
+        .rarity('rare');
+
+    event.create('classic_stargate_computer_core')
+        .displayName('Classic Encoded Computational Unit')
+        .rarity('uncommon')
+        .texture('kubejs:item/gate_items/classic_computational_core');
+    
+    //Dimensional Pinging
+
+    event.create('coordinate_crystal')
+        .displayName('Blank Dimensional Coordinate Crystal')
+        .rarity('rare')
+        .tooltip('If you are lucky you may find Home')
+        .texture('kubejs:item/coordinate_crystals/blank_coordinate_crystal');
+
+    event.create('abydos_coordinate_crystal')
+        .displayName('Abydos Inscribed Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('The Ancient Sands')
+        .texture('kubejs:item/coordinate_crystals/abydos_coordinate_crystal');
+        
+    event.create('nether_coordinate_crystal')
+        .displayName('Nether Inscribed Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('The Burning Hells')
+        .texture('kubejs:item/coordinate_crystals/nether_coordinate_crystal');
+
+    event.create('end_coordinate_crystal')
+        .displayName('End Inscribed Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('The Draconic Void')
+        .texture('kubejs:item/coordinate_crystals/end_coordinate_crystal');
+
+    event.create('lantea_coordinate_crystal')
+        .displayName('Lantea Inscribed Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('The Endless Seas')
+        .texture('kubejs:item/coordinate_crystals/lantea_coordinate_crystal');
+
+    event.create('cavum_coordinate_crystal')
+        .displayName('Cavum Inscribed Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('The Failing Abyss')
+        .texture('kubejs:item/coordinate_crystals/cavum_coordinate_crystal');
+
+    event.create('sea_coordinate_crystal')
+        .displayName('Fractured Sea Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('The final steps...')
+        .texture('kubejs:item/coordinate_crystals/sea_coordinate_crystal');
+
+    event.create('void_coordinate_crystal')
+        .displayName('Fractured Void Coordinate Crystal')
+        .rarity('epic')
+        .tooltip('...to get Home')
+        .texture('kubejs:item/coordinate_crystals/void_coordinate_crystal');
+
+    //Component Parts
+
+    event.create('uhv_voltage_coil')
+        .texture('kubejs:item/component_part/uhv_voltage_coil')
+        .displayName('Ultra High Voltage Coil')
+        .tooltip('Ultimate+ Coil');
+    event.create('uev_voltage_coil')
+        .texture('kubejs:item/component_part/uev_voltage_coil')
+        .displayName('Ultra Excessive Voltage Coil')
+        .tooltip('Ultimate+ Pro Coil');
+    event.create('uiv_voltage_coil')
+        .texture('kubejs:item/component_part/uiv_voltage_coil')
+        .displayName('Ultra Immense Voltage Coil')
+        .tooltip('Ultimate+ ProMax Coil');
+    event.create('uxv_voltage_coil')
+        .texture('kubejs:item/component_part/uxv_voltage_coil')
+        .displayName('Ultra Extreme Voltage Coil')
+        .tooltip('Ultimate+++ Coil');
+    event.create('opv_voltage_coil')
+        .texture('kubejs:item/component_part/opv_voltage_coil')
+        .displayName('Overpowered Voltage Coil')
+        .tooltip('Beyond Comprehension Coil');
+
+    const partTiers = ["uhv", "uev", "uiv", "uxv", "opv"];
+
+    let tier_proper;
+    partTiers.forEach(tier => {
+        if(tier == 'opv') {
+            tier_proper = 'OpV';
+        } else {
+            tier_proper = tier.toUpperCase();
+        };
+         
+        event.create(`${tier}_computational_matrix`)
+            .texture(`kubejs:item/component_part/${tier}_computational_matrix`)
+            .displayName(`${tier_proper} Computational Matrix`)
+            .tooltip('The Brains of Components');
+        event.create(`${tier}_transmission_assembly`)
+            .texture(`kubejs:item/component_part/${tier}_transmission_assembly`)
+            .displayName(`${tier_proper} Transimission Assembly`)
+            .tooltip('Top Tier Gear Box');
+        event.create(`${tier}_precision_drive_mechanism`)
+            .texture(`kubejs:item/component_part/${tier}_precision_drive_mechanism`)
+            .displayName(`${tier_proper} Precision Drive Mechanism`)
+            .tooltip('Exact Speeds');
+        event.create(`${tier}_microfluidic_flow_valve`)
+            .texture(`kubejs:item/component_part/${tier}_microfluidic_flow_valve`)
+            .displayName(`${tier_proper} Micro-Fluidic Flow Valve`)
+            .tooltip('Just the Right Amount of Fluid');
+        event.create(`${tier}_super_magnetic_core`)
+            .texture(`kubejs:item/component_part/${tier}_super_magnetic_core`)
+            .displayName(`${tier_proper} Super Magnetic Core`)
+            .tooltip('Most Attractive Thing Here');
+        event.create(`${tier}_catalyst_core`)
+            .texture(`kubejs:item/component_part/${tier}_catalyst_core`)
+            .displayName(`${tier_proper} Catalyst Core`)
+            .tooltip('Contained Mysticality');
+        event.create(`${tier}_high_strength_panel`)
+            .texture(`kubejs:item/component_part/${tier}_high_strength_panel`)
+            .displayName(`${tier_proper} High Strength Panel`)
+            .tooltip('The Strongest Plate');
+        event.create(`${tier}_micropower_router`)
+            .texture(`kubejs:item/component_part/${tier}_micropower_router`)
+            .displayName(`${tier_proper} Micro-Power Router`)
+            .tooltip('A Shocking Addition');
+
+    });
+
 });
 
 // Custom Blocks
@@ -468,6 +604,10 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .material('metal');
 
+    //Higher Rotor Holders
+
+    // UHV/UEV to be added
+    
     // Extras
     event.create('laser_casing')
         .displayName('Schrubblaser Beam Concentrator & Emmiter Capable Stellarium Casing')

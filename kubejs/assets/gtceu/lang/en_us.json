@@ -119,7 +119,7 @@
     "material.gtceu.hot_pcbcoolant": "Hot PCB Coolant",
     "material.gtceu.perchloric_acid": "Perchloric Acid",
     "material.gtceu.zapolgium": "Zapolgium",
-    "material.gtceu.magnetic_zapolgium": "Zapolgium",
+    "material.gtceu.magnetic_zapolgium": "Magnetic Zapolgium",  
     "material.gtceu.titanite_slurry": "Titanite Slurry",
     "material.gtceu.silica_gel": "Silica Gel",
     "material.gtceu.titanite_slurry_residue": "Titanite Slurry Residue",
@@ -170,8 +170,8 @@
     "block.gtceu.cobbleworks": "Large Sieve Cobbleworks Module",
     "gtceu.chemical_plant": "Chemical Plant",
     "block.gtceu.chemical_plant": "Chemical Plant",
-    "gtceu.component_assembly": "Component Assembly",
-    "block.gtceu.component_assembly": "Component Assembly",
+    "gtceu.component_part_assembly": "Component Part Assembly",
+    "block.gtceu.component_part_assembly": "Component Part Assembly",
     "gtceu.large_farm": "Farming",
     "block.gtceu.large_farm": "Large Farm",
     "gtceu.large_sieve": "Large Sieve",
@@ -369,5 +369,17 @@
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.1": "§7A reintegration device designed to recombine Akreyrium. By folding the distinct variants of Akreyrium through a precise stabilization matrix over a crystal, a highly refined and pure version of Akreyrium can be obtained.",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.2": "§6Stabilisation Matrix Lens:",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.3": "§7The folding stabiliser utilises a lens to focus the reintegration, The proper type should be chosen based on the Akreyrium variant, reinsertion is necessary after every use.",
-    "gtceu.folding_akreyrium_stabiliser": "Folding Akreyrium Stabiliser"
+    "gtceu.folding_akreyrium_stabiliser": "Folding Akreyrium Stabiliser",
+
+    "gtceu.machine.energy_converter.tooltip_tool_usage": "Starts as §fEU Converter§7, use Soft Mallet to change",
+
+    "material.gtceu.akreyrium_pcb_graphite_nanoparticle_coolant": "Ak-PCB Graphite Nanoparticle Coolant",
+
+    "gtceu.dimensional_finder": "Dimensional Pinging",
+    "block.gtceu.dimensional_finder": "Dimensional Finder",
+    "block.gtceu.dimensional_finder.tooltip.0": "Get Dimensionally Pinged",
+
+    "material.gtceu.magnetic_pure_netherite": "Magnetic Pure Netherite",
+    "material.gtceu.ancient_runicalium": "Ancient Runicalium"
+
 }
