@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('void_miner')
         .category('void_miner')
-        .setMaxIOSize(0, 9, 1, 0)
+        .setMaxIOSize(0, 9, 1, 2)
         .setSound(GTSoundEntries.MINER);
 });
 
