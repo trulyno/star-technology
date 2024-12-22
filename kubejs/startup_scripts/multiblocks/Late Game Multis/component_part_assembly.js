@@ -1,3 +1,4 @@
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('component_part_assembly')
         .category('component_part_assembly')
@@ -5,7 +6,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(6, 1, 2, 0)
         .setSound(GTSoundEntries.ASSEMBLER);
 });
-
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('component_part_assembly', 'multiblock')

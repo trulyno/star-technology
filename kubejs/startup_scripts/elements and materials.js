@@ -214,7 +214,7 @@ function periodicTableElement(material, type) {
 
 function blastProperty(material, temperature, gasTier, voltage, duration) {
     let mat = GTMaterials.get(material);
-    mat.setProperty(PropertyKey.BLAST, new $BlastProperty(temperature, gasTier, voltage, duration, -1, -1));
+    mat.setProperty(PropertyKey.BLAST, new $BlastProperty(temperature, gasTier, voltage, duration));
 }
 
 /*

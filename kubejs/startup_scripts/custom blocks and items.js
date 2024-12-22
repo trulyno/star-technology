@@ -305,7 +305,7 @@ StartupEvents.registry('item', event => {
     //Bacterial Growth
     const HydroCarbon = ['Methane','Ethane','Propane','Butane','Octane','Ethylene','Propene',
         'Butene','Butadiene','Benzene','Toluene','Methanol','Acetone','Acetic_Acid','Methyl_Acetate',
-        'Ethanol','Creosore','Phenol','Dimethylbenzene','Ethylbenzene','Naphtalene']
+        'Ethanol','Creosore','Phenol','Dimethylbenzene','Ethylbenzene','Naphthalene']
     const prod = ['1', '2', '3', '4', '5']
     const cons = ['1', '2', '3', '4', '5']
         
