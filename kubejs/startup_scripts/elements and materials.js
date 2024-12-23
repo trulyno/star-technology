@@ -214,7 +214,7 @@ function periodicTableElement(material, type) {
 
 function blastProperty(material, temperature, gasTier, voltage, duration) {
     let mat = GTMaterials.get(material);
-    mat.setProperty(PropertyKey.BLAST, new $BlastProperty(temperature, gasTier, voltage, duration, -1, -1));
+    mat.setProperty(PropertyKey.BLAST, new $BlastProperty(temperature, gasTier, voltage, duration,-1, -1));
 }
 
 /*
@@ -567,7 +567,7 @@ materialRegistry(event => {
         .iconSet(SHINY)
         .blastTemp(10799, 'highest', VA('uhv'), 6000)
         .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
+            rod, rotor, small_gear, ring, frame, fine_wire)
         .cableProperties(V('uhv'), 512, 0, true)
         .rotorStats(2800, 660, 3, 96000);
 
