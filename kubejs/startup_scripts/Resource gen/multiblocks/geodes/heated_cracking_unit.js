@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('F###F', 'F###F', 'F###F', 'F###F', 'FFFFF')
             .aisle('#SSS#', '#BGB#', '#BGB#', '#BGB#', 'FSSSF')
-            .aisle('#SSS#', '#GBG#', '#GBG#', '#GBG#', 'FSSSF')
+            .aisle('#SSS#', '#GTG#', '#GTG#', '#GTG#', 'FSSSF')
             .aisle('#SCS#', '#BGB#', '#BGB#', '#BGB#', 'FSSSF')
             .aisle('F###F', 'F###F', 'F###F', 'F###F', 'FFFFF')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('B', Predicates.blocks('gtceu:steel_firebox_casing'))
             .where('F', Predicates.blocks('gtceu:steel_frame'))
             .where('G', Predicates.blocks('gtceu:tempered_glass'))
-            .where('B', Predicates.blocks('gtceu:cupronickel_coil_block'))
+            .where('T', Predicates.blocks('gtceu:cupronickel_coil_block'))
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_solid_steel",
