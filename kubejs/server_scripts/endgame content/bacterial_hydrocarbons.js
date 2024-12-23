@@ -27,7 +27,42 @@ ServerEvents.recipes(event => {
             )
         .EUt(GTValues.VA[GTValues.UHV]);
 
-//     //Bacterial Production
+//@stellaurora the following is your "psuedo code"
+
+    //Bacterial Breeding (bacterial_breeding_vat)
+
+        //Input: Bacteria B with Affix A, Production p, Consumption c, and Mutability m + Misc Fluids
+        //Output: 32x Bacteria B with Affix A, Prodction p*, Consumption c*, and Mutability m*
+
+            //B and A are ignored and output the same as input
+            //p*,c*,and m* are the adjusted outputs based on the m input value
+            //m** is defiend as the weight per each variance given as follows: m=1 [0,0,100,0,0], m=2 [2,8,80,8,2], m=3 [5,15,60,15,5], m=4 [12,18,40,18,12], m=5 [20,20,20,20,20]
+            //p* is defined as an outcome of a weighted array [{max(1,p-2), weight: m**},{max(1,p-1), weight: m**},{p, weight: m**},{min(5,p+1), weight: m**},{min(5,p+2), weight: m**}]
+            //c* is defined as an outcome of a weighted array [{max(1,c-2), weight: m**},{max(1,c-1), weight: m**},{c, weight: m**},{min(5,c+1), weight: m**},{min(5,c+2), weight: m**}]
+            //m* is defined as an outcome of a weighted array [{max(1,m-2), weight: m**},{max(1,m-1), weight: m**},{m, weight: m**},{min(5,m+1), weight: m**},{min(5,m+2), weight: m**}]
+
+    //Bacterial Harvesting (bacterial_chemical_plant)
+
+        //Input: Bacteria B with Affix A, Production p, Consumption c, and Mutability m + (_*(2^c)) Misc Fluids
+        //Output: 800*p of Hydrocarbon B, and 200*p of Hydrocarbon A
+
+            //m is ignored as it has no relivance in this multiblock
+            
+    //Bacteria Mutating (bacterial_runic_mutator)
+
+        //Input: Bacteria B with Affix A, Production p, Consumption c, and Mutability m + runic engraved
+        //Input: Bacteria B* with Affix A, Production p#, Consumption c#, and Mutability m# + runic engraved
+
+        //Input: Bacteria B with Affix A, Production p, Consumption c, and Mutability m + runic pathway engraved
+        //Input: Bacteria B with Affix A*, Production p#, Consumption c#, and Mutability m# + runic pathway engraved
+
+            //p#,c#,m# are all just to denote a completely random value for each p,c,m with ranges of [1,2,3,4,5]
+            //A* and B* are to denote a random NEW A or B value depending on which is specified
+
+            //recipe durations are a product of __ / m
+
+//   Old mess
+//   //Bacterial Production
 
 //     const mte = 'methane', eta = 'ethane', ppa = 'propane', bta = 'butane', oca = 'octane', ete = 'ethylene', ppe = 'propene'
 //     ,bte = 'butene', btd = 'butadiene', bze = 'benzene', tle = 'toluene', mto = 'methanol', act = 'acetone',
