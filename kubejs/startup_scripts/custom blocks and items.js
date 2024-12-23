@@ -187,6 +187,11 @@ StartupEvents.registry('item', event => {
         .displayName('Classic Encoded Computational Unit')
         .rarity('uncommon')
         .texture('kubejs:item/gate_items/classic_computational_core');
+
+    event.create('classic_chevron_disk')
+        .displayName('Classic Stargate Chevron Disk')
+        .rarity('rare')
+        .texture('kubejs:item/gate_items/classic_chevron_disk')
     
     //Dimensional Pinging
 

@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
             .EUt(eu1under);
 
         event.recipes.gtceu.assembly_line(`${tier}_field_generator`)
-            .itemInputs(`gtceu:${prim_material}_frame`, `2x kubejs:${tier}_catalyst_core`, `2x kubejs:${tier}_computational_matrix`, `2x gtceu:${tier}_emitter`, `48x gtceu:fine_${wire2}_wire`, `48x gtceu:fine_${wire2}_wire`, `2x kubejs:${tier}_micropower_router`)
+            .itemInputs(`gtceu:${prim_material}_frame`, `2x kubejs:${tier}_catalyst_core`, `2x kubejs:${tier}_computational_matrix`, `2x gtceu:${tier}_emitter`, `64x gtceu:fine_${wire2}_wire`, `64x gtceu:fine_${wire2}_wire`, `2x kubejs:${tier}_micropower_router`)
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1728', `gtceu:${liquid} 576`)
             .itemOutputs(`gtceu:${tier}_field_generator`)
             .stationResearch(

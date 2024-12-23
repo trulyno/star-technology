@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('stargate_component_assembly')
         .category('stargate_component_assembly')
         .setEUIO('in')
-        .setMaxIOSize(16, 1, 8, 0)
+        .setMaxIOSize(12, 1, 6, 0)
         .setSound(GTSoundEntries.ASSEMBLER);
 });
 
