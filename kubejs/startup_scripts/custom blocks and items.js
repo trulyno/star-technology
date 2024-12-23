@@ -303,19 +303,19 @@ StartupEvents.registry('item', event => {
             .tooltip('A Shocking Addition');
     });
     //Bacterial Growth
-    const HydroCarbon = ['Methane','Ethane','Propane','Butane','Octane','Ethylene','Propene',
-        'Butene','Butadiene','Benzene','Toluene','Methanol','Acetone','Acetic_Acid','Methyl_Acetate',
-        'Ethanol','Creosore','Phenol','Dimethylbenzene','Ethylbenzene','Naphthalene']
-    const prod = ['1', '2', '3', '4', '5']
-    const cons = ['1', '2', '3', '4', '5']
+    // const HydroCarbon = ['Methane','Ethane','Propane','Butane','Octane','Ethylene','Propene',
+    //     'Butene','Butadiene','Benzene','Toluene','Methanol','Acetone','Acetic_Acid','Methyl_Acetate',
+    //     'Ethanol','Creosote','Phenol','Dimethylbenzene','Ethylbenzene','Naphthalene']
+    // const prod = ['1', '2', '3', '4', '5']
+    // const cons = ['1', '2', '3', '4', '5']
         
-    HydroCarbon.forEach(type => {
-        prod.forEach(prod => {
-        cons.forEach(cons => {
-            event.create(`${type.toLowerCase()}_bacteria_group_type_${prod}_${cons}`)
-                .texture(`kubejs:item/bacterias/bacteria_group_type_${prod}_${cons}`)
-                .displayName(`${type.replace(/_/g, ' ')} Bacterial Group`)
-      })})});
+    // HydroCarbon.forEach(type => {
+    //     prod.forEach(prod => {
+    //     cons.forEach(cons => {
+    //         event.create(`${type.toLowerCase()}_bacterial_group_type_${prod}_${cons}`)
+    //             .texture(`kubejs:item/bacterias/bacteria_group_type_${prod}_${cons}`)
+    //             .displayName(`${type.replace(/_/g, ' ')} Bacterial Group`)
+    //   })})});
 });
 
 // Custom Blocks
