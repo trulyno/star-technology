@@ -148,7 +148,7 @@ function VH(voltage) {
         case 'opv': v = GTValues.VH[GTValues.OpV]; break;
         case 'max': v = GTValues.VH[GTValues.MAX]; break;
     }
-    return V;
+    return v;
 }
 
 function VHA(voltage) {
@@ -170,7 +170,7 @@ function VHA(voltage) {
         case 'opv': v = GTValues.VHA[GTValues.OpV]; break;
         case 'max': v = GTValues.VHA[GTValues.MAX]; break;
     }
-    return V;
+    return v;
 }
 
 function periodicTableElement(material, type) {
@@ -232,30 +232,36 @@ function blastProperty(material, temperature, gasTier, voltage, duration) {
 */
 elementRegistry(event => {
     // For the material that will have ? as it's atomic symbol in chemical formulas
-    event.create('mystery', -1, -1, -1, null, '?', false);
+    const elem = (name, p, n, sym) => {
+        event.create(name)
+            .protons(p)
+            .neutrons(n)
+            .symbol(sym);
+    }
+    elem('mystery', -1, -1, '?');
 
     // Netherite Line
-    event.create('debris', -1, -1, -1, null, '?', false);
-    event.create('pure_netherite', 124, 345, -1, null, '*Nr*', false);
+    elem('debris', -1, -1, '?');
+    elem('pure_netherite', 124, 345, '*Nr*');
 
     // Classic Stargate
-    event.create('echo_r', -1, -1, -1, null, 'Ec', false);
+    elem('echo_r', -1, -1, 'Ec');
 
     // Abydos Materials
-    event.create('zapolgium', 141, 217, -1, null, 'Zg', false);
-    event.create('akreyrium', -1, -1, -1, null, 'Ak', false);
+    elem('zapolgium', 141, 217, 'Zg');
+    elem('akreyrium', -1, -1, 'Ak');
 
     // Nether Materials
-    event.create('mythril', 132, 193, -1, null, 'My', false);
-    event.create('adamantine', 131, 182, -1, null, 'Ad', false);
-    event.create('estalt', 133, 199, -1, null, 'El', false);
-    event.create('calamatium', 134, 211, -1, null, 'Ct', false);
-    event.create('isovol', 135, 221, -1, null, 'Is', false);
+    elem('mythril', 132, 193, 'My');
+    elem('adamantine', 131, 182, 'Ad');
+    elem('estalt', 133, 199, 'El');
+    elem('calamatium', 134, 211, 'Ct');
+    elem('isovol', 135, 221, 'Is');
 
     // End Materials
-    event.create('xeproda', 136, 265, -1, null, 'Xp', false);
-    event.create('rhexis', 137, 298, -1, null, 'Rx', false);
-    event.create('chalyblux', 138, 312, -1, null, 'Cx', false);
+    elem('xeproda', 136, 265, 'Xp');
+    elem('rhexis', 137, 298, 'Rx');
+    elem('chalyblux', 138, 312, 'Cx');
 });
 
 /*
@@ -320,6 +326,24 @@ elementRegistry(event => {
         .addDefaultEnchant()
         
 */
+
+/*
+event.create('netherite')
+        .dust()
+        .components('4x debris', '4x gold')
+        .color(0x1a0d00)
+        .iconSet(DULL)
+        .flags(no_decomp);
+*/
+
+GTCEuStartupEvents.materialModification(event => {
+
+    GTMaterials.Netherite.setMaterialARGB(0x1a0d00);
+    GTMaterials.Netherite.setComponents('4x debris', '4x gold');
+    GTMaterials.Netherite.setMaterialIconSet(DULL);
+
+});
+
 materialRegistry(event => {
 
     // Periodic table materials
@@ -356,7 +380,8 @@ materialRegistry(event => {
     GTMaterials.Europium.addFlags(small_spring);
     GTMaterials.Zirconium.addFlags(fine_wire); 
     GTMaterials.RedSteel.addFlags(rod, frame);
-    GTMaterials.SterlingSilver.addFlags(rod, frame);      
+    GTMaterials.SterlingSilver.addFlags(rod, frame);     
+    GTMaterials.Netherite.addFlags(no_decomp); 
 
     // Blast Properties of periodic table metals
     blastProperty('zirconium', 8000, 'higher', VA('zpm'), 800);
@@ -631,12 +656,12 @@ materialRegistry(event => {
         .components('debris')
         .color(0xcc0000);
 
-    event.create('netherite')
-        .dust()
-        .components('4x debris', '4x gold')
-        .color(0x1a0d00)
-        .iconSet(DULL)
-        .flags(no_decomp);
+    // event.create('netherite')
+    //     .dust()
+    //     .components('4x debris', '4x gold')
+    //     .color(0x1a0d00)
+    //     .iconSet(DULL)
+    //     .flags(no_decomp);
     
     event.create('chlorine_trifluoride')
         .fluid()

@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('cyclonic_crystalline_sieve', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('cyclonic_crystalline_sieve')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('   AAA   ', '   CCC   ', '   AAA   ', '    A    ', '         ', '         ', '         ', '         ')
             .aisle('  AADAA  ', '  CEEEC  ', '  A D A  ', '    F    ', '    F    ', '    F    ', '    F    ', '  FFFFF  ')

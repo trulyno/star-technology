@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('leptonic_convergence_injector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('leptonic_convergence_injector')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' AAA ', ' XXX ', ' AAA ', '  A  ', '     ', '  A  ', ' AAA ', '     ', '     ', '     ', '     ', '     ', '     ')
             .aisle('AAAAA', 'XDDDX', 'A   A', ' E E ', ' EEE ', ' EDE ', 'ADDDA', ' DED ', '  E  ', '  B  ', '  B  ', '  B  ', '  E  ')

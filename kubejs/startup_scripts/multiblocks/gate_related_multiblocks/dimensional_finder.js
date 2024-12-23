@@ -13,9 +13,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('dimensional_finder', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS) //Need to add a cant be rotated at all later on
         .recipeType('dimensional_finder')
-        .appearanceBlock(GCyMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
+        .recipeModifier(GTRecipeModifiers.OC_PERFECT)
+        .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()
-           
             .aisle('VVHVVVVVHVV', 'VVHHHHHHHVV', '           ', '           ', '           ', 'SS       SS', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ')
             .aisle('VHHHVHVHHHV', 'VHHVVVVVHHV', ' T       T ', ' T       T ', ' T       T ', 'SSSSSSSSSSS', '           ', '           ', '           ', ' SS     SS ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '   0   0   ', '     0     ', '   0   0   ', '           ', '           ', '           ', '           ')
             .aisle('HHHHHHHHHHH', 'HHHHHHHHHHH', '           ', '           ', '           ', ' SSSSSSSSS ', '  T     T  ', '  T     T  ', '  T     T  ', ' SSSSSSSSS ', '           ', '           ', '           ', '  SS   SS  ', '           ', '           ', '           ', '           ', '           ', '           ', ' 0       0 ', '           ', '           ', '           ', ' 0       0 ', '           ', '           ', '           ')
@@ -27,7 +27,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('HHHHHHHHHHH', 'HHHHHHHHHHH', '           ', '           ', '           ', ' SSSSSSSSS ', '  T     T  ', '  T     T  ', '  T     T  ', ' SSSSSSSSS ', '           ', '           ', '           ', '  SS   SS  ', '           ', '           ', '           ', '           ', '           ', '           ', ' 0       0 ', '           ', '           ', '           ', ' 0       0 ', '           ', '           ', '           ')
             .aisle('VHHHVHVHHHV', 'VHHHVVVHHHV', ' T       T ', ' T       T ', ' T       T ', 'SSSSSSSSSSS', '           ', '           ', '           ', ' SS     SS ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '   0   0   ', '     0     ', '   0   0   ', '           ', '           ', '           ', '           ')
             .aisle('VVHVVVVVHVV', 'VVHHHKHHHVV', '           ', '           ', '           ', 'SS       SS', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ')
-           
             .where('V', Predicates.blocks('gtceu:heat_vent'))
             .where('H', Predicates.blocks('gtceu:high_temperature_smelting_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setExactLimit(1))
