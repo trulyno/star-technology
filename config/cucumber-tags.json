@@ -9,5 +9,10 @@
   "forge:ingots/aluminum": "xycraft_world:aluminum_ingot",
   "forge:dusts/niter": "thermal:niter_dust",
   "forge:ingots/steel": "gtceu:steel_ingot",
-  "forge:ingots/titanium": "gtceu:titanium_ingot"
+  "forge:ingots/titanium": "gtceu:titanium_ingot",
+  "forge:ingots/graphite": "null",
+  "forge:ingots/mithril": "null",
+  "forge:rubber": "null",
+  "forge:gems/peridot": "null",
+  "forge:ingots/chrome": "null"
 }
