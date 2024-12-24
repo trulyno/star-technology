@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeType('nuclear_fission')
         .generator(true)
         .recipeModifier(GTRecipeModifiers.OC_PERFECT)
-        .appearanceBlock(GCyMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
+        .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('HHHHH','VHGHV','VHGHV','VHGHV','HHHHH')
             .aisle('HHHHH','H###H','H###H','H###H','HHHHH')
