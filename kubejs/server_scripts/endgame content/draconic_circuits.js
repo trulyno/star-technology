@@ -54,13 +54,25 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1152')
         .itemOutputs('kubejs:draconic_wetware_processor_computer')
         .duration(400)
-        .EUt(GTValues.VHA[GTValues.UV]);
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack('kubejs:draconic_wetware_processor_assembly')
+                .EUt(GTValues.VHA[GTValues.UHV])
+                .CWUt(144)
+        )
+        .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.assembly_line('draconic_processor_mainframe')
         .itemInputs('2x gtceu:neutronium_frame', '2x kubejs:draconic_wetware_processor_computer', '48x gtceu:advanced_smd_diode', '48x gtceu:advanced_smd_capacitor', '48x gtceu:advanced_smd_transistor', '48x gtceu:advanced_smd_resistor', '48x gtceu:advanced_smd_inductor', '64x gtceu:polyether_ether_ketone_foil', '32x gtceu:polyether_ether_ketone_foil', '64x gtceu:ram_chip', '2x gtceu:ruthenium_trinium_americium_neutronate_double_wire', '16x gtceu:tritanium_plate')
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 2880', 'gtceu:polyether_ether_ketone 1152')
         .itemOutputs('kubejs:draconic_wetware_processor_mainframe')
         .duration(2000)
-        .EUt(GTValues.VHA[GTValues.UHV]);
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack('kubejs:draconic_wetware_processor_computer')
+                .EUt(GTValues.VHA[GTValues.UHV])
+                .CWUt(176)
+        )
+        .EUt(GTValues.VHA[GTValues.UEV]);
 
 });

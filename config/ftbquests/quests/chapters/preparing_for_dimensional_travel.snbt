@@ -515,7 +515,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "58C2D53C66E327CB"
 				item: "gtceu:runic_circuitry_assembling_station"
@@ -939,7 +939,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["1C515302A357B1B8"]
+			dependencies: ["2D713622FA2D6FCA"]
 			id: "1E47910C2F2112E1"
 			shape: "gear"
 			size: 1.5d
@@ -1324,6 +1324,17 @@
 			}]
 			x: -7.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["1C515302A357B1B8"]
+			id: "2D713622FA2D6FCA"
+			tasks: [{
+				id: "33B7CF901768CF24"
+				item: "gtceu:exquisite_naquadic_netherite_gem"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.5d
 		}
 	]
 	title: "Making the Classic Stargate"

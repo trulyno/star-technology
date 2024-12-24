@@ -483,6 +483,14 @@ ServerEvents.recipes(event => {
         C: 'gtceu:europium_hex_cable',
         H: 'gtceu:uhv_machine_hull'
     });
+    event.recipes.gtceu.circuit_assembler('data_dna_disk')
+        .itemInputs('kubejs:draconic_wetware_printed_circuit_board','2x #gtceu:circuits/uhv','64x gtceu:ram_chip', 
+            '64x gtceu:nor_memory_chip','64x gtceu:nand_memory_chip','32x gtceu:fine_iron_selenide_over_strontium_titanium_oxide_wire')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 144')
+        .itemOutputs('start_core:data_dna_disk')
+        .duration(400)
+        .EUt(GTValues.V[GTValues.UHV]);
+
     //rutile fix
     event.remove({ id: 'gtceu:electric_blast_furnace/rutile_from_ilmenite' })
     event.recipes.gtceu.electric_blast_furnace('electric_blast_furnace/rutile_from_ilmenite')

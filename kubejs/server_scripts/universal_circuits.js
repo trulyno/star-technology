@@ -1,4 +1,4 @@
-const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev"];
+const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev","uiv"];
 
 ServerEvents.recipes(event => {
 	tiers.forEach(tier => {
