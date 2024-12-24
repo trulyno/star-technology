@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('4x kubejs:realgar_cluster', 4000, 800)
         .chancedOutput('2x kubejs:silver_cluster', 4000, 750)
         .chancedOutput('3x kubejs:stibnite_cluster', 3000, 500)
-        .outputFluids('kubejs:rare_ore_residue 100', 'kubejs:raw_ore_slurry 900')
+        .outputFluids('gtceu:rare_ore_residue 100', 'gtceu:raw_ore_slurry 900')
         .duration(720)
         .EUt(24);
 
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('4x kubejs:realgar_cluster', 4000, 800)
         .chancedOutput('2x kubejs:silver_cluster', 4000, 750)
         .chancedOutput('3x kubejs:stibnite_cluster', 3000, 500)
-        .outputFluids('kubejs:rare_ore_residue 100', 'kubejs:raw_ore_slurry 900')
+        .outputFluids('gtceu:rare_ore_residue 100', 'gtceu:raw_ore_slurry 900')
         .duration(720)
         .EUt(24);
 
