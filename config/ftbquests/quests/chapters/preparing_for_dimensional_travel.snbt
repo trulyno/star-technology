@@ -6,6 +6,7 @@
 	icon: "sgjourney:classic_stargate"
 	id: "62A72817F92AC262"
 	order_index: 4
+	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{

@@ -6,6 +6,7 @@
 	icon: "gtceu:lv_4a_energy_converter"
 	id: "38AF26A803768456"
 	order_index: 0
+	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{

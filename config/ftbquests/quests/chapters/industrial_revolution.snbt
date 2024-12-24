@@ -7,6 +7,7 @@
 	icon: "ae2:controller"
 	id: "05330DA4070C75C9"
 	order_index: 1
+	progression_mode: "linear"
 	quest_links: [{
 		id: "6C0C5B78AF1106A2"
 		linked_quest: "38B3A7FC309E12E2"

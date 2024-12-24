@@ -1,80 +1,858 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
 	filename: "adventures_in_abydos"
 	group: "1E0FC4EA21F735F7"
 	icon: "minecraft:sand"
 	id: "459D60183D34C29E"
 	order_index: 5
+	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2EDE996312B1C69E"]
+			dependencies: ["1FB502D770A4A59B"]
 			id: "493DD013C818BB7B"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "One step closer to home..."
 			tasks: [{
 				id: "015668E3D80CF755"
 				title: "A new world!"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -7.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"512757BEBFD1F584"
+				"5494ECE711E7051E"
+				"6110BA7B3E84F06F"
+				"73D0DC357821B395"
+			]
+			id: "4DD3C38FCD8D704D"
+			tasks: [{
+				id: "48142FD089D95D9C"
+				item: "kubejs:uhv_computational_matrix"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"6110BA7B3E84F06F"
+				"0254109773A2D93C"
+				"73D0DC357821B395"
+			]
+			id: "06F8BF8FB54B3BEE"
+			tasks: [{
+				id: "3ED3B6A0B7CAFCED"
+				item: "kubejs:uhv_transmission_assembly"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"6110BA7B3E84F06F"
+				"0254109773A2D93C"
+				"73D0DC357821B395"
+			]
+			id: "0A321FE2FB18EA8B"
+			tasks: [{
+				id: "33532049510E7C12"
+				item: "kubejs:uhv_precision_drive_mechanism"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"6110BA7B3E84F06F"
+				"1A04D10394CDCEFC"
+				"73D0DC357821B395"
+			]
+			id: "05EEBCD256194C78"
+			tasks: [{
+				id: "5F95B990BC3D4EF8"
+				item: "kubejs:uhv_microfluidic_flow_valve"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"6110BA7B3E84F06F"
+				"3A52F8061046CB05"
+				"182D948925141764"
+				"73D0DC357821B395"
+			]
+			id: "6D7188F8CA92DAAF"
+			tasks: [{
+				id: "4842A0A654FA99F9"
+				item: "kubejs:uhv_super_magnetic_core"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"6110BA7B3E84F06F"
+				"73D0DC357821B395"
+			]
+			hide_dependency_lines: false
+			id: "77E6700262CDB4E0"
+			tasks: [{
+				id: "3C8D975B58958CB9"
+				item: "kubejs:uhv_catalyst_core"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"6110BA7B3E84F06F"
+				"0254109773A2D93C"
+				"73D0DC357821B395"
+			]
+			id: "433B94A266536D86"
+			tasks: [{
+				id: "580EEF4B96514577"
+				item: "kubejs:uhv_high_strength_panel"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"512757BEBFD1F584"
+				"3A52F8061046CB05"
+				"6110BA7B3E84F06F"
+				"73D0DC357821B395"
+			]
+			id: "7BBEB3C2DADBAD8B"
+			tasks: [{
+				id: "14EB9445EFF715A5"
+				item: "kubejs:uhv_micropower_router"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
-			id: "00DC693A9BC918BA"
+			id: "556CEA4BA5CC9D73"
 			tasks: [{
-				id: "27824725D17228E4"
+				id: "2188D8E5C06FFBB9"
+				item: "gtceu:zapolgium_ingot"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["556CEA4BA5CC9D73"]
+			hide_dependent_lines: true
+			id: "6110BA7B3E84F06F"
+			tasks: [{
+				id: "4D621680E36499BB"
+				item: "gtceu:zalloy_ingot"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["493DD013C818BB7B"]
+			id: "3B7538869EC02E77"
+			tasks: [{
+				id: "2B2F0940A7669445"
+				item: "gtceu:zirconium_dust"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["493DD013C818BB7B"]
+			id: "6A21CA0E47D6FA6F"
+			tasks: [{
+				id: "41E3026A1176D949"
+				item: "gtceu:selenium_dust"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["493DD013C818BB7B"]
+			id: "702E5088171E1255"
+			tasks: [{
+				id: "52B54BCF5E80B771"
+				item: "gtceu:tellurium_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["493DD013C818BB7B"]
+			hide_dependency_lines: false
+			id: "5B53286E09E6E656"
+			tasks: [{
+				id: "0D562CFF4BAE892E"
 				item: "gtceu:gritty_akreyrium_bucket"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3B7538869EC02E77"]
+			hide_dependent_lines: true
+			id: "0254109773A2D93C"
+			tasks: [{
+				id: "21035C272117A4E9"
+				item: "gtceu:zircalloy_4_ingot"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"6D7188F8CA92DAAF"
+				"433B94A266536D86"
+				"06F8BF8FB54B3BEE"
+				"7BBEB3C2DADBAD8B"
+			]
+			id: "7250D18797615B16"
+			tasks: [{
+				id: "1CF72292DC78F86E"
+				item: "gtceu:uhv_electric_motor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"7250D18797615B16"
+				"05EEBCD256194C78"
+			]
+			id: "78777C3EE2DA5D0F"
+			tasks: [{
+				id: "7BF2B97D2F99B5D3"
+				item: "gtceu:uhv_electric_pump"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"7250D18797615B16"
+				"0A321FE2FB18EA8B"
+			]
+			id: "7FFEBA9D0BA28CF0"
+			tasks: [{
+				id: "65D8A7C059A656F0"
+				item: "gtceu:uhv_conveyor_module"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"7250D18797615B16"
+				"0A321FE2FB18EA8B"
+			]
+			id: "64EA75A8EC94CEEF"
+			tasks: [{
+				id: "335F697381C5F5BC"
+				item: "gtceu:uhv_electric_piston"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"4DD3C38FCD8D704D"
+				"64EA75A8EC94CEEF"
+			]
+			id: "4487EDBDEEA92303"
+			tasks: [{
+				id: "4CB7A06102978E3A"
+				item: "gtceu:uhv_robot_arm"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"5F65FECD29B8A341"
+				"4DD3C38FCD8D704D"
+			]
+			id: "3212A3351DAD4492"
+			tasks: [{
+				id: "769BEF16C47F1FCA"
+				item: "gtceu:uhv_field_generator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"77E6700262CDB4E0"
+				"7250D18797615B16"
+			]
+			id: "5F65FECD29B8A341"
+			tasks: [{
+				id: "6D98FFF31BCA6859"
+				item: "gtceu:uhv_emitter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"77E6700262CDB4E0"
+				"7250D18797615B16"
+			]
+			id: "2D064F759D13FE4B"
+			tasks: [{
+				id: "60409CEBBF3D4B08"
+				item: "gtceu:uhv_sensor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"6A21CA0E47D6FA6F"
+				"14F1B40FACDDE02C"
+			]
+			hide_dependent_lines: true
+			id: "3A52F8061046CB05"
+			tasks: [{
+				id: "5333CB0CB7DA8B27"
+				item: "gtceu:iron_selenide_over_strontium_titanium_oxide_ingot"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["493DD013C818BB7B"]
+			id: "14F1B40FACDDE02C"
+			tasks: [{
+				id: "335BFB2F8F708709"
+				item: "gtceu:strontium_dust"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3B7538869EC02E77"
+				"6A21CA0E47D6FA6F"
+				"25C303BA67708250"
+			]
+			hide_dependent_lines: true
+			id: "512757BEBFD1F584"
+			tasks: [{
+				id: "1307F84E9F43FCDC"
+				item: "gtceu:zirconium_selenide_diiodide_ingot"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["493DD013C818BB7B"]
+			id: "25C303BA67708250"
+			tasks: [{
+				id: "144317FAD0F4FA86"
+				item: "gtceu:iodine_dust"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5B53286E09E6E656"]
+			id: "1A8F645AC1B30411"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6A1D5A2792648676"
+				item: "gtceu:cyclonic_crystalline_sieve"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1A8F645AC1B30411"]
+			id: "5368269646BC0F27"
+			tasks: [{
+				id: "0976980757BCCA1A"
+				item: "gtceu:folding_akreyrium_stabiliser"
+				type: "item"
+			}]
+			x: -5.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["00DC693A9BC918BA"]
-			id: "284C9C61E04A9589"
-			shape: "gear"
-			size: 1.5d
+			dependencies: ["07AD6651D0B40E22"]
+			id: "7F203254ACDF8C88"
+			optional: true
 			tasks: [
 				{
-					id: "587482AC00B2717E"
-					item: "gtceu:folding_akreyrium_stabiliser"
-					type: "item"
-				}
-				{
-					id: "1DB416BB0EECD277"
+					id: "689F437391CF6FF1"
 					item: "gtceu:leptonic_manifold_quantiser"
-					optional_task: true
 					type: "item"
 				}
 				{
-					id: "4A546561D53C5B72"
+					id: "58088B3530CDD073"
 					item: "gtceu:leptonic_convergence_injector"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4367C8CEB3C0C0BA"
-					item: "gtceu:cyclonic_crystalline_sieve"
 					type: "item"
 				}
 			]
-			title: "Akreyrium Processing Machinery"
-			x: -4.5d
-			y: 0.0d
+			title: "Better Akreyrium Processing"
+			x: -5.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["284C9C61E04A9589"]
-			id: "5A1633D085393F39"
+			dependencies: ["5368269646BC0F27"]
+			id: "07AD6651D0B40E22"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
-				id: "1656FEA54B607E79"
+				id: "5A05B918B174851B"
 				item: "gtceu:utopian_akreyrium_bucket"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["305974D431F17AF0"]
+			id: "6356F875511B2610"
+			tasks: [{
+				id: "6A5427D4429E38A7"
+				title: "Bacterial Breeding Vat"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["305974D431F17AF0"]
+			id: "47DF7968E9B98C65"
+			tasks: [{
+				id: "2EE7DBD77B7AC142"
+				title: "Bacterial Chemical Builder"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F05FAE3F5AAC357"]
+			id: "7F72F9E28713D965"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "228A459865151219"
+				title: "Bacterial Runic Mutator"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["493DD013C818BB7B"]
+			id: "3479CEBD73550718"
+			tasks: [{
+				icon: "sgjourney:golden_idol"
+				id: "53D64E8D434ECA9C"
+				structure: "sgjourney:goauld_temple/desert_pyramid/desert_pyramid"
+				title: "Ancient Structures"
+				type: "structure"
+			}]
+			x: -3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3479CEBD73550718"]
+			id: "6F05FAE3F5AAC357"
+			tasks: [{
+				id: "69BA1015E3FA85CE"
+				title: "Otherworldly Biology"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7F72F9E28713D965"]
+			id: "305974D431F17AF0"
+			tasks: [{
+				id: "6D8DE61BDC6455B0"
+				title: "Bacterial Colonies"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3479CEBD73550718"]
+			id: "5744150A5658FE4D"
+			tasks: [{
+				id: "614B87FA8CC65442"
+				title: "Runic Tablet Fragments"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5744150A5658FE4D"]
+			id: "146F88E5C1119649"
+			tasks: [{
+				id: "490C74E125EA818F"
+				title: "Runic Tablet"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"556CEA4BA5CC9D73"
+				"3B7538869EC02E77"
+			]
+			id: "30C974448C57F0EC"
+			tasks: [{
+				id: "5DC3B85B63641F6C"
+				item: "gtceu:ancient_runicalium_ingot"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["30C974448C57F0EC"]
+			id: "1C0B16612DBBE8CA"
+			tasks: [{
+				id: "52FE0BCD12334F7B"
+				item: "gtceu:ancient_runicalium_single_wire"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["07AD6651D0B40E22"]
+			id: "6C8C6EA426060065"
+			tasks: [{
+				id: "1F0BE2781B9369C9"
+				title: "Compact Fusion Reactor"
+				type: "checkmark"
+			}]
+			x: -9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07AD6651D0B40E22"]
+			id: "2659B3AA9108BC43"
+			tasks: [{
+				id: "617EA9C6D6E47F34"
+				title: "Exotic Gas Absorber"
+				type: "checkmark"
+			}]
+			x: -9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["146F88E5C1119649"]
+			id: "05967D219DB5562F"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "56A691EC38393337"
+				title: "Ancient Runes"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3540AE6C940F985B"]
+			id: "34585406B4A18F41"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2A258294AD1D5948"
+				title: "Draconic Encoded Computational Unit"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"34585406B4A18F41"
+				"5DADD2204991B4D5"
+			]
+			id: "6F9793149DE81FCC"
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "1531CA8CC8C9E1E4"
+				title: "Ancient Stargate Base Block"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["05967D219DB5562F"]
+			id: "5DADD2204991B4D5"
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "0B7F96B90FA587BC"
+				title: "Ancient Stargate Ring Block"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5DADD2204991B4D5"
+				"425A865B6B617DEC"
+			]
+			id: "63E36421AE07BC42"
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "066AA5C652B2AECE"
+				title: "Ancient Stargate Chevron Block"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["269FFF23CB83529A"]
+			id: "425A865B6B617DEC"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5ACBE8E357802F93"
+				title: "Ancient Stargate Chevron Disk"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["05967D219DB5562F"]
+			id: "64F0BB858EEB7913"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "4CC49B6099AED83C"
+				title: "Runic Stargate Assembler"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["29DAE5F27A1D4115"]
+			id: "6F28C09E9576D46C"
+			optional: true
+			rewards: [{
+				command: "/sgjourney stargateNetwork address minecraft:the_nether"
+				icon: "minecraft:netherrack"
+				id: "0F2CF8BD081737FA"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7188EBC58C836E2D"
+				title: "Get Nether Coordinates"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"14479FB9FCF478D6"
+				"29DAE5F27A1D4115"
+			]
+			id: "3540AE6C940F985B"
+			tasks: [{
+				id: "3015650A076D88C3"
+				title: "Draconic Coordinate Core"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["07AD6651D0B40E22"]
+			id: "29DAE5F27A1D4115"
+			tasks: [{
+				id: "0206ED855F36FB35"
+				item: "kubejs:nether_coordinate_crystal"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["07AD6651D0B40E22"]
+			id: "14479FB9FCF478D6"
+			tasks: [{
+				id: "408286D9422233DD"
+				item: "kubejs:end_coordinate_crystal"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["14479FB9FCF478D6"]
+			id: "46436EB33C1F5816"
+			optional: true
+			rewards: [{
+				command: "/sgjourney stargateNetwork address minecraft:the_end"
+				icon: "minecraft:end_stone"
+				id: "2B29FBB9D8552049"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0FC4CEAF5AD8FAF0"
+				title: "Get End Coordinates"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"64F0BB858EEB7913"
+				"6F9793149DE81FCC"
+				"63E36421AE07BC42"
+				"5DADD2204991B4D5"
+			]
+			id: "5E7153B7A10FC241"
+			shape: "gear"
+			size: 2.5d
+			tasks: [{
+				id: "7333173D12165CE2"
+				title: "Ancient Gate"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			id: "269FFF23CB83529A"
+			tasks: [{
+				id: "21102594B484E9F4"
+				title: "Made Up material"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5E7153B7A10FC241"]
+			icon: "minecraft:end_stone"
+			id: "4238E903C674B284"
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				dimension: "minecraft:the_end"
+				icon: "minecraft:end_stone"
+				id: "4FEE3F71D119AD26"
+				type: "dimension"
+			}]
+			title: "To The End"
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5E7153B7A10FC241"]
+			icon: "minecraft:netherrack"
+			id: "1E3EF64C0A4EE438"
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "minecraft:netherrack"
+				id: "537A1229A7EED7D1"
+				title: "To The Nether"
+				type: "dimension"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["47DF7968E9B98C65"]
+			id: "2F91771A1872EB4E"
+			optional: true
+			tasks: [{
+				id: "78C1C4C6A34B9E8B"
+				title: "Cheaper HydroCarbons"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2659B3AA9108BC43"]
+			id: "6CCC111235D6CE5B"
+			optional: true
+			tasks: [{
+				id: "061CB6C7CD618F6D"
+				title: "Cheaper Gases"
+				type: "checkmark"
+			}]
+			x: -9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6110BA7B3E84F06F"]
+			id: "1959E83866AF8CD2"
+			tasks: [{
+				id: "095E72DC6C3EF3DF"
+				title: "MA Parallel Multiblocks"
+				type: "checkmark"
+			}]
+			x: -9.5d
+			y: -2.0d
 		}
 	]
 	title: "Adventures in Abydos"

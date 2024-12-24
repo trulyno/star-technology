@@ -176,7 +176,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.stargate_component_assembly('classic_stargate_ring_block')
-            .itemInputs('gtceu:stellarium_frame', '36x gtceu:naquadah_alloy_plate', '8x kubejs:runic_pathway_engraved_plating','56x kubejs:stargate_rod', '64x gtceu:fine_trinaquadalloy_wire','64x gtceu:fine_trinaquadalloy_wire')
+            .itemInputs('gtceu:stellarium_frame', '36x gtceu:double_naquadah_alloy_plate', '8x kubejs:runic_pathway_engraved_plating','56x kubejs:stargate_rod', '64x gtceu:fine_trinaquadalloy_wire','64x gtceu:fine_trinaquadalloy_wire')
             .inputFluids('gtceu:soldering_alloy 12000', 'gtceu:naquadria 56000')
             .itemOutputs('sgjourney:classic_stargate_ring_block')
             .duration(20000)
@@ -204,7 +204,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.large_rotor_machine('crude_stargate_rod')
-        .itemInputs('gtceu:long_void_rod', '64x gtceu:weapon_grade_naquadah_foil', '48x gtceu:neutronium_foil', '64x gtceu:weapon_grade_naquadah_foil', '48x gtceu:neutronium_foil', '64x gtceu:weapon_grade_naquadah_foil', '48x gtceu:neutronium_foil', '64x gtceu:weapon_grade_naquadah_foil', 'gtceu:nether_star_lens')
+        .itemInputs('48x gtceu:neutronium_foil', '64x gtceu:weapon_grade_naquadah_foil', '48x gtceu:neutronium_foil', '64x gtceu:weapon_grade_naquadah_foil', 'gtceu:nether_star_lens', '64x gtceu:weapon_grade_naquadah_foil', 'gtceu:long_void_rod', '64x gtceu:weapon_grade_naquadah_foil', '48x gtceu:neutronium_foil')
         .itemOutputs('kubejs:crude_stargate_rod')
         .duration(1600)
         .EUt(GTValues.VHA[GTValues.LuV]);

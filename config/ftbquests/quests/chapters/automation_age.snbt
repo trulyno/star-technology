@@ -7,6 +7,7 @@
 	icon: "gtceu:micro_processor_mainframe"
 	id: "4BF4EE11E23C71FC"
 	order_index: 2
+	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{
