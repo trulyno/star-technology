@@ -168,7 +168,7 @@
 				item: "gtceu:uhv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: -13.5d
+			x: -13.0d
 			y: 4.5d
 		}
 		{
@@ -978,8 +978,8 @@
 				item: "sgjourney:classic_stargate_base_block"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -8.0d
+			x: -3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -993,8 +993,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -9.0d
+			x: -2.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1008,8 +1008,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -8.0d
+			x: -3.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1023,8 +1023,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -8.0d
+			x: -2.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1038,8 +1038,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -10.0d
+			x: -2.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1053,8 +1053,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -11.0d
+			x: -2.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1068,8 +1068,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -13.0d
+			x: -2.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1083,8 +1083,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -13.0d
+			x: -2.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1098,8 +1098,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -14.0d
+			x: -3.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1113,8 +1113,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -14.0d
+			x: -4.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1128,8 +1128,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -13.0d
+			x: -4.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1143,8 +1143,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -13.0d
+			x: -5.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1158,8 +1158,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -11.0d
+			x: -5.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1173,8 +1173,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -10.0d
+			x: -5.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1188,8 +1188,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -9.0d
+			x: -4.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1203,8 +1203,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -8.0d
+			x: -4.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1218,8 +1218,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -9.0d
+			x: -2.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1233,8 +1233,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -12.0d
+			x: -2.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1248,8 +1248,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -14.0d
+			x: -2.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1263,8 +1263,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -14.0d
+			x: -3.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1278,8 +1278,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -14.0d
+			x: -4.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1293,8 +1293,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -12.0d
+			x: -5.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1308,8 +1308,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -9.0d
+			x: -5.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1323,8 +1323,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -8.0d
+			x: -4.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1C515302A357B1B8"]

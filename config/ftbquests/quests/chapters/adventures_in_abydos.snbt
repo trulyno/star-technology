@@ -35,8 +35,8 @@
 				item: "kubejs:uhv_computational_matrix"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -13.0d
+			x: -3.5d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -50,8 +50,8 @@
 				item: "kubejs:uhv_transmission_assembly"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -8.0d
+			x: -6.5d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -65,8 +65,8 @@
 				item: "kubejs:uhv_precision_drive_mechanism"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -13.0d
+			x: -3.5d
+			y: -11.0d
 		}
 		{
 			dependencies: [
@@ -80,8 +80,8 @@
 				item: "kubejs:uhv_microfluidic_flow_valve"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -11.5d
+			x: -7.5d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -96,23 +96,22 @@
 				item: "kubejs:uhv_super_magnetic_core"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -8.0d
+			x: -5.5d
+			y: -12.0d
 		}
 		{
 			dependencies: [
 				"6110BA7B3E84F06F"
 				"73D0DC357821B395"
 			]
-			hide_dependency_lines: false
 			id: "77E6700262CDB4E0"
 			tasks: [{
 				id: "3C8D975B58958CB9"
 				item: "kubejs:uhv_catalyst_core"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -11.5d
+			x: -3.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -126,8 +125,8 @@
 				item: "kubejs:uhv_high_strength_panel"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -8.5d
+			x: -3.5d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -142,8 +141,8 @@
 				item: "kubejs:uhv_micropower_router"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -8.5d
+			x: -4.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -158,7 +157,6 @@
 		}
 		{
 			dependencies: ["556CEA4BA5CC9D73"]
-			hide_dependent_lines: true
 			id: "6110BA7B3E84F06F"
 			tasks: [{
 				id: "4D621680E36499BB"
@@ -198,8 +196,8 @@
 				item: "gtceu:tellurium_dust"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -8.0d
+			x: -6.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -238,28 +236,22 @@
 				item: "gtceu:uhv_electric_motor"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -10.0d
+			x: -5.0d
+			y: -13.0d
 		}
 		{
-			dependencies: [
-				"7250D18797615B16"
-				"05EEBCD256194C78"
-			]
+			dependencies: ["05EEBCD256194C78"]
 			id: "78777C3EE2DA5D0F"
 			tasks: [{
 				id: "7BF2B97D2F99B5D3"
 				item: "gtceu:uhv_electric_pump"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -10.0d
+			x: -7.5d
+			y: -13.0d
 		}
 		{
-			dependencies: [
-				"7250D18797615B16"
-				"0A321FE2FB18EA8B"
-			]
+			dependencies: ["0A321FE2FB18EA8B"]
 			id: "7FFEBA9D0BA28CF0"
 			tasks: [{
 				id: "65D8A7C059A656F0"
@@ -270,37 +262,31 @@
 			y: -11.5d
 		}
 		{
-			dependencies: [
-				"7250D18797615B16"
-				"0A321FE2FB18EA8B"
-			]
+			dependencies: ["0A321FE2FB18EA8B"]
 			id: "64EA75A8EC94CEEF"
 			tasks: [{
 				id: "335F697381C5F5BC"
 				item: "gtceu:uhv_electric_piston"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -11.5d
+			x: -2.5d
+			y: -10.5d
 		}
 		{
-			dependencies: [
-				"4DD3C38FCD8D704D"
-				"64EA75A8EC94CEEF"
-			]
+			dependencies: ["4DD3C38FCD8D704D"]
 			id: "4487EDBDEEA92303"
 			tasks: [{
 				id: "4CB7A06102978E3A"
 				item: "gtceu:uhv_robot_arm"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -13.0d
+			x: -1.5d
+			y: -11.0d
 		}
 		{
 			dependencies: [
-				"5F65FECD29B8A341"
 				"4DD3C38FCD8D704D"
+				"5F65FECD29B8A341"
 			]
 			id: "3212A3351DAD4492"
 			tasks: [{
@@ -308,36 +294,30 @@
 				item: "gtceu:uhv_field_generator"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -13.0d
+			x: -1.5d
+			y: -10.0d
 		}
 		{
-			dependencies: [
-				"77E6700262CDB4E0"
-				"7250D18797615B16"
-			]
+			dependencies: ["77E6700262CDB4E0"]
 			id: "5F65FECD29B8A341"
 			tasks: [{
 				id: "6D98FFF31BCA6859"
 				item: "gtceu:uhv_emitter"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -11.5d
+			x: -2.5d
+			y: -9.5d
 		}
 		{
-			dependencies: [
-				"77E6700262CDB4E0"
-				"7250D18797615B16"
-			]
+			dependencies: ["77E6700262CDB4E0"]
 			id: "2D064F759D13FE4B"
 			tasks: [{
 				id: "60409CEBBF3D4B08"
 				item: "gtceu:uhv_sensor"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -10.0d
+			x: -2.5d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -351,7 +331,7 @@
 				item: "gtceu:iron_selenide_over_strontium_titanium_oxide_ingot"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -9.5d
 			y: -2.0d
 		}
 		{
@@ -543,8 +523,9 @@
 		}
 		{
 			dependencies: [
-				"556CEA4BA5CC9D73"
 				"3B7538869EC02E77"
+				"4D04123F036F181E"
+				"556CEA4BA5CC9D73"
 			]
 			id: "30C974448C57F0EC"
 			tasks: [{
@@ -552,7 +533,7 @@
 				item: "gtceu:ancient_runicalium_ingot"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -9.5d
 			y: -10.0d
 		}
 		{
@@ -563,7 +544,7 @@
 				item: "gtceu:ancient_runicalium_single_wire"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -11.5d
 			y: -10.0d
 		}
 		{
@@ -571,11 +552,11 @@
 			id: "6C8C6EA426060065"
 			tasks: [{
 				id: "1F0BE2781B9369C9"
-				title: "Compact Fusion Reactor"
+				title: "Compact Fusion Reactor Computer MK 1"
 				type: "checkmark"
 			}]
-			x: -9.5d
-			y: 0.0d
+			x: -7.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -607,9 +588,9 @@
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
-				id: "2A258294AD1D5948"
-				title: "Draconic Encoded Computational Unit"
-				type: "checkmark"
+				id: "41227980BC57B999"
+				item: "kubejs:ancient_stargate_computer_core"
+				type: "item"
 			}]
 			x: -1.5d
 			y: 4.0d
@@ -665,11 +646,11 @@
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
-				id: "5ACBE8E357802F93"
-				title: "Ancient Stargate Chevron Disk"
-				type: "checkmark"
+				id: "0FE7D755516D8AF8"
+				item: "kubejs:ancient_chevron_disk"
+				type: "item"
 			}]
-			x: -1.5d
+			x: 0.5d
 			y: 6.0d
 		}
 		{
@@ -706,16 +687,16 @@
 		}
 		{
 			dependencies: [
-				"14479FB9FCF478D6"
-				"29DAE5F27A1D4115"
+				"21188AF95E6D5030"
+				"5FAD11260BC2F305"
 			]
 			id: "3540AE6C940F985B"
 			tasks: [{
-				id: "3015650A076D88C3"
-				title: "Draconic Coordinate Core"
-				type: "checkmark"
+				id: "0E4B5B5BF5EECD4B"
+				item: "kubejs:draconic_coordinate_core"
+				type: "item"
 			}]
-			x: -5.5d
+			x: -3.5d
 			y: 4.0d
 		}
 		{
@@ -756,7 +737,7 @@
 				title: "Get End Coordinates"
 				type: "checkmark"
 			}]
-			x: -7.5d
+			x: -9.5d
 			y: 4.0d
 		}
 		{
@@ -840,11 +821,11 @@
 				title: "Cheaper Gases"
 				type: "checkmark"
 			}]
-			x: -9.5d
-			y: 4.0d
+			x: -11.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["6110BA7B3E84F06F"]
+			dependencies: ["74FB988DE790BE0D"]
 			id: "1959E83866AF8CD2"
 			tasks: [{
 				id: "095E72DC6C3EF3DF"
@@ -852,7 +833,100 @@
 				type: "checkmark"
 			}]
 			x: -9.5d
-			y: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"14479FB9FCF478D6"
+				"43DAD4B63603BFC3"
+			]
+			id: "5FAD11260BC2F305"
+			tasks: [{
+				id: "55C3182B290BF228"
+				title: "Void Core"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"29DAE5F27A1D4115"
+				"43DAD4B63603BFC3"
+			]
+			id: "21188AF95E6D5030"
+			tasks: [{
+				id: "4A150BBF070F5997"
+				title: "Hell Core"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["702E5088171E1255"]
+			id: "00C566817C19F60A"
+			tasks: [{
+				id: "50AF15FDD20270AD"
+				title: "Need Secondary Material"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1C9396E2587051F7"]
+			id: "43DAD4B63603BFC3"
+			tasks: [{
+				id: "5A91EE93457C617E"
+				item: {
+					Count: 1
+					id: "start_core:data_dna_disk"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4DB732AEAC3C9DC7"]
+			id: "1C9396E2587051F7"
+			tasks: [{
+				id: "3DA83C02A0B67056"
+				item: "kubejs:draconic_wetware_printed_circuit_board"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"78777C3EE2DA5D0F"
+				"2D064F759D13FE4B"
+			]
+			hide_dependency_lines: true
+			id: "4DB732AEAC3C9DC7"
+			tasks: [{
+				id: "0490D46CB26303DA"
+				item: "kubejs:draconic_wetware_circuit_board"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6110BA7B3E84F06F"]
+			id: "4D04123F036F181E"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7F60C8447F583DD0"
+				item: "kubejs:zalloy_coil_block"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -10.0d
 		}
 	]
 	title: "Adventures in Abydos"

@@ -191,8 +191,20 @@ StartupEvents.registry('item', event => {
     event.create('classic_chevron_disk')
         .displayName('Classic Stargate Chevron Disk')
         .rarity('rare')
-        .texture('kubejs:item/gate_items/classic_chevron_disk')
+        .texture('kubejs:item/gate_items/classic_chevron_disk');
+
+    event.create('ancient_stargate_computer_core')
+        .displayName('Ancient Encoded Computational Unit')
+        .rarity('uncommon');
+
+    event.create('ancient_chevron_disk')
+        .displayName('Ancient Stargate Chevron Disk')
+        .rarity('rare');
     
+    event.create('draconic_coordinate_core')
+        .displayName('Draconic Coordinate Core')
+        .rarity('epic')
+
     //Dimensional Pinging
 
     event.create('coordinate_crystal')
