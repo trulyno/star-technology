@@ -12,6 +12,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('component_assembly')
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
+        .recipeModifier(GTRecipeModifiers.OC_PERFECT_SUBTICK)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('SSSSSSS', 'SSSSSSS', 'SSSSSSS')
             .aisle('SSSSSSS', 'S S   S', 'SSSGGGS')

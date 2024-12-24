@@ -148,7 +148,7 @@ function VH(voltage) {
         case 'opv': v = GTValues.VH[GTValues.OpV]; break;
         case 'max': v = GTValues.VH[GTValues.MAX]; break;
     }
-    return V;
+    return v;
 }
 
 function VHA(voltage) {
@@ -170,7 +170,7 @@ function VHA(voltage) {
         case 'opv': v = GTValues.VHA[GTValues.OpV]; break;
         case 'max': v = GTValues.VHA[GTValues.MAX]; break;
     }
-    return V;
+    return v;
 }
 
 function periodicTableElement(material, type) {
@@ -214,7 +214,7 @@ function periodicTableElement(material, type) {
 
 function blastProperty(material, temperature, gasTier, voltage, duration) {
     let mat = GTMaterials.get(material);
-    mat.setProperty(PropertyKey.BLAST, new $BlastProperty(temperature, gasTier, voltage, duration));
+    mat.setProperty(PropertyKey.BLAST, new $BlastProperty(temperature, gasTier, voltage, duration, -1, -1));
 }
 
 /*
@@ -232,29 +232,36 @@ function blastProperty(material, temperature, gasTier, voltage, duration) {
 */
 elementRegistry(event => {
     // For the material that will have ? as it's atomic symbol in chemical formulas
-    event.create('mystery', -1, -1, -1, null, '?', false);
+    const elem = (name, p, n, sym) => {
+        event.create(name)
+            .protons(p)
+            .neutrons(n)
+            .symbol(sym);
+    }
+    elem('mystery', -1, -1, '?');
 
     // Netherite Line
-    event.create('debris', -1, -1, -1, null, '?', false);
-    event.create('pure_netherite', 124, 345, -1, null, '*Nr*', false);
+    elem('debris', -1, -1, '?');
+    elem('pure_netherite', 124, 345, '*Nr*');
 
     // Classic Stargate
-    event.create('echo_r', -1, -1, -1, null, 'Ec', false);
+    elem('echo_r', -1, -1, 'Ec');
 
     // Abydos Materials
-    event.create('zapolgium', 141, 217, -1, null, 'Zg', false);
+    elem('zapolgium', 141, 217, 'Zg');
+    elem('akreyrium', -1, -1, 'Ak');
 
     // Nether Materials
-    event.create('mythril', 132, 193, -1, null, 'My', false);
-    event.create('adamantine', 131, 182, -1, null, 'Ad', false);
-    event.create('estalt', 133, 199, -1, null, 'El', false);
-    event.create('calamatium', 134, 211, -1, null, 'Ct', false);
-    event.create('isovol', 135, 221, -1, null, 'Is', false);
+    elem('mythril', 132, 193, 'My');
+    elem('adamantine', 131, 182, 'Ad');
+    elem('estalt', 133, 199, 'El');
+    elem('calamatium', 134, 211, 'Ct');
+    elem('isovol', 135, 221, 'Is');
 
     // End Materials
-    event.create('xeproda', 136, 265, -1, null, 'Xp', false);
-    event.create('rhexis', 137, 298, -1, null, 'Rx', false);
-    event.create('chalyblux', 138, 312, -1, null, 'Cx', false);
+    elem('xeproda', 136, 265, 'Xp');
+    elem('rhexis', 137, 298, 'Rx');
+    elem('chalyblux', 138, 312, 'Cx');
 });
 
 /*
@@ -319,6 +326,24 @@ elementRegistry(event => {
         .addDefaultEnchant()
         
 */
+
+/*
+event.create('netherite')
+        .dust()
+        .components('4x debris', '4x gold')
+        .color(0x1a0d00)
+        .iconSet(DULL)
+        .flags(no_decomp);
+*/
+
+GTCEuStartupEvents.materialModification(event => {
+
+    GTMaterials.Netherite.setMaterialARGB(0x1a0d00);
+    GTMaterials.Netherite.setComponents('4x debris', '4x gold');
+    GTMaterials.Netherite.setMaterialIconSet(DULL);
+
+});
+
 materialRegistry(event => {
 
     // Periodic table materials
@@ -351,11 +376,12 @@ materialRegistry(event => {
     GTMaterials.Silver.addFlags(gear);
     GTMaterials.Naquadah.addFlags(dense_plate);
     GTMaterials.NaquadahEnriched.addFlags(dense_plate);
-    GTMaterials.Neutronium.addFlags(foil);
+    GTMaterials.Neutronium.addFlags(foil, small_gear);
     GTMaterials.Europium.addFlags(small_spring);
     GTMaterials.Zirconium.addFlags(fine_wire); 
     GTMaterials.RedSteel.addFlags(rod, frame);
-    GTMaterials.SterlingSilver.addFlags(rod, frame);      
+    GTMaterials.SterlingSilver.addFlags(rod, frame);     
+    GTMaterials.Netherite.addFlags(no_decomp); 
 
     // Blast Properties of periodic table metals
     blastProperty('zirconium', 8000, 'higher', VA('zpm'), 800);
@@ -372,10 +398,7 @@ materialRegistry(event => {
         .ingot()
         .element(GTElements.get('zapolgium'))
         .color(0xcc00cc)
-        .iconSet(magnetic)
-        .ingotSmeltInto(GTMaterials.get('zapolgium'))
-        .arcSmeltInto(GTMaterials.get('zapolgium'))
-        .macerateInto(GTMaterials.get('zapolgium'))
+        .iconSet(MAGNETIC)
         .flags(rod, long_rod, magnetic);
 
     event.create('zapolgium')
@@ -383,7 +406,6 @@ materialRegistry(event => {
         .element(GTElements.get('zapolgium'))
         .color(0xcc00cc)
         .iconSet(DULL)
-        .polarizesInto(GTMaterials.get('magnetic_zapolgium'))
         .blastTemp(10799, 'highest', VA('uhv'), 1600);
 
     event.create('xeproda')
@@ -464,7 +486,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('lv'), 4, 0, true)
-        .rotorStats(140, 130, 3, 37600);
+        .rotorStats(150, 130, 3, 37600);
 
     event.create('signalum')
         .ingot(1)
@@ -476,7 +498,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('mv'), 16, 0, true)
-        .rotorStats(130, 140, 3, 24000);
+        .rotorStats(190, 150, 3, 24000);
 
     event.create('lumium')
         .ingot(1)
@@ -488,7 +510,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('hv'), 16, 0, true)
-        .rotorStats(150, 130, 3, 24000);
+        .rotorStats(220, 170, 3, 24000);
 
     event.create('enderium')
         .ingot(1)
@@ -500,7 +522,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('ev'), 32, 0, true)
-        .rotorStats(130, 160, 3, 45600);
+        .rotorStats(300, 190, 3, 45600);
 
     event.create('shellite')
         .ingot(1)
@@ -512,7 +534,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('iv'), 64, 0, true)
-        .rotorStats(140, 150, 3, 37600);
+        .rotorStats(450, 220, 3, 37600);
 
     event.create('twinite')
         .ingot(1)
@@ -524,7 +546,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('luv'), 64, 0, true)
-        .rotorStats(400, 200, 3, 24000);
+        .rotorStats(700, 260, 3, 24000);
 
     event.create('dragonsteel')
         .ingot(1)
@@ -536,7 +558,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('zpm'), 64, 0, true)
-        .rotorStats(800, 400, 3, 32000);
+        .rotorStats(1100, 380, 3, 32000);
 
     event.create('prismalium')
         .ingot(1)
@@ -548,7 +570,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('uv'), 32, 0, true)
-        .rotorStats(1600, 800, 3, 48000);
+        .rotorStats(1600, 470, 3, 48000);
 
     event.create('melodium')
         .ingot(1)
@@ -560,7 +582,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('uv'), 256, 0, true)
-        .rotorStats(3200, 1600, 3, 64000);
+        .rotorStats(2000, 550, 3, 64000);
 
     event.create('stellarium')
         .ingot(1)
@@ -572,7 +594,19 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('uhv'), 512, 0, true)
-        .rotorStats(6400, 3200, 3, 96000);
+        .rotorStats(2800, 660, 3, 96000);
+
+    event.create('ancient_runicalium')
+        .ingot(2)
+        .fluid()
+        .components('5x zapolgium', '18x stellarium', '8x zirconium')
+        .color(0xFAB922)
+        .iconSet(SHINY)
+        .blastTemp(11749, 'highest', VA('uev'), 8400)
+        .flags(foil, gear, long_rod, plates,
+            rod, rotor, small_gear, ring, frame)
+        .cableProperties(V('uev'), 1024, 0, true)
+        .rotorStats(5000, 720, 3, 128000);
 
     // Nuclear Reactor Materials
     event.create('austenitic_stainless_steel_304')
@@ -622,12 +656,12 @@ materialRegistry(event => {
         .components('debris')
         .color(0xcc0000);
 
-    event.create('netherite')
-        .dust()
-        .components('4x debris', '4x gold')
-        .color(0x1a0d00)
-        .iconSet(DULL)
-        .flags(no_decomp);
+    // event.create('netherite')
+    //     .dust()
+    //     .components('4x debris', '4x gold')
+    //     .color(0x1a0d00)
+    //     .iconSet(DULL)
+    //     .flags(no_decomp);
     
     event.create('chlorine_trifluoride')
         .fluid()
@@ -654,6 +688,13 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring);
 
+    event.create('magnetic_pure_netherite')
+        .ingot()
+        .element(GTElements.get('pure_netherite'))
+        .color(0x1a0d00)
+        .iconSet(MAGNETIC)
+        .flags(rod, long_rod, magnetic);
+
     event.create('naquadic_netherite')
         .gem(0)
         .components('3x naquadah', '5x pure_netherite', '2x caesium', '5x cerium', '12x fluorine', '32x oxygen')
@@ -662,6 +703,7 @@ materialRegistry(event => {
 
     event.create('weapon_grade_naquadah')
         .ingot()
+        .fluid()
         .components('7x naquadria', '2x pure_netherite', '5x neutronium', '16x fluorine')
         .color(0xccff33)
         .iconSet(DULL)
@@ -1030,7 +1072,7 @@ materialRegistry(event => {
         .color(0x336600);
 
     // Ores and bedrock fluids
-    // Abydos
+    
     event.create('titanite')
         .dust()
         .ore(4, 3)
@@ -1306,7 +1348,7 @@ materialRegistry(event => {
         .components('1x iron_selenide', '1x strontium_titanium_oxide')
         .color(0x66ff33)
         .iconSet(DULL)
-        .flags(fine_wire)
+        .flags(fine_wire, bolt_and_screw)
         .blastTemp(10299, 'highest', VA('uv'), 2500)
         .cableProperties(V('uhv'), 4, 0, true);
 
@@ -1531,6 +1573,53 @@ materialRegistry(event => {
      .flags(plates, frame, rod)
      .iconSet(METALLIC)
      .blastTemp(2200, 'low', VA('mv'), 2000);
+
+
+    // Akreyium Line
+    
+    event.create('utopian_akreyrium')
+        .fluid()
+        .element(GTElements.get('akreyrium'))
+        .color(0xFFFFFF);
+    
+    event.create('dense_electron_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get('akreyrium'))
+
+    event.create('dense_muon_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get('akreyrium'))
+
+    event.create('dense_tau_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get('akreyrium'))
+
+    event.create('sparse_electron_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get('akreyrium'))
+
+    event.create('sparse_muon_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get('akreyrium'))
+
+    event.create('sparse_tau_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get('akreyrium'))
+
+    event.create('lepton_sparse_akreyrium')
+        .fluid()
+        .element(GTElements.get('akreyrium'))
+        .color(0x6E6E87);
+
+    event.create('gritty_akreyrium')
+        .fluid()
+        .element(GTElements.get('akreyrium'))
+        .color(0x464655);
+
+    event.create('akreyrium_pcb_graphite_nanoparticle_coolant')
+        .fluid()
+        .color(0x676763);
+
 });
 
 //EPSILON Resource Gen stuff
