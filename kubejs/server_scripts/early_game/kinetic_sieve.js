@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(outputs)
             .duration(1800)
             .inputStress(256)
-            .rpm(128)
+            //.rpm(128)
 
     }
 

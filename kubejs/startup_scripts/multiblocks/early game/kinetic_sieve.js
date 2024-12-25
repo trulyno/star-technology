@@ -19,7 +19,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('F...F', 'F...F', 'F...F', 'FFFFF', 'WWCWW', 'WWWWW', 'WWWWW')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('W', Predicates.blocks('kubejs:wood_casing')
-                .or(Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
+                //.or(Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS)))
             .where('F', Predicates.blocks('gtceu:treated_wood_frame'))     

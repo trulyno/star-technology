@@ -22,7 +22,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('F', Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get())
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
+                //.or(Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('M', Predicates.abilities(PartAbility.MUFFLER))
             .where('P', Predicates.blocks(GTBlocks.CASING_STEEL_PIPE.get()))

@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:tin_dust', 3250, 50)
         .duration(160)
         .inputStress(256)
-        .rpm(32)
+        //.rpm(32)
         .EUt(28);
 
     event.recipes.gtceu.electrico_kinetic_ore_factory('magnetite_e_ore_factory')
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:gold_dust', 3250, 50)
         .duration(160)
         .inputStress(256)
-        .rpm(32)
+        //.rpm(32)
         .EUt(28);
 
     event.recipes.gtceu.electrico_kinetic_ore_factory('copper_e_ore_factory')
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:nickel_dust', 3250, 50)
         .duration(160)
         .inputStress(256)
-        .rpm(32)
+        //.rpm(32)
         .EUt(28);
 
     event.recipes.gtceu.electrico_kinetic_ore_factory('tin_e_ore_factory')
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:zinc_dust', 3250, 50)
         .duration(160)
         .inputStress(256)
-        .rpm(32)
+        //.rpm(32)
         .EUt(28);
 
     event.recipes.gtceu.electrico_kinetic_ore_factory('sphalerite_e_ore_factory')
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:sulfur_dust', 3250, 50)
         .duration(160)
         .inputStress(256)
-        .rpm(32)
+        //.rpm(32)
         .EUt(28);
 
     event.recipes.gtceu.electrico_kinetic_ore_factory('galena_e_ore_factory')
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:sulfur_dust', 3250, 50)
         .duration(160)
         .inputStress(256)
-        .rpm(32)
+        //.rpm(32)
         .EUt(28);
 
     event.recipes.gtceu.electrico_kinetic_ore_factory('stibnite_e_ore_factory')
@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:sulfur_dust', 3250, 50)
         .duration(160)
         .inputStress(256)
-        .rpm(32)
+        //.rpm(32)
         .EUt(28);
 
 
@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
             .chancedOutput(`gtceu:${quaternary}_dust`, 750, 100)
             .duration(320)
             .inputStress(rpm * 4)
-            .rpm((rpm == 2048) ? 256 : (rpm == 512) ? 192 : rpm)
+            //.rpm((rpm == 2048) ? 256 : (rpm == 512) ? 192 : rpm)
             .EUt(rpm * 0.75);
     }
 
