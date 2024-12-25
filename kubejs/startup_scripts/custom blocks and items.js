@@ -351,7 +351,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/bizmuth_bronze_casing');
+        .textureAll('kubejs:block/casings/beryllium_bronze_casing');
 
     event.create('blue_steel_casing')
         .displayName('Blue Steel Casing')
@@ -391,7 +391,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/hydronallium_casing');
+        .textureAll('kubejs:block/casings/hydronalium_casing');
 
     event.create('kovar_casing')
         .displayName('Kovar Casing')
