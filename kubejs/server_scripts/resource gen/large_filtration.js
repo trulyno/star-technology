@@ -43,28 +43,28 @@ ServerEvents.recipes(event => {
         .inputFluids('kubejs:iron_mixture 1000')
         .itemOutputs(['2x gtceu:crushed_iron_ore', 'gtceu:crushed_tin_ore', 'gtceu:crushed_magnetite_ore'])
         .duration(320)
-        .inputStress(128)
+        //.inputStress(128)
         //.rpm(128);
     
     event.recipes.gtceu.kinetic_filtrator('copper_mixture_filtration_kinetic')
         .inputFluids('kubejs:copper_mixture 1000')
         .itemOutputs(['2x gtceu:crushed_copper_ore', 'minecraft:glowstone_dust', 'minecraft:redstone'])
         .duration(320)
-        .inputStress(128)
+        //.inputStress(128)
         //.rpm(128);
     
     event.recipes.gtceu.kinetic_filtrator('quartz_mixture_filtration_kinetic')
         .inputFluids('kubejs:quartz_mixture 1000')
         .itemOutputs(['2x minecraft:quartz', 'minecraft:diamond'])
         .duration(320)
-        .inputStress(128)
+        //.inputStress(128)
         //.rpm(128);
 
     event.recipes.gtceu.kinetic_filtrator('lava_filtration_kinetic')
         .inputFluids('minecraft:lava 1000')
         .itemOutputs(['2x gtceu:sulfur_dust', 'gtceu:crushed_sphalerite_ore', 'gtceu:crushed_galena_ore'])
         .duration(320)
-        .inputStress(128)
+        //.inputStress(128)
         //.rpm(128);
     
     //electro-kinetic filtrator
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
         .inputFluids('kubejs:iron_mixture 1000')
         .itemOutputs(['2x gtceu:crushed_iron_ore', 'gtceu:crushed_tin_ore', 'gtceu:crushed_magnetite_ore'])
         .duration(320)
-        .inputStress(32)
+        //.inputStress(32)
         //.rpm(128)
         .EUt(28);
         
@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
         .inputFluids('kubejs:copper_mixture 1000')
         .itemOutputs(['2x gtceu:crushed_copper_ore', 'minecraft:glowstone_dust', 'minecraft:redstone'])
         .duration(320)
-        .inputStress(32)
+        //.inputStress(32)
         //.rpm(128)
         .EUt(28);
         
@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
         .inputFluids('kubejs:quartz_mixture 1000')
         .itemOutputs(['2x minecraft:quartz', 'minecraft:diamond'])
         .duration(320)
-        .inputStress(32)
+        //.inputStress(32)
         //.rpm(128)
         .EUt(28);
     
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
         .inputFluids('minecraft:lava 1000')
         .itemOutputs(['2x gtceu:sulfur_dust', 'gtceu:crushed_sphalerite_ore', 'gtceu:crushed_galena_ore'])
         .duration(320)
-        .inputStress(32)
+        //.inputStress(32)
         //.rpm(128)
         .EUt(28);
 

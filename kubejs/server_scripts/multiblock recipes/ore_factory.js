@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:nickel_dust', 4500, 100)
         .chancedOutput('gtceu:tin_dust', 3250, 50)
         .duration(160)
-        .inputStress(256)
+        //.inputStress(256)
         //.rpm(32)
         .EUt(28);
 
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:gold_dust', 4500, 100)
         .chancedOutput('gtceu:gold_dust', 3250, 50)
         .duration(160)
-        .inputStress(256)
+        //.inputStress(256)
         //.rpm(32)
         .EUt(28);
 
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:gold_dust', 4500, 100)
         .chancedOutput('gtceu:nickel_dust', 3250, 50)
         .duration(160)
-        .inputStress(256)
+        //.inputStress(256)
         //.rpm(32)
         .EUt(28);
 
@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:iron_dust', 4500, 100)
         .chancedOutput('gtceu:zinc_dust', 3250, 50)
         .duration(160)
-        .inputStress(256)
+        //.inputStress(256)
         //.rpm(32)
         .EUt(28);
 
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:gallium_dust', 4500, 100)
         .chancedOutput('gtceu:sulfur_dust', 3250, 50)
         .duration(160)
-        .inputStress(256)
+        //.inputStress(256)
         //.rpm(32)
         .EUt(28);
 
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:silver_dust', 4500, 100)
         .chancedOutput('gtceu:sulfur_dust', 3250, 50)
         .duration(160)
-        .inputStress(256)
+        //.inputStress(256)
         //.rpm(32)
         .EUt(28);
 
@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:antimony_dust', 4500, 100)
         .chancedOutput('gtceu:sulfur_dust', 3250, 50)
         .duration(160)
-        .inputStress(256)
+        //.inputStress(256)
         //.rpm(32)
         .EUt(28);
 
@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
             .chancedOutput(`gtceu:${tertiary}_dust`, 1250, 50)
             .chancedOutput(`gtceu:${quaternary}_dust`, 750, 100)
             .duration(320)
-            .inputStress(rpm * 4)
+            //.inputStress(rpm * 4)
             //.rpm((rpm == 2048) ? 256 : (rpm == 512) ? 192 : rpm)
             .EUt(rpm * 0.75);
     }

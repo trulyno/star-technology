@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
             .notConsumable(`exnihilosequentia:${mesh}_mesh`)
             .itemOutputs(outputs)
             .duration(1800)
-            .inputStress(256)
+            //.inputStress(256)
             //.rpm(128)
 
     }

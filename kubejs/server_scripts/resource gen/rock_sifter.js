@@ -34,7 +34,6 @@ ServerEvents.recipes(event => {
     .chancedOutput('kubejs:topaz_geode', 3500, 500)
     .chancedOutput('kubejs:amethyst_geode', 6000, 2000)
     .duration(300)
-    .inputStress(256)
     .EUt(28);
 
   event.recipes.gtceu.rock_sifter('geode_harvesting')
@@ -50,7 +49,6 @@ ServerEvents.recipes(event => {
     .chancedOutput('kubejs:topaz_geode', 3500, 500)
     .chancedOutput('kubejs:amethyst_geode', 6000, 2000)
     .duration(300)
-    .inputStress(256)
     .EUt(28);
 
   //cracking
