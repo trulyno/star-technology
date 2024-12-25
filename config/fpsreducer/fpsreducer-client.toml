@@ -2,7 +2,7 @@
 #General options
 [general]
 	#Enable FPS Reducer features.
-	enableFpsReducer = true
+	enableFpsReducer = false
 	#Waiting time(sec) before reducing the FPS. (0:OFF)
 	#Range: 0 ~ 86400
 	waitingTime = 0
@@ -23,7 +23,7 @@
 	#Reduce FPS in Game Menu.
 	reducingInGameMenu = true
 	#Force reducing FPS if the window is inactive.
-	reducingInBackground = true
+	reducingInBackground = false
 	#Suppress master volume if the window is inactive.
 	suppressSound = true
 	#Suppression master volume ratio in inactive (0-100).
@@ -45,7 +45,7 @@
 	hudInfo = 4
 	#Profile (0:custom, 1:modest-eco, 2:eco, 3:cooling-low, 4:cooling-high)
 	#Range: 0 ~ 4
-	profile = 1
+	profile = 0
 
 #HUD offsets from reference positions at the screen edge.
 [hud_offset]
