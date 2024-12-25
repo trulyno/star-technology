@@ -574,7 +574,7 @@
 			id: "6C8C6EA426060065"
 			tasks: [{
 				id: "1F0BE2781B9369C9"
-				title: "Compact Fusion Reactor Computer MK 1"
+				title: "Dense Fusion Reactor Computer MK 1"
 				type: "checkmark"
 			}]
 			x: -9.5d
@@ -594,13 +594,24 @@
 		{
 			dependencies: ["146F88E5C1119649"]
 			id: "05967D219DB5562F"
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "56A691EC38393337"
-				title: "Ancient Runes"
-				type: "checkmark"
-			}]
+			size: 1.0d
+			tasks: [
+				{
+					id: "3AE8048A9E498BAF"
+					item: "kubejs:runic_stabilization_plating"
+					type: "item"
+				}
+				{
+					id: "42BA63A03F06C0DB"
+					item: "kubejs:runic_energized_plating"
+					type: "item"
+				}
+				{
+					id: "592DC4F7118E4345"
+					item: "kubejs:runic_transportation_engraved_plating"
+					type: "item"
+				}
+			]
 			x: 0.5d
 			y: -2.0d
 		}

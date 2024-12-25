@@ -345,18 +345,20 @@ materialRegistry(event => {
     // periodicTableElement('iodine', 'gas');
     periodicTableElement('oganesson', 'gas');
 
-    // PLasmas
+    // Plasmas
 
     // Material modification
     GTMaterials.Lead.addFlags(gear);
     GTMaterials.Silver.addFlags(gear);
     GTMaterials.Naquadah.addFlags(dense_plate);
     GTMaterials.NaquadahEnriched.addFlags(dense_plate);
+    GTMaterials.Naquadria.addFlags(dense_plate);
     GTMaterials.Neutronium.addFlags(foil, small_gear);
     GTMaterials.Europium.addFlags(small_spring);
     GTMaterials.Zirconium.addFlags(fine_wire); 
     GTMaterials.RedSteel.addFlags(rod, frame);
-    GTMaterials.SterlingSilver.addFlags(rod, frame);      
+    GTMaterials.SterlingSilver.addFlags(rod, frame);
+          
 
     // Blast Properties of periodic table metals
     blastProperty('zirconium', 8000, 'higher', VA('zpm'), 800);
@@ -579,7 +581,7 @@ materialRegistry(event => {
         .iconSet(SHINY)
         .blastTemp(11749, 'highest', VA('uev'), 8400)
         .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
+            rod, rotor, small_gear, ring, frame, fine_wire)
         .cableProperties(V('uev'), 1024, 0, true)
         .rotorStats(5000, 720, 3, 128000);
 
@@ -932,11 +934,11 @@ materialRegistry(event => {
         .ingot().fluid()
         .color(0x281832)
         .iconSet(BRIGHT)
-        .flags(plates, rod, frame, fine_wire, foil)
+        .flags(plates, rod, frame, fine_wire, foil, dense_plate)
         .components('6x trinium', '2x naquadah', '1x carbon')
         .blastTemp(8747, 'higher', VA('zpm'), 1200)
 
-    event.create('perchloric_acid')
+       event.create('perchloric_acid')
         .fluid()
         .components('1x hydrogen', '1x chlorine', '4x oxygen')
         .color(0xffe6e6);

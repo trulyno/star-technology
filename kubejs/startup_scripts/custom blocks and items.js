@@ -180,6 +180,18 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/gate_items/runic_pathway_engraved_plating')
         .rarity('rare');
 
+    event.create('runic_stabilization_plating')
+        .displayName('Runic Stabilization Plating')
+        .rarity('rare')
+
+    event.create('runic_energized_plating')
+        .displayName('Runic Energized Plating')
+        .rarity('rare')
+
+    event.create('runic_transportation_engraved_plating')
+        .displayName('Runic Transportation-Engraved Plating')
+        .rarity('epic')
+
     event.create('runic_wave_generator')
         .displayName('Drack-ion Runic Wave Generator')
         .texture('kubejs:item/gate_items/drack-ion_runic_wave_generator')
@@ -296,15 +308,15 @@ StartupEvents.registry('item', event => {
     event.create('uiv_voltage_coil')
         .texture('kubejs:item/component_part/uiv_voltage_coil')
         .displayName('Ultra Immense Voltage Coil')
-        .tooltip('Ultimate+ ProMax Coil');
+        .tooltip('Supreme Coil');
     event.create('uxv_voltage_coil')
         .texture('kubejs:item/component_part/uxv_voltage_coil')
         .displayName('Ultra Extreme Voltage Coil')
-        .tooltip('Ultimate+++ Coil');
+        .tooltip('Supreme+ Coil');
     event.create('opv_voltage_coil')
         .texture('kubejs:item/component_part/opv_voltage_coil')
         .displayName('Overpowered Voltage Coil')
-        .tooltip('Beyond Comprehension Coil');
+        .tooltip('Godly Coil');
 
     const partTiers = ["uhv", "uev", "uiv", "uxv", "opv"];
 
