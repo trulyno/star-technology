@@ -41,11 +41,4 @@ StartupEvents.registry('item', event => {
             .texture(`kubejs:item/resource_gen/plant_balls/ball_${type}`);
     });
 
-    //cluster
-    ['coal', 'gold', 'lapis', 'pentlandite', 'realgar', 'silver', 'stibnite'].forEach(type => {
-        event.create(`${type}_cluster`)
-            .displayName(`${type.charAt(0).toUpperCase() + type.slice(1)} Ore Cluster`)
-            .texture(`kubejs:item/resource_gen/clusters/${type}_cluster`);
-    });
-
 });

@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
       },
       "fluidInTank": ('minecraft:lava 1000')
       ,
-      "result": ("kubejs:iron_mixture 1000")
+      "result": ("gtceu:iron_mixture 1000")
   });
 
   event.custom({
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
       },
       "fluidInTank": ('minecraft:lava 1000')
       ,
-      "result": ("kubejs:copper_mixture 1000")
+      "result": ("gtceu:copper_mixture 1000")
   });
 
   event.custom({
@@ -38,13 +38,13 @@ ServerEvents.recipes(event => {
       },
       "fluidInTank": ('minecraft:lava 1000')
       ,
-      "result": ("kubejs:quartz_mixture 1000")
+      "result": ("gtceu:quartz_mixture 1000")
   });
 
   //drying
   event.custom({
     "type": "exnihilosequentia:precipitate",
-    "fluid": ('kubejs:iron_mixture 1000'),
+    "fluid": ('gtceu:iron_mixture 1000'),
     "input": {
         "item": "exnihilosequentia:dust"},
     "result": 'kubejs:coagulated_iron_mixture'
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
 
   event.custom({
     "type": "exnihilosequentia:precipitate",
-    "fluid": ('kubejs:copper_mixture 1000'),
+    "fluid": ('gtceu:copper_mixture 1000'),
     "input": {
         "item": "exnihilosequentia:dust"},
     "result": 'kubejs:coagulated_copper_mixture'
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
 
   event.custom({
     "type": "exnihilosequentia:precipitate",
-    "fluid": ('kubejs:quartz_mixture 1000'),
+    "fluid": ('gtceu:quartz_mixture 1000'),
     "input": {
         "item": "exnihilosequentia:dust"},
     "result": 'kubejs:coagulated_quartz_mixture'
@@ -79,41 +79,41 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.large_stone_barrel('iron_mixture')
     .inputFluids('minecraft:lava 2000')
     .itemInputs('4x gtceu:granite_dust')
-    .outputFluids('kubejs:iron_mixture 3000')
+    .outputFluids('gtceu:iron_mixture 3000')
     .circuit(1)
     .duration(20);
   
   event.recipes.gtceu.large_stone_barrel('copper_mixture')
     .inputFluids('minecraft:lava 2000')
     .itemInputs('4x gtceu:andesite_dust')
-    .outputFluids('kubejs:copper_mixture 3000')
+    .outputFluids('gtceu:copper_mixture 3000')
     .circuit(2)
     .duration(20);
 
   event.recipes.gtceu.large_stone_barrel('quartz_mixture')
     .inputFluids('minecraft:lava 2000')
     .itemInputs('4x gtceu:diorite_dust')
-    .outputFluids('kubejs:quartz_mixture 3000')
+    .outputFluids('gtceu:quartz_mixture 3000')
     .circuit(3)
     .duration(20);
 
   //drying
   event.recipes.gtceu.large_stone_barrel('coagulated_iron_mixture')
-    .inputFluids('kubejs:iron_mixture 1000')
+    .inputFluids('gtceu:iron_mixture 1000')
     .itemInputs('minecraft:sand')
     .itemOutputs('kubejs:coagulated_iron_mixture')
     .circuit(1)
     .duration(20);
   
   event.recipes.gtceu.large_stone_barrel('coagulated_copper_mixture')
-    .inputFluids('kubejs:copper_mixture 1000')
+    .inputFluids('gtceu:copper_mixture 1000')
     .itemInputs('minecraft:sand')
     .itemOutputs('kubejs:coagulated_copper_mixture')
     .circuit(2)
     .duration(20);
 
   event.recipes.gtceu.large_stone_barrel('coagulated_quartz_mixture')
-    .inputFluids('kubejs:quartz_mixture 1000')
+    .inputFluids('gtceu:quartz_mixture 1000')
     .itemInputs('minecraft:sand')
     .itemOutputs('kubejs:coagulated_quartz_mixture')
     .circuit(3)
