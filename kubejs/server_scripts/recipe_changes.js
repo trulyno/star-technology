@@ -451,7 +451,7 @@ ServerEvents.recipes(event => {
         'UCC',
         'KH ',
         'UCC'], {
-        K: 'gtceu:zirconium_selenide_diiodide_single_cable',
+        K: 'gtceu:cerium_tritelluride_single_cable',
         U: 'gtceu:uhpic_chip',
         C: 'gtceu:europium_single_cable',
         H: 'gtceu:uhv_machine_hull'
@@ -460,7 +460,7 @@ ServerEvents.recipes(event => {
         'UCC',
         'KH ',
         'UCC'], {
-        K: 'gtceu:zirconium_selenide_diiodide_double_cable',
+        K: 'gtceu:cerium_tritelluride_double_cable',
         U: 'gtceu:uhpic_chip',
         C: 'gtceu:europium_double_cable',
         H: 'gtceu:uhv_machine_hull'
@@ -469,16 +469,16 @@ ServerEvents.recipes(event => {
         'UCC',
         'KH ',
         'UCC'], {
-        K: 'gtceu:zirconium_selenide_diiodide_quadruple_cable',
+        K: 'gtceu:cerium_tritelluride_quadruple_cable',
         U: 'gtceu:uhpic_chip',
-        C: 'gtceu:europium_single_cable',
+        C: 'gtceu:europium_quadruple_cable',
         H: 'gtceu:uhv_machine_hull'
     });
     event.shaped(Item.of('gtceu:uhv_transformer_16a'), [
         'UCC',
         'KH ',
         'UCC'], {
-        K: 'gtceu:zirconium_selenide_diiodide_hex_cable',
+        K: 'gtceu:cerium_tritelluride_hex_cable',
         U: 'gtceu:uhpic_chip',
         C: 'gtceu:europium_hex_cable',
         H: 'gtceu:uhv_machine_hull'

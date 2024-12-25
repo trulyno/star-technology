@@ -55,6 +55,13 @@ StartupEvents.registry('item', event => {
     //     .displayName('OpV Emitter')
     //     .texture('kubejs:item/emitters/opv_emitter');
 
+    event.create('uepic_wafer')
+        .displayName('UEPIC Wafer')
+        .tooltip('Raw Ultra Excessive Power Circuit')
+
+    event.create('uepic_chip')
+        .displayName('UEPIC Chip')
+        .tooltip('Ultra Excessive Power IC')
     
     event.create('draconic_wetware_circuit_board')
         .displayName('Draconic Wetware Circuit Board')
@@ -204,6 +211,27 @@ StartupEvents.registry('item', event => {
     event.create('draconic_coordinate_core')
         .displayName('Draconic Coordinate Core')
         .rarity('epic')
+        .tooltip('The Ultimate Eye of Ender')
+
+    event.create('hell_core')
+        .displayName('Hell Core')
+        .rarity('rare')
+
+    event.create('void_core')
+        .displayName('Void Core')
+        .rarity('rare')
+
+    const runic_tablet = ['1','2','3','4','5','6','complete']
+    let fragment;
+    runic_tablet.forEach(piece =>{
+        if(piece == 'complete') {fragment = 'Unified'}
+            else{fragment = `Fragment ${piece}`};
+            event.create(`runic_tablet_${piece}`)
+                .displayName(`Runic Tablet ${fragment}`)
+                .rarity('uncommon')
+                //.tecture(`kubejs:item/.../runic_tablet_${piece}`)
+
+    });
 
     //Dimensional Pinging
 

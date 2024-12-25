@@ -1302,6 +1302,14 @@ materialRegistry(event => {
         .blastTemp(8900, 'higher', VA('luv'), 4000)
         .cableProperties(V('uhv'), 8, 16, false);
 
+    event.create('cerium_tritelluride')
+        .ingot()
+        .components('1x cerium', '3x tellurium')
+        .color(0x6D8B5D)
+        .iconSet(DULL)
+        .blastTemp(10699, 'highest', VA('uv'), 3800)
+        .cableProperties(V('uev'), 6, 16, false);
+
     event.create('indium_tin_lead_cadmium_soldering_alloy')
         .ingot()
         .fluid()

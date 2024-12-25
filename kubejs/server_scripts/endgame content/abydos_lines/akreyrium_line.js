@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
     
     event.recipes.gtceu.assembly_line('leptonic_manifold_quantiser')
         .itemInputs(
-            'gtceu:uhv_machine_hull', '24x #gtceu:circuits/uhv','64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip',
+            'gtceu:uhv_machine_hull', '24x #gtceu:circuits/uhv','64x kubejs:uepic_chip', '32x kubejs:uepic_chip',
             '16x gtceu:neutronium_large_fluid_pipe', '64x gtceu:glass_lens','64x gtceu:fine_indium_tin_barium_titanium_cuprate_wire','16x gtceu:pure_netherite_foil',
             '4x gtceu:uhv_electric_pump', '6x gtceu:uhv_emitter',  '4x gtceu:uhv_fluid_regulator')
         .inputFluids('gtceu:naquadria 24048','gtceu:borosilicate_glass 36864')
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line('leptonic_convergence_injector')
         .itemInputs(
-            'gtceu:uhv_machine_hull', '24x #gtceu:circuits/uhv', '48x gtceu:crystal_soc','64x gtceu:uhpic_chip','8x gtceu:neutronium_huge_fluid_pipe', '64x gtceu:glass_lens',
+            'gtceu:uhv_machine_hull', '24x #gtceu:circuits/uhv', '48x gtceu:crystal_soc','64x kubejs:uepic_chip','8x gtceu:neutronium_huge_fluid_pipe', '64x gtceu:glass_lens',
             '4x gtceu:small_pure_netherite_gear','2x gtceu:small_zalloy_gear','6x gtceu:uhv_electric_pump','6x gtceu:uhv_electric_pump','2x gtceu:uhv_fluid_regulator')
         .inputFluids('gtceu:weapon_grade_naquadah 2304','gtceu:stellarium 2304','gtceu:twinite 20736','gtceu:utopian_akreyrium 1250')
         .itemOutputs('gtceu:leptonic_convergence_injector')

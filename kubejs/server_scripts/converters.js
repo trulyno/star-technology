@@ -371,6 +371,48 @@ ServerEvents.recipes(event => {
         C: '#gtceu:circuits/uhv',
         S: 'gtceu:uhv_machine_hull'
     });
+
+    //UEV Ancient Runicalium
+    event.shaped(Item.of('gtceu:uev_1a_energy_converter'), [
+        '   ',
+        'WCW',
+        'WSW'
+    ], {
+        W: 'gtceu:ancient_runicalium_single_wire',
+        C: '#gtceu:circuits/uev',
+        S: 'gtceu:uev_machine_hull'
+    });
+
+    event.shaped(Item.of('gtceu:uev_4a_energy_converter'), [
+        '   ',
+        'WCW',
+        'WSW'
+    ], {
+        W: 'gtceu:ancient_runicalium_quadruple_wire',
+        C: '#gtceu:circuits/uev',
+        S: 'gtceu:uev_machine_hull'
+    });
+
+    event.shaped(Item.of('gtceu:uev_8a_energy_converter'), [
+        '   ',
+        'WCW',
+        'WSW'
+    ], {
+        W: 'gtceu:ancient_runicalium_octal_wire',
+        C: '#gtceu:circuits/uev',
+        S: 'gtceu:uev_machine_hull'
+    });
+
+    event.shaped(Item.of('gtceu:uev_16a_energy_converter'), [
+        '   ',
+        'WCW',
+        'WSW'
+    ], {
+        W: 'gtceu:ancient_runicalium_hex_wire',
+        C: '#gtceu:circuits/uev',
+        S: 'gtceu:uev_machine_hull'
+    });
+
 });
 
 BlockEvents.placed(event => {

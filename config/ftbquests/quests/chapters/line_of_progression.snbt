@@ -1554,11 +1554,18 @@
 		{
 			dependencies: ["0F7A1EA1AB52F795"]
 			id: "4B83C0BEDE616449"
-			tasks: [{
-				id: "70C1C8DDF44068E1"
-				item: "gtceu:highly_advanced_soc"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "70C1C8DDF44068E1"
+					item: "gtceu:highly_advanced_soc"
+					type: "item"
+				}
+				{
+					id: "19E77406942A5F62"
+					item: "kubejs:uepic_chip"
+					type: "item"
+				}
+			]
 			title: "Highly Advanced Chips"
 			x: -2.5d
 			y: -28.0d

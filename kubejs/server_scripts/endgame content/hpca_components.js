@@ -1,10 +1,10 @@
 ServerEvents.recipes(event => {
     event.recipes.gtceu.super_pressure_heat_chamber('graphite_nanoparticle_coolant')
-        .itemInputs('64x gtceu:tiny_graphite_dust', '64x gtceu:tiny_graphite_dust')
-        .inputFluids('gtceu:utopian_akreyrium 1000', 'gtceu:pcb_coolant 1000')
-        .outputFluids('gtceu:akreyrium_pcb_graphite_nanoparticle_coolant 1000')
-        .duration(200)
-        .EUt(120000)
+        .itemInputs('32x gtceu:graphite_dust')
+        .inputFluids('gtceu:utopian_akreyrium 2000', 'gtceu:pcb_coolant 5000')
+        .outputFluids('gtceu:akreyrium_pcb_graphite_nanoparticle_coolant 4000')
+        .duration(250)
+        .EUt(GTValues.VHA[GTValues.ZPM])
 
     event.recipes.gtceu.assembly_line('nanofluidic_heat_sink')
         .itemInputs(

@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
         .duration(16000)
         .EUt(GTValues.VHA[GTValues.LuV]);
 
-    //Gate Components
+    //Classic Gate Components
     event.recipes.gtceu.assembly_line('classic_stargate_computer_core')
         .itemInputs('gtceu:stellarium_frame', '4x kubejs:computational_super_matrix', '16x gtceu:ruthenium_trinium_americium_neutronate_octal_wire', '16x gtceu:ruthenium_trinium_americium_neutronate_octal_wire',
             '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:fine_trinaquadalloy_wire', '64x gtceu:fine_trinaquadalloy_wire')
@@ -228,7 +228,66 @@ ServerEvents.recipes(event => {
         )
         .EUt(GTValues.VHA[GTValues.UHV]);
 
-        // runic plating
+    //Ancient Gate
+    
+        //Ancient Base Block
+
+        //Ancient Ring Block
+
+        //Ancient Chevron Block
+
+        //Ancient Encoded Computational Unit
+        event.recipes.gtceu.assembly_line('ancient_stargate_computer_core')
+            .itemInputs('gtceu:ancient_runicalium_frame','kubejs:classic_stargate_computer_core','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire',
+                '64x kubejs:uepic_chip','64x kubejs:uepic_chip','kubejs:draconic_coordinate_core','6x kubejs:computational_super_matrix')
+            .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 128000', 'gtceu:sterilized_growth_medium 54000')
+            .itemOutputs('kubejs:ancient_stargate_computer_core')
+            .duration(48000)
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of("kubejs:draconic_coordinate_core"))
+                    .EUt(GTValues.VHA[GTValues.UHV])
+                    .CWUt(176)
+                )
+            .EUt(GTValues.VHA[GTValues.UEV]);
+
+        //Draconic Coordinate Core
+        event.recipes.gtceu.super_pressure_heat_chamber('draconic_coordinate_core')
+            .itemInputs('kubejs:hell_core','kubejs:void_core','64x minecraft:ender_eye')
+            .inputFluids('gtceu:blaze 50000','thermal:ender 50000')
+            .itemOutputs('kubejs:draconic_coordinate_core')
+            .duration(30000)
+            .EUt(GTValues.VHA[GTValues.UEV])
+
+        //Hell Core
+        event.recipes.gtceu.assembly_line('hell_core')
+            .itemInputs('gtceu:ancient_runicalium_frame','36x gtceu:dense_obsidian_plate','64x minecraft:blaze_powder','64x minecraft:blaze_powder','48x gtceu:uhv_field_generator', '32x kubejs:uhv_catalyst_core', '32x kubejs:uhv_catalyst_core','16x gtceu:uhv_sensor')
+            .inputFluids('minecraft:lava 500000','gtceu:blaze 250000','gtceu:utopian_akreyrium 50000')
+            .itemOutputs('kubejs:hell_core')
+            .duration(18000)
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of("kubejs:nether_coordinate_crystal"))
+                    .EUt(GTValues.VHA[GTValues.UHV])
+                    .CWUt(168)
+                )
+            .EUt(GTValues.VHA[GTValues.UEV]);
+
+        //Void Core
+        event.recipes.gtceu.assembly_line('void_core')
+            .itemInputs('gtceu:ancient_runicalium_frame','36x gtceu:dense_obsidian_plate','64x minecraft:ender_pearl','64x minecraft:ender_pearl','48x gtceu:uhv_field_generator', '32x kubejs:uhv_catalyst_core', '32x kubejs:uhv_catalyst_core','16x gtceu:uhv_sensor')
+            .inputFluids('gtceu:echo_r 500000','thermal:ender 250000','gtceu:utopian_akreyrium 50000')
+            .itemOutputs('kubejs:void_core')
+            .duration(18000)
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of("kubejs:end_coordinate_crystal"))
+                    .EUt(GTValues.VHA[GTValues.UHV])
+                    .CWUt(168)
+                )
+            .EUt(GTValues.VHA[GTValues.UEV]);
+
+    // runic plating
 
         const singularity_materials = ['aluminium', 'silver', 'tin', 'platinum', 'copper', 'iron', 'lead', 'nickel', 'gold'];
 
@@ -373,4 +432,14 @@ ServerEvents.recipes(event => {
         .duration(12000)
         .EUt(GTValues.VHA[GTValues.UV]);
 
-    });
+    //Tier 2 Runes
+
+    event.recipes.gtceu.assembler('runic_tablet')
+        .itemInputs('kubejs:runic_tablet_1','kubejs:runic_tablet_2','kubejs:runic_tablet_3','kubejs:runic_tablet_4','kubejs:runic_tablet_5','kubejs:runic_tablet_6')
+        .inputFluids('gtceu:naquadria 1152')
+        .itemOutputs('kubejs:runic_tablet_complete')
+        .duration(400)
+        .EUt(GTValues.VHA[GTValues.UV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+});

@@ -78,10 +78,34 @@ ServerEvents.recipes(event => {
         .duration(920)
         .EUt(30000);
 
+    event.remove({output: 'gtceu:hot_cerium_tritelluride_ingot'})
+    event.recipes.gtceu.super_pressure_heat_chamber('hot_cerium_tritelluride_ingot')
+        .itemInputs('gtceu:cerium_dust', '3x gtceu:tellurium_dust')
+        .inputFluids('gtceu:xenon 120')
+        .itemOutputs('4x gtceu:hot_cerium_tritelluride_ingot')
+        .duration(1250)
+        .circuit(2)
+        .EUt((GTValues.VHA[GTValues.UHV]));
+
     event.recipes.gtceu.assembler('zalloy_coil')
         .itemInputs('8x gtceu:zalloy_double_wire', '8x gtceu:neutronium_foil')
         .inputFluids('gtceu:tritanium 144')
         .itemOutputs('kubejs:zalloy_coil_block')
         .duration(900)
         .EUt(GTValues.VHA[GTValues.UHV]);
+
+    event.recipes.gtceu.chemical_reactor('uepic_wafer')
+        .itemInputs('gtceu:uhpic_wafer','32x gtceu:indium_gallium_phosphide_dust')
+        .inputFluids('gtceu:neutronium 576')
+        .itemOutputs('kubejs:uepic_wafer')
+        .duration(1200)
+        .EUt((GTValues.VA[GTValues.UV]))
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.cutter('uepic_chip')
+        .itemInputs('kubejs:uepic_wafer')
+        .itemOutputs('2x kubejs:uepic_chip')
+        .duration(900)
+        .EUt((GTValues.VA[GTValues.UV]))
+        .cleanroom(CleanroomType.CLEANROOM)
 });
