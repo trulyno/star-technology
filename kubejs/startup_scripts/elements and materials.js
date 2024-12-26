@@ -1650,7 +1650,7 @@ materialRegistry(event => {
     moltenore('ilmenite', 0x630923);
     moltenore('scheelite', 0xAAB5A8);
     moltenore('tungstate', 0x89AD82);
-    liquid('molten_sheldonite_ore', 0x89CC7C, ['3x platinum', '1x nickel', '1x sulfur', '1x palladium']);
+    liquid('molten_cooperite_ore', 0x89CC7C, '1x cooperite');
     
 
 });
