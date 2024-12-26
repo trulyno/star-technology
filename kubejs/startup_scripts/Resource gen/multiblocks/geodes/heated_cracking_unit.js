@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('heated_cracking_unit')
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
-        .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifier(GTRecipeModifiers.OC_PERFECT)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('F###F', 'F###F', 'F###F', 'F###F', 'FFFFF')
             .aisle('#SSS#', '#BGB#', '#BGB#', '#BGB#', 'FSSSF')
