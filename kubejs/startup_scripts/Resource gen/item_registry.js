@@ -41,4 +41,36 @@ StartupEvents.registry('item', event => {
             .texture(`kubejs:item/resource_gen/plant_balls/ball_${type}`);
     });
 
+    //meteorites
+    ['skystone'].forEach(type => {
+        event.create(`${type}_meteorite`)
+            .displayName(`${type.charAt(0).toUpperCase() + type.slice(1)} Meteorite`)
+            .texture(`kubejs:item/resource_gen/${type}_meteorite`);
+    });
+
+    //scan results
+    event.create('undetermined_scan_file')
+        .displayName('Scan Result: Undetermined')
+        .texture('kubejs:item/resource_gen/undetermined_scan_result');
+
+    ['skystone'].forEach(type => {
+        event.create(`${type}_scan_file`)
+            .displayName(`Scan Result: ${type.charAt(0).toUpperCase() + type.slice(1)} Meteorite`)
+            .texture(`kubejs:item/resource_gen/${type}_scan_result`);
+    });
+
+});
+
+StartupEvents.registry('block', event => {
+
+    event.create('reflective_casing')
+        .hardness(10)
+        .resistance(1)
+        .lightLevel(5)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/resource_gen/reflective_casing');
+
 });
