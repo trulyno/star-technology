@@ -353,6 +353,14 @@
     "gtceu.void_excavator": "Void Excavator",
     "block.gtceu.void_excavator": "Void Excavator Controller",
 
+    "gtceu.deep_space_scanner": "Deep Space Scanner",
+    "block.gtceu.deep_space_scanner": "Deep Space Scanner Controller",
+
+    "gtceu.temp": "Void Miner",
+    "block.gtceu.temp": "Void Miner Controller",
+    "gtceu.docking_station": "Docking Station",
+    "block.gtceu.docking_station": "Docking Station Controller",
+
     "material.gtceu.iron_mixture": "Iron-Rich Mixture",
     "material.gtceu.copper_mixture": "Copper-Rich Mixture",
     "material.gtceu.quartz_mixture": "Quartz-Rich Mixture",
