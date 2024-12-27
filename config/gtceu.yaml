@@ -488,7 +488,7 @@ compat:
 
     # Enable GTEU to FE (and vice versa) Converters.
     # Default: false
-    enableFEConverters: false
+    enableFEConverters: true
 
     # Forge Energy to GTEU ratio for converting FE to EU.
     # Only affects converters.
