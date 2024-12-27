@@ -355,6 +355,7 @@
 
     "gtceu.deep_space_scanner": "Deep Space Scanner",
     "block.gtceu.deep_space_scanner": "Deep Space Scanner Controller",
+    "material.gtceu.reflective_metal": "Reflective Metal",
 
     "gtceu.drone_pad": "Drone Pad",
     "block.gtceu.drone_pad": "Drone Pad Controller",
