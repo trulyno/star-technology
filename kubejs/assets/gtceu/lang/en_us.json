@@ -356,8 +356,8 @@
     "gtceu.deep_space_scanner": "Deep Space Scanner",
     "block.gtceu.deep_space_scanner": "Deep Space Scanner Controller",
 
-    "gtceu.temp": "Void Miner",
-    "block.gtceu.temp": "Void Miner Controller",
+    "gtceu.drone_pad": "Drone Pad",
+    "block.gtceu.drone_pad": "Drone Pad Controller",
     "gtceu.docking_station": "Docking Station",
     "block.gtceu.docking_station": "Docking Station Controller",
 
