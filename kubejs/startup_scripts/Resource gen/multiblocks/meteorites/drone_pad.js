@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('drone_pad')
         .category('drone_pad')
-        .setMaxIOSize(2, 12, 0, 0)
+        .setMaxIOSize(2, 3, 1, 0)
         .setSound(GTSoundEntries.MACERATOR);
 });
 

@@ -59,6 +59,10 @@ StartupEvents.registry('item', event => {
             .texture(`kubejs:item/resource_gen/${type}_scan_result`);
     });
 
+    event.create('cargo_drone')
+        .displayName('Cargo Drone')
+        .texture('kubejs:item/resource_gen/drone_test');
+
 });
 
 StartupEvents.registry('block', event => {

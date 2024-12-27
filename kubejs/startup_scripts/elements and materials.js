@@ -1639,14 +1639,14 @@ materialRegistry(event => {
     liquid('raw_ore_slurry', 0x7B8087, '1x mystery');
     liquid('molten_ore_mixture', 0x575050, '1x mystery');
 
-    //reflective metal
+    /*/reflective metal
     event.create('reflective_metal')
         .ingot()
-        .components('5x aluminium', '3x steel', '2x star_steel')
+        .components('5x aluminium', '3x steel', '2x glowstone')
         .color(0xA1ABBC)
         .flags(plates, rod, frame)
         .iconSet(DULL)
-        .blastTemp(2000, 'low', VA('mv'), 600);
+        .blastTemp(2000, 'low', VA('mv'), 600);*/
 
     //molten ores
     function moltenore(name, color){
