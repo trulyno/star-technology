@@ -51,7 +51,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -11.5d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -81,7 +81,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -8.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -97,7 +97,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -11.5d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -126,7 +126,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -11.5d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -142,7 +142,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: -11.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -431,8 +431,8 @@
 				title: "Bacterial Breeding Vat"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: 0.0d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
@@ -491,7 +491,7 @@
 				title: "Bacterial Colonies"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: 0.5d
 			y: -2.0d
 		}
 		{
@@ -542,7 +542,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -572,6 +572,8 @@
 		{
 			dependencies: ["7AC55BA8BDD0F3D2"]
 			id: "6C8C6EA426060065"
+			shape: "gear"
+			size: 1.0d
 			tasks: [{
 				id: "1F0BE2781B9369C9"
 				title: "Dense Fusion Reactor Computer MK 1"
@@ -581,39 +583,14 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["07AD6651D0B40E22"]
 			id: "2659B3AA9108BC43"
 			tasks: [{
 				id: "617EA9C6D6E47F34"
 				title: "Exotic Gas Absorber"
 				type: "checkmark"
 			}]
-			x: -9.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["146F88E5C1119649"]
-			id: "05967D219DB5562F"
-			size: 1.0d
-			tasks: [
-				{
-					id: "3AE8048A9E498BAF"
-					item: "kubejs:runic_stabilization_plating"
-					type: "item"
-				}
-				{
-					id: "42BA63A03F06C0DB"
-					item: "kubejs:runic_energized_plating"
-					type: "item"
-				}
-				{
-					id: "592DC4F7118E4345"
-					item: "kubejs:runic_transportation_engraved_plating"
-					type: "item"
-				}
-			]
-			x: 0.5d
-			y: -2.0d
+			x: -12.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3540AE6C940F985B"]
@@ -626,7 +603,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -645,7 +622,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["05967D219DB5562F"]
+			dependencies: ["5FCA8ED151CEB5C1"]
 			id: "5DADD2204991B4D5"
 			shape: "octagon"
 			size: 1.25d
@@ -674,20 +651,20 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["269FFF23CB83529A"]
+			dependencies: ["0EEE2C3A7630EC40"]
 			id: "425A865B6B617DEC"
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "0FE7D755516D8AF8"
 				item: "kubejs:ancient_chevron_disk"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.5d
 			y: 6.0d
 		}
 		{
-			dependencies: ["05967D219DB5562F"]
+			dependencies: ["379D69A44FC5B2F2"]
 			id: "64F0BB858EEB7913"
 			shape: "gear"
 			size: 1.5d
@@ -696,8 +673,8 @@
 				title: "Runic Stargate Assembler"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: -2.0d
+			x: 6.5d
+			y: 0.0d
 		}
 		{
 			can_repeat: true
@@ -771,7 +748,7 @@
 				type: "checkmark"
 			}]
 			x: -9.5d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -782,7 +759,7 @@
 			]
 			id: "5E7153B7A10FC241"
 			shape: "gear"
-			size: 2.5d
+			size: 3.0d
 			tasks: [{
 				id: "7333173D12165CE2"
 				title: "Ancient Gate"
@@ -792,21 +769,11 @@
 			y: 2.0d
 		}
 		{
-			id: "269FFF23CB83529A"
-			tasks: [{
-				id: "21102594B484E9F4"
-				title: "Made Up material"
-				type: "checkmark"
-			}]
-			x: -5.5d
-			y: 6.0d
-		}
-		{
 			dependencies: ["5E7153B7A10FC241"]
 			icon: "minecraft:end_stone"
 			id: "4238E903C674B284"
 			shape: "octagon"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				dimension: "minecraft:the_end"
 				icon: "minecraft:end_stone"
@@ -814,15 +781,15 @@
 				type: "dimension"
 			}]
 			title: "To The End"
-			x: 5.5d
-			y: 1.0d
+			x: 6.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5E7153B7A10FC241"]
 			icon: "minecraft:netherrack"
 			id: "1E3EF64C0A4EE438"
 			shape: "octagon"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				icon: "minecraft:netherrack"
@@ -830,8 +797,8 @@
 				title: "To The Nether"
 				type: "dimension"
 			}]
-			x: 5.5d
-			y: 3.0d
+			x: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["47DF7968E9B98C65"]
@@ -842,8 +809,8 @@
 				title: "Cheaper HydroCarbons"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: 2.0d
+			x: -3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2659B3AA9108BC43"]
@@ -854,8 +821,8 @@
 				title: "Cheaper Gases"
 				type: "checkmark"
 			}]
-			x: -11.5d
-			y: 2.0d
+			x: -12.0d
+			y: -1.0d
 		}
 		{
 			id: "1959E83866AF8CD2"
@@ -864,7 +831,7 @@
 				title: "MA Parallel Multiblocks"
 				type: "checkmark"
 			}]
-			x: -11.5d
+			x: -13.5d
 			y: -1.0d
 		}
 		{
@@ -893,18 +860,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["702E5088171E1255"]
-			id: "00C566817C19F60A"
-			tasks: [{
-				id: "74D80DF6D20EE0B9"
-				item: "gtceu:cerium_tritelluride_ingot"
-				type: "item"
-			}]
-			x: -9.5d
-			y: -2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1C9396E2587051F7"]
@@ -945,7 +901,7 @@
 				type: "item"
 			}]
 			x: -11.5d
-			y: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6110BA7B3E84F06F"]
@@ -961,10 +917,7 @@
 			y: -10.0d
 		}
 		{
-			dependencies: [
-				"5BDA17962F4630EB"
-				"5BA69EDC3C223B2C"
-			]
+			dependencies: ["702E5088171E1255"]
 			id: "7AC55BA8BDD0F3D2"
 			tasks: [
 				{
@@ -981,6 +934,112 @@
 			title: "UEPIC Chips"
 			x: -7.5d
 			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2C354B0735DF8023"
+				"5FCA8ED151CEB5C1"
+			]
+			id: "379D69A44FC5B2F2"
+			tasks: [
+				{
+					id: "5F62120223B12B16"
+					item: "kubejs:runic_stabilization_casing"
+					type: "item"
+				}
+				{
+					id: "57A350EFDF749734"
+					item: "kubejs:runic_transportation_casing"
+					type: "item"
+				}
+				{
+					id: "17C629A38EDBD3E7"
+					item: "kubejs:runic_pathway_casing"
+					type: "item"
+				}
+				{
+					id: "15FAEB5EB0B5A0F5"
+					item: "kubejs:runic_energized_transportation_casing"
+					type: "item"
+				}
+				{
+					id: "3809DA190F74E7B3"
+					item: "kubejs:runic_energized_pathway_casing"
+					type: "item"
+				}
+			]
+			title: "Runic Engraved Casings"
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2C354B0735DF8023"
+				"3C3E585C933C9515"
+			]
+			id: "5FCA8ED151CEB5C1"
+			tasks: [
+				{
+					id: "1FC1EE9908D72AED"
+					item: "kubejs:runic_energized_transportation_plating"
+					type: "item"
+				}
+				{
+					id: "6052C8CF9A2A9124"
+					item: "kubejs:runic_energized_transportation_plating"
+					type: "item"
+				}
+			]
+			title: "Multi-Engraved Runic Plating"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["146F88E5C1119649"]
+			id: "2C354B0735DF8023"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0BA4AE5B74299AC9"
+				title: "Runic Enscribing and Manipulation Manifold"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6D169C5E35C9EF6C"]
+			id: "3C3E585C933C9515"
+			tasks: [
+				{
+					id: "587AE8F4904807C2"
+					item: "kubejs:runic_stabilization_plating"
+					type: "item"
+				}
+				{
+					id: "7B46FA4D5DB4B708"
+					item: "kubejs:runic_energized_plating"
+					type: "item"
+				}
+				{
+					id: "13B55066A55B19DB"
+					item: "kubejs:runic_transportation_engraved_plating"
+					type: "item"
+				}
+			]
+			title: "Advanced Engraved Runes"
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			id: "0EEE2C3A7630EC40"
+			tasks: [{
+				id: "0FA7BE16B5640784"
+				title: "Funny chevron line"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 8.0d
 		}
 	]
 	title: "Adventures in Abydos"

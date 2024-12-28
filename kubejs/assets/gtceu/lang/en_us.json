@@ -380,7 +380,19 @@
     "block.gtceu.dimensional_finder": "Dimensional Finder",
     "block.gtceu.dimensional_finder.tooltip.0": "Get Dimensionally Pinged",
 
+    "gtceu.uhv_runic_enscibe_manipulate": "Runic Inscribtion and Manipulation",
+    "block.gtceu.uhv_runic_enscibe_manipulate": "UHV Runic Inscriber and Manipulation Manifold",
+
     "material.gtceu.magnetic_pure_netherite": "Magnetic Pure Netherite",
-    "material.gtceu.ancient_runicalium": "Ancient Runicalium"
+    "material.gtceu.ancient_runicalium": "Ancient Runicalium",
+
+    "material.gtceu.sodium_borohydride": "Sodium Borohydride",
+    "material.gtceu.nitrate": "Nitrate",
+    "material.gtceu.bismuth_3_nitrate": "Bismuth (III) Nitrate",
+    "material.gtceu.sodium_nitrate": "Sodium Nitrate",
+    "material.gtceu.diborane": "Diborane (6)",
+    "material.gtceu.silicon_carbide": "Silicon Carbide",
+    "material.gtceu.bismuth_tritelluride": "Bismuth Tritelluride",
+    "material.gtceu.silicon_carbide_over_bismuth_tritelluride": "Silicon Carbide over Bismuth Tritelluride"
 
 }

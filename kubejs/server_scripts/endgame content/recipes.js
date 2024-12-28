@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.chemical_reactor('uepic_wafer')
-        .itemInputs('gtceu:uhpic_wafer','32x gtceu:indium_gallium_phosphide_dust')
+        .itemInputs('gtceu:uhpic_wafer','4x gtceu:silicon_carbide_over_bismuth_tritelluride_dust')
         .inputFluids('gtceu:neutronium 576')
         .itemOutputs('kubejs:uepic_wafer')
         .duration(1200)
