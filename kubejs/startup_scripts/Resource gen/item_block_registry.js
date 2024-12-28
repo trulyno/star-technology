@@ -91,7 +91,7 @@ StartupEvents.registry('block', event => {
     event.create('reflective_casing')
         .hardness(10)
         .resistance(1)
-        .lightLevel(5)
+        .lightLevel(5/15)
         .soundType('metal')
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")

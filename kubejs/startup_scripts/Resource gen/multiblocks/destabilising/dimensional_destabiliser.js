@@ -1,0 +1,48 @@
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    event.create('dimensional_destabiliser')
+        .category('dimensional_destabiliser')
+        .setMaxIOSize(3, 1, 3, 1)
+        .setSound(GTSoundEntries.COMPUTATION);
+});
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('dimensional_destabiliser', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('dimensional_destabiliser')
+        .recipeModifier(GTRecipeModifiers.OC_PERFECT)
+        .appearanceBlock(GCYMBlocks.CASING_STRESS_PROOF)
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle("     AABAA     ", "     AABAA     ", "       B       ", "               ", "               ", "               ", "               ", "               ", "       C       ", "       C       ", "       C       ", "       C       ", "       C       ", "               ", "               ", "               ", "               ", "               ") 
+			.aisle("   AAAAAAAAA   ", "   AAAAAAAAA   ", "               ", "       B       ", "       B       ", "       C       ", "       C       ", "       C       ", "       C       ", "       D       ", "       D       ", "       D       ", "       C       ", "       C       ", "       C       ", "       C       ", "               ", "               ") 
+			.aisle("  AAAAAAAAAAA  ", "  AAAAAAAAAAA  ", "               ", "       C       ", "       C       ", "       C       ", "       D       ", "       D       ", "       D       ", "               ", "               ", "               ", "       D       ", "       D       ", "       D       ", "       C       ", "       C       ", "       C       ") 
+			.aisle(" AAAAAAAAAAAAA ", " AAAAEEAEEAAAA ", "       C       ", "       C       ", "       D       ", "       D       ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       D       ", "       D       ", "       D       ") 
+			.aisle(" AAAAAAAAAAAAA ", " AAAEAAAAAEAAA ", "       C       ", "       D       ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ") 
+			.aisle("AAAAAAAAAAAAAAA", "AAAEAAAAAAAEAAA", "       D       ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ") 
+			.aisle("AAAAAAAAAAAAAAA", "AAAEAAAAAAAEAAA", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       F       ", "       F       ", "       F       ", "               ", "               ", "               ", "               ", "               ", "               ") 
+			.aisle("BAAAAAAAAAAAAAB", "BAAAAAAAAAAAAAB", "B  CCD Z DCC  B", " BCCD     DCCB ", " BCD       DCB ", " CCD       DCC ", " CD    F    DC ", " CD    F    DC ", "CCD    F    DCC", "CD    FGF    DC", "CD    FGF    DC", "CD    FGF    DC", "CCD    F    DCC", " CD    F    DC ", " CD    F    DC ", " CCD       DCC ", "  CD       DC  ", "  CD       DC  ") 
+			.aisle("AAAAAAAAAAAAAAA", "AAAEAAAAAAAEAAA", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       F       ", "       F       ", "       F       ", "               ", "               ", "               ", "               ", "               ", "               ") 
+			.aisle("AAAAAAAAAAAAAAA", "AAAEAAAAAAAEAAA", "       D       ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ") 
+			.aisle(" AAAAAAAAAAAAA ", " AAAEAAAAAEAAA ", "       C       ", "       D       ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ") 
+			.aisle(" AAAAAAAAAAAAA ", " AAAAEEAEEAAAA ", "       C       ", "       C       ", "       D       ", "       D       ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       D       ", "       D       ", "       D       ") 
+			.aisle("  AAAAAAAAAAA  ", "  AAAAAAAAAAA  ", "               ", "       C       ", "       C       ", "       C       ", "       D       ", "       D       ", "       D       ", "               ", "               ", "               ", "       D       ", "       D       ", "       D       ", "       C       ", "       C       ", "       C       ") 
+			.aisle("   AAAAAAAAA   ", "   AAAAAAAAA   ", "               ", "       B       ", "       B       ", "       C       ", "       C       ", "       C       ", "       C       ", "       D       ", "       D       ", "       D       ", "       C       ", "       C       ", "       C       ", "       C       ", "               ", "               ") 
+			.aisle("     AABAA     ", "     AABAA     ", "       B       ", "               ", "               ", "               ", "               ", "               ", "       C       ", "       C       ", "       C       ", "       C       ", "       C       ", "               ", "               ", "               ", "               ", "               ")
+			.where("Z", Predicates.controller(Predicates.blocks(definition.get())))
+			.where("A", Predicates.blocks("gtceu:stress_proof_casing")
+				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(1))
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(1))
+				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2)))
+			.where("B", Predicates.blocks("gtceu:inert_machine_casing"))
+			.where("C", Predicates.blocks("gtceu:high_temperature_smelting_casing"))
+			.where("D", Predicates.blocks("gtceu:nonconducting_casing"))
+			.where("E", Predicates.blocks("gtceu:laser_safe_engraving_casing"))
+			.where("F", Predicates.blocks("thermal_extra:shellite_glass"))
+			.where("G", Predicates.blocks("gtceu:white_borderless_lamp")) 
+			.where(" ", Predicates.any())
+			.build())
+		.workableCasingRenderer("gtceu:block/casings/gcym/stress_proof_casing",
+			"gtceu:block/multiblock/implosion_compressor", false);
+});
