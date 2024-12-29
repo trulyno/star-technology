@@ -1693,7 +1693,7 @@ materialRegistry(event => {
 
     event.create("purified_naquadah")
         .gem()
-        .color(0x00000)
+        .color(0x000807)
         .components('1x purified_naquadah') 
         .flags(no_decomp);
 
