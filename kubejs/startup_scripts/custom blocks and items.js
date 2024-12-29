@@ -55,6 +55,19 @@ StartupEvents.registry('item', event => {
     //     .displayName('OpV Emitter')
     //     .texture('kubejs:item/emitters/opv_emitter');
 
+    event.create('3d_nand_chip')
+        .displayName('3D-NAND Memory Chip Array')
+
+    event.create('3d_nor_chip')
+        .displayName('3D-NOR Memory Chip Array')
+
+    event.create('qram_wafer')
+        .displayName('qRAM Wafer')
+
+    event.create('qram_chip')
+        .displayName('qRAM Chip')
+
+
     event.create('uepic_wafer')
         .displayName('UEPIC Wafer')
         .tooltip('Raw Ultra Excessive Power Circuit')

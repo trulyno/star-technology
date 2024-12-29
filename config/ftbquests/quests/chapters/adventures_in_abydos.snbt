@@ -35,8 +35,8 @@
 				item: "kubejs:uhv_computational_matrix"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -10.0d
+			x: -15.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -50,8 +50,8 @@
 				item: "kubejs:uhv_transmission_assembly"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -12.0d
+			x: -11.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -65,8 +65,8 @@
 				item: "kubejs:uhv_precision_drive_mechanism"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -11.0d
+			x: -15.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -80,8 +80,8 @@
 				item: "kubejs:uhv_microfluidic_flow_valve"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -8.0d
+			x: -15.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -96,8 +96,8 @@
 				item: "kubejs:uhv_super_magnetic_core"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -12.0d
+			x: -14.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -110,8 +110,8 @@
 				item: "kubejs:uhv_catalyst_core"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -9.0d
+			x: -15.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -125,8 +125,8 @@
 				item: "kubejs:uhv_high_strength_panel"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -12.0d
+			x: -12.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -141,8 +141,8 @@
 				item: "kubejs:uhv_micropower_router"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -12.0d
+			x: -13.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -152,8 +152,8 @@
 				item: "gtceu:zapolgium_ingot"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -8.0d
+			x: -11.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["556CEA4BA5CC9D73"]
@@ -163,8 +163,8 @@
 				item: "gtceu:zalloy_ingot"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -10.0d
+			x: -13.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -185,8 +185,8 @@
 				item: "gtceu:selenium_dust"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -6.0d
+			x: -7.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -220,8 +220,8 @@
 				item: "gtceu:zircalloy_4_ingot"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -8.0d
+			x: -11.5d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -236,8 +236,8 @@
 				item: "gtceu:uhv_electric_motor"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -13.0d
+			x: -13.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["05EEBCD256194C78"]
@@ -247,8 +247,8 @@
 				item: "gtceu:uhv_electric_pump"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -8.0d
+			x: -16.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0A321FE2FB18EA8B"]
@@ -258,8 +258,8 @@
 				item: "gtceu:uhv_conveyor_module"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -11.5d
+			x: -16.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["0A321FE2FB18EA8B"]
@@ -269,8 +269,8 @@
 				item: "gtceu:uhv_electric_piston"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -10.5d
+			x: -16.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -283,8 +283,8 @@
 				item: "gtceu:uhv_robot_arm"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -11.0d
+			x: -17.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -297,8 +297,8 @@
 				item: "gtceu:uhv_field_generator"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -9.0d
+			x: -17.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["77E6700262CDB4E0"]
@@ -308,8 +308,8 @@
 				item: "gtceu:uhv_emitter"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -9.5d
+			x: -16.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["77E6700262CDB4E0"]
@@ -319,8 +319,8 @@
 				item: "gtceu:uhv_sensor"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -8.5d
+			x: -16.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -334,8 +334,8 @@
 				item: "gtceu:iron_selenide_over_strontium_titanium_oxide_ingot"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -6.0d
+			x: -7.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -345,8 +345,8 @@
 				item: "gtceu:strontium_dust"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -4.0d
+			x: -5.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -360,8 +360,8 @@
 				item: "gtceu:zirconium_selenide_diiodide_ingot"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -8.0d
+			x: -9.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["5B53286E09E6E656"]
@@ -555,8 +555,8 @@
 				item: "gtceu:ancient_runicalium_ingot"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -10.0d
+			x: -13.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["30C974448C57F0EC"]
@@ -566,31 +566,32 @@
 				item: "gtceu:ancient_runicalium_single_wire"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -10.0d
+			x: -15.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["7AC55BA8BDD0F3D2"]
 			id: "6C8C6EA426060065"
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "1F0BE2781B9369C9"
 				title: "Dense Fusion Reactor Computer MK 1"
 				type: "checkmark"
 			}]
 			x: -9.5d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["7AC55BA8BDD0F3D2"]
 			id: "2659B3AA9108BC43"
 			tasks: [{
 				id: "617EA9C6D6E47F34"
 				title: "Exotic Gas Absorber"
 				type: "checkmark"
 			}]
-			x: -12.0d
-			y: 0.5d
+			x: -9.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3540AE6C940F985B"]
@@ -654,7 +655,7 @@
 			dependencies: ["0EEE2C3A7630EC40"]
 			id: "425A865B6B617DEC"
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "0FE7D755516D8AF8"
 				item: "kubejs:ancient_chevron_disk"
@@ -692,8 +693,8 @@
 				title: "Get Nether Coordinates"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: 2.0d
+			x: -11.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -707,7 +708,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -717,7 +718,7 @@
 				item: "kubejs:nether_coordinate_crystal"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -9.5d
 			y: 2.0d
 		}
 		{
@@ -729,7 +730,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
@@ -748,7 +749,7 @@
 				type: "checkmark"
 			}]
 			x: -9.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -821,8 +822,8 @@
 				title: "Cheaper Gases"
 				type: "checkmark"
 			}]
-			x: -12.0d
-			y: -1.0d
+			x: -11.5d
+			y: -4.0d
 		}
 		{
 			id: "1959E83866AF8CD2"
@@ -831,8 +832,8 @@
 				title: "MA Parallel Multiblocks"
 				type: "checkmark"
 			}]
-			x: -13.5d
-			y: -1.0d
+			x: -9.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -845,7 +846,7 @@
 				item: "kubejs:void_core"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -3.5d
 			y: 4.0d
 		}
 		{
@@ -860,7 +861,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1C9396E2587051F7"]
@@ -874,7 +875,7 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
+			x: -5.5d
 			y: 6.0d
 		}
 		{
@@ -885,7 +886,7 @@
 				item: "kubejs:draconic_wetware_printed_circuit_board"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -7.5d
 			y: 6.0d
 		}
 		{
@@ -900,8 +901,8 @@
 				item: "kubejs:draconic_wetware_circuit_board"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 4.0d
+			x: -9.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6110BA7B3E84F06F"]
@@ -913,8 +914,8 @@
 				item: "kubejs:zalloy_coil_block"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -10.0d
+			x: -13.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["702E5088171E1255"]
