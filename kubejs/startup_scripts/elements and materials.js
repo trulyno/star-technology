@@ -1694,7 +1694,7 @@ materialRegistry(event => {
     event.create("purified_naquadah")
         .gem()
         .color(0x000807)
-        .components('1x purified_naquadah') 
+        .element(GTElements.get('purified_naquadah')) 
         .flags(no_decomp);
 
 });
