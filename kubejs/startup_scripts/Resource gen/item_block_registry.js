@@ -41,22 +41,19 @@ StartupEvents.registry('item', event => {
             .texture(`kubejs:item/resource_gen/plant_balls/ball_${type}`);
     });
 
-    //meteorites
-    ['skystone'].forEach(type => {
-        event.create(`${type}_meteorite`)
-            .displayName(`${type.charAt(0).toUpperCase() + type.slice(1)} Meteorite`)
-            .texture(`kubejs:item/resource_gen/${type}_meteorite`);
-    });
-
     //scan results
     event.create('undetermined_scan_file')
         .displayName('Scan Result: Undetermined')
         .texture('kubejs:item/resource_gen/undetermined_scan_result');
 
-    ['skystone'].forEach(type => {
+    ['skystone', 'pollucite', 'lepidolite', 'bastnasite'].forEach(type => {
         event.create(`${type}_scan_file`)
             .displayName(`Scan Result: ${type.charAt(0).toUpperCase() + type.slice(1)} Meteorite`)
             .texture(`kubejs:item/resource_gen/${type}_scan_result`);
+
+        event.create(`${type}_meteorite`)
+            .displayName(`${type.charAt(0).toUpperCase() + type.slice(1)} Meteorite`)
+            .texture(`kubejs:item/resource_gen/${type}_meteorite`);
     });
 
     event.create('cargo_drone')

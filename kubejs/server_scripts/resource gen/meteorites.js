@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    /*/reflective metal
+    /*/reflective metal //hardmode :)
     event.recipes.gtceu.mixer('reflective_metal_dust')
         .itemInputs('5x gtceu:aluminium_dust', '3x gtceu:steel_dust', '2x minecraft:glowstone')
         .itemOutputs('10x gtceu:reflective_metal_dust')
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(60);
 
-        //scanner
+    //scanner
     function scan(type, catalyst, coolant, duration, energy){
         event.recipes.gtceu.deep_space_scanner(type)
             .itemInputs('kubejs:undetermined_scan_file', catalyst)
@@ -61,7 +61,10 @@ ServerEvents.recipes(event => {
             .EUt(energy);
     };
 
-    scan('skystone', 'ae2:fluix_block', 'nitrogen', 600, 80);
+    scan('skystone', 'ae2:fluix_block', 'nitrogen', 1200, 80);
+    scan('pollucite', 'gtceu:caesium_dust', 'helium', 6000, 512);
+    scan('lepidolite', 'gtceu:lithium_dust', 'helium', 6000, 512);
+    scan('bastnasite', 'gtceu:cerium_dust', 'helium', 6000, 512);
 
     event.recipes.gtceu.assembler('cargo_drone')
         .itemInputs('gtceu:power_thruster', '2x #gtceu:circuits/mv', 'gtceu:plastic_printed_circuit_board', '5x gtceu:double_stainless_steel_plate')
@@ -70,37 +73,48 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(100);
 
-    function drone(meteorite, file, fuel, duration, energy){
-        event.recipes.gtceu.drone_pad(`${meteorite}`)
-            .itemInputs('kubejs:cargo_drone', `kubejs:${file}_scan_file`)
+    function drone(meteorite, fuel, duration, energy){
+        event.recipes.gtceu.drone_pad(`${meteorite}_meteorite`)
+            .itemInputs('kubejs:cargo_drone', `kubejs:${meteorite}_scan_file`)
             .inputFluids(`gtceu:rocket_fuel ${fuel}`)
-            .itemOutputs(`3x kubejs:${meteorite}`)
+            .itemOutputs(`3x kubejs:${meteorite}_meteorite`)
             .duration(duration)
             .EUt(energy);
 
-        event.recipes.gtceu.docking_station(meteorite)
+        event.recipes.gtceu.docking_station(`${meteorite}_meteorite`)
             .itemInputs('kubejs:cargo_drone', `kubejs:${meteorite}_scan_file`)
             .inputFluids(`gtceu:rocket_fuel ${fuel}`)
-            .itemOutputs(`3x kubejs:${meteorite}`)
+            .itemOutputs(`3x kubejs:${meteorite}_meteorite`)
             .duration(duration)
             .EUt(energy);
     };
 
-    drone('skystone_meteorite', 'skystone', 4000, 6000, 120);
+    drone('skystone', 4000, 6000, 128);
+    drone('pollucite', 8000, 6000, 512);
+    drone('lepidolite', 8000, 6000, 512);
+    drone('bastnasite', 8000, 6000, 512);
 
-    event.recipes.gtceu.macerator('skystone_meteorite')
-        .itemInputs('kubejs:skystone_meteorite')
-        .itemOutputs('64x ae2:sky_stone_block', '5x gtceu:crushed_certus_quartz_ore', '2x gtceu:boron_dust')
-        .duration(1200)
-        .EUt(110);
+    function macerate(type, rock, ore, dust, duration, eu){
+        event.recipes.gtceu.macerator(`${type}_meteorite`)
+            .itemInputs(`kubejs:${type}_meteorite`)
+            .itemOutputs(`64x ${rock}`, `5x gtceu:crushed_${ore}_ore`, `2x gtceu:${dust}_dust`)
+            .duration(duration)
+            .EUt(eu);
+    };
+
+    macerate('skystone', 'ae2:sky_stone_block', 'certus_quartz', 'boron', 1200, 128);
+    macerate('pollucite', 'gtceu:granite_apatite_ore', 'pollucite', 'silicon_dioxide', 1200, 512);
+    macerate('lepidolite', 'gtceu:granite_topaz_ore', 'lepidolite', 'spodumene', 1200, 512);
+    macerate('bastnasite', 'gtceu:granite_bauxite_ore', 'bastnasite', 'monazite', 1200, 512);
+
+    //skystone stuff
+    event.remove({ id: 'ae2:inscriber/sky_stone_dust'});
+    event.remove({ id: 'create:milling/compat/ae2/sky_stone_block'});
 
     event.recipes.gtceu.macerator('sky_stone_block')
         .itemInputs('ae2:sky_dust')
         .itemOutputs('ae2:sky_stone_block')
         .duration(1200)
         .EUt(110);
-
-    event.remove({ id: 'ae2:inscriber/sky_stone_dust'});
-    event.remove({ id: 'create:milling/compat/ae2/sky_stone_block'});
 
 });
