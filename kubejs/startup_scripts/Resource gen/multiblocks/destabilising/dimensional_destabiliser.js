@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('dimensional_destabiliser')
         .category('dimensional_destabiliser')
-        .setMaxIOSize(3, 1, 3, 1)
+        .setMaxIOSize(2, 2, 2, 2)
         .setSound(GTSoundEntries.COMPUTATION);
 });
 

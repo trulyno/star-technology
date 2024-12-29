@@ -116,7 +116,7 @@
     "material.gtceu.inconel_625": "Inconel 625",
     "material.gtceu.nuclear_steam": "Nuclear Steam",
     "material.gtceu.hot_sodium_potassium": "Hot Sodium Potassium",
-    "material.gtceu.hot_pcbcoolant": "Hot PCB Coolant",
+    "material.gtceu.hot_pcb_coolant": "Hot PCB Coolant",
     "material.gtceu.perchloric_acid": "Perchloric Acid",
     "material.gtceu.zapolgium": "Zapolgium",
     "material.gtceu.magnetic_zapolgium": "Zapolgium",
@@ -362,6 +362,9 @@
     "gtceu.docking_station": "Docking Station",
     "block.gtceu.docking_station": "Docking Station Controller",
 
+    "gtceu.dimensional_destabiliser": "Dimensional Destabiliser",
+    "block.gtceu.dimensional_destabiliser": "Dimensional Destabiliser Controller",
+
     "material.gtceu.iron_mixture": "Iron-Rich Mixture",
     "material.gtceu.copper_mixture": "Copper-Rich Mixture",
     "material.gtceu.quartz_mixture": "Quartz-Rich Mixture",
@@ -375,6 +378,10 @@
     "material.gtceu.molten_scheelite_ore": "Molten Scheelite Ore",
     "material.gtceu.molten_tungstate_ore": "Molten Tungstate Ore",
     "material.gtceu.molten_cooperite_ore": "Molten Sheldonite Ore",
+    "material.gtceu.chromite_sludge": "Chromite Sludge",
+    "material.gtceu.monazite_sludge": "Monazite Sludge",
+    "material.gtceu.vanadium_magnetite_sludge": "Vanadium Magnetite Sludge",
+    "material.gtceu.rare_metallic_residue": "Rare Metallic Residue",
     
     "gtceu.solid_blast_furnace": "Solid Blast Furnace",
     "block.gtceu.solid_blast_furnace": "Solid Blast Furnace Controller",

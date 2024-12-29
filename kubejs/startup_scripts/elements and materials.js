@@ -639,7 +639,7 @@ materialRegistry(event => {
         .color(0x82fcc3)
         .flags(no_decomp);
 
-    event.create('hot_pcbcoolant')
+    event.create('hot_pcb_coolant')
         .fluid()
         .components('1x pcb_coolant', '1x mystery')
         .color(0xc9ca81)
@@ -1629,15 +1629,21 @@ materialRegistry(event => {
         event.create(name)
             .fluid()
             .components(composition)
-            .color(color);
+            .color(color)
+            .flags(no_decomp);
+    };
+
+    function dust(name, color, composition){
+        event.create(name)
+            .dust()
+            .color(color)
+            .components(composition) 
+            .flags(no_decomp);
     };
 
     liquid('iron_mixture', 0xC42626, '1x mystery');
     liquid('copper_mixture', 0xC86524, '1x mystery');
     liquid('quartz_mixture', 0xABC5E0, '1x mystery');
-    liquid('rare_ore_residue', 0x556278, '1x mystery');
-    liquid('raw_ore_slurry', 0x7B8087, '1x mystery');
-    liquid('molten_ore_mixture', 0x575050, '1x mystery');
 
     /*/reflective metal
     event.create('reflective_metal')
@@ -1647,6 +1653,17 @@ materialRegistry(event => {
         .flags(plates, rod, frame)
         .iconSet(DULL)
         .blastTemp(2000, 'low', VA('mv'), 600);*/
+
+    liquid('rare_ore_residue', 0x556278, '1x mystery');
+
+    dust('chromite_sludge', 0x4C3C4C, ['2x chromite', '1x mystery'])
+    dust('monazite_sludge', 0xCCEC94, ['2x monazite', '1x mystery'])
+    dust('vanadium_magnetite_sludge', 0x1C1C2C, ['2x vanadium_magnetite', '1x mystery'])
+
+    dust('rare_metallic_residue', 0x515755, ['1x silver', '2x calcite'])
+
+    liquid('raw_ore_slurry', 0x7B8087, '1x mystery');
+    liquid('molten_ore_mixture', 0x575050, '1x mystery');
 
     //molten ores
     function moltenore(name, color){
