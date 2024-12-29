@@ -1676,6 +1676,9 @@ materialRegistry(event => {
     dust('rare_metallic_residue', 0x515755, ['1x silver', '2x calcite'])
 
     liquid('raw_ore_slurry', 0x7B8087, '1x mystery');
+    liquid('mixed_mineral_residue', 0x566E6E, '1x mystery');
+    liquid('sulfuric_mineral_mixture', 0xE34f1E, '1x mystery');
+    liquid('oxygenous_mineral_mixture', 0x359696, '1x mystery');
     liquid('molten_ore_mixture', 0x575050, '1x mystery');
 
     //molten ores

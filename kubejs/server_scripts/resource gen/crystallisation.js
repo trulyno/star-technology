@@ -1,13 +1,5 @@
 ServerEvents.recipes(event => {
 
-    //mixture
-    event.recipes.gtceu.centrifuge('raw_ore_slurry')
-        .inputFluids('gtceu:raw_ore_slurry 1250')
-        .itemOutputs('gtceu:small_rare_earth_dust')
-        .outputFluids('gtceu:molten_ore_mixture 1000')
-        .duration(240)
-        .EUt(512);
-
     //distilling
     event.recipes.gtceu.distillation_tower('molten_ore_mixture')
         .inputFluids('gtceu:molten_ore_mixture 1000')

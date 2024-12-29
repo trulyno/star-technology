@@ -78,6 +78,7 @@
     "block.gtceu.uv_essence_burner": "UV Essence Burner",
     "block.gtceu.essence_replicator": "Essence Replicator Controller",
     "block.gtceu.essence_enchancer": "Essence Enchancer Controller",
+    "gtceu.tree_greenhouse": "Tree Greenhouse",
     "block.gtceu.tree_greenhouse": "Tree Greenhouse Controller",
     "gtceu.essence_burning": "Essence Burning",
     "gtceu.essence_enchancing": "Essence Enchancing",
@@ -331,6 +332,14 @@
     "block.gtceu.mv_kinetic_mixer": "MV Kinetic Mixer",
     "block.gtceu.hv_kinetic_mixer": "HV Kinetic Mixer",
     "block.gtceu.ev_kinetic_mixer": "EV Kinetic Mixer",
+    
+    "gtceu.solid_blast_furnace": "Solid Blast Furnace",
+    "block.gtceu.solid_blast_furnace": "Solid Blast Furnace Controller",
+    "block.gtceu.solid_blast_furnace.@Tooltip0": "§7An upgraded Primitive Blast Furnace",
+
+    "gtceu.jei.ore_vein.zapolite_vein": "Abydos Zapolite Vein",
+
+    
 
     "gtceu.kinetic_filtrator": "Kinetic Filtrator",
     "block.gtceu.kinetic_filtrator": "Kinetic Filtrator Controller",
@@ -373,6 +382,9 @@
     "material.gtceu.quartz_mixture": "Quartz-Rich Mixture",
     "material.gtceu.rare_ore_residue": "Rare Ore Residue",
     "material.gtceu.raw_ore_slurry": "Raw Ore Slurry",
+    "material.gtceu.mixed_mineral_residue": "Mixed Mineral Residue",
+    "material.gtceu.sulfuric_mineral_mixture": "Sulfuric Mineral Mixture",
+    "material.gtceu.oxygenous_mineral_mixture": "Oxygenous Mineral Mixture",
     "material.gtceu.molten_ore_mixture": "Molten Ore Mixture",
     "material.gtceu.molten_bauxite_ore": "Molten Bauxite Ore",
     "material.gtceu.molten_pitchblende_ore": "Molten Pitchblende Ore",
@@ -385,11 +397,5 @@
     "material.gtceu.monazite_sludge": "Monazite Sludge",
     "material.gtceu.vanadium_magnetite_sludge": "Vanadium Magnetite Sludge",
     "material.gtceu.rare_metallic_residue": "Rare Metallic Residue",
-    "material.gtceu.purified_naquadah": "Purified Naquadah",
-    
-    "gtceu.solid_blast_furnace": "Solid Blast Furnace",
-    "block.gtceu.solid_blast_furnace": "Solid Blast Furnace Controller",
-    "block.gtceu.solid_blast_furnace.@Tooltip0": "§7An upgraded Primitive Blast Furnace",
-
-    "gtceu.jei.ore_vein.zapolite_vein": "Abydos Zapolite Vein"
+    "material.gtceu.purified_naquadah": "Purified Naquadah"
 }
