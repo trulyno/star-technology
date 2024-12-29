@@ -365,6 +365,9 @@
     "gtceu.dimensional_destabiliser": "Dimensional Destabiliser",
     "block.gtceu.dimensional_destabiliser": "Dimensional Destabiliser Controller",
 
+    "gtceu.vibration_laser_engraver": "Vibration Laser Engraver",
+    "block.gtceu.vibration_laser_engraver": "Vibration Laser Engraver Controller",
+
     "material.gtceu.iron_mixture": "Iron-Rich Mixture",
     "material.gtceu.copper_mixture": "Copper-Rich Mixture",
     "material.gtceu.quartz_mixture": "Quartz-Rich Mixture",
@@ -382,6 +385,7 @@
     "material.gtceu.monazite_sludge": "Monazite Sludge",
     "material.gtceu.vanadium_magnetite_sludge": "Vanadium Magnetite Sludge",
     "material.gtceu.rare_metallic_residue": "Rare Metallic Residue",
+    "material.gtceu.purified_naquadah": "Purified Naquadah",
     
     "gtceu.solid_blast_furnace": "Solid Blast Furnace",
     "block.gtceu.solid_blast_furnace": "Solid Blast Furnace Controller",

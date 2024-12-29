@@ -237,7 +237,7 @@ elementRegistry(event => {
             .protons(p)
             .neutrons(n)
             .symbol(sym);
-    }
+    };
     elem('mystery', -1, -1, '?');
 
     // Netherite Line
@@ -1623,6 +1623,19 @@ materialRegistry(event => {
 });
 
 //EPSILON Resource Gen stuff
+elementRegistry(event => {
+    // For the material that will have ? as it's atomic symbol in chemical formulas
+    const elem = (name, p, n, sym) => {
+        event.create(name)
+            .protons(p)
+            .neutrons(n)
+            .symbol(sym);
+    };
+
+    elem('purified_naquadah', 1, 1, '*Nq*');
+
+});
+
 materialRegistry(event => {
 
     function liquid(name, color, composition){
@@ -1677,5 +1690,11 @@ materialRegistry(event => {
     moltenore('scheelite', 0xAAB5A8);
     moltenore('tungstate', 0x89AD82);
     liquid('molten_cooperite_ore', 0x89CC7C, '1x cooperite');
+
+    event.create("purified_naquadah")
+        .gem()
+        .color(0x00000)
+        .components('1x purified_naquadah') 
+        .flags(no_decomp);
 
 });

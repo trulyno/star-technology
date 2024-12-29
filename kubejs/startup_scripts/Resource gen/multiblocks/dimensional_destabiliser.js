@@ -44,5 +44,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.where(" ", Predicates.any())
 			.build())
 		.workableCasingRenderer("gtceu:block/casings/gcym/stress_proof_casing",
-			"gtceu:block/multiblock/implosion_compressor", false);
+			"gtceu:block/multiblock/fusion_reactor", false);
 });
