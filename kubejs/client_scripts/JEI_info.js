@@ -1,7 +1,7 @@
 JEIEvents.information(event => {
 
     event.addItem('kubejs:ball_plants', [
-        'Right-click a grass block with a stone hoe to have a chance to obtain this item\n', 
+        'Right-click a grass block with a stick to have a chance to obtain this item\n', 
         'Right-click a grindstone with this to have a chance to obtain plants\n', 
         'Items & odds:\n',
         '   - Bamboo: 15%\n',
@@ -15,7 +15,7 @@ JEIEvents.information(event => {
     ]);
 
     event.addItem('kubejs:ball_seeds', [
-        'Right-click a grass block with a stone hoe to have a chance to obtain this item\n', 
+        'Right-click a grass block with a stick to have a chance to obtain this item\n', 
         'Right-click a grindstone with this to have a chance to obtain seeds\n', 
         'Items & odds:\n',
         '   - Wheat Seeds: 5%\n',
@@ -28,7 +28,7 @@ JEIEvents.information(event => {
     ]);
 
     event.addItem('kubejs:ball_roots', [
-        'Right-click a grass block with a stone hoe to have a chance to obtain this item\n', 
+        'Right-click a grass block with a stick to have a chance to obtain this item\n', 
         'Right-click a grindstone with this to have a chance to obtain roots\n', 
         'Items & odds:\n',
         '   - Carrot: 10%\n',

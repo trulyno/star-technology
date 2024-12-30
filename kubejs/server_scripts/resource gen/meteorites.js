@@ -75,21 +75,23 @@ ServerEvents.recipes(event => {
 
     function drone(meteorite, fuel, duration, energy){
         event.recipes.gtceu.drone_pad(`${meteorite}_meteorite`)
-            .itemInputs('kubejs:cargo_drone', `kubejs:${meteorite}_scan_file`)
+            .notConsumable(`kubejs:${meteorite}_scan_file`)
+            .itemInputs('kubejs:cargo_drone')
             .inputFluids(`gtceu:rocket_fuel ${fuel}`)
             .itemOutputs(`3x kubejs:${meteorite}_meteorite`)
             .duration(duration)
             .EUt(energy);
 
         event.recipes.gtceu.docking_station(`${meteorite}_meteorite`)
-            .itemInputs('kubejs:cargo_drone', `kubejs:${meteorite}_scan_file`)
+            .notConsumable(`kubejs:${meteorite}_scan_file`)
+            .itemInputs('kubejs:cargo_drone')
             .inputFluids(`gtceu:rocket_fuel ${fuel}`)
             .itemOutputs(`3x kubejs:${meteorite}_meteorite`)
             .duration(duration)
             .EUt(energy);
     };
 
-    drone('skystone', 4000, 6000, 128);
+    drone('skystone', 4000, 6000, 80);
     drone('pollucite', 8000, 6000, 512);
     drone('lepidolite', 8000, 6000, 512);
     drone('bastnasite', 8000, 6000, 512);

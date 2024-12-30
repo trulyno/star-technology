@@ -11,12 +11,13 @@ ServerEvents.recipes(event => {
 
     //Multi for greens
     event.recipes.gtceu.large_greens_extractor('harvesting')
-        .itemInputs('minecraft:stone_hoe', 'gtceu:fertilizer')
+        .notConsumable('minecraft:stone_hoe')
+        .chancedInput('4x gtceu:fertilizer', 2500, 0)
         .inputFluids('minecraft:water 1000')
-        .chancedOutput('kubejs:ball_plants', 7000, 1000)
-        .chancedOutput('kubejs:ball_seeds', 7000, 1000)
-        .chancedOutput('kubejs:ball_roots', 7000, 1000)
-        .duration(80);
+        .chancedOutput('kubejs:ball_plants', 7000, 0)
+        .chancedOutput('kubejs:ball_seeds', 7000, 0)
+        .chancedOutput('kubejs:ball_roots', 7000, 0)
+        .duration(350);
 
     //making compost
     event.custom({
@@ -83,7 +84,7 @@ ServerEvents.recipes(event => {
 
 //getting greens
 BlockEvents.rightClicked('minecraft:grass_block', event => {
-    if (event.player.isCrouching() && event.player.getMainHandItem() == 'minecraft:stone_hoe') {
+    if (event.player.isCrouching() && event.player.getMainHandItem() == 'minecraft:stick') {
         if (Math.random() < 0.10) {
             event.block.popItemFromFace(Item.of('kubejs:ball_plants'), 'up');
         }
