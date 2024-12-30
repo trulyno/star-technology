@@ -90,7 +90,7 @@
 #Sieve Configs
 [sieve]
 	#Sieve will get results for all mesh tiers below the one in the sieve (Default: true)
-	flattenSieveRecipes = true
+	flattenSieveRecipes = false
 	#Defines the radius that a sieve will attempt to activate other sieves (Default: 2)
 	#Range: 0 ~ 5
 	sieveRange = 2

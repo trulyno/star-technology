@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+/*ServerEvents.recipes(event => {
 
     //soul infused glass
     event.custom({
@@ -114,4 +114,4 @@ ServerEvents.recipes(event => {
         //.rpm(128)
         .EUt(28);
 
-});
+});*/

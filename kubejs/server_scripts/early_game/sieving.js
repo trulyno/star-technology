@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
     sieve('string', 0.25, gravel, 'gtceu:crushed_sphalerite_ore', false);
     sieve('string', 0.4, black, 'gtceu:crushed_galena_ore', false);
     sieve('string', 0.3, black, 'gtceu:crushed_stibnite_ore', false);  
-
+/*
     sieve('flint', 0.1, gravel, 'gtceu:crushed_silver_ore', false);
     sieve('flint', 0.05, gravel, 'gtceu:crushed_gold_ore', false);
     sieve('flint', 0.2, black, 'gtceu:crushed_pentlandite_ore', false);
@@ -91,14 +91,14 @@ ServerEvents.recipes(event => {
     sieve('emerald', 0.12, black, 'gtceu:crushed_barite_ore', false);
 
     sieve('netherite', 0.01, black, 'gtceu:crushed_naquadah_ore', false);
-
+*/
     // sand
     sieve('string', 0.075, sand, 'minecraft:diamond', false);
     sieve('string', 0.08, sand, 'minecraft:lapis_lazuli', false);
     sieve('string', 0.1, sand, 'minecraft:amethyst_shard', false);
     sieve('string', 0.05, sand, 'minecraft:emerald', false);
     sieve('string', 0.2, sand, 'minecraft:quartz', false);
-
+/*
     sieve('flint', 0.075, sand, 'gtceu:crushed_diamond_ore', false);
     sieve('flint', 0.05, sand, 'gtceu:crushed_emerald_ore', false);
     sieve('flint', 0.1, sand, 'gtceu:crushed_green_sapphire_ore', false);
@@ -123,16 +123,16 @@ ServerEvents.recipes(event => {
 
     //sieve('diamond', 0.01, sand, 'mmt:moonstone', false);
     //sieve('diamond', 0.01, sand, 'mmt:sunstone', false);
-
+*/
     // dust
     sieve('string', 0.4, dust, 'minecraft:redstone', false);
     sieve('string', 0.4, dust, 'minecraft:glowstone_dust', false);
     sieve('string', 0.3, dust, 'gtceu:tiny_sulfur_dust', false);
     sieve('string', 0.05, dust, 'minecraft:ender_pearl', false);
     sieve('netherite', 0.01, dust, 'minecraft:echo_shard', false);
-
+/*
     sieve('flint', 0.25, dust, 'ae2:sky_dust', false);
-    
+*/    
     // xycraft gems
     sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_blue', true);
     sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_red', true);

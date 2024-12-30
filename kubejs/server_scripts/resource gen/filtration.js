@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+/*ServerEvents.recipes(event => {
   
   //stone dusts
   function crush(output, input){
@@ -171,4 +171,4 @@ ServerEvents.recipes(event => {
   maceratorby('coagulated_quartz_mixture', 'minecraft:quartz', 'minecraft:diamond', 750, 100)
   maceratorby('coagulated_lava', 'gtceu:sulfur_dust', 'gtceu:crushed_sphalerite_ore', 3000, 500)
 
-});
+});*/
