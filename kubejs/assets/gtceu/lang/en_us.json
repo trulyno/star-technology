@@ -377,6 +377,10 @@
     "gtceu.vibration_laser_engraver": "Vibration Laser Engraver",
     "block.gtceu.vibration_laser_engraver": "Vibration Laser Engraver Controller",
 
+    
+    "gtceu.large_greens_extractor": "Large Greens Extractor",
+    "block.gtceu.large_greens_extractor": "Large Greens Extractor Controller",
+
     "material.gtceu.iron_mixture": "Iron-Rich Mixture",
     "material.gtceu.copper_mixture": "Copper-Rich Mixture",
     "material.gtceu.quartz_mixture": "Quartz-Rich Mixture",

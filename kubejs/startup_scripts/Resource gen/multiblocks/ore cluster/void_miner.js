@@ -19,7 +19,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('S', Predicates.blocks('gtceu:solid_machine_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(2))
-                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setExactLimit(2))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimitede(2))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2)))
             .where('F', Predicates.blocks('gtceu:steel_frame'))
             .where('G', Predicates.blocks('gtceu:steel_gearbox'))

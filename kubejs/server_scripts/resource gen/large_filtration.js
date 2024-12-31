@@ -1,4 +1,4 @@
-/*ServerEvents.recipes(event => {
+ServerEvents.recipes(event => {
 
     //soul infused glass
     event.custom({
@@ -24,7 +24,7 @@
             "item": "gtceu:tempered_glass"},
         "result": 'thermal_extra:soul_infused_glass'
     });
-
+/*
     //kinetic filtrator
     event.shaped(
         Item.of('gtceu:kinetic_filtrator'),[
@@ -113,5 +113,5 @@
         //.inputStress(32)
         //.rpm(128)
         .EUt(28);
-
-});*/
+*/
+});
