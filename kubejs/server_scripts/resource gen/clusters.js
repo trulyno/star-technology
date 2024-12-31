@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('4x gtceu:raw_realgar', 4000, 800)
         .chancedOutput('2x gtceu:raw_silver', 4000, 750)
         .chancedOutput('3x gtceu:raw_stibnite', 3000, 500)
-        .chancedOutput('2x gtceu:raw_quartzite', 4000, 750)
+        //.chancedOutput('2x gtceu:raw_quartzite', 4000, 750)
         .outputFluids('gtceu:rare_ore_residue 100', 'gtceu:raw_ore_slurry 900')
         .duration(720)
         .EUt(24);
@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('4x gtceu:raw_realgar', 4000, 800)
         .chancedOutput('2x gtceu:raw_silver', 4000, 750)
         .chancedOutput('3x gtceu:raw_stibnite', 3000, 500)
-        .chancedOutput('2x gtceu:raw_quartzite', 4000, 750)
+        //.chancedOutput('2x gtceu:raw_quartzite', 4000, 750)
         .outputFluids('gtceu:rare_ore_residue 100', 'gtceu:raw_ore_slurry 900')
         .duration(720)
         .EUt(24);
