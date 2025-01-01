@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('FBF', 'GMG', 'GMG', 'GMG', 'FIF')
             .aisle('SCS', 'SGS', 'SGS', 'SGS', 'SFS')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('S', Predicates.blocks('gtceu:solid_machine_casing' .setMinGlobalLimited(6))
+            .where('S', Predicates.blocks('gtceu:solid_machine_casing').setMinGlobalLimited(6)
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY)))
             .where('F', Predicates.blocks('gtceu:steel_firebox_casing'))
