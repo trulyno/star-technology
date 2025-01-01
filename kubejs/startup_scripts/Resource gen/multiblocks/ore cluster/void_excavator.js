@@ -8,7 +8,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('void_excavator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('void_excavator')
+        .recipeType('void_miner')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
         .pattern(definition => FactoryBlockPattern.start()

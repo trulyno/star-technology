@@ -39,18 +39,18 @@ ServerEvents.recipes(event => {
         .duration(720)
         .EUt(24);
 
-    event.recipes.gtceu.void_excavator('mining')
-        .inputFluids('gtceu:drilling_fluid 10000')
-        .chancedOutput('5x gtceu:raw_coal', 5000, 1000)
-        .chancedOutput('2x minecraft:raw_gold', 4000, 750)
-        .chancedOutput('5x gtceu:raw_lapis', 4000, 1000)
-        .chancedOutput('3x gtceu:raw_pentlandite', 2000, 500)
-        .chancedOutput('4x gtceu:raw_realgar', 4000, 800)
-        .chancedOutput('2x gtceu:raw_silver', 4000, 750)
-        .chancedOutput('3x gtceu:raw_stibnite', 3000, 500)
-        //.chancedOutput('2x gtceu:raw_quartzite', 4000, 750)
-        .outputFluids('gtceu:rare_ore_residue 100', 'gtceu:raw_ore_slurry 900')
-        .duration(720)
-        .EUt(24);
+    // event.recipes.gtceu.void_excavator('mining')
+    //     .inputFluids('gtceu:drilling_fluid 10000')
+    //     .chancedOutput('5x gtceu:raw_coal', 5000, 1000)
+    //     .chancedOutput('2x minecraft:raw_gold', 4000, 750)
+    //     .chancedOutput('5x gtceu:raw_lapis', 4000, 1000)
+    //     .chancedOutput('3x gtceu:raw_pentlandite', 2000, 500)
+    //     .chancedOutput('4x gtceu:raw_realgar', 4000, 800)
+    //     .chancedOutput('2x gtceu:raw_silver', 4000, 750)
+    //     .chancedOutput('3x gtceu:raw_stibnite', 3000, 500)
+    //     //.chancedOutput('2x gtceu:raw_quartzite', 4000, 750)
+    //     .outputFluids('gtceu:rare_ore_residue 100', 'gtceu:raw_ore_slurry 900')
+    //     .duration(720)
+    //     .EUt(24);
 
 });

@@ -8,7 +8,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('rock_sifter', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('rock_sifter')
+        .recipeType('rock_filtrator')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
         .pattern(definition => FactoryBlockPattern.start()
