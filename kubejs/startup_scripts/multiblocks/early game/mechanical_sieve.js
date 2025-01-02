@@ -1,15 +1,15 @@
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-    event.create('kinetic_sieve')
-        .category('kinetic_sieve')
-        .setMaxIOSize(2, 10, 0, 0)
+    event.create('mechanical_sieve')
+        .category('mechanical_sieve')
+        .setMaxIOSize(2, 6, 0, 0)
         .setSound(GTSoundEntries.MACERATOR);
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('kinetic_sieve', 'multiblock')
+    event.create('mechanical_sieve', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('kinetic_sieve')
+        .recipeType('mechanical_sieve')
         //.appearanceBlock('kubejs:wood_casing')
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('F...F', 'F...F', 'F...F', 'FFFFF', 'WWWWW', 'WWWWW', 'WWWWW')
@@ -20,8 +20,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('W', Predicates.blocks('kubejs:wood_casing')
                 //.or(Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
-                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS)))
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2)))
             .where('F', Predicates.blocks('gtceu:treated_wood_frame'))     
             .where('M', Predicates.blocks('kubejs:meshblock'))
             .where('.', Predicates.any())

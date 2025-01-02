@@ -1154,7 +1154,7 @@
 			id: "58AADBEEA6CD4CA6"
 			tasks: [{
 				id: "2B4C68687B69E3D6"
-				item: "gtceu:kinetic_sieve"
+				item: "gtceu:mechanical_sieve"
 				type: "item"
 			}]
 			x: -15.0d

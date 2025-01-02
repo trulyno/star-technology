@@ -8,6 +8,8 @@ ServerEvents.recipes(event => {
     const black = 'exnihilosequentia:crushed_blackstone'
     const netherrack = 'exnihilosequentia:crushed_netherrack'
     const endstone = 'exnihilo:crushed_end_stone'
+    const mud = 'minecraft:mud'
+    const rdirt = 'minecraft:rooted_dirt'
 
     function sieve(mesh, chance, input, result, wlog) {
         event.custom({
@@ -38,29 +40,68 @@ ServerEvents.recipes(event => {
         })
     }
 
-    sieve('string', 0.05, dirt, 'minecraft:cactus', false);
+    //Dirts
+    sieve('string', 0.075, dirt, 'minecraft:cactus', false);
     sieve('string', 0.05, dirt, 'minecraft:sunflower', false);
-    sieve('string', 0.05, dirt, 'minecraft:sugar_cane', false);
-    sieve('string', 0.03, dirt, 'minecraft:cocoa_beans', false);
-    sieve('string', 0.3, dirt, 'thermal:flax_seeds', false);
-    sieve('string', 0.3, dirt, 'thermal:slime_mushroom_spores', false);
+    sieve('string', 0.15, dirt, 'minecraft:fern', false);
+    sieve('string', 0.10, dirt, 'minecraft:sweet_berries', false);
+    sieve('string', 0.05, dirt, 'minecraft:cocoa_beans', false);
+    sieve('string', 0.075, dirt, 'minecraft:oak_sapling', false);
+    sieve('string', 0.075, dirt, 'minecraft:spruce_sapling', false);
+    sieve('string', 0.075, dirt, 'minecraft:birch_sapling', false);
+    sieve('string', 0.075, dirt, 'minecraft:jungle_sapling', false);
+    sieve('string', 0.075, dirt, 'minecraft:acacia_sapling', false);
+    sieve('string', 0.075, dirt, 'minecraft:dark_oak_sapling', false);
+    
+    sieve('string', 0.1, mud, 'minecraft:sugar_cane', false);    
+    sieve('string', 0.25, mud, 'thermal:slime_mushroom_spores', false);
+    sieve('string', 0.15, mud, 'minecraft:mangrove_propagule', false);
+    sieve('string', 0.2, mud, 'exnihilosequentia:mycelium_spores', false);
+    
+    sieve('string', 0.15, rdirt, 'thermal:flax_seeds', false);
+    sieve('string', 0.15, rdirt, 'minecraft:potato', false);
+    sieve('string', 0.15, rdirt, 'minecraft:carrot', false);
+    sieve('string', 0.15, rdirt, 'minecraft:beetroot_seeds', false);
+    sieve('string', 0.15, rdirt, 'exnihilosequentia:grass_seeds', false);
+    sieve('string', 0.15, rdirt, 'minecraft:bamboo', false);
+    sieve('string', 0.15, rdirt, 'minecraft:wheat_seeds', false);
+
+    //Waterlogged
     sieve('string', 0.05, sand, 'exnihilosequentia:brain_coral_larva', true);
     sieve('string', 0.05, sand, 'exnihilosequentia:tube_coral_larva', true);
     sieve('string', 0.05, sand, 'exnihilosequentia:bubble_coral_larva', true);
     sieve('string', 0.05, sand, 'exnihilosequentia:horn_coral_larva', true);
     sieve('string', 0.05, sand, 'exnihilosequentia:fire_coral_larva', true);
     sieve('string', 0.05, sand, 'minecraft:sea_pickle', true);
-    sieve('string', 0.05, sand, 'kelp', true);
-    sieve('string', 0.05, sand, 'minecraft:seagrass', true);
-
-    // gravel and blackstone
+    sieve('string', 0.15, sand, 'kelp', true);
+    sieve('string', 0.15, sand, 'minecraft:seagrass', true);
+    
+    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_blue', true);
+    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_red', true);
+    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_green', true);
+    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_light', true);
+    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_dark', true);
+   
+    //Sand, dust, gravel, and blackstone
     sieve('string', 0.45, gravel, 'gtceu:crushed_iron_ore', false);
     sieve('string', 0.25, gravel, 'gtceu:crushed_magnetite_ore', false);
     sieve('string', 0.65, gravel, 'gtceu:crushed_copper_ore', false);
     sieve('string', 0.3, gravel, 'gtceu:crushed_tin_ore', false);
     sieve('string', 0.25, gravel, 'gtceu:crushed_sphalerite_ore', false);
+    
     sieve('string', 0.4, black, 'gtceu:crushed_galena_ore', false);
-    sieve('string', 0.3, black, 'gtceu:crushed_stibnite_ore', false);  
+    sieve('string', 0.3, black, 'gtceu:crushed_stibnite_ore', false);
+    
+    sieve('string', 0.075, sand, 'minecraft:diamond', false);
+    sieve('string', 0.08, sand, 'minecraft:lapis_lazuli', false);
+    sieve('string', 0.1, sand, 'minecraft:amethyst_shard', false);
+    sieve('string', 0.05, sand, 'minecraft:emerald', false);
+    sieve('string', 0.2, sand, 'minecraft:quartz', false);
+    
+    sieve('string', 0.4, dust, 'minecraft:redstone', false);
+    sieve('string', 0.4, dust, 'minecraft:glowstone_dust', false);
+    sieve('string', 0.3, dust, 'gtceu:tiny_sulfur_dust', false);
+    sieve('string', 0.05, dust, 'minecraft:ender_pearl', false);
 /*
     sieve('flint', 0.1, gravel, 'gtceu:crushed_silver_ore', false);
     sieve('flint', 0.05, gravel, 'gtceu:crushed_gold_ore', false);
@@ -93,11 +134,7 @@ ServerEvents.recipes(event => {
     sieve('netherite', 0.01, black, 'gtceu:crushed_naquadah_ore', false);
 */
     // sand
-    sieve('string', 0.075, sand, 'minecraft:diamond', false);
-    sieve('string', 0.08, sand, 'minecraft:lapis_lazuli', false);
-    sieve('string', 0.1, sand, 'minecraft:amethyst_shard', false);
-    sieve('string', 0.05, sand, 'minecraft:emerald', false);
-    sieve('string', 0.2, sand, 'minecraft:quartz', false);
+    
 /*
     sieve('flint', 0.075, sand, 'gtceu:crushed_diamond_ore', false);
     sieve('flint', 0.05, sand, 'gtceu:crushed_emerald_ore', false);
@@ -125,20 +162,10 @@ ServerEvents.recipes(event => {
     //sieve('diamond', 0.01, sand, 'mmt:sunstone', false);
 */
     // dust
-    sieve('string', 0.4, dust, 'minecraft:redstone', false);
-    sieve('string', 0.4, dust, 'minecraft:glowstone_dust', false);
-    sieve('string', 0.3, dust, 'gtceu:tiny_sulfur_dust', false);
-    sieve('string', 0.05, dust, 'minecraft:ender_pearl', false);
-    sieve('netherite', 0.01, dust, 'minecraft:echo_shard', false);
+    
+ //   sieve('netherite', 0.01, dust, 'minecraft:echo_shard', false);
 /*
     sieve('flint', 0.25, dust, 'ae2:sky_dust', false);
 */    
-    // xycraft gems
-    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_blue', true);
-    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_red', true);
-    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_green', true);
-    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_light', true);
-    sieve('string', 0.75, dust, 'xycraft_world:xychorium_gem_dark', true);
-    
 });
 

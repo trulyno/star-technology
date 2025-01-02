@@ -9,21 +9,6 @@ ServerEvents.recipes(event => {
         "result": 'gtceu:tempered_glass'
     });
     
-    event.custom({
-        "type": "exnihilosequentia:transition",
-        "catalyst": {
-          "item": "gtceu:soul_infused_block"},
-        "fluidInTank": ('minecraft:lava 1000'),
-        "result": ("gtceu:soul_infused 1000")
-    });
-    
-    event.custom({
-        "type": "exnihilosequentia:precipitate",
-        "fluid": ('gtceu:soul_infused 1000'),
-        "input": {
-            "item": "gtceu:tempered_glass"},
-        "result": 'thermal_extra:soul_infused_glass'
-    });
 /*
     //kinetic filtrator
     event.shaped(

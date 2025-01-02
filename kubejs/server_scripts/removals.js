@@ -66,7 +66,12 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'exnihilosequentia:sifting', input: 'minecraft:sand'});
     event.remove({ type: 'exnihilosequentia:sifting', input: 'exnihilosequentia:dust'});
     event.remove({ type: 'exnihilosequentia:sifting', input: 'minecraft:soul_sand'});
+    event.remove({ type: 'exnihilosequentia:sifting', input: 'minecraft:dirt'});
+    event.remove({ type: 'exnihilosequentia:sifting', input: 'minecraft:mud'});
     event.remove({ type: 'exnihilosequentia:sifting', input: 'exnihilosequentia:crushed_end_stone'});
+    //need to remove flint/iron/diamond mesh leave variants
+    event.remove({ type: 'exnihilosequentia:precipitate', output: 'minecraft:netherrack'});
+    event.remove({ type: 'exnihilosequentia:precipitate', output: 'minecraft:end_stone'});
 
     event.remove({ input: 'minecraft:fire_charge'});
     event.remove({ input: 'thermal:earth_charge'});
