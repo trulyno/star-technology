@@ -41,12 +41,13 @@ ServerEvents.recipes(event => {
     .chancedOutput('kubejs:topaz_geode', 3500, 750)
     .chancedOutput('kubejs:apatite_geode', 4500, 1000)
     .chancedOutput('kubejs:spessartine_geode', 3500, 500)
+    .chancedOutput('kubejs:monazite_geode', 3500, 500)
     .duration(1200)
     .EUt(GTValues.VHA[GTValues.MV]);
 
   const geodeLV = ['diamond', 'emerald', 'ruby', 'green_sapphire', 
     'sapphire', 'quartzite', 'certus_quartz'];
-  const geodeMV = ['apatite', 'topaz', 'blue_topaz', 'spessartine'];
+  const geodeMV = ['apatite', 'topaz', 'blue_topaz', 'spessartine', 'monazite'];
   
   geodeLV.forEach(type => {
     event.recipes.gtceu.cutter(`${type}_geode`)

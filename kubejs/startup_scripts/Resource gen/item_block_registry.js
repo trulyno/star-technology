@@ -2,7 +2,7 @@ StartupEvents.registry('item', event => {
     
     //geodes
     ['Diamond', 'Emerald', 'Ruby', 'Sapphire', 'Quartzite', 'Topaz', 'Spessartine', `Certus_Quartz`, `Green_Sapphire`
-        ,`Blue_Topaz`,`Apatite`].forEach(type => {
+        ,`Blue_Topaz`,`Apatite`, `Monazite`].forEach(type => {
         event.create(`${type.toLowerCase()}_geode`)
             .displayName(`${type.replace(/_/g, ' ')} Geode`)
             .texture(`kubejs:item/resource_gen/geodes/${type.toLowerCase()}_geode`);

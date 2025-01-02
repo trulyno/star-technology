@@ -16,128 +16,143 @@
 				item: "exnihilosequentia:string_mesh"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -6.5d
+			x: -7.0d
+			y: -9.5d
 		}
 		{
+			dependencies: ["432BFDB7BAEBDC26"]
 			id: "5593854C5DCF34E7"
 			tasks: [{
 				id: "6071867156639965"
 				item: "minecraft:dirt"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -8.0d
+			x: -9.5d
+			y: -10.0d
 		}
 		{
+			dependencies: ["432BFDB7BAEBDC26"]
 			id: "76DBCFE9856D072E"
 			tasks: [{
 				id: "79077878A7379445"
 				item: "minecraft:rooted_dirt"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -8.5d
+			x: -9.0d
+			y: -11.0d
 		}
 		{
+			dependencies: ["432BFDB7BAEBDC26"]
 			id: "1B9C3215B57ACD9C"
 			tasks: [{
 				id: "1FFCA39CA9AB5EDF"
 				item: "minecraft:mud"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -6.0d
+			x: -9.0d
+			y: -8.0d
 		}
 		{
+			dependencies: ["432BFDB7BAEBDC26"]
 			id: "2B99DECFDFAB83C1"
 			tasks: [{
 				id: "0F46E110B6E9C65C"
 				item: "minecraft:coarse_dirt"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -7.0d
+			x: -9.5d
+			y: -9.0d
 		}
 		{
+			dependencies: ["432BFDB7BAEBDC26"]
 			id: "6781AB81FA054CD0"
 			tasks: [{
 				id: "7E33062A0A0FCCA1"
 				item: "exnihilosequentia:dust"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -4.5d
+			x: -6.5d
+			y: -12.0d
 		}
 		{
+			dependencies: ["432BFDB7BAEBDC26"]
 			id: "7718CDD1E61BB47A"
 			tasks: [{
 				id: "6BB290C1B8575DCB"
 				item: "exnihilosequentia:dust"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -5.0d
+			x: -5.0d
+			y: -8.0d
 		}
 		{
+			dependencies: ["432BFDB7BAEBDC26"]
 			id: "1A5C2C6A089F7F96"
 			tasks: [{
 				id: "2BCAC7AF6CAE6A4A"
 				item: "minecraft:sand"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -6.0d
+			x: -4.5d
+			y: -9.0d
 		}
 		{
+			dependencies: ["432BFDB7BAEBDC26"]
 			id: "68DCCC639E6C7EFD"
 			tasks: [{
 				id: "3F169C593EAC7722"
 				item: "minecraft:sand"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -5.0d
+			x: -7.5d
+			y: -12.0d
 		}
 		{
+			dependencies: ["432BFDB7BAEBDC26"]
 			id: "307E479B78B92BF6"
 			tasks: [{
 				id: "2BE71EFF33A362F9"
 				item: "minecraft:gravel"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -7.0d
+			x: -4.5d
+			y: -10.0d
 		}
 		{
+			dependencies: ["432BFDB7BAEBDC26"]
 			id: "6C0C9B95A8DAB5D1"
 			tasks: [{
 				id: "68954273617B329C"
 				item: "exnihilosequentia:crushed_blackstone"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -8.0d
+			x: -5.0d
+			y: -11.0d
 		}
 		{
+			dependencies: ["432BFDB7BAEBDC26"]
 			id: "55C232CBDCA3807D"
 			tasks: [{
 				id: "39418960999F9338"
 				item: "gtceu:mechanical_sieve"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -7.0d
 			y: -7.0d
 		}
 		{
+			dependencies: [
+				"55C232CBDCA3807D"
+				"182D948925141764"
+			]
 			id: "0B9EE9FD7510391D"
 			tasks: [{
 				id: "74FCC03002C61E9D"
 				item: "gtceu:large_sieve"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -6.0d
+			x: -7.0d
+			y: -5.5d
 		}
 		{
 			id: "56D819096421D55B"
@@ -146,168 +161,187 @@
 				item: "gtceu:rock_filtrator"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -1.5d
+			x: -4.0d
+			y: 0.5d
 		}
 		{
+			dependencies: [
+				"0094C2E72105E8CA"
+				"56D819096421D55B"
+			]
 			id: "2309916BA68649D6"
 			tasks: [{
 				id: "5DF9BC6F11EF6360"
 				item: "gtceu:rock_sifter"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -0.5d
+			x: -4.0d
+			y: 3.5d
 		}
 		{
+			dependencies: ["56D819096421D55B"]
 			id: "37B2D734AAEC98E8"
 			tasks: [{
 				id: "498B5F9A8334D0DF"
 				item: "kubejs:diamond_geode"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -3.0d
+			x: -5.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["56D819096421D55B"]
 			id: "177CE1841A4C22CD"
 			tasks: [{
 				id: "0292D2058F8AE570"
 				item: "kubejs:emerald_geode"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -3.0d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["56D819096421D55B"]
 			id: "6130CEC7942DB195"
 			tasks: [{
 				id: "4FDE22033574075D"
 				item: "kubejs:ruby_geode"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 1.0d
+			x: -6.0d
+			y: 2.5d
 		}
 		{
+			dependencies: ["56D819096421D55B"]
 			id: "12E08BD81D4AFDF0"
 			tasks: [{
 				id: "2930EFCCB24C95A6"
 				item: "kubejs:sapphire_geode"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -2.0d
+			x: -6.5d
+			y: -0.5d
 		}
 		{
+			dependencies: ["56D819096421D55B"]
 			id: "3D51D9EE77B68083"
 			tasks: [{
 				id: "3EF24D86799451B3"
 				item: "kubejs:quartzite_geode"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -1.0d
+			x: -6.5d
+			y: 0.5d
 		}
 		{
+			dependencies: ["56D819096421D55B"]
 			id: "729800025EA0DE0F"
 			tasks: [{
 				id: "3FBA8702552915C9"
 				item: "kubejs:topaz_geode"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.5d
+			x: -2.5d
+			y: 2.5d
 		}
 		{
+			dependencies: ["56D819096421D55B"]
 			id: "2931F83E28641A15"
 			tasks: [{
 				id: "06B16224E518CF9E"
 				item: "kubejs:spessartine_geode"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -2.5d
+			x: -2.5d
+			y: -1.5d
 		}
 		{
+			dependencies: ["56D819096421D55B"]
 			id: "440B9DAC6634B042"
 			tasks: [{
 				id: "1A11389A9EC7422D"
 				item: "kubejs:certus_quartz_geode"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 1.0d
+			x: -4.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["56D819096421D55B"]
 			id: "12A3AD9F42C2FB2F"
 			tasks: [{
 				id: "0F248D73F02F3497"
 				item: "kubejs:green_sapphire_geode"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 0.0d
+			x: -6.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["56D819096421D55B"]
 			id: "04044187B7B40420"
 			tasks: [{
 				id: "4BE56BBC61DCAE73"
 				item: "kubejs:blue_topaz_geode"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -0.5d
+			x: -2.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["56D819096421D55B"]
 			id: "451A482AC6EC5DAF"
 			tasks: [{
 				id: "19148CB2F0B3BE0D"
 				item: "kubejs:apatite_geode"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -1.5d
+			x: -2.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["27F8E208EAB7ADD8"]
 			id: "08C8FF38DC514F71"
 			tasks: [{
 				id: "30F469B02F7C4C74"
 				item: "exnihilosequentia:sea_water_bucket"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -6.5d
+			x: 6.5d
+			y: -12.0d
 		}
 		{
+			dependencies: ["08C8FF38DC514F71"]
 			id: "64644CE15B3B4436"
 			tasks: [{
 				id: "75C69A55F919CAF6"
 				item: "gtceu:crushed_saltpeter_ore"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -7.5d
+			x: 5.5d
+			y: -13.0d
 		}
 		{
+			dependencies: ["08C8FF38DC514F71"]
 			id: "3780C8669F67F77E"
 			tasks: [{
 				id: "5DD04291A1C7094C"
 				item: "gtceu:crushed_rock_salt_ore"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -5.5d
+			x: 5.5d
+			y: -11.0d
 		}
 		{
+			dependencies: ["08C8FF38DC514F71"]
 			id: "6B1E88A09583F979"
 			tasks: [{
 				id: "6C506A8DE68CE57B"
 				item: "gtceu:salt_water_bucket"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -6.5d
+			x: 5.0d
+			y: -12.0d
 		}
 		{
 			id: "27F8E208EAB7ADD8"
@@ -316,8 +350,8 @@
 				item: "gtceu:large_barrel"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -6.5d
+			x: 8.0d
+			y: -12.0d
 		}
 		{
 			id: "0296B4113A91D3BE"
@@ -326,18 +360,733 @@
 				item: "gtceu:void_miner"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: 7.5d
+			y: -9.5d
 		}
 		{
+			dependencies: [
+				"0296B4113A91D3BE"
+				"0094C2E72105E8CA"
+			]
 			id: "2C7212CEB25F4C1B"
 			tasks: [{
 				id: "24EC866E968A6EF0"
 				item: "gtceu:void_excavator"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 10.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["56D819096421D55B"]
+			id: "2D790A43980AAE68"
+			tasks: [{
+				id: "790CFC06CEB6E321"
+				item: "kubejs:monazite_geode"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0296B4113A91D3BE"]
+			id: "581C773B90C29BEF"
+			tasks: [{
+				id: "2EE225837C833A9D"
+				item: "gtceu:crushed_coal_ore"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["0296B4113A91D3BE"]
+			id: "07BC22F2A28126E1"
+			tasks: [{
+				id: "3B569981303AF885"
+				item: "gtceu:crushed_gold_ore"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0296B4113A91D3BE"]
+			id: "0E35E757EBAA1FD8"
+			tasks: [{
+				id: "48B7F9D68ABE97B4"
+				item: "gtceu:crushed_pentlandite_ore"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0296B4113A91D3BE"]
+			id: "77584F14C573BBC1"
+			tasks: [{
+				id: "0F8709741CA14E72"
+				item: "gtceu:crushed_sodalite_ore"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0296B4113A91D3BE"]
+			id: "33B0EC203D30977D"
+			tasks: [{
+				id: "0F81EE667907679A"
+				item: "gtceu:crushed_realgar_ore"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0296B4113A91D3BE"]
+			id: "47A7DAF6C3A3691C"
+			tasks: [{
+				id: "2902FAF2CD326A78"
+				item: "gtceu:crushed_silver_ore"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0296B4113A91D3BE"]
+			id: "5F9FBAC1FB36B1D3"
+			tasks: [{
+				id: "730687A7D9BFC8FE"
+				item: "gtceu:rare_ore_residue_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"0296B4113A91D3BE"
+				"5F9FBAC1FB36B1D3"
+			]
+			dependency_requirement: "one_started"
+			id: "4F3AB86CDC557B11"
+			tasks: [{
+				id: "0559DAC6387263AA"
+				item: "gtceu:raw_ore_slurry_bucket"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5F9FBAC1FB36B1D3"]
+			id: "10C7D4ED5B634A07"
+			tasks: [{
+				id: "5644E2815B634A9A"
+				item: "gtceu:chromite_sludge_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5F9FBAC1FB36B1D3"]
+			id: "69406C89BCA5EE71"
+			tasks: [{
+				id: "7558B71FFBE74936"
+				item: "gtceu:rare_sludge_dust"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5F9FBAC1FB36B1D3"]
+			id: "0BA5955810E139F6"
+			tasks: [{
+				id: "75CAB9829CFC0502"
+				item: "gtceu:vanadium_magnetite_sludge_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5F9FBAC1FB36B1D3"]
+			id: "33F9F93AD614C537"
+			tasks: [{
+				id: "4A8BD167236A52D2"
+				item: "ae2:sky_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4F3AB86CDC557B11"]
+			id: "7BA4CC3B9414FCB4"
+			tasks: [{
+				id: "541E56497E230F0E"
+				item: "gtceu:crushed_lepidolite_ore"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4F3AB86CDC557B11"]
+			id: "75359CEE6365FF93"
+			tasks: [{
+				id: "5BE45FCAB51BB33F"
+				item: "gtceu:crushed_pyrolusite_ore"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4F3AB86CDC557B11"]
+			id: "7CDF942AD28BDEFA"
+			tasks: [{
+				id: "2A2FD0372F87D882"
+				item: "gtceu:crushed_pyrochlore_ore"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4F3AB86CDC557B11"]
+			id: "26E08C0B689C129F"
+			tasks: [{
+				id: "6D856EA05954165E"
+				item: "gtceu:mixed_mineral_residue_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4F3AB86CDC557B11"]
+			id: "05FB44E437E88BE7"
+			tasks: [{
+				id: "7384DEBEFA8F0C65"
+				item: "gtceu:molten_ore_mixture_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26E08C0B689C129F"]
+			id: "4C5C938C56D9BA38"
+			tasks: [{
+				id: "710B8DDE7DD1CC22"
+				item: "gtceu:crushed_beryllium_ore"
+				type: "item"
+			}]
+			x: 10.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["26E08C0B689C129F"]
+			id: "62E3D33072698B07"
+			tasks: [{
+				id: "251007083A53A669"
+				item: "gtceu:oxygenous_mineral_mixture_bucket"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["26E08C0B689C129F"]
+			id: "2032DAAC7C6ADC0F"
+			tasks: [{
+				id: "67216FE157F073F9"
+				item: "gtceu:sulfuric_mineral_mixture_bucket"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["62E3D33072698B07"]
+			id: "7F9519FFC3B4B747"
+			tasks: [{
+				id: "71CDACDCB5E7B0B5"
+				item: "gtceu:crushed_tantalite_ore"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["62E3D33072698B07"]
+			id: "1548DBF1CA41ECAC"
+			tasks: [{
+				id: "6C813D69FB2D0BF3"
+				item: "gtceu:crushed_pollucite_ore"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["62E3D33072698B07"]
+			id: "04A690A18650A73E"
+			tasks: [{
+				id: "6A7F20DEB41B6C77"
+				item: "gtceu:crushed_cassiterite_ore"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2032DAAC7C6ADC0F"]
+			id: "31A0854CC2173A9A"
+			tasks: [{
+				id: "3DD08FA41200110E"
+				item: "gtceu:crushed_barite_ore"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2032DAAC7C6ADC0F"]
+			id: "1A42E117B1BC8E49"
+			tasks: [{
+				id: "4978DCF7C2F069AD"
+				item: "gtceu:crushed_chalcopyrite_ore"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2032DAAC7C6ADC0F"]
+			id: "6708A1A35904D8E5"
+			tasks: [{
+				id: "20B2F10074A4E994"
+				item: "gtceu:crushed_bornite_ore"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["05FB44E437E88BE7"]
+			id: "5B2F29A61D270031"
+			tasks: [{
+				id: "301A04AE0D88771A"
+				item: "gtceu:crushed_tungstate_ore"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["05FB44E437E88BE7"]
+			id: "21D7E7ED7808C8C4"
+			tasks: [{
+				id: "564F5480F2BFD8EB"
+				item: "gtceu:crushed_cooperite_ore"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05FB44E437E88BE7"]
+			id: "426DAF352485315E"
+			tasks: [{
+				id: "71FC07FCAA3542B8"
+				item: "gtceu:crushed_bastnasite_ore"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05FB44E437E88BE7"]
+			id: "39F8E15F7C4376FB"
+			tasks: [{
+				id: "32AC168F7B220774"
+				item: "gtceu:crushed_scheelite_ore"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["05FB44E437E88BE7"]
+			id: "72C473F289A5CBA4"
+			tasks: [{
+				id: "6F19CF946EAA0685"
+				item: "gtceu:crushed_ilmenite_ore"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["05FB44E437E88BE7"]
+			id: "245C8B1564B2DEA6"
+			tasks: [{
+				id: "056C53BDA969FE7F"
+				item: "gtceu:crushed_bauxite_ore"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["05FB44E437E88BE7"]
+			id: "0BBCC13EE6C7C061"
+			tasks: [{
+				id: "08322DCB974F1927"
+				item: "gtceu:crushed_pitchblende_ore"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["05FB44E437E88BE7"]
+			id: "6E6C62BC07C26C3C"
+			tasks: [{
+				id: "0BC9F6325A870771"
+				item: "gtceu:crushed_molybdenite_ore"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6C0C9B95A8DAB5D1"]
+			id: "4CBADB8FA7043254"
+			tasks: [{
+				id: "5578AFBD13BE2808"
+				item: "gtceu:crushed_galena_ore"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["6C0C9B95A8DAB5D1"]
+			id: "0906E5CFE21F5991"
+			tasks: [{
+				id: "1832E9A44D040920"
+				item: "gtceu:crushed_stibnite_ore"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["307E479B78B92BF6"]
+			id: "6BEFBBDDAF2D57BD"
+			tasks: [{
+				id: "509CFEEDB049B94F"
+				item: "gtceu:crushed_copper_ore"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["307E479B78B92BF6"]
+			id: "3A2EEC96AA0E9A0D"
+			tasks: [{
+				id: "1E31648F56A7C960"
+				item: "gtceu:crushed_iron_ore"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["307E479B78B92BF6"]
+			id: "745D1BDFDA682242"
+			tasks: [{
+				id: "4020E79BBCF20138"
+				item: "gtceu:crushed_tin_ore"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["307E479B78B92BF6"]
+			id: "3EA0A2643CC53CC9"
+			tasks: [{
+				id: "0E05043774086DC6"
+				item: "gtceu:crushed_sphalerite_ore"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["307E479B78B92BF6"]
+			id: "2037D77B975C5C52"
+			tasks: [{
+				id: "6AF61B779B8F2D27"
+				item: "gtceu:crushed_magnetite_ore"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1A5C2C6A089F7F96"]
+			id: "47661FD09FA36973"
+			tasks: [{
+				id: "7DC5578FB3578F72"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["1A5C2C6A089F7F96"]
+			id: "64A6344445362CB9"
+			tasks: [{
+				id: "69BC5881DB333DEB"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1A5C2C6A089F7F96"]
+			id: "00D76E55B267E1D1"
+			tasks: [{
+				id: "5093AB12DDE110B7"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1A5C2C6A089F7F96"]
+			id: "4A99D9CF0E5350C3"
+			tasks: [{
+				id: "7EC104C3A3108F27"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["1A5C2C6A089F7F96"]
+			id: "4663CED8F0EAD50F"
+			tasks: [{
+				id: "3B644AC1F0B07067"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7718CDD1E61BB47A"]
+			id: "338D41BA7FE41844"
+			tasks: [{
+				id: "1C92D9E62E21DF75"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7718CDD1E61BB47A"]
+			id: "1FD67F1092861603"
+			tasks: [{
+				id: "1ACD5311C51CA856"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7718CDD1E61BB47A"]
+			id: "332BD627EA650982"
+			tasks: [{
+				id: "70BA8C72BF4B2B03"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7718CDD1E61BB47A"]
+			id: "6C2BA96EF2A00BFF"
+			tasks: [{
+				id: "50615492B1D707DA"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"27F8E208EAB7ADD8"
+				"0094C2E72105E8CA"
+			]
+			id: "03685E21BFED42D7"
+			tasks: [{
+				id: "1990B5E59C8B2344"
+				item: "gtceu:larger_barrel"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["440B9DAC6634B042"]
+			id: "08B01C99849E7196"
+			tasks: [{
+				id: "6D84A6B454D7B1B7"
+				item: "gtceu:crushed_certus_quartz_ore"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["37B2D734AAEC98E8"]
+			id: "7E7F0F29582CBBCF"
+			tasks: [{
+				id: "3EB40DD4BBA2F04D"
+				item: "gtceu:crushed_diamond_ore"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["177CE1841A4C22CD"]
+			id: "376F9349C6E85AC8"
+			tasks: [{
+				id: "0C7ABCC83CC4C179"
+				item: "gtceu:crushed_emerald_ore"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["12E08BD81D4AFDF0"]
+			id: "6EAC26E5BD8392DC"
+			tasks: [{
+				id: "73F8CAE499FC2E55"
+				item: "gtceu:crushed_sapphire_ore"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D51D9EE77B68083"]
+			id: "2E56093A4947C046"
+			tasks: [{
+				id: "71CC9319C5AECF75"
+				item: "gtceu:crushed_quartzite_ore"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["12A3AD9F42C2FB2F"]
+			id: "2F8B2A4F4DEB35C8"
+			tasks: [{
+				id: "4C404EB4114CA916"
+				item: "gtceu:crushed_green_sapphire_ore"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6130CEC7942DB195"]
+			id: "34AEE86AA36448E0"
+			tasks: [{
+				id: "2C50B555887860FB"
+				item: "gtceu:crushed_ruby_ore"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["729800025EA0DE0F"]
+			id: "31D4D7FCA9F61562"
+			tasks: [{
+				id: "67097DAF3804E3EB"
+				item: "gtceu:crushed_topaz_ore"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["04044187B7B40420"]
+			id: "76A203245A0E1CC5"
+			tasks: [{
+				id: "68A3DE15C26BFBFF"
+				item: "gtceu:crushed_blue_topaz_ore"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2D790A43980AAE68"]
+			id: "7AF84C014E136391"
+			tasks: [{
+				id: "1C8A0B00727113AF"
+				item: "gtceu:crushed_monazite_ore"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["451A482AC6EC5DAF"]
+			id: "71523C429C7CA007"
+			tasks: [{
+				id: "51E0D5F5B0C7B626"
+				item: "gtceu:crushed_apatite_ore"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2931F83E28641A15"]
+			id: "679DD5F8C7E5D179"
+			tasks: [{
+				id: "45592AA7679A8D10"
+				item: "gtceu:crushed_spessartine_ore"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
 		}
 	]
 	title: "Resource Production"

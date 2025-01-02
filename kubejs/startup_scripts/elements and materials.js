@@ -1670,7 +1670,7 @@ materialRegistry(event => {
     liquid('rare_ore_residue', 0x556278, '1x mystery');
 
     dust('chromite_sludge', 0x4C3C4C, ['2x chromite', '1x mystery'])
-    dust('monazite_sludge', 0xCCEC94, ['2x monazite', '1x mystery'])
+    dust('rare_sludge', 0xCCEC94, ['1x mystery'])
     dust('vanadium_magnetite_sludge', 0x1C1C2C, ['2x vanadium_magnetite', '1x mystery'])
 
     dust('rare_metallic_residue', 0x515755, ['1x silver', '2x calcite'])
@@ -1686,13 +1686,14 @@ materialRegistry(event => {
         liquid(`molten_${name}_ore`, color, name)
     };
     
-    moltenore('bauxite', 0x18C940);
-    moltenore('pitchblende', 0x13F045);
-    moltenore('molybdenite', 0x9DB3A2);
-    moltenore('ilmenite', 0x630923);
-    moltenore('scheelite', 0xAAB5A8);
-    moltenore('tungstate', 0x89AD82);
-    liquid('molten_cooperite_ore', 0x89CC7C, '1x cooperite');
+    moltenore('bauxite', 0xB5B69A);
+    moltenore('pitchblende', 0xAFC585);
+    moltenore('molybdenite', 0xC1D0A4);
+    moltenore('ilmenite', 0xCBA88F);
+    moltenore('scheelite', 0xBACBCF);
+    moltenore('tungstate', 0x9CACB1);
+    moltenore('bastnasite',0x988E84);
+    liquid('molten_cooperite_ore', 0xA4A38B, '1x cooperite');
 
     event.create("purified_naquadah")
         .gem()

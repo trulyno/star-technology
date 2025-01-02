@@ -47,7 +47,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("H", Predicates.blocks("gtceu:tritanium_coil_block"))
             .where("I", Predicates.blocks("kubejs:melodium_casing"))
             .where("J", Predicates.blocks(GTBlocks.FUSION_COIL.get()))
-            .where("K", Predicates.blocks("kubejs:prismalium_frame"))
+            .where("K", Predicates.blocks("gtceu:prismalium_frame"))
             .where("#", Predicates.any())
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/vibration_safe_casing",
