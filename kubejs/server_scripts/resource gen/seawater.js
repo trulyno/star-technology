@@ -15,6 +15,16 @@ ServerEvents.recipes(event => {
         .duration(80);
 
     //larger barrel
+    event.shaped('gtceu:larger_barrel',[
+        'ABA',
+        'CDC',
+        'ABA'],{
+        A: 'kubejs:wood_casing',
+        B: '#gtceu:circuits/luv',
+        C: 'gtceu:double_watertight_steel_plate',
+        D: 'gtceu:luv_quantum_tank'
+    });
+
     event.recipes.gtceu.larger_barrel('sea_water')
         .itemInputs('minecraft:sand')
         .inputFluids('minecraft:water 16000')

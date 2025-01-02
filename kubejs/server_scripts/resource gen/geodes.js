@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
     ],{
       A: '#gtceu:circuits/luv',
       B: 'gtceu:luv_electric_motor',
-      C: 'gtceu:robust_machine_casing'
+      C: 'gtceu:watertight_casing'
   });
     
   event.recipes.gtceu.rock_filtrator('lv_geodes')

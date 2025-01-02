@@ -7,22 +7,23 @@ ServerEvents.recipes(event => {
         A: 'gtceu:soul_infused_hex_wire',
         B: 'gtceu:lv_electric_pump',
         C: 'gtceu:lv_electric_piston',
-        D: 'gtceu:steam_miner',
+        D: 'gtceu:hp_steam_miner',
         E: '#gtceu:circuits/lv',
         F: 'gtceu:lv_robot_arm',
-        G: 'gtceu:lv_item_magnet'
+        G: 'gtceu:lv_conveyor_module'
     });
 
     event.shaped('gtceu:void_excavator',[
         'ABC',
         'ADE',
-        'FBC'],{
+        'FGC'],{
         A: 'gtceu:twinite_hex_wire',
-        B: 'gtceu:luv_field_generator',
+        B: 'gtceu:luv_electric_pump',
         C: 'gtceu:luv_electric_piston',
         D: 'gtceu:luv_large_miner',
         E: '#gtceu:circuits/luv',
-        F: 'gtceu:luv_robot_arm'
+        F: 'gtceu:luv_robot_arm',
+        G: 'gtceu:luv_conveyor_module'
     });
 
     event.recipes.gtceu.void_miner('mining')
