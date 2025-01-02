@@ -401,5 +401,7 @@
     "material.gtceu.monazite_sludge": "Monazite Sludge",
     "material.gtceu.vanadium_magnetite_sludge": "Vanadium Magnetite Sludge",
     "material.gtceu.rare_metallic_residue": "Rare Metallic Residue",
-    "material.gtceu.purified_naquadah": "Purified Naquadah"
+    "material.gtceu.purified_naquadah": "Purified Naquadah",
+    "gtceu.larger_barrel": "Mass Barrel Transformation",
+    "block.gtceu.larger_barrel": "Larger Barrel Controller"
 }
