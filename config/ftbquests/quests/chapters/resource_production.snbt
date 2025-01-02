@@ -1,0 +1,344 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "resource_production"
+	group: ""
+	id: "312B5D7DC7779EFE"
+	order_index: 5
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			id: "432BFDB7BAEBDC26"
+			tasks: [{
+				id: "2F60DBD66C059F97"
+				item: "exnihilosequentia:string_mesh"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -6.5d
+		}
+		{
+			id: "5593854C5DCF34E7"
+			tasks: [{
+				id: "6071867156639965"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -8.0d
+		}
+		{
+			id: "76DBCFE9856D072E"
+			tasks: [{
+				id: "79077878A7379445"
+				item: "minecraft:rooted_dirt"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -8.5d
+		}
+		{
+			id: "1B9C3215B57ACD9C"
+			tasks: [{
+				id: "1FFCA39CA9AB5EDF"
+				item: "minecraft:mud"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.0d
+		}
+		{
+			id: "2B99DECFDFAB83C1"
+			tasks: [{
+				id: "0F46E110B6E9C65C"
+				item: "minecraft:coarse_dirt"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -7.0d
+		}
+		{
+			id: "6781AB81FA054CD0"
+			tasks: [{
+				id: "7E33062A0A0FCCA1"
+				item: "exnihilosequentia:dust"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			id: "7718CDD1E61BB47A"
+			tasks: [{
+				id: "6BB290C1B8575DCB"
+				item: "exnihilosequentia:dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -5.0d
+		}
+		{
+			id: "1A5C2C6A089F7F96"
+			tasks: [{
+				id: "2BCAC7AF6CAE6A4A"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			id: "68DCCC639E6C7EFD"
+			tasks: [{
+				id: "3F169C593EAC7722"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			id: "307E479B78B92BF6"
+			tasks: [{
+				id: "2BE71EFF33A362F9"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -7.0d
+		}
+		{
+			id: "6C0C9B95A8DAB5D1"
+			tasks: [{
+				id: "68954273617B329C"
+				item: "exnihilosequentia:crushed_blackstone"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -8.0d
+		}
+		{
+			id: "55C232CBDCA3807D"
+			tasks: [{
+				id: "39418960999F9338"
+				item: "gtceu:mechanical_sieve"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -7.0d
+		}
+		{
+			id: "0B9EE9FD7510391D"
+			tasks: [{
+				id: "74FCC03002C61E9D"
+				item: "gtceu:large_sieve"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -6.0d
+		}
+		{
+			id: "56D819096421D55B"
+			tasks: [{
+				id: "3E52434CA1609E37"
+				item: "gtceu:rock_filtrator"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			id: "2309916BA68649D6"
+			tasks: [{
+				id: "5DF9BC6F11EF6360"
+				item: "gtceu:rock_sifter"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			id: "37B2D734AAEC98E8"
+			tasks: [{
+				id: "498B5F9A8334D0DF"
+				item: "kubejs:diamond_geode"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			id: "177CE1841A4C22CD"
+			tasks: [{
+				id: "0292D2058F8AE570"
+				item: "kubejs:emerald_geode"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.0d
+		}
+		{
+			id: "6130CEC7942DB195"
+			tasks: [{
+				id: "4FDE22033574075D"
+				item: "kubejs:ruby_geode"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			id: "12E08BD81D4AFDF0"
+			tasks: [{
+				id: "2930EFCCB24C95A6"
+				item: "kubejs:sapphire_geode"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			id: "3D51D9EE77B68083"
+			tasks: [{
+				id: "3EF24D86799451B3"
+				item: "kubejs:quartzite_geode"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			id: "729800025EA0DE0F"
+			tasks: [{
+				id: "3FBA8702552915C9"
+				item: "kubejs:topaz_geode"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			id: "2931F83E28641A15"
+			tasks: [{
+				id: "06B16224E518CF9E"
+				item: "kubejs:spessartine_geode"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			id: "440B9DAC6634B042"
+			tasks: [{
+				id: "1A11389A9EC7422D"
+				item: "kubejs:certus_quartz_geode"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			id: "12A3AD9F42C2FB2F"
+			tasks: [{
+				id: "0F248D73F02F3497"
+				item: "kubejs:green_sapphire_geode"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			id: "04044187B7B40420"
+			tasks: [{
+				id: "4BE56BBC61DCAE73"
+				item: "kubejs:blue_topaz_geode"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			id: "451A482AC6EC5DAF"
+			tasks: [{
+				id: "19148CB2F0B3BE0D"
+				item: "kubejs:apatite_geode"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			id: "08C8FF38DC514F71"
+			tasks: [{
+				id: "30F469B02F7C4C74"
+				item: "exnihilosequentia:sea_water_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			id: "64644CE15B3B4436"
+			tasks: [{
+				id: "75C69A55F919CAF6"
+				item: "gtceu:crushed_saltpeter_ore"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			id: "3780C8669F67F77E"
+			tasks: [{
+				id: "5DD04291A1C7094C"
+				item: "gtceu:crushed_rock_salt_ore"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			id: "6B1E88A09583F979"
+			tasks: [{
+				id: "6C506A8DE68CE57B"
+				item: "gtceu:salt_water_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			id: "27F8E208EAB7ADD8"
+			tasks: [{
+				id: "72915817A3997E4A"
+				item: "gtceu:large_barrel"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			id: "0296B4113A91D3BE"
+			tasks: [{
+				id: "2C51CCCBD2A00490"
+				item: "gtceu:void_miner"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			id: "2C7212CEB25F4C1B"
+			tasks: [{
+				id: "24EC866E968A6EF0"
+				item: "gtceu:void_excavator"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+	]
+	title: "Resource Production"
+}

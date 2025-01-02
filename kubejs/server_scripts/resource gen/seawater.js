@@ -1,11 +1,11 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.centrifuge('sea_water')
-        .inputFluids('exnihilosequentia:sea_water 1500')
+        .inputFluids('exnihilosequentia:sea_water 1250')
         .outputFluids('gtceu:salt_water 1000')
-        .itemOutputs('gtceu:saltpeter_dust', 'gtceu:rock_salt_dust', 'gtceu:small_borax_dust')
+        .itemOutputs('gtceu:crushed_saltpeter_ore', 'gtceu:crushed_rock_salt_ore', 'gtceu:small_borax_dust')
         .duration(50)
-        .EUt(16);
+        .EUt(GTValues.VHA[GTValues.LV]);
 
     //large barrel
     event.recipes.gtceu.large_barrel('sea_water')
