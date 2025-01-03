@@ -143,7 +143,7 @@
 				}
 			]
 			title: "Sieve and Mesh"
-			x: -2.5d
+			x: -1.5d
 			y: -1.5d
 		}
 		{
@@ -241,7 +241,7 @@
 				}
 			]
 			title: "Blackstone Sieving"
-			x: -4.0d
+			x: -2.5d
 			y: -0.5d
 		}
 		{
@@ -304,8 +304,12 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["26D3E2C0599B43B2"]
+			dependencies: [
+				"26D3E2C0599B43B2"
+				"2D1184752D7ACA66"
+			]
 			description: ["I recommend making some more dirt before using up all your island on these useful resources"]
+			icon: "minecraft:mud"
 			id: "3AC92138809F3783"
 			rewards: [{
 				id: "3808591A1B61371B"
@@ -334,8 +338,8 @@
 					type: "item"
 				}
 			]
-			title: "Oh the dirty goodness"
-			x: -2.5d
+			title: "Mud Sieving"
+			x: -1.5d
 			y: 1.0d
 		}
 		{
@@ -563,6 +567,7 @@
 			description: ["Every greg master needs their toolbelt fully stocked to get their first machines ready. We recommend starting with Iron/Wrought Iron and Flint where possible."]
 			hide_dependent_lines: true
 			id: "3D0F6CA8028C074B"
+			optional: true
 			rewards: [{
 				id: "783CFA9C4F222736"
 				item: "kubejs:coin"
@@ -797,15 +802,15 @@
 					type: "item"
 				}
 			]
-			title: "Clay production"
-			x: -2.0d
+			title: "Barrel Transformations"
+			x: -1.5d
 			y: 2.5d
 		}
 		{
 			dependencies: [
-				"2D1184752D7ACA66"
 				"3D0F6CA8028C074B"
 				"143BB2B07A083CC0"
+				"64E79272B5003119"
 			]
 			description: [
 				"It's your very first multiblock! "
@@ -1058,7 +1063,7 @@
 				type: "item"
 			}]
 			title: "Soul Sand production"
-			x: -0.5d
+			x: 0.5d
 			y: 4.0d
 		}
 		{
@@ -1094,14 +1099,14 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 3.25d
+			x: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"124EDCAB18E85B9D"
 				"10126B9D6EC90F59"
-				"2D1184752D7ACA66"
+				"64E79272B5003119"
 			]
 			description: ["Now you have access to LV machine hulls, you can now make a new multiblock that works with create to process your ores further. This gives you access to resources like gold which will help with progressing into create."]
 			icon: "gtceu:kinetic_ore_factory"
@@ -1214,8 +1219,8 @@
 				}
 			]
 			title: "Infinite Water"
-			x: -4.75d
-			y: 0.25d
+			x: -4.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -1244,7 +1249,7 @@
 				}
 			]
 			title: "Making fertilizer"
-			x: -5.0d
+			x: -5.5d
 			y: 2.5d
 		}
 		{
@@ -1323,7 +1328,7 @@
 				}
 			]
 			title: "Coke Oven"
-			x: -2.0d
+			x: -1.5d
 			y: 4.0d
 		}
 		{
@@ -1399,7 +1404,7 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
+			x: -1.5d
 			y: 5.5d
 		}
 		{
@@ -1511,7 +1516,7 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
+			x: -0.5d
 			y: 5.0d
 		}
 		{
@@ -1623,7 +1628,7 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
+			x: -2.5d
 			y: 5.0d
 		}
 		{
@@ -1863,7 +1868,7 @@
 				type: "item"
 			}]
 			title: "Easy Cobble Generator"
-			x: -5.75d
+			x: -5.5d
 			y: 4.0d
 		}
 		{
@@ -1876,7 +1881,7 @@
 				type: "item"
 			}]
 			title: "Making Witch Water?"
-			x: -4.0d
+			x: -3.5d
 			y: 1.0d
 		}
 		{
@@ -1989,6 +1994,28 @@
 			title: "Better Steel"
 			x: 8.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["7EE1BE4043827F35"]
+			id: "6D23752791E9928A"
+			tasks: [{
+				id: "0C4660A1923ED365"
+				item: "gtceu:tempered_glass"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2D1184752D7ACA66"]
+			id: "64E79272B5003119"
+			tasks: [{
+				id: "16F78BE1CAEEA2A5"
+				item: "gtceu:firebrick"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
 		}
 	]
 	title: "Early Game"

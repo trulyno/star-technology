@@ -4,171 +4,138 @@
 	default_quest_shape: "hexagon"
 	filename: "resource_production"
 	group: ""
+	icon: "minecraft:cobblestone"
 	id: "312B5D7DC7779EFE"
-	order_index: 5
+	order_index: 4
 	progression_mode: "flexible"
-	quest_links: [ ]
-	quests: [
+	quest_links: [
 		{
-			id: "432BFDB7BAEBDC26"
-			tasks: [{
-				id: "2F60DBD66C059F97"
-				item: "exnihilosequentia:string_mesh"
-				type: "item"
-			}]
+			id: "07AEEE10574951B3"
+			linked_quest: "30B2688F8387048F"
+			x: 7.5d
+			y: -9.5d
+		}
+		{
+			id: "427772AB7DFDCDFA"
+			linked_quest: "26D3E2C0599B43B2"
 			x: -7.0d
 			y: -9.5d
 		}
 		{
-			dependencies: ["432BFDB7BAEBDC26"]
+			id: "0D22B183203EFE71"
+			linked_quest: "3AC92138809F3783"
+			x: -9.0d
+			y: -8.5d
+		}
+		{
+			id: "2A14D8A1EB6C98A2"
+			linked_quest: "5F80268C02FAD5F6"
+			x: -4.0d
+			y: 0.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["26D3E2C0599B43B2"]
 			id: "5593854C5DCF34E7"
 			tasks: [{
 				id: "6071867156639965"
 				item: "minecraft:dirt"
 				type: "item"
 			}]
+			title: "Dirt Sieving"
 			x: -9.5d
-			y: -10.0d
+			y: -9.5d
 		}
 		{
-			dependencies: ["432BFDB7BAEBDC26"]
+			dependencies: [
+				"26D3E2C0599B43B2"
+				"5593854C5DCF34E7"
+			]
 			id: "76DBCFE9856D072E"
 			tasks: [{
 				id: "79077878A7379445"
 				item: "minecraft:rooted_dirt"
 				type: "item"
 			}]
+			title: "Rooted Dirt Sieving"
 			x: -9.0d
-			y: -11.0d
+			y: -10.5d
 		}
 		{
-			dependencies: ["432BFDB7BAEBDC26"]
-			id: "1B9C3215B57ACD9C"
-			tasks: [{
-				id: "1FFCA39CA9AB5EDF"
-				item: "minecraft:mud"
-				type: "item"
-			}]
-			x: -9.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["432BFDB7BAEBDC26"]
-			id: "2B99DECFDFAB83C1"
-			tasks: [{
-				id: "0F46E110B6E9C65C"
-				item: "minecraft:coarse_dirt"
-				type: "item"
-			}]
-			x: -9.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["432BFDB7BAEBDC26"]
+			dependencies: ["26D3E2C0599B43B2"]
 			id: "6781AB81FA054CD0"
 			tasks: [{
 				id: "7E33062A0A0FCCA1"
 				item: "exnihilosequentia:dust"
 				type: "item"
 			}]
+			title: "Waterlogged Dust Sieving"
 			x: -6.5d
 			y: -12.0d
 		}
 		{
-			dependencies: ["432BFDB7BAEBDC26"]
+			dependencies: ["26D3E2C0599B43B2"]
 			id: "7718CDD1E61BB47A"
 			tasks: [{
 				id: "6BB290C1B8575DCB"
 				item: "exnihilosequentia:dust"
 				type: "item"
 			}]
+			title: "Dust Sieving"
 			x: -5.0d
 			y: -8.0d
 		}
 		{
-			dependencies: ["432BFDB7BAEBDC26"]
+			dependencies: ["26D3E2C0599B43B2"]
 			id: "1A5C2C6A089F7F96"
 			tasks: [{
 				id: "2BCAC7AF6CAE6A4A"
 				item: "minecraft:sand"
 				type: "item"
 			}]
+			title: "Sand Sieving"
 			x: -4.5d
 			y: -9.0d
 		}
 		{
-			dependencies: ["432BFDB7BAEBDC26"]
+			dependencies: ["26D3E2C0599B43B2"]
 			id: "68DCCC639E6C7EFD"
 			tasks: [{
 				id: "3F169C593EAC7722"
 				item: "minecraft:sand"
 				type: "item"
 			}]
+			title: "Waterlogged Sand Sieving"
 			x: -7.5d
 			y: -12.0d
 		}
 		{
-			dependencies: ["432BFDB7BAEBDC26"]
+			dependencies: ["26D3E2C0599B43B2"]
 			id: "307E479B78B92BF6"
 			tasks: [{
 				id: "2BE71EFF33A362F9"
 				item: "minecraft:gravel"
 				type: "item"
 			}]
+			title: "Gravel Sieving"
 			x: -4.5d
 			y: -10.0d
 		}
 		{
-			dependencies: ["432BFDB7BAEBDC26"]
+			dependencies: ["26D3E2C0599B43B2"]
 			id: "6C0C9B95A8DAB5D1"
 			tasks: [{
 				id: "68954273617B329C"
 				item: "exnihilosequentia:crushed_blackstone"
 				type: "item"
 			}]
+			title: "Crushed Blackstone Sieving"
 			x: -5.0d
 			y: -11.0d
 		}
 		{
-			dependencies: ["432BFDB7BAEBDC26"]
-			id: "55C232CBDCA3807D"
-			tasks: [{
-				id: "39418960999F9338"
-				item: "gtceu:mechanical_sieve"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -7.0d
-		}
-		{
-			dependencies: [
-				"55C232CBDCA3807D"
-				"182D948925141764"
-			]
-			id: "0B9EE9FD7510391D"
-			tasks: [{
-				id: "74FCC03002C61E9D"
-				item: "gtceu:large_sieve"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -5.5d
-		}
-		{
-			id: "56D819096421D55B"
-			tasks: [{
-				id: "3E52434CA1609E37"
-				item: "gtceu:rock_filtrator"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 0.5d
-		}
-		{
-			dependencies: [
-				"0094C2E72105E8CA"
-				"56D819096421D55B"
-			]
+			dependencies: ["5F80268C02FAD5F6"]
 			id: "2309916BA68649D6"
 			tasks: [{
 				id: "5DF9BC6F11EF6360"
@@ -176,10 +143,10 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["56D819096421D55B"]
+			dependencies: ["5F80268C02FAD5F6"]
 			id: "37B2D734AAEC98E8"
 			tasks: [{
 				id: "498B5F9A8334D0DF"
@@ -190,7 +157,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["56D819096421D55B"]
+			dependencies: ["5F80268C02FAD5F6"]
 			id: "177CE1841A4C22CD"
 			tasks: [{
 				id: "0292D2058F8AE570"
@@ -201,7 +168,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["56D819096421D55B"]
+			dependencies: ["5F80268C02FAD5F6"]
 			id: "6130CEC7942DB195"
 			tasks: [{
 				id: "4FDE22033574075D"
@@ -212,7 +179,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["56D819096421D55B"]
+			dependencies: ["5F80268C02FAD5F6"]
 			id: "12E08BD81D4AFDF0"
 			tasks: [{
 				id: "2930EFCCB24C95A6"
@@ -223,7 +190,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["56D819096421D55B"]
+			dependencies: ["5F80268C02FAD5F6"]
 			id: "3D51D9EE77B68083"
 			tasks: [{
 				id: "3EF24D86799451B3"
@@ -234,29 +201,29 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["56D819096421D55B"]
+			dependencies: ["5F80268C02FAD5F6"]
 			id: "729800025EA0DE0F"
 			tasks: [{
 				id: "3FBA8702552915C9"
 				item: "kubejs:topaz_geode"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -2.0d
 			y: 2.5d
 		}
 		{
-			dependencies: ["56D819096421D55B"]
+			dependencies: ["5F80268C02FAD5F6"]
 			id: "2931F83E28641A15"
 			tasks: [{
 				id: "06B16224E518CF9E"
 				item: "kubejs:spessartine_geode"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -2.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["56D819096421D55B"]
+			dependencies: ["5F80268C02FAD5F6"]
 			id: "440B9DAC6634B042"
 			tasks: [{
 				id: "1A11389A9EC7422D"
@@ -267,7 +234,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["56D819096421D55B"]
+			dependencies: ["5F80268C02FAD5F6"]
 			id: "12A3AD9F42C2FB2F"
 			tasks: [{
 				id: "0F248D73F02F3497"
@@ -278,29 +245,29 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["56D819096421D55B"]
+			dependencies: ["5F80268C02FAD5F6"]
 			id: "04044187B7B40420"
 			tasks: [{
 				id: "4BE56BBC61DCAE73"
 				item: "kubejs:blue_topaz_geode"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["56D819096421D55B"]
+			dependencies: ["5F80268C02FAD5F6"]
 			id: "451A482AC6EC5DAF"
 			tasks: [{
 				id: "19148CB2F0B3BE0D"
 				item: "kubejs:apatite_geode"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.5d
 			y: -0.5d
 		}
 		{
-			dependencies: ["27F8E208EAB7ADD8"]
+			dependencies: ["5089EB61032A0C7D"]
 			id: "08C8FF38DC514F71"
 			tasks: [{
 				id: "30F469B02F7C4C74"
@@ -344,29 +311,9 @@
 			y: -12.0d
 		}
 		{
-			id: "27F8E208EAB7ADD8"
-			tasks: [{
-				id: "72915817A3997E4A"
-				item: "gtceu:large_barrel"
-				type: "item"
-			}]
-			x: 8.0d
-			y: -12.0d
-		}
-		{
-			id: "0296B4113A91D3BE"
-			tasks: [{
-				id: "2C51CCCBD2A00490"
-				item: "gtceu:void_miner"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -9.5d
-		}
-		{
 			dependencies: [
-				"0296B4113A91D3BE"
 				"0094C2E72105E8CA"
+				"30B2688F8387048F"
 			]
 			id: "2C7212CEB25F4C1B"
 			tasks: [{
@@ -374,22 +321,22 @@
 				item: "gtceu:void_excavator"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 9.5d
 			y: -9.5d
 		}
 		{
-			dependencies: ["56D819096421D55B"]
+			dependencies: ["5F80268C02FAD5F6"]
 			id: "2D790A43980AAE68"
 			tasks: [{
 				id: "790CFC06CEB6E321"
 				item: "kubejs:monazite_geode"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.5d
 			y: 0.5d
 		}
 		{
-			dependencies: ["0296B4113A91D3BE"]
+			dependencies: ["30B2688F8387048F"]
 			id: "581C773B90C29BEF"
 			tasks: [{
 				id: "2EE225837C833A9D"
@@ -400,7 +347,7 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["0296B4113A91D3BE"]
+			dependencies: ["30B2688F8387048F"]
 			id: "07BC22F2A28126E1"
 			tasks: [{
 				id: "3B569981303AF885"
@@ -411,7 +358,7 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["0296B4113A91D3BE"]
+			dependencies: ["30B2688F8387048F"]
 			id: "0E35E757EBAA1FD8"
 			tasks: [{
 				id: "48B7F9D68ABE97B4"
@@ -422,7 +369,7 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["0296B4113A91D3BE"]
+			dependencies: ["30B2688F8387048F"]
 			id: "77584F14C573BBC1"
 			tasks: [{
 				id: "0F8709741CA14E72"
@@ -433,7 +380,7 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["0296B4113A91D3BE"]
+			dependencies: ["30B2688F8387048F"]
 			id: "33B0EC203D30977D"
 			tasks: [{
 				id: "0F81EE667907679A"
@@ -444,7 +391,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["0296B4113A91D3BE"]
+			dependencies: ["30B2688F8387048F"]
 			id: "47A7DAF6C3A3691C"
 			tasks: [{
 				id: "2902FAF2CD326A78"
@@ -455,7 +402,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["0296B4113A91D3BE"]
+			dependencies: ["30B2688F8387048F"]
 			id: "5F9FBAC1FB36B1D3"
 			tasks: [{
 				id: "730687A7D9BFC8FE"
@@ -466,10 +413,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: [
-				"0296B4113A91D3BE"
-				"5F9FBAC1FB36B1D3"
-			]
+			dependencies: ["5F9FBAC1FB36B1D3"]
 			dependency_requirement: "one_started"
 			id: "4F3AB86CDC557B11"
 			tasks: [{
@@ -477,8 +421,8 @@
 				item: "gtceu:raw_ore_slurry_bucket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -7.0d
+			x: 9.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
@@ -488,7 +432,7 @@
 				item: "gtceu:chromite_sludge_dust"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: -5.5d
 		}
 		{
@@ -499,7 +443,7 @@
 				item: "gtceu:rare_sludge_dust"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.0d
 			y: -4.5d
 		}
 		{
@@ -510,7 +454,7 @@
 				item: "gtceu:vanadium_magnetite_sludge_dust"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.0d
 			y: -4.5d
 		}
 		{
@@ -521,7 +465,7 @@
 				item: "ae2:sky_dust"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 5.5d
 			y: -5.5d
 		}
 		{
@@ -533,7 +477,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4F3AB86CDC557B11"]
@@ -544,7 +488,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["4F3AB86CDC557B11"]
@@ -555,7 +499,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["4F3AB86CDC557B11"]
@@ -566,7 +510,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4F3AB86CDC557B11"]
@@ -588,7 +532,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["26E08C0B689C129F"]
@@ -599,7 +543,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["26E08C0B689C129F"]
@@ -610,7 +554,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["62E3D33072698B07"]
@@ -621,7 +565,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["62E3D33072698B07"]
@@ -632,7 +576,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["62E3D33072698B07"]
@@ -643,7 +587,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2032DAAC7C6ADC0F"]
@@ -654,7 +598,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2032DAAC7C6ADC0F"]
@@ -665,7 +609,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2032DAAC7C6ADC0F"]
@@ -676,7 +620,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -943,20 +887,6 @@
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"27F8E208EAB7ADD8"
-				"0094C2E72105E8CA"
-			]
-			id: "03685E21BFED42D7"
-			tasks: [{
-				id: "1990B5E59C8B2344"
-				item: "gtceu:larger_barrel"
-				type: "item"
-			}]
-			x: 9.5d
-			y: -12.0d
-		}
-		{
 			dependencies: ["440B9DAC6634B042"]
 			id: "08B01C99849E7196"
 			tasks: [{
@@ -1041,7 +971,7 @@
 				item: "gtceu:crushed_topaz_ore"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.0d
 			y: 3.5d
 		}
 		{
@@ -1052,7 +982,7 @@
 				item: "gtceu:crushed_blue_topaz_ore"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: 2.0d
 		}
 		{
@@ -1063,7 +993,7 @@
 				item: "gtceu:crushed_monazite_ore"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: 0.5d
 		}
 		{
@@ -1074,7 +1004,7 @@
 				item: "gtceu:crushed_apatite_ore"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: -1.0d
 		}
 		{
@@ -1085,8 +1015,30 @@
 				item: "gtceu:crushed_spessartine_ore"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["26D3E2C0599B43B2"]
+			id: "4C9CB593DFCC7FEC"
+			tasks: [{
+				id: "1F31B3C3C4DEE31E"
+				item: "gtceu:mechanical_sieve"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4C9CB593DFCC7FEC"]
+			id: "60F9C67C58B7A08E"
+			tasks: [{
+				id: "00026A770260E67D"
+				item: "gtceu:large_sieve"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.5d
 		}
 	]
 	title: "Resource Production"

@@ -21,7 +21,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('W', Predicates.blocks('kubejs:wood_casing')
                 //.or(Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2)))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1)))
             .where('F', Predicates.blocks('gtceu:treated_wood_frame'))     
             .where('M', Predicates.blocks('kubejs:meshblock'))
             .where('.', Predicates.any())
