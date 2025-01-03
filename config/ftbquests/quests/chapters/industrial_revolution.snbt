@@ -1504,8 +1504,8 @@
 				item: "create_new_age:energiser_t2"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 2.5d
+			x: -10.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["04876D3FDD4BE6F7"]
@@ -1522,8 +1522,8 @@
 				item: "create_new_age:energiser_t3"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 3.5d
+			x: -8.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["35D6B5C30A3A2AE0"]
@@ -1570,8 +1570,8 @@
 				item: "create_new_age:layered_magnet"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 4.5d
+			x: -12.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5FD374ACECB3E571"]
@@ -1586,8 +1586,8 @@
 				item: "create_new_age:fluxuated_magnetite"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 5.5d
+			x: -10.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1607,7 +1607,7 @@
 				item: "create_new_age:netherite_magnet"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -8.5d
 			y: 6.5d
 		}
 		{
@@ -1641,8 +1641,8 @@
 				item: "create_new_age:overcharged_iron_wire"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 3.5d
+			x: -11.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["24EC88E9B8205348"]
@@ -1658,8 +1658,8 @@
 				item: "create_new_age:overcharged_golden_wire"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 4.5d
+			x: -9.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3CD2FE0563B226A7"]
@@ -1677,7 +1677,7 @@
 				item: "create_new_age:overcharged_diamond_wire"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -7.5d
 			y: 5.5d
 		}
 		{
@@ -1764,6 +1764,7 @@
 				"7908E8C196F82F9B"
 			]
 			dependency_requirement: "one_completed"
+			description: ["Iron (III) Chloride or Sodium Persulfate Quest Completion"]
 			id: "3A20504009C70217"
 			tasks: [{
 				id: "633C63725D58A795"

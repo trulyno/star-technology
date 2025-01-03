@@ -403,6 +403,10 @@
     "material.gtceu.vanadium_magnetite_sludge": "Vanadium Magnetite Sludge",
     "material.gtceu.rare_metallic_residue": "Rare Metallic Residue",
     "material.gtceu.purified_naquadah": "Purified Naquadah",
-    "gtceu.larger_barrel": "Mass Barrel Transformation",
-    "block.gtceu.larger_barrel": "Larger Barrel Controller"
+    "gtceu.barrel": "Barrel Soaking",
+    "gtceu.barrel_composting": "Barrel Composting",
+    "gtceu.barrel_transformation": "Barrel Transformation",
+    "block.gtceu.ulv_barrel": "Wooden Barrel",
+    "gtceu.stone_barrel": "Barrel Formation",
+    "block.gtceu.ulv_stone_barrel": "Stone Barrel"
 }

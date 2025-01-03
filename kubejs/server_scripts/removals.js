@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
     ];
 
     const toRemoveType = ['thermal:sawmill', 'thermal:pulverizer', 'thermal:insolator', 'thermal:centrifuge', 'thermal:crucible', 'thermal:chiller', 'thermal:refinery', 'thermal:pyrolyzer',
-        'thermal:crystallizer', 'thermal:press', 'thermal:smelter'
+        'thermal:crystallizer', 'thermal:press', 'thermal:smelter', 'exnihilosequentia:precipitate', 'exnihilosequentia:compost', 'exnihilosequentia:solidifying', 'exnihilosequentia:transition'
     ];
 
     toRemoveOutput.forEach(element => {
@@ -70,9 +70,7 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'exnihilosequentia:sifting', input: 'minecraft:mud'});
     event.remove({ type: 'exnihilosequentia:sifting', input: 'exnihilosequentia:crushed_end_stone'});
     //need to remove flint/iron/diamond mesh leave variants
-    event.remove({ type: 'exnihilosequentia:precipitate', output: 'minecraft:netherrack'});
-    event.remove({ type: 'exnihilosequentia:precipitate', output: 'minecraft:end_stone'});
-
+  
     event.remove({ input: 'minecraft:fire_charge'});
     event.remove({ input: 'thermal:earth_charge'});
     event.remove({ mod: 'mysticalagriculture'});

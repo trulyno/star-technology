@@ -14,22 +14,11 @@ ServerEvents.recipes(event => {
         .outputFluids('exnihilosequentia:sea_water 1000')
         .duration(80);
 
-    //larger barrel
-    event.shaped('gtceu:larger_barrel',[
-        'ABA',
-        'CDC',
-        'ABA'],{
-        A: 'kubejs:wood_casing',
-        B: '#gtceu:circuits/luv',
-        C: 'gtceu:double_watertight_steel_plate',
-        D: 'gtceu:luv_quantum_tank'
-    });
-
-    event.recipes.gtceu.larger_barrel('sea_water')
-        .itemInputs('minecraft:sand')
-        .inputFluids('minecraft:water 16000')
-        .outputFluids('exnihilosequentia:sea_water 16000')
-        .duration(400)
+       event.recipes.gtceu.mixer('sea_water')
+        .itemInputs('2x minecraft:sand')
+        .inputFluids('minecraft:water 8000')
+        .outputFluids('exnihilosequentia:sea_water 8000')
+        .duration(500)
         .EUt(GTValues.VHA[GTValues.EV]);
 
 });

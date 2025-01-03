@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     ], {
         P: 'gtceu:treated_wood_planks',
         S: 'gtceu:treated_wood_rod',
-        B: '#exnihilosequentia:barrels',
+        B: 'gtceu:ulv_barrel',
         I: 'gtceu:wrought_iron_plate'
     });
 

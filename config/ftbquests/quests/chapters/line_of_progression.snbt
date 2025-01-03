@@ -332,6 +332,12 @@
 			x: -15.0d
 			y: -21.0d
 		}
+		{
+			id: "387162CF368FDBCD"
+			linked_quest: "3FB8E0105D2C20B4"
+			x: -18.0d
+			y: -26.0d
+		}
 	]
 	quests: [
 		{
@@ -1078,36 +1084,6 @@
 			y: -26.5d
 		}
 		{
-			dependencies: [
-				"390CB178FC2D2CCC"
-				"56BA79287C4DBE52"
-			]
-			disable_toast: true
-			id: "54507D70A9146F13"
-			tasks: [{
-				id: "450790DB3D88B542"
-				item: "gtceu:electric_blast_furnace"
-				type: "item"
-			}]
-			x: -18.0d
-			y: -26.0d
-		}
-		{
-			dependencies: [
-				"54507D70A9146F13"
-				"649596731FFA9C9A"
-			]
-			disable_toast: true
-			id: "33CDF6961474D5D8"
-			tasks: [{
-				id: "4AF093A5C148C3D6"
-				item: "gtceu:multi_smelter"
-				type: "item"
-			}]
-			x: -18.0d
-			y: -24.5d
-		}
-		{
 			dependencies: ["17C1292018AE363E"]
 			disable_toast: true
 			id: "2ECE0A000153328C"
@@ -1290,6 +1266,28 @@
 			}]
 			x: -15.0d
 			y: -19.5d
+		}
+		{
+			dependencies: ["1F5CCE8CFD02903A"]
+			id: "7723F15BCF70097D"
+			tasks: [{
+				id: "5064575899053FEA"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -24.5d
+		}
+		{
+			dependencies: ["7723F15BCF70097D"]
+			id: "4FFAD4C64372BE75"
+			tasks: [{
+				id: "25EF04496122399B"
+				item: "gtceu:multi_smelter"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -24.5d
 		}
 	]
 	title: "Line Of Progression"

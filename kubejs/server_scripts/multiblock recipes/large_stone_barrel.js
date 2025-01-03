@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     ], {
         P: 'minecraft:stone',
         S: 'gtceu:treated_wood_rod',
-        B: 'exnihilosequentia:stone_barrel',
+        B: 'gtceu:ulv_stone_barrel',
         I: 'gtceu:wrought_iron_plate'
     });
 

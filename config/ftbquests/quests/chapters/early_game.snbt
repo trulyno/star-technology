@@ -783,25 +783,18 @@
 		{
 			dependencies: ["03ACC7D2577A2C66"]
 			description: ["Take a barrel of water and add some dust, you get a block of clay. How neat is that."]
-			icon: "exnihilosequentia:oak_barrel"
+			icon: "gtceu:ulv_barrel"
 			id: "2D1184752D7ACA66"
 			rewards: [{
 				id: "33CC60792D4A7D78"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "5089EB61032A0C7D"
-					item: "exnihilosequentia:oak_barrel"
-					type: "item"
-				}
-				{
-					id: "546FB9C3F03FB135"
-					item: "minecraft:clay"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0B64D2D98654B971"
+				item: "gtceu:ulv_barrel"
+				type: "item"
+			}]
 			title: "Barrel Transformations"
 			x: -1.5d
 			y: 2.5d
@@ -1863,8 +1856,8 @@
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
-				id: "6966C74177CE78EF"
-				item: "exnihilosequentia:stone_barrel"
+				id: "67E293DD7B193FF1"
+				item: "gtceu:ulv_stone_barrel"
 				type: "item"
 			}]
 			title: "Easy Cobble Generator"
@@ -1986,13 +1979,15 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "2AA27D335CF0EDED"
 				item: "gtceu:solid_blast_furnace"
 				type: "item"
 			}]
 			title: "Better Steel"
-			x: 8.5d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -2011,7 +2006,7 @@
 			id: "64E79272B5003119"
 			tasks: [{
 				id: "16F78BE1CAEEA2A5"
-				item: "gtceu:firebrick"
+				item: "minecraft:clay_ball"
 				type: "item"
 			}]
 			x: 0.0d

@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)    
         .recipeType('vibration_laser_engraver')
         .appearanceBlock(GCYMBlocks.CASING_VIBRATION_SAFE)
-        .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
+        .recipeModifier(GTRecipeModifiers.OC_PERFECT)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("######BCCCB######", "#####DBCCCBD#####", "####DDBCCCBDD####", "###DDBBCCCBBDD###", "##DDBBBCCCBBBDD##", "#DDBBEBBBBBEBBDD#", "BBBBBBBDDDBBBBBBB", "CCCCCBDDADDBCCCCC", "CCCCCBDAAADBCCCCC", "CCCCCBDDADDBCCCCC", "BBBBBBBDDDBBBBBBB", "#DDBBEBBBBBEBBDD#", "##DDBBBCCCBBBDD##", "###DDBBCCCBBDD###", "####DDBCCCBDD####", "#####DBCCCBD#####", "######BCCCB######") 
             .aisle("#####DBCCCBD#####", "###BB###F###BB###", "##BB####F####BB##", "#BB#####F#####BB#", "#B#############B#", "D######GGG######D", "B#####GDDDG#####B", "C####GDDDDDG####C", "CFFF#GDDDDDG#FFFC", "C####GDDDDDG####C", "B#####GDDDG#####B", "D######GGG######D", "#B#############B#", "#BB#####F#####BB#", "##BB####F####BB##", "###BB###F###BB###", "#####DBCCCBD#####") 

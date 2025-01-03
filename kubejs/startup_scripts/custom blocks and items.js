@@ -492,3 +492,9 @@ StartupEvents.registry('block', event => {
         .textureAll('kubejs:block/multiblock/meshblock');
 
 });
+
+BlockEvents.modification(event => {
+    event.modify('gtceu:nether_star_block', block => {
+      block.lightEmission = 15
+    })
+});
