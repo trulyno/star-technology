@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/resource_gen/reflective_casing_ctm"
+    }
+}
