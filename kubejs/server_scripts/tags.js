@@ -5,7 +5,6 @@ ServerEvents.tags('item', event => {
     event.add('gtceu:circuits/uev', 'kubejs:draconic_wetware_processor_computer');
     event.add('gtceu:circuits/uiv', 'kubejs:draconic_wetware_processor_mainframe');
     event.remove('minecraft:planks', 'gtceu:treated_wood_planks');
-    event.removeAllTagsFrom( /nuclearcraft:*/ )
     
     event.add('exnihilosequentia:mesh', 'exnihilosequentia:string_mesh');
     event.add('exnihilosequentia:mesh', 'exnihilosequentia:flint_mesh');
