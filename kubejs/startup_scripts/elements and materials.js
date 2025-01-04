@@ -148,7 +148,7 @@ function VH(voltage) {
         case 'opv': v = GTValues.VH[GTValues.OpV]; break;
         case 'max': v = GTValues.VH[GTValues.MAX]; break;
     }
-    return V;
+    return v;
 }
 
 function VHA(voltage) {
@@ -170,7 +170,7 @@ function VHA(voltage) {
         case 'opv': v = GTValues.VHA[GTValues.OpV]; break;
         case 'max': v = GTValues.VHA[GTValues.MAX]; break;
     }
-    return V;
+    return v;
 }
 
 function periodicTableElement(material, type) {
@@ -214,7 +214,7 @@ function periodicTableElement(material, type) {
 
 function blastProperty(material, temperature, gasTier, voltage, duration) {
     let mat = GTMaterials.get(material);
-    mat.setProperty(PropertyKey.BLAST, new $BlastProperty(temperature, gasTier, voltage, duration,-1, -1));
+    mat.setProperty(PropertyKey.BLAST, new $BlastProperty(temperature, gasTier, voltage, duration, -1, -1));
 }
 
 /*
@@ -232,30 +232,37 @@ function blastProperty(material, temperature, gasTier, voltage, duration) {
 */
 elementRegistry(event => {
     // For the material that will have ? as it's atomic symbol in chemical formulas
-    event.create('mystery', -1, -1, -1, null, '?', false);
+    const elem = (name, p, n, sym) => {
+        event.create(name)
+            .protons(p)
+            .neutrons(n)
+            .symbol(sym);
+    };
+    elem('mystery', -1, -1, '?');
 
     // Netherite Line
-    event.create('debris', -1, -1, -1, null, '?', false);
-    event.create('pure_netherite', 124, 345, -1, null, '*Nr*', false);
+    elem('debris', -1, -1, '?');
+    elem('pure_netherite', 124, 345, '*Nr*');
 
     // Classic Stargate
-    event.create('echo_r', -1, -1, -1, null, 'Ec', false);
+    elem('purified_naquadah', 1, 1, '*Nq*');
+    elem('echo_r', -1, -1, 'Ec');
 
     // Abydos Materials
-    event.create('zapolgium', 141, 217, -1, null, 'Zg', false);
-    event.create('akreyrium', -1, -1, -1, null, 'Ak', false);
+    elem('zapolgium', 141, 217, 'Zg');
+    elem('akreyrium', -1, -1, 'Ak');
 
     // Nether Materials
-    event.create('mythril', 132, 193, -1, null, 'My', false);
-    event.create('adamantine', 131, 182, -1, null, 'Ad', false);
-    event.create('estalt', 133, 199, -1, null, 'El', false);
-    event.create('calamatium', 134, 211, -1, null, 'Ct', false);
-    event.create('isovol', 135, 221, -1, null, 'Is', false);
+    elem('mythril', 132, 193, 'My');
+    elem('adamantine', 131, 182, 'Ad');
+    elem('estalt', 133, 199, 'El');
+    elem('calamatium', 134, 211, 'Ct');
+    elem('isovol', 135, 221, 'Is');
 
     // End Materials
-    event.create('xeproda', 136, 265, -1, null, 'Xp', false);
-    event.create('rhexis', 137, 298, -1, null, 'Rx', false);
-    event.create('chalyblux', 138, 312, -1, null, 'Cx', false);
+    elem('xeproda', 136, 265, 'Xp');
+    elem('rhexis', 137, 298, 'Rx');
+    elem('chalyblux', 138, 312, 'Cx');
 });
 
 /*
@@ -320,6 +327,24 @@ elementRegistry(event => {
         .addDefaultEnchant()
         
 */
+
+/*
+event.create('netherite')
+        .dust()
+        .components('4x debris', '4x gold')
+        .color(0x1a0d00)
+        .iconSet(DULL)
+        .flags(no_decomp);
+*/
+
+GTCEuStartupEvents.materialModification(event => {
+
+    GTMaterials.Netherite.setMaterialARGB(0x1a0d00);
+    GTMaterials.Netherite.setComponents('4x debris', '4x gold');
+    GTMaterials.Netherite.setMaterialIconSet(DULL);
+
+});
+
 materialRegistry(event => {
 
     // Periodic table materials
@@ -356,7 +381,8 @@ materialRegistry(event => {
     GTMaterials.Europium.addFlags(small_spring);
     GTMaterials.Zirconium.addFlags(fine_wire); 
     GTMaterials.RedSteel.addFlags(rod, frame);
-    GTMaterials.SterlingSilver.addFlags(rod, frame);      
+    GTMaterials.SterlingSilver.addFlags(rod, frame);     
+    GTMaterials.Netherite.addFlags(no_decomp); 
 
     // Blast Properties of periodic table metals
     blastProperty('zirconium', 8000, 'higher', VA('zpm'), 800);
@@ -567,7 +593,7 @@ materialRegistry(event => {
         .iconSet(SHINY)
         .blastTemp(10799, 'highest', VA('uhv'), 6000)
         .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame, fine_wire)
+            rod, rotor, small_gear, ring, frame)
         .cableProperties(V('uhv'), 512, 0, true)
         .rotorStats(2800, 660, 3, 96000);
 
@@ -614,7 +640,7 @@ materialRegistry(event => {
         .color(0x82fcc3)
         .flags(no_decomp);
 
-    event.create('hot_pcbcoolant')
+    event.create('hot_pcb_coolant')
         .fluid()
         .components('1x pcb_coolant', '1x mystery')
         .color(0xc9ca81)
@@ -631,12 +657,12 @@ materialRegistry(event => {
         .components('debris')
         .color(0xcc0000);
 
-    event.create('netherite')
-        .dust()
-        .components('4x debris', '4x gold')
-        .color(0x1a0d00)
-        .iconSet(DULL)
-        .flags(no_decomp);
+    // event.create('netherite')
+    //     .dust()
+    //     .components('4x debris', '4x gold')
+    //     .color(0x1a0d00)
+    //     .iconSet(DULL)
+    //     .flags(no_decomp);
     
     event.create('chlorine_trifluoride')
         .fluid()
@@ -1594,5 +1620,69 @@ materialRegistry(event => {
     event.create('akreyrium_pcb_graphite_nanoparticle_coolant')
         .fluid()
         .color(0x676763);
+
+    //EPSILON Resource Gen stuff
+    function liquid(name, color, composition){
+        event.create(name)
+            .fluid()
+            .components(composition)
+            .color(color)
+            .flags(no_decomp);
+    };
+
+    function dust(name, color, composition){
+        event.create(name)
+            .dust()
+            .color(color)
+            .components(composition) 
+            .flags(no_decomp);
+    };
+
+    liquid('iron_mixture', 0xC42626, '1x mystery');
+    liquid('copper_mixture', 0xC86524, '1x mystery');
+    liquid('quartz_mixture', 0xABC5E0, '1x mystery');
+
+    /*/reflective metal
+    event.create('reflective_metal')
+        .ingot()
+        .components('5x aluminium', '3x steel', '2x glowstone')
+        .color(0xA1ABBC)
+        .flags(plates, rod, frame)
+        .iconSet(DULL)
+        .blastTemp(2000, 'low', VA('mv'), 600);*/
+
+    liquid('rare_ore_residue', 0x556278, '1x mystery');
+
+    dust('chromite_sludge', 0x4C3C4C, ['2x chromite', '1x mystery'])
+    dust('rare_sludge', 0xCCEC94, ['1x mystery'])
+    dust('vanadium_magnetite_sludge', 0x1C1C2C, ['2x vanadium_magnetite', '1x mystery'])
+
+    dust('rare_metallic_residue', 0x515755, ['1x silver', '2x calcite'])
+
+    liquid('raw_ore_slurry', 0x7B8087, '1x mystery');
+    liquid('mixed_mineral_residue', 0x566E6E, '1x mystery');
+    liquid('sulfuric_mineral_mixture', 0xE34f1E, '1x mystery');
+    liquid('oxygenous_mineral_mixture', 0x359696, '1x mystery');
+    liquid('molten_ore_mixture', 0x575050, '1x mystery');
+
+    //molten ores
+    function moltenore(name, color){
+        liquid(`molten_${name}_ore`, color, name)
+    };
+    
+    moltenore('bauxite', 0xB5B69A);
+    moltenore('pitchblende', 0xAFC585);
+    moltenore('molybdenite', 0xC1D0A4);
+    moltenore('ilmenite', 0xCBA88F);
+    moltenore('scheelite', 0xBACBCF);
+    moltenore('tungstate', 0x9CACB1);
+    moltenore('bastnasite',0x988E84);
+    liquid('molten_cooperite_ore', 0xA4A38B, '1x cooperite');
+
+    event.create("purified_naquadah")
+        .gem()
+        .color(0x000807)
+        .element(GTElements.get('purified_naquadah')) 
+        .flags(no_decomp);
 
 });

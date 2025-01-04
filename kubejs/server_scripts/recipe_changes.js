@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer('weapon_grade_naquadah')
         .itemInputs('2x gtceu:pure_netherite_dust', '5x gtceu:neutronium_dust')
-        .inputFluids('gtceu:naquadria 1008', 'gtceu:fluorine 16000')
+        .inputFluids('gtceu:naquadria 7000', 'gtceu:fluorine 16000')
         .itemOutputs('30x gtceu:weapon_grade_naquadah_dust')
         .duration(1200)
         .EUt(346000);
@@ -493,14 +493,6 @@ ServerEvents.recipes(event => {
         .duration(1600)
         .EUt(480);
 
-    //cobblestone farm fix
-    event.remove({ id:'exnihilosequentia:solidify/ens_cobblestone' })
-    event.custom({
-        "type": "exnihilosequentia:solidifying",
-        "fluidInTank": "minecraft:water 1000",
-        "fluidOnTop": "minecraft:lava 1000",
-        "result": "minecraft:cobblestone"
-    });
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {

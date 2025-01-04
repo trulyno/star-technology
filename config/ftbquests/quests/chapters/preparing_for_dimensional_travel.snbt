@@ -1,4 +1,5 @@
 {
+	autofocus_id: "0889A97E22C484CC"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "preparing_for_dimensional_travel"
@@ -396,7 +397,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["3D3E637BCB06115F"]
+			dependencies: ["1C81273869C0EC9F"]
 			id: "348D6E3A94706230"
 			rewards: [{
 				id: "71BE79092CABFD49"
@@ -874,8 +875,8 @@
 				type: "dimension"
 			}]
 			title: "To Abydos"
-			x: 1.0d
-			y: -10.5d
+			x: -1.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
@@ -1324,6 +1325,17 @@
 			}]
 			x: -7.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["3FC351F05F2AC743"]
+			id: "1C81273869C0EC9F"
+			tasks: [{
+				id: "51FFFC651CA18531"
+				item: "gtceu:vibration_laser_engraver"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
 		}
 	]
 	title: "Making the Classic Stargate"

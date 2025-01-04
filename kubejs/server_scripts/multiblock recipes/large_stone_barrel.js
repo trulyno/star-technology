@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(event => {
 
     event.shaped(Item.of('gtceu:large_stone_barrel'), [
@@ -8,20 +7,20 @@ ServerEvents.recipes(event => {
     ], {
         P: 'minecraft:stone',
         S: 'gtceu:treated_wood_rod',
-        B: 'exnihilosequentia:stone_barrel',
+        B: 'gtceu:ulv_stone_barrel',
         I: 'gtceu:wrought_iron_plate'
     });
 
     event.recipes.gtceu.large_stone_barrel('lava_from_stones')
         .itemInputs('#forge:stone')
         .notConsumable('minecraft:soul_campfire')
-        .outputFluids('minecraft:lava 250')
+        .outputFluids('minecraft:lava 500')
         .duration(200);
 
     event.recipes.gtceu.large_stone_barrel('lava_from_cobblestones')
         .itemInputs('#forge:cobblestone')
         .notConsumable('minecraft:soul_campfire')
-        .outputFluids('minecraft:lava 250')
+        .outputFluids('minecraft:lava 500')
         .duration(200);
 
     event.recipes.gtceu.large_stone_barrel('obsidian')

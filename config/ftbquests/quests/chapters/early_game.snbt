@@ -4,7 +4,7 @@
 	filename: "early_game"
 	group: "1E0FC4EA21F735F7"
 	icon: "gtceu:lv_4a_energy_converter"
-	id: "38AF26A803768456"
+	id: "75C4C0229F2D2798"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -26,8 +26,8 @@
 				type: "item"
 			}]
 			title: "Chopping some trees down"
-			x: -0.5d
-			y: -1.5d
+			x: -5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -35,11 +35,7 @@
 				"20A12F3B992762F0"
 				"3AF688ADC18E580C"
 			]
-			description: [
-				"The converter blocks will become the backbone of your base, turning RF to EU to a 4 to 1 ratio. You can have multiple of these on a single line of cables only if the cables can support the amps."
-				""
-				"If you are having issues try bonking it with a \"soft mallet\""
-			]
+			description: ["The converter blocks will become the backbone of your base, turning RF to EU to a 4 to 1 ratio. You can have multiple of these on a single line of cables only if the cables can support the amps."]
 			id: "511898EE4087FED7"
 			rewards: [{
 				count: 2
@@ -79,8 +75,8 @@
 				type: "item"
 			}]
 			title: "The great industrial revolution"
-			x: 12.0d
-			y: 0.0d
+			x: 7.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -117,8 +113,8 @@
 				}
 			]
 			title: "Wormy buisiness"
-			x: -0.5d
-			y: -4.0d
+			x: -5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7717C0904590E303"]
@@ -147,8 +143,8 @@
 				}
 			]
 			title: "Sieve and Mesh"
-			x: 2.5d
-			y: -4.0d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -183,8 +179,8 @@
 				}
 			]
 			title: "I need water"
-			x: 1.5d
-			y: 0.0d
+			x: -3.5d
+			y: 2.5d
 		}
 		{
 			description: ["By shift-right clicking Grass, you can get pebbles for the basic stone types."]
@@ -211,8 +207,8 @@
 				}
 			]
 			title: "Pebble for days"
-			x: 1.0d
-			y: -7.5d
+			x: -4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -245,8 +241,8 @@
 				}
 			]
 			title: "Blackstone Sieving"
-			x: 1.0d
-			y: -3.0d
+			x: -2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["07CBF849162D7BDF"]
@@ -287,8 +283,8 @@
 				}
 			]
 			title: "Hammering stuff down"
-			x: 1.0d
-			y: -5.5d
+			x: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["07CBF849162D7BDF"]
@@ -304,12 +300,16 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -7.5d
+			x: -1.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["26D3E2C0599B43B2"]
+			dependencies: [
+				"26D3E2C0599B43B2"
+				"2D1184752D7ACA66"
+			]
 			description: ["I recommend making some more dirt before using up all your island on these useful resources"]
+			icon: "minecraft:mud"
 			id: "3AC92138809F3783"
 			rewards: [{
 				id: "3808591A1B61371B"
@@ -338,9 +338,9 @@
 					type: "item"
 				}
 			]
-			title: "Oh the dirty goodness"
-			x: 2.5d
-			y: -1.5d
+			title: "Mud Sieving"
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -383,8 +383,8 @@
 				}
 			]
 			title: "Resources for days"
-			x: 3.5d
-			y: -5.5d
+			x: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -414,8 +414,8 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -4.5d
+			x: 4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -459,8 +459,8 @@
 				}
 			]
 			title: "LV Machine Hull"
-			x: 12.0d
-			y: -2.5d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -490,8 +490,8 @@
 				}
 			]
 			title: "Soul Infused Wires"
-			x: 10.5d
-			y: 1.5d
+			x: 5.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
@@ -507,8 +507,8 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -7.0d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["039D327E919878BF"]
@@ -525,8 +525,8 @@
 				type: "item"
 			}]
 			title: "Get your Plates cheap"
-			x: 7.0d
-			y: -8.0d
+			x: 2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -559,14 +559,15 @@
 				}
 			]
 			title: "Latex extraction"
-			x: 10.5d
-			y: -7.0d
+			x: 5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
 			description: ["Every greg master needs their toolbelt fully stocked to get their first machines ready. We recommend starting with Iron/Wrought Iron and Flint where possible."]
 			hide_dependent_lines: true
 			id: "3D0F6CA8028C074B"
+			optional: true
 			rewards: [{
 				id: "783CFA9C4F222736"
 				item: "kubejs:coin"
@@ -673,8 +674,8 @@
 				}
 			]
 			title: "Tools for days"
-			x: 2.25d
-			y: -6.5d
+			x: -2.75d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
@@ -702,8 +703,8 @@
 				}
 			]
 			title: "Frying iron on a Campfire"
-			x: 5.0d
-			y: -5.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["039D327E919878BF"]
@@ -745,8 +746,8 @@
 				}
 			]
 			title: "Mixer setup for alloying"
-			x: 7.0d
-			y: -7.0d
+			x: 2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -776,40 +777,33 @@
 				}
 			]
 			title: "Insulation for your cables"
-			x: 12.0d
-			y: -8.0d
+			x: 7.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["03ACC7D2577A2C66"]
 			description: ["Take a barrel of water and add some dust, you get a block of clay. How neat is that."]
-			icon: "exnihilosequentia:oak_barrel"
+			icon: "gtceu:ulv_barrel"
 			id: "2D1184752D7ACA66"
 			rewards: [{
 				id: "33CC60792D4A7D78"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "5089EB61032A0C7D"
-					item: "exnihilosequentia:oak_barrel"
-					type: "item"
-				}
-				{
-					id: "546FB9C3F03FB135"
-					item: "minecraft:clay"
-					type: "item"
-				}
-			]
-			title: "Clay production"
-			x: 3.0d
-			y: 0.0d
+			tasks: [{
+				id: "0B64D2D98654B971"
+				item: "gtceu:ulv_barrel"
+				type: "item"
+			}]
+			title: "Barrel Transformations"
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
-				"2D1184752D7ACA66"
 				"3D0F6CA8028C074B"
 				"143BB2B07A083CC0"
+				"64E79272B5003119"
 			]
 			description: [
 				"It's your very first multiblock! "
@@ -856,8 +850,8 @@
 				}
 			]
 			title: "Primitive steelworks"
-			x: 5.0d
-			y: -2.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["390CB178FC2D2CCC"]
@@ -890,8 +884,8 @@
 				}
 			]
 			title: "Steel"
-			x: 9.0d
-			y: -2.5d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -913,8 +907,8 @@
 				type: "item"
 			}]
 			title: "Red Alloy"
-			x: 9.0d
-			y: -6.0d
+			x: 4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
@@ -938,8 +932,8 @@
 				}
 			]
 			title: "Slime and Resin"
-			x: 6.0d
-			y: -1.5d
+			x: 1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6D5287A0FB892DFF"]
@@ -964,8 +958,8 @@
 				}
 			]
 			title: "Circuit board"
-			x: 8.0d
-			y: -3.5d
+			x: 3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -986,8 +980,8 @@
 				type: "item"
 			}]
 			title: "Resistors"
-			x: 6.0d
-			y: -4.5d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3D0F6CA8028C074B"]
@@ -1022,8 +1016,8 @@
 				}
 			]
 			title: "Glassworks"
-			x: 10.5d
-			y: -6.0d
+			x: 5.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1044,8 +1038,8 @@
 				type: "item"
 			}]
 			title: "Vacuum Tubes"
-			x: 10.5d
-			y: -4.5d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2D1184752D7ACA66"]
@@ -1062,8 +1056,8 @@
 				type: "item"
 			}]
 			title: "Soul Sand production"
-			x: 4.5d
-			y: 1.5d
+			x: 0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0E47ACCDF46E6B1F"]
@@ -1080,8 +1074,8 @@
 				type: "item"
 			}]
 			title: "Invar"
-			x: 10.5d
-			y: 0.0d
+			x: 5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
@@ -1098,14 +1092,14 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 0.75d
+			x: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"124EDCAB18E85B9D"
 				"10126B9D6EC90F59"
-				"2D1184752D7ACA66"
+				"64E79272B5003119"
 			]
 			description: ["Now you have access to LV machine hulls, you can now make a new multiblock that works with create to process your ores further. This gives you access to resources like gold which will help with progressing into create."]
 			icon: "gtceu:kinetic_ore_factory"
@@ -1192,8 +1186,8 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
-			y: 0.0d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["550A27AA2B500111"]
@@ -1218,8 +1212,8 @@
 				}
 			]
 			title: "Infinite Water"
-			x: 0.25d
-			y: -2.25d
+			x: -4.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -1248,8 +1242,8 @@
 				}
 			]
 			title: "Making fertilizer"
-			x: 0.0d
-			y: 0.0d
+			x: -5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1278,8 +1272,8 @@
 				}
 			]
 			title: "Making lava"
-			x: 1.5d
-			y: 1.5d
+			x: -3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1327,8 +1321,8 @@
 				}
 			]
 			title: "Coke Oven"
-			x: 3.0d
-			y: 1.5d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
@@ -1403,8 +1397,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 3.0d
+			x: -1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
@@ -1515,8 +1509,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 2.5d
+			x: -0.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
@@ -1627,8 +1621,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 2.5d
+			x: -2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6C7DB3F0C3B85B9B"]
@@ -1645,8 +1639,8 @@
 				type: "item"
 			}]
 			title: "Duplicating dirt"
-			x: -0.5d
-			y: -5.5d
+			x: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["039D327E919878BF"]
@@ -1684,8 +1678,8 @@
 				type: "item"
 			}]
 			title: "Make me stressed"
-			x: 5.0d
-			y: -8.5d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
@@ -1720,8 +1714,8 @@
 				}
 			]
 			title: "Stressful steam"
-			x: 5.0d
-			y: -10.0d
+			x: 0.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -1783,8 +1777,8 @@
 				}
 			]
 			title: "Diesel rocks"
-			x: 6.0d
-			y: -9.5d
+			x: 1.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1817,8 +1811,8 @@
 				type: "item"
 			}]
 			title: "Intelligent fluid storage"
-			x: 11.5d
-			y: -6.0d
+			x: 6.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1846,16 +1840,12 @@
 				}
 			]
 			title: "Bronze and Brass"
-			x: 7.0d
-			y: -6.0d
+			x: 2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["29F1EAF3E87A50F5"]
-			description: [
-				"By putting a bucket of lava ontop of a stone barrel filled with water you can create a single cobblestone. By pumping water into the barrel as quick as you can, you can make lots of cobblestone in a very short time in a compact manner."
-				"&lIMPORTANT:&r"
-				"Using a hopper breaks this recipe for some reason"
-			]
+			description: ["By putting a bucket of lava ontop of a stone barrel filled with water you can create a single cobblestone. By pumping water into the barrel as quick as you can, you can make lots of cobblestone in a very short time in a compact manner."]
 			id: "0742EF8F43044102"
 			rewards: [{
 				count: 2
@@ -1866,13 +1856,13 @@
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
-				id: "6966C74177CE78EF"
-				item: "exnihilosequentia:stone_barrel"
+				id: "67E293DD7B193FF1"
+				item: "gtceu:ulv_stone_barrel"
 				type: "item"
 			}]
 			title: "Easy Cobble Generator"
-			x: -0.75d
-			y: 1.5d
+			x: -5.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
@@ -1884,8 +1874,8 @@
 				type: "item"
 			}]
 			title: "Making Witch Water?"
-			x: 1.0d
-			y: -1.5d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
@@ -1901,8 +1891,8 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.0d
+			x: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
@@ -1925,8 +1915,8 @@
 				type: "item"
 			}]
 			title: "Basic Automation"
-			x: 4.0d
-			y: -9.5d
+			x: -1.0d
+			y: -7.0d
 		}
 		{
 			description: [
@@ -1946,8 +1936,8 @@
 				title: "Ready, set, go"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: -1.5d
+			x: -7.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3D0F6CA8028C074B"]
@@ -1978,8 +1968,8 @@
 				}
 			]
 			title: "Mixing Dusts"
-			x: 8.0d
-			y: -5.25d
+			x: 3.0d
+			y: -2.75d
 		}
 		{
 			dependencies: ["124EDCAB18E85B9D"]
@@ -1989,14 +1979,38 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "2AA27D335CF0EDED"
 				item: "gtceu:solid_blast_furnace"
 				type: "item"
 			}]
 			title: "Better Steel"
-			x: 13.5d
-			y: -2.5d
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7EE1BE4043827F35"]
+			id: "6D23752791E9928A"
+			tasks: [{
+				id: "0C4660A1923ED365"
+				item: "gtceu:tempered_glass"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2D1184752D7ACA66"]
+			id: "64E79272B5003119"
+			tasks: [{
+				id: "16F78BE1CAEEA2A5"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
 		}
 	]
 	title: "Early Game"

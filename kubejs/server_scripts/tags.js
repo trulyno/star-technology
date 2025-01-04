@@ -1,4 +1,3 @@
-
 ServerEvents.tags('item', event => {
     event.add('gtceu:circuits/zpm', 'kubejs:draconic_wetware_microchip_processor');
     event.add('gtceu:circuits/uv', 'kubejs:draconic_wetware_processor');
@@ -6,6 +5,20 @@ ServerEvents.tags('item', event => {
     event.add('gtceu:circuits/uev', 'kubejs:draconic_wetware_processor_computer');
     event.add('gtceu:circuits/uiv', 'kubejs:draconic_wetware_processor_mainframe');
     event.remove('minecraft:planks', 'gtceu:treated_wood_planks');
+    event.removeAllTagsFrom( /nuclearcraft:*/ )
+    
+    event.add('exnihilosequentia:mesh', 'exnihilosequentia:string_mesh');
+    event.add('exnihilosequentia:mesh', 'exnihilosequentia:flint_mesh');
+    event.add('exnihilosequentia:mesh', 'exnihilosequentia:iron_mesh');
+    event.add('exnihilosequentia:mesh', 'exnihilosequentia:diamond_mesh');
+    event.add('exnihilosequentia:mesh', 'exnihilosequentia:emerald_mesh');
+    event.add('exnihilosequentia:mesh', 'exnihilosequentia:netherite_mesh');
+
+    ['diamond', 'emerald', 'ruby', 'green_sapphire', 'sapphire', 'quartzite', 'certus_quartz', 'blue_topaz', 'topaz', 'amethyst'].forEach(type => {
+        event.add('gtceu:geode', `kubejs:${type}_geode`);
+        event.add('gtceu:cracked_geode', `kubejs:cracked_${type}_geode`);
+    });
+
 });
 
 ServerEvents.tags('item', event=>{
