@@ -173,26 +173,26 @@
 		{
 			id: "2944146ABA34CB5B"
 			linked_quest: "5C15427D1679D4C3"
-			x: -7.5d
-			y: -31.0d
+			x: 0.5d
+			y: -29.0d
 		}
 		{
 			id: "6D220F5D5B6F0922"
 			linked_quest: "6EB85BBD539AEB57"
-			x: -4.0d
-			y: -31.0d
+			x: 0.5d
+			y: -27.5d
 		}
 		{
 			id: "2B30EE9B2767B72D"
 			linked_quest: "5C302CB1A1068EE1"
-			x: -4.0d
-			y: -29.5d
+			x: 0.5d
+			y: -26.0d
 		}
 		{
 			id: "607658C8752D8C32"
 			linked_quest: "0F7A1EA1AB52F795"
-			x: -4.0d
-			y: -28.0d
+			x: 0.5d
+			y: -24.5d
 		}
 		{
 			id: "0D386219B03B2DDA"
@@ -991,8 +991,8 @@
 				}
 			]
 			title: "Basic Chips"
-			x: -6.0d
-			y: -31.0d
+			x: 2.0d
+			y: -29.0d
 		}
 		{
 			dependencies: ["6EB85BBD539AEB57"]
@@ -1025,8 +1025,8 @@
 				}
 			]
 			title: "Better Chips"
-			x: -2.5d
-			y: -31.0d
+			x: 2.0d
+			y: -27.5d
 		}
 		{
 			dependencies: ["0F7A1EA1AB52F795"]
@@ -1044,8 +1044,8 @@
 				}
 			]
 			title: "Highly Advanced Chips"
-			x: -2.5d
-			y: -28.0d
+			x: 2.0d
+			y: -24.5d
 		}
 		{
 			dependencies: ["5C302CB1A1068EE1"]
@@ -1063,10 +1063,11 @@
 				}
 			]
 			title: "Advanced Chips"
-			x: -2.5d
-			y: -29.5d
+			x: 2.0d
+			y: -26.0d
 		}
 		{
+			dependencies: ["4FF433145C67693F"]
 			disable_toast: true
 			id: "32BC114D5C9630BC"
 			tasks: [
@@ -1080,9 +1081,37 @@
 					item: "gtceu:qbit_cpu_chip"
 					type: "item"
 				}
+				{
+					id: "77B452104BA5B1F8"
+					item: {
+						Count: 1
+						id: "kubejs:qram_chip"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "52D95FC49A9BF283"
+					item: {
+						Count: 1
+						id: "kubejs:3d_nand_chip"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0F08F84FC51DEADD"
+					item: {
+						Count: 1
+						id: "kubejs:3d_nor_chip"
+						tag: { }
+					}
+					type: "item"
+				}
 			]
-			x: -2.5d
-			y: -26.5d
+			title: "Enhanced Chips"
+			x: 2.0d
+			y: -23.0d
 		}
 		{
 			dependencies: ["17C1292018AE363E"]

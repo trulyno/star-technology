@@ -1139,8 +1139,12 @@
 					type: "item"
 				}
 				{
-					id: "6052C8CF9A2A9124"
-					item: "kubejs:runic_energized_transportation_plating"
+					id: "4124136926E70BB5"
+					item: {
+						Count: 1
+						id: "kubejs:runic_energized_pathway_plating"
+						tag: { }
+					}
 					type: "item"
 				}
 			]
@@ -1186,6 +1190,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["62A72817F92AC262"]
 			id: "0EEE2C3A7630EC40"
 			tasks: [{
 				id: "0FA7BE16B5640784"

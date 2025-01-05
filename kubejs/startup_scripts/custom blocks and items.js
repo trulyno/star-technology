@@ -194,14 +194,17 @@ StartupEvents.registry('item', event => {
 
     event.create('runic_stabilization_plating')
         .displayName('Runic Stabilization Plating')
+        .texture('kubejs:item/gate_items/runic_stable_plating')
         .rarity('rare')
 
     event.create('runic_energized_plating')
         .displayName('Runic-Energized Plating')
+        .texture('kubejs:item/gate_items/runic_energized_plating')
         .rarity('rare')
 
     event.create('runic_transportation_engraved_plating')
         .displayName('Runic Transportation-Engraved Plating')
+        .texture('kubejs:item/gate_items/runic_transport_plating')
         .rarity('epic')
 
     event.create('runic_wave_generator')
@@ -211,10 +214,12 @@ StartupEvents.registry('item', event => {
 
     event.create('runic_energized_transportation_plating')
         .displayName('Runic Energized Transportation-Engraved Plating')
+        .texture('kubejs:item/gate_items/runic_transport_energized_plating')
         .rarity('uncommon')
 
     event.create('runic_energized_pathway_plating')
         .displayName('Runic Energized Pathway-Engraved Plating')
+        .texture('kubejs:item/gate_items/runic_pathway_energized_plating')
         .rarity('uncommon')
 
  //Gate Parts
@@ -260,14 +265,17 @@ StartupEvents.registry('item', event => {
         .displayName('Draconic Coordinate Core')
         .rarity('epic')
         .tooltip('The Ultimate Eye of Ender')
+        .texture('kubejs:item/gate_items/draconic_core');
 
     event.create('hell_core')
         .displayName('Hell Core')
         .rarity('rare')
+        .texture('kubejs:item/gate_items/hell_core');
 
     event.create('void_core')
         .displayName('Void Core')
         .rarity('rare')
+        .texture('kubejs:item/gate_items/void_core');
 
     const runic_tablet = ['1','2','3','4','5','6','complete']
     let fragment;
@@ -277,7 +285,7 @@ StartupEvents.registry('item', event => {
             event.create(`runic_tablet_${piece}`)
                 .displayName(`Runic Tablet ${fragment}`)
                 .rarity('uncommon')
-                //.tecture(`kubejs:item/.../runic_tablet_${piece}`)
+                .texture(`kubejs:item/gate_items/rune_tablet_${piece}`)
 
     });
 
