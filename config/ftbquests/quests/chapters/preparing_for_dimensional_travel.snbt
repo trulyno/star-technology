@@ -157,7 +157,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["44B43694312BAAC8"]
+			dependencies: [
+				"44B43694312BAAC8"
+				"702E5088171E1255"
+			]
 			id: "581B9922CC4B457F"
 			rewards: [{
 				id: "1600271A98F70DD6"
@@ -979,7 +982,7 @@
 				item: "sgjourney:classic_stargate_base_block"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -5.0d
 			y: -7.5d
 		}
 		{
@@ -994,7 +997,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -4.0d
 			y: -8.0d
 		}
 		{
@@ -1009,7 +1012,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: -7.5d
 		}
 		{
@@ -1024,7 +1027,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -4.0d
 			y: -7.5d
 		}
 		{
@@ -1039,7 +1042,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: -8.5d
 		}
 		{
@@ -1054,7 +1057,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: -9.0d
 		}
 		{
@@ -1069,7 +1072,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -4.0d
 			y: -10.0d
 		}
 		{
@@ -1084,7 +1087,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: -10.0d
 		}
 		{
@@ -1099,7 +1102,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: -10.5d
 		}
 		{
@@ -1114,7 +1117,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.5d
 			y: -10.5d
 		}
 		{
@@ -1129,7 +1132,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: -10.0d
 		}
 		{
@@ -1144,7 +1147,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.5d
 			y: -10.0d
 		}
 		{
@@ -1159,7 +1162,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.5d
 			y: -9.0d
 		}
 		{
@@ -1174,7 +1177,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.5d
 			y: -8.5d
 		}
 		{
@@ -1189,7 +1192,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: -8.0d
 		}
 		{
@@ -1204,7 +1207,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: -7.5d
 		}
 		{
@@ -1219,7 +1222,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: -8.0d
 		}
 		{
@@ -1234,7 +1237,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: -9.5d
 		}
 		{
@@ -1249,7 +1252,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -4.0d
 			y: -10.5d
 		}
 		{
@@ -1264,7 +1267,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -5.0d
 			y: -10.5d
 		}
 		{
@@ -1279,7 +1282,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: -10.5d
 		}
 		{
@@ -1294,7 +1297,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.5d
 			y: -9.5d
 		}
 		{
@@ -1309,7 +1312,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.5d
 			y: -8.0d
 		}
 		{
@@ -1324,7 +1327,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.5d
 			y: -7.5d
 		}
 		{

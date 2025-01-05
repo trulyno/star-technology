@@ -100,12 +100,44 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:uepic_wafer')
         .duration(1200)
         .EUt((GTValues.VA[GTValues.UV]))
-        .cleanroom(CleanroomType.CLEANROOM)
+        .cleanroom(CleanroomType.CLEANROOM);
 
     event.recipes.gtceu.cutter('uepic_chip')
         .itemInputs('kubejs:uepic_wafer')
         .itemOutputs('2x kubejs:uepic_chip')
         .duration(900)
         .EUt((GTValues.VA[GTValues.UV]))
-        .cleanroom(CleanroomType.CLEANROOM)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+
+    event.recipes.gtceu.circuit_assembler('3d_nand_chip')
+        .itemInputs('64x gtceu:nand_memory_chip', '12x gtceu:cerium_tritelluride_bolt', '2x #gtceu:circuits/iv')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 216')
+        .itemOutputs('6x kubejs:3d_nand_chip')
+        .duration(600)
+        .EUt((GTValues.VA[GTValues.ZPM]))
+        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+
+    event.recipes.gtceu.circuit_assembler('3d_nor_chip')
+        .itemInputs('64x gtceu:nor_memory_chip', '12x gtceu:cerium_tritelluride_bolt', '2x #gtceu:circuits/iv')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 216')
+        .itemOutputs('6x kubejs:3d_nor_chip')
+        .duration(600)
+        .EUt((GTValues.VA[GTValues.ZPM]))
+        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+
+    event.recipes.gtceu.chemical_reactor('qRAM')
+        .itemInputs('gtceu:ram_wafer','2x gtceu:silicon_carbide_over_bismuth_tritelluride_dust')
+        .inputFluids('gtceu:radon 250')
+        .itemOutputs('kubejs:qram_wafer')
+        .duration(1500)
+        .EUt((GTValues.VA[GTValues.UV]))
+        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+
+    event.recipes.gtceu.cutter('qram_chip')
+        .itemInputs('kubejs:qram_wafer')
+        .itemOutputs('12x kubejs:qram_chip')
+        .duration(900)
+        .EUt((GTValues.VA[GTValues.UHV]))
+        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+
 });

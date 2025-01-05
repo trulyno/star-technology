@@ -285,12 +285,6 @@
 			y: -29.5d
 		}
 		{
-			id: "2A2B52C80535703B"
-			linked_quest: "1EE4E8301E0FD1C7"
-			x: -18.0d
-			y: -31.0d
-		}
-		{
 			id: "3B7B8853F2299D4D"
 			linked_quest: "60ECE277341A9408"
 			x: -16.0d
@@ -1295,6 +1289,111 @@
 			}]
 			x: -16.5d
 			y: -24.5d
+		}
+		{
+			dependencies: ["2DA7FFD9B7A550B9"]
+			id: "35D5CC08AE53A7FA"
+			tasks: [{
+				id: "7278702A05728EA6"
+				item: {
+					Count: 1
+					id: "kubejs:draconic_wetware_processor_assembly"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["35D5CC08AE53A7FA"]
+			id: "2F0E0C63E0DE0F5A"
+			tasks: [{
+				id: "74164D342D52608B"
+				item: {
+					Count: 1
+					id: "kubejs:draconic_wetware_processor_computer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["2F0E0C63E0DE0F5A"]
+			id: "73E9000BE5288623"
+			tasks: [{
+				id: "104B5031089707D7"
+				item: {
+					Count: 1
+					id: "kubejs:draconic_wetware_processor_mainframe"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["4DF812EEFB4FD1C3"]
+			id: "2DA7FFD9B7A550B9"
+			tasks: [{
+				id: "4B3DDFC692C95879"
+				item: {
+					Count: 1
+					id: "kubejs:draconic_wetware_processor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -18.5d
+		}
+		{
+			dependencies: ["1C9396E2587051F7"]
+			id: "4DF812EEFB4FD1C3"
+			tasks: [{
+				id: "08AF5523EEC4E80C"
+				item: {
+					Count: 1
+					id: "kubejs:draconic_wetware_microchip_processor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["2F0E0C63E0DE0F5A"]
+			id: "5584A2F87AC8631E"
+			tasks: [{
+				id: "58B4EB491E26C14B"
+				item: {
+					Count: 1
+					id: "kubejs:uev_universal_circuit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["73E9000BE5288623"]
+			id: "73B54F4D395FB5EC"
+			tasks: [{
+				id: "1581178AE7A9FA51"
+				item: {
+					Count: 1
+					id: "kubejs:uiv_universal_circuit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -14.0d
 		}
 	]
 	title: "Line Of Progression"

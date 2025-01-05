@@ -1,11 +1,13 @@
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.laser_engraver('coordinate_crystal')
+    event.recipes.gtceu.vibration_laser_engraver('coordinate_crystal')
         .itemInputs('2x gtceu:exquisite_echo_shard_gem')
         .notConsumable('gtceu:black_glass_lens')
+        .inputFluids('gtceu:pcb_coolant 16000')
+        .outputFluids('gtceu:hot_pcb_coolant 19200')
         .itemOutputs('kubejs:coordinate_crystal')
         .duration(1200)
-        .EUt(GTValues.VHA[GTValues.ZPM]);
+        .EUt(GTValues.VHA[GTValues.UV]);
 
     //Dimensional Finder Controller
     

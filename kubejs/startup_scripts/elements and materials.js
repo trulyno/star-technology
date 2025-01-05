@@ -1336,6 +1336,7 @@ materialRegistry(event => {
         .color(0x6D8B5D)
         .iconSet(DULL)
         .blastTemp(10699, 'highest', VA('uv'), 3800)
+        .flags(bolt_and_screw)
         .cableProperties(V('uev'), 6, 16, false);
 
     event.create('indium_tin_lead_cadmium_soldering_alloy')

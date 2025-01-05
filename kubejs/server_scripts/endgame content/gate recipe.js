@@ -180,20 +180,23 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 12000', 'gtceu:naquadria 36000', 'gtceu:sterilized_growth_medium 8000')
         .itemOutputs('sgjourney:classic_stargate_base_block')
         .duration(48000)
+        .blastFurnaceTemp(10699)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.stargate_component_assembly('classic_stargate_ring_block')
-            .itemInputs('gtceu:stellarium_frame', '36x gtceu:double_naquadah_alloy_plate', '8x kubejs:runic_pathway_engraved_plating','56x kubejs:stargate_rod', '64x gtceu:fine_trinaquadalloy_wire','64x gtceu:fine_trinaquadalloy_wire')
-            .inputFluids('gtceu:soldering_alloy 12000', 'gtceu:naquadria 56000')
-            .itemOutputs('sgjourney:classic_stargate_ring_block')
-            .duration(20000)
-            .EUt(GTValues.VHA[GTValues.UHV]);
+        .itemInputs('gtceu:stellarium_frame', '36x gtceu:double_naquadah_alloy_plate', '8x kubejs:runic_pathway_engraved_plating','56x kubejs:stargate_rod', '64x gtceu:fine_trinaquadalloy_wire','64x gtceu:fine_trinaquadalloy_wire')
+        .inputFluids('gtceu:soldering_alloy 12000', 'gtceu:naquadria 56000')
+        .itemOutputs('sgjourney:classic_stargate_ring_block')
+        .duration(20000)
+        .blastFurnaceTemp(10699)
+        .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.stargate_component_assembly('classic_stargate_chevron_block')
         .itemInputs('sgjourney:classic_stargate_ring_block','12x kubejs:runic_pathway_engraved_plating', '8x kubejs:runic_engraved_plating','12x kubejs:stargate_rod','kubejs:classic_chevron_disk','32x gtceu:fine_stellarium_wire')
         .inputFluids('gtceu:soldering_alloy 12000', 'gtceu:naquadria 32000', 'gtceu:radon 62000')
         .itemOutputs('sgjourney:classic_stargate_chevron_block')
         .duration(32000)
+        .blastFurnaceTemp(10699)
         .EUt(GTValues.VHA[GTValues.UHV]);
     
     event.recipes.gtceu.assembly_line('compuation_super_matrix')
@@ -244,12 +247,6 @@ ServerEvents.recipes(event => {
 
     //Ancient Gate
     
-        //Ancient Base Block
-
-        //Ancient Ring Block
-
-        //Ancient Chevron Block
-
         //Ancient Encoded Computational Unit
         event.recipes.gtceu.assembly_line('ancient_stargate_computer_core')
             .itemInputs('gtceu:ancient_runicalium_frame','kubejs:classic_stargate_computer_core','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire',
@@ -271,7 +268,7 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:blaze 50000','thermal:ender 50000')
             .itemOutputs('kubejs:draconic_coordinate_core')
             .duration(30000)
-            .EUt(GTValues.VHA[GTValues.UEV])
+            .EUt(GTValues.VHA[GTValues.UEV]);
 
         //Hell Core
         event.recipes.gtceu.assembly_line('hell_core')
@@ -300,5 +297,37 @@ ServerEvents.recipes(event => {
                     .CWUt(168)
                 )
             .EUt(GTValues.VHA[GTValues.UEV]);
+
+        //Ancient Gate Blocks
+        event.recipes.gtceu.stargate_component_assembly('ancient_stargate_ring_block')
+            .itemInputs('gtceu:ancient_runicalium_frame', '36x gtceu:double_zircalloy_4_plate', '24x kubejs:runic_stabilization_plating', '48x kubejs:stargate_rod', '48x kubejs:stargate_rod', '48x kubejs:stargate_rod', '64x gtceu:fine_trinaquadalloy_wire', '64x gtceu:fine_trinaquadalloy_wire', '64x gtceu:fine_trinaquadalloy_wire')
+            .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 16000', 'gtceu:utopian_akreyrium 48000', 'gtceu:naquadria 128000')
+            .itemOutputs('kubejs:ancient_stargate_ring_block')
+            .duration(20000)
+            .blastFurnaceTemp(12799)
+            .EUt(GTValues.VHA[GTValues.UEV]);
+
+        event.recipes.gtceu.stargate_component_assembly('ancient_stargate_chevron_block')
+            .itemInputs('kubejs:ancient_stargate_ring_block', '12x kubejs:runic_energized_pathway_plating', '8x kubejs:runic_energized_transportation_plating', '32x kubejs:stargate_rod', 'kubejs:ancient_chevron_disk', '2x kubejs:classic_chevron_assembly')
+            .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 16000', 'gtceu:utopian_akreyrium 24000', 'gtceu:naquadria 72000', 'gtceu:radon 132000')
+            .itemOutputs('kubejs:ancient_stargate_chevron_block')
+            .duration(32000)
+            .blastFurnaceTemp(12799)
+            .EUt(GTValues.VHA[GTValues.UEV]);
+
+        event.recipes.gtceu.stargate_component_assembly('ancient_stargate_base_block')
+            .itemInputs('kubejs:ancient_stargate_ring_block', '24x kubejs:runic_energized_pathway_plating', '16x kubejs:runic_energized_transportation_plating', '40x kubejs:stargate_rod', 'kubejs:ancient_stargate_computer_core', '64x kubejs:uepic_chip')
+            .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 16000', 'gtceu:utopian_akreyrium 24000', 'gtceu:naquadria 72000', 'gtceu:sterilized_growth_medium 18000')
+            .itemOutputs('kubejs:ancient_stargate_base_block')
+            .duration(48000)
+            .blastFurnaceTemp(12799)
+            .EUt(GTValues.VHA[GTValues.UEV]);
+
+        //THE Ancient Gate
+        event.recipes.gtceu.assembler('ancient_gate')
+            .itemInputs('14x kubejs:ancient_stargate_ring_block', '9x kubejs:ancient_stargate_chevron_block', 'kubejs:ancient_stargate_base_block')
+            .itemOutputs('sgjourney:milky_way_stargate')
+            .duration(1)
+            .EUt(GTValues.VA[GTValues.UEV]);
 
 });

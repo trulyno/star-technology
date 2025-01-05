@@ -57,24 +57,33 @@ StartupEvents.registry('item', event => {
 
     event.create('3d_nand_chip')
         .displayName('3D-NAND Memory Chip Array')
+        .tooltip('Complex NAND Logic Gate')
+        .texture('kubejs:item/chips_n_wafers/3d_nand')
 
     event.create('3d_nor_chip')
         .displayName('3D-NOR Memory Chip Array')
+        .tooltip('Complex NOR Logic Gate')
+        .texture('kubejs:item/chips_n_wafers/3d_nor')
 
     event.create('qram_wafer')
         .displayName('qRAM Wafer')
+        .tooltip('Raw Quantum Memory')
+        .texture('kubejs:item/chips_n_wafers/qram_wafer')
 
     event.create('qram_chip')
         .displayName('qRAM Chip')
-
+        .tooltip('Quantum Random Access Memory')
+        .texture('kubejs:item/chips_n_wafers/qram_chip')
 
     event.create('uepic_wafer')
         .displayName('UEPIC Wafer')
         .tooltip('Raw Ultra Excessive Power Circuit')
+        .texture('kubejs:item/chips_n_wafers/uepic_wafer')
 
     event.create('uepic_chip')
         .displayName('UEPIC Chip')
         .tooltip('Ultra Excessive Power IC')
+        .texture('kubejs:item/chips_n_wafers/uepic_chip')
     
     event.create('draconic_wetware_circuit_board')
         .displayName('Draconic Wetware Circuit Board')
@@ -242,6 +251,10 @@ StartupEvents.registry('item', event => {
     event.create('ancient_chevron_disk')
         .displayName('Ancient Stargate Chevron Disk')
         .rarity('rare');
+
+    event.create('classic_chevron_assembly')
+        .displayName('Classic Stargate Chevron Assembly')
+        .rarity('rare')
     
     event.create('draconic_coordinate_core')
         .displayName('Draconic Coordinate Core')
@@ -755,70 +768,103 @@ StartupEvents.registry('block', event => {
         //Runic Casings
 
     event.create('runic_stabilization_casing')
-    .displayName('Stabilization Enscribed Runically Infused Casing')
-    .hardness(10)
-    .resistance(1)
-    .lightLevel(2)
-    .soundType('stone')
-    .requiresTool(true)
-    .tagBlock("mineable/pickaxe")
-    .tagBlock('minecraft:needs_diamond_tool')
-    //.textureAll('kubejs:block/casings/');
+        .displayName('Stabilization Enscribed Runically Infused Casing')
+        .hardness(10)
+        .resistance(1)
+        .lightLevel(2)
+        .soundType('stone')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_diamond_tool')
+        //.textureAll('kubejs:block/casings/');
 
-event.create('runic_transportation_casing')
-    .displayName('Transportation Enscribed Runically Infused Casing')
-    .hardness(10)
-    .resistance(1)
-    .lightLevel(2)
-    .soundType('stone')
-    .requiresTool(true)
-    .tagBlock("mineable/pickaxe")
-    .tagBlock('minecraft:needs_diamond_tool')
-    //.textureAll('kubejs:block/casings/');
+    event.create('runic_transportation_casing')
+        .displayName('Transportation Enscribed Runically Infused Casing')
+        .hardness(10)
+        .resistance(1)
+        .lightLevel(2)
+        .soundType('stone')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_diamond_tool')
+        //.textureAll('kubejs:block/casings/');
 
-event.create('runic_pathway_casing')
-    .displayName('Pathway Enscribed Runically Infused Casing')
-    .hardness(10)
-    .resistance(1)
-    .lightLevel(2)
-    .soundType('stone')
-    .requiresTool(true)
-    .tagBlock("mineable/pickaxe")
-    .tagBlock('minecraft:needs_diamond_tool')
-    //.textureAll('kubejs:block/casings/');
+    event.create('runic_pathway_casing')
+        .displayName('Pathway Enscribed Runically Infused Casing')
+        .hardness(10)
+        .resistance(1)
+        .lightLevel(2)
+        .soundType('stone')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_diamond_tool')
+        //.textureAll('kubejs:block/casings/');
 
-event.create('runic_energized_transportation_casing')
-    .displayName('Transportation Enscribed Runically Infused and Energized Casing')
-    .hardness(10)
-    .resistance(1)
-    .lightLevel(2)
-    .soundType('stone')
-    .requiresTool(true)
-    .tagBlock("mineable/pickaxe")
-    .tagBlock('minecraft:needs_diamond_tool')
-    //.textureAll('kubejs:block/casings/');
+    event.create('runic_energized_transportation_casing')
+        .displayName('Transportation Enscribed Runically Infused and Energized Casing')
+        .hardness(10)
+        .resistance(1)
+        .lightLevel(2)
+        .soundType('stone')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_diamond_tool')
+        //.textureAll('kubejs:block/casings/');
 
-event.create('runic_energized_pathway_casing')
-    .displayName('Pathway Enscribed Runically Infused and Energized Casing')
-    .hardness(10)
-    .resistance(1)
-    .lightLevel(2)
-    .soundType('stone')
-    .requiresTool(true)
-    .tagBlock("mineable/pickaxe")
-    .tagBlock('minecraft:needs_diamond_tool')
-    //.textureAll('kubejs:block/casings/');
+    event.create('runic_energized_pathway_casing')
+        .displayName('Pathway Enscribed Runically Infused and Energized Casing')
+        .hardness(10)
+        .resistance(1)
+        .lightLevel(2)
+        .soundType('stone')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_diamond_tool')
+        //.textureAll('kubejs:block/casings/');
 
-event.create('inscribe_casing')
-    .displayName('Keelaengraver Manipulator & Aquaconcentrator Capable Runicalium Casing')
-    .hardness(5)
-    .resistance(10)
-    .lightLevel(10)
-    .soundType('metal')
-    .requiresTool(true)
-    .tagBlock("mineable/pickaxe")
-    .tagBlock('minecraft:needs_iron_tool')
-    //.textureAll('kubejs:block/casings/');
+    event.create('inscribe_casing')
+        .displayName('Keelaengraver Manipulator & Aquaconcentrator Capable Runicalium Casing')
+        .hardness(5)
+        .resistance(10)
+        .lightLevel(10)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        //.textureAll('kubejs:block/casings/');
+
+    event.create('ancient_stargate_ring_block')
+        .displayName('Ancient Stargate Ring Block')
+        .hardness(5)
+        .resistance(10)
+        .lightLevel(0)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        //.textureAll('kubejs:block/');
+
+    event.create('ancient_stargate_base_block')
+        .displayName('Ancient Stargate Base Block')
+        .hardness(5)
+        .resistance(10)
+        .lightLevel(0)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        //.textureAll('kubejs:block/');
+
+    event.create('ancient_stargate_chevron_block')
+        .displayName('Ancient Stargate Chevron Block')
+        .hardness(5)
+        .resistance(10)
+        .lightLevel(0)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        //.textureAll('kubejs:block/');
 
     //     //Coagulated blocks
 //     ['iron', 'copper', 'quartz'].forEach(type => {
