@@ -349,7 +349,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["261174370DC87FCB"]
+			dependencies: ["250C897A70DB797F"]
 			id: "41D5FABA8D0BB0AC"
 			rewards: [{
 				id: "138F9541C5275C03"
@@ -459,40 +459,6 @@
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
-			description: ["4th tier of mesh which gives you access to new ores for Gravel and Blackstone."]
-			id: "7014892C27EC22B7"
-			rewards: [{
-				id: "0C78A233E971D5DF"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "2AF25CB188374485"
-				item: "exnihilosequentia:diamond_mesh"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["1B697A89954BA5FE"]
-			description: ["Used in flux sieves, it amplifies production, by processing more items at once."]
-			id: "479D3537E1245CA6"
-			rewards: [{
-				id: "32203DD6AC94185B"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6B02878D7E16D0BE"
-				item: "exmachinis:gold_upgrade"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["1B697A89954BA5FE"]
 			description: ["The first upgrade to every circuit component. Is more resource efficent and gives more per craft."]
 			id: "55D8D982524DA85E"
 			rewards: [{
@@ -528,8 +494,8 @@
 				}
 			]
 			title: "SMD's"
-			x: 5.5d
-			y: 1.5d
+			x: 6.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
@@ -555,7 +521,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2D089B0427CFDBBE"]
@@ -668,7 +634,6 @@
 		{
 			dependencies: [
 				"52FE319F5E176C37"
-				"55D8D982524DA85E"
 				"47CD61D6ECD3DC7D"
 			]
 			description: ["The end of the circuit upgrade chain will bring you into IV, bet you didnt expect that."]
@@ -1055,40 +1020,6 @@
 		}
 		{
 			dependencies: ["6060E79B2D08912D"]
-			description: ["5th tier of mesh which gives you access to even more ores for Gravel and Blackstone."]
-			id: "6EF7F39B52B77535"
-			rewards: [{
-				id: "1ACBED7914011CCA"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "4203DBCF6D0304D2"
-				item: "exnihilosequentia:emerald_mesh"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 9.5d
-		}
-		{
-			dependencies: ["6060E79B2D08912D"]
-			description: ["First RF sieve that can process 64 items at a time when you have 3 of these in the machine."]
-			id: "650D48314E95F0F9"
-			rewards: [{
-				id: "5D7141A90571D1AF"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3CBC07B7C9128AEB"
-				item: "exmachinis:diamond_upgrade"
-				type: "item"
-			}]
-			x: 8.5d
-			y: 10.5d
-		}
-		{
-			dependencies: ["6060E79B2D08912D"]
 			description: ["Large battery for EV. Can be used to charge tools and machines."]
 			id: "352B3D23A2C7DE74"
 			rewards: [{
@@ -1101,8 +1032,8 @@
 				item: "gtceu:lapotron_crystal"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 8.5d
+			x: 7.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -1312,7 +1243,6 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["6D35986F79B17912"]
 			description: ["Aquired from Apatite or Monazite processing."]
 			hide_dependency_lines: true
 			id: "32EF0A93C1C5F429"
@@ -1853,8 +1783,8 @@
 				item: "gtceu:shellite_single_wire"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -1.5d
+			x: 5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -1870,8 +1800,8 @@
 				item: "gtceu:shellite_ingot"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -3.5d
+			x: 5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2D4F9DFF6B559C65"]
@@ -1897,42 +1827,8 @@
 				}
 			]
 			title: "HPIC Chips"
-			x: 8.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["5CB82E9BED342EB2"]
-			description: ["Final tier of mesh, used to gain access to naquadah."]
-			id: "3D3E637BCB06115F"
-			rewards: [{
-				id: "7AA6F0E33CE16999"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1B6FE12983A94BAA"
-				item: "exnihilosequentia:netherite_mesh"
-				type: "item"
-			}]
 			x: 9.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["5CB82E9BED342EB2"]
-			description: ["The best upgrade for the RF Sieves, allows a stack to be processed every second with a single upgrade."]
-			id: "26B9FFEC6658E721"
-			rewards: [{
-				id: "1890818E8BD8994D"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "789C09AB426C067A"
-				item: "exmachinis:netherite_upgrade"
-				type: "item"
-			}]
-			x: 8.5d
-			y: 0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -1970,7 +1866,7 @@
 				item: "gtceu:engraved_lapotron_crystal_chip"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 9.75d
 			y: 2.0d
 		}
 		{
@@ -2099,7 +1995,7 @@
 				}
 			]
 			title: "Advanced SMD's"
-			x: 11.5d
+			x: 12.0d
 			y: -0.5d
 		}
 		{
@@ -2120,7 +2016,7 @@
 				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 11.5d
 			y: -2.5d
 		}
 		{
@@ -2170,7 +2066,7 @@
 				item: "gtceu:hsse_ingot"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: -1.5d
 		}
 		{
@@ -2186,7 +2082,7 @@
 				item: "gtceu:hsss_ingot"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 11.5d
 			y: -1.5d
 		}
 		{
@@ -2203,54 +2099,6 @@
 			}]
 			x: 13.5d
 			y: -0.5d
-		}
-		{
-			dependencies: [
-				"5CB82E9BED342EB2"
-				"182D948925141764"
-			]
-			description: ["Massive multiblock that will allow you to get a stack of every resource from a sieveable material."]
-			hide_dependency_lines: true
-			id: "71089CC35D7621E2"
-			rewards: [{
-				count: 2
-				id: "78A22FC2B2061C58"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "75A5F9CD68C971AD"
-				item: "gtceu:large_sieve"
-				type: "item"
-			}]
-			x: 13.5d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"5CB82E9BED342EB2"
-				"182D948925141764"
-			]
-			description: ["Quick gravel, sand, dust and blackstone in a multiblock form!"]
-			hide_dependency_lines: true
-			id: "27BB890712D84505"
-			rewards: [{
-				count: 2
-				id: "3366274EFED8C45E"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "079F5D94C600ED8A"
-				item: "gtceu:cobbleworks"
-				type: "item"
-			}]
-			x: 15.5d
-			y: -3.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]

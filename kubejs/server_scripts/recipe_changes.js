@@ -332,7 +332,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('9x gtceu:duralumin_dust')
         .duration(400)
         .EUt(GTValues.VHA[GTValues.HV])
-        .circuit(1);
+        .circuit(2);
 
     event.recipes.gtceu.mixer('beryllium_aluminium_alloy')
         .itemInputs('7x gtceu:beryllium_dust', '1x gtceu:aluminium_dust')
@@ -502,14 +502,6 @@ ServerEvents.recipes(event => {
         .duration(1600)
         .EUt(480);
 
-    //cobblestone farm fix
-    event.remove({ id:'exnihilosequentia:solidify/ens_cobblestone' })
-    event.custom({
-        "type": "exnihilosequentia:solidifying",
-        "fluidInTank": "minecraft:water 1000",
-        "fluidOnTop": "minecraft:lava 1000",
-        "result": "minecraft:cobblestone"
-    });
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {

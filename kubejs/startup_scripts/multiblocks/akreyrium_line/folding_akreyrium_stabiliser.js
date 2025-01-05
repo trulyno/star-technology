@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('folding_akreyrium_stabiliser', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('folding_akreyrium_stabiliser')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("                 ", "        B        ", "        B        ", "        B        ", "        B        ", "        B        ", "                 ") 
             .aisle("       BBB       ", "        B        ", "     B     B     ", "     BCCCCCB     ", "     B     B     ", "        B        ", "       BBB       ") 

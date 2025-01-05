@@ -11,7 +11,7 @@
 	quest_links: [{
 		id: "6C0C5B78AF1106A2"
 		linked_quest: "38B3A7FC309E12E2"
-		x: -7.5d
+		x: -11.5d
 		y: -4.5d
 	}]
 	quests: [
@@ -30,7 +30,7 @@
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -4.5d
 			y: -3.5d
 		}
 		{
@@ -48,7 +48,7 @@
 				item: "gtceu:lv_wiremill"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.5d
 			y: -3.5d
 		}
 		{
@@ -66,8 +66,8 @@
 				item: "gtceu:lv_lathe"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -2.5d
+			x: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -83,7 +83,7 @@
 				item: "gtceu:lv_polarizer"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -8.5d
 			y: -1.5d
 		}
 		{
@@ -103,14 +103,11 @@
 				item: "gtceu:lv_electric_motor"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.5d
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"53E98CFC7934FA67"
-				"397C622B06B1165A"
-			]
+			dependencies: ["1F5CCE8CFD02903A"]
 			description: ["A faster and more advanced version of the Kinetic Ore Factory, capable of handling higher tier ores."]
 			id: "0E88CB5E68212006"
 			rewards: [{
@@ -123,8 +120,8 @@
 				item: "gtceu:electrico_kinetic_ore_factory"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 0.5d
+			x: -2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -140,7 +137,7 @@
 				item: "gtceu:lv_alloy_smelter"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -10.5d
 			y: -3.5d
 		}
 		{
@@ -157,8 +154,8 @@
 				item: "gtceu:lv_mixer"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -2.5d
+			x: -7.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["234CE57A62FB8D82"]
@@ -174,8 +171,8 @@
 				item: "gtceu:lv_chemical_reactor"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -0.5d
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["234CE57A62FB8D82"]
@@ -207,8 +204,8 @@
 				item: "gtceu:lv_macerator"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.5d
+			x: -3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["523F20DC5FA04229"]
@@ -224,8 +221,8 @@
 				item: "gtceu:lv_forge_hammer"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -1.5d
+			x: -1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["523F20DC5FA04229"]
@@ -294,8 +291,8 @@
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
-				id: "36F3F8DD14E01A1C"
-				item: "exnihilosequentia:flint_mesh"
+				id: "588ADE2EBD3A8ACC"
+				item: "gtceu:lv_energy_input_hatch"
 				type: "item"
 			}]
 			x: -0.5d
@@ -335,7 +332,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0E88CB5E68212006"]
@@ -351,8 +348,8 @@
 				item: "gtceu:cobalt_dust"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 2.5d
+			x: -4.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["234CE57A62FB8D82"]
@@ -368,7 +365,7 @@
 				item: "gtceu:lv_centrifuge"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -8.5d
 			y: -3.5d
 		}
 		{
@@ -404,8 +401,8 @@
 				item: "gtceu:lv_gas_collector"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 1.5d
+			x: -6.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2AFD24A844E49C42"]
@@ -421,8 +418,8 @@
 				item: "gtceu:lv_fluid_solidifier"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -0.5d
+			x: -8.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2AFD24A844E49C42"]
@@ -438,8 +435,8 @@
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 1.5d
+			x: -8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -455,11 +452,11 @@
 				item: "gtceu:lv_electrolyzer"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -9.5d
 			y: -2.5d
 		}
 		{
-			dependencies: ["1F5CCE8CFD02903A"]
+			dependencies: ["5F80268C02FAD5F6"]
 			description: ["You'll need to process some diamond ore for this."]
 			id: "10F2237FF0C87F62"
 			rewards: [{
@@ -472,8 +469,8 @@
 				item: "gtceu:graphite_dust"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 4.5d
+			x: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["10F2237FF0C87F62"]
@@ -489,28 +486,12 @@
 				item: "gtceu:lv_arc_furnace"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 4.5d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
-			dependencies: ["76B701A5EF4C1EF1"]
-			description: ["A better type of glass, used in many machines and multiblocks."]
-			id: "3C38935EF800E3CF"
-			rewards: [{
-				id: "5C0D44D865936DB8"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "4A7A11871205A2C3"
-				item: "gtceu:tempered_glass"
-				type: "item"
-			}]
-			x: -4.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["3C38935EF800E3CF"]
+			dependencies: ["620F1881452C03B6"]
+			hide_dependent_lines: true
 			id: "38A4A5FB19EB4AB9"
 			rewards: [{
 				id: "06B988807550F9B3"
@@ -522,11 +503,14 @@
 				item: "thermal:obsidian_glass"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 6.5d
+			x: -10.5d
+			y: 0.5d
 		}
 		{
-			dependencies: ["38A4A5FB19EB4AB9"]
+			dependencies: [
+				"38A4A5FB19EB4AB9"
+				"4B51B15B49620F57"
+			]
 			description: ["Used to upgrade Thermal machines, such as Flux Cells and Dynamos by 4 times."]
 			id: "574CA65B67D79A6E"
 			rewards: [{
@@ -548,8 +532,8 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
-			y: 6.5d
+			x: -3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -565,8 +549,8 @@
 				item: "gtceu:lv_super_chest"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -3.5d
+			x: -12.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -637,8 +621,8 @@
 				}
 			]
 			title: "Electric Blast Furnace (EBF)"
-			x: 1.5d
-			y: 0.5d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["56BA79287C4DBE52"]
@@ -653,8 +637,8 @@
 				item: "gtceu:signalum_ingot"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -1.5d
+			x: 5.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["56BA79287C4DBE52"]
@@ -670,8 +654,8 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 0.5d
+			x: 5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1A638BE0C6031CC5"]
@@ -687,11 +671,11 @@
 				item: "gtceu:signalum_single_wire"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -2.5d
+			x: 7.5d
+			y: 0.5d
 		}
 		{
-			dependencies: ["1F5CCE8CFD02903A"]
+			dependencies: ["30B2688F8387048F"]
 			id: "5BF06BFED6E52523"
 			rewards: [{
 				id: "48ABA260B49D0D83"
@@ -703,8 +687,8 @@
 				item: "gtceu:realgar_dust"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 4.5d
+			x: -2.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -722,8 +706,8 @@
 				item: "gtceu:gallium_arsenide_dust"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 4.5d
+			x: -2.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
@@ -738,7 +722,7 @@
 				item: "gtceu:sphalerite_dust"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -4.5d
 			y: 6.5d
 		}
 		{
@@ -755,8 +739,8 @@
 				item: "gtceu:diode"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 6.5d
+			x: -1.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -774,8 +758,8 @@
 				item: "gtceu:silicon_boule"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 2.5d
+			x: 3.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -797,11 +781,14 @@
 				item: "gtceu:silicon_wafer"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 4.5d
+			x: 4.5d
+			y: 6.5d
 		}
 		{
-			dependencies: ["56BA79287C4DBE52"]
+			dependencies: [
+				"56BA79287C4DBE52"
+				"12DA5E8FA3E11AC0"
+			]
 			id: "47027B245D1C7A2E"
 			rewards: [{
 				id: "3CB0CBEB70D0F2AB"
@@ -813,8 +800,8 @@
 				item: "gtceu:vanadium_steel_ingot"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 2.5d
+			x: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -833,8 +820,8 @@
 				item: "gtceu:mv_cutter"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 2.5d
+			x: 4.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["60F649FC6E64DFD9"]
@@ -850,8 +837,8 @@
 				item: "gtceu:mv_machine_hull"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 0.5d
+			x: 7.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -870,8 +857,8 @@
 				item: "gtceu:mv_4a_energy_converter"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -1.5d
+			x: 7.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["12C9427A04A2F550"]
@@ -887,16 +874,14 @@
 				item: "gtceu:mv_laser_engraver"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 2.5d
+			x: 6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
-				"261B946701411D9C"
-				"7908E8C196F82F9B"
 				"119983C3240B8F66"
+				"3A20504009C70217"
 			]
-			dependency_requirement: "one_completed"
 			description: ["Made with either Sodium Persulfate or Iron III Chloride. Both are explained in the Processing Lines chapter."]
 			id: "6D8E5B0E49056FDC"
 			rewards: [{
@@ -909,8 +894,8 @@
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 4.5d
+			x: 4.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -933,7 +918,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 6.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["7836F17B34B47B16"]
@@ -952,7 +937,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 6.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["7836F17B34B47B16"]
@@ -968,8 +953,8 @@
 				item: "gtceu:tree_greenhouse"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 5.5d
+			x: 7.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -988,8 +973,8 @@
 				item: "gtceu:pyrolyse_oven"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 1.5d
+			x: 8.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1009,8 +994,8 @@
 				item: "gtceu:basic_integrated_circuit"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 6.5d
+			x: 8.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["70875F86587758D7"]
@@ -1027,8 +1012,8 @@
 				item: "gtceu:good_integrated_circuit"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 6.5d
+			x: 10.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -1068,8 +1053,8 @@
 				}
 			]
 			title: "IC Chips"
-			x: 9.5d
-			y: 4.5d
+			x: 6.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -1109,8 +1094,8 @@
 				}
 			]
 			title: "ULPIC Chips"
-			x: 8.5d
-			y: 3.5d
+			x: 6.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1133,8 +1118,8 @@
 				item: "gtceu:mv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 2.5d
+			x: 9.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["12C9427A04A2F550"]
@@ -1150,25 +1135,8 @@
 				item: "gtceu:mv_assembler"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["12C9427A04A2F550"]
-			description: ["Used to grow crystals from dusts."]
-			id: "25068C8099952D6A"
-			rewards: [{
-				id: "20BA46997A59AA15"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5F2ED3D51A1B5C9C"
-				item: "gtceu:mv_autoclave"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -1.5d
+			x: 9.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1190,8 +1158,8 @@
 				item: "gtceu:lv_super_tank"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -1.5d
+			x: -12.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7EC83EEF3F7A89B8"]
@@ -1217,63 +1185,10 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["7EC83EEF3F7A89B8"]
-			description: ["The 3rd tier of mesh, will give you access to new resources to progress."]
-			id: "6D35986F79B17912"
-			rewards: [{
-				count: 2
-				id: "0D559D2ABBE98BD4"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "6408A4D29DB3C957"
-				item: "exnihilosequentia:iron_mesh"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["6D35986F79B17912"]
-			description: ["By processing this dust, you will gain access to rare earth which contains a number of other resources."]
-			id: "3A76F21DD2A31324"
-			rewards: [{
-				id: "3E897BC0D4A6AA34"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "7ED06915581A8D75"
-				item: "gtceu:monazite_dust"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["3A76F21DD2A31324"]
-			id: "182E932DAC15B0B0"
-			rewards: [{
-				id: "5222480C0D765EF4"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "2D7BB0405952185D"
-				item: "gtceu:rare_earth_dust"
-				type: "item"
-			}]
-			x: 11.5d
 			y: 2.5d
 		}
 		{
-			dependencies: ["182E932DAC15B0B0"]
+			dependencies: ["4597B95C2F5EE106"]
 			description: ["Neodynium is gonna be used for higher motor tiers, and Neodynium Magnets."]
 			hide_dependent_lines: true
 			id: "2C404AE10029FCD4"
@@ -1315,11 +1230,11 @@
 				}
 			]
 			title: "Rare Earth Metals"
-			x: 11.5d
-			y: 4.5d
+			x: 2.5d
+			y: 6.5d
 		}
 		{
-			dependencies: ["25068C8099952D6A"]
+			dependencies: ["5F80268C02FAD5F6"]
 			description: ["AE2's backbone material."]
 			id: "6896F9AF41EE8571"
 			rewards: [{
@@ -1332,8 +1247,8 @@
 				item: "ae2:certus_quartz_crystal"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -3.5d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1361,8 +1276,8 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
-			y: -0.5d
+			x: 3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1381,27 +1296,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["7E6BF5B40EA057F5"]
-			description: ["Easy automated sieving in 1 block."]
-			id: "2B21C19628DCEA2A"
-			rewards: [{
-				count: 2
-				id: "571DA13EAD49E660"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "040A13BBD68FB949"
-				item: "exmachinis:flux_sieve"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7A9839144373C80D"]
@@ -1416,8 +1311,8 @@
 				item: "gtceu:kanthal_ingot"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -2.5d
+			x: 5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6749EECB949732DB"]
@@ -1436,37 +1331,11 @@
 				item: "gtceu:kanthal_coil_block"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.5d
+			x: 7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0E61DC74B2E2C962"]
-			description: ["You might also want to cool these through a Chemical Bath till you gain access to the Vacuum Freezer."]
-			icon: "gtceu:hot_silicon_ingot"
-			id: "4783029C26DC0368"
-			rewards: [{
-				id: "371125EA2779CE55"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "2D880B939AE8FF0C"
-					title: "Hot Silicon Ingot"
-					type: "checkmark"
-				}
-				{
-					id: "3F1A978EF851D6A3"
-					item: "gtceu:hot_silicon_ingot"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 1.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["4783029C26DC0368"]
 			description: ["Now you've cooled your first silicon ingots, you can finally make use of all the silicon thats lying about your base."]
 			id: "4ED724D5B94CFA3A"
 			rewards: [{
@@ -1479,8 +1348,8 @@
 				item: "gtceu:silicon_ingot"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -5.5d
+			x: 9.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6896F9AF41EE8571"]
@@ -1499,8 +1368,8 @@
 				item: "ae2:energy_acceptor"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -5.5d
+			x: 3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -1535,8 +1404,8 @@
 				}
 			]
 			title: "Inscriber Presses"
-			x: 5.5d
-			y: -3.5d
+			x: 10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1576,8 +1445,8 @@
 				}
 			]
 			title: "Printed Circuits"
-			x: 5.5d
-			y: -5.5d
+			x: 9.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -1603,7 +1472,7 @@
 					type: "item"
 				}
 			]
-			x: -10.5d
+			x: -12.5d
 			y: 0.5d
 		}
 		{
@@ -1620,7 +1489,7 @@
 				item: "create_new_age:energiser_t1"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -11.5d
 			y: 1.5d
 		}
 		{
@@ -1636,8 +1505,8 @@
 				item: "create_new_age:energiser_t2"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 3.5d
+			x: -10.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["04876D3FDD4BE6F7"]
@@ -1654,8 +1523,8 @@
 				item: "create_new_age:energiser_t3"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 3.5d
+			x: -8.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["35D6B5C30A3A2AE0"]
@@ -1670,7 +1539,7 @@
 				item: "create_new_age:magnetite_block"
 				type: "item"
 			}]
-			x: -11.5d
+			x: -13.5d
 			y: 1.5d
 		}
 		{
@@ -1686,7 +1555,7 @@
 				item: "create_new_age:redstone_magnet"
 				type: "item"
 			}]
-			x: -11.5d
+			x: -13.5d
 			y: 3.5d
 		}
 		{
@@ -1702,8 +1571,8 @@
 				item: "create_new_age:layered_magnet"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 5.5d
+			x: -12.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5FD374ACECB3E571"]
@@ -1718,8 +1587,8 @@
 				item: "create_new_age:fluxuated_magnetite"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 5.5d
+			x: -10.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1739,8 +1608,8 @@
 				item: "create_new_age:netherite_magnet"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 5.5d
+			x: -8.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["35D6B5C30A3A2AE0"]
@@ -1756,7 +1625,7 @@
 				item: "create_new_age:copper_wire"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -12.5d
 			y: 2.5d
 		}
 		{
@@ -1773,8 +1642,8 @@
 				item: "create_new_age:overcharged_iron_wire"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 4.5d
+			x: -11.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["24EC88E9B8205348"]
@@ -1790,8 +1659,8 @@
 				item: "create_new_age:overcharged_golden_wire"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 4.5d
+			x: -9.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3CD2FE0563B226A7"]
@@ -1809,8 +1678,8 @@
 				item: "create_new_age:overcharged_diamond_wire"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 4.5d
+			x: -7.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["12C9427A04A2F550"]
@@ -1826,8 +1695,8 @@
 				item: "gtceu:silicone_rubber_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -0.5d
+			x: 7.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["20A12F3B992762F0"]
@@ -1840,8 +1709,82 @@
 				item: { Count: 8, id: "gtceu:basic_electronic_circuit" }
 				type: "item"
 			}]
-			x: -8.5d
+			x: -10.5d
 			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1F5CCE8CFD02903A"
+				"6D23752791E9928A"
+			]
+			id: "5F80268C02FAD5F6"
+			tasks: [{
+				id: "73169856CA4F6131"
+				item: "gtceu:rock_filtrator"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1F5CCE8CFD02903A"]
+			id: "30B2688F8387048F"
+			tasks: [{
+				id: "3576D69241679C72"
+				item: "gtceu:void_miner"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7CA424E05FB05DFF"]
+			id: "4597B95C2F5EE106"
+			tasks: [{
+				id: "18AA89358DEB2724"
+				item: "gtceu:rare_sludge_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7CA424E05FB05DFF"]
+			id: "12DA5E8FA3E11AC0"
+			tasks: [{
+				id: "03E9166C29EFFE49"
+				item: "gtceu:vanadium_magnetite_sludge_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"261B946701411D9C"
+				"7908E8C196F82F9B"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Iron (III) Chloride or Sodium Persulfate Quest Completion"]
+			id: "3A20504009C70217"
+			tasks: [{
+				id: "633C63725D58A795"
+				title: "Processing Line Questbook Chapter"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["30B2688F8387048F"]
+			id: "7CA424E05FB05DFF"
+			tasks: [{
+				id: "7A70E4D923C0FA25"
+				title: "Resource Production Questbook Chapter"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 6.5d
 		}
 	]
 	title: "Industrial Revolution"

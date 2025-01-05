@@ -11,8 +11,11 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Greenhouse
-    event.create('runic_enscibe_manipulate', 'simple', GTValues.UHV)
-        .recipeType('runic_enscibe_manipulate', true, true)
+    event.create('runic_enscibe_manipulate', 'simple')
+    .tiers(GTValues.UHV)
+    .definition((tier, builder) => {
+        builder
+        .recipeType('runic_enscibe_manipulate')
         .workableTieredHullRenderer("gtceu:block/machines/extruder");
-
+    })
 });

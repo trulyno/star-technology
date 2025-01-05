@@ -142,7 +142,7 @@ StartupEvents.registry('item', event => {
         event.create(`${tier}_energy_core`)
             .displayName(`${tier.charAt(0).toUpperCase() + tier.slice(1)} Energy Core`)
             .texture(`kubejs:item/energy_cores/${tier}_energy_core`);
-    })
+    });
 
     // Mycelium Leather
     event.create('compressed_mycelium');
@@ -386,6 +386,44 @@ StartupEvents.registry('item', event => {
 
     });
 
+    //geodes
+    ['Diamond', 'Emerald', 'Ruby', 'Sapphire', 'Quartzite', 'Topaz', 'Spessartine', `Certus_Quartz`, `Green_Sapphire`
+        ,`Blue_Topaz`,`Apatite`, `Monazite`].forEach(type => {
+        event.create(`${type.toLowerCase()}_geode`)
+            .displayName(`${type.replace(/_/, ' ')} Geode`)
+            .texture(`kubejs:item/resource_gen/geodes/cracked_${type.toLowerCase()}_geode`);
+    //need to fix    //    .texture(`kubejs:item/resource_gen/geodes/${type.toLowerCase()}_geode`);
+        // event.create(`cracked_${type}_geode`)
+        //     .displayName(`Cracked ${type.charAt(0).toUpperCase() + type.slice(1)} Geode`)
+        //     .texture(`kubejs:item/resource_gen/geodes/cracked_${type}_geode`);
+    });
+
+//     //plant balls
+//     ['plants', 'roots', 'seeds', 'compost'].forEach(type => {
+//         event.create(`ball_${type}`)
+//             .displayName(`Ball of ${type.charAt(0).toUpperCase() + type.slice(1)}`)
+//             .texture(`kubejs:item/resource_gen/plant_balls/ball_${type}`);
+//     });
+
+//     //scan results
+//     event.create('undetermined_scan_file')
+//         .displayName('Scan Result: Undetermined')
+//         .texture('kubejs:item/resource_gen/undetermined_scan_result');
+
+//     ['skystone', 'pollucite', 'lepidolite', 'bastnasite'].forEach(type => {
+//         event.create(`${type}_scan_file`)
+//             .displayName(`Scan Result: ${type.charAt(0).toUpperCase() + type.slice(1)} Meteorite`)
+//             .texture(`kubejs:item/resource_gen/${type}_scan_result`);
+
+//         event.create(`${type}_meteorite`)
+//             .displayName(`${type.charAt(0).toUpperCase() + type.slice(1)} Meteorite`)
+//             .texture(`kubejs:item/resource_gen/${type}_meteorite`);
+//     });
+
+//     event.create('cargo_drone')
+//         .displayName('Cargo Drone')
+//         .texture('kubejs:item/resource_gen/drone_test');
+
 });
 
 // Custom Blocks
@@ -550,7 +588,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/beryllium_aluminium_alloy_casing');
+        .textureAll('kubejs:block/casings/beryllium-aluminium_casing');
 
     event.create('birmabright_casing')
         .displayName('Birmabright Casing')
@@ -714,72 +752,109 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_stone_tool')
         .textureAll('kubejs:block/multiblock/meshblock');
 
-    //Runic Casings
+        //Runic Casings
 
     event.create('runic_stabilization_casing')
-        .displayName('Stabilization Enscribed Runically Infused Casing')
-        .hardness(10)
-        .resistance(1)
-        .lightLevel(2)
-        .soundType('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .tagBlock('minecraft:needs_diamond_tool')
-        //.textureAll('kubejs:block/casings/');
+    .displayName('Stabilization Enscribed Runically Infused Casing')
+    .hardness(10)
+    .resistance(1)
+    .lightLevel(2)
+    .soundType('stone')
+    .requiresTool(true)
+    .tagBlock("mineable/pickaxe")
+    .tagBlock('minecraft:needs_diamond_tool')
+    //.textureAll('kubejs:block/casings/');
 
-    event.create('runic_transportation_casing')
-        .displayName('Transportation Enscribed Runically Infused Casing')
-        .hardness(10)
-        .resistance(1)
-        .lightLevel(2)
-        .soundType('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .tagBlock('minecraft:needs_diamond_tool')
-        //.textureAll('kubejs:block/casings/');
+event.create('runic_transportation_casing')
+    .displayName('Transportation Enscribed Runically Infused Casing')
+    .hardness(10)
+    .resistance(1)
+    .lightLevel(2)
+    .soundType('stone')
+    .requiresTool(true)
+    .tagBlock("mineable/pickaxe")
+    .tagBlock('minecraft:needs_diamond_tool')
+    //.textureAll('kubejs:block/casings/');
 
-    event.create('runic_pathway_casing')
-        .displayName('Pathway Enscribed Runically Infused Casing')
-        .hardness(10)
-        .resistance(1)
-        .lightLevel(2)
-        .soundType('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .tagBlock('minecraft:needs_diamond_tool')
-        //.textureAll('kubejs:block/casings/');
+event.create('runic_pathway_casing')
+    .displayName('Pathway Enscribed Runically Infused Casing')
+    .hardness(10)
+    .resistance(1)
+    .lightLevel(2)
+    .soundType('stone')
+    .requiresTool(true)
+    .tagBlock("mineable/pickaxe")
+    .tagBlock('minecraft:needs_diamond_tool')
+    //.textureAll('kubejs:block/casings/');
 
-    event.create('runic_energized_transportation_casing')
-        .displayName('Transportation Enscribed Runically Infused and Energized Casing')
-        .hardness(10)
-        .resistance(1)
-        .lightLevel(2)
-        .soundType('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .tagBlock('minecraft:needs_diamond_tool')
-        //.textureAll('kubejs:block/casings/');
+event.create('runic_energized_transportation_casing')
+    .displayName('Transportation Enscribed Runically Infused and Energized Casing')
+    .hardness(10)
+    .resistance(1)
+    .lightLevel(2)
+    .soundType('stone')
+    .requiresTool(true)
+    .tagBlock("mineable/pickaxe")
+    .tagBlock('minecraft:needs_diamond_tool')
+    //.textureAll('kubejs:block/casings/');
 
-    event.create('runic_energized_pathway_casing')
-        .displayName('Pathway Enscribed Runically Infused and Energized Casing')
-        .hardness(10)
-        .resistance(1)
-        .lightLevel(2)
-        .soundType('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .tagBlock('minecraft:needs_diamond_tool')
-        //.textureAll('kubejs:block/casings/');
+event.create('runic_energized_pathway_casing')
+    .displayName('Pathway Enscribed Runically Infused and Energized Casing')
+    .hardness(10)
+    .resistance(1)
+    .lightLevel(2)
+    .soundType('stone')
+    .requiresTool(true)
+    .tagBlock("mineable/pickaxe")
+    .tagBlock('minecraft:needs_diamond_tool')
+    //.textureAll('kubejs:block/casings/');
 
-    event.create('inscribe_casing')
-        .displayName('Keelaengraver Manipulator & Aquaconcentrator Capable Runicalium Casing')
-        .hardness(5)
-        .resistance(10)
-        .lightLevel(10)
-        .soundType('metal')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .tagBlock('minecraft:needs_iron_tool')
-        //.textureAll('kubejs:block/casings/');
+event.create('inscribe_casing')
+    .displayName('Keelaengraver Manipulator & Aquaconcentrator Capable Runicalium Casing')
+    .hardness(5)
+    .resistance(10)
+    .lightLevel(10)
+    .soundType('metal')
+    .requiresTool(true)
+    .tagBlock("mineable/pickaxe")
+    .tagBlock('minecraft:needs_iron_tool')
+    //.textureAll('kubejs:block/casings/');
 
+    //     //Coagulated blocks
+//     ['iron', 'copper', 'quartz'].forEach(type => {
+//         event.create(`coagulated_${type}_mixture`)
+//             .displayName(`Coagulated ${type.charAt(0).toUpperCase() + type.slice(1)} Mixture`)
+//             .hardness(5)
+//             .resistance(5)
+//             .material('stone')
+//             .requiresTool(true)
+//             .tagBlock("mineable/pickaxe")
+//             .textureAll(`kubejs:block/resource_gen/coagulated_${type}_mixture`);
+//     });
+    
+//     event.create('coagulated_lava')
+//         .displayName('Coagulated Lava')
+//         .hardness(5)
+//         .resistance(5)
+//         .material('stone')
+//         .requiresTool(true)
+//         .tagBlock("mineable/pickaxe")
+//         .textureAll('kubejs:block/resource_gen/coagulated_lava');
+
+//     event.create('reflective_casing')
+//         .hardness(10)
+//         .resistance(1)
+//         .lightLevel(5/15)
+//         .soundType('metal')
+//         .requiresTool(true)
+//         .tagBlock("mineable/pickaxe")
+//         .tagBlock('minecraft:needs_iron_tool')
+//         .textureAll('kubejs:block/resource_gen/reflective_casing');
+
+});
+
+BlockEvents.modification(event => {
+    event.modify('gtceu:nether_star_block', block => {
+      block.lightEmission = 15
+    })
 });

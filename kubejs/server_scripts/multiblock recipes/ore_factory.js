@@ -65,8 +65,8 @@ var ekofProcessableTiers = {
         .chancedOutput(`gtceu:${secondary}_dust`, 4500, 100)
         .chancedOutput(`gtceu:${tertiary}_dust`, 3250, 50)
         .duration(160)
-        .inputStress(256)
-        .rpm(rpm == 2048 ? 256 : rpm == 512 ? 192 : rpm)
+        //.inputStress(256)
+        //.rpm(rpm == 2048 ? 256 : rpm == 512 ? 192 : rpm)
         .EUt(28);
     });
   
@@ -88,8 +88,8 @@ var ekofProcessableTiers = {
         .chancedOutput(`gtceu:${tertiary}_dust`, 1250, 50)
         .chancedOutput(`gtceu:${quaternary}_dust`, 750, 100)
         .duration(320)
-        .inputStress(rpm * 4)
-        .rpm(rpm == 2048 ? 256 : rpm == 512 ? 192 : rpm)
+        //.inputStress(rpm * 4)
+        //.rpm(rpm == 2048 ? 256 : rpm == 512 ? 192 : rpm)
         .EUt(rpm * 0.75);
     });
   

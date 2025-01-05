@@ -10,10 +10,14 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    // Essence Burner
-    event.create('essence_burner', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV)
-        .recipeType('essence_burning', true, true)
-        .tankScalingFunction(tier => tier * 3200)
-        .workableTieredHullRenderer("gtceu:block/machines/cutter");
+    // Greenhouse
+    event.create('essence_burner', 'simple')
+        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV)
+        .definition((tier, builder) => {
+            builder
+                .recipeType('essence_burning')
+                // .tankScalingFunction(tier => tier * 3200)
+                .workableTieredHullRenderer("gtceu:block/machines/cutter")
+        });
 
 });

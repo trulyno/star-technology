@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     function largeCube(type, casing) {
         event.create(`t_large_${type}`, 'multiblock')
@@ -6,7 +5,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .recipeType(type)
             .tooltips("Can only have §bone§f energy hatch")
             .tooltips("Has §6Perfect Overclock")
-            .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+            .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle('CCC', 'CCC', 'CCC')
                 .aisle('CCC', 'C C', 'CCC')
@@ -29,7 +28,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     largeCube('bender', 'birmabright');
     largeCube('centrifuge', 'tumbaga');
     largeCube('electrolyzer', 'duralumin');
-    largeCube('extruder', 'beryllium_aluminium_alloy');
+    largeCube('extruder', 'beryllium-aluminium');
     largeCube('forming_press', 'elgiloy');
     largeCube('lathe', 'beryllium_bronze');
     largeCube('macerator', 'blue_steel');
@@ -46,7 +45,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeType('large_rock_crusher')
         .tooltips("Can only have §bone§f energy hatch")
         .tooltips("Has §6Perfect Overclock")
-        .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('CCC', 'CCC', 'CCC')
             .aisle('CCC', 'C C', 'CCC')
