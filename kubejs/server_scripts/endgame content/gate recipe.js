@@ -246,7 +246,35 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     //Ancient Gate
-    
+        //Chevrons
+        event.recipes.gtceu.assembly_line('classic_chevron_assembly')
+            .itemInputs('gtceu:stellarium_frame', 'kubejs:classic_chevron_disk', 'kubejs:classic_chevron_disk', 'kubejs:classic_chevron_disk', '6x kubejs:uhv_computational_matrix', '8x kubejs:uhv_catalyst_core', '24x kubejs:uhv_super_magnetic_core', '12x kubejs:uhv_high_strength_panel')
+            .inputFluids('gtceu:utopian_akreyrium 24000', 'gtceu:naquadria 56000', 'gtceu:borosilicate_glass 180000')
+            .itemOutputs('kubejs:classic_chevron_assembly')
+            .duration(9000)
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of("kubejs:classic_chevron_disk"))
+                    .EUt(GTValues.VHA[GTValues.UV])
+                    .CWUt(160)
+                )
+            .EUt(GTValues.VHA[GTValues.UHV]);
+
+        event.recipes.gtceu.assembly_line('ancient_chevron_disk')
+            .itemInputs('gtceu:ancient_runicalium_frame', 'gtceu:exquisite_screret_runic_laser_source_base_gem', 'kubejs:classic_chevron_assembly', '6x gtceu:uhv_sensor', '6x gtceu:uhv_emitter', '6x gtceu:uhv_field_generator', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip')
+            .inputFluids('gtceu:utopian_akreyrium 48000', 'gtceu:naquadria 96000', 'gtceu:borosilicate_glass 196000')
+            .itemOutputs('kubejs:ancient_chevron_disk')
+            .duration(12000)
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of("kubejs:classic_chevron_assembly"))
+                    .EUt(GTValues.VHA[GTValues.UHV])
+                    .CWUt(176)
+                )
+            .EUt(GTValues.VHA[GTValues.UEV]);
+
+
+
         //Ancient Encoded Computational Unit
         event.recipes.gtceu.assembly_line('ancient_stargate_computer_core')
             .itemInputs('gtceu:ancient_runicalium_frame','kubejs:classic_stargate_computer_core','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire',

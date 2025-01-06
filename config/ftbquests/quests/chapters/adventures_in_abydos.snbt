@@ -291,6 +291,7 @@
 				"4DD3C38FCD8D704D"
 				"5F65FECD29B8A341"
 			]
+			hide_dependent_lines: true
 			id: "3212A3351DAD4492"
 			tasks: [{
 				id: "769BEF16C47F1FCA"
@@ -797,10 +798,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: [
-				"442233119AED645F"
-				"0EEE2C3A7630EC40"
-			]
+			dependencies: ["442233119AED645F"]
 			id: "425A865B6B617DEC"
 			shape: "gear"
 			size: 1.5d
@@ -810,7 +808,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["379D69A44FC5B2F2"]
@@ -1190,18 +1188,11 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["62A72817F92AC262"]
-			id: "0EEE2C3A7630EC40"
-			tasks: [{
-				id: "0FA7BE16B5640784"
-				title: "Funny chevron line"
-				type: "checkmark"
-			}]
-			x: 10.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["0EEE2C3A7630EC40"]
+			dependencies: [
+				"1E47910C2F2112E1"
+				"3212A3351DAD4492"
+			]
+			hide_dependency_lines: false
 			id: "442233119AED645F"
 			tasks: [{
 				id: "3E57E2BE937E26CD"
@@ -1212,8 +1203,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
-			y: -4.0d
+			x: 10.5d
+			y: -2.0d
 		}
 	]
 	title: "Adventures in Abydos"
