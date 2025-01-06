@@ -1501,7 +1501,7 @@
 				item: "gtceu:data_orb"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 12.5d
 			y: 1.5d
 		}
 		{
@@ -1558,8 +1558,8 @@
 				item: "gtceu:epoxy_printed_circuit_board"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 2.5d
+			x: 13.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1604,8 +1604,8 @@
 				item: "gtceu:epoxy_circuit_board"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 2.5d
+			x: 15.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4D49884E7F5BCBB4"]
@@ -1620,8 +1620,8 @@
 				item: "gtceu:epoxy_plate"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 2.5d
+			x: 17.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -1917,7 +1917,7 @@
 				item: "gtceu:reinforced_epoxy_resin_plate"
 				type: "item"
 			}]
-			x: 16.5d
+			x: 15.5d
 			y: -2.5d
 		}
 		{
@@ -1934,7 +1934,7 @@
 				type: "item"
 			}]
 			x: 17.0d
-			y: -4.0d
+			y: -2.5d
 		}
 		{
 			id: "4FF433145C67693F"
@@ -1949,7 +1949,7 @@
 				item: "gtceu:carbon_fibers"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 15.5d
 			y: -4.0d
 		}
 		{

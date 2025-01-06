@@ -972,7 +972,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["04044187B7B40420"]
@@ -1004,7 +1004,7 @@
 				item: "gtceu:crushed_apatite_ore"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.0d
 			y: -2.5d
 		}
 		{
@@ -1015,7 +1015,7 @@
 				item: "gtceu:crushed_spessartine_ore"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -2.5d
 			y: -3.0d
 		}
 		{

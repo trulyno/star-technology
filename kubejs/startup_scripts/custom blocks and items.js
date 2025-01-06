@@ -839,7 +839,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        //.textureAll('kubejs:block/casings/');
+        .textureAll('kubejs:block/casings/inscribe_casing');
 
     event.create('ancient_stargate_ring_block')
         .displayName('Ancient Stargate Ring Block')
