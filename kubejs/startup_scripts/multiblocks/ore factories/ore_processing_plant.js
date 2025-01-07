@@ -1,17 +1,17 @@
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-    event.create('ore_processing_plant')
-        .category('ore_processing_plant')
+    event.create('plant_ore_processing')
+        .category('ore_processing')
         .setEUIO('in')
-        .setMaxIOSize(1, 8, 2, 1)
+        .setMaxIOSize(1, 6, 1, 0)
         .setSound(GTSoundEntries.BATH);
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('ore_processing_plant', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('ore_processing_plant')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
+        .recipeType('plant_ore_processing')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK])
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' AAA ', ' FFF ', ' FFF ', '  F  ', '     ', '     ', '     ')

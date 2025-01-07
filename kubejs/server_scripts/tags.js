@@ -18,6 +18,11 @@ ServerEvents.tags('item', event => {
         event.add('gtceu:cracked_geode', `kubejs:cracked_${type}_geode`);
     });
 
+    event.add('gtceu:coal_dusts', 'gtceu:charcoal_dust');
+    event.add('gtceu:coal_dusts', 'gtceu:coal_dust');
+    event.add('gtceu:coal_blocks', 'minecraft:coal_block');
+    event.add('gtceu:coal_blocks', 'gtceu:charcoal_block');
+
 });
 
 ServerEvents.tags('item', event=>{
