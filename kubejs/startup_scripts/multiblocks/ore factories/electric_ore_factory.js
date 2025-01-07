@@ -1,16 +1,17 @@
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-    event.create('electrico_kinetic_ore_factory')
-        .category('kinetic_ore_factory')
+    event.create('electric_ore_processing')
+        .category('ore_processing')
         .setEUIO('in')
-        .setMaxIOSize(1, 8, 2, 1)
+        .setMaxIOSize(1, 5, 1, 0)
         .setSound(GTSoundEntries.BATH);
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('electrico_kinetic_ore_factory', 'multiblock')
+    /* Previous Electrico-Kinetic Ore Factory */
+    event.create('electric_ore_factory', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('electrico_kinetic_ore_factory')
+        .recipeType('electric_ore_processing')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
