@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         'expatternprovider:ex_charger', 'expatternprovider:crystal_fixer', 'expatternprovider:canner', 'exmachinis:item_buffer', 'ae2:crystal_resonance_generator', 'ae2:vibration_chamber',
         'exnihilosequentia:mechanical_sieve', 'exnihilosequentia:mechanical_hammer', 'systeams:frost_boiler', 'thermalendergy:melodium_ingot', 'thermalendergy:prismalium_ingot', 'thermalendergy:stellarium_ingot',
         'thermalendergy:melodium_block', 'thermalendergy:prismalium_block', 'thermalendergy:stellarium_block', 'thermalendergy:melodium_nugget', 'thermalendergy:prismalium_nugget','thermalendergy:stellarium_nugget',
-        'exnihilosequentia:golden_mesh'
+        'exnihilosequentia:golden_mesh', 'expatternprovider:circuit_cutter'
     ];
     const toRemoveId = ['thermal:slime_mushroom_spores', 'thermal_extra:sticky_ball_to_paper', 'farmersdelight:paper_from_tree_bark',
         'create:pressing/sugar_cane', 'exnihilo:fluid_item/ens_slime', 'gtceu:shaped/good_circuit_board',
@@ -42,7 +42,8 @@ ServerEvents.recipes(event => {
     ];
 
     const toRemoveType = ['thermal:sawmill', 'thermal:pulverizer', 'thermal:insolator', 'thermal:centrifuge', 'thermal:crucible', 'thermal:chiller', 'thermal:refinery', 'thermal:pyrolyzer',
-        'thermal:crystallizer', 'thermal:press', 'thermal:smelter', 'exnihilosequentia:precipitate', 'exnihilosequentia:compost', 'exnihilosequentia:solidifying', 'exnihilosequentia:transition'
+        'thermal:crystallizer', 'thermal:press', 'thermal:smelter', 'exnihilosequentia:precipitate', 'exnihilosequentia:compost', 'exnihilosequentia:solidifying', 'exnihilosequentia:transition',
+        'expatternprovider:cutter'
     ];
 
     toRemoveOutput.forEach(element => {
@@ -79,6 +80,9 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'extendedcrafting'});
     event.remove({ mod: 'sgjourney'});
     event.remove({ mod: 'jetboots'});
+
+    // removing by type doesn't work >:(
+    event.remove({id: /.*expatternprovider.*cutter.*/});
 
     event.remove({ input: 'minecraft:netherite_scrap'});
     event.remove({ output: 'minecraft:netherite_scrap'});
