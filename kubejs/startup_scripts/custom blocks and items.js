@@ -559,6 +559,17 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_iron_tool')
         .textureAll('kubejs:block/casings/casing-stellarium');
 
+    event.create('ancient_runicalium_casing')
+        .displayName('Infusion Enhanced Ancient Runicalium Casing')
+        .hardness(10)
+        .resistance(1)
+        .lightLevel(2)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/casing-runicalium');
+
     event.create('austenitic_stainless_steel_304_casing')
         .displayName('Austenitic Stainless Steel 304 Nuclear Casing')
         .hardness(2)
@@ -784,7 +795,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_diamond_tool')
-        //.textureAll('kubejs:block/casings/');
+        .textureAll('kubejs:block/casings/runic_stabilization_casing');
 
     event.create('runic_transportation_casing')
         .displayName('Transportation Enscribed Runically Infused Casing')
@@ -795,7 +806,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_diamond_tool')
-        //.textureAll('kubejs:block/casings/');
+        .textureAll('kubejs:block/casings/runic_transportation_casing');
 
     event.create('runic_pathway_casing')
         .displayName('Pathway Enscribed Runically Infused Casing')
@@ -806,32 +817,10 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_diamond_tool')
-        //.textureAll('kubejs:block/casings/');
+        .textureAll('kubejs:block/casings/runic_pathway_casing');
 
-    event.create('runic_energized_transportation_casing')
-        .displayName('Transportation Enscribed Runically Infused and Energized Casing')
-        .hardness(10)
-        .resistance(1)
-        .lightLevel(2)
-        .soundType('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .tagBlock('minecraft:needs_diamond_tool')
-        //.textureAll('kubejs:block/casings/');
-
-    event.create('runic_energized_pathway_casing')
-        .displayName('Pathway Enscribed Runically Infused and Energized Casing')
-        .hardness(10)
-        .resistance(1)
-        .lightLevel(2)
-        .soundType('stone')
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .tagBlock('minecraft:needs_diamond_tool')
-        //.textureAll('kubejs:block/casings/');
-
-    event.create('inscribe_casing')
-        .displayName('Keelaengraver Manipulator & Aquaconcentrator Capable Runicalium Casing')
+        event.create('inscribe_casing')
+        .displayName('Keelagraver Manipulator & Acuancentrator Capable Runicalium Casing')
         .hardness(5)
         .resistance(10)
         .lightLevel(10)

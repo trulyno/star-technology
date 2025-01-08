@@ -1088,10 +1088,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"2C354B0735DF8023"
-				"5FCA8ED151CEB5C1"
-			]
+			dependencies: ["2C354B0735DF8023"]
 			id: "379D69A44FC5B2F2"
 			tasks: [
 				{
@@ -1107,16 +1104,6 @@
 				{
 					id: "17C629A38EDBD3E7"
 					item: "kubejs:runic_pathway_casing"
-					type: "item"
-				}
-				{
-					id: "15FAEB5EB0B5A0F5"
-					item: "kubejs:runic_energized_transportation_casing"
-					type: "item"
-				}
-				{
-					id: "3809DA190F74E7B3"
-					item: "kubejs:runic_energized_pathway_casing"
 					type: "item"
 				}
 			]
@@ -1156,9 +1143,13 @@
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
-				id: "0BA4AE5B74299AC9"
-				title: "Runic Enscribing and Manipulation Manifold"
-				type: "checkmark"
+				id: "2E0F0DBD6D2DEE96"
+				item: {
+					Count: 1
+					id: "gtceu:runic_inscribe_manipulate"
+					tag: { }
+				}
+				type: "item"
 			}]
 			x: 0.5d
 			y: -8.0d

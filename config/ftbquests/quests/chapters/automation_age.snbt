@@ -1502,7 +1502,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0514DE717001A062"]

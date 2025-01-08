@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     largeCube('bender', 'birmabright');
     largeCube('centrifuge', 'tumbaga');
     largeCube('electrolyzer', 'duralumin');
-    largeCube('extruder', 'beryllium-aluminium');
+    largeCube('extruder', 'beryllium_aluminium_alloy');
     largeCube('forming_press', 'elgiloy');
     largeCube('lathe', 'beryllium_bronze');
     largeCube('macerator', 'blue_steel');

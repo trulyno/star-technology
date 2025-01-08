@@ -73,53 +73,53 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
 
-    event.recipes.gtceu.runic_enscibe_manipulate('runic_energized_transportation_plating')
+    event.recipes.gtceu.runic_inscribe_manipulate('runic_energized_transportation_plating')
         .itemInputs('3x kubejs:runic_engraved_plating', 'kubejs:runic_energized_plating', 'kubejs:runic_transportation_engraved_plating')
         .inputFluids('gtceu:dense_electron_akreyrium 1000', 'gtceu:dense_muon_akreyrium 1000', 'gtceu:dense_tau_akreyrium 1000')
         .itemOutputs('kubejs:runic_energized_transportation_plating')
         .duration(6000)
         .EUt(GTValues.VA[GTValues.UHV]);
 
-    event.recipes.gtceu.runic_enscibe_manipulate('runic_energized_pathway_plating')
+    event.recipes.gtceu.runic_inscribe_manipulate('runic_energized_pathway_plating')
         .itemInputs('3x kubejs:runic_engraved_plating', 'kubejs:runic_energized_plating', 'kubejs:runic_pathway_engraved_plating')
         .inputFluids('gtceu:dense_electron_akreyrium 1000', 'gtceu:dense_muon_akreyrium 1000', 'gtceu:dense_tau_akreyrium 1000')
         .itemOutputs('kubejs:runic_energized_pathway_plating')
         .duration(6000)
         .EUt(GTValues.VA[GTValues.UHV]);
 
-    event.recipes.gtceu.runic_enscibe_manipulate('runic_pathway_casing')
+    event.recipes.gtceu.runic_inscribe_manipulate('runic_pathway_casing')
         .itemInputs('gtceu:void_frame', '12x gtceu:dense_naquadah_plate', '6x kubejs:runic_pathway_engraved_plating')
         .inputFluids('gtceu:naquadria 2592', 'gtceu:utopian_akreyrium 864')
         .itemOutputs('kubejs:runic_pathway_casing')
         .duration(4000)
         .EUt(GTValues.VA[GTValues.UHV]);
 
-    event.recipes.gtceu.runic_enscibe_manipulate('runic_stabilization_casing')
+    event.recipes.gtceu.runic_inscribe_manipulate('runic_stabilization_casing')
         .itemInputs('gtceu:void_frame', '12x gtceu:dense_naquadah_alloy_plate', '6x kubejs:runic_stabilization_plating')
         .inputFluids('gtceu:naquadria 2592', 'gtceu:utopian_akreyrium 864')
         .itemOutputs('kubejs:runic_stabilization_casing')
         .duration(4000)
         .EUt(GTValues.VA[GTValues.UHV]);
 
-    event.recipes.gtceu.runic_enscibe_manipulate('runic_transportation_casing')
+    event.recipes.gtceu.runic_inscribe_manipulate('runic_transportation_casing')
         .itemInputs('gtceu:void_frame', '12x gtceu:dense_trinaquadalloy_plate', '6x kubejs:runic_transportation_engraved_plating')
         .inputFluids('gtceu:naquadria 2592', 'gtceu:utopian_akreyrium 864')
         .itemOutputs('kubejs:runic_transportation_casing')
         .duration(4000)
         .EUt(GTValues.VA[GTValues.UHV]);
 
-    event.recipes.gtceu.runic_enscibe_manipulate('runic_energized_transportation_casing')
-        .itemInputs('gtceu:void_frame', '12x gtceu:dense_naquadria_plate', '6x kubejs:runic_energized_transportation_plating')
-        .inputFluids('gtceu:naquadria 2592', 'gtceu:utopian_akreyrium 864')
-        .itemOutputs('kubejs:runic_energized_transportation_casing')
-        .duration(5000)
-        .EUt(GTValues.VA[GTValues.UHV]);
-
-    event.recipes.gtceu.runic_enscibe_manipulate('runic_energized_pathway_casing')
-        .itemInputs('gtceu:void_frame', '12x gtceu:dense_naquadria_plate', '6x kubejs:runic_energized_pathway_plating')
-        .inputFluids('gtceu:naquadria 2592', 'gtceu:utopian_akreyrium 864')
-        .itemOutputs('kubejs:runic_energized_pathway_casing')
-        .duration(5000)
-        .EUt(GTValues.VA[GTValues.UHV]);
-
+    event.recipes.gtceu.assembly_line('runic_inscribe_manipulate')
+        .itemInputs('gtceu:ancient_runicalium_frame', '2x kubejs:uhv_catalyst_core','16x kubejs:uhv_high_strength_panel', '4x kubejs:uhv_computational_matrix', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip',
+             '64x kubejs:uepic_chip', '8x gtceu:uhv_field_generator', '8x gtceu:uhv_electric_piston', '16x gtceu:uhv_emitter', '12x kubejs:uhv_precision_drive_mechanism','2x gtceu:uhv_fluid_regulator')
+        .inputFluids('gtceu:hsse 25920', 'gtceu:hssg 25920', 'gtceu:hsss 25920')
+        .itemOutputs('gtceu:runic_inscribe_manipulate')
+        .duration(32000)
+        .stationResearch(
+    researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of("kubejs:runic_tablet_complete"))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(144)
+            )
+        .EUt(GTValues.VHA[GTValues.UHV]);
+    
 });

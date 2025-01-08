@@ -172,8 +172,8 @@
     "block.gtceu.cobbleworks": "Large Sieve Cobbleworks Module Controller",
     "gtceu.chemical_plant": "Chemical Plant",
     "block.gtceu.chemical_plant": "Chemical Plant Controller",
-    "gtceu.component_assembly": "Component Assembly",
-    "block.gtceu.component_assembly": "Component Assembly Controller",
+    "gtceu.component_part_assembly": "Component Part Assembly",
+    "block.gtceu.component_part_assembly": "Component Assembly Part Controller",
     "gtceu.large_farm": "Farming",
     "block.gtceu.large_farm": "Large Farm Controller",
     "gtceu.large_sieve": "Large Sieve",
@@ -385,8 +385,8 @@
     "block.gtceu.dimensional_finder": "Dimensional Finder Controller",
     "block.gtceu.dimensional_finder.tooltip.0": "Get Dimensionally Pinged",
 
-    "gtceu.uhv_runic_enscibe_manipulate": "Runic Inscribtion and Manipulation",
-    "block.gtceu.uhv_runic_enscibe_manipulate": "UHV Runic Inscriber and Manipulation Manifold",
+    "gtceu.runic_inscribe_manipulate": "Runic Inscribtion and Manipulation",
+    "block.gtceu.runic_inscribe_manipulate": "Runic Inscriber and Manipulation Manifold",
 
     "material.gtceu.magnetic_pure_netherite": "Magnetic Pure Netherite",
     "material.gtceu.ancient_runicalium": "Ancient Runicalium",

@@ -605,7 +605,7 @@ materialRegistry(event => {
         .components('5x zapolgium', '18x stellarium', '8x zirconium')
         .color(0xFAB922)
         .iconSet(SHINY)
-        .blastTemp(11749, 'highest', VA('uev'), 8400)
+        .blastTemp(11749, 'highest', VA('uev'), 6200)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame, fine_wire)
         .cableProperties(V('uev'), 1024, 0, true)
