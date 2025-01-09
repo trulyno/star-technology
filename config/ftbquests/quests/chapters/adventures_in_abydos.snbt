@@ -816,9 +816,13 @@
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
-				id: "4CC49B6099AED83C"
-				title: "Runic Stargate Assembler"
-				type: "checkmark"
+				id: "4A4935BD5C2C030A"
+				item: {
+					Count: 1
+					id: "gtceu:gate_assembly"
+					tag: { }
+				}
+				type: "item"
 			}]
 			x: 4.5d
 			y: -10.0d
@@ -908,10 +912,15 @@
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
-				id: "7333173D12165CE2"
-				title: "Ancient Gate"
-				type: "checkmark"
+				id: "3585C40F6B4E6F5A"
+				item: {
+					Count: 1
+					id: "sgjourney:milky_way_stargate"
+					tag: { }
+				}
+				type: "item"
 			}]
+			title: "The Ancient Gate"
 			x: 6.5d
 			y: -8.5d
 		}
@@ -970,17 +979,6 @@
 			}]
 			x: -5.5d
 			y: 2.0d
-		}
-		{
-			dependencies: ["74FB988DE790BE0D"]
-			id: "1959E83866AF8CD2"
-			tasks: [{
-				id: "095E72DC6C3EF3DF"
-				title: "MA Parallel Multiblocks"
-				type: "checkmark"
-			}]
-			x: -3.5d
-			y: -4.0d
 		}
 		{
 			dependencies: [

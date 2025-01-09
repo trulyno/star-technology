@@ -352,10 +352,10 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues.UEV]);
 
         //THE Ancient Gate
-        event.recipes.gtceu.assembler('ancient_gate')
+        event.recipes.gtceu.gate_assembly('ancient_gate')
             .itemInputs('14x kubejs:ancient_stargate_ring_block', '9x kubejs:ancient_stargate_chevron_block', 'kubejs:ancient_stargate_base_block')
             .itemOutputs('sgjourney:milky_way_stargate')
-            .duration(1)
+            .duration(48000)
             .EUt(GTValues.VA[GTValues.UEV]);
 
 });

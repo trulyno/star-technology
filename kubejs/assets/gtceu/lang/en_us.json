@@ -467,5 +467,7 @@
     "gtceu.barrel_transformation": "Barrel Transformation",
     "block.gtceu.ulv_barrel": "Wooden Barrel",
     "gtceu.stone_barrel": "Barrel Formation",
-    "block.gtceu.ulv_stone_barrel": "Stone Barrel"
+    "block.gtceu.ulv_stone_barrel": "Stone Barrel",
+    "gtceu.gate_assembly": "Stargate Assembly",
+    "block.gtceu.gate_assembly": "Runic Stargate Assembler Controller"
 }

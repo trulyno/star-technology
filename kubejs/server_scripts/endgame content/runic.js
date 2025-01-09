@@ -121,5 +121,5 @@ ServerEvents.recipes(event => {
                 .CWUt(144)
             )
         .EUt(GTValues.VHA[GTValues.UHV]);
-    
+ 
 });
