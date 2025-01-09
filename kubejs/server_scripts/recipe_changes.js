@@ -183,7 +183,7 @@ ServerEvents.recipes(event => {
         .duration(5)
         .EUt(30);
 
-    const types = ['soul_infused', 'signalum', 'lumium', 'enderium', 'shellite', 'twinite', 'dragonsteel', 'prismalium', 'melodium', 'stellarium', 'austenitic_stainless_steel_304', 'inconel_625', 'birmabright', 'duralumin', 'hydronalium', 'beryllium_aluminium_alloy', 'elgiloy', 'beryllium_bronze', 'silicon_bronze', 'kovar', 'zamak', 'tumbaga', 'sterling_silver', 'blue_steel', 'red_steel'];
+    const types = ['soul_infused', 'signalum', 'lumium', 'enderium', 'shellite', 'twinite', 'dragonsteel', 'prismalium', 'melodium', 'stellarium', 'austenitic_stainless_steel_304', 'inconel_625', 'birmabright', 'duralumin', 'hydronalium', 'beryllium_aluminium_alloy', 'elgiloy', 'beryllium_bronze', 'silicon_bronze', 'kovar', 'zamak', 'tumbaga', 'sterling_silver', 'blue_steel', 'red_steel', 'ancient_runicalium'];
 
     types.forEach(element => {
         event.shaped(Item.of(`2x kubejs:${element}_casing`), [
@@ -451,7 +451,7 @@ ServerEvents.recipes(event => {
         'UCC',
         'KH ',
         'UCC'], {
-        K: 'gtceu:zirconium_selenide_diiodide_single_cable',
+        K: 'gtceu:cerium_tritelluride_single_cable',
         U: 'gtceu:uhpic_chip',
         C: 'gtceu:europium_single_cable',
         H: 'gtceu:uhv_machine_hull'
@@ -460,7 +460,7 @@ ServerEvents.recipes(event => {
         'UCC',
         'KH ',
         'UCC'], {
-        K: 'gtceu:zirconium_selenide_diiodide_double_cable',
+        K: 'gtceu:cerium_tritelluride_double_cable',
         U: 'gtceu:uhpic_chip',
         C: 'gtceu:europium_double_cable',
         H: 'gtceu:uhv_machine_hull'
@@ -469,20 +469,29 @@ ServerEvents.recipes(event => {
         'UCC',
         'KH ',
         'UCC'], {
-        K: 'gtceu:zirconium_selenide_diiodide_quadruple_cable',
+        K: 'gtceu:cerium_tritelluride_quadruple_cable',
         U: 'gtceu:uhpic_chip',
-        C: 'gtceu:europium_single_cable',
+        C: 'gtceu:europium_quadruple_cable',
         H: 'gtceu:uhv_machine_hull'
     });
     event.shaped(Item.of('gtceu:uhv_transformer_16a'), [
         'UCC',
         'KH ',
         'UCC'], {
-        K: 'gtceu:zirconium_selenide_diiodide_hex_cable',
+        K: 'gtceu:cerium_tritelluride_hex_cable',
         U: 'gtceu:uhpic_chip',
         C: 'gtceu:europium_hex_cable',
         H: 'gtceu:uhv_machine_hull'
     });
+    event.recipes.gtceu.circuit_assembler('data_dna_disk')
+        .itemInputs('kubejs:draconic_wetware_printed_circuit_board','2x #gtceu:circuits/uhv','24x kubejs:qram_chip', 
+            '16x kubejs:3d_nor_chip','16x kubejs:3d_nand_chip','32x gtceu:fine_iron_selenide_over_strontium_titanium_oxide_wire')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 144')
+        .itemOutputs('start_core:data_dna_disk')
+        .duration(400)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .EUt(GTValues.V[GTValues.UHV]);
+
     //rutile fix
     event.remove({ id: 'gtceu:electric_blast_furnace/rutile_from_ilmenite' })
     event.recipes.gtceu.electric_blast_furnace('electric_blast_furnace/rutile_from_ilmenite')

@@ -17,20 +17,19 @@ ServerEvents.recipes(event => {
             )
         .EUt(GTValues.VHA[GTValues.UV]);
 
-    ComponentMats('uhv', 'zalloy', 'zircalloy_4', 'neutronium', 'uv', 'zpm', 'styrene_butadiene_rubber', 'polyether_ether_ketone', 'zirconium', 'iron_selenide_over_strontium_titanium_oxide', 'zirconium_selenide_diiodide', 'fusion_glass', 'quantum_star', 'pure_netherite', 'samarium', 'tritanium', 'naquadria', GTValues.VHA[GTValues.UHV], GTValues.VHA[GTValues.UV],128, 'uranium_rhodium_dinaquadide')
+    ComponentMats('uhv', 'zalloy', 'zircalloy_4', 'neutronium', 'uv', 'zpm', 'styrene_butadiene_rubber', 'polyether_ether_ketone', 'zirconium', 'iron_selenide_over_strontium_titanium_oxide', 'zirconium_selenide_diiodide', 'fusion_glass', 'gravi_star', 'pure_netherite', 'samarium', 'tritanium', 'naquadria', GTValues.VHA[GTValues.UHV], GTValues.VHA[GTValues.UV],128, 'uranium_rhodium_dinaquadide')
     //uev through opv material list to be update after epsilon, additionally need to add a scaler for maintained fluids
-    ComponentMats('uev', 'zalloy', 'zircalloy_4', 'neutronium', 'uhv', 'uv', 'styrene_butadiene_rubber', 'polyether_ether_ketone', 'zirconium', 'iron_selenide_over_strontium_titanium_oxide', 'zirconium_selenide_diiodide', 'fusion_glass', 'quantum_star', 'zapolgium', 'pure_netherite', 'tritanium', 'naquadria', GTValues.VHA[GTValues.UEV], GTValues.VHA[GTValues.UHV],160, 'uranium_rhodium_dinaquadide')
-    ComponentMats('uiv', 'zalloy', 'zircalloy_4', 'neutronium', 'uev', 'uhv', 'styrene_butadiene_rubber', 'polyether_ether_ketone', 'zirconium', 'iron_selenide_over_strontium_titanium_oxide', 'zirconium_selenide_diiodide', 'fusion_glass', 'quantum_star', 'zapolgium', 'pure_netherite', 'tritanium', 'naquadria', GTValues.VHA[GTValues.UIV], GTValues.VHA[GTValues.UEV],192, 'uranium_rhodium_dinaquadide')
-    ComponentMats('uxv', 'zalloy', 'zircalloy_4', 'neutronium', 'uiv', 'uev', 'styrene_butadiene_rubber', 'polyether_ether_ketone', 'zirconium', 'iron_selenide_over_strontium_titanium_oxide', 'zirconium_selenide_diiodide', 'fusion_glass', 'quantum_star', 'zapolgium', 'pure_netherite', 'tritanium', 'naquadria', GTValues.VHA[GTValues.UXV], GTValues.VHA[GTValues.UIV],224, 'uranium_rhodium_dinaquadide')
-    ComponentMats('opv', 'zalloy', 'zircalloy_4', 'neutronium', 'uxv', 'uiv', 'styrene_butadiene_rubber', 'polyether_ether_ketone', 'zirconium', 'iron_selenide_over_strontium_titanium_oxide', 'zirconium_selenide_diiodide', 'fusion_glass', 'quantum_star', 'zapolgium', 'pure_netherite', 'tritanium', 'naquadria', 4*GTValues.VHA[GTValues.UXV], GTValues.VHA[GTValues.UXV],256, 'uranium_rhodium_dinaquadide')
+    ComponentMats('uev', 'zalloy', 'zircalloy_4', 'neutronium', 'uhv', 'uv', 'styrene_butadiene_rubber', 'polyether_ether_ketone', 'zirconium', 'iron_selenide_over_strontium_titanium_oxide', 'zirconium_selenide_diiodide', 'fusion_glass', 'gravi_star', 'zapolgium', 'pure_netherite', 'tritanium', 'naquadria', GTValues.VHA[GTValues.UEV], GTValues.VHA[GTValues.UHV],160, 'uranium_rhodium_dinaquadide')
+    ComponentMats('uiv', 'zalloy', 'zircalloy_4', 'neutronium', 'uev', 'uhv', 'styrene_butadiene_rubber', 'polyether_ether_ketone', 'zirconium', 'iron_selenide_over_strontium_titanium_oxide', 'zirconium_selenide_diiodide', 'fusion_glass', 'gravi_star', 'zapolgium', 'pure_netherite', 'tritanium', 'naquadria', GTValues.VHA[GTValues.UIV], GTValues.VHA[GTValues.UEV],192, 'uranium_rhodium_dinaquadide')
+    ComponentMats('uxv', 'zalloy', 'zircalloy_4', 'neutronium', 'uiv', 'uev', 'styrene_butadiene_rubber', 'polyether_ether_ketone', 'zirconium', 'iron_selenide_over_strontium_titanium_oxide', 'zirconium_selenide_diiodide', 'fusion_glass', 'gravi_star', 'zapolgium', 'pure_netherite', 'tritanium', 'naquadria', GTValues.VHA[GTValues.UXV], GTValues.VHA[GTValues.UIV],224, 'uranium_rhodium_dinaquadide')
+    ComponentMats('opv', 'zalloy', 'zircalloy_4', 'neutronium', 'uxv', 'uiv', 'styrene_butadiene_rubber', 'polyether_ether_ketone', 'zirconium', 'iron_selenide_over_strontium_titanium_oxide', 'zirconium_selenide_diiodide', 'fusion_glass', 'gravi_star', 'zapolgium', 'pure_netherite', 'tritanium', 'naquadria', 4*GTValues.VHA[GTValues.UXV], GTValues.VHA[GTValues.UXV],256, 'uranium_rhodium_dinaquadide')
 
 
     function ComponentMats(tier, prim_material, secnd_material, main_material, tier1Under, tier2Under, rubber, plastic, wire1, wire2, cable, glass, catalyst, magnetic1, magnetic2, material1under, liquid, eu, eu1under,cwu, vcoil){
         
         //Component Parts
         event.recipes.gtceu.component_part_assembly(`kubejs:${tier}_voltage_coil`)
-            .itemInputs(`gtceu:${main_material}_tiny_fluid_pipe`,`2x gtceu:magnetic_${magnetic1}_rod`, `16x gtceu:fine_${vcoil}_wire`, `#gtceu:circuits/${tier}`, `kubejs:${tier1Under}_super_magnetic_core`) .circuit(1)
-            .inputFluids('gtceu:liquid_helium 1000')
+            .itemInputs(`gtceu:${main_material}_tiny_fluid_pipe`,`2x gtceu:magnetic_${magnetic1}_rod`, `16x gtceu:fine_${vcoil}_wire`, `kubejs:${tier1Under}_super_magnetic_core`)
             .itemOutputs(`kubejs:${tier}_voltage_coil`)
             .duration(200)
             .EUt(eu)
@@ -101,7 +100,7 @@ ServerEvents.recipes(event => {
     //Components
 
         event.recipes.gtceu.assembly_line(`${tier}_electric_motor`)
-            .itemInputs(`kubejs:${tier}_super_magnetic_core`, `2x kubejs:${tier}_high_strength_panel`, `kubejs:${tier}_transmission_assembly`, `4x gtceu:${prim_material}_plate`, `4x gtceu:${prim_material}_screw`, `2x gtceu:long_${prim_material}_rod`, `kubejes:${tier}_micropower_router`)
+            .itemInputs(`kubejs:${tier}_super_magnetic_core`, `2x kubejs:${tier}_high_strength_panel`, `kubejs:${tier}_transmission_assembly`, `4x gtceu:${prim_material}_plate`, `4x gtceu:${prim_material}_screw`, `2x gtceu:long_${prim_material}_rod`, `kubejs:${tier}_micropower_router`)
             .inputFluids(`gtceu:indium_tin_lead_cadmium_soldering_alloy 576`, `gtceu:lubricant 1000`, `gtceu:${liquid} 576`)
             .itemOutputs(`gtceu:${tier}_electric_motor`)
             .stationResearch(

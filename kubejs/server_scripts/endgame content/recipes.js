@@ -78,10 +78,74 @@ ServerEvents.recipes(event => {
         .duration(920)
         .EUt(30000);
 
+    event.remove({output: 'gtceu:hot_cerium_tritelluride_ingot'})
+    event.recipes.gtceu.heat_chamber('hot_cerium_tritelluride_ingot')
+        .itemInputs('gtceu:cerium_dust', '3x gtceu:tellurium_dust')
+        .inputFluids('gtceu:xenon 120')
+        .itemOutputs('4x gtceu:hot_cerium_tritelluride_ingot')
+        .duration(5000)
+        .circuit(2)
+        .EUt((GTValues.VHA[GTValues.UHV]));
+
     event.recipes.gtceu.assembler('zalloy_coil')
         .itemInputs('8x gtceu:zalloy_double_wire', '8x gtceu:neutronium_foil')
         .inputFluids('gtceu:tritanium 144')
         .itemOutputs('kubejs:zalloy_coil_block')
         .duration(900)
         .EUt(GTValues.VHA[GTValues.UHV]);
+
+    event.recipes.gtceu.chemical_reactor('uepic_wafer')
+        .itemInputs('gtceu:uhpic_wafer','4x gtceu:silicon_carbide_over_bismuth_tritelluride_dust')
+        .inputFluids('gtceu:neutronium 576')
+        .itemOutputs('kubejs:uepic_wafer')
+        .duration(1200)
+        .EUt((GTValues.VA[GTValues.UV]))
+        .cleanroom(CleanroomType.CLEANROOM);
+
+    event.recipes.gtceu.cutter('uepic_chip')
+        .itemInputs('kubejs:uepic_wafer')
+        .itemOutputs('2x kubejs:uepic_chip')
+        .duration(900)
+        .EUt((GTValues.VA[GTValues.UV]))
+        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+
+    event.recipes.gtceu.circuit_assembler('3d_nand_chip')
+        .itemInputs('64x gtceu:nand_memory_chip', '12x gtceu:cerium_tritelluride_bolt', '2x #gtceu:circuits/iv')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 216')
+        .itemOutputs('6x kubejs:3d_nand_chip')
+        .duration(600)
+        .EUt((GTValues.VA[GTValues.ZPM]))
+        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+
+    event.recipes.gtceu.circuit_assembler('3d_nor_chip')
+        .itemInputs('64x gtceu:nor_memory_chip', '12x gtceu:cerium_tritelluride_bolt', '2x #gtceu:circuits/iv')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 216')
+        .itemOutputs('6x kubejs:3d_nor_chip')
+        .duration(600)
+        .EUt((GTValues.VA[GTValues.ZPM]))
+        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+
+    event.recipes.gtceu.chemical_reactor('qRAM')
+        .itemInputs('gtceu:ram_wafer','2x gtceu:silicon_carbide_over_bismuth_tritelluride_dust')
+        .inputFluids('gtceu:radon 250')
+        .itemOutputs('kubejs:qram_wafer')
+        .duration(1500)
+        .EUt((GTValues.VA[GTValues.UV]))
+        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+
+    event.recipes.gtceu.cutter('qram_chip')
+        .itemInputs('kubejs:qram_wafer')
+        .itemOutputs('12x kubejs:qram_chip')
+        .duration(900)
+        .EUt((GTValues.VA[GTValues.UHV]))
+        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+
+    event.recipes.gtceu.chemical_plant('borax')
+        .itemInputs('12x gtceu:boron_dust', '6x gtceu:sodium_bisulfate_dust')
+        .inputFluids('minecraft:water 39000')
+        .itemOutputs('3x gtceu:borax_dust')
+        .outputFluids('gtceu:sulfuric_acid 6000')
+        .duration(800)
+        .EUt((GTValues.VA[GTValues.ZPM]))
+
 });

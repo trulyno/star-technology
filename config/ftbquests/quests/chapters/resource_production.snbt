@@ -12,8 +12,8 @@
 		{
 			id: "07AEEE10574951B3"
 			linked_quest: "30B2688F8387048F"
-			x: 7.5d
-			y: -9.5d
+			x: 9.5d
+			y: -10.0d
 		}
 		{
 			id: "427772AB7DFDCDFA"
@@ -267,14 +267,15 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["2D1184752D7ACA66"]
 			id: "08C8FF38DC514F71"
 			tasks: [{
 				id: "30F469B02F7C4C74"
 				item: "exnihilosequentia:sea_water_bucket"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -12.0d
+			x: 3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["08C8FF38DC514F71"]
@@ -284,8 +285,8 @@
 				item: "gtceu:crushed_saltpeter_ore"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -13.0d
+			x: 2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["08C8FF38DC514F71"]
@@ -295,8 +296,8 @@
 				item: "gtceu:crushed_rock_salt_ore"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -11.0d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["08C8FF38DC514F71"]
@@ -306,8 +307,8 @@
 				item: "gtceu:salt_water_bucket"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -12.0d
+			x: 1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -320,8 +321,8 @@
 				item: "gtceu:void_excavator"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -9.5d
+			x: 11.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -342,8 +343,8 @@
 				item: "gtceu:crushed_coal_ore"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -9.5d
+			x: 10.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -353,8 +354,8 @@
 				item: "gtceu:crushed_gold_ore"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -8.5d
+			x: 9.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -364,8 +365,8 @@
 				item: "gtceu:crushed_pentlandite_ore"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -8.0d
+			x: 7.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -375,8 +376,8 @@
 				item: "gtceu:crushed_sodalite_ore"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -9.0d
+			x: 8.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -386,8 +387,8 @@
 				item: "gtceu:crushed_realgar_ore"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -7.5d
+			x: 11.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -397,8 +398,8 @@
 				item: "gtceu:crushed_silver_ore"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -7.0d
+			x: 11.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -409,7 +410,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -7.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
@@ -420,7 +421,7 @@
 				item: "gtceu:raw_ore_slurry_bucket"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 7.5d
 			y: -6.0d
 		}
 		{
@@ -431,8 +432,8 @@
 				item: "gtceu:chromite_sludge_dust"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -5.5d
+			x: 5.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
@@ -442,8 +443,8 @@
 				item: "gtceu:rare_sludge_dust"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.5d
+			x: 5.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
@@ -454,7 +455,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -4.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
@@ -464,8 +465,8 @@
 				item: "ae2:sky_dust"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -5.5d
+			x: 4.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["4F3AB86CDC557B11"]
@@ -475,8 +476,8 @@
 				item: "gtceu:crushed_lepidolite_ore"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -4.0d
+			x: 10.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["4F3AB86CDC557B11"]
@@ -486,8 +487,8 @@
 				item: "gtceu:crushed_pyrolusite_ore"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -5.0d
+			x: 10.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["4F3AB86CDC557B11"]
@@ -497,8 +498,8 @@
 				item: "gtceu:crushed_pyrochlore_ore"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -5.0d
+			x: 9.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["4F3AB86CDC557B11"]
@@ -509,7 +510,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["4F3AB86CDC557B11"]
@@ -519,8 +520,8 @@
 				item: "gtceu:molten_ore_mixture_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.5d
+			x: 7.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["26E08C0B689C129F"]
@@ -531,7 +532,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["26E08C0B689C129F"]
@@ -541,8 +542,8 @@
 				item: "gtceu:oxygenous_mineral_mixture_bucket"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -2.5d
+			x: 9.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["26E08C0B689C129F"]
@@ -552,8 +553,8 @@
 				item: "gtceu:sulfuric_mineral_mixture_bucket"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -2.5d
+			x: 10.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["62E3D33072698B07"]
@@ -563,8 +564,8 @@
 				item: "gtceu:crushed_tantalite_ore"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.5d
+			x: 8.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["62E3D33072698B07"]
@@ -574,8 +575,8 @@
 				item: "gtceu:crushed_pollucite_ore"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -1.5d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["62E3D33072698B07"]
@@ -585,8 +586,8 @@
 				item: "gtceu:crushed_cassiterite_ore"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -1.5d
+			x: 9.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2032DAAC7C6ADC0F"]
@@ -596,8 +597,8 @@
 				item: "gtceu:crushed_barite_ore"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -1.5d
+			x: 11.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2032DAAC7C6ADC0F"]
@@ -608,7 +609,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2032DAAC7C6ADC0F"]
@@ -618,8 +619,8 @@
 				item: "gtceu:crushed_bornite_ore"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -2.5d
+			x: 11.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -629,8 +630,8 @@
 				item: "gtceu:crushed_tungstate_ore"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -0.5d
+			x: 7.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -640,8 +641,8 @@
 				item: "gtceu:crushed_cooperite_ore"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 0.0d
+			x: 8.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -651,8 +652,8 @@
 				item: "gtceu:crushed_bastnasite_ore"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -662,8 +663,8 @@
 				item: "gtceu:crushed_scheelite_ore"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -673,8 +674,8 @@
 				item: "gtceu:crushed_ilmenite_ore"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -0.5d
+			x: 9.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -684,8 +685,8 @@
 				item: "gtceu:crushed_bauxite_ore"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.5d
+			x: 6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -695,8 +696,8 @@
 				item: "gtceu:crushed_pitchblende_ore"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -2.5d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -706,8 +707,8 @@
 				item: "gtceu:crushed_molybdenite_ore"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -3.0d
+			x: 9.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6C0C9B95A8DAB5D1"]
@@ -849,7 +850,7 @@
 				item: "minecraft:glowstone_dust"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -4.0d
 			y: -6.5d
 		}
 		{
@@ -860,8 +861,8 @@
 				item: "gtceu:sulfur_dust"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -6.0d
+			x: -3.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["7718CDD1E61BB47A"]
@@ -872,7 +873,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -7.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7718CDD1E61BB47A"]
@@ -971,7 +972,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["04044187B7B40420"]
@@ -1003,7 +1004,7 @@
 				item: "gtceu:crushed_apatite_ore"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.0d
 			y: -2.5d
 		}
 		{
@@ -1014,7 +1015,7 @@
 				item: "gtceu:crushed_spessartine_ore"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -2.5d
 			y: -3.0d
 		}
 		{

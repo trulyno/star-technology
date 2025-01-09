@@ -1691,6 +1691,8 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["73931EAA3EC5C9A9"]
+			hide_dependency_lines: true
 			id: "0FBB34B21DA41C5D"
 			rewards: [{
 				id: "59D8586B6C398E76"
@@ -3090,6 +3092,7 @@
 			y: 19.5d
 		}
 		{
+			dependencies: ["1F416C7A641914EC"]
 			dependency_requirement: "one_completed"
 			id: "42CFC3424A541A3C"
 			rewards: [{
@@ -3566,6 +3569,56 @@
 			}]
 			x: 2.5d
 			y: -1.0d
+		}
+		{
+			id: "7D57A0BCF0659FD1"
+			tasks: [{
+				id: "740BCEF0A11F8D92"
+				item: "gtceu:silicon_carbide_over_bismuth_tritelluride_dust"
+				type: "item"
+			}]
+			x: 29.0d
+			y: -0.5d
+		}
+		{
+			id: "12DE22A938C31B52"
+			tasks: [{
+				id: "5E238CD0D758803C"
+				item: "gtceu:zapolgium_ingot"
+				type: "item"
+			}]
+			x: 31.0d
+			y: 1.5d
+		}
+		{
+			id: "52697E19FAC5740F"
+			tasks: [{
+				id: "5A05076814AD0687"
+				item: "gtceu:zirconium_selenide_diiodide_ingot"
+				type: "item"
+			}]
+			x: 29.0d
+			y: 1.5d
+		}
+		{
+			id: "21533DFA0150414B"
+			tasks: [{
+				id: "7C850010B0A2DD79"
+				item: "gtceu:iron_selenide_over_strontium_titanium_oxide_ingot"
+				type: "item"
+			}]
+			x: 31.0d
+			y: -0.5d
+		}
+		{
+			id: "536A63E0DF2957F1"
+			tasks: [{
+				id: "2883515A5537E120"
+				item: "gtceu:zircalloy_4_ingot"
+				type: "item"
+			}]
+			x: 29.0d
+			y: 3.5d
 		}
 	]
 	title: "Processing Lines"

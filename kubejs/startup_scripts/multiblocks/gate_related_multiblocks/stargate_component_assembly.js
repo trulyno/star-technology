@@ -42,7 +42,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('P', Predicates.blocks('kubejs:prismalium_casing')
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
-            .where('H', Predicates.heatingCoils())
+            .where('H', Predicates.blocks('gtceu:tritanium_coil_block'))
             .where('D', Predicates.blocks('kubejs:dragonsteel_casing'))
             .where('M', Predicates.blocks('kubejs:melodium_casing'))
             .where('S', Predicates.blocks('kubejs:stellarium_casing'))

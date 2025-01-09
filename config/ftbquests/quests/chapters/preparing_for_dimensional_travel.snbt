@@ -7,6 +7,7 @@
 	icon: "sgjourney:classic_stargate"
 	id: "62A72817F92AC262"
 	order_index: 4
+	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{
@@ -156,7 +157,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["44B43694312BAAC8"]
+			dependencies: [
+				"44B43694312BAAC8"
+				"702E5088171E1255"
+			]
 			id: "581B9922CC4B457F"
 			rewards: [{
 				id: "1600271A98F70DD6"
@@ -168,7 +172,7 @@
 				item: "gtceu:uhv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: -13.5d
+			x: -13.0d
 			y: 4.5d
 		}
 		{
@@ -516,7 +520,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "58C2D53C66E327CB"
 				item: "gtceu:runic_circuitry_assembling_station"
@@ -940,7 +944,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["1C515302A357B1B8"]
+			dependencies: ["2D713622FA2D6FCA"]
 			id: "1E47910C2F2112E1"
 			shape: "gear"
 			size: 1.5d
@@ -978,8 +982,8 @@
 				item: "sgjourney:classic_stargate_base_block"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -8.0d
+			x: -5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -994,7 +998,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -9.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1008,8 +1012,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -8.0d
+			x: -4.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1024,7 +1028,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -8.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1038,8 +1042,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -10.0d
+			x: -3.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1053,8 +1057,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -11.0d
+			x: -3.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1069,7 +1073,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -13.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1083,8 +1087,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -13.0d
+			x: -3.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1098,8 +1102,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -14.0d
+			x: -4.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1113,8 +1117,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -14.0d
+			x: -5.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1128,8 +1132,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -13.0d
+			x: -6.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1143,8 +1147,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -13.0d
+			x: -6.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1158,8 +1162,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -11.0d
+			x: -6.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1173,8 +1177,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -10.0d
+			x: -6.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1188,8 +1192,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -9.0d
+			x: -6.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1203,8 +1207,8 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -8.0d
+			x: -6.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1218,8 +1222,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -9.0d
+			x: -3.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1233,8 +1237,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -12.0d
+			x: -3.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1249,7 +1253,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -14.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1263,8 +1267,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -14.0d
+			x: -5.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1278,8 +1282,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -14.0d
+			x: -6.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1293,8 +1297,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -12.0d
+			x: -6.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1308,8 +1312,8 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -9.0d
+			x: -6.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
@@ -1323,8 +1327,19 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -8.0d
+			x: -5.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1C515302A357B1B8"]
+			id: "2D713622FA2D6FCA"
+			tasks: [{
+				id: "33B7CF901768CF24"
+				item: "gtceu:exquisite_naquadic_netherite_gem"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]

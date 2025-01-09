@@ -7,6 +7,7 @@
 	icon: "gtceu:tritanium_coil_block"
 	id: "450EB2B6DF25A9EC"
 	order_index: 3
+	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{
@@ -1172,7 +1173,10 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["3BA6406400A63937"]
+			dependencies: [
+				"3BA6406400A63937"
+				"1F416C7A641914EC"
+			]
 			id: "65D76272BA5E67FC"
 			rewards: [{
 				count: 2
@@ -1464,24 +1468,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["35829E28221CB70E"]
-			id: "1EE4E8301E0FD1C7"
-			rewards: [{
-				id: "50735AA038809909"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "1FA489745B229229"
-				item: "gtceu:chemical_builder"
-				type: "item"
-			}]
-			x: 14.0d
-			y: 4.0d
-		}
-		{
 			dependencies: ["3F4C068368F97580"]
 			id: "3391903EBBB3F308"
 			rewards: [{
@@ -1707,6 +1693,22 @@
 			}]
 			x: -2.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["023794367F1B28D1"]
+			hide_dependency_lines: true
+			id: "1F416C7A641914EC"
+			tasks: [{
+				id: "450942C5A4B02270"
+				item: {
+					Count: 1
+					id: "gtceu:dimensional_destabiliser"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 4.0d
 		}
 	]
 	title: "Futuristic Mechanisms"

@@ -173,26 +173,26 @@
 		{
 			id: "2944146ABA34CB5B"
 			linked_quest: "5C15427D1679D4C3"
-			x: -7.5d
-			y: -31.0d
+			x: 0.5d
+			y: -29.0d
 		}
 		{
 			id: "6D220F5D5B6F0922"
 			linked_quest: "6EB85BBD539AEB57"
-			x: -4.0d
-			y: -31.0d
+			x: 0.5d
+			y: -27.5d
 		}
 		{
 			id: "2B30EE9B2767B72D"
 			linked_quest: "5C302CB1A1068EE1"
-			x: -4.0d
-			y: -29.5d
+			x: 0.5d
+			y: -26.0d
 		}
 		{
 			id: "607658C8752D8C32"
 			linked_quest: "0F7A1EA1AB52F795"
-			x: -4.0d
-			y: -28.0d
+			x: 0.5d
+			y: -24.5d
 		}
 		{
 			id: "0D386219B03B2DDA"
@@ -283,12 +283,6 @@
 			linked_quest: "67ABB3BF6D0C183B"
 			x: -19.5d
 			y: -29.5d
-		}
-		{
-			id: "2A2B52C80535703B"
-			linked_quest: "1EE4E8301E0FD1C7"
-			x: -18.0d
-			y: -31.0d
 		}
 		{
 			id: "3B7B8853F2299D4D"
@@ -997,8 +991,8 @@
 				}
 			]
 			title: "Basic Chips"
-			x: -6.0d
-			y: -31.0d
+			x: 2.0d
+			y: -29.0d
 		}
 		{
 			dependencies: ["6EB85BBD539AEB57"]
@@ -1031,20 +1025,27 @@
 				}
 			]
 			title: "Better Chips"
-			x: -2.5d
-			y: -31.0d
+			x: 2.0d
+			y: -27.5d
 		}
 		{
 			dependencies: ["0F7A1EA1AB52F795"]
 			id: "4B83C0BEDE616449"
-			tasks: [{
-				id: "70C1C8DDF44068E1"
-				item: "gtceu:highly_advanced_soc"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "70C1C8DDF44068E1"
+					item: "gtceu:highly_advanced_soc"
+					type: "item"
+				}
+				{
+					id: "19E77406942A5F62"
+					item: "kubejs:uepic_chip"
+					type: "item"
+				}
+			]
 			title: "Highly Advanced Chips"
-			x: -2.5d
-			y: -28.0d
+			x: 2.0d
+			y: -24.5d
 		}
 		{
 			dependencies: ["5C302CB1A1068EE1"]
@@ -1062,10 +1063,11 @@
 				}
 			]
 			title: "Advanced Chips"
-			x: -2.5d
-			y: -29.5d
+			x: 2.0d
+			y: -26.0d
 		}
 		{
+			dependencies: ["4FF433145C67693F"]
 			disable_toast: true
 			id: "32BC114D5C9630BC"
 			tasks: [
@@ -1079,9 +1081,37 @@
 					item: "gtceu:qbit_cpu_chip"
 					type: "item"
 				}
+				{
+					id: "77B452104BA5B1F8"
+					item: {
+						Count: 1
+						id: "kubejs:qram_chip"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "52D95FC49A9BF283"
+					item: {
+						Count: 1
+						id: "kubejs:3d_nand_chip"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0F08F84FC51DEADD"
+					item: {
+						Count: 1
+						id: "kubejs:3d_nor_chip"
+						tag: { }
+					}
+					type: "item"
+				}
 			]
-			x: -2.5d
-			y: -26.5d
+			title: "Enhanced Chips"
+			x: 2.0d
+			y: -23.0d
 		}
 		{
 			dependencies: ["17C1292018AE363E"]
@@ -1288,6 +1318,111 @@
 			}]
 			x: -16.5d
 			y: -24.5d
+		}
+		{
+			dependencies: ["2DA7FFD9B7A550B9"]
+			id: "35D5CC08AE53A7FA"
+			tasks: [{
+				id: "7278702A05728EA6"
+				item: {
+					Count: 1
+					id: "kubejs:draconic_wetware_processor_assembly"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["35D5CC08AE53A7FA"]
+			id: "2F0E0C63E0DE0F5A"
+			tasks: [{
+				id: "74164D342D52608B"
+				item: {
+					Count: 1
+					id: "kubejs:draconic_wetware_processor_computer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["2F0E0C63E0DE0F5A"]
+			id: "73E9000BE5288623"
+			tasks: [{
+				id: "104B5031089707D7"
+				item: {
+					Count: 1
+					id: "kubejs:draconic_wetware_processor_mainframe"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["4DF812EEFB4FD1C3"]
+			id: "2DA7FFD9B7A550B9"
+			tasks: [{
+				id: "4B3DDFC692C95879"
+				item: {
+					Count: 1
+					id: "kubejs:draconic_wetware_processor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -18.5d
+		}
+		{
+			dependencies: ["1C9396E2587051F7"]
+			id: "4DF812EEFB4FD1C3"
+			tasks: [{
+				id: "08AF5523EEC4E80C"
+				item: {
+					Count: 1
+					id: "kubejs:draconic_wetware_microchip_processor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["2F0E0C63E0DE0F5A"]
+			id: "5584A2F87AC8631E"
+			tasks: [{
+				id: "58B4EB491E26C14B"
+				item: {
+					Count: 1
+					id: "kubejs:uev_universal_circuit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["73E9000BE5288623"]
+			id: "73B54F4D395FB5EC"
+			tasks: [{
+				id: "1581178AE7A9FA51"
+				item: {
+					Count: 1
+					id: "kubejs:uiv_universal_circuit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -14.0d
 		}
 	]
 	title: "Line Of Progression"

@@ -55,6 +55,35 @@ StartupEvents.registry('item', event => {
     //     .displayName('OpV Emitter')
     //     .texture('kubejs:item/emitters/opv_emitter');
 
+    event.create('3d_nand_chip')
+        .displayName('3D-NAND Memory Chip Array')
+        .tooltip('Complex NAND Logic Gate')
+        .texture('kubejs:item/chips_n_wafers/3d_nand')
+
+    event.create('3d_nor_chip')
+        .displayName('3D-NOR Memory Chip Array')
+        .tooltip('Complex NOR Logic Gate')
+        .texture('kubejs:item/chips_n_wafers/3d_nor')
+
+    event.create('qram_wafer')
+        .displayName('qRAM Wafer')
+        .tooltip('Raw Quantum Memory')
+        .texture('kubejs:item/chips_n_wafers/qram_wafer')
+
+    event.create('qram_chip')
+        .displayName('qRAM Chip')
+        .tooltip('Quantum Random Access Memory')
+        .texture('kubejs:item/chips_n_wafers/qram_chip')
+
+    event.create('uepic_wafer')
+        .displayName('UEPIC Wafer')
+        .tooltip('Raw Ultra Excessive Power Circuit')
+        .texture('kubejs:item/chips_n_wafers/uepic_wafer')
+
+    event.create('uepic_chip')
+        .displayName('UEPIC Chip')
+        .tooltip('Ultra Excessive Power IC')
+        .texture('kubejs:item/chips_n_wafers/uepic_chip')
     
     event.create('draconic_wetware_circuit_board')
         .displayName('Draconic Wetware Circuit Board')
@@ -150,17 +179,7 @@ StartupEvents.registry('item', event => {
             .tooltip('§o§7For use with AE2 autocrafting');
     });
 
-    //Gate Parts
-
-    event.create('crude_stargate_rod')
-        .texture('kubejs:item/gate_items/crude_stargate_rod')
-        .rarity('rare')
-        .tooltip("It doesn't seem ready for use quite yet...");
-
-    event.create('stargate_rod')
-        .texture('kubejs:item/gate_items/stargate_rod')
-        .rarity('epic')
-        .tooltip('The muscles of a stargate, if you will...');
+//Runes
 
     event.create('runic_engraved_plating')
         .displayName('Runic-Engraved Plating')
@@ -173,10 +192,47 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/gate_items/runic_pathway_engraved_plating')
         .rarity('rare');
 
+    event.create('runic_stabilization_plating')
+        .displayName('Runic Stabilization Plating')
+        .texture('kubejs:item/gate_items/runic_stable_plating')
+        .rarity('rare')
+
+    event.create('runic_energized_plating')
+        .displayName('Runic-Energized Plating')
+        .texture('kubejs:item/gate_items/runic_energized_plating')
+        .rarity('rare')
+
+    event.create('runic_transportation_engraved_plating')
+        .displayName('Runic Transportation-Engraved Plating')
+        .texture('kubejs:item/gate_items/runic_transport_plating')
+        .rarity('epic')
+
     event.create('runic_wave_generator')
         .displayName('Drack-ion Runic Wave Generator')
         .texture('kubejs:item/gate_items/drack-ion_runic_wave_generator')
         .rarity('epic');
+
+    event.create('runic_energized_transportation_plating')
+        .displayName('Runic Energized Transportation-Engraved Plating')
+        .texture('kubejs:item/gate_items/runic_transport_energized_plating')
+        .rarity('uncommon')
+
+    event.create('runic_energized_pathway_plating')
+        .displayName('Runic Energized Pathway-Engraved Plating')
+        .texture('kubejs:item/gate_items/runic_pathway_energized_plating')
+        .rarity('uncommon')
+
+ //Gate Parts
+
+    event.create('crude_stargate_rod')
+        .texture('kubejs:item/gate_items/crude_stargate_rod')
+        .rarity('rare')
+        .tooltip("It doesn't seem ready for use quite yet...");
+
+    event.create('stargate_rod')
+        .texture('kubejs:item/gate_items/stargate_rod')
+        .rarity('epic')
+        .tooltip('The muscles of a stargate, if you will...');
 
     event.create('computational_super_matrix')
         .displayName('Computation Supermatrix')
@@ -191,8 +247,48 @@ StartupEvents.registry('item', event => {
     event.create('classic_chevron_disk')
         .displayName('Classic Stargate Chevron Disk')
         .rarity('rare')
-        .texture('kubejs:item/gate_items/classic_chevron_disk')
+        .texture('kubejs:item/gate_items/classic_chevron_disk');
+
+    event.create('ancient_stargate_computer_core')
+        .displayName('Ancient Encoded Computational Unit')
+        .rarity('uncommon');
+
+    event.create('ancient_chevron_disk')
+        .displayName('Ancient Stargate Chevron Disk')
+        .rarity('rare');
+
+    event.create('classic_chevron_assembly')
+        .displayName('Classic Stargate Chevron Assembly')
+        .rarity('rare')
     
+    event.create('draconic_coordinate_core')
+        .displayName('Draconic Coordinate Core')
+        .rarity('epic')
+        .tooltip('The Ultimate Eye of Ender')
+        .texture('kubejs:item/gate_items/draconic_core');
+
+    event.create('hell_core')
+        .displayName('Hell Core')
+        .rarity('rare')
+        .texture('kubejs:item/gate_items/hell_core');
+
+    event.create('void_core')
+        .displayName('Void Core')
+        .rarity('rare')
+        .texture('kubejs:item/gate_items/void_core');
+
+    const runic_tablet = ['1','2','3','4','5','6','complete']
+    let fragment;
+    runic_tablet.forEach(piece =>{
+        if(piece == 'complete') {fragment = 'Unified'}
+            else{fragment = `Fragment ${piece}`};
+            event.create(`runic_tablet_${piece}`)
+                .displayName(`Runic Tablet ${fragment}`)
+                .rarity('uncommon')
+                .texture(`kubejs:item/gate_items/rune_tablet_${piece}`)
+
+    });
+
     //Dimensional Pinging
 
     event.create('coordinate_crystal')
@@ -256,15 +352,15 @@ StartupEvents.registry('item', event => {
     event.create('uiv_voltage_coil')
         .texture('kubejs:item/component_part/uiv_voltage_coil')
         .displayName('Ultra Immense Voltage Coil')
-        .tooltip('Ultimate+ ProMax Coil');
+        .tooltip('Supreme Coil');
     event.create('uxv_voltage_coil')
         .texture('kubejs:item/component_part/uxv_voltage_coil')
         .displayName('Ultra Extreme Voltage Coil')
-        .tooltip('Ultimate+++ Coil');
+        .tooltip('Supreme+ Coil');
     event.create('opv_voltage_coil')
         .texture('kubejs:item/component_part/opv_voltage_coil')
         .displayName('Overpowered Voltage Coil')
-        .tooltip('Beyond Comprehension Coil');
+        .tooltip('Godly Coil');
 
     const partTiers = ["uhv", "uev", "uiv", "uxv", "opv"];
 
@@ -462,6 +558,17 @@ StartupEvents.registry('block', event => {
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
         .textureAll('kubejs:block/casings/casing-stellarium');
+
+    event.create('ancient_runicalium_casing')
+        .displayName('Infusion Enhanced Ancient Runicalium Casing')
+        .hardness(10)
+        .resistance(1)
+        .lightLevel(2)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/casing-runicalium');
 
     event.create('austenitic_stainless_steel_304_casing')
         .displayName('Austenitic Stainless Steel 304 Nuclear Casing')
@@ -677,7 +784,86 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_stone_tool')
         .textureAll('kubejs:block/multiblock/meshblock');
 
-//     //Coagulated blocks
+        //Runic Casings
+
+    event.create('runic_stabilization_casing')
+        .displayName('Stabilization Enscribed Runically Infused Casing')
+        .hardness(10)
+        .resistance(1)
+        .lightLevel(2)
+        .soundType('stone')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_diamond_tool')
+        .textureAll('kubejs:block/casings/runic_stabilization_casing');
+
+    event.create('runic_transportation_casing')
+        .displayName('Transportation Enscribed Runically Infused Casing')
+        .hardness(10)
+        .resistance(1)
+        .lightLevel(2)
+        .soundType('stone')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_diamond_tool')
+        .textureAll('kubejs:block/casings/runic_transportation_casing');
+
+    event.create('runic_pathway_casing')
+        .displayName('Pathway Enscribed Runically Infused Casing')
+        .hardness(10)
+        .resistance(1)
+        .lightLevel(2)
+        .soundType('stone')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_diamond_tool')
+        .textureAll('kubejs:block/casings/runic_pathway_casing');
+
+        event.create('inscribe_casing')
+        .displayName('Keelagraver Manipulator & Acuancentrator Capable Runicalium Casing')
+        .hardness(5)
+        .resistance(10)
+        .lightLevel(10)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/inscribe_casing');
+
+    event.create('ancient_stargate_ring_block')
+        .displayName('Ancient Stargate Ring Block')
+        .hardness(5)
+        .resistance(10)
+        .lightLevel(0)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        //.textureAll('kubejs:block/');
+
+    event.create('ancient_stargate_base_block')
+        .displayName('Ancient Stargate Base Block')
+        .hardness(5)
+        .resistance(10)
+        .lightLevel(0)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        //.textureAll('kubejs:block/');
+
+    event.create('ancient_stargate_chevron_block')
+        .displayName('Ancient Stargate Chevron Block')
+        .hardness(5)
+        .resistance(10)
+        .lightLevel(0)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        //.textureAll('kubejs:block/');
+
+    //     //Coagulated blocks
 //     ['iron', 'copper', 'quartz'].forEach(type => {
 //         event.create(`coagulated_${type}_mixture`)
 //             .displayName(`Coagulated ${type.charAt(0).toUpperCase() + type.slice(1)} Mixture`)

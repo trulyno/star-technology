@@ -158,6 +158,7 @@
     "material.gtceu.zalloy": "Zalloy",
     "material.gtceu.zircalloy_4": "Zircalloy 4",
     "material.gtceu.zirconium_selenide_diiodide": "Zirconium Selenide Diiodide",
+    "material.gtceu.cerium_tritelluride": "Cerium Tritelluride",
     "material.gtceu.strontianite": "Strontianite",
     "material.gtceu.celestine": "Celestine",
     "material.gtceu.indium_tin_lead_cadmium_soldering_alloy": "Indium-Tin-Lead-Cadmium Soldering Alloy",
@@ -170,8 +171,8 @@
     "block.gtceu.cobbleworks": "Large Sieve Cobbleworks Module Controller",
     "gtceu.chemical_plant": "Chemical Plant",
     "block.gtceu.chemical_plant": "Chemical Plant Controller",
-    "gtceu.component_assembly": "Component Assembly",
-    "block.gtceu.component_assembly": "Component Assembly Controller",
+    "gtceu.component_part_assembly": "Component Part Assembly",
+    "block.gtceu.component_part_assembly": "Component Assembly Part Controller",
     "gtceu.large_farm": "Farming",
     "block.gtceu.large_farm": "Large Farm Controller",
     "gtceu.large_sieve": "Large Sieve",
@@ -383,8 +384,20 @@
     "block.gtceu.dimensional_finder": "Dimensional Finder Controller",
     "block.gtceu.dimensional_finder.tooltip.0": "Get Dimensionally Pinged",
 
+    "gtceu.runic_inscribe_manipulate": "Runic Inscribtion and Manipulation",
+    "block.gtceu.runic_inscribe_manipulate": "Runic Inscriber and Manipulation Manifold",
+
     "material.gtceu.magnetic_pure_netherite": "Magnetic Pure Netherite",
     "material.gtceu.ancient_runicalium": "Ancient Runicalium",
+
+    "material.gtceu.sodium_borohydride": "Sodium Borohydride",
+    "material.gtceu.nitrate": "Nitrate",
+    "material.gtceu.bismuth_3_nitrate": "Bismuth (III) Nitrate",
+    "material.gtceu.sodium_nitrate": "Sodium Nitrate",
+    "material.gtceu.diborane": "Diborane (6)",
+    "material.gtceu.silicon_carbide": "Silicon Carbide",
+    "material.gtceu.bismuth_tritelluride": "Bismuth Tritelluride",
+    "material.gtceu.silicon_carbide_over_bismuth_tritelluride": "Silicon Carbide Over Bismuth Tritelluride",
 
     "gtceu.kinetic_filtrator": "Kinetic Filtrator",
     "block.gtceu.kinetic_filtrator": "Kinetic Filtrator Controller",
@@ -453,5 +466,7 @@
     "gtceu.barrel_transformation": "Barrel Transformation",
     "block.gtceu.ulv_barrel": "Wooden Barrel",
     "gtceu.stone_barrel": "Barrel Formation",
-    "block.gtceu.ulv_stone_barrel": "Stone Barrel"
+    "block.gtceu.ulv_stone_barrel": "Stone Barrel",
+    "gtceu.gate_assembly": "Stargate Assembly",
+    "block.gtceu.gate_assembly": "Runic Stargate Assembler Controller"
 }

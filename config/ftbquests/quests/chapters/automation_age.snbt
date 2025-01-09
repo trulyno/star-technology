@@ -7,6 +7,7 @@
 	icon: "gtceu:micro_processor_mainframe"
 	id: "4BF4EE11E23C71FC"
 	order_index: 2
+	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{
@@ -24,7 +25,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "First HV circuit"
 			tasks: [{
 				id: "3A642B129CDFDF9D"
@@ -393,14 +394,14 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "390A4D9FADC01BDB"
 				item: "gtceu:hv_assembler"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -0.5d
+			x: 3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -419,8 +420,8 @@
 				item: "gtceu:hv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 0.5d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -453,8 +454,8 @@
 				}
 			]
 			title: "LPIC Chips"
-			x: 3.5d
-			y: 1.5d
+			x: 1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
@@ -493,8 +494,8 @@
 				}
 			]
 			title: "SMD's"
-			x: 6.5d
-			y: 0.5d
+			x: 4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
@@ -519,8 +520,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
-			y: 1.5d
+			x: 3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2D089B0427CFDBBE"]
@@ -535,8 +536,8 @@
 				item: "gtceu:energy_crystal"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.5d
+			x: 4.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -551,8 +552,8 @@
 				item: "gtceu:hv_autoclave"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -2.5d
+			x: 4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7B0133D388101F68"]
@@ -590,8 +591,8 @@
 				}
 			]
 			title: "NanoMuscle™ Suite"
-			x: 0.5d
-			y: -3.5d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1500,8 +1501,8 @@
 				item: "gtceu:data_orb"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 2.5d
+			x: 12.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0514DE717001A062"]
@@ -1620,7 +1621,7 @@
 				type: "item"
 			}]
 			x: 17.5d
-			y: 1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -1655,7 +1656,6 @@
 		}
 		{
 			dependencies: [
-				"4D9DAED52FF74B8B"
 				"5CB82E9BED342EB2"
 				"05F2C7351FF1B0E5"
 			]
@@ -1671,8 +1671,8 @@
 				item: "gtceu:iv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -2.5d
+			x: 8.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1688,7 +1688,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "24B1FDE1602503C0"
 				item: "gtceu:iv_assembler"
@@ -1712,8 +1712,8 @@
 				item: "gtceu:iv_machine_hull"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -1.5d
+			x: 7.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7CACFC7C9101EA59"]
@@ -1728,8 +1728,8 @@
 				item: "gtceu:iv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.5d
+			x: 8.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4A45669665626026"]
@@ -1744,8 +1744,8 @@
 				item: "gtceu:iv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -4.5d
+			x: 8.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1766,7 +1766,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1C05C80BCB4736B6"]
@@ -1782,8 +1782,8 @@
 				item: "gtceu:shellite_single_wire"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -2.5d
+			x: 6.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -1799,8 +1799,8 @@
 				item: "gtceu:shellite_ingot"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -4.5d
+			x: 6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2D4F9DFF6B559C65"]
@@ -1826,8 +1826,8 @@
 				}
 			]
 			title: "HPIC Chips"
-			x: 9.5d
-			y: -4.5d
+			x: 7.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1847,8 +1847,8 @@
 				item: "gtceu:lapotronic_energy_orb"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 0.5d
+			x: 11.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["352B3D23A2C7DE74"]
@@ -1865,8 +1865,8 @@
 				item: "gtceu:engraved_lapotron_crystal_chip"
 				type: "item"
 			}]
-			x: 9.75d
-			y: 2.0d
+			x: 10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0F2727801B71CA1C"]
@@ -1881,8 +1881,8 @@
 				item: "gtceu:fiber_reinforced_printed_circuit_board"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 0.5d
+			x: 13.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["45AAA2B53069E806"]
@@ -1897,8 +1897,8 @@
 				item: "gtceu:fiber_reinforced_circuit_board"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 0.5d
+			x: 15.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1917,8 +1917,8 @@
 				item: "gtceu:reinforced_epoxy_resin_plate"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 0.5d
+			x: 15.5d
+			y: -2.5d
 		}
 		{
 			id: "5B575348D2A871BB"
@@ -1933,8 +1933,8 @@
 				item: "gtceu:fine_borosilicate_glass_wire"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 0.5d
+			x: 17.0d
+			y: -2.5d
 		}
 		{
 			id: "4FF433145C67693F"
@@ -1949,15 +1949,14 @@
 				item: "gtceu:carbon_fibers"
 				type: "item"
 			}]
-			x: 16.5d
-			y: -1.0d
+			x: 15.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
 				"630C93730FCF07D7"
 				"71A44D3F0F20E329"
 				"687C720033164A7B"
-				"5CB82E9BED342EB2"
 			]
 			description: ["The second upgrade to all the circuit components. Very resource efficent and is needed for high tier circuits."]
 			id: "18A88F62B17CE9EC"
@@ -1994,8 +1993,8 @@
 				}
 			]
 			title: "Advanced SMD's"
-			x: 12.0d
-			y: -0.5d
+			x: 10.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -2015,7 +2014,7 @@
 				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 10.5d
 			y: -2.5d
 		}
 		{
@@ -2032,8 +2031,8 @@
 				item: "gtceu:hssg_ingot"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -3.5d
+			x: 11.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1DA6B3308C263A6F"]
@@ -2050,7 +2049,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: -3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["689150D2A185216C"]
@@ -2065,8 +2064,8 @@
 				item: "gtceu:hsse_ingot"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -1.5d
+			x: 11.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["689150D2A185216C"]
@@ -2081,8 +2080,8 @@
 				item: "gtceu:hsss_ingot"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -1.5d
+			x: 10.0d
+			y: -3.5d
 		}
 		{
 			id: "687C720033164A7B"
@@ -2096,8 +2095,8 @@
 				item: "gtceu:graphene_dust"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -0.5d
+			x: 12.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]

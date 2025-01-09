@@ -370,19 +370,21 @@ materialRegistry(event => {
     // periodicTableElement('iodine', 'gas');
     periodicTableElement('oganesson', 'gas');
 
-    // PLasmas
+    // Plasmas
 
     // Material modification
     GTMaterials.Lead.addFlags(gear);
     GTMaterials.Silver.addFlags(gear);
     GTMaterials.Naquadah.addFlags(dense_plate);
     GTMaterials.NaquadahEnriched.addFlags(dense_plate);
+    GTMaterials.Naquadria.addFlags(dense_plate);
     GTMaterials.Neutronium.addFlags(foil, small_gear);
     GTMaterials.Europium.addFlags(small_spring);
     GTMaterials.Zirconium.addFlags(fine_wire); 
     GTMaterials.RedSteel.addFlags(rod, frame);
-    GTMaterials.SterlingSilver.addFlags(rod, frame);     
-    GTMaterials.Netherite.addFlags(no_decomp); 
+    GTMaterials.SterlingSilver.addFlags(rod, frame);
+    GTMaterials.NetherStar.addFlags(foil);
+    GTMaterials.Netherite.addFlags(no_decomp);     
 
     // Blast Properties of periodic table metals
     blastProperty('zirconium', 8000, 'higher', VA('zpm'), 800);
@@ -603,9 +605,9 @@ materialRegistry(event => {
         .components('5x zapolgium', '18x stellarium', '8x zirconium')
         .color(0xFAB922)
         .iconSet(SHINY)
-        .blastTemp(11749, 'highest', VA('uev'), 8400)
+        .blastTemp(11749, 'highest', VA('uev'), 6200)
         .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
+            rod, rotor, small_gear, ring, frame, fine_wire)
         .cableProperties(V('uev'), 1024, 0, true)
         .rotorStats(5000, 720, 3, 128000);
 
@@ -951,18 +953,18 @@ materialRegistry(event => {
         .blastTemp(10799, 'highest', VA('uev'), 8000)
         .color(0x001a1a)
         .iconSet(DULL)
-        .flags(rod, long_rod);
+        .flags(rod, long_rod, frame);
     
     // Extras
     event.create('trinaquadalloy')
         .ingot().fluid()
         .color(0x281832)
         .iconSet(BRIGHT)
-        .flags(plates, rod, frame, fine_wire, foil)
+        .flags(plates, rod, frame, fine_wire, foil, dense_plate)
         .components('6x trinium', '2x naquadah', '1x carbon')
         .blastTemp(8747, 'higher', VA('zpm'), 1200)
 
-    event.create('perchloric_acid')
+       event.create('perchloric_acid')
         .fluid()
         .components('1x hydrogen', '1x chlorine', '4x oxygen')
         .color(0xffe6e6);
@@ -1328,6 +1330,15 @@ materialRegistry(event => {
         .blastTemp(8900, 'higher', VA('luv'), 4000)
         .cableProperties(V('uhv'), 8, 16, false);
 
+    event.create('cerium_tritelluride')
+        .ingot()
+        .components('1x cerium', '3x tellurium')
+        .color(0x6D8B5D)
+        .iconSet(DULL)
+        .blastTemp(10699, 'highest', VA('uv'), 3800)
+        .flags(bolt_and_screw)
+        .cableProperties(V('uev'), 6, 16, false);
+
     event.create('indium_tin_lead_cadmium_soldering_alloy')
         .ingot()
         .fluid()
@@ -1493,6 +1504,48 @@ materialRegistry(event => {
         .flags(no_decomp)
         .flags(foil, plates, ring);
     
+    // SiC/Bi2Te3 Line
+
+    event.create('sodium_borohydride')
+        .dust()
+        .components('1x sodium','1x boron','4x hydrogen')
+        .color(0xE3DEC8)
+
+    event.create('nitrate')
+        .gas()
+        .components('1x nitrogen', '3x oxygen')
+        .color(0xDBC365)
+
+    event.create('bismuth_3_nitrate')
+        .dust()
+        .components('1x bismuth', '3x nitrate')
+        .color(0xDEDBCD)
+
+    event.create('sodium_nitrate')
+        .dust()
+        .components('1x sodium','1x nitrogen','3x oxygen')
+        .color(0xE6E5E5)
+
+    event.create('diborane')
+        .gas()
+        .components('2x boron','6x hydrogen')
+        .color(0xFDFFE1)
+
+    event.create('silicon_carbide')
+        .dust()
+        .components('1x silicon', '1x carbon')
+        .color(0xB79F8D)
+        
+    event.create('bismuth_tritelluride')
+        .dust()
+        .components('2x bismuth', '3x tellurium')
+        .color(0xDEB18E)
+
+    event.create('silicon_carbide_over_bismuth_tritelluride')
+        .dust()
+        .components('1x silicon_carbide', '1x bismuth_tritelluride')
+        .color(0x86C455)
+
      // Large Multis
 
      event.create('birmabright')

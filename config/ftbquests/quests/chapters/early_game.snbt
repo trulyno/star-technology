@@ -6,6 +6,7 @@
 	icon: "gtceu:lv_4a_energy_converter"
 	id: "75C4C0229F2D2798"
 	order_index: 0
+	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{
@@ -790,11 +791,22 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "0B64D2D98654B971"
-				item: "gtceu:ulv_barrel"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0B64D2D98654B971"
+					item: "gtceu:ulv_barrel"
+					type: "item"
+				}
+				{
+					id: "6174BAF5A2A1F48C"
+					item: {
+						Count: 1
+						id: "minecraft:clay_ball"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "Barrel Transformations"
 			x: -1.5d
 			y: 2.5d
@@ -2006,7 +2018,11 @@
 			id: "64E79272B5003119"
 			tasks: [{
 				id: "16F78BE1CAEEA2A5"
-				item: "minecraft:clay_ball"
+				item: {
+					Count: 1
+					id: "gtceu:firebrick"
+					tag: { }
+				}
 				type: "item"
 			}]
 			x: 0.0d
