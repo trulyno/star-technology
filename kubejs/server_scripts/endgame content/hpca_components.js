@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.super_pressure_heat_chamber('graphite_nanoparticle_coolant')
+    event.recipes.gtceu.heat_chamber('graphite_nanoparticle_coolant')
         .itemInputs('32x gtceu:graphite_dust')
         .inputFluids('gtceu:utopian_akreyrium 2000', 'gtceu:pcb_coolant 5000')
         .outputFluids('gtceu:akreyrium_pcb_graphite_nanoparticle_coolant 4000')

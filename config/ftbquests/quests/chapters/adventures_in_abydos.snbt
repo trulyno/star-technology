@@ -200,18 +200,6 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["493DD013C818BB7B"]
-			hide_dependency_lines: false
-			id: "5B53286E09E6E656"
-			tasks: [{
-				id: "0D562CFF4BAE892E"
-				item: "gtceu:gritty_akreyrium_bucket"
-				type: "item"
-			}]
-			x: -5.5d
-			y: -4.0d
-		}
-		{
 			dependencies: ["3B7538869EC02E77"]
 			hide_dependent_lines: true
 			id: "0254109773A2D93C"
@@ -365,7 +353,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["5B53286E09E6E656"]
+			dependencies: ["394C8E3A93E7CD15"]
 			id: "1A8F645AC1B30411"
 			shape: "gear"
 			size: 1.5d
@@ -908,18 +896,93 @@
 				"63E36421AE07BC42"
 				"5DADD2204991B4D5"
 			]
+			icon: {
+				Count: 1
+				id: "sgjourney:milky_way_stargate"
+				tag: {
+					BlockEntityTag: {
+						AddToNetwork: 0b
+					}
+				}
+			}
 			id: "5E7153B7A10FC241"
 			shape: "gear"
 			size: 2.0d
-			tasks: [{
-				id: "3585C40F6B4E6F5A"
-				item: {
-					Count: 1
-					id: "sgjourney:milky_way_stargate"
-					tag: { }
+			tasks: [
+				{
+					id: "3585C40F6B4E6F5A"
+					item: {
+						Count: 1
+						id: "sgjourney:milky_way_stargate"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "5F92860D75814B1A"
+					item: {
+						Count: 1
+						id: "sgjourney:milky_way_dhd"
+						tag: {
+							BlockEntityTag: {
+								Energy: 0L
+								Inventory: {
+									Items: [
+										{
+											Count: 1b
+											Slot: 0
+											id: "sgjourney:large_control_crystal"
+										}
+										{
+											Count: 1b
+											Slot: 1
+											id: "sgjourney:energy_crystal"
+											tag: {
+												Energy: 0
+											}
+										}
+										{
+											Count: 1b
+											Slot: 2
+											id: "sgjourney:communication_crystal"
+											tag: {
+												Frequency: 0
+											}
+										}
+										{
+											Count: 1b
+											Slot: 3
+											id: "sgjourney:energy_crystal"
+											tag: {
+												Energy: 0
+											}
+										}
+										{
+											Count: 1b
+											Slot: 5
+											id: "sgjourney:energy_crystal"
+											tag: {
+												Energy: 0
+											}
+										}
+										{
+											Count: 1b
+											Slot: 7
+											id: "sgjourney:transfer_crystal"
+											tag: {
+												TransferLimit: 2500L
+											}
+										}
+									]
+									Size: 9
+								}
+								id: "sgjourney:milky_way_dhd"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "The Ancient Gate"
 			x: 6.5d
 			y: -8.5d
@@ -1194,6 +1257,21 @@
 			}]
 			x: 10.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["493DD013C818BB7B"]
+			id: "394C8E3A93E7CD15"
+			tasks: [{
+				id: "31CCF2A980099EB5"
+				item: {
+					Count: 1
+					id: "gtceu:gritty_akreyrium_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.0d
 		}
 	]
 	title: "Adventures in Abydos"

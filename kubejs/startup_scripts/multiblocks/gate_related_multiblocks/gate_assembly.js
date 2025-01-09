@@ -69,5 +69,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("N", Predicates.blocks("gtceu:fusion_glass"))
             .build())
         .workableCasingRenderer("minecraft:block/red_nether_bricks",
-        "gtceu:block/multiblock/fusion_reactor", false);
+        "gtceu:block/machines/assembler", false);
 });

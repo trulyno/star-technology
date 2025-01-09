@@ -82,6 +82,22 @@ ServerEvents.recipes(event => {
                 .CWUt(144)
             )
             .EUt(GTValues.VHA[GTValues.UV]);
+
+    event.recipes.gtceu.assembly_line('gate_assembly')
+            .itemInputs('gtceu:ancient_runicalium_frame', '32x #gtceu:circuits/uhv', '8x gtceu:uhv_field_generator', '8x kubejs:uhv_catalyst_core', 
+                    '16x gtceu:uhv_robot_arm', '16x gtceu:uhv_robot_arm', '16x gtceu:uhv_robot_arm', '16x gtceu:uhv_robot_arm', 
+                    '64x kubejs:uepic_chip', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip', 
+                    '56x gtceu:ancient_runicalium_screw', '32x gtceu:stellarium_single_wire')
+            .inputFluids('gtceu:stellarium 36864', 'gtceu:akreyrium_pcb_graphite_nanoparticle_coolant 64000', 'gtceu:tritanium 73728')
+            .itemOutputs('gtceu:gate_assembly')
+            .duration(128000)
+            .stationResearch(
+        researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of("gtceu:stargate_component_assembly"))
+                .EUt(GTValues.VHA[GTValues.UHV])
+                .CWUt(144)
+            )
+            .EUt(GTValues.VHA[GTValues.UHV]);
                 
     event.recipes.gtceu.assembly_line('drackion_runic_laser_gen')
             .itemInputs('gtceu:exquisite_screret_runic_laser_source_base_gem', '2x gtceu:uv_field_generator', '4x gtceu:uv_sensor', '4x gtceu:uv_emitter', 
@@ -246,6 +262,21 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     //Ancient Gate
+        
+        //DHD
+        event.recipes.gtceu.assembly_line('milky_way_gate')
+            .itemInputs('sgjourney:classic_dhd', '8x gtceu:uhv_field_generator', '8x gtceu:uhv_emitter', '8x gtceu:uhv_sensor', '64x kubejs:uepic_chip', '8x kubejs:runic_engraved_plating', '32x kubejs:runic_energized_pathway_plating', '32x kubejs:runic_energized_transportation_plating')
+            .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 13824')
+            .itemOutputs('sgjourney:milky_way_dhd')
+            .duration(10000)
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of("sgjourney:classic_dhd"))
+                    .EUt(GTValues.VHA[GTValues.UHV])
+                    .CWUt(160)
+                )
+            .EUt(GTValues.VA[GTValues.UEV])
+
         //Chevrons
         event.recipes.gtceu.assembly_line('classic_chevron_assembly')
             .itemInputs('gtceu:stellarium_frame', 'kubejs:classic_chevron_disk', 'kubejs:classic_chevron_disk', 'kubejs:classic_chevron_disk', '6x kubejs:uhv_computational_matrix', '8x kubejs:uhv_catalyst_core', '24x kubejs:uhv_super_magnetic_core', '12x kubejs:uhv_high_strength_panel')
@@ -272,8 +303,6 @@ ServerEvents.recipes(event => {
                     .CWUt(176)
                 )
             .EUt(GTValues.VHA[GTValues.UEV]);
-
-
 
         //Ancient Encoded Computational Unit
         event.recipes.gtceu.assembly_line('ancient_stargate_computer_core')
@@ -308,7 +337,7 @@ ServerEvents.recipes(event => {
                 researchRecipeBuilder => researchRecipeBuilder
                     .researchStack(Item.of("kubejs:nether_coordinate_crystal"))
                     .EUt(GTValues.VHA[GTValues.UHV])
-                    .CWUt(168)
+                    .CWUt(160)
                 )
             .EUt(GTValues.VHA[GTValues.UEV]);
 
@@ -322,7 +351,7 @@ ServerEvents.recipes(event => {
                 researchRecipeBuilder => researchRecipeBuilder
                     .researchStack(Item.of("kubejs:end_coordinate_crystal"))
                     .EUt(GTValues.VHA[GTValues.UHV])
-                    .CWUt(168)
+                    .CWUt(160)
                 )
             .EUt(GTValues.VHA[GTValues.UEV]);
 
@@ -354,6 +383,7 @@ ServerEvents.recipes(event => {
         //THE Ancient Gate
         event.recipes.gtceu.gate_assembly('ancient_gate')
             .itemInputs('14x kubejs:ancient_stargate_ring_block', '9x kubejs:ancient_stargate_chevron_block', 'kubejs:ancient_stargate_base_block')
+            .inputFluids('gtceu:naquadria 72000', 'gtceu:liquid_nether_air 250000', 'gtceu:liquid_ender_air 250000')
             .itemOutputs('sgjourney:milky_way_stargate')
             .duration(48000)
             .EUt(GTValues.VA[GTValues.UEV]);

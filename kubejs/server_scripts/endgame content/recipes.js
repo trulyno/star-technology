@@ -79,11 +79,11 @@ ServerEvents.recipes(event => {
         .EUt(30000);
 
     event.remove({output: 'gtceu:hot_cerium_tritelluride_ingot'})
-    event.recipes.gtceu.super_pressure_heat_chamber('hot_cerium_tritelluride_ingot')
+    event.recipes.gtceu.heat_chamber('hot_cerium_tritelluride_ingot')
         .itemInputs('gtceu:cerium_dust', '3x gtceu:tellurium_dust')
         .inputFluids('gtceu:xenon 120')
         .itemOutputs('4x gtceu:hot_cerium_tritelluride_ingot')
-        .duration(1250)
+        .duration(5000)
         .circuit(2)
         .EUt((GTValues.VHA[GTValues.UHV]));
 
@@ -139,5 +139,13 @@ ServerEvents.recipes(event => {
         .duration(900)
         .EUt((GTValues.VA[GTValues.UHV]))
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
+
+    event.recipes.gtceu.chemical_plant('borax')
+        .itemInputs('12x gtceu:boron_dust', '6x gtceu:sodium_bisulfate_dust')
+        .inputFluids('minecraft:water 39000')
+        .itemOutputs('3x gtceu:borax_dust')
+        .outputFluids('gtceu:sulfuric_acid 6000')
+        .duration(800)
+        .EUt((GTValues.VA[GTValues.ZPM]))
 
 });
