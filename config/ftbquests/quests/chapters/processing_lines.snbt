@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "processing_lines"
-	group: ""
+	group: "03EF8417F6D21A2E"
 	icon: "gtceu:lv_chemical_reactor"
 	id: "2742F3918C76DA81"
 	order_index: 2
