@@ -293,7 +293,7 @@
 		{
 			id: "336508F193ECD87F"
 			linked_quest: "59711F987DE95924"
-			x: -14.5d
+			x: -16.0d
 			y: -31.0d
 		}
 		{
@@ -311,7 +311,7 @@
 		{
 			id: "6C146A3CFDB256A1"
 			linked_quest: "1004D6D7636E0321"
-			x: -14.5d
+			x: -13.0d
 			y: -32.5d
 		}
 		{
@@ -331,6 +331,18 @@
 			linked_quest: "3FB8E0105D2C20B4"
 			x: -18.0d
 			y: -26.0d
+		}
+		{
+			id: "62547D0731752665"
+			linked_quest: "2C354B0735DF8023"
+			x: -14.5d
+			y: -32.5d
+		}
+		{
+			id: "50E9A2BECB7A50FB"
+			linked_quest: "64F0BB858EEB7913"
+			x: -13.0d
+			y: -31.0d
 		}
 	]
 	quests: [
@@ -791,7 +803,7 @@
 				item: "gtceu:large_quantum_compressor"
 				type: "item"
 			}]
-			x: -16.0d
+			x: -14.5d
 			y: -31.0d
 		}
 		{

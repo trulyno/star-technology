@@ -1018,7 +1018,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["6ABD35ABBB380F42"]
 			id: "3EEEC61CEE1B6BB2"
 			rewards: [{
 				id: "4A93870D2CD9AA9D"
@@ -1173,10 +1172,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: [
-				"3BA6406400A63937"
-				"1F416C7A641914EC"
-			]
+			dependencies: ["1F416C7A641914EC"]
 			id: "65D76272BA5E67FC"
 			rewards: [{
 				count: 2
@@ -1195,10 +1191,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"576C0430D0CDE409"
-				"2612A32BC45C1863"
-			]
+			dependencies: ["576C0430D0CDE409"]
 			hide_dependent_lines: true
 			id: "36C01453717B249D"
 			rewards: [{
@@ -1339,10 +1332,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"05F2C7351FF1B0E5"
-				"3BA6406400A63937"
-			]
+			dependencies: ["05F2C7351FF1B0E5"]
 			icon: "gtceu:uhpic_chip"
 			id: "5BA69EDC3C223B2C"
 			rewards: [{
@@ -1554,7 +1544,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["3BA6406400A63937"]
 			id: "5C302CB1A1068EE1"
 			rewards: [{
 				id: "4D0459C42287FFAE"

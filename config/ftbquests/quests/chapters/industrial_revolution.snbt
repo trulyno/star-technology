@@ -116,8 +116,12 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "7DB1C06536CCB7BD"
-				item: "gtceu:electrico_kinetic_ore_factory"
+				id: "71F5C57FAE51BD35"
+				item: {
+					Count: 1
+					id: "gtceu:electric_ore_factory"
+					tag: { }
+				}
 				type: "item"
 			}]
 			x: -2.5d

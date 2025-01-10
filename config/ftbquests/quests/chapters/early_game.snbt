@@ -1114,7 +1114,11 @@
 				"64E79272B5003119"
 			]
 			description: ["Now you have access to LV machine hulls, you can now make a new multiblock that works with create to process your ores further. This gives you access to resources like gold which will help with progressing into create."]
-			icon: "gtceu:kinetic_ore_factory"
+			icon: {
+				Count: 1
+				id: "gtceu:primitive_ore_factory"
+				tag: { }
+			}
 			id: "397C622B06B1165A"
 			rewards: [{
 				id: "3289F29B45D67D8C"
@@ -1126,7 +1130,11 @@
 			tasks: [
 				{
 					id: "696CC5228C5FF928"
-					item: "gtceu:kinetic_ore_factory"
+					item: {
+						Count: 1
+						id: "gtceu:primitive_ore_factory"
+						tag: { }
+					}
 					type: "item"
 				}
 				{
@@ -1190,11 +1198,6 @@
 				{
 					id: "190CE6DEF3804179"
 					item: "gtceu:lv_output_bus"
-					type: "item"
-				}
-				{
-					id: "4612207646E4E719"
-					item: "gtceu:lv_kinetic_input_box"
 					type: "item"
 				}
 			]
