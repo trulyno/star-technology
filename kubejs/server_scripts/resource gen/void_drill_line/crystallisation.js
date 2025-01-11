@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.distillation_tower('molten_ore_mixture')
         .inputFluids('gtceu:molten_ore_mixture 1000')
         .itemOutputs('gtceu:metal_mixture_dust')
-        .outputFluids('gtceu:molten_bauxite_ore 125', 'gtceu:molten_pitchblende_ore 125', 'gtceu:molten_molybdenite_ore 125', 'gtceu:molten_ilmenite_ore 100', 'gtceu:molten_bastnasite_ore 100' ,'gtceu:molten_scheelite_ore 100', 'gtceu:molten_tungstate_ore 100', 'gtceu:molten_cooperite_ore 225')
+        .outputFluids('gtceu:molten_bauxite_ore 150', 'gtceu:molten_pitchblende_ore 125', 'gtceu:molten_molybdenite_ore 150', 'gtceu:molten_ilmenite_ore 100', 'gtceu:molten_bastnasite_ore 100' ,'gtceu:molten_tungstate_ore 150', 'gtceu:molten_cooperite_ore 225')
         .duration(240)
         .EUt(GTValues.VA[GTValues.EV]);
 
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         .EUt(512);
 
     //crystallising
-    ['bauxite', 'pitchblende', 'molybdenite', 'ilmenite', 'scheelite', 'tungstate', 'cooperite', 'bastnasite'].forEach(type => {
+    ['bauxite', 'pitchblende', 'molybdenite', 'ilmenite', 'tungstate', 'cooperite', 'bastnasite'].forEach(type => {
         event.recipes.gtceu.autoclave(`raw_${type}`)
             .itemInputs('gtceu:stone_dust')
             .inputFluids(`gtceu:molten_${type}_ore 500`)

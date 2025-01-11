@@ -1500,7 +1500,11 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["576C0430D0CDE409"]
+			dependencies: [
+				"35829E28221CB70E"
+				"7781F2FE4CB258E0"
+				"0ED91DDCAC7562EE"
+			]
 			hide_dependent_lines: true
 			id: "36C01453717B249D"
 			rewards: [{
