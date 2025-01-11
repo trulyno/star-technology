@@ -894,6 +894,17 @@ StartupEvents.registry('block', event => {
 //         .tagBlock('minecraft:needs_iron_tool')
 //         .textureAll('kubejs:block/resource_gen/reflective_casing');
 
+    event.create('enriched_naquadah_machine_casing')
+        .displayName('Enriched Naquadah Casing')
+        .hardness(5)
+        .resistance(10)
+        .lightLevel(0)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/naquadah/casing');
+
 });
 
 BlockEvents.modification(event => {
