@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "kubejs:block/casings/naquadah/casing",
+    "side": "kubejs:block/casings/naquadah/firebox_casing",
+    "top": "kubejs:block/casings/naquadah/casing"
+  }
+}
