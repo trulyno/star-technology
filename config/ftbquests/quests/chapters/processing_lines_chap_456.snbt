@@ -11,34 +11,45 @@
 	id: "37CD2B0E77E895ED"
 	order_index: 3
 	progression_mode: "flexible"
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "03B6D7853CA898F2"
+			linked_quest: "090275078106B752"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			id: "6D8B0DE6FCC2A5B1"
+			linked_quest: "07AD6651D0B40E22"
+			shape: "gear"
+			x: 19.5d
+			y: 6.0d
+		}
+		{
+			id: "5C3A70141044636D"
+			linked_quest: "179A15014A5716B5"
+			x: 17.5d
+			y: 8.0d
+		}
+	]
 	quests: [
 		{
-			dependencies: ["1F416C7A641914EC"]
+			dependencies: ["32AC51387EAD9D2D"]
 			dependency_requirement: "one_completed"
 			id: "050206AAE7043982"
-			rewards: [{
-				id: "1F01621C3256278F"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [{
 				id: "69AC5E32E86F82D9"
 				item: "gtceu:naquadah_dust"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.0d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
+			dependencies: ["050206AAE7043982"]
 			icon: "gtceu:hot_naquadah_ingot"
 			id: "0743A08E81AB84D3"
-			rewards: [{
-				id: "20FF6D7DB384CBE0"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -53,17 +64,13 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -1.0d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
+			dependencies: ["050206AAE7043982"]
 			icon: "gtceu:impure_enriched_naquadah_solution_bucket"
 			id: "66C746E820671861"
-			rewards: [{
-				id: "7CC29001011C165C"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -78,17 +85,13 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -3.0d
+			x: 2.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["050206AAE7043982"]
 			icon: "gtceu:impure_naquadria_solution_bucket"
 			id: "037DBFBF652DB857"
-			rewards: [{
-				id: "1EC66B786CDCFCA0"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -103,15 +106,23 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 1.0d
+			x: 2.5d
+			y: 4.5d
 		}
 		{
+			dependencies: [
+				"0743A08E81AB84D3"
+				"1F416C7A641914EC"
+			]
 			id: "445BC7DFD3387DD4"
 			rewards: [{
-				count: 2
-				id: "2C285C756BCF7C45"
-				item: "kubejs:coin"
+				count: 3
+				id: "158ADB112C85128E"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
@@ -121,33 +132,25 @@
 				item: "gtceu:naquadah_ingot"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -1.0d
+			x: 4.5d
+			y: 3.0d
 		}
 		{
+			dependencies: ["66C746E820671861"]
 			id: "09F19610F86D2775"
-			rewards: [{
-				id: "72C63E92721DE8A3"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [{
 				id: "35EAB384DCF9980F"
 				item: "gtceu:trinium_sulfide_dust"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -3.0d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["66C746E820671861"]
 			icon: "gtceu:enriched_naquadah_solution_bucket"
 			id: "594AE836BD914C22"
-			rewards: [{
-				id: "027EF332C503073D"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -162,17 +165,13 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: -4.5d
+			x: 4.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["594AE836BD914C22"]
 			icon: "gtceu:acidic_enriched_naquadah_solution_bucket"
 			id: "7F43598F92DEEF6A"
-			rewards: [{
-				id: "3FC4652B3498EF08"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -187,33 +186,25 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: -4.5d
+			x: 5.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["7F43598F92DEEF6A"]
 			id: "2BD81CB64009C781"
-			rewards: [{
-				id: "432C2DC7858DF9B2"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [{
 				id: "59699552950F623E"
 				item: "gtceu:enriched_naquadah_sulfate_dust"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.5d
+			x: 7.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["2BD81CB64009C781"]
 			icon: "gtceu:hot_enriched_naquadah_ingot"
 			id: "53EEEEF8D8299E24"
-			rewards: [{
-				id: "54D2FDA0AF8FCB07"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -227,35 +218,36 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: -4.5d
+			x: 8.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["53EEEEF8D8299E24"]
 			id: "7781F2FE4CB258E0"
 			rewards: [{
-				count: 2
-				id: "7CA98870328F2081"
-				item: "kubejs:coin"
+				count: 3
+				id: "12A1FBA729F07A6F"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "51148465ACA91364"
 				item: "gtceu:enriched_naquadah_ingot"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -3.0d
+			x: 10.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["09F19610F86D2775"]
 			icon: "gtceu:hot_trinium_ingot"
 			id: "4ACEA9551BC73631"
-			rewards: [{
-				id: "5FD42B499FCB2237"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -270,35 +262,36 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: -3.0d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["4ACEA9551BC73631"]
 			id: "0ED91DDCAC7562EE"
 			rewards: [{
-				count: 2
-				id: "114648BF75236A9F"
-				item: "kubejs:coin"
+				count: 3
+				id: "4E740DD181119250"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "13A2CD3778EF2A88"
 				item: "gtceu:trinium_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -1.0d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["037DBFBF652DB857"]
 			icon: "gtceu:naquadria_solution_bucket"
 			id: "28F50492B5D56C14"
-			rewards: [{
-				id: "73744832A991EB96"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -313,17 +306,13 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: 1.0d
+			x: 4.0d
+			y: 4.5d
 		}
 		{
+			dependencies: ["28F50492B5D56C14"]
 			icon: "gtceu:acidic_naquadria_solution_bucket"
 			id: "07255C5A3490A4EE"
-			rewards: [{
-				id: "7E6E056CC86B7813"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -338,33 +327,25 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: 1.0d
+			x: 5.5d
+			y: 4.5d
 		}
 		{
+			dependencies: ["07255C5A3490A4EE"]
 			id: "47865448205C4410"
-			rewards: [{
-				id: "6305E4548C870CDC"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [{
 				id: "352A9728C02D00F9"
 				item: "gtceu:naquadria_sulfate_dust"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 1.0d
+			x: 7.0d
+			y: 4.5d
 		}
 		{
+			dependencies: ["47865448205C4410"]
 			icon: "gtceu:hot_naquadria_ingot"
 			id: "5F4A4ABCBAA0098D"
-			rewards: [{
-				id: "4732272B30F10A6B"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -379,52 +360,48 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 1.0d
+			x: 8.5d
+			y: 4.5d
 		}
 		{
+			dependencies: ["5F4A4ABCBAA0098D"]
 			id: "21B816D2C178C2D5"
 			rewards: [{
-				count: 2
-				id: "65AB57B98F0526B4"
-				item: "kubejs:coin"
+				count: 3
+				id: "653A8EA6740C8FB3"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "338576C09BEBC341"
 				item: "gtceu:naquadria_ingot"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -1.0d
+			x: 10.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
 			id: "073FA13EEEA78C5F"
-			rewards: [{
-				id: "0045DECA72E80407"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [{
 				id: "108E70C12E851C35"
 				item: "gtceu:biphenyl_dust"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -7.5d
+			x: 6.5d
+			y: -2.0d
 		}
 		{
+			dependencies: ["073FA13EEEA78C5F"]
 			icon: "gtceu:polychlorinated_biphenyl_bucket"
 			id: "721A2D614DBBAECC"
-			rewards: [{
-				id: "013EB4555245DE92"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -439,36 +416,36 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: -7.5d
+			x: 8.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["721A2D614DBBAECC"]
 			id: "491FFE3B635316B0"
 			rewards: [{
-				count: 2
-				id: "008E4760922328DE"
-				item: "kubejs:coin"
+				count: 3
+				id: "47E1209F392846C6"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "09BEE46EFDBEA11A"
 				item: "gtceu:pcb_coolant_bucket"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -7.5d
+			x: 9.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["111033FEFA89BA91"]
 			icon: "gtceu:benzotrichloride_bucket"
 			id: "5D66D12C6EBB3A43"
-			rewards: [{
-				id: "6C99865BF1E9E24B"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -483,17 +460,13 @@
 					type: "item"
 				}
 			]
-			x: 18.0d
-			y: 1.5d
+			x: 3.5d
+			y: 6.5d
 		}
 		{
+			dependencies: ["5D66D12C6EBB3A43"]
 			icon: "gtceu:benzoyl_chloride_bucket"
 			id: "615443BBE5BF322A"
-			rewards: [{
-				id: "0A6E5BE2DA6C20C2"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -508,17 +481,13 @@
 					type: "item"
 				}
 			]
-			x: 19.5d
-			y: 1.5d
+			x: 5.0d
+			y: 6.5d
 		}
 		{
+			dependencies: ["615443BBE5BF322A"]
 			icon: "gtceu:4_fluorobenzoyl_chloride_bucket"
 			id: "6BE2F493A180DE65"
-			rewards: [{
-				id: "05A93E637C5643B7"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -533,34 +502,28 @@
 					type: "item"
 				}
 			]
-			x: 21.0d
-			y: 1.5d
+			x: 6.5d
+			y: 6.5d
 		}
 		{
+			dependencies: [
+				"6BE2F493A180DE65"
+				"4042E4B274934623"
+			]
 			id: "741C8B8D984C639F"
-			rewards: [{
-				id: "291E73F3B1422111"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [{
 				id: "1DDA313913FAD685"
 				item: "gtceu:44_difluorobenzophenone_dust"
 				type: "item"
 			}]
-			x: 22.5d
-			y: 1.5d
+			x: 8.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7CACFC7C9101EA59"]
 			icon: "gtceu:fluorobenzene_bucket"
 			id: "4042E4B274934623"
-			rewards: [{
-				id: "77314CA46C45F6B5"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -575,71 +538,65 @@
 					type: "item"
 				}
 			]
-			x: 22.5d
-			y: 0.5d
+			x: 7.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["111033FEFA89BA91"]
 			id: "59546613EC1FC027"
-			rewards: [{
-				id: "19D106A364BE87B3"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [{
 				id: "1E99A31008F1C2BE"
 				item: "gtceu:hydroquinone_dust"
 				type: "item"
 			}]
-			x: 21.0d
-			y: 3.5d
+			x: 6.5d
+			y: 8.5d
 		}
 		{
+			dependencies: ["59546613EC1FC027"]
 			id: "6C2A1C67722E486F"
-			rewards: [{
-				id: "6ECE2A474C72D911"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [{
 				id: "39AA4268DB871EE9"
 				item: "gtceu:disodium_salt_of_hydroquinone_dust"
 				type: "item"
 			}]
-			x: 22.5d
-			y: 3.5d
+			x: 8.0d
+			y: 8.5d
 		}
 		{
+			dependencies: [
+				"741C8B8D984C639F"
+				"6C2A1C67722E486F"
+			]
 			id: "444598F0FA4D23BC"
 			rewards: [{
-				count: 2
-				id: "5F8EF1360BF24F81"
-				item: "kubejs:coin"
+				count: 3
+				id: "250F84F0EB076E5A"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "5DB87145DAA8F3E2"
 				item: "gtceu:polyether_ether_ketone_bucket"
 				type: "item"
 			}]
 			title: "Liquid PEEK Plastic"
-			x: 24.0d
-			y: 2.5d
+			x: 9.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6CC13BE9AD447218"]
 			description: ["This entire processing line requires a Sterile Cleanroom"]
 			icon: "gtceu:bacteria_bucket"
 			id: "24AE98EABF69F2D1"
-			rewards: [{
-				id: "66FA4DBBDAB99F62"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -654,17 +611,13 @@
 					type: "item"
 				}
 			]
-			x: 19.5d
-			y: -8.5d
+			x: 2.5d
+			y: 10.5d
 		}
 		{
+			dependencies: ["24AE98EABF69F2D1"]
 			icon: "gtceu:bacterial_sludge_bucket"
 			id: "0FDF7E1C23F592F7"
-			rewards: [{
-				id: "31D0521CAF3370E6"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -679,17 +632,13 @@
 					type: "item"
 				}
 			]
-			x: 21.0d
-			y: -8.5d
+			x: 4.0d
+			y: 10.5d
 		}
 		{
+			dependencies: ["0FDF7E1C23F592F7"]
 			icon: "gtceu:enriched_bacterial_sludge_bucket"
 			id: "49D1C5BC82F5471E"
-			rewards: [{
-				id: "7DB5E98CB8F15F82"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -704,17 +653,13 @@
 					type: "item"
 				}
 			]
-			x: 22.5d
-			y: -8.5d
+			x: 5.5d
+			y: 10.5d
 		}
 		{
+			dependencies: ["49D1C5BC82F5471E"]
 			icon: "gtceu:mutagen_bucket"
 			id: "0F29276290B9D9D1"
-			rewards: [{
-				id: "4BEF1E193B084F40"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -729,17 +674,17 @@
 					type: "item"
 				}
 			]
-			x: 24.0d
-			y: -8.5d
+			x: 7.0d
+			y: 10.5d
 		}
 		{
+			dependencies: [
+				"0F29276290B9D9D1"
+				"3DB8A5E51DB80275"
+				"43DE1BCB61604947"
+			]
 			icon: "gtceu:raw_growth_medium_bucket"
 			id: "7E99889B3427A842"
-			rewards: [{
-				id: "086A9E1CF996F7BB"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -754,50 +699,37 @@
 					type: "item"
 				}
 			]
-			x: 25.5d
-			y: -8.5d
+			x: 8.5d
+			y: 10.5d
 		}
 		{
 			description: ["Try using the Aquatic Entangler to automate this. If it is too slow, you can upgrade it with the Upgrade Kits you made before. These increase the amount of fish per catch by quite a bit."]
 			id: "3DB8A5E51DB80275"
-			rewards: [{
-				id: "636D43A6B7C15CD9"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [{
 				id: "36C56ADFEDC214C5"
 				item: "gtceu:meat_dust"
 				type: "item"
 			}]
-			x: 24.5d
-			y: -7.0d
+			x: 7.5d
+			y: 11.5d
 		}
 		{
+			dependencies: ["3DB8A5E51DB80275"]
 			id: "56CA67C022703D4E"
-			rewards: [{
-				id: "1B1758447D73476E"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [{
 				id: "01A3C05E7AE632FE"
 				item: "gtceu:collagen_dust"
 				type: "item"
 			}]
-			x: 24.5d
-			y: -5.5d
+			x: 7.5d
+			y: 13.0d
 		}
 		{
+			dependencies: ["56CA67C022703D4E"]
 			icon: "gtceu:gelatin_mixture_bucket"
 			id: "4F91534D92E0366C"
-			rewards: [{
-				id: "3B5D2A90F8186718"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -812,44 +744,51 @@
 					type: "item"
 				}
 			]
-			x: 25.5d
-			y: -4.5d
+			x: 8.5d
+			y: 14.0d
 		}
 		{
+			dependencies: ["20BDCCFD8FFEB875"]
 			id: "43DE1BCB61604947"
-			rewards: [{
-				id: "39369DF2CE5709FF"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [{
 				id: "4D0007816BEEECA0"
 				item: "gtceu:gelatin_dust"
 				type: "item"
 			}]
-			x: 26.5d
-			y: -7.0d
+			x: 9.5d
+			y: 11.5d
 		}
 		{
+			dependencies: ["4F91534D92E0366C"]
 			id: "20BDCCFD8FFEB875"
-			rewards: [{
-				id: "04482905FDED90A1"
-				item: "kubejs:coin"
-				type: "item"
-			}]
 			size: 1.0d
 			tasks: [{
 				id: "08806358E311471B"
 				item: "gtceu:agar_dust"
 				type: "item"
 			}]
-			x: 26.5d
-			y: -5.5d
+			x: 9.5d
+			y: 13.0d
 		}
 		{
+			dependencies: [
+				"493DD013C818BB7B"
+				"59BA8A76701B3739"
+			]
 			id: "1BE69DB2DFDC35C8"
-			size: 1.0d
+			rewards: [{
+				count: 3
+				id: "0DD7A944263A3551"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "0598E5F695BD3715"
 				item: {
@@ -859,12 +798,27 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: 5.5d
+			x: 25.5d
+			y: -0.5d
 		}
 		{
+			dependencies: [
+				"7658E16BA79A7632"
+				"493DD013C818BB7B"
+			]
 			id: "37E3EF96EDE85C86"
-			size: 1.0d
+			rewards: [{
+				count: 3
+				id: "7BB30C908CDA9554"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "1BBA3219EA191351"
 				item: {
@@ -874,12 +828,31 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: 9.5d
+			x: 25.5d
+			y: 3.5d
 		}
 		{
+			dependencies: [
+				"7F203254ACDF8C88"
+				"48E71B15ECEAA01C"
+				"1D7697A8027F4BD9"
+				"4C84DDA9A9475866"
+			]
+			dependency_requirement: "one_completed"
 			id: "1108B5E80225C72D"
-			size: 1.0d
+			min_required_dependencies: 2
+			rewards: [{
+				count: 3
+				id: "6854E65E72CE4462"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "7217857601C6B895"
 				item: {
@@ -889,11 +862,29 @@
 				}
 				type: "item"
 			}]
-			x: 25.5d
-			y: 9.5d
+			x: 24.0d
+			y: 8.0d
 		}
 		{
+			dependencies: [
+				"560669210B8CABFC"
+				"0C19C040CA121E3B"
+				"0491A3097C6BA6AE"
+				"40A015DBF6603208"
+			]
 			id: "22B85F7F13C66730"
+			rewards: [{
+				count: 3
+				id: "678C9BCDD38C97D5"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "3DF4C45A9424D4D1"
 				item: {
@@ -903,10 +894,11 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: -3.5d
+			x: 21.0d
+			y: 13.5d
 		}
 		{
+			dependencies: ["39305F8DD4712D2B"]
 			id: "59BA8A76701B3739"
 			tasks: [{
 				id: "4E3EACA0DAB2BFB8"
@@ -917,10 +909,11 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 5.5d
+			x: 23.5d
+			y: -0.5d
 		}
 		{
+			dependencies: ["78841B022F71E005"]
 			id: "39305F8DD4712D2B"
 			tasks: [{
 				id: "73450C6D4898799A"
@@ -931,10 +924,11 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
-			y: 5.5d
+			x: 22.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["330EAF566B740869"]
 			id: "78841B022F71E005"
 			tasks: [{
 				id: "4713283A8C9B9B86"
@@ -945,10 +939,14 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 5.5d
+			x: 20.5d
+			y: -0.5d
 		}
 		{
+			dependencies: [
+				"623816C7D3EB91CD"
+				"1D2B296A9B23D0BF"
+			]
 			id: "330EAF566B740869"
 			tasks: [{
 				id: "2EA6AEB9D004405D"
@@ -959,10 +957,14 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.5d
+			x: 19.0d
+			y: -0.5d
 		}
 		{
+			dependencies: [
+				"5CC3D76D20152621"
+				"6893DE5DC9C7470F"
+			]
 			id: "7557E3B3E5F86BAD"
 			tasks: [{
 				id: "16DBFDEF15AA860C"
@@ -973,10 +975,11 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 5.5d
+			x: 16.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["7557E3B3E5F86BAD"]
 			id: "1D2B296A9B23D0BF"
 			tasks: [{
 				id: "2053D5A2B31AAF5A"
@@ -987,10 +990,14 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 5.5d
+			x: 17.5d
+			y: -0.5d
 		}
 		{
+			dependencies: [
+				"151A1B51DFE41040"
+				"493DD013C818BB7B"
+			]
 			id: "6893DE5DC9C7470F"
 			tasks: [{
 				id: "5F5DDAD47627FC6B"
@@ -1001,10 +1008,11 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 5.5d
+			x: 14.5d
+			y: -0.5d
 		}
 		{
+			dependencies: ["1AAB9C20E833029A"]
 			id: "5CC3D76D20152621"
 			tasks: [{
 				id: "51FD0C80BC90F61E"
@@ -1015,10 +1023,11 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.5d
+			x: 15.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["7557E3B3E5F86BAD"]
 			id: "5CDFB2E4DCD6E4F0"
 			tasks: [{
 				id: "7D0AE2B53F6A4420"
@@ -1029,10 +1038,11 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 4.5d
+			x: 16.5d
+			y: -1.5d
 		}
 		{
+			dependencies: ["7557E3B3E5F86BAD"]
 			id: "2EDE14D28C3C6F25"
 			tasks: [{
 				id: "2457DDA54D7610C6"
@@ -1043,8 +1053,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 6.5d
+			x: 16.5d
+			y: 0.5d
 		}
 		{
 			id: "623816C7D3EB91CD"
@@ -1057,10 +1067,11 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: 4.5d
+			x: 18.5d
+			y: -1.5d
 		}
 		{
+			dependencies: ["330EAF566B740869"]
 			id: "5898C4D6A9614FC0"
 			tasks: [{
 				id: "6C3605E9C58BB9E8"
@@ -1071,10 +1082,14 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.5d
+			x: 19.5d
+			y: 0.5d
 		}
 		{
+			dependencies: [
+				"7214D86C55033EAD"
+				"2746D19331452ACC"
+			]
 			id: "7658E16BA79A7632"
 			tasks: [{
 				id: "3F5DB2F30F666815"
@@ -1085,10 +1100,14 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 9.5d
+			x: 23.5d
+			y: 3.5d
 		}
 		{
+			dependencies: [
+				"357F58FB592B9628"
+				"560EB50E50454D31"
+			]
 			id: "2746D19331452ACC"
 			tasks: [{
 				id: "554A409C85D47153"
@@ -1099,10 +1118,11 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
-			y: 9.5d
+			x: 22.0d
+			y: 3.5d
 		}
 		{
+			dependencies: ["0E079F57524D0FD9"]
 			id: "560EB50E50454D31"
 			tasks: [{
 				id: "70641765734BF0C3"
@@ -1113,8 +1133,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 9.5d
+			x: 20.5d
+			y: 3.5d
 		}
 		{
 			id: "357F58FB592B9628"
@@ -1127,10 +1147,14 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: 8.5d
+			x: 21.5d
+			y: 2.5d
 		}
 		{
+			dependencies: [
+				"2DB6C9C0B6100088"
+				"2D926C3E3964B535"
+			]
 			id: "0E079F57524D0FD9"
 			tasks: [{
 				id: "4C6B410B911EA390"
@@ -1141,10 +1165,11 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 9.5d
+			x: 19.0d
+			y: 3.5d
 		}
 		{
+			dependencies: ["70683E750C318105"]
 			id: "2DB6C9C0B6100088"
 			tasks: [{
 				id: "0109C7E8B41025A0"
@@ -1155,10 +1180,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 8.5d
+			x: 17.5d
+			y: 2.5d
 		}
 		{
+			dependencies: ["581B9989FE0DE0BF"]
 			id: "2D926C3E3964B535"
 			tasks: [{
 				id: "39F98E529735A9E4"
@@ -1169,10 +1195,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 10.5d
+			x: 17.5d
+			y: 4.5d
 		}
 		{
+			dependencies: ["60267DAD7D99381F"]
 			id: "70683E750C318105"
 			tasks: [{
 				id: "4D7FAA9CA579748B"
@@ -1183,10 +1210,11 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 8.5d
+			x: 16.0d
+			y: 2.5d
 		}
 		{
+			dependencies: ["60267DAD7D99381F"]
 			id: "581B9989FE0DE0BF"
 			tasks: [{
 				id: "2DCEE551A560B1E5"
@@ -1197,10 +1225,14 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 10.5d
+			x: 16.0d
+			y: 4.5d
 		}
 		{
+			dependencies: [
+				"493DD013C818BB7B"
+				"151A1B51DFE41040"
+			]
 			id: "60267DAD7D99381F"
 			tasks: [{
 				id: "02915516B15744B9"
@@ -1211,11 +1243,26 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 9.5d
+			x: 14.5d
+			y: 3.5d
 		}
 		{
+			dependencies: [
+				"2D926C3E3964B535"
+				"2DB6C9C0B6100088"
+			]
 			id: "51BDC41DEAABE3DC"
+			rewards: [{
+				count: 2
+				id: "7638456BA6F9C602"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "gear"
 			tasks: [{
 				id: "5B95A901C1098E10"
 				item: {
@@ -1225,10 +1272,14 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 9.5d
+			x: 17.5d
+			y: 3.5d
 		}
 		{
+			dependencies: [
+				"45904BC625C888C3"
+				"2AECB0479C22A03C"
+			]
 			id: "4C84DDA9A9475866"
 			tasks: [{
 				id: "07351E69FBBB6F7F"
@@ -1239,10 +1290,14 @@
 				}
 				type: "item"
 			}]
-			x: 24.0d
-			y: 9.5d
+			x: 22.5d
+			y: 8.0d
 		}
 		{
+			dependencies: [
+				"41D954CFB58267D6"
+				"36E33C8F077E714F"
+			]
 			id: "1D7697A8027F4BD9"
 			tasks: [{
 				id: "3A09935F28C9A2ED"
@@ -1253,10 +1308,14 @@
 				}
 				type: "item"
 			}]
-			x: 24.0d
-			y: 6.5d
+			x: 22.5d
+			y: 6.0d
 		}
 		{
+			dependencies: [
+				"09E6C0A58F3409B3"
+				"49AF286E71E849CF"
+			]
 			id: "48E71B15ECEAA01C"
 			tasks: [{
 				id: "5AA6D922EFD3F6C3"
@@ -1267,10 +1326,11 @@
 				}
 				type: "item"
 			}]
-			x: 24.0d
-			y: 12.5d
+			x: 22.5d
+			y: 10.0d
 		}
 		{
+			dependencies: ["54DA03D41AF36EF2"]
 			id: "49AF286E71E849CF"
 			tasks: [{
 				id: "1A0B72AC1E2790A9"
@@ -1281,10 +1341,11 @@
 				}
 				type: "item"
 			}]
-			x: 22.5d
-			y: 12.5d
+			x: 21.0d
+			y: 10.0d
 		}
 		{
+			dependencies: ["54DA03D41AF36EF2"]
 			id: "2AECB0479C22A03C"
 			tasks: [{
 				id: "4CC10744F9CCCD2C"
@@ -1295,10 +1356,11 @@
 				}
 				type: "item"
 			}]
-			x: 22.5d
-			y: 9.5d
+			x: 21.0d
+			y: 8.0d
 		}
 		{
+			dependencies: ["54DA03D41AF36EF2"]
 			id: "36E33C8F077E714F"
 			tasks: [{
 				id: "2F61FA08947B3DB7"
@@ -1309,10 +1371,11 @@
 				}
 				type: "item"
 			}]
-			x: 22.5d
-			y: 6.5d
+			x: 21.0d
+			y: 6.0d
 		}
 		{
+			dependencies: ["46D5CAA2666803D4"]
 			id: "45904BC625C888C3"
 			tasks: [{
 				id: "7A35CD803FC6ADB7"
@@ -1323,10 +1386,11 @@
 				}
 				type: "item"
 			}]
-			x: 23.5d
-			y: 10.5d
+			x: 22.0d
+			y: 9.0d
 		}
 		{
+			dependencies: ["253AECE450920D99"]
 			id: "41D954CFB58267D6"
 			tasks: [{
 				id: "7B71D812CC927BFB"
@@ -1337,10 +1401,11 @@
 				}
 				type: "item"
 			}]
-			x: 23.5d
-			y: 7.5d
+			x: 22.0d
+			y: 7.0d
 		}
 		{
+			dependencies: ["4DE40B37D609B921"]
 			id: "09E6C0A58F3409B3"
 			tasks: [{
 				id: "0CB7992D2166CBD7"
@@ -1351,10 +1416,14 @@
 				}
 				type: "item"
 			}]
-			x: 23.5d
-			y: 13.5d
+			x: 22.0d
+			y: 11.0d
 		}
 		{
+			dependencies: [
+				"6B12DCDB8DE6A41B"
+				"179A15014A5716B5"
+			]
 			id: "54DA03D41AF36EF2"
 			tasks: [{
 				id: "5FD0E90CD3FCD47B"
@@ -1365,24 +1434,11 @@
 				}
 				type: "item"
 			}]
-			x: 21.0d
-			y: 9.5d
+			x: 19.5d
+			y: 8.0d
 		}
 		{
-			id: "3F97D7AD871CC206"
-			tasks: [{
-				id: "663E1B3691F5EB93"
-				item: {
-					Count: 1
-					id: "gtceu:utopian_akreyrium_bucket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 21.0d
-			y: 10.5d
-		}
-		{
+			dependencies: ["179A15014A5716B5"]
 			id: "6B12DCDB8DE6A41B"
 			tasks: [{
 				id: "634999ABF5C5FA90"
@@ -1393,24 +1449,11 @@
 				}
 				type: "item"
 			}]
-			x: 21.0d
-			y: 6.5d
+			x: 18.5d
+			y: 7.0d
 		}
 		{
-			id: "2912F7A47DD92C10"
-			tasks: [{
-				id: "75E39CDB4ABD942E"
-				item: {
-					Count: 1
-					id: "gtceu:gritty_akreyrium_bucket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 19.5d
-			y: 8.0d
-		}
-		{
+			dependencies: ["493DD013C818BB7B"]
 			id: "0C19C040CA121E3B"
 			tasks: [{
 				id: "4B7B86F718B4AA8D"
@@ -1421,10 +1464,14 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: -5.0d
+			x: 19.5d
+			y: 16.0d
 		}
 		{
+			dependencies: [
+				"4D4E3428BFB10838"
+				"1505DCF0ED1E24F5"
+			]
 			id: "560669210B8CABFC"
 			tasks: [{
 				id: "654804F2647758F0"
@@ -1435,10 +1482,14 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
-			y: -5.0d
+			x: 19.0d
+			y: 14.5d
 		}
 		{
+			dependencies: [
+				"01D169FDC848B8A1"
+				"41A2F623390AA45B"
+			]
 			id: "0491A3097C6BA6AE"
 			tasks: [{
 				id: "6D5455AD6C0BD3D3"
@@ -1449,10 +1500,11 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
-			y: -3.5d
+			x: 19.0d
+			y: 12.5d
 		}
 		{
+			dependencies: ["54EC42CB74C59F5F"]
 			id: "40A015DBF6603208"
 			tasks: [{
 				id: "0542E6E2D9136742"
@@ -1463,8 +1515,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
-			y: -2.0d
+			x: 19.5d
+			y: 11.0d
 		}
 		{
 			id: "54EC42CB74C59F5F"
@@ -1477,8 +1529,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.0d
-			y: -1.5d
+			x: 18.0d
+			y: 11.0d
 		}
 		{
 			id: "01D169FDC848B8A1"
@@ -1491,10 +1543,11 @@
 				}
 				type: "item"
 			}]
-			x: 13.0d
-			y: -4.0d
+			x: 17.5d
+			y: 12.0d
 		}
 		{
+			dependencies: ["1AAB9C20E833029A"]
 			id: "41A2F623390AA45B"
 			tasks: [{
 				id: "061C59F35BD58011"
@@ -1505,8 +1558,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.0d
-			y: -3.0d
+			x: 17.5d
+			y: 13.0d
 		}
 		{
 			id: "4D4E3428BFB10838"
@@ -1519,8 +1572,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.0d
-			y: -5.5d
+			x: 17.5d
+			y: 14.0d
 		}
 		{
 			id: "1505DCF0ED1E24F5"
@@ -1533,8 +1586,286 @@
 				}
 				type: "item"
 			}]
-			x: 14.0d
-			y: -5.5d
+			x: 17.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["7658E16BA79A7632"]
+			id: "34EA854FE36B7C69"
+			tasks: [{
+				id: "06CAA1F283CDB147"
+				item: {
+					Count: 1
+					id: "gtceu:steam_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 24.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7658E16BA79A7632"]
+			id: "1E41DAA8519BE87F"
+			tasks: [{
+				id: "53858FA4901F7454"
+				item: {
+					Count: 1
+					id: "gtceu:carbon_monoxide_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 24.0d
+			y: 2.5d
+		}
+		{
+			id: "7214D86C55033EAD"
+			tasks: [{
+				id: "77726D5EEEDC7244"
+				item: {
+					Count: 1
+					id: "gtceu:carbon_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 23.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7E99889B3427A842"]
+			id: "01AF9486EA6DA792"
+			rewards: [{
+				count: 3
+				id: "3FBC7DAE19CA88DA"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "42358BDACFD9DDF1"
+				item: {
+					Count: 1
+					id: "gtceu:sterilized_growth_medium_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"090275078106B752"
+				"18ED2B1F051E0868"
+				"1F416C7A641914EC"
+			]
+			id: "32AC51387EAD9D2D"
+			tasks: [{
+				id: "156334AD646E6C4B"
+				item: {
+					Count: 1
+					id: "gtceu:raw_naquadah"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["721A2D614DBBAECC"]
+			hide_dependency_lines: true
+			id: "18ED2B1F051E0868"
+			tasks: [{
+				id: "0AE8566B0B613CAF"
+				item: {
+					Count: 1
+					id: "gtceu:pcb_coolant_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["32AC51387EAD9D2D"]
+			id: "5914A54BD611637C"
+			tasks: [{
+				id: "7C9971D1AC9A45C8"
+				item: {
+					Count: 1
+					id: "gtceu:hot_pcb_coolant_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1C9EB97C0D3C475B"
+				"144338235815C08C"
+				"1C81273869C0EC9F"
+			]
+			id: "2F87FC1D5BB43220"
+			rewards: [{
+				count: 3
+				id: "142ABBE1525B620F"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7BE3C5BE8FA92239"
+				item: {
+					Count: 1
+					id: "minecraft:echo_shard"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["3722C0427C9AF100"]
+			id: "1C9EB97C0D3C475B"
+			tasks: [{
+				id: "16A7A91B016563C6"
+				item: {
+					Count: 1
+					id: "gtceu:exquisite_purified_naquadah_gem"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["5728078931762D8E"]
+			id: "3722C0427C9AF100"
+			tasks: [{
+				id: "32D58BAEFF6BE603"
+				item: {
+					Count: 1
+					id: "gtceu:purified_naquadah_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"74476363CA71A782"
+				"50C1449ADC8D4063"
+				"60ECE277341A9408"
+			]
+			id: "5728078931762D8E"
+			tasks: [{
+				id: "182F82F91811C0C1"
+				item: {
+					Count: 1
+					id: "gtceu:tiny_purified_naquadah_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["050206AAE7043982"]
+			hide_dependency_lines: true
+			id: "74476363CA71A782"
+			tasks: [{
+				id: "1F90AAA9B2DF5E5E"
+				item: {
+					Count: 1
+					id: "gtceu:tiny_naquadah_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"23A6938803281145"
+				"39FF89B370D09B88"
+			]
+			id: "50C1449ADC8D4063"
+			tasks: [{
+				id: "2BF78212CFDEB3CC"
+				item: {
+					Count: 1
+					id: "gtceu:neon_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["4BCC078B76C6CAE3"]
+			id: "144338235815C08C"
+			tasks: [{
+				id: "39AC0ACAB8458741"
+				item: {
+					Count: 1
+					id: "gtceu:nether_star_lens"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["493DD013C818BB7B"]
+			id: "151A1B51DFE41040"
+			optional: true
+			tasks: [
+				{
+					id: "16809B99D5DE81C5"
+					item: {
+						Count: 1
+						id: "gtceu:abydos_titanite_rich_magma_bucket"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0F4BAAC6700389B5"
+					item: {
+						Count: 1
+						id: "gtceu:abydos_zapolite_rich_magma_bucket"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Abydos Magmas"
+			x: 13.5d
+			y: 1.5d
 		}
 	]
 	title: "Processing Lines (Chap 4,5,6)"
