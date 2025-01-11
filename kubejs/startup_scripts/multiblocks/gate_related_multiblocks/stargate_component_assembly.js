@@ -50,6 +50,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks(GTBlocks.FUSION_COIL.get()))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer("kubejs:block/casings/casing-prismalium",
+        .workableCasingRenderer("kubejs:block/casings/superconductors/casing-prismalium",
             "gtceu:block/multiblock/implosion_compressor", false);
 });
