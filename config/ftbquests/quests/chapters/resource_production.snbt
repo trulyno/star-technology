@@ -3,10 +3,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "resource_production"
-	group: ""
+	group: "03EF8417F6D21A2E"
 	icon: "minecraft:cobblestone"
 	id: "312B5D7DC7779EFE"
-	order_index: 5
+	order_index: 0
 	progression_mode: "flexible"
 	quest_links: [
 		{
@@ -630,8 +630,8 @@
 				item: "gtceu:crushed_tungstate_ore"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 3.0d
+			x: 7.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -641,8 +641,8 @@
 				item: "gtceu:crushed_cooperite_ore"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 3.0d
+			x: 8.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -657,17 +657,6 @@
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
-			id: "39F8E15F7C4376FB"
-			tasks: [{
-				id: "32AC168F7B220774"
-				item: "gtceu:crushed_scheelite_ore"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["05FB44E437E88BE7"]
 			id: "72C473F289A5CBA4"
 			tasks: [{
 				id: "6F19CF946EAA0685"
@@ -675,7 +664,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -685,7 +674,7 @@
 				item: "gtceu:crushed_bauxite_ore"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: 2.5d
 		}
 		{

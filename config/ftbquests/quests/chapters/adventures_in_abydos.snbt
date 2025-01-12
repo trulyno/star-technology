@@ -7,11 +7,39 @@
 	id: "459D60183D34C29E"
 	order_index: 5
 	progression_mode: "linear"
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "727DEC5336F4793D"
+			linked_quest: "37E3EF96EDE85C86"
+			x: -9.5d
+			y: -8.0d
+		}
+		{
+			id: "4BF64259E2567FD6"
+			linked_quest: "0C19C040CA121E3B"
+			x: -7.5d
+			y: -8.0d
+		}
+		{
+			id: "723E27B22576F175"
+			linked_quest: "1BE69DB2DFDC35C8"
+			x: -9.5d
+			y: -6.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["1FB502D770A4A59B"]
 			id: "493DD013C818BB7B"
+			rewards: [{
+				id: "10AE2BAE3BCD94E8"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			size: 1.5d
 			subtitle: "One step closer to home..."
 			tasks: [{
@@ -25,11 +53,19 @@
 		{
 			dependencies: [
 				"512757BEBFD1F584"
-				"5494ECE711E7051E"
 				"6110BA7B3E84F06F"
 				"73D0DC357821B395"
 			]
 			id: "4DD3C38FCD8D704D"
+			rewards: [{
+				id: "0FA7D7BA54BC6792"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "48142FD089D95D9C"
 				item: "kubejs:uhv_computational_matrix"
@@ -45,6 +81,15 @@
 				"73D0DC357821B395"
 			]
 			id: "06F8BF8FB54B3BEE"
+			rewards: [{
+				id: "6F4F9E0DD0FF5BD4"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "3ED3B6A0B7CAFCED"
 				item: "kubejs:uhv_transmission_assembly"
@@ -60,6 +105,15 @@
 				"73D0DC357821B395"
 			]
 			id: "0A321FE2FB18EA8B"
+			rewards: [{
+				id: "3F1880871D2A1F70"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "33532049510E7C12"
 				item: "kubejs:uhv_precision_drive_mechanism"
@@ -71,10 +125,18 @@
 		{
 			dependencies: [
 				"6110BA7B3E84F06F"
-				"1A04D10394CDCEFC"
 				"73D0DC357821B395"
 			]
 			id: "05EEBCD256194C78"
+			rewards: [{
+				id: "15E0AA677E224833"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5F95B990BC3D4EF8"
 				item: "kubejs:uhv_microfluidic_flow_valve"
@@ -91,6 +153,15 @@
 				"73D0DC357821B395"
 			]
 			id: "6D7188F8CA92DAAF"
+			rewards: [{
+				id: "0F419A2561844A0E"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4842A0A654FA99F9"
 				item: "kubejs:uhv_super_magnetic_core"
@@ -105,6 +176,15 @@
 				"73D0DC357821B395"
 			]
 			id: "77E6700262CDB4E0"
+			rewards: [{
+				id: "577AB092403F0B3D"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "3C8D975B58958CB9"
 				item: "kubejs:uhv_catalyst_core"
@@ -120,6 +200,15 @@
 				"73D0DC357821B395"
 			]
 			id: "433B94A266536D86"
+			rewards: [{
+				id: "2C0891BA24962E56"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "580EEF4B96514577"
 				item: "kubejs:uhv_high_strength_panel"
@@ -136,6 +225,15 @@
 				"73D0DC357821B395"
 			]
 			id: "7BBEB3C2DADBAD8B"
+			rewards: [{
+				id: "43BD55C54E2A6076"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "14EB9445EFF715A5"
 				item: "kubejs:uhv_micropower_router"
@@ -145,19 +243,17 @@
 			y: -10.5d
 		}
 		{
-			dependencies: ["493DD013C818BB7B"]
-			id: "556CEA4BA5CC9D73"
-			tasks: [{
-				id: "2188D8E5C06FFBB9"
-				item: "gtceu:zapolgium_ingot"
+			dependencies: ["37E3EF96EDE85C86"]
+			id: "6110BA7B3E84F06F"
+			rewards: [{
+				id: "61B75FB189A66E73"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
-			x: -9.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["556CEA4BA5CC9D73"]
-			id: "6110BA7B3E84F06F"
 			tasks: [{
 				id: "4D621680E36499BB"
 				item: "gtceu:zalloy_ingot"
@@ -168,18 +264,16 @@
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
-			id: "3B7538869EC02E77"
-			tasks: [{
-				id: "2B2F0940A7669445"
-				item: "gtceu:zirconium_dust"
+			id: "6A21CA0E47D6FA6F"
+			rewards: [{
+				id: "29BC3C059823221C"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
-			x: -9.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["493DD013C818BB7B"]
-			id: "6A21CA0E47D6FA6F"
 			tasks: [{
 				id: "41E3026A1176D949"
 				item: "gtceu:selenium_dust"
@@ -189,20 +283,18 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["493DD013C818BB7B"]
-			id: "702E5088171E1255"
-			tasks: [{
-				id: "52B54BCF5E80B771"
-				item: "gtceu:tellurium_dust"
-				type: "item"
-			}]
-			x: -7.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["3B7538869EC02E77"]
+			dependencies: ["1BE69DB2DFDC35C8"]
 			hide_dependent_lines: true
 			id: "0254109773A2D93C"
+			rewards: [{
+				id: "399D7E65927EE9EC"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "21035C272117A4E9"
 				item: "gtceu:zircalloy_4_ingot"
@@ -219,6 +311,15 @@
 				"7BBEB3C2DADBAD8B"
 			]
 			id: "7250D18797615B16"
+			rewards: [{
+				id: "67403C17939EDD01"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "1CF72292DC78F86E"
 				item: "gtceu:uhv_electric_motor"
@@ -230,6 +331,15 @@
 		{
 			dependencies: ["05EEBCD256194C78"]
 			id: "78777C3EE2DA5D0F"
+			rewards: [{
+				id: "2C20A0EE0D59D513"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7BF2B97D2F99B5D3"
 				item: "gtceu:uhv_electric_pump"
@@ -241,6 +351,15 @@
 		{
 			dependencies: ["0A321FE2FB18EA8B"]
 			id: "7FFEBA9D0BA28CF0"
+			rewards: [{
+				id: "511E3C9F19B93243"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "65D8A7C059A656F0"
 				item: "gtceu:uhv_conveyor_module"
@@ -252,6 +371,15 @@
 		{
 			dependencies: ["0A321FE2FB18EA8B"]
 			id: "64EA75A8EC94CEEF"
+			rewards: [{
+				id: "7D02D70618DA256F"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "335F697381C5F5BC"
 				item: "gtceu:uhv_electric_piston"
@@ -266,6 +394,15 @@
 				"64EA75A8EC94CEEF"
 			]
 			id: "4487EDBDEEA92303"
+			rewards: [{
+				id: "0DD3A87454B89D7D"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4CB7A06102978E3A"
 				item: "gtceu:uhv_robot_arm"
@@ -281,6 +418,15 @@
 			]
 			hide_dependent_lines: true
 			id: "3212A3351DAD4492"
+			rewards: [{
+				id: "362A5565FFD8E89D"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "769BEF16C47F1FCA"
 				item: "gtceu:uhv_field_generator"
@@ -292,6 +438,15 @@
 		{
 			dependencies: ["77E6700262CDB4E0"]
 			id: "5F65FECD29B8A341"
+			rewards: [{
+				id: "0565A0A0BFCECF56"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "6D98FFF31BCA6859"
 				item: "gtceu:uhv_emitter"
@@ -303,6 +458,15 @@
 		{
 			dependencies: ["77E6700262CDB4E0"]
 			id: "2D064F759D13FE4B"
+			rewards: [{
+				id: "676FF576AA972E2D"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "60409CEBBF3D4B08"
 				item: "gtceu:uhv_sensor"
@@ -318,6 +482,15 @@
 			]
 			hide_dependent_lines: true
 			id: "3A52F8061046CB05"
+			rewards: [{
+				id: "2F92790DB15B5596"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5333CB0CB7DA8B27"
 				item: "gtceu:iron_selenide_over_strontium_titanium_oxide_ingot"
@@ -329,6 +502,15 @@
 		{
 			dependencies: ["493DD013C818BB7B"]
 			id: "14F1B40FACDDE02C"
+			rewards: [{
+				id: "7F4F27A1BE0CC9B6"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "335BFB2F8F708709"
 				item: "gtceu:strontium_dust"
@@ -339,11 +521,20 @@
 		}
 		{
 			dependencies: [
-				"3B7538869EC02E77"
 				"6A21CA0E47D6FA6F"
+				"1BE69DB2DFDC35C8"
 			]
 			hide_dependent_lines: true
 			id: "512757BEBFD1F584"
+			rewards: [{
+				id: "154DCB5EAB9436A1"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "1307F84E9F43FCDC"
 				item: "gtceu:zirconium_selenide_diiodide_ingot"
@@ -353,8 +544,18 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["394C8E3A93E7CD15"]
+			dependencies: ["179A15014A5716B5"]
 			id: "1A8F645AC1B30411"
+			rewards: [{
+				count: 2
+				id: "38FD7FEB9F6C65C7"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -368,6 +569,15 @@
 		{
 			dependencies: ["1A8F645AC1B30411"]
 			id: "5368269646BC0F27"
+			rewards: [{
+				id: "3E1E31EFB499CF8F"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "0976980757BCCA1A"
 				item: "gtceu:folding_akreyrium_stabiliser"
@@ -383,6 +593,15 @@
 			]
 			id: "7F203254ACDF8C88"
 			optional: true
+			rewards: [{
+				id: "47DA1B2270F7BF54"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "689F437391CF6FF1"
@@ -400,8 +619,21 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5368269646BC0F27"]
+			dependencies: [
+				"5368269646BC0F27"
+				"54DA03D41AF36EF2"
+			]
 			id: "07AD6651D0B40E22"
+			rewards: [{
+				count: 2
+				id: "467B4390B3548719"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -415,6 +647,15 @@
 		{
 			dependencies: ["305974D431F17AF0"]
 			id: "6356F875511B2610"
+			rewards: [{
+				id: "6115048882C1189D"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "42579027C8356E2E"
 				item: {
@@ -430,6 +671,15 @@
 		{
 			dependencies: ["305974D431F17AF0"]
 			id: "47DF7968E9B98C65"
+			rewards: [{
+				id: "217E675CB4B89D49"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5705C4E3BE1D26CE"
 				item: {
@@ -445,6 +695,16 @@
 		{
 			dependencies: ["6F05FAE3F5AAC357"]
 			id: "7F72F9E28713D965"
+			rewards: [{
+				count: 2
+				id: "3870418467E509D5"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -462,6 +722,15 @@
 		{
 			dependencies: ["493DD013C818BB7B"]
 			id: "3479CEBD73550718"
+			rewards: [{
+				id: "7FC500BE090ABC2E"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				icon: "sgjourney:golden_idol"
 				id: "53D64E8D434ECA9C"
@@ -476,6 +745,15 @@
 			dependencies: ["3479CEBD73550718"]
 			description: [""]
 			id: "6F05FAE3F5AAC357"
+			rewards: [{
+				id: "1C5C5256EB429800"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "784D51942B0F18A9"
 				item: {
@@ -492,6 +770,15 @@
 		{
 			dependencies: ["7F72F9E28713D965"]
 			id: "305974D431F17AF0"
+			rewards: [{
+				id: "0707F4889D91098E"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "0AF4E3E277B5B04F"
 				item: {
@@ -619,6 +906,15 @@
 		{
 			dependencies: ["3479CEBD73550718"]
 			id: "5744150A5658FE4D"
+			rewards: [{
+				id: "615C650D39461500"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4A3AF474374EF0A2"
@@ -658,6 +954,15 @@
 		{
 			dependencies: ["5744150A5658FE4D"]
 			id: "146F88E5C1119649"
+			rewards: [{
+				id: "2DDF7ACB3920B1DA"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "70D8D8D888FABD9D"
 				item: "kubejs:runic_tablet_complete"
@@ -668,10 +973,19 @@
 		}
 		{
 			dependencies: [
-				"3B7538869EC02E77"
 				"4D04123F036F181E"
+				"1BE69DB2DFDC35C8"
 			]
 			id: "30C974448C57F0EC"
+			rewards: [{
+				id: "470268845820F4F7"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5DC3B85B63641F6C"
 				item: "gtceu:ancient_runicalium_ingot"
@@ -683,6 +997,15 @@
 		{
 			dependencies: ["30C974448C57F0EC"]
 			id: "1C0B16612DBBE8CA"
+			rewards: [{
+				id: "7EE50E0E44FBAE00"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "52FE0BCD12334F7B"
 				item: "gtceu:ancient_runicalium_single_wire"
@@ -694,12 +1017,26 @@
 		{
 			dependencies: ["7AC55BA8BDD0F3D2"]
 			id: "6C8C6EA426060065"
+			rewards: [{
+				count: 2
+				id: "640F8E7170910B63"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
-				id: "1F0BE2781B9369C9"
-				title: "Dense Fusion Reactor Computer MK 1"
-				type: "checkmark"
+				id: "70C8CC3BD58DC9B4"
+				item: {
+					Count: 1
+					id: "start_core:uhv_auxiliary_boosted_fusion_reactor"
+					tag: { }
+				}
+				type: "item"
 			}]
 			x: -5.5d
 			y: 0.0d
@@ -707,6 +1044,15 @@
 		{
 			dependencies: ["7AC55BA8BDD0F3D2"]
 			id: "2659B3AA9108BC43"
+			rewards: [{
+				id: "518D145AEA79CC76"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "617EA9C6D6E47F34"
 				title: "Exotic Gas Absorber"
@@ -718,6 +1064,16 @@
 		{
 			dependencies: ["3540AE6C940F985B"]
 			id: "34585406B4A18F41"
+			rewards: [{
+				count: 2
+				id: "1C0AFBE97931A87B"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -734,6 +1090,15 @@
 				"5DADD2204991B4D5"
 			]
 			id: "6F9793149DE81FCC"
+			rewards: [{
+				id: "5A3140CEAF2772E4"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.25d
 			tasks: [{
@@ -751,6 +1116,15 @@
 		{
 			dependencies: ["5FCA8ED151CEB5C1"]
 			id: "5DADD2204991B4D5"
+			rewards: [{
+				id: "0C6EE8224B97BBA5"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.25d
 			tasks: [{
@@ -771,6 +1145,15 @@
 				"425A865B6B617DEC"
 			]
 			id: "63E36421AE07BC42"
+			rewards: [{
+				id: "1E1781F6129AF097"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.25d
 			tasks: [{
@@ -788,6 +1171,16 @@
 		{
 			dependencies: ["442233119AED645F"]
 			id: "425A865B6B617DEC"
+			rewards: [{
+				count: 2
+				id: "4A5649EAD0E41902"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -801,6 +1194,16 @@
 		{
 			dependencies: ["379D69A44FC5B2F2"]
 			id: "64F0BB858EEB7913"
+			rewards: [{
+				count: 2
+				id: "0F9D9216884B4932"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -840,6 +1243,15 @@
 				"5FAD11260BC2F305"
 			]
 			id: "3540AE6C940F985B"
+			rewards: [{
+				id: "4C923D283D3BE0EA"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "0E4B5B5BF5EECD4B"
 				item: "kubejs:draconic_coordinate_core"
@@ -851,6 +1263,15 @@
 		{
 			dependencies: ["07AD6651D0B40E22"]
 			id: "29DAE5F27A1D4115"
+			rewards: [{
+				id: "361187FB10BF0C39"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "0206ED855F36FB35"
 				item: "kubejs:nether_coordinate_crystal"
@@ -862,6 +1283,15 @@
 		{
 			dependencies: ["07AD6651D0B40E22"]
 			id: "14479FB9FCF478D6"
+			rewards: [{
+				id: "2EFAEEDC5007A402"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "408286D9422233DD"
 				item: "kubejs:end_coordinate_crystal"
@@ -906,6 +1336,15 @@
 				}
 			}
 			id: "5E7153B7A10FC241"
+			rewards: [{
+				id: "2D4B9720F64C104A"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [
@@ -991,6 +1430,15 @@
 			dependencies: ["5E7153B7A10FC241"]
 			icon: "minecraft:end_stone"
 			id: "4238E903C674B284"
+			rewards: [{
+				id: "6BE5069F47361652"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.0d
 			tasks: [{
@@ -1007,6 +1455,15 @@
 			dependencies: ["5E7153B7A10FC241"]
 			icon: "minecraft:netherrack"
 			id: "1E3EF64C0A4EE438"
+			rewards: [{
+				id: "5440DF6C322F753F"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.0d
 			tasks: [{
@@ -1049,6 +1506,15 @@
 				"43DAD4B63603BFC3"
 			]
 			id: "5FAD11260BC2F305"
+			rewards: [{
+				id: "0433F422BDFFAF25"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "077F32166B95DD14"
 				item: "kubejs:void_core"
@@ -1063,6 +1529,15 @@
 				"43DAD4B63603BFC3"
 			]
 			id: "21188AF95E6D5030"
+			rewards: [{
+				id: "4AE809F68AD3D5B3"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "024660B3FC3054CA"
 				item: "kubejs:hell_core"
@@ -1074,6 +1549,15 @@
 		{
 			dependencies: ["1C9396E2587051F7"]
 			id: "43DAD4B63603BFC3"
+			rewards: [{
+				id: "2D07335EE60C7099"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5A91EE93457C617E"
 				item: {
@@ -1087,34 +1571,53 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4DB732AEAC3C9DC7"]
-			id: "1C9396E2587051F7"
-			tasks: [{
-				id: "3DA83C02A0B67056"
-				item: "kubejs:draconic_wetware_printed_circuit_board"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 2.0d
-		}
-		{
 			dependencies: [
 				"78777C3EE2DA5D0F"
 				"2D064F759D13FE4B"
 			]
 			hide_dependency_lines: true
-			id: "4DB732AEAC3C9DC7"
-			tasks: [{
-				id: "0490D46CB26303DA"
-				item: "kubejs:draconic_wetware_circuit_board"
+			id: "1C9396E2587051F7"
+			rewards: [{
+				id: "170A7AD04A8BFCA6"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
-			x: -1.5d
+			tasks: [
+				{
+					id: "3DA83C02A0B67056"
+					item: "kubejs:draconic_wetware_printed_circuit_board"
+					type: "item"
+				}
+				{
+					id: "149D5BC68EC06EBB"
+					item: {
+						Count: 1
+						id: "kubejs:draconic_wetware_circuit_board"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 0.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6110BA7B3E84F06F"]
 			id: "4D04123F036F181E"
+			rewards: [{
+				count: 2
+				id: "4A07C2A5CDF57C6D"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -1126,12 +1629,18 @@
 			y: -6.0d
 		}
 		{
-			dependencies: [
-				"702E5088171E1255"
-				"5BA69EDC3C223B2C"
-			]
+			dependencies: ["5BA69EDC3C223B2C"]
 			hide_dependency_lines: true
 			id: "7AC55BA8BDD0F3D2"
+			rewards: [{
+				id: "7B8476986ACF57ED"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "132E31B87F79A4F1"
@@ -1151,6 +1660,15 @@
 		{
 			dependencies: ["2C354B0735DF8023"]
 			id: "379D69A44FC5B2F2"
+			rewards: [{
+				id: "06D88EE9C7DC14A5"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "5F62120223B12B16"
@@ -1178,6 +1696,15 @@
 				"3C3E585C933C9515"
 			]
 			id: "5FCA8ED151CEB5C1"
+			rewards: [{
+				id: "7FDA3D0E34F6806E"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1FC1EE9908D72AED"
@@ -1201,6 +1728,16 @@
 		{
 			dependencies: ["146F88E5C1119649"]
 			id: "2C354B0735DF8023"
+			rewards: [{
+				count: 2
+				id: "36EA64F5267C4268"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -1218,6 +1755,15 @@
 		{
 			dependencies: ["6D169C5E35C9EF6C"]
 			id: "3C3E585C933C9515"
+			rewards: [{
+				id: "187EF22FCDECD230"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "587AE8F4904807C2"
@@ -1246,6 +1792,15 @@
 			]
 			hide_dependency_lines: false
 			id: "442233119AED645F"
+			rewards: [{
+				id: "27614436816AD1DF"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "3E57E2BE937E26CD"
 				item: {
@@ -1260,9 +1815,18 @@
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
-			id: "394C8E3A93E7CD15"
+			id: "179A15014A5716B5"
+			rewards: [{
+				id: "51E73ECB550953E2"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
-				id: "31CCF2A980099EB5"
+				id: "5EF95BB050993214"
 				item: {
 					Count: 1
 					id: "gtceu:gritty_akreyrium_bucket"

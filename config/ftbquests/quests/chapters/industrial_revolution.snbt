@@ -1,5 +1,5 @@
 {
-	autofocus_id: "4B51B15B49620F57"
+	autofocus_id: "0A0DC5148CC45DCB"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "industrial_revolution"
@@ -8,12 +8,22 @@
 	id: "05330DA4070C75C9"
 	order_index: 1
 	progression_mode: "linear"
-	quest_links: [{
-		id: "6C0C5B78AF1106A2"
-		linked_quest: "38B3A7FC309E12E2"
-		x: -11.5d
-		y: -4.5d
-	}]
+	quest_links: [
+		{
+			id: "6C0C5B78AF1106A2"
+			linked_quest: "38B3A7FC309E12E2"
+			x: -11.5d
+			y: -4.5d
+		}
+		{
+			id: "46DF7D3C17E47774"
+			linked_quest: "73931EAA3EC5C9A9"
+			shape: "gear"
+			size: 1.5d
+			x: 11.5d
+			y: 7.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["523F20DC5FA04229"]
@@ -116,7 +126,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "7DB1C06536CCB7BD"
+				id: "71F5C57FAE51BD35"
 				item: {
 					Count: 1
 					id: "gtceu:electric_ore_factory"
@@ -480,6 +490,7 @@
 		{
 			dependencies: ["10F2237FF0C87F62"]
 			description: ["Uses Oxygen to operate, and is able to recycle machines in their base resources."]
+			hide_dependent_lines: true
 			id: "76B701A5EF4C1EF1"
 			rewards: [{
 				id: "3CF14AD07DB1686B"
@@ -894,11 +905,22 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "1A82678F9E5DC31B"
-				item: "gtceu:phenolic_printed_circuit_board"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1A82678F9E5DC31B"
+					item: "gtceu:phenolic_printed_circuit_board"
+					type: "item"
+				}
+				{
+					id: "55228777D2824816"
+					item: {
+						Count: 1
+						id: "gtceu:phenolic_circuit_board"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			x: 4.0d
 			y: 11.5d
 		}
@@ -1017,7 +1039,7 @@
 				item: "gtceu:good_integrated_circuit"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 10.0d
 			y: 8.5d
 		}
 		{
@@ -1354,7 +1376,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6896F9AF41EE8571"]
@@ -1410,14 +1432,18 @@
 			]
 			title: "Inscriber Presses"
 			x: 10.5d
-			y: 1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
 				"4CCB2727C13AEBDD"
 				"4ED724D5B94CFA3A"
 			]
-			description: ["You are gonna need a lot of these."]
+			description: [
+				"You are gonna need a lot of these."
+				""
+				"PS: The Multi-Smelter on the next page is an AMAZING way to do these fast/in bulk."
+			]
 			id: "16A71D038D996289"
 			rewards: [{
 				count: 2
@@ -1451,7 +1477,7 @@
 			]
 			title: "Printed Circuits"
 			x: 9.5d
-			y: 0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -1723,6 +1749,15 @@
 				"6D23752791E9928A"
 			]
 			id: "5F80268C02FAD5F6"
+			rewards: [{
+				id: "170D10B336CA9B51"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "73169856CA4F6131"
 				item: "gtceu:rock_filtrator"
@@ -1734,6 +1769,15 @@
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
 			id: "30B2688F8387048F"
+			rewards: [{
+				id: "4B6770AF03D1B85C"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "3576D69241679C72"
 				item: "gtceu:void_miner"
@@ -1745,6 +1789,15 @@
 		{
 			dependencies: ["7CA424E05FB05DFF"]
 			id: "4597B95C2F5EE106"
+			rewards: [{
+				id: "663D16B1BCB3CB2C"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "18AA89358DEB2724"
 				item: "gtceu:rare_sludge_dust"
@@ -1756,6 +1809,15 @@
 		{
 			dependencies: ["7CA424E05FB05DFF"]
 			id: "12DA5E8FA3E11AC0"
+			rewards: [{
+				id: "1D01CDEB4254326A"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "03E9166C29EFFE49"
 				item: "gtceu:vanadium_magnetite_sludge_dust"
@@ -1790,6 +1852,109 @@
 			}]
 			x: -0.5d
 			y: 6.5d
+		}
+		{
+			id: "0A0DC5148CC45DCB"
+			invisible: true
+			tasks: [{
+				id: "10740F5D76540FB7"
+				title: "positioner"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"16A71D038D996289"
+				"0A98FE21C12F1199"
+			]
+			id: "352E17B4D7719638"
+			tasks: [{
+				id: "724697297E01E6F0"
+				title: "Go Check out the Applied Energistic Questbook"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["76B701A5EF4C1EF1"]
+			description: ["Oxidised copper is used for a number of recipes in wire and bolt form."]
+			id: "47B9F8BF9E02391C"
+			rewards: [{
+				id: "75460ACFE7D43950"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "4B35945CF5182F0C"
+				item: "gtceu:annealed_copper_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"7EC83EEF3F7A89B8"
+				"4ED724D5B94CFA3A"
+				"261174370DC87FCB"
+			]
+			id: "724BAC3F48CE91AA"
+			tasks: [{
+				id: "799B98C337C4EE49"
+				item: {
+					Count: 1
+					id: "gtceu:transistor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"0DEEBB486450E74E"
+				"491C4CECC6C24DDF"
+			]
+			icon: "gtceu:ram_chip"
+			id: "45591A05A0A61821"
+			rewards: [{
+				id: "021348F6717A5BE0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [
+				{
+					id: "723F03B93DFFA290"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:lenses/green"
+						}
+					}
+					title: "Any Green Lenses"
+					type: "item"
+				}
+				{
+					id: "0244C45E0905E9B9"
+					item: "gtceu:ram_wafer"
+					type: "item"
+				}
+				{
+					id: "627D3E333A496D84"
+					item: "gtceu:ram_chip"
+					type: "item"
+				}
+			]
+			title: "RAM Chips"
+			x: 6.5d
+			y: 7.5d
 		}
 	]
 	title: "Industrial Revolution"

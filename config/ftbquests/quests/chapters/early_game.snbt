@@ -213,8 +213,8 @@
 		}
 		{
 			dependencies: [
-				"3AC92138809F3783"
 				"6C7DB3F0C3B85B9B"
+				"7E72B9CC8631769D"
 			]
 			description: ["The materials you can aquire from blackstone usually is directly used in progress. Might be a good idea to look for the best way for you to automate this."]
 			id: "550A27AA2B500111"
@@ -224,12 +224,6 @@
 				type: "item"
 			}]
 			tasks: [
-				{
-					count: 4L
-					id: "059DCAFCCFDED10B"
-					item: { Count: 4, id: "exnihilosequentia:blackstone_pebble" }
-					type: "item"
-				}
 				{
 					id: "11FF2849395DF9D5"
 					item: "minecraft:blackstone"
@@ -783,7 +777,11 @@
 		}
 		{
 			dependencies: ["03ACC7D2577A2C66"]
-			description: ["Take a barrel of water and add some dust, you get a block of clay. How neat is that."]
+			description: [
+				"Take a barrel of water and add some dust, you get a block of clay. How neat is that."
+				""
+				"Make sure to select the right machine type by clicking the arm on the right and changing what you want the barrel to do."
+			]
 			icon: "gtceu:ulv_barrel"
 			id: "2D1184752D7ACA66"
 			rewards: [{
@@ -1861,7 +1859,7 @@
 		}
 		{
 			dependencies: ["29F1EAF3E87A50F5"]
-			description: ["By putting a bucket of lava ontop of a stone barrel filled with water you can create a single cobblestone. By pumping water into the barrel as quick as you can, you can make lots of cobblestone in a very short time in a compact manner."]
+			description: ["By putting a bucket of lava inside and then pumping water the \"Stone Barrel\" is able to produce you as much cobble as your heart desires (make sure you use the correct circuit which you can select in the bottom right of the machines interface)."]
 			id: "0742EF8F43044102"
 			rewards: [{
 				count: 2
@@ -1940,8 +1938,6 @@
 				"- Mechanics: A small chapter explaining some GregTech mechanics"
 				"- Processing Lines: This is a chapter explaining complicated processing lines"
 				"- Line of Progression: This chapter shows you all multiblocks and tiered items"
-				""
-				"A Special Thanks to KillLaAqua for redesigning the node structure of this chapter."
 			]
 			id: "16A9D8E864A18B9E"
 			shape: "diamond"
@@ -2008,6 +2004,7 @@
 		}
 		{
 			dependencies: ["7EE1BE4043827F35"]
+			description: ["Get this here using lava in a barrel, you can make it better once you get an arc furnace."]
 			id: "6D23752791E9928A"
 			tasks: [{
 				id: "0C4660A1923ED365"
@@ -2019,6 +2016,7 @@
 		}
 		{
 			dependencies: ["2D1184752D7ACA66"]
+			description: ["The heart of Primative Machines"]
 			id: "64E79272B5003119"
 			tasks: [{
 				id: "16F78BE1CAEEA2A5"

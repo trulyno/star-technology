@@ -12,10 +12,10 @@
 	quests: [
 		{
 			dependencies: [
-				"610F82CD4219EA33"
-				"5A5B3008DBE79D69"
-				"33EAC0B36C9AE671"
 				"23D3BED4F1968AD6"
+				"47B9F8BF9E02391C"
+				"724BAC3F48CE91AA"
+				"45591A05A0A61821"
 			]
 			id: "73931EAA3EC5C9A9"
 			rewards: [{
@@ -25,92 +25,15 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			subtitle: "First HV circuit"
 			tasks: [{
 				id: "3A642B129CDFDF9D"
 				item: "gtceu:advanced_integrated_circuit"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -0.5d
-		}
-		{
-			dependencies: [
-				"0DEEBB486450E74E"
-				"491C4CECC6C24DDF"
-			]
-			icon: "gtceu:ram_chip"
-			id: "610F82CD4219EA33"
-			rewards: [{
-				id: "7C819A6EBDC64873"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "23CB8943BB00D3CE"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:lenses/green"
-						}
-					}
-					title: "Any Green Lenses"
-					type: "item"
-				}
-				{
-					id: "6A3064B0A6DF734E"
-					item: "gtceu:ram_wafer"
-					type: "item"
-				}
-				{
-					id: "72F06BA2200B68AB"
-					item: "gtceu:ram_chip"
-					type: "item"
-				}
-			]
-			title: "RAM Chips"
-			x: 0.5d
-			y: -1.5d
-		}
-		{
-			dependencies: [
-				"261174370DC87FCB"
-				"7EC83EEF3F7A89B8"
-			]
-			description: ["The final component needed for circuits, you will be able to upgrade these however."]
-			id: "5A5B3008DBE79D69"
-			rewards: [{
-				id: "775091B04625733B"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "11207DC62461D6E1"
-				item: "gtceu:transistor"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["76B701A5EF4C1EF1"]
-			description: ["Oxidised copper is used for a number of recipes in wire and bolt form."]
-			id: "33EAC0B36C9AE671"
-			rewards: [{
-				id: "06597DE77AAF151D"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "166425005C92E0CA"
-				item: "gtceu:annealed_copper_ingot"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -1.5d
+			x: -3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -125,13 +48,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "71AF286F6CD44B51"
 				item: "gtceu:hv_4a_energy_converter"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -0.5d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3F49250E7CE2E282"]
@@ -142,13 +66,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "1DBC9A51999131B1"
 				item: "gtceu:lumium_single_wire"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -2.5d
+			x: -3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -162,13 +87,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "4554283A64CAC1E3"
 				item: "gtceu:lumium_ingot"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -2.5d
+			x: -5.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -181,13 +107,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "07B955A8525595AE"
 				item: "gtceu:hv_machine_hull"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -0.5d
+			x: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
@@ -197,13 +124,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "66B81E7AFD836D1A"
 				item: "gtceu:mv_circuit_assembler"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 2.5d
+			x: -3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
@@ -218,13 +146,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "017B5D18BA10FDF9"
 				item: "gtceu:multi_smelter"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.0d
+			x: -5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["088FE0CF9D07F9C6"]
@@ -235,13 +164,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			subtitle: "Third and last MV circuit"
 			tasks: [{
 				id: "0637F58BAD80A44A"
 				item: "gtceu:micro_processor"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -1.5d
 			y: 5.5d
 		}
 		{
@@ -257,13 +187,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			subtitle: "Third and last LV circuit"
 			tasks: [{
 				id: "11003EED75374430"
 				item: "gtceu:microchip_processor"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -3.5d
 			y: 5.5d
 		}
 		{
@@ -274,13 +205,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			subtitle: "Second HV circuit"
 			tasks: [{
 				id: "2E2AE862474C9506"
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 0.5d
 			y: 5.5d
 		}
 		{
@@ -304,7 +236,7 @@
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 2.5d
 			y: 5.5d
 		}
 		{
@@ -320,6 +252,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "4C04A47D0D3EA70A"
@@ -345,7 +278,7 @@
 				}
 			]
 			title: "CPU Chips"
-			x: 1.5d
+			x: -5.5d
 			y: 3.5d
 		}
 		{
@@ -356,13 +289,25 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "11E2B1CE93A78156"
-				item: "gtceu:plastic_printed_circuit_board"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 3.5d
+			size: 1.0d
+			tasks: [
+				{
+					id: "11E2B1CE93A78156"
+					item: "gtceu:plastic_printed_circuit_board"
+					type: "item"
+				}
+				{
+					id: "6AA4530F025539BC"
+					item: {
+						Count: 1
+						id: "gtceu:plastic_circuit_board"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -376,13 +321,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "3D5911CFC8C67F3F"
 				item: "gtceu:auto_maintenance_hatch"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.5d
+			x: -1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -394,14 +340,14 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "390A4D9FADC01BDB"
 				item: "gtceu:hv_assembler"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -2.5d
+			x: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -415,13 +361,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "2193D5FE7D39CE36"
 				item: "gtceu:hv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.5d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -436,6 +383,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "0451A16C50687AA3"
@@ -454,7 +402,7 @@
 				}
 			]
 			title: "LPIC Chips"
-			x: 1.5d
+			x: -3.5d
 			y: -4.5d
 		}
 		{
@@ -466,6 +414,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "294B85DC19339833"
@@ -494,8 +443,8 @@
 				}
 			]
 			title: "SMD's"
-			x: 4.5d
-			y: -3.5d
+			x: 2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
@@ -506,6 +455,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "0482AB16D0A2ECAC"
 				item: {
@@ -520,8 +470,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
-			y: -4.5d
+			x: 0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2D089B0427CFDBBE"]
@@ -531,13 +481,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "317E07281DE7EE72"
 				item: "gtceu:energy_crystal"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 0.5d
+			x: -3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -547,13 +498,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "128A6C1123F9D708"
 				item: "gtceu:hv_autoclave"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.5d
+			x: -1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7B0133D388101F68"]
@@ -564,6 +516,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "14A5548742BCF392"
@@ -591,8 +544,8 @@
 				}
 			]
 			title: "NanoMuscle™ Suite"
-			x: 3.5d
-			y: 1.5d
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -606,16 +559,20 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "2E6892722E099A15"
 				item: "gtceu:cleanroom"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 0.5d
 			y: 3.5d
 		}
 		{
-			dependencies: ["52FE319F5E176C37"]
+			dependencies: [
+				"52FE319F5E176C37"
+				"3CB63B290C9EFAA2"
+			]
 			description: ["EV circuits gives you access to the HV circuit assembler. I recommend putting this in your cleanroom to save time."]
 			id: "47CD61D6ECD3DC7D"
 			rewards: [{
@@ -623,12 +580,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "05DB4511B7178ADC"
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 2.5d
 			y: 3.5d
 		}
 		{
@@ -652,7 +610,7 @@
 				item: "gtceu:micro_processor_mainframe"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 4.5d
 			y: 3.5d
 		}
 		{
@@ -668,12 +626,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "45B9F274CC64B9AC"
 				item: "gtceu:ev_4a_energy_converter"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 4.5d
 			y: 5.5d
 		}
 		{
@@ -685,12 +644,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "08934794978054AA"
 				item: "gtceu:enderium_single_wire"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 6.5d
 			y: 5.5d
 		}
 		{
@@ -701,12 +661,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "101C2CEFF6C83034"
 				item: "gtceu:enderium_ingot"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 8.5d
 			y: 5.5d
 		}
 		{
@@ -714,40 +675,50 @@
 				"0E61DC74B2E2C962"
 				"1646D6D439B260D3"
 			]
-			hide_dependency_lines: true
 			id: "32B878D63A6AB6D3"
 			rewards: [{
 				id: "6998E98E8D6DD7F7"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "78170AF74F7CC5C2"
 				item: "gtceu:nichrome_ingot"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 4.5d
+			x: 12.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["32B878D63A6AB6D3"]
 			description: ["3rd tier of coils for your EBF to allow you to increase the heat even more. Will start making hot ingots more often."]
 			id: "1DA6B3308C263A6F"
 			rewards: [{
+				count: 2
 				id: "4741EA9D2EA236FC"
-				item: "kubejs:coin"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "7A871C7A95D0D312"
 				item: "gtceu:nichrome_coil_block"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 10.5d
 			y: 5.5d
 		}
 		{
-			dependencies: ["235423100BBE5C81"]
+			dependencies: [
+				"235423100BBE5C81"
+				"1646D6D439B260D3"
+			]
 			description: ["The heart of every EV machine."]
 			id: "74749B089D50329C"
 			rewards: [{
@@ -755,12 +726,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "0E4B244D7882FC11"
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 6.5d
 			y: 7.5d
 		}
 		{
@@ -775,6 +747,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "697234FAEC3D54FE"
 				item: {
@@ -789,7 +762,7 @@
 				}
 				type: "item"
 			}]
-			x: 11.5d
+			x: 10.5d
 			y: 7.5d
 		}
 		{
@@ -808,23 +781,25 @@
 				item: "gtceu:ev_assembler"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 8.5d
 			y: 9.5d
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
+			hide_dependent_lines: true
 			id: "1646D6D439B260D3"
 			rewards: [{
 				id: "7429BB3E22C2DF27"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "4E24C96B312C91B2"
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 4.5d
 			y: 7.5d
 		}
 		{
@@ -837,13 +812,13 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "37415A4D42D8E939"
 				item: "kubejs:multiblock_upgrade_kit"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 2.5d
 			y: 7.5d
 		}
 		{
@@ -858,12 +833,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "00CA3AFAC664FE60"
 				item: "gtceu:distillation_tower"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 0.5d
 			y: 7.5d
 		}
 		{
@@ -875,12 +851,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "73EEEC72819C9305"
 				title: "Oil"
 				type: "checkmark"
 			}]
-			x: 1.5d
+			x: -1.5d
 			y: 7.5d
 		}
 		{
@@ -892,12 +869,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "731F1719BD4A073C"
 				item: "gtceu:mv_fluid_drilling_rig"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -3.5d
 			y: 7.5d
 		}
 		{
@@ -917,12 +895,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "39F1C5A4137CC90D"
 				item: "gtceu:prospector.hv"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -5.5d
 			y: 7.5d
 		}
 		{
@@ -935,12 +914,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "1F4744E75B385516"
 				title: "Desulfurizing"
 				type: "checkmark"
 			}]
-			x: 3.5d
+			x: 0.5d
 			y: 9.5d
 		}
 		{
@@ -952,12 +932,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "0654E39159A0538C"
 				item: "gtceu:cracker"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -1.5d
 			y: 9.5d
 		}
 		{
@@ -977,7 +958,7 @@
 				title: "Byproduct distilling"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: -3.5d
 			y: 9.5d
 		}
 		{
@@ -989,12 +970,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "4416AAB9DA71C4E1"
 				item: "gtceu:styrene_butadiene_rubber_bucket"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -5.5d
 			y: 9.5d
 		}
 		{
@@ -1010,12 +992,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "402FDDE07E8539B9"
 				item: "gtceu:ev_energy_input_hatch"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 10.5d
 			y: 9.5d
 		}
 		{
@@ -1027,18 +1010,20 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "5872584F4F503A02"
 				item: "gtceu:lapotron_crystal"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 6.5d
 			y: 9.5d
 		}
 		{
 			dependencies: [
-				"4BCE8A9EBDF113CE"
 				"6060E79B2D08912D"
+				"1E981BDF3F2C577D"
+				"54EA865EC1ABDA36"
 			]
 			id: "3B2D79D40B9617D5"
 			rewards: [{
@@ -1053,7 +1038,7 @@
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 6.5d
 			y: 11.5d
 		}
 		{
@@ -1065,13 +1050,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "48C00FFCC5A1B693"
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 10.5d
+			x: 10.5d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -1107,7 +1093,7 @@
 				}
 			]
 			title: "Distilling Liquid Air"
-			x: 5.5d
+			x: 2.5d
 			y: 9.5d
 		}
 		{
@@ -1119,13 +1105,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "505135D8C35F05FA"
 				item: "gtceu:cupric_chloride_solution_bucket"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 6.5d
+			x: 8.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -1137,6 +1124,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "31DE2CEF7FC2AE07"
@@ -1155,8 +1143,8 @@
 				}
 			]
 			title: "MPIC Chips"
-			x: 13.5d
-			y: 7.5d
+			x: 12.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6EB85BBD539AEB57"]
@@ -1174,8 +1162,8 @@
 				item: "gtceu:phosphorus_wafer"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 7.5d
+			x: 14.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["75CCD3B6125B55C4"]
@@ -1185,13 +1173,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "298F75D8F1019C19"
 				item: "gtceu:ev_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 9.5d
+			x: 12.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["32FF3127152DCD7D"]
@@ -1201,12 +1190,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "4BA958DF8CB1D0EE"
 				item: "gtceu:ev_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 15.5d
+			x: 14.5d
 			y: 11.5d
 		}
 		{
@@ -1218,13 +1208,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "4F941D087C846423"
 				item: "gtceu:phosphorus_boule"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 7.5d
+			x: 16.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["32EF0A93C1C5F429"]
@@ -1234,13 +1225,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "791C2651737D5B63"
 				item: "gtceu:phosphorus_dust"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 9.5d
+			x: 16.5d
+			y: 7.5d
 		}
 		{
 			description: ["Aquired from Apatite or Monazite processing."]
@@ -1251,13 +1243,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "26526B2121D0A317"
 				item: "gtceu:phosphate_dust"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 11.5d
+			x: 16.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -1268,6 +1261,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			subtitle: "Cheaper LV and MV Circuits"
 			tasks: [
 				{
@@ -1287,8 +1281,8 @@
 				}
 			]
 			title: "SoC Chips"
-			x: 15.5d
-			y: 9.5d
+			x: 16.5d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -1302,13 +1296,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "7AF1BAB9B4390EB3"
 				item: "gtceu:ender_air_bucket"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 11.0d
+			x: 2.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["0F1D766E2E2EEEB5"]
@@ -1319,13 +1314,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "64B499458C1F62D4"
 				item: "gtceu:nether_air_bucket"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 12.0d
+			x: 2.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["5E1E1A4F5036A6EA"]
@@ -1335,13 +1331,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "2448F8220FDCFE44"
 				item: "mysticalagriculture:end_agglomeratio"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 11.0d
+			x: 1.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["549B363564644706"]
@@ -1351,13 +1348,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "0670EDADED37A8C8"
 				item: "mysticalagriculture:nether_agglomeratio"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 12.0d
+			x: 1.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["0725DE9E90815AB4"]
@@ -1367,13 +1365,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "3BD6AB9C714C8D5D"
 				item: "gtceu:netherrack_dust"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 12.0d
+			x: -0.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["4E9FAED9D889160A"]
@@ -1383,13 +1382,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "1F17577A8F6302A7"
 				item: "gtceu:endstone_dust"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 11.0d
+			x: -0.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -1400,13 +1400,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "7190C3BB30387607"
 				item: "minecraft:end_stone"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 11.0d
+			x: -2.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -1417,13 +1418,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "14C28144E7157D9E"
 				item: "minecraft:netherrack"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 12.0d
+			x: -2.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["0F0FEE1952A3CB4F"]
@@ -1443,8 +1445,8 @@
 				type: "item"
 			}]
 			title: "Large Chemical Reactor (LCR)"
-			x: -0.5d
-			y: 11.5d
+			x: -3.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1457,12 +1459,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "7AC03ACF566B052E"
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 6.5d
 			y: 3.5d
 		}
 		{
@@ -1478,13 +1481,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			subtitle: "Third and last HV Circuit"
 			tasks: [{
 				id: "2715D4C52D4AA483"
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 10.5d
 			y: 3.5d
 		}
 		{
@@ -1496,13 +1500,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "16B08A1A4A0D9778"
 				item: "gtceu:data_orb"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 0.5d
+			x: 14.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0514DE717001A062"]
@@ -1512,13 +1517,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			subtitle: "Second EV Circuit"
 			tasks: [{
 				id: "07F894DAEF532D68"
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 12.5d
 			y: 3.5d
 		}
 		{
@@ -1541,11 +1547,11 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 3.5d
+			x: 14.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["1CBC8466E47BE834"]
+			dependencies: ["076532C492102F8E"]
 			description: ["The spoils from the massive expoy processing line."]
 			id: "059FD3E475A05070"
 			rewards: [{
@@ -1553,12 +1559,24 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "2C6166D8F0801317"
-				item: "gtceu:epoxy_printed_circuit_board"
-				type: "item"
-			}]
-			x: 13.5d
+			size: 1.0d
+			tasks: [
+				{
+					id: "2C6166D8F0801317"
+					item: "gtceu:epoxy_printed_circuit_board"
+					type: "item"
+				}
+				{
+					id: "42CCA27218777F69"
+					item: {
+						Count: 1
+						id: "gtceu:epoxy_circuit_board"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 12.5d
 			y: 1.5d
 		}
 		{
@@ -1575,6 +1593,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "53C362EB686FE9E5"
@@ -1589,23 +1608,7 @@
 			]
 			title: "Nano CPU Chips"
 			x: 12.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["076532C492102F8E"]
-			id: "1CBC8466E47BE834"
-			rewards: [{
-				id: "76F45AF6DBAA9BD1"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "47663F5233857A34"
-				item: "gtceu:epoxy_circuit_board"
-				type: "item"
-			}]
-			x: 15.5d
-			y: 1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["4D49884E7F5BCBB4"]
@@ -1615,13 +1618,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "0AC1FC00AE6E6754"
 				item: "gtceu:epoxy_plate"
 				type: "item"
 			}]
-			x: 17.5d
-			y: -0.5d
+			x: 14.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -1633,6 +1637,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "25B0DF166BBC970A"
@@ -1651,8 +1656,8 @@
 				}
 			]
 			title: "NOR Memory Chips"
-			x: 15.5d
-			y: 5.5d
+			x: 14.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1666,13 +1671,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "73B830846E24D824"
 				item: "gtceu:iv_energy_input_hatch"
 				type: "item"
 			}]
 			x: 8.5d
-			y: -1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1688,14 +1694,14 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "24B1FDE1602503C0"
 				item: "gtceu:iv_assembler"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -0.5d
+			x: 6.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4BCE8A9EBDF113CE"]
@@ -1707,13 +1713,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "32785844C4B7FCAF"
 				item: "gtceu:iv_machine_hull"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -0.5d
+			x: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7CACFC7C9101EA59"]
@@ -1723,13 +1730,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "60A364BE951EC68E"
 				item: "gtceu:iv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -3.5d
+			x: 10.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4A45669665626026"]
@@ -1739,13 +1747,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "473DA2A69E1E3ABC"
 				item: "gtceu:iv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -5.5d
+			x: 12.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1760,12 +1769,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "2659F92AD382E36F"
 				item: "gtceu:iv_4a_energy_converter"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 2.5d
 			y: 1.5d
 		}
 		{
@@ -1777,13 +1787,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "03E3301B94855BCD"
 				item: "gtceu:shellite_single_wire"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 0.5d
+			x: 2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -1794,13 +1805,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "45A95EC9F95DEAB7"
 				item: "gtceu:shellite_ingot"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -1.5d
+			x: 4.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2D4F9DFF6B559C65"]
@@ -1813,6 +1825,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "0805322CDFFA96C4"
@@ -1826,14 +1839,14 @@
 				}
 			]
 			title: "HPIC Chips"
-			x: 7.5d
+			x: 8.5d
 			y: -2.5d
 		}
 		{
 			dependencies: [
 				"1464BB7890AA8482"
-				"5CB82E9BED342EB2"
 				"61ABF5D51A3B9771"
+				"574ECD841D0D2AD7"
 			]
 			description: ["Massive handheld IV power storage, can be used to charge Greg Tech Tools or inserted into a machine to give it power directly."]
 			id: "16D1B8E5F2A87F4E"
@@ -1842,13 +1855,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "280F1B2EC9414D47"
 				item: "gtceu:lapotronic_energy_orb"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -0.5d
+			x: 8.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["352B3D23A2C7DE74"]
@@ -1860,6 +1874,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "44D748A964F114CA"
 				item: "gtceu:engraved_lapotron_crystal_chip"
@@ -1869,35 +1884,31 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["0F2727801B71CA1C"]
+			dependencies: ["45AAA2B53069E806"]
 			id: "61ABF5D51A3B9771"
 			rewards: [{
 				id: "444E2AEE99EE595F"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "73B6DA4D86FB8BCE"
-				item: "gtceu:fiber_reinforced_printed_circuit_board"
-				type: "item"
-			}]
-			x: 13.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["45AAA2B53069E806"]
-			id: "0F2727801B71CA1C"
-			rewards: [{
-				id: "4084C406BC962C35"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "29C1D9FE302F1761"
-				item: "gtceu:fiber_reinforced_circuit_board"
-				type: "item"
-			}]
-			x: 15.5d
+			size: 1.0d
+			tasks: [
+				{
+					id: "73B6DA4D86FB8BCE"
+					item: "gtceu:fiber_reinforced_printed_circuit_board"
+					type: "item"
+				}
+				{
+					id: "0F6F2996FE3FBFDD"
+					item: {
+						Count: 1
+						id: "gtceu:fiber_reinforced_circuit_board"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
 			y: -0.5d
 		}
 		{
@@ -1912,13 +1923,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "581445F1FCBAE363"
 				item: "gtceu:reinforced_epoxy_resin_plate"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -2.5d
+			x: 12.5d
+			y: -0.5d
 		}
 		{
 			id: "5B575348D2A871BB"
@@ -1928,13 +1940,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "0E28C749EBE13073"
 				item: "gtceu:fine_borosilicate_glass_wire"
 				type: "item"
 			}]
-			x: 17.0d
-			y: -2.5d
+			x: 14.5d
+			y: -0.5d
 		}
 		{
 			id: "4FF433145C67693F"
@@ -1944,13 +1957,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "641801B89910C82D"
 				item: "gtceu:carbon_fibers"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -4.0d
+			x: 14.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1965,6 +1979,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "2CEDB1F05707F923"
@@ -1993,29 +2008,34 @@
 				}
 			]
 			title: "Advanced SMD's"
-			x: 10.5d
-			y: -4.5d
+			x: 6.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
 				"5CB82E9BED342EB2"
 				"06FCA7209B892A81"
-				"358F96208922007B"
 			]
 			description: ["HSS-G coils will give you the heat to make HSS-E and HSS-S ingots. Thats not going to get confusing at all."]
 			id: "689150D2A185216C"
 			rewards: [{
 				id: "0E893C06186BCA22"
-				item: "kubejs:coin"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "6FE19902DE5F4BA3"
 				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -2.5d
+			x: 6.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -2026,30 +2046,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "0A2F13EE4FEA94D1"
 				item: "gtceu:hssg_ingot"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["1DA6B3308C263A6F"]
-			hide_dependency_lines: true
-			id: "358F96208922007B"
-			rewards: [{
-				id: "1725203A0B7992E9"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "4A09B64FB9877BD9"
-				item: "gtceu:tungsten_carbide_ingot"
-				type: "item"
-			}]
-			x: 11.5d
-			y: -2.5d
+			x: 4.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["689150D2A185216C"]
@@ -2059,13 +2063,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "03867E58409BC47E"
 				item: "gtceu:hsse_ingot"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -3.5d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["689150D2A185216C"]
@@ -2075,27 +2080,30 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "3D2BDB9119DCE84A"
 				item: "gtceu:hsss_ingot"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -3.5d
+			x: 7.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["10F2237FF0C87F62"]
 			id: "687C720033164A7B"
 			rewards: [{
 				id: "0BD87C29D60BCC50"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "183A8C7C5EB87034"
 				item: "gtceu:graphene_dust"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 6.5d
 			y: -4.5d
 		}
 		{
@@ -2115,14 +2123,14 @@
 				item: "gtceu:alloy_blast_smelter"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 8.5d
 			y: 11.5d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
 			description: [
 				"The Nuclear Reactor allows for easy recipes when making Uranium-235 and Plutonium-239, and also functions as quite a powerful energy generator, capable of producing 8 EV amps, or 2 IV amps at once. "
-				"This does mean you need either a 16A EV or 4A IV energy hatch."
+				"This does mean you need either a 16A EV or 4A IV dynamo hatch."
 			]
 			id: "68865F1DDBFFFACE"
 			rewards: [{
@@ -2138,7 +2146,7 @@
 				item: "gtceu:nuclear_reactor"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 4.5d
 			y: 11.5d
 		}
 		{
@@ -2149,13 +2157,26 @@
 			dependency_requirement: "one_completed"
 			hide_dependent_lines: true
 			id: "2DB216B224F2E8EF"
+			size: 1.0d
 			tasks: [{
 				id: "5BC0FD5122614E2B"
 				item: "gtceu:radon_bucket"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 11.5d
+			x: 4.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1820787D031EAB15"]
+			description: ["In the Mechanics Page many important notes about Gregtech in particular can be found."]
+			id: "775AAF108AFAF707"
+			tasks: [{
+				id: "39A4828A672AE4A1"
+				title: "Go Read About Perfect OC"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 12.0d
 		}
 	]
 	title: "Automation Age"

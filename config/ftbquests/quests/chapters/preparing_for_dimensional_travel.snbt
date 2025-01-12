@@ -8,14 +8,24 @@
 	id: "62A72817F92AC262"
 	order_index: 4
 	progression_mode: "linear"
-	quest_links: [ ]
+	quest_links: [{
+		id: "6AA4625E98ED37B8"
+		linked_quest: "2F87FC1D5BB43220"
+		x: -1.0d
+		y: 2.5d
+	}]
 	quests: [
 		{
 			dependencies: ["4C5DBB94345FF33B"]
 			id: "707C2E9BA62A60C5"
 			rewards: [{
-				id: "68F68AD8D2B5B5C2"
-				item: "kubejs:coin"
+				count: 2
+				id: "6B546AB752B83ABC"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
@@ -36,8 +46,12 @@
 			]
 			id: "50835055C3D1050C"
 			rewards: [{
-				id: "376F5CA7A76E5595"
-				item: "kubejs:coin"
+				id: "49DA44A12F573352"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -52,8 +66,13 @@
 			dependencies: ["707C2E9BA62A60C5"]
 			id: "314B6ABE72E4A438"
 			rewards: [{
-				id: "4AEEE108E1D4A0B9"
-				item: "kubejs:coin"
+				count: 2
+				id: "6B0A97854CBB59A1"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
@@ -70,8 +89,13 @@
 			dependencies: ["314B6ABE72E4A438"]
 			id: "5BDA17962F4630EB"
 			rewards: [{
-				id: "126A15799F034C62"
-				item: "kubejs:coin"
+				count: 2
+				id: "1E040F3B6F4948C9"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
@@ -88,8 +112,12 @@
 			dependencies: ["5BDA17962F4630EB"]
 			id: "3ECCE739DE8F5F2C"
 			rewards: [{
-				id: "05B980D048CE49A6"
-				item: "kubejs:coin"
+				id: "3DA5E57A968DB4AE"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -107,8 +135,12 @@
 			]
 			id: "5C39B74171CC21F9"
 			rewards: [{
-				id: "5CA930AF2F7159B4"
-				item: "kubejs:coin"
+				id: "0183789A1E5AA702"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -128,8 +160,12 @@
 			]
 			id: "11D51899B980082B"
 			rewards: [{
-				id: "4A95DD52173CD514"
-				item: "kubejs:coin"
+				id: "2E474FF058F620B3"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -144,8 +180,12 @@
 			dependencies: ["11D51899B980082B"]
 			id: "44B43694312BAAC8"
 			rewards: [{
-				id: "1B1D53E67881871E"
-				item: "kubejs:coin"
+				id: "439C3636390FF949"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -157,14 +197,15 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"44B43694312BAAC8"
-				"702E5088171E1255"
-			]
+			dependencies: ["44B43694312BAAC8"]
 			id: "581B9922CC4B457F"
 			rewards: [{
-				id: "1600271A98F70DD6"
-				item: "kubejs:coin"
+				id: "354EE1013EA404DB"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -179,8 +220,12 @@
 			dependencies: ["707C2E9BA62A60C5"]
 			id: "27E656FA93E2A1F4"
 			rewards: [{
-				id: "0706712F08817428"
-				item: "kubejs:coin"
+				id: "2FC0A2A1510D510B"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -198,8 +243,12 @@
 			]
 			id: "2BAE934A80152FA1"
 			rewards: [{
-				id: "493686963AE42B5D"
-				item: "kubejs:coin"
+				id: "3B236DC697D26949"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -214,8 +263,12 @@
 			dependencies: ["5BDA17962F4630EB"]
 			id: "43A620DF574E2488"
 			rewards: [{
-				id: "41C5BA1892167E8F"
-				item: "kubejs:coin"
+				id: "398FDD5437034960"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -230,8 +283,12 @@
 			dependencies: ["43A620DF574E2488"]
 			id: "745470CF31319CAA"
 			rewards: [{
-				id: "38D0A70220C4FA98"
-				item: "kubejs:coin"
+				id: "70A2BDF175884640"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -246,8 +303,12 @@
 			dependencies: ["1AC8CBF01196D1F3"]
 			id: "3FE0B664F2D15942"
 			rewards: [{
-				id: "2AD5E87948B5AC82"
-				item: "kubejs:coin"
+				id: "01E1C3C603E976E8"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -262,8 +323,13 @@
 			dependencies: ["0F7A1EA1AB52F795"]
 			id: "1AC8CBF01196D1F3"
 			rewards: [{
-				id: "450BDA1E05949086"
-				item: "kubejs:coin"
+				count: 2
+				id: "7E64A0FD0377ABAC"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
@@ -280,8 +346,12 @@
 			dependencies: ["5BDA17962F4630EB"]
 			id: "0F7A1EA1AB52F795"
 			rewards: [{
-				id: "7AC1A089B613C7E0"
-				item: "kubejs:coin"
+				id: "42D6FB3B7E75DE20"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -299,8 +369,12 @@
 			]
 			id: "0889A97E22C484CC"
 			rewards: [{
-				id: "16F19C7637E2AF1A"
-				item: "kubejs:coin"
+				id: "515734ACECDB08A0"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -315,8 +389,12 @@
 			dependencies: ["5BA69EDC3C223B2C"]
 			id: "60ECE277341A9408"
 			rewards: [{
-				id: "0788765E136344DB"
-				item: "kubejs:coin"
+				id: "23F129E3F9D9FFE1"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -335,8 +413,12 @@
 			id: "7A5734E3CF682EBA"
 			rewards: [{
 				count: 2
-				id: "3455956EE2EEDE25"
-				item: "kubejs:coin"
+				id: "45A0DE263D7BBCA1"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
@@ -356,8 +438,12 @@
 			]
 			id: "027C5CE3CFCB5649"
 			rewards: [{
-				id: "2754B5FB6A2040D7"
-				item: "kubejs:coin"
+				id: "32443F1B809654D6"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -369,11 +455,18 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["027C5CE3CFCB5649"]
+			dependencies: [
+				"027C5CE3CFCB5649"
+				"4DE40B37D609B921"
+			]
 			id: "5E9936C099FF589C"
 			rewards: [{
-				id: "23AEEE272F5D9CF4"
-				item: "kubejs:coin"
+				id: "05AE9E61C946D871"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -385,11 +478,15 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["348D6E3A94706230"]
+			dependencies: ["2F87FC1D5BB43220"]
 			id: "239A0034C8425661"
 			rewards: [{
-				id: "2B8D782903A05942"
-				item: "kubejs:coin"
+				id: "3F68400BC1C19CFF"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -401,31 +498,15 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["1C81273869C0EC9F"]
-			id: "348D6E3A94706230"
-			rewards: [{
-				id: "71BE79092CABFD49"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "5F6FF65177CFC94D"
-				item: "minecraft:echo_shard"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 2.5d
-		}
-		{
-			dependencies: [
-				"42CFC3424A541A3C"
-				"182D948925141764"
-			]
+			dependencies: ["182D948925141764"]
 			id: "1C515302A357B1B8"
 			rewards: [{
-				id: "12E2FCC74183EAE8"
-				item: "kubejs:coin"
+				id: "7DDE8773170387CB"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -440,8 +521,12 @@
 			dependencies: ["1C515302A357B1B8"]
 			id: "5C3AF136913CF8BE"
 			rewards: [{
-				id: "2C14933D6E2FE182"
-				item: "kubejs:coin"
+				id: "4AC09D2CB06E6B4B"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -456,8 +541,12 @@
 			dependencies: ["5C3AF136913CF8BE"]
 			id: "3B85A08B2E08C6FC"
 			rewards: [{
-				id: "172F89E3898466D1"
-				item: "kubejs:coin"
+				id: "31146EC2D33D4B75"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -477,8 +566,12 @@
 			id: "75F0388FAB52E0B3"
 			rewards: [{
 				count: 2
-				id: "1AAE3502E0E6B801"
-				item: "kubejs:coin"
+				id: "272B5C381C3B2C9E"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
@@ -495,8 +588,12 @@
 			dependencies: ["75F0388FAB52E0B3"]
 			id: "10D78E10735CD210"
 			rewards: [{
-				id: "28F0D1651720B232"
-				item: "kubejs:coin"
+				id: "3A14DEA6D1AA0502"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -504,8 +601,8 @@
 				item: "kubejs:laser_casing"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 0.5d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -515,8 +612,12 @@
 			id: "6D169C5E35C9EF6C"
 			rewards: [{
 				count: 2
-				id: "09391672D5C2E949"
-				item: "kubejs:coin"
+				id: "73D4DBCF3C2B1167"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
@@ -533,8 +634,12 @@
 			dependencies: ["52B553FDB34B1475"]
 			id: "622066696CCF9754"
 			rewards: [{
-				id: "4B152FC8755839FB"
-				item: "kubejs:coin"
+				id: "17C57D476BB71F90"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -549,8 +654,12 @@
 			dependencies: ["678B90BF2ACE2BBA"]
 			id: "52B553FDB34B1475"
 			rewards: [{
-				id: "38E6C28F0D06015A"
-				item: "kubejs:coin"
+				id: "0A7609C4179CF5A2"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -569,8 +678,12 @@
 			]
 			id: "253AECE450920D99"
 			rewards: [{
-				id: "409F545D75A4CDF9"
-				item: "kubejs:coin"
+				id: "70C887ECBA6B4542"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -585,8 +698,12 @@
 			dependencies: ["253AECE450920D99"]
 			id: "55102B0E5D0238E1"
 			rewards: [{
-				id: "00184F2D04EEDEDA"
-				item: "kubejs:coin"
+				id: "664E3AF7B9872F12"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -605,8 +722,12 @@
 			id: "3792C5D89B1301A0"
 			rewards: [{
 				count: 2
-				id: "323908ADE771116D"
-				item: "kubejs:coin"
+				id: "7B42B832CC2566A1"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
@@ -627,8 +748,12 @@
 			id: "1004D6D7636E0321"
 			rewards: [{
 				count: 2
-				id: "40B91E2A3CCDE76A"
-				item: "kubejs:coin"
+				id: "5C62D9BF0BF46FAC"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			shape: "gear"
@@ -645,8 +770,12 @@
 			dependencies: ["6D169C5E35C9EF6C"]
 			id: "0508AE03C730BE6C"
 			rewards: [{
-				id: "4A6DA0895E0B5CE8"
-				item: "kubejs:coin"
+				id: "2B9821F0ED86771C"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [
@@ -669,8 +798,12 @@
 			dependencies: ["60ECE277341A9408"]
 			id: "59711F987DE95924"
 			rewards: [{
-				id: "5B47D30E03A77548"
-				item: "kubejs:coin"
+				id: "1B33E52F7FEAD5E8"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -686,8 +819,12 @@
 			hide_dependency_lines: true
 			id: "7FFCAD92772A175F"
 			rewards: [{
-				id: "656D18CC58D84EFA"
-				item: "kubejs:coin"
+				id: "41645C4A24DF3CD2"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -706,22 +843,16 @@
 			]
 			icon: "sgjourney:classic_stargate"
 			id: "2EDE996312B1C69E"
-			rewards: [
-				{
-					auto: "invisible"
-					icon: "ae2:singularity"
-					id: "3AF1F23EC9DE8A8F"
-					ignore_reward_blocking: true
-					stage: "one"
-					title: "Abydos access pass (VIP)"
-					type: "gamestage"
+			rewards: [{
+				count: 5
+				id: "1887167E5082E04E"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
 				}
-				{
-					id: "0140B5989624AB19"
-					item: "kubejs:coin"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			shape: "gear"
 			size: 3.0d
 			subtitle: "Making the Classic Stargate"
@@ -763,13 +894,6 @@
 			dependencies: ["66D2FB63E81E03AB"]
 			id: "5097F10D8D36FEB7"
 			optional: true
-			rewards: [{
-				command: "/sgjourney stargateNetwork address sgjourney:abydos"
-				icon: "minecraft:sand"
-				id: "5C531A9D6C31870F"
-				title: "Abydos coordinates"
-				type: "command"
-			}]
 			tasks: [{
 				id: "110810FCBC6D0A65"
 				title: "Get Abydos Coordinates"
@@ -784,6 +908,16 @@
 				"66D2FB63E81E03AB"
 			]
 			id: "43B5477B959B2736"
+			rewards: [{
+				count: 2
+				id: "60330B0E11A279F1"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -797,6 +931,15 @@
 		{
 			dependencies: ["56D5872D2C33A9CC"]
 			id: "66D2FB63E81E03AB"
+			rewards: [{
+				id: "37AFE192D0BE0925"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "0D5B1D6D6083AF47"
@@ -804,11 +947,21 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7A38469EAAABEAAE"]
 			id: "56D5872D2C33A9CC"
+			rewards: [{
+				count: 2
+				id: "6BAC26EAB6E1C58F"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -820,8 +973,17 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["348D6E3A94706230"]
+			dependencies: ["2F87FC1D5BB43220"]
 			id: "7A38469EAAABEAAE"
+			rewards: [{
+				id: "4262C7EF00DC2805"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "78DA046B7DA56437"
@@ -834,6 +996,15 @@
 		{
 			dependencies: ["707C2E9BA62A60C5"]
 			id: "664F435508073B8E"
+			rewards: [{
+				id: "5170CA1F3DC88A00"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "11FCA5CC298E1D30"
@@ -846,6 +1017,15 @@
 		{
 			dependencies: ["3ECCE739DE8F5F2C"]
 			id: "2EE4C6540FE3D4CF"
+			rewards: [{
+				id: "173AE84D06BE0BF0"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "5D2487028586DCD8"
@@ -858,6 +1038,15 @@
 		{
 			dependencies: ["3ECCE739DE8F5F2C"]
 			id: "17C47EC4E8337D7B"
+			rewards: [{
+				id: "014A406ABD674F80"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "01A147F41AAF7876"
@@ -871,6 +1060,15 @@
 			dependencies: ["2EDE996312B1C69E"]
 			icon: "minecraft:sand"
 			id: "1FB502D770A4A59B"
+			rewards: [{
+				id: "443DDB7EE2F5F57B"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.25d
 			tasks: [{
@@ -885,6 +1083,16 @@
 		{
 			dependencies: ["707C2E9BA62A60C5"]
 			id: "73D0DC357821B395"
+			rewards: [{
+				count: 2
+				id: "6D48716D5CB32355"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -901,6 +1109,15 @@
 				"1004D6D7636E0321"
 			]
 			id: "70D35B4C1D6A143D"
+			rewards: [{
+				id: "3B90C26F72F5A63B"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.25d
 			tasks: [{
@@ -917,6 +1134,15 @@
 				"1E47910C2F2112E1"
 			]
 			id: "433E2BCC63E779AF"
+			rewards: [{
+				id: "3D4753FAE4D98706"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.25d
 			tasks: [{
@@ -933,6 +1159,15 @@
 				"43B5477B959B2736"
 			]
 			id: "5C7A92625D07C55D"
+			rewards: [{
+				id: "398ACC54F4F42715"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.25d
 			tasks: [{
@@ -946,6 +1181,16 @@
 		{
 			dependencies: ["2D713622FA2D6FCA"]
 			id: "1E47910C2F2112E1"
+			rewards: [{
+				count: 2
+				id: "54C194A9B0DB2A89"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -1333,6 +1578,15 @@
 		{
 			dependencies: ["1C515302A357B1B8"]
 			id: "2D713622FA2D6FCA"
+			rewards: [{
+				id: "1C8DB8447086E212"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "33B7CF901768CF24"
 				item: "gtceu:exquisite_naquadic_netherite_gem"
@@ -1344,13 +1598,51 @@
 		{
 			dependencies: ["3FC351F05F2AC743"]
 			id: "1C81273869C0EC9F"
+			rewards: [{
+				id: "32925D70150DF477"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "51FFFC651CA18531"
 				item: "gtceu:vibration_laser_engraver"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"21B816D2C178C2D5"
+				"182D948925141764"
+				"5BDA17962F4630EB"
+			]
+			hide_dependency_lines: true
+			id: "4DE40B37D609B921"
+			rewards: [{
+				id: "1FC4FEA09C39C1E4"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7780473DF8FEE773"
+				item: {
+					Count: 1
+					id: "gtceu:weapon_grade_naquadah_ingot"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.5d
 		}
 	]
 	title: "Making the Classic Stargate"

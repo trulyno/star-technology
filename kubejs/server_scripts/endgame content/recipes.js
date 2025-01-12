@@ -148,4 +148,14 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt((GTValues.VA[GTValues.ZPM]))
 
+    event.shaped(Item.of('gtceu:uhv_rotor_holder'), [
+            'NZN',
+            'ZCZ',
+            'NZN'
+        ], {
+            N: 'gtceu:small_neutronium_gear',
+            Z: 'gtceu:zalloy_gear',
+            C: 'gtceu:uhv_machine_hull'
+    });
+
 });

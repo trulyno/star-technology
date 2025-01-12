@@ -28,8 +28,9 @@ ServerEvents.recipes(event => {
             .circuit(circ)
             .duration(15);
     }
-    sbarrel('minecraft:cobblestone','minecraft:water','minecraft:lava',0)
+    sbarrel('minecraft:cobblestone','minecraft:water','minecraft:lava','')
     sbarrel('minecraft:obsidian','minecraft:lava','minecraft:water',1)
+    sbarrel('minecraft:blackstone','exnihilosequentia:witch_water','minecraft:lava','')
 
         event.recipes.gtceu.stone_barrel(`gtceu:tempered_glass`)
             .itemInputs(`minecraft:glass`)
@@ -51,6 +52,7 @@ ServerEvents.recipes(event => {
     barrel('minecraft:red_mushroom_block','minecraft:brown_mushroom_block','exnihilosequentia:witch_water')
     barrel('minecraft:soul_sand','#minecraft:smelts_to_glass','exnihilosequentia:witch_water')
     barrel('minecraft:soul_soil','minecraft:coarse_dirt','exnihilosequentia:witch_water')
+    barrel('minecraft:blackstone','minecraft:cobblestone','exnihilosequentia:witch_water')
     barrel('minecraft:slime_block','#forge:mushrooms','exnihilosequentia:witch_water')
     barrel('minecraft:tube_coral_block','exnihilosequentia:tube_coral_larva','exnihilosequentia:sea_water')
     barrel('minecraft:brain_coral_block','exnihilosequentia:brain_coral_larva','exnihilosequentia:sea_water')

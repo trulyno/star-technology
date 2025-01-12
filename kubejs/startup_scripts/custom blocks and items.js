@@ -754,10 +754,6 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .material('metal');
 
-    //Higher Rotor Holders
-
-    // UHV/UEV to be added
-    
     // Extras
     event.create('laser_casing')
         .displayName('Schrubblaser Beam Concentrator & Emmiter Capable Stellarium Casing')

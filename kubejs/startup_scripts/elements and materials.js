@@ -1727,7 +1727,6 @@ materialRegistry(event => {
     moltenore('pitchblende', 0xAFC585);
     moltenore('molybdenite', 0xC1D0A4);
     moltenore('ilmenite', 0xCBA88F);
-    moltenore('scheelite', 0xBACBCF);
     moltenore('tungstate', 0x9CACB1);
     moltenore('bastnasite',0x988E84);
     liquid('molten_cooperite_ore', 0xA4A38B, '1x cooperite');
