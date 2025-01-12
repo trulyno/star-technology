@@ -108,7 +108,7 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			description: ["A faster and more advanced version of the Kinetic Ore Factory, capable of handling higher tier ores."]
+			description: ["A faster and more advanced version of the Primitive Ore Factory, capable of handling higher tier ores."]
 			id: "0E88CB5E68212006"
 			rewards: [{
 				id: "33061CD7DE7F3DEE"
@@ -117,9 +117,14 @@
 			}]
 			tasks: [{
 				id: "7DB1C06536CCB7BD"
-				item: "gtceu:electrico_kinetic_ore_factory"
+				item: {
+					Count: 1
+					id: "gtceu:electric_ore_factory"
+					tag: { }
+				}
 				type: "item"
 			}]
+			title: "Electric Ore Factory"
 			x: -2.5d
 			y: 4.5d
 		}
