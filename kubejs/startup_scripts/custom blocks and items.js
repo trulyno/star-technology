@@ -459,7 +459,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/casing-soul-infused');
+        .textureAll('kubejs:block/casings/superconductors/casing-soul-infused');
             
     event.create('signalum_casing')
         .displayName('Ultra High Pressure and Temperature Resistant Signalum Casing')
@@ -470,7 +470,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/casing-signalum');
+        .textureAll('kubejs:block/casings/superconductors/casing-signalum');
 
     event.create('lumium_casing')
         .hardness(10)
@@ -480,7 +480,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/casing-lumium');
+        .textureAll('kubejs:block/casings/superconductors/casing-lumium');
 
     event.create('enderium_casing')
         .displayName('Thermal Fluctuation Proof Enderium Casing')
@@ -491,7 +491,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/casing-enderium');
+        .textureAll('kubejs:block/casings/superconductors/casing-enderium');
 
     event.create('shellite_casing')
         .displayName('Ultra-Resistant Shellite Casing')
@@ -502,7 +502,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/casing-shellite');
+        .textureAll('kubejs:block/casings/superconductors/casing-shellite');
 
     event.create('twinite_casing')
         .displayName('Bend-Resistant Twinite Casing')
@@ -513,7 +513,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/casing-twinite');
+        .textureAll('kubejs:block/casings/superconductors/casing-twinite');
 
     event.create('dragonsteel_casing')
         .displayName('Unbendable Dragonsteel Casing')
@@ -524,7 +524,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/casing-dragonsteel');
+        .textureAll('kubejs:block/casings/superconductors/casing-dragonsteel');
 
     event.create('prismalium_casing')
         .displayName('Transportation Prismalium Casing')
@@ -535,7 +535,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/casing-prismalium');
+        .textureAll('kubejs:block/casings/superconductors/casing-prismalium');
 
     event.create('melodium_casing')
         .displayName('Reinforced Melodium Casing')
@@ -546,7 +546,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/casing-melodium');
+        .textureAll('kubejs:block/casings/superconductors/casing-melodium');
 
     event.create('stellarium_casing')
         .displayName('Structurally Integral Stellarium Casing')
@@ -557,7 +557,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/casing-stellarium');
+        .textureAll('kubejs:block/casings/superconductors/casing-stellarium');
 
     event.create('ancient_runicalium_casing')
         .displayName('Infusion Enhanced Ancient Runicalium Casing')
@@ -893,6 +893,25 @@ StartupEvents.registry('block', event => {
 //         .tagBlock("mineable/pickaxe")
 //         .tagBlock('minecraft:needs_iron_tool')
 //         .textureAll('kubejs:block/resource_gen/reflective_casing');
+
+    function naq_casing(id, name, texture){
+        event.create(id)
+            .displayName(name)
+            .hardness(5)
+            .resistance(10)
+            .lightLevel(0)
+            .soundType('metal')
+            .requiresTool(true)
+            .tagBlock("mineable/pickaxe")
+            .tagBlock('minecraft:needs_iron_tool')
+            .textureAll(`kubejs:block/casings/naquadah/${texture}`);
+        };
+
+    naq_casing('enriched_naquadah_machine_casing', 'Enriched Naquadah Casing', 'casing');
+    naq_casing('enriched_naquadah_pipe_casing', 'Enriched Naquadah Pipe Casing', 'pipe_casing');
+    naq_casing('enriched_naquadah_firebox_casing', 'Enriched Naquadah Firebox Casing', 'firebox_casing');
+    naq_casing('enriched_naquadah_gearbox', 'Enriched Naquadah Gearbox Casing', 'gearbox');
+    naq_casing('enriched_naquadah_engine_intake_casing', 'Enriched Naquadah Engine Intake Casing', 'engine_intake_casing');
 
 });
 

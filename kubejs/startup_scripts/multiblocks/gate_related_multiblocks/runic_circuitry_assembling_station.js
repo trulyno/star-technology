@@ -38,6 +38,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('P', Predicates.blocks('gtceu:prismalium_frame'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer("kubejs:block/casings/casing-lumium",
+        .workableCasingRenderer("kubejs:block/casings/superconductors/casing-lumium",
             "gtceu:block/multiblock/implosion_compressor", false);
 });

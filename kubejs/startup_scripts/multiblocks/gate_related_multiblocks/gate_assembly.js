@@ -46,7 +46,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("#########HHHJJJJJJJJJJJJJJJHHH#########", "#########HHHJJJDDDLDLDDDJJJHHH#########", "############K#####MMM#####K############", "############K#####MMM#####K############", "############K#####MMM#####K############", "############K#####IDI#####K############", "############K#####ICI#####K############", "############K#####IDI#####K############", "############K#####MMM#####K############", "############K#####MMM#####K############", "############K#####MMM#####K############", "#########JJJJJJJJJJJJJJJJJJJJJ#########", "##################K#K##################", "#######################################", "#######################################", "#######################################") 
             .aisle("############HHHJJJJJJJJJHHH############", "############HHHJJJLLLJJJHHH############", "#################KMMMK#################", "#################KMMMK#################", "#################KMMMK#################", "#################K#I#K#################", "#################K#I#K#################", "#################K#I#K#################", "#################KMMMK#################", "#################KMMMK#################", "#################KMMMK#################", "############JJJJJJJJJJJJJJJ############", "##################K#K##################", "#######################################", "#######################################", "#######################################") 
             .aisle("###############HHHHHHHHH###############", "###############HHHHHHHHH###############", "#######################################", "#######################################", "#######################################", "#######################################", "#######################################", "#######################################", "#######################################", "#######################################", "#######################################", "###############JJJJJJJJJ###############", "#######################################", "#######################################", "#######################################", "#######################################") 	
-            .where("A", Predicates.blocks("minecraft:red_nether_bricks")
+            .where("A", Predicates.blocks("kubejs:enriched_naquadah_machine_casing")
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(3))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1))
@@ -54,20 +54,20 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2)))	
             .where("B", Predicates.blocks("gtceu:heat_vent"))	
             .where("C", Predicates.blocks("kubejs:ancient_runicalium_casing"))	
-            .where("D", Predicates.blocks("minecraft:red_nether_bricks"))	
+            .where("D", Predicates.blocks("kubejs:enriched_naquadah_machine_casing"))	
             .where("E", Predicates.blocks("kubejs:runic_pathway_casing"))	
             .where("F", Predicates.blocks("kubejs:runic_transportation_casing"))	
             .where("G", Predicates.blocks("kubejs:runic_stabilization_casing"))	
-            .where("H", Predicates.blocks("gtceu:steel_firebox_casing"))	
+            .where("H", Predicates.blocks("kubejs:enriched_naquadah_firebox_casing"))	
             .where("I", Predicates.blocks("gtceu:ancient_runicalium_frame"))	
             .where("J", Predicates.blocks("gtceu:atomic_casing"))	
             .where("K", Predicates.blocks("gtceu:void_frame"))	
-            .where("L", Predicates.blocks("gtceu:steel_gearbox"))	
+            .where("L", Predicates.blocks("kubejs:enriched_naquadah_gearbox"))	
             .where("M", Predicates.blocks("kubejs:zalloy_coil_block"))	
             .where("#", Predicates.any())	
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))	
             .where("N", Predicates.blocks("gtceu:fusion_glass"))
             .build())
-        .workableCasingRenderer("minecraft:block/red_nether_bricks",
+        .workableCasingRenderer("kubejs:block/casings/naquadah/casing",
         "gtceu:block/machines/assembler", false);
 });
