@@ -118,7 +118,7 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			description: ["A faster and more advanced version of the Kinetic Ore Factory, capable of handling higher tier ores."]
+			description: ["A faster and more advanced version of the Primitive Ore Factory, capable of handling higher tier ores."]
 			id: "0E88CB5E68212006"
 			rewards: [{
 				id: "33061CD7DE7F3DEE"
@@ -134,6 +134,7 @@
 				}
 				type: "item"
 			}]
+			title: "Electric Ore Factory"
 			x: -2.5d
 			y: 4.5d
 		}

@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/naquadah/firebox_casing_ctm"
+    }
+}

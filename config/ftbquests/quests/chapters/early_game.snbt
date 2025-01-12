@@ -1111,7 +1111,7 @@
 				"10126B9D6EC90F59"
 				"64E79272B5003119"
 			]
-			description: ["Now you have access to LV machine hulls, you can now make a new multiblock that works with create to process your ores further. This gives you access to resources like gold which will help with progressing into create."]
+			description: ["Now you have access to LV machine hulls, you can now make a new multiblock to process your ores further. This gives you access to resources like gold and nickel which will help with progressing into create."]
 			icon: {
 				Count: 1
 				id: "gtceu:primitive_ore_factory"
@@ -1199,6 +1199,7 @@
 					type: "item"
 				}
 			]
+			title: "Primitive Ore Factory"
 			x: 2.0d
 			y: 2.5d
 		}
