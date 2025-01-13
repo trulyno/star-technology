@@ -13,6 +13,12 @@ ServerEvents.recipes(event => {
         .itemInputs('4x gtceu:uranium_dust', 'gtceu:aluminium_fluid_cell')
         .itemOutputs('kubejs:low_enriched_uranium_fuel_rod')
         .duration(240)
-        .EUt(1536);   
+        .EUt(1280);
+        
+    event.recipes.gtceu.canner('uranium_235_rod')
+        .itemInputs('4x gtceu:uranium_235_dust', 'gtceu:aluminium_fluid_cell')
+        .itemOutputs('kubejs:highly_enriched_uranium_fuel_rod')
+        .duration(300)
+        .EUt(1536);
 
 });

@@ -1334,6 +1334,7 @@
 		{
 			dependencies: ["2DA7FFD9B7A550B9"]
 			id: "35D5CC08AE53A7FA"
+			subtitle: "Second UHV Circuit"
 			tasks: [{
 				id: "7278702A05728EA6"
 				item: {
@@ -1349,6 +1350,7 @@
 		{
 			dependencies: ["35D5CC08AE53A7FA"]
 			id: "2F0E0C63E0DE0F5A"
+			subtitle: "First UEV Circuit"
 			tasks: [{
 				id: "74164D342D52608B"
 				item: {
@@ -1364,6 +1366,7 @@
 		{
 			dependencies: ["2F0E0C63E0DE0F5A"]
 			id: "73E9000BE5288623"
+			subtitle: "First UIV Cicuit"
 			tasks: [{
 				id: "104B5031089707D7"
 				item: {
@@ -1379,6 +1382,7 @@
 		{
 			dependencies: ["4DF812EEFB4FD1C3"]
 			id: "2DA7FFD9B7A550B9"
+			subtitle: "Third and Last UV Circuit"
 			tasks: [{
 				id: "4B3DDFC692C95879"
 				item: {
@@ -1394,6 +1398,7 @@
 		{
 			dependencies: ["1C9396E2587051F7"]
 			id: "4DF812EEFB4FD1C3"
+			subtitle: "Fourth and Last ZPM Circuit"
 			tasks: [{
 				id: "08AF5523EEC4E80C"
 				item: {

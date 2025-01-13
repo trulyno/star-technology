@@ -223,6 +223,81 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .circuit(6);
 
+    event.shaped(Item.of('2x kubejs:enriched_naquadah_machine_casing'), [
+        'PHP',
+        'PFP',
+        'PWP'
+    ], {
+        P: 'gtceu:enriched_naquadah_plate',
+        F: 'gtceu:enriched_naquadah_frame',
+        H: '#forge:tools/hammers',
+        W: '#forge:tools/wrenches'
+    });
+
+    event.recipes.gtceu.assembler('enriched_naquadah_machine_casing')
+        .itemInputs('6x gtceu:enriched_naquadah_plate', 'gtceu:enriched_naquadah_frame')
+        .itemOutputs('2x kubejs:enriched_naquadah_machine_casing')
+        .duration(50)
+        .EUt(16)
+        .circuit(6);
+
+    event.shaped(Item.of('2x kubejs:enriched_naquadah_firebox_casing'), [
+        'PRP',
+        'RFR',
+        'PRP'
+    ], {
+        P: 'gtceu:enriched_naquadah_plate',
+        F: 'gtceu:enriched_naquadah_frame',
+        R: 'gtceu:enriched_naquadah_rod'
+    });
+
+    event.shaped(Item.of('2x kubejs:enriched_naquadah_pipe_casing'), [
+        'PLP',
+        'LFL',
+        'PLP'
+    ], {
+        P: 'gtceu:enriched_naquadah_plate',
+        F: 'gtceu:enriched_naquadah_frame',
+        L: 'gtceu:naquadah_normal_fluid_pipe'
+    });
+
+    event.shaped(Item.of('2x kubejs:enriched_naquadah_engine_intake_casing'), [
+        'PHP',
+        'RFR',
+        'PWP'
+    ], {
+        P: 'gtceu:naquadah_normal_fluid_pipe',
+        F: 'kubejs:enriched_naquadah_machine_casing',
+        R: 'gtceu:enriched_naquadah_rotor',
+        H: '#forge:tools/hammers',
+        W: '#forge:tools/wrenches'
+    });
+
+    event.recipes.gtceu.assembler('enriched_naquadah_engine_intake_casing')
+        .itemInputs('2x gtceu:enriched_naquadah_rotor', '4x gtceu:naquadah_normal_fluid_pipe', 'kubejs:enriched_naquadah_machine_casing')
+        .itemOutputs('2x kubejs:enriched_naquadah_engine_intake_casing')
+        .duration(50)
+        .EUt(16);
+
+    event.shaped(Item.of('2x kubejs:enriched_naquadah_gearbox'), [
+        'PHP',
+        'GFG',
+        'PWP'
+    ], {
+        P: 'gtceu:enriched_naquadah_plate',
+        F: 'gtceu:enriched_naquadah_frame',
+        G: 'gtceu:enriched_naquadah_gear',
+        H: '#forge:tools/hammers',
+        W: '#forge:tools/wrenches'
+    });
+
+    event.recipes.gtceu.assembler('enriched_naquadah_gearbox')
+        .itemInputs('4x gtceu:enriched_naquadah_plate', '2x gtceu:enriched_naquadah_gear', 'gtceu:enriched_naquadah_frame')
+        .itemOutputs('2x kubejs:enriched_naquadah_gearbox')
+        .duration(50)
+        .EUt(16)
+        .circuit(4);
+
     event.recipes.gtceu.rock_breaker('blackstone')
         .notConsumable('minecraft:blackstone')
         .itemOutputs('minecraft:blackstone')

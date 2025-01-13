@@ -158,4 +158,11 @@ ServerEvents.recipes(event => {
             C: 'gtceu:uhv_machine_hull'
     });
 
+    event.recipes.gtceu.mixer('thorium_plut_duranide_241')
+        .itemInputs('4x gtceu:thorium_dust', 'gtceu:duranium_dust', '3x gtceu:plutonium_241_dust')
+        .itemOutputs('8x gtceu:thorium_plut_duranide_241_dust')
+        .circuit(4)
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.UV]);
+
 });

@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
     sieve('string', 0.075, dirt, 'minecraft:jungle_sapling', false);
     sieve('string', 0.075, dirt, 'minecraft:acacia_sapling', false);
     sieve('string', 0.075, dirt, 'minecraft:dark_oak_sapling', false);
-    sieve('string', 0.10, dirt, 'minecraft:rooted_dirt', false)
+    sieve('string', 0.40, dirt, 'minecraft:rooted_dirt', false)
     
     sieve('string', 0.1, mud, 'minecraft:sugar_cane', false);    
     sieve('string', 0.25, mud, 'thermal:slime_mushroom_spores', false);

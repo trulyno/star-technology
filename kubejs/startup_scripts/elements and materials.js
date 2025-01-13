@@ -376,7 +376,7 @@ materialRegistry(event => {
     GTMaterials.Lead.addFlags(gear);
     GTMaterials.Silver.addFlags(gear);
     GTMaterials.Naquadah.addFlags(dense_plate);
-    GTMaterials.NaquadahEnriched.addFlags(dense_plate);
+    GTMaterials.NaquadahEnriched.addFlags(dense_plate, rotor, gear, frame);
     GTMaterials.Naquadria.addFlags(dense_plate);
     GTMaterials.Neutronium.addFlags(foil, small_gear);
     GTMaterials.Europium.addFlags(small_spring);
@@ -384,7 +384,7 @@ materialRegistry(event => {
     GTMaterials.RedSteel.addFlags(rod, frame);
     GTMaterials.SterlingSilver.addFlags(rod, frame);
     GTMaterials.NetherStar.addFlags(foil);
-    GTMaterials.Netherite.addFlags(no_decomp);     
+    GTMaterials.Netherite.addFlags(no_decomp);
 
     // Blast Properties of periodic table metals
     blastProperty('zirconium', 8000, 'higher', VA('zpm'), 800);
@@ -1372,6 +1372,14 @@ materialRegistry(event => {
         .flags(no_decomp, plates, rod, frame)
         .iconSet(METALLIC);
 
+    event.create('thorium_plut_duranide_241')
+        .ingot()
+        .fluid()
+        .components('4x thorium', '1x duranium', '3x plutonium_241')
+        .color(0xEC342A)
+        .flags(fine_wire, no_decomp, foil)
+        .blastTemp(10199, 'highest', VA('uv'), 850)
+
     // Mythril Line
     event.create('trichloromythrilium')
         .dust()
@@ -1538,6 +1546,7 @@ materialRegistry(event => {
         
     event.create('bismuth_tritelluride')
         .dust()
+        .flags(no_decomp)
         .components('2x bismuth', '3x tellurium')
         .color(0xDEB18E)
 
@@ -1627,7 +1636,6 @@ materialRegistry(event => {
      .flags(plates, frame, rod)
      .iconSet(METALLIC)
      .blastTemp(2200, 'low', VA('mv'), 2000);
-
 
     // Akreyium Line
     

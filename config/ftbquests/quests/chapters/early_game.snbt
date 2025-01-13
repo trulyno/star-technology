@@ -318,11 +318,6 @@
 					type: "item"
 				}
 				{
-					id: "5F37813D798969EA"
-					item: "minecraft:bamboo"
-					type: "item"
-				}
-				{
 					id: "38AD2B4A34552396"
 					item: "exnihilosequentia:mycelium_spores"
 					type: "item"
@@ -330,6 +325,15 @@
 				{
 					id: "73E2020117C0B17F"
 					item: "thermal:slime_mushroom_spores"
+					type: "item"
+				}
+				{
+					id: "1ADAA63F9C552B09"
+					item: {
+						Count: 1
+						id: "minecraft:mangrove_propagule"
+						tag: { }
+					}
 					type: "item"
 				}
 			]
@@ -789,22 +793,11 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "0B64D2D98654B971"
-					item: "gtceu:ulv_barrel"
-					type: "item"
-				}
-				{
-					id: "6174BAF5A2A1F48C"
-					item: {
-						Count: 1
-						id: "minecraft:clay_ball"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0B64D2D98654B971"
+				item: "gtceu:ulv_barrel"
+				type: "item"
+			}]
 			title: "Barrel Transformations"
 			x: -1.5d
 			y: 2.5d
@@ -1858,7 +1851,10 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["29F1EAF3E87A50F5"]
+			dependencies: [
+				"29F1EAF3E87A50F5"
+				"3D0F6CA8028C074B"
+			]
 			description: ["By putting a bucket of lava inside and then pumping water the \"Stone Barrel\" is able to produce you as much cobble as your heart desires (make sure you use the correct circuit which you can select in the bottom right of the machines interface)."]
 			id: "0742EF8F43044102"
 			rewards: [{

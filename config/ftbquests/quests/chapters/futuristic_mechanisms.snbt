@@ -1357,7 +1357,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "Third and Last ZPM Circuit"
+			subtitle: "Third ZPM Circuit"
 			tasks: [{
 				id: "26A0FC39A8C48BC1"
 				item: "gtceu:wetware_processor_assembly"
