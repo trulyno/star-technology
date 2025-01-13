@@ -1,5 +1,5 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/casings/casing-melodium-ctm"
+        "connection": "kubejs:block/casings/superconductors/casing-melodium-ctm"
     }
 }

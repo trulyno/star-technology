@@ -1,5 +1,5 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/casings/casing-signalum-ctm"
+        "connection": "kubejs:block/casings/superconductors/casing-signalum-ctm"
     }
 }

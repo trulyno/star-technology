@@ -1,5 +1,5 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/casings/casing-twinite-ctm"
+        "connection": "kubejs:block/casings/superconductors/casing-twinite-ctm"
     }
 }
