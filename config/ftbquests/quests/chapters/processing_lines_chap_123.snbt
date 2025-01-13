@@ -7,7 +7,12 @@
 	icon: "gtceu:lv_chemical_reactor"
 	id: "2742F3918C76DA81"
 	order_index: 2
-	quest_links: [ ]
+	quest_links: [{
+		id: "5B9F9EFC7AF759A6"
+		linked_quest: "0BBCC13EE6C7C061"
+		x: 22.0d
+		y: 9.0d
+	}]
 	quests: [
 		{
 			dependencies: ["1AAB9C20E833029A"]
@@ -1324,8 +1329,8 @@
 				item: "thermal:earth_charge"
 				type: "item"
 			}]
-			x: 23.0d
-			y: 14.5d
+			x: 24.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["158885A1FD330FD8"]
@@ -1336,8 +1341,8 @@
 				item: "minecraft:fire_charge"
 				type: "item"
 			}]
-			x: 22.5d
-			y: 13.25d
+			x: 23.5d
+			y: 15.25d
 		}
 		{
 			dependencies: ["161853249C63EDCB"]
@@ -1348,8 +1353,8 @@
 				item: "thermal:lightning_charge"
 				type: "item"
 			}]
-			x: 22.5d
-			y: 11.75d
+			x: 23.5d
+			y: 13.75d
 		}
 		{
 			dependencies: ["6172BFE1494E9D28"]
@@ -1360,8 +1365,8 @@
 				item: "thermal:ice_charge"
 				type: "item"
 			}]
-			x: 23.0d
-			y: 10.5d
+			x: 24.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -1372,8 +1377,8 @@
 				item: "thermal:basalz_powder"
 				type: "item"
 			}]
-			x: 21.5d
-			y: 14.5d
+			x: 22.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -1384,8 +1389,8 @@
 				item: "minecraft:blaze_powder"
 				type: "item"
 			}]
-			x: 21.0d
-			y: 13.25d
+			x: 22.0d
+			y: 15.25d
 		}
 		{
 			dependencies: ["74749B089D50329C"]
@@ -1396,8 +1401,8 @@
 				item: "thermal:blitz_powder"
 				type: "item"
 			}]
-			x: 21.0d
-			y: 11.75d
+			x: 22.0d
+			y: 13.75d
 		}
 		{
 			dependencies: ["4D9DAED52FF74B8B"]
@@ -1408,8 +1413,8 @@
 				item: "thermal:blizz_powder"
 				type: "item"
 			}]
-			x: 21.5d
-			y: 10.5d
+			x: 22.5d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -1425,8 +1430,8 @@
 				item: "mysticalagriculture:nether_star_essence"
 				type: "item"
 			}]
-			x: 24.0d
-			y: 12.5d
+			x: 25.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["488ED4F4C784C537"]
@@ -1437,8 +1442,8 @@
 				item: "mysticalagradditions:nether_star_shard"
 				type: "item"
 			}]
-			x: 25.0d
-			y: 12.5d
+			x: 26.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["090275078106B752"]
@@ -1449,8 +1454,8 @@
 				item: "gtceu:nether_star_dust"
 				type: "item"
 			}]
-			x: 26.0d
-			y: 12.5d
+			x: 27.0d
+			y: 14.5d
 		}
 		{
 			dependencies: [
@@ -1475,8 +1480,8 @@
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
-			x: 27.5d
-			y: 12.5d
+			x: 28.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
@@ -1488,8 +1493,8 @@
 				item: "gtceu:implosion_compressor"
 				type: "item"
 			}]
-			x: 29.5d
-			y: 12.5d
+			x: 30.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["0F1D766E2E2EEEB5"]
@@ -1500,8 +1505,8 @@
 				item: "mysticalagriculture:nether_agglomeratio"
 				type: "item"
 			}]
-			x: 23.0d
-			y: 16.5d
+			x: 24.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["1C5BF4BBF693A39E"]
@@ -1512,8 +1517,8 @@
 				item: "gtceu:tiny_debris_dust"
 				type: "item"
 			}]
-			x: 24.5d
-			y: 16.5d
+			x: 25.5d
+			y: 18.5d
 		}
 		{
 			dependencies: [
@@ -1527,8 +1532,8 @@
 				item: "gtceu:debris_dust"
 				type: "item"
 			}]
-			x: 26.0d
-			y: 16.5d
+			x: 27.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["3AA8F5EDD58D4F43"]
@@ -1540,8 +1545,8 @@
 				item: "gtceu:small_purified_debris_dust"
 				type: "item"
 			}]
-			x: 27.5d
-			y: 16.5d
+			x: 28.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["3AA8F5EDD58D4F43"]
@@ -1554,8 +1559,8 @@
 				type: "item"
 			}]
 			title: "Debris Looping"
-			x: 25.0d
-			y: 15.0d
+			x: 26.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["3AA8F5EDD58D4F43"]
@@ -1566,8 +1571,8 @@
 				item: "gtceu:tiny_titanium_trifluoride_dust"
 				type: "item"
 			}]
-			x: 27.0d
-			y: 15.0d
+			x: 28.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["11FF8831D1DE5D7B"]
@@ -1578,8 +1583,8 @@
 				item: "gtceu:titanium_trifluoride_dust"
 				type: "item"
 			}]
-			x: 28.5d
-			y: 15.0d
+			x: 29.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["7A667B2D4AB99C9A"]
@@ -1591,8 +1596,8 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			x: 32.0d
-			y: 15.0d
+			x: 33.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["0BEDF4FEED71D9F4"]
@@ -1612,8 +1617,8 @@
 					type: "item"
 				}
 			]
-			x: 30.0d
-			y: 15.0d
+			x: 31.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["3AA8F5EDD58D4F43"]
@@ -1633,8 +1638,8 @@
 					type: "item"
 				}
 			]
-			x: 27.0d
-			y: 18.0d
+			x: 28.0d
+			y: 20.0d
 		}
 		{
 			icon: "gtceu:chlorine_trifluoride_bucket"
@@ -1653,8 +1658,8 @@
 					type: "item"
 				}
 			]
-			x: 25.0d
-			y: 18.0d
+			x: 26.0d
+			y: 20.0d
 		}
 		{
 			dependencies: ["346DEF55D35A9E96"]
@@ -1675,8 +1680,8 @@
 				item: "gtceu:purified_debris_dust"
 				type: "item"
 			}]
-			x: 29.5d
-			y: 16.5d
+			x: 30.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["4D387E12A6D1B8F3"]
@@ -1687,8 +1692,8 @@
 				item: "gtceu:debris_dust"
 				type: "item"
 			}]
-			x: 31.0d
-			y: 16.5d
+			x: 32.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["279251A8D5A997DF"]
@@ -1710,8 +1715,8 @@
 				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
-			x: 33.0d
-			y: 16.5d
+			x: 34.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["5E7E3629AB2080AD"]
@@ -1733,8 +1738,8 @@
 				item: "gtceu:pure_netherite_ingot"
 				type: "item"
 			}]
-			x: 34.0d
-			y: 18.0d
+			x: 35.0d
+			y: 20.0d
 		}
 		{
 			dependencies: ["22F5AAAB28375626"]
@@ -1754,8 +1759,8 @@
 					type: "item"
 				}
 			]
-			x: 32.0d
-			y: 18.0d
+			x: 33.0d
+			y: 20.0d
 		}
 		{
 			dependencies: [
@@ -1769,8 +1774,8 @@
 				item: "gtceu:pure_netherite_dust"
 				type: "item"
 			}]
-			x: 30.5d
-			y: 18.0d
+			x: 31.5d
+			y: 20.0d
 		}
 		{
 			dependencies: ["7435A8AEF5E25F38"]
@@ -1790,8 +1795,8 @@
 					type: "item"
 				}
 			]
-			x: 29.0d
-			y: 18.0d
+			x: 30.0d
+			y: 20.0d
 		}
 		{
 			dependencies: ["12C9427A04A2F550"]
@@ -1811,8 +1816,8 @@
 					type: "item"
 				}
 			]
-			x: 28.0d
-			y: 19.5d
+			x: 29.0d
+			y: 21.5d
 		}
 		{
 			dependencies: ["0AB3A8C14C3A0512"]
@@ -2125,8 +2130,8 @@
 					type: "item"
 				}
 			]
-			x: 22.0d
-			y: 20.0d
+			x: 23.0d
+			y: 22.0d
 		}
 		{
 			dependencies: ["06FBC454DC18AABA"]
@@ -2146,8 +2151,8 @@
 					type: "item"
 				}
 			]
-			x: 23.5d
-			y: 20.0d
+			x: 24.5d
+			y: 22.0d
 		}
 		{
 			dependencies: ["718F143E6E120E52"]
@@ -2167,8 +2172,8 @@
 					type: "item"
 				}
 			]
-			x: 25.0d
-			y: 20.0d
+			x: 26.0d
+			y: 22.0d
 		}
 		{
 			dependencies: [
@@ -2193,8 +2198,8 @@
 				item: "gtceu:polyvinyl_butyral_bucket"
 				type: "item"
 			}]
-			x: 26.0d
-			y: 21.0d
+			x: 27.0d
+			y: 23.0d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -2214,8 +2219,8 @@
 					type: "item"
 				}
 			]
-			x: 24.0d
-			y: 21.0d
+			x: 25.0d
+			y: 23.0d
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
@@ -2234,8 +2239,8 @@
 				}
 			]
 			title: "Purified Galena and Sphalerite"
-			x: 25.0d
-			y: 10.0d
+			x: 26.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4EDE77E1B5577399"]
@@ -2255,8 +2260,8 @@
 					type: "item"
 				}
 			]
-			x: 26.5d
-			y: 10.0d
+			x: 27.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1EAFC66AEAE5A7A2"]
@@ -2267,8 +2272,8 @@
 				item: "gtceu:indium_dust"
 				type: "item"
 			}]
-			x: 28.0d
-			y: 10.0d
+			x: 29.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["074A6D7A3072E11F"]
@@ -2290,8 +2295,8 @@
 				item: "gtceu:indium_gallium_phosphide_dust"
 				type: "item"
 			}]
-			x: 30.0d
-			y: 10.0d
+			x: 31.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -2418,6 +2423,211 @@
 			}]
 			x: 16.0d
 			y: 14.5d
+		}
+		{
+			dependencies: ["0BBCC13EE6C7C061"]
+			id: "02469EA239AC9C3F"
+			tasks: [{
+				id: "0B45EC45C9FA90B8"
+				item: {
+					Count: 1
+					id: "gtceu:pitchblende_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 23.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["02469EA239AC9C3F"]
+			id: "556B952A01A153DE"
+			tasks: [{
+				id: "0AB827BBAC7AE33E"
+				item: {
+					Count: 1
+					id: "gtceu:uraninite_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 25.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["02469EA239AC9C3F"]
+			id: "7F4D5331B59AA5F0"
+			tasks: [{
+				id: "539E9F061A305B06"
+				item: {
+					Count: 1
+					id: "gtceu:thorium_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 24.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["02469EA239AC9C3F"]
+			id: "60D846B8A6284A3A"
+			tasks: [{
+				id: "2E63585253073B91"
+				item: {
+					Count: 1
+					id: "gtceu:lead_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 24.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["556B952A01A153DE"]
+			id: "43640ABB71BD67F6"
+			tasks: [{
+				id: "078586DCB9EFB712"
+				item: {
+					Count: 1
+					id: "gtceu:uranium_hexafluoride_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 26.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["43640ABB71BD67F6"]
+			id: "3E3103622B9679C6"
+			tasks: [{
+				id: "3E0750C756C22256"
+				item: {
+					Count: 1
+					id: "gtceu:enriched_uranium_hexafluoride_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 27.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["43640ABB71BD67F6"]
+			id: "3FCD76E28A1A3245"
+			tasks: [{
+				id: "5101F051D3F2DB47"
+				item: {
+					Count: 1
+					id: "gtceu:depleted_uranium_hexafluoride_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 27.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3E3103622B9679C6"]
+			id: "5E894DC47896785B"
+			size: 1.0d
+			tasks: [{
+				id: "06EA78CB51EB7A49"
+				item: {
+					Count: 1
+					id: "gtceu:uranium_235_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 29.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3FCD76E28A1A3245"]
+			id: "206859C2B2272102"
+			rewards: [{
+				count: 3
+				id: "68ED1E38A0284681"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5CC71CD276DFDAB0"
+				item: {
+					Count: 1
+					id: "gtceu:uranium_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 29.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["206859C2B2272102"]
+			id: "6A57B03345FC6D99"
+			rewards: [{
+				count: 2
+				id: "5CA8626D7FED0ED4"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "19F10D4F1F3BAA98"
+				item: {
+					Count: 1
+					id: "gtceu:plutonium_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 31.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"5E894DC47896785B"
+				"206859C2B2272102"
+			]
+			dependency_requirement: "one_completed"
+			id: "783BDF78D6C56815"
+			rewards: [{
+				count: 3
+				id: "257843B1E50543DF"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "78475646DDD0A0B6"
+				item: {
+					Count: 1
+					id: "gtceu:plutonium_241_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 31.0d
+			y: 8.0d
 		}
 	]
 	title: "Processing Lines (Chap 1,2,3)"
