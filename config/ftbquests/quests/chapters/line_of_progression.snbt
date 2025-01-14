@@ -11,187 +11,187 @@
 		{
 			id: "0BB74BB2179D1EE3"
 			linked_quest: "20A12F3B992762F0"
-			x: -9.5d
+			x: -8.0d
 			y: -29.0d
 		}
 		{
 			id: "6DC46A9130054F17"
 			linked_quest: "3B81632EF4586280"
-			x: -9.5d
+			x: -8.0d
 			y: -30.5d
 		}
 		{
 			id: "776BEF122AA67CE7"
 			linked_quest: "7836F17B34B47B16"
-			x: -9.5d
+			x: -8.0d
 			y: -27.5d
 		}
 		{
 			id: "5D04E91BABB908BD"
 			linked_quest: "70875F86587758D7"
-			x: -8.0d
+			x: -6.5d
 			y: -29.0d
 		}
 		{
 			id: "20A329C5E31804FC"
 			linked_quest: "23D3BED4F1968AD6"
-			x: -8.0d
+			x: -6.5d
 			y: -27.5d
 		}
 		{
 			id: "0D4FCC2A57D9CC38"
 			linked_quest: "73931EAA3EC5C9A9"
-			x: -8.0d
+			x: -6.5d
 			y: -26.0d
 		}
 		{
 			id: "3704FB1B6F971E41"
 			linked_quest: "088FE0CF9D07F9C6"
-			x: -6.5d
+			x: -5.0d
 			y: -29.0d
 		}
 		{
 			id: "25D74DD92BBCFCC3"
 			linked_quest: "363F5B598683A074"
-			x: -6.5d
+			x: -5.0d
 			y: -27.5d
 		}
 		{
 			id: "198F1866583016C8"
 			linked_quest: "7399429099302C6C"
-			x: -6.5d
+			x: -5.0d
 			y: -26.0d
 		}
 		{
 			id: "2DFE5AD66EBD118F"
 			linked_quest: "52FE319F5E176C37"
-			x: -6.5d
+			x: -5.0d
 			y: -24.5d
 		}
 		{
 			id: "1E25708ED026D474"
 			linked_quest: "62BA581B2918BB7B"
-			x: -6.5d
+			x: -5.0d
 			y: -23.0d
 		}
 		{
 			id: "1A81FEB878D2E821"
 			linked_quest: "0514DE717001A062"
-			x: -5.0d
+			x: -3.5d
 			y: -26.0d
 		}
 		{
 			id: "3959159D9A23E4D9"
 			linked_quest: "497833345EB46A47"
-			x: -5.0d
+			x: -3.5d
 			y: -24.5d
 		}
 		{
 			id: "11D511076D303258"
 			linked_quest: "0C0C0FBDE1760110"
-			x: -5.0d
+			x: -3.5d
 			y: -23.0d
 		}
 		{
 			id: "52F4E84F3BFC7D8C"
 			linked_quest: "53A9F3758C218CDC"
-			x: -5.0d
+			x: -3.5d
 			y: -21.5d
 		}
 		{
 			id: "67BF77667CC175ED"
 			linked_quest: "06780B462515CAE2"
-			x: -3.5d
+			x: -2.0d
 			y: -24.5d
 		}
 		{
 			id: "6A645D3E42F96459"
 			linked_quest: "4E77319DB3B30062"
-			x: -3.5d
+			x: -2.0d
 			y: -23.0d
 		}
 		{
 			id: "6A0A1A59BBA636FB"
 			linked_quest: "421DF7880AD00F58"
-			x: -3.5d
+			x: -2.0d
 			y: -21.5d
 		}
 		{
 			id: "44C05669AD959C08"
 			linked_quest: "79428BAEAA7856E1"
-			x: -3.5d
+			x: -2.0d
 			y: -20.0d
 		}
 		{
 			id: "3296AB708049D9CD"
 			linked_quest: "70C2BB4FAA2FB1F2"
-			x: -2.0d
+			x: -0.5d
 			y: -23.0d
 		}
 		{
 			id: "29E17D70643091AF"
 			linked_quest: "744CAEF994308983"
-			x: -2.0d
+			x: -0.5d
 			y: -21.5d
 		}
 		{
 			id: "68F275E2F86A90D9"
 			linked_quest: "30A1077A14212FE2"
-			x: -2.0d
+			x: -0.5d
 			y: -20.0d
 		}
 		{
 			id: "46DF42F4B5D32E52"
 			linked_quest: "3FC351F05F2AC743"
-			x: -2.0d
+			x: -0.5d
 			y: -18.5d
 		}
 		{
 			id: "2962CE7698F4AA72"
 			linked_quest: "0962C36622E385B8"
-			x: -0.5d
+			x: 1.0d
 			y: -21.5d
 		}
 		{
 			id: "435BB61E021C8D1B"
 			linked_quest: "1F79E45EF7810DFF"
-			x: -0.5d
+			x: 1.0d
 			y: -20.0d
 		}
 		{
 			id: "58580939166771A6"
 			linked_quest: "4C5DBB94345FF33B"
-			x: -0.5d
+			x: 1.0d
 			y: -18.5d
 		}
 		{
 			id: "0CF0B36FA1A0ABE2"
 			linked_quest: "707C2E9BA62A60C5"
-			x: -0.5d
+			x: 1.0d
 			y: -17.0d
 		}
 		{
 			id: "2944146ABA34CB5B"
 			linked_quest: "5C15427D1679D4C3"
-			x: 0.5d
+			x: 2.0d
 			y: -29.0d
 		}
 		{
 			id: "6D220F5D5B6F0922"
 			linked_quest: "6EB85BBD539AEB57"
-			x: 0.5d
+			x: 2.0d
 			y: -27.5d
 		}
 		{
 			id: "2B30EE9B2767B72D"
 			linked_quest: "5C302CB1A1068EE1"
-			x: 0.5d
+			x: 2.0d
 			y: -26.0d
 		}
 		{
 			id: "607658C8752D8C32"
 			linked_quest: "0F7A1EA1AB52F795"
-			x: 0.5d
+			x: 2.0d
 			y: -24.5d
 		}
 		{
@@ -1003,7 +1003,7 @@
 				}
 			]
 			title: "Basic Chips"
-			x: 2.0d
+			x: 3.5d
 			y: -29.0d
 		}
 		{
@@ -1037,7 +1037,7 @@
 				}
 			]
 			title: "Better Chips"
-			x: 2.0d
+			x: 3.5d
 			y: -27.5d
 		}
 		{
@@ -1056,7 +1056,7 @@
 				}
 			]
 			title: "Highly Advanced Chips"
-			x: 2.0d
+			x: 3.5d
 			y: -24.5d
 		}
 		{
@@ -1075,7 +1075,7 @@
 				}
 			]
 			title: "Advanced Chips"
-			x: 2.0d
+			x: 3.5d
 			y: -26.0d
 		}
 		{
@@ -1122,7 +1122,7 @@
 				}
 			]
 			title: "Enhanced Chips"
-			x: 2.0d
+			x: 3.5d
 			y: -23.0d
 		}
 		{
@@ -1173,7 +1173,7 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: -8.0d
+			x: -6.5d
 			y: -23.5d
 		}
 		{
@@ -1196,7 +1196,7 @@
 				item: "kubejs:iv_universal_circuit"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.5d
 			y: -23.0d
 		}
 		{
@@ -1207,7 +1207,7 @@
 				item: "kubejs:ev_universal_circuit"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.5d
 			y: -24.5d
 		}
 		{
@@ -1218,7 +1218,7 @@
 				item: "kubejs:hv_universal_circuit"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -8.0d
 			y: -26.0d
 		}
 		{
@@ -1229,7 +1229,7 @@
 				item: "kubejs:mv_universal_circuit"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -9.5d
 			y: -27.5d
 		}
 		{
@@ -1240,7 +1240,7 @@
 				item: "kubejs:lv_universal_circuit"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -9.5d
 			y: -29.0d
 		}
 		{
@@ -1251,7 +1251,7 @@
 				item: "kubejs:ulv_universal_circuit"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -9.5d
 			y: -30.5d
 		}
 		{
@@ -1262,7 +1262,7 @@
 				item: "kubejs:luv_universal_circuit"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.0d
 			y: -21.5d
 		}
 		{
@@ -1273,7 +1273,7 @@
 				item: "kubejs:zpm_universal_circuit"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -3.5d
 			y: -20.0d
 		}
 		{
@@ -1284,7 +1284,7 @@
 				item: "kubejs:uv_universal_circuit"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.0d
 			y: -18.5d
 		}
 		{
@@ -1295,7 +1295,7 @@
 				item: "kubejs:uhv_universal_circuit"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -0.5d
 			y: -17.0d
 		}
 		{
@@ -1344,7 +1344,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: -17.0d
 		}
 		{
@@ -1360,7 +1360,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: -15.5d
 		}
 		{
@@ -1376,7 +1376,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: -14.0d
 		}
 		{
@@ -1392,7 +1392,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: -18.5d
 		}
 		{
@@ -1408,7 +1408,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: -20.0d
 		}
 		{
@@ -1423,7 +1423,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: -15.5d
 		}
 		{
@@ -1438,8 +1438,23 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: -14.0d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			id: "623811E7C1C2845F"
+			tasks: [{
+				id: "7D97E14E7F4DE8E7"
+				item: {
+					Count: 1
+					id: "gtceu:t_large_autoclave"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: -22.5d
 		}
 	]
 	title: "Line Of Progression"

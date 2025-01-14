@@ -205,6 +205,11 @@ ServerEvents.recipes(event => {
             .circuit(6);
     });
 
+    event.recipes.gtceu.assembler('silicone_rubber_casing')
+        .itemInputs('gtceu:solid_machine_casing') .circuit(6)
+        .inputFluids('gtceu:silicone_rubber 216')
+        .itemOutputs('kubejs:silicone_rubber_casing')
+
     event.shaped(Item.of('2x gtceu:atomic_casing'), [
         'PHP',
         'PFP',
@@ -483,6 +488,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.item_application('gtceu:t_large_wiremill', ['gtceu:hv_wiremill', 'kubejs:multiblock_upgrade_kit']);
     event.recipes.create.item_application('gtceu:t_large_macerator', ['gtceu:hv_macerator', 'kubejs:multiblock_upgrade_kit']);
     event.recipes.create.item_application('gtceu:large_rock_crusher', ['gtceu:hv_rock_crusher', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:t_large_autoclave', ['gtceu:hv_autoclave', 'kubejs:multiblock_upgrade_kit']);
 
     // Mycelium Leather
     event.recipes.create.pressing('kubejs:compressed_mycelium', 'kubejs:mycelium_growth');
