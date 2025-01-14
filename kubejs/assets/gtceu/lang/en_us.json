@@ -469,5 +469,6 @@
     "block.gtceu.ulv_stone_barrel": "Stone Barrel",
     "gtceu.gate_assembly": "Stargate Assembly",
     "block.gtceu.gate_assembly": "Runic Stargate Assembler Controller",
-    "material.gtceu.thorium_plut_duranide_241": "Thorium Plut-Duranide 241"
+    "material.gtceu.thorium_plut_duranide_241": "Thorium Plut-Duranide 241",
+    "block.gtceu.t_large_autoclave": "Large Autoclave"
 }
