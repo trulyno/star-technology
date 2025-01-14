@@ -742,6 +742,16 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_iron_tool')
         .textureAll('kubejs:block/casings/tumbaga_casing');
 
+    event.create('silicone_rubber_casing')
+        .displayName('Silicone Rubber Casing')
+        .hardness(5)
+        .resistance(1)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/large_cubes/silicone_rubber_casing');
+
     // Custom Coils
     event.create('zalloy_coil_block', 'gtceu:coil')
         .temperature(13499)
