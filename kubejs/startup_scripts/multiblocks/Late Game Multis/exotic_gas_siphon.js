@@ -2,7 +2,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('exotic_gas_siphon')
         .category('exotic_gas_siphon')
         .setEUIO('in')
-        .setMaxIOSize(1, 0, 0, 20)
+        .setMaxIOSize(1, 0, 0, 18)
         .setSlotOverlay(false, false, GuiTextures.INT_CIRCUIT_OVERLAY)
         .setSlotOverlay(true, true, GuiTextures.CENTRIFUGE_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)

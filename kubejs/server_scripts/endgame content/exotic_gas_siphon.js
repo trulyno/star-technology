@@ -1,4 +1,24 @@
 ServerEvents.recipes(event => {
+    event.recipes.gtceu.assembly_line('exotic_gas_siphon')
+        .itemInputs(
+            '1x gtceu:uhv_gas_collector','64x kubejs:uepic_chip','32x gtceu:filter_casing','16x gtceu:sterilizing_filter_casing', '32x gtceu:naquadah_nonuple_fluid_pipe', 
+            '16x kubejs:uhv_microfluidic_flow_valve', '8x gtceu:uhv_electric_pump', '4x gtceu:uhv_fluid_regulator', '4x gtceu:pure_netherite_rotor', '8x #gtceu:circuits/uhv'
+        )
+        .inputFluids(
+            'gtceu:indium_tin_lead_cadmium_soldering_alloy 1624',
+            'gtceu:polytetrafluoroethylene 4496',
+            'gtceu:naquadria 1248',
+            'gtceu:styrene_butadiene_rubber 4496'
+        )
+        .itemOutputs('gtceu:exotic_gas_siphon')
+        .duration(2400)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of("gtceu:uhv_gas_collector"))
+                .EUt(GTValues.VHA[GTValues.UHV])
+                .CWUt(144)
+            )
+        .EUt(GTValues.VHA[GTValues.UEV]);
 
     event.recipes.gtceu.exotic_gas_siphon("overworld")
         .circuit(1)
