@@ -1054,9 +1054,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "617EA9C6D6E47F34"
-				title: "Exotic Gas Absorber"
-				type: "checkmark"
+				id: "6A976713545827EC"
+				item: "gtceu:exotic_gas_siphon"
+				type: "item"
 			}]
 			x: -3.5d
 			y: 2.0d
@@ -1835,6 +1835,19 @@
 				type: "item"
 			}]
 			x: -5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["07AD6651D0B40E22"]
+			id: "6E40FC247C876DB2"
+			optional: true
+			tasks: [{
+				id: "1C83A6D338CC1AF6"
+				item: "start_core:hpca_nanofluidic_heat_sink_component"
+				type: "item"
+			}]
+			title: "Better Research Heat Sink"
+			x: -3.5d
 			y: -4.0d
 		}
 	]

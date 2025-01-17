@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
 
     // Akreyrium Processing
     event.recipes.gtceu.cyclonic_crystalline_sieve('akreyrium_sieving')
-        .chancedInput('4x gtceu:carbon_fiber_mesh', 500, -50)
+        .chancedInput('2x kubejs:netherite_reinforced_mesh', 500, -50)
         .inputFluids('gtceu:gritty_akreyrium 100000')
         .outputFluids('gtceu:lepton_sparse_akreyrium 1000')
         .itemOutputs('1x kubejs:crystallised_akreyrium')
