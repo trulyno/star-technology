@@ -147,6 +147,10 @@ StartupEvents.registry('item', event => {
         .displayName('Crystallised Akreyrium')
         .texture('kubejs:item/crystallised_akreyrium');
 
+    event.create('netherite_reinforced_mesh')
+        .displayName('Netherite Reinforced Mesh')
+        .texture('kubejs:item/netherite_reinforced_mesh');
+
     ['basic', 'regular', 'intermediate', 'advanced', 'elite', 'ultimate'].forEach(tier => {
         event.create(`${tier}_energy_core`)
             .displayName(`${tier.charAt(0).toUpperCase() + tier.slice(1)} Energy Core`)

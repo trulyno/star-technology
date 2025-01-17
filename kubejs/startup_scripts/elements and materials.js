@@ -342,6 +342,7 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.Netherite.setMaterialARGB(0x1a0d00);
     GTMaterials.Netherite.setComponents('4x debris', '4x gold');
     GTMaterials.Netherite.setMaterialIconSet(DULL);
+    GTMaterials.Netherite.addFlags(rod);
 
 });
 

@@ -1,6 +1,13 @@
 
 ServerEvents.recipes(event => {
 
+    event.recipes.gtceu.assembler('netherite_reinforced_mesh')
+        .itemInputs('1x gtceu:carbon_fiber_mesh', '4x gtceu:netherite_rod', '1x minecraft:netherite_ingot')
+        .inputFluids('gtceu:epoxy 288')
+        .itemOutputs('kubejs:netherite_reinforced_mesh')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.IV]);
+
     event.recipes.gtceu.mixer('new_soldering_alloy')
         .itemInputs('14x gtceu:indium_dust', '3x gtceu:tin_dust', '2x gtceu:lead_dust', 'gtceu:cadmium_dust')
         .itemOutputs('20x gtceu:indium_tin_lead_cadmium_soldering_alloy_dust')

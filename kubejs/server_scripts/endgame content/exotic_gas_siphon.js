@@ -2,7 +2,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('exotic_gas_siphon')
         .itemInputs(
             '1x gtceu:uhv_gas_collector','64x kubejs:uepic_chip','32x gtceu:filter_casing','16x gtceu:sterilizing_filter_casing', '32x gtceu:naquadah_nonuple_fluid_pipe', 
-            '16x kubejs:uhv_microfluidic_flow_valve', '8x gtceu:uhv_electric_pump', '4x gtceu:uhv_fluid_regulator', '4x gtceu:pure_netherite_rotor', '8x #gtceu:circuits/uhv'
+            '16x kubejs:uhv_microfluidic_flow_valve', '8x gtceu:uhv_electric_pump', '4x gtceu:uhv_fluid_regulator', '4x gtceu:pure_netherite_rotor', '8x #gtceu:circuits/uhv',
+            '16x kubejs:netherite_reinforced_mesh'
         )
         .inputFluids(
             'gtceu:indium_tin_lead_cadmium_soldering_alloy 1624',

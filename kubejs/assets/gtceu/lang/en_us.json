@@ -351,6 +351,10 @@
     "block.gtceu.cyclonic_crystalline_sieve": "Cyclonic Crystalline Sieve Controller",
     "block.gtceu.cyclonic_crystalline_sieve.tooltip.0": "§a§lAkreyrium §a§lProcessing",
     "block.gtceu.cyclonic_crystalline_sieve.tooltip.1": "§7A specialized machine designed to sieve fluids which have been permeated by the harsh climate of Abydos. By passing the material through a fine mesh under controlled cyclonic forces repeatedly, it efficiently purifies the material into a usable form while pulling out fine particles of crystalised material.",
+    "block.gtceu.cyclonic_crystalline_sieve.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.cyclonic_crystalline_sieve.tooltip.3": "§6Crystal Sieving:",
+    "block.gtceu.cyclonic_crystalline_sieve.tooltip.4": "§7The seperated crystal should not be discarded, Many of the useful properties of akreyrium formed from certain minerals that were extracted should be recombined after further processing has occured.",
+    "block.gtceu.cyclonic_crystalline_sieve.tooltip.5": "§8-----------------------------------",
     "gtceu.cyclonic_crystalline_sieve": "Cyclonic Crystalline Sieve",
 
     "block.gtceu.leptonic_manifold_quantiser": "Leptonic Manifold Quantiser Controller",
@@ -365,6 +369,10 @@
     "block.gtceu.leptonic_convergence_injector": "Leptonic Convergence Injector Controller",
     "block.gtceu.leptonic_convergence_injector.tooltip.0": "§a§lAkreyrium §a§lProcessing",
     "block.gtceu.leptonic_convergence_injector.tooltip.1": "§7A high-density synthesis unit designed to inject, compress and align the leptonic structures of materials utilising a suitable catalyst. through this process, the material is transformed into a lepton-dense form, which is optimised for advanced applications.",
+    "block.gtceu.leptonic_convergence_injector.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.leptonic_convergence_injector.tooltip.3": "§6Convergence Injection:",
+    "block.gtceu.leptonic_convergence_injector.tooltip.4": "§7The different lepton variations must be injected with a specific type of fluid to align the structure of the material successfully, Through injection, a far higher rate of final output can be achieved.",
+    "block.gtceu.leptonic_convergence_injector.tooltip.5": "§8-----------------------------------",
     "gtceu.leptonic_convergence_injector": "Leptonic Convergence Injector",
 
     "block.gtceu.folding_akreyrium_stabiliser": "Folding Akreyrium Stabiliser Controller",
