@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
     //     .EUt(1000000)
     //     .circuit(1);
 
-    function solarcreation(type, material, wafer)
+    function solarCreation(type, material, wafer)
         {
         event.recipes.gtceu.assembler(`solar_generator_${type}`)
             .itemInputs(`3x gtceu:double_${material}_plate`, `3x gtceu:${wafer}_wafer`, `solarflux:photovoltaic_cell_${type}`)
@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
             .duration(200)
             .EUt(`${8*(4**type)}`);
         }
-    function solarcreation2(type, material, wafer, circuit)
+    function solarCreationCompact(type, material, wafer, circuit)
             {
             event.recipes.gtceu.assembler(`solar_generator_${type}`)
                 .itemInputs(`gtceu:dense_${material}_plate`, `gtceu:${wafer}_wafer`, `4x solarflux:sp_${type-1}`, `#gtceu:circuits/${circuit}`)
@@ -215,14 +215,14 @@ ServerEvents.recipes(event => {
                 .EUt(`${8*(4**(type))}`);
             }
 
-    solarcreation('1','steel','silicon')
-    solarcreation('2','aluminium','silicon')
-    solarcreation('3','stainless_steel','phosphorus')
-    solarcreation('4','titanium','phosphorus')
-    solarcreation('5','tungsten_steel','naquadah')
-    solarcreation('6','rhodium_plated_palladium','naquadah')
-    solarcreation2('7','naquadah_alloy','neutronium', 'zpm')
-    solarcreation2('8','darmstadtium','neutronium', 'uv')
+    solarCreation('1','steel','silicon')
+    solarCreation('2','aluminium','silicon')
+    solarCreation('3','stainless_steel','phosphorus')
+    solarCreation('4','titanium','phosphorus')
+    solarCreation('5','tungsten_steel','naquadah')
+    solarCreation('6','rhodium_plated_palladium','naquadah')
+    solarCreationCompact('7','naquadah_alloy','neutronium', 'zpm')
+    solarCreationCompact('8','darmstadtium','neutronium', 'uv')
        
     // event.recipes.gtceu.assembler('basic_battery')
     //     .itemInputs('gtceu:ulv_machine_hull', 'solarflux:basic_battery_cell')

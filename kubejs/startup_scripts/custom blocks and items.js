@@ -829,7 +829,7 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_diamond_tool')
         .textureAll('kubejs:block/casings/runic_pathway_casing');
 
-        event.create('inscribe_casing')
+    event.create('inscribe_casing')
         .displayName('Keelagraver Manipulator & Acuancentrator Capable Runicalium Casing')
         .hardness(5)
         .resistance(10)

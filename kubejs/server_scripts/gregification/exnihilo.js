@@ -67,10 +67,13 @@ ServerEvents.recipes(event => {
         .duration(10)
         .EUt(16);
 
-    event.recipes.gtceu.macerator('crushed_blackstone')
+    event.remove({id: 'gtceu:forge_hammer/cobblestone_to_gravel', input: 'minecraft:blackstone'});
+    event.recipes.gtceu.forge_hammer('crushed_blackstone')
         .itemInputs('minecraft:blackstone')
         .itemOutputs('exnihilosequentia:crushed_blackstone')
-        .duration(10)
-        .EUt(8);
+        .duration(1)
+        .EUt(16);
+
+    event.recipes.create.crushing('exnihilosequentia:crushed_blackstone', 'minecraft:blackstone');
 
 });
