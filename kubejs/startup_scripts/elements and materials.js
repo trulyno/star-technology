@@ -1746,4 +1746,9 @@ materialRegistry(event => {
         .element(GTElements.get('purified_naquadah')) 
         .flags(no_decomp);
 
+    event.create("indium_oxide")
+        .dust()
+        .color(0xE3D28E)
+        .components('2x indium', '3x oxygen');
+
 });

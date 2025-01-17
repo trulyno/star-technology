@@ -583,6 +583,25 @@ ServerEvents.recipes(event => {
         .duration(1600)
         .EUt(480);
 
+    //Indium Line Fix (DONT TOUCH VALUES)
+    event.remove({id: 'gtceu:mixer/indium_concentrate'})
+    event.remove({id: 'gtceu:chemical_reactor/indium_concentrate_separation'})
+    event.remove({id: 'gtceu:large_chemical_reactor/indium_concentrate_separation_4x'})
+    event.recipes.gtceu.mixer('indium_concentrate_fix')
+        .itemInputs('gtceu:purified_sphalerite_ore', 'gtceu:purified_galena_ore')
+        .inputFluids('gtceu:sulfuric_acid 2000')
+        .outputFluids('gtceu:indium_concentrate 1000')
+        .duration(60)
+        .EUt(150);
+
+    event.recipes.gtceu.chemical_reactor('indium_concentrate_separation_fix')
+        .itemInputs('2x gtceu:aluminium_dust')
+        .inputFluids('gtceu:indium_concentrate 2000', 'gtceu:oxygen 6000')
+        .itemOutputs('gtceu:indium_oxide', '14x gtceu:aluminium_sulfite_dust')
+        .outputFluids('gtceu:lead_zinc_solution 1000', 'gtceu:diluted_sulfuric_acid 1000')
+        .duration(240)
+        .EUt(600);
+
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {

@@ -249,8 +249,38 @@
 			}]
 			size: 1.0d
 			tasks: [{
-				id: "1529E40FF7AB68B4"
-				item: "gtceu:luv_4a_energy_converter"
+				id: "579B4C64D0E764AE"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any LuV Converter\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:luv_1a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_4a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_8a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_16a_energy_converter"
+								tag: { }
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: 0.0d

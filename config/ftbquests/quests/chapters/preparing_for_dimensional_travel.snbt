@@ -12,7 +12,7 @@
 		id: "6AA4625E98ED37B8"
 		linked_quest: "2F87FC1D5BB43220"
 		x: -1.0d
-		y: 2.5d
+		y: 0.5d
 	}]
 	quests: [
 		{
@@ -1613,8 +1613,8 @@
 				item: "gtceu:vibration_laser_engraver"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 0.5d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [

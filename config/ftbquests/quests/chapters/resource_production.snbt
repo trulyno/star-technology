@@ -77,11 +77,49 @@
 		{
 			dependencies: ["26D3E2C0599B43B2"]
 			id: "7718CDD1E61BB47A"
-			tasks: [{
-				id: "6BB290C1B8575DCB"
-				item: "exnihilosequentia:dust"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6BB290C1B8575DCB"
+					item: "exnihilosequentia:dust"
+					type: "item"
+				}
+				{
+					id: "69222A102C63B92F"
+					item: {
+						Count: 1
+						id: "minecraft:glowstone_dust"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "6BF68CD46E74D7CB"
+					item: {
+						Count: 1
+						id: "minecraft:redstone"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1191FE90879A8DA6"
+					item: {
+						Count: 1
+						id: "minecraft:ender_pearl"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "591EE2F86BEBD95F"
+					item: {
+						Count: 1
+						id: "gtceu:tiny_sulfur_dust"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "Dust Sieving"
 			x: -5.0d
 			y: -8.0d
@@ -89,11 +127,58 @@
 		{
 			dependencies: ["26D3E2C0599B43B2"]
 			id: "1A5C2C6A089F7F96"
-			tasks: [{
-				id: "2BCAC7AF6CAE6A4A"
-				item: "minecraft:sand"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2BCAC7AF6CAE6A4A"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "5BA15552810AD671"
+					item: {
+						Count: 1
+						id: "minecraft:emerald"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "62588F61E7617EFE"
+					item: {
+						Count: 1
+						id: "minecraft:quartz"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "38028329648BECF2"
+					item: {
+						Count: 1
+						id: "minecraft:lapis_lazuli"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "52623D0BB60B08CB"
+					item: {
+						Count: 1
+						id: "minecraft:amethyst_shard"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "39C9AA1E0AB6624C"
+					item: {
+						Count: 1
+						id: "minecraft:diamond"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "Sand Sieving"
 			x: -4.5d
 			y: -9.0d
@@ -113,11 +198,58 @@
 		{
 			dependencies: ["26D3E2C0599B43B2"]
 			id: "307E479B78B92BF6"
-			tasks: [{
-				id: "2BE71EFF33A362F9"
-				item: "minecraft:gravel"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2BE71EFF33A362F9"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "1EF419C1F50F87E1"
+					item: {
+						Count: 1
+						id: "gtceu:crushed_tin_ore"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "6E6E4C5106ED6D4F"
+					item: {
+						Count: 1
+						id: "gtceu:crushed_iron_ore"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "01A2AC02F725E6CA"
+					item: {
+						Count: 1
+						id: "gtceu:crushed_sphalerite_ore"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7AA8DF621C314CAD"
+					item: {
+						Count: 1
+						id: "gtceu:crushed_copper_ore"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "00A171E8B2A6BCE0"
+					item: {
+						Count: 1
+						id: "gtceu:crushed_magnetite_ore"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "Gravel Sieving"
 			x: -4.5d
 			y: -10.0d
@@ -125,11 +257,31 @@
 		{
 			dependencies: ["26D3E2C0599B43B2"]
 			id: "6C0C9B95A8DAB5D1"
-			tasks: [{
-				id: "68954273617B329C"
-				item: "exnihilosequentia:crushed_blackstone"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "68954273617B329C"
+					item: "exnihilosequentia:crushed_blackstone"
+					type: "item"
+				}
+				{
+					id: "6756701AD7395557"
+					item: {
+						Count: 1
+						id: "gtceu:crushed_stibnite_ore"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "51074B2CA492C427"
+					item: {
+						Count: 1
+						id: "gtceu:crushed_galena_ore"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "Crushed Blackstone Sieving"
 			x: -5.0d
 			y: -11.0d
@@ -513,7 +665,11 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["4F3AB86CDC557B11"]
+			dependencies: [
+				"4F3AB86CDC557B11"
+				"39CF5BCF84727BB3"
+			]
+			dependency_requirement: "one_completed"
 			id: "05FB44E437E88BE7"
 			tasks: [{
 				id: "7384DEBEFA8F0C65"
@@ -631,7 +787,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -1028,6 +1184,24 @@
 			}]
 			x: -7.0d
 			y: -5.5d
+		}
+		{
+			dependencies: ["4D9DAED52FF74B8B"]
+			description: ["In an IV tier mixer, mix lava and stone dust in a mixer to directly get the mixture."]
+			id: "39CF5BCF84727BB3"
+			optional: true
+			tasks: [{
+				id: "374662B092A18740"
+				item: {
+					Count: 1
+					id: "gtceu:iv_machine_hull"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Easier Molten Ore Mixture"
+			x: 6.5d
+			y: -0.5d
 		}
 	]
 	title: "Resource Production"

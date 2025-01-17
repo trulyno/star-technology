@@ -336,6 +336,15 @@
 					}
 					type: "item"
 				}
+				{
+					id: "307C0FEDA5962DE7"
+					item: {
+						Count: 1
+						id: "minecraft:mud"
+						tag: { }
+					}
+					type: "item"
+				}
 			]
 			title: "Mud Sieving"
 			x: -1.5d

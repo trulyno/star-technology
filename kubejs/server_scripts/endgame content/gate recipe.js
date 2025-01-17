@@ -9,6 +9,12 @@ ServerEvents.recipes(event => {
                 '32x gtceu:uhpic_chip', '48x gtceu:dragonsteel_single_wire')
         .inputFluids('gtceu:hsss 6912', 'gtceu:niobium_nitride 1728')
         .itemOutputs('gtceu:heat_chamber')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of("gtceu:uv_electric_furnace"))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(48)
+            )
         .duration(36000)
         .EUt(GTValues.VHA[GTValues.UV]);
 

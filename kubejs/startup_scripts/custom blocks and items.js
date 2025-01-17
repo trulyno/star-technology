@@ -349,7 +349,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/component_part/uhv_voltage_coil')
         .displayName('Ultra High Voltage Coil')
         .tooltip('Ultimate+ Coil');
-    event.create('uev_voltage_coil')
+    /*event.create('uev_voltage_coil')
         .texture('kubejs:item/component_part/uev_voltage_coil')
         .displayName('Ultra Excessive Voltage Coil')
         .tooltip('Ultimate+ Pro Coil');
@@ -364,9 +364,9 @@ StartupEvents.registry('item', event => {
     event.create('opv_voltage_coil')
         .texture('kubejs:item/component_part/opv_voltage_coil')
         .displayName('Overpowered Voltage Coil')
-        .tooltip('Godly Coil');
+        .tooltip('Godly Coil');*/
 
-    const partTiers = ["uhv", "uev", "uiv", "uxv", "opv"];
+    const partTiers = ["uhv"/*, "uev", "uiv", "uxv", "opv"*/];
 
     let tier_proper;
     partTiers.forEach(tier => {

@@ -1423,6 +1423,7 @@
 			dependencies: [
 				"6B12DCDB8DE6A41B"
 				"179A15014A5716B5"
+				"6F20CEDBB56F1041"
 			]
 			id: "54DA03D41AF36EF2"
 			tasks: [{
@@ -1455,6 +1456,15 @@
 		{
 			dependencies: ["493DD013C818BB7B"]
 			id: "0C19C040CA121E3B"
+			rewards: [{
+				id: "4A6E9001EC8CD83D"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4B7B86F718B4AA8D"
 				item: {
@@ -1715,6 +1725,7 @@
 				"1C9EB97C0D3C475B"
 				"144338235815C08C"
 				"1C81273869C0EC9F"
+				"60ECE277341A9408"
 			]
 			id: "2F87FC1D5BB43220"
 			rewards: [{
@@ -1866,6 +1877,21 @@
 			title: "Abydos Magmas"
 			x: 13.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["37C381390F132628"]
+			id: "6F20CEDBB56F1041"
+			tasks: [{
+				id: "60EAFA89420E0D7F"
+				item: {
+					Count: 1
+					id: "kubejs:netherite_reinforced_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 18.5d
+			y: 9.0d
 		}
 	]
 	title: "Processing Lines (Chap 4,5,6)"

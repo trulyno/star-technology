@@ -50,8 +50,38 @@
 			}]
 			size: 1.0d
 			tasks: [{
-				id: "71AF286F6CD44B51"
-				item: "gtceu:hv_4a_energy_converter"
+				id: "5735D411BE730D07"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any HV Converter\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hv_1a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_4a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_8a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_16a_energy_converter"
+								tag: { }
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: -1.5d
@@ -628,8 +658,38 @@
 			}]
 			size: 1.0d
 			tasks: [{
-				id: "45B9F274CC64B9AC"
-				item: "gtceu:ev_4a_energy_converter"
+				id: "27FD7999C915B7C8"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any EV Converter\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:ev_1a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_4a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_8a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_16a_energy_converter"
+								tag: { }
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: 4.5d
@@ -1771,8 +1831,38 @@
 			}]
 			size: 1.0d
 			tasks: [{
-				id: "2659F92AD382E36F"
-				item: "gtceu:iv_4a_energy_converter"
+				id: "651369E90C0BD74C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any IV Converter\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:iv_1a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_4a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_8a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_16a_energy_converter"
+								tag: { }
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: 2.5d

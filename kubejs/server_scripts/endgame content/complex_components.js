@@ -68,9 +68,9 @@ ServerEvents.recipes(event => {
             .EUt(eu);
 
         event.recipes.gtceu.component_part_assembly(`${tier}_super_magnetic_core`)
-            .itemInputs(`gtceu:long_magnetic_${magnetic1}_rod`,  `4x gtceu:magnetic_${magnetic2}_rod`, `6x gtceu:${wire2}_single_wire`,
-            `2x gtceu:long_${prim_material}_rod`, `64x gtceu:fine_${wire1}_wire`, `2x gtceu:${main_material}_tiny_fluid_pipe`)
-            .inputFluids(`gtceu:${magnetic2} 288`, `gtceu:liquid_helium 2500`)
+            .itemInputs(`2x gtceu:long_magnetic_${magnetic1}_rod`,  `4x gtceu:magnetic_${magnetic2}_rod`,
+            `gtceu:long_${prim_material}_rod`, `64x gtceu:fine_${wire1}_wire`, `2x gtceu:${main_material}_tiny_fluid_pipe`)
+            .inputFluids(`gtceu:liquid_helium 2500`)
             .itemOutputs(`kubejs:${tier}_super_magnetic_core`) 
             .duration(500)
             .EUt(eu);

@@ -869,8 +869,38 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "069128AB645C2532"
-				item: "gtceu:mv_4a_energy_converter"
+				id: "66FCFB498AD07107"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any MV Converter\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:mv_1a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_4a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_8a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_16a_energy_converter"
+								tag: { }
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: 7.5d
