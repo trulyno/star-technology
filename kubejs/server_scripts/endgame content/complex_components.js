@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
             .EUt(eu);
 
         event.recipes.gtceu.component_part_assembly(`${tier}_precision_drive_mechanism`)
-            .itemInputs(`gtceu:${prim_material}_frame`, `gtceu:${tier1Under}_robot_arm`, `2x gtceu:${tier1Under}_electric_motor`, `#gtceu:circuits/${tier1Under}`,
+            .itemInputs(`gtceu:${prim_material}_frame`, `gtceu:${tier1Under}_conveyor_module`, `2x gtceu:${tier1Under}_electric_motor`, `#gtceu:circuits/${tier1Under}`,
                 `2x gtceu:${secnd_material}_gear`, `8x gtceu:${prim_material}_round`)
             .inputFluids(`gtceu:lubricant 500`, `gtceu:${rubber} 1152`)
             .itemOutputs(`kubejs:${tier}_precision_drive_mechanism`) 

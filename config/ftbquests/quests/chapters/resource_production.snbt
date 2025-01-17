@@ -64,18 +64,75 @@
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
+			icon: {
+				Count: 1
+				id: "exnihilosequentia:dust"
+				tag: { }
+			}
 			id: "6781AB81FA054CD0"
-			tasks: [{
-				id: "7E33062A0A0FCCA1"
-				item: "exnihilosequentia:dust"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7E33062A0A0FCCA1"
+					item: "exnihilosequentia:dust"
+					type: "item"
+				}
+				{
+					id: "3DCC378A2057E894"
+					item: {
+						Count: 1
+						id: "xycraft_world:xychorium_gem_blue"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "26C4D2B9E181FB7B"
+					item: {
+						Count: 1
+						id: "xycraft_world:xychorium_gem_green"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7819FCF87FCF6741"
+					item: {
+						Count: 1
+						id: "xycraft_world:xychorium_gem_red"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "32A8006F9D7B860E"
+					item: {
+						Count: 1
+						id: "xycraft_world:xychorium_gem_dark"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5F40C7FBB6F602A6"
+					item: {
+						Count: 1
+						id: "xycraft_world:xychorium_gem_light"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "Waterlogged Dust Sieving"
 			x: -6.5d
 			y: -12.0d
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
+			icon: {
+				Count: 1
+				id: "exnihilosequentia:dust"
+				tag: { }
+			}
 			id: "7718CDD1E61BB47A"
 			tasks: [
 				{
@@ -126,6 +183,11 @@
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
+			icon: {
+				Count: 1
+				id: "minecraft:sand"
+				tag: { }
+			}
 			id: "1A5C2C6A089F7F96"
 			tasks: [
 				{
@@ -185,18 +247,102 @@
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
+			icon: {
+				Count: 1
+				id: "minecraft:sand"
+				tag: { }
+			}
 			id: "68DCCC639E6C7EFD"
-			tasks: [{
-				id: "3F169C593EAC7722"
-				item: "minecraft:sand"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3F169C593EAC7722"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "63F8F243802AFD5B"
+					item: {
+						Count: 1
+						id: "minecraft:kelp"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2D9E239950155FCD"
+					item: {
+						Count: 1
+						id: "minecraft:seagrass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "68C40048AC5080AB"
+					item: {
+						Count: 1
+						id: "minecraft:sea_pickle"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0A0C71B32A4D7538"
+					item: {
+						Count: 1
+						id: "exnihilosequentia:tube_coral_larva"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2C8C3962DFE63C5E"
+					item: {
+						Count: 1
+						id: "exnihilosequentia:brain_coral_larva"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2BB67D5CA85E1A6F"
+					item: {
+						Count: 1
+						id: "exnihilosequentia:bubble_coral_larva"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1333A59997BE95C7"
+					item: {
+						Count: 1
+						id: "exnihilosequentia:fire_coral_larva"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0F731DE890C26B45"
+					item: {
+						Count: 1
+						id: "exnihilosequentia:horn_coral_larva"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "Waterlogged Sand Sieving"
 			x: -7.5d
 			y: -12.0d
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
+			icon: {
+				Count: 1
+				id: "minecraft:gravel"
+				tag: { }
+			}
 			id: "307E479B78B92BF6"
 			tasks: [
 				{
@@ -256,6 +402,11 @@
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
+			icon: {
+				Count: 1
+				id: "exnihilosequentia:crushed_blackstone"
+				tag: { }
+			}
 			id: "6C0C9B95A8DAB5D1"
 			tasks: [
 				{

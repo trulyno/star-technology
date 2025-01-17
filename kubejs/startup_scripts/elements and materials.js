@@ -598,7 +598,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
         .cableProperties(V('uhv'), 512, 0, true)
-        .rotorStats(2800, 660, 3, 96000);
+        .rotorStats(3200, 660, 3, 96000);
 
     event.create('ancient_runicalium')
         .ingot(2)
@@ -610,7 +610,7 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame, fine_wire)
         .cableProperties(V('uev'), 1024, 0, true)
-        .rotorStats(5000, 720, 3, 128000);
+        .rotorStats(6400, 720, 3, 128000);
 
     // Nuclear Reactor Materials
     event.create('austenitic_stainless_steel_304')

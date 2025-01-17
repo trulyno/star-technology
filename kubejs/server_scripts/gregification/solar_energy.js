@@ -196,62 +196,34 @@ ServerEvents.recipes(event => {
     //     .EUt(1000000)
     //     .circuit(1);
 
-    event.recipes.gtceu.assembler('basic_solar_generator')
-        .itemInputs('3x gtceu:double_steel_plate', '3x gtceu:silicon_wafer', 'solarflux:photovoltaic_cell_1')
-        .inputFluids('gtceu:soldering_alloy 144')
-        .itemOutputs('solarflux:sp_1')
-        .duration(200)
-        .EUt(28);
+    function solarcreation(type, material, wafer)
+        {
+        event.recipes.gtceu.assembler(`solar_generator_${type}`)
+            .itemInputs(`3x gtceu:double_${material}_plate`, `3x gtceu:${wafer}_wafer`, `solarflux:photovoltaic_cell_${type}`)
+            .inputFluids(`gtceu:soldering_alloy ${144*type}`)
+            .itemOutputs(`solarflux:sp_${type}`)
+            .duration(200)
+            .EUt(`${8*(4**type)}`);
+        }
+    function solarcreation2(type, material, wafer, circuit)
+            {
+            event.recipes.gtceu.assembler(`solar_generator_${type}`)
+                .itemInputs(`gtceu:dense_${material}_plate`, `gtceu:${wafer}_wafer`, `4x solarflux:sp_${type-1}`, `#gtceu:circuits/${circuit}`)
+                .inputFluids(`gtceu:soldering_alloy ${144*(type)}`)
+                .itemOutputs(`solarflux:sp_${type}`)
+                .duration(200)
+                .EUt(`${8*(4**(type))}`);
+            }
 
-    event.recipes.gtceu.assembler('regular_solar_generator')
-        .itemInputs('3x gtceu:double_aluminium_plate', '3x gtceu:silicon_wafer', 'solarflux:photovoltaic_cell_2')
-        .inputFluids('gtceu:soldering_alloy 288')
-        .itemOutputs('solarflux:sp_2')
-        .duration(200)
-        .EUt(80);
-
-    event.recipes.gtceu.assembler('intermediate_solar_generator')
-        .itemInputs('3x gtceu:double_stainless_steel_plate', '3x gtceu:silicon_wafer', 'solarflux:photovoltaic_cell_3')
-        .inputFluids('gtceu:soldering_alloy 432')
-        .itemOutputs('solarflux:sp_3')
-        .duration(200)
-        .EUt(460);
-
-    event.recipes.gtceu.assembler('advanced_solar_generator')
-        .itemInputs('3x gtceu:double_titanium_plate', '3x gtceu:silicon_wafer', 'solarflux:photovoltaic_cell_4')
-        .inputFluids('gtceu:soldering_alloy 576')
-        .itemOutputs('solarflux:sp_4')
-        .duration(200)
-        .EUt(1024);
-
-    event.recipes.gtceu.assembler('elite_solar_generator')
-        .itemInputs('3x gtceu:double_tungsten_steel_plate', '3x gtceu:silicon_wafer', 'solarflux:photovoltaic_cell_5')
-        .inputFluids('gtceu:soldering_alloy 864')
-        .itemOutputs('solarflux:sp_5')
-        .duration(200)
-        .EUt(4600);
-
-    event.recipes.gtceu.assembler('ultimate_solar_generator')
-        .itemInputs('3x gtceu:double_rhodium_plated_palladium_plate', '3x gtceu:silicon_wafer', 'solarflux:photovoltaic_cell_6')
-        .inputFluids('gtceu:soldering_alloy 1008')
-        .itemOutputs('solarflux:sp_6')
-        .duration(200)
-        .EUt(16000);
-
-    event.recipes.gtceu.assembler('solar_generator_7')
-        .itemInputs('4x solarflux:sp_6', '#gtceu:circuits/zpm')
-        .inputFluids('gtceu:soldering_alloy 1008')
-        .itemOutputs('solarflux:sp_7')
-        .duration(200)
-        .EUt(102400);
-
-    event.recipes.gtceu.assembler('solar_generator_8')
-        .itemInputs('4x solarflux:sp_7', '#gtceu:circuits/uv')
-        .inputFluids('gtceu:soldering_alloy 1008')
-        .itemOutputs('solarflux:sp_8')
-        .duration(200)
-        .EUt(160000);
-
+    solarcreation('1','steel','silicon')
+    solarcreation('2','aluminium','silicon')
+    solarcreation('3','stainless_steel','phosphorus')
+    solarcreation('4','titanium','phosphorus')
+    solarcreation('5','tungsten_steel','naquadah')
+    solarcreation('6','rhodium_plated_palladium','naquadah')
+    solarcreation2('7','naquadah_alloy','neutronium', 'zpm')
+    solarcreation2('8','darmstadtium','neutronium', 'uv')
+       
     // event.recipes.gtceu.assembler('basic_battery')
     //     .itemInputs('gtceu:ulv_machine_hull', 'solarflux:basic_battery_cell')
     //     .itemOutputs('solarflux:basic_battery')

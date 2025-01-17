@@ -2264,7 +2264,7 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["1EAFC66AEAE5A7A2"]
+			dependencies: ["4F170C394411B94F"]
 			id: "074A6D7A3072E11F"
 			size: 1.0d
 			tasks: [{
@@ -2272,7 +2272,7 @@
 				item: "gtceu:indium_dust"
 				type: "item"
 			}]
-			x: 29.0d
+			x: 30.5d
 			y: 12.0d
 		}
 		{
@@ -2295,7 +2295,7 @@
 				item: "gtceu:indium_gallium_phosphide_dust"
 				type: "item"
 			}]
-			x: 31.0d
+			x: 32.5d
 			y: 12.0d
 		}
 		{
@@ -2628,6 +2628,21 @@
 			}]
 			x: 31.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["1EAFC66AEAE5A7A2"]
+			id: "4F170C394411B94F"
+			tasks: [{
+				id: "2D69326B61A951BB"
+				item: {
+					Count: 1
+					id: "gtceu:indium_oxide_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 29.0d
+			y: 12.0d
 		}
 	]
 	title: "Processing Lines (Chap 1,2,3)"

@@ -1673,6 +1673,67 @@
 			x: -9.0d
 			y: 5.75d
 		}
+		{
+			can_repeat: true
+			dependencies: ["481D42E3473FDCED"]
+			description: ["Waaaaaaaa"]
+			hide: true
+			hide_dependency_lines: true
+			id: "6C39CD86546B3C64"
+			optional: true
+			rewards: [{
+				command: "/execute in minecraft:overworld run tp @p 0 -72 0"
+				icon: {
+					Count: 1
+					id: "minecraft:grass_block"
+					tag: { }
+				}
+				id: "47BEEE08B9727341"
+				type: "command"
+			}]
+			tasks: [{
+				id: "39C471CAFC4E05DC"
+				title: "I wanna go home..."
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["2EDE996312B1C69E"]
+			id: "481D42E3473FDCED"
+			optional: true
+			tasks: [{
+				id: "10FD7D062F28C45C"
+				title: "So You Got Stuck"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -10.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2EDE996312B1C69E"]
+			id: "57246BEEC82C5E15"
+			optional: true
+			rewards: [{
+				command: "/gamestage add @a one"
+				icon: {
+					Count: 1
+					id: "ae2:singularity"
+					tag: { }
+				}
+				id: "48AD09B9F8B0BCA2"
+				type: "command"
+			}]
+			tasks: [{
+				id: "217A3F4E8BE2FCB0"
+				title: "Gimme My Gamestage"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -10.0d
+		}
 	]
 	title: "Making the Classic Stargate"
 }
