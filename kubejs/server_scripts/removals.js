@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         'expatternprovider:ex_charger', 'expatternprovider:crystal_fixer', 'expatternprovider:canner', 'exmachinis:item_buffer', 'ae2:crystal_resonance_generator', 'ae2:vibration_chamber',
         'exnihilosequentia:mechanical_sieve', 'exnihilosequentia:mechanical_hammer', 'systeams:frost_boiler', 'thermalendergy:melodium_ingot', 'thermalendergy:prismalium_ingot', 'thermalendergy:stellarium_ingot',
         'thermalendergy:melodium_block', 'thermalendergy:prismalium_block', 'thermalendergy:stellarium_block', 'thermalendergy:melodium_nugget', 'thermalendergy:prismalium_nugget','thermalendergy:stellarium_nugget',
-        'exnihilosequentia:golden_mesh', 'expatternprovider:circuit_cutter'
+        'exnihilosequentia:golden_mesh', 'expatternprovider:circuit_cutter', 'minecraft:mycelium'
     ];
     const toRemoveId = ['thermal:slime_mushroom_spores', 'thermal_extra:sticky_ball_to_paper', 'farmersdelight:paper_from_tree_bark',
         'create:pressing/sugar_cane', 'exnihilo:fluid_item/ens_slime', 'gtceu:shaped/good_circuit_board',

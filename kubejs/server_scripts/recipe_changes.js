@@ -604,6 +604,7 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(600);
 
+    event.recipes.create.item_application('minecraft:mycelium', ['minecraft:grass_block', 'exnihilosequentia:mycelium_spores']);
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {
