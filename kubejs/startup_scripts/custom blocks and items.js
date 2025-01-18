@@ -33,6 +33,8 @@ StartupEvents.registry('item', event => {
 
     event.create('coin')
         .displayName('StarT Coin')
+        .rarity('EPIC')
+        .tooltip('§7Spend these coins in the store chapter of the questbook')
         .texture('kubejs:item/coin');
 
     // event.create('uhv_emitter')
