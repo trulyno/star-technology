@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UHV])
         .dimension("sgjourney:abydos");
 
-    event.recipes.gtceu.dimensional_finder('lantea_coordinate_crystal')
+    /*event.recipes.gtceu.dimensional_finder('lantea_coordinate_crystal')
         .itemInputs('kubejs:coordinate_crystal', 'minecraft:prismarine', 'gtceu:uev_sensor')
         .inputFluids('gtceu:rhexis 9072') //its just a fluid you cant make
         .chancedOutput('kubejs:lantea_coordinate_crystal', 250, 50)
@@ -89,6 +89,6 @@ ServerEvents.recipes(event => {
         .chancedOutput('kubejs:void_coordinate_crystal', 250, 50)
         .duration(12000)
         .EUt(4*GTValues.VHA[GTValues.UXV])
-        .dimension("minecraft:cavum_tenebrae");
+        .dimension("minecraft:cavum_tenebrae");*/
 
 });

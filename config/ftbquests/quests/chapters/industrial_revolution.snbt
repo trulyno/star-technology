@@ -433,8 +433,8 @@
 				item: "gtceu:lv_fluid_solidifier"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 0.5d
+			x: -8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2AFD24A844E49C42"]
@@ -450,8 +450,8 @@
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 2.0d
+			x: -8.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -519,8 +519,8 @@
 				item: "thermal:obsidian_glass"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 0.5d
+			x: -8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1520,7 +1520,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [
 				{
 					id: "19DAF95B3B02C898"
@@ -1533,13 +1533,14 @@
 					type: "item"
 				}
 			]
-			x: -12.5d
+			x: -11.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["35D6B5C30A3A2AE0"]
 			description: ["Allows you to charge items with create and RF, gets replaced by the Polarizer."]
 			id: "75BF415FDA4AB79F"
+			optional: true
 			rewards: [{
 				id: "132FAA64056A92B7"
 				item: "kubejs:coin"
@@ -1550,12 +1551,13 @@
 				item: "create_new_age:energiser_t1"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 1.5d
+			x: -13.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["75BF415FDA4AB79F"]
 			id: "04876D3FDD4BE6F7"
+			optional: true
 			rewards: [{
 				id: "5D789862F72388DD"
 				item: "kubejs:coin"
@@ -1566,12 +1568,13 @@
 				item: "create_new_age:energiser_t2"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 3.0d
+			x: -13.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["04876D3FDD4BE6F7"]
 			id: "34C1C09B74C46FC4"
+			optional: true
 			rewards: [{
 				count: 2
 				id: "530D9311FA779FD8"
@@ -1584,12 +1587,13 @@
 				item: "create_new_age:energiser_t3"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 4.5d
+			x: -13.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["35D6B5C30A3A2AE0"]
 			id: "125AA2F183B4FBB9"
+			optional: true
 			rewards: [{
 				id: "63CCF2CF19EFF471"
 				item: "kubejs:coin"
@@ -1600,12 +1604,13 @@
 				item: "create_new_age:magnetite_block"
 				type: "item"
 			}]
-			x: -13.5d
-			y: 1.5d
+			x: -11.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["125AA2F183B4FBB9"]
 			id: "574E12BF11F87405"
+			optional: true
 			rewards: [{
 				id: "0F6620276F589F98"
 				item: "kubejs:coin"
@@ -1616,12 +1621,13 @@
 				item: "create_new_age:redstone_magnet"
 				type: "item"
 			}]
-			x: -13.5d
+			x: -11.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["574E12BF11F87405"]
 			id: "5FD374ACECB3E571"
+			optional: true
 			rewards: [{
 				id: "7F063396C160F9C5"
 				item: "kubejs:coin"
@@ -1632,12 +1638,13 @@
 				item: "create_new_age:layered_magnet"
 				type: "item"
 			}]
-			x: -12.0d
+			x: -11.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["5FD374ACECB3E571"]
 			id: "32EFD02E4B6969EC"
+			optional: true
 			rewards: [{
 				id: "3F8CD5D0B5FEE79F"
 				item: "kubejs:coin"
@@ -1648,7 +1655,7 @@
 				item: "create_new_age:fluxuated_magnetite"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -11.5d
 			y: 6.5d
 		}
 		{
@@ -1657,6 +1664,7 @@
 				"32EFD02E4B6969EC"
 			]
 			id: "1510334BF8ED8EBC"
+			optional: true
 			rewards: [{
 				count: 2
 				id: "5034A8F9F0DAB02D"
@@ -1669,13 +1677,14 @@
 				item: "create_new_age:netherite_magnet"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 6.5d
+			x: -11.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["35D6B5C30A3A2AE0"]
 			description: ["Can be used to transfer 1,024 RF around your base. (Can go through walls)"]
 			id: "714E51B6F0863FA6"
+			optional: true
 			rewards: [{
 				id: "18BA41FB4C25940D"
 				item: "kubejs:coin"
@@ -1686,13 +1695,14 @@
 				item: "create_new_age:copper_wire"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 2.5d
+			x: -10.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["714E51B6F0863FA6"]
 			description: ["Can be used to transfer 2,048 RF around your base. (Can go through walls)"]
 			id: "24EC88E9B8205348"
+			optional: true
 			rewards: [{
 				id: "1E0F138D5B9169DB"
 				item: "kubejs:coin"
@@ -1703,13 +1713,14 @@
 				item: "create_new_age:overcharged_iron_wire"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 4.0d
+			x: -10.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["24EC88E9B8205348"]
 			description: ["Can be used to transfer 4,096 RF around your base. (Can go through walls)"]
 			id: "3CD2FE0563B226A7"
+			optional: true
 			rewards: [{
 				id: "1A538CA5A0B836AB"
 				item: "kubejs:coin"
@@ -1720,13 +1731,14 @@
 				item: "create_new_age:overcharged_golden_wire"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 5.5d
+			x: -10.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3CD2FE0563B226A7"]
 			description: ["Can be used to transfer 8,192 RF around your base. (Can go through walls)"]
 			id: "539B5C30BFD9AB6B"
+			optional: true
 			rewards: [{
 				count: 2
 				id: "4FCA0EA49FE0E507"
@@ -1739,8 +1751,8 @@
 				item: "create_new_age:overcharged_diamond_wire"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 5.5d
+			x: -10.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["12C9427A04A2F550"]

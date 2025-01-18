@@ -395,7 +395,7 @@
 				item: "gtceu:biphenyl_dust"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: -2.0d
 		}
 		{
@@ -416,7 +416,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 7.5d
 			y: -2.0d
 		}
 		{

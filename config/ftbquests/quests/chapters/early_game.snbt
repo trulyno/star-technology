@@ -2023,6 +2023,15 @@
 			dependencies: ["2D1184752D7ACA66"]
 			description: ["The heart of Primative Machines"]
 			id: "64E79272B5003119"
+			rewards: [{
+				id: "462CB559924C7799"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "16F78BE1CAEEA2A5"
 				item: {
