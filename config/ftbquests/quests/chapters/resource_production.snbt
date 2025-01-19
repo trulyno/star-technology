@@ -731,8 +731,12 @@
 			dependencies: ["5F9FBAC1FB36B1D3"]
 			id: "10C7D4ED5B634A07"
 			tasks: [{
-				id: "5644E2815B634A9A"
-				item: "gtceu:chromite_sludge_dust"
+				id: "0C0552F481A68B32"
+				item: {
+					Count: 1
+					id: "gtceu:chromium_dust"
+					tag: { }
+				}
 				type: "item"
 			}]
 			x: 5.0d
@@ -742,8 +746,12 @@
 			dependencies: ["5F9FBAC1FB36B1D3"]
 			id: "69406C89BCA5EE71"
 			tasks: [{
-				id: "7558B71FFBE74936"
-				item: "gtceu:rare_sludge_dust"
+				id: "27069DE4B9B0DAD1"
+				item: {
+					Count: 1
+					id: "gtceu:rare_earth_dust"
+					tag: { }
+				}
 				type: "item"
 			}]
 			x: 5.5d
@@ -753,8 +761,12 @@
 			dependencies: ["5F9FBAC1FB36B1D3"]
 			id: "0BA5955810E139F6"
 			tasks: [{
-				id: "75CAB9829CFC0502"
-				item: "gtceu:vanadium_magnetite_sludge_dust"
+				id: "7E743ED098B024AA"
+				item: {
+					Count: 1
+					id: "gtceu:vanadium_magnetite_dust"
+					tag: { }
+				}
 				type: "item"
 			}]
 			x: 5.0d

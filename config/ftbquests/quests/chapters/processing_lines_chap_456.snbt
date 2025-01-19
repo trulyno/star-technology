@@ -395,8 +395,8 @@
 				item: "gtceu:biphenyl_dust"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
+			x: 0.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["073FA13EEEA78C5F"]
@@ -416,8 +416,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: -2.0d
+			x: 2.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["721A2D614DBBAECC"]
@@ -439,8 +439,8 @@
 				item: "gtceu:pcb_coolant_bucket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -2.0d
+			x: 4.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["111033FEFA89BA91"]
@@ -1892,6 +1892,96 @@
 			}]
 			x: 18.5d
 			y: 9.0d
+		}
+		{
+			dependencies: [
+				"361BFCF1A91F1CA8"
+				"23DB3E962498AB2B"
+			]
+			id: "239DC1BC1F14A807"
+			rewards: [{
+				count: 3
+				id: "63D513C6571D8E2A"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "27C9AEA9FA921BD1"
+				item: {
+					Count: 1
+					id: "gtceu:polyphenylene_sulfide_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"06D8713EE9C80742"
+				"64F5995C37F0795A"
+			]
+			id: "23DB3E962498AB2B"
+			tasks: [{
+				id: "0B13A2834B1D80D1"
+				item: {
+					Count: 1
+					id: "gtceu:dichlorobenzene_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			id: "361BFCF1A91F1CA8"
+			tasks: [{
+				id: "621D74C07227A1DD"
+				item: {
+					Count: 1
+					id: "gtceu:sodium_sulfide_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			id: "64F5995C37F0795A"
+			tasks: [{
+				id: "39E152C8E04D6A09"
+				item: {
+					Count: 1
+					id: "gtceu:chlorine_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			id: "06D8713EE9C80742"
+			tasks: [{
+				id: "488C5FBBECF8F5CD"
+				item: {
+					Count: 1
+					id: "gtceu:benzene_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.5d
 		}
 	]
 	title: "Processing Lines (Chap 4,5,6)"

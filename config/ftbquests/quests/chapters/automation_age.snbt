@@ -778,6 +778,7 @@
 			dependencies: [
 				"235423100BBE5C81"
 				"1646D6D439B260D3"
+				"250C897A70DB797F"
 			]
 			description: ["The heart of every EV machine."]
 			id: "74749B089D50329C"
@@ -864,6 +865,7 @@
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
+			hide_dependent_lines: true
 			id: "5B70B63D4157594F"
 			rewards: [{
 				count: 2
@@ -2243,6 +2245,7 @@
 			dependencies: [
 				"39FF89B370D09B88"
 				"68865F1DDBFFFACE"
+				"6A57B03345FC6D99"
 			]
 			dependency_requirement: "one_completed"
 			hide_dependent_lines: true
@@ -2257,7 +2260,11 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
+			dependencies: [
+				"1820787D031EAB15"
+				"5B70B63D4157594F"
+			]
+			dependency_requirement: "one_completed"
 			description: ["In the Mechanics Page many important notes about Gregtech in particular can be found."]
 			id: "775AAF108AFAF707"
 			tasks: [{

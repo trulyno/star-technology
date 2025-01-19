@@ -519,51 +519,6 @@ ServerEvents.recipes(event => {
         event.recipes.create.haunting(Item.of(prop.output), Item.of(prop.input));
     });
 
-    //UHV Energy Type Hatch Fix
-
-    event.replaceInput(
-        {output: ['gtceu:uhv_energy_input_hatch', 'gtceu:uhv_energy_output_hatch']},
-        'gtceu:ruthenium_trinium_americium_neutronate_double_wire',
-        'kubejs:uhv_voltage_coil'
-    );
-
-    //UHV transformer fix
-    event.shaped(Item.of('gtceu:uhv_transformer_1a'), [
-        'UCC',
-        'KH ',
-        'UCC'], {
-        K: 'gtceu:cerium_tritelluride_single_cable',
-        U: 'gtceu:uhpic_chip',
-        C: 'gtceu:europium_single_cable',
-        H: 'gtceu:uhv_machine_hull'
-    });
-    event.shaped(Item.of('gtceu:uhv_transformer_2a'), [
-        'UCC',
-        'KH ',
-        'UCC'], {
-        K: 'gtceu:cerium_tritelluride_double_cable',
-        U: 'gtceu:uhpic_chip',
-        C: 'gtceu:europium_double_cable',
-        H: 'gtceu:uhv_machine_hull'
-    });
-    event.shaped(Item.of('gtceu:uhv_transformer_4a'), [
-        'UCC',
-        'KH ',
-        'UCC'], {
-        K: 'gtceu:cerium_tritelluride_quadruple_cable',
-        U: 'gtceu:uhpic_chip',
-        C: 'gtceu:europium_quadruple_cable',
-        H: 'gtceu:uhv_machine_hull'
-    });
-    event.shaped(Item.of('gtceu:uhv_transformer_16a'), [
-        'UCC',
-        'KH ',
-        'UCC'], {
-        K: 'gtceu:cerium_tritelluride_hex_cable',
-        U: 'gtceu:uhpic_chip',
-        C: 'gtceu:europium_hex_cable',
-        H: 'gtceu:uhv_machine_hull'
-    });
     event.recipes.gtceu.circuit_assembler('data_dna_disk')
         .itemInputs('kubejs:draconic_wetware_printed_circuit_board','2x #gtceu:circuits/uhv','24x kubejs:qram_chip', 
             '16x kubejs:3d_nor_chip','16x kubejs:3d_nand_chip','32x gtceu:fine_iron_selenide_over_strontium_titanium_oxide_wire')

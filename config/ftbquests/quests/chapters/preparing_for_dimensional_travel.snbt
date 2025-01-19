@@ -158,6 +158,7 @@
 				"73D0DC357821B395"
 				"5BDA17962F4630EB"
 				"4F6B1F4261874B65"
+				"783865A56909D3C7"
 			]
 			id: "11D51899B980082B"
 			rewards: [{
@@ -198,7 +199,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["44B43694312BAAC8"]
+			dependencies: [
+				"44B43694312BAAC8"
+				"0C19C040CA121E3B"
+			]
 			id: "581B9922CC4B457F"
 			rewards: [{
 				id: "354EE1013EA404DB"
@@ -1733,6 +1737,24 @@
 			}]
 			x: -1.0d
 			y: -10.0d
+		}
+		{
+			dependencies: [
+				"35829E28221CB70E"
+				"074A6D7A3072E11F"
+			]
+			id: "783865A56909D3C7"
+			tasks: [{
+				id: "4639AA5380F2CC8F"
+				item: {
+					Count: 1
+					id: "gtceu:indium_tin_lead_cadmium_soldering_alloy_ingot"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.25d
 		}
 	]
 	title: "Making the Classic Stargate"

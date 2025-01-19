@@ -249,7 +249,7 @@ elementRegistry(event => {
     elem('echo_r', -1, -1, 'Ec');
 
     // Abydos Materials
-    elem('zapolgium', 141, 217, 'Zg');
+    elem('zapolgium', 141, 217, 'Zg')
     elem('akreyrium', -1, -1, 'Ak');
 
     // Nether Materials
@@ -322,8 +322,10 @@ elementRegistry(event => {
             2. Voltage, amperage, loss per block, is superconductor -> for a super conductor, set loss as 0 and is super conductor as true
             3. Voltage, amperage, loss per block, is super conductor and critical temperature
         .toolProperties()
-        .fluidPipeProperties()
-        .itemPipeProperties()
+        .fluidPipeProperties() ->
+            (int maxTemp, int throughput [tiny pipe], boolean gasProof, boolean acidProof, boolean cryoProof, boolean plasmaProof)
+        .itemPipeProperties() ->
+            (int priority, float stacksPerSec)
         .addDefaultEnchant()
         
 */
@@ -379,7 +381,7 @@ materialRegistry(event => {
     GTMaterials.Naquadah.addFlags(dense_plate);
     GTMaterials.NaquadahEnriched.addFlags(dense_plate, rotor, gear, frame);
     GTMaterials.Naquadria.addFlags(dense_plate);
-    GTMaterials.Neutronium.addFlags(foil, small_gear);
+    GTMaterials.Neutronium.addFlags(foil, small_gear,rotor);
     GTMaterials.Europium.addFlags(small_spring);
     GTMaterials.Zirconium.addFlags(fine_wire); 
     GTMaterials.RedSteel.addFlags(rod, frame);
@@ -410,7 +412,9 @@ materialRegistry(event => {
         .element(GTElements.get('zapolgium'))
         .color(0xcc00cc)
         .iconSet(DULL)
-        .blastTemp(10799, 'highest', VA('uhv'), 1600);
+        .blastTemp(10799, 'highest', VA('uhv'), 1600)
+        .flags(plates, rod, frame)
+        .fluidPipeProperties(18000, 7200, true,true,true,true);;
 
     event.create('xeproda')
         .ingot()
@@ -1328,6 +1332,7 @@ materialRegistry(event => {
         .components('1x zirconium', '1x selenium', '2x iodine')
         .color(0x6600cc)
         .iconSet(DULL)
+        .flags(spring)
         .blastTemp(8900, 'higher', VA('luv'), 4000)
         .cableProperties(V('uhv'), 8, 16, false);
 
@@ -1363,7 +1368,7 @@ materialRegistry(event => {
         .iconSet(DULL)
         .flags(fine_wire, bolt_and_screw)
         .blastTemp(10299, 'highest', VA('uv'), 2500)
-        .cableProperties(V('uhv'), 4, 0, true);
+        .cableProperties(V('uhv'), 4, 12, false);
 
     event.create('star_steel')
         .ingot()
@@ -1511,50 +1516,50 @@ materialRegistry(event => {
         .components('19x carbon','12x hydrogen','3x oxygen') 
         .color(0xccbba7)
         .flags(no_decomp)
-        .flags(foil, plates, ring);
+        .flags(foil, plates, ring, plates)
+        .fluidPipeProperties(550, 600, true, true, true, false);
     
     // SiC/Bi2Te3 Line
 
     event.create('sodium_borohydride')
         .dust()
         .components('1x sodium','1x boron','4x hydrogen')
-        .color(0xE3DEC8)
+        .color(0xE3DEC8);
 
     event.create('nitrate')
         .gas()
         .components('1x nitrogen', '3x oxygen')
-        .color(0xDBC365)
+        .color(0xDBC365);
 
     event.create('bismuth_3_nitrate')
         .dust()
         .components('1x bismuth', '3x nitrate')
-        .color(0xDEDBCD)
+        .color(0xDEDBCD);
 
     event.create('sodium_nitrate')
         .dust()
         .components('1x sodium','1x nitrogen','3x oxygen')
-        .color(0xE6E5E5)
+        .color(0xE6E5E5);
 
     event.create('diborane')
         .gas()
         .components('2x boron','6x hydrogen')
-        .color(0xFDFFE1)
+        .color(0xFDFFE1);
 
     event.create('silicon_carbide')
         .dust()
         .components('1x silicon', '1x carbon')
-        .color(0xB79F8D)
+        .color(0xB79F8D);
         
     event.create('bismuth_tritelluride')
         .dust()
-        .flags(no_decomp)
         .components('2x bismuth', '3x tellurium')
-        .color(0xDEB18E)
+        .color(0xDEB18E);
 
     event.create('silicon_carbide_over_bismuth_tritelluride')
         .dust()
         .components('1x silicon_carbide', '1x bismuth_tritelluride')
-        .color(0x86C455)
+        .color(0x86C455);
 
      // Large Multis
 

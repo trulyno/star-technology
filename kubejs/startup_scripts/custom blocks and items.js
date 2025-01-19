@@ -348,7 +348,7 @@ StartupEvents.registry('item', event => {
     event.create('uhv_voltage_coil')
         .texture('kubejs:item/component_part/uhv_voltage_coil')
         .displayName('Ultra High Voltage Coil')
-        .tooltip('Ultimate+ Coil');
+        .tooltip('Peppermint Coil');
     /*event.create('uev_voltage_coil')
         .texture('kubejs:item/component_part/uev_voltage_coil')
         .displayName('Ultra Excessive Voltage Coil')

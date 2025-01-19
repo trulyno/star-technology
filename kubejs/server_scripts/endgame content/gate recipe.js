@@ -391,7 +391,7 @@ ServerEvents.recipes(event => {
             .itemInputs('14x kubejs:ancient_stargate_ring_block', '9x kubejs:ancient_stargate_chevron_block', 'kubejs:ancient_stargate_base_block')
             .inputFluids('gtceu:naquadria 72000', 'gtceu:liquid_nether_air 250000', 'gtceu:liquid_ender_air 250000')
             .itemOutputs('sgjourney:milky_way_stargate')
-            .duration(48000)
+            .duration(64000)
             .EUt(GTValues.VA[GTValues.UEV]);
 
 });
