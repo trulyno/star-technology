@@ -484,6 +484,11 @@
 		}
 		{
 			dependencies: ["2F87FC1D5BB43220"]
+			icon: {
+				Count: 1
+				id: "gtceu:echo_r_bucket"
+				tag: { }
+			}
 			id: "239A0034C8425661"
 			rewards: [{
 				id: "3F68400BC1C19CFF"
@@ -494,11 +499,19 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "0F233B828108A0AF"
-				item: "gtceu:echo_r_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0F233B828108A0AF"
+					item: "gtceu:echo_r_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7D6A01CC1134C595"
+					type: "checkmark"
+				}
+			]
+			title: "Echo Fluid"
 			x: -3.0d
 			y: 0.5d
 		}

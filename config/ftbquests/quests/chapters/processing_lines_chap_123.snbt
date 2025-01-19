@@ -314,6 +314,7 @@
 			y: 17.5d
 		}
 		{
+			dependencies: ["21D7E7ED7808C8C4"]
 			id: "50FC2373E2304403"
 			size: 1.0d
 			tasks: [{
@@ -2374,6 +2375,11 @@
 			y: 9.0d
 		}
 		{
+			dependencies: [
+				"2F8B2A4F4DEB35C8"
+				"6EAC26E5BD8392DC"
+			]
+			dependency_requirement: "one_completed"
 			id: "34F84E36E3B0527E"
 			tasks: [
 				{
@@ -2486,46 +2492,85 @@
 		}
 		{
 			dependencies: ["556B952A01A153DE"]
+			icon: {
+				Count: 1
+				id: "gtceu:uranium_hexafluoride_bucket"
+				tag: { }
+			}
 			id: "43640ABB71BD67F6"
-			tasks: [{
-				id: "078586DCB9EFB712"
-				item: {
-					Count: 1
-					id: "gtceu:uranium_hexafluoride_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "078586DCB9EFB712"
+					item: {
+						Count: 1
+						id: "gtceu:uranium_hexafluoride_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "218881CD55FF97EF"
+					type: "checkmark"
+				}
+			]
+			title: "Uranium Hexafluoride"
 			x: 26.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["43640ABB71BD67F6"]
+			icon: {
+				Count: 1
+				id: "gtceu:enriched_uranium_hexafluoride_bucket"
+				tag: { }
+			}
 			id: "3E3103622B9679C6"
-			tasks: [{
-				id: "3E0750C756C22256"
-				item: {
-					Count: 1
-					id: "gtceu:enriched_uranium_hexafluoride_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "3E0750C756C22256"
+					item: {
+						Count: 1
+						id: "gtceu:enriched_uranium_hexafluoride_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "17BAB43D98859E6C"
+					type: "checkmark"
+				}
+			]
+			title: "Enriched Uranium Hexafluoride"
 			x: 27.5d
 			y: 8.0d
 		}
 		{
 			dependencies: ["43640ABB71BD67F6"]
+			icon: {
+				Count: 1
+				id: "gtceu:depleted_uranium_hexafluoride_bucket"
+				tag: { }
+			}
 			id: "3FCD76E28A1A3245"
-			tasks: [{
-				id: "5101F051D3F2DB47"
-				item: {
-					Count: 1
-					id: "gtceu:depleted_uranium_hexafluoride_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "5101F051D3F2DB47"
+					item: {
+						Count: 1
+						id: "gtceu:depleted_uranium_hexafluoride_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "3D62701CDC63FE2A"
+					type: "checkmark"
+				}
+			]
+			title: "Depleted Uranium Hexafluoride"
 			x: 27.5d
 			y: 10.0d
 		}

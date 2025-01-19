@@ -249,7 +249,7 @@ elementRegistry(event => {
     elem('echo_r', -1, -1, 'Ec');
 
     // Abydos Materials
-    elem('zapolgium', 141, 217, 'Zg')
+    elem('zapolgium', 141, 217, 'Zg');
     elem('akreyrium', -1, -1, 'Ak');
 
     // Nether Materials
@@ -414,7 +414,7 @@ materialRegistry(event => {
         .iconSet(DULL)
         .blastTemp(10799, 'highest', VA('uhv'), 1600)
         .flags(plates, rod, frame)
-        .fluidPipeProperties(18000, 7200, true,true,true,true);;
+        .fluidPipeProperties(18000, 7200, true,true,true,true);
 
     event.create('xeproda')
         .ingot()

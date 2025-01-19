@@ -623,6 +623,11 @@
 				"5368269646BC0F27"
 				"54DA03D41AF36EF2"
 			]
+			icon: {
+				Count: 1
+				id: "gtceu:utopian_akreyrium_bucket"
+				tag: { }
+			}
 			id: "07AD6651D0B40E22"
 			rewards: [{
 				count: 2
@@ -636,11 +641,19 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			tasks: [{
-				id: "5A05B918B174851B"
-				item: "gtceu:utopian_akreyrium_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5A05B918B174851B"
+					item: "gtceu:utopian_akreyrium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "475E25C327C8C064"
+					type: "checkmark"
+				}
+			]
+			title: "Utopian Akreyrium"
 			x: -1.5d
 			y: -2.0d
 		}
@@ -1822,6 +1835,11 @@
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
+			icon: {
+				Count: 1
+				id: "gtceu:gritty_akreyrium_bucket"
+				tag: { }
+			}
 			id: "179A15014A5716B5"
 			rewards: [{
 				id: "51E73ECB550953E2"
@@ -1832,15 +1850,23 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "5EF95BB050993214"
-				item: {
-					Count: 1
-					id: "gtceu:gritty_akreyrium_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "5EF95BB050993214"
+					item: {
+						Count: 1
+						id: "gtceu:gritty_akreyrium_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "33EEC0E8C9F4719E"
+					type: "checkmark"
+				}
+			]
+			title: "Gritty Akreyrium"
 			x: -5.5d
 			y: -4.0d
 		}

@@ -906,6 +906,7 @@
 		}
 		{
 			dependencies: ["22BC7BDE5E132A30"]
+			description: ["More Information in the Resource Production Tab"]
 			icon: "gtceu:oil_bucket"
 			id: "1B0A7CF5BE5D71FE"
 			rewards: [{
@@ -933,8 +934,33 @@
 			}]
 			size: 1.0d
 			tasks: [{
-				id: "731F1719BD4A073C"
-				item: "gtceu:mv_fluid_drilling_rig"
+				id: "7857528275E1A624"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Fluid Drilling\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:mv_fluid_drilling_rig"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_fluid_drilling_rig"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_fluid_drilling_rig"
+								tag: { }
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: -3.5d
@@ -1004,7 +1030,16 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["22F56435C5449158"]
+			dependencies: [
+				"22F56435C5449158"
+				"51A0E48B2D04465E"
+				"3BD1916DC5208255"
+				"49B2298EC48C7F97"
+				"073989ADB68D1F92"
+				"61483DE9D5859D78"
+				"4BA7A1EBD0E9A16B"
+			]
+			dependency_requirement: "one_completed"
 			description: ["I hope you like having many distilation towers."]
 			id: "439D8AE6D3DC41AF"
 			rewards: [{

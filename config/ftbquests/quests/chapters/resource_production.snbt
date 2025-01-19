@@ -1,4 +1,5 @@
 {
+	autofocus_id: "4271ED1F225983D3"
 	consume_items: false
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
@@ -12,8 +13,8 @@
 		{
 			id: "07AEEE10574951B3"
 			linked_quest: "30B2688F8387048F"
-			x: 9.5d
-			y: -10.0d
+			x: 8.0d
+			y: -10.5d
 		}
 		{
 			id: "427772AB7DFDCDFA"
@@ -31,7 +32,31 @@
 			id: "2A14D8A1EB6C98A2"
 			linked_quest: "5F80268C02FAD5F6"
 			x: -4.0d
-			y: 0.5d
+			y: 0.0d
+		}
+		{
+			id: "401EBC740289B8B1"
+			linked_quest: "439D8AE6D3DC41AF"
+			shape: "gear"
+			size: 1.5d
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			id: "31A47C784DBE6072"
+			linked_quest: "22BC7BDE5E132A30"
+			shape: "gear"
+			size: 1.5d
+			x: 3.75d
+			y: 3.5d
+		}
+		{
+			id: "3A4F00438DDCEF22"
+			linked_quest: "0AB3A8C14C3A0512"
+			shape: "gear"
+			size: 1.5d
+			x: -8.5d
+			y: 6.5d
 		}
 	]
 	quests: [
@@ -446,7 +471,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -457,7 +482,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -468,7 +493,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -479,7 +504,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -490,7 +515,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -501,7 +526,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -512,7 +537,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -523,7 +548,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -534,7 +559,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -545,7 +570,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -556,7 +581,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -567,18 +592,30 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2D1184752D7ACA66"]
+			icon: {
+				Count: 1
+				id: "exnihilosequentia:sea_water_bucket"
+				tag: { }
+			}
 			id: "08C8FF38DC514F71"
-			tasks: [{
-				id: "30F469B02F7C4C74"
-				item: "exnihilosequentia:sea_water_bucket"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -5.0d
+			tasks: [
+				{
+					id: "30F469B02F7C4C74"
+					item: "exnihilosequentia:sea_water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5595EBC88AE94904"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["08C8FF38DC514F71"]
@@ -588,8 +625,8 @@
 				item: "gtceu:crushed_saltpeter_ore"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -6.0d
+			x: 2.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["08C8FF38DC514F71"]
@@ -599,19 +636,31 @@
 				item: "gtceu:crushed_rock_salt_ore"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -4.0d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["08C8FF38DC514F71"]
+			icon: {
+				Count: 1
+				id: "gtceu:salt_water_bucket"
+				tag: { }
+			}
 			id: "6B1E88A09583F979"
-			tasks: [{
-				id: "6C506A8DE68CE57B"
-				item: "gtceu:salt_water_bucket"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -5.0d
+			tasks: [
+				{
+					id: "6C506A8DE68CE57B"
+					item: "gtceu:salt_water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7D1250B31351EC7F"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -624,8 +673,8 @@
 				item: "gtceu:void_excavator"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -8.0d
+			x: 10.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -636,7 +685,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -646,8 +695,8 @@
 				item: "gtceu:crushed_coal_ore"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -12.0d
+			x: 8.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -657,8 +706,8 @@
 				item: "gtceu:crushed_gold_ore"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -12.0d
+			x: 7.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -668,8 +717,8 @@
 				item: "gtceu:crushed_pentlandite_ore"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -10.5d
+			x: 6.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -679,8 +728,8 @@
 				item: "gtceu:crushed_sodalite_ore"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -11.5d
+			x: 6.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -690,8 +739,8 @@
 				item: "gtceu:crushed_realgar_ore"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -11.5d
+			x: 9.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -701,31 +750,57 @@
 				item: "gtceu:crushed_silver_ore"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -10.5d
+			x: 10.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
+			icon: {
+				Count: 1
+				id: "gtceu:rare_ore_residue_bucket"
+				tag: { }
+			}
 			id: "5F9FBAC1FB36B1D3"
-			tasks: [{
-				id: "730687A7D9BFC8FE"
-				item: "gtceu:rare_ore_residue_bucket"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -8.0d
+			tasks: [
+				{
+					id: "730687A7D9BFC8FE"
+					item: "gtceu:rare_ore_residue_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "743602D21D048C82"
+					type: "checkmark"
+				}
+			]
+			title: "Rare Ore Residue"
+			x: 6.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
 			dependency_requirement: "one_started"
+			icon: {
+				Count: 1
+				id: "gtceu:raw_ore_slurry_bucket"
+				tag: { }
+			}
 			id: "4F3AB86CDC557B11"
-			tasks: [{
-				id: "0559DAC6387263AA"
-				item: "gtceu:raw_ore_slurry_bucket"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -6.0d
+			tasks: [
+				{
+					id: "0559DAC6387263AA"
+					item: "gtceu:raw_ore_slurry_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6CD18769DD404E96"
+					type: "checkmark"
+				}
+			]
+			title: "Raw Ore Slurry"
+			x: 6.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
@@ -739,8 +814,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -9.0d
+			x: 3.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
@@ -754,8 +829,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
-			y: -8.0d
+			x: 4.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
@@ -769,8 +844,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -7.0d
+			x: 3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
@@ -780,8 +855,8 @@
 				item: "ae2:sky_dust"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -8.0d
+			x: 3.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["4F3AB86CDC557B11"]
@@ -791,8 +866,8 @@
 				item: "gtceu:crushed_lepidolite_ore"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -7.0d
+			x: 8.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["4F3AB86CDC557B11"]
@@ -802,8 +877,8 @@
 				item: "gtceu:crushed_pyrolusite_ore"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -6.0d
+			x: 9.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["4F3AB86CDC557B11"]
@@ -813,19 +888,32 @@
 				item: "gtceu:crushed_pyrochlore_ore"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -6.0d
+			x: 8.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["4F3AB86CDC557B11"]
+			icon: {
+				Count: 1
+				id: "gtceu:mixed_mineral_residue_bucket"
+				tag: { }
+			}
 			id: "26E08C0B689C129F"
-			tasks: [{
-				id: "6D856EA05954165E"
-				item: "gtceu:mixed_mineral_residue_bucket"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -5.0d
+			tasks: [
+				{
+					id: "6D856EA05954165E"
+					item: "gtceu:mixed_mineral_residue_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5F7A19D207659BFF"
+					type: "checkmark"
+				}
+			]
+			title: "Mixed Mineral Residue"
+			x: 8.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -833,14 +921,27 @@
 				"39CF5BCF84727BB3"
 			]
 			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "gtceu:molten_ore_mixture_bucket"
+				tag: { }
+			}
 			id: "05FB44E437E88BE7"
-			tasks: [{
-				id: "7384DEBEFA8F0C65"
-				item: "gtceu:molten_ore_mixture_bucket"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 1.0d
+			tasks: [
+				{
+					id: "7384DEBEFA8F0C65"
+					item: "gtceu:molten_ore_mixture_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0E05658C8F10C075"
+					type: "checkmark"
+				}
+			]
+			title: "Molten Ore Mixture"
+			x: 6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["26E08C0B689C129F"]
@@ -850,30 +951,56 @@
 				item: "gtceu:crushed_beryllium_ore"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -1.0d
+			x: 8.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["26E08C0B689C129F"]
+			icon: {
+				Count: 1
+				id: "gtceu:oxygenous_mineral_mixture_bucket"
+				tag: { }
+			}
 			id: "62E3D33072698B07"
-			tasks: [{
-				id: "251007083A53A669"
-				item: "gtceu:oxygenous_mineral_mixture_bucket"
-				type: "item"
-			}]
-			x: 9.5d
-			y: -2.0d
+			tasks: [
+				{
+					id: "251007083A53A669"
+					item: "gtceu:oxygenous_mineral_mixture_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6211440583B3B60B"
+					type: "checkmark"
+				}
+			]
+			title: "Oxygenous Mineral Mixture"
+			x: 8.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["26E08C0B689C129F"]
+			icon: {
+				Count: 1
+				id: "gtceu:sulfuric_mineral_mixture_bucket"
+				tag: { }
+			}
 			id: "2032DAAC7C6ADC0F"
-			tasks: [{
-				id: "67216FE157F073F9"
-				item: "gtceu:sulfuric_mineral_mixture_bucket"
-				type: "item"
-			}]
-			x: 10.5d
-			y: -2.0d
+			tasks: [
+				{
+					id: "67216FE157F073F9"
+					item: "gtceu:sulfuric_mineral_mixture_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "48A6E4C322549754"
+					type: "checkmark"
+				}
+			]
+			title: "Sulfuric Mineral Mixture"
+			x: 9.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["62E3D33072698B07"]
@@ -883,8 +1010,8 @@
 				item: "gtceu:crushed_tantalite_ore"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -2.0d
+			x: 7.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["62E3D33072698B07"]
@@ -894,8 +1021,8 @@
 				item: "gtceu:crushed_pollucite_ore"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -3.0d
+			x: 7.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["62E3D33072698B07"]
@@ -905,8 +1032,8 @@
 				item: "gtceu:crushed_cassiterite_ore"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -1.0d
+			x: 7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2032DAAC7C6ADC0F"]
@@ -916,8 +1043,8 @@
 				item: "gtceu:crushed_barite_ore"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -1.0d
+			x: 9.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2032DAAC7C6ADC0F"]
@@ -927,8 +1054,8 @@
 				item: "gtceu:crushed_chalcopyrite_ore"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -2.0d
+			x: 10.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2032DAAC7C6ADC0F"]
@@ -938,8 +1065,8 @@
 				item: "gtceu:crushed_bornite_ore"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -3.0d
+			x: 9.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -949,8 +1076,8 @@
 				item: "gtceu:crushed_tungstate_ore"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.0d
+			x: 6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -960,8 +1087,8 @@
 				item: "gtceu:crushed_cooperite_ore"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 2.5d
+			x: 7.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -971,8 +1098,8 @@
 				item: "gtceu:crushed_bastnasite_ore"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 0.5d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -982,8 +1109,8 @@
 				item: "gtceu:crushed_ilmenite_ore"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 1.5d
+			x: 7.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -993,8 +1120,8 @@
 				item: "gtceu:crushed_bauxite_ore"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 2.5d
+			x: 5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -1004,8 +1131,8 @@
 				item: "gtceu:crushed_pitchblende_ore"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 1.5d
+			x: 4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
@@ -1015,8 +1142,8 @@
 				item: "gtceu:crushed_molybdenite_ore"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.5d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6C0C9B95A8DAB5D1"]
@@ -1203,7 +1330,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["37B2D734AAEC98E8"]
@@ -1214,7 +1341,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["177CE1841A4C22CD"]
@@ -1225,7 +1352,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["12E08BD81D4AFDF0"]
@@ -1236,7 +1363,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3D51D9EE77B68083"]
@@ -1247,7 +1374,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["12A3AD9F42C2FB2F"]
@@ -1258,7 +1385,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6130CEC7942DB195"]
@@ -1269,7 +1396,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["729800025EA0DE0F"]
@@ -1280,7 +1407,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["04044187B7B40420"]
@@ -1291,7 +1418,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2D790A43980AAE68"]
@@ -1302,7 +1429,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["451A482AC6EC5DAF"]
@@ -1313,7 +1440,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2931F83E28641A15"]
@@ -1324,7 +1451,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
@@ -1363,8 +1490,803 @@
 				type: "item"
 			}]
 			title: "Easier Molten Ore Mixture"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			id: "4271ED1F225983D3"
+			invisible: true
+			tasks: [{
+				id: "78581BF782B594DE"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["22BC7BDE5E132A30"]
+			icon: {
+				Count: 1
+				id: "minecraft:grass_block"
+				tag: { }
+			}
+			id: "748EC87C28C4CC56"
+			tasks: [{
+				id: "7D01C9B5B1A9671B"
+				title: "Overworld Drilling"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["22BC7BDE5E132A30"]
+			icon: {
+				Count: 1
+				id: "minecraft:sand"
+				tag: { }
+			}
+			id: "69CCC4E36528A4FC"
+			tasks: [{
+				id: "7BB21D8C5FFD8D04"
+				title: "Abydos Drilling"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["69CCC4E36528A4FC"]
+			icon: {
+				Count: 1
+				id: "gtceu:abydos_titanite_rich_magma_bucket"
+				tag: { }
+			}
+			id: "0A35D045D8D77A9C"
+			tasks: [
+				{
+					id: "5B8079BEC6149BE3"
+					item: {
+						Count: 1
+						id: "gtceu:abydos_titanite_rich_magma_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "749F66A1C5DCBDA0"
+					type: "checkmark"
+				}
+			]
+			title: "Abydos Titanite-rich Magma"
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["69CCC4E36528A4FC"]
+			icon: {
+				Count: 1
+				id: "gtceu:abydos_zapolite_rich_magma_bucket"
+				tag: { }
+			}
+			id: "30C7C7F03042AC26"
+			tasks: [
+				{
+					id: "7ED8930B83695BB4"
+					item: {
+						Count: 1
+						id: "gtceu:abydos_zapolite_rich_magma_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "369D6998A9A1F2A0"
+					type: "checkmark"
+				}
+			]
+			title: "Abydos Zapolite-rich Magma"
+			x: 5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["69CCC4E36528A4FC"]
+			icon: {
+				Count: 1
+				id: "gtceu:gritty_akreyrium_bucket"
+				tag: { }
+			}
+			id: "1C25CB31BA7878F3"
+			tasks: [
+				{
+					id: "524A39004AB02158"
+					item: {
+						Count: 1
+						id: "gtceu:gritty_akreyrium_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "53D43877B8CB6A8C"
+					type: "checkmark"
+				}
+			]
+			title: "Gritty Akreyrium"
 			x: 6.5d
-			y: -0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["748EC87C28C4CC56"]
+			icon: {
+				Count: 1
+				id: "gtceu:salt_water_bucket"
+				tag: { }
+			}
+			id: "13FB042818A0F23C"
+			tasks: [
+				{
+					id: "6C29F1145624CD33"
+					item: {
+						Count: 1
+						id: "gtceu:salt_water_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "300A95CAA17FD962"
+					type: "checkmark"
+				}
+			]
+			title: "Salt Water"
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"30C7C7F03042AC26"
+				"0A35D045D8D77A9C"
+				"1C25CB31BA7878F3"
+			]
+			id: "254A058C83258376"
+			tasks: [{
+				id: "5650CB9FACAD6C04"
+				type: "checkmark"
+			}]
+			title: "Processing Lines (Chap 4,5,6)"
+			x: 5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["307FA3025E294979"]
+			icon: {
+				Count: 1
+				id: "gtceu:sulfuric_heavy_fuel_bucket"
+				tag: { }
+			}
+			id: "5B257F1A37D54D75"
+			tasks: [
+				{
+					id: "6BCD48F5FA2654CB"
+					item: {
+						Count: 1
+						id: "gtceu:sulfuric_heavy_fuel_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "559FC8A4C368E7B2"
+					type: "checkmark"
+				}
+			]
+			title: "Sulfuric Heavy Fuel"
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["307FA3025E294979"]
+			icon: {
+				Count: 1
+				id: "gtceu:sulfuric_light_fuel_bucket"
+				tag: { }
+			}
+			id: "4B90760BD8243CCB"
+			tasks: [
+				{
+					id: "478586D19B80A2E6"
+					item: {
+						Count: 1
+						id: "gtceu:sulfuric_light_fuel_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6F7D4691EE4D984B"
+					type: "checkmark"
+				}
+			]
+			title: "Sulfuric Light Fuel"
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["307FA3025E294979"]
+			icon: {
+				Count: 1
+				id: "gtceu:sulfuric_naphtha_bucket"
+				tag: { }
+			}
+			id: "1102B794BA4446CF"
+			tasks: [
+				{
+					id: "4954C5A2B123403D"
+					item: {
+						Count: 1
+						id: "gtceu:sulfuric_naphtha_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3AA02F97624B1775"
+					type: "checkmark"
+				}
+			]
+			title: "Sulfuric Naphtha"
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["307FA3025E294979"]
+			icon: {
+				Count: 1
+				id: "gtceu:sulfuric_gas_bucket"
+				tag: { }
+			}
+			id: "5AB4194223AAE768"
+			tasks: [
+				{
+					id: "52316558E58C8AB0"
+					item: {
+						Count: 1
+						id: "gtceu:sulfuric_gas_bucket"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "647A089608B29525"
+					type: "checkmark"
+				}
+			]
+			title: "Sulfuric Gas"
+			x: -0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5B257F1A37D54D75"]
+			icon: {
+				Count: 1
+				id: "gtceu:heavy_fuel_bucket"
+				tag: { }
+			}
+			id: "4102BA4DAD7EC263"
+			optional: true
+			tasks: [
+				{
+					id: "6CF246BFA73EA1F4"
+					item: {
+						Count: 1
+						id: "gtceu:heavy_fuel_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2982B599D4806E34"
+					type: "checkmark"
+				}
+			]
+			title: "Heavy Fuel"
+			x: -1.75d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4B90760BD8243CCB"]
+			icon: {
+				Count: 1
+				id: "gtceu:light_fuel_bucket"
+				tag: { }
+			}
+			id: "321D3AB458493744"
+			optional: true
+			tasks: [
+				{
+					id: "6584579388395CFC"
+					item: {
+						Count: 1
+						id: "gtceu:light_fuel_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0B72E648F89DF516"
+					type: "checkmark"
+				}
+			]
+			title: "Light Fuel"
+			x: -1.75d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1102B794BA4446CF"]
+			icon: {
+				Count: 1
+				id: "gtceu:naphtha_bucket"
+				tag: { }
+			}
+			id: "081AEA0310BAA2B6"
+			optional: true
+			tasks: [
+				{
+					id: "673AEEB62591AC6B"
+					item: {
+						Count: 1
+						id: "gtceu:naphtha_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "79BDFE771BA8D965"
+					type: "checkmark"
+				}
+			]
+			title: "Naphtha"
+			x: -1.75d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5AB4194223AAE768"]
+			icon: {
+				Count: 1
+				id: "gtceu:refinery_gas_bucket"
+				tag: { }
+			}
+			id: "547E9D0D8ED4CA96"
+			optional: true
+			tasks: [
+				{
+					id: "56B26FDC69106D6C"
+					item: {
+						Count: 1
+						id: "gtceu:refinery_gas_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C3BD4F92332A44D"
+					type: "checkmark"
+				}
+			]
+			title: "Refinery Gas"
+			x: -1.75d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"547E9D0D8ED4CA96"
+				"4102BA4DAD7EC263"
+				"321D3AB458493744"
+				"081AEA0310BAA2B6"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Inject Fuels with Steam"]
+			id: "51A0E48B2D04465E"
+			optional: true
+			tasks: [{
+				id: "05812E734700834C"
+				title: "Steam Cracking"
+				type: "checkmark"
+			}]
+			x: -3.25d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"547E9D0D8ED4CA96"
+				"4102BA4DAD7EC263"
+				"321D3AB458493744"
+				"081AEA0310BAA2B6"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Inject Fuels with Hydrogen"]
+			id: "3BD1916DC5208255"
+			optional: true
+			tasks: [{
+				id: "4EAE7F0A6A9B2515"
+				title: "Hydro Cracking"
+				type: "checkmark"
+			}]
+			x: -3.25d
+			y: 5.5d
+		}
+		{
+			dependencies: ["748EC87C28C4CC56"]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "gtceu:oil_bucket"
+				tag: { }
+			}
+			id: "307FA3025E294979"
+			tasks: [
+				{
+					id: "61EFBBA453601AE3"
+					item: {
+						Count: 1
+						id: "gtceu:oil_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3DF385338B647DD9"
+					item: {
+						Count: 1
+						id: "gtceu:oil_heavy_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2AC77F831A5A1EAB"
+					item: {
+						Count: 1
+						id: "gtceu:oil_medium_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "56E0F21E9BA58990"
+					item: {
+						Count: 1
+						id: "gtceu:oil_light_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1E34BEB843A3DEF0"
+					title: "Oil Drilling"
+					type: "checkmark"
+				}
+			]
+			title: "Oil Production"
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0AB3A8C14C3A0512"]
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "gtceu:oil_heavy_bucket"
+				tag: { }
+			}
+			id: "61483DE9D5859D78"
+			optional: true
+			tasks: [
+				{
+					id: "47AD76957C921187"
+					title: "Pyrolysis Oil"
+					type: "checkmark"
+				}
+				{
+					id: "6AA06CD7C7A1C21E"
+					item: {
+						Count: 1
+						id: "gtceu:oil_heavy_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0AB3A8C14C3A0512"]
+			icon: {
+				Count: 1
+				id: "gtceu:wood_tar_bucket"
+				tag: { }
+			}
+			id: "4BA7A1EBD0E9A16B"
+			optional: true
+			tasks: [
+				{
+					id: "2BB44FF79D0E0217"
+					title: "Wood Products"
+					type: "checkmark"
+				}
+				{
+					id: "5E323A0F89E1DC93"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Wood Products\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:wood_tar_bucket"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "gtceu:wood_vinegar_bucket"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "gtceu:wood_gas_bucket"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "gtceu:charcoal_byproducts_bucket"
+									tag: { }
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0AB3A8C14C3A0512"]
+			icon: {
+				Count: 1
+				id: "gtceu:coal_gas_bucket"
+				tag: { }
+			}
+			id: "073989ADB68D1F92"
+			optional: true
+			tasks: [
+				{
+					id: "7271F0DBB6EE9F6C"
+					title: "Coal Products"
+					type: "checkmark"
+				}
+				{
+					id: "26ACA88B4C3746DB"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Coal Products\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:coal_tar_bucket"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "gtceu:coal_gas_bucket"
+									tag: { }
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0AB3A8C14C3A0512"]
+			icon: {
+				Count: 1
+				id: "gtceu:biomass_bucket"
+				tag: { }
+			}
+			id: "49B2298EC48C7F97"
+			optional: true
+			tasks: [
+				{
+					id: "7D308DD9058E03F1"
+					title: "Bio Products"
+					type: "checkmark"
+				}
+				{
+					id: "7B0A30401297304B"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Bio Products\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:fermented_biomass_bucket"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "gtceu:biomass_bucket"
+									tag: { }
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["439D8AE6D3DC41AF"]
+			id: "2C10C159C75C3068"
+			tasks: [{
+				id: "7062C551157615DB"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"HydroCarbons\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:benzene_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:naphthalene_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:ethylbenzene_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:dimethylbenzene_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:methane_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:phenol_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:creosote_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:ethanol_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:methyl_acetate_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:acetic_acid_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:acetone_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:methanol_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:toluene_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:ethane_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:propane_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:butane_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:octane_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:ethylene_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:propene_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:butene_bucket"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:butadiene_bucket"
+								tag: { }
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 9.0d
 		}
 	]
 	title: "Resource Production"
