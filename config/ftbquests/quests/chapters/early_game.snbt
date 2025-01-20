@@ -493,6 +493,7 @@
 			dependencies: ["5094070DDE1BFA3D"]
 			description: ["Create's number one alloy, now with a better crafting ratio!"]
 			id: "039D327E919878BF"
+			optional: true
 			rewards: [{
 				id: "24B61B66673D1F1D"
 				item: "kubejs:coin"
@@ -510,6 +511,7 @@
 			dependencies: ["039D327E919878BF"]
 			description: ["Tired of needing two ingots per plate? The Mechanical Press lets you make plates for half the price early on!"]
 			id: "3E931D2E92BE9486"
+			optional: true
 			rewards: [{
 				id: "2DAE713111C2C5F7"
 				item: "kubejs:coin"
@@ -1642,6 +1644,7 @@
 			dependencies: ["039D327E919878BF"]
 			description: ["Create stresses me out, but without that nothing would move."]
 			id: "70BE6905EC722DCA"
+			optional: true
 			rewards: [{
 				id: "2ABEDB4C2EF9A1AD"
 				item: "kubejs:coin"
@@ -1907,6 +1910,7 @@
 			dependencies: ["70BE6905EC722DCA"]
 			description: ["Using Crushing Wheels, you can automate gravel and sand. Crushing wheels have a set amount of time they need to process their items (based on their RPM), but can process up to a stack of items at a time. Smart Chutes are an easy way to pump a stack of items in at a time."]
 			id: "6C4EE5170B91D0EA"
+			optional: true
 			rewards: [{
 				count: 2
 				id: "319FF5EFBA896731"
