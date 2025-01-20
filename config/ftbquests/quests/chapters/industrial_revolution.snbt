@@ -1841,8 +1841,12 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "18AA89358DEB2724"
-				item: "gtceu:rare_sludge_dust"
+				id: "31BC2E3B4D2CAB86"
+				item: {
+					Count: 1
+					id: "gtceu:rare_earth_dust"
+					tag: { }
+				}
 				type: "item"
 			}]
 			x: 1.0d
@@ -1861,8 +1865,12 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "03E9166C29EFFE49"
-				item: "gtceu:vanadium_magnetite_sludge_dust"
+				id: "60FB4A592F1B12CB"
+				item: {
+					Count: 1
+					id: "gtceu:vanadium_magnetite_dust"
+					tag: { }
+				}
 				type: "item"
 			}]
 			x: 1.0d
@@ -1887,6 +1895,7 @@
 		{
 			dependencies: ["30B2688F8387048F"]
 			id: "7CA424E05FB05DFF"
+			subtitle: "Go Check Out other Questbook Pages"
 			tasks: [{
 				id: "7A70E4D923C0FA25"
 				title: "Resource Production Questbook Chapter"
@@ -1898,6 +1907,7 @@
 		{
 			id: "0A0DC5148CC45DCB"
 			invisible: true
+			optional: true
 			tasks: [{
 				id: "10740F5D76540FB7"
 				title: "positioner"

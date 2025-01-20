@@ -1163,7 +1163,7 @@
 				type: "checkmark"
 			}]
 			x: -6.0d
-			y: -24.0d
+			y: -23.5d
 		}
 		{
 			dependencies: ["62BA581B2918BB7B"]

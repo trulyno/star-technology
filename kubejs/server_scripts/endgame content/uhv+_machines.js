@@ -91,7 +91,7 @@ function inputTypes(tier,tier1under,main,cable,wire,glass,plastic,cable1up,mag,p
         {I: `#gtceu:circuits/${tier}`, H: `gtceu:${tier}_machine_hull`,C: `gtceu:${cable}_single_cable`, G: `gtceu:${glass}`, U: `gtceu:${tier}_electric_pump`, W: `gtceu:${wire}_quadruple_wire`});
     event.shaped(Item.of(`gtceu:${tier}_fluid_solidifier`), 
         ['UGU','CHC','IRI'], 
-        {I: `#gtceu:circuits/${tier}`, H: `gtceu:${tier}_machine_hull`,C: `gtceu:${cable}_single_cable`,G: `gtceu:${glass}`,R: 'minecraft:chest'});
+        {I: `#gtceu:circuits/${tier}`, H: `gtceu:${tier}_machine_hull`,C: `gtceu:${cable}_single_cable`,G: `gtceu:${glass}`,R: 'minecraft:chest', U: `gtceu:${tier}_electric_pump`});
     event.shaped(Item.of(`gtceu:${tier}_forge_hammer`), 
         ['CSC','IHI','CRC'], 
         {I: `#gtceu:circuits/${tier}`, H: `gtceu:${tier}_machine_hull`,C: `gtceu:${cable}_single_cable`,S: `gtceu:${tier}_electric_piston`,R: 'minecraft:anvil'});
