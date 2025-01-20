@@ -3,34 +3,44 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: /gtceu:.*_energy_converter/ });
     
-    
-    converterType('1a','single'),converterType('4a','quadruple'),converterType('8a','octal'),converterType('16a','hex')
-    
-    function converterType(amps,thickness){
-
-        converter('lv','soul_infused')
-        converter('mv','signalum')
-        converter('hv','lumium')
-        converter('ev','enderium')
-        converter('iv','shellite')
-        converter('luv','twinite')
-        converter('zpm','dragonsteel')
-        converter('uv','prismalium')
-        converter('uhv','stellarium')
-        converter('uev','ancient_runicalium')
-
-    function converter(tier,superconductor){
-
-        event.shaped(Item.of(`gtceu:${tier}_${amps}_energy_converter`), [
-            '   ',
-            'WCW',
-            'WSW'
-        ], {
-            W: `gtceu:${superconductor}_${thickness}_wire`,
-            C: `#gtceu:circuits/${tier}`,
-            S: `gtceu:${tier}_machine_hull`
-        });
-
+    const converterMaterials = {
+        lv: 'soul_infused',
+        mv: 'signalum',
+        hv: 'lumium',
+        ev: 'enderium',
+        iv: 'shellite',
+        luv: 'twinite',
+        zpm: 'dragonsteel',
+        uv: 'prismalium',
+        uhv: 'stellarium',
+        uev: 'ancient_runicalium'
     }
+    
+    converterCraftingRecipe('1a','single');
+    converterCraftingRecipe('4a','quadruple');
+    converterCraftingRecipe('8a','octal');
+    converterCraftingRecipe('16a','hex');
+    
+    function converterCraftingRecipe(amps,thickness){
+        for (const [tier, superconductor] of Object.entries(converterMaterials)) {
+            event.shaped(Item.of(`gtceu:${tier}_${amps}_energy_converter`), [
+                '   ',
+                'WCW',
+                'WSW'
+            ], {
+                W: `gtceu:${superconductor}_${thickness}_wire`,
+                C: `#gtceu:circuits/${tier}`,
+                S: `gtceu:${tier}_machine_hull`
+            });
+        }
     }  
+
+    // 64A Converter Recipe
+    for (const [tier, superconductor] of Object.entries(converterMaterials)) {
+        event.recipes.gtceu.assembler(`start_core:${tier}_64a_energy_converter`)
+            .itemInputs(`#gtceu:circuits/${tier}`, `16x gtceu:${superconductor}_hex_wire`, `gtceu:${tier}_machine_hull`)
+            .itemOutputs(Item.of(`start_core:${tier}_64a_energy_converter`))
+            .duration(600)
+            .EUt(1625)
+    }
 });
