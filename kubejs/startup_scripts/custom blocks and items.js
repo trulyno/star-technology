@@ -194,22 +194,22 @@ StartupEvents.registry('item', event => {
     event.create('runic_pathway_engraved_plating')
         .displayName('Runic Pathway-Engraved Plating')
         .texture('kubejs:item/gate_items/runic_pathway_engraved_plating')
-        .rarity('rare');
+        .rarity('epic');
 
     event.create('runic_stabilization_plating')
         .displayName('Runic Stabilization Plating')
         .texture('kubejs:item/gate_items/runic_stable_plating')
-        .rarity('rare')
+        .rarity('epic');
 
     event.create('runic_energized_plating')
         .displayName('Runic-Energized Plating')
         .texture('kubejs:item/gate_items/runic_energized_plating')
-        .rarity('rare')
+        .rarity('epic');
 
     event.create('runic_transportation_engraved_plating')
         .displayName('Runic Transportation-Engraved Plating')
         .texture('kubejs:item/gate_items/runic_transport_plating')
-        .rarity('epic')
+        .rarity('epic');
 
     event.create('runic_wave_generator')
         .displayName('Drack-ion Runic Wave Generator')
@@ -219,12 +219,12 @@ StartupEvents.registry('item', event => {
     event.create('runic_energized_transportation_plating')
         .displayName('Runic Energized Transportation-Engraved Plating')
         .texture('kubejs:item/gate_items/runic_transport_energized_plating')
-        .rarity('uncommon')
+        .rarity('epic');
 
     event.create('runic_energized_pathway_plating')
         .displayName('Runic Energized Pathway-Engraved Plating')
         .texture('kubejs:item/gate_items/runic_pathway_energized_plating')
-        .rarity('uncommon')
+        .rarity('epic');
 
  //Gate Parts
 
