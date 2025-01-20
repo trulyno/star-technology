@@ -57,48 +57,42 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 12')
         .itemOutputs('solarflux:photovoltaic_cell_1')
         .duration(200)
-        .EUt(30)
-        .circuit(0);
+        .EUt(30);
 
     event.recipes.gtceu.circuit_assembler('regular_solar_cell')
         .itemInputs('gtceu:plastic_printed_circuit_board', 'kubejs:regular_energy_core', '2x #gtceu:circuits/mv', '2x gtceu:copper_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 36')
         .itemOutputs('solarflux:photovoltaic_cell_2')
         .duration(200)
-        .EUt(80)
-        .circuit(0);
+        .EUt(80);
 
     event.recipes.gtceu.circuit_assembler('intermediate_solar_cell')
         .itemInputs('gtceu:plastic_printed_circuit_board', 'kubejs:intermediate_energy_core', '2x #gtceu:circuits/hv', '2x gtceu:gold_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 36')
         .itemOutputs('solarflux:photovoltaic_cell_3')
         .duration(200)
-        .EUt(200)
-        .circuit(0);
+        .EUt(200);
 
     event.recipes.gtceu.circuit_assembler('advanced_solar_cell')
         .itemInputs('gtceu:epoxy_printed_circuit_board', 'kubejs:advanced_energy_core', '2x #gtceu:circuits/ev', '2x gtceu:aluminium_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 72')
         .itemOutputs('solarflux:photovoltaic_cell_4')
         .duration(200)
-        .EUt(1000)
-        .circuit(0);
+        .EUt(1000);
 
     event.recipes.gtceu.circuit_assembler('elite_solar_cell')
         .itemInputs('gtceu:fiber_reinforced_printed_circuit_board', 'kubejs:elite_energy_core', '2x #gtceu:circuits/iv', '2x gtceu:platinum_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 144')
         .itemOutputs('solarflux:photovoltaic_cell_5')
         .duration(200)
-        .EUt(3400)
-        .circuit(0);
+        .EUt(3400);
 
     event.recipes.gtceu.circuit_assembler('ultimate_solar_cell')
         .itemInputs('gtceu:multilayer_fiber_reinforced_printed_circuit_board', 'kubejs:ultimate_energy_core', '2x #gtceu:circuits/luv', '2x gtceu:niobium_titanium_single_cable', '4x minecraft:glass_pane')
         .inputFluids('gtceu:soldering_alloy 216')
         .itemOutputs('solarflux:photovoltaic_cell_6')
         .duration(200)
-        .EUt(12000)
-        .circuit(0);
+        .EUt(12000);
 
     // event.recipes.gtceu.circuit_assembler('basic_battery_cell')
     //     .itemInputs('gtceu:silicon_plate', 'solarflux:basic_energy_core', '#gtceu:circuits/lv', '2x gtceu:tin_single_cable', '4x minecraft:glass_pane')
