@@ -44,3 +44,10 @@ ServerEvents.recipes(event => {
             .EUt(1625)
     }
 });
+
+BlockEvents.placed(event => {
+	let block = event.getBlock();
+	if (/^(?:gtceu|start_core):.*energy_converter$/.test(block.getId())) {
+        block.mergeEntityData({ energyContainer: { feToEu: true } });
+	};
+});
