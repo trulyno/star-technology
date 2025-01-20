@@ -560,6 +560,17 @@ ServerEvents.recipes(event => {
         .EUt(600);
 
     event.recipes.create.item_application('minecraft:mycelium', ['minecraft:grass_block', 'exnihilosequentia:mycelium_spores']);
+
+    event.replaceInput({id: 'chipped:benches/mechanist_workbench'}, 'minecraft:tnt', 'minecraft:red_concrete');
+
+    event.shaped('toms_storage:ts.adv_wireless_terminal', [
+        ' P ',
+        'PTP',
+        ' P '
+    ], {
+        P: 'gtceu:steel_plate',
+        T: 'toms_storage:ts.wireless_terminal'
+    });
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {

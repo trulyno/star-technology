@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
         'ae2:network/blocks/energy_energy_acceptor', 'ae2:network/blocks/interfaces_interface', 'ae2:network/blocks/io_condenser',
         'ae2:network/blocks/cell_workbench', 'ae2:network/blocks/spatial_io_port', 'ae2:network/blocks/io_port', 'a2:network/cables/covered_fluix', 'ae2:network/parts/quartz_fiber_part',
         'ae2:network/cables/glass_fluix', 'exnihilosequentia:barrel_fluid_mixing/blackstone', 'exnihilosequentia:barrel_fluid_mixing/netherrack', 'createdieselgenerators:basin_fermenting/magma_cream',
-        'gtceu:research_station/1_x_gtceu_uv_energy_input_hatch','gtceu:research_station/1_x_gtceu_uv_energy_output_hatch'
+        'gtceu:research_station/1_x_gtceu_uv_energy_input_hatch','gtceu:research_station/1_x_gtceu_uv_energy_output_hatch', 'toms_storage:adv_wireless_terminal'
 
     ];
 
