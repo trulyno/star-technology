@@ -2427,8 +2427,8 @@
 				title: "postioner"
 				type: "checkmark"
 			}]
-			x: 16.0d
-			y: 14.5d
+			x: 15.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["0BBCC13EE6C7C061"]

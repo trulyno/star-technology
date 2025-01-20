@@ -1235,8 +1235,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "36C4A977AC2832FF"
 			optional: true
 			size: 1.0d
@@ -1250,8 +1250,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "1A9E02D50128F4AD"
 			optional: true
 			size: 1.0d
@@ -1265,8 +1265,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "30A538E9EBDD2205"
 			optional: true
 			size: 1.0d
@@ -1280,8 +1280,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "1297467DBA806D50"
 			optional: true
 			size: 1.0d
@@ -1295,8 +1295,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "3041F1837C4DA2E3"
 			optional: true
 			size: 1.0d
@@ -1310,8 +1310,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "485894F4A9C420F1"
 			optional: true
 			size: 1.0d
@@ -1325,8 +1325,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "31E828DC7CE05631"
 			optional: true
 			size: 1.0d
@@ -1340,8 +1340,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "7B4822B623583E48"
 			optional: true
 			size: 1.0d
@@ -1355,8 +1355,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "1AE90AE93401A62A"
 			optional: true
 			size: 1.0d
@@ -1370,8 +1370,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "6E775A20310010C2"
 			optional: true
 			size: 1.0d
@@ -1385,8 +1385,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "66AE1F38C954EDEE"
 			optional: true
 			size: 1.0d
@@ -1400,8 +1400,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "1B8F144D59973A6C"
 			optional: true
 			size: 1.0d
@@ -1415,8 +1415,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "6713F5C835972F25"
 			optional: true
 			size: 1.0d
@@ -1430,8 +1430,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "6766CDEE53EC220A"
 			optional: true
 			size: 1.0d
@@ -1445,8 +1445,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "4CDCBD47FA5A5E76"
 			optional: true
 			size: 1.0d
@@ -1460,8 +1460,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "1A8A9CFDE2F83509"
 			optional: true
 			size: 1.0d
@@ -1475,8 +1475,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "68430C48D21E615A"
 			optional: true
 			size: 1.0d
@@ -1490,8 +1490,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "26F037DFC3D2B29D"
 			optional: true
 			size: 1.0d
@@ -1505,8 +1505,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "5B30840FFE93E1C5"
 			optional: true
 			size: 1.0d
@@ -1520,8 +1520,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "432B18BF3105D336"
 			optional: true
 			size: 1.0d
@@ -1535,8 +1535,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "277B1634E0CDF94E"
 			optional: true
 			size: 1.0d
@@ -1550,8 +1550,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "08A1359B9D71B96F"
 			optional: true
 			size: 1.0d
@@ -1565,8 +1565,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "47B4445919A32696"
 			optional: true
 			size: 1.0d
@@ -1580,8 +1580,8 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "7FD3A94A90552118"
 			optional: true
 			size: 1.0d
@@ -1694,8 +1694,8 @@
 			can_repeat: true
 			dependencies: ["481D42E3473FDCED"]
 			description: ["Waaaaaaaa"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "6C39CD86546B3C64"
 			optional: true
 			rewards: [{

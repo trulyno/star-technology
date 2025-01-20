@@ -1,4 +1,5 @@
 {
+	autofocus_id: "2908D32E77359FA3"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "processing_lines_chap_456"
@@ -15,8 +16,8 @@
 		{
 			id: "03B6D7853CA898F2"
 			linked_quest: "090275078106B752"
-			x: -1.5d
-			y: 3.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			id: "6D8B0DE6FCC2A5B1"
@@ -1982,7 +1983,7 @@
 			]
 			title: "PCB Coolant"
 			x: -0.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["32AC51387EAD9D2D"]
@@ -2010,7 +2011,7 @@
 			]
 			title: "Hot PCB Coolant"
 			x: 0.5d
-			y: 4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -2326,6 +2327,17 @@
 			title: "Benzene"
 			x: 9.5d
 			y: -1.5d
+		}
+		{
+			id: "2908D32E77359FA3"
+			invisible: true
+			tasks: [{
+				id: "1DF81F94D45BC87C"
+				title: "postioner"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 7.5d
 		}
 	]
 	title: "Processing Lines (Chap 4,5,6)"
