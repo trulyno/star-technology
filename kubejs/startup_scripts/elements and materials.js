@@ -950,6 +950,7 @@ materialRegistry(event => {
         .components('1x echo_r', '1x neutronium')
         .ingot(1)
         .color(0x006666)
+        .flags(no_decomp)
         .iconSet(DULL);
 
     event.create('void')
@@ -958,7 +959,7 @@ materialRegistry(event => {
         .blastTemp(10799, 'highest', VA('uev'), 8000)
         .color(0x001a1a)
         .iconSet(DULL)
-        .flags(rod, long_rod, frame);
+        .flags(rod, long_rod, frame, no_decomp);
     
     // Extras
     event.create('trinaquadalloy')
