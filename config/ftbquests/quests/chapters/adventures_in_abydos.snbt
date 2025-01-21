@@ -734,6 +734,7 @@
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
+			description: ["Go Explore the Scattered Temples of Abydos"]
 			id: "3479CEBD73550718"
 			rewards: [{
 				id: "7FC500BE090ABC2E"

@@ -649,7 +649,7 @@
 				"52FE319F5E176C37"
 				"77303F30F0A44393"
 			]
-			description: ["Allows you to turn RF into EV power."]
+			description: ["Allows you to turn RF into EV power. Oh ya and 64a's exist now."]
 			id: "5D3006AB62E2CE9B"
 			rewards: [{
 				id: "601186952EBAB995"
@@ -657,41 +657,49 @@
 				type: "item"
 			}]
 			size: 1.0d
-			tasks: [{
-				id: "27FD7999C915B7C8"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any EV Converter\"}"
+			tasks: [
+				{
+					id: "27FD7999C915B7C8"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any EV Converter\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ev_1a_energy_converter"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_4a_energy_converter"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_8a_energy_converter"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_16a_energy_converter"
+									tag: { }
+								}
+							]
 						}
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:ev_1a_energy_converter"
-								tag: { }
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_4a_energy_converter"
-								tag: { }
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_8a_energy_converter"
-								tag: { }
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_16a_energy_converter"
-								tag: { }
-							}
-						]
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "0708A49A101103CD"
+					item: "start_core:ev_64a_energy_converter"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: 5.5d
 		}
