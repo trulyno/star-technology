@@ -295,7 +295,7 @@
 		}
 		{
 			dependencies: ["4B51B15B49620F57"]
-			description: ["A new tier of mesh, which gives completely different resources."]
+			description: ["With energy hatches you can now power massive machines to do your bidding."]
 			id: "1F5CCE8CFD02903A"
 			rewards: [{
 				count: 2

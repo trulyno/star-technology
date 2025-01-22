@@ -1207,13 +1207,7 @@
 		}
 		{
 			dependencies: ["379D69A44FC5B2F2"]
-			description: [
-				"So this is what makes the Gates Beyond Comprehention...."
-				""
-				""
-				""
-				"(Dont forget the runicalium blocks)"
-			]
+			description: ["So this is what makes the Gates Beyond Comprehention...."]
 			id: "64F0BB858EEB7913"
 			rewards: [{
 				count: 2
@@ -1892,6 +1886,30 @@
 			title: "Better Research Heat Sink"
 			x: -3.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["5E7153B7A10FC241"]
+			description: [
+				"Thank you for playing through this pack to its current state, a lot of time has been put in so that it was a unique and enjoyable experience. You are invited to come share off your accomplishment on our discord where we would love to hear what you thought about the pack."
+				""
+				""
+				"-StarT Dev Team"
+				""
+				""
+				"[The Maker of Gates Applauds you, and soon the reasonings as to why the Draconic Empires fell will be unravelled. Soon you will get 1 step closer to home....]"
+			]
+			id: "46982CD51A50CD07"
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "Congradulations, for now this is the end of the content, though, if you join the discord you can often see what comes next."
+			tasks: [{
+				id: "5163F1D911C227BB"
+				title: "Thanks"
+				type: "checkmark"
+			}]
+			title: "You have completed the Epsilon Version of Star Technology"
+			x: 8.5d
+			y: -10.0d
 		}
 	]
 	title: "Adventures in Abydos"
