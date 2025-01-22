@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('classic_stargate_computer_core')
         .itemInputs('gtceu:stellarium_frame', '4x kubejs:computational_super_matrix', '16x gtceu:ruthenium_trinium_americium_neutronate_octal_wire', '16x gtceu:ruthenium_trinium_americium_neutronate_octal_wire',
             '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:fine_trinaquadalloy_wire', '64x gtceu:fine_trinaquadalloy_wire')
-        .inputFluids('gtceu:soldering_alloy 69420', 'gtceu:sterilized_growth_medium 13500')
+        .inputFluids('gtceu:soldering_alloy 72000', 'gtceu:sterilized_growth_medium 13500')
         .itemOutputs('kubejs:classic_stargate_computer_core')
         .duration(24000)
         .stationResearch(

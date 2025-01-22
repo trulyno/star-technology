@@ -344,6 +344,24 @@
 			x: -16.5d
 			y: -31.0d
 		}
+		{
+			id: "17589AD800EE0BFB"
+			linked_quest: "7F72F9E28713D965"
+			x: 4.5d
+			y: -14.0d
+		}
+		{
+			id: "45ED4A9446271E4F"
+			linked_quest: "47DF7968E9B98C65"
+			x: 6.0d
+			y: -14.0d
+		}
+		{
+			id: "278B867C320470BF"
+			linked_quest: "6356F875511B2610"
+			x: 6.0d
+			y: -15.5d
+		}
 	]
 	quests: [
 		{
@@ -1447,6 +1465,59 @@
 			}]
 			x: -16.5d
 			y: -29.5d
+		}
+		{
+			dependencies: ["1A8F645AC1B30411"]
+			id: "73D10CF0B822A6CB"
+			tasks: [{
+				id: "184E9483C17B914E"
+				item: "gtceu:cyclonic_crystalline_sieve"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"73D10CF0B822A6CB"
+				"5368269646BC0F27"
+			]
+			id: "4AC6C7A39B311413"
+			tasks: [{
+				id: "6AF01DD78C8EC948"
+				item: "gtceu:folding_akreyrium_stabiliser"
+				type: "item"
+			}]
+			x: -14.5d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"4AC6C7A39B311413"
+				"7F203254ACDF8C88"
+			]
+			id: "6375D265594CEE4F"
+			tasks: [{
+				id: "3578BB0D1914EC3D"
+				item: "gtceu:leptonic_convergence_injector"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"6375D265594CEE4F"
+				"7F203254ACDF8C88"
+			]
+			id: "017CEDA75E3D61F2"
+			tasks: [{
+				id: "057AED2EBED05829"
+				item: "gtceu:leptonic_manifold_quantiser"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -14.0d
 		}
 	]
 	title: "Line Of Progression"

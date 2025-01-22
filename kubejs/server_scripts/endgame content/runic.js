@@ -67,12 +67,27 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('runic_tablet')
         .itemInputs('kubejs:runic_tablet_1','kubejs:runic_tablet_2','kubejs:runic_tablet_3','kubejs:runic_tablet_4','kubejs:runic_tablet_5','kubejs:runic_tablet_6')
-        .inputFluids('gtceu:naquadria 1152')
+        .inputFluids('gtceu:naquadria 11520')
         .itemOutputs('kubejs:runic_tablet_complete')
         .duration(400)
-        .EUt(GTValues.VHA[GTValues.UV])
+        .EUt(GTValues.VHA[GTValues.UHV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
 
+    const runicChange = [
+        {current: 1, new: 2},
+        {current: 2, new: 3},
+        {current: 3, new: 4},
+        {current: 4, new: 5},
+        {current: 5, new: 6},
+        {current: 6, new: 1},
+    ]
+    runicChange.forEach(tablet => {
+    event.recipes.gtceu.scanner(`runic_tablet_${tablet.current}_to_${tablet.new}`)
+        .itemInputs(`gtceu:ancient_runicalium_foil`,`2x kubejs:runic_tablet_${tablet.current}`)
+        .itemOutputs(`kubejs:runic_tablet_${tablet.new}`)
+        .duration(600)
+        .EUt(GTValues.VHA[GTValues.UV]);
+    })
     event.recipes.gtceu.runic_inscribe_manipulate('runic_energized_transportation_plating')
         .itemInputs('3x kubejs:runic_engraved_plating', 'kubejs:runic_energized_plating', 'kubejs:runic_transportation_engraved_plating')
         .inputFluids('gtceu:dense_electron_akreyrium 1000', 'gtceu:dense_muon_akreyrium 1000', 'gtceu:dense_tau_akreyrium 1000')

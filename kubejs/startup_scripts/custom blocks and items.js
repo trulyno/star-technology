@@ -164,7 +164,7 @@ StartupEvents.registry('item', event => {
 
     // Universal Circuits
 
-    const circuitTiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv", "uxv", "opv"];
+    const circuitTiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"/*, "uxv", "opv"*/];
 
     let tier_capitalized;
     circuitTiers.forEach(tier => {
@@ -322,7 +322,7 @@ StartupEvents.registry('item', event => {
         .tooltip('The Draconic Void')
         .texture('kubejs:item/coordinate_crystals/end_coordinate_crystal');
 
-    event.create('lantea_coordinate_crystal')
+    /*event.create('lantea_coordinate_crystal')
         .displayName('Lantea Inscribed Coordinate Crystal')
         .rarity('epic')
         .tooltip('The Endless Seas')
@@ -344,7 +344,7 @@ StartupEvents.registry('item', event => {
         .displayName('Fractured Void Coordinate Crystal')
         .rarity('epic')
         .tooltip('...to get Home')
-        .texture('kubejs:item/coordinate_crystals/void_coordinate_crystal');
+        .texture('kubejs:item/coordinate_crystals/void_coordinate_crystal');*/
 
     //Component Parts
 
