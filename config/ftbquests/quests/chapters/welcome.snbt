@@ -198,6 +198,98 @@
 			x: 3.5d
 			y: 5.0d
 		}
+		{
+			can_repeat: true
+			icon: "mysticalagriculture:water_seeds"
+			id: "250A8A936731C356"
+			rewards: [{
+				command: "/gamerule doWeatherCycle false"
+				elevate_perms: true
+				icon: "ae2:singularity"
+				id: "23FB323969681129"
+				title: "Disable the Weather Cycle"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "2DC6E938AAE62822"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Disable the Weather Cycle"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			icon: "mysticalagriculture:water_seeds"
+			id: "2E904375EA77D697"
+			rewards: [{
+				command: "/gamerule doWeatherCycle true"
+				elevate_perms: true
+				icon: "ae2:singularity"
+				id: "57EC7A4DCAB2F47D"
+				title: "Enable the Weather Cycle"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "00A87F9FEBAD3AA3"
+				title: "Re-enable the Weather Cycle"
+				type: "checkmark"
+			}]
+			title: "Enable the Weather Cycle"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:sunflower"
+			id: "7336D09A7BCB1255"
+			rewards: [{
+				command: "/gamerule doDaylightCycle false"
+				elevate_perms: true
+				icon: "ae2:singularity"
+				id: "05592051E143FFB7"
+				title: "Disable the Daylight Cycle"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "382BDE7783DD6684"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Disable the Daylight Cycle"
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:sunflower"
+			id: "7126BAECC0074B1B"
+			rewards: [{
+				command: "/gamerule doDaylightCycle true"
+				elevate_perms: true
+				icon: "ae2:singularity"
+				id: "365C3A325C83C2C3"
+				title: "Enable the Daylight Cycle"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "7B7BF74FA16557DE"
+				title: "Re-enable the Daylight Cycle"
+				type: "checkmark"
+			}]
+			title: "Enable the Daylight Cycle"
+			x: 6.0d
+			y: 5.5d
+		}
 	]
 	title: "Welcome"
 }
