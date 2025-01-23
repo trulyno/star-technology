@@ -13,8 +13,7 @@ ServerEvents.recipes(event => {
         'itemcollectors:basic_collector', 'itemcollectors:advanced_collector', 'create_new_age:heat_pipe', 'create_new_age:heat_pump', 'create_new_age:heater',
         'create_new_age:stirling_engine', 'create_new_age:reactor_casing', 'create_new_age:reactor_rod', 'create_new_age:reactor_glass', 'create_new_age:reactor_fuel_acceptor',
         'create_new_age:reactor_heat_vent', 'create_new_age:basic_solar_heating_plate', 'create_new_age:advanced_solar_heating_plate', 'create_new_age:nuclear_fuel', 
-        'create_new_age:blank_circuit', 'create_new_age:copper_circuit', 'create_new_age:thorium', 'create_new_age:radioactive_thorium', 'exnihilosequentia:blaze_doll', 
-        'exnihilosequentia:enderman_doll', 'exnihilosequentia:shulker_doll', 'exnihilosequentia:guardian_doll', 'exnihilosequentia:bee_doll', 'exnihilosequentia:porcelain_doll',
+        'create_new_age:blank_circuit', 'create_new_age:copper_circuit', 'create_new_age:thorium', 'create_new_age:radioactive_thorium',
         'createdieselgenerators:kelp_handle', 'createdieselgenerators:distillation_controller', 'createdieselgenerators:', 'createdieselgenerators:lighter',
         'createdieselgenerators:chemical_sprayer', 'createdieselgenerators:oil_detector', 'createdieselgenerators:pumpjack_bearing', 'createdieselgenerators:pumpjack_head',
         'createdieselgenerators:pumpjack_crank', 'createdieselgenerators:canister', 'createdieselgenerators:oil_barrel', 'createdieselgenerators:asphalt', 'createdieselgenerators:asphalt_slab', 'createdieselgenerators:asphalt_stairs',
@@ -30,16 +29,15 @@ ServerEvents.recipes(event => {
         'thermal:rf_coil', 'create:haunting/crimson_fungus', 'create:haunting/warped_fungus', 'create:compat/ae2/milling/sky_stone_block',
         'create:compat/ae2/milling/fluix_crystal', 'create:compat/ae2/milling/ender_pearl', 'create:compat/ae2/milling/certus_quartz',
         'create:crushing/raw_platinum_ore', 'create:crushing/raw_platinum_block', 'create:crushing/raw_uranium_ore',
-        'create:crushing/raw_uranium_block', 'create:crafting/appliances/slime_ball', 'minecraft:fire_charge',
-        'exnihilosequentia:fluid_item/ens_end_stone', 'exnihilosequentia:fluid_item/ens_netherrack', 'gtceu:shapeless/dust_bronze',
+        'create:crushing/raw_uranium_block', 'create:crafting/appliances/slime_ball', 'minecraft:fire_charge', 'gtceu:shapeless/dust_bronze',
         'gtceu:shapeless/dust_brass', 'create:mixing/brass_ingot', 'minecraft:ender_eye', 'create_new_age:shaped/carbon_brushes',
         'create_new_age:shaped/basic_motor_extension', 'create_new_age:advanced_motor_extension', 'create_new_age:shaped/redstone_magnet',
         'ae2:transform/damaged_budding_quartz', 'ae2:transform/chipped_budding_quartz', 'ae2:transform/flawed_budding_quartz',
         'ae2:network/crafting/molecular_assembler', 'ae2:network/blocks/pattern_providers_interface', 'ae2:network/crafting/cpu_crafting_unit',
         'ae2:network/blocks/energy_energy_acceptor', 'ae2:network/blocks/interfaces_interface', 'ae2:network/blocks/io_condenser',
         'ae2:network/blocks/cell_workbench', 'ae2:network/blocks/spatial_io_port', 'ae2:network/blocks/io_port', 'a2:network/cables/covered_fluix', 'ae2:network/parts/quartz_fiber_part',
-        'ae2:network/cables/glass_fluix', 'exnihilosequentia:barrel_fluid_mixing/blackstone', 'exnihilosequentia:barrel_fluid_mixing/netherrack', 'createdieselgenerators:basin_fermenting/magma_cream',
-        'gtceu:research_station/1_x_gtceu_uv_energy_input_hatch','gtceu:research_station/1_x_gtceu_uv_energy_output_hatch', 'toms_storage:adv_wireless_terminal'
+        'ae2:network/cables/glass_fluix', 'createdieselgenerators:basin_fermenting/magma_cream', 'gtceu:research_station/1_x_gtceu_uv_energy_input_hatch',
+        'gtceu:research_station/1_x_gtceu_uv_energy_output_hatch', 'toms_storage:adv_wireless_terminal', 'megacells:mega_crafting_unit'
 
     ];
 
@@ -71,7 +69,6 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'exnihilosequentia:sifting', input: 'minecraft:dirt'});
     event.remove({ type: 'exnihilosequentia:sifting', input: 'minecraft:mud'});
     event.remove({ type: 'exnihilosequentia:sifting', input: 'exnihilosequentia:crushed_end_stone'});
-    //need to remove flint/iron/diamond mesh leave variants
   
     event.remove({ input: 'minecraft:fire_charge'});
     event.remove({ input: 'thermal:earth_charge'});
@@ -82,6 +79,8 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'extendedcrafting'});
     event.remove({ mod: 'sgjourney'});
     event.remove({ mod: 'jetboots'});
+    event.remove({ mod: 'ae2additions'});
+    //event.remove({ mod: 'megacells', not: /megacells:.*crafting.*/}); // ignores crafts for crafting components
 
     // removing by type doesn't work >:(
     event.remove({id: /.*expatternprovider.*cutter.*/});
