@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
         P: "#forge:plates/iron"
     });
 
-    event.shapeless('functionalstorage:pusher_upgrade', [Item.of('functionalstorage:puller_upgrade').ignoreNBT(), '#forge:tools/screwdrivers']);
-    event.shapeless('functionalstorage:puller_upgrade', [Item.of('functionalstorage:pusher_upgrade').ignoreNBT(), '#forge:tools/screwdrivers']);
+    event.shapeless('functionalstorage:pusher_upgrade', [Item.of('functionalstorage:puller_upgrade'), '#forge:tools/screwdrivers']);
+    event.shapeless('functionalstorage:puller_upgrade', [Item.of('functionalstorage:pusher_upgrade'), '#forge:tools/screwdrivers']);
 
 });

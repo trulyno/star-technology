@@ -206,9 +206,12 @@ ServerEvents.recipes(event => {
     });
 
     event.recipes.gtceu.assembler('silicone_rubber_casing')
-        .itemInputs('gtceu:solid_machine_casing') .circuit(6)
+        .itemInputs('gtceu:solid_machine_casing') 
         .inputFluids('gtceu:silicone_rubber 216')
         .itemOutputs('kubejs:silicone_rubber_casing')
+        .duration(50)
+        .EUt(GTValues.VH[GTValues.MV])
+        .circuit(6);
 
     event.shaped(Item.of('2x gtceu:atomic_casing'), [
         'PHP',
