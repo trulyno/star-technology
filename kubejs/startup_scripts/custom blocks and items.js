@@ -937,9 +937,7 @@ StartupEvents.registry('block', event => {
 
     naq_casing('enriched_naquadah_machine_casing', 'Enriched Naquadah Casing', 'casing');
     naq_casing('enriched_naquadah_pipe_casing', 'Enriched Naquadah Pipe Casing', 'pipe_casing');
-    naq_casing('enriched_naquadah_firebox_casing', 'Enriched Naquadah Firebox Casing', 'firebox_casing');
     naq_casing('enriched_naquadah_gearbox', 'Enriched Naquadah Gearbox Casing', 'gearbox');
-    naq_casing('enriched_naquadah_engine_intake_casing', 'Supreme Engine Intake Casing', 'engine_intake_casing');
 
 });
 
