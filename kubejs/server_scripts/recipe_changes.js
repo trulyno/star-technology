@@ -345,18 +345,6 @@ ServerEvents.recipes(event => {
         M: 'gtceu:magnetite_dust'
     });
 
-    event.recipes.gtceu.macerator('plutonium239')
-        .itemInputs('nuclearcraft:plutonium_239')
-        .itemOutputs('gtceu:plutonium_dust')
-        .duration(40)
-        .EUt(20);
-
-    event.recipes.gtceu.macerator('plutonium241')
-        .itemInputs('nuclearcraft:plutonium_241')
-        .itemOutputs('gtceu:plutonium_241_dust')
-        .duration(40)
-        .EUt(20);
-
     event.shaped(Item.of('3x create:belt_connector'), [
         'RRR'
     ], {
