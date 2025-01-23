@@ -249,7 +249,7 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .circuit(6);
 
-    event.shaped(Item.of('2x kubejs:enriched_naquadah_firebox_casing'), [
+    event.shaped(Item.of('2x start_core:enriched_naquadah_firebox_casing'), [
         'PRP',
         'RFR',
         'PRP'
@@ -269,7 +269,7 @@ ServerEvents.recipes(event => {
         L: 'gtceu:naquadah_normal_fluid_pipe'
     });
 
-    event.shaped(Item.of('2x kubejs:enriched_naquadah_engine_intake_casing'), [
+    event.shaped(Item.of('2x start_core:enriched_naquadah_engine_intake_casing'), [
         'PHP',
         'RFR',
         'PWP'
@@ -283,7 +283,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('enriched_naquadah_engine_intake_casing')
         .itemInputs('2x gtceu:enriched_naquadah_rotor', '4x gtceu:naquadah_normal_fluid_pipe', 'kubejs:enriched_naquadah_machine_casing')
-        .itemOutputs('2x kubejs:enriched_naquadah_engine_intake_casing')
+        .itemOutputs('2x start_core:enriched_naquadah_engine_intake_casing')
         .duration(50)
         .EUt(16);
 
