@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("#", Predicates.any())
             .where("X", Predicates.blocks("kubejs:enriched_naquadah_engine_intake_casing"))
             .where("B", Predicates.blocks("kubejs:enriched_naquadah_pipe_casing"))
-            .where("C", Predicates.blocks("gtceu:enriched_naquadah_frame"))
+            .where("C", Predicates.blocks("gtceu:naquadah_alloy_frame"))
             .where("D", Predicates.blocks("gtceu:clean_machine_casing"))
             .where("E", Predicates.blocks("gtceu:fusion_glass")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
