@@ -1938,7 +1938,7 @@
 				"30C974448C57F0EC"
 				"3212A3351DAD4492"
 			]
-			description: ["The Maker of Gates applauds you and bestoys upon your their recognition."]
+			description: ["The Maker of Gates applauds you and bestoys upon you their recognition."]
 			hide_dependency_lines: true
 			id: "624480A1E62B52EF"
 			rewards: [{
