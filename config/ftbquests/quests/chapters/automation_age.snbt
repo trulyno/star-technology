@@ -1,5 +1,5 @@
 {
-	autofocus_id: "47CD61D6ECD3DC7D"
+	autofocus_id: "56B0A897E7C7C25C"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "automation_age"
@@ -2327,6 +2327,17 @@
 			}]
 			x: -5.5d
 			y: 12.0d
+		}
+		{
+			id: "56B0A897E7C7C25C"
+			invisible: true
+			tasks: [{
+				id: "02A369FF9CB41D88"
+				title: "positioner"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 4.5d
 		}
 	]
 	title: "Automation Age"
