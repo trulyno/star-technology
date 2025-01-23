@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "kubejs:block/casings/laser_casing_base",
+    "east": "kubejs:block/casings/laser_casing_side",
+    "north": "kubejs:block/casings/laser_casing_side",
+    "particle": "kubejs:block/casings/laser_casing_side",
+    "south": "kubejs:block/casings/laser_casing_side",
+    "up": "kubejs:block/casings/laser_casing_base",
+    "west": "kubejs:block/casings/laser_casing_side"
+  }
+}
