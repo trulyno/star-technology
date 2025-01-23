@@ -1931,7 +1931,7 @@
 				type: "checkmark"
 			}]
 			x: -1.0d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
