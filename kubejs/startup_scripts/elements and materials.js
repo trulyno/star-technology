@@ -676,11 +676,6 @@ materialRegistry(event => {
         .components('1x chlorine', '3x fluorine')
         .color(0xb3ff99);
 
-    // event.create('dichloroethane')
-    //     .fluid()
-    //     .components('2x carbon', '4x hydrogen', '2x chlorine')
-    //     .color(0x99ccff);
-
     event.create('tetrachloroethylene')
         .fluid()
         .components('2x carbon', '4x chlorine')

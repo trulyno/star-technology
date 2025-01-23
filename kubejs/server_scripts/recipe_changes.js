@@ -82,24 +82,14 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(8);
 
-    //Recipe conflict fix
-    //ethane+chlorine
+    //Recipe conflict fix: ethane+chlorine
     event.remove({id: 'gtceu:chemical_reactor/vinyl_chloride_from_ethane'})
     event.recipes.gtceu.chemical_reactor('vinyl_chloride_from_ethane')
         .inputFluids('gtceu:chlorine 4000', 'gtceu:ethane 1000')
         .outputFluids('gtceu:vinyl_chloride 1000','gtceu:hydrochloric_acid 3000')
         .duration(160)
         .EUt(30)
-        .circuit(1);
-
-    //remove the code above when GT fixes it
-    event.remove({id: 'gtceu:chemical_reactor/dichloroethane'})
-    event.recipes.gtceu.chemical_reactor('dichloroethane')
-        .inputFluids('gtceu:ethane 1000', 'gtceu:chlorine 2000')
-        .outputFluids('gtceu:dichloroethane 1000','gtceu:hydrochloric_acid 2000')
-        .duration(200)
-        .EUt(120)
-        .circuit(0);
+        .circuit(2);
 
     event.recipes.gtceu.large_chemical_reactor('latex_rubber')
         .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
