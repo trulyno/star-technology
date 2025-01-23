@@ -1241,8 +1241,10 @@
 			optional: true
 			rewards: [{
 				command: "/sgjourney stargateNetwork address minecraft:the_nether"
+				elevate_perms: true
 				icon: "minecraft:netherrack"
 				id: "0F2CF8BD081737FA"
+				title: "Nether Phone Number"
 				type: "command"
 			}]
 			tasks: [{
@@ -1323,8 +1325,10 @@
 			optional: true
 			rewards: [{
 				command: "/sgjourney stargateNetwork address minecraft:the_end"
+				elevate_perms: true
 				icon: "minecraft:end_stone"
 				id: "2B29FBB9D8552049"
+				title: "End Phone Number"
 				type: "command"
 			}]
 			tasks: [{

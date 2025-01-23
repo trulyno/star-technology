@@ -1392,7 +1392,6 @@
 			optional: true
 			rewards: [{
 				command: "/gamerule doDaylightCycle false"
-				elevate_perms: true
 				icon: "ae2:singularity"
 				id: "3EB38A984CAA9456"
 				title: "Disable the Daylight Cycle"
@@ -1416,7 +1415,6 @@
 			optional: true
 			rewards: [{
 				command: "/gamerule doWeatherCycle false"
-				elevate_perms: true
 				icon: "ae2:singularity"
 				id: "5AE2822D8BC289FE"
 				title: "Disable the Weather Cycle"
@@ -1440,7 +1438,6 @@
 			optional: true
 			rewards: [{
 				command: "/gamerule doDaylightCycle true"
-				elevate_perms: true
 				icon: "ae2:singularity"
 				id: "4FB40FA2C1F1AE47"
 				title: "Enable the Daylight Cycle"
@@ -1494,7 +1491,6 @@
 			optional: true
 			rewards: [{
 				command: "/gamerule doWeatherCycle true"
-				elevate_perms: true
 				icon: "ae2:singularity"
 				id: "095C9F5A75C8759E"
 				title: "Disable the Weather Cycle"

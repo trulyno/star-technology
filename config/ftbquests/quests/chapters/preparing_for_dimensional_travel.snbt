@@ -913,6 +913,14 @@
 			dependencies: ["66D2FB63E81E03AB"]
 			id: "5097F10D8D36FEB7"
 			optional: true
+			rewards: [{
+				command: "/sgjourney stargateNetwork address sgjourney:abydos"
+				elevate_perms: true
+				icon: "minecraft:sandstone"
+				id: "2DDB3CA30AB477B8"
+				title: "Abydos Phone Number"
+				type: "command"
+			}]
 			tasks: [{
 				id: "110810FCBC6D0A65"
 				title: "Get Abydos Coordinates"
