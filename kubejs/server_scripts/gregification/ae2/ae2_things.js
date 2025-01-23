@@ -34,38 +34,39 @@ ServerEvents.recipes(event => {
     applEn(64);
     applEn(256);
     
-    function ae2add(ae2a) {
+    function ae2mega(ae2a) {
 
         event.recipes.gtceu.packer(`start:crafting_storage_${ae2a}_uncrafting`)
-            .itemInputs(`ae2additions:${ae2a}k_crafting_storage`)
-            .itemOutputs(`ae2additions:cell_component_${ae2a}`)
+            .itemInputs(`megacells:${ae2a}m_crafting_storage`)
+            .itemOutputs(`megacells:cell_component_${ae2a}m`)
             .itemOutputs('ae2:crafting_unit')
             .circuit(2)
             .duration(100)
             .EUt(7);
 
         event.recipes.gtceu.packer(`start:storage_cell_${ae2a}_uncrafting`)
-            .itemInputs(`ae2additions:item_storage_cell_${ae2a}`)
-            .itemOutputs(`ae2additions:cell_component_${ae2a}`)
-            .itemOutputs('ae2:item_cell_housing')
+            .itemInputs(`megacells:item_storage_cell_${ae2a}m`)
+            .itemOutputs(`megacells:cell_component_${ae2a}m`)
+            .itemOutputs('megacells:mega_item_cell_housing')
             .circuit(2)
             .duration(100)
             .EUt(7);
 
         event.recipes.gtceu.packer(`start:fluid_cell${ae2a}_uncrafting`)
-            .itemInputs(`ae2additions:fluid_storage_cell_${ae2a}`)
-            .itemOutputs(`ae2additions:cell_component_${ae2a}`)
-            .itemOutputs('ae2:fluid_cell_housing')
+            .itemInputs(`megacells:fluid_storage_cell_${ae2a}m`)
+            .itemOutputs(`megacells:cell_component_${ae2a}m`)
+            .itemOutputs('megacells:mega_fluid_cell_housing')
             .circuit(2)
             .duration(100)
             .EUt(7);
 
-    }
+    };
 
-    ae2add(1024);
-    ae2add(4096);
-    ae2add(16384);
-    ae2add(65536);
+    ae2mega(1);
+    ae2mega(4);
+    ae2mega(16);
+    ae2mega(64);
+    ae2mega(256);
 
 
     //Colouring/Uncolouring Cables with a Chemical Bath 
@@ -159,8 +160,5 @@ ServerEvents.recipes(event => {
     fluidtype("minecraft:water", 4)
     fluidtype("gtceu:distilled_water", 3)
     fluidtype("gtceu:lubricant", 2)
-
-
-
 
 });
