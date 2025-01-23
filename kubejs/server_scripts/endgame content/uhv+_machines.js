@@ -208,15 +208,24 @@ function inputTypes(tier,tier1under,main,cable,wire,glass,plastic,cable1up,mag,p
     event.recipes.gtceu.assembler(`uhv_${typeIO}_bus`)
         .itemInputs(`gtceu:uhv_machine_hull`, `gtceu:mv_super_chest`)
         .inputFluids('gtceu:polyether_ether_ketone 216')
-        .itemOutputs(`gtceu:uhv_${typeIO}_bus`) .circuit(circ)
+        .itemOutputs(`gtceu:uhv_${typeIO}_bus`)
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.UHV])
+        .circuit(circ);
     event.recipes.gtceu.assembler(`uhv_${typeIO}_hatch`)
         .itemInputs(`gtceu:uhv_machine_hull`, `gtceu:mv_super_tank`)
         .inputFluids('gtceu:polyether_ether_ketone 216')
-        .itemOutputs(`gtceu:uhv_${typeIO}_hatch`) .circuit(circ)
+        .itemOutputs(`gtceu:uhv_${typeIO}_hatch`)
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.UHV])
+        .circuit(circ);
     event.recipes.gtceu.assembler(`uhv_dual_${typeIO}_hatch`)
         .itemInputs(`gtceu:uhv_${typeIO}_bus`,`gtceu:uhv_${typeIO}_hatch`,'gtceu:zapolgium_nonuple_fluid_pipe', '3x gtceu:zapolgium_frame')
         .inputFluids('gtceu:polyether_ether_ketone 864')
-        .itemOutputs(`gtceu:uhv_dual_${typeIO}_hatch`) .circuit(circ)
+        .itemOutputs(`gtceu:uhv_dual_${typeIO}_hatch`)
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.UHV])
+        .circuit(circ);
     }
     event.shaped(Item.of(`gtceu:uhv_input_hatch_4x`), 
         [' P ',' H ','   '], 
