@@ -1886,7 +1886,7 @@
 			}]
 			size: 1.0d
 			tasks: [{
-				id: "651369E90C0BD74C"
+				id: "76DE79D061ECA488"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -1898,22 +1898,22 @@
 							{
 								Count: 1b
 								id: "gtceu:iv_1a_energy_converter"
-								tag: { }
 							}
 							{
 								Count: 1b
 								id: "gtceu:iv_4a_energy_converter"
-								tag: { }
 							}
 							{
 								Count: 1b
 								id: "gtceu:iv_8a_energy_converter"
-								tag: { }
 							}
 							{
 								Count: 1b
 								id: "gtceu:iv_16a_energy_converter"
-								tag: { }
+							}
+							{
+								Count: 1b
+								id: "start_core:iv_64a_energy_converter"
 							}
 						]
 					}
