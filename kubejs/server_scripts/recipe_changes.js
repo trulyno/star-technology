@@ -530,11 +530,13 @@ ServerEvents.recipes(event => {
         .EUt(480);
 
     //Indium Line Fix (DONT TOUCH VALUES)
-    event.remove({id: 'gtceu:mixer/indium_concentrate'})
-    event.remove({id: 'gtceu:chemical_reactor/indium_concentrate_separation'})
-    event.remove({id: 'gtceu:large_chemical_reactor/indium_concentrate_separation'})
-    event.remove({id: 'gtceu:chemical_reactor/indium_concentrate_separation_4x'})
-    event.remove({id: 'gtceu:large_chemical_reactor/indium_concentrate_separation_4x'})
+    const InRemoval = ['gtceu:mixer/indium_concentrate','gtceu:chemical_reactor/indium_concentrate_separation','gtceu:large_chemical_reactor/indium_concentrate_separation',
+        'gtceu:chemical_reactor/indium_concentrate_separation_4x','gtceu:large_chemical_reactor/indium_concentrate_separation_4x']
+    
+    InRemoval.forEach(RecipeId => {
+        event.remove({id: RecipeId})
+    });
+
     event.recipes.gtceu.mixer('indium_concentrate_fix')
         .itemInputs('gtceu:purified_sphalerite_ore', 'gtceu:purified_galena_ore')
         .inputFluids('gtceu:sulfuric_acid 2000')
@@ -552,6 +554,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.item_application('minecraft:mycelium', ['minecraft:grass_block', 'exnihilosequentia:mycelium_spores']);
 
+    //Tom's / Chipped Fixes
+
     event.replaceInput({id: 'chipped:benches/mechanist_workbench'}, 'minecraft:tnt', 'minecraft:red_concrete');
 
     event.shaped('toms_storage:ts.adv_wireless_terminal', [
@@ -562,6 +566,20 @@ ServerEvents.recipes(event => {
         P: 'gtceu:steel_plate',
         T: 'toms_storage:ts.wireless_terminal'
     });
+
+    //Treated Wood Fixes/Additions
+    event.remove({id: 'gtceu:macerator/macerate_treated_wood_chest_boat'})
+    event.recipes.gtceu.macerator('treated_wood_chest_boat')
+        .itemInputs('gtceu:treated_wood_chest_boat')
+        .itemOutputs('5x gtceu:treated_wood_dust', '8x gtceu:wood_dust')
+        .duration(1274)
+        .EUt(2);
+    event.recipes.gtceu.macerator('treated_wood_planks')
+        .itemInputs('gtceu:treated_wood_planks')
+        .itemOutputs('gtceu:treated_wood_dust')
+        .duration(98)
+        .EUt(2);
+    event.recipes.create.filling('gtceu:treated_wood_planks', [Fluid.of('gtceu:creosote', 125), '#minecraft:planks'])
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {

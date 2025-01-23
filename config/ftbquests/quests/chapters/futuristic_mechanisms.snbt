@@ -249,7 +249,7 @@
 			}]
 			size: 1.0d
 			tasks: [{
-				id: "579B4C64D0E764AE"
+				id: "5CDDF11DA06146E2"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -261,22 +261,22 @@
 							{
 								Count: 1b
 								id: "gtceu:luv_1a_energy_converter"
-								tag: { }
 							}
 							{
 								Count: 1b
 								id: "gtceu:luv_4a_energy_converter"
-								tag: { }
 							}
 							{
 								Count: 1b
 								id: "gtceu:luv_8a_energy_converter"
-								tag: { }
 							}
 							{
 								Count: 1b
 								id: "gtceu:luv_16a_energy_converter"
-								tag: { }
+							}
+							{
+								Count: 1b
+								id: "start_core:luv_64a_energy_converter"
 							}
 						]
 					}
@@ -534,8 +534,16 @@
 				"020048FAC9576691"
 				"138E77CDBA50A619"
 			]
+			description: [
+				"This is what you will use to make more advanced components and machines."
+				""
+				"Inputs must be placed in THAT order and only uses ULV input busses."
+				""
+				"If something has multiple unstackables, a forming press with a rename is a good way to differentiate the item in inputs."
+			]
 			id: "0094C2E72105E8CA"
 			rewards: [{
+				count: 2
 				id: "0C3349E6CA23B286"
 				item: {
 					Count: 1
@@ -544,7 +552,8 @@
 				}
 				type: "item"
 			}]
-			size: 1.0d
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "74F58207D106C0AD"
 				item: "gtceu:assembly_line"
@@ -802,6 +811,7 @@
 		}
 		{
 			dependencies: ["64033BFF2EAE4FDB"]
+			description: ["Allows you to store research data in mass and share it among multiple assembly lines or other data banks."]
 			id: "127464E65103D2B0"
 			rewards: [{
 				id: "2C640D54ADD01FF2"
@@ -823,7 +833,13 @@
 		}
 		{
 			dependencies: ["127464E65103D2B0"]
-			description: ["This multiblock provides computation to the research station. By playing around with components, you can generate enough computation to research things."]
+			description: [
+				"This multiblock provides computation to the research station. By playing around with components, you can generate enough computation to research things."
+				""
+				"48CWU is the maximum sustainable early on with no bridging component."
+				"36CWU is the maximum sustainable with a bridging component."
+				"48CWU is the maximum sustainable with Abydos technology and a bridging component."
+			]
 			id: "560993E111853A54"
 			rewards: [{
 				id: "0C6381BA1C29A697"
@@ -2166,7 +2182,11 @@
 				"560993E111853A54"
 				"19D9B5FFD3D767C2"
 			]
-			description: ["Unfortunately, you can connect only one HPCA to the research station. However, this multiblock can route the computation from several HPCAs into the research station!"]
+			description: [
+				"Unfortunately, you can connect only one HPCA to the research station. However, this multiblock can route the computation from several HPCAs into the research station!"
+				""
+				"HPCA's will need bridging components to be able to connect and transmit CWU through these."
+			]
 			id: "0687F0D2A9EC1AA4"
 			rewards: [{
 				id: "2B66FA09A1766701"

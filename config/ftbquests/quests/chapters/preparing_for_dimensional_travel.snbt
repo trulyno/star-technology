@@ -604,7 +604,7 @@
 		}
 		{
 			dependencies: ["75F0388FAB52E0B3"]
-			description: ["To pay homage to Schrubbls, who kept this pack going and alive in the early days."]
+			description: ["A casing to pay homage to an early contributer of the pack, keeping it going."]
 			id: "10D78E10735CD210"
 			rewards: [{
 				id: "3A14DEA6D1AA0502"

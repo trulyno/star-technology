@@ -679,7 +679,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.5d
 			y: -10.0d
 		}
 		{
@@ -703,7 +703,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.5d
 			y: -10.0d
 		}
 		{
@@ -735,7 +735,7 @@
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
-			description: ["Go Explore the Scattered Temples of Abydos"]
+			description: ["Go Explore the Scattered Temples of Abydos to find the things you are searching for."]
 			id: "3479CEBD73550718"
 			rewards: [{
 				id: "7FC500BE090ABC2E"
@@ -1458,6 +1458,7 @@
 			}]
 			shape: "octagon"
 			size: 1.0d
+			subtitle: "Not Yet Accessible"
 			tasks: [{
 				dimension: "minecraft:the_end"
 				icon: "minecraft:end_stone"
@@ -1484,6 +1485,7 @@
 			}]
 			shape: "octagon"
 			size: 1.0d
+			subtitle: "Not Yet Accessible"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				icon: "minecraft:netherrack"
@@ -1504,7 +1506,7 @@
 				title: "Cheaper HydroCarbons"
 				type: "checkmark"
 			}]
-			x: -3.5d
+			x: -5.5d
 			y: -10.0d
 		}
 		{
@@ -1746,7 +1748,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["146F88E5C1119649"]
+			dependencies: [
+				"146F88E5C1119649"
+				"624480A1E62B52EF"
+			]
 			id: "2C354B0735DF8023"
 			rewards: [{
 				count: 2
@@ -1926,6 +1931,28 @@
 			}]
 			x: -5.0d
 			y: -6.0d
+		}
+		{
+			dependencies: [
+				"75F0388FAB52E0B3"
+				"30C974448C57F0EC"
+				"3212A3351DAD4492"
+			]
+			description: ["The Maker of Gates applauds you and bestoys upon you their recognition."]
+			hide_dependency_lines: true
+			id: "624480A1E62B52EF"
+			rewards: [{
+				id: "78DFAFA748001157"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7BCA58F07C6457AC"
+				item: "kubejs:inscribe_casing"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -10.0d
 		}
 	]
 	title: "Adventures in Abydos"
