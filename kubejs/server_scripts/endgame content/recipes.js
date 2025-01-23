@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:zapolgium_ingot')
         .itemOutputs('gtceu:magnetic_zapolgium_ingot')
         .duration(80)
-        .EUt(GTValues.VA[GTValues.ZPM]);
+        .EUt(GTValues.VA[GTValues.UV]);
 
     event.recipes.gtceu.polarizer('magnetic_pure_netherite')
         .itemInputs('gtceu:pure_netherite_ingot')

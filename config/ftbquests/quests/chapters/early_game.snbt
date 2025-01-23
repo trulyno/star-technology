@@ -463,7 +463,11 @@
 				"37451F8CF7504596"
 				"063AF9790DA7ABE0"
 			]
-			description: ["Your first superconductor! Superconductors are lossless, meaning they won't lose power the farther they go. Always use them, when possible."]
+			description: [
+				"Your first superconductor! "
+				""
+				"Superconductors are lossless, meaning they won't lose power the farther they go. Always use them, when possible."
+			]
 			icon: "gtceu:soul_infused_single_wire"
 			id: "3AF688ADC18E580C"
 			rewards: [{

@@ -1445,6 +1445,7 @@
 			dependencies: ["5E7153B7A10FC241"]
 			icon: "minecraft:end_stone"
 			id: "4238E903C674B284"
+			optional: true
 			rewards: [{
 				id: "6BE5069F47361652"
 				item: {
@@ -1470,6 +1471,7 @@
 			dependencies: ["5E7153B7A10FC241"]
 			icon: "minecraft:netherrack"
 			id: "1E3EF64C0A4EE438"
+			optional: true
 			rewards: [{
 				id: "5440DF6C322F753F"
 				item: {
@@ -1493,6 +1495,7 @@
 		}
 		{
 			dependencies: ["47DF7968E9B98C65"]
+			description: ["Mutate and Breed Bacteria to fit you needs and help you gather all the hydrocarbons you could need."]
 			id: "2F91771A1872EB4E"
 			optional: true
 			tasks: [{
@@ -1505,6 +1508,7 @@
 		}
 		{
 			dependencies: ["2659B3AA9108BC43"]
+			description: ["With the \"Exotic Gas Siphon\" you are able to do all of Air distilation in 1 step or gather immense amounts of gas at once."]
 			id: "6CCC111235D6CE5B"
 			optional: true
 			tasks: [{
@@ -1890,7 +1894,7 @@
 		{
 			dependencies: ["5E7153B7A10FC241"]
 			description: [
-				"Thank you for playing through this pack to its current state, a lot of time has been put in so that it was a unique and enjoyable experience. You are invited to come share off your accomplishment on our discord where we would love to hear what you thought about the pack."
+				"Thank you for playing through this pack to its current state, a lot of time has been put in so that it was a unique and enjoyable experience. You are invited to come show off your accomplishment on our discord where we would love to hear what you thought about the pack."
 				""
 				""
 				"-StarT Dev Team"
@@ -1901,7 +1905,7 @@
 			id: "46982CD51A50CD07"
 			shape: "pentagon"
 			size: 1.5d
-			subtitle: "Congradulations, for now this is the end of the content, though, if you join the discord you can often see what comes next."
+			subtitle: "Congratulations, for now this is the end of the content, though, if you join the discord you can often see what comes next."
 			tasks: [{
 				id: "5163F1D911C227BB"
 				title: "Thanks"

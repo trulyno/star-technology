@@ -642,6 +642,7 @@
 		}
 		{
 			dependencies: ["56BA79287C4DBE52"]
+			description: ["Your MV superconductor."]
 			icon: "gtceu:signalum_ingot"
 			id: "1A638BE0C6031CC5"
 			rewards: [{
@@ -952,6 +953,7 @@
 				"6D8E5B0E49056FDC"
 				"20A12F3B992762F0"
 			]
+			description: ["First MV circuits."]
 			id: "7836F17B34B47B16"
 			rewards: [{
 				count: 2
@@ -1326,6 +1328,7 @@
 		}
 		{
 			dependencies: ["0A03B4D352DCF148"]
+			description: ["This is your HV material, will be needed in vast quantities."]
 			id: "7E6BF5B40EA057F5"
 			rewards: [{
 				id: "6B7F70F97846F1E0"
@@ -1790,6 +1793,13 @@
 				"1F5CCE8CFD02903A"
 				"6D23752791E9928A"
 			]
+			description: [
+				"The machine allowing you to gather all the Geodes and Gems you could need."
+				""
+				"You'll want 2 output busses to have enough room for the Geodes"
+				""
+				"Keep in mind you can only have 1 energy hatch on the machine."
+			]
 			id: "5F80268C02FAD5F6"
 			rewards: [{
 				id: "170D10B336CA9B51"
@@ -1810,6 +1820,13 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
+			description: [
+				"Gather ore from mining and collecting the dust around you."
+				""
+				"Make sure to save the liquids for later as you can get more and rarer materials."
+				""
+				"This machine can only take 1 energy hatch."
+			]
 			id: "30B2688F8387048F"
 			rewards: [{
 				id: "4B6770AF03D1B85C"
@@ -1932,7 +1949,7 @@
 		}
 		{
 			dependencies: ["76B701A5EF4C1EF1"]
-			description: ["Oxidised copper is used for a number of recipes in wire and bolt form."]
+			description: ["Oxidised copper is used for a number of recipes in wire and bolt form. Copper in an Arc Furnace is the best way."]
 			id: "47B9F8BF9E02391C"
 			rewards: [{
 				id: "75460ACFE7D43950"
@@ -1953,6 +1970,7 @@
 				"4ED724D5B94CFA3A"
 				"261174370DC87FCB"
 			]
+			description: ["Another type of component for circuits used in HV and above."]
 			id: "724BAC3F48CE91AA"
 			tasks: [{
 				id: "799B98C337C4EE49"
@@ -1971,6 +1989,7 @@
 				"0DEEBB486450E74E"
 				"491C4CECC6C24DDF"
 			]
+			description: ["Stronger Chips used for Stronger Circuits all the way till UHV"]
 			icon: "gtceu:ram_chip"
 			id: "45591A05A0A61821"
 			rewards: [{

@@ -604,6 +604,7 @@
 		}
 		{
 			dependencies: ["75F0388FAB52E0B3"]
+			description: ["To pay homage to Schrubbls, who kept this pack going and alive in the early days."]
 			id: "10D78E10735CD210"
 			rewards: [{
 				id: "3A14DEA6D1AA0502"
@@ -1013,6 +1014,7 @@
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
+			description: ["A VERY strong computer"]
 			id: "664F435508073B8E"
 			rewards: [{
 				id: "5170CA1F3DC88A00"
@@ -1035,6 +1037,7 @@
 		{
 			dependencies: ["3ECCE739DE8F5F2C"]
 			id: "2EE4C6540FE3D4CF"
+			optional: true
 			rewards: [{
 				id: "173AE84D06BE0BF0"
 				item: {
@@ -1056,6 +1059,7 @@
 		{
 			dependencies: ["3ECCE739DE8F5F2C"]
 			id: "17C47EC4E8337D7B"
+			optional: true
 			rewards: [{
 				id: "014A406ABD674F80"
 				item: {
@@ -1100,6 +1104,7 @@
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
+			description: ["It seems components are getting a little complex now."]
 			id: "73D0DC357821B395"
 			rewards: [{
 				count: 2

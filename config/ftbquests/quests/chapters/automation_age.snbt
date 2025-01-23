@@ -313,6 +313,7 @@
 		}
 		{
 			dependencies: ["250C897A70DB797F"]
+			description: ["Better Circuits means better Circuit boards"]
 			id: "41D5FABA8D0BB0AC"
 			rewards: [{
 				id: "138F9541C5275C03"
@@ -760,7 +761,11 @@
 		}
 		{
 			dependencies: ["32B878D63A6AB6D3"]
-			description: ["3rd tier of coils for your EBF to allow you to increase the heat even more. Will start making hot ingots more often."]
+			description: [
+				"3rd tier of coils for your EBF to allow you to increase the heat even more. Will start making hot ingots more often."
+				""
+				"It also gives you your first heat based Overclocks for Aluminium and Stainless Steel notably."
+			]
 			id: "1DA6B3308C263A6F"
 			rewards: [{
 				count: 2
@@ -933,7 +938,11 @@
 		}
 		{
 			dependencies: ["4FFD2642BC183495"]
-			description: ["Allows you to pump oil from the void. I don't know how that works though."]
+			description: [
+				"Allows you to pump oil from the void. I don't know how that works out, but it does."
+				""
+				"Better Drills dont drain chunks as much and work much faster."
+			]
 			id: "22BC7BDE5E132A30"
 			rewards: [{
 				id: "26043A495658B8EF"
@@ -1558,6 +1567,7 @@
 				"62BA581B2918BB7B"
 				"2DB216B224F2E8EF"
 			]
+			description: ["Better Circuits, Fasters Circuits, Cheaper Circuits, this is a big one."]
 			id: "574ECD841D0D2AD7"
 			rewards: [{
 				id: "454446B7F35018F3"
