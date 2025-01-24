@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
             .itemInputs(`${input}`)
             .itemOutputs(outputs)
             .duration(400)
-            .EUt(GTValues.VA[GTValues.IV])
+            .EUt(GTValues.VA[GTValues.EV])
 
     }
 
