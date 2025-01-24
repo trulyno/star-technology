@@ -1,14 +1,14 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-    event.create('void_miner')
-        .category('void_miner')
+    event.create('void_excavation')
+        .category('void_excavation')
         .setMaxIOSize(0, 6, 1, 2)
         .setSound(GTSoundEntries.MINER);
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('void_miner', 'multiblock')
+    event.create('void_extractor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('void_miner')
+        .recipeType('void_excavation')
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('SSS', '#F#', '#F#', '###', '###', '###')

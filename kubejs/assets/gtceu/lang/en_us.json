@@ -424,8 +424,8 @@
     "gtceu.rock_sifter": "Rock Sifter",
     "block.gtceu.rock_sifter": "Rock Sifter Controller",
 
-    "gtceu.void_miner": "Void Miner",
-    "block.gtceu.void_miner": "Void Miner Controller",
+    "gtceu.void_excavation": "Void Excavation",
+    "block.gtceu.void_extractor": "Void Extractor Controller",
     "gtceu.void_excavator": "Void Excavator",
     "block.gtceu.void_excavator": "Void Excavator Controller",
 
