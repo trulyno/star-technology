@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
         .EUt((GTValues.VA[GTValues.ZPM]))
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
 
-    event.recipes.gtceu.chemical_reactor('qRAM')
+    event.recipes.gtceu.chemical_reactor('qram')
         .itemInputs('gtceu:ram_wafer','2x gtceu:silicon_carbide_over_bismuth_tritelluride_dust')
         .inputFluids('gtceu:radon 250')
         .itemOutputs('kubejs:qram_wafer')
