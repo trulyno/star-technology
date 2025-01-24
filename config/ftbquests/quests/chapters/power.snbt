@@ -3,7 +3,7 @@
 	default_quest_shape: "square"
 	filename: "power"
 	group: "28726466D987C725"
-	icon: "thermalendergy:endergy_upgrade_3"
+	icon: "kubejs:mv_upgrade_kit"
 	id: "10A89CD14C4DAF63"
 	order_index: 0
 	quest_links: [ ]

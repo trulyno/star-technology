@@ -357,7 +357,7 @@
 			y: 1.0d
 		}
 		{
-			description: ["This tool can both help you do more and MOST notibly build multiblock for you by right clicking a controller with the blocks in your inventory."]
+			description: ["This tool can both help you do more and MOST notibly build multiblock for you by shift right clicking a controller with the blocks in your inventory."]
 			id: "2AB07DDCE44FA5D4"
 			tasks: [{
 				id: "4CECC98B96F59492"
