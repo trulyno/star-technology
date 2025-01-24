@@ -1,4 +1,5 @@
 {
+	autofocus_id: "7168A2D5D4EE14E9"
 	default_hide_dependency_lines: false
 	default_quest_shape: "rsquare"
 	filename: "welcome"
@@ -115,8 +116,8 @@
 				type: "checkmark"
 			}]
 			title: "Turn on AE2 Channels"
-			x: -1.5d
-			y: 5.0d
+			x: -3.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
@@ -135,8 +136,8 @@
 				type: "checkmark"
 			}]
 			title: "Turn on AE2 Channels x2"
-			x: -0.5d
-			y: 6.0d
+			x: 4.0d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
@@ -155,8 +156,8 @@
 				type: "checkmark"
 			}]
 			title: "Turn on AE2 Channels x3"
-			x: 1.0d
-			y: 6.5d
+			x: 5.0d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
@@ -175,8 +176,8 @@
 				type: "checkmark"
 			}]
 			title: "Turn on AE2 Channels x4"
-			x: 2.5d
-			y: 6.0d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
@@ -195,8 +196,19 @@
 				type: "checkmark"
 			}]
 			title: "Turn off AE2 Channels"
-			x: 3.5d
-			y: 5.0d
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			id: "38D8AFED26B5D252"
+			invisible: true
+			tasks: [{
+				id: "2A47E38B1F508C78"
+				title: "positioner"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 0.0d
 		}
 	]
 	title: "Welcome"

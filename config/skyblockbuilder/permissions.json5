@@ -1,6 +1,6 @@
 {
   // Should players be able to create their own team? [default: false]
-  "createOwnTeam": false,
+  "createOwnTeam": true,
   
   // Force the check if the world is skyblock
   // This enables the commands in worlds without any skyblock dimension

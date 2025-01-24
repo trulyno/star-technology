@@ -130,24 +130,29 @@ ServerEvents.recipes(event => {
         '#gtceu:circuits/ev'
     );
 
-    event.replaceInput({output: 'ae2additions:cell_component_1024'}, 
-        'ae2:engineering_processor',
+    event.replaceInput({output: 'megacells:cell_component_1m'}, 
+        'megacells:accumulation_processor',
         '#gtceu:circuits/iv'
     );
 
-    event.replaceInput({output: 'ae2additions:cell_component_4096'}, 
-        'ae2:engineering_processor',
+    event.replaceInput({output: 'megacells:cell_component_4m'}, 
+        'megacells:accumulation_processor',
         '#gtceu:circuits/luv'
     );
 
-    event.replaceInput({output: 'ae2additions:cell_component_16384'}, 
-        'ae2:engineering_processor',
+    event.replaceInput({output: 'megacells:cell_component_16m'}, 
+        'megacells:accumulation_processor',
         '#gtceu:circuits/zpm'
     );
 
-    event.replaceInput({output: 'ae2additions:cell_component_65536'}, 
-        'ae2:engineering_processor',
+    event.replaceInput({output: 'megacells:cell_component_64m'}, 
+        'megacells:accumulation_processor',
         '#gtceu:circuits/uv'
+    );
+
+    event.replaceInput({output: 'megacells:cell_component_256m'}, 
+        'megacells:accumulation_processor',
+        '#gtceu:circuits/uhv'
     );
 
     event.recipes.gtceu.wiremill('quartz_fiber_cables')
@@ -289,4 +294,17 @@ ServerEvents.recipes(event => {
             D: 'gtceu:star_steel_plate',
             E: '#forge:ingots/copper'
         });
+
+    //MEGA cells
+    event.replaceInput({input: 'megacells:accumulation_processor'}, 
+        'megacells:accumulation_processor',
+        '#gtceu:circuits/iv'
+    );
+
+    event.remove({ output: /megacells:sky_steel.*/});
+    event.replaceInput({input: 'megacells:sky_steel_ingot'}, 
+        'megacells:sky_steel_ingot',
+        'minecraft:netherite_ingot'
+    );
+
 })

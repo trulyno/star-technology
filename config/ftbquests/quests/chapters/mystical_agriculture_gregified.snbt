@@ -1,4 +1,5 @@
 {
+	autofocus_id: "2E2F3E90BB63363D"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "mystical_agriculture_gregified"
@@ -9,7 +10,11 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Grow your resources instead"]
+			description: [
+				"Grow your resources instead"
+				""
+				"Currently best used for Nether Stars and Airs"
+			]
 			id: "56B697F3D73D8A5F"
 			shape: "hexagon"
 			size: 1.5d

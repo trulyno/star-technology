@@ -1,6 +1,9 @@
 ClientEvents.lang('en_us', event => {
     event.renameItem("createdieselgenerators:biodiesel_bucket", "Crude Bio Diesel Bucket");
     event.add('fluid.createdieselgenerators:biodiesel', 'Crude Bio Diesel');
+    event.renameItem('sgjourney:milky_way_stargate', 'Ancient Stargate')
+    event.renameBlock('sgjourney:milky_way_ring', 'Ancient Stargate')
+    event.renameBlock('sgjourney:milky_way_dhd', 'Ancient DHD')
     event.renameBlock('create_new_age:netherite_magnet', 'Large Neodymium Magnet');
     event.renameBlock('xycraft_world:aluminum_storage', 'Alumino-Calcite Smooth Block');
     event.renameBlock('xycraft_world:aluminum_bricks_cloud', 'Alumino-Calcite Bricks');

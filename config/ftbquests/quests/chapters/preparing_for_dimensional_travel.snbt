@@ -12,7 +12,7 @@
 		id: "6AA4625E98ED37B8"
 		linked_quest: "2F87FC1D5BB43220"
 		x: -1.0d
-		y: 2.5d
+		y: 0.5d
 	}]
 	quests: [
 		{
@@ -158,6 +158,7 @@
 				"73D0DC357821B395"
 				"5BDA17962F4630EB"
 				"4F6B1F4261874B65"
+				"783865A56909D3C7"
 			]
 			id: "11D51899B980082B"
 			rewards: [{
@@ -198,7 +199,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["44B43694312BAAC8"]
+			dependencies: [
+				"44B43694312BAAC8"
+				"0C19C040CA121E3B"
+			]
 			id: "581B9922CC4B457F"
 			rewards: [{
 				id: "354EE1013EA404DB"
@@ -480,6 +484,11 @@
 		}
 		{
 			dependencies: ["2F87FC1D5BB43220"]
+			icon: {
+				Count: 1
+				id: "gtceu:echo_r_bucket"
+				tag: { }
+			}
 			id: "239A0034C8425661"
 			rewards: [{
 				id: "3F68400BC1C19CFF"
@@ -490,11 +499,19 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "0F233B828108A0AF"
-				item: "gtceu:echo_r_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0F233B828108A0AF"
+					item: "gtceu:echo_r_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7D6A01CC1134C595"
+					type: "checkmark"
+				}
+			]
+			title: "Echo Fluid"
 			x: -3.0d
 			y: 0.5d
 		}
@@ -587,6 +604,7 @@
 		}
 		{
 			dependencies: ["75F0388FAB52E0B3"]
+			description: ["A casing to pay homage to an early contributer of the pack, keeping it going."]
 			id: "10D78E10735CD210"
 			rewards: [{
 				id: "3A14DEA6D1AA0502"
@@ -769,6 +787,7 @@
 		}
 		{
 			dependencies: ["6D169C5E35C9EF6C"]
+			description: ["Try a variety of singularities so that you don't drain yourself of 1 material"]
 			id: "0508AE03C730BE6C"
 			rewards: [{
 				id: "2B9821F0ED86771C"
@@ -895,6 +914,14 @@
 			dependencies: ["66D2FB63E81E03AB"]
 			id: "5097F10D8D36FEB7"
 			optional: true
+			rewards: [{
+				command: "/sgjourney stargateNetwork address sgjourney:abydos"
+				elevate_perms: true
+				icon: "minecraft:sandstone"
+				id: "2DDB3CA30AB477B8"
+				title: "Abydos Phone Number"
+				type: "command"
+			}]
 			tasks: [{
 				id: "110810FCBC6D0A65"
 				title: "Get Abydos Coordinates"
@@ -996,6 +1023,7 @@
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
+			description: ["A VERY strong computer"]
 			id: "664F435508073B8E"
 			rewards: [{
 				id: "5170CA1F3DC88A00"
@@ -1018,6 +1046,7 @@
 		{
 			dependencies: ["3ECCE739DE8F5F2C"]
 			id: "2EE4C6540FE3D4CF"
+			optional: true
 			rewards: [{
 				id: "173AE84D06BE0BF0"
 				item: {
@@ -1039,6 +1068,7 @@
 		{
 			dependencies: ["3ECCE739DE8F5F2C"]
 			id: "17C47EC4E8337D7B"
+			optional: true
 			rewards: [{
 				id: "014A406ABD674F80"
 				item: {
@@ -1083,6 +1113,7 @@
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
+			description: ["It seems components are getting a little complex now."]
 			id: "73D0DC357821B395"
 			rewards: [{
 				count: 2
@@ -1218,8 +1249,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "36C4A977AC2832FF"
 			optional: true
 			size: 1.0d
@@ -1233,8 +1265,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "1A9E02D50128F4AD"
 			optional: true
 			size: 1.0d
@@ -1248,8 +1281,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "30A538E9EBDD2205"
 			optional: true
 			size: 1.0d
@@ -1263,8 +1297,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "1297467DBA806D50"
 			optional: true
 			size: 1.0d
@@ -1278,8 +1313,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "3041F1837C4DA2E3"
 			optional: true
 			size: 1.0d
@@ -1293,8 +1329,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "485894F4A9C420F1"
 			optional: true
 			size: 1.0d
@@ -1308,8 +1345,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "31E828DC7CE05631"
 			optional: true
 			size: 1.0d
@@ -1323,8 +1361,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "7B4822B623583E48"
 			optional: true
 			size: 1.0d
@@ -1338,8 +1377,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "1AE90AE93401A62A"
 			optional: true
 			size: 1.0d
@@ -1353,8 +1393,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "6E775A20310010C2"
 			optional: true
 			size: 1.0d
@@ -1368,8 +1409,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "66AE1F38C954EDEE"
 			optional: true
 			size: 1.0d
@@ -1383,8 +1425,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "1B8F144D59973A6C"
 			optional: true
 			size: 1.0d
@@ -1398,8 +1441,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "6713F5C835972F25"
 			optional: true
 			size: 1.0d
@@ -1413,8 +1457,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "6766CDEE53EC220A"
 			optional: true
 			size: 1.0d
@@ -1428,8 +1473,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "4CDCBD47FA5A5E76"
 			optional: true
 			size: 1.0d
@@ -1443,8 +1489,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "1A8A9CFDE2F83509"
 			optional: true
 			size: 1.0d
@@ -1458,8 +1505,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "68430C48D21E615A"
 			optional: true
 			size: 1.0d
@@ -1473,8 +1521,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "26F037DFC3D2B29D"
 			optional: true
 			size: 1.0d
@@ -1488,8 +1537,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "5B30840FFE93E1C5"
 			optional: true
 			size: 1.0d
@@ -1503,8 +1553,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "432B18BF3105D336"
 			optional: true
 			size: 1.0d
@@ -1518,8 +1569,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "277B1634E0CDF94E"
 			optional: true
 			size: 1.0d
@@ -1533,8 +1585,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "08A1359B9D71B96F"
 			optional: true
 			size: 1.0d
@@ -1548,8 +1601,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "47B4445919A32696"
 			optional: true
 			size: 1.0d
@@ -1563,8 +1617,9 @@
 		}
 		{
 			dependencies: ["653AD979AE4D0581"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "7FD3A94A90552118"
 			optional: true
 			size: 1.0d
@@ -1613,8 +1668,8 @@
 				item: "gtceu:vibration_laser_engraver"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 0.5d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1672,6 +1727,87 @@
 			}]
 			x: -9.0d
 			y: 5.75d
+		}
+		{
+			can_repeat: true
+			dependencies: ["481D42E3473FDCED"]
+			description: ["Waaaaaaaa"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "6C39CD86546B3C64"
+			optional: true
+			rewards: [{
+				command: "/execute in minecraft:overworld run tp @p 0 -72 0"
+				icon: {
+					Count: 1
+					id: "minecraft:grass_block"
+					tag: { }
+				}
+				id: "47BEEE08B9727341"
+				type: "command"
+			}]
+			tasks: [{
+				id: "39C471CAFC4E05DC"
+				title: "I wanna go home..."
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["2EDE996312B1C69E"]
+			description: ["How did you break /spawn AND /home????????"]
+			id: "481D42E3473FDCED"
+			optional: true
+			tasks: [{
+				id: "10FD7D062F28C45C"
+				title: "So You Got Stuck"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -10.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2EDE996312B1C69E"]
+			id: "57246BEEC82C5E15"
+			optional: true
+			rewards: [{
+				command: "/gamestage add @a one"
+				icon: {
+					Count: 1
+					id: "ae2:singularity"
+					tag: { }
+				}
+				id: "48AD09B9F8B0BCA2"
+				type: "command"
+			}]
+			tasks: [{
+				id: "217A3F4E8BE2FCB0"
+				title: "Gimme My Gamestage"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"35829E28221CB70E"
+				"074A6D7A3072E11F"
+			]
+			id: "783865A56909D3C7"
+			tasks: [{
+				id: "4639AA5380F2CC8F"
+				item: {
+					Count: 1
+					id: "gtceu:indium_tin_lead_cadmium_soldering_alloy_ingot"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.25d
 		}
 	]
 	title: "Making the Classic Stargate"

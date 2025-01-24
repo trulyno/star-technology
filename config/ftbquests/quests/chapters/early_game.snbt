@@ -1,4 +1,5 @@
 {
+	autofocus_id: "390CB178FC2D2CCC"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "early_game"
@@ -11,7 +12,7 @@
 	quests: [
 		{
 			dependencies: ["16A9D8E864A18B9E"]
-			description: ["The start of any skyblock pack, hope you like tree chopping."]
+			description: ["The start of any skyblock pack. Who wood have guessed."]
 			id: "5B3D8132C90D790B"
 			rewards: [{
 				count: 2
@@ -26,7 +27,7 @@
 				item: "minecraft:oak_log"
 				type: "item"
 			}]
-			title: "Chopping some trees down"
+			title: "Tree Chopping"
 			x: -5.5d
 			y: 1.0d
 		}
@@ -36,7 +37,7 @@
 				"20A12F3B992762F0"
 				"3AF688ADC18E580C"
 			]
-			description: ["The converter blocks will become the backbone of your base, turning RF to EU to a 4 to 1 ratio. You can have multiple of these on a single line of cables only if the cables can support the amps."]
+			description: ["Converters are essential for power transfer in this pack, as they are used to convert between EU and FE/RF. EU conversion is disabled for StarT, so you will need one of these whenever energy conversion is necessary. Keep in mind that &a4 FE/RF&r is equal to &61 EU&r."]
 			id: "511898EE4087FED7"
 			rewards: [{
 				count: 2
@@ -75,13 +76,13 @@
 				title: "Any LV Converter"
 				type: "item"
 			}]
-			title: "The great industrial revolution"
+			title: "The Great Industrial Revolution"
 			x: 7.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
-			description: ["Crook leaves and infest some more leaves and watch the string come rolling in."]
+			description: ["Breaking leaves with a crook will drop Silkworms, which can be used on leaves to infest them. Sit back, watch the infestation spread, and reap the rewards with your crook."]
 			icon: "exnihilosequentia:silkworm"
 			id: "7717C0904590E303"
 			rewards: [{
@@ -113,17 +114,13 @@
 					type: "item"
 				}
 			]
-			title: "Wormy buisiness"
+			title: "Wormy Business"
 			x: -5.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["7717C0904590E303"]
-			description: [
-				"Sieving is the best way to get rich, just make sure you are using the correct mesh."
-				""
-				"I recommend finding out a way to automate this as you won't get access to easy automation for flint meshes and above till HV."
-			]
+			description: ["Sieving is the only way to obtain resources early on. They can be automated, with a little cleverness."]
 			icon: "exnihilosequentia:string_mesh"
 			id: "26D3E2C0599B43B2"
 			rewards: [{
@@ -149,7 +146,7 @@
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
-			description: ["Created to be left behind after you get two buckets of water."]
+			description: ["Crucibles are handy devices that turn saplings into water, only to be discarded moments later. Using a bucket made of logs, you can magically scoop up this vital liquid."]
 			icon: "exnihilosequentia:oak_crucible"
 			id: "03ACC7D2577A2C66"
 			rewards: [{
@@ -179,12 +176,12 @@
 					type: "item"
 				}
 			]
-			title: "I need water"
+			title: "Obtaining Water"
 			x: -3.5d
 			y: 2.5d
 		}
 		{
-			description: ["By shift-right clicking Grass, you can get pebbles for the basic stone types."]
+			description: ["By sneaking and right-clicking Grass (the dirt one), you can get pebbles for basic stone types."]
 			icon: "minecraft:cobblestone"
 			id: "07CBF849162D7BDF"
 			rewards: [{
@@ -207,7 +204,7 @@
 					type: "item"
 				}
 			]
-			title: "Pebble for days"
+			title: "Touching Grass"
 			x: -4.0d
 			y: -5.0d
 		}
@@ -216,7 +213,7 @@
 				"6C7DB3F0C3B85B9B"
 				"7E72B9CC8631769D"
 			]
-			description: ["The materials you can aquire from blackstone usually is directly used in progress. Might be a good idea to look for the best way for you to automate this."]
+			description: ["The materials you can acquire from Blackstone are needed to progress. It might be a good idea to automate this."]
 			id: "550A27AA2B500111"
 			rewards: [{
 				id: "0AF82121E951A38D"
@@ -241,7 +238,7 @@
 		}
 		{
 			dependencies: ["07CBF849162D7BDF"]
-			description: ["Its hammer time!"]
+			description: ["We crushin' it"]
 			id: "6C7DB3F0C3B85B9B"
 			rewards: [{
 				id: "7707126152A24AD2"
@@ -277,13 +274,13 @@
 					type: "item"
 				}
 			]
-			title: "Hammering stuff down"
+			title: "Hammer Time"
 			x: -4.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["07CBF849162D7BDF"]
-			description: ["We cooking now, just dont cook all your wood yet."]
+			description: ["We cooking now"]
 			id: "1801A2B1D6BD232F"
 			rewards: [{
 				id: "33A0C9431EAFB50C"
@@ -303,7 +300,7 @@
 				"26D3E2C0599B43B2"
 				"2D1184752D7ACA66"
 			]
-			description: ["I recommend making some more dirt before using up all your island on these useful resources"]
+			description: ["It is recommended to make more dirt, before using up your entire starter island on these useful resources."]
 			icon: "minecraft:mud"
 			id: "3AC92138809F3783"
 			rewards: [{
@@ -334,6 +331,11 @@
 						id: "minecraft:mangrove_propagule"
 						tag: { }
 					}
+					type: "item"
+				}
+				{
+					id: "5218C30136BA7C07"
+					item: "minecraft:mud"
 					type: "item"
 				}
 			]
@@ -393,11 +395,7 @@
 				"07A407A268A4FC96"
 				"3B81632EF4586280"
 			]
-			description: [
-				"With all the parts combined, you finally get your hands on your first LV circuit!"
-				""
-				"I hope you made enough for a few of these right away as you are going to need quite a few of these."
-			]
+			description: ["With all the parts combined, you finally get your hands on your first LV circuit! It might be a good idea to make a bunch of these beforehand, to aid in the push for LV machines."]
 			hide_dependent_lines: true
 			id: "20A12F3B992762F0"
 			rewards: [{
@@ -466,7 +464,11 @@
 				"37451F8CF7504596"
 				"063AF9790DA7ABE0"
 			]
-			description: ["Your first superconductor! This losses cable means you can take the power wherever you want, if you can afford it that is."]
+			description: [
+				"Your first superconductor! "
+				""
+				"Superconductors are lossless, meaning they won't lose power the farther they go. Always use them, when possible."
+			]
 			icon: "gtceu:soul_infused_single_wire"
 			id: "3AF688ADC18E580C"
 			rewards: [{
@@ -482,9 +484,9 @@
 					type: "item"
 				}
 				{
-					count: 4L
+					count: 16L
 					id: "2FAC2F7346D72D55"
-					item: { Count: 4, id: "gtceu:soul_infused_single_wire" }
+					item: "gtceu:soul_infused_single_wire"
 					type: "item"
 				}
 			]
@@ -496,6 +498,7 @@
 			dependencies: ["5094070DDE1BFA3D"]
 			description: ["Create's number one alloy, now with a better crafting ratio!"]
 			id: "039D327E919878BF"
+			optional: true
 			rewards: [{
 				id: "24B61B66673D1F1D"
 				item: "kubejs:coin"
@@ -511,8 +514,9 @@
 		}
 		{
 			dependencies: ["039D327E919878BF"]
-			description: ["Tired of only getting a single plate from 2 ingots? This lets you slam for a nice one to one ratio for a small variety of plates."]
+			description: ["Tired of needing two ingots per plate? The Mechanical Press lets you make plates for half the price early on!"]
 			id: "3E931D2E92BE9486"
+			optional: true
 			rewards: [{
 				id: "2DAE713111C2C5F7"
 				item: "kubejs:coin"
@@ -523,7 +527,7 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			title: "Get your Plates cheap"
+			title: "Bulk Smash"
 			x: 2.0d
 			y: -5.5d
 		}
@@ -532,7 +536,7 @@
 				"3D0F6CA8028C074B"
 				"7EE1BE4043827F35"
 			]
-			description: ["Extracting Latex from &4&lJungle Trees&r&r will be your first source of rubber after a bit of processing."]
+			description: ["Extracting Latex from &lJungle Trees&r will be one of your first sources of rubber, after a bit of processing."]
 			icon: "thermal:device_tree_extractor"
 			id: "0A41C4FB379984C0"
 			rewards: [{
@@ -557,13 +561,13 @@
 					type: "item"
 				}
 			]
-			title: "Latex extraction"
+			title: "Latex Extraction"
 			x: 5.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
-			description: ["Every greg master needs their toolbelt fully stocked to get their first machines ready. We recommend starting with Iron/Wrought Iron and Flint where possible."]
+			description: ["Every greg master needs their toolbelt fully stocked to get their first machines ready. We recommend starting with Iron or Wrought Iron tools, or taking a look at the shop!"]
 			hide_dependent_lines: true
 			id: "3D0F6CA8028C074B"
 			optional: true
@@ -678,11 +682,7 @@
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
-			description: [
-				"Wrought iron is made by sizzling iron on a campfire or stove."
-				""
-				"You should post proof of your own sizzles in our discord!"
-			]
+			description: ["Wrought Iron is made by sizzling iron on a campfire or stove."]
 			id: "143BB2B07A083CC0"
 			rewards: [{
 				id: "633BF5B0D7F6A702"
@@ -701,13 +701,13 @@
 					type: "item"
 				}
 			]
-			title: "Frying iron on a Campfire"
+			title: "Frying Iron"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["039D327E919878BF"]
-			description: ["By primitively heating a mixer, you can start to make your first alloys."]
+			description: ["By heating a mixer, you can start to make your first alloys."]
 			icon: "create:mechanical_mixer"
 			id: "3F74E863172E757F"
 			optional: true
@@ -744,7 +744,7 @@
 					type: "item"
 				}
 			]
-			title: "Mixer setup for alloying"
+			title: "Alloy Mixing"
 			x: 2.0d
 			y: -4.5d
 		}
@@ -754,7 +754,7 @@
 				"3E931D2E92BE9486"
 				"0A41C4FB379984C0"
 			]
-			description: ["Using a heated mixer, combine the Latex and some Sulpher into some rubber and them give it a slam with your press."]
+			description: ["Using a heated Mechanical Mixer, combine some Latex and Sulfur into rubber, and slam them into sheets using a Mechanical Press."]
 			id: "46E41B05B9F6FA82"
 			rewards: [{
 				id: "2FFF7F85F52E435C"
@@ -775,17 +775,13 @@
 					type: "item"
 				}
 			]
-			title: "Insulation for your cables"
+			title: "Cable Insulation"
 			x: 7.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["03ACC7D2577A2C66"]
-			description: [
-				"Take a barrel of water and add some dust, you get a block of clay. How neat is that."
-				""
-				"Make sure to select the right machine type by clicking the arm on the right and changing what you want the barrel to do."
-			]
+			description: ["Barrel transformations from Ex Nihilo have been disabled, and replaced with this beautiful machine! It can soak, compost, and transform. Be sure to choose the correct \"Active Machine Mode\", in the tab on the left of the UI."]
 			icon: "gtceu:ulv_barrel"
 			id: "2D1184752D7ACA66"
 			rewards: [{
@@ -811,7 +807,7 @@
 			description: [
 				"It's your very first multiblock! "
 				""
-				"This bad boy will make you steel at a slow rate and isn't possible to automate, but there is a better version on the horizon."
+				"This bad boy will make you steel, albeit slowly. It isn't possible to automate sadly, but there is a better version on the horizon."
 			]
 			icon: "gtceu:primitive_blast_furnace"
 			id: "390CB178FC2D2CCC"
@@ -852,13 +848,13 @@
 					type: "item"
 				}
 			]
-			title: "Primitive steelworks"
+			title: "Primitive Steelworks"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["390CB178FC2D2CCC"]
-			description: ["We recommend using Wrought Iron for your steel processing as it cuts the time per ingot down by nearly a minute."]
+			description: ["It is recommended to use Wrought Iron for your steel processing, as it cuts the recipe time down by a noticeable amount."]
 			icon: "gtceu:steel_ingot"
 			id: "64F15C7160BF5CBB"
 			rewards: [{
@@ -896,7 +892,7 @@
 				"4FC0832128C3109C"
 			]
 			dependency_requirement: "one_completed"
-			description: ["The most valuable alloy you can make right now due to how much you will need for circuits."]
+			description: ["The most valuable alloy you can make right now, due to how much you will need for circuits."]
 			id: "0843E56CA39E9822"
 			rewards: [{
 				id: "56F860D21CE643C7"
@@ -940,7 +936,7 @@
 		}
 		{
 			dependencies: ["6D5287A0FB892DFF"]
-			description: ["Lets just ignore the fact that this circuit board is just a plank of wood with some cabled stuck to it with super glue."]
+			description: ["Let's ignore the fact that this circuit board is just a plank of wood with some cables stuck to it with glue."]
 			icon: "gtceu:resin_printed_circuit_board"
 			id: "7F716A5BCC5F6B34"
 			rewards: [{
@@ -960,7 +956,7 @@
 					type: "item"
 				}
 			]
-			title: "Circuit board"
+			title: "Circuit Board"
 			x: 3.0d
 			y: -1.0d
 		}
@@ -988,7 +984,7 @@
 		}
 		{
 			dependencies: ["3D0F6CA8028C074B"]
-			description: ["Making glass isn't as simple as cooking sand now. First you must crush some sand and flint, mix it together into glass dust and then give it a sizzle on a campfire."]
+			description: ["Making glass isn't as simple as smelting sand now. First, you must grind down some Sand and Flint, mix it together into Glass Dust, and then give it a sizzle on a campfire."]
 			icon: "minecraft:glass"
 			id: "7EE1BE4043827F35"
 			rewards: [{
@@ -1027,7 +1023,7 @@
 				"7EE1BE4043827F35"
 				"64F15C7160BF5CBB"
 			]
-			description: ["Lets put that steel to good use, though you may want to hold off on making too many of these till you get a lathe."]
+			description: ["Let's put that steel to good use. You may want to hold off on making too many of these, at least before getting a lathe."]
 			id: "3B81632EF4586280"
 			rewards: [{
 				id: "4F41840F051793C3"
@@ -1046,7 +1042,7 @@
 		}
 		{
 			dependencies: ["2D1184752D7ACA66"]
-			description: ["By combining witch water and sand together, you can make your first soul sand. You can either repeat this or use this to haunt sand to make soul sand quicker."]
+			description: ["By combining Witch Water and Sand together, you can make your first Soul Sand. You can either repeat this, or invest in a Soul Campfire to bulk haunt more Soul Sand."]
 			id: "063AF9790DA7ABE0"
 			rewards: [{
 				id: "0932241AC23D4297"
@@ -1058,13 +1054,13 @@
 				item: "minecraft:soul_sand"
 				type: "item"
 			}]
-			title: "Soul Sand production"
+			title: "Soul Sand"
 			x: 0.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["0E47ACCDF46E6B1F"]
-			description: ["If you think the amount of different alloys are bad now, just you wait."]
+			description: ["If you think the amount of different alloys are bad right now, then just you wait."]
 			id: "37451F8CF7504596"
 			rewards: [{
 				id: "24792D860FA038FB"
@@ -1082,7 +1078,7 @@
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
-			description: ["You're going to need a lot of these so you better start processing your ores!"]
+			description: ["You're going to need a lot of these, so it might be worth automating."]
 			hide_dependent_lines: true
 			id: "708A5EE75EC40FAD"
 			rewards: [{
@@ -1095,6 +1091,7 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
+			title: "Gold"
 			x: 3.0d
 			y: 1.0d
 		}
@@ -1104,7 +1101,7 @@
 				"10126B9D6EC90F59"
 				"64E79272B5003119"
 			]
-			description: ["Now you have access to LV machine hulls, you can now make a new multiblock to process your ores further. This gives you access to resources like gold and nickel which will help with progressing into create."]
+			description: ["Now that you have LV Machine Hulls, you can construct a new multiblock to process your ores further. This will give you access to important resources, like gold and nickel."]
 			icon: {
 				Count: 1
 				id: "gtceu:primitive_ore_factory"
@@ -1224,11 +1221,7 @@
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
-			description: [
-				"Who knew vanilla features would be useful?"
-				""
-				"Chuck some spare saplings in this for some bonemeal to help push you to lava."
-			]
+			description: ["Chuck your spare saplings into a Composter for some bonemeal. This will be necessary to obtain lava."]
 			icon: "minecraft:composter"
 			id: "634FB21D521253CF"
 			rewards: [{
@@ -1248,7 +1241,7 @@
 					type: "item"
 				}
 			]
-			title: "Making fertilizer"
+			title: "Making Bonemeal"
 			x: -5.5d
 			y: 2.5d
 		}
@@ -1257,7 +1250,7 @@
 				"2D1184752D7ACA66"
 				"634FB21D521253CF"
 			]
-			description: ["Lava gives you access to cobblestone which will contain everything you might ever need in life. You could also use it as a fuel, no one here is judging you."]
+			description: ["Lava gives you access to cobblestone, which will contain everything you might ever need in life. You could also use it as a fuel, no one here is judging you."]
 			icon: "exnihilosequentia:fired_crucible"
 			id: "29F1EAF3E87A50F5"
 			rewards: [{
@@ -1278,7 +1271,7 @@
 					type: "item"
 				}
 			]
-			title: "Making lava"
+			title: "Making Lava"
 			x: -3.5d
 			y: 4.0d
 		}
@@ -1287,7 +1280,7 @@
 				"3D0F6CA8028C074B"
 				"2D1184752D7ACA66"
 			]
-			description: ["A staple of any greg tech pack. Upgrade your coal into coke, and get some tasty creosote to coat your planks in."]
+			description: ["A staple of any GregTech pack. Upgrade your coal into coke, and get some tasty creosote to coat your planks in."]
 			icon: "gtceu:coke_oven"
 			id: "07C5B4C5EE2F948D"
 			rewards: [{
@@ -1336,7 +1329,7 @@
 			description: [
 				"Needing lots of crops quickly? Then this multiblock has your back!"
 				""
-				"You might get some good use out of this when making Bio Fuel."
+				"You might get some good use out of this when making Bio Diesel."
 			]
 			icon: "gtceu:large_farm"
 			id: "14417CCE1E25C9C6"
@@ -1404,12 +1397,13 @@
 					type: "item"
 				}
 			]
+			title: "Large Farm"
 			x: -1.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
-			description: ["Some say that this multiblock can help you with a slime addiction..."]
+			description: ["A larger barrel means faster recipes! Maybe this will help with that slime addiction..."]
 			icon: "gtceu:large_barrel"
 			id: "27E9698231A04022"
 			rewards: [{
@@ -1516,6 +1510,7 @@
 					type: "item"
 				}
 			]
+			title: "Large Barrel"
 			x: -0.5d
 			y: 5.0d
 		}
@@ -1628,12 +1623,13 @@
 					type: "item"
 				}
 			]
+			title: "Large Stone Barrel"
 			x: -2.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["6C7DB3F0C3B85B9B"]
-			description: ["By combining dirt and gravel together into Coarse Dirt and then sieving it, you will double your original amount of dirt and even have a chance to get some of the gravel back."]
+			description: ["By combining dirt and gravel into Coarse Dirt and sieving it, you can double your dirt, and you even have a chance to get some of the gravel back!"]
 			id: "35FE719B047BFAAF"
 			rewards: [{
 				id: "132398E130FED8F3"
@@ -1645,14 +1641,15 @@
 				item: "minecraft:coarse_dirt"
 				type: "item"
 			}]
-			title: "Duplicating dirt"
+			title: "Dirt Cheap"
 			x: -5.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["039D327E919878BF"]
-			description: ["Create really stresses me out, but without that nothing would move."]
+			description: ["Create stresses me out, but without that nothing would move."]
 			id: "70BE6905EC722DCA"
+			optional: true
 			rewards: [{
 				id: "2ABEDB4C2EF9A1AD"
 				item: "kubejs:coin"
@@ -1684,13 +1681,13 @@
 				}
 				type: "item"
 			}]
-			title: "Make me stressed"
+			title: "Stressed Out"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
-			description: ["With blaze burners out of the picture, you're going to have to get creative to make power out of steam but it is possible."]
+			description: ["Since Blazes are out of the question, a Basic Burner is needed to heat Basins. Note that you can superheat Basic Burners with an Encased Fan at max RPM, though it will burn through fuel faster."]
 			id: "3B50E73E5A176301"
 			optional: true
 			rewards: [{
@@ -1720,7 +1717,7 @@
 					type: "item"
 				}
 			]
-			title: "Stressful steam"
+			title: "Steam Powered"
 			x: 0.0d
 			y: -7.5d
 		}
@@ -1729,7 +1726,7 @@
 				"708A5EE75EC40FAD"
 				"70BE6905EC722DCA"
 			]
-			description: ["Burning Biofuel is an amazing way to generate large amounts of Stress Units for create however requires you to create your first processing line to keep everything running!"]
+			description: ["Diesel Engines are a great way to generate large amounts of Stress Units for Create machines. Bio Diesel is one of the best fuel sources, but it requires some automating to keep a steady supply."]
 			id: "00DD4784E0E6821D"
 			optional: true
 			rewards: [{
@@ -1783,7 +1780,7 @@
 					type: "item"
 				}
 			]
-			title: "Diesel rocks"
+			title: "Diesel Engines"
 			x: 1.0d
 			y: -7.0d
 		}
@@ -1792,7 +1789,7 @@
 				"7EE1BE4043827F35"
 				"10126B9D6EC90F59"
 			]
-			description: ["Early fluid storage that can also automatically input and output as well as accept upgrades that can dramatically increase the capacity."]
+			description: ["Early fluid storage that can push and pull fluids. It accepts upgrades that can dramatically increase the storage capacity."]
 			id: "3013B0CF1D1F3E20"
 			rewards: [{
 				id: "7E77F4EFC9D86E60"
@@ -1817,7 +1814,7 @@
 				}
 				type: "item"
 			}]
-			title: "Intelligent fluid storage"
+			title: "Early Fluid Storage"
 			x: 6.5d
 			y: -3.5d
 		}
@@ -1827,7 +1824,7 @@
 				"4FC0832128C3109C"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Create gives you access to your first alloys at a slightly lower ratio per ingot. Good in the early game, but might want to upgrade once you hit LV."]
+			description: ["Create gives you access to your first alloys, though at a poorer ratio than later methods. While good in the early game, you will want to upgrade once you hit LV."]
 			id: "10126B9D6EC90F59"
 			rewards: [{
 				id: "36FCEC0DDB574296"
@@ -1855,7 +1852,7 @@
 				"29F1EAF3E87A50F5"
 				"3D0F6CA8028C074B"
 			]
-			description: ["By putting a bucket of lava inside and then pumping water the \"Stone Barrel\" is able to produce you as much cobble as your heart desires (make sure you use the correct circuit which you can select in the bottom right of the machines interface)."]
+			description: ["By putting in a bucket of lava and pumping water in, the Stone Barrel is able to produce you as much cobble as your heart desires. Just be sure to select the correct \"ghost circuit\", which can be done in the bottom right of the machine's interface."]
 			id: "0742EF8F43044102"
 			rewards: [{
 				count: 2
@@ -1870,26 +1867,35 @@
 				item: "gtceu:ulv_stone_barrel"
 				type: "item"
 			}]
-			title: "Easy Cobble Generator"
+			title: "Easy Cobblestone"
 			x: -5.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
-			description: ["There are two ways to make witch water, either through the large barrel or by having a normal barrel full of water on top of mycelium."]
+			description: ["Witch Water can be made in a Wooden Barrel with Mycelium Spores and Water."]
 			id: "7E72B9CC8631769D"
+			rewards: [{
+				id: "3ECEE1F8FECE4082"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "6CCD95924315B284"
 				item: "exnihilosequentia:witch_water_bucket"
 				type: "item"
 			}]
-			title: "Making Witch Water?"
+			title: "Witch Water"
 			x: -3.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
-			description: ["Guess what, you are also gonna need a lot of these."]
+			description: ["You're going to need a lot of these, so it might be worth automating."]
 			id: "0E47ACCDF46E6B1F"
 			rewards: [{
 				id: "0128ACB6E0B8F0AE"
@@ -1901,17 +1907,15 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
+			title: "Nickel"
 			x: 4.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
-			description: [
-				"Using Crushing Wheels, you can make gravel and sand without having to use a hammer. "
-				"Crushing wheels have a set amount of time they need to process their items (based on their RPM), but the item stacks can be anywhere between 1 and 64. "
-				"By using Smart Chutes, you can achieve the most efficient crushing setup."
-			]
+			description: ["Using Crushing Wheels, you can automate gravel and sand. Crushing wheels have a set amount of time they need to process their items (based on their RPM), but can process up to a stack of items at a time. Smart Chutes are an easy way to pump a stack of items in at a time."]
 			id: "6C4EE5170B91D0EA"
+			optional: true
 			rewards: [{
 				count: 2
 				id: "319FF5EFBA896731"
@@ -1924,26 +1928,29 @@
 				item: { Count: 2, id: "create:crushing_wheel" }
 				type: "item"
 			}]
-			title: "Basic Automation"
+			title: "Basic Cobbleworks"
 			x: -1.0d
 			y: -7.0d
 		}
 		{
 			description: [
-				"The Questbook takes you through the entire modpack, step by step. Here are a few things you should know"
-				"- Mechanics: A small chapter explaining some GregTech mechanics"
-				"- Processing Lines: This is a chapter explaining complicated processing lines"
-				"- Line of Progression: This chapter shows you all multiblocks and tiered items"
+				"The Questbook takes you through the entire modpack, step by step. Here are a few things you should know:"
+				""
+				"&5-&r Mechanics: A small chapter explaining some GregTech mechanics"
+				"&5-&r Processing Lines: This is a chapter explaining complicated processing lines"
+				"&5-&r Line of Progression: This chapter shows you all multiblocks and tiered items"
+				"&5-&r Resource Production: This chapter shows you have to get MOST of the raw resources you will need"
+				"&5-&r Quality of Life: This chapter unveils some helpful mods and features that exist to make the pack more enjoyable"
 			]
 			id: "16A9D8E864A18B9E"
 			shape: "diamond"
 			size: 1.5d
-			subtitle: "Read this"
 			tasks: [{
 				id: "1CBDC019CAC3E9C8"
 				title: "Ready, set, go"
 				type: "checkmark"
 			}]
+			title: "Ready, Set, Go"
 			x: -7.0d
 			y: 1.0d
 		}
@@ -1981,6 +1988,7 @@
 		}
 		{
 			dependencies: ["124EDCAB18E85B9D"]
+			description: ["A much needed upgrade to steel production. It's faster, and can be automated!"]
 			id: "3FB8E0105D2C20B4"
 			rewards: [{
 				id: "79C586E97770FB74"
@@ -2000,8 +2008,17 @@
 		}
 		{
 			dependencies: ["7EE1BE4043827F35"]
-			description: ["Get this here using lava in a barrel, you can make it better once you get an arc furnace."]
+			description: ["While Tempered Glass is typically made in an Arc Furnace, it can be made in a Stone Barrel with Lava and Glass. It will be needed to make the Rock Filtrator later."]
 			id: "6D23752791E9928A"
+			rewards: [{
+				id: "4F45102228F42D4D"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "0C4660A1923ED365"
 				item: "gtceu:tempered_glass"
@@ -2012,8 +2029,13 @@
 		}
 		{
 			dependencies: ["2D1184752D7ACA66"]
-			description: ["The heart of Primative Machines"]
+			description: ["The building-block of any primitive machine."]
 			id: "64E79272B5003119"
+			rewards: [{
+				id: "1BBAAE25155FB3DC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "16F78BE1CAEEA2A5"
 				item: {

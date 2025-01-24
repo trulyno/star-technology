@@ -35,6 +35,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .definition((tier, builder) =>
         builder
             .recipeTypes('barrel','barrel_composting','barrel_transformation')
-            .workableCasingRenderer('minecraft:block/stripped_oak_log', 'gtceu:block/machines/centrifuge', false)
+            .workableCasingRenderer('minecraft:block/stripped_oak_log', 'gtceu:block/machines/item_collector', false)
+
       )
 });

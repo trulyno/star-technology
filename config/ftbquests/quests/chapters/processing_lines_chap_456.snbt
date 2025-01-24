@@ -1,4 +1,5 @@
 {
+	autofocus_id: "2908D32E77359FA3"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "processing_lines_chap_456"
@@ -15,8 +16,8 @@
 		{
 			id: "03B6D7853CA898F2"
 			linked_quest: "090275078106B752"
-			x: -1.5d
-			y: 3.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			id: "6D8B0DE6FCC2A5B1"
@@ -395,8 +396,8 @@
 				item: "gtceu:biphenyl_dust"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -2.0d
+			x: 0.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["073FA13EEEA78C5F"]
@@ -416,8 +417,8 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: -2.0d
+			x: 2.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["721A2D614DBBAECC"]
@@ -439,8 +440,8 @@
 				item: "gtceu:pcb_coolant_bucket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -2.0d
+			x: 4.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["111033FEFA89BA91"]
@@ -839,6 +840,11 @@
 				"4C84DDA9A9475866"
 			]
 			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "gtceu:utopian_akreyrium_bucket"
+				tag: { }
+			}
 			id: "1108B5E80225C72D"
 			min_required_dependencies: 2
 			rewards: [{
@@ -862,6 +868,7 @@
 				}
 				type: "item"
 			}]
+			title: "Better Utopian Akreyrium"
 			x: 24.0d
 			y: 8.0d
 		}
@@ -914,31 +921,57 @@
 		}
 		{
 			dependencies: ["78841B022F71E005"]
+			icon: {
+				Count: 1
+				id: "gtceu:titanium_tetrachloride_mixture_bucket"
+				tag: { }
+			}
 			id: "39305F8DD4712D2B"
-			tasks: [{
-				id: "73450C6D4898799A"
-				item: {
-					Count: 1
-					id: "gtceu:titanium_tetrachloride_mixture_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "73450C6D4898799A"
+					item: {
+						Count: 1
+						id: "gtceu:titanium_tetrachloride_mixture_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "345C32A69B510B6B"
+					type: "checkmark"
+				}
+			]
+			title: "Titanium Tetrachloride Mixture"
 			x: 22.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["330EAF566B740869"]
+			icon: {
+				Count: 1
+				id: "gtceu:titanite_residue_bucket"
+				tag: { }
+			}
 			id: "78841B022F71E005"
-			tasks: [{
-				id: "4713283A8C9B9B86"
-				item: {
-					Count: 1
-					id: "gtceu:titanite_residue_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "4713283A8C9B9B86"
+					item: {
+						Count: 1
+						id: "gtceu:titanite_residue_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "359726B499C00B67"
+					type: "checkmark"
+				}
+			]
+			title: "Titanite Residue"
 			x: 20.5d
 			y: -0.5d
 		}
@@ -947,16 +980,29 @@
 				"623816C7D3EB91CD"
 				"1D2B296A9B23D0BF"
 			]
+			icon: {
+				Count: 1
+				id: "gtceu:hydroxo_dioxo_titanite_mixture_bucket"
+				tag: { }
+			}
 			id: "330EAF566B740869"
-			tasks: [{
-				id: "2EA6AEB9D004405D"
-				item: {
-					Count: 1
-					id: "gtceu:hydroxo_dioxo_titanite_mixture_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "2EA6AEB9D004405D"
+					item: {
+						Count: 1
+						id: "gtceu:hydroxo_dioxo_titanite_mixture_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "76E13267CCB5A5E3"
+					type: "checkmark"
+				}
+			]
+			title: "Hydroxo(dioxo) Titanite Mixture"
 			x: 19.0d
 			y: -0.5d
 		}
@@ -965,31 +1011,57 @@
 				"5CC3D76D20152621"
 				"6893DE5DC9C7470F"
 			]
+			icon: {
+				Count: 1
+				id: "gtceu:titanite_slurry_bucket"
+				tag: { }
+			}
 			id: "7557E3B3E5F86BAD"
-			tasks: [{
-				id: "16DBFDEF15AA860C"
-				item: {
-					Count: 1
-					id: "gtceu:titanite_slurry_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "16DBFDEF15AA860C"
+					item: {
+						Count: 1
+						id: "gtceu:titanite_slurry_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "500ABEA809E47003"
+					type: "checkmark"
+				}
+			]
+			title: "Titanite Slurry"
 			x: 16.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["7557E3B3E5F86BAD"]
+			icon: {
+				Count: 1
+				id: "gtceu:titanite_slurry_residue_bucket"
+				tag: { }
+			}
 			id: "1D2B296A9B23D0BF"
-			tasks: [{
-				id: "2053D5A2B31AAF5A"
-				item: {
-					Count: 1
-					id: "gtceu:titanite_slurry_residue_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "2053D5A2B31AAF5A"
+					item: {
+						Count: 1
+						id: "gtceu:titanite_slurry_residue_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "6BE8798F27E8A669"
+					type: "checkmark"
+				}
+			]
+			title: "Titanite Slurry Residue"
 			x: 17.5d
 			y: -0.5d
 		}
@@ -1013,16 +1085,29 @@
 		}
 		{
 			dependencies: ["1AAB9C20E833029A"]
+			icon: {
+				Count: 1
+				id: "gtceu:perchloric_acid_bucket"
+				tag: { }
+			}
 			id: "5CC3D76D20152621"
-			tasks: [{
-				id: "51FD0C80BC90F61E"
-				item: {
-					Count: 1
-					id: "gtceu:perchloric_acid_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "51FD0C80BC90F61E"
+					item: {
+						Count: 1
+						id: "gtceu:perchloric_acid_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "3444A25ABE257C11"
+					type: "checkmark"
+				}
+			]
+			title: "Perchloric Acid"
 			x: 15.0d
 			y: -1.5d
 		}
@@ -1043,16 +1128,29 @@
 		}
 		{
 			dependencies: ["7557E3B3E5F86BAD"]
+			icon: {
+				Count: 1
+				id: "gtceu:silica_gel_bucket"
+				tag: { }
+			}
 			id: "2EDE14D28C3C6F25"
-			tasks: [{
-				id: "2457DDA54D7610C6"
-				item: {
-					Count: 1
-					id: "gtceu:silica_gel_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "2457DDA54D7610C6"
+					item: {
+						Count: 1
+						id: "gtceu:silica_gel_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "2CFE1FD96A0363CD"
+					type: "checkmark"
+				}
+			]
+			title: "Silica Gel"
 			x: 16.5d
 			y: 0.5d
 		}
@@ -1280,16 +1378,29 @@
 				"45904BC625C888C3"
 				"2AECB0479C22A03C"
 			]
+			icon: {
+				Count: 1
+				id: "gtceu:dense_electron_akreyrium_bucket"
+				tag: { }
+			}
 			id: "4C84DDA9A9475866"
-			tasks: [{
-				id: "07351E69FBBB6F7F"
-				item: {
-					Count: 1
-					id: "gtceu:dense_electron_akreyrium_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "07351E69FBBB6F7F"
+					item: {
+						Count: 1
+						id: "gtceu:dense_electron_akreyrium_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "66C373B30D0A2FF7"
+					type: "checkmark"
+				}
+			]
+			title: "Electron-Dense Akreyrium"
 			x: 22.5d
 			y: 8.0d
 		}
@@ -1298,16 +1409,29 @@
 				"41D954CFB58267D6"
 				"36E33C8F077E714F"
 			]
+			icon: {
+				Count: 1
+				id: "gtceu:dense_tau_akreyrium_bucket"
+				tag: { }
+			}
 			id: "1D7697A8027F4BD9"
-			tasks: [{
-				id: "3A09935F28C9A2ED"
-				item: {
-					Count: 1
-					id: "gtceu:dense_tau_akreyrium_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "3A09935F28C9A2ED"
+					item: {
+						Count: 1
+						id: "gtceu:dense_tau_akreyrium_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "54174698799BD91F"
+					type: "checkmark"
+				}
+			]
+			title: "Tau-Dense Akreyrium"
 			x: 22.5d
 			y: 6.0d
 		}
@@ -1316,106 +1440,197 @@
 				"09E6C0A58F3409B3"
 				"49AF286E71E849CF"
 			]
+			icon: {
+				Count: 1
+				id: "gtceu:dense_muon_akreyrium_bucket"
+				tag: { }
+			}
 			id: "48E71B15ECEAA01C"
-			tasks: [{
-				id: "5AA6D922EFD3F6C3"
-				item: {
-					Count: 1
-					id: "gtceu:dense_muon_akreyrium_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "5AA6D922EFD3F6C3"
+					item: {
+						Count: 1
+						id: "gtceu:dense_muon_akreyrium_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "5D3A90272C3F8E37"
+					type: "checkmark"
+				}
+			]
+			title: "Muon-Dense Akreyrium"
 			x: 22.5d
 			y: 10.0d
 		}
 		{
 			dependencies: ["54DA03D41AF36EF2"]
+			icon: {
+				Count: 1
+				id: "gtceu:sparse_muon_akreyrium_bucket"
+				tag: { }
+			}
 			id: "49AF286E71E849CF"
-			tasks: [{
-				id: "1A0B72AC1E2790A9"
-				item: {
-					Count: 1
-					id: "gtceu:sparse_muon_akreyrium_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "1A0B72AC1E2790A9"
+					item: {
+						Count: 1
+						id: "gtceu:sparse_muon_akreyrium_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "0C92E907FB1ED763"
+					type: "checkmark"
+				}
+			]
+			title: "Muon-Sparse Akreyrium"
 			x: 21.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["54DA03D41AF36EF2"]
+			icon: {
+				Count: 1
+				id: "gtceu:sparse_electron_akreyrium_bucket"
+				tag: { }
+			}
 			id: "2AECB0479C22A03C"
-			tasks: [{
-				id: "4CC10744F9CCCD2C"
-				item: {
-					Count: 1
-					id: "gtceu:sparse_electron_akreyrium_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "4CC10744F9CCCD2C"
+					item: {
+						Count: 1
+						id: "gtceu:sparse_electron_akreyrium_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "0CBF3032481B38D5"
+					type: "checkmark"
+				}
+			]
+			title: "Electron-Sparse Akreyrium"
 			x: 21.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["54DA03D41AF36EF2"]
+			icon: {
+				Count: 1
+				id: "gtceu:sparse_tau_akreyrium_bucket"
+				tag: { }
+			}
 			id: "36E33C8F077E714F"
-			tasks: [{
-				id: "2F61FA08947B3DB7"
-				item: {
-					Count: 1
-					id: "gtceu:sparse_tau_akreyrium_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "2F61FA08947B3DB7"
+					item: {
+						Count: 1
+						id: "gtceu:sparse_tau_akreyrium_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "5DA6A7B3722811EF"
+					type: "checkmark"
+				}
+			]
+			title: "Tau-Sparse Akreyrium"
 			x: 21.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["46D5CAA2666803D4"]
+			icon: {
+				Count: 1
+				id: "gtceu:twinite_bucket"
+				tag: { }
+			}
 			id: "45904BC625C888C3"
-			tasks: [{
-				id: "7A35CD803FC6ADB7"
-				item: {
-					Count: 1
-					id: "gtceu:twinite_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "7A35CD803FC6ADB7"
+					item: {
+						Count: 1
+						id: "gtceu:twinite_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "3A50699F1CB63C73"
+					type: "checkmark"
+				}
+			]
+			title: "Twinite Injection"
 			x: 22.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["253AECE450920D99"]
+			icon: {
+				Count: 1
+				id: "gtceu:stellarium_bucket"
+				tag: { }
+			}
 			id: "41D954CFB58267D6"
-			tasks: [{
-				id: "7B71D812CC927BFB"
-				item: {
-					Count: 1
-					id: "gtceu:stellarium_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "7B71D812CC927BFB"
+					item: {
+						Count: 1
+						id: "gtceu:stellarium_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "6D312E954AEE34CF"
+					type: "checkmark"
+				}
+			]
+			title: "Stellarium Injection"
 			x: 22.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["4DE40B37D609B921"]
+			icon: {
+				Count: 1
+				id: "gtceu:weapon_grade_naquadah_bucket"
+				tag: { }
+			}
 			id: "09E6C0A58F3409B3"
-			tasks: [{
-				id: "0CB7992D2166CBD7"
-				item: {
-					Count: 1
-					id: "gtceu:weapon_grade_naquadah_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "0CB7992D2166CBD7"
+					item: {
+						Count: 1
+						id: "gtceu:weapon_grade_naquadah_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "43F0CDB102A70922"
+					type: "checkmark"
+				}
+			]
+			title: "Weapon Grade Naquadah Injection"
 			x: 22.0d
 			y: 11.0d
 		}
@@ -1423,17 +1638,31 @@
 			dependencies: [
 				"6B12DCDB8DE6A41B"
 				"179A15014A5716B5"
+				"6F20CEDBB56F1041"
 			]
+			icon: {
+				Count: 1
+				id: "gtceu:lepton_sparse_akreyrium_bucket"
+				tag: { }
+			}
 			id: "54DA03D41AF36EF2"
-			tasks: [{
-				id: "5FD0E90CD3FCD47B"
-				item: {
-					Count: 1
-					id: "gtceu:lepton_sparse_akreyrium_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "5FD0E90CD3FCD47B"
+					item: {
+						Count: 1
+						id: "gtceu:lepton_sparse_akreyrium_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "35F208F0FA4451CF"
+					type: "checkmark"
+				}
+			]
+			title: "Lepton-Sparse Akreyrium"
 			x: 19.5d
 			y: 8.0d
 		}
@@ -1455,6 +1684,15 @@
 		{
 			dependencies: ["493DD013C818BB7B"]
 			id: "0C19C040CA121E3B"
+			rewards: [{
+				id: "4A6E9001EC8CD83D"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4B7B86F718B4AA8D"
 				item: {
@@ -1548,16 +1786,29 @@
 		}
 		{
 			dependencies: ["1AAB9C20E833029A"]
+			icon: {
+				Count: 1
+				id: "gtceu:nitric_acid_bucket"
+				tag: { }
+			}
 			id: "41A2F623390AA45B"
-			tasks: [{
-				id: "061C59F35BD58011"
-				item: {
-					Count: 1
-					id: "gtceu:nitric_acid_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "061C59F35BD58011"
+					item: {
+						Count: 1
+						id: "gtceu:nitric_acid_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "090FBE4BA8A0B512"
+					type: "checkmark"
+				}
+			]
+			title: "Nitric Acid"
 			x: 17.5d
 			y: 13.0d
 		}
@@ -1591,31 +1842,57 @@
 		}
 		{
 			dependencies: ["7658E16BA79A7632"]
+			icon: {
+				Count: 1
+				id: "gtceu:steam_bucket"
+				tag: { }
+			}
 			id: "34EA854FE36B7C69"
-			tasks: [{
-				id: "06CAA1F283CDB147"
-				item: {
-					Count: 1
-					id: "gtceu:steam_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "06CAA1F283CDB147"
+					item: {
+						Count: 1
+						id: "gtceu:steam_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "05FF2D945FA5110D"
+					type: "checkmark"
+				}
+			]
+			title: "Yes, STEAM!!"
 			x: 24.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["7658E16BA79A7632"]
+			icon: {
+				Count: 1
+				id: "gtceu:carbon_monoxide_bucket"
+				tag: { }
+			}
 			id: "1E41DAA8519BE87F"
-			tasks: [{
-				id: "53858FA4901F7454"
-				item: {
-					Count: 1
-					id: "gtceu:carbon_monoxide_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "53858FA4901F7454"
+					item: {
+						Count: 1
+						id: "gtceu:carbon_monoxide_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "64600E4453B42D89"
+					type: "checkmark"
+				}
+			]
+			title: "Carbon Monoxide"
 			x: 24.0d
 			y: 2.5d
 		}
@@ -1682,39 +1959,66 @@
 		{
 			dependencies: ["721A2D614DBBAECC"]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "gtceu:pcb_coolant_bucket"
+				tag: { }
+			}
 			id: "18ED2B1F051E0868"
-			tasks: [{
-				id: "0AE8566B0B613CAF"
-				item: {
-					Count: 1
-					id: "gtceu:pcb_coolant_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "0AE8566B0B613CAF"
+					item: {
+						Count: 1
+						id: "gtceu:pcb_coolant_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "4898DF242CD8E838"
+					type: "checkmark"
+				}
+			]
+			title: "PCB Coolant"
 			x: -0.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["32AC51387EAD9D2D"]
+			icon: {
+				Count: 1
+				id: "gtceu:hot_pcb_coolant_bucket"
+				tag: { }
+			}
 			id: "5914A54BD611637C"
-			tasks: [{
-				id: "7C9971D1AC9A45C8"
-				item: {
-					Count: 1
-					id: "gtceu:hot_pcb_coolant_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "7C9971D1AC9A45C8"
+					item: {
+						Count: 1
+						id: "gtceu:hot_pcb_coolant_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "09579B724CA88E4C"
+					type: "checkmark"
+				}
+			]
+			title: "Hot PCB Coolant"
 			x: 0.5d
-			y: 4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
 				"1C9EB97C0D3C475B"
 				"144338235815C08C"
 				"1C81273869C0EC9F"
+				"60ECE277341A9408"
 			]
 			id: "2F87FC1D5BB43220"
 			rewards: [{
@@ -1811,16 +2115,29 @@
 				"23A6938803281145"
 				"39FF89B370D09B88"
 			]
+			icon: {
+				Count: 1
+				id: "gtceu:neon_bucket"
+				tag: { }
+			}
 			id: "50C1449ADC8D4063"
-			tasks: [{
-				id: "2BF78212CFDEB3CC"
-				item: {
-					Count: 1
-					id: "gtceu:neon_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "2BF78212CFDEB3CC"
+					item: {
+						Count: 1
+						id: "gtceu:neon_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "4776623ACCD09557"
+					type: "checkmark"
+				}
+			]
+			title: "Neon"
 			x: 5.5d
 			y: 15.0d
 		}
@@ -1866,6 +2183,161 @@
 			title: "Abydos Magmas"
 			x: 13.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["37C381390F132628"]
+			id: "6F20CEDBB56F1041"
+			tasks: [{
+				id: "60EAFA89420E0D7F"
+				item: {
+					Count: 1
+					id: "kubejs:netherite_reinforced_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 18.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"361BFCF1A91F1CA8"
+				"23DB3E962498AB2B"
+			]
+			id: "239DC1BC1F14A807"
+			rewards: [{
+				count: 3
+				id: "63D513C6571D8E2A"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "27C9AEA9FA921BD1"
+				item: {
+					Count: 1
+					id: "gtceu:polyphenylene_sulfide_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"06D8713EE9C80742"
+				"64F5995C37F0795A"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:dichlorobenzene_bucket"
+				tag: { }
+			}
+			id: "23DB3E962498AB2B"
+			tasks: [
+				{
+					id: "0B13A2834B1D80D1"
+					item: {
+						Count: 1
+						id: "gtceu:dichlorobenzene_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "16EEA239A3E2874C"
+					type: "checkmark"
+				}
+			]
+			title: "Dichlorobenzene"
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			id: "361BFCF1A91F1CA8"
+			tasks: [{
+				id: "621D74C07227A1DD"
+				item: {
+					Count: 1
+					id: "gtceu:sodium_sulfide_dust"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "gtceu:chlorine_bucket"
+				tag: { }
+			}
+			id: "64F5995C37F0795A"
+			tasks: [
+				{
+					id: "39E152C8E04D6A09"
+					item: {
+						Count: 1
+						id: "gtceu:chlorine_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "73617757CDFEEC90"
+					type: "checkmark"
+				}
+			]
+			title: "Chlorine Gas"
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "gtceu:benzene_bucket"
+				tag: { }
+			}
+			id: "06D8713EE9C80742"
+			tasks: [
+				{
+					id: "488C5FBBECF8F5CD"
+					item: {
+						Count: 1
+						id: "gtceu:benzene_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C4AA1268C8DBECF"
+					type: "checkmark"
+				}
+			]
+			title: "Benzene"
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			id: "2908D32E77359FA3"
+			invisible: true
+			tasks: [{
+				id: "1DF81F94D45BC87C"
+				title: "postioner"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 7.5d
 		}
 	]
 	title: "Processing Lines (Chap 4,5,6)"

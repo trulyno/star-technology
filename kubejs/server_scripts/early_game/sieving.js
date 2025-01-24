@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
     const endstone = 'exnihilo:crushed_end_stone'
     const mud = 'minecraft:mud'
     const rdirt = 'minecraft:rooted_dirt'
+    const myc = 'minecraft:mycelium'
 
     function sieve(mesh, chance, input, result, wlog) {
         event.custom({
@@ -47,6 +48,7 @@ ServerEvents.recipes(event => {
     sieve('string', 0.10, dirt, 'minecraft:sweet_berries', false);
     sieve('string', 0.05, dirt, 'minecraft:cocoa_beans', false);
     sieve('string', 0.075, dirt, 'minecraft:oak_sapling', false);
+    sieve('string', 0.075, dirt, 'minecraft:cherry_sapling', false);
     sieve('string', 0.075, dirt, 'minecraft:spruce_sapling', false);
     sieve('string', 0.075, dirt, 'minecraft:birch_sapling', false);
     sieve('string', 0.075, dirt, 'minecraft:jungle_sapling', false);
@@ -66,6 +68,7 @@ ServerEvents.recipes(event => {
     sieve('string', 0.15, rdirt, 'exnihilosequentia:grass_seeds', false);
     sieve('string', 0.15, rdirt, 'minecraft:bamboo', false);
     sieve('string', 0.15, rdirt, 'minecraft:wheat_seeds', false);
+    sieve('string', 0.05, rdirt, 'farmersdelight:rice_panicle', false);
 
     //Waterlogged
     sieve('string', 0.05, sand, 'exnihilosequentia:brain_coral_larva', true);
@@ -103,6 +106,13 @@ ServerEvents.recipes(event => {
     sieve('string', 0.4, dust, 'minecraft:glowstone_dust', false);
     sieve('string', 0.3, dust, 'gtceu:tiny_sulfur_dust', false);
     sieve('string', 0.05, dust, 'minecraft:ender_pearl', false);
+
+    //Mycleium go Brr
+    sieve('string', .01, myc, 'minecraft:nether_wart', false);
+    sieve('string', .05, myc, 'minecraft:brown_mushroom', false);
+    sieve('string', .05, myc, 'minecraft:red_mushroom', false);
+    sieve('string', .5, myc, 'minecraft:dirt', false);
+    sieve('string', .3, myc, 'exnihilosequentia:mycelium_spores', false);
 
 /*
     sieve('flint', 0.1, gravel, 'gtceu:crushed_silver_ore', false);

@@ -114,11 +114,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'thermal:redstone_servo' })
     event.shaped(Item.of('thermal:redstone_servo', 1), [
         'RPR',
-        ' P ',
+        ' I ',
         'RPR'
     ], {
         R: 'minecraft:redstone',
-        P: 'gtceu:iron_plate'
+        P: 'gtceu:iron_plate',
+        I: 'minecraft:iron_ingot'
     }
     );
     event.shaped(Item.of('thermal:rf_coil'), [

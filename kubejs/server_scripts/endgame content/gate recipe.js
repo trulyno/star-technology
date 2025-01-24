@@ -9,6 +9,12 @@ ServerEvents.recipes(event => {
                 '32x gtceu:uhpic_chip', '48x gtceu:dragonsteel_single_wire')
         .inputFluids('gtceu:hsss 6912', 'gtceu:niobium_nitride 1728')
         .itemOutputs('gtceu:heat_chamber')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of("gtceu:uv_electric_furnace"))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(48)
+            )
         .duration(36000)
         .EUt(GTValues.VHA[GTValues.UV]);
 
@@ -157,7 +163,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('classic_stargate_computer_core')
         .itemInputs('gtceu:stellarium_frame', '4x kubejs:computational_super_matrix', '16x gtceu:ruthenium_trinium_americium_neutronate_octal_wire', '16x gtceu:ruthenium_trinium_americium_neutronate_octal_wire',
             '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:fine_trinaquadalloy_wire', '64x gtceu:fine_trinaquadalloy_wire')
-        .inputFluids('gtceu:soldering_alloy 69420', 'gtceu:sterilized_growth_medium 13500')
+        .inputFluids('gtceu:soldering_alloy 72000', 'gtceu:sterilized_growth_medium 13500')
         .itemOutputs('kubejs:classic_stargate_computer_core')
         .duration(24000)
         .stationResearch(
@@ -384,8 +390,8 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.gate_assembly('ancient_gate')
             .itemInputs('14x kubejs:ancient_stargate_ring_block', '9x kubejs:ancient_stargate_chevron_block', 'kubejs:ancient_stargate_base_block')
             .inputFluids('gtceu:naquadria 72000', 'gtceu:liquid_nether_air 250000', 'gtceu:liquid_ender_air 250000')
-            .itemOutputs('sgjourney:milky_way_stargate')
-            .duration(48000)
+            .itemOutputs('sgjourney:milky_way_stargate {BlockEntityTag:{LocalPointOfOrigin:1b}}')
+            .duration(64000)
             .EUt(GTValues.VA[GTValues.UEV]);
 
 });

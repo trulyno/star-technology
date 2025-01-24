@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:zapolgium_ingot')
         .itemOutputs('gtceu:magnetic_zapolgium_ingot')
         .duration(80)
-        .EUt(GTValues.VA[GTValues.ZPM]);
+        .EUt(GTValues.VA[GTValues.UV]);
 
     event.recipes.gtceu.polarizer('magnetic_pure_netherite')
         .itemInputs('gtceu:pure_netherite_ingot')
@@ -155,6 +155,27 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt((GTValues.VA[GTValues.ZPM]))
 
+    event.recipes.gtceu.mixer('thorium_plut_duranide_241')
+        .itemInputs('4x gtceu:thorium_dust', 'gtceu:duranium_dust', '3x gtceu:plutonium_241_dust')
+        .itemOutputs('8x gtceu:thorium_plut_duranide_241_dust')
+        .circuit(4)
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.UV]);
+    
+    //UHV Rotor Holder
+    event.recipes.gtceu.macerator('uhv_rotor_holder')
+        .itemInputs('gtceu:uhv_rotor_holder')
+        .itemOutputs('16x gtceu:zalloy_dust', '12x gtceu:neutronium_dust', '2x gtceu:rubber_dust', 'gtceu:europium_dust')    
+        .duration(11900)
+        .EUt(30);
+
+    event.recipes.gtceu.arc_furnace('uhv_rotor_holder')
+        .itemInputs('gtceu:uhv_rotor_holder')
+        .inputFluids('gtceu:oxygen 11900')
+        .itemOutputs('16x gtceu:zalloy_ingot', '12x gtceu:neutronium_ingot', 'gtceu:europium_ingot', 'gtceu:small_ash_dust')    
+        .duration(11900)
+        .EUt(30);
+
     event.shaped(Item.of('gtceu:uhv_rotor_holder'), [
             'NZN',
             'ZCZ',
@@ -164,12 +185,5 @@ ServerEvents.recipes(event => {
             Z: 'gtceu:zalloy_gear',
             C: 'gtceu:uhv_machine_hull'
     });
-
-    event.recipes.gtceu.mixer('thorium_plut_duranide_241')
-        .itemInputs('4x gtceu:thorium_dust', 'gtceu:duranium_dust', '3x gtceu:plutonium_241_dust')
-        .itemOutputs('8x gtceu:thorium_plut_duranide_241_dust')
-        .circuit(4)
-        .duration(1000)
-        .EUt(GTValues.VA[GTValues.UV]);
 
 });

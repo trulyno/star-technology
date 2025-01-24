@@ -132,7 +132,9 @@
           }
         }
       }
-    }
+    },
+    "pingRateInterval": 5,
+    "pingRateUnit": "minutes"
   },
   "statusMessages": {
     "mainMenuData": {
@@ -365,7 +367,8 @@
     "playerSkinEndpoint": "https://mc-heads.net/avatar/{getOrDefault(player.uuid.short, player.name)}",
     "allowDuplicatePackets": false,
     "maxConnectionAttempts": 10,
-    "enableClassGraph": false
+    "enableClassGraph": false,
+    "useClassLoader": false
   },
   "accessibilitySettings": {
     "languageId": "en_us",

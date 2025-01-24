@@ -51,7 +51,7 @@
 			end_connection_from_both_ends = true
 			#ENABLED - Two way travel possible; CREATIVE_ONLY - Two way travel limited to Players in Creative Mode; DISABLED - Two way travel impossible
 			#Allowed Values: ENABLED, CREATIVE_ONLY, DISABLED
-			two_way_wormholes = "CREATIVE_ONLY"
+			two_way_wormholes = "ENABLED"
 			#If true, going through the wrong side of the wormhole will result in death
 			reverse_wormhole_kills = true
 			#If true, allow the destruction of Blocks by Kawooshes

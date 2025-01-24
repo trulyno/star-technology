@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         "gtceu:coal_dust",
         "minecraft:coal",
         "minecraft:charcoal"
-    ];
+    ]; 
 
     const goodFuel = [
         "gtceu:coke_gem",
@@ -32,12 +32,10 @@ ServerEvents.recipes(event => {
 
     fuel.forEach(fuel => {
         var cutFuel = fuel.slice(fuel.indexOf(":")+1)
-
         event.recipes.gtceu.solid_blast_furnace(`silicon_from_silicon_dioxide/${cutFuel}`)
-            .itemInputs("6x gtceu:silicon_dioxide_dust", "4x gtceu:carbon_dust", `2x ${fuel}`)
+            .itemInputs("6x gtceu:silicon_dioxide_dust", `2x ${fuel}`)
             .itemOutputs("2x gtceu:silicon_dust", "2x gtceu:tiny_dark_ash_dust")
             .duration(1000);
-
         event.recipes.gtceu.solid_blast_furnace(`steel_from_magnetite_dust/${cutFuel}`)
             .itemInputs("7x gtceu:magnetite_dust", "2x gtceu:silicon_dust", `2x ${fuel}`)
             .itemOutputs("3x gtceu:steel_ingot", "6x gtceu:silicon_dioxide_dust", "2x gtceu:tiny_dark_ash_dust")
@@ -53,18 +51,55 @@ ServerEvents.recipes(event => {
         var cutFuel = fuel.slice(fuel.indexOf(":")+1)
 
         event.recipes.gtceu.solid_blast_furnace(`silicon_from_silicon_dioxide/${cutFuel}`)
-            .itemInputs("6x gtceu:silicon_dioxide_dust", "4x gtceu:carbon_dust", `2x ${fuel}`)
-            .itemOutputs("2x gtceu:silicon_dust", "2x gtceu:tiny_dark_ash_dust")
+            .itemInputs("6x gtceu:silicon_dioxide_dust", `2x ${fuel}`)
+            .itemOutputs("2x gtceu:silicon_dust", "2x gtceu:tiny_ash_dust")
             .duration(750);
 
         event.recipes.gtceu.solid_blast_furnace(`steel_from_magnetite_dust/${cutFuel}`)
             .itemInputs("7x gtceu:magnetite_dust", "2x gtceu:silicon_dust", `2x ${fuel}`)
-            .itemOutputs("3x gtceu:steel_ingot", "6x gtceu:silicon_dioxide_dust", "2x gtceu:tiny_dark_ash_dust")
+            .itemOutputs("3x gtceu:steel_ingot", "6x gtceu:silicon_dioxide_dust", "2x gtceu:tiny_ash_dust")
             .duration(1125);
 
         event.recipes.gtceu.solid_blast_furnace(`sulfur_from_sphalerite/${cutFuel}`)
             .itemInputs("2x gtceu:sphalerite_dust", "4x minecraft:andesite", `2x ${fuel}`)
-            .itemOutputs("12x create:andesite_alloy", "1x gtceu:sulfur_dust", "2x gtceu:tiny_dark_ash_dust")
+            .itemOutputs("12x create:andesite_alloy", "1x gtceu:sulfur_dust", "2x gtceu:tiny_ash_dust")
             .duration(150);
     });
+
+    //Bessemer Steel
+    const coalType = ['coal','charcoal']
+    ironType('minecraft:iron',900,'iron',5/6)
+    ironType('gtceu:wrought_iron',400,'wrought_iron',3/4)
+    function ironType(FeType,baseTime,naming,cokeScaler){
+    coalType.forEach(coal => {
+        event.recipes.gtceu.bessemer_blast_furnace(`${naming}_${coal}_to_steel_dust`)
+        .itemInputs(`${FeType}_ingot`,`2x gtceu:${coal}_dust`)
+        .itemOutputs('gtceu:steel_ingot',`gtceu:tiny_dark_ash_dust`)
+        .duration(baseTime); 
+    event.recipes.gtceu.bessemer_blast_furnace(`${naming}_${coal}_to_steel`)
+        .itemInputs(`${FeType}_ingot`,`2x minecraft:${coal}`)
+        .itemOutputs('gtceu:steel_ingot',`gtceu:tiny_dark_ash_dust`)
+        .duration(baseTime);  
+    })
+    event.recipes.gtceu.bessemer_blast_furnace(`${naming}_coal_to_steel_block`)
+        .itemInputs(`${FeType}_block`,`2x minecraft:coal_block`)
+        .itemOutputs('gtceu:steel_block',`gtceu:dark_ash_dust`)
+        .duration(baseTime*9);
+    event.recipes.gtceu.bessemer_blast_furnace(`${naming}_charcoal_to_steel_block`)
+        .itemInputs(`${FeType}_block`,`2x gtceu:charcoal_block`)
+        .itemOutputs('gtceu:steel_block',`gtceu:dark_ash_dust`)
+        .duration(baseTime*9);
+    event.recipes.gtceu.bessemer_blast_furnace(`${naming}_coke_to_steel_block`)
+        .itemInputs(`${FeType}_block`,`gtceu:coke_block`)
+        .itemOutputs('gtceu:steel_block',`gtceu:ash_dust`)
+        .duration(baseTime*9*cokeScaler);
+    event.recipes.gtceu.bessemer_blast_furnace(`${naming}_coke_to_steel_dust`)
+        .itemInputs(`${FeType}_ingot`,`gtceu:coke_dust`)
+        .itemOutputs('gtceu:steel_ingot',`gtceu:ash_dust`)
+        .duration(baseTime*cokeScaler);
+    event.recipes.gtceu.bessemer_blast_furnace(`${naming}_coke_to_steel`)
+        .itemInputs(`${FeType}_ingot`,`gtceu:coke_gem`)
+        .itemOutputs('gtceu:steel_ingot',`gtceu:ash_dust`)
+        .duration(baseTime*cokeScaler);
+    }
 });

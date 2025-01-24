@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
             .EUt(eu);
 
         event.recipes.gtceu.component_part_assembly(`${tier}_precision_drive_mechanism`)
-            .itemInputs(`gtceu:${prim_material}_frame`, `gtceu:${tier1Under}_robot_arm`, `2x gtceu:${tier1Under}_electric_motor`, `#gtceu:circuits/${tier1Under}`,
+            .itemInputs(`gtceu:${prim_material}_frame`, `gtceu:${tier1Under}_conveyor_module`, `2x gtceu:${tier1Under}_electric_motor`, `#gtceu:circuits/${tier1Under}`,
                 `2x gtceu:${secnd_material}_gear`, `8x gtceu:${prim_material}_round`)
             .inputFluids(`gtceu:lubricant 500`, `gtceu:${rubber} 1152`)
             .itemOutputs(`kubejs:${tier}_precision_drive_mechanism`) 
@@ -68,9 +68,9 @@ ServerEvents.recipes(event => {
             .EUt(eu);
 
         event.recipes.gtceu.component_part_assembly(`${tier}_super_magnetic_core`)
-            .itemInputs(`gtceu:long_magnetic_${magnetic1}_rod`,  `4x gtceu:magnetic_${magnetic2}_rod`, `6x gtceu:${wire2}_single_wire`,
-            `2x gtceu:long_${prim_material}_rod`, `64x gtceu:fine_${wire1}_wire`, `2x gtceu:${main_material}_tiny_fluid_pipe`)
-            .inputFluids(`gtceu:${magnetic2} 288`, `gtceu:liquid_helium 2500`)
+            .itemInputs(`2x gtceu:long_magnetic_${magnetic1}_rod`,  `4x gtceu:magnetic_${magnetic2}_rod`,
+            `gtceu:long_${prim_material}_rod`, `64x gtceu:fine_${wire1}_wire`, `2x gtceu:${main_material}_tiny_fluid_pipe`)
+            .inputFluids(`gtceu:liquid_helium 2500`)
             .itemOutputs(`kubejs:${tier}_super_magnetic_core`) 
             .duration(500)
             .EUt(eu);
@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
             .EUt(eu1under);
 
         event.recipes.gtceu.assembly_line(`${tier}_field_generator`)
-            .itemInputs(`gtceu:${prim_material}_frame`, `2x kubejs:${tier}_catalyst_core`, `2x kubejs:${tier}_computational_matrix`, `2x gtceu:${tier}_emitter`, `64x gtceu:fine_${wire2}_wire`, `64x gtceu:fine_${wire2}_wire`, `2x kubejs:${tier}_micropower_router`)
+            .itemInputs(`gtceu:${prim_material}_frame`, `2x kubejs:${tier}_high_strength_panel`, `kubejs:${tier}_catalyst_core`, `2x gtceu:${tier}_emitter`, `2x kubejs:${tier}_computational_matrix`, `64x gtceu:fine_${wire2}_wire`, `64x gtceu:fine_${wire2}_wire`, `2x kubejs:${tier}_micropower_router`)
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1728', `gtceu:${liquid} 576`)
             .itemOutputs(`gtceu:${tier}_field_generator`)
             .stationResearch(

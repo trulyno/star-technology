@@ -1,5 +1,5 @@
 {
-	autofocus_id: "47CD61D6ECD3DC7D"
+	autofocus_id: "56B0A897E7C7C25C"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "automation_age"
@@ -50,8 +50,38 @@
 			}]
 			size: 1.0d
 			tasks: [{
-				id: "71AF286F6CD44B51"
-				item: "gtceu:hv_4a_energy_converter"
+				id: "5735D411BE730D07"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any HV Converter\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hv_1a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_4a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_8a_energy_converter"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_16a_energy_converter"
+								tag: { }
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: -1.5d
@@ -283,6 +313,7 @@
 		}
 		{
 			dependencies: ["250C897A70DB797F"]
+			description: ["Better Circuits means better Circuit boards"]
 			id: "41D5FABA8D0BB0AC"
 			rewards: [{
 				id: "138F9541C5275C03"
@@ -619,7 +650,7 @@
 				"52FE319F5E176C37"
 				"77303F30F0A44393"
 			]
-			description: ["Allows you to turn RF into EV power."]
+			description: ["Allows you to turn RF into EV power. Oh ya and 64a's exist now."]
 			id: "5D3006AB62E2CE9B"
 			rewards: [{
 				id: "601186952EBAB995"
@@ -627,11 +658,49 @@
 				type: "item"
 			}]
 			size: 1.0d
-			tasks: [{
-				id: "45B9F274CC64B9AC"
-				item: "gtceu:ev_4a_energy_converter"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "27FD7999C915B7C8"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any EV Converter\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ev_1a_energy_converter"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_4a_energy_converter"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_8a_energy_converter"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_16a_energy_converter"
+									tag: { }
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0708A49A101103CD"
+					item: "start_core:ev_64a_energy_converter"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: 5.5d
 		}
@@ -692,7 +761,11 @@
 		}
 		{
 			dependencies: ["32B878D63A6AB6D3"]
-			description: ["3rd tier of coils for your EBF to allow you to increase the heat even more. Will start making hot ingots more often."]
+			description: [
+				"3rd tier of coils for your EBF to allow you to increase the heat even more. Will start making hot ingots more often."
+				""
+				"It also gives you your first heat based Overclocks for Aluminium and Stainless Steel notably."
+			]
 			id: "1DA6B3308C263A6F"
 			rewards: [{
 				count: 2
@@ -718,6 +791,7 @@
 			dependencies: [
 				"235423100BBE5C81"
 				"1646D6D439B260D3"
+				"250C897A70DB797F"
 			]
 			description: ["The heart of every EV machine."]
 			id: "74749B089D50329C"
@@ -804,6 +878,7 @@
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
+			hide_dependent_lines: true
 			id: "5B70B63D4157594F"
 			rewards: [{
 				count: 2
@@ -844,6 +919,7 @@
 		}
 		{
 			dependencies: ["22BC7BDE5E132A30"]
+			description: ["More Information in the Resource Production Tab"]
 			icon: "gtceu:oil_bucket"
 			id: "1B0A7CF5BE5D71FE"
 			rewards: [{
@@ -862,7 +938,11 @@
 		}
 		{
 			dependencies: ["4FFD2642BC183495"]
-			description: ["Allows you to pump oil from the void. I don't know how that works though."]
+			description: [
+				"Allows you to pump oil from the void. I don't know how that works out, but it does."
+				""
+				"Better Drills dont drain chunks as much and work much faster."
+			]
 			id: "22BC7BDE5E132A30"
 			rewards: [{
 				id: "26043A495658B8EF"
@@ -871,8 +951,33 @@
 			}]
 			size: 1.0d
 			tasks: [{
-				id: "731F1719BD4A073C"
-				item: "gtceu:mv_fluid_drilling_rig"
+				id: "7857528275E1A624"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Fluid Drilling\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:mv_fluid_drilling_rig"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_fluid_drilling_rig"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_fluid_drilling_rig"
+								tag: { }
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: -3.5d
@@ -942,7 +1047,16 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["22F56435C5449158"]
+			dependencies: [
+				"22F56435C5449158"
+				"51A0E48B2D04465E"
+				"3BD1916DC5208255"
+				"49B2298EC48C7F97"
+				"073989ADB68D1F92"
+				"61483DE9D5859D78"
+				"4BA7A1EBD0E9A16B"
+			]
+			dependency_requirement: "one_completed"
 			description: ["I hope you like having many distilation towers."]
 			id: "439D8AE6D3DC41AF"
 			rewards: [{
@@ -1453,6 +1567,7 @@
 				"62BA581B2918BB7B"
 				"2DB216B224F2E8EF"
 			]
+			description: ["Better Circuits, Fasters Circuits, Cheaper Circuits, this is a big one."]
 			id: "574ECD841D0D2AD7"
 			rewards: [{
 				id: "454446B7F35018F3"
@@ -1771,8 +1886,38 @@
 			}]
 			size: 1.0d
 			tasks: [{
-				id: "2659F92AD382E36F"
-				item: "gtceu:iv_4a_energy_converter"
+				id: "76DE79D061ECA488"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any IV Converter\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:iv_1a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_4a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_8a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_16a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "start_core:iv_64a_energy_converter"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: 2.5d
@@ -2129,7 +2274,7 @@
 		{
 			dependencies: ["3B2D79D40B9617D5"]
 			description: [
-				"The Nuclear Reactor allows for easy recipes when making Uranium-235 and Plutonium-239, and also functions as quite a powerful energy generator, capable of producing 8 EV amps, or 2 IV amps at once. "
+				"The Nuclear Reactor allows for easy recipes when making Uranium-235, Plutonium-239, and Plutonium-241. Additionally, it also functions as quite a powerful energy generator, capable of producing 8 EV amps, or 2 IV amps at once. "
 				"This does mean you need either a 16A EV or 4A IV dynamo hatch."
 			]
 			id: "68865F1DDBFFFACE"
@@ -2153,6 +2298,7 @@
 			dependencies: [
 				"39FF89B370D09B88"
 				"68865F1DDBFFFACE"
+				"6A57B03345FC6D99"
 			]
 			dependency_requirement: "one_completed"
 			hide_dependent_lines: true
@@ -2167,7 +2313,11 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
+			dependencies: [
+				"1820787D031EAB15"
+				"5B70B63D4157594F"
+			]
+			dependency_requirement: "one_completed"
 			description: ["In the Mechanics Page many important notes about Gregtech in particular can be found."]
 			id: "775AAF108AFAF707"
 			tasks: [{
@@ -2177,6 +2327,17 @@
 			}]
 			x: -5.5d
 			y: 12.0d
+		}
+		{
+			id: "56B0A897E7C7C25C"
+			invisible: true
+			tasks: [{
+				id: "02A369FF9CB41D88"
+				title: "positioner"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 4.5d
 		}
 	]
 	title: "Automation Age"

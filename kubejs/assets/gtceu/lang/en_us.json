@@ -60,7 +60,6 @@
     "material.gtceu.cryptand_li": "2.2.2-Cryptand(Li)",
     "material.gtceu.sodium_carbonate": "Sodium Carbonate",
     "material.gtceu.chlorine_trifluoride": "Chlorine Trifluoride",
-    "material.gtceu.dichloroethane": "Dichloroethane",
     "material.gtceu.tetrachloroethylene": "Tetrachloroethylene",
     "material.gtceu.pure_netherite": "Pure Netherite",
     "material.gtceu.naquadic_netherite": "Naquadic Netherite",
@@ -119,7 +118,7 @@
     "material.gtceu.hot_pcb_coolant": "Hot PCB Coolant",
     "material.gtceu.perchloric_acid": "Perchloric Acid",
     "material.gtceu.zapolgium": "Zapolgium",
-    "material.gtceu.magnetic_zapolgium": "Zapolgium",
+    "material.gtceu.magnetic_zapolgium": "Magnetic Zapolgium",
     "material.gtceu.titanite_slurry": "Titanite Slurry",
     "material.gtceu.silica_gel": "Silica Gel",
     "material.gtceu.titanite_slurry_residue": "Titanite Slurry Residue",
@@ -334,8 +333,10 @@
     "block.gtceu.ev_kinetic_mixer": "EV Kinetic Mixer",
     
     "block.gtceu.solid_blast_furnace": "Solid Blast Furnace Controller",
-    "block.gtceu.solid_blast_furnace.@Tooltip0": "§7An upgraded Primitive Blast Furnace",
+    "block.gtceu.solid_blast_furnace.tooltip.0": "§7An upgraded Primitive Blast Furnace",
     "gtceu.solid_blast_furnace": "Solid Blast Furnace",
+    "gtceu.bessemer_blast_furnace": "Bessemer Blast Furnace",
+
 
     "gtceu.jei.ore_vein.zapolite_vein": "Abydos Zapolite Vein",
     "material.gtceu.gritty_akreyrium": "Gritty Akreyrium",
@@ -490,5 +491,6 @@
     "block.gtceu.exotic_gas_siphon.tooltip.6": "§6Gas Collector:",
     "block.gtceu.exotic_gas_siphon.tooltip.7": "§7This machine can collect the ambient air in the surrounding atmosphere, providing the same functionality as a basic §fGas Collector§7.",
     "block.gtceu.exotic_gas_siphon.tooltip.8": "§8-----------------------------------",
-    "gtceu.exotic_gas_siphon": "Exotic Gas Siphoning"
+    "gtceu.exotic_gas_siphon": "Exotic Gas Siphoning",
+    "material.gtceu.indium_oxide": "Indium Oxide"
 }

@@ -1,4 +1,5 @@
 {
+	autofocus_id: "39E723ECCBEE0A0A"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "adventures_in_abydos"
@@ -623,6 +624,11 @@
 				"5368269646BC0F27"
 				"54DA03D41AF36EF2"
 			]
+			icon: {
+				Count: 1
+				id: "gtceu:utopian_akreyrium_bucket"
+				tag: { }
+			}
 			id: "07AD6651D0B40E22"
 			rewards: [{
 				count: 2
@@ -636,16 +642,25 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			tasks: [{
-				id: "5A05B918B174851B"
-				item: "gtceu:utopian_akreyrium_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5A05B918B174851B"
+					item: "gtceu:utopian_akreyrium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "475E25C327C8C064"
+					type: "checkmark"
+				}
+			]
+			title: "Utopian Akreyrium"
 			x: -1.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
+			description: ["By inputting a bacteria you are able to breed then so they multiply and get mutated copies so you can try to find the exact rates you are looking for. Higher mutability means more variance in its output."]
 			id: "6356F875511B2610"
 			rewards: [{
 				id: "6115048882C1189D"
@@ -665,11 +680,12 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.5d
 			y: -10.0d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
+			description: ["This is how you can extract the bacteria to get the resources you desire"]
 			id: "47DF7968E9B98C65"
 			rewards: [{
 				id: "217E675CB4B89D49"
@@ -689,11 +705,18 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.5d
 			y: -10.0d
 		}
 		{
 			dependencies: ["6F05FAE3F5AAC357"]
+			description: [
+				"This machine can do 3 things."
+				"1. Reactive the Dormant Bacteria to a usable form"
+				"2. Mutate a bacteria so that it may have a new affinity"
+				"3. Mutate a bacteria so that it may be a new type"
+				"With all of this and the breeder (more information there) you should be able to get the exact type of bacteria you desire."
+			]
 			id: "7F72F9E28713D965"
 			rewards: [{
 				count: 2
@@ -721,6 +744,7 @@
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
+			description: ["Go Explore the Scattered Temples of Abydos to find the things you are searching for."]
 			id: "3479CEBD73550718"
 			rewards: [{
 				id: "7FC500BE090ABC2E"
@@ -905,6 +929,7 @@
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
+			description: ["Find all the fragments to uncover hidden knowledge"]
 			id: "5744150A5658FE4D"
 			rewards: [{
 				id: "615C650D39461500"
@@ -953,6 +978,7 @@
 		}
 		{
 			dependencies: ["5744150A5658FE4D"]
+			description: ["Soon more advanced technology is unveiled"]
 			id: "146F88E5C1119649"
 			rewards: [{
 				id: "2DDF7ACB3920B1DA"
@@ -1193,6 +1219,7 @@
 		}
 		{
 			dependencies: ["379D69A44FC5B2F2"]
+			description: ["So this is what makes the Gates Beyond Comprehention...."]
 			id: "64F0BB858EEB7913"
 			rewards: [{
 				count: 2
@@ -1225,8 +1252,10 @@
 			optional: true
 			rewards: [{
 				command: "/sgjourney stargateNetwork address minecraft:the_nether"
+				elevate_perms: true
 				icon: "minecraft:netherrack"
 				id: "0F2CF8BD081737FA"
+				title: "Nether Phone Number"
 				type: "command"
 			}]
 			tasks: [{
@@ -1307,8 +1336,10 @@
 			optional: true
 			rewards: [{
 				command: "/sgjourney stargateNetwork address minecraft:the_end"
+				elevate_perms: true
 				icon: "minecraft:end_stone"
 				id: "2B29FBB9D8552049"
+				title: "End Phone Number"
 				type: "command"
 			}]
 			tasks: [{
@@ -1430,6 +1461,7 @@
 			dependencies: ["5E7153B7A10FC241"]
 			icon: "minecraft:end_stone"
 			id: "4238E903C674B284"
+			optional: true
 			rewards: [{
 				id: "6BE5069F47361652"
 				item: {
@@ -1441,6 +1473,7 @@
 			}]
 			shape: "octagon"
 			size: 1.0d
+			subtitle: "Not Yet Accessible"
 			tasks: [{
 				dimension: "minecraft:the_end"
 				icon: "minecraft:end_stone"
@@ -1455,6 +1488,7 @@
 			dependencies: ["5E7153B7A10FC241"]
 			icon: "minecraft:netherrack"
 			id: "1E3EF64C0A4EE438"
+			optional: true
 			rewards: [{
 				id: "5440DF6C322F753F"
 				item: {
@@ -1466,6 +1500,7 @@
 			}]
 			shape: "octagon"
 			size: 1.0d
+			subtitle: "Not Yet Accessible"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				icon: "minecraft:netherrack"
@@ -1478,6 +1513,7 @@
 		}
 		{
 			dependencies: ["47DF7968E9B98C65"]
+			description: ["Mutate and Breed Bacteria to fit you needs and help you gather all the hydrocarbons you could need."]
 			id: "2F91771A1872EB4E"
 			optional: true
 			tasks: [{
@@ -1485,11 +1521,12 @@
 				title: "Cheaper HydroCarbons"
 				type: "checkmark"
 			}]
-			x: -3.5d
+			x: -5.5d
 			y: -10.0d
 		}
 		{
 			dependencies: ["2659B3AA9108BC43"]
+			description: ["With the \"Exotic Gas Siphon\" you are able to do all of Air distilation in 1 step or gather immense amounts of gas at once."]
 			id: "6CCC111235D6CE5B"
 			optional: true
 			tasks: [{
@@ -1726,7 +1763,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["146F88E5C1119649"]
+			dependencies: [
+				"146F88E5C1119649"
+				"624480A1E62B52EF"
+			]
 			id: "2C354B0735DF8023"
 			rewards: [{
 				count: 2
@@ -1815,6 +1855,11 @@
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
+			icon: {
+				Count: 1
+				id: "gtceu:gritty_akreyrium_bucket"
+				tag: { }
+			}
 			id: "179A15014A5716B5"
 			rewards: [{
 				id: "51E73ECB550953E2"
@@ -1825,15 +1870,23 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "5EF95BB050993214"
-				item: {
-					Count: 1
-					id: "gtceu:gritty_akreyrium_bucket"
-					tag: { }
+			tasks: [
+				{
+					id: "5EF95BB050993214"
+					item: {
+						Count: 1
+						id: "gtceu:gritty_akreyrium_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "33EEC0E8C9F4719E"
+					type: "checkmark"
+				}
+			]
+			title: "Gritty Akreyrium"
 			x: -5.5d
 			y: -4.0d
 		}
@@ -1841,6 +1894,15 @@
 			dependencies: ["07AD6651D0B40E22"]
 			id: "6E40FC247C876DB2"
 			optional: true
+			rewards: [{
+				id: "65AEC5164B11BDB1"
+				item: {
+					Count: 1
+					id: "kubejs:coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "1C83A6D338CC1AF6"
 				item: "start_core:hpca_nanofluidic_heat_sink_component"
@@ -1849,6 +1911,63 @@
 			title: "Better Research Heat Sink"
 			x: -3.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["5E7153B7A10FC241"]
+			description: [
+				"Thank you for playing through this pack to its current state, a lot of time has been put in so that it was a unique and enjoyable experience. You are invited to come show off your accomplishment on our discord where we would love to hear what you thought about the pack."
+				""
+				""
+				"-StarT Dev Team"
+				""
+				""
+				"[The Maker of Gates Applauds you, and soon the reasonings as to why the Draconic Empires fell will be unravelled. Soon you will get 1 step closer to home....]"
+			]
+			id: "46982CD51A50CD07"
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "Congratulations, for now this is the end of the content, though, if you join the discord you can often see what comes next."
+			tasks: [{
+				id: "5163F1D911C227BB"
+				title: "Thanks"
+				type: "checkmark"
+			}]
+			title: "You have completed the Epsilon Version of Star Technology"
+			x: 8.5d
+			y: -10.0d
+		}
+		{
+			id: "39E723ECCBEE0A0A"
+			invisible: true
+			tasks: [{
+				id: "6A826ED481004E31"
+				title: "Positioner"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"75F0388FAB52E0B3"
+				"30C974448C57F0EC"
+				"3212A3351DAD4492"
+			]
+			description: ["The Maker of Gates applauds you and bestoys upon you their recognition."]
+			hide_dependency_lines: true
+			id: "624480A1E62B52EF"
+			rewards: [{
+				id: "78DFAFA748001157"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7BCA58F07C6457AC"
+				item: "kubejs:inscribe_casing"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -10.0d
 		}
 	]
 	title: "Adventures in Abydos"

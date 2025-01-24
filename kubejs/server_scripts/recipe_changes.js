@@ -82,24 +82,14 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(8);
 
-    //Recipe conflict fix
-    //ethane+chlorine
+    //Recipe conflict fix: ethane+chlorine
     event.remove({id: 'gtceu:chemical_reactor/vinyl_chloride_from_ethane'})
     event.recipes.gtceu.chemical_reactor('vinyl_chloride_from_ethane')
         .inputFluids('gtceu:chlorine 4000', 'gtceu:ethane 1000')
         .outputFluids('gtceu:vinyl_chloride 1000','gtceu:hydrochloric_acid 3000')
         .duration(160)
         .EUt(30)
-        .circuit(1);
-
-    //remove the code above when GT fixes it
-    event.remove({id: 'gtceu:chemical_reactor/dichloroethane'})
-    event.recipes.gtceu.chemical_reactor('dichloroethane')
-        .inputFluids('gtceu:ethane 1000', 'gtceu:chlorine 2000')
-        .outputFluids('gtceu:dichloroethane 1000','gtceu:hydrochloric_acid 2000')
-        .duration(200)
-        .EUt(120)
-        .circuit(0);
+        .circuit(2);
 
     event.recipes.gtceu.large_chemical_reactor('latex_rubber')
         .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
@@ -206,9 +196,12 @@ ServerEvents.recipes(event => {
     });
 
     event.recipes.gtceu.assembler('silicone_rubber_casing')
-        .itemInputs('gtceu:solid_machine_casing') .circuit(6)
+        .itemInputs('gtceu:solid_machine_casing') 
         .inputFluids('gtceu:silicone_rubber 216')
         .itemOutputs('kubejs:silicone_rubber_casing')
+        .duration(50)
+        .EUt(GTValues.VH[GTValues.MV])
+        .circuit(6);
 
     event.shaped(Item.of('2x gtceu:atomic_casing'), [
         'PHP',
@@ -246,7 +239,7 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .circuit(6);
 
-    event.shaped(Item.of('2x kubejs:enriched_naquadah_firebox_casing'), [
+    event.shaped(Item.of('2x start_core:enriched_naquadah_firebox_casing'), [
         'PRP',
         'RFR',
         'PRP'
@@ -266,7 +259,7 @@ ServerEvents.recipes(event => {
         L: 'gtceu:naquadah_normal_fluid_pipe'
     });
 
-    event.shaped(Item.of('2x kubejs:enriched_naquadah_engine_intake_casing'), [
+    event.shaped(Item.of('2x start_core:enriched_naquadah_engine_intake_casing'), [
         'PHP',
         'RFR',
         'PWP'
@@ -280,7 +273,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('enriched_naquadah_engine_intake_casing')
         .itemInputs('2x gtceu:enriched_naquadah_rotor', '4x gtceu:naquadah_normal_fluid_pipe', 'kubejs:enriched_naquadah_machine_casing')
-        .itemOutputs('2x kubejs:enriched_naquadah_engine_intake_casing')
+        .itemOutputs('2x start_core:enriched_naquadah_engine_intake_casing')
         .duration(50)
         .EUt(16);
 
@@ -341,18 +334,6 @@ ServerEvents.recipes(event => {
         R: 'minecraft:redstone',
         M: 'gtceu:magnetite_dust'
     });
-
-    event.recipes.gtceu.macerator('plutonium239')
-        .itemInputs('nuclearcraft:plutonium_239')
-        .itemOutputs('gtceu:plutonium_dust')
-        .duration(40)
-        .EUt(20);
-
-    event.recipes.gtceu.macerator('plutonium241')
-        .itemInputs('nuclearcraft:plutonium_241')
-        .itemOutputs('gtceu:plutonium_241_dust')
-        .duration(40)
-        .EUt(20);
 
     event.shaped(Item.of('3x create:belt_connector'), [
         'RRR'
@@ -519,51 +500,6 @@ ServerEvents.recipes(event => {
         event.recipes.create.haunting(Item.of(prop.output), Item.of(prop.input));
     });
 
-    //UHV Energy Type Hatch Fix
-
-    event.replaceInput(
-        {output: ['gtceu:uhv_energy_input_hatch', 'gtceu:uhv_energy_output_hatch']},
-        'gtceu:ruthenium_trinium_americium_neutronate_double_wire',
-        'kubejs:uhv_voltage_coil'
-    );
-
-    //UHV transformer fix
-    event.shaped(Item.of('gtceu:uhv_transformer_1a'), [
-        'UCC',
-        'KH ',
-        'UCC'], {
-        K: 'gtceu:cerium_tritelluride_single_cable',
-        U: 'gtceu:uhpic_chip',
-        C: 'gtceu:europium_single_cable',
-        H: 'gtceu:uhv_machine_hull'
-    });
-    event.shaped(Item.of('gtceu:uhv_transformer_2a'), [
-        'UCC',
-        'KH ',
-        'UCC'], {
-        K: 'gtceu:cerium_tritelluride_double_cable',
-        U: 'gtceu:uhpic_chip',
-        C: 'gtceu:europium_double_cable',
-        H: 'gtceu:uhv_machine_hull'
-    });
-    event.shaped(Item.of('gtceu:uhv_transformer_4a'), [
-        'UCC',
-        'KH ',
-        'UCC'], {
-        K: 'gtceu:cerium_tritelluride_quadruple_cable',
-        U: 'gtceu:uhpic_chip',
-        C: 'gtceu:europium_quadruple_cable',
-        H: 'gtceu:uhv_machine_hull'
-    });
-    event.shaped(Item.of('gtceu:uhv_transformer_16a'), [
-        'UCC',
-        'KH ',
-        'UCC'], {
-        K: 'gtceu:cerium_tritelluride_hex_cable',
-        U: 'gtceu:uhpic_chip',
-        C: 'gtceu:europium_hex_cable',
-        H: 'gtceu:uhv_machine_hull'
-    });
     event.recipes.gtceu.circuit_assembler('data_dna_disk')
         .itemInputs('kubejs:draconic_wetware_printed_circuit_board','2x #gtceu:circuits/uhv','24x kubejs:qram_chip', 
             '16x kubejs:3d_nor_chip','16x kubejs:3d_nand_chip','32x gtceu:fine_iron_selenide_over_strontium_titanium_oxide_wire')
@@ -583,6 +519,57 @@ ServerEvents.recipes(event => {
         .duration(1600)
         .EUt(480);
 
+    //Indium Line Fix (DONT TOUCH VALUES)
+    const InRemoval = ['gtceu:mixer/indium_concentrate','gtceu:chemical_reactor/indium_concentrate_separation','gtceu:large_chemical_reactor/indium_concentrate_separation',
+        'gtceu:chemical_reactor/indium_concentrate_separation_4x','gtceu:large_chemical_reactor/indium_concentrate_separation_4x']
+    
+    InRemoval.forEach(RecipeId => {
+        event.remove({id: RecipeId})
+    });
+
+    event.recipes.gtceu.mixer('indium_concentrate_fix')
+        .itemInputs('gtceu:purified_sphalerite_ore', 'gtceu:purified_galena_ore')
+        .inputFluids('gtceu:sulfuric_acid 2000')
+        .outputFluids('gtceu:indium_concentrate 1000')
+        .duration(60)
+        .EUt(150);
+
+    event.recipes.gtceu.chemical_reactor('indium_concentrate_separation_fix')
+        .itemInputs('2x gtceu:aluminium_dust')
+        .inputFluids('gtceu:indium_concentrate 2000', 'gtceu:oxygen 6000')
+        .itemOutputs('5x gtceu:indium_oxide_dust', '14x gtceu:aluminium_sulfite_dust')
+        .outputFluids('gtceu:lead_zinc_solution 1000', 'gtceu:diluted_sulfuric_acid 1000')
+        .duration(240)
+        .EUt(600);
+
+    event.recipes.create.item_application('minecraft:mycelium', ['minecraft:grass_block', 'exnihilosequentia:mycelium_spores']);
+
+    //Tom's / Chipped Fixes
+
+    event.replaceInput({id: 'chipped:benches/mechanist_workbench'}, 'minecraft:tnt', 'minecraft:red_concrete');
+
+    event.shaped('toms_storage:ts.adv_wireless_terminal', [
+        ' P ',
+        'PTP',
+        ' P '
+    ], {
+        P: 'gtceu:steel_plate',
+        T: 'toms_storage:ts.wireless_terminal'
+    });
+
+    //Treated Wood Fixes/Additions
+    event.remove({id: 'gtceu:macerator/macerate_treated_wood_chest_boat'})
+    event.recipes.gtceu.macerator('treated_wood_chest_boat')
+        .itemInputs('gtceu:treated_wood_chest_boat')
+        .itemOutputs('5x gtceu:treated_wood_dust', '8x gtceu:wood_dust')
+        .duration(1274)
+        .EUt(2);
+    event.recipes.gtceu.macerator('treated_wood_planks')
+        .itemInputs('gtceu:treated_wood_planks')
+        .itemOutputs('gtceu:treated_wood_dust')
+        .duration(98)
+        .EUt(2);
+    event.recipes.create.filling('gtceu:treated_wood_planks', [Fluid.of('gtceu:creosote', 125), '#minecraft:planks'])
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {
@@ -599,5 +586,17 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
         if (Math.random() < 0.5) {
             event.block.popItemFromFace(Item.of('exnihilosequentia:diorite_pebble'), 'up');
         }
-    }
+    } 
+});
+
+ServerEvents.tags('block', event => {
+    event.remove('mineable/pickaxe', [
+        'gtceu:ulv_barrel'
+    ]);
+    event.add('mineable/axe', [
+        'gtceu:ulv_barrel'
+    ]);
+    event.add('mineable/pickaxe', [
+        'travelanchors:travel_anchor'
+    ]);
 });

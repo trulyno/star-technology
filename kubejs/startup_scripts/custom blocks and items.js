@@ -166,7 +166,7 @@ StartupEvents.registry('item', event => {
 
     // Universal Circuits
 
-    const circuitTiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv", "uxv", "opv"];
+    const circuitTiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"/*, "uxv", "opv"*/];
 
     let tier_capitalized;
     circuitTiers.forEach(tier => {
@@ -201,17 +201,17 @@ StartupEvents.registry('item', event => {
     event.create('runic_stabilization_plating')
         .displayName('Runic Stabilization Plating')
         .texture('kubejs:item/gate_items/runic_stable_plating')
-        .rarity('rare')
+        .rarity('rare');
 
     event.create('runic_energized_plating')
         .displayName('Runic-Energized Plating')
         .texture('kubejs:item/gate_items/runic_energized_plating')
-        .rarity('rare')
+        .rarity('rare');
 
     event.create('runic_transportation_engraved_plating')
         .displayName('Runic Transportation-Engraved Plating')
         .texture('kubejs:item/gate_items/runic_transport_plating')
-        .rarity('epic')
+        .rarity('epic');
 
     event.create('runic_wave_generator')
         .displayName('Drack-ion Runic Wave Generator')
@@ -221,12 +221,12 @@ StartupEvents.registry('item', event => {
     event.create('runic_energized_transportation_plating')
         .displayName('Runic Energized Transportation-Engraved Plating')
         .texture('kubejs:item/gate_items/runic_transport_energized_plating')
-        .rarity('uncommon')
+        .rarity('uncommon');
 
     event.create('runic_energized_pathway_plating')
         .displayName('Runic Energized Pathway-Engraved Plating')
         .texture('kubejs:item/gate_items/runic_pathway_energized_plating')
-        .rarity('uncommon')
+        .rarity('uncommon');
 
  //Gate Parts
 
@@ -257,15 +257,18 @@ StartupEvents.registry('item', event => {
 
     event.create('ancient_stargate_computer_core')
         .displayName('Ancient Encoded Computational Unit')
-        .rarity('uncommon');
+        .rarity('uncommon')
+        .texture('kubejs:item/gate_items/ancient_stargate_computer_core');
 
     event.create('ancient_chevron_disk')
         .displayName('Ancient Stargate Chevron Disk')
-        .rarity('rare');
+        .rarity('rare')
+        .texture('kubejs:item/gate_items/ancient_chevron_disk');
 
     event.create('classic_chevron_assembly')
         .displayName('Classic Stargate Chevron Assembly')
         .rarity('rare')
+        .texture('kubejs:item/gate_items/classic_chevron_assembly');
     
     event.create('draconic_coordinate_core')
         .displayName('Draconic Coordinate Core')
@@ -321,7 +324,7 @@ StartupEvents.registry('item', event => {
         .tooltip('The Draconic Void')
         .texture('kubejs:item/coordinate_crystals/end_coordinate_crystal');
 
-    event.create('lantea_coordinate_crystal')
+    /*event.create('lantea_coordinate_crystal')
         .displayName('Lantea Inscribed Coordinate Crystal')
         .rarity('epic')
         .tooltip('The Endless Seas')
@@ -343,15 +346,15 @@ StartupEvents.registry('item', event => {
         .displayName('Fractured Void Coordinate Crystal')
         .rarity('epic')
         .tooltip('...to get Home')
-        .texture('kubejs:item/coordinate_crystals/void_coordinate_crystal');
+        .texture('kubejs:item/coordinate_crystals/void_coordinate_crystal');*/
 
     //Component Parts
 
     event.create('uhv_voltage_coil')
         .texture('kubejs:item/component_part/uhv_voltage_coil')
         .displayName('Ultra High Voltage Coil')
-        .tooltip('Ultimate+ Coil');
-    event.create('uev_voltage_coil')
+        .tooltip('Peppermint Coil');
+    /*event.create('uev_voltage_coil')
         .texture('kubejs:item/component_part/uev_voltage_coil')
         .displayName('Ultra Excessive Voltage Coil')
         .tooltip('Ultimate+ Pro Coil');
@@ -366,9 +369,9 @@ StartupEvents.registry('item', event => {
     event.create('opv_voltage_coil')
         .texture('kubejs:item/component_part/opv_voltage_coil')
         .displayName('Overpowered Voltage Coil')
-        .tooltip('Godly Coil');
+        .tooltip('Godly Coil');*/
 
-    const partTiers = ["uhv", "uev", "uiv", "uxv", "opv"];
+    const partTiers = ["uhv"/*, "uev", "uiv", "uxv", "opv"*/];
 
     let tier_proper;
     partTiers.forEach(tier => {
@@ -626,7 +629,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/beryllium-aluminium_casing');
+        .textureAll('kubejs:block/casings/large_cubes/beryllium_aluminium_alloy_casing');
 
     event.create('birmabright_casing')
         .displayName('Birmabright Casing')
@@ -636,7 +639,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/birmabright_casing');
+        .textureAll('kubejs:block/casings/large_cubes/birmabright_casing');
 
     event.create('beryllium_bronze_casing')
         .displayName('Beryllium Bronze Casing')
@@ -646,7 +649,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/beryllium_bronze_casing');
+        .textureAll('kubejs:block/casings/large_cubes/beryllium_bronze_casing');
 
     event.create('blue_steel_casing')
         .displayName('Blue Steel Casing')
@@ -656,7 +659,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/blue_steel_casing');
+        .textureAll('kubejs:block/casings/large_cubes/blue_steel_casing');
 
     event.create('duralumin_casing')
         .displayName('Duralumin Casing')
@@ -666,7 +669,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/duralumin_casing');
+        .textureAll('kubejs:block/casings/large_cubes/duralumin_casing');
 
     event.create('elgiloy_casing')
         .displayName('Elgiloy Casing')
@@ -676,7 +679,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/elgiloy_casing');
+        .textureAll('kubejs:block/casings/large_cubes/elgiloy_casing');
 
     event.create('hydronalium_casing')
         .displayName('Hydronalium Casing')
@@ -686,7 +689,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/hydronalium_casing');
+        .textureAll('kubejs:block/casings/large_cubes/hydronalium_casing');
 
     event.create('kovar_casing')
         .displayName('Kovar Casing')
@@ -696,7 +699,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/kovar_casing');
+        .textureAll('kubejs:block/casings/large_cubes/kovar_casing');
 
     event.create('red_steel_casing')
         .displayName('Red Steel Casing')
@@ -706,7 +709,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/red_steel_casing');
+        .textureAll('kubejs:block/casings/large_cubes/red_steel_casing');
 
     event.create('silicon_bronze_casing')
         .displayName('Silicon Bronze Casing')
@@ -716,7 +719,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/silicon_bronze_casing');
+        .textureAll('kubejs:block/casings/large_cubes/silicon_bronze_casing');
 
     event.create('sterling_silver_casing')
         .displayName('Sterling Silver Casing')
@@ -726,7 +729,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/sterling_silver_casing');
+        .textureAll('kubejs:block/casings/large_cubes/sterling_silver_casing');
 
     event.create('zamak_casing')
         .displayName('Zamak Casing')
@@ -736,7 +739,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/zamak_casing');
+        .textureAll('kubejs:block/casings/large_cubes/zamak_casing');
 
     event.create('tumbaga_casing')
         .displayName('Tumbaga Casing')
@@ -746,7 +749,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/casings/tumbaga_casing');
+        .textureAll('kubejs:block/casings/large_cubes/tumbaga_casing');
 
     event.create('silicone_rubber_casing')
         .displayName('Silicone Rubber Casing')
@@ -831,7 +834,7 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_diamond_tool')
         .textureAll('kubejs:block/casings/runic_pathway_casing');
 
-        event.create('inscribe_casing')
+    event.create('inscribe_casing')
         .displayName('Keelagraver Manipulator & Acuancentrator Capable Runicalium Casing')
         .hardness(5)
         .resistance(10)
@@ -851,7 +854,12 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        //.textureAll('kubejs:block/');
+        .texture('up', 'kubejs:block/ancient_stargate_block_tops')
+        .texture('down', 'kubejs:block/ancient_stargate_block_tops')
+        .texture('north', 'kubejs:block/ancient_stargate_block_ring')
+        .texture('east', 'kubejs:block/ancient_stargate_block_ring')
+        .texture('west', 'kubejs:block/ancient_stargate_block_ring')
+        .texture('south', 'kubejs:block/ancient_stargate_block_ring');
 
     event.create('ancient_stargate_base_block')
         .displayName('Ancient Stargate Base Block')
@@ -862,7 +870,12 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        //.textureAll('kubejs:block/');
+        .texture('up', 'kubejs:block/ancient_stargate_block_tops')
+        .texture('down', 'kubejs:block/ancient_stargate_block_tops')
+        .texture('south', 'kubejs:block/ancient_stargate_block_ring')
+        .texture('east', 'kubejs:block/ancient_stargate_block_ring')
+        .texture('west', 'kubejs:block/ancient_stargate_block_ring')
+        .texture('north', 'kubejs:block/ancient_stargate_block_base');
 
     event.create('ancient_stargate_chevron_block')
         .displayName('Ancient Stargate Chevron Block')
@@ -873,7 +886,12 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock('minecraft:needs_iron_tool')
-        //.textureAll('kubejs:block/');
+        .texture('up', 'kubejs:block/ancient_stargate_block_tops')
+        .texture('down', 'kubejs:block/ancient_stargate_block_tops')
+        .texture('north', 'kubejs:block/ancient_stargate_block_chevron')
+        .texture('east', 'kubejs:block/ancient_stargate_block_chevron')
+        .texture('west', 'kubejs:block/ancient_stargate_block_chevron')
+        .texture('south', 'kubejs:block/ancient_stargate_block_chevron');
 
     //     //Coagulated blocks
 //     ['iron', 'copper', 'quartz'].forEach(type => {
@@ -921,14 +939,12 @@ StartupEvents.registry('block', event => {
 
     naq_casing('enriched_naquadah_machine_casing', 'Enriched Naquadah Casing', 'casing');
     naq_casing('enriched_naquadah_pipe_casing', 'Enriched Naquadah Pipe Casing', 'pipe_casing');
-    naq_casing('enriched_naquadah_firebox_casing', 'Enriched Naquadah Firebox Casing', 'firebox_casing');
     naq_casing('enriched_naquadah_gearbox', 'Enriched Naquadah Gearbox Casing', 'gearbox');
-    naq_casing('enriched_naquadah_engine_intake_casing', 'Supreme Engine Intake Casing', 'engine_intake_casing');
 
 });
 
 BlockEvents.modification(event => {
     event.modify('gtceu:nether_star_block', block => {
-      block.lightEmission = 15
-    })
+        block.lightEmission = 15
+    });
 });

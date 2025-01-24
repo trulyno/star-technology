@@ -785,7 +785,7 @@
 			]
 			title: "Enchant your String Mesh with Fortune"
 			x: 1.5d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			can_repeat: true
@@ -834,7 +834,7 @@
 			]
 			title: "Enchant your String Mesh with Efficiency"
 			x: -1.5d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			can_repeat: true
@@ -902,7 +902,7 @@
 			]
 			title: "Enchant your Fortune String Mesh with Efficiency"
 			x: 1.0d
-			y: 4.0d
+			y: 3.0d
 		}
 		{
 			can_repeat: true
@@ -970,7 +970,7 @@
 			]
 			title: "Enchant your Efficiency String Mesh with Fortune"
 			x: -1.0d
-			y: 4.0d
+			y: 3.0d
 		}
 		{
 			can_repeat: true
@@ -1016,7 +1016,7 @@
 			]
 			title: "Enchant your String Mesh with Fortune and Efficiency"
 			x: 0.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -1383,6 +1383,128 @@
 			title: "Effortless Building Pack"
 			x: 3.5d
 			y: -5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["439BAF39B90EC4C2"]
+			icon: "minecraft:sunflower"
+			id: "67197F172EB59B1B"
+			optional: true
+			rewards: [{
+				command: "/gamerule doDaylightCycle false"
+				icon: "ae2:singularity"
+				id: "3EB38A984CAA9456"
+				title: "Disable the Daylight Cycle"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "67D11D234889008C"
+				title: "Disable Daylight Cycle"
+				type: "checkmark"
+			}]
+			title: "Disable the Daylight Cycle"
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["638C207D39C50109"]
+			icon: "mysticalagriculture:water_seeds"
+			id: "2E5C1B69CE290654"
+			optional: true
+			rewards: [{
+				command: "/gamerule doWeatherCycle false"
+				icon: "ae2:singularity"
+				id: "5AE2822D8BC289FE"
+				title: "Disable the Weather Cycle"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "379C24585F64F8CA"
+				title: "Disable Weather Cycle"
+				type: "checkmark"
+			}]
+			title: "Disable the Weather Cycle"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["439BAF39B90EC4C2"]
+			icon: "minecraft:sunflower"
+			id: "4264391AAD2E3167"
+			optional: true
+			rewards: [{
+				command: "/gamerule doDaylightCycle true"
+				icon: "ae2:singularity"
+				id: "4FB40FA2C1F1AE47"
+				title: "Enable the Daylight Cycle"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "3B840D173C0A7E28"
+				title: "Enable the Daylight Cycle"
+				type: "checkmark"
+			}]
+			title: "Enable the Daylight Cycle"
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			icon: "minecraft:sunflower"
+			id: "439BAF39B90EC4C2"
+			shape: "octagon"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "5058DE66DDBCE1F6"
+				item: { Count: 16, id: "kubejs:coin" }
+				type: "item"
+			}]
+			title: "Changing Daylight Cycle"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			icon: "mysticalagriculture:water_seeds"
+			id: "638C207D39C50109"
+			shape: "octagon"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "2F6D21CBF8FEF610"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			title: "Changing Weather Cycle"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["638C207D39C50109"]
+			icon: "mysticalagriculture:water_seeds"
+			id: "3D6BDCDF49DAC8B2"
+			optional: true
+			rewards: [{
+				command: "/gamerule doWeatherCycle true"
+				icon: "ae2:singularity"
+				id: "095C9F5A75C8759E"
+				title: "Disable the Weather Cycle"
+				type: "command"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "443D011EE22F18B7"
+				title: "Enable Weather Cycle"
+				type: "checkmark"
+			}]
+			title: "Enable the Weather Cycle"
+			x: 4.5d
+			y: 3.0d
 		}
 	]
 	title: "Shop"

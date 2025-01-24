@@ -2,10 +2,11 @@ ServerEvents.recipes(event => {
 
     //controller
     event.recipes.gtceu.assembler('nuclear_reactor')
-        .itemInputs('3x #gtceu:circuits/ev', 'gtceu:high_temperature_smelting_casing','gtceu:hv_emitter')
+        .itemInputs('3x #gtceu:circuits/ev', 'gtceu:high_temperature_smelting_casing','gtceu:hv_emitter',
+            '2x gtceu:hv_electric_pump','gtceu:hv_robot_arm')
         .itemOutputs('gtceu:nuclear_reactor')
-        .inputFluids('gtceu:soldering_alloy 288')
-        .duration(50)
-        .EUt(16);
+        .inputFluids('gtceu:soldering_alloy 576')
+        .duration(1800)
+        .EUt(400);
 
 });

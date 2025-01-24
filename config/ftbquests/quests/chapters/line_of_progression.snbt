@@ -173,79 +173,79 @@
 		{
 			id: "2944146ABA34CB5B"
 			linked_quest: "5C15427D1679D4C3"
-			x: 2.0d
-			y: -29.0d
+			x: 1.0d
+			y: -30.5d
 		}
 		{
 			id: "6D220F5D5B6F0922"
 			linked_quest: "6EB85BBD539AEB57"
-			x: 2.0d
-			y: -27.5d
+			x: 1.0d
+			y: -29.0d
 		}
 		{
 			id: "2B30EE9B2767B72D"
 			linked_quest: "5C302CB1A1068EE1"
-			x: 2.0d
-			y: -26.0d
+			x: 1.0d
+			y: -27.5d
 		}
 		{
 			id: "607658C8752D8C32"
 			linked_quest: "0F7A1EA1AB52F795"
-			x: 2.0d
-			y: -24.5d
+			x: 1.0d
+			y: -26.0d
 		}
 		{
 			id: "0D386219B03B2DDA"
 			linked_quest: "390CB178FC2D2CCC"
-			x: -18.0d
+			x: -16.5d
 			y: -27.5d
 		}
 		{
 			id: "0AA45EE8F8DDAA79"
 			linked_quest: "397C622B06B1165A"
-			x: -19.5d
+			x: -18.0d
 			y: -27.5d
 		}
 		{
 			id: "29B89BAD4869C0B7"
 			linked_quest: "0E88CB5E68212006"
-			x: -19.5d
+			x: -18.0d
 			y: -26.0d
 		}
 		{
 			id: "547840F25F7878E6"
 			linked_quest: "0AB3A8C14C3A0512"
-			x: -16.5d
+			x: -15.0d
 			y: -26.0d
 		}
 		{
 			id: "54316E61B087A5B2"
 			linked_quest: "0FBB34B21DA41C5D"
-			x: -14.5d
+			x: -13.0d
 			y: -24.5d
 		}
 		{
 			id: "4DEE790493AEC480"
 			linked_quest: "0094C2E72105E8CA"
-			x: -13.0d
+			x: -11.5d
 			y: -27.5d
 		}
 		{
 			id: "09F13FAB5E31E5A6"
 			linked_quest: "22F56435C5449158"
-			x: -14.5d
+			x: -13.0d
 			y: -26.0d
 		}
 		{
 			id: "1D9B1F10D853D607"
 			linked_quest: "14417CCE1E25C9C6"
-			x: -18.0d
+			x: -15.0d
 			y: -22.5d
 		}
 		{
 			id: "5906FFC09AD776DA"
 			linked_quest: "27E9698231A04022"
-			x: -19.5d
+			x: -18.0d
 			y: -22.5d
 		}
 		{
@@ -257,92 +257,110 @@
 		{
 			id: "29C41C8067A33A92"
 			linked_quest: "22BC7BDE5E132A30"
-			x: -19.5d
+			x: -18.0d
 			y: -21.0d
 		}
 		{
 			id: "5D754D0F151C19E0"
 			linked_quest: "6AC8588F6172617D"
 			x: -18.0d
-			y: -19.5d
+			y: -15.5d
 		}
 		{
 			id: "0E8B8DC038F36861"
 			linked_quest: "63A83F8EC256BE94"
 			x: -18.0d
-			y: -18.0d
+			y: -14.0d
 		}
 		{
 			id: "1DD2FE27D7803ABB"
 			linked_quest: "1820787D031EAB15"
-			x: -8.5d
-			y: -19.5d
+			x: -11.5d
+			y: -17.5d
 		}
 		{
 			id: "231466CD54505A13"
 			linked_quest: "67ABB3BF6D0C183B"
-			x: -19.5d
+			x: -18.0d
 			y: -29.5d
 		}
 		{
 			id: "3B7B8853F2299D4D"
 			linked_quest: "60ECE277341A9408"
-			x: -16.0d
+			x: -14.5d
 			y: -29.5d
 		}
 		{
 			id: "336508F193ECD87F"
 			linked_quest: "59711F987DE95924"
-			x: -16.0d
+			x: -14.5d
 			y: -31.0d
 		}
 		{
 			id: "3C58025F18501529"
 			linked_quest: "027C5CE3CFCB5649"
-			x: -14.5d
+			x: -13.0d
 			y: -29.5d
 		}
 		{
 			id: "257E0109D4E6C15D"
 			linked_quest: "6D169C5E35C9EF6C"
-			x: -16.0d
+			x: -14.5d
 			y: -32.5d
 		}
 		{
 			id: "6C146A3CFDB256A1"
 			linked_quest: "1004D6D7636E0321"
-			x: -13.0d
+			x: -11.5d
 			y: -32.5d
-		}
-		{
-			id: "423E8E9EC57819A1"
-			linked_quest: "4C9CB593DFCC7FEC"
-			x: -15.0d
-			y: -22.5d
-		}
-		{
-			id: "6B4110941432677B"
-			linked_quest: "60F9C67C58B7A08E"
-			x: -15.0d
-			y: -21.0d
 		}
 		{
 			id: "387162CF368FDBCD"
 			linked_quest: "3FB8E0105D2C20B4"
-			x: -18.0d
+			x: -16.5d
 			y: -26.0d
 		}
 		{
 			id: "62547D0731752665"
 			linked_quest: "2C354B0735DF8023"
-			x: -14.5d
+			x: -13.0d
 			y: -32.5d
 		}
 		{
 			id: "50E9A2BECB7A50FB"
 			linked_quest: "64F0BB858EEB7913"
-			x: -13.0d
+			x: -11.5d
 			y: -31.0d
+		}
+		{
+			id: "223347A561E2437A"
+			linked_quest: "6C8C6EA426060065"
+			x: -16.5d
+			y: -32.5d
+		}
+		{
+			id: "66DBD9AF4CDBC12F"
+			linked_quest: "2EE4C6540FE3D4CF"
+			x: -16.5d
+			y: -31.0d
+		}
+		{
+			id: "17589AD800EE0BFB"
+			linked_quest: "7F72F9E28713D965"
+			x: 4.5d
+			y: -14.0d
+		}
+		{
+			id: "45ED4A9446271E4F"
+			linked_quest: "47DF7968E9B98C65"
+			x: 6.0d
+			y: -14.0d
+		}
+		{
+			id: "278B867C320470BF"
+			linked_quest: "6356F875511B2610"
+			x: 6.0d
+			y: -15.5d
 		}
 	]
 	quests: [
@@ -354,7 +372,7 @@
 				item: "gtceu:hv_fluid_drilling_rig"
 				type: "item"
 			}]
-			x: -19.5d
+			x: -18.0d
 			y: -19.5d
 		}
 		{
@@ -365,7 +383,7 @@
 				item: "gtceu:ev_fluid_drilling_rig"
 				type: "item"
 			}]
-			x: -19.5d
+			x: -18.0d
 			y: -18.0d
 		}
 		{
@@ -377,7 +395,7 @@
 				item: "gtceu:distillation_tower"
 				type: "item"
 			}]
-			x: -13.0d
+			x: -11.5d
 			y: -26.0d
 		}
 		{
@@ -392,7 +410,7 @@
 				item: "gtceu:uv_fusion_reactor"
 				type: "item"
 			}]
-			x: -19.5d
+			x: -18.0d
 			y: -32.5d
 		}
 		{
@@ -404,7 +422,7 @@
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
-			x: -13.0d
+			x: -11.5d
 			y: -24.5d
 		}
 		{
@@ -415,8 +433,8 @@
 				item: "gtceu:large_wiremill"
 				type: "item"
 			}]
-			x: -19.5d
-			y: -15.5d
+			x: 4.5d
+			y: -32.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -426,8 +444,8 @@
 				item: "gtceu:large_solidifier"
 				type: "item"
 			}]
-			x: -18.0d
-			y: -15.5d
+			x: 6.0d
+			y: -32.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -437,8 +455,8 @@
 				item: "gtceu:large_extruder"
 				type: "item"
 			}]
-			x: -16.5d
-			y: -15.5d
+			x: 4.5d
+			y: -29.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -448,8 +466,8 @@
 				item: "gtceu:large_electrolyzer"
 				type: "item"
 			}]
-			x: -15.0d
-			y: -15.5d
+			x: 6.0d
+			y: -29.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -459,8 +477,8 @@
 				item: "gtceu:large_mixer"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -15.5d
+			x: 4.5d
+			y: -26.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -470,8 +488,8 @@
 				item: "gtceu:large_maceration_tower"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -15.5d
+			x: 6.0d
+			y: -26.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -481,8 +499,8 @@
 				item: "gtceu:large_chemical_bath"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -15.5d
+			x: 4.5d
+			y: -23.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -492,8 +510,8 @@
 				item: "gtceu:large_centrifuge"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -15.5d
+			x: 6.0d
+			y: -23.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -503,8 +521,8 @@
 				item: "gtceu:large_electromagnet"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -15.5d
+			x: 4.5d
+			y: -20.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -514,8 +532,8 @@
 				item: "gtceu:large_packer"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -15.5d
+			x: 6.0d
+			y: -20.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -525,8 +543,8 @@
 				item: "gtceu:large_assembler"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -15.5d
+			x: 4.5d
+			y: -17.5d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -536,8 +554,8 @@
 				item: "gtceu:large_circuit_assembler"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -14.0d
+			x: 6.0d
+			y: -19.0d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -547,8 +565,8 @@
 				item: "gtceu:large_arc_smelter"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -14.0d
+			x: 4.5d
+			y: -22.0d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -558,8 +576,8 @@
 				item: "gtceu:large_engraving_laser"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -14.0d
+			x: 6.0d
+			y: -22.0d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -569,8 +587,8 @@
 				item: "gtceu:large_sifting_funnel"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -14.0d
+			x: 4.5d
+			y: -19.0d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -580,8 +598,8 @@
 				item: "gtceu:large_autoclave"
 				type: "item"
 			}]
-			x: -15.0d
-			y: -14.0d
+			x: 6.0d
+			y: -28.0d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -591,8 +609,8 @@
 				item: "gtceu:large_material_press"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -14.0d
+			x: 4.5d
+			y: -25.0d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -602,8 +620,8 @@
 				item: "gtceu:large_brewer"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -14.0d
+			x: 6.0d
+			y: -25.0d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -613,8 +631,8 @@
 				item: "gtceu:large_cutter"
 				type: "item"
 			}]
-			x: -19.5d
-			y: -14.0d
+			x: 4.5d
+			y: -31.0d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -624,8 +642,8 @@
 				item: "gtceu:large_distillery"
 				type: "item"
 			}]
-			x: -18.0d
-			y: -14.0d
+			x: 6.0d
+			y: -31.0d
 		}
 		{
 			dependencies: ["664E782C6A24D9F1"]
@@ -635,8 +653,8 @@
 				item: "gtceu:large_extractor"
 				type: "item"
 			}]
-			x: -16.5d
-			y: -14.0d
+			x: 4.5d
+			y: -28.0d
 		}
 		{
 			dependencies: ["0E88CB5E68212006"]
@@ -646,7 +664,7 @@
 				item: "gtceu:ore_processing_plant"
 				type: "item"
 			}]
-			x: -19.5d
+			x: -18.0d
 			y: -24.5d
 		}
 		{
@@ -657,8 +675,8 @@
 				item: "gtceu:t_large_bender"
 				type: "item"
 			}]
-			x: -13.0d
-			y: -19.5d
+			x: -16.0d
+			y: -17.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -668,8 +686,8 @@
 				item: "gtceu:t_large_centrifuge"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -19.5d
+			x: -14.5d
+			y: -17.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -679,8 +697,8 @@
 				item: "gtceu:t_large_electrolyzer"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -19.5d
+			x: -13.0d
+			y: -17.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -690,8 +708,8 @@
 				item: "gtceu:t_large_extruder"
 				type: "item"
 			}]
-			x: -13.0d
-			y: -21.0d
+			x: -16.0d
+			y: -19.0d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -701,8 +719,8 @@
 				item: "gtceu:t_large_forming_press"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -21.0d
+			x: -14.5d
+			y: -19.0d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -712,8 +730,8 @@
 				item: "gtceu:t_large_lathe"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -21.0d
+			x: -13.0d
+			y: -19.0d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -723,8 +741,8 @@
 				item: "gtceu:t_large_macerator"
 				type: "item"
 			}]
-			x: -13.0d
-			y: -22.5d
+			x: -16.0d
+			y: -20.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -734,8 +752,8 @@
 				item: "gtceu:t_large_mixer"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -22.5d
+			x: -14.5d
+			y: -20.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -745,8 +763,8 @@
 				item: "gtceu:t_large_ore_washer"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -22.5d
+			x: -13.0d
+			y: -20.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -756,8 +774,8 @@
 				item: "gtceu:large_rock_crusher"
 				type: "item"
 			}]
-			x: -13.0d
-			y: -18.0d
+			x: -16.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -767,8 +785,8 @@
 				item: "gtceu:t_large_sifter"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -18.0d
+			x: -14.5d
+			y: -16.0d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -778,8 +796,8 @@
 				item: "gtceu:t_large_thermal_centrifuge"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -18.0d
+			x: -13.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -789,8 +807,8 @@
 				item: "gtceu:t_large_wiremill"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -21.0d
+			x: -11.5d
+			y: -19.0d
 		}
 		{
 			dependencies: [
@@ -803,19 +821,8 @@
 				item: "gtceu:large_quantum_compressor"
 				type: "item"
 			}]
-			x: -14.5d
+			x: -13.0d
 			y: -31.0d
-		}
-		{
-			dependencies: ["2587E109968EFBB4"]
-			id: "31FA0BC9A6B88728"
-			tasks: [{
-				id: "2853D759911F03E8"
-				item: "gtceu:mega_blast_furnace"
-				type: "item"
-			}]
-			x: -18.0d
-			y: -32.5d
 		}
 		{
 			dependencies: ["2587E109968EFBB4"]
@@ -825,8 +832,8 @@
 				item: "gtceu:mega_vacuum_freezer"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -18.0d
+			x: -11.5d
+			y: -16.0d
 		}
 		{
 			dependencies: ["2F4B998D20856E2B"]
@@ -837,8 +844,8 @@
 				item: "gtceu:tree_greenhouse"
 				type: "item"
 			}]
-			x: -18.0d
-			y: -21.0d
+			x: -12.0d
+			y: -22.5d
 		}
 		{
 			dependencies: ["4B51B15B49620F57"]
@@ -1003,8 +1010,8 @@
 				}
 			]
 			title: "Basic Chips"
-			x: 3.5d
-			y: -29.0d
+			x: 2.5d
+			y: -30.5d
 		}
 		{
 			dependencies: ["6EB85BBD539AEB57"]
@@ -1037,8 +1044,8 @@
 				}
 			]
 			title: "Better Chips"
-			x: 3.5d
-			y: -27.5d
+			x: 2.5d
+			y: -29.0d
 		}
 		{
 			dependencies: ["0F7A1EA1AB52F795"]
@@ -1056,8 +1063,8 @@
 				}
 			]
 			title: "Highly Advanced Chips"
-			x: 3.5d
-			y: -24.5d
+			x: 2.5d
+			y: -26.0d
 		}
 		{
 			dependencies: ["5C302CB1A1068EE1"]
@@ -1075,8 +1082,8 @@
 				}
 			]
 			title: "Advanced Chips"
-			x: 3.5d
-			y: -26.0d
+			x: 2.5d
+			y: -27.5d
 		}
 		{
 			dependencies: ["4FF433145C67693F"]
@@ -1122,8 +1129,8 @@
 				}
 			]
 			title: "Enhanced Chips"
-			x: 3.5d
-			y: -23.0d
+			x: 2.5d
+			y: -24.5d
 		}
 		{
 			dependencies: ["17C1292018AE363E"]
@@ -1134,7 +1141,7 @@
 				item: "gtceu:cleanroom"
 				type: "item"
 			}]
-			x: -14.5d
+			x: -13.0d
 			y: -27.5d
 		}
 		{
@@ -1146,7 +1153,7 @@
 				item: "gtceu:coke_oven"
 				type: "item"
 			}]
-			x: -16.5d
+			x: -15.0d
 			y: -27.5d
 		}
 		{
@@ -1161,7 +1168,7 @@
 				item: "gtceu:zpm_fusion_reactor"
 				type: "item"
 			}]
-			x: -19.5d
+			x: -18.0d
 			y: -31.0d
 		}
 		{
@@ -1173,20 +1180,8 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: -6.5d
+			x: -6.0d
 			y: -23.5d
-		}
-		{
-			dependencies: ["3E1CA9FFB9953F42"]
-			disable_toast: true
-			id: "4640656DC355D2F1"
-			tasks: [{
-				id: "2434D2E99E39F08E"
-				item: "gtceu:chemical_plant"
-				type: "item"
-			}]
-			x: -18.0d
-			y: -29.5d
 		}
 		{
 			dependencies: ["62BA581B2918BB7B"]
@@ -1196,7 +1191,7 @@
 				item: "kubejs:iv_universal_circuit"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -9.5d
 			y: -23.0d
 		}
 		{
@@ -1207,7 +1202,7 @@
 				item: "kubejs:ev_universal_circuit"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -9.5d
 			y: -24.5d
 		}
 		{
@@ -1218,7 +1213,7 @@
 				item: "kubejs:hv_universal_circuit"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -9.5d
 			y: -26.0d
 		}
 		{
@@ -1262,7 +1257,7 @@
 				item: "kubejs:luv_universal_circuit"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -9.5d
 			y: -21.5d
 		}
 		{
@@ -1273,7 +1268,7 @@
 				item: "kubejs:zpm_universal_circuit"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -9.5d
 			y: -20.0d
 		}
 		{
@@ -1284,7 +1279,7 @@
 				item: "kubejs:uv_universal_circuit"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -9.5d
 			y: -18.5d
 		}
 		{
@@ -1295,7 +1290,7 @@
 				item: "kubejs:uhv_universal_circuit"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -9.5d
 			y: -17.0d
 		}
 		{
@@ -1306,8 +1301,8 @@
 				item: "gtceu:cobbleworks"
 				type: "item"
 			}]
-			x: -15.0d
-			y: -19.5d
+			x: -13.5d
+			y: -22.5d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -1317,7 +1312,7 @@
 				item: "gtceu:electric_blast_furnace"
 				type: "item"
 			}]
-			x: -18.0d
+			x: -16.5d
 			y: -24.5d
 		}
 		{
@@ -1328,7 +1323,7 @@
 				item: "gtceu:multi_smelter"
 				type: "item"
 			}]
-			x: -16.5d
+			x: -15.0d
 			y: -24.5d
 		}
 		{
@@ -1423,7 +1418,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
+			x: -9.5d
 			y: -15.5d
 		}
 		{
@@ -1438,7 +1433,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
+			x: -9.5d
 			y: -14.0d
 		}
 		{
@@ -1453,8 +1448,76 @@
 				}
 				type: "item"
 			}]
-			x: -8.5d
-			y: -22.5d
+			x: -11.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["3E1CA9FFB9953F42"]
+			id: "6AF20DCF1401A0FE"
+			tasks: [{
+				id: "45AE3FEB444694C9"
+				item: {
+					Count: 1
+					id: "gtceu:chemical_plant"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -16.5d
+			y: -29.5d
+		}
+		{
+			dependencies: ["1A8F645AC1B30411"]
+			id: "73D10CF0B822A6CB"
+			tasks: [{
+				id: "184E9483C17B914E"
+				item: "gtceu:cyclonic_crystalline_sieve"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"73D10CF0B822A6CB"
+				"5368269646BC0F27"
+			]
+			id: "4AC6C7A39B311413"
+			tasks: [{
+				id: "6AF01DD78C8EC948"
+				item: "gtceu:folding_akreyrium_stabiliser"
+				type: "item"
+			}]
+			x: -14.5d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"4AC6C7A39B311413"
+				"7F203254ACDF8C88"
+			]
+			id: "6375D265594CEE4F"
+			tasks: [{
+				id: "3578BB0D1914EC3D"
+				item: "gtceu:leptonic_convergence_injector"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"6375D265594CEE4F"
+				"7F203254ACDF8C88"
+			]
+			id: "017CEDA75E3D61F2"
+			tasks: [{
+				id: "057AED2EBED05829"
+				item: "gtceu:leptonic_manifold_quantiser"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -14.0d
 		}
 	]
 	title: "Line Of Progression"
