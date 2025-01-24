@@ -570,7 +570,6 @@
 			description: ["Every greg master needs their toolbelt fully stocked to get their first machines ready. We recommend starting with Iron or Wrought Iron tools, or taking a look at the shop!"]
 			hide_dependent_lines: true
 			id: "3D0F6CA8028C074B"
-			optional: true
 			rewards: [{
 				id: "783CFA9C4F222736"
 				item: "kubejs:coin"
@@ -588,6 +587,7 @@
 							value: "forge:tools/hammers"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech hammer"
 					type: "item"
 				}
@@ -600,6 +600,7 @@
 							value: "forge:tools/files"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech file"
 					type: "item"
 				}
@@ -612,6 +613,7 @@
 							value: "forge:tools/screwdrivers"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech screwdriver"
 					type: "item"
 				}
@@ -624,6 +626,7 @@
 							value: "forge:tools/wire_cutters"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech wire cutters"
 					type: "item"
 				}
@@ -636,6 +639,7 @@
 							value: "forge:tools/wrenches"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech wrench"
 					type: "item"
 				}
@@ -648,6 +652,7 @@
 							value: "forge:tools/knives"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech knife"
 					type: "item"
 				}
@@ -660,6 +665,7 @@
 							value: "forge:tools/saws"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech saw"
 					type: "item"
 				}
@@ -672,6 +678,7 @@
 							value: "forge:tools/mortars"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech mortar"
 					type: "item"
 				}
@@ -1876,12 +1883,8 @@
 			description: ["Witch Water can be made in a Wooden Barrel with Mycelium Spores and Water."]
 			id: "7E72B9CC8631769D"
 			rewards: [{
-				id: "3ECEE1F8FECE4082"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				id: "386D329F74361582"
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1944,14 +1947,14 @@
 			]
 			id: "16A9D8E864A18B9E"
 			shape: "diamond"
-			size: 1.5d
+			size: 1.75d
 			tasks: [{
 				id: "1CBDC019CAC3E9C8"
 				title: "Ready, set, go"
 				type: "checkmark"
 			}]
 			title: "Ready, Set, Go"
-			x: -7.0d
+			x: -7.5d
 			y: 1.0d
 		}
 		{

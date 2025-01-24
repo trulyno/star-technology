@@ -1839,7 +1839,7 @@
 			}]
 			tasks: [{
 				id: "3576D69241679C72"
-				item: "gtceu:void_miner"
+				item: "gtceu:void_extractor"
 				type: "item"
 			}]
 			x: 0.5d
