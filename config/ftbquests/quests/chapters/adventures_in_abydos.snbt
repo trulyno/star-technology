@@ -660,6 +660,7 @@
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
+			description: ["By inputting a bacteria you are able to breed then so they multiply and get mutated copies so you can try to find the exact rates you are looking for. Higher mutability means more variance in its output."]
 			id: "6356F875511B2610"
 			rewards: [{
 				id: "6115048882C1189D"
@@ -684,6 +685,7 @@
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
+			description: ["This is how you can extract the bacteria to get the resources you desire"]
 			id: "47DF7968E9B98C65"
 			rewards: [{
 				id: "217E675CB4B89D49"
@@ -708,6 +710,13 @@
 		}
 		{
 			dependencies: ["6F05FAE3F5AAC357"]
+			description: [
+				"This machine can do 3 things."
+				"1. Reactive the Dormant Bacteria to a usable form"
+				"2. Mutate a bacteria so that it may have a new affinity"
+				"3. Mutate a bacteria so that it may be a new type"
+				"With all of this and the breeder (more information there) you should be able to get the exact type of bacteria you desire."
+			]
 			id: "7F72F9E28713D965"
 			rewards: [{
 				count: 2
@@ -920,6 +929,7 @@
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
+			description: ["Find all the fragments to uncover hidden knowledge"]
 			id: "5744150A5658FE4D"
 			rewards: [{
 				id: "615C650D39461500"
@@ -968,6 +978,7 @@
 		}
 		{
 			dependencies: ["5744150A5658FE4D"]
+			description: ["Soon more advanced technology is unveiled"]
 			id: "146F88E5C1119649"
 			rewards: [{
 				id: "2DDF7ACB3920B1DA"

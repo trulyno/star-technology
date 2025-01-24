@@ -62,12 +62,83 @@
 	quests: [
 		{
 			dependencies: ["26D3E2C0599B43B2"]
+			icon: "minecraft:dirt"
 			id: "5593854C5DCF34E7"
-			tasks: [{
-				id: "6071867156639965"
-				item: "minecraft:dirt"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6071867156639965"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					id: "753D3AB1A1D8A87C"
+					item: "minecraft:sweet_berries"
+					type: "item"
+				}
+				{
+					id: "3159704C8155C99E"
+					item: "minecraft:cocoa_beans"
+					type: "item"
+				}
+				{
+					id: "566027758150CAEB"
+					item: "minecraft:sunflower"
+					type: "item"
+				}
+				{
+					id: "21979C345EF71E28"
+					item: "minecraft:cactus"
+					type: "item"
+				}
+				{
+					id: "26857684C04EE92D"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Saplings\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:cherry_sapling"
+								}
+								{
+									Count: 1b
+									id: "minecraft:dark_oak_sapling"
+								}
+								{
+									Count: 1b
+									id: "minecraft:acacia_sapling"
+								}
+								{
+									Count: 1b
+									id: "minecraft:jungle_sapling"
+								}
+								{
+									Count: 1b
+									id: "minecraft:birch_sapling"
+								}
+								{
+									Count: 1b
+									id: "minecraft:spruce_sapling"
+								}
+								{
+									Count: 1b
+									id: "minecraft:oak_sapling"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "70A2B9AE09460081"
+					item: "minecraft:rooted_dirt"
+					type: "item"
+				}
+			]
 			title: "Dirt Sieving"
 			x: -9.5d
 			y: -9.5d
@@ -77,12 +148,55 @@
 				"26D3E2C0599B43B2"
 				"5593854C5DCF34E7"
 			]
+			icon: "minecraft:rooted_dirt"
 			id: "76DBCFE9856D072E"
-			tasks: [{
-				id: "79077878A7379445"
-				item: "minecraft:rooted_dirt"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "79077878A7379445"
+					item: "minecraft:rooted_dirt"
+					type: "item"
+				}
+				{
+					id: "25A03B9167D26FF2"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					id: "0588BDEE5331BAF1"
+					item: "exnihilosequentia:grass_seeds"
+					type: "item"
+				}
+				{
+					id: "13A314843F6B32BA"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					id: "2E0F40ECB263448B"
+					item: "minecraft:beetroot_seeds"
+					type: "item"
+				}
+				{
+					id: "5FFA1315CC515698"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					id: "0C1FCC83CE8AA47F"
+					item: "farmersdelight:rice_panicle"
+					type: "item"
+				}
+				{
+					id: "77BDCDBDF1A8E901"
+					item: "thermal:flax_seeds"
+					type: "item"
+				}
+				{
+					id: "394EBB91B1635DF2"
+					item: "minecraft:bamboo"
+					type: "item"
+				}
+			]
 			title: "Rooted Dirt Sieving"
 			x: -9.0d
 			y: -10.5d

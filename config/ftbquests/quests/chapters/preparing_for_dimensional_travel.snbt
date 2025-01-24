@@ -787,6 +787,7 @@
 		}
 		{
 			dependencies: ["6D169C5E35C9EF6C"]
+			description: ["Try a variety of singularities so that you don't drain yourself of 1 material"]
 			id: "0508AE03C730BE6C"
 			rewards: [{
 				id: "2B9821F0ED86771C"

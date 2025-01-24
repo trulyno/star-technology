@@ -48,6 +48,7 @@ ServerEvents.recipes(event => {
     sieve('string', 0.10, dirt, 'minecraft:sweet_berries', false);
     sieve('string', 0.05, dirt, 'minecraft:cocoa_beans', false);
     sieve('string', 0.075, dirt, 'minecraft:oak_sapling', false);
+    sieve('string', 0.075, dirt, 'minecraft:cherry_sapling', false);
     sieve('string', 0.075, dirt, 'minecraft:spruce_sapling', false);
     sieve('string', 0.075, dirt, 'minecraft:birch_sapling', false);
     sieve('string', 0.075, dirt, 'minecraft:jungle_sapling', false);
