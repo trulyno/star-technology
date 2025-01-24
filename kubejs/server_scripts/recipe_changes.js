@@ -586,5 +586,17 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
         if (Math.random() < 0.5) {
             event.block.popItemFromFace(Item.of('exnihilosequentia:diorite_pebble'), 'up');
         }
-    }
+    } 
+});
+
+ServerEvents.tags('block', event => {
+    event.remove('mineable/pickaxe', [
+        'gtceu:ulv_barrel'
+    ]);
+    event.add('mineable/axe', [
+        'gtceu:ulv_barrel'
+    ]);
+    event.add('mineable/pickaxe', [
+        'travelanchors:travel_anchor'
+    ]);
 });
