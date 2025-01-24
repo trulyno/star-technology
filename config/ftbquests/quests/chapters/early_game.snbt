@@ -1876,12 +1876,8 @@
 			description: ["Witch Water can be made in a Wooden Barrel with Mycelium Spores and Water."]
 			id: "7E72B9CC8631769D"
 			rewards: [{
-				id: "3ECEE1F8FECE4082"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				id: "386D329F74361582"
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
