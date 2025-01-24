@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "kubejs:block/casings/inscribe_casing_base",
+    "side": "kubejs:block/casings/inscribe_casing_side"
+  }
+}
