@@ -83,7 +83,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3594628E8316824E"]
@@ -95,7 +95,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["307B93E1431087D0"]
@@ -107,7 +107,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6672296A6740F5B8"]
@@ -119,7 +119,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["479A121A74E2DE4F"]
@@ -131,7 +131,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3594628E8316824E"]
@@ -143,7 +143,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["307B93E1431087D0"]
@@ -155,7 +155,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6672296A6740F5B8"]
@@ -167,7 +167,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["479A121A74E2DE4F"]
@@ -179,7 +179,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["69768541E12842D1"]
@@ -191,7 +191,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["19359B2E2AAB2C39"]
@@ -335,8 +335,8 @@
 				item: "expatternprovider:ingredient_buffer"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["369E90E2807E6776"]
@@ -489,8 +489,8 @@
 				item: "ae2:crafting_accelerator"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -3.5d
+			x: 6.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["369E90E2807E6776"]
@@ -500,8 +500,8 @@
 				item: "aeinfinitybooster:infinity_card"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 0.5d
+			x: 10.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0857719A983AF19F"]
@@ -636,7 +636,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["15609A10132FC49C"]
@@ -648,7 +648,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["29FCED9F85FB2882"]
@@ -660,7 +660,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3CFA9E13D95178D6"]
@@ -672,7 +672,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["15609A10132FC49C"]
@@ -683,7 +683,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["29FCED9F85FB2882"]
@@ -694,7 +694,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3CFA9E13D95178D6"]
@@ -705,7 +705,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["07CB8E78FF4461BB"]
@@ -716,7 +716,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4E5B71A2D89CAC2B"]
@@ -727,7 +727,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["07CB8E78FF4461BB"]
@@ -739,7 +739,18 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2B09CAD05ECD8A96"]
+			id: "7CD817B97E2F8D3E"
+			tasks: [{
+				id: "46B6E010F79CC1FC"
+				item: "megacells:mega_crafting_accelerator"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
 		}
 	]
 	title: "Applied Energistics"

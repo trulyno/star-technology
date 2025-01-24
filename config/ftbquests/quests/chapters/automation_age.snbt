@@ -2274,7 +2274,7 @@
 		{
 			dependencies: ["3B2D79D40B9617D5"]
 			description: [
-				"The Nuclear Reactor allows for easy recipes when making Uranium-235 and Plutonium-239, and also functions as quite a powerful energy generator, capable of producing 8 EV amps, or 2 IV amps at once. "
+				"The Nuclear Reactor allows for easy recipes when making Uranium-235, Plutonium-239, and Plutonium-241. Additionally, it also functions as quite a powerful energy generator, capable of producing 8 EV amps, or 2 IV amps at once. "
 				"This does mean you need either a 16A EV or 4A IV dynamo hatch."
 			]
 			id: "68865F1DDBFFFACE"

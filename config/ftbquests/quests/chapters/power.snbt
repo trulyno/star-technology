@@ -1691,6 +1691,67 @@
 			x: -3.5d
 			y: -6.0d
 		}
+		{
+			dependencies: ["7DDFBCDFC3F09A6B"]
+			description: ["Each tier of rotor holder up on top of its inherent 10% efficiency bonus ([1-.1] or .9 or 90% fuel consumption), each tier up doubles consumption and power giving you a 2x energy output for 1.8x more fuel. It is always worth it if you can supply enough fuel."]
+			id: "344260A6F9D36843"
+			tasks: [{
+				id: "04DD118048A34595"
+				title: "Rotor Holder OCs"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["344260A6F9D36843"]
+			id: "754D5D2F2D109193"
+			tasks: [{
+				id: "42CCF2CFC2C51426"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Rotor Holders\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hv_rotor_holder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_rotor_holder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_rotor_holder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_rotor_holder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_rotor_holder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_rotor_holder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_rotor_holder"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -6.0d
+		}
 	]
 	title: "Power"
 }
