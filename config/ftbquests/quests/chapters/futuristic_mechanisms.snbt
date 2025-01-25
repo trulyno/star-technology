@@ -567,6 +567,11 @@
 				"64033BFF2EAE4FDB"
 				"023794367F1B28D1"
 			]
+			description: [
+				"Smash elements to get more powerful materials"
+				""
+				"Fusion Glass isn't a horrible idea"
+			]
 			id: "67ABB3BF6D0C183B"
 			rewards: [{
 				count: 2
