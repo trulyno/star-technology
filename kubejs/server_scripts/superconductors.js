@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer('signalum_dust')
         .itemInputs('gtceu:silver_dust', '3x gtceu:copper_dust', '4x minecraft:redstone')
-        .itemOutputs('4x gtceu:signalum_dust')
+        .itemOutputs('4x gtceu:signalum_dust') .circuit(3)
         .duration(300)
         .EUt(20);
 
