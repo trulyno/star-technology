@@ -365,21 +365,25 @@
 				{
 					id: "3F80F7835E93BC00"
 					item: "minecraft:copper_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "6CF4D62C1F903901"
 					item: "gtceu:tin_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "0209FE8B6FDF44FA"
 					item: "minecraft:redstone"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "284EE6BC65BCEE0C"
 					item: "gtceu:sulfur_dust"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1987,7 +1991,7 @@
 			]
 			title: "Mixing Dusts"
 			x: 3.0d
-			y: -2.75d
+			y: -3.0d
 		}
 		{
 			dependencies: ["124EDCAB18E85B9D"]
