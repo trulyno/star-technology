@@ -912,6 +912,7 @@
 		{
 			can_repeat: true
 			dependencies: ["66D2FB63E81E03AB"]
+			icon: "minecraft:sand"
 			id: "5097F10D8D36FEB7"
 			optional: true
 			rewards: [{
@@ -1758,6 +1759,7 @@
 		{
 			dependencies: ["2EDE996312B1C69E"]
 			description: ["How did you break /spawn AND /home????????"]
+			icon: "minecraft:red_bed"
 			id: "481D42E3473FDCED"
 			optional: true
 			tasks: [{
@@ -1771,6 +1773,7 @@
 		{
 			can_repeat: true
 			dependencies: ["2EDE996312B1C69E"]
+			icon: "ae2:singularity"
 			id: "57246BEEC82C5E15"
 			optional: true
 			rewards: [{

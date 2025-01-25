@@ -1248,6 +1248,7 @@
 		{
 			can_repeat: true
 			dependencies: ["29DAE5F27A1D4115"]
+			icon: "minecraft:netherrack"
 			id: "6F28C09E9576D46C"
 			optional: true
 			rewards: [{
@@ -1332,6 +1333,7 @@
 		{
 			can_repeat: true
 			dependencies: ["14479FB9FCF478D6"]
+			icon: "minecraft:end_stone"
 			id: "46436EB33C1F5816"
 			optional: true
 			rewards: [{
@@ -1514,6 +1516,7 @@
 		{
 			dependencies: ["47DF7968E9B98C65"]
 			description: ["Mutate and Breed Bacteria to fit you needs and help you gather all the hydrocarbons you could need."]
+			icon: "gtceu:ethylbenzene_bucket"
 			id: "2F91771A1872EB4E"
 			optional: true
 			tasks: [{
@@ -1527,6 +1530,7 @@
 		{
 			dependencies: ["2659B3AA9108BC43"]
 			description: ["With the \"Exotic Gas Siphon\" you are able to do all of Air distilation in 1 step or gather immense amounts of gas at once."]
+			icon: "gtceu:radon_bucket"
 			id: "6CCC111235D6CE5B"
 			optional: true
 			tasks: [{

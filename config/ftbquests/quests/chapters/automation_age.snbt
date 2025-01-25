@@ -2319,6 +2319,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["In the Mechanics Page many important notes about Gregtech in particular can be found."]
+			icon: "ftbquests:book"
 			id: "775AAF108AFAF707"
 			tasks: [{
 				id: "39A4828A672AE4A1"

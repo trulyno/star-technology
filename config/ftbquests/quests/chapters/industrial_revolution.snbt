@@ -1900,6 +1900,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["Iron (III) Chloride or Sodium Persulfate Quest Completion"]
+			icon: "gtceu:sodium_bisulfate_dust"
 			id: "3A20504009C70217"
 			tasks: [{
 				id: "633C63725D58A795"
@@ -1911,6 +1912,7 @@
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
+			icon: "gtceu:raw_sodalite"
 			id: "7CA424E05FB05DFF"
 			subtitle: "Go Check Out other Questbook Pages"
 			tasks: [{
@@ -1938,6 +1940,7 @@
 				"16A71D038D996289"
 				"0A98FE21C12F1199"
 			]
+			icon: "ae2:fluix_glass_cable"
 			id: "352E17B4D7719638"
 			tasks: [{
 				id: "724697297E01E6F0"
@@ -2025,6 +2028,20 @@
 			title: "RAM Chips"
 			x: 8.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["53E98CFC7934FA67"]
+			description: ["Go look at the \"Power\" chapter of the questbook to see what other options exist for power."]
+			icon: "gtceu:tin_quadruple_cable"
+			id: "36BE4A7635DF3A1B"
+			optional: true
+			tasks: [{
+				id: "265FCE0A1D58491A"
+				title: "Go Check Out the \"Power\" Chapter"
+				type: "checkmark"
+			}]
+			x: -15.5d
+			y: 0.5d
 		}
 	]
 	title: "Industrial Revolution"
