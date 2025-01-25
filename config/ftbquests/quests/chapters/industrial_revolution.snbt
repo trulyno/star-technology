@@ -1798,7 +1798,7 @@
 				""
 				"You'll want 2 output busses to have enough room for the Geodes"
 				""
-				"Keep in mind you can only have 1 energy hatch on the machine."
+				"Keep in mind you can only have 1 energy hatch on the machine. Make sure to have enough output space: 2 LV Output Busses will work."
 			]
 			id: "5F80268C02FAD5F6"
 			rewards: [{
@@ -1825,7 +1825,7 @@
 				""
 				"Make sure to save the liquids for later as you can get more and rarer materials."
 				""
-				"This machine can only take 1 energy hatch."
+				"This machine can only take 1 energy hatch. Also make sure you have enough output space: 2 LV Output Busses, and 2 LV Output Hatches will do the trick."
 			]
 			id: "30B2688F8387048F"
 			rewards: [{
