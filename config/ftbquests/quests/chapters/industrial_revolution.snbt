@@ -1803,11 +1803,7 @@
 			id: "5F80268C02FAD5F6"
 			rewards: [{
 				id: "170D10B336CA9B51"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1830,11 +1826,7 @@
 			id: "30B2688F8387048F"
 			rewards: [{
 				id: "4B6770AF03D1B85C"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1850,11 +1842,7 @@
 			id: "4597B95C2F5EE106"
 			rewards: [{
 				id: "663D16B1BCB3CB2C"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1874,11 +1862,7 @@
 			id: "12DA5E8FA3E11AC0"
 			rewards: [{
 				id: "1D01CDEB4254326A"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{

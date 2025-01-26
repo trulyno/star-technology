@@ -2007,11 +2007,7 @@
 			id: "6D23752791E9928A"
 			rewards: [{
 				id: "4F45102228F42D4D"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{

@@ -21,11 +21,7 @@
 			rewards: [{
 				count: 2
 				id: "6B546AB752B83ABC"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -47,11 +43,7 @@
 			id: "50835055C3D1050C"
 			rewards: [{
 				id: "49DA44A12F573352"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -68,11 +60,7 @@
 			rewards: [{
 				count: 2
 				id: "6B0A97854CBB59A1"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -91,11 +79,7 @@
 			rewards: [{
 				count: 2
 				id: "1E040F3B6F4948C9"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -113,11 +97,7 @@
 			id: "3ECCE739DE8F5F2C"
 			rewards: [{
 				id: "3DA5E57A968DB4AE"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -136,11 +116,7 @@
 			id: "5C39B74171CC21F9"
 			rewards: [{
 				id: "0183789A1E5AA702"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -163,11 +139,7 @@
 			id: "11D51899B980082B"
 			rewards: [{
 				id: "2E474FF058F620B3"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -183,11 +155,7 @@
 			id: "44B43694312BAAC8"
 			rewards: [{
 				id: "439C3636390FF949"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -206,11 +174,7 @@
 			id: "581B9922CC4B457F"
 			rewards: [{
 				id: "354EE1013EA404DB"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -226,11 +190,7 @@
 			id: "27E656FA93E2A1F4"
 			rewards: [{
 				id: "2FC0A2A1510D510B"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -249,11 +209,7 @@
 			id: "2BAE934A80152FA1"
 			rewards: [{
 				id: "3B236DC697D26949"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -269,11 +225,7 @@
 			id: "43A620DF574E2488"
 			rewards: [{
 				id: "398FDD5437034960"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -289,11 +241,7 @@
 			id: "745470CF31319CAA"
 			rewards: [{
 				id: "70A2BDF175884640"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -309,11 +257,7 @@
 			id: "3FE0B664F2D15942"
 			rewards: [{
 				id: "01E1C3C603E976E8"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -330,11 +274,7 @@
 			rewards: [{
 				count: 2
 				id: "7E64A0FD0377ABAC"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -352,11 +292,7 @@
 			id: "0F7A1EA1AB52F795"
 			rewards: [{
 				id: "42D6FB3B7E75DE20"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -375,11 +311,7 @@
 			id: "0889A97E22C484CC"
 			rewards: [{
 				id: "515734ACECDB08A0"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -395,11 +327,7 @@
 			id: "60ECE277341A9408"
 			rewards: [{
 				id: "23F129E3F9D9FFE1"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -419,11 +347,7 @@
 			rewards: [{
 				count: 2
 				id: "45A0DE263D7BBCA1"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -444,11 +368,7 @@
 			id: "027C5CE3CFCB5649"
 			rewards: [{
 				id: "32443F1B809654D6"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -467,11 +387,7 @@
 			id: "5E9936C099FF589C"
 			rewards: [{
 				id: "05AE9E61C946D871"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -492,11 +408,7 @@
 			id: "239A0034C8425661"
 			rewards: [{
 				id: "3F68400BC1C19CFF"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [
@@ -520,11 +432,7 @@
 			id: "1C515302A357B1B8"
 			rewards: [{
 				id: "7DDE8773170387CB"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -540,11 +448,7 @@
 			id: "5C3AF136913CF8BE"
 			rewards: [{
 				id: "4AC09D2CB06E6B4B"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -560,11 +464,7 @@
 			id: "3B85A08B2E08C6FC"
 			rewards: [{
 				id: "31146EC2D33D4B75"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -585,11 +485,7 @@
 			rewards: [{
 				count: 2
 				id: "272B5C381C3B2C9E"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -608,11 +504,7 @@
 			id: "10D78E10735CD210"
 			rewards: [{
 				id: "3A14DEA6D1AA0502"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -632,11 +524,7 @@
 			rewards: [{
 				count: 2
 				id: "73D4DBCF3C2B1167"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -654,11 +542,7 @@
 			id: "622066696CCF9754"
 			rewards: [{
 				id: "17C57D476BB71F90"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -674,11 +558,7 @@
 			id: "52B553FDB34B1475"
 			rewards: [{
 				id: "0A7609C4179CF5A2"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -698,11 +578,7 @@
 			id: "253AECE450920D99"
 			rewards: [{
 				id: "70C887ECBA6B4542"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -718,11 +594,7 @@
 			id: "55102B0E5D0238E1"
 			rewards: [{
 				id: "664E3AF7B9872F12"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -742,11 +614,7 @@
 			rewards: [{
 				count: 2
 				id: "7B42B832CC2566A1"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -768,11 +636,7 @@
 			rewards: [{
 				count: 2
 				id: "5C62D9BF0BF46FAC"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -791,11 +655,7 @@
 			id: "0508AE03C730BE6C"
 			rewards: [{
 				id: "2B9821F0ED86771C"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [
@@ -819,11 +679,7 @@
 			id: "59711F987DE95924"
 			rewards: [{
 				id: "1B33E52F7FEAD5E8"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -840,11 +696,7 @@
 			id: "7FFCAD92772A175F"
 			rewards: [{
 				id: "41645C4A24DF3CD2"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -866,11 +718,7 @@
 			rewards: [{
 				count: 5
 				id: "1887167E5082E04E"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -940,11 +788,7 @@
 			rewards: [{
 				count: 2
 				id: "60330B0E11A279F1"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -962,11 +806,7 @@
 			id: "66D2FB63E81E03AB"
 			rewards: [{
 				id: "37AFE192D0BE0925"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			size: 1.0d
@@ -984,11 +824,7 @@
 			rewards: [{
 				count: 2
 				id: "6BAC26EAB6E1C58F"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -1006,11 +842,7 @@
 			id: "7A38469EAAABEAAE"
 			rewards: [{
 				id: "4262C7EF00DC2805"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			size: 1.0d
@@ -1028,11 +860,7 @@
 			id: "664F435508073B8E"
 			rewards: [{
 				id: "5170CA1F3DC88A00"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			size: 1.0d
@@ -1050,11 +878,7 @@
 			optional: true
 			rewards: [{
 				id: "173AE84D06BE0BF0"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			size: 1.0d
@@ -1072,11 +896,7 @@
 			optional: true
 			rewards: [{
 				id: "014A406ABD674F80"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			size: 1.0d
@@ -1094,11 +914,7 @@
 			id: "1FB502D770A4A59B"
 			rewards: [{
 				id: "443DDB7EE2F5F57B"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "octagon"
@@ -1119,11 +935,7 @@
 			rewards: [{
 				count: 2
 				id: "6D48716D5CB32355"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -1144,11 +956,7 @@
 			id: "70D35B4C1D6A143D"
 			rewards: [{
 				id: "3B90C26F72F5A63B"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "octagon"
@@ -1169,11 +977,7 @@
 			id: "433E2BCC63E779AF"
 			rewards: [{
 				id: "3D4753FAE4D98706"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "octagon"
@@ -1194,11 +998,7 @@
 			id: "5C7A92625D07C55D"
 			rewards: [{
 				id: "398ACC54F4F42715"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "octagon"
@@ -1217,11 +1017,7 @@
 			rewards: [{
 				count: 2
 				id: "54C194A9B0DB2A89"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -1637,11 +1433,7 @@
 			id: "2D713622FA2D6FCA"
 			rewards: [{
 				id: "1C8DB8447086E212"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1657,11 +1449,7 @@
 			id: "1C81273869C0EC9F"
 			rewards: [{
 				id: "32925D70150DF477"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1682,11 +1470,7 @@
 			id: "4DE40B37D609B921"
 			rewards: [{
 				id: "1FC4FEA09C39C1E4"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1710,11 +1494,7 @@
 			id: "4F6B1F4261874B65"
 			rewards: [{
 				id: "4CF383A332D3E16B"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{

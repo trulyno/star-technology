@@ -770,11 +770,7 @@
 			rewards: [{
 				count: 2
 				id: "4741EA9D2EA236FC"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -2165,11 +2161,7 @@
 			id: "689150D2A185216C"
 			rewards: [{
 				id: "0E893C06186BCA22"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -2332,9 +2324,9 @@
 		{
 			id: "56B0A897E7C7C25C"
 			invisible: true
+			optional: true
 			tasks: [{
 				id: "02A369FF9CB41D88"
-				optional_task: true
 				title: "positioner"
 				type: "checkmark"
 			}]
