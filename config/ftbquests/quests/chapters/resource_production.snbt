@@ -1612,6 +1612,7 @@
 			invisible: true
 			tasks: [{
 				id: "78581BF782B594DE"
+				optional_task: true
 				type: "checkmark"
 			}]
 			x: 1.0d

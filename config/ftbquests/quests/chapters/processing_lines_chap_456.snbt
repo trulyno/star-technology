@@ -2333,6 +2333,7 @@
 			invisible: true
 			tasks: [{
 				id: "1DF81F94D45BC87C"
+				optional_task: true
 				title: "postioner"
 				type: "checkmark"
 			}]
