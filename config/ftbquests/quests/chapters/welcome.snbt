@@ -202,6 +202,7 @@
 		{
 			id: "38D8AFED26B5D252"
 			invisible: true
+			optional: true
 			tasks: [{
 				id: "2A47E38B1F508C78"
 				title: "positioner"
