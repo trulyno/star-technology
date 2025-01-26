@@ -1877,6 +1877,7 @@
 						id: "gtceu:sulfuric_gas_bucket"
 						tag: { }
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
