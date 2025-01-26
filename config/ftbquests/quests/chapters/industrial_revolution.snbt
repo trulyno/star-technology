@@ -1151,7 +1151,7 @@
 		{
 			dependencies: [
 				"79AA3AF63E976038"
-				"12C9427A04A2F550"
+				"7EC83EEF3F7A89B8"
 			]
 			description: ["These can be used to overclock your EBF again, this time to HV."]
 			id: "0A03B4D352DCF148"
