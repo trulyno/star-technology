@@ -365,21 +365,25 @@
 				{
 					id: "3F80F7835E93BC00"
 					item: "minecraft:copper_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "6CF4D62C1F903901"
 					item: "gtceu:tin_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "0209FE8B6FDF44FA"
 					item: "minecraft:redstone"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "284EE6BC65BCEE0C"
 					item: "gtceu:sulfur_dust"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -570,7 +574,6 @@
 			description: ["Every greg master needs their toolbelt fully stocked to get their first machines ready. We recommend starting with Iron or Wrought Iron tools, or taking a look at the shop!"]
 			hide_dependent_lines: true
 			id: "3D0F6CA8028C074B"
-			optional: true
 			rewards: [{
 				id: "783CFA9C4F222736"
 				item: "kubejs:coin"
@@ -588,6 +591,7 @@
 							value: "forge:tools/hammers"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech hammer"
 					type: "item"
 				}
@@ -600,6 +604,7 @@
 							value: "forge:tools/files"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech file"
 					type: "item"
 				}
@@ -612,6 +617,7 @@
 							value: "forge:tools/screwdrivers"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech screwdriver"
 					type: "item"
 				}
@@ -624,6 +630,7 @@
 							value: "forge:tools/wire_cutters"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech wire cutters"
 					type: "item"
 				}
@@ -636,6 +643,7 @@
 							value: "forge:tools/wrenches"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech wrench"
 					type: "item"
 				}
@@ -648,6 +656,7 @@
 							value: "forge:tools/knives"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech knife"
 					type: "item"
 				}
@@ -660,6 +669,7 @@
 							value: "forge:tools/saws"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech saw"
 					type: "item"
 				}
@@ -672,6 +682,7 @@
 							value: "forge:tools/mortars"
 						}
 					}
+					optional_task: true
 					title: "Any GregTech mortar"
 					type: "item"
 				}
@@ -819,23 +830,6 @@
 			shape: "gear"
 			size: 1.5d
 			tasks: [
-				{
-					count: 68L
-					id: "2D4FDA63648490E5"
-					item: { Count: 68, id: "gtceu:clay_dust" }
-					type: "item"
-				}
-				{
-					count: 68L
-					id: "2A9535B1E5276702"
-					item: { Count: 68, id: "gtceu:brick_dust" }
-					type: "item"
-				}
-				{
-					id: "5B377DAE10F60C4E"
-					item: "gtceu:brick_wooden_form"
-					type: "item"
-				}
 				{
 					count: 32L
 					id: "0B97B97EE13093E6"
@@ -1294,13 +1288,15 @@
 				{
 					count: 117L
 					id: "15750A87548FE72A"
-					item: { Count: 117, id: "minecraft:clay_ball" }
+					item: "minecraft:clay_ball"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 195L
 					id: "40F13AF4677B4846"
-					item: { Count: 195, id: "minecraft:sand" }
+					item: "minecraft:sand"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1317,6 +1313,7 @@
 				{
 					id: "02BCD1D1A603C9F5"
 					item: "gtceu:coke_oven_hatch"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1876,12 +1873,8 @@
 			description: ["Witch Water can be made in a Wooden Barrel with Mycelium Spores and Water."]
 			id: "7E72B9CC8631769D"
 			rewards: [{
-				id: "3ECEE1F8FECE4082"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				id: "386D329F74361582"
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1939,19 +1932,21 @@
 				"&5-&r Mechanics: A small chapter explaining some GregTech mechanics"
 				"&5-&r Processing Lines: This is a chapter explaining complicated processing lines"
 				"&5-&r Line of Progression: This chapter shows you all multiblocks and tiered items"
-				"&5-&r Resource Production: This chapter shows you have to get MOST of the raw resources you will need"
+				"&5-&r Resource Production: This chapter shows you how to get MOST of the raw resources you will need"
 				"&5-&r Quality of Life: This chapter unveils some helpful mods and features that exist to make the pack more enjoyable"
+				""
+				"If a Quest doesn't load/register try rejoining"
 			]
 			id: "16A9D8E864A18B9E"
 			shape: "diamond"
-			size: 1.5d
+			size: 1.75d
 			tasks: [{
 				id: "1CBDC019CAC3E9C8"
 				title: "Ready, set, go"
 				type: "checkmark"
 			}]
 			title: "Ready, Set, Go"
-			x: -7.0d
+			x: -7.5d
 			y: 1.0d
 		}
 		{
@@ -1984,7 +1979,7 @@
 			]
 			title: "Mixing Dusts"
 			x: 3.0d
-			y: -2.75d
+			y: -3.0d
 		}
 		{
 			dependencies: ["124EDCAB18E85B9D"]
@@ -2012,11 +2007,7 @@
 			id: "6D23752791E9928A"
 			rewards: [{
 				id: "4F45102228F42D4D"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -2030,21 +2021,46 @@
 		{
 			dependencies: ["2D1184752D7ACA66"]
 			description: ["The building-block of any primitive machine."]
+			icon: "gtceu:firebrick"
 			id: "64E79272B5003119"
 			rewards: [{
 				id: "1BBAAE25155FB3DC"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "16F78BE1CAEEA2A5"
-				item: {
-					Count: 1
-					id: "gtceu:firebrick"
-					tag: { }
+			tasks: [
+				{
+					id: "3216E0FD84BB7612"
+					item: "gtceu:clay_dust"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "2B353CB2C0E4E949"
+					item: "gtceu:brick_dust"
+					type: "item"
+				}
+				{
+					id: "0E04C20541C6A0BD"
+					item: "gtceu:fireclay_dust"
+					type: "item"
+				}
+				{
+					id: "66F85A6CFEB79EE0"
+					item: "gtceu:compressed_fireclay"
+					type: "item"
+				}
+				{
+					id: "3905C6993800066B"
+					item: "gtceu:brick_wooden_form"
+					type: "item"
+				}
+				{
+					id: "7C4D053CA360D4A2"
+					item: "gtceu:firebrick"
+					type: "item"
+				}
+			]
+			title: "Firebrick"
 			x: 0.0d
 			y: 2.5d
 		}

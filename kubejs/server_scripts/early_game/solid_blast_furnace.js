@@ -68,8 +68,8 @@ ServerEvents.recipes(event => {
 
     //Bessemer Steel
     const coalType = ['coal','charcoal']
-    ironType('minecraft:iron',900,'iron',5/6)
-    ironType('gtceu:wrought_iron',400,'wrought_iron',3/4)
+    ironType('minecraft:iron',720,'iron',5/6)
+    ironType('gtceu:wrought_iron',320,'wrought_iron',3/4)
     function ironType(FeType,baseTime,naming,cokeScaler){
     coalType.forEach(coal => {
         event.recipes.gtceu.bessemer_blast_furnace(`${naming}_${coal}_to_steel_dust`)

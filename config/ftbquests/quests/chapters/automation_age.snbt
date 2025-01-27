@@ -312,7 +312,11 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["250C897A70DB797F"]
+			dependencies: [
+				"261174370DC87FCB"
+				"250C897A70DB797F"
+			]
+			dependency_requirement: "one_completed"
 			description: ["Better Circuits means better Circuit boards"]
 			id: "41D5FABA8D0BB0AC"
 			rewards: [{
@@ -770,11 +774,7 @@
 			rewards: [{
 				count: 2
 				id: "4741EA9D2EA236FC"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -2165,11 +2165,7 @@
 			id: "689150D2A185216C"
 			rewards: [{
 				id: "0E893C06186BCA22"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -2319,6 +2315,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["In the Mechanics Page many important notes about Gregtech in particular can be found."]
+			icon: "ftbquests:book"
 			id: "775AAF108AFAF707"
 			tasks: [{
 				id: "39A4828A672AE4A1"
@@ -2331,6 +2328,7 @@
 		{
 			id: "56B0A897E7C7C25C"
 			invisible: true
+			optional: true
 			tasks: [{
 				id: "02A369FF9CB41D88"
 				title: "positioner"

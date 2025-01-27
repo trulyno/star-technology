@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         
         //Component Parts
         event.recipes.gtceu.component_part_assembly(`kubejs:${tier}_voltage_coil`)
-            .itemInputs(`gtceu:${main_material}_tiny_fluid_pipe`,`gtceu:long_magnetic_${magnetic1}_rod`, `16x gtceu:fine_${vcoil}_wire`, `kubejs:${tier1Under}_super_magnetic_core`)
+            .itemInputs(`gtceu:${main_material}_tiny_fluid_pipe`,`gtceu:long_magnetic_${magnetic1}_rod`, `16x gtceu:fine_${vcoil}_wire`)
             .inputFluids('gtceu:liquid_helium 1000')
             .itemOutputs(`kubejs:${tier}_voltage_coil`)
             .duration(200)

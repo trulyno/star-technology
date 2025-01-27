@@ -207,7 +207,7 @@
 		}
 		{
 			dependencies: ["523F20DC5FA04229"]
-			description: ["This can crush Blackstone, and a bunch of other things."]
+			description: ["This can crush down all the things you'll need, keep in mind you'll need one at HV to get the byproducts."]
 			id: "39F4B61B17304481"
 			rewards: [{
 				id: "3D6F3F6B21B141CC"
@@ -1151,7 +1151,7 @@
 		{
 			dependencies: [
 				"79AA3AF63E976038"
-				"12C9427A04A2F550"
+				"7EC83EEF3F7A89B8"
 			]
 			description: ["These can be used to overclock your EBF again, this time to HV."]
 			id: "0A03B4D352DCF148"
@@ -1798,16 +1798,12 @@
 				""
 				"You'll want 2 output busses to have enough room for the Geodes"
 				""
-				"Keep in mind you can only have 1 energy hatch on the machine."
+				"Keep in mind you can only have 1 energy hatch on the machine. Make sure to have enough output space: 2 LV Output Busses will work."
 			]
 			id: "5F80268C02FAD5F6"
 			rewards: [{
 				id: "170D10B336CA9B51"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1825,21 +1821,17 @@
 				""
 				"Make sure to save the liquids for later as you can get more and rarer materials."
 				""
-				"This machine can only take 1 energy hatch."
+				"This machine can only take 1 energy hatch. Also make sure you have enough output space: 2 LV Output Busses, and 2 LV Output Hatches will do the trick."
 			]
 			id: "30B2688F8387048F"
 			rewards: [{
 				id: "4B6770AF03D1B85C"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
 				id: "3576D69241679C72"
-				item: "gtceu:void_miner"
+				item: "gtceu:void_extractor"
 				type: "item"
 			}]
 			x: 0.5d
@@ -1850,11 +1842,7 @@
 			id: "4597B95C2F5EE106"
 			rewards: [{
 				id: "663D16B1BCB3CB2C"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1874,11 +1862,7 @@
 			id: "12DA5E8FA3E11AC0"
 			rewards: [{
 				id: "1D01CDEB4254326A"
-				item: {
-					Count: 1
-					id: "kubejs:coin"
-					tag: { }
-				}
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1900,6 +1884,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["Iron (III) Chloride or Sodium Persulfate Quest Completion"]
+			icon: "gtceu:sodium_bisulfate_dust"
 			id: "3A20504009C70217"
 			tasks: [{
 				id: "633C63725D58A795"
@@ -1911,6 +1896,7 @@
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
+			icon: "gtceu:raw_sodalite"
 			id: "7CA424E05FB05DFF"
 			subtitle: "Go Check Out other Questbook Pages"
 			tasks: [{
@@ -1938,6 +1924,7 @@
 				"16A71D038D996289"
 				"0A98FE21C12F1199"
 			]
+			icon: "ae2:fluix_glass_cable"
 			id: "352E17B4D7719638"
 			tasks: [{
 				id: "724697297E01E6F0"
@@ -2025,6 +2012,20 @@
 			title: "RAM Chips"
 			x: 8.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["53E98CFC7934FA67"]
+			description: ["Go look at the \"Power\" chapter of the questbook to see what other options exist for power."]
+			icon: "gtceu:tin_quadruple_cable"
+			id: "36BE4A7635DF3A1B"
+			optional: true
+			tasks: [{
+				id: "265FCE0A1D58491A"
+				title: "Go Check Out the \"Power\" Chapter"
+				type: "checkmark"
+			}]
+			x: -15.5d
+			y: 0.5d
 		}
 	]
 	title: "Industrial Revolution"

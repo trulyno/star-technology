@@ -1610,8 +1610,10 @@
 		{
 			id: "4271ED1F225983D3"
 			invisible: true
+			optional: true
 			tasks: [{
 				id: "78581BF782B594DE"
+				title: "Positioner"
 				type: "checkmark"
 			}]
 			x: 1.0d
@@ -1876,6 +1878,7 @@
 						id: "gtceu:sulfuric_gas_bucket"
 						tag: { }
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
