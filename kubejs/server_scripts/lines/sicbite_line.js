@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:carbon_dioxide')
         .blastFurnaceTemp(2000)
         .duration(500)
-        .circuit(2)
+        .circuit(3)
         .EUt(GTValues.VHA[GTValues.HV]);
 
     event.recipes.gtceu.large_chemical_reactor('sicbite_1')
