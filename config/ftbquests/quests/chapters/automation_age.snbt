@@ -312,7 +312,11 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["250C897A70DB797F"]
+			dependencies: [
+				"261174370DC87FCB"
+				"250C897A70DB797F"
+			]
+			dependency_requirement: "one_completed"
 			description: ["Better Circuits means better Circuit boards"]
 			id: "41D5FABA8D0BB0AC"
 			rewards: [{
