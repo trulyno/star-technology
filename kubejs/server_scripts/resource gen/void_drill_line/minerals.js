@@ -19,13 +19,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.centrifuge('sulfuric_mineral_mixture')
         .inputFluids('gtceu:sulfuric_mineral_mixture 500')
         .itemOutputs('gtceu:crushed_barite_ore', 'gtceu:crushed_chalcopyrite_ore', 'gtceu:crushed_bornite_ore')
-        .duration(240)
+        .duration(230)
         .EUt(GTValues.VA[GTValues.HV]);
 
     event.recipes.gtceu.centrifuge('oxygenous_mineral_mixture')
         .inputFluids('gtceu:oxygenous_mineral_mixture 500')
         .itemOutputs('gtceu:crushed_tantalite_ore', 'gtceu:crushed_pollucite_ore', 'gtceu:crushed_cassiterite_ore')
-        .duration(240)
+        .duration(230)
         .EUt(GTValues.VA[GTValues.HV]);
 
 });
