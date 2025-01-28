@@ -1,4 +1,4 @@
-StartupEvents.registry('item', event => {
+global.items(event => {
     /*
     dictionary:
     arc = auxiliary reaction
@@ -20,17 +20,17 @@ StartupEvents.registry('item', event => {
     //dynamo's => auxiliary reaction kits
     const arc_kit = (tier) => {
         event.create(`${tier}_arc_kit`)
-        .displayName(`${tier.toUpperCase()} Auxiliary Reaction Chamber Kit`)
-        .tooltip("Augment for Dynamos")
-        .texture(`kubejs:item/kits/arc_kits/${tier}_arc_kit`);
+            .displayName(`${tier.toUpperCase()} Auxiliary Reaction Chamber Kit`)
+            .tooltip("Augment for Dynamos")
+            .texture(`kubejs:item/kits/arc_kits/${tier}_arc_kit`);
     };
 
     //dynamo's => multi-cycle injectors kits
     const mci_kit = (tier) => {
-    event.create(`${tier}_mci_kit`)
-        .displayName(`${tier.toUpperCase()} Multi-cycle Injectors Kit`)
-        .tooltip('Augment for Dynamos')
-        .texture(`kubejs:item/kits/mci_kits/${tier}_mci_kit`);
+        event.create(`${tier}_mci_kit`)
+            .displayName(`${tier.toUpperCase()} Multi-cycle Injectors Kit`)
+            .tooltip('Augment for Dynamos')
+            .texture(`kubejs:item/kits/mci_kits/${tier}_mci_kit`);
     };
 
     ['lv', 'mv', 'hv', 'ev'].forEach(tier => {

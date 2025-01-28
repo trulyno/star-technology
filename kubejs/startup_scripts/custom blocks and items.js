@@ -1,5 +1,5 @@
 // Custom Items
-StartupEvents.registry('item', event => {
+global.items(event => {
     event.create('naquadic_netherite_fibers')
         .texture('kubejs:item/naquadic_netherite_fibers')
         .rarity('rare')
@@ -166,7 +166,7 @@ StartupEvents.registry('item', event => {
 
     // Universal Circuits
 
-    const circuitTiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"/*, "uxv", "opv"*/];
+    const circuitTiers = ['ulv', 'lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv', 'uev', 'uiv'/*, 'uxv', 'opv'*/];
 
     let tier_capitalized;
     circuitTiers.forEach(tier => {
@@ -185,8 +185,7 @@ StartupEvents.registry('item', event => {
             .tooltip('§o§7For use with AE2 autocrafting');
     });
 
-//Runes
-
+    // Runes
     event.create('runic_engraved_plating')
         .displayName('Runic-Engraved Plating')
         .texture('kubejs:item/gate_items/rune_engraved_plating')
@@ -228,8 +227,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/gate_items/runic_pathway_energized_plating')
         .rarity('uncommon');
 
- //Gate Parts
-
+    // Gate Parts
     event.create('crude_stargate_rod')
         .texture('kubejs:item/gate_items/crude_stargate_rod')
         .rarity('rare')
@@ -299,7 +297,6 @@ StartupEvents.registry('item', event => {
     });
 
     //Dimensional Pinging
-
     event.create('coordinate_crystal')
         .displayName('Blank Dimensional Coordinate Crystal')
         .rarity('rare')
@@ -371,7 +368,7 @@ StartupEvents.registry('item', event => {
         .displayName('Overpowered Voltage Coil')
         .tooltip('Godly Coil');*/
 
-    const partTiers = ["uhv"/*, "uev", "uiv", "uxv", "opv"*/];
+    const partTiers = ['uhv'/*, 'uev', 'uiv', 'uxv', 'opv'*/];
 
     let tier_proper;
     partTiers.forEach(tier => {
@@ -385,40 +382,47 @@ StartupEvents.registry('item', event => {
             .texture(`kubejs:item/component_part/${tier}_computational_matrix`)
             .displayName(`${tier_proper} Computational Matrix`)
             .tooltip('The Brains of Components');
+
         event.create(`${tier}_transmission_assembly`)
             .texture(`kubejs:item/component_part/${tier}_transmission_assembly`)
             .displayName(`${tier_proper} Transimission Assembly`)
             .tooltip('Top Tier Gear Box');
+
         event.create(`${tier}_precision_drive_mechanism`)
             .texture(`kubejs:item/component_part/${tier}_precision_drive_mechanism`)
             .displayName(`${tier_proper} Precision Drive Mechanism`)
             .tooltip('Exact Speeds');
+
         event.create(`${tier}_microfluidic_flow_valve`)
             .texture(`kubejs:item/component_part/${tier}_microfluidic_flow_valve`)
             .displayName(`${tier_proper} Micro-Fluidic Flow Valve`)
             .tooltip('Just the Right Amount of Fluid');
+
         event.create(`${tier}_super_magnetic_core`)
             .texture(`kubejs:item/component_part/${tier}_super_magnetic_core`)
             .displayName(`${tier_proper} Super Magnetic Core`)
             .tooltip('Most Attractive Thing Here');
+
         event.create(`${tier}_catalyst_core`)
             .texture(`kubejs:item/component_part/${tier}_catalyst_core`)
             .displayName(`${tier_proper} Catalyst Core`)
             .tooltip('Contained Mysticality');
+
         event.create(`${tier}_high_strength_panel`)
             .texture(`kubejs:item/component_part/${tier}_high_strength_panel`)
             .displayName(`${tier_proper} High Strength Panel`)
             .tooltip('The Strongest Plate');
+
         event.create(`${tier}_micropower_router`)
             .texture(`kubejs:item/component_part/${tier}_micropower_router`)
             .displayName(`${tier_proper} Micro-Power Router`)
             .tooltip('A Shocking Addition');
-
     });
 
     //geodes
-    ['Diamond', 'Emerald', 'Ruby', 'Sapphire', 'Quartzite', 'Topaz', 'Spessartine', `Certus_Quartz`, `Green_Sapphire`
-        ,`Blue_Topaz`,`Apatite`, `Monazite`].forEach(type => {
+    ['Diamond', 'Emerald', 'Ruby', 'Sapphire', 'Quartzite', 'Topaz', 
+        'Spessartine', 'Certus_Quartz', 'Green_Sapphire', 'Blue_Topaz', 
+        'Apatite', 'Monazite'].forEach(type => {
         event.create(`${type.toLowerCase()}_geode`)
             .displayName(`${type.replace(/_/, ' ')} Geode`)
             .texture(`kubejs:item/resource_gen/geodes/cracked_${type.toLowerCase()}_geode`);
@@ -457,7 +461,7 @@ StartupEvents.registry('item', event => {
 });
 
 // Custom Blocks
-StartupEvents.registry('block', event => {
+global.blocks(event => {
 
     // Custom Casings
     event.create('soul_infused_casing')
@@ -786,7 +790,6 @@ StartupEvents.registry('block', event => {
         .textureAll('kubejs:block/casings/laser_casing');
 
     // Meshblock for Kinetic Sieve
-
     event.create('meshblock')
         .displayName('Treatedwood Reinforced Mesh')
         .hardness(2)
@@ -799,8 +802,7 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_stone_tool')
         .textureAll('kubejs:block/multiblock/meshblock');
 
-        //Runic Casings
-
+    //Runic Casings
     event.create('runic_stabilization_casing')
         .displayName('Stabilization Enscribed Runically Infused Casing')
         .hardness(10)
@@ -940,7 +942,6 @@ StartupEvents.registry('block', event => {
     naq_casing('enriched_naquadah_machine_casing', 'Enriched Naquadah Casing', 'casing');
     naq_casing('enriched_naquadah_pipe_casing', 'Enriched Naquadah Pipe Casing', 'pipe_casing');
     naq_casing('enriched_naquadah_gearbox', 'Enriched Naquadah Gearbox Casing', 'gearbox');
-
 });
 
 BlockEvents.modification(event => {
