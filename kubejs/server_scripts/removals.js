@@ -69,6 +69,7 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'exnihilosequentia:sifting', input: 'minecraft:dirt'});
     event.remove({ type: 'exnihilosequentia:sifting', input: 'minecraft:mud'});
     event.remove({ type: 'exnihilosequentia:sifting', input: 'exnihilosequentia:crushed_end_stone'});
+    event.remove({ output: /exnihilosequentia:.*doll/});
   
     event.remove({ input: 'minecraft:fire_charge'});
     event.remove({ input: 'thermal:earth_charge'});

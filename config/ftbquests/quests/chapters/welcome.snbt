@@ -101,6 +101,7 @@
 		}
 		{
 			can_repeat: true
+			description: ["This works if cheats are enabled. If you don't have them enabled, temporarely enable them before claiming this quest."]
 			icon: "ae2:controller"
 			id: "01D554315C80E32A"
 			optional: true
@@ -121,6 +122,7 @@
 		}
 		{
 			can_repeat: true
+			description: ["This works if cheats are enabled. If you don't have them enabled, temporarely enable them before claiming this quest."]
 			icon: "ae2:controller"
 			id: "1D223731850769CF"
 			optional: true
@@ -141,6 +143,7 @@
 		}
 		{
 			can_repeat: true
+			description: ["This works if cheats are enabled. If you don't have them enabled, temporarely enable them before claiming this quest."]
 			icon: "ae2:controller"
 			id: "650968485BE86ECC"
 			optional: true
@@ -161,6 +164,7 @@
 		}
 		{
 			can_repeat: true
+			description: ["This works if cheats are enabled. If you don't have them enabled, temporarely enable them before claiming this quest."]
 			icon: "ae2:controller"
 			id: "2EE5068AEA2B2F0C"
 			optional: true
@@ -181,6 +185,7 @@
 		}
 		{
 			can_repeat: true
+			description: ["This works if cheats are enabled. If you don't have them enabled, temporarely enable them before claiming this quest."]
 			icon: "ae2:controller"
 			id: "3CCF44ACC8A78039"
 			optional: true

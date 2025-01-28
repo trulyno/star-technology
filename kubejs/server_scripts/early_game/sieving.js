@@ -69,6 +69,8 @@ ServerEvents.recipes(event => {
     sieve('string', 0.15, rdirt, 'minecraft:bamboo', false);
     sieve('string', 0.15, rdirt, 'minecraft:wheat_seeds', false);
     sieve('string', 0.05, rdirt, 'farmersdelight:rice_panicle', false);
+    sieve('string', 0.10, rdirt, 'minecraft:pumpkin_seeds', false);
+    sieve('string', 0.10, rdirt, 'minecraft:melon_seeds', false);
 
     //Waterlogged
     sieve('string', 0.05, sand, 'exnihilosequentia:brain_coral_larva', true);
