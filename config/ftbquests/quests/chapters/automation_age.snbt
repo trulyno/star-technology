@@ -1095,7 +1095,6 @@
 		}
 		{
 			dependencies: [
-				"4BCE8A9EBDF113CE"
 				"6060E79B2D08912D"
 				"2D4F9DFF6B559C65"
 			]
@@ -1130,8 +1129,8 @@
 				item: "gtceu:lapotron_crystal"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 9.5d
+			x: 10.5d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -1156,7 +1155,10 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["1E981BDF3F2C577D"]
+			dependencies: [
+				"1E981BDF3F2C577D"
+				"74749B089D50329C"
+			]
 			description: ["This is the IV material, you're going to need a lot of this like every other main voltage material."]
 			id: "4BCE8A9EBDF113CE"
 			rewards: [{
@@ -1170,8 +1172,8 @@
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 11.5d
+			x: 6.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -2334,7 +2336,7 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: 2.5d
+			x: 5.0d
 			y: 4.5d
 		}
 	]
