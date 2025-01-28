@@ -1,5 +1,5 @@
 {
-	autofocus_id: "0889A97E22C484CC"
+	autofocus_id: "009D7EA125E606BA"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "preparing_for_dimensional_travel"
@@ -1591,6 +1591,24 @@
 			}]
 			x: -9.0d
 			y: 3.25d
+		}
+		{
+			id: "009D7EA125E606BA"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "0142D6E64C3CB30B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "4CAA7033034A7A6B"
+				title: "positioner"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -0.5d
 		}
 	]
 	title: "Making the Classic Stargate"
