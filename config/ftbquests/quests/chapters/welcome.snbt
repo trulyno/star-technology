@@ -126,6 +126,7 @@
 			optional: true
 			rewards: [{
 				command: "/ae2 channelmode x2"
+				elevate_perms: true
 				icon: "ae2:singularity"
 				id: "54D4CA19DD85D1DA"
 				type: "command"
@@ -146,6 +147,7 @@
 			optional: true
 			rewards: [{
 				command: "/ae2 channelmode x3"
+				elevate_perms: true
 				icon: "ae2:singularity"
 				id: "4AC0AA5B4584E54A"
 				type: "command"
@@ -166,6 +168,7 @@
 			optional: true
 			rewards: [{
 				command: "/ae2 channelmode x4"
+				elevate_perms: true
 				icon: "ae2:singularity"
 				id: "55E25D0F70A7EE4D"
 				type: "command"
@@ -186,6 +189,7 @@
 			optional: true
 			rewards: [{
 				command: "/ae2 channelmode infinite"
+				elevate_perms: true
 				icon: "ae2:singularity"
 				id: "78355C4A04F1FBD1"
 				type: "command"
