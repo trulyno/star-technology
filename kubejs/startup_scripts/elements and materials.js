@@ -600,7 +600,7 @@ materialRegistry(event => {
         .iconSet(SHINY)
         .blastTemp(10799, 'highest', VA('uhv'), 6000)
         .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
+            rod, rotor, small_gear, ring, frame, fine_wire)
         .cableProperties(V('uhv'), 512, 0, true)
         .rotorStats(3200, 660, 3, 96000);
 
