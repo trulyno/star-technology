@@ -1,12 +1,11 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.electric_blast_furnace('silicon_carbide')
-        .itemInputs('gtceu:silicon_dioxide_dust','2x gtceu:carbon_dust')
+        .itemInputs('gtceu:silicon_dioxide_dust','2x gtceu:activated_carbon_dust')
         .itemOutputs('gtceu:silicon_carbide_dust')
         .outputFluids('gtceu:carbon_dioxide')
         .blastFurnaceTemp(2000)
         .duration(500)
-        .circuit(3)
         .EUt(GTValues.VHA[GTValues.HV]);
 
     event.recipes.gtceu.large_chemical_reactor('sicbite_1')

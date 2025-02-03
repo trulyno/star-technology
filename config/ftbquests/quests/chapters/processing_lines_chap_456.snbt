@@ -1781,15 +1781,22 @@
 		}
 		{
 			id: "1505DCF0ED1E24F5"
-			tasks: [{
-				id: "0F95DF643DD25241"
-				item: {
-					Count: 1
-					id: "gtceu:carbon_dust"
-					tag: { }
+			tasks: [
+				{
+					id: "0F95DF643DD25241"
+					item: {
+						Count: 1
+						id: "gtceu:carbon_dust"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "7E4487CB21D7E72C"
+					item: "gtceu:activated_carbon_dust"
+					type: "item"
+				}
+			]
 			x: 17.5d
 			y: 15.0d
 		}
