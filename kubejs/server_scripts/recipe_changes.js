@@ -305,14 +305,16 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .circuit(4);
 
-    event.recipes.gtceu.rock_breaker('blackstone')
-        .notConsumable('minecraft:blackstone')
-        .itemOutputs('minecraft:blackstone')
+    ['blackstone','calcite','tuff','dripstone_block'].forEach(stone => {
+    event.recipes.gtceu.rock_breaker(`${stone}`)
+        .notConsumable(`minecraft:${stone}`)
+        .itemOutputs(`minecraft:${stone}`)
         .duration(16)
         .EUt(7)
         .addDataString("fluidA", "minecraft:lava")
         .addDataString("fluidB", "minecraft:water");
         // .addCondition($RockBreakerCondition.INSTANCE);
+    });
 
     event.shaped(Item.of('create_new_age:carbon_brushes'), [
         'SCS',

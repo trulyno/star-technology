@@ -17,6 +17,30 @@ ServerEvents.recipes(event => {
         .duration(16)
         .EUt(7);
 
+    event.recipes.gtceu.large_rock_crusher('calcite')
+        .notConsumable('minecraft:calcite')
+        .notConsumableFluid('minecraft:water 1000')
+        .notConsumableFluid('minecraft:lava 1000')
+        .itemOutputs('minecraft:calcite')
+        .duration(16)
+        .EUt(7);
+
+    event.recipes.gtceu.large_rock_crusher('dripstone_block')
+        .notConsumable('minecraft:dripstone_block')
+        .notConsumableFluid('minecraft:water 1000')
+        .notConsumableFluid('minecraft:lava 1000')
+        .itemOutputs('minecraft:dripstone_block')
+        .duration(16)
+        .EUt(7);
+
+    event.recipes.gtceu.large_rock_crusher('tuff')
+        .notConsumable('minecraft:tuff')
+        .notConsumableFluid('minecraft:water 1000')
+        .notConsumableFluid('minecraft:lava 1000')
+        .itemOutputs('minecraft:tuff')
+        .duration(16)
+        .EUt(7);
+
     event.recipes.gtceu.large_rock_crusher('red_granite')
         .notConsumable('gtceu:red_granite')
         .notConsumableFluid('minecraft:water 1000')
