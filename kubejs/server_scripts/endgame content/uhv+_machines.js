@@ -1,12 +1,12 @@
 ServerEvents.recipes(event => {
 
-    event.remove({output: /gtceu:uhv.*/})
+    event.remove({not: {output: 'gtceu:uhv_ultimate_battery'},output: /gtceu:uhv.*/})
     event.remove({output: /gtceu:uev.*/})
     event.remove({output: /gtceu:uiv.*/})
     event.remove({output: /gtceu:uxv.*/})
     event.remove({output: /gtceu:opv.*/})
 
-inputTypes('uhv', 'uv', 'neutronium', 'europium', 'zirconium_selenide_diiodide','fusion_glass', 'polyether_ether_ketone', 'cerium_tritelluride', 'pure_netherite', 'zapolgium','neutronium','iron_selenide_over_strontium_titanium_oxide','uhpic','1')
+inputTypes('uhv', 'uv', 'neutronium', 'europium', 'zirconium_selenide_diiodide','fusion_glass', 'polyether_ether_ketone', 'cerium_tritelluride', 'pure_netherite', 'neutronium','neutronium','iron_selenide_over_strontium_titanium_oxide','uhpic','1')
 
 function inputTypes(tier,tier1under,main,cable,wire,glass,plastic,cable1up,mag,pipe,buzz,elctrlyzWire,chip,math){
 
