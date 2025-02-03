@@ -1051,6 +1051,7 @@
 				{
 					id: "1909480E0DE741BD"
 					item: "gtceu:naphthalene_bucket"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1099,6 +1100,7 @@
 				{
 					id: "544307D705B42131"
 					item: "gtceu:dimethylbenzene_bucket"
+					optional_task: true
 					type: "item"
 				}
 			]

@@ -212,6 +212,7 @@
 				{
 					id: "1EDD1FEBA3440319"
 					item: "gtceu:hot_enriched_naquadah_ingot"
+					optional_task: true
 					type: "item"
 				}
 			]
