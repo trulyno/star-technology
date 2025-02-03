@@ -171,7 +171,7 @@
     "gtceu.chemical_plant": "Chemical Plant",
     "block.gtceu.chemical_plant": "Chemical Plant Controller",
     "gtceu.component_part_assembly": "Component Part Assembly",
-    "block.gtceu.component_part_assembly": "Component Assembly Part Controller",
+    "block.gtceu.component_part_assembly": "Component Part Assembly Controller",
     "gtceu.large_farm": "Farming",
     "block.gtceu.large_farm": "Large Farm Controller",
     "gtceu.large_sieve": "Large Sieve",
@@ -394,7 +394,7 @@
     "block.gtceu.dimensional_finder.tooltip.0": "Get Dimensionally Pinged",
 
     "gtceu.runic_inscribe_manipulate": "Runic Inscribtion and Manipulation",
-    "block.gtceu.runic_inscribe_manipulate": "Runic Inscriber and Manipulation Manifold Controller",
+    "block.gtceu.runic_inscribe_manipulate": "Runic Inscriber and Manifold Manipulator Controller",
 
     "material.gtceu.magnetic_pure_netherite": "Magnetic Pure Netherite",
     "material.gtceu.ancient_runicalium": "Ancient Runicalium",
