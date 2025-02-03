@@ -13,9 +13,10 @@ ServerEvents.tags('item', event => {
     event.add('exnihilosequentia:mesh', 'exnihilosequentia:emerald_mesh');
     event.add('exnihilosequentia:mesh', 'exnihilosequentia:netherite_mesh');
 
-    ['diamond', 'emerald', 'ruby', 'green_sapphire', 'sapphire', 'quartzite', 'certus_quartz', 'blue_topaz', 'topaz', 'amethyst'].forEach(type => {
+    ['diamond', 'emerald', 'ruby', 'sapphire', 'quartzite', 'topaz', 'spessartine', `certus_quartz`, `green_sapphire`
+        ,`blue_Topaz`,`apatite`, `monazite`].forEach(type => {
         event.add('gtceu:geode', `kubejs:${type}_geode`);
-        event.add('gtceu:cracked_geode', `kubejs:cracked_${type}_geode`);
+        // event.add('gtceu:cracked_geode', `kubejs:cracked_${type}_geode`);
     });
 
     event.add('gtceu:coal_dusts', 'gtceu:charcoal_dust');
