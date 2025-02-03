@@ -1591,7 +1591,11 @@
 		}
 		{
 			dependencies: ["4D9DAED52FF74B8B"]
-			description: ["In an IV tier mixer, mix lava and stone dust in a mixer to directly get the mixture."]
+			description: [
+				"In an IV tier mixer, mix lava and stone dust in a mixer to directly get the mixture."
+				""
+				"A Large Mixer is great for the Job"
+			]
 			id: "39CF5BCF84727BB3"
 			optional: true
 			tasks: [{

@@ -1,18 +1,25 @@
 ServerEvents.recipes(event => {
 
     //alternate production
-    event.recipes.gtceu.mixer('molten_ore_mixture')
-        .inputFluids(`minecraft:lava 64000`)
-        .itemInputs(`64x gtceu:stone_dust`,`64x gtceu:stone_dust`)
-        .outputFluids('gtceu:molten_ore_mixture 24000')
-        .duration(900)
+    event.recipes.gtceu.mixer('molten_ore_mixture_easy')
+        .inputFluids(`minecraft:lava 32000`)
+        .itemInputs(`64x gtceu:stone_dust`)
+        .outputFluids('gtceu:molten_ore_mixture 12000')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.IV]);
+
+    event.recipes.gtceu.mixer('molten_ore_mixture_complex')
+        .inputFluids(`minecraft:lava 48000`)
+        .itemInputs(`48x gtceu:stone_dust`, `2x gtceu:metal_mixture_dust`)
+        .outputFluids('gtceu:molten_ore_mixture 20000')
+        .duration(600)
         .EUt(GTValues.VA[GTValues.IV]);
     
     //distilling
     event.recipes.gtceu.distillation_tower('molten_ore_mixture')
         .inputFluids('gtceu:molten_ore_mixture 10000')
         .itemOutputs('gtceu:metal_mixture_dust')
-        .outputFluids('gtceu:molten_bauxite_ore 1500', 'gtceu:molten_pitchblende_ore 1250', 'gtceu:molten_molybdenite_ore 1500', 'gtceu:molten_ilmenite_ore 1000', 'gtceu:molten_bastnasite_ore 1000' ,'gtceu:molten_tungstate_ore 1500', 'gtceu:molten_cooperite_ore 2250')
+        .outputFluids('gtceu:molten_bauxite_ore 1500', 'gtceu:molten_pitchblende_ore 1250', 'gtceu:molten_molybdenite_ore 1000', 'gtceu:molten_ilmenite_ore 1000', 'gtceu:molten_bastnasite_ore 1000' ,'gtceu:molten_tungstate_ore 2000', 'gtceu:molten_cooperite_ore 2250')
         .duration(1200)
         .EUt(GTValues.VA[GTValues.EV]);
 
