@@ -154,18 +154,6 @@
 		}
 		{
 			dependencies: ["7910F6A8087A9E85"]
-			id: "0F70A4555874E56E"
-			shape: "square"
-			tasks: [{
-				id: "571C0DBDBB63F56C"
-				item: "thermal_extra:refined_sunflower_oil_bucket"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["0F70A4555874E56E"]
 			id: "28FB566FC1E35413"
 			shape: "square"
 			tasks: [{
@@ -1693,7 +1681,11 @@
 		}
 		{
 			dependencies: ["7DDFBCDFC3F09A6B"]
-			description: ["Each tier of rotor holder up on top of its inherent 10% efficiency bonus ([1-.1] or .9 or 90% fuel consumption), each tier up doubles consumption and power giving you a 2x energy output for 1.8x more fuel. It is always worth it if you can supply enough fuel."]
+			description: [
+				"Each tier of rotor holder up on top of its inherent 10% efficiency bonus ([1-.1] or .9 or 90% fuel consumption), each tier up doubles consumption and power giving you a 2x energy output for 1.8x more fuel. It is always worth it if you can supply enough fuel."
+				""
+				"In other words it doubles parallels and give efficiency."
+			]
 			id: "344260A6F9D36843"
 			tasks: [{
 				id: "04DD118048A34595"
