@@ -1519,7 +1519,8 @@
 			id: "6C39CD86546B3C64"
 			optional: true
 			rewards: [{
-				command: "/execute in minecraft:overworld run tp @p 0 -72 0"
+				command: "/execute in minecraft:overworld run tp @s 0 -72 0"
+				elevate_perms: true
 				icon: {
 					Count: 1
 					id: "minecraft:grass_block"
@@ -1558,6 +1559,7 @@
 			optional: true
 			rewards: [{
 				command: "/gamestage add @a one"
+				elevate_perms: true
 				icon: {
 					Count: 1
 					id: "ae2:singularity"
