@@ -173,6 +173,15 @@ ServerEvents.recipes(event => {
         .duration(5)
         .EUt(30);
 
+    event.shaped(Item.of('gtceu:rubber_plate'), [
+        'H',
+        'R',
+        'R'
+    ], {
+        H: '#forge:tools/hammers',
+        R: 'thermal:cured_rubber'
+    })
+
     const types = ['soul_infused', 'signalum', 'lumium', 'enderium', 'shellite', 'twinite', 'dragonsteel', 'prismalium', 'melodium', 'stellarium', 'austenitic_stainless_steel_304', 'inconel_625', 'birmabright', 'duralumin', 'hydronalium', 'beryllium_aluminium_alloy', 'elgiloy', 'beryllium_bronze', 'silicon_bronze', 'kovar', 'zamak', 'tumbaga', 'sterling_silver', 'blue_steel', 'red_steel', 'ancient_runicalium'];
 
     types.forEach(element => {
@@ -296,14 +305,16 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .circuit(4);
 
-    event.recipes.gtceu.rock_breaker('blackstone')
-        .notConsumable('minecraft:blackstone')
-        .itemOutputs('minecraft:blackstone')
+    ['blackstone','calcite','tuff','dripstone_block'].forEach(stone => {
+    event.recipes.gtceu.rock_breaker(`${stone}`)
+        .notConsumable(`minecraft:${stone}`)
+        .itemOutputs(`minecraft:${stone}`)
         .duration(16)
         .EUt(7)
         .addDataString("fluidA", "minecraft:lava")
         .addDataString("fluidB", "minecraft:water");
         // .addCondition($RockBreakerCondition.INSTANCE);
+    });
 
     event.shaped(Item.of('create_new_age:carbon_brushes'), [
         'SCS',

@@ -600,7 +600,7 @@ materialRegistry(event => {
         .iconSet(SHINY)
         .blastTemp(10799, 'highest', VA('uhv'), 6000)
         .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
+            rod, rotor, small_gear, ring, frame, fine_wire)
         .cableProperties(V('uhv'), 512, 0, true)
         .rotorStats(3200, 660, 3, 96000);
 
@@ -1337,7 +1337,7 @@ materialRegistry(event => {
         .components('1x cerium', '3x tellurium')
         .color(0x6D8B5D)
         .iconSet(DULL)
-        .blastTemp(10699, 'highest', VA('uv'), 3800)
+        .blastTemp(11699, 'highest', VA('uhv'), 1800)
         .flags(bolt_and_screw)
         .cableProperties(V('uev'), 6, 16, false);
 

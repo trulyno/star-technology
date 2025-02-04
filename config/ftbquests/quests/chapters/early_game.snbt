@@ -181,6 +181,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["16A9D8E864A18B9E"]
 			description: ["By sneaking and right-clicking Grass (the dirt one), you can get pebbles for basic stone types."]
 			icon: "minecraft:cobblestone"
 			id: "07CBF849162D7BDF"
@@ -205,8 +206,8 @@
 				}
 			]
 			title: "Touching Grass"
-			x: -4.0d
-			y: -5.0d
+			x: -5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -233,7 +234,7 @@
 				}
 			]
 			title: "Blackstone Sieving"
-			x: -2.5d
+			x: -4.5d
 			y: -0.5d
 		}
 		{
@@ -275,7 +276,7 @@
 				}
 			]
 			title: "Hammer Time"
-			x: -4.0d
+			x: -4.5d
 			y: -3.0d
 		}
 		{
@@ -292,8 +293,8 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.0d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -580,7 +581,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.25d
 			tasks: [
 				{
 					id: "15ECABD057EAF7EC"
@@ -591,8 +592,7 @@
 							value: "forge:tools/hammers"
 						}
 					}
-					optional_task: true
-					title: "Any GregTech hammer"
+					title: "Any GregTech Hammer"
 					type: "item"
 				}
 				{
@@ -605,7 +605,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any GregTech file"
+					title: "Any GregTech File"
 					type: "item"
 				}
 				{
@@ -618,7 +618,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any GregTech screwdriver"
+					title: "Any GregTech Screwdriver"
 					type: "item"
 				}
 				{
@@ -631,7 +631,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any GregTech wire cutters"
+					title: "Any GregTech Wire Cutters"
 					type: "item"
 				}
 				{
@@ -644,7 +644,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any GregTech wrench"
+					title: "Any GregTech Wrench"
 					type: "item"
 				}
 				{
@@ -657,7 +657,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any GregTech knife"
+					title: "Any GregTech Knife"
 					type: "item"
 				}
 				{
@@ -670,7 +670,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any GregTech saw"
+					title: "Any GregTech Saw"
 					type: "item"
 				}
 				{
@@ -683,13 +683,26 @@
 						}
 					}
 					optional_task: true
-					title: "Any GregTech mortar"
+					title: "Any GregTech Mortar"
+					type: "item"
+				}
+				{
+					id: "0BBC49E7EE5D327F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mallets"
+						}
+					}
+					optional_task: true
+					title: "Any GregTech Mallet"
 					type: "item"
 				}
 			]
 			title: "Tools for days"
-			x: -2.75d
-			y: -4.0d
+			x: -1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
@@ -1210,7 +1223,7 @@
 				}
 			]
 			title: "Infinite Water"
-			x: -4.5d
+			x: -2.5d
 			y: -0.5d
 		}
 		{
@@ -1639,8 +1652,8 @@
 				type: "item"
 			}]
 			title: "Dirt Cheap"
-			x: -5.5d
-			y: -3.0d
+			x: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["039D327E919878BF"]
@@ -1870,7 +1883,11 @@
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
-			description: ["Witch Water can be made in a Wooden Barrel with Mycelium Spores and Water."]
+			description: [
+				"Witch Water can be made in a Wooden Barrel with Mycelium Spores and Water."
+				""
+				"Make sure that your Wooden Barrel is on \"Barrel Transformation\" mode. Refer to the Barrel Transformation quest for more information."
+			]
 			id: "7E72B9CC8631769D"
 			rewards: [{
 				id: "386D329F74361582"
@@ -1947,7 +1964,7 @@
 			}]
 			title: "Ready, Set, Go"
 			x: -7.5d
-			y: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3D0F6CA8028C074B"]

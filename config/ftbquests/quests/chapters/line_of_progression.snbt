@@ -9,12 +9,6 @@
 	order_index: 1
 	quest_links: [
 		{
-			id: "0BB74BB2179D1EE3"
-			linked_quest: "20A12F3B992762F0"
-			x: -8.0d
-			y: -29.0d
-		}
-		{
 			id: "6DC46A9130054F17"
 			linked_quest: "3B81632EF4586280"
 			x: -8.0d
@@ -1228,7 +1222,10 @@
 			y: -27.5d
 		}
 		{
-			dependencies: ["0BB74BB2179D1EE3"]
+			dependencies: [
+				"20A12F3B992762F0"
+				"4E1271A47BFEE3B9"
+			]
 			id: "088E1B8DCADB8E5F"
 			tasks: [{
 				id: "0663B9E066B17558"
@@ -1329,6 +1326,7 @@
 		{
 			dependencies: ["2DA7FFD9B7A550B9"]
 			id: "35D5CC08AE53A7FA"
+			optional: true
 			subtitle: "Second UHV Circuit"
 			tasks: [{
 				id: "7278702A05728EA6"
@@ -1345,6 +1343,7 @@
 		{
 			dependencies: ["35D5CC08AE53A7FA"]
 			id: "2F0E0C63E0DE0F5A"
+			optional: true
 			subtitle: "First UEV Circuit"
 			tasks: [{
 				id: "74164D342D52608B"
@@ -1361,6 +1360,7 @@
 		{
 			dependencies: ["2F0E0C63E0DE0F5A"]
 			id: "73E9000BE5288623"
+			optional: true
 			subtitle: "First UIV Cicuit"
 			tasks: [{
 				id: "104B5031089707D7"
@@ -1377,6 +1377,7 @@
 		{
 			dependencies: ["4DF812EEFB4FD1C3"]
 			id: "2DA7FFD9B7A550B9"
+			optional: true
 			subtitle: "Third and Last UV Circuit"
 			tasks: [{
 				id: "4B3DDFC692C95879"
@@ -1392,7 +1393,9 @@
 		}
 		{
 			dependencies: ["1C9396E2587051F7"]
+			description: ["These are currently not craftable but will be soon......"]
 			id: "4DF812EEFB4FD1C3"
+			optional: true
 			subtitle: "Fourth and Last ZPM Circuit"
 			tasks: [{
 				id: "08AF5523EEC4E80C"
@@ -1409,6 +1412,7 @@
 		{
 			dependencies: ["2F0E0C63E0DE0F5A"]
 			id: "5584A2F87AC8631E"
+			optional: true
 			tasks: [{
 				id: "58B4EB491E26C14B"
 				item: {
@@ -1424,6 +1428,7 @@
 		{
 			dependencies: ["73E9000BE5288623"]
 			id: "73B54F4D395FB5EC"
+			optional: true
 			tasks: [{
 				id: "1581178AE7A9FA51"
 				item: {
@@ -1518,6 +1523,17 @@
 			}]
 			x: -11.5d
 			y: -14.0d
+		}
+		{
+			dependencies: ["3B81632EF4586280"]
+			id: "4E1271A47BFEE3B9"
+			tasks: [{
+				id: "7B2E15771AD1AAC7"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -29.0d
 		}
 	]
 	title: "Line Of Progression"

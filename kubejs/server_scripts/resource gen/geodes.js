@@ -24,14 +24,14 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.rock_filtrator('lv_geodes')
     .itemInputs('64x minecraft:gravel')
     .inputFluids('gtceu:distilled_water 1000')
-    .chancedOutput('kubejs:diamond_geode', 4000, 500)
-    .chancedOutput('kubejs:emerald_geode', 4000, 500)
+    .chancedOutput('kubejs:diamond_geode', 3500, 750)
+    .chancedOutput('kubejs:emerald_geode', 3500, 750)
     .chancedOutput('kubejs:ruby_geode', 4500, 750)
-    .chancedOutput('kubejs:green_sapphire_geode', 4500, 750)
-    .chancedOutput('kubejs:sapphire_geode', 4500, 750)
+    .chancedOutput('kubejs:green_sapphire_geode', 5000, 500)
+    .chancedOutput('kubejs:sapphire_geode', 5000, 500)
     .chancedOutput('kubejs:quartzite_geode', 3500, 500)
-    .chancedOutput('kubejs:certus_quartz_geode', 4000, 750)
-    .duration(1500)
+    .chancedOutput('kubejs:certus_quartz_geode', 4500, 750)
+    .duration(1200)
     .EUt(GTValues.VHA[GTValues.LV]);
 
   event.recipes.gtceu.rock_filtrator('mv_geodes')
@@ -41,8 +41,8 @@ ServerEvents.recipes(event => {
     .chancedOutput('kubejs:topaz_geode', 3500, 750)
     .chancedOutput('kubejs:apatite_geode', 4500, 1000)
     .chancedOutput('kubejs:spessartine_geode', 3500, 500)
-    .chancedOutput('kubejs:monazite_geode', 3500, 500)
-    .duration(1200)
+    .chancedOutput('kubejs:monazite_geode', 3750, 750)
+    .duration(960)
     .EUt(GTValues.VHA[GTValues.MV]);
 
   const geodeLV = ['diamond', 'emerald', 'ruby', 'green_sapphire', 

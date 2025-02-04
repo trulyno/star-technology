@@ -202,7 +202,6 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 12000', 'gtceu:naquadria 36000', 'gtceu:sterilized_growth_medium 8000')
         .itemOutputs('sgjourney:classic_stargate_base_block')
         .duration(48000)
-        .blastFurnaceTemp(10699)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.stargate_component_assembly('classic_stargate_ring_block')
@@ -210,7 +209,6 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 12000', 'gtceu:naquadria 56000')
         .itemOutputs('sgjourney:classic_stargate_ring_block')
         .duration(20000)
-        .blastFurnaceTemp(10699)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.stargate_component_assembly('classic_stargate_chevron_block')
@@ -218,7 +216,6 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 12000', 'gtceu:naquadria 32000', 'gtceu:radon 62000')
         .itemOutputs('sgjourney:classic_stargate_chevron_block')
         .duration(32000)
-        .blastFurnaceTemp(10699)
         .EUt(GTValues.VHA[GTValues.UHV]);
     
     event.recipes.gtceu.assembly_line('compuation_super_matrix')
@@ -298,7 +295,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues.UHV]);
 
         event.recipes.gtceu.assembly_line('ancient_chevron_disk')
-            .itemInputs('gtceu:ancient_runicalium_frame', 'gtceu:exquisite_screret_runic_laser_source_base_gem', 'kubejs:classic_chevron_assembly', '6x gtceu:uhv_sensor', '6x gtceu:uhv_emitter', '6x gtceu:uhv_field_generator', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip')
+            .itemInputs('gtceu:ancient_runicalium_frame', 'kubejs:classic_chevron_disk', '2x kubejs:classic_chevron_assembly', '6x gtceu:uhv_sensor', '6x gtceu:uhv_emitter', '6x gtceu:uhv_field_generator', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip')
             .inputFluids('gtceu:utopian_akreyrium 48000', 'gtceu:naquadria 96000', 'gtceu:borosilicate_glass 196000')
             .itemOutputs('kubejs:ancient_chevron_disk')
             .duration(12000)
@@ -367,15 +364,13 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 16000', 'gtceu:utopian_akreyrium 48000', 'gtceu:naquadria 128000')
             .itemOutputs('kubejs:ancient_stargate_ring_block')
             .duration(20000)
-            .blastFurnaceTemp(12799)
             .EUt(GTValues.VHA[GTValues.UEV]);
 
         event.recipes.gtceu.stargate_component_assembly('ancient_stargate_chevron_block')
-            .itemInputs('kubejs:ancient_stargate_ring_block', '12x kubejs:runic_energized_pathway_plating', '8x kubejs:runic_energized_transportation_plating', '32x kubejs:stargate_rod', 'kubejs:ancient_chevron_disk', '2x kubejs:classic_chevron_assembly')
+            .itemInputs('kubejs:ancient_stargate_ring_block', '12x kubejs:runic_energized_pathway_plating', '8x kubejs:runic_energized_transportation_plating', '32x kubejs:stargate_rod', 'kubejs:ancient_chevron_disk', '64x gtceu:fine_ancient_runicalium_wire')
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 16000', 'gtceu:utopian_akreyrium 24000', 'gtceu:naquadria 72000', 'gtceu:radon 132000')
             .itemOutputs('kubejs:ancient_stargate_chevron_block')
             .duration(32000)
-            .blastFurnaceTemp(12799)
             .EUt(GTValues.VHA[GTValues.UEV]);
 
         event.recipes.gtceu.stargate_component_assembly('ancient_stargate_base_block')
@@ -383,7 +378,6 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 16000', 'gtceu:utopian_akreyrium 24000', 'gtceu:naquadria 72000', 'gtceu:sterilized_growth_medium 18000')
             .itemOutputs('kubejs:ancient_stargate_base_block')
             .duration(48000)
-            .blastFurnaceTemp(12799)
             .EUt(GTValues.VHA[GTValues.UEV]);
 
         //THE Ancient Gate

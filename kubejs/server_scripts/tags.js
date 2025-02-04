@@ -5,6 +5,11 @@ ServerEvents.tags('item', event => {
     event.add('gtceu:circuits/uev', 'kubejs:draconic_wetware_processor_computer');
     event.add('gtceu:circuits/uiv', 'kubejs:draconic_wetware_processor_mainframe');
     event.remove('minecraft:planks', 'gtceu:treated_wood_planks');
+
+    const knifeTagRemove = ['netherite','flint','iron','diamond','golden']    
+    knifeTagRemove.forEach((item)=> {
+        event.remove('forge:tools/knives',`farmersdelight:${item}_knife`)
+    });
     
     event.add('exnihilosequentia:mesh', 'exnihilosequentia:string_mesh');
     event.add('exnihilosequentia:mesh', 'exnihilosequentia:flint_mesh');
@@ -13,9 +18,10 @@ ServerEvents.tags('item', event => {
     event.add('exnihilosequentia:mesh', 'exnihilosequentia:emerald_mesh');
     event.add('exnihilosequentia:mesh', 'exnihilosequentia:netherite_mesh');
 
-    ['diamond', 'emerald', 'ruby', 'green_sapphire', 'sapphire', 'quartzite', 'certus_quartz', 'blue_topaz', 'topaz', 'amethyst'].forEach(type => {
+    ['diamond', 'emerald', 'ruby', 'sapphire', 'quartzite', 'topaz', 'spessartine', `certus_quartz`, `green_sapphire`
+        ,`blue_topaz`,`apatite`, `monazite`].forEach(type => {
         event.add('gtceu:geode', `kubejs:${type}_geode`);
-        event.add('gtceu:cracked_geode', `kubejs:cracked_${type}_geode`);
+        // event.add('gtceu:cracked_geode', `kubejs:cracked_${type}_geode`);
     });
 
     event.add('gtceu:coal_dusts', 'gtceu:charcoal_dust');

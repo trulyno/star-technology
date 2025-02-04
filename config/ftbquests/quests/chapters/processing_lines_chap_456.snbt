@@ -212,6 +212,7 @@
 				{
 					id: "1EDD1FEBA3440319"
 					item: "gtceu:hot_enriched_naquadah_ingot"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1779,14 +1780,11 @@
 			y: 14.0d
 		}
 		{
+			dependencies: ["0AB3A8C14C3A0512"]
 			id: "1505DCF0ED1E24F5"
 			tasks: [{
-				id: "0F95DF643DD25241"
-				item: {
-					Count: 1
-					id: "gtceu:carbon_dust"
-					tag: { }
-				}
+				id: "7E4487CB21D7E72C"
+				item: "gtceu:activated_carbon_dust"
 				type: "item"
 			}]
 			x: 17.5d

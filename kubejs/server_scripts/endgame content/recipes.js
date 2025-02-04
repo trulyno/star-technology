@@ -85,13 +85,11 @@ ServerEvents.recipes(event => {
         .duration(920)
         .EUt(30000);
 
-    event.remove({output: 'gtceu:hot_cerium_tritelluride_ingot'})
-    event.recipes.gtceu.heat_chamber('hot_cerium_tritelluride_ingot')
+    event.recipes.gtceu.mixer('cerium_tritelluride_dust')
         .itemInputs('gtceu:cerium_dust', '3x gtceu:tellurium_dust')
-        .inputFluids('gtceu:xenon 120')
-        .itemOutputs('4x gtceu:hot_cerium_tritelluride_ingot')
-        .duration(5000)
-        .circuit(2)
+        .itemOutputs('4x gtceu:cerium_tritelluride_dust')
+        .duration(900)
+        .circuit(4)
         .EUt((GTValues.VHA[GTValues.UHV]));
 
     event.recipes.gtceu.assembler('zalloy_coil')
