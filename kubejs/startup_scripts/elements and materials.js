@@ -1337,7 +1337,7 @@ materialRegistry(event => {
         .components('1x cerium', '3x tellurium')
         .color(0x6D8B5D)
         .iconSet(DULL)
-        .blastTemp(10699, 'highest', VA('uv'), 3800)
+        .blastTemp(11699, 'highest', VA('uhv'), 1800)
         .flags(bolt_and_screw)
         .cableProperties(V('uev'), 6, 16, false);
 
