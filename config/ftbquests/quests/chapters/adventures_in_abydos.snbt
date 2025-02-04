@@ -31,6 +31,13 @@
 	quests: [
 		{
 			dependencies: ["1FB502D770A4A59B"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "chipped:block/sand/desert_sand"
+				}
+			}
 			id: "493DD013C818BB7B"
 			rewards: [{
 				id: "10AE2BAE3BCD94E8"

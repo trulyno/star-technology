@@ -263,6 +263,13 @@
 		}
 		{
 			can_repeat: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "komarumod:textures/painting/komaru_god.png"
+				}
+			}
 			id: "3883FCBF2C286141"
 			rewards: [
 				{
@@ -277,13 +284,20 @@
 					type: "item"
 				}
 			]
-			shape: "diamond"
+			shape: "square"
 			size: 3.0d
-			tasks: [{
-				id: "4F7887A26E18BC9C"
-				item: "komarumod:komaru_powder"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4F7887A26E18BC9C"
+					item: "komarumod:komaru_powder"
+					type: "item"
+				}
+				{
+					id: "672B1393B2C370E5"
+					title: "Embrace the Komaru"
+					type: "checkmark"
+				}
+			]
 			title: "Komaru Cat"
 			x: 2.0d
 			y: 0.0d
