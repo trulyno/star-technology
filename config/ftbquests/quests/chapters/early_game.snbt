@@ -1883,7 +1883,11 @@
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
-			description: ["Witch Water can be made in a Wooden Barrel with Mycelium Spores and Water."]
+			description: [
+				"Witch Water can be made in a Wooden Barrel with Mycelium Spores and Water."
+				""
+				"Make sure that your Wooden Barrel is on \"Barrel Transformation\" mode. Refer to the Barrel Transformation quest for more information."
+			]
 			id: "7E72B9CC8631769D"
 			rewards: [{
 				id: "386D329F74361582"
