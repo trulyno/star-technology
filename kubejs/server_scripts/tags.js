@@ -92,3 +92,9 @@ ServerEvents.tags('fluid', event=>{
     })
 
 });
+
+ServerEvents.tags('block', event => {
+
+    event.add('minecraft:mineable/pickaxe', /xtonesreworked:glaxx_block_.*/);
+
+});
