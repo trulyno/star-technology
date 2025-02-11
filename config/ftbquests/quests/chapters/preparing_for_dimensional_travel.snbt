@@ -55,7 +55,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["707C2E9BA62A60C5"]
+			dependencies: [
+				"707C2E9BA62A60C5"
+				"02606EBF230281A3"
+			]
 			id: "314B6ABE72E4A438"
 			rewards: [{
 				count: 2

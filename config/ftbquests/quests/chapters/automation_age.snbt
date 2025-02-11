@@ -117,6 +117,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			size: 1.0d
 			tasks: [{
 				id: "4554283A64CAC1E3"
@@ -1331,7 +1332,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 9.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["32EF0A93C1C5F429"]
@@ -1348,9 +1349,14 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 7.5d
+			y: 5.5d
 		}
 		{
+			dependencies: [
+				"71523C429C7CA007"
+				"7AF84C014E136391"
+			]
+			dependency_requirement: "one_completed"
 			description: ["Aquired from Apatite or Monazite processing."]
 			hide_dependency_lines: true
 			id: "32EF0A93C1C5F429"
@@ -1366,7 +1372,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 5.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -2338,6 +2344,31 @@
 			}]
 			x: 5.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["2CABFCC73E33E133"]
+			icon: "gtceu:nand_memory_chip"
+			id: "5026437079530A67"
+			tasks: [
+				{
+					id: "78983E5E875409CA"
+					item: "gtceu:gray_glass_lens"
+					type: "item"
+				}
+				{
+					id: "7A6C4F52309534F7"
+					item: "gtceu:nand_memory_wafer"
+					type: "item"
+				}
+				{
+					id: "1FE495AA709DD162"
+					item: "gtceu:nand_memory_chip"
+					type: "item"
+				}
+			]
+			title: "NAND Memory Chips"
+			x: 16.5d
+			y: 9.5d
 		}
 	]
 	title: "Automation Age"
