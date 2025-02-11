@@ -196,6 +196,25 @@
 			x: 0.0d
 			y: -3.5d
 		}
+		{
+			description: [
+				"Many Greg-Tech machines have a circuit configuration window found on the bottom left of the screen. Each circuit starting from Blank and going up to 32 refers to possible recipes each machine can utilise. "
+				""
+				"To find the circuit configuration your particular recipe requires Click on the arrow between input items and final product boxes to show uses for the given machine. "
+				""
+				"If the recipe does not require a circuit or shows blank select the blank circuit. However if your given recipe shows a circuit with an icon number EG; 4, Then in the circuit configuration screen select the same icon circuit"
+			]
+			icon: "kubejs:ulv_universal_circuit"
+			id: "4DA76C6E904814B7"
+			tasks: [{
+				id: "03B54B3DF767CD51"
+				title: "Ghost Circuits"
+				type: "checkmark"
+			}]
+			title: "Ghost Circuits"
+			x: 1.5d
+			y: -3.5d
+		}
 	]
 	title: "Mechanics"
 }
