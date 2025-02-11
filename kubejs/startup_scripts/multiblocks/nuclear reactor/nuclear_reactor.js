@@ -11,6 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('nuclear_fission')
         .generator(true)
+		.regressWhenWaiting(false)
         .recipeModifier(GTRecipeModifiers.OC_PERFECT)
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()
