@@ -1,0 +1,353 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "so_it_begins"
+	group: "5829B93DCAFAD4B8"
+	icon: "minecraft:oak_log"
+	id: "66020A2C8D2EBB18"
+	order_index: 0
+	progression_mode: "linear"
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["This isn't the normal StarT pack you are used to, if it was an option there, it's time to become an expert here."]
+			id: "11792AD3856CC11A"
+			tasks: [{
+				id: "298B75EABFFE9FCA"
+				title: "So... You have chosen Death"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: 1.5d
+		}
+		{
+			id: "2FB810F2001E58A8"
+			tasks: [{
+				id: "5C2C3D9F4AED61AF"
+				title: "Dev-Note, ULV Tiers"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["11792AD3856CC11A"]
+			description: ["Make Sure to Save 1 for later ;)"]
+			id: "66B461268D304ADD"
+			tasks: [{
+				id: "6FD0B88031F7EFA7"
+				item: "minecraft:dead_bush"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"35A7940BFFC6E33D"
+				"44E7C69C6BC48296"
+			]
+			id: "525886980CC24650"
+			tasks: [{
+				id: "25CC1B94D8AB6D81"
+				item: {
+					Count: 1
+					id: "gtceu:flint_knife"
+					tag: {
+						DisallowContainerItem: 0b
+						Enchantments: [{
+							id: "minecraft:fire_aspect"
+							lvl: 2s
+						}]
+						GT.Behaviours: { }
+						GT.Tool: {
+							AttackDamage: 1.0f
+							AttackSpeed: 3.0f
+							Damage: 0
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1EA467441DE65C0D"]
+			description: [""]
+			id: "34FB1FD1C7726DE6"
+			tasks: [{
+				id: "50425D0FFC7A570B"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			title: "Plant Fiber"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["34776340B3D3F5EF"]
+			id: "44E7C69C6BC48296"
+			tasks: [
+				{
+					id: "7619B1546F2F67A5"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					id: "6C0DF1A7577172D9"
+					title: "Flint Shard (4 make a flint)"
+					type: "checkmark"
+				}
+			]
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["66B461268D304ADD"]
+			id: "35A7940BFFC6E33D"
+			tasks: [{
+				id: "345DFC3F759FEA02"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["34FB1FD1C7726DE6"]
+			id: "469CAF0D80978B00"
+			tasks: [{
+				id: "401FFD2C40092929"
+				item: {
+					Count: 1
+					id: "gtceu:flint_axe"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							DisableShields: 1b
+							TreeFelling: 1b
+						}
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 2
+							MaxDamage: 63
+							ToolSpeed: 3.5f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["469CAF0D80978B00"]
+			id: "7CF45E2FF79F0A97"
+			tasks: [{
+				id: "66F9DEE9F4D69D13"
+				item: "minecraft:stripped_oak_log"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["01DB711C1AC26A98"]
+			id: "218CF08B9647CA00"
+			tasks: [{
+				id: "13E87E6A39CA4E23"
+				item: "exnihilosequentia:oak_crucible"
+				type: "item"
+			}]
+			title: "Man's First Hydration"
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["11792AD3856CC11A"]
+			id: "34776340B3D3F5EF"
+			tasks: [{
+				id: "30428FA6EF3D5BB1"
+				title: "Scavenging"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["469CAF0D80978B00"]
+			id: "2938B6A5159F3BE8"
+			optional: true
+			tasks: [{
+				id: "4D4156F622D3CF0D"
+				item: "farmersdelight:tree_bark"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5A3FCB5053FCD9C7"]
+			id: "24846DA25397B88E"
+			tasks: [{
+				id: "3EE0D008D9470156"
+				item: "minecraft:bowl"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["34FB1FD1C7726DE6"]
+			id: "5A4DF6397D7F2B78"
+			tasks: [{
+				id: "333A1A7D7251C2CC"
+				title: "Flint Saw"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5A4DF6397D7F2B78"
+				"7CF45E2FF79F0A97"
+			]
+			id: "5A3FCB5053FCD9C7"
+			tasks: [{
+				id: "5715AA5A36C268BC"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"218CF08B9647CA00"
+				"24846DA25397B88E"
+			]
+			id: "1810B4921EB6640E"
+			tasks: [{
+				id: "454EDAD5A22558D4"
+				title: "Water Bowl"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1810B4921EB6640E"]
+			description: ["Right Click a Dead Bush with a Water Bowl to re-animate it"]
+			id: "19FF06F95EF022C2"
+			tasks: [{
+				id: "012085D0EEC1A728"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7CF45E2FF79F0A97"
+				"525886980CC24650"
+			]
+			id: "01DB711C1AC26A98"
+			tasks: [
+				{
+					id: "0336AE6F2429BCE9"
+					item: "gtceu:wood_dust"
+					type: "item"
+				}
+				{
+					id: "19A0C03C23D13A9C"
+					title: "Crucible Stages"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["525886980CC24650"]
+			description: ["Break Dead Bushes with a Knife to get this"]
+			id: "1EA467441DE65C0D"
+			tasks: [{
+				id: "2A0BC44BA5E8FAE9"
+				item: "farmersdelight:straw"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1EA467441DE65C0D"]
+			id: "54CFAAE3EA5F56D0"
+			tasks: [{
+				id: "52653090E4BAA766"
+				item: "farmersdelight:canvas"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"54CFAAE3EA5F56D0"
+				"5A3FCB5053FCD9C7"
+			]
+			id: "13F8BDB87F975319"
+			tasks: [{
+				id: "5BBCE8956383BBB0"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["13F8BDB87F975319"]
+			id: "6E3A12D890F663E6"
+			tasks: [{
+				id: "68D560083C8A5ABC"
+				item: {
+					Count: 1
+					id: "gtceu:flint_pickaxe"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 2
+							MaxDamage: 63
+							ToolSpeed: 5.5f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["13F8BDB87F975319"]
+			id: "19A56A31202EC7DA"
+			tasks: [{
+				id: "6171DA64679B4E16"
+				item: "exnihilosequentia:oak_sieve"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+	]
+	title: "So It Begins"
+}
