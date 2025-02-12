@@ -17,6 +17,13 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     //Casings/Coil
+    
+    event.recipes.gtceu.assembler('superconducting_coil_uhv') //UHV tier superconducting coil
+        .itemInputs('4x gtceu:ruthenium_trinium_americium_neutronate_double_wire', '4x gtceu:niobium_titanium_foil')
+        .inputFluids('gtceu:trinium 576')
+        .itemOutputs('gtceu:superconducting_coil')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UHV]);
 
     event.recipes.gtceu.assembler('auxiliary_boosted_fusion_casing_mk1')
         .itemInputs('gtceu:uhv_machine_casing', 'start_core:auxiliary_fusion_coil_mk1', '2x kubejs:uhv_voltage_coil', 'gtceu:uv_field_generator', '6x gtceu:zircalloy_4_plate')
