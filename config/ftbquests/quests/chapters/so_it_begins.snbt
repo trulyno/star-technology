@@ -235,6 +235,7 @@
 			description: ["Right Click a Dead Bush with a Water Bowl to re-animate it"]
 			id: "19FF06F95EF022C2"
 			shape: "gear"
+			size: 1.25d
 			tasks: [{
 				id: "012085D0EEC1A728"
 				item: "minecraft:oak_sapling"
@@ -374,6 +375,7 @@
 			hide_dependent_lines: true
 			id: "6131B93AB7C44162"
 			shape: "gear"
+			size: 1.25d
 			tasks: [{
 				id: "183C7C42A6CF618F"
 				item: "minecraft:dirt"
@@ -391,6 +393,7 @@
 				item: "exnihilosequentia:stone_pebble"
 				type: "item"
 			}]
+			title: "Stones"
 			x: -4.0d
 			y: 6.0d
 		}
@@ -409,15 +412,9 @@
 			dependencies: ["184FE341A3AD7B1E"]
 			id: "246E67D64A5EDF08"
 			tasks: [{
-				id: "2AA00D8E68843864"
-				item: {
-					Count: 1
-					id: "exnihilosequentia:stone_hammer"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
+				id: "4A61C596A256D6F5"
+				title: "Stone GT Hammer"
+				type: "checkmark"
 			}]
 			x: -7.0d
 			y: 6.0d
@@ -785,6 +782,7 @@
 			dependencies: [
 				"2F9B48D51C21F896"
 				"1ABF4784F033D41A"
+				"4C8102F3CE4F6612"
 			]
 			hide_dependent_lines: true
 			id: "7D83A21F7DB27B47"
@@ -890,7 +888,7 @@
 			]
 			title: "Sediments"
 			x: -7.0d
-			y: 12.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["345B75BF519B7702"]
@@ -955,28 +953,27 @@
 					item: "gtceu:lead_ingot"
 					type: "item"
 				}
+				{
+					id: "59C5ABD1129F6E96"
+					title: "Raw Electrum"
+					type: "checkmark"
+				}
 			]
-			x: -4.0d
-			y: 10.5d
+			title: "First Ingots"
+			x: -2.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2CE500506AE84E1A"]
 			id: "1472BFF306FEA342"
-			tasks: [
-				{
-					id: "7525762D9BF50AB0"
-					item: "create:andesite_alloy"
-					type: "item"
-				}
-				{
-					id: "6B917746627B005A"
-					item: "gtceu:electrum_ingot"
-					type: "item"
-				}
-			]
-			title: "Ultra Primitive Alloys"
-			x: -2.5d
-			y: 9.0d
+			tasks: [{
+				id: "7525762D9BF50AB0"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "Ultra Primitive Alloy"
+			x: -5.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["3DCE9199510A9223"]
@@ -1005,12 +1002,146 @@
 					type: "item"
 				}
 				{
-					id: "0ED2DBB0F5F67443"
-					item: "gtceu:tiny_electrum_dust"
-					type: "item"
+					id: "2DF8CDAE918CE405"
+					title: "Raw Electrum Chunk"
+					type: "checkmark"
 				}
 			]
 			x: -5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["67D37BA6B5424768"]
+			description: ["Every greg master needs their toolbelt fully stocked to get their first machines ready. We recommend starting with Iron or Wrought Iron tools, or taking a look at the shop!"]
+			hide_dependent_lines: true
+			id: "5A8DA6D248731FF1"
+			rewards: [{
+				id: "4E2AE4B02C01569A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "12618B113F99E826"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/hammers"
+						}
+					}
+					title: "Any GregTech Hammer"
+					type: "item"
+				}
+				{
+					id: "19B268845F987059"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/files"
+						}
+					}
+					optional_task: true
+					title: "Any GregTech File"
+					type: "item"
+				}
+				{
+					id: "619A0CEC74EA3389"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/screwdrivers"
+						}
+					}
+					optional_task: true
+					title: "Any GregTech Screwdriver"
+					type: "item"
+				}
+				{
+					id: "63BA14714379F4DC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wire_cutters"
+						}
+					}
+					optional_task: true
+					title: "Any GregTech Wire Cutters"
+					type: "item"
+				}
+				{
+					id: "22221BC38E40FA9D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wrenches"
+						}
+					}
+					optional_task: true
+					title: "Any GregTech Wrench"
+					type: "item"
+				}
+				{
+					id: "670C23FBB5279667"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/knives"
+						}
+					}
+					optional_task: true
+					title: "Any GregTech Knife"
+					type: "item"
+				}
+				{
+					id: "35AD9C00CBBD207E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/saws"
+						}
+					}
+					optional_task: true
+					title: "Any GregTech Saw"
+					type: "item"
+				}
+				{
+					id: "4BA30822D2EA85BD"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mortars"
+						}
+					}
+					optional_task: true
+					title: "Any GregTech Mortar"
+					type: "item"
+				}
+				{
+					id: "41DF01DE9D4814D1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mallets"
+						}
+					}
+					optional_task: true
+					title: "Any GregTech Mallet"
+					type: "item"
+				}
+			]
+			title: "More Tools"
+			x: -1.0d
 			y: 9.0d
 		}
 	]
