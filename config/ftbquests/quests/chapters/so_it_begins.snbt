@@ -1061,7 +1061,7 @@
 			id: "2E686BE355CCF22E"
 			tasks: [{
 				id: "29F6C9DAB2E36890"
-				title: "Primitive Assembly"
+				title: "Primitive Workshop"
 				type: "checkmark"
 			}]
 			x: -2.5d
@@ -1214,8 +1214,8 @@
 				item: "create:mechanical_saw"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 13.5d
+			x: -1.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["6C4B325AEF8A5B7D"]
@@ -1352,7 +1352,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
@@ -1374,7 +1374,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1AD7CB6C61196D5C"]
@@ -1389,7 +1389,7 @@
 			}]
 			title: "INFINITE WATER"
 			x: 6.5d
-			y: -3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1472BFF306FEA342"]
@@ -1430,8 +1430,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: 12.0d
+			x: -2.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["6994BA308DC55ED2"]
@@ -1449,7 +1449,7 @@
 				}
 			]
 			title: "Pig Iron"
-			x: 0.5d
+			x: -1.0d
 			y: 13.5d
 		}
 		{
@@ -1460,7 +1460,7 @@
 				item: "create:encased_fan"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.5d
 			y: 13.5d
 		}
 		{
@@ -1472,7 +1472,7 @@
 				type: "checkmark"
 			}]
 			x: 2.0d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["65DA1BDA4D9A9B56"]
@@ -1496,7 +1496,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 13.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["65DA1BDA4D9A9B56"]
@@ -1507,7 +1507,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["7525BDACB9A9AC41"]
@@ -1521,26 +1521,29 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["153EBFA7C41BE761"]
+			dependencies: [
+				"153EBFA7C41BE761"
+				"456934A9D2781CAD"
+			]
 			id: "684FAA520167CC51"
 			tasks: [{
-				id: "7B4C73E4ED003814"
-				title: "Advanced Primitive Assembly"
-				type: "checkmark"
+				id: "5344AAAA782FE971"
+				item: "create:mechanical_crafter"
+				type: "item"
 			}]
 			x: 6.5d
 			y: 10.5d
 		}
 		{
-			dependencies: ["684FAA520167CC51"]
+			dependencies: ["7525BDACB9A9AC41"]
 			id: "224916FFC857C099"
 			tasks: [{
 				id: "666AF49A691416E1"
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 10.5d
+			x: 3.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["684FAA520167CC51"]
@@ -1591,8 +1594,8 @@
 				title: "Sequenced Assembly"
 				type: "checkmark"
 			}]
-			x: 9.5d
-			y: 10.5d
+			x: 2.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["19A0099F62CB5FF1"]
@@ -1658,8 +1661,8 @@
 		}
 		{
 			dependencies: [
-				"684FAA520167CC51"
 				"5DD3CFCC30CAF33A"
+				"7525BDACB9A9AC41"
 			]
 			id: "59A805C314717BA0"
 			tasks: [{
@@ -1667,8 +1670,8 @@
 				item: "gtceu:primitive_ore_factory"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 9.0d
+			x: 5.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["59A805C314717BA0"]
@@ -1678,8 +1681,8 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 7.5d
+			x: 8.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["59A805C314717BA0"]
@@ -1689,8 +1692,8 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 9.0d
+			x: 6.5d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -1703,8 +1706,8 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 6.0d
+			x: 8.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["684FAA520167CC51"]
@@ -1715,7 +1718,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 12.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["5880CFBC8A0DC3C4"]
@@ -1728,8 +1731,19 @@
 				type: "item"
 			}]
 			title: "COBBLE GEN"
+			x: 8.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["60F06370DBED59EB"]
+			id: "31E3FA832F85F262"
+			tasks: [{
+				id: "22979B73743FCE7A"
+				title: "Steam Workshop"
+				type: "checkmark"
+			}]
 			x: 9.5d
-			y: 12.0d
+			y: 15.0d
 		}
 	]
 	title: "So It Begins"
