@@ -6,6 +6,24 @@
 	hide_quest_until_deps_complete: true
 	icon: "minecraft:oak_log"
 	id: "66020A2C8D2EBB18"
+	images: [
+		{
+			height: 1.0d
+			image: "minecraft:block/water_flow"
+			rotation: 0.0d
+			width: 0.03125d
+			x: 5.0d
+			y: 12.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/water_flow"
+			rotation: 0.0d
+			width: 0.03125d
+			x: 5.5d
+			y: 12.0d
+		}
+	]
 	order_index: 0
 	progression_mode: "linear"
 	quest_links: [ ]
@@ -22,24 +40,21 @@
 			y: 0.0d
 		}
 		{
-			id: "2FB810F2001E58A8"
-			tasks: [{
-				id: "5C2C3D9F4AED61AF"
-				title: "Dev-Note, ULV Tiers"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: -6.0d
-		}
-		{
 			dependencies: ["11792AD3856CC11A"]
 			description: ["Make Sure to Save 1 for later ;)"]
 			id: "66B461268D304ADD"
-			tasks: [{
-				id: "6FD0B88031F7EFA7"
-				item: "minecraft:dead_bush"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6FD0B88031F7EFA7"
+					item: "minecraft:dead_bush"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2D04613D8D9671E5"
+					type: "checkmark"
+				}
+			]
 			x: -8.5d
 			y: -1.5d
 		}
@@ -172,11 +187,19 @@
 			dependencies: ["469CAF0D80978B00"]
 			id: "2938B6A5159F3BE8"
 			optional: true
-			tasks: [{
-				id: "4D4156F622D3CF0D"
-				item: "farmersdelight:tree_bark"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4D4156F622D3CF0D"
+					item: "farmersdelight:tree_bark"
+					type: "item"
+				}
+				{
+					id: "20050F92584F88C9"
+					item: "gtceu:sticky_resin"
+					type: "item"
+				}
+			]
+			title: "Bark 'n Sap"
 			x: -4.0d
 			y: -3.0d
 		}
@@ -241,6 +264,7 @@
 				item: "minecraft:oak_sapling"
 				type: "item"
 			}]
+			title: "INFINITE WOOD"
 			x: 0.5d
 			y: -3.0d
 		}
@@ -381,7 +405,7 @@
 				item: "minecraft:dirt"
 				type: "item"
 			}]
-			title: "Infinite Dirt"
+			title: "INFINITE DIRT"
 			x: -1.0d
 			y: 6.0d
 		}
@@ -712,7 +736,7 @@
 				type: "checkmark"
 			}]
 			x: 5.0d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -914,7 +938,7 @@
 				"3D9B291441B63F78"
 				"1A34B55754A8965F"
 			]
-			description: ["3x3x3 Multiblock, Primitive so Consumes Charcoal"]
+			description: ["Primitive so Consumes Charcoal"]
 			id: "2CE500506AE84E1A"
 			tasks: [{
 				id: "742AD52027EF44B6"
@@ -936,25 +960,30 @@
 				{
 					id: "083DBA2F192B30A2"
 					item: "minecraft:copper_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "24373FC3CD5952E9"
 					item: "gtceu:tin_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "26015FA48220AAEC"
 					item: "gtceu:zinc_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "6BFFAD60CF6EBEB4"
 					item: "gtceu:lead_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "59C5ABD1129F6E96"
+					optional_task: true
 					title: "Raw Electrum"
 					type: "checkmark"
 				}
@@ -976,12 +1005,15 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["3DCE9199510A9223"]
+			dependencies: [
+				"3DCE9199510A9223"
+				"7D83A21F7DB27B47"
+			]
 			hide_dependent_lines: true
 			id: "3D9B291441B63F78"
 			tasks: [{
 				id: "6CF7F04C47BC4D28"
-				title: "Reinforced Bricks"
+				title: "Reinforced Stone Bricks"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1011,32 +1043,69 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["67D37BA6B5424768"]
-			description: ["Every greg master needs their toolbelt fully stocked to get their first machines ready. We recommend starting with Iron or Wrought Iron tools, or taking a look at the shop!"]
-			hide_dependent_lines: true
-			id: "5A8DA6D248731FF1"
-			rewards: [{
-				id: "4E2AE4B02C01569A"
-				item: "kubejs:coin"
+			dependencies: ["1472BFF306FEA342"]
+			id: "1B660E1DA8714AC5"
+			tasks: [{
+				id: "2E1831CA21C379F9"
+				item: "create:andesite_casing"
 				type: "item"
 			}]
-			shape: "gear"
-			size: 1.25d
+			x: -4.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"1B660E1DA8714AC5"
+				"67D37BA6B5424768"
+			]
+			id: "2E686BE355CCF22E"
+			tasks: [{
+				id: "29F6C9DAB2E36890"
+				title: "Primitive Assembly"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["2E686BE355CCF22E"]
+			description: ["Finally Plates"]
+			hide_dependent_lines: true
+			id: "280AD7F16F6654B4"
+			tasks: [{
+				id: "23E1180115DE01C4"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "Pressing"
+			x: -4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["67D37BA6B5424768"]
+			id: "4F89E871129D842B"
+			tasks: [{
+				id: "7E83DD6E360104F0"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/mortars"
+					}
+				}
+				title: "Any #forge:tools/mortars"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["280AD7F16F6654B4"]
+			hide_dependent_lines: true
+			id: "6BDAD6B19DE942D8"
 			tasks: [
 				{
-					id: "12618B113F99E826"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/hammers"
-						}
-					}
-					title: "Any GregTech Hammer"
-					type: "item"
-				}
-				{
-					id: "19B268845F987059"
+					id: "3A610B24623D0445"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
@@ -1044,38 +1113,11 @@
 							value: "forge:tools/files"
 						}
 					}
-					optional_task: true
-					title: "Any GregTech File"
+					title: "Any #forge:tools/files"
 					type: "item"
 				}
 				{
-					id: "619A0CEC74EA3389"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/screwdrivers"
-						}
-					}
-					optional_task: true
-					title: "Any GregTech Screwdriver"
-					type: "item"
-				}
-				{
-					id: "63BA14714379F4DC"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/wire_cutters"
-						}
-					}
-					optional_task: true
-					title: "Any GregTech Wire Cutters"
-					type: "item"
-				}
-				{
-					id: "22221BC38E40FA9D"
+					id: "1D62939E8856B27D"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
@@ -1083,66 +1125,383 @@
 							value: "forge:tools/wrenches"
 						}
 					}
-					optional_task: true
-					title: "Any GregTech Wrench"
-					type: "item"
-				}
-				{
-					id: "670C23FBB5279667"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/knives"
-						}
-					}
-					optional_task: true
-					title: "Any GregTech Knife"
-					type: "item"
-				}
-				{
-					id: "35AD9C00CBBD207E"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/saws"
-						}
-					}
-					optional_task: true
-					title: "Any GregTech Saw"
-					type: "item"
-				}
-				{
-					id: "4BA30822D2EA85BD"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/mortars"
-						}
-					}
-					optional_task: true
-					title: "Any GregTech Mortar"
-					type: "item"
-				}
-				{
-					id: "41DF01DE9D4814D1"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/mallets"
-						}
-					}
-					optional_task: true
-					title: "Any GregTech Mallet"
+					title: "Any #forge:tools/wrenches"
 					type: "item"
 				}
 			]
-			title: "More Tools"
-			x: -1.0d
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4F89E871129D842B"]
+			id: "6FEC217C4653943D"
+			tasks: [{
+				id: "4D6F134A67F24A2B"
+				title: "Coke Clay Mixture"
+				type: "checkmark"
+			}]
+			x: 0.5d
 			y: 9.0d
+		}
+		{
+			dependencies: ["4F89E871129D842B"]
+			id: "1585BE531365AF58"
+			tasks: [{
+				id: "2653329D5FF171FE"
+				item: "gtceu:fireclay_dust"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"280AD7F16F6654B4"
+				"6FEC217C4653943D"
+			]
+			id: "46CC887716798AA2"
+			tasks: [{
+				id: "587911162E85385C"
+				item: "gtceu:compressed_coke_clay"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"280AD7F16F6654B4"
+				"1585BE531365AF58"
+			]
+			id: "48CDFF57752F346C"
+			tasks: [{
+				id: "62CD08A583C40E0C"
+				item: "gtceu:compressed_fireclay"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"280AD7F16F6654B4"
+				"19A0099F62CB5FF1"
+			]
+			id: "0D24BB28465CF80B"
+			tasks: [{
+				id: "00BEB7BDA2166E8C"
+				item: "gtceu:compressed_clay"
+				type: "item"
+			}]
+			title: "Cheaper Brick"
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"2E686BE355CCF22E"
+				"280AD7F16F6654B4"
+			]
+			description: [
+				"Rods now Too!"
+				""
+				"Uses Iron Buzzsaw"
+			]
+			hide_dependent_lines: true
+			id: "6C4B325AEF8A5B7D"
+			tasks: [{
+				id: "55D3DE910B864083"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6C4B325AEF8A5B7D"]
+			hide_dependent_lines: true
+			id: "68A24B2BB277BA45"
+			tasks: [{
+				id: "0F765A1B641CB84A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/screwdrivers"
+					}
+				}
+				title: "Any #forge:tools/screwdrivers"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6C4B325AEF8A5B7D"
+				"280AD7F16F6654B4"
+			]
+			hide_dependent_lines: true
+			id: "48B8973C46A0351B"
+			tasks: [{
+				id: "3453BF1940B80231"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/wire_cutters"
+					}
+				}
+				title: "Any #forge:tools/wire_cutters"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"6C4B325AEF8A5B7D"
+				"4917BE27976C3A9A"
+			]
+			id: "19A0099F62CB5FF1"
+			tasks: [{
+				id: "7559219C5C42FFDF"
+				title: "Kiln"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"19A0099F62CB5FF1"
+				"46CC887716798AA2"
+			]
+			id: "4704469990C5A245"
+			tasks: [{
+				id: "69B58B8B9D19A7AC"
+				item: "gtceu:coke_oven_brick"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"19A0099F62CB5FF1"
+				"48CDFF57752F346C"
+			]
+			id: "58DD6B6A71F9139F"
+			tasks: [{
+				id: "0C502ABA0C3AF932"
+				item: "gtceu:firebrick"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"4704469990C5A245"
+				"7D83A21F7DB27B47"
+			]
+			id: "0E8EDAF4C5B68057"
+			tasks: [{
+				id: "4184E1D0F1366AE2"
+				item: "gtceu:coke_oven_bricks"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"58DD6B6A71F9139F"
+				"7D83A21F7DB27B47"
+			]
+			id: "5DD3CFCC30CAF33A"
+			tasks: [{
+				id: "7E65578747AB1D75"
+				item: "gtceu:firebricks"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0E8EDAF4C5B68057"]
+			id: "4F13AF131EC84DAA"
+			tasks: [{
+				id: "16EC2C599F130527"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["29DBC6F4A10C5667"]
+			id: "1B5EA867C67903E4"
+			tasks: [{
+				id: "254F957E3058EA32"
+				item: "gtceu:treated_wood_planks"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F13AF131EC84DAA"]
+			id: "29DBC6F4A10C5667"
+			tasks: [{
+				id: "2A5051DA1962BF4C"
+				item: "gtceu:creosote_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1B5EA867C67903E4"]
+			id: "1AD7CB6C61196D5C"
+			tasks: [{
+				id: "0795D2E2F3391816"
+				item: "gtceu:primitive_pump"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1AD7CB6C61196D5C"]
+			id: "4CAFA9D7AA135E15"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "Finally"
+			tasks: [{
+				id: "28E7ED6421178491"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			title: "INFINITE WATER"
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1472BFF306FEA342"]
+			id: "369414ED645535EF"
+			tasks: [{
+				id: "53BFE18B52A7AD9C"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			title: "First SU"
+			x: -5.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["2E686BE355CCF22E"]
+			description: ["Uses Metal Ball Bearing"]
+			id: "73E5BE92A7CF6543"
+			tasks: [{
+				id: "5B212FF38F4036E6"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["2E686BE355CCF22E"]
+			id: "6994BA308DC55ED2"
+			tasks: [
+				{
+					id: "681F92EB5793C805"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "0A5F15732C8A4A05"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6994BA308DC55ED2"]
+			id: "60B2BEDDA1D66001"
+			tasks: [
+				{
+					id: "7FC920D077117064"
+					title: "Pig Iron Dust"
+					type: "checkmark"
+				}
+				{
+					id: "14BBC4573A1C376F"
+					title: "Pig Iron"
+					type: "checkmark"
+				}
+			]
+			title: "Pig Iron"
+			x: 0.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["60B2BEDDA1D66001"]
+			id: "714CA5ED83124FE1"
+			tasks: [{
+				id: "00E741BFE38E92DB"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["714CA5ED83124FE1"]
+			id: "65DA1BDA4D9A9B56"
+			tasks: [{
+				id: "161C9BDE1EF3DAB7"
+				title: "Superheated Burners"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["65DA1BDA4D9A9B56"]
+			id: "684AACAB2A933227"
+			tasks: [{
+				id: "501C893C1492CD26"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["65DA1BDA4D9A9B56"]
+			id: "60F06370DBED59EB"
+			tasks: [{
+				id: "4A88DB7B6F2C72C6"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["65DA1BDA4D9A9B56"]
+			id: "7525BDACB9A9AC41"
+			tasks: [{
+				id: "3933CE4E58750944"
+				item: "gtceu:brass_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 12.0d
 		}
 	]
 	title: "So It Begins"
