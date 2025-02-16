@@ -6,4 +6,11 @@ ServerEvents.tags('block', event => {
         event.add('minecraft:needs_iron_tool', `minecraft:`+log+`_wood`);
         event.add('minecraft:needs_iron_tool', `minecraft:`+log+`_log`)});
 
+    
+});
+
+ServerEvents.tags('item', event => {
+    
+    event.remove('forge:tools/mortars','gtceu:flint_mortar');
+
 });

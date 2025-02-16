@@ -5,11 +5,11 @@ ServerEvents.recipes(event => {
     ];
 
     const toRemoveIdHM = [
-        
+        'gtceu:shaped/mortar_flint'
     ];
 
     const toRemoveTypeHM = [
-        
+        'minecraft:enchantment'
     ];
 
     const toRemoveTypeInputHM = [
@@ -36,3 +36,4 @@ ServerEvents.recipes(event => {
     
     
 })
+
