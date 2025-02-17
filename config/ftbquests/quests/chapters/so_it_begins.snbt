@@ -1742,8 +1742,86 @@
 				title: "Steam Workshop"
 				type: "checkmark"
 			}]
-			x: 9.5d
+			x: 11.0d
 			y: 15.0d
+		}
+		{
+			dependencies: ["4CAFA9D7AA135E15"]
+			id: "6A03D191A42F4F4C"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "If you're playing this you'll need to do this often"
+			tasks: [{
+				id: "013F63B1644A8FC0"
+				item: "minecraft:grass_block"
+				type: "item"
+			}]
+			title: "You Can Finally Touch Grass"
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"31E3FA832F85F262"
+				"462DF26BFED5FFBA"
+			]
+			id: "3B445A3D85B2678C"
+			tasks: [{
+				id: "756B4663EAC9A853"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 13.5d
+		}
+		{
+			id: "70A7945B18761012"
+			tasks: [{
+				id: "55F7980B96509F73"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"First Steam Boilers\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_liquid_boiler"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 12.0d
+		}
+		{
+			id: "2B37A0DFEA5A831D"
+			tasks: [{
+				id: "44A8201045C24FF5"
+				item: "gtceu:red_alloy_ingot"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31E3FA832F85F262"]
+			id: "50F2743FA699173A"
+			tasks: [{
+				id: "72C63392D81ADC2F"
+				item: "gtceu:bronze_brick_casing"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 12.0d
 		}
 	]
 	title: "So It Begins"
