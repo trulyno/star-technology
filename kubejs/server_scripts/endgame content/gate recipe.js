@@ -252,7 +252,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.LuV]);
 
     event.recipes.gtceu.assembly_line('classic_chevron_disk')
-        .itemInputs('gtceu:prismalium_frame', 'gtceu:exquisite_naquadic_netherite_gem', '8x gtceu:wetware_processor_mainframe', '6x gtceu:uv_sensor', '6x gtceu:uv_emitter', '6x gtceu:uv_field_generator', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip')
+        .itemInputs('gtceu:prismalium_frame', 'gtceu:exquisite_naquadic_netherite_gem', '8x #gtceu:circuits/uhv', '6x gtceu:uv_sensor', '6x gtceu:uv_emitter', '6x gtceu:uv_field_generator', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip')
         .inputFluids('gtceu:naquadria 48000', 'gtceu:borosilicate_glass 136000')
         .itemOutputs('kubejs:classic_chevron_disk')
         .duration(6000)
