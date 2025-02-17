@@ -906,7 +906,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["7AC55BA8BDD0F3D2"]
+			dependencies: [
+				"7AC55BA8BDD0F3D2"
+				"4F3EE28B3F38FC85"
+			]
 			id: "6C8C6EA426060065"
 			rewards: [{
 				count: 2
@@ -925,8 +928,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
-			y: 0.0d
+			x: -1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7AC55BA8BDD0F3D2"]
@@ -942,7 +945,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3540AE6C940F985B"]
@@ -1348,7 +1351,7 @@
 				type: "checkmark"
 			}]
 			x: -5.5d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1436,7 +1439,7 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
+			x: 2.5d
 			y: 2.0d
 		}
 		{
@@ -1481,7 +1484,7 @@
 			]
 			title: "UEPIC Chips"
 			x: -3.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2C354B0735DF8023"]
@@ -1730,6 +1733,22 @@
 			}]
 			x: 0.5d
 			y: -10.0d
+		}
+		{
+			dependencies: ["43DAD4B63603BFC3"]
+			id: "4F3EE28B3F38FC85"
+			rewards: [{
+				id: "7B18F86418699D3C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "182B26D1D8FAF134"
+				item: "kubejs:wetware_based_runic_neuroloom"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
 		}
 	]
 	title: "Adventures in Abydos"
