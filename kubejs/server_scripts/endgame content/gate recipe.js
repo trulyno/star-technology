@@ -332,7 +332,7 @@ ServerEvents.recipes(event => {
 
         //Hell Core
         event.recipes.gtceu.assembly_line('hell_core')
-            .itemInputs('gtceu:ancient_runicalium_frame','36x gtceu:dense_obsidian_plate','16x minecraft:blaze_powder','16x minecraft:blaze_powder','48x gtceu:uhv_field_generator', '32x kubejs:uhv_catalyst_core', '32x kubejs:uhv_catalyst_core','16x gtceu:uhv_sensor')
+            .itemInputs('gtceu:ancient_runicalium_frame','6x gtceu:dense_obsidian_plate','16x minecraft:blaze_powder','16x minecraft:blaze_powder','48x gtceu:uhv_field_generator', '32x kubejs:uhv_catalyst_core', '32x kubejs:uhv_catalyst_core','16x gtceu:uhv_sensor')
             .inputFluids('minecraft:lava 500000','gtceu:blaze 250000','gtceu:utopian_akreyrium 50000')
             .itemOutputs('kubejs:hell_core')
             .duration(18000)
@@ -346,7 +346,7 @@ ServerEvents.recipes(event => {
 
         //Void Core
         event.recipes.gtceu.assembly_line('void_core')
-            .itemInputs('gtceu:ancient_runicalium_frame','36x gtceu:dense_obsidian_plate','16x minecraft:ender_pearl','16x minecraft:ender_pearl','48x gtceu:uhv_field_generator', '32x kubejs:uhv_catalyst_core', '32x kubejs:uhv_catalyst_core','16x gtceu:uhv_sensor')
+            .itemInputs('gtceu:ancient_runicalium_frame','6x gtceu:dense_obsidian_plate','16x minecraft:ender_pearl','16x minecraft:ender_pearl','48x gtceu:uhv_field_generator', '32x kubejs:uhv_catalyst_core', '32x kubejs:uhv_catalyst_core','16x gtceu:uhv_sensor')
             .inputFluids('gtceu:echo_r 500000','thermal:ender 250000','gtceu:utopian_akreyrium 50000')
             .itemOutputs('kubejs:void_core')
             .duration(18000)

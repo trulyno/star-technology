@@ -553,7 +553,7 @@
 				item: "gtceu:melodium_single_wire"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 5.0d
 			y: 4.5d
 		}
 		{
@@ -569,7 +569,7 @@
 				item: "gtceu:melodium_ingot"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 5.0d
 			y: 2.5d
 		}
 		{
@@ -589,7 +589,7 @@
 				item: "gtceu:stellarium_ingot"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 7.0d
 			y: 2.5d
 		}
 		{
@@ -605,7 +605,7 @@
 				item: "gtceu:stellarium_single_wire"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 7.0d
 			y: 4.5d
 		}
 		{
@@ -653,7 +653,10 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["6D169C5E35C9EF6C"]
+			dependencies: [
+				"6D169C5E35C9EF6C"
+				"1102670352911334"
+			]
 			description: ["Try a variety of singularities so that you don't drain yourself of 1 material"]
 			id: "0508AE03C730BE6C"
 			rewards: [{
@@ -1596,6 +1599,144 @@
 			}]
 			x: -9.0d
 			y: 3.25d
+		}
+		{
+			dependencies: ["630F50E03EC3D144"]
+			id: "1102670352911334"
+			rewards: [{
+				id: "256ED95E87DEA426"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "02E1F6A2DCF9CD07"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:gold"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6D6D20417495FCED"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:nickel"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6D1422700BCD5EDF"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:lead"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0210836066D09A35"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:iron"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1733575CA240FE1A"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:copper"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "087315C6FEF9218E"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:platinum"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7AE4D886A5F2911A"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:tin"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6F69E130B21AC5EC"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:aluminium"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "477D63A1113A02D8"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:silver"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Singularities"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["52B553FDB34B1475"]
+			id: "630F50E03EC3D144"
+			rewards: [{
+				id: "3264040D4AF02053"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "216373443959C451"
+				item: "gtceu:large_quantum_compressor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
 		}
 	]
 	title: "Making the Classic Stargate"
