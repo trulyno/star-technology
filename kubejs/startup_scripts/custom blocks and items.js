@@ -11,7 +11,7 @@ StartupEvents.registry('item', event => {
 
     event.create('highly_enriched_uranium_fuel_rod')
         .displayName('Highly Enriched Uranium Fuel Rod')
-        .tooltip('20 BILLION CALORIES :trolllaugh:')
+        .tooltip('§220 BILLION CALORIES')
         .texture('kubejs:item/nuclear_rods/high_enriched_uranium_fuel_rod');
 
     event.create('low_enriched_uranium_fuel_rod')
@@ -24,7 +24,7 @@ StartupEvents.registry('item', event => {
 
     event.create('depleted_highly_enriched_uranium_fuel_rod')
         .displayName('Depleted Highly Enriched Uranium Fuel Rod')
-        .tooltip('No more 20 billion calories :waaaaaaaaah')
+        .tooltip('§7No more 20 billion calories')
         .texture('kubejs:item/nuclear_rods/depleted_high_enriched_uranium_rod');
 
     event.create('depleted_low_enriched_uranium_fuel_rod')
@@ -59,37 +59,37 @@ StartupEvents.registry('item', event => {
 
     event.create('3d_nand_chip')
         .displayName('3D-NAND Memory Chip Array')
-        .tooltip('Complex NAND Logic Gate')
+        .tooltip('§7Complex NAND Logic Gate')
         .texture('kubejs:item/chips_n_wafers/3d_nand')
 
     event.create('3d_nor_chip')
         .displayName('3D-NOR Memory Chip Array')
-        .tooltip('Complex NOR Logic Gate')
+        .tooltip('§7Complex NOR Logic Gate')
         .texture('kubejs:item/chips_n_wafers/3d_nor')
 
     event.create('qram_wafer')
         .displayName('qRAM Wafer')
-        .tooltip('Raw Quantum Memory')
+        .tooltip('§7Raw Quantum Memory')
         .texture('kubejs:item/chips_n_wafers/qram_wafer')
 
     event.create('qram_chip')
         .displayName('qRAM Chip')
-        .tooltip('Quantum Random Access Memory')
+        .tooltip('§7Quantum Random Access Memory')
         .texture('kubejs:item/chips_n_wafers/qram_chip')
 
     event.create('uepic_wafer')
         .displayName('UEPIC Wafer')
-        .tooltip('Raw Ultra Excessive Power Circuit')
+        .tooltip('§7Raw Ultra Excessive Power Circuit')
         .texture('kubejs:item/chips_n_wafers/uepic_wafer')
 
     event.create('uepic_chip')
         .displayName('UEPIC Chip')
-        .tooltip('Ultra Excessive Power IC')
+        .tooltip('§7Ultra Excessive Power IC')
         .texture('kubejs:item/chips_n_wafers/uepic_chip')
 
     event.create('wetware_based_runic_neuroloom')
-        .displayName('Wetware based Runic Neuroloom')
-        .tooltip('§7Wetware Pushed to the EXTREME')
+        .displayName('Wetware-based Runic Neuroloom')
+        .tooltip('§7Wetware Pushed to the §6§oEXTREME')
         .tooltip('§4UEV-Tier Circuit')
         .texture('kubejs:item/circuits/wetware_based_runic_neuroloom')
             
@@ -103,7 +103,7 @@ StartupEvents.registry('item', event => {
 
     event.create('draconic_neuro_processing_unit')
         .displayName('Draconic Neuro Processing Unit')
-        .tooltip('Neuro-sama!')
+        .tooltip('§d§oNeuro-sama!')
         .texture('kubejs:item/circuits/draconic_neuro_processing_unit');
 
     event.create('draconic_wetware_microchip_processor')
@@ -279,7 +279,7 @@ StartupEvents.registry('item', event => {
     event.create('draconic_coordinate_core')
         .displayName('Draconic Coordinate Core')
         .rarity('epic')
-        .tooltip('The Ultimate Eye of Ender')
+        .tooltip('§oThe Ultimate Eye of Ender')
         .texture('kubejs:item/gate_items/draconic_core');
 
     event.create('hell_core')
@@ -390,35 +390,35 @@ StartupEvents.registry('item', event => {
         event.create(`${tier}_computational_matrix`)
             .texture(`kubejs:item/component_part/${tier}_computational_matrix`)
             .displayName(`${tier_proper} Computational Matrix`)
-            .tooltip('The Brains of Components');
+            .tooltip('§7The Brains of Components');
         event.create(`${tier}_transmission_assembly`)
             .texture(`kubejs:item/component_part/${tier}_transmission_assembly`)
             .displayName(`${tier_proper} Transimission Assembly`)
-            .tooltip('Top Tier Gear Box');
+            .tooltip('§7Top Tier Gear Box');
         event.create(`${tier}_precision_drive_mechanism`)
             .texture(`kubejs:item/component_part/${tier}_precision_drive_mechanism`)
             .displayName(`${tier_proper} Precision Drive Mechanism`)
-            .tooltip('Exact Speeds');
+            .tooltip('§7Exact Speeds');
         event.create(`${tier}_microfluidic_flow_valve`)
             .texture(`kubejs:item/component_part/${tier}_microfluidic_flow_valve`)
             .displayName(`${tier_proper} Micro-Fluidic Flow Valve`)
-            .tooltip('Just the Right Amount of Fluid');
+            .tooltip('§7Just the Right Amount of Fluid');
         event.create(`${tier}_super_magnetic_core`)
             .texture(`kubejs:item/component_part/${tier}_super_magnetic_core`)
             .displayName(`${tier_proper} Super Magnetic Core`)
-            .tooltip('Most Attractive Thing Here');
+            .tooltip('§7Most Attractive Thing Here');
         event.create(`${tier}_catalyst_core`)
             .texture(`kubejs:item/component_part/${tier}_catalyst_core`)
             .displayName(`${tier_proper} Catalyst Core`)
-            .tooltip('Contained Mysticality');
+            .tooltip('§7Contained Mysticality');
         event.create(`${tier}_high_strength_panel`)
             .texture(`kubejs:item/component_part/${tier}_high_strength_panel`)
             .displayName(`${tier_proper} High Strength Panel`)
-            .tooltip('The Strongest Plate');
+            .tooltip('§7The Strongest Plate');
         event.create(`${tier}_micropower_router`)
             .texture(`kubejs:item/component_part/${tier}_micropower_router`)
             .displayName(`${tier_proper} Micro-Power Router`)
-            .tooltip('A Shocking Addition');
+            .tooltip('§7A Shocking Addition');
 
     });
 
