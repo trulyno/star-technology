@@ -285,6 +285,7 @@
 		}
 		{
 			dependencies: ["05EEBCD256194C78"]
+			hide_dependent_lines: true
 			id: "78777C3EE2DA5D0F"
 			rewards: [{
 				id: "2C20A0EE0D59D513"
@@ -296,8 +297,8 @@
 				item: "gtceu:uhv_electric_pump"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -9.5d
+			x: -8.5d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -395,6 +396,7 @@
 				"77E6700262CDB4E0"
 				"4DD3C38FCD8D704D"
 			]
+			hide_dependent_lines: true
 			id: "2D064F759D13FE4B"
 			rewards: [{
 				id: "676FF576AA972E2D"
@@ -1416,7 +1418,6 @@
 				"78777C3EE2DA5D0F"
 				"2D064F759D13FE4B"
 			]
-			hide_dependency_lines: true
 			id: "1C9396E2587051F7"
 			rewards: [{
 				id: "170A7AD04A8BFCA6"
