@@ -86,7 +86,13 @@ StartupEvents.registry('item', event => {
         .displayName('UEPIC Chip')
         .tooltip('Ultra Excessive Power IC')
         .texture('kubejs:item/chips_n_wafers/uepic_chip')
-    
+
+    event.create('wetware_based_runic_neuroloom')
+        .displayName('Wetware based Runic Neuroloom')
+        .tooltip('§7Wetware Pushed to the EXTREME')
+        .tooltip('§4UEV-Tier Circuit')
+        .texture('kubejs:item/circuits/wetware_based_runic_neuroloom')
+            
     event.create('draconic_wetware_circuit_board')
         .displayName('Draconic Wetware Circuit Board')
         .texture('kubejs:item/circuits/draconic_wetware_circuit_board');
