@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     //Controller Blocks
     
     event.recipes.gtceu.assembly_line('uhv_auxiliary_boosted_fusion_reactor')
-        .itemInputs('start_core:auxiliary_fusion_coil_mk1', '4x kubejs:uhv_computational_matrix', 'gtceu:gravi_star', 'gtceu:double_zircalloy_4_plate',
+        .itemInputs('start_core:auxiliary_fusion_coil_mk1', '4x #gtceu:circuits/uev', 'gtceu:gravi_star', 'gtceu:double_zircalloy_4_plate',
                 '2x gtceu:uv_field_generator', '64x kubejs:uepic_chip', '32x kubejs:uepic_chip', '32x gtceu:ruthenium_trinium_americium_neutronate_single_wire')
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1152', 'gtceu:zirconium_selenide_diiodide 1152')
         .itemOutputs('start_core:uhv_auxiliary_boosted_fusion_reactor')

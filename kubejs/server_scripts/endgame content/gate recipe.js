@@ -282,7 +282,7 @@ ServerEvents.recipes(event => {
 
         //Chevrons
         event.recipes.gtceu.assembly_line('classic_chevron_assembly')
-            .itemInputs('gtceu:stellarium_frame', 'kubejs:classic_chevron_disk', 'kubejs:classic_chevron_disk', 'kubejs:classic_chevron_disk', '6x kubejs:uhv_computational_matrix', '8x kubejs:uhv_catalyst_core', '24x kubejs:uhv_super_magnetic_core', '12x kubejs:uhv_high_strength_panel')
+            .itemInputs('gtceu:stellarium_frame', 'kubejs:classic_chevron_disk', 'kubejs:classic_chevron_disk', 'kubejs:classic_chevron_disk', '6x #gtceu:circuits/uev', '8x kubejs:uhv_catalyst_core', '24x kubejs:uhv_super_magnetic_core', '12x kubejs:uhv_high_strength_panel')
             .inputFluids('gtceu:utopian_akreyrium 24000', 'gtceu:naquadria 56000', 'gtceu:borosilicate_glass 180000')
             .itemOutputs('kubejs:classic_chevron_assembly')
             .duration(9000)
@@ -309,14 +309,14 @@ ServerEvents.recipes(event => {
 
         //Ancient Encoded Computational Unit
         event.recipes.gtceu.assembly_line('ancient_stargate_computer_core')
-            .itemInputs('gtceu:ancient_runicalium_frame','kubejs:classic_stargate_computer_core','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire',
-                '64x kubejs:uepic_chip','64x kubejs:uepic_chip','kubejs:draconic_coordinate_core','6x kubejs:computational_super_matrix')
+            .itemInputs('gtceu:ancient_runicalium_frame','6x kubejs:computational_super_matrix','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire',
+                '64x kubejs:uepic_chip','64x kubejs:uepic_chip','24x #gtceu:circuits/uev','kubejs:draconic_coordinate_core')
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 128000', 'gtceu:sterilized_growth_medium 54000')
             .itemOutputs('kubejs:ancient_stargate_computer_core')
             .duration(48000)
             .stationResearch(
                 researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of("kubejs:draconic_coordinate_core"))
+                    .researchStack(Item.of("kubejs:classic_stargate_computer_core"))
                     .EUt(GTValues.VHA[GTValues.UHV])
                     .CWUt(176)
                 )
