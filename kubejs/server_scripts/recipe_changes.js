@@ -35,6 +35,11 @@ ServerEvents.recipes(event => {
         '#forge:crops/onion'
     );
 
+    event.replaceInput({ id: 'thermal:tools/satchel'},
+        '#thermal:rockwool',
+        '#minecraft:wool'
+    )
+
     event.shaped(Item.of('gtceu:wood_plate'), [
         'SSS'
     ], {
