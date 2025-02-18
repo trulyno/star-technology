@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         'minecraft:glow_berries', 'farmersdelight:rice', 'farmersdelight:cabbage', 'farmersdelight:tomato', 
         'thermal:amaranth', 'thermal:barley', 'thermal:corn', 'thermal:flax', 'thermal:onion', 
         'thermal:radish', 'thermal:rice', 'thermal:sadiroot', 'thermal:spinach', 'thermal:bell_pepper', 
-        'thermal:eggplant', 'thermal:green_bean', 'thermal:peanut', 'thermal:strawberry', 'thermal:tomato_seeds', 
+        'thermal:eggplant', 'thermal:green_bean', 'thermal:peanut', 'thermal:strawberry', 'thermal:tomato', 
         'thermal:coffee', 'thermal:hops', 'thermal:tea', 'minecraft:sugar_cane', 'minecraft:cactus',
         'minecraft:dandelion', 'minecraft:poppy', 'minecraft:blue_orchid', 'minecraft:allium', 'minecraft:azure_bluet', 
         'minecraft:red_tulip', 'minecraft:orange_tulip', 'minecraft:white_tulip', 'minecraft:pink_tulip', 'minecraft:oxeye_daisy', 
