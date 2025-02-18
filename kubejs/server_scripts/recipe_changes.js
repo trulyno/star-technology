@@ -30,6 +30,11 @@ ServerEvents.recipes(event => {
         'gtceu:nether_star_lens'
     );
 
+    event.replaceInput({ input: 'farmersdelight:onion'},
+        'farmersdelight:onion',
+        '#forge:crops/onion'
+    );
+
     event.shaped(Item.of('gtceu:wood_plate'), [
         'SSS'
     ], {
