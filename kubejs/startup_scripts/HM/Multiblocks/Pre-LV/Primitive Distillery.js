@@ -2,6 +2,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('primitive_distillery', 'multiblock')
         .recipeType('distillation_tower')
         .appearanceBlock(GTBlocks.CASING_BRONZE_BRICKS)
+        .rotationState(RotationState.NON_Y_AXIS)
         .pattern(definition => FactoryBlockPattern.start()    
             .aisle("AAA", "BBB", "BBB", "BBB")     
             .aisle("AAA", "B#B", "B#B", "BBB")     
