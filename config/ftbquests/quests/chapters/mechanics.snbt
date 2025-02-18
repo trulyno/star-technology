@@ -109,8 +109,8 @@
 				title: "Large Chemical Reactor Skips"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: 2.5d
+			x: 1.5d
+			y: -3.5d
 		}
 		{
 			description: [
@@ -173,8 +173,8 @@
 				title: "Cheaper Circuit Recipes"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			description: [
@@ -195,6 +195,43 @@
 			title: "EMI/JEI Tricks"
 			x: 0.0d
 			y: -3.5d
+		}
+		{
+			description: [
+				"Many Greg-Tech machines have a circuit configuration window found on the bottom left of the screen. Each circuit starting from Blank and going up to 32 refers to possible recipes each machine can utilise. "
+				""
+				"To find the circuit configuration your particular recipe requires Click on the arrow between input items and final product boxes to show uses for the given machine."
+				""
+				"If the recipe does not require a circuit or shows blank select the blank circuit. However if your given recipe shows a circuit with an icon number EG; 4, Then in the circuit configuration screen select the same icon circuit"
+			]
+			icon: "kubejs:ulv_universal_circuit"
+			id: "2A608D87158DF4CB"
+			tasks: [{
+				id: "66C48E64A4B5CC1B"
+				title: "Ghost Circuits"
+				type: "checkmark"
+			}]
+			title: "Ghost Circuits"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"Some Greg-Tech machines have multiple machine modes that you can swap between with the window found on the left of the screen (UI). Doing this allows 1 machine to swap between multiple task."
+				""
+				"The first machine that you'll encounter to do this would be the Wooden Barrel."
+				""
+				"Make sure you update the machine when switching modes so recipes can work (taking inputs out and back in does this)"
+			]
+			icon: "gtceu:lv_robot_arm"
+			id: "76CD29559C341985"
+			tasks: [{
+				id: "2E13FEFD769A142F"
+				title: "Machine Modes"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.0d
 		}
 	]
 	title: "Mechanics"
