@@ -79,23 +79,47 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(30);
 
-    event.recipes.gtceu.mixer('nether_star_essence')
-        .itemInputs('8x minecraft:fire_charge', '8x thermal:earth_charge', '8x thermal:ice_charge', '8x thermal:lightning_charge')
-        .chancedOutput('mysticalagriculture:nether_star_essence', 8000, 500)
-        .duration(360)
+    //new stuff
+    event.shaped('kubejs:star_casting_mold', [
+        ' F ',
+        ' M ',
+        '   '
+    ], {
+        M: 'gtceu:ball_casting_mold',
+        F: '#forge:tools/files'
+    });
+
+    event.recipes.gtceu.forming_press('impure_nether_star')
+        .itemInputs('kubejs:fire_infused_shard', 'kubejs:ice_infused_shard', 'kubejs:lightning_infused_shard', 'kubejs:earth_infused_shard')
+        .notConsumable('kubejs:star_casting_mold')
+        .itemOutputs('kubejs:impure_nether_star')
+        .duration(300)
+        .EUt(8192);
+
+    function implosion(name, explosive) {
+        event.recipes.gtceu.implosion_compressor(`nether_star_${name}`)
+            .itemInputs('kubejs:impure_nether_star', explosive)
+            .itemOutputs('minecraft:nether_star')
+            .chancedOutput('gtceu:ashes', 2500, 0)
+            .duration(20)
+            .EUt(30);
+    };
+
+    implosion('tnt', '4x minecraft:tnt');
+    implosion('dynamite', '2x gtceu:dynamite');
+    implosion('itnt', 'gtceu:industrial_tnt');
+    implosion('powderbarrel', '8x gtceu:powderbarrel');
+
+    event.recipes.gtceu.forge_hammer('nether_star_shard')
+        .itemInputs('minecraft:_nether_star')
+        .itemOutputs('5x mysticalagradittions:nether_star_shard')
+        .duration(300)
         .EUt(512);
 
-    event.recipes.gtceu.chemical_bath('nether_star_shard')
-        .itemInputs('mysticalagriculture:nether_star_essence')
-        .inputFluids('gtceu:radon 100')
-        .itemOutputs('mysticalagradditions:nether_star_shard')
-        .duration(300)
-        .EUt(496);
-
-    event.recipes.gtceu.macerator('nether_star_dust')
-        .itemInputs('mysticalagradditions:nether_star_shard')
-        .itemOutputs('gtceu:small_nether_star_dust')
+    event.recipes.gtceu.polarizer('energized_nether_star_shard')
+        .itemInputs('mysticalagradittions:nether_star_shard')
+        .itemOutputs('kubejs:energized_nether_star_shard')
         .duration(400)
-        .EUt(496);
+        .EUt(2048);
 
 });
