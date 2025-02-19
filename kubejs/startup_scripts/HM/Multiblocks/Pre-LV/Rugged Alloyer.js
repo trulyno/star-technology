@@ -18,5 +18,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("B", Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
 		.workableCasingRenderer("kubejs:block/hm/reinforced_stone_bricks",
-			"gtceu:block/multiblock/primitive_blast_furnace", false);
+			"gtceu:block/machines/electric_furnace", false);
 });

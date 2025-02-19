@@ -9,11 +9,11 @@ StartupEvents.registry('item', event => {
         .rarity('common')
         .texture(`kubejs:item/hm/pre-lv/plant_fibers`);
 
-    const oreType=['Hematite','Cassiterite','Chalcopyrite','Sphalerite','Pyrite','Magnetite','Galena']
+    const oreType=['Hematite','Cassiterite','Chalcopyrite','Sphalerite','Pyrite','Magnetite','Galena','Raw_Electrum']
 
     oreType.forEach(type => {
         event.create(`${type.toLowerCase()}_crushed_ore_chunk`)
-            .displayName(`Crushed ${type} Ore Chunk`)
+            .displayName(`Crushed ${type.replace(/_/, ' ')} Ore Chunk`)
     });
 });
 

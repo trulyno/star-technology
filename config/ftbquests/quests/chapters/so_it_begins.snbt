@@ -1067,11 +1067,12 @@
 					type: "item"
 				}
 				{
-					id: "2DF8CDAE918CE405"
-					title: "Raw Electrum Chunk"
-					type: "checkmark"
+					id: "3FEA695D45D13E6F"
+					item: "kubejs:raw_electrum_crushed_ore_chunk"
+					type: "item"
 				}
 			]
+			title: "Uncommon Metals"
 			x: -5.5d
 			y: 9.0d
 		}

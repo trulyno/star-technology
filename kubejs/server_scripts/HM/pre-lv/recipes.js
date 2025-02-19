@@ -31,7 +31,8 @@ ServerEvents.recipes(event => {
 
     //Rugged Alloyer and Chunk Processing
     [{ore: 'hematite', metal: 'minecraft:iron'},{ore: 'pyrite', metal: 'minecraft:iron'},{ore: 'magnetite', metal: 'minecraft:iron'},
-        {ore: 'cassiterite', metal: 'gtceu:tin'},{ore: 'sphalerite', metal: 'gtceu:zinc'},{ore: 'galena', metal: 'gtceu:lead'}].forEach(chunks => {
+        {ore: 'cassiterite', metal: 'gtceu:tin'},{ore: 'sphalerite', metal: 'gtceu:zinc'},{ore: 'galena', metal: 'gtceu:lead'},
+        {ore: 'raw_electrum', metal: 'gtceu:raw_electrum'}].forEach(chunks => {
         event.recipes.gtceu.rugged_alloyer(`${chunks.ore}_chunks_${coal.fuel}`)
             .itemInputs(`3x kubejs:${chunks.ore}_crushed_ore_chunk`, `#minecraft:${coal.fuel}`)
             .itemOutputs(`${chunks.metal}_ingot`, 'gtceu:ash_dust')
@@ -56,9 +57,9 @@ ServerEvents.recipes(event => {
     ], {
         A: 'minecraft:iron_ingot',
         C: 'kubejs:reinforced_stone_bricks',
-        F: 'minecraft:furance',
+        F: 'minecraft:furnace',
         E: 'gtceu:raw_electrum_ingot',
-        R: 'minecraft:redstone_dust'
+        R: 'minecraft:redstone'
     });
 
     event.shaped(Item.of('minecraft:bowl', 2 ),

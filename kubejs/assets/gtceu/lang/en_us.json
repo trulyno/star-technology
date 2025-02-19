@@ -498,5 +498,6 @@
     "block.gtceu.kiln": "Kiln",
     "gtceu.kiln": "Kiln",
     "block.gtceu.rugged_alloyer": "Rugged Alloyer",
-    "gtceu.rugged_alloyer": "Rugged Alloyer"
+    "gtceu.rugged_alloyer": "Rugged Alloyer",
+    "material.gtceu.raw_electrum": "Raw Electrum"
 }
