@@ -460,6 +460,12 @@ StartupEvents.registry('item', event => {
 //         .displayName('Cargo Drone')
 //         .texture('kubejs:item/resource_gen/drone_test');
 
+    ['Fire', 'Ice', 'Earth', 'Lightning'].forEach(type => {
+        event.create(`${type.toLowerCase()}_infused_shard`)
+            .displayName(`${type.replace(/_/, ' ')} Infused Shard`)
+            .texture(`kubejs:item/lines/netherstar/${type.toLowerCase()}_infused_shard`)
+        });
+
 });
 
 // Custom Blocks
