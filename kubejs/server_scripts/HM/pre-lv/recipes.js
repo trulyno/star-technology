@@ -24,5 +24,9 @@ ServerEvents.recipes(event => {
         '#forge:tools/knives',
         'farmersdelight:straw'
     ]);
+    event.shapeless(Item.of('kubejs:plant_fibers'),[
+        '#forge:tools/knives',
+        'farmersdelight:tree_bark'
+    ]);
 
 })
