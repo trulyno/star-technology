@@ -14,12 +14,6 @@
 	progression_mode: "flexible"
 	quest_links: [
 		{
-			id: "03B6D7853CA898F2"
-			linked_quest: "090275078106B752"
-			x: 0.0d
-			y: 5.0d
-		}
-		{
 			id: "6D8B0DE6FCC2A5B1"
 			linked_quest: "07AD6651D0B40E22"
 			shape: "gear"
@@ -1885,9 +1879,9 @@
 		}
 		{
 			dependencies: [
-				"090275078106B752"
 				"18ED2B1F051E0868"
 				"1F416C7A641914EC"
+				"600015DA0DCAACD4"
 			]
 			id: "32AC51387EAD9D2D"
 			tasks: [{
@@ -2277,6 +2271,17 @@
 			}]
 			x: 10.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["4BCC078B76C6CAE3"]
+			id: "600015DA0DCAACD4"
+			tasks: [{
+				id: "38DAFF93792077A8"
+				item: "mysticalagradditions:nether_star_shard"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
 		}
 	]
 	title: "Processing Lines (Chap 4,5,6)"
