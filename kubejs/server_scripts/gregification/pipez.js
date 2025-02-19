@@ -1,7 +1,7 @@
 
 ServerEvents.recipes(event => {
 
-    event.remove({mod: "pipez"});
+    event.remove({mod: 'pipez'});
 
     event.shaped(Item.of('8x pipez:energy_pipe'), [
         'PWP',

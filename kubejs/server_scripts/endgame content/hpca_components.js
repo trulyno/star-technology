@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
         .duration(7200)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of("gtceu:hpca_heat_sink_component"))
+                .researchStack(Item.of('gtceu:hpca_heat_sink_component'))
                 .EUt(GTValues.VHA[GTValues.UV])
                 .CWUt(128)
         )

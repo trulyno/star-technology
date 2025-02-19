@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     // Upgrade augments
     event.recipes.gtceu.assembler('lv_kit')
         .itemInputs('4x gtceu:invar_plate', 'thermal:obsidian_glass', 'gtceu:bronze_gear', '#gtceu:circuits/lv')
-        .itemOutputs(Item.of('kubejs:lv_upgrade_kit', '{AugmentData:{BaseMod:4.0f,Type:"Upgrade"}}'))
+        .itemOutputs(Item.of('kubejs:lv_upgrade_kit', '{AugmentData:{BaseMod:4.0f,Type:'Upgrade'}}'))
         .duration(600)
         .EUt(28);
 

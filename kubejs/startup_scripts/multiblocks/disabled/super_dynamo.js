@@ -28,14 +28,14 @@
 //                 .or(Predicates.autoAbilities(definition.getRecipeType()))
 //                 .or(Predicates.autoAbilities(true, false)))
 //             .where('F', Predicates.blocks(GTBlocks.FIREBOX_TITANIUM.get()).setExactLimit(97))
-//             .where('L', Predicates.blocks("thermal:lumium_glass"))
-//             .where('S', Predicates.blocks("thermal:signalum_glass"))
-//             .where('I', Predicates.blocks("thermal_extra:soul_infused_block"))
+//             .where('L', Predicates.blocks('thermal:lumium_glass'))
+//             .where('S', Predicates.blocks('thermal:signalum_glass'))
+//             .where('I', Predicates.blocks('thermal_extra:soul_infused_block'))
 //             .where('B', Predicates.heatingCoils())
 //             .where('M', Predicates.abilities(PartAbility.MUFFLER).setExactLimit(1))
 //             .where('O', Predicates.abilities(PartAbility.OUTPUT_ENERGY).setExactLimit(4))
 //             .where('#', Predicates.air())
 //             .build()
-//         ).workableCasingRenderer("gtceu:block/casings/solid/machine_casing_stable_titanium", 
+//         ).workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 
 //             'gtceu:block/multiblocks/electric_blast_furnace', false);
 // });
