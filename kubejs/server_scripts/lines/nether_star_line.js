@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
       ].forEach(shard => {
         event.recipes.gtceu.extractor(`liquid_${shard.powder}`)
           .itemInputs(`${shard.mod}:${shard.powder}_powder`)
-          .outputFluids(`gtceu:${shard.powder}_essence 144`)
+          .outputFluids(`gtceu:${shard.powder} 144`)
           .duration(22)
           .EUt(30);
 
