@@ -494,5 +494,7 @@
     "gtceu.exotic_gas_siphon": "Exotic Gas Siphoning",
     "material.gtceu.indium_oxide": "Indium Oxide",
 
-    "block.gtceu.primitive_distillery": "Primitive Distillery"
+    "block.gtceu.primitive_distillery": "Primitive Distillery",
+    "block.gtceu.kiln": "Kiln",
+    "gtceu.kiln": "Kiln"
 }
