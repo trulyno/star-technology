@@ -1006,9 +1006,9 @@
 			hide_dependent_lines: true
 			id: "3D9B291441B63F78"
 			tasks: [{
-				id: "6CF7F04C47BC4D28"
-				title: "Reinforced Stone Bricks"
-				type: "checkmark"
+				id: "1193E8818272A1E4"
+				item: "kubejs:reinforced_stone_bricks"
+				type: "item"
 			}]
 			x: 0.5d
 			y: 6.0d

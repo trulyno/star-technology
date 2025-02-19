@@ -1,11 +1,13 @@
 StartupEvents.registry('item', event => {
     event.create('flint_shard')
         .displayName('Flint Shard')
-        .rarity('common');
+        .rarity('common')
+        .texture(`kubejs:item/hm/pre-lv/flint_shard`);
     
     event.create('plant_fibers')
         .displayName('Plant Fibers')
-        .rarity('common');
+        .rarity('common')
+        .texture(`kubejs:item/hm/pre-lv/plant_fibers`);
 
     const oreType=['Hematite','Cassiterite','Chalcopyrite','Sphalerite','Pyrite','Magnetite','Galena']
 
@@ -23,5 +25,6 @@ StartupEvents.registry('block', event => {
             .soundType('stone')
             .requiresTool(true)
             .tagBlock("mineable/pickaxe")
-            .tagBlock('minecraft:needs_iron_tool');
+            .tagBlock('minecraft:needs_iron_tool')
+            .textureAll('kubejs:block/hm/reinforced_stone_bricks');
 });
