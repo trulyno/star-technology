@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         F: 'minecraft:flint',
         T: '#forge:rods/wood'
     });
-
+   
     [{fuel: 'coals', burnMultiplier: .5}, {fuel: 'logs', burnMultiplier: 1.2}].forEach( coal => {
         event.recipes.gtceu.kiln(`brick_${coal.fuel}`)
             .itemInputs('4x gtceu:compressed_clay', `#minecraft:${coal.fuel}`)
@@ -28,4 +28,23 @@ ServerEvents.recipes(event => {
             .itemOutputs('minecraft:glass')
             .duration(1600*coal.burnMultiplier);
     });
-});
+    event.shaped(Item.of('minecraft:bowl', 2 ),
+    [
+        'A',
+        'B'
+    ], {
+        A: '#forge:tools/knives',
+        B: '#minecraft:planks'
+    });
+   
+    event.remove({ id: 'minecraft:bowl'});
+    event.shapeless(Item.of('kubejs:plant_fibers'),[
+        '#forge:tools/knives',
+        'farmersdelight:straw'
+    ]);
+    event.shapeless(Item.of('kubejs:plant_fibers'),[
+        '#forge:tools/knives',
+        'farmersdelight:tree_bark'
+    ]);
+
+})

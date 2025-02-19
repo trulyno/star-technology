@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     ];
 
     const toRemoveIdHM = [
-        'gtceu:shaped/mortar_flint'
+        'gtceu:shaped/mortar_flint',/^gtceu:shapeless.*_planks/
     ];
 
     const toRemoveTypeHM = [
