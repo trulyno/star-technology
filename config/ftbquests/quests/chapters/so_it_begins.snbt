@@ -1259,9 +1259,9 @@
 			]
 			id: "19A0099F62CB5FF1"
 			tasks: [{
-				id: "7559219C5C42FFDF"
-				title: "Kiln"
-				type: "checkmark"
+				id: "7857081A11752D48"
+				item: "gtceu:kiln"
+				type: "item"
 			}]
 			x: 3.5d
 			y: 7.5d
@@ -1806,6 +1806,17 @@
 			}]
 			x: 11.0d
 			y: 12.0d
+		}
+		{
+			dependencies: ["50F2743FA699173A"]
+			id: "0162398E5DF23964"
+			tasks: [{
+				id: "58CC5A5EEC3B0376"
+				item: "gtceu:charcoal_pile_igniter"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 10.5d
 		}
 	]
 	title: "So It Begins"

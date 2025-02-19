@@ -10,4 +10,22 @@ ServerEvents.recipes(event => {
         T: '#forge:rods/wood'
     });
 
+    [{fuel: 'coals', burnMultiplier: .5}, {fuel: 'logs', burnMultiplier: 1.2}].forEach( coal => {
+        event.recipes.gtceu.kiln(`brick_${coal.fuel}`)
+            .itemInputs('4x gtceu:compressed_clay', `#minecraft:${coal.fuel}`)
+            .itemOutputs('4x minecraft:brick')
+            .duration(800*coal.burnMultiplier);
+        event.recipes.gtceu.kiln(`coke_oven_brick_${coal.fuel}`)
+            .itemInputs('4x gtceu:compressed_coke_clay', `2x #minecraft:${coal.fuel}`)
+            .itemOutputs('4x gtceu:coke_oven_brick')
+            .duration(1000*coal.burnMultiplier);
+        event.recipes.gtceu.kiln(`firebrick_${coal.fuel}`)
+            .itemInputs('4x gtceu:compressed_fireclay', `2x #minecraft:${coal.fuel}`)
+            .itemOutputs('4x gtceu:firebrick')
+            .duration(1200*coal.burnMultiplier);
+        event.recipes.gtceu.kiln(`glass_${coal.fuel}`)
+            .itemInputs('gtceu:glass_dust', `#minecraft:${coal.fuel}`)
+            .itemOutputs('minecraft:glass')
+            .duration(1600*coal.burnMultiplier);
+    });
 });
