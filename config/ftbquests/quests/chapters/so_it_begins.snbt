@@ -1015,10 +1015,9 @@
 					type: "item"
 				}
 				{
-					id: "59C5ABD1129F6E96"
-					optional_task: true
-					title: "Raw Electrum"
-					type: "checkmark"
+					id: "323DDC8DFEDF2926"
+					item: "gtceu:raw_electrum_ingot"
+					type: "item"
 				}
 			]
 			title: "First Ingots"
