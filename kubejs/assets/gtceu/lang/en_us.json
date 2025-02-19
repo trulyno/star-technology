@@ -496,5 +496,7 @@
 
     "block.gtceu.primitive_distillery": "Primitive Distillery",
     "block.gtceu.kiln": "Kiln",
-    "gtceu.kiln": "Kiln"
+    "gtceu.kiln": "Kiln",
+    "block.gtceu.rugged_alloyer": "Rugged Alloyer",
+    "gtceu.rugged_alloyer": "Rugged Alloyer"
 }

@@ -783,16 +783,55 @@
 			id: "299F2383569EEFA4"
 			tasks: [
 				{
-					id: "270CE9B0B9C05783"
-					title: "Ore Chunks"
-					type: "checkmark"
-				}
-				{
 					id: "4C8102F3CE4F6612"
 					item: "gtceu:stone_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4723E969B34065BE"
+					item: "kubejs:hematite_crushed_ore_chunk"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1D3535424E3C38F8"
+					item: "kubejs:cassiterite_crushed_ore_chunk"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0CAE0DD28916DE29"
+					item: "kubejs:chalcopyrite_crushed_ore_chunk"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4ABCE5F5AD20E917"
+					item: "kubejs:sphalerite_crushed_ore_chunk"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "300A91B24919F142"
+					item: "kubejs:pyrite_crushed_ore_chunk"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "43EADF57FE324C9E"
+					item: "kubejs:magnetite_crushed_ore_chunk"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F809BD3B6025970"
+					item: "kubejs:galena_crushed_ore_chunk"
+					optional_task: true
 					type: "item"
 				}
 			]
+			title: "Ore Chunks"
 			x: 0.5d
 			y: 7.5d
 		}
@@ -932,12 +971,12 @@
 				"3D9B291441B63F78"
 				"1A34B55754A8965F"
 			]
-			description: ["Primitive so Consumes Charcoal"]
+			description: [""]
 			id: "2CE500506AE84E1A"
 			tasks: [{
-				id: "742AD52027EF44B6"
-				title: "Rugged Alloyer"
-				type: "checkmark"
+				id: "2EECC19B0000F0AF"
+				item: "gtceu:rugged_alloyer"
+				type: "item"
 			}]
 			x: -4.0d
 			y: 9.0d
@@ -1428,7 +1467,10 @@
 			y: 13.5d
 		}
 		{
-			dependencies: ["6994BA308DC55ED2"]
+			dependencies: [
+				"6994BA308DC55ED2"
+				"70AF86B4A0D6A158"
+			]
 			id: "60B2BEDDA1D66001"
 			tasks: [
 				{
@@ -1638,7 +1680,7 @@
 				item: "thermal:cured_rubber"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 9.5d
 			y: 6.0d
 		}
 		{
@@ -1817,6 +1859,18 @@
 			}]
 			x: 9.5d
 			y: 10.5d
+		}
+		{
+			dependencies: ["4F13AF131EC84DAA"]
+			hide_dependent_lines: true
+			id: "70AF86B4A0D6A158"
+			tasks: [{
+				id: "0AF7A3E5E3CD0375"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
 		}
 	]
 	title: "So It Begins"
