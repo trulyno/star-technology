@@ -18,7 +18,7 @@ recipes:
 
   # Whether to nerf Wood crafting to 2 Planks from 1 Log, and 2 Sticks from 2 Planks.
   # Default: false
-  nerfWoodCrafting: false
+  nerfWoodCrafting: true
 
   # Whether to make Wood related recipes harder.
   # Excludes sticks and planks.
@@ -36,7 +36,7 @@ recipes:
   # Whether to make Vanilla Tools and Armor recipes harder.
   # Excludes Flint and Steel, and Buckets.
   # Default: false
-  hardToolArmorRecipes: false
+  hardToolArmorRecipes: true
 
   # Whether to make miscellaneous recipes harder.
   # Default: false
@@ -47,7 +47,7 @@ recipes:
 
   # Whether to nerf the Paper crafting recipe.
   # Default: true
-  nerfPaperCrafting: false
+  nerfPaperCrafting: true
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
   # Default: false
@@ -87,7 +87,7 @@ recipes:
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: true
-  enchantedTools: true
+  enchantedTools: false
 
 worldgen:
   # Rubber Tree spawn chance (decimal % per chunk)

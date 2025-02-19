@@ -41,20 +41,14 @@
 		}
 		{
 			dependencies: ["11792AD3856CC11A"]
-			description: ["Make Sure to Save 1 for later ;)"]
+			description: ["Only break a few"]
+			icon: "minecraft:dead_bush"
 			id: "66B461268D304ADD"
-			tasks: [
-				{
-					id: "6FD0B88031F7EFA7"
-					item: "minecraft:dead_bush"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "2D04613D8D9671E5"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "2D04613D8D9671E5"
+				type: "checkmark"
+			}]
+			title: "Dead Bush"
 			x: -8.5d
 			y: -1.5d
 		}
@@ -95,8 +89,8 @@
 			description: [""]
 			id: "34FB1FD1C7726DE6"
 			tasks: [{
-				id: "50425D0FFC7A570B"
-				item: "minecraft:string"
+				id: "3EA81EC7D2D518A1"
+				item: "kubejs:plant_fibers"
 				type: "item"
 			}]
 			title: "Plant Fiber"
@@ -113,9 +107,9 @@
 					type: "item"
 				}
 				{
-					id: "6C0DF1A7577172D9"
-					title: "Flint Shard (4 make a flint)"
-					type: "checkmark"
+					id: "04CDF9FFF0BEF10A"
+					item: "kubejs:flint_shard"
+					type: "item"
 				}
 			]
 			x: -7.0d
