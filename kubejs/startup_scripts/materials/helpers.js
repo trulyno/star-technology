@@ -1,9 +1,9 @@
 // priority 1000
 
-const $IngotProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty');
-const $DustProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.DustProperty');
-const $FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty');
-const $BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty');
+const IngotProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty');
+const DustProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.DustProperty');
+const FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty');
+const BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty');
 
 global.iconSets = {
     dull: GTMaterialIconSet.DULL,
@@ -91,84 +91,84 @@ global.flags = {
 }
 
 global.v = {
-    ulv: GTValues.V[GTValues.ULV],
-    lv: GTValues.V[GTValues.LV],
-    mv: GTValues.V[GTValues.MV],
-    hv: GTValues.V[GTValues.HV],
-    ev: GTValues.V[GTValues.EV],
-    iv: GTValues.V[GTValues.IV],
-    luv: GTValues.V[GTValues.LuV],
-    zpm: GTValues.V[GTValues.ZPM],
-    uv: GTValues.V[GTValues.UV],
-    uhv: GTValues.V[GTValues.UHV],
-    uev: GTValues.V[GTValues.UEV],
-    uiv: GTValues.V[GTValues.UIV],
-    uxv: GTValues.V[GTValues.UXV],
-    opv: GTValues.V[GTValues.OpV],
-    max: GTValues.V[GTValues.MAX]
+    'ulv': GTValues.V[GTValues.ULV],
+    'lv': GTValues.V[GTValues.LV],
+    'mv': GTValues.V[GTValues.MV],
+    'hv': GTValues.V[GTValues.HV],
+    'ev': GTValues.V[GTValues.EV],
+    'iv': GTValues.V[GTValues.IV],
+    'luv': GTValues.V[GTValues.LuV],
+    'zpm': GTValues.V[GTValues.ZPM],
+    'uv': GTValues.V[GTValues.UV],
+    'uhv': GTValues.V[GTValues.UHV],
+    'uev': GTValues.V[GTValues.UEV],
+    'uiv': GTValues.V[GTValues.UIV],
+    'uxv': GTValues.V[GTValues.UXV],
+    'opv': GTValues.V[GTValues.OpV],
+    'max': GTValues.V[GTValues.MAX]
 };
 
 global.va = {
-    ulv: GTValues.VA[GTValues.ULV],
-    lv: GTValues.VA[GTValues.LV],
-    mv: GTValues.VA[GTValues.MV],
-    hv: GTValues.VA[GTValues.HV],
-    ev: GTValues.VA[GTValues.EV],
-    iv: GTValues.VA[GTValues.IV],
-    luv: GTValues.VA[GTValues.LuV],
-    zpm: GTValues.VA[GTValues.ZPM],
-    uv: GTValues.VA[GTValues.UV],
-    uhv: GTValues.VA[GTValues.UHV],
-    uev: GTValues.VA[GTValues.UEV],
-    uiv: GTValues.VA[GTValues.UIV],
-    uxv: GTValues.VA[GTValues.UXV],
-    opv: GTValues.VA[GTValues.OpV],
-    max: GTValues.VA[GTValues.MAX]
+    'ulv': GTValues.VA[GTValues.ULV],
+    'lv': GTValues.VA[GTValues.LV],
+    'mv': GTValues.VA[GTValues.MV],
+    'hv': GTValues.VA[GTValues.HV],
+    'ev': GTValues.VA[GTValues.EV],
+    'iv': GTValues.VA[GTValues.IV],
+    'luv': GTValues.VA[GTValues.LuV],
+    'zpm': GTValues.VA[GTValues.ZPM],
+    'uv': GTValues.VA[GTValues.UV],
+    'uhv': GTValues.VA[GTValues.UHV],
+    'uev': GTValues.VA[GTValues.UEV],
+    'uiv': GTValues.VA[GTValues.UIV],
+    'uxv': GTValues.VA[GTValues.UXV],
+    'opv': GTValues.VA[GTValues.OpV],
+    'max': GTValues.VA[GTValues.MAX]
 };
 
 global.vh = {
-    ulv: GTValues.VH[GTValues.ULV],
-    lv: GTValues.VH[GTValues.LV],
-    mv: GTValues.VH[GTValues.MV],
-    hv: GTValues.VH[GTValues.HV],
-    ev: GTValues.VH[GTValues.EV],
-    iv: GTValues.VH[GTValues.IV],
-    luv: GTValues.VH[GTValues.LuV],
-    zpm: GTValues.VH[GTValues.ZPM],
-    uv: GTValues.VH[GTValues.UV],
-    uhv: GTValues.VH[GTValues.UHV],
-    uev: GTValues.VH[GTValues.UEV],
-    uiv: GTValues.VH[GTValues.UIV],
-    uxv: GTValues.VH[GTValues.UXV],
-    opv: GTValues.VH[GTValues.OpV],
-    max: GTValues.VH[GTValues.MAX]
+    'ulv': GTValues.VH[GTValues.ULV],
+    'lv': GTValues.VH[GTValues.LV],
+    'mv': GTValues.VH[GTValues.MV],
+    'hv': GTValues.VH[GTValues.HV],
+    'ev': GTValues.VH[GTValues.EV],
+    'iv': GTValues.VH[GTValues.IV],
+    'luv': GTValues.VH[GTValues.LuV],
+    'zpm': GTValues.VH[GTValues.ZPM],
+    'uv': GTValues.VH[GTValues.UV],
+    'uhv': GTValues.VH[GTValues.UHV],
+    'uev': GTValues.VH[GTValues.UEV],
+    'uiv': GTValues.VH[GTValues.UIV],
+    'uxv': GTValues.VH[GTValues.UXV],
+    'opv': GTValues.VH[GTValues.OpV],
+    'max': GTValues.VH[GTValues.MAX]
 };
 
 global.vha = {
-    ulv: GTValues.VHA[GTValues.ULV],
-    lv: GTValues.VHA[GTValues.LV],
-    mv: GTValues.VHA[GTValues.MV],
-    hv: GTValues.VHA[GTValues.HV],
-    ev: GTValues.VHA[GTValues.EV],
-    iv: GTValues.VHA[GTValues.IV],
-    luv: GTValues.VHA[GTValues.LuV],
-    zpm: GTValues.VHA[GTValues.ZPM],
-    uv: GTValues.VHA[GTValues.UV],
-    uhv: GTValues.VHA[GTValues.UHV],
-    uev: GTValues.VHA[GTValues.UEV],
-    uiv: GTValues.VHA[GTValues.UIV],
-    uxv: GTValues.VHA[GTValues.UXV],
-    opv: GTValues.VHA[GTValues.OpV],
-    max: GTValues.VHA[GTValues.MAX]
+    'ulv': GTValues.VHA[GTValues.ULV],
+    'lv': GTValues.VHA[GTValues.LV],
+    'mv': GTValues.VHA[GTValues.MV],
+    'hv': GTValues.VHA[GTValues.HV],
+    'ev': GTValues.VHA[GTValues.EV],
+    'iv': GTValues.VHA[GTValues.IV],
+    'luv': GTValues.VHA[GTValues.LuV],
+    'zpm': GTValues.VHA[GTValues.ZPM],
+    'uv': GTValues.VHA[GTValues.UV],
+    'uhv': GTValues.VHA[GTValues.UHV],
+    'uev': GTValues.VHA[GTValues.UEV],
+    'uiv': GTValues.VHA[GTValues.UIV],
+    'uxv': GTValues.VHA[GTValues.UXV],
+    'opv': GTValues.VHA[GTValues.OpV],
+    'max': GTValues.VHA[GTValues.MAX]
 };
 
 global.periodicTableElement = (material, type) => {
     let mat = GTMaterials.get(material);
     switch(type) {
-        case 'ingot': mat.setProperty(PropertyKey.INGOT, new $IngotProperty()); break;
-        case 'dust': mat.setProperty(PropertyKey.DUST, new $DustProperty()); break;
+        case 'ingot': mat.setProperty(PropertyKey.INGOT, new IngotProperty()); break;
+        case 'dust': mat.setProperty(PropertyKey.DUST, new DustProperty()); break;
         case 'fluid': case 'gas': case 'plasma': case 'molten': {
-            let prop = new $FluidProperty();
+            let prop = new FluidProperty();
             switch(type) {
                 case 'fluid': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.LIQUID, new GTFluidBuilder()); break;
                 case 'gas': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.GAS, new GTFluidBuilder()); break;
@@ -183,5 +183,5 @@ global.periodicTableElement = (material, type) => {
 
 global.blastProperty = (material, temperature, gasTier, voltage, duration) => {
     let mat = GTMaterials.get(material);
-    mat.setProperty(PropertyKey.BLAST, new $BlastProperty(temperature, gasTier, voltage, duration, -1, -1));
+    mat.setProperty(PropertyKey.BLAST, new BlastProperty(temperature, gasTier, voltage, duration, -1, -1));
 }
