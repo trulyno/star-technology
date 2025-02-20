@@ -13,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('exotic_gas_siphon', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .recipeTypes([GTRecipeTypes.get('exotic_gas_siphon'), GTRecipeTypes.get('gas_collector')])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("##########BBB##########", "#######################", "#######################", "#######################", "#######################", "#######################", "#######################", "##########CCC##########", "#######################", "#######################", "#######################", "#######################", "#######################", "#######################", "#######################", "#######################", "#######################", "#######################", "#######################", "#######################", "#######################") 

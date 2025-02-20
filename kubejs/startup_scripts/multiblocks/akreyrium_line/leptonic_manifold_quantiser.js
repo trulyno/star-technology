@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('leptonic_manifold_quantiser', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('leptonic_manifold_quantiser')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("  BBB  ", "  XXX  ", "  BBB  ", "  B B  ", "       ", "       ", "  B B  ", "  BBB  ", "  B B  ", "       ", "       ", "       ", "       ", "       ") 
             .aisle(" BBBBB ", " XDDDX ", " B   B ", " B E B ", " BEEEB ", " FEEEF ", " FEEEF ", " B D B ", " BECEB ", "  E E  ", "       ", "       ", "       ", "       ") 
