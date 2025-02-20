@@ -1993,6 +1993,11 @@
 					item: "gtceu:zinc_dust"
 					type: "item"
 				}
+				{
+					id: "2DAD8A254C70393F"
+					item: "gtceu:tin_dust"
+					type: "item"
+				}
 			]
 			title: "Mixing Dusts"
 			x: 3.0d

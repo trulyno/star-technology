@@ -9,9 +9,9 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.dimensional_destabiliser('naquadah_mining')
         .itemInputs('mysticalagradditions:nether_star_shard')
         .inputFluids('gtceu:pcb_coolant 8000')
-        .itemOutputs('64x gtceu:raw_naquadah', '64x gtceu:raw_naquadah', 'gtceu:tiny_nether_star_dust')
+        .itemOutputs('64x gtceu:raw_naquadah', 'gtceu:tiny_nether_star_dust')
         .outputFluids('gtceu:hot_pcb_coolant 9600')
-        .duration(2400)
+        .duration(1500)
         .EUt(4096);
 
     event.recipes.gtceu.assembler('dimensional_destabiliser')
