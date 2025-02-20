@@ -31,7 +31,12 @@ ServerEvents.recipes(event => {
             .itemOutputs(`3x thermal:${type.element}_charge`)
             .duration(100)
             .EUt(30);
+
+        event.remove({id: `thermal:${type.powder}_powder`});
     });
+        event.remove({id: 'minecraft:blaze_powder'});
+        event.remove({id: 'gtceu:shapeless/blaze_rod_to_powder'});
+        event.remove({id: 'create:crushing/blaze_rod'});
 
     //new stuff
     [
