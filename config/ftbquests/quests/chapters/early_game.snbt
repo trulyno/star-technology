@@ -1989,11 +1989,6 @@
 					type: "item"
 				}
 				{
-					id: "4F1C9A96AF1EE13C"
-					item: "gtceu:zinc_dust"
-					type: "item"
-				}
-				{
 					id: "2DAD8A254C70393F"
 					item: "gtceu:tin_dust"
 					type: "item"
