@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     ];
 
     const toRemoveIdHM = [
-        'gtceu:shaped/mortar_flint',/^gtceu:shapeless.*_planks/,/^exnihilosequentia:crushing.*/
+        'gtceu:shaped/mortar_flint',/^gtceu:shapeless.*_planks/,/^exnihilosequentia:crushing.*/,/^gtceu:shaped.plate/ //[^(?!^rubber$)] <- rubber sheet recipe is kjs and other rubbers is solidifier and bender only, wood is compressor for treated and crafting for regular
     ];
 
     const toRemoveTypeHM = [
