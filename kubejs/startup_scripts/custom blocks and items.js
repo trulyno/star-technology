@@ -279,17 +279,15 @@ StartupEvents.registry('item', event => {
     event.create('draconic_coordinate_core')
         .displayName('Draconic Coordinate Core')
         .rarity('epic')
-        .tooltip('§oThe Ultimate Eye of Ender')
+        .tooltip('The §o§6Ultimate§r Eye of Ender')
         .texture('kubejs:item/gate_items/draconic_core');
 
     event.create('hell_core')
-        .displayName('Hell Core')
-        .rarity('rare')
+        .displayName('§4Hell Core')
         .texture('kubejs:item/gate_items/hell_core');
 
     event.create('void_core')
-        .displayName('Void Core')
-        .rarity('rare')
+        .displayName('§5Void Core')
         .texture('kubejs:item/gate_items/void_core');
 
     const runic_tablet = ['1','2','3','4','5','6','complete']
@@ -309,37 +307,37 @@ StartupEvents.registry('item', event => {
     event.create('coordinate_crystal')
         .displayName('Blank Dimensional Coordinate Crystal')
         .rarity('rare')
-        .tooltip('If you are lucky you may find Home')
+        .tooltip('If you are lucky you may find §l§uHome')
         .texture('kubejs:item/coordinate_crystals/blank_coordinate_crystal');
 
     event.create('abydos_coordinate_crystal')
         .displayName('Abydos Inscribed Coordinate Crystal')
         .rarity('epic')
-        .tooltip('The Ancient Sands')
+        .tooltip('The §eAncient Sands')
         .texture('kubejs:item/coordinate_crystals/abydos_coordinate_crystal');
         
     event.create('nether_coordinate_crystal')
         .displayName('Nether Inscribed Coordinate Crystal')
         .rarity('epic')
-        .tooltip('The Burning Hells')
+        .tooltip('The §4Burning Hells')
         .texture('kubejs:item/coordinate_crystals/nether_coordinate_crystal');
 
     event.create('end_coordinate_crystal')
         .displayName('End Inscribed Coordinate Crystal')
         .rarity('epic')
-        .tooltip('The Draconic Void')
+        .tooltip('The §5Draconic Void')
         .texture('kubejs:item/coordinate_crystals/end_coordinate_crystal');
 
     /*event.create('lantea_coordinate_crystal')
         .displayName('Lantea Inscribed Coordinate Crystal')
         .rarity('epic')
-        .tooltip('The Endless Seas')
+        .tooltip('The §1Endless Seas')
         .texture('kubejs:item/coordinate_crystals/lantea_coordinate_crystal');
 
     event.create('cavum_coordinate_crystal')
         .displayName('Cavum Inscribed Coordinate Crystal')
         .rarity('epic')
-        .tooltip('The Failing Abyss')
+        .tooltip('The §8Failing Abyss')
         .texture('kubejs:item/coordinate_crystals/cavum_coordinate_crystal');
 
     event.create('sea_coordinate_crystal')
