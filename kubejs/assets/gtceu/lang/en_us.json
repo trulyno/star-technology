@@ -499,5 +499,9 @@
     "gtceu.kiln": "Kiln",
     "block.gtceu.rugged_alloyer": "Rugged Alloyer",
     "gtceu.rugged_alloyer": "Rugged Alloyer",
-    "material.gtceu.raw_electrum": "Raw Electrum"
+    "material.gtceu.raw_electrum": "Raw Electrum",
+    "block.gtceu.primitive_workshop": "Primitive Workshop",
+    "gtceu.primitive_workshop": "Primitive Workshop",
+    "block.gtceu.steam_workshop": "Steam Workshop",
+    "gtceu.steam_workshop": "Steam Workshop"
 }

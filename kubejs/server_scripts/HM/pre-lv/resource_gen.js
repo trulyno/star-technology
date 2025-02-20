@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
     sieve('string',.15,cDrip,'minecraft:clay_ball',false);
 
     sieve('string',.25,dust,'gtceu:small_redstone_dust',false);
-    sieve('string',.15,dust,'minecraft:quartz',false);
+    sieve('string',.15,dust,'gtceu:quartzite_gem',false);
     sieve('string',.1,dust,'kubejs:raw_electrum_crushed_ore_chunk',false);
 
 
