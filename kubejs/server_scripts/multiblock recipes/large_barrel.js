@@ -85,22 +85,22 @@ ServerEvents.recipes(event => {
             .duration(1)
     }
 
-    concreteRecipe(event, "black");
-    concreteRecipe(event, "blue");
-    concreteRecipe(event, "brown");
-    concreteRecipe(event, "cyan");
-    concreteRecipe(event, "green");
-    concreteRecipe(event, "gray");
-    concreteRecipe(event, "lime");
-    concreteRecipe(event, "light_blue");
-    concreteRecipe(event, "light_gray");
-    concreteRecipe(event, "magenta");
-    concreteRecipe(event, "orange");
-    concreteRecipe(event, "purple");
-    concreteRecipe(event, "red");
-    concreteRecipe(event, "white");
-    concreteRecipe(event, "yellow");
-    concreteRecipe(event, "pink");
+    concreteRecipe(event, 'black');
+    concreteRecipe(event, 'blue');
+    concreteRecipe(event, 'brown');
+    concreteRecipe(event, 'cyan');
+    concreteRecipe(event, 'green');
+    concreteRecipe(event, 'gray');
+    concreteRecipe(event, 'lime');
+    concreteRecipe(event, 'light_blue');
+    concreteRecipe(event, 'light_gray');
+    concreteRecipe(event, 'magenta');
+    concreteRecipe(event, 'orange');
+    concreteRecipe(event, 'purple');
+    concreteRecipe(event, 'red');
+    concreteRecipe(event, 'white');
+    concreteRecipe(event, 'yellow');
+    concreteRecipe(event, 'pink');
 
     // Mycelium Growths
 

@@ -89,30 +89,30 @@ ServerEvents.recipes(event => {
                 .EUt(100);
 
         }
-        dyingCable("covered_cable");
-        dyingCable("covered_dense_cable");
-        dyingCable("smart_cable");
-        dyingCable("smart_dense_cable");
+        dyingCable('covered_cable');
+        dyingCable('covered_dense_cable');
+        dyingCable('smart_cable');
+        dyingCable('smart_dense_cable');
         //because Mikerooni is weird
-        dyingCable("glass_cable")
+        dyingCable('glass_cable')
     }
 
-    colourCable("black");
-    colourCable("blue");
-    colourCable("brown");
-    colourCable("cyan");
-    colourCable("green");
-    colourCable("gray");
-    colourCable("lime");
-    colourCable("light_blue");
-    colourCable("light_gray");
-    colourCable("magenta");
-    colourCable("orange");
-    colourCable("purple");
-    colourCable("red");
-    colourCable("white");
-    colourCable("yellow");
-    colourCable("pink");
+    colourCable('black');
+    colourCable('blue');
+    colourCable('brown');
+    colourCable('cyan');
+    colourCable('green');
+    colourCable('gray');
+    colourCable('lime');
+    colourCable('light_blue');
+    colourCable('light_gray');
+    colourCable('magenta');
+    colourCable('orange');
+    colourCable('purple');
+    colourCable('red');
+    colourCable('white');
+    colourCable('yellow');
+    colourCable('pink');
 
 
     //Coating ae2 cables with rubber for covered cable
@@ -127,10 +127,10 @@ ServerEvents.recipes(event => {
 
     }
 
-    rubberType("thermal:latex", 288);
-    rubberType("gtceu:rubber", 144);
-    rubberType("gtceu:silicone_rubber", 72);
-    rubberType("gtceu:styrene_butadiene_rubber", 36);
+    rubberType('thermal:latex', 288);
+    rubberType('gtceu:rubber', 144);
+    rubberType('gtceu:silicone_rubber', 72);
+    rubberType('gtceu:styrene_butadiene_rubber', 36);
 
 
     //gerging cable anchors
@@ -148,17 +148,17 @@ ServerEvents.recipes(event => {
 
         }
 
-        metaltype("iron", 2);
-        metaltype("steel", 4);
-        metaltype("aluminium", 6);
-        metaltype("kanthal", 8);
-        metaltype("tungsten", 16);
-        metaltype("rtm_alloy", 32);
+        metaltype('iron', 2);
+        metaltype('steel', 4);
+        metaltype('aluminium', 6);
+        metaltype('kanthal', 8);
+        metaltype('tungsten', 16);
+        metaltype('rtm_alloy', 32);
 
     }
 
-    fluidtype("minecraft:water", 4)
-    fluidtype("gtceu:distilled_water", 3)
-    fluidtype("gtceu:lubricant", 2)
+    fluidtype('minecraft:water', 4)
+    fluidtype('gtceu:distilled_water', 3)
+    fluidtype('gtceu:lubricant', 2)
 
 });

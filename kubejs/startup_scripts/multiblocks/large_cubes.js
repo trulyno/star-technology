@@ -1,10 +1,24 @@
+
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
+    // Large Rock Crusher Recipe Type
+    event.create('large_rock_crusher')
+        .category('large_rock_crusher')
+        .setEUIO('in')
+        .setMaxIOSize(1, 1, 2, 0)
+        .setSound(GTSoundEntries.FORGE_HAMMER);
+
+});
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    function largeCube(type, casing) {
+
+    const largeCube = (type, casing) => {
+
         event.create(`t_large_${type}`, 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType(type)
-            .tooltips("Can only have §bone§f energy hatch")
-            .tooltips("Has §6Perfect Overclock")
+            .tooltips('Can only have §bone§f energy hatch')
+            .tooltips('Has §6Perfect Overclock')
             .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle('CCC', 'CCC', 'CCC')
@@ -22,6 +36,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .build())
             .workableCasingRenderer(`kubejs:block/casings/large_cubes/${casing}_casing`,
             `gtceu:block/machines/${type}`, false);
+
     }
 
     // Generic Cubes
@@ -44,8 +59,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_rock_crusher', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_rock_crusher')
-        .tooltips("Can only have §bone§f energy hatch")
-        .tooltips("Has §6Perfect Overclock")
+        .tooltips('Can only have §bone§f energy hatch')
+        .tooltips('Has §6Perfect Overclock')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('CCC', 'CCC', 'CCC')
@@ -60,16 +75,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1)))
             .where(' ', Predicates.air())
             .build())
-        .workableCasingRenderer("kubejs:block/casings/large_cubes/red_steel_casing",
-        "gtceu:block/machines/rock_crusher", false);
-});
+        .workableCasingRenderer('kubejs:block/casings/large_cubes/red_steel_casing',
+        'gtceu:block/machines/rock_crusher', false);
 
-
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-    // Large Rock Crusher Recipe Type
-    event.create('large_rock_crusher')
-        .category('large_rock_crusher')
-        .setEUIO('in')
-        .setMaxIOSize(1, 1, 2, 0)
-        .setSound(GTSoundEntries.FORGE_HAMMER);
 });

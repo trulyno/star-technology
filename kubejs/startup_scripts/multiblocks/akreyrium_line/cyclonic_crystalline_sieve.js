@@ -1,12 +1,15 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
     event.create('cyclonic_crystalline_sieve')
         .category('cyclonic_crystalline_sieve')
         .setEUIO('in')
         .setMaxIOSize(1, 1, 1, 1)
         .setSound(GTSoundEntries.MACERATOR);
+
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+
     event.create('cyclonic_crystalline_sieve', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('cyclonic_crystalline_sieve')
@@ -33,6 +36,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks('gtceu:hastelloy_x_frame'))
             .where('G', Predicates.blocks('gtceu:crushing_wheels'))
             .build())
-        .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_robust_tungstensteel",
-            "gtceu:block/multiblock/network_switch", false);
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
+            'gtceu:block/multiblock/network_switch', false);
+
 });

@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     singularity_materials.forEach(element => {
         event.recipes.gtceu.large_quantum_compressor(`${element}_singularity`)
             .itemInputs(`64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `64x #forge:storage_blocks/${element}`, `32x #forge:storage_blocks/${element}`)
-            .itemOutputs(Item.of('extendedcrafting:singularity', `{Id:"extendedcrafting:${element}"}`))
+            .itemOutputs(Item.of('extendedcrafting:singularity', `{Id:'extendedcrafting:${element}'}`))
             .duration(24000)
             .EUt(GTValues.VHA[GTValues.ZPM]);
     });
@@ -29,35 +29,35 @@ ServerEvents.recipes(event => {
     function runicEngraving(material,amount,dur){
 
     event.recipes.gtceu.runic_circuitry_assembling_station(`${material}_rune_engraved`)
-        .itemInputs('gtceu:dense_enriched_naquadah_plate', Item.of('extendedcrafting:singularity', `{Id:"extendedcrafting:${material}"}`).strongNBT())
+        .itemInputs('gtceu:dense_enriched_naquadah_plate', Item.of('extendedcrafting:singularity', `{Id:'extendedcrafting:${material}'}`).strongNBT())
         .itemOutputs(`${amount}x kubejs:runic_engraved_plating`)
         .blastFurnaceTemp(10500)
         .duration(4000*`${dur}`)
         .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.runic_circuitry_assembling_station(`${material}_rune_pathway_engraved`)
-        .itemInputs('gtceu:dense_naquadah_plate', Item.of('extendedcrafting:singularity', `{Id:"extendedcrafting:${material}"}`).strongNBT())
+        .itemInputs('gtceu:dense_naquadah_plate', Item.of('extendedcrafting:singularity', `{Id:'extendedcrafting:${material}'}`).strongNBT())
         .itemOutputs(`${amount}x kubejs:runic_pathway_engraved_plating`)
         .blastFurnaceTemp(10500)
         .duration(3000*`${dur}`)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
     event.recipes.gtceu.runic_circuitry_assembling_station(`${material}_rune_stabilization`)
-        .itemInputs('gtceu:dense_naquadah_alloy_plate', Item.of('extendedcrafting:singularity', `{Id:"extendedcrafting:${material}"}`).strongNBT())
+        .itemInputs('gtceu:dense_naquadah_alloy_plate', Item.of('extendedcrafting:singularity', `{Id:'extendedcrafting:${material}'}`).strongNBT())
         .itemOutputs(`${amount}x kubejs:runic_stabilization_plating`)
         .blastFurnaceTemp(11500)
         .duration(4000*`${dur}`)
         .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.runic_circuitry_assembling_station(`${material}_rune_energized`)
-        .itemInputs('gtceu:dense_naquadria_plate', Item.of('extendedcrafting:singularity', `{Id:"extendedcrafting:${material}"}`).strongNBT())
+        .itemInputs('gtceu:dense_naquadria_plate', Item.of('extendedcrafting:singularity', `{Id:'extendedcrafting:${material}'}`).strongNBT())
         .itemOutputs(`${amount}x kubejs:runic_energized_plating`)
         .blastFurnaceTemp(11500)
         .duration(4000*`${dur}`)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.runic_circuitry_assembling_station(`${material}_rune_transportation_engraved`)
-        .itemInputs('gtceu:dense_trinaquadalloy_plate', Item.of('extendedcrafting:singularity', `{Id:"extendedcrafting:${material}"}`).strongNBT())
+        .itemInputs('gtceu:dense_trinaquadalloy_plate', Item.of('extendedcrafting:singularity', `{Id:'extendedcrafting:${material}'}`).strongNBT())
         .itemOutputs(`${amount}x kubejs:runic_transportation_engraved_plating`)
         .blastFurnaceTemp(11500)
         .duration(5000*`${dur}`)
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
         .duration(32000)
         .stationResearch(
     researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of("kubejs:runic_tablet_complete"))
+                .researchStack(Item.of('kubejs:runic_tablet_complete'))
                 .EUt(GTValues.VHA[GTValues.UV])
                 .CWUt(144)
             )

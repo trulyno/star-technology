@@ -1,13 +1,16 @@
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
     event.create('large_quantum_compressor')
         .category('large_quantum_compressor')
         .setEUIO('in')
         .setMaxIOSize(18, 1, 0, 0)
         .setSound(GTSoundEntries.ARC);
+
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+
     event.create('large_quantum_compressor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_quantum_compressor')
@@ -42,6 +45,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('W', Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get()))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer("gtceu:block/casings/gcym/stress_proof_casing",
-            "gtceu:block/multiblock/implosion_compressor", false);
+        .workableCasingRenderer('gtceu:block/casings/gcym/stress_proof_casing',
+            'gtceu:block/multiblock/implosion_compressor', false);
+            
 });

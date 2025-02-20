@@ -35,6 +35,6 @@
 //             .where('S', Predicates.blocks('gtceu:robust_machine_casing'))
 //             .where('#', Predicates.any())
 //             .build())
-//         .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_heatproof",
-//         "gtceu:block/multiblock/blast_furnace", false);
+//         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_heatproof',
+//         'gtceu:block/multiblock/blast_furnace', false);
 // });
