@@ -4,7 +4,7 @@ ServerEvents.loaded(event => {
 	if (event.server.persistentData.load_check) return
 
 	// The actual code
-	event.server.setDifficulty(Difficulty.PEACEFUL)
+	// event.server.setDifficulty(Difficulty.PEACEFUL)
 	event.server.gameRules.set("doWeatherCycle", false)
 	event.server.gameRules.set("waterSourceConversion", false)
 
