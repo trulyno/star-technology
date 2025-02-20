@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
     sieve('string',.4,cCalc,'gtceu:calcite_dust',false);
     sieve('string',.2,cCalc,'gtceu:tiny_sulfur_dust',false);
 
-    sieve('string',.4,cDrip,'gtceu:calcium_carbonate_dust',false);
+    sieve('string',.4,cDrip,'gtceu:gypsum_dust',false);
     sieve('string',.15,cDrip,'minecraft:clay_ball',false);
 
     sieve('string',.25,dust,'gtceu:small_redstone_dust',false);

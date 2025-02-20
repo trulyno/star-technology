@@ -606,9 +606,9 @@
 			dependencies: ["375469122AB56B6E"]
 			id: "2F9B48D51C21F896"
 			tasks: [{
-				id: "2728EC6D3ACDDC60"
-				title: "Muck Mixer"
-				type: "checkmark"
+				id: "31A6EF7EF6CFC9B4"
+				item: "gtceu:ulv_primitive_mixer"
+				type: "item"
 			}]
 			x: 2.0d
 			y: 1.5d
@@ -844,9 +844,19 @@
 			hide_dependent_lines: true
 			id: "7D83A21F7DB27B47"
 			tasks: [{
-				id: "0B8E9CB6F732CBAB"
-				title: "Primitive Concrete"
-				type: "checkmark"
+				id: "43EA7E18447E4124"
+				item: {
+					Count: 1
+					id: "woodenbucket:wooden_bucket"
+					tag: {
+						Damage: 0
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:concrete"
+						}
+					}
+				}
+				type: "item"
 			}]
 			x: 3.5d
 			y: 1.5d
@@ -934,7 +944,7 @@
 				}
 				{
 					id: "3C6BA2B2D58D1D81"
-					item: "gtceu:calcium_carbonate_dust"
+					item: "gtceu:gypsum_dust"
 					type: "item"
 				}
 				{
@@ -1062,7 +1072,7 @@
 				}
 				{
 					id: "3A689AF46183CFF5"
-					item: "minecraft:quartz"
+					item: "gtceu:quartzite_gem"
 					type: "item"
 				}
 				{

@@ -503,5 +503,7 @@
     "block.gtceu.primitive_workshop": "Primitive Workshop",
     "gtceu.primitive_workshop": "Primitive Workshop",
     "block.gtceu.steam_workshop": "Steam Workshop",
-    "gtceu.steam_workshop": "Steam Workshop"
+    "gtceu.steam_workshop": "Steam Workshop",
+    "block.gtceu.ulv_primitive_mixer": "Ultra Primitive Mixer",
+    "gtceu.ulv_primitive_mixer": "Ultra Primitive Mixer"
 }
