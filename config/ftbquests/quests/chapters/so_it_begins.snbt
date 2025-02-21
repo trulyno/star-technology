@@ -843,6 +843,17 @@
 				"4C8102F3CE4F6612"
 			]
 			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "woodenbucket:wooden_bucket"
+				tag: {
+					Damage: 0
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:concrete"
+					}
+				}
+			}
 			id: "7D83A21F7DB27B47"
 			tasks: [
 				{
@@ -1051,8 +1062,9 @@
 				"3DCE9199510A9223"
 				"7D83A21F7DB27B47"
 			]
-			description: ["Stone Cutter is a pretty neat thing."]
+			description: [""]
 			hide_dependent_lines: true
+			icon: "kubejs:reinforced_stone_bricks"
 			id: "3D9B291441B63F78"
 			tasks: [
 				{

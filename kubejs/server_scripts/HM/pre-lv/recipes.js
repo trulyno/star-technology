@@ -110,6 +110,7 @@ ServerEvents.recipes(event => {
     [{ output: 'minecraft:bricks'},{ output: 'gtceu:firebricks'},{ output: 'gtceu:coke_oven_bricks'}, { output: 'minecraft:stonecutter'}].forEach(r=>{
         event.remove({output: `${r.output}`});
     });
+
     [{type: '', mod: 'minecraft'},{type: 'coke_oven_', mod: 'gtceu'},{type: 'fire', mod: 'gtceu'}].forEach(brick=>{
         event.shaped(Item.of(`${brick.mod}:${brick.type}bricks`, 2),[
             'BBB',
@@ -117,28 +118,39 @@ ServerEvents.recipes(event => {
             'BBB'
         ], {
             B: `${brick.mod}:${brick.type}brick`,
-            C: 'gtceu:concrete_bucket'
+            C: 'gtceu:concrete_bucket' //Need to add wooden bucket variant
         });
     });
-    event.shaped(Item.of('minecraft:stonecutter'), [
-        'NNN',
-        'SFS'
-    ], {
-        N: 'minecraft:iron_nugget',
-        S: 'minecraft:stone',
-        F: 'gtceu:wood_frame'
-    });
-    event.shaped(Item.of('kubejs:reinforced_stone_bricks',2), [
-        'NBN',
-        'NCN',
-        'NBN'
-    ], {
-        N: 'minecraft:iron_nugget',
-        B: 'minecraft:stone_bricks',
-        C: 'gtceu:concrete_bucket'
-    });
+        event.shaped(Item.of('kubejs:reinforced_stone_bricks',2), [
+            'NBN',
+            'NCN',
+            'NBN'
+        ], {
+            N: 'minecraft:iron_nugget',
+            B: 'minecraft:stone_bricks',
+            C: 'gtceu:concrete_bucket' //Need to add wooden bucket variant
+        });
+        event.shaped(Item.of('minecraft:stonecutter'), [
+            'NNN',
+            'SFS'
+        ], {
+            N: 'minecraft:iron_nugget',
+            S: 'minecraft:stone',
+            F: 'gtceu:wood_frame'
+        });
 
-
+    event.remove({id: /^gtceu:mixer\/concrete.*/})
+    event.recipes.gtceu.primitive_mixer('concrete')
+        .itemInputs('3x gtceu:stone_dust','gtceu:calcite_dust','2x gtceu:gypsum_dust')
+        .inputFluids('minecraft:water 1000')
+        .outputFluids('gtceu:concrete 1000')
+        .duration(240);
+    event.recipes.gtceu.mixer('concrete')
+        .itemInputs('3x gtceu:stone_dust','gtceu:calcite_dust','2x gtceu:gypsum_dust')
+        .inputFluids('minecraft:water 1000')
+        .outputFluids('gtceu:concrete 1000')
+        .duration(50)
+        .EUt(6);
 
 //Post Cobble-Gen, Pre-Circuit
 
