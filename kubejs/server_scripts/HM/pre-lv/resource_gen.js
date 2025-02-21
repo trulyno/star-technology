@@ -9,6 +9,16 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
     } 
 });
 
+[{hit: 'minecraft:stripped_jungle_log',get: 'kubejs:crucible_stage_1'},{hit: 'kubejs:crucible_stage_1',get: 'kubejs:crucible_stage_2'},
+{hit: 'kubejs:crucible_stage_2',get: 'kubejs:crucible_stage_3'},{hit: 'kubejs:crucible_stage_3',get: 'exnihilosequentia:jungle_crucible'}].forEach (crucible => {
+    BlockEvents.rightClicked(`${crucible.hit}`, event => {
+    if (event.item = '#forge:tools/knives')
+    return
+            event.block.set(`${crucible.get}`)
+            event.block.give('gtceu:wood_dust')
+        })
+});
+
 ServerEvents.recipes(event => {
     event.shaped(Item.of('minecraft:flint'), [
         'SS',

@@ -37,4 +37,14 @@ StartupEvents.registry('block', event => {
             .tagBlock("mineable/pickaxe")
             .tagBlock('minecraft:needs_iron_tool')
             .textureAll('kubejs:block/hm/reinforced_stone_bricks');
+            
+    [{id: 'crucible_stage_1',name: 'Slightly Hollowed Log'},{id: 'crucible_stage_2',name: 'Fairly Hollowed Log'},{id: 'crucible_stage_3',name: 'Mostly Hollowed Log'}].forEach(crucible => {
+    event.create(`${crucible.id}`)
+        .displayName(`${crucible.name}`)
+        .hardness(1)
+        .resistance(2)
+        .requiresTool(true)
+        .tagBlock("minecraft:mineable/axe")
+        .tagBlock("minecraft:needs_stone_tool");
+    });
 });
