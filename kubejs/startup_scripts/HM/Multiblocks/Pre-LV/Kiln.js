@@ -10,15 +10,15 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('kiln')
 		.pattern(definition => FactoryBlockPattern.start()	
-            .aisle("AAA", "BBB", "BBB", "#B#", "#B#") 	
-            .aisle("AAA", "BCB", "B#B", "B#B", "B#B") 	
-            .aisle("AAA", "BDB", "BBB", "#B#", "#B#") 	
-            .where("A", Predicates.blocks("kubejs:reinforced_stone_bricks"))	
-            .where("B", Predicates.blocks("minecraft:bricks"))	
+            .aisle("BBB", "BBB", "BBB", "#B#", "#A#") 	
+            .aisle("BBB", "BCB", "B#B", "B#B", "A#A") 	
+            .aisle("BBB", "BDB", "BBB", "#B#", "#A#") 	
+            .where("A", Predicates.blocks('minecraft:stripped_jungle_wood'))	
+            .where("B", Predicates.blocks("minecraft:mud_bricks"))	
             .where("#", Predicates.any())	
             .where("C", Predicates.blocks("minecraft:campfire"))	
             .where("D", Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingRenderer("minecraft:block/bricks",
+		.workableCasingRenderer("minecraft:block/mud_bricks",
 			"gtceu:block/multiblock/primitive_blast_furnace", false);
 });

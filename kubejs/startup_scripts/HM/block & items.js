@@ -9,6 +9,16 @@ StartupEvents.registry('item', event => {
         .rarity('common')
         .texture(`kubejs:item/hm/pre-lv/plant_fibers`);
 
+    event.create('packed_mud_ball')
+        .displayName('Packed Mud Ball')
+        .rarity('common')
+        .texture(`kubejs:item/hm/pre-lv/packed_mud_ball`);
+
+    event.create('packed_mud_brick')
+        .displayName('Packed Mud Brick')
+        .rarity('common')
+        .texture(`kubejs:item/hm/pre-lv/packed_mud_brick`);
+
     const oreType=['Hematite','Cassiterite','Chalcopyrite','Sphalerite','Pyrite','Magnetite','Galena','Raw_Electrum']
 
     oreType.forEach(type => {

@@ -106,8 +106,10 @@ ServerEvents.recipes(event => {
         R: 'gtceu:sticky_resin'
     });
 
+
+    //Bricks
     event.remove({ id: 'minecraft:stone_bricks'});
-    [{ output: 'minecraft:bricks'},{ output: 'gtceu:firebricks'},{ output: 'gtceu:coke_oven_bricks'}, { output: 'minecraft:stonecutter'}].forEach(r=>{
+    [{ output: 'minecraft:bricks'},{ output: 'gtceu:firebricks'},{ output: 'gtceu:coke_oven_bricks'},{ output: 'minecraft:mud_bricks'}].forEach(r=>{
         event.remove({output: `${r.output}`});
     });
 
@@ -118,7 +120,23 @@ ServerEvents.recipes(event => {
             'BBB'
         ], {
             B: `${brick.mod}:${brick.type}brick`,
-            C: 'gtceu:concrete_bucket' //Need to add wooden bucket variant
+            C: 'gtceu:concrete_bucket'
+        });
+        event.shaped(Item.of(`${brick.mod}:${brick.type}bricks`, 2),[
+            'BBB',
+            'BCB',
+            'BBB'
+        ], {
+            B: `${brick.mod}:${brick.type}brick`,
+            C: {
+                'type': 'forge:partial_nbt',
+                'item': 'woodenbucket:wooden_bucket',
+                'nbt': {
+                  'Fluid': {
+                    Amount:1000,FluidName:'gtceu:concrete'
+                  }
+                }
+              }
         });
     });
         event.shaped(Item.of('kubejs:reinforced_stone_bricks',2), [
@@ -128,9 +146,60 @@ ServerEvents.recipes(event => {
         ], {
             N: 'minecraft:iron_nugget',
             B: 'minecraft:stone_bricks',
-            C: 'gtceu:concrete_bucket' //Need to add wooden bucket variant
+            C: {
+                'type': 'forge:partial_nbt',
+                'item': 'woodenbucket:wooden_bucket',
+                'nbt': {
+                  'Fluid': {
+                    Amount:1000,FluidName:'gtceu:concrete'
+                  }
+                }
+              }
         });
-        event.shaped(Item.of('minecraft:stonecutter'), [
+        event.shaped(Item.of('kubejs:reinforced_stone_bricks',2), [
+            'NBN',
+            'NCN',
+            'NBN'
+        ], {
+            N: 'minecraft:iron_nugget',
+            B: 'minecraft:stone_bricks',
+            C: 'gtceu:concrete_bucket'
+        });
+        event.shaped(Item.of('minecraft:mud_bricks',2), [
+            'BBB',
+            'BCB',
+            'BBB'
+        ], {
+            B: 'kubejs:packed_mud_brick',
+            C: 'gtceu:concrete_bucket'
+        });
+        event.shaped(Item.of('minecraft:mud_bricks',2), [
+            'BBB',
+            'BCB',
+            'BBB'
+        ], {
+            B: 'kubejs:packed_mud_brick',
+            C: {
+                'type': 'forge:partial_nbt',
+                'item': 'woodenbucket:wooden_bucket',
+                'nbt': {
+                  'Fluid': {
+                    Amount:1000,FluidName:'gtceu:concrete'
+                  }
+                }
+              }
+        });
+        event.shaped(Item.of('kubejs:packed_mud_brick',4), [
+            'CCC',
+            'CMC',
+            'CCC'
+        ], {
+            C: 'kubejs:packed_mud_ball',
+            M: 'gtceu:brick_wooden_form'
+        }).keepIngredient('gtceu:brick_wooden_form');
+    
+    event.remove({ output: 'minecraft:stonecutter'})
+    event.shaped(Item.of('minecraft:stonecutter'), [
             'NNN',
             'SFS'
         ], {
@@ -151,6 +220,24 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:concrete 1000')
         .duration(50)
         .EUt(6);
+
+    event.custom({
+        "type": "farmersdelight:cutting",
+        "ingredients": [
+          {
+            "item": "minecraft:packed_mud"
+          }
+        ],
+        "result": [
+          {
+            "count": 4,
+            "item": "kubejs:packed_mud_ball"
+          }
+        ],
+        "tool": {
+          "item": "minecraft:bowl"
+        }
+    });
 
 //Post Cobble-Gen, Pre-Circuit
 

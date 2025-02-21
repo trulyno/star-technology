@@ -685,6 +685,7 @@
 				"1ABF4784F033D41A"
 			]
 			dependency_requirement: "one_completed"
+			hide_dependent_lines: true
 			id: "41EEEE63FF53A037"
 			tasks: [{
 				id: "413FE2574EC05D26"
@@ -698,9 +699,9 @@
 			dependencies: ["341E2546D0BD5FAE"]
 			id: "75483607FCF1447A"
 			tasks: [{
-				id: "7DEB3D0B2D58E31B"
-				title: "Packed Mud Ball"
-				type: "checkmark"
+				id: "40872FAD78217A88"
+				item: "kubejs:packed_mud_ball"
+				type: "item"
 			}]
 			x: 5.0d
 			y: -1.5d
@@ -708,35 +709,21 @@
 		{
 			dependencies: [
 				"75483607FCF1447A"
-				"41EEEE63FF53A037"
+				"5E775E21E5B0786F"
 			]
 			id: "0E087C29644BA666"
 			tasks: [{
-				id: "20852012AFF9A7F0"
-				title: "Raw Brick Mixture"
-				type: "checkmark"
-			}]
-			x: 5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"5E775E21E5B0786F"
-				"0E087C29644BA666"
-			]
-			id: "56151ED4A320671B"
-			tasks: [{
-				id: "208F20EA0AED5C97"
-				title: "Raw Brick"
-				type: "checkmark"
+				id: "4AE68C23FAA00C3B"
+				item: "kubejs:packed_mud_brick"
+				type: "item"
 			}]
 			x: 5.0d
 			y: 3.0d
 		}
 		{
 			dependencies: [
-				"4A8D7BF420869DC7"
-				"56151ED4A320671B"
+				"19A0099F62CB5FF1"
+				"0D24BB28465CF80B"
 			]
 			id: "4F550705B0576891"
 			tasks: [{
@@ -744,8 +731,8 @@
 				item: "minecraft:brick"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 4.5d
+			x: 3.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["34F1552CD16AC064"]
@@ -883,13 +870,13 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
-				"4917BE27976C3A9A"
 				"4A8D7BF420869DC7"
 				"184FE341A3AD7B1E"
+				"629BDB317D0A8DD3"
 			]
 			id: "41D300F6E11B1EA1"
 			tasks: [{
@@ -898,7 +885,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1248,7 +1235,7 @@
 		{
 			dependencies: [
 				"280AD7F16F6654B4"
-				"19A0099F62CB5FF1"
+				"41EEEE63FF53A037"
 			]
 			id: "0D24BB28465CF80B"
 			tasks: [{
@@ -1324,7 +1311,7 @@
 		{
 			dependencies: [
 				"6C4B325AEF8A5B7D"
-				"4917BE27976C3A9A"
+				"629BDB317D0A8DD3"
 			]
 			id: "19A0099F62CB5FF1"
 			tasks: [{
@@ -1333,7 +1320,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1659,7 +1646,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1881,6 +1868,20 @@
 			}]
 			x: 8.0d
 			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0E087C29644BA666"
+				"7D83A21F7DB27B47"
+			]
+			id: "629BDB317D0A8DD3"
+			tasks: [{
+				id: "0BFDFEABEECAA5C8"
+				item: "minecraft:mud_bricks"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
 		}
 	]
 	title: "So It Begins"
