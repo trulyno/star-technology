@@ -9,7 +9,7 @@ LootJS.modifiers((event) => {
     
     event
         .addBlockLootModifier("minecraft:dead_bush")
-        .matchMainHand(Item.of('gtceu:flint_knife'))
+        .matchMainHand(Item.of('#forge:tools/knives'))
         .removeLoot(Ingredient.all)
         .addWeightedLoot(
             [2, 3],

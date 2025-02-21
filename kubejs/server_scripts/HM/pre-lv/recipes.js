@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+//Pre-Cobble Gen
+
     event.remove({ id: 'gtceu:shaped/axe_flint'});
     event.shaped(Item.of('gtceu:flint_axe'), [
         'FT',
@@ -80,5 +82,64 @@ ServerEvents.recipes(event => {
         '#forge:tools/knives',
         'farmersdelight:tree_bark'
     ]);
+
+    event.remove({ id: 'exnihilosequentia:ens_string_mesh'});
+    event.shaped(Item.of('exnihilosequentia:string_mesh'),[
+        'SSS',
+        'SCS',
+        'SSS'
+    ], {
+        S: '#forge:string',
+        C: 'farmersdelight:canvas'
+    });
+
+    event.remove({ id: 'minecraft:kjs/gtceu_wood_plate'});
+    event.shaped(Item.of('minecraft:crafting_table'),[
+        'SCS',
+        'PFP',
+        'PRP'
+    ], {
+        S: 'gtceu:iron_screw',
+        C: 'farmersdelight:canvas',
+        P: 'gtceu:wood_plate',
+        F: 'gtceu:wood_frame',
+        R: 'gtceu:sticky_resin'
+    });
+
+    event.remove({ id: 'minecraft:stone_bricks'});
+    [{ output: 'minecraft:bricks'},{ output: 'gtceu:firebricks'},{ output: 'gtceu:coke_oven_bricks'}, { output: 'minecraft:stonecutter'}].forEach(r=>{
+        event.remove({output: `${r.output}`});
+    });
+    [{type: '', mod: 'minecraft'},{type: 'coke_oven_', mod: 'gtceu'},{type: 'fire', mod: 'gtceu'}].forEach(brick=>{
+        event.shaped(Item.of(`${brick.mod}:${brick.type}bricks`, 2),[
+            'BBB',
+            'BCB',
+            'BBB'
+        ], {
+            B: `${brick.mod}:${brick.type}brick`,
+            C: 'gtceu:concrete_bucket'
+        });
+    });
+    event.shaped(Item.of('minecraft:stonecutter'), [
+        'NNN',
+        'SFS'
+    ], {
+        N: 'minecraft:iron_nugget',
+        S: 'minecraft:stone',
+        F: 'gtceu:wood_frame'
+    });
+    event.shaped(Item.of('kubejs:reinforced_stone_bricks',2), [
+        'NBN',
+        'NCN',
+        'NBN'
+    ], {
+        N: 'minecraft:iron_nugget',
+        B: 'minecraft:stone_bricks',
+        C: 'gtceu:concrete_bucket'
+    });
+
+
+
+//Post Cobble-Gen, Pre-Circuit
 
 })
