@@ -704,7 +704,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -732,7 +732,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["34F1552CD16AC064"]
@@ -870,7 +870,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1216,7 +1216,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1245,7 +1245,7 @@
 			}]
 			title: "Cheaper Brick"
 			x: 2.0d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1334,7 +1334,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1362,7 +1362,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1388,7 +1388,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1402,7 +1402,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
@@ -1413,7 +1413,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1B5EA867C67903E4"]
@@ -1423,8 +1423,8 @@
 				item: "gtceu:primitive_pump"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 1.5d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1AD7CB6C61196D5C"]
@@ -1438,8 +1438,8 @@
 				type: "item"
 			}]
 			title: "INFINITE WATER"
-			x: 6.5d
-			y: 0.0d
+			x: 5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2E686BE355CCF22E"]
@@ -1607,7 +1607,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["224916FFC857C099"]
@@ -1634,7 +1634,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["19A0099F62CB5FF1"]
@@ -1684,7 +1684,7 @@
 				item: "thermal:cured_rubber"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 8.0d
 			y: 6.0d
 		}
 		{
@@ -1696,7 +1696,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1726,6 +1726,7 @@
 		}
 		{
 			dependencies: ["59A805C314717BA0"]
+			hide_dependent_lines: true
 			id: "63D792EF5D75290F"
 			tasks: [{
 				id: "1990722E39FEE28B"
@@ -1761,7 +1762,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 12.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["5880CFBC8A0DC3C4"]
@@ -1775,7 +1776,7 @@
 			}]
 			title: "COBBLE GEN"
 			x: 8.0d
-			y: 10.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1804,7 +1805,7 @@
 			}]
 			title: "You Can Finally Touch Grass"
 			x: 8.0d
-			y: 1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["31E3FA832F85F262"]
@@ -1866,8 +1867,8 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 6.0d
+			x: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
