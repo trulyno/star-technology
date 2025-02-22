@@ -59,16 +59,12 @@
 			]
 			id: "525886980CC24650"
 			tasks: [{
-				id: "25CC1B94D8AB6D81"
+				id: "1D8EB02CFBC6D537"
 				item: {
 					Count: 1
 					id: "gtceu:flint_knife"
 					tag: {
 						DisallowContainerItem: 0b
-						Enchantments: [{
-							id: "minecraft:fire_aspect"
-							lvl: 2s
-						}]
 						GT.Behaviours: { }
 						GT.Tool: {
 							AttackDamage: 1.0f
@@ -1500,11 +1496,6 @@
 			]
 			id: "60B2BEDDA1D66001"
 			tasks: [
-				{
-					id: "14BBC4573A1C376F"
-					title: "Pig Iron"
-					type: "checkmark"
-				}
 				{
 					id: "63E1627424CC6E4A"
 					item: "gtceu:pig_iron_ingot"
