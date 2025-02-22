@@ -687,7 +687,7 @@ materialRegistry(event => {
         .element(GTElements.get('pure_netherite'))
         .color(0x1a0d00)
         .iconSet(DULL)
-        .blastTemp(3300, 'low', VA('ev'), 1200)
+        .blastTemp(5000, 'low', VA('iv'), 1200)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring);
 
