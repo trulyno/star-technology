@@ -69,13 +69,6 @@ ServerEvents.recipes(event => {
         .EUt(400)
         .circuit(0);
 
-    event.recipes.gtceu.essence_burning('fire_essence_burning_1')
-        .itemInputs('mysticalagriculture:fire_essence')
-        .outputFluids('gtceu:blaze 288')
-        .duration(100)
-        .EUt(400)
-        .circuit(1);
-
     event.recipes.gtceu.essence_burning('wood_essence_burning_0')
         .itemInputs('mysticalagriculture:wood_essence')
         .itemOutputs('32x minecraft:oak_log')

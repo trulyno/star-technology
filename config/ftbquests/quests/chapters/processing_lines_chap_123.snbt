@@ -1260,8 +1260,8 @@
 				item: "thermal:earth_charge"
 				type: "item"
 			}]
-			x: 24.0d
-			y: 16.5d
+			x: 24.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["158885A1FD330FD8"]
@@ -1272,8 +1272,8 @@
 				item: "minecraft:fire_charge"
 				type: "item"
 			}]
-			x: 23.5d
-			y: 15.25d
+			x: 24.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["161853249C63EDCB"]
@@ -1284,8 +1284,8 @@
 				item: "thermal:lightning_charge"
 				type: "item"
 			}]
-			x: 23.5d
-			y: 13.75d
+			x: 24.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["6172BFE1494E9D28"]
@@ -1296,8 +1296,8 @@
 				item: "thermal:ice_charge"
 				type: "item"
 			}]
-			x: 24.0d
-			y: 12.5d
+			x: 24.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -1308,8 +1308,8 @@
 				item: "thermal:basalz_powder"
 				type: "item"
 			}]
-			x: 22.5d
-			y: 16.5d
+			x: 23.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -1320,8 +1320,8 @@
 				item: "minecraft:blaze_powder"
 				type: "item"
 			}]
-			x: 22.0d
-			y: 15.25d
+			x: 22.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["74749B089D50329C"]
@@ -1332,8 +1332,8 @@
 				item: "thermal:blitz_powder"
 				type: "item"
 			}]
-			x: 22.0d
-			y: 13.75d
+			x: 22.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["4D9DAED52FF74B8B"]
@@ -1344,54 +1344,13 @@
 				item: "thermal:blizz_powder"
 				type: "item"
 			}]
-			x: 22.5d
-			y: 12.5d
+			x: 23.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
-				"26B448FBF4855DB4"
-				"3E3E29B333CCDBA7"
-				"1DE8AC3387F38088"
-				"61B03163F6A65B9A"
-			]
-			id: "488ED4F4C784C537"
-			size: 1.0d
-			tasks: [{
-				id: "1D86917424050C84"
-				item: "mysticalagriculture:nether_star_essence"
-				type: "item"
-			}]
-			x: 25.0d
-			y: 14.5d
-		}
-		{
-			dependencies: ["488ED4F4C784C537"]
-			id: "090275078106B752"
-			size: 1.0d
-			tasks: [{
-				id: "4DEDAE2321A09E17"
-				item: "mysticalagradditions:nether_star_shard"
-				type: "item"
-			}]
-			x: 26.0d
-			y: 14.5d
-		}
-		{
-			dependencies: ["090275078106B752"]
-			id: "4FD165BABC36DAB7"
-			size: 1.0d
-			tasks: [{
-				id: "3EB1225649414C41"
-				item: "gtceu:nether_star_dust"
-				type: "item"
-			}]
-			x: 27.0d
-			y: 14.5d
-		}
-		{
-			dependencies: [
-				"4FD165BABC36DAB7"
 				"0FBB34B21DA41C5D"
+				"73B438B7A98354EA"
 			]
 			id: "4BCC078B76C6CAE3"
 			rewards: [{
@@ -1407,8 +1366,8 @@
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
-			x: 28.5d
-			y: 14.5d
+			x: 29.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
@@ -1420,7 +1379,7 @@
 				item: "gtceu:implosion_compressor"
 				type: "item"
 			}]
-			x: 30.5d
+			x: 29.0d
 			y: 14.5d
 		}
 		{
@@ -1433,7 +1392,7 @@
 				type: "item"
 			}]
 			x: 24.0d
-			y: 18.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["1C5BF4BBF693A39E"]
@@ -1445,7 +1404,7 @@
 				type: "item"
 			}]
 			x: 25.5d
-			y: 18.5d
+			y: 19.5d
 		}
 		{
 			dependencies: [
@@ -1460,7 +1419,7 @@
 				type: "item"
 			}]
 			x: 27.0d
-			y: 18.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["3AA8F5EDD58D4F43"]
@@ -1473,7 +1432,7 @@
 				type: "item"
 			}]
 			x: 28.5d
-			y: 18.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["3AA8F5EDD58D4F43"]
@@ -1487,7 +1446,7 @@
 			}]
 			title: "Debris Looping"
 			x: 26.0d
-			y: 17.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["3AA8F5EDD58D4F43"]
@@ -1499,7 +1458,7 @@
 				type: "item"
 			}]
 			x: 28.0d
-			y: 17.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["11FF8831D1DE5D7B"]
@@ -1511,7 +1470,7 @@
 				type: "item"
 			}]
 			x: 29.5d
-			y: 17.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["7A667B2D4AB99C9A"]
@@ -1524,7 +1483,7 @@
 				type: "item"
 			}]
 			x: 33.0d
-			y: 17.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["0BEDF4FEED71D9F4"]
@@ -1545,7 +1504,7 @@
 				}
 			]
 			x: 31.0d
-			y: 17.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["3AA8F5EDD58D4F43"]
@@ -1566,7 +1525,7 @@
 				}
 			]
 			x: 28.0d
-			y: 20.0d
+			y: 21.0d
 		}
 		{
 			icon: "gtceu:chlorine_trifluoride_bucket"
@@ -1586,7 +1545,7 @@
 				}
 			]
 			x: 26.0d
-			y: 20.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["346DEF55D35A9E96"]
@@ -1604,7 +1563,7 @@
 				type: "item"
 			}]
 			x: 30.5d
-			y: 18.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["4D387E12A6D1B8F3"]
@@ -1616,7 +1575,7 @@
 				type: "item"
 			}]
 			x: 32.0d
-			y: 18.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["279251A8D5A997DF"]
@@ -1635,7 +1594,7 @@
 				type: "item"
 			}]
 			x: 34.0d
-			y: 18.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["5E7E3629AB2080AD"]
@@ -1654,7 +1613,7 @@
 				type: "item"
 			}]
 			x: 35.0d
-			y: 20.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["22F5AAAB28375626"]
@@ -1675,7 +1634,7 @@
 				}
 			]
 			x: 33.0d
-			y: 20.0d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -1690,7 +1649,7 @@
 				type: "item"
 			}]
 			x: 31.5d
-			y: 20.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["7435A8AEF5E25F38"]
@@ -1711,7 +1670,7 @@
 				}
 			]
 			x: 30.0d
-			y: 20.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["12C9427A04A2F550"]
@@ -1732,7 +1691,7 @@
 				}
 			]
 			x: 29.0d
-			y: 21.5d
+			y: 22.5d
 		}
 		{
 			dependencies: ["0AB3A8C14C3A0512"]
@@ -2042,7 +2001,7 @@
 				}
 			]
 			x: 23.0d
-			y: 22.0d
+			y: 23.0d
 		}
 		{
 			dependencies: ["06FBC454DC18AABA"]
@@ -2063,7 +2022,7 @@
 				}
 			]
 			x: 24.5d
-			y: 22.0d
+			y: 23.0d
 		}
 		{
 			dependencies: ["718F143E6E120E52"]
@@ -2084,7 +2043,7 @@
 				}
 			]
 			x: 26.0d
-			y: 22.0d
+			y: 23.0d
 		}
 		{
 			dependencies: [
@@ -2106,7 +2065,7 @@
 				type: "item"
 			}]
 			x: 27.0d
-			y: 23.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -2127,7 +2086,7 @@
 				}
 			]
 			x: 25.0d
-			y: 23.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
@@ -2146,8 +2105,8 @@
 				}
 			]
 			title: "Purified Galena and Sphalerite"
-			x: 26.0d
-			y: 12.0d
+			x: 24.0d
+			y: 16.25d
 		}
 		{
 			dependencies: ["4EDE77E1B5577399"]
@@ -2167,8 +2126,8 @@
 					type: "item"
 				}
 			]
-			x: 27.5d
-			y: 12.0d
+			x: 25.5d
+			y: 16.25d
 		}
 		{
 			dependencies: ["4F170C394411B94F"]
@@ -2179,8 +2138,8 @@
 				item: "gtceu:indium_dust"
 				type: "item"
 			}]
-			x: 30.5d
-			y: 12.0d
+			x: 28.5d
+			y: 16.25d
 		}
 		{
 			dependencies: ["074A6D7A3072E11F"]
@@ -2198,8 +2157,8 @@
 				item: "gtceu:indium_gallium_phosphide_dust"
 				type: "item"
 			}]
-			x: 32.5d
-			y: 12.0d
+			x: 30.5d
+			y: 16.25d
 		}
 		{
 			dependencies: [
@@ -2573,8 +2532,149 @@
 				}
 				type: "item"
 			}]
-			x: 29.0d
-			y: 12.0d
+			x: 27.0d
+			y: 16.25d
+		}
+		{
+			dependencies: ["1DE8AC3387F38088"]
+			id: "6913C485E3217BF7"
+			tasks: [{
+				id: "3EF775E82AC1E27F"
+				item: "kubejs:ice_infused_shard"
+				type: "item"
+			}]
+			x: 26.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["61B03163F6A65B9A"]
+			id: "1C422CC7F9295EB9"
+			tasks: [{
+				id: "4DD05D414DB74DF2"
+				item: "kubejs:lightning_infused_shard"
+				type: "item"
+			}]
+			x: 25.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["3E3E29B333CCDBA7"]
+			id: "600870A21AC28B12"
+			tasks: [{
+				id: "5356796069A62C6C"
+				item: "kubejs:fire_infused_shard"
+				type: "item"
+			}]
+			x: 25.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["26B448FBF4855DB4"]
+			id: "27DA5A9041C34508"
+			tasks: [{
+				id: "73E58F06C4CC75B9"
+				item: "kubejs:earth_infused_shard"
+				type: "item"
+			}]
+			x: 26.0d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"6913C485E3217BF7"
+				"27DA5A9041C34508"
+				"1C422CC7F9295EB9"
+				"600870A21AC28B12"
+			]
+			id: "73B438B7A98354EA"
+			tasks: [{
+				id: "1D5B98A3296FD711"
+				item: "kubejs:impure_nether_star"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4BCC078B76C6CAE3"]
+			description: [
+				"A singular &o&dNether Star&r can be broken down into 5 shards. Using this you can more cheaply loop them."
+				""
+				"With a Autoclave at &5EV&r you, on average, break even using this better method all the way to 125% of your initial shards per loop at &3UV&r."
+				""
+				"Additionally, keep in mind that the Charge method gets progressively weaker over time, meaning sooner or later you'll want to set up looping to keep up with demand."
+			]
+			id: "200BA54AC5EC0BF0"
+			tasks: [
+				{
+					id: "7AAA523EAB518888"
+					item: "mysticalagradditions:nether_star_shard"
+					type: "item"
+				}
+				{
+					id: "30D9A1473D4A2A42"
+					title: "Making Sure &4YOU&r Read This"
+					type: "checkmark"
+				}
+			]
+			title: "Nether Star Looping"
+			x: 30.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["200BA54AC5EC0BF0"]
+			id: "13C1904CBEB09726"
+			tasks: [{
+				id: "590F6DBF086D1E67"
+				item: "kubejs:energized_nether_star_shard"
+				type: "item"
+			}]
+			x: 32.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["13C1904CBEB09726"]
+			id: "3EF79507769EF307"
+			tasks: [{
+				id: "56C1E1C67CAEA0AC"
+				item: "kubejs:ice_infused_shard"
+				type: "item"
+			}]
+			x: 32.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["13C1904CBEB09726"]
+			id: "339979FB14B5F2ED"
+			tasks: [{
+				id: "0B45F608F5054872"
+				item: "kubejs:lightning_infused_shard"
+				type: "item"
+			}]
+			x: 33.5d
+			y: 12.3d
+		}
+		{
+			dependencies: ["13C1904CBEB09726"]
+			id: "12A12338533AE6D8"
+			tasks: [{
+				id: "492E89E47038A634"
+				item: "kubejs:fire_infused_shard"
+				type: "item"
+			}]
+			x: 33.5d
+			y: 13.7d
+		}
+		{
+			dependencies: ["13C1904CBEB09726"]
+			id: "36F6D5EF625D596D"
+			tasks: [{
+				id: "4A5F284138C45146"
+				item: "kubejs:earth_infused_shard"
+				type: "item"
+			}]
+			x: 32.5d
+			y: 14.5d
 		}
 	]
 	title: "Processing Lines (Chap 1,2,3)"

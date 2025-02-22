@@ -1752,4 +1752,9 @@ materialRegistry(event => {
         .color(0xE3D28E)
         .components('2x indium', '3x oxygen');
 
+    //nether star line essences
+    liquid('blitz', 0xFDF3C4, '1x mystery');
+    liquid('blizz', 0xB4EFFA, '1x mystery');
+    liquid('basalz', 0x6F190E, '1x mystery');
+
 });

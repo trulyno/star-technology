@@ -449,6 +449,24 @@ StartupEvents.registry('item', event => {
 //         .displayName('Cargo Drone')
 //         .texture('kubejs:item/resource_gen/drone_test');
 
+    ['Fire', 'Ice', 'Earth', 'Lightning'].forEach(type => {
+        event.create(`${type.toLowerCase()}_infused_shard`)
+            .displayName(`${type.replace(/_/, ' ')} Infused Shard`)
+            .texture(`kubejs:item/lines/netherstar/${type.toLowerCase()}_infused_shard`);
+        });
+
+    event.create('star_casting_mold')
+        .displayName('Casting Mold (Star)')
+        .texture('kubejs:item/lines/netherstar/star_casting_mold');
+    
+    event.create('impure_nether_star')
+        .displayName('Impure Nether Star')
+        .texture('kubejs:item/lines/netherstar/impure_nether_star');
+        
+    event.create('energized_nether_star_shard')
+        .displayName('Energized Nether Star Shard')
+        .texture('kubejs:item/lines/netherstar/energized_nether_star_shard');
+
 });
 
 // Custom Blocks
