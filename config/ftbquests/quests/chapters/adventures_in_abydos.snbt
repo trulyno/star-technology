@@ -527,7 +527,7 @@
 				}
 			]
 			title: "Better Akreyrium Processing"
-			x: -1.5d
+			x: -3.5d
 			y: 0.0d
 		}
 		{
@@ -946,8 +946,8 @@
 				item: "gtceu:exotic_gas_siphon"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 0.0d
+			x: -5.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3540AE6C940F985B"]
@@ -1753,6 +1753,17 @@
 			}]
 			x: 0.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["4F3EE28B3F38FC85"]
+			id: "38FB8D5DB43D0DBD"
+			tasks: [{
+				id: "0EE1A5B3BEE712BE"
+				title: "Runic (Perfect) Parallel Hatch"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.0d
 		}
 	]
 	title: "Adventures in Abydos"

@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         .EUt(28000);
 
     event.recipes.gtceu.large_chemical_reactor('zapolgium_ore_proc_4')
-        .itemInputs('gtceu:zapolgium_chloride_dust', '3x gtceu:potassium_hydroxide_dust')
+        .itemInputs('gtceu:zapolgium_chloride_dust', 'gtceu:potassium_hydroxide_dust')
         .itemOutputs('gtceu:zapolgium_hydroxide_dust', '2x gtceu:rock_salt_dust')
         .duration(1200)
         .EUt(56000);
