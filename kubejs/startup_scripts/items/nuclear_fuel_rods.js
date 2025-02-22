@@ -7,7 +7,7 @@ StartupEvents.registry('item', event => {
 
     event.create('highly_enriched_uranium_fuel_rod')
         .displayName('Highly Enriched Uranium Fuel Rod')
-        .tooltip('20 BILLION CALORIES :trolllaugh:')
+        .tooltip('§220 BILLION CALORIES')
         .texture('kubejs:item/nuclear_rods/high_enriched_uranium_fuel_rod');
 
     event.create('low_enriched_uranium_fuel_rod')
@@ -20,7 +20,7 @@ StartupEvents.registry('item', event => {
 
     event.create('depleted_highly_enriched_uranium_fuel_rod')
         .displayName('Depleted Highly Enriched Uranium Fuel Rod')
-        .tooltip('No more 20 billion calories :waaaaaaaaah')
+        .tooltip('§7No more 20 billion calories')
         .texture('kubejs:item/nuclear_rods/depleted_high_enriched_uranium_rod');
 
     event.create('depleted_low_enriched_uranium_fuel_rod')
