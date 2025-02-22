@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of("gtceu:uv_fusion_reactor"))
+                .researchStack(Item.of('gtceu:uv_fusion_reactor'))
                 .EUt(GTValues.VHA[GTValues.UHV])
                 .CWUt(144)
             )

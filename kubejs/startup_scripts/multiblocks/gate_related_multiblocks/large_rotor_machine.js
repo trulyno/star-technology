@@ -1,13 +1,16 @@
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
     event.create('large_rotor_machine')
         .category('large_rotor_machine')
         .setEUIO('in')
         .setMaxIOSize(9, 1, 0, 0)
         .setSound(GTSoundEntries.ASSEMBLER);
+
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+
     event.create('large_rotor_machine', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_rotor_machine')
@@ -35,6 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks(GTBlocks.FILTER_CASING_STERILE.get()))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_robust_tungstensteel",
-            "gtceu:block/multiblock/implosion_compressor", false);
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
+            'gtceu:block/multiblock/implosion_compressor', false);
+            
 });

@@ -1,14 +1,15 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
     event.create('leptonic_convergence_injector')
         .category('leptonic_convergence_injector')
         .setEUIO('in')
         .setMaxIOSize(0, 0, 2, 1)
         .setSound(GTSoundEntries.MACERATOR);
+
 });
 
-
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+
     event.create('leptonic_convergence_injector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('leptonic_convergence_injector')
@@ -25,13 +26,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
-            .where("B", Predicates.blocks("gtceu:fusion_glass"))
+            .where('B', Predicates.blocks('gtceu:fusion_glass'))
             .where('D', Predicates.blocks('gtceu:high_power_casing'))
             .where('F', Predicates.blocks('gtceu:high_power_casing'))
             .where('A', Predicates.blocks('gtceu:robust_machine_casing'))
             .where('E', Predicates.blocks('gtceu:computer_casing'))
             .where('G', Predicates.blocks('gtceu:advanced_computer_casing'))
             .build())
-        .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_robust_tungstensteel",
-            "gtceu:block/multiblock/data_bank", false);
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
+            'gtceu:block/multiblock/data_bank', false);
+
 });

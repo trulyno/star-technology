@@ -7,53 +7,53 @@
 
 const oreProcessableTiers = {
     'primitive': [
-        { material: "iron", secondary: "nickel", tertiary: "tin" },
-        { material: "magnetite", secondary: "gold", tertiary: "gold" },
-        { material: "copper", secondary: "gold", tertiary: "nickel" },
-        { material: "tin", secondary: "iron", tertiary: "zinc" },
-        { material: "sphalerite", secondary: "gallium", tertiary: "sulfur" },
-        { material: "galena", secondary: "silver", tertiary: "sulfur" },
-        { material: "stibnite", secondary: "antimony", tertiary: "sulfur" }
+        { material: 'iron', secondary: 'nickel', tertiary: 'tin' },
+        { material: 'magnetite', secondary: 'gold', tertiary: 'gold' },
+        { material: 'copper', secondary: 'gold', tertiary: 'nickel' },
+        { material: 'tin', secondary: 'iron', tertiary: 'zinc' },
+        { material: 'sphalerite', secondary: 'gallium', tertiary: 'sulfur' },
+        { material: 'galena', secondary: 'silver', tertiary: 'sulfur' },
+        { material: 'stibnite', secondary: 'antimony', tertiary: 'sulfur' }
     ],
     
     'lv': [
-        { material: "chalcopyrite", secondary: "gold", tertiary: "pyrite", quaternary: "cobalt" },
-        { material: "cassiterite", secondary: "tin", tertiary: "tin", quaternary: "bismuth" },
-        { material: "silver", secondary: "gold", tertiary: "lead", quaternary: "sulfur" },
-        { material: "gold", secondary: "silver", tertiary: "copper", quaternary: "nickel" },
-        { material: "bornite", secondary: "gold", tertiary: "pyrite", quaternary: "cobalt" },
-        { material: "pentlandite", secondary: "cobalt", tertiary: "iron", quaternary: "sulfur" },
-        { material: "rock_salt", secondary: "salt", tertiary: "salt", quaternary: "borax" },
-        { material: "salt", secondary: "rock_salt", tertiary: "rock_salt", quaternary: "borax" }
+        { material: 'chalcopyrite', secondary: 'gold', tertiary: 'pyrite', quaternary: 'cobalt' },
+        { material: 'cassiterite', secondary: 'tin', tertiary: 'tin', quaternary: 'bismuth' },
+        { material: 'silver', secondary: 'gold', tertiary: 'lead', quaternary: 'sulfur' },
+        { material: 'gold', secondary: 'silver', tertiary: 'copper', quaternary: 'nickel' },
+        { material: 'bornite', secondary: 'gold', tertiary: 'pyrite', quaternary: 'cobalt' },
+        { material: 'pentlandite', secondary: 'cobalt', tertiary: 'iron', quaternary: 'sulfur' },
+        { material: 'rock_salt', secondary: 'salt', tertiary: 'salt', quaternary: 'borax' },
+        { material: 'salt', secondary: 'rock_salt', tertiary: 'rock_salt', quaternary: 'borax' }
     ],
 
     'mv': [
-        { material: "monazite", secondary: "thorium", tertiary: "thorium", quaternary: "neodymium" },
-        { material: "lepidolite", secondary: "lithium", tertiary: "lithium", quaternary: "caesium" },
-        { material: "pyrochlore", secondary: "apatite", tertiary: "apatite", quaternary: "calcium" },
-        { material: "pyrolusite", secondary: "manganese", tertiary: "manganese", quaternary: "tantalite" },
-        { material: "cobaltite", secondary: "cobalt", tertiary: "sulfur", quaternary: "cobalt" },
-        { material: "vanadium_magnetite", secondary: "magnetite", tertiary: "gold", quaternary: "vanadium" },
-        { material: "chromite", secondary: "iron", tertiary: "magnesium", quaternary: "iron" },
-        { material: "beryllium", secondary: "emerald", tertiary: "emerald", quaternary: "beryllium" },
-        { material: "apatite", secondary: "tricalcium_phosphate", tertiary: "tricalcium_phosphate", quaternary: "phosphate" }
+        { material: 'monazite', secondary: 'thorium', tertiary: 'thorium', quaternary: 'neodymium' },
+        { material: 'lepidolite', secondary: 'lithium', tertiary: 'lithium', quaternary: 'caesium' },
+        { material: 'pyrochlore', secondary: 'apatite', tertiary: 'apatite', quaternary: 'calcium' },
+        { material: 'pyrolusite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'tantalite' },
+        { material: 'cobaltite', secondary: 'cobalt', tertiary: 'sulfur', quaternary: 'cobalt' },
+        { material: 'vanadium_magnetite', secondary: 'magnetite', tertiary: 'gold', quaternary: 'vanadium' },
+        { material: 'chromite', secondary: 'iron', tertiary: 'magnesium', quaternary: 'iron' },
+        { material: 'beryllium', secondary: 'emerald', tertiary: 'emerald', quaternary: 'beryllium' },
+        { material: 'apatite', secondary: 'tricalcium_phosphate', tertiary: 'tricalcium_phosphate', quaternary: 'phosphate' }
     ],
 
     'hv': [
-        { material: "bauxite", secondary: "gallium", tertiary: "grossular", quaternary: "rutile" },
-        { material: "pitchblende", secondary: "thorium", tertiary: "thorium", quaternary: "uraninite" },
-        { material: "ilmenite", secondary: "iron", tertiary: "iron", quaternary: "rutile" },
-        { material: "molybdenite", secondary: "molybdenum", tertiary: "sulfur", quaternary: "molybdenum" },
-        { material: "tantalite", secondary: "manganese", tertiary: "niobium", quaternary: "niobium" },
-        { material: "pollucite", secondary: "caesium", tertiary: "aluminium", quaternary: "aluminium" }
+        { material: 'bauxite', secondary: 'gallium', tertiary: 'grossular', quaternary: 'rutile' },
+        { material: 'pitchblende', secondary: 'thorium', tertiary: 'thorium', quaternary: 'uraninite' },
+        { material: 'ilmenite', secondary: 'iron', tertiary: 'iron', quaternary: 'rutile' },
+        { material: 'molybdenite', secondary: 'molybdenum', tertiary: 'sulfur', quaternary: 'molybdenum' },
+        { material: 'tantalite', secondary: 'manganese', tertiary: 'niobium', quaternary: 'niobium' },
+        { material: 'pollucite', secondary: 'caesium', tertiary: 'aluminium', quaternary: 'aluminium' }
     ],
 
     'ev': [
-        { material: "cooperite", secondary: "palladium", tertiary: "nickel", quaternary: "nickel" },
-        { material: "bastnasite", secondary: "neodymium", tertiary: "neodymium", quaternary: "rare_earth" },
-        { material: "tungstate", secondary: "silver", tertiary: "manganese", quaternary: "lithium" },
-        { material: "scheelite", secondary: "manganese", tertiary: "manganese", quaternary: "molybdenum" },
-        { material: "zeolite", secondary: "calcium", tertiary: "aluminium", quaternary: "silicon" },
+        { material: 'cooperite', secondary: 'palladium', tertiary: 'nickel', quaternary: 'nickel' },
+        { material: 'bastnasite', secondary: 'neodymium', tertiary: 'neodymium', quaternary: 'rare_earth' },
+        { material: 'tungstate', secondary: 'silver', tertiary: 'manganese', quaternary: 'lithium' },
+        { material: 'scheelite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'molybdenum' },
+        { material: 'zeolite', secondary: 'calcium', tertiary: 'aluminium', quaternary: 'silicon' },
     ],
 
     'iv': [

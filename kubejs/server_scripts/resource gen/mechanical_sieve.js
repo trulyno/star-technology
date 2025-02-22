@@ -65,10 +65,10 @@ ServerEvents.recipes(event => {
 
     }
 
-    mechsieve("string", "128x minecraft:gravel", ['64x gtceu:crushed_copper_ore', '64x gtceu:crushed_iron_ore', '64x gtceu:crushed_tin_ore', '64x gtceu:crushed_sphalerite_ore', '64x gtceu:crushed_magnetite_ore']);
-    mechsieve("string", "128x #forge:sand", ['64x minecraft:quartz', '64x minecraft:diamond', '64x minecraft:lapis_lazuli', '64x minecraft:amethyst_shard', '64x minecraft:emerald']);
-    mechsieve("string", "128x exnihilosequentia:dust", ['64x minecraft:redstone', '16x minecraft:ender_pearl', '64x minecraft:glowstone_dust', '16x gtceu:sulfur_dust']);
-    mechsieve("string", "128x exnihilosequentia:crushed_blackstone", ['64x gtceu:crushed_galena_ore', '64x gtceu:crushed_stibnite_ore']);
+    mechsieve('string', '128x minecraft:gravel', ['64x gtceu:crushed_copper_ore', '64x gtceu:crushed_iron_ore', '64x gtceu:crushed_tin_ore', '64x gtceu:crushed_sphalerite_ore', '64x gtceu:crushed_magnetite_ore']);
+    mechsieve('string', '128x #forge:sand', ['64x minecraft:quartz', '64x minecraft:diamond', '64x minecraft:lapis_lazuli', '64x minecraft:amethyst_shard', '64x minecraft:emerald']);
+    mechsieve('string', '128x exnihilosequentia:dust', ['64x minecraft:redstone', '16x minecraft:ender_pearl', '64x minecraft:glowstone_dust', '16x gtceu:sulfur_dust']);
+    mechsieve('string', '128x exnihilosequentia:crushed_blackstone', ['64x gtceu:crushed_galena_ore', '64x gtceu:crushed_stibnite_ore']);
 
    //Parallel Version
     event.recipes.gtceu.assembler('large_sieve')
@@ -87,9 +87,9 @@ ServerEvents.recipes(event => {
 
     }
 
-    largesieve("64x minecraft:gravel", ['64x gtceu:crushed_copper_ore', '64x gtceu:crushed_iron_ore', '64x gtceu:crushed_tin_ore', '64x gtceu:crushed_sphalerite_ore', '64x gtceu:crushed_magnetite_ore']);
-    largesieve("64x #forge:sand", ['64x minecraft:quartz', '64x minecraft:diamond', '64x minecraft:lapis_lazuli', '64x minecraft:amethyst_shard', '64x minecraft:emerald']);
-    largesieve("64x exnihilosequentia:dust", ['64x minecraft:redstone', '16x minecraft:ender_pearl', '64x minecraft:glowstone_dust', '16x gtceu:sulfur_dust']);
-    largesieve("64x exnihilosequentia:crushed_blackstone", ['64x gtceu:crushed_galena_ore', '64x gtceu:crushed_stibnite_ore']);
+    largesieve('64x minecraft:gravel', ['64x gtceu:crushed_copper_ore', '64x gtceu:crushed_iron_ore', '64x gtceu:crushed_tin_ore', '64x gtceu:crushed_sphalerite_ore', '64x gtceu:crushed_magnetite_ore']);
+    largesieve('64x #forge:sand', ['64x minecraft:quartz', '64x minecraft:diamond', '64x minecraft:lapis_lazuli', '64x minecraft:amethyst_shard', '64x minecraft:emerald']);
+    largesieve('64x exnihilosequentia:dust', ['64x minecraft:redstone', '16x minecraft:ender_pearl', '64x minecraft:glowstone_dust', '16x gtceu:sulfur_dust']);
+    largesieve('64x exnihilosequentia:crushed_blackstone', ['64x gtceu:crushed_galena_ore', '64x gtceu:crushed_stibnite_ore']);
 
 });

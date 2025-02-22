@@ -321,8 +321,8 @@ ServerEvents.recipes(event => {
         .itemOutputs(`minecraft:${stone}`)
         .duration(16)
         .EUt(7)
-        .addDataString("fluidA", "minecraft:lava")
-        .addDataString("fluidB", "minecraft:water");
+        .addDataString('fluidA', 'minecraft:lava')
+        .addDataString('fluidB', 'minecraft:water');
         // .addCondition($RockBreakerCondition.INSTANCE);
     });
 

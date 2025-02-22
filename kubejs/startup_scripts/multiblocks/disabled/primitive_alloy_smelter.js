@@ -14,7 +14,7 @@
 //     event.create('primitive_alloy_smelter', 'multiblock')
 //         .rotationState(RotationState.NON_Y_AXIS)
 //         .recipeType('primitive_alloy_smelter')
-//         // .editableUI(new $EditableMachineUI("primitive_alloy_smelter", 'ldlib/assets/ldlib/primitive_alloy_smelter.ui', () => new $WidgetGroup(), (template, machine) => {
+//         // .editableUI(new $EditableMachineUI('primitive_alloy_smelter', 'ldlib/assets/ldlib/primitive_alloy_smelter.ui', () => new $WidgetGroup(), (template, machine) => {
 //         //     if (machine instanceof $PrimitiveWorkableMachine) {
 //         //         machine.recipeType.createEditableUITemplate(false, false).setupUI(template,
 //         //         new GTRecipeType.RecipeHolder(() => machine.recipeLogic.getProgressPercent,
@@ -39,6 +39,6 @@
 //             .where('B', Predicates.blocks('gtceu:bronze_machine_casing'))
 //             .where('#', Predicates.air())
 //             .build())
-//         .workableCasingRenderer("gtceu:block/casings/solid/machine_primitive_bricks",
-//         "gtceu:block/multiblock/primitive_blast_furnace", false);
+//         .workableCasingRenderer('gtceu:block/casings/solid/machine_primitive_bricks',
+//         'gtceu:block/multiblock/primitive_blast_furnace', false);
 // });
