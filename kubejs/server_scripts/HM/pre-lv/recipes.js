@@ -94,6 +94,7 @@ ServerEvents.recipes(event => {
     });
 
     event.remove({ id: 'minecraft:kjs/gtceu_wood_plate'});
+    event.remove({ id: 'minecraft:crafting_table'});
     event.shaped(Item.of('minecraft:crafting_table'),[
         'SCS',
         'PFP',
@@ -238,6 +239,97 @@ ServerEvents.recipes(event => {
           "item": "minecraft:bowl"
         }
     });
+
+    event.remove({output: 'minecraft:furnace'});
+    event.shaped(Item.of('minecraft:furnace'), [
+        'SCS',
+        'CFC',
+        'MMM'
+    ], {
+        S: 'minecraft:cobblestone_slab',
+        C: 'minecraft:cobblestone',
+        F: 'minecraft:campfire',
+        M: 'minecraft:mud_bricks'
+    });
+
+    event.remove({output: 'minecraft:campfire'});
+    event.shaped(Item.of('minecraft:campfire'), [
+        'BTB',
+        'TST',
+        'LLL'
+    ], {
+        T: '#balm:wooden_rods',
+        S: 'farmersdelight:straw',
+        B: 'farmersdelight:tree_bark',
+        L: '#minecraft:logs'
+    });
+
+    event.remove({output: '#exnihilosequentia:crucibles'});
+    event.remove({output: '#exnihilosequentia:barrels'});
+    event.remove({output: 'woodenbucket:wooden_bucket'});
+    event.remove({id: 'gtceu:shaped_fluid_container/treated_wood_planks'});
+    event.shaped(Item.of('exnihilosequentia:jungle_barrel'), [
+        'S S',
+        'SRS',
+        'SBS'
+    ], {
+        S: 'minecraft:jungle_slab',
+        B: 'woodenbucket:wooden_bucket',
+        R: 'gtceu:sticky_resin'
+    });
+
+    event.shaped(Item.of('woodenbucket:wooden_bucket'), [
+        'B B',
+        'BRB',
+        'TBT'
+    ], {
+        T: 'gtceu:wood_bolt',
+        B: 'farmersdelight:tree_bark',
+        R: 'gtceu:sticky_resin'
+    });
+
+    event.shapeless(Item.of('gtceu:wood_bolt', 2), [
+        '#forge:tools/saws','minecraft:stick'
+    ]);
+
+    event.remove({id:'minecraft:clay'})
+    event.recipes.gtceu.primitive_mixer('clay')
+        .itemInputs('exnihilosequentia:dust')
+        .inputFluids('minecraft:water 1000')
+        .itemOutputs('minecraft:clay')
+        .duration(160);
+
+    event.recipes.gtceu.primitive_mixer('mud')
+        .itemInputs('minecraft:dirt')
+        .inputFluids('minecraft:water 1000')
+        .itemOutputs('minecraft:mud')
+        .duration(160);
+
+    event.shaped(Item.of('gtceu:wood_gear'), [
+        'BBB',
+        'BSB',
+        'BBB'
+    ], {
+        B: 'gtceu:wood_bolt',
+        S: '#minecraft:wooden_slabs'
+    });
+
+    event.shaped(Item.of('gtceu:ulv_primitive_mixer'), [
+        'GCG',
+        'CBC',
+        'GCG'
+    ], {
+        G: 'gtceu:wood_gear',
+        C: 'minecraft:cobblestone',
+        B: 'exnihilosequentia:jungle_barrel'
+    });
+    
+    event.remove({output: 'gtceu:compressed_coke_clay'})
+    event.remove({id: 'gtceu:shapeless/fireclay_dust'})
+    event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust');
+    event.recipes.create.pressing('gtceu:compressed_clay', 'minecraft:clay_ball');
+    event.recipes.create.pressing('kubejs:packed_mud_brick', 'kubejs:packed_mud_ball');
+    event.recipes.create.pressing('gtceu:compressed_coke_clay', 'minecraft:sand');
 
 //Post Cobble-Gen, Pre-Circuit
 

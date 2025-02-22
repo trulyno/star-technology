@@ -537,8 +537,8 @@
 			dependencies: ["6A62DF26FC748F1A"]
 			id: "375469122AB56B6E"
 			tasks: [{
-				id: "7F2947D0F30E36E6"
-				item: "exnihilosequentia:oak_barrel"
+				id: "0CA6D95A5ACBAF73"
+				item: "exnihilosequentia:jungle_barrel"
 				type: "item"
 			}]
 			x: 2.0d
@@ -619,22 +619,30 @@
 				"218CF08B9647CA00"
 				"6A62DF26FC748F1A"
 			]
-			id: "54AAB5395E468898"
-			tasks: [{
-				id: "32BA8816132B3011"
-				item: {
-					Count: 1
-					id: "woodenbucket:wooden_bucket"
-					tag: {
-						Damage: 0
-						Fluid: {
-							Amount: 1000
-							FluidName: "minecraft:water"
-						}
+			icon: {
+				Count: 1
+				id: "woodenbucket:wooden_bucket"
+				tag: {
+					Damage: 0
+					Fluid: {
+						Amount: 1000
+						FluidName: "minecraft:water"
 					}
 				}
-				type: "item"
-			}]
+			}
+			id: "54AAB5395E468898"
+			tasks: [
+				{
+					id: "32BA8816132B3011"
+					item: "minecraft:water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7DE2EA70258C30C7"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: 0.0d
 		}
@@ -1243,7 +1251,6 @@
 				item: "gtceu:compressed_clay"
 				type: "item"
 			}]
-			title: "Cheaper Brick"
 			x: 2.0d
 			y: 9.0d
 		}
@@ -1702,6 +1709,7 @@
 			dependencies: [
 				"5DD3CFCC30CAF33A"
 				"7525BDACB9A9AC41"
+				"31E3FA832F85F262"
 			]
 			id: "59A805C314717BA0"
 			tasks: [{
@@ -1709,7 +1717,7 @@
 				item: "gtceu:primitive_ore_factory"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 8.0d
 			y: 13.5d
 		}
 		{
@@ -1721,8 +1729,8 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 16.5d
+			x: 9.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["59A805C314717BA0"]
@@ -1733,13 +1741,13 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 13.5d
+			x: 9.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
-				"462DF26BFED5FFBA"
 				"153EBFA7C41BE761"
+				"21563799A48F1915"
 			]
 			id: "456934A9D2781CAD"
 			tasks: [{
@@ -1883,6 +1891,18 @@
 			}]
 			x: 5.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["714CA5ED83124FE1"]
+			hide_dependent_lines: true
+			id: "21563799A48F1915"
+			tasks: [{
+				id: "072E39D3BCC9DBB9"
+				item: "minecraft:gold_nugget"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 15.0d
 		}
 	]
 	title: "So It Begins"
