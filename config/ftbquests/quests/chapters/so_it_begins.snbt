@@ -1194,9 +1194,9 @@
 			dependencies: ["4F89E871129D842B"]
 			id: "6FEC217C4653943D"
 			tasks: [{
-				id: "4D6F134A67F24A2B"
-				title: "Coke Clay Mixture"
-				type: "checkmark"
+				id: "31D66E14112E00DB"
+				item: "kubejs:coke_clay_dust"
+				type: "item"
 			}]
 			x: 0.5d
 			y: 9.0d
@@ -1501,14 +1501,19 @@
 			id: "60B2BEDDA1D66001"
 			tasks: [
 				{
-					id: "7FC920D077117064"
-					title: "Pig Iron Dust"
-					type: "checkmark"
-				}
-				{
 					id: "14BBC4573A1C376F"
 					title: "Pig Iron"
 					type: "checkmark"
+				}
+				{
+					id: "63E1627424CC6E4A"
+					item: "gtceu:pig_iron_ingot"
+					type: "item"
+				}
+				{
+					id: "46A1FCA19C4EB95C"
+					item: "gtceu:pig_iron_dust"
+					type: "item"
 				}
 			]
 			title: "Pig Iron"

@@ -19,11 +19,17 @@ StartupEvents.registry('item', event => {
         .rarity('common')
         .texture(`kubejs:item/hm/pre-lv/packed_mud_brick`);
 
+    event.create('coke_clay_dust')
+        .displayName('Coke Clay Dust')
+        .rarity('common')
+        .texture(`kubejs:item/hm/pre-lv/coke_clay_dust`);
+
     const oreType=['Hematite','Cassiterite','Chalcopyrite','Sphalerite','Pyrite','Magnetite','Galena','Raw_Electrum']
 
     oreType.forEach(type => {
         event.create(`${type.toLowerCase()}_crushed_ore_chunk`)
             .displayName(`Crushed ${type.replace(/_/, ' ')} Ore Chunk`)
+            .texture(`kubejs:item/hm/pre-lv/${type.toLowerCase()}_crushed_ore_chunk`);
     });
 });
 

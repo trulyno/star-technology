@@ -329,7 +329,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust');
     event.recipes.create.pressing('gtceu:compressed_clay', 'minecraft:clay_ball');
     event.recipes.create.pressing('kubejs:packed_mud_brick', 'kubejs:packed_mud_ball');
-    event.recipes.create.pressing('gtceu:compressed_coke_clay', 'minecraft:sand');
+    event.recipes.create.pressing('gtceu:compressed_coke_clay', 'kubejs:coke_clay_dust');
 
 //Post Cobble-Gen, Pre-Circuit
 

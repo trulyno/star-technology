@@ -9,4 +9,13 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame, bolt_and_screw);
 
+    event.create('pig_iron')
+        .ingot(1)
+        .dust()
+        .components('iron')
+        .color(0x8E8385)
+        .iconSet(DULL)
+        .flags(foil, gear, long_rod, plates,
+            rod, rotor, small_gear, ring, frame, bolt_and_screw);
+
 });
