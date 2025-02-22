@@ -1252,7 +1252,7 @@ materialRegistry(event => {
 
     event.create('hydroxo_dioxo_titanite_mixture')
         .fluid()
-        .components('1x sodium', '1x rutile', '2x oxygen', '2x hydrogen', '1x mystery')
+        .components('2x sodium', '1x rutile', '2x oxygen', '2x hydrogen', '1x mystery')
         .color(0xd27979)
         .flags(no_decomp);
 
