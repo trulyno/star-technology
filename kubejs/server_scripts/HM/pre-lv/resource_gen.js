@@ -17,6 +17,14 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 		event.block.set(`${crucible.get}`)
 		event.block.give('gtceu:wood_dust')
 	})
+[{hit: 'minecraft:stripped_jungle_log',tool:'axes',get: 'kubejs:crucible_stage_1'},{hit: 'kubejs:crucible_stage_1',tool:'axes',get: 'kubejs:crucible_stage_2'},
+{hit: 'kubejs:crucible_stage_2',tool:'axes',get: 'kubejs:crucible_stage_3'},{hit: 'kubejs:crucible_stage_3',tool:'axes',get: 'exnihilosequentia:jungle_crucible'}].forEach (crucible => {
+    BlockEvents.rightClicked(`${crucible.hit}`, event => {
+    if (event.player.getMainHandItem().hasTag(`#forge:tools/${crucible.tool}` && event.player.getOffHandItem() == null))
+    return
+            event.block.set(`${crucible.get}`)
+            event.block.popItemFromFace(Item.of('gtceu:wood_dust'), 'up')
+    });
 });
 
 ServerEvents.recipes(event => {
@@ -136,3 +144,4 @@ BlockEvents.rightClicked("minecraft:dead_bush", event => {
 	block.set("minecraft:jungle_sapling");
 	player.setMainHandItem(Item.of("minecraft:bowl"));
 });
+

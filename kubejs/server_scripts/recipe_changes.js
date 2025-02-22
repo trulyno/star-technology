@@ -2,11 +2,11 @@
 
 ServerEvents.recipes(event => {
 
-    event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust');
+    // event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust');
 
-    event.campfireCooking('gtceu:wrought_iron_ingot', 'minecraft:iron_ingot');
+    // event.campfireCooking('gtceu:wrought_iron_ingot', 'minecraft:iron_ingot');
 
-    event.campfireCooking('minecraft:glass', 'gtceu:glass_dust');
+    // event.campfireCooking('minecraft:glass', 'gtceu:glass_dust');
 
     event.replaceInput({id: 'create:crafting/kinetics/goggles'}, '#forge:plates/gold', 'gtceu:copper_plate');
 
@@ -30,20 +30,20 @@ ServerEvents.recipes(event => {
         'gtceu:nether_star_lens'
     );
 
-    event.shaped(Item.of('gtceu:wood_plate'), [
-        'SSS'
-    ], {
-        S: '#minecraft:wooden_slabs'
-    });
+    // event.shaped(Item.of('gtceu:wood_plate'), [
+    //     'SSS'
+    // ], {
+    //     S: '#minecraft:wooden_slabs'
+    // });
 
     //glass tube shenanigans
-    event.shaped(Item.of('gtceu:glass_tube'), [
-        '   ',
-        'PPP',
-        'PPP'
-    ], {
-        P: 'minecraft:glass_pane'
-    });
+    // event.shaped(Item.of('gtceu:glass_tube'), [
+    //     '   ',
+    //     'PPP',
+    //     'PPP'
+    // ], {
+    //     P: 'minecraft:glass_pane'
+    // });
 
     ['tiled','framed','horizontal_framed','vertical_framed'].forEach(type => {
         event.remove({ id: `create:smelting/glass_pane_from_${type}_glass_pane`})
@@ -51,14 +51,14 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'create:splashing/stained_glass'})
 
-    event.shaped(Item.of('8x gtceu:compressed_fireclay'), [
-        'DDD',
-        'DMD',
-        'DDD'
-    ], {
-        'D': 'gtceu:fireclay_dust',
-        'M': 'gtceu:brick_wooden_form'
-    }).keepIngredient('gtceu:brick_wooden_form');
+    // event.shaped(Item.of('8x gtceu:compressed_fireclay'), [
+    //     'DDD',
+    //     'DMD',
+    //     'DDD'
+    // ], {
+    //     'D': 'gtceu:fireclay_dust',
+    //     'M': 'gtceu:brick_wooden_form'
+    // }).keepIngredient('gtceu:brick_wooden_form');
 
     event.recipes.create.mixing('4x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated');
 

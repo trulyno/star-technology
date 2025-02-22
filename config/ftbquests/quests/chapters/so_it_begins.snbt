@@ -59,16 +59,12 @@
 			]
 			id: "525886980CC24650"
 			tasks: [{
-				id: "25CC1B94D8AB6D81"
+				id: "1D8EB02CFBC6D537"
 				item: {
 					Count: 1
 					id: "gtceu:flint_knife"
 					tag: {
 						DisallowContainerItem: 0b
-						Enchantments: [{
-							id: "minecraft:fire_aspect"
-							lvl: 2s
-						}]
 						GT.Behaviours: { }
 						GT.Tool: {
 							AttackDamage: 1.0f
@@ -537,8 +533,8 @@
 			dependencies: ["6A62DF26FC748F1A"]
 			id: "375469122AB56B6E"
 			tasks: [{
-				id: "7F2947D0F30E36E6"
-				item: "exnihilosequentia:oak_barrel"
+				id: "0CA6D95A5ACBAF73"
+				item: "exnihilosequentia:jungle_barrel"
 				type: "item"
 			}]
 			x: 2.0d
@@ -619,22 +615,30 @@
 				"218CF08B9647CA00"
 				"6A62DF26FC748F1A"
 			]
-			id: "54AAB5395E468898"
-			tasks: [{
-				id: "32BA8816132B3011"
-				item: {
-					Count: 1
-					id: "woodenbucket:wooden_bucket"
-					tag: {
-						Damage: 0
-						Fluid: {
-							Amount: 1000
-							FluidName: "minecraft:water"
-						}
+			icon: {
+				Count: 1
+				id: "woodenbucket:wooden_bucket"
+				tag: {
+					Damage: 0
+					Fluid: {
+						Amount: 1000
+						FluidName: "minecraft:water"
 					}
 				}
-				type: "item"
-			}]
+			}
+			id: "54AAB5395E468898"
+			tasks: [
+				{
+					id: "32BA8816132B3011"
+					item: "minecraft:water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7DE2EA70258C30C7"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: 0.0d
 		}
@@ -704,7 +708,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -732,7 +736,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["34F1552CD16AC064"]
@@ -870,7 +874,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1186,9 +1190,9 @@
 			dependencies: ["4F89E871129D842B"]
 			id: "6FEC217C4653943D"
 			tasks: [{
-				id: "4D6F134A67F24A2B"
-				title: "Coke Clay Mixture"
-				type: "checkmark"
+				id: "31D66E14112E00DB"
+				item: "kubejs:coke_clay_dust"
+				type: "item"
 			}]
 			x: 0.5d
 			y: 9.0d
@@ -1216,7 +1220,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1243,9 +1247,8 @@
 				item: "gtceu:compressed_clay"
 				type: "item"
 			}]
-			title: "Cheaper Brick"
 			x: 2.0d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1334,7 +1337,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1362,7 +1365,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1388,7 +1391,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1402,7 +1405,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
@@ -1413,7 +1416,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1B5EA867C67903E4"]
@@ -1423,8 +1426,8 @@
 				item: "gtceu:primitive_pump"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 1.5d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1AD7CB6C61196D5C"]
@@ -1438,8 +1441,8 @@
 				type: "item"
 			}]
 			title: "INFINITE WATER"
-			x: 6.5d
-			y: 0.0d
+			x: 5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2E686BE355CCF22E"]
@@ -1494,14 +1497,14 @@
 			id: "60B2BEDDA1D66001"
 			tasks: [
 				{
-					id: "7FC920D077117064"
-					title: "Pig Iron Dust"
-					type: "checkmark"
+					id: "63E1627424CC6E4A"
+					item: "gtceu:pig_iron_ingot"
+					type: "item"
 				}
 				{
-					id: "14BBC4573A1C376F"
-					title: "Pig Iron"
-					type: "checkmark"
+					id: "46A1FCA19C4EB95C"
+					item: "gtceu:pig_iron_dust"
+					type: "item"
 				}
 			]
 			title: "Pig Iron"
@@ -1607,7 +1610,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["224916FFC857C099"]
@@ -1634,7 +1637,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["19A0099F62CB5FF1"]
@@ -1684,7 +1687,7 @@
 				item: "thermal:cured_rubber"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 8.0d
 			y: 6.0d
 		}
 		{
@@ -1696,12 +1699,13 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
 				"5DD3CFCC30CAF33A"
 				"7525BDACB9A9AC41"
+				"31E3FA832F85F262"
 			]
 			id: "59A805C314717BA0"
 			tasks: [{
@@ -1709,7 +1713,7 @@
 				item: "gtceu:primitive_ore_factory"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 8.0d
 			y: 13.5d
 		}
 		{
@@ -1721,24 +1725,25 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 16.5d
+			x: 9.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["59A805C314717BA0"]
+			hide_dependent_lines: true
 			id: "63D792EF5D75290F"
 			tasks: [{
 				id: "1990722E39FEE28B"
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 13.5d
+			x: 9.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
-				"462DF26BFED5FFBA"
 				"153EBFA7C41BE761"
+				"21563799A48F1915"
 			]
 			id: "456934A9D2781CAD"
 			tasks: [{
@@ -1761,7 +1766,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 12.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["5880CFBC8A0DC3C4"]
@@ -1775,7 +1780,7 @@
 			}]
 			title: "COBBLE GEN"
 			x: 8.0d
-			y: 10.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1804,7 +1809,7 @@
 			}]
 			title: "You Can Finally Touch Grass"
 			x: 8.0d
-			y: 1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["31E3FA832F85F262"]
@@ -1866,8 +1871,8 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 6.0d
+			x: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1882,6 +1887,18 @@
 			}]
 			x: 5.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["714CA5ED83124FE1"]
+			hide_dependent_lines: true
+			id: "21563799A48F1915"
+			tasks: [{
+				id: "072E39D3BCC9DBB9"
+				item: "minecraft:gold_nugget"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 15.0d
 		}
 	]
 	title: "So It Begins"
