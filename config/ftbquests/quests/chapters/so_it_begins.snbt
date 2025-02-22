@@ -208,9 +208,23 @@
 			dependencies: ["34FB1FD1C7726DE6"]
 			id: "5A4DF6397D7F2B78"
 			tasks: [{
-				id: "333A1A7D7251C2CC"
-				title: "Flint Saw"
-				type: "checkmark"
+				id: "333BDAD5D51C0859"
+				item: {
+					Count: 1
+					id: "gtceu:bronze_saw"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							HarvestIce: 1b
+						}
+						GT.Tool: {
+							Damage: 0
+							MaxDamage: 191
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
 			}]
 			x: -2.5d
 			y: 1.5d
@@ -427,9 +441,23 @@
 			dependencies: ["184FE341A3AD7B1E"]
 			id: "246E67D64A5EDF08"
 			tasks: [{
-				id: "4A61C596A256D6F5"
-				title: "Stone GT Hammer"
-				type: "checkmark"
+				id: "0BAF36688DA2AC84"
+				item: {
+					Count: 1
+					id: "gtceu:bronze_hammer"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 2
+							MaxDamage: 191
+							ToolSpeed: 7.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
 			}]
 			x: -5.5d
 			y: 6.0d
@@ -1483,6 +1511,11 @@
 				{
 					id: "0A5F15732C8A4A05"
 					item: "create:basin"
+					type: "item"
+				}
+				{
+					id: "2D41F81E24ED0A05"
+					item: "createlowheated:basic_burner"
 					type: "item"
 				}
 			]
