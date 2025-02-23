@@ -76,6 +76,15 @@ ServerEvents.recipes(event => {
         C: '#forge:cobblestone'
     });
    
+    event.shaped(Item.of('exnihilosequentia:wooden_crook'), [
+        'TT',
+        'ST',
+        ' T'
+    ], {
+        S: '#forge:string',
+        T: '#forge:rods/wood'
+    });
+
     //Kiln
     [{fuel: 'coals', burnMultiplier: .5}, {fuel: 'logs', burnMultiplier: 1.2}].forEach( coal => {
         event.recipes.gtceu.kiln(`brick_${coal.fuel}`)
@@ -142,7 +151,7 @@ ServerEvents.recipes(event => {
         '#forge:tools/knives',
         'farmersdelight:straw'
     ]);
-    event.shapeless(Item.of('kubejs:plant_fibers'),[
+    event.shapeless(Item.of('farmersdelight:straw'),[
         '#forge:tools/knives',
         'farmersdelight:tree_bark'
     ]);
@@ -170,7 +179,6 @@ ServerEvents.recipes(event => {
         F: 'gtceu:wood_frame',
         R: 'gtceu:sticky_resin'
     });
-
 
     //Bricks
     event.remove({ id: 'minecraft:stone_bricks'});
