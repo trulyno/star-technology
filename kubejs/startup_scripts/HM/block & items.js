@@ -43,10 +43,7 @@ StartupEvents.registry('item', event => {
             .displayName(`Crushed ${type.replace(/_/, ' ')} Ore Chunk`)
             .texture(`kubejs:item/hm/pre-lv/${type.toLowerCase()}_crushed_ore_chunk`);
     });
-	oreType.forEach(type => {
-		event.create(`${type.toLowerCase()}_crushed_ore_chunk`)
-			.displayName(`Crushed ${type.replace(/_/, ' ')} Ore Chunk`)
-	});
+
 });
 
 StartupEvents.registry('block', event => {
