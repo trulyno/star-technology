@@ -59,10 +59,10 @@
 			]
 			id: "525886980CC24650"
 			tasks: [{
-				id: "1D8EB02CFBC6D537"
+				id: "42339E020804101F"
 				item: {
 					Count: 1
-					id: "gtceu:flint_knife"
+					id: "gtceu:flisnt_knife"
 					tag: {
 						DisallowContainerItem: 0b
 						GT.Behaviours: { }
@@ -126,10 +126,10 @@
 			dependencies: ["34FB1FD1C7726DE6"]
 			id: "469CAF0D80978B00"
 			tasks: [{
-				id: "401FFD2C40092929"
+				id: "16A68B55E3B9927B"
 				item: {
 					Count: 1
-					id: "gtceu:flint_axe"
+					id: "gtceu:flisnt_axe"
 					tag: {
 						DisallowContainerItem: 0b
 						GT.Behaviours: {
@@ -138,9 +138,9 @@
 						}
 						GT.Tool: {
 							Damage: 0
-							HarvestLevel: 2
+							HarvestLevel: 1
 							MaxDamage: 63
-							ToolSpeed: 3.5f
+							ToolSpeed: 3.0f
 						}
 						HideFlags: 2
 					}
@@ -208,10 +208,10 @@
 			dependencies: ["34FB1FD1C7726DE6"]
 			id: "5A4DF6397D7F2B78"
 			tasks: [{
-				id: "333BDAD5D51C0859"
+				id: "1236C30783F4224B"
 				item: {
 					Count: 1
-					id: "gtceu:bronze_saw"
+					id: "gtceu:flisnt_saw"
 					tag: {
 						DisallowContainerItem: 0b
 						GT.Behaviours: {
@@ -219,7 +219,7 @@
 						}
 						GT.Tool: {
 							Damage: 0
-							MaxDamage: 191
+							MaxDamage: 63
 						}
 						HideFlags: 2
 					}
@@ -250,9 +250,9 @@
 			]
 			id: "1810B4921EB6640E"
 			tasks: [{
-				id: "454EDAD5A22558D4"
-				title: "Water Bowl"
-				type: "checkmark"
+				id: "0A09B3D78F8345BB"
+				item: "kubejs:water_bowl"
+				type: "item"
 			}]
 			x: 0.5d
 			y: -1.5d
@@ -441,18 +441,18 @@
 			dependencies: ["184FE341A3AD7B1E"]
 			id: "246E67D64A5EDF08"
 			tasks: [{
-				id: "0BAF36688DA2AC84"
+				id: "4FD3AF06EDB6D228"
 				item: {
 					Count: 1
-					id: "gtceu:bronze_hammer"
+					id: "gtceu:flisnt_hammer"
 					tag: {
 						DisallowContainerItem: 0b
 						GT.Behaviours: { }
 						GT.Tool: {
 							Damage: 0
-							HarvestLevel: 2
-							MaxDamage: 191
-							ToolSpeed: 7.0f
+							HarvestLevel: 1
+							MaxDamage: 63
+							ToolSpeed: 5.0f
 						}
 						HideFlags: 2
 					}
@@ -1932,6 +1932,17 @@
 			}]
 			x: -1.0d
 			y: 15.0d
+		}
+		{
+			dependencies: ["50F2743FA699173A"]
+			id: "6EE492CCFB7AD221"
+			tasks: [{
+				id: "72AA0BA91535D3E1"
+				item: "gtceu:charcoal_pile_igniter"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 16.5d
 		}
 	]
 	title: "So It Begins"

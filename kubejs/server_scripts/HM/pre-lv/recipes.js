@@ -1,15 +1,79 @@
 ServerEvents.recipes(event => {
 
 //Pre-Cobble Gen
+    
+    //Flarnt Tool
+    [{mod:'minecraft',material:'wooden'},{mod:'minecraft',material:'stone'},{mod:'gtceu',material:'flint'}].forEach(type=>{
+    ['mortar','pickaxe','shovel','axe','sword','knife','hoe'].forEach(tool=>{
+        event.remove({output: `${type.mod}:${type.material}_${tool}`})
+    });
+    });
 
-    event.remove({ id: 'gtceu:shaped/axe_flint'});
-    event.shaped(Item.of('gtceu:flint_axe'), [
+    event.shaped(Item.of('gtceu:flisnt_axe'), [
         'FT',
         'ST'
     ], {
         S: '#forge:string',
         F: 'minecraft:flint',
         T: '#forge:rods/wood'
+    });
+
+    event.shaped(Item.of('gtceu:flisnt_saw'), [
+        'FS',
+        'FT'
+    ], {
+        S: '#forge:string',
+        F: 'minecraft:flint',
+        T: '#forge:rods/wood'
+    });
+
+    event.shaped(Item.of('gtceu:flisnt_knife'), [
+        'F',
+        'T'
+    ], {
+        F: 'minecraft:flint',
+        T: '#forge:rods/wood'
+    });
+
+    event.shaped(Item.of('gtceu:flisnt_shovel'), [
+        '  F',
+        ' TS',
+        'T  '
+    ], {
+        S: '#forge:string',
+        F: 'minecraft:flint',
+        T: '#forge:rods/wood'
+    });
+
+    event.shaped(Item.of('gtceu:flisnt_pickaxe'), [
+        'FFF',
+        'RTS',
+        ' T '
+    ], {
+        S: '#forge:string',
+        F: 'minecraft:flint',
+        T: '#forge:rods/wood',
+        R: 'kubejs:flint_shard'
+    });
+
+    event.shaped(Item.of('gtceu:flisnt_sword'), [
+        ' F ',
+        ' F ',
+        ' T '
+    ], {
+        F: 'minecraft:flint',
+        T: '#forge:rods/wood'
+    });
+
+    event.shaped(Item.of('gtceu:flisnt_hammer'), [
+        'FCF',
+        'CFC',
+        'STS'
+    ], {
+        S: '#forge:string',
+        F: 'minecraft:flint',
+        T: '#forge:rods/wood',
+        C: '#forge:cobblestone'
     });
    
     //Kiln

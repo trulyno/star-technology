@@ -18,4 +18,9 @@ materialRegistry(event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame, bolt_and_screw);
 
+    event.create('flisnt')
+        .color(0x888B8C)
+        .toolStats(ToolProperty.Builder.of(1, 1, 64, 1,[GTToolType.SAW,GTToolType.HARD_HAMMER,GTToolType.PICKAXE, GTToolType.SHOVEL,
+              GTToolType.AXE, GTToolType.SWORD, GTToolType.KNIFE]).build());
+
 });

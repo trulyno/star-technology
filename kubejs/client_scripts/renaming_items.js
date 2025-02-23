@@ -19,9 +19,5 @@ ClientEvents.lang('en_us', event => {
     event.renameBlock('xycraft_world:aluminum_tiles_cloud_light', 'Light Alumino-Calcite Tiles');
     event.renameBlock('xycraft_world:aluminum_tiles_cloud_dark', 'Dark Alumino-Calcite Tiles');
 
-    //HM
-    event.renameItem('gtecu:bronze_hammer', 'Flint Hammer');
-    event.renameItem('gtecu:bronze_saw', 'Flint Saw');
-
 });
 
