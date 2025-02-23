@@ -66,4 +66,14 @@ StartupEvents.registry('block', event => {
 			.tagBlock("minecraft:mineable/axe")
 			.tagBlock("minecraft:needs_stone_tool");
 	});
+
+	[{ id: 'crafting_stage_1', name: 'axe chipped crafting table base' }, { id: 'crafting_stage_2', name: 'knife chipped crafting table base' }, { id: 'crafting_stage_3', name: 'saw chipped crafting table base' }].forEach(table => {
+		event.create(`${table.id}`)
+			.displayName(`${table.name}`)
+			.hardness(1)
+			.resistance(2)
+			.requiresTool(true)
+			.tagBlock("minecraft:mineable/axe")
+			.tagBlock("minecraft:needs_stone_tool");
+	});
 });

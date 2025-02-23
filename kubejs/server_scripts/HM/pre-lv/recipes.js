@@ -93,19 +93,7 @@ ServerEvents.recipes(event => {
         C: 'farmersdelight:canvas'
     });
 
-    event.remove({ id: 'minecraft:kjs/gtceu_wood_plate'});
-    event.remove({ id: 'minecraft:crafting_table'});
-    event.shaped(Item.of('minecraft:crafting_table'),[
-        'SCS',
-        'PFP',
-        'PRP'
-    ], {
-        S: 'gtceu:iron_screw',
-        C: 'farmersdelight:canvas',
-        P: 'gtceu:wood_plate',
-        F: 'gtceu:wood_frame',
-        R: 'gtceu:sticky_resin'
-    });
+    event.remove({ id: 'minecraft:kjs/gtceu_wood_plate'}); 
 
 
     //Bricks

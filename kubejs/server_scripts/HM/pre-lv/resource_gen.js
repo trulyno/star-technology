@@ -9,16 +9,29 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 	}
 });
 
-[{hit: 'minecraft:stripped_jungle_log',tool:'axes',get: 'kubejs:crucible_stage_1'},{hit: 'kubejs:crucible_stage_1',tool:'axes',get: 'kubejs:crucible_stage_2'},
-{hit: 'kubejs:crucible_stage_2',tool:'axes',get: 'kubejs:crucible_stage_3'},{hit: 'kubejs:crucible_stage_3',tool:'axes',get: 'exnihilosequentia:jungle_crucible'}].forEach (crucible => {
+[{hit: 'minecraft:stripped_jungle_log',tool:'forge:tools/knives',get: 'kubejs:crucible_stage_1'},
+    {hit: 'kubejs:crucible_stage_1',tool:'forge:tools/axes',get: 'kubejs:crucible_stage_2'},
+    {hit: 'kubejs:crucible_stage_2',tool:'forge:tools/saws',get: 'kubejs:crucible_stage_3'},
+    {hit: 'kubejs:crucible_stage_3',tool:'forge:tools/axes',get: 'exnihilosequentia:jungle_crucible'}].forEach (crucible => {
     BlockEvents.rightClicked(`${crucible.hit}`, event => {
-    if (event.player.getMainHandItem().hasTag(`#forge:tools/${crucible.tool}` && event.player.getOffHandItem() == null))
-    return
+        if (event.player.getMainHandItem().hasTag(`${crucible.tool}`) && event.player.getOffHandItem() == null) {
             event.block.set(`${crucible.get}`)
             event.block.popItemFromFace(Item.of('gtceu:wood_dust'), 'up')
+        };
     });
 });
 
+[{hit: 'minecraft:jungle_planks',tool:'forge:tools/axes',get: 'kubejs:crafting_stage_1'},
+    {hit: 'kubejs:crafting_stage_1',tool:'forge:tools/knives',get: 'kubejs:crafting_stage_2'},
+    {hit: 'kubejs:crafting_stage_2',tool:'forge:tools/saws',get: 'kubejs:crafting_stage_3'},
+    {hit: 'kubejs:crafting_stage_3',tool:'kubejs:canvas',get: 'minecraft:crafting_table'}].forEach (table => {
+    BlockEvents.rightClicked(`${table.hit}`, event => {
+        if (event.player.getMainHandItem().hasTag(`${table.tool}`) && event.player.getOffHandItem() == null) {
+            event.block.set(`${table.get}`)
+        };
+    });
+});
+    
 ServerEvents.recipes(event => {
 	event.shaped(Item.of('minecraft:flint'), [
 		'SS',
