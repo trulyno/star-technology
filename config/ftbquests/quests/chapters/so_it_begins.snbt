@@ -278,18 +278,12 @@
 				"525886980CC24650"
 			]
 			id: "01DB711C1AC26A98"
-			tasks: [
-				{
-					id: "0336AE6F2429BCE9"
-					item: "gtceu:wood_dust"
-					type: "item"
-				}
-				{
-					id: "19A0C03C23D13A9C"
-					title: "Crucible Stages"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "0336AE6F2429BCE9"
+				item: "gtceu:wood_dust"
+				type: "item"
+			}]
+			title: "Hollow Out a Log"
 			x: -2.5d
 			y: -1.5d
 		}
@@ -333,23 +327,26 @@
 		{
 			dependencies: ["13F8BDB87F975319"]
 			id: "60916F46BE0033CA"
-			tasks: [{
-				id: "1A8D7165CAD16DA0"
-				title: "Fire Starter"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "1872B8F46DE14470"
+					item: {
+						Count: 1
+						id: "kubejs:fire_starter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4E7C8F6ADBC2D9DE"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+			]
+			title: "Campfires"
 			x: -1.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["60916F46BE0033CA"]
-			id: "4A8D7BF420869DC7"
-			tasks: [{
-				id: "673EA784FE705F6F"
-				item: "minecraft:campfire"
-				type: "item"
-			}]
-			x: 2.0d
 			y: 4.5d
 		}
 		{
@@ -390,8 +387,8 @@
 			]
 			id: "1E9A3E0369CE7901"
 			tasks: [{
-				id: "78F21B3F67B89FB2"
-				item: "exnihilosequentia:oak_sieve"
+				id: "028AEF0426599234"
+				item: "exnihilosequentia:jungle_sieve"
 				type: "item"
 			}]
 			x: -2.5d
@@ -906,9 +903,9 @@
 		}
 		{
 			dependencies: [
-				"4A8D7BF420869DC7"
 				"184FE341A3AD7B1E"
 				"629BDB317D0A8DD3"
+				"60916F46BE0033CA"
 			]
 			id: "41D300F6E11B1EA1"
 			tasks: [{

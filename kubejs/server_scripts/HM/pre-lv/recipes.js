@@ -9,6 +9,10 @@ ServerEvents.recipes(event => {
     });
     });
 
+    event.shapeless(Item.of('minecraft:stick'), [
+        '#forge:tools/saws','#minecraft:wooden_slabs'
+    ]);
+
     event.shaped(Item.of('gtceu:flisnt_axe'), [
         'FT',
         'ST'
@@ -125,6 +129,29 @@ ServerEvents.recipes(event => {
             .duration(600*coal.burnMultiplier);
     });
 
+    event.remove({id: /^exnihilosequentia:ens_.*_sieve/})
+    event.shaped(Item.of('exnihilosequentia:jungle_sieve'), [
+        'S S',
+        'SFS',
+        'NRN'
+    ], {
+        S: 'minecraft:jungle_slab',
+        F: 'gtceu:wood_frame',
+        N: 'minecraft:jungle_fence',
+        R: '#forge:string'
+    });
+
+    event.shaped(Item.of('kubejs:fire_starter'), [
+        'RRR',
+        'TST',
+        ' B '
+    ], {
+        R: '#forge:string',
+        T: '#forge:rods/wooden',
+        S: 'farmersdelight:straw',
+        B: 'minecraft:bowl'
+    });
+    
     event.shaped(Item.of('gtceu:rugged_alloyer'),[
         'RER',
         'AFA',

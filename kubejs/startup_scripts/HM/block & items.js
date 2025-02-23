@@ -34,7 +34,7 @@ StartupEvents.registry('item', event => {
 		.displayName('Fire Starter')
 		.rarity('common')
 		.maxDamage(16)
-		.unstackable()
+		.unstackable();
 
 	const oreType = ['Hematite', 'Cassiterite', 'Chalcopyrite', 'Sphalerite', 'Pyrite', 'Magnetite', 'Galena', 'Raw_Electrum']
 
@@ -67,7 +67,7 @@ StartupEvents.registry('block', event => {
 			.tagBlock("minecraft:needs_stone_tool");
 	});
 
-	[{ id: 'crafting_stage_1', name: 'axe chipped crafting table base' }, { id: 'crafting_stage_2', name: 'knife chipped crafting table base' }, { id: 'crafting_stage_3', name: 'saw chipped crafting table base' }].forEach(table => {
+	[{ id: 'crafting_stage_1', name: 'Shaped Stripped Log' }, { id: 'crafting_stage_2', name: 'Partially Carved Crafting Table' }, { id: 'crafting_stage_3', name: 'Uncovered Crafting Table' }].forEach(table => {
 		event.create(`${table.id}`)
 			.displayName(`${table.name}`)
 			.hardness(1)

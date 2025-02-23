@@ -12,7 +12,7 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 [{hit: 'minecraft:stripped_jungle_log',tool:'forge:tools/knives',get: 'kubejs:crucible_stage_1'},
     {hit: 'kubejs:crucible_stage_1',tool:'forge:tools/axes',get: 'kubejs:crucible_stage_2'},
     {hit: 'kubejs:crucible_stage_2',tool:'forge:tools/saws',get: 'kubejs:crucible_stage_3'},
-    {hit: 'kubejs:crucible_stage_3',tool:'forge:tools/axes',get: 'exnihilosequentia:jungle_crucible'}].forEach (crucible => {
+    {hit: 'kubejs:crucible_stage_3',tool:'forge:tools/knives',get: 'exnihilosequentia:jungle_crucible'}].forEach (crucible => {
     BlockEvents.rightClicked(`${crucible.hit}`, event => {
         if (event.player.getMainHandItem().hasTag(`${crucible.tool}`) && event.player.getOffHandItem() == null) {
             event.block.set(`${crucible.get}`)
@@ -21,9 +21,9 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
     });
 });
 
-[{hit: 'minecraft:jungle_planks',tool:'forge:tools/axes',get: 'kubejs:crafting_stage_1'},
-    {hit: 'kubejs:crafting_stage_1',tool:'forge:tools/knives',get: 'kubejs:crafting_stage_2'},
-    {hit: 'kubejs:crafting_stage_2',tool:'forge:tools/saws',get: 'kubejs:crafting_stage_3'},
+[{hit: 'minecraft:jungle_planks',tool:'forge:tools/saws',get: 'kubejs:crafting_stage_1'},
+    {hit: 'kubejs:crafting_stage_1',tool:'forge:tools/axes',get: 'kubejs:crafting_stage_2'},
+    {hit: 'kubejs:crafting_stage_2',tool:'forge:tools/knives',get: 'kubejs:crafting_stage_3'},
     {hit: 'kubejs:crafting_stage_3',tool:'kubejs:canvas',get: 'minecraft:crafting_table'}].forEach (table => {
     BlockEvents.rightClicked(`${table.hit}`, event => {
         if (event.player.getMainHandItem().hasTag(`${table.tool}`) && event.player.getOffHandItem() == null) {
@@ -126,7 +126,6 @@ ServerEvents.recipes(event => {
 	sieve('string', .25, dust, 'gtceu:small_redstone_dust', false);
 	sieve('string', .15, dust, 'gtceu:quartzite_gem', false);
 	sieve('string', .1, dust, 'kubejs:raw_electrum_crushed_ore_chunk', false);
-
 
 });
 
