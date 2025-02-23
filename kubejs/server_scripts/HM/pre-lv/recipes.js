@@ -1,9 +1,15 @@
 ServerEvents.recipes(event => {
 
 //Pre-Cobble Gen
+    
+    //Flarnt Tool
+    [{mod:'minecraft',material:'wooden'},{mod:'minecraft',material:'stone'},{mod:'gtceu',material:'flint'}].forEach(type=>{
+    ['mortar','pickaxe','shovel','axe','sword','knife','hoe'].forEach(tool=>{
+        event.remove({output: `${type.mod}:${type.material}_${tool}`})
+    });
+    });
 
-    event.remove({ id: 'gtceu:shaped/axe_flint'});
-    event.shaped(Item.of('gtceu:flint_axe'), [
+    event.shaped(Item.of('gtceu:flisnt_axe'), [
         'FT',
         'ST'
     ], {
@@ -11,7 +17,74 @@ ServerEvents.recipes(event => {
         F: 'minecraft:flint',
         T: '#forge:rods/wood'
     });
+
+    event.shaped(Item.of('gtceu:flisnt_saw'), [
+        'FS',
+        'FT'
+    ], {
+        S: '#forge:string',
+        F: 'minecraft:flint',
+        T: '#forge:rods/wood'
+    });
+
+    event.shaped(Item.of('gtceu:flisnt_knife'), [
+        'F',
+        'T'
+    ], {
+        F: 'minecraft:flint',
+        T: '#forge:rods/wood'
+    });
+
+    event.shaped(Item.of('gtceu:flisnt_shovel'), [
+        '  F',
+        ' TS',
+        'T  '
+    ], {
+        S: '#forge:string',
+        F: 'minecraft:flint',
+        T: '#forge:rods/wood'
+    });
+
+    event.shaped(Item.of('gtceu:flisnt_pickaxe'), [
+        'FFF',
+        'RTS',
+        ' T '
+    ], {
+        S: '#forge:string',
+        F: 'minecraft:flint',
+        T: '#forge:rods/wood',
+        R: 'kubejs:flint_shard'
+    });
+
+    event.shaped(Item.of('gtceu:flisnt_sword'), [
+        ' F ',
+        ' F ',
+        ' T '
+    ], {
+        F: 'minecraft:flint',
+        T: '#forge:rods/wood'
+    });
+
+    event.shaped(Item.of('gtceu:flisnt_hammer'), [
+        'FCF',
+        'CFC',
+        'STS'
+    ], {
+        S: '#forge:string',
+        F: 'minecraft:flint',
+        T: '#forge:rods/wood',
+        C: '#forge:cobblestone'
+    });
    
+    event.shaped(Item.of('exnihilosequentia:wooden_crook'), [
+        'TT',
+        'ST',
+        ' T'
+    ], {
+        S: '#forge:string',
+        T: '#forge:rods/wood'
+    });
+
     //Kiln
     [{fuel: 'coals', burnMultiplier: .5}, {fuel: 'logs', burnMultiplier: 1.2}].forEach( coal => {
         event.recipes.gtceu.kiln(`brick_${coal.fuel}`)
@@ -78,7 +151,7 @@ ServerEvents.recipes(event => {
         '#forge:tools/knives',
         'farmersdelight:straw'
     ]);
-    event.shapeless(Item.of('kubejs:plant_fibers'),[
+    event.shapeless(Item.of('farmersdelight:straw'),[
         '#forge:tools/knives',
         'farmersdelight:tree_bark'
     ]);
@@ -94,7 +167,6 @@ ServerEvents.recipes(event => {
     });
 
     event.remove({ id: 'minecraft:kjs/gtceu_wood_plate'}); 
-
 
     //Bricks
     event.remove({ id: 'minecraft:stone_bricks'});

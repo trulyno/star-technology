@@ -133,11 +133,11 @@ ServerEvents.recipes(event => {
 BlockEvents.rightClicked("minecraft:jungle_log", event => {
 	const { player, block, item } = event;
 
-	if (!item.hasTag("forge:tools/axes")) return;
+	if (!item.hasTag('minecraft:axes')) return;
 
-	block.set("minecraft:stripped_jungle_log");
-	event.block.popItem(Item.of("farmersdelight:tree_bark"));
-	(Math.random() < 0.1) && event.block.popItem(Item.of("gtceu:sticky_resin"));
+	block.set('minecraft:stripped_jungle_log');
+	event.block.popItem(Item.of('farmersdelight:tree_bark'));
+	(Math.random() < 0.1) && event.block.popItem(Item.of('gtceu:sticky_resin'));
 
 	event.cancel(true);
 });

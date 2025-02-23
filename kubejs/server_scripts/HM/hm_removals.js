@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     ];
 
     const toRemoveIdHM = [
-        'gtceu:shaped/mortar_flint',/^gtceu:shapeless.*_planks/,/^exnihilosequentia:crushing.*/,/^gtceu:shaped.plate/,
+        /^gtceu:.*flisnt.*/,/^gtceu:shapeless.*_planks/,/^exnihilosequentia:crushing.*/,/^gtceu:shaped.plate/,
     //[^(?!^rubber$)] <- rubber sheet recipe is kjs and other rubbers is solidifier and bender only, wood is compressor for treated and crafting for regular
         /^gtceu:shaped.ring.*[^(?!^rubber$)]/,/^gtceu:shaped.stick.*[^(?!^.*_rubber_.*$)]/, 
     // poly rubbers and other rubbers are being wierd but you have solidifier by the time you get to pvc/ptfe so :3

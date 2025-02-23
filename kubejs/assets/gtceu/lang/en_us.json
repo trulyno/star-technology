@@ -506,5 +506,6 @@
     "block.gtceu.steam_workshop": "Steam Workshop",
     "gtceu.steam_workshop": "Steam Workshop",
     "block.gtceu.ulv_primitive_mixer": "Ultra Primitive Mixer",
-    "gtceu.primitive_mixer": "Ultra Primitive Mixer"
+    "gtceu.primitive_mixer": "Ultra Primitive Mixer",
+    "material.gtceu.flisnt": "Flint"
 }
