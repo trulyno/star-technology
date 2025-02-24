@@ -50,6 +50,11 @@ ServerEvents.recipes(event => {
 		D: 'minecraft:dirt'
 	});
 
+	event.recipes.gtceu.primitive_mixer('coarse_dirt')
+		.itemInputs('16x minecraft:dirt', '6x minecraft:flint', '6x minecraft:flint')
+		.itemOutputs('16x minecraft:coarse_dirt')
+		.duration(600);
+
 	['andesite', 'basalt', 'blackstone', 'deepslate', 'diorite', 'granite', 'tuff', 'calcite', 'dripstone'].forEach(stone => {
 		event.shaped(Item.of(`exnihilosequentia:crushed_${stone}`), [
 			'PP',
