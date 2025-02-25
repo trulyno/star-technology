@@ -100,15 +100,15 @@ BlockEvents.rightClicked('minecraft:dead_bush', event => {
 });
 
 //Water Bowl Generation, Need to get ti to reduce crucible nbt
+
 BlockEvents.rightClicked('exnihilosequentia:jungle_crucible' , event => {
 	const { player, block, item } = event;
 	// const nbt = block.entityData;
 	// const fluidAmount = nbt.get({tank:(Amount)});
 	if (item.id !== 'minecraft:bowl') return 
 	// if (fluidAmount > 250) return
-	
-	//Will del stack of bowls so need to -1 of held and give playere the water bowl
 	// block.set(event.block.id, { waterlogged: true });
-	player.setMainHandItem(Item.of('kubejs:water_bowl'));
-	// player.give(Item.of('kubejs:water_bowl'));
+	item.count--
+	player.give(Item.of('kubejs:water_bowl'));
+	
 });
