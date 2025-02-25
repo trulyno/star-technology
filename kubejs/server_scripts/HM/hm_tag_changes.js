@@ -13,5 +13,4 @@ ServerEvents.tags('item', event => {
     event.add('forge:string', 'kubejs:plant_fibers');
     event.remove('forge:tools/mortars','gtceu:flint_mortar');
     event.add('forge:tools/axes', /gtceu:.*axe/);
-    event.add('kubejs:canvas', 'farmersdelight:canvas');
 });

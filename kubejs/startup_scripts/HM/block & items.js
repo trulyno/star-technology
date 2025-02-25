@@ -17,7 +17,12 @@ StartupEvents.registry('item', event => {
 	event.create('packed_mud_brick')
 		.displayName('Packed Mud Brick')
 		.rarity('common')
-		.texture(`kubejs:item/hm/pre-lv/packed_mud_brick`);
+		.texture(`kubejs:item/hm/pre-lv/mud_brick`);
+
+	event.create('stone_brick')
+		.displayName('Stone Brick')
+		.rarity('common')
+		.texture(`kubejs:item/hm/pre-lv/stone_brick`);
 
     event.create('coke_clay_dust')
         .displayName('Coke Clay Dust')

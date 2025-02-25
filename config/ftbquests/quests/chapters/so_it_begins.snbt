@@ -618,8 +618,8 @@
 				item: "gtceu:brick_wooden_form"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 3.0d
+			x: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -680,7 +680,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -695,7 +695,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0EF265815EB8F86F"]
@@ -706,7 +706,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -722,7 +722,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["341E2546D0BD5FAE"]
@@ -733,7 +733,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -849,7 +849,7 @@
 				}
 			]
 			title: "Ore Chunks"
-			x: 0.5d
+			x: -1.0d
 			y: 7.5d
 		}
 		{
@@ -913,7 +913,7 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 0.5d
 			y: 4.5d
 		}
 		{
@@ -951,7 +951,7 @@
 				}
 			]
 			title: "Metal Nuggets"
-			x: 2.0d
+			x: 0.5d
 			y: 6.0d
 		}
 		{
@@ -1077,25 +1077,19 @@
 			dependencies: [
 				"3DCE9199510A9223"
 				"7D83A21F7DB27B47"
+				"492C6E73D0CAC383"
 			]
 			description: [""]
 			hide_dependent_lines: true
 			icon: "kubejs:reinforced_stone_bricks"
 			id: "3D9B291441B63F78"
-			tasks: [
-				{
-					id: "1193E8818272A1E4"
-					item: "kubejs:reinforced_stone_bricks"
-					type: "item"
-				}
-				{
-					id: "5A31554F343988B9"
-					item: "minecraft:stonecutter"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1193E8818272A1E4"
+				item: "kubejs:reinforced_stone_bricks"
+				type: "item"
+			}]
 			x: 0.5d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["5D9CA9E8B676679A"]
@@ -1158,7 +1152,7 @@
 			}]
 			title: "Pressing"
 			x: -1.0d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["67D37BA6B5424768"]
@@ -1293,7 +1287,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 10.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["6C4B325AEF8A5B7D"]
@@ -1510,11 +1504,6 @@
 					item: "create:basin"
 					type: "item"
 				}
-				{
-					id: "2D41F81E24ED0A05"
-					item: "createlowheated:basic_burner"
-					type: "item"
-				}
 			]
 			x: -2.5d
 			y: 13.5d
@@ -1523,6 +1512,7 @@
 			dependencies: [
 				"6994BA308DC55ED2"
 				"70AF86B4A0D6A158"
+				"5819AF3E6CCDB826"
 			]
 			id: "60B2BEDDA1D66001"
 			tasks: [
@@ -1539,7 +1529,7 @@
 			]
 			title: "Pig Iron"
 			x: -1.0d
-			y: 13.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["60B2BEDDA1D66001"]
@@ -1573,7 +1563,7 @@
 				item: "minecraft:lava_bucket"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 2.0d
 			y: 15.0d
 		}
 		{
@@ -1915,7 +1905,7 @@
 				item: "minecraft:mud_bricks"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 3.5d
 			y: 4.5d
 		}
 		{
@@ -1927,7 +1917,7 @@
 				item: "minecraft:gold_nugget"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 0.5d
 			y: 15.0d
 		}
 		{
@@ -1961,6 +1951,82 @@
 			title: "Easier Saplings"
 			x: -3.25d
 			y: 2.25d
+		}
+		{
+			dependencies: ["1ABF4784F033D41A"]
+			id: "492C6E73D0CAC383"
+			tasks: [{
+				id: "29220D29F71231F8"
+				item: {
+					Count: 1
+					id: "gtceu:flisnt_file"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							Damage: 0
+							MaxDamage: 95
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2F9B48D51C21F896"]
+			id: "0AE6F1F1E74B6DE8"
+			optional: true
+			tasks: [{
+				id: "5C12A3ED12981F38"
+				item: "minecraft:coarse_dirt"
+				type: "item"
+			}]
+			title: "Cheaper Coarse Dirt"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E686BE355CCF22E"]
+			id: "5819AF3E6CCDB826"
+			tasks: [{
+				id: "224060CF6DFACF2A"
+				item: "createlowheated:basic_burner"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["6994BA308DC55ED2"]
+			id: "14224A60867F6FB8"
+			optional: true
+			tasks: [{
+				id: "3421CB370D54DB4C"
+				item: "minecraft:coarse_dirt"
+				type: "item"
+			}]
+			title: "Even Cheaper Coarse Dirt"
+			x: -4.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"6C4B325AEF8A5B7D"
+				"67D37BA6B5424768"
+			]
+			description: ["With this you can scavange for Flint MUCH easier"]
+			id: "24AB0C2B43C66BD3"
+			optional: true
+			tasks: [{
+				id: "29ADFCEB958E3910"
+				title: "Scavenging Rod"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 10.5d
 		}
 	]
 	title: "So It Begins"

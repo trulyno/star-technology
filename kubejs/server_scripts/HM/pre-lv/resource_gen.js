@@ -23,15 +23,21 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 
 [{hit: 'minecraft:jungle_planks',tool:'forge:tools/saws',get: 'kubejs:crafting_stage_1'},
     {hit: 'kubejs:crafting_stage_1',tool:'forge:tools/axes',get: 'kubejs:crafting_stage_2'},
-    {hit: 'kubejs:crafting_stage_2',tool:'forge:tools/knives',get: 'kubejs:crafting_stage_3'},
-    {hit: 'kubejs:crafting_stage_3',tool:'kubejs:canvas',get: 'minecraft:crafting_table'}].forEach (table => {
+    {hit: 'kubejs:crafting_stage_2',tool:'forge:tools/knives',get: 'kubejs:crafting_stage_3'}].forEach (table => {
     BlockEvents.rightClicked(`${table.hit}`, event => {
         if (event.player.getMainHandItem().hasTag(`${table.tool}`) && event.player.getOffHandItem() == null) {
             event.block.set(`${table.get}`)
         };
     });
 });
-    
+	BlockEvents.rightClicked('kubejs:crafting_stage_3', event => {
+		const { player, block, item } = event;
+		if (item.id !== 'farmersdelight:canvas') return
+
+		block.set('minecraft:crafting_table');
+		player.setMainHandItem('');
+	});
+ 
 ServerEvents.recipes(event => {
 	event.shaped(Item.of('minecraft:flint'), [
 		'SS',
@@ -51,7 +57,7 @@ ServerEvents.recipes(event => {
 	});
 
 	event.recipes.gtceu.primitive_mixer('coarse_dirt')
-		.itemInputs('16x minecraft:dirt', '6x minecraft:flint', '6x minecraft:flint')
+		.itemInputs('16x minecraft:dirt', '12x minecraft:flint')
 		.itemOutputs('16x minecraft:coarse_dirt')
 		.duration(600);
 
@@ -93,3 +99,16 @@ BlockEvents.rightClicked('minecraft:dead_bush', event => {
 	player.setMainHandItem(Item.of('minecraft:bowl'));
 });
 
+//Water Bowl Generation, Need to get ti to reduce crucible nbt
+BlockEvents.rightClicked('exnihilosequentia:jungle_crucible' , event => {
+	const { player, block, item } = event;
+	// const nbt = block.entityData;
+	// const fluidAmount = nbt.get({tank:(Amount)});
+	if (item.id !== 'minecraft:bowl') return 
+	// if (fluidAmount > 250) return
+	
+	//Will del stack of bowls so need to -1 of held and give playere the water bowl
+	// block.set(event.block.id, { waterlogged: true });
+	player.setMainHandItem(Item.of('kubejs:water_bowl'));
+	// player.give(Item.of('kubejs:water_bowl'));
+});

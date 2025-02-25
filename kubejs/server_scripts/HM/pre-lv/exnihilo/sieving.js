@@ -26,9 +26,9 @@ ServerEvents.recipes(event => {
     { Crushed: 'exnihilosequentia:crushed_tuff', OreType: 'hematite' }, { Crushed: 'exnihilosequentia:crushed_granite', OreType: 'cassiterite' },
     { Crushed: 'exnihilosequentia:crushed_diorite', OreType: 'chalcopyrite' }].forEach(c => {
         sieve('string', .4, c.Crushed, `kubejs:${c.OreType}_crushed_ore_chunk`, false);
-        sieve('string', .05, c.Crushed, `gtceu:stone_dust`, false);
+        sieve('string', .1, c.Crushed, `gtceu:stone_dust`, false);
         sieve('flint', .5, c.Crushed, `gtceu:crushed_${c.OreType}_ore`, false);
-        sieve('flint', .1, c.Crushed, `minecraft:gravel`, false);
+        sieve('flint', .20, c.Crushed, `minecraft:gravel`, false);
     });
 
     sieve('string', 1, cdirt, dirt, false);
@@ -40,16 +40,16 @@ ServerEvents.recipes(event => {
     ['andesite', 'basalt', 'blackstone', 'deepslate', 'diorite', 'granite', 'tuff'].forEach(pebble => {
         sieve('string', .3, gravel, `exnihilosequentia:${pebble}_pebble`, false);
     });
-    sieve('string', .5, gravel, sand, false);
+    sieve('string', .75, gravel, sand, false);
 
     sieve('string', .4, sand, 'exnihilosequentia:calcite_pebble', false);
     sieve('string', .4, sand, 'exnihilosequentia:dripstone_pebble', false);
-    sieve('string', .5, sand, dust, false);
+    sieve('string', .75, sand, dust, false);
 
-    sieve('string', .4, cCalc, 'gtceu:calcite_dust', false);
+    sieve('string', .5, cCalc, 'gtceu:calcite_dust', false);
     sieve('string', .2, cCalc, 'gtceu:tiny_sulfur_dust', false);
 
-    sieve('string', .4, cDrip, 'gtceu:gypsum_dust', false);
+    sieve('string', .5, cDrip, 'gtceu:gypsum_dust', false);
     sieve('string', .15, cDrip, 'minecraft:clay_ball', false);
 
     sieve('string', .25, dust, 'gtceu:small_redstone_dust', false);
