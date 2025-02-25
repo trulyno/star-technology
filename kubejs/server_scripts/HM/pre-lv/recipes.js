@@ -152,7 +152,8 @@ ServerEvents.recipes(event => {
         R: '#forge:string'
     });
 
-    event.shaped(Item.of('kubejs:fire_starter'), [
+    event.remove({output: 'gtceu:matchbox'});
+    event.shaped(Item.of('gtceu:matchbox'), [
         'RRR',
         'TST',
         ' B '
@@ -162,6 +163,11 @@ ServerEvents.recipes(event => {
         S: 'farmersdelight:straw',
         B: 'minecraft:bowl'
     });
+
+    event.remove({id: 'minecraft:flint_and_steel'});
+    event.shapeless(Item.of('minecraft:flint_and_steel'), [
+        'gtceu:steel_ring', 'minecraft:flint'
+    ]);
     
     event.shaped(Item.of('gtceu:rugged_alloyer'),[
         'RER',
@@ -250,7 +256,7 @@ ServerEvents.recipes(event => {
             F: '#forge:tools/files'
         });
         
-        event.shaped(Item.of('kubejs:packed_mud_brick',4), [
+        event.shaped(Item.of('kubejs:mud_brick',4), [
             'CCC',
             'CMC',
             'CCC'
@@ -320,7 +326,6 @@ ServerEvents.recipes(event => {
         L: '#minecraft:logs'
     });
 
-
     //Adjusted Recipes
     event.remove({output: '#exnihilosequentia:crucibles'});
     event.remove({output: '#exnihilosequentia:barrels'});
@@ -386,8 +391,79 @@ ServerEvents.recipes(event => {
     event.remove({id: 'gtceu:shapeless/fireclay_dust'})
     event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust');
     event.recipes.create.pressing('gtceu:compressed_clay', 'minecraft:clay_ball');
-    event.recipes.create.pressing('kubejs:packed_mud_brick', 'kubejs:packed_mud_ball');
+    event.recipes.create.pressing('kubejs:mud_brick', 'kubejs:packed_mud_ball');
     event.recipes.create.pressing('gtceu:compressed_coke_clay', 'kubejs:coke_clay_dust');
+
+    //Metalurgy Rework via Create
+    event.remove({id: /^create:pressing.*_ingot/})
+    event.remove({output: /^create_new_age.*wire/})
+    const GTMetals = ['lead','raw_electrum','tin','zinc','bronze','brass','nickel','pig_iron']
+    const MinecraftMetals = ['iron','copper','gold']
+    const MetalInc = ['iron','copper','gold','lead','raw_electrum','tin','bronze','brass','pig_iron']
+    GTMetals.forEach(type => {
+        event.recipes.create.pressing([Item.of(`gtceu:${type}_plate`).withChance(0.5)],`gtceu:${type}_ingot`);
+    });
+    MinecraftMetals.forEach(type => {
+        event.recipes.create.pressing([Item.of(`gtceu:${type}_plate`).withChance(0.5)],`minecraft:${type}_ingot`);
+    });
+    MetalInc.forEach(type => {
+        event.recipes.create.cutting([`gtceu:${type}_rod`,Item.of(`gtceu:${type}_rod`).withChance(0.9)],`gtceu:${type}_plate`);
+        event.recipes.create.pressing([Item.of(`gtceu:${type}_ring`).withChance(0.95)],`gtceu:${type}_rod`);
+        event.recipes.create.pressing([Item.of(`gtceu:${type}_foil`).withChance(0.95)],`gtceu:${type}_plate`);
+        event.recipes.create.cutting([`gtceu:${type}_bolt`,Item.of(`gtceu:${type}_bolt`).withChance(0.9)],`gtceu:${type}_rod`);
+        event.recipes.create.pressing([Item.of(`gtceu:${type}_screw`).withChance(0.75)],`gtceu:${type}_bolt`);
+    });
+
+    //Create Recipes
+    event.shapeless(Item.of('gtceu:wood_plate', 2), [
+        '#forge:tools/files','#minecraft:planks','#minecraft:planks'
+    ]);
+
+    event.shaped(Item.of('create:andesite_casing'), [
+        'PMP',
+        'AFA',
+        'PHP'
+    ], {
+        P: 'gtceu:wood_plate',
+        M: '#forge:tools/mallets',
+        A: 'create:andesite_alloy',
+        F: 'gtceu:wood_frame',
+        H: '#forge:tools/hammers'
+    });
+    
+    event.shaped(Item.of('gtceu:primitive_workshop'), [
+        'QAQ',
+        'FCF',
+        'RRR'
+    ], {
+        Q: 'gtceu:quartzite_gem',
+        A: 'create:andesite_alloy',
+        F: 'gtceu:wood_frame',
+        C: 'create:andesite_casing',
+        R: 'minecraft:redstone_block'
+    });
+
+    event.shaped(Item.of('create:piston_extension_pole',3), [
+        'P',
+        'A',
+        'P'
+    ], {
+        P: 'gtceu:wood_plate',
+        A: 'create:andesite_alloy'
+    });
+
+    event.recipes.gtceu.primitive_workshop('mechanical_press')
+        .itemInputs('create:andesite_casing','create:piston_extension_pole','4x gtceu:wood_gear',
+            '6x minecraft:redstone','minecraft:anvil','4x create:andesite_alloy')
+        .itemOutputs('create:mechanical_press')
+        .duration(100);
+
+    event.recipes.gtceu.primitive_workshop('hand_crank')
+        .itemInputs('gtceu:wood_gear','3x gtceu:wood_plate','gtceu:sticky_resin','create:andesite_alloy',
+            'minecraft:stick'
+        )
+        .itemOutputs('create:hand_crank')
+        .duration(40);
 
 //Post Cobble-Gen, Pre-Circuit
 
