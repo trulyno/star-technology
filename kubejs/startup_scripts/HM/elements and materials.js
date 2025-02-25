@@ -20,7 +20,7 @@ materialRegistry(event => {
 
     event.create('flisnt')
         .color(0x888B8C)
-        .toolStats(ToolProperty.Builder.of(1, 1, 64, 1,[GTToolType.SAW,GTToolType.HARD_HAMMER,GTToolType.PICKAXE, GTToolType.SHOVEL,
+        .toolStats(ToolProperty.Builder.of(1, 1, 96, 1,[GTToolType.SAW,GTToolType.HARD_HAMMER,GTToolType.PICKAXE, GTToolType.SHOVEL,
               GTToolType.AXE, GTToolType.SWORD, GTToolType.KNIFE]).build());
 
 });
