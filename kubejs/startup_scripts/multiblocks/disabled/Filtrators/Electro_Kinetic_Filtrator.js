@@ -34,6 +34,6 @@
 //             .where('T', Predicates.blocks('gtceu:steel_machine_casing'))
 //             .where('.', Predicates.any())
 //             .build())
-//         .workableCasingRenderer("gtceu:block/casings/steam/bricked_steel/top",
-//         "gtceu:block/multiblock/implosion_compressor", false);
+//         .workableCasingRenderer('gtceu:block/casings/steam/bricked_steel/top',
+//         'gtceu:block/multiblock/implosion_compressor', false);
 // });

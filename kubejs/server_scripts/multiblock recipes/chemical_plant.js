@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of("gtceu:large_chemical_reactor"))
+                .researchStack(Item.of('gtceu:large_chemical_reactor'))
                 .EUt(GTValues.VHA[GTValues.ZPM])
                 .CWUt(16)
             )

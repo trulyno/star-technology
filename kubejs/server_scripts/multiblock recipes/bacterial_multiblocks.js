@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of("gtceu:mutagen_bucket"))
+                .researchStack(Item.of('gtceu:mutagen_bucket'))
                 .EUt(GTValues.VHA[GTValues.UV])
                 .CWUt(128)
             )
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of("gtceu:bacteria_bucket"))
+                .researchStack(Item.of('gtceu:bacteria_bucket'))
                 .EUt(GTValues.VHA[GTValues.UV])
                 .CWUt(128)
             )
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of("gtceu:uhv_distillery"))
+                .researchStack(Item.of('gtceu:uhv_distillery'))
                 .EUt(GTValues.VHA[GTValues.UV])
                 .CWUt(128)
             )

@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         .duration(1800)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of("gtceu:uv_assembler"))
+                .researchStack(Item.of('gtceu:uv_assembler'))
                 .EUt(GTValues.VHA[GTValues.UV])
                 .CWUt(96)
             )

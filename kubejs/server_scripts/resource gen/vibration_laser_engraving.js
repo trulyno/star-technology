@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.heat_chamber("tiny_purified_naquadah")
+    event.recipes.gtceu.heat_chamber('tiny_purified_naquadah')
         .itemInputs('gtceu:tiny_naquadah_dust')
         .inputFluids('gtceu:neon 120')
         .itemOutputs('gtceu:tiny_purified_naquadah_dust')
@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         .duration(4800)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of("gtceu:uv_laser_engraver"))
+                .researchStack(Item.of('gtceu:uv_laser_engraver'))
                 .EUt(262144)
                 .CWUt(96)
             )

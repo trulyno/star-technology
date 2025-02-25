@@ -1,13 +1,16 @@
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
     event.create('runic_circuitry_assembling_station')
         .category('runic_circuitry_assembling_station')
         .setEUIO('in')
         .setMaxIOSize(2, 1, 0, 0)
         .setSound(GTSoundEntries.ELECTROLYZER);
+
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+
     event.create('runic_circuitry_assembling_station', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('runic_circuitry_assembling_station')
@@ -38,6 +41,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('P', Predicates.blocks('gtceu:prismalium_frame'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer("kubejs:block/casings/superconductors/casing-lumium",
-            "gtceu:block/multiblock/implosion_compressor", false);
+        .workableCasingRenderer('kubejs:block/casings/superconductors/casing-lumium',
+            'gtceu:block/multiblock/implosion_compressor', false);
+            
 });
