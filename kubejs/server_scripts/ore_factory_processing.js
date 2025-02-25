@@ -111,6 +111,16 @@ const primitive_processing = (event, materialObj) => {
             .chancedOutput(dust(materialObj.tertiary, fuel.multiplier), 1250, 0)
             .duration(fuel.duration);
     });
+    
+    event.recipes.gtceu.steam_ore_processing(`${materialObj.material}`)
+            .itemInputs(crushed_ore(materialObj.material,  1))
+            .inputFluids(fluids.water)
+            .itemOutputs(dust(materialObj.material, 1))
+            .chancedOutput(dust(materialObj.material,  1), 5000, 0)
+            .chancedOutput(dust(materialObj.secondary,  1), 2500, 0)
+            .chancedOutput(dust(materialObj.tertiary,  1), 1250, 0)
+            .duration(240)
+            .EUt(GTValues.VA[GTValues.ULV]);
 }
 
 /*
