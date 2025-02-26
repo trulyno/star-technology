@@ -7,6 +7,7 @@ ServerEvents.loaded(event => {
 	// event.server.setDifficulty(Difficulty.PEACEFUL)
 	event.server.gameRules.set("doWeatherCycle", false)
 	event.server.gameRules.set("waterSourceConversion", false)
+	event.server.gameRules.ser("doPatrolSpawning", false)
 
 	// Add load_check to server persistent data to prevent this from running again
 	event.server.persistentData.load_check = true
