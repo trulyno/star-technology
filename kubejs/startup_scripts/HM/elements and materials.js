@@ -23,4 +23,7 @@ materialRegistry(event => {
         .toolStats(ToolProperty.Builder.of(1, 1, 96, 1,[GTToolType.SAW,GTToolType.HARD_HAMMER,GTToolType.PICKAXE, GTToolType.SHOVEL,
               GTToolType.AXE, GTToolType.SWORD, GTToolType.KNIFE, GTToolType.FILE]).build());
 
+    GTMaterials.Iron.addFlags(foil);
+
+
 });

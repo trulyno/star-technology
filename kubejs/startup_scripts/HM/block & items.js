@@ -14,10 +14,10 @@ StartupEvents.registry('item', event => {
 		.rarity('common')
 		.texture(`kubejs:item/hm/pre-lv/packed_mud_ball`);
 
-	event.create('packed_mud_brick')
+	event.create('mud_brick')
 		.displayName('Packed Mud Brick')
 		.rarity('common')
-		.texture(`kubejs:item/hm/pre-lv/mud_brick`);
+		.texture(`kubejs:item/hm/pre-lv/packed_mud_brick`);
 
 	event.create('stone_brick')
 		.displayName('Stone Brick')
@@ -34,12 +34,6 @@ StartupEvents.registry('item', event => {
 		.rarity('common')
 		.unstackable()
 		.texture(`kubejs:item/hm/pre-lv/water_bowl`);
-
-	event.create('fire_starter')
-		.displayName('Fire Starter')
-		.rarity('common')
-		.maxDamage(16)
-		.unstackable();
 
 	const oreType = ['Hematite', 'Cassiterite', 'Chalcopyrite', 'Sphalerite', 'Pyrite', 'Magnetite', 'Galena', 'Raw_Electrum']
 

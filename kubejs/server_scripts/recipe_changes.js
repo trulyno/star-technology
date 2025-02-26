@@ -60,27 +60,27 @@ ServerEvents.recipes(event => {
     //     'M': 'gtceu:brick_wooden_form'
     // }).keepIngredient('gtceu:brick_wooden_form');
 
-    event.recipes.create.mixing('4x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated');
+    // event.recipes.create.mixing('4x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated');
 
-    event.recipes.create.pressing('gtceu:rubber_plate', 'thermal:cured_rubber');
+    // event.recipes.create.pressing('gtceu:rubber_plate', 'thermal:cured_rubber');
 
-    event.recipes.gtceu.fluid_solidifier('gtceu:raw_rubber')
-        .inputFluids('thermal:latex 250')
-        .itemOutputs('thermal:rubber')
-        .duration(120)
-        .EUt(8);
+    // event.recipes.gtceu.fluid_solidifier('gtceu:raw_rubber')
+    //     .inputFluids('thermal:latex 250')
+    //     .itemOutputs('thermal:rubber')
+    //     .duration(120)
+    //     .EUt(8);
 
-    event.recipes.gtceu.extractor('latex_extraction')
-        .itemInputs('thermal:rubber')
-        .outputFluids('thermal:latex 250')
-        .duration(120)
-        .EUt(8);
+    // event.recipes.gtceu.extractor('latex_extraction')
+    //     .itemInputs('thermal:rubber')
+    //     .outputFluids('thermal:latex 250')
+    //     .duration(120)
+    //     .EUt(8);
 
-    event.recipes.gtceu.chemical_reactor('latex_rubber')
-        .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
-        .outputFluids('gtceu:rubber 576')
-        .duration(240)
-        .EUt(8);
+    // event.recipes.gtceu.chemical_reactor('latex_rubber')
+    //     .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
+    //     .outputFluids('gtceu:rubber 576')
+    //     .duration(240)
+    //     .EUt(8);
 
     //Recipe conflict fix: ethane+chlorine
     event.remove({id: 'gtceu:chemical_reactor/vinyl_chloride_from_ethane'})
@@ -91,11 +91,11 @@ ServerEvents.recipes(event => {
         .EUt(30)
         .circuit(2);
 
-    event.recipes.gtceu.large_chemical_reactor('latex_rubber')
-        .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
-        .outputFluids('gtceu:rubber 576')
-        .duration(240)
-        .EUt(8);
+    // event.recipes.gtceu.large_chemical_reactor('latex_rubber')
+    //     .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
+    //     .outputFluids('gtceu:rubber 576')
+    //     .duration(240)
+    //     .EUt(8);
 
     event.recipes.gtceu.extractor('nether_agglomeration')
         .itemInputs('gtceu:netherrack_dust')
@@ -173,14 +173,14 @@ ServerEvents.recipes(event => {
         .duration(5)
         .EUt(30);
 
-    event.shaped(Item.of('gtceu:rubber_plate'), [
-        'H',
-        'R',
-        'R'
-    ], {
-        H: '#forge:tools/hammers',
-        R: 'thermal:cured_rubber'
-    })
+    // event.shaped(Item.of('gtceu:rubber_plate'), [
+    //     'H',
+    //     'R',
+    //     'R'
+    // ], {
+    //     H: '#forge:tools/hammers',
+    //     R: 'thermal:cured_rubber'
+    // })
 
     const types = ['soul_infused', 'signalum', 'lumium', 'enderium', 'shellite', 'twinite', 'dragonsteel', 'prismalium', 'melodium', 'stellarium', 'austenitic_stainless_steel_304', 'inconel_625', 'birmabright', 'duralumin', 'hydronalium', 'beryllium_aluminium_alloy', 'elgiloy', 'beryllium_bronze', 'silicon_bronze', 'kovar', 'zamak', 'tumbaga', 'sterling_silver', 'blue_steel', 'red_steel', 'ancient_runicalium'];
 
@@ -353,9 +353,9 @@ ServerEvents.recipes(event => {
     });
 
     //plates
-    ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron'].forEach(type => {
-        event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`);
-    });
+    // ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron'].forEach(type => {
+    //     event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`);
+    // });
   
     event.replaceInput({id: 'enderchests:ender_pouch'}, 'minecraft:leather', 'gtceu:carbon_fiber_plate');
     event.shaped(Item.of('create_new_age:netherite_magnet'), [
