@@ -24,6 +24,7 @@ materialRegistry(event => {
               GTToolType.AXE, GTToolType.SWORD, GTToolType.KNIFE, GTToolType.FILE]).build());
 
     GTMaterials.Iron.addFlags(foil);
+    GTMaterials.Brass.addFlags(ring, foil);
 
 
 });

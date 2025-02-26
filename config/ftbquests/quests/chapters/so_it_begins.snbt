@@ -2002,7 +2002,10 @@
 			y: 0.75d
 		}
 		{
-			dependencies: ["2E686BE355CCF22E"]
+			dependencies: [
+				"2E686BE355CCF22E"
+				"60916F46BE0033CA"
+			]
 			id: "5819AF3E6CCDB826"
 			tasks: [{
 				id: "224060CF6DFACF2A"
