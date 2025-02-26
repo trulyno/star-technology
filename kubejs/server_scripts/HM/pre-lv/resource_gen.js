@@ -1,3 +1,5 @@
+// Coarse Dirt Scavenging
+
 BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 	if (event.player.isCrouching() && event.player.getMainHandItem() == null) {
 		if (Math.random() < 0.002) {
@@ -9,35 +11,55 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 	}
 });
 
-[{hit: 'minecraft:stripped_jungle_log',tool:'forge:tools/knives',get: 'kubejs:crucible_stage_1'},
-    {hit: 'kubejs:crucible_stage_1',tool:'forge:tools/axes',get: 'kubejs:crucible_stage_2'},
-    {hit: 'kubejs:crucible_stage_2',tool:'forge:tools/saws',get: 'kubejs:crucible_stage_3'},
-    {hit: 'kubejs:crucible_stage_3',tool:'forge:tools/knives',get: 'exnihilosequentia:jungle_crucible'}].forEach (crucible => {
-    BlockEvents.rightClicked(`${crucible.hit}`, event => {
-        if (event.player.getMainHandItem().hasTag(`${crucible.tool}`) && event.player.getOffHandItem() == null) {
-            event.block.set(`${crucible.get}`)
-            event.block.popItemFromFace(Item.of('gtceu:wood_dust'), 'up')
-        };
-    });
-});
+// In-world crafting for Crucible and Crafting Table
 
-[{hit: 'minecraft:jungle_planks',tool:'forge:tools/saws',get: 'kubejs:crafting_stage_1'},
-    {hit: 'kubejs:crafting_stage_1',tool:'forge:tools/axes',get: 'kubejs:crafting_stage_2'},
-    {hit: 'kubejs:crafting_stage_2',tool:'forge:tools/knives',get: 'kubejs:crafting_stage_3'}].forEach (table => {
-    BlockEvents.rightClicked(`${table.hit}`, event => {
-        if (event.player.getMainHandItem().hasTag(`${table.tool}`) && event.player.getOffHandItem() == null) {
-            event.block.set(`${table.get}`)
-        };
-    });
-});
-	BlockEvents.rightClicked('kubejs:crafting_stage_3', event => {
-		const { player, block, item } = event;
-		if (item.id !== 'farmersdelight:canvas') return
+const crucible_stages = [
+	{ hit: 'minecraft:stripped_jungle_log', tool: 'forge:tools/knives', get: 'kubejs:crucible_stage_1' },
+	{ hit: 'kubejs:crucible_stage_1', tool: 'forge:tools/axes', get: 'kubejs:crucible_stage_2' },
+	{ hit: 'kubejs:crucible_stage_2', tool: 'forge:tools/saws', get: 'kubejs:crucible_stage_3' },
+	{ hit: 'kubejs:crucible_stage_3', tool: 'forge:tools/knives', get: 'exnihilosequentia:jungle_crucible' },
+];
 
-		block.set('minecraft:crafting_table');
-		player.setMainHandItem('');
+const table_stages = [
+	{ hit: 'minecraft:jungle_planks', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_1' },
+	{ hit: 'kubejs:crafting_stage_1', tool: 'forge:tools/axes', get: 'kubejs:crafting_stage_2' },
+	{ hit: 'kubejs:crafting_stage_2', tool: 'forge:tools/knives', get: 'kubejs:crafting_stage_3' },
+];
+
+crucible_stages.forEach(crucible => {
+	const { hit, tool, get } = crucible;
+
+	BlockEvents.rightClicked(hit, event => {
+		if (!event.player.getMainHandItem().hasTag(tool)) return;
+		if (event.player.getOffHandItem() !== null) return;
+
+		event.block.set(get);
+		event.block.popItemFromFace(Item.of('gtceu:wood_dust'), 'up');
 	});
- 
+});
+
+table_stages.forEach(table => {
+	const { hit, tool, get } = table;
+
+	BlockEvents.rightClicked(hit, event => {
+		if (!event.player.getMainHandItem().hasTag(tool)) return;
+		if (event.player.getOffHandItem() !== null) return;
+
+		event.block.set(get);
+	});
+});
+
+BlockEvents.rightClicked('kubejs:crafting_stage_3', event => {
+	const { block, item } = event;
+
+	if (item.id !== 'farmersdelight:canvas') return;
+
+	block.set('minecraft:crafting_table');
+	item.count--;
+});
+
+// Crafting Recipes
+
 ServerEvents.recipes(event => {
 	event.shaped(Item.of('minecraft:flint'), [
 		'SS',
@@ -79,6 +101,8 @@ ServerEvents.recipes(event => {
 
 });
 
+// Jungle Wood Stripping (Bark + Resin)
+
 BlockEvents.rightClicked('minecraft:jungle_log', event => {
 	const { player, block, item } = event;
 
@@ -91,24 +115,32 @@ BlockEvents.rightClicked('minecraft:jungle_log', event => {
 	event.cancel(true);
 });
 
+// Dead Bush -> Jungle Sapling
+
 BlockEvents.rightClicked('minecraft:dead_bush', event => {
 	const { player, block, item } = event;
-	if (item.id !== 'kubejs:water_bowl') return
+
+	if (item.id !== 'kubejs:water_bowl') return;
 
 	block.set('minecraft:jungle_sapling');
 	player.setMainHandItem(Item.of('minecraft:bowl'));
 });
 
-//Water Bowl Generation, Need to get ti to reduce crucible nbt
+// Water Bowls
 
-BlockEvents.rightClicked('exnihilosequentia:jungle_crucible' , event => {
+BlockEvents.rightClicked('exnihilosequentia:jungle_crucible', event => {
 	const { player, block, item } = event;
-	// const nbt = block.entityData;
-	// const fluidAmount = nbt.get({tank:(Amount)});
-	if (item.id !== 'minecraft:bowl') return 
-	// if (fluidAmount > 250) return
-	// block.set(event.block.id, { waterlogged: true });
-	item.count--
-	player.give(Item.of('kubejs:water_bowl'));
-	
+	const { FluidName: fluid, Amount: amount } = block.entityData.tank;
+
+	if (item.id !== 'minecraft:bowl') return;
+	if (fluid !== 'minecraft:water' || amount < 250) return;
+
+	block.mergeEntityData({ tank: { FluidName: 'minecraft:water', Amount: amount - 250 } });
+
+	if (item.count > 1) {
+		player.give(Item.of('kubejs:water_bowl'));
+		item.count--;
+	} else {
+		player.setMainHandItem(Item.of('kubejs:water_bowl'));
+	}
 });
