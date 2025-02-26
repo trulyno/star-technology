@@ -159,6 +159,19 @@ ServerEvents.recipes(event => {
         .duration(16000)
         .EUt(GTValues.VHA[GTValues.LuV]);
 
+    //Material Adjustments
+    event.replaceInput({id: 'gtceu:electric_blast_furnace/blast_weapon_grade_naquadah_gas'},
+        Fluid.of('gtceu:krypton 10'),
+        Fluid.of('gtceu:xenon 10')
+    );
+
+    event.recipes.gtceu.bender('nether_star_foil')
+            .itemInputs('gtceu:nether_star_plate')
+            .itemOutputs('4x gtceu:nether_star_foil')
+            .duration(300)
+            .circuit(1)
+            .EUt(GTValues.VA[GTValues.IV]);
+
     //Classic Gate Components
     event.recipes.gtceu.assembly_line('classic_stargate_computer_core')
         .itemInputs('gtceu:stellarium_frame', '4x kubejs:computational_super_matrix', '16x gtceu:ruthenium_trinium_americium_neutronate_octal_wire', '16x gtceu:ruthenium_trinium_americium_neutronate_octal_wire',
@@ -231,13 +244,6 @@ ServerEvents.recipes(event => {
         )
         .duration(12000)
         .EUt(GTValues.VHA[GTValues.UV]);
-
-    event.recipes.gtceu.bender('nether_star_foil')
-        .itemInputs('gtceu:nether_star_plate')
-        .itemOutputs('4x gtceu:nether_star_foil')
-        .duration(300)
-        .circuit(1)
-        .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.large_rotor_machine('crude_stargate_rod')
         .itemInputs('32x gtceu:neutronium_foil', '48x gtceu:weapon_grade_naquadah_foil', '32x gtceu:neutronium_foil', '48x gtceu:weapon_grade_naquadah_foil', '16x gtceu:nether_star_foil', '48x gtceu:weapon_grade_naquadah_foil', 'gtceu:long_void_rod', '48x gtceu:weapon_grade_naquadah_foil', '32x gtceu:neutronium_foil')

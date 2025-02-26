@@ -434,7 +434,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('12x neutronium', '4x melodium', '1x dragonsteel')
         .color(0xccffff)
         .iconSet(SHINY)
-        .blastTemp(10799, 'highest', VA('uhv'), 6000)
+        .blastTemp(10799, 'highest', VA('uhv'), 4000)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame, fine_wire)
         .cableProperties(V('uhv'), 512, 0, true)
@@ -446,7 +446,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('5x zapolgium', '18x stellarium', '8x zirconium')
         .color(0xFAB922)
         .iconSet(SHINY)
-        .blastTemp(11749, 'highest', VA('uev'), 6200)
+        .blastTemp(11749, 'highest', VA('uev'), 5000)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame, fine_wire)
         .cableProperties(V('uev'), 1024, 0, true)
@@ -546,7 +546,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('7x naquadria', '2x pure_netherite', '5x neutronium', '16x fluorine')
         .color(0xccff33)
         .iconSet(DULL)
-        .blastTemp(10500, 'low', VA('zpm'), 6000)
+        .blastTemp(10500, 'highest', VHA('uv'), 2700)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame);
 
