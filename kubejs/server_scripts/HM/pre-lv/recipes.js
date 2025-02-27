@@ -100,6 +100,31 @@ ServerEvents.recipes(event => {
         Q: 'gtceu:quartzite_gem'
     });
 
+    event.shaped(Item.of('kubejs:basic_scavenging_rod'), [
+        'SPP',
+        'RLP',
+        'TRS'
+    ], {
+        S: '#forge:string',
+        P: 'minecraft:iron_nugget',
+        T: '#forge:rods/wood',
+        R: 'gtceu:sticky_resin',
+        L: 'gtceu:wood_plate'
+    });
+
+    event.shaped(Item.of('kubejs:scavenging_rod'), [
+        'SPP',
+        'RLP',
+        'TRH'
+    ], {
+        S: '#forge:tools/screwdrivers',
+        H: '#forge:tools/hammers',
+        P: 'gtceu:iron_rod',
+        T: '#forge:rods/wood',
+        R: 'gtceu:iron_screw',
+        L: 'gtceu:iron_plate'
+    });
+
     //Kiln
     [{fuel: 'coals', burnMultiplier: .5}, {fuel: 'logs', burnMultiplier: 1.2}].forEach( coal => {
         event.recipes.gtceu.kiln(`brick_${coal.fuel}`)
