@@ -407,11 +407,11 @@ ServerEvents.recipes(event => {
         event.recipes.create.pressing([Item.of(`gtceu:${type}_plate`).withChance(0.5)],`minecraft:${type}_ingot`);
     });
     MetalInc.forEach(type => {
-        event.recipes.create.cutting([`gtceu:${type}_rod`,Item.of(`gtceu:${type}_rod`).withChance(0.9)],`gtceu:${type}_plate`);
-        event.recipes.create.pressing([Item.of(`gtceu:${type}_ring`).withChance(0.95)],`gtceu:${type}_rod`);
-        event.recipes.create.pressing([Item.of(`gtceu:${type}_foil`).withChance(0.95)],`gtceu:${type}_plate`);
-        event.recipes.create.cutting([`gtceu:${type}_bolt`,Item.of(`gtceu:${type}_bolt`).withChance(0.9)],`gtceu:${type}_rod`);
-        event.recipes.create.pressing([Item.of(`gtceu:${type}_screw`).withChance(0.75)],`gtceu:${type}_bolt`);
+        event.recipes.create.cutting([`gtceu:${type}_rod`,Item.of(`gtceu:${type}_rod`).withChance(1)],`gtceu:${type}_plate`);
+        event.recipes.create.pressing([Item.of(`gtceu:${type}_ring`).withChance(1)],`gtceu:${type}_rod`);
+        event.recipes.create.pressing([Item.of(`gtceu:${type}_foil`).withChance(1)],`gtceu:${type}_plate`);
+        event.recipes.create.cutting([`gtceu:${type}_bolt`,Item.of(`gtceu:${type}_bolt`).withChance(1)],`gtceu:${type}_rod`);
+        event.recipes.create.pressing([Item.of(`gtceu:${type}_screw`).withChance(1)],`gtceu:${type}_bolt`);
     });
 
     // const CreateSeqParts = ['kubejs:incomplete_long_metal_rod' ,'kubejs:incomplete_double_metal_plate', 'kubejs:incomplete_metal_gear', 'kubejs:incomplete_small_metal_gear', 'kubejs:incomplete_metal_rotor', 'kubejs:incomplete_metal_spring', 'kubejs:incomplete_metal_small_spring', 'kubejs:incomplete_metal_wire', 'kubejs:incomplete_metal_fine_wire'];
@@ -423,7 +423,7 @@ ServerEvents.recipes(event => {
         MetalInc.forEach(type => {
 	    let inter = 'kubejs:incomplete_long_metal_rod' 
 	    event.recipes.create.sequenced_assembly([
-	    	Item.of(`gtceu:long_${type}_rod`).withChance(100.0),
+	    	Item.of(`gtceu:long_${type}_rod`).withChance(1),
 	    ], `gtceu:${type}_rod`, [ 
 	    	event.recipes.createDeploying(inter, [inter, `gtceu:${type}_rod`]),
 	    	event.recipes.createPressing(inter, inter),
@@ -434,7 +434,7 @@ ServerEvents.recipes(event => {
         MetalInc.forEach(type => {
 	    let inter = 'kubejs:incomplete_double_metal_plate'
 	    event.recipes.create.sequenced_assembly([
-	    	Item.of(`gtceu:double_${type}_plate`).withChance(100.0),
+	    	Item.of(`gtceu:double_${type}_plate`).withChance(1),
 	    ], `gtceu:${type}_plate`, [ 
 	    	event.recipes.createDeploying(inter, [inter, `gtceu:${type}_plate`]),
 	    	event.recipes.createPressing(inter, inter),
@@ -445,7 +445,7 @@ ServerEvents.recipes(event => {
         MetalInc.forEach(type => {
 	    let inter = 'kubejs:incomplete_metal_gear'
 	    event.recipes.create.sequenced_assembly([
-	    	Item.of(`gtceu:${type}_gear`).withChance(100.0),
+	    	Item.of(`gtceu:${type}_gear`).withChance(1),
 	    ], `gtceu:${type}_plate`, [ 
             event.recipes.createDeploying(inter, [inter, `gtceu:${type}_rod`]),
             event.recipes.createPressing(inter, inter),
@@ -457,7 +457,7 @@ ServerEvents.recipes(event => {
         MetalInc.forEach(type => {
         let inter = 'kubejs:incomplete_small_metal_gear'
         event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:small_${type}_gear`).withChance(100.0),
+            Item.of(`gtceu:small_${type}_gear`).withChance(1),
         ], `gtceu:${type}_plate`, [ 
             event.recipes.createDeploying(inter, [inter, `gtceu:${type}_rod`]),
             event.recipes.createDeploying(inter, [inter, `gtceu:${type}_plate`]),
@@ -468,7 +468,7 @@ ServerEvents.recipes(event => {
         MetalInc.forEach(type => {
         let inter = 'kubejs:incomplete_metal_rotor'
         event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:${type}_rotor`).withChance(100.0),
+            Item.of(`gtceu:${type}_rotor`).withChance(1),
         ], `gtceu:${type}_ring`, [ 
             event.recipes.createDeploying(inter, [inter, `gtceu:${type}_plate`]),
             event.recipes.createPressing(inter, inter),
@@ -480,7 +480,7 @@ ServerEvents.recipes(event => {
         MetalInc.forEach(type => {
         let inter = 'kubejs:incomplete_metal_spring'
         event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:${type}_spring`).withChance(100.0),
+            Item.of(`gtceu:${type}_spring`).withChance(1),
         ], `gtceu:long_${type}_rod`, [ 
             event.recipes.createPressing(inter, inter),
         ]).transitionalItem(inter).loops(4)
@@ -490,7 +490,7 @@ ServerEvents.recipes(event => {
         MetalInc.forEach(type => {
         let inter = 'kubejs:incomplete_small_metal_spring'
         event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:small_${type}_spring`).withChance(100.0),
+            Item.of(`gtceu:small_${type}_spring`).withChance(1),
         ], `gtceu:long_${type}_rod`, [ 
             event.recipes.createPressing(inter, inter),
             event.recipes.createCutting(inter, inter),
@@ -501,7 +501,7 @@ ServerEvents.recipes(event => {
         MetalInc.forEach(type => {
         let inter = 'kubejs:incomplete_metal_single_wire'
         event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:${type}_single_wire`).withChance(100.0),
+            Item.of(`gtceu:${type}_single_wire`).withChance(1),
         ], `gtceu:${type}_plate`, [ 
             event.recipes.createDeploying(inter, [inter, '#forge:tools/wire_cutters']),
             event.recipes.createCutting(inter, inter),
@@ -512,7 +512,7 @@ ServerEvents.recipes(event => {
         MetalInc.forEach(type => {
         let inter = 'kubejs:incomplete_metal_fine_wire'
         event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:fine_${type}_wire`).withChance(100.0),
+            Item.of(`gtceu:fine_${type}_wire`).withChance(1),
         ], `gtceu:${type}_foil`, [ 
             event.recipes.createDeploying(inter, [inter, '#forge:tools/wire_cutters']),
             event.recipes.createCutting(inter, inter),
