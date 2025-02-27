@@ -472,14 +472,8 @@ ServerEvents.recipes(event => {
         ], `gtceu:${type}_ring`, [ 
             event.recipes.createDeploying(inter, [inter, `gtceu:${type}_plate`]),
             event.recipes.createPressing(inter, inter),
-            event.recipes.createDeploying(inter, [inter, `gtceu:${type}_plate`]),
-            event.recipes.createPressing(inter, inter),
-            event.recipes.createDeploying(inter, [inter, `gtceu:${type}_plate`]),
-            event.recipes.createPressing(inter, inter),
-            event.recipes.createDeploying(inter, [inter, `gtceu:${type}_plate`]),
-            event.recipes.createPressing(inter, inter),
             event.recipes.createDeploying(inter, [inter, `gtceu:${type}_screw`]),
-        ]).transitionalItem(inter).loops(1)
+        ]).transitionalItem(inter).loops(3)
         });
     
 	//Spring deploying
