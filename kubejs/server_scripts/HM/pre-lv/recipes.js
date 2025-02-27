@@ -414,21 +414,22 @@ ServerEvents.recipes(event => {
         event.recipes.create.pressing([Item.of(`gtceu:${type}_screw`).withChance(0.75)],`gtceu:${type}_bolt`);
     });
 
-    const SEQLRod= ['iron','copper','gold','lead','raw_electrum','tin','bronze','brass','pig_iron'];
-    const SEQDPlates= ['iron','copper','gold','lead','raw_electrum','tin','bronze','brass','pig_iron'];
-    const SEQGear= ['iron','lead','raw_electrum','bronze','pig_iron'];
-    const SEQSmGear= ['iron','raw_electrum','bronze','pig_iron'];
-    const SEQRotor= ['iron','copper','lead','raw_electrum','bronze','pig_iron'];
-    const SEQSpring= ['iron','copper','gold','lead','tin'];
-    const SEQSmSpring= ['iron','copper','gold','lead','tin'];
-    const SEQWire= ['iron','copper','gold','lead','tin'];
-    const SEQFiWire= ['copper','gold','lead','tin','zinc'];
+    const SEQLRod = ['iron','copper','gold','lead','raw_electrum','tin','bronze','brass','pig_iron'];
+    const SEQDPlates = ['iron','copper','gold','lead','raw_electrum','tin','bronze','brass','pig_iron'];
+    const SEQGear = ['iron','lead','raw_electrum','bronze','pig_iron'];
+    const SEQSmGear = ['iron','raw_electrum','bronze','pig_iron'];
+    const SEQRotor = ['iron','copper','lead','raw_electrum','bronze','pig_iron'];
+    const SEQSpring = ['iron','copper','gold','lead','tin'];
+    const SEQSmSpring = ['iron','copper','gold','lead','tin'];
+    const SEQWire = ['iron','copper','gold','lead','tin'];
+    const SEQFiWire = ['copper','gold','lead','tin','zinc'];
+    const SEQCable = ['iron','copper','gold','lead','tin'];
 
 	//L.Rod deploying
         SEQLRod.forEach(type => {
 	    let inter = 'kubejs:incomplete_long_metal_rod' 
 	    event.recipes.create.sequenced_assembly([
-	    	Item.of(`gtceu:long_${type}_rod`).withChance(100.0),
+	    	Item.of(`gtceu:long_${type}_rod`).withChance(1),
 	    ], `gtceu:${type}_rod`, [ 
 	    	event.recipes.createDeploying(inter, [inter, `gtceu:${type}_rod`]),
 	    	event.recipes.createPressing(inter, inter),
@@ -439,7 +440,7 @@ ServerEvents.recipes(event => {
         SEQDPlates.forEach(type => {
 	    let inter = 'kubejs:incomplete_double_metal_plate'
 	    event.recipes.create.sequenced_assembly([
-	    	Item.of(`gtceu:double_${type}_plate`).withChance(100.0),
+	    	Item.of(`gtceu:double_${type}_plate`).withChance(1),
 	    ], `gtceu:${type}_plate`, [ 
 	    	event.recipes.createDeploying(inter, [inter, `gtceu:${type}_plate`]),
 	    	event.recipes.createPressing(inter, inter),
@@ -450,7 +451,7 @@ ServerEvents.recipes(event => {
         SEQGear.forEach(type => {
 	    let inter = 'kubejs:incomplete_metal_gear'
 	    event.recipes.create.sequenced_assembly([
-	    	Item.of(`gtceu:${type}_gear`).withChance(100.0),
+	    	Item.of(`gtceu:${type}_gear`).withChance(1),
 	    ], `gtceu:${type}_plate`, [ 
             event.recipes.createDeploying(inter, [inter, `gtceu:${type}_rod`]),
             event.recipes.createPressing(inter, inter),
@@ -462,7 +463,7 @@ ServerEvents.recipes(event => {
         SEQSmGear.forEach(type => {
         let inter = 'kubejs:incomplete_small_metal_gear'
         event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:small_${type}_gear`).withChance(100.0),
+            Item.of(`gtceu:small_${type}_gear`).withChance(1),
         ], `gtceu:${type}_plate`, [ 
             event.recipes.createDeploying(inter, [inter, `gtceu:${type}_rod`]),
             event.recipes.createDeploying(inter, [inter, `gtceu:${type}_plate`]),
@@ -473,7 +474,7 @@ ServerEvents.recipes(event => {
         SEQRotor.forEach(type => {
         let inter = 'kubejs:incomplete_metal_rotor'
         event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:${type}_rotor`).withChance(100.0),
+            Item.of(`gtceu:${type}_rotor`).withChance(1),
         ], `gtceu:${type}_ring`, [ 
             event.recipes.createDeploying(inter, [inter, `gtceu:${type}_plate`]),
             event.recipes.createPressing(inter, inter),
@@ -485,7 +486,7 @@ ServerEvents.recipes(event => {
         SEQSpring.forEach(type => {
         let inter = 'kubejs:incomplete_metal_spring'
         event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:${type}_spring`).withChance(100.0),
+            Item.of(`gtceu:${type}_spring`).withChance(1),
         ], `gtceu:long_${type}_rod`, [ 
             event.recipes.createPressing(inter, inter),
         ]).transitionalItem(inter).loops(4)
@@ -495,7 +496,7 @@ ServerEvents.recipes(event => {
         SEQSmSpring.forEach(type => {
         let inter = 'kubejs:incomplete_small_metal_spring'
         event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:small_${type}_spring`).withChance(100.0),
+            Item.of(`gtceu:small_${type}_spring`).withChance(1),
         ], `gtceu:long_${type}_rod`, [ 
             event.recipes.createPressing(inter, inter),
             event.recipes.createCutting(inter, inter),
@@ -506,7 +507,7 @@ ServerEvents.recipes(event => {
         SEQWire.forEach(type => {
         let inter = 'kubejs:incomplete_metal_single_wire'
         event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:${type}_single_wire`).withChance(100.0),
+            Item.of(`gtceu:${type}_single_wire`).withChance(1),
         ], `gtceu:${type}_plate`, [ 
             event.recipes.createDeploying(inter, [inter, '#forge:tools/wire_cutters']),
             event.recipes.createCutting(inter, inter),
@@ -517,11 +518,44 @@ ServerEvents.recipes(event => {
         SEQFiWire.forEach(type => {
         let inter = 'kubejs:incomplete_metal_fine_wire'
         event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:fine_${type}_wire`).withChance(100.0),
+            Item.of(`gtceu:fine_${type}_wire`).withChance(1),
         ], `gtceu:${type}_foil`, [ 
             event.recipes.createDeploying(inter, [inter, '#forge:tools/wire_cutters']),
             event.recipes.createCutting(inter, inter),
         ]).transitionalItem(inter).loops(2)
+        });
+    
+    //Cable Single deploying
+        SEQCable.forEach(type => {
+        let inter = 'kubejs:incomplete_metal_cable'
+        event.recipes.create.sequenced_assembly([
+            Item.of(`gtceu:${type}_single_cable`).withChance(1),
+        ], `gtceu:${type}_single_wire`, [
+            event.recipes.createFilling(inter, [Fluid.of('gtceu:rubber', 72), inter]),
+            event.recipes.createPressing(inter, inter),
+        ]).transitionalItem(inter).loops(2)
+        });
+    
+    //Cable Double deploying
+        SEQCable.forEach(type => {
+        let inter = 'kubejs:incomplete_metal_cable'
+        event.recipes.create.sequenced_assembly([
+            Item.of(`gtceu:${type}_double_cable`).withChance(1),
+        ], `gtceu:${type}_double_wire`, [
+            event.recipes.createFilling(inter, [Fluid.of('gtceu:rubber', 72), inter]),
+            event.recipes.createPressing(inter, inter),
+        ]).transitionalItem(inter).loops(4)
+        });
+    
+    //Cable Double deploying
+        SEQCable.forEach(type => {
+        let inter = 'kubejs:incomplete_metal_cable'
+        event.recipes.create.sequenced_assembly([
+            Item.of(`gtceu:${type}_quadruple_cable`).withChance(1),
+        ], `gtceu:${type}_quadruple_wire`, [
+            event.recipes.createFilling(inter, [Fluid.of('gtceu:rubber', 72), inter]),
+            event.recipes.createPressing(inter, inter),
+        ]).transitionalItem(inter).loops(8)
         });
 
         event.recipes.create.sequenced_assembly([
