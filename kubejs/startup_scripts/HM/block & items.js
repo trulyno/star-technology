@@ -62,6 +62,8 @@ StartupEvents.registry('item', event => {
 			.displayName(`Incomplete 1x ${type.replace(/_/, ' ')} Wire`);
 		event.create(`incomplete_${type.toLowerCase()}_fine_wire`)
 			.displayName(`Incomplete ${type.replace(/_/, ' ')} Fine Wire`);
+		event.create(`incomplete_${type.toLowerCase()}_cable`)
+			.displayName(`Incomplete ${type.replace(/_/, ' ')} Cable`);
     });
 });
 
