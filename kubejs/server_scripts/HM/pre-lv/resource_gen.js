@@ -11,6 +11,34 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 	}
 });
 
+BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
+	if (event.player.isCrouching() && item.id !== 'gtceu:basic_scavenging_rod') {
+		if (Math.random() < 0.003) {
+			event.block.popItemFromFace(Item.of('minecraft:cookie'), 'up');
+		}
+		if (Math.random() < 0.50) {
+			event.block.popItemFromFace(Item.of('kubejs:flint_shard'), 'up');
+		}
+		if (Math.random() < 0.50) {
+			event.block.popItemFromFace(Item.of('kubejs:flint_shard'), 'up');
+		}
+	}
+});
+
+BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
+	if (event.player.isCrouching() && item.id !== 'gtceu:scavenging_rod') {
+		if (Math.random() < 0.004) {
+			event.block.popItemFromFace(Item.of('minecraft:cookie'), 'up');
+		}
+		if (Math.random() < 0.40) {
+			event.block.popItemFromFace(Item.of('kubejs:flint_shard'), 'up');
+		}
+		if (Math.random() < 0.40) {
+			event.block.popItemFromFace(Item.of('minecraft:flint'), 'up');
+		}
+	}
+});
+
 // In-world crafting for Crucible and Crafting Table
 
 const crucible_stages = [

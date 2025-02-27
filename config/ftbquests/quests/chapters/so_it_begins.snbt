@@ -170,7 +170,7 @@
 				type: "item"
 			}]
 			title: "Man's First Hydration"
-			x: -1.0d
+			x: 0.5d
 			y: -1.5d
 		}
 		{
@@ -254,8 +254,8 @@
 				item: "kubejs:water_bowl"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -1.5d
+			x: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1810B4921EB6640E"]
@@ -552,7 +552,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.0d
 			y: 3.0d
 		}
 		{
@@ -563,7 +563,7 @@
 				item: "exnihilosequentia:jungle_barrel"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.5d
 			y: 3.0d
 		}
 		{
@@ -634,7 +634,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -858,6 +858,7 @@
 				"2F9B48D51C21F896"
 				"1ABF4784F033D41A"
 				"4C8102F3CE4F6612"
+				"54AAB5395E468898"
 			]
 			hide_dependent_lines: true
 			icon: {
@@ -885,14 +886,15 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.25d
-			y: 0.75d
+			x: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
 				"7D83A21F7DB27B47"
 				"4F550705B0576891"
 			]
+			hide_dependent_lines: true
 			id: "4917BE27976C3A9A"
 			tasks: [{
 				id: "5A864DDFE3F678F1"
@@ -1885,7 +1887,10 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["31E3FA832F85F262"]
+			dependencies: [
+				"31E3FA832F85F262"
+				"4917BE27976C3A9A"
+			]
 			id: "50F2743FA699173A"
 			tasks: [{
 				id: "72C63392D81ADC2F"
@@ -1932,17 +1937,6 @@
 			}]
 			x: -2.5d
 			y: 16.5d
-		}
-		{
-			dependencies: ["50F2743FA699173A"]
-			id: "6EE492CCFB7AD221"
-			tasks: [{
-				id: "72AA0BA91535D3E1"
-				item: "gtceu:charcoal_pile_igniter"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -1998,8 +1992,8 @@
 				type: "item"
 			}]
 			title: "Cheaper Coarse Dirt"
-			x: 2.75d
-			y: 0.75d
+			x: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -2034,12 +2028,38 @@
 			id: "24AB0C2B43C66BD3"
 			optional: true
 			tasks: [{
-				id: "29ADFCEB958E3910"
-				title: "Scavenging Rod"
-				type: "checkmark"
+				id: "7830D9C3BA4CA396"
+				item: {
+					Count: 1
+					id: "kubejs:scavenging_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
 			}]
 			x: -7.0d
 			y: 15.0d
+		}
+		{
+			dependencies: ["3DCE9199510A9223"]
+			description: ["With this you can scavange for Flint easier"]
+			hide_dependency_lines: true
+			id: "0B617DF410FA70C2"
+			optional: true
+			tasks: [{
+				id: "0F1213DC07CB4666"
+				item: {
+					Count: 1
+					id: "kubejs:basic_scavenging_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 13.5d
 		}
 	]
 	title: "So It Begins"

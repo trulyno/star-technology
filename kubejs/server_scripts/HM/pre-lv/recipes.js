@@ -100,6 +100,31 @@ ServerEvents.recipes(event => {
         Q: 'gtceu:quartzite_gem'
     });
 
+    event.shaped(Item.of('kubejs:basic_scavenging_rod'), [
+        'SPP',
+        'RLP',
+        'TRS'
+    ], {
+        S: '#forge:string',
+        P: 'minecraft:iron_nugget',
+        T: '#forge:rods/wood',
+        R: 'gtceu:sticky_resin',
+        L: 'gtceu:wood_plate'
+    });
+
+    event.shaped(Item.of('kubejs:scavenging_rod'), [
+        'SPP',
+        'RLP',
+        'TRH'
+    ], {
+        S: '#forge:tools/screwdrivers',
+        H: '#forge:tools/hammers',
+        P: 'gtceu:iron_rod',
+        T: '#forge:rods/wood',
+        R: 'gtceu:iron_screw',
+        L: 'gtceu:iron_plate'
+    });
+
     //Kiln
     [{fuel: 'coals', burnMultiplier: .5}, {fuel: 'logs', burnMultiplier: 1.2}].forEach( coal => {
         event.recipes.gtceu.kiln(`brick_${coal.fuel}`)
@@ -407,11 +432,11 @@ ServerEvents.recipes(event => {
         event.recipes.create.pressing([Item.of(`gtceu:${type}_plate`).withChance(0.5)],`minecraft:${type}_ingot`);
     });
     MetalInc.forEach(type => {
-        event.recipes.create.cutting([`gtceu:${type}_rod`,Item.of(`gtceu:${type}_rod`).withChance(0.9)],`gtceu:${type}_plate`);
-        event.recipes.create.pressing([Item.of(`gtceu:${type}_ring`).withChance(0.95)],`gtceu:${type}_rod`);
-        event.recipes.create.pressing([Item.of(`gtceu:${type}_foil`).withChance(0.95)],`gtceu:${type}_plate`);
-        event.recipes.create.cutting([`gtceu:${type}_bolt`,Item.of(`gtceu:${type}_bolt`).withChance(0.9)],`gtceu:${type}_rod`);
-        event.recipes.create.pressing([Item.of(`gtceu:${type}_screw`).withChance(0.75)],`gtceu:${type}_bolt`);
+        event.recipes.create.cutting([`gtceu:${type}_rod`,Item.of(`gtceu:${type}_rod`).withChance(1)],`gtceu:${type}_plate`);
+        event.recipes.create.pressing([Item.of(`gtceu:${type}_ring`).withChance(1)],`gtceu:${type}_rod`);
+        event.recipes.create.pressing([Item.of(`gtceu:${type}_foil`).withChance(1)],`gtceu:${type}_plate`);
+        event.recipes.create.cutting([`gtceu:${type}_bolt`,Item.of(`gtceu:${type}_bolt`).withChance(1)],`gtceu:${type}_rod`);
+        event.recipes.create.pressing([Item.of(`gtceu:${type}_screw`).withChance(1)],`gtceu:${type}_bolt`);
     });
 
     const SEQLRod = ['iron','copper','gold','lead','raw_electrum','tin','bronze','brass','pig_iron'];
