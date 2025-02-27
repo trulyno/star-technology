@@ -414,13 +414,18 @@ ServerEvents.recipes(event => {
         event.recipes.create.pressing([Item.of(`gtceu:${type}_screw`).withChance(0.75)],`gtceu:${type}_bolt`);
     });
 
-    // const CreateSeqParts = ['kubejs:incomplete_long_metal_rod' ,'kubejs:incomplete_double_metal_plate', 'kubejs:incomplete_metal_gear', 'kubejs:incomplete_small_metal_gear', 'kubejs:incomplete_metal_rotor', 'kubejs:incomplete_metal_spring', 'kubejs:incomplete_metal_small_spring', 'kubejs:incomplete_metal_wire', 'kubejs:incomplete_metal_fine_wire'];
-    // const GtceuParts = [`gtceu:${type}_rod`, `gtceu:${type}_plate`,];
-    // const GtceuSeqOutput = [`gtceu:long_${type}_rod`];
-    // const Deploying = [{Metals: MetalInc}, {inter: CreateSeqParts}, {result: GtceuSeqOutput}, {input: GtceuParts}];
+    const SEQLRod= ['iron','copper','gold','lead','raw_electrum','tin','bronze','brass','pig_iron'];
+    const SEQDPlates= ['iron','copper','gold','lead','raw_electrum','tin','bronze','brass','pig_iron'];
+    const SEQGear= ['iron','lead','raw_electrum','bronze','pig_iron'];
+    const SEQSmGear= ['iron','raw_electrum','bronze','pig_iron'];
+    const SEQRotor= ['iron','copper','lead','raw_electrum','bronze','pig_iron'];
+    const SEQSpring= ['iron','copper','gold','lead','tin'];
+    const SEQSmSpring= ['iron','copper','gold','lead','tin'];
+    const SEQWire= ['iron','copper','gold','lead','tin'];
+    const SEQFiWire= ['copper','gold','lead','tin','zinc'];
 
 	//L.Rod deploying
-        MetalInc.forEach(type => {
+        SEQLRod.forEach(type => {
 	    let inter = 'kubejs:incomplete_long_metal_rod' 
 	    event.recipes.create.sequenced_assembly([
 	    	Item.of(`gtceu:long_${type}_rod`).withChance(100.0),
@@ -431,7 +436,7 @@ ServerEvents.recipes(event => {
         });
     
 	//D.Plate deploying
-        MetalInc.forEach(type => {
+        SEQDPlates.forEach(type => {
 	    let inter = 'kubejs:incomplete_double_metal_plate'
 	    event.recipes.create.sequenced_assembly([
 	    	Item.of(`gtceu:double_${type}_plate`).withChance(100.0),
@@ -442,7 +447,7 @@ ServerEvents.recipes(event => {
         });
     
 	//Gear deploying
-        MetalInc.forEach(type => {
+        SEQGear.forEach(type => {
 	    let inter = 'kubejs:incomplete_metal_gear'
 	    event.recipes.create.sequenced_assembly([
 	    	Item.of(`gtceu:${type}_gear`).withChance(100.0),
@@ -453,8 +458,8 @@ ServerEvents.recipes(event => {
 	    ]).transitionalItem(inter).loops(4)
         });
     
-	//S.Gear deploying
-        MetalInc.forEach(type => {
+	//SmGear deploying
+        SEQSmGear.forEach(type => {
         let inter = 'kubejs:incomplete_small_metal_gear'
         event.recipes.create.sequenced_assembly([
             Item.of(`gtceu:small_${type}_gear`).withChance(100.0),
@@ -465,7 +470,7 @@ ServerEvents.recipes(event => {
         });
     
 	//Rotor deploying
-        MetalInc.forEach(type => {
+        SEQRotor.forEach(type => {
         let inter = 'kubejs:incomplete_metal_rotor'
         event.recipes.create.sequenced_assembly([
             Item.of(`gtceu:${type}_rotor`).withChance(100.0),
@@ -473,11 +478,11 @@ ServerEvents.recipes(event => {
             event.recipes.createDeploying(inter, [inter, `gtceu:${type}_plate`]),
             event.recipes.createPressing(inter, inter),
             event.recipes.createDeploying(inter, [inter, `gtceu:${type}_screw`]),
-        ]).transitionalItem(inter).loops(3)
+        ]).transitionalItem(inter).loops(4)
         });
     
 	//Spring deploying
-        MetalInc.forEach(type => {
+        SEQSpring.forEach(type => {
         let inter = 'kubejs:incomplete_metal_spring'
         event.recipes.create.sequenced_assembly([
             Item.of(`gtceu:${type}_spring`).withChance(100.0),
@@ -486,8 +491,8 @@ ServerEvents.recipes(event => {
         ]).transitionalItem(inter).loops(4)
         });
     
-	//S.Spring deploying
-        MetalInc.forEach(type => {
+	//SmSpring deploying
+        SEQSmSpring.forEach(type => {
         let inter = 'kubejs:incomplete_small_metal_spring'
         event.recipes.create.sequenced_assembly([
             Item.of(`gtceu:small_${type}_spring`).withChance(100.0),
@@ -498,7 +503,7 @@ ServerEvents.recipes(event => {
         });
     
 	//Wire deploying
-        MetalInc.forEach(type => {
+        SEQWire.forEach(type => {
         let inter = 'kubejs:incomplete_metal_single_wire'
         event.recipes.create.sequenced_assembly([
             Item.of(`gtceu:${type}_single_wire`).withChance(100.0),
@@ -509,7 +514,7 @@ ServerEvents.recipes(event => {
         });
     
 	//F.Wire deploying
-        MetalInc.forEach(type => {
+        SEQFiWire.forEach(type => {
         let inter = 'kubejs:incomplete_metal_fine_wire'
         event.recipes.create.sequenced_assembly([
             Item.of(`gtceu:fine_${type}_wire`).withChance(100.0),
@@ -518,6 +523,24 @@ ServerEvents.recipes(event => {
             event.recipes.createCutting(inter, inter),
         ]).transitionalItem(inter).loops(2)
         });
+
+        event.recipes.create.sequenced_assembly([
+            Item.of('create:precision_mechanism').withChance(130.0), // this is the item that will appear in JEI as the result
+            Item.of('create:golden_sheet').withChance(8.0), // the rest of these items will be part of the scrap
+            Item.of('create:andesite_alloy').withChance(8.0),
+            Item.of('create:cogwheel').withChance(5.0),
+            Item.of('create:shaft').withChance(2.0),
+            Item.of('create:crushed_gold_ore').withChance(2.0),
+            Item.of('2x minecraft:gold_nugget').withChance(2.0),
+            'minecraft:iron_ingot',
+            'minecraft:clock'
+        ], 'create:golden_sheet', [ // 'create:golden_sheet' is the input
+            // the transitional item set by `transitionalItem('create:incomplete_large_cogwheel')` is the item used during the intermediate stages of the assembly
+            event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:cogwheel']),
+            // like a normal recipe function, is used as a sequence step in this array. Input and output have the transitional item
+            event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:large_cogwheel']),
+            event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'minecraft:iron_nugget'])
+        ]).transitionalItem('create:incomplete_precision_mechanism').loops(5) //
 
     //Create Recipes
     event.shapeless(Item.of('gtceu:wood_plate', 2), [
