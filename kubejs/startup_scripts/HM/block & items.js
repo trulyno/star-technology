@@ -64,7 +64,11 @@ StartupEvents.registry('item', event => {
 			.displayName(`Incomplete ${type.replace(/_/, ' ')} Fine Wire`);
 		event.create(`incomplete_${type.toLowerCase()}_cable`)
 			.displayName(`Incomplete ${type.replace(/_/, ' ')} Cable`);
-    });
+		event.create(`incomplete_${type.toLowerCase()}_fluid_pipe`)
+		.displayName(`Incomplete ${type.replace(/_/, ' ')} Fluid Pipe`);
+		event.create(`incomplete_${type.toLowerCase()}_item_pipe`)
+		.displayName(`Incomplete ${type.replace(/_/, ' ')} Item Pipe`);
+	});
 
 	event.create('basic_scavenging_rod')
 		.displayName('Basic Scavenging Rod')
