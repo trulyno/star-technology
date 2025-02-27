@@ -498,8 +498,8 @@ ServerEvents.recipes(event => {
         event.recipes.create.sequenced_assembly([
             Item.of(`gtceu:small_${type}_spring`).withChance(100.0),
         ], `gtceu:long_${type}_rod`, [ 
-            event.recipes.createCutting(inter, inter),
             event.recipes.createPressing(inter, inter),
+            event.recipes.createCutting(inter, inter),
         ]).transitionalItem(inter).loops(4)
         });
     
