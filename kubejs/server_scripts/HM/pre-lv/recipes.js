@@ -422,9 +422,9 @@ ServerEvents.recipes(event => {
     //Metalurgy Rework via Create
     event.remove({id: /^create:pressing.*_ingot/})
     event.remove({output: /^create_new_age.*wire/})
-    const GTMetals = ['lead','raw_electrum','tin','zinc','bronze','brass','nickel','pig_iron']
+    const GTMetals = ['lead','raw_electrum','tin','zinc','bronze','brass','nickel','pig_iron','tin_alloy','nickle','potin','cupronickle']
     const MinecraftMetals = ['iron','copper','gold']
-    const MetalInc = ['iron','copper','gold','lead','raw_electrum','tin','bronze','brass','pig_iron']
+    const MetalInc = ['iron','copper','gold','lead','raw_electrum','tin','bronze','brass','pig_iron','tin_alloy','nickle','potin','cupronickle']
     GTMetals.forEach(type => {
         event.recipes.create.pressing([Item.of(`gtceu:${type}_plate`).withChance(0.5)],`gtceu:${type}_ingot`);
     });
