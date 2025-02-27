@@ -43,6 +43,26 @@ StartupEvents.registry('item', event => {
             .texture(`kubejs:item/hm/pre-lv/${type.toLowerCase()}_crushed_ore_chunk`);
     });
 
+	['Metal'].forEach(type => {
+        event.create(`incomplete_long_${type.toLowerCase()}_rod`)
+            .displayName(`Incomplete Long ${type.replace(/_/, ' ')} Rod`);
+		event.create(`incomplete_double_${type.toLowerCase()}_plate`)
+            .displayName(`Incomplete Double ${type.replace(/_/, ' ')} Plate`);
+		event.create(`incomplete_${type.toLowerCase()}_gear`)
+			.displayName(`Incomplete ${type.replace(/_/, ' ')} Gear`);
+		event.create(`incomplete_small_${type.toLowerCase()}_gear`)
+			.displayName(`Incomplete Small ${type.replace(/_/, ' ')} Gear`);
+		event.create(`incomplete_${type.toLowerCase()}_rotor`)
+			.displayName(`Incomplete ${type.replace(/_/, ' ')} Rotor`);
+		event.create(`incomplete_${type.toLowerCase()}_spring`)
+			.displayName(`Incomplete ${type.replace(/_/, ' ')} Spring`);
+		event.create(`incomplete_small_${type.toLowerCase()}_spring`)
+			.displayName(`Incomplete Small ${type.replace(/_/, ' ')} Spring`);
+		event.create(`incomplete_${type.toLowerCase()}_single_wire`)
+			.displayName(`Incomplete 1x ${type.replace(/_/, ' ')} Wire`);
+		event.create(`incomplete_${type.toLowerCase()}_fine_wire`)
+			.displayName(`Incomplete ${type.replace(/_/, ' ')} Fine Wire`);
+    });
 });
 
 StartupEvents.registry('block', event => {
