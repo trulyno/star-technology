@@ -140,7 +140,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.extractor('echo_fluid')
         .itemInputs('minecraft:echo_shard')
         .outputFluids('gtceu:echo_r 144')
-        .duration(12000)
+        .duration(8000)
         .EUt(GTValues.VHA[GTValues.LuV]);
 
     event.recipes.gtceu.fluid_solidifier('raw_void_ingot')
@@ -156,7 +156,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:raw_void_ingot')
         .itemOutputs('gtceu:hot_void_ingot')
         .blastFurnaceTemp(10799)
-        .duration(16000)
+        .duration(12000)
         .EUt(GTValues.VHA[GTValues.LuV]);
 
     //Material Adjustments

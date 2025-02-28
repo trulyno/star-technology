@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:lubricant 1000', 'gtceu:pcb_coolant 16000')
         .itemOutputs('minecraft:echo_shard')
         .outputFluids('gtceu:hot_pcb_coolant 19200')
-        .duration(160)
+        .duration(12000)
         .EUt(65536);
 
     event.recipes.gtceu.assembly_line('vibration_laser_engraver')

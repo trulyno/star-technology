@@ -532,6 +532,14 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .EUt(GTValues.V[GTValues.UHV]);
 
+    event.remove({id: 'gtceu:macerator/macerate_naquadah_refined_ore_to_dust'});
+    event.recipes.gtceu.macerator('macerate_refined_naquadah_ore_to_dust')
+        .itemInputs('gtceu:refined_naquadah_ore')
+        .itemOutputs('gtceu:naquadah_dust')
+        .chancedOutput('gtceu:enriched_naquadah_dust', 350, 125)
+        .duration(400)
+        .EUt(2);
+
     //rutile fix
     event.remove({ id: 'gtceu:electric_blast_furnace/rutile_from_ilmenite' })
     event.recipes.gtceu.electric_blast_furnace('electric_blast_furnace/rutile_from_ilmenite')
