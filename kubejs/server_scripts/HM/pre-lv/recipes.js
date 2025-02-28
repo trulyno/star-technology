@@ -100,6 +100,31 @@ ServerEvents.recipes(event => {
         Q: 'gtceu:quartzite_gem'
     });
 
+    event.shaped(Item.of('kubejs:basic_scavenging_rod'), [
+        'SPP',
+        'RLP',
+        'TRS'
+    ], {
+        S: '#forge:string',
+        P: 'minecraft:iron_nugget',
+        T: '#forge:rods/wood',
+        R: 'gtceu:sticky_resin',
+        L: 'gtceu:wood_plate'
+    });
+
+    event.shaped(Item.of('kubejs:scavenging_rod'), [
+        'SPP',
+        'RLP',
+        'TRH'
+    ], {
+        S: '#forge:tools/screwdrivers',
+        H: '#forge:tools/hammers',
+        P: 'gtceu:iron_rod',
+        T: '#forge:rods/wood',
+        R: 'gtceu:iron_screw',
+        L: 'gtceu:iron_plate'
+    });
+
     //Kiln
     [{fuel: 'coals', burnMultiplier: .5}, {fuel: 'logs', burnMultiplier: 1.2}].forEach( coal => {
         event.recipes.gtceu.kiln(`brick_${coal.fuel}`)
@@ -397,9 +422,9 @@ ServerEvents.recipes(event => {
     //Metalurgy Rework via Create
     event.remove({id: /^create:pressing.*_ingot/})
     event.remove({output: /^create_new_age.*wire/})
-    const GTMetals = ['lead','raw_electrum','tin','zinc','bronze','brass','nickel','pig_iron']
+    const GTMetals = ['lead','raw_electrum','tin','zinc','bronze','brass','nickel','pig_iron','tin_alloy','nickle','potin','cupronickle']
     const MinecraftMetals = ['iron','copper','gold']
-    const MetalInc = ['iron','copper','gold','lead','raw_electrum','tin','bronze','brass','pig_iron']
+    const MetalInc = ['iron','copper','gold','lead','raw_electrum','tin','bronze','brass','pig_iron','tin_alloy','nickle','potin','cupronickle']
     GTMetals.forEach(type => {
         event.recipes.create.pressing([Item.of(`gtceu:${type}_plate`).withChance(0.5)],`gtceu:${type}_ingot`);
     });
@@ -423,7 +448,9 @@ ServerEvents.recipes(event => {
     const SEQSmSpring = ['iron','copper','gold','lead','tin'];
     const SEQWire = ['iron','copper','gold','lead','tin'];
     const SEQFiWire = ['copper','gold','lead','tin','zinc'];
-    const SEQCable = ['iron','copper','gold','lead','tin'];
+    const SEQCable = ['lead','red_alloy', 'tin'];
+    const SEQFluidPipe = ['copper', 'steel', 'lead', 'bronze', 'tin_alloy', 'potin'];
+    const SEQItemPipe = ['tin', 'brass', 'cupronickel', 'nickel'];
 
 	//L.Rod deploying
         SEQLRod.forEach(type => {
@@ -524,57 +551,68 @@ ServerEvents.recipes(event => {
             event.recipes.createCutting(inter, inter),
         ]).transitionalItem(inter).loops(2)
         });
-    
-    //Cable Single deploying
-        SEQCable.forEach(type => {
-        let inter = 'kubejs:incomplete_metal_cable'
-        event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:${type}_single_cable`).withChance(1),
-        ], `gtceu:${type}_single_wire`, [
-            event.recipes.createFilling(inter, [Fluid.of('gtceu:rubber', 72), inter]),
-            event.recipes.createPressing(inter, inter),
-        ]).transitionalItem(inter).loops(2)
+
+    //Cable Deploying
+        function SEQCableAssembly(Metal, Multi, Loops){
+                let inter = 'kubejs:incomplete_metal_cable'
+                event.recipes.create.sequenced_assembly([
+                    Item.of(`gtceu:${Metal}_${Multi}_cable`).withChance(1),
+                ], `gtceu:${Metal}_${Multi}_wire`, [
+                    event.recipes.createFilling(inter, [Fluid.of('gtceu:rubber', 72), inter]),
+                    event.recipes.createPressing(inter, inter),
+                ]).transitionalItem(inter).loops(Loops);
+        };
+
+        SEQCable.forEach(element => {
+            SEQCableAssembly(element, 'single', 2)
+            SEQCableAssembly(element, 'double', 4)
+            SEQCableAssembly(element, 'quadruple', 8)
         });
     
-    //Cable Double deploying
-        SEQCable.forEach(type => {
-        let inter = 'kubejs:incomplete_metal_cable'
-        event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:${type}_double_cable`).withChance(1),
-        ], `gtceu:${type}_double_wire`, [
-            event.recipes.createFilling(inter, [Fluid.of('gtceu:rubber', 72), inter]),
-            event.recipes.createPressing(inter, inter),
-        ]).transitionalItem(inter).loops(4)
-        });
-    
-    //Cable Double deploying
-        SEQCable.forEach(type => {
-        let inter = 'kubejs:incomplete_metal_cable'
-        event.recipes.create.sequenced_assembly([
-            Item.of(`gtceu:${type}_quadruple_cable`).withChance(1),
-        ], `gtceu:${type}_quadruple_wire`, [
-            event.recipes.createFilling(inter, [Fluid.of('gtceu:rubber', 72), inter]),
-            event.recipes.createPressing(inter, inter),
-        ]).transitionalItem(inter).loops(8)
+    //Pipe Deploying
+        function SEQFluidPipeAssembly(Metal, Multi, Loops){
+                let inter = 'kubejs:incomplete_metal_fluid_pipe'
+                event.recipes.create.sequenced_assembly([
+                    Item.of(`gtceu:${Metal}_${Multi}_fluid_pipe`).withChance(1),
+                ], `gtceu:${Metal}_ring`, [
+                    event.recipes.createDeploying(inter, [inter,`gtceu:${Metal}_plate`]),
+                    event.recipes.createPressing(inter, inter),
+                ]).transitionalItem(inter).loops(Loops);
+    };
+
+        SEQFluidPipe.forEach(type => {
+            let inter = 'kubejs:incomplete_metal_fluid_pipe'
+            event.recipes.create.sequenced_assembly([
+                Item.of(`gtceu:${type}_tiny_fluid_pipe`).withChance(1),
+            ], `gtceu:${type}_ring`, [
+                event.recipes.createDeploying(inter, [inter, `gtceu:${type}_plate`]),
+                event.recipes.createCutting(inter, inter),
+                event.recipes.createPressing(inter, inter),
+            ]).transitionalItem(inter).loops(1);
+
+            SEQFluidPipeAssembly(type, 'small', 1)
+            SEQFluidPipeAssembly(type, 'normal', 3)
+            SEQFluidPipeAssembly(type, 'large', 6)
+            SEQFluidPipeAssembly(type, 'huge', 12)
         });
 
-        event.recipes.create.sequenced_assembly([
-            Item.of('create:precision_mechanism').withChance(130.0), // this is the item that will appear in JEI as the result
-            Item.of('create:golden_sheet').withChance(8.0), // the rest of these items will be part of the scrap
-            Item.of('create:andesite_alloy').withChance(8.0),
-            Item.of('create:cogwheel').withChance(5.0),
-            Item.of('create:shaft').withChance(2.0),
-            Item.of('create:crushed_gold_ore').withChance(2.0),
-            Item.of('2x minecraft:gold_nugget').withChance(2.0),
-            'minecraft:iron_ingot',
-            'minecraft:clock'
-        ], 'create:golden_sheet', [ // 'create:golden_sheet' is the input
-            // the transitional item set by `transitionalItem('create:incomplete_large_cogwheel')` is the item used during the intermediate stages of the assembly
-            event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:cogwheel']),
-            // like a normal recipe function, is used as a sequence step in this array. Input and output have the transitional item
-            event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:large_cogwheel']),
-            event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'minecraft:iron_nugget'])
-        ]).transitionalItem('create:incomplete_precision_mechanism').loops(5) //
+        function SEQItemPipeAssembly(Metal, Multi, Loops){
+                let inter = 'kubejs:incomplete_metal_item_pipe'
+                event.recipes.create.sequenced_assembly([
+                    Item.of(`gtceu:${Metal}_${Multi}_item_pipe`).withChance(1),
+                ], `gtceu:${Metal}_ring`, [
+                    event.recipes.createDeploying(inter, [inter,`gtceu:${Metal}_plate`]),
+                    event.recipes.createPressing(inter, inter),
+                ]).transitionalItem(inter).loops(Loops);
+    };
+        
+        SEQItemPipe.forEach(type => {
+            SEQItemPipeAssembly(type, 'small', 1)
+            SEQItemPipeAssembly(type, 'normal', 3)
+            SEQItemPipeAssembly(type, 'large', 6)
+            SEQItemPipeAssembly(type, 'huge', 12)
+        });
+
 
     //Create Recipes
     event.shapeless(Item.of('gtceu:wood_plate', 2), [
