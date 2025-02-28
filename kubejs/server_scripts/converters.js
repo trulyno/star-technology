@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
                 C: `#gtceu:circuits/${tier}`,
                 S: `gtceu:${tier}_machine_hull`
             });
-        }
+        };
         for (const [tier, superconductor] of Object.entries(PRMconverterMaterials)) {
             event.shaped(Item.of(`gtceu:${tier}_${amps}_energy_converter`), [
                 '   ',
@@ -46,8 +46,8 @@ ServerEvents.recipes(event => {
                 C: `#gtceu:circuits/${tier}`,
                 S: `gtceu:${tier}_machine_hull`
             });
-        }
-    }  
+        };
+    };
 
     // 64A Converter Recipe
     for (const [tier, superconductor] of Object.entries(ADVconverterMaterials)) {

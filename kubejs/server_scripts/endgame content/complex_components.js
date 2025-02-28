@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:liquid_helium 1000')
         .itemOutputs(`kubejs:${comp.Tier}_voltage_coil`)
         .duration(200)
-        .EUt(comp.EUt)
+        .EUt(comp.EUt);
 
     event.recipes.gtceu.component_part_assembly(`${comp.Tier}_computational_matrix`)
         .itemInputs(`gtceu:${comp.PrimaryMaterial}_frame`, `2x #gtceu:circuits/${comp.Tier}`, `4x #gtceu:circuits/${comp.Tier1Under}`, `6x #gtceu:circuits/${comp.Tier2Under}`,
