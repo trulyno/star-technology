@@ -22,7 +22,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('HFFFH', 'FPPPF', ' FFF ', ' MMM ', ' FFF ', 'FEEEF')
             .aisle('FHHHF', 'TFCFT', 'T   T', 'T   T', 'T   T', 'FFFFF')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('F', Predicates.blocks('kubejs:peek_casing')
+            .where('F', Predicates.blocks('kubejs:peek_casing').setMinGlobalLimited(40)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))

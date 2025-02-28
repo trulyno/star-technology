@@ -24,7 +24,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('AFFFA', 'FG GF', 'F   F', ' F F ', ' FFF ', '  F  ', '  B  ')
             .aisle(' AAA ', ' FCF ', ' FFF ', '  F  ', '     ', '     ', '     ')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('F', Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get())
+            .where('F', Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()).setMinGlobalLimited(50)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('M', Predicates.abilities(PartAbility.MUFFLER))

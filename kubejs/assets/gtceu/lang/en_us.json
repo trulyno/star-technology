@@ -496,5 +496,8 @@
     
     "material.gtceu.blitz": "Liquid Blitz",
     "material.gtceu.blizz": "Liquid Blizz",
-    "material.gtceu.basalz": "Liquid Basalz"
+    "material.gtceu.basalz": "Liquid Basalz",
+
+    "gtceu.steam_ore_processing": "Steam Ore Processing",
+    "block.gtceu.steam_ore_factory": "Steam Ore Factory"
 }

@@ -1,5 +1,4 @@
 {
-	autofocus_id: "390CB178FC2D2CCC"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "early_game"
@@ -28,8 +27,8 @@
 				type: "item"
 			}]
 			title: "Tree Chopping"
-			x: -5.5d
-			y: 1.0d
+			x: -7.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -77,8 +76,8 @@
 				type: "item"
 			}]
 			title: "The Great Industrial Revolution"
-			x: 7.0d
-			y: 2.5d
+			x: 8.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -116,7 +115,7 @@
 			]
 			title: "Wormy Business"
 			x: -5.5d
-			y: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7717C0904590E303"]
@@ -141,8 +140,8 @@
 				}
 			]
 			title: "Sieve and Mesh"
-			x: -1.5d
-			y: -1.5d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -177,8 +176,8 @@
 				}
 			]
 			title: "Obtaining Water"
-			x: -3.5d
-			y: 2.5d
+			x: -5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["16A9D8E864A18B9E"]
@@ -206,7 +205,7 @@
 				}
 			]
 			title: "Touching Grass"
-			x: -5.5d
+			x: -4.5d
 			y: -4.0d
 		}
 		{
@@ -235,7 +234,7 @@
 			]
 			title: "Blackstone Sieving"
 			x: -4.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["07CBF849162D7BDF"]
@@ -277,7 +276,7 @@
 			]
 			title: "Hammer Time"
 			x: -4.5d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["07CBF849162D7BDF"]
@@ -302,6 +301,7 @@
 				"2D1184752D7ACA66"
 			]
 			description: ["It is recommended to make more dirt, before using up your entire starter island on these useful resources."]
+			hide_dependent_lines: true
 			icon: "minecraft:mud"
 			id: "3AC92138809F3783"
 			rewards: [{
@@ -341,8 +341,8 @@
 				}
 			]
 			title: "Mud Sieving"
-			x: -1.5d
-			y: 1.0d
+			x: -2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -389,8 +389,8 @@
 				}
 			]
 			title: "Resources for days"
-			x: -1.5d
-			y: -3.0d
+			x: -2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -416,8 +416,8 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -2.0d
+			x: 5.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -434,7 +434,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.25d
 			tasks: [
 				{
 					count: 9L
@@ -461,8 +461,8 @@
 				}
 			]
 			title: "LV Machine Hull"
-			x: 7.0d
-			y: 0.0d
+			x: 8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -483,21 +483,20 @@
 			}]
 			tasks: [
 				{
-					count: 8L
 					id: "5B92704ADA1ED558"
 					item: "gtceu:soul_infused_ingot"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 4L
 					id: "2FAC2F7346D72D55"
 					item: "gtceu:soul_infused_single_wire"
 					type: "item"
 				}
 			]
 			title: "Soul Infused Wires"
-			x: 5.5d
-			y: 4.0d
+			x: 0.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
@@ -514,13 +513,15 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
+			x: -1.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["039D327E919878BF"]
+			dependencies: ["70BE6905EC722DCA"]
 			description: ["Tired of needing two ingots per plate? The Mechanical Press lets you make plates for half the price early on!"]
+			hide_dependent_lines: true
 			id: "3E931D2E92BE9486"
+			optional: true
 			rewards: [{
 				id: "2DAE713111C2C5F7"
 				item: "kubejs:coin"
@@ -532,7 +533,7 @@
 				type: "item"
 			}]
 			title: "Bulk Smash"
-			x: 2.0d
+			x: -1.0d
 			y: -5.5d
 		}
 		{
@@ -566,8 +567,8 @@
 				}
 			]
 			title: "Latex Extraction"
-			x: 5.5d
-			y: -4.5d
+			x: 8.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
@@ -700,12 +701,13 @@
 				}
 			]
 			title: "Tools for days"
-			x: -1.5d
-			y: -5.0d
+			x: -1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
 			description: ["Wrought Iron is made by sizzling iron on a campfire or stove."]
+			hide_dependent_lines: true
 			id: "143BB2B07A083CC0"
 			rewards: [{
 				id: "633BF5B0D7F6A702"
@@ -725,14 +727,16 @@
 				}
 			]
 			title: "Frying Iron"
-			x: 0.0d
-			y: -3.0d
+			x: -1.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["039D327E919878BF"]
+			dependencies: ["70BE6905EC722DCA"]
 			description: ["By heating a mixer, you can start to make your first alloys."]
+			hide_dependent_lines: true
 			icon: "create:mechanical_mixer"
 			id: "3F74E863172E757F"
+			optional: true
 			rewards: [{
 				id: "06C779CFE9AA509E"
 				item: "kubejs:coin"
@@ -767,15 +771,17 @@
 				}
 			]
 			title: "Alloy Mixing"
-			x: 2.0d
-			y: -4.5d
+			x: -1.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
 				"3F74E863172E757F"
 				"3E931D2E92BE9486"
 				"0A41C4FB379984C0"
+				"483B101A7F71E674"
 			]
+			dependency_requirement: "one_completed"
 			description: ["Using a heated Mechanical Mixer, combine some Latex and Sulfur into rubber, and slam them into sheets using a Mechanical Press."]
 			id: "46E41B05B9F6FA82"
 			rewards: [{
@@ -798,8 +804,8 @@
 				}
 			]
 			title: "Cable Insulation"
-			x: 7.0d
-			y: -5.5d
+			x: 8.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["03ACC7D2577A2C66"]
@@ -817,8 +823,8 @@
 				type: "item"
 			}]
 			title: "Barrel Transformations"
-			x: -1.5d
-			y: 2.5d
+			x: -5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -854,8 +860,8 @@
 				}
 			]
 			title: "Primitive Steelworks"
-			x: 0.0d
-			y: 0.0d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["390CB178FC2D2CCC"]
@@ -888,13 +894,14 @@
 				}
 			]
 			title: "Steel"
-			x: 4.0d
-			y: 0.0d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
 				"3F74E863172E757F"
 				"4FC0832128C3109C"
+				"483B101A7F71E674"
 			]
 			dependency_requirement: "one_completed"
 			description: ["The most valuable alloy you can make right now, due to how much you will need for circuits."]
@@ -912,7 +919,7 @@
 			}]
 			title: "Red Alloy"
 			x: 4.0d
-			y: -3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
@@ -936,8 +943,8 @@
 				}
 			]
 			title: "Slime and Resin"
-			x: 1.0d
-			y: 1.0d
+			x: 3.5d
+			y: 4.25d
 		}
 		{
 			dependencies: ["6D5287A0FB892DFF"]
@@ -962,8 +969,8 @@
 				}
 			]
 			title: "Circuit Board"
-			x: 3.0d
-			y: -1.0d
+			x: 3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -984,11 +991,14 @@
 				type: "item"
 			}]
 			title: "Resistors"
-			x: 1.0d
-			y: -2.0d
+			x: 5.0d
+			y: 4.25d
 		}
 		{
-			dependencies: ["3D0F6CA8028C074B"]
+			dependencies: [
+				"3D0F6CA8028C074B"
+				"143BB2B07A083CC0"
+			]
 			description: ["Making glass isn't as simple as smelting sand now. First, you must grind down some Sand and Flint, mix it together into Glass Dust, and then give it a sizzle on a campfire."]
 			icon: "minecraft:glass"
 			id: "7EE1BE4043827F35"
@@ -1020,8 +1030,8 @@
 				}
 			]
 			title: "Glassworks"
-			x: 5.5d
-			y: -3.5d
+			x: 6.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1042,12 +1052,13 @@
 				type: "item"
 			}]
 			title: "Vacuum Tubes"
-			x: 5.5d
-			y: -2.0d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
-			dependencies: ["2D1184752D7ACA66"]
+			dependencies: ["7E72B9CC8631769D"]
 			description: ["By combining Witch Water and Sand together, you can make your first Soul Sand. You can either repeat this, or invest in a Soul Campfire to bulk haunt more Soul Sand."]
+			hide_dependent_lines: true
 			id: "063AF9790DA7ABE0"
 			rewards: [{
 				id: "0932241AC23D4297"
@@ -1060,11 +1071,16 @@
 				type: "item"
 			}]
 			title: "Soul Sand"
-			x: 0.5d
-			y: 4.0d
+			x: -1.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["0E47ACCDF46E6B1F"]
+			dependencies: [
+				"0E47ACCDF46E6B1F"
+				"483B101A7F71E674"
+				"3F74E863172E757F"
+			]
+			dependency_requirement: "one_completed"
 			description: ["If you think the amount of different alloys are bad right now, then just you wait."]
 			id: "37451F8CF7504596"
 			rewards: [{
@@ -1078,8 +1094,8 @@
 				type: "item"
 			}]
 			title: "Invar"
-			x: 5.5d
-			y: 2.5d
+			x: 0.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
@@ -1097,14 +1113,14 @@
 				type: "item"
 			}]
 			title: "Gold"
-			x: 3.0d
-			y: 1.0d
+			x: 0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
-				"124EDCAB18E85B9D"
 				"10126B9D6EC90F59"
 				"64E79272B5003119"
+				"3D0F6CA8028C074B"
 			]
 			description: ["Now that you have LV Machine Hulls, you can construct a new multiblock to process your ores further. This will give you access to important resources, like gold and nickel."]
 			icon: {
@@ -1196,7 +1212,7 @@
 			]
 			title: "Primitive Ore Factory"
 			x: 2.0d
-			y: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["550A27AA2B500111"]
@@ -1221,8 +1237,8 @@
 				}
 			]
 			title: "Infinite Water"
-			x: -2.5d
-			y: -0.5d
+			x: -1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -1247,13 +1263,14 @@
 				}
 			]
 			title: "Making Bonemeal"
-			x: -5.5d
-			y: 2.5d
+			x: -7.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"2D1184752D7ACA66"
 				"634FB21D521253CF"
+				"53A9BA26813A1141"
+				"2D1184752D7ACA66"
 			]
 			description: ["Lava gives you access to cobblestone, which will contain everything you might ever need in life. You could also use it as a fuel, no one here is judging you."]
 			icon: "exnihilosequentia:fired_crucible"
@@ -1277,8 +1294,8 @@
 				}
 			]
 			title: "Making Lava"
-			x: -3.5d
-			y: 4.0d
+			x: -7.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1329,8 +1346,8 @@
 				}
 			]
 			title: "Coke Oven"
-			x: -1.5d
-			y: 4.0d
+			x: -4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
@@ -1406,7 +1423,7 @@
 				}
 			]
 			title: "Large Farm"
-			x: -1.5d
+			x: -3.0d
 			y: 5.5d
 		}
 		{
@@ -1519,8 +1536,8 @@
 				}
 			]
 			title: "Large Barrel"
-			x: -0.5d
-			y: 5.0d
+			x: -5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
@@ -1632,8 +1649,8 @@
 				}
 			]
 			title: "Large Stone Barrel"
-			x: -2.5d
-			y: 5.0d
+			x: -4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6C7DB3F0C3B85B9B"]
@@ -1650,8 +1667,8 @@
 				type: "item"
 			}]
 			title: "Dirt Cheap"
-			x: -4.5d
-			y: -5.0d
+			x: -6.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["039D327E919878BF"]
@@ -1690,8 +1707,8 @@
 				type: "item"
 			}]
 			title: "Stressed Out"
-			x: 0.0d
-			y: -6.0d
+			x: 0.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
@@ -1726,8 +1743,8 @@
 				}
 			]
 			title: "Steam Powered"
-			x: 0.0d
-			y: -7.5d
+			x: 2.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1789,8 +1806,8 @@
 				}
 			]
 			title: "Diesel Engines"
-			x: 1.0d
-			y: -7.0d
+			x: 2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1823,8 +1840,8 @@
 				type: "item"
 			}]
 			title: "Early Fluid Storage"
-			x: 6.5d
-			y: -3.5d
+			x: 4.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -1853,7 +1870,7 @@
 			]
 			title: "Bronze and Brass"
 			x: 2.0d
-			y: -3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1876,8 +1893,8 @@
 				type: "item"
 			}]
 			title: "Easy Cobblestone"
-			x: -5.5d
-			y: 4.0d
+			x: -7.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
@@ -1898,8 +1915,8 @@
 				type: "item"
 			}]
 			title: "Witch Water"
-			x: -3.5d
-			y: 1.0d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
@@ -1916,8 +1933,8 @@
 				type: "item"
 			}]
 			title: "Nickel"
-			x: 4.0d
-			y: 2.5d
+			x: 0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
@@ -1937,7 +1954,7 @@
 				type: "item"
 			}]
 			title: "Basic Cobbleworks"
-			x: -1.0d
+			x: 0.5d
 			y: -7.0d
 		}
 		{
@@ -1961,8 +1978,8 @@
 				type: "checkmark"
 			}]
 			title: "Ready, Set, Go"
-			x: -7.5d
-			y: -1.5d
+			x: -7.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3D0F6CA8028C074B"]
@@ -1993,28 +2010,29 @@
 				}
 			]
 			title: "Mixing Dusts"
-			x: 3.0d
-			y: -3.0d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["124EDCAB18E85B9D"]
+			dependencies: ["64F15C7160BF5CBB"]
 			description: ["A much needed upgrade to steel production. It's faster, and can be automated!"]
 			id: "3FB8E0105D2C20B4"
+			optional: true
 			rewards: [{
 				id: "79C586E97770FB74"
 				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{
 				id: "2AA27D335CF0EDED"
 				item: "gtceu:solid_blast_furnace"
 				type: "item"
 			}]
 			title: "Better Steel"
-			x: 9.0d
-			y: 0.0d
+			x: 7.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7EE1BE4043827F35"]
@@ -2030,11 +2048,11 @@
 				item: "gtceu:tempered_glass"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -2.0d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["2D1184752D7ACA66"]
+			dependencies: ["53A9BA26813A1141"]
 			description: ["The building-block of any primitive machine."]
 			icon: "gtceu:firebrick"
 			id: "64E79272B5003119"
@@ -2076,8 +2094,8 @@
 				}
 			]
 			title: "Firebrick"
-			x: 0.0d
-			y: 2.5d
+			x: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0742EF8F43044102"]
@@ -2091,7 +2109,7 @@
 				type: "checkmark"
 			}]
 			x: -7.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2D1184752D7ACA66"]
@@ -2104,8 +2122,220 @@
 				title: "Go Read About Machine Modes"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: 1.75d
+			x: -6.25d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"37451F8CF7504596"
+				"124EDCAB18E85B9D"
+				"5324A7F20CA973C6"
+			]
+			description: ["A much needed upgrade to ore processing. It's faster, and can be automated!"]
+			id: "7E33792C89BA85E3"
+			optional: true
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "1378C877254F00CC"
+				item: "gtceu:steam_ore_factory"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"5324A7F20CA973C6"
+				"1289465781707205"
+			]
+			hide_dependent_lines: true
+			id: "483B101A7F71E674"
+			optional: true
+			tasks: [{
+				id: "5528994811528206"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1289465781707205"]
+			description: [
+				"There are many machines which can use steam to do your desired task even before you have voltage."
+				""
+				"Steam can be produced by Boilers either &7Low Pressure&r or &8High Pressure&r."
+				"Alternatively you can use thermal boilers which can be made by right clicking a dynamo with a steam pipe."
+			]
+			hide_dependent_lines: true
+			icon: "systeams:boiler_pipe"
+			id: "5324A7F20CA973C6"
+			optional: true
+			tasks: [
+				{
+					id: "076F1181905FB6CA"
+					title: "Steam Power"
+					type: "checkmark"
+				}
+				{
+					id: "7AC46BBD0C1B944C"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Low Pressure Boilers\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lp_steam_solid_boiler"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lp_steam_liquid_boiler"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lp_steam_solar_boiler"
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "648BC16C3C3F30F9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"High Pressure Boilers\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:hp_steam_solid_boiler"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hp_steam_liquid_boiler"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hp_steam_solar_boiler"
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -4.75d
+		}
+		{
+			dependencies: ["2D1184752D7ACA66"]
+			description: ["The literal building bricks to your designs."]
+			hide_dependent_lines: true
+			id: "53A9BA26813A1141"
+			tasks: [{
+				id: "367A50EF5240BFA3"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"5324A7F20CA973C6"
+				"1289465781707205"
+			]
+			id: "6B059D530FCE7428"
+			optional: true
+			tasks: [
+				{
+					id: "0FD57A804E9A6670"
+					item: "gtceu:steam_grinder"
+					type: "item"
+				}
+				{
+					id: "378E79F5C85853A5"
+					item: "gtceu:steam_oven"
+					type: "item"
+				}
+			]
+			title: "Large Steam Machines"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["10126B9D6EC90F59"]
+			id: "1289465781707205"
+			tasks: [
+				{
+					id: "71E3F7FCADC341A6"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Low Pressure Boilers\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lp_steam_solid_boiler"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lp_steam_liquid_boiler"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lp_steam_solar_boiler"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "05F53BA4B76ECC20"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"High Pressure Boilers\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:hp_steam_solid_boiler"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hp_steam_liquid_boiler"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hp_steam_solar_boiler"
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -4.0d
 		}
 	]
 	title: "Early Game"

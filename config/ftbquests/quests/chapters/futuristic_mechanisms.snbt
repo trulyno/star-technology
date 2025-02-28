@@ -1809,7 +1809,8 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			size: 1.0d
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "450942C5A4B02270"
 				item: {
