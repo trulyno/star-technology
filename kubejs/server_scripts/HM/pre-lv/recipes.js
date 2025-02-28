@@ -445,7 +445,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.pressing('gtceu:compressed_coke_clay', 'kubejs:coke_clay_dust');
 
 	// Metalurgy Rework via Create
-	
+
 	event.remove({ id: /^create:pressing.*_ingot/ })
 	event.remove({ output: /^create_new_age.*wire/ })
 	const GTMetals = ['lead', 'raw_electrum', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'nickle', 'potin', 'cupronickle']
@@ -477,6 +477,8 @@ ServerEvents.recipes(event => {
 	const SEQCable = ['lead', 'red_alloy', 'tin'];
 	const SEQFluidPipe = ['copper', 'steel', 'lead', 'bronze', 'tin_alloy', 'potin'];
 	const SEQItemPipe = ['tin', 'brass', 'cupronickel', 'nickel'];
+
+	event.recipes.create.mixing('2x gtceu:pig_iron_dust', ['2x gtceu:iron_dust', 'gtceu:charcoal_dust']).heatRequirement('lowheated');
 
 	// ~~~~~~ Sequenced Assembly ~~~~~~ //
 
