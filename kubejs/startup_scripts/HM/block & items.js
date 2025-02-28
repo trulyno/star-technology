@@ -73,13 +73,13 @@ StartupEvents.registry('item', event => {
 	event.create('basic_scavenging_rod')
 		.displayName('Basic Scavenging Rod')
 		.rarity('common')
-		.maxDamage(128)
+		.maxDamage(96)
 		.unstackable();
 
 	event.create('scavenging_rod')
 		.displayName('Scavenging Rod')
 		.rarity('common')
-		.maxDamage(512)
+		.maxDamage(256)
 		.unstackable();
 
 });
