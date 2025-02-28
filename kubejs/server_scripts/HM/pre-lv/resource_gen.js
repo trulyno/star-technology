@@ -1,43 +1,45 @@
 // Coarse Dirt Scavenging
 
 BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
-	if (event.player.isCrouching() && event.player.getMainHandItem() == null) {
-		if (Math.random() < 0.002) {
-			event.block.popItemFromFace(Item.of('minecraft:cookie'), 'up');
-		}
-		if (Math.random() < 0.25) {
-			event.block.popItemFromFace(Item.of('kubejs:flint_shard'), 'up');
-		}
-	}
+	if (!event.player.isCrouching() || event.player.getMainHandItem() !== null) return;
+
+	if (Math.random() < 0.25) event.block.popItemFromFace(Item.of('kubejs:flint_shard'), 'up');
+
+	if (Math.random() < 0.002) event.block.popItemFromFace(Item.of('minecraft:cookie'), 'up');
 });
 
 BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
-	if (event.player.isCrouching() && item.id !== 'gtceu:basic_scavenging_rod') {
-		if (Math.random() < 0.003) {
-			event.block.popItemFromFace(Item.of('minecraft:cookie'), 'up');
-		}
-		if (Math.random() < 0.50) {
-			event.block.popItemFromFace(Item.of('kubejs:flint_shard'), 'up');
-		}
-		if (Math.random() < 0.50) {
-			event.block.popItemFromFace(Item.of('kubejs:flint_shard'), 'up');
-		}
-	}
+	if (event.player.getMainHandItem() !== 'kubejs:basic_scavenging_rod') return;
+	if (event.player.getOffHandItem() !== null) return;
+
+	if (Math.random() < 0.50) event.block.popItemFromFace(Item.of('kubejs:flint_shard'), 'up');
+	if (Math.random() < 0.50) event.block.popItemFromFace(Item.of('kubejs:flint_shard'), 'up');
+
+	if (Math.random() < 0.003) event.block.popItemFromFace(Item.of('minecraft:cookie'), 'up');
 });
 
 BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
-	if (event.player.isCrouching() && item.id !== 'gtceu:scavenging_rod') {
-		if (Math.random() < 0.004) {
-			event.block.popItemFromFace(Item.of('minecraft:cookie'), 'up');
-		}
-		if (Math.random() < 0.40) {
-			event.block.popItemFromFace(Item.of('kubejs:flint_shard'), 'up');
-		}
-		if (Math.random() < 0.40) {
-			event.block.popItemFromFace(Item.of('minecraft:flint'), 'up');
-		}
-	}
+	if (event.player.getMainHandItem() !== 'kubejs:scavenging_rod') return;
+	if (event.player.getOffHandItem() !== null) return;
+
+	if (Math.random() < 0.40) event.block.popItemFromFace(Item.of('minecraft:flint'), 'up');
+	if (Math.random() < 0.40) event.block.popItemFromFace(Item.of('kubejs:flint_shard'), 'up');
+
+	if (Math.random() < 0.004) event.block.popItemFromFace(Item.of('minecraft:cookie'), 'up');
 });
+
+// Placing campfires as unlit
+
+// const campfires = ['minecraft:campfire', 'minecraft:soul_campfire'];
+
+// BlockEvents.placed(event => {
+// 	const { block } = event;
+
+// 	if (block.id !== 'minecraft:campfire') return;
+// 	if (block.id !== 'minecraft:soul_campfire') return;
+
+// 	block.setBlockState("lit", false);
+// });
 
 // In-world crafting for Crucible and Crafting Table
 
