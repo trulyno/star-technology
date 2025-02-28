@@ -16,17 +16,4 @@ StartupEvents.registry('item', event => {
         .displayName('Multiblock Upgrade Kit')
         .texture('kubejs:item/kits/upgrade_kit');
 
-    event.create('crystallised_akreyrium')
-        .displayName('Crystallised Akreyrium')
-        .texture('kubejs:item/crystallised_akreyrium');
-
-    event.create('netherite_reinforced_mesh')
-        .displayName('Netherite Reinforced Mesh')
-        .texture('kubejs:item/netherite_reinforced_mesh');
-
-    // Mycelium Leather
-    event.create('compressed_mycelium');
-    event.create('smoked_mycelium');
-    event.create('mycelium_growth');
-
 });

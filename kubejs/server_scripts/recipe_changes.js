@@ -30,6 +30,16 @@ ServerEvents.recipes(event => {
         'gtceu:nether_star_lens'
     );
 
+    event.replaceInput({ input: 'farmersdelight:onion'},
+        'farmersdelight:onion',
+        '#forge:crops/onion'
+    );
+
+    event.replaceInput({ id: 'thermal:tools/satchel'},
+        '#thermal:rockwool',
+        '#minecraft:wool'
+    );
+
     event.shaped(Item.of('gtceu:wood_plate'), [
         'SSS'
     ], {
@@ -371,6 +381,8 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.lapidary_fuel('gtceu:diatron_gem', 750000);
     event.recipes.thermal.lapidary_fuel('gtceu:flawless_diatron_gem', 750000 * 2.5);
     event.recipes.thermal.lapidary_fuel('gtceu:exquisite_diatron_gem', 750000 * 6.25);
+    event.remove({type: 'thermal:lapidary_fuel', input: 'minecraft:diamond'})
+    event.recipes.thermal.lapidary_fuel('minecraft:diamond', 300000);
 
     event.recipes.gtceu.mixer('diatron_dust')
         .itemInputs('3x gtceu:energium_dust', '2x gtceu:diamond_dust')
@@ -519,6 +531,14 @@ ServerEvents.recipes(event => {
         .duration(400)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .EUt(GTValues.V[GTValues.UHV]);
+
+    event.remove({id: 'gtceu:macerator/macerate_naquadah_refined_ore_to_dust'});
+    event.recipes.gtceu.macerator('macerate_refined_naquadah_ore_to_dust')
+        .itemInputs('gtceu:refined_naquadah_ore')
+        .itemOutputs('gtceu:naquadah_dust')
+        .chancedOutput('gtceu:enriched_naquadah_dust', 350, 125)
+        .duration(400)
+        .EUt(2);
 
     //rutile fix
     event.remove({ id: 'gtceu:electric_blast_furnace/rutile_from_ilmenite' })

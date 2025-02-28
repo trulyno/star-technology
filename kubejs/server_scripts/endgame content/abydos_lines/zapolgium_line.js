@@ -35,14 +35,14 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor('zapolite_proc_3')
         .itemInputs('gtceu:zapolgium_oxide_dust')
-        .inputFluids('gtceu:hydrochloric_acid 2000')
+        .inputFluids('gtceu:hydrochloric_acid 1000')
         .itemOutputs('gtceu:zapolgium_chloride_dust')
         .outputFluids('minecraft:water 1000')
         .duration(600)
         .EUt(28000);
 
     event.recipes.gtceu.large_chemical_reactor('zapolgium_ore_proc_4')
-        .itemInputs('gtceu:zapolgium_chloride_dust', '2x gtceu:potassium_hydroxide_dust')
+        .itemInputs('gtceu:zapolgium_chloride_dust', 'gtceu:potassium_hydroxide_dust')
         .itemOutputs('gtceu:zapolgium_hydroxide_dust', '2x gtceu:rock_salt_dust')
         .duration(1200)
         .EUt(56000);

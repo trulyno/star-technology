@@ -1,6 +1,21 @@
 
 ServerEvents.recipes(event => {
 
+    event.recipes.gtceu.assembly_line('wetware_based_runic_neuroloom')
+        .itemInputs('2x gtceu:ancient_runicalium_frame', '4x gtceu:wetware_processor_mainframe', '64x gtceu:advanced_smd_diode', '64x gtceu:advanced_smd_capacitor', '64x gtceu:advanced_smd_transistor',
+            '64x gtceu:advanced_smd_resistor', '64x gtceu:advanced_smd_inductor', '64x gtceu:polyether_ether_ketone_foil', '64x gtceu:polyether_ether_ketone_foil', '48x kubejs:qram_chip', 
+            '24x gtceu:ruthenium_trinium_americium_neutronate_double_wire', '32x gtceu:tritanium_plate')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 2880', 'gtceu:polyether_ether_ketone 1152', 'gtceu:sterilized_growth_medium 5000')
+        .itemOutputs('kubejs:wetware_based_runic_neuroloom')
+        .duration(1800)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack('kubejs:computational_super_matrix')
+                .EUt(GTValues.VHA[GTValues.UHV])
+                .CWUt(160)
+        )
+        .EUt(GTValues.VHA[GTValues.UEV]);
+
     event.recipes.gtceu.circuit_assembler('draconic_wetware_circuit_board')
         .itemInputs('32x gtceu:wetware_circuit_board', '4x gtceu:petri_dish', 'gtceu:uhv_electric_pump', 'gtceu:uhv_sensor', '2x #gtceu:circuits/zpm', '4x gtceu:stellarium_foil')
         .inputFluids('gtceu:sterilized_growth_medium 6000')

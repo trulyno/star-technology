@@ -76,7 +76,7 @@
 				item: "gtceu:lv_lathe"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.5d
 			y: -3.5d
 		}
 		{
@@ -202,7 +202,7 @@
 				item: "gtceu:lv_electric_piston"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.5d
 			y: -1.5d
 		}
 		{
@@ -219,8 +219,8 @@
 				item: "gtceu:lv_macerator"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -1.5d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["523F20DC5FA04229"]
@@ -237,7 +237,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["523F20DC5FA04229"]
@@ -253,7 +253,7 @@
 				item: "gtceu:lv_robot_arm"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.5d
 			y: 0.5d
 		}
 		{
@@ -347,7 +347,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: 4.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["0E88CB5E68212006"]
@@ -364,7 +364,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 4.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["234CE57A62FB8D82"]
@@ -502,8 +502,8 @@
 				item: "gtceu:lv_arc_furnace"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.5d
+			x: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["620F1881452C03B6"]
@@ -549,11 +549,11 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 0.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
-			description: ["Super Chests grant massive storage capacity, with the first tier of super chest handling as much items as a fully upgraded drawer."]
+			description: ["Super Chests grant massive storage capacity, offering some more utility than just drawers."]
 			id: "73125407EA6D21EC"
 			rewards: [{
 				id: "5A3838D031ABA355"
@@ -736,7 +736,7 @@
 		}
 		{
 			dependencies: ["77FB57773EFE8D6C"]
-			description: ["Another type of component for circuits used in MV and above."]
+			description: ["Another type of component for circuits used in &bMV&r and above."]
 			id: "683FD2FC0B64739A"
 			rewards: [{
 				id: "4882F8DD5EAAE4C4"
@@ -748,8 +748,8 @@
 				item: "gtceu:diode"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 10.5d
+			x: 4.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -945,7 +945,7 @@
 				}
 			]
 			x: 4.5d
-			y: 12.5d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -954,7 +954,7 @@
 				"20A12F3B992762F0"
 				"4E1271A47BFEE3B9"
 			]
-			description: ["First MV circuits."]
+			description: ["First &bMV&r circuits."]
 			id: "7836F17B34B47B16"
 			rewards: [{
 				count: 2
@@ -1006,7 +1006,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: 12.5d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -1033,7 +1033,7 @@
 				"707733C864B8729C"
 				"590380B77F8EF17D"
 			]
-			description: ["Cheaper LV Circuit."]
+			description: ["Cheaper &7LV&r Circuit."]
 			id: "70875F86587758D7"
 			rewards: [{
 				id: "33AAB8FC1F3008AF"
@@ -1051,7 +1051,7 @@
 		}
 		{
 			dependencies: ["70875F86587758D7"]
-			description: ["Cheaper MV Circuit."]
+			description: ["Cheaper &bMV&r Circuit."]
 			id: "23D3BED4F1968AD6"
 			rewards: [{
 				id: "295C26334A202535"
@@ -1191,8 +1191,8 @@
 		}
 		{
 			dependencies: [
-				"53E98CFC7934FA67"
 				"261174370DC87FCB"
+				"23D5F109B920FDE4"
 			]
 			description: [
 				"Super Tanks store a large amount of liquids. "
@@ -1210,7 +1210,7 @@
 				type: "item"
 			}]
 			x: -15.5d
-			y: -3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7EC83EEF3F7A89B8"]
@@ -1281,8 +1281,8 @@
 				}
 			]
 			title: "Rare Earth Metals"
-			x: -4.0d
-			y: 6.5d
+			x: -3.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -1382,7 +1382,7 @@
 		}
 		{
 			dependencies: ["0E61DC74B2E2C962"]
-			description: ["Now you've cooled your first silicon ingots, you can finally make use of all the silicon thats lying about your base."]
+			description: ["Now you've cooled your first silicon ingots, you can finally make use of all the silicon that's lying about your base."]
 			icon: "gtceu:silicon_ingot"
 			id: "4ED724D5B94CFA3A"
 			rewards: [{
@@ -1799,7 +1799,7 @@
 				""
 				"You'll want 2 output busses to have enough room for the Geodes"
 				""
-				"Keep in mind you can only have 1 energy hatch on the machine. Make sure to have enough output space: 2 LV Output Busses will work."
+				"Note: You can only have 1 energy hatch on the machine. Make sure to have enough output space: 2 &7LV&r Output Busses will work."
 			]
 			id: "5F80268C02FAD5F6"
 			rewards: [{
@@ -1822,7 +1822,7 @@
 				""
 				"Make sure to save the liquids for later as you can get more and rarer materials."
 				""
-				"This machine can only take 1 energy hatch. Also make sure you have enough output space: 2 LV Output Busses, and 2 LV Output Hatches will do the trick."
+				"Note: This machine can only take 1 energy hatch. Additionally, make sure you have enough output space: 2 &7LV&r Output Busses, and 2 &7LV&r Output Hatches will do the trick."
 			]
 			id: "30B2688F8387048F"
 			rewards: [{
@@ -1855,8 +1855,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: 6.5d
+			x: -1.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["7CA424E05FB05DFF"]
@@ -1893,7 +1893,7 @@
 				type: "checkmark"
 			}]
 			x: 2.5d
-			y: 12.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -1958,7 +1958,7 @@
 				"4ED724D5B94CFA3A"
 				"261174370DC87FCB"
 			]
-			description: ["Another type of component for circuits used in HV and above."]
+			description: ["Another type of component for circuits used in &6HV&r and above."]
 			id: "724BAC3F48CE91AA"
 			tasks: [{
 				id: "799B98C337C4EE49"
@@ -2027,6 +2027,39 @@
 			}]
 			x: -15.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["1F5CCE8CFD02903A"]
+			description: [
+				"That pesky sieving has now evolved to consume power and yield you much stronger results."
+				""
+				"Note: Can only have 1 Energy Hatch"
+				""
+				"[No, Mesh Enchants to &4NOT&r impact performance]"
+			]
+			id: "569A70F811536F5F"
+			optional: true
+			tasks: [{
+				id: "330BAE9039CDDCB5"
+				item: "gtceu:mechanical_sieve"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["53E98CFC7934FA67"]
+			description: [""]
+			icon: "ftbquests:book"
+			id: "23D5F109B920FDE4"
+			subtitle: "Go Check Out other Questbook Pages"
+			tasks: [{
+				id: "173F13483133FB5A"
+				title: "Production Lines Questbook Page(s)"
+				type: "checkmark"
+			}]
+			x: -15.5d
+			y: -3.5d
 		}
 	]
 	title: "Industrial Revolution"

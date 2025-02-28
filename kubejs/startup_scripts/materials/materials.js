@@ -434,7 +434,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('12x neutronium', '4x melodium', '1x dragonsteel')
         .color(0xccffff)
         .iconSet(SHINY)
-        .blastTemp(10799, 'highest', VA('uhv'), 6000)
+        .blastTemp(10799, 'highest', VA('uhv'), 4000)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame, fine_wire)
         .cableProperties(V('uhv'), 512, 0, true)
@@ -446,7 +446,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('5x zapolgium', '18x stellarium', '8x zirconium')
         .color(0xFAB922)
         .iconSet(SHINY)
-        .blastTemp(11749, 'highest', VA('uev'), 6200)
+        .blastTemp(11749, 'highest', VA('uev'), 5000)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame, fine_wire)
         .cableProperties(V('uev'), 1024, 0, true)
@@ -523,7 +523,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get('pure_netherite'))
         .color(0x1a0d00)
         .iconSet(DULL)
-        .blastTemp(3300, 'low', VA('ev'), 1200)
+        .blastTemp(5000, 'low', VA('iv'), 1200)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring);
 
@@ -546,7 +546,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('7x naquadria', '2x pure_netherite', '5x neutronium', '16x fluorine')
         .color(0xccff33)
         .iconSet(DULL)
-        .blastTemp(10500, 'low', VA('zpm'), 6000)
+        .blastTemp(10500, 'highest', VHA('uv'), 2700)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame);
 
@@ -915,117 +915,140 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     
     event.create('titanite')
         .dust()
-        .ore(4, 3)
+        .liquid()
+        .ore(2, 1)
         .components('1x calcium', '1x titanium', '1x silicon', '5x oxygen')
-        .color(0x66ffff);
+        .color(0x66ffff)
+        .flags(no_decomp);
 
     event.create('zapolite')
         .dust()
-        .ore(4, 3)
+        .liquid()
+        .ore(2, 1)
         .components('2x zapolgium', '4x iodine', '2x aluminium', '5x oxygen')
         .color(0xcc0099)
         .flags(no_decomp);
 
     event.create('lautarite')
         .dust()
-        .ore(4, 3)
+        .ore(2, 1)
         .components('1x calcium', '2x iodine', '6x oxygen')
-        .color(0x6666ff);
+        .color(0x6666ff)
+        .flags(no_decomp);
 
     event.create('iodargyrite')
         .dust()
-        .ore(4, 3)
+        .liquid()
+        .ore(2, 1)
         .components('1x silver', '1x iodine')
-        .color(0x8080ff);
+        .color(0x8080ff)
+        .flags(no_decomp);
 
     event.create('clausthalite')
         .dust()
-        .ore(4, 3)
+        .liquid()
+        .ore(2, 1)
         .components('1x lead', '1x selenium')
-        .color(0x666633);
+        .color(0x666633)
+        .flags(no_decomp);
 
     event.create('crookesite')
         .dust()
-        .ore(4, 3)
+        .liquid()
+        .ore(2, 1)
         .components('7x copper', '1x thallium', '4x selenium')
         .color(0x00ff99)
+        .flags(no_decomp);
 
     event.create('calaverite')
         .dust()
-        .ore(4, 3)
+        .liquid()
+        .ore(2, 1)
         .components('1x gold', '2x tellurium')
-        .color(0xcc9900);
+        .color(0xcc9900)
+        .flags(no_decomp);
 
     event.create('sylvanite')
         .dust()
-        .ore(4, 3)
+        .liquid()
+        .ore(2, 1)
         .components('1x silver', '2x tellurium')
-        .color(0xff5050);
+        .color(0xff5050)
+        .flags(no_decomp);
 
     event.create('tiemannite')
         .dust()
-        .ore(4, 3)
+        .liquid()
+        .ore(2, 1)
         .components('1x mercury', '1x selenium')
-        .color(0xcc0066);
+        .color(0xcc0066)
+        .flags(no_decomp);
 
     event.create('klockmannite')
         .dust()
-        .ore(4, 3)
+        .ore(2, 1)
         .components('1x copper', '1x selenium')
-        .color(0x009999);
+        .color(0x009999)
+        .flags(no_decomp);
 
     event.create('stibiopalladinite')
         .dust()
-        .ore(4, 3)
+        .ore(2, 1)
         .components('5x palladium', '2x antimony')
-        .color(0x333399);
+        .color(0x333399)
+        .flags(no_decomp);
 
     event.create('berzelianite')
         .dust()
-        .ore(4, 3)
+        .ore(2, 1)
         .components('2x copper', '1x selenium')
-        .color(0x990000);
+        .color(0x990000)
+        .flags(no_decomp);
 
     event.create('umangite')
         .dust()
-        .ore(4, 3)
+        .ore(2, 1)
         .components('3x copper', '2x selenium')
-        .color(0x006699);
+        .color(0x006699)
+        .flags(no_decomp);
 
     event.create('aguilarite')
         .dust()
-        .ore(4, 3)
+        .ore(2, 1)
         .components('3x silver', '1x selenium', '1x sulfur')
-        .color(0xff5050);
+        .color(0xff5050)
+        .flags(no_decomp);
 
     event.create('polybasite')
         .dust()
         .components('12x silver', '4x copper', '2x arsenic', '13x sulfur')
         .color(0xcc6600);
 
+    event.create('strontianite')
+        .dust()    
+        .liquid()
+        .ore(2, 1)
+        .components('1x strontium', '1x carbon', '3x oxygen')
+        .color(0xe6ffff);
+
+    event.create('celestine')
+        .gem()
+        .ore(4, 1)
+        .components('1x strontium', '1x carbon', '4x oxygen')
+        .color(0xe6ffff)
+        .iconSet(GEM_VERTICAL);
+
     event.create('abydos_titanite_rich_magma')
         .fluid()
-        .components('5x titanite', '2x calaverite', '2x sylvanite', '1x tiemannite')
+        .components('6x titanite', '2x calaverite','2x sylvanite', '2x tiemannite', '1x strontianite')
+        .flags(no_decomp)    
         .color(0xe65c00);
 
     event.create('abydos_zapolite_rich_magma')
         .fluid()
-        .components('7x zapolite', '3x iodargyrite', '2x clausthalite', '4x crookesite')
-        .color(0xff471a);
-
-    event.create('strontianite')
-        .gem()
-        .ore(4, 3)
-        .components('1x strontium', '1x carbon', '3x oxygen')
-        .color(0xe6ffff)
-        .iconSet(GEM_HORIZONTAL);
-
-    event.create('celestine')
-        .gem()
-        .ore(4, 3)
-        .components('1x strontium', '1x carbon', '4x oxygen')
-        .color(0xe6ffff)
-        .iconSet(GEM_VERTICAL);
+        .components('7x zapolite', '3x crookesite', '2x clausthalite', '1x iodargyrite')
+        .color(0xff471a)
+        .flags(no_decomp);
 
     // Nether
     event.create('mythrilium')
@@ -1088,7 +1111,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('hydroxo_dioxo_titanite_mixture')
         .fluid()
-        .components('1x sodium', '1x rutile', '2x oxygen', '2x hydrogen', '1x mystery')
+        .components('2x sodium', '1x rutile', '2x oxygen', '2x hydrogen', '1x mystery')
         .color(0xd27979)
         .flags(no_decomp);
 
@@ -1314,7 +1337,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('carbon_acid')
         .gas()
         .components('2x hydrogen','1x carbon','3x oxygen')
-        .color(0x333333);
+        .color(0x333333)
+        .flags(no_decomp);
 
     event.create('fluorobenzene')
         .fluid()
@@ -1587,5 +1611,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0xE3D28E)
         .components('2x indium', '3x oxygen');
+
+    //nether star line essences
+    liquid('blitz', 0xFDF3C4, '1x mystery');
+    liquid('blizz', 0xB4EFFA, '1x mystery');
+    liquid('basalz', 0x6F190E, '1x mystery');
 
 });

@@ -55,7 +55,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["707C2E9BA62A60C5"]
+			dependencies: [
+				"707C2E9BA62A60C5"
+				"02606EBF230281A3"
+			]
 			id: "314B6ABE72E4A438"
 			rewards: [{
 				count: 2
@@ -330,6 +333,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			tasks: [{
 				id: "2BDD6909E418101F"
 				item: "gtceu:heat_chamber"
@@ -435,6 +439,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			tasks: [{
 				id: "462D1C2DAFBB310A"
 				item: "gtceu:naquadic_netherite_dust"
@@ -561,6 +566,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			tasks: [{
 				id: "6DCB4B5D70F0A053"
 				item: "gtceu:melodium_ingot"

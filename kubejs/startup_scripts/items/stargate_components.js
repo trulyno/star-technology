@@ -44,17 +44,15 @@ StartupEvents.registry('item', event => {
     event.create('draconic_coordinate_core')
         .displayName('Draconic Coordinate Core')
         .rarity('epic')
-        .tooltip('The Ultimate Eye of Ender')
+        .tooltip('The §o§6Ultimate§r Eye of Ender')
         .texture('kubejs:item/gate_items/draconic_core');
 
     event.create('hell_core')
-        .displayName('Hell Core')
-        .rarity('rare')
+        .displayName('§4Hell Core')
         .texture('kubejs:item/gate_items/hell_core');
 
     event.create('void_core')
-        .displayName('Void Core')
-        .rarity('rare')
+        .displayName('§5Void Core')
         .texture('kubejs:item/gate_items/void_core');
 
     const runic_tablet = ['1','2','3','4','5','6','complete']

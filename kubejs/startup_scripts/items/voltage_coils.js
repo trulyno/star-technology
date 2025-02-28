@@ -6,8 +6,7 @@ StartupEvents.registry('item', event => {
         .displayName('Ultra High Voltage Coil')
         .tooltip('Peppermint Coil');
 
-    /*
-    event.create('uev_voltage_coil')
+    /*event.create('uev_voltage_coil')
         .texture('kubejs:item/component_part/uev_voltage_coil')
         .displayName('Ultra Excessive Voltage Coil')
         .tooltip('Ultimate+ Pro Coil');
@@ -21,11 +20,10 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/component_part/uxv_voltage_coil')
         .displayName('Ultra Extreme Voltage Coil')
         .tooltip('Supreme+ Coil');
-
+        
     event.create('opv_voltage_coil')
         .texture('kubejs:item/component_part/opv_voltage_coil')
         .displayName('Overpowered Voltage Coil')
-        .tooltip('Godly Coil');
-    */
+        .tooltip('Godly Coil');*/
 
 });

@@ -26,7 +26,7 @@ StartupEvents.registry('block', event => {
 
     // Extras
     event.create('meshblock')
-        .displayName('Treatedwood Reinforced Mesh')
+        .displayName('Treated Wood Reinforced Mesh')
         .hardness(2)
         .resistance(2)
         .material('wood')

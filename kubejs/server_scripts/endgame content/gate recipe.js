@@ -140,7 +140,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.extractor('echo_fluid')
         .itemInputs('minecraft:echo_shard')
         .outputFluids('gtceu:echo_r 144')
-        .duration(12000)
+        .duration(8000)
         .EUt(GTValues.VHA[GTValues.LuV]);
 
     event.recipes.gtceu.fluid_solidifier('raw_void_ingot')
@@ -156,8 +156,21 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:raw_void_ingot')
         .itemOutputs('gtceu:hot_void_ingot')
         .blastFurnaceTemp(10799)
-        .duration(16000)
+        .duration(12000)
         .EUt(GTValues.VHA[GTValues.LuV]);
+
+    //Material Adjustments
+    event.replaceInput({id: 'gtceu:electric_blast_furnace/blast_weapon_grade_naquadah_gas'},
+        Fluid.of('gtceu:krypton 10'),
+        Fluid.of('gtceu:xenon 10')
+    );
+
+    event.recipes.gtceu.bender('nether_star_foil')
+            .itemInputs('gtceu:nether_star_plate')
+            .itemOutputs('4x gtceu:nether_star_foil')
+            .duration(300)
+            .circuit(1)
+            .EUt(GTValues.VA[GTValues.IV]);
 
     //Classic Gate Components
     event.recipes.gtceu.assembly_line('classic_stargate_computer_core')
@@ -232,13 +245,6 @@ ServerEvents.recipes(event => {
         .duration(12000)
         .EUt(GTValues.VHA[GTValues.UV]);
 
-    event.recipes.gtceu.bender('nether_star_foil')
-        .itemInputs('gtceu:nether_star_plate')
-        .itemOutputs('4x gtceu:nether_star_foil')
-        .duration(300)
-        .circuit(1)
-        .EUt(GTValues.VA[GTValues.IV])
-
     event.recipes.gtceu.large_rotor_machine('crude_stargate_rod')
         .itemInputs('32x gtceu:neutronium_foil', '48x gtceu:weapon_grade_naquadah_foil', '32x gtceu:neutronium_foil', '48x gtceu:weapon_grade_naquadah_foil', '16x gtceu:nether_star_foil', '48x gtceu:weapon_grade_naquadah_foil', 'gtceu:long_void_rod', '48x gtceu:weapon_grade_naquadah_foil', '32x gtceu:neutronium_foil')
         .itemOutputs('kubejs:crude_stargate_rod')
@@ -252,7 +258,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.LuV]);
 
     event.recipes.gtceu.assembly_line('classic_chevron_disk')
-        .itemInputs('gtceu:prismalium_frame', 'gtceu:exquisite_naquadic_netherite_gem', '8x gtceu:wetware_processor_mainframe', '6x gtceu:uv_sensor', '6x gtceu:uv_emitter', '6x gtceu:uv_field_generator', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip')
+        .itemInputs('gtceu:prismalium_frame', 'gtceu:exquisite_naquadic_netherite_gem', '8x #gtceu:circuits/uhv', '6x gtceu:uv_sensor', '6x gtceu:uv_emitter', '6x gtceu:uv_field_generator', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip')
         .inputFluids('gtceu:naquadria 48000', 'gtceu:borosilicate_glass 136000')
         .itemOutputs('kubejs:classic_chevron_disk')
         .duration(6000)
@@ -282,7 +288,7 @@ ServerEvents.recipes(event => {
 
         //Chevrons
         event.recipes.gtceu.assembly_line('classic_chevron_assembly')
-            .itemInputs('gtceu:stellarium_frame', 'kubejs:classic_chevron_disk', 'kubejs:classic_chevron_disk', 'kubejs:classic_chevron_disk', '6x kubejs:uhv_computational_matrix', '8x kubejs:uhv_catalyst_core', '24x kubejs:uhv_super_magnetic_core', '12x kubejs:uhv_high_strength_panel')
+            .itemInputs('gtceu:stellarium_frame', 'kubejs:classic_chevron_disk', 'kubejs:classic_chevron_disk', 'kubejs:classic_chevron_disk', '6x #gtceu:circuits/uev', '8x kubejs:uhv_catalyst_core', '24x kubejs:uhv_super_magnetic_core', '12x kubejs:uhv_high_strength_panel')
             .inputFluids('gtceu:utopian_akreyrium 24000', 'gtceu:naquadria 56000', 'gtceu:borosilicate_glass 180000')
             .itemOutputs('kubejs:classic_chevron_assembly')
             .duration(9000)
@@ -309,14 +315,14 @@ ServerEvents.recipes(event => {
 
         //Ancient Encoded Computational Unit
         event.recipes.gtceu.assembly_line('ancient_stargate_computer_core')
-            .itemInputs('gtceu:ancient_runicalium_frame','kubejs:classic_stargate_computer_core','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire',
-                '64x kubejs:uepic_chip','64x kubejs:uepic_chip','kubejs:draconic_coordinate_core','6x kubejs:computational_super_matrix')
+            .itemInputs('gtceu:ancient_runicalium_frame','6x kubejs:computational_super_matrix','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire',
+                '64x kubejs:uepic_chip','64x kubejs:uepic_chip','24x #gtceu:circuits/uev','kubejs:draconic_coordinate_core')
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 128000', 'gtceu:sterilized_growth_medium 54000')
             .itemOutputs('kubejs:ancient_stargate_computer_core')
             .duration(48000)
             .stationResearch(
                 researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of("kubejs:draconic_coordinate_core"))
+                    .researchStack(Item.of("kubejs:classic_stargate_computer_core"))
                     .EUt(GTValues.VHA[GTValues.UHV])
                     .CWUt(176)
                 )

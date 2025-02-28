@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('rock_filtrator')
         .appearanceBlock(GCYMBlocks.CASING_WATERTIGHT)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .pattern(definition => FactoryBlockPattern.start()	
             .aisle('  BBB  ', '  CDC  ', '  CDC  ', '  CDC  ', '  CDC  ', '  CDC  ', '  BBB  ') 	
             .aisle(' BDDDB ', ' DEFED ', ' DEFED ', ' DEFED ', ' DEFED ', ' DEFED ', ' BDDDB ') 	

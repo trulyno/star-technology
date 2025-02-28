@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV]);
 
     event.recipes.gtceu.assembly_line('runic_inscribe_manipulate')
-        .itemInputs('gtceu:ancient_runicalium_frame', '2x kubejs:uhv_catalyst_core','16x kubejs:uhv_high_strength_panel', '4x kubejs:uhv_computational_matrix', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip',
+        .itemInputs('gtceu:ancient_runicalium_frame', '2x kubejs:uhv_catalyst_core','16x kubejs:uhv_high_strength_panel', '4x #gtceu:circuits/uev', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip',
              '64x kubejs:uepic_chip', '8x gtceu:uhv_field_generator', '8x gtceu:uhv_electric_piston', '16x gtceu:uhv_emitter', '12x kubejs:uhv_precision_drive_mechanism','2x gtceu:uhv_fluid_regulator')
         .inputFluids('gtceu:hsse 25920', 'gtceu:hssg 25920', 'gtceu:hsss 25920')
         .itemOutputs('gtceu:runic_inscribe_manipulate')

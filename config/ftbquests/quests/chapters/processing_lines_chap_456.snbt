@@ -14,23 +14,17 @@
 	progression_mode: "flexible"
 	quest_links: [
 		{
-			id: "03B6D7853CA898F2"
-			linked_quest: "090275078106B752"
-			x: 0.0d
-			y: 5.0d
-		}
-		{
 			id: "6D8B0DE6FCC2A5B1"
 			linked_quest: "07AD6651D0B40E22"
 			shape: "gear"
-			x: 19.5d
-			y: 6.0d
+			x: 19.0d
+			y: 7.0d
 		}
 		{
 			id: "5C3A70141044636D"
 			linked_quest: "179A15014A5716B5"
-			x: 17.5d
-			y: 8.0d
+			x: 17.0d
+			y: 9.0d
 		}
 	]
 	quests: [
@@ -799,7 +793,7 @@
 				type: "item"
 			}]
 			x: 25.5d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -834,8 +828,8 @@
 				type: "item"
 			}]
 			title: "Better Utopian Akreyrium"
-			x: 24.0d
-			y: 8.0d
+			x: 23.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -862,7 +856,7 @@
 				}
 				type: "item"
 			}]
-			x: 21.0d
+			x: 17.5d
 			y: 13.5d
 		}
 		{
@@ -1028,8 +1022,8 @@
 		}
 		{
 			dependencies: [
-				"151A1B51DFE41040"
 				"493DD013C818BB7B"
+				"33995F23F01ADF83"
 			]
 			id: "6893DE5DC9C7470F"
 			tasks: [{
@@ -1160,7 +1154,7 @@
 				type: "item"
 			}]
 			x: 23.5d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -1178,7 +1172,7 @@
 				type: "item"
 			}]
 			x: 22.0d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["0E079F57524D0FD9"]
@@ -1193,7 +1187,7 @@
 				type: "item"
 			}]
 			x: 20.5d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			id: "357F58FB592B9628"
@@ -1207,7 +1201,7 @@
 				type: "item"
 			}]
 			x: 21.5d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1225,7 +1219,7 @@
 				type: "item"
 			}]
 			x: 19.0d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["70683E750C318105"]
@@ -1240,7 +1234,7 @@
 				type: "item"
 			}]
 			x: 17.5d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["581B9989FE0DE0BF"]
@@ -1255,7 +1249,7 @@
 				type: "item"
 			}]
 			x: 17.5d
-			y: 4.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["60267DAD7D99381F"]
@@ -1270,7 +1264,7 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["60267DAD7D99381F"]
@@ -1285,12 +1279,12 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: 4.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
 				"493DD013C818BB7B"
-				"151A1B51DFE41040"
+				"33995F23F01ADF83"
 			]
 			id: "60267DAD7D99381F"
 			tasks: [{
@@ -1303,7 +1297,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -1328,7 +1322,7 @@
 				type: "item"
 			}]
 			x: 17.5d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -1358,8 +1352,8 @@
 				}
 			]
 			title: "Electron-Dense Akreyrium"
-			x: 22.5d
-			y: 8.0d
+			x: 22.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1389,8 +1383,8 @@
 				}
 			]
 			title: "Tau-Dense Akreyrium"
-			x: 22.5d
-			y: 6.0d
+			x: 22.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1420,8 +1414,8 @@
 				}
 			]
 			title: "Muon-Dense Akreyrium"
-			x: 22.5d
-			y: 10.0d
+			x: 22.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["54DA03D41AF36EF2"]
@@ -1448,8 +1442,8 @@
 				}
 			]
 			title: "Muon-Sparse Akreyrium"
-			x: 21.0d
-			y: 10.0d
+			x: 20.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["54DA03D41AF36EF2"]
@@ -1476,8 +1470,8 @@
 				}
 			]
 			title: "Electron-Sparse Akreyrium"
-			x: 21.0d
-			y: 8.0d
+			x: 20.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["54DA03D41AF36EF2"]
@@ -1504,8 +1498,8 @@
 				}
 			]
 			title: "Tau-Sparse Akreyrium"
-			x: 21.0d
-			y: 6.0d
+			x: 20.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["46D5CAA2666803D4"]
@@ -1532,8 +1526,8 @@
 				}
 			]
 			title: "Twinite Injection"
-			x: 22.0d
-			y: 9.0d
+			x: 21.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["253AECE450920D99"]
@@ -1560,8 +1554,8 @@
 				}
 			]
 			title: "Stellarium Injection"
-			x: 22.0d
-			y: 7.0d
+			x: 21.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["4DE40B37D609B921"]
@@ -1588,8 +1582,8 @@
 				}
 			]
 			title: "Weapon Grade Naquadah Injection"
-			x: 22.0d
-			y: 11.0d
+			x: 21.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1620,8 +1614,8 @@
 				}
 			]
 			title: "Lepton-Sparse Akreyrium"
-			x: 19.5d
-			y: 8.0d
+			x: 19.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["179A15014A5716B5"]
@@ -1635,8 +1629,8 @@
 				}
 				type: "item"
 			}]
-			x: 18.5d
-			y: 7.0d
+			x: 18.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -1655,7 +1649,7 @@
 				}
 				type: "item"
 			}]
-			x: 19.5d
+			x: 16.0d
 			y: 16.0d
 		}
 		{
@@ -1673,7 +1667,7 @@
 				}
 				type: "item"
 			}]
-			x: 19.0d
+			x: 15.5d
 			y: 14.5d
 		}
 		{
@@ -1691,7 +1685,7 @@
 				}
 				type: "item"
 			}]
-			x: 19.0d
+			x: 15.5d
 			y: 12.5d
 		}
 		{
@@ -1706,7 +1700,7 @@
 				}
 				type: "item"
 			}]
-			x: 19.5d
+			x: 16.0d
 			y: 11.0d
 		}
 		{
@@ -1720,7 +1714,7 @@
 				}
 				type: "item"
 			}]
-			x: 18.0d
+			x: 14.5d
 			y: 11.0d
 		}
 		{
@@ -1734,7 +1728,7 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
+			x: 14.0d
 			y: 12.0d
 		}
 		{
@@ -1762,7 +1756,7 @@
 				}
 			]
 			title: "Nitric Acid"
-			x: 17.5d
+			x: 14.0d
 			y: 13.0d
 		}
 		{
@@ -1776,7 +1770,7 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
+			x: 14.0d
 			y: 14.0d
 		}
 		{
@@ -1787,7 +1781,7 @@
 				item: "gtceu:activated_carbon_dust"
 				type: "item"
 			}]
-			x: 17.5d
+			x: 14.0d
 			y: 15.0d
 		}
 		{
@@ -1816,7 +1810,7 @@
 			]
 			title: "Yes, STEAM!!"
 			x: 24.0d
-			y: 4.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7658E16BA79A7632"]
@@ -1844,7 +1838,7 @@
 			]
 			title: "Carbon Monoxide"
 			x: 24.0d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			id: "7214D86C55033EAD"
@@ -1858,7 +1852,7 @@
 				type: "item"
 			}]
 			x: 23.0d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7E99889B3427A842"]
@@ -1885,9 +1879,9 @@
 		}
 		{
 			dependencies: [
-				"090275078106B752"
 				"18ED2B1F051E0868"
 				"1F416C7A641914EC"
+				"600015DA0DCAACD4"
 			]
 			id: "32AC51387EAD9D2D"
 			tasks: [{
@@ -2123,8 +2117,8 @@
 				}
 			]
 			title: "Abydos Magmas"
-			x: 13.5d
-			y: 1.5d
+			x: 13.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["37C381390F132628"]
@@ -2138,8 +2132,8 @@
 				}
 				type: "item"
 			}]
-			x: 18.5d
-			y: 9.0d
+			x: 18.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -2277,6 +2271,215 @@
 			}]
 			x: 10.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["4BCC078B76C6CAE3"]
+			id: "600015DA0DCAACD4"
+			tasks: [{
+				id: "38DAFF93792077A8"
+				item: "mysticalagradditions:nether_star_shard"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["151A1B51DFE41040"]
+			id: "33995F23F01ADF83"
+			tasks: [
+				{
+					id: "1E468EB546DEA345"
+					item: "gtceu:titanite_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4E1F05B66710C8D1"
+					item: "gtceu:sylvanite_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3C3D66BAD06722AC"
+					item: "gtceu:tiemannite_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2932C617BF093EC7"
+					item: "gtceu:strontianite_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7EB397659B43C17E"
+					item: "gtceu:calaverite_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7B65392249B860E2"
+					item: "gtceu:zapolite_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7BD0DE20A9474A30"
+					item: "gtceu:clausthalite_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1D604A2B09D72818"
+					item: "gtceu:iodargyrite_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6B9F2CAFEF475B87"
+					item: "gtceu:crookesite_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "65833A25421CC885"
+					item: "gtceu:molten_ore_mixture_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1857C1820A888C8E"
+					type: "checkmark"
+				}
+			]
+			title: "Magma Byproducts"
+			x: 14.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"33995F23F01ADF83"
+				"493DD013C818BB7B"
+			]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:calaverite_dust"
+			id: "26A84315291888C8"
+			tasks: [
+				{
+					id: "7D487AE45D6C31A0"
+					item: "gtceu:calaverite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6BDBFD54EC74B0A0"
+					item: "gtceu:sylvanite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "03370F64AD51CD92"
+					type: "checkmark"
+				}
+			]
+			title: "Tellurides"
+			x: 16.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["26A84315291888C8"]
+			id: "7E33A485E30B47EA"
+			shape: "gear"
+			tasks: [{
+				id: "1E59A7B52BBDC312"
+				item: "gtceu:tellurium_dust"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 1.75d
+		}
+		{
+			dependencies: [
+				"33995F23F01ADF83"
+				"493DD013C818BB7B"
+			]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:tiemannite_dust"
+			id: "465533FFE22523F8"
+			tasks: [
+				{
+					id: "7BDF77CC8A675E38"
+					item: "gtceu:crookesite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "63C471FFE5ECDBC2"
+					item: "gtceu:clausthalite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "39B9F7CC85BE4823"
+					item: "gtceu:tiemannite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5DB076312FF9A2B7"
+					type: "checkmark"
+				}
+			]
+			title: "Selenides"
+			x: 16.0d
+			y: 3.25d
+		}
+		{
+			dependencies: ["465533FFE22523F8"]
+			id: "4C34343E64A8511C"
+			shape: "gear"
+			tasks: [{
+				id: "11BB5E5D79F87F87"
+				item: "gtceu:selenium_dust"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 3.25d
+		}
+		{
+			dependencies: [
+				"33995F23F01ADF83"
+				"493DD013C818BB7B"
+			]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:strontianite_dust"
+			id: "4BA35C4DAC5BC054"
+			tasks: [
+				{
+					id: "46130834C0062B26"
+					item: "gtceu:strontianite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4B4F23AD5731E514"
+					type: "checkmark"
+				}
+			]
+			x: 17.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4BA35C4DAC5BC054"]
+			id: "75B8FD74E5FB5684"
+			shape: "gear"
+			tasks: [{
+				id: "3C72908574256C02"
+				item: "gtceu:strontium_dust"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 2.5d
 		}
 	]
 	title: "Processing Lines (Chap 4,5,6)"

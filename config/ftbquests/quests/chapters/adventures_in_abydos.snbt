@@ -71,8 +71,8 @@
 				item: "kubejs:uhv_computational_matrix"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -8.5d
+			x: -12.5d
+			y: -10.5d
 		}
 		{
 			dependencies: [
@@ -91,8 +91,8 @@
 				item: "kubejs:uhv_transmission_assembly"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -10.5d
+			x: -14.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -111,8 +111,8 @@
 				item: "kubejs:uhv_precision_drive_mechanism"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -9.5d
+			x: -10.5d
+			y: -10.5d
 		}
 		{
 			dependencies: [
@@ -151,8 +151,8 @@
 				item: "kubejs:uhv_super_magnetic_core"
 				type: "item"
 			}]
-			x: -13.0d
-			y: -10.5d
+			x: -14.0d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -170,8 +170,8 @@
 				item: "kubejs:uhv_catalyst_core"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -7.5d
+			x: -13.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -190,7 +190,7 @@
 				item: "kubejs:uhv_high_strength_panel"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -11.5d
 			y: -10.5d
 		}
 		{
@@ -211,8 +211,8 @@
 				item: "kubejs:uhv_micropower_router"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -10.5d
+			x: -13.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["37E3EF96EDE85C86"]
@@ -266,9 +266,8 @@
 		{
 			dependencies: [
 				"6D7188F8CA92DAAF"
-				"433B94A266536D86"
-				"06F8BF8FB54B3BEE"
 				"7BBEB3C2DADBAD8B"
+				"06F8BF8FB54B3BEE"
 			]
 			id: "7250D18797615B16"
 			rewards: [{
@@ -281,11 +280,12 @@
 				item: "gtceu:uhv_electric_motor"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -11.5d
+			x: -15.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["05EEBCD256194C78"]
+			hide_dependent_lines: true
 			id: "78777C3EE2DA5D0F"
 			rewards: [{
 				id: "2C20A0EE0D59D513"
@@ -297,11 +297,14 @@
 				item: "gtceu:uhv_electric_pump"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -10.5d
+			x: -8.5d
+			y: -10.0d
 		}
 		{
-			dependencies: ["0A321FE2FB18EA8B"]
+			dependencies: [
+				"0A321FE2FB18EA8B"
+				"433B94A266536D86"
+			]
 			id: "7FFEBA9D0BA28CF0"
 			rewards: [{
 				id: "511E3C9F19B93243"
@@ -313,11 +316,11 @@
 				item: "gtceu:uhv_conveyor_module"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -10.0d
+			x: -10.5d
+			y: -12.0d
 		}
 		{
-			dependencies: ["0A321FE2FB18EA8B"]
+			dependencies: ["433B94A266536D86"]
 			id: "64EA75A8EC94CEEF"
 			rewards: [{
 				id: "7D02D70618DA256F"
@@ -329,13 +332,14 @@
 				item: "gtceu:uhv_electric_piston"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -9.0d
+			x: -12.5d
+			y: -12.0d
 		}
 		{
 			dependencies: [
-				"4DD3C38FCD8D704D"
+				"0A321FE2FB18EA8B"
 				"64EA75A8EC94CEEF"
+				"4DD3C38FCD8D704D"
 			]
 			id: "4487EDBDEEA92303"
 			rewards: [{
@@ -348,14 +352,11 @@
 				item: "gtceu:uhv_robot_arm"
 				type: "item"
 			}]
-			x: -15.5d
-			y: -9.5d
+			x: -11.5d
+			y: -12.0d
 		}
 		{
-			dependencies: [
-				"4DD3C38FCD8D704D"
-				"5F65FECD29B8A341"
-			]
+			dependencies: ["5F65FECD29B8A341"]
 			hide_dependent_lines: true
 			id: "3212A3351DAD4492"
 			rewards: [{
@@ -368,11 +369,14 @@
 				item: "gtceu:uhv_field_generator"
 				type: "item"
 			}]
-			x: -15.5d
-			y: -7.5d
+			x: -14.5d
+			y: -11.0d
 		}
 		{
-			dependencies: ["77E6700262CDB4E0"]
+			dependencies: [
+				"77E6700262CDB4E0"
+				"4DD3C38FCD8D704D"
+			]
 			id: "5F65FECD29B8A341"
 			rewards: [{
 				id: "0565A0A0BFCECF56"
@@ -384,11 +388,15 @@
 				item: "gtceu:uhv_emitter"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -8.0d
+			x: -13.5d
+			y: -11.0d
 		}
 		{
-			dependencies: ["77E6700262CDB4E0"]
+			dependencies: [
+				"77E6700262CDB4E0"
+				"4DD3C38FCD8D704D"
+			]
+			hide_dependent_lines: true
 			id: "2D064F759D13FE4B"
 			rewards: [{
 				id: "676FF576AA972E2D"
@@ -400,8 +408,8 @@
 				item: "gtceu:uhv_sensor"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -7.0d
+			x: -14.0d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -519,7 +527,7 @@
 				}
 			]
 			title: "Better Akreyrium Processing"
-			x: -1.5d
+			x: -3.5d
 			y: 0.0d
 		}
 		{
@@ -900,7 +908,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["7AC55BA8BDD0F3D2"]
+			dependencies: [
+				"7AC55BA8BDD0F3D2"
+				"4F3EE28B3F38FC85"
+			]
 			id: "6C8C6EA426060065"
 			rewards: [{
 				count: 2
@@ -919,8 +930,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
-			y: 0.0d
+			x: -1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7AC55BA8BDD0F3D2"]
@@ -935,7 +946,7 @@
 				item: "gtceu:exotic_gas_siphon"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -5.5d
 			y: 2.0d
 		}
 		{
@@ -1342,7 +1353,7 @@
 				type: "checkmark"
 			}]
 			x: -5.5d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1407,7 +1418,6 @@
 				"78777C3EE2DA5D0F"
 				"2D064F759D13FE4B"
 			]
-			hide_dependency_lines: true
 			id: "1C9396E2587051F7"
 			rewards: [{
 				id: "170A7AD04A8BFCA6"
@@ -1430,7 +1440,7 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
+			x: 2.5d
 			y: 2.0d
 		}
 		{
@@ -1453,7 +1463,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["5BA69EDC3C223B2C"]
+			dependencies: [
+				"5BA69EDC3C223B2C"
+				"4BF64259E2567FD6"
+			]
 			hide_dependency_lines: true
 			id: "7AC55BA8BDD0F3D2"
 			rewards: [{
@@ -1475,7 +1488,7 @@
 			]
 			title: "UEPIC Chips"
 			x: -3.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2C354B0735DF8023"]
@@ -1727,6 +1740,33 @@
 			}]
 			x: 0.5d
 			y: -10.0d
+		}
+		{
+			dependencies: ["43DAD4B63603BFC3"]
+			id: "4F3EE28B3F38FC85"
+			rewards: [{
+				id: "7B18F86418699D3C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "182B26D1D8FAF134"
+				item: "kubejs:wetware_based_runic_neuroloom"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4F3EE28B3F38FC85"]
+			id: "38FB8D5DB43D0DBD"
+			tasks: [{
+				id: "0EE1A5B3BEE712BE"
+				title: "Runic (Perfect) Parallel Hatch"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.0d
 		}
 	]
 	title: "Adventures in Abydos"

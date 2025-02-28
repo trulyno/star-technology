@@ -1590,22 +1590,19 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["4D9DAED52FF74B8B"]
+			dependencies: ["74749B089D50329C"]
 			description: [
-				"In an IV tier mixer, mix lava and stone dust in a mixer to directly get the mixture."
+				"With an &5EV&r Mixer you can recycle those extra ores for some more &7Molten Ore Mixture&r, with an &9IV&r Mixer you can start looping that &8Metal Mixture&r that you get."
 				""
-				"A Large Mixer is great for the Job"
+				"A Large Mixer is Reccomended for the Job."
 			]
+			icon: "gtceu:ev_mixer"
 			id: "39CF5BCF84727BB3"
 			optional: true
 			tasks: [{
-				id: "374662B092A18740"
-				item: {
-					Count: 1
-					id: "gtceu:iv_machine_hull"
-					tag: { }
-				}
-				type: "item"
+				id: "00230717870973D6"
+				title: "Easier Molten Ore Mixture"
+				type: "checkmark"
 			}]
 			title: "Easier Molten Ore Mixture"
 			x: 5.0d
@@ -2110,7 +2107,6 @@
 		}
 		{
 			dependencies: ["0AB3A8C14C3A0512"]
-			hide_dependent_lines: true
 			icon: {
 				Count: 1
 				id: "gtceu:oil_heavy_bucket"

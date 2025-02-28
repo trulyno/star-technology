@@ -219,12 +219,6 @@
 			y: -24.5d
 		}
 		{
-			id: "4DEE790493AEC480"
-			linked_quest: "0094C2E72105E8CA"
-			x: -11.5d
-			y: -27.5d
-		}
-		{
 			id: "09F13FAB5E31E5A6"
 			linked_quest: "22F56435C5449158"
 			x: -13.0d
@@ -1344,7 +1338,7 @@
 			dependencies: ["35D5CC08AE53A7FA"]
 			id: "2F0E0C63E0DE0F5A"
 			optional: true
-			subtitle: "First UEV Circuit"
+			subtitle: "Second UEV Circuit"
 			tasks: [{
 				id: "74164D342D52608B"
 				item: {
@@ -1410,7 +1404,7 @@
 			y: -20.0d
 		}
 		{
-			dependencies: ["2F0E0C63E0DE0F5A"]
+			dependencies: ["13DB231B21353ECF"]
 			id: "5584A2F87AC8631E"
 			optional: true
 			tasks: [{
@@ -1534,6 +1528,29 @@
 			}]
 			x: -8.0d
 			y: -29.0d
+		}
+		{
+			dependencies: ["0094C2E72105E8CA"]
+			id: "1A3303CDCDA020EF"
+			tasks: [{
+				id: "2FB2B65B72C007DA"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -27.5d
+		}
+		{
+			dependencies: ["707C2E9BA62A60C5"]
+			id: "13DB231B21353ECF"
+			subtitle: "First UEV Circuit"
+			tasks: [{
+				id: "671012D85BAD1B93"
+				item: "kubejs:wetware_based_runic_neuroloom"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -15.5d
 		}
 	]
 	title: "Line Of Progression"

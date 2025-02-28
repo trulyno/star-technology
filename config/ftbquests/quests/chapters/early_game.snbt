@@ -521,7 +521,6 @@
 			dependencies: ["039D327E919878BF"]
 			description: ["Tired of needing two ingots per plate? The Mechanical Press lets you make plates for half the price early on!"]
 			id: "3E931D2E92BE9486"
-			optional: true
 			rewards: [{
 				id: "2DAE713111C2C5F7"
 				item: "kubejs:coin"
@@ -734,7 +733,6 @@
 			description: ["By heating a mixer, you can start to make your first alloys."]
 			icon: "create:mechanical_mixer"
 			id: "3F74E863172E757F"
-			optional: true
 			rewards: [{
 				id: "06C779CFE9AA509E"
 				item: "kubejs:coin"
@@ -1989,8 +1987,8 @@
 					type: "item"
 				}
 				{
-					id: "4F1C9A96AF1EE13C"
-					item: "gtceu:zinc_dust"
+					id: "2DAD8A254C70393F"
+					item: "gtceu:tin_dust"
 					type: "item"
 				}
 			]
@@ -2080,6 +2078,34 @@
 			title: "Firebrick"
 			x: 0.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["0742EF8F43044102"]
+			description: ["In &lMechanics&r Ghost Ciruits are Explained"]
+			icon: "ftbquests:book"
+			id: "0F9486CD70580835"
+			optional: true
+			tasks: [{
+				id: "3C73A5AD42AC13F0"
+				title: "Read About Ghost Circuits"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2D1184752D7ACA66"]
+			description: ["In &lMechanics&r Machine Modes are Explained"]
+			icon: "ftbquests:book"
+			id: "0A1BF10244D43021"
+			optional: true
+			tasks: [{
+				id: "26970240ABB065B0"
+				title: "Go Read About Machine Modes"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 1.75d
 		}
 	]
 	title: "Early Game"

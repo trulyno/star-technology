@@ -117,6 +117,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			size: 1.0d
 			tasks: [{
 				id: "4554283A64CAC1E3"
@@ -1331,7 +1332,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 9.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["32EF0A93C1C5F429"]
@@ -1348,9 +1349,14 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 7.5d
+			y: 5.5d
 		}
 		{
+			dependencies: [
+				"71523C429C7CA007"
+				"7AF84C014E136391"
+			]
+			dependency_requirement: "one_completed"
 			description: ["Aquired from Apatite or Monazite processing."]
 			hide_dependency_lines: true
 			id: "32EF0A93C1C5F429"
@@ -1366,7 +1372,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 5.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -2272,8 +2278,11 @@
 		{
 			dependencies: ["3B2D79D40B9617D5"]
 			description: [
-				"The Nuclear Reactor allows for easy recipes when making Uranium-235, Plutonium-239, and Plutonium-241. Additionally, it also functions as quite a powerful energy generator, capable of producing 8 EV amps, or 2 IV amps at once. "
-				"This does mean you need either a 16A EV or 4A IV dynamo hatch."
+				"The Nuclear Reactor can be used to transform &8Thorium&r into &aUranium&r and &2Uraniums&r into &cPlutoniums&r. Additionally it produces quite a lot of power."
+				""
+				"Make sure that your dynamo hatches are big enough."
+				""
+				"Oh, and maybe look into paralleling this thing when you can, you could say it causes quite the reaction."
 			]
 			id: "68865F1DDBFFFACE"
 			rewards: [{
@@ -2338,6 +2347,31 @@
 			}]
 			x: 5.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["2CABFCC73E33E133"]
+			icon: "gtceu:nand_memory_chip"
+			id: "5026437079530A67"
+			tasks: [
+				{
+					id: "78983E5E875409CA"
+					item: "gtceu:gray_glass_lens"
+					type: "item"
+				}
+				{
+					id: "7A6C4F52309534F7"
+					item: "gtceu:nand_memory_wafer"
+					type: "item"
+				}
+				{
+					id: "1FE495AA709DD162"
+					item: "gtceu:nand_memory_chip"
+					type: "item"
+				}
+			]
+			title: "NAND Memory Chips"
+			x: 16.5d
+			y: 9.5d
 		}
 	]
 	title: "Automation Age"
