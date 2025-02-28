@@ -1338,7 +1338,7 @@
 			dependencies: ["35D5CC08AE53A7FA"]
 			id: "2F0E0C63E0DE0F5A"
 			optional: true
-			subtitle: "First UEV Circuit"
+			subtitle: "Second UEV Circuit"
 			tasks: [{
 				id: "74164D342D52608B"
 				item: {
@@ -1543,6 +1543,7 @@
 		{
 			dependencies: ["707C2E9BA62A60C5"]
 			id: "13DB231B21353ECF"
+			subtitle: "First UEV Circuit"
 			tasks: [{
 				id: "671012D85BAD1B93"
 				item: "kubejs:wetware_based_runic_neuroloom"

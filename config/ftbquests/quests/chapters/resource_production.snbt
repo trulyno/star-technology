@@ -2107,7 +2107,6 @@
 		}
 		{
 			dependencies: ["0AB3A8C14C3A0512"]
-			hide_dependent_lines: true
 			icon: {
 				Count: 1
 				id: "gtceu:oil_heavy_bucket"

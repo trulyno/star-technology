@@ -2362,6 +2362,7 @@
 				"493DD013C818BB7B"
 			]
 			dependency_requirement: "one_completed"
+			icon: "gtceu:calaverite_dust"
 			id: "26A84315291888C8"
 			tasks: [
 				{
@@ -2375,6 +2376,10 @@
 					item: "gtceu:sylvanite_dust"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "03370F64AD51CD92"
+					type: "checkmark"
 				}
 			]
 			title: "Tellurides"
@@ -2399,6 +2404,7 @@
 				"493DD013C818BB7B"
 			]
 			dependency_requirement: "one_completed"
+			icon: "gtceu:tiemannite_dust"
 			id: "465533FFE22523F8"
 			tasks: [
 				{
@@ -2418,6 +2424,10 @@
 					item: "gtceu:tiemannite_dust"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "5DB076312FF9A2B7"
+					type: "checkmark"
 				}
 			]
 			title: "Selenides"
@@ -2442,13 +2452,20 @@
 				"493DD013C818BB7B"
 			]
 			dependency_requirement: "one_completed"
+			icon: "gtceu:strontianite_dust"
 			id: "4BA35C4DAC5BC054"
-			tasks: [{
-				id: "46130834C0062B26"
-				item: "gtceu:strontianite_dust"
-				optional_task: true
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "46130834C0062B26"
+					item: "gtceu:strontianite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4B4F23AD5731E514"
+					type: "checkmark"
+				}
+			]
 			x: 17.0d
 			y: 2.5d
 		}

@@ -521,7 +521,6 @@
 			dependencies: ["039D327E919878BF"]
 			description: ["Tired of needing two ingots per plate? The Mechanical Press lets you make plates for half the price early on!"]
 			id: "3E931D2E92BE9486"
-			optional: true
 			rewards: [{
 				id: "2DAE713111C2C5F7"
 				item: "kubejs:coin"
@@ -734,7 +733,6 @@
 			description: ["By heating a mixer, you can start to make your first alloys."]
 			icon: "create:mechanical_mixer"
 			id: "3F74E863172E757F"
-			optional: true
 			rewards: [{
 				id: "06C779CFE9AA509E"
 				item: "kubejs:coin"

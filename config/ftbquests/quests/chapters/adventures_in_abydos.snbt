@@ -1463,7 +1463,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["5BA69EDC3C223B2C"]
+			dependencies: [
+				"5BA69EDC3C223B2C"
+				"4BF64259E2567FD6"
+			]
 			hide_dependency_lines: true
 			id: "7AC55BA8BDD0F3D2"
 			rewards: [{

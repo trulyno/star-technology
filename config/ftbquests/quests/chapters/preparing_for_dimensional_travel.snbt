@@ -333,6 +333,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			tasks: [{
 				id: "2BDD6909E418101F"
 				item: "gtceu:heat_chamber"
@@ -438,6 +439,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			tasks: [{
 				id: "462D1C2DAFBB310A"
 				item: "gtceu:naquadic_netherite_dust"
@@ -564,6 +566,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			tasks: [{
 				id: "6DCB4B5D70F0A053"
 				item: "gtceu:melodium_ingot"

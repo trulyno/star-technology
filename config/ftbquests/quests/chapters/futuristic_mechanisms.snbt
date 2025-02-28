@@ -111,6 +111,7 @@
 		}
 		{
 			dependencies: ["421DF7880AD00F58"]
+			hide_dependent_lines: true
 			id: "79428BAEAA7856E1"
 			rewards: [{
 				count: 2
@@ -126,7 +127,7 @@
 				item: "gtceu:quantum_processor_mainframe"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: 6.5d
 		}
 		{
@@ -176,7 +177,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 6.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2587E109968EFBB4"]
@@ -193,12 +194,12 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"023794367F1B28D1"
-				"4B57B668B5220591"
+				"26126E2FA2B406E8"
 			]
 			id: "0DCF962900689BCB"
 			rewards: [{
@@ -262,25 +263,8 @@
 				item: "gtceu:luv_machine_hull"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["46D5CAA2666803D4"]
-			id: "4B57B668B5220591"
-			rewards: [{
-				id: "76B9F062DB91F80E"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "545D3332D00DE7DB"
-				item: "gtceu:twinite_single_wire"
-				type: "item"
-			}]
 			x: -4.5d
-			y: 4.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["689150D2A185216C"]
@@ -339,7 +323,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["79428BAEAA7856E1"]
+			dependencies: [
+				"79428BAEAA7856E1"
+				"6AA4CC44DE1C8E1E"
+			]
 			id: "1602A4A4D00C9724"
 			rewards: [{
 				id: "3BD74F896357D2D8"
@@ -356,8 +343,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 5.5d
+			x: -7.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -375,7 +362,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["53A9F3758C218CDC"]
@@ -391,8 +378,8 @@
 				item: "gtceu:iv_parallel_hatch"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.5d
+			x: -5.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["020048FAC9576691"]
@@ -493,6 +480,7 @@
 				"5BA69EDC3C223B2C"
 				"7D492D6B39A22DDE"
 				"783BDF78D6C56815"
+				"79428BAEAA7856E1"
 			]
 			description: [
 				"Smash elements to get more powerful materials"
@@ -864,8 +852,8 @@
 				item: "gtceu:exquisite_emerald_gem"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -5.5d
+			x: 3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5E3F7C06E05628F6"]
@@ -881,8 +869,8 @@
 				item: "gtceu:raw_crystal_chip_parts"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -1.5d
+			x: 5.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1006,7 +994,7 @@
 				item: "gtceu:luv_parallel_hatch"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: 2.5d
 		}
 		{
@@ -1241,7 +1229,7 @@
 				item: "gtceu:naquadah_alloy_ingot"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.5d
 			y: 0.5d
 		}
 		{
@@ -1258,25 +1246,8 @@
 				item: "gtceu:dragonsteel_ingot"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -0.5d
 			y: 2.5d
-		}
-		{
-			dependencies: ["7FD0034E639F3B2D"]
-			id: "5DA5E5818EA124EF"
-			rewards: [{
-				id: "156CDC207DE83B0A"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "1930C38061885B83"
-				item: "gtceu:dragonsteel_single_wire"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 4.5d
 		}
 		{
 			dependencies: ["445BC7DFD3387DD4"]
@@ -1318,7 +1289,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["111033FEFA89BA91"]
@@ -1368,8 +1339,8 @@
 				item: "gtceu:zpm_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 6.5d
+			x: 1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["417038F9E5A88B5C"]
@@ -1385,8 +1356,8 @@
 				item: "gtceu:zpm_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 6.5d
+			x: -0.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]
@@ -1686,23 +1657,6 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["3325914DB92AEF1B"]
-			id: "5C4593033E521E71"
-			rewards: [{
-				id: "3D0A65C1CF7C9D95"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "73B42566D0AB59B4"
-				item: "gtceu:prismalium_single_wire"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 4.5d
-		}
-		{
 			dependencies: ["36C01453717B249D"]
 			id: "3325914DB92AEF1B"
 			rewards: [{
@@ -1840,7 +1794,7 @@
 				type: "item"
 			}]
 			x: -12.5d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1897,6 +1851,59 @@
 			}]
 			x: -9.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["0094C2E72105E8CA"]
+			id: "32459F3D48C81752"
+			optional: true
+			tasks: [
+				{
+					id: "6926EE8EC9EA18E4"
+					item: "gtceu:void_excavator"
+					type: "item"
+				}
+				{
+					id: "0455549C6729A117"
+					item: "gtceu:rock_sifter"
+					type: "item"
+				}
+			]
+			title: "Parallel Resource Production"
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7FD0034E639F3B2D"]
+			id: "3A603E70EB4B856F"
+			tasks: [{
+				id: "4380C92864BF9161"
+				item: "gtceu:dragonsteel_single_wire"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["46D5CAA2666803D4"]
+			id: "26126E2FA2B406E8"
+			tasks: [{
+				id: "3B2B7C559D191078"
+				item: "gtceu:twinite_single_wire"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3325914DB92AEF1B"]
+			id: "56803575B2364F6A"
+			tasks: [{
+				id: "7DC8EBB02B5E2C9A"
+				item: "gtceu:prismalium_single_wire"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
 		}
 	]
 	title: "Futuristic Mechanisms"
