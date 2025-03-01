@@ -32,8 +32,8 @@
 				item: "gtceu:advanced_integrated_circuit"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 1.5d
+			x: -7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -84,8 +84,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 1.5d
+			x: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3F49250E7CE2E282"]
@@ -102,8 +102,8 @@
 				item: "gtceu:lumium_single_wire"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -0.5d
+			x: -7.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -124,8 +124,8 @@
 				item: "gtceu:lumium_ingot"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -0.5d
+			x: -9.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -144,8 +144,8 @@
 				item: "gtceu:hv_machine_hull"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 1.5d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
@@ -161,8 +161,8 @@
 				item: "gtceu:mv_circuit_assembler"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.5d
+			x: -7.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
@@ -183,8 +183,8 @@
 				item: "gtceu:multi_smelter"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 1.5d
+			x: -9.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["088FE0CF9D07F9C6"]
@@ -202,8 +202,8 @@
 				item: "gtceu:micro_processor"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 5.5d
+			x: -5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -225,8 +225,8 @@
 				item: "gtceu:microchip_processor"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 5.5d
+			x: -7.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["363F5B598683A074"]
@@ -243,8 +243,8 @@
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 5.5d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -267,8 +267,8 @@
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.5d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -309,8 +309,8 @@
 				}
 			]
 			title: "CPU Chips"
-			x: -5.5d
-			y: 3.5d
+			x: -9.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -342,8 +342,8 @@
 					type: "item"
 				}
 			]
-			x: -5.5d
-			y: 5.5d
+			x: -9.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -363,8 +363,8 @@
 				item: "gtceu:auto_maintenance_hatch"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.5d
+			x: -5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -382,8 +382,8 @@
 				item: "gtceu:hv_assembler"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -0.5d
+			x: -3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -403,8 +403,8 @@
 				item: "gtceu:hv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -2.5d
+			x: -5.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -438,8 +438,8 @@
 				}
 			]
 			title: "LPIC Chips"
-			x: -3.5d
-			y: -4.5d
+			x: -5.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
@@ -479,8 +479,8 @@
 				}
 			]
 			title: "SMD's"
-			x: 2.5d
-			y: -2.5d
+			x: -1.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
@@ -506,8 +506,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
-			y: -2.5d
+			x: -3.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["2D089B0427CFDBBE"]
@@ -523,8 +523,8 @@
 				item: "gtceu:energy_crystal"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -2.5d
+			x: -7.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -540,8 +540,8 @@
 				item: "gtceu:hv_autoclave"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -0.5d
+			x: -5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7B0133D388101F68"]
@@ -580,8 +580,8 @@
 				}
 			]
 			title: "NanoMuscle™ Suite"
-			x: -5.5d
-			y: -2.5d
+			x: -9.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -601,8 +601,8 @@
 				item: "gtceu:cleanroom"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 3.5d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -622,8 +622,8 @@
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 3.5d
+			x: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -646,8 +646,8 @@
 				item: "gtceu:micro_processor_mainframe"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 3.5d
+			x: 0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -706,8 +706,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 5.5d
+			x: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5BA3F17E1C7BE599"]
@@ -724,8 +724,8 @@
 				item: "gtceu:enderium_single_wire"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 5.5d
+			x: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1DA6B3308C263A6F"]
@@ -741,8 +741,8 @@
 				item: "gtceu:enderium_ingot"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 5.5d
+			x: 4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -761,8 +761,8 @@
 				item: "gtceu:nichrome_ingot"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 7.5d
+			x: 8.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["32B878D63A6AB6D3"]
@@ -785,8 +785,8 @@
 				item: "gtceu:nichrome_coil_block"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 5.5d
+			x: 6.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -807,8 +807,8 @@
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 7.5d
+			x: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -837,8 +837,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
-			y: 7.5d
+			x: 6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["74749B089D50329C"]
@@ -856,8 +856,8 @@
 				item: "gtceu:ev_assembler"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 9.5d
+			x: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
@@ -874,8 +874,8 @@
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 7.5d
+			x: 0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
@@ -894,8 +894,8 @@
 				item: "kubejs:multiblock_upgrade_kit"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 7.5d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -915,8 +915,8 @@
 				item: "gtceu:distillation_tower"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 7.5d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["22BC7BDE5E132A30"]
@@ -934,8 +934,8 @@
 				title: "Oil"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: 7.5d
+			x: -5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4FFD2642BC183495"]
@@ -981,8 +981,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: 7.5d
+			x: -7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1007,8 +1007,8 @@
 				item: "gtceu:prospector.hv"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 7.5d
+			x: -9.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["170C262792DA7123"]
@@ -1026,8 +1026,8 @@
 				title: "Desulfurizing"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: 9.5d
+			x: -3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["1A05644388327FA4"]
@@ -1044,8 +1044,8 @@
 				item: "gtceu:cracker"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 9.5d
+			x: -5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1073,8 +1073,8 @@
 				title: "Byproduct distilling"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: 9.5d
+			x: -7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["439D8AE6D3DC41AF"]
@@ -1091,8 +1091,8 @@
 				item: "gtceu:styrene_butadiene_rubber_bucket"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 9.5d
+			x: -9.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1112,8 +1112,8 @@
 				item: "gtceu:ev_energy_input_hatch"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 9.5d
+			x: 6.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6060E79B2D08912D"]
@@ -1130,8 +1130,8 @@
 				item: "gtceu:lapotron_crystal"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 11.5d
+			x: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1152,8 +1152,8 @@
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 11.5d
+			x: 2.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1173,8 +1173,8 @@
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 9.5d
+			x: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1210,8 +1210,8 @@
 				}
 			]
 			title: "Distilling Liquid Air"
-			x: 2.5d
-			y: 9.5d
+			x: -1.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["74749B089D50329C"]
@@ -1228,8 +1228,8 @@
 				item: "gtceu:cupric_chloride_solution_bucket"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 7.5d
+			x: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -1260,8 +1260,8 @@
 				}
 			]
 			title: "MPIC Chips"
-			x: 12.5d
-			y: 9.5d
+			x: 8.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6EB85BBD539AEB57"]
@@ -1279,8 +1279,8 @@
 				item: "gtceu:phosphorus_wafer"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 9.5d
+			x: 10.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["75CCD3B6125B55C4"]
@@ -1296,8 +1296,8 @@
 				item: "gtceu:ev_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 11.5d
+			x: 8.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["32FF3127152DCD7D"]
@@ -1313,8 +1313,8 @@
 				item: "gtceu:ev_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 11.5d
+			x: 10.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["2231C06CE59E0074"]
@@ -1331,8 +1331,8 @@
 				item: "gtceu:phosphorus_boule"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 7.5d
+			x: 12.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["32EF0A93C1C5F429"]
@@ -1348,8 +1348,8 @@
 				item: "gtceu:phosphorus_dust"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 5.5d
+			x: 12.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1371,8 +1371,8 @@
 				item: "gtceu:phosphate_dust"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 3.5d
+			x: 12.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -1403,8 +1403,8 @@
 				}
 			]
 			title: "SoC Chips"
-			x: 16.5d
-			y: 11.5d
+			x: 12.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1424,8 +1424,8 @@
 				item: "gtceu:ender_air_bucket"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 11.5d
+			x: -1.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0F1D766E2E2EEEB5"]
@@ -1442,8 +1442,8 @@
 				item: "gtceu:nether_air_bucket"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 12.5d
+			x: -1.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5E1E1A4F5036A6EA"]
@@ -1459,8 +1459,8 @@
 				item: "mysticalagriculture:end_agglomeratio"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 11.5d
+			x: -3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["549B363564644706"]
@@ -1476,8 +1476,8 @@
 				item: "mysticalagriculture:nether_agglomeratio"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 12.5d
+			x: -3.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0725DE9E90815AB4"]
@@ -1493,8 +1493,8 @@
 				item: "gtceu:netherrack_dust"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 12.5d
+			x: -4.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["4E9FAED9D889160A"]
@@ -1510,8 +1510,8 @@
 				item: "gtceu:endstone_dust"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 11.5d
+			x: -4.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -1528,8 +1528,8 @@
 				item: "minecraft:end_stone"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 11.5d
+			x: -6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -1546,8 +1546,8 @@
 				item: "minecraft:netherrack"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 12.5d
+			x: -6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0F0FEE1952A3CB4F"]
@@ -1567,8 +1567,8 @@
 				type: "item"
 			}]
 			title: "Large Chemical Reactor (LCR)"
-			x: -3.5d
-			y: 12.0d
+			x: -7.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1588,8 +1588,8 @@
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 3.5d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1611,8 +1611,8 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 3.5d
+			x: 6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["059FD3E475A05070"]
@@ -1629,8 +1629,8 @@
 				item: "gtceu:data_orb"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 3.5d
+			x: 10.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0514DE717001A062"]
@@ -1647,8 +1647,8 @@
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 3.5d
+			x: 8.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1670,8 +1670,8 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 5.5d
+			x: 10.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["076532C492102F8E"]
@@ -1699,8 +1699,8 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: 1.5d
+			x: 8.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1730,8 +1730,8 @@
 				}
 			]
 			title: "Nano CPU Chips"
-			x: 12.5d
-			y: 5.5d
+			x: 8.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4D49884E7F5BCBB4"]
@@ -1747,8 +1747,8 @@
 				item: "gtceu:epoxy_plate"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 1.5d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -1779,8 +1779,8 @@
 				}
 			]
 			title: "NOR Memory Chips"
-			x: 14.5d
-			y: 7.5d
+			x: 10.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1800,8 +1800,8 @@
 				item: "gtceu:iv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -0.5d
+			x: 4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -1823,8 +1823,8 @@
 				item: "gtceu:iv_assembler"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 1.5d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4BCE8A9EBDF113CE"]
@@ -1842,8 +1842,8 @@
 				item: "gtceu:iv_machine_hull"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 1.5d
+			x: 0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7CACFC7C9101EA59"]
@@ -1859,8 +1859,8 @@
 				item: "gtceu:iv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -2.5d
+			x: 6.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["4A45669665626026"]
@@ -1876,8 +1876,8 @@
 				item: "gtceu:iv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -2.5d
+			x: 8.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1928,8 +1928,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 1.5d
+			x: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1C05C80BCB4736B6"]
@@ -1946,8 +1946,8 @@
 				item: "gtceu:shellite_single_wire"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -0.5d
+			x: -1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -1964,8 +1964,8 @@
 				item: "gtceu:shellite_ingot"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -2.5d
+			x: 0.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["2D4F9DFF6B559C65"]
@@ -1992,8 +1992,8 @@
 				}
 			]
 			title: "HPIC Chips"
-			x: 8.5d
-			y: -2.5d
+			x: 4.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -2014,8 +2014,8 @@
 				item: "gtceu:lapotronic_energy_orb"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 1.5d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["352B3D23A2C7DE74"]
@@ -2033,8 +2033,8 @@
 				item: "gtceu:engraved_lapotron_crystal_chip"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 1.5d
+			x: 6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["45AAA2B53069E806"]
@@ -2061,8 +2061,8 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
-			y: -0.5d
+			x: 6.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -2082,8 +2082,8 @@
 				item: "gtceu:reinforced_epoxy_resin_plate"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -0.5d
+			x: 8.5d
+			y: -5.0d
 		}
 		{
 			id: "5B575348D2A871BB"
@@ -2099,8 +2099,8 @@
 				item: "gtceu:fine_borosilicate_glass_wire"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -0.5d
+			x: 10.5d
+			y: -5.0d
 		}
 		{
 			id: "4FF433145C67693F"
@@ -2116,8 +2116,8 @@
 				item: "gtceu:carbon_fibers"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -2.5d
+			x: 10.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -2161,8 +2161,8 @@
 				}
 			]
 			title: "Advanced SMD's"
-			x: 6.5d
-			y: -2.5d
+			x: 2.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -2183,8 +2183,8 @@
 				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -0.5d
+			x: 2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -2201,8 +2201,8 @@
 				item: "gtceu:hssg_ingot"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -0.5d
+			x: 0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["689150D2A185216C"]
@@ -2218,8 +2218,8 @@
 				item: "gtceu:hsse_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: 2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["689150D2A185216C"]
@@ -2235,8 +2235,8 @@
 				item: "gtceu:hsss_ingot"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -1.5d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["10F2237FF0C87F62"]
@@ -2252,8 +2252,8 @@
 				item: "gtceu:graphene_dust"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -4.5d
+			x: 2.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -2272,8 +2272,8 @@
 				item: "gtceu:alloy_blast_smelter"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 11.5d
+			x: 4.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -2298,8 +2298,8 @@
 				item: "gtceu:nuclear_reactor"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 11.5d
+			x: 0.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -2316,8 +2316,8 @@
 				item: "gtceu:radon_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 9.5d
+			x: 0.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -2333,8 +2333,8 @@
 				title: "Go Read About Perfect Overclock"
 				type: "checkmark"
 			}]
-			x: -5.0d
-			y: 11.0d
+			x: -9.0d
+			y: 6.5d
 		}
 		{
 			id: "56B0A897E7C7C25C"
@@ -2345,8 +2345,8 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: 4.0d
-			y: 4.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -2370,8 +2370,8 @@
 				}
 			]
 			title: "NAND Memory Chips"
-			x: 16.5d
-			y: 9.5d
+			x: 12.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -2384,8 +2384,8 @@
 				title: "Go Read About Chemical Skips"
 				type: "checkmark"
 			}]
-			x: -5.0d
-			y: 13.0d
+			x: -9.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
@@ -2398,8 +2398,8 @@
 				title: "Go Read About Distinct Buses"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: 8.5d
+			x: -0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -2417,8 +2417,8 @@
 				title: "Go Read About Lockable Hatches"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: 8.5d
+			x: -2.5d
+			y: 4.0d
 		}
 	]
 	title: "Automation Age"

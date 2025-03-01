@@ -12,20 +12,20 @@
 		{
 			id: "727DEC5336F4793D"
 			linked_quest: "37E3EF96EDE85C86"
-			x: -9.5d
-			y: -8.0d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
 			id: "4BF64259E2567FD6"
 			linked_quest: "0C19C040CA121E3B"
-			x: -7.5d
-			y: -8.0d
+			x: -2.5d
+			y: -3.0d
 		}
 		{
 			id: "723E27B22576F175"
 			linked_quest: "1BE69DB2DFDC35C8"
-			x: -9.5d
-			y: -6.0d
+			x: -4.5d
+			y: -1.0d
 		}
 	]
 	quests: [
@@ -51,8 +51,8 @@
 				title: "A new world!"
 				type: "checkmark"
 			}]
-			x: -7.5d
-			y: -6.0d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -71,8 +71,8 @@
 				item: "kubejs:uhv_computational_matrix"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -10.5d
+			x: -7.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -91,8 +91,8 @@
 				item: "kubejs:uhv_transmission_assembly"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -7.5d
+			x: -9.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -111,8 +111,8 @@
 				item: "kubejs:uhv_precision_drive_mechanism"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -10.5d
+			x: -5.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -130,8 +130,8 @@
 				item: "kubejs:uhv_microfluidic_flow_valve"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -9.5d
+			x: -4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -151,8 +151,8 @@
 				item: "kubejs:uhv_super_magnetic_core"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -8.5d
+			x: -9.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -170,8 +170,8 @@
 				item: "kubejs:uhv_catalyst_core"
 				type: "item"
 			}]
-			x: -13.0d
-			y: -9.5d
+			x: -8.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -190,8 +190,8 @@
 				item: "kubejs:uhv_high_strength_panel"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -10.5d
+			x: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -211,8 +211,8 @@
 				item: "kubejs:uhv_micropower_router"
 				type: "item"
 			}]
-			x: -13.0d
-			y: -8.0d
+			x: -8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["37E3EF96EDE85C86"]
@@ -227,8 +227,8 @@
 				item: "gtceu:zalloy_ingot"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -8.0d
+			x: -6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -243,8 +243,8 @@
 				item: "gtceu:selenium_dust"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -4.0d
+			x: -4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1BE69DB2DFDC35C8"]
@@ -260,8 +260,8 @@
 				item: "gtceu:zircalloy_4_ingot"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -7.0d
+			x: -5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -280,8 +280,8 @@
 				item: "gtceu:uhv_electric_motor"
 				type: "item"
 			}]
-			x: -15.0d
-			y: -8.0d
+			x: -10.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["05EEBCD256194C78"]
@@ -297,8 +297,8 @@
 				item: "gtceu:uhv_electric_pump"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -10.0d
+			x: -3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -316,8 +316,8 @@
 				item: "gtceu:uhv_conveyor_module"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -12.0d
+			x: -5.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["433B94A266536D86"]
@@ -332,8 +332,8 @@
 				item: "gtceu:uhv_electric_piston"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -12.0d
+			x: -7.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -352,8 +352,8 @@
 				item: "gtceu:uhv_robot_arm"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -12.0d
+			x: -6.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5F65FECD29B8A341"]
@@ -369,8 +369,8 @@
 				item: "gtceu:uhv_field_generator"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -11.0d
+			x: -9.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -388,8 +388,8 @@
 				item: "gtceu:uhv_emitter"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -11.0d
+			x: -8.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -408,8 +408,8 @@
 				item: "gtceu:uhv_sensor"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -10.0d
+			x: -9.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -428,8 +428,8 @@
 				item: "gtceu:iron_selenide_over_strontium_titanium_oxide_ingot"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -2.0d
+			x: -4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -444,8 +444,8 @@
 				item: "gtceu:strontium_dust"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -4.0d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -464,8 +464,8 @@
 				item: "gtceu:zirconium_selenide_diiodide_ingot"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -4.0d
+			x: -6.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["179A15014A5716B5"]
@@ -483,8 +483,8 @@
 				item: "gtceu:cyclonic_crystalline_sieve"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -2.0d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1A8F645AC1B30411"]
@@ -499,8 +499,8 @@
 				item: "gtceu:folding_akreyrium_stabiliser"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -2.0d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -527,8 +527,8 @@
 				}
 			]
 			title: "Better Akreyrium Processing"
-			x: -3.5d
-			y: 0.0d
+			x: 1.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -562,8 +562,8 @@
 				}
 			]
 			title: "Utopian Akreyrium"
-			x: -1.5d
-			y: -2.0d
+			x: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
@@ -583,8 +583,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: -10.0d
+			x: 3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
@@ -604,8 +604,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: -10.0d
+			x: 1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6F05FAE3F5AAC357"]
@@ -634,8 +634,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: -8.0d
+			x: 1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -653,8 +653,8 @@
 				title: "Ancient Structures"
 				type: "structure"
 			}]
-			x: -5.5d
-			y: -6.0d
+			x: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -675,8 +675,8 @@
 				type: "item"
 			}]
 			title: "Otherworldly Biology"
-			x: -5.5d
-			y: -8.0d
+			x: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7F72F9E28713D965"]
@@ -807,8 +807,8 @@
 				type: "item"
 			}]
 			title: "Bacterial Colonies"
-			x: -1.5d
-			y: -8.0d
+			x: 3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -852,8 +852,8 @@
 				}
 			]
 			title: "Runic Tablet Fragments"
-			x: -3.5d
-			y: -6.0d
+			x: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5744150A5658FE4D"]
@@ -869,8 +869,8 @@
 				item: "kubejs:runic_tablet_complete"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -6.0d
+			x: 3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -888,8 +888,8 @@
 				item: "gtceu:ancient_runicalium_ingot"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -6.0d
+			x: -6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["30C974448C57F0EC"]
@@ -904,8 +904,8 @@
 				item: "gtceu:ancient_runicalium_single_wire"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -4.0d
+			x: -8.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -930,8 +930,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 2.0d
+			x: 3.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["7AC55BA8BDD0F3D2"]
@@ -946,8 +946,8 @@
 				item: "gtceu:exotic_gas_siphon"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 2.0d
+			x: -0.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["3540AE6C940F985B"]
@@ -965,8 +965,8 @@
 				item: "kubejs:ancient_stargate_computer_core"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -4.0d
+			x: 11.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -990,8 +990,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: -6.0d
+			x: 11.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5FCA8ED151CEB5C1"]
@@ -1012,8 +1012,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: -6.0d
+			x: 9.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1037,8 +1037,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: -6.0d
+			x: 13.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["442233119AED645F"]
@@ -1056,8 +1056,8 @@
 				item: "kubejs:ancient_chevron_disk"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -4.0d
+			x: 15.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["379D69A44FC5B2F2"]
@@ -1080,8 +1080,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: -10.0d
+			x: 9.5d
+			y: -5.0d
 		}
 		{
 			can_repeat: true
@@ -1102,8 +1102,8 @@
 				title: "Get Nether Coordinates"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: 0.0d
+			x: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1121,8 +1121,8 @@
 				item: "kubejs:draconic_coordinate_core"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -4.0d
+			x: 9.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -1137,8 +1137,8 @@
 				item: "kubejs:nether_coordinate_crystal"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -2.0d
+			x: 5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -1153,8 +1153,8 @@
 				item: "kubejs:end_coordinate_crystal"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -4.0d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
 			can_repeat: true
@@ -1175,8 +1175,8 @@
 				title: "Get End Coordinates"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: -4.0d
+			x: 3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1278,8 +1278,8 @@
 				}
 			]
 			title: "The Ancient Gate"
-			x: 6.5d
-			y: -8.5d
+			x: 11.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5E7153B7A10FC241"]
@@ -1301,8 +1301,8 @@
 				type: "dimension"
 			}]
 			title: "To The End"
-			x: 7.0d
-			y: -11.0d
+			x: 12.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5E7153B7A10FC241"]
@@ -1324,8 +1324,8 @@
 				title: "To The Nether"
 				type: "dimension"
 			}]
-			x: 6.0d
-			y: -11.0d
+			x: 11.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["47DF7968E9B98C65"]
@@ -1338,8 +1338,8 @@
 				title: "Cheaper HydroCarbons"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: -10.0d
+			x: -0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["2659B3AA9108BC43"]
@@ -1352,8 +1352,8 @@
 				title: "Cheaper Gases"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: 0.0d
+			x: -0.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1371,8 +1371,8 @@
 				item: "kubejs:void_core"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.0d
+			x: 7.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1390,8 +1390,8 @@
 				item: "kubejs:hell_core"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.0d
+			x: 7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1C9396E2587051F7"]
@@ -1410,8 +1410,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1440,8 +1440,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 2.0d
+			x: 7.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6110BA7B3E84F06F"]
@@ -1459,8 +1459,8 @@
 				item: "kubejs:zalloy_coil_block"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -6.0d
+			x: -8.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1487,8 +1487,8 @@
 				}
 			]
 			title: "UEPIC Chips"
-			x: -3.5d
-			y: 2.0d
+			x: 1.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["2C354B0735DF8023"]
@@ -1516,8 +1516,8 @@
 				}
 			]
 			title: "Runic Engraved Casings"
-			x: 2.5d
-			y: -8.0d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1547,8 +1547,8 @@
 				}
 			]
 			title: "Multi-Engraved Runic Plating"
-			x: 2.5d
-			y: -6.0d
+			x: 7.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1573,8 +1573,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
-			y: -8.0d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1605,8 +1605,8 @@
 				}
 			]
 			title: "Advanced Engraved Runes"
-			x: 0.5d
-			y: -6.0d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1629,8 +1629,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
-			y: -2.0d
+			x: 15.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -1662,8 +1662,8 @@
 				}
 			]
 			title: "Gritty Akreyrium"
-			x: -5.5d
-			y: -4.0d
+			x: -0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -1680,8 +1680,8 @@
 				type: "item"
 			}]
 			title: "Better Research Heat Sink"
-			x: -3.5d
-			y: -4.0d
+			x: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5E7153B7A10FC241"]
@@ -1704,8 +1704,8 @@
 				type: "checkmark"
 			}]
 			title: "You have completed the Epsilon Version of Star Technology"
-			x: 8.5d
-			y: -10.0d
+			x: 13.5d
+			y: -5.0d
 		}
 		{
 			id: "39E723ECCBEE0A0A"
@@ -1716,8 +1716,8 @@
 				title: "Positioner"
 				type: "checkmark"
 			}]
-			x: -5.0d
-			y: -5.0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1738,8 +1738,8 @@
 				item: "kubejs:inscribe_casing"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -10.0d
+			x: 5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["43DAD4B63603BFC3"]
@@ -1754,8 +1754,8 @@
 				item: "kubejs:wetware_based_runic_neuroloom"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.0d
+			x: 5.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["4F3EE28B3F38FC85"]
@@ -1765,8 +1765,8 @@
 				title: "Runic (Perfect) Parallel Hatch"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: 0.0d
+			x: 3.5d
+			y: 5.0d
 		}
 	]
 	title: "Adventures in Abydos"

@@ -12,16 +12,16 @@
 		{
 			id: "6C0C5B78AF1106A2"
 			linked_quest: "38B3A7FC309E12E2"
-			x: -13.5d
-			y: -5.5d
+			x: -10.0d
+			y: -7.5d
 		}
 		{
 			id: "46DF7D3C17E47774"
 			linked_quest: "73931EAA3EC5C9A9"
 			shape: "gear"
 			size: 1.5d
-			x: 14.5d
-			y: 7.5d
+			x: 16.0d
+			y: 3.5d
 		}
 	]
 	quests: [
@@ -40,8 +40,8 @@
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -3.5d
+			x: -2.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["234CE57A62FB8D82"]
@@ -58,8 +58,8 @@
 				item: "gtceu:lv_wiremill"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -3.5d
+			x: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["523F20DC5FA04229"]
@@ -76,8 +76,8 @@
 				item: "gtceu:lv_lathe"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.5d
+			x: 0.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -93,11 +93,11 @@
 				item: "gtceu:lv_polarizer"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 0.5d
+			x: -6.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["53E98CFC7934FA67"]
+			dependencies: ["71DAA3541CEC96DD"]
 			description: ["A LV component thats used everywhere."]
 			id: "234CE57A62FB8D82"
 			rewards: [{
@@ -113,8 +113,8 @@
 				item: "gtceu:lv_electric_motor"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -1.5d
+			x: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -135,8 +135,8 @@
 				type: "item"
 			}]
 			title: "Electric Ore Factory"
-			x: -1.5d
-			y: 4.5d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -152,8 +152,8 @@
 				item: "gtceu:lv_alloy_smelter"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -3.5d
+			x: -10.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["234CE57A62FB8D82"]
@@ -169,8 +169,8 @@
 				item: "gtceu:lv_mixer"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 0.5d
+			x: -4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["234CE57A62FB8D82"]
@@ -186,7 +186,7 @@
 				item: "gtceu:lv_chemical_reactor"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -2.0d
 			y: -3.5d
 		}
 		{
@@ -202,8 +202,8 @@
 				item: "gtceu:lv_electric_piston"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.5d
+			x: -2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["523F20DC5FA04229"]
@@ -219,8 +219,8 @@
 				item: "gtceu:lv_macerator"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 0.5d
+			x: -4.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["523F20DC5FA04229"]
@@ -236,8 +236,8 @@
 				item: "gtceu:lv_forge_hammer"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.5d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["523F20DC5FA04229"]
@@ -253,8 +253,8 @@
 				item: "gtceu:lv_robot_arm"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 0.5d
+			x: 0.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["234CE57A62FB8D82"]
@@ -270,8 +270,8 @@
 				item: "gtceu:lv_conveyor_module"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 0.5d
+			x: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -290,8 +290,8 @@
 				item: "gtceu:lv_assembler"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 2.5d
+			x: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4B51B15B49620F57"]
@@ -310,8 +310,8 @@
 				item: "gtceu:lv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.5d
+			x: 2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -330,8 +330,8 @@
 				item: "gtceu:lv_cutter"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 2.5d
+			x: -2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5D3B5EF195A3093B"]
@@ -346,8 +346,8 @@
 				item: "gtceu:cobalt_brass_buzz_saw_blade"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 6.5d
+			x: -2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0E88CB5E68212006"]
@@ -363,8 +363,8 @@
 				item: "gtceu:cobalt_dust"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 6.5d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["234CE57A62FB8D82"]
@@ -380,8 +380,8 @@
 				item: "gtceu:lv_centrifuge"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -3.5d
+			x: -6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["234CE57A62FB8D82"]
@@ -396,8 +396,8 @@
 				item: "gtceu:lv_electric_pump"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 2.5d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -416,8 +416,8 @@
 				item: "gtceu:lv_gas_collector"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 4.5d
+			x: -4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2AFD24A844E49C42"]
@@ -433,8 +433,8 @@
 				item: "gtceu:lv_fluid_solidifier"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 4.5d
+			x: -6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2AFD24A844E49C42"]
@@ -450,8 +450,8 @@
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 2.5d
+			x: -8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -467,8 +467,8 @@
 				item: "gtceu:lv_electrolyzer"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -3.5d
+			x: -8.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -484,8 +484,8 @@
 				item: "gtceu:graphite_dust"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -1.5d
+			x: 4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["10F2237FF0C87F62"]
@@ -502,8 +502,8 @@
 				item: "gtceu:lv_arc_furnace"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -1.5d
+			x: 2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["620F1881452C03B6"]
@@ -519,8 +519,8 @@
 				item: "thermal:obsidian_glass"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 6.5d
+			x: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -548,8 +548,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: 4.5d
+			x: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -565,8 +565,8 @@
 				item: "gtceu:lv_super_chest"
 				type: "item"
 			}]
-			x: -15.5d
-			y: -1.5d
+			x: -10.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -637,8 +637,8 @@
 				}
 			]
 			title: "Electric Blast Furnace (EBF)"
-			x: 4.5d
-			y: 2.5d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["56BA79287C4DBE52"]
@@ -663,8 +663,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.5d
+			x: 6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["56BA79287C4DBE52"]
@@ -680,8 +680,8 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 2.5d
+			x: 8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7CA424E05FB05DFF"]
@@ -696,8 +696,8 @@
 				item: "gtceu:realgar_dust"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 8.5d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -715,8 +715,8 @@
 				item: "gtceu:gallium_arsenide_dust"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 8.5d
+			x: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
@@ -731,8 +731,8 @@
 				item: "gtceu:sphalerite_dust"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 10.5d
+			x: 2.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["77FB57773EFE8D6C"]
@@ -748,8 +748,8 @@
 				item: "gtceu:diode"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 9.5d
+			x: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -767,8 +767,8 @@
 				item: "gtceu:silicon_boule"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 6.5d
+			x: 6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -790,8 +790,8 @@
 				item: "gtceu:silicon_wafer"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 7.5d
+			x: 8.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -809,8 +809,8 @@
 				item: "gtceu:vanadium_steel_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 4.5d
+			x: 4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -829,8 +829,8 @@
 				item: "gtceu:mv_cutter"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 4.5d
+			x: 8.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["60F649FC6E64DFD9"]
@@ -846,8 +846,8 @@
 				item: "gtceu:mv_machine_hull"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 2.5d
+			x: 10.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -896,8 +896,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 0.5d
+			x: 8.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["12C9427A04A2F550"]
@@ -913,8 +913,8 @@
 				item: "gtceu:mv_laser_engraver"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 4.5d
+			x: 10.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -944,8 +944,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 11.5d
+			x: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -969,8 +969,8 @@
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 10.5d
+			x: 8.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7836F17B34B47B16"]
@@ -988,8 +988,8 @@
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 10.5d
+			x: 12.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7836F17B34B47B16"]
@@ -1005,8 +1005,8 @@
 				item: "gtceu:tree_greenhouse"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 11.5d
+			x: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1025,8 +1025,8 @@
 				item: "gtceu:pyrolyse_oven"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 0.5d
+			x: 12.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1046,8 +1046,8 @@
 				item: "gtceu:basic_integrated_circuit"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 8.5d
+			x: 12.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["70875F86587758D7"]
@@ -1064,8 +1064,8 @@
 				item: "gtceu:good_integrated_circuit"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 8.5d
+			x: 14.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1105,8 +1105,8 @@
 				}
 			]
 			title: "IC Chips"
-			x: 8.5d
-			y: 8.5d
+			x: 10.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1146,8 +1146,8 @@
 				}
 			]
 			title: "ULPIC Chips"
-			x: 8.5d
-			y: 6.5d
+			x: 10.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1169,8 +1169,8 @@
 				item: "gtceu:mv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 4.5d
+			x: 12.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["12C9427A04A2F550"]
@@ -1186,8 +1186,8 @@
 				item: "gtceu:mv_assembler"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 2.5d
+			x: 12.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1209,8 +1209,8 @@
 				item: "gtceu:lv_super_tank"
 				type: "item"
 			}]
-			x: -15.5d
-			y: -5.5d
+			x: -7.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["7EC83EEF3F7A89B8"]
@@ -1235,8 +1235,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
-			y: 1.5d
+			x: 13.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4597B95C2F5EE106"]
@@ -1281,8 +1281,8 @@
 				}
 			]
 			title: "Rare Earth Metals"
-			x: -3.5d
-			y: 8.5d
+			x: -2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
@@ -1298,8 +1298,8 @@
 				item: "ae2:certus_quartz_crystal"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.5d
+			x: 6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["0A03B4D352DCF148"]
@@ -1324,8 +1324,8 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: 6.5d
+			x: 14.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0A03B4D352DCF148"]
@@ -1341,8 +1341,8 @@
 				item: "gtceu:stainless_steel_ingot"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 6.5d
+			x: 12.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7A9839144373C80D"]
@@ -1357,8 +1357,8 @@
 				item: "gtceu:kanthal_ingot"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 4.5d
+			x: 14.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6749EECB949732DB"]
@@ -1377,8 +1377,8 @@
 				item: "gtceu:kanthal_coil_block"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 2.5d
+			x: 14.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0E61DC74B2E2C962"]
@@ -1403,8 +1403,8 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: 0.5d
+			x: 14.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1427,8 +1427,8 @@
 				item: "ae2:energy_acceptor"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -4.5d
+			x: 14.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -1463,8 +1463,8 @@
 				}
 			]
 			title: "Inscriber Presses"
-			x: 14.5d
-			y: -1.5d
+			x: 16.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1509,8 +1509,8 @@
 				}
 			]
 			title: "Printed Circuits"
-			x: 12.5d
-			y: -1.5d
+			x: 14.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -1537,8 +1537,8 @@
 					type: "item"
 				}
 			]
-			x: -13.5d
-			y: 0.5d
+			x: -10.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["35D6B5C30A3A2AE0"]
@@ -1555,8 +1555,8 @@
 				item: "create_new_age:energiser_t1"
 				type: "item"
 			}]
-			x: -15.5d
-			y: 2.5d
+			x: -7.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["75BF415FDA4AB79F"]
@@ -1572,8 +1572,8 @@
 				item: "create_new_age:energiser_t2"
 				type: "item"
 			}]
-			x: -15.5d
-			y: 4.5d
+			x: -7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["04876D3FDD4BE6F7"]
@@ -1591,8 +1591,8 @@
 				item: "create_new_age:energiser_t3"
 				type: "item"
 			}]
-			x: -15.5d
-			y: 6.5d
+			x: -7.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["35D6B5C30A3A2AE0"]
@@ -1608,8 +1608,8 @@
 				item: "create_new_age:magnetite_block"
 				type: "item"
 			}]
-			x: -13.5d
-			y: 2.5d
+			x: -10.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["125AA2F183B4FBB9"]
@@ -1625,8 +1625,8 @@
 				item: "create_new_age:redstone_magnet"
 				type: "item"
 			}]
-			x: -13.5d
-			y: 4.5d
+			x: -10.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["574E12BF11F87405"]
@@ -1642,8 +1642,8 @@
 				item: "create_new_age:layered_magnet"
 				type: "item"
 			}]
-			x: -13.5d
-			y: 6.5d
+			x: -10.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5FD374ACECB3E571"]
@@ -1659,8 +1659,8 @@
 				item: "create_new_age:fluxuated_magnetite"
 				type: "item"
 			}]
-			x: -13.5d
-			y: 8.5d
+			x: -10.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1681,8 +1681,8 @@
 				item: "create_new_age:netherite_magnet"
 				type: "item"
 			}]
-			x: -13.5d
-			y: 10.5d
+			x: -10.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["35D6B5C30A3A2AE0"]
@@ -1699,8 +1699,8 @@
 				item: "create_new_age:copper_wire"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 2.5d
+			x: -8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["714E51B6F0863FA6"]
@@ -1717,8 +1717,8 @@
 				item: "create_new_age:overcharged_iron_wire"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 4.5d
+			x: -8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["24EC88E9B8205348"]
@@ -1735,8 +1735,8 @@
 				item: "create_new_age:overcharged_golden_wire"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 6.5d
+			x: -8.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3CD2FE0563B226A7"]
@@ -1755,8 +1755,8 @@
 				item: "create_new_age:overcharged_diamond_wire"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 8.5d
+			x: -8.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["12C9427A04A2F550"]
@@ -1772,8 +1772,8 @@
 				item: "gtceu:silicone_rubber_bucket"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 0.5d
+			x: 10.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["20A12F3B992762F0"]
@@ -1786,8 +1786,8 @@
 				item: { Count: 8, id: "gtceu:basic_electronic_circuit" }
 				type: "item"
 			}]
-			x: -13.5d
-			y: -1.5d
+			x: -8.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1812,8 +1812,8 @@
 				item: "gtceu:rock_filtrator"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.5d
+			x: 4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -1835,8 +1835,8 @@
 				item: "gtceu:void_extractor"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 4.5d
+			x: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7CA424E05FB05DFF"]
@@ -1855,8 +1855,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 8.5d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7CA424E05FB05DFF"]
@@ -1875,8 +1875,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 6.5d
+			x: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1892,8 +1892,8 @@
 				title: "Processing Line Questbook Chapter"
 				type: "checkmark"
 			}]
-			x: 2.5d
-			y: 11.5d
+			x: 4.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -1905,8 +1905,8 @@
 				title: "Resource Production Questbook Chapter"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: 6.5d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			id: "0A0DC5148CC45DCB"
@@ -1917,8 +1917,8 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: -1.0d
-			y: 4.0d
+			x: 0.25d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1932,8 +1932,8 @@
 				title: "Go Check out the Applied Energistic Questbook"
 				type: "checkmark"
 			}]
-			x: 12.5d
-			y: -3.0d
+			x: 14.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["76B701A5EF4C1EF1"]
@@ -1950,8 +1950,8 @@
 				item: "gtceu:annealed_copper_ingot"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 10.5d
+			x: 16.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1969,8 +1969,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: 2.5d
+			x: 16.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -2011,8 +2011,8 @@
 				}
 			]
 			title: "RAM Chips"
-			x: 8.5d
-			y: 7.5d
+			x: 10.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -2025,8 +2025,8 @@
 				title: "Go Check Out the \"Power\" Chapter"
 				type: "checkmark"
 			}]
-			x: -15.5d
-			y: 0.5d
+			x: -7.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -2044,8 +2044,8 @@
 				item: "gtceu:mechanical_sieve"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.5d
+			x: 2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -2058,8 +2058,8 @@
 				title: "Production Lines Questbook Page(s)"
 				type: "checkmark"
 			}]
-			x: -15.5d
-			y: -3.5d
+			x: -7.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["56BA79287C4DBE52"]
@@ -2072,8 +2072,8 @@
 				title: "Go Read About Overclock"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: 1.5d
+			x: 5.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["70875F86587758D7"]
@@ -2086,8 +2086,8 @@
 				title: "Go Read About Cheaper Circuits"
 				type: "checkmark"
 			}]
-			x: 11.5d
-			y: 9.5d
+			x: 13.0d
+			y: 5.5d
 		}
 	]
 	title: "Industrial Revolution"

@@ -1,5 +1,5 @@
 {
-	autofocus_id: "0889A97E22C484CC"
+	autofocus_id: "18A35D008CA73084"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "preparing_for_dimensional_travel"
@@ -11,7 +11,7 @@
 	quest_links: [{
 		id: "6AA4625E98ED37B8"
 		linked_quest: "2F87FC1D5BB43220"
-		x: -1.0d
+		x: 4.0d
 		y: 0.5d
 	}]
 	quests: [
@@ -32,7 +32,7 @@
 				item: "gtceu:wetware_processor_mainframe"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: 6.5d
 		}
 		{
@@ -51,7 +51,7 @@
 				item: "gtceu:max_battery"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: 4.5d
 		}
 		{
@@ -73,7 +73,7 @@
 				item: "gtceu:uv_fusion_reactor"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: 4.5d
 		}
 		{
@@ -92,7 +92,7 @@
 				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: 2.5d
 		}
 		{
@@ -108,7 +108,7 @@
 				item: "gtceu:ruthenium_trinium_americium_neutronate_ingot"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: 0.5d
 		}
 		{
@@ -127,7 +127,7 @@
 				item: "gtceu:uhv_machine_hull"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -6.0d
 			y: 2.5d
 		}
 		{
@@ -150,7 +150,7 @@
 				item: "gtceu:uhv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -4.0d
 			y: 4.5d
 		}
 		{
@@ -166,7 +166,7 @@
 				item: "gtceu:uhv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -6.0d
 			y: 4.5d
 		}
 		{
@@ -185,7 +185,7 @@
 				item: "gtceu:uhv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: -13.0d
+			x: -8.0d
 			y: 4.5d
 		}
 		{
@@ -201,7 +201,7 @@
 				item: "gtceu:uv_parallel_hatch"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: 8.5d
 		}
 		{
@@ -220,7 +220,7 @@
 				item: "gtceu:uhv_ultimate_battery"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 2.0d
 			y: 4.5d
 		}
 		{
@@ -236,7 +236,7 @@
 				item: "gtceu:empty_tier_iii_battery"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: 2.5d
 		}
 		{
@@ -252,7 +252,7 @@
 				item: "gtceu:uv_lapotronic_battery"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 2.0d
 			y: 2.5d
 		}
 		{
@@ -268,7 +268,7 @@
 				item: "gtceu:highly_advanced_soc_wafer"
 				type: "item"
 			}]
-			x: -13.0d
+			x: -8.0d
 			y: 0.5d
 		}
 		{
@@ -287,7 +287,7 @@
 				item: "gtceu:neutronium_wafer"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -6.0d
 			y: 0.5d
 		}
 		{
@@ -303,7 +303,7 @@
 				item: "gtceu:neutronium_boule"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -4.0d
 			y: 0.5d
 		}
 		{
@@ -322,7 +322,7 @@
 				item: "gtceu:raw_void_ingot"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: 0.5d
 		}
 		{
@@ -339,7 +339,7 @@
 				item: "gtceu:heat_chamber"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 2.0d
 			y: -1.5d
 		}
 		{
@@ -361,7 +361,7 @@
 				item: "gtceu:void_ingot"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
@@ -380,7 +380,7 @@
 				item: "gtceu:large_rotor_machine"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: -3.5d
 		}
 		{
@@ -399,7 +399,7 @@
 				item: "kubejs:crude_stargate_rod"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: -5.5d
 		}
 		{
@@ -428,7 +428,7 @@
 				}
 			]
 			title: "Echo Fluid"
-			x: -3.0d
+			x: 2.0d
 			y: 0.5d
 		}
 		{
@@ -445,7 +445,7 @@
 				item: "gtceu:naquadic_netherite_dust"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: -3.5d
 		}
 		{
@@ -461,7 +461,7 @@
 				item: "gtceu:screret_runic_laser_source_base_dust"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: -1.5d
 		}
 		{
@@ -477,7 +477,7 @@
 				item: "gtceu:exquisite_screret_runic_laser_source_base_gem"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: 0.5d
 		}
 		{
@@ -500,7 +500,7 @@
 				item: "kubejs:runic_wave_generator"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 10.0d
 			y: 0.5d
 		}
 		{
@@ -517,7 +517,7 @@
 				item: "kubejs:laser_casing"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 10.0d
 			y: -1.5d
 		}
 		{
@@ -539,7 +539,7 @@
 				item: "gtceu:runic_circuitry_assembling_station"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 4.0d
 			y: -1.5d
 		}
 		{
@@ -555,7 +555,7 @@
 				item: "gtceu:melodium_single_wire"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 10.0d
 			y: 4.5d
 		}
 		{
@@ -572,7 +572,7 @@
 				item: "gtceu:melodium_ingot"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 10.0d
 			y: 2.5d
 		}
 		{
@@ -592,7 +592,7 @@
 				item: "gtceu:stellarium_ingot"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: 2.5d
 		}
 		{
@@ -608,7 +608,7 @@
 				item: "gtceu:stellarium_single_wire"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: 4.5d
 		}
 		{
@@ -630,7 +630,7 @@
 				item: "kubejs:stargate_rod"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: -5.5d
 		}
 		{
@@ -652,7 +652,7 @@
 				item: "gtceu:stargate_component_assembly"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 2.0d
 			y: -5.5d
 		}
 		{
@@ -680,7 +680,7 @@
 				}
 			]
 			title: "Engraved Runes"
-			x: -1.0d
+			x: 4.0d
 			y: -3.5d
 		}
 		{
@@ -696,7 +696,7 @@
 				item: "gtceu:super_pressure_heat_chamber"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: -3.5d
 		}
 		{
@@ -713,7 +713,7 @@
 				item: "gtceu:gravi_star"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 2.0d
 			y: -3.5d
 		}
 		{
@@ -763,7 +763,7 @@
 				}
 			]
 			title: "This is what you have been waiting for"
-			x: 1.0d
+			x: 6.0d
 			y: -8.0d
 		}
 		{
@@ -785,7 +785,7 @@
 				title: "Get Abydos Coordinates"
 				type: "checkmark"
 			}]
-			x: 5.0d
+			x: 10.0d
 			y: -3.5d
 		}
 		{
@@ -807,7 +807,7 @@
 				item: "kubejs:classic_stargate_computer_core"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 6.0d
 			y: -3.5d
 		}
 		{
@@ -824,7 +824,7 @@
 				item: "kubejs:abydos_coordinate_crystal"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 8.0d
 			y: -3.5d
 		}
 		{
@@ -843,7 +843,7 @@
 				item: "gtceu:dimensional_finder"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 8.0d
 			y: 4.5d
 		}
 		{
@@ -860,7 +860,7 @@
 				item: "kubejs:coordinate_crystal"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 4.0d
 			y: 4.5d
 		}
 		{
@@ -878,7 +878,7 @@
 				item: "kubejs:computational_super_matrix"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 6.0d
 			y: 6.5d
 		}
 		{
@@ -896,7 +896,7 @@
 				item: "gtceu:mega_blast_furnace"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -4.0d
 			y: -1.5d
 		}
 		{
@@ -914,7 +914,7 @@
 				item: "gtceu:mega_vacuum_freezer"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: -1.5d
 		}
 		{
@@ -934,7 +934,7 @@
 				type: "dimension"
 			}]
 			title: "To Abydos"
-			x: -1.5d
+			x: 3.5d
 			y: -8.0d
 		}
 		{
@@ -954,7 +954,7 @@
 				item: "gtceu:component_part_assembly"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -6.0d
 			y: 6.5d
 		}
 		{
@@ -975,7 +975,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 4.0d
 			y: -5.5d
 		}
 		{
@@ -996,7 +996,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 8.0d
 			y: -5.5d
 		}
 		{
@@ -1017,7 +1017,7 @@
 				item: "sgjourney:classic_stargate_base_block"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 6.0d
 			y: -5.5d
 		}
 		{
@@ -1036,7 +1036,7 @@
 				item: "kubejs:classic_chevron_disk"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 10.0d
 			y: -5.5d
 		}
 		{
@@ -1050,7 +1050,7 @@
 				type: "checkmark"
 			}]
 			title: "Trouble Forming Gate?"
-			x: 3.5d
+			x: 8.5d
 			y: -8.0d
 		}
 		{
@@ -1066,7 +1066,7 @@
 				item: "sgjourney:classic_stargate_base_block"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: -7.5d
 		}
 		{
@@ -1082,7 +1082,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -4.0d
+			x: 1.0d
 			y: -8.0d
 		}
 		{
@@ -1098,7 +1098,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -4.5d
+			x: 0.5d
 			y: -7.5d
 		}
 		{
@@ -1114,7 +1114,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -4.0d
+			x: 1.0d
 			y: -7.5d
 		}
 		{
@@ -1130,7 +1130,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -3.5d
+			x: 1.5d
 			y: -8.5d
 		}
 		{
@@ -1146,7 +1146,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -3.5d
+			x: 1.5d
 			y: -9.0d
 		}
 		{
@@ -1162,7 +1162,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -4.0d
+			x: 1.0d
 			y: -10.0d
 		}
 		{
@@ -1178,7 +1178,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -3.5d
+			x: 1.5d
 			y: -10.0d
 		}
 		{
@@ -1194,7 +1194,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -4.5d
+			x: 0.5d
 			y: -10.5d
 		}
 		{
@@ -1210,7 +1210,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -0.5d
 			y: -10.5d
 		}
 		{
@@ -1226,7 +1226,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -1.0d
 			y: -10.0d
 		}
 		{
@@ -1242,7 +1242,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -1.5d
 			y: -10.0d
 		}
 		{
@@ -1258,7 +1258,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -1.5d
 			y: -9.0d
 		}
 		{
@@ -1274,7 +1274,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -1.5d
 			y: -8.5d
 		}
 		{
@@ -1290,7 +1290,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -1.0d
 			y: -8.0d
 		}
 		{
@@ -1306,7 +1306,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -1.0d
 			y: -7.5d
 		}
 		{
@@ -1322,7 +1322,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -3.5d
+			x: 1.5d
 			y: -8.0d
 		}
 		{
@@ -1338,7 +1338,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -3.5d
+			x: 1.5d
 			y: -9.5d
 		}
 		{
@@ -1354,7 +1354,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -4.0d
+			x: 1.0d
 			y: -10.5d
 		}
 		{
@@ -1370,7 +1370,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: -10.5d
 		}
 		{
@@ -1386,7 +1386,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -1.0d
 			y: -10.5d
 		}
 		{
@@ -1402,7 +1402,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -1.5d
 			y: -9.5d
 		}
 		{
@@ -1418,7 +1418,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -1.5d
 			y: -8.0d
 		}
 		{
@@ -1434,7 +1434,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -0.5d
 			y: -7.5d
 		}
 		{
@@ -1450,7 +1450,7 @@
 				item: "gtceu:exquisite_naquadic_netherite_gem"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: -5.5d
 		}
 		{
@@ -1466,7 +1466,7 @@
 				item: "gtceu:vibration_laser_engraver"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 5.0d
 			y: 1.5d
 		}
 		{
@@ -1491,7 +1491,7 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
+			x: -4.0d
 			y: -3.5d
 		}
 		{
@@ -1515,7 +1515,7 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
+			x: -4.0d
 			y: 5.75d
 		}
 		{
@@ -1543,7 +1543,7 @@
 				title: "I wanna go home..."
 				type: "checkmark"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: -9.0d
 		}
 		{
@@ -1557,7 +1557,7 @@
 				title: "So You Got Stuck"
 				type: "checkmark"
 			}]
-			x: 3.0d
+			x: 8.0d
 			y: -10.0d
 		}
 		{
@@ -1582,7 +1582,7 @@
 				title: "Gimme My Gamestage"
 				type: "checkmark"
 			}]
-			x: -1.0d
+			x: 4.0d
 			y: -10.0d
 		}
 		{
@@ -1600,7 +1600,7 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
+			x: -4.0d
 			y: 3.25d
 		}
 		{
@@ -1722,7 +1722,7 @@
 				}
 			]
 			title: "Singularities"
-			x: 2.0d
+			x: 7.0d
 			y: -0.5d
 		}
 		{
@@ -1738,8 +1738,26 @@
 				item: "gtceu:large_quantum_compressor"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 7.0d
 			y: 2.5d
+		}
+		{
+			id: "18A35D008CA73084"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "49EF150063D65456"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "1B20B3B25785E3AF"
+				title: "positioner"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	title: "Making the Classic Stargate"
