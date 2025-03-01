@@ -2061,6 +2061,34 @@
 			x: -15.5d
 			y: -3.5d
 		}
+		{
+			dependencies: ["56BA79287C4DBE52"]
+			description: ["In &lMechanics&r Overclock is Explained"]
+			icon: "ftbquests:book"
+			id: "6EBA06E5F9B25100"
+			optional: true
+			tasks: [{
+				id: "0B9F55EA3BDB760C"
+				title: "Go Read About Overclock"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["70875F86587758D7"]
+			description: ["In &lMechanics&r Cheaper Circuit Recipes are Explained"]
+			icon: "ftbquests:book"
+			id: "14A9381889183318"
+			optional: true
+			tasks: [{
+				id: "44F33A4D7ED714AA"
+				title: "Go Read About Cheaper Circuits"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: 9.5d
+		}
 	]
 	title: "Industrial Revolution"
 }

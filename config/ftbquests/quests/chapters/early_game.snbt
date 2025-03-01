@@ -2105,7 +2105,7 @@
 			optional: true
 			tasks: [{
 				id: "3C73A5AD42AC13F0"
-				title: "Read About Ghost Circuits"
+				title: "Go Read About Ghost Circuits"
 				type: "checkmark"
 			}]
 			x: -7.0d
@@ -2336,6 +2336,34 @@
 			]
 			x: 2.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["3AF688ADC18E580C"]
+			description: ["In &lMechanics&r Superconductors are Explained"]
+			icon: "ftbquests:book"
+			id: "6C5688897B6A4C42"
+			optional: true
+			tasks: [{
+				id: "524EF615621F4DCD"
+				title: "Go Read About Superconductors"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["390CB178FC2D2CCC"]
+			description: ["In &lMechanics&r Multiblock Creation and Multiblock Wallsharing are Explained"]
+			icon: "ftbquests:book"
+			id: "26E81A8B2EB80A6C"
+			optional: true
+			tasks: [{
+				id: "31807AD3BF647D18"
+				title: "Go Read About Multiblocks"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 3.0d
 		}
 	]
 	title: "Early Game"

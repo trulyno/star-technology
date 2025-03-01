@@ -1716,7 +1716,7 @@
 				title: "Positioner"
 				type: "checkmark"
 			}]
-			x: -2.0d
+			x: -5.0d
 			y: -5.0d
 		}
 		{

@@ -888,7 +888,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "37415A4D42D8E939"
 				item: "kubejs:multiblock_upgrade_kit"
@@ -2325,16 +2325,16 @@
 				"5B70B63D4157594F"
 			]
 			dependency_requirement: "one_completed"
-			description: ["In the Mechanics Page many important notes about Gregtech in particular can be found."]
+			description: ["In &lMechanics&r Perfect Overclock is Explained"]
 			icon: "ftbquests:book"
 			id: "775AAF108AFAF707"
 			tasks: [{
 				id: "39A4828A672AE4A1"
-				title: "Go Read About Perfect OC"
+				title: "Go Read About Perfect Overclock"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: 12.0d
+			x: -5.0d
+			y: 11.0d
 		}
 		{
 			id: "56B0A897E7C7C25C"
@@ -2345,7 +2345,7 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: 4.5d
 		}
 		{
@@ -2372,6 +2372,53 @@
 			title: "NAND Memory Chips"
 			x: 16.5d
 			y: 9.5d
+		}
+		{
+			dependencies: ["1820787D031EAB15"]
+			description: ["In &lMechanics&r Large Chemical Reactors Skips are Explained"]
+			icon: "ftbquests:book"
+			id: "4840218DA8E61B65"
+			optional: true
+			tasks: [{
+				id: "6B319AA87C949FE7"
+				title: "Go Read About Chemical Skips"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			dependency_requirement: "one_completed"
+			description: ["In &lMechanics&r Distinct Buses are Explained"]
+			icon: "ftbquests:book"
+			id: "7E74A114F4054345"
+			tasks: [{
+				id: "52333CEF18B39599"
+				title: "Go Read About Distinct Buses"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"1820787D031EAB15"
+				"5B70B63D4157594F"
+				"170C262792DA7123"
+			]
+			dependency_requirement: "one_completed"
+			description: ["In &lMechanics&r Lockable Fluid Hatches are Explained"]
+			hide_dependency_lines: true
+			icon: "ftbquests:book"
+			id: "171BD0E155CF98CA"
+			tasks: [{
+				id: "75801F4A6F213865"
+				title: "Go Read About Lockable Hatches"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 8.5d
 		}
 	]
 	title: "Automation Age"

@@ -1059,8 +1059,8 @@
 					type: "item"
 				}
 			]
-			x: 13.5d
-			y: -7.5d
+			x: 11.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1117,8 +1117,8 @@
 				item: "gtceu:stem_cells"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -5.5d
+			x: 11.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -1135,8 +1135,8 @@
 				item: "gtceu:yttrium_barium_cuprate_ingot"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -3.5d
+			x: 11.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1F79E45EF7810DFF"]
@@ -1491,7 +1491,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2911EC7333E0E9C5"]
@@ -1603,7 +1603,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: -3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0B7A0924AFE58559"]
@@ -1692,7 +1692,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["67ABB3BF6D0C183B"]
@@ -1710,7 +1710,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: 0.5d
+			y: 4.5d
 		}
 		{
 			id: "6DD3126E3C45D1E7"
@@ -1727,7 +1727,7 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: 1.5d
+			x: -2.5d
 			y: -0.5d
 		}
 		{
@@ -1767,8 +1767,8 @@
 				type: "item"
 			}]
 			title: "Sterile Cleanroom"
-			x: 11.5d
-			y: -5.5d
+			x: 9.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
