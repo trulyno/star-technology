@@ -11,7 +11,7 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 	if (event.player.getMainHandItem() !== 'kubejs:basic_scavenging_rod') return;
 	if (event.player.getOffHandItem() !== null) return;
-
+	
 	if (Math.random() < 0.50) event.block.popItemFromFace(Item.of('kubejs:flint_shard'), 'up');
 	if (Math.random() < 0.50) event.block.popItemFromFace(Item.of('kubejs:flint_shard'), 'up');
 

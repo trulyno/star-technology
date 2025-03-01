@@ -73,14 +73,16 @@ StartupEvents.registry('item', event => {
 	event.create('basic_scavenging_rod')
 		.displayName('Basic Scavenging Rod')
 		.rarity('common')
-		.maxDamage(96)
-		.unstackable();
+		.maxDamage(256)
+		.unstackable()
+		.texture(`kubejs:item/hm/pre-lv/basic_scavenging_rod`);
 
 	event.create('scavenging_rod')
 		.displayName('Scavenging Rod')
 		.rarity('common')
-		.maxDamage(256)
-		.unstackable();
+		.maxDamage(512)
+		.unstackable()
+		.texture(`kubejs:item/hm/pre-lv/scavenging_rod`);
 
 });
 
@@ -92,7 +94,7 @@ StartupEvents.registry('block', event => {
 		.soundType('stone')
 		.requiresTool(true)
 		.tagBlock("mineable/pickaxe")
-		.tagBlock('minecraft:needs_iron_tool')
+		.tagBlock('minecraft:needs_stone_tool')
 		.textureAll('kubejs:block/hm/reinforced_stone_bricks');
 
 	[{ id: 'crucible_stage_1', name: 'Slightly Hollowed Log' }, { id: 'crucible_stage_2', name: 'Fairly Hollowed Log' }, { id: 'crucible_stage_3', name: 'Mostly Hollowed Log' }].forEach(crucible => {

@@ -1057,6 +1057,7 @@
 				{
 					id: "323DDC8DFEDF2926"
 					item: "gtceu:raw_electrum_ingot"
+					optional_task: true
 					type: "item"
 				}
 			]
