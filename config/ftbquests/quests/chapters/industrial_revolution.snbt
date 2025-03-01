@@ -93,11 +93,11 @@
 				item: "gtceu:lv_polarizer"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -3.5d
+			x: -8.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["71DAA3541CEC96DD"]
+			dependencies: ["53E98CFC7934FA67"]
 			description: ["A LV component thats used everywhere."]
 			id: "234CE57A62FB8D82"
 			rewards: [{
@@ -335,6 +335,11 @@
 		}
 		{
 			dependencies: ["5D3B5EF195A3093B"]
+			description: [
+				"Your first Cutting Saw, made out of Cobalt Brass."
+				""
+				"Cutting Saws will always use alloys that require some work, but are definitly worth the investment."
+			]
 			id: "5AA77BA8B764A2AA"
 			rewards: [{
 				id: "4D56E3C5935202AB"
@@ -450,8 +455,8 @@
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -1.5d
+			x: -7.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -489,7 +494,7 @@
 		}
 		{
 			dependencies: ["10F2237FF0C87F62"]
-			description: ["Uses Oxygen to operate, and is able to recycle machines in their base resources."]
+			description: ["Operates using Oxygen, and can recycle machines into ingots."]
 			hide_dependent_lines: true
 			id: "76B701A5EF4C1EF1"
 			rewards: [{
@@ -519,7 +524,7 @@
 				item: "thermal:obsidian_glass"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -6.0d
 			y: 2.5d
 		}
 		{
@@ -527,7 +532,16 @@
 				"38A4A5FB19EB4AB9"
 				"4B51B15B49620F57"
 			]
-			description: ["Used to upgrade Thermal machines, such as Flux Cells and Dynamos by 4 times."]
+			description: [
+				"Used to upgrade all Thermal machine stats by 4x."
+				""
+				"Very usefull to use on:"
+				"- Dynamo's"
+				"- Energy Cells"
+				"- Fluid Cells"
+				"- Aqueous Accumulators"
+				"- Igneous Extruders"
+			]
 			id: "574CA65B67D79A6E"
 			rewards: [{
 				id: "3B2963F6CA12BFDF"
@@ -570,7 +584,7 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			description: ["The Electric Blast Furnace (EBF for short) is a better furnace, which you will need for most of your ingots going forward. If you are curious about how to use the EBF for MV recipes, look at the mechanics chapter, inside the overclock quest."]
+			description: ["The Electric Blast Furnace (EBF for short) is a better furnace, which you will need for most of your ingots going forward. If you are curious about how to use the EBF for MV recipes, look at the Mechanics chapter, inside the Overclock quest."]
 			icon: "gtceu:electric_blast_furnace"
 			id: "56BA79287C4DBE52"
 			rewards: [{
@@ -642,7 +656,7 @@
 		}
 		{
 			dependencies: ["56BA79287C4DBE52"]
-			description: ["Your MV superconductor."]
+			description: ["Your &bMV&r superconductor."]
 			icon: "gtceu:signalum_ingot"
 			id: "1A638BE0C6031CC5"
 			rewards: [{
@@ -668,7 +682,13 @@
 		}
 		{
 			dependencies: ["56BA79287C4DBE52"]
-			description: ["This is your MV material, will be needed in vast quantities."]
+			description: [
+				"This is your &bMV&r material, will be needed in vast quantities."
+				""
+				"A good first source of Aluminium are Sapphires."
+				""
+				"Once you are in MV, you can set up Clay Electrolysis for easier Aluminium."
+			]
 			id: "60F649FC6E64DFD9"
 			rewards: [{
 				id: "38F829CD52ACC0A7"
@@ -685,6 +705,7 @@
 		}
 		{
 			dependencies: ["7CA424E05FB05DFF"]
+			description: ["A good source of Arsenic."]
 			id: "5BF06BFED6E52523"
 			rewards: [{
 				id: "48ABA260B49D0D83"
@@ -704,6 +725,7 @@
 				"5BF06BFED6E52523"
 				"3F116A55E0215095"
 			]
+			description: ["A binding catalyst for making Boules."]
 			id: "77FB57773EFE8D6C"
 			rewards: [{
 				id: "21CFB2F082FD4C2E"
@@ -720,6 +742,7 @@
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
+			description: ["Processing Sphalerite is going to be the best source of Gallium for a long time."]
 			id: "3F116A55E0215095"
 			rewards: [{
 				id: "5FDBAD28EF9411D8"
@@ -756,6 +779,7 @@
 				"77FB57773EFE8D6C"
 				"56BA79287C4DBE52"
 			]
+			description: ["Boules can be cut into Wafers, which will be core ingredients for most of your Circuits and Energy Hatches from now on."]
 			id: "5C15427D1679D4C3"
 			rewards: [{
 				id: "2A2893A1B960213D"
@@ -798,6 +822,7 @@
 				"56BA79287C4DBE52"
 				"12DA5E8FA3E11AC0"
 			]
+			description: ["The material for your next Cutting Blade."]
 			id: "47027B245D1C7A2E"
 			rewards: [{
 				id: "3CB0CBEB70D0F2AB"
@@ -834,7 +859,7 @@
 		}
 		{
 			dependencies: ["60F649FC6E64DFD9"]
-			description: ["The heart of every MV machine."]
+			description: ["The heart of every &bMV&r machine."]
 			id: "12C9427A04A2F550"
 			rewards: [{
 				id: "76BDA69ED8BAB9FD"
@@ -854,7 +879,7 @@
 				"12C9427A04A2F550"
 				"1A638BE0C6031CC5"
 			]
-			description: ["This converter makes 4A of MV power, instead of LV."]
+			description: ["This converter makes 4A of &bMV&r power, instead of &7LV&r."]
 			id: "1F693ACD14436D87"
 			rewards: [{
 				id: "0EEF835BE5647FBD"
@@ -974,7 +999,7 @@
 		}
 		{
 			dependencies: ["7836F17B34B47B16"]
-			description: ["Makes all your circuits going forward, and makes the older ones for cheaper prices."]
+			description: ["Makes all your Circuits going forward, and makes the older ones for a lower price."]
 			id: "707733C864B8729C"
 			rewards: [{
 				id: "2FC1EE7643113986"
@@ -1013,7 +1038,11 @@
 				"12C9427A04A2F550"
 				"24DF9557A927B2B5"
 			]
-			description: ["Used primarily for making Charcoal and Coal Coke."]
+			description: [
+				"Used primarily for making Charcoal and Coal Coke."
+				""
+				"Can replace your Coke Oven as a source of Creosote."
+			]
 			id: "0AB3A8C14C3A0512"
 			rewards: [{
 				id: "62842FFE70DEB525"
@@ -1113,7 +1142,7 @@
 				"491C4CECC6C24DDF"
 				"0DEEBB486450E74E"
 			]
-			description: ["This chip is used for creating a hatch to give MV power to multiblocks as well as transform power to MV"]
+			description: ["This chip is used for creating an Energy Hatch that gives &bMV&r power to multiblocks as well as transforming power to &bMV&r."]
 			icon: "gtceu:ulpic_chip"
 			id: "79AA3AF63E976038"
 			rewards: [{
@@ -1174,13 +1203,14 @@
 		}
 		{
 			dependencies: ["12C9427A04A2F550"]
-			description: ["You should get the hang of it now right? Higher tier of machine = more and faster recipes."]
+			description: ["You should be starting to get the hang of it. A higher tier of machine, allowing for more recipes, and doing the previous ones faster."]
 			id: "7EC83EEF3F7A89B8"
 			rewards: [{
 				id: "103D493E1BB9765B"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Pretty straightforward"
 			tasks: [{
 				id: "61B3BB2C2EEB1B21"
 				item: "gtceu:mv_assembler"
@@ -1240,7 +1270,7 @@
 		}
 		{
 			dependencies: ["4597B95C2F5EE106"]
-			description: ["Neodynium is gonna be used for higher motor tiers, and Neodynium Magnets."]
+			description: ["For now the most usefull material out of these is Neodynium, being used for higher tier Motors and Magnets."]
 			hide_dependent_lines: true
 			id: "2C404AE10029FCD4"
 			rewards: [{
@@ -1286,13 +1316,14 @@
 		}
 		{
 			dependencies: ["5F80268C02FAD5F6"]
-			description: ["AE2's backbone material."]
+			description: ["Can be grown in the Autoclave from dust, or gotten by putting Purified Certus Quartz Ore through a Sifter."]
 			id: "6896F9AF41EE8571"
 			rewards: [{
 				id: "7C19B021AC9106CC"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "AE2's backbone material"
 			tasks: [{
 				id: "235D4BCFE60C7A06"
 				item: "ae2:certus_quartz_crystal"
@@ -1303,7 +1334,11 @@
 		}
 		{
 			dependencies: ["0A03B4D352DCF148"]
-			description: ["Your first Hot Ingot. Normally you would cool it down in a Vacuum Freezer, but that is still a long way. Until then you can use the Chemical Bath to cool it down into the normal ingot."]
+			description: [
+				"Normally you would cool it down in a Vacuum Freezer, but that is still a little ways off."
+				""
+				"Until then you can use the Chemical Bath to cool it down into the normal ingot."
+			]
 			icon: "gtceu:hot_kanthal_ingot"
 			id: "7A9839144373C80D"
 			rewards: [{
@@ -1311,6 +1346,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "Your first Hot Ingot"
 			tasks: [
 				{
 					id: "5B7CA74E5D333B07"
@@ -1346,6 +1382,11 @@
 		}
 		{
 			dependencies: ["7A9839144373C80D"]
+			description: [
+				"The next material for Coils."
+				""
+				"It is not easy to get, but most definitly worth it."
+			]
 			id: "6749EECB949732DB"
 			rewards: [{
 				id: "6C027EFC8EC67C50"
@@ -1555,7 +1596,7 @@
 				item: "create_new_age:energiser_t1"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.0d
 			y: -0.5d
 		}
 		{
@@ -1572,7 +1613,7 @@
 				item: "create_new_age:energiser_t2"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.0d
 			y: 1.5d
 		}
 		{
@@ -1591,7 +1632,7 @@
 				item: "create_new_age:energiser_t3"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.0d
 			y: 3.5d
 		}
 		{
@@ -1699,7 +1740,7 @@
 				item: "create_new_age:copper_wire"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.0d
 			y: 0.0d
 		}
 		{
@@ -1717,7 +1758,7 @@
 				item: "create_new_age:overcharged_iron_wire"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.0d
 			y: 2.0d
 		}
 		{
@@ -1735,7 +1776,7 @@
 				item: "create_new_age:overcharged_golden_wire"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.0d
 			y: 4.0d
 		}
 		{
@@ -1755,12 +1796,12 @@
 				item: "create_new_age:overcharged_diamond_wire"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["12C9427A04A2F550"]
-			description: ["A better coating for your cables, will be needed for later cables as well."]
+			description: ["A cheaper cable coating."]
 			id: "270CE5B8D718F8C2"
 			rewards: [{
 				id: "4FF5666DB3AE5E52"
@@ -1840,6 +1881,7 @@
 		}
 		{
 			dependencies: ["7CA424E05FB05DFF"]
+			description: ["Contains various precious resources that you will need later on."]
 			id: "4597B95C2F5EE106"
 			rewards: [{
 				id: "663D16B1BCB3CB2C"
@@ -1860,6 +1902,7 @@
 		}
 		{
 			dependencies: ["7CA424E05FB05DFF"]
+			description: ["The source for Vanadium, a metal primarily used in alloys."]
 			id: "12DA5E8FA3E11AC0"
 			rewards: [{
 				id: "1D01CDEB4254326A"
@@ -2035,7 +2078,7 @@
 				""
 				"Note: Can only have 1 Energy Hatch"
 				""
-				"[No, Mesh Enchants to &4NOT&r impact performance]"
+				"[No, Mesh Enchants do &4NOT&r impact performance]"
 			]
 			id: "569A70F811536F5F"
 			optional: true

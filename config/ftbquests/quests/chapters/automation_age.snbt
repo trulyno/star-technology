@@ -132,6 +132,7 @@
 				"7E6BF5B40EA057F5"
 				"261174370DC87FCB"
 			]
+			description: ["The basis of every HV machine"]
 			id: "3CB63B290C9EFAA2"
 			rewards: [{
 				id: "0103A1EEE577BCBC"
@@ -230,6 +231,11 @@
 		}
 		{
 			dependencies: ["363F5B598683A074"]
+			description: [
+				"This is a cheaper HV circuit."
+				""
+				"Better get used to it, as it will take a little bit until you can get better ones."
+			]
 			id: "7399429099302C6C"
 			rewards: [{
 				id: "4962712B3775941E"
@@ -326,6 +332,7 @@
 				type: "item"
 			}]
 			size: 1.0d
+			subtitle: "Don't throw these away"
 			tasks: [
 				{
 					id: "11E2B1CE93A78156"
@@ -368,6 +375,7 @@
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
+			description: ["HV Assembler, used for HV Energy Hatches and Upgrade Kits, along with SMD's for cheaper circuit crafting."]
 			id: "1B697A89954BA5FE"
 			rewards: [{
 				count: 2
@@ -511,6 +519,7 @@
 		}
 		{
 			dependencies: ["2D089B0427CFDBBE"]
+			description: ["A crafting ingredient for items that need energy, and a battery."]
 			id: "7B0133D388101F68"
 			rewards: [{
 				id: "3FDC70995B21E529"
@@ -528,6 +537,11 @@
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
+			description: [
+				"Grow your crystals even faster."
+				""
+				"Can be upgraded into a Large Autoclave soon."
+			]
 			id: "2D089B0427CFDBBE"
 			rewards: [{
 				id: "289E7492A240586B"
@@ -588,6 +602,7 @@
 				"73931EAA3EC5C9A9"
 				"3CB63B290C9EFAA2"
 			]
+			description: ["The Cleanroom is a structure that filters inside itself, allowing for a dust free environment to achieve more precise crafting."]
 			hide_dependency_lines: true
 			id: "17C1292018AE363E"
 			rewards: [{
@@ -596,6 +611,7 @@
 				type: "item"
 			}]
 			size: 1.0d
+			subtitle: "A gamer's nightmare"
 			tasks: [{
 				id: "2E6892722E099A15"
 				item: "gtceu:cleanroom"
@@ -609,7 +625,7 @@
 				"52FE319F5E176C37"
 				"3CB63B290C9EFAA2"
 			]
-			description: ["EV circuits gives you access to the HV circuit assembler. I recommend putting this in your cleanroom to save time."]
+			description: ["EV circuits give you access to the HV circuit assembler. I recommend putting this in your cleanroom to save time."]
 			id: "47CD61D6ECD3DC7D"
 			rewards: [{
 				id: "02612C98685AC3EB"
@@ -655,7 +671,11 @@
 				"52FE319F5E176C37"
 				"77303F30F0A44393"
 			]
-			description: ["Allows you to turn RF into EV power. Oh ya and 64a's exist now."]
+			description: [
+				"Allows you to turn RF into EV power. "
+				""
+				"Oh ya and 64A converters exist from now on."
+			]
 			id: "5D3006AB62E2CE9B"
 			rewards: [{
 				id: "601186952EBAB995"
@@ -729,6 +749,7 @@
 		}
 		{
 			dependencies: ["1DA6B3308C263A6F"]
+			description: ["An alloy forged from Ender Pearls and Diamonds, with some Lead sprinkled throughout."]
 			id: "5BA3F17E1C7BE599"
 			rewards: [{
 				id: "363322517E6CC58D"
@@ -815,7 +836,7 @@
 				"5BA3F17E1C7BE599"
 				"6060E79B2D08912D"
 			]
-			description: ["Will increase the power of anything thermal by 256x. This is the final upgrade you can make for them."]
+			description: ["Will increase the power of anything thermal by 256x. This is the final Upgrade Kit you can make for them."]
 			id: "60EB030A899ADE28"
 			rewards: [{
 				id: "510254539341E7E3"
@@ -842,6 +863,7 @@
 		}
 		{
 			dependencies: ["74749B089D50329C"]
+			description: ["You should understand what this does already right?"]
 			id: "6060E79B2D08912D"
 			rewards: [{
 				count: 2
@@ -861,6 +883,7 @@
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
+			description: ["This cools down your Hot Ingots better and faster then the Chemical Bath could ever hope to achieve."]
 			hide_dependent_lines: true
 			id: "1646D6D439B260D3"
 			rewards: [{
@@ -902,7 +925,7 @@
 				"52FE319F5E176C37"
 				"1B0A7CF5BE5D71FE"
 			]
-			description: ["A very tall multiblock that allows you to distill one chemical into many other chemicals."]
+			description: ["A very tall multiblock that allows you to distill one fluid into multiple others without having to choose like with the distillery."]
 			id: "170C262792DA7123"
 			rewards: [{
 				id: "45C8F1B5FB0A96CA"
@@ -942,7 +965,7 @@
 			description: [
 				"Allows you to pump oil from the void. I don't know how that works out, but it does."
 				""
-				"Better Drills dont drain chunks as much and work much faster."
+				"Better Drills do not drain chunks as much and work much faster."
 			]
 			id: "22BC7BDE5E132A30"
 			rewards: [{
@@ -951,6 +974,7 @@
 				type: "item"
 			}]
 			size: 1.0d
+			subtitle: "Wait a minute..."
 			tasks: [{
 				id: "7857528275E1A624"
 				item: {
@@ -990,7 +1014,7 @@
 				"23D3BED4F1968AD6"
 			]
 			description: [
-				"Allows you to scan your surounding chunks for fluids. "
+				"Allows you to scan your surrounding chunks for fluids. "
 				""
 				"Spoilers, its going to be oil."
 			]
@@ -1012,7 +1036,7 @@
 		}
 		{
 			dependencies: ["170C262792DA7123"]
-			description: ["Just mix the oil products with some hydrogen to clean it."]
+			description: ["Mix Oil distillation byproducts with some hydrogen to clean them, allowing you to distill them further."]
 			icon: "gtceu:sulfur_dust"
 			id: "1A05644388327FA4"
 			rewards: [{
@@ -1031,7 +1055,11 @@
 		}
 		{
 			dependencies: ["1A05644388327FA4"]
-			description: ["Choose an oil biproduct and get it cracked to allow even further processing."]
+			description: [
+				"Choose an oil byproduct and get it cracked to allow even further processing."
+				""
+				"Taking some time to figure out which cracking method for what product is the best for you is recommended."
+			]
 			id: "22F56435C5449158"
 			rewards: [{
 				id: "336298AD9BCF6974"
@@ -1039,6 +1067,7 @@
 				type: "item"
 			}]
 			size: 1.0d
+			subtitle: "Cracked at cracking"
 			tasks: [{
 				id: "0654E39159A0538C"
 				item: "gtceu:cracker"
@@ -1058,7 +1087,7 @@
 				"4BA7A1EBD0E9A16B"
 			]
 			dependency_requirement: "one_completed"
-			description: ["I hope you like having many distilation towers."]
+			description: ["I hope you like having many distillation towers."]
 			id: "439D8AE6D3DC41AF"
 			rewards: [{
 				count: 2
@@ -1078,7 +1107,11 @@
 		}
 		{
 			dependencies: ["439D8AE6D3DC41AF"]
-			description: ["Another material that can be used to coat cables, is the most efficent resource wise."]
+			description: [
+				"Another material that can be used to coat cables, is the most efficent resource wise."
+				""
+				"Should now be easily craftable with oil distillation fully set up."
+			]
 			id: "38C9D56C7F821B5C"
 			rewards: [{
 				id: "31FAA10AB69D2B2D"
@@ -1139,6 +1172,11 @@
 				"1E981BDF3F2C577D"
 				"54EA865EC1ABDA36"
 			]
+			description: [
+				"4th tier of Coils for all your smelting needs."
+				""
+				"This needs Ruthenium, which you get from the Platline, check it out in the \"Processing Lines\" chapter."
+			]
 			id: "3B2D79D40B9617D5"
 			rewards: [{
 				id: "732A7D6E95439379"
@@ -1147,6 +1185,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
+			subtitle: "Almost as hot as an RTX"
 			tasks: [{
 				id: "5F7791E30C08A2D8"
 				item: "gtceu:rtm_alloy_coil_block"
@@ -1160,7 +1199,11 @@
 				"1E981BDF3F2C577D"
 				"74749B089D50329C"
 			]
-			description: ["This is the IV material, you're going to need a lot of this like every other main voltage material."]
+			description: [
+				"This is the IV material. "
+				""
+				"You are going to need a lot of this, just like every other main voltage material."
+			]
 			id: "4BCE8A9EBDF113CE"
 			rewards: [{
 				id: "0CB27DBB660355C2"
@@ -1215,7 +1258,11 @@
 		}
 		{
 			dependencies: ["74749B089D50329C"]
-			description: ["The best Circuit Board liquid."]
+			description: [
+				"The best liquid for etching Circuit Boards."
+				""
+				"We recommend switching out your ae2 patterns to use this."
+			]
 			id: "001252911D2DA7C3"
 			rewards: [{
 				id: "04F9F912A7019060"
@@ -1447,6 +1494,7 @@
 		}
 		{
 			dependencies: ["5E1E1A4F5036A6EA"]
+			description: ["The essence of the End, right in the palm of your hand."]
 			id: "0B9C9B50CBD06F13"
 			rewards: [{
 				id: "43C38518BA14FB01"
@@ -1464,6 +1512,7 @@
 		}
 		{
 			dependencies: ["549B363564644706"]
+			description: ["The essence of the Nether, maybe it will bring some hot weather."]
 			id: "0F1D766E2E2EEEB5"
 			rewards: [{
 				id: "5EE84E5EE3586E86"
@@ -1481,6 +1530,7 @@
 		}
 		{
 			dependencies: ["0725DE9E90815AB4"]
+			description: ["Crushed Netherrack, not exactly groundbreaking."]
 			id: "549B363564644706"
 			rewards: [{
 				id: "7BE8C8DF5473190B"
@@ -1498,6 +1548,7 @@
 		}
 		{
 			dependencies: ["4E9FAED9D889160A"]
+			description: ["Crushed Endstone, not exactly groundbreaking."]
 			id: "5E1E1A4F5036A6EA"
 			rewards: [{
 				id: "7ECD96DDE51CD967"
@@ -1515,7 +1566,7 @@
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
-			description: ["Make some endstone and get to processing it."]
+			description: ["Make some Endstone and get to processing it."]
 			id: "4E9FAED9D889160A"
 			rewards: [{
 				id: "2EA67AA0DED02E19"
@@ -1533,7 +1584,7 @@
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
-			description: ["Make some netherack and get to processing it."]
+			description: ["Make some Netherack and get to processing it."]
 			id: "0725DE9E90815AB4"
 			rewards: [{
 				id: "5F7A11F57B0F3C94"
@@ -2257,7 +2308,13 @@
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
-			description: ["This multiblock allows you to create even more complex alloys, you will need to cool these in a Vacuum Freezer however."]
+			description: [
+				"This multiblock allows you to create even more complex alloys, but will give outputs in a molten form."
+				""
+				"The ABS does both the mixing and smelting, and gives multiple units of ingots (144mb) as output because of this."
+				""
+				"You will need to cool the Molten Liquids in a Vacuum Freezer."
+			]
 			id: "664E782C6A24D9F1"
 			rewards: [{
 				count: 2
@@ -2293,6 +2350,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
+			subtitle: "Doesn't explode... right?"
 			tasks: [{
 				id: "388DD36D47A45596"
 				item: "gtceu:nuclear_reactor"
@@ -2308,6 +2366,11 @@
 				"6A57B03345FC6D99"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"A gas that will be used a lot for Quantum Eyes and Stars."
+				""
+				"We highly recommend setting Radon Loop up when you can, even if you have Ender Air distillation."
+			]
 			hide_dependent_lines: true
 			id: "2DB216B224F2E8EF"
 			size: 1.0d
