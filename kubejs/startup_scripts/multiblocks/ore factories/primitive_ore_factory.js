@@ -22,7 +22,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('FFFFF', 'FG GF', 'F   F', ' F F ', ' FFF ', '  F  ', '  B  ')
             .aisle(' FFF ', ' FCF ', ' FFF ', '  F  ', '     ', '     ', '     ')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('F', Predicates.blocks(GTBlocks.CASING_PRIMITIVE_BRICKS.get()).setMinGlobalLimited(30)
+            .where('F', Predicates.blocks(GTBlocks.CASING_PRIMITIVE_BRICKS.get()).setMinGlobalLimited(50)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('G', Predicates.blocks(GTBlocks.CASING_BRONZE_PIPE.get()))
             .where('B', Predicates.blocks('gtceu:bronze_machine_casing'))

@@ -97,10 +97,7 @@ const fluids = {
 const primitive_processing = (event, materialObj) => {
     [   { item: '2x #minecraft:coals', duration: 320, multiplier: 1, id: 'coals' },
         { item: '2x #gtceu:coal_dusts', duration: 320, multiplier: 1, id: 'coal_dusts' },
-        { item: 'gtceu:coke_gem', duration: 240, multiplier: 1, id: 'coke' },
-        { item: 'gtceu:coke_dust', duration: 240, multiplier: 1, id: 'coke_dust' },
         { item: '2x #gtceu:coal_blocks', duration: 2880, multiplier: 10, id: 'coal_blocks' },
-        { item: 'gtceu:coke_block', duration: 2160, multiplier: 10, id: 'coke_block' }
     ].forEach(fuel => {
         event.recipes.gtceu.primitive_ore_processing(`${materialObj.material}/${fuel.id}`)
             .itemInputs(crushed_ore(materialObj.material, fuel.multiplier), fuel.item)
@@ -237,6 +234,19 @@ ServerEvents.recipes(event => {
         S: 'gtceu:brass_screw',
         P: 'gtceu:brass_plate',
         B: 'gtceu:firebricks',
+        F: '#forge:tools/screwdrivers'
+    });
+
+    event.shaped(Item.of('gtceu:steam_ore_factory'), [
+        'HRS',
+        'PBR',
+        'FRS'
+    ], {
+        H: '#forge:tools/hammers',
+        R: 'gtceu:invar_rod',
+        S: 'gtceu:invar_screw',
+        P: 'gtceu:invar_plate',
+        B: 'gtceu:steam_machine_casing',
         F: '#forge:tools/screwdrivers'
     });
 
