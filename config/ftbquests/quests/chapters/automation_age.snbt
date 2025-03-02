@@ -350,7 +350,16 @@
 				"3CB63B290C9EFAA2"
 				"73931EAA3EC5C9A9"
 			]
-			description: ["Gotten annoyed that you have to tape or repair your machines every so often? Well just replace it with one of these and never have to worry about maintanace again."]
+			description: [
+				"&6Auto Maintenance Hatch&r: Every worry about needing maintenance, well now you never have to."
+				""
+				"&3Configurable Maintenance Hatch&r: Make your machines faster at the sake of risking more maintenance issues, or make them slower to reduce the chance."
+				""
+				"&4&lSpecial Notes&r: "
+				"Maintenance hatches will always check if they incure maintenance which can take a toll on your game's performance at scale. Auto Maintenance Fixes this concern."
+				""
+				"Alternatively the Configurable Maintenance can range from .9x time to 1.1x time. Meaning you can either add/subtract 10% from a recipe time. Reducing long recipe times is very nice. Increasing Generator uptime is also very nice."
+			]
 			id: "0F144FEF99D7D04C"
 			rewards: [{
 				id: "5A529DFCB691E409"
@@ -358,11 +367,19 @@
 				type: "item"
 			}]
 			size: 1.0d
-			tasks: [{
-				id: "3D5911CFC8C67F3F"
-				item: "gtceu:auto_maintenance_hatch"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3D5911CFC8C67F3F"
+					item: "gtceu:auto_maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "4D96C424917CD9DE"
+					item: "gtceu:configurable_maintenance_hatch"
+					type: "item"
+				}
+			]
+			title: "Maintanence Hatch Variants"
 			x: -1.5d
 			y: 3.5d
 		}
