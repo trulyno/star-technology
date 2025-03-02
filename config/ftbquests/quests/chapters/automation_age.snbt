@@ -2257,7 +2257,11 @@
 				"5CB82E9BED342EB2"
 				"06FCA7209B892A81"
 			]
-			description: ["HSS-G coils will give you the heat to make HSS-E and HSS-S ingots. Thats not going to get confusing at all."]
+			description: [
+				"The 5th tier of Coils. "
+				""
+				"These will give you the heat to make HSS-E and HSS-S ingots. Thats not going to get confusing at all."
+			]
 			id: "689150D2A185216C"
 			rewards: [{
 				id: "0E893C06186BCA22"
@@ -2331,6 +2335,7 @@
 		}
 		{
 			dependencies: ["10F2237FF0C87F62"]
+			description: ["Carbon Nanotubes"]
 			id: "687C720033164A7B"
 			rewards: [{
 				id: "0BD87C29D60BCC50"

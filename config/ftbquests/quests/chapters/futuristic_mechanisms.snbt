@@ -37,6 +37,11 @@
 		}
 		{
 			dependencies: ["53A9F3758C218CDC"]
+			description: [
+				"This will be the final Circuit Assembler you will make."
+				""
+				"You can upgrade this into a Large Circuit Assembling Facility, which can accept a single Energy Hatch, allowing you to get Circuit Assemblers of a voltage tier before getting the next tier of Circuits."
+			]
 			id: "4ED562DC235425FE"
 			rewards: [{
 				id: "7F26AF804B81528A"
@@ -164,6 +169,7 @@
 				"35829E28221CB70E"
 				"79428BAEAA7856E1"
 			]
+			description: ["&cZPM&r power for all your machines."]
 			id: "576C0430D0CDE409"
 			rewards: [{
 				id: "483A1640F5C15EDE"
@@ -181,6 +187,7 @@
 		}
 		{
 			dependencies: ["2587E109968EFBB4"]
+			description: ["The heart of every &cZPM&r machine."]
 			id: "35829E28221CB70E"
 			rewards: [{
 				id: "2D83C979F41B36FB"
@@ -201,6 +208,7 @@
 				"023794367F1B28D1"
 				"26126E2FA2B406E8"
 			]
+			description: ["Convert RF into &dLuV&r Amps"]
 			id: "0DCF962900689BCB"
 			rewards: [{
 				id: "4544BE3273A53A23"
@@ -251,6 +259,7 @@
 				"1C154476DB77B773"
 				"239DC1BC1F14A807"
 			]
+			description: ["The heart of every &dLuV&r machine."]
 			id: "023794367F1B28D1"
 			rewards: [{
 				id: "63B33EC26745A6B8"
@@ -268,6 +277,7 @@
 		}
 		{
 			dependencies: ["689150D2A185216C"]
+			description: ["An alloy made from Enderium and Lumium."]
 			id: "46D5CAA2666803D4"
 			rewards: [{
 				id: "559DE76C9E59DA34"
@@ -286,6 +296,11 @@
 		}
 		{
 			dependencies: ["53A9F3758C218CDC"]
+			description: [
+				"QuarkTech armor is really nice. You can run and fly faster, toggle Nightvision and eat automatically."
+				""
+				"You can also now hold Hot Ingots without dying."
+			]
 			id: "6AA4CC44DE1C8E1E"
 			rewards: [{
 				id: "48DFD8DB01A430D9"
@@ -327,6 +342,7 @@
 				"79428BAEAA7856E1"
 				"6AA4CC44DE1C8E1E"
 			]
+			description: ["This one has a build in Jetpack."]
 			id: "1602A4A4D00C9724"
 			rewards: [{
 				id: "3BD74F896357D2D8"
@@ -348,6 +364,7 @@
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
+			description: ["The core material for &dLuV&r."]
 			id: "1C154476DB77B773"
 			rewards: [{
 				id: "18830CC910160FC8"
@@ -366,6 +383,7 @@
 		}
 		{
 			dependencies: ["53A9F3758C218CDC"]
+			description: ["Aqua please safe me."]
 			id: "0A6534BD104A2B08"
 			rewards: [{
 				id: "773252714F350547"
@@ -383,6 +401,7 @@
 		}
 		{
 			dependencies: ["020048FAC9576691"]
+			description: ["A multiblock acting as a gigantic battery. Later on you &lwill&r need this."]
 			id: "5B72F7526494EAEC"
 			rewards: [{
 				count: 2
@@ -402,6 +421,7 @@
 		}
 		{
 			dependencies: ["30F3A744CD40A14A"]
+			description: ["A type of reinforced Glass, with better sealing capacities."]
 			id: "020048FAC9576691"
 			rewards: [{
 				id: "64A00C5F06E018B8"
@@ -419,6 +439,7 @@
 		}
 		{
 			dependencies: ["3306CAE5E57839A2"]
+			description: ["A fun chemical line to close off the first Processing Lines chapter."]
 			id: "30F3A744CD40A14A"
 			rewards: [{
 				id: "5C35BB521BF7274D"
@@ -445,7 +466,7 @@
 			description: [
 				"This is what you will use to make more advanced components and machines."
 				""
-				"Inputs must be placed in THAT order and only uses ULV input busses."
+				"Inputs must be placed in THAT order and only uses &8ULV&r input busses."
 				""
 				"If something has multiple unstackables, a forming press with a rename is a good way to differentiate the item in inputs."
 			]
@@ -506,6 +527,7 @@
 		}
 		{
 			dependencies: ["5B72F7526494EAEC"]
+			description: ["The first tier of Capacitator, now it just needs a battery inside."]
 			id: "51DE4937635274FD"
 			rewards: [{
 				id: "1DE3A4DA7F9ED21E"
@@ -523,6 +545,7 @@
 		}
 		{
 			dependencies: ["51DE4937635274FD"]
+			description: ["&5EV&r Capacitators for your Substation. These will fill quite fast."]
 			id: "5BC9DEBA51D83A33"
 			rewards: [{
 				id: "6F3500E5FE723158"
@@ -540,6 +563,7 @@
 		}
 		{
 			dependencies: ["51DE4937635274FD"]
+			description: ["&9IV&r Capacitators for your Substation. These might seem bigger, but you will be surprised at how quickly they fill."]
 			id: "1AC791ABC70E8699"
 			rewards: [{
 				id: "7A7E07C4D8CF69B5"
@@ -557,6 +581,7 @@
 		}
 		{
 			dependencies: ["5B72F7526494EAEC"]
+			description: ["&5EV&r Input and Output for the Substation."]
 			id: "5633ED567D7B86AA"
 			rewards: [{
 				id: "742577DB211F7B71"
@@ -582,6 +607,7 @@
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
+			description: ["An alloy made out of precious metals."]
 			id: "138E77CDBA50A619"
 			rewards: [{
 				id: "3662B995C534116B"
@@ -602,7 +628,9 @@
 			dependencies: [
 				"084F23122E4CA277"
 				"0094C2E72105E8CA"
+				"16D1B8E5F2A87F4E"
 			]
+			description: ["&dLuV&r Battery Module."]
 			hide_dependency_lines: true
 			id: "03FF61D56AA8ED91"
 			rewards: [{
@@ -621,6 +649,7 @@
 		}
 		{
 			dependencies: ["5B72F7526494EAEC"]
+			description: ["The second tier of Capacitator, capable of containing stronger Batteries."]
 			id: "62F32607FEE899CF"
 			rewards: [{
 				id: "59F932FE04299082"
@@ -638,6 +667,7 @@
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
+			description: ["Now that you have the big Circuit Assembler, you can use this to instantly get access to &dLuV&r Circuit Assembler recipes."]
 			id: "111033FEFA89BA91"
 			rewards: [{
 				id: "57EBD64832A5BB01"
@@ -655,6 +685,7 @@
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
+			description: ["Get used to making all your components in an Assembly Line, because it will not change."]
 			id: "5AD5C15F6C0F4BC2"
 			rewards: [{
 				id: "64A75B8081A9BE0C"
@@ -672,7 +703,7 @@
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
-			description: ["Allows you to store research data in mass and share it among multiple assembly lines or other data banks."]
+			description: ["Allows you to store research data in mass and share it among multiple Assembly Lines or other Data Banks."]
 			id: "127464E65103D2B0"
 			rewards: [{
 				id: "2C640D54ADD01FF2"
@@ -735,6 +766,7 @@
 		}
 		{
 			dependencies: ["5AD5C15F6C0F4BC2"]
+			description: ["Used for the final Data Stick scans, and can be upgraded into a Research Station."]
 			id: "2658276EC0740F69"
 			rewards: [{
 				id: "4276B9B6F1017F2A"
@@ -840,6 +872,11 @@
 		}
 		{
 			dependencies: ["376F9349C6E85AC8"]
+			description: [
+				"You should have some of this from your ore proc."
+				""
+				"&oYou did passive ore proc right.&r"
+			]
 			id: "55D75F03238F3A14"
 			rewards: [{
 				id: "0AF319AAE6D73D51"
@@ -982,6 +1019,7 @@
 				"79428BAEAA7856E1"
 				"023794367F1B28D1"
 			]
+			description: ["The second tier Parallel Hatch."]
 			id: "175837CCB419A09F"
 			rewards: [{
 				id: "06D2F659A93BD662"
@@ -999,6 +1037,7 @@
 		}
 		{
 			dependencies: ["03FF61D56AA8ED91"]
+			description: ["&cZPM&r Battery Module."]
 			id: "150C7E0C42E85710"
 			rewards: [{
 				id: "7E34A85971E84A07"
@@ -1019,6 +1058,7 @@
 				"150C7E0C42E85710"
 				"62F32607FEE899CF"
 			]
+			description: ["&cZPM&r Capacitator, and, you guessed it, also fills up very quickly."]
 			id: "795726537DF2E183"
 			rewards: [{
 				id: "10FFE9C25D2901FC"
@@ -1217,6 +1257,7 @@
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
+			description: ["The core &cZPM&r material."]
 			id: "2587E109968EFBB4"
 			rewards: [{
 				id: "0785F825FB53E63B"
@@ -1234,6 +1275,7 @@
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
+			description: ["An alloy made out of Tungsten, Shellite and Twinite, creating a durable conductor."]
 			id: "7FD0034E639F3B2D"
 			rewards: [{
 				id: "6AC52989D43BF4CE"
@@ -1251,6 +1293,11 @@
 		}
 		{
 			dependencies: ["445BC7DFD3387DD4"]
+			description: [
+				"The 6th tier of Coils"
+				""
+				"These will get replaced quite quickly by Trinium."
+			]
 			id: "65D76272BA5E67FC"
 			rewards: [{
 				count: 2
@@ -1274,6 +1321,11 @@
 				"7781F2FE4CB258E0"
 				"0ED91DDCAC7562EE"
 			]
+			description: [
+				"The 7th tier of Coils"
+				""
+				"It is worth getting all your EBF's to it, as the heat will save quite some energy."
+			]
 			id: "36C01453717B249D"
 			rewards: [{
 				count: 2
@@ -1293,6 +1345,7 @@
 		}
 		{
 			dependencies: ["111033FEFA89BA91"]
+			description: ["&cZPM&r recipe speeds."]
 			id: "62F3093B80681573"
 			rewards: [{
 				id: "1F14BE8EC8256729"
@@ -1310,6 +1363,7 @@
 		}
 		{
 			dependencies: ["62F3093B80681573"]
+			description: ["&3UV&r recipe speeds, what a bargain."]
 			id: "2094349C5A01C5F9"
 			rewards: [{
 				id: "0CA081B180BAE742"
@@ -1327,6 +1381,7 @@
 		}
 		{
 			dependencies: ["576C0430D0CDE409"]
+			description: ["&3UV&r recipe speeds."]
 			id: "417038F9E5A88B5C"
 			rewards: [{
 				id: "2095D0AD9FA27E62"
@@ -1344,6 +1399,7 @@
 		}
 		{
 			dependencies: ["417038F9E5A88B5C"]
+			description: ["&4UHV&r recipe speeds."]
 			id: "4E9EFF82E64FB6E4"
 			rewards: [{
 				id: "174DC4058EC92F62"
@@ -1397,7 +1453,7 @@
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
-			description: ["Used for active transformers and in some other crafting recipes as wire superconductor."]
+			description: ["Used for active transformers and in some other crafting recipes such as wire superconductor."]
 			id: "04BFFBF024D019BD"
 			rewards: [{
 				id: "73109EC4751DA6A1"
@@ -1418,6 +1474,7 @@
 				"05F2C7351FF1B0E5"
 				"445BC7DFD3387DD4"
 			]
+			description: ["This Chip is gonna be used for Gate Machines, Fusion Reactors and Energy Hatches."]
 			icon: "gtceu:uhpic_chip"
 			id: "5BA69EDC3C223B2C"
 			rewards: [{
@@ -1569,6 +1626,7 @@
 		}
 		{
 			dependencies: ["5C302CB1A1068EE1"]
+			description: ["Time for some fancy new Chips."]
 			id: "1BF95852C7E1741E"
 			rewards: [{
 				count: 2
@@ -1641,6 +1699,7 @@
 		}
 		{
 			dependencies: ["445BC7DFD3387DD4"]
+			description: ["A new Boule, that will allow access to new chips, and makes the older ones cheaper."]
 			id: "5C302CB1A1068EE1"
 			rewards: [{
 				id: "53E6A8C84D19526E"
@@ -1658,6 +1717,7 @@
 		}
 		{
 			dependencies: ["36C01453717B249D"]
+			description: ["An upgraded form of Shellite, being made denser with Tungsten and Naquadah."]
 			id: "3325914DB92AEF1B"
 			rewards: [{
 				id: "08EF75393226D550"
@@ -1735,6 +1795,7 @@
 				"62F32607FEE899CF"
 				"03FF61D56AA8ED91"
 			]
+			description: ["&dLuV&r Capacitator, also fills up very quickly."]
 			id: "10B333DE4129BDC9"
 			rewards: [{
 				id: "6FD07DEFA0ECF339"
@@ -1802,6 +1863,7 @@
 				"182D948925141764"
 				"138E77CDBA50A619"
 			]
+			description: ["A machine capable of tearing space-time using the power of netherstars, allowing you to harvest Naquadah from it."]
 			hide_dependency_lines: false
 			id: "1F416C7A641914EC"
 			rewards: [{
@@ -1855,6 +1917,7 @@
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
+			description: ["Finally, you can upgrade your resource generation with Parallel Hatches."]
 			id: "32459F3D48C81752"
 			optional: true
 			tasks: [
@@ -1875,6 +1938,7 @@
 		}
 		{
 			dependencies: ["7FD0034E639F3B2D"]
+			description: ["&cZPM&r superconductor, can hold 64 amps in a 1x cable."]
 			id: "3A603E70EB4B856F"
 			tasks: [{
 				id: "4380C92864BF9161"
@@ -1886,6 +1950,7 @@
 		}
 		{
 			dependencies: ["46D5CAA2666803D4"]
+			description: ["&dLuV&r superconductor, can hold 64 amps in a 1x cable."]
 			id: "26126E2FA2B406E8"
 			tasks: [{
 				id: "3B2B7C559D191078"
