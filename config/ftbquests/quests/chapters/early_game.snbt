@@ -2334,6 +2334,7 @@
 					type: "item"
 				}
 			]
+			title: "Steam Boilers"
 			x: 2.0d
 			y: -4.0d
 		}
