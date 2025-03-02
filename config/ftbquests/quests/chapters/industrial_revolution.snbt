@@ -98,7 +98,7 @@
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
-			description: ["A LV component thats used everywhere."]
+			description: ["A &7LV&r component thats used everywhere."]
 			id: "234CE57A62FB8D82"
 			rewards: [{
 				count: 2
@@ -207,7 +207,7 @@
 		}
 		{
 			dependencies: ["523F20DC5FA04229"]
-			description: ["This can crush down all the things you'll need, keep in mind you'll need one at HV to get the byproducts."]
+			description: ["This can crush down all the things you'll need, keep in mind you'll need one at &6HV&r to get the byproducts."]
 			id: "39F4B61B17304481"
 			rewards: [{
 				id: "3D6F3F6B21B141CC"
@@ -390,6 +390,7 @@
 		}
 		{
 			dependencies: ["234CE57A62FB8D82"]
+			description: ["Can move fluids in and out of a machine without needing extra blocks."]
 			id: "2AFD24A844E49C42"
 			rewards: [{
 				id: "2585095E52FBBD42"
@@ -584,7 +585,7 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			description: ["The Electric Blast Furnace (EBF for short) is a better furnace, which you will need for most of your ingots going forward. If you are curious about how to use the EBF for MV recipes, look at the Mechanics chapter, inside the Overclock quest."]
+			description: ["The Electric Blast Furnace (EBF for short) is a better furnace, which you will need for most of your ingots going forward. If you are curious about how to use the EBF for &bMV&r recipes, look at the Mechanics chapter, inside the Overclock quest."]
 			icon: "gtceu:electric_blast_furnace"
 			id: "56BA79287C4DBE52"
 			rewards: [{
@@ -687,7 +688,7 @@
 				""
 				"A good first source of Aluminium are Sapphires."
 				""
-				"Once you are in MV, you can set up Clay Electrolysis for easier Aluminium."
+				"Once you are in &bMV&r, you can set up Clay Electrolysis for easier Aluminium."
 			]
 			id: "60F649FC6E64DFD9"
 			rewards: [{
@@ -842,7 +843,7 @@
 				"47027B245D1C7A2E"
 				"12C9427A04A2F550"
 			]
-			description: ["The MV Cutter can cut Wafers from Silicon Boules, which are used for better circuit recipes."]
+			description: ["The &bMV&r Cutter can cut Wafers from Silicon Boules, which are used for better circuit recipes."]
 			id: "580BFECBF63DAC5D"
 			rewards: [{
 				id: "664E644502AE2C77"
@@ -879,7 +880,7 @@
 				"12C9427A04A2F550"
 				"1A638BE0C6031CC5"
 			]
-			description: ["This converter makes 4A of &bMV&r power, instead of &7LV&r."]
+			description: ["This converter makes &bMV&r power, instead of &7LV&r."]
 			id: "1F693ACD14436D87"
 			rewards: [{
 				id: "0EEF835BE5647FBD"
@@ -1101,7 +1102,7 @@
 				"0DEEBB486450E74E"
 				"491C4CECC6C24DDF"
 			]
-			description: ["This chip will be used to make better LV circuits, which can be upgraded to even higher tiers."]
+			description: ["This chip will be used to make better &7LV&r circuits, which can be upgraded to even higher tiers."]
 			icon: "gtceu:ilc_chip"
 			id: "590380B77F8EF17D"
 			rewards: [{
@@ -1183,7 +1184,7 @@
 				"79AA3AF63E976038"
 				"7EC83EEF3F7A89B8"
 			]
-			description: ["These can be used to overclock your EBF again, this time to HV."]
+			description: ["These can be used to overclock your EBF again, this time to &6HV&r."]
 			id: "0A03B4D352DCF148"
 			rewards: [{
 				count: 2
@@ -1365,7 +1366,7 @@
 		}
 		{
 			dependencies: ["0A03B4D352DCF148"]
-			description: ["This is your HV material, will be needed in vast quantities."]
+			description: ["This is your &6HV&r material, will be needed in vast quantities."]
 			id: "7E6BF5B40EA057F5"
 			rewards: [{
 				id: "6B7F70F97846F1E0"
@@ -2020,7 +2021,7 @@
 				"0DEEBB486450E74E"
 				"491C4CECC6C24DDF"
 			]
-			description: ["Stronger Chips used for Stronger Circuits all the way till UHV"]
+			description: ["Stronger Chips used for Stronger Circuits all the way till &4UHV&r."]
 			icon: "gtceu:ram_chip"
 			id: "45591A05A0A61821"
 			rewards: [{

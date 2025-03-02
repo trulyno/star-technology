@@ -400,7 +400,7 @@
 				"07A407A268A4FC96"
 				"3B81632EF4586280"
 			]
-			description: ["With all the parts combined, you finally get your hands on your first LV circuit! It might be a good idea to make a bunch of these beforehand, to aid in the push for LV machines."]
+			description: ["With all the parts combined, you finally get your hands on your first &7LV&r circuit! It might be a good idea to make a bunch of these beforehand, to aid in the push for &7LV&r machines."]
 			hide_dependent_lines: true
 			id: "20A12F3B992762F0"
 			rewards: [{
@@ -424,7 +424,7 @@
 				"46E41B05B9F6FA82"
 				"64F15C7160BF5CBB"
 			]
-			description: ["The heart of every LV machine."]
+			description: ["The heart of every &7LV&r machine."]
 			icon: "gtceu:lv_machine_hull"
 			id: "124EDCAB18E85B9D"
 			rewards: [{
@@ -1849,7 +1849,7 @@
 				"4FC0832128C3109C"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Create gives you access to your first alloys, though at a poorer ratio than later methods. While good in the early game, you will want to upgrade once you hit LV."]
+			description: ["Create gives you access to your first alloys, though at a poorer ratio than later methods. While good in the early game, you will want to upgrade once you hit &7LV&r."]
 			id: "10126B9D6EC90F59"
 			rewards: [{
 				id: "36FCEC0DDB574296"
@@ -2236,7 +2236,7 @@
 				}
 			]
 			x: 3.0d
-			y: -4.75d
+			y: -5.0d
 		}
 		{
 			dependencies: ["2D1184752D7ACA66"]
@@ -2334,6 +2334,7 @@
 					type: "item"
 				}
 			]
+			title: "Steam Boilers"
 			x: 2.0d
 			y: -4.0d
 		}
