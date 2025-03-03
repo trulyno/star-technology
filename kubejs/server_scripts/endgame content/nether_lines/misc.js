@@ -1,6 +1,19 @@
 
 ServerEvents.recipes(event => {
 
+    //Sculk Variant
+    event.recipes.gtceu.polarizer('ionized_sculk_dust')
+        .itemInputs('gtceu:sculk_dust')
+        .itemOutputs('gtceu:ionized_sculk_dust')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.UV]);
+
+    event.recipes.gtceu.large_chemical_reactor('sodium_over_sculk_to_echo')
+        .itemInputs('2x gtceu:sodium_over_sculk_dust','3x gtceu:silicon_dioxide_dust')
+        .itemOutputs('2x gtceu:sodium_dust','5x gtceu:echo_shard_dust')
+        .duration(80)
+        .EUt(GTValues.VHA[GTValues.UIV]);
+
     //Magmatic Plasma
     event.recipes.gtceu.fusion_reactor('magmatic_plasma')
         .inputFluids('gtceu:highly_unstable_nether_magma 2560', 'gtceu:iron_plasma 128')

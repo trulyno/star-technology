@@ -1,0 +1,47 @@
+
+ServerEvents.recipes(event => {
+
+    event.recipes.gtceu.mixer('enriched_estaltadyne_slurry')
+        .inputFluids('gtceu:enriched_estaltadyne_solution 1000')
+        .inputFluids('gtceu:perchloric_acid 2000')
+        .outputFluids('gtceu:enriched_estaltadyne_slurry 1000')
+
+    event.recipes.gtceu.chemical_plant('enriched_estaltadyne_naquide_slurry_mixture')
+        .inputFluids('gtceu:enriched_estaltadyne_slurry 1000')
+        .itemInputs('1x gtceu:enriched_naquadah_dust')
+        .outputFluids('gtceu:enriched_estaltadyne_naquide_slurry_mixture 1000')
+
+    event.recipes.gtceu.heat_chamber('hyper_enriched_estaltadyne_slurry_mixture')
+        .inputFluids('gtceu:enriched_estaltadyne_naquide_slurry_mixture 1000')
+        .itemInputs('2x gtceu:ionized_sculk_dust', '1x gtceu:calcium_dust')
+        .outputFluids('gtceu:hyper_enriched_estaltadyne_slurry_mixture 1000')
+        .itemOutputs('1x gtceu:naquadah_dust')
+
+    event.recipes.gtceu.centrifuge('hyper_enriched_estaltadyne_slurry_mixture_decomposition')
+        .inputFluids('gtceu:hyper_enriched_estaltadyne_slurry_mixture 1000')
+        .itemOutputs('1x gtceu:calcium_perchlorate_dust')
+        .outputFluids('gtceu:hyper_enriched_estaltadyne_slurry_residue 1000')
+
+    event.recipes.gtceu.large_chemical_reactor('hyper_enriched_estaltadyne_slurry_residue_sodium_addition')
+        .inputFluids('gtceu:hyper_enriched_estaltadyne_slurry_residue 1000')
+        .itemInputs('3x gtceu:sodium_oxide_dust')
+        .outputFluids('gtceu:sodium_hyper_enriched_estaltadyne_sludge 1000')
+        .outputFluids('minecraft:water 1000')
+
+    event.recipes.gtceu.centrifuge('hyper_enriched_estaltadyne_concentrate')
+        .inputFluids('gtceu:sodium_hyper_enriched_estaltadyne_sludge 1000')
+        .itemOutputs('2x gtceu:sodium_over_sculk_dust')
+        .outputFluids('gtceu:hyper_enriched_estaltadyne_concentrate 1000')
+
+    event.recipes.gtceu.electrolyzer('enriched_estalt')
+        .inputFluids('gtceu:hyper_enriched_estaltadyne_concentrate 1000')    
+        .itemOutputs('2x gtceu:enriched_estalt_dust')
+        .outputFluids('gtceu:enriched_mystical_concentrate 1000')
+
+    event.recipes.gtceu.leptonic_manifold_quantiser('enriched_mystical_concentrate_decomposition')
+        .inputFluids('gtceu:enriched_mystical_concentrate 3000')
+        .outputFluids('gtceu:enriched_mythrillic_mixture 1000')
+        .outputFluids('gtceu:enriched_estaltadyne_mixture 1000')
+        .outputFluids('gtceu:enriched_adamantamite_mixture 1000')
+
+});

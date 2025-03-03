@@ -802,6 +802,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(DULL)
         .flags(rod, long_rod, frame, no_decomp);
     
+    //Extended Sculk
+    event.create('ionized_sculk')
+        .dust()
+        .color(0x061A0D)
+        .iconSet(RADIOACTIVE)
+        .flags(no_decomp);
+
+    event.create('sodium_over_sculk')
+        .dust()
+        .color(0x071A22)
+        .components('1x sodium','1x mystery')
+        .flags(no_decomp);
+    
     // Extras
     event.create('trinaquadalloy')
         .ingot().fluid()
@@ -1118,12 +1131,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             .fluid()
             .components('2x sodium','1x mystery','2x enriched_estalt')
             .color(0xBE4697)
-            .flags(no_decomp);
-
-        event.create('sodium_over_sculk')
-            .fluid()
-            .components('1x sodium','1x mystery')
-            .color(0x235A3F)
             .flags(no_decomp);
 
         event.create('hyper_enriched_estaltadyne_concentrate')
