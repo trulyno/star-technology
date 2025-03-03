@@ -9,7 +9,7 @@ GTCEuServerEvents.fluidVeins(event => {
     vein.depletionAmount(2)
     vein.depletionChance(1)
     vein.depletedYield(50)
-  })
+  });
 
   event.add('start:abydos_zapolite_rich_magma_deposit', vein => {
     vein.dimensions('sgjourney:abydos')
@@ -20,51 +20,40 @@ GTCEuServerEvents.fluidVeins(event => {
     vein.depletionAmount(2)
     vein.depletionChance(1)
     vein.depletedYield(50)
-  })
+  });
 
-  event.add('start:nether_mythrilium_rich_magma_deposit', vein => {
+  event.add('start:highly_unstable_nether_magma_deposit', vein => {
     vein.dimensions('minecraft:the_nether')
-    vein.fluid(() => Fluid.of('gtceu:nether_mythrilium_rich_magma').fluid)
-    vein.weight(500)
+    vein.fluid(() => Fluid.of('gtceu:highly_unstable_nether_magma').fluid)
+    vein.weight(50)
+    vein.minimumYield(180)
+    vein.maximumYield(640)
+    vein.depletionAmount(2)
+    vein.depletionChance(1)
+    vein.depletedYield(50)
+  });
+
+  event.add('start:debris_rich_nether_magma_deposit', vein => {
+    vein.dimensions('minecraft:the_nether')
+    vein.fluid(() => Fluid.of('gtceu:debris_rich_nether_magma').fluid)
+    vein.weight(200)
     vein.minimumYield(120)
     vein.maximumYield(720)
     vein.depletionAmount(2)
     vein.depletionChance(1)
     vein.depletedYield(50)
-  })
-
-  event.add('start:nether_adamantite_rich_magma_deposit', vein => {
-    vein.dimensions('minecraft:the_nether')
-    vein.fluid(() => Fluid.of('gtceu:nether_adamantite_rich_magma').fluid)
-    vein.weight(500)
-    vein.minimumYield(120)
-    vein.maximumYield(720)
-    vein.depletionAmount(2)
-    vein.depletionChance(1)
-    vein.depletedYield(50)
-  })
-
-  event.add('start:nether_estaltine_rich_magma_deposit', vein => {
-    vein.dimensions('minecraft:the_nether')
-    vein.fluid(() => Fluid.of('gtceu:nether_estaltine_rich_magma').fluid)
-    vein.weight(500)
-    vein.minimumYield(120)
-    vein.maximumYield(720)
-    vein.depletionAmount(2)
-    vein.depletionChance(1)
-    vein.depletedYield(50)
-  })
+  });
 
   event.add('start:gritty_akreyrium', vein => {
     vein.dimensions('sgjourney:abydos')
     vein.fluid(() => Fluid.of('gtceu:gritty_akreyrium').fluid)
     vein.weight(300)
-    vein.minimumYield(2020)
-    vein.maximumYield(3020)
+    vein.minimumYield(240)
+    vein.maximumYield(960)
     vein.depletionAmount(2)
     vein.depletionChance(1)
     vein.depletedYield(50)
-  })
+  });
   // event.modify(GTCEu.id('light_oil_deposit'), vein => {
   //     vein.biomes(0, 'sgjourney:abydos_desert')
   //     vein.biomes(0, 'sgjourney:abydos_spires')
