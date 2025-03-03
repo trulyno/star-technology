@@ -288,7 +288,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .fluid()
         .element(GTElements.get('adamantine'))
-        .color(0xe60000)
+        .color(0xe99700)
         .blastTemp(10299, 'highest', VA('zpm'), 3000)
         .iconSet(METALLIC);
 
@@ -299,6 +299,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xff5050)
         .blastTemp(10299, 'highest', VA('zpm'), 3000)
         .iconSet(DULL);
+
+    event.create('enriched_estalt')
+        .ingot()
+        .fluid()
+        .element(GTElements.get('enriched_estalt'))
+        .color(0xE76C6C)
+        .blastTemp(10299, 'highest', VA('zpm'), 3000)
+        .iconSet(RADIOACTIVE);
 
     event.create('calamatium')
         .ingot()
@@ -492,8 +500,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // Netherite Line
     event.create('debris')
         .dust()
+        .liquid()
         .element(GTElements.get('debris'))
-        .color(0x804000);
+        .color(0x804000)
+        .flags(no_decomp);
 
     event.create('purified_debris')
         .dust()
@@ -852,52 +862,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x strontium', '1x titanium', '3x oxygen')
         .color(0xff0000);
 
-    event.create('nether_rare_earth')
-        .dust()
-        .components('1x mystery')
-        .color(0x800000)
-        .flags(no_decomp);
-
-    event.create('sodium_fluoride')
-        .dust()
-        .components('1x sodium', '1x fluorine')
-        .color(0x6600ff);
-
-    event.create('polonium_dioxide')
-        .dust()
-        .components('1x polonium', '2x oxygen')
-        .color(0xcccccc);
-
-    event.create('astatine_oxide')
-        .dust()
-        .components('1x astatine', '3x oxygen')
-        .color(0xcccc00);
-
-    event.create('lanthanum_triastatate')
-        .dust()
-        .components('1x lanthanum', '3x astatine_oxide')
-        .color(0xcccccc);
-
-    event.create('hafnium_diboride')
-        .dust()
-        .components('1x hafnium', '2x boron')
-        .color(0x0066cc);
-
-    event.create('seaborgium_oxychloride')
-        .dust()
-        .components('1x seaborgium', '2x oxygen', '2x chlorine')
-        .color(0x669900);
-
-    event.create('flerovium_oxide')
-        .dust()
-        .components('2x flerovium', '4x oxygen')
-        .color(0x669999);
-
-    event.create('oganesson_diiodide')
-        .fluid()
-        .components('1x oganesson', '2x iodine')
-        .color(0xffcccc);
-
     event.create('npk_solution')
         .fluid()
         .color(0xb8c3f5);
@@ -1051,48 +1015,294 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(no_decomp);
 
     // Nether
-    event.create('mythrilium')
-        .dust()
-        .ore(4, 2)
-        .components('1x mythril', '1x silicon', '6x fluorine')
-        .color(0x660033)
-        .flags(no_decomp);
+       
+        //Extended Debris
+        event.create('ancient_debris')
+            .dust()
+            .fluid()
+            .components('1x mystery')
+            .color(0x603D1A)
+            .flags(no_decomp);
 
-    event.create('adamantite')
-        .dust()
-        .ore(4, 2)
-        .components('1x adamantine', '3x fluorine', '1x antimony')
-        .color(0x3333cc)
-        .flags(no_decomp);
+        event.create('ancient_netherite')
+            .ingot()
+            .dust()
+            .flags(plates,rod,no_decomp)
+            .components('4x gold','4x mystery')
+            .color(0x46271B)
+            .blastTemp(12349, 'low', VA('uev'), 2400);
+          
+        //Atomic Nether Dust Line
+        event.create('atomic_nether_dust')
+            .dust()
+            .components('1x mystery','1x mystery','1x mystery','1x mystery')
+            .color(0x883039)
+            .flags(no_decomp)
+        
+        //Estalt Line
+        event.create('molten_estaltadyne_mixture')
+            .fluid()
+            .components('1x mystery','1x estalt','1x mystery')
+            .color(0x8E0505)
+            .flags(no_decomp);
 
-    event.create('estaltine')
-        .dust()
-        .ore(4, 2)
-        .components('4x estalt', '1x sulfur')
-        .color(0x800000)
-        .flags(no_decomp);
+        event.create('estaltadyne')
+            .dust()
+            .fluid()
+            .components('4x estalt','3x titanium','2x aluminium','5x sulfur','4x oxygen')
+            .color(0x8E0535)
+            .flags(no_decomp);
 
-    event.create('rheniite')
-        .dust()
-        .ore(4, 2)
-        .components('1x rhenium', '2x sulfur')
-        .color(0x4e6344)
-        .flags(no_decomp);
+        event.create('metmalic_estaltadyne')
+            .dust()
+            .components('4x estalt','3x titanium','2x aluminium','5x sulfur')
+            .color(0x8E0560)
+            .flags(no_decomp);
 
-    event.create('nether_mythrilium_rich_magma')
-        .fluid()
-        .components('5x mythrilium')
-        .color(0x333300);
+        event.create('magnemalic_estaltadyne')
+            .dust()
+            .components('4x estalt','3x titanium','5x sulfur')
+            .color(0x8E0480)
+            .flags(no_decomp);
 
-    event.create('nether_adamantite_rich_magma')
-        .fluid()
-        .components('5x adamantite')
-        .color(0x660000);
+        event.create('tytite_estaltadyne')
+            .dust()
+            .components('4x estalt','3x titanium')
+            .color(0x8E0340)
+            .flags(no_decomp);
 
-    event.create('nether_estaltine_rich_magma')
-        .fluid()
-        .components('5x estaltine')
-        .color(0x009999);
+        event.create('estaltadyne_hydride')
+            .dust()
+            .components('4x estalt','9x hydrogen')
+            .color(0x8E0505)
+            .flags(no_decomp);
+        
+        //Enriched Estalt Line
+        event.create('molten_enriched_estaltadyne_mixture')
+            .fluid()
+            .components('1x mystery','1x enriched_estalt','1x mystery')
+            .color(0xBE4747)
+            .flags(no_decomp);
+
+        event.create('enriched_estaltadyne_solution')
+            .fluid()
+            .components('1x mystery','1x enriched_estalt','1x mystery')
+            .color(0xBE4717)
+            .flags(no_decomp);
+
+        event.create('enriched_estaltadyne_slurry')
+            .fluid()
+            .components('1x mystery','1x enriched_estalt','1x mystery')
+            .color(0xBE4777)
+            .flags(no_decomp);
+
+        event.create('enriched_estaltadyne_naquide_slurry_mixture')
+            .fluid()
+            .components('1x mystery','1x enriched_estalt','1x enriched_naquadah','1x mystery')
+            .color(0xBE4697)
+            .flags(no_decomp);
+
+        event.create('hyper_enriched_estaltadyne_slurry_mixture')
+            .fluid()
+            .components('1x mystery','2x enriched_estalt')
+            .color(0xBE4697)
+            .flags(no_decomp);
+        
+        event.create('hyper_enriched_estaltadyne_slurry_residue')
+            .fluid()
+            .components('1x mystery','2x enriched_estalt')
+            .color(0xBE4677)
+            .flags(no_decomp);
+
+        event.create('sodium_hyper_enriched_estaltadyne_sludge')
+            .fluid()
+            .components('2x sodium','1x mystery','2x enriched_estalt')
+            .color(0xBE4697)
+            .flags(no_decomp);
+
+        event.create('sodium_over_sculk')
+            .fluid()
+            .components('1x sodium','1x mystery')
+            .color(0x235A3F)
+            .flags(no_decomp);
+
+        event.create('hyper_enriched_estaltadyne_concentrate')
+            .fluid()
+            .components('2x enriched_estalt','1x mystery')
+            .color(0xBE4587)
+            .flags(no_decomp);
+        
+        //Adamantine Line
+        event.create('enriched_adamantamite_mixture')
+            .fluid()
+            .components('1x mystery','1x adamantine','1x mystery')
+            .color(0x866E4B)
+            .flags(no_decomp);
+
+        event.create('molten_adamantamite_mixture')
+            .fluid()
+            .components('1x mystery','1x adamantine','1x mystery')
+            .color(0x866E4B)
+            .flags(no_decomp);
+
+        event.create('adamantamite')
+            .dust()
+            .fluid()
+            .components('5x adamantine','4x titanium','2x iron','6x nitrogen','12x oxygen')
+            .color(0x825F2B)
+            .flags(no_decomp);
+
+        event.create('adamantamite_metaltide')
+            .dust()
+            .components('5x adamantine','4x titanium','2x iron','6x nitrogen')
+            .color(0x8F611E)
+            .flags(no_decomp);
+
+        event.create('adamantamite_magnide')
+            .dust()
+            .components('5x adamantine','4x titanium','2x iron')
+            .color(0x744D13)
+            .flags(no_decomp);
+
+        event.create('adamantamite_titite')
+            .dust()
+            .components('5x adamantine','4x titanium')
+            .color(0xB68E52)
+            .flags(no_decomp);
+
+        event.create('adamantine_5')
+            .dust()
+            .components('5x adamantine')
+            .color(0xCB9D58)
+            .flags(no_decomp);
+
+        event.create('adamantine_hydroxide')
+            .dust()
+            .components('1x adamantine','3x hydrogen','3x oxygen')
+            .color(0xCB8858)
+            .flags(no_decomp);
+        
+        //Mythril Line
+        event.create('enriched_mythrillic_mixture')
+            .fluid()
+            .components('1x mystery','1x mythril','1x mystery')
+            .color(0x238383)
+            .flags(no_decomp);
+        
+        event.create('molten_mythrillic_mixture')
+            .fluid()
+            .components('1x mystery','1x mythril','1x mystery')
+            .color(0x238383)
+            .flags(no_decomp);
+
+        event.create('mythrillic')
+            .dust()
+            .fluid()
+            .components('6x mythril','6x carbon','14x hydrogen','3x zirconium','2x vanadium')
+            .color(0x238383)
+            .flags(no_decomp);
+
+        event.create('mythrillic_carbinide')
+            .dust()
+            .components('6x mythril','6x carbon','3x zirconium','2x vanadium')
+            .color(0x238383)
+            .flags(no_decomp);
+
+        event.create('mythrillic_metlide')
+            .dust()
+            .components('6x mythril','3x zirconium','2x vanadium')
+            .color(0x238383)
+            .flags(no_decomp);
+
+        event.create('mythrillic_metnide')
+            .dust()
+            .components('6x mythril','3x zirconium')
+            .color(0x238383)
+            .flags(no_decomp);
+
+        event.create('mythrillic_hydride')
+            .dust()
+            .components('6x mythril','2x hydrogen')
+            .color(0x238383)
+            .flags(no_decomp);
+        
+        // Calamatium/Isovol Line
+        event.create('impure_calamatium_solution')
+            .fluid()
+            .color(0x990000);
+
+        event.create('impure_isovol_solution')
+            .fluid()
+            .color(0x000066);
+
+        event.create('calamatium_solution')
+            .fluid()
+            .color(0xe60000);
+
+        event.create('isovol_solution')
+            .fluid()
+            .color(0x6600cc);
+
+        event.create('calamatium_fluoride')
+            .dust()
+            .components('1x calamatium', '2x fluorine')
+            .color(0xcc0066)
+            .flags(no_decomp);
+
+        event.create('isovol_fluoride')
+            .dust()
+            .components('1x isovol', '2x fluorine')
+            .color(0x9900ff)
+            .flags(no_decomp);
+
+        // //Magmas
+        event.create('highly_unstable_nether_magma')
+            .fluid()
+            .components('1x mystery')
+            .color(0xFFA025)
+            .flags(no_decomp);
+
+        event.create('magmatic_plasma')
+            .plasma()
+            .components('1x mystery','1x iron','1x mystery')
+            .color(0xFFD39A)
+            .flags(no_decomp);
+
+        event.create('debris_rich_nether_magma')
+            .fluid()
+            .components('1x mystery')
+            .color(0x6C3628)
+            .flags(no_decomp);
+ 
+        event.create('mythrillic_nether_magma')
+            .fluid()
+            .components('1x mystery','1x mythril','1x mystery')
+            .color(0x238383)
+            .flags(no_decomp);
+
+        event.create('adamantamite_nether_magma')
+            .fluid()
+            .components('1x mystery','1x adamantine','1x mystery')
+            .color(0x826944)
+            .flags(no_decomp);
+
+        event.create('estaltadine_nether_magma')
+            .fluid()
+            .components('1x mystery','1x estalt','1x mystery')
+            .color(0xA92323)
+            .flags(no_decomp);
+
+        event.create('mystical_nether_magma')
+            .fluid()
+            .components('1x mystery','1x adamantine','1x mystery','1x estalt','1x mystery','1x mythril','1x mystery')
+            .color(0xF26B87)
+            .flags(no_decomp);
+        
+        event.create('enriched_mystical_concentrate')
+            .fluid()
+            .components('1x mystery','1x adamantine','1x mystery','1x enriched_estalt','1x mystery','1x mythril','1x mystery')
+            .color(0xF26B87)
+            .flags(no_decomp);
 
     // End
 
@@ -1241,85 +1451,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(fine_wire, no_decomp, foil)
         .blastTemp(10199, 'highest', VA('uv'), 850)
 
-    // Mythril Line
-    event.create('trichloromythrilium')
-        .dust()
-        .components('1x mythril', '3x chlorine')
-        .color(0x333300)
-        .flags(no_decomp);
-
-    event.create('mythrilium_oxide')
-        .dust()
-        .components('1x mythril', '1x oxygen')
-        .color(0x003300)
-        .flags(no_decomp);
-
-    // Adamantium Line
-    event.create('adamantite_hydroxide')
-        .dust()
-        .components('1x adamantine', '3x oxygen', '3x hydrogen')
-        .color(0xcc0099)
-        .flags(no_decomp);
-
-    event.create('adamantite_oxide')
-        .dust()
-        .components('2x adamantine', '3x oxygen')
-        .color(0xcc6699)
-        .flags(no_decomp);
-
-    // Estalt Line
-    event.create('estaltine_sulfate')
-        .dust()
-        .components('1x estalt', '2x sulfur', '8x oxygen')
-        .color(0xcc6699)
-        .flags(no_decomp);
-
-    event.create('estaltine_fluoride')
-        .dust()
-        .components('1x estalt', '4x fluorine')
-        .color(0xffcc66)
-        .flags(no_decomp);
-
-    event.create('estaltine_hydroxide')
-        .dust()
-        .components('1x estalt', '4x oxygen', '4x hydrogen')
-        .color(0xff3300)
-        .flags(no_decomp);
-
-    event.create('estaltine_oxide')
-        .dust()
-        .components('1x estalt', '2x oxygen')
-        .color(0x990000)
-        .flags(no_decomp);
-
-    // Calamatium/Isovol Line
-    event.create('impure_calamatium_solution')
-        .fluid()
-        .color(0x990000);
-
-    event.create('impure_isovol_solution')
-        .fluid()
-        .color(0x000066);
-
-    event.create('calamatium_solution')
-        .fluid()
-        .color(0xe60000);
-
-    event.create('isovol_solution')
-        .fluid()
-        .color(0x6600cc);
-
-    event.create('calamatium_fluoride')
-        .dust()
-        .components('1x calamatium', '2x fluorine')
-        .color(0xcc0066)
-        .flags(no_decomp);
-
-    event.create('isovol_fluoride')
-        .dust()
-        .components('1x isovol', '2x fluorine')
-        .color(0x9900ff)
-        .flags(no_decomp);
+   
 
     // PEEK plastic Line
 
