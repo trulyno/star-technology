@@ -32,5 +32,9 @@ StartupEvents.registry('item', event => {
     event.create('energized_nether_star_shard')
         .displayName('Energized Nether Star Shard')
         .texture('kubejs:item/lines/netherstar/energized_nether_star_shard');
-        
+    
+    //Mystical Magmas
+    event.create('ancient_netherite_reinforced_mesh')
+        .displayName('Ancient-Netherite Reinforced Mesh')
+        .texture('kubejs:item/netherite_reinforced_mesh');
 });

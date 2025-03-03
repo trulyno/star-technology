@@ -1033,7 +1033,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             .blastTemp(12349, 'low', VA('uev'), 2400);
           
         //Atomic Nether Dust Line
-        event.create('atomic_nether_dust')
+        event.create('atomic_nether')
             .dust()
             .components('1x mystery','1x mystery','1x mystery','1x mystery')
             .color(0x883039)
@@ -1078,7 +1078,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             .flags(no_decomp);
         
         //Enriched Estalt Line
-        event.create('molten_enriched_estaltadyne_mixture')
+        event.create('enriched_estaltadyne_mixture')
             .fluid()
             .components('1x mystery','1x enriched_estalt','1x mystery')
             .color(0xBE4747)
@@ -1142,7 +1142,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         event.create('molten_adamantamite_mixture')
             .fluid()
             .components('1x mystery','1x adamantine','1x mystery')
-            .color(0x866E4B)
+            .color(0x866E7B)
             .flags(no_decomp);
 
         event.create('adamantamite')
@@ -1186,44 +1186,44 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         event.create('enriched_mythrillic_mixture')
             .fluid()
             .components('1x mystery','1x mythril','1x mystery')
-            .color(0x238383)
+            .color(0x238213)
             .flags(no_decomp);
         
         event.create('molten_mythrillic_mixture')
             .fluid()
             .components('1x mystery','1x mythril','1x mystery')
-            .color(0x238383)
+            .color(0x238342)
             .flags(no_decomp);
 
         event.create('mythrillic')
             .dust()
             .fluid()
             .components('6x mythril','6x carbon','14x hydrogen','3x zirconium','2x vanadium')
-            .color(0x238383)
+            .color(0x238362)
             .flags(no_decomp);
 
         event.create('mythrillic_carbinide')
             .dust()
             .components('6x mythril','6x carbon','3x zirconium','2x vanadium')
-            .color(0x238383)
+            .color(0x238441)
             .flags(no_decomp);
 
         event.create('mythrillic_metlide')
             .dust()
             .components('6x mythril','3x zirconium','2x vanadium')
-            .color(0x238383)
+            .color(0x238451)
             .flags(no_decomp);
 
         event.create('mythrillic_metnide')
             .dust()
             .components('6x mythril','3x zirconium')
-            .color(0x238383)
+            .color(0x238432)
             .flags(no_decomp);
 
         event.create('mythrillic_hydride')
             .dust()
             .components('6x mythril','2x hydrogen')
-            .color(0x238383)
+            .color(0x238338)
             .flags(no_decomp);
         
         // Calamatium/Isovol Line
@@ -1286,7 +1286,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             .color(0x826944)
             .flags(no_decomp);
 
-        event.create('estaltadine_nether_magma')
+        event.create('estaltadyne_nether_magma')
             .fluid()
             .components('1x mystery','1x estalt','1x mystery')
             .color(0xA92323)
