@@ -1262,7 +1262,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             .color(0xFFA025)
             .flags(no_decomp);
 
-        event.create('magmatic_plasma')
+        event.create('magmatic')
             .plasma()
             .components('1x mystery','1x iron','1x mystery')
             .color(0xFFD39A)
