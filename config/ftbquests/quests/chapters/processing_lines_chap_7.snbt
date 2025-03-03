@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "processing_lines_chap_7"
+	group: "03EF8417F6D21A2E"
+	icon: "gtceu:uev_chemical_reactor"
+	id: "587F453EE1BAFB79"
+	order_index: 4
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [ ]
+	title: "Processing Lines (Chap 7..)"
+}

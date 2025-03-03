@@ -2277,6 +2277,7 @@
 		{
 			dependencies: ["10126B9D6EC90F59"]
 			id: "1289465781707205"
+			optional: true
 			tasks: [
 				{
 					id: "71E3F7FCADC341A6"

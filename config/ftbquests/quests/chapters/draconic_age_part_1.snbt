@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "draconic_age_part_1"
+	group: "1E0FC4EA21F735F7"
+	icon: "minecraft:dragon_egg"
+	id: "5617484BFC479624"
+	order_index: 6
+	quest_links: [ ]
+	quests: [ ]
+	title: "Draconic Empires"
+}
