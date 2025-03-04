@@ -54,4 +54,9 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:adamantine_dust')
         .itemOutputs('3x gtceu:sodium_hydroxide_dust')
 
+    event.replaceInput({id: 'gtceu:electric_blast_furnace/blast_adamantine_gas'},
+        Fluid.of('gtceu:krypton 10'),
+        Fluid.of('gtceu:xenon 10')
+    );
+
 });

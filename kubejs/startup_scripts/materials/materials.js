@@ -258,7 +258,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get('xeproda'))
         .color(0x1a0d00)
         .iconSet(DULL)
-        .blastTemp(12499, 'highest', VA('uv'), 3750);
+        .blastTemp(15499, 'highest', VA('uev'), 3750);
 
     event.create('rhexis')
         .ingot()
@@ -266,7 +266,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get('rhexis'))
         .color(0x330000)
         .iconSet(DULL)
-        .blastTemp(12499, 'highest', VA('uv'), 4750);
+        .blastTemp(15499, 'highest', VA('uiv'), 4750);
 
     event.create('chalyblux')
         .ingot()
@@ -274,14 +274,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get('chalyblux'))
         .color(0xffcccc)
         .iconSet(DULL)
-        .blastTemp(12499, 'highest', VA('uv'), 5750);
+        .blastTemp(15499, 'highest', VA('uev'), 5750);
 
     event.create('mythril')
         .ingot()
         .fluid()
         .element(GTElements.get('mythril'))
         .color(0x006666)
-        .blastTemp(10299, 'highest', VA('zpm'), 3000)
+        .blastTemp(10299, 'highest', VA('uhv'), 2400)
         .iconSet(METALLIC);
 
     event.create('adamantine')
@@ -289,7 +289,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .element(GTElements.get('adamantine'))
         .color(0xe99700)
-        .blastTemp(10299, 'highest', VA('zpm'), 3000)
+        .blastTemp(13299, 'highest', VA('uev'), 3000)
         .iconSet(METALLIC);
 
     event.create('estalt')
@@ -297,7 +297,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .element(GTElements.get('estalt'))
         .color(0xff5050)
-        .blastTemp(10299, 'highest', VA('zpm'), 3000)
+        .blastTemp(12299, 'highest', VA('uhv'), 2600)
         .iconSet(DULL);
 
     event.create('enriched_estalt')
@@ -305,7 +305,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .element(GTElements.get('enriched_estalt'))
         .color(0xE76C6C)
-        .blastTemp(10299, 'highest', VA('zpm'), 3000)
+        .blastTemp(12899, 'highest', VA('uhv'), 2800)
         .iconSet(RADIOACTIVE);
 
     event.create('calamatium')
@@ -314,7 +314,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get('calamatium'))
         .color(0x660000)
         .iconSet(DULL)
-        .blastTemp(11799, 'highest', VA('uv'), 2750);
+        .blastTemp(13199, 'highest', VA('uhv'), 2750);
 
     event.create('isovol')
         .ingot()
@@ -322,7 +322,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get('isovol'))
         .color(0x290066)
         .iconSet(DULL)
-        .blastTemp(12499, 'highest', VA('uv'), 2750);
+        .blastTemp(12999, 'highest', VA('uhv'), 2750);
 
     // This material is meant to place a ? symbol in a material's chemical formula
     event.create('mystery')
@@ -1229,7 +1229,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
         event.create('mythrillic_hydride')
             .dust()
-            .components('6x mythril','2x hydrogen')
+            .components('1x mythril','2x hydrogen')
             .color(0x238338)
             .flags(no_decomp);
         

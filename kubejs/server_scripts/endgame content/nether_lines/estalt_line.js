@@ -46,4 +46,9 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x gtceu:estalt_dust')
         .outputFluids('gtceu:phosphoric_acid 3000')
 
+    event.replaceInput({id: 'gtceu:electric_blast_furnace/blast_estalt_gas'},
+        Fluid.of('gtceu:krypton 10'),
+        Fluid.of('gtceu:xenon 10')
+    );
+
 });
