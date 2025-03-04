@@ -129,12 +129,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:hsse 25920', 'gtceu:hssg 25920', 'gtceu:hsss 25920')
         .itemOutputs('gtceu:runic_inscribe_manipulate')
         .duration(32000)
-        .stationResearch(
-    researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('kubejs:runic_tablet_complete'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(144)
-            )
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of('kubejs:runic_tablet_complete'))
+        //         .EUt(GTValues.VHA[GTValues.UV])
+        //         .CWUt(144)
+        //     )
         .EUt(GTValues.VHA[GTValues.UHV]);
  
 });

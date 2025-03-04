@@ -13,12 +13,12 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('gtceu:exotic_gas_siphon')
         .duration(2400)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:uhv_gas_collector'))
-                .EUt(GTValues.VHA[GTValues.UHV])
-                .CWUt(144)
-            )
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of('gtceu:uhv_gas_collector'))
+        //         .EUt(GTValues.VHA[GTValues.UHV])
+        //         .CWUt(144)
+        //     )
         .EUt(GTValues.VHA[GTValues.UEV]);
 
     event.recipes.gtceu.exotic_gas_siphon('overworld')

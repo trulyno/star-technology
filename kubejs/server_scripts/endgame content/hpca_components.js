@@ -17,11 +17,11 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('start_core:hpca_nanofluidic_heat_sink_component')
         .duration(7200)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:hpca_heat_sink_component'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(128)
-        )
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of('gtceu:hpca_heat_sink_component'))
+        //         .EUt(GTValues.VHA[GTValues.UV])
+        //         .CWUt(128)
+        // )
         .EUt(GTValues.VHA[GTValues.UV]); 
 })

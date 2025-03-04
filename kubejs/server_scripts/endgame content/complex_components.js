@@ -8,12 +8,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 12528', 'gtceu:lubricant 750')
         .itemOutputs('gtceu:component_part_assembly')
         .duration(1800)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:uv_assembler'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(96)
-            )
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of('gtceu:uv_assembler'))
+        //         .EUt(GTValues.VHA[GTValues.UV])
+        //         .CWUt(96)
+        //     )
         .EUt(GTValues.VHA[GTValues.UV]);
     
     const ComponentComposition = [
@@ -101,12 +101,12 @@ ServerEvents.recipes(event => {
             .itemInputs(`kubejs:${comp.Tier}_super_magnetic_core`, `2x gtceu:long_${comp.PrimaryMaterial}_rod`, `kubejs:${comp.Tier}_transmission_assembly`,`kubejs:${comp.Tier}_micropower_router`, `64x gtceu:fine_${comp.WireTypeMechanical}_wire`)
             .inputFluids(`gtceu:indium_tin_lead_cadmium_soldering_alloy 576`, `gtceu:lubricant 1000`, `gtceu:${comp.Fluid} 576`)
             .itemOutputs(`gtceu:${comp.Tier}_electric_motor`)
-            .stationResearch(
-                researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of(`gtceu:${comp.Tier1Under}_electric_motor`))
-                    .EUt(comp.EUt/4)
-                    .CWUt(64+64*comp.Scaler)
-            )
+            // .stationResearch(
+            //     researchRecipeBuilder => researchRecipeBuilder
+            //         .researchStack(Item.of(`gtceu:${comp.Tier1Under}_electric_motor`))
+            //         .EUt(comp.EUt/4)
+            //         .CWUt(64+64*comp.Scaler)
+            // )
             .duration(600)
             .EUt(comp.EUt/4);
 
@@ -114,12 +114,12 @@ ServerEvents.recipes(event => {
             .itemInputs(`gtceu:${comp.Tier}_electric_motor`, `gtceu:${comp.TierMaterial}_large_fluid_pipe`, `kubejs:${comp.Tier}_microfluidic_flow_valve`,`kubejs:${comp.Tier}_micropower_router`, `16x gtceu:${comp.Rubber}_ring`, `gtceu:${comp.SupportMaterial}_rotor`)
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 576', 'gtceu:lubricant 1000', `gtceu:${comp.Fluid} 576`)
             .itemOutputs(`gtceu:${comp.Tier}_electric_pump`)
-            .stationResearch(
-                researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of(`gtceu:${comp.Tier1Under}_electric_pump`))
-                    .EUt(comp.EUt/4)
-                    .CWUt(64+64*comp.Scaler)
-            )
+            // .stationResearch(
+            //     researchRecipeBuilder => researchRecipeBuilder
+            //         .researchStack(Item.of(`gtceu:${comp.Tier1Under}_electric_pump`))
+            //         .EUt(comp.EUt/4)
+            //         .CWUt(64+64*comp.Scaler)
+            // )
             .duration(600)
             .EUt(comp.EUt/4);
 
@@ -134,12 +134,12 @@ ServerEvents.recipes(event => {
             .itemInputs(`2x gtceu:${comp.Tier}_electric_motor`, `kubejs:${comp.Tier}_high_strength_panel`, `kubejs:${comp.Tier}_precision_drive_mechanism`, `kubejs:${comp.Tier}_transmission_assembly`, `kubejs:${comp.Tier}_micropower_router`)
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 576', 'gtceu:lubricant 1000', `gtceu:${comp.Rubber} 3456`, `gtceu:${comp.Fluid} 576`)
             .itemOutputs(`gtceu:${comp.Tier}_conveyor_module`)
-            .stationResearch(
-                researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of(`gtceu:${comp.Tier1Under}_conveyor_module`))
-                    .EUt(comp.EUt/4)
-                    .CWUt(64+64*comp.Scaler)
-            )
+            // .stationResearch(
+            //     researchRecipeBuilder => researchRecipeBuilder
+            //         .researchStack(Item.of(`gtceu:${comp.Tier1Under}_conveyor_module`))
+            //         .EUt(comp.EUt/4)
+            //         .CWUt(64+64*comp.Scaler)
+            // )
             .duration(600)
             .EUt(comp.EUt/4);
 
@@ -147,12 +147,12 @@ ServerEvents.recipes(event => {
             .itemInputs(`gtceu:${comp.Tier}_electric_motor`, `2x kubejs:${comp.Tier}_high_strength_panel`, `2x kubejs:${comp.Tier}_transmission_assembly`, `kubejs:${comp.Tier}_micropower_router`, `gtceu:${comp.SupportMaterial}_gear`, `gtceu:small_${comp.PrimaryMaterial}_gear`)
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 576', 'gtceu:lubricant 1000', `gtceu:${comp.Fluid} 576`)
             .itemOutputs(`gtceu:${comp.Tier}_electric_piston`)
-            .stationResearch(
-                researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of(`gtceu:${comp.Tier1Under}_electric_piston`))
-                    .EUt(comp.EUt/4)
-                    .CWUt(64+64*comp.Scaler)
-            )
+            // .stationResearch(
+            //     researchRecipeBuilder => researchRecipeBuilder
+            //         .researchStack(Item.of(`gtceu:${comp.Tier1Under}_electric_piston`))
+            //         .EUt(comp.EUt/4)
+            //         .CWUt(64+64*comp.Scaler)
+            // )
             .duration(600)
             .EUt(comp.EUt/4);
 
@@ -160,12 +160,12 @@ ServerEvents.recipes(event => {
             .itemInputs(`4x gtceu:long_${comp.PrimaryMaterial}_rod`, `kubejs:${comp.Tier}_precision_drive_mechanism`, `2x kubejs:${comp.Tier}_transmission_assembly`, `2x gtceu:${comp.Tier}_electric_motor`, `gtceu:${comp.Tier}_electric_piston`, `3x kubejs:${comp.Tier}_computational_matrix`, `2x kubejs:${comp.Tier}_micropower_router`)
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1728', 'gtceu:lubricant 1000', `gtceu:${comp.Fluid} 576`)
             .itemOutputs(`gtceu:${comp.Tier}_robot_arm`)
-            .stationResearch(
-                researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of(`gtceu:${comp.Tier1Under}_robot_arm`))
-                    .EUt(comp.EUt/4)
-                    .CWUt(64+64*comp.Scaler)
-            )
+            // .stationResearch(
+            //     researchRecipeBuilder => researchRecipeBuilder
+            //         .researchStack(Item.of(`gtceu:${comp.Tier1Under}_robot_arm`))
+            //         .EUt(comp.EUt/4)
+            //         .CWUt(64+64*comp.Scaler)
+            // )
             .duration(600)
             .EUt(comp.EUt/4);
 
@@ -173,12 +173,12 @@ ServerEvents.recipes(event => {
             .itemInputs(`gtceu:${comp.PrimaryMaterial}_frame`, `2x kubejs:${comp.Tier}_high_strength_panel`, `kubejs:${comp.Tier}_catalyst_core`, `2x gtceu:${comp.Tier}_emitter`, `kubejs:${comp.Tier}_computational_matrix`, `64x gtceu:fine_${comp.WireTypeComputational}_wire`, `2x kubejs:${comp.Tier}_micropower_router`)
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1728', `gtceu:${comp.Fluid} 576`)
             .itemOutputs(`gtceu:${comp.Tier}_field_generator`)
-            .stationResearch(
-                researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of(`gtceu:${comp.Tier1Under}_field_generator`))
-                    .EUt(comp.EUt/4)
-                    .CWUt(64+64*comp.Scaler)
-            )
+            // .stationResearch(
+            //     researchRecipeBuilder => researchRecipeBuilder
+            //         .researchStack(Item.of(`gtceu:${comp.Tier1Under}_field_generator`))
+            //         .EUt(comp.EUt/4)
+            //         .CWUt(64+64*comp.Scaler)
+            // )
             .duration(600)
             .EUt(comp.EUt/4);
 
@@ -186,12 +186,12 @@ ServerEvents.recipes(event => {
             .itemInputs(`gtceu:${comp.PrimaryMaterial}_frame`, `gtceu:${comp.Tier}_electric_motor`, `4x gtceu:long_${comp.PrimaryMaterial}_rod`, `kubejs:${comp.Tier}_catalyst_core`, `kubejs:${comp.Tier}_computational_matrix`, `64x gtceu:${comp.TierMaterial}_foil`, `2x kubejs:${comp.Tier}_micropower_router`)
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1152', `gtceu:${comp.Fluid} 576`)
             .itemOutputs(`gtceu:${comp.Tier}_emitter`)
-            .stationResearch(
-                researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of(`gtceu:${comp.Tier1Under}_emitter`))
-                    .EUt(comp.EUt/4)
-                    .CWUt(64+64*comp.Scaler)
-            )
+            // .stationResearch(
+            //     researchRecipeBuilder => researchRecipeBuilder
+            //         .researchStack(Item.of(`gtceu:${comp.Tier1Under}_emitter`))
+            //         .EUt(comp.EUt/4)
+            //         .CWUt(64+64*comp.Scaler)
+            // )
             .duration(600)
             .EUt(comp.EUt/4);
 
@@ -199,12 +199,12 @@ ServerEvents.recipes(event => {
             .itemInputs(`gtceu:${comp.PrimaryMaterial}_frame`, `gtceu:${comp.Tier}_electric_motor`, `4x gtceu:${comp.PrimaryMaterial}_plate`, `kubejs:${comp.Tier}_catalyst_core`, `kubejs:${comp.Tier}_computational_matrix`, `64x gtceu:${comp.TierMaterial}_foil`, `2x kubejs:${comp.Tier}_micropower_router`)
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1152', `gtceu:${comp.Fluid} 576`)
             .itemOutputs(`gtceu:${comp.Tier}_sensor`)
-            .stationResearch(
-                researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of(`gtceu:${comp.Tier1Under}_sensor`))
-                    .EUt(comp.EUt/4)
-                    .CWUt(64+64*comp.Scaler)
-            )
+            // .stationResearch(
+            //     researchRecipeBuilder => researchRecipeBuilder
+            //         .researchStack(Item.of(`gtceu:${comp.Tier1Under}_sensor`))
+            //         .EUt(comp.EUt/4)
+            //         .CWUt(64+64*comp.Scaler)
+            // )
             .duration(600)
             .EUt(comp.EUt/4);
 

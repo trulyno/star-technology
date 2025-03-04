@@ -7,12 +7,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:prismalium 9216','gtceu:gritty_akreyrium 224000')
         .itemOutputs('gtceu:cyclonic_crystalline_sieve')
         .duration(24000)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:gritty_akreyrium_bucket'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(144)
-        )
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of('gtceu:gritty_akreyrium_bucket'))
+        //         .EUt(GTValues.VHA[GTValues.UV])
+        //         .CWUt(144)
+        // )
         .EUt(GTValues.VA[GTValues.UV]); 
 
     event.recipes.gtceu.assembly_line('folding_akreyrium_stabiliser')
@@ -22,12 +22,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:hsse 9216','gtceu:borosilicate_glass 147456')
         .itemOutputs('gtceu:folding_akreyrium_stabiliser')
         .duration(32000)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:cyclonic_crystalline_sieve'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(144)
-        )
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of('gtceu:cyclonic_crystalline_sieve'))
+        //         .EUt(GTValues.VHA[GTValues.UV])
+        //         .CWUt(144)
+        // )
         .EUt(GTValues.VA[GTValues.UV]); 
 
     
@@ -39,12 +39,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:naquadria 24048','gtceu:borosilicate_glass 36864')
         .itemOutputs('gtceu:leptonic_manifold_quantiser')
         .duration(32000)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:lepton_sparse_akreyrium_bucket'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(144)
-        )
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of('gtceu:lepton_sparse_akreyrium_bucket'))
+        //         .EUt(GTValues.VHA[GTValues.UV])
+        //         .CWUt(144)
+        // )
         .EUt(GTValues.VA[GTValues.UV]); 
 
     event.recipes.gtceu.assembly_line('leptonic_convergence_injector')
@@ -54,12 +54,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:weapon_grade_naquadah 2304','gtceu:stellarium 2304','gtceu:twinite 20736','gtceu:utopian_akreyrium 1250')
         .itemOutputs('gtceu:leptonic_convergence_injector')
         .duration(32000)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:leptonic_manifold_quantiser'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(144)
-        )
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of('gtceu:leptonic_manifold_quantiser'))
+        //         .EUt(GTValues.VHA[GTValues.UV])
+        //         .CWUt(144)
+        // )
         .EUt(GTValues.VA[GTValues.UV]); 
 
     // Akreyrium Processing

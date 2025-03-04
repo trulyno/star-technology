@@ -25,12 +25,12 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs('gtceu:dimensional_finder')
         .duration(36000)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('kubejs:coordinate_crystal'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(128)
-            )
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of('kubejs:coordinate_crystal'))
+        //         .EUt(GTValues.VHA[GTValues.UV])
+        //         .CWUt(128)
+        //     )
         .EUt(GTValues.VHA[GTValues.UV]); 
 
     //Coordinate Crystals

@@ -161,11 +161,11 @@ function inputTypes(tier,tier1under,main,cable,wire,glass,plastic,cable1up,mag,p
         .itemInputs(`gtceu:${tier}_machine_hull`,`4x gtceu:${cable}_${powerTr}`,`2x gtceu:${chip}_chip`,`#gtceu:circuits/${tier}`,`2x kubejs:${tier}_voltage_coil`)
         .inputFluids(`gtceu:sodium_potassium ${math*4000+12000}`, `gtceu:indium_tin_lead_cadmium_soldering_alloy ${1440*(2**math)}`)
         .itemOutputs(`gtceu:${tier}_energy_${type}_hatch`)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of(`gtceu:${tier1under}_energy_${type}_hatch`))
-                .EUt(122880*(4**math))
-                .CWUt(math*32+96))
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of(`gtceu:${tier1under}_energy_${type}_hatch`))
+        //         .EUt(122880*(4**math))
+        //         .CWUt(math*32+96))
         .duration(800)
         .EUt(491520*(4**math));
     event.recipes.gtceu.assembler(`${tier}_energy_${type}_hatch_4a`)

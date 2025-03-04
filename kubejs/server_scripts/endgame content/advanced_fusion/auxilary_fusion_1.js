@@ -8,12 +8,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1152', 'gtceu:zirconium_selenide_diiodide 1152')
         .itemOutputs('start_core:uhv_auxiliary_boosted_fusion_reactor')
         .duration(1200)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:uv_fusion_reactor'))
-                .EUt(GTValues.VHA[GTValues.UHV])
-                .CWUt(144)
-            )
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of('gtceu:uv_fusion_reactor'))
+        //         .EUt(GTValues.VHA[GTValues.UHV])
+        //         .CWUt(144)
+        //     )
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     //Casings/Coil
