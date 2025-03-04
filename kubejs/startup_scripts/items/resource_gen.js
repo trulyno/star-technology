@@ -36,5 +36,5 @@ StartupEvents.registry('item', event => {
     //Mystical Magmas
     event.create('ancient_netherite_reinforced_mesh')
         .displayName('Ancient-Netherite Reinforced Mesh')
-        .texture('kubejs:item/netherite_reinforced_mesh');
+        .texture('kubejs:item/ancient_netherite_reinforced_mesh');
 });
