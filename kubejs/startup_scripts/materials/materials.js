@@ -560,7 +560,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame);
 
-    event.create('screret_runic_laser_source_base')
+    event.create('runic_laser_source_base')
         .gem(0)
         .components('2x naquadic_netherite', '10x tritanium', '2x trinium')
         .color(0x00ff00)
