@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
         .itemInputs('15x gtceu:sodium_hydroxide_dust')
         .inputFluids('gtceu:oxygen 15000')
         .itemOutputs('1x gtceu:tytite_estaltadyne_dust')
-        .itemOutputs('5x gtceu:sodium_bisulfate')
+        .itemOutputs('5x gtceu:sodium_bisulfate_dust')
 
     event.recipes.gtceu.electric_blast_furnace('estaltadyne_hydride_dust')
         .itemInputs('1x gtceu:tytite_estaltadyne_dust')

@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.heat_chamber(`enriched_estaltadyne_mixture_to_solution`)
         .inputFluids(`gtceu:enriched_estaltadyne_mixture 4000`)
         .itemInputs(`1x gtceu:polonium_dust`)
-        .outputFluids(`gtceu:enriched_estaltadyne_solution`)
+        .outputFluids(`gtceu:enriched_estaltadyne_solution 4000`)
         .itemOutputs('1x gtceu:lead_dust')
         .duration(400)
         .EUt(GTValues.VHA[GTValues.UHV]); 

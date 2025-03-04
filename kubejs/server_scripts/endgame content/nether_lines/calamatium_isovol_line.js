@@ -24,9 +24,10 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor('calamatium_fluoride')
         .itemInputs('gtceu:calamatium_fluoride_dust')
-        .inputFluids('gtceu:hydrogen 2000')
+        .inputFluids('minecraft:water 1000')
         .itemOutputs('gtceu:calamatium_dust')
         .outputFluids('gtceu:hydrofluoric_acid 2000')
+        .outputFluids('gtceu:oxygen 1000')
         .duration(600)
         .EUt(30000);
 
@@ -47,9 +48,10 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor('isovol_fluoride')
         .itemInputs('gtceu:isovol_fluoride_dust')
-        .inputFluids('gtceu:hydrogen 2000')
+        .inputFluids('minecraft:water 1000')
         .itemOutputs('gtceu:isovol_dust')
         .outputFluids('gtceu:hydrofluoric_acid 2000')
+        .outputFluids('gtceu:oxygen 1000')
         .duration(600)
         .EUt(30000);
 
