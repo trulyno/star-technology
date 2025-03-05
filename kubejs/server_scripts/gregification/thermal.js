@@ -150,21 +150,21 @@ ServerEvents.recipes(event => {
         .EUt(28);
 
     [
-        {id: 'hardened', glass: 'thermal:obsidian', base: 'gtceu:tempered', fluid: 'minecraft:lava 250', duration: 240, energy: 28},
-        {id: 'soul_infused', glass: 'thermal_extra:soul_infused', base: 'gtceu:tempered', fluid: 'gtceu:soul_infused 144', duration: 480, energy: 28},
-        {id: 'signalum', glass: 'thermal:signalum', base: 'gtceu:tempered', fluid: 'gtceu:signalum 144', duration: 960, energy: 28},
-        {id: 'lumium', glass: 'thermal:lumium', base: 'gtceu:tempered', fluid: 'gtceu:lumium 144', duration: 1920, energy: 28},
-        {id: 'enderium', glass: 'thermal:enderium', base: 'gtceu:tempered', fluid: 'gtceu:enderium 144', duration: 3840, energy: 28},
-        {id: 'shellite', glass: 'thermal_extra:shellite', base: 'gtceu:laminated', fluid: 'gtceu:shellite 144', duration: 7680, energy: 28},
-        {id: 'twinite', glass: 'thermal_extra:twinite', base: 'gtceu:laminated', fluid: 'gtceu:twinite 144', duration: 15360, energy: 28},
-        {id: 'dragonsteel', glass: 'thermal_extra:dragonsteel', base: 'gtceu:fusion', fluid: 'gtceu:dragonsteel 144', duration: 30720, energy: 28}
+        {id: 'hardened', glass: 'thermal:obsidian', base: 'gtceu:tempered', fluid: 'minecraft:lava 250', Emult: 1},
+        {id: 'soul_infused', glass: 'thermal_extra:soul_infused', base: 'gtceu:tempered', fluid: 'gtceu:soul_infused 144', Emult: 4},
+        {id: 'signalum', glass: 'thermal:signalum', base: 'gtceu:tempered', fluid: 'gtceu:signalum 144', Emult: 16},
+        {id: 'lumium', glass: 'thermal:lumium', base: 'gtceu:tempered', fluid: 'gtceu:lumium 144', Emult: 64},
+        {id: 'enderium', glass: 'thermal:enderium', base: 'gtceu:tempered', fluid: 'gtceu:enderium 144', Emult: 256},
+        {id: 'shellite', glass: 'thermal_extra:shellite', base: 'gtceu:laminated', fluid: 'gtceu:shellite 144', Emult: 1024},
+        {id: 'twinite', glass: 'thermal_extra:twinite', base: 'gtceu:laminated', fluid: 'gtceu:twinite 144', Emult: 4096},
+        {id: 'dragonsteel', glass: 'thermal_extra:dragonsteel', base: 'gtceu:fusion', fluid: 'gtceu:dragonsteel 144', Emult: 16384}
     ].forEach(type=> {
         event.recipes.gtceu.fluid_solidifier(`${type.id}_glass`)
             .itemInputs(`${type.base}_glass`)
             .inputFluids(type.fluid)
             .itemOutputs(`${type.glass}_glass`)
-            .duration(type.duration)
-            .EUt(type.energy);
+            .duration(240)
+            .EUt(7*type.Emult);
     });
 
     event.shaped(Item.of('thermal:energy_cell_frame'), [
