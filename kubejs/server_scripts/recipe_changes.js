@@ -485,20 +485,12 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(GTValues.V[GTValues.HV]);
 
-    event.recipes.create.item_application('gtceu:t_large_bender', ['gtceu:hv_bender', 'kubejs:multiblock_upgrade_kit']);
-    event.recipes.create.item_application('gtceu:t_large_centrifuge', ['gtceu:hv_centrifuge', 'kubejs:multiblock_upgrade_kit']);
-    event.recipes.create.item_application('gtceu:t_large_electrolyzer', ['gtceu:hv_electrolyzer', 'kubejs:multiblock_upgrade_kit']);
-    event.recipes.create.item_application('gtceu:t_large_extruder', ['gtceu:hv_extruder', 'kubejs:multiblock_upgrade_kit']);
-    event.recipes.create.item_application('gtceu:t_large_forming_press', ['gtceu:hv_forming_press', 'kubejs:multiblock_upgrade_kit']);
-    event.recipes.create.item_application('gtceu:t_large_lathe', ['gtceu:hv_lathe', 'kubejs:multiblock_upgrade_kit']);
-    event.recipes.create.item_application('gtceu:t_large_mixer', ['gtceu:hv_mixer', 'kubejs:multiblock_upgrade_kit']);
-    event.recipes.create.item_application('gtceu:t_large_ore_washer', ['gtceu:hv_ore_washer', 'kubejs:multiblock_upgrade_kit']);
-    event.recipes.create.item_application('gtceu:t_large_sifter', ['gtceu:hv_sifter', 'kubejs:multiblock_upgrade_kit']);
-    event.recipes.create.item_application('gtceu:t_large_thermal_centrifuge', ['gtceu:hv_thermal_centrifuge', 'kubejs:multiblock_upgrade_kit']);
-    event.recipes.create.item_application('gtceu:t_large_wiremill', ['gtceu:hv_wiremill', 'kubejs:multiblock_upgrade_kit']);
-    event.recipes.create.item_application('gtceu:t_large_macerator', ['gtceu:hv_macerator', 'kubejs:multiblock_upgrade_kit']);
+    [
+        'bender', 'centrifuge', 'electrolyzer', 'extruder', 'forming_press', 'lathe', 'mixer', 'ore_washer', 'sifter', 'thermal_centrifuge', 'wiremill', 'macerator', 'autoclave'
+    ].forEach(machine=> {
+        event.recipes.create.item_application(`gtceu:t_large_${machine}`, [`gtceu:hv_${machine}`, 'kubejs:multiblock_upgrade_kit']);
+    });
     event.recipes.create.item_application('gtceu:large_rock_crusher', ['gtceu:hv_rock_crusher', 'kubejs:multiblock_upgrade_kit']);
-    event.recipes.create.item_application('gtceu:t_large_autoclave', ['gtceu:hv_autoclave', 'kubejs:multiblock_upgrade_kit']);
 
     // Mycelium Leather
     event.recipes.create.pressing('kubejs:compressed_mycelium', 'kubejs:mycelium_growth');

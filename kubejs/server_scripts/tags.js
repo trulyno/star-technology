@@ -128,7 +128,7 @@ ServerEvents.tags('block', event => {
         /^modularrouters:.*/,
         /^trashcans:.*/
     ]
-    targets.forEach(target => e.add('forge:mineable/wrench', target))
+    targets.forEach(target => event.add('forge:mineable/wrench', target))
 
     event.remove('mineable/pickaxe', [
         'gtceu:ulv_barrel'
