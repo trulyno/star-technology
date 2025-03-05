@@ -60,43 +60,18 @@ ServerEvents.recipes(event => {
     barrel('minecraft:fire_coral_block','exnihilosequentia:fire_coral_larva','exnihilosequentia:sea_water')
     barrel('minecraft:horn_coral_block','exnihilosequentia:horn_coral_larva','exnihilosequentia:sea_water')
 
-    const compost=['minecraft:hanging_roots','minecraft:pumpkin_pie','minecraft:string','minecraft:apple',
-        'minecraft:pumpkin','minecraft:mangrove_roots','minecraft:big_dripleaf','minecraft:spore_blossom','minecraft:vine',
-        'minecraft:lily_pad','minecraft:sweet_berries','minecraft:red_mushroom','exnihilosequentia:grass_seeds',
-        'minecraft:brown_mushroom','minecraft:spider_eye','minecraft:melon_slice','minecraft:sugar_cane','minecraft:fern','minecraft:bamboo',
-        'exnihilosequentia:mycelium_spores','minecraft:bread','minecraft:glow_berries','minecraft:cactus','exnihilosequentia:silkworm']
-
-    compost.forEach(type => {
-        event.recipes.gtceu.barrel_composting(`${type}_composting`)
+    [
+        'minecraft:hanging_roots','minecraft:pumpkin_pie','minecraft:string','minecraft:apple', 'minecraft:pumpkin','minecraft:mangrove_roots', 'minecraft:big_dripleaf',
+        'minecraft:spore_blossom','minecraft:vine', 'minecraft:lily_pad','minecraft:sweet_berries','minecraft:red_mushroom','exnihilosequentia:grass_seeds', 'minecraft:brown_mushroom',
+        'minecraft:spider_eye','minecraft:melon_slice','minecraft:sugar_cane','minecraft:fern','minecraft:bamboo', 'exnihilosequentia:mycelium_spores', 'minecraft:bread',
+        'minecraft:glow_berries','minecraft:cactus','exnihilosequentia:silkworm', '#minecraft:flowers', '#forge:seeds', '#forge:crops', '#minecraft:saplings', '#minecraft:leaves'
+    ].forEach(type => {
+        const id = type.slice(type.indexOf(':')+1)
+        event.recipes.gtceu.barrel_composting(`${id}_composting`)
             .itemInputs(`4x ${type}`)
             .itemOutputs('minecraft:dirt')
             .duration(15);
     });
-
-    event.recipes.gtceu.barrel_composting(`flowers_composting`)
-        .itemInputs(`4x #minecraft:flowers`)
-        .itemOutputs('minecraft:dirt')
-        .duration(15);
-
-    event.recipes.gtceu.barrel_composting(`seeds_composting`)
-        .itemInputs(`4x #forge:seeds`)
-        .itemOutputs('minecraft:dirt')
-        .duration(15);
-
-    event.recipes.gtceu.barrel_composting(`crops_composting`)
-        .itemInputs(`4x #forge:crops`)
-        .itemOutputs('minecraft:dirt')
-        .duration(15);   
-        
-    event.recipes.gtceu.barrel_composting(`leaves_composting`)
-        .itemInputs(`4x #minecraft:leaves`)
-        .itemOutputs('minecraft:dirt')
-        .duration(15);
-
-    event.recipes.gtceu.barrel_composting(`saplings_composting`)
-        .itemInputs(`4x #minecraft:saplings`)
-        .itemOutputs('minecraft:dirt')
-        .duration(15);  
 
     function transformation(output,ncItem){
         event.recipes.gtceu.barrel_transformation(`${output}`)
