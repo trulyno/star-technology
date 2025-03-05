@@ -12,6 +12,28 @@ ServerEvents.recipes(event => {
     const dustDepleted = 'gtceu:18_crown_6 100';
     const dustCryptand = 'gtceu:cryptand_k 1';
 
+    [
+        {essence: '', circuit: '', energy: '', output: ''}
+    ].forEach(essence=> {
+        const fluidcheck = essence.output.length
+        if(essence.output.slice(fluidcheck) == 0){
+            event.recipes.gtceu.essence_burning(`${essence.essence}_essence_burning_${essence.circuit}`)
+                .itemInputs(`mysticalagriculture:${essence.essence}_essence`)
+                .outputFluids(essence.output)
+                .duration(100)
+                .EUt(essence.energy)
+                .circuit(essence.circuit);
+        }
+        else{
+            event.recipes.gtceu.essence_burning(`${essence.essence}_essence_burning_${essence.circuit}`)
+                .itemInputs(`mysticalagriculture:${essence.essence}_essence`)
+                .itemOutput(essence.output)
+                .duration(100)
+                .EUt(essence.energy)
+                .circuit(essence.circuit);
+        }
+    
+    });
     // Tier 1
     event.recipes.gtceu.essence_burning('water_essence_burning_0')
         .itemInputs('mysticalagriculture:water_essence')
