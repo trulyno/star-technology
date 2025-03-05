@@ -2,29 +2,29 @@ ServerEvents.recipes(event => {
 
     // Upgrade augments
     [
-        {tier: 'lv', plate: 'invar', glass: 'obsidian', gear: 'bronze', fluid: 'gtceu:tin 720', Mod: 4, energy: 28},
-        {tier: 'mv', plate: 'electrum', glass: 'signalum', gear: 'steel', fluid: 'gtceu:redstone 720', Mod: 16, energy: 112},
-        {tier: 'hv', plate: 'lumium', glass: 'lumium', gear: 'aluminium', fluid: 'gtceu:glowstone 720', Mod: 64, energy: 496},
-        {tier: 'ev', plate: 'soul_infused', glass: 'enderium', gear: 'stainless_steel', fluid: 'thermal:ender 750', Mod: 256, energy: 1625}
+        {tier: 'lv', plate: 'invar', glass: '_extra:soul_infused', gear: 'bronze', fluid: 'gtceu:tin 720', Mod: 4},
+        {tier: 'mv', plate: 'electrum', glass: ':signalum', gear: 'steel', fluid: 'gtceu:redstone 720', Mod: 16},
+        {tier: 'hv', plate: 'lumium', glass: ':lumium', gear: 'aluminium', fluid: 'gtceu:glowstone 720', Mod: 64},
+        {tier: 'ev', plate: 'soul_infused', glass: ':enderium', gear: 'stainless_steel', fluid: 'thermal:ender 750', Mod: 256}
     ].forEach(tier=>{
         event.recipes.gtceu.assembler(`${tier.tier}_kit`)
-            .itemInputs(`4x gtceu:${tier.plate}_plate`, `thermal:${tier.glass}_glass`, `gtceu:${tier.gear}_gear`, `#gtceu:circuits/${tier.tier}`)
+            .itemInputs(`4x gtceu:${tier.plate}_plate`, `thermal${tier.glass}_glass`, `gtceu:${tier.gear}_gear`, `#gtceu:circuits/${tier.tier}`)
             .itemOutputs(Item.of(`kubejs:${tier.tier}_upgrade_kit`, `{AugmentData:{BaseMod:${tier.Mod}f,Type: Upgrade}}`))
             .inputFluids(tier.fluid)
             .duration(600)
-            .EUt(tier.energy);
+            .EUt(7*tier.Mod);
     });
 
     // ARC augments
     event.recipes.gtceu.assembler('arc_augment_lv')
-        .itemInputs('2x gtceu:bronze_plate', '2x gtceu:silver_gear', 'thermal:obsidian_glass')
+        .itemInputs('2x gtceu:bronze_plate', '2x gtceu:silver_gear', 'thermal_extra:soul_infused_glass')
         .itemOutputs(Item.of('kubejs:lv_arc_kit', '{AugmentData:{Type: Dynamo, DynamoEnergy:0.95f, DynamoPower:0.5f}}'))
         .duration(600)
         .EUt(28);
 
     // MCI augments
     event.recipes.gtceu.assembler('mci_augment_1')
-        .itemInputs('2x gtceu:electrum_plate', '2x gtceu:lead_gear', 'thermal:obsidian_glass')
+        .itemInputs('2x gtceu:electrum_plate', '2x gtceu:lead_gear', 'thermal_extra:soul_infused_glass')
         .itemOutputs(Item.of('kubejs:lv_mci_kit', '{AugmentData:{Type: Dynamo, DynamoEnergy:1.1f}}'))
         .duration(600)
         .EUt(28);
@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
     
     // ARC's and MCI's
     [
-        {tier: 'mv', last_tier: 'lv', gear: 'soul_infused', glass: 'signalum', DynEA: 0.9, DynP: 0.75, DynEM: 1.25, energy: 112},
+        {tier: 'mv', last_tier: 'lv', gear: 'lumium', glass: 'signalum', DynEA: 0.9, DynP: 0.75, DynEM: 1.25, energy: 112},
         {tier: 'hv', last_tier: 'mv', gear: 'enderium', glass: 'lumium', DynEA: 0.8, DynP: 1, DynEM: 1.5, energy: 496},
         {tier: 'ev', last_tier: 'hv', gear: 'shellite', glass: 'enderium', DynEA: 0.75, DynP: 2, DynEM: 2, energy: 1625}
     ].forEach(tier=> {
