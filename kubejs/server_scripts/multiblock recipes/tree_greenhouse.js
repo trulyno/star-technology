@@ -29,12 +29,13 @@ ServerEvents.recipes(event => {
 
     }
 
-    treeGrowing('oak');
+    treeGrowing('acacia');
     treeGrowing('birch');
-    treeGrowing('spruce');
+    treeGrowing('cherry');
     treeGrowing('dark_oak');
     treeGrowing('jungle');
-    treeGrowing('acacia');
+    treeGrowing('oak');
+    treeGrowing('spruce');
 
 
     event.recipes.gtceu.tree_greenhouse(`mangrove_growing`)

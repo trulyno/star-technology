@@ -19,8 +19,8 @@ ServerEvents.tags('item', event => {
     event.add('exnihilosequentia:mesh', 'exnihilosequentia:emerald_mesh');
     event.add('exnihilosequentia:mesh', 'exnihilosequentia:netherite_mesh');
 
-    ['diamond', 'emerald', 'ruby', 'sapphire', 'quartzite', 'topaz', 'spessartine', `certus_quartz`, `green_sapphire`
-        ,`blue_topaz`,`apatite`, `monazite`].forEach(type => {
+    ['diamond', 'emerald', 'ruby', 'sapphire', 'quartzite', 'topaz', 'spessartine', 'certus_quartz', 'green_sapphire'
+        ,'blue_topaz','apatite', 'monazite'].forEach(type => {
         event.add('gtceu:geode', `kubejs:${type}_geode`);
         // event.add('gtceu:cracked_geode', `kubejs:cracked_${type}_geode`);
     });
@@ -33,69 +33,111 @@ ServerEvents.tags('item', event => {
 });
 
 ServerEvents.tags('item', event=>{
-    const plates = [
-        
+    const materials = [
+        /thermal:signalum.*/,
+        /thermal:lumium.*/,
+        /thermal:enderium.*/,
+        /thermal:apatite.*/,
+        /thermal:cinnabar.*/,
+        /thermal:tin.*/,
+        /thermal:lead.*/,
+        /thermal:silver.*/,
+        /thermal:nickel.*/,
+        /thermal:bronze.*/,
+        /thermal:electrum.*/,
+        /thermal:invar.*/,
+        /thermal:ruby.*/,
+        /thermal:sapphire.*/,
+        /thermal:iron.*/,
+        /thermal:gold.*/,
+        /thermal:copper.*/,
+        /thermal:netherite.*/,
+        /thermal:diamond.*/,
+        /thermal:emerald.*/,
+        /thermal:quartz.*/,
+        /thermal:sulfur.*/,
+        /thermal:ender_pearl.*/
     ]
     const dust = [
-        
-    ]
-    const ingots = [
-        'thermalendergy:melodium_ingot',
-        'thermalendergy:prismalium_ingot',
-        'thermalendergy:stellarium_ingot'
-    ]
-    const blocks = [
-        'thermalendergy:melodium_block',
-        'thermalendergy:prismalium_block',
-        'thermalendergy:stellarium_block'
+        'thermal_extra:obsidian_dust',
+        'thermal_extra:amethyst_dust',
+        'thermal_extra:soul_infused_dust',
+        'thermal_extra:shellite_dust',
+        'thermal_extra:twinite_dust',
+        'thermal_extra:dragonsteel_dust',
+        'thermal_extra:zinc_dust',
+        'thermal:sawdust'
     ]
     const nuggets = [
-        'thermalendergy:melodium_nugget',
-        'thermalendergy:prismalium_nugget',
-        'thermalendergy:stellarium_nugget'
+        /thermal_extra:.*_nugget/
     ]
-    const gems = [
-
+    const ingots = [
+        /thermal_extra:.*_ingot/
+    ]
+    const blocks = [
+        /thermal_extra:.*_block/
+    ]
+    const plates = [
+        /thermal_extra:.*_plate/
+    ]
+    const rods = [
+        /thermal_extra:.*_rod/
+    ]
+    const gear = [
+        /thermal_extra:.*_gear/
     ]
 
+    materials.forEach((item)=> {
+        event.removeAllTagsFrom(`${item}`)
+    });
     dust.forEach((item)=> {
-        event.removeAllTagsFrom(`${item}`)
-    });
-    blocks.forEach((item)=>{
-        event.removeAllTagsFrom(`${item}`)
-    });
-    ingots.forEach((item)=>{
-        event.removeAllTagsFrom(`${item}`)
-    });
-    plates.forEach((item)=>{
-        event.removeAllTagsFrom(`${item}`)
-    });
-    gems.forEach((item)=>{
         event.removeAllTagsFrom(`${item}`)
     });
     nuggets.forEach((item)=>{
         event.removeAllTagsFrom(`${item}`)
     });
-});
-
-ServerEvents.tags('fluid', event=>{
-    const nc_fluids =[
-        
-    ];
-    const mis = [
-      
-    ];
-    nc_fluids.forEach((fluids) => {
-      mis.forEach((tag) => {
-        event.removeAllTagsFrom(`${fluids}`),
-        event.removeAllTagsFrom(`${fluids}${tag}`)
-      })
-    })
-
+    ingots.forEach((item)=>{
+        event.removeAllTagsFrom(`${item}`)
+    });
+    blocks.forEach((item)=>{
+        event.removeAllTagsFrom(`${item}`)
+    });
+    plates.forEach((item)=>{
+        event.removeAllTagsFrom(`${item}`)
+    });
+    rods.forEach((item)=>{
+        event.removeAllTagsFrom(`${item}`)
+    });
+    gear.forEach((item)=>{
+        event.removeAllTagsFrom(`${item}`)
+    });
 });
 
 ServerEvents.tags('block', event => {
 
     event.add('minecraft:mineable/pickaxe', /xtonesreworked:glaxx_block_.*/);
 
+    const targets = [
+        /^laserio:.*/,
+        /^create:.*/,
+        /^solarflux:.*/,
+        /^pipez:.*/,
+        /^kubejs:.*/,
+        /^thermal:.*/,
+        /^fluxnetworks:.*/,
+        /^modularrouters:.*/,
+        /^trashcans:.*/
+    ]
+    targets.forEach(target => event.add('forge:mineable/wrench', target))
+
+    event.remove('mineable/pickaxe', [
+        'gtceu:ulv_barrel'
+    ]);
+    event.add('mineable/axe', [
+        'gtceu:ulv_barrel'
+    ]);
+    event.add('mineable/pickaxe', [
+        'travelanchors:travel_anchor'
+    ]);
+    
 });
