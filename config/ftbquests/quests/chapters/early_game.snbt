@@ -1099,7 +1099,10 @@
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
-			description: ["You're going to need a lot of these, so it might be worth automating."]
+			description: [
+				"You're going to need a lot of these, so it might be worth automating."
+				"You can get it from chuking in either crushed copper ore or crushed magnetite ore in the Primitive Ore Factory."
+			]
 			hide_dependent_lines: true
 			id: "708A5EE75EC40FAD"
 			rewards: [{
@@ -1122,7 +1125,13 @@
 				"64E79272B5003119"
 				"3D0F6CA8028C074B"
 			]
-			description: ["Now that you have LV Machine Hulls, you can construct a new multiblock to process your ores further. This will give you access to important resources, like gold and nickel."]
+			description: [
+				"Now that you have LV Machine Hulls, you can construct a new multiblock to process your ores further. This will give you access to important resources, like gold and nickel."
+				"Unlike the Primitive Blast Furnace, the Primitve Ore Factory needs hatches for input/output. "
+				"Items go in the bus and fluids go in the hatch. Both busses and hatches have limits on storage."
+				"A ULV Bus has 1 slot, meaning it can contain only 1 type of items, while an LV one has 4 slots. If the recipe you are trying to run has more than 1 type of outputs, you can either use several ULV busses or an LV bus."
+				"Using blocks of fuel, the Primitive ore Factory will run 10 recipes for the duration and fuel cost of 9."
+			]
 			icon: {
 				Count: 1
 				id: "gtceu:primitive_ore_factory"
@@ -1216,7 +1225,10 @@
 		}
 		{
 			dependencies: ["550A27AA2B500111"]
-			description: ["Pop this next to two water sources and you will never be thirsty again."]
+			description: [
+				"Pop this next to two water sources and you will never be thirsty again."
+				"To get the lead for it, smelt the galena you got from sieving crushed blackstone."
+			]
 			icon: "thermal:device_water_gen"
 			id: "4491C4CD4AF75C93"
 			rewards: [{
@@ -1849,7 +1861,11 @@
 				"4FC0832128C3109C"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Create gives you access to your first alloys, though at a poorer ratio than later methods. While good in the early game, you will want to upgrade once you hit LV."]
+			description: [
+				"You can get bronze and brass in 2 ways at this stage:"
+				"- Using create mixer"
+				"- Mixing the dusts(copper, zinc, tin) in your crafting table to get the alloy dust, which you can smelt for the ingots"
+			]
 			id: "10126B9D6EC90F59"
 			rewards: [{
 				id: "36FCEC0DDB574296"
@@ -1920,7 +1936,10 @@
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
-			description: ["You're going to need a lot of these, so it might be worth automating."]
+			description: [
+				"You're going to need a lot of these, so it might be worth automating."
+				"To get it, you can process crushed iron ore or crushed copper ore in the Primitive Ore Factory."
+			]
 			id: "0E47ACCDF46E6B1F"
 			rewards: [{
 				id: "0128ACB6E0B8F0AE"
@@ -1961,11 +1980,11 @@
 			description: [
 				"The Questbook takes you through the entire modpack, step by step. Here are a few things you should know:"
 				""
-				"&5-&r Mechanics: A small chapter explaining some GregTech mechanics"
-				"&5-&r Processing Lines: This is a chapter explaining complicated processing lines"
+				"&5-&r &lMechanics&r: A small chapter explaining some GregTech mechanics"
+				"&5-&r &lProcessing Lines&r: This is a chapter explaining complicated processing lines"
 				"&5-&r Line of Progression: This chapter shows you all multiblocks and tiered items"
-				"&5-&r Resource Production: This chapter shows you how to get MOST of the raw resources you will need"
-				"&5-&r Quality of Life: This chapter unveils some helpful mods and features that exist to make the pack more enjoyable"
+				"&5-&r &lResource Production&r: This chapter shows you how to get MOST of the raw resources you will need"
+				"&5-&r &lQuality of Life&r: This chapter unveils some helpful mods and features that exist to make the pack more enjoyable"
 				""
 				"If a Quest doesn't load/register try rejoining"
 			]
@@ -2131,7 +2150,7 @@
 				"124EDCAB18E85B9D"
 				"5324A7F20CA973C6"
 			]
-			description: ["A much needed upgrade to ore processing. It's faster, and can be automated!"]
+			description: ["A much needed upgrade to ore processing. It's faster, parallel, and can be automated!"]
 			id: "7E33792C89BA85E3"
 			optional: true
 			shape: "gear"
@@ -2149,14 +2168,31 @@
 				"5324A7F20CA973C6"
 				"1289465781707205"
 			]
+			description: ["This is an alternative to the Create mixer and crafting table dust mixing recipes as well as some extra things, being equivalent to an LV Alloy Smelter. But do be warned, it is super slow!"]
 			hide_dependent_lines: true
 			id: "483B101A7F71E674"
 			optional: true
 			tasks: [{
 				id: "5528994811528206"
-				item: "gtceu:lp_steam_alloy_smelter"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_alloy_smelter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_alloy_smelter"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
+			title: "Steam Alloy Smelter"
 			x: 0.5d
 			y: -4.0d
 		}
@@ -2179,58 +2215,8 @@
 					type: "checkmark"
 				}
 				{
-					id: "7AC46BBD0C1B944C"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Low Pressure Boilers\"}"
-							}
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:lp_steam_solid_boiler"
-								}
-								{
-									Count: 1b
-									id: "gtceu:lp_steam_liquid_boiler"
-								}
-								{
-									Count: 1b
-									id: "gtceu:lp_steam_solar_boiler"
-								}
-							]
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "648BC16C3C3F30F9"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"High Pressure Boilers\"}"
-							}
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:hp_steam_solid_boiler"
-								}
-								{
-									Count: 1b
-									id: "gtceu:hp_steam_liquid_boiler"
-								}
-								{
-									Count: 1b
-									id: "gtceu:hp_steam_solar_boiler"
-								}
-							]
-						}
-					}
+					id: "7CFEC0611228B2E8"
+					item: "systeams:boiler_pipe"
 					optional_task: true
 					type: "item"
 				}
@@ -2256,6 +2242,7 @@
 				"5324A7F20CA973C6"
 				"1289465781707205"
 			]
+			description: ["These multiblocks are super useful! Powered by steam, they can run 8 recipes in parallel! "]
 			id: "6B059D530FCE7428"
 			optional: true
 			tasks: [
@@ -2276,7 +2263,23 @@
 		}
 		{
 			dependencies: ["10126B9D6EC90F59"]
+			description: [
+				"Steam age can be skipped, but you might find some of its machines &ouseful&r."
+				"Before using those, you need to produce steam. You have 3 types of boilers: "
+				"- &lSolid fuel boilers&r: uses solid fuel like charcoal"
+				"- &lLiquid fuel boilers&r: uses liquid fuels like lava and creosote"
+				"- &lSolar boilers&r: will produce steam during the day"
+				""
+				"Boilers need to heat up before producing steam."
+				""
+				"&l&4WARNING&r: Do NOT put water in a boiler that is hot and has no water inside. It will explode!"
+				""
+				"Positions of pipes matters! Boilers will accept water from underneath and export steam on the other sides."
+				""
+				"If you have some extra steel, you can make better boilers."
+			]
 			id: "1289465781707205"
+			optional: true
 			tasks: [
 				{
 					id: "71E3F7FCADC341A6"
@@ -2334,6 +2337,7 @@
 					type: "item"
 				}
 			]
+			title: "Steam Boilers"
 			x: 2.0d
 			y: -4.0d
 		}
