@@ -281,6 +281,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .element(GTElements.get('mythril'))
         .color(0x006666)
+        .flags(foil, gear, long_rod, plates,
+            rod, rotor, small_gear, ring, frame)
         .blastTemp(10299, 'highest', VA('uhv'), 2400)
         .iconSet(METALLIC);
 
@@ -289,6 +291,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .element(GTElements.get('adamantine'))
         .color(0xe99700)
+        .flags(foil, gear, long_rod, plates,
+            rod, rotor, small_gear, ring, frame)
         .blastTemp(13299, 'highest', VA('uev'), 3000)
         .iconSet(METALLIC);
 
@@ -297,6 +301,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .element(GTElements.get('estalt'))
         .color(0xff5050)
+        .flags(foil, gear, long_rod, plates,
+            rod, rotor, small_gear, ring, frame)
         .blastTemp(12299, 'highest', VA('uhv'), 2600)
         .iconSet(DULL);
 
@@ -305,6 +311,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .element(GTElements.get('enriched_estalt'))
         .color(0xE76C6C)
+        .flags(foil, gear, long_rod, plates,
+            rod, rotor, small_gear, ring, frame)
         .blastTemp(12899, 'highest', VA('uhv'), 2800)
         .iconSet(RADIOACTIVE);
 
@@ -313,6 +321,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .element(GTElements.get('calamatium'))
         .color(0x660000)
+        .flags(foil, gear, long_rod, plates,
+            rod, rotor, small_gear, ring, frame)
         .iconSet(DULL)
         .blastTemp(13199, 'highest', VA('uhv'), 2750);
 
@@ -321,6 +331,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .element(GTElements.get('isovol'))
         .color(0x290066)
+        .flags(foil, gear, long_rod, plates,
+            rod, rotor, small_gear, ring, frame)
         .iconSet(DULL)
         .blastTemp(12999, 'highest', VA('uhv'), 2750);
 
@@ -800,7 +812,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(10799, 'highest', VA('uev'), 8000)
         .color(0x001a1a)
         .iconSet(DULL)
-        .flags(rod, long_rod, frame, no_decomp);
+        .flags(rod, foil, plates, long_rod, frame, no_decomp);
     
     //Extended Sculk
     event.create('ionized_sculk')
@@ -1414,7 +1426,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x6D8B5D)
         .iconSet(DULL)
         .blastTemp(11699, 'highest', VA('uhv'), 1800)
-        .flags(bolt_and_screw)
+        .flags(bolt_and_screw,spring,small_spring)
         .cableProperties(V('uev'), 6, 16, false);
 
     event.create('indium_tin_lead_cadmium_soldering_alloy')
@@ -1755,5 +1767,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     liquid('blitz', 0xFDF3C4, '1x mystery');
     liquid('blizz', 0xB4EFFA, '1x mystery');
     liquid('basalz', 0x6F190E, '1x mystery');
+
+    //UEV Materials
+    // event.create('magmadamantite')
+    //     .components('4x adamantine', '1x neutronium', '3x tungsten')
+    //     .ingot(10)
+    //     .blastTemp(15799, 'highest', VA('uev'), 8000)
+    //     .color(0xDA8607)
+    //     .iconSet(DULL)
+    //     .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp);
 
 });
