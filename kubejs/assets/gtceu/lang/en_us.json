@@ -514,6 +514,7 @@
     "material.gtceu.adamantamite_nether_magma": "§6Adamantamite§r §4Nether§r Magma",
     "material.gtceu.estaltadyne_nether_magma": "§cEstaltadyne§r §4Nether§r Magma",
     "material.gtceu.mystical_nether_magma": "§o§dMystical§r §4Nether§r Magma",
-    "material.gtceu.enriched_mystical_concentrate": "Enriched §o§dMystical§r Concentrate"
+    "material.gtceu.enriched_mystical_concentrate": "Enriched §o§dMystical§r Concentrate",
 
+    "material.gtceu.magmadamantite": "Magmadamantite"
 }

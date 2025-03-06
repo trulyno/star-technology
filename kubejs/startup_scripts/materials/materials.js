@@ -1769,12 +1769,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     liquid('basalz', 0x6F190E, '1x mystery');
 
     //UEV Materials
-    // event.create('magmadamantite')
-    //     .components('4x adamantine', '1x neutronium', '3x tungsten')
-    //     .ingot(10)
-    //     .blastTemp(15799, 'highest', VA('uev'), 8000)
-    //     .color(0xDA8607)
-    //     .iconSet(DULL)
-    //     .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp);
+    event.create('magmadamantite')
+        .components('4x adamantine', '1x neutronium', '3x tungsten')
+        .ingot()
+        .color(0xDA8607)
+        .blastTemp(15049, 'highest', VA('uev'), 3600)
+        .iconSet(SHINY)
+        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp);
 
 });
