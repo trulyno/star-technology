@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.heat_chamber(`enriched_${type}_to_atomic_nether_dust_${dust.type}`)
             .inputFluids(`gtceu:enriched_${type}_mixture 4000`)
             .itemInputs(`${dust.id}${dust.type}`)
-            .outputFluids(`gtceu:molten_${type}_mixture`)
+            .outputFluids(`gtceu:molten_${type}_mixture 4000`)
             .itemOutputs('4x gtceu:atomic_nether_dust')
             .duration(1600)
             .EUt(GTValues.VHA[GTValues.UHV]); 

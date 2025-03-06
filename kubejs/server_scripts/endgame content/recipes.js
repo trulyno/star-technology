@@ -160,19 +160,7 @@ ServerEvents.recipes(event => {
         .duration(1000)
         .EUt(GTValues.VA[GTValues.UV]);
     
-    //UHV Rotor Holder
-    event.recipes.gtceu.macerator('uhv_rotor_holder')
-        .itemInputs('gtceu:uhv_rotor_holder')
-        .itemOutputs('16x gtceu:zalloy_dust', '12x gtceu:neutronium_dust', '2x gtceu:rubber_dust', 'gtceu:europium_dust')    
-        .duration(11900)
-        .EUt(30);
-
-    event.recipes.gtceu.arc_furnace('uhv_rotor_holder')
-        .itemInputs('gtceu:uhv_rotor_holder')
-        .inputFluids('gtceu:oxygen 11900')
-        .itemOutputs('16x gtceu:zalloy_ingot', '12x gtceu:neutronium_ingot', 'gtceu:europium_ingot', 'gtceu:small_ash_dust')    
-        .duration(11900)
-        .EUt(30);
+    //UHV/UEV Rotor Holder
 
     event.shaped(Item.of('gtceu:uhv_rotor_holder'), [
             'NZN',

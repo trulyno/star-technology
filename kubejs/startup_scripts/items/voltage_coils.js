@@ -6,12 +6,12 @@ StartupEvents.registry('item', event => {
         .displayName('Ultra High Voltage Coil')
         .tooltip('Peppermint Coil');
 
-    /*event.create('uev_voltage_coil')
+    event.create('uev_voltage_coil')
         .texture('kubejs:item/component_part/uev_voltage_coil')
         .displayName('Ultra Excessive Voltage Coil')
-        .tooltip('Ultimate+ Pro Coil');
+        .tooltip('Spearmint Coil');
 
-    event.create('uiv_voltage_coil')
+    /*event.create('uiv_voltage_coil')
         .texture('kubejs:item/component_part/uiv_voltage_coil')
         .displayName('Ultra Immense Voltage Coil')
         .tooltip('Supreme Coil');

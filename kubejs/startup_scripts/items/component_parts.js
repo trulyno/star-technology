@@ -1,7 +1,7 @@
 
 StartupEvents.registry('item', event => {
 
-    const partTiers = ['uhv'/*, 'uev', 'uiv', 'uxv', 'opv'*/];
+    const partTiers = ['uhv', 'uev'/*, 'uiv', 'uxv', 'opv'*/];
 
     let tier_proper;
     partTiers.forEach(tier => {

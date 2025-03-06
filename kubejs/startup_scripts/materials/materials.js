@@ -824,7 +824,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('6x trinium', '2x naquadah', '1x carbon')
         .blastTemp(8747, 'higher', VA('zpm'), 1200)
 
-       event.create('perchloric_acid')
+    event.create('perchloric_acid')
         .fluid()
         .components('1x hydrogen', '1x chlorine', '4x oxygen')
         .color(0xffe6e6);

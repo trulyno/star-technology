@@ -457,8 +457,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "0E3D5994571FD867"
-				item: "gtceu:screret_runic_laser_source_base_dust"
+				id: "29DD5FAE5F5E0593"
+				item: "gtceu:runic_laser_source_base_dust"
 				type: "item"
 			}]
 			x: 7.0d
@@ -473,8 +473,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "7ACA7956E870B321"
-				item: "gtceu:exquisite_screret_runic_laser_source_base_gem"
+				id: "751CAA0FFFD5F574"
+				item: "gtceu:exquisite_runic_laser_source_base_gem"
 				type: "item"
 			}]
 			x: 7.0d
