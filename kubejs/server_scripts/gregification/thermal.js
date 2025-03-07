@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(event => {
 
     event.remove({id: /thermal:parts.*gear/});
@@ -150,21 +149,21 @@ ServerEvents.recipes(event => {
         .EUt(28);
 
     [
-        {id: 'hardened', glass: 'thermal:obsidian', base: 'gtceu:tempered', fluid: 'minecraft:lava 250', Emult: 1},
-        {id: 'soul_infused', glass: 'thermal_extra:soul_infused', base: 'gtceu:tempered', fluid: 'gtceu:soul_infused 144', Emult: 4},
-        {id: 'signalum', glass: 'thermal:signalum', base: 'gtceu:tempered', fluid: 'gtceu:signalum 144', Emult: 16},
-        {id: 'lumium', glass: 'thermal:lumium', base: 'gtceu:tempered', fluid: 'gtceu:lumium 144', Emult: 64},
-        {id: 'enderium', glass: 'thermal:enderium', base: 'gtceu:tempered', fluid: 'gtceu:enderium 144', Emult: 256},
-        {id: 'shellite', glass: 'thermal_extra:shellite', base: 'gtceu:laminated', fluid: 'gtceu:shellite 144', Emult: 1024},
-        {id: 'twinite', glass: 'thermal_extra:twinite', base: 'gtceu:laminated', fluid: 'gtceu:twinite 144', Emult: 4096},
-        {id: 'dragonsteel', glass: 'thermal_extra:dragonsteel', base: 'gtceu:fusion', fluid: 'gtceu:dragonsteel 144', Emult: 16384}
+        {id: 'hardened', glass: 'thermal:obsidian', base: 'gtceu:tempered', fluid: 'minecraft:lava 250', voltage: 'ulv'},
+        {id: 'soul_infused', glass: 'thermal_extra:soul_infused', base: 'gtceu:tempered', fluid: 'gtceu:soul_infused 144', voltage: 'lv'},
+        {id: 'signalum', glass: 'thermal:signalum', base: 'gtceu:tempered', fluid: 'gtceu:signalum 144', voltage: 'mv'},
+        {id: 'lumium', glass: 'thermal:lumium', base: 'gtceu:tempered', fluid: 'gtceu:lumium 144', voltage: 'hv'},
+        {id: 'enderium', glass: 'thermal:enderium', base: 'gtceu:tempered', fluid: 'gtceu:enderium 144', voltage: 'ev'},
+        {id: 'shellite', glass: 'thermal_extra:shellite', base: 'gtceu:laminated', fluid: 'gtceu:shellite 144', voltage: 'iv'},
+        {id: 'twinite', glass: 'thermal_extra:twinite', base: 'gtceu:laminated', fluid: 'gtceu:twinite 144', voltage: 'luv'},
+        {id: 'dragonsteel', glass: 'thermal_extra:dragonsteel', base: 'gtceu:fusion', fluid: 'gtceu:dragonsteel 144', voltage: 'zpm'}
     ].forEach(type=> {
         event.recipes.gtceu.fluid_solidifier(`${type.id}_glass`)
             .itemInputs(`${type.base}_glass`)
             .inputFluids(type.fluid)
             .itemOutputs(`${type.glass}_glass`)
             .duration(240)
-            .EUt(7*type.Emult);
+            .EUt(global.va[type.voltage]);
     });
 
     event.shaped(Item.of('thermal:energy_cell_frame'), [
