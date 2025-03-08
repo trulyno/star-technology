@@ -602,14 +602,6 @@ ServerEvents.recipes(event => {
 
     event.replaceOutput({ type: 'gtceu:cutter'}, 'ae2:certus_quartz_crystal', '2x ae2:certus_quartz_crystal');
 
-    event.shaped('gtceu:treated_wood_plate', [
-        '   ',
-        'AAA',
-        '   '
-    ], {
-        A: 'gtceu:treated_wood_slab'
-    });
-
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {
