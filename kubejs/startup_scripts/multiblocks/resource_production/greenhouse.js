@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('wild_garden')
         .category('greenhouse')
         .setEUIO('in')
-        .setMaxIOSize(2, 12, 1, 0)
+        .setMaxIOSize(2, 12, 0, 0)
         .setSound(GTSoundEntries.BOILER);
     
     event.create('crop_greenhouse')
