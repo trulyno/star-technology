@@ -2,7 +2,7 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.wild_garden('flowers')
-        .itemInputs('minecraft:bonemeal')
+        .itemInputs('minecraft:bone_meal')
         .chancedOutput('minecraft:dandelion', 800, 200)
         .chancedOutput('minecraft:poppy', 800, 200)
         .chancedOutput('minecraft:blue_orchid', 800, 200)
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         .circuit(0);
 
     event.recipes.gtceu.wild_garden('tall_flowers_and_wither_rose')
-        .itemInputs('minecraft:bonemeal')
+        .itemInputs('minecraft:bone_meal')
         .chancedOutput('minecraft:torchflower_seeds', 200, 200)
         .chancedOutput('minecraft:pitcher_pod', 200, 200)
         .chancedOutput('minecraft:lilac', 800, 200)
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.wild_garden('wild_crops')
-        .itemInputs('minecraft:bonemeal')
+        .itemInputs('minecraft:bone_meal')
         .chancedOutput('minecraft:glow_berries', 500, 200)
         .chancedOutput('farmersdelight:wild_cabbages', 800, 200)
         .chancedOutput('farmersdelight:wild_onions', 800, 200)
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
         .circuit(2);
 
     event.recipes.gtceu.wild_garden('thermal_crops_1')
-        .itemInputs('minecraft:bonemeal')
+        .itemInputs('minecraft:bone_meal')
         .chancedOutput('thermal:barley_seeds', 800, 200)
         .chancedOutput('thermal:corn_seeds', 800, 200)
         .chancedOutput('thermal:onion_seeds', 800, 200)
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
         .circuit(3);
 
     event.recipes.gtceu.wild_garden('thermal_crops_2')
-        .itemInputs('minecraft:bonemeal')
+        .itemInputs('minecraft:bone_meal')
         .chancedOutput('thermal:amaranth_seeds', 800, 200)
         .chancedOutput('thermal:sadiroot_seeds', 800, 200)
         .chancedOutput('thermal:peanut_seeds', 800, 200)
