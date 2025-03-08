@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
 
 
 
-    event.shaped(Item.of('gtceu:tree_greenhouse'), [
+    event.shaped(Item.of('gtceu:greenhouse'), [
         'WAW',
         'MHM',
         'SCS'
