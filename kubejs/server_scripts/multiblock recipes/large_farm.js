@@ -72,44 +72,47 @@ ServerEvents.recipes(event => {
             .itemInputs(`8x ${(crop.seed) ? crop.seed : crop.name}`)
             .itemOutputs(`16x ${crop.name}`)
             .chancedOutput(`8x ${(crop.seed) ? crop.seed : crop.name}`, 5000, 0)
+            .daytime()
             .duration(800);
+
+        event.recipes.gtceu.crop_greenhouse(`${crop.name.split(':')[1]}${(!crop.name.startsWith('minecraft')) ? '_' + crop.name.split(':')[0] : ''}_harvest_no_fertilizer`)
+            .itemInputs(`8x ${(crop.seed) ? crop.seed : crop.name}`)
+            .inputFluids('minecraft:water 100')
+            .itemOutputs(`16x ${crop.name}`)
+            .chancedOutput(`8x ${(crop.seed) ? crop.seed : crop.name}`, 5000, 0)
+            .duration(600)
+            .EUt(global.vha['lv'])
+            .circuit(0);
+
+        event.recipes.gtceu.crop_greenhouse(`${crop.name.split(':')[1]}${(!crop.name.startsWith('minecraft')) ? '_' + crop.name.split(':')[0] : ''}_harvest_bone_meal`)
+            .itemInputs(`8x ${(crop.seed) ? crop.seed : crop.name}`)
+            .chancedInput('minecraft:bone_meal', 7500, -500)
+            .inputFluids('minecraft:water 100')
+            .itemOutputs(`32x ${crop.name}`)
+            .chancedOutput(`16x ${(crop.seed) ? crop.seed : crop.name}`, 5000, 0)
+            .duration(600)
+            .EUt(global.vha['lv'])
+            .circuit(1);
+
+        event.recipes.gtceu.crop_greenhouse(`${crop.name.split(':')[1]}${(!crop.name.startsWith('minecraft')) ? '_' + crop.name.split(':')[0] : ''}_harvest_compost`)
+            .itemInputs(`8x ${(crop.seed) ? crop.seed : crop.name}`)
+            .chancedInput('thermal:compost', 7500, -500)
+            .inputFluids('minecraft:water 100')
+            .itemOutputs(`48x ${crop.name}`)
+            .chancedOutput(`24x ${(crop.seed) ? crop.seed : crop.name}`, 5000, 0)
+            .duration(600)
+            .EUt(global.vha['lv'])
+            .circuit(2);
+
+        event.recipes.gtceu.crop_greenhouse(`${crop.name.split(':')[1]}${(!crop.name.startsWith('minecraft')) ? '_' + crop.name.split(':')[0] : ''}_harvest_fertilizer`)
+            .itemInputs(`8x ${(crop.seed) ? crop.seed : crop.name}`)
+            .chancedInput('gtceu:fertilizer', 7500, -500)
+            .inputFluids('minecraft:water 100')
+            .itemOutputs(`64x ${crop.name}`)
+            .chancedOutput(`32x ${(crop.seed) ? crop.seed : crop.name}`, 5000, 0)
+            .duration(600)
+            .EUt(global.vha['lv'])
+            .circuit(3);
     });
 
-    
-
-    
-
-
-    // for (let i = 0; i < seed.length; i++) {
-    //     event.recipes.gtceu.large_farm(`${crop[i]}_harvest`)
-    //         .notConsumable(`8x ${seed[i]}`)
-    //         .itemOutputs(`16x ${crop[i]}`)
-    //         .chancedOutput(seed[i], 5000, 0)
-    //         .circuit(0)
-    //         .duration(200);
-
-    //     event.recipes.gtceu.large_farm(`${crop[i]}_harvest_with_bone_meal`)
-    //         .notConsumable(`8x ${seed[i]}`)
-    //         .chancedInput('minecraft:bone_meal', 2500, 0)
-    //         .itemOutputs(`32x ${crop[i]}`)
-    //         .chancedOutput(seed[i], 5000, 0)
-    //         .circuit(1)
-    //         .duration(140);
-
-    //     event.recipes.gtceu.large_farm(`${crop[i]}_harvest_with_compost`)
-    //         .notConsumable(`8x ${seed[i]}`)
-    //         .chancedInput('thermal:compost', 2500, 0)
-    //         .itemOutputs(`48x ${crop[i]}`)
-    //         .chancedOutput(seed[i], 5000, 0)
-    //         .circuit(2)
-    //         .duration(100);
-
-    //     event.recipes.gtceu.large_farm(`${crop[i]}_harvest_with_fertilizer`)
-    //         .notConsumable(`8x ${seed[i]}`)
-    //         .chancedInput('gtceu:fertilizer', 2500, 0)
-    //         .itemOutputs(`64x ${crop[i]}`)
-    //         .chancedOutput(seed[i], 5000, 0)
-    //         .circuit(3)
-    //         .duration(40);
-    // }
 });
