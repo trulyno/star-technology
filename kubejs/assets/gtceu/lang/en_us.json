@@ -499,5 +499,7 @@
     "material.gtceu.basalz": "Liquid Basalz",
 
     "gtceu.steam_ore_processing": "Steam Ore Processing",
-    "block.gtceu.steam_ore_factory": "Steam Ore Factory"
+    "block.gtceu.steam_ore_factory": "Steam Ore Factory",
+
+    "gtceu.composting": "Composting"
 }
