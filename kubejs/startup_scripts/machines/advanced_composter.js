@@ -14,7 +14,7 @@ global.machines(event => {
         .definition((tier, builder) => {
             return builder
                 .recipeType('composting')
-                .workableCasingRenderer('minecraft:block/stripped_dark_oak_log', 'gtceu:block/machines/item_collector', false);
+                .workableCasingRenderer('minecraft:block/stripped_dark_oak_log', 'gtceu:block/machines/advanced_composter', false);
         }
     );
 });

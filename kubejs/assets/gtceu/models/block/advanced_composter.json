@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/cube_bottom_top",
-    "textures": {
-      "bottom": "kubejs:block/overwrites/composter/composter_bottom",
-      "side": "kubejs:block/overwrites/composter/composter_side",
-      "top": "kubejs:block/overwrites/composter/composter_top"
-    }
-}
