@@ -18,7 +18,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .definition((tier, builder) => {
             builder
                 .recipeType('stone_barrel')
-                .workableCasingRenderer('minecraft:block/stone', 'gtceu:block/machines/item_collector', false);
+                .workableCasingRenderer('minecraft:block/stone', 'gtceu:block/machines/stone_barrel', false);
         }
     );
 
