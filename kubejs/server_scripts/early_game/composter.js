@@ -1,12 +1,14 @@
 ServerEvents.recipes(event => {
 
     event.shaped('gtceu:ulv_advanced_composter',[
-        'ABA',
-        'BCB',
-        'ABA'],{
-        A: 'gtceu:brass_screw',
-        B: 'gtceu:treated_wood_plate',
-        C: 'minecraft:glass'
+        'PRP',
+        'PGP',
+        'ISI'],{
+        P: 'gtceu:treated_wood_slab',
+        G: 'minecraft:glass',
+        R: 'gtceu:iron_gear',
+        I: 'gtceu:iron_plate',
+        S: 'thermal:redstone_servo'
     });
 
     function composting (odds, fuel) {
