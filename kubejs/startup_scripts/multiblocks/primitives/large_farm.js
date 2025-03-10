@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('large_farm')
         .category('large_farm')
-        .setMaxIOSize(3, 2, 0, 0)
+        .setMaxIOSize(1, 2, 0, 0)
         .setSound(GTSoundEntries.BATH);
 
 });
