@@ -367,7 +367,7 @@ ServerEvents.recipes(event => {
 	});
 
 	event.remove({ output: 'minecraft:campfire' });
-	event.shaped(Item.of('minecraft:campfire'), [
+	event.shaped(Item.of('minecraft:campfire', '{BlockStateTag:{lit:"false"}}'), [
 		'BTB',
 		'TST',
 		'LLL'
