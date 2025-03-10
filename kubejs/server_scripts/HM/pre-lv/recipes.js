@@ -377,6 +377,10 @@ ServerEvents.recipes(event => {
 		B: 'farmersdelight:tree_bark',
 		L: '#minecraft:logs'
 	});
+	event.replaceOutput({ output: 'minecraft:soul_campfire' },
+		'minecraft:soul_campfire',
+		Item.of('minecraft:soul_campfire', '{BlockStateTag:{lit:"false"}}'
+	))
 
 	// Adjusted Recipes
 
