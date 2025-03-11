@@ -1,6 +1,10 @@
 
 ServerEvents.recipes(event => {
 
+    event.recipes.gtceu.extractor('nether_star_concentrate')
+        .itemInputs('minecraft:nether_star')
+        .outputFluids('gtceu:nether_star_concentrate 144')
+
     //Sculk Variant
     event.recipes.gtceu.polarizer('ionized_sculk_dust')
         .itemInputs('gtceu:sculk_dust')
@@ -57,5 +61,18 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x gtceu:ancient_debris_dust')
         .duration(124)
         .EUt(380644);
+
+    //Quantum Cooling
+    event.recipes.gtceu.super_cooler('bec_og')
+        .inputFluids('gtceu:oganesson 500')
+        .inputFluids('gtceu:superstate_helium_3 10000')
+        .outputFluids('gtceu:bec_og 500')
+        .outputFluids('gtceu:helium_3 5000')
+
+    event.recipes.gtceu.super_cooler('superstate_helium_3')
+        .inputFluids('gtceu:helium_3 5000')
+        .inputFluids('gtceu:liquid_helium 5000')
+        .outputFluids('gtceu:superstate_helium_3 5000')
+        .outputFluids('gtceu:helium 2500')
 
 });
