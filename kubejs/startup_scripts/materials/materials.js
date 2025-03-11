@@ -542,6 +542,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // Netherite Derivatives/Alloys
     event.create('pure_netherite')
         .ingot()
+        .fluid()
         .element(GTElements.get('pure_netherite'))
         .color(0x1a0d00)
         .iconSet(DULL)
@@ -1769,11 +1770,35 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     liquid('basalz', 0x6F190E, '1x mystery');
 
     //UEV Materials
+    event.create('nether_star_concentrate')
+        .components('1x mystery')
+        .fluid()
+        .color(0xEEEEEE);
+
     event.create('magmadamantite')
         .components('4x adamantine', '1x neutronium', '3x tungsten')
         .ingot()
+        .fluid()
         .color(0xDA8607)
         .blastTemp(15049, 'highest', VA('uev'), 3600)
+        .iconSet(SHINY)
+        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp);
+
+    event.create('mythrylimyn')
+        .components('5x mythril', '2x osmium', '2x tantalum', '1x iridium')
+        .ingot()
+        .fluid()
+        .color(0x1EB979)
+        .blastTemp(14999, 'highest', VA('uev'), 3600)
+        .iconSet(SHINY)
+        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp);
+
+    event.create('estartium')
+        .components('4x mystery', '2x estalt', '2x pure_netherite')
+        .ingot()
+        .fluid()
+        .color(0x2253D2)
+        .blastTemp(15199, 'highest', VA('uev'), 3600)
         .iconSet(SHINY)
         .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp);
 
