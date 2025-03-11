@@ -2,7 +2,7 @@
 ServerEvents.recipes(event => {
 
     const gas =['_gas','']
-    const material = ['mythrylimyn','magmadamantite','estartium']
+    const material = ['mythrylimyn','magmadamantite','estartium','seaborgium_palladium_enriched_estalt_flevorium_alloy']
     gas.forEach(g=>{
     material.forEach(m=>{
         event.remove({id: `gtceu:alloy_blast_smelter/${m}${g}`});
@@ -22,6 +22,13 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:superstate_helium_3 500')
             .itemOutputs(`gtceu:${m}_ingot`)
             .outputFluids('gtceu:helium_3 250')
+
+    //Super Cooler
+    event.recipes.gtceu.super_cooler(`${m}`)
+        .inputFluids(`gtceu:${m}_plasma 144`)
+        .inputFluids('gtceu:bec_og 500')
+        .outputFluids(`gtceu:molten_${m} 144`)
+        .outputFluids('gtceu:oganesson 250')
     })});
 
     //Hellforge
@@ -58,23 +65,15 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:utopian_akreyrium 8000')
         .outputFluids('gtceu:estartium_plasma 1152')
 
-    //Quantum Cooler
-    event.recipes.gtceu.super_cooler('estartium')
-        .inputFluids('gtceu:estartium_plasma 144')
-        .inputFluids('gtceu:bec_og 500')
-        .outputFluids('gtceu:molten_estartium 144')
-        .outputFluids('gtceu:oganesson 250')
-
-    event.recipes.gtceu.super_cooler('magmadamantite')
-        .inputFluids('gtceu:magmadamantite_plasma 144')
-        .inputFluids('gtceu:bec_og 500')
-        .outputFluids('gtceu:molten_magmadamantite 144')
-        .outputFluids('gtceu:oganesson 250')
-
-    event.recipes.gtceu.super_cooler('mythrylimyn')
-        .inputFluids('gtceu:mythrylimyn_plasma 144')
-        .inputFluids('gtceu:bec_og 500')
-        .outputFluids('gtceu:molten_mythrylimyn 144')
-        .outputFluids('gtceu:oganesson 250')
+    event.recipes.gtceu.hellforge('seaborgium_palladium_enriched_estalt_flevorium_alloy')
+        .inputFluids('gtceu:seaborgium 576')
+        .inputFluids('gtceu:palladium 1152')
+        .inputFluids('gtceu:enriched_estalt 432')
+        .inputFluids('gtceu:flerovium 288')
+        .inputFluids('')
+        .inputFluids('')
+        .inputFluids('gtceu:nickel_plasma 2448')
+        .inputFluids('gtceu:utopian_akreyrium 17000')
+        .outputFluids('gtceu:seaborgium_palladium_enriched_estalt_flevorium_alloy_plasma 2448')
 
     });

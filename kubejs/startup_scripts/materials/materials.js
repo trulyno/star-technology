@@ -202,7 +202,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     element('thallium', 'dust');
 
     // Liquids
-
+    element('seaborgium', 'fluid');
+    element('flerovium', 'fluid');
 
     // Gasses
     // periodicTableElement('iodine', 'gas');
@@ -1817,5 +1818,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(15199, 'highest', VA('uev'), 3600)
         .iconSet(SHINY)
         .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp);
+
+    event.create('seaborgium_palladium_enriched_estalt_flevorium_alloy')
+        .ingot()
+        .fluid()
+        .plasma()
+        .components('4x seaborgium', '8x palladium', '3x enriched_estalt', '2x flerovium')
+        .color(0x73022B)
+        .iconSet(DULL)
+        .flags(no_decomp)
+        .blastTemp(15469, 'highest', VA('uev'), 1800)
+        .cableProperties(V('uev'), 128, 0, true);
 
 });
