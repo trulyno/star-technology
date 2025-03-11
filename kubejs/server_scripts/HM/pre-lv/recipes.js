@@ -121,6 +121,9 @@ ServerEvents.recipes(event => {
 		Q: 'gtceu:quartzite_gem'
 	});
 
+	event.shapeless(Item.of('gtceu:long_wood_rod'), [
+		'#forge:tools/files','minecraft:stick','minecraft:stick']);
+
 	event.shaped(Item.of('kubejs:basic_scavenging_rod'), [
 		'SPP',
 		'RLP',
@@ -128,7 +131,7 @@ ServerEvents.recipes(event => {
 	], {
 		S: '#forge:string',
 		P: 'minecraft:iron_nugget',
-		T: '#forge:rods/wood',
+		T: 'gtceu:long_wood_rod',
 		R: 'gtceu:sticky_resin',
 		L: 'gtceu:wood_plate'
 	});
@@ -141,7 +144,7 @@ ServerEvents.recipes(event => {
 		S: '#forge:tools/screwdrivers',
 		H: '#forge:tools/hammers',
 		P: 'gtceu:iron_rod',
-		T: '#forge:rods/wood',
+		T: 'gtceu:long_wood_rod',
 		R: 'gtceu:iron_screw',
 		L: 'gtceu:iron_plate'
 	});
@@ -364,7 +367,7 @@ ServerEvents.recipes(event => {
 	});
 
 	event.remove({ output: 'minecraft:campfire' });
-	event.shaped(Item.of('minecraft:campfire'), [
+	event.shaped(Item.of('minecraft:campfire'/*, '{BlockStateTag:{lit:"false"}}'*/), [
 		'BTB',
 		'TST',
 		'LLL'
@@ -374,6 +377,10 @@ ServerEvents.recipes(event => {
 		B: 'farmersdelight:tree_bark',
 		L: '#minecraft:logs'
 	});
+	// event.replaceOutput({ output: 'minecraft:soul_campfire' },
+	// 	'minecraft:soul_campfire',
+	// 	Item.of('minecraft:soul_campfire', '{BlockStateTag:{lit:"false"}}'
+	// ))
 
 	// Adjusted Recipes
 
@@ -624,7 +631,7 @@ ServerEvents.recipes(event => {
 	SEQFluidPipe.forEach(type => {
 		let inter = 'kubejs:incomplete_metal_fluid_pipe'
 		event.recipes.create.sequenced_assembly([
-			Item.of(`gtceu:${type}_tiny_fluid_pipe`).withChance(1),
+			Item.of(`2x gtceu:${type}_tiny_fluid_pipe`).withChance(1),
 		], `gtceu:${type}_ring`, [
 			event.recipes.createDeploying(inter, [inter, `gtceu:${type}_plate`]),
 			event.recipes.createCutting(inter, inter),
