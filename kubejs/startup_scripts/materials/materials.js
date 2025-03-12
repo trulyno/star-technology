@@ -1719,6 +1719,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             .flags(no_decomp);
     };
 
+    liquid('brackish_water', 0x459EA4, ['1x water', '1x mystery'])
     liquid('iron_mixture', 0xC42626, '1x mystery');
     liquid('copper_mixture', 0xC86524, '1x mystery');
     liquid('quartz_mixture', 0xABC5E0, '1x mystery');
