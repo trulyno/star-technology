@@ -1041,6 +1041,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xff471a)
         .flags(no_decomp);
 
+    event.create('hellstone')
+        .dust()
+        .ore(3,1)
+
     // Nether
        
         //Extended Debris
@@ -1808,7 +1812,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(14999, 'highest', VA('uev'), 3600)
         .iconSet(SHINY)
         .fluidPipeProperties(20000, 6000, true,true,true,true)
-        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, foil, no_decomp);
+        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, rotor, ring, foil, no_decomp);
 
     event.create('estalrtium')
         .components('4x mystery', '2x estalt', '2x pure_netherite')
