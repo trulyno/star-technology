@@ -44,6 +44,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "rsquare"
 			size: 1.5d
 			subtitle: "One step closer to home..."
 			tasks: [{
@@ -1282,7 +1283,10 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["5E7153B7A10FC241"]
+			dependencies: [
+				"5E7153B7A10FC241"
+				"6180202612DCDBF4"
+			]
 			icon: "minecraft:end_stone"
 			id: "4238E903C674B284"
 			optional: true
@@ -1305,7 +1309,10 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["5E7153B7A10FC241"]
+			dependencies: [
+				"5E7153B7A10FC241"
+				"4289C7821C6AF920"
+			]
 			icon: "minecraft:netherrack"
 			id: "1E3EF64C0A4EE438"
 			optional: true
@@ -1440,7 +1447,7 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
+			x: 4.5d
 			y: 2.0d
 		}
 		{
@@ -1758,15 +1765,41 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["4F3EE28B3F38FC85"]
+			dependencies: [
+				"4F3EE28B3F38FC85"
+				"7AC55BA8BDD0F3D2"
+			]
 			id: "38FB8D5DB43D0DBD"
 			tasks: [{
 				id: "0EE1A5B3BEE712BE"
-				title: "Runic (Perfect) Parallel Hatch"
+				title: "UHV Absolute Parallel Hatch"
 				type: "checkmark"
 			}]
 			x: -1.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["2C354B0735DF8023"]
+			hide_dependent_lines: true
+			id: "4289C7821C6AF920"
+			tasks: [{
+				id: "5D9EB5EE3332B08D"
+				title: "Rune Infused Armor"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4F3EE28B3F38FC85"]
+			id: "07F65BCDDA42248D"
+			tasks: [{
+				id: "026B698E712FE1C5"
+				title: "UHV Parallel Hatch"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 2.0d
 		}
 	]
 	title: "Adventures in Abydos"
