@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
         .inputFluids('')
         .inputFluids('gtceu:oxygen_plasma 1152')
         .inputFluids('gtceu:utopian_akreyrium 8000')
-        .outputFluids('gtceu:estalrtium_plasma 1152')
+        .outputFluids('gtceu:estalritium_plasma 1152')
 
     event.recipes.gtceu.hellforge('seaborgium_palladium_enriched_estalt_flevorium_alloy')
         .inputFluids('gtceu:seaborgium 576')
