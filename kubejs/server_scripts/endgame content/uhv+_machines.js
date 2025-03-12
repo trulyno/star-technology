@@ -10,6 +10,8 @@ ServerEvents.recipes(event => {
     event.remove({input: /gtceu:uxv.*/})
     event.remove({output: /gtceu:opv.*/})
     event.remove({input: /gtceu:opv.*/})
+    event.remove({output: /gtceu:max.*/})
+    event.remove({input: /gtceu:max.*/})
 
 event.recipes.gtceu.packer('uhv_ultimate_battery')
     .itemInputs('gtceu:uhv_ultimate_battery')
@@ -20,8 +22,8 @@ event.recipes.gtceu.packer('uhv_ultimate_battery')
 
 const input = [
     {tier:'uhv',tier1under:'uv',main:'neutronium',cable:'europium',wire:'zirconium_selenide_diiodide',glass:'fusion_glass',plastic:'polyether_ether_ketone',cable1up:'cerium_tritelluride',mag:'pure_netherite',pipe:'neutronium',buzz:'neutronium',elctrlyzWire:'iron_selenide_over_strontium_titanium_oxide',chip:'gtceu:uhpic',math:'1'},
-    {tier:'uev',tier1under:'uhv',main:'mythrylimyn',cable:'cerium_tritelluride',wire:'zirconium_selenide_diiodide',glass:'fusion_glass',plastic:'polyether_ether_ketone',cable1up:'cerium_tritelluride',mag:'zapolgium',pipe:'mythrylimyn',buzz:'neutronium',elctrlyzWire:'iron_selenide_over_strontium_titanium_oxide',chip:'kubejs:uepic',math:'2'}
-
+    {tier:'uev',tier1under:'uhv',main:'mythrylimyn',cable:'cerium_tritelluride',wire:'astatium_bioselex_carbonite',glass:'fusion_glass',plastic:'polyether_ether_ketone',cable1up:'cerium_tritelluride',mag:'zapolgium',pipe:'mythrylimyn',buzz:'neutronium',elctrlyzWire:'astatine_bismuth_tellurium_cobalt_selenium_over_iron_titanium_oxide',chip:'kubejs:uepic',math:'2'}
+    //UIV will be last single block machine tier
 ]
 
 input.forEach(i=>{

@@ -2,7 +2,7 @@
 ServerEvents.recipes(event => {
 
     const gas =['_gas','']
-    const material = ['mythrylimyn','magmadamantite','estalrtium','seaborgium_palladium_enriched_estalt_flevorium_alloy']
+    const material = ['mythrylimyn','magmadamantite','estalritium','seaborgium_palladium_enriched_estalt_flevorium_alloy']
     gas.forEach(g=>{
     material.forEach(m=>{
         event.remove({id: `gtceu:alloy_blast_smelter/${m}${g}`});
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:utopian_akreyrium 8000')   
         .outputFluids('gtceu:magmadamantite_plasma 1152')
 
-    event.recipes.gtceu.hellforge('estalrtium')
+    event.recipes.gtceu.hellforge('estalritium')
         .inputFluids('gtceu:nether_star_concentrate 576')
         .inputFluids('gtceu:estalt 288')
         .inputFluids('gtceu:pure_netherite 288')

@@ -219,7 +219,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Naquadria.addFlags(dense_plate);
     GTMaterials.Neutronium.addFlags(foil, small_gear,rotor);
     GTMaterials.Europium.addFlags(small_spring);
-    GTMaterials.Zirconium.addFlags(fine_wire); 
+    GTMaterials.Zirconium.addFlags(fine_wire);
+    GTMaterials.Hafnium.addFlags(fine_wire); 
     GTMaterials.RedSteel.addFlags(rod, frame);
     GTMaterials.SterlingSilver.addFlags(rod, frame);
     GTMaterials.NetherStar.addFlags(foil);
@@ -1758,13 +1759,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     moltenore('bastnasite',0x988E84);
     liquid('molten_cooperite_ore', 0xA4A38B, '1x cooperite');
 
-    event.create("purified_naquadah")
+    event.create('purified_naquadah')
         .gem()
         .color(0x000807)
         .element(GTElements.get('purified_naquadah')) 
         .flags(no_decomp);
 
-    event.create("indium_oxide")
+    event.create('indium_oxide')
         .dust()
         .color(0xE3D28E)
         .components('2x indium', '3x oxygen');
@@ -1811,10 +1812,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x1EB979)
         .blastTemp(14999, 'highest', VA('uev'), 3600)
         .iconSet(SHINY)
-        .fluidPipeProperties(20000, 6000, true,true,true,true)
+        .fluidPipeProperties(120000, 6000, true,true,true,true)
         .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, rotor, ring, foil, no_decomp);
 
-    event.create('estalrtium')
+    event.create('estalritium')
         .components('4x mystery', '2x estalt', '2x pure_netherite')
         .ingot()
         .fluid()
@@ -1833,6 +1834,36 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(DULL)
         .flags(no_decomp)
         .blastTemp(15469, 'highest', VA('uev'), 1800)
-        .cableProperties(V('uev'), 128, 0, true);
+        .cableProperties(V('uev'), 32, 0, true);
+
+    event.create('iron_titanium_oxide')
+        .dust()
+        .components('3x iron', '2x titanium', '7x oxygen')
+        .flags(no_decomp)
+        .color(0x82229B);
+
+    event.create('astatine_bismuth_tellurium_cobalt_selenium')
+        .dust()
+        .components('1x astatine', '2x bismuth', '3x tellurium', '4x cobalt', '2x selenium')
+        .flags(no_decomp)
+        .color(0x123718);
+
+    event.create('astatium_bioselex_carbonite')
+        .ingot()
+        .components('1x astatine', '2x bismuth', '3x selenium', '2x thallium', '4x sulfur', '1x carbon')
+        .color(0x305F84)
+        .iconSet(DULL)
+        .flags(spring, no_decomp)
+        .blastTemp(14900, 'higher', VA('uv'), 4000)
+        .cableProperties(V('uev'), 3, 16, false);
+
+    event.create('astatine_bismuth_tellurium_cobalt_selenium_over_iron_titanium_oxide')
+        .ingot()
+        .components('1x astatine_bismuth_tellurium_cobalt_selenium', 'iron_titanium_oxide')
+        .color(0xE61485)
+        .iconSet(DULL)
+        .flags(fine_wire, bolt_and_screw)
+        .blastTemp(14799, 'highest', VA('uv'), 2500)
+        .cableProperties(V('uev'), 2, 12, false);
 
 });
