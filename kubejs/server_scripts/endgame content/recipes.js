@@ -78,13 +78,6 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.gtceu.centrifuge('nether_rare_earth')
-        .itemInputs('gtceu:nether_rare_earth_dust')
-        .itemOutputs('gtceu:polonium_dioxide_dust', 'gtceu:lanthanum_triastatate_dust', 'gtceu:hafnium_diboride_dust', 'gtceu:seaborgium_oxychloride_dust', 'gtceu:flerovium_oxide_dust')
-        .outputFluids('gtceu:oganesson_diiodide 1000')
-        .duration(920)
-        .EUt(30000);
-
     event.recipes.gtceu.mixer('cerium_tritelluride_dust')
         .itemInputs('gtceu:cerium_dust', '3x gtceu:tellurium_dust')
         .itemOutputs('4x gtceu:cerium_tritelluride_dust')

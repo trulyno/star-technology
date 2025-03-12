@@ -22,7 +22,7 @@ event.recipes.gtceu.packer('uhv_ultimate_battery')
 
 const input = [
     {tier:'uhv',tier1under:'uv',main:'neutronium',cable:'europium',wire:'zirconium_selenide_diiodide',glass:'fusion_glass',plastic:'polyether_ether_ketone',cable1up:'cerium_tritelluride',mag:'pure_netherite',pipe:'neutronium',buzz:'neutronium',elctrlyzWire:'iron_selenide_over_strontium_titanium_oxide',chip:'gtceu:uhpic',math:'1'},
-    {tier:'uev',tier1under:'uhv',main:'mythrolic_alloy',cable:'cerium_tritelluride',wire:'astatium_bioselex_carbonite',glass:'fusion_glass',plastic:'polyether_ether_ketone',cable1up:'cerium_tritelluride',mag:'zapolgium',pipe:'mythrolic_alloy',buzz:'neutronium',elctrlyzWire:'astatine_bismuth_tellurium_cobalt_selenium_over_iron_titanium_oxide',chip:'kubejs:uepic',math:'2'}
+    {tier:'uev',tier1under:'uhv',main:'mythrolic_alloy',cable:'cerium_tritelluride',wire:'astatium_bioselex_carbonite',glass:'fusion_glass',plastic:'polyether_ether_ketone',cable1up:'cerium_tritelluride',mag:'zapolgium',pipe:'mythrolic_alloy',buzz:'neutronium',elctrlyzWire:'astatine_bis_tritelluride_cobo_selenium_over_iron_titanium_oxide',chip:'kubejs:uepic',math:'2'}
     //UIV will be last single block machine tier
 ]
 
@@ -186,11 +186,11 @@ input.forEach(i=>{
         .itemInputs(`gtceu:${i.tier}_machine_hull`,`4x gtceu:${i.cable}_${e.powerTr}`,`2x ${i.chip}_chip`,`#gtceu:circuits/${i.tier}`,`2x kubejs:${i.tier}_voltage_coil`)
         .inputFluids(`gtceu:sodium_potassium ${i.math*4000+12000}`, `gtceu:indium_tin_lead_cadmium_soldering_alloy ${1440*(2**i.math)}`)
         .itemOutputs(`gtceu:${i.tier}_energy_${e.type}_hatch`)
-        // .stationResearch(
-        //     researchRecipeBuilder => researchRecipeBuilder
-        //         .researchStack(Item.of(`gtceu:${i.tier1under}_energy_${e.type}_hatch`))
-        //         .EUt(122880*(4**i.math))
-        //         .CWUt(i.math*64+64))
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of(`gtceu:${i.tier1under}_energy_${e.type}_hatch`))
+                .EUt(122880*(4**i.math))
+                .CWUt(i.math*64+64))
         .duration(800)
         .EUt(491520*(4**i.math));
     event.recipes.gtceu.assembler(`${i.tier}_energy_${e.type}_hatch_4a`)

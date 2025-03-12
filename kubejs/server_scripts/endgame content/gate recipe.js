@@ -9,12 +9,12 @@ ServerEvents.recipes(event => {
                 '32x gtceu:uhpic_chip', '48x gtceu:dragonsteel_single_wire')
         .inputFluids('gtceu:hsss 6912', 'gtceu:niobium_nitride 1728')
         .itemOutputs('gtceu:heat_chamber')
-        // .stationResearch(
-        //     researchRecipeBuilder => researchRecipeBuilder
-        //         .researchStack(Item.of("gtceu:uv_electric_furnace"))
-        //         .EUt(GTValues.VHA[GTValues.UV])
-        //         .CWUt(48)
-        //     )
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:uv_electric_furnace'))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(48)
+            )
         .duration(36000)
         .EUt(GTValues.VHA[GTValues.UV]);
 
@@ -24,27 +24,27 @@ ServerEvents.recipes(event => {
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip', '48x gtceu:prismalium_single_wire')
             .inputFluids('gtceu:hsse 6912', 'gtceu:niobium_titanium 1728')
             .itemOutputs('gtceu:super_pressure_heat_chamber')
-            // .stationResearch(
-            // researchRecipeBuilder => researchRecipeBuilder
-            //     .researchStack(Item.of("gtceu:heat_chamber"))
-            //     .EUt(GTValues.VHA[GTValues.UV])
-            //     .CWUt(64)
-            // )
+            .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:heat_chamber'))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(64)
+            )
             .duration(46000)
             .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.assembly_line('large_rotor_machine')
-            .itemInputs('gtceu:shellite_frame', '4x #gtceu:circuits/luv', 'gtceu:double_vanadium_gallium_plate', 
-                    'gtceu:double_red_steel_plate', 'gtceu:luv_field_generator', '2x gtceu:luv_electric_motor', '64x gtceu:uhpic_chip', 
-                    '32x gtceu:uhpic_chip', '4x gtceu:advanced_power_thruster', '4x gtceu:hssg_spring')
-            .inputFluids('gtceu:soldering_alloy 3456', 'gtceu:yttrium_barium_cuprate 5184')
-            .itemOutputs('gtceu:large_rotor_machine')
-        //     .stationResearch(
-        // researchRecipeBuilder => researchRecipeBuilder
-        //     .researchStack(Item.of("gtceu:long_void_rod"))
-        //     .EUt(GTValues.VHA[GTValues.UV])
-        //     .CWUt(64)
-        // )
+        .itemInputs('gtceu:shellite_frame', '4x #gtceu:circuits/luv', 'gtceu:double_vanadium_gallium_plate', 
+                'gtceu:double_red_steel_plate', 'gtceu:luv_field_generator', '2x gtceu:luv_electric_motor', '64x gtceu:uhpic_chip', 
+                '32x gtceu:uhpic_chip', '4x gtceu:advanced_power_thruster', '4x gtceu:hssg_spring')
+        .inputFluids('gtceu:soldering_alloy 3456', 'gtceu:yttrium_barium_cuprate 5184')
+        .itemOutputs('gtceu:large_rotor_machine')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+            .researchStack(Item.of('gtceu:long_void_rod'))
+            .EUt(GTValues.VHA[GTValues.UV])
+            .CWUt(64)
+        )
         .duration(12000)
         .EUt(GTValues.VHA[GTValues.UV]);
 
@@ -54,12 +54,12 @@ ServerEvents.recipes(event => {
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '48x gtceu:blue_alloy_screw', 'gtceu:gravi_star')
             .inputFluids('gtceu:hsse 5184', 'gtceu:hssg 5184', 'gtceu:hsss 5184')
             .itemOutputs('gtceu:runic_circuitry_assembling_station')
-        //     .stationResearch(
-        // researchRecipeBuilder => researchRecipeBuilder
-        //         .researchStack(Item.of("kubejs:runic_wave_generator"))
-        //         .EUt(GTValues.VHA[GTValues.UV])
-        //         .CWUt(128)
-        //     )
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('kubejs:runic_wave_generator'))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(128)
+            )
             .duration(82000)
             .EUt(GTValues.VHA[GTValues.UV]);
 
@@ -81,12 +81,12 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:prismalium 36864', 'gtceu:pcb_coolant 64000', 'gtceu:osmiridium 73728')
             .itemOutputs('gtceu:stargate_component_assembly')
             .duration(128000)
-        //     .stationResearch(
-        // researchRecipeBuilder => researchRecipeBuilder
-        //         .researchStack(Item.of("kubejs:stargate_rod"))
-        //         .EUt(GTValues.VHA[GTValues.UV])
-        //         .CWUt(144)
-        //     )
+            .stationResearch(
+        researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('kubejs:stargate_rod'))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(144)
+            )
             .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.assembly_line('gate_assembly')
@@ -97,12 +97,12 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:stellarium 36864', 'gtceu:akreyrium_pcb_graphite_nanoparticle_coolant 64000', 'gtceu:tritanium 73728')
             .itemOutputs('gtceu:gate_assembly')
             .duration(128000)
-        //     .stationResearch(
-        // researchRecipeBuilder => researchRecipeBuilder
-        //         .researchStack(Item.of("gtceu:stargate_component_assembly"))
-        //         .EUt(GTValues.VHA[GTValues.UHV])
-        //         .CWUt(144)
-        //     )
+            .stationResearch(
+        researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:stargate_component_assembly'))
+                .EUt(GTValues.VHA[GTValues.UHV])
+                .CWUt(144)
+            )
             .EUt(GTValues.VHA[GTValues.UHV]);
                 
     event.recipes.gtceu.assembly_line('drackion_runic_laser_gen')
@@ -112,12 +112,12 @@ ServerEvents.recipes(event => {
                 '64x gtceu:uhpic_wafer', '64x gtceu:uhpic_wafer', '16x gtceu:melodium_foil', '16x gtceu:prismalium_foil')
             .inputFluids('gtceu:neutronium 63000', 'gtceu:polybenzimidazole 54000', 'gtceu:naquadria 32000')
             .itemOutputs('kubejs:runic_wave_generator')
-            // .stationResearch(
-            //     researchRecipeBuilder => researchRecipeBuilder
-            //         .researchStack(Item.of("gtceu:exquisite_screret_runic_laser_source_base_gem"))
-            //         .EUt(GTValues.VHA[GTValues.UV])
-            //         .CWUt(128)
-            // )
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of('gtceu:exquisite_runic_laser_source_base_gem'))
+                    .EUt(GTValues.VHA[GTValues.UV])
+                    .CWUt(128)
+            )
             .duration(64000)
             .EUt(GTValues.VHA[GTValues.ZPM]);
 
@@ -179,12 +179,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 72000', 'gtceu:sterilized_growth_medium 13500')
         .itemOutputs('kubejs:classic_stargate_computer_core')
         .duration(24000)
-        // .stationResearch(
-        //     researchRecipeBuilder => researchRecipeBuilder
-        //         .researchStack(Item.of("kubejs:abydos_coordinate_crystal"))
-        //         .EUt(GTValues.VHA[GTValues.UV])
-        //         .CWUt(144)
-        // )
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('kubejs:abydos_coordinate_crystal'))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(144)
+        )
         .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.assembly_line('crystal_interface')
@@ -195,12 +195,12 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:sodium_potassium 49000', 'gtceu:soldering_alloy 36864')
             .itemOutputs('sgjourney:crystal_interface')
             .duration(84000)
-            // .stationResearch(
-            //     researchRecipeBuilder => researchRecipeBuilder
-            //         .researchStack(Item.of("gtceu:uhv_16a_energy_converter"))
-            //         .EUt(GTValues.VHA[GTValues.UV])
-            //         .CWUt(144)
-            // )
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of('gtceu:uhv_16a_energy_converter'))
+                    .EUt(GTValues.VHA[GTValues.UV])
+                    .CWUt(144)
+            )
             .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.assembler('clasic_dhd')
@@ -236,12 +236,12 @@ ServerEvents.recipes(event => {
                 '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '16x #gtceu:circuits/uhv', '48x gtceu:prismalium_screw')
         .inputFluids('gtceu:soldering_alloy 40000')
         .itemOutputs('kubejs:computational_super_matrix')
-        // .stationResearch(
-        //     researchRecipeBuilder => researchRecipeBuilder
-        //         .researchStack(Item.of("gtceu:wetware_processor_mainframe"))
-        //         .EUt(GTValues.VHA[GTValues.ZPM])
-        //         .CWUt(128)
-        // )
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:wetware_processor_mainframe'))
+                .EUt(GTValues.VHA[GTValues.ZPM])
+                .CWUt(128)
+        )
         .duration(12000)
         .EUt(GTValues.VHA[GTValues.UV]);
 
@@ -262,12 +262,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:naquadria 48000', 'gtceu:borosilicate_glass 136000')
         .itemOutputs('kubejs:classic_chevron_disk')
         .duration(6000)
-        // .stationResearch(
-        // researchRecipeBuilder => researchRecipeBuilder
-        //     .researchStack(Item.of("gtceu:exquisite_naquadic_netherite_gem"))
-        //     .EUt(GTValues.VHA[GTValues.UV])
-        //     .CWUt(144)
-        // )
+        .stationResearch(
+        researchRecipeBuilder => researchRecipeBuilder
+            .researchStack(Item.of('gtceu:exquisite_naquadic_netherite_gem'))
+            .EUt(GTValues.VHA[GTValues.UV])
+            .CWUt(144)
+        )
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     //Ancient Gate
@@ -278,12 +278,12 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 13824')
             .itemOutputs('sgjourney:milky_way_dhd')
             .duration(10000)
-            // .stationResearch(
-            //     researchRecipeBuilder => researchRecipeBuilder
-            //         .researchStack(Item.of("sgjourney:classic_dhd"))
-            //         .EUt(GTValues.VHA[GTValues.UHV])
-            //         .CWUt(160)
-            //     )
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of('sgjourney:classic_dhd'))
+                    .EUt(GTValues.VHA[GTValues.UHV])
+                    .CWUt(160)
+                )
             .EUt(GTValues.VA[GTValues.UEV])
 
         //Chevrons
@@ -292,12 +292,12 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:utopian_akreyrium 24000', 'gtceu:naquadria 56000', 'gtceu:borosilicate_glass 180000')
             .itemOutputs('kubejs:classic_chevron_assembly')
             .duration(9000)
-            // .stationResearch(
-            //     researchRecipeBuilder => researchRecipeBuilder
-            //         .researchStack(Item.of("kubejs:classic_chevron_disk"))
-            //         .EUt(GTValues.VHA[GTValues.UV])
-            //         .CWUt(160)
-            //     )
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of('kubejs:classic_chevron_disk'))
+                    .EUt(GTValues.VHA[GTValues.UV])
+                    .CWUt(160)
+                )
             .EUt(GTValues.VHA[GTValues.UHV]);
 
         event.recipes.gtceu.assembly_line('ancient_chevron_disk')
@@ -305,12 +305,12 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:utopian_akreyrium 48000', 'gtceu:naquadria 96000', 'gtceu:borosilicate_glass 196000')
             .itemOutputs('kubejs:ancient_chevron_disk')
             .duration(12000)
-            // .stationResearch(
-            //     researchRecipeBuilder => researchRecipeBuilder
-            //         .researchStack(Item.of("kubejs:classic_chevron_assembly"))
-            //         .EUt(GTValues.VHA[GTValues.UHV])
-            //         .CWUt(176)
-            //     )
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of('kubejs:classic_chevron_assembly'))
+                    .EUt(GTValues.VHA[GTValues.UHV])
+                    .CWUt(176)
+                )
             .EUt(GTValues.VHA[GTValues.UEV]);
 
         //Ancient Encoded Computational Unit
@@ -320,12 +320,12 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 128000', 'gtceu:sterilized_growth_medium 54000')
             .itemOutputs('kubejs:ancient_stargate_computer_core')
             .duration(48000)
-            // .stationResearch(
-            //     researchRecipeBuilder => researchRecipeBuilder
-            //         .researchStack(Item.of("kubejs:classic_stargate_computer_core"))
-            //         .EUt(GTValues.VHA[GTValues.UHV])
-            //         .CWUt(176)
-            //     )
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of('kubejs:classic_stargate_computer_core'))
+                    .EUt(GTValues.VHA[GTValues.UHV])
+                    .CWUt(176)
+                )
             .EUt(GTValues.VHA[GTValues.UEV]);
 
         //Draconic Coordinate Core
@@ -342,12 +342,12 @@ ServerEvents.recipes(event => {
             .inputFluids('minecraft:lava 500000','gtceu:blaze 250000','gtceu:utopian_akreyrium 50000')
             .itemOutputs('kubejs:hell_core')
             .duration(18000)
-            // .stationResearch(
-            //     researchRecipeBuilder => researchRecipeBuilder
-            //         .researchStack(Item.of("kubejs:nether_coordinate_crystal"))
-            //         .EUt(GTValues.VHA[GTValues.UHV])
-            //         .CWUt(160)
-            //     )
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of('kubejs:nether_coordinate_crystal'))
+                    .EUt(GTValues.VHA[GTValues.UHV])
+                    .CWUt(160)
+                )
             .EUt(GTValues.VHA[GTValues.UEV]);
 
         //Void Core
@@ -356,12 +356,12 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:echo_r 500000','thermal:ender 250000','gtceu:utopian_akreyrium 50000')
             .itemOutputs('kubejs:void_core')
             .duration(18000)
-            // .stationResearch(
-            //     researchRecipeBuilder => researchRecipeBuilder
-            //         .researchStack(Item.of("kubejs:end_coordinate_crystal"))
-            //         .EUt(GTValues.VHA[GTValues.UHV])
-            //         .CWUt(160)
-            //     )
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of('kubejs:end_coordinate_crystal'))
+                    .EUt(GTValues.VHA[GTValues.UHV])
+                    .CWUt(160)
+                )
             .EUt(GTValues.VHA[GTValues.UEV]);
 
         //Ancient Gate Blocks

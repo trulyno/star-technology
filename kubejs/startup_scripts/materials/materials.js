@@ -1042,10 +1042,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xff471a)
         .flags(no_decomp);
 
-    event.create('hellstone')
-        .dust()
-        .ore(3,1)
-
     // Nether
        
         //Extended Debris
@@ -1843,9 +1839,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(no_decomp)
         .color(0x82229B);
 
-    event.create('astatine_bismuth_tellurium_cobalt_selenium')
+    event.create('astatine_bis_tritelluride_cobo_selenium')
         .dust()
-        .components('1x astatine', '2x bismuth', '3x tellurium', '4x cobalt', '2x selenium')
+        .components('1x astatine', '1x bismuth_tritelluride', '4x cobalt', '2x selenium')
         .flags(no_decomp)
         .color(0x123718);
 
@@ -1858,9 +1854,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(14900, 'higher', VA('uv'), 4000)
         .cableProperties(V('uev'), 3, 16, false);
 
-    event.create('astatine_bismuth_tellurium_cobalt_selenium_over_iron_titanium_oxide')
+    event.create('astatine_bis_tritelluride_cobo_selenium_over_iron_titanium_oxide')
         .ingot()
-        .components('1x astatine_bismuth_tellurium_cobalt_selenium', 'iron_titanium_oxide')
+        .components('1x astatine_bis_tritelluride_cobo_selenium', 'iron_titanium_oxide')
         .color(0xE61485)
         .iconSet(DULL)
         .flags(fine_wire, bolt_and_screw)

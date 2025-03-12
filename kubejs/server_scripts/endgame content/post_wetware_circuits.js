@@ -8,12 +8,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 2880', 'gtceu:polyether_ether_ketone 1152', 'gtceu:sterilized_growth_medium 5000')
         .itemOutputs('kubejs:wetware_based_runic_neuroloom')
         .duration(1800)
-        // .stationResearch(
-        //     researchRecipeBuilder => researchRecipeBuilder
-        //         .researchStack('kubejs:computational_super_matrix')
-        //         .EUt(GTValues.VHA[GTValues.UHV])
-        //         .CWUt(160)
-        // )
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack('kubejs:computational_super_matrix')
+                .EUt(GTValues.VHA[GTValues.UHV])
+                .CWUt(160)
+        )
         .EUt(GTValues.VHA[GTValues.UEV]);
 
     event.recipes.gtceu.circuit_assembler('draconic_wetware_circuit_board')

@@ -858,6 +858,17 @@
 			x: 5.5d
 			y: 1.25d
 		}
+		{
+			dependencies: ["38C2E3061C764F05"]
+			id: "3BF75D255438C1F0"
+			tasks: [{
+				id: "7B1D7302F29EF060"
+				title: "Exotic Matters"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
 	]
 	title: "Draconic Empires"
 }

@@ -6,12 +6,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 1872', 'gtceu:naquadria 288')
         .itemOutputs('gtceu:chemical_plant')
         .duration(1200)
-        // .stationResearch(
-        //     researchRecipeBuilder => researchRecipeBuilder
-        //         .researchStack(Item.of('gtceu:large_chemical_reactor'))
-        //         .EUt(GTValues.VHA[GTValues.ZPM])
-        //         .CWUt(16)
-        //     )
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:large_chemical_reactor'))
+                .EUt(GTValues.VHA[GTValues.ZPM])
+                .CWUt(16)
+            )
         .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.assembler('peek_casing')

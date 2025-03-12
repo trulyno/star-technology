@@ -22,12 +22,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:naquadria 13248', 'gtceu:trinaquadalloy 9936'   )
         .itemOutputs('gtceu:vibration_laser_engraver')
         .duration(4800)
-        // .stationResearch(
-        //     researchRecipeBuilder => researchRecipeBuilder
-        //         .researchStack(Item.of('gtceu:uv_laser_engraver'))
-        //         .EUt(262144)
-        //         .CWUt(96)
-        //     )
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:uv_laser_engraver'))
+                .EUt(262144)
+                .CWUt(96)
+            )
         .EUt(262144); 
 
 });
