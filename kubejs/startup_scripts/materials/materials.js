@@ -1795,7 +1795,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xEDFAF5)
         .flags(no_decomp);
 
-    event.create('magmadamantite')
+    event.create('magmada_alloy')
         .components('4x adamantine', '1x neutronium', '3x tungsten')
         .ingot()
         .fluid()
@@ -1805,7 +1805,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(SHINY)
         .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp, rotor);
 
-    event.create('mythrylimyn')
+    event.create('mythrolic_alloy')
         .components('5x mythril', '2x osmium', '2x tantalum', '1x iridium')
         .ingot()
         .fluid()
@@ -1816,7 +1816,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluidPipeProperties(120000, 6000, true,true,true,true)
         .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, rotor, ring, foil, no_decomp);
 
-    event.create('estalritium')
+    event.create('starium_alloy')
         .components('4x mystery', '2x estalt', '2x pure_netherite')
         .ingot()
         .fluid()

@@ -2,7 +2,7 @@
 ServerEvents.recipes(event => {
 
     const gas =['_gas','']
-    const material = ['mythrylimyn','magmadamantite','estalritium','seaborgium_palladium_enriched_estalt_flevorium_alloy']
+    const material = ['mythrolic_alloy','magmada_alloy','starium_alloy','seaborgium_palladium_enriched_estalt_flevorium_alloy']
     gas.forEach(g=>{
     material.forEach(m=>{
         event.remove({id: `gtceu:alloy_blast_smelter/${m}${g}`});
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
     })});
 
     //Hellforge
-    event.recipes.gtceu.hellforge('mythrylimyn')
+    event.recipes.gtceu.hellforge('mythrolic_alloy')
         .inputFluids('gtceu:mythril 720')
         .inputFluids('gtceu:osmium 288')
         .inputFluids('gtceu:tantalum 288')
@@ -41,9 +41,9 @@ ServerEvents.recipes(event => {
         .inputFluids('')
         .inputFluids('gtceu:argon_plasma 1440')
         .inputFluids('gtceu:utopian_akreyrium 10000')
-        .outputFluids('gtceu:mythrylimyn_plasma 1440')
+        .outputFluids('gtceu:mythrolic_alloy_plasma 1440')
 
-    event.recipes.gtceu.hellforge('magmadamantite')
+    event.recipes.gtceu.hellforge('magmada_alloy')
         .inputFluids('gtceu:adamantine 576')
         .inputFluids('gtceu:neutronium 144')
         .inputFluids('gtceu:tungsten 432')
@@ -52,9 +52,9 @@ ServerEvents.recipes(event => {
         .inputFluids('')
         .inputFluids('gtceu:magmatic_plasma 1152')
         .inputFluids('gtceu:utopian_akreyrium 8000')   
-        .outputFluids('gtceu:magmadamantite_plasma 1152')
+        .outputFluids('gtceu:magmada_alloy_plasma 1152')
 
-    event.recipes.gtceu.hellforge('estalritium')
+    event.recipes.gtceu.hellforge('starium_alloy')
         .inputFluids('gtceu:nether_star_concentrate 576')
         .inputFluids('gtceu:estalt 288')
         .inputFluids('gtceu:pure_netherite 288')
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
         .inputFluids('')
         .inputFluids('gtceu:oxygen_plasma 1152')
         .inputFluids('gtceu:utopian_akreyrium 8000')
-        .outputFluids('gtceu:estalritium_plasma 1152')
+        .outputFluids('gtceu:starium_alloy_plasma 1152')
 
     event.recipes.gtceu.hellforge('seaborgium_palladium_enriched_estalt_flevorium_alloy')
         .inputFluids('gtceu:seaborgium 576')

@@ -1,4 +1,5 @@
 {
+	autofocus_id: "51FAA26B6A537091"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "draconic_age_part_1"
@@ -54,6 +55,7 @@
 			dependencies: ["709EF5314988C381"]
 			id: "665FC02BC2BC414F"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "54FCC26C066840E9"
 				item: "gtceu:uev_super_cooler"
@@ -69,6 +71,7 @@
 			]
 			id: "1EB60E6DE2086158"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "3B8803F13E83A948"
 				item: "gtceu:uev_hellforge"
@@ -92,17 +95,17 @@
 				}
 				{
 					id: "32A5C9625179E385"
-					item: "gtceu:magmadamantite_ingot"
+					item: "gtceu:magmada_alloy_ingot"
 					type: "item"
 				}
 				{
 					id: "0EA7259598286499"
-					item: "gtceu:mythrylimyn_ingot"
+					item: "gtceu:mythrolic_alloy_ingot"
 					type: "item"
 				}
 				{
 					id: "7429A81C42FE2F21"
-					item: "gtceu:estalritium_ingot"
+					item: "gtceu:starium_alloy_ingot"
 					type: "item"
 				}
 			]
@@ -143,9 +146,10 @@
 			]
 			id: "310FC3F86513555F"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "2B4AB49F78A510B0"
-				item: "kubejs:magmadamantite_coil_block"
+				item: "kubejs:magmada_alloy_coil_block"
 				type: "item"
 			}]
 			x: 0.0d
@@ -254,6 +258,7 @@
 		{
 			dependencies: ["6C8C6EA426060065"]
 			id: "215A1E80621E2880"
+			shape: "circle"
 			tasks: [{
 				id: "2EAC214860C4256F"
 				item: "gtceu:magmatic_plasma_bucket"
@@ -377,6 +382,7 @@
 			]
 			id: "395C32B51E768458"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "0CDF1129CD1EC487"
 				title: "Draconic Infusion Array"
@@ -416,6 +422,7 @@
 			dependencies: ["097D8B4DF03A8617"]
 			id: "2DACE6EF41A118D9"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "1462466F9431F65B"
 				title: "Abyss Coils"
@@ -592,6 +599,7 @@
 			dependencies: ["6F3DF16481990D99"]
 			id: "5944C4DE27F98FF3"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "6EF791353FFC298F"
 				item: "kubejs:draconic_wetware_processor_mainframe"
@@ -641,6 +649,7 @@
 			dependencies: ["06EC98F6E6AFC2AF"]
 			id: "0DF30CDA8DE68E0C"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "6D4BC401FE89651A"
 				title: "drag wafer"
@@ -747,6 +756,7 @@
 			]
 			id: "38C2E3061C764F05"
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "6DFBCDC0322DDA77"
 				title: "Aux2"
@@ -836,6 +846,17 @@
 			}]
 			x: 6.0d
 			y: 6.0d
+		}
+		{
+			id: "51FAA26B6A537091"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "19E2EB40AB845664"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 1.25d
 		}
 	]
 	title: "Draconic Empires"

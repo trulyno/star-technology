@@ -12,12 +12,12 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .material('metal');
 
-    event.create('magmadamantite_coil_block', 'gtceu:coil')
+    event.create('magmada_alloy_coil_block', 'gtceu:coil')
         .temperature(16199)
         .level(32)
         .energyDiscount(16)
         .tier(9)
-        .coilMaterial(() => GTMaterials.get('magmadamantite'))
+        .coilMaterial(() => GTMaterials.get('magmada_alloy'))
         .hardness(5)
         .soundType('metal')
         .requiresTool(true)

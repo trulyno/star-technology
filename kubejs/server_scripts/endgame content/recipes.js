@@ -177,8 +177,8 @@ ServerEvents.recipes(event => {
         'ZCZ',
         'NZN'
     ], {
-        N: 'gtceu:small_mythrylimyn_gear',
-        Z: 'gtceu:estalritium_gear',
+        N: 'gtceu:small_mythrolic_alloy_gear',
+        Z: 'gtceu:starium_alloy_gear',
         C: 'gtceu:uev_machine_hull'
 });
 
