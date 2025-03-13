@@ -23,17 +23,17 @@ global.primitive_ui = (settings) => {
 			));
 
 			inputs.forEach(input => {
-				const { type, index, pos } = input;
+				const { type, index, pos, texture } = input;
 
-				if (type == 'item') template.addWidget(new GTSlotWidget(machine.importItems.storage, index, pos[0], pos[1], true, true).setBackground(GuiTextures.PRIMITIVE_SLOT));
-				if (type == 'fluid') template.addWidget(new GTTankWidget(machine.importFluids.storages[index], pos[0], pos[1], true, true).setBackground(GuiTextures.PRIMITIVE_LARGE_FLUID_TANK));
+				if (type == 'item') template.addWidget(new GTSlotWidget(machine.importItems.storage, index, pos[0], pos[1], true, true).setBackground(texture));
+				if (type == 'fluid') template.addWidget(new GTTankWidget(machine.importFluids.storages[index], pos[0], pos[1], true, true).setBackground(texture));
 			})
 
 			outputs.forEach(output => {
-				const { type, index, pos } = output;
+				const { type, index, pos, texture } = output;
 
-				if (type == 'item') template.addWidget(new GTSlotWidget(machine.exportItems.storage, index, pos[0], pos[1], true, false).setBackground(GuiTextures.PRIMITIVE_SLOT));
-				if (type == 'fluid') template.addWidget(new GTTankWidget(machine.exportFluids.storages[index], pos[0], pos[1], false, true).setBackground(GuiTextures.PRIMITIVE_LARGE_FLUID_TANK));
+				if (type == 'item') template.addWidget(new GTSlotWidget(machine.exportItems.storage, index, pos[0], pos[1], true, false).setBackground(texture));
+				if (type == 'fluid') template.addWidget(new GTTankWidget(machine.exportFluids.storages[index], pos[0], pos[1], false, true).setBackground(texture));
 			})
 		}
 	)
