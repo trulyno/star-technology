@@ -1,42 +1,72 @@
 // priority: 1000
 
+const EditableMachineUI = Java.loadClass('com.gregtechceu.gtceu.api.gui.editor.EditableMachineUI')
 const GTSlotWidget = Java.loadClass('com.gregtechceu.gtceu.api.gui.widget.SlotWidget')
 const GTTankWidget = Java.loadClass('com.gregtechceu.gtceu.api.gui.widget.TankWidget')
 
-global.primitiveSlotFunction = (template, machine) => {
-    return (io, slot, x, y) => {
-    const ioChoice = (io === 'in') ? machine.importItems.storage : machine.exportItems.storage;
-    const canput = (io === 'in') ? true : false ;
-    template.addWidget(new GTSlotWidget(ioChoice, slot, x, y, true, canput).setBackground(GuiTextures.PRIMITIVE_SLOT));
-    }
-}
-  /*FOR PRIMITIVE ITEM WIDGET
-    itemWidget = global.primitiveSlotFunction = (template, machine)
-    itemWidget('in', 0, 52, 47);
-    itemWidget('out', 0, 104, 38);
-    itemWidget('in/out', <index>, posX, posY);
-  */
-  
-global.finalizePrimitiveMulti = (template, machine) => {
-    return (x, y, w, h) => {
-      template.addWidget(new ProgressWidget(() => machine.getRecipeLogic().getProgressPercent(), x, y, w, h, GuiTextures.PRIMITIVE_BLAST_FURNACE_PROGRESS_BAR));
-    }
-}
-  /*FOR PRIMITIVE PROGRESS WIDGET
-    const progressbar = global.finalizePrimitiveMulti(template, machine);
-    progressbar(77, 38, 20, 18);
-    progressbar(posX, posY, Width, Height);
-  */
+global.primitive_ui = (settings) => {
+	const { name, size, progress, inputs, outputs } = settings;
 
-global.primitiveTankFunction = (template, machine) => {
-    return (io, tank, x, y) => {
-    const ioChoice = (io === 'in') ? machine.importFluids.getStorages()[tank] : machine.exportFluids.getStorages()[tank];
-    const canput = (io === 'in') ? true : false ;
-    template.addWidget(new GTTankWidget(ioChoice, x, y, canput, true).setBackground(GuiTextures.PRIMITIVE_LARGE_FLUID_TANK));
-    }
+	return new EditableMachineUI(
+		'primitive',
+		'gtceu:' + name,
+		() => new WidgetGroup(),
+		(template, machine) => {
+			template.setSize(size[0], size[1]);
+			template.setBackground(GuiTextures.PRIMITIVE_BACKGROUND);
+
+			template.addWidget(new ProgressWidget(
+				() => machine.getRecipeLogic().getProgressPercent(),
+				progress.pos[0], progress.pos[1],
+				progress.size[0], progress.size[1],
+				progress.texture
+			));
+
+			inputs.forEach(input => {
+				const { type, index, pos } = input;
+
+				if (type == 'item') template.addWidget(new GTSlotWidget(machine.importItems.storage, index, pos[0], pos[1], true, true).setBackground(GuiTextures.PRIMITIVE_SLOT));
+				if (type == 'fluid') template.addWidget(new GTTankWidget(machine.importFluids.storages[index], pos[0], pos[1], true, true).setBackground(GuiTextures.PRIMITIVE_LARGE_FLUID_TANK));
+			})
+
+			outputs.forEach(output => {
+				const { type, index, pos } = output;
+
+				if (type == 'item') template.addWidget(new GTSlotWidget(machine.exportItems.storage, index, pos[0], pos[1], true, false).setBackground(GuiTextures.PRIMITIVE_SLOT));
+				if (type == 'fluid') template.addWidget(new GTTankWidget(machine.exportFluids.storages[index], pos[0], pos[1], false, true).setBackground(GuiTextures.PRIMITIVE_LARGE_FLUID_TANK));
+			})
+		}
+	)
 }
-  /*FOR PRIMITIVE TANK WIDGET
-    const tankWidget = global.primitiveTankFunction(template, machine);
-    tankWidget('in', 0, 34, 47);
-    tankWidget('in/out', <index>, posX, posY);
-  */
+
+// Example Usage:
+
+// GTCEuStartupEvents.registry('gtceu:machine', event => {
+// 	event.create('primitive_ore_factory', 'primitive')
+// 		.rotationState(RotationState.NON_Y_AXIS)
+// 		...
+// 		.editableUI(
+// =============================================================================
+// 			global.primitive_ui({
+// 				name: 'primitive_ore_factory',
+// 				size: [166, 100],
+// 				progress: {
+// 					pos: [77, 38],
+// 					size: [20, 18],
+// 					texture: GuiTextures.PRIMITIVE_BLAST_FURNACE_PROGRESS_BAR
+// 				},
+// 				inputs: [
+// 					{ type: 'item', index: 0, pos: [34, 29] },
+// 					{ type: 'item', index: 1, pos: [52, 29] },
+// 					{ type: 'fluid', index: 0, pos: [34, 47] },
+// 				],
+// 				outputs: [
+// 					{ type: 'item', index: 0, pos: [104, 29] },
+// 					{ type: 'item', index: 1, pos: [122, 29] },
+// 					{ type: 'item', index: 2, pos: [122, 47] },
+// 					{ type: 'item', index: 3, pos: [104, 47] },
+// 				],
+// 			})
+// =============================================================================
+// 		);
+// });
