@@ -23,8 +23,7 @@ const oreProcessableTiers = {
         { material: 'gold', secondary: 'silver', tertiary: 'copper', quaternary: 'nickel' },
         { material: 'bornite', secondary: 'gold', tertiary: 'pyrite', quaternary: 'cobalt' },
         { material: 'pentlandite', secondary: 'cobalt', tertiary: 'iron', quaternary: 'sulfur' },
-        { material: 'rock_salt', secondary: 'salt', tertiary: 'salt', quaternary: 'borax' },
-        { material: 'salt', secondary: 'rock_salt', tertiary: 'rock_salt', quaternary: 'borax' }
+        { material: 'rock_salt', secondary: 'salt', tertiary: 'salt', quaternary: 'borax' }
     ],
 
     'mv': [
@@ -52,8 +51,7 @@ const oreProcessableTiers = {
         { material: 'cooperite', secondary: 'palladium', tertiary: 'nickel', quaternary: 'nickel' },
         { material: 'bastnasite', secondary: 'neodymium', tertiary: 'neodymium', quaternary: 'rare_earth' },
         { material: 'tungstate', secondary: 'silver', tertiary: 'manganese', quaternary: 'lithium' },
-        { material: 'scheelite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'molybdenum' },
-        { material: 'zeolite', secondary: 'calcium', tertiary: 'aluminium', quaternary: 'silicon' },
+        { material: 'scheelite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'molybdenum' }
     ],
 
     'iv': [
