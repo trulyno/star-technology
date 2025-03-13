@@ -33,7 +33,7 @@ ServerEvents.tags('item', event => {
 });
 
 ServerEvents.tags('item', event=>{
-    const materials = [
+    const thermal = [
         /thermal:signalum.*/,
         /thermal:lumium.*/,
         /thermal:enderium.*/,
@@ -58,7 +58,7 @@ ServerEvents.tags('item', event=>{
         /thermal:sulfur.*/,
         /thermal:ender_pearl.*/
     ]
-    const dust = [
+    const thermal_extra = [
         'thermal_extra:obsidian_dust',
         'thermal_extra:amethyst_dust',
         'thermal_extra:soul_infused_dust',
@@ -66,49 +66,36 @@ ServerEvents.tags('item', event=>{
         'thermal_extra:twinite_dust',
         'thermal_extra:dragonsteel_dust',
         'thermal_extra:zinc_dust',
-        'thermal:sawdust'
-    ]
-    const nuggets = [
-        /thermal_extra:.*_nugget/
-    ]
-    const ingots = [
-        /thermal_extra:.*_ingot/
-    ]
-    const blocks = [
-        /thermal_extra:.*_block/
-    ]
-    const plates = [
-        /thermal_extra:.*_plate/
-    ]
-    const rods = [
-        /thermal_extra:.*_rod/
-    ]
-    const gear = [
+        'thermal:sawdust',
+        /thermal_extra:.*_nugget/,
+        /thermal_extra:.*_ingot/,
+        /thermal_extra:.*_block/,
+        /thermal_extra:.*_plate/,
+        /thermal_extra:.*_rod/,
         /thermal_extra:.*_gear/
     ]
+    const Exnihilo = [
+        /exnihilosequentia:.*_ingot/,
+        /exnihilosequentia:.*_nugget/
+    ]
+    const Create = [
+        /create:zinc_.*/,
+        /create:copper.*/,
+        /create:iron.*/,
+        /create:brass.*/,
+        'create:powdered_obsidian'
+    ]
 
-    materials.forEach((item)=> {
+    thermal.forEach((item)=> {
         event.removeAllTagsFrom(`${item}`)
     });
-    dust.forEach((item)=> {
+    thermal_extra.forEach((item)=> {
         event.removeAllTagsFrom(`${item}`)
     });
-    nuggets.forEach((item)=>{
+    Exnihilo.forEach((item)=> {
         event.removeAllTagsFrom(`${item}`)
     });
-    ingots.forEach((item)=>{
-        event.removeAllTagsFrom(`${item}`)
-    });
-    blocks.forEach((item)=>{
-        event.removeAllTagsFrom(`${item}`)
-    });
-    plates.forEach((item)=>{
-        event.removeAllTagsFrom(`${item}`)
-    });
-    rods.forEach((item)=>{
-        event.removeAllTagsFrom(`${item}`)
-    });
-    gear.forEach((item)=>{
+    Create.forEach((item)=> {
         event.removeAllTagsFrom(`${item}`)
     });
 });
