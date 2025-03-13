@@ -1279,7 +1279,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
         // //Magmas
         event.create('highly_unstable_nether_magma')
-            .fluid()
+            .fluid(/*new GTFluidBuilder(this.temperature(9001))*/)
             .components('1x mystery')
             .color(0xFFA025)
             .flags(no_decomp);

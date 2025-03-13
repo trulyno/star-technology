@@ -516,5 +516,16 @@
     "material.gtceu.mystical_nether_magma": "§o§dMystical§r §4Nether§r Magma",
     "material.gtceu.enriched_mystical_concentrate": "Enriched §o§dMystical§r Concentrate",
 
-    "material.gtceu.magmada_alloy": "Magmada Alloy"
+    "material.gtceu.magmada_alloy": "Magmada Alloy",
+    "material.gtceu.mythrolic_alloy": "Mythrolic Alloy",
+    "material.gtceu.starium_alloy": "Starium Alloy",
+    "material.gtceu.seaborgium_palladium_enriched_estalt_flevorium_alloy": "Seaborgium Palladium Enriched Estalt Flevorium Alloy",
+    "material.gtceu.astatium_bioselex_carbonite": "Astatium Bioselex Carbonite",
+    "material.gtceu.astatine_bis_tritelluride_cobo_selenium_over_iron_titanium_oxide": "Astatine Bis-Tritelluride Cobo-Selenium Over Iron Titanium Oxide",
+    "material.gtceu.brackish_water": "Brackish Water",
+    "material.gtceu.nether_star_concentrate": "Nether Star Concentrate",
+    "material.gtceu.bec_og": "Bose-Einstein Condensate : Oganesson Based",
+    "material.gtceu.superstate_helium_3": "Superstate Helium 3",
+    "material.gtceu.astatine_bis_tritelluride_cobo_selenium": "Astatine Bis-Tritelluride Cobo-Selenium",
+    "material.gtceu.iron_titanium_oxide": "Iron Titanium Oxide"
 }

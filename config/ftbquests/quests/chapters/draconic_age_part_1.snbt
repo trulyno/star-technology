@@ -704,6 +704,7 @@
 		}
 		{
 			dependencies: ["09B55AFE7C06EC82"]
+			icon: "mysticalagriculture:dragon_egg_essence"
 			id: "72A79F7AE189FD12"
 			tasks: [{
 				id: "0906D1053893328C"
@@ -767,6 +768,7 @@
 		}
 		{
 			dependencies: ["72A79F7AE189FD12"]
+			icon: "minecraft:dragon_breath"
 			id: "3AE729D3F47E9A2B"
 			subtitle: "No linger stinky"
 			tasks: [{
@@ -816,6 +818,7 @@
 		{
 			dependencies: ["41B4DE81AFC054B9"]
 			description: ["Is this what the milkies are used for?"]
+			icon: "minecraft:dragon_egg"
 			id: "17BDBDAE35BD49ED"
 			tasks: [{
 				id: "1F13D3464D748364"
