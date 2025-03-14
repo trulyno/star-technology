@@ -56,15 +56,15 @@ global.primitive_ui = (settings) => {
 // 					texture: GuiTextures.PRIMITIVE_BLAST_FURNACE_PROGRESS_BAR
 // 				},
 // 				inputs: [
-// 					{ type: 'item', index: 0, pos: [34, 29] },
-// 					{ type: 'item', index: 1, pos: [52, 29] },
-// 					{ type: 'fluid', index: 0, pos: [34, 47] },
+// 					{ type: 'item', index: 0, pos: [34, 29], texture: GuiTextures.PRIMITIVE_SLOT },
+// 					{ type: 'item', index: 1, pos: [52, 29], texture: GuiTextures.PRIMITIVE_SLOT },
+// 					{ type: 'fluid', index: 0, pos: [34, 47], texture: GuiTextures.PRIMITIVE_SLOT },
 // 				],
 // 				outputs: [
-// 					{ type: 'item', index: 0, pos: [104, 29] },
-// 					{ type: 'item', index: 1, pos: [122, 29] },
-// 					{ type: 'item', index: 2, pos: [122, 47] },
-// 					{ type: 'item', index: 3, pos: [104, 47] },
+// 					{ type: 'item', index: 0, pos: [104, 29], texture: GuiTextures.PRIMITIVE_SLOT },
+// 					{ type: 'item', index: 1, pos: [122, 29], texture: GuiTextures.PRIMITIVE_SLOT },
+// 					{ type: 'item', index: 2, pos: [122, 47], texture: GuiTextures.PRIMITIVE_SLOT },
+// 					{ type: 'item', index: 3, pos: [104, 47], texture: GuiTextures.PRIMITIVE_SLOT },
 // 				],
 // 			})
 // =============================================================================
