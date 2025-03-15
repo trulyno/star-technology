@@ -4,16 +4,16 @@ const EditableMachineUI = Java.loadClass('com.gregtechceu.gtceu.api.gui.editor.E
 const GTSlotWidget = Java.loadClass('com.gregtechceu.gtceu.api.gui.widget.SlotWidget')
 const GTTankWidget = Java.loadClass('com.gregtechceu.gtceu.api.gui.widget.TankWidget')
 
-global.primitive_ui = (settings) => {
-	const { name, size, progress, inputs, outputs } = settings;
+global.ui_builder = (settings) => {
+	const { group, name, size, background, progress, inputs, outputs } = settings;
 
 	return new EditableMachineUI(
-		'primitive',
+		group,
 		'gtceu:' + name,
 		() => new WidgetGroup(),
 		(template, machine) => {
 			template.setSize(size[0], size[1]);
-			template.setBackground(GuiTextures.PRIMITIVE_BACKGROUND);
+			template.setBackground(background);
 
 			template.addWidget(new ProgressWidget(
 				() => machine.getRecipeLogic().getProgressPercent(),
@@ -47,9 +47,11 @@ global.primitive_ui = (settings) => {
 // 		...
 // 		.editableUI(
 // =============================================================================
-// 			global.primitive_ui({
+// 			global.ui_builder({
+// 				group: 'primitive',
 // 				name: 'primitive_ore_factory',
 // 				size: [166, 100],
+// 				background: GuiTextures.PRIMITIVE_BACKGROUND,
 // 				progress: {
 // 					pos: [77, 38],
 // 					size: [20, 18],
