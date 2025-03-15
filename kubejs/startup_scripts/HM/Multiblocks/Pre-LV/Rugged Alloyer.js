@@ -21,23 +21,23 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 		.editableUI(
 			global.ui_builder({
 				group: 'primitive',
-				name: 'primitive_ore_factory',
-				size: [166, 100],
-				background: GuiTextures.PRIMITIVE_BACKGROUND,
+				name: 'rugged_alloyer',
+				size: [166, 50],
+				background: GuiTextures.BACKGROUND,
 				progress: {
-					pos: [77, 38],
-					size: [20, 18],
-					texture: GuiTextures.PRIMITIVE_BLAST_FURNACE_PROGRESS_BAR
-				},
-				inputs: [
-					{ type: 'item', index: 0, pos: [34, 29], texture: GuiTextures.PRIMITIVE_SLOT },
-					{ type: 'item', index: 1, pos: [52, 29], texture: GuiTextures.PRIMITIVE_SLOT },
-					{ type: 'item', index: 2, pos: [70, 29], texture: GuiTextures.PRIMITIVE_SLOT },
-				],
-				outputs: [
-					{ type: 'item', index: 0, pos: [104, 29], texture: GuiTextures.PRIMITIVE_SLOT },
-					{ type: 'item', index: 1, pos: [122, 29], texture: GuiTextures.PRIMITIVE_SLOT },
-				],
+                    pos: [82, 16],
+                    size: [20, 18],
+                    texture: GuiTextures.PROGRESS_BAR_ARROW
+                },
+                inputs: [
+                    { type: 'item', index: 0, pos: [16, 16], texture: GuiTextures.SLOT },
+                    { type: 'item', index: 1, pos: [34, 16], texture: GuiTextures.SLOT },
+                    { type: 'item', index: 2, pos: [52, 16], texture: GuiTextures.SLOT },
+                ],
+                outputs: [
+                    { type: 'item', index: 0, pos: [112, 16], texture: GuiTextures.SLOT },
+                    { type: 'item', index: 1, pos: [130, 16], texture: GuiTextures.SLOT }
+                ],
 			})
 		)
 });

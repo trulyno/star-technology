@@ -21,7 +21,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.build())
 		.workableCasingRenderer("minecraft:block/mud_bricks", "gtceu:block/multiblock/primitive_blast_furnace", false)
 		.editableUI(
-			global.ui_helper({
+			global.ui_builder({
 				group: 'primitive',
 				name: 'kiln',
 				size: [166, 100],
