@@ -1002,7 +1002,7 @@
 			}]
 			tasks: [{
 				id: "1485C10F20D2BD6F"
-				item: "gtceu:tree_greenhouse"
+				item: "gtceu:greenhouse"
 				type: "item"
 			}]
 			x: 8.5d
