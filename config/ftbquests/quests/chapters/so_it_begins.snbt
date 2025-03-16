@@ -45,8 +45,13 @@
 			icon: "minecraft:dead_bush"
 			id: "66B461268D304ADD"
 			tasks: [{
-				id: "2D04613D8D9671E5"
-				type: "checkmark"
+				icon: "minecraft:dead_bush"
+				id: "05F5E994A6AADB5D"
+				observe_type: 0
+				timer: 0L
+				title: "Dead Bush"
+				to_observe: "minecraft:dead_bush"
+				type: "observation"
 			}]
 			title: "Dead Bush"
 			x: -8.5d
@@ -165,9 +170,13 @@
 			dependencies: ["01DB711C1AC26A98"]
 			id: "218CF08B9647CA00"
 			tasks: [{
-				id: "3628C432D4CCE22C"
-				item: "exnihilosequentia:jungle_crucible"
-				type: "item"
+				icon: "exnihilosequentia:jungle_crucible"
+				id: "37FEC0B36EF9928F"
+				observe_type: 0
+				timer: 0L
+				title: "Jungle Crucible"
+				to_observe: "exnihilosequentia:jungle_crucible"
+				type: "observation"
 			}]
 			title: "Man's First Hydration"
 			x: 0.5d
@@ -317,9 +326,13 @@
 			]
 			id: "13F8BDB87F975319"
 			tasks: [{
-				id: "5BBCE8956383BBB0"
-				item: "minecraft:crafting_table"
-				type: "item"
+				icon: "minecraft:crafting_table"
+				id: "70E29549D5B3A31D"
+				observe_type: 0
+				timer: 0L
+				title: "Crafting Table"
+				to_observe: "minecraft:crafting_table"
+				type: "observation"
 			}]
 			x: -2.5d
 			y: 3.0d
