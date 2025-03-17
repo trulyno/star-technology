@@ -784,6 +784,7 @@
 		}
 		{
 			dependencies: ["67ABB3BF6D0C183B"]
+			description: ["Your first fusion product. Passiving this isn't a bad idea, as it will be the only thing you will really use your Mk I Fusion Reactor for."]
 			id: "084F23122E4CA277"
 			rewards: [{
 				id: "71877D22B63F1155"
@@ -801,6 +802,7 @@
 		}
 		{
 			dependencies: ["5ECF1A3EBB3F1BE5"]
+			description: ["A SoC that makes crystal circuits cheaper."]
 			id: "5C96AA366006C8DD"
 			rewards: [{
 				id: "31391AC3FE1CAB67"
@@ -818,6 +820,7 @@
 		}
 		{
 			dependencies: ["5935F9CB5E1C099B"]
+			description: ["A crystal processor, using crystals to transmit data with light rays."]
 			id: "5ECF1A3EBB3F1BE5"
 			rewards: [{
 				id: "0E9B5CC93F36F861"
@@ -835,6 +838,7 @@
 		}
 		{
 			dependencies: ["5E3F7C06E05628F6"]
+			description: ["A more refined Crystal Chip, ready to be used for computing."]
 			id: "5935F9CB5E1C099B"
 			rewards: [{
 				id: "6B7BA58D02D86240"
@@ -855,6 +859,7 @@
 				"084F23122E4CA277"
 				"55D75F03238F3A14"
 			]
+			description: ["A raw crystal etched in Europium to be used as a base for crystalline circuits."]
 			id: "5E3F7C06E05628F6"
 			rewards: [{
 				id: "3C7496F1F445E54F"
@@ -894,6 +899,7 @@
 		}
 		{
 			dependencies: ["5E3F7C06E05628F6"]
+			description: ["This can be used for looping your crystal chips, so you don't need a ton of emeralds."]
 			id: "2A80DC12DB5E0594"
 			rewards: [{
 				id: "4163185EFC122F7A"
@@ -988,6 +994,7 @@
 		}
 		{
 			dependencies: ["61ABF5D51A3B9771"]
+			description: ["A stronger fiber based circuit board, made by layering multiple normal ones over eachother."]
 			id: "51C60C25C3C9C770"
 			rewards: [{
 				id: "70229204F25A9E96"
@@ -1890,6 +1897,7 @@
 				"04BFFBF024D019BD"
 				"0ED91DDCAC7562EE"
 			]
+			description: ["Used in fusion reactors to heat up atoms allowing them to fuse together."]
 			id: "7D492D6B39A22DDE"
 			tasks: [{
 				id: "05EFA3704F91A25E"
@@ -1962,6 +1970,7 @@
 		}
 		{
 			dependencies: ["3325914DB92AEF1B"]
+			description: ["&3UV&r superconductor, can hold 32 amps in a 1x cable."]
 			id: "56803575B2364F6A"
 			tasks: [{
 				id: "7DC8EBB02B5E2C9A"
