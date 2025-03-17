@@ -1571,15 +1571,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x silicon_carbide', '1x bismuth_tritelluride')
         .color(0x86C455);
 
-     // Large Multis
+//AND Line
 
-     event.create('birmabright')
-     .ingot()
-     .components('7x aluminium', '2x magnesium', '1x manganese')
-     .color(0xbfbfbf)
-     .flags(plates, frame, rod)
-     .iconSet(DULL)
-     .blastTemp(2200, 'low', VA('mv'), 2000);
+
+
+// Large Multis
+
+event.create('birmabright')
+    .ingot()
+    .components('7x aluminium', '2x magnesium', '1x manganese')
+    .color(0xbfbfbf)
+    .flags(plates, frame, rod)
+    .iconSet(DULL)
+    .blastTemp(2200, 'low', VA('mv'), 2000);
 
  event.create('duralumin')
      .ingot()
@@ -1806,7 +1810,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .fluid()
         .plasma()
-        .color(0x1EB979)
+        .color(0x30956C)
         .blastTemp(14999, 'highest', VA('uev'), 3600)
         .iconSet(SHINY)
         .fluidPipeProperties(120000, 6000, true,true,true,true)

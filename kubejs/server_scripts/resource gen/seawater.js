@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         .duration(80);
 
     event.recipes.gtceu.centrifuge('brackish_water')
-        .inputFluids('minecraft:brackish_water 4000')
+        .inputFluids('gtceu:brackish_water 4000')
         .outputFluids('exnihilosequentia:sea_water 2500')
         .outputFluids('minecraft:water 1500')
         .duration(120)
