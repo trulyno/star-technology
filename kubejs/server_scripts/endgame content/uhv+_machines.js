@@ -288,4 +288,28 @@ input.forEach(i=>{
         ['S','H'], 
         {S: `#forge:tools/screwdrivers`, H: `gtceu:uhv_input_bus`});
 
+    //Parallel Hatches
+    const ParaTier = [
+        {tier: 'uhv', tier1up: 'uev', cable: 'europium', pwr: 1, liquid: 'naquadria', chip: 'uepic'},
+        {tier: 'uev', tier1up: 'uiv', cable: 'cerium_tritelluride', pwr: 4, liquid: 'isovol', chip: 'uepic'},
+        {tier: 'uiv', tier1up: 'uxv', cable: 'cerium_tritelluride', pwr: 16, liquid: 'calamatium', chip: 'uipic'}];
+
+    ParaTier.forEach(t=>{
+        event.shaped(Item.of(`start_core:${t.tier}_parallel_hatch`),
+        ['SCE','CHC','BCB'], 
+        {S: `gtceu:${t.tier}_sensor`, E: `gtceu:${t.tier}_emitter`, C: `#gtceu:circuits/${t.tier1up}`, H: `gtceu:${t.tier}_machine_hull`, B: `gtceu:${t.cable}_double_cable`});
+    
+        event.recipes.gtceu.assembler(`${t.tier}_absolute_parallel_hatch`)
+            .itemInputs(
+                `start_core:${t.tier}_parallel_hatch`,
+                `4x gtceu:${t.tier}_sensor`, 
+                `4x gtceu:${t.tier}_emitter`,
+                `2x #gtceu:circuits/${t.tier1up}`,
+                `4x kubejs:${t.chip}_chip`)
+            .inputFluids(`gtceu:${t.liquid} 576`)
+            .itemOutputs(`start_core:${t.tier}_absolute_parallel_hatch`)
+            .duration(320)
+            .EUt(GTValues.VA[GTValues.UHV]*t.pwr)    
+    });
+
 });

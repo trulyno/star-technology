@@ -22,9 +22,9 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.fusion_reactor('magmatic_plasma')
         .inputFluids('gtceu:highly_unstable_nether_magma 2560', 'gtceu:iron_plasma 128')
         .outputFluids('gtceu:magmatic_plasma 64')
-        .duration(160)
+        .duration(132)
         .EUt(66666)
-        .fusionStartEU(640000000); //720M EU when core mode fix
+        .fusionStartEU(720000000); //720M EU when core mode fix
         
     event.recipes.gtceu.plasma_generator('magmatic_plasma')
         .inputFluids('gtceu:magmatic_plasma 1')

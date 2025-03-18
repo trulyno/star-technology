@@ -681,17 +681,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["5944C4DE27F98FF3"]
-			id: "486B6C0CA6DD1348"
-			tasks: [{
-				id: "169F70958C49C3B6"
-				title: "UEV Parallel Hatches"
-				type: "checkmark"
-			}]
-			x: 4.0d
-			y: -6.0d
-		}
-		{
 			dependencies: ["5E96ECB0768B5D80"]
 			id: "09B55AFE7C06EC82"
 			tasks: [{
@@ -764,7 +753,7 @@
 				type: "checkmark"
 			}]
 			x: 6.0d
-			y: -6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["72A79F7AE189FD12"]
@@ -776,7 +765,7 @@
 				title: "Purified Dragon's Breath"
 				type: "checkmark"
 			}]
-			x: 8.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -787,8 +776,8 @@
 				title: "UIPIC Chips"
 				type: "checkmark"
 			}]
-			x: 8.0d
-			y: -4.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -797,23 +786,23 @@
 			]
 			id: "1ED881AC9E6961A3"
 			tasks: [{
-				id: "59499974A3700126"
-				title: "Absolute UIV Para Hatch"
-				type: "checkmark"
+				id: "34B182CD5468F45A"
+				item: "start_core:uiv_absolute_parallel_hatch"
+				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
+			x: 5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["24E2CB89693EDEA3"]
 			id: "7FABD2E818B70D35"
 			tasks: [{
-				id: "3222C9164D94C32C"
-				title: "UIV Para Hatch"
-				type: "checkmark"
+				id: "1A9F5B4EAFB66C03"
+				item: "start_core:uiv_parallel_hatch"
+				type: "item"
 			}]
-			x: 6.0d
-			y: -4.0d
+			x: 5.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["41B4DE81AFC054B9"]
@@ -870,6 +859,25 @@
 				type: "checkmark"
 			}]
 			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5944C4DE27F98FF3"]
+			id: "7525302103768D45"
+			tasks: [
+				{
+					id: "128F90FB76A495C2"
+					item: "start_core:uev_parallel_hatch"
+					type: "item"
+				}
+				{
+					id: "5944C92937337165"
+					item: "start_core:uev_absolute_parallel_hatch"
+					type: "item"
+				}
+			]
+			title: "UEV Parallel Hatches"
+			x: 4.0d
 			y: -6.0d
 		}
 	]

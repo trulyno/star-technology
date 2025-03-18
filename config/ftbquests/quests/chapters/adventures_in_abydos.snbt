@@ -931,7 +931,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.5d
 			y: 2.0d
 		}
 		{
@@ -1103,8 +1103,8 @@
 				title: "Get Nether Coordinates"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: 0.0d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1761,19 +1761,19 @@
 				item: "kubejs:wetware_based_runic_neuroloom"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 2.5d
 			y: 2.0d
 		}
 		{
 			dependencies: [
-				"4F3EE28B3F38FC85"
 				"7AC55BA8BDD0F3D2"
+				"07F65BCDDA42248D"
 			]
 			id: "38FB8D5DB43D0DBD"
 			tasks: [{
-				id: "0EE1A5B3BEE712BE"
-				title: "UHV Absolute Parallel Hatch"
-				type: "checkmark"
+				id: "31FB1C4F97CF3F9F"
+				item: "start_core:uhv_absolute_parallel_hatch"
+				type: "item"
 			}]
 			x: -1.5d
 			y: 0.0d
@@ -1794,12 +1794,12 @@
 			dependencies: ["4F3EE28B3F38FC85"]
 			id: "07F65BCDDA42248D"
 			tasks: [{
-				id: "026B698E712FE1C5"
-				title: "UHV Parallel Hatch"
-				type: "checkmark"
+				id: "5F348F02B9AFE935"
+				item: "start_core:uhv_parallel_hatch"
+				type: "item"
 			}]
-			x: 2.5d
-			y: 2.0d
+			x: 0.5d
+			y: 0.0d
 		}
 	]
 	title: "Adventures in Abydos"

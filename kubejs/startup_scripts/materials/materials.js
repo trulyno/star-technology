@@ -1573,7 +1573,99 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 //AND Line
 
+event.create('sulfate')
+    .dust()
+    .color(0xD5BA23)
+    .components('1x sulfur', '4x oxygen');
 
+event.create('silicate')
+    .dust()
+    .color(0xC0BA97)
+    .components('1x silicon', '4x oxygen');
+
+event.create('pyrophosphate')
+    .dust()
+    .color(0xC08B63)
+    .components('2x phosphorus', '7x oxygen');
+
+event.create('sulfur_hexafluoride')
+    .dust()
+    .color(0xC0BA63)
+    .components('1x sulfur', '6x fluorine');
+
+event.create('plutonium_octofluoride')
+    .dust()
+    .color(0xAB3F3F)
+    .components('2x plutonium', '8x fluorine')
+    .flags(no_decomp);
+
+event.create('uranium_quadfluoride')
+    .dust()
+    .color(0x6CAB3F)
+    .components('1x uranium', '4x fluorine')
+    .flags(no_decomp);
+
+event.create('hafnium_thorium_iron_magnesium_disilicate_monosulfate')
+    .dust()
+    .color(0x98B4B0)
+    .components('1x hafnium', '1x thorium', '1x iron', '2x magnesium', '2x silicate', '1x sulfate')
+    .flags(no_decomp);
+
+event.create('seaborgium_cerium_tricarbon_tetrakis_orthosilicate')
+    .dust()
+    .color(0x268075)
+    .components('1x seaborgium', '1x cerium', '3x carbon', '4x silicate')
+    .iconSet(RADIOACTIVE)
+    .flags(no_decomp);
+
+event.create('iron_2_barium_diastatide_trisulfate')
+    .dust()
+    .color(0x9EB286)
+    .components('2x iron', '1x barium', '1x astatine', '3x sulfate')
+    .iconSet(RADIOACTIVE)
+    .flags(no_decomp);
+
+event.create('dipolonium_diplatinum_tris_pyrophosphate')
+    .dust()
+    .color(0xA0664D)
+    .components('2x polonium', '2x platinum', '3x pyrophosphate')
+    .iconSet(RADIOACTIVE)
+    .flags(no_decomp);
+
+event.create('flerovium_hexaoxide_octafluorosulfatoplutonate')
+    .dust()
+    .color(0x582914)
+    .components('1x flerovium', '6x oxygen', '2x sulfur_hexafluoride', '2x plutonium_octofluoride')
+    .iconSet(RADIOACTIVE)
+    .flags(no_decomp);
+
+event.create('caesium_oganesson_hexanitrate_tetrafluorouranate')
+    .liquid()
+    .color(0x427A21)
+    .components('2x caesium', '1x oganesson', '6x nitrate', '2x uranium_quadfluoride')
+    .iconSet(RADIOACTIVE)
+    .flags(no_decomp);
+
+event.create('hafnium_thorium_iron_magnesium_disilicate_monosulfate_bonded_iron_2_barium_diastatide_trisulfate')
+    .dust()
+    .color(0x6A8B9A)
+    .components('1x hafnium_thorium_iron_magnesium_disilicate_monosulfate', '1x iron_2_barium_diastatide_trisulfate')
+    .iconSet(RADIOACTIVE)
+    .flags(no_decomp);
+
+event.create('seaborgium_cerium_tricarbon_tetrakis_orthosilicate_linked_dipolonium_diplatinum_tris_pyrophosphate')
+    .dust()
+    .color(0x526A48)
+    .components('1x seaborgium_cerium_tricarbon_tetrakis_orthosilicate', '1x dipolonium_diplatinum_tris_pyrophosphate')
+    .iconSet(RADIOACTIVE)
+    .flags(no_decomp);
+
+event.create('flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth')
+    .dust()
+    .color(0x6A4852)
+    .components('1x flerovium_hexaoxide_octafluorosulfatoplutonate', '6x mystery')
+    .iconSet(RADIOACTIVE)
+    .flags(no_decomp);
 
 // Large Multis
 
@@ -1782,6 +1874,15 @@ event.create('birmabright')
         .fluid()
         .color(0xEEEEEE)
         .flags(no_decomp);
+
+    event.create('aurourium')
+        .components('1x mystery')
+        .ingot()
+        .fluid()
+        .color(0x5D44DE)
+        .secondaryColor(0xDE44CE)
+        .iconSet(SHINY)
+        .flags(no_decomp, fine_wire, no_smelt);
         
     event.create('bec_og')
         .components('1x oganesson')
