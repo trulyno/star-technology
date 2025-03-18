@@ -520,7 +520,7 @@
 			id: "295442FA6CE0BA13"
 			tasks: [{
 				id: "1BA02FB83915A844"
-				item: "gtceu:atomic_nether_dust"
+				item: "gtceu:atomic_nether_sludge_dust"
 				type: "item"
 			}]
 			x: -8.0d

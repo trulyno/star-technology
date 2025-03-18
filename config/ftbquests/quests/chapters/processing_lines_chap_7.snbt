@@ -198,7 +198,7 @@
 			shape: "gear"
 			tasks: [{
 				id: "37E3017051E86333"
-				item: "gtceu:atomic_nether_dust"
+				item: "gtceu:atomic_nether_sludge_dust"
 				type: "item"
 			}]
 			x: -5.0d

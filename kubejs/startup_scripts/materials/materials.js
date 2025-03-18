@@ -1061,7 +1061,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             .blastTemp(12349, 'low', VA('uev'), 2400);
           
         //Atomic Nether Dust Line
-        event.create('atomic_nether')
+        event.create('atomic_nether_sludge')
             .dust()
             .components('1x mystery','1x mystery','1x mystery','1x mystery')
             .color(0x883039)
@@ -1599,7 +1599,7 @@ event.create('plutonium_octofluoride')
     .components('2x plutonium', '8x fluorine')
     .flags(no_decomp);
 
-event.create('uranium_quadfluoride')
+event.create('uranium_tetrafluoride')
     .dust()
     .color(0x6CAB3F)
     .components('1x uranium', '4x fluorine')
@@ -1642,7 +1642,7 @@ event.create('flerovium_hexaoxide_octafluorosulfatoplutonate')
 event.create('caesium_oganesson_hexanitrate_tetrafluorouranate')
     .liquid()
     .color(0x427A21)
-    .components('2x caesium', '1x oganesson', '6x nitrate', '2x uranium_quadfluoride')
+    .components('2x caesium', '1x oganesson', '6x nitrate', '2x uranium_tetrafluoride')
     .iconSet(RADIOACTIVE)
     .flags(no_decomp);
 
@@ -1927,7 +1927,7 @@ event.create('birmabright')
         .iconSet(SHINY)
         .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp);
 
-    event.create('seaborgium_palladium_enriched_estalt_flevorium_alloy')
+    event.create('seaborgium_palladium_enriched_estalt_flerovium_alloy')
         .ingot()
         .fluid()
         .plasma()

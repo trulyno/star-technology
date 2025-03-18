@@ -2,7 +2,7 @@
 ServerEvents.recipes(event => {
 
     const gas =['_gas','']
-    const material = ['mythrolic_alloy','magmada_alloy','starium_alloy','seaborgium_palladium_enriched_estalt_flevorium_alloy']
+    const material = ['mythrolic_alloy','magmada_alloy','starium_alloy','seaborgium_palladium_enriched_estalt_flerovium_alloy']
     gas.forEach(g=>{
     material.forEach(m=>{
         event.remove({id: `gtceu:alloy_blast_smelter/${m}${g}`});
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:utopian_akreyrium 8000')
         .outputFluids('gtceu:starium_alloy_plasma 1152')
 
-    event.recipes.gtceu.hellforge('seaborgium_palladium_enriched_estalt_flevorium_alloy')
+    event.recipes.gtceu.hellforge('seaborgium_palladium_enriched_estalt_flerovium_alloy')
         .inputFluids('gtceu:seaborgium 576')
         .inputFluids('gtceu:palladium 1152')
         .inputFluids('gtceu:enriched_estalt 432')
@@ -74,6 +74,6 @@ ServerEvents.recipes(event => {
         .inputFluids('')
         .inputFluids('gtceu:nickel_plasma 2448')
         .inputFluids('gtceu:utopian_akreyrium 17000')
-        .outputFluids('gtceu:seaborgium_palladium_enriched_estalt_flevorium_alloy_plasma 2448')
+        .outputFluids('gtceu:seaborgium_palladium_enriched_estalt_flerovium_alloy_plasma 2448')
 
     });

@@ -43,11 +43,11 @@ ServerEvents.recipes(event => {
 
     [{id:'64x gtceu:',type:'zirconium_dust'},{id:'3x gtceu:',type:'hafnium_dust'}].forEach(dust=>{
     ['mythrillic','adamantamite'].forEach(type=>{
-        event.recipes.gtceu.heat_chamber(`enriched_${type}_to_atomic_nether_dust_${dust.type}`)
+        event.recipes.gtceu.heat_chamber(`enriched_${type}_to_atomic_nether_sludge_dust_${dust.type}`)
             .inputFluids(`gtceu:enriched_${type}_mixture 4000`)
             .itemInputs(`${dust.id}${dust.type}`)
             .outputFluids(`gtceu:molten_${type}_mixture 4000`)
-            .itemOutputs('4x gtceu:atomic_nether_dust')
+            .itemOutputs('4x gtceu:atomic_nether_sludge_dust')
             .duration(1600)
             .EUt(GTValues.VHA[GTValues.UHV]); 
     });
