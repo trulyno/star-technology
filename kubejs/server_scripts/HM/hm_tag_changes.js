@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 ServerEvents.tags('block', event => {
 	['oak', 'birch', 'acacia', 'cherry', 'dark_oak', 'jungle', 'mangrove', 'spruce'].forEach(log => {
 		event.add('minecraft:needs_stone_tool', `minecraft:stripped_${log}_log`);
@@ -13,3 +16,5 @@ ServerEvents.tags('item', event => {
 	event.add('forge:tools/axes', /gtceu:.*axe/);
 	event.add('createlowheated:burner_starters', 'gtceu:matchbox');
 });
+
+};//if end

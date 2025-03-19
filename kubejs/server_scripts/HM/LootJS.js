@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 LootJS.modifiers((event) => {
    
     event
@@ -27,3 +30,5 @@ LootJS.modifiers((event) => {
         );
     });
 });
+
+};//if end

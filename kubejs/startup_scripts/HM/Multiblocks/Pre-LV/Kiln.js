@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 	event.create('kiln')
 		.category('kiln')
@@ -41,3 +44,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			})
 		);
 });
+
+};//if end

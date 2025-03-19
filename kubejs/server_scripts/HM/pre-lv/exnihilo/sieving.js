@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 ServerEvents.recipes(event => {
 
     const dirt = 'minecraft:dirt';
@@ -57,3 +60,5 @@ ServerEvents.recipes(event => {
     sieve('string', .1, dust, 'kubejs:raw_electrum_crushed_ore_chunk', false);
 
 });
+
+};//if end

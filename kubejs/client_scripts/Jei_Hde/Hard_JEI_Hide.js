@@ -1,4 +1,5 @@
-// packmode: Hard || hard
+const CommonProperties = Java.loadClass('dev.latvian.mods.kubejs.CommonProperties')
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
 
 JEIEvents.hideItems(event => {
     event.hide('gtceu:flint_hoe');
@@ -19,3 +20,13 @@ JEIEvents.hideItems(event => {
 // JEIEvents.hideFluids(event => {
        
 // });
+
+// }
+// else {
+
+// JEIEvents.hideItems(event => {
+//     event.hide('gtceu:kiln');
+//     event.hide('gtceu:rugged_alloyer');
+// });
+
+};

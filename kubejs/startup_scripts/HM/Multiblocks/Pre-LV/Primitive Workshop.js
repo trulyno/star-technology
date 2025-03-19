@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('primitive_workshop')
         .category('primitive_workshop')
@@ -24,3 +27,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 		.workableCasingRenderer("create:block/andesite_casing",
 			"gtceu:block/machines/extruder", false);
 });
+
+};//if end

@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 ServerEvents.recipes(event => {
 
     const toRemoveOutputHM = [
@@ -43,3 +46,4 @@ ServerEvents.recipes(event => {
     
 })
 
+};//if end

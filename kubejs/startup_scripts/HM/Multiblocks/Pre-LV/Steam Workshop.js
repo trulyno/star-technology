@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('steam_workshop')
         .category('steam_workshop')
@@ -27,3 +30,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 		.workableCasingRenderer("gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
 			"gtceu:block/machines/extruder", false);
 });
+
+};//if end

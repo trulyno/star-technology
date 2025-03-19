@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 // Coarse Dirt Scavenging
 
 BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
@@ -37,41 +40,35 @@ BlockEvents.placed(event => {
 
 // In-world crafting for Crucible and Crafting Table
 
-const crucible_stages = [
-	{ hit: 'minecraft:stripped_jungle_log', tool: 'forge:tools/knives', get: 'kubejs:crucible_stage_1' },
+	[{ hit: 'minecraft:stripped_jungle_log', tool: 'forge:tools/knives', get: 'kubejs:crucible_stage_1' },
 	{ hit: 'kubejs:crucible_stage_1', tool: 'forge:tools/axes', get: 'kubejs:crucible_stage_2' },
 	{ hit: 'kubejs:crucible_stage_2', tool: 'forge:tools/saws', get: 'kubejs:crucible_stage_3' },
 	{ hit: 'kubejs:crucible_stage_3', tool: 'forge:tools/knives', get: 'exnihilosequentia:jungle_crucible' },
-];
+	].forEach(crucible => {
+		const { hit, tool, get } = crucible;
 
-const table_stages = [
-	{ hit: 'minecraft:jungle_planks', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_1' },
+		BlockEvents.rightClicked(hit, event => {
+			if (!event.player.getMainHandItem().hasTag(tool)) return;
+			if (event.player.getOffHandItem() !== null) return;
+
+			event.block.set(get);
+			event.block.popItemFromFace(Item.of('gtceu:wood_dust'), 'up');
+		});
+	});
+
+	[{ hit: 'minecraft:jungle_planks', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_1' },
 	{ hit: 'kubejs:crafting_stage_1', tool: 'forge:tools/axes', get: 'kubejs:crafting_stage_2' },
 	{ hit: 'kubejs:crafting_stage_2', tool: 'forge:tools/knives', get: 'kubejs:crafting_stage_3' },
-];
+	].forEach(table => {
+		const { hit, tool, get } = table;
 
-crucible_stages.forEach(crucible => {
-	const { hit, tool, get } = crucible;
+		BlockEvents.rightClicked(hit, event => {
+			if (!event.player.getMainHandItem().hasTag(tool)) return;
+			if (event.player.getOffHandItem() !== null) return;
 
-	BlockEvents.rightClicked(hit, event => {
-		if (!event.player.getMainHandItem().hasTag(tool)) return;
-		if (event.player.getOffHandItem() !== null) return;
-
-		event.block.set(get);
-		event.block.popItemFromFace(Item.of('gtceu:wood_dust'), 'up');
+			event.block.set(get);
+		});
 	});
-});
-
-table_stages.forEach(table => {
-	const { hit, tool, get } = table;
-
-	BlockEvents.rightClicked(hit, event => {
-		if (!event.player.getMainHandItem().hasTag(tool)) return;
-		if (event.player.getOffHandItem() !== null) return;
-
-		event.block.set(get);
-	});
-});
 
 BlockEvents.rightClicked('kubejs:crafting_stage_3', event => {
 	const { block, item } = event;
@@ -168,3 +165,5 @@ BlockEvents.rightClicked('exnihilosequentia:jungle_crucible', event => {
 		player.setMainHandItem(Item.of('kubejs:water_bowl'));
 	}
 });
+
+};//if end

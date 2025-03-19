@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 ServerEvents.recipes(event => {
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 	// ~~~~~~~~~~~ PRE-COBBLEGEN ~~~~~~~~~~~ //
@@ -15,9 +18,9 @@ ServerEvents.recipes(event => {
 
 	materials.forEach(type => {
 		tools.forEach(tool => {
-			const { namespace, material } = type;
+			const { mod, material } = type;
 
-			event.remove({ output: `${namespace}:${material}_${tool}` });
+			event.remove({ output: `${mod}:${material}_${tool}` });
 		});
 	});
 
@@ -716,4 +719,6 @@ ServerEvents.recipes(event => {
 
 	// Post Cobble-Gen, Pre-Circuit
 
-})
+});
+
+};// if end

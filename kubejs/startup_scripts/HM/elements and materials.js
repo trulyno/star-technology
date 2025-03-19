@@ -1,4 +1,6 @@
 
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 materialRegistry(event => {
 
     event.create('raw_electrum')
@@ -32,3 +34,5 @@ materialRegistry(event => {
 
 
 });
+
+};//if end

@@ -1,4 +1,6 @@
 
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('primitive_mixer')
         .category('primitive_mixer')
@@ -18,3 +20,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .workableCasingRenderer('minecraft:block/cobblestone', 'gtceu:block/machines/mixer', false)
       )
 });
+
+};//if end
