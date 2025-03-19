@@ -41,17 +41,16 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
-    [{id:'64x gtceu:',type:'zirconium_dust'},{id:'3x gtceu:',type:'hafnium_dust'}].forEach(dust=>{
     ['mythrillic','adamantamite'].forEach(type=>{
-        event.recipes.gtceu.heat_chamber(`enriched_${type}_to_atomic_nether_sludge_dust_${dust.type}`)
+        event.recipes.gtceu.heat_chamber(`enriched_${type}_to_atomic_nether_sludge_dust_zirconium_dust`)
             .inputFluids(`gtceu:enriched_${type}_mixture 4000`)
-            .itemInputs(`${dust.id}${dust.type}`)
+            .itemInputs('64x gtceu:zirconium_dust')
             .outputFluids(`gtceu:molten_${type}_mixture 4000`)
             .itemOutputs('4x gtceu:atomic_nether_sludge_dust')
             .duration(1600)
             .EUt(GTValues.VHA[GTValues.UHV]); 
     });
-    });
+    
 
     event.recipes.gtceu.heat_chamber(`enriched_estaltadyne_mixture_to_solution`)
         .inputFluids(`gtceu:enriched_estaltadyne_mixture 4000`)

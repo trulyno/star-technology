@@ -501,7 +501,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -529,7 +529,7 @@
 			]
 			title: "Better Akreyrium Processing"
 			x: -3.5d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -931,7 +931,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: -3.5d
 			y: 2.0d
 		}
 		{
@@ -948,7 +948,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3540AE6C940F985B"]
@@ -967,7 +967,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1057,7 +1057,7 @@
 				item: "kubejs:ancient_chevron_disk"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 8.5d
 			y: -4.0d
 		}
 		{
@@ -1103,8 +1103,8 @@
 				title: "Get Nether Coordinates"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: -1.5d
+			x: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1123,7 +1123,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -1176,8 +1176,8 @@
 				title: "Get End Coordinates"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: -4.0d
+			x: 1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1360,7 +1360,7 @@
 				type: "checkmark"
 			}]
 			x: -5.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1418,7 +1418,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1495,7 +1495,7 @@
 			]
 			title: "UEPIC Chips"
 			x: -3.5d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2C354B0735DF8023"]
@@ -1636,7 +1636,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
+			x: 8.5d
 			y: -2.0d
 		}
 		{
@@ -1687,7 +1687,7 @@
 				type: "item"
 			}]
 			title: "Better Research Heat Sink"
-			x: -3.5d
+			x: -1.5d
 			y: -4.0d
 		}
 		{
@@ -1761,7 +1761,7 @@
 				item: "kubejs:wetware_based_runic_neuroloom"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 0.5d
 			y: 2.0d
 		}
 		{

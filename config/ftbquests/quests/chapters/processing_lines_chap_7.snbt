@@ -194,6 +194,7 @@
 				"59546454CFFA57C6"
 				"2628EC73C90B970F"
 			]
+			hide_dependent_lines: true
 			id: "3FF8846DDD34469D"
 			shape: "gear"
 			tasks: [{
@@ -1535,6 +1536,62 @@
 			}]
 			x: 15.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["3FF8846DDD34469D"]
+			id: "24288AB05FC9DB33"
+			shape: "circle"
+			tasks: [{
+				id: "11E46FF3B73EBE0C"
+				item: "gtceu:atomic_nether_sludge_dust"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["24288AB05FC9DB33"]
+			id: "4E06642A3E4E4752"
+			tasks: [{
+				id: "03F82514275F5603"
+				item: "gtceu:hafnium_thorium_iron_magnesium_disilicate_monosulfate_bonded_iron_2_barium_diastatide_trisulfate_dust"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["24288AB05FC9DB33"]
+			id: "305434660DA7E51D"
+			tasks: [{
+				id: "5FE900DF655AF0F5"
+				item: "gtceu:seaborgium_cerium_tricarbon_tetrakis_orthosilicate_linked_dipolonium_diplatinum_tris_pyrophosphate_dust"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 7.75d
+		}
+		{
+			dependencies: ["24288AB05FC9DB33"]
+			id: "249B5146C5470ACB"
+			tasks: [{
+				id: "7E922C13210DFF68"
+				item: "gtceu:flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth_dust"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 9.25d
+		}
+		{
+			dependencies: ["24288AB05FC9DB33"]
+			id: "7762F2BCE23AF74B"
+			tasks: [{
+				id: "0F9F69E7C34F2BBC"
+				item: "gtceu:caesium_oganesson_hexanitrate_tetrafluorouranate_bucket"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 10.5d
 		}
 	]
 	title: "Processing Lines (Chap 7..)"

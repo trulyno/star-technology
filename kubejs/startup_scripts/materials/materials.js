@@ -1571,7 +1571,45 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x silicon_carbide', '1x bismuth_tritelluride')
         .color(0x86C455);
 
-//AND Line
+//Hexafluorobromine Acid
+
+    event.create('nickel_fluoride')
+        .dust()
+        .components('1x nickel', '2x fluorine')
+        .color(0xA7A9A8)
+        .iconSet(METALLIC);
+
+    event.create('caesium_fluoride')
+        .dust()
+        .components('1x caesium', '1x fluorine')
+        .color(0x969D9B)
+        .iconSet(DULL);
+
+    event.create('bromine_pentafluoride')
+        .fluid()
+        .components('1x bromine', '5x fluorine')
+        .color(0x8E6565);
+     
+    event.create('hexafluorobromine')
+        .fluid()
+        .components('1x bromine', '6x fluorine')
+        .color(0x000000)
+        .flags(no_decomp);
+
+    event.create('caesium_hexafluorobromine')
+        .fluid()
+        .components('1x caesium', '1x hexafluorobromine')
+        .color(0x988585)
+        .flags(no_decomp);
+
+    event.create('hexafluorobromic_acid')
+        .fluid()
+        .components('1x hydrogen', '1x hexafluorobromine')
+        .color(0xA15E5E)
+        .flags(no_decomp);
+
+
+//ANSD Line
 
 event.create('sulfate')
     .dust()
@@ -1621,7 +1659,7 @@ event.create('seaborgium_cerium_tricarbon_tetrakis_orthosilicate')
 event.create('iron_2_barium_diastatide_trisulfate')
     .dust()
     .color(0x9EB286)
-    .components('2x iron', '1x barium', '1x astatine', '3x sulfate')
+    .components('2x iron', '1x barium', '2x astatine', '3x sulfate')
     .iconSet(RADIOACTIVE)
     .flags(no_decomp);
 
