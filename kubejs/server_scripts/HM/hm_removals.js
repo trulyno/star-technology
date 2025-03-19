@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     //[^(?!^rubber$)] <- rubber sheet recipe is kjs and other rubbers is solidifier and bender only, wood is compressor for treated and crafting for regular
         /^gtceu:shaped.ring.*[^(?!^rubber$)]/,/^gtceu:shaped.stick.*[^(?!^.*_rubber_.*$)]/, 
     // poly rubbers and other rubbers are being wierd but you have solidifier by the time you get to pvc/ptfe so :3
-        /^gtceu:shaped.*wire_.*[^(?!^cutter$)]/, /^gtceu:shapeless.fine.*/, /^gtceu:shaped.screw_.*/, /^gtceu:shaped.*gear.*/, /^gtceu:shaped.bolt.*/, /^gtceu:shaped.rotor.*/, /^gtceu:shaped.spring.*/, /^gtceu:shaped.*pipe.*/, /^gtceu:shaped.foil.*/, /^gtceu:shapeless.*cable.*/, /^gtceu:shaped.buzzsaw.*/, /^gtceu:shaped.round.*/,
+        /^gtceu:shaped.*wire//*_.*[^(?!^cutter$)]*/, /^gtceu:shapeless.fine.*/, /^gtceu:shaped.screw_.*/, /^gtceu:shaped.*gear.*/, /^gtceu:shaped.bolt.*/, /^gtceu:shaped.rotor.*/, /^gtceu:shaped.spring.*/, /^gtceu:shaped.*pipe.*/, /^gtceu:shaped.foil.*/, /^gtceu:shapeless.*cable.*/, /^gtceu:shaped.buzzsaw.*/, /^gtceu:shaped.round.*/,
     //plates -> single and double, stick -> long and short rod, gear -> both small and normal, pipe -> exclusion of quad and non dont work, all pipes + constricting, cable-> just a sweep on all cable crafting table recipie
         'create:crafting/kinetics/shaft', /^create:crafting.*cogwheel.*/, 'create:crafting/kinetics/belt_connector',/^farmersdelight:.*knife/, 'minecraft:crafting_table'
     ];

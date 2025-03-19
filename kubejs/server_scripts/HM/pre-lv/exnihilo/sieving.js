@@ -36,17 +36,17 @@ ServerEvents.recipes(event => {
 
     sieve('string', 1, cdirt, dirt, false);
     sieve('string', .1, cdirt, dirt, false);
-    sieve('string', .7, cdirt, 'exnihilosequentia:stone_pebble', false);
-    sieve('string', .6, cdirt, 'exnihilosequentia:stone_pebble', false);
+    sieve('string', .95, cdirt, 'exnihilosequentia:stone_pebble', false);
+    sieve('string', .95, cdirt, 'exnihilosequentia:stone_pebble', false);
     sieve('string', .25, cdirt, 'minecraft:flint', false);
 
     ['andesite', 'basalt', 'blackstone', 'deepslate', 'diorite', 'granite', 'tuff'].forEach(pebble => {
-        sieve('string', .3, gravel, `exnihilosequentia:${pebble}_pebble`, false);
+        sieve('string', .45, gravel, `exnihilosequentia:${pebble}_pebble`, false);
     });
     sieve('string', .75, gravel, sand, false);
 
-    sieve('string', .4, sand, 'exnihilosequentia:calcite_pebble', false);
-    sieve('string', .4, sand, 'exnihilosequentia:dripstone_pebble', false);
+    sieve('string', .6, sand, 'exnihilosequentia:calcite_pebble', false);
+    sieve('string', .6, sand, 'exnihilosequentia:dripstone_pebble', false);
     sieve('string', .75, sand, dust, false);
 
     sieve('string', .5, cCalc, 'gtceu:calcite_dust', false);

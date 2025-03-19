@@ -104,6 +104,9 @@ ServerEvents.recipes(event => {
 		.itemOutputs('16x minecraft:coarse_dirt')
 		.duration(600);
 
+	event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '2x minecraft:flint']);
+
+
 	['andesite', 'basalt', 'blackstone', 'deepslate', 'diorite', 'granite', 'tuff', 'calcite', 'dripstone'].forEach(stone => {
 		event.shaped(Item.of(`exnihilosequentia:crushed_${stone}`), [
 			'PP',

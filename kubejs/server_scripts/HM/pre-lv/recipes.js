@@ -192,6 +192,11 @@ ServerEvents.recipes(event => {
 			.itemInputs('4x exnihilosequentia:andesite_pebble', '4x gtceu:zinc_nugget', `2x #minecraft:${coal.fuel}`)
 			.itemOutputs('2x create:andesite_alloy', 'gtceu:ash_dust')
 			.duration(600 * coal.burnMultiplier);
+		event.remove({ output: /^create:.*rose_quartz/});
+		event.recipes.gtceu.rugged_alloyer(`rose_quartz_${coal.fuel}`)
+			.itemInputs('12x minecraft:redstone', '1x gtceu:quartzite_gem', `2x #minecraft:${coal.fuel}`)
+			.itemOutputs('1x create:rose_quartz', 'gtceu:ash_dust')
+			.duration(600 * coal.burnMultiplier);
 	});
 
 	event.remove({ id: /^exnihilosequentia:ens_.*_sieve/ })
@@ -325,6 +330,15 @@ ServerEvents.recipes(event => {
 	]);
 
 	event.remove({ output: 'minecraft:stonecutter' })
+	event.shaped(Item.of('minecraft:stonecutter'), [
+		'PSP',
+		'TFT'
+	], {
+		T: 'minecraft:stone_slab',
+		P: 'gtceu:wood_plate',
+		S: 'gtceu:iron_buzz_saw_blade',
+		F: 'gtceu:wood_frame'
+	});
 
 	event.remove({ id: /^gtceu:mixer\/concrete.*/ })
 	event.recipes.gtceu.primitive_mixer('concrete')
@@ -671,6 +685,10 @@ ServerEvents.recipes(event => {
 		'#forge:tools/files', '#minecraft:planks', '#minecraft:planks'
 	]);
 
+	event.shapeless(Item.of('gtceu:treated_wood_plate', 2), [
+		'#forge:tools/files', '#forge:treated_wood', '#forge:treated_wood'
+	]);
+
 	event.shaped(Item.of('create:andesite_casing'), [
 		'PMP',
 		'AFA',
@@ -683,16 +701,28 @@ ServerEvents.recipes(event => {
 		H: '#forge:tools/hammers'
 	});
 
-	event.shaped(Item.of('gtceu:primitive_workshop'), [
-		'QAQ',
-		'FCF',
-		'RRR'
+	event.shaped(Item.of('create:copper_casing'), [
+		'PMP',
+		'AFA',
+		'PHP'
 	], {
-		Q: 'gtceu:quartzite_gem',
+		P: 'gtceu:wood_plate',
+		M: '#forge:tools/mallets',
 		A: 'create:andesite_alloy',
 		F: 'gtceu:wood_frame',
-		C: 'create:andesite_casing',
-		R: 'minecraft:redstone_block'
+		H: '#forge:tools/hammers'
+	});
+
+	event.shaped(Item.of('create:brass_casing'), [
+		'PMP',
+		'AFA',
+		'PHP'
+	], {
+		P: 'gtceu:treated_wood_plate',
+		M: '#forge:tools/mallets',
+		A: 'gtceu:double_brass_plate',
+		F: 'gtceu:treated_wood_frame',
+		H: '#forge:tools/hammers'
 	});
 
 	event.shaped(Item.of('create:piston_extension_pole', 3), [
@@ -704,18 +734,188 @@ ServerEvents.recipes(event => {
 		A: 'create:andesite_alloy'
 	});
 
-	event.recipes.gtceu.primitive_workshop('mechanical_press')
-		.itemInputs('create:andesite_casing', 'create:piston_extension_pole', '4x gtceu:wood_gear',
-			'6x minecraft:redstone', 'minecraft:anvil', '4x create:andesite_alloy')
-		.itemOutputs('create:mechanical_press')
-		.duration(100);
+	event.shaped(Item.of('create:hand_crank'), [
+		' PA',
+		'RPM',
+		'GP '
+	], {
+		P: 'gtceu:wood_plate',
+		M: '#forge:tools/mallets',
+		A: 'create:andesite_alloy',
+		R: 'gtceu:sticky_resin',
+		G: 'gtceu:wood_gear'
+	});
+	
+	event.shaped(Item.of('create:mechanical_press'), [
+		'PLP',
+		'GCG',
+		'AVA'
+	], {
+		C: 'create:andesite_casing',
+		P: 'gtceu:wood_plate',
+		A: 'create:andesite_alloy',
+		L: 'create:piston_extension_pole',
+		G: 'gtceu:wood_gear',
+		V: 'minecraft:anvil'
+	});
+	
+	event.shaped(Item.of('create:mechanical_saw'), [
+		'MSW',
+		'ACA'
+	], {
+		M: '#forge:tools/mallets',
+		W: '#forge:tools/wrenches',
+		S: 'gtceu:iron_buzz_saw_blade',
+		C: 'create:andesite_casing',
+		A: 'create:andesite_alloy'
+	});
+	
+	event.shaped(Item.of('gtceu:iron_buzz_saw_blade'), [
+		'HPM',
+		'PPP',
+		'WPF'
+	], {
+		M: '#forge:tools/mallets',
+		W: '#forge:tools/wrenches',
+		F: '#forge:tools/files',
+		H: '#forge:tools/hammers',
+		P: 'gtceu:iron_plate',
+	});
 
-	event.recipes.gtceu.primitive_workshop('hand_crank')
-		.itemInputs('gtceu:wood_gear', '3x gtceu:wood_plate', 'gtceu:sticky_resin', 'create:andesite_alloy',
-			'minecraft:stick'
-		)
-		.itemOutputs('create:hand_crank')
-		.duration(40);
+	event.shaped(Item.of('create:windmill_bearing'), [
+		'RPR',
+		'GCG',
+		'GSG'
+	], {
+		R: 'gtceu:sticky_resin',
+		G: 'gtceu:wood_gear',
+		S: 'create:shaft',
+		C: 'create:andesite_casing',
+		P: '#minecraft:wooden_slabs'
+	});
+
+	event.shaped(Item.of('create:water_wheel'), [
+		'PPP',
+		'SCS',
+		'PPP'
+	], {
+		S: 'create:shaft',
+		C: 'create:andesite_casing',
+		P: 'gtceu:wood_plate'
+	});
+
+	event.recipes.create.mechanical_crafting('create:large_water_wheel', [
+		' PPP ',
+		'PSSSP',
+		'PSWSP',
+		'PSSSP',
+		' PPP '
+	], {
+		S: '#forge:rods/wooden',
+		P: 'gtceu:wood_plate',
+		W: 'create:water_wheel'
+	});
+
+	event.shaped(Item.of('create:whisk'), [
+		'NWN',
+		'RAR',
+		'RPR'
+	], {
+		W: '#forge:tools/wrenches',
+		R: 'gtceu:iron_rod',
+		P: 'gtceu:iron_plate',
+		A: 'create:andesite_alloy',
+		N: 'gtceu:iron_ring'
+	});
+
+	event.shaped(Item.of('create:cogwheel', 2), [
+		' SM',
+		'PGP',
+		' S '
+	], {
+		S: 'create:shaft',
+		G: 'gtceu:wood_gear',
+		P: 'gtceu:wood_plate',
+		M: '#forge:tools/mallets'
+	});
+
+	event.shaped(Item.of('create:large_cogwheel', 2), [
+		' SM',
+		'PGP',
+		' S '
+	], {
+		S: 'create:shaft',
+		G: 'create:cogwheel',
+		P: 'gtceu:wood_plate',
+		M: '#forge:tools/mallets'
+	});
+
+	event.shaped(Item.of('create:mechanical_mixer'), [
+		'MLW',
+		'GCG',
+		'AHA'
+	], {
+		L: 'create:piston_extension_pole',
+		M: '#forge:tools/mallets',
+		W: '#forge:tools/wrenches',
+		G: 'create:cogwheel',
+		C: 'create:andesite_casing',
+		A: 'create:andesite_alloy',
+		H: 'create:whisk'
+	});
+	
+	event.shaped(Item.of('create:basin'), [
+		'A A',
+		'ACA',
+		'PAP'
+	], {
+		A: 'create:andesite_alloy',
+		C: 'minecraft:cauldron',
+		P: 'gtceu:lead_plate'
+	});
+
+	event.shaped(Item.of('createlowheated:basic_burner'), [
+		'RRR',
+		'R R',
+		'PAP'
+	], {
+		A: 'create:andesite_alloy',
+		R: 'gtceu:lead_rod',
+		P: 'gtceu:lead_plate'
+	});
+
+	event.shaped(Item.of('create:propeller'), [
+		'SAR',
+		'ZPZ',
+		'MAS'
+	], {
+		P: 'gtceu:pig_iron_rotor',
+		A: 'create:andesite_alloy',
+		R: '#forge:tools/screwdrivers',
+		M: '#forge:tools/mallets',
+		Z: 'gtceu:zinc_plate',
+		S: 'gtceu:iron_screw'
+	});
+
+	event.shaped(Item.of('create:encased_fan'), [
+		'RPR',
+		'SCF',
+		'RPR'
+	], {
+		P: 'gtceu:wood_plate',
+		R: 'gtceu:zinc_rod',
+		F: 'create:propeller',
+		S: 'create:shaft',
+		C: 'create:andesite_casing'
+	});
+
+	event.remove({output: /^create:.*sand_paper/});
+	const sandType = ['sand','red_sand'];
+	sandType.forEach(sand=>{
+		event.recipes.create.mixing(Item.of(`1x create:${sand}_paper`).withChance(.8), ['1x farmersdelight:canvas', `1x minecraft:${sand}`, 'gtceu:sticky_resin']);
+	});
+	
+	event.recipes.create.sandpaper_polishing(Item.of('create:polished_rose_quartz').withChance(.7), 'create:rose_quartz');
 
 	// Post Cobble-Gen, Pre-Circuit
 
