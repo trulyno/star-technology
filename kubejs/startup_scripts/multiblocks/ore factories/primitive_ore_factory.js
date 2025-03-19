@@ -27,9 +27,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.build())
 		.workableCasingRenderer("gtceu:block/casings/solid/machine_primitive_bricks", "kubejs:block/multiblock/primitive_blast_furnace", false)
 		.editableUI(
-			global.primitive_ui({
+			global.ui_builder({
+				group: 'primitive',
 				name: 'primitive_ore_factory',
 				size: [166, 100],
+				background: GuiTextures.PRIMITIVE_BACKGROUND,
 				progress: {
 					pos: [77, 38],
 					size: [20, 18],
@@ -38,7 +40,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 				inputs: [
 					{ type: 'item', index: 0, pos: [34, 29], texture: GuiTextures.PRIMITIVE_SLOT },
 					{ type: 'item', index: 1, pos: [52, 29], texture: GuiTextures.PRIMITIVE_SLOT },
-					{ type: 'fluid', index: 0, pos: [34, 47], texture: GuiTextureGroup(GuiTextures.PRIMITIVE_SLOT,GuiTextures.PRIMITIVE_LARGE_FLUID_TANK_OVERLAY.getSubTexture(0,0.04,1,0.22))},
+					{ type: 'fluid', index: 0, pos: [34, 47], texture: GuiTextureGroup(GuiTextures.PRIMITIVE_SLOT, GuiTextures.PRIMITIVE_LARGE_FLUID_TANK_OVERLAY.getSubTexture(0, 0.04, 1, 0.22)) },
 				],
 				outputs: [
 					{ type: 'item', index: 0, pos: [104, 29], texture: GuiTextures.PRIMITIVE_SLOT },
