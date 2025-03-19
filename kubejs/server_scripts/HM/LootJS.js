@@ -28,6 +28,14 @@ LootJS.modifiers((event) => {
             [0,1],
             [Item.of(`minecraft:${tree}_sapling`).withChance(50)]
         );
+
+        event
+            .addBlockLootModifier('minecraft:campfire')
+            .removeLoot(Ingredient.all)
+            .addWeightedLoot(
+                [3, 10],
+                [Item.of('gtceu:ash_dust').withChance(50), Item.of('farmersdelight:tree_bark').withChance(25)]
+            );
     });
 });
 
