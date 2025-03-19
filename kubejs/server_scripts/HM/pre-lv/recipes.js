@@ -15,9 +15,9 @@ ServerEvents.recipes(event => {
 
 	materials.forEach(type => {
 		tools.forEach(tool => {
-			const { namespace, material } = type;
+			const { mod, material } = type;
 
-			event.remove({ output: `${namespace}:${material}_${tool}` });
+			event.remove({ output: `${mod}:${material}_${tool}` });
 		});
 	});
 
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
 	});
 
 	event.shapeless(Item.of('gtceu:long_wood_rod'), [
-		'#forge:tools/files','minecraft:stick','minecraft:stick']);
+		'#forge:tools/files', 'minecraft:stick', 'minecraft:stick']);
 
 	event.shaped(Item.of('kubejs:basic_scavenging_rod'), [
 		'SPP',
