@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
 
 	event.recipes.gtceu.stone_barrel('stone_pebble')
 		.circuit(0)
-		.inputFluids('minecraft:lava 10', 'minecraft:water 240')
+		.inputFluids('minecraft:lava 5', 'minecraft:water 245')
 		.itemOutputs('exnihilosequentia:stone_pebble')
 		.duration(5);
 

@@ -1489,7 +1489,7 @@
 				type: "item"
 			}]
 			title: "INFINITE WATER"
-			x: 6.5d
+			x: 8.0d
 			y: 16.5d
 		}
 		{
@@ -1569,8 +1569,8 @@
 				}
 			]
 			title: "Pig Iron"
-			x: -4.0d
-			y: 16.5d
+			x: -2.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -1584,7 +1584,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 16.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["714CA5ED83124FE1"]
@@ -1595,7 +1595,7 @@
 				type: "checkmark"
 			}]
 			x: 0.5d
-			y: 16.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["65DA1BDA4D9A9B56"]
@@ -1607,7 +1607,7 @@
 				item: "minecraft:lava_bucket"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 2.0d
 			y: 16.5d
 		}
 		{
@@ -1626,8 +1626,8 @@
 				}
 			]
 			title: "Cheaper Bronze/Brass"
-			x: 1.25d
-			y: 15.75d
+			x: 2.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -1649,7 +1649,7 @@
 			]
 			title: "Bronze/Brass"
 			x: -2.5d
-			y: 15.0d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -1689,7 +1689,7 @@
 			y: 13.5d
 		}
 		{
-			dependencies: ["224916FFC857C099"]
+			dependencies: ["311B111EA277454D"]
 			hide_dependent_lines: true
 			id: "1E818A6929B6C982"
 			tasks: [{
@@ -1697,14 +1697,13 @@
 				item: "create:copper_casing"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 13.5d
+			x: 6.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
 				"1E818A6929B6C982"
 				"6C4B325AEF8A5B7D"
-				"311B111EA277454D"
 			]
 			id: "049DA0A4C3E5EFFF"
 			tasks: [{
@@ -1712,8 +1711,8 @@
 				item: "create:spout"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 4.5d
+			x: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["19A0099F62CB5FF1"]
@@ -1781,7 +1780,7 @@
 		{
 			dependencies: [
 				"5DD3CFCC30CAF33A"
-				"7525BDACB9A9AC41"
+				"684FAA520167CC51"
 			]
 			id: "59A805C314717BA0"
 			tasks: [{
@@ -1789,11 +1788,14 @@
 				item: "gtceu:primitive_ore_factory"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 5.0d
 			y: 15.0d
 		}
 		{
-			dependencies: ["59A805C314717BA0"]
+			dependencies: [
+				"59A805C314717BA0"
+				"26B8FCAD39A84649"
+			]
 			id: "63D792EF5D75290F"
 			tasks: [{
 				id: "1990722E39FEE28B"
@@ -1801,7 +1803,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 15.0d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -1818,10 +1820,7 @@
 			y: 13.5d
 		}
 		{
-			dependencies: [
-				"684FAA520167CC51"
-				"63D792EF5D75290F"
-			]
+			dependencies: ["63D792EF5D75290F"]
 			id: "5880CFBC8A0DC3C4"
 			tasks: [{
 				id: "5B0D55C6E91676F5"
@@ -1829,7 +1828,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 15.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["5880CFBC8A0DC3C4"]
@@ -1842,7 +1841,7 @@
 				type: "item"
 			}]
 			title: "COBBLE GEN"
-			x: 5.0d
+			x: 6.5d
 			y: 16.5d
 		}
 		{
@@ -1857,8 +1856,8 @@
 				type: "item"
 			}]
 			title: "You Can Finally Touch Grass"
-			x: 6.5d
-			y: 3.0d
+			x: 5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["684FAA520167CC51"]
@@ -1949,8 +1948,8 @@
 				item: "minecraft:gold_nugget"
 				type: "item"
 			}]
-			x: 1.25d
-			y: 14.25d
+			x: 0.5d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -2085,6 +2084,17 @@
 			}]
 			x: 6.5d
 			y: 9.0d
+		}
+		{
+			dependencies: ["684FAA520167CC51"]
+			id: "26B8FCAD39A84649"
+			tasks: [{
+				id: "0625978559D24880"
+				item: "exnihilosequentia:flint_mesh"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 15.0d
 		}
 	]
 	title: "So It Begins"

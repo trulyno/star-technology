@@ -712,13 +712,13 @@ ServerEvents.recipes(event => {
 
 	event.shaped(Item.of('create:copper_casing'), [
 		'PMP',
-		'AFA',
+		'RFR',
 		'PHP'
 	], {
-		P: 'gtceu:wood_plate',
+		P: 'gtceu:copper_plate',
 		M: '#forge:tools/mallets',
-		A: 'create:andesite_alloy',
-		F: 'gtceu:wood_frame',
+		R: 'gtceu:rubber_plate',
+		F: 'create:mechanical_pump',
 		H: '#forge:tools/hammers'
 	});
 
@@ -976,6 +976,20 @@ ServerEvents.recipes(event => {
 		G: '#forge:glass',
 		B: 'minecraft:bricks',
 		T: 'thermal:redstone_servo'
+	});
+
+	event.recipes.create.mechanical_crafting('exnihilosequentia:flint_mesh', [
+		'FSFSFSF',
+		'SRSRSRS',
+		'FSFSFSF',
+		'SRSRSRS',
+		'FSFSFSF',
+		'SRSRSRS',
+		'FSFSFSF'
+	], {
+		F: 'minecraft:flint',
+		R: 'gtceu:tin_ring',
+		S: '#forge:string'
 	});
 
 	const latexType = [{fuel: 'minecraft:bone_meal', circ: '1'},{fuel: 'thermal:compost', circ: '2'},{fuel: 'gtceu:fertilizer', circ: '3'}]

@@ -7,7 +7,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('latex_plantation', 'multiblock')
+    event.create('latex_plantation', 'primitive')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('latex_plantation')
         .appearanceBlock(GTBlocks.CASING_PRIMITIVE_BRICKS)
