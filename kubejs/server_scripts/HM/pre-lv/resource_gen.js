@@ -56,9 +56,9 @@ BlockEvents.placed(event => {
 		});
 	});
 
-	[{ hit: 'minecraft:jungle_planks', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_1' },
-	{ hit: 'kubejs:crafting_stage_1', tool: 'forge:tools/axes', get: 'kubejs:crafting_stage_2' },
-	{ hit: 'kubejs:crafting_stage_2', tool: 'forge:tools/knives', get: 'kubejs:crafting_stage_3' },
+	[{ hit: 'minecraft:jungle_log', tool: 'forge:tools/knives', get: 'kubejs:crafting_stage_1' },
+	{ hit: 'kubejs:crafting_stage_1', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_2' },
+	{ hit: 'kubejs:crafting_stage_2', tool: 'forge:tools/axes', get: 'kubejs:crafting_stage_3' },
 	].forEach(table => {
 		const { hit, tool, get } = table;
 
@@ -123,6 +123,17 @@ ServerEvents.recipes(event => {
 		P: 'exnihilosequentia:stone_pebble'
 	});
 
+	event.recipes.gtceu.stone_barrel('stone_pebble')
+		.circuit(0)
+		.inputFluids('minecraft:lava 10', 'minecraft:water 240')
+		.itemOutputs('exnihilosequentia:stone_pebble')
+		.duration(5);
+
+	event.recipes.gtceu.stone_barrel('obsidian')
+		.circuit(10)
+		.inputFluids('minecraft:lava 1000', 'minecraft:water 1000')
+		.itemOutputs('minecraft:obsidian')
+		.duration(600);
 });
 
 // Jungle Wood Stripping (Bark + Resin)

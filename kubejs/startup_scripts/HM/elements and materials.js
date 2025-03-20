@@ -9,7 +9,7 @@ materialRegistry(event => {
         .color(0xeddda5)
         .iconSet(SHINY)
         .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame, bolt_and_screw);
+            rod, rotor, small_gear, ring, frame, bolt_and_screw,fine_wire);
 
     event.create('pig_iron')
         .ingot(1)

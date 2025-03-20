@@ -211,6 +211,15 @@ ServerEvents.recipes(event => {
 		R: '#forge:string'
 	});
 
+	event.shaped(Item.of('minecraft:crafting_table'),[
+        'PCP',
+        'PRP'
+    ], {
+        C: 'farmersdelight:canvas',
+        P: 'gtceu:wood_plate',
+        R: 'gtceu:sticky_resin'
+    });
+
 	event.remove({ output: 'gtceu:matchbox' });
 	event.shaped(Item.of('gtceu:matchbox'), [
 		'RRR',
@@ -584,7 +593,7 @@ ServerEvents.recipes(event => {
 	SEQSmSpring.forEach(type => {
 		let inter = 'kubejs:incomplete_small_metal_spring'
 		event.recipes.create.sequenced_assembly([
-			Item.of(`gtceu:small_${type}_spring`).withChance(1),
+			Item.of(`2x gtceu:small_${type}_spring`).withChance(1),
 		], `gtceu:long_${type}_rod`, [
 			event.recipes.createPressing(inter, inter),
 			event.recipes.createCutting(inter, inter),
@@ -916,9 +925,71 @@ ServerEvents.recipes(event => {
 	});
 	
 	event.recipes.create.sandpaper_polishing(Item.of('create:polished_rose_quartz').withChance(.7), 'create:rose_quartz');
+	
+	event.shaped(Item.of('create:electron_tube'), [
+		'NNN',
+		'NQN',
+		'BGB'
+	], {
+		G: 'gtceu:iron_ring',
+		B: 'gtceu:raw_electrum_bolt',
+		N: 'minecraft:glass_pane',
+		Q: 'create:polished_rose_quartz'
+	});
+
+	event.remove({output: 'thermal:redstone_servo'})
+	event.recipes.create.mechanical_crafting('thermal:redstone_servo', [
+		'TPT',
+		' F ',
+		'TPT'
+	], {
+		P: 'gtceu:iron_plate',
+		T: 'create:electron_tube',
+		F: 'gtceu:fine_gold_wire'
+	});
+
+	event.recipes.create.mechanical_crafting('gtceu:ulv_stone_barrel', [
+		'PP PP',
+		'PSRSP',
+		' SCS ',
+		'PSTSP',
+		'PP PP'
+	], {
+		R: 'gtceu:iron_rotor',
+		S: 'minecraft:stone',
+		P: 'gtceu:nickel_plate',
+		T: 'thermal:redstone_servo',
+		C: 'minecraft:cauldron'
+	});
 
 	// Post Cobble-Gen, Pre-Circuit
 
+	event.remove({output: 'thermal:device_tree_extractor'});
+	event.recipes.create.mechanical_crafting('gtceu:latex_plantation', [
+		'RSR',
+		'PGP',
+		'BTB'
+	], {
+		R: 'gtceu:iron_rod',
+		S: 'gtceu:lead_spring',
+		P: 'gtceu:iron_plate',
+		G: '#forge:glass',
+		B: 'minecraft:bricks',
+		T: 'thermal:redstone_servo'
+	});
+
+	const latexType = [{fuel: 'minecraft:bone_meal', circ: '1'},{fuel: 'thermal:compost', circ: '2'},{fuel: 'gtceu:fertilizer', circ: '3'}]
+	latexType.forEach(latex=>{
+	event.recipes.gtceu.latex_plantation(`latex_${latex.circ}`)
+		.chancedInput(`${latex.fuel}`, 2500, 0)
+		.circuit(latex.circ)
+		.outputFluids(`thermal:latex ${100+50*latex.circ}`)
+		.duration(160);
+	});
+	event.recipes.gtceu.latex_plantation(`latex`)
+		.circuit(0)
+		.outputFluids(`thermal:latex 100`)
+		.duration(160);
 });
 
 };// if end
