@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('primitive_distillery', 'multiblock')
         .recipeType('distillation_tower')
@@ -20,3 +23,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
         "gtceu:block/multiblock/distillation_tower", false);
 });
+
+};//if end

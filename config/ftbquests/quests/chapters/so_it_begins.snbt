@@ -688,6 +688,7 @@
 				"54AAB5395E468898"
 			]
 			id: "08B170E72119FDD4"
+			optional: true
 			tasks: [{
 				id: "6D5D24F5642120A5"
 				item: "minecraft:clay"
@@ -1031,8 +1032,8 @@
 				item: "gtceu:rugged_alloyer"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 9.0d
+			x: -5.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["2CE500506AE84E1A"]
@@ -1076,7 +1077,7 @@
 			]
 			title: "Easier Ingots"
 			x: -4.0d
-			y: 10.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2CE500506AE84E1A"]
@@ -1087,7 +1088,7 @@
 				type: "item"
 			}]
 			title: "Ultra Primitive Alloy"
-			x: -5.5d
+			x: -4.0d
 			y: 10.5d
 		}
 		{
@@ -1135,7 +1136,7 @@
 					type: "item"
 				}
 			]
-			title: "Uncommon Metals"
+			title: "Uncommon Minerals"
 			x: -5.5d
 			y: 9.0d
 		}
@@ -1147,25 +1148,11 @@
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 12.0d
-		}
-		{
-			dependencies: [
-				"1B660E1DA8714AC5"
-				"67D37BA6B5424768"
-			]
-			id: "2E686BE355CCF22E"
-			tasks: [{
-				id: "026F6C942FF8D5A5"
-				item: "gtceu:primitive_workshop"
-				type: "item"
-			}]
 			x: -4.0d
 			y: 12.0d
 		}
 		{
-			dependencies: ["2E686BE355CCF22E"]
+			dependencies: ["1B660E1DA8714AC5"]
 			description: ["Finally Plates"]
 			hide_dependent_lines: true
 			id: "280AD7F16F6654B4"
@@ -1176,10 +1163,15 @@
 			}]
 			title: "Pressing"
 			x: -2.5d
-			y: 13.5d
+			y: 12.0d
 		}
 		{
-			dependencies: ["67D37BA6B5424768"]
+			dependencies: [
+				"67D37BA6B5424768"
+				"3DCE9199510A9223"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "4F89E871129D842B"
 			tasks: [{
 				id: "7E83DD6E360104F0"
@@ -1194,7 +1186,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["280AD7F16F6654B4"]
@@ -1230,7 +1222,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["4F89E871129D842B"]
+			dependencies: [
+				"4F89E871129D842B"
+				"41EEEE63FF53A037"
+			]
 			id: "6FEC217C4653943D"
 			tasks: [{
 				id: "31D66E14112E00DB"
@@ -1241,7 +1236,10 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["4F89E871129D842B"]
+			dependencies: [
+				"4F89E871129D842B"
+				"4F550705B0576891"
+			]
 			id: "1585BE531365AF58"
 			tasks: [{
 				id: "2653329D5FF171FE"
@@ -1295,8 +1293,8 @@
 		}
 		{
 			dependencies: [
-				"2E686BE355CCF22E"
 				"280AD7F16F6654B4"
+				"1B660E1DA8714AC5"
 			]
 			description: [
 				"Rods now Too!"
@@ -1310,8 +1308,8 @@
 				item: "create:mechanical_saw"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 12.0d
+			x: -5.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["6C4B325AEF8A5B7D"]
@@ -1426,7 +1424,10 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["0E8EDAF4C5B68057"]
+			dependencies: [
+				"0E8EDAF4C5B68057"
+				"280AD7F16F6654B4"
+			]
 			id: "4F13AF131EC84DAA"
 			tasks: [{
 				id: "16EC2C599F130527"
@@ -1434,13 +1435,14 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
 				"29DBC6F4A10C5667"
 				"049DA0A4C3E5EFFF"
 			]
+			hide_dependent_lines: true
 			id: "1B5EA867C67903E4"
 			tasks: [{
 				id: "254F957E3058EA32"
@@ -1448,7 +1450,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
@@ -1459,18 +1461,21 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["1B5EA867C67903E4"]
+			dependencies: [
+				"1B5EA867C67903E4"
+				"684FAA520167CC51"
+			]
 			id: "1AD7CB6C61196D5C"
 			tasks: [{
 				id: "0795D2E2F3391816"
 				item: "gtceu:primitive_pump"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -1.5d
+			x: 6.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["1AD7CB6C61196D5C"]
@@ -1484,11 +1489,11 @@
 				type: "item"
 			}]
 			title: "INFINITE WATER"
-			x: 5.0d
-			y: -3.0d
+			x: 8.0d
+			y: 16.5d
 		}
 		{
-			dependencies: ["2E686BE355CCF22E"]
+			dependencies: ["1472BFF306FEA342"]
 			id: "369414ED645535EF"
 			tasks: [{
 				id: "53BFE18B52A7AD9C"
@@ -1497,25 +1502,42 @@
 			}]
 			title: "First SU"
 			x: -2.5d
-			y: 10.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
-				"2E686BE355CCF22E"
 				"6C4B325AEF8A5B7D"
+				"1B660E1DA8714AC5"
 			]
-			description: ["Uses Metal Ball Bearing"]
+			description: [""]
 			id: "73E5BE92A7CF6543"
-			tasks: [{
-				id: "5B212FF38F4036E6"
-				item: "create:windmill_bearing"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5B212FF38F4036E6"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					id: "20AFA4F3A6391ADE"
+					item: "create:water_wheel"
+					type: "item"
+				}
+				{
+					id: "61D29D9FA79A8370"
+					item: "create:white_sail"
+					type: "item"
+				}
+			]
+			title: "Better SU Generation"
 			x: -5.5d
-			y: 13.5d
+			y: 12.0d
 		}
 		{
-			dependencies: ["2E686BE355CCF22E"]
+			dependencies: [
+				"1B660E1DA8714AC5"
+				"280AD7F16F6654B4"
+				"6C4B325AEF8A5B7D"
+			]
 			id: "6994BA308DC55ED2"
 			tasks: [
 				{
@@ -1556,7 +1578,10 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["60B2BEDDA1D66001"]
+			dependencies: [
+				"60B2BEDDA1D66001"
+				"224916FFC857C099"
+			]
 			id: "714CA5ED83124FE1"
 			tasks: [{
 				id: "00E741BFE38E92DB"
@@ -1575,7 +1600,7 @@
 				type: "checkmark"
 			}]
 			x: 0.5d
-			y: 15.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["65DA1BDA4D9A9B56"]
@@ -1587,33 +1612,55 @@
 				item: "minecraft:lava_bucket"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 2.0d
 			y: 16.5d
 		}
 		{
 			dependencies: ["65DA1BDA4D9A9B56"]
 			id: "60F06370DBED59EB"
-			tasks: [{
-				id: "4A88DB7B6F2C72C6"
-				item: "gtceu:bronze_ingot"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 16.5d
-		}
-		{
-			dependencies: ["65DA1BDA4D9A9B56"]
-			id: "7525BDACB9A9AC41"
-			tasks: [{
-				id: "3933CE4E58750944"
-				item: "gtceu:brass_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4A88DB7B6F2C72C6"
+					item: "gtceu:bronze_ingot"
+					type: "item"
+				}
+				{
+					id: "406A2E44074267E3"
+					item: "gtceu:brass_ingot"
+					type: "item"
+				}
+			]
+			title: "Cheaper Bronze/Brass"
 			x: 2.0d
 			y: 15.0d
 		}
 		{
-			dependencies: ["224916FFC857C099"]
+			dependencies: [
+				"6994BA308DC55ED2"
+				"5819AF3E6CCDB826"
+			]
+			id: "7525BDACB9A9AC41"
+			tasks: [
+				{
+					id: "3933CE4E58750944"
+					item: "gtceu:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "0036B798D282D5BC"
+					item: "gtceu:bronze_ingot"
+					type: "item"
+				}
+			]
+			title: "Bronze/Brass"
+			x: -2.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"224916FFC857C099"
+				"1B5EA867C67903E4"
+			]
 			hide_dependent_lines: true
 			id: "153EBFA7C41BE761"
 			tasks: [{
@@ -1622,7 +1669,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 13.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1636,7 +1683,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["7525BDACB9A9AC41"]
@@ -1646,18 +1693,7 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 13.5d
-		}
-		{
-			dependencies: ["684FAA520167CC51"]
-			id: "30BE65D41E042574"
-			tasks: [{
-				id: "41C6BE375D2A1580"
-				item: "create:water_wheel"
-				type: "item"
-			}]
-			x: 6.5d
+			x: -1.0d
 			y: 13.5d
 		}
 		{
@@ -1669,14 +1705,13 @@
 				item: "create:copper_casing"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 12.0d
+			x: 0.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [
 				"1E818A6929B6C982"
 				"6C4B325AEF8A5B7D"
-				"311B111EA277454D"
 			]
 			id: "049DA0A4C3E5EFFF"
 			tasks: [{
@@ -1684,7 +1719,7 @@
 				item: "create:spout"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 5.0d
 			y: 4.5d
 		}
 		{
@@ -1703,31 +1738,32 @@
 			dependencies: [
 				"4002DDFC6025B01D"
 				"684FAA520167CC51"
+				"4917BE27976C3A9A"
 			]
 			id: "5D7047EF3399D10B"
 			tasks: [{
-				id: "1471428125B9E86B"
-				item: "thermal:device_tree_extractor"
+				id: "03EDE887E0E0F5F5"
+				item: "gtceu:latex_plantation"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 10.5d
+			x: 6.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["5D7047EF3399D10B"]
 			id: "6A9AED442BB9370C"
 			tasks: [{
-				id: "189024FD12C9E3A8"
-				item: "thermal:rubber"
+				id: "6E58C21CA4DFAA71"
+				item: "thermal:latex_bucket"
 				type: "item"
 			}]
 			x: 6.5d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
-				"6A9AED442BB9370C"
 				"1ABF4784F033D41A"
+				"4936CD72CB6A7C89"
 			]
 			id: "626D392024112D50"
 			tasks: [{
@@ -1752,8 +1788,7 @@
 		{
 			dependencies: [
 				"5DD3CFCC30CAF33A"
-				"7525BDACB9A9AC41"
-				"31E3FA832F85F262"
+				"684FAA520167CC51"
 			]
 			id: "59A805C314717BA0"
 			tasks: [{
@@ -1761,33 +1796,22 @@
 				item: "gtceu:primitive_ore_factory"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 5.0d
 			y: 15.0d
 		}
 		{
-			dependencies: ["59A805C314717BA0"]
-			dependency_requirement: "one_completed"
-			hide_dependent_lines: true
-			id: "462DF26BFED5FFBA"
-			tasks: [{
-				id: "7290D08D3895593D"
-				item: "minecraft:gold_ingot"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 18.0d
-		}
-		{
-			dependencies: ["59A805C314717BA0"]
-			hide_dependent_lines: true
+			dependencies: [
+				"59A805C314717BA0"
+				"26B8FCAD39A84649"
+			]
 			id: "63D792EF5D75290F"
 			tasks: [{
 				id: "1990722E39FEE28B"
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 13.5d
+			x: 3.5d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -1800,22 +1824,19 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 2.0d
 			y: 13.5d
 		}
 		{
-			dependencies: [
-				"684FAA520167CC51"
-				"63D792EF5D75290F"
-			]
+			dependencies: ["63D792EF5D75290F"]
 			id: "5880CFBC8A0DC3C4"
 			tasks: [{
 				id: "5B0D55C6E91676F5"
 				item: "gtceu:ulv_stone_barrel"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 12.0d
+			x: 5.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["5880CFBC8A0DC3C4"]
@@ -1829,20 +1850,6 @@
 			}]
 			title: "COBBLE GEN"
 			x: 6.5d
-			y: 10.5d
-		}
-		{
-			dependencies: [
-				"60F06370DBED59EB"
-				"684FAA520167CC51"
-			]
-			id: "31E3FA832F85F262"
-			tasks: [{
-				id: "701754004DF5E5B5"
-				item: "gtceu:steam_workshop"
-				type: "item"
-			}]
-			x: 5.0d
 			y: 16.5d
 		}
 		{
@@ -1857,19 +1864,22 @@
 				type: "item"
 			}]
 			title: "You Can Finally Touch Grass"
-			x: 6.5d
-			y: -3.0d
+			x: 5.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["31E3FA832F85F262"]
+			dependencies: [
+				"684FAA520167CC51"
+				"1E818A6929B6C982"
+			]
 			id: "3B445A3D85B2678C"
 			tasks: [{
 				id: "756B4663EAC9A853"
 				item: "create:steam_engine"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 18.0d
+			x: 5.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["50F2743FA699173A"]
@@ -1902,8 +1912,8 @@
 		}
 		{
 			dependencies: [
-				"31E3FA832F85F262"
 				"4917BE27976C3A9A"
+				"684FAA520167CC51"
 			]
 			id: "50F2743FA699173A"
 			tasks: [{
@@ -1911,8 +1921,8 @@
 				item: "gtceu:bronze_brick_casing"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 16.5d
+			x: 8.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
@@ -1924,7 +1934,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1949,7 +1959,7 @@
 				item: "minecraft:gold_nugget"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -1.0d
 			y: 16.5d
 		}
 		{
@@ -2011,8 +2021,8 @@
 		}
 		{
 			dependencies: [
-				"2E686BE355CCF22E"
 				"60916F46BE0033CA"
+				"1472BFF306FEA342"
 			]
 			id: "5819AF3E6CCDB826"
 			tasks: [{
@@ -2074,6 +2084,83 @@
 			}]
 			x: -7.0d
 			y: 13.5d
+		}
+		{
+			dependencies: ["6A9AED442BB9370C"]
+			id: "4936CD72CB6A7C89"
+			tasks: [{
+				id: "5AA171ADB94A7663"
+				item: "thermal:rubber"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["684FAA520167CC51"]
+			id: "26B8FCAD39A84649"
+			tasks: [{
+				id: "0625978559D24880"
+				item: "exnihilosequentia:flint_mesh"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 15.0d
+		}
+		{
+			id: "3A3BD0ECA7FC8D38"
+			tasks: [{
+				id: "0DE497BF1010AAA2"
+				title: "Steam Age"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3A3BD0ECA7FC8D38"]
+			id: "1049C77BBEC1B413"
+			tasks: [{
+				id: "494A3CB370136117"
+				title: "Early ULV"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1049C77BBEC1B413"]
+			icon: "gtceu:vacuum_tube"
+			id: "1669324990B58A7A"
+			tasks: [{
+				id: "48AE0AC3EC105222"
+				title: "ULV Proper"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1669324990B58A7A"]
+			id: "69A865E891BC005A"
+			tasks: [{
+				id: "03B923932D92720E"
+				title: "Pre-LV"
+				type: "checkmark"
+			}]
+			x: 16.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["69A865E891BC005A"]
+			id: "57E1307902CFA9F8"
+			tasks: [{
+				id: "1B4E766D35A48433"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 7.5d
 		}
 	]
 	title: "So It Begins"

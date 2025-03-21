@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 // Runs on server load
 ServerEvents.loaded(event => {
 	// Check if load_check is present on server persistent data, if so then return early
@@ -11,4 +14,6 @@ ServerEvents.loaded(event => {
 
 	// Add load_check to server persistent data to prevent this from running again
 	event.server.persistentData.load_check = true
-})
+});
+
+};//if end

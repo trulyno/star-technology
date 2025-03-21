@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 // Coarse Dirt Scavenging
 
 BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
@@ -25,41 +28,35 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 
 // In-world crafting for Crucible and Crafting Table
 
-const crucible_stages = [
-	{ hit: 'minecraft:stripped_jungle_log', tool: 'forge:tools/knives', get: 'kubejs:crucible_stage_1' },
+	[{ hit: 'minecraft:stripped_jungle_log', tool: 'forge:tools/knives', get: 'kubejs:crucible_stage_1' },
 	{ hit: 'kubejs:crucible_stage_1', tool: 'forge:tools/axes', get: 'kubejs:crucible_stage_2' },
 	{ hit: 'kubejs:crucible_stage_2', tool: 'forge:tools/saws', get: 'kubejs:crucible_stage_3' },
 	{ hit: 'kubejs:crucible_stage_3', tool: 'forge:tools/knives', get: 'exnihilosequentia:jungle_crucible' },
-];
+	].forEach(crucible => {
+		const { hit, tool, get } = crucible;
 
-const table_stages = [
-	{ hit: 'minecraft:jungle_planks', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_1' },
-	{ hit: 'kubejs:crafting_stage_1', tool: 'forge:tools/axes', get: 'kubejs:crafting_stage_2' },
-	{ hit: 'kubejs:crafting_stage_2', tool: 'forge:tools/knives', get: 'kubejs:crafting_stage_3' },
-];
-
-crucible_stages.forEach(crucible => {
-	const { hit, tool, get } = crucible;
-
-	BlockEvents.rightClicked(hit, event => {
-		if (!event.player.getMainHandItem().hasTag(tool)) return;
-		if (event.player.getOffHandItem() !== null) return;
+		BlockEvents.rightClicked(hit, event => {
+			if (!event.player.getMainHandItem().hasTag(tool)) return;
+			if (event.player.getOffHandItem() !== null) return;
 
 		event.block.set(get);
 		event.player.addItem(Item.of('gtceu:wood_dust'));
 	});
 });
 
-table_stages.forEach(table => {
-	const { hit, tool, get } = table;
+	[{ hit: 'minecraft:jungle_log', tool: 'forge:tools/knives', get: 'kubejs:crafting_stage_1' },
+	{ hit: 'kubejs:crafting_stage_1', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_2' },
+	{ hit: 'kubejs:crafting_stage_2', tool: 'forge:tools/axes', get: 'kubejs:crafting_stage_3' },
+	].forEach(table => {
+		const { hit, tool, get } = table;
 
-	BlockEvents.rightClicked(hit, event => {
-		if (!event.player.getMainHandItem().hasTag(tool)) return;
-		if (event.player.getOffHandItem() !== null) return;
+		BlockEvents.rightClicked(hit, event => {
+			if (!event.player.getMainHandItem().hasTag(tool)) return;
+			if (event.player.getOffHandItem() !== null) return;
 
-		event.block.set(get);
+			event.block.set(get);
+		});
 	});
-});
 
 BlockEvents.rightClicked('kubejs:crafting_stage_3', event => {
 	const { block, item } = event;
@@ -95,6 +92,9 @@ ServerEvents.recipes(event => {
 		.itemOutputs('16x minecraft:coarse_dirt')
 		.duration(600);
 
+	event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '2x minecraft:flint']);
+
+
 	['andesite', 'basalt', 'blackstone', 'deepslate', 'diorite', 'granite', 'tuff', 'calcite', 'dripstone'].forEach(stone => {
 		event.shaped(Item.of(`exnihilosequentia:crushed_${stone}`), [
 			'PP',
@@ -109,6 +109,39 @@ ServerEvents.recipes(event => {
 		'PP'
 	], {
 		P: 'exnihilosequentia:stone_pebble'
+	});
+
+	event.recipes.gtceu.stone_barrel('stone_pebble')
+		.circuit(0)
+		.inputFluids('minecraft:lava 5', 'minecraft:water 245')
+		.itemOutputs('exnihilosequentia:stone_pebble')
+		.duration(5);
+
+	event.recipes.gtceu.stone_barrel('obsidian')
+		.circuit(10)
+		.inputFluids('minecraft:lava 1000', 'minecraft:water 1000')
+		.itemOutputs('minecraft:obsidian')
+		.duration(600);
+
+	const primitive_processing = [
+		{primary:'hematite',secondary:'magnetite',tertiary:'nickel'},
+		{primary:'chalcopyrite',secondary:'pyrite',tertiary:'gold'},
+		{primary:'sphalerite',secondary:'zinc',tertiary:'gallium'},
+		{primary:'cassiterite',secondary:'tin',tertiary:'bismuth'},
+		{primary:'galena',secondary:'sulfur',tertiary:'silver'},
+		{primary:'magnetite',secondary:'gold',tertiary:'iron'},
+		{primary:'pyrite',secondary:'sulfur',tertiary:'tricalcium_phosphate'}
+	]
+	
+	primitive_processing.forEach(material=>{
+		event.recipes.gtceu.primitive_ore_processing(`crushed_${material.primary}_ore`)
+			.itemInputs(`gtceu:crushed_${material.primary}_ore`, '2x #minecraft:coals')
+			.inputFluids('minecraft:water 1000')
+			.itemOutputs(`gtceu:${material.primary}_dust`)
+			.chancedOutput(`gtceu:${material.primary}_dust`, 5000, 0)
+			.chancedOutput(`gtceu:${material.secondary}_dust`, 2500, 0)
+			.chancedOutput(`gtceu:${material.tertiary}_dust`, 1250, 0)
+			.duration(400);
 	});
 
 });
@@ -159,3 +192,5 @@ BlockEvents.rightClicked('exnihilosequentia:jungle_crucible', event => {
 		player.setMainHandItem(Item.of('kubejs:water_bowl'));
 	}
 });
+
+};//if end

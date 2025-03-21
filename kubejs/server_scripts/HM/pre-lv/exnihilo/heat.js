@@ -1,4 +1,6 @@
 
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
     //DO NOT TOUCH 73 IM LOOKING AT YOU
 
 ServerEvents.recipes(event => {
@@ -13,3 +15,5 @@ ServerEvents.recipes(event => {
     event.recipes.exnihilosequentia.heat('minecraft:lava', 5)
 
 });
+
+};//if end

@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 BlockEvents.modification(event => {
     event.modify(/log/, (block) => (block.requiresTool = true));
     ['oak','birch','acacia','cherry','dark_oak','jungle','mangrove','spruce'].forEach (log => {
@@ -5,3 +8,5 @@ BlockEvents.modification(event => {
       event.modify(`minecraft:stripped_${log}_wood`, (block) => (block.requiresTool = true))});
     
   });
+
+};//if end

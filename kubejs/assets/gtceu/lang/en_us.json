@@ -507,5 +507,7 @@
     "gtceu.steam_workshop": "Steam Workshop",
     "block.gtceu.ulv_primitive_mixer": "Ultra Primitive Mixer",
     "gtceu.primitive_mixer": "Ultra Primitive Mixer",
-    "material.gtceu.flisnt": "Flint"
+    "material.gtceu.flisnt": "Flint",
+    "block.gtceu.latex_plantation": "Latex Plantation Controller",
+    "gtceu.latex_plantation": "Latex Plantation"
 }

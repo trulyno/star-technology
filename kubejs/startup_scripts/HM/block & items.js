@@ -1,3 +1,6 @@
+
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
 StartupEvents.registry('item', event => {
 	event.create('flint_shard')
 		.displayName('Flint Shard')
@@ -117,3 +120,5 @@ StartupEvents.registry('block', event => {
 			.tagBlock("minecraft:needs_stone_tool");
 	});
 });
+
+};//if end

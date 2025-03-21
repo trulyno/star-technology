@@ -1,4 +1,6 @@
 
+if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+
     //DO NOT TOUCH 73 IM LOOKING AT YOU
 
 ServerEvents.recipes(event => {
@@ -14,3 +16,5 @@ ServerEvents.recipes(event => {
     event.recipes.exnihilosequentia.melting('kubejs:plant_fibers', 'wood', Fluid.of('minecraft:water', 50))
 
 });
+
+};//if end
