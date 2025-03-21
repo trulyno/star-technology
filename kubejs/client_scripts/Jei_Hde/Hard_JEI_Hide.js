@@ -1,3 +1,4 @@
+//priority: -1
 const CommonProperties = Java.loadClass('dev.latvian.mods.kubejs.CommonProperties')
 if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
 
