@@ -1,11 +1,11 @@
 ServerEvents.recipes(event => {
 
     // Machine recipes
-    event.recipes.gtceu.assembly_line('cyclonic_crystalline_sieve')
+    event.recipes.gtceu.assembly_line('cyclonic_sifter')
         .itemInputs('gtceu:uhv_machine_hull', '12x #gtceu:circuits/uhv','16x gtceu:neutronium_large_fluid_pipe', '16x gtceu:stellarium_gear',
             '8x gtceu:uhv_electric_pump', '4x gtceu:uhv_electric_motor', '2x gtceu:uhv_field_generator', '6x gtceu:pure_netherite_gear')
         .inputFluids('gtceu:prismalium 9216','gtceu:gritty_akreyrium 224000')
-        .itemOutputs('gtceu:cyclonic_crystalline_sieve')
+        .itemOutputs('gtceu:cyclonic_sifter')
         .duration(24000)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
@@ -24,20 +24,20 @@ ServerEvents.recipes(event => {
         .duration(32000)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:cyclonic_crystalline_sieve'))
+                .researchStack(Item.of('gtceu:cyclonic_sifter'))
                 .EUt(GTValues.VHA[GTValues.UV])
                 .CWUt(144)
         )
         .EUt(GTValues.VA[GTValues.UV]); 
 
     
-    event.recipes.gtceu.assembly_line('leptonic_manifold_quantiser')
+    event.recipes.gtceu.assembly_line('manifold_centrifuge')
         .itemInputs(
             'gtceu:uhv_machine_hull', '24x #gtceu:circuits/uhv','64x kubejs:uepic_chip', '32x kubejs:uepic_chip',
             '16x gtceu:neutronium_large_fluid_pipe', '64x gtceu:glass_lens','64x gtceu:fine_indium_tin_barium_titanium_cuprate_wire','16x gtceu:pure_netherite_foil',
             '4x gtceu:uhv_electric_pump', '6x gtceu:uhv_emitter',  '4x gtceu:uhv_fluid_regulator')
         .inputFluids('gtceu:naquadria 24048','gtceu:borosilicate_glass 36864')
-        .itemOutputs('gtceu:leptonic_manifold_quantiser')
+        .itemOutputs('gtceu:manifold_centrifuge')
         .duration(32000)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
@@ -47,23 +47,23 @@ ServerEvents.recipes(event => {
         )
         .EUt(GTValues.VA[GTValues.UV]); 
 
-    event.recipes.gtceu.assembly_line('leptonic_convergence_injector')
+    event.recipes.gtceu.assembly_line('injection_mixer')
         .itemInputs(
             'gtceu:uhv_machine_hull', '24x #gtceu:circuits/uhv', '48x gtceu:crystal_soc','64x kubejs:uepic_chip','8x gtceu:neutronium_huge_fluid_pipe', '64x gtceu:glass_lens',
             '4x gtceu:small_pure_netherite_gear','2x gtceu:small_zalloy_gear','6x gtceu:uhv_electric_pump','6x gtceu:uhv_electric_pump','2x gtceu:uhv_fluid_regulator')
         .inputFluids('gtceu:weapon_grade_naquadah 2304','gtceu:stellarium 2304','gtceu:twinite 20736','gtceu:utopian_akreyrium 1250')
-        .itemOutputs('gtceu:leptonic_convergence_injector')
+        .itemOutputs('gtceu:injection_mixer')
         .duration(32000)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:leptonic_manifold_quantiser'))
+                .researchStack(Item.of('gtceu:manifold_centrifuge'))
                 .EUt(GTValues.VHA[GTValues.UV])
                 .CWUt(144)
         )
         .EUt(GTValues.VA[GTValues.UV]); 
 
     // Akreyrium Processing
-    event.recipes.gtceu.cyclonic_crystalline_sieve('akreyrium_sieving')
+    event.recipes.gtceu.cyclonic_sifter('akreyrium_sieving')
         .chancedInput('1x kubejs:netherite_reinforced_mesh', 500, -50)
         .inputFluids('gtceu:gritty_akreyrium 100000')
         .outputFluids('gtceu:lepton_sparse_akreyrium 1000')
@@ -71,21 +71,21 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(GTValues.VA[GTValues.UHV]);
 
-    event.recipes.gtceu.leptonic_convergence_injector('electron_densification')
+    event.recipes.gtceu.injection_mixer('electron_densification')
         .inputFluids('gtceu:sparse_electron_akreyrium 1000')
         .inputFluids('gtceu:twinite 144')
         .outputFluids('gtceu:dense_electron_akreyrium 1000')
         .duration(3600)
         .EUt(GTValues.VHA[GTValues.UV]);
 
-    event.recipes.gtceu.leptonic_convergence_injector('muon_densification')
+    event.recipes.gtceu.injection_mixer('muon_densification')
         .inputFluids('gtceu:sparse_muon_akreyrium 1000')
         .inputFluids('gtceu:weapon_grade_naquadah 16')
         .outputFluids('gtceu:dense_muon_akreyrium 1000')
         .duration(3600)
         .EUt(GTValues.VHA[GTValues.UV]);
 
-    event.recipes.gtceu.leptonic_convergence_injector('tau_densification')
+    event.recipes.gtceu.injection_mixer('tau_densification')
         .inputFluids('gtceu:sparse_tau_akreyrium 1000')
         .inputFluids('gtceu:stellarium 16')
         .outputFluids('gtceu:dense_tau_akreyrium 1000')

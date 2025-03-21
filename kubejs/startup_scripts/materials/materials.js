@@ -203,7 +203,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // Liquids
 
-
     // Gasses
     // periodicTableElement('iodine', 'gas');
     element('oganesson', 'gas');
@@ -1543,6 +1542,54 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('akreyrium_pcb_graphite_nanoparticle_coolant')
         .fluid()
         .color(0x676763);
+
+    // Ultimate (Akreyrium-Tier-Start) Multiblocks
+        
+    // Thallium-Tungstate and intermediates
+    event.create('thallium_tungstate')
+        .dust()
+        .iconSet(DULL)
+        .components('2x thallium', '1x tungsten', '4x oxygen')
+        .color(0xE3D18A);
+
+    event.create('tungsten_trioxide')
+        .dust()
+        .iconSet(DULL)
+        .components('1x tungsten', '3x oxygen')
+        .color(0xADB426);
+
+    // Boron Nitride and intermediates
+    event.create('boron_nitride')
+        .dust()
+        .iconSet(DULL)
+        .components('1x boron', '1x nitrogen')
+        .color(0xD4C4A0);
+
+    event.create('boron_trioxide')
+        .dust()
+        .iconSet(DULL)
+        .components('2x boron', '3x oxygen')
+        .color(0xDACABB);
+
+    // Hastelloy X Upgrade
+    event.create('astrenalloy_nx')
+        .ingot()
+        .fluid()
+        .components('1x hastelloy_x', '4x enriched_naquadah', '3x zirconium', '6x tantalum_carbide', '4x osmiridium', '3x boron_nitride')
+        .color(0x63478e)
+        .iconSet(SHINY)
+        .blastTemp(10090, 'highest', VA('uv'), 2800)
+        .flags(plates, rod, frame);
+    
+    // Incoloy MA-956 upgrade
+    event.create('thacoloy_nq_42x')
+        .ingot()
+        .fluid()
+        .components('6x incoloy_ma_956', '4x enriched_naquadah', '2x niobium_titanium', '4x osmiridium', '4x thallium_tungstate')
+        .color(0x467624)
+        .iconSet(SHINY)
+        .blastTemp(10090, 'highest', VA('zpm'), 3400)
+        .flags(plates, rod, frame);
 
     //EPSILON Resource Gen stuff
     function liquid(name, color, composition){
