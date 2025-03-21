@@ -717,8 +717,8 @@ ServerEvents.recipes(event => {
 	], {
 		P: 'gtceu:copper_plate',
 		M: '#forge:tools/mallets',
-		R: 'gtceu:rubber_plate',
-		F: 'create:mechanical_pump',
+		R: 'gtceu:copper_normal_fluid_pipe',
+		F: 'gtceu:pig_iron_frame',
 		H: '#forge:tools/hammers'
 	});
 
@@ -801,6 +801,87 @@ ServerEvents.recipes(event => {
 		S: 'create:shaft',
 		C: 'create:andesite_casing',
 		P: '#minecraft:wooden_slabs'
+	});
+
+	event.shaped(Item.of('create:white_sail',2), [
+		'ASC',
+		'SCS',
+		'CSA'
+	], {
+		A: 'create:andesite_alloy',
+		S: '#forge:rods/wooden',
+		C: 'farmersdelight:canvas'
+	});
+
+	event.shaped(Item.of('create:millstone'), [
+		'WCM',
+		'GAG',
+		'SSS'
+	], {
+		W: '#forge:tools/wrenches',
+		M: '#forge:tools/mallets',
+		C: 'create:chute',
+		G: 'create:cogwheel',
+		A: 'create:andesite_casing',
+		S: '#forge:stone'
+	});
+
+	event.recipes.create.mechanical_crafting('create:crushing_wheel', [
+		' SSS ',
+		'SAMAS',
+		'SMFMS',
+		'SAMAS',
+		' SSS '
+	], {
+		S: '#forge:stone',
+		A: 'create:andesite_casing',
+		F: 'create:shaft',
+		M: 'gtceu:wood_frame'
+	});
+
+	event.shaped(Item.of('create:andesite_funnel',2), [
+		'AIA',
+		'ARA'
+	], {
+		R: 'gtceu:rubber_plate',
+		A: 'create:andesite_alloy',
+		I: 'gtceu:iron_foil'
+	});
+
+	event.shaped(Item.of('create:brass_funnel',2), [
+		'PEP',
+		'RBR'
+	], {
+		P: 'gtceu:brass_plate',
+		R: 'gtceu:brass_rod',
+		E: 'create:electron_tube',
+		B: 'gtceu:rubber_plate'
+	});
+
+	event.shaped(Item.of('create:fluid_pipe',3), [
+		'PFP',
+		'FPF'
+	], {
+		P: 'gtceu:copper_normal_fluid_pipe',
+		F: 'gtceu:copper_foil'
+	});
+
+	event.shaped(Item.of('create:chute',4), [
+		'PCP',
+		'PHP'
+	], {
+		P: 'gtceu:iron_plate',
+		C: 'minecraft:chest',
+		H: 'minecraft:hopper'
+	});
+
+	event.shaped(Item.of('create:smart_chute'), [
+		'FTF',
+		'FCF'
+	], {
+		F: 'gtceu:brass_foil',
+		C: 'create:chute',
+		T: 'create:electron_tube'
 	});
 
 	event.shaped(Item.of('create:water_wheel'), [
@@ -961,6 +1042,41 @@ ServerEvents.recipes(event => {
 		T: 'thermal:redstone_servo',
 		C: 'minecraft:cauldron'
 	});
+
+	let prec = 'gtceu:gold_plate'
+	event.recipes.create.sequenced_assembly([		
+		Item.of(`create:precision_mechanism`).withChance(.8),
+	], `gtceu:gold_plate`, [
+		event.recipes.createDeploying(prec, [prec, `create:cogwheel`]),
+		event.recipes.createDeploying(prec, [prec, `create:large_cogwheel`]),
+		event.recipes.createPressing(prec, prec),
+		event.recipes.createDeploying(prec, [prec, `gtceu:iron_screw`]),
+		event.recipes.createPressing(prec, prec)
+	]).transitionalItem(prec).loops(4);
+
+	let mech = 'create:brass_casing'
+	event.recipes.create.sequenced_assembly([		
+		Item.of(`create:mechanical_crafter`).withChance(1),
+	], `create:brass_casing`, [
+		event.recipes.createDeploying(mech, [mech, `create:cogwheel`]),
+		event.recipes.createPressing(mech, mech),
+		event.recipes.createDeploying(mech, [mech, `create:precision_mechanism`]),
+		event.recipes.createDeploying(mech, [mech, `minecraft:crafting_table`]),
+		event.recipes.createPressing(mech, mech)
+	]).transitionalItem(mech);
+
+	event.recipes.create.mechanical_crafting('gtceu:primitive_ore_factory', [
+        'RPR',
+        'RSR',
+		'BFB',
+        'BBB'
+    ], {
+        R: 'gtceu:brass_rod',
+        S: 'thermal:redstone_servo',
+        P: 'gtceu:brass_plate',
+        B: 'gtceu:firebricks',
+		F: 'minecraft:campfire'
+    });
 
 	// Post Cobble-Gen, Pre-Circuit
 

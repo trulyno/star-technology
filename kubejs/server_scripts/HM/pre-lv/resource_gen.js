@@ -134,6 +134,28 @@ ServerEvents.recipes(event => {
 		.inputFluids('minecraft:lava 1000', 'minecraft:water 1000')
 		.itemOutputs('minecraft:obsidian')
 		.duration(600);
+
+	const primitive_processing = [
+		{primary:'hematite',secondary:'magnetite',tertiary:'nickel'},
+		{primary:'chalcopyrite',secondary:'pyrite',tertiary:'gold'},
+		{primary:'sphalerite',secondary:'zinc',tertiary:'gallium'},
+		{primary:'cassiterite',secondary:'tin',tertiary:'bismuth'},
+		{primary:'galena',secondary:'sulfur',tertiary:'silver'},
+		{primary:'magnetite',secondary:'gold',tertiary:'iron'},
+		{primary:'pyrite',secondary:'sulfur',tertiary:'tricalcium_phosphate'}
+	]
+	
+	primitive_processing.forEach(material=>{
+		event.recipes.gtceu.primitive_ore_processing(`crushed_${material.primary}_ore`)
+			.itemInputs(`gtceu:crushed_${material.primary}_ore`, '2x #minecraft:coals')
+			.inputFluids('minecraft:water 1000')
+			.itemOutputs(`gtceu:${material.primary}_dust`)
+			.chancedOutput(`gtceu:${material.primary}_dust`, 5000, 0)
+			.chancedOutput(`gtceu:${material.secondary}_dust`, 2500, 0)
+			.chancedOutput(`gtceu:${material.tertiary}_dust`, 1250, 0)
+			.duration(400);
+	});
+
 });
 
 // Jungle Wood Stripping (Bark + Resin)
