@@ -23,18 +23,6 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 	};
 });
 
-// Placing campfires as unlit
-
-BlockEvents.placed(event => {
-	const { block } = event;
-
-	// if (block.id == 'minecraft:campfire') block.setBlockState({ lit: false }, 0);
-	// if (event.player.getUseItem().id == 'minecraft:flint_and_steel') return;
-
-	if (block.id == 'minecraft:campfire') block.set('minecraft:campfire', { lit: false });
-	if (block.id == 'minecraft:soul_campfire') block.set('minecraft:soul_campfire', { lit: false });
-});
-
 // In-world crafting for Crucible and Crafting Table
 
 const crucible_stages = [
@@ -58,7 +46,7 @@ crucible_stages.forEach(crucible => {
 		if (event.player.getOffHandItem() !== null) return;
 
 		event.block.set(get);
-		event.block.popItemFromFace(Item.of('gtceu:wood_dust'), 'up');
+		event.player.addItem(Item.of('gtceu:wood_dust'));
 	});
 });
 
@@ -128,13 +116,16 @@ ServerEvents.recipes(event => {
 // Jungle Wood Stripping (Bark + Resin)
 
 BlockEvents.rightClicked('minecraft:jungle_log', event => {
-	const { player, block, item } = event;
+	const { player, block, item, level } = event;
 
 	if (!item.hasTag('minecraft:axes')) return;
 
+	player.addItem(Item.of('farmersdelight:tree_bark'));
+	if (Math.random() < 0.1) player.addItem(Item.of('gtceu:sticky_resin'));
+
 	block.set('minecraft:stripped_jungle_log');
-	event.block.popItem(Item.of('farmersdelight:tree_bark'));
-	(Math.random() < 0.1) && event.block.popItem(Item.of('gtceu:sticky_resin'));
+	level.playSound(null, block.pos, "minecraft:item.axe.strip", "blocks");
+	player.swing();
 
 	event.cancel(true);
 });

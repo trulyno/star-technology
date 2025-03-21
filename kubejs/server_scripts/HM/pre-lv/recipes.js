@@ -367,7 +367,7 @@ ServerEvents.recipes(event => {
 	});
 
 	event.remove({ output: 'minecraft:campfire' });
-	event.shaped(Item.of('minecraft:campfire'/*, '{BlockStateTag:{lit:"false"}}'*/), [
+	event.shaped(Item.of('minecraft:campfire', '{BlockStateTag:{lit:"false"}}'), [
 		'BTB',
 		'TST',
 		'LLL'
@@ -377,10 +377,6 @@ ServerEvents.recipes(event => {
 		B: 'farmersdelight:tree_bark',
 		L: '#minecraft:logs'
 	});
-	// event.replaceOutput({ output: 'minecraft:soul_campfire' },
-	// 	'minecraft:soul_campfire',
-	// 	Item.of('minecraft:soul_campfire', '{BlockStateTag:{lit:"false"}}'
-	// ))
 
 	// Adjusted Recipes
 
