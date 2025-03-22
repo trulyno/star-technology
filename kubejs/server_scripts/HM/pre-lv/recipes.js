@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
 	});
 
 	event.shapeless(Item.of('gtceu:long_wood_rod'), [
-		'#forge:tools/files','minecraft:stick','minecraft:stick']);
+		'#forge:tools/files', 'minecraft:stick', 'minecraft:stick']);
 
 	event.shaped(Item.of('kubejs:basic_scavenging_rod'), [
 		'SPP',
@@ -393,7 +393,7 @@ ServerEvents.recipes(event => {
 	});
 
 	event.remove({ output: 'minecraft:campfire' });
-	event.shaped(Item.of('minecraft:campfire'/*, '{BlockStateTag:{lit:"false"}}'*/), [
+	event.shaped(Item.of('minecraft:campfire', '{BlockStateTag:{lit:"false"}}'), [
 		'BTB',
 		'TST',
 		'LLL'
@@ -403,10 +403,6 @@ ServerEvents.recipes(event => {
 		B: 'farmersdelight:tree_bark',
 		L: '#minecraft:logs'
 	});
-	// event.replaceOutput({ output: 'minecraft:soul_campfire' },
-	// 	'minecraft:soul_campfire',
-	// 	Item.of('minecraft:soul_campfire', '{BlockStateTag:{lit:"false"}}'
-	// ))
 
 	// Adjusted Recipes
 

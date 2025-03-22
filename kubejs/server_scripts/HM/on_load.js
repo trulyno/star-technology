@@ -7,7 +7,7 @@ ServerEvents.loaded(event => {
 	if (event.server.persistentData.load_check) return
 
 	// The actual code
-	event.server.setDifficulty("hard")
+	event.server.setDifficulty("hard", true)
 	event.server.gameRules.set("doWeatherCycle", false)
 	event.server.gameRules.set("waterSourceConversion", false)
 	event.server.gameRules.set("doPatrolSpawning", false)
