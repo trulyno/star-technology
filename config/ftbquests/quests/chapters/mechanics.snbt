@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["26E81A8B2EB80A6C"]
 			description: [
 				"Building your first multiblock may seem daunting, but dont fret as theres an easy guide for any multiblock through EMI!"
 				""
@@ -27,6 +28,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["26E81A8B2EB80A6C"]
 			description: [
 				"If you are running low on resources but want to speed up production, you can use one side of an already exsisting multiblock and build a second one off of it!"
 				""
@@ -43,6 +45,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["7E74A114F4054345"]
 			description: [
 				"Worried your multiblock extruder is going to use the wrong cast? Well theres a feature to stop that!"
 				""
@@ -61,6 +64,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["6EBA06E5F9B25100"]
 			description: [
 				"If you put two energy hatches onto a multiblock, it will allow you to \"Overclock\" the machine to the next voltage tier. "
 				"This is used quite a lot in the EBF to give you access to the next voltage tier of material but can be used on almost any other multiblock."
@@ -78,6 +82,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["775AAF108AFAF707"]
 			description: [
 				"When using a multiblock version of a single block, you have the option to \"Perfect Overclock\" the machine."
 				"You can access this in the same way as a normal Overclock however it will decrease the processing time even more!"
@@ -95,6 +100,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["4840218DA8E61B65"]
 			description: [
 				"One benefit of gaining access to the Large Chemical Reactor (LCR) is that you now have access to some chemical skips."
 				""
@@ -113,14 +119,11 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["171BD0E155CF98CA"]
 			description: [
 				"Fluid Output hatches have the power to be locked to only accept a certain fluid. This can be useful in multiblocks like the Large Chemical Reactor and the Distilation Tower which usually will have multiple fluids being made in the same machine."
 				""
 				"You can use this to have processing lines without fluids going to the wrong machine or the wrong tank and stopping the machine."
-				""
-				"&l&4WARNING"
-				""
-				"Due to a bug in Greg Tech, Greg filters can break when the world reloads, we recommend using a different mod so you don't run into any issues."
 			]
 			icon: "gtceu:mv_input_hatch"
 			id: "4A4275186719AD8D"
@@ -133,20 +136,24 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["6C5688897B6A4C42"]
 			description: [
 				"Each voltage tier has a cable material that is counted as a super conductor, which means there is no energy loss on a line of cables as well as being able to hold a higher amount of amperage."
 				""
 				"These consist of:"
-				"&5LV:&r Soul Infused"
-				"&5MV:&r Signalum"
-				"&5HV:&r Lumium"
+				"&7LV&r Soul Infused"
+				"&bMV:&r Signalum"
+				"&6HV:&r Lumium"
 				"&5EV:&r Enderium"
-				"&5IV:&r Shellite"
-				"&5Luv:&r Twinite"
-				"&5ZPM:&r Dragonsteel"
-				"&5UV:&r Prismalium and Melodium"
-				"&5UHV:&r Stellarium"
-				"&5UEV:&r Ancient Runicalium"
+				"&9IV:&r Shellite"
+				"&dLuV:&r Twinite"
+				"&cZPM:&r Dragonsteel"
+				"&3UV:&r Prismalium and Melodium"
+				"&4UHV:&r Stellarium"
+				"&aUEV:&r Ancient Runicalium"
+				""
+				"&7&lSpecial note:&r"
+				"Gregtech also adds it's own superconductors. These however are much harder to craft, and mostly get ignored because of this."
 			]
 			icon: "gtceu:soul_infused_hex_wire"
 			id: "18080B4F89AD24D2"
@@ -159,6 +166,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["14A9381889183318"]
 			description: [
 				"Throughout progression, you may want to check back at older circuit tiers to see if you have gained access to a more efficent recipe."
 				""
@@ -186,7 +194,6 @@
 				"&5-&r Having a preview of every multiblock in the pack"
 			]
 			id: "69D57FE912CAF112"
-			subtitle: "NOTE: EMI is disabled because of an incompatibility! It'll be back when it'll fix the issue."
 			tasks: [{
 				id: "0D132FC336812CBD"
 				title: "EMI Tricks"
@@ -197,6 +204,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["0F9486CD70580835"]
 			description: [
 				"Many Greg-Tech machines have a circuit configuration window found on the bottom left of the screen. Each circuit starting from Blank and going up to 32 refers to possible recipes each machine can utilise. "
 				""
@@ -216,6 +224,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["0A1BF10244D43021"]
 			description: [
 				"Some Greg-Tech machines have multiple machine modes that you can swap between with the window found on the left of the screen (UI). Doing this allows 1 machine to swap between multiple task."
 				""
