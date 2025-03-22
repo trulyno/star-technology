@@ -1083,6 +1083,7 @@
 		}
 		{
 			dependencies: ["6CC13BE9AD447218"]
+			description: ["The first step into making computers think."]
 			id: "68F878EC21CA1749"
 			rewards: [{
 				id: "04BE1D70705BBCD1"
@@ -1114,6 +1115,7 @@
 				"68F878EC21CA1749"
 				"3EEEC61CEE1B6BB2"
 			]
+			description: [".... Is it just me or did it just look back?"]
 			id: "18D5591BF53AD07F"
 			rewards: [{
 				id: "5B036F742F1DFE1B"
@@ -1121,6 +1123,7 @@
 				type: "item"
 			}]
 			size: 1.0d
+			subtitle: "It's alive?"
 			tasks: [{
 				id: "5993D645BF787D73"
 				item: "gtceu:neuro_processing_unit"
@@ -1152,6 +1155,7 @@
 		}
 		{
 			dependencies: ["01AF9486EA6DA792"]
+			description: ["The basis of cell reproduction."]
 			id: "3EEEC61CEE1B6BB2"
 			rewards: [{
 				id: "5F2F729A716E6C0C"
@@ -1169,6 +1173,7 @@
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
+			description: ["All these alloys and their names make you go crazy. Seriously, how do you pronounce some of those names."]
 			id: "2BA3AAAB77C094BC"
 			rewards: [{
 				id: "15F330C00DE4BA58"
@@ -1228,6 +1233,10 @@
 				"19BBC64C57C460E6"
 				"3FC351F05F2AC743"
 			]
+			description: [
+				"The second tier of Fusion Reactors."
+				"Each tier of Fusion Reactors overclocks recipes below it and has higher heat capacity to allow for more fusion recipes to be run."
+			]
 			id: "2911EC7333E0E9C5"
 			rewards: [{
 				count: 2
@@ -1247,6 +1256,7 @@
 		}
 		{
 			dependencies: ["36C01453717B249D"]
+			description: ["A precious metal made with 3 types of expensive resources. Used for &cZPM&r Field Generators and the second tier of Fusion Reactors."]
 			id: "19BBC64C57C460E6"
 			rewards: [{
 				id: "16D4F77CFAA94E4B"
@@ -1424,6 +1434,7 @@
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]
+			description: ["Even more parallels on your machine. If it didn't happen before, then now these will definitly outpace your perfect overclock cubes."]
 			id: "69E5F396CF39B8DC"
 			rewards: [{
 				id: "106CA303A0D7B2B6"
@@ -1441,6 +1452,7 @@
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]
+			description: ["This beautifull machine allows you to compress entire processing lines into one machine."]
 			id: "3E1CA9FFB9953F42"
 			rewards: [{
 				count: 2
@@ -1508,6 +1520,7 @@
 		}
 		{
 			dependencies: ["2911EC7333E0E9C5"]
+			description: ["The core &3UV&r material."]
 			id: "27C0ED4305E84D21"
 			rewards: [{
 				id: "2CB2FD24D7187D27"
@@ -1525,6 +1538,7 @@
 		}
 		{
 			dependencies: ["27C0ED4305E84D21"]
+			description: ["The heart of every &3UV&r machine."]
 			id: "3F4C068368F97580"
 			rewards: [{
 				id: "16A9EF2CDC5E6B40"
@@ -1542,6 +1556,7 @@
 		}
 		{
 			dependencies: ["2911EC7333E0E9C5"]
+			description: ["Tritanium is a material you are gonna need a ton of. If you have the Fusion Reactors, consider setting some on passive if you have the time."]
 			id: "6131A76D203DE6AB"
 			rewards: [{
 				id: "5DE37EDA23E177D0"
@@ -1559,6 +1574,7 @@
 		}
 		{
 			dependencies: ["2911EC7333E0E9C5"]
+			description: ["This is a material used for machines of &4UHV&r tier and beyond."]
 			id: "70AA84848FB2A9BB"
 			rewards: [{
 				id: "0ECD4E21E5FD1EDA"
@@ -1579,6 +1595,7 @@
 				"70AA84848FB2A9BB"
 				"68F878EC21CA1749"
 			]
+			description: ["A really big battery, but with big batteries comes big power drain."]
 			id: "151C2D784700BD49"
 			rewards: [{
 				id: "34F8D60C9177FE48"
@@ -1599,6 +1616,7 @@
 				"3F4C068368F97580"
 				"6131A76D203DE6AB"
 			]
+			description: ["&3UV&r power for all your machines."]
 			id: "0B7A0924AFE58559"
 			rewards: [{
 				id: "6B95CCF09AF3CE9A"
@@ -1616,6 +1634,7 @@
 		}
 		{
 			dependencies: ["3F4C068368F97580"]
+			description: ["This Maintenance Hatch tricks your machines into believing they are in normal Cleanrooms, allowing you to run cleanroom recipes outside of one."]
 			id: "3391903EBBB3F308"
 			rewards: [{
 				id: "5CAB5DD7B5EE938D"
@@ -1653,6 +1672,7 @@
 		}
 		{
 			dependencies: ["6131A76D203DE6AB"]
+			description: ["This is gonna be the final tier of Coils until you can reach Abydos. Swapping out all of your older Coils is recommended, because you will need the speed."]
 			id: "678B90BF2ACE2BBA"
 			rewards: [{
 				count: 2
@@ -1672,6 +1692,7 @@
 		}
 		{
 			dependencies: ["0B7A0924AFE58559"]
+			description: ["&4UHV&r recipe speeds."]
 			id: "155947C2913FFA42"
 			rewards: [{
 				id: "6C1602A5958BA368"
@@ -1689,6 +1710,7 @@
 		}
 		{
 			dependencies: ["155947C2913FFA42"]
+			description: ["&aUEV&r recipe speeds."]
 			id: "1B4B0A67B86B7D58"
 			rewards: [{
 				id: "676897D5A44043C4"
@@ -1745,6 +1767,7 @@
 				"678B90BF2ACE2BBA"
 				"3B69844600AD5430"
 			]
+			description: ["This material is used for some of the most important &4UHV&r machines."]
 			hide_dependent_lines: true
 			id: "02606EBF230281A3"
 			rewards: [{
@@ -1763,6 +1786,7 @@
 		}
 		{
 			dependencies: ["67ABB3BF6D0C183B"]
+			description: ["A fusion material made with Mk I Fusion Reactors. It had basically no use up until now, but that is about to change."]
 			hide_dependency_lines: true
 			id: "3B69844600AD5430"
 			rewards: [{
@@ -1970,7 +1994,11 @@
 		}
 		{
 			dependencies: ["3325914DB92AEF1B"]
-			description: ["&3UV&r superconductor, can hold 32 amps in a 1x cable."]
+			description: [
+				"&3UV&r superconductor, can hold 32 amps in a 1x cable."
+				""
+				"Prismalium is not the only &3UV&r superconductor. There is also Melodium, which is shown in the next quest chapter."
+			]
 			id: "56803575B2364F6A"
 			tasks: [{
 				id: "7DC8EBB02B5E2C9A"

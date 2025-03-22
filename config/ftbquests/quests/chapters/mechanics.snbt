@@ -151,6 +151,9 @@
 				"&3UV:&r Prismalium and Melodium"
 				"&4UHV:&r Stellarium"
 				"&aUEV:&r Ancient Runicalium"
+				""
+				"&7&lSpecial note:&r"
+				"Gregtech also adds it's own superconductors. These however are much harder to craft, and mostly get ignored because of this."
 			]
 			icon: "gtceu:soul_infused_hex_wire"
 			id: "18080B4F89AD24D2"

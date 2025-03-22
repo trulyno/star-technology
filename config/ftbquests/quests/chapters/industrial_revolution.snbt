@@ -522,7 +522,7 @@
 			}]
 			tasks: [{
 				id: "44BE119EB12AE1EE"
-				item: "thermal:obsidian_glass"
+				item: "thermal_extra:soul_infused_glass"
 				type: "item"
 			}]
 			x: -6.0d
