@@ -475,7 +475,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust');
 	event.recipes.create.pressing('gtceu:compressed_clay', 'minecraft:clay_ball');
 	event.recipes.create.pressing('kubejs:mud_brick', 'kubejs:packed_mud_ball');
-	event.recipes.create.pressing('gtceu:compressed_coke_clay', 'kubejs:coke_clay_dust');
+	event.recipes.create.pressing('gtceu:compressed_coke_clay', 'gtceu:coke_clay_dust');
 
 	// Metalurgy Rework via Create
 
@@ -687,8 +687,197 @@ ServerEvents.recipes(event => {
 		SEQItemPipeAssembly(type, 'huge', 12)
 	});
 
+	event.recipes.shapeless(Item.of('gtceu:wood_screw'), ['#forge:tools/files','gtceu:wood_bolt','gtceu:wood_bolt']);
+	[{size:'small',loops:1},{size:'normal',loops:3},{size:'large',loops:6}].forEach(woodpipe=>{
+		let inter = 'gtceu:wood_plate'
+		event.recipes.create.sequenced_assembly([
+			Item.of(`gtceu:wood_${woodpipe.size}_fluid_pipe`).withChance(1),
+		], `gtceu:wood_plate`, [
+			event.recipes.createDeploying(inter, [inter, `gtceu:wood_plate`]),
+			event.recipes.createDeploying(inter, [inter, 'gtceu:wood_screw']),
+			event.recipes.createPressing(inter, inter),
+			event.recipes.createCutting(inter, inter)
+		]).transitionalItem(inter).loops(woodpipe.loops);
+	});
+
+	event.recipes.shaped(Item.of('gtceu:kiln'), [
+		'BBB',
+		'BFB',
+		'PSP'
+	], {
+		B: 'minecraft:mud_bricks',
+		F: 'minecraft:furnace',
+		P: 'gtceu:iron_plate',
+		S: 'gtceu:iron_screw'
+	});
+
+	event.recipes.create.mechanical_crafting('gtceu:primitive_pump', [
+		'TNT',
+		'SVR',
+		'CLC'
+	], {
+		N: 'gtceu:wood_normal_fluid_pipe',
+		R: 'gtceu:iron_rotor',
+		T: 'gtceu:treated_wood_planks',
+		L: 'gtceu:wood_large_fluid_pipe',
+		C: 'minecraft:cobblestone_slab',
+		S: 'gtceu:iron_screw',
+		V: 'thermal:redstone_servo'
+	});
+
+	// ['flint','clay','brick'].forEach(Dust=>{event.recipes.shaped(Item.of(`gtceu:small_${Dust}_dust`), ['D','M'],{M:'#forge:tools/mortars',D:`minecraft:${Dust}`})});
+
+	event.remove({id: /^gtceu:.*glass_dust_flint.*/});
+	event.recipes.gtceu.primitive_mixer('glass')
+		.itemInputs('2x gtceu:quartz_sand_dust','1x gtceu:flint_dust')
+		.itemOutputs('1x gtceu:glass_dust')
+		.duration(320);
+	event.recipes.create.mixing('1x gtceu:glass_dust', ['2x gtceu:quartz_sand_dust','1x gtceu:flint_dust']);
+
+	event.recipes.gtceu.primitive_mixer('fireclay')
+		.itemInputs('1x gtceu:clay_dust','1x gtceu:brick_dust')
+		.itemOutputs('2x gtceu:fireclay_dust')
+		.duration(160);
+	event.recipes.create.mixing('2x gtceu:fireclay_dust', ['1x gtceu:clay_dust','1x gtceu:brick_dust']);
+
+	event.recipes.gtceu.primitive_mixer('coke_clay')
+		.itemInputs('5x gtceu:quartz_sand_dust','3x gtceu:clay_dust')
+		.itemOutputs('3x gtceu:coke_clay_dust')
+		.duration(200);
+	event.recipes.create.mixing('3x gtceu:coke_clay_dust', ['5x gtceu:quartz_sand_dust','3x gtceu:clay_dust']);
+	event.recipes.gtceu.centrifuge('coke_clay')
+		.itemInputs('3x gtceu:coke_clay_dust')
+		.itemOutputs('5x gtceu:quartz_sand_dust','3x gtceu:clay_dust')
+		.duration(168)
+		.EUt(30);
 
 	// Create Recipes
+	event.recipes.shaped(Item.of('create:item_vault'), [
+		'SFS',
+		'FBF',
+		'SFS'
+	], {
+		S: 'gtceu:iron_screw',
+		B: 'minecraft:barrel',
+		F: 'gtceu:iron_foil'
+	});
+
+	event.remove({id: 'thermal:rubber_3'});
+	event.recipes.create.compacting(Fluid.of('thermal:latex', 5), `16x minecraft:jungle_log`).heatRequirement('lowheated');
+	event.recipes.create.mixing(Fluid.of('gtceu:rubber', 288), [Fluid.of('thermal:latex', 288), '1x gtceu:sulfur_dust']).heatRequirement('superheated');
+	event.recipes.create.compacting(`1x thermal:cured_rubber`, Fluid.of('gtceu:rubber', 144));
+	event.recipes.create.compacting(`1x gtceu:rubber_plate`, `3x thermal:cured_rubber`);
+
+	event.recipes.create.mechanical_crafting('create:mechanical_arm', [
+		'HAR',
+		' R ',
+		'RN ',
+		'BPB',
+		'GCG'
+	], {
+		G: 'create:cogwheel',
+		B: 'gtceu:brass_plate',
+		H: 'create:brass_hand',
+		R: 'gtceu:brass_rod',
+		N: 'gtceu:brass_ring',
+		A: 'create:andesite_alloy',
+		P: 'create:precision_mechanism',
+		C: 'create:brass_casing'
+	});
+
+	event.recipes.shaped(Item.of('create:spout'), [
+		'PPP',
+		'GCG',
+		'RIR'
+	], {
+		G: 'minecraft:glass_pane',
+		C: 'create:copper_casing',
+		P: 'gtceu:copper_plate',
+		R: 'gtceu:rubber_ring',
+		I: 'gtceu:copper_normal_fluid_pipe'
+	});
+
+	event.recipes.shaped(Item.of('create:encased_chain_drive',2), [
+		'SN ',
+		'NCN',
+		' NS' 
+	], {
+		S: 'create:shaft',
+		C: 'create:andesite_casing',
+		N: 'minecraft:chain'
+	});
+
+	event.recipes.shaped(Item.of('create:adjustable_chain_gearshift',2), [
+		'SNT',
+		'NCN',
+		'TNS' 
+	], {
+		S: 'create:shaft',
+		C: 'create:andesite_casing',
+		N: 'minecraft:chain',
+		T: 'create:electron_tube'
+	});
+
+	event.recipes.shaped(Item.of('create:gearshift'), [
+		'RCG'
+	], {
+		R: 'minecraft:redstone_torch',
+		C: 'create:andesite_casing',
+		G: 'create:cogwheel'
+	});
+
+	event.recipes.shaped(Item.of('create:sequenced_gearshift'), [
+		'RCG'
+	], {
+		R: 'create:electron_tube',
+		C: 'create:brass_casing',
+		G: 'create:cogwheel'
+	});
+
+	event.recipes.shaped(Item.of('create:depot'), [
+		'APA',
+		'SCS'
+	], {
+		P: 'gtceu:iron_plate',
+		C: 'create:andesite_casing',
+		A: 'create:andesite_alloy',
+		S: 'gtceu:iron_screw'
+	});
+
+	event.recipes.shaped(Item.of('create:fluid_tank',2), [
+		'PGP',
+		'GCG',
+		'PGP'
+	], {
+		G: 'minecraft:glass_pane',
+		C: 'create:copper_casing',
+		P: 'gtceu:copper_plate',
+	});
+
+	event.recipes.shaped(Item.of('create:weighted_ejector'), [
+		'DPA',
+		'GCS'
+	], {
+		G: 'create:cogwheel',
+		A: 'create:andesite_alloy',
+		P: 'minecraft:stone_pressure_plate',
+		C: 'create:depot',
+		S: 'create:shaft',
+		D: 'gtceu:gold_plate'
+	});
+
+	event.recipes.create.mechanical_crafting('create:steam_engine', [
+			'GSG',
+			' A ',
+			'PAP',
+			'PCP'
+		], {
+			G: 'gtceu:gold_ring',
+			S: 'create:shaft',
+			A: 'create:andesite_alloy',
+			P: 'gtceu:copper_plate',
+			C: 'create:copper_casing'
+		});
 
 	event.shapeless(Item.of('gtceu:wood_plate', 2), [
 		'#forge:tools/files', '#minecraft:planks', '#minecraft:planks'
@@ -711,13 +900,13 @@ ServerEvents.recipes(event => {
 	});
 
 	event.shaped(Item.of('create:copper_casing'), [
-		'PMP',
-		'RFR',
-		'PHP'
+		'RMR',
+		'PFP',
+		'RHR'
 	], {
-		P: 'gtceu:copper_plate',
+		P: 'gtceu:pig_iron_plate',
 		M: '#forge:tools/mallets',
-		R: 'gtceu:copper_normal_fluid_pipe',
+		R: 'gtceu:copper_small_fluid_pipe',
 		F: 'gtceu:pig_iron_frame',
 		H: '#forge:tools/hammers'
 	});
@@ -856,6 +1045,78 @@ ServerEvents.recipes(event => {
 		R: 'gtceu:brass_rod',
 		E: 'create:electron_tube',
 		B: 'gtceu:rubber_plate'
+	});
+
+	event.shaped(Item.of('create:andesite_tunnel',2), [
+		' FM',
+		'FCF',
+		'AF '
+	], {
+		F: 'create:andesite_funnel',
+		C: 'create:andesite_casing',
+		A: 'create:andesite_alloy',
+		M: '#forge:tools/mallets'
+	});
+
+	event.shaped(Item.of('create:brass_tunnel',2), [
+		' FM',
+		'FCF',
+		'TF '
+	], {
+		F: 'create:brass_funnel',
+		C: 'create:brass_casing',
+		T: 'create:electron_tube',
+		M: '#forge:tools/mallets'
+	});
+
+	event.remove({output: 'thermal:drill_head'});
+	let drill = 'gtceu:double_iron_plate'
+	event.recipes.create.sequenced_assembly([
+		Item.of('thermal:drill_head').withChance(1),
+	], drill, [
+		event.recipes.createDeploying(drill, [drill, 'create:andesite_alloy']),
+		event.recipes.createDeploying(drill, [drill, 'create:andesite_alloy']),
+		event.recipes.createPressing(drill, drill),
+		event.recipes.createDeploying(drill, [drill, 'gtceu:iron_plate']),
+		event.recipes.createCutting(drill,drill),
+	]).transitionalItem(drill).loops(2)
+
+	event.shaped(Item.of('create:mechanical_drill'), [
+		'MDH',
+		'ACA',
+		'ArrSA'
+	], {
+		M: '#forge:tools/mallets',
+		H: '#forge:tools/hammers',
+		W: '#forge:tools/wrenches',
+		S: 'create:shaft',
+		C: 'create:andesite_casing',
+		D: 'thermal:drill_head',
+		A: 'create:andesite_alloy'
+	});
+
+	event.shaped(Item.of('create:brass_hand'), [
+		'BBB',
+		'PPP',
+		'ARA'
+	], {
+		B: 'gtceu:brass_bolt',
+		P: 'gtceu:brass_plate',
+		R: 'gtceu:zinc_ring',
+		A: 'create:andesite_alloy'
+	});
+
+	event.shaped(Item.of('create:deployer'), [
+		'EPE',
+		'SCS',
+		'AHA'
+	], {
+		E: 'create:electron_tube',
+		P: 'create:piston_extension_pole',
+		S: 'create:shaft',
+		A: 'create:andesite_alloy',
+		C: 'create:andesite_casing',
+		H: 'create:brass_hand'
 	});
 
 	event.shaped(Item.of('create:fluid_pipe',3), [

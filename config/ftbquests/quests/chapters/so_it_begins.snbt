@@ -30,18 +30,24 @@
 	quests: [
 		{
 			description: ["This isn't the normal StarT pack you are used to, if it was an option there, it's time to become an expert here."]
+			icon: "minecraft:coarse_dirt"
 			id: "11792AD3856CC11A"
 			tasks: [{
-				id: "298B75EABFFE9FCA"
-				title: "So... You have chosen Death"
-				type: "checkmark"
+				icon: "minecraft:coarse_dirt"
+				id: "3573B9BF6334141B"
+				observe_type: 0
+				timer: 0L
+				title: "Strange Beginnings"
+				to_observe: "minecraft:coarse_dirt"
+				type: "observation"
 			}]
+			title: "So.... You have chosen death"
 			x: -8.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["11792AD3856CC11A"]
-			description: ["Only break a few"]
+			description: ["Only break a few, you'll need some for Fibers and to get Saplings"]
 			icon: "minecraft:dead_bush"
 			id: "66B461268D304ADD"
 			tasks: [{
@@ -53,7 +59,7 @@
 				to_observe: "minecraft:dead_bush"
 				type: "observation"
 			}]
-			title: "Dead Bush"
+			title: "Dead Bush [&l&4READ QUEST&r]"
 			x: -8.5d
 			y: -1.5d
 		}
@@ -1228,8 +1234,8 @@
 			]
 			id: "6FEC217C4653943D"
 			tasks: [{
-				id: "31D66E14112E00DB"
-				item: "kubejs:coke_clay_dust"
+				id: "3C1C0D4A112A74A3"
+				item: "gtceu:coke_clay_dust"
 				type: "item"
 			}]
 			x: -1.0d
@@ -1356,6 +1362,7 @@
 			dependencies: [
 				"6C4B325AEF8A5B7D"
 				"629BDB317D0A8DD3"
+				"41D300F6E11B1EA1"
 			]
 			id: "19A0099F62CB5FF1"
 			tasks: [{
@@ -1668,8 +1675,8 @@
 				item: "create:brass_casing"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 12.0d
+			x: 0.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -1686,7 +1693,11 @@
 			y: 13.5d
 		}
 		{
-			dependencies: ["7525BDACB9A9AC41"]
+			dependencies: [
+				"7525BDACB9A9AC41"
+				"4002DDFC6025B01D"
+			]
+			dependency_requirement: "one_started"
 			id: "224916FFC857C099"
 			tasks: [{
 				id: "666AF49A691416E1"
@@ -1705,13 +1716,13 @@
 				item: "create:copper_casing"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 15.0d
+			x: -1.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
 				"1E818A6929B6C982"
-				"6C4B325AEF8A5B7D"
+				"311B111EA277454D"
 			]
 			id: "049DA0A4C3E5EFFF"
 			tasks: [{
@@ -1740,6 +1751,7 @@
 				"684FAA520167CC51"
 				"4917BE27976C3A9A"
 			]
+			hide_dependent_lines: true
 			id: "5D7047EF3399D10B"
 			tasks: [{
 				id: "03EDE887E0E0F5F5"
@@ -1750,40 +1762,39 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["5D7047EF3399D10B"]
+			dependencies: ["5819AF3E6CCDB826"]
+			dependency_requirement: "one_completed"
 			id: "6A9AED442BB9370C"
 			tasks: [{
 				id: "6E58C21CA4DFAA71"
 				item: "thermal:latex_bucket"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 10.5d
+			x: -1.75d
+			y: 15.75d
 		}
 		{
-			dependencies: [
-				"1ABF4784F033D41A"
-				"4936CD72CB6A7C89"
-			]
+			dependencies: ["4936CD72CB6A7C89"]
 			id: "626D392024112D50"
 			tasks: [{
 				id: "185D41255049C1EB"
 				item: "thermal:cured_rubber"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 7.5d
+			x: -2.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["626D392024112D50"]
+			hide_dependent_lines: true
 			id: "311B111EA277454D"
 			tasks: [{
 				id: "02269408CE11D04B"
 				item: "gtceu:rubber_plate"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 6.0d
+			x: -4.0d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -1959,8 +1970,8 @@
 				item: "minecraft:gold_nugget"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 16.5d
+			x: -1.75d
+			y: 14.25d
 		}
 		{
 			dependencies: [
@@ -2024,6 +2035,7 @@
 				"60916F46BE0033CA"
 				"1472BFF306FEA342"
 			]
+			hide_dependent_lines: true
 			id: "5819AF3E6CCDB826"
 			tasks: [{
 				id: "224060CF6DFACF2A"
@@ -2086,15 +2098,19 @@
 			y: 13.5d
 		}
 		{
-			dependencies: ["6A9AED442BB9370C"]
+			dependencies: [
+				"6A9AED442BB9370C"
+				"65DA1BDA4D9A9B56"
+				"1ABF4784F033D41A"
+			]
 			id: "4936CD72CB6A7C89"
 			tasks: [{
-				id: "5AA171ADB94A7663"
-				item: "thermal:rubber"
+				id: "75A93171F3C2053E"
+				item: "gtceu:rubber_bucket"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 9.0d
+			x: -1.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["684FAA520167CC51"]
@@ -2108,6 +2124,7 @@
 			y: 15.0d
 		}
 		{
+			dependencies: ["50F2743FA699173A"]
 			id: "3A3BD0ECA7FC8D38"
 			tasks: [{
 				id: "0DE497BF1010AAA2"
