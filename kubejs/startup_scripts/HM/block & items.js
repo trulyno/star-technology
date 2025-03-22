@@ -65,18 +65,19 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			`Incomplete ${metal} Rotor`,
 			`Incomplete ${metal} Spring`,
 			`Incomplete Small ${metal} Spring`,
-			`Incomplete 1x ${metal} Wire`,
+			`Incomplete 1x ${metal} Wire`,//
 			`Incomplete ${metal} Fine Wire`,
-			`Incomplete ${metal} Cable`,
-			`Incomplete ${metal} Fluid Pipe`,
-			`Incomplete ${metal} Item Pipe`,
+			`Incomplete ${metal} Cable`,//
+			`Incomplete ${metal} Fluid Pipe`,//
+			`Incomplete ${metal} Item Pipe`,//
 		]
 
 		metals.forEach(metal => {
 			parts(metal).forEach(part =>
 				event
-					.create(to_id(part))
+					.create(to_id(part), 'create:sequenced_assembly')
 					.displayName(part)
+					.texture('kubejs:item/hm/incomplete_parts/' + to_id(part))
 			);
 		});
 
