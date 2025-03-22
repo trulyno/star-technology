@@ -4,25 +4,47 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 	// Coarse Dirt Scavenging
 
 	BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
-		const { player, block } = event;
-		const main_hand = player.getMainHandItem();
+		const { player, block, item, level } = event;
+
 		const pop_up = (item, chance) => (Math.random() < chance) && block.popItemFromFace(item, 'up');
 
-		if (main_hand == null && player.getOffHandItem() == null && player.isCrouching()) {
+		const dig = () => {
+			level.playSound(null, block.pos, "minecraft:block.composter.fill", "blocks");
+			player.swing();
+		}
+
+		const damage_tool = (tool) => {
+			if (tool.damageValue < tool.maxDamage) {
+				tool.damageValue++
+			} else {
+				tool.count--
+				level.playSound(null, block.pos, "minecraft:entity.item.break", "blocks");
+			}
+		}
+
+		if (player.getMainHandItem() == null && player.getOffHandItem() == null && player.isCrouching()) {
 			pop_up('kubejs:flint_shard', 0.25);
 			pop_up('minecraft:cookie', 0.002);
+
+			dig();
 		};
 
-		if (main_hand == 'kubejs:basic_scavenging_rod') {
+		if (item.id == 'kubejs:basic_scavenging_rod') {
 			pop_up('kubejs:flint_shard', 0.5);
 			pop_up('kubejs:flint_shard', 0.5);
 			pop_up('minecraft:cookie', 0.003);
+
+			damage_tool(item);
+			dig();
 		};
 
-		if (main_hand == 'kubejs:scavenging_rod') {
+		if (item.id == 'kubejs:scavenging_rod') {
 			pop_up('minecraft:flint', 0.4);
 			pop_up('kubejs:flint_shard', 0.4);
 			pop_up('minecraft:cookie', 0.004);
+
+			damage_tool(item);
+			dig();
 		};
 	});
 
