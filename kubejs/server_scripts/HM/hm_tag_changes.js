@@ -6,7 +6,7 @@ ServerEvents.tags('block', event => {
 		event.add('minecraft:needs_stone_tool', `minecraft:stripped_${log}_log`);
 		event.add('minecraft:needs_stone_tool', `minecraft:stripped_${log}_wood`);
 		event.add('minecraft:needs_iron_tool', `minecraft:${log}_wood`);
-		event.add('minecraft:needs_iron_tool', `minecraft:${log}_log`)
+		event.add('minecraft:needs_iron_tool', `minecraft:${log}_log`);
 	});
 });
 
@@ -15,6 +15,7 @@ ServerEvents.tags('item', event => {
 	event.remove('forge:tools/mortars', 'gtceu:flint_mortar');
 	event.add('forge:tools/axes', /gtceu:.*axe/);
 	event.add('createlowheated:burner_starters', 'gtceu:matchbox');
+	event.add('minecraft:poor_coals', 'kubejs:charcoal_pellet')
 });
 
 };//if end

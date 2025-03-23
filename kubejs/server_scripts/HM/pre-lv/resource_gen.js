@@ -48,6 +48,76 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		};
 	});
 
+	BlockEvents.rightClicked('minecraft:grass_block', event => {
+		const { player, block, item, level } = event;
+
+		const pop_up = (item, chance) => (Math.random() < chance) && block.popItemFromFace(item, 'up');
+
+		const dig = () => {
+			level.playSound(null, block.pos, "minecraft:block.composter.fill", "blocks");
+			player.swing();
+		}
+
+		const damage_tool = (tool) => {
+			if (tool.damageValue < tool.maxDamage) {
+				tool.damageValue++
+			} else {
+				tool.count--
+				level.playSound(null, block.pos, "minecraft:entity.item.break", "blocks");
+			}
+		}
+
+		if (player.getMainHandItem() == null && player.getOffHandItem() == null && player.isCrouching()) {
+			pop_up('exnihilosequentia:stone_pebble', 0.1);
+			pop_up('exnihilosequentia:andesite_pebble', 0.1);
+			pop_up('exnihilosequentia:basalt_pebble', 0.1);
+			pop_up('exnihilosequentia:blackstone_pebble', 0.1);
+			pop_up('exnihilosequentia:deepslate_pebble', 0.1);
+			pop_up('exnihilosequentia:diorite_pebble', 0.1);
+			pop_up('exnihilosequentia:granite_pebble', 0.1);
+			pop_up('exnihilosequentia:tuff_pebble', 0.1);
+			pop_up('exnihilosequentia:calcite_pebble', 0.1);
+			pop_up('exnihilosequentia:dripstone_pebble', 0.1);
+			pop_up('minecraft:cookie', 0.006);
+
+			dig();
+		};
+
+		if (item.id == 'kubejs:basic_scavenging_rod') {
+			pop_up('exnihilosequentia:stone_pebble', 0.125);
+			pop_up('exnihilosequentia:andesite_pebble', 0.125);
+			pop_up('exnihilosequentia:basalt_pebble', 0.125);
+			pop_up('exnihilosequentia:blackstone_pebble', 0.125);
+			pop_up('exnihilosequentia:deepslate_pebble', 0.125);
+			pop_up('exnihilosequentia:diorite_pebble', 0.125);
+			pop_up('exnihilosequentia:granite_pebble', 0.125);
+			pop_up('exnihilosequentia:tuff_pebble', 0.125);
+			pop_up('exnihilosequentia:calcite_pebble', 0.125);
+			pop_up('exnihilosequentia:dripstone_pebble', 0.125);
+			pop_up('minecraft:cookie', 0.008);
+
+			damage_tool(item);
+			dig();
+		};
+
+		if (item.id == 'kubejs:scavenging_rod') {
+			pop_up('exnihilosequentia:stone_pebble', 0.15);
+			pop_up('exnihilosequentia:andesite_pebble', 0.15);
+			pop_up('exnihilosequentia:basalt_pebble', 0.15);
+			pop_up('exnihilosequentia:blackstone_pebble', 0.15);
+			pop_up('exnihilosequentia:deepslate_pebble', 0.15);
+			pop_up('exnihilosequentia:diorite_pebble', 0.15);
+			pop_up('exnihilosequentia:granite_pebble', 0.15);
+			pop_up('exnihilosequentia:tuff_pebble', 0.15);
+			pop_up('exnihilosequentia:calcite_pebble', 0.15);
+			pop_up('exnihilosequentia:dripstone_pebble', 0.15);
+			pop_up('minecraft:cookie', 0.01);
+
+			damage_tool(item);
+			dig();
+		};
+	});
+
 	// In-world recipes for Crucible and Crafting Table
 
 	[
@@ -73,9 +143,9 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 	});
 
 	[
-		{ hit: 'minecraft:jungle_log', tool: 'forge:tools/knives', get: 'kubejs:crafting_stage_1' },
-		{ hit: 'kubejs:crafting_stage_1', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_2' },
-		{ hit: 'kubejs:crafting_stage_2', tool: 'forge:tools/axes', get: 'kubejs:crafting_stage_3' },
+		{ hit: 'minecraft:jungle_log', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_1' },
+		{ hit: 'kubejs:crafting_stage_1', tool: 'forge:tools/axes', get: 'kubejs:crafting_stage_2' },
+		{ hit: 'kubejs:crafting_stage_2', tool: 'forge:tools/knives', get: 'kubejs:crafting_stage_3' },
 	].forEach(table => {
 		const { hit, tool, get } = table;
 
@@ -115,7 +185,7 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		});
 
 		event.remove({ id: 'minecraft:coarse_dirt' })
-		event.shaped(Item.of('minecraft:coarse_dirt'), [
+		event.shaped(Item.of('minecraft:coarse_dirt',4), [
 			'DFD',
 			' F ',
 			'DFD'
@@ -125,6 +195,7 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		});
 
 		event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '2x minecraft:flint']);
+		event.recipes.create.mixing('2x minecraft:coarse_dirt', ['2x minecraft:dirt', '1x minecraft:gravel']);
 
 		const stones = ['andesite', 'basalt', 'blackstone', 'deepslate', 'diorite', 'granite', 'tuff', 'calcite', 'dripstone']
 
@@ -177,6 +248,42 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 				.duration(400);
 		});
 
+		event.recipes.gtceu.barrel('slitake')
+			.notConsumable('thermal:slime_mushroom_spores')
+			.inputFluids('exnihilosequentia:witch_water 200')
+			.chancedOutput('thermal:slime_mushroom_spores', 7000, 0)
+			.duration(240);
+
+		event.recipes.gtceu.barrel_transformation('soul_sand')
+			.itemInputs('minecraft:sand')
+			.inputFluids('exnihilosequentia:witch_water 1000')
+			.itemOutputs('minecraft:soul_sand')
+			.duration(600);
+
+		event.recipes.gtceu.barrel_transformation('witch_water')
+			.chancedInput('exnihilosequentia:mycelium_spores', 5000, 0)
+			.inputFluids('minecraft:water 1000')
+			.outputFluids('exnihilosequentia:witch_water 1000')
+			.duration(800);
+
+		event.recipes.gtceu.barrel_composting('dirt')
+			.itemInputs('4x #minecraft:leaves')
+			.itemOutputs('1x minecraft:dirt')
+			.duration(160);
+
+		const latexType = [{fuel: 'minecraft:bone_meal', circ: '1'},{fuel: 'thermal:compost', circ: '2'},{fuel: 'gtceu:fertilizer', circ: '3'}]
+		latexType.forEach(latex=>{
+		event.recipes.gtceu.latex_plantation(`latex_${latex.circ}`)
+			.chancedInput(`${latex.fuel}`, 2500, 0)
+			.notConsumable('gtceu:iron_screw')
+			.circuit(latex.circ)
+			.outputFluids(`thermal:latex ${100+50*latex.circ}`)
+			.duration(160);
+		});
+		event.recipes.gtceu.latex_plantation(`latex`)
+			.notConsumable('gtceu:wood_screw')
+			.outputFluids(`thermal:latex 100`)
+			.duration(160);
 	});
 
 	// Jungle Wood Stripping (Bark + Resin)

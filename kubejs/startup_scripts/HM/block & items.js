@@ -94,7 +94,7 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		event.create('scavenging_rod')
 			.displayName('Scavenging Rod')
 			.rarity('common')
-			.maxDamage(512)
+			.maxDamage(1024)
 			.unstackable()
 			.texture(`kubejs:item/hm/pre-lv/scavenging_rod`);
 
@@ -148,6 +148,18 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 				.tagBlock("minecraft:mineable/axe")
 				.tagBlock("minecraft:needs_stone_tool");
 		});
+	});
+
+	ItemEvents.modification(event => {
+		event.modify('minecraft:cocoa_beans', item => {
+			item.foodProperties = food => {
+			food.hunger(1)
+			food.saturation(1)
+			food.effect('minecraft:slowness', 80, 2, 1)
+			food.effect('minecraft:hunger', 80, 1, .1)
+			food.effect('minecraft:blindness', 20, 1, .05)
+			}
+		})
 	});
 
 }; // if end

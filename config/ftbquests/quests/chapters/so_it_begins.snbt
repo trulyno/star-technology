@@ -29,7 +29,11 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["This isn't the normal StarT pack you are used to, if it was an option there, it's time to become an expert here."]
+			description: [
+				"This isn't the normal StarT pack you are used to, if it was an option there, it's time to become an expert here."
+				""
+				"Make Sure to Keep 1 Coarse Dirt available at &4&l[ALL TIMES]&r to drastically reduce softlocking odds"
+			]
 			icon: "minecraft:coarse_dirt"
 			id: "11792AD3856CC11A"
 			tasks: [{
@@ -68,6 +72,7 @@
 				"35A7940BFFC6E33D"
 				"44E7C69C6BC48296"
 			]
+			description: ["This is my first tool..... oh no"]
 			id: "525886980CC24650"
 			tasks: [{
 				id: "42339E020804101F"
@@ -93,7 +98,7 @@
 		}
 		{
 			dependencies: ["1EA467441DE65C0D"]
-			description: [""]
+			description: ["Strip Straw with a knife and you have \"string\""]
 			id: "34FB1FD1C7726DE6"
 			tasks: [{
 				id: "3EA81EC7D2D518A1"
@@ -124,6 +129,7 @@
 		}
 		{
 			dependencies: ["66B461268D304ADD"]
+			description: ["You'll get 1-2 Sticks per dead bush, though again don't break them all"]
 			id: "35A7940BFFC6E33D"
 			tasks: [{
 				id: "345DFC3F759FEA02"
@@ -163,6 +169,7 @@
 		}
 		{
 			dependencies: ["469CAF0D80978B00"]
+			description: ["wdym I can't mine barked logs...."]
 			id: "7CF45E2FF79F0A97"
 			tasks: [{
 				id: "1D19FBA9060FB62D"
@@ -190,8 +197,9 @@
 		}
 		{
 			dependencies: ["469CAF0D80978B00"]
+			description: ["I guess we will be stripping a LOT of logs"]
+			hide_dependent_lines: true
 			id: "2938B6A5159F3BE8"
-			optional: true
 			tasks: [
 				{
 					id: "4D4156F622D3CF0D"
@@ -221,6 +229,7 @@
 		}
 		{
 			dependencies: ["34FB1FD1C7726DE6"]
+			description: ["Hint: Always keep multiple of a tool on you so you dont need the emergency item"]
 			id: "5A4DF6397D7F2B78"
 			tasks: [{
 				id: "1236C30783F4224B"
@@ -292,6 +301,17 @@
 				"7CF45E2FF79F0A97"
 				"525886980CC24650"
 			]
+			description: [
+				"Interact with a stripped jungle log in the following:"
+				""
+				"Knife"
+				""
+				"Axe"
+				""
+				"Saw"
+				""
+				"Knife"
+			]
 			id: "01DB711C1AC26A98"
 			tasks: [{
 				id: "0336AE6F2429BCE9"
@@ -322,13 +342,26 @@
 				item: "farmersdelight:canvas"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.0d
 			y: 3.0d
 		}
 		{
 			dependencies: [
 				"54CFAAE3EA5F56D0"
-				"5A3FCB5053FCD9C7"
+				"5A4DF6397D7F2B78"
+				"525886980CC24650"
+				"469CAF0D80978B00"
+			]
+			description: [
+				"Interact with a barked jungle log in the following:"
+				""
+				"Saw"
+				""
+				"Axe"
+				""
+				"Knife"
+				""
+				"Canvas"
 			]
 			id: "13F8BDB87F975319"
 			tasks: [{
@@ -340,7 +373,7 @@
 				to_observe: "minecraft:crafting_table"
 				type: "observation"
 			}]
-			x: -2.5d
+			x: -1.0d
 			y: 3.0d
 		}
 		{
@@ -381,7 +414,7 @@
 				item: "minecraft:coarse_dirt"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -4.0d
 			y: 6.0d
 		}
 		{
@@ -396,8 +429,8 @@
 				item: "exnihilosequentia:string_mesh"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 4.5d
+			x: -2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -427,7 +460,7 @@
 				type: "item"
 			}]
 			title: "INFINITE DIRT"
-			x: -1.0d
+			x: -2.5d
 			y: 6.0d
 		}
 		{
@@ -440,7 +473,7 @@
 			}]
 			title: "Stones"
 			x: -4.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["24B0865E6FC3EA96"]
@@ -456,6 +489,7 @@
 		}
 		{
 			dependencies: ["184FE341A3AD7B1E"]
+			description: ["Break Cobblestone with a &o&7Hammer&r to break it down"]
 			id: "246E67D64A5EDF08"
 			tasks: [{
 				id: "4FD3AF06EDB6D228"
@@ -558,7 +592,10 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["13F8BDB87F975319"]
+			dependencies: [
+				"13F8BDB87F975319"
+				"2938B6A5159F3BE8"
+			]
 			id: "6A62DF26FC748F1A"
 			tasks: [{
 				id: "618592C224E24EDE"
@@ -572,7 +609,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6AEAD96B7394C208"]
@@ -667,27 +704,30 @@
 				"5D9CA9E8B676679A"
 				"1810B4921EB6640E"
 			]
+			description: ["Soaking Dust with a Water Bowl might do something...."]
 			id: "08B170E72119FDD4"
 			optional: true
 			tasks: [{
 				id: "6D5D24F5642120A5"
 				item: "minecraft:clay"
+				title: "Look at Clay"
 				type: "item"
 			}]
+			title: "Clay"
 			x: 2.0d
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"6131B93AB7C44162"
-				"1810B4921EB6640E"
-			]
+			dependencies: ["1810B4921EB6640E"]
+			description: ["Soaking Dirt with a Water Bowl might do something...."]
 			id: "0EF265815EB8F86F"
 			tasks: [{
 				id: "233B1E949FA8B230"
 				item: "minecraft:mud"
+				title: "Look at Mud"
 				type: "item"
 			}]
+			title: "Mud"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -727,7 +767,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -741,7 +781,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -844,7 +884,7 @@
 			]
 			title: "Ore Chunks"
 			x: -1.0d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -865,19 +905,21 @@
 				}
 			}
 			id: "7D83A21F7DB27B47"
-			tasks: [
-				{
-					id: "1A8F5DB99564F3CA"
-					item: "gtceu:concrete_bucket"
-					optional_task: true
-					type: "item"
+			tasks: [{
+				id: "54862B5E215F9EFC"
+				item: {
+					Count: 1
+					id: "woodenbucket:wooden_bucket"
+					tag: {
+						Damage: 0
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:concrete"
+						}
+					}
 				}
-				{
-					id: "072B52E1F78B2EB4"
-					title: "mfw Wooden Bucket"
-					type: "checkmark"
-				}
-			]
+				type: "item"
+			}]
 			x: 2.0d
 			y: 1.5d
 		}
@@ -903,6 +945,19 @@
 				"60916F46BE0033CA"
 			]
 			id: "41D300F6E11B1EA1"
+			rewards: [{
+				auto: "enabled"
+				command: "/playsound gtceu:sus master @a"
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "chipped:block/calcite/unamused_calcite"
+					}
+				}
+				id: "53FF0F0E1BEE1B52"
+				type: "command"
+			}]
 			tasks: [{
 				id: "1365D05A7F5E99A7"
 				item: "minecraft:furnace"
@@ -1010,8 +1065,8 @@
 				item: "gtceu:rugged_alloyer"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 10.5d
+			x: -4.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2CE500506AE84E1A"]
@@ -1054,7 +1109,7 @@
 				}
 			]
 			title: "Easier Ingots"
-			x: -4.0d
+			x: -5.5d
 			y: 9.0d
 		}
 		{
@@ -1096,6 +1151,7 @@
 		}
 		{
 			dependencies: ["5D9CA9E8B676679A"]
+			hide_dependent_lines: true
 			id: "1A34B55754A8965F"
 			tasks: [
 				{
@@ -1115,8 +1171,8 @@
 				}
 			]
 			title: "Uncommon Minerals"
-			x: -5.5d
-			y: 9.0d
+			x: -7.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1472BFF306FEA342"]
@@ -1140,8 +1196,8 @@
 				type: "item"
 			}]
 			title: "Pressing"
-			x: -2.5d
-			y: 12.0d
+			x: -5.5d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1150,6 +1206,7 @@
 			]
 			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "4F89E871129D842B"
 			tasks: [{
 				id: "7E83DD6E360104F0"
@@ -1163,8 +1220,8 @@
 				title: "Any #forge:tools/mortars"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 10.5d
+			x: 8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["280AD7F16F6654B4"]
@@ -1196,13 +1253,14 @@
 					type: "item"
 				}
 			]
-			x: -7.0d
-			y: 3.0d
+			x: 6.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"4F89E871129D842B"
 				"41EEEE63FF53A037"
+				"6994BA308DC55ED2"
 			]
 			id: "6FEC217C4653943D"
 			tasks: [{
@@ -1217,6 +1275,7 @@
 			dependencies: [
 				"4F89E871129D842B"
 				"4F550705B0576891"
+				"6994BA308DC55ED2"
 			]
 			id: "1585BE531365AF58"
 			tasks: [{
@@ -1305,8 +1364,8 @@
 				title: "Any #forge:tools/screwdrivers"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 1.5d
+			x: 6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1327,8 +1386,8 @@
 				title: "Any #forge:tools/wire_cutters"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 4.5d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1413,8 +1472,8 @@
 				item: "gtceu:coke_oven"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 9.0d
+			x: 3.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1429,7 +1488,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
@@ -1440,7 +1499,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1453,8 +1512,8 @@
 				item: "gtceu:primitive_pump"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 15.0d
+			x: 8.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["1AD7CB6C61196D5C"]
@@ -1468,8 +1527,8 @@
 				type: "item"
 			}]
 			title: "INFINITE WATER"
-			x: 8.0d
-			y: 16.5d
+			x: 9.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["1472BFF306FEA342"]
@@ -1480,8 +1539,8 @@
 				type: "item"
 			}]
 			title: "First SU"
-			x: -2.5d
-			y: 9.0d
+			x: -4.0d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -1494,16 +1553,19 @@
 				{
 					id: "5B212FF38F4036E6"
 					item: "create:windmill_bearing"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "20AFA4F3A6391ADE"
 					item: "create:water_wheel"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "61D29D9FA79A8370"
 					item: "create:white_sail"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1530,8 +1592,8 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: 13.5d
+			x: -2.5d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1578,11 +1640,27 @@
 				"Note: It does 32x your fuel consumption"
 			]
 			id: "65DA1BDA4D9A9B56"
-			tasks: [{
-				id: "161C9BDE1EF3DAB7"
-				title: "Superheated Burners"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					icon: "create:encased_fan"
+					id: "75F14A68DA7A3B09"
+					observe_type: 0
+					timer: 0L
+					title: "Look at Encased Fan"
+					to_observe: "create:encased_fan"
+					type: "observation"
+				}
+				{
+					icon: "createlowheated:basic_burner"
+					id: "4D8766B15A8EA881"
+					observe_type: 0
+					timer: 0L
+					title: "Look at Basic Burner"
+					to_observe: "createlowheated:basic_burner"
+					type: "observation"
+				}
+			]
+			title: "Super Heated Burners"
 			x: 0.5d
 			y: 16.5d
 		}
@@ -1652,8 +1730,8 @@
 				item: "create:brass_casing"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 15.0d
+			x: -0.25d
+			y: 14.25d
 		}
 		{
 			dependencies: [
@@ -1666,7 +1744,7 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.5d
 			y: 13.5d
 		}
 		{
@@ -1674,7 +1752,6 @@
 				"7525BDACB9A9AC41"
 				"4002DDFC6025B01D"
 			]
-			dependency_requirement: "one_started"
 			id: "224916FFC857C099"
 			tasks: [{
 				id: "666AF49A691416E1"
@@ -1693,8 +1770,8 @@
 				item: "create:copper_casing"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 12.0d
+			x: -0.25d
+			y: 12.75d
 		}
 		{
 			dependencies: [
@@ -1708,10 +1785,13 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["19A0099F62CB5FF1"]
+			dependencies: [
+				"19A0099F62CB5FF1"
+				"1910DC983A58D044"
+			]
 			hide_dependent_lines: true
 			id: "4002DDFC6025B01D"
 			tasks: [{
@@ -1719,7 +1799,7 @@
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.0d
 			y: 7.5d
 		}
 		{
@@ -1735,7 +1815,7 @@
 				item: "gtceu:latex_plantation"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 8.0d
 			y: 12.0d
 		}
 		{
@@ -1747,8 +1827,8 @@
 				item: "thermal:latex_bucket"
 				type: "item"
 			}]
-			x: -1.75d
-			y: 15.75d
+			x: -4.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["4936CD72CB6A7C89"]
@@ -1758,7 +1838,7 @@
 				item: "thermal:cured_rubber"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -4.0d
 			y: 16.5d
 		}
 		{
@@ -1770,7 +1850,7 @@
 				item: "gtceu:rubber_plate"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.5d
 			y: 16.5d
 		}
 		{
@@ -1784,7 +1864,7 @@
 				item: "gtceu:primitive_ore_factory"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 8.0d
 			y: 15.0d
 		}
 		{
@@ -1798,7 +1878,7 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 6.5d
 			y: 16.5d
 		}
 		{
@@ -1823,7 +1903,7 @@
 				item: "gtceu:ulv_stone_barrel"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 8.0d
 			y: 16.5d
 		}
 		{
@@ -1837,7 +1917,7 @@
 				type: "item"
 			}]
 			title: "COBBLE GEN"
-			x: 6.5d
+			x: 9.5d
 			y: 16.5d
 		}
 		{
@@ -1853,7 +1933,7 @@
 			}]
 			title: "You Can Finally Touch Grass"
 			x: 5.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1870,8 +1950,8 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["50F2743FA699173A"]
 			id: "70A7945B18761012"
+			invisible: true
 			tasks: [{
 				id: "55F7980B96509F73"
 				item: {
@@ -1895,8 +1975,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: 15.0d
+			x: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1909,8 +1989,8 @@
 				item: "gtceu:bronze_brick_casing"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 13.5d
+			x: 6.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
@@ -1922,7 +2002,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 10.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1936,7 +2016,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["714CA5ED83124FE1"]
@@ -1947,14 +2027,11 @@
 				item: "minecraft:gold_nugget"
 				type: "item"
 			}]
-			x: -1.75d
-			y: 14.25d
+			x: 0.5d
+			y: 15.0d
 		}
 		{
-			dependencies: [
-				"34FB1FD1C7726DE6"
-				"13F8BDB87F975319"
-			]
+			dependencies: ["13F8BDB87F975319"]
 			id: "396FCF5D31059F6B"
 			tasks: [{
 				id: "3F3DDF6A82667C00"
@@ -1968,11 +2045,11 @@
 				type: "item"
 			}]
 			title: "Easier Saplings"
-			x: -3.25d
-			y: 2.25d
+			x: 0.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["1ABF4784F033D41A"]
+			dependencies: ["1A34B55754A8965F"]
 			id: "492C6E73D0CAC383"
 			tasks: [{
 				id: "29220D29F71231F8"
@@ -1997,7 +2074,7 @@
 		{
 			dependencies: [
 				"60916F46BE0033CA"
-				"1472BFF306FEA342"
+				"6C4B325AEF8A5B7D"
 			]
 			hide_dependent_lines: true
 			id: "5819AF3E6CCDB826"
@@ -2006,7 +2083,7 @@
 				item: "createlowheated:basic_burner"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.5d
 			y: 15.0d
 		}
 		{
@@ -2019,8 +2096,8 @@
 				type: "item"
 			}]
 			title: "Even Cheaper Coarse Dirt"
-			x: -5.5d
-			y: 15.0d
+			x: -1.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["6C4B325AEF8A5B7D"]
@@ -2038,8 +2115,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 15.0d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3DCE9199510A9223"]
@@ -2058,8 +2135,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 13.5d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -2073,7 +2150,7 @@
 				item: "gtceu:rubber_bucket"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.5d
 			y: 16.5d
 		}
 		{
@@ -2084,11 +2161,11 @@
 				item: "exnihilosequentia:flint_mesh"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 6.5d
 			y: 15.0d
 		}
 		{
-			dependencies: ["50F2743FA699173A"]
+			dependencies: ["70A7945B18761012"]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "3A3BD0ECA7FC8D38"
 			tasks: [{
@@ -2149,7 +2226,7 @@
 			id: "3CAF5AB033A1E9C1"
 			tasks: [{
 				id: "6FA3EC49143451FC"
-				title: "First &lTRUE&r Circuit"
+				title: "First &l&bTRUE&r Circuit"
 				type: "checkmark"
 			}]
 			x: 19.0d
@@ -2199,6 +2276,82 @@
 				type: "item"
 			}]
 			x: 15.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["684FAA520167CC51"]
+			id: "76411EC26EEC2AB0"
+			tasks: [{
+				id: "290EF434B0CC2FDE"
+				item: "gtceu:ulv_barrel"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["26B8FCAD39A84649"]
+			id: "3ACDDC1DEF389851"
+			tasks: [
+				{
+					id: "510F5CA97515964A"
+					item: "exnihilosequentia:mycelium_spores"
+					type: "item"
+				}
+				{
+					id: "79876562DF61E38E"
+					item: "thermal:slime_mushroom_spores"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"3ACDDC1DEF389851"
+				"76411EC26EEC2AB0"
+			]
+			id: "2E27CCDF1CEBFE28"
+			tasks: [{
+				id: "46C96C4F913F632A"
+				item: "exnihilosequentia:witch_water_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["2E27CCDF1CEBFE28"]
+			id: "29C78EFA4596B27E"
+			tasks: [{
+				id: "731A05F58400D8F2"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["50F2743FA699173A"]
+			id: "2A7906C25F44CAAB"
+			tasks: [{
+				id: "6F051F2E902864E9"
+				title: "End of HM Demo Showcase Content"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6994BA308DC55ED2"]
+			id: "1910DC983A58D044"
+			tasks: [{
+				id: "0C9556853FE97352"
+				item: "gtceu:glass_dust"
+				type: "item"
+			}]
+			x: -2.5d
 			y: 9.0d
 		}
 	]

@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
     const dust = 'exnihilosequentia:dust';
     const cDrip = 'exnihilosequentia:crushed_dripstone';
     const cCalc = 'exnihilosequentia:crushed_calcite';
+    const mud = 'minecraft:mud';
 
     function sieve(mesh, chance, input, result, wlog) {
         event.custom({
@@ -75,6 +76,9 @@ ServerEvents.recipes(event => {
     sieve('flint', .075, dust, 'gtceu:raw_quartzite', false);
     sieve('flint', .1, dust, 'gtceu:crushed_raw_electrum_ore', false);
 
+    //Mud (temp)
+    sieve('flint', .1, mud, 'thermal:slime_mushroom_spores', false);
+    sieve('flint', .08, mud, 'exnihilosequentia:mycelium_spores', false);
 });
 
 };//if end

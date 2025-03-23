@@ -111,17 +111,17 @@ ServerEvents.recipes(event => {
         'minecraft:iron_ingot',
         'minecraft:copper_ingot'
     );
-    event.remove({ id: 'thermal:redstone_servo' })
-    event.shaped(Item.of('thermal:redstone_servo', 1), [
-        'RPR',
-        ' I ',
-        'RPR'
-    ], {
-        R: 'minecraft:redstone',
-        P: 'gtceu:iron_plate',
-        I: 'minecraft:iron_ingot'
-    }
-    );
+    // event.remove({ id: 'thermal:redstone_servo' })
+    // event.shaped(Item.of('thermal:redstone_servo', 1), [
+    //     'RPR',
+    //     ' I ',
+    //     'RPR'
+    // ], {
+    //     R: 'minecraft:redstone',
+    //     P: 'gtceu:iron_plate',
+    //     I: 'minecraft:iron_ingot'
+    // }
+    // );
     event.shaped(Item.of('thermal:rf_coil'), [
         ' RP',
         'RBR',
@@ -218,15 +218,15 @@ ServerEvents.recipes(event => {
         E: 'gtceu:electrum_plate'
     });
 
-    event.shaped(Item.of('thermal:fluid_cell_frame'), [
-        'BTB',
-        'TGT',
-        'BTB'
-    ], {
-        B: 'gtceu:bronze_plate',
-        T: 'gtceu:tin_plate',
-        G: '#forge:glass'
-    });
+    // event.shaped(Item.of('thermal:fluid_cell_frame'), [
+    //     'BTB',
+    //     'TGT',
+    //     'BTB'
+    // ], {
+    //     B: 'gtceu:bronze_plate',
+    //     T: 'gtceu:tin_plate',
+    //     G: '#forge:glass'
+    // });
 
     event.shaped(Item.of('thermal:machine_frame'), [
         'SSS',

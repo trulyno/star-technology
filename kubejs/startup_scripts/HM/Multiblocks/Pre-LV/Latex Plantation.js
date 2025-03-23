@@ -2,7 +2,7 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('latex_plantation')
         .category('latex_plantation')
-        .setMaxIOSize(2, 0, 0, 1)
+        .setMaxIOSize(3, 0, 0, 1)
         .setSound(GTSoundEntries.BATH);
 });
 
@@ -40,8 +40,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 					texture: GuiTextures.PRIMITIVE_BLAST_FURNACE_PROGRESS_BAR
 				},
 				inputs: [
-					{ type: 'item', index: 0, pos: [52, 29], texture: GuiTextures.PRIMITIVE_SLOT },
-					{ type: 'item', index: 1, pos: [52, 47], texture: GuiTextures.PRIMITIVE_SLOT },
+					{ type: 'item', index: 0, pos: [52, 38], texture: GuiTextures.PRIMITIVE_SLOT }
 				],
 				outputs: [
 					{ type: 'fluid', index: 0, pos: [104, 38], texture: GuiTextures.PRIMITIVE_SLOT },

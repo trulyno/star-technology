@@ -585,22 +585,22 @@ ServerEvents.recipes(event => {
     event.replaceOutput({ type: 'gtceu:cutter'}, 'ae2:certus_quartz_crystal', '2x ae2:certus_quartz_crystal');
 });
 
-BlockEvents.rightClicked('minecraft:grass_block', event => {
-    if (event.player.isCrouching() && event.player.getMainHandItem() == null) {
-        if (Math.random() < 0.75) {
-            event.block.popItemFromFace(Item.of('exnihilosequentia:stone_pebble'), 'up');
-        }
-        if (Math.random() < 0.5) {
-            event.block.popItemFromFace(Item.of('exnihilosequentia:andesite_pebble'), 'up');
-        }
-        if (Math.random() < 0.5) {
-            event.block.popItemFromFace(Item.of('exnihilosequentia:granite_pebble'), 'up');
-        }
-        if (Math.random() < 0.5) {
-            event.block.popItemFromFace(Item.of('exnihilosequentia:diorite_pebble'), 'up');
-        }
-    } 
-});
+// BlockEvents.rightClicked('minecraft:grass_block', event => {
+//     if (event.player.isCrouching() && event.player.getMainHandItem() == null) {
+//         if (Math.random() < 0.75) {
+//             event.block.popItemFromFace(Item.of('exnihilosequentia:stone_pebble'), 'up');
+//         }
+//         if (Math.random() < 0.5) {
+//             event.block.popItemFromFace(Item.of('exnihilosequentia:andesite_pebble'), 'up');
+//         }
+//         if (Math.random() < 0.5) {
+//             event.block.popItemFromFace(Item.of('exnihilosequentia:granite_pebble'), 'up');
+//         }
+//         if (Math.random() < 0.5) {
+//             event.block.popItemFromFace(Item.of('exnihilosequentia:diorite_pebble'), 'up');
+//         }
+//     } 
+// });
 
 ServerEvents.tags('block', event => {
     event.remove('mineable/pickaxe', [

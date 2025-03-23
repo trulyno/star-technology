@@ -154,23 +154,28 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 
 		// Kiln
 
-		[{ fuel: 'coals', burnMultiplier: .5 }, { fuel: 'logs', burnMultiplier: 1.2 }].forEach(coal => {
+		const CoalTypes = [{ fuel: 'coals', burnMultiplier: 1 }, { fuel: 'poor_coals', burnMultiplier: 1.8 }];
+		CoalTypes.forEach(coal => {
 			event.recipes.gtceu.kiln(`brick_${coal.fuel}`)
 				.itemInputs('4x gtceu:compressed_clay', `#minecraft:${coal.fuel}`)
 				.itemOutputs('4x minecraft:brick')
-				.duration(800 * coal.burnMultiplier);
+				.duration(400 * coal.burnMultiplier);
 			event.recipes.gtceu.kiln(`coke_oven_brick_${coal.fuel}`)
 				.itemInputs('4x gtceu:compressed_coke_clay', `2x #minecraft:${coal.fuel}`)
 				.itemOutputs('4x gtceu:coke_oven_brick')
-				.duration(1000 * coal.burnMultiplier);
+				.duration(500 * coal.burnMultiplier);
 			event.recipes.gtceu.kiln(`firebrick_${coal.fuel}`)
 				.itemInputs('4x gtceu:compressed_fireclay', `2x #minecraft:${coal.fuel}`)
 				.itemOutputs('4x gtceu:firebrick')
-				.duration(1200 * coal.burnMultiplier);
+				.duration(600 * coal.burnMultiplier);
 			event.recipes.gtceu.kiln(`glass_${coal.fuel}`)
 				.itemInputs('gtceu:glass_dust', `#minecraft:${coal.fuel}`)
 				.itemOutputs('minecraft:glass')
-				.duration(1600 * coal.burnMultiplier);
+				.duration(800 * coal.burnMultiplier);
+
+			event.remove({id: 'minecraft:brick'});
+			event.remove({id: 'gtceu:smelting/firebrick'});
+			event.remove({id: 'gtceu:smelting/coke_oven_brick'});
 
 			// Rugged Alloyer and Chunk Processing
 
@@ -180,7 +185,7 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			event.recipes.gtceu.rugged_alloyer(`${chunks.ore}_chunks_${coal.fuel}`)
 				.itemInputs(`3x kubejs:${chunks.ore}_crushed_ore_chunk`, `#minecraft:${coal.fuel}`)
 				.itemOutputs(`${chunks.metal}_ingot`, 'gtceu:ash_dust')
-				.duration(400 * coal.burnMultiplier);
+				.duration(200 * coal.burnMultiplier);
 			event.smelting(`2x ${chunks.metal}_nugget`, `kubejs:${chunks.ore}_crushed_ore_chunk`);
 		});
 		event.recipes.gtceu.rugged_alloyer(`chalcopyrite_chunks_${coal.fuel}`)
@@ -211,12 +216,50 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			R: '#forge:string'
 		});
 
-	['oak','spruce','birch','jungle','acacia','dark_oak','mangrove','cherry','bamboo','crimson','warped'].forEach(log=>{
-		event.replaceOutput({ id: `gtceu:shaped/${log}_fence` },
-			`minecraft:${log}_fence`,
-			`2x minecraft:${log}_fence`
-		);
+	['oak','spruce','birch','jungle','acacia','dark_oak','cherry','bamboo','crimson','warped'].forEach(log=>{
+		event.remove({id: `gtceu:shaped/${log}_fence`});
+		event.shaped(Item.of(`minecraft:${log}_fence`,2),[
+			'PSP',
+			'PSP',
+			'PSP'
+		],{
+			P: `minecraft:${log}_planks`,
+			S: '#forge:rods/wooden'
+		});
+		event.remove({id: `create:cutting/${log}_log`});
+		event.recipes.create.cutting([`minecraft:stripped_${log}_log`, Item.of(`farmersdelight:tree_bark`).withChance(1)], `minecraft:${log}_log`);
+		event.remove({output: `functionalstorage:${log}_1`});
+		event.remove({output: `functionalstorage:${log}_2`});
+		event.remove({output: `functionalstorage:${log}_4`});
+		event.shaped(Item.of(`functionalstorage:${log}_1`),[
+			'WSW',
+			'SCS',
+			'WSW'
+		],{
+			W: 'gtceu:iron_screw',
+			S: `minecraft:${log}_slab`,
+			C: 'minecraft:chest'
+		});
+		event.shaped(Item.of(`functionalstorage:${log}_2`,2),[
+			'D',
+			'D'
+		],{
+			D: `functionalstorage:${log}_1`
+		});
+		event.shaped(Item.of(`functionalstorage:${log}_4`,2),[
+			'D',
+			'D'
+		],{
+			D: `functionalstorage:${log}_2`
+		});
+		event.shaped(Item.of(`functionalstorage:${log}_4`,4),[
+			'DD',
+			'DD'
+		],{
+			D: `functionalstorage:${log}_1`
+		});
 	});
+
 	event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
         '#forge:plates/iron',
         'gtceu:wrought_iron_plate'
@@ -260,6 +303,7 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			R: 'minecraft:redstone'
 		});
 
+		event.remove({id: 'gtceu:shaped/bowl'})
 		event.shaped(Item.of('minecraft:bowl', 2),
 			[
 				'A',
@@ -349,7 +393,6 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			'#forge:tools/files', 'minecraft:stone'
 		]);
 
-		event.remove({ output: 'minecraft:stonecutter' })
 		event.shaped(Item.of('minecraft:stonecutter'), [
 			'PSP',
 			'TFT'
@@ -386,7 +429,6 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			}
 		});
 
-		event.remove({ output: 'minecraft:furnace' });
 		event.shaped(Item.of('minecraft:furnace'), [
 			'SCS',
 			'CFC',
@@ -398,7 +440,18 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			M: 'minecraft:mud_bricks'
 		});
 
-		event.remove({ output: 'minecraft:campfire' });
+		event.shaped(Item.of('minecraft:composter'), [
+			'PMP',
+			'PRP',
+			'WSW'
+		], {
+			P: 'gtceu:wood_plate',
+			M: '#forge:tools/mallets',
+			R: 'gtceu:sticky_resin',
+			W: 'gtceu:wood_screw',
+			S: '#minecraft:wooden_slabs'
+		});
+
 		event.shaped(Item.of('minecraft:campfire', '{BlockStateTag:{lit:"false"}}'), [
 			'BTB',
 			'TST',
@@ -431,8 +484,9 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			'#forge:tools/saws', 'minecraft:stick'
 		]);
 
-	event.remove({ id: 'minecraft:clay' })
-	
+	event.remove({ id: 'minecraft:clay' });
+	event.recipes.create.compacting('minecraft:clay','4x minecraft:clay_ball');
+
 	event.shaped(Item.of('gtceu:wood_gear'), [
 		'BBB',
 		'BSB',
@@ -442,7 +496,6 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		S: '#minecraft:wooden_slabs'
 	});
 
-		event.remove({ output: 'gtceu:compressed_coke_clay' })
 		event.remove({ id: 'gtceu:shapeless/fireclay_dust' })
 		event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust');
 		event.recipes.create.pressing('gtceu:compressed_clay', 'minecraft:clay_ball');
@@ -712,14 +765,14 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		.EUt(6);
 	
 	event.recipes.gtceu.mixer('coke_clay')
-		.itemInputs('5x gtceu:quartz_sand_dust','3x gtceu:clay_dust')
-		.itemOutputs('3x gtceu:coke_clay_dust')
-		.duration(120)
+		.itemInputs('4x gtceu:quartz_sand_dust','4x gtceu:clay_dust')
+		.itemOutputs('8x gtceu:coke_clay_dust')
+		.duration(240)
 		.EUt(6);
-	event.recipes.create.mixing('3x gtceu:coke_clay_dust', ['5x gtceu:quartz_sand_dust','3x gtceu:clay_dust']);
+	event.recipes.create.mixing('8x gtceu:coke_clay_dust', ['4x gtceu:quartz_sand_dust','4x gtceu:clay_dust']);
 	event.recipes.gtceu.centrifuge('coke_clay')
-		.itemInputs('3x gtceu:coke_clay_dust')
-		.itemOutputs('5x gtceu:quartz_sand_dust','3x gtceu:clay_dust')
+		.itemInputs('8x gtceu:coke_clay_dust')
+		.itemOutputs('4x gtceu:quartz_sand_dust','4x gtceu:clay_dust')
 		.duration(168)
 		.EUt(30);
 
@@ -855,11 +908,11 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		});
 
 		event.shapeless(Item.of('gtceu:wood_plate', 2), [
-			'#forge:tools/files', '#minecraft:planks', '#minecraft:planks'
+			'#forge:tools/files', '#minecraft:planks', '#minecraft:planks', '#minecraft:planks', '#forge:tools/saws'
 		]);
 
 		event.shapeless(Item.of('gtceu:treated_wood_plate', 2), [
-			'#forge:tools/files', '#forge:treated_wood', '#forge:treated_wood'
+			'#forge:tools/files', '#forge:treated_wood', '#forge:treated_wood', '#forge:treated_wood', '#forge:tools/saws'
 		]);
 
 		event.shaped(Item.of('create:andesite_casing'), [
@@ -1044,7 +1097,6 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			M: '#forge:tools/mallets'
 		});
 
-		event.remove({ output: 'thermal:drill_head' });
 		let drill = 'gtceu:double_iron_plate'
 		event.recipes.create.sequenced_assembly([
 			Item.of('thermal:drill_head').withChance(1),
@@ -1059,11 +1111,10 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		event.shaped(Item.of('create:mechanical_drill'), [
 			'MDH',
 			'ACA',
-			'ArrSA'
+			'ASA'
 		], {
 			M: '#forge:tools/mallets',
 			H: '#forge:tools/hammers',
-			W: '#forge:tools/wrenches',
 			S: 'create:shaft',
 			C: 'create:andesite_casing',
 			D: 'thermal:drill_head',
@@ -1254,7 +1305,6 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			Q: 'create:polished_rose_quartz'
 		});
 
-		event.remove({ output: 'thermal:redstone_servo' })
 		event.recipes.create.mechanical_crafting('thermal:redstone_servo', [
 			'TPT',
 			' F ',
@@ -1281,7 +1331,7 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 
 	let prec = 'gtceu:double_gold_plate'
 	event.recipes.create.sequenced_assembly([		
-		Item.of(`create:precision_mechanism`).withChance(.8),
+		Item.of(`create:precision_mechanism`),
 	], `gtceu:double_gold_plate`, [
 		event.recipes.createDeploying(prec, [prec, `create:cogwheel`]),
 		event.recipes.createDeploying(prec, [prec, `create:large_cogwheel`]),
@@ -1318,14 +1368,14 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 	event.remove({id:'gtceu:smelting/smelt_dust_brass_to_ingot'});
 	event.recipes.create.mixing('2x gtceu:brass_dust', ['1x gtceu:zinc_dust','3x gtceu:copper_dust']).heatRequirement('lowheated');
 	event.recipes.create.mixing('2x gtceu:bronze_dust', ['1x gtceu:tin_dust','3x gtceu:copper_dust']).heatRequirement('lowheated');
-	event.recipes.create.mixing(Fluid.of('gtceu:brass', 144), ['1x gtceu:brass_dust', Fluid.of('minecraft:lava', 5)]).heatRequirement('superheated');
-	event.recipes.create.mixing(Fluid.of('gtceu:bronze', 144), ['1x gtceu:bronze_dust', Fluid.of('minecraft:lava', 5)]).heatRequirement('superheated');
+	event.recipes.create.mixing(Fluid.of('gtceu:brass', 144), ['1x gtceu:brass_dust']).heatRequirement('lowheated');
+	event.recipes.create.mixing(Fluid.of('gtceu:bronze', 144), ['1x gtceu:bronze_dust']).heatRequirement('lowheated');
 	event.recipes.create.mixing(Fluid.of('gtceu:brass', 432), ['1x gtceu:zinc_ingot','3x minecraft:copper_ingot']).heatRequirement('superheated');
 	event.recipes.create.mixing(Fluid.of('gtceu:bronze', 432), ['1x gtceu:tin_ingot','3x minecraft:copper_ingot']).heatRequirement('superheated');
 	event.recipes.create.compacting(`1x gtceu:brass_ingot`, Fluid.of('gtceu:brass', 144));
 	event.recipes.create.compacting(`1x gtceu:bronze_ingot`, Fluid.of('gtceu:bronze', 144));
 
-	event.recipes.create.mechanical_crafting('gtceu:primitive_ore_factory', [
+	event.recipes.create.mechanical_crafting('create:flywheel', [
         ' PPP ',
         'PS SP',
 		'P T P',
@@ -1333,7 +1383,7 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		' PPP '
     ], {
         T: 'create:shaft',
-        P: 'gtceu:brass_plate',
+        P: 'gtceu:brass_rod',
         S: '#forge:rods/wooden'
     });
 
@@ -1406,6 +1456,25 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		S: 'create:shaft'
 	});
 
+	event.recipes.create.mechanical_crafting('gtceu:ulv_barrel', [
+		'PP PP',
+		'PLRLP',
+		' LCL ',
+		'PLTLP',
+		'PP PP'
+	], {
+		R: 'gtceu:iron_rotor',
+		L: '#forge:stripped_logs',
+		P: 'gtceu:treated_wood_plate',
+		T: 'thermal:redstone_servo',
+		C: 'minecraft:cauldron'
+	});
+
+	event.replaceInput({ id: 'gtceu:shaped/coke_oven' },
+        '#forge:tools/wrenches',
+        'minecraft:furnace'
+    );
+
 	// Post Cobble-Gen, Pre-Circuit
 
 	event.recipes.create.mechanical_crafting('gtceu:bronze_brick_casing', [
@@ -1425,7 +1494,6 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		B: 'minecraft:bricks'
 	});
 
-		event.remove({ output: 'thermal:device_tree_extractor' });
 		event.recipes.create.mechanical_crafting('gtceu:latex_plantation', [
 			'RSR',
 			'PGP',
@@ -1450,6 +1518,8 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			B: Item.of('woodenbucket:wooden_bucket', '{Damage:0,Fluid:{Amount:1000,FluidName:"minecraft:water"}}').strongNBT()
 		});
 
+		event.recipes.create.mixing(Fluid.of('gtceu:concrete', 1000), [Fluid.of('minecraft:water', 1000), '3x gtceu:stone_dust', 'gtceu:calcite_dust', '2x gtceu:gypsum_dust']);
+
 		event.recipes.create.mechanical_crafting('exnihilosequentia:flint_mesh', [
 			'FSFSFSF',
 			'SRSRSRS',
@@ -1464,20 +1534,38 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			S: '#forge:string'
 		});
 
-	const latexType = [{fuel: 'minecraft:bone_meal', circ: '1'},{fuel: 'thermal:compost', circ: '2'},{fuel: 'gtceu:fertilizer', circ: '3'}]
-	latexType.forEach(latex=>{
-	event.recipes.gtceu.latex_plantation(`latex_${latex.circ}`)
-		.chancedInput(`${latex.fuel}`, 2500, 0)
-		.circuit(latex.circ)
-		.outputFluids(`thermal:latex ${100+50*latex.circ}`)
-		.duration(160);
-	});
-	event.recipes.gtceu.latex_plantation(`latex`)
-		.circuit(0)
-		.outputFluids(`thermal:latex 100`)
-		.duration(160);
+		event.recipes.gtceu.assembler('fluid_cell_frame')
+			.itemInputs('gtceu:bronze_frame','4x gtceu:tin_foil')
+			.inputFluids('gtceu:glass 432')
+			.itemOutputs('thermal:fluid_cell_frame')
+			.duration(200)
+			.EUt(7);
 
-	event.remove({output:'gtceu:lp_steam_alloy_smelter'});
+		event.remove({id: /gtceu:shaped\/.*_drum/});
+
+	//Mass Removals
+
+	const CreateRemoval = ['windmill_bearing','spout','fluid_pipe','chute','depot','basin','mechanical_mixer','mechanical_press','hand_crank','millstone',
+		'crushing_wheel','smart_chute','fluid_tank','steam_engine','piston_extension_pole','mechanical_bearing','clockwork_bearing','weighted_ejector',
+		'encased_fan','large_water_wheel','encased_chain_drive','gearshift','gantry_shaft','gantry_carriage','mechanical_drill','sticker','mechanical_saw',
+		'deployer','andesite_casing','brass_casing','mechanical_crafter','copper_casing','sequenced_gearshift','nozzle','adjustable_chain_gearshift','water_wheel',
+		'andesite_funnel','mechanical_arm','item_vault','flywheel','brass_hand','whisk','propeller','electron_tube','rotation_speed_controller','brass_tunnel',
+		'andesite_tunnel','brass_funnel','white_sail'];
+	CreateRemoval.forEach(item=>{
+		event.remove({output: `create:${item}`});
+	});
+	const ThermalRemoval = ['redstone_servo','device_tree_extractor','drill_head','fluid_cell_frame'];
+	ThermalRemoval.forEach(item=>{
+		event.remove({output: `thermal:${item}`});
+	});
+	const GtceuRemoval = ['primitive_pump','lp_steam_alloy_smelter','compressed_coke_clay','matchbox'];
+	GtceuRemoval.forEach(item=>{
+		event.remove({output:`gtceu:${item}`});
+	});
+	const MinecraftRemoval = ['stonecutter','furnace','campfire','composter']
+	MinecraftRemoval.forEach(item=>{
+		event.remove({output:`minecraft:${item}`})
+	});
 });
 
 }; // if end
