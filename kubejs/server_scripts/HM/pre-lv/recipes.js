@@ -216,7 +216,7 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			R: '#forge:string'
 		});
 
-	['oak','spruce','birch','jungle','acacia','dark_oak','cherry','bamboo','crimson','warped'].forEach(log=>{
+	[/*'oak','spruce','birch',*/'jungle'/*,'acacia','dark_oak','cherry','bamboo','crimson','warped'*/].forEach(log=>{
 		event.remove({id: `gtceu:shaped/${log}_fence`});
 		event.shaped(Item.of(`minecraft:${log}_fence`,2),[
 			'PSP',
