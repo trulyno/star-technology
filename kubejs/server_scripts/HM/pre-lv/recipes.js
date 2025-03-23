@@ -1494,18 +1494,18 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		B: 'minecraft:bricks'
 	});
 
-		event.recipes.create.mechanical_crafting('gtceu:latex_plantation', [
-			'RSR',
-			'PGP',
-			'BTB'
-		], {
-			R: 'gtceu:iron_rod',
-			S: 'gtceu:lead_spring',
-			P: 'gtceu:iron_plate',
-			G: '#forge:glass',
-			B: 'minecraft:bricks',
-			T: 'thermal:redstone_servo'
-		});
+		// event.recipes.create.mechanical_crafting('gtceu:latex_plantation', [  //Hidden for Demo
+		// 	'RSR',
+		// 	'PGP',
+		// 	'BTB'
+		// ], {
+		// 	R: 'gtceu:iron_rod',
+		// 	S: 'gtceu:lead_spring',
+		// 	P: 'gtceu:iron_plate',
+		// 	G: '#forge:glass',
+		// 	B: 'minecraft:bricks',
+		// 	T: 'thermal:redstone_servo'
+		// });
 
 		event.shaped(Item.of('woodenbucket:wooden_bucket', '{Damage:0,Fluid:{Amount:1000,FluidName:"gtceu:concrete"}}'), [
 			'GCG',

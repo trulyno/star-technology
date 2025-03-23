@@ -1803,13 +1803,10 @@
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"4002DDFC6025B01D"
-				"684FAA520167CC51"
-				"4917BE27976C3A9A"
-			]
+			description: ["Has bug with fluid output need to fix"]
 			hide_dependent_lines: true
 			id: "5D7047EF3399D10B"
+			invisible: true
 			tasks: [{
 				id: "03EDE887E0E0F5F5"
 				item: "gtceu:latex_plantation"
