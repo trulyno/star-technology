@@ -185,7 +185,7 @@
 				type: "observation"
 			}]
 			title: "Man's First Hydration"
-			x: 0.5d
+			x: -1.0d
 			y: -1.5d
 		}
 		{
@@ -269,8 +269,8 @@
 				item: "kubejs:water_bowl"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -3.0d
+			x: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1810B4921EB6640E"]
@@ -571,17 +571,6 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["6A62DF26FC748F1A"]
-			id: "375469122AB56B6E"
-			tasks: [{
-				id: "0CA6D95A5ACBAF73"
-				item: "exnihilosequentia:jungle_barrel"
-				type: "item"
-			}]
 			x: 0.5d
 			y: 3.0d
 		}
@@ -638,22 +627,8 @@
 				item: "gtceu:brick_wooden_form"
 				type: "item"
 			}]
-			x: 4.25d
-			y: 6.75d
-		}
-		{
-			dependencies: [
-				"375469122AB56B6E"
-				"184FE341A3AD7B1E"
-			]
-			id: "2F9B48D51C21F896"
-			tasks: [{
-				id: "31A6EF7EF6CFC9B4"
-				item: "gtceu:ulv_primitive_mixer"
-				type: "item"
-			}]
 			x: 2.0d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -690,8 +665,7 @@
 		{
 			dependencies: [
 				"5D9CA9E8B676679A"
-				"2F9B48D51C21F896"
-				"54AAB5395E468898"
+				"1810B4921EB6640E"
 			]
 			id: "08B170E72119FDD4"
 			optional: true
@@ -706,8 +680,7 @@
 		{
 			dependencies: [
 				"6131B93AB7C44162"
-				"2F9B48D51C21F896"
-				"54AAB5395E468898"
+				"1810B4921EB6640E"
 			]
 			id: "0EF265815EB8F86F"
 			tasks: [{
@@ -875,7 +848,6 @@
 		}
 		{
 			dependencies: [
-				"2F9B48D51C21F896"
 				"1ABF4784F033D41A"
 				"4C8102F3CE4F6612"
 				"54AAB5395E468898"
@@ -1600,6 +1572,11 @@
 		}
 		{
 			dependencies: ["714CA5ED83124FE1"]
+			description: [
+				"With a 256RPM fan directly on a burner you can make it &3Super&r-&6Heated&r"
+				""
+				"Note: It does 32x your fuel consumption"
+			]
 			id: "65DA1BDA4D9A9B56"
 			tasks: [{
 				id: "161C9BDE1EF3DAB7"
@@ -2015,20 +1992,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["2F9B48D51C21F896"]
-			id: "0AE6F1F1E74B6DE8"
-			optional: true
-			tasks: [{
-				id: "5C12A3ED12981F38"
-				item: "minecraft:coarse_dirt"
-				type: "item"
-			}]
-			title: "Cheaper Coarse Dirt"
-			x: 0.5d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -2125,6 +2089,7 @@
 		}
 		{
 			dependencies: ["50F2743FA699173A"]
+			icon: "gtceu:wrought_iron_ingot"
 			id: "3A3BD0ECA7FC8D38"
 			tasks: [{
 				id: "0DE497BF1010AAA2"
@@ -2136,6 +2101,7 @@
 		}
 		{
 			dependencies: ["3A3BD0ECA7FC8D38"]
+			icon: "gtceu:steel_ingot"
 			id: "1049C77BBEC1B413"
 			tasks: [{
 				id: "494A3CB370136117"
@@ -2159,7 +2125,16 @@
 		}
 		{
 			dependencies: ["1669324990B58A7A"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "komarumod:textures/painting/komaru_face.png"
+				}
+			}
 			id: "69A865E891BC005A"
+			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "03B923932D92720E"
 				title: "Pre-LV"
@@ -2170,14 +2145,61 @@
 		}
 		{
 			dependencies: ["69A865E891BC005A"]
-			id: "57E1307902CFA9F8"
+			icon: "gtceu:basic_electronic_circuit"
+			id: "3CAF5AB033A1E9C1"
 			tasks: [{
-				id: "1B4E766D35A48433"
-				item: "gtceu:basic_electronic_circuit"
-				type: "item"
+				id: "6FA3EC49143451FC"
+				title: "First &lTRUE&r Circuit"
+				type: "checkmark"
 			}]
 			x: 19.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["1049C77BBEC1B413"]
+			icon: "gtceu:steel_brick_casing"
+			id: "46429DD4CFFBFF3B"
+			tasks: [{
+				id: "38BBF6850564736F"
+				title: "High Pressure Steam"
+				type: "checkmark"
+			}]
+			x: 12.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1669324990B58A7A"]
+			id: "1D340B39EDB0F737"
+			tasks: [{
+				id: "04FE22ABA99B2195"
+				title: "Tom's"
+				type: "checkmark"
+			}]
+			x: 15.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1049C77BBEC1B413"]
+			icon: "gtceu:ulv_machine_hull"
+			id: "629B63F5789F260C"
+			tasks: [{
+				id: "576B4ABC6273FCF6"
+				title: "ULV Machines"
+				type: "checkmark"
+			}]
+			x: 12.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1669324990B58A7A"]
+			id: "4D8EFEA7036CD327"
+			tasks: [{
+				id: "4CF937E4CBAC2F33"
+				item: "gtceu:ulv_assembler"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 9.0d
 		}
 	]
 	title: "So It Begins"

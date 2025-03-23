@@ -27,10 +27,11 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			.rarity('common')
 			.texture(`kubejs:item/hm/pre-lv/stone_brick`);
 
-		event.create('coke_clay_dust')
-			.displayName('Coke Clay Dust')
+		event.create('charcoal_pellet')
+			.displayName('Charcoal Pellet')
 			.rarity('common')
-			.texture(`kubejs:item/hm/pre-lv/coke_clay_dust`);
+			.burnTime(320)
+			.texture(`kubejs:item/hm/pre-lv/charcoal_pellet`);
 
 		event.create('water_bowl')
 			.displayName('Water Bowl')

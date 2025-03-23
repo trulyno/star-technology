@@ -116,18 +116,13 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 
 		event.remove({ id: 'minecraft:coarse_dirt' })
 		event.shaped(Item.of('minecraft:coarse_dirt'), [
-			' S ',
-			'SDS',
-			' S '
+			'DFD',
+			' F ',
+			'DFD'
 		], {
-			S: 'kubejs:flint_shard',
+			F: 'minecraft:flint',
 			D: 'minecraft:dirt'
 		});
-
-		event.recipes.gtceu.primitive_mixer('coarse_dirt')
-			.itemInputs('16x minecraft:dirt', '12x minecraft:flint')
-			.itemOutputs('16x minecraft:coarse_dirt')
-			.duration(600);
 
 		event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '2x minecraft:flint']);
 

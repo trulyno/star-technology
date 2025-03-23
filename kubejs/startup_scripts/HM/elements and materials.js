@@ -33,7 +33,8 @@ materialRegistry(event => {
 
     GTMaterials.Iron.addFlags(foil);
     GTMaterials.Brass.addFlags(ring, foil);
-    GTMaterials.TinAlloy.addFlags(ring);
+    GTMaterials.TinAlloy.addFlags(ring, foil);
+    GTMaterials.Potin.addFlags(foil);
     GTMaterials.Potin.addFlags(ring);
     GTMaterials.Cupronickel.addFlags(ring);
     GTMaterials.Nickel.addFlags(ring);
