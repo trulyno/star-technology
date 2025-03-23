@@ -116,18 +116,13 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 
 		event.remove({ id: 'minecraft:coarse_dirt' })
 		event.shaped(Item.of('minecraft:coarse_dirt'), [
-			' S ',
-			'SDS',
-			' S '
+			'DFD',
+			' F ',
+			'DFD'
 		], {
-			S: 'kubejs:flint_shard',
+			F: 'minecraft:flint',
 			D: 'minecraft:dirt'
 		});
-
-		event.recipes.gtceu.primitive_mixer('coarse_dirt')
-			.itemInputs('16x minecraft:dirt', '12x minecraft:flint')
-			.itemOutputs('16x minecraft:coarse_dirt')
-			.duration(600);
 
 		event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '2x minecraft:flint']);
 
@@ -227,6 +222,46 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		} else {
 			player.setItemInHand(hand, Item.of('kubejs:water_bowl'));
 		}
+
+		level.playSound(null, block.pos, "minecraft:item.bucket.fill", "blocks");
+		player.swing();
+	});
+
+	BlockEvents.rightClicked('exnihilosequentia:jungle_crucible', event => {
+		const { player, block, item, hand, level } = event;
+		const { FluidName: fluid, Amount: amount } = block.entityData.tank;
+
+		if (item.id !== 'kubejs:water_bowl') return;
+		if (fluid !== 'minecraft:water' || amount > 3750) return;
+
+		block.mergeEntityData({ tank: { FluidName: 'minecraft:water', Amount: amount + 250 } });
+		player.setItemInHand(hand, Item.of('minecraft:bowl'));
+
+		level.playSound(null, block.pos, "minecraft:item.bucket.empty", "blocks");
+		player.swing();
+	});
+
+	// Mud and Clay In-world Recipes
+
+	BlockEvents.rightClicked('minecraft:dirt', event => {
+		const { player, block, item, hand, level } = event;
+
+		if (item.id !== 'kubejs:water_bowl') return;
+
+		block.set('minecraft:mud');
+		player.setItemInHand(hand, Item.of('minecraft:bowl'));
+
+		level.playSound(null, block.pos, "minecraft:item.bucket.fill", "blocks");
+		player.swing();
+	});
+
+	BlockEvents.rightClicked('exnihilosequentia:dust', event => {
+		const { player, block, item, hand, level } = event;
+
+		if (item.id !== 'kubejs:water_bowl') return;
+
+		block.set('minecraft:clay');
+		player.setItemInHand(hand, Item.of('minecraft:bowl'));
 
 		level.playSound(null, block.pos, "minecraft:item.bucket.fill", "blocks");
 		player.swing();
