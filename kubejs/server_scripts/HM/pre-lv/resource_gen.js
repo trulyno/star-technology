@@ -227,6 +227,20 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		player.swing();
 	});
 
+	BlockEvents.rightClicked('exnihilosequentia:jungle_crucible', event => {
+		const { player, block, item, hand, level } = event;
+		const { FluidName: fluid, Amount: amount } = block.entityData.tank;
+
+		if (item.id !== 'kubejs:water_bowl') return;
+		if (fluid !== 'minecraft:water' || amount > 3750) return;
+
+		block.mergeEntityData({ tank: { FluidName: 'minecraft:water', Amount: amount + 250 } });
+		player.setItemInHand(hand, Item.of('minecraft:bowl'));
+
+		level.playSound(null, block.pos, "minecraft:item.bucket.empty", "blocks");
+		player.swing();
+	});
+
 	// Mud and Clay In-world Recipes
 
 	BlockEvents.rightClicked('minecraft:dirt', event => {
