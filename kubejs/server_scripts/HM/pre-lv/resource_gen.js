@@ -232,4 +232,30 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		player.swing();
 	});
 
+	// Mud and Clay In-world Recipes
+
+	BlockEvents.rightClicked('minecraft:dirt', event => {
+		const { player, block, item, hand, level } = event;
+
+		if (item.id !== 'kubejs:water_bowl') return;
+
+		block.set('minecraft:mud');
+		player.setItemInHand(hand, Item.of('minecraft:bowl'));
+
+		level.playSound(null, block.pos, "minecraft:item.bucket.fill", "blocks");
+		player.swing();
+	});
+
+	BlockEvents.rightClicked('exnihilosequentia:dust', event => {
+		const { player, block, item, hand, level } = event;
+
+		if (item.id !== 'kubejs:water_bowl') return;
+
+		block.set('minecraft:clay');
+		player.setItemInHand(hand, Item.of('minecraft:bowl'));
+
+		level.playSound(null, block.pos, "minecraft:item.bucket.fill", "blocks");
+		player.swing();
+	});
+
 }; // if end
