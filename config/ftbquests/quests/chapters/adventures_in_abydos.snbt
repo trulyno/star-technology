@@ -931,7 +931,7 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
+			x: -1.5d
 			y: 2.0d
 		}
 		{
@@ -948,7 +948,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3540AE6C940F985B"]
@@ -1359,7 +1359,7 @@
 				title: "Cheaper Gases"
 				type: "checkmark"
 			}]
-			x: -5.5d
+			x: -7.5d
 			y: 2.0d
 		}
 		{
@@ -1495,7 +1495,7 @@
 			]
 			title: "UEPIC Chips"
 			x: -3.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2C354B0735DF8023"]

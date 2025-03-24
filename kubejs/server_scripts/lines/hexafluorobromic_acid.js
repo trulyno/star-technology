@@ -13,9 +13,9 @@ CRtype.forEach(CR=>{
         .itemInputs('1x gtceu:caesium_fluoride_dust')
         .outputFluids('gtceu:caesium_hexafluorobromine 1000')
 
-    CR('hexafluorobromine_acid')
+    CR('hexafluorobromic_acid')
         .inputFluids('gtceu:caesium_hexafluorobromine 1000', 'gtceu:hydrofluoric_acid 1000')
-        .outputFluids('gtceu:hexafluorobromine_acid 1000')
+        .outputFluids('gtceu:hexafluorobromic_acid 1000')
         .itemOutputs('1x gtceu:caesium_fluoride_dust')
 
     CR('nickel_fluoride')

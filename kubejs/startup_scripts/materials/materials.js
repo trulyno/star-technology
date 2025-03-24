@@ -1571,7 +1571,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x silicon_carbide', '1x bismuth_tritelluride')
         .color(0x86C455);
 
-//Hexafluorobromine Acid
+//Hexafluorobromic Acid
 
     event.create('nickel_fluoride')
         .dust()
@@ -1633,7 +1633,7 @@ event.create('sulfur_hexafluoride')
 
 event.create('plutonium_octofluoride')
     .dust()
-    .color(0xAB3F3F)
+    .color(0x000000)
     .components('2x plutonium', '8x fluorine')
     .flags(no_decomp);
 
@@ -1641,6 +1641,12 @@ event.create('uranium_tetrafluoride')
     .dust()
     .color(0x6CAB3F)
     .components('1x uranium', '4x fluorine')
+    .flags(no_decomp);
+
+event.create('uranium_dioxide')
+    .dust()
+    .color(0x528A3C)
+    .components('1x uranium', '2x oxygen')
     .flags(no_decomp);
 
 event.create('hafnium_thorium_iron_magnesium_disilicate_monosulfate')
