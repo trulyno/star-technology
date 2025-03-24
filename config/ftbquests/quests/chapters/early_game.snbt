@@ -400,7 +400,7 @@
 				"07A407A268A4FC96"
 				"3B81632EF4586280"
 			]
-			description: ["With all the parts combined, you finally get your hands on your first LV circuit! It might be a good idea to make a bunch of these beforehand, to aid in the push for LV machines."]
+			description: ["With all the parts combined, you finally get your hands on your first &7LV&r circuit! It might be a good idea to make a bunch of these beforehand, to aid in the push for &7LV&r machines."]
 			hide_dependent_lines: true
 			id: "20A12F3B992762F0"
 			rewards: [{
@@ -424,7 +424,7 @@
 				"46E41B05B9F6FA82"
 				"64F15C7160BF5CBB"
 			]
-			description: ["The heart of every LV machine."]
+			description: ["The heart of every &7LV&r machine."]
 			icon: "gtceu:lv_machine_hull"
 			id: "124EDCAB18E85B9D"
 			rewards: [{
@@ -1099,7 +1099,7 @@
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
-			description: ["You're going to need a lot of these, so it might be worth automating."]
+			description: ["Gold has a few uses for making Create components and machines, and is used for some alloys in &7LV&r"]
 			hide_dependent_lines: true
 			id: "708A5EE75EC40FAD"
 			rewards: [{
@@ -1849,7 +1849,7 @@
 				"4FC0832128C3109C"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Create gives you access to your first alloys, though at a poorer ratio than later methods. While good in the early game, you will want to upgrade once you hit LV."]
+			description: ["Create gives you access to your first alloys, though at a poorer ratio than later methods. While good in the early game, you will want to upgrade once you hit &7LV&r."]
 			id: "10126B9D6EC90F59"
 			rewards: [{
 				id: "36FCEC0DDB574296"
@@ -1920,7 +1920,7 @@
 		}
 		{
 			dependencies: ["397C622B06B1165A"]
-			description: ["You're going to need a lot of these, so it might be worth automating."]
+			description: ["Nickel is a base material used in quite a few alloys. Getting a good amount early on will definitly be beneficial."]
 			id: "0E47ACCDF46E6B1F"
 			rewards: [{
 				id: "0128ACB6E0B8F0AE"
@@ -1962,12 +1962,12 @@
 				"The Questbook takes you through the entire modpack, step by step. Here are a few things you should know:"
 				""
 				"&5-&r Mechanics: A small chapter explaining some GregTech mechanics"
-				"&5-&r Processing Lines: This is a chapter explaining complicated processing lines"
-				"&5-&r Line of Progression: This chapter shows you all multiblocks and tiered items"
+				"&5-&r Processing Lines: These chapters explain complicated processing lines"
+				"&5-&r Line of Progression: This chapter shows you all multiblocks and tiered items such as Coils"
 				"&5-&r Resource Production: This chapter shows you how to get MOST of the raw resources you will need"
 				"&5-&r Quality of Life: This chapter unveils some helpful mods and features that exist to make the pack more enjoyable"
 				""
-				"If a Quest doesn't load/register try rejoining"
+				"If a Quest doesn't load/register try rejoining."
 			]
 			id: "16A9D8E864A18B9E"
 			shape: "diamond"
@@ -2105,7 +2105,7 @@
 			optional: true
 			tasks: [{
 				id: "3C73A5AD42AC13F0"
-				title: "Read About Ghost Circuits"
+				title: "Go Read About Ghost Circuits"
 				type: "checkmark"
 			}]
 			x: -7.0d
@@ -2236,7 +2236,7 @@
 				}
 			]
 			x: 3.0d
-			y: -4.75d
+			y: -5.0d
 		}
 		{
 			dependencies: ["2D1184752D7ACA66"]
@@ -2338,6 +2338,34 @@
 			title: "Steam Boilers"
 			x: 2.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["3AF688ADC18E580C"]
+			description: ["In &lMechanics&r Superconductors are Explained"]
+			icon: "ftbquests:book"
+			id: "6C5688897B6A4C42"
+			optional: true
+			tasks: [{
+				id: "524EF615621F4DCD"
+				title: "Go Read About Superconductors"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["390CB178FC2D2CCC"]
+			description: ["In &lMechanics&r Multiblock Creation and Multiblock Wallsharing are Explained"]
+			icon: "ftbquests:book"
+			id: "26E81A8B2EB80A6C"
+			optional: true
+			tasks: [{
+				id: "31807AD3BF647D18"
+				title: "Go Read About Multiblocks"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 3.0d
 		}
 	]
 	title: "Early Game"

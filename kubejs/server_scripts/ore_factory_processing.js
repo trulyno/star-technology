@@ -17,33 +17,40 @@ const oreProcessableTiers = {
     ],
     
     'lv': [
-        { material: 'chalcopyrite', secondary: 'gold', tertiary: 'pyrite', quaternary: 'cobalt' },
-        { material: 'cassiterite', secondary: 'tin', tertiary: 'tin', quaternary: 'bismuth' },
+        { material: 'coal', secondary: 'carbon', tertiary: 'thorium', quaternary: 'graphite' },  // check
+        { material: 'sodalite', secondary: 'lazurite', tertiary: 'lapis', quaternary: 'kyanite' },  // check
+        { material: 'realgar', secondary: 'sulfur', tertiary: 'antimony', quaternary: 'barite' },  // check
+        { material: 'pentlandite', secondary: 'cobalt', tertiary: 'iron', quaternary: 'sulfur' },
         { material: 'silver', secondary: 'gold', tertiary: 'lead', quaternary: 'sulfur' },
         { material: 'gold', secondary: 'silver', tertiary: 'copper', quaternary: 'nickel' },
-        { material: 'bornite', secondary: 'gold', tertiary: 'pyrite', quaternary: 'cobalt' },
-        { material: 'pentlandite', secondary: 'cobalt', tertiary: 'iron', quaternary: 'sulfur' },
+        { material: 'diamond', secondary: 'carbon', tertiary: 'graphite', quaternary: 'graphite' },  // check
+        { material: 'emerald', secondary: 'beryllium', tertiary: 'aluminium', quaternary: 'aluminium' },  // check
+        { material: 'ruby', secondary: 'chromium', tertiary: 'red_garnet', quaternary: 'cinnabar' },  // check
+        { material: 'green_sapphire', secondary: 'aluminium', tertiary: 'sapphire', quaternary: 'almandine' },  // check
+        { material: 'sapphire', secondary: 'aluminium', tertiary: 'green_sapphire', quaternary: 'almandine' },  // check
+        { material: 'quartzite', secondary: 'certus_quartz', tertiary: 'opal', quaternary: 'barite' },  // check
+        { material: 'certus_quartz', secondary: 'quartzite', tertiary: 'opal', quaternary: 'barite' },  // check
         { material: 'rock_salt', secondary: 'salt', tertiary: 'salt', quaternary: 'borax' },
-        { material: 'salt', secondary: 'rock_salt', tertiary: 'rock_salt', quaternary: 'borax' }
+        { material: 'saltpeter', secondary: 'salt', tertiary: 'potassium', quaternary: 'alunite' }  // check
     ],
 
     'mv': [
+        { material: 'blue_topaz', secondary: 'bastnasite', tertiary: 'topaz', quaternary: 'topaz' },  // check
+        { material: 'topaz', secondary: 'bastnasite', tertiary: 'blue_topaz', quaternary: 'blue_topaz' },  // check
+        { material: 'spessartine', secondary: 'manganese', tertiary: 'red_garnet', quaternary: 'asbestos' },  // check
         { material: 'monazite', secondary: 'thorium', tertiary: 'thorium', quaternary: 'neodymium' },
+        { material: 'apatite', secondary: 'tricalcium_phosphate', tertiary: 'tricalcium_phosphate', quaternary: 'phosphate' },
         { material: 'lepidolite', secondary: 'lithium', tertiary: 'lithium', quaternary: 'caesium' },
         { material: 'pyrochlore', secondary: 'apatite', tertiary: 'apatite', quaternary: 'calcium' },
-        { material: 'pyrolusite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'tantalite' },
-        { material: 'cobaltite', secondary: 'cobalt', tertiary: 'sulfur', quaternary: 'cobalt' },
-        { material: 'vanadium_magnetite', secondary: 'magnetite', tertiary: 'gold', quaternary: 'vanadium' },
-        { material: 'chromite', secondary: 'iron', tertiary: 'magnesium', quaternary: 'iron' },
-        { material: 'beryllium', secondary: 'emerald', tertiary: 'emerald', quaternary: 'beryllium' },
-        { material: 'apatite', secondary: 'tricalcium_phosphate', tertiary: 'tricalcium_phosphate', quaternary: 'phosphate' }
+        { material: 'pyrolusite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'tantalite' }
     ],
 
     'hv': [
-        { material: 'bauxite', secondary: 'gallium', tertiary: 'grossular', quaternary: 'rutile' },
-        { material: 'pitchblende', secondary: 'thorium', tertiary: 'thorium', quaternary: 'uraninite' },
-        { material: 'ilmenite', secondary: 'iron', tertiary: 'iron', quaternary: 'rutile' },
-        { material: 'molybdenite', secondary: 'molybdenum', tertiary: 'sulfur', quaternary: 'molybdenum' },
+        { material: 'beryllium', secondary: 'emerald', tertiary: 'emerald', quaternary: 'beryllium' },
+        { material: 'chalcopyrite', secondary: 'gold', tertiary: 'pyrite', quaternary: 'cobalt' },
+        { material: 'bornite', secondary: 'gold', tertiary: 'pyrite', quaternary: 'cobalt' },
+        { material: 'barite', secondary: 'pyrite', tertiary: 'pyrite', quaternary: 'chalcopyrite' },  // check
+        { material: 'cassiterite', secondary: 'tin', tertiary: 'tin', quaternary: 'bismuth' },
         { material: 'tantalite', secondary: 'manganese', tertiary: 'niobium', quaternary: 'niobium' },
         { material: 'pollucite', secondary: 'caesium', tertiary: 'aluminium', quaternary: 'aluminium' }
     ],
@@ -52,8 +59,14 @@ const oreProcessableTiers = {
         { material: 'cooperite', secondary: 'palladium', tertiary: 'nickel', quaternary: 'nickel' },
         { material: 'bastnasite', secondary: 'neodymium', tertiary: 'neodymium', quaternary: 'rare_earth' },
         { material: 'tungstate', secondary: 'silver', tertiary: 'manganese', quaternary: 'lithium' },
-        { material: 'scheelite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'molybdenum' },
-        { material: 'zeolite', secondary: 'calcium', tertiary: 'aluminium', quaternary: 'silicon' },
+        { material: 'bauxite', secondary: 'gallium', tertiary: 'grossular', quaternary: 'rutile' },
+        { material: 'pitchblende', secondary: 'thorium', tertiary: 'thorium', quaternary: 'uraninite' },
+        { material: 'ilmenite', secondary: 'iron', tertiary: 'iron', quaternary: 'rutile' },
+        { material: 'molybdenite', secondary: 'molybdenum', tertiary: 'sulfur', quaternary: 'molybdenum' },
+        // mystical agriculture
+        { material: 'cobaltite', secondary: 'cobalt', tertiary: 'sulfur', quaternary: 'cobalt' },
+        { material: 'chromite', secondary: 'iron', tertiary: 'magnesium', quaternary: 'iron' },
+        { material: 'scheelite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'molybdenum' }
     ],
 
     'iv': [
@@ -79,16 +92,16 @@ const oreProcessableTiers = {
 
 const crushed_ore = (mat, amount) =>  {
     return `${amount}x gtceu:crushed_${mat}_ore`;
-}
+};
 const dust = (mat, amount) => {
     return `${amount}x gtceu:${mat}_dust`;
-}
+};
 const fluids = {
     water: 'minecraft:water 100',
     distilled_water: 'gtceu:distilled_water 100',
     sodium_persulfate: 'gtceu:sodium_persulfate 100',
     sodium_persulfate_5x: 'gtceu:sodium_persulfate 500'
-}
+};
 
 /*
  * Fuel based ore processing.
@@ -118,7 +131,7 @@ const primitive_processing = (event, materialObj) => {
             .chancedOutput(dust(materialObj.tertiary,  1), 1250, 0)
             .duration(240)
             .EUt(GTValues.VA[GTValues.ULV]);
-}
+};
 
 /*
  * Copies the recipes from primitive ore processing, but without fuels.
@@ -135,7 +148,7 @@ const electric_primitive_processing = (event, materialObj) => {
         .chancedOutput(dust(materialObj.tertiary, 1), 3250, 0)
         .duration(160)
         .EUt(GTValues.VA[GTValues.LV]);
-}
+};
 
 /*
  * Energy based ore processing.
@@ -159,7 +172,7 @@ const electric_processing = (event, materialObj, tier) => {
         .chancedOutput(dust(materialObj.quaternary, 1), 750, 100)
         .duration(320)
         .EUt(voltages[tier]);
-}
+};
 
 /*
 * Improved energy based primitive ore processing.
@@ -176,7 +189,7 @@ const plant_primitive_processing = (event, materialObj) => {
        .chancedOutput(dust(materialObj.tertiary, 1), 5250, 50)
        .duration(240)
        .EUt(GTValues.VHA[GTValues.LV]);
-}
+};
 
 /*
  * Improved energy based ore processing.
@@ -201,7 +214,7 @@ const plant_electric_processing = (event, materialObj, tier) => {
         .chancedOutput(dust(materialObj.quaternary, 1), 1750, 100)
         .duration(240)
         .EUt(voltages[tier]);
-}
+};
 
 /*
  * Final form of 1-step ore processing.
@@ -218,7 +231,7 @@ const plant_ore_processing = (event, materialObj) => {
         .chancedOutput(dust(materialObj.quinary, 1), 750, 150)
         .duration(320)
         .EUt(GTValues.VA[GTValues.IV]);
-}
+};
 
 /* Final Product */
 ServerEvents.recipes(event => {
@@ -286,7 +299,7 @@ ServerEvents.recipes(event => {
             } else {
                 electric_processing(event, item, tier);
                 plant_electric_processing(event, item, tier);
-            }
+            };
         });
     });
 });

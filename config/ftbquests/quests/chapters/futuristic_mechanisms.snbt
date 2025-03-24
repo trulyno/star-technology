@@ -11,8 +11,8 @@
 	quest_links: [{
 		id: "2D2DD0A279A4C76F"
 		linked_quest: "445BC7DFD3387DD4"
-		x: -2.5d
-		y: -1.5d
+		x: 0.0d
+		y: -1.0d
 	}]
 	quests: [
 		{
@@ -32,11 +32,16 @@
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 0.5d
+			x: -4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["53A9F3758C218CDC"]
+			description: [
+				"This will be the final Circuit Assembler you will make."
+				""
+				"You can upgrade this into a Large Circuit Assembling Facility, which can accept a single Energy Hatch, allowing you to get Circuit Assemblers of a voltage tier before getting the next tier of Circuits."
+			]
 			id: "4ED562DC235425FE"
 			rewards: [{
 				id: "7F26AF804B81528A"
@@ -49,8 +54,8 @@
 				item: "gtceu:iv_circuit_assembler"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 2.5d
+			x: -4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -70,8 +75,8 @@
 				item: "gtceu:quantum_processor"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 4.5d
+			x: -4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["06780B462515CAE2"]
@@ -88,8 +93,8 @@
 				item: "gtceu:quantum_processor_assembly"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 6.5d
+			x: -4.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["4E77319DB3B30062"]
@@ -106,8 +111,8 @@
 				item: "gtceu:quantum_processor_computer"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 6.5d
+			x: -2.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["421DF7880AD00F58"]
@@ -127,8 +132,8 @@
 				item: "gtceu:quantum_processor_mainframe"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 6.5d
+			x: 0.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -156,14 +161,15 @@
 				}
 			]
 			title: "Qubit Chips"
-			x: -8.5d
-			y: 4.5d
+			x: -6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"35829E28221CB70E"
 				"79428BAEAA7856E1"
 			]
+			description: ["&cZPM&r power for all your machines."]
 			id: "576C0430D0CDE409"
 			rewards: [{
 				id: "483A1640F5C15EDE"
@@ -176,11 +182,12 @@
 				item: "gtceu:zpm_energy_input_hatch"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 4.5d
+			x: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2587E109968EFBB4"]
+			description: ["The heart of every &cZPM&r machine."]
 			id: "35829E28221CB70E"
 			rewards: [{
 				id: "2D83C979F41B36FB"
@@ -193,14 +200,15 @@
 				item: "gtceu:zpm_machine_hull"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 2.5d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
 				"023794367F1B28D1"
 				"26126E2FA2B406E8"
 			]
+			description: ["Convert RF into &dLuV&r Amps"]
 			id: "0DCF962900689BCB"
 			rewards: [{
 				id: "4544BE3273A53A23"
@@ -243,14 +251,15 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: 2.5d
+			x: -2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
 				"1C154476DB77B773"
 				"239DC1BC1F14A807"
 			]
+			description: ["The heart of every &dLuV&r machine."]
 			id: "023794367F1B28D1"
 			rewards: [{
 				id: "63B33EC26745A6B8"
@@ -263,11 +272,12 @@
 				item: "gtceu:luv_machine_hull"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.5d
+			x: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["689150D2A185216C"]
+			description: ["An alloy made from Enderium and Lumium."]
 			id: "46D5CAA2666803D4"
 			rewards: [{
 				id: "559DE76C9E59DA34"
@@ -281,11 +291,16 @@
 				item: "gtceu:twinite_ingot"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 4.5d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["53A9F3758C218CDC"]
+			description: [
+				"QuarkTech armor is really nice. You can run and fly faster, toggle Nightvision and eat automatically."
+				""
+				"You can also now hold Hot Ingots without dying."
+			]
 			id: "6AA4CC44DE1C8E1E"
 			rewards: [{
 				id: "48DFD8DB01A430D9"
@@ -319,14 +334,15 @@
 					type: "item"
 				}
 			]
-			x: -7.5d
-			y: 1.5d
+			x: -5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
 				"79428BAEAA7856E1"
 				"6AA4CC44DE1C8E1E"
 			]
+			description: ["This one has a build in Jetpack."]
 			id: "1602A4A4D00C9724"
 			rewards: [{
 				id: "3BD74F896357D2D8"
@@ -343,11 +359,12 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 3.5d
+			x: -5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
+			description: ["The core material for &dLuV&r."]
 			id: "1C154476DB77B773"
 			rewards: [{
 				id: "18830CC910160FC8"
@@ -361,11 +378,12 @@
 				item: "gtceu:rhodium_plated_palladium_ingot"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.5d
+			x: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["53A9F3758C218CDC"]
+			description: ["Aqua please safe me."]
 			id: "0A6534BD104A2B08"
 			rewards: [{
 				id: "773252714F350547"
@@ -378,11 +396,12 @@
 				item: "gtceu:iv_parallel_hatch"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -0.5d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["020048FAC9576691"]
+			description: ["A multiblock acting as a gigantic battery. Later on you &lwill&r need this."]
 			id: "5B72F7526494EAEC"
 			rewards: [{
 				count: 2
@@ -397,11 +416,12 @@
 				item: "gtceu:power_substation"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -5.5d
+			x: -8.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["30F3A744CD40A14A"]
+			description: ["A type of reinforced Glass, with better sealing capacities."]
 			id: "020048FAC9576691"
 			rewards: [{
 				id: "64A00C5F06E018B8"
@@ -414,11 +434,12 @@
 				item: "gtceu:laminated_glass"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -1.5d
+			x: -8.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3306CAE5E57839A2"]
+			description: ["A fun chemical line to close off the first Processing Lines chapter."]
 			id: "30F3A744CD40A14A"
 			rewards: [{
 				id: "5C35BB521BF7274D"
@@ -432,8 +453,8 @@
 				item: "gtceu:polyvinyl_butyral_plate"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -1.5d
+			x: -10.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -445,7 +466,7 @@
 			description: [
 				"This is what you will use to make more advanced components and machines."
 				""
-				"Inputs must be placed in THAT order and only uses ULV input busses."
+				"Inputs must be placed in THAT order and only uses &8ULV&r input busses."
 				""
 				"If something has multiple unstackables, a forming press with a rename is a good way to differentiate the item in inputs."
 			]
@@ -472,8 +493,8 @@
 				}
 			]
 			title: "Assembly Line and Research Begins"
-			x: -8.5d
-			y: -1.5d
+			x: -6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -501,11 +522,12 @@
 				item: "gtceu:luv_fusion_reactor"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.5d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5B72F7526494EAEC"]
+			description: ["The first tier of Capacitator, now it just needs a battery inside."]
 			id: "51DE4937635274FD"
 			rewards: [{
 				id: "1DE3A4DA7F9ED21E"
@@ -518,11 +540,12 @@
 				item: "gtceu:empty_tier_i_battery"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -7.5d
+			x: -10.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["51DE4937635274FD"]
+			description: ["&5EV&r Capacitators for your Substation. These will fill quite fast."]
 			id: "5BC9DEBA51D83A33"
 			rewards: [{
 				id: "6F3500E5FE723158"
@@ -535,11 +558,12 @@
 				item: "gtceu:ev_lapotronic_battery"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -5.5d
+			x: -10.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["51DE4937635274FD"]
+			description: ["&9IV&r Capacitators for your Substation. These might seem bigger, but you will be surprised at how quickly they fill."]
 			id: "1AC791ABC70E8699"
 			rewards: [{
 				id: "7A7E07C4D8CF69B5"
@@ -552,11 +576,12 @@
 				item: "gtceu:iv_lapotronic_battery"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -7.5d
+			x: -8.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5B72F7526494EAEC"]
+			description: ["&5EV&r Input and Output for the Substation."]
 			id: "5633ED567D7B86AA"
 			rewards: [{
 				id: "742577DB211F7B71"
@@ -577,11 +602,12 @@
 				}
 			]
 			title: "EV Substation Hatches"
-			x: -12.5d
-			y: -3.5d
+			x: -10.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
+			description: ["An alloy made out of precious metals."]
 			id: "138E77CDBA50A619"
 			rewards: [{
 				id: "3662B995C534116B"
@@ -595,14 +621,16 @@
 				item: "gtceu:ruridit_ingot"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -1.5d
+			x: -4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"084F23122E4CA277"
 				"0094C2E72105E8CA"
+				"16D1B8E5F2A87F4E"
 			]
+			description: ["&dLuV&r Battery Module."]
 			hide_dependency_lines: true
 			id: "03FF61D56AA8ED91"
 			rewards: [{
@@ -616,11 +644,12 @@
 				item: "gtceu:lapotronic_energy_orb_cluster"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -7.5d
+			x: -2.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5B72F7526494EAEC"]
+			description: ["The second tier of Capacitator, capable of containing stronger Batteries."]
 			id: "62F32607FEE899CF"
 			rewards: [{
 				id: "59F932FE04299082"
@@ -633,11 +662,12 @@
 				item: "gtceu:empty_tier_ii_battery"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -7.5d
+			x: -6.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
+			description: ["Now that you have the big Circuit Assembler, you can use this to instantly get access to &dLuV&r Circuit Assembler recipes."]
 			id: "111033FEFA89BA91"
 			rewards: [{
 				id: "57EBD64832A5BB01"
@@ -650,11 +680,12 @@
 				item: "gtceu:luv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -3.5d
+			x: -6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
+			description: ["Get used to making all your components in an Assembly Line, because it will not change."]
 			id: "5AD5C15F6C0F4BC2"
 			rewards: [{
 				id: "64A75B8081A9BE0C"
@@ -667,12 +698,12 @@
 				item: "gtceu:luv_sensor"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 0.5d
+			x: -6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
-			description: ["Allows you to store research data in mass and share it among multiple assembly lines or other data banks."]
+			description: ["Allows you to store research data in mass and share it among multiple Assembly Lines or other Data Banks."]
 			id: "127464E65103D2B0"
 			rewards: [{
 				id: "2C640D54ADD01FF2"
@@ -685,8 +716,8 @@
 				item: "gtceu:data_bank"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 0.5d
+			x: -8.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["127464E65103D2B0"]
@@ -709,8 +740,8 @@
 				item: "gtceu:high_performance_computation_array"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 0.5d
+			x: -10.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -730,11 +761,12 @@
 				item: "gtceu:research_station"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 2.5d
+			x: -8.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5AD5C15F6C0F4BC2"]
+			description: ["Used for the final Data Stick scans, and can be upgraded into a Research Station."]
 			id: "2658276EC0740F69"
 			rewards: [{
 				id: "4276B9B6F1017F2A"
@@ -747,11 +779,12 @@
 				item: "gtceu:luv_scanner"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 2.5d
+			x: -6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["67ABB3BF6D0C183B"]
+			description: ["Your first fusion product. Passiving this isn't a bad idea, as it will be the only thing you will really use your Mk I Fusion Reactor for."]
 			id: "084F23122E4CA277"
 			rewards: [{
 				id: "71877D22B63F1155"
@@ -764,11 +797,12 @@
 				item: "gtceu:europium_bucket"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -3.5d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5ECF1A3EBB3F1BE5"]
+			description: ["A SoC that makes crystal circuits cheaper."]
 			id: "5C96AA366006C8DD"
 			rewards: [{
 				id: "31391AC3FE1CAB67"
@@ -781,11 +815,12 @@
 				item: "gtceu:crystal_soc"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -5.5d
+			x: 2.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5935F9CB5E1C099B"]
+			description: ["A crystal processor, using crystals to transmit data with light rays."]
 			id: "5ECF1A3EBB3F1BE5"
 			rewards: [{
 				id: "0E9B5CC93F36F861"
@@ -798,11 +833,12 @@
 				item: "gtceu:crystal_cpu"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -5.5d
+			x: 4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5E3F7C06E05628F6"]
+			description: ["A more refined Crystal Chip, ready to be used for computing."]
 			id: "5935F9CB5E1C099B"
 			rewards: [{
 				id: "6B7BA58D02D86240"
@@ -815,14 +851,15 @@
 				item: "gtceu:engraved_crystal_chip"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -5.5d
+			x: 6.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"084F23122E4CA277"
 				"55D75F03238F3A14"
 			]
+			description: ["A raw crystal etched in Europium to be used as a base for crystalline circuits."]
 			id: "5E3F7C06E05628F6"
 			rewards: [{
 				id: "3C7496F1F445E54F"
@@ -835,11 +872,16 @@
 				item: "gtceu:raw_crystal_chip"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -3.5d
+			x: 8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["376F9349C6E85AC8"]
+			description: [
+				"You should have some of this from your ore proc."
+				""
+				"&oYou did passive ore proc right.&r"
+			]
 			id: "55D75F03238F3A14"
 			rewards: [{
 				id: "0AF319AAE6D73D51"
@@ -852,11 +894,12 @@
 				item: "gtceu:exquisite_emerald_gem"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -1.5d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5E3F7C06E05628F6"]
+			description: ["This can be used for looping your crystal chips, so you don't need a ton of emeralds."]
 			id: "2A80DC12DB5E0594"
 			rewards: [{
 				id: "4163185EFC122F7A"
@@ -869,8 +912,8 @@
 				item: "gtceu:raw_crystal_chip_parts"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -5.5d
+			x: 8.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -890,8 +933,8 @@
 				item: "gtceu:crystal_processor"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -7.5d
+			x: 4.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["70C2BB4FAA2FB1F2"]
@@ -908,8 +951,8 @@
 				item: "gtceu:crystal_processor_assembly"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -7.5d
+			x: 6.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["744CAEF994308983"]
@@ -926,8 +969,8 @@
 				item: "gtceu:crystal_processor_computer"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -7.5d
+			x: 8.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["30A1077A14212FE2"]
@@ -946,11 +989,12 @@
 				item: "gtceu:crystal_processor_mainframe"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -5.5d
+			x: 10.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["61ABF5D51A3B9771"]
+			description: ["A stronger fiber based circuit board, made by layering multiple normal ones over eachother."]
 			id: "51C60C25C3C9C770"
 			rewards: [{
 				id: "70229204F25A9E96"
@@ -974,14 +1018,15 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: -7.5d
+			x: 2.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
 				"79428BAEAA7856E1"
 				"023794367F1B28D1"
 			]
+			description: ["The second tier Parallel Hatch."]
 			id: "175837CCB419A09F"
 			rewards: [{
 				id: "06D2F659A93BD662"
@@ -994,11 +1039,12 @@
 				item: "gtceu:luv_parallel_hatch"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["03FF61D56AA8ED91"]
+			description: ["&cZPM&r Battery Module."]
 			id: "150C7E0C42E85710"
 			rewards: [{
 				id: "7E34A85971E84A07"
@@ -1011,14 +1057,15 @@
 				item: "gtceu:energy_module"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -5.5d
+			x: -4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"150C7E0C42E85710"
 				"62F32607FEE899CF"
 			]
+			description: ["&cZPM&r Capacitator, and, you guessed it, also fills up very quickly."]
 			id: "795726537DF2E183"
 			rewards: [{
 				id: "10FFE9C25D2901FC"
@@ -1031,11 +1078,12 @@
 				item: "gtceu:zpm_lapotronic_battery"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -5.5d
+			x: -6.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6CC13BE9AD447218"]
+			description: ["The first step into making computers think."]
 			id: "68F878EC21CA1749"
 			rewards: [{
 				id: "04BE1D70705BBCD1"
@@ -1059,14 +1107,15 @@
 					type: "item"
 				}
 			]
-			x: 13.5d
-			y: -7.5d
+			x: 14.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"68F878EC21CA1749"
 				"3EEEC61CEE1B6BB2"
 			]
+			description: [".... Is it just me or did it just look back?"]
 			id: "18D5591BF53AD07F"
 			rewards: [{
 				id: "5B036F742F1DFE1B"
@@ -1074,13 +1123,14 @@
 				type: "item"
 			}]
 			size: 1.0d
+			subtitle: "It's alive?"
 			tasks: [{
 				id: "5993D645BF787D73"
 				item: "gtceu:neuro_processing_unit"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -5.5d
+			x: 16.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -1100,11 +1150,12 @@
 				item: "gtceu:wetware_processor"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -3.5d
+			x: 16.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["01AF9486EA6DA792"]
+			description: ["The basis of cell reproduction."]
 			id: "3EEEC61CEE1B6BB2"
 			rewards: [{
 				id: "5F2F729A716E6C0C"
@@ -1117,11 +1168,12 @@
 				item: "gtceu:stem_cells"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -5.5d
+			x: 14.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
+			description: ["All these alloys and their names make you go crazy. Seriously, how do you pronounce some of those names."]
 			id: "2BA3AAAB77C094BC"
 			rewards: [{
 				id: "15F330C00DE4BA58"
@@ -1135,8 +1187,8 @@
 				item: "gtceu:yttrium_barium_cuprate_ingot"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -3.5d
+			x: 14.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1F79E45EF7810DFF"]
@@ -1155,8 +1207,8 @@
 				item: "gtceu:wetware_processor_computer"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 0.5d
+			x: 16.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0962C36622E385B8"]
@@ -1173,13 +1225,17 @@
 				item: "gtceu:wetware_processor_assembly"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -1.5d
+			x: 16.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"19BBC64C57C460E6"
 				"3FC351F05F2AC743"
+			]
+			description: [
+				"The second tier of Fusion Reactors."
+				"Each tier of Fusion Reactors overclocks recipes below it and has higher heat capacity to allow for more fusion recipes to be run."
 			]
 			id: "2911EC7333E0E9C5"
 			rewards: [{
@@ -1195,11 +1251,12 @@
 				item: "gtceu:zpm_fusion_reactor"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -3.5d
+			x: 10.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["36C01453717B249D"]
+			description: ["A precious metal made with 3 types of expensive resources. Used for &cZPM&r Field Generators and the second tier of Fusion Reactors."]
 			id: "19BBC64C57C460E6"
 			rewards: [{
 				id: "16D4F77CFAA94E4B"
@@ -1212,11 +1269,12 @@
 				item: "gtceu:uranium_rhodium_dinaquadide_ingot"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -1.5d
+			x: 8.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
+			description: ["The core &cZPM&r material."]
 			id: "2587E109968EFBB4"
 			rewards: [{
 				id: "0785F825FB53E63B"
@@ -1229,11 +1287,12 @@
 				item: "gtceu:naquadah_alloy_ingot"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 0.5d
+			x: 6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
+			description: ["An alloy made out of Tungsten, Shellite and Twinite, creating a durable conductor."]
 			id: "7FD0034E639F3B2D"
 			rewards: [{
 				id: "6AC52989D43BF4CE"
@@ -1246,11 +1305,16 @@
 				item: "gtceu:dragonsteel_ingot"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 2.5d
+			x: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["445BC7DFD3387DD4"]
+			description: [
+				"The 6th tier of Coils"
+				""
+				"These will get replaced quite quickly by Trinium."
+			]
 			id: "65D76272BA5E67FC"
 			rewards: [{
 				count: 2
@@ -1265,14 +1329,19 @@
 				item: "gtceu:naquadah_coil_block"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.5d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"35829E28221CB70E"
 				"7781F2FE4CB258E0"
 				"0ED91DDCAC7562EE"
+			]
+			description: [
+				"The 7th tier of Coils"
+				""
+				"It is worth getting all your EBF's to it, as the heat will save quite some energy."
 			]
 			id: "36C01453717B249D"
 			rewards: [{
@@ -1288,11 +1357,12 @@
 				item: "gtceu:trinium_coil_block"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 2.5d
+			x: 8.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["111033FEFA89BA91"]
+			description: ["&cZPM&r recipe speeds."]
 			id: "62F3093B80681573"
 			rewards: [{
 				id: "1F14BE8EC8256729"
@@ -1305,11 +1375,12 @@
 				item: "gtceu:luv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -3.5d
+			x: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["62F3093B80681573"]
+			description: ["&3UV&r recipe speeds, what a bargain."]
 			id: "2094349C5A01C5F9"
 			rewards: [{
 				id: "0CA081B180BAE742"
@@ -1322,11 +1393,12 @@
 				item: "gtceu:luv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -3.5d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["576C0430D0CDE409"]
+			description: ["&3UV&r recipe speeds."]
 			id: "417038F9E5A88B5C"
 			rewards: [{
 				id: "2095D0AD9FA27E62"
@@ -1339,11 +1411,12 @@
 				item: "gtceu:zpm_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 4.5d
+			x: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["417038F9E5A88B5C"]
+			description: ["&4UHV&r recipe speeds."]
 			id: "4E9EFF82E64FB6E4"
 			rewards: [{
 				id: "174DC4058EC92F62"
@@ -1356,11 +1429,12 @@
 				item: "gtceu:zpm_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 4.5d
+			x: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]
+			description: ["Even more parallels on your machine. If it didn't happen before, then now these will definitly outpace your perfect overclock cubes."]
 			id: "69E5F396CF39B8DC"
 			rewards: [{
 				id: "106CA303A0D7B2B6"
@@ -1373,11 +1447,12 @@
 				item: "gtceu:zpm_parallel_hatch"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -7.5d
+			x: 12.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]
+			description: ["This beautifull machine allows you to compress entire processing lines into one machine."]
 			id: "3E1CA9FFB9953F42"
 			rewards: [{
 				count: 2
@@ -1392,12 +1467,12 @@
 				item: "gtceu:chemical_plant"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -7.5d
+			x: 10.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
-			description: ["Used for active transformers and in some other crafting recipes as wire superconductor."]
+			description: ["Used for active transformers and in some other crafting recipes such as wire superconductor."]
 			id: "04BFFBF024D019BD"
 			rewards: [{
 				id: "73109EC4751DA6A1"
@@ -1410,14 +1485,15 @@
 				item: "gtceu:indium_tin_barium_titanium_cuprate_ingot"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -1.5d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"05F2C7351FF1B0E5"
 				"445BC7DFD3387DD4"
 			]
+			description: ["This Chip is gonna be used for Gate Machines, Fusion Reactors and Energy Hatches."]
 			icon: "gtceu:uhpic_chip"
 			id: "5BA69EDC3C223B2C"
 			rewards: [{
@@ -1439,11 +1515,12 @@
 				}
 			]
 			title: "UHPIC Chips"
-			x: -0.5d
-			y: -3.5d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2911EC7333E0E9C5"]
+			description: ["The core &3UV&r material."]
 			id: "27C0ED4305E84D21"
 			rewards: [{
 				id: "2CB2FD24D7187D27"
@@ -1456,11 +1533,12 @@
 				item: "gtceu:darmstadtium_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -1.5d
+			x: 10.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["27C0ED4305E84D21"]
+			description: ["The heart of every &3UV&r machine."]
 			id: "3F4C068368F97580"
 			rewards: [{
 				id: "16A9EF2CDC5E6B40"
@@ -1473,11 +1551,12 @@
 				item: "gtceu:uv_machine_hull"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.5d
+			x: 10.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2911EC7333E0E9C5"]
+			description: ["Tritanium is a material you are gonna need a ton of. If you have the Fusion Reactors, consider setting some on passive if you have the time."]
 			id: "6131A76D203DE6AB"
 			rewards: [{
 				id: "5DE37EDA23E177D0"
@@ -1490,11 +1569,12 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -3.5d
+			x: 12.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2911EC7333E0E9C5"]
+			description: ["This is a material used for machines of &4UHV&r tier and beyond."]
 			id: "70AA84848FB2A9BB"
 			rewards: [{
 				id: "0ECD4E21E5FD1EDA"
@@ -1507,14 +1587,15 @@
 				item: "gtceu:americium_ingot"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -5.5d
+			x: 12.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"70AA84848FB2A9BB"
 				"68F878EC21CA1749"
 			]
+			description: ["A really big battery, but with big batteries comes big power drain."]
 			id: "151C2D784700BD49"
 			rewards: [{
 				id: "34F8D60C9177FE48"
@@ -1527,14 +1608,15 @@
 				item: "gtceu:energy_cluster"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -7.5d
+			x: 14.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
 				"3F4C068368F97580"
 				"6131A76D203DE6AB"
 			]
+			description: ["&3UV&r power for all your machines."]
 			id: "0B7A0924AFE58559"
 			rewards: [{
 				id: "6B95CCF09AF3CE9A"
@@ -1547,11 +1629,12 @@
 				item: "gtceu:uv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 0.5d
+			x: 12.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3F4C068368F97580"]
+			description: ["This Maintenance Hatch tricks your machines into believing they are in normal Cleanrooms, allowing you to run cleanroom recipes outside of one."]
 			id: "3391903EBBB3F308"
 			rewards: [{
 				id: "5CAB5DD7B5EE938D"
@@ -1564,11 +1647,12 @@
 				item: "gtceu:cleaning_maintenance_hatch"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 2.5d
+			x: 10.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5C302CB1A1068EE1"]
+			description: ["Time for some fancy new Chips."]
 			id: "1BF95852C7E1741E"
 			rewards: [{
 				count: 2
@@ -1583,11 +1667,12 @@
 				item: "gtceu:naquadah_wafer"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.5d
+			x: 0.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6131A76D203DE6AB"]
+			description: ["This is gonna be the final tier of Coils until you can reach Abydos. Swapping out all of your older Coils is recommended, because you will need the speed."]
 			id: "678B90BF2ACE2BBA"
 			rewards: [{
 				count: 2
@@ -1602,11 +1687,12 @@
 				item: "gtceu:tritanium_coil_block"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -3.5d
+			x: 14.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0B7A0924AFE58559"]
+			description: ["&4UHV&r recipe speeds."]
 			id: "155947C2913FFA42"
 			rewards: [{
 				id: "6C1602A5958BA368"
@@ -1619,11 +1705,12 @@
 				item: "gtceu:uv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 2.5d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["155947C2913FFA42"]
+			description: ["&aUEV&r recipe speeds."]
 			id: "1B4B0A67B86B7D58"
 			rewards: [{
 				id: "676897D5A44043C4"
@@ -1636,11 +1723,12 @@
 				item: "gtceu:uv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 4.5d
+			x: 12.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["445BC7DFD3387DD4"]
+			description: ["A new Boule, that will allow access to new chips, and makes the older ones cheaper."]
 			id: "5C302CB1A1068EE1"
 			rewards: [{
 				id: "53E6A8C84D19526E"
@@ -1653,11 +1741,12 @@
 				item: "gtceu:naquadah_boule"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["36C01453717B249D"]
+			description: ["An upgraded form of Shellite, being made denser with Tungsten and Naquadah."]
 			id: "3325914DB92AEF1B"
 			rewards: [{
 				id: "08EF75393226D550"
@@ -1670,14 +1759,15 @@
 				item: "gtceu:prismalium_ingot"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 4.5d
+			x: 8.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"678B90BF2ACE2BBA"
 				"3B69844600AD5430"
 			]
+			description: ["This material is used for some of the most important &4UHV&r machines."]
 			hide_dependent_lines: true
 			id: "02606EBF230281A3"
 			rewards: [{
@@ -1691,11 +1781,12 @@
 				item: "gtceu:enriched_naquadah_trinium_europium_duranide_ingot"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -1.5d
+			x: 14.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["67ABB3BF6D0C183B"]
+			description: ["A fusion material made with Mk I Fusion Reactors. It had basically no use up until now, but that is about to change."]
 			hide_dependency_lines: true
 			id: "3B69844600AD5430"
 			rewards: [{
@@ -1709,8 +1800,8 @@
 				item: "gtceu:duranium_ingot"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 0.5d
+			x: 14.0d
+			y: 5.0d
 		}
 		{
 			id: "6DD3126E3C45D1E7"
@@ -1727,14 +1818,15 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: -0.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"62F32607FEE899CF"
 				"03FF61D56AA8ED91"
 			]
+			description: ["&dLuV&r Capacitator, also fills up very quickly."]
 			id: "10B333DE4129BDC9"
 			rewards: [{
 				id: "6FD07DEFA0ECF339"
@@ -1747,8 +1839,8 @@
 				item: "gtceu:luv_lapotronic_battery"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -7.5d
+			x: -4.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6131A76D203DE6AB"]
@@ -1767,8 +1859,8 @@
 				type: "item"
 			}]
 			title: "Sterile Cleanroom"
-			x: 11.5d
-			y: -5.5d
+			x: 12.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1793,8 +1885,8 @@
 				item: "gtceu:network_switch"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 4.5d
+			x: -10.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1802,6 +1894,7 @@
 				"182D948925141764"
 				"138E77CDBA50A619"
 			]
+			description: ["A machine capable of tearing space-time using the power of netherstars, allowing you to harvest Naquadah from it."]
 			hide_dependency_lines: false
 			id: "1F416C7A641914EC"
 			rewards: [{
@@ -1820,22 +1913,23 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: -1.5d
+			x: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"04BFFBF024D019BD"
 				"0ED91DDCAC7562EE"
 			]
+			description: ["Used in fusion reactors to heat up atoms allowing them to fuse together."]
 			id: "7D492D6B39A22DDE"
 			tasks: [{
 				id: "05EFA3704F91A25E"
 				item: "gtceu:superconducting_coil"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -1.5d
+			x: 4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5026437079530A67"]
@@ -1850,11 +1944,12 @@
 				}
 				type: "item"
 			}]
-			x: -9.5d
-			y: -2.5d
+			x: -7.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
+			description: ["Finally, you can upgrade your resource generation with Parallel Hatches."]
 			id: "32459F3D48C81752"
 			optional: true
 			tasks: [
@@ -1870,41 +1965,48 @@
 				}
 			]
 			title: "Parallel Resource Production"
-			x: -7.5d
-			y: -2.5d
+			x: -5.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7FD0034E639F3B2D"]
+			description: ["&cZPM&r superconductor, can hold 64 amps in a 1x cable."]
 			id: "3A603E70EB4B856F"
 			tasks: [{
 				id: "4380C92864BF9161"
 				item: "gtceu:dragonsteel_single_wire"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 2.5d
+			x: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["46D5CAA2666803D4"]
+			description: ["&dLuV&r superconductor, can hold 64 amps in a 1x cable."]
 			id: "26126E2FA2B406E8"
 			tasks: [{
 				id: "3B2B7C559D191078"
 				item: "gtceu:twinite_single_wire"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 4.5d
+			x: -2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3325914DB92AEF1B"]
+			description: [
+				"&3UV&r superconductor, can hold 32 amps in a 1x cable."
+				""
+				"Prismalium is not the only &3UV&r superconductor. There is also Melodium, which is shown in the next quest chapter."
+			]
 			id: "56803575B2364F6A"
 			tasks: [{
 				id: "7DC8EBB02B5E2C9A"
 				item: "gtceu:prismalium_single_wire"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.5d
+			x: 10.0d
+			y: 5.0d
 		}
 	]
 	title: "Futuristic Mechanisms"

@@ -1594,7 +1594,7 @@
 			description: [
 				"With an &5EV&r Mixer you can recycle those extra ores for some more &7Molten Ore Mixture&r, with an &9IV&r Mixer you can start looping that &8Metal Mixture&r that you get."
 				""
-				"A Large Mixer is Reccomended for the Job."
+				"A Large Mixer is Recommended for the Job."
 			]
 			icon: "gtceu:ev_mixer"
 			id: "39CF5BCF84727BB3"

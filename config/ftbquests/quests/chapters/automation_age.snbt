@@ -17,6 +17,7 @@
 				"724BAC3F48CE91AA"
 				"45591A05A0A61821"
 			]
+			description: ["Welcome to &6HV&r."]
 			id: "73931EAA3EC5C9A9"
 			rewards: [{
 				count: 2
@@ -32,8 +33,8 @@
 				item: "gtceu:advanced_integrated_circuit"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 1.5d
+			x: -7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -41,7 +42,7 @@
 				"68EB3C1DABB1869C"
 				"3CB63B290C9EFAA2"
 			]
-			description: ["Lets you turn your RF into HV power."]
+			description: ["Lets you turn your RF into &6HV&r power."]
 			id: "34EF34E0E41A6618"
 			rewards: [{
 				id: "65CC51C78EE6F9E2"
@@ -84,12 +85,12 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 1.5d
+			x: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3F49250E7CE2E282"]
-			description: ["HV superconductor, can hold 16 amps on the 1x cable."]
+			description: ["&6HV&r superconductor, can hold 16 amps on the 1x cable."]
 			id: "68EB3C1DABB1869C"
 			rewards: [{
 				id: "0ECE3B40ACFB4B01"
@@ -102,8 +103,8 @@
 				item: "gtceu:lumium_single_wire"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -0.5d
+			x: -7.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -124,14 +125,15 @@
 				item: "gtceu:lumium_ingot"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -0.5d
+			x: -9.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"7E6BF5B40EA057F5"
 				"261174370DC87FCB"
 			]
+			description: ["The basis of every &6HV&r machine"]
 			id: "3CB63B290C9EFAA2"
 			rewards: [{
 				id: "0103A1EEE577BCBC"
@@ -144,8 +146,8 @@
 				item: "gtceu:hv_machine_hull"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 1.5d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
@@ -161,8 +163,8 @@
 				item: "gtceu:mv_circuit_assembler"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.5d
+			x: -7.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
@@ -183,8 +185,8 @@
 				item: "gtceu:multi_smelter"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 1.5d
+			x: -9.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["088FE0CF9D07F9C6"]
@@ -202,8 +204,8 @@
 				item: "gtceu:micro_processor"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 5.5d
+			x: -5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -225,11 +227,16 @@
 				item: "gtceu:microchip_processor"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 5.5d
+			x: -7.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["363F5B598683A074"]
+			description: [
+				"This is a cheaper &6HV&r circuit."
+				""
+				"Better get used to it, as it will take a little bit until you can get better ones."
+			]
 			id: "7399429099302C6C"
 			rewards: [{
 				id: "4962712B3775941E"
@@ -243,15 +250,15 @@
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 5.5d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"7399429099302C6C"
 				"17C1292018AE363E"
 			]
-			description: ["The new HV circuit can be upgraded into an EV circuit, allowing you to make upgrades to all your machines."]
+			description: ["The new &6HV&r circuit can be upgraded into an &5EV&r circuit, allowing you to make upgrades to all your machines."]
 			id: "52FE319F5E176C37"
 			rewards: [{
 				count: 2
@@ -267,15 +274,15 @@
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.5d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"0DEEBB486450E74E"
 				"491C4CECC6C24DDF"
 			]
-			description: ["Every circuit needs a cpu."]
+			description: ["Every Circuit needs a CPU."]
 			icon: "gtceu:cpu_chip"
 			id: "470EBC3C75C6748E"
 			rewards: [{
@@ -309,8 +316,8 @@
 				}
 			]
 			title: "CPU Chips"
-			x: -5.5d
-			y: 3.5d
+			x: -9.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -326,6 +333,7 @@
 				type: "item"
 			}]
 			size: 1.0d
+			subtitle: "Don't throw these away"
 			tasks: [
 				{
 					id: "11E2B1CE93A78156"
@@ -342,8 +350,8 @@
 					type: "item"
 				}
 			]
-			x: -5.5d
-			y: 5.5d
+			x: -9.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -380,11 +388,12 @@
 				}
 			]
 			title: "Maintanence Hatch Variants"
-			x: -1.5d
-			y: 3.5d
+			x: -5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
+			description: ["&6HV&r Assembler, used for &6HV&r Energy Hatches and Upgrade Kits, along with SMD's for cheaper circuit crafting."]
 			id: "1B697A89954BA5FE"
 			rewards: [{
 				count: 2
@@ -399,15 +408,15 @@
 				item: "gtceu:hv_assembler"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -0.5d
+			x: -3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"2681E878121B1CF6"
 				"1B697A89954BA5FE"
 			]
-			description: ["Time for an EV EBF."]
+			description: ["Time for an &5EV&r EBF."]
 			id: "50CBF077613B6161"
 			rewards: [{
 				id: "5894C32B49A197DE"
@@ -420,15 +429,15 @@
 				item: "gtceu:hv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -2.5d
+			x: -5.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
 				"491C4CECC6C24DDF"
 				"0DEEBB486450E74E"
 			]
-			description: ["This chip is used to make HV energy hatches and transformers."]
+			description: ["This chip is used to make &6HV&r energy hatches and transformers."]
 			icon: "gtceu:lpic_chip"
 			id: "2681E878121B1CF6"
 			rewards: [{
@@ -455,8 +464,8 @@
 				}
 			]
 			title: "LPIC Chips"
-			x: -3.5d
-			y: -4.5d
+			x: -5.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
@@ -496,8 +505,8 @@
 				}
 			]
 			title: "SMD's"
-			x: 2.5d
-			y: -2.5d
+			x: -1.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
@@ -523,11 +532,12 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
-			y: -2.5d
+			x: -3.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["2D089B0427CFDBBE"]
+			description: ["A crafting ingredient for items that need energy, and a battery that stores &6HV&r energy."]
 			id: "7B0133D388101F68"
 			rewards: [{
 				id: "3FDC70995B21E529"
@@ -540,11 +550,16 @@
 				item: "gtceu:energy_crystal"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -2.5d
+			x: -7.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
+			description: [
+				"Grow your crystals even faster."
+				""
+				"Can be upgraded into a Large Autoclave soon."
+			]
 			id: "2D089B0427CFDBBE"
 			rewards: [{
 				id: "289E7492A240586B"
@@ -557,8 +572,8 @@
 				item: "gtceu:hv_autoclave"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -0.5d
+			x: -5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7B0133D388101F68"]
@@ -597,14 +612,15 @@
 				}
 			]
 			title: "NanoMuscle™ Suite"
-			x: -5.5d
-			y: -2.5d
+			x: -9.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
 				"73931EAA3EC5C9A9"
 				"3CB63B290C9EFAA2"
 			]
+			description: ["The Cleanroom is a structure that filters inside itself, allowing for a dust free environment to achieve more precise crafting."]
 			hide_dependency_lines: true
 			id: "17C1292018AE363E"
 			rewards: [{
@@ -613,20 +629,21 @@
 				type: "item"
 			}]
 			size: 1.0d
+			subtitle: "A gamer's nightmare"
 			tasks: [{
 				id: "2E6892722E099A15"
 				item: "gtceu:cleanroom"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 3.5d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"52FE319F5E176C37"
 				"3CB63B290C9EFAA2"
 			]
-			description: ["EV circuits gives you access to the HV circuit assembler. I recommend putting this in your cleanroom to save time."]
+			description: ["&5EV&r Circuits give you access to the &6HV&r Circuit Assembler. I recommend putting this in your Cleanroom to save time."]
 			id: "47CD61D6ECD3DC7D"
 			rewards: [{
 				id: "02612C98685AC3EB"
@@ -639,15 +656,15 @@
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 3.5d
+			x: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"52FE319F5E176C37"
 				"47CD61D6ECD3DC7D"
 			]
-			description: ["The end of the circuit upgrade chain will bring you into IV, bet you didnt expect that."]
+			description: ["The end of the circuit upgrade chain will bring you into &9IV&r, bet you didnt expect that."]
 			id: "62BA581B2918BB7B"
 			rewards: [{
 				count: 2
@@ -663,8 +680,8 @@
 				item: "gtceu:micro_processor_mainframe"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 3.5d
+			x: 0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -672,7 +689,11 @@
 				"52FE319F5E176C37"
 				"77303F30F0A44393"
 			]
-			description: ["Allows you to turn RF into EV power. Oh ya and 64a's exist now."]
+			description: [
+				"Allows you to turn RF into &5EV&r power. "
+				""
+				"Oh ya and 64A converters exist from now on."
+			]
 			id: "5D3006AB62E2CE9B"
 			rewards: [{
 				id: "601186952EBAB995"
@@ -723,12 +744,12 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 5.5d
+			x: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5BA3F17E1C7BE599"]
-			description: ["EV superconductor, can hold 32 amps in a 1x cable."]
+			description: ["&5EV&r superconductor, can hold 32 amps in a 1x cable."]
 			id: "77303F30F0A44393"
 			rewards: [{
 				id: "59B7A01CB85BA964"
@@ -741,11 +762,12 @@
 				item: "gtceu:enderium_single_wire"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 5.5d
+			x: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1DA6B3308C263A6F"]
+			description: ["An alloy forged from Ender Pearls and Diamonds, with some Lead sprinkled throughout."]
 			id: "5BA3F17E1C7BE599"
 			rewards: [{
 				id: "363322517E6CC58D"
@@ -758,14 +780,15 @@
 				item: "gtceu:enderium_ingot"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 5.5d
+			x: 4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"0E61DC74B2E2C962"
 				"1646D6D439B260D3"
 			]
+			description: ["Nichrome is one of the first alloys requiring a Vacuum Freezer to cool down."]
 			id: "32B878D63A6AB6D3"
 			rewards: [{
 				id: "6998E98E8D6DD7F7"
@@ -778,8 +801,8 @@
 				item: "gtceu:nichrome_ingot"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 7.5d
+			x: 8.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["32B878D63A6AB6D3"]
@@ -802,8 +825,8 @@
 				item: "gtceu:nichrome_coil_block"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 5.5d
+			x: 6.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -811,7 +834,7 @@
 				"1646D6D439B260D3"
 				"250C897A70DB797F"
 			]
-			description: ["The heart of every EV machine."]
+			description: ["The heart of every &5EV&r machine."]
 			id: "74749B089D50329C"
 			rewards: [{
 				id: "27CD4AD7BE3E9087"
@@ -824,15 +847,15 @@
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 7.5d
+			x: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
 				"5BA3F17E1C7BE599"
 				"6060E79B2D08912D"
 			]
-			description: ["Will increase the power of anything thermal by 256x. This is the final upgrade you can make for them."]
+			description: ["Will increase the power of anything thermal by 256x. This is the final Upgrade Kit you can make for them."]
 			id: "60EB030A899ADE28"
 			rewards: [{
 				id: "510254539341E7E3"
@@ -854,11 +877,12 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
-			y: 7.5d
+			x: 6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["74749B089D50329C"]
+			description: ["You should understand what this does already right?"]
 			id: "6060E79B2D08912D"
 			rewards: [{
 				count: 2
@@ -873,11 +897,12 @@
 				item: "gtceu:ev_assembler"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 9.5d
+			x: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
+			description: ["This cools down your Hot Ingots better and faster then the Chemical Bath could ever hope to achieve."]
 			hide_dependent_lines: true
 			id: "1646D6D439B260D3"
 			rewards: [{
@@ -891,8 +916,8 @@
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 7.5d
+			x: 0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
@@ -905,21 +930,21 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "37415A4D42D8E939"
 				item: "kubejs:multiblock_upgrade_kit"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 7.5d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
 				"52FE319F5E176C37"
 				"1B0A7CF5BE5D71FE"
 			]
-			description: ["A very tall multiblock that allows you to distill one chemical into many other chemicals."]
+			description: ["A very tall multiblock that allows you to distill one fluid into multiple others without having to choose like with the distillery."]
 			id: "170C262792DA7123"
 			rewards: [{
 				id: "45C8F1B5FB0A96CA"
@@ -932,8 +957,8 @@
 				item: "gtceu:distillation_tower"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 7.5d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["22BC7BDE5E132A30"]
@@ -951,15 +976,15 @@
 				title: "Oil"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: 7.5d
+			x: -5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4FFD2642BC183495"]
 			description: [
 				"Allows you to pump oil from the void. I don't know how that works out, but it does."
 				""
-				"Better Drills dont drain chunks as much and work much faster."
+				"Better Drills do not drain chunks as much and work much faster."
 			]
 			id: "22BC7BDE5E132A30"
 			rewards: [{
@@ -968,6 +993,7 @@
 				type: "item"
 			}]
 			size: 1.0d
+			subtitle: "Wait a minute..."
 			tasks: [{
 				id: "7857528275E1A624"
 				item: {
@@ -998,8 +1024,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: 7.5d
+			x: -7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1007,7 +1033,7 @@
 				"23D3BED4F1968AD6"
 			]
 			description: [
-				"Allows you to scan your surounding chunks for fluids. "
+				"Allows you to scan your surrounding chunks for fluids. "
 				""
 				"Spoilers, its going to be oil."
 			]
@@ -1024,12 +1050,12 @@
 				item: "gtceu:prospector.hv"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 7.5d
+			x: -9.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["170C262792DA7123"]
-			description: ["Just mix the oil products with some hydrogen to clean it."]
+			description: ["Mix Oil distillation byproducts with some hydrogen to clean them, allowing you to distill them further."]
 			icon: "gtceu:sulfur_dust"
 			id: "1A05644388327FA4"
 			rewards: [{
@@ -1043,12 +1069,16 @@
 				title: "Desulfurizing"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: 9.5d
+			x: -3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["1A05644388327FA4"]
-			description: ["Choose an oil biproduct and get it cracked to allow even further processing."]
+			description: [
+				"Choose an oil byproduct and get it cracked to allow even further processing."
+				""
+				"Taking some time to figure out which cracking method for what product is the best for you is recommended."
+			]
 			id: "22F56435C5449158"
 			rewards: [{
 				id: "336298AD9BCF6974"
@@ -1056,13 +1086,14 @@
 				type: "item"
 			}]
 			size: 1.0d
+			subtitle: "Cracked at cracking"
 			tasks: [{
 				id: "0654E39159A0538C"
 				item: "gtceu:cracker"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 9.5d
+			x: -5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1075,7 +1106,7 @@
 				"4BA7A1EBD0E9A16B"
 			]
 			dependency_requirement: "one_completed"
-			description: ["I hope you like having many distilation towers."]
+			description: ["I hope you like having many distillation towers."]
 			id: "439D8AE6D3DC41AF"
 			rewards: [{
 				count: 2
@@ -1090,12 +1121,16 @@
 				title: "Byproduct distilling"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: 9.5d
+			x: -7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["439D8AE6D3DC41AF"]
-			description: ["Another material that can be used to coat cables, is the most efficent resource wise."]
+			description: [
+				"Another material that can be used to coat cables, is the most efficent resource wise."
+				""
+				"Should now be easily craftable with oil distillation fully set up."
+			]
 			id: "38C9D56C7F821B5C"
 			rewards: [{
 				id: "31FAA10AB69D2B2D"
@@ -1108,15 +1143,15 @@
 				item: "gtceu:styrene_butadiene_rubber_bucket"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 9.5d
+			x: -9.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"6060E79B2D08912D"
 				"2D4F9DFF6B559C65"
 			]
-			description: ["Allows you to run your multiblocks off of pure EV power, or even overclock to IV."]
+			description: ["Allows you to run your multiblocks off of pure &5EV&r power, or even overclock to &9IV&r."]
 			id: "75CCD3B6125B55C4"
 			rewards: [{
 				id: "7F2DC78F0E3D256E"
@@ -1129,12 +1164,12 @@
 				item: "gtceu:ev_energy_input_hatch"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 9.5d
+			x: 6.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6060E79B2D08912D"]
-			description: ["Large battery for EV. Can be used to charge tools and machines."]
+			description: ["Large battery for &5EV&r. Can be used to charge tools and machines."]
 			id: "352B3D23A2C7DE74"
 			rewards: [{
 				id: "7BA1830DEF738680"
@@ -1147,14 +1182,19 @@
 				item: "gtceu:lapotron_crystal"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 11.5d
+			x: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
 				"6060E79B2D08912D"
 				"1E981BDF3F2C577D"
 				"54EA865EC1ABDA36"
+			]
+			description: [
+				"4th tier of Coils for all your smelting needs."
+				""
+				"This needs Ruthenium, which you get from the Platline, check it out in the \"Processing Lines\" chapter."
 			]
 			id: "3B2D79D40B9617D5"
 			rewards: [{
@@ -1164,20 +1204,25 @@
 			}]
 			shape: "gear"
 			size: 1.5d
+			subtitle: "Almost as hot as an RTX"
 			tasks: [{
 				id: "5F7791E30C08A2D8"
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 11.5d
+			x: 2.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
 				"1E981BDF3F2C577D"
 				"74749B089D50329C"
 			]
-			description: ["This is the IV material, you're going to need a lot of this like every other main voltage material."]
+			description: [
+				"This is the &9IV&r material. "
+				""
+				"You are going to need a lot of this, just like every other main voltage material."
+			]
 			id: "4BCE8A9EBDF113CE"
 			rewards: [{
 				id: "0CB27DBB660355C2"
@@ -1190,8 +1235,8 @@
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 9.5d
+			x: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1227,12 +1272,16 @@
 				}
 			]
 			title: "Distilling Liquid Air"
-			x: 2.5d
-			y: 9.5d
+			x: -1.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["74749B089D50329C"]
-			description: ["The best Circuit Board liquid."]
+			description: [
+				"The best liquid for etching Circuit Boards."
+				""
+				"We recommend switching out your ae2 patterns to use this."
+			]
 			id: "001252911D2DA7C3"
 			rewards: [{
 				id: "04F9F912A7019060"
@@ -1245,12 +1294,12 @@
 				item: "gtceu:cupric_chloride_solution_bucket"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 7.5d
+			x: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
-			description: ["This chip is used for making EV leveled energy hatches and transformers."]
+			description: ["This chip is used for making &5EV&r tier Energy Hatches and Transformers."]
 			icon: "gtceu:mpic_chip"
 			id: "2D4F9DFF6B559C65"
 			rewards: [{
@@ -1277,11 +1326,12 @@
 				}
 			]
 			title: "MPIC Chips"
-			x: 12.5d
-			y: 9.5d
+			x: 8.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6EB85BBD539AEB57"]
+			description: ["You can use this in a Laser Engraver to make new chips, or make the old ones more efficiently."]
 			id: "2CABFCC73E33E133"
 			rewards: [{
 				count: 2
@@ -1296,11 +1346,20 @@
 				item: "gtceu:phosphorus_wafer"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 9.5d
+			x: 10.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["75CCD3B6125B55C4"]
+			description: [
+				"This hatch can do something called Speed Overclocking."
+				""
+				"A Speed Overclock is a special kind of Overclocking, that makes your machine run recipes at the next tier of voltage."
+				""
+				"However, unlike normal Overclock, it will not make the machine be able to do recipes at that higher tier."
+				""
+				"As an example, a 4A &5EV&r Hatch will let a machine run at &9IV&r speed, but only do &5EV&r or lower recipes."
+			]
 			id: "32FF3127152DCD7D"
 			rewards: [{
 				id: "3C609B1EA15887CC"
@@ -1313,11 +1372,12 @@
 				item: "gtceu:ev_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 11.5d
+			x: 8.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["32FF3127152DCD7D"]
+			description: ["A 16A &5EV&r Energy Hatch will let a machine run at &dLuV&r speed, but only do &5EV&r or lower recipes."]
 			id: "65705AECA837EE4C"
 			rewards: [{
 				id: "05AD2B7C5A5ECE0E"
@@ -1330,8 +1390,8 @@
 				item: "gtceu:ev_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 11.5d
+			x: 10.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["2231C06CE59E0074"]
@@ -1348,8 +1408,8 @@
 				item: "gtceu:phosphorus_boule"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 7.5d
+			x: 12.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["32EF0A93C1C5F429"]
@@ -1365,8 +1425,8 @@
 				item: "gtceu:phosphorus_dust"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 5.5d
+			x: 12.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1388,8 +1448,8 @@
 				item: "gtceu:phosphate_dust"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 3.5d
+			x: 12.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -1420,8 +1480,8 @@
 				}
 			]
 			title: "SoC Chips"
-			x: 16.5d
-			y: 11.5d
+			x: 12.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1441,8 +1501,8 @@
 				item: "gtceu:ender_air_bucket"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 11.5d
+			x: -1.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0F1D766E2E2EEEB5"]
@@ -1459,11 +1519,12 @@
 				item: "gtceu:nether_air_bucket"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 12.5d
+			x: -1.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5E1E1A4F5036A6EA"]
+			description: ["The essence of the End, right in the palm of your hand."]
 			id: "0B9C9B50CBD06F13"
 			rewards: [{
 				id: "43C38518BA14FB01"
@@ -1476,11 +1537,12 @@
 				item: "mysticalagriculture:end_agglomeratio"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 11.5d
+			x: -3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["549B363564644706"]
+			description: ["The essence of the Nether, maybe it will bring some hot weather."]
 			id: "0F1D766E2E2EEEB5"
 			rewards: [{
 				id: "5EE84E5EE3586E86"
@@ -1493,11 +1555,12 @@
 				item: "mysticalagriculture:nether_agglomeratio"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 12.5d
+			x: -3.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0725DE9E90815AB4"]
+			description: ["Crushed Netherrack, not exactly groundbreaking."]
 			id: "549B363564644706"
 			rewards: [{
 				id: "7BE8C8DF5473190B"
@@ -1510,11 +1573,12 @@
 				item: "gtceu:netherrack_dust"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 12.5d
+			x: -4.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["4E9FAED9D889160A"]
+			description: ["Crushed Endstone, not exactly groundbreaking."]
 			id: "5E1E1A4F5036A6EA"
 			rewards: [{
 				id: "7ECD96DDE51CD967"
@@ -1527,12 +1591,12 @@
 				item: "gtceu:endstone_dust"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 11.5d
+			x: -4.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
-			description: ["Make some endstone and get to processing it."]
+			description: ["Make some Endstone and get to processing it."]
 			id: "4E9FAED9D889160A"
 			rewards: [{
 				id: "2EA67AA0DED02E19"
@@ -1545,12 +1609,12 @@
 				item: "minecraft:end_stone"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 11.5d
+			x: -6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
-			description: ["Make some netherack and get to processing it."]
+			description: ["Make some Netherack and get to processing it."]
 			id: "0725DE9E90815AB4"
 			rewards: [{
 				id: "5F7A11F57B0F3C94"
@@ -1563,8 +1627,8 @@
 				item: "minecraft:netherrack"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 12.5d
+			x: -6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0F0FEE1952A3CB4F"]
@@ -1584,8 +1648,8 @@
 				type: "item"
 			}]
 			title: "Large Chemical Reactor (LCR)"
-			x: -3.5d
-			y: 12.0d
+			x: -7.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1605,8 +1669,8 @@
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 3.5d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1614,7 +1678,7 @@
 				"6F008C23D5DE50D6"
 				"059FD3E475A05070"
 			]
-			description: ["The final HV circuit. Like previous circuits, this has a cheaper recipe once you gain access to a new chip."]
+			description: ["The final &6HV&r circuit. Like previous circuits, this has a cheaper recipe once you gain access to a new chip."]
 			id: "0514DE717001A062"
 			rewards: [{
 				id: "546570E01303C2B2"
@@ -1628,8 +1692,8 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 3.5d
+			x: 6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["059FD3E475A05070"]
@@ -1646,8 +1710,8 @@
 				item: "gtceu:data_orb"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 3.5d
+			x: 10.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0514DE717001A062"]
@@ -1664,8 +1728,8 @@
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 3.5d
+			x: 8.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1687,8 +1751,8 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 5.5d
+			x: 10.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["076532C492102F8E"]
@@ -1716,15 +1780,15 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: 1.5d
+			x: 8.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"470EBC3C75C6748E"
 				"17C1292018AE363E"
 			]
-			description: ["A different way to make chips, got to cover some with chemicals."]
+			description: ["A different way to make chips, by covering them in chemicals."]
 			hide_dependency_lines: true
 			icon: "gtceu:nano_cpu_chip"
 			id: "6F008C23D5DE50D6"
@@ -1747,8 +1811,8 @@
 				}
 			]
 			title: "Nano CPU Chips"
-			x: 12.5d
-			y: 5.5d
+			x: 8.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4D49884E7F5BCBB4"]
@@ -1764,8 +1828,8 @@
 				item: "gtceu:epoxy_plate"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 1.5d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -1796,15 +1860,15 @@
 				}
 			]
 			title: "NOR Memory Chips"
-			x: 14.5d
-			y: 7.5d
+			x: 10.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
 				"5CB82E9BED342EB2"
 				"05F2C7351FF1B0E5"
 			]
-			description: ["Lets you power your multiblocks with IV or overclock to Luv."]
+			description: ["Lets you power your multiblocks with &9IV&r or overclock to &dLuv&r."]
 			id: "7CACFC7C9101EA59"
 			rewards: [{
 				id: "524F28B3FD185A74"
@@ -1817,15 +1881,15 @@
 				item: "gtceu:iv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -0.5d
+			x: 4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"62BA581B2918BB7B"
 				"4D9DAED52FF74B8B"
 			]
-			description: ["IV Assembly Machine, used to make higher tier coils and energy hatches. Can be upgraded into the Assembly Machine multiblock's controller."]
+			description: ["&9IV&r Assembly Machine, used to make higher tier Coils and Energy Hatches. Can be upgraded into the Assembly Machine multiblock's controller."]
 			id: "5CB82E9BED342EB2"
 			rewards: [{
 				count: 2
@@ -1840,12 +1904,12 @@
 				item: "gtceu:iv_assembler"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 1.5d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4BCE8A9EBDF113CE"]
-			description: ["The heart of every IV machine."]
+			description: ["The heart of every &9IV&r machine."]
 			hide_dependency_lines: true
 			id: "4D9DAED52FF74B8B"
 			rewards: [{
@@ -1859,11 +1923,12 @@
 				item: "gtceu:iv_machine_hull"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 1.5d
+			x: 0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7CACFC7C9101EA59"]
+			description: ["Run recipes at &dLuV&r speed."]
 			id: "4A45669665626026"
 			rewards: [{
 				id: "5DE3ED7BA8D48DB0"
@@ -1876,11 +1941,12 @@
 				item: "gtceu:iv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -2.5d
+			x: 6.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["4A45669665626026"]
+			description: ["Run recipes at &cZPM&r speed."]
 			id: "528253AC30E635F1"
 			rewards: [{
 				id: "6EA3EBDFA6E4910A"
@@ -1893,8 +1959,8 @@
 				item: "gtceu:iv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -2.5d
+			x: 8.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1902,7 +1968,7 @@
 				"62BA581B2918BB7B"
 				"4D9DAED52FF74B8B"
 			]
-			description: ["Lets you turn your RF into 4amps of IV power."]
+			description: ["Lets you turn your RF into &9IV&r power."]
 			id: "7392E56AAA2E5790"
 			rewards: [{
 				id: "3D3BB2114B527507"
@@ -1945,12 +2011,12 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 1.5d
+			x: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1C05C80BCB4736B6"]
-			description: ["IV superconductor, can hold 64 amps in a 1x cable."]
+			description: ["&9IV&r superconductor, can hold 64 amps in a 1x cable."]
 			id: "15CAE17A4EF1F7E9"
 			rewards: [{
 				id: "258640534B0E3510"
@@ -1963,11 +2029,12 @@
 				item: "gtceu:shellite_single_wire"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -0.5d
+			x: -1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
+			description: ["A strengthened form of Signalum."]
 			hide_dependency_lines: true
 			id: "1C05C80BCB4736B6"
 			rewards: [{
@@ -1981,12 +2048,12 @@
 				item: "gtceu:shellite_ingot"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -2.5d
+			x: 0.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["2D4F9DFF6B559C65"]
-			description: ["This chip is used in both IV and Luv energy hatches and transformers as well as assembly line casings."]
+			description: ["This Chip is used in both &9IV&r and &dLuv&r Energy Hatches and Transformers as well as Assembly Line Casings."]
 			hide_dependency_lines: true
 			icon: "gtceu:hpic_chip"
 			id: "05F2C7351FF1B0E5"
@@ -2009,8 +2076,8 @@
 				}
 			]
 			title: "HPIC Chips"
-			x: 8.5d
-			y: -2.5d
+			x: 4.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -2018,7 +2085,7 @@
 				"61ABF5D51A3B9771"
 				"574ECD841D0D2AD7"
 			]
-			description: ["Massive handheld IV power storage, can be used to charge Greg Tech Tools or inserted into a machine to give it power directly."]
+			description: ["Massive handheld &9IV&r power storage, can be used to charge Greg Tech Tools or inserted into a machine to give it power directly."]
 			id: "16D1B8E5F2A87F4E"
 			rewards: [{
 				id: "129AA33520AFCCA7"
@@ -2031,8 +2098,8 @@
 				item: "gtceu:lapotronic_energy_orb"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 1.5d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["352B3D23A2C7DE74"]
@@ -2050,11 +2117,12 @@
 				item: "gtceu:engraved_lapotron_crystal_chip"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 1.5d
+			x: 6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["45AAA2B53069E806"]
+			description: ["A Circuit Board more durable then the Epoxy ones, used for Quantum Processors."]
 			id: "61ABF5D51A3B9771"
 			rewards: [{
 				id: "444E2AEE99EE595F"
@@ -2078,8 +2146,8 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
-			y: -0.5d
+			x: 6.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -2087,6 +2155,7 @@
 				"4FF433145C67693F"
 			]
 			dependency_requirement: "one_completed"
+			description: ["Solidify your Epoxy in a more durable manner."]
 			id: "45AAA2B53069E806"
 			rewards: [{
 				id: "3F8E9A77567332AE"
@@ -2099,10 +2168,11 @@
 				item: "gtceu:reinforced_epoxy_resin_plate"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -0.5d
+			x: 8.5d
+			y: -5.0d
 		}
 		{
+			description: ["Just some Glass and Boron, quite cheap."]
 			id: "5B575348D2A871BB"
 			optional: true
 			rewards: [{
@@ -2116,10 +2186,11 @@
 				item: "gtceu:fine_borosilicate_glass_wire"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -0.5d
+			x: 10.5d
+			y: -5.0d
 		}
 		{
+			description: ["Carbon and a Plastic. Each Plastic gives twice as much Fibers as the previous one."]
 			id: "4FF433145C67693F"
 			optional: true
 			rewards: [{
@@ -2133,8 +2204,8 @@
 				item: "gtceu:carbon_fibers"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -2.5d
+			x: 10.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -2142,7 +2213,7 @@
 				"71A44D3F0F20E329"
 				"687C720033164A7B"
 			]
-			description: ["The second upgrade to all the circuit components. Very resource efficent and is needed for high tier circuits."]
+			description: ["The second upgrade to all the Circuit Components. Very resource efficient and is needed for high tier Circuits."]
 			id: "18A88F62B17CE9EC"
 			rewards: [{
 				id: "2CA1A500A6D1550C"
@@ -2178,15 +2249,19 @@
 				}
 			]
 			title: "Advanced SMD's"
-			x: 6.5d
-			y: -2.5d
+			x: 2.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
 				"5CB82E9BED342EB2"
 				"06FCA7209B892A81"
 			]
-			description: ["HSS-G coils will give you the heat to make HSS-E and HSS-S ingots. Thats not going to get confusing at all."]
+			description: [
+				"The 5th tier of Coils. "
+				""
+				"These will give you the heat to make HSS-E and HSS-S ingots. Thats not going to get confusing at all."
+			]
 			id: "689150D2A185216C"
 			rewards: [{
 				id: "0E893C06186BCA22"
@@ -2200,11 +2275,12 @@
 				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -0.5d
+			x: 2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
+			description: ["The first High Speed Steel available."]
 			hide_dependency_lines: true
 			id: "06FCA7209B892A81"
 			rewards: [{
@@ -2218,11 +2294,12 @@
 				item: "gtceu:hssg_ingot"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -0.5d
+			x: 0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["689150D2A185216C"]
+			description: ["A more malleable HSS."]
 			id: "630C93730FCF07D7"
 			rewards: [{
 				id: "2731573D0E9BEDAA"
@@ -2235,11 +2312,12 @@
 				item: "gtceu:hsse_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: 2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["689150D2A185216C"]
+			description: ["A denser and harder form of HSS."]
 			id: "71A44D3F0F20E329"
 			rewards: [{
 				id: "101A195EDCC51F0C"
@@ -2252,11 +2330,12 @@
 				item: "gtceu:hsss_ingot"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -1.5d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["10F2237FF0C87F62"]
+			description: ["Carbon Nanotubes"]
 			id: "687C720033164A7B"
 			rewards: [{
 				id: "0BD87C29D60BCC50"
@@ -2269,12 +2348,18 @@
 				item: "gtceu:graphene_dust"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -4.5d
+			x: 2.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
-			description: ["This multiblock allows you to create even more complex alloys, you will need to cool these in a Vacuum Freezer however."]
+			description: [
+				"This multiblock allows you to create even more complex alloys, but will give outputs in a molten form."
+				""
+				"The ABS does both the mixing and smelting, and gives multiple units of ingots (144mb) as output because of this."
+				""
+				"You will need to cool the Molten Liquids in a Vacuum Freezer."
+			]
 			id: "664E782C6A24D9F1"
 			rewards: [{
 				count: 2
@@ -2289,8 +2374,8 @@
 				item: "gtceu:alloy_blast_smelter"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 11.5d
+			x: 4.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -2310,13 +2395,14 @@
 			}]
 			shape: "gear"
 			size: 1.5d
+			subtitle: "Doesn't explode... right?"
 			tasks: [{
 				id: "388DD36D47A45596"
 				item: "gtceu:nuclear_reactor"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 11.5d
+			x: 0.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -2325,6 +2411,11 @@
 				"6A57B03345FC6D99"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"A gas that will be used a lot for Quantum Eyes and Stars."
+				""
+				"We highly recommend setting Radon Loop up when you can, even if you have Ender Air distillation."
+			]
 			hide_dependent_lines: true
 			id: "2DB216B224F2E8EF"
 			size: 1.0d
@@ -2333,8 +2424,8 @@
 				item: "gtceu:radon_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 9.5d
+			x: 0.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -2342,16 +2433,16 @@
 				"5B70B63D4157594F"
 			]
 			dependency_requirement: "one_completed"
-			description: ["In the Mechanics Page many important notes about Gregtech in particular can be found."]
+			description: ["In &lMechanics&r Perfect Overclock is Explained"]
 			icon: "ftbquests:book"
 			id: "775AAF108AFAF707"
 			tasks: [{
 				id: "39A4828A672AE4A1"
-				title: "Go Read About Perfect OC"
+				title: "Go Read About Perfect Overclock"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: 12.0d
+			x: -9.0d
+			y: 6.5d
 		}
 		{
 			id: "56B0A897E7C7C25C"
@@ -2362,13 +2453,14 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: 5.0d
-			y: 4.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
 			icon: "gtceu:nand_memory_chip"
 			id: "5026437079530A67"
+			subtitle: "Used for data storage"
 			tasks: [
 				{
 					id: "78983E5E875409CA"
@@ -2387,8 +2479,56 @@
 				}
 			]
 			title: "NAND Memory Chips"
-			x: 16.5d
-			y: 9.5d
+			x: 12.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1820787D031EAB15"]
+			description: ["In &lMechanics&r Large Chemical Reactors Skips are Explained"]
+			icon: "ftbquests:book"
+			id: "4840218DA8E61B65"
+			optional: true
+			tasks: [{
+				id: "6B319AA87C949FE7"
+				title: "Go Read About Chemical Skips"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			dependency_requirement: "one_completed"
+			description: ["In &lMechanics&r Distinct Buses are Explained"]
+			hide_dependency_lines: true
+			icon: "ftbquests:book"
+			id: "7E74A114F4054345"
+			tasks: [{
+				id: "52333CEF18B39599"
+				title: "Go Read About Distinct Buses"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1820787D031EAB15"
+				"5B70B63D4157594F"
+				"170C262792DA7123"
+			]
+			dependency_requirement: "one_completed"
+			description: ["In &lMechanics&r Lockable Fluid Hatches are Explained"]
+			hide_dependency_lines: true
+			icon: "ftbquests:book"
+			id: "171BD0E155CF98CA"
+			tasks: [{
+				id: "75801F4A6F213865"
+				title: "Go Read About Lockable Hatches"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 4.0d
 		}
 	]
 	title: "Automation Age"

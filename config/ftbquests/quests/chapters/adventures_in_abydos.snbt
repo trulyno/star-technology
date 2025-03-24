@@ -12,25 +12,26 @@
 		{
 			id: "727DEC5336F4793D"
 			linked_quest: "37E3EF96EDE85C86"
-			x: -9.5d
-			y: -8.0d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
 			id: "4BF64259E2567FD6"
 			linked_quest: "0C19C040CA121E3B"
-			x: -7.5d
-			y: -8.0d
+			x: -2.5d
+			y: -3.0d
 		}
 		{
 			id: "723E27B22576F175"
 			linked_quest: "1BE69DB2DFDC35C8"
-			x: -9.5d
-			y: -6.0d
+			x: -4.5d
+			y: -1.0d
 		}
 	]
 	quests: [
 		{
 			dependencies: ["1FB502D770A4A59B"]
+			description: ["I hope the sand doesn't get in your machines."]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -52,8 +53,8 @@
 				title: "A new world!"
 				type: "checkmark"
 			}]
-			x: -7.5d
-			y: -6.0d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -61,6 +62,7 @@
 				"6110BA7B3E84F06F"
 				"73D0DC357821B395"
 			]
+			description: ["A small computer that can regulate mechanisms."]
 			id: "4DD3C38FCD8D704D"
 			rewards: [{
 				id: "0FA7D7BA54BC6792"
@@ -72,8 +74,8 @@
 				item: "kubejs:uhv_computational_matrix"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -10.5d
+			x: -7.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -81,6 +83,7 @@
 				"0254109773A2D93C"
 				"73D0DC357821B395"
 			]
+			description: ["A mechanism that can create rotation with large amounts of force."]
 			id: "06F8BF8FB54B3BEE"
 			rewards: [{
 				id: "6F4F9E0DD0FF5BD4"
@@ -92,8 +95,8 @@
 				item: "kubejs:uhv_transmission_assembly"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -7.5d
+			x: -9.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -101,6 +104,7 @@
 				"0254109773A2D93C"
 				"73D0DC357821B395"
 			]
+			description: ["A mechanism that can do precise movements with directives."]
 			id: "0A321FE2FB18EA8B"
 			rewards: [{
 				id: "3F1880871D2A1F70"
@@ -112,14 +116,15 @@
 				item: "kubejs:uhv_precision_drive_mechanism"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -10.5d
+			x: -5.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
 				"6110BA7B3E84F06F"
 				"73D0DC357821B395"
 			]
+			description: ["A valve that can measure the tiniest amounts of fluid and accurately dose them."]
 			id: "05EEBCD256194C78"
 			rewards: [{
 				id: "15E0AA677E224833"
@@ -131,8 +136,8 @@
 				item: "kubejs:uhv_microfluidic_flow_valve"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -9.5d
+			x: -4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -141,6 +146,7 @@
 				"182D948925141764"
 				"73D0DC357821B395"
 			]
+			description: ["A magnetic field controller."]
 			id: "6D7188F8CA92DAAF"
 			rewards: [{
 				id: "0F419A2561844A0E"
@@ -152,14 +158,15 @@
 				item: "kubejs:uhv_super_magnetic_core"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -8.5d
+			x: -9.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
 				"6110BA7B3E84F06F"
 				"73D0DC357821B395"
 			]
+			description: ["A sturdy core that can precisely regulate it's inner working environment."]
 			id: "77E6700262CDB4E0"
 			rewards: [{
 				id: "577AB092403F0B3D"
@@ -171,8 +178,8 @@
 				item: "kubejs:uhv_catalyst_core"
 				type: "item"
 			}]
-			x: -13.0d
-			y: -9.5d
+			x: -8.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -180,6 +187,7 @@
 				"0254109773A2D93C"
 				"73D0DC357821B395"
 			]
+			description: ["A sturdy plating that can resist wear and tear from high stress machinery."]
 			id: "433B94A266536D86"
 			rewards: [{
 				id: "2C0891BA24962E56"
@@ -191,8 +199,8 @@
 				item: "kubejs:uhv_high_strength_panel"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -10.5d
+			x: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -201,6 +209,7 @@
 				"6110BA7B3E84F06F"
 				"73D0DC357821B395"
 			]
+			description: ["A controller that can precisely regulate energy transfer."]
 			id: "7BBEB3C2DADBAD8B"
 			rewards: [{
 				id: "43BD55C54E2A6076"
@@ -212,11 +221,12 @@
 				item: "kubejs:uhv_micropower_router"
 				type: "item"
 			}]
-			x: -13.0d
-			y: -8.0d
+			x: -8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["37E3EF96EDE85C86"]
+			description: ["The core component for crafting all components for &4UHV&r."]
 			id: "6110BA7B3E84F06F"
 			rewards: [{
 				id: "61B75FB189A66E73"
@@ -228,11 +238,12 @@
 				item: "gtceu:zalloy_ingot"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -8.0d
+			x: -6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
+			description: ["An element used for alloys that can make excellent mechanical parts."]
 			id: "6A21CA0E47D6FA6F"
 			rewards: [{
 				id: "29BC3C059823221C"
@@ -244,11 +255,12 @@
 				item: "gtceu:selenium_dust"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -4.0d
+			x: -4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1BE69DB2DFDC35C8"]
+			description: ["An alloy used for sturdy mechanical components."]
 			hide_dependent_lines: true
 			id: "0254109773A2D93C"
 			rewards: [{
@@ -261,8 +273,8 @@
 				item: "gtceu:zircalloy_4_ingot"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -7.0d
+			x: -5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -281,8 +293,8 @@
 				item: "gtceu:uhv_electric_motor"
 				type: "item"
 			}]
-			x: -15.0d
-			y: -8.0d
+			x: -10.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["05EEBCD256194C78"]
@@ -298,8 +310,8 @@
 				item: "gtceu:uhv_electric_pump"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -10.0d
+			x: -3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -317,8 +329,8 @@
 				item: "gtceu:uhv_conveyor_module"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -12.0d
+			x: -5.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["433B94A266536D86"]
@@ -333,8 +345,8 @@
 				item: "gtceu:uhv_electric_piston"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -12.0d
+			x: -7.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -353,8 +365,8 @@
 				item: "gtceu:uhv_robot_arm"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -12.0d
+			x: -6.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5F65FECD29B8A341"]
@@ -370,8 +382,8 @@
 				item: "gtceu:uhv_field_generator"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -11.0d
+			x: -9.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -389,8 +401,8 @@
 				item: "gtceu:uhv_emitter"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -11.0d
+			x: -8.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -409,14 +421,15 @@
 				item: "gtceu:uhv_sensor"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -10.0d
+			x: -9.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"6A21CA0E47D6FA6F"
 				"14F1B40FACDDE02C"
 			]
+			description: ["An alloy that is extremely proficient in guiding electromagnetic fields."]
 			hide_dependent_lines: true
 			id: "3A52F8061046CB05"
 			rewards: [{
@@ -429,11 +442,12 @@
 				item: "gtceu:iron_selenide_over_strontium_titanium_oxide_ingot"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -2.0d
+			x: -4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
+			description: ["A remnant of nuclear decay, seeped into the stones of a planet that tried to kill itself."]
 			id: "14F1B40FACDDE02C"
 			rewards: [{
 				id: "7F4F27A1BE0CC9B6"
@@ -445,14 +459,15 @@
 				item: "gtceu:strontium_dust"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -4.0d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"6A21CA0E47D6FA6F"
 				"1BE69DB2DFDC35C8"
 			]
+			description: ["A new alloy that can control the flow of electricity with extreme precision."]
 			hide_dependent_lines: true
 			id: "512757BEBFD1F584"
 			rewards: [{
@@ -465,11 +480,12 @@
 				item: "gtceu:zirconium_selenide_diiodide_ingot"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -4.0d
+			x: -6.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["179A15014A5716B5"]
+			description: ["A new machine that can find treasures among the rubble."]
 			id: "1A8F645AC1B30411"
 			rewards: [{
 				count: 2
@@ -484,11 +500,12 @@
 				item: "gtceu:cyclonic_crystalline_sieve"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -2.0d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1A8F645AC1B30411"]
+			description: ["This machine mixes a liquid with 2 catalysts to put it in a more activated form."]
 			id: "5368269646BC0F27"
 			rewards: [{
 				id: "3E1E31EFB499CF8F"
@@ -500,14 +517,15 @@
 				item: "gtceu:folding_akreyrium_stabiliser"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -4.0d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
 				"07AD6651D0B40E22"
 				"7AC55BA8BDD0F3D2"
 			]
+			description: ["With these 2 machines you can massively increase the amount of Akreyrium you produce."]
 			id: "7F203254ACDF8C88"
 			optional: true
 			rewards: [{
@@ -528,14 +546,15 @@
 				}
 			]
 			title: "Better Akreyrium Processing"
-			x: -3.5d
-			y: -2.0d
+			x: 1.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"5368269646BC0F27"
 				"54DA03D41AF36EF2"
 			]
+			description: ["A weird fluid, that has some interesting properties making it necessary for more advanced machines."]
 			icon: {
 				Count: 1
 				id: "gtceu:utopian_akreyrium_bucket"
@@ -563,8 +582,8 @@
 				}
 			]
 			title: "Utopian Akreyrium"
-			x: -1.5d
-			y: -2.0d
+			x: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
@@ -584,8 +603,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: -10.0d
+			x: 3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
@@ -605,8 +624,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: -10.0d
+			x: 1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6F05FAE3F5AAC357"]
@@ -635,8 +654,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: -8.0d
+			x: 1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -654,12 +673,12 @@
 				title: "Ancient Structures"
 				type: "structure"
 			}]
-			x: -5.5d
-			y: -6.0d
+			x: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
-			description: [""]
+			description: ["A bacteria that is in a dormant state. Why was this stored with treasures?"]
 			id: "6F05FAE3F5AAC357"
 			rewards: [{
 				id: "1C5C5256EB429800"
@@ -676,11 +695,12 @@
 				type: "item"
 			}]
 			title: "Otherworldly Biology"
-			x: -5.5d
-			y: -8.0d
+			x: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7F72F9E28713D965"]
+			description: ["Awoken Bacteria. These have all kinds of types, and seem to produce some familiar liquids."]
 			id: "305974D431F17AF0"
 			rewards: [{
 				id: "0707F4889D91098E"
@@ -808,8 +828,8 @@
 				type: "item"
 			}]
 			title: "Bacterial Colonies"
-			x: -1.5d
-			y: -8.0d
+			x: 3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -853,8 +873,8 @@
 				}
 			]
 			title: "Runic Tablet Fragments"
-			x: -3.5d
-			y: -6.0d
+			x: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5744150A5658FE4D"]
@@ -870,14 +890,15 @@
 				item: "kubejs:runic_tablet_complete"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -6.0d
+			x: 3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"4D04123F036F181E"
 				"1BE69DB2DFDC35C8"
 			]
+			description: ["A new Stellarium alloy, that is mixed with materials not normally found in your home isle."]
 			id: "30C974448C57F0EC"
 			rewards: [{
 				id: "470268845820F4F7"
@@ -889,11 +910,12 @@
 				item: "gtceu:ancient_runicalium_ingot"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -6.0d
+			x: -6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["30C974448C57F0EC"]
+			description: ["The &2UEV&r superconductor, can hold 1024 amps in a 1x wire"]
 			id: "1C0B16612DBBE8CA"
 			rewards: [{
 				id: "7EE50E0E44FBAE00"
@@ -905,14 +927,15 @@
 				item: "gtceu:ancient_runicalium_single_wire"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -4.0d
+			x: -8.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"7AC55BA8BDD0F3D2"
 				"4F3EE28B3F38FC85"
 			]
+			description: ["A Fusion Reactor that can do parallels. Long gone are the days of excessive Fusion spam, now all you need to do is figure out how to efficiently wallshare these."]
 			id: "6C8C6EA426060065"
 			rewards: [{
 				count: 2
@@ -931,11 +954,12 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 2.0d
+			x: 3.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["7AC55BA8BDD0F3D2"]
+			description: ["This beauty can harvest colossal amounts of air at once, and then also automatically distill it. Without a doubt, this multiblock is a must for getting to Ancient Gate."]
 			id: "2659B3AA9108BC43"
 			rewards: [{
 				id: "518D145AEA79CC76"
@@ -947,11 +971,12 @@
 				item: "gtceu:exotic_gas_siphon"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 2.0d
+			x: -0.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3540AE6C940F985B"]
+			description: ["A computer that can read data from a Draconic Coordinate Core."]
 			id: "34585406B4A18F41"
 			rewards: [{
 				count: 2
@@ -966,13 +991,18 @@
 				item: "kubejs:ancient_stargate_computer_core"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -3.0d
+			x: 11.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"34585406B4A18F41"
 				"5DADD2204991B4D5"
+			]
+			description: [
+				"The core of an Ancient Stargate."
+				""
+				"This can accurately detect and use Chevrons to lock on planest far beyond Abydos."
 			]
 			id: "6F9793149DE81FCC"
 			rewards: [{
@@ -991,11 +1021,12 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: -6.0d
+			x: 11.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5FCA8ED151CEB5C1"]
+			description: ["And here we go again, more Ring Blocks"]
 			id: "5DADD2204991B4D5"
 			rewards: [{
 				id: "0C6EE8224B97BBA5"
@@ -1013,14 +1044,15 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: -6.0d
+			x: 9.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"5DADD2204991B4D5"
 				"425A865B6B617DEC"
 			]
+			description: ["These Chevrons can lock in coordinates with far more precision then the previous generation."]
 			id: "63E36421AE07BC42"
 			rewards: [{
 				id: "1E1781F6129AF097"
@@ -1038,11 +1070,12 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: -6.0d
+			x: 13.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["442233119AED645F"]
+			description: ["A Chevron that can hold data for more advanced destinations."]
 			id: "425A865B6B617DEC"
 			rewards: [{
 				count: 2
@@ -1057,8 +1090,8 @@
 				item: "kubejs:ancient_chevron_disk"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -4.0d
+			x: 13.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["379D69A44FC5B2F2"]
@@ -1081,8 +1114,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: -10.0d
+			x: 9.5d
+			y: -5.0d
 		}
 		{
 			can_repeat: true
@@ -1103,14 +1136,15 @@
 				title: "Get Nether Coordinates"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: -1.0d
+			x: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"21188AF95E6D5030"
 				"5FAD11260BC2F305"
 			]
+			description: ["A core with the ability to find the smallest and largest traces of planets all over the Galaxy"]
 			id: "3540AE6C940F985B"
 			rewards: [{
 				id: "4C923D283D3BE0EA"
@@ -1122,11 +1156,12 @@
 				item: "kubejs:draconic_coordinate_core"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -3.0d
+			x: 9.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
+			description: ["The path to the hellfires of the Nether, inscriped on a piece of whispering gemstone."]
 			id: "29DAE5F27A1D4115"
 			rewards: [{
 				id: "361187FB10BF0C39"
@@ -1138,11 +1173,12 @@
 				item: "kubejs:nether_coordinate_crystal"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -2.0d
+			x: 5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
+			description: ["The path to the shattered void of the End, inscriped on a piece of whispering gemstone."]
 			id: "14479FB9FCF478D6"
 			rewards: [{
 				id: "2EFAEEDC5007A402"
@@ -1154,8 +1190,8 @@
 				item: "kubejs:end_coordinate_crystal"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -4.0d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
 			can_repeat: true
@@ -1176,8 +1212,8 @@
 				title: "Get End Coordinates"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: 3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1186,6 +1222,7 @@
 				"63E36421AE07BC42"
 				"5DADD2204991B4D5"
 			]
+			description: ["The gateway to the cold and lifeless abyss, and the burning fires of hell."]
 			icon: {
 				Count: 1
 				id: "sgjourney:milky_way_stargate"
@@ -1279,8 +1316,8 @@
 				}
 			]
 			title: "The Ancient Gate"
-			x: 6.5d
-			y: -8.5d
+			x: 11.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1305,8 +1342,8 @@
 				type: "dimension"
 			}]
 			title: "To The End"
-			x: 7.0d
-			y: -11.0d
+			x: 12.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1331,8 +1368,8 @@
 				title: "To The Nether"
 				type: "dimension"
 			}]
-			x: 6.0d
-			y: -11.0d
+			x: 11.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["47DF7968E9B98C65"]
@@ -1345,28 +1382,15 @@
 				title: "Cheaper HydroCarbons"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["2659B3AA9108BC43"]
-			description: ["With the \"Exotic Gas Siphon\" you are able to do all of Air distilation in 1 step or gather immense amounts of gas at once."]
-			icon: "gtceu:radon_bucket"
-			id: "6CCC111235D6CE5B"
-			optional: true
-			tasks: [{
-				id: "061CB6C7CD618F6D"
-				title: "Cheaper Gases"
-				type: "checkmark"
-			}]
-			x: -7.5d
-			y: 2.0d
+			x: -0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"14479FB9FCF478D6"
 				"43DAD4B63603BFC3"
 			]
+			description: ["A core that can detect the smallest amounts of matter inside the vast nothingness of space."]
 			id: "5FAD11260BC2F305"
 			rewards: [{
 				id: "0433F422BDFFAF25"
@@ -1378,14 +1402,15 @@
 				item: "kubejs:void_core"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.0d
+			x: 7.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"29DAE5F27A1D4115"
 				"43DAD4B63603BFC3"
 			]
+			description: ["A core that can feel the immense energy of burning flames all across the galaxy."]
 			id: "21188AF95E6D5030"
 			rewards: [{
 				id: "4AE809F68AD3D5B3"
@@ -1397,11 +1422,12 @@
 				item: "kubejs:hell_core"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.0d
+			x: 7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1C9396E2587051F7"]
+			description: ["This data disk can store so much data that you could put all human DNA in it."]
 			id: "43DAD4B63603BFC3"
 			rewards: [{
 				id: "2D07335EE60C7099"
@@ -1417,14 +1443,15 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.0d
+			x: 7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"78777C3EE2DA5D0F"
 				"2D064F759D13FE4B"
 			]
+			description: ["The start of your wildest dreams, a dragon based circuit board."]
 			id: "1C9396E2587051F7"
 			rewards: [{
 				id: "170A7AD04A8BFCA6"
@@ -1447,11 +1474,12 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 2.0d
+			x: 9.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6110BA7B3E84F06F"]
+			description: ["The new tier of coils in Abydos, so get ready to replace your old ones."]
 			id: "4D04123F036F181E"
 			rewards: [{
 				count: 2
@@ -1466,14 +1494,15 @@
 				item: "kubejs:zalloy_coil_block"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -6.0d
+			x: -8.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"5BA69EDC3C223B2C"
 				"4BF64259E2567FD6"
 			]
+			description: ["Another tier of PIC Wafers, used for some incredible Abydos technology."]
 			hide_dependency_lines: true
 			id: "7AC55BA8BDD0F3D2"
 			rewards: [{
@@ -1494,11 +1523,12 @@
 				}
 			]
 			title: "UEPIC Chips"
-			x: -3.5d
-			y: 2.0d
+			x: 1.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["2C354B0735DF8023"]
+			description: ["Runes engraved on blocks to allow for them to exert power on placed blocks."]
 			id: "379D69A44FC5B2F2"
 			rewards: [{
 				id: "06D88EE9C7DC14A5"
@@ -1523,14 +1553,15 @@
 				}
 			]
 			title: "Runic Engraved Casings"
-			x: 2.5d
-			y: -8.0d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"2C354B0735DF8023"
 				"3C3E585C933C9515"
 			]
+			description: ["Multi-layered runes, carrying the power of all that went into crafting them."]
 			id: "5FCA8ED151CEB5C1"
 			rewards: [{
 				id: "7FDA3D0E34F6806E"
@@ -1554,14 +1585,15 @@
 				}
 			]
 			title: "Multi-Engraved Runic Plating"
-			x: 2.5d
-			y: -6.0d
+			x: 7.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"146F88E5C1119649"
 				"624480A1E62B52EF"
 			]
+			description: ["A machine that can engrave runes ontop of eachother using lost Abydos technology."]
 			id: "2C354B0735DF8023"
 			rewards: [{
 				count: 2
@@ -1580,14 +1612,15 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
-			y: -8.0d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"6D169C5E35C9EF6C"
 				"1102670352911334"
 			]
+			description: ["Even more runes."]
 			id: "3C3E585C933C9515"
 			rewards: [{
 				id: "187EF22FCDECD230"
@@ -1612,14 +1645,15 @@
 				}
 			]
 			title: "Advanced Engraved Runes"
-			x: 0.5d
-			y: -6.0d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"1E47910C2F2112E1"
 				"3212A3351DAD4492"
 			]
+			description: ["An array of Chevrons that can store more complex data."]
 			hide_dependency_lines: false
 			id: "442233119AED645F"
 			rewards: [{
@@ -1636,11 +1670,12 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: -2.0d
+			x: 11.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
+			description: ["You can drill this up just like Oil."]
 			icon: {
 				Count: 1
 				id: "gtceu:gritty_akreyrium_bucket"
@@ -1669,11 +1704,12 @@
 				}
 			]
 			title: "Gritty Akreyrium"
-			x: -5.5d
-			y: -4.0d
+			x: -0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
+			description: ["A passive Heat Sink with actual good cooling."]
 			id: "6E40FC247C876DB2"
 			optional: true
 			rewards: [{
@@ -1687,8 +1723,8 @@
 				type: "item"
 			}]
 			title: "Better Research Heat Sink"
-			x: -1.5d
-			y: -4.0d
+			x: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5E7153B7A10FC241"]
@@ -1699,7 +1735,7 @@
 				"-StarT Dev Team"
 				""
 				""
-				"[The Maker of Gates Applauds you, and soon the reasonings as to why the Draconic Empires fell will be unravelled. Soon you will get 1 step closer to home....]"
+				"[The Maker of Gates shows their pride to you, and soon the reasonings as to why the Draconic Empires fell will be unravelled, and you will get 1 step closer to home....]"
 			]
 			id: "46982CD51A50CD07"
 			shape: "pentagon"
@@ -1711,8 +1747,8 @@
 				type: "checkmark"
 			}]
 			title: "You have completed the Epsilon Version of Star Technology"
-			x: 8.5d
-			y: -10.0d
+			x: 13.5d
+			y: -5.0d
 		}
 		{
 			id: "39E723ECCBEE0A0A"
@@ -1723,8 +1759,8 @@
 				title: "Positioner"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: -5.0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1745,11 +1781,12 @@
 				item: "kubejs:inscribe_casing"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -10.0d
+			x: 5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["43DAD4B63603BFC3"]
+			description: ["This is most definitly looking at you."]
 			id: "4F3EE28B3F38FC85"
 			rewards: [{
 				id: "7B18F86418699D3C"
@@ -1761,45 +1798,20 @@
 				item: "kubejs:wetware_based_runic_neuroloom"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"7AC55BA8BDD0F3D2"
-				"07F65BCDDA42248D"
-			]
-			id: "38FB8D5DB43D0DBD"
-			tasks: [{
-				id: "31FB1C4F97CF3F9F"
-				item: "start_core:uhv_absolute_parallel_hatch"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2C354B0735DF8023"]
-			hide_dependent_lines: true
-			id: "4289C7821C6AF920"
-			tasks: [{
-				id: "5D9EB5EE3332B08D"
-				title: "Rune Infused Armor"
-				type: "checkmark"
-			}]
-			x: 2.5d
-			y: -10.0d
+			x: 5.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["4F3EE28B3F38FC85"]
-			id: "07F65BCDDA42248D"
+			description: ["A Parallel Hatch that can do Perfect Overclocks."]
+			id: "38FB8D5DB43D0DBD"
 			tasks: [{
-				id: "5F348F02B9AFE935"
-				item: "start_core:uhv_parallel_hatch"
-				type: "item"
+				id: "0EE1A5B3BEE712BE"
+				title: "Runic (Perfect) Parallel Hatch"
+				type: "checkmark"
 			}]
-			x: 0.5d
-			y: 0.0d
+			x: 3.5d
+			y: 5.0d
 		}
 	]
 	title: "Adventures in Abydos"

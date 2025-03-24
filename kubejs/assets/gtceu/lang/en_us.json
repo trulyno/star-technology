@@ -77,8 +77,10 @@
     "block.gtceu.uv_essence_burner": "§3Ultimate Essence Burner",
     "block.gtceu.essence_replicator": "Essence Replicator Controller",
     "block.gtceu.essence_enchancer": "Essence Enchancer Controller",
+    "block.gtceu.greenhouse": "Greenhouse Controller",
     "gtceu.tree_greenhouse": "Tree Greenhouse",
-    "block.gtceu.tree_greenhouse": "Tree Greenhouse Controller",
+    "gtceu.crop_greenhouse": "Crop Greenhouse",
+    "gtceu.wild_garden": "Wild Garden",
     "gtceu.essence_burning": "Essence Burning",
     "gtceu.essence_enchancing": "Essence Enchancing",
     "gtceu.essence_replication": "Essence Replication",
@@ -527,5 +529,6 @@
     "material.gtceu.bec_og": "Bose-Einstein Condensate : Oganesson Based",
     "material.gtceu.superstate_helium_3": "Superstate Helium 3",
     "material.gtceu.astatine_bis_tritelluride_cobo_selenium": "Astatine Bis-Tritelluride Cobo-Selenium",
-    "material.gtceu.iron_titanium_oxide": "Iron Titanium Oxide"
+    "material.gtceu.iron_titanium_oxide": "Iron Titanium Oxide",
+    "gtceu.composting": "Composting"
 }

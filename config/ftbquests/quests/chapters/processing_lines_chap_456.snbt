@@ -109,6 +109,7 @@
 				"0743A08E81AB84D3"
 				"1F416C7A641914EC"
 			]
+			description: ["Naquadah and it's family tree of materials will now be used everywhere, so you better passive the Naquadah line asap."]
 			id: "445BC7DFD3387DD4"
 			rewards: [{
 				count: 3
@@ -748,6 +749,7 @@
 				"493DD013C818BB7B"
 				"59BA8A76701B3739"
 			]
+			description: ["An element with excellent resistance against a number of factors. Made by processing Abydos Titanite-rich Magma"]
 			id: "1BE69DB2DFDC35C8"
 			rewards: [{
 				count: 3
@@ -774,6 +776,7 @@
 				"7658E16BA79A7632"
 				"493DD013C818BB7B"
 			]
+			description: ["A material gotten by processing Abydos Zapolite-rich Magma"]
 			id: "37E3EF96EDE85C86"
 			rewards: [{
 				count: 3
@@ -1634,6 +1637,7 @@
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
+			description: ["A new element, that opens up the possibility for new materials."]
 			id: "0C19C040CA121E3B"
 			rewards: [{
 				id: "4A6E9001EC8CD83D"
@@ -1960,6 +1964,7 @@
 				"1C81273869C0EC9F"
 				"60ECE277341A9408"
 			]
+			description: ["Where did those voices come from..."]
 			id: "2F87FC1D5BB43220"
 			rewards: [{
 				count: 3

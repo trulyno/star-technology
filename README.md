@@ -1,4 +1,5 @@
 # Star Technology(StarT for short)
+<a href="https://trulyno.github.io/StarT-docs/">Official Wiki</a>
 <p style="text-align: center;">🚀 Minecraft 1.20.1 | ⚙️ GregTech CEu Modern | 🛠️ Work in Progress</p>
 <p style="text-align: center;">Minimum RAM: 4GB | Recommended: 6GB+</p>
 <h1 style="text-align: center;">What is Star Technology?</h1>

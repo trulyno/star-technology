@@ -829,7 +829,7 @@
 			id: "3E82F7977DB1C10A"
 			tasks: [{
 				id: "6EA680C1D6716BBC"
-				item: "gtceu:tree_greenhouse"
+				item: "gtceu:greenhouse"
 				type: "item"
 			}]
 			x: -12.0d
