@@ -13,6 +13,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('rock_sifter', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('rock_filtrator')
+        .tooltips('description pending')
+        .tooltips('Can use §3Parallel§r hatches')
         .appearanceBlock(GCYMBlocks.CASING_WATERTIGHT)
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .pattern(definition => FactoryBlockPattern.start()	

@@ -17,6 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('solid_blast_furnace', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(['bessemer_blast_furnace', 'solid_blast_furnace'])
+        .tooltips('description pending')
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('DDD', 'PPP', 'PPP', 'PPP')

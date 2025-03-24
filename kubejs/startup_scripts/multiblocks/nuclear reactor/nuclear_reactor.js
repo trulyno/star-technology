@@ -14,6 +14,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('nuclear_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('nuclear_fission')
+        .tooltips('description pending')
+        .tooltips('Can use §3Parallel§r hatches')
         .generator(true)
         .regressWhenWaiting(false)
         .recipeModifier(GTRecipeModifiers.PARALLEL_HATCH)

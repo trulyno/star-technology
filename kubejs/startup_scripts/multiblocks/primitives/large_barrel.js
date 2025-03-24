@@ -13,6 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_barrel', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_barrel')
+        .tooltips('description pending')
         .appearanceBlock(GTBlocks.TREATED_WOOD_PLANK)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('DDD', 'PPP', 'PPP', 'PPP')

@@ -14,6 +14,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('cobbleworks', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('cobbleworks')
+        .tooltips('description pending')
+        .tooltips('Has §6Perfect Overclock')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(GCYMBlocks.CASING_STRESS_PROOF)
         .pattern(definition => FactoryBlockPattern.start()

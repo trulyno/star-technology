@@ -14,6 +14,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('heat_chamber', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('heat_chamber')
+        .tooltips('description pending')
+        .tooltips('Has §6Perfect Overclock§r and §cSubtick Parallels')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT_SUBTICK])
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()

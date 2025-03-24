@@ -11,6 +11,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('gate_assembly', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('gate_assembly')
+        .tooltips('description pending')
+        .tooltips('Has §6Perfect Overclock')
         .recipeModifier(GTRecipeModifiers.OC_PERFECT)
         .pattern(definition => FactoryBlockPattern.start()	
             .aisle('               HHHHHHHHH               ', '               HHHHHHHHH               ', '                                       ', '                                       ', '                                       ', '                                       ', '                                       ', '                                       ', '                                       ', '                                       ', '                                       ', '               JJJJJJJJJ               ', '                                       ', '                                       ', '                                       ', '                                       ') 

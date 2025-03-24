@@ -27,6 +27,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .tooltips("§6Gas Collector:")
         .tooltips("§7This machine can collect the ambient air in the surrounding atmosphere, providing the same functionality as a basic §fGas Collector§7.")
         .tooltips("§8-----------------------------------")
+        .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('          BBB          ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '          CCC          ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ') 

@@ -14,6 +14,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('stargate_component_assembly', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('stargate_component_assembly')
+        .tooltips('description pending')
+        .tooltips('Has §6Perfect Overclock')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' SSS     MCM     SSS ', 'S   S           S   S', 'S   S           S   S', 'S   S           S   S', ' SSS             SSS ', '                     ', '                     ', '                     ', '                     ', '                     ', ' SSS SSS SSS SSS SSS ', 'S   S   SPPPS   S   S', 'S   S   SPPPS   S   S', 'S   S   SPPPS   S   S', ' SSS SSS SSS SSS SSS ')

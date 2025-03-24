@@ -14,6 +14,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('runic_circuitry_assembling_station', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('runic_circuitry_assembling_station')
+        .tooltips('description pending')
+        .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('         ', '         ', '         ', '         ', '         ', '         ', '         ', '         ', ' LLCCCLL ', ' LLCCCLL ', ' LLCCCLL ', '         ')

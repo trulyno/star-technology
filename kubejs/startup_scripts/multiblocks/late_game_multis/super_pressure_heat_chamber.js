@@ -14,6 +14,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('super_pressure_heat_chamber', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('super_pressure_heat_chamber')
+        .tooltips('description pending')
+        .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(GCYMBlocks.CASING_STRESS_PROOF)
         .pattern(definition => FactoryBlockPattern.start()

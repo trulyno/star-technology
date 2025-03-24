@@ -13,6 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_farm', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_farm')
+        .tooltips('description pending')
         .appearanceBlock(GTBlocks.TREATED_WOOD_PLANK)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('PPPPP', 'F   F', 'F   F', ' FFF ')

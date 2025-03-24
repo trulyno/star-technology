@@ -16,6 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('dimensional_finder', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS) //Need to add a cant be rotated at all later on
         .recipeType('dimensional_finder')
+        .tooltips('description pending')
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('VVHVVVVVHVV', 'VVHHHHHHHVV', '           ', '           ', '           ', 'SS       SS', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ')

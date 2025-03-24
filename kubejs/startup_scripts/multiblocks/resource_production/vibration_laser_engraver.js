@@ -14,6 +14,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('vibration_laser_engraver', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)    
         .recipeType('vibration_laser_engraver')
+        .tooltips('description pending')
+        .tooltips('Has §6Perfect Overclock')
         .appearanceBlock(GCYMBlocks.CASING_VIBRATION_SAFE)
         .recipeModifier(GTRecipeModifiers.OC_PERFECT)
         .pattern(definition => FactoryBlockPattern.start()

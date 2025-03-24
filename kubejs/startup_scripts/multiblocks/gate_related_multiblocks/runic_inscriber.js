@@ -14,6 +14,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('runic_inscribe_manipulate', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('runic_inscribe_manipulate')
+        .tooltips('description pending')
+        .tooltips('Has §6Perfect Overclock')
         .recipeModifier(GTRecipeModifiers.OC_PERFECT)
         .pattern(definition => FactoryBlockPattern.start()
         	.aisle('AAAAAAAAAAAAAAAAAAAAAAA', 'AAAAAAAAAAAAAAAAAAAAAAA', '                       ', '                       ', '                       ', '  B    B       B    B  ', '  B    B       B    B  ', '  B    B       B    B  ', '  B    B       B    B  ', '  B    B       B    B  ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ') 	

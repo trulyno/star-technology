@@ -4,6 +4,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('void_excavator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('void_excavation')
+        .tooltips('description pending')
+        .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
         .pattern(definition => FactoryBlockPattern.start()
