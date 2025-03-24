@@ -447,7 +447,7 @@
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
-			description: ["A remnant of nuclear decay, seeped into the stones of a planet that tried to kill itself."]
+			description: ["A remnant of nuclear decay, possibly telling a story of what happened to this world."]
 			id: "14F1B40FACDDE02C"
 			rewards: [{
 				id: "7F4F27A1BE0CC9B6"
@@ -518,7 +518,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -935,7 +935,11 @@
 				"7AC55BA8BDD0F3D2"
 				"4F3EE28B3F38FC85"
 			]
-			description: ["A Fusion Reactor that can do parallels. Long gone are the days of excessive Fusion spam, now all you need to do is figure out how to efficiently wallshare these."]
+			description: [
+				"A Fusion Reactor that can do parallels. Long gone are the days of excessive Fusion spam, now all you need to do is figure out how to efficiently wallshare these."
+				""
+				"Auxiliary Fusion Reactors are special in that they can parallel using &6Absolute &3Parallel&r hatches. (Placed on the interior side of the controller)"
+			]
 			id: "6C8C6EA426060065"
 			rewards: [{
 				count: 2
@@ -972,7 +976,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 5.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["3540AE6C940F985B"]
@@ -992,7 +996,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1136,8 +1140,8 @@
 				title: "Get Nether Coordinates"
 				type: "checkmark"
 			}]
-			x: 5.5d
-			y: 5.0d
+			x: 6.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1157,7 +1161,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -1212,8 +1216,8 @@
 				title: "Get End Coordinates"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: 1.0d
+			x: 6.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1348,7 +1352,7 @@
 		{
 			dependencies: [
 				"5E7153B7A10FC241"
-				"4289C7821C6AF920"
+				"59B0F5DB2C1E96DC"
 			]
 			icon: "minecraft:netherrack"
 			id: "1E3EF64C0A4EE438"
@@ -1475,7 +1479,7 @@
 				}
 			]
 			x: 9.5d
-			y: 3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6110BA7B3E84F06F"]
@@ -1670,7 +1674,7 @@
 				}
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.5d
 			y: 3.0d
 		}
 		{
@@ -1723,7 +1727,7 @@
 				type: "item"
 			}]
 			title: "Better Research Heat Sink"
-			x: 1.5d
+			x: 3.5d
 			y: 1.0d
 		}
 		{
@@ -1731,11 +1735,13 @@
 			description: [
 				"Thank you for playing through this pack to its current state, a lot of time has been put in so that it was a unique and enjoyable experience. You are invited to come show off your accomplishment on our discord where we would love to hear what you thought about the pack."
 				""
+				"Know why there is content that exist past this point it is in development and will be available in the next major release &l&5Eta&r"
 				""
-				"-StarT Dev Team"
+				""
+				"-&oStarT Dev Team&r"
 				""
 				""
-				"[The Maker of Gates shows their pride to you, and soon the reasonings as to why the Draconic Empires fell will be unravelled, and you will get 1 step closer to home....]"
+				"&m&o&8[The Maker of Gates applauds you, and soon the reasonings as to why the Draconic Empires fell will be unravelled, and you will get 1 step closer to home....]"
 			]
 			id: "46982CD51A50CD07"
 			shape: "pentagon"
@@ -1746,7 +1752,7 @@
 				title: "Thanks"
 				type: "checkmark"
 			}]
-			title: "You have completed the Epsilon Version of Star Technology"
+			title: "You have completed the &4&lZeta&r Version of &6Star Technology&r"
 			x: 13.5d
 			y: -5.0d
 		}
@@ -1798,20 +1804,81 @@
 				item: "kubejs:wetware_based_runic_neuroloom"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 7.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["4F3EE28B3F38FC85"]
-			description: ["A Parallel Hatch that can do Perfect Overclocks."]
-			id: "38FB8D5DB43D0DBD"
+			description: ["Ok now these rates are getting insane"]
+			id: "320ADA7E07856560"
+			rewards: [{
+				id: "1D899BA83FEBF385"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "1024x Parallel Hatch"
 			tasks: [{
-				id: "0EE1A5B3BEE712BE"
-				title: "Runic (Perfect) Parallel Hatch"
-				type: "checkmark"
+				id: "03A50D522C002B0C"
+				item: "start_core:uhv_parallel_hatch"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"320ADA7E07856560"
+				"7AC55BA8BDD0F3D2"
+			]
+			description: [
+				"Remember how regular &3Parallel&r hatches are complex and care about maxing out amperage and your overclocks. Ya forget all of that it's just that many more of a recipe at once, no catch."
+				""
+				"(Only goes on special machines, does &4NOT&r replace your normal parallel hatch)"
+			]
+			id: "230A202BB7D02C1A"
+			rewards: [{
+				id: "70C56357C02E5DF6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "4x Absolute Parallel Hatch"
+			tasks: [{
+				id: "59E8F04BD1D95FD9"
+				item: "start_core:uhv_absolute_parallel_hatch"
+				type: "item"
 			}]
 			x: 3.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["2659B3AA9108BC43"]
+			description: [
+				"By using the exotic gas collector you can do all of Air Distillation in 1 step."
+				""
+				"Furthermore you are able to collect airs from exotic dimensions."
+			]
+			icon: "gtceu:radon_bucket"
+			id: "6849929CF7E4477F"
+			optional: true
+			tasks: [{
+				id: "2635BED4229F491B"
+				title: "Cheaper Gasses"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2C354B0735DF8023"]
+			hide_dependent_lines: true
+			id: "59B0F5DB2C1E96DC"
+			tasks: [{
+				id: "2D2E589ECC7EB601"
+				title: "Rune Infused Armor"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -5.0d
 		}
 	]
 	title: "Adventures in Abydos"

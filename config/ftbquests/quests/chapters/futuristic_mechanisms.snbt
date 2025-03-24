@@ -383,7 +383,33 @@
 		}
 		{
 			dependencies: ["53A9F3758C218CDC"]
-			description: ["Aqua please safe me."]
+			description: [
+				"Parallels are a mechanic where a machine can run multiple of the same recipe at once which dramatically increases the rate at which you can do things. Though how they work is a little funky."
+				""
+				"Parallel Hatches work by consuming the maximum amperage of a tier and using that as a determinate for how many recipes it can run at once (given your parallel hatch is big enough)."
+				""
+				"Now a common misconception is that putting 2 4a or 2 16a hatches to get 8a and 32a respectively will do anything. It wont. All that does is give machines larger buffer, &4&lNOT&r greater ability."
+				""
+				"Another thing to note is that given multiple recipes are ran it takes slightly longer to run but this is worth it in the end since every 4x more parallels nets to 2x more efficeincy."
+				""
+				"An equation to calculate the max number of parallels and time increase at any tier is on the next page."
+				""
+				"{@pagebreak}"
+				""
+				"&nEquations&r"
+				""
+				"Amount of Parallels = min(ParallelCapability , Parallel.Hatch.Size)"
+				""
+				"(1/(%amp)) * (4^(#ofOverclocks)) = ParallelCapabiliy"
+				""
+				"2^(#ofOverclocks) = Time Increase Multiplier of the Recipe"
+				""
+				"&nKey:&r"
+				""
+				"%amp = % of an amp the recipe consumes at it's tier, typically this is close to 100% or 50% but not always."
+				""
+				"#ofOverclocks = The number of voltage tiers your machine's &e&oSpeed&r is above the recipe require voltage."
+			]
 			id: "0A6534BD104A2B08"
 			rewards: [{
 				id: "773252714F350547"
@@ -391,6 +417,7 @@
 				type: "item"
 			}]
 			size: 1.0d
+			subtitle: "4x Parallel Hatch"
 			tasks: [{
 				id: "714B6A8A7559E9B5"
 				item: "gtceu:iv_parallel_hatch"
@@ -724,9 +751,11 @@
 			description: [
 				"This multiblock provides computation to the research station. By playing around with components, you can generate enough computation to research things."
 				""
-				"48CWU is the maximum sustainable early on with no bridging component."
-				"36CWU is the maximum sustainable with a bridging component."
-				"48CWU is the maximum sustainable with Abydos technology and a bridging component."
+				"48&3CWU&r is the maximum sustainable early on with no bridging component."
+				"36&3CWU&r is the maximum sustainable with a bridging component."
+				"48&3CWU&r is the maximum sustainable with Abydos technology and a bridging component."
+				""
+				"Bridging explained further in the Network Switch quest."
 			]
 			id: "560993E111853A54"
 			rewards: [{
@@ -880,7 +909,7 @@
 			description: [
 				"You should have some of this from your ore proc."
 				""
-				"&oYou did passive ore proc right.&r"
+				"&oYou did passive your ore proc... right?&r"
 			]
 			id: "55D75F03238F3A14"
 			rewards: [{
@@ -1034,6 +1063,7 @@
 				type: "item"
 			}]
 			size: 1.0d
+			subtitle: "16x Parallel Hatch"
 			tasks: [{
 				id: "18DAA94C2466BD1B"
 				item: "gtceu:luv_parallel_hatch"
@@ -1173,7 +1203,11 @@
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
-			description: ["All these alloys and their names make you go crazy. Seriously, how do you pronounce some of those names."]
+			description: [
+				"All these alloys and their names make you go crazy. Seriously, how do you pronounce some of those names."
+				""
+				"WDYM they get \"&obetter&r\"........"
+			]
 			id: "2BA3AAAB77C094BC"
 			rewards: [{
 				id: "15F330C00DE4BA58"
@@ -1442,6 +1476,7 @@
 				type: "item"
 			}]
 			size: 1.0d
+			subtitle: "64x Parallel Hatch"
 			tasks: [{
 				id: "2B6D3C225AC57280"
 				item: "gtceu:zpm_parallel_hatch"
@@ -1574,7 +1609,7 @@
 		}
 		{
 			dependencies: ["2911EC7333E0E9C5"]
-			description: ["This is a material used for machines of &4UHV&r tier and beyond."]
+			description: ["This is a material used for &3UV&r components and machines of &4UHV&r tier and beyond."]
 			id: "70AA84848FB2A9BB"
 			rewards: [{
 				id: "0ECD4E21E5FD1EDA"
@@ -1786,7 +1821,7 @@
 		}
 		{
 			dependencies: ["67ABB3BF6D0C183B"]
-			description: ["A fusion material made with Mk I Fusion Reactors. It had basically no use up until now, but that is about to change."]
+			description: ["A fusion material made with MK I Fusion Reactors. It had basically no use up until now, but that is about to change."]
 			hide_dependency_lines: true
 			id: "3B69844600AD5430"
 			rewards: [{
@@ -1818,7 +1853,7 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -1934,6 +1969,11 @@
 		{
 			dependencies: ["5026437079530A67"]
 			id: "0AFCD9322EF93D5D"
+			rewards: [{
+				id: "187F37F5B7E59C74"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "circle"
 			tasks: [{
 				id: "6CC0BBFC4EEA9B04"
@@ -1952,6 +1992,11 @@
 			description: ["Finally, you can upgrade your resource generation with Parallel Hatches."]
 			id: "32459F3D48C81752"
 			optional: true
+			rewards: [{
+				id: "539AEFDF766766A5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "6926EE8EC9EA18E4"

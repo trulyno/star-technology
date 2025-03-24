@@ -214,6 +214,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "256x Parallel Hatch"
 			tasks: [{
 				id: "24F1943A992D624E"
 				item: "gtceu:uv_parallel_hatch"
@@ -657,12 +658,24 @@
 			]
 			description: ["These are finished Stargate Rods, capable of resisting pressure so intense it could, for example, hold open a crack between dimensions."]
 			id: "3792C5D89B1301A0"
-			rewards: [{
-				count: 2
-				id: "7B42B832CC2566A1"
-				item: "kubejs:coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "7B42B832CC2566A1"
+					item: "kubejs:coin"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/playsound gtceu:metal_pipe master @a"
+					elevate_perms: true
+					icon: "kubejs:stargate_rod"
+					id: "7ECEC393EDED498B"
+					silent: true
+					title: "Bonk"
+					type: "command"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -876,7 +889,7 @@
 		}
 		{
 			dependencies: ["7A38469EAAABEAAE"]
-			description: ["A machine that sends signals into deep space in the hopes to register found celestial bodies on coordinate crystals."]
+			description: ["A machine that sends signals into deep space in the hopes to enscribe the location of found dimensions and cosmic bodies onto coordinate crystals."]
 			id: "56D5872D2C33A9CC"
 			rewards: [{
 				count: 2
@@ -896,7 +909,7 @@
 		}
 		{
 			dependencies: ["2F87FC1D5BB43220"]
-			description: ["A blank slate, that with carefull processing and some luck could be inscribed with coordinates to different planets."]
+			description: ["A blank slate, that with carefull processing and some luck could be inscribed with coordinates to different realms."]
 			id: "7A38469EAAABEAAE"
 			rewards: [{
 				id: "4262C7EF00DC2805"
@@ -1666,7 +1679,7 @@
 		}
 		{
 			dependencies: ["630F50E03EC3D144"]
-			description: ["Pure points of infinite mass with which you can write runes that can perform near magic tasks."]
+			description: ["Pure points of &o&lIMMENSE&r mass with which you can write runes that can perform near magic tasks."]
 			id: "1102670352911334"
 			rewards: [{
 				id: "256ED95E87DEA426"

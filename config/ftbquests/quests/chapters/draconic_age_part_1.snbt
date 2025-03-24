@@ -4,6 +4,7 @@
 	default_quest_shape: "hexagon"
 	filename: "draconic_age_part_1"
 	group: "1E0FC4EA21F735F7"
+	hide_quest_until_deps_complete: true
 	icon: "minecraft:dragon_egg"
 	id: "5617484BFC479624"
 	order_index: 6
@@ -891,6 +892,49 @@
 			}]
 			x: -3.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["5E7153B7A10FC241"]
+			description: [
+				"The Maker of Gates has some &mfun&r in store for you....... "
+				"{image:komarumod:textures/painting/komaru_god.png width:100 height:100 align:center}"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "komarumod:textures/painting/komaru_chonky.png"
+				}
+			}
+			id: "72020C00A8BBD75A"
+			optional: true
+			rewards: [
+				{
+					auto: "enabled"
+					id: "7CF70A1AC4379D48"
+					item: "minecraft:cookie"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/playsound gtceu:sus master @a"
+					elevate_perms: true
+					icon: "gtceu:sus_record"
+					id: "65DBA10EF47C4036"
+					silent: true
+					title: "Sus"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "4C50248BDC04F8FA"
+				title: "Dont Worry About it... Here's a cookie"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -1.5d
 		}
 	]
 	title: "Draconic Empires"
