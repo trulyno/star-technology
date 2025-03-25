@@ -220,8 +220,8 @@
 				item: "gtceu:uv_parallel_hatch"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 8.5d
+			x: -3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -778,7 +778,7 @@
 				"5C7A92625D07C55D"
 				"433E2BCC63E779AF"
 			]
-			description: ["A machine with terrifying potential, that can slash open a rift in the cosmos to connect to a counterpart with just their coordinates."]
+			description: ["A machine with terrifying potential, that can slash open a rift in the cosmos to connect to a counterpart with just their coordinates and an &l&4IMMENSE&r amount of power."]
 			icon: "sgjourney:classic_stargate"
 			id: "2EDE996312B1C69E"
 			rewards: [{
@@ -999,8 +999,8 @@
 				type: "dimension"
 			}]
 			title: "To Abydos"
-			x: 3.5d
-			y: -8.0d
+			x: 6.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
@@ -1110,401 +1110,22 @@
 		}
 		{
 			dependencies: ["2EDE996312B1C69E"]
-			description: ["Attach the Interface to any part of the gate and power it. Additionally the DHD needs to be in the general area to type in the desired coordinates."]
+			description: [
+				"Attach the Interface to any part of the gate and power it. Additionally the DHD needs to be in the general area to type in the desired coordinates."
+				""
+				"&7Yes, you can terminal the helper to build it for you"
+			]
 			id: "653AD979AE4D0581"
 			optional: true
 			tasks: [{
-				id: "0DB4C7875E78DF9D"
-				title: "Yes, I need help (CLICK ME)"
-				type: "checkmark"
+				id: "080109B2F5298E4A"
+				item: "gtceu:classic_stargate_display"
+				optional_task: true
+				type: "item"
 			}]
-			title: "Trouble Forming Gate?"
+			title: "Stargate Help"
 			x: 8.5d
 			y: -8.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "36C4A977AC2832FF"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "4DF3BED79C0ECE58"
-				item: "sgjourney:classic_stargate_base_block"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "1A9E02D50128F4AD"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "3992ED458D0F758D"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "30A538E9EBDD2205"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "7C2296CE2C8AA71F"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: 0.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "1297467DBA806D50"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "02EAFAE0EC36C8CA"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "3041F1837C4DA2E3"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "35FE714AEFA1C627"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "485894F4A9C420F1"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "4D7DB1A3AF94DD92"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "31E828DC7CE05631"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "7C2F7263AA62034E"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -10.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "7B4822B623583E48"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "03A2DF9A18AFDAFD"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "1AE90AE93401A62A"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "38874A40623B1F8F"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: 0.5d
-			y: -10.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "6E775A20310010C2"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "52FAF8FCE3525C75"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -0.5d
-			y: -10.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "66AE1F38C954EDEE"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "112804589FD09C45"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -10.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "1B8F144D59973A6C"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "2E4175E2F59FDE44"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "6713F5C835972F25"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "01F9F3770CDAB90B"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "6766CDEE53EC220A"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "47FA1115AF75D31D"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "4CDCBD47FA5A5E76"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "2DFFB9893CA89ACB"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "1A8A9CFDE2F83509"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "03F88EAAE3214F3B"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "68430C48D21E615A"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "7840F8D7C1A33A3B"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "26F037DFC3D2B29D"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "4D8BA420488151B2"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -9.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "5B30840FFE93E1C5"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "3952DF09A77C8E39"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "432B18BF3105D336"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "3CBBE6DC2BF4F43F"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "277B1634E0CDF94E"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "22E3B4A20288A554"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "08A1359B9D71B96F"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "76346AF81A02EE75"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -9.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "47B4445919A32696"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "7FA723840F6F90BE"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "7FD3A94A90552118"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "03AE32BE86CB22F1"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: -0.5d
-			y: -7.5d
 		}
 		{
 			dependencies: ["1C515302A357B1B8"]
@@ -1593,38 +1214,20 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["481D42E3473FDCED"]
-			description: ["Waaaaaaaa"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "6C39CD86546B3C64"
-			optional: true
-			rewards: [{
-				command: "/execute in minecraft:overworld run tp @s 0 -72 0"
-				elevate_perms: true
-				icon: {
-					Count: 1
-					id: "minecraft:grass_block"
-					tag: { }
-				}
-				id: "47BEEE08B9727341"
-				type: "command"
-			}]
-			tasks: [{
-				id: "39C471CAFC4E05DC"
-				title: "I wanna go home..."
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: -9.0d
-		}
-		{
 			dependencies: ["2EDE996312B1C69E"]
 			description: ["How did you break /spawn AND /home????????"]
 			icon: "minecraft:red_bed"
 			id: "481D42E3473FDCED"
 			optional: true
+			rewards: [{
+				command: "/execute in minecraft:overworld run tp @s 0 -72 0"
+				elevate_perms: true
+				icon: "minecraft:grass_block"
+				id: "21A225E597A188CD"
+				silent: true
+				title: "To the overworld"
+				type: "command"
+			}]
 			tasks: [{
 				id: "10FD7D062F28C45C"
 				title: "So You Got Stuck"
@@ -1832,8 +1435,31 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2EDE996312B1C69E"]
+			description: [
+				"Right Click the bottom part of the stargate (works for any) with a mallet to reset it's power NBT data to fix the issue. Make sure to let it charge up for a bit before you go dialing."
+				""
+				"These dimension crackers &lEAT&r power when on so every 3-4 times you use them (may be more often) you'll have to do this."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "gtceu:textures/gui/overlay/charger_slot_overlay.png"
+				}
+			}
+			id: "5C7AE9D421E5F674"
+			tasks: [{
+				id: "205A758A70420DB8"
+				title: "\"&cNo Power&r\" ?"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -8.0d
 		}
 	]
 	title: "Making the Classic Stargate"

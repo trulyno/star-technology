@@ -1,6 +1,18 @@
 
 ServerEvents.recipes(event => {
 
+    //Non Mandatory Display Controller
+    event.shaped(Item.of('gtceu:classic_stargate_display'), [
+        'GGG',
+        'ROR',
+        'SSS'
+    ], {
+        R: 'kubejs:stargate_rod',
+        O: 'gtceu:object_holder',
+        G: 'minecraft:glass',
+        S: 'minecraft:smooth_stone'
+    });
+
     //Multiblock Recipes
     
     event.recipes.gtceu.assembly_line('heat_chamber')
@@ -394,4 +406,19 @@ ServerEvents.recipes(event => {
             .duration(64000)
             .EUt(GTValues.VA[GTValues.UEV]);
 
+});
+
+//Gate Energy Resetting
+const Gates = ['classic', 'milky_way']
+Gates.forEach(gate=>{
+    BlockEvents.rightClicked(`sgjourney:${gate}_stargate`, event => {
+        const { player, block, item, hand, level } = event;
+    
+        if (!item.hasTag('forge:tools/mallets')) return;
+    
+        block.mergeEntityData({ Energy: 0 });
+        
+        level.playSound(null, block.pos, "gtceu:computation", "blocks");
+        player.swing();
+    });
 });
