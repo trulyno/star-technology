@@ -1,9 +1,12 @@
 
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.extractor('nether_star_concentrate')
-        .itemInputs('minecraft:nether_star')
-        .outputFluids('gtceu:nether_star_concentrate 144')
+    event.recipes.gtceu.heat_chamber('nether_star_concentrate')
+        .itemInputs('5x gtceu:nether_star_dust')
+        .inputFluids('gtceu:blitz 1000','gtceu:blizz 1000','gtceu:basalz 1000','gtceu:blaze 1000')
+        .outputFluids('gtceu:nether_star_concentrate 216')
+        .duration(240)
+        .EUt(GTValues.VHA[GTValues.UEV]);
 
     //Sculk Variant
     event.recipes.gtceu.polarizer('ionized_sculk_dust')
@@ -18,13 +21,13 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(GTValues.VHA[GTValues.UIV]);
 
-    //Magmatic Plasma
+    //Plasmas/Fusion
     event.recipes.gtceu.fusion_reactor('magmatic_plasma')
         .inputFluids('gtceu:highly_unstable_nether_magma 2560', 'gtceu:iron_plasma 128')
         .outputFluids('gtceu:magmatic_plasma 64')
         .duration(132)
         .EUt(66666)
-        .fusionStartEU(720000000); //720M EU when core mode fix
+        .fusionStartEU(720000000);
         
     event.recipes.gtceu.plasma_generator('magmatic_plasma')
         .inputFluids('gtceu:magmatic_plasma 1')
@@ -32,12 +35,18 @@ ServerEvents.recipes(event => {
         .duration(333)
         .EUt(-2048);
 
-    //Argon Plasma Add
     event.recipes.gtceu.plasma_generator('argon_plasma')
         .inputFluids('gtceu:argon_plasma 1')
         .outputFluids('gtceu:argon 1')
         .duration(80)
         .EUt(-2048);
+
+    event.recipes.gtceu.fusion_reactor('aurourium')
+        .inputFluids('gtceu:nether_star_concentrate 64', 'gtceu:seaborgium 64')
+        .outputFluids('gtceu:aurourium 32')
+        .duration(80)
+        .EUt(783552)
+        .fusionStartEU(888888888);
     
     //Ancient Netherite
     event.recipes.gtceu.assembler('ancient_netherite_reinforced_mesh')

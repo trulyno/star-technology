@@ -600,61 +600,11 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			tasks: [
-				{
-					id: "74D648A7F47605A0"
-					item: "gtceu:electric_blast_furnace"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "7F5DC531E333C572"
-					item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "225C0227C18C8198"
-					item: { Count: 9, id: "gtceu:heatproof_machine_casing" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "20E3CC024E45ADE0"
-					item: { Count: 2, id: "gtceu:lv_energy_input_hatch" }
-					type: "item"
-				}
-				{
-					id: "7CA6F4141B9582C8"
-					item: "gtceu:lv_input_bus"
-					type: "item"
-				}
-				{
-					id: "26C2A736BDC1FAD9"
-					item: "gtceu:lv_input_hatch"
-					type: "item"
-				}
-				{
-					id: "3801B25C5CB79172"
-					item: "gtceu:lv_output_bus"
-					type: "item"
-				}
-				{
-					id: "59C7F30E47B821EA"
-					item: "gtceu:lv_output_hatch"
-					type: "item"
-				}
-				{
-					id: "3E7DAB71EB2E714A"
-					item: "gtceu:maintenance_hatch"
-					type: "item"
-				}
-				{
-					id: "4B47C01D2B36D72A"
-					item: "gtceu:lv_muffler_hatch"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "74D648A7F47605A0"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
 			title: "Electric Blast Furnace (EBF)"
 			x: 6.0d
 			y: -1.5d
