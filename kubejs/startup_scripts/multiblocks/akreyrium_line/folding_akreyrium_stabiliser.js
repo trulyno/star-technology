@@ -3,8 +3,9 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('folding_akreyrium_stabiliser')
         .category('folding_akreyrium_stabiliser')
         .setEUIO('in')
-        .setMaxIOSize(2, 1, 2, 1)
-        .setSound(GTSoundEntries.MACERATOR);
+        .setMaxIOSize(2, 2, 2, 2)
+        .setSound(GTSoundEntries.MACERATOR)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_FUSION, FillDirection.LEFT_TO_RIGHT);
 
 });
 
@@ -41,7 +42,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS_9X))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.blocks('gtceu:me_stocking_input_hatch'))
+                .or(Predicates.blocks('gtceu:me_input_hatch')))
             .where('E', Predicates.blocks('gtceu:high_power_casing'))
             .where('F', Predicates.blocks('gtceu:computer_casing'))
             .where('G', Predicates.blocks('gtceu:advanced_computer_casing'))
