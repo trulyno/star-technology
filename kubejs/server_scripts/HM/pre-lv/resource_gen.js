@@ -25,13 +25,13 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		if (player.getMainHandItem() == null && player.getOffHandItem() == null && player.isCrouching()) {
 			pop_up('kubejs:flint_shard', 0.25);
 			pop_up('minecraft:cookie', 0.002);
-
+			player.addExhaustion(.03)
 			dig();
 		};
 
 		if (item.id == 'kubejs:basic_scavenging_rod') {
 			pop_up('kubejs:flint_shard', 0.5);
-			pop_up('kubejs:flint_shard', 0.5);
+			pop_up('minecraft:flint', 0.2);
 			pop_up('minecraft:cookie', 0.003);
 
 			damage_tool(item);
@@ -39,13 +39,16 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		};
 
 		if (item.id == 'kubejs:scavenging_rod') {
-			pop_up('minecraft:flint', 0.4);
-			pop_up('kubejs:flint_shard', 0.4);
+			pop_up('kubejs:flint_shard', 0.5);
+			pop_up('minecraft:flint', 0.5);
+			pop_up('exnihilosequentia:stone_pebble', 0.2);
 			pop_up('minecraft:cookie', 0.004);
 
 			damage_tool(item);
 			dig();
 		};
+
+
 	});
 
 	BlockEvents.rightClicked('minecraft:grass_block', event => {
@@ -68,32 +71,32 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		}
 
 		if (player.getMainHandItem() == null && player.getOffHandItem() == null && player.isCrouching()) {
-			pop_up('exnihilosequentia:stone_pebble', 0.1);
-			pop_up('exnihilosequentia:andesite_pebble', 0.1);
-			pop_up('exnihilosequentia:basalt_pebble', 0.1);
-			pop_up('exnihilosequentia:blackstone_pebble', 0.1);
-			pop_up('exnihilosequentia:deepslate_pebble', 0.1);
-			pop_up('exnihilosequentia:diorite_pebble', 0.1);
-			pop_up('exnihilosequentia:granite_pebble', 0.1);
-			pop_up('exnihilosequentia:tuff_pebble', 0.1);
-			pop_up('exnihilosequentia:calcite_pebble', 0.1);
-			pop_up('exnihilosequentia:dripstone_pebble', 0.1);
+			pop_up('exnihilosequentia:stone_pebble', 0.01);
+			pop_up('exnihilosequentia:andesite_pebble', 0.05);
+			pop_up('exnihilosequentia:basalt_pebble', 0.05);
+			pop_up('exnihilosequentia:blackstone_pebble', 0.05);
+			pop_up('exnihilosequentia:deepslate_pebble', 0.05);
+			pop_up('exnihilosequentia:diorite_pebble', 0.05);
+			pop_up('exnihilosequentia:granite_pebble', 0.05);
+			pop_up('exnihilosequentia:tuff_pebble', 0.05);
+			pop_up('exnihilosequentia:calcite_pebble', 0.05);
+			pop_up('exnihilosequentia:dripstone_pebble', 0.05);
 			pop_up('minecraft:cookie', 0.006);
-
+			player.addExhaustion(.02)
 			dig();
 		};
 
 		if (item.id == 'kubejs:basic_scavenging_rod') {
-			pop_up('exnihilosequentia:stone_pebble', 0.125);
-			pop_up('exnihilosequentia:andesite_pebble', 0.125);
-			pop_up('exnihilosequentia:basalt_pebble', 0.125);
-			pop_up('exnihilosequentia:blackstone_pebble', 0.125);
-			pop_up('exnihilosequentia:deepslate_pebble', 0.125);
-			pop_up('exnihilosequentia:diorite_pebble', 0.125);
-			pop_up('exnihilosequentia:granite_pebble', 0.125);
-			pop_up('exnihilosequentia:tuff_pebble', 0.125);
-			pop_up('exnihilosequentia:calcite_pebble', 0.125);
-			pop_up('exnihilosequentia:dripstone_pebble', 0.125);
+			pop_up('exnihilosequentia:stone_pebble', 0.03);
+			pop_up('exnihilosequentia:andesite_pebble', 0.09);
+			pop_up('exnihilosequentia:basalt_pebble', 0.09);
+			pop_up('exnihilosequentia:blackstone_pebble', 0.09);
+			pop_up('exnihilosequentia:deepslate_pebble', 0.09);
+			pop_up('exnihilosequentia:diorite_pebble', 0.09);
+			pop_up('exnihilosequentia:granite_pebble', 0.09);
+			pop_up('exnihilosequentia:tuff_pebble', 0.09);
+			pop_up('exnihilosequentia:calcite_pebble', 0.09);
+			pop_up('exnihilosequentia:dripstone_pebble', 0.09);
 			pop_up('minecraft:cookie', 0.008);
 
 			damage_tool(item);
@@ -101,7 +104,7 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		};
 
 		if (item.id == 'kubejs:scavenging_rod') {
-			pop_up('exnihilosequentia:stone_pebble', 0.15);
+			pop_up('exnihilosequentia:stone_pebble', 0.05);
 			pop_up('exnihilosequentia:andesite_pebble', 0.15);
 			pop_up('exnihilosequentia:basalt_pebble', 0.15);
 			pop_up('exnihilosequentia:blackstone_pebble', 0.15);
@@ -185,17 +188,16 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		});
 
 		event.remove({ id: 'minecraft:coarse_dirt' })
-		event.shaped(Item.of('minecraft:coarse_dirt',4), [
-			'DFD',
-			' F ',
-			'DFD'
+		event.shaped(Item.of('minecraft:coarse_dirt',2), [
+			'DF',
+			'FD'
 		], {
 			F: 'minecraft:flint',
 			D: 'minecraft:dirt'
 		});
 
 		event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '2x minecraft:flint']);
-		event.recipes.create.mixing('2x minecraft:coarse_dirt', ['2x minecraft:dirt', '1x minecraft:gravel']);
+		event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '1x minecraft:gravel']);
 
 		const stones = ['andesite', 'basalt', 'blackstone', 'deepslate', 'diorite', 'granite', 'tuff', 'calcite', 'dripstone']
 

@@ -190,7 +190,7 @@
 	[crucible.wood]
 		#Heat rate the Wood Crucible will use regardless of heat source below (Default: 2)
 		#Range: > 1
-		woodHeatRate = 2
+		woodHeatRate = 1
 
 #Sieve Configs
 [sieve]
@@ -209,5 +209,5 @@
 	meshStackSize = 64
 	#Defines the radius that a sieve will attempt to activate other sieves (Default: 2)
 	#Range: 0 ~ 5
-	sieveRange = 1
+	sieveRange = 2
 

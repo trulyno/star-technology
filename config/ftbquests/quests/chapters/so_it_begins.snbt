@@ -111,6 +111,7 @@
 		}
 		{
 			dependencies: ["11792AD3856CC11A"]
+			description: ["Scavenge through the coarse dirt for flint"]
 			id: "44E7C69C6BC48296"
 			tasks: [
 				{
@@ -1221,7 +1222,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["280AD7F16F6654B4"]
@@ -1254,7 +1255,7 @@
 				}
 			]
 			x: 6.5d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1365,7 +1366,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1387,7 +1388,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1803,16 +1804,17 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["684FAA520167CC51"]
 			description: ["Has bug with fluid output need to fix"]
 			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			id: "5D7047EF3399D10B"
-			invisible: true
 			tasks: [{
 				id: "03EDE887E0E0F5F5"
 				item: "gtceu:latex_plantation"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 6.5d
 			y: 12.0d
 		}
 		{
@@ -1919,6 +1921,7 @@
 		}
 		{
 			dependencies: ["049DA0A4C3E5EFFF"]
+			description: ["You can scavenge this btw"]
 			id: "6A03D191A42F4F4C"
 			shape: "gear"
 			size: 1.25d
@@ -1986,8 +1989,8 @@
 				item: "gtceu:bronze_brick_casing"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 10.5d
+			x: 8.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
@@ -2328,17 +2331,6 @@
 			}]
 			x: 3.5d
 			y: 16.5d
-		}
-		{
-			dependencies: ["50F2743FA699173A"]
-			id: "2A7906C25F44CAAB"
-			tasks: [{
-				id: "6F051F2E902864E9"
-				title: "End of HM Demo Showcase Content"
-				type: "checkmark"
-			}]
-			x: 6.5d
-			y: 9.0d
 		}
 		{
 			dependencies: ["6994BA308DC55ED2"]

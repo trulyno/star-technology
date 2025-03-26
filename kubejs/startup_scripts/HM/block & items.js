@@ -158,6 +158,7 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			food.effect('minecraft:slowness', 80, 2, 1)
 			food.effect('minecraft:hunger', 80, 1, .1)
 			food.effect('minecraft:blindness', 20, 1, .05)
+			food.fastToEat(true)
 			}
 		})
 	});

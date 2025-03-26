@@ -9,9 +9,8 @@ ServerEvents.recipes(event => {
     
     event.recipes.exnihilosequentia.heat('minecraft:campfire', 2, {"lit": "true"})
     event.recipes.exnihilosequentia.heat('minecraft:furnace', 4, {"lit": "true"})
-
     event.recipes.exnihilosequentia.heat('minecraft:fire', 3)
-    event.recipes.exnihilosequentia.heat('minecraft:torch', 1)
+    event.recipes.exnihilosequentia.heat('minecraft:torch', 1.5)
     event.recipes.exnihilosequentia.heat('minecraft:lava', 5)
 
 });
