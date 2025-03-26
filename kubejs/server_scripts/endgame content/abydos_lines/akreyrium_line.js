@@ -48,9 +48,9 @@ ServerEvents.recipes(event => {
             '12x kubejs:uhv_high_strength_panel', '8x gtceu:neutronium_screw'
         ).inputFluids('gtceu:polyether_ether_ketone 512')
         .itemOutputs('1x kubejs:blank_injection_catalyst')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(800)
-        .EUt(GTValues.VA[GTValues.UV]);
-
+        .EUt(GTValues.VA[GTValues.UHV]);
     
     event.recipes.gtceu.injection_mixer('lepton_flavour_foundational_flux')
         .itemInputs('1x kubejs:amorphous_akreyrium')
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
 
     // Intermediate to catalyst
     event.recipes.gtceu.mixer('light_tau_infusion_flux')
-        .inputFluids('gtceu:tungsten 512', 'gtceu:lepton_flavour_foundational_flux 1000')
+        .inputFluids('gtceu:mercury 3850', 'gtceu:lepton_flavour_foundational_flux 1000')
         .outputFluids('gtceu:light_tau_infusion_flux 1000')
         .duration(360)
         .EUt(GTValues.VA[GTValues.ZPM]);
@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:light_tau_infusion_flux 1000')
         .outputFluids('gtceu:superlight_tau_infusion_flux 800', 'gtceu:heavy_tau_infusion_flux 200')
         .itemOutputs('1x kubejs:aspect_of_weight')
-        .duration(200)
+        .duration(320)
         .EUt(GTValues.VA[GTValues.UV]);
 
     event.recipes.gtceu.brewery('heavy_tau_conversion')
@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:ethereal_tau_infusion_flux 125')
         .itemOutputs('1x kubejs:tau_injection_catalyst')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.LV]);
+        .EUt(GTValues.VA[GTValues.LuV]);
     
     //-----------------------------------------------------------------------------
     // MUON BRANCH
@@ -172,7 +172,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:brilliant_muon_infusion_flux 125')
         .itemOutputs('1x kubejs:muon_injection_catalyst')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.LV]);
+        .EUt(GTValues.VA[GTValues.LuV]);
 
     //-----------------------------------------------------------------------------
     // ELECTRON BRANCH
@@ -190,20 +190,20 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:mono_phase_electron_infusion_flux 1000')
         .itemOutputs('1x gtceu:di_phase_electron_infusion_agent_dust')
         .outputFluids('gtceu:lepton_coalescing_superalloy 864')
-        .duration(120)
+        .duration(140)
         .EUt(GTValues.VA[GTValues.UV]);
 
     event.recipes.gtceu.polarizer('tri_phase_electron_infusion_agent')
         .itemInputs('1x gtceu:di_phase_electron_infusion_agent_dust')
         .itemOutputs('1x gtceu:tri_phase_electron_infusion_agent_dust')
-        .duration(100)
+        .duration(160)
         .EUt(GTValues.VA[GTValues.UHV]);
 
     event.recipes.gtceu.electromagnetic_separator('tri_phase_separation')
         .itemInputs('1x gtceu:tri_phase_electron_infusion_agent_dust')
         .itemOutputs('10x gtceu:weak_gamma_phase_electron_infusion_agent_dust', '5x gtceu:weak_beta_phase_electron_infusion_agent_dust', '1x gtceu:alpha_phase_electron_infusion_agent_dust')
         .duration(360)
-        .EUt(GTValues.VA[GTValues.UV]);
+        .EUt(GTValues.VA[GTValues.UHV]);
 
     event.recipes.gtceu.mixer('weak_gamma_phase')
         .itemInputs('1x gtceu:weak_gamma_phase_electron_infusion_agent_dust', '1x gtceu:annealed_copper_dust')
@@ -220,13 +220,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.polarizer('gamma_phase_electron_infusion_agent')
         .itemInputs('1x gtceu:gamma_phase_electron_infusion_agent_dust')
         .itemOutputs('1x gtceu:beta_phase_electron_infusion_agent_dust')
-        .duration(80)
+        .duration(75)
         .EUt(GTValues.VA[GTValues.UHV]);
 
     event.recipes.gtceu.polarizer('beta_phase_electron_infusion_agent_dust')
         .itemInputs('1x gtceu:beta_phase_electron_infusion_agent_dust')
         .itemOutputs('1x gtceu:alpha_phase_electron_infusion_agent_dust')
-        .duration(160)
+        .duration(100)
         .EUt(GTValues.VA[GTValues.UHV]);
 
     event.recipes.gtceu.injection_mixer('electron_unification')
@@ -242,12 +242,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:alternating_phase_electron_infusion_flux 125')
         .itemOutputs('1x kubejs:electron_injection_catalyst')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.LV]);
+        .EUt(GTValues.VA[GTValues.LuV]);
     
     // Injection
     const add_injection_recipe = (akreyType, amount, catalyst) => {
         event.recipes.gtceu.injection_mixer(`${akreyType}_${amount}_${catalyst}`)
-            .itemInputs(`1x ${catalyst}`)
+            .itemInputs(`1x kubejs:${catalyst}_injection_catalyst`)
             .itemOutputs('1x kubejs:damaged_injection_catalyst')
             .inputFluids(`gtceu:sparse_${akreyType}_akreyrium 1000`)
             .outputFluids(`gtceu:dense_${akreyType}_akreyrium ${amount}`)
@@ -255,17 +255,17 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues.UHV]);
     }
 
-    add_injection_recipe('tau', 1000, 'kubejs:tau_injection_catalyst')
-    add_injection_recipe('muon', 200, 'kubejs:tau_injection_catalyst')
-    add_injection_recipe('electron', 200, 'kubejs:tau_injection_catalyst')
+    add_injection_recipe('tau', 1000, 'tau');
+    add_injection_recipe('muon', 200, 'tau');
+    add_injection_recipe('electron', 200, 'tau');
 
-    add_injection_recipe('tau', 200, 'kubejs:muon_injection_catalyst')
-    add_injection_recipe('muon', 1000, 'kubejs:muon_injection_catalyst')
-    add_injection_recipe('electron', 200, 'kubejs:muon_injection_catalyst')
+    add_injection_recipe('tau', 200, 'muon');
+    add_injection_recipe('muon', 1000, 'muon');
+    add_injection_recipe('electron', 200, 'muon');
 
-    add_injection_recipe('tau', 200, 'kubejs:electron_injection_catalyst')
-    add_injection_recipe('muon', 200, 'kubejs:electron_injection_catalyst')
-    add_injection_recipe('electron', 1000, 'kubejs:electron_injection_catalyst')
+    add_injection_recipe('tau', 200, 'electron');
+    add_injection_recipe('muon', 200, 'electron');
+    add_injection_recipe('electron', 1000, 'electron');
 
     // Damaged fixing
     event.recipes.gtceu.assembler('damaged_injection_catalyst_washing')
@@ -273,6 +273,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:neutronium 80')
         .itemOutputs('1x kubejs:blank_injection_catalyst')
         .duration(360)
+        .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.UV]);
 
     // Stabilisation recipes
@@ -288,7 +289,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:dense_electron_akreyrium 1000')
         .itemInputs('1x kubejs:crystalline_akreyrium', '1x gtceu:magenta_glass_lens')
         .itemOutputs('1x gtceu:magenta_glass_lens')
-        .outputFluids('gtceu:utopian_akreyrium 500', 'gtceu:lepton_coalescing_superalloy 720')
+        .outputFluids('gtceu:utopian_akreyrium 500', 'gtceu:lepton_coalescing_superalloy 90')
         .duration(200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
@@ -296,7 +297,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:dense_muon_akreyrium 1000')
         .itemInputs('1x kubejs:crystalline_akreyrium', '1x gtceu:lime_glass_lens')
         .itemOutputs('1x gtceu:lime_glass_lens')
-        .outputFluids('gtceu:utopian_akreyrium 500', 'gtceu:lepton_coalescing_superalloy 720')
+        .outputFluids('gtceu:utopian_akreyrium 500', 'gtceu:lepton_coalescing_superalloy 90')
         .duration(200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
@@ -304,7 +305,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:dense_tau_akreyrium 1000')
         .itemInputs('1x kubejs:crystalline_akreyrium', '1x gtceu:light_blue_glass_lens')
         .itemOutputs('1x gtceu:light_blue_glass_lens')
-        .outputFluids('gtceu:utopian_akreyrium 500', 'gtceu:lepton_coalescing_superalloy 720')
+        .outputFluids('gtceu:utopian_akreyrium 500', 'gtceu:lepton_coalescing_superalloy 90')
         .duration(200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 });
