@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('2x gtceu:enriched_estalt_dust')
         .outputFluids('gtceu:enriched_mystical_concentrate 1000')
 
-    event.recipes.gtceu.leptonic_manifold_quantiser('enriched_mystical_concentrate_decomposition')
+    event.recipes.gtceu.manifold_centrifuge('enriched_mystical_concentrate_decomposition')
         .inputFluids('gtceu:enriched_mystical_concentrate 3000')
         .outputFluids('gtceu:enriched_mythrillic_mixture 1000')
         .outputFluids('gtceu:enriched_estaltadyne_mixture 1000')
