@@ -1,62 +1,16 @@
 ServerEvents.recipes(event => {
 
-    // Machine recipes
-    event.recipes.gtceu.assembly_line('cyclonic_sifter')
-        .itemInputs('gtceu:uhv_machine_hull', '12x #gtceu:circuits/uhv','16x gtceu:neutronium_large_fluid_pipe', '16x gtceu:stellarium_gear',
-            '8x gtceu:uhv_electric_pump', '4x gtceu:uhv_electric_motor', '2x gtceu:uhv_field_generator', '6x gtceu:pure_netherite_gear')
-        .inputFluids('gtceu:prismalium 9216','gtceu:gritty_akreyrium 224000')
-        .itemOutputs('gtceu:cyclonic_sifter')
-        .duration(24000)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:gritty_akreyrium_bucket'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(144)
-        )
-        .EUt(GTValues.VA[GTValues.UV]); 
-
+    // Line Specific Controller Recipe
     event.recipes.gtceu.assembly_line('folding_akreyrium_stabiliser')
-        .itemInputs('gtceu:uhv_machine_hull', '8x #gtceu:circuits/uhv', '16x #gtceu:circuits/uv','16x gtceu:small_pure_netherite_gear','32x gtceu:neutronium_normal_fluid_pipe',
-            '64x gtceu:light_blue_glass_lens','64x gtceu:lime_glass_lens','64x gtceu:magenta_glass_lens','8x gtceu:uhv_field_generator',
+        .itemInputs('gtceu:uhv_machine_hull', '12x #gtceu:circuits/uhv','48x kubejs:uepic_chip','16x gtceu:small_pure_netherite_gear','32x gtceu:neutronium_normal_fluid_pipe',
+            '16x gtceu:light_blue_glass_lens','16x gtceu:lime_glass_lens','16x gtceu:magenta_glass_lens','8x gtceu:uhv_field_generator',
             '8x gtceu:uhv_fluid_regulator','4x gtceu:uhv_sensor','8x gtceu:pure_netherite_rotor')
         .inputFluids('gtceu:hsse 9216','gtceu:borosilicate_glass 147456')
         .itemOutputs('gtceu:folding_akreyrium_stabiliser')
         .duration(32000)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:cyclonic_sifter'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(144)
-        )
-        .EUt(GTValues.VA[GTValues.UV]); 
-
-    
-    event.recipes.gtceu.assembly_line('manifold_centrifuge')
-        .itemInputs(
-            'gtceu:uhv_machine_hull', '24x #gtceu:circuits/uhv','64x kubejs:uepic_chip', '32x kubejs:uepic_chip',
-            '16x gtceu:neutronium_large_fluid_pipe', '64x gtceu:glass_lens','64x gtceu:fine_indium_tin_barium_titanium_cuprate_wire','16x gtceu:pure_netherite_foil',
-            '4x gtceu:uhv_electric_pump', '6x gtceu:uhv_emitter',  '4x gtceu:uhv_fluid_regulator')
-        .inputFluids('gtceu:naquadria 24048','gtceu:borosilicate_glass 36864')
-        .itemOutputs('gtceu:manifold_centrifuge')
-        .duration(32000)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:lepton_sparse_akreyrium_bucket'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(144)
-        )
-        .EUt(GTValues.VA[GTValues.UV]); 
-
-    event.recipes.gtceu.assembly_line('injection_mixer')
-        .itemInputs(
-            'gtceu:uhv_machine_hull', '24x #gtceu:circuits/uhv', '48x gtceu:crystal_soc','64x kubejs:uepic_chip','8x gtceu:neutronium_huge_fluid_pipe', '64x gtceu:glass_lens',
-            '4x gtceu:small_pure_netherite_gear','2x gtceu:small_zalloy_gear','6x gtceu:uhv_electric_pump','6x gtceu:uhv_electric_pump','2x gtceu:uhv_fluid_regulator')
-        .inputFluids('gtceu:weapon_grade_naquadah 2304','gtceu:stellarium 2304','gtceu:twinite 20736','gtceu:utopian_akreyrium 1250')
-        .itemOutputs('gtceu:injection_mixer')
-        .duration(32000)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:manifold_centrifuge'))
+                .researchStack(Item.of('gtceu:large_engraving_laser'))
                 .EUt(GTValues.VHA[GTValues.UV])
                 .CWUt(144)
         )
@@ -69,7 +23,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:lepton_sparse_akreyrium 1000')
         .itemOutputs('1x kubejs:crystalline_akreyrium', '1x kubejs:amorphous_akreyrium')
         .duration(1200)
-        .EUt(GTValues.VA[GTValues.UHV]);
+        .EUt(GTValues.VA[GTValues.UHV]*.8);
 
     // Coalescing Superalloy mixing
     event.recipes.gtceu.mixer('lepton_coalescing_superalloy_dust')
@@ -91,7 +45,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('blank_injection_catalyst')
         .itemInputs(
             '1x gtceu:petri_dish', '2x kubejs:uhv_microfluidic_flow_valve', '32x gtceu:neutronium_foil',
-            '16x kubejs:uhv_high_strength_panel', '8x gtceu:neutronium_screw'
+            '12x kubejs:uhv_high_strength_panel', '8x gtceu:neutronium_screw'
         ).inputFluids('gtceu:polyether_ether_ketone 512')
         .itemOutputs('1x kubejs:blank_injection_catalyst')
         .duration(800)
@@ -104,6 +58,8 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:lepton_flavour_foundational_flux 1000')
         .duration(160)
         .EUt(GTValues.VA[GTValues.UV]);
+
+    // Note: Lepton-Sparse => Sparse Variants is in Core mod because of the XOR function
 
     //-----------------------------------------------------------------------------
     // TAU BRANCH
@@ -186,7 +142,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV]);
         
     // Large chemical reactor
-    event.recipes.gtceu.large_chemical_reactor('twink_muon_lighting')
+    event.recipes.gtceu.large_chemical_reactor('twinkling_muon_lighting')
         .inputFluids('gtceu:twinkling_muon_infusion_flux 1000', 'minecraft:lava 1000')
         .outputFluids('gtceu:glowing_muon_infusion_flux 1000')
         .duration(360)
