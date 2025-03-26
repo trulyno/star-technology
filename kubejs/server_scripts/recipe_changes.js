@@ -198,27 +198,77 @@ ServerEvents.recipes(event => {
         R: 'thermal:cured_rubber'
     })
 
-    const types = ['soul_infused', 'signalum', 'lumium', 'enderium', 'shellite', 'twinite', 'dragonsteel', 'prismalium', 'melodium', 'stellarium', 'austenitic_stainless_steel_304', 'inconel_625', 'birmabright', 'duralumin', 'hydronalium', 'beryllium_aluminium_alloy', 'elgiloy', 'beryllium_bronze', 'silicon_bronze', 'kovar', 'zamak', 'tumbaga', 'sterling_silver', 'blue_steel', 'red_steel', 'ancient_runicalium'];
-
-    types.forEach(element => {
-        event.shaped(Item.of(`2x kubejs:${element}_casing`), [
+    const casing = (type,material,casing_id) => {
+        event.shaped(Item.of(`2x ${casing_id}:${type}_casing`), [
             'PHP',
             'PFP',
             'PWP'
         ], {
-            P: `gtceu:${element}_plate`,
-            F: `gtceu:${element}_frame`,
+            P: `gtceu:${material}_plate`,
+            F: `gtceu:${material}_frame`,
             H: '#forge:tools/hammers',
             W: '#forge:tools/wrenches'
         });
 
-        event.recipes.gtceu.assembler(`${element}_casing`)
-            .itemInputs(`6x gtceu:${element}_plate`, `gtceu:${element}_frame`)
-            .itemOutputs(`2x kubejs:${element}_casing`)
+        event.recipes.gtceu.assembler(`${type}_casing`)
+            .itemInputs(`gtceu:${material}_plate`, `gtceu:${material}_frame`)
+            .itemOutputs(`2x ${casing_id}:${type}_casing`)
             .duration(50)
             .EUt(16)
             .circuit(6);
-    });
+    };
+
+    casing('soul_infused','soul_infused' ,'kubejs');
+    casing('signalum','signalum' ,'kubejs');
+    casing('lumium','lumium' ,'kubejs');
+    casing('enderium','enderium' ,'kubejs');
+    casing('shellite','shellite' ,'kubejs');
+    casing('twinite','twinite' ,'kubejs');
+    casing('dragonsteel','dragonsteel' ,'kubejs');
+    casing('prismalium','prismalium' ,'kubejs');
+    casing('melodium','melodium' ,'kubejs');
+    casing('stellarium','stellarium' ,'kubejs');
+    casing('ancient_runicalium','ancient_runicalium' ,'kubejs');
+    casing('austenitic_stainless_steel_304','austenitic_stainless_steel_304' ,'kubejs');
+    casing('inconel_625','inconel_625' ,'kubejs');
+    casing('birmabright','birmabright' ,'kubejs');
+    casing('duralumin','duralumin' ,'kubejs');
+    casing('hydronalium','hydronalium' ,'kubejs');
+    casing('beryllium_aluminium_alloy','beryllium_aluminium_alloy' ,'kubejs');
+    casing('elgiloy','elgiloy' ,'kubejs');
+    casing('beryllium_bronze','beryllium_bronze' ,'kubejs');
+    casing('silicon_bronze','silicon_bronze' ,'kubejs');
+    casing('kovar','kovar' ,'kubejs');
+    casing('zamak','zamak' ,'kubejs');
+    casing('tumbaga','tumbaga' ,'kubejs');
+    casing('sterling_silver','sterling_silver' ,'kubejs');
+    casing('blue_steel','blue_steel' ,'kubejs');
+    casing('red_steel','red_steel' ,'kubejs');
+    casing('enriched_naquadah_machine','enriched_naquadah' ,'kubejs');
+
+    const casingDouble = (type,material,casing_id) => {
+        event.shaped(Item.of(`${casing_id}:${type}_casing`,2), [
+            'PHP',
+            'PFP',
+            'PWP'
+        ], {
+            P: `gtceu:double_${material}_plate`,
+            F: `gtceu:${material}_frame`,
+            H: '#forge:tools/hammers',
+            W: '#forge:tools/wrenches'
+        });
+
+        event.recipes.gtceu.assembler(`${type}_casing`)
+            .itemInputs(`gtceu:double_${material}_plate`, `gtceu:${material}_frame`)
+            .itemOutputs(`2x ${casing_id}:${type}_casing`)
+            .duration(50)
+            .EUt(16)
+            .circuit(6);
+    };
+
+    casingDouble('atomic','trinaquadalloy','gtceu');
+    casingDouble('noble_mixing','astrenalloy_nx','kubejs');
+    casingDouble('quake_proof','thacoloy_nq_42x','kubejs');
 
     event.recipes.gtceu.assembler('silicone_rubber_casing')
         .itemInputs('gtceu:solid_machine_casing') 
@@ -228,98 +278,78 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VH[GTValues.MV])
         .circuit(6);
 
-    event.shaped(Item.of('2x gtceu:atomic_casing'), [
-        'PHP',
-        'PFP',
-        'PWP'
-    ], {
-        P: 'gtceu:double_trinaquadalloy_plate',
-        F: 'gtceu:trinaquadalloy_frame',
-        H: '#forge:tools/hammers',
-        W: '#forge:tools/wrenches'
-    });
+    const firebox = (type,material,casing_id) => {
+        event.shaped(Item.of(`2x ${casing_id}:${type}_firebox_casing`), [
+            'PRP',
+            'RFR',
+            'PRP'
+        ], {
+            P: `gtceu:${material}_plate`,
+            F: `gtceu:${material}_frame`,
+            R: `gtceu:${material}_rod`
+        });
+    };
 
-    event.recipes.gtceu.assembler('atomic_casing')
-        .itemInputs('6x gtceu:double_trinaquadalloy_plate', 'gtceu:trinaquadalloy_frame')
-        .itemOutputs('2x gtceu:atomic_casing')
-        .duration(50)
-        .EUt(16)
-        .circuit(6);
+    firebox('enriched_naquadah','enriched_naquadah','start_core')
 
-    event.shaped(Item.of('2x kubejs:enriched_naquadah_machine_casing'), [
-        'PHP',
-        'PFP',
-        'PWP'
-    ], {
-        P: 'gtceu:enriched_naquadah_plate',
-        F: 'gtceu:enriched_naquadah_frame',
-        H: '#forge:tools/hammers',
-        W: '#forge:tools/wrenches'
-    });
+    const gearbox = (type,material,casing_id) => {
+        event.shaped(Item.of(`2x ${casing_id}:${type}_gearbox`), [
+            'PHP',
+            'GFG',
+            'PWP'
+        ], {
+            P:  `gtceu:${material}_plate`,
+            F:  `gtceu:${material}_frame`,
+            G:  `gtceu:${material}_gear`,
+            H: '#forge:tools/hammers',
+            W: '#forge:tools/wrenches'
+        });
+    
+        event.recipes.gtceu.assembler(`${material}_gearbox`)
+            .itemInputs(`4x gtceu:${material}_plate`,`2x gtceu:${material}_gear`,`gtceu:${material}_frame`)
+            .itemOutputs(`2x ${casing_id}:${type}_gearbox`)
+            .duration(50)
+            .EUt(16)
+            .circuit(4);
+    };
 
-    event.recipes.gtceu.assembler('enriched_naquadah_machine_casing')
-        .itemInputs('6x gtceu:enriched_naquadah_plate', 'gtceu:enriched_naquadah_frame')
-        .itemOutputs('2x kubejs:enriched_naquadah_machine_casing')
-        .duration(50)
-        .EUt(16)
-        .circuit(6);
+    gearbox('enriched_naquadah','enriched_naquadah','kubejs')
 
-    event.shaped(Item.of('2x start_core:enriched_naquadah_firebox_casing'), [
-        'PRP',
-        'RFR',
-        'PRP'
-    ], {
-        P: 'gtceu:enriched_naquadah_plate',
-        F: 'gtceu:enriched_naquadah_frame',
-        R: 'gtceu:enriched_naquadah_rod'
-    });
+    const pipe = (type,material,pipe,casing_id) => {
+        event.shaped(Item.of(`2x ${casing_id}:${type}_pipe_casing`), [
+            'PLP',
+            'LFL',
+            'PLP'
+        ], {
+            P:  `gtceu:${material}_plate`,
+            F:  `gtceu:${material}_frame`,
+            L:  `gtceu:${pipe}_normal_fluid_pipe`
+        });
+    };
 
-    event.shaped(Item.of('2x kubejs:enriched_naquadah_pipe_casing'), [
-        'PLP',
-        'LFL',
-        'PLP'
-    ], {
-        P: 'gtceu:enriched_naquadah_plate',
-        F: 'gtceu:enriched_naquadah_frame',
-        L: 'gtceu:naquadah_normal_fluid_pipe'
-    });
+    pipe('enriched_naquadah','enriched_naquadah','naquadah','kubejs');
 
-    event.shaped(Item.of('2x start_core:enriched_naquadah_engine_intake_casing'), [
-        'PHP',
-        'RFR',
-        'PWP'
-    ], {
-        P: 'gtceu:naquadah_normal_fluid_pipe',
-        F: 'kubejs:enriched_naquadah_machine_casing',
-        R: 'gtceu:enriched_naquadah_rotor',
-        H: '#forge:tools/hammers',
-        W: '#forge:tools/wrenches'
-    });
+    const engine_intake = (type,material,pipe,casing_id,used_casing) => {
+        event.shaped(Item.of(`2x ${casing_id}:${type}_engine_intake_casing`), [
+            'PHP',
+            'RFR',
+            'PWP'
+        ], {
+            P:  `gtceu:${pipe}_normal_fluid_pipe`,
+            F:  `${used_casing}_casing`,
+            R:  `gtceu:${material}_rotor`,
+            H: '#forge:tools/hammers',
+            W: '#forge:tools/wrenches'
+        });
 
-    event.recipes.gtceu.assembler('enriched_naquadah_engine_intake_casing')
-        .itemInputs('2x gtceu:enriched_naquadah_rotor', '4x gtceu:naquadah_normal_fluid_pipe', 'kubejs:enriched_naquadah_machine_casing')
-        .itemOutputs('2x start_core:enriched_naquadah_engine_intake_casing')
-        .duration(50)
-        .EUt(16);
+        event.recipes.gtceu.assembler( `${type}_engine_intake_casing`)
+            .itemInputs(`2x gtceu:${material}_rotor`,`4x gtceu:${pipe}_normal_fluid_pipe`,`${used_casing}_casing`)
+            .itemOutputs(`2x ${casing_id}:${type}_engine_intake_casing`)
+            .duration(50)
+            .EUt(16);
+    };
 
-    event.shaped(Item.of('2x kubejs:enriched_naquadah_gearbox'), [
-        'PHP',
-        'GFG',
-        'PWP'
-    ], {
-        P: 'gtceu:enriched_naquadah_plate',
-        F: 'gtceu:enriched_naquadah_frame',
-        G: 'gtceu:enriched_naquadah_gear',
-        H: '#forge:tools/hammers',
-        W: '#forge:tools/wrenches'
-    });
-
-    event.recipes.gtceu.assembler('enriched_naquadah_gearbox')
-        .itemInputs('4x gtceu:enriched_naquadah_plate', '2x gtceu:enriched_naquadah_gear', 'gtceu:enriched_naquadah_frame')
-        .itemOutputs('2x kubejs:enriched_naquadah_gearbox')
-        .duration(50)
-        .EUt(16)
-        .circuit(4);
+    engine_intake('enriched_naquadah','enriched_naquadah','naquadah','start_core','kubejs:enriched_naquadah_machine');
 
     ['blackstone','calcite','tuff','dripstone_block'].forEach(stone => {
     event.recipes.gtceu.rock_breaker(`${stone}`)
