@@ -4,7 +4,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('cyclonic_sifter')
         .setEUIO('in')
         .setMaxIOSize(2, 6, 2, 3)
-        .setSound(GTSoundEntries.MACERATOR);
+        .setSound(GTSoundEntries.CENTRIFUGE)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_SIFT, FillDirection.LEFT_TO_RIGHT);
 
 });
 

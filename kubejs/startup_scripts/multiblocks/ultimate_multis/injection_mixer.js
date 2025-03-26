@@ -3,8 +3,9 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('injection_mixer')
         .category('injection_mixer')
         .setEUIO('in')
-        .setMaxIOSize(6, 2, 3, 2)
-        .setSound(GTSoundEntries.MACERATOR);
+        .setMaxIOSize(6, 3, 6, 3)
+        .setSound(GTSoundEntries.MIXER)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_MIXER, FillDirection.LEFT_TO_RIGHT);
 
 });
 

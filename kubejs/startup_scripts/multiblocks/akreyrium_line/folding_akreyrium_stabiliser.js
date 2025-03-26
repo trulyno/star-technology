@@ -3,8 +3,9 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('folding_akreyrium_stabiliser')
         .category('folding_akreyrium_stabiliser')
         .setEUIO('in')
-        .setMaxIOSize(2, 1, 2, 1)
-        .setSound(GTSoundEntries.MACERATOR);
+        .setMaxIOSize(2, 2, 2, 2)
+        .setSound(GTSoundEntries.MACERATOR)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_FUSION, FillDirection.LEFT_TO_RIGHT);
 
 });
 

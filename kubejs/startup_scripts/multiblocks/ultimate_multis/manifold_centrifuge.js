@@ -5,7 +5,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('manifold_centrifuge')
         .setEUIO('in')
         .setMaxIOSize(3, 3, 3, 3)
-        .setSound(GTSoundEntries.MACERATOR);
+        .setSound(GTSoundEntries.CENTRIFUGE)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT, FillDirection.LEFT_TO_RIGHT);
 
 });
 

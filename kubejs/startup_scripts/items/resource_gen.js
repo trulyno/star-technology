@@ -6,9 +6,37 @@ StartupEvents.registry('item', event => {
     event.create('mycelium_growth');
 
     //Akreyrium
-    event.create('crystallised_akreyrium')
-        .displayName('Crystallised Akreyrium')
-        .texture('kubejs:item/crystallised_akreyrium');
+    event.create('crystalline_akreyrium')
+        .displayName('Crystalline Akreyrium')
+        .texture('kubejs:item/akreyrium/crystalline_akreyrium');
+    
+    event.create('amorphous_akreyrium')
+        .displayName('Amorphous Akreyrium')
+        .texture('kubejs:item/akreyrium/amorphous_akreyrium');
+    
+    event.create('blank_injection_catalyst')
+        .displayName('Blank Injection Catalyst')
+        .texture('kubejs:item/akreyrium/blank_injection_catalyst');
+
+    event.create('electron_injection_catalyst')
+        .displayName('§dElectron§r Injection Catalyst')
+        .texture('kubejs:item/akreyrium/electron_injection_catalyst');
+
+    event.create('tau_injection_catalyst')
+        .displayName('§bTau§r Injection Catalyst')
+        .texture('kubejs:item/akreyrium/tau_injection_catalyst');
+
+    event.create('aspect_of_weight')
+        .displayName('§bAspect of Weight')
+        .texture('kubejs:item/akreyrium/aspect_of_weight');
+
+    event.create('muon_injection_catalyst')
+        .displayName('§aMuon§r Injection Catalyst')
+        .texture('kubejs:item/akreyrium/muon_injection_catalyst');
+
+    event.create('defiled_injection_catalyst')
+        .displayName('§4Defiled Injection Catalyst')
+        .texture('kubejs:item/akreyrium/defiled_injection_catalyst');
 
     event.create('netherite_reinforced_mesh')
         .displayName('Netherite Reinforced Mesh')
