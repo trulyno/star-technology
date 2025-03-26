@@ -14,6 +14,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('injection_mixer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('injection_mixer')
+        .tooltips('description pending')
+        .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(" BBB ", " CCC ", " BBB ", "  B  ", "     ", "  B  ", " BBB ", "     ", "     ", "     ", "     ", "     ", "     ") 

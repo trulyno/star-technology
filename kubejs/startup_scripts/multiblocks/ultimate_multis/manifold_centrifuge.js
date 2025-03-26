@@ -15,6 +15,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('manifold_centrifuge', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('manifold_centrifuge')
+        .tooltips('description pending')
+        .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("  D D  ", "  B B  ", "  BBB  ", "       ", "  BBB  ", "  CCC  ", "  BBB  ", "  D D  ", "       ", "       ", "       ") 
