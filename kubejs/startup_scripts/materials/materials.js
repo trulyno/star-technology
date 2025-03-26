@@ -203,7 +203,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // Liquids
 
-
     // Gasses
     // periodicTableElement('iodine', 'gas');
     element('oganesson', 'gas');
@@ -1499,50 +1498,256 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
      .iconSet(METALLIC)
      .blastTemp(2200, 'low', VA('mv'), 2000);
 
+
+    // Ultimate (Akreyrium-Tier-Start) Multiblocks
+        
+    // Thallium-Tungstate and intermediates
+    event.create('thallium_tungstate')
+        .dust()
+        .iconSet(DULL)
+        .components('2x thallium', '1x tungsten', '4x oxygen')
+        .color(0xE3D18A);
+
+    event.create('tungsten_trioxide')
+        .dust()
+        .iconSet(DULL)
+        .components('1x tungsten', '3x oxygen')
+        .color(0xADB426);
+
+    // Boron Nitride and intermediates
+    event.create('boron_nitride')
+        .dust()
+        .iconSet(DULL)
+        .components('1x boron', '1x nitrogen')
+        .color(0xD4C4A0);
+
+    event.create('boron_trioxide')
+        .dust()
+        .iconSet(DULL)
+        .components('2x boron', '3x oxygen')
+        .color(0xDACABB);
+
+    // Hastelloy X Upgrade
+    event.create('astrenalloy_nx')
+        .ingot()
+        .fluid()
+        .components('1x hastelloy_x', '4x enriched_naquadah', '3x zirconium', '6x tantalum_carbide', '4x osmiridium', '3x boron_nitride')
+        .color(0x63478e)
+        .iconSet(SHINY)
+        .blastTemp(10090, 'highest', VA('uv'), 2800)
+        .flags(plates, rod, frame);
+    
+    // Incoloy MA-956 upgrade
+    event.create('thacoloy_nq_42x')
+        .ingot()
+        .fluid()
+        .components('6x incoloy_ma_956', '4x enriched_naquadah', '2x niobium_titanium', '4x osmiridium', '4x thallium_tungstate')
+        .color(0x467624)
+        .iconSet(SHINY)
+        .blastTemp(10090, 'highest', VA('zpm'), 3400)
+        .flags(plates, rod, frame);
+
+
     // Akreyium Line
     
     event.create('utopian_akreyrium')
         .fluid()
         .element(GTElements.get('akreyrium'))
         .color(0xFFFFFF);
-    
-    event.create('dense_electron_akreyrium')
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .element(GTElements.get('akreyrium'))
 
-    event.create('dense_muon_akreyrium')
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .element(GTElements.get('akreyrium'))
-
-    event.create('dense_tau_akreyrium')
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .element(GTElements.get('akreyrium'))
-
-    event.create('sparse_electron_akreyrium')
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .element(GTElements.get('akreyrium'))
-
-    event.create('sparse_muon_akreyrium')
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .element(GTElements.get('akreyrium'))
-
-    event.create('sparse_tau_akreyrium')
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .element(GTElements.get('akreyrium'))
+    event.create('lepton_coalescing_superalloy')
+        .ingot()
+        .fluid()
+        .dust()
+        .iconSet(DULL)
+        .components('4x thallium_tungstate', '2x nickel', '4x graphene', '3x niobium', '4x bismuth')
+        .blastTemp(5300, 'high', VA('luv'), 1400)
+        .color(0xe1ccff);
 
     event.create('lepton_sparse_akreyrium')
         .fluid()
-        .element(GTElements.get('akreyrium'))
+        .flags(no_decomp)
+        .components('1x utopian_akreyrium', '1x mystery')
         .color(0x6E6E87);
+
+    event.create('lepton_flux_akreyrium')
+        .fluid()
+        .flags(no_decomp)
+        .components('1x utopian_akreyrium', '6x lepton_coalescing_superalloy', '1x mystery')
+        .color(0xaca2ba);
 
     event.create('gritty_akreyrium')
         .fluid()
-        .element(GTElements.get('akreyrium'))
+        .flags(no_decomp)
+        .components('1x utopian_akreyrium', '1x mystery')
         .color(0x464655);
 
     event.create('akreyrium_pcb_graphite_nanoparticle_coolant')
         .fluid()
+        .components('5x pcb_coolant', '2x utopian_akreyrium', '32x graphite')
         .color(0x676763);
+    
+    // Akreyrium Variants
+    event.create('lepton_flavour_foundational_flux')
+        .fluid()
+        .flags(no_decomp)
+        .components('6x lepton_coalescing_superalloy', '1x mystery')
+        .color(0xE5CEE1);
+    
+    // Tau
+    event.create('light_tau_infusion_flux')
+        .fluid()
+        .flags(no_decomp)
+        .components('1x mystery')
+        .color(0xE5CEE1);
+
+    event.create('heavy_tau_infusion_flux')
+        .fluid()
+        .flags(no_decomp)
+        .components('1x light_tau_infusion_flux')
+        .color(0xDFDAE9);
+
+    event.create('superlight_tau_infusion_flux')
+        .fluid()
+        .flags(no_decomp)
+        .components('1x light_tau_infusion_flux')
+        .color(0xD9E7F0);
+
+    event.create('superheavy_tau_infusion_flux')
+        .fluid()
+        .flags(no_decomp)
+        .components('1x heavy_tau_infusion_flux')
+        .color(0xCCFFFF);
+
+    event.create('ethereal_tau_infusion_flux')
+        .fluid()
+        .flags(no_decomp)
+        .components('2x superheavy_tau_infusion_flux', '2x superlight_tau_infusion_flux')
+        .color(0x99CCFF);
+
+    event.create('sparse_tau_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .flags(no_decomp)
+        .components('1x utopian_akreyrium', '1x mystery')
+
+    event.create('dense_tau_akreyrium')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .flags(no_decomp)
+        .components('1x utopian_akreyrium', '1x mystery', '1x ethereal_tau_infusion_flux')
+
+    // Muon
+    event.create('twinkling_muon_infusion_flux')
+        .fluid()
+        .flags(no_decomp)
+        .components('1x mystery')
+        .color(0xDDD8DC);
+
+    event.create('glowing_muon_infusion_flux')
+        .fluid()
+        .flags(no_decomp)
+        .components('1x mystery')
+        .color(0xD5E1D6);
+
+    event.create('shining_muon_infusion_flux')
+        .fluid()
+        .flags(no_decomp)
+        .components('1x mystery')
+        .color(0xCDEBD1);
+
+    event.create('radiant_muon_infusion_flux')
+        .fluid()
+        .flags(no_decomp)
+        .components('1x mystery')
+        .color(0xC5F4CB);
+
+    event.create('brilliant_muon_infusion_flux')
+        .fluid()
+        .flags(no_decomp)
+        .components('1x mystery')
+        .color(0xBDFEC6);
+
+    event.create('sparse_muon_akreyrium')
+        .flags(no_decomp)
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .components('1x utopian_akreyrium', '1x mystery')
+
+    event.create('dense_muon_akreyrium')
+        .flags(no_decomp)
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .components('1x utopian_akreyrium', '1x mystery', 'brilliant_muon_infusion_flux')
+
+
+    // Electron
+
+    event.create('mono_phase_electron_infusion_flux')
+        .fluid()
+        .flags(no_decomp)
+        .components('1x mystery')
+        .color(0xE0C5F6);
+
+    event.create('di_phase_electron_infusion_agent')
+        .dust()
+        .flags(no_decomp)
+        .components('1x mystery')
+        .color(0xE0BDED);
+
+    event.create('tri_phase_electron_infusion_agent')
+        .dust()
+        .flags(no_decomp)
+        .iconSet(MAGNETIC)
+        .components('1x mystery')
+        .color(0xDFB6E4);
+
+    event.create('weak_gamma_phase_electron_infusion_agent')
+        .dust()
+        .flags(no_decomp)
+        .iconSet(MAGNETIC)
+        .components('1x mystery')
+        .color(0x856783);
+
+    event.create('weak_beta_phase_electron_infusion_agent')
+        .dust()
+        .flags(no_decomp)
+        .iconSet(MAGNETIC)
+        .components('1x mystery')
+        .color(0x6b4f66);
+
+    event.create('gamma_phase_electron_infusion_agent')
+        .dust()
+        .flags(no_decomp)
+        .iconSet(MAGNETIC)
+        .components('1x mystery')
+        .color(0xDEAFDC);
+
+    event.create('beta_phase_electron_infusion_agent')
+        .dust()
+        .flags(no_decomp)
+        .iconSet(MAGNETIC)
+        .components('1x mystery')
+        .color(0xDDA8D3);
+
+    event.create('alpha_phase_electron_infusion_agent')
+        .dust()
+        .flags(no_decomp)
+        .iconSet(MAGNETIC)
+        .components('1x mystery')
+        .color(0xDC99C1);
+
+    event.create('alternating_phase_electron_infusion_flux')
+        .fluid()
+        .flags(no_decomp)
+        .components('1x mystery')
+        .color(0xDEADB3);
+
+    event.create('sparse_electron_akreyrium')
+        .flags(no_decomp)
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .components('1x utopian_akreyrium', '1x mystery');
+
+    event.create('dense_electron_akreyrium')
+        .flags(no_decomp)
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .components('1x utopian_akreyrium', '1x mystery', 'alternating_phase_electron_infusion_flux')
 
     //EPSILON Resource Gen stuff
     function liquid(name, color, composition){
