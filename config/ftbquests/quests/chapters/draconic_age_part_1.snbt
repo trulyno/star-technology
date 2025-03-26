@@ -637,15 +637,15 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["2DACE6EF41A118D9"]
+			dependencies: ["3AE729D3F47E9A2B"]
 			id: "06EC98F6E6AFC2AF"
 			tasks: [{
 				id: "7585DCB3290D83B9"
 				title: "Drag Boule"
 				type: "checkmark"
 			}]
-			x: 2.0d
-			y: 8.0d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["06EC98F6E6AFC2AF"]
@@ -657,8 +657,8 @@
 				title: "drag wafer"
 				type: "checkmark"
 			}]
-			x: 4.0d
-			y: 8.0d
+			x: 10.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0DF30CDA8DE68E0C"]
@@ -668,8 +668,8 @@
 				title: "drag soc"
 				type: "checkmark"
 			}]
-			x: 6.0d
-			y: 8.0d
+			x: 8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5E96ECB0768B5D80"]
@@ -778,7 +778,7 @@
 				title: "UIPIC Chips"
 				type: "checkmark"
 			}]
-			x: 6.0d
+			x: 8.0d
 			y: -2.0d
 		}
 		{
@@ -792,8 +792,8 @@
 				item: "start_core:uiv_absolute_parallel_hatch"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -3.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["24E2CB89693EDEA3"]
@@ -803,8 +803,8 @@
 				item: "start_core:uiv_parallel_hatch"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -5.0d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["41B4DE81AFC054B9"]
@@ -933,8 +933,8 @@
 				title: "Dont Worry About it... Here's a cookie"
 				type: "checkmark"
 			}]
-			x: 10.0d
-			y: -1.5d
+			x: 11.5d
+			y: 1.5d
 		}
 	]
 	title: "Draconic Empires"

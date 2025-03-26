@@ -484,7 +484,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["179A15014A5716B5"]
+			dependencies: [
+				"179A15014A5716B5"
+				"7AC55BA8BDD0F3D2"
+			]
 			description: ["A new machine that can find treasures among the rubble."]
 			id: "1A8F645AC1B30411"
 			rewards: [{
@@ -494,17 +497,18 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
-				id: "6A1D5A2792648676"
-				item: "gtceu:cyclonic_crystalline_sieve"
+				id: "33205A9306859820"
+				item: "gtceu:cyclonic_sifter"
 				type: "item"
 			}]
+			title: "1st &4&oUltimate&r Multiblock"
 			x: -0.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["1A8F645AC1B30411"]
+			dependencies: ["7AC55BA8BDD0F3D2"]
 			description: ["This machine mixes a liquid with 2 catalysts to put it in a more activated form."]
 			id: "5368269646BC0F27"
 			rewards: [{
@@ -518,13 +522,10 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 1.0d
+			y: 3.0d
 		}
 		{
-			dependencies: [
-				"07AD6651D0B40E22"
-				"7AC55BA8BDD0F3D2"
-			]
+			dependencies: ["07AD6651D0B40E22"]
 			description: ["With these 2 machines you can massively increase the amount of Akreyrium you produce."]
 			id: "7F203254ACDF8C88"
 			optional: true
@@ -535,25 +536,22 @@
 			}]
 			tasks: [
 				{
-					id: "689F437391CF6FF1"
-					item: "gtceu:leptonic_manifold_quantiser"
+					id: "08C4D9DA79C546DB"
+					item: "gtceu:injection_mixer"
 					type: "item"
 				}
 				{
-					id: "58088B3530CDD073"
-					item: "gtceu:leptonic_convergence_injector"
+					id: "42608B2076312550"
+					item: "gtceu:manifold_centrifuge"
 					type: "item"
 				}
 			]
-			title: "Better Akreyrium Processing"
+			title: "More &4&oUltimate&r Multiblocks"
 			x: 1.5d
-			y: 5.0d
+			y: 1.0d
 		}
 		{
-			dependencies: [
-				"5368269646BC0F27"
-				"54DA03D41AF36EF2"
-			]
+			dependencies: ["5368269646BC0F27"]
 			description: ["A weird fluid, that has some interesting properties making it necessary for more advanced machines."]
 			icon: {
 				Count: 1
@@ -948,7 +946,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "70C8CC3BD58DC9B4"
 				item: {
@@ -958,8 +956,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 7.0d
+			x: 3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["7AC55BA8BDD0F3D2"]
@@ -976,7 +974,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 7.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3540AE6C940F985B"]
@@ -1528,7 +1526,7 @@
 			]
 			title: "UEPIC Chips"
 			x: 1.5d
-			y: 7.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2C354B0735DF8023"]
@@ -1765,7 +1763,7 @@
 				title: "Positioner"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
@@ -1804,8 +1802,8 @@
 				item: "kubejs:wetware_based_runic_neuroloom"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 7.0d
+			x: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4F3EE28B3F38FC85"]
@@ -1823,7 +1821,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 5.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1848,7 +1846,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 5.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["2659B3AA9108BC43"]
@@ -1866,7 +1864,7 @@
 				type: "checkmark"
 			}]
 			x: -2.5d
-			y: 7.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2C354B0735DF8023"]

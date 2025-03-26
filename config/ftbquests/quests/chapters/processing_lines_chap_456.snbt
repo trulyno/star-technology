@@ -12,21 +12,12 @@
 	id: "37CD2B0E77E895ED"
 	order_index: 3
 	progression_mode: "flexible"
-	quest_links: [
-		{
-			id: "6D8B0DE6FCC2A5B1"
-			linked_quest: "07AD6651D0B40E22"
-			shape: "gear"
-			x: 19.0d
-			y: 7.0d
-		}
-		{
-			id: "5C3A70141044636D"
-			linked_quest: "179A15014A5716B5"
-			x: 17.0d
-			y: 9.0d
-		}
-	]
+	quest_links: [{
+		id: "5C3A70141044636D"
+		linked_quest: "179A15014A5716B5"
+		x: 14.5d
+		y: 9.0d
+	}]
 	quests: [
 		{
 			dependencies: ["32AC51387EAD9D2D"]
@@ -562,7 +553,7 @@
 				type: "item"
 			}]
 			title: "Liquid PEEK Plastic"
-			x: 9.5d
+			x: 9.75d
 			y: 7.5d
 		}
 		{
@@ -800,42 +791,6 @@
 		}
 		{
 			dependencies: [
-				"7F203254ACDF8C88"
-				"48E71B15ECEAA01C"
-				"1D7697A8027F4BD9"
-				"4C84DDA9A9475866"
-			]
-			dependency_requirement: "one_completed"
-			icon: {
-				Count: 1
-				id: "gtceu:utopian_akreyrium_bucket"
-				tag: { }
-			}
-			id: "1108B5E80225C72D"
-			min_required_dependencies: 2
-			rewards: [{
-				count: 3
-				id: "6854E65E72CE4462"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "7217857601C6B895"
-				item: {
-					Count: 1
-					id: "gtceu:utopian_akreyrium_bucket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "Better Utopian Akreyrium"
-			x: 23.5d
-			y: 9.0d
-		}
-		{
-			dependencies: [
 				"560669210B8CABFC"
 				"0C19C040CA121E3B"
 				"0491A3097C6BA6AE"
@@ -859,8 +814,8 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
-			y: 13.5d
+			x: 31.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["39305F8DD4712D2B"]
@@ -1329,268 +1284,6 @@
 		}
 		{
 			dependencies: [
-				"45904BC625C888C3"
-				"2AECB0479C22A03C"
-			]
-			icon: {
-				Count: 1
-				id: "gtceu:dense_electron_akreyrium_bucket"
-				tag: { }
-			}
-			id: "4C84DDA9A9475866"
-			tasks: [
-				{
-					id: "07351E69FBBB6F7F"
-					item: {
-						Count: 1
-						id: "gtceu:dense_electron_akreyrium_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "66C373B30D0A2FF7"
-					type: "checkmark"
-				}
-			]
-			title: "Electron-Dense Akreyrium"
-			x: 22.0d
-			y: 9.0d
-		}
-		{
-			dependencies: [
-				"41D954CFB58267D6"
-				"36E33C8F077E714F"
-			]
-			icon: {
-				Count: 1
-				id: "gtceu:dense_tau_akreyrium_bucket"
-				tag: { }
-			}
-			id: "1D7697A8027F4BD9"
-			tasks: [
-				{
-					id: "3A09935F28C9A2ED"
-					item: {
-						Count: 1
-						id: "gtceu:dense_tau_akreyrium_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "54174698799BD91F"
-					type: "checkmark"
-				}
-			]
-			title: "Tau-Dense Akreyrium"
-			x: 22.0d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"09E6C0A58F3409B3"
-				"49AF286E71E849CF"
-			]
-			icon: {
-				Count: 1
-				id: "gtceu:dense_muon_akreyrium_bucket"
-				tag: { }
-			}
-			id: "48E71B15ECEAA01C"
-			tasks: [
-				{
-					id: "5AA6D922EFD3F6C3"
-					item: {
-						Count: 1
-						id: "gtceu:dense_muon_akreyrium_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "5D3A90272C3F8E37"
-					type: "checkmark"
-				}
-			]
-			title: "Muon-Dense Akreyrium"
-			x: 22.0d
-			y: 11.0d
-		}
-		{
-			dependencies: ["54DA03D41AF36EF2"]
-			icon: {
-				Count: 1
-				id: "gtceu:sparse_muon_akreyrium_bucket"
-				tag: { }
-			}
-			id: "49AF286E71E849CF"
-			tasks: [
-				{
-					id: "1A0B72AC1E2790A9"
-					item: {
-						Count: 1
-						id: "gtceu:sparse_muon_akreyrium_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "0C92E907FB1ED763"
-					type: "checkmark"
-				}
-			]
-			title: "Muon-Sparse Akreyrium"
-			x: 20.5d
-			y: 11.0d
-		}
-		{
-			dependencies: ["54DA03D41AF36EF2"]
-			icon: {
-				Count: 1
-				id: "gtceu:sparse_electron_akreyrium_bucket"
-				tag: { }
-			}
-			id: "2AECB0479C22A03C"
-			tasks: [
-				{
-					id: "4CC10744F9CCCD2C"
-					item: {
-						Count: 1
-						id: "gtceu:sparse_electron_akreyrium_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "0CBF3032481B38D5"
-					type: "checkmark"
-				}
-			]
-			title: "Electron-Sparse Akreyrium"
-			x: 20.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["54DA03D41AF36EF2"]
-			icon: {
-				Count: 1
-				id: "gtceu:sparse_tau_akreyrium_bucket"
-				tag: { }
-			}
-			id: "36E33C8F077E714F"
-			tasks: [
-				{
-					id: "2F61FA08947B3DB7"
-					item: {
-						Count: 1
-						id: "gtceu:sparse_tau_akreyrium_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "5DA6A7B3722811EF"
-					type: "checkmark"
-				}
-			]
-			title: "Tau-Sparse Akreyrium"
-			x: 20.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["46D5CAA2666803D4"]
-			icon: {
-				Count: 1
-				id: "gtceu:twinite_bucket"
-				tag: { }
-			}
-			id: "45904BC625C888C3"
-			tasks: [
-				{
-					id: "7A35CD803FC6ADB7"
-					item: {
-						Count: 1
-						id: "gtceu:twinite_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "3A50699F1CB63C73"
-					type: "checkmark"
-				}
-			]
-			title: "Twinite Injection"
-			x: 21.5d
-			y: 10.0d
-		}
-		{
-			dependencies: ["253AECE450920D99"]
-			icon: {
-				Count: 1
-				id: "gtceu:stellarium_bucket"
-				tag: { }
-			}
-			id: "41D954CFB58267D6"
-			tasks: [
-				{
-					id: "7B71D812CC927BFB"
-					item: {
-						Count: 1
-						id: "gtceu:stellarium_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "6D312E954AEE34CF"
-					type: "checkmark"
-				}
-			]
-			title: "Stellarium Injection"
-			x: 21.5d
-			y: 8.0d
-		}
-		{
-			dependencies: ["4DE40B37D609B921"]
-			icon: {
-				Count: 1
-				id: "gtceu:weapon_grade_naquadah_bucket"
-				tag: { }
-			}
-			id: "09E6C0A58F3409B3"
-			tasks: [
-				{
-					id: "0CB7992D2166CBD7"
-					item: {
-						Count: 1
-						id: "gtceu:weapon_grade_naquadah_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "43F0CDB102A70922"
-					type: "checkmark"
-				}
-			]
-			title: "Weapon Grade Naquadah Injection"
-			x: 21.5d
-			y: 12.0d
-		}
-		{
-			dependencies: [
-				"6B12DCDB8DE6A41B"
 				"179A15014A5716B5"
 				"6F20CEDBB56F1041"
 			]
@@ -1617,23 +1310,8 @@
 				}
 			]
 			title: "Lepton-Sparse Akreyrium"
-			x: 19.0d
+			x: 21.0d
 			y: 9.0d
-		}
-		{
-			dependencies: ["179A15014A5716B5"]
-			id: "6B12DCDB8DE6A41B"
-			tasks: [{
-				id: "634999ABF5C5FA90"
-				item: {
-					Count: 1
-					id: "kubejs:crystallised_akreyrium"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 18.0d
-			y: 8.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -1653,8 +1331,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.0d
-			y: 16.0d
+			x: 29.5d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1671,8 +1349,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: 14.5d
+			x: 29.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -1689,8 +1367,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: 12.5d
+			x: 29.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["54EC42CB74C59F5F"]
@@ -1704,8 +1382,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.0d
-			y: 11.0d
+			x: 29.5d
+			y: 6.0d
 		}
 		{
 			id: "54EC42CB74C59F5F"
@@ -1718,8 +1396,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: 11.0d
+			x: 28.0d
+			y: 6.0d
 		}
 		{
 			id: "01D169FDC848B8A1"
@@ -1732,8 +1410,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.0d
-			y: 12.0d
+			x: 27.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1AAB9C20E833029A"]
@@ -1760,8 +1438,8 @@
 				}
 			]
 			title: "Nitric Acid"
-			x: 14.0d
-			y: 13.0d
+			x: 27.5d
+			y: 8.0d
 		}
 		{
 			id: "4D4E3428BFB10838"
@@ -1774,8 +1452,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.0d
-			y: 14.0d
+			x: 27.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0AB3A8C14C3A0512"]
@@ -1785,8 +1463,8 @@
 				item: "gtceu:activated_carbon_dust"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 15.0d
+			x: 27.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["7658E16BA79A7632"]
@@ -2137,8 +1815,8 @@
 				}
 				type: "item"
 			}]
-			x: 18.0d
-			y: 10.0d
+			x: 20.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -2274,7 +1952,7 @@
 				title: "postioner"
 				type: "checkmark"
 			}]
-			x: 10.0d
+			x: 15.5d
 			y: 7.5d
 		}
 		{
@@ -2415,7 +2093,6 @@
 				{
 					id: "7BDF77CC8A675E38"
 					item: "gtceu:crookesite_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -2429,10 +2106,6 @@
 					item: "gtceu:tiemannite_dust"
 					optional_task: true
 					type: "item"
-				}
-				{
-					id: "5DB076312FF9A2B7"
-					type: "checkmark"
 				}
 			]
 			title: "Selenides"
@@ -2485,6 +2158,522 @@
 			}]
 			x: 19.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["54DA03D41AF36EF2"]
+			hide_dependent_lines: true
+			id: "48D8836C9CEB8D84"
+			tasks: [{
+				id: "2116649459B83C1B"
+				item: "kubejs:crystalline_akreyrium"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["54DA03D41AF36EF2"]
+			hide_dependent_lines: true
+			id: "6FBC06172D610905"
+			tasks: [{
+				id: "431645D1203C9B3E"
+				item: "kubejs:amorphous_akreyrium"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"54DA03D41AF36EF2"
+				"735064FE12880E7E"
+				"6FBC06172D610905"
+			]
+			id: "03C0B34970DB1594"
+			tasks: [{
+				id: "08DF0E1A509FD4A2"
+				item: "gtceu:lepton_flux_akreyrium_bucket"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7BDF77CC8A675E38"]
+			id: "735064FE12880E7E"
+			tasks: [{
+				id: "1B81FA7A2C015F46"
+				item: "gtceu:lepton_coalescing_superalloy_ingot"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"03C0B34970DB1594"
+				"48D8836C9CEB8D84"
+			]
+			id: "4B7A774ADE857893"
+			shape: "gear"
+			tasks: [{
+				id: "04DCB3F7F8B80717"
+				item: "gtceu:utopian_akreyrium_bucket"
+				type: "item"
+			}]
+			x: 25.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["54DA03D41AF36EF2"]
+			id: "57E376D65BCE5F65"
+			tasks: [{
+				id: "1C9E1EE29E3CDFA1"
+				item: "gtceu:sparse_electron_akreyrium_bucket"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["54DA03D41AF36EF2"]
+			id: "723C837B04C78E6F"
+			tasks: [{
+				id: "47829C08DD925A60"
+				item: "gtceu:sparse_muon_akreyrium_bucket"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["54DA03D41AF36EF2"]
+			id: "6C56E39431575738"
+			tasks: [{
+				id: "5728BA53AC75FFFC"
+				item: "gtceu:sparse_tau_akreyrium_bucket"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"2C9FFC93C52399F3"
+				"3FF8A91DA67DDD97"
+			]
+			description: ["Electron with Electron yields the most"]
+			id: "3BE8A9FAFBB4DEDD"
+			tasks: [{
+				id: "275036A577A31726"
+				item: "kubejs:electron_injection_catalyst"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"2C9FFC93C52399F3"
+				"37229FB72AB997FC"
+			]
+			description: ["Muon with Muon yields the most"]
+			id: "60E2F170BC0CBCB6"
+			tasks: [{
+				id: "4838181402B28B0C"
+				item: "kubejs:muon_injection_catalyst"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"2C9FFC93C52399F3"
+				"40394150F71A72BA"
+			]
+			description: ["Tau with Tau yields the most"]
+			id: "5A127232CB963785"
+			tasks: [{
+				id: "3DB30CBF26B6B2FE"
+				item: "kubejs:tau_injection_catalyst"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"5A127232CB963785"
+				"6C56E39431575738"
+			]
+			id: "5A9A8A848F2B735B"
+			tasks: [{
+				id: "1C74E130980A182D"
+				item: "gtceu:dense_tau_akreyrium_bucket"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"60E2F170BC0CBCB6"
+				"723C837B04C78E6F"
+			]
+			id: "0F6102B3CDB7097D"
+			tasks: [{
+				id: "56797814EE2FBC0C"
+				item: "gtceu:dense_muon_akreyrium_bucket"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"3BE8A9FAFBB4DEDD"
+				"57E376D65BCE5F65"
+			]
+			id: "3D51DB909365D9B3"
+			tasks: [{
+				id: "27CD6F2A04C22EDA"
+				item: "gtceu:dense_electron_akreyrium_bucket"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"3D51DB909365D9B3"
+				"0F6102B3CDB7097D"
+				"5A9A8A848F2B735B"
+				"48D8836C9CEB8D84"
+			]
+			dependency_requirement: "one_completed"
+			id: "7C33054877B2DB16"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "4040A8D0BD9D9DEB"
+				item: "gtceu:utopian_akreyrium_bucket"
+				type: "item"
+			}]
+			title: "Better Akreyrium"
+			x: 25.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"4B7A774ADE857893"
+				"7C33054877B2DB16"
+			]
+			dependency_requirement: "one_completed"
+			id: "6E96ACA85E8C613C"
+			tasks: [{
+				id: "566BD047658DD7BE"
+				item: "gtceu:lepton_coalescing_superalloy_bucket"
+				type: "item"
+			}]
+			title: "Partial Superalloy Looping"
+			x: 25.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["7C33054877B2DB16"]
+			id: "5BDCF4E509133A99"
+			tasks: [{
+				id: "58CBFCBDA84C6961"
+				item: "kubejs:damaged_injection_catalyst"
+				type: "item"
+			}]
+			title: "Catalyst Recycling"
+			x: 27.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"433B94A266536D86"
+				"05EEBCD256194C78"
+			]
+			hide_dependent_lines: true
+			id: "2C9FFC93C52399F3"
+			tasks: [{
+				id: "78FBB387AD635D3E"
+				item: "kubejs:blank_injection_catalyst"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0F75B46E94D3A6C9"]
+			id: "3FF8A91DA67DDD97"
+			tasks: [{
+				id: "04D6FDB00EA60C0C"
+				item: "gtceu:alternating_phase_electron_infusion_flux_bucket"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"629A60BEE8C1B057"
+				"376BFB36EB1155EA"
+				"370603DBD82E9CD9"
+				"002CFE669BEEC0BA"
+			]
+			id: "37229FB72AB997FC"
+			tasks: [{
+				id: "2C0B8FBE56F39593"
+				item: "gtceu:brilliant_muon_infusion_flux_bucket"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"7C2193203F4B0D13"
+				"6A1AFC8B87871547"
+				"1BE446D3FFD092FE"
+			]
+			id: "40394150F71A72BA"
+			tasks: [{
+				id: "7848DCF73F6F622B"
+				item: "gtceu:ethereal_tau_infusion_flux_bucket"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"3164032D12F942B7"
+				"47AB7D05BFABA610"
+			]
+			id: "0F75B46E94D3A6C9"
+			tasks: [{
+				id: "42ACA40A67911621"
+				item: "gtceu:alpha_phase_electron_infusion_agent_dust"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"496B18A3A5CCCC71"
+				"1EB2FA62F39F3AF8"
+			]
+			id: "3164032D12F942B7"
+			tasks: [{
+				id: "12400A9037188120"
+				item: "gtceu:beta_phase_electron_infusion_agent_dust"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["4004C04A26CC0B77"]
+			id: "1EB2FA62F39F3AF8"
+			tasks: [{
+				id: "6226D368CC72C42B"
+				item: "gtceu:gamma_phase_electron_infusion_agent_dust"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["47AB7D05BFABA610"]
+			id: "496B18A3A5CCCC71"
+			tasks: [{
+				id: "3680315290D7CD3B"
+				item: "gtceu:weak_beta_phase_electron_infusion_agent_dust"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["47AB7D05BFABA610"]
+			id: "4004C04A26CC0B77"
+			tasks: [{
+				id: "4133D395D4B9DE91"
+				item: "gtceu:weak_gamma_phase_electron_infusion_agent_dust"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["6463532AA1079E5A"]
+			id: "47AB7D05BFABA610"
+			tasks: [{
+				id: "309973107DC3FF86"
+				item: "gtceu:tri_phase_electron_infusion_agent_dust"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0820BD4D58208353"]
+			id: "6463532AA1079E5A"
+			tasks: [{
+				id: "71B220185D977CF3"
+				item: "gtceu:di_phase_electron_infusion_agent_dust"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["3603BAB2512CE301"]
+			id: "0820BD4D58208353"
+			tasks: [{
+				id: "15E0A9753948B405"
+				item: "gtceu:mono_phase_electron_infusion_flux_bucket"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"5873CED1371E7A3E"
+				"6FBC06172D610905"
+			]
+			id: "3603BAB2512CE301"
+			tasks: [{
+				id: "1B121F0F32826FAD"
+				item: "gtceu:lepton_flavour_foundational_flux_bucket"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["7BDF77CC8A675E38"]
+			id: "5873CED1371E7A3E"
+			tasks: [{
+				id: "39546D32E8F56651"
+				item: "gtceu:lepton_coalescing_superalloy_ingot"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["011136EC6A8DCC28"]
+			id: "6A1AFC8B87871547"
+			tasks: [{
+				id: "2A07BBD3C2849804"
+				item: "gtceu:superlight_tau_infusion_flux_bucket"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"7C2193203F4B0D13"
+				"0253F78B38A6F163"
+			]
+			id: "1BE446D3FFD092FE"
+			tasks: [{
+				id: "64868BC2E4169A87"
+				item: "gtceu:superheavy_tau_infusion_flux_bucket"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["011136EC6A8DCC28"]
+			hide_dependent_lines: true
+			id: "7C2193203F4B0D13"
+			tasks: [{
+				id: "5F73575BB1C1A1AD"
+				item: "kubejs:aspect_of_weight"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"7C2193203F4B0D13"
+				"011136EC6A8DCC28"
+				"6A1AFC8B87871547"
+			]
+			id: "0253F78B38A6F163"
+			tasks: [{
+				id: "2BA45818024298F0"
+				item: "gtceu:heavy_tau_infusion_flux_bucket"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["3603BAB2512CE301"]
+			id: "011136EC6A8DCC28"
+			tasks: [{
+				id: "0FEB28E2757EFF7A"
+				item: "gtceu:light_tau_infusion_flux_bucket"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["376BFB36EB1155EA"]
+			id: "629A60BEE8C1B057"
+			tasks: [{
+				id: "7470C9B5E5912CB3"
+				item: "gtceu:radiant_muon_infusion_flux_bucket"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["002CFE669BEEC0BA"]
+			id: "376BFB36EB1155EA"
+			tasks: [{
+				id: "1BA980C64574309F"
+				item: "gtceu:shining_muon_infusion_flux_bucket"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["370603DBD82E9CD9"]
+			id: "002CFE669BEEC0BA"
+			tasks: [{
+				id: "7389C5BECCA4BDB2"
+				item: "gtceu:glowing_muon_infusion_flux_bucket"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["3603BAB2512CE301"]
+			id: "370603DBD82E9CD9"
+			tasks: [{
+				id: "5DD34079899EFCCB"
+				item: "gtceu:twinkling_muon_infusion_flux_bucket"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 16.0d
 		}
 	]
 	title: "Processing Lines (Chap 4,5,6)"
