@@ -1698,6 +1698,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x mystery')
         .color(0xDFB6E4);
 
+    event.create('weak_gamma_phase_electron_infusion_agent')
+        .dust()
+        .flags(no_decomp)
+        .iconSet(MAGNETIC)
+        .components('1x mystery')
+        .color(0x856783);
+
+    event.create('weak_beta_phase_electron_infusion_agent')
+        .dust()
+        .flags(no_decomp)
+        .iconSet(MAGNETIC)
+        .components('1x mystery')
+        .color(0x6b4f66);
+
     event.create('gamma_phase_electron_infusion_agent')
         .dust()
         .flags(no_decomp)

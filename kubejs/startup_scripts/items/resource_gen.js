@@ -34,9 +34,9 @@ StartupEvents.registry('item', event => {
         .displayName('§aMuon§r Injection Catalyst')
         .texture('kubejs:item/akreyrium/muon_injection_catalyst');
 
-    event.create('defiled_injection_catalyst')
-        .displayName('§4Defiled Injection Catalyst')
-        .texture('kubejs:item/akreyrium/defiled_injection_catalyst');
+    event.create('damaged_injection_catalyst')
+        .displayName('§4Damaged Injection Catalyst')
+        .texture('kubejs:item/akreyrium/damaged_injection_catalyst');
 
     event.create('netherite_reinforced_mesh')
         .displayName('Netherite Reinforced Mesh')

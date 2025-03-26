@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
 
     // Intermediate to catalyst
     event.recipes.gtceu.mixer('light_tau_infusion_flux')
-        .inputFluids('gtceu:stellarium 144', 'gtceu:lepton_flavour_foundational_flux 1000')
+        .inputFluids('gtceu:tungsten 512', 'gtceu:lepton_flavour_foundational_flux 1000')
         .outputFluids('gtceu:light_tau_infusion_flux 1000')
         .duration(360)
         .EUt(GTValues.VA[GTValues.ZPM]);
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.injection_mixer('heavy_tau_densification')
         // TODO: Better idea for "densifying/heavying" items which can be freely
         // consumed.
-        .itemInputs('1x kubejs:aspect_of_weight', '1x gtceu:tungsten_dust', '1x gtceu:osmiridium_dust')
+        .itemInputs('1x kubejs:aspect_of_weight', '1x gtceu:osmiridium_dust')
         .inputFluids('gtceu:heavy_tau_infusion_flux 1000')
         .outputFluids('gtceu:superheavy_tau_infusion_flux 1000')
         .duration(120)
@@ -160,46 +160,46 @@ ServerEvents.recipes(event => {
     
     // Intermediate to catalyst
     event.recipes.gtceu.mixer('twinkling_muon_infusion_flux')
-        .inputFluids('gtceu:weapon_grade_naquadah 144', 'gtceu:lepton_flavour_foundational_flux 1000')
+        .inputFluids('gtceu:glowstone 512', 'gtceu:lepton_flavour_foundational_flux 1000')
         .outputFluids('gtceu:twinkling_muon_infusion_flux 1000')
         .duration(360)
         .EUt(GTValues.VA[GTValues.ZPM]);
     
 
     // Normal chemical reactor
-    event.recipes.gtceu.chemical_reactor('glowstone_muon_lighting')
-        .inputFluids('gtceu:twinkling_muon_infusion_flux 1000', 'gtceu:glowstone 288')
+    event.recipes.gtceu.chemical_reactor('twink_muon_lighting')
+        .inputFluids('gtceu:twinkling_muon_infusion_flux 1000', 'minecraft:lava 1000')
         .outputFluids('gtceu:glowing_muon_infusion_flux 1000')
         .duration(360)
         .EUt(GTValues.VA[GTValues.LuV]);
         
-    event.recipes.gtceu.chemical_reactor('lava_muon_lighting')
-        .inputFluids('gtceu:glowing_muon_infusion_flux 1000', 'minecraft:lava 1000')
+    event.recipes.gtceu.chemical_reactor('glowing_muon_lighting')
+        .inputFluids('gtceu:glowing_muon_infusion_flux 1000', 'gtceu:blaze 288')
         .outputFluids('gtceu:shining_muon_infusion_flux 1000')
         .duration(460)
         .EUt(GTValues.VA[GTValues.ZPM]);
 
-    event.recipes.gtceu.chemical_reactor('blaze_muon_lighting')
-        .inputFluids('gtceu:shining_muon_infusion_flux 1000', 'gtceu:blaze 576')
+    event.recipes.gtceu.chemical_reactor('shining_muon_lighting')
+        .inputFluids('gtceu:shining_muon_infusion_flux 1000', 'gtceu:lumium 288')
         .outputFluids('gtceu:radiant_muon_infusion_flux 1000')
         .duration(160)
         .EUt(GTValues.VA[GTValues.UV]);
         
     // Large chemical reactor
-    event.recipes.gtceu.large_chemical_reactor('glowstone_muon_lighting')
-        .inputFluids('gtceu:twinkling_muon_infusion_flux 1000', 'gtceu:glowstone 288')
+    event.recipes.gtceu.large_chemical_reactor('twink_muon_lighting')
+        .inputFluids('gtceu:twinkling_muon_infusion_flux 1000', 'minecraft:lava 1000')
         .outputFluids('gtceu:glowing_muon_infusion_flux 1000')
         .duration(360)
         .EUt(GTValues.VA[GTValues.LuV]);
         
-    event.recipes.gtceu.large_chemical_reactor('lava_muon_lighting')
-        .inputFluids('gtceu:glowing_muon_infusion_flux 1000', 'minecraft:lava 1000')
+    event.recipes.gtceu.large_chemical_reactor('glowing_muon_lighting')
+        .inputFluids('gtceu:glowing_muon_infusion_flux 1000', 'gtceu:blaze 288')
         .outputFluids('gtceu:shining_muon_infusion_flux 1000')
         .duration(460)
         .EUt(GTValues.VA[GTValues.ZPM]);
 
-    event.recipes.gtceu.large_chemical_reactor('blaze_muon_lighting')
-        .inputFluids('gtceu:shining_muon_infusion_flux 1000', 'gtceu:blaze 576')
+    event.recipes.gtceu.large_chemical_reactor('shining_muon_lighting')
+        .inputFluids('gtceu:shining_muon_infusion_flux 1000', 'gtceu:lumium 288')
         .outputFluids('gtceu:radiant_muon_infusion_flux 1000')
         .duration(160)
         .EUt(GTValues.VA[GTValues.UV]);
@@ -224,7 +224,7 @@ ServerEvents.recipes(event => {
     
     // Intermediate to catalyst
     event.recipes.gtceu.mixer('mono_phase_electron_infusion_flux')
-        .inputFluids('gtceu:zalloy 144', 'gtceu:lepton_flavour_foundational_flux 1000')
+        .inputFluids('gtceu:electrum 512', 'gtceu:lepton_flavour_foundational_flux 1000')
         .outputFluids('gtceu:mono_phase_electron_infusion_flux 1000')
         .duration(360)
         .EUt(GTValues.VA[GTValues.ZPM]);
@@ -245,8 +245,20 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.electromagnetic_separator('tri_phase_separation')
         .itemInputs('1x gtceu:tri_phase_electron_infusion_agent_dust')
-        .itemOutputs('10x gtceu:gamma_phase_electron_infusion_agent_dust', '5x gtceu:beta_phase_electron_infusion_agent_dust', '1x gtceu:alpha_phase_electron_infusion_agent_dust')
+        .itemOutputs('10x gtceu:weak_gamma_phase_electron_infusion_agent_dust', '5x gtceu:weak_beta_phase_electron_infusion_agent_dust', '1x gtceu:alpha_phase_electron_infusion_agent_dust')
         .duration(360)
+        .EUt(GTValues.VA[GTValues.UV]);
+
+    event.recipes.gtceu.mixer('weak_gamma_phase')
+        .itemInputs('1x gtceu:weak_gamma_phase_electron_infusion_agent_dust', '1x gtceu:annealed_copper_dust')
+        .itemOutputs('1x gtceu:gamma_phase_electron_infusion_agent_dust')
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.UV]);
+
+    event.recipes.gtceu.mixer('weak_beta_phase')
+        .itemInputs('1x gtceu:weak_beta_phase_electron_infusion_agent_dust', '1x gtceu:sterling_silver_dust')
+        .itemOutputs('1x gtceu:beta_phase_electron_infusion_agent_dust')
+        .duration(160)
         .EUt(GTValues.VA[GTValues.UV]);
 
     event.recipes.gtceu.polarizer('gamma_phase_electron_infusion_agent')
@@ -280,7 +292,7 @@ ServerEvents.recipes(event => {
     const add_injection_recipe = (akreyType, amount, catalyst) => {
         event.recipes.gtceu.injection_mixer(`${akreyType}_${amount}_${catalyst}`)
             .itemInputs(`1x ${catalyst}`)
-            .itemOutputs('1x kubejs:defiled_injection_catalyst')
+            .itemOutputs('1x kubejs:damaged_injection_catalyst')
             .inputFluids(`gtceu:sparse_${akreyType}_akreyrium 1000`)
             .outputFluids(`gtceu:dense_${akreyType}_akreyrium ${amount}`)
             .duration(200)
@@ -299,13 +311,13 @@ ServerEvents.recipes(event => {
     add_injection_recipe('muon', 200, 'kubejs:electron_injection_catalyst')
     add_injection_recipe('electron', 1000, 'kubejs:electron_injection_catalyst')
 
-    // Defiled washer
-    event.recipes.gtceu.chemical_bath('defiled_injection_catalyst_washing')
-        .itemInputs('1x kubejs:defiled_injection_catalyst')
-        .inputFluids('gtceu:fluoroantimonic_acid 80')
+    // Damaged fixing
+    event.recipes.gtceu.assembler('damaged_injection_catalyst_washing')
+        .itemInputs('1x kubejs:damaged_injection_catalyst')
+        .inputFluids('gtceu:neutronium 80')
         .itemOutputs('1x kubejs:blank_injection_catalyst')
         .duration(360)
-        .EUt(GTValues.VA[GTValues.EV]);
+        .EUt(GTValues.VA[GTValues.UV]);
 
     // Stabilisation recipes
     event.recipes.gtceu.folding_akreyrium_stabiliser('lepton_flux_stabilisation')

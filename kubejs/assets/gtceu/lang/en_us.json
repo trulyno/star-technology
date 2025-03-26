@@ -370,6 +370,8 @@
     "material.gtceu.mono_phase_electron_infusion_flux": "Mono-Phase §dElectron§r Infusion Flux",
     "material.gtceu.di_phase_electron_infusion_agent": "Di-Phase §dElectron§r Infusion Agent",
     "material.gtceu.tri_phase_electron_infusion_agent": "Tri-Phase §dElectron§r Infusion Agent",
+    "material.gtceu.weak_gamma_phase_electron_infusion_agent": "Weak γ-Phase §dElectron§r Infusion Agent",
+    "material.gtceu.weak_beta_phase_electron_infusion_agent": "Weak β-Phase §dElectron§r Infusion Agent",
     "material.gtceu.gamma_phase_electron_infusion_agent": "γ-Phase §dElectron§r Infusion Agent",
     "material.gtceu.beta_phase_electron_infusion_agent": "β-Phase §dElectron§r Infusion Agent",
     "material.gtceu.alpha_phase_electron_infusion_agent": "α-Phase §dElectron§r Infusion Agent",
