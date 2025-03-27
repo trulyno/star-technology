@@ -425,6 +425,8 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 					C: bucket,
 				});
 			});
+
+			event.recipes.create.compacting(block, [`4x ${item}`, Fluid.of('gtceu:concrete',500)]);
 		});
 
 		event.shaped(Item.of('kubejs:reinforced_stone_bricks'), [
@@ -836,6 +838,57 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 
 		event.remove({ id: 'minecraft:charcoal' });
 		event.smelting(`kubejs:charcoal_pellet`, `#minecraft:logs_that_burn`);
+
+		event.shaped(Item.of('woodenbucket:wooden_bucket', '{Fluid:{Amount:1000,FluidName:"gtceu:concrete"}}'), [
+			'GCG',
+			'SSS',
+			' B '
+		], {
+			G: 'gtceu:gypsum_dust',
+			C: 'gtceu:calcite_dust',
+			S: 'gtceu:stone_dust',
+			B: {
+				type: "forge:partial_nbt",
+				item: "woodenbucket:wooden_bucket",
+				nbt: {
+					Fluid: {
+						FluidName: "minecraft:water",
+						Amount: 1000,
+					}
+				}
+			}
+		}).modifyResult((grid, result) => {
+			const bucket = grid.find('woodenbucket:wooden_bucket');
+
+			bucket.nbt.Fluid.FluidName = "gtceu:concrete";
+			bucket.nbt.Damage++;
+
+			return bucket;
+		}).replaceIngredient('woodenbucket:wooden_bucket', 'minecraft:air');
+
+		event.shaped('gtceu:concrete_bucket', [
+			'GCG',
+			'SSS',
+			' B '
+		], {
+			G: 'gtceu:gypsum_dust',
+			C: 'gtceu:calcite_dust',
+			S: 'gtceu:stone_dust',
+			B: 'minecraft:water_bucket'
+		}).replaceIngredient('minecraft:water_bucket', 'minecraft:air');
+
+		[{dust:'stone'},{dust:'gypsum'},{dust:'calcite'}].forEach(type=>{
+			const pebble = (type.dust == 'gypsum') ? 'dripstone' : type.dust;
+			event.shapeless(`gtceu:tiny_${type.dust}_dust`, ['#forge:tools/mortars', `exnihilosequentia:${pebble}_pebble`]);
+			event.recipes.gtceu.macerator(`small_${type.dust}_dust`)
+				.itemInputs(`exnihilosequentia:${pebble}_pebble`)
+				.itemOutputs(`gtceu:small_${type.dust}_dust`)
+				.duration(23)
+				.EUt(2);
+		});
+		
+
+		event.recipes.create.mixing(Fluid.of('gtceu:concrete', 1000), [Fluid.of('minecraft:water', 1000), '3x gtceu:stone_dust', 'gtceu:calcite_dust', '2x gtceu:gypsum_dust']);
 
 		// Create Recipes
 		event.recipes.shaped(Item.of('create:item_vault'), [
@@ -1566,54 +1619,7 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			B: 'minecraft:bricks',
 			T: 'thermal:redstone_servo'
 		});
-
-		event.shaped(Item.of('woodenbucket:wooden_bucket', '{Fluid:{Amount:1000,FluidName:"gtceu:concrete"}}'), [
-			'GCG',
-			'SSS',
-			' B '
-		], {
-			G: 'gtceu:gypsum_dust',
-			C: 'gtceu:calcite_dust',
-			S: 'gtceu:stone_dust',
-			B: {
-				type: "forge:partial_nbt",
-				item: "woodenbucket:wooden_bucket",
-				nbt: {
-					Fluid: {
-						FluidName: "minecraft:water",
-						Amount: 1000,
-					}
-				}
-			}
-		}).modifyResult((grid, result) => {
-			const bucket = grid.find('woodenbucket:wooden_bucket');
-
-			bucket.nbt.Fluid.FluidName = "gtceu:concrete";
-			bucket.nbt.Damage++;
-
-			return bucket;
-		}).replaceIngredient('woodenbucket:wooden_bucket', 'minecraft:air');
-
-		event.shaped('gtceu:concrete_bucket', [
-			'GCG',
-			'SSS',
-			' B '
-		], {
-			G: 'gtceu:gypsum_dust',
-			C: 'gtceu:calcite_dust',
-			S: 'gtceu:stone_dust',
-			B: 'minecraft:water_bucket'
-		}).replaceIngredient('minecraft:water_bucket', 'minecraft:air');
-
-		event.shapeless('gtceu:tiny_stone_dust', ['#forge:tools/mortars', 'exnihilosequentia:stone_pebble']);
-		event.recipes.gtceu.macerator('gtceu:small_stone_dust')
-			.itemInputs('exnihilosequentia:stone_pebble')
-			.itemOutputs('gtceu:small_stone_dust')
-			.duration(23)
-			.EUt(2);
-
-		event.recipes.create.mixing(Fluid.of('gtceu:concrete', 1000), [Fluid.of('minecraft:water', 1000), '3x gtceu:stone_dust', 'gtceu:calcite_dust', '2x gtceu:gypsum_dust']);
-
+		
 		event.recipes.create.mechanical_crafting('exnihilosequentia:flint_mesh', [
 			'FSFSFSF',
 			'SRSRSRS',
