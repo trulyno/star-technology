@@ -15,7 +15,7 @@
 	quest_links: [{
 		id: "5C3A70141044636D"
 		linked_quest: "179A15014A5716B5"
-		x: 14.5d
+		x: 13.0d
 		y: 9.0d
 	}]
 	quests: [
@@ -553,7 +553,7 @@
 				type: "item"
 			}]
 			title: "Liquid PEEK Plastic"
-			x: 9.75d
+			x: 9.25d
 			y: 7.5d
 		}
 		{
@@ -814,8 +814,8 @@
 				}
 				type: "item"
 			}]
-			x: 31.0d
-			y: 8.5d
+			x: 29.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["39305F8DD4712D2B"]
@@ -1310,7 +1310,7 @@
 				}
 			]
 			title: "Lepton-Sparse Akreyrium"
-			x: 21.0d
+			x: 19.5d
 			y: 9.0d
 		}
 		{
@@ -1331,8 +1331,8 @@
 				}
 				type: "item"
 			}]
-			x: 29.5d
-			y: 11.0d
+			x: 27.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1349,8 +1349,8 @@
 				}
 				type: "item"
 			}]
-			x: 29.0d
-			y: 9.5d
+			x: 27.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1367,8 +1367,8 @@
 				}
 				type: "item"
 			}]
-			x: 29.0d
-			y: 7.5d
+			x: 27.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["54EC42CB74C59F5F"]
@@ -1382,8 +1382,8 @@
 				}
 				type: "item"
 			}]
-			x: 29.5d
-			y: 6.0d
+			x: 27.5d
+			y: 7.0d
 		}
 		{
 			id: "54EC42CB74C59F5F"
@@ -1396,8 +1396,8 @@
 				}
 				type: "item"
 			}]
-			x: 28.0d
-			y: 6.0d
+			x: 26.0d
+			y: 7.0d
 		}
 		{
 			id: "01D169FDC848B8A1"
@@ -1410,8 +1410,8 @@
 				}
 				type: "item"
 			}]
-			x: 27.5d
-			y: 7.0d
+			x: 25.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1AAB9C20E833029A"]
@@ -1438,8 +1438,8 @@
 				}
 			]
 			title: "Nitric Acid"
-			x: 27.5d
-			y: 8.0d
+			x: 25.5d
+			y: 9.0d
 		}
 		{
 			id: "4D4E3428BFB10838"
@@ -1452,8 +1452,8 @@
 				}
 				type: "item"
 			}]
-			x: 27.5d
-			y: 9.0d
+			x: 25.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["0AB3A8C14C3A0512"]
@@ -1463,8 +1463,8 @@
 				item: "gtceu:activated_carbon_dust"
 				type: "item"
 			}]
-			x: 27.5d
-			y: 10.0d
+			x: 25.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["7658E16BA79A7632"]
@@ -1661,7 +1661,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
+			x: 7.0d
 			y: 16.0d
 		}
 		{
@@ -1676,7 +1676,7 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
+			x: 5.5d
 			y: 16.0d
 		}
 		{
@@ -1691,7 +1691,7 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
+			x: 4.0d
 			y: 16.0d
 		}
 		{
@@ -1710,7 +1710,7 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
+			x: 2.5d
 			y: 16.0d
 		}
 		{
@@ -1726,7 +1726,7 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
+			x: 1.0d
 			y: 16.0d
 		}
 		{
@@ -1757,7 +1757,7 @@
 				}
 			]
 			title: "Neon"
-			x: 5.5d
+			x: 2.0d
 			y: 15.0d
 		}
 		{
@@ -1772,7 +1772,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
+			x: 6.5d
 			y: 15.0d
 		}
 		{
@@ -1815,7 +1815,7 @@
 				}
 				type: "item"
 			}]
-			x: 20.0d
+			x: 18.5d
 			y: 8.0d
 		}
 		{
@@ -2168,7 +2168,7 @@
 				item: "kubejs:crystalline_akreyrium"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 19.5d
 			y: 7.0d
 		}
 		{
@@ -2180,7 +2180,7 @@
 				item: "kubejs:amorphous_akreyrium"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 20.5d
 			y: 10.0d
 		}
 		{
@@ -2195,7 +2195,7 @@
 				item: "gtceu:lepton_flux_akreyrium_bucket"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 21.5d
 			y: 9.0d
 		}
 		{
@@ -2206,7 +2206,7 @@
 				item: "gtceu:lepton_coalescing_superalloy_ingot"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 20.5d
 			y: 8.0d
 		}
 		{
@@ -2221,7 +2221,7 @@
 				item: "gtceu:utopian_akreyrium_bucket"
 				type: "item"
 			}]
-			x: 25.0d
+			x: 23.5d
 			y: 9.0d
 		}
 		{
@@ -2232,7 +2232,7 @@
 				item: "gtceu:sparse_electron_akreyrium_bucket"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 19.5d
 			y: 11.0d
 		}
 		{
@@ -2243,7 +2243,7 @@
 				item: "gtceu:sparse_muon_akreyrium_bucket"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 19.5d
 			y: 15.0d
 		}
 		{
@@ -2254,7 +2254,7 @@
 				item: "gtceu:sparse_tau_akreyrium_bucket"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 19.5d
 			y: 13.0d
 		}
 		{
@@ -2269,7 +2269,7 @@
 				item: "kubejs:electron_injection_catalyst"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 20.5d
 			y: 12.0d
 		}
 		{
@@ -2284,7 +2284,7 @@
 				item: "kubejs:muon_injection_catalyst"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 20.5d
 			y: 16.0d
 		}
 		{
@@ -2299,7 +2299,7 @@
 				item: "kubejs:tau_injection_catalyst"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 20.5d
 			y: 14.0d
 		}
 		{
@@ -2313,7 +2313,7 @@
 				item: "gtceu:dense_tau_akreyrium_bucket"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 21.5d
 			y: 13.0d
 		}
 		{
@@ -2327,7 +2327,7 @@
 				item: "gtceu:dense_muon_akreyrium_bucket"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 21.5d
 			y: 15.0d
 		}
 		{
@@ -2341,7 +2341,7 @@
 				item: "gtceu:dense_electron_akreyrium_bucket"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 21.5d
 			y: 11.0d
 		}
 		{
@@ -2361,7 +2361,7 @@
 				type: "item"
 			}]
 			title: "Better Akreyrium"
-			x: 25.0d
+			x: 23.5d
 			y: 13.0d
 		}
 		{
@@ -2377,7 +2377,7 @@
 				type: "item"
 			}]
 			title: "Partial Superalloy Looping"
-			x: 25.0d
+			x: 23.5d
 			y: 11.0d
 		}
 		{
@@ -2389,7 +2389,7 @@
 				type: "item"
 			}]
 			title: "Catalyst Recycling"
-			x: 27.0d
+			x: 25.5d
 			y: 13.0d
 		}
 		{
@@ -2404,7 +2404,7 @@
 				item: "kubejs:blank_injection_catalyst"
 				type: "item"
 			}]
-			x: 19.5d
+			x: 18.0d
 			y: 10.5d
 		}
 		{
@@ -2415,7 +2415,7 @@
 				item: "gtceu:alternating_phase_electron_infusion_flux_bucket"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 18.5d
 			y: 12.0d
 		}
 		{
@@ -2431,7 +2431,7 @@
 				item: "gtceu:brilliant_muon_infusion_flux_bucket"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 18.5d
 			y: 16.0d
 		}
 		{
@@ -2446,7 +2446,7 @@
 				item: "gtceu:ethereal_tau_infusion_flux_bucket"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 18.5d
 			y: 14.0d
 		}
 		{
@@ -2460,7 +2460,7 @@
 				item: "gtceu:alpha_phase_electron_infusion_agent_dust"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 16.5d
 			y: 12.0d
 		}
 		{
@@ -2474,7 +2474,7 @@
 				item: "gtceu:beta_phase_electron_infusion_agent_dust"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 16.5d
 			y: 10.0d
 		}
 		{
@@ -2485,7 +2485,7 @@
 				item: "gtceu:gamma_phase_electron_infusion_agent_dust"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 14.5d
 			y: 10.0d
 		}
 		{
@@ -2496,7 +2496,7 @@
 				item: "gtceu:weak_beta_phase_electron_infusion_agent_dust"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 15.5d
 			y: 11.0d
 		}
 		{
@@ -2507,7 +2507,7 @@
 				item: "gtceu:weak_gamma_phase_electron_infusion_agent_dust"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 13.5d
 			y: 11.0d
 		}
 		{
@@ -2518,7 +2518,7 @@
 				item: "gtceu:tri_phase_electron_infusion_agent_dust"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 14.5d
 			y: 12.0d
 		}
 		{
@@ -2529,7 +2529,7 @@
 				item: "gtceu:di_phase_electron_infusion_agent_dust"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 12.5d
 			y: 12.0d
 		}
 		{
@@ -2540,7 +2540,7 @@
 				item: "gtceu:mono_phase_electron_infusion_flux_bucket"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 12.5d
 			y: 14.0d
 		}
 		{
@@ -2554,7 +2554,7 @@
 				item: "gtceu:lepton_flavour_foundational_flux_bucket"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 12.5d
 			y: 16.0d
 		}
 		{
@@ -2565,7 +2565,7 @@
 				item: "gtceu:lepton_coalescing_superalloy_ingot"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 11.5d
 			y: 15.0d
 		}
 		{
@@ -2576,7 +2576,7 @@
 				item: "gtceu:superlight_tau_infusion_flux_bucket"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 16.5d
 			y: 14.0d
 		}
 		{
@@ -2590,7 +2590,7 @@
 				item: "gtceu:superheavy_tau_infusion_flux_bucket"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 17.5d
 			y: 15.0d
 		}
 		{
@@ -2602,7 +2602,7 @@
 				item: "kubejs:aspect_of_weight"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 15.5d
 			y: 13.0d
 		}
 		{
@@ -2617,7 +2617,7 @@
 				item: "gtceu:heavy_tau_infusion_flux_bucket"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 15.5d
 			y: 15.0d
 		}
 		{
@@ -2628,7 +2628,7 @@
 				item: "gtceu:light_tau_infusion_flux_bucket"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 14.5d
 			y: 14.0d
 		}
 		{
@@ -2639,7 +2639,7 @@
 				item: "gtceu:radiant_muon_infusion_flux_bucket"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 19.5d
 			y: 17.0d
 		}
 		{
@@ -2650,7 +2650,7 @@
 				item: "gtceu:shining_muon_infusion_flux_bucket"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 18.5d
 			y: 18.0d
 		}
 		{
@@ -2661,7 +2661,7 @@
 				item: "gtceu:glowing_muon_infusion_flux_bucket"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 17.5d
 			y: 17.0d
 		}
 		{
@@ -2672,7 +2672,7 @@
 				item: "gtceu:twinkling_muon_infusion_flux_bucket"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 16.5d
 			y: 16.0d
 		}
 	]

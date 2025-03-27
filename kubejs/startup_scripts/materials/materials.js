@@ -405,7 +405,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('twinite')
         .ingot(1)
         .fluid()
-        .components('3x enderium', '2x amethyst', '1x lumium')
+        .components('3x manganese_phosphide', '2x amethyst', '1x lumium')
         .color(0xf66999)
         .iconSet(SHINY)
         .blastTemp(5300, 'mid', VA('luv'), 2100)
@@ -417,49 +417,49 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('dragonsteel')
         .ingot(1)
         .fluid()
-        .components('4x tungsten', '8x shellite', '2x twinite')
+        .components('4x tungsten', '8x magnesium_diboride', '2x cadmium')
         .color(0x3333cc)
         .iconSet(SHINY)
         .blastTemp(7100, 'high', VA('zpm'), 2400)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('zpm'), 64, 0, true)
+        .cableProperties(V('zpm'), 96, 0, true)
         .rotorStats(1100, 380, 3, 32000);
 
     event.create('prismalium')
         .ingot(1)
         .fluid()
-        .components('8x naquadah', '4x shellite', '7x tungsten_carbide')
+        .components('8x naquadah', '4x mercury_barium_calcium_cuprate', '7x tungsten_carbide')
         .color(0x66ffff)
         .iconSet(SHINY)
         .blastTemp(9000, 'high', VA('zpm'), 2700)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('uv'), 32, 0, true)
+        .cableProperties(V('uv'), 48, 0, true)
         .rotorStats(1600, 470, 3, 48000);
 
     event.create('melodium')
         .ingot(1)
         .fluid()
-        .components('2x mercury_barium_calcium_cuprate', '14x electrum', '3x amethyst', '4x darmstadtium', '7x europium')
+        .components('2x uranium_triplatinum', '14x electrum', '3x amethyst', '4x darmstadtium', '7x europium')
         .color(0xd9b3ff)
         .iconSet(SHINY)
         .blastTemp(10000, 'higher', VA('uv'), 3000)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('uv'), 256, 0, true)
+        .cableProperties(V('uv'), 128, 0, true)
         .rotorStats(2000, 550, 3, 64000);
 
     event.create('stellarium')
         .ingot(1)
         .fluid()
-        .components('12x neutronium', '4x melodium', '1x dragonsteel')
+        .components('12x neutronium', '4x melodium', '1x samarium_iron_arsenic_oxide')
         .color(0xccffff)
         .iconSet(SHINY)
         .blastTemp(10799, 'highest', VA('uhv'), 4000)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame, fine_wire)
-        .cableProperties(V('uhv'), 512, 0, true)
+        .cableProperties(V('uhv'), 192, 0, true)
         .rotorStats(3200, 660, 3, 96000);
 
     event.create('ancient_runicalium')
@@ -471,7 +471,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(11749, 'highest', VA('uev'), 5000)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame, fine_wire)
-        .cableProperties(V('uev'), 1024, 0, true)
+        .cableProperties(V('uev'), 256, 0, true)
         .rotorStats(6400, 720, 3, 128000);
 
     // Nuclear Reactor Materials
@@ -1473,8 +1473,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(fine_wire, no_decomp, foil)
         .blastTemp(10199, 'highest', VA('uv'), 850)
 
-   
-
     // PEEK plastic Line
 
     event.create('disodium_salt_of_hydroquinone')
@@ -1607,7 +1605,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x hydrogen', '1x hexafluorobromine')
         .color(0xA15E5E)
         .flags(no_decomp);
-
 
 //ANSD Line
 
