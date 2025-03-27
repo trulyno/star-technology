@@ -18,13 +18,14 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 				tool.damageValue++
 			} else {
 				tool.count--
-				level.playSound(null, block.pos, "minecraft:entity.item.break", "blocks");
+				level.playSound(null, block.pos, "minecraft:entity.item.break", "players");
 			}
 		}
 
 		if (player.getMainHandItem() == null && player.getOffHandItem() == null && player.isCrouching()) {
 			pop_up('kubejs:flint_shard', 0.25);
 			pop_up('minecraft:cookie', 0.002);
+			
 			player.addExhaustion(.03)
 			dig();
 		};
@@ -188,7 +189,7 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 		});
 
 		event.remove({ id: 'minecraft:coarse_dirt' })
-		event.shaped(Item.of('minecraft:coarse_dirt',2), [
+		event.shaped(Item.of('minecraft:coarse_dirt', 2), [
 			'DF',
 			'FD'
 		], {
@@ -273,14 +274,14 @@ if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode
 			.itemOutputs('1x minecraft:dirt')
 			.duration(160);
 
-		const latexType = [{fuel: 'minecraft:bone_meal', circ: '1'},{fuel: 'thermal:compost', circ: '2'},{fuel: 'gtceu:fertilizer', circ: '3'}]
-		latexType.forEach(latex=>{
-		event.recipes.gtceu.latex_plantation(`latex_${latex.circ}`)
-			.chancedInput(`${latex.fuel}`, 2500, 0)
-			.notConsumable('gtceu:iron_screw')
-			.circuit(latex.circ)
-			.outputFluids(`thermal:latex ${100+50*latex.circ}`)
-			.duration(160);
+		const latexType = [{ fuel: 'minecraft:bone_meal', circ: '1' }, { fuel: 'thermal:compost', circ: '2' }, { fuel: 'gtceu:fertilizer', circ: '3' }]
+		latexType.forEach(latex => {
+			event.recipes.gtceu.latex_plantation(`latex_${latex.circ}`)
+				.chancedInput(`${latex.fuel}`, 2500, 0)
+				.notConsumable('gtceu:iron_screw')
+				.circuit(latex.circ)
+				.outputFluids(`thermal:latex ${100 + 50 * latex.circ}`)
+				.duration(160);
 		});
 		event.recipes.gtceu.latex_plantation(`latex`)
 			.notConsumable('gtceu:wood_screw')
