@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('vibration_laser_engraver')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('vibration_laser_engraver', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)    
         .recipeType('vibration_laser_engraver')
-        .tooltips('description pending')
+        .tooltips('§7A multiblock that uses precise lasers and vibrations to effortlessly cut and engrave gems, changing them in whatever way you need.')
         .tooltips('Has §6Perfect Overclock')
         .appearanceBlock(GCYMBlocks.CASING_VIBRATION_SAFE)
         .recipeModifier(GTRecipeModifiers.OC_PERFECT)

@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('super_pressure_heat_chamber')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('super_pressure_heat_chamber', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('super_pressure_heat_chamber')
-        .tooltips('description pending')
+        .tooltips('§7A machine that can provide incredible heat and pressure, making it capable of fusing together incomplete products into some of the most resilient materials known across the galaxy.')
         .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(GCYMBlocks.CASING_STRESS_PROOF)

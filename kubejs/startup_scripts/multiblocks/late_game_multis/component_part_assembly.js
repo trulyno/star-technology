@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('component_part_assembly')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('component_part_assembly', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('component_part_assembly')
-        .tooltips('description pending')
+        .tooltips('§7An assembler that can micro craft some incredibly complex components that are too detailed for a normal assembler.')
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('SSSSS', 'SSSSS', ' SSS ')
             .aisle('HHBHH', 'G#A#G', ' GGG ')

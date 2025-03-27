@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('large_quantum_compressor')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_quantum_compressor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_quantum_compressor')
-        .tooltips('description pending')
+        .tooltips('§7This multi can compress extremely large amounts of matter into a single point, triggering a gravitational collapse to create singularities.')
         .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(GCYMBlocks.CASING_STRESS_PROOF)

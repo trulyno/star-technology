@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('runic_circuitry_assembling_station')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('runic_circuitry_assembling_station', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('runic_circuitry_assembling_station')
-        .tooltips('description pending')
+        .tooltips('§7An apparatus crossing the boundaries between technology and magic, that can inscribe dense plates with pure singularities to write runes containing mystical powers.')
         .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .pattern(definition => FactoryBlockPattern.start()

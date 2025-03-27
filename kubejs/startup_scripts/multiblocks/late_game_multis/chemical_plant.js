@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('chemical_plant')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('chemical_plant', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('chemical_plant')
-        .tooltips('description pending')
+        .tooltips('§7This machine can compress chemical lines into one recipe and is able to perform more advanced chemical reactions.')
         .tooltips('Has §6Perfect Overclock')
         .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])

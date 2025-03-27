@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('large_rotor_machine')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_rotor_machine', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_rotor_machine')
-        .tooltips('description pending')
+        .tooltips('§7A machine that can fold together rods using large amounts of rotational force, condensing layers on top of layers to create some incredibly resilient materials.')
         .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)

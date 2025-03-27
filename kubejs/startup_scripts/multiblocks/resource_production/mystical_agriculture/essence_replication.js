@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('essence_replication')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('essence_replicator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('essence_replication')
-        .tooltips('description pending')
+        .tooltips('§7A machine that can duplicate essences indefinitely, although for the more advanced ones, it requires special fluids to function properly.')
         .tooltips('Has §6Perfect Overclock')
         .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])

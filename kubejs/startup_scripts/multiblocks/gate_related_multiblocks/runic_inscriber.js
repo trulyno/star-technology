@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('runic_inscribe_manipulate')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('runic_inscribe_manipulate', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('runic_inscribe_manipulate')
-        .tooltips('description pending')
+        .tooltips('§7A more advanced Runic Inscriber, that can layer runes on top of eachother to fuse their powers, or assemble them into a structured block form, so they can exert power over the material world.')
         .tooltips('Has §6Perfect Overclock')
         .recipeModifier(GTRecipeModifiers.OC_PERFECT)
         .pattern(definition => FactoryBlockPattern.start()

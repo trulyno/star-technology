@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('large_stone_barrel')
@@ -13,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_stone_barrel', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_stone_barrel')
-        .tooltips('description pending')
+        .tooltips('§7A larger stone barrel that can make all kinds of stones and lava.')
         .appearanceBlock(GTBlocks.TREATED_WOOD_PLANK)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('DDD', 'PPP', 'PPP', 'PPP')

@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('large_sieve')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_sieve', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_sieve')
-        .tooltips('description pending')
+        .tooltips('§7The evolved version of the Mechanical Sieve, fully applying the technologies at your disposal to create a machine that can sieve much faster and in larger quantities.')
         .tooltips('Can use §3Parallel§r hatches')
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])

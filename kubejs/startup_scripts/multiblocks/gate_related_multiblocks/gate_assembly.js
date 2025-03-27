@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('gate_assembly')
         .category('gate_assembly')
@@ -11,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('gate_assembly', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('gate_assembly')
-        .tooltips('description pending')
+        .tooltips('§7A forge powerful enough to fuse together the parts of a stargate into one.')
         .tooltips('Has §6Perfect Overclock')
         .recipeModifier(GTRecipeModifiers.OC_PERFECT)
         .pattern(definition => FactoryBlockPattern.start()	

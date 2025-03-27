@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('heat_chamber')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('heat_chamber', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('heat_chamber')
-        .tooltips('description pending')
+        .tooltips('§7This large multiblock can reach heats far beyond that of an EBF, and can use that heat to purify materials and catalyse reactions.')
         .tooltips('Has §6Perfect Overclock§r and §cSubtick Parallels')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT_SUBTICK])
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)

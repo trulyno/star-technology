@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('plant_ore_processing')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('ore_processing_plant', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('plant_ore_processing')
-        .tooltips('description pending')
+        .tooltips('§7A new tier of ore processing machine that far exceeds the throughput capacity of the previous tier.')
         .tooltips('Has §6Perfect Overclock§r and §cSubtick Parallels')
         .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK])

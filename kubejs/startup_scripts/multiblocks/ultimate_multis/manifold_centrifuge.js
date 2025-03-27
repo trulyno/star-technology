@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('manifold_centrifuge')
@@ -15,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('manifold_centrifuge', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('manifold_centrifuge')
-        .tooltips('description pending')
+        .tooltips('§7An advanced tier of centrifuge that is more powerful than the basic tier, allowing it to run better recipes.')
         .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .pattern(definition => FactoryBlockPattern.start()

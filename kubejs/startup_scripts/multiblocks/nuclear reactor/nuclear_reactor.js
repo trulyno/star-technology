@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('nuclear_fission')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('nuclear_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('nuclear_fission')
-        .tooltips('description pending')
+        .tooltips('§7A medium sized reactor that can use relatively simple nuclear reactions to make some extremely useful materials.')
         .tooltips('Can use §3Parallel§r hatches')
         .generator(true)
         .regressWhenWaiting(false)

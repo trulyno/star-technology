@@ -1,19 +1,9 @@
-
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-
-    event.create('rock_sifter')
-        .category('rock_sifter')
-        .setMaxIOSize(2, 9, 1, 0)
-        .setSound(GTSoundEntries.MACERATOR);
-
-});
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('rock_sifter', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('rock_filtrator')
-        .tooltips('description pending')
+        .tooltips('§7A more powerful version of the Rock Filtrator, that can sieve materials at an astonishing speed.')
         .tooltips('Can use §3Parallel§r hatches')
         .appearanceBlock(GCYMBlocks.CASING_WATERTIGHT)
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])

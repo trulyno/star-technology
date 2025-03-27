@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('essence_enchancing')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('essence_enchancer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('essence_enchancing')
-        .tooltips('description pending')
+        .tooltips('§7A convoluted machine, that can infuse mystical essences with large amounts of electricity to trigger a change in their composition, making them more useful.')
         .tooltips('Has §6Perfect Overclock')
         .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])

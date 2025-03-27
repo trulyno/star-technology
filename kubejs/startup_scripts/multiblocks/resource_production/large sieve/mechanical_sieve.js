@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('mechanical_sieve')
@@ -13,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('mechanical_sieve', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('mechanical_sieve')
-        .tooltips('description pending')
+        .tooltips('§7A somewhat primitive machine that can sieve automatically for you, relying only on some power to pump out massive amounts of resources without any effort.')
         .tooltips('Can only have §bone§r Energy Hatch')
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('F   F', 'F   F', 'F   F', 'FFFFF', 'WWWWW', 'WWWWW', 'WWWWW')
