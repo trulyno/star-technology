@@ -1,5 +1,4 @@
-
-if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+// packmode: hard
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 	event.create('rugged_alloyer')
@@ -28,21 +27,19 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 				size: [166, 50],
 				background: GuiTextures.BACKGROUND,
 				progress: {
-                    pos: [82, 16],
-                    size: [20, 18],
-                    texture: GuiTextures.PROGRESS_BAR_ARROW
-                },
-                inputs: [
-                    { type: 'item', index: 0, pos: [16, 16], texture: GuiTextures.SLOT },
-                    { type: 'item', index: 1, pos: [34, 16], texture: GuiTextures.SLOT },
-                    { type: 'item', index: 2, pos: [52, 16], texture: GuiTextures.SLOT },
-                ],
-                outputs: [
-                    { type: 'item', index: 0, pos: [112, 16], texture: GuiTextures.SLOT },
-                    { type: 'item', index: 1, pos: [130, 16], texture: GuiTextures.SLOT }
-                ],
+					pos: [82, 16],
+					size: [20, 18],
+					texture: GuiTextures.PROGRESS_BAR_ARROW
+				},
+				inputs: [
+					{ type: 'item', index: 0, pos: [16, 16], texture: GuiTextures.SLOT },
+					{ type: 'item', index: 1, pos: [34, 16], texture: GuiTextures.SLOT },
+					{ type: 'item', index: 2, pos: [52, 16], texture: GuiTextures.SLOT },
+				],
+				outputs: [
+					{ type: 'item', index: 0, pos: [112, 16], texture: GuiTextures.SLOT },
+					{ type: 'item', index: 1, pos: [130, 16], texture: GuiTextures.SLOT }
+				],
 			})
 		)
 });
-
-};//if end

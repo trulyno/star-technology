@@ -1,5 +1,4 @@
-
-if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+// packmode: hard
 
 // Runs on server load
 ServerEvents.loaded(event => {
@@ -15,5 +14,3 @@ ServerEvents.loaded(event => {
 	// Add load_check to server persistent data to prevent this from running again
 	event.server.persistentData.load_check = true
 });
-
-};//if end

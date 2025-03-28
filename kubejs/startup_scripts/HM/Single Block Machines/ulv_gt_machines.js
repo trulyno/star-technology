@@ -1,5 +1,4 @@
-
-if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+// packmode: hard
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('mixer', 'simple')
@@ -18,5 +17,3 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .recipeType('assembler')
           )
 });
-
-};//if end
