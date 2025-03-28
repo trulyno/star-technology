@@ -1,22 +1,12 @@
-
-if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
-
-GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('mixer', 'simple')
-        .tiers(GTValues.ULV)
-        .definition((tier, builder) =>
-            builder
-                .recipeType('mixer')
-          )
-});
+// packmode: hard
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('assembler', 'simple')
-        .tiers(GTValues.ULV)
-        .definition((tier, builder) =>
-            builder
-                .recipeType('assembler')
-          )
-});
+	const ulv_machine = (machine) => {
+		event.create(machine, 'simple')
+			.tiers(GTValues.ULV)
+			.definition((tier, builder) => builder.recipeType(machine));
+	}
 
-};//if end
+	ulv_machine('mixer');
+	ulv_machine('assembler');
+});

@@ -1,5 +1,4 @@
-
-if (CommonProperties.get().packMode == 'hard' || CommonProperties.get().packMode == 'Hard') {
+// packmode: hard
 
 ServerEvents.tags('block', event => {
 	['oak', 'birch', 'acacia', 'cherry', 'dark_oak', 'jungle', 'mangrove', 'spruce'].forEach(log => {
@@ -17,5 +16,3 @@ ServerEvents.tags('item', event => {
 	event.add('createlowheated:burner_starters', 'gtceu:matchbox');
 	event.add('minecraft:poor_coals', 'kubejs:charcoal_pellet')
 });
-
-};//if end
