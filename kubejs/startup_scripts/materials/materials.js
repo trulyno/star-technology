@@ -1609,189 +1609,114 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(no_decomp);
 
 //ANSD Line
+const InitialLoadAnsdFluid = (name,components,color) => {
+    event.create(`${name}`)
+        .fluid()
+        .color(color)
+        .components(components)
+        .flags(no_decomp);
+}
+const InitialLoadAnsdDust = (name,components,color) => {
+    event.create(`${name}`)
+        .dust()
+        .color(color)
+        .components(components)
+        .flags(no_decomp);
+}
+const AnsdFluid = (name,components,color) => {
+    event.create(`${name}`)
+        .fluid()
+        .color(color)
+        .components(components)
+        .flags(no_decomp);
+}
+const AnsdDust = (name,components,color) => {
+    event.create(`${name}`)
+        .dust()
+        .color(color)
+        .components(components)
+        .flags(no_decomp);
+}
+const ComplexAnsdFluid = (name,components,color) => {
+    event.create(`${name}`)
+        .fluid()
+        .color(color)
+        .components(components)
+        .flags(no_decomp);
+}
+const ComplexAnsdDust = (name,components,color) => {
+    event.create(`${name}`)
+        .dust()
+        .color(color)
+        .components(components)
+        .flags(no_decomp);
+}
 
-event.create('sulfate')
-    .dust()
-    .color(0xD5BA23)
-    .components('1x sulfur', '4x oxygen');
-
-event.create('silicate')
-    .dust()
-    .color(0xC0BA97)
-    .components('1x silicon', '4x oxygen');
-
-event.create('pyrophosphate')
-    .dust()
-    .color(0xC08B63)
-    .components('2x phosphorus', '7x oxygen');
-
-event.create('sulfur_hexafluoride')
-    .dust()
-    .color(0xC0BA63)
-    .components('1x sulfur', '6x fluorine');
-
-event.create('plutonium_octofluoride')
-    .dust()
-    .color(0x000000)
-    .components('2x plutonium', '8x fluorine')
-    .flags(no_decomp);
-
-event.create('uranium_tetrafluoride')
-    .dust()
-    .color(0x6CAB3F)
-    .components('1x uranium', '4x fluorine')
-    .flags(no_decomp);
-
-event.create('uranium_dioxide')
-    .dust()
-    .color(0x528A3C)
-    .components('1x uranium', '2x oxygen')
-    .flags(no_decomp);
-
-event.create('hafnium_thorium_iron_magnesium_disilicate_monosulfate')
-    .dust()
-    .color(0x98B4B0)
-    .components('1x hafnium', '1x thorium', '1x iron', '2x magnesium', '2x silicate', '1x sulfate')
-    .flags(no_decomp);
-
-event.create('seaborgium_cerium_tricarbon_tetrakis_orthosilicate')
-    .dust()
-    .color(0x268075)
-    .components('1x seaborgium', '1x cerium', '3x carbon', '4x silicate')
-    .iconSet(RADIOACTIVE)
-    .flags(no_decomp);
-
-event.create('iron_2_barium_diastatide_trisulfate')
-    .dust()
-    .color(0x9EB286)
-    .components('2x iron', '1x barium', '2x astatine', '3x sulfate')
-    .iconSet(RADIOACTIVE)
-    .flags(no_decomp);
-
-event.create('dipolonium_diplatinum_tris_pyrophosphate')
-    .dust()
-    .color(0xA0664D)
-    .components('2x polonium', '2x platinum', '3x pyrophosphate')
-    .iconSet(RADIOACTIVE)
-    .flags(no_decomp);
-
-event.create('flerovium_hexaoxide_octafluorosulfatoplutonate')
-    .dust()
-    .color(0x582914)
-    .components('1x flerovium', '6x oxygen', '2x sulfur_hexafluoride', '2x plutonium_octofluoride')
-    .iconSet(RADIOACTIVE)
-    .flags(no_decomp);
-
-event.create('caesium_oganesson_hexanitrate_tetrafluorouranate')
-    .liquid()
-    .color(0x427A21)
-    .components('2x caesium', '1x oganesson', '6x nitrate', '2x uranium_tetrafluoride')
-    .iconSet(RADIOACTIVE)
-    .flags(no_decomp);
-
-event.create('hafnium_thorium_iron_magnesium_disilicate_monosulfate_bonded_iron_2_barium_diastatide_trisulfate')
-    .dust()
-    .color(0x6A8B9A)
-    .components('1x hafnium_thorium_iron_magnesium_disilicate_monosulfate', '1x iron_2_barium_diastatide_trisulfate')
-    .iconSet(RADIOACTIVE)
-    .flags(no_decomp);
-
-event.create('seaborgium_cerium_tricarbon_tetrakis_orthosilicate_linked_dipolonium_diplatinum_tris_pyrophosphate')
-    .dust()
-    .color(0x526A48)
-    .components('1x seaborgium_cerium_tricarbon_tetrakis_orthosilicate', '1x dipolonium_diplatinum_tris_pyrophosphate')
-    .iconSet(RADIOACTIVE)
-    .flags(no_decomp);
-
-event.create('flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth')
-    .dust()
-    .color(0x6A4852)
-    .components('1x flerovium_hexaoxide_octafluorosulfatoplutonate', '6x mystery')
-    .iconSet(RADIOACTIVE)
-    .flags(no_decomp);
+InitialLoadAnsdDust('sulfate', ['1x sulfur', '4x oxygen'], 0xD5BA23);  
+InitialLoadAnsdDust('silicate', ['1x silicon', '4x oxygen'], 0xC0BA97);  
+InitialLoadAnsdDust('pyrophosphate', ['2x phosphorus', '7x oxygen'], 0xC08B63);  
+InitialLoadAnsdDust('sulfur_hexafluoride', ['1x sulfur', '6x fluorine'], 0xC0BA63);  
+InitialLoadAnsdDust('plutonium_octofluoride', ['2x plutonium', '8x fluorine'], 0x000000);      
+InitialLoadAnsdFluid('uranium_tetrafluoride', ['1x uranium', '4x fluorine'], 0x6CAB3F);      
+InitialLoadAnsdFluid('hydroxide',['1x oxygen','1x hydrogen'],0xC0D4DD);
+AnsdDust('uranium_dioxide', ['1x uranium', '2x oxygen'], 0x528A3C);      
+AnsdFluid('caesium_oganesson_hexanitrate', ['2x caesium', '1x oganesson', '6x nitrate'], 0x769192);      
+AnsdFluid('caesium_oganesson_trioxide', ['2x caesium', '1x oganesson', '3x oxygen'], 0x4E7577);      
+AnsdFluid('caesium_nitrate', ['1x caesium', '1x nitrogen', '3x oxygen'], 0x7C8A8B);      
+AnsdFluid('caesium_nitrite', ['1x caesium', '1x nitrogen', '3x oxygen'], 0x7BA7A9);  
+AnsdFluid('oganesson_tetranitrate', ['1x oganesson', '4x nitrate'], 0x948FAD);      
+AnsdDust('magnesium_hydroxide', ['1x magnesium', '2x hydroxide'], 0x766B73);      
+AnsdDust('hafnium_thorium_iron_2_hydroxide_potassium_disilicate', ['1x hafnium', '1x thorium', '1x iron', '2x hydroxide', '4x potassium', '2x silicate'], 0x618782);      
+AnsdDust('iron_2_hydroxide', ['1x iron', '2x hydroxide'], 0x929A98);      
+AnsdDust('hafnium_thorium_octachloride', ['1x hafnium', '1x thorium', '8x chlorine'], 0x637770);      
+AnsdDust('thorium_dioxide', ['1x thorium', '2x oxygen'], 0x384F47);      
+AnsdDust('hafnium_dioxide', ['1x hafnium', '2x oxygen'], 0x88A1A0);      
+AnsdDust('sodium_hafnate', ['2x sodium', '1x hafnium', '3x oxygen'], 0x8894A1);      
+AnsdDust('barium_diastatide', ['1x barium', '2x astatine'], 0x665058);      
+AnsdDust('barium_hydroxide', ['1x barium', '2x hydroxide'], 0xB5AC9B);      
+AnsdDust('barium_carbonate', ['1x barium', '1x carbon', '3x oxygen'], 0x9B8F77);  
+AnsdDust('sodium_astatide', ['1x sodium', '1x astatine'], 0x5F5076);      
+AnsdFluid('silicic_acid', ['4x hydrogen', '1x silicate'], 0xB4BBBE);    
+AnsdDust('seaborgium_cerium_tricarbon_octasulfate', ['1x seaborgium', '1x cerium', '3x carbon', '8x sulfate'], 0x75A99E);
+AnsdDust('cerium_4_sulfate', ['1x cerium', '2x sulfate'], 0x828685);
+AnsdDust('chromium_sulfate', ['2x chromium', '3x sulfate'], 0xEEE9DB);
+AnsdDust('cerium_dioxide', ['1x cerium', '2x oxygen'], 0xB9CFDB);
+AnsdDust('seaborgium_trisulfate', ['1x seaborgium', '3x sulfate'], 0x8AA89B);
+AnsdDust('seaborgium_trioxide', ['1x seaborgium', '3x oxygen'], 0x4B827B);
+AnsdDust('sodium_seaborgate', ['2x sodium', '1x seaborgium', '4x oxygen'], 0x298B80);
+AnsdDust('seaborgium_dioxide', ['1x seaborgium', '2x oxygen'], 0x12A190);
+AnsdDust('hafnium_hexachloride', ['1x hafnium', '6x chlorine'], 0xA0A8A6);      
+AnsdDust('hafnium_thorium_iron_magnesium_disilicate_monosulfate', ['1x hafnium', '1x thorium', '1x iron', '2x magnesium', '2x silicate', '1x sulfate'], 0x98B4B0);      
+AnsdDust('seaborgium_cerium_tricarbon_tetrakis_orthosilicate', ['1x seaborgium', '1x cerium', '3x carbon', '4x silicate'], 0x268075);      
+AnsdDust('iron_2_barium_diastatide_trisulfate', ['2x iron', '1x barium', '2x astatine', '3x sulfate'], 0x9EB286);      
+AnsdDust('dipolonium_diplatinum_tris_pyrophosphate', ['2x polonium', '2x platinum', '3x pyrophosphate'], 0xA0664D);      
+ComplexAnsdDust('flerovium_hexaoxide_octafluorosulfatoplutonate', ['1x flerovium', '6x oxygen', '2x sulfur_hexafluoride', '2x plutonium_octofluoride'], 0x582914);      
+ComplexAnsdFluid('caesium_oganesson_hexanitrate_tetrafluorouranate', ['2x caesium', '1x oganesson', '6x nitrate', '2x uranium_tetrafluoride'], 0x427A21);      
+ComplexAnsdDust('hafnium_thorium_iron_magnesium_disilicate_monosulfate_bonded_iron_2_barium_diastatide_trisulfate', ['1x hafnium_thorium_iron_magnesium_disilicate_monosulfate', '1x iron_2_barium_diastatide_trisulfate'], 0x6A8B9A);      
+ComplexAnsdDust('seaborgium_cerium_tricarbon_tetrakis_orthosilicate_linked_dipolonium_diplatinum_tris_pyrophosphate', ['1x seaborgium_cerium_tricarbon_tetrakis_orthosilicate', '1x dipolonium_diplatinum_tris_pyrophosphate'], 0x526A48);      
+ComplexAnsdDust('flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth', ['1x flerovium_hexaoxide_octafluorosulfatoplutonate', '6x mystery'], 0x6A4852);      
 
 // Large Multis
+const largeMulti = (name,components,color) => {
+    event.create(`${name}`)
+        .ingot()
+        .components(components)
+        .color(color)
+        .flags(plates, frame, rod)
+        .iconSet(DULL)
+        .blastTemp(2200, 'low', VA('mv'), 2000);
+}
 
-event.create('birmabright')
-    .ingot()
-    .components('7x aluminium', '2x magnesium', '1x manganese')
-    .color(0xbfbfbf)
-    .flags(plates, frame, rod)
-    .iconSet(DULL)
-    .blastTemp(2200, 'low', VA('mv'), 2000);
-
- event.create('duralumin')
-     .ingot()
-     .components('4x aluminium', '3x copper', '1x magnesium', '1x manganese')
-     .color(0x66ccff)
-     .flags(plates, frame, rod)
-     .iconSet(DULL)
-     .blastTemp(2200, 'low', VA('mv'), 2000);
-
- event.create('hydronalium')
-     .ingot()
-     .components('6x aluminium', '3x magnesium', '1x manganese')
-     .color(0x660000)
-     .flags(plates, frame, rod)
-     .iconSet(DULL)
-     .blastTemp(2200, 'low', VA('mv'), 2000);
-
- event.create('beryllium_aluminium_alloy')
-     .ingot()
-     .components('7x beryllium', '1x aluminium')
-     .color(0x006699)
-     .flags(plates, frame, rod)
-     .iconSet(DULL)
-     .blastTemp(2200, 'low', VA('mv'), 2000);
-
- event.create('elgiloy')
-     .ingot()
-     .components('4x cobalt', '2x chromium', '1x nickel', '1x steel', '1x molybdenum', '1x manganese')
-     .color(0xff00ff)
-     .flags(plates, frame, rod)
-     .iconSet(DULL)
-     .blastTemp(2200, 'low', VA('mv'), 2000);
-
- event.create('beryllium_bronze')
-     .ingot()
-     .components('10x copper', '1x beryllium')
-     .color(0x003300)
-     .flags(plates, frame, rod)
-     .iconSet(DULL)
-     .blastTemp(2200, 'low', VA('mv'), 2000);
-
- event.create('silicon_bronze')
-     .ingot()
-     .components('32x copper', '2x silicon', '1x manganese')
-     .color(0x1a1a1a)
-     .flags(plates, frame, rod)
-     .iconSet(DULL)
-     .blastTemp(2200, 'low', VA('mv'), 2000);
-
- event.create('kovar')
-     .ingot()
-     .components('18x iron', '11x nickel', '6x cobalt')
-     .color(0x000080)
-     .flags(plates, frame, rod)
-     .iconSet(DULL)
-     .blastTemp(2200, 'low', VA('mv'), 2000);
-
- event.create('zamak')
-     .ingot()
-     .components('1x zinc', '4x aluminium', '3x copper')
-     .color(0x8c8c8c)
-     .flags(plates, frame, rod)
-     .iconSet(DULL)
-     .blastTemp(2200, 'low', VA('mv'), 2000);
-
- event.create('tumbaga')
-     .ingot()
-     .components('20x copper', '6x gold', '1x silver')
-     .color(0xffdb4d)
-     .flags(plates, frame, rod)
-     .iconSet(METALLIC)
-     .blastTemp(2200, 'low', VA('mv'), 2000);
-
+largeMulti('birmabright', ['7x aluminium', '2x magnesium', '1x manganese'], 0xbfbfbf);  
+largeMulti('duralumin', ['4x aluminium', '3x copper', '1x magnesium', '1x manganese'], 0x66ccff);  
+largeMulti('hydronalium', ['6x aluminium', '3x magnesium', '1x manganese'], 0x660000);  
+largeMulti('beryllium_aluminium_alloy', ['7x beryllium', '1x aluminium'], 0x006699);  
+largeMulti('elgiloy', ['4x cobalt', '2x chromium', '1x nickel', '1x steel', '1x molybdenum', '1x manganese'], 0xff00ff);  
+largeMulti('beryllium_bronze', ['10x copper', '1x beryllium'], 0x003300);  
+largeMulti('silicon_bronze', ['32x copper', '2x silicon', '1x manganese'], 0x1a1a1a);  
+largeMulti('kovar', ['18x iron', '11x nickel', '6x cobalt'], 0x000080);  
+largeMulti('zamak', ['1x zinc', '4x aluminium', '3x copper'], 0x8c8c8c);  
+largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);  
 
     // Ultimate (Akreyrium-Tier-Start) Multiblocks
         
