@@ -70,10 +70,8 @@ ServerEvents.recipes(event => {
 	// Dust
 	sieve('string', .25, dust, 'gtceu:small_redstone_dust', false);
 	sieve('string', .15, dust, 'gtceu:quartzite_gem', false);
-	sieve('string', .1, dust, 'kubejs:raw_electrum_crushed_ore_chunk', false);
 	sieve('flint', .1, dust, 'minecraft:redstone', false);
 	sieve('flint', .075, dust, 'gtceu:raw_quartzite', false);
-	sieve('flint', .1, dust, 'gtceu:crushed_raw_electrum_ore', false);
 
 	// Mud (temp)
 	sieve('flint', .1, mud, 'thermal:slime_mushroom_spores', false);

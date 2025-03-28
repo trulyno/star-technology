@@ -42,7 +42,7 @@ StartupEvents.registry('item', event => {
 
 	const to_id = (name) => name.toLowerCase().replace(/\s/g, '_') // move to helpers?
 
-	const ores = ['Hematite', 'Cassiterite', 'Chalcopyrite', 'Sphalerite', 'Pyrite', 'Magnetite', 'Galena', 'Raw Electrum']
+	const ores = ['Hematite', 'Cassiterite', 'Chalcopyrite', 'Sphalerite', 'Pyrite', 'Magnetite', 'Galena']
 
 	ores.forEach(ore => {
 		const name = `${ore} Crushed Ore Chunk`;

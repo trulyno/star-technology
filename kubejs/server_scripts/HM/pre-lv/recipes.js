@@ -206,7 +206,6 @@ ServerEvents.recipes(event => {
 			{ ore: 'sphalerite', metal: 'zinc' },
 			{ ore: 'chalcopyrite', metal: 'copper' },
 			{ ore: 'galena', metal: 'lead' },
-			{ ore: 'raw_electrum', metal: 'raw_electrum' },
 		].forEach(chunk => {
 			const { ore, metal } = chunk;
 			const t = (ore == 'chalcopyrite') ? 2 : 1;
@@ -341,7 +340,7 @@ ServerEvents.recipes(event => {
 		A: 'minecraft:iron_ingot',
 		C: 'kubejs:reinforced_stone_bricks',
 		F: 'minecraft:furnace',
-		E: 'gtceu:raw_electrum_ingot',
+		E: 'minecraft:copper_ingot',
 		R: 'minecraft:redstone'
 	});
 
@@ -565,9 +564,9 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: /^create:pressing.*_ingot/ })
 	event.remove({ output: /^create_new_age.*wire/ })
-	const GTMetals = ['lead', 'raw_electrum', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'nickle', 'potin', 'cupronickle']
+	const GTMetals = ['lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'nickle', 'potin', 'cupronickle']
 	const MinecraftMetals = ['iron', 'copper', 'gold']
-	const MetalInc = ['iron', 'copper', 'gold', 'lead', 'raw_electrum', 'tin', 'bronze', 'brass', 'pig_iron', 'tin_alloy', 'nickle', 'potin', 'cupronickle']
+	const MetalInc = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'tin_alloy', 'nickle', 'potin', 'cupronickle']
 	GTMetals.forEach(type => {
 		event.recipes.create.pressing([Item.of(`4x gtceu:${type}_plate`)], `gtceu:${type}_block`);
 		event.recipes.create.compacting(`gtceu:${type}_plate`, `2x gtceu:${type}_ingot`);
@@ -584,11 +583,11 @@ ServerEvents.recipes(event => {
 		event.recipes.create.pressing([Item.of(`gtceu:${type}_screw`).withChance(1)], `gtceu:${type}_bolt`);
 	});
 
-	const SEQLRod = ['iron', 'copper', 'gold', 'lead', 'raw_electrum', 'tin', 'bronze', 'brass', 'pig_iron'];
-	const SEQDPlates = ['iron', 'copper', 'gold', 'lead', 'raw_electrum', 'tin', 'bronze', 'brass', 'pig_iron'];
-	const SEQGear = ['iron', 'lead', 'raw_electrum', 'bronze', 'pig_iron'];
-	const SEQSmGear = ['iron', 'raw_electrum', 'bronze', 'pig_iron'];
-	const SEQRotor = ['iron', 'copper', 'lead', 'raw_electrum', 'bronze', 'pig_iron'];
+	const SEQLRod = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron'];
+	const SEQDPlates = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron'];
+	const SEQGear = ['iron', 'lead', 'bronze', 'pig_iron'];
+	const SEQSmGear = ['iron', 'bronze', 'pig_iron'];
+	const SEQRotor = ['iron', 'copper', 'lead', 'bronze', 'pig_iron'];
 	const SEQSpring = ['iron', 'copper', 'gold', 'lead', 'tin'];
 	const SEQSmSpring = ['iron', 'copper', 'gold', 'lead', 'tin'];
 	const SEQWire = ['iron', 'copper', 'gold', 'lead', 'tin'];
@@ -876,12 +875,13 @@ ServerEvents.recipes(event => {
 		B: 'minecraft:water_bucket'
 	}).replaceIngredient('minecraft:water_bucket', 'minecraft:air');
 
-	[{ dust: 'stone' }, { dust: 'gypsum' }, { dust: 'calcite' }].forEach(type => {
-		const pebble = (type.dust == 'gypsum') ? 'dripstone' : type.dust;
-		event.shapeless(`gtceu:tiny_${type.dust}_dust`, ['#forge:tools/mortars', `exnihilosequentia:${pebble}_pebble`]);
-		event.recipes.gtceu.macerator(`small_${type.dust}_dust`)
+	['stone', 'gypsum', 'calcite'].forEach(dust => {
+		const pebble = (dust == 'gypsum') ? 'dripstone' : dust;
+
+		event.shapeless(`gtceu:tiny_${dust}_dust`, ['#forge:tools/mortars', `exnihilosequentia:${pebble}_pebble`]);
+		event.recipes.gtceu.macerator(`small_${dust}_dust`)
 			.itemInputs(`exnihilosequentia:${pebble}_pebble`)
-			.itemOutputs(`gtceu:small_${type.dust}_dust`)
+			.itemOutputs(`gtceu:small_${dust}_dust`)
 			.duration(23)
 			.EUt(2);
 	});
@@ -1412,7 +1412,7 @@ ServerEvents.recipes(event => {
 		'BGB'
 	], {
 		G: 'gtceu:iron_ring',
-		B: 'gtceu:raw_electrum_bolt',
+		B: 'gtceu:copper_bolt',
 		N: 'minecraft:glass_pane',
 		Q: 'create:polished_rose_quartz'
 	});
