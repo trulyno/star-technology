@@ -1,7 +1,7 @@
 
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.distillation_tower('molten_estaltadyne_mixture')
+    event.recipes.gtceu.molten_destabilizing('molten_estaltadyne_mixture')
         .inputFluids('gtceu:molten_estaltadyne_mixture 300000')
         .outputFluids('gtceu:estaltadyne 200000')
         .outputFluids('gtceu:highly_unstable_nether_magma 50000')

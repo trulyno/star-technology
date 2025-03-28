@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.centrifuge('atomic_nether_sludge_decomp')
+    event.recipes.gtceu.manifold_centrifuge('atomic_nether_sludge_decomp')
         .itemInputs('5x gtceu:atomic_nether_sludge_dust')
         .inputFluids('gtceu:hexafluorobromic_acid 2500')
         .outputFluids('gtceu:caesium_oganesson_hexanitrate_tetrafluorouranate 2500')

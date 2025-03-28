@@ -1,7 +1,7 @@
 
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.distillation_tower('molten_mythrillic_mixture')
+    event.recipes.gtceu.molten_destabilizing('molten_mythrillic_mixture')
         .inputFluids('gtceu:molten_mythrillic_mixture 300000')
         .outputFluids('gtceu:mythrillic 200000')
         .outputFluids('gtceu:highly_unstable_nether_magma 25000')

@@ -3,13 +3,13 @@ ServerEvents.recipes(event => {
 
     //Mystical Magma
     event.recipes.gtceu.cyclonic_sifter('mystical_nether_magma')
-        .inputFluids('gtceu:highly_unstable_nether_magma 75000')
+        .inputFluids('gtceu:highly_unstable_nether_magma 250000')
         .chancedInput('1x kubejs:ancient_netherite_reinforced_mesh', 1000, -150)
-        .outputFluids('gtceu:mystical_nether_magma 4000')
-        .duration(400)
+        .outputFluids('gtceu:mystical_nether_magma 20000')
+        .duration(900)
         .EUt(GTValues.VA[GTValues.UEV]*3/11);
 
-    event.recipes.gtceu.centrifuge('mystical_nether_magma_deconstruction')
+    event.recipes.gtceu.manifold_centrifuge('mystical_nether_magma_deconstruction')
         .inputFluids('gtceu:mystical_nether_magma 3000')
         .outputFluids('gtceu:estaltadyne_nether_magma 1000')
         .outputFluids('gtceu:adamantamite_nether_magma 1000')
@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         .duration(480)
         .EUt(GTValues.VHA[GTValues.UHV]*3/5);
 
-    event.recipes.gtceu.manifold_centrifuge('adamantamite_nether_magma_deconstruction')
+    event.recipes.gtceu.molten_destabilizing('adamantamite_nether_magma_deconstruction')
         .inputFluids('gtceu:adamantamite_nether_magma 10000')
         .outputFluids('gtceu:highly_unstable_nether_magma 3000')
         .outputFluids('gtceu:molten_adamantamite_mixture 6000')
@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
-    event.recipes.gtceu.manifold_centrifuge('mythrillic_nether_magma_deconstruction')
+    event.recipes.gtceu.molten_destabilizing('mythrillic_nether_magma_deconstruction')
         .inputFluids('gtceu:mythrillic_nether_magma 10000')
         .outputFluids('gtceu:highly_unstable_nether_magma 3000')
         .outputFluids('gtceu:molten_mythrillic_mixture 6000')
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
-    event.recipes.gtceu.manifold_centrifuge('estaltadyne_nether_magma_deconstruction')
+    event.recipes.gtceu.molten_destabilizing('estaltadyne_nether_magma_deconstruction')
         .inputFluids('gtceu:estaltadyne_nether_magma 10000')
         .outputFluids('gtceu:highly_unstable_nether_magma 3000')
         .outputFluids('gtceu:molten_estaltadyne_mixture 6000')

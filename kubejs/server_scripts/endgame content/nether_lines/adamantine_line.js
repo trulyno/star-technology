@@ -1,7 +1,7 @@
 
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.distillation_tower('molten_adamantamite_mixture')
+    event.recipes.gtceu.molten_destabilizing('molten_adamantamite_mixture')
         .inputFluids('gtceu:molten_adamantamite_mixture 300000')
         .outputFluids('gtceu:adamantamite 200000')
         .outputFluids('gtceu:highly_unstable_nether_magma 25000')

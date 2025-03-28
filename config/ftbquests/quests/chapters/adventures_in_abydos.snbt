@@ -497,7 +497,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "33205A9306859820"
 				item: "gtceu:cyclonic_sifter"
