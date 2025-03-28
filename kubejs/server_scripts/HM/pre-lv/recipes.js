@@ -424,7 +424,7 @@ ServerEvents.recipes(event => {
 			});
 		});
 
-		event.recipes.create.compacting(block, [`4x ${item}`, Fluid.of('gtceu:concrete', 500)]);
+		event.recipes.create.compacting(block, [`4x ${item}`, Fluid.of('gtceu:concrete', 400)]);
 	});
 
 	event.shaped(Item.of('kubejs:reinforced_stone_bricks'), [
@@ -868,7 +868,7 @@ ServerEvents.recipes(event => {
 	});
 
 
-	event.recipes.create.mixing(Fluid.of('gtceu:concrete', 1000), [Fluid.of('minecraft:water', 1000), '3x gtceu:stone_dust', 'gtceu:calcite_dust', '2x gtceu:gypsum_dust']);
+	event.recipes.create.mixing(Fluid.of('gtceu:concrete', 1200), [Fluid.of('minecraft:water', 1000), '3x gtceu:stone_dust', 'gtceu:calcite_dust', '2x gtceu:gypsum_dust']);
 
 	// Create Recipes
 	event.recipes.shaped(Item.of('create:item_vault'), [
