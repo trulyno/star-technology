@@ -1,19 +1,12 @@
 // packmode: hard
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('mixer', 'simple')
-        .tiers(GTValues.ULV)
-        .definition((tier, builder) =>
-            builder
-                .recipeType('mixer')
-          )
-});
+	const ulv_machine = (machine) => {
+		event.create(machine, 'simple')
+			.tiers(GTValues.ULV)
+			.definition((tier, builder) => builder.recipeType(machine));
+	}
 
-GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('assembler', 'simple')
-        .tiers(GTValues.ULV)
-        .definition((tier, builder) =>
-            builder
-                .recipeType('assembler')
-          )
+	ulv_machine('mixer');
+	ulv_machine('assembler');
 });
