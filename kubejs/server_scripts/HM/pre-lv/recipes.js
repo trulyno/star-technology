@@ -1470,14 +1470,17 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'gtceu:smelting/smelt_dust_bronze_to_ingot' });
 	event.remove({ id: 'gtceu:smelting/smelt_dust_brass_to_ingot' });
+
 	event.recipes.create.mixing('2x gtceu:brass_dust', ['1x gtceu:zinc_dust', '3x gtceu:copper_dust']).heatRequirement('lowheated');
 	event.recipes.create.mixing('2x gtceu:bronze_dust', ['1x gtceu:tin_dust', '3x gtceu:copper_dust']).heatRequirement('lowheated');
-	event.recipes.create.mixing(Fluid.of('gtceu:brass', 144), ['1x gtceu:brass_dust']).heatRequirement('lowheated');
-	event.recipes.create.mixing(Fluid.of('gtceu:bronze', 144), ['1x gtceu:bronze_dust']).heatRequirement('lowheated');
 	event.recipes.create.mixing(Fluid.of('gtceu:brass', 432), ['1x gtceu:zinc_ingot', '3x minecraft:copper_ingot']).heatRequirement('superheated');
 	event.recipes.create.mixing(Fluid.of('gtceu:bronze', 432), ['1x gtceu:tin_ingot', '3x minecraft:copper_ingot']).heatRequirement('superheated');
-	event.recipes.create.compacting(`1x gtceu:brass_ingot`, Fluid.of('gtceu:brass', 144));
-	event.recipes.create.compacting(`1x gtceu:bronze_ingot`, Fluid.of('gtceu:bronze', 144));
+
+	['brass', 'bronze', 'pig_iron'].forEach(dust => {
+		event
+			.blasting(`gtceu:${dust}_ingot`, `gtceu:${dust}_dust`)
+			.id(`kubejs:${dust}_dust_blasting_manual_only`);
+	});
 
 	event.recipes.create.mechanical_crafting('create:flywheel', [
 		' PPP ',
