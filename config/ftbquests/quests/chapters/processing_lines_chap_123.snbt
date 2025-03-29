@@ -10,7 +10,7 @@
 	quest_links: [{
 		id: "5B9F9EFC7AF759A6"
 		linked_quest: "0BBCC13EE6C7C061"
-		x: 22.0d
+		x: 20.5d
 		y: 9.0d
 	}]
 	quests: [
@@ -821,7 +821,7 @@
 		{
 			dependencies: [
 				"74E43E78D07AE3B6"
-				"34F84E36E3B0527E"
+				"10FB3D35E075D49A"
 			]
 			dependency_requirement: "one_completed"
 			description: ["Sodalite and Clay electroysis are both great ways to automate this once you have &bMV&r electrolyzers"]
@@ -1240,7 +1240,7 @@
 				item: "thermal:earth_charge"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 23.0d
 			y: 14.5d
 		}
 		{
@@ -1252,7 +1252,7 @@
 				item: "minecraft:fire_charge"
 				type: "item"
 			}]
-			x: 24.0d
+			x: 22.5d
 			y: 13.5d
 		}
 		{
@@ -1264,7 +1264,7 @@
 				item: "thermal:lightning_charge"
 				type: "item"
 			}]
-			x: 24.0d
+			x: 22.5d
 			y: 12.5d
 		}
 		{
@@ -1276,7 +1276,7 @@
 				item: "thermal:ice_charge"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 23.0d
 			y: 11.5d
 		}
 		{
@@ -1288,7 +1288,7 @@
 				item: "thermal:basalz_powder"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 21.5d
 			y: 14.5d
 		}
 		{
@@ -1300,7 +1300,7 @@
 				item: "minecraft:blaze_powder"
 				type: "item"
 			}]
-			x: 22.5d
+			x: 21.0d
 			y: 13.5d
 		}
 		{
@@ -1312,7 +1312,7 @@
 				item: "thermal:blitz_powder"
 				type: "item"
 			}]
-			x: 22.5d
+			x: 21.0d
 			y: 12.5d
 		}
 		{
@@ -1324,7 +1324,7 @@
 				item: "thermal:blizz_powder"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 21.5d
 			y: 11.5d
 		}
 		{
@@ -1346,7 +1346,7 @@
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
-			x: 29.0d
+			x: 27.5d
 			y: 13.0d
 		}
 		{
@@ -1359,7 +1359,7 @@
 				item: "gtceu:implosion_compressor"
 				type: "item"
 			}]
-			x: 29.0d
+			x: 27.5d
 			y: 14.5d
 		}
 		{
@@ -1371,7 +1371,7 @@
 				item: "mysticalagriculture:nether_agglomeratio"
 				type: "item"
 			}]
-			x: 24.0d
+			x: 22.5d
 			y: 19.5d
 		}
 		{
@@ -1383,7 +1383,7 @@
 				item: "gtceu:tiny_debris_dust"
 				type: "item"
 			}]
-			x: 25.5d
+			x: 24.0d
 			y: 19.5d
 		}
 		{
@@ -1398,7 +1398,7 @@
 				item: "gtceu:debris_dust"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 25.5d
 			y: 19.5d
 		}
 		{
@@ -1411,7 +1411,7 @@
 				item: "gtceu:small_purified_debris_dust"
 				type: "item"
 			}]
-			x: 28.5d
+			x: 27.0d
 			y: 19.5d
 		}
 		{
@@ -1425,7 +1425,7 @@
 				type: "item"
 			}]
 			title: "Debris Looping"
-			x: 26.0d
+			x: 24.5d
 			y: 18.0d
 		}
 		{
@@ -1437,7 +1437,7 @@
 				item: "gtceu:tiny_titanium_trifluoride_dust"
 				type: "item"
 			}]
-			x: 28.0d
+			x: 26.5d
 			y: 18.0d
 		}
 		{
@@ -1449,7 +1449,7 @@
 				item: "gtceu:titanium_trifluoride_dust"
 				type: "item"
 			}]
-			x: 29.5d
+			x: 28.0d
 			y: 18.0d
 		}
 		{
@@ -1462,7 +1462,7 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			x: 33.0d
+			x: 31.5d
 			y: 18.0d
 		}
 		{
@@ -1483,7 +1483,7 @@
 					type: "item"
 				}
 			]
-			x: 31.0d
+			x: 29.5d
 			y: 18.0d
 		}
 		{
@@ -1504,7 +1504,7 @@
 					type: "item"
 				}
 			]
-			x: 28.0d
+			x: 26.5d
 			y: 21.0d
 		}
 		{
@@ -1524,7 +1524,7 @@
 					type: "item"
 				}
 			]
-			x: 26.0d
+			x: 24.5d
 			y: 21.0d
 		}
 		{
@@ -1542,7 +1542,7 @@
 				item: "gtceu:purified_debris_dust"
 				type: "item"
 			}]
-			x: 30.5d
+			x: 29.0d
 			y: 19.5d
 		}
 		{
@@ -1554,7 +1554,7 @@
 				item: "gtceu:debris_dust"
 				type: "item"
 			}]
-			x: 32.0d
+			x: 30.5d
 			y: 19.5d
 		}
 		{
@@ -1573,7 +1573,7 @@
 				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
-			x: 34.0d
+			x: 32.5d
 			y: 19.5d
 		}
 		{
@@ -1592,7 +1592,7 @@
 				item: "gtceu:pure_netherite_ingot"
 				type: "item"
 			}]
-			x: 35.0d
+			x: 33.5d
 			y: 21.0d
 		}
 		{
@@ -1613,7 +1613,7 @@
 					type: "item"
 				}
 			]
-			x: 33.0d
+			x: 31.5d
 			y: 21.0d
 		}
 		{
@@ -1628,7 +1628,7 @@
 				item: "gtceu:pure_netherite_dust"
 				type: "item"
 			}]
-			x: 31.5d
+			x: 30.0d
 			y: 21.0d
 		}
 		{
@@ -1649,7 +1649,7 @@
 					type: "item"
 				}
 			]
-			x: 30.0d
+			x: 28.5d
 			y: 21.0d
 		}
 		{
@@ -1670,32 +1670,10 @@
 					type: "item"
 				}
 			]
-			x: 29.0d
+			x: 27.5d
 			y: 22.5d
 		}
 		{
-			dependencies: ["0AB3A8C14C3A0512"]
-			icon: "gtceu:charcoal_byproducts_bucket"
-			id: "45B0C4853DA47A48"
-			size: 1.0d
-			tasks: [
-				{
-					id: "31E64D1FD085B9F9"
-					title: "Charcoal Byproducts"
-					type: "checkmark"
-				}
-				{
-					id: "38AC9CEB7C1EF6B8"
-					item: "gtceu:charcoal_byproducts_bucket"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 13.0d
-			y: 24.0d
-		}
-		{
-			dependencies: ["45B0C4853DA47A48"]
 			icon: "gtceu:wood_vinegar_bucket"
 			id: "767CC03EDC618C0B"
 			size: 1.0d
@@ -1716,7 +1694,6 @@
 			y: 24.0d
 		}
 		{
-			dependencies: ["45B0C4853DA47A48"]
 			icon: "gtceu:wood_tar_bucket"
 			id: "1A1969BCD61B4F09"
 			size: 1.0d
@@ -1980,7 +1957,7 @@
 					type: "item"
 				}
 			]
-			x: 23.0d
+			x: 29.5d
 			y: 23.0d
 		}
 		{
@@ -2001,7 +1978,7 @@
 					type: "item"
 				}
 			]
-			x: 24.5d
+			x: 31.0d
 			y: 23.0d
 		}
 		{
@@ -2022,7 +1999,7 @@
 					type: "item"
 				}
 			]
-			x: 26.0d
+			x: 32.5d
 			y: 23.0d
 		}
 		{
@@ -2044,7 +2021,7 @@
 				item: "gtceu:polyvinyl_butyral_bucket"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 33.5d
 			y: 24.0d
 		}
 		{
@@ -2065,7 +2042,7 @@
 					type: "item"
 				}
 			]
-			x: 25.0d
+			x: 31.5d
 			y: 24.0d
 		}
 		{
@@ -2085,7 +2062,7 @@
 				}
 			]
 			title: "Purified Galena and Sphalerite"
-			x: 24.0d
+			x: 22.5d
 			y: 16.25d
 		}
 		{
@@ -2106,7 +2083,7 @@
 					type: "item"
 				}
 			]
-			x: 25.5d
+			x: 24.0d
 			y: 16.25d
 		}
 		{
@@ -2118,7 +2095,7 @@
 				item: "gtceu:indium_dust"
 				type: "item"
 			}]
-			x: 28.5d
+			x: 27.0d
 			y: 16.25d
 		}
 		{
@@ -2137,7 +2114,7 @@
 				item: "gtceu:indium_gallium_phosphide_dust"
 				type: "item"
 			}]
-			x: 30.5d
+			x: 29.0d
 			y: 16.25d
 		}
 		{
@@ -2239,7 +2216,7 @@
 				}
 			]
 			title: "Sapphires"
-			x: 1.5d
+			x: 0.0d
 			y: 12.5d
 		}
 		{
@@ -2265,7 +2242,7 @@
 				title: "postioner"
 				type: "checkmark"
 			}]
-			x: 17.0d
+			x: 16.5d
 			y: 16.0d
 		}
 		{
@@ -2280,7 +2257,7 @@
 				}
 				type: "item"
 			}]
-			x: 23.5d
+			x: 22.0d
 			y: 9.0d
 		}
 		{
@@ -2295,7 +2272,7 @@
 				}
 				type: "item"
 			}]
-			x: 25.0d
+			x: 23.5d
 			y: 9.0d
 		}
 		{
@@ -2310,7 +2287,7 @@
 				}
 				type: "item"
 			}]
-			x: 24.0d
+			x: 22.5d
 			y: 8.0d
 		}
 		{
@@ -2325,7 +2302,7 @@
 				}
 				type: "item"
 			}]
-			x: 24.0d
+			x: 22.5d
 			y: 10.0d
 		}
 		{
@@ -2353,7 +2330,7 @@
 				}
 			]
 			title: "Uranium Hexafluoride"
-			x: 26.5d
+			x: 25.0d
 			y: 9.0d
 		}
 		{
@@ -2381,7 +2358,7 @@
 				}
 			]
 			title: "Enriched Uranium Hexafluoride"
-			x: 27.5d
+			x: 26.0d
 			y: 8.0d
 		}
 		{
@@ -2409,7 +2386,7 @@
 				}
 			]
 			title: "Depleted Uranium Hexafluoride"
-			x: 27.5d
+			x: 26.0d
 			y: 10.0d
 		}
 		{
@@ -2425,7 +2402,7 @@
 				}
 				type: "item"
 			}]
-			x: 29.0d
+			x: 27.5d
 			y: 8.0d
 		}
 		{
@@ -2448,7 +2425,7 @@
 				}
 				type: "item"
 			}]
-			x: 29.5d
+			x: 28.0d
 			y: 10.0d
 		}
 		{
@@ -2470,7 +2447,7 @@
 				}
 				type: "item"
 			}]
-			x: 31.5d
+			x: 30.0d
 			y: 10.0d
 		}
 		{
@@ -2497,7 +2474,7 @@
 				}
 				type: "item"
 			}]
-			x: 31.0d
+			x: 29.5d
 			y: 8.0d
 		}
 		{
@@ -2512,7 +2489,7 @@
 				}
 				type: "item"
 			}]
-			x: 27.0d
+			x: 25.5d
 			y: 16.25d
 		}
 		{
@@ -2523,7 +2500,7 @@
 				item: "kubejs:ice_infused_shard"
 				type: "item"
 			}]
-			x: 26.0d
+			x: 24.5d
 			y: 11.5d
 		}
 		{
@@ -2534,7 +2511,7 @@
 				item: "kubejs:lightning_infused_shard"
 				type: "item"
 			}]
-			x: 25.5d
+			x: 24.0d
 			y: 12.5d
 		}
 		{
@@ -2545,7 +2522,7 @@
 				item: "kubejs:fire_infused_shard"
 				type: "item"
 			}]
-			x: 25.5d
+			x: 24.0d
 			y: 13.5d
 		}
 		{
@@ -2556,7 +2533,7 @@
 				item: "kubejs:earth_infused_shard"
 				type: "item"
 			}]
-			x: 26.0d
+			x: 24.5d
 			y: 14.5d
 		}
 		{
@@ -2572,7 +2549,7 @@
 				item: "kubejs:impure_nether_star"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 25.5d
 			y: 13.0d
 		}
 		{
@@ -2598,7 +2575,7 @@
 				}
 			]
 			title: "Nether Star Looping"
-			x: 30.5d
+			x: 29.0d
 			y: 13.0d
 		}
 		{
@@ -2609,7 +2586,7 @@
 				item: "kubejs:energized_nether_star_shard"
 				type: "item"
 			}]
-			x: 32.0d
+			x: 30.5d
 			y: 13.0d
 		}
 		{
@@ -2620,7 +2597,7 @@
 				item: "kubejs:ice_infused_shard"
 				type: "item"
 			}]
-			x: 32.5d
+			x: 31.0d
 			y: 11.5d
 		}
 		{
@@ -2631,7 +2608,7 @@
 				item: "kubejs:lightning_infused_shard"
 				type: "item"
 			}]
-			x: 33.5d
+			x: 32.0d
 			y: 12.3d
 		}
 		{
@@ -2642,7 +2619,7 @@
 				item: "kubejs:fire_infused_shard"
 				type: "item"
 			}]
-			x: 33.5d
+			x: 32.0d
 			y: 13.7d
 		}
 		{
@@ -2653,7 +2630,7 @@
 				item: "kubejs:earth_infused_shard"
 				type: "item"
 			}]
-			x: 32.5d
+			x: 31.0d
 			y: 14.5d
 		}
 		{
@@ -2750,6 +2727,35 @@
 			title: "Methane"
 			x: 3.0d
 			y: 18.0d
+		}
+		{
+			dependencies: ["34F84E36E3B0527E"]
+			id: "10FB3D35E075D49A"
+			tasks: [{
+				id: "06EDC401929CF09C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Sapphire Dust\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:sapphire_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:green_sapphire_dust"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.5d
 		}
 	]
 	title: "Processing Lines (Chap 1,2,3)"

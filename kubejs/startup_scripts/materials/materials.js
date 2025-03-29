@@ -1425,15 +1425,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(8900, 'higher', VA('luv'), 4000)
         .cableProperties(V('uhv'), 8, 16, false);
 
-    event.create('cerium_tritelluride')
-        .ingot()
-        .components('1x cerium', '3x tellurium')
-        .color(0x6D8B5D)
-        .iconSet(DULL)
-        .blastTemp(11699, 'highest', VA('uhv'), 1800)
-        .flags(bolt_and_screw,spring,small_spring)
-        .cableProperties(V('uev'), 6, 16, false);
-
     event.create('indium_tin_lead_cadmium_soldering_alloy')
         .ingot()
         .fluid()
@@ -1610,60 +1601,46 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 //ANSD Line
 const InitialLoadAnsdFluid = (name,components,color) => {
-    event.create(`${name}`)
-        .fluid()
-        .color(color)
-        .components(components)
-        .flags(no_decomp);
+    event.create(`${name}`).fluid().color(color).components(components).flags(no_decomp);
+}
+const InitialLoadAnsdFluidDecomps = (name,components,color) => {
+    event.create(`${name}`).fluid().color(color).components(components);
 }
 const InitialLoadAnsdDust = (name,components,color) => {
-    event.create(`${name}`)
-        .dust()
-        .color(color)
-        .components(components)
-        .flags(no_decomp);
+    event.create(`${name}`).dust().color(color).components(components).flags(no_decomp);
+}
+const InitialLoadAnsdDustDecomps = (name,components,color) => {
+    event.create(`${name}`).dust().color(color).components(components);
 }
 const AnsdFluid = (name,components,color) => {
-    event.create(`${name}`)
-        .fluid()
-        .color(color)
-        .components(components)
-        .flags(no_decomp);
+    event.create(`${name}`).fluid().color(color).components(components).flags(no_decomp);
 }
 const AnsdDust = (name,components,color) => {
-    event.create(`${name}`)
-        .dust()
-        .color(color)
-        .components(components)
-        .flags(no_decomp);
+    event.create(`${name}`).dust().color(color).components(components).flags(no_decomp);
+}
+const AnsdFluidDecomps = (name,components,color) => {
+    event.create(`${name}`).fluid().color(color).components(components);
+}
+const AnsdDustDecomps = (name,components,color) => {
+    event.create(`${name}`).dust().color(color).components(components);
 }
 const ComplexAnsdFluid = (name,components,color) => {
-    event.create(`${name}`)
-        .fluid()
-        .color(color)
-        .components(components)
-        .flags(no_decomp);
+    event.create(`${name}`).fluid().color(color).components(components).flags(no_decomp);
 }
 const ComplexAnsdDust = (name,components,color) => {
-    event.create(`${name}`)
-        .dust()
-        .color(color)
-        .components(components)
-        .flags(no_decomp);
+    event.create(`${name}`).dust().color(color).components(components).flags(no_decomp);
 }
 
-InitialLoadAnsdDust('sulfate', ['1x sulfur', '4x oxygen'], 0xD5BA23);  
+InitialLoadAnsdDustDecomps('sulfate', ['1x sulfur', '4x oxygen'], 0xD5BA23);  
 InitialLoadAnsdDust('silicate', ['1x silicon', '4x oxygen'], 0xC0BA97);  
 InitialLoadAnsdDust('pyrophosphate', ['2x phosphorus', '7x oxygen'], 0xC08B63);  
 InitialLoadAnsdDust('sulfur_hexafluoride', ['1x sulfur', '6x fluorine'], 0xC0BA63);  
 InitialLoadAnsdDust('plutonium_octofluoride', ['2x plutonium', '8x fluorine'], 0x000000);      
 InitialLoadAnsdFluid('uranium_tetrafluoride', ['1x uranium', '4x fluorine'], 0x6CAB3F);      
-InitialLoadAnsdFluid('hydroxide',['1x oxygen','1x hydrogen'],0xC0D4DD);
-AnsdDust('uranium_dioxide', ['1x uranium', '2x oxygen'], 0x528A3C);      
+InitialLoadAnsdFluidDecomps('hydroxide',['1x oxygen','1x hydrogen'],0xC0D4DD);
 AnsdFluid('caesium_oganesson_hexanitrate', ['2x caesium', '1x oganesson', '6x nitrate'], 0x769192);      
 AnsdFluid('caesium_oganesson_trioxide', ['2x caesium', '1x oganesson', '3x oxygen'], 0x4E7577);      
-AnsdFluid('caesium_nitrate', ['1x caesium', '1x nitrogen', '3x oxygen'], 0x7C8A8B);      
-AnsdFluid('caesium_nitrite', ['1x caesium', '1x nitrogen', '3x oxygen'], 0x7BA7A9);  
+AnsdFluidDecomps('caesium_nitrate', ['1x caesium', '1x nitrogen', '3x oxygen'], 0x7C8A8B);      
 AnsdFluid('oganesson_tetranitrate', ['1x oganesson', '4x nitrate'], 0x948FAD);      
 AnsdDust('magnesium_hydroxide', ['1x magnesium', '2x hydroxide'], 0x766B73);      
 AnsdDust('hafnium_thorium_iron_2_hydroxide_potassium_disilicate', ['1x hafnium', '1x thorium', '1x iron', '2x hydroxide', '4x potassium', '2x silicate'], 0x618782);      
@@ -1674,13 +1651,14 @@ AnsdDust('hafnium_dioxide', ['1x hafnium', '2x oxygen'], 0x88A1A0);
 AnsdDust('sodium_hafnate', ['2x sodium', '1x hafnium', '3x oxygen'], 0x8894A1);      
 AnsdDust('barium_diastatide', ['1x barium', '2x astatine'], 0x665058);      
 AnsdDust('barium_hydroxide', ['1x barium', '2x hydroxide'], 0xB5AC9B);      
-AnsdDust('barium_carbonate', ['1x barium', '1x carbon', '3x oxygen'], 0x9B8F77);  
-AnsdDust('sodium_astatide', ['1x sodium', '1x astatine'], 0x5F5076);      
+AnsdDustDecomps('barium_carbonate', ['1x barium', '1x carbon', '3x oxygen'], 0x9B8F77);  
+AnsdDust('sodium_astatide', ['1x sodium', '1x astatine'], 0x5F5076);
+AnsdFluid('hydroastatic_acid', ['1x hydrogen', '1x astatine'], 0xB56C5B);
 AnsdFluid('silicic_acid', ['4x hydrogen', '1x silicate'], 0xB4BBBE);    
 AnsdDust('seaborgium_cerium_tricarbon_octasulfate', ['1x seaborgium', '1x cerium', '3x carbon', '8x sulfate'], 0x75A99E);
 AnsdDust('cerium_4_sulfate', ['1x cerium', '2x sulfate'], 0x828685);
-AnsdDust('chromium_sulfate', ['2x chromium', '3x sulfate'], 0xEEE9DB);
-AnsdDust('cerium_dioxide', ['1x cerium', '2x oxygen'], 0xB9CFDB);
+AnsdDustDecomps('chromium_sulfate', ['2x chromium', '3x sulfate'], 0xEEE9DB);
+AnsdDustDecomps('cerium_dioxide', ['1x cerium', '2x oxygen'], 0xB9CFDB);
 AnsdDust('seaborgium_trisulfate', ['1x seaborgium', '3x sulfate'], 0x8AA89B);
 AnsdDust('seaborgium_trioxide', ['1x seaborgium', '3x oxygen'], 0x4B827B);
 AnsdDust('sodium_seaborgate', ['2x sodium', '1x seaborgium', '4x oxygen'], 0x298B80);
@@ -1689,7 +1667,18 @@ AnsdDust('hafnium_hexachloride', ['1x hafnium', '6x chlorine'], 0xA0A8A6);
 AnsdDust('hafnium_thorium_iron_magnesium_disilicate_monosulfate', ['1x hafnium', '1x thorium', '1x iron', '2x magnesium', '2x silicate', '1x sulfate'], 0x98B4B0);      
 AnsdDust('seaborgium_cerium_tricarbon_tetrakis_orthosilicate', ['1x seaborgium', '1x cerium', '3x carbon', '4x silicate'], 0x268075);      
 AnsdDust('iron_2_barium_diastatide_trisulfate', ['2x iron', '1x barium', '2x astatine', '3x sulfate'], 0x9EB286);      
-AnsdDust('dipolonium_diplatinum_tris_pyrophosphate', ['2x polonium', '2x platinum', '3x pyrophosphate'], 0xA0664D);      
+AnsdDust('dipolonium_diplatinum_tris_pyrophosphate', ['2x polonium', '2x platinum', '3x pyrophosphate'], 0xA0664D);
+AnsdDust('flerovium_hexadecafluoride_di_sulfur_trioxide', ['1x flerovium', '2x sulfur_trioxide', '16x fluorine'], 0x36413F);
+AnsdDustDecomps('silver_sulfate', ['2x silver', '1x sulfate'], 0xD4CF91);
+AnsdDust('flerovium_hexadecafluoride', ['1x flerovium', '16x fluorine'], 0x5A6759);
+AnsdDust('flerovium_tetrafluoride', ['1x flerovium', '4x fluorine'], 0x254722);
+AnsdDust('polonium_pyrophosphate', ['1x polonium', '1x pyrophosphate'], 0x356231);
+AnsdFluid('pyrophosphoric_acid', ['4x hydrogen', '1x pyrophosphate'], 0xB3A36D);
+AnsdFluid('orthophosphoric_acid', ['3x hydrogen', '1x phosphorus', '4x oxygen'], 0xD5C385);
+AnsdDustDecomps('sodium_phosphate', ['3x sodium', '1x phosphorus', '4x oxygen'], 0x819BC8);
+AnsdDust('polonium_tetrachloride', ['1x polonium', '4x chlorine'], 0x357C44);
+AnsdDust('polonium_hydroxide', ['1x polonium', '4x hydroxide'], 0x0E5A1F);
+AnsdDust('polonium_carbonate', ['1x polonium', '1x carbon', '3x oxygen'], 0x2F5637);
 ComplexAnsdDust('flerovium_hexaoxide_octafluorosulfatoplutonate', ['1x flerovium', '6x oxygen', '2x sulfur_hexafluoride', '2x plutonium_octofluoride'], 0x582914);      
 ComplexAnsdFluid('caesium_oganesson_hexanitrate_tetrafluorouranate', ['2x caesium', '1x oganesson', '6x nitrate', '2x uranium_tetrafluoride'], 0x427A21);      
 ComplexAnsdDust('hafnium_thorium_iron_magnesium_disilicate_monosulfate_bonded_iron_2_barium_diastatide_trisulfate', ['1x hafnium_thorium_iron_magnesium_disilicate_monosulfate', '1x iron_2_barium_diastatide_trisulfate'], 0x6A8B9A);      
@@ -2057,7 +2046,16 @@ largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
         .secondaryColor(0xDE44CE)
         .iconSet(SHINY)
         .flags(no_decomp, fine_wire, no_smelt);
-        
+       
+    event.create('cerium_tritelluride')
+        .ingot()
+        .components('1x cerium', '3x tellurium')
+        .color(0x6D8B5D)
+        .iconSet(DULL)
+        .blastTemp(11699, 'highest', VA('uhv'), 1800)
+        .flags(bolt_and_screw,spring,small_spring)
+        .cableProperties(V('uev'), 6, 16, false);
+
     event.create('bec_og')
         .components('1x oganesson')
         .fluid()
@@ -2142,4 +2140,13 @@ largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
         .blastTemp(14799, 'highest', VA('uv'), 2500)
         .cableProperties(V('uev'), 2, 12, false);
 
+    //UIV Materials
+    event.create('polonium_bismide')
+        .ingot()
+        .components('1x polonium', '1x bismuth')
+        .color(0x016038)
+        .iconSet(DULL)
+        .blastTemp(13400, 'highest', VA('uev'), 1500)
+        .flags(bolt_and_screw,spring,small_spring)
+        .cableProperties(V('uiv'), 5, 24, false);
 });
