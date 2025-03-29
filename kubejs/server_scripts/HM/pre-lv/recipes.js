@@ -333,12 +333,12 @@ ServerEvents.recipes(event => {
 	]);
 
 	event.shaped(Item.of('gtceu:rugged_alloyer'), [
-		'RER',
+		'BEB',
 		'AFA',
-		'CCC'
+		'BRB'
 	], {
 		A: 'minecraft:iron_ingot',
-		C: 'kubejs:reinforced_stone_bricks',
+		B: 'kubejs:reinforced_stone_bricks',
 		F: 'minecraft:furnace',
 		E: 'minecraft:copper_ingot',
 		R: 'minecraft:redstone'
@@ -437,6 +437,9 @@ ServerEvents.recipes(event => {
 		H: '#forge:tools/hammers',
 		F: '#forge:tools/files'
 	});
+
+	event.replaceInput({ id: 'minecraft:blast_furnace' }, 'minecraft:iron_ingot', 'gtceu:iron_plate');
+	event.replaceInput({ id: 'minecraft:blast_furnace' }, 'minecraft:smooth_stone', 'kubejs:reinforced_stone_bricks');
 
 	event.shaped(Item.of('kubejs:mud_brick', 4), [
 		'CCC',
@@ -575,7 +578,7 @@ ServerEvents.recipes(event => {
 	const minecraft_metals = ['iron', 'copper', 'gold'];
 	const gt_metals = ['lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel'];
 	const all_metals = minecraft_metals.concat(gt_metals);
-	
+
 	all_metals.forEach(metal => {
 		const mod = minecraft_metals.includes(metal) ? 'minecraft' : 'gtceu';
 
