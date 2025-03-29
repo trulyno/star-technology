@@ -27,7 +27,6 @@ LootJS.modifiers((event) => {
 	['oak', 'spruce', 'birch', 'dark_oak', 'jungle', 'acacia'].forEach(tree => {
 		event
 			.addBlockLootModifier(`minecraft:${tree}_leaves`)
-			.removeLoot(Ingredient.all)
 			.matchMainHand(Item.of('exnihilosequentia:wooden_crook'))
 			.addLoot(
 				LootEntry.of(`minecraft:${tree}_sapling`).when(c => c.randomChance(0.15)),
