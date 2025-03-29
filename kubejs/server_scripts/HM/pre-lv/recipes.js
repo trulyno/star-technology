@@ -545,6 +545,8 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'minecraft:clay' });
 	event.recipes.create.compacting('minecraft:clay', '4x minecraft:clay_ball');
 
+	event.recipes.create.mixing('minecraft:clay', ['exnihilosequentia:dust', Fluid.of('minecraft:water', 250)]);
+
 	event.shaped(Item.of('gtceu:wood_gear'), [
 		'BBB',
 		'BSB',
