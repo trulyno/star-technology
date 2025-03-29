@@ -560,6 +560,11 @@ ServerEvents.recipes(event => {
 	event.recipes.create.pressing('kubejs:mud_brick', 'kubejs:packed_mud_ball');
 	event.recipes.create.pressing('gtceu:compressed_coke_clay', 'gtceu:coke_clay_dust');
 
+	['andesite', 'granite', 'diorite'].forEach(stone => {
+		event.remove({ id: `create:compacting/${stone}_from_flint` });
+	});
+	event.remove({ id: 'create:compacting/blaze_cake' });
+
 	// Metallurgy Rework via Create
 
 	event.remove({ id: /^create:pressing.*_ingot/ });
