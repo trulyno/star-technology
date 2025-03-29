@@ -1003,6 +1003,7 @@ ServerEvents.recipes(event => {
 	event.shapeless(Item.of('gtceu:wood_plate', 2), [
 		'#forge:tools/files', '#minecraft:planks', '#minecraft:planks', '#minecraft:planks', '#forge:tools/saws'
 	]);
+	event.recipes.create.cutting(['gtceu:wood_plate'], '#minecraft:planks');
 
 	event.shapeless(Item.of('gtceu:treated_wood_plate', 2), [
 		'#forge:tools/files', '#forge:treated_wood', '#forge:treated_wood', '#forge:treated_wood', '#forge:tools/saws'
