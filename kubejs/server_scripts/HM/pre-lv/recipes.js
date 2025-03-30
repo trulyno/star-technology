@@ -363,6 +363,8 @@ ServerEvents.recipes(event => {
 		'#forge:tools/knives',
 		'farmersdelight:tree_bark'
 	]);
+	event.recipes.create.cutting(['kubejs:plant_fibers'], 'farmersdelight:straw');
+	event.recipes.create.cutting(['farmersdelight:straw'], 'farmersdelight:tree_bark');
 
 	event.remove({ id: 'exnihilosequentia:ens_string_mesh' });
 	event.shaped(Item.of('exnihilosequentia:string_mesh'), [
@@ -1018,6 +1020,7 @@ ServerEvents.recipes(event => {
 	event.shapeless(Item.of('gtceu:treated_wood_plate', 2), [
 		'#forge:tools/files', '#forge:treated_wood', '#forge:treated_wood', '#forge:treated_wood', '#forge:tools/saws'
 	]);
+	event.recipes.create.cutting(['gtceu:treated_wood_plate'], '#forge:treated_wood');
 
 	event.shaped(Item.of('create:andesite_casing'), [
 		'PMP',
