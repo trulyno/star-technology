@@ -28,19 +28,20 @@ ServerEvents.recipes(event => {
 		'create:crafting/kinetics/shaft',
 		'create:crafting/kinetics/belt_connector',
 		'minecraft:crafting_table',
-		'gtceu:shaped/iron_wire_single'
+		'gtceu:shaped/iron_wire_single',
+		'gtceu:shaped/bronze_bricks_hull',
 	].forEach(id => event.remove({ id: id }));
 
-	// removes silkworm obtainability
 	[
 		'#minecraft:leaves',
 		'exnihilosequentia:infested_leaves',
 	].forEach(input => event.remove({ type: 'exnihilosequentia:harvest', input: input }));
 
 	[
-		'exnihilosequentia:silkworm',
+		'exnihilosequentia:silkworm',// removes silkworm obtainability
 		'#exnihilosequentia:crook',
 		'#exnihilosequentia:hammer',
+		'create:zinc_ingot'
 	].forEach(output => event.remove({ output: output }));
 
 	[
@@ -50,5 +51,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ input: /^exnihilosequentia:.*_pebble/ });
 
-	event.remove({ output: 'create:zinc_ingot' });
+	event.replaceInput({ input: 'minecraft:string' },
+		'minecraft:string',            
+		'#forge:string'     )
 })
