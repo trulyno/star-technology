@@ -1617,4 +1617,48 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     liquid('blizz', 0xB4EFFA, '1x mystery');
     liquid('basalz', 0x6F190E, '1x mystery');
 
+    if (global.option('enable_particle_accelerator')) {
+
+        let velocity = [
+            'stationary', 'slow', 'low_speed', 'standard', 'mid_speed', 
+            'fast', 'high_speed', 'superfast', 'hypersonic', 
+            'subrelativistic', 'relativistic', 'ultra_relativistic', 
+            'near_light', 'light_speed', 'hyper_light'
+        ];
+
+        let particle = (name, segments, color) => {
+
+            for (let i = 0; i < segments; i++) {
+                event.create(`${velocity[i]}_${name}`)
+                    .liquid(999999)
+                    .color(color)
+                    .components('1x mystery');
+            }
+            event.create(name)
+                .fluid()
+                .color(color)
+                .components('1x mystery');
+        };
+        particle('proton', 2, 0x9e5349);
+        particle('neutron', 3, 0xed964e);
+        particle('electron', 3, 0xa68b05);
+        particle('neutrino', 5, 0x8fba0f);
+        particle('up_quark', 3, 0x1b6903);
+        particle('down_quark', 3, 0x528558);
+        particle('muon', 3, 0x375687);
+        particle('electron_neutrino', 5, 0x409179);
+        particle('meson', 6, 0x00454d);
+        particle('strange_quark', 6, 0x126094);
+        particle('charm_quark', 8, 0x2d5bb5);
+        particle('bottom_quark', 10, 0x0a0c80);
+        particle('higgs_boson', 12, 0x4815a1);
+        particle('tau_particle', 6, 0x560a82);
+        particle('muon_neutrino', 8, 0x8b5c91);
+        particle('tau_neutrino', 8, 0x700f63);
+        particle('gluon', 10, 0xd4228a);
+        particle('photon', 12, 0x9c0840);
+        particle('graviton', 14, 0x00009);
+
+    }
+
 });
