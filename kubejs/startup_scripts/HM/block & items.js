@@ -55,31 +55,27 @@ StartupEvents.registry('item', event => {
 
 	// ================================================================================== //
 
-	const metals = ['Metal'] // is this a placeholder?
-
-	const parts = (metal) => [
-		`Incomplete Long ${metal} Rod`,
-		`Incomplete Double ${metal} Plate`,
-		`Incomplete ${metal} Gear`,
-		`Incomplete Small ${metal} Gear`,
-		`Incomplete ${metal} Rotor`,
-		`Incomplete ${metal} Spring`,
-		`Incomplete Small ${metal} Spring`,
-		`Incomplete 1x ${metal} Wire`,//
-		`Incomplete ${metal} Fine Wire`,
-		`Incomplete ${metal} Cable`,//
-		`Incomplete ${metal} Fluid Pipe`,//
-		`Incomplete ${metal} Item Pipe`,//
+	const parts = [
+		`Incomplete Long Rod`,
+		`Incomplete Double Plate`,
+		`Incomplete Gear`,
+		`Incomplete Small Gear`,
+		`Incomplete Rotor`,
+		`Incomplete Spring`,
+		`Incomplete Small Spring`,
+		`Incomplete Single Wire`,
+		`Incomplete Fine Wire`,
+		`Incomplete Cable`,
+		`Incomplete Fluid Pipe`,
+		`Incomplete Item Pipe`,
 	]
 
-	metals.forEach(metal => {
-		parts(metal).forEach(part =>
-			event
-				.create(to_id(part), 'create:sequenced_assembly')
-				.displayName(part)
-				.texture('kubejs:item/hm/incomplete_parts/' + to_id(part))
-		);
-	});
+	parts.forEach(part =>
+		event
+			.create(to_id(part), 'create:sequenced_assembly')
+			.displayName(part)
+			.texture('kubejs:item/hm/incomplete_parts/' + to_id(part))
+	);
 
 	// ================================================================================== //
 
