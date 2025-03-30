@@ -1067,8 +1067,21 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             .dust()
             .components('1x mystery','1x mystery','1x mystery','1x mystery')
             .color(0x883039)
-            .flags(no_decomp)
+            .iconSet(RADIOACTIVE)
+            .flags(no_decomp);
+
+        event.create('deactivated_nether')
+            .dust()
+            .components('1x mystery','1x mystery')
+            .color(0x664C4C)
+            .flags(no_decomp);
         
+        event.create('activated_nether')
+            .dust()
+            .components('1x mystery','1x mystery')
+            .color(0xA01819)
+            .flags(no_decomp);
+
         //Estalt Line
         event.create('molten_estaltadyne_mixture')
             .fluid()

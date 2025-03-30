@@ -3,11 +3,18 @@ ServerEvents.recipes(event => {
 
     //Mystical Magma
     event.recipes.gtceu.cyclonic_sifter('mystical_nether_magma')
-        .inputFluids('gtceu:highly_unstable_nether_magma 250000')
+        .inputFluids('gtceu:highly_unstable_nether_magma 100000')
         .chancedInput('1x kubejs:ancient_netherite_reinforced_mesh', 1000, -150)
-        .outputFluids('gtceu:mystical_nether_magma 20000')
-        .duration(900)
+        .outputFluids('gtceu:mystical_nether_magma 8000')
+        .itemOutputs('1x gtceu:deactivated_nether_dust')
+        .duration(1050)
         .EUt(GTValues.VA[GTValues.UEV]*3/11);
+
+    event.recipes.gtceu.polarizer('nether_dust_activation')
+        .itemInputs('1x gtceu:deactivated_nether_dust')
+        .itemOutputs('1x gtceu:activated_nether_dust')
+        .duration(360)
+        .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.manifold_centrifuge('mystical_nether_magma_deconstruction')
         .inputFluids('gtceu:mystical_nether_magma 3000')
@@ -42,12 +49,12 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     ['mythrillic','adamantamite'].forEach(type=>{
-        event.recipes.gtceu.heat_chamber(`enriched_${type}_to_atomic_nether_sludge_dust_zirconium_dust`)
-            .inputFluids(`gtceu:enriched_${type}_mixture 4000`)
-            .itemInputs('64x gtceu:zirconium_dust')
-            .outputFluids(`gtceu:molten_${type}_mixture 4000`)
-            .itemOutputs('4x gtceu:atomic_nether_sludge_dust')
-            .duration(1600)
+        event.recipes.gtceu.heat_chamber(`activated_nether_by_enriched_${type}_to_atomic_nether_sludge`)
+            .inputFluids(`gtceu:enriched_${type}_mixture 1000`)
+            .itemInputs('1x gtceu:activated_nether_dust')
+            .outputFluids(`gtceu:molten_${type}_mixture 1000`)
+            .itemOutputs('1x gtceu:atomic_nether_sludge_dust')
+            .duration(400)
             .EUt(GTValues.VHA[GTValues.UHV]); 
     });
 

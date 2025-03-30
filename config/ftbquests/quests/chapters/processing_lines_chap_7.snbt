@@ -43,7 +43,7 @@
 				item: "gtceu:mythrillic_nether_magma_bucket"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.5d
 			y: -6.0d
 		}
 		{
@@ -65,7 +65,7 @@
 				item: "gtceu:estaltadyne_nether_magma_bucket"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.5d
 			y: 0.0d
 		}
 		{
@@ -76,8 +76,8 @@
 				item: "gtceu:debris_rich_nether_magma_bucket"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -3.0d
+			x: -13.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7451A2DF93606CDC"]
@@ -88,7 +88,7 @@
 				type: "item"
 			}]
 			x: -12.5d
-			y: -4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7451A2DF93606CDC"]
@@ -98,8 +98,8 @@
 				item: "gtceu:ancient_debris_bucket"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -5.0d
+			x: -13.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7929201A23B936BA"]
@@ -110,7 +110,7 @@
 				type: "item"
 			}]
 			x: -11.0d
-			y: -4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4D2B3401F3AA75FC"]
@@ -120,8 +120,8 @@
 				item: "minecraft:ancient_debris"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -6.0d
+			x: -13.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3E6F078877DBD0FA"]
@@ -131,8 +131,8 @@
 				item: "gtceu:ancient_debris_dust"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -6.0d
+			x: -12.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["273E965C174936E0"]
@@ -142,7 +142,7 @@
 				item: "gtceu:ancient_netherite_ingot"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -10.5d
 			y: -5.0d
 		}
 		{
@@ -153,7 +153,7 @@
 				item: "kubejs:ancient_netherite_reinforced_mesh"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -9.5d
 			y: -4.0d
 		}
 		{
@@ -175,7 +175,7 @@
 				}
 			]
 			title: "Enriched &d&oMystical&r Fluids"
-			x: -6.5d
+			x: -7.5d
 			y: -4.5d
 		}
 		{
@@ -187,13 +187,13 @@
 				item: "gtceu:molten_mythrillic_mixture_bucket"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.0d
 			y: -6.0d
 		}
 		{
 			dependencies: [
 				"59546454CFFA57C6"
-				"2628EC73C90B970F"
+				"465B8B6CC911EC13"
 			]
 			hide_dependent_lines: true
 			id: "3FF8846DDD34469D"
@@ -203,7 +203,7 @@
 				item: "gtceu:atomic_nether_sludge_dust"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: -4.5d
 		}
 		{
@@ -214,7 +214,7 @@
 				item: "gtceu:mythrillic_bucket"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.5d
 			y: -6.0d
 		}
 		{
@@ -225,7 +225,7 @@
 				item: "gtceu:mythrillic_dust"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.0d
 			y: -6.0d
 		}
 		{
@@ -236,7 +236,7 @@
 				item: "gtceu:hydrogen_bucket"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: -7.0d
 		}
 		{
@@ -247,7 +247,7 @@
 				item: "gtceu:mythrillic_carbinide_dust"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: -6.0d
 		}
 		{
@@ -261,7 +261,7 @@
 				item: "gtceu:mythrillic_metlide_dust"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: -6.0d
 		}
 		{
@@ -271,7 +271,7 @@
 				item: "gtceu:oxygen_bucket"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: -5.0d
 		}
 		{
@@ -282,7 +282,7 @@
 				item: "gtceu:carbon_dioxide_bucket"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: -7.0d
 		}
 		{
@@ -293,7 +293,7 @@
 				item: "gtceu:mythrillic_metnide_dust"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.5d
 			y: -6.0d
 		}
 		{
@@ -304,7 +304,7 @@
 				item: "gtceu:vanadium_dust"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.0d
 			y: -7.0d
 		}
 		{
@@ -318,7 +318,7 @@
 				item: "gtceu:mythrillic_hydride_dust"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: -6.0d
 		}
 		{
@@ -328,7 +328,7 @@
 				item: "gtceu:hydrochloric_acid_bucket"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 1.5d
 			y: -5.0d
 		}
 		{
@@ -339,7 +339,7 @@
 				item: "gtceu:zirconium_tetrachloride_dust"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 2.5d
 			y: -7.0d
 		}
 		{
@@ -353,7 +353,7 @@
 				item: "gtceu:mythril_dust"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.5d
 			y: -6.0d
 		}
 		{
@@ -364,7 +364,7 @@
 				item: "gtceu:hydrogen_sulfide_bucket"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: -7.0d
 		}
 		{
@@ -374,7 +374,7 @@
 				item: "gtceu:sulfur_dust"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: -5.0d
 		}
 		{
@@ -387,7 +387,7 @@
 				item: "gtceu:mythril_ingot"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 7.0d
 			y: -6.0d
 		}
 		{
@@ -398,7 +398,7 @@
 				item: "gtceu:hot_mythril_ingot"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: -6.0d
 		}
 		{
@@ -412,25 +412,6 @@
 			}]
 			x: -5.0d
 			y: -3.0d
-		}
-		{
-			dependencies: ["1BE69DB2DFDC35C8"]
-			id: "2628EC73C90B970F"
-			tasks: [
-				{
-					id: "2C38CE5FDD6279F5"
-					item: "gtceu:hafnium_dust"
-					type: "item"
-				}
-				{
-					id: "5B8A3BF16D31D9AA"
-					item: "gtceu:zirconium_dust"
-					type: "item"
-				}
-			]
-			title: "Neutron Absorbers "
-			x: -3.5d
-			y: -4.5d
 		}
 		{
 			dependencies: ["0C5C27D80FE3D7D6"]
@@ -741,8 +722,8 @@
 				title: "Nether Drilling"
 				type: "checkmark"
 			}]
-			x: -12.0d
-			y: -1.5d
+			x: -11.75d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1DD1F042C58A825D"]
@@ -752,7 +733,7 @@
 				item: "gtceu:molten_estaltadyne_mixture_bucket"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.5d
 			y: 4.5d
 		}
 		{
@@ -763,7 +744,7 @@
 				item: "gtceu:enriched_estaltadyne_mixture_bucket"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.0d
 			y: 0.0d
 		}
 		{
@@ -777,7 +758,7 @@
 				item: "gtceu:enriched_estaltadyne_solution_bucket"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.5d
 			y: 0.0d
 		}
 		{
@@ -787,7 +768,7 @@
 				item: "gtceu:polonium_dust"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: 1.0d
 		}
 		{
@@ -798,7 +779,7 @@
 				item: "gtceu:lead_dust"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.0d
 			y: -1.0d
 		}
 		{
@@ -808,7 +789,7 @@
 				item: "gtceu:perchloric_acid_bucket"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -4.5d
 			y: 1.0d
 		}
 		{
@@ -822,7 +803,7 @@
 				item: "gtceu:enriched_estaltadyne_slurry_bucket"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.0d
 			y: 0.0d
 		}
 		{
@@ -832,7 +813,7 @@
 				item: "gtceu:enriched_naquadah_dust"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.0d
 			y: 1.0d
 		}
 		{
@@ -846,7 +827,7 @@
 				item: "gtceu:enriched_estaltadyne_naquide_slurry_mixture_bucket"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: 0.0d
 		}
 		{
@@ -856,7 +837,7 @@
 				item: "gtceu:calcium_dust"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: -1.0d
 		}
 		{
@@ -867,7 +848,7 @@
 				item: "gtceu:ionized_sculk_dust"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: 1.0d
 		}
 		{
@@ -878,7 +859,7 @@
 				item: "gtceu:sculk_dust"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: 2.0d
 		}
 		{
@@ -889,7 +870,7 @@
 				item: "gtceu:echo_shard_dust"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.5d
 			y: 2.0d
 		}
 		{
@@ -900,7 +881,7 @@
 				item: "gtceu:naquadah_dust"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: 1.0d
 		}
 		{
@@ -915,7 +896,7 @@
 				item: "gtceu:hyper_enriched_estaltadyne_slurry_mixture_bucket"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 0.0d
 		}
 		{
@@ -926,7 +907,7 @@
 				item: "gtceu:hyper_enriched_estaltadyne_slurry_residue_bucket"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.5d
 			y: 0.0d
 		}
 		{
@@ -937,7 +918,7 @@
 				item: "gtceu:calcium_perchlorate_dust"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: -1.0d
 		}
 		{
@@ -947,7 +928,7 @@
 				item: "gtceu:sodium_dust"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 1.5d
 			y: 1.0d
 		}
 		{
@@ -958,7 +939,7 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 2.5d
 			y: -1.0d
 		}
 		{
@@ -972,7 +953,7 @@
 				item: "gtceu:sodium_hyper_enriched_estaltadyne_sludge_bucket"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -983,7 +964,7 @@
 				item: "gtceu:hyper_enriched_estaltadyne_concentrate_bucket"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.5d
 			y: 0.0d
 		}
 		{
@@ -994,7 +975,7 @@
 				item: "gtceu:sodium_over_sculk_dust"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 2.5d
 			y: 1.0d
 		}
 		{
@@ -1005,7 +986,7 @@
 				item: "gtceu:enriched_mystical_concentrate_bucket"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 4.5d
 			y: 2.0d
 		}
 		{
@@ -1016,7 +997,7 @@
 				item: "gtceu:enriched_estalt_dust"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -1027,7 +1008,7 @@
 				item: "gtceu:hot_enriched_estalt_ingot"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 6.5d
 			y: 0.0d
 		}
 		{
@@ -1040,7 +1021,7 @@
 				item: "gtceu:enriched_estalt_ingot"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
@@ -1051,7 +1032,7 @@
 				item: "gtceu:enriched_mythrillic_mixture_bucket"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 5.5d
 			y: 1.0d
 		}
 		{
@@ -1062,7 +1043,7 @@
 				item: "gtceu:enriched_adamantamite_mixture_bucket"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.0d
 			y: 2.0d
 		}
 		{
@@ -1073,7 +1054,7 @@
 				item: "gtceu:enriched_estaltadyne_mixture_bucket"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 5.5d
 			y: 3.0d
 		}
 		{
@@ -1084,7 +1065,7 @@
 				item: "gtceu:estaltadyne_bucket"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -7.0d
 			y: 4.5d
 		}
 		{
@@ -1098,7 +1079,7 @@
 				item: "gtceu:estaltadyne_dust"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -5.5d
 			y: 4.5d
 		}
 		{
@@ -1109,7 +1090,7 @@
 				item: "gtceu:metmalic_estaltadyne_dust"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -4.0d
 			y: 4.5d
 		}
 		{
@@ -1119,7 +1100,7 @@
 				item: "gtceu:carbon_dust"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -6.0d
 			y: 5.5d
 		}
 		{
@@ -1130,7 +1111,7 @@
 				item: "gtceu:carbon_dioxide_bucket"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -5.0d
 			y: 3.5d
 		}
 		{
@@ -1141,7 +1122,7 @@
 				item: "gtceu:magnemalic_estaltadyne_dust"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.5d
 			y: 4.5d
 		}
 		{
@@ -1152,7 +1133,7 @@
 				item: "gtceu:aluminium_dust"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -3.5d
 			y: 5.5d
 		}
 		{
@@ -1162,7 +1143,7 @@
 				item: "gtceu:sodium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -1.5d
 			y: 5.5d
 		}
 		{
@@ -1177,7 +1158,7 @@
 				item: "gtceu:tytite_estaltadyne_dust"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -1.0d
 			y: 4.5d
 		}
 		{
@@ -1187,7 +1168,7 @@
 				item: "gtceu:oxygen_bucket"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -1.5d
 			y: 3.5d
 		}
 		{
@@ -1198,7 +1179,7 @@
 				item: "gtceu:sodium_bisulfate_dust"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -0.5d
 			y: 3.5d
 		}
 		{
@@ -1212,7 +1193,7 @@
 				item: "gtceu:estaltadyne_hydride_dust"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 0.5d
 			y: 4.5d
 		}
 		{
@@ -1222,7 +1203,7 @@
 				item: "gtceu:hydrofluoric_acid_bucket"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 0.0d
 			y: 5.5d
 		}
 		{
@@ -1233,7 +1214,7 @@
 				item: "gtceu:titanium_trifluoride_dust"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 1.0d
 			y: 3.5d
 		}
 		{
@@ -1247,7 +1228,7 @@
 				item: "gtceu:estalt_dust"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 2.0d
 			y: 4.5d
 		}
 		{
@@ -1257,7 +1238,7 @@
 				item: "gtceu:phosphate_dust"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 1.5d
 			y: 5.5d
 		}
 		{
@@ -1268,7 +1249,7 @@
 				item: "gtceu:phosphoric_acid_bucket"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 2.5d
 			y: 3.5d
 		}
 		{
@@ -1279,7 +1260,7 @@
 				item: "gtceu:hot_estalt_ingot"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 3.5d
 			y: 4.5d
 		}
 		{
@@ -1292,7 +1273,7 @@
 				item: "gtceu:estalt_ingot"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 5.5d
 			y: 4.5d
 		}
 		{
@@ -1306,7 +1287,7 @@
 				item: "gtceu:estalt_dust"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 3.5d
 			y: 7.0d
 		}
 		{
@@ -1316,7 +1297,7 @@
 				item: "gtceu:fluoroantimonic_acid_bucket"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 2.0d
 			y: 7.0d
 		}
 		{
@@ -1327,7 +1308,7 @@
 				item: "gtceu:impure_isovol_solution_bucket"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 4.5d
 			y: 6.0d
 		}
 		{
@@ -1338,7 +1319,7 @@
 				item: "gtceu:impure_calamatium_solution_bucket"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 4.5d
 			y: 8.0d
 		}
 		{
@@ -1349,7 +1330,7 @@
 				item: "gtceu:fluorine_bucket"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 4.5d
 			y: 7.0d
 		}
 		{
@@ -1360,7 +1341,7 @@
 				item: "gtceu:isovol_solution_bucket"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 6.0d
 			y: 6.0d
 		}
 		{
@@ -1371,7 +1352,7 @@
 				item: "gtceu:calamatium_solution_bucket"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 6.0d
 			y: 8.0d
 		}
 		{
@@ -1385,7 +1366,7 @@
 				item: "gtceu:antimony_trifluoride_dust"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 5.5d
 			y: 7.0d
 		}
 		{
@@ -1399,7 +1380,7 @@
 				item: "gtceu:hydrogen_bucket"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 6.5d
 			y: 7.0d
 		}
 		{
@@ -1410,7 +1391,7 @@
 				item: "gtceu:calamatium_fluoride_dust"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 7.5d
 			y: 8.0d
 		}
 		{
@@ -1421,7 +1402,7 @@
 				item: "gtceu:isovol_fluoride_dust"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 7.5d
 			y: 6.0d
 		}
 		{
@@ -1431,7 +1412,7 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 8.0d
 			y: 7.0d
 		}
 		{
@@ -1445,7 +1426,7 @@
 				item: "gtceu:isovol_dust"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 9.0d
 			y: 6.0d
 		}
 		{
@@ -1459,7 +1440,7 @@
 				item: "gtceu:calamatium_dust"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 9.0d
 			y: 8.0d
 		}
 		{
@@ -1473,7 +1454,7 @@
 				item: "gtceu:hydrofluoric_acid_bucket"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 10.0d
 			y: 7.0d
 		}
 		{
@@ -1487,7 +1468,7 @@
 				item: "gtceu:oxygen_bucket"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 9.0d
 			y: 7.0d
 		}
 		{
@@ -1498,7 +1479,7 @@
 				item: "gtceu:hot_isovol_ingot"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 10.5d
 			y: 6.0d
 		}
 		{
@@ -1509,7 +1490,7 @@
 				item: "gtceu:hot_calamatium_ingot"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 10.5d
 			y: 8.0d
 		}
 		{
@@ -1522,7 +1503,7 @@
 				item: "gtceu:isovol_ingot"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 12.5d
 			y: 6.0d
 		}
 		{
@@ -1535,7 +1516,7 @@
 				item: "gtceu:calamatium_ingot"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 12.5d
 			y: 8.0d
 		}
 		{
@@ -1545,12 +1526,13 @@
 			]
 			id: "24288AB05FC9DB33"
 			shape: "circle"
+			size: 1.5d
 			tasks: [{
 				id: "11E46FF3B73EBE0C"
 				item: "gtceu:atomic_nether_sludge_dust"
 				type: "item"
 			}]
-			x: 16.5d
+			x: 13.5d
 			y: 1.0d
 		}
 		{
@@ -1561,7 +1543,7 @@
 				item: "gtceu:hafnium_thorium_iron_magnesium_disilicate_monosulfate_bonded_iron_2_barium_diastatide_trisulfate_dust"
 				type: "item"
 			}]
-			x: 18.5d
+			x: 15.5d
 			y: 4.0d
 		}
 		{
@@ -1572,7 +1554,7 @@
 				item: "gtceu:seaborgium_cerium_tricarbon_tetrakis_orthosilicate_linked_dipolonium_diplatinum_tris_pyrophosphate_dust"
 				type: "item"
 			}]
-			x: 18.5d
+			x: 15.5d
 			y: -2.0d
 		}
 		{
@@ -1583,7 +1565,7 @@
 				item: "gtceu:flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth_dust"
 				type: "item"
 			}]
-			x: 17.5d
+			x: 14.5d
 			y: -6.5d
 		}
 		{
@@ -1594,7 +1576,7 @@
 				item: "gtceu:caesium_oganesson_hexanitrate_tetrafluorouranate_bucket"
 				type: "item"
 			}]
-			x: 17.5d
+			x: 14.5d
 			y: 8.5d
 		}
 		{
@@ -1605,7 +1587,7 @@
 				item: "gtceu:rare_earth_dust"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 15.0d
 			y: -5.5d
 		}
 		{
@@ -1616,7 +1598,7 @@
 				item: "gtceu:flerovium_hexaoxide_octafluorosulfatoplutonate_dust"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 16.0d
 			y: -6.5d
 		}
 		{
@@ -1627,7 +1609,7 @@
 				item: "gtceu:enriched_uranium_hexafluoride_bucket"
 				type: "item"
 			}]
-			x: 19.5d
+			x: 16.5d
 			y: -5.5d
 		}
 		{
@@ -1641,7 +1623,7 @@
 				item: "gtceu:flerovium_hexadecafluoride_di_sulfur_trioxide_dust"
 				type: "item"
 			}]
-			x: 20.5d
+			x: 17.5d
 			y: -6.5d
 		}
 		{
@@ -1651,7 +1633,7 @@
 				item: "gtceu:silver_oxide_dust"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 17.0d
 			y: -7.5d
 		}
 		{
@@ -1662,7 +1644,7 @@
 				item: "gtceu:silver_sulfate_dust"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 18.0d
 			y: -5.5d
 		}
 		{
@@ -1673,7 +1655,7 @@
 				item: "gtceu:flerovium_hexadecafluoride_dust"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 19.0d
 			y: -6.5d
 		}
 		{
@@ -1687,7 +1669,7 @@
 				item: "gtceu:flerovium_tetrafluoride_dust"
 				type: "item"
 			}]
-			x: 23.5d
+			x: 20.5d
 			y: -6.5d
 		}
 		{
@@ -1697,7 +1679,7 @@
 				item: "gtceu:hydrogen_bucket"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 20.0d
 			y: -5.5d
 		}
 		{
@@ -1708,7 +1690,7 @@
 				item: "gtceu:hydrofluoric_acid_bucket"
 				type: "item"
 			}]
-			x: 24.0d
+			x: 21.0d
 			y: -7.5d
 		}
 		{
@@ -1719,7 +1701,7 @@
 				item: "gtceu:hot_flerovium_ingot"
 				type: "item"
 			}]
-			x: 25.0d
+			x: 22.0d
 			y: -6.5d
 		}
 		{
@@ -1732,7 +1714,7 @@
 				item: "gtceu:flerovium_ingot"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 24.0d
 			y: -6.5d
 		}
 		{
@@ -1746,8 +1728,8 @@
 				item: "gtceu:hexafluorobromic_acid_bucket"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 1.0d
+			x: 12.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7762F2BCE23AF74B"]
@@ -1757,7 +1739,7 @@
 				item: "gtceu:uranium_tetrafluoride_bucket"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 15.0d
 			y: 9.5d
 		}
 		{
@@ -1771,7 +1753,7 @@
 				item: "gtceu:caesium_oganesson_hexanitrate_bucket"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 16.0d
 			y: 8.5d
 		}
 		{
@@ -1781,7 +1763,7 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 18.5d
+			x: 15.5d
 			y: 7.5d
 		}
 		{
@@ -1792,7 +1774,7 @@
 				item: "gtceu:nitric_acid_bucket"
 				type: "item"
 			}]
-			x: 19.75d
+			x: 16.75d
 			y: 9.5d
 		}
 		{
@@ -1806,7 +1788,7 @@
 				item: "gtceu:caesium_oganesson_trioxide_bucket"
 				type: "item"
 			}]
-			x: 20.5d
+			x: 17.5d
 			y: 8.5d
 		}
 		{
@@ -1817,7 +1799,7 @@
 				item: "gtceu:caesium_nitrate_bucket"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 18.0d
 			y: 9.5d
 		}
 		{
@@ -1831,7 +1813,7 @@
 				item: "gtceu:oganesson_tetranitrate_bucket"
 				type: "item"
 			}]
-			x: 22.5d
+			x: 19.5d
 			y: 8.5d
 		}
 		{
@@ -1842,7 +1824,7 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 18.0d
 			y: 7.5d
 		}
 		{
@@ -1852,7 +1834,7 @@
 				item: "gtceu:sulfuric_acid_bucket"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 19.0d
 			y: 9.5d
 		}
 		{
@@ -1863,7 +1845,7 @@
 				item: "gtceu:sulfate_dust"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 20.0d
 			y: 7.5d
 		}
 		{
@@ -1876,7 +1858,7 @@
 				item: "gtceu:oganesson_bucket"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 21.5d
 			y: 8.5d
 		}
 		{
@@ -1887,7 +1869,7 @@
 				item: "gtceu:nitric_acid_bucket"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 20.0d
 			y: 9.5d
 		}
 		{
@@ -1901,7 +1883,7 @@
 				item: "gtceu:hafnium_thorium_iron_magnesium_disilicate_monosulfate_dust"
 				type: "item"
 			}]
-			x: 19.5d
+			x: 16.5d
 			y: 5.5d
 		}
 		{
@@ -1915,7 +1897,7 @@
 				item: "gtceu:iron_2_barium_diastatide_trisulfate_dust"
 				type: "item"
 			}]
-			x: 19.5d
+			x: 16.5d
 			y: 2.5d
 		}
 		{
@@ -1929,7 +1911,7 @@
 				item: "gtceu:dipolonium_diplatinum_tris_pyrophosphate_dust"
 				type: "item"
 			}]
-			x: 19.5d
+			x: 16.5d
 			y: -0.5d
 		}
 		{
@@ -1943,7 +1925,7 @@
 				item: "gtceu:seaborgium_cerium_tricarbon_tetrakis_orthosilicate_dust"
 				type: "item"
 			}]
-			x: 19.5d
+			x: 16.5d
 			y: -3.5d
 		}
 		{
@@ -1953,7 +1935,7 @@
 				item: "gtceu:sulfuric_acid_bucket"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 16.0d
 			y: -4.5d
 		}
 		{
@@ -1964,7 +1946,7 @@
 				item: "gtceu:silicic_acid_bucket"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 17.0d
 			y: -2.5d
 		}
 		{
@@ -1978,7 +1960,7 @@
 				item: "gtceu:seaborgium_cerium_tricarbon_octasulfate_dust"
 				type: "item"
 			}]
-			x: 21.5d
+			x: 18.5d
 			y: -3.5d
 		}
 		{
@@ -1988,7 +1970,7 @@
 				item: "gtceu:chromium_trioxide_dust"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 18.0d
 			y: -4.5d
 		}
 		{
@@ -1999,7 +1981,7 @@
 				item: "gtceu:cerium_4_sulfate_dust"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 19.0d
 			y: -4.5d
 		}
 		{
@@ -2010,7 +1992,7 @@
 				item: "gtceu:chromium_sulfate_dust"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 19.0d
 			y: -2.5d
 		}
 		{
@@ -2024,7 +2006,7 @@
 				item: "gtceu:seaborgium_trisulfate_dust"
 				type: "item"
 			}]
-			x: 23.5d
+			x: 20.5d
 			y: -3.5d
 		}
 		{
@@ -2035,7 +2017,7 @@
 				item: "gtceu:carbon_dioxide_bucket"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 18.0d
 			y: -2.5d
 		}
 		{
@@ -2045,7 +2027,7 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 20.0d
 			y: -2.5d
 		}
 		{
@@ -2056,7 +2038,7 @@
 				item: "gtceu:sulfuric_acid_bucket"
 				type: "item"
 			}]
-			x: 24.0d
+			x: 21.0d
 			y: -4.5d
 		}
 		{
@@ -2070,7 +2052,7 @@
 				item: "gtceu:seaborgium_trioxide_dust"
 				type: "item"
 			}]
-			x: 25.0d
+			x: 22.0d
 			y: -3.5d
 		}
 		{
@@ -2080,7 +2062,7 @@
 				item: "gtceu:sodium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 21.5d
 			y: -2.5d
 		}
 		{
@@ -2091,7 +2073,7 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 25.5d
+			x: 22.5d
 			y: -4.5d
 		}
 		{
@@ -2105,7 +2087,7 @@
 				item: "gtceu:sodium_seaborgate_dust"
 				type: "item"
 			}]
-			x: 26.5d
+			x: 23.5d
 			y: -3.5d
 		}
 		{
@@ -2115,7 +2097,7 @@
 				item: "gtceu:hydrochloric_acid_bucket"
 				type: "item"
 			}]
-			x: 26.0d
+			x: 23.0d
 			y: -2.5d
 		}
 		{
@@ -2126,7 +2108,7 @@
 				item: "gtceu:salt_dust"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 24.0d
 			y: -4.5d
 		}
 		{
@@ -2140,7 +2122,7 @@
 				item: "gtceu:seaborgium_dioxide_dust"
 				type: "item"
 			}]
-			x: 28.5d
+			x: 25.5d
 			y: -3.5d
 		}
 		{
@@ -2151,7 +2133,7 @@
 				item: "gtceu:hydroxide_bucket"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 24.0d
 			y: -2.5d
 		}
 		{
@@ -2161,7 +2143,7 @@
 				item: "gtceu:hydrogen_bucket"
 				type: "item"
 			}]
-			x: 28.0d
+			x: 25.0d
 			y: -2.5d
 		}
 		{
@@ -2172,7 +2154,7 @@
 				item: "gtceu:steam_bucket"
 				type: "item"
 			}]
-			x: 29.0d
+			x: 26.0d
 			y: -4.5d
 		}
 		{
@@ -2183,7 +2165,7 @@
 				item: "gtceu:hot_seaborgium_ingot"
 				type: "item"
 			}]
-			x: 30.0d
+			x: 27.0d
 			y: -3.5d
 		}
 		{
@@ -2196,7 +2178,7 @@
 				item: "gtceu:seaborgium_ingot"
 				type: "item"
 			}]
-			x: 32.0d
+			x: 29.0d
 			y: -3.5d
 		}
 		{
@@ -2206,7 +2188,7 @@
 				item: "gtceu:hydrochloric_acid_bucket"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 16.0d
 			y: 0.5d
 		}
 		{
@@ -2217,7 +2199,7 @@
 				item: "gtceu:platinum_raw_dust"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 17.0d
 			y: 0.5d
 		}
 		{
@@ -2231,7 +2213,7 @@
 				item: "gtceu:polonium_pyrophosphate_dust"
 				type: "item"
 			}]
-			x: 21.5d
+			x: 18.5d
 			y: -0.5d
 		}
 		{
@@ -2242,7 +2224,7 @@
 				item: "gtceu:pyrophosphoric_acid_bucket"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 17.0d
 			y: -1.5d
 		}
 		{
@@ -2252,7 +2234,7 @@
 				item: "gtceu:hydrochloric_acid_bucket"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 18.0d
 			y: 0.5d
 		}
 		{
@@ -2263,7 +2245,7 @@
 				item: "gtceu:pyrophosphoric_acid_bucket"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 19.0d
 			y: -1.5d
 		}
 		{
@@ -2277,7 +2259,7 @@
 				item: "gtceu:polonium_tetrachloride_dust"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 20.0d
 			y: -0.5d
 		}
 		{
@@ -2291,7 +2273,7 @@
 				item: "gtceu:polonium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 21.5d
 			y: -0.5d
 		}
 		{
@@ -2302,7 +2284,7 @@
 				item: "gtceu:salt_dust"
 				type: "item"
 			}]
-			x: 23.5d
+			x: 20.5d
 			y: -1.5d
 		}
 		{
@@ -2312,7 +2294,7 @@
 				item: "gtceu:sodium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 22.5d
+			x: 19.5d
 			y: 0.5d
 		}
 		{
@@ -2326,7 +2308,7 @@
 				item: "gtceu:polonium_carbonate_dust"
 				type: "item"
 			}]
-			x: 26.0d
+			x: 23.0d
 			y: -0.5d
 		}
 		{
@@ -2336,7 +2318,7 @@
 				item: "gtceu:carbon_monoxide_bucket"
 				type: "item"
 			}]
-			x: 24.0d
+			x: 21.0d
 			y: 0.5d
 		}
 		{
@@ -2347,7 +2329,7 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 25.0d
+			x: 22.0d
 			y: -1.5d
 		}
 		{
@@ -2357,7 +2339,7 @@
 				item: "gtceu:calcium_dust"
 				type: "item"
 			}]
-			x: 25.5d
+			x: 22.5d
 			y: 0.5d
 		}
 		{
@@ -2368,7 +2350,7 @@
 				item: "gtceu:calcium_carbonate_dust"
 				type: "item"
 			}]
-			x: 26.5d
+			x: 23.5d
 			y: -1.5d
 		}
 		{
@@ -2379,7 +2361,7 @@
 				item: "gtceu:hot_polonium_ingot"
 				type: "item"
 			}]
-			x: 27.5d
+			x: 24.5d
 			y: -0.5d
 		}
 		{
@@ -2392,7 +2374,7 @@
 				item: "gtceu:polonium_ingot"
 				type: "item"
 			}]
-			x: 29.5d
+			x: 26.5d
 			y: -0.5d
 		}
 		{
@@ -2402,7 +2384,7 @@
 				item: "gtceu:potassium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 16.0d
 			y: 6.5d
 		}
 		{
@@ -2413,7 +2395,7 @@
 				item: "gtceu:potassium_sulfate_dust"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 17.0d
 			y: 4.5d
 		}
 		{
@@ -2424,7 +2406,7 @@
 				item: "gtceu:magnesium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 17.0d
 			y: 6.5d
 		}
 		{
@@ -2438,7 +2420,7 @@
 				item: "gtceu:hafnium_thorium_iron_2_hydroxide_potassium_disilicate_dust"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 19.0d
 			y: 5.5d
 		}
 		{
@@ -2448,7 +2430,7 @@
 				item: "gtceu:hydrochloric_acid_bucket"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 18.0d
 			y: 4.5d
 		}
 		{
@@ -2459,7 +2441,7 @@
 				item: "gtceu:potassium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 19.0d
 			y: 4.5d
 		}
 		{
@@ -2470,7 +2452,7 @@
 				item: "gtceu:silicon_dioxide_dust"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 20.0d
 			y: 6.5d
 		}
 		{
@@ -2484,7 +2466,7 @@
 				item: "gtceu:hafnium_thorium_octachloride_dust"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 21.5d
 			y: 5.5d
 		}
 		{
@@ -2495,7 +2477,7 @@
 				item: "gtceu:hydrogen_bucket"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 19.0d
 			y: 6.5d
 		}
 		{
@@ -2506,7 +2488,7 @@
 				item: "gtceu:iron_2_hydroxide_dust"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 20.0d
 			y: 4.5d
 		}
 		{
@@ -2516,7 +2498,7 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 24.0d
+			x: 21.0d
 			y: 6.5d
 		}
 		{
@@ -2527,7 +2509,7 @@
 				item: "gtceu:hydrochloric_acid_bucket"
 				type: "item"
 			}]
-			x: 25.0d
+			x: 22.0d
 			y: 4.5d
 		}
 		{
@@ -2538,7 +2520,7 @@
 				item: "gtceu:thorium_dioxide_dust"
 				type: "item"
 			}]
-			x: 25.0d
+			x: 22.0d
 			y: 6.5d
 		}
 		{
@@ -2552,7 +2534,7 @@
 				item: "gtceu:hafnium_dioxide_dust"
 				type: "item"
 			}]
-			x: 26.5d
+			x: 23.5d
 			y: 5.5d
 		}
 		{
@@ -2562,7 +2544,7 @@
 				item: "gtceu:sodium_bicarbonate_dust"
 				type: "item"
 			}]
-			x: 26.0d
+			x: 23.0d
 			y: 6.5d
 		}
 		{
@@ -2573,7 +2555,7 @@
 				item: "gtceu:carbon_dioxide_bucket"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 24.0d
 			y: 4.5d
 		}
 		{
@@ -2584,7 +2566,7 @@
 				item: "gtceu:steam_bucket"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 24.0d
 			y: 6.5d
 		}
 		{
@@ -2598,7 +2580,7 @@
 				item: "gtceu:sodium_hafnate_dust"
 				type: "item"
 			}]
-			x: 28.5d
+			x: 25.5d
 			y: 5.5d
 		}
 		{
@@ -2608,7 +2590,7 @@
 				item: "gtceu:hydrochloric_acid_bucket"
 				type: "item"
 			}]
-			x: 28.0d
+			x: 25.0d
 			y: 6.5d
 		}
 		{
@@ -2619,7 +2601,7 @@
 				item: "gtceu:brackish_water_bucket"
 				type: "item"
 			}]
-			x: 29.0d
+			x: 26.0d
 			y: 4.5d
 		}
 		{
@@ -2633,7 +2615,7 @@
 				item: "gtceu:hafnium_hexachloride_dust"
 				type: "item"
 			}]
-			x: 30.0d
+			x: 27.0d
 			y: 5.5d
 		}
 		{
@@ -2643,7 +2625,7 @@
 				item: "gtceu:magnesium_dust"
 				type: "item"
 			}]
-			x: 29.5d
+			x: 26.5d
 			y: 6.5d
 		}
 		{
@@ -2654,7 +2636,7 @@
 				item: "gtceu:magnesium_chloride_dust"
 				type: "item"
 			}]
-			x: 30.5d
+			x: 27.5d
 			y: 4.5d
 		}
 		{
@@ -2665,7 +2647,7 @@
 				item: "gtceu:hot_hafnium_ingot"
 				type: "item"
 			}]
-			x: 31.5d
+			x: 28.5d
 			y: 5.5d
 		}
 		{
@@ -2678,7 +2660,7 @@
 				item: "gtceu:hafnium_ingot"
 				type: "item"
 			}]
-			x: 33.5d
+			x: 30.5d
 			y: 5.5d
 		}
 		{
@@ -2688,7 +2670,7 @@
 				item: "gtceu:hydrochloric_acid_bucket"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 16.0d
 			y: 1.5d
 		}
 		{
@@ -2699,7 +2681,7 @@
 				item: "gtceu:iron_iii_chloride_bucket"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 17.0d
 			y: 1.5d
 		}
 		{
@@ -2710,7 +2692,7 @@
 				item: "gtceu:sulfuric_acid_bucket"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 17.0d
 			y: 3.5d
 		}
 		{
@@ -2724,7 +2706,7 @@
 				item: "gtceu:barium_diastatide_dust"
 				type: "item"
 			}]
-			x: 21.5d
+			x: 18.5d
 			y: 2.5d
 		}
 		{
@@ -2734,7 +2716,7 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 18.0d
 			y: 3.5d
 		}
 		{
@@ -2748,7 +2730,7 @@
 				item: "gtceu:hydroastatic_acid_bucket"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 20.0d
 			y: 2.5d
 		}
 		{
@@ -2759,7 +2741,7 @@
 				item: "gtceu:barium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 19.0d
 			y: 1.5d
 		}
 		{
@@ -2769,7 +2751,7 @@
 				item: "gtceu:sodium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 22.5d
+			x: 19.5d
 			y: 3.5d
 		}
 		{
@@ -2783,7 +2765,7 @@
 				item: "gtceu:sodium_astatide_dust"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 21.5d
 			y: 2.5d
 		}
 		{
@@ -2794,7 +2776,7 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 23.5d
+			x: 20.5d
 			y: 1.5d
 		}
 		{
@@ -2804,7 +2786,7 @@
 				item: "gtceu:nitrogen_dioxide_bucket"
 				type: "item"
 			}]
-			x: 24.0d
+			x: 21.0d
 			y: 3.5d
 		}
 		{
@@ -2817,7 +2799,7 @@
 				item: "gtceu:astatine_dust"
 				type: "item"
 			}]
-			x: 26.5d
+			x: 23.5d
 			y: 2.5d
 		}
 		{
@@ -2828,7 +2810,7 @@
 				item: "gtceu:sodium_nitrite_dust"
 				type: "item"
 			}]
-			x: 25.0d
+			x: 22.0d
 			y: 1.5d
 		}
 		{
@@ -2842,8 +2824,8 @@
 				item: "gtceu:caesium_hexafluorobromine_bucket"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 1.0d
+			x: 11.0d
+			y: 3.0d
 		}
 		{
 			id: "5893EBB42AA52BC1"
@@ -2852,7 +2834,7 @@
 				item: "gtceu:hydrofluoric_acid_bucket"
 				type: "item"
 			}]
-			x: 14.5d
+			x: 12.0d
 			y: 2.0d
 		}
 		{
@@ -2863,8 +2845,8 @@
 				item: "gtceu:caesium_fluoride_dust"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 0.0d
+			x: 13.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -2878,8 +2860,8 @@
 				item: "gtceu:bromine_pentafluoride_bucket"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 1.0d
+			x: 9.5d
+			y: 3.0d
 		}
 		{
 			id: "6DDA7E241DDE6A91"
@@ -2888,8 +2870,8 @@
 				item: "gtceu:caesium_fluoride_dust"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 2.0d
+			x: 10.5d
+			y: 4.0d
 		}
 		{
 			id: "0369BA079922E315"
@@ -2898,8 +2880,8 @@
 				item: "gtceu:bromine_bucket"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 0.0d
+			x: 9.0d
+			y: 2.0d
 		}
 		{
 			id: "481B6F3CF0170917"
@@ -2908,8 +2890,8 @@
 				item: "gtceu:fluorine_bucket"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 2.0d
+			x: 9.0d
+			y: 4.0d
 		}
 		{
 			id: "1BEE0053B443D65C"
@@ -2918,8 +2900,31 @@
 				item: "gtceu:nickel_fluoride_dust"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 1.0d
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4C4E700B3DE67CDD"]
+			id: "37E2C08013A6105A"
+			tasks: [{
+				id: "3195D047EDF92740"
+				item: "gtceu:deactivated_nether_dust"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["37E2C08013A6105A"]
+			hide_dependent_lines: true
+			id: "465B8B6CC911EC13"
+			tasks: [{
+				id: "383554963B4E04F3"
+				item: "gtceu:activated_nether_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
 		}
 	]
 	title: "Processing Lines (Chap 7..)"
