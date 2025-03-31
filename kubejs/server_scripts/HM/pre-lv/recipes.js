@@ -639,7 +639,7 @@ ServerEvents.recipes(event => {
 			output,
 			input,
 			steps
-		).transitionalItem(inter).loops(loops ?? 1);
+		).transitionalItem(inter).loops(loops);
 	}
 
 	long_rods.forEach(metal => seq_assembly(
@@ -649,7 +649,7 @@ ServerEvents.recipes(event => {
 		[
 			['deploy', rod(metal)],
 			'press',
-		]
+		], 1
 	));
 
 	double_plates.forEach(metal => seq_assembly(
@@ -659,7 +659,7 @@ ServerEvents.recipes(event => {
 		[
 			['deploy', plate(metal)],
 			'press',
-		]
+		], 1
 	));
 
 	gears.forEach(metal => seq_assembly(
@@ -769,7 +769,7 @@ ServerEvents.recipes(event => {
 			'press',
 		];
 
-		seq_assembly(small, `gtceu:${metal}_foil`, inter, sequence);
+		seq_assembly(small, `gtceu:${metal}_foil`, inter, sequence, 1);
 		seq_assembly(normal, small, inter, sequence, 2);
 		seq_assembly(large, normal, inter, sequence, 3);
 		seq_assembly(huge, large, inter, sequence, 6);
