@@ -3,6 +3,7 @@ const $IngotProperty = global.IngotProperty;
 const $DustProperty = global.DustProperty;
 const $FluidProperty = global.FluidProperty;
 const $BlastProperty = global.BlastProperty;
+const $FluidPipeProperties = global.FluidPipeProperties;
 
 // Icon Sets
 const DULL = GTMaterialIconSet.DULL;
@@ -213,7 +214,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Lead.addFlags(gear);
     GTMaterials.Silver.addFlags(gear);
     GTMaterials.Naquadah.addFlags(dense_plate);
-    GTMaterials.NaquadahEnriched.addFlags(dense_plate, rotor, gear, frame);
+    GTMaterials.NaquadahEnriched.addFlags(dense_plate, rotor, gear, frame, long_rod);
     GTMaterials.Naquadria.addFlags(dense_plate);
     GTMaterials.Neutronium.addFlags(foil, small_gear,rotor);
     GTMaterials.Europium.addFlags(small_spring);
@@ -233,6 +234,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     blast('rhenium', 10000, 'higher', VA('zpm'), 900);
     blast('seaborgium', 10000, 'higher', VA('zpm'), 1000);
     blast('flerovium', 10000, 'higher', VA('luv'), 900);
+
+    // Fluid pipes
+    GTMaterials.NaquadahEnriched.setProperty(PropertyKey.FLUID_PIPE, new $FluidPipeProperties(6000, 3600, true, false, false, false));
 
     // Materials from elements
     event.create('magnetic_zapolgium')
