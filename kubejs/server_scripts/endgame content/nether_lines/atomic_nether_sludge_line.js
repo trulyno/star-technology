@@ -238,6 +238,6 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.electric_blast_furnace('hafnium_hexachloride_to_ingot')
         .itemInputs('1x gtceu:hafnium_hexachloride_dust', '3x gtceu:magnesium_dust')
-        .itemOutputs('3x gtceu:magnesium_chloride_dust', '1x gtceu:hot_hafnium_ingot')
+        .itemOutputs('9x gtceu:magnesium_chloride_dust', '1x gtceu:hot_hafnium_ingot')
 
 });

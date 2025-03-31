@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.cyclonic_sifter('mystical_nether_magma')
         .inputFluids('gtceu:highly_unstable_nether_magma 100000')
         .chancedInput('1x kubejs:ancient_netherite_reinforced_mesh', 1000, -150)
-        .outputFluids('gtceu:mystical_nether_magma 8000')
+        .outputFluids('gtceu:mystical_nether_magma 7000')
         .itemOutputs('1x gtceu:deactivated_nether_dust')
         .duration(1050)
         .EUt(GTValues.VA[GTValues.UEV]*3/11);

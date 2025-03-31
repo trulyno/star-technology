@@ -946,6 +946,7 @@
 				"52FE319F5E176C37"
 				"1B0A7CF5BE5D71FE"
 			]
+			dependency_requirement: "one_completed"
 			description: ["A very tall multiblock that allows you to distill one fluid into multiple others without having to choose like with the distillery."]
 			id: "170C262792DA7123"
 			rewards: [{
@@ -2461,8 +2462,8 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 0.25d
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]

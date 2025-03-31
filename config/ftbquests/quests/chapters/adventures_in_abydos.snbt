@@ -946,7 +946,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "70C8CC3BD58DC9B4"
 				item: {

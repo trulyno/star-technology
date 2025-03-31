@@ -3,8 +3,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.heat_chamber('nether_star_concentrate')
         .itemInputs('5x gtceu:nether_star_dust')
-        .inputFluids('gtceu:blitz 1000','gtceu:blizz 1000','gtceu:basalz 1000','gtceu:blaze 1000')
-        .outputFluids('gtceu:nether_star_concentrate 216')
+        .inputFluids('gtceu:blitz 720','gtceu:blizz 720','gtceu:basalz 720','gtceu:blaze 720')
+        .outputFluids('gtceu:nether_star_concentrate 432')
         .duration(240)
         .EUt(GTValues.VHA[GTValues.UEV]);
 
