@@ -14,12 +14,24 @@ ServerEvents.tags('item', event => {
 		event.add(`forge:ingots/${metal}`, `gtceu:${metal}_ingot`);
 		event.add(`forge:nuggets/${metal}`, `gtceu:${metal}_nugget`);
 	});
+
+	event.remove('minecraft:planks', 'gtceu:wood_plate');
 });
 
 ServerEvents.recipes(event => {
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 	// ~~~~~~~~~~~ PRE-COBBLEGEN ~~~~~~~~~~~ //
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
+	const replace_shaped = (output, pattern, symbols) => {
+		event.remove({ type: "minecraft:crafting_shaped", output: output });
+		event.shaped(output, pattern, symbols);
+	}
+
+	const replace_shapeless = (output, ingredients) => {
+		event.remove({ type: "minecraft:crafting_shapeless", output: output });
+		event.shapeless(output, ingredients);
+	}
 
 	const plate = (metal) => `gtceu:${metal}_plate`
 	const rod = (metal) => `gtceu:${metal}_rod`
@@ -49,7 +61,7 @@ ServerEvents.recipes(event => {
 	event.replaceInput({ id: 'chipped:benches/carpenters_table' }, 'minecraft:wooden_axe', 'gtceu:flisnt_axe');
 	event.replaceInput({ id: 'farmersdelight:cooking_pot' }, 'minecraft:wooden_shovel', 'gtceu:flisnt_shovel');
 
-	// Flarn't Tools
+	// Tool Recipes
 
 	event.shapeless(Item.of('minecraft:stick'), [
 		'#forge:tools/saws', '#minecraft:wooden_slabs'
@@ -237,45 +249,50 @@ ServerEvents.recipes(event => {
 			.duration(600 * burn);
 	});
 
-	event.remove({ id: /^exnihilosequentia:ens_.*_sieve/ })
-	event.shaped(Item.of('exnihilosequentia:jungle_sieve'), [
-		'S S',
-		'SFS',
-		'NRN'
-	], {
-		S: 'minecraft:jungle_slab',
-		F: 'gtceu:wood_frame',
-		N: 'minecraft:jungle_fence',
-		R: '#forge:string'
-	});
-
 	[
-		// 'oak',
-		// 'spruce',
-		// 'birch',
+		'oak',
+		'spruce',
+		'birch',
 		'jungle',
-		// 'acacia',
-		// 'dark_oak',
-		// 'cherry',
-		// 'bamboo',
-		// 'crimson',
-		// 'warped'
+		'acacia',
+		'dark_oak',
+		'mangrove',
+		'cherry',
+		'bamboo',
+		'crimson',
+		'warped'
 	].forEach(log => {
-		event.remove({ id: `gtceu:shaped/${log}_fence` });
-		event.shaped(Item.of(`minecraft:${log}_fence`, 2), [
+		replace_shaped(`exnihilosequentia:${log}_sieve`, [
+			'S S',
+			'SFS',
+			'NRN'
+		], {
+			S: `minecraft:${log}_slab`,
+			F: 'gtceu:wood_frame',
+			N: `minecraft:${log}_fence`,
+			R: '#forge:string'
+		});
+
+		event.remove({ type: 'minecraft:crafting_shaped', output: `minecraft:${log}_fence` });
+		event.shaped(`2x minecraft:${log}_fence`, [
 			'PSP',
 			'PSP',
-			'PSP'
+			'PSP',
 		], {
 			P: `minecraft:${log}_planks`,
-			S: '#forge:rods/wooden'
-		});
+			S: 'minecraft:stick',
+		})
+
 		event.remove({ id: `create:cutting/${log}_log` });
-		event.recipes.create.cutting([`minecraft:stripped_${log}_log`, Item.of(`farmersdelight:tree_bark`).withChance(1)], `minecraft:${log}_log`);
+		event.recipes.create.cutting([`minecraft:stripped_${log}_log`, 'farmersdelight:tree_bark'], `minecraft:${log}_log`);
+
+		if (log == 'bamboo') return;
+
 		event.remove({ output: `functionalstorage:${log}_1` });
 		event.remove({ output: `functionalstorage:${log}_2` });
 		event.remove({ output: `functionalstorage:${log}_4` });
-		event.shaped(Item.of(`functionalstorage:${log}_1`), [
+
+		event.shaped(`functionalstorage:${log}_1`, [
 			'WSW',
 			'SCS',
 			'WSW'
@@ -284,24 +301,12 @@ ServerEvents.recipes(event => {
 			S: `minecraft:${log}_slab`,
 			C: 'minecraft:chest'
 		});
-		event.shaped(Item.of(`functionalstorage:${log}_2`, 2), [
-			'D',
-			'D'
-		], {
-			D: `functionalstorage:${log}_1`
-		});
-		event.shaped(Item.of(`functionalstorage:${log}_4`, 2), [
-			'D',
-			'D'
-		], {
-			D: `functionalstorage:${log}_2`
-		});
-		event.shaped(Item.of(`functionalstorage:${log}_4`, 4), [
+		event.shapeless(`2x functionalstorage:${log}_2`, [`2x functionalstorage:${log}_1`]);
+		event.shapeless(`2x functionalstorage:${log}_4`, [`2x functionalstorage:${log}_2`]);
+		event.shaped(`4x functionalstorage:${log}_4`, [
 			'DD',
 			'DD'
-		], {
-			D: `functionalstorage:${log}_1`
-		});
+		], { D: `functionalstorage:${log}_1` });
 	});
 
 	event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
@@ -1370,7 +1375,8 @@ ServerEvents.recipes(event => {
 		P: 'gtceu:lead_plate'
 	});
 
-	event.shaped(Item.of('createlowheated:basic_burner'), [
+	event.remove('createlowheated:basic_burner');
+	event.shaped('createlowheated:basic_burner', [
 		'RRR',
 		'R R',
 		'PAP'
@@ -1653,6 +1659,41 @@ ServerEvents.recipes(event => {
 		.EUt(7);
 
 	event.remove({ id: /gtceu:shaped\/.*_drum/ });
+
+	event.remove({ id: 'minecraft:iron_trapdoor' });
+	event.shaped('minecraft:iron_trapdoor', [
+		' P ',
+		'PTP',
+		' P ',
+	], {
+		P: 'gtceu:iron_plate',
+		T: '#minecraft:trapdoors'
+	});
+
+	event.replaceInput({ output: 'minecraft:compass' }, 'gtceu:red_alloy_bolt', 'gtceu:copper_bolt');
+
+	event.remove({ id: 'architects_palette:smelting/charcoal_block_from_logs_that_burn_smoking' });
+	event.remove({ id: 'minecraft:stone_bricks_from_stone_stonecutting' });
+	event.remove('rechiseled:chisel'); // Remove Chisel, replacement recipe later
+
+	event.remove({ output: 'create:super_glue' });
+	event.recipes.create.mechanical_crafting('create:super_glue', [
+		'RP',
+		'NR',
+	], {
+		R: 'gtceu:sticky_resin',
+		P: 'gtceu:iron_plate',
+		N: 'minecraft:iron_nugget',
+	});
+
+	replace_shaped('gtceu:treated_wood_rod', [
+		'SP'
+	], {
+		S: '#forge:tools/saws',
+		P: 'gtceu:treated_wood_slab',
+	});
+
+	event.remove({ id: 'gtceu:smelting/wrought_iron_nugget' });
 
 	//Mass Removals
 
