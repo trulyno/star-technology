@@ -12,20 +12,26 @@
 		{
 			id: "727DEC5336F4793D"
 			linked_quest: "37E3EF96EDE85C86"
-			x: -4.5d
-			y: -3.0d
-		}
-		{
-			id: "4BF64259E2567FD6"
-			linked_quest: "0C19C040CA121E3B"
-			x: -2.5d
-			y: -3.0d
+			x: -6.5d
+			y: -1.0d
 		}
 		{
 			id: "723E27B22576F175"
 			linked_quest: "1BE69DB2DFDC35C8"
-			x: -4.5d
-			y: -1.0d
+			x: -6.5d
+			y: 1.0d
+		}
+		{
+			id: "6E603BBF32247A87"
+			linked_quest: "0C19C040CA121E3B"
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			id: "220DBF269EDBAC7A"
+			linked_quest: "22B85F7F13C66730"
+			x: -2.5d
+			y: 5.0d
 		}
 	]
 	quests: [
@@ -74,8 +80,8 @@
 				item: "kubejs:uhv_computational_matrix"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -5.5d
+			x: -9.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -95,8 +101,8 @@
 				item: "kubejs:uhv_transmission_assembly"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -2.5d
+			x: -11.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -116,8 +122,8 @@
 				item: "kubejs:uhv_precision_drive_mechanism"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -5.5d
+			x: -7.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -136,8 +142,8 @@
 				item: "kubejs:uhv_microfluidic_flow_valve"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -4.5d
+			x: -6.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -158,8 +164,8 @@
 				item: "kubejs:uhv_super_magnetic_core"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -3.5d
+			x: -11.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -178,8 +184,8 @@
 				item: "kubejs:uhv_catalyst_core"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -4.5d
+			x: -10.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -199,8 +205,8 @@
 				item: "kubejs:uhv_high_strength_panel"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -5.5d
+			x: -8.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -221,8 +227,8 @@
 				item: "kubejs:uhv_micropower_router"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -3.0d
+			x: -10.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["37E3EF96EDE85C86"]
@@ -238,11 +244,11 @@
 				item: "gtceu:zalloy_ingot"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -3.0d
+			x: -8.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["493DD013C818BB7B"]
+			dependencies: ["5BD0047E69D79476"]
 			description: ["An element used for alloys that can make excellent mechanical parts."]
 			id: "6A21CA0E47D6FA6F"
 			rewards: [{
@@ -255,8 +261,8 @@
 				item: "gtceu:selenium_dust"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 1.0d
+			x: -6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1BE69DB2DFDC35C8"]
@@ -273,8 +279,8 @@
 				item: "gtceu:zircalloy_4_ingot"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -2.0d
+			x: -7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -293,8 +299,8 @@
 				item: "gtceu:uhv_electric_motor"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -3.0d
+			x: -12.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["05EEBCD256194C78"]
@@ -310,8 +316,8 @@
 				item: "gtceu:uhv_electric_pump"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -5.0d
+			x: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -329,8 +335,8 @@
 				item: "gtceu:uhv_conveyor_module"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -7.0d
+			x: -7.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["433B94A266536D86"]
@@ -345,8 +351,8 @@
 				item: "gtceu:uhv_electric_piston"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -7.0d
+			x: -9.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -365,8 +371,8 @@
 				item: "gtceu:uhv_robot_arm"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -7.0d
+			x: -8.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5F65FECD29B8A341"]
@@ -382,8 +388,8 @@
 				item: "gtceu:uhv_field_generator"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -6.0d
+			x: -11.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -401,8 +407,8 @@
 				item: "gtceu:uhv_emitter"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -6.0d
+			x: -10.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -421,8 +427,8 @@
 				item: "gtceu:uhv_sensor"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -5.0d
+			x: -11.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -442,11 +448,11 @@
 				item: "gtceu:iron_selenide_over_strontium_titanium_oxide_ingot"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 3.0d
+			x: -6.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["493DD013C818BB7B"]
+			dependencies: ["5BD0047E69D79476"]
 			description: ["A remnant of nuclear decay, possibly telling a story of what happened to this world."]
 			id: "14F1B40FACDDE02C"
 			rewards: [{
@@ -459,8 +465,8 @@
 				item: "gtceu:strontium_dust"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.0d
+			x: -4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -480,8 +486,8 @@
 				item: "gtceu:zirconium_selenide_diiodide_ingot"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 1.0d
+			x: -8.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -527,6 +533,7 @@
 		{
 			dependencies: ["07AD6651D0B40E22"]
 			description: ["With these 2 machines you can massively increase the amount of Akreyrium you produce."]
+			hide_dependent_lines: true
 			id: "7F203254ACDF8C88"
 			optional: true
 			rewards: [{
@@ -551,7 +558,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["5368269646BC0F27"]
+			dependencies: [
+				"5368269646BC0F27"
+				"283F10E58CA1FCEB"
+			]
 			description: ["A weird fluid, that has some interesting properties making it necessary for more advanced machines."]
 			icon: {
 				Count: 1
@@ -908,8 +918,8 @@
 				item: "gtceu:ancient_runicalium_ingot"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -1.0d
+			x: -8.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["30C974448C57F0EC"]
@@ -925,8 +935,8 @@
 				item: "gtceu:ancient_runicalium_single_wire"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 1.0d
+			x: -10.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -956,7 +966,7 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
+			x: 1.5d
 			y: 5.0d
 		}
 		{
@@ -973,8 +983,8 @@
 				item: "gtceu:exotic_gas_siphon"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 5.0d
+			x: -2.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["3540AE6C940F985B"]
@@ -994,7 +1004,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1027,7 +1037,11 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["5FCA8ED151CEB5C1"]
+			dependencies: [
+				"5FCA8ED151CEB5C1"
+				"29A86F882D68239F"
+				"78117340F3D4549A"
+			]
 			description: ["And here we go again, more Ring Blocks"]
 			id: "5DADD2204991B4D5"
 			rewards: [{
@@ -1093,7 +1107,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["379D69A44FC5B2F2"]
@@ -1138,8 +1152,8 @@
 				title: "Get Nether Coordinates"
 				type: "checkmark"
 			}]
-			x: 6.5d
-			y: 4.0d
+			x: 10.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1159,10 +1173,10 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
-			dependencies: ["07AD6651D0B40E22"]
+			dependencies: ["2D064F759D13FE4B"]
 			description: ["The path to the hellfires of the Nether, inscriped on a piece of whispering gemstone."]
 			id: "29DAE5F27A1D4115"
 			rewards: [{
@@ -1175,11 +1189,11 @@
 				item: "kubejs:nether_coordinate_crystal"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 3.0d
+			x: 10.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["07AD6651D0B40E22"]
+			dependencies: ["2D064F759D13FE4B"]
 			description: ["The path to the shattered void of the End, inscriped on a piece of whispering gemstone."]
 			id: "14479FB9FCF478D6"
 			rewards: [{
@@ -1192,8 +1206,8 @@
 				item: "kubejs:end_coordinate_crystal"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 1.0d
+			x: 6.5d
+			y: 0.0d
 		}
 		{
 			can_repeat: true
@@ -1214,8 +1228,8 @@
 				title: "Get End Coordinates"
 				type: "checkmark"
 			}]
-			x: 6.5d
-			y: 2.0d
+			x: 8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1389,8 +1403,9 @@
 		}
 		{
 			dependencies: [
-				"14479FB9FCF478D6"
-				"43DAD4B63603BFC3"
+				"63AD0F905F2A262B"
+				"4A0AD203617FEF0E"
+				"7F203254ACDF8C88"
 			]
 			description: ["A core that can detect the smallest amounts of matter inside the vast nothingness of space."]
 			id: "5FAD11260BC2F305"
@@ -1409,8 +1424,9 @@
 		}
 		{
 			dependencies: [
-				"29DAE5F27A1D4115"
-				"43DAD4B63603BFC3"
+				"5BA6FB8F852C2629"
+				"4A0AD203617FEF0E"
+				"7F203254ACDF8C88"
 			]
 			description: ["A core that can feel the immense energy of burning flames all across the galaxy."]
 			id: "21188AF95E6D5030"
@@ -1424,7 +1440,7 @@
 				item: "kubejs:hell_core"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 9.5d
 			y: 3.0d
 		}
 		{
@@ -1445,7 +1461,7 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
+			x: 5.5d
 			y: 5.0d
 		}
 		{
@@ -1476,7 +1492,7 @@
 					type: "item"
 				}
 			]
-			x: 9.5d
+			x: 3.5d
 			y: 7.0d
 		}
 		{
@@ -1496,16 +1512,15 @@
 				item: "kubejs:zalloy_coil_block"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -1.0d
+			x: -10.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"5BA69EDC3C223B2C"
-				"4BF64259E2567FD6"
+				"22B85F7F13C66730"
 			]
 			description: ["Another tier of PIC Wafers, used for some incredible Abydos technology."]
-			hide_dependency_lines: true
 			id: "7AC55BA8BDD0F3D2"
 			rewards: [{
 				id: "7B8476986ACF57ED"
@@ -1525,7 +1540,7 @@
 				}
 			]
 			title: "UEPIC Chips"
-			x: 1.5d
+			x: -0.5d
 			y: 5.0d
 		}
 		{
@@ -1654,9 +1669,10 @@
 			dependencies: [
 				"1E47910C2F2112E1"
 				"3212A3351DAD4492"
+				"43DAD4B63603BFC3"
 			]
 			description: ["An array of Chevrons that can store more complex data."]
-			hide_dependency_lines: false
+			hide_dependency_lines: true
 			id: "442233119AED645F"
 			rewards: [{
 				id: "27614436816AD1DF"
@@ -1673,7 +1689,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -1763,8 +1779,8 @@
 				title: "Positioner"
 				type: "checkmark"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1802,7 +1818,7 @@
 				item: "kubejs:wetware_based_runic_neuroloom"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 3.5d
 			y: 5.0d
 		}
 		{
@@ -1820,7 +1836,7 @@
 				item: "start_core:uhv_parallel_hatch"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 1.5d
 			y: 7.0d
 		}
 		{
@@ -1845,7 +1861,7 @@
 				item: "start_core:uhv_absolute_parallel_hatch"
 				type: "item"
 			}]
-			x: 3.5d
+			x: -0.5d
 			y: 7.0d
 		}
 		{
@@ -1863,8 +1879,8 @@
 				title: "Cheaper Gasses"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: -4.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["2C354B0735DF8023"]
@@ -1877,6 +1893,122 @@
 			}]
 			x: 7.5d
 			y: -5.0d
+		}
+		{
+			dependencies: [
+				"05E824087CE7825D"
+				"493DD013C818BB7B"
+			]
+			description: ["More information present in the Processing Lines (4,5,6) Chapter"]
+			icon: "gtceu:abydos_zapolite_rich_magma_bucket"
+			id: "5BD0047E69D79476"
+			tasks: [{
+				id: "630CDF3A4731333F"
+				title: "Magma Processing"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"707C2E9BA62A60C5"
+				"5C39B74171CC21F9"
+			]
+			description: ["These Magma's need to a little more to break down."]
+			id: "05E824087CE7825D"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3FCFCFF6D0A94AE9"
+				item: "gtceu:molten_destabilizer"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5BD0047E69D79476"]
+			description: ["Obtained from Crooksite, and holding &lIMMENSE&r importance when it comes to &o&nAkreyrium&r"]
+			hide_dependent_lines: true
+			id: "283F10E58CA1FCEB"
+			tasks: [{
+				id: "51B87E27D55B5966"
+				item: "gtceu:thallium_dust"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"14479FB9FCF478D6"
+				"43DAD4B63603BFC3"
+			]
+			id: "63AD0F905F2A262B"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "482E1942CFE534B2"
+				item: "kubejs:abyss_fragment"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"29DAE5F27A1D4115"
+				"43DAD4B63603BFC3"
+			]
+			id: "5BA6FB8F852C2629"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "34D3BE82C8A1E1A8"
+				item: "kubejs:inferno_fragment"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"07AD6651D0B40E22"
+				"43DAD4B63603BFC3"
+			]
+			id: "4A0AD203617FEF0E"
+			tasks: [{
+				id: "510926669DC47CEC"
+				item: "kubejs:empty_coordinate_core"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["63AD0F905F2A262B"]
+			hide_dependent_lines: true
+			id: "29A86F882D68239F"
+			tasks: [{
+				id: "0B5A515CFE1C6C24"
+				item: "kubejs:abyssal_stargate_rod"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5BA6FB8F852C2629"]
+			hide_dependent_lines: true
+			id: "78117340F3D4549A"
+			tasks: [{
+				id: "289B786570065AE5"
+				item: "kubejs:infernal_stargate_rod"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.0d
 		}
 	]
 	title: "Adventures in Abydos"

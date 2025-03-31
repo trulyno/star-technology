@@ -46,4 +46,19 @@ ServerEvents.recipes(event => {
         )
         .EUt(GTValues.VA[GTValues.UV]); 
 
+    event.recipes.gtceu.assembly_line('molten_destabilizer')
+        .itemInputs(
+            'gtceu:uhv_machine_hull', '6x #gtceu:circuits/uhv', '4x gtceu:dense_naquadria_plate','64x gtceu:uhpic_chip','4x gtceu:neutronium_huge_fluid_pipe',
+            '4x gtceu:pure_netherite_rotor','4x gtceu:small_pure_netherite_gear','24x gtceu:uv_electric_pump')
+        .inputFluids('gtceu:polyether_ether_ketone 8000','gtceu:neutronium 7200')
+        .itemOutputs('gtceu:molten_destabilizer')
+        .duration(18000)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:large_distillery'))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(144)
+        )
+        .EUt(GTValues.VA[GTValues.UV]); 
+    
 });

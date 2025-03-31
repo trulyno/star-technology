@@ -336,24 +336,50 @@ ServerEvents.recipes(event => {
                 researchRecipeBuilder => researchRecipeBuilder
                     .researchStack(Item.of('kubejs:classic_stargate_computer_core'))
                     .EUt(GTValues.VHA[GTValues.UHV])
-                    .CWUt(176)
+                    .CWUt(192)
                 )
-            .EUt(GTValues.VHA[GTValues.UEV]);
+            .EUt(GTValues.VA[GTValues.UEV]);
 
         //Draconic Coordinate Core
         event.recipes.gtceu.super_pressure_heat_chamber('draconic_coordinate_core')
-            .itemInputs('kubejs:hell_core','kubejs:void_core','64x minecraft:ender_eye')
+            .itemInputs('kubejs:hell_core','kubejs:void_core')
             .inputFluids('gtceu:blaze 50000','thermal:ender 50000')
             .itemOutputs('kubejs:draconic_coordinate_core')
             .duration(30000)
-            .EUt(GTValues.VHA[GTValues.UEV]);
+            .EUt(GTValues.VA[GTValues.UEV]);
 
-        //Hell Core
-        event.recipes.gtceu.assembly_line('hell_core')
-            .itemInputs('gtceu:ancient_runicalium_frame','6x gtceu:dense_obsidian_plate','16x minecraft:blaze_powder','16x minecraft:blaze_powder','48x gtceu:uhv_field_generator', '32x kubejs:uhv_catalyst_core', '32x kubejs:uhv_catalyst_core','16x gtceu:uhv_sensor')
-            .inputFluids('minecraft:lava 500000','gtceu:blaze 250000','gtceu:utopian_akreyrium 50000')
+        event.recipes.gtceu.assembly_line('empty_coordinate_core')
+            .itemInputs('gtceu:ancient_runicalium_frame','64x kubejs:uhv_high_strength_panel','64x kubejs:uhv_high_strength_panel','48x gtceu:uhv_field_generator', '32x kubejs:uhv_catalyst_core', '32x kubejs:uhv_catalyst_core','16x gtceu:uhv_sensor','16x gtceu:uhv_emitter')
+            .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 120000','gtceu:utopian_akreyrium 75000','gtceu:neutronium 18000')
+            .itemOutputs('kubejs:empty_coordinate_core')
+            .duration(24000)
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of('kubejs:blank_injection_catalyst'))
+                    .EUt(GTValues.VHA[GTValues.UHV])
+                    .CWUt(160)
+                )
+            .EUt(GTValues.VA[GTValues.UHV]);
+
+        event.recipes.gtceu.injection_mixer('hell_core')
+            .itemInputs('kubejs:empty_coordinate_core','kubejs:inferno_fragment','kubejs:inferno_fragment','32x gtceu:netherrack_dust','16x minecraft:blaze_powder','8x gtceu:debris_dust')
+            .inputFluids('minecraft:lava 250000','gtceu:blaze 50000','gtceu:utopian_akreyrium 32000')
             .itemOutputs('kubejs:hell_core')
-            .duration(18000)
+            .duration(9000)
+            .EUt(GTValues.VH[GTValues.UEV]);
+
+        event.recipes.gtceu.injection_mixer('void_core')
+            .itemInputs('kubejs:empty_coordinate_core','kubejs:abyss_fragment','kubejs:abyss_fragment','32x gtceu:endstone_dust','16x minecraft:ender_pearl','8x minecraft:echo_shard')
+            .inputFluids('gtceu:echo_r 250000','thermal:ender 50000','gtceu:utopian_akreyrium 32000')
+            .itemOutputs('kubejs:void_core')
+            .duration(9000)
+            .EUt(GTValues.VH[GTValues.UEV]);
+
+        event.recipes.gtceu.assembly_line('inferno_fragment')
+            .itemInputs('6x gtceu:dense_obsidian_plate','16x minecraft:blaze_powder','16x minecraft:blaze_powder')
+            .inputFluids('minecraft:lava 100000','gtceu:blaze 20000')
+            .itemOutputs('kubejs:inferno_fragment')
+            .duration(4800)
             .stationResearch(
                 researchRecipeBuilder => researchRecipeBuilder
                     .researchStack(Item.of('kubejs:nether_coordinate_crystal'))
@@ -362,12 +388,11 @@ ServerEvents.recipes(event => {
                 )
             .EUt(GTValues.VHA[GTValues.UEV]);
 
-        //Void Core
-        event.recipes.gtceu.assembly_line('void_core')
-            .itemInputs('gtceu:ancient_runicalium_frame','6x gtceu:dense_obsidian_plate','16x minecraft:ender_pearl','16x minecraft:ender_pearl','48x gtceu:uhv_field_generator', '32x kubejs:uhv_catalyst_core', '32x kubejs:uhv_catalyst_core','16x gtceu:uhv_sensor')
-            .inputFluids('gtceu:echo_r 500000','thermal:ender 250000','gtceu:utopian_akreyrium 50000')
-            .itemOutputs('kubejs:void_core')
-            .duration(18000)
+        event.recipes.gtceu.assembly_line('abyss_fragment')
+            .itemInputs('6x gtceu:dense_obsidian_plate','16x minecraft:ender_pearl','16x minecraft:ender_pearl')
+            .inputFluids('gtceu:echo_r 100000','thermal:ender 20000')
+            .itemOutputs('kubejs:abyss_fragment')
+            .duration(4800)
             .stationResearch(
                 researchRecipeBuilder => researchRecipeBuilder
                     .researchStack(Item.of('kubejs:end_coordinate_crystal'))

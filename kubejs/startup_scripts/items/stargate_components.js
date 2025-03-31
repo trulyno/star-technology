@@ -11,6 +11,16 @@ StartupEvents.registry('item', event => {
         .rarity('epic')
         .tooltip('The muscles of a stargate, if you will...');
 
+    event.create('infernal_stargate_rod')
+        .texture('kubejs:item/gate_items/infernal_stargate_rod')
+        .displayName('§4Infernal§r Stargate Rod')
+        .tooltip('Burning Energy holds §IMMENSE§r power...');
+
+    event.create('abyssal_stargate_rod')
+        .texture('kubejs:item/gate_items/abyssal_stargate_rod')
+        .displayName('§5Abyssal§r Stargate Rod')
+        .tooltip('Concentrated Entropy allows §PHENOMAL§r actions...');
+
     event.create('computational_super_matrix')
         .displayName('Computation Supermatrix')
         .texture('kubejs:item/gate_items/computation-super-matrix')
@@ -41,11 +51,22 @@ StartupEvents.registry('item', event => {
         .rarity('rare')
         .texture('kubejs:item/gate_items/classic_chevron_assembly');
     
+    event.create('empty_coordinate_core')
+        .displayName('Empty Coordinate Core')
+        .texture('kubejs:item/gate_items/empty_coordinate_core');
+
     event.create('draconic_coordinate_core')
-        .displayName('Draconic Coordinate Core')
-        .rarity('epic')
+        .displayName('§dDraconic Coordinate Core')
         .tooltip('The §o§6Ultimate§r Eye of Ender')
         .texture('kubejs:item/gate_items/draconic_core');
+
+    event.create('inferno_fragment')
+        .displayName('§4§m§oInferno§r Fragment')
+        .texture('kubejs:item/gate_items/inferno_fragment');
+
+    event.create('abyss_fragment')
+        .displayName('§5§m§oAbyss§r Fragment')
+        .texture('kubejs:item/gate_items/abyss_fragment');
 
     event.create('hell_core')
         .displayName('§4Hell Core')
