@@ -14,17 +14,23 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:estaltadyne 1000')
         .outputFluids('gtceu:mystical_nether_magma 250')
         .itemOutputs('gtceu:estaltadyne_dust','gtceu:small_estaltadyne_dust')
+        .duration(140)
+        .EUt(GTValues.V[GTValues.UHV]);
 
     event.recipes.gtceu.heat_chamber('metmalic_estaltadyne_dust')
         .itemInputs('1x gtceu:estaltadyne_dust')
         .itemInputs('2x gtceu:carbon_dust')
         .itemOutputs('1x gtceu:metmalic_estaltadyne_dust')
         .outputFluids('gtceu:carbon_dioxide 2000')
+        .duration(240)
+        .EUt(GTValues.VH[GTValues.UEV]);
 
     event.recipes.gtceu.electrolyzer('magnemalic_estaltadyne_dust')
         .itemInputs('1x gtceu:metmalic_estaltadyne_dust')
         .itemOutputs('2x gtceu:aluminium_dust')
         .itemOutputs('1x gtceu:magnemalic_estaltadyne_dust')
+        .duration(600)
+        .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.chemical_plant('tytite_estaltadyne_dust')
         .itemInputs('1x gtceu:magnemalic_estaltadyne_dust')
@@ -32,6 +38,8 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:oxygen 15000')
         .itemOutputs('1x gtceu:tytite_estaltadyne_dust')
         .itemOutputs('5x gtceu:sodium_bisulfate_dust')
+        .duration(460)
+        .EUt(GTValues.VA[GTValues.UHV]);
 
     event.recipes.gtceu.electric_blast_furnace('estaltadyne_hydride_dust')
         .itemInputs('1x gtceu:tytite_estaltadyne_dust')
@@ -39,12 +47,16 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x gtceu:estaltadyne_hydride_dust')
         .itemOutputs('12x gtceu:titanium_trifluoride_dust')
         .blastFurnaceTemp(13400)
+        .duration(220)
+        .EUt(GTValues.VHA[GTValues.UEV]);
 
     event.recipes.gtceu.large_chemical_reactor('estalt_dust')
         .itemInputs('1x gtceu:estaltadyne_hydride_dust')
         .itemInputs('15x gtceu:phosphate_dust')
         .itemOutputs('4x gtceu:estalt_dust')
         .outputFluids('gtceu:phosphoric_acid 3000')
+        .duration(1200)
+        .EUt(GTValues.V[GTValues.UV]);
 
     event.replaceInput({id: 'gtceu:electric_blast_furnace/blast_estalt_gas'},
         Fluid.of('gtceu:krypton 10'),

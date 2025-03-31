@@ -287,7 +287,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x006666)
         .flags(foil, gear, long_rod, plates,
             rod, rotor, small_gear, ring, frame)
-        .blastTemp(10299, 'highest', VA('uhv'), 2400)
+        .blastTemp(11299, 'highest', VA('uhv'), 2400)
         .iconSet(METALLIC);
 
     event.create('adamantine')
@@ -1033,13 +1033,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GEM_VERTICAL);
 
     event.create('abydos_titanite_rich_magma')
-        .fluid()
+        .liquid(new GTFluidBuilder().temperature(3520))
         .components('6x titanite', '2x calaverite','2x sylvanite', '2x tiemannite', '1x strontianite')
         .flags(no_decomp)    
         .color(0xe65c00);
 
     event.create('abydos_zapolite_rich_magma')
-        .fluid()
+        .liquid(new GTFluidBuilder().temperature(4980))
         .components('7x zapolite', '3x crookesite', '2x clausthalite', '1x iodargyrite')
         .color(0xff471a)
         .flags(no_decomp);
@@ -1084,7 +1084,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
         //Estalt Line
         event.create('molten_estaltadyne_mixture')
-            .fluid()
+            .liquid(new GTFluidBuilder().temperature(3500))
             .components('1x mystery','1x estalt','1x mystery')
             .color(0x8E0505)
             .flags(no_decomp);
@@ -1177,7 +1177,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             .flags(no_decomp);
 
         event.create('molten_adamantamite_mixture')
-            .fluid()
+            .liquid(new GTFluidBuilder().temperature(3700))
             .components('1x mystery','1x adamantine','1x mystery')
             .color(0x866E7B)
             .flags(no_decomp);
@@ -1227,7 +1227,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             .flags(no_decomp);
         
         event.create('molten_mythrillic_mixture')
-            .fluid()
+            .liquid(new GTFluidBuilder().temperature(3100))
             .components('1x mystery','1x mythril','1x mystery')
             .color(0x238342)
             .flags(no_decomp);
@@ -1294,49 +1294,49 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
         // //Magmas
         event.create('highly_unstable_nether_magma')
-            .fluid(/*new GTFluidBuilder(this.temperature(9001))*/)
+            .liquid(new GTFluidBuilder().temperature(9001))
             .components('1x mystery')
             .color(0xFFA025)
             .flags(no_decomp);
 
         event.create('magmatic')
-            .plasma()
+            .plasma(new GTFluidBuilder().temperature(14600))
             .components('1x mystery','1x iron','1x mystery')
             .color(0xFFD39A)
             .flags(no_decomp);
 
         event.create('debris_rich_nether_magma')
-            .fluid()
+            .liquid(new GTFluidBuilder().temperature(7600))
             .components('1x mystery')
             .color(0x6C3628)
             .flags(no_decomp);
  
         event.create('mythrillic_nether_magma')
-            .fluid()
+            .liquid(new GTFluidBuilder().temperature(9299))
             .components('1x mystery','1x mythril','1x mystery')
             .color(0x238383)
             .flags(no_decomp);
 
         event.create('adamantamite_nether_magma')
-            .fluid()
+            .liquid(new GTFluidBuilder().temperature(11299))
             .components('1x mystery','1x adamantine','1x mystery')
             .color(0x826944)
             .flags(no_decomp);
 
         event.create('estaltadyne_nether_magma')
-            .fluid()
+            .liquid(new GTFluidBuilder().temperature(10299))
             .components('1x mystery','1x estalt','1x mystery')
             .color(0xA92323)
             .flags(no_decomp);
 
         event.create('mystical_nether_magma')
-            .fluid()
+            .liquid(new GTFluidBuilder().temperature(11600))
             .components('1x mystery','1x adamantine','1x mystery','1x estalt','1x mystery','1x mythril','1x mystery')
             .color(0xF26B87)
             .flags(no_decomp);
         
         event.create('enriched_mystical_concentrate')
-            .fluid()
+            .liquid(new GTFluidBuilder().temperature(1260))
             .components('1x mystery','1x adamantine','1x mystery','1x enriched_estalt','1x mystery','1x mythril','1x mystery')
             .color(0xF26B87)
             .flags(no_decomp);
@@ -1782,6 +1782,7 @@ largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
         .dust()
         .iconSet(DULL)
         .components('4x thallium_tungstate', '2x nickel', '4x graphene', '3x niobium', '4x bismuth')
+        .flags(foil)
         .blastTemp(5300, 'high', VA('luv'), 1400)
         .color(0xe1ccff);
 
@@ -2003,9 +2004,10 @@ largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
 
     liquid('rare_ore_residue', 0x556278, '1x mystery');
 
-    dust('chromite_sludge', 0x4C3C4C, ['2x chromite', '1x mystery'])
-    dust('rare_sludge', 0xCCEC94, ['1x mystery'])
-    dust('vanadium_magnetite_sludge', 0x1C1C2C, ['2x vanadium_magnetite', '1x mystery'])
+    dust('chromite_sludge', 0x4C3C4C, ['2x chromite', '1x mystery']);
+    dust('rare_sludge', 0xCCEC94, ['1x mystery']);
+    dust('vanadium_magnetite_sludge', 0x1C1C2C, ['2x vanadium_magnetite', '1x mystery']);
+    dust('cobaltite_sludge', 0x6186BB, ['2x cobaltite', '1x mystery']);
 
     dust('rare_metallic_residue', 0x515755, ['1x silver', '2x calcite'])
 
@@ -2013,20 +2015,24 @@ largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
     liquid('mixed_mineral_residue', 0x566E6E, '1x mystery');
     liquid('sulfuric_mineral_mixture', 0xE34f1E, '1x mystery');
     liquid('oxygenous_mineral_mixture', 0x359696, '1x mystery');
-    liquid('molten_ore_mixture', 0x575050, '1x mystery');
+    
 
     //molten ores
-    function moltenore(name, color){
-        liquid(`molten_${name}_ore`, color, name)
+    function moltenore(name, color, composition, temp){
+        event.create(`molten_${name}`)
+            .liquid(new GTFluidBuilder().temperature(temp))
+            .components(composition)
+            .color(color)
+            .flags(no_decomp);
     };
-    
-    moltenore('bauxite', 0xB5B69A);
-    moltenore('pitchblende', 0xAFC585);
-    moltenore('molybdenite', 0xC1D0A4);
-    moltenore('ilmenite', 0xCBA88F);
-    moltenore('tungstate', 0x9CACB1);
-    moltenore('bastnasite',0x988E84);
-    liquid('molten_cooperite_ore', 0xA4A38B, '1x cooperite');
+    moltenore('ore_mixture', 0x575050, '1x mystery', 1273);
+    moltenore('bauxite_ore', 0xB5B69A, '1x bauxite', 1160);
+    moltenore('pitchblende_ore', 0xAFC585, '1x pitchblende', 1160);
+    moltenore('molybdenite_ore', 0xC1D0A4, '1x molybdenite', 1160);
+    moltenore('ilmenite_ore', 0xCBA88F, '1x ilmenite', 1160);
+    moltenore('tungstate_ore', 0x9CACB1, '1x tungstate', 1160);
+    moltenore('bastnasite_ore',0x988E84, '1x bastnasite', 1160);
+    moltenore('cooperite_ore', 0xA4A38B, '1x cooperite', 1160);
 
     event.create('purified_naquadah')
         .gem()
@@ -2071,13 +2077,13 @@ largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
 
     event.create('bec_og')
         .components('1x oganesson')
-        .fluid()
+        .liquid(new GTFluidBuilder().temperature(0.0001))
         .color(0xBFACFF)
         .flags(no_decomp);
 
     event.create('superstate_helium_3')
         .components('1x helium_3')
-        .fluid()
+        .liquid(new GTFluidBuilder().temperature(2))
         .color(0xEDFAF5)
         .flags(no_decomp);
 
@@ -2089,7 +2095,8 @@ largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
         .color(0xDA8607)
         .blastTemp(15049, 'highest', VA('uev'), 3600)
         .iconSet(SHINY)
-        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp, rotor);
+        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp, rotor, no_abs_recipe)
+        .cableProperties(V('uhv'), 1, 3, false);
 
     event.create('mythrolic_alloy')
         .components('5x mythril', '2x osmium', '2x tantalum', '1x iridium')
@@ -2100,7 +2107,7 @@ largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
         .blastTemp(14999, 'highest', VA('uev'), 3600)
         .iconSet(SHINY)
         .fluidPipeProperties(120000, 6000, true,true,true,true)
-        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, rotor, ring, foil, no_decomp);
+        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, rotor, ring, foil, no_decomp, no_abs_recipe);
 
     event.create('starium_alloy')
         .components('4x mystery', '2x estalt', '2x pure_netherite')
@@ -2110,7 +2117,7 @@ largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
         .color(0x2253D2)
         .blastTemp(15199, 'highest', VA('uev'), 3600)
         .iconSet(SHINY)
-        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp);
+        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp, no_abs_recipe);
 
     event.create('seaborgium_palladium_enriched_estalt_flerovium_alloy')
         .ingot()
@@ -2119,7 +2126,7 @@ largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
         .components('4x seaborgium', '8x palladium', '3x enriched_estalt', '2x flerovium')
         .color(0x73022B)
         .iconSet(DULL)
-        .flags(no_decomp)
+        .flags(no_decomp, no_abs_recipe)
         .blastTemp(15469, 'highest', VA('uev'), 1800)
         .cableProperties(V('uev'), 32, 0, true);
 
@@ -2137,11 +2144,12 @@ largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
 
     event.create('astatium_bioselex_carbonite')
         .ingot()
+        .fluid()
         .components('1x astatine', '2x bismuth', '3x selenium', '2x thallium', '4x sulfur', '1x carbon')
         .color(0x305F84)
         .iconSet(DULL)
         .flags(spring, no_decomp)
-        .blastTemp(14900, 'higher', VA('uv'), 4000)
+        .blastTemp(14900, 'highest', VA('uv'), 4000)
         .cableProperties(V('uev'), 3, 16, false);
 
     event.create('astatine_bis_tritelluride_cobo_selenium_over_iron_titanium_oxide')
@@ -2150,7 +2158,7 @@ largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
         .color(0xE61485)
         .iconSet(DULL)
         .flags(fine_wire, bolt_and_screw)
-        .blastTemp(14799, 'highest', VA('uv'), 2500)
+        .blastTemp(14799, 'highest', VA('uhv'), 2500)
         .cableProperties(V('uev'), 2, 12, false);
 
     //UIV Materials
@@ -2159,7 +2167,7 @@ largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
         .components('1x polonium', '1x bismuth')
         .color(0x016038)
         .iconSet(DULL)
-        .blastTemp(13400, 'highest', VA('uev'), 1500)
+        .blastTemp(14400, 'highest', VA('uev'), 1800)
         .flags(bolt_and_screw,spring,small_spring)
         .cableProperties(V('uiv'), 5, 24, false);
 });

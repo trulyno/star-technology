@@ -2,11 +2,17 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.electrolyzer('rare_ore_residue')
         .inputFluids('gtceu:rare_ore_residue 1000')
-        .itemOutputs('gtceu:chromite_sludge_dust', 'gtceu:rare_sludge_dust', 'gtceu:vanadium_magnetite_sludge_dust')
+        .itemOutputs('gtceu:chromite_sludge_dust', 'gtceu:rare_sludge_dust', 'gtceu:vanadium_magnetite_sludge_dust', 'gtceu:cobaltite_sludge_dust')
         .chancedOutput('ae2:sky_dust', 3250, 750)
         .outputFluids('gtceu:raw_ore_slurry 250')
         .duration(50)
         .EUt(GTValues.VA[GTValues.MV]);
+
+    event.recipes.gtceu.centrifuge('cobaltite_sludge')
+        .itemInputs('gtceu:cobaltite_sludge_dust')
+        .itemOutputs('2x gtceu:cobaltite_dust', 'gtceu:rare_metallic_residue_dust')
+        .duration(50)
+        .EUt(GTValues.VHA[GTValues.MV]);
 
     event.recipes.gtceu.centrifuge('chromite_sludge')
         .itemInputs('gtceu:chromite_sludge_dust')

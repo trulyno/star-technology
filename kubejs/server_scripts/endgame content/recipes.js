@@ -66,6 +66,26 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(240000);
 
+    event.recipes.gtceu.large_chemical_reactor('iron_titanium_oxide')
+        .itemInputs('15x gtceu:ferrosilite_dust', '6x gtceu:titanium_oxide_dust')
+        .itemOutputs('gtceu:iron_titanium_oxide_dust', '9x gtceu:silicon_dioxide_dust')
+        .duration(4800)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.mixer('astatine_bis_tritelluride_cobo_selenium')
+        .itemInputs('gtceu:astatine_dust', 'gtceu:bismuth_tritelluride_dust', '4x gtceu:cobalt_dust', 'gtceu:selenium_dust')
+        .itemOutputs('gtceu:astatine_bis_tritelluride_cobo_selenium_dust')
+        .duration(360)
+        .circuit(3)
+        .EUt(GTValues.VHA[GTValues.UV]);
+
+    event.recipes.gtceu.mixer('astatine_bis_tritelluride_cobo_selenium_over_iron_titanium_oxide_dust')
+        .itemInputs('gtceu:astatine_bis_tritelluride_cobo_selenium_dust', 'gtceu:iron_titanium_oxide_dust')
+        .itemOutputs('gtceu:astatine_bis_tritelluride_cobo_selenium_over_iron_titanium_oxide_dust')
+        .duration(480)
+        .circuit(1)
+        .EUt(GTValues.VHA[GTValues.UHV]);
+
     event.recipes.gtceu.polarizer('magnetic_zapolgium')
         .itemInputs('gtceu:zapolgium_ingot')
         .itemOutputs('gtceu:magnetic_zapolgium_ingot')
@@ -78,19 +98,33 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.gtceu.mixer('cerium_tritelluride_dust')
+    event.recipes.gtceu.mixer('cerium_tritelluride')
         .itemInputs('gtceu:cerium_dust', '3x gtceu:tellurium_dust')
         .itemOutputs('4x gtceu:cerium_tritelluride_dust')
         .duration(900)
         .circuit(4)
         .EUt((GTValues.VHA[GTValues.UHV]));
 
+    event.recipes.gtceu.mixer('polonium_bismide')
+        .itemInputs('gtceu:polonium_dust', 'gtceu:bismuth_dust')
+        .itemOutputs('2x gtceu:polonium_bismide_dust')
+        .duration(600)
+        .circuit(2)
+        .EUt((GTValues.VHA[GTValues.UEV]));
+
     event.recipes.gtceu.assembler('zalloy_coil')
         .itemInputs('8x gtceu:zalloy_double_wire', '8x gtceu:neutronium_foil')
         .inputFluids('gtceu:tritanium 144')
         .itemOutputs('kubejs:zalloy_coil_block')
-        .duration(900)
+        .duration(1000)
         .EUt(GTValues.VHA[GTValues.UHV]);
+
+    event.recipes.gtceu.assembler('magmada_alloy')
+        .itemInputs('8x gtceu:magmada_alloy_double_wire', '8x gtceu:lepton_coalescing_superalloy_foil')
+        .inputFluids('gtceu:zalloy 144')
+        .itemOutputs('kubejs:magmada_alloy_coil_block')
+        .duration(1100)
+        .EUt(GTValues.VHA[GTValues.UEV]);
 
     event.recipes.gtceu.chemical_reactor('uepic_wafer')
         .itemInputs('gtceu:uhpic_wafer','4x gtceu:silicon_carbide_over_bismuth_tritelluride_dust')

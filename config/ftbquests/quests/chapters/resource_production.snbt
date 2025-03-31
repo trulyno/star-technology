@@ -928,8 +928,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
-			y: -9.5d
+			x: 4.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
@@ -943,8 +943,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: -8.5d
+			x: 3.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
@@ -969,7 +969,7 @@
 				item: "ae2:sky_dust"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.0d
 			y: -8.5d
 		}
 		{
@@ -2455,6 +2455,17 @@
 			}]
 			x: 6.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["5F9FBAC1FB36B1D3"]
+			id: "1BA6328EA8BA3052"
+			tasks: [{
+				id: "5DA4B5CBAC6C0603"
+				item: "gtceu:cobaltite_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.0d
 		}
 	]
 	title: "Resource Production"

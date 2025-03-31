@@ -74,14 +74,18 @@ ServerEvents.recipes(event => {
     //Quantum Cooling
     event.recipes.gtceu.super_cooler('bec_og')
         .inputFluids('gtceu:oganesson 500')
-        .inputFluids('gtceu:superstate_helium_3 10000')
+        .inputFluids('gtceu:superstate_helium_3 7500')
         .outputFluids('gtceu:bec_og 500')
         .outputFluids('gtceu:helium_3 5000')
+        .duration(320)
+        .EUt(GTValues.VHA[GTValues.UEV]);
 
     event.recipes.gtceu.super_cooler('superstate_helium_3')
         .inputFluids('gtceu:helium_3 5000')
         .inputFluids('gtceu:liquid_helium 5000')
         .outputFluids('gtceu:superstate_helium_3 5000')
         .outputFluids('gtceu:helium 2500')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UHV]);
 
 });
