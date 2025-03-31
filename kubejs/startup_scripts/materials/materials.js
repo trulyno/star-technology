@@ -230,14 +230,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // Blast Properties of periodic table metals
     const blast = global.blastProperty;
-    blast('zirconium', 8000, 'higher', VA('zpm'), 800);
-    blast('tellurium', 10000, 'higher', VA('zpm'), 700);
-    blast('polonium', 10000, 'higher', VA('zpm'), 600);
-    blast('astatine', 10000, 'higher', VA('zpm'), 800);
-    blast('hafnium', 10000, 'higher', VA('zpm'), 900);
-    blast('rhenium', 10000, 'higher', VA('zpm'), 900);
-    blast('seaborgium', 10000, 'higher', VA('zpm'), 1000);
-    blast('flerovium', 10000, 'higher', VA('luv'), 900);
+    blast('zirconium', 10900, 'higher', VA('uv'), 800);
+    blast('tellurium', 11200, 'higher', VA('uhv'), 900);
+    blast('polonium', 13400, 'higher', VA('uiv'), 1480);
+    blast('astatine', 12800, 'higher', VA('uhv'), 1350);
+    blast('hafnium', 11900, 'higher', VA('uv'), 750);
+    blast('rhenium', 14800, 'highest', VA('uiv'), 1200);
+    blast('seaborgium', 13300, 'higher', VA('uev'), 1500);
+    blast('flerovium', 12200, 'higher', VA('uhv'), 1200);
 
     // Materials from elements
     event.create('magnetic_zapolgium')
