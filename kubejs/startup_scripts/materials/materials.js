@@ -236,7 +236,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     blast('flerovium', 10000, 'higher', VA('luv'), 900);
 
     // Fluid pipes
-    GTMaterials.NaquadahEnriched.setProperty(PropertyKey.FLUID_PIPE, new $FluidPipeProperties(6000, 3600, true, false, false, false));
+    GTMaterials.NaquadahEnriched.setProperty(PropertyKey.FLUID_PIPE, new FluidPipeProperties(8000, 500, true, true, true, false));
 
     // Materials from elements
     event.create('magnetic_zapolgium')
