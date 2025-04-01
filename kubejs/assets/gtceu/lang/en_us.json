@@ -492,5 +492,17 @@
     "block.gtceu.exotic_gas_siphon.tooltip.7": "§7This machine can collect the ambient air in the surrounding atmosphere, providing the same functionality as a basic §fGas Collector§7.",
     "block.gtceu.exotic_gas_siphon.tooltip.8": "§8-----------------------------------",
     "gtceu.exotic_gas_siphon": "Exotic Gas Siphoning",
-    "material.gtceu.indium_oxide": "Indium Oxide"
+    "material.gtceu.indium_oxide": "Indium Oxide",
+
+    "block.gtceu.primitive_distillery": "Primitive Distillery",
+    "block.gtceu.kiln": "Kiln",
+    "gtceu.kiln": "Kiln",
+    "block.gtceu.rugged_alloyer": "Rugged Alloyer",
+    "gtceu.rugged_alloyer": "Rugged Alloyer",
+    "material.gtceu.raw_electrum": "Raw Electrum",
+    "material.gtceu.pig_iron": "Pig Iron",
+    "material.gtceu.coke_clay": "Coke Clay",
+    "material.gtceu.flisnt": "Flint",
+    "block.gtceu.latex_plantation": "Latex Plantation Controller",
+    "gtceu.latex_plantation": "Latex Plantation"
 }
