@@ -1,5 +1,17 @@
-
 ServerEvents.recipes(event => {
+
+    //greg compat
+    event.recipes.gtceu.wiremill('quartz_fiber_cables')
+        .itemInputs('minecraft:quartz')
+        .itemOutputs('3x ae2:quartz_fiber')
+        .duration(80)
+        .EUt(16);
+
+    event.recipes.gtceu.wiremill('fluix_glass_cables')
+        .itemInputs('ae2:fluix_crystal')
+        .itemOutputs('4x ae2:fluix_glass_cable')
+        .duration(80)
+        .EUt(16);
 
     event.recipes.gtceu.macerator('fluix_dust')
         .itemInputs('ae2:fluix_crystal')
@@ -30,6 +42,54 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(65);
 
+    //gregify recipes
+    //cells
+    event.replaceInput({output: 'ae2:cell_component_4k'}, 
+        'ae2:calculation_processor',
+        '#gtceu:circuits/lv'
+    );
+
+    event.replaceInput({output: 'ae2:cell_component_16k'}, 
+        'ae2:calculation_processor',
+        '#gtceu:circuits/mv'
+    );
+
+    event.replaceInput({output: 'ae2:cell_component_64k'}, 
+        'ae2:calculation_processor',
+        '#gtceu:circuits/hv'
+    );
+
+    event.replaceInput({output: 'ae2:cell_component_256k'}, 
+        'ae2:calculation_processor',
+        '#gtceu:circuits/ev'
+    );
+
+    event.replaceInput({output: 'megacells:cell_component_1m'}, 
+        'megacells:accumulation_processor',
+        '#gtceu:circuits/iv'
+    );
+
+    event.replaceInput({output: 'megacells:cell_component_4m'}, 
+        'megacells:accumulation_processor',
+        '#gtceu:circuits/luv'
+    );
+
+    event.replaceInput({output: 'megacells:cell_component_16m'}, 
+        'megacells:accumulation_processor',
+        '#gtceu:circuits/zpm'
+    );
+
+    event.replaceInput({output: 'megacells:cell_component_64m'}, 
+        'megacells:accumulation_processor',
+        '#gtceu:circuits/uv'
+    );
+
+    event.replaceInput({output: 'megacells:cell_component_256m'}, 
+        'megacells:accumulation_processor',
+        '#gtceu:circuits/uhv'
+    );
+
+    //circuits
     event.recipes.gtceu.alloy_smelter('printed_calculation_circuit')
         .itemInputs('gtceu:certus_quartz_plate')
         .notConsumable('ae2:calculation_processor_press')
@@ -100,6 +160,7 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(65);
 
+    //machines
     event.shaped(Item.of('ae2:controller'), [
         'HFH',
         'FCF',
@@ -109,63 +170,6 @@ ServerEvents.recipes(event => {
         F: 'ae2:fluix_crystal',
         H: 'ae2:engineering_processor'
     });
-
-    event.replaceInput({output: 'ae2:cell_component_4k'}, 
-        'ae2:calculation_processor',
-        '#gtceu:circuits/lv'
-    );
-
-    event.replaceInput({output: 'ae2:cell_component_16k'}, 
-        'ae2:calculation_processor',
-        '#gtceu:circuits/mv'
-    );
-
-    event.replaceInput({output: 'ae2:cell_component_64k'}, 
-        'ae2:calculation_processor',
-        '#gtceu:circuits/hv'
-    );
-
-    event.replaceInput({output: 'ae2:cell_component_256k'}, 
-        'ae2:calculation_processor',
-        '#gtceu:circuits/ev'
-    );
-
-    event.replaceInput({output: 'megacells:cell_component_1m'}, 
-        'megacells:accumulation_processor',
-        '#gtceu:circuits/iv'
-    );
-
-    event.replaceInput({output: 'megacells:cell_component_4m'}, 
-        'megacells:accumulation_processor',
-        '#gtceu:circuits/luv'
-    );
-
-    event.replaceInput({output: 'megacells:cell_component_16m'}, 
-        'megacells:accumulation_processor',
-        '#gtceu:circuits/zpm'
-    );
-
-    event.replaceInput({output: 'megacells:cell_component_64m'}, 
-        'megacells:accumulation_processor',
-        '#gtceu:circuits/uv'
-    );
-
-    event.replaceInput({output: 'megacells:cell_component_256m'}, 
-        'megacells:accumulation_processor',
-        '#gtceu:circuits/uhv'
-    );
-
-    event.recipes.gtceu.wiremill('quartz_fiber_cables')
-        .itemInputs('minecraft:quartz')
-        .itemOutputs('3x ae2:quartz_fiber')
-        .duration(80)
-        .EUt(16);
-
-    event.recipes.gtceu.wiremill('fluix_glass_cables')
-        .itemInputs('ae2:fluix_crystal')
-        .itemOutputs('4x ae2:fluix_glass_cable')
-        .duration(80)
-        .EUt(16);
 
     event.recipes.gtceu.alloy_smelter('star_steel')
         .itemInputs('ae2:sky_dust', '2x gtceu:steel_ingot')
@@ -301,7 +305,6 @@ ServerEvents.recipes(event => {
         '#gtceu:circuits/iv'
     );
 
-    event.remove({ output: /megacells:sky_steel.*/});
     event.replaceInput({input: 'megacells:sky_steel_ingot'}, 
         'megacells:sky_steel_ingot',
         'minecraft:netherite_ingot'
