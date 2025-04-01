@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.dimensional_finder('nether_coordinate_crystal')
         .itemInputs('kubejs:coordinate_crystal', 'minecraft:netherrack', 'gtceu:uhv_sensor')
-        .inputFluids('gtceu:utopian_akreyrium 9072')
+        .inputFluids('minecraft:lava 5000')
         .chancedOutput('kubejs:nether_coordinate_crystal', 250, 50)
         .duration(12000)
         .EUt(GTValues.VHA[GTValues.UHV])
@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.dimensional_finder('end_coordinate_crystal')
         .itemInputs('kubejs:coordinate_crystal', 'minecraft:end_stone', 'gtceu:uhv_sensor')
-        .inputFluids('gtceu:utopian_akreyrium 9072')
+        .inputFluids('gtceu:echo_r 5000')
         .chancedOutput('kubejs:end_coordinate_crystal', 250, 50)
         .duration(12000)
         .EUt(GTValues.VHA[GTValues.UHV])
@@ -90,5 +90,16 @@ ServerEvents.recipes(event => {
         .duration(12000)
         .EUt(4*GTValues.VHA[GTValues.UXV])
         .dimension('minecraft:cavum_tenebrae');*/
+
+    const CrystalDuping = (type,eutScale) => {
+        event.recipes.gtceu.scanner(`${type}_crystal_duping`)
+        .itemInputs('kubejs:coordinate_crystal',`kubejs:${type}_coordinate_crystal`)
+        .itemOutputs(`2x kubejs:${type}_coordinate_crystal`)
+        .duration(6000)
+        .EUt(GTValues.VHA[GTValues.UV]*(4**eutScale));
+    }
+    CrystalDuping('abydos',0);
+    CrystalDuping('nether',1);
+    CrystalDuping('end',1);
 
 });

@@ -1,11 +1,12 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('component_part_assembly')
         .category('component_part_assembly')
         .setEUIO('in')
         .setMaxIOSize(6, 1, 2, 0)
-        .setSound(GTSoundEntries.ASSEMBLER);
+        // .setHasResearchSlot(true)  need to figure out how this works
+        .setSound(GTSoundEntries.ASSEMBLER)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ASSEMBLER, FillDirection.LEFT_TO_RIGHT);
 
 });
 

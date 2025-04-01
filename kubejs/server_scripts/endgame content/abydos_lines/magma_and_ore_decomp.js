@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     
     //Magma Breakdown
     
-    event.recipes.gtceu.distillation_tower('decomp_abydos_titanite_rich_magma')
+    event.recipes.gtceu.molten_destabilizing('decomp_abydos_titanite_rich_magma')
         .inputFluids('gtceu:abydos_titanite_rich_magma 80000')
         .outputFluids('gtceu:titanite 30000')
         .outputFluids('gtceu:molten_ore_mixture 15000')
@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         .duration(2400)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
-    event.recipes.gtceu.distillation_tower('decomp_abydos_zapolite_rich_magma')
+    event.recipes.gtceu.molten_destabilizing('decomp_abydos_zapolite_rich_magma')
         .inputFluids('gtceu:abydos_zapolite_rich_magma 80000')
         .outputFluids('gtceu:zapolite 30000')
         .outputFluids('gtceu:molten_ore_mixture 15000')

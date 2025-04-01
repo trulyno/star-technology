@@ -151,6 +151,7 @@
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
+			description: ["A better tier of circuit assembler allowing you to make circuits faster and the &eMicrochip&r line which you will use for a while."]
 			id: "75942788374CDEF3"
 			rewards: [{
 				id: "47D65386785B5F06"
@@ -190,7 +191,7 @@
 		}
 		{
 			dependencies: ["088FE0CF9D07F9C6"]
-			description: ["This is the final version of the MV circuit, however just like the LV circuit, there is a cheaper recipe that unlocks later on."]
+			description: ["This is the final version of the &bMV&r circuit, however just like the &7LV&r circuit, there is a cheaper recipe that unlocks later on."]
 			id: "363F5B598683A074"
 			rewards: [{
 				id: "3A3BA9FB7E4765D6"
@@ -213,7 +214,7 @@
 				"470EBC3C75C6748E"
 				"41D5FABA8D0BB0AC"
 			]
-			description: ["This is the final version of the LV circuit, however with a bit more progression you will gain access to an even cheaper recipe for it."]
+			description: ["This is the final version of the &7LV&r circuit, however with a bit more progression you will gain access to an even cheaper recipe for it."]
 			id: "088FE0CF9D07F9C6"
 			rewards: [{
 				id: "36565CD30876ABD0"
@@ -359,7 +360,7 @@
 				"73931EAA3EC5C9A9"
 			]
 			description: [
-				"&6Auto Maintenance Hatch&r: Every worry about needing maintenance, well now you never have to."
+				"&6Auto Maintenance Hatch&r: Ever worry about needing maintenance, well now you never have to."
 				""
 				"&3Configurable Maintenance Hatch&r: Make your machines faster at the sake of risking more maintenance issues, or make them slower to reduce the chance."
 				""
@@ -921,6 +922,7 @@
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
+			description: ["Used to turn &6HV&r machines into their &6Perfect Overclock&r multiblock variants"]
 			hide_dependent_lines: true
 			id: "5B70B63D4157594F"
 			rewards: [{
@@ -944,6 +946,7 @@
 				"52FE319F5E176C37"
 				"1B0A7CF5BE5D71FE"
 			]
+			dependency_requirement: "one_completed"
 			description: ["A very tall multiblock that allows you to distill one fluid into multiple others without having to choose like with the distillery."]
 			id: "170C262792DA7123"
 			rewards: [{
@@ -1280,7 +1283,7 @@
 			description: [
 				"The best liquid for etching Circuit Boards."
 				""
-				"We recommend switching out your ae2 patterns to use this."
+				"We recommend switching out your &oAE2&r patterns to use this."
 			]
 			id: "001252911D2DA7C3"
 			rewards: [{
@@ -1632,7 +1635,7 @@
 		}
 		{
 			dependencies: ["0F0FEE1952A3CB4F"]
-			description: ["Now you have PTFE, you can make one of the most useful multiblocks, the Large Chemical Reactor (LCR for short). You will have so many of these by the end of the pack."]
+			description: ["Now you have &8PTFE&r, you can make one of the most useful multiblocks, the Large Chemical Reactor (LCR for short). You will have so many of these by the end of the pack."]
 			id: "1820787D031EAB15"
 			rewards: [{
 				count: 2
@@ -2052,8 +2055,11 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["2D4F9DFF6B559C65"]
-			description: ["This Chip is used in both &9IV&r and &dLuv&r Energy Hatches and Transformers as well as Assembly Line Casings."]
+			dependencies: [
+				"2D4F9DFF6B559C65"
+				"215D430EAC4CE323"
+			]
+			description: ["This Chip is used in both &9IV&r and &dLuV&r Energy Hatches and Transformers as well as Assembly Line Casings."]
 			hide_dependency_lines: true
 			icon: "gtceu:hpic_chip"
 			id: "05F2C7351FF1B0E5"
@@ -2172,6 +2178,7 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["550DB81B8DC91730"]
 			description: ["Just some Glass and Boron, quite cheap."]
 			id: "5B575348D2A871BB"
 			optional: true
@@ -2190,6 +2197,7 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["261174370DC87FCB"]
 			description: ["Carbon and a Plastic. Each Plastic gives twice as much Fibers as the previous one."]
 			id: "4FF433145C67693F"
 			optional: true
@@ -2387,6 +2395,7 @@
 				"Oh, and maybe look into paralleling this thing when you can, you could say it causes quite the reaction."
 			]
 			id: "68865F1DDBFFFACE"
+			optional: true
 			rewards: [{
 				count: 2
 				id: "7E70C6C6130F88D8"
@@ -2453,7 +2462,7 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: 1.0d
 			y: 0.0d
 		}
 		{

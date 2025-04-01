@@ -111,12 +111,6 @@
 			y: -21.5d
 		}
 		{
-			id: "44C05669AD959C08"
-			linked_quest: "79428BAEAA7856E1"
-			x: -2.0d
-			y: -20.0d
-		}
-		{
 			id: "3296AB708049D9CD"
 			linked_quest: "70C2BB4FAA2FB1F2"
 			x: -0.5d
@@ -267,12 +261,6 @@
 			y: -17.5d
 		}
 		{
-			id: "231466CD54505A13"
-			linked_quest: "67ABB3BF6D0C183B"
-			x: -18.0d
-			y: -29.5d
-		}
-		{
 			id: "3B7B8853F2299D4D"
 			linked_quest: "60ECE277341A9408"
 			x: -14.5d
@@ -349,6 +337,12 @@
 			linked_quest: "6356F875511B2610"
 			x: 6.0d
 			y: -15.5d
+		}
+		{
+			id: "0AC6062ECBE46015"
+			linked_quest: "67ABB3BF6D0C183B"
+			x: -18.0d
+			y: -29.5d
 		}
 	]
 	quests: [
@@ -1252,7 +1246,10 @@
 			y: -21.5d
 		}
 		{
-			dependencies: ["79428BAEAA7856E1"]
+			dependencies: [
+				"79428BAEAA7856E1"
+				"2C389E4B673A803E"
+			]
 			id: "68F9735CB776A7A5"
 			tasks: [{
 				id: "5A0D53C0B8BFACF3"
@@ -1470,7 +1467,7 @@
 			id: "73D10CF0B822A6CB"
 			tasks: [{
 				id: "184E9483C17B914E"
-				item: "gtceu:cyclonic_crystalline_sieve"
+				item: "gtceu:cyclonic_sifter"
 				type: "item"
 			}]
 			x: -16.0d
@@ -1498,7 +1495,7 @@
 			id: "6375D265594CEE4F"
 			tasks: [{
 				id: "3578BB0D1914EC3D"
-				item: "gtceu:leptonic_convergence_injector"
+				item: "gtceu:injection_mixer"
 				type: "item"
 			}]
 			x: -13.0d
@@ -1512,7 +1509,7 @@
 			id: "017CEDA75E3D61F2"
 			tasks: [{
 				id: "057AED2EBED05829"
-				item: "gtceu:leptonic_manifold_quantiser"
+				item: "gtceu:manifold_centrifuge"
 				type: "item"
 			}]
 			x: -11.5d
@@ -1551,6 +1548,18 @@
 			}]
 			x: 1.0d
 			y: -15.5d
+		}
+		{
+			dependencies: ["421DF7880AD00F58"]
+			id: "2C389E4B673A803E"
+			subtitle: "First ZPM Circuit"
+			tasks: [{
+				id: "2B6DA2DF1C1EA537"
+				item: "gtceu:quantum_processor_mainframe"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -20.0d
 		}
 	]
 	title: "Line Of Progression"

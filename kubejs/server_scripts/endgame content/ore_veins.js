@@ -4,9 +4,9 @@ GTCEuServerEvents.oreVeins(event => {
     event.removeAll();
 
     event.add('start:zapolite_vein', vein => {
-        vein.weight(600)
-        vein.clusterSize(60)
-        vein.density(0.45)
+        vein.weight(87)
+        vein.clusterSize(15)
+        vein.density(0.15)
         vein.discardChanceOnAirExposure(0)
 
         vein.layer('abydos')
@@ -33,9 +33,9 @@ GTCEuServerEvents.oreVeins(event => {
     });
 
     event.add('start:lautarite_vein', vein => {
-        vein.weight(500)
-        vein.clusterSize(60)
-        vein.density(0.45)
+        vein.weight(78)
+        vein.clusterSize(19)
+        vein.density(0.15)
         vein.discardChanceOnAirExposure(0)
 
         vein.layer('abydos')
@@ -62,9 +62,9 @@ GTCEuServerEvents.oreVeins(event => {
     });
 
     event.add('start:clausthalite_vein', vein => {
-        vein.weight(500)
-        vein.clusterSize(60)
-        vein.density(0.45)
+        vein.weight(72)
+        vein.clusterSize(21)
+        vein.density(0.15)
         vein.discardChanceOnAirExposure(0)
 
         vein.layer('abydos')
@@ -92,9 +92,9 @@ GTCEuServerEvents.oreVeins(event => {
     });
 
     event.add('start:berzelianite_vein', vein => {
-        vein.weight(500)
-        vein.clusterSize(60)
-        vein.density(0.45)
+        vein.weight(84)
+        vein.clusterSize(18)
+        vein.density(0.15)
         vein.discardChanceOnAirExposure(0)
 
         vein.layer('abydos')

@@ -47,7 +47,7 @@
 			linked_quest: "22BC7BDE5E132A30"
 			shape: "gear"
 			size: 1.5d
-			x: 3.75d
+			x: 4.0d
 			y: 3.5d
 		}
 		{
@@ -928,8 +928,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
-			y: -9.5d
+			x: 4.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
@@ -943,8 +943,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: -8.5d
+			x: 3.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["5F9FBAC1FB36B1D3"]
@@ -969,7 +969,7 @@
 				item: "ae2:sky_dust"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.0d
 			y: -8.5d
 		}
 		{
@@ -1649,8 +1649,8 @@
 				title: "Abydos Drilling"
 				type: "checkmark"
 			}]
-			x: 5.5d
-			y: 5.0d
+			x: 4.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["69CCC4E36528A4FC"]
@@ -1677,8 +1677,8 @@
 				}
 			]
 			title: "Abydos Titanite-rich Magma"
-			x: 4.5d
-			y: 6.5d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["69CCC4E36528A4FC"]
@@ -1705,8 +1705,8 @@
 				}
 			]
 			title: "Abydos Zapolite-rich Magma"
-			x: 5.5d
-			y: 6.5d
+			x: 4.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["69CCC4E36528A4FC"]
@@ -1733,25 +1733,17 @@
 				}
 			]
 			title: "Gritty Akreyrium"
-			x: 6.5d
-			y: 6.5d
+			x: 5.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["748EC87C28C4CC56"]
-			icon: {
-				Count: 1
-				id: "gtceu:salt_water_bucket"
-				tag: { }
-			}
+			icon: "gtceu:brackish_water_bucket"
 			id: "13FB042818A0F23C"
 			tasks: [
 				{
 					id: "6C29F1145624CD33"
-					item: {
-						Count: 1
-						id: "gtceu:salt_water_bucket"
-						tag: { }
-					}
+					item: "gtceu:brackish_water_bucket"
 					optional_task: true
 					type: "item"
 				}
@@ -1760,7 +1752,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "Salt Water"
+			title: "Brackish Water"
 			x: 3.0d
 			y: 6.5d
 		}
@@ -1776,8 +1768,8 @@
 				type: "checkmark"
 			}]
 			title: "Processing Lines (Chap 4,5,6)"
-			x: 5.5d
-			y: 8.0d
+			x: 4.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["307FA3025E294979"]
@@ -2404,6 +2396,76 @@
 			}]
 			x: -5.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["22BC7BDE5E132A30"]
+			icon: "minecraft:netherrack"
+			id: "4E6158880F47AACC"
+			tasks: [{
+				id: "18FD48B4E6F632C6"
+				title: "Nether Drilling"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4E6158880F47AACC"]
+			id: "30AB8331D0B80859"
+			tasks: [{
+				id: "653F650A694C243A"
+				item: "gtceu:debris_rich_nether_magma_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4E6158880F47AACC"]
+			id: "2068B9072855036B"
+			tasks: [{
+				id: "5770E3840D8195A6"
+				item: "gtceu:highly_unstable_nether_magma_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"2068B9072855036B"
+				"30AB8331D0B80859"
+			]
+			id: "4D7583FF99404C6D"
+			tasks: [{
+				id: "7BDD424C5B7480B1"
+				type: "checkmark"
+			}]
+			title: "Processing Lines (Chap 7+)"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4E6158880F47AACC"]
+			id: "0F7686E05F9324B9"
+			tasks: [{
+				id: "1ACD2A302E279921"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5F9FBAC1FB36B1D3"]
+			id: "1BA6328EA8BA3052"
+			tasks: [{
+				id: "5DA4B5CBAC6C0603"
+				item: "gtceu:cobaltite_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.0d
 		}
 	]
 	title: "Resource Production"

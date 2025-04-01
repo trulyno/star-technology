@@ -46,7 +46,7 @@
 		["Stargate Journey Common Config"."Stargate Config".server]
 			#The maximum amount of time the Stargate will be open for in seconds
 			#Range: 10 ~ 2280
-			max_wormhole_open_time = 450
+			max_wormhole_open_time = 1200
 			#If false, the Wormhole connection can only be ended from the dialing side
 			end_connection_from_both_ends = true
 			#ENABLED - Two way travel possible; CREATIVE_ONLY - Two way travel limited to Players in Creative Mode; DISABLED - Two way travel impossible
@@ -102,31 +102,31 @@
 			can_draw_power_from_both_ends = false
 			#The amount of energy cost of keeping the wormhole open each tick for system-wide connections
 			#Range: 0 ~ 9223372036854775807
-			system_wide_connection_energy_draw = 2000000
+			system_wide_connection_energy_draw = 524288
 			#The amount of energy cost of keeping the wormhole open each tick for interstellar connections
 			#Range: 0 ~ 9223372036854775807
-			interstellar_connection_energy_draw = 2000000
+			interstellar_connection_energy_draw = 2097152
 			#The amount of energy cost of keeping the wormhole open each tick for intergalactic connections
 			#Range: 0 ~ 9223372036854775807
-			intergalactic_connection_energy_draw = 20000000
+			intergalactic_connection_energy_draw = 33554432
 			#The amount of energy required to establish a connection inside a solar system
 			#Range: 0 ~ 9223372036854775807
-			system_wide_connection_energy_cost = 500000
+			system_wide_connection_energy_cost = 2097152
 			#The amount of energy required to establish a connection inside the galaxy
 			#Range: 0 ~ 9223372036854775807
-			interstellar_connection_energy_cost = 1000000
+			interstellar_connection_energy_cost = 8388608
 			#The amount of energy required to establish a connection outside the galaxy
 			#Range: 0 ~ 9223372036854775807
-			intergalactic_connection_energy_cost = 100000000
+			intergalactic_connection_energy_cost = 134217728
 			#The maximum amount of energy the Stargate can hold
 			#Range: 0 ~ 9223372036854775807
-			stargate_energy_capacity = 1000000000000
+			stargate_energy_capacity = 34359738240
 			#The maximum amount of energy the Stargate can receive at once
 			#Range: 0 ~ 9223372036854775807
-			stargate_energy_max_receive = 1000000000000
+			stargate_energy_max_receive = 34359738240
 			#The energy required to keep the Stargate open after exceeding the maximum open time is multiplied by this number
 			#Range: > 1
-			energy_bypass_multiplier = 100000
+			energy_bypass_multiplier = 33554432
 			#If true, Stargate will load the chunk it's in while it's connected to another Stargate
 			stargate_loads_chunk_when_connected = true
 

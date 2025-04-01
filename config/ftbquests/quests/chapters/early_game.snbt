@@ -2277,6 +2277,7 @@
 		{
 			dependencies: ["10126B9D6EC90F59"]
 			id: "1289465781707205"
+			optional: true
 			tasks: [
 				{
 					id: "71E3F7FCADC341A6"
@@ -2365,6 +2366,23 @@
 			}]
 			x: 3.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["7EE1BE4043827F35"]
+			description: ["A &oMUCH&r better composter that allows you to do thing and bulk with easier automation."]
+			id: "0FD7200A8D4F09AE"
+			rewards: [{
+				id: "02B957C52A4C18CF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4661585B2B492844"
+				item: "gtceu:ulv_advanced_composter"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
 		}
 	]
 	title: "Early Game"

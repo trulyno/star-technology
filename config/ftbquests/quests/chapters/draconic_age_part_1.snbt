@@ -1,0 +1,941 @@
+{
+	autofocus_id: "51FAA26B6A537091"
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "draconic_age_part_1"
+	group: "1E0FC4EA21F735F7"
+	hide_quest_until_deps_complete: true
+	icon: "minecraft:dragon_egg"
+	id: "5617484BFC479624"
+	order_index: 6
+	progression_mode: "linear"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1E3EF64C0A4EE438"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:block/netherrack"
+				}
+			}
+			id: "4DF07CB3D60C901C"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "0CC375D9EC5EB6D5"
+				title: "Burning Hells Await"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4DF07CB3D60C901C"]
+			id: "71145B6D6BA8016A"
+			tasks: [{
+				id: "6D0F2C19F28F64B7"
+				title: "Find Collapsed Hellforge"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4DF07CB3D60C901C"]
+			id: "709EF5314988C381"
+			tasks: [{
+				id: "03C1C4B51E9D50B0"
+				title: "Hellstones"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["709EF5314988C381"]
+			id: "665FC02BC2BC414F"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "54FCC26C066840E9"
+				item: "gtceu:uev_super_cooler"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"709EF5314988C381"
+				"71145B6D6BA8016A"
+			]
+			id: "1EB60E6DE2086158"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3B8803F13E83A948"
+				item: "gtceu:uev_hellforge"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"1EB60E6DE2086158"
+				"70EEDB38B78F5C7F"
+				"0032335FFAE6E012"
+			]
+			id: "059CB064A515B157"
+			tasks: [
+				{
+					id: "47744266B3A437CB"
+					title: "Hell Alloys"
+					type: "checkmark"
+				}
+				{
+					id: "32A5C9625179E385"
+					item: "gtceu:magmada_alloy_ingot"
+					type: "item"
+				}
+				{
+					id: "0EA7259598286499"
+					item: "gtceu:mythrolic_alloy_ingot"
+					type: "item"
+				}
+				{
+					id: "7429A81C42FE2F21"
+					item: "gtceu:starium_alloy_ingot"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["665FC02BC2BC414F"]
+			hide_dependent_lines: true
+			id: "64E470F6BFEE8C3F"
+			tasks: [{
+				id: "4695A96894815210"
+				item: "gtceu:superstate_helium_3_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"665FC02BC2BC414F"
+				"64E470F6BFEE8C3F"
+				"295442FA6CE0BA13"
+			]
+			id: "70EEDB38B78F5C7F"
+			tasks: [{
+				id: "35B242E33E98B4B7"
+				item: "gtceu:bec_og_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"059CB064A515B157"
+				"215A1E80621E2880"
+			]
+			id: "310FC3F86513555F"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2B4AB49F78A510B0"
+				item: "kubejs:magmada_alloy_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"498E36C4683EAA6C"
+				"218CABD676F3B732"
+			]
+			id: "799F6F79B9FF86DF"
+			tasks: [{
+				id: "2202E2A517EE8E9D"
+				item: "gtceu:uev_energy_input_hatch"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"310FC3F86513555F"
+				"64E470F6BFEE8C3F"
+				"295442FA6CE0BA13"
+			]
+			icon: "gtceu:uev_electric_motor"
+			id: "2CE91E9D83810377"
+			tasks: [{
+				id: "24F41E9B905A4942"
+				title: "UEV Components"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["799F6F79B9FF86DF"]
+			id: "538113DD6E1EA84D"
+			tasks: [{
+				id: "4F7E740E785857CF"
+				item: "gtceu:uev_energy_input_hatch_4a"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["538113DD6E1EA84D"]
+			id: "11971C9E5BF28E5C"
+			tasks: [{
+				id: "318605B6320145B8"
+				item: "gtceu:uev_energy_input_hatch_16a"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CE91E9D83810377"]
+			hide_dependent_lines: true
+			id: "6180202612DCDBF4"
+			tasks: [{
+				id: "1CE9707FDB45EED7"
+				title: "Hellforged Armor"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6180202612DCDBF4"
+				"4238E903C674B284"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:block/end_stone"
+				}
+			}
+			id: "28DE3D2A96C4D0C8"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "64F5F2C7D749F456"
+				title: "The Draconic Abyss"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["28DE3D2A96C4D0C8"]
+			id: "01FBF9CDD9066AF5"
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+				id: "6C9EDCB58D56F0EE"
+				type: "advancement"
+			}]
+			title: "The Last Dragon Falls"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C8C6EA426060065"]
+			id: "215A1E80621E2880"
+			shape: "circle"
+			tasks: [{
+				id: "2EAC214860C4256F"
+				item: "gtceu:magmatic_plasma_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["28DE3D2A96C4D0C8"]
+			id: "7D1C09EB946A29D4"
+			tasks: [{
+				id: "0D41FAC84C104B91"
+				title: "Find Ruined Draconic Infusion Array"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["28DE3D2A96C4D0C8"]
+			id: "18FD654260DFF1D6"
+			tasks: [{
+				id: "6E9FE3724FFB98A3"
+				title: "Abyss Harvesting"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["01FBF9CDD9066AF5"]
+			id: "0168A45EB73911AC"
+			tasks: [
+				{
+					id: "69CCBF0C08150E76"
+					title: "Dragon Harvesting"
+					type: "checkmark"
+				}
+				{
+					id: "2905E8DC5AFA2279"
+					item: "kubejs:draconic_stem_cells"
+					type: "item"
+				}
+				{
+					id: "6FBBC957AE9898E4"
+					item: "kubejs:lactating_draconic_cells"
+					type: "item"
+				}
+				{
+					id: "1C4E71F2E7F1AB5C"
+					item: "kubejs:draconic_brain_matter_cells"
+					type: "item"
+				}
+				{
+					id: "360D185C6B20938C"
+					item: "kubejs:draconic_scale_cells"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["059CB064A515B157"]
+			id: "498E36C4683EAA6C"
+			tasks: [{
+				id: "22C7613F90482189"
+				item: "gtceu:uev_machine_hull"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1C9396E2587051F7"
+				"0168A45EB73911AC"
+			]
+			id: "1AF4BF803FEF14FE"
+			tasks: [{
+				id: "54CFEDC276799BE3"
+				item: "kubejs:draconic_neuro_processing_unit"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["18FD654260DFF1D6"]
+			id: "7EB9C44EE7515882"
+			tasks: [
+				{
+					id: "0123BA928AA8E0FA"
+					title: "Forgotten Mystical Materials"
+					type: "checkmark"
+				}
+				{
+					id: "42A1C4E86DF3A7BD"
+					item: "gtceu:xeproda_ingot"
+					type: "item"
+				}
+				{
+					id: "175DE48B2735D239"
+					item: "gtceu:rhexis_ingot"
+					type: "item"
+				}
+				{
+					id: "5AA40001BEE0AB08"
+					item: "gtceu:chalyblux_ingot"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"01FBF9CDD9066AF5"
+				"7D1C09EB946A29D4"
+			]
+			id: "395C32B51E768458"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0CDF1129CD1EC487"
+				title: "Draconic Infusion Array"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"7EB9C44EE7515882"
+				"395C32B51E768458"
+				"468AA2233E2CBB6D"
+			]
+			id: "097D8B4DF03A8617"
+			tasks: [{
+				id: "589B09C81D06CCA2"
+				title: "End Alloys"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2DACE6EF41A118D9"]
+			icon: "gtceu:uiv_electric_motor"
+			id: "5E96ECB0768B5D80"
+			tasks: [{
+				id: "0D4319348CE9080F"
+				title: "UIV Components"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["097D8B4DF03A8617"]
+			id: "2DACE6EF41A118D9"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1462466F9431F65B"
+				title: "Abyss Coils"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["097D8B4DF03A8617"]
+			id: "3F9D1B0CED0D4133"
+			tasks: [{
+				id: "6B6A684DAA6ACD8E"
+				item: "gtceu:uiv_machine_hull"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3F9D1B0CED0D4133"]
+			id: "45E628CF1DA8D380"
+			tasks: [{
+				id: "02B9EE14E608F77D"
+				item: "gtceu:uiv_energy_input_hatch"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["45E628CF1DA8D380"]
+			id: "69493DCA3D764771"
+			tasks: [{
+				id: "6B0F5BE1F0BE7E1B"
+				item: "gtceu:uiv_energy_input_hatch_4a"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["69493DCA3D764771"]
+			id: "54944370404CEA94"
+			tasks: [{
+				id: "672EC9D38A3D8F66"
+				item: "gtceu:uiv_energy_input_hatch_16a"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4DF07CB3D60C901C"]
+			id: "1AEBAE3050B72906"
+			tasks: [{
+				id: "1CE16522433B325A"
+				title: "Hellish Magmas"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1AEBAE3050B72906"]
+			id: "0032335FFAE6E012"
+			tasks: [
+				{
+					id: "2087B3222C16200A"
+					title: "mystical metals"
+					type: "checkmark"
+				}
+				{
+					id: "41E9F16A4E73BCD1"
+					item: "gtceu:estalt_ingot"
+					type: "item"
+				}
+				{
+					id: "1E6DB5EE1E5E0703"
+					item: "gtceu:adamantine_ingot"
+					type: "item"
+				}
+				{
+					id: "3A5497E596DB234B"
+					item: "gtceu:mythril_ingot"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1AEBAE3050B72906"]
+			hide_dependent_lines: true
+			id: "295442FA6CE0BA13"
+			tasks: [{
+				id: "1BA02FB83915A844"
+				item: "gtceu:atomic_nether_sludge_dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["395C32B51E768458"]
+			id: "1772F46C9EAF6FB7"
+			tasks: [{
+				id: "57E957460CE75A2E"
+				title: "Draconic Circuit Factory"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1772F46C9EAF6FB7"]
+			id: "324630FF56F505DA"
+			tasks: [{
+				id: "1E5FDD16FC5DDAA3"
+				title: "Circuit Packs"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1AF4BF803FEF14FE"
+				"1772F46C9EAF6FB7"
+			]
+			id: "169C2E9DA1CF8F53"
+			tasks: [{
+				id: "34FC1D181B3F8239"
+				item: "kubejs:draconic_wetware_microchip_processor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["169C2E9DA1CF8F53"]
+			id: "26FDB9612063F49D"
+			tasks: [{
+				id: "608B93EA8632BE4E"
+				item: "kubejs:draconic_wetware_processor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["26FDB9612063F49D"]
+			id: "66D49CB8D8819E3F"
+			tasks: [{
+				id: "1D0AA38E67A6E6D1"
+				item: "kubejs:draconic_wetware_processor_assembly"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66D49CB8D8819E3F"]
+			id: "6F3DF16481990D99"
+			tasks: [{
+				id: "5ECC7A631E155695"
+				item: "kubejs:draconic_wetware_processor_computer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6F3DF16481990D99"]
+			id: "5944C4DE27F98FF3"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6EF791353FFC298F"
+				item: "kubejs:draconic_wetware_processor_mainframe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"5944C4DE27F98FF3"
+				"2CE91E9D83810377"
+			]
+			hide_dependent_lines: true
+			id: "2E34F23A42004285"
+			tasks: [{
+				id: "121795B2B974FB3C"
+				title: "mk4 Fusion"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2E34F23A42004285"]
+			id: "468AA2233E2CBB6D"
+			tasks: [{
+				id: "31D0315C5C9D2CDA"
+				title: "Preon Plasma"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3AE729D3F47E9A2B"]
+			id: "06EC98F6E6AFC2AF"
+			tasks: [{
+				id: "7585DCB3290D83B9"
+				title: "Drag Boule"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06EC98F6E6AFC2AF"]
+			id: "0DF30CDA8DE68E0C"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6D4BC401FE89651A"
+				title: "drag wafer"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0DF30CDA8DE68E0C"]
+			id: "074635DC3322DC99"
+			tasks: [{
+				id: "33F82DA31DE8BF87"
+				title: "drag soc"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5E96ECB0768B5D80"]
+			id: "032E72446266F7D4"
+			tasks: [{
+				id: "741E0E4603A5AAA7"
+				title: "sterile maintence hatch"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5E96ECB0768B5D80"]
+			id: "09B55AFE7C06EC82"
+			tasks: [{
+				id: "3C1633006F6ECB70"
+				title: "Abyssal Room"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["09B55AFE7C06EC82"]
+			icon: "mysticalagriculture:dragon_egg_essence"
+			id: "72A79F7AE189FD12"
+			tasks: [{
+				id: "0906D1053893328C"
+				title: "Draconic Essence"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["09B55AFE7C06EC82"]
+			id: "41B4DE81AFC054B9"
+			tasks: [{
+				id: "06B8EC7B4599E429"
+				title: "Dragon Breeding Array"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["72A79F7AE189FD12"]
+			id: "37F9C85CFCFFDA5F"
+			tasks: [{
+				id: "54F9F9AC4FCB27C0"
+				title: "Pure Dracoyallium"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"37F9C85CFCFFDA5F"
+				"5944C4DE27F98FF3"
+			]
+			id: "24E2CB89693EDEA3"
+			tasks: [{
+				id: "1DA3A7C22624348C"
+				title: "Draconic Neuroloom"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"694E1F6458D5F72F"
+				"24E2CB89693EDEA3"
+			]
+			id: "38C2E3061C764F05"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6DFBCDC0322DDA77"
+				title: "Aux2"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["72A79F7AE189FD12"]
+			icon: "minecraft:dragon_breath"
+			id: "3AE729D3F47E9A2B"
+			subtitle: "No linger stinky"
+			tasks: [{
+				id: "553429266D192AF8"
+				title: "Purified Dragon's Breath"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3AE729D3F47E9A2B"]
+			id: "694E1F6458D5F72F"
+			tasks: [{
+				id: "6D44D00AECEBA049"
+				title: "UIPIC Chips"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"694E1F6458D5F72F"
+				"24E2CB89693EDEA3"
+			]
+			id: "1ED881AC9E6961A3"
+			tasks: [{
+				id: "34B182CD5468F45A"
+				item: "start_core:uiv_absolute_parallel_hatch"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["24E2CB89693EDEA3"]
+			id: "7FABD2E818B70D35"
+			tasks: [{
+				id: "1A9F5B4EAFB66C03"
+				item: "start_core:uiv_parallel_hatch"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["41B4DE81AFC054B9"]
+			description: ["Is this what the milkies are used for?"]
+			icon: "minecraft:dragon_egg"
+			id: "17BDBDAE35BD49ED"
+			tasks: [{
+				id: "1F13D3464D748364"
+				title: "Target Breeding Dragons"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5E96ECB0768B5D80"]
+			id: "10D5DA8708208783"
+			tasks: [{
+				id: "787FB5314DFFE1C8"
+				title: "Gate 3 Line...."
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5E96ECB0768B5D80"]
+			id: "2594F1414C9BEC4F"
+			tasks: [{
+				id: "4133AF79C6DF333A"
+				title: "Better Infra...."
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			id: "51FAA26B6A537091"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "19E2EB40AB845664"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 1.25d
+		}
+		{
+			dependencies: ["38C2E3061C764F05"]
+			id: "3BF75D255438C1F0"
+			tasks: [{
+				id: "7B1D7302F29EF060"
+				title: "Exotic Matters"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5944C4DE27F98FF3"]
+			id: "7525302103768D45"
+			tasks: [
+				{
+					id: "128F90FB76A495C2"
+					item: "start_core:uev_parallel_hatch"
+					type: "item"
+				}
+				{
+					id: "5944C92937337165"
+					item: "start_core:uev_absolute_parallel_hatch"
+					type: "item"
+				}
+			]
+			title: "UEV Parallel Hatches"
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["295442FA6CE0BA13"]
+			id: "218CABD676F3B732"
+			tasks: [{
+				id: "0C141AF8C5ACBF6D"
+				item: "gtceu:aurourium_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5E7153B7A10FC241"]
+			description: [
+				"The Maker of Gates has some &mfun&r in store for you....... "
+				"{image:komarumod:textures/painting/komaru_god.png width:100 height:100 align:center}"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "komarumod:textures/painting/komaru_chonky.png"
+				}
+			}
+			id: "72020C00A8BBD75A"
+			optional: true
+			rewards: [
+				{
+					auto: "enabled"
+					id: "7CF70A1AC4379D48"
+					item: "minecraft:cookie"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/playsound gtceu:sus master @a"
+					elevate_perms: true
+					icon: "gtceu:sus_record"
+					id: "65DBA10EF47C4036"
+					silent: true
+					title: "Sus"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "4C50248BDC04F8FA"
+				title: "Dont Worry About it... Here's a cookie"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
+	]
+	title: "Draconic Empires"
+}
