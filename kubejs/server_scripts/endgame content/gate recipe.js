@@ -284,6 +284,33 @@ ServerEvents.recipes(event => {
 
     //Ancient Gate
         
+        //Gate Rods
+        event.recipes.gtceu.large_rotor_machine('untreated_infernal_stargate_rod')
+            .itemInputs('32x gtceu:neutronium_foil', '16x kubejs:stargate_rod', '32x gtceu:neutronium_foil', '16x kubejs:stargate_rod', 'kubejs:inferno_fragment', '16x kubejs:stargate_rod', 'gtceu:long_void_rod', '16x kubejs:stargate_rod', '32x gtceu:neutronium_foil')
+            .itemOutputs('kubejs:untreated_infernal_stargate_rod')
+            .duration(1600)
+            .EUt(GTValues.VHA[GTValues.UV]);
+
+        event.recipes.gtceu.large_rotor_machine('untreated_abyssal_stargate_rod')
+            .itemInputs('32x gtceu:neutronium_foil', '16x kubejs:stargate_rod', '32x gtceu:neutronium_foil', '16x kubejs:stargate_rod', 'kubejs:abyss_fragment', '16x kubejs:stargate_rod', 'gtceu:long_void_rod', '16x kubejs:stargate_rod', '32x gtceu:neutronium_foil')
+            .itemOutputs('kubejs:untreated_abyssal_stargate_rod')
+            .duration(1600)
+            .EUt(GTValues.VHA[GTValues.UV]);
+
+        event.recipes.gtceu.super_pressure_heat_chamber('infernal_stargate_rod')
+            .itemInputs('64x minecraft:blaze_rod','kubejs:untreated_infernal_stargate_rod','64x minecraft:blaze_rod')
+            .inputFluids('gtceu:blaze 64000')
+            .itemOutputs('kubejs:infernal_stargate_rod')
+            .duration(2400)
+            .EUt(GTValues.VHA[GTValues.UHV]);
+
+        event.recipes.gtceu.super_pressure_heat_chamber('abyssal_stargate_rod')
+            .itemInputs('64x gtceu:echo_shard_rod','kubejs:untreated_abyssal_stargate_rod','64x gtceu:echo_shard_rod')
+            .inputFluids('thermal:ender 64000')
+            .itemOutputs('kubejs:abyssal_stargate_rod')
+            .duration(2400)
+            .EUt(GTValues.VHA[GTValues.UHV]);
+
         //DHD
         event.recipes.gtceu.assembly_line('milky_way_gate')
             .itemInputs('sgjourney:classic_dhd', '8x gtceu:uhv_field_generator', '8x gtceu:uhv_emitter', '8x gtceu:uhv_sensor', '64x kubejs:uepic_chip', '8x kubejs:runic_engraved_plating', '32x kubejs:runic_energized_pathway_plating', '32x kubejs:runic_energized_transportation_plating')
@@ -376,8 +403,9 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VH[GTValues.UEV]);
 
         event.recipes.gtceu.assembly_line('inferno_fragment')
-            .itemInputs('6x gtceu:dense_obsidian_plate','16x minecraft:blaze_powder','16x minecraft:blaze_powder')
-            .inputFluids('minecraft:lava 100000','gtceu:blaze 20000')
+            .itemInputs('16x gtceu:quantum_star', '64x minecraft:blaze_powder','16x gtceu:quantum_star', '64x minecraft:blaze_powder','16x gtceu:quantum_star', '64x minecraft:blaze_powder','16x gtceu:quantum_star', '64x minecraft:blaze_powder',
+                '16x gtceu:quantum_star', '64x minecraft:blaze_powder','16x gtceu:quantum_star', '64x minecraft:blaze_powder','16x gtceu:quantum_star', '64x minecraft:blaze_powder','16x gtceu:quantum_star', '64x minecraft:blaze_powder')
+            .inputFluids('gtceu:neutronium 24000','gtceu:utopian_akreyrium 18000')
             .itemOutputs('kubejs:inferno_fragment')
             .duration(4800)
             .stationResearch(
@@ -389,8 +417,9 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues.UEV]);
 
         event.recipes.gtceu.assembly_line('abyss_fragment')
-            .itemInputs('6x gtceu:dense_obsidian_plate','16x minecraft:ender_pearl','16x minecraft:ender_pearl')
-            .inputFluids('gtceu:echo_r 100000','thermal:ender 20000')
+            .itemInputs('16x gtceu:quantum_star', '16x minecraft:echo_shard','16x gtceu:quantum_star', '16x minecraft:echo_shard','16x gtceu:quantum_star', '16x minecraft:echo_shard','16x gtceu:quantum_star', '16x minecraft:echo_shard',
+                '16x gtceu:quantum_star', '16x minecraft:echo_shard','16x gtceu:quantum_star', '16x minecraft:echo_shard','16x gtceu:quantum_star', '16x minecraft:echo_shard','16x gtceu:quantum_star', '16x minecraft:echo_shard')
+            .inputFluids('gtceu:neutronium 24000','gtceu:utopian_akreyrium 18000')
             .itemOutputs('kubejs:abyss_fragment')
             .duration(4800)
             .stationResearch(
@@ -403,7 +432,7 @@ ServerEvents.recipes(event => {
 
         //Ancient Gate Blocks
         event.recipes.gtceu.stargate_component_assembly('ancient_stargate_ring_block')
-            .itemInputs('gtceu:ancient_runicalium_frame', '36x gtceu:double_zircalloy_4_plate', '24x kubejs:runic_stabilization_plating', '48x kubejs:stargate_rod', '48x kubejs:stargate_rod', '48x kubejs:stargate_rod', '64x gtceu:fine_trinaquadalloy_wire', '64x gtceu:fine_trinaquadalloy_wire', '64x gtceu:fine_trinaquadalloy_wire')
+            .itemInputs('gtceu:ancient_runicalium_frame', '36x gtceu:double_zircalloy_4_plate', '24x kubejs:runic_stabilization_plating', '48x kubejs:stargate_rod', 'kubejs:abyssal_stargate_rod', 'kubejs:infernal_stargate_rod', '64x gtceu:fine_trinaquadalloy_wire', '64x gtceu:fine_trinaquadalloy_wire', '64x gtceu:fine_trinaquadalloy_wire')
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 16000', 'gtceu:utopian_akreyrium 48000', 'gtceu:naquadria 128000')
             .itemOutputs('kubejs:ancient_stargate_ring_block')
             .duration(20000)

@@ -632,7 +632,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
+			x: -0.5d
 			y: -5.0d
 		}
 		{
@@ -836,8 +836,8 @@
 				type: "item"
 			}]
 			title: "Bacterial Colonies"
-			x: 3.5d
-			y: -3.0d
+			x: 1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -1398,7 +1398,7 @@
 				title: "Cheaper HydroCarbons"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: -5.0d
 		}
 		{
@@ -1571,7 +1571,7 @@
 			]
 			title: "Runic Engraved Casings"
 			x: 7.5d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -1603,7 +1603,7 @@
 			]
 			title: "Multi-Engraved Runic Plating"
 			x: 7.5d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1662,8 +1662,8 @@
 				}
 			]
 			title: "Advanced Engraved Runes"
-			x: 5.5d
-			y: -1.0d
+			x: 9.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1801,8 +1801,8 @@
 				item: "kubejs:inscribe_casing"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -5.0d
+			x: 3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["43DAD4B63603BFC3"]
@@ -1891,7 +1891,7 @@
 				title: "Rune Infused Armor"
 				type: "checkmark"
 			}]
-			x: 7.5d
+			x: 5.5d
 			y: -5.0d
 		}
 		{
@@ -1987,7 +1987,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["63AD0F905F2A262B"]
+			dependencies: ["509F0DE97411C0CD"]
 			hide_dependent_lines: true
 			id: "29A86F882D68239F"
 			tasks: [{
@@ -1995,11 +1995,11 @@
 				item: "kubejs:abyssal_stargate_rod"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 2.0d
+			x: 7.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["5BA6FB8F852C2629"]
+			dependencies: ["5829828FB6290587"]
 			hide_dependent_lines: true
 			id: "78117340F3D4549A"
 			tasks: [{
@@ -2007,8 +2007,30 @@
 				item: "kubejs:infernal_stargate_rod"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 4.0d
+			x: 11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["63AD0F905F2A262B"]
+			id: "509F0DE97411C0CD"
+			tasks: [{
+				id: "4B87905BEBE00F09"
+				item: "kubejs:untreated_abyssal_stargate_rod"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5BA6FB8F852C2629"]
+			id: "5829828FB6290587"
+			tasks: [{
+				id: "4543736298C247BE"
+				item: "kubejs:untreated_infernal_stargate_rod"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 5.0d
 		}
 	]
 	title: "Adventures in Abydos"
