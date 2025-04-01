@@ -709,10 +709,13 @@
 			id: "08B170E72119FDD4"
 			optional: true
 			tasks: [{
-				id: "6D5D24F5642120A5"
-				item: "minecraft:clay"
+				icon: "minecraft:clay"
+				id: "08FC85C10B6D55A6"
+				observe_type: 0
+				timer: 0L
 				title: "Look at Clay"
-				type: "item"
+				to_observe: "minecraft:clay"
+				type: "observation"
 			}]
 			title: "Clay"
 			x: 2.0d
@@ -1102,12 +1105,6 @@
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "323DDC8DFEDF2926"
-					item: "gtceu:raw_electrum_ingot"
-					optional_task: true
-					type: "item"
-				}
 			]
 			title: "Easier Ingots"
 			x: -5.5d
@@ -1163,11 +1160,6 @@
 				{
 					id: "3A689AF46183CFF5"
 					item: "gtceu:quartzite_gem"
-					type: "item"
-				}
-				{
-					id: "3FEA695D45D13E6F"
-					item: "kubejs:raw_electrum_crushed_ore_chunk"
 					type: "item"
 				}
 			]
@@ -1319,6 +1311,7 @@
 			dependencies: [
 				"280AD7F16F6654B4"
 				"41EEEE63FF53A037"
+				"6C4B325AEF8A5B7D"
 			]
 			id: "0D24BB28465CF80B"
 			tasks: [{
@@ -1597,33 +1590,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: [
-				"6994BA308DC55ED2"
-				"70AF86B4A0D6A158"
-				"5819AF3E6CCDB826"
-			]
-			id: "60B2BEDDA1D66001"
-			tasks: [
-				{
-					id: "63E1627424CC6E4A"
-					item: "gtceu:pig_iron_ingot"
-					type: "item"
-				}
-				{
-					id: "46A1FCA19C4EB95C"
-					item: "gtceu:pig_iron_dust"
-					type: "item"
-				}
-			]
-			title: "Pig Iron"
-			x: -2.5d
-			y: 15.0d
-		}
-		{
-			dependencies: [
-				"60B2BEDDA1D66001"
-				"224916FFC857C099"
-			]
+			dependencies: ["224916FFC857C099"]
 			id: "714CA5ED83124FE1"
 			tasks: [{
 				id: "00E741BFE38E92DB"
@@ -1640,27 +1607,12 @@
 				""
 				"Note: It does 32x your fuel consumption"
 			]
+			icon: "mysticalagriculture:fire_essence"
 			id: "65DA1BDA4D9A9B56"
-			tasks: [
-				{
-					icon: "create:encased_fan"
-					id: "75F14A68DA7A3B09"
-					observe_type: 0
-					timer: 0L
-					title: "Look at Encased Fan"
-					to_observe: "create:encased_fan"
-					type: "observation"
-				}
-				{
-					icon: "createlowheated:basic_burner"
-					id: "4D8766B15A8EA881"
-					observe_type: 0
-					timer: 0L
-					title: "Look at Basic Burner"
-					to_observe: "createlowheated:basic_burner"
-					type: "observation"
-				}
-			]
+			tasks: [{
+				id: "6DF4BE5FE29D9ED7"
+				type: "checkmark"
+			}]
 			title: "Super Heated Burners"
 			x: 0.5d
 			y: 16.5d
@@ -1764,6 +1716,7 @@
 		}
 		{
 			dependencies: ["224916FFC857C099"]
+			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "1E818A6929B6C982"
 			tasks: [{
@@ -1771,8 +1724,8 @@
 				item: "create:copper_casing"
 				type: "item"
 			}]
-			x: -0.25d
-			y: 12.75d
+			x: 6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1950,33 +1903,16 @@
 			y: 12.0d
 		}
 		{
+			dependencies: ["50F2743FA699173A"]
 			id: "70A7945B18761012"
 			invisible: true
 			tasks: [{
-				id: "55F7980B96509F73"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"First Steam Boilers\"}"
-						}
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lp_steam_solid_boiler"
-							}
-							{
-								Count: 1b
-								id: "gtceu:lp_steam_liquid_boiler"
-							}
-						]
-					}
-				}
+				id: "18B510DD95815457"
+				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 7.5d
+			x: 8.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -2083,8 +2019,8 @@
 				item: "createlowheated:basic_burner"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 15.0d
+			x: 5.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6994BA308DC55ED2"]
@@ -2100,7 +2036,10 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["6C4B325AEF8A5B7D"]
+			dependencies: [
+				"6C4B325AEF8A5B7D"
+				"68A24B2BB277BA45"
+			]
 			description: ["With this you can scavange for Flint MUCH easier"]
 			id: "24AB0C2B43C66BD3"
 			optional: true
@@ -2156,6 +2095,7 @@
 		{
 			dependencies: ["684FAA520167CC51"]
 			id: "26B8FCAD39A84649"
+			shape: "rsquare"
 			tasks: [{
 				id: "0625978559D24880"
 				item: "exnihilosequentia:flint_mesh"
@@ -2165,43 +2105,31 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["70A7945B18761012"]
-			icon: "gtceu:wrought_iron_ingot"
+			dependencies: [
+				"2A7C8C43D6D58B93"
+				"6F1BB9A99918F256"
+			]
 			id: "3A3BD0ECA7FC8D38"
 			tasks: [{
-				id: "0DE497BF1010AAA2"
-				title: "Steam Age"
-				type: "checkmark"
+				id: "3BB9AE5BC028985A"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
 			}]
-			x: 9.0d
-			y: 7.5d
+			x: 11.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["3A3BD0ECA7FC8D38"]
-			icon: "gtceu:steel_ingot"
-			id: "1049C77BBEC1B413"
-			tasks: [{
-				id: "494A3CB370136117"
-				title: "Early ULV"
-				type: "checkmark"
-			}]
-			x: 11.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["1049C77BBEC1B413"]
-			icon: "gtceu:vacuum_tube"
+			dependencies: ["19EFB33C0B250C49"]
 			id: "1669324990B58A7A"
 			tasks: [{
-				id: "48AE0AC3EC105222"
-				title: "ULV Proper"
-				type: "checkmark"
+				id: "191BDF7ACE041BEB"
+				item: "kubejs:ulv_universal_circuit"
+				type: "item"
 			}]
-			x: 14.0d
+			x: 12.5d
 			y: 7.5d
 		}
 		{
-			dependencies: ["1669324990B58A7A"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -2211,71 +2139,38 @@
 			}
 			id: "69A865E891BC005A"
 			shape: "square"
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				id: "03B923932D92720E"
 				title: "Pre-LV"
 				type: "checkmark"
 			}]
-			x: 16.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["69A865E891BC005A"]
-			icon: "gtceu:basic_electronic_circuit"
-			id: "3CAF5AB033A1E9C1"
-			tasks: [{
-				id: "6FA3EC49143451FC"
-				title: "First &l&bTRUE&r Circuit"
-				type: "checkmark"
-			}]
-			x: 19.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["1049C77BBEC1B413"]
-			icon: "gtceu:steel_brick_casing"
-			id: "46429DD4CFFBFF3B"
-			tasks: [{
-				id: "38BBF6850564736F"
-				title: "High Pressure Steam"
-				type: "checkmark"
-			}]
-			x: 12.5d
+			x: 18.5d
 			y: 9.0d
 		}
 		{
-			dependencies: ["1669324990B58A7A"]
-			id: "1D340B39EDB0F737"
+			icon: "gtceu:basic_electronic_circuit"
+			id: "3CAF5AB033A1E9C1"
 			tasks: [{
-				id: "04FE22ABA99B2195"
-				title: "Tom's"
-				type: "checkmark"
+				id: "10218E152E360D22"
+				item: "kubejs:lv_universal_circuit"
+				type: "item"
 			}]
-			x: 15.0d
-			y: 6.0d
+			x: 20.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["1049C77BBEC1B413"]
-			icon: "gtceu:ulv_machine_hull"
-			id: "629B63F5789F260C"
-			tasks: [{
-				id: "576B4ABC6273FCF6"
-				title: "ULV Machines"
-				type: "checkmark"
-			}]
-			x: 12.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["1669324990B58A7A"]
+			dependencies: [
+				"6DE87A8D59525AF8"
+				"1669324990B58A7A"
+			]
 			id: "4D8EFEA7036CD327"
 			tasks: [{
 				id: "4CF937E4CBAC2F33"
 				item: "gtceu:ulv_assembler"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 14.0d
 			y: 9.0d
 		}
 		{
@@ -2342,6 +2237,258 @@
 			}]
 			x: -2.5d
 			y: 9.0d
+		}
+		{
+			dependencies: ["1669324990B58A7A"]
+			description: ["Change recipe to be harder"]
+			id: "4AAF919793BA49F1"
+			tasks: [{
+				id: "39B770A79FC07059"
+				item: "toms_storage:ts.trim"
+				type: "item"
+			}]
+			title: "Tom's Storage"
+			x: 14.0d
+			y: 7.5d
+		}
+		{
+			id: "19EFB33C0B250C49"
+			tasks: [{
+				id: "32D88E8FC3C80D46"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5DD3CFCC30CAF33A"]
+			id: "2A7C8C43D6D58B93"
+			tasks: [{
+				id: "5E9ECA9852DFB036"
+				item: "gtceu:primitive_blast_furnace"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 9.0d
+		}
+		{
+			id: "12CC4B7507E55BEC"
+			shape: "rsquare"
+			tasks: [{
+				id: "4F437B4DFB0677CF"
+				item: "gtceu:solid_blast_furnace"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6974D4ADDEA9535F"]
+			id: "301FF7F900A30DC7"
+			tasks: [{
+				id: "1F3A1E1E31137FF3"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 9.0d
+		}
+		{
+			id: "410385DA7FBBD2FA"
+			tasks: [{
+				id: "16123229DB5403AC"
+				item: "dustrial_decor:cast_iron_billet"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3D9B291441B63F78"]
+			hide_until_deps_complete: true
+			id: "774543EADD91A140"
+			invisible: true
+			tasks: [{
+				id: "41E9893B1CD434F8"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"70AF86B4A0D6A158"
+				"5819AF3E6CCDB826"
+			]
+			id: "7AEEC6EBE84BF5AB"
+			tasks: [{
+				id: "476014C24579BD62"
+				item: "gtceu:pig_iron_dust"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"7AEEC6EBE84BF5AB"
+				"774543EADD91A140"
+			]
+			id: "6F1BB9A99918F256"
+			tasks: [{
+				id: "6A6D009819A19AA6"
+				item: "gtceu:pig_iron_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3A3BD0ECA7FC8D38"]
+			id: "0091DD5DAE9FDF9C"
+			tasks: [{
+				id: "40ED24F4316C4EE2"
+				item: "gtceu:steel_brick_casing"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"4D8EFEA7036CD327"
+				"08085ED3830FD51A"
+			]
+			icon: "minecraft:barrier"
+			id: "6974D4ADDEA9535F"
+			tasks: [{
+				id: "7CBB5944E883099A"
+				title: "Reinforced Blast Furnace"
+				type: "checkmark"
+			}]
+			x: 15.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["50F2743FA699173A"]
+			id: "5646A9F01BD60975"
+			tasks: [
+				{
+					id: "47EBB5D6D060417A"
+					item: "gtceu:lp_steam_extractor"
+					type: "item"
+				}
+				{
+					id: "5EECCE772767FF9D"
+					item: "gtceu:lp_steam_macerator"
+					type: "item"
+				}
+				{
+					id: "30352B6F8EFE7659"
+					item: "gtceu:lp_steam_compressor"
+					type: "item"
+				}
+				{
+					id: "67E59708325928A9"
+					item: "gtceu:lp_steam_forge_hammer"
+					type: "item"
+				}
+				{
+					id: "7CE5B2326A9384BB"
+					item: "gtceu:lp_steam_furnace"
+					type: "item"
+				}
+			]
+			title: "Steam Machines"
+			x: 9.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3A3BD0ECA7FC8D38"]
+			description: ["Made in Mechanical Crafter?"]
+			id: "6DE87A8D59525AF8"
+			tasks: [{
+				id: "6363D1A6B51733E1"
+				item: "gtceu:ulv_machine_hull"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0091DD5DAE9FDF9C"]
+			id: "7DC45B6F1A400CFF"
+			tasks: [
+				{
+					id: "4D867357AFC4DD50"
+					item: "gtceu:hp_steam_solid_boiler"
+					type: "item"
+				}
+				{
+					id: "6AD7DD097A79353C"
+					item: "gtceu:hp_steam_liquid_boiler"
+					type: "item"
+				}
+			]
+			title: "High Pressure Steam"
+			x: 11.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0091DD5DAE9FDF9C"]
+			id: "6D262ABDB7EEC605"
+			tasks: [
+				{
+					id: "38F8EC6AB6E3F981"
+					item: "gtceu:hp_steam_extractor"
+					type: "item"
+				}
+				{
+					id: "2CBD468AD073F8A0"
+					item: "gtceu:hp_steam_macerator"
+					type: "item"
+				}
+				{
+					id: "7BBF6F4F1DBE670E"
+					item: "gtceu:hp_steam_compressor"
+					type: "item"
+				}
+				{
+					id: "4BA49CE35A1D80A3"
+					item: "gtceu:hp_steam_forge_hammer"
+					type: "item"
+				}
+				{
+					id: "5968B94F01311316"
+					item: "gtceu:hp_steam_furnace"
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["301FF7F900A30DC7"]
+			id: "0A9C280C7FDC2675"
+			tasks: [{
+				id: "31FE4F561A779E69"
+				item: "exnihilosequentia:iron_mesh"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 7.5d
+		}
+		{
+			id: "08085ED3830FD51A"
+			tasks: [{
+				id: "6C86DEFF69FB0189"
+				title: "Cinder Blocks"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: 10.5d
 		}
 	]
 	title: "So It Begins"
