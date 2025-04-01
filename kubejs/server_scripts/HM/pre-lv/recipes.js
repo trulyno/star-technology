@@ -16,6 +16,7 @@ ServerEvents.tags('item', event => {
 	});
 
 	event.remove('minecraft:planks', 'gtceu:wood_plate');
+	event.remove('minecraft:planks', 'gtceu:treated_wood_plate');
 });
 
 ServerEvents.recipes(event => {
