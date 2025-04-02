@@ -541,27 +541,42 @@
 				"3D0F6CA8028C074B"
 				"7EE1BE4043827F35"
 			]
-			description: ["Extracting Latex from &lJungle Trees&r will be one of your first sources of rubber, after a bit of processing."]
-			icon: "thermal:device_tree_extractor"
+			description: [
+				"Extracting Latex from &lJungle Trees&r will be one of your first sources of rubber, after a bit of processing."
+				""
+				"There are 2 ways to do this, either by placing &nArboreal Extractors&r around a Jungle Tree or by building the &nLatex Plantation&r multiblock."
+				""
+				"&nNote&r: For the Latex Plantation you can use a wooden tap in the controller block, to use the better tap methods with a fuel and circuit you'll need a &8ULV&r Input Bus at a minimum. A Output Hatch can be placed on the back to automate further but isn't needed."
+			]
+			icon: "gtceu:latex_plantation"
 			id: "0A41C4FB379984C0"
 			rewards: [{
 				id: "00D6F6E2A931271F"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "gear"
+			size: 1.25d
 			tasks: [
 				{
 					id: "29EEAB4D4E56EA63"
 					item: "thermal:device_tree_extractor"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "5E76F06B9A81720D"
+					id: "2169C43BE0EB4B19"
+					item: "gtceu:latex_plantation"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6B7A6B7038874500"
 					item: "minecraft:jungle_sapling"
 					type: "item"
 				}
 				{
-					id: "70C1462074F9F618"
+					id: "6F7F8EC646E7C0B6"
 					item: "thermal:rubber"
 					type: "item"
 				}
@@ -777,12 +792,17 @@
 		{
 			dependencies: [
 				"3F74E863172E757F"
-				"3E931D2E92BE9486"
 				"0A41C4FB379984C0"
 				"483B101A7F71E674"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Using a heated Mechanical Mixer, combine some Latex and Sulfur into rubber, and slam them into sheets using a Mechanical Press."]
+			description: [
+				"By combining Rubber and Sulfur you can get cured rubber."
+				""
+				"- This can be done by using a heated Create mixer."
+				"- This can be done by using a Steam Alloy Smelter."
+				"- This can be done by using a Cooking Pot with a campfire under it."
+			]
 			id: "46E41B05B9F6FA82"
 			rewards: [{
 				id: "2FFF7F85F52E435C"
@@ -2134,6 +2154,11 @@
 			description: ["A much needed upgrade to ore processing. It's faster, and can be automated!"]
 			id: "7E33792C89BA85E3"
 			optional: true
+			rewards: [{
+				id: "2B1393756AAD151F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			tasks: [{
@@ -2172,71 +2197,13 @@
 			icon: "systeams:boiler_pipe"
 			id: "5324A7F20CA973C6"
 			optional: true
-			tasks: [
-				{
-					id: "076F1181905FB6CA"
-					title: "Steam Power"
-					type: "checkmark"
-				}
-				{
-					id: "7AC46BBD0C1B944C"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Low Pressure Boilers\"}"
-							}
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:lp_steam_solid_boiler"
-								}
-								{
-									Count: 1b
-									id: "gtceu:lp_steam_liquid_boiler"
-								}
-								{
-									Count: 1b
-									id: "gtceu:lp_steam_solar_boiler"
-								}
-							]
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "648BC16C3C3F30F9"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"High Pressure Boilers\"}"
-							}
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:hp_steam_solid_boiler"
-								}
-								{
-									Count: 1b
-									id: "gtceu:hp_steam_liquid_boiler"
-								}
-								{
-									Count: 1b
-									id: "gtceu:hp_steam_solar_boiler"
-								}
-							]
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "076F1181905FB6CA"
+				title: "Steam Power"
+				type: "checkmark"
+			}]
 			x: 3.0d
-			y: -5.0d
+			y: -4.75d
 		}
 		{
 			dependencies: ["2D1184752D7ACA66"]

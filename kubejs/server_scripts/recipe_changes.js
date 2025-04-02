@@ -70,8 +70,6 @@ ServerEvents.recipes(event => {
         'M': 'gtceu:brick_wooden_form'
     }).keepIngredient('gtceu:brick_wooden_form');
 
-    event.recipes.create.mixing('3x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated');
-
     event.recipes.create.pressing('gtceu:rubber_plate', 'thermal:cured_rubber');
 
     event.recipes.gtceu.fluid_solidifier('gtceu:raw_rubber')
@@ -89,12 +87,6 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('latex_rubber')
         .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
         .outputFluids('gtceu:rubber 576')
-        .duration(240)
-        .EUt(8);
-
-    event.recipes.gtceu.alloy_smelter('latex_rubber')
-        .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
-        .itemOutputs('3x thermal:cured_rubber')
         .duration(240)
         .EUt(8);
 

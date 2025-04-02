@@ -2561,6 +2561,7 @@
 				""
 				"Additionally, keep in mind that the Charge method gets progressively weaker over time, meaning sooner or later you'll want to set up looping to keep up with demand."
 			]
+			icon: "mysticalagradditions:nether_star_shard"
 			id: "200BA54AC5EC0BF0"
 			tasks: [
 				{
