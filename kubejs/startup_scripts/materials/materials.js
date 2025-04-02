@@ -228,6 +228,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.SterlingSilver.addFlags(rod, frame);
     GTMaterials.NetherStar.addFlags(foil);
     GTMaterials.Netherite.addFlags(no_decomp);
+    GTMaterials.EchoShard.addFlags(lens);
 
     // Blast Properties of periodic table metals
     const blast = global.blastProperty;
