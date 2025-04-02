@@ -2,9 +2,10 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.vibration_laser_engraver('coordinate_crystal')
         .itemInputs('2x gtceu:exquisite_echo_shard_gem')
-        .notConsumable('gtceu:black_glass_lens')
-        .inputFluids('gtceu:pcb_coolant 16000')
-        .outputFluids('gtceu:hot_pcb_coolant 19200')
+        .notConsumable('gtceu:nether_star_lens')
+        .notConsumable('gtceu:echo_shard_lens')
+        .inputFluids('gtceu:glowstone 256000','gtceu:ice 128000','gtceu:pcb_coolant 16000')
+        .outputFluids('gtceu:steam 192000','gtceu:hot_pcb_coolant 19200')
         .itemOutputs('kubejs:coordinate_crystal')
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UV]);

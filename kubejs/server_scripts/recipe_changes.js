@@ -70,8 +70,6 @@ ServerEvents.recipes(event => {
         'M': 'gtceu:brick_wooden_form'
     }).keepIngredient('gtceu:brick_wooden_form');
 
-    event.recipes.create.mixing('3x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated');
-
     event.recipes.create.pressing('gtceu:rubber_plate', 'thermal:cured_rubber');
 
     event.recipes.gtceu.fluid_solidifier('gtceu:raw_rubber')
@@ -89,12 +87,6 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('latex_rubber')
         .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
         .outputFluids('gtceu:rubber 576')
-        .duration(240)
-        .EUt(8);
-
-    event.recipes.gtceu.alloy_smelter('latex_rubber')
-        .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
-        .itemOutputs('3x thermal:cured_rubber')
         .duration(240)
         .EUt(8);
 
@@ -417,8 +409,71 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.lapidary_fuel('gtceu:diatron_gem', 750000);
     event.recipes.thermal.lapidary_fuel('gtceu:flawless_diatron_gem', 750000 * 2.5);
     event.recipes.thermal.lapidary_fuel('gtceu:exquisite_diatron_gem', 750000 * 6.25);
-    event.remove({type: 'thermal:lapidary_fuel', input: 'minecraft:diamond'})
+    event.remove({type: 'thermal:lapidary_fuel', input: 'minecraft:diamond'});
     event.recipes.thermal.lapidary_fuel('minecraft:diamond', 300000);
+    event.remove({mod: 'systeams'});
+    const SteamBoil = (boiling,volume,boiled,power) => {
+        if(boiled == 'steam')
+        event.custom({
+            'type': 'systeams:steam',
+            'ingredient': {
+                'fluid_tag': `forge:steam`,
+                'amount': 1000
+            },
+            'energy': power
+            });
+        else
+        event.custom({
+            'type': 'systeams:steam',
+            'ingredient': {
+                'fluid': `systeams:${boiled}`,
+                'amount': 1000
+            },
+            'energy': power
+            });
+        event.remove({id: `systeams:boiling/${boiling}`});
+        if(boiling == 'water')
+        event.custom({
+            'type': 'systeams:boiling',
+            'ingredient': {
+                'fluid': `minecraft:water`,
+                'amount': 100
+            },
+            'result': {
+                'fluid': `systeams:${boiled}`,
+                'amount': volume
+            }
+            });
+        if(boiling == 'steam')
+        event.custom({
+            'type': 'systeams:boiling',
+            'ingredient': {
+            'fluid_tag': 'forge:steam',
+            'amount': 100
+            },
+            'result': {
+            'fluid': `systeams:${boiled}`,
+            'amount': volume
+            }
+        });
+        else
+        event.custom({
+            'type': 'systeams:boiling',
+            'ingredient': {
+              'fluid': `systeams:${boiling}`,
+              'amount': 100
+            },
+            'result': {
+              'fluid': `systeams:${boiled}`,
+              'amount': volume
+            }
+          });
+    }
+    SteamBoil('water',100,'steam',2000);
+    SteamBoil('steam',80,'steamier',4000);
+    SteamBoil('steamier',60,'steamiest',10000);
+    SteamBoil('steamiest',40,'steamiester',30000);
+    SteamBoil('steamiester',20,'steamiestest',80000);
 
     event.recipes.gtceu.mixer('diatron_dust')
         .itemInputs('3x gtceu:energium_dust', '2x gtceu:diamond_dust')
