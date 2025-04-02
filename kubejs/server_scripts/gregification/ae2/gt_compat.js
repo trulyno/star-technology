@@ -15,16 +15,31 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.macerator('fluix_dust')
         .itemInputs('ae2:fluix_crystal')
-        .itemOutputs('ae2:fluix_dust')
+        .itemOutputs('gtceu:fluix_dust')
         .duration(88)
         .EUt(2);
 
-    event.replaceOutput({output: '#forge:gems/certus_quartz'},
+    event.replaceInput({input: 'ae2:fluix_dust'},
+        'ae2:fluix_dust',
+        'gtceu:fluix_dust'
+    );
+
+    event.replaceInput({input: '#forge:dusts/certus_quartz'},
+        '#forge:dusts/certus_quartz',
+        'gtceu:certus_quartz_dust'
+    );
+
+    event.replaceOutput({output: '#forge:dusts/certus_quartz'},
+        '#forge:dusts/certus_quartz',
+        'gtceu:certus_quartz_dust'
+    );
+
+    event.replaceInput({input: '#forge:gems/certus_quartz'},
         '#forge:gems/certus_quartz',
         'ae2:certus_quartz_crystal'
     );
 
-    event.replaceInput({input: '#forge:gems/certus_quartz'},
+    event.replaceOutput({output: '#forge:gems/certus_quartz'},
         '#forge:gems/certus_quartz',
         'ae2:certus_quartz_crystal'
     );

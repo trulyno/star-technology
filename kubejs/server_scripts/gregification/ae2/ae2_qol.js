@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.packer(`start:crafting_storage_${ae2a}_uncrafting`)
             .itemInputs(`megacells:${ae2a}m_crafting_storage`)
             .itemOutputs(`megacells:cell_component_${ae2a}m`)
-            .itemOutputs('ae2:crafting_unit')
+            .itemOutputs('megacells:mega_crafting_unit')
             .circuit(2)
             .duration(100)
             .EUt(7);

@@ -1469,9 +1469,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('star_steel')
         .ingot()
-        .fluid()
         .components('2x steel', '1x mystery')
-        .color(0xccffcc)
+        .color(0xCCFFCC)
         .flags(no_decomp, plates, rod, frame)
         .iconSet(METALLIC);
 
@@ -1487,25 +1486,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             .iconSet(icon);
     }
     
-    //test('gold', 0xB1A64B, 'METALLIC');
     test('gold', 0xCFBE38, 'METALLIC');
     test('diamond', 0x9BD6D8, 'SHINY');
-    //test('certus_quartz', 0x6BA5A8, 'DULL');
     test('certus_quartz', 0x67D6DB, 'DULL');
-    //this breaks for some reason, idk, idc, function it is
-    // [ 
-    //     {material: 'gold', color: 0xB1A64B, icon: 'METALLIC'},
-    //     {material: 'diamond', color: 0x9BD6D8, icon: 'SHINY'},
-    //     {material: 'certus_quartz', color: 0x6BA5A8, icon: 'DULL'}
-    // ].forEach(alloy => {
-    //     event.create(`${alloy.material}_skystone_alloy`)
-    //         .dust()
-    //         .components(`${alloy.material}`, 'skystone')
-    //         .color(0x414445)
-    //         .secondaryColor(alloy.color)
-    //         .flags(no_decomp, plates)
-    //         .iconSet(alloy.icon);
-    // });
+
+    event.create('fluix')
+        .dust()
+        .components('1x mystery')
+        .color(0x8F5CCB)
+        .flags(no_decomp, plates, foil)
+        .iconSet(METALLIC);
 
     event.create('thorium_plut_duranide_241')
         .ingot()

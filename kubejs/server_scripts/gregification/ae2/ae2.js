@@ -88,17 +88,6 @@ ServerEvents.recipes(event => {
             B: 'ae2:formation_core'
         });
 
-    event.shaped(Item.of('ae2:crafting_unit'), [
-            'HFH',
-            'BCB',
-            'HFH'
-        ], {
-            C: 'ae2:logic_processor',
-            F: 'ae2:calculation_processor',
-            H: 'gtceu:star_steel_plate',
-            B: 'ae2:fluix_glass_cable'
-        });
-
     event.shaped(Item.of('ae2:energy_acceptor'), [
             'HFH',
             'FCF',
