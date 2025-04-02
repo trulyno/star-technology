@@ -1,28 +1,33 @@
 ServerEvents.recipes(event => {
 
-    //fission reactions (depleting rods)
-    //thorium 232
-    event.recipes.gtceu.nuclear_fission('thorium_232')
-        .itemInputs('kubejs:thorium_fuel_rod')
-        .inputFluids('gtceu:distilled_water 100')
-        .itemOutputs('kubejs:depleted_thorium_fuel_rod')
-        .duration(400)
-        .EUt(-8192);
+    [
+        {id: 'thorium_232', rod: 'thorium', input: ['4x gtceu:thorium_dust'], output: ['4x gtceu:uranium_235_dust'], duration: 200, energy: 1024, harvest: -8192},
+        {id: 'uranium_235', rod: 'highly_enriched_uranium', input: ['4x gtceu:uranium_235_dust'], output: ['4x gtceu:plutonium_241_dust'], duration: 300, energy: 1536, harvest: -16384},
+        {id: 'uranium_238', rod: 'low_enriched_uranium', input: ['4x gtceu:uranium_dust'], output: ['4x gtceu:plutonium_dust'], duration: 240, energy: 1280, harvest: -12288}
+    ].forEach(rod=> {
+        //compressing fuels into fuel rods
+        rod.input.push('gtceu:aluminium_fluid_cell');
+        event.recipes.gtceu.canner(`${rod.rod}_rod`)
+            .itemInputs(rod.input)
+            .itemOutputs(`kubejs:${rod.rod}_fuel_rod`)
+            .duration(rod.duration)
+            .EUt(rod.energy);  
 
-    //uranium 238
-    event.recipes.gtceu.nuclear_fission('uranium_238')
-        .itemInputs('kubejs:low_enriched_uranium_fuel_rod')
-        .inputFluids('gtceu:distilled_water 100')
-        .itemOutputs('kubejs:depleted_low_enriched_uranium_fuel_rod')
-        .duration(400)
-        .EUt(-12288);
+        //fission reactions (depleting rods)
+        event.recipes.gtceu.nuclear_fission(`${rod.id}_rod`)
+            .itemInputs(`kubejs:${rod.rod}_fuel_rod`)
+            .inputFluids('gtceu:distilled_water 1000')
+            .itemOutputs(`kubejs:depleted_${rod.rod}_fuel_rod`)
+            .duration(300)
+            .EUt(rod.harvest);
 
-    //uranium 235
-    event.recipes.gtceu.nuclear_fission('uranium_235')
-        .itemInputs('kubejs:highly_enriched_uranium_fuel_rod')
-        .inputFluids('gtceu:distilled_water 100')
-        .itemOutputs('kubejs:depleted_highly_enriched_uranium_fuel_rod')
-        .duration(400)
-        .EUt(-16384);
+        //depleted rod separation
+        rod.output.push('gtceu:aluminium_fluid_cell');
+        event.recipes.gtceu.centrifuge(`depleted_${rod.id}_rod`)
+            .itemInputs(`kubejs:depleted_${rod.rod}_fuel_rod`)
+            .itemOutputs(rod.output)
+            .duration(rod.duration)
+            .EUt(rod.energy);
+    });
     
 });

@@ -20,9 +20,10 @@ ServerEvents.recipes(event => {
       B: 'gtceu:luv_electric_motor',
       C: 'gtceu:watertight_casing'
   });
-    
+  
+  //Generalist Recipes
   event.recipes.gtceu.rock_filtrator('lv_geodes')
-    .itemInputs('64x minecraft:gravel')
+    .itemInputs('32x minecraft:gravel')
     .inputFluids('gtceu:distilled_water 1000')
     .chancedOutput('kubejs:diamond_geode', 3500, 750)
     .chancedOutput('kubejs:emerald_geode', 3500, 750)
@@ -35,7 +36,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VHA[GTValues.LV]);
 
   event.recipes.gtceu.rock_filtrator('mv_geodes')
-    .itemInputs('64x minecraft:sand')
+    .itemInputs('32x minecraft:sand')
     .inputFluids('gtceu:distilled_water 1000')
     .chancedOutput('kubejs:blue_topaz_geode', 3500, 750)
     .chancedOutput('kubejs:topaz_geode', 3500, 750)
@@ -45,6 +46,56 @@ ServerEvents.recipes(event => {
     .duration(960)
     .EUt(GTValues.VHA[GTValues.MV]);
 
+  //Specialist Recipes LV
+  event.recipes.gtceu.rock_filtrator('lv_geodes_gem')
+    .itemInputs('32x minecraft:gravel')
+    .inputFluids('gtceu:distilled_water 1000')
+    .chancedOutput('kubejs:diamond_geode', 3500, 750)
+    .chancedOutput('kubejs:emerald_geode', 3500, 750)
+    .chancedOutput('kubejs:ruby_geode', 4500, 750)
+    .duration(800)
+    .circuit(1)
+    .EUt(GTValues.VHA[GTValues.LV]);
+
+  event.recipes.gtceu.rock_filtrator('lv_geodes_sapphire')
+    .itemInputs('32x minecraft:gravel')
+    .inputFluids('gtceu:distilled_water 1000')
+    .chancedOutput('kubejs:green_sapphire_geode', 5000, 500)
+    .chancedOutput('kubejs:sapphire_geode', 5000, 500)
+    .duration(800)
+    .circuit(2)
+    .EUt(GTValues.VHA[GTValues.LV]);
+
+  event.recipes.gtceu.rock_filtrator('lv_geodes_quartz')
+    .itemInputs('32x minecraft:gravel')
+    .inputFluids('gtceu:distilled_water 1000')
+    .chancedOutput('kubejs:quartzite_geode', 3500, 500)
+    .chancedOutput('kubejs:certus_quartz_geode', 4500, 750)
+    .duration(800)
+    .circuit(3)
+    .EUt(GTValues.VHA[GTValues.LV]);
+
+  //Specialist Recipes MV
+  event.recipes.gtceu.rock_filtrator('mv_geodes_gem')
+    .itemInputs('32x minecraft:sand')
+    .inputFluids('gtceu:distilled_water 1000')
+    .chancedOutput('kubejs:apatite_geode', 4500, 1000)
+    .chancedOutput('kubejs:spessartine_geode', 3500, 500)
+    .chancedOutput('kubejs:monazite_geode', 3750, 750)
+    .duration(640)
+    .circuit(1)
+    .EUt(GTValues.VHA[GTValues.MV]);
+
+  event.recipes.gtceu.rock_filtrator('mv_geodes_topaz')
+    .itemInputs('32x minecraft:sand')
+    .inputFluids('gtceu:distilled_water 1000')
+    .chancedOutput('kubejs:blue_topaz_geode', 3500, 750)
+    .chancedOutput('kubejs:topaz_geode', 3500, 750)
+    .duration(640)
+    .circuit(2)
+    .EUt(GTValues.VHA[GTValues.MV]);
+
+  //Geode Harvesting
   const geodeLV = ['diamond', 'emerald', 'ruby', 'green_sapphire', 
     'sapphire', 'quartzite', 'certus_quartz'];
   const geodeMV = ['apatite', 'topaz', 'blue_topaz', 'spessartine', 'monazite'];

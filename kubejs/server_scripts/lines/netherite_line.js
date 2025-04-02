@@ -5,9 +5,9 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:debris_dust', 'minecraft:gold_ingot')
         .inputFluids('gtceu:argon 100')
         .itemOutputs('minecraft:netherite_ingot')
-        .blastFurnaceTemp(5000)
-        .duration(12000)
-        .EUt(6500);
+        .blastFurnaceTemp(3300)
+        .duration(6000)
+        .EUt(1890);
 
     event.recipes.gtceu.centrifuge('debris_dust')
         .itemInputs('mysticalagriculture:nether_agglomeratio')
@@ -17,12 +17,12 @@ ServerEvents.recipes(event => {
         .circuit(1);
 
     event.recipes.gtceu.large_chemical_reactor('purified_debris_dust')
-        .itemInputs('gtceu:debris_dust')
-        .inputFluids('gtceu:chlorine_trifluoride 100')
-        .itemOutputs('gtceu:purified_debris_dust', '3x gtceu:tiny_titanium_trifluoride_dust')
-        .outputFluids('gtceu:sulfur_dichloride 50')
-        .chancedOutput('gtceu:small_purified_debris_dust', 2500, 1000)
-        .duration(200)
+        .itemInputs('2x gtceu:debris_dust')
+        .inputFluids('gtceu:chlorine_trifluoride 250')
+        .itemOutputs('2x gtceu:purified_debris_dust', '4x gtceu:small_titanium_trifluoride_dust')
+        .outputFluids('gtceu:sulfur_dichloride 125')
+        .chancedOutput('2x gtceu:small_purified_debris_dust', 2800, 900)
+        .duration(400)
         .EUt(6500);
 
     event.recipes.gtceu.chemical_bath('pure_netherite')

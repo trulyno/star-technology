@@ -22,3 +22,7 @@
 	title: "Star Technology"
 	version: 13
 }
+
+Base Pack (need packmode as this should be priority)
+	emergency_items: [{ Count: 1, id: "minecraft:oak_sapling" }]
+	emergency_items_cooldown: 60

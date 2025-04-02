@@ -1,13 +1,16 @@
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
     event.create('stargate_component_assembly')
         .category('stargate_component_assembly')
         .setEUIO('in')
         .setMaxIOSize(12, 1, 6, 0)
         .setSound(GTSoundEntries.ASSEMBLER);
+
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+    
     event.create('stargate_component_assembly', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('stargate_component_assembly')
@@ -50,6 +53,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks(GTBlocks.FUSION_COIL.get()))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer("kubejs:block/casings/superconductors/casing-prismalium",
-            "gtceu:block/multiblock/implosion_compressor", false);
+        .workableCasingRenderer('kubejs:block/casings/superconductors/casing-prismalium',
+            'gtceu:block/multiblock/implosion_compressor', false);
+
 });

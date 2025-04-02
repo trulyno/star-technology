@@ -3,19 +3,19 @@ ServerEvents.recipes(event => {
 
     event.remove({output: /functionalstorage:.*grade/});
     event.remove({output: /functionalstorage:fluid.*/});
-    event.remove({output: "functionalstorage:ender_drawer"});
-    event.remove({output: "functionalstorage:storage_controller"});
-    event.remove({output: "functionalstorage:controller_extension"});
-    event.remove({output: "functionalstorage:armory_cabinet"});
-    event.remove({output: "functionalstorage:compacting_drawer"});
-    event.remove({output: "functionalstorage:simple_compacting_drawer"});
-    event.remove({output: "functionalstorage:framed_storage_controller"});
-    event.remove({output: "functionalstorage:framed_controller_extension"});
-    event.remove({output: "functionalstorage:compacting_framed_drawer"});
-    event.remove({output: "functionalstorage:framed_simple_compacting_drawer"});
-    event.remove({output: "functionalstorage:collector_upgrade"});
-    event.remove({output: "functionalstorage:puller_upgrade"});
-    event.remove({output: "functionalstorage:pusher_upgrade"});
+    event.remove({output: 'functionalstorage:ender_drawer'});
+    event.remove({output: 'functionalstorage:storage_controller'});
+    event.remove({output: 'functionalstorage:controller_extension'});
+    event.remove({output: 'functionalstorage:armory_cabinet'});
+    event.remove({output: 'functionalstorage:compacting_drawer'});
+    event.remove({output: 'functionalstorage:simple_compacting_drawer'});
+    event.remove({output: 'functionalstorage:framed_storage_controller'});
+    event.remove({output: 'functionalstorage:framed_controller_extension'});
+    event.remove({output: 'functionalstorage:compacting_framed_drawer'});
+    event.remove({output: 'functionalstorage:framed_simple_compacting_drawer'});
+    event.remove({output: 'functionalstorage:collector_upgrade'});
+    event.remove({output: 'functionalstorage:puller_upgrade'});
+    event.remove({output: 'functionalstorage:pusher_upgrade'});
 
     event.shaped(Item.of('functionalstorage:copper_upgrade'), [
         ' C ',
@@ -100,9 +100,9 @@ ServerEvents.recipes(event => {
         'PCP',
         ' R '
     ], {
-        R: "#forge:dusts/redstone",
-        C: "minecraft:comparator",
-        P: "#forge:plates/iron"
+        R: '#forge:dusts/redstone',
+        C: 'minecraft:comparator',
+        P: '#forge:plates/iron'
     });
 
     event.shapeless('functionalstorage:pusher_upgrade', [Item.of('functionalstorage:puller_upgrade'), '#forge:tools/screwdrivers']);

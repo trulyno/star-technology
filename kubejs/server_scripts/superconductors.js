@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.macerator('soul_sand_dust')
@@ -35,9 +34,10 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer('signalum_dust')
         .itemInputs('gtceu:silver_dust', '3x gtceu:copper_dust', '4x minecraft:redstone')
-        .itemOutputs('4x gtceu:signalum_dust') .circuit(3)
+        .itemOutputs('4x gtceu:signalum_dust')
         .duration(300)
-        .EUt(20);
+        .EUt(20)
+        .circuit(3);
 
     event.recipes.gtceu.mixer('lumium_dust')
         .itemInputs('gtceu:silver_dust', '3x gtceu:tin_dust', '2x minecraft:glowstone_dust')
@@ -89,16 +89,5 @@ ServerEvents.recipes(event => {
         .itemOutputs('17x gtceu:stellarium_dust')
         .duration(1200)
         .EUt(456000);
-
-    // Replaces
-    ['soul_infused','signalum','lumium','enderium','shellite','twinite','dragonsteel','prismalium','melodium','stellarium'].forEach(material => {
-        ['dust','nugget','ingot','gear','plate'].forEach(type =>{
-            event.replaceInput({not: {input: `#forge:${type}s`}, input: `#forge:${type}s/${material}`}, `#forge:${type}s/${material}`, `gtceu:${material}_${type}`);
-            event.replaceOutput({output: `#forge:${type}s/${material}`}, `#forge:${type}s/${material}`, `gtceu:${material}_${type}`);
-        });
-        event.replaceInput({not: {input: `#forge:rods`}, input: `#forge:rods/${material}`}, `#forge:rods/${material}`, `gtceu:${material}_rod`);
-        event.replaceInput({not: {input: `#forge:storage_blocks`}, input: `#forge:storage_blocks/${material}`}, `#forge:storage_blocks/${material}`, `gtceu:${material}_block`);
-        event.replaceOutput({output: `#forge:storage_blocks/${material}`}, `#forge:storage_blocks/${material}`, `gtceu:${material}_block`);
-    });
    
 });

@@ -1,10 +1,7 @@
-
 ServerEvents.recipes(event => {
 
     event.remove({id: /thermal:parts.*gear/});
     event.remove({id: /thermal_extra:parts.*gear/});
-    event.remove({id: /thermalendergy:.*gear/});
-    event.remove({id: /thermalendergy:.*dust/});
     event.remove({id: /thermal_extra:.*dust/});
 
     event.remove({id: /thermal_extra:.*dust.*/});
@@ -16,6 +13,8 @@ ServerEvents.recipes(event => {
     event.remove({id: /thermal_extra:smelting.*blasting/});
 
     event.remove({output: /thermal:.*attachment/});
+    
+    event.remove({ output: /thermal.*augment.*/ });
 
     // Dynamo recipes
     event.remove({ output: /thermal:dynamo*/ });
@@ -97,10 +96,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(325);
 
-    // Dynamo upgrades
-    event.remove({ output: /thermal.*augment.*/ });
-    event.remove({ output: /thermalendergy:endergy.*/ });
-
     event.smelting('minecraft:slime_ball', 'thermal:slime_mushroom_spores');
 
     event.replaceInput({ id: 'thermal:device_water_gen' },
@@ -153,61 +148,23 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(28);
 
-    event.recipes.gtceu.fluid_solidifier('hardened_glass')
-        .itemInputs('gtceu:tempered_glass')
-        .inputFluids('minecraft:lava 250')
-        .itemOutputs('thermal:obsidian_glass')
-        .duration(240)
-        .EUt(28);
-
-    event.recipes.gtceu.fluid_solidifier('signalum_glass')
-        .itemInputs('gtceu:tempered_glass')
-        .inputFluids('gtceu:signalum 144')
-        .itemOutputs('thermal:signalum_glass')
-        .duration(480)
-        .EUt(28);
-
-    event.recipes.gtceu.fluid_solidifier('lumium_glass')
-        .itemInputs('gtceu:tempered_glass')
-        .inputFluids('gtceu:lumium 144')
-        .itemOutputs('thermal:lumium_glass')
-        .duration(960)
-        .EUt(28);
-
-    event.recipes.gtceu.fluid_solidifier('enderium_glass')
-        .itemInputs('gtceu:tempered_glass')
-        .inputFluids('gtceu:enderium 144')
-        .itemOutputs('thermal:enderium_glass')
-        .duration(1920)
-        .EUt(112);
-
-    event.recipes.gtceu.fluid_solidifier('soul_infused_glass')
-        .itemInputs('gtceu:laminated_glass')
-        .inputFluids('gtceu:soul_infused 144')
-        .itemOutputs('thermal_extra:soul_infused_glass')
-        .duration(3840)
-        .EUt(28);
-
-    event.recipes.gtceu.fluid_solidifier('shellite_glass')
-        .itemInputs('gtceu:laminated_glass')
-        .inputFluids('gtceu:shellite 144')
-        .itemOutputs('thermal_extra:shellite_glass')
-        .duration(7680)
-        .EUt(28);
-
-    event.recipes.gtceu.fluid_solidifier('twinite_glass')
-        .itemInputs('gtceu:laminated_glass')
-        .inputFluids('gtceu:twinite 144')
-        .itemOutputs('thermal_extra:twinite_glass')
-        .duration(15360)
-        .EUt(28);
-
-    event.recipes.gtceu.fluid_solidifier('dragonsteel_glass')
-        .itemInputs('gtceu:fusion_glass')
-        .inputFluids('gtceu:dragonsteel 144')
-        .itemOutputs('thermal_extra:dragonsteel_glass')
-        .duration(30720)
-        .EUt(28);
+    [
+        {id: 'hardened', glass: 'thermal:obsidian', base: 'gtceu:tempered', fluid: 'minecraft:lava 250', voltage: 'ulv'},
+        {id: 'soul_infused', glass: 'thermal_extra:soul_infused', base: 'gtceu:tempered', fluid: 'gtceu:soul_infused 144', voltage: 'lv'},
+        {id: 'signalum', glass: 'thermal:signalum', base: 'gtceu:tempered', fluid: 'gtceu:signalum 144', voltage: 'mv'},
+        {id: 'lumium', glass: 'thermal:lumium', base: 'gtceu:tempered', fluid: 'gtceu:lumium 144', voltage: 'hv'},
+        {id: 'enderium', glass: 'thermal:enderium', base: 'gtceu:tempered', fluid: 'gtceu:enderium 144', voltage: 'ev'},
+        {id: 'shellite', glass: 'thermal_extra:shellite', base: 'gtceu:laminated', fluid: 'gtceu:shellite 144', voltage: 'iv'},
+        {id: 'twinite', glass: 'thermal_extra:twinite', base: 'gtceu:laminated', fluid: 'gtceu:twinite 144', voltage: 'luv'},
+        {id: 'dragonsteel', glass: 'thermal_extra:dragonsteel', base: 'gtceu:fusion', fluid: 'gtceu:dragonsteel 144', voltage: 'zpm'}
+    ].forEach(type=> {
+        event.recipes.gtceu.fluid_solidifier(`${type.id}_glass`)
+            .itemInputs(`${type.base}_glass`)
+            .inputFluids(type.fluid)
+            .itemOutputs(`${type.glass}_glass`)
+            .duration(240)
+            .EUt(global.va[type.voltage]);
+    });
 
     event.shaped(Item.of('thermal:energy_cell_frame'), [
         'LEL',

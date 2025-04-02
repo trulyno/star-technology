@@ -14,11 +14,11 @@ ServerEvents.recipes(event => {
         .outputFluids('exnihilosequentia:sea_water 1000')
         .duration(80);
 
-       event.recipes.gtceu.mixer('sea_water')
-        .itemInputs('2x minecraft:sand')
-        .inputFluids('minecraft:water 8000')
-        .outputFluids('exnihilosequentia:sea_water 8000')
-        .duration(500)
-        .EUt(GTValues.VHA[GTValues.EV]);
+    event.recipes.gtceu.centrifuge('brackish_water')
+        .inputFluids('gtceu:brackish_water 4000')
+        .outputFluids('exnihilosequentia:sea_water 2500')
+        .outputFluids('minecraft:water 1500')
+        .duration(120)
+        .EUt(GTValues.VHA[GTValues.MV]);
 
 });
