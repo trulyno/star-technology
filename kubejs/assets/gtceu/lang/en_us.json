@@ -620,6 +620,6 @@
     "gtceu.ME_core_assembler": "ME Core Assembler",
     "block.gtceu.ME_core_assembler": "ME Core Assembler",
 
-    "gtceu.ME_circuit_assembler": "ME Circuit Assembler",
+    "gtceu.me_circuit_assembler": "ME Circuit Assembler",
     "block.gtceu.ME_circuit_assembler": "ME Circuit Assembler"
 }

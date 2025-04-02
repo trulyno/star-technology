@@ -42,6 +42,63 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(65);
 
+    //new
+    event.recipes.gtceu.extractor('skystone')
+        .itemInputs('ae2:sky_dust')
+        .outputFluids('gtceu:skystone 144')
+        .duration(200)
+        .EUt(128);
+
+    [
+        {chip: 'silicon', voltage: 'mv', n: 2},
+        {chip: 'phosphorus', voltage: 'hv', n: 4},
+        {chip: 'naquadah', voltage: 'ev', n: 8},
+        {chip: 'neutronium', voltage: 'iv', n: 16}
+    ].forEach(tier => {
+        event.recipes.gtceu.cutter(`${tier.chip}_chip`)
+            .itemInputs(`gtceu:${tier.chip}_wafer`)
+            .itemOutputs(`8x kubejs:${tier.chip}_chip`)
+            .duration(900)
+            .EUt(global.va[tier.voltage]);
+
+        ['logic', 'engineering', 'calculation'].forEach(type => {
+            event.recipes.gtceu.me_circuit_assembler(`${type}_processor_${tier.chip}`)
+                .itemInputs(`kubejs:${tier.chip}_chip`, `ae2:printed_${type}_processor`)
+                .inputFluids('gtceu:skystone 144')
+                .itemOutputs(`${tier.n}x ae2:${type}_processor`)
+                .duration(400)
+                .EUt(global.va['mv']);
+        });
+    
+    });
+    [
+        {circuit: 'logic', material: 'gold'},
+        {circuit: 'engineering', material: 'diamond'},
+        {circuit: 'calculation', material: 'certus_quartz'}
+    ].forEach(type => {
+        event.recipes.gtceu.mixer(`${type.material}_skystone_alloy`)
+            .itemInputs(`gtceu:${type.material}_dust`)
+            .inputFluids('gtceu:skystone 72')
+            .itemOutputs(`gtceu:${type.material}_skystone_alloy_dust`)
+            .duration(400)
+            .EUt(global.va['mv']);
+
+        event.recipes.gtceu.compressor(`${type.material}_skystone_plate`)
+            .itemInputs(`gtceu:${type.material}_skystone_alloy_dust`)
+            .itemOutputs(`gtceu:${type.material}_skystone_alloy_plate`)
+            .duration(200)
+            .EUt(global.va['mv']);
+
+        event.recipes.gtceu.forming_press(`printed_${type.circuit}_processor`)
+            .itemInputs(`gtceu:${type.material}_skystone_alloy_plate`)
+            .inputFluids('gtceu:skystone 144')
+            .notConsumable(`ae2:${type.circuit}_processor_press`)
+            .itemOutputs(`ae2:printed_${type.circuit}_processor`)
+            .duration(400)
+            .EUt(global.va['mv']);
+    });
+
+    //old
     //gregify recipes
     //cells
     event.replaceInput({output: 'ae2:cell_component_4k'}, 
@@ -88,53 +145,6 @@ ServerEvents.recipes(event => {
         'megacells:accumulation_processor',
         '#gtceu:circuits/uhv'
     );
-
-    //circuits
-    event.recipes.gtceu.alloy_smelter('printed_calculation_circuit')
-        .itemInputs('gtceu:certus_quartz_plate')
-        .notConsumable('ae2:calculation_processor_press')
-        .itemOutputs('ae2:printed_calculation_processor')
-        .duration(200)
-        .EUt(65);
-
-     event.recipes.gtceu.alloy_smelter('printed_engineering_circuit')
-        .itemInputs('gtceu:diamond_plate')
-        .notConsumable('ae2:engineering_processor_press')
-        .itemOutputs('ae2:printed_engineering_processor')
-        .duration(200)
-        .EUt(65);
-
-    event.recipes.gtceu.alloy_smelter('printed_logic_circuit')
-        .itemInputs('#forge:plates/gold')
-        .notConsumable('ae2:logic_processor_press')
-        .itemOutputs('ae2:printed_logic_processor')
-        .duration(200)
-        .EUt(65);
-
-    event.recipes.gtceu.alloy_smelter('printed_silicon')
-        .itemInputs('gtceu:silicon_plate')
-        .notConsumable('ae2:silicon_press')
-        .itemOutputs('ae2:printed_silicon')
-        .duration(200)
-        .EUt(65);
-
-    event.recipes.gtceu.alloy_smelter('calculation_circuit')
-        .itemInputs('ae2:printed_calculation_processor', 'ae2:printed_silicon')
-        .itemOutputs('ae2:calculation_processor')
-        .duration(200)
-        .EUt(65);
-
-    event.recipes.gtceu.alloy_smelter('engineering_circuit')
-        .itemInputs('ae2:printed_engineering_processor', 'ae2:printed_silicon')
-        .itemOutputs('ae2:engineering_processor')
-        .duration(200)
-        .EUt(65);
-
-    event.recipes.gtceu.alloy_smelter('logic_circuit')
-        .itemInputs('ae2:printed_logic_processor', 'ae2:printed_silicon')
-        .itemOutputs('ae2:logic_processor')
-        .duration(200)
-        .EUt(65);
 
     event.recipes.gtceu.forming_press('press_calculation')
         .itemInputs('gtceu:double_star_steel_plate', 'ae2:certus_quartz_crystal')

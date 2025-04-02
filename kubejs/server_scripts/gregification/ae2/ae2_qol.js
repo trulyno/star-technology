@@ -133,29 +133,21 @@ ServerEvents.recipes(event => {
 
 
     //gerging cable anchors
-    function fluidtype(lube, mb) {
-        function metaltype(wire, amount) {
+    function metaltype(wire, amount) {
 
-            event.recipes.gtceu.cutter(`start:${wire}_${lube.path}_cable_anchor`)
-                .itemInputs(`gtceu:${wire}_single_wire`)
-                .inputFluids(`${lube} ${mb}`)
-                .itemOutputs(`${amount}x ae2:cable_anchor`)
-                .duration(100)
-                .EUt(7);
-
-        }
-
-        metaltype('iron', 2);
-        metaltype('steel', 4);
-        metaltype('aluminium', 6);
-        metaltype('kanthal', 8);
-        metaltype('tungsten', 16);
-        metaltype('rtm_alloy', 32);
+        event.recipes.gtceu.cutter(`start:${wire}_cable_anchor`)
+            .itemInputs(`gtceu:${wire}_single_wire`)
+            .itemOutputs(`${amount}x ae2:cable_anchor`)
+            .duration(100)
+            .EUt(7);
 
     }
 
-    fluidtype('minecraft:water', 4)
-    fluidtype('gtceu:distilled_water', 3)
-    fluidtype('gtceu:lubricant', 2)
+    metaltype('iron', 2);
+    metaltype('steel', 4);
+    metaltype('aluminium', 6);
+    metaltype('kanthal', 8);
+    metaltype('tungsten', 16);
+    metaltype('rtm_alloy', 32);
 
 });
