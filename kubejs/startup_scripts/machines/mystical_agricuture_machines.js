@@ -1,4 +1,3 @@
-
 global.recipe_types(event => {
     event.create('greenhouse_growing')
         .category('greenhouse')

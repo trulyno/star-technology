@@ -615,5 +615,11 @@
     "material.gtceu.deactivated_nether": "Deactivated §4Nether§r",
 
     "gtceu.molten_destabilizing": "Molten Destabilization",
-    "block.gtceu.molten_destabilizer": "Molten Destabilizer Controller"
+    "block.gtceu.molten_destabilizer": "Molten Destabilizer Controller",
+
+    "gtceu.ME_core_assembler": "ME Core Assembler",
+    "block.gtceu.ME_core_assembler": "ME Core Assembler",
+
+    "gtceu.ME_circuit_assembler": "ME Circuit Assembler",
+    "block.gtceu.ME_circuit_assembler": "ME Circuit Assembler"
 }

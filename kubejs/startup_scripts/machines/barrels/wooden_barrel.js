@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     ['barrel', 'barrel_composting', 'barrel_transformation'].forEach((name) => {
