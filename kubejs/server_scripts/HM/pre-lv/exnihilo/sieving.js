@@ -61,11 +61,13 @@ ServerEvents.recipes(event => {
 	sieve('string', .2, cCalc, 'gtceu:tiny_sulfur_dust', false);
 	sieve('flint', .4, cCalc, 'gtceu:calcite_dust', false);
 	sieve('flint', .15, cCalc, 'gtceu:small_sulfur_dust', false);
+	sieve('flint', .6, cCalc, dust, false);
 
 	sieve('string', .5, cDrip, 'gtceu:small_gypsum_dust', false);
 	sieve('string', .15, cDrip, 'minecraft:clay_ball', false);
 	sieve('flint', .4, cDrip, 'gtceu:gypsum_dust', false);
 	sieve('flint', .25, cDrip, 'minecraft:clay_ball', false);
+	sieve('flint', .6, cDrip, dust, false);
 
 	// Dust
 	sieve('string', .25, dust, 'gtceu:small_redstone_dust', false);
