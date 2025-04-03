@@ -30,6 +30,6 @@
 //             .where('T', Predicates.blocks('kubejs:wood_casing'))
 //             .where('.', Predicates.any())
 //             .build())
-//         .workableCasingRenderer("gtceu:block/casings/steam/bricked_bronze/top",
-//         "gtceu:block/multiblock/primitive_blast_furnace", false);
+//         .workableCasingRenderer('gtceu:block/casings/steam/bricked_bronze/top',
+//         'gtceu:block/multiblock/primitive_blast_furnace', false);
 // });

@@ -1,101 +1,110 @@
 
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.chemical_reactor('blizz_dust')
-        .itemInputs('gtceu:cobalt_dust')
-        .inputFluids('gtceu:fluorine 1000')
-        .itemOutputs('thermal:blizz_powder')
-        .duration(200)
-        .EUt(7680);
+    [
+        {powder: 'blizz', item: 'cobalt_dust', fluid: 'fluorine', multiplier: 16, element: 'ice'},
+        {powder: 'blitz', item: 'platinum_dust', fluid: 'deuterium', multiplier: 4, element: 'lightning'},
+        {powder: 'basalz', item: 'small_rhodium_dust', fluid: 'helium', multiplier: 1, element: 'earth'}
+    ].forEach(type=>{
+        event.recipes.gtceu.chemical_reactor(`${type.powder}_dust`)
+            .itemInputs(`gtceu:${type.item}`)
+            .inputFluids(`gtceu:${type.fluid} 1000`)
+            .itemOutputs(`${type.multiplier}x thermal:${type.powder}_powder`)
+            .duration(200)
+            .EUt(480*type.multiplier);
 
-    event.recipes.gtceu.large_chemical_reactor('blizz_dust')
-        .itemInputs('gtceu:cobalt_dust')
-        .inputFluids('gtceu:fluorine 1000')
-        .itemOutputs('thermal:blizz_powder')
-        .duration(200)
-        .EUt(7680);
+        event.recipes.gtceu.large_chemical_reactor(`${type.powder}_dust`)
+            .itemInputs(`gtceu:${type.item}`)
+            .inputFluids(`gtceu:${type.fluid} 1000`)
+            .itemOutputs(`${type.multiplier}x thermal:${type.powder}_powder`)
+            .duration(200)
+            .EUt(480*type.multiplier);
 
-    event.recipes.gtceu.chemical_reactor('blitz_dust')
-        .itemInputs('gtceu:platinum_dust')
-        .inputFluids('gtceu:deuterium 1000')
-        .itemOutputs('thermal:blitz_powder')
-        .duration(200)
-        .EUt(1920);
+        event.recipes.gtceu.macerator(`${type.powder}_powder`)
+            .itemInputs(`thermal:${type.powder}_rod`)
+            .itemOutputs(`4x thermal:${type.powder}_powder`)
+            .duration(88)
+            .EUt(2);
 
-     event.recipes.gtceu.large_chemical_reactor('blitz_dust')
-        .itemInputs('gtceu:platinum_dust')
-        .inputFluids('gtceu:deuterium 1000')
-        .itemOutputs('thermal:blitz_powder')
-        .duration(200)
-        .EUt(1920);
+        event.recipes.gtceu.mixer(`${type.element}_charge`)
+            .itemInputs('#forge:dusts/coal', 'minecraft:gunpowder', `thermal:${type.powder}_powder`)
+            .itemOutputs(`3x thermal:${type.element}_charge`)
+            .duration(100)
+            .EUt(30);
 
-    event.recipes.gtceu.chemical_reactor('basalz_dust')
-        .itemInputs('gtceu:rhodium_dust')
-        .inputFluids('gtceu:helium 1000')
-        .itemOutputs('thermal:basalz_powder')
-        .duration(200)
-        .EUt(480);
+        event.remove({id: `thermal:${type.powder}_powder`});
+    });
+        event.remove({id: 'minecraft:blaze_powder'});
+        event.remove({id: 'gtceu:shapeless/blaze_rod_to_powder'});
+        event.remove({id: 'create:crushing/blaze_rod'});
 
-     event.recipes.gtceu.large_chemical_reactor('basalz_dust')
-        .itemInputs('gtceu:rhodium_dust')
-        .inputFluids('gtceu:helium 1000')
-        .itemOutputs('thermal:basalz_powder')
-        .duration(200)
-        .EUt(480);
+    //new stuff
+    [
+        {element: 'fire', mod: 'minecraft', powder: 'blaze'},
+        {element: 'ice', mod: 'thermal', powder: 'blizz'},
+        {element: 'lightning', mod: 'thermal', powder: 'blitz'},
+        {element: 'earth', mod: 'thermal', powder: 'basalz'}
+      ].forEach(shard => {
+        event.recipes.gtceu.extractor(`liquid_${shard.powder}`)
+          .itemInputs(`${shard.mod}:${shard.powder}_powder`)
+          .outputFluids(`gtceu:${shard.powder} 144`)
+          .duration(22)
+          .EUt(30);
 
-    event.recipes.gtceu.macerator('basalz_powder')
-        .itemInputs('thermal:basalz_rod')
-        .itemOutputs('4x thermal:basalz_powder')
-        .duration(88)
-        .EUt(2);
+        event.recipes.gtceu.autoclave(`${shard.element}_infused_shard_shard`)
+          .itemInputs('kubejs:energized_nether_star_shard')
+          .inputFluids(`gtceu:${shard.powder} 720`)
+          .chancedOutput(`kubejs:${shard.element}_infused_shard`, 8000, 500)
+          .duration(480)
+          .EUt(2048);
+      
+        event.recipes.gtceu.autoclave(`${shard.element}_infused_shard_charge`)
+          .itemInputs(`4x ${shard.mod}:${shard.element}_charge`)
+          .inputFluids(`gtceu:${shard.powder} 720`)
+          .chancedOutput(`kubejs:${shard.element}_infused_shard`, 5000, -1000)
+          .duration(480)
+          .EUt(2048);
+      
+      });
 
-    event.recipes.gtceu.macerator('blizz_powder')
-        .itemInputs('thermal:blizz_rod')
-        .itemOutputs('4x thermal:blizz_powder')
-        .duration(88)
-        .EUt(2);
+    event.shaped('kubejs:star_casting_mold', [
+        ' F ',
+        ' M ',
+        '   '
+    ], {
+        M: 'gtceu:ball_casting_mold',
+        F: '#forge:tools/files'
+    });
 
-    event.recipes.gtceu.macerator('blitz_powder')
-        .itemInputs('thermal:blitz_rod')
-        .itemOutputs('4x thermal:blitz_powder')
-        .duration(88)
-        .EUt(2);
+    event.recipes.gtceu.forming_press('impure_nether_star')
+        .itemInputs('kubejs:fire_infused_shard', 'kubejs:ice_infused_shard', 'kubejs:lightning_infused_shard', 'kubejs:earth_infused_shard')
+        .notConsumable('kubejs:star_casting_mold')
+        .itemOutputs('kubejs:impure_nether_star')
+        .duration(300)
+        .EUt(8192);
 
-    event.recipes.gtceu.mixer('earth_charge')
-        .itemInputs('#forge:dusts/coal', 'minecraft:gunpowder', 'thermal:basalz_powder')
-        .itemOutputs('3x thermal:earth_charge')
-        .duration(100)
-        .EUt(30);
+    const implosion = [{name: 'tnt', explosive: '4x minecraft:tnt'},{name: 'dynamite', explosive: '2x gtceu:dynamite'},
+        {name: 'itnt', explosive: 'gtceu:industrial_tnt'},{name: 'powderbarrel', explosive: '8x gtceu:powderbarrel'}]
 
-    event.recipes.gtceu.mixer('ice_charge')
-        .itemInputs('#forge:dusts/coal', 'minecraft:gunpowder', 'thermal:blizz_powder')
-        .itemOutputs('3x thermal:ice_charge')
-        .duration(100)
-        .EUt(30);
-
-    event.recipes.gtceu.mixer('lightning_charge')
-        .itemInputs('#forge:dusts/coal', 'minecraft:gunpowder', 'thermal:blitz_powder')
-        .itemOutputs('3x thermal:lightning_charge')
-        .duration(100)
-        .EUt(30);
-
-    event.recipes.gtceu.mixer('nether_star_essence')
-        .itemInputs('8x minecraft:fire_charge', '8x thermal:earth_charge', '8x thermal:ice_charge', '8x thermal:lightning_charge')
-        .chancedOutput('mysticalagriculture:nether_star_essence', 8000, 500)
-        .duration(360)
+    implosion.forEach(shard=>{
+        event.recipes.gtceu.implosion_compressor(`nether_star_${shard.name}`)
+            .itemInputs('kubejs:impure_nether_star', shard.explosive)
+            .itemOutputs('minecraft:nether_star')
+            .chancedOutput('gtceu:dark_ash_dust', 2500, 0)
+            .duration(20)
+            .EUt(30);
+    });
+    
+    event.recipes.gtceu.forge_hammer('nether_star_shard')
+        .itemInputs('minecraft:nether_star')
+        .itemOutputs('5x mysticalagradditions:nether_star_shard')
+        .duration(300)
         .EUt(512);
 
-    event.recipes.gtceu.chemical_bath('nether_star_shard')
-        .itemInputs('mysticalagriculture:nether_star_essence')
-        .inputFluids('gtceu:radon 100')
-        .itemOutputs('mysticalagradditions:nether_star_shard')
-        .duration(300)
-        .EUt(496);
-
-    event.recipes.gtceu.macerator('nether_star_dust')
+    event.recipes.gtceu.polarizer('energized_nether_star_shard')
         .itemInputs('mysticalagradditions:nether_star_shard')
-        .itemOutputs('gtceu:small_nether_star_dust')
+        .itemOutputs('kubejs:energized_nether_star_shard')
         .duration(400)
-        .EUt(496);
+        .EUt(2048);
 
 });

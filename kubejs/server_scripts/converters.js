@@ -3,10 +3,13 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: /gtceu:.*_energy_converter/ });
     
-    const converterMaterials = {
+    const PRMconverterMaterials = {
         lv: 'soul_infused',
         mv: 'signalum',
-        hv: 'lumium',
+        hv: 'lumium'
+    }
+
+    const ADVconverterMaterials = {
         ev: 'enderium',
         iv: 'shellite',
         luv: 'twinite',
@@ -22,7 +25,7 @@ ServerEvents.recipes(event => {
     converterCraftingRecipe('16a','hex');
     
     function converterCraftingRecipe(amps,thickness){
-        for (const [tier, superconductor] of Object.entries(converterMaterials)) {
+        for (const [tier, superconductor] of Object.entries(ADVconverterMaterials)) {
             event.shaped(Item.of(`gtceu:${tier}_${amps}_energy_converter`), [
                 '   ',
                 'WCW',
@@ -32,11 +35,22 @@ ServerEvents.recipes(event => {
                 C: `#gtceu:circuits/${tier}`,
                 S: `gtceu:${tier}_machine_hull`
             });
-        }
-    }  
+        };
+        for (const [tier, superconductor] of Object.entries(PRMconverterMaterials)) {
+            event.shaped(Item.of(`gtceu:${tier}_${amps}_energy_converter`), [
+                '   ',
+                'WCW',
+                'WSW'
+            ], {
+                W: `gtceu:${superconductor}_${thickness}_wire`,
+                C: `#gtceu:circuits/${tier}`,
+                S: `gtceu:${tier}_machine_hull`
+            });
+        };
+    };
 
     // 64A Converter Recipe
-    for (const [tier, superconductor] of Object.entries(converterMaterials)) {
+    for (const [tier, superconductor] of Object.entries(ADVconverterMaterials)) {
         event.recipes.gtceu.assembler(`start_core:${tier}_64a_energy_converter`)
             .itemInputs(`#gtceu:circuits/${tier}`, `16x gtceu:${superconductor}_hex_wire`, `gtceu:${tier}_machine_hull`)
             .itemOutputs(Item.of(`start_core:${tier}_64a_energy_converter`))

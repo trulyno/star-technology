@@ -1,5 +1,5 @@
 {
-	autofocus_id: "0889A97E22C484CC"
+	autofocus_id: "18A35D008CA73084"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "preparing_for_dimensional_travel"
@@ -11,12 +11,13 @@
 	quest_links: [{
 		id: "6AA4625E98ED37B8"
 		linked_quest: "2F87FC1D5BB43220"
-		x: -1.0d
+		x: 4.0d
 		y: 0.5d
 	}]
 	quests: [
 		{
 			dependencies: ["4C5DBB94345FF33B"]
+			description: ["Sentience in a circuit."]
 			id: "707C2E9BA62A60C5"
 			rewards: [{
 				count: 2
@@ -32,7 +33,7 @@
 				item: "gtceu:wetware_processor_mainframe"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: 6.5d
 		}
 		{
@@ -40,6 +41,7 @@
 				"5BDA17962F4630EB"
 				"707C2E9BA62A60C5"
 			]
+			description: ["This Battery takes quite some time to fill, and is great to use as a buffer because of that."]
 			id: "50835055C3D1050C"
 			rewards: [{
 				id: "49DA44A12F573352"
@@ -51,11 +53,15 @@
 				item: "gtceu:max_battery"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["707C2E9BA62A60C5"]
+			dependencies: [
+				"707C2E9BA62A60C5"
+				"02606EBF230281A3"
+			]
+			description: ["A Fusion Reactor that you will need a lot of."]
 			id: "314B6ABE72E4A438"
 			rewards: [{
 				count: 2
@@ -70,11 +76,16 @@
 				item: "gtceu:uv_fusion_reactor"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["314B6ABE72E4A438"]
+			description: [
+				"The core material for &4UHV&r."
+				""
+				"You will need gigantic amounts of this."
+			]
 			id: "5BDA17962F4630EB"
 			rewards: [{
 				count: 2
@@ -89,11 +100,12 @@
 				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
+			description: ["A material used for crafting a pair of machines that you could only dream of, up until now that is."]
 			id: "3ECCE739DE8F5F2C"
 			rewards: [{
 				id: "3DA5E57A968DB4AE"
@@ -105,13 +117,18 @@
 				item: "gtceu:ruthenium_trinium_americium_neutronate_ingot"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: 0.5d
 		}
 		{
 			dependencies: [
 				"5BDA17962F4630EB"
 				"1A4583EB1A3D538F"
+			]
+			description: [
+				"The heart of every &4UHV&r machine"
+				""
+				"Not that you will be making a ton of those."
 			]
 			id: "5C39B74171CC21F9"
 			rewards: [{
@@ -124,7 +141,7 @@
 				item: "gtceu:uhv_machine_hull"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -6.0d
 			y: 2.5d
 		}
 		{
@@ -136,6 +153,7 @@
 				"4F6B1F4261874B65"
 				"783865A56909D3C7"
 			]
+			description: ["&4UHV&r power for all your machines."]
 			id: "11D51899B980082B"
 			rewards: [{
 				id: "2E474FF058F620B3"
@@ -147,11 +165,12 @@
 				item: "gtceu:uhv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -4.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["11D51899B980082B"]
+			description: ["&aUEV&r recipe speeds."]
 			id: "44B43694312BAAC8"
 			rewards: [{
 				id: "439C3636390FF949"
@@ -163,7 +182,7 @@
 				item: "gtceu:uhv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -6.0d
 			y: 4.5d
 		}
 		{
@@ -171,6 +190,7 @@
 				"44B43694312BAAC8"
 				"0C19C040CA121E3B"
 			]
+			description: ["This hatch gives you access to &2UIV&r recipe speeds, but is locked behind Abydos."]
 			id: "581B9922CC4B457F"
 			rewards: [{
 				id: "354EE1013EA404DB"
@@ -182,30 +202,33 @@
 				item: "gtceu:uhv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: -13.0d
+			x: -8.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
+			description: ["A Parallel Hatch that will elevate your processing power to a whole new level."]
 			id: "27E656FA93E2A1F4"
 			rewards: [{
 				id: "2FC0A2A1510D510B"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "256x Parallel Hatch"
 			tasks: [{
 				id: "24F1943A992D624E"
 				item: "gtceu:uv_parallel_hatch"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 8.5d
+			x: -3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
 				"50835055C3D1050C"
 				"43A620DF574E2488"
 			]
+			description: ["A nearly infinite energy capacitator for all purposes at this point. Just one will be more then enough for your substation."]
 			id: "2BAE934A80152FA1"
 			rewards: [{
 				id: "3B236DC697D26949"
@@ -217,11 +240,12 @@
 				item: "gtceu:uhv_ultimate_battery"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 2.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
+			description: ["Used for substation capacitors above &cZPM&r."]
 			id: "43A620DF574E2488"
 			rewards: [{
 				id: "398FDD5437034960"
@@ -233,11 +257,12 @@
 				item: "gtceu:empty_tier_iii_battery"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["43A620DF574E2488"]
+			description: ["At this point, why not make the one below?"]
 			id: "745470CF31319CAA"
 			rewards: [{
 				id: "70A2BDF175884640"
@@ -249,11 +274,12 @@
 				item: "gtceu:uv_lapotronic_battery"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 2.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["1AC8CBF01196D1F3"]
+			description: ["More efficient circuit recipes."]
 			id: "3FE0B664F2D15942"
 			rewards: [{
 				id: "01E1C3C603E976E8"
@@ -265,11 +291,12 @@
 				item: "gtceu:highly_advanced_soc_wafer"
 				type: "item"
 			}]
-			x: -13.0d
+			x: -8.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["0F7A1EA1AB52F795"]
+			description: ["New Wafers, which can even more perfectly emulate the previous tiers."]
 			id: "1AC8CBF01196D1F3"
 			rewards: [{
 				count: 2
@@ -284,11 +311,12 @@
 				item: "gtceu:neutronium_wafer"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -6.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
+			description: ["A new type of Boule, opening up a whole new world of possibilities."]
 			id: "0F7A1EA1AB52F795"
 			rewards: [{
 				id: "42D6FB3B7E75DE20"
@@ -300,7 +328,7 @@
 				item: "gtceu:neutronium_boule"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -4.0d
 			y: 0.5d
 		}
 		{
@@ -308,6 +336,7 @@
 				"239A0034C8425661"
 				"5BDA17962F4630EB"
 			]
+			description: ["So this is raw.. nothing?"]
 			id: "0889A97E22C484CC"
 			rewards: [{
 				id: "515734ACECDB08A0"
@@ -319,23 +348,25 @@
 				item: "gtceu:raw_void_ingot"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["5BA69EDC3C223B2C"]
+			description: ["A machine used for when the EBF just does not cut it."]
 			id: "60ECE277341A9408"
 			rewards: [{
 				id: "23F129E3F9D9FFE1"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			tasks: [{
 				id: "2BDD6909E418101F"
 				item: "gtceu:heat_chamber"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 2.0d
 			y: -1.5d
 		}
 		{
@@ -343,6 +374,7 @@
 				"60ECE277341A9408"
 				"0889A97E22C484CC"
 			]
+			description: ["So this is... pure nothingness? How does that even work?"]
 			id: "7A5734E3CF682EBA"
 			rewards: [{
 				count: 2
@@ -357,7 +389,7 @@
 				item: "gtceu:void_ingot"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
@@ -365,6 +397,7 @@
 				"5BA69EDC3C223B2C"
 				"7A5734E3CF682EBA"
 			]
+			description: ["This machine can roll up layers and layers of alternating foils and compress them to make Crude Stargate Rods."]
 			id: "027C5CE3CFCB5649"
 			rewards: [{
 				id: "32443F1B809654D6"
@@ -376,7 +409,7 @@
 				item: "gtceu:large_rotor_machine"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: -3.5d
 		}
 		{
@@ -384,6 +417,7 @@
 				"027C5CE3CFCB5649"
 				"4DE40B37D609B921"
 			]
+			description: ["Currently unusable because it isn't done quite yet."]
 			id: "5E9936C099FF589C"
 			rewards: [{
 				id: "05AE9E61C946D871"
@@ -395,11 +429,12 @@
 				item: "kubejs:crude_stargate_rod"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["2F87FC1D5BB43220"]
+			description: ["Liquid Echo's from sources unknown."]
 			icon: {
 				Count: 1
 				id: "gtceu:echo_r_bucket"
@@ -424,27 +459,30 @@
 				}
 			]
 			title: "Echo Fluid"
-			x: -3.0d
+			x: 2.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["182D948925141764"]
+			description: ["An alloy of two very expensive elements."]
 			id: "1C515302A357B1B8"
 			rewards: [{
 				id: "7DDE8773170387CB"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			tasks: [{
 				id: "462D1C2DAFBB310A"
 				item: "gtceu:naquadic_netherite_dust"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["1C515302A357B1B8"]
+			description: ["A powder, that, when you listen carefully, produces weird sounds."]
 			id: "5C3AF136913CF8BE"
 			rewards: [{
 				id: "4AC09D2CB06E6B4B"
@@ -452,15 +490,16 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "0E3D5994571FD867"
-				item: "gtceu:screret_runic_laser_source_base_dust"
+				id: "29DD5FAE5F5E0593"
+				item: "gtceu:runic_laser_source_base_dust"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["5C3AF136913CF8BE"]
+			description: ["A special kind of gem, that resonates extensively."]
 			id: "3B85A08B2E08C6FC"
 			rewards: [{
 				id: "31146EC2D33D4B75"
@@ -468,11 +507,11 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "7ACA7956E870B321"
-				item: "gtceu:exquisite_screret_runic_laser_source_base_gem"
+				id: "751CAA0FFFD5F574"
+				item: "gtceu:exquisite_runic_laser_source_base_gem"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: 0.5d
 		}
 		{
@@ -481,6 +520,7 @@
 				"52B553FDB34B1475"
 				"253AECE450920D99"
 			]
+			description: ["A machine used to generate wave patterns. The core for some special casings that will allow you to do amazing things."]
 			id: "75F0388FAB52E0B3"
 			rewards: [{
 				count: 2
@@ -495,7 +535,7 @@
 				item: "kubejs:runic_wave_generator"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 10.0d
 			y: 0.5d
 		}
 		{
@@ -512,7 +552,7 @@
 				item: "kubejs:laser_casing"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 10.0d
 			y: -1.5d
 		}
 		{
@@ -520,6 +560,7 @@
 				"10D78E10735CD210"
 				"7FFCAD92772A175F"
 			]
+			description: ["A colorfull multiblock that can inscribe ancient runes upon dense and strong materials."]
 			id: "6D169C5E35C9EF6C"
 			rewards: [{
 				count: 2
@@ -534,11 +575,12 @@
 				item: "gtceu:runic_circuitry_assembling_station"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 4.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["52B553FDB34B1475"]
+			description: ["The secondary &3UV&r superconductor, can hold 256 amps in a 1x cable."]
 			id: "622066696CCF9754"
 			rewards: [{
 				id: "17C57D476BB71F90"
@@ -550,23 +592,25 @@
 				item: "gtceu:melodium_single_wire"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 10.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["678B90BF2ACE2BBA"]
+			description: ["A material said to make you hear the song of the universe."]
 			id: "52B553FDB34B1475"
 			rewards: [{
 				id: "0A7609C4179CF5A2"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			tasks: [{
 				id: "6DCB4B5D70F0A053"
 				item: "gtceu:melodium_ingot"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 10.0d
 			y: 2.5d
 		}
 		{
@@ -575,6 +619,7 @@
 				"52B553FDB34B1475"
 				"7FD0034E639F3B2D"
 			]
+			description: ["A reinforced form of Neutronium, capable of carrying extreme amounts of energy, and resisting the force of tears in space."]
 			id: "253AECE450920D99"
 			rewards: [{
 				id: "70C887ECBA6B4542"
@@ -586,11 +631,12 @@
 				item: "gtceu:stellarium_ingot"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["253AECE450920D99"]
+			description: ["&4UHV&r superconductor, can hold 512 amps in a 1x cable."]
 			id: "55102B0E5D0238E1"
 			rewards: [{
 				id: "664E3AF7B9872F12"
@@ -602,7 +648,7 @@
 				item: "gtceu:stellarium_single_wire"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: 4.5d
 		}
 		{
@@ -610,13 +656,26 @@
 				"5E9936C099FF589C"
 				"59711F987DE95924"
 			]
+			description: ["These are finished Stargate Rods, capable of resisting pressure so intense it could, for example, hold open a crack between dimensions."]
 			id: "3792C5D89B1301A0"
-			rewards: [{
-				count: 2
-				id: "7B42B832CC2566A1"
-				item: "kubejs:coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "7B42B832CC2566A1"
+					item: "kubejs:coin"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/playsound gtceu:metal_pipe master @a"
+					elevate_perms: true
+					icon: "kubejs:stargate_rod"
+					id: "7ECEC393EDED498B"
+					silent: true
+					title: "Bonk"
+					type: "command"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -624,7 +683,7 @@
 				item: "kubejs:stargate_rod"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: -5.5d
 		}
 		{
@@ -632,6 +691,7 @@
 				"7FFCAD92772A175F"
 				"3792C5D89B1301A0"
 			]
+			description: ["A powerfull and large multiblock that can assemble parts of a Stargate."]
 			id: "1004D6D7636E0321"
 			rewards: [{
 				count: 2
@@ -646,7 +706,7 @@
 				item: "gtceu:stargate_component_assembly"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 2.0d
 			y: -5.5d
 		}
 		{
@@ -674,11 +734,12 @@
 				}
 			]
 			title: "Engraved Runes"
-			x: -1.0d
+			x: 4.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["60ECE277341A9408"]
+			description: ["A machine used to pressure cook the Stargate Rods into their complete form."]
 			id: "59711F987DE95924"
 			rewards: [{
 				id: "1B33E52F7FEAD5E8"
@@ -690,11 +751,12 @@
 				item: "gtceu:super_pressure_heat_chamber"
 				type: "item"
 			}]
-			x: -5.0d
+			x: 0.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
+			description: ["A Quantum Star that has been arificially made more dense, to the point it will exert it's own gravitational force."]
 			hide_dependency_lines: true
 			id: "7FFCAD92772A175F"
 			rewards: [{
@@ -707,7 +769,7 @@
 				item: "gtceu:gravi_star"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 2.0d
 			y: -3.5d
 		}
 		{
@@ -716,6 +778,7 @@
 				"5C7A92625D07C55D"
 				"433E2BCC63E779AF"
 			]
+			description: ["A machine with terrifying potential, that can slash open a rift in the cosmos to connect to a counterpart with just their coordinates and an &l&4IMMENSE&r amount of power."]
 			icon: "sgjourney:classic_stargate"
 			id: "2EDE996312B1C69E"
 			rewards: [{
@@ -757,12 +820,13 @@
 				}
 			]
 			title: "This is what you have been waiting for"
-			x: 1.0d
+			x: 6.0d
 			y: -8.0d
 		}
 		{
 			can_repeat: true
 			dependencies: ["66D2FB63E81E03AB"]
+			description: [""]
 			icon: "minecraft:sand"
 			id: "5097F10D8D36FEB7"
 			optional: true
@@ -779,7 +843,7 @@
 				title: "Get Abydos Coordinates"
 				type: "checkmark"
 			}]
-			x: 5.0d
+			x: 10.0d
 			y: -3.5d
 		}
 		{
@@ -787,6 +851,7 @@
 				"664F435508073B8E"
 				"66D2FB63E81E03AB"
 			]
+			description: ["A computer capable of triangulating planet locations in real time, and opening a path to one."]
 			id: "43B5477B959B2736"
 			rewards: [{
 				count: 2
@@ -801,11 +866,12 @@
 				item: "kubejs:classic_stargate_computer_core"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 6.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["56D5872D2C33A9CC"]
+			description: ["The path to the sands of Abydos, inscriped on a piece of whispering gemstone."]
 			id: "66D2FB63E81E03AB"
 			rewards: [{
 				id: "37AFE192D0BE0925"
@@ -818,11 +884,12 @@
 				item: "kubejs:abydos_coordinate_crystal"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 8.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["7A38469EAAABEAAE"]
+			description: ["A machine that sends signals into deep space in the hopes to enscribe the location of found dimensions and cosmic bodies onto coordinate crystals."]
 			id: "56D5872D2C33A9CC"
 			rewards: [{
 				count: 2
@@ -837,11 +904,12 @@
 				item: "gtceu:dimensional_finder"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 8.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["2F87FC1D5BB43220"]
+			description: ["A blank slate, that with carefull processing and some luck could be inscribed with coordinates to different realms."]
 			id: "7A38469EAAABEAAE"
 			rewards: [{
 				id: "4262C7EF00DC2805"
@@ -854,7 +922,7 @@
 				item: "kubejs:coordinate_crystal"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 4.0d
 			y: 4.5d
 		}
 		{
@@ -872,11 +940,12 @@
 				item: "kubejs:computational_super_matrix"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 6.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["3ECCE739DE8F5F2C"]
+			description: ["A parallel EBF. Nothing needs to be said, just get it right now."]
 			id: "2EE4C6540FE3D4CF"
 			optional: true
 			rewards: [{
@@ -890,11 +959,12 @@
 				item: "gtceu:mega_blast_furnace"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -4.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3ECCE739DE8F5F2C"]
+			description: ["A parallel freezer. Very much necessary to keep up with the RHF on the left."]
 			id: "17C47EC4E8337D7B"
 			optional: true
 			rewards: [{
@@ -908,11 +978,12 @@
 				item: "gtceu:mega_vacuum_freezer"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["2EDE996312B1C69E"]
+			description: ["Visits the sands that hide remnants of an ancient race of beings, long since gone."]
 			icon: "minecraft:sand"
 			id: "1FB502D770A4A59B"
 			rewards: [{
@@ -928,8 +999,8 @@
 				type: "dimension"
 			}]
 			title: "To Abydos"
-			x: -1.5d
-			y: -8.0d
+			x: 6.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
@@ -948,7 +1019,7 @@
 				item: "gtceu:component_part_assembly"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -6.0d
 			y: 6.5d
 		}
 		{
@@ -956,6 +1027,7 @@
 				"0508AE03C730BE6C"
 				"1004D6D7636E0321"
 			]
+			description: ["An extremely dense and resistant block, that can resistant the force of rifts in space."]
 			id: "70D35B4C1D6A143D"
 			rewards: [{
 				id: "3B90C26F72F5A63B"
@@ -969,7 +1041,7 @@
 				item: "sgjourney:classic_stargate_ring_block"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 4.0d
 			y: -5.5d
 		}
 		{
@@ -977,6 +1049,7 @@
 				"70D35B4C1D6A143D"
 				"1E47910C2F2112E1"
 			]
+			description: ["A sturdy frame for Chevrons, allowing them to be used in powerfull machines."]
 			id: "433E2BCC63E779AF"
 			rewards: [{
 				id: "3D4753FAE4D98706"
@@ -990,7 +1063,7 @@
 				item: "sgjourney:classic_stargate_chevron_block"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 8.0d
 			y: -5.5d
 		}
 		{
@@ -998,6 +1071,7 @@
 				"70D35B4C1D6A143D"
 				"43B5477B959B2736"
 			]
+			description: ["A computer integrate into a Ring Block that can communicate with Chevrons to achieve a miracle."]
 			id: "5C7A92625D07C55D"
 			rewards: [{
 				id: "398ACC54F4F42715"
@@ -1011,11 +1085,12 @@
 				item: "sgjourney:classic_stargate_base_block"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 6.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["2D713622FA2D6FCA"]
+			description: ["A Stargate Chevron, that can hold a coordinate rune inside it."]
 			id: "1E47910C2F2112E1"
 			rewards: [{
 				count: 2
@@ -1030,409 +1105,31 @@
 				item: "kubejs:classic_chevron_disk"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 10.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["2EDE996312B1C69E"]
-			description: ["Attach the Interface to any part of the gate and power it. Additionally the DHD needs to be in the general area to type in the desired coordinates."]
+			description: [
+				"Attach the Interface to any part of the gate and power it. Additionally the DHD needs to be in the general area to type in the desired coordinates."
+				""
+				"&7Yes, you can terminal the helper to build it for you"
+			]
 			id: "653AD979AE4D0581"
 			optional: true
 			tasks: [{
-				id: "0DB4C7875E78DF9D"
-				title: "Yes, I need help (CLICK ME)"
-				type: "checkmark"
+				id: "080109B2F5298E4A"
+				item: "gtceu:classic_stargate_display"
+				optional_task: true
+				type: "item"
 			}]
-			title: "Trouble Forming Gate?"
-			x: 3.5d
+			title: "Stargate Help"
+			x: 8.5d
 			y: -8.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "36C4A977AC2832FF"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "4DF3BED79C0ECE58"
-				item: "sgjourney:classic_stargate_base_block"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "1A9E02D50128F4AD"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "3992ED458D0F758D"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "30A538E9EBDD2205"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "7C2296CE2C8AA71F"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: -4.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "1297467DBA806D50"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "02EAFAE0EC36C8CA"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "3041F1837C4DA2E3"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "35FE714AEFA1C627"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "485894F4A9C420F1"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "4D7DB1A3AF94DD92"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "31E828DC7CE05631"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "7C2F7263AA62034E"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -10.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "7B4822B623583E48"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "03A2DF9A18AFDAFD"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "1AE90AE93401A62A"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "38874A40623B1F8F"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -4.5d
-			y: -10.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "6E775A20310010C2"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "52FAF8FCE3525C75"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -5.5d
-			y: -10.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "66AE1F38C954EDEE"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "112804589FD09C45"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -10.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "1B8F144D59973A6C"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "2E4175E2F59FDE44"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "6713F5C835972F25"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "01F9F3770CDAB90B"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "6766CDEE53EC220A"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "47FA1115AF75D31D"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "4CDCBD47FA5A5E76"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "2DFFB9893CA89ACB"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "1A8A9CFDE2F83509"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "03F88EAAE3214F3B"
-				item: "sgjourney:classic_stargate_ring_block"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "68430C48D21E615A"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "7840F8D7C1A33A3B"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "26F037DFC3D2B29D"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "4D8BA420488151B2"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -9.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "5B30840FFE93E1C5"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "3952DF09A77C8E39"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "432B18BF3105D336"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "3CBBE6DC2BF4F43F"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "277B1634E0CDF94E"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "22E3B4A20288A554"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "08A1359B9D71B96F"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "76346AF81A02EE75"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -9.5d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "47B4445919A32696"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "7FA723840F6F90BE"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["653AD979AE4D0581"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "7FD3A94A90552118"
-			optional: true
-			size: 1.0d
-			tasks: [{
-				id: "03AE32BE86CB22F1"
-				item: "sgjourney:classic_stargate_chevron_block"
-				type: "item"
-			}]
-			x: -5.5d
-			y: -7.5d
 		}
 		{
 			dependencies: ["1C515302A357B1B8"]
+			description: ["Gems of Netherite and Naquadah, an astronomical expense."]
 			id: "2D713622FA2D6FCA"
 			rewards: [{
 				id: "1C8DB8447086E212"
@@ -1444,11 +1141,12 @@
 				item: "gtceu:exquisite_naquadic_netherite_gem"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]
+			description: ["A colorfull multiblock used for precise laser cutting to make some incredibly exotic materials."]
 			id: "1C81273869C0EC9F"
 			rewards: [{
 				id: "32925D70150DF477"
@@ -1460,7 +1158,7 @@
 				item: "gtceu:vibration_laser_engraver"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 5.0d
 			y: 1.5d
 		}
 		{
@@ -1469,6 +1167,7 @@
 				"182D948925141764"
 				"5BDA17962F4630EB"
 			]
+			description: ["An alloy that haunts Beta players in their dreams. Depending on how serious you take your infrastructure, it might haunt you as well."]
 			hide_dependency_lines: true
 			id: "4DE40B37D609B921"
 			rewards: [{
@@ -1485,7 +1184,7 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
+			x: -4.0d
 			y: -3.5d
 		}
 		{
@@ -1494,6 +1193,7 @@
 				"3B69844600AD5430"
 				"783BDF78D6C56815"
 			]
+			description: ["Who decided to mix and match radioactive elements?"]
 			id: "4F6B1F4261874B65"
 			rewards: [{
 				id: "4CF383A332D3E16B"
@@ -1509,49 +1209,31 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
+			x: -4.0d
 			y: 5.75d
 		}
 		{
 			can_repeat: true
-			dependencies: ["481D42E3473FDCED"]
-			description: ["Waaaaaaaa"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
-			id: "6C39CD86546B3C64"
-			optional: true
-			rewards: [{
-				command: "/execute in minecraft:overworld run tp @s 0 -72 0"
-				elevate_perms: true
-				icon: {
-					Count: 1
-					id: "minecraft:grass_block"
-					tag: { }
-				}
-				id: "47BEEE08B9727341"
-				type: "command"
-			}]
-			tasks: [{
-				id: "39C471CAFC4E05DC"
-				title: "I wanna go home..."
-				type: "checkmark"
-			}]
-			x: -5.0d
-			y: -9.0d
-		}
-		{
 			dependencies: ["2EDE996312B1C69E"]
 			description: ["How did you break /spawn AND /home????????"]
 			icon: "minecraft:red_bed"
 			id: "481D42E3473FDCED"
 			optional: true
+			rewards: [{
+				command: "/execute in minecraft:overworld run tp @s 0 -72 0"
+				elevate_perms: true
+				icon: "minecraft:grass_block"
+				id: "21A225E597A188CD"
+				silent: true
+				title: "To the overworld"
+				type: "command"
+			}]
 			tasks: [{
 				id: "10FD7D062F28C45C"
 				title: "So You Got Stuck"
 				type: "checkmark"
 			}]
-			x: 3.0d
+			x: 8.0d
 			y: -10.0d
 		}
 		{
@@ -1576,7 +1258,7 @@
 				title: "Gimme My Gamestage"
 				type: "checkmark"
 			}]
-			x: -1.0d
+			x: 4.0d
 			y: -10.0d
 		}
 		{
@@ -1584,6 +1266,7 @@
 				"35829E28221CB70E"
 				"074A6D7A3072E11F"
 			]
+			description: ["A new Soldering Alloy, because the old one really doesn't cut it anymore."]
 			id: "783865A56909D3C7"
 			tasks: [{
 				id: "4639AA5380F2CC8F"
@@ -1594,11 +1277,12 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
+			x: -4.0d
 			y: 3.25d
 		}
 		{
 			dependencies: ["630F50E03EC3D144"]
+			description: ["Pure points of &o&lIMMENSE&r mass with which you can write runes that can perform near magic tasks."]
 			id: "1102670352911334"
 			rewards: [{
 				id: "256ED95E87DEA426"
@@ -1716,11 +1400,12 @@
 				}
 			]
 			title: "Singularities"
-			x: 2.0d
+			x: 7.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["52B553FDB34B1475"]
+			description: ["A machine with the ability to compress enormous amounts of raw elements into a single point."]
 			id: "630F50E03EC3D144"
 			rewards: [{
 				id: "3264040D4AF02053"
@@ -1732,8 +1417,49 @@
 				item: "gtceu:large_quantum_compressor"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 7.0d
 			y: 2.5d
+		}
+		{
+			id: "18A35D008CA73084"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "49EF150063D65456"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "1B20B3B25785E3AF"
+				title: "positioner"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2EDE996312B1C69E"]
+			description: [
+				"Right Click the bottom part of the stargate (works for any) with a mallet to reset it's power NBT data to fix the issue. Make sure to let it charge up for a bit before you go dialing."
+				""
+				"These dimension crackers &lEAT&r power when on so every 3-4 times you use them (may be more often) you'll have to do this."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "gtceu:textures/gui/overlay/charger_slot_overlay.png"
+				}
+			}
+			id: "5C7AE9D421E5F674"
+			tasks: [{
+				id: "205A758A70420DB8"
+				title: "\"&cNo Power&r\" ?"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -8.0d
 		}
 	]
 	title: "Making the Classic Stargate"

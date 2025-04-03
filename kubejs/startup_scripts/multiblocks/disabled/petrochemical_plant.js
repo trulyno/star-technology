@@ -47,6 +47,6 @@
 //             .where('H', Predicates.blocks('gtceu:heat_vent'))
 //             .where(' ', Predicates.any())
 //             .build())
-//         .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
-//             "gtceu:block/multiblock/implosion_compressor", false);
+//         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel',
+//             'gtceu:block/multiblock/implosion_compressor', false);
 // });

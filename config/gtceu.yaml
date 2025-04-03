@@ -18,11 +18,12 @@ recipes:
 
   # Whether to nerf Wood crafting to 2 Planks from 1 Log, and 2 Sticks from 2 Planks.
   # Default: false
-  nerfWoodCrafting: true
+  nerfWoodCrafting: false
 
   # Whether to make Wood related recipes harder.
   # Excludes sticks and planks.
   # Default: false
+  # Packmode Note: false in base true in HM, need packmode
   hardWoodRecipes: true
 
   # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
@@ -31,11 +32,13 @@ recipes:
 
   # Whether to make Redstone related recipes harder.
   # Default: false
+  # Packmode Note: false in base true in HM, need packmode
   hardRedstoneRecipes: true
 
   # Whether to make Vanilla Tools and Armor recipes harder.
   # Excludes Flint and Steel, and Buckets.
   # Default: false
+  # Packmode Note: false in base true in HM, need packmode
   hardToolArmorRecipes: true
 
   # Whether to make miscellaneous recipes harder.
@@ -47,6 +50,7 @@ recipes:
 
   # Whether to nerf the Paper crafting recipe.
   # Default: true
+  # Packmode Note: false in base true in HM, need packmode
   nerfPaperCrafting: true
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
@@ -87,6 +91,7 @@ recipes:
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: true
+  # Packmode Note: true in base false in HM, need packmode
   enchantedTools: false
 
 worldgen:
@@ -136,6 +141,10 @@ worldgen:
     # Make bedrock ore/fluid veins infinite?
     # Default: false
     infiniteBedrockOresFluids: false
+
+    # Generate ores indicators above ore veins
+    # Default: true
+    oreIndicators: true
 
     # Sets the maximum number of chunks that may be cached for ore vein generation.
     # Higher values may improve world generation performance, but at the cost of more RAM usage.
@@ -211,6 +220,7 @@ machines:
 
   # Whether to enable World Accelerators, which accelerate ticks for surrounding Tile Entities, Crops, etc.
   # Default: true
+  # General Note: set to false until all dynamo types are added to Blacklist, also need to packmode always false for HM
   enableWorldAccelerators: false
 
   # List of TileEntities that the World Accelerator should not accelerate.
@@ -218,7 +228,7 @@ machines:
   # Entries must be in a fully qualified format. For example: appeng.tile.networking.TileController
   # Default: none
   worldAcceleratorBlacklist:
-      - org.zeith.solarflux.block.SolarPanelTile
+    - org.zeith.solarflux.block.SolarPanelTile
 
   # Whether to use GT6-style pipe and cable connections, meaning they will not auto-connect unless placed directly onto another pipe or cable.
   # Default: true
@@ -227,13 +237,17 @@ machines:
   # Whether the machine's circuit slot need to be inserted a real circuit.
   ghostCircuit: true
 
-  # Wether to add a "Bedrock Ore Miner" (also enables bedrock ore generation)
+  # Whether to add a "Bedrock Ore Miner" (also enables bedrock ore generation)
   # Default: false
   doBedrockOres: false
 
   # What Kind of material should the bedrock ore miner output?
   # Default: "raw"
   bedrockOreDropTagPrefix: raw
+
+  # The base amount of ticks per block for electric singleblock ore miners
+  # Default: 320
+  minerSpeed: 320
 
   # Makes nearly every GCYM Multiblock require blocks which set their maximum voltages.
   # Default: false
@@ -273,6 +287,7 @@ machines:
   # Whether the Assembly Line should require the fluid inputs to be in order.
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
   # Default: false
+  # Packmode Note: false in base pack true in HM, packmode it
   orderedAssemblyLineFluids: true
 
   # Default maximum parallel of steam multiblocks
@@ -494,12 +509,12 @@ compat:
     # Forge Energy to GTEU ratio for converting FE to EU.
     # Only affects converters.
     # Default: 4 FE == 1 EU
-    feToEuRatio: 16
+    feToEuRatio: 4
 
     # GTEU to Forge Energy ratio for converting EU to FE.
     # Affects native conversion and Converters.
     # Default: 4 FE == 1 EU
-    euToFeRatio: 16
+    euToFeRatio: 4
 
   # Config options regarding GTCEu compatibility with AE2
   ae2:

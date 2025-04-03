@@ -74,9 +74,8 @@
 			shape: "rsquare"
 			tasks: [{
 				consume_items: true
-				count: 2L
 				id: "3E4DA3847BA74964"
-				item: { Count: 2, id: "kubejs:coin" }
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			title: "Wood"

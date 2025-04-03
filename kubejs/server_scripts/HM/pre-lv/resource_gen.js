@@ -273,19 +273,20 @@ ServerEvents.recipes(event => {
 		.itemOutputs('1x minecraft:dirt')
 		.duration(160);
 
-	const latexType = [{ fuel: 'minecraft:bone_meal', circ: '1' }, { fuel: 'thermal:compost', circ: '2' }, { fuel: 'gtceu:fertilizer', circ: '3' }]
-	latexType.forEach(latex => {
-		event.recipes.gtceu.latex_plantation(`latex_${latex.circ}`)
-			.chancedInput(`${latex.fuel}`, 2500, 0)
-			.notConsumable('gtceu:iron_screw')
-			.circuit(latex.circ)
-			.outputFluids(`thermal:latex ${100 + 50 * latex.circ}`)
-			.duration(160);
-	});
-	event.recipes.gtceu.latex_plantation(`latex`)
-		.notConsumable('gtceu:wood_screw')
-		.outputFluids(`thermal:latex 100`)
-		.duration(160);
+	// Listed in other regions
+	// const latexType = [{ fuel: 'minecraft:bone_meal', circ: '1' }, { fuel: 'thermal:compost', circ: '2' }, { fuel: 'gtceu:fertilizer', circ: '3' }]
+	// latexType.forEach(latex => {
+	// 	event.recipes.gtceu.latex_plantation(`latex_${latex.circ}`)
+	// 		.chancedInput(`${latex.fuel}`, 2500, 0)
+	// 		.notConsumable('gtceu:iron_screw')
+	// 		.circuit(latex.circ)
+	// 		.outputFluids(`thermal:latex ${100 + 50 * latex.circ}`)
+	// 		.duration(160);
+	// });
+	// event.recipes.gtceu.latex_plantation(`latex`)
+	// 	.notConsumable('gtceu:wood_screw')
+	// 	.outputFluids(`thermal:latex 100`)
+	// 	.duration(160);
 });
 
 // Jungle Wood Stripping (Bark + Resin)

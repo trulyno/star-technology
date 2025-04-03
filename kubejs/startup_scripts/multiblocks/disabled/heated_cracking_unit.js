@@ -31,6 +31,6 @@
 //             .where('T', Predicates.blocks('gtceu:cupronickel_coil_block'))
 //             .where('#', Predicates.any())
 //             .build())
-//         .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_solid_steel",
-//         "gtceu:block/multiblock/cracking_unit", false);
+//         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel',
+//         'gtceu:block/multiblock/cracking_unit', false);
 // });

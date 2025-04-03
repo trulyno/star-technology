@@ -2,6 +2,8 @@
 hard_recipes = true
 #If true, the ownership thief item will be disabled
 disable_ownership_thief = false
+#Whether or not webdisplays should thank the user for using the mod
+join_message = true
 
 #Options for the miniserver
 [mini_server]

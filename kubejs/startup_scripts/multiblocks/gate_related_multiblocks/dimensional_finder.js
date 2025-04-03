@@ -2,14 +2,17 @@
 //Premise being you actually need to find the next dimensions
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
     event.create('dimensional_finder')
         .category('dimensional_finder')
         .setEUIO('in')
         .setMaxIOSize(3, 1, 1, 0)
         .setSound(GTSoundEntries.ARC);
+
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+
     event.create('dimensional_finder', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS) //Need to add a cant be rotated at all later on
         .recipeType('dimensional_finder')
@@ -28,10 +31,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('VVHVVVVVHVV', 'VVHHHKHHHVV', '           ', '           ', '           ', 'SS       SS', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ')
             .where('V', Predicates.blocks('gtceu:heat_vent'))
             .where('H', Predicates.blocks('gtceu:high_temperature_smelting_casing')
-                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(2))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(3))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(3))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('T', Predicates.blocks('gtceu:trinaquadalloy_frame'))
             .where('S', Predicates.blocks('gtceu:sturdy_machine_casing'))
@@ -50,6 +53,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('B', Predicates.blocks('gtceu:superconducting_coil'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
-            "gtceu:block/machines/scanner", false);
+        .workableCasingRenderer('gtceu:block/casings/gcym/high_temperature_smelting_casing',
+            'gtceu:block/machines/scanner', false);
+            
 });

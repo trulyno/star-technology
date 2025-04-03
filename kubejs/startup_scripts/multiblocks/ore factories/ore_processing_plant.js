@@ -1,13 +1,16 @@
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
     event.create('plant_ore_processing')
         .category('ore_processing')
         .setEUIO('in')
         .setMaxIOSize(1, 6, 1, 0)
         .setSound(GTSoundEntries.BATH);
+
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+
     event.create('ore_processing_plant', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('plant_ore_processing')
@@ -20,7 +23,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('AFFFA', 'FG GF', 'F   F', ' F F ', ' FFF ', '  F  ', '  B  ')
             .aisle(' AAA ', ' FCF ', ' FFF ', '  F  ', '     ', '     ', '     ')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('F', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST.get())
+            .where('F', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST.get()).setMinGlobalLimited(50)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
@@ -31,6 +34,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('B', Predicates.blocks('gtceu:bronze_machine_casing'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_robust_tungstensteel",
-        "kubejs:block/multiblock/primitive_blast_furnace", false);
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
+        'kubejs:block/multiblock/primitive_blast_furnace', false);
+        
 });
