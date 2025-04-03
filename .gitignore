@@ -35,6 +35,4 @@ config/mysticalagriculture-common.toml
 config/sgjourney-common.toml
 config/defaultworldtype/client-config.toml
 config/skyblockbuilder/data/dimensions.txt
-config/megacells.json
-config/hammerlib*
-config/laserio*
+config/nuclearcraft/*

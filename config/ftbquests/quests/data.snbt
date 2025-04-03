@@ -6,6 +6,7 @@
 	default_reward_team: false
 	detection_delay: 20
 	disable_gui: false
+	drop_book_on_death: false
 	drop_loot_crates: false
 	emergency_items: [{ Count: 1, id: "minecraft:dead_bush" }]
 	emergency_items_cooldown: 150
@@ -22,7 +23,3 @@
 	title: "Star Technology"
 	version: 13
 }
-
-Base Pack (need packmode as this should be priority)
-	emergency_items: [{ Count: 1, id: "minecraft:oak_sapling" }]
-	emergency_items_cooldown: 60

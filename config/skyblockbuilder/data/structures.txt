@@ -34,6 +34,7 @@ minecraft:village_snowy
 minecraft:village_taiga
 sgjourney:cartouche/abydos_cartouche
 sgjourney:cartouche/chulak_cartouche_monument
+sgjourney:cartouche/red_sandstone_cartouche_monument
 sgjourney:cartouche/sandstone_cartouche_monument
 sgjourney:cartouche/stone_cartouche_monument
 sgjourney:city/abydos_city
@@ -44,6 +45,7 @@ sgjourney:goauld_temple/jungle_pyramid/jungle_pyramid
 sgjourney:jaffa_house
 sgjourney:stargate/classic/pedestal/stargate_pedestal
 sgjourney:stargate/milky_way/buried/buried_stargate
+sgjourney:stargate/milky_way/buried/buried_stargate_badlands
 sgjourney:stargate/milky_way/buried/buried_stargate_desert
 sgjourney:stargate/milky_way/pedestal/stargate_pedestal
 sgjourney:stargate/milky_way/pedestal/stargate_pedestal_badlands
@@ -54,10 +56,12 @@ sgjourney:stargate/milky_way/pedestal/stargate_pedestal_desert
 sgjourney:stargate/milky_way/pedestal/stargate_pedestal_glacio
 sgjourney:stargate/milky_way/pedestal/stargate_pedestal_jungle
 sgjourney:stargate/milky_way/pedestal/stargate_pedestal_mushroom
-sgjourney:stargate/milky_way/pedestal/stargate_pedestal_nether
+sgjourney:stargate/milky_way/pedestal/stargate_pedestal_rima
 sgjourney:stargate/milky_way/pedestal/stargate_pedestal_snow
+sgjourney:stargate/milky_way/pedestal/stargate_pedestal_unitas
 sgjourney:stargate/milky_way/temple/abydos_pyramid
 sgjourney:stargate/milky_way/temple/great_pyramid
+sgjourney:stargate/milky_way/temple/stargate_temple_nether
 sgjourney:stargate/milky_way/terra_stargate
 sgjourney:stargate/pegasus/outpost/lantean_outpost_ocean
 sgjourney:stargate/pegasus/pegasus_stargate
