@@ -23,7 +23,8 @@ recipes:
   # Whether to make Wood related recipes harder.
   # Excludes sticks and planks.
   # Default: false
-  hardWoodRecipes: true #false in base true in HM, need packmode
+  # Packmode Note: false in base true in HM, need packmode
+  hardWoodRecipes: true
 
   # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
   # Default: true
@@ -31,12 +32,14 @@ recipes:
 
   # Whether to make Redstone related recipes harder.
   # Default: false
-  hardRedstoneRecipes: true #false in base true in HM, need packmode
+  # Packmode Note: false in base true in HM, need packmode
+  hardRedstoneRecipes: true
 
   # Whether to make Vanilla Tools and Armor recipes harder.
   # Excludes Flint and Steel, and Buckets.
   # Default: false
-  hardToolArmorRecipes: true #false in base true in HM, need packmode
+  # Packmode Note: false in base true in HM, need packmode
+  hardToolArmorRecipes: true
 
   # Whether to make miscellaneous recipes harder.
   # Default: false
@@ -47,7 +50,8 @@ recipes:
 
   # Whether to nerf the Paper crafting recipe.
   # Default: true
-  nerfPaperCrafting: true #false in base true in HM, need packmode
+  # Packmode Note: false in base true in HM, need packmode
+  nerfPaperCrafting: true
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
   # Default: false
@@ -87,7 +91,8 @@ recipes:
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: true
-  enchantedTools: false #true in base false in HM, need packmode
+  # Packmode Note: true in base false in HM, need packmode
+  enchantedTools: false
 
 worldgen:
   # Rubber Tree spawn chance (decimal % per chunk)
@@ -215,7 +220,8 @@ machines:
 
   # Whether to enable World Accelerators, which accelerate ticks for surrounding Tile Entities, Crops, etc.
   # Default: true
-  enableWorldAccelerators: false #set to false until all dynamo types are added to Blacklist, also need to packmode always false for HM
+  # General Note: set to false until all dynamo types are added to Blacklist, also need to packmode always false for HM
+  enableWorldAccelerators: false
 
   # List of TileEntities that the World Accelerator should not accelerate.
   # GregTech TileEntities are always blocked.
@@ -281,7 +287,8 @@ machines:
   # Whether the Assembly Line should require the fluid inputs to be in order.
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
   # Default: false
-  orderedAssemblyLineFluids: true #false in base pack true in HM, packmode it
+  # Packmode Note: false in base pack true in HM, packmode it
+  orderedAssemblyLineFluids: true
 
   # Default maximum parallel of steam multiblocks
   # Default: 8
