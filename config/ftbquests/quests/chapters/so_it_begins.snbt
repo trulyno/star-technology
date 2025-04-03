@@ -6,24 +6,6 @@
 	hide_quest_until_deps_complete: true
 	icon: "minecraft:oak_log"
 	id: "66020A2C8D2EBB18"
-	images: [
-		{
-			height: 1.0d
-			image: "minecraft:block/water_flow"
-			rotation: 0.0d
-			width: 0.03125d
-			x: 3.5d
-			y: 12.0d
-		}
-		{
-			height: 1.0d
-			image: "minecraft:block/water_flow"
-			rotation: 0.0d
-			width: 0.03125d
-			x: 4.0d
-			y: 12.0d
-		}
-	]
 	order_index: 0
 	progression_mode: "linear"
 	quest_links: [ ]
@@ -1590,7 +1572,10 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["224916FFC857C099"]
+			dependencies: [
+				"224916FFC857C099"
+				"6F1BB9A99918F256"
+			]
 			id: "714CA5ED83124FE1"
 			tasks: [{
 				id: "00E741BFE38E92DB"
@@ -1614,7 +1599,7 @@
 				type: "checkmark"
 			}]
 			title: "Super Heated Burners"
-			x: 0.5d
+			x: -1.0d
 			y: 16.5d
 		}
 		{
@@ -1646,8 +1631,8 @@
 				}
 			]
 			title: "Cheaper Bronze/Brass"
-			x: 2.0d
-			y: 15.0d
+			x: -0.25d
+			y: 15.75d
 		}
 		{
 			dependencies: [
@@ -1824,6 +1809,7 @@
 				"59A805C314717BA0"
 				"26B8FCAD39A84649"
 			]
+			hide_dependent_lines: true
 			id: "63D792EF5D75290F"
 			tasks: [{
 				id: "1990722E39FEE28B"
@@ -1911,7 +1897,7 @@
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 6.5d
 			y: 10.5d
 		}
 		{
@@ -1956,14 +1942,13 @@
 		}
 		{
 			dependencies: ["714CA5ED83124FE1"]
-			hide_dependent_lines: true
 			id: "21563799A48F1915"
 			tasks: [{
 				id: "072E39D3BCC9DBB9"
 				item: "minecraft:gold_nugget"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 2.0d
 			y: 15.0d
 		}
 		{
@@ -2019,8 +2004,8 @@
 				item: "createlowheated:basic_burner"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 9.0d
+			x: -2.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["6994BA308DC55ED2"]
@@ -2108,6 +2093,7 @@
 			dependencies: [
 				"2A7C8C43D6D58B93"
 				"6F1BB9A99918F256"
+				"11E095E4B9E95663"
 			]
 			id: "3A3BD0ECA7FC8D38"
 			tasks: [{
@@ -2115,8 +2101,8 @@
 				item: "gtceu:wrought_iron_ingot"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 9.0d
+			x: 14.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["19EFB33C0B250C49"]
@@ -2126,8 +2112,8 @@
 				item: "kubejs:ulv_universal_circuit"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 7.5d
+			x: 14.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -2145,8 +2131,8 @@
 				title: "Pre-LV"
 				type: "checkmark"
 			}]
-			x: 18.5d
-			y: 9.0d
+			x: 20.0d
+			y: 6.0d
 		}
 		{
 			icon: "gtceu:basic_electronic_circuit"
@@ -2156,8 +2142,8 @@
 				item: "kubejs:lv_universal_circuit"
 				type: "item"
 			}]
-			x: 20.0d
-			y: 9.0d
+			x: 21.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -2170,8 +2156,8 @@
 				item: "gtceu:ulv_assembler"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 9.0d
+			x: 15.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["684FAA520167CC51"]
@@ -2248,8 +2234,8 @@
 				type: "item"
 			}]
 			title: "Tom's Storage"
-			x: 14.0d
-			y: 7.5d
+			x: 15.5d
+			y: 4.5d
 		}
 		{
 			id: "19EFB33C0B250C49"
@@ -2258,8 +2244,8 @@
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 7.5d
+			x: 12.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5DD3CFCC30CAF33A"]
@@ -2269,8 +2255,8 @@
 				item: "gtceu:primitive_blast_furnace"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 9.0d
+			x: 12.5d
+			y: 3.0d
 		}
 		{
 			id: "12CC4B7507E55BEC"
@@ -2280,8 +2266,8 @@
 				item: "gtceu:solid_blast_furnace"
 				type: "item"
 			}]
-			x: 20.0d
-			y: 7.5d
+			x: 21.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6974D4ADDEA9535F"]
@@ -2291,18 +2277,23 @@
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 9.0d
+			x: 18.5d
+			y: 6.0d
 		}
 		{
+			dependencies: [
+				"5F808C6A353FF66D"
+				"63D792EF5D75290F"
+				"6F1BB9A99918F256"
+			]
 			id: "410385DA7FBBD2FA"
 			tasks: [{
 				id: "16123229DB5403AC"
 				item: "dustrial_decor:cast_iron_billet"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 6.0d
+			x: 11.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3D9B291441B63F78"]
@@ -2314,8 +2305,8 @@
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 9.0d
+			x: 5.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -2328,25 +2319,26 @@
 				item: "gtceu:pig_iron_dust"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 7.5d
+			x: 5.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
 				"7AEEC6EBE84BF5AB"
 				"774543EADD91A140"
 			]
+			hide_dependent_lines: true
 			id: "6F1BB9A99918F256"
 			tasks: [{
 				id: "6A6D009819A19AA6"
 				item: "gtceu:pig_iron_ingot"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 7.5d
+			x: 6.5d
+			y: 9.0d
 		}
 		{
-			dependencies: ["3A3BD0ECA7FC8D38"]
+			dependencies: ["410385DA7FBBD2FA"]
 			id: "0091DD5DAE9FDF9C"
 			tasks: [{
 				id: "40ED24F4316C4EE2"
@@ -2368,8 +2360,8 @@
 				title: "Reinforced Blast Furnace"
 				type: "checkmark"
 			}]
-			x: 15.5d
-			y: 9.0d
+			x: 17.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["50F2743FA699173A"]
@@ -2403,7 +2395,7 @@
 			]
 			title: "Steam Machines"
 			x: 9.5d
-			y: 10.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["3A3BD0ECA7FC8D38"]
@@ -2414,8 +2406,8 @@
 				item: "gtceu:ulv_machine_hull"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 9.0d
+			x: 14.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0091DD5DAE9FDF9C"]
@@ -2433,7 +2425,7 @@
 				}
 			]
 			title: "High Pressure Steam"
-			x: 11.0d
+			x: 12.5d
 			y: 12.0d
 		}
 		{
@@ -2466,8 +2458,8 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: 10.5d
+			x: 11.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["301FF7F900A30DC7"]
@@ -2477,17 +2469,68 @@
 				item: "exnihilosequentia:iron_mesh"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 7.5d
+			x: 18.5d
+			y: 4.5d
 		}
 		{
+			dependencies: ["5F808C6A353FF66D"]
 			id: "08085ED3830FD51A"
 			tasks: [{
 				id: "6C86DEFF69FB0189"
 				title: "Cinder Blocks"
 				type: "checkmark"
 			}]
+			x: 12.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["410385DA7FBBD2FA"]
+			id: "4FB04EF25E12F5FA"
+			tasks: [{
+				id: "5BCFE19E51AA19BC"
+				item: "gtceu:steam_ore_factory"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Multiblock"
+				""
+				"Low Pressure Steam"
+				""
+				"Turns Liquid Metals to Ingots"
+				"Would require UI? Since no input hatches yet"
+			]
+			id: "5F808C6A353FF66D"
+			tasks: [{
+				id: "45F6ECD85A0952B0"
+				title: "Steam Molding Array"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 9.0d
+		}
+		{
+			id: "11E095E4B9E95663"
+			tasks: [{
+				id: "171DAEB874BC63C5"
+				title: "Crude Wrought Iron"
+				type: "checkmark"
+			}]
 			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0091DD5DAE9FDF9C"]
+			id: "43A9AA9BB750AEA2"
+			tasks: [{
+				id: "2FBE5DA7E0D6FEF5"
+				title: "Steam Forge Hammer"
+				type: "checkmark"
+			}]
+			x: 12.5d
 			y: 10.5d
 		}
 	]
