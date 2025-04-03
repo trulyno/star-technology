@@ -1467,7 +1467,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(10299, 'highest', VA('uv'), 2500)
         .cableProperties(V('uhv'), 4, 12, false);
 
-    event.create('star_steel')
+    //ae2
+    event.create('sky_steel')
         .ingot()
         .components('2x steel', '1x mystery')
         .color(0xCCFFCC)
@@ -1476,7 +1477,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     liquid('skystone', 0x414445, '1x mystery')
 
-    function test(material, color, icon){
+    function sky_alloys(material, color, icon){
         event.create(`${material}_skystone_alloy`)
             .dust()
             .components(`${material}`, 'skystone')
@@ -1486,15 +1487,15 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             .iconSet(icon);
     }
     
-    test('gold', 0xCFBE38, 'METALLIC');
-    test('diamond', 0x9BD6D8, 'SHINY');
-    test('certus_quartz', 0x67D6DB, 'DULL');
+    sky_alloys('gold', 0xCFBE38, 'METALLIC');
+    sky_alloys('diamond', 0x9BD6D8, 'SHINY');
+    sky_alloys('certus_quartz', 0x67D6DB, 'DULL');
 
-    event.create('fluix')
-        .dust()
-        .components('1x mystery')
+    event.create('fluix_steel')
+        .ingot()
+        .components('1x mystery', '2x steel')
         .color(0x8F5CCB)
-        .flags(no_decomp, plates, foil)
+        .flags(no_decomp, plates, foil, rod, frame)
         .iconSet(METALLIC);
 
     event.create('thorium_plut_duranide_241')

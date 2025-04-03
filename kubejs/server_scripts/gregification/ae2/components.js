@@ -1,6 +1,25 @@
 ServerEvents.recipes(event => {
 
-    //new
+    ['sky', 'fluix'].forEach(alloy => {
+        event.recipes.gtceu.alloy_smelter(`${alloy}_steel_ingot`)
+            .itemInputs(`ae2:${alloy}_dust`, '2x gtceu:steel_ingot')
+            .itemOutputs(`3x gtceu:${alloy}_steel_ingot`)
+            .duration(160)
+            .EUt(56);
+
+        event.recipes.gtceu.alloy_smelter(`${alloy}_steel_dust`)
+            .itemInputs(`ae2:${alloy}_dust`, '2x gtceu:steel_dust')
+            .itemOutputs(`3x gtceu:${alloy}_steel_ingot`)
+            .duration(160)
+            .EUt(56);
+
+        event.recipes.gtceu.mixer(`${alloy}_steel`)
+            .itemInputs(`ae2:${alloy}_dust`, '2x gtceu:steel_dust')
+            .itemOutputs(`3x gtceu:${alloy}_steel_dust`)
+            .duration(160)
+            .EUt(56);
+    });
+
     event.recipes.gtceu.extractor('skystone')
         .itemInputs('ae2:sky_dust')
         .outputFluids('gtceu:skystone 144')
@@ -49,7 +68,7 @@ ServerEvents.recipes(event => {
             .EUt(global.va['mv']);
 
         event.recipes.gtceu.forming_press(`${type.circuit}_press`)
-            .itemInputs('gtceu:double_star_steel_plate', `gtceu:${type.material}_dust`)
+            .itemInputs('gtceu:double_sky_steel_plate', `gtceu:${type.material}_dust`)
             .itemOutputs(`ae2:${type.circuit}_processor_press`)
             .duration(600)
             .EUt(65);
@@ -61,6 +80,18 @@ ServerEvents.recipes(event => {
             .itemOutputs(`ae2:printed_${type.circuit}_processor`)
             .duration(400)
             .EUt(global.va['mv']);
+    });
+
+    [
+        {type: 'formation', catalyst: 'ae2:certus_quartz_crystal'},
+        {type: 'annihilation', catalyst: 'minecraft:quartz'}
+    ].forEach(tier => {
+        event.remove({output: `ae2:${tier.type}_core`})
+        event.recipes.gtceu.me_core_assembler(`${tier.type}_core`)
+            .itemInputs('ae2:logic_processor', `${tier.catalyst}`, '6x gtceu:fluix_steel_foil')
+            .itemOutputs(`ae2:${tier.type}_core`)
+            .duration(400)
+            .EUt(128);
     });
 
 });

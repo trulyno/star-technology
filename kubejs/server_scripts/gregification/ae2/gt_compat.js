@@ -7,42 +7,31 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(16);
 
-    event.recipes.gtceu.wiremill('fluix_glass_cables')
-        .itemInputs('ae2:fluix_crystal')
-        .itemOutputs('4x ae2:fluix_glass_cable')
-        .duration(80)
-        .EUt(16);
-
     event.recipes.gtceu.macerator('fluix_dust')
         .itemInputs('ae2:fluix_crystal')
-        .itemOutputs('gtceu:fluix_dust')
+        .itemOutputs('ae2:fluix_dust')
         .duration(88)
         .EUt(2);
 
-    event.replaceInput({input: 'ae2:fluix_dust'},
-        'ae2:fluix_dust',
-        'gtceu:fluix_dust'
+    event.replaceInput({id: 'create:mixing/compat/ae2/fluix_crystal'},
+        'ae2:certus_quartz_crystal',
+        'ae2:charged_certus_quartz_crystal'
     );
 
-    event.replaceInput({input: '#forge:dusts/certus_quartz'},
-        '#forge:dusts/certus_quartz',
-        'gtceu:certus_quartz_dust'
-    );
+    [
+        {filter: '#forge:dusts/certus_quartz', replacement: 'gtceu:certus_quartz_dust'},
+        {filter: '#forge:gems/certus_quartz', replacement: 'ae2:certus_quartz_crystal'}
+    ].forEach(type => {
+        event.replaceInput({input: type.filter},
+            type.filter,
+            type.replacement
+        );
 
-    event.replaceOutput({output: '#forge:dusts/certus_quartz'},
-        '#forge:dusts/certus_quartz',
-        'gtceu:certus_quartz_dust'
-    );
-
-    event.replaceInput({input: '#forge:gems/certus_quartz'},
-        '#forge:gems/certus_quartz',
-        'ae2:certus_quartz_crystal'
-    );
-
-    event.replaceOutput({output: '#forge:gems/certus_quartz'},
-        '#forge:gems/certus_quartz',
-        'ae2:certus_quartz_crystal'
-    );
+        event.replaceOutput({output: type.filter},
+            type.filter,
+            type.replacement
+        );
+    });
 
     event.recipes.gtceu.polarizer('charged_certus')
         .itemInputs('ae2:certus_quartz_crystal')

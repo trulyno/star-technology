@@ -49,21 +49,6 @@ ServerEvents.recipes(event => {
     );
 
     //machines
-    event.shaped(Item.of('ae2:controller'), [
-        'HFH',
-        'FCF',
-        'HFH'
-    ], {
-        C: 'gtceu:star_steel_frame',
-        F: 'ae2:fluix_crystal',
-        H: 'ae2:engineering_processor'
-    });
-
-    event.recipes.gtceu.alloy_smelter('star_steel')
-        .itemInputs('ae2:sky_dust', '2x gtceu:steel_ingot')
-        .itemOutputs('3x gtceu:star_steel_ingot')
-        .duration(160)
-        .EUt(56);
 
     event.shaped(Item.of('ae2:molecular_assembler'), [
             'HFH',
@@ -72,18 +57,7 @@ ServerEvents.recipes(event => {
         ], {
             C: 'minecraft:crafting_table',
             F: 'ae2:quartz_glass',
-            H: 'gtceu:star_steel_plate',
-            J: 'ae2:annihilation_core',
-            B: 'ae2:formation_core'
-        });
-
-    event.shaped(Item.of('ae2:pattern_provider'), [
-            'HFH',
-            'J B',
-            'HFH'
-        ], {
-            F: 'minecraft:crafting_table',
-            H: 'gtceu:star_steel_plate',
+            H: 'gtceu:sky_steel_plate',
             J: 'ae2:annihilation_core',
             B: 'ae2:formation_core'
         });
@@ -95,28 +69,7 @@ ServerEvents.recipes(event => {
         ], {
             C: '#forge:ingots/copper',
             F: 'ae2:quartz_glass',
-            H: 'gtceu:star_steel_plate',
-        });
-
-    event.shaped(Item.of('ae2:interface'), [
-            'HFH',
-            'J B',
-            'HFH'
-        ], {
-            F: '#forge:glass',
-            H: 'gtceu:star_steel_plate',
-            J: 'ae2:annihilation_core',
-            B: 'ae2:formation_core'
-        });
-
-    event.shaped(Item.of('ae2:drive'), [
-            'HFH',
-            'B B',
-            'HFH'
-        ], {
-            F: 'ae2:engineering_processor',
-            H: 'gtceu:star_steel_plate',
-            B: 'ae2:fluix_glass_cable'
+            H: 'gtceu:sky_steel_plate',
         });
 
     event.shaped(Item.of('ae2:condenser'), [
@@ -126,7 +79,7 @@ ServerEvents.recipes(event => {
         ], {
             C: 'ae2:fluix_dust',
             F: '#forge:glass',
-            H: 'gtceu:star_steel_plate',
+            H: 'gtceu:sky_steel_plate',
         });
 
     event.shaped(Item.of('ae2:cell_workbench'), [
@@ -136,7 +89,7 @@ ServerEvents.recipes(event => {
         ], {
             A: '#minecraft:wool',
             B: 'ae2:calculation_processor',
-            C: 'gtceu:star_steel_plate',
+            C: 'gtceu:sky_steel_plate',
             E: '#forge:chests/wooden'
         });
 
@@ -148,7 +101,7 @@ ServerEvents.recipes(event => {
             A: '#forge:glass',
             B: 'ae2:fluix_glass_cable',
             C: 'ae2:io_port',
-            D: 'gtceu:star_steel_plate',
+            D: 'gtceu:sky_steel_plate',
             E: 'ae2:engineering_processor'
         });
 
@@ -160,7 +113,7 @@ ServerEvents.recipes(event => {
             A: '#forge:glass',
             B: 'ae2:drive',
             C: 'ae2:fluix_glass_cable',
-            D: 'gtceu:star_steel_plate',
+            D: 'gtceu:sky_steel_plate',
             E: 'ae2:engineering_processor'
         });
 
@@ -172,7 +125,7 @@ ServerEvents.recipes(event => {
             A: '#forge:glass',
             B: 'ae2:terminal',
             C: 'ae2:fluix_glass_cable',
-            D: 'gtceu:star_steel_plate',
+            D: 'gtceu:sky_steel_plate',
             E: '#forge:ingots/copper'
         });
 
