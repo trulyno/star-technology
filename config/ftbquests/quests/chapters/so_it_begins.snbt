@@ -1592,7 +1592,13 @@
 				""
 				"Note: It does 32x your fuel consumption"
 			]
-			icon: "mysticalagriculture:fire_essence"
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:block/soul_campfire_fire"
+				}
+			}
 			id: "65DA1BDA4D9A9B56"
 			tasks: [{
 				id: "6DF4BE5FE29D9ED7"
@@ -2206,7 +2212,11 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["5DD3CFCC30CAF33A"]
+			dependencies: [
+				"5DD3CFCC30CAF33A"
+				"684FAA520167CC51"
+			]
+			hide_dependency_lines: true
 			id: "2A7C8C43D6D58B93"
 			tasks: [{
 				id: "5E9ECA9852DFB036"
@@ -2220,6 +2230,7 @@
 			dependencies: [
 				"301FF7F900A30DC7"
 				"53BA24466D74ADE2"
+				"0A8FE243A5A8CC64"
 			]
 			id: "12CC4B7507E55BEC"
 			shape: "rsquare"
@@ -2229,7 +2240,7 @@
 				type: "item"
 			}]
 			x: 14.0d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6974D4ADDEA9535F"]
@@ -2240,7 +2251,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -2301,15 +2312,18 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["410385DA7FBBD2FA"]
+			dependencies: [
+				"410385DA7FBBD2FA"
+				"5DD3CFCC30CAF33A"
+			]
 			id: "0091DD5DAE9FDF9C"
 			tasks: [{
 				id: "40ED24F4316C4EE2"
 				item: "gtceu:steel_brick_casing"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 10.5d
+			x: 12.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -2391,7 +2405,7 @@
 				}
 			]
 			title: "High Pressure Steam"
-			x: 12.5d
+			x: 14.0d
 			y: 12.0d
 		}
 		{
@@ -2438,7 +2452,7 @@
 				item: "exnihilosequentia:iron_mesh"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 12.5d
 			y: 7.5d
 		}
 		{
@@ -2452,6 +2466,7 @@
 				item: "gtceu:light_concrete"
 				type: "item"
 			}]
+			title: "Cinder Block"
 			x: 9.5d
 			y: 7.5d
 		}
@@ -2496,6 +2511,7 @@
 			]
 			hide_dependent_lines: true
 			id: "43A9AA9BB750AEA2"
+			shape: "rsquare"
 			tasks: [{
 				id: "2FBE5DA7E0D6FEF5"
 				title: "High Pressure Steam Hammer"
@@ -2560,12 +2576,13 @@
 				"410385DA7FBBD2FA"
 			]
 			id: "5E9E0530BD21EA3B"
+			shape: "rsquare"
 			tasks: [{
 				id: "2A6A8DEA6F9226F1"
 				title: "High Pressured Fluid Heater"
 				type: "checkmark"
 			}]
-			x: 12.5d
+			x: 11.0d
 			y: 10.5d
 		}
 		{
@@ -2671,8 +2688,8 @@
 			]
 			id: "69EEE1EA928D3A75"
 			tasks: [{
-				id: "70B39FDE265A98F7"
-				item: "minecraft:redstone"
+				id: "59F8B364F0E5B35A"
+				item: "minecraft:quartz"
 				type: "item"
 			}]
 			x: 12.5d
@@ -2684,19 +2701,11 @@
 				"7FD94FACD142A18F"
 			]
 			id: "625E52F19FD14376"
-			tasks: [
-				{
-					id: "3192C439D582A878"
-					item: "minecraft:quartz"
-					type: "item"
-				}
-				{
-					id: "587DBA32B3D62848"
-					item: "minecraft:ender_pearl"
-					type: "item"
-				}
-			]
-			title: "Nether Quartz/Ender Pearl"
+			tasks: [{
+				id: "587DBA32B3D62848"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
 			x: 15.5d
 			y: 16.5d
 		}
@@ -2947,6 +2956,7 @@
 				"410385DA7FBBD2FA"
 			]
 			id: "4619505A5DF24551"
+			shape: "rsquare"
 			tasks: [{
 				id: "285D4E8AB9799031"
 				title: "Steam Kiln"
@@ -3105,7 +3115,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [

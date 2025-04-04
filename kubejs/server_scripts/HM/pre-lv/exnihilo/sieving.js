@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
 	const cCalc = 'exnihilosequentia:crushed_calcite';
 	const mud = 'minecraft:mud';
 
-	function sieve(mesh, chance, input, result, wlog) {
+	const sieve = (mesh, chance, input, result, wlog) => {
 		event.custom({
 			'type': `exnihilosequentia:sifting`,
 			'input': input,
