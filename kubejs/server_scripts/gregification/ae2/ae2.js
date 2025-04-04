@@ -50,18 +50,6 @@ ServerEvents.recipes(event => {
 
     //machines
 
-    event.shaped(Item.of('ae2:molecular_assembler'), [
-            'HFH',
-            'JCB',
-            'HFH'
-        ], {
-            C: 'minecraft:crafting_table',
-            F: 'ae2:quartz_glass',
-            H: 'gtceu:sky_steel_plate',
-            J: 'ae2:annihilation_core',
-            B: 'ae2:formation_core'
-        });
-
     event.shaped(Item.of('ae2:energy_acceptor'), [
             'HFH',
             'FCF',
