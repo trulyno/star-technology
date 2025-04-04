@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     const toRemoveOutput = [
         'ae2:inscriber', 'ae2:vibration_chamber', 'ae2:silicon', 'ae2:charger', 'ae2:chest', 'expatternprovider:ex_inscriber', 'expatternprovider:ex_charger',
         'expatternprovider:crystal_fixer', 'expatternprovider:canner', 'ae2:crystal_resonance_generator', 'ae2:vibration_chamber', 'expatternprovider:circuit_cutter',
-        /megacells:sky_steel.*/
+        /megacells:sky_steel.*/, 'ae2:quantum_link'
     ];
     const toRemoveId = [
         'ae2:transform/damaged_budding_quartz', 'ae2:transform/chipped_budding_quartz',

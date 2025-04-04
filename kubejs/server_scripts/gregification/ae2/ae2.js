@@ -1,8 +1,5 @@
 ServerEvents.recipes(event => {
 
-    //old
-    //gregify recipes
-    //cells
     event.replaceInput({output: 'ae2:cell_component_4k'}, 
         'ae2:calculation_processor',
         '#gtceu:circuits/lv'
@@ -47,75 +44,6 @@ ServerEvents.recipes(event => {
         'megacells:accumulation_processor',
         '#gtceu:circuits/uhv'
     );
-
-    //machines
-
-    event.shaped(Item.of('ae2:energy_acceptor'), [
-            'HFH',
-            'FCF',
-            'HFH'
-        ], {
-            C: '#forge:ingots/copper',
-            F: 'ae2:quartz_glass',
-            H: 'gtceu:sky_steel_plate',
-        });
-
-    event.shaped(Item.of('ae2:condenser'), [
-            'HFH',
-            'FCF',
-            'HFH'
-        ], {
-            C: 'ae2:fluix_dust',
-            F: '#forge:glass',
-            H: 'gtceu:sky_steel_plate',
-        });
-
-    event.shaped(Item.of('ae2:cell_workbench'), [
-            'ABA',
-            'CEC',
-            'CCC'
-        ], {
-            A: '#minecraft:wool',
-            B: 'ae2:calculation_processor',
-            C: 'gtceu:sky_steel_plate',
-            E: '#forge:chests/wooden'
-        });
-
-    event.shaped(Item.of('ae2:spatial_io_port'), [
-            'AAA',
-            'BCB',
-            'DED'
-        ], {
-            A: '#forge:glass',
-            B: 'ae2:fluix_glass_cable',
-            C: 'ae2:io_port',
-            D: 'gtceu:sky_steel_plate',
-            E: 'ae2:engineering_processor'
-        });
-
-    event.shaped(Item.of('ae2:io_port'), [
-            'AAA',
-            'BCB',
-            'DED'
-        ], {
-            A: '#forge:glass',
-            B: 'ae2:drive',
-            C: 'ae2:fluix_glass_cable',
-            D: 'gtceu:sky_steel_plate',
-            E: 'ae2:engineering_processor'
-        });
-
-    event.shaped(Item.of('ae2:chest'), [
-            'ABA',
-            'C C',
-            'DED'
-        ], {
-            A: '#forge:glass',
-            B: 'ae2:terminal',
-            C: 'ae2:fluix_glass_cable',
-            D: 'gtceu:sky_steel_plate',
-            E: '#forge:ingots/copper'
-        });
 
     //MEGA cells
     event.replaceInput({input: 'megacells:accumulation_processor'}, 
