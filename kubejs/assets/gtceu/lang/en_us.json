@@ -627,6 +627,6 @@
     "material.gtceu.pig_iron": "Pig Iron",
     "material.gtceu.coke_clay": "Coke Clay",
     "material.gtceu.flisnt": "Flint",
-    "block.gtceu.latex_plantation": "Latex Plantation Controller",
-    "gtceu.latex_plantation": "Latex Plantation"
+    "block.gtceu.reinforced_blast_furnace": "Reinforced Blast Furnace Controller",
+    "gtceu.reinforced_blast_furnace": "Reinforced Blast Furnace"
 }

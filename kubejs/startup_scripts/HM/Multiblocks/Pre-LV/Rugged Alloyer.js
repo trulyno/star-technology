@@ -12,14 +12,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('rugged_alloyer')
 		.pattern(definition => FactoryBlockPattern.start()
-			.aisle("AAA", "AAA", "AAA", "AAA")
-			.aisle("AAA", "A#A", "A#A", "A#A")
-			.aisle("AAA", "ABA", "AAA", "AAA")
-			.where("A", Predicates.blocks("kubejs:reinforced_stone_bricks"))
-			.where("#", Predicates.blocks("minecraft:air"))
-			.where("B", Predicates.controller(Predicates.blocks(definition.get())))
+			.aisle('AAA', 'AAA', 'AAA', 'AAA')
+			.aisle('AAA', 'A#A', 'A#A', 'A#A')
+			.aisle('AAA', 'ABA', 'AAA', 'AAA')
+			.where('A', Predicates.blocks('kubejs:reinforced_stone_bricks'))
+			.where('#', Predicates.blocks('minecraft:air'))
+			.where('B', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingRenderer("kubejs:block/hm/reinforced_stone_bricks", "gtceu:block/machines/electric_furnace", false)
+		.workableCasingRenderer('kubejs:block/hm/reinforced_stone_bricks', 'gtceu:block/machines/electric_furnace', false)
 		.editableUI(
 			global.ui_builder({
 				group: 'primitive',
@@ -41,5 +41,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 					{ type: 'item', index: 1, pos: [130, 16], texture: GuiTextures.SLOT }
 				],
 			})
-		)
+		);
 });

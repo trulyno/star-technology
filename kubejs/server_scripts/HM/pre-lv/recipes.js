@@ -612,7 +612,6 @@ ServerEvents.recipes(event => {
 	const small_springs = ['iron', 'copper', 'gold', 'lead', 'tin'];
 	const wires = ['iron', 'copper', 'gold', 'lead', 'tin'];
 	const fine_wires = ['copper', 'gold', 'lead', 'tin', 'zinc'];
-	const cables = ['lead', 'red_alloy', 'tin'];
 	const fluid_pipes = ['copper', 'steel', 'lead', 'bronze', 'tin_alloy', 'potin'];
 	const item_pipes = ['tin', 'brass', 'cupronickel', 'nickel'];
 
@@ -728,20 +727,6 @@ ServerEvents.recipes(event => {
 			'cut',
 		], 2
 	));
-
-	cables.forEach(metal => {
-		['single', 'double', 'quadruple'].forEach((size, i) => {
-			seq_assembly(
-				`gtceu:${metal}_${size}_cable`,
-				`gtceu:${metal}_${size}_wire`,
-				'kubejs:incomplete_cable',
-				[
-					['fill', Fluid.of('gtceu:rubber', 72)],
-					'press'
-				], 2 ** (i + 1)
-			);
-		});
-	});
 
 	item_pipes.forEach(metal => {
 		['small', 'normal', 'large', 'huge'].forEach((size, i) => {

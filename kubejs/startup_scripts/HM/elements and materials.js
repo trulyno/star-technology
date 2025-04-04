@@ -4,10 +4,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 	event.create('pig_iron')
 		.ingot(1)
 		.dust()
-		.components('iron')
+		.components('1x iron')
 		.color(0x8E8385)
 		.iconSet(DULL)
-		.flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, bolt_and_screw, no_decomp);
+		.flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, bolt_and_screw, no_decomp, no_smelt);
 
 	event.create('flisnt')
 		.color(0x888B8C)
@@ -27,6 +27,21 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 		.color(0xD7D2AA)
 		.secondaryColor(0xA09C78);
 
+	event.create('crude_cast_iron')
+		.ingot()
+		.components('1x pig_iron')
+		.color(0x3D413F)
+		.iconSet(DULL)
+		.flags(no_decomp, no_smelt);
+
+	event.create('cast_iron')
+        .ingot(1)
+		.liquid(new GTFluidBuilder().temperature(1450))
+        .components('18x crude_cast_iron', '1x bismuth', '2x copper', '3x nickel')
+        .color(0x696E6C)
+        .iconSet(METALLIC)
+        .flags(no_abs_recipe, not_alloy, foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, bolt_and_screw, no_decomp, no_smelt);
+
 	GTMaterials.Iron.addFlags(foil);
 	GTMaterials.Brass.addFlags(ring, foil);
 	GTMaterials.TinAlloy.addFlags(ring, foil);
@@ -34,4 +49,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 	GTMaterials.Potin.addFlags(ring);
 	GTMaterials.Cupronickel.addFlags(ring);
 	GTMaterials.Nickel.addFlags(ring);
+	GTMaterials.WroughtIron.addFlags(frame);
+
 });
