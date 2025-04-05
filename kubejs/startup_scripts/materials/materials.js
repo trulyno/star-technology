@@ -228,6 +228,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.SterlingSilver.addFlags(rod, frame);
     GTMaterials.NetherStar.addFlags(foil);
     GTMaterials.Netherite.addFlags(no_decomp);
+    GTMaterials.VanadiumGallium.addFlags(fine_wire);
 
     // Blast Properties of periodic table metals
     const blast = global.blastProperty;
@@ -1467,37 +1468,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(10299, 'highest', VA('uv'), 2500)
         .cableProperties(V('uhv'), 4, 12, false);
 
-    //ae2
-    event.create('sky_steel')
-        .ingot()
-        .components('2x steel', '1x mystery')
-        .color(0xCCFFCC)
-        .flags(no_decomp, plates, rod, frame)
-        .iconSet(METALLIC);
-
-    liquid('skystone', 0x414445, '1x mystery')
-
-    function sky_alloys(material, color, icon){
-        event.create(`${material}_skystone_alloy`)
-            .dust()
-            .components(`${material}`, 'skystone')
-            .color(color)
-            .secondaryColor(0x414445)
-            .flags(no_decomp, plates)
-            .iconSet(icon);
-    }
-    
-    sky_alloys('gold', 0xCFBE38, 'METALLIC');
-    sky_alloys('diamond', 0x9BD6D8, 'SHINY');
-    sky_alloys('certus_quartz', 0x67D6DB, 'DULL');
-
-    event.create('fluix_steel')
-        .ingot()
-        .components('1x mystery', '2x steel')
-        .color(0x8F5CCB)
-        .flags(no_decomp, plates, foil, rod, frame)
-        .iconSet(METALLIC);
-
     event.create('thorium_plut_duranide_241')
         .ingot()
         .fluid()
@@ -1506,8 +1476,59 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(fine_wire, no_decomp, foil)
         .blastTemp(10199, 'highest', VA('uv'), 850)
 
-    // PEEK plastic Line
+    //ae2
+    event.create('skystone')
+        .liquid()
+        .color(0x414445)
+        .element(GTElements.get('skystone'))
 
+    event.create('fluix')
+        .element(GTElements.get('fluix'))
+
+    event.create('sky_steel')
+        .ingot()
+        .fluid()
+        .color(0xCCFFCC)
+        .components('1x skystone', '2x steel')
+        .flags(no_decomp, plates, rod, frame)
+        .iconSet(METALLIC);
+    
+    function skystone_alloys(material, color, icon){
+        event.create(`${material}_skystone_alloy`)
+            .dust()
+            .components('skystone', `${material}`)
+            .color(color)
+            .secondaryColor(0x414445)
+            .flags(no_decomp, plates)
+            .iconSet(icon);
+    }
+    
+    skystone_alloys('gold', 0xCFBE38, 'METALLIC');
+    skystone_alloys('diamond', 0x9BD6D8, 'SHINY');
+    skystone_alloys('certus_quartz', 0x67D6DB, 'DULL');
+
+    event.create('fluix_steel')
+        .ingot()
+        .components('1x fluix', '2x steel')
+        .color(0x8F5CCB)
+        .flags(no_decomp, plates, foil, rod, frame)
+        .iconSet(METALLIC);
+
+    function netherite_skystone_alloys(material, color, icon){
+        event.create(`netherite_${material}_skystone_alloy`)
+            .dust()
+            .components('4x pure_netherite', '2x diamond_skystone_alloy', `${material}_skystone_alloy`)
+            .color(color)
+            .secondaryColor(0x0D0702)
+            .flags(no_decomp, plates, rod, frame)
+            .blastTemp(4000, 'high', VA('iv'), 800)
+            .iconSet(icon);
+    }
+    
+    netherite_skystone_alloys('gold', 0x978B2D, 'METALLIC');
+    netherite_skystone_alloys('certus_quartz', 0x396A6C, 'DULL');
+
+    // PEEK plastic Line
     event.create('disodium_salt_of_hydroquinone')
         .dust()
         .components('6x carbon','4x hydrogen','2x oxygen','2x sodium')

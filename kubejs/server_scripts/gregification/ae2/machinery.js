@@ -79,26 +79,6 @@ ServerEvents.recipes(event => {
     matrix('pattern', 'expatternprovider:ex_pattern_provider', 'ae2:engineering_processor', '#gtceu:circuits/iv');
     matrix('crafter', 'expatternprovider:ex_molecular_assembler', 'ae2:logic_processor', 'gtceu:iv_robot_arm');
 
-    ['1', '4', '16', '64', '256'].forEach(tier => {
-        event.remove({output: `ae2:${tier}k_crafting_storage`})
-        event.recipes.gtceu.canner(`${tier}_crafting_storage`)
-            .itemInputs('ae2:crafting_unit', `ae2:cell_component_${tier}k`)
-            .itemOutputs(`ae2:${tier}k_crafting_storage`)
-            .duration(200)
-            .EUt(128);
-    });
-
-    const canner = (output, catalyst) => {
-        event.remove({output: `ae2:crafting_${output}`})
-        event.recipes.gtceu.canner(`crafting_${output}`)
-            .itemInputs('ae2:crafting_unit', `ae2:${catalyst}`)
-            .itemOutputs(`ae2:crafting_${output}`)
-            .duration(200)
-            .EUt(128);
-    }
-    canner('accelerator', 'engineering_processor');
-    canner('monitor', 'storage_monitor');
-
     ['import_bus', 'export_bus', 'import_hatch', 'export_hatch'].forEach(type => {
         event.remove({id: `gtceu:assembler/me_${type}`})
     });
@@ -142,5 +122,33 @@ ServerEvents.recipes(event => {
 
     assembler_rem('wireless_connector', 'expatternprovider:wireless_connect', ['gtceu:steel_frame', '2x gtceu:hv_emitter', '#gtceu:circuits/ev', '6x gtceu:fluix_steel_foil', '6x gtceu:neodymium_plate'], 512);
     assembler_rem('p2p_tunnel', 'ae2:me_p2p_tunnel', ['gtceu:double_black_steel_plate', '2x gtceu:hv_emitter', '#gtceu:circuits/ev', '6x gtceu:fluix_steel_foil', '6x gtceu:certus_quartz_plate'], 512);
+
+    ['lv', 'mv', 'hv', 'ev', 'iv', 'luv'].forEach(voltage => {
+        event.shaped(`gtceu:${voltage}_me_core_assembler`, [
+            'ABC',
+            'DED',
+            'CCF'],{
+            A: `gtceu:${voltage}_emitter`,
+            B: `gtceu:${voltage}_conveyor_module`,
+            C: `#gtceu:circuits/${voltage}`,
+            D: `gtceu:${voltage}_robot_arm`,
+            E: `gtceu:${voltage}_machine_hull`,
+            F: `gtceu:${voltage}_electric_motor`
+        });
+        
+        event.shaped(`gtceu:${voltage}_me_circuit_assembler`, [
+            'ABC',
+            'DEC',
+            'AAF'],{
+            A: `#gtceu:circuits/${voltage}`,
+            B: `gtceu:${voltage}_sensor`,
+            C: `gtceu:${voltage}_robot_arm`,
+            D: `gtceu:${voltage}_emitter`,
+            E: `gtceu:${voltage}_machine_hull`,
+            F: `gtceu:${voltage}_conveyor_module`
+        });
+    });
+
+    assembler_rem('mega_crafting_unit', 'megacells:mega_crafting_unit', ['gtceu:netherite_certus_quartz_skystone_alloy_frame', '8x ae2:crafting_unit', '6x gtceu:ruthenium_plate'], 8192);
 
 });

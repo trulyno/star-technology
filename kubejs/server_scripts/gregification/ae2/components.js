@@ -20,6 +20,14 @@ ServerEvents.recipes(event => {
             .EUt(56);
     });
 
+    ['gold', 'certus_quartz'].forEach(mat => {
+        event.recipes.gtceu.mixer(`netherite_${mat}_skystone_alloy`)
+            .itemInputs('4x gtceu:pure_netherite_dust', '2x gtceu:diamond_skystone_alloy_dust', `gtceu:${mat}_skystone_alloy_dust`)
+            .itemOutputs(`3x gtceu:netherite_${mat}_skystone_alloy_dust`)
+            .duration(160)
+            .EUt(2048);
+    });
+
     event.recipes.gtceu.extractor('skystone')
         .itemInputs('ae2:sky_dust')
         .outputFluids('gtceu:skystone 144')

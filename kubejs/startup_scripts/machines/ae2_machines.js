@@ -18,7 +18,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
-    event.create('ME_circuit_assembler', 'simple')
+    event.create('me_circuit_assembler', 'simple')
         .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV)
         .definition((tier, builder) => {
             builder
@@ -27,7 +27,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         }
     );
 
-    event.create('ME_core_assembler', 'simple')
+    event.create('me_core_assembler', 'simple')
         .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV)
         .definition((tier, builder) => {
             return builder
