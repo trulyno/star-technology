@@ -106,14 +106,13 @@ StartupEvents.registry('item', event => {
 		.texture(`kubejs:item/hm/pre-lv/crude_wrought_iron_ingot`);
 
 	['Ingot', 'Block', 'Ball', 'Raw'].forEach(Ceramic => {
+		event.create(`unfired_${Ceramic.toLowerCase()}_ceramic_casting_mold`)
+			.displayName(`Unfired ${Ceramic} Ceramic Casting Mold`)
+			.texture(`kubejs:item/hm/pre-lv/unfired_${Ceramic.toLowerCase()}_ceramic_casting_mold`);
 		if (Ceramic !== 'Raw')
 		event.create(`${Ceramic.toLowerCase()}_ceramic_casting_mold`)
 			.displayName(`${Ceramic} Ceramic Casting Mold`)
 			.texture(`kubejs:item/hm/pre-lv/${Ceramic.toLowerCase()}_ceramic_casting_mold`);
-		else
-		event.create(`unfired_${Ceramic.toLowerCase()}_ceramic_casting_mold`)
-			.displayName(`Unfired ${Ceramic} Ceramic Casting Mold`)
-			.texture(`kubejs:item/hm/pre-lv/unfired_${Ceramic.toLowerCase()}_ceramic_casting_mold`);
 	});
 
 });

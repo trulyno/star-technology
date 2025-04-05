@@ -1,3 +1,4 @@
+// packmode: hard
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 

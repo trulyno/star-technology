@@ -13,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('steam_ore_processing')
         .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
-        .appearanceBlock(GTBlocks.CASING_BRONZE_BRICKS)
+        // .appearanceBlock(GTBlocks.CASING_BRONZE_BRICKS) //Line Commented Out bcz no custom appearance block
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('#FFF#', '#FFF#', '#FFF#', '##F##', '#####', '#####', '#####')
             .aisle('FFFFF', 'FG#GF', 'F###F', '#F#F#', '#FFF#', '##F##', '##B##')
@@ -21,15 +21,15 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('FFFFF', 'FG#GF', 'F###F', '#F#F#', '#FFF#', '##F##', '##B##')
             .aisle('#FFF#', '#FCF#', '#FFF#', '##F##', '#####', '#####', '#####')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-        .where('F', Predicates.blocks(GTBlocks.CASING_BRONZE_BRICKS.get()).setMinGlobalLimited(50)
+        .where('F', Predicates.blocks('kubejs:high_steam_machine_casing').setMinGlobalLimited(50) //switched from gtceu:steam_machine_casing to kubejs:high_steam_machine_casing
             .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1).setMaxGlobalLimited(2))
             .or(Predicates.abilities(PartAbility.STEAM_IMPORT_ITEMS).setPreviewCount(1).setMaxGlobalLimited(2))
             .or(Predicates.abilities(PartAbility.STEAM).setExactLimit(1))
             .or(Predicates.abilities(PartAbility.STEAM_EXPORT_ITEMS).setPreviewCount(1).setMaxGlobalLimited(2)))
         .where('G', Predicates.blocks(GTBlocks.CASING_BRONZE_PIPE.get()))
-        .where('B', Predicates.blocks('gtceu:bronze_machine_casing'))
+        .where('B', Predicates.blocks('gtceu:steel_machine_casing')) //Swapped out to match high pressure
         .where('#', Predicates.any())
         .build())
-    .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_bronze_plated_bricks',
+    .workableCasingRenderer('kubejs:block/hm/high_steam_machine_casing', //swapout to match new brick
         'kubejs:block/multiblock/primitive_blast_furnace', false);
 }); 
