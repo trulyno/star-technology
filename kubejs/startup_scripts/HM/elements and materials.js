@@ -34,6 +34,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 		.iconSet(DULL)
 		.flags(no_decomp, no_smelt);
 
+	event.create('crude_wrought_iron')
+		.ingot()
+		.liquid(new GTFluidBuilder().temperature(1700))
+		.components('1x wrought_iron')
+		.color(0x7A6E69)
+		.iconSet(DULL)
+		.flags(no_decomp, no_smelt);
+
 	event.create('cast_iron')
         .ingot(1)
 		.liquid(new GTFluidBuilder().temperature(1450))

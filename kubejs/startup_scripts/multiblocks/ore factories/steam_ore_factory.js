@@ -12,6 +12,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .machine((holder) => new $SteamMulti(holder, 8))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('steam_ore_processing')
+        .appearanceBlock(() => Block.getBlock('kubejs:high_steam_machine_casing')) //Swap to bricked bronze for reg
         .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
         // .appearanceBlock(GTBlocks.CASING_BRONZE_BRICKS) //Line Commented Out bcz no custom appearance block
         .pattern(definition => FactoryBlockPattern.start()

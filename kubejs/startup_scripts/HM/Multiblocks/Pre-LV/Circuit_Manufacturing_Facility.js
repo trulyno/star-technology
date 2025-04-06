@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('circuit_assembly_facility', 'multiblock')
+    event.create('circuit_manufacturing_facility', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('circuit_facility')
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)

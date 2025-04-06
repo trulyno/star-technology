@@ -11,6 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 	event.create('rugged_alloyer', 'primitive')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('rugged_alloyer')
+		.appearanceBlock(() => Block.getBlock('kubejs:reinforced_stone_bricks'))
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle('AAA', 'AAA', 'AAA', 'AAA')
 			.aisle('AAA', 'A#A', 'A#A', 'A#A')

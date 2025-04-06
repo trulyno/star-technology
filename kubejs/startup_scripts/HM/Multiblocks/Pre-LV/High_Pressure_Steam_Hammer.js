@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 	event.create('high_pressure_steam_hammer', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('forge_hammer')
+        .appearanceBlock(() => Block.getBlock('kubejs:high_steam_machine_casing'))
         .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
 		.pattern(definition => FactoryBlockPattern.start()
             .aisle('AAA', 'AAA', 'AAA') 

@@ -14,6 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 	event.create('high_pressure_steam_sifter', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('primitive_sifter')
+        .appearanceBlock(() => Block.getBlock('kubejs:high_steam_machine_casing'))
         .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
 		.pattern(definition => FactoryBlockPattern.start()
             .aisle("ABBBA", "ACCCA", "ACCCA", "#AAA#") 

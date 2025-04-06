@@ -1777,7 +1777,7 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["4936CD72CB6A7C89"]
+			dependencies: ["21151CF254434CA3"]
 			hide_dependent_lines: true
 			id: "311B111EA277454D"
 			tasks: [{
@@ -1785,7 +1785,7 @@
 				item: "gtceu:rubber_plate"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.5d
 			y: 16.5d
 		}
 		{
@@ -2189,7 +2189,7 @@
 			}]
 			title: "Tom's Storage"
 			x: 12.5d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -2205,7 +2205,7 @@
 			}]
 			title: "Vacuum Array"
 			x: 12.5d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -2235,11 +2235,12 @@
 				item: "gtceu:solid_blast_furnace"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 9.0d
+			x: 15.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6974D4ADDEA9535F"]
+			hide_dependent_lines: true
 			id: "301FF7F900A30DC7"
 			shape: "gear"
 			size: 1.5d
@@ -2253,7 +2254,6 @@
 		}
 		{
 			dependencies: [
-				"70AF86B4A0D6A158"
 				"5F808C6A353FF66D"
 				"0C3E73B7FB53E836"
 			]
@@ -2368,8 +2368,8 @@
 				}
 			]
 			title: "Steam Machines"
-			x: 9.5d
-			y: 13.5d
+			x: 8.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -2455,12 +2455,12 @@
 		{
 			dependencies: [
 				"5F808C6A353FF66D"
-				"6D8C2361716CEFCF"
+				"3149BE5A8D986443"
 			]
 			id: "08085ED3830FD51A"
 			tasks: [{
-				id: "611E10780A2CEF70"
-				item: "gtceu:light_concrete"
+				id: "5478932200A4B3A0"
+				item: "dustrial_decor:cinder_block"
 				type: "item"
 			}]
 			title: "Cinder Block"
@@ -2507,7 +2507,7 @@
 				item: "gtceu:high_pressure_steam_hammer"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 14.0d
 			y: 10.5d
 		}
 		{
@@ -2519,7 +2519,7 @@
 				item: "gtceu:steam_grinder"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 11.0d
 			y: 10.5d
 		}
 		{
@@ -2531,8 +2531,8 @@
 				item: "gtceu:steam_oven"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 9.0d
+			x: 12.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["684FAA520167CC51"]
@@ -2729,8 +2729,8 @@
 			dependencies: ["5F808C6A353FF66D"]
 			id: "2B99C65945F68A8E"
 			tasks: [{
-				id: "08F764C8F1B94567"
-				item: "kubejs:crude_wrought_iron_ingot"
+				id: "0D269DA8460A2EC5"
+				item: "gtceu:crude_wrought_iron_ingot"
 				type: "item"
 			}]
 			x: 9.5d
@@ -2749,6 +2749,7 @@
 		}
 		{
 			dependencies: ["5F808C6A353FF66D"]
+			hide_dependent_lines: true
 			id: "291A793E984F63CC"
 			tasks: [{
 				id: "0BA5A0516B26ED4F"
@@ -2799,8 +2800,8 @@
 				item: "gtceu:ulv_circuit_assembler"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 3.0d
+			x: 15.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -2850,8 +2851,8 @@
 				item: "gtceu:large_farm"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 7.5d
+			x: 14.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -2865,7 +2866,7 @@
 				item: "gtceu:large_barrel"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 12.5d
 			y: 9.0d
 		}
 		{
@@ -2893,29 +2894,29 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
 				"034AF491BE41733E"
 				"19EFB33C0B250C49"
+				"301FF7F900A30DC7"
+				"0A8FE243A5A8CC64"
 			]
 			id: "0E113E08C05B0914"
 			tasks: [{
-				id: "5FA987258B442576"
-				item: "gtceu:circuit_assembly_facility"
+				id: "3B2609053CCD0541"
+				item: "gtceu:circuit_manufacturing_facility"
 				type: "item"
 			}]
 			x: 15.5d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"0E113E08C05B0914"
 				"19EFB33C0B250C49"
-				"5E2F9B8D25615E54"
 			]
-			hide_dependent_lines: true
 			id: "53BA24466D74ADE2"
 			shape: "gear"
 			size: 2.0d
@@ -2925,7 +2926,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1645E2B5BEFA80A3"]
@@ -2992,6 +2993,7 @@
 			dependencies: [
 				"3554A7293C94B319"
 				"3149BE5A8D986443"
+				"291A793E984F63CC"
 			]
 			id: "564F7A288EB2721A"
 			tasks: [{
@@ -3050,19 +3052,16 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"6BF9BA9DD881787D"
-				"4D8EFEA7036CD327"
-			]
+			dependencies: ["6BF9BA9DD881787D"]
 			hide_dependent_lines: true
 			id: "51B433A0377CCC0A"
 			tasks: [{
-				id: "5C941860363A74F0"
-				item: "gtceu:lv_emitter"
+				id: "6285EC47EDAEAF5A"
+				item: "kubejs:ulv_emitter"
 				type: "item"
 			}]
 			x: 14.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -3076,8 +3075,8 @@
 				item: "modularrouters:modular_router"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 10.5d
+			x: 15.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -3090,7 +3089,7 @@
 				item: "minecraft:prismarine_crystals"
 				type: "item"
 			}]
-			x: 15.5d
+			x: 12.5d
 			y: 3.0d
 		}
 		{
@@ -3128,7 +3127,7 @@
 				item: "gtceu:glass_tube"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 11.0d
 			y: -1.5d
 		}
 		{
@@ -3141,44 +3140,37 @@
 				title: "Machine Assembly"
 				type: "checkmark"
 			}]
-			x: 14.0d
-			y: 1.5d
+			x: 20.25d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6DE87A8D59525AF8"]
 			id: "74351938BA3F91DA"
-			tasks: [
-				{
-					id: "405B2B90923073CE"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:ulv_battery_buffer_4x"
-								}
-								{
-									Count: 1b
-									id: "gtceu:ulv_battery_buffer_8x"
-								}
-								{
-									Count: 1b
-									id: "gtceu:ulv_battery_buffer_16x"
-								}
-							]
-						}
+			tasks: [{
+				id: "405B2B90923073CE"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:ulv_battery_buffer_4x"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ulv_battery_buffer_8x"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ulv_battery_buffer_16x"
+							}
+						]
 					}
-					type: "item"
 				}
-				{
-					id: "5E2F9B8D25615E54"
-					item: "gtceu:tantalum_capacitor"
-					type: "item"
-				}
-			]
-			x: 9.5d
+				type: "item"
+			}]
+			x: 12.5d
 			y: 4.5d
 		}
 		{
@@ -3202,25 +3194,14 @@
 				item: "gtceu:ulv_advanced_composter"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 10.5d
-		}
-		{
-			dependencies: ["4D8EFEA7036CD327"]
-			hide_dependent_lines: true
-			id: "4355DFDE18AC8571"
-			tasks: [{
-				id: "21EE31902BA03F00"
-				item: "gtceu:ulv_energy_output_hatch"
-				type: "item"
-			}]
-			x: 12.5d
-			y: 4.5d
+			x: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
 				"6F1BB9A99918F256"
 				"2A7C8C43D6D58B93"
+				"70AF86B4A0D6A158"
 			]
 			id: "0C3E73B7FB53E836"
 			tasks: [{
@@ -3233,17 +3214,40 @@
 		}
 		{
 			dependencies: [
-				"0A8FE243A5A8CC64"
-				"4355DFDE18AC8571"
+				"6DE87A8D59525AF8"
+				"19EFB33C0B250C49"
+				"564F7A288EB2721A"
 			]
-			id: "2D9B1E58768A2E37"
+			id: "105C5A7E95B3E6D4"
 			tasks: [{
-				id: "643B7925E98E543D"
-				item: "gtceu:primitive_steam_turbine"
+				id: "6B3183CCF11947F9"
+				item: "gtceu:ulv_stirling_generator"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 6.0d
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4D8EFEA7036CD327"]
+			id: "79547F5987395AF4"
+			tasks: [{
+				id: "6221142530A352E0"
+				item: "gtceu:tantalum_capacitor"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4936CD72CB6A7C89"]
+			id: "21151CF254434CA3"
+			tasks: [{
+				id: "4318DAECED24A907"
+				item: "thermal:cured_rubber"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 16.5d
 		}
 	]
 	title: "So It Begins"

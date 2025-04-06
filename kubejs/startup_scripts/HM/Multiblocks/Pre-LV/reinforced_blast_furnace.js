@@ -11,24 +11,25 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
-    event.create('reinforced_blast_furnace', 'multiblock')
+    event.create('reinforced_blast_furnace', 'primitive')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('reinforced_blast_furnace')
+		.appearanceBlock(() => Block.getBlock('dustrial_decor:cinder_block'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('DDD', 'PPP', 'PPP', 'PPP')
             .aisle('DDD', 'P P', 'P P', 'P P')
             .aisle('DDD', 'PCP', 'PPP', 'PPP')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('P', Predicates.blocks('kubejs:cinder_block'))
-            .where('D', Predicates.blocks('kubejs:reinforced_stone_bricks'))
+            .where('P', Predicates.blocks('dustrial_decor:cinder_block'))
+            .where('D', Predicates.blocks('dustrial_decor:cinder_bricks'))
             .where(' ', Predicates.blocks('minecraft:air'))
             .build())
-        .workableCasingRenderer('kubejs:block/hm/cinder_block',
+        .workableCasingRenderer('dustrial_decor:block/cinder_block_side',
         'gtceu:block/multiblock/primitive_blast_furnace', false)
         .editableUI(
 			global.ui_builder({
 				group: 'primitive',
-				name: 'rugged_alloyer',
+				name: 'reinforced_blast_furnace',
 				size: [166, 50],
 				background: GuiTextures.BACKGROUND,
 				progress: {

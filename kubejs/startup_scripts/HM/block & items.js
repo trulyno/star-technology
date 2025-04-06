@@ -98,14 +98,10 @@ StartupEvents.registry('item', event => {
 		const id = `${ULVComp.toLowerCase().replace(' ','_')}`
 		event.create(`ulv_${id}`)
 			.displayName(`ULV ${ULVComp}`)
-			.texture(`kubejs:item/hm/pre-lv/${id}`);
+			.texture(`kubejs:item/hm/pre-lv/ulv_${id}`);
 	});
 
-	event.create('crude_wrought_iron_ingot')
-		.displayName('Crude Wrought Iron Ingot')
-		.texture(`kubejs:item/hm/pre-lv/crude_wrought_iron_ingot`);
-
-	['Ingot', 'Block', 'Ball', 'Raw'].forEach(Ceramic => {
+	['Ingot', 'Ball', 'Raw'].forEach(Ceramic => {
 		event.create(`unfired_${Ceramic.toLowerCase()}_ceramic_casting_mold`)
 			.displayName(`Unfired ${Ceramic} Ceramic Casting Mold`)
 			.texture(`kubejs:item/hm/pre-lv/unfired_${Ceramic.toLowerCase()}_ceramic_casting_mold`);
@@ -165,16 +161,6 @@ StartupEvents.registry('block', event => {
 			.tagBlock("minecraft:mineable/axe")
 			.tagBlock("minecraft:needs_stone_tool");
 	});
-
-	event.create('cinder_block')
-		.displayName('Cinder Block')
-		.hardness(5)
-		.resistance(1)
-		.soundType('stone')
-		.requiresTool(true)
-		.tagBlock("mineable/pickaxe")
-		.tagBlock('minecraft:needs_iron_tool')
-		.textureAll('kubejs:block/hm/cinder_block');
 
 	event.create('high_steam_machine_casing')
 		.displayName('High Steam Machine Casing')

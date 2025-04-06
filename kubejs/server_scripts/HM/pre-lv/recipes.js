@@ -1681,6 +1681,16 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'gtceu:smelting/wrought_iron_nugget' });
 
+	event.recipes.gtceu.stirling_generator('basic')
+		.itemInputs('gtceu:charcoal_block')
+		.inputFluids('minecraft:water 500')
+		.outputFluids('minecraft:water 400')
+		.duration(200)
+		.EUt(-8);
+
+		event.replaceInput({type: 'gtceu:fluid_solidifier'}, 'gtceu:ball_casting_mold', '#kubejs:ball_casting_mold');
+		event.replaceInput({type: 'gtceu:fluid_solidifier'}, 'gtceu:ingot_casting_mold', '#kubejs:ingot_casting_mold');
+
 	//Mass Removals
 
 	const CreateRemoval = ['windmill_bearing', 'spout', 'fluid_pipe', 'chute', 'depot', 'basin', 'mechanical_mixer', 'mechanical_press', 'hand_crank', 'millstone',
