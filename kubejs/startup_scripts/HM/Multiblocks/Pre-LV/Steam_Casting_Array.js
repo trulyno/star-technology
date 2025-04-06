@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 	event.create('steam_casting_array', 'primitive')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('fluid_solidifier')
+		.machine((holder) => new $SteamMulti(holder, 4))
         .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
         .appearanceBlock(GCYMBlocks.CASING_INDUSTRIAL_STEAM)
 		.pattern(definition => FactoryBlockPattern.start()

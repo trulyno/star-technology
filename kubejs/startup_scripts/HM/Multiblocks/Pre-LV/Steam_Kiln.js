@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 	event.create('gtceu:steam_kiln', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('kiln')
+		.machine((holder) => new $SteamMulti(holder, 4))
         .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
         .appearanceBlock(GTBlocks.CASING_BRONZE_BRICKS)
 		.pattern(definition => FactoryBlockPattern.start()
