@@ -15,14 +15,8 @@ LootJS.modifiers((event) => {
 	event
 		.addBlockLootModifier('minecraft:campfire')
 		.removeLoot(Ingredient.all)
-		.addLoot(
-			LootEntry.of('gtceu:ash_dust').limitCount([2, 3]),
-			LootEntry.of('farmersdelight:tree_bark').limitCount([0, 1]),
-		);
-	// .addWeightedLoot(
-	// 	[3, 10],
-	// 	[Item.of('gtceu:ash_dust').withChance(50), Item.of('farmersdelight:tree_bark').withChance(25)]
-	// );
+		.addLoot('gtceu:ash_dust')
+		.limitCount([2, 3]);
 
 	['oak', 'spruce', 'birch', 'dark_oak', 'jungle', 'acacia'].forEach(tree => {
 		event
