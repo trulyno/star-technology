@@ -1800,7 +1800,7 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 8.0d
 			y: 16.5d
 		}
 		{
@@ -1825,7 +1825,7 @@
 				item: "gtceu:ulv_stone_barrel"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 9.5d
 			y: 16.5d
 		}
 		{
@@ -1839,7 +1839,7 @@
 				type: "item"
 			}]
 			title: "COBBLE GEN"
-			x: 9.5d
+			x: 11.0d
 			y: 16.5d
 		}
 		{
@@ -2110,26 +2110,32 @@
 		}
 		{
 			dependencies: ["26B8FCAD39A84649"]
+			hide_dependent_lines: true
 			id: "3ACDDC1DEF389851"
 			tasks: [
-				{
-					id: "510F5CA97515964A"
-					item: "exnihilosequentia:mycelium_spores"
-					type: "item"
-				}
 				{
 					id: "79876562DF61E38E"
 					item: "thermal:slime_mushroom_spores"
 					type: "item"
 				}
+				{
+					id: "3D43284CF3B9E1E4"
+					item: "minecraft:mangrove_propagule"
+					type: "item"
+				}
+				{
+					id: "6F84AB453F5EBDD0"
+					item: "exnihilosequentia:mycelium_spores"
+					type: "item"
+				}
 			]
-			x: 5.0d
+			x: 6.5d
 			y: 16.5d
 		}
 		{
 			dependencies: [
-				"3ACDDC1DEF389851"
 				"76411EC26EEC2AB0"
+				"3ACDDC1DEF389851"
 			]
 			id: "2E27CCDF1CEBFE28"
 			tasks: [{
@@ -2137,8 +2143,8 @@
 				item: "exnihilosequentia:witch_water_bucket"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 15.0d
+			x: 5.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["2E27CCDF1CEBFE28"]
@@ -2626,8 +2632,8 @@
 			]
 			id: "0E97F4FA38F681BD"
 			tasks: [{
-				id: "60830393894A4BB9"
-				item: "minecraft:glowstone_dust"
+				id: "75914CD8126A16E1"
+				item: "minecraft:amethyst_shard"
 				type: "item"
 			}]
 			x: 14.0d
@@ -3226,6 +3232,109 @@
 				type: "item"
 			}]
 			x: -4.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["29C78EFA4596B27E"]
+			id: "56C1E36895D68D0B"
+			tasks: [
+				{
+					id: "511E0F72E3F16BF8"
+					item: "minecraft:spruce_sapling"
+					type: "item"
+				}
+				{
+					id: "3C6A153749762D49"
+					item: "minecraft:dark_oak_sapling"
+					type: "item"
+				}
+				{
+					id: "04A58DAEB33C0A22"
+					item: "minecraft:acacia_sapling"
+					type: "item"
+				}
+				{
+					id: "2772C0A10ED5E5A6"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					id: "4B1E80B934E7A136"
+					item: "minecraft:birch_sapling"
+					type: "item"
+				}
+				{
+					id: "527DE4586F690963"
+					item: "minecraft:cherry_sapling"
+					type: "item"
+				}
+				{
+					id: "118CC04EFB8BCF5A"
+					item: "minecraft:jungle_sapling"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["3ACDDC1DEF389851"]
+			id: "4C9753DCD2F54431"
+			tasks: [{
+				id: "392C15B031586231"
+				item: "minecraft:rooted_dirt"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["4C9753DCD2F54431"]
+			id: "7CD00805074FEA0D"
+			tasks: [
+				{
+					id: "01881A32F661A27C"
+					item: "minecraft:carrot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "26A0A961E43217BC"
+					item: "minecraft:potato"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "55F5C19D4990B0B9"
+					item: "minecraft:melon_seeds"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "400B06CC7870918A"
+					item: "minecraft:pumpkin_seeds"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "643F69DCB21D08DC"
+					item: "minecraft:beetroot_seeds"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "72298B83ABEDB7D0"
+					item: "minecraft:bamboo"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "574A7D5B31EAACA9"
+					item: "exnihilosequentia:grass_seeds"
+					type: "item"
+				}
+			]
+			x: 14.0d
 			y: 16.5d
 		}
 	]

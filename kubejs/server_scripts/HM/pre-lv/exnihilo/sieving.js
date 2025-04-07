@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
 	const cDrip = 'exnihilosequentia:crushed_dripstone';
 	const cCalc = 'exnihilosequentia:crushed_calcite';
 	const mud = 'minecraft:mud';
+	const rDirt = 'minecraft:rooted_dirt';
 
 	const sieve = (mesh, chance, input, result, wlog) => {
 		event.custom({
@@ -32,6 +33,7 @@ ServerEvents.recipes(event => {
 		sieve('string', .1, c.Crushed, `gtceu:stone_dust`, false);
 		sieve('flint', .4, c.Crushed, `gtceu:crushed_${c.OreType}_ore`, false);
 		sieve('flint', .2, c.Crushed, sand, false);
+		sieve('iron', .1, gravel, `gtceu:crushed_${c.OreType}_ore`, false);
 	});
 
 	// Dirt
@@ -42,12 +44,17 @@ ServerEvents.recipes(event => {
 	sieve('string', .8, cdirt, 'exnihilosequentia:stone_pebble', false);
 	sieve('string', .30, cdirt, 'minecraft:flint', false);
 
+	sieve('iron', 1, cdirt, dirt, false);
+	sieve('iron', .2, cdirt, dirt, false);
+	sieve('iron', .2, cdirt, gravel, false);
+
 	// Gravel
 	['andesite', 'basalt', 'blackstone', 'deepslate', 'diorite', 'granite', 'tuff'].forEach(pebble => {
 		sieve('string', .6, gravel, `exnihilosequentia:${pebble}_pebble`, false);
 		sieve('flint', .2, gravel, `exnihilosequentia:crushed_${pebble}`, false);
 	});
 	sieve('string', .75, gravel, sand, false);
+	//Iron in crushed to get ores
 
 	// Sand
 	sieve('string', .6, sand, 'exnihilosequentia:calcite_pebble', false);
@@ -78,4 +85,17 @@ ServerEvents.recipes(event => {
 	// Mud (temp)
 	sieve('flint', .1, mud, 'thermal:slime_mushroom_spores', false);
 	sieve('flint', .08, mud, 'exnihilosequentia:mycelium_spores', false);
+	sieve('flint', .04, mud, 'minecraft:mangrove_propagule', false);
+
+	// Saplings
+	['acacia','birch','cherry','dark_oak','jungle','oak','spruce'].forEach(sapling=>{
+		sieve('flint', .1, 'architects_palette:twisted_leaves',`minecraft:${sapling}_sapling`, false);
+	});
+
+	// Rooted Dirt
+	['carrot','potato','melon_seeds','pumpkin_seeds','beetroot_seeds','bamboo'].forEach(Crop=>{
+		sieve('flint', .15, rDirt, `minecraft:${Crop}`, false);
+	});		
+	sieve('flint', .1, rDirt, 'exnihilosequentia:grass_seeds', false);
+
 });
