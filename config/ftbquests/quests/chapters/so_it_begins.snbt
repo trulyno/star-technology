@@ -590,6 +590,7 @@
 						Damage: 0
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 0.5d
@@ -668,18 +669,22 @@
 				}
 			}
 			id: "54AAB5395E468898"
-			tasks: [
-				{
-					id: "32BA8816132B3011"
-					item: "minecraft:water_bucket"
-					optional_task: true
-					type: "item"
+			tasks: [{
+				id: "01588348D06FBFF0"
+				item: {
+					Count: 1
+					id: "woodenbucket:wooden_bucket"
+					tag: {
+						Damage: 0
+						Fluid: {
+							Amount: 1000
+							FluidName: "minecraft:water"
+						}
+					}
 				}
-				{
-					id: "7DE2EA70258C30C7"
-					type: "checkmark"
-				}
-			]
+				match_nbt: true
+				type: "item"
+			}]
 			x: 0.5d
 			y: 0.0d
 		}
@@ -905,6 +910,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 2.0d

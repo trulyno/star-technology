@@ -38,7 +38,8 @@ ServerEvents.recipes(event => {
 	].forEach(input => event.remove({ type: 'exnihilosequentia:harvest', input: input }));
 
 	[
-		'exnihilosequentia:silkworm',// removes silkworm obtainability
+		'exnihilosequentia:silkworm',
+		'exnihilosequentia:stone_barrel',
 		'#exnihilosequentia:crook',
 		'#exnihilosequentia:hammer',
 		'create:zinc_ingot'
@@ -51,7 +52,5 @@ ServerEvents.recipes(event => {
 
 	event.remove({ input: /^exnihilosequentia:.*_pebble/ });
 
-	event.replaceInput({ input: 'minecraft:string' },
-		'minecraft:string',            
-		'#forge:string'     )
+	event.replaceInput({ input: 'minecraft:string' }, 'minecraft:string', '#forge:string')
 })
