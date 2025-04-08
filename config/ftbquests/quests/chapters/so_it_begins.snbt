@@ -3343,6 +3343,21 @@
 			x: 14.0d
 			y: 16.5d
 		}
+		{
+			dependencies: [
+				"0A8FE243A5A8CC64"
+				"53BA24466D74ADE2"
+			]
+			id: "3E3F6706B4BF5005"
+			shape: "rsquare"
+			tasks: [{
+				id: "7D942D364B7A4459"
+				item: "gtceu:bessemer_forgery"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 7.5d
+		}
 	]
 	title: "So It Begins"
 }
