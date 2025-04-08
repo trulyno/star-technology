@@ -135,9 +135,9 @@ ServerEvents.recipes(event => {
 
     // Kiln
 
-    event.remove({ id: 'minecraft:brick' });
-    event.remove({ id: 'gtceu:smelting/firebrick' });
-    event.remove({ id: 'gtceu:smelting/coke_oven_brick' });
+    event.remove({ id: 'minecraft:brick'});
+    event.remove({ id: 'gtceu:smelting/fireclay_brick'});
+    event.remove({ id: 'gtceu:smelting/coke_oven_brick'});
 
     [
         { fuel: 'coals', burnMultiplier: 1 },
@@ -161,6 +161,13 @@ ServerEvents.recipes(event => {
             .itemInputs('gtceu:glass_dust', `#minecraft:${fuel}`)
             .itemOutputs('minecraft:glass')
             .duration(800 * burn);
+
+        ['ingot','ball'].forEach(MoldType=>{
+            event.recipes.gtceu.kiln(`${MoldType}_ceramic_casting_mold_firing_${fuel}`)
+                .itemInputs(`kubejs:unfired_${MoldType}_ceramic_casting_mold`, `#minecraft:${fuel}`)
+                .itemOutputs(`kubejs:${MoldType}_ceramic_casting_mold`)
+                .duration(300 * burn);
+        });
 
         // Rugged Alloyer and Chunk Processing
 
@@ -254,11 +261,6 @@ ServerEvents.recipes(event => {
             'DD'
         ], { D: `functionalstorage:${log}_1` });
     });
-
-    event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
-        '#forge:plates/iron',
-        'gtceu:wrought_iron_plate'
-    );
 
     event.shaped(Item.of('minecraft:crafting_table'), [
 		'PCP',
@@ -393,9 +395,6 @@ ServerEvents.recipes(event => {
 		H: '#forge:tools/hammers',
 		F: '#forge:tools/files'
 	});
-
-	event.replaceInput({ id: 'minecraft:blast_furnace' }, 'minecraft:iron_ingot', 'gtceu:iron_plate');
-	event.replaceInput({ id: 'minecraft:blast_furnace' }, 'minecraft:smooth_stone', 'kubejs:reinforced_stone_bricks');
 
 	event.shaped(Item.of('kubejs:mud_brick', 4), [
 		'CCC',

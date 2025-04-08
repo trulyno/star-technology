@@ -1575,7 +1575,7 @@
 				item: "create:encased_fan"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.0d
 			y: 15.0d
 		}
 		{
@@ -1659,10 +1659,7 @@
 			y: 13.5d
 		}
 		{
-			dependencies: [
-				"224916FFC857C099"
-				"1B5EA867C67903E4"
-			]
+			dependencies: ["1B5EA867C67903E4"]
 			hide_dependent_lines: true
 			id: "153EBFA7C41BE761"
 			tasks: [{
@@ -1670,8 +1667,8 @@
 				item: "create:brass_casing"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 13.5d
+			x: 1.0d
+			y: 14.25d
 		}
 		{
 			dependencies: [
@@ -1699,7 +1696,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 15.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["224916FFC857C099"]
@@ -1710,8 +1707,8 @@
 				item: "create:copper_casing"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 13.5d
+			x: 0.0d
+			y: 14.25d
 		}
 		{
 			dependencies: [
@@ -2221,11 +2218,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"301FF7F900A30DC7"
-				"53BA24466D74ADE2"
-				"0A8FE243A5A8CC64"
-			]
+			dependencies: ["53BA24466D74ADE2"]
 			id: "12CC4B7507E55BEC"
 			shape: "rsquare"
 			tasks: [{
@@ -2233,8 +2226,8 @@
 				item: "gtceu:solid_blast_furnace"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 7.5d
+			x: 17.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6974D4ADDEA9535F"]
@@ -2247,7 +2240,7 @@
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: 9.0d
 		}
 		{
@@ -2462,7 +2455,7 @@
 				type: "item"
 			}]
 			title: "Cinder Block"
-			x: 9.5d
+			x: 11.0d
 			y: 9.0d
 		}
 		{
@@ -2478,7 +2471,10 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["1645E2B5BEFA80A3"]
+			dependencies: [
+				"1645E2B5BEFA80A3"
+				"60FC1A065E7E0D7D"
+			]
 			description: [""]
 			id: "5F808C6A353FF66D"
 			tasks: [{
@@ -2792,7 +2788,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -2857,7 +2853,7 @@
 				item: "gtceu:large_barrel"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 15.5d
 			y: 9.0d
 		}
 		{
@@ -2873,7 +2869,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["218ACEFEBECC31E9"]
@@ -2916,7 +2912,7 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 18.5d
 			y: 6.0d
 		}
 		{
@@ -3344,10 +3340,7 @@
 			y: 16.5d
 		}
 		{
-			dependencies: [
-				"0A8FE243A5A8CC64"
-				"53BA24466D74ADE2"
-			]
+			dependencies: ["53BA24466D74ADE2"]
 			id: "3E3F6706B4BF5005"
 			shape: "rsquare"
 			tasks: [{
@@ -3357,6 +3350,21 @@
 			}]
 			x: 17.0d
 			y: 7.5d
+		}
+		{
+			dependencies: [
+				"224916FFC857C099"
+				"47EBB5D6D060417A"
+			]
+			hide_dependency_lines: true
+			id: "60FC1A065E7E0D7D"
+			tasks: [{
+				id: "3E9B53693FF7E4FE"
+				item: "gtceu:ulv_fluid_input"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 9.0d
 		}
 	]
 	title: "So It Begins"

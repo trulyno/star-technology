@@ -12,20 +12,20 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({id: 'create:crafting/kinetics/goggles'}, '#forge:plates/gold', 'gtceu:copper_plate');
 
-    event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
-        '#forge:plates/iron',
-        'gtceu:wrought_iron_plate'
-    );
 
-    event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
-        '#forge:rods/iron',
-        'gtceu:wrought_iron_rod'
-    );
-
-    event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
-        'gtceu:iron_screw',
-        'gtceu:wrought_iron_screw'
-    );
+    // event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
+    //     '#forge:plates/iron',
+    //     'gtceu:wrought_iron_plate'
+    // );
+    // event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
+    //     '#forge:rods/iron',
+    //     'gtceu:wrought_iron_rod'
+    // );
+    // event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
+    //     'gtceu:iron_screw',
+    //     'gtceu:wrought_iron_screw'
+    // );
+    // Above commented out in HM
 
     event.replaceInput({ id: 'gtceu:macerator/macerate_nether_star_lens' },
         '#forge:lenses/white',

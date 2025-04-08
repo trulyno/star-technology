@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: /^create_new_age.*wire/ });
 
     const minecraft_metals = ['iron', 'copper', 'gold'];
-    const gt_metals = ['lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel'];
+    const gt_metals = ['lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron'];
     const all_metals = minecraft_metals.concat(gt_metals);
 
     all_metals.forEach(metal => {
@@ -27,10 +27,10 @@ ServerEvents.recipes(event => {
         event.recipes.create.compacting([`gtceu:${metal}_screw`], `2x gtceu:${metal}_bolt`);
     });
 
-    const long_rods = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron'];
-    const double_plates = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron'];
-    const gears = ['iron', 'lead', 'bronze', 'pig_iron'];
-    const small_gears = ['iron', 'bronze', 'pig_iron'];
+    const long_rods = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron'];
+    const double_plates = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron'];
+    const gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron'];
+    const small_gears = ['iron', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron'];
     const rotors = ['iron', 'copper', 'lead', 'bronze', 'pig_iron'];
     const springs = ['iron', 'copper', 'gold', 'lead', 'tin'];
     const small_springs = ['iron', 'copper', 'gold', 'lead', 'tin'];
@@ -312,12 +312,6 @@ ServerEvents.recipes(event => {
 	event.recipes.create.compacting(`1x gtceu:brass_ingot`, Fluid.of('gtceu:brass', 192));
 	event.recipes.create.compacting(`1x gtceu:bronze_ingot`, Fluid.of('gtceu:bronze', 192));
 
-	['brass', 'bronze', 'pig_iron'].forEach(dust => {
-		event
-			.blasting(`gtceu:${dust}_ingot`, `gtceu:${dust}_dust`)
-			.id(`kubejs:${dust}_dust_blasting_manual_only`);
-	});
-
 	event.recipes.create.mechanical_crafting('exnihilosequentia:flint_mesh', [
 		'FSFSFSF',
 		'SRSRSRS',
@@ -350,5 +344,12 @@ ServerEvents.recipes(event => {
         '#forge:tools/wrenches',
         'minecraft:furnace'
     );
+
+	event.remove({output: 'exnihilosequentia:porcelain_clay'});
+	event.recipes.create.mixing('2x exnihilosequentia:porcelain_clay', ['2x minecraft:clay_ball', 'minecraft:bonemeal', 'gtceu:small_ash_dust'])
+
+	event.recipes.create.compacting('kubejs:unfired_raw_ceramic_casting_mold', '4x exnihilosequentia:porcelain_clay');
+	event.recipes.create.compacting(['kubejs:unfired_ball_ceramic_casting_mold','minecraft:bowl'], ['kubejs:unfired_raw_ceramic_casting_mold','minecraft:bowl']);
+	event.recipes.create.compacting(['kubejs:unfired_ingot_ceramic_casting_mold','gtceu:wood_plate'], ['kubejs:unfired_raw_ceramic_casting_mold','gtceu:wood_plate']);
 
 });

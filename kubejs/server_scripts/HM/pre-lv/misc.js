@@ -70,8 +70,6 @@ ServerEvents.recipes(event => {
 	});
 	event.remove({ id: 'create:compacting/blaze_cake' });
 
-	event.recipes.create.mixing('2x gtceu:pig_iron_dust', ['2x gtceu:iron_dust', 'gtceu:charcoal_dust']).heatRequirement('lowheated');
-
 	event.recipes.shapeless(Item.of('gtceu:wood_screw'), ['#forge:tools/files', 'gtceu:wood_bolt', 'gtceu:wood_bolt']);
 
 	event.recipes.gtceu.assembler('fluid_cell_frame')
@@ -118,7 +116,7 @@ ServerEvents.recipes(event => {
 		event.replaceInput({type: 'gtceu:fluid_solidifier'}, 'gtceu:ball_casting_mold', '#kubejs:ball_casting_mold');
 		event.replaceInput({type: 'gtceu:fluid_solidifier'}, 'gtceu:ingot_casting_mold', '#kubejs:ingot_casting_mold');
 	
-		// Post Cobble-Gen, Pre-Circuit
+		// ================================ Post Cobble-Gen, Pre-Circuit ================================
 	
 		event.recipes.create.mechanical_crafting('gtceu:bronze_brick_casing', [
 			'DDD',

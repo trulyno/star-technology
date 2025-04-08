@@ -506,26 +506,26 @@ ServerEvents.recipes(event => {
     });
 
     let prec = 'gtceu:double_gold_plate'
-        event.recipes.create.sequenced_assembly([
-            Item.of(`create:precision_mechanism`),
-        ], `gtceu:double_gold_plate`, [
-            event.recipes.createDeploying(prec, [prec, `create:cogwheel`]),
-            event.recipes.createDeploying(prec, [prec, `create:large_cogwheel`]),
-            event.recipes.createPressing(prec, prec),
-            event.recipes.createDeploying(prec, [prec, `gtceu:iron_screw`]),
-            event.recipes.createPressing(prec, prec)
-        ]).transitionalItem(prec).loops(4);
+    event.recipes.create.sequenced_assembly([
+        Item.of(`create:precision_mechanism`),
+    ], `gtceu:double_gold_plate`, [
+        event.recipes.createDeploying(prec, [prec, `create:cogwheel`]),
+        event.recipes.createDeploying(prec, [prec, `create:large_cogwheel`]),
+        event.recipes.createPressing(prec, prec),
+        event.recipes.createDeploying(prec, [prec, `gtceu:iron_screw`]),
+        event.recipes.createPressing(prec, prec)
+    ]).transitionalItem(prec).loops(4);
 
-        let mech = 'create:brass_casing'
-        event.recipes.create.sequenced_assembly([
-            Item.of(`create:mechanical_crafter`).withChance(1),
-        ], `create:brass_casing`, [
-            event.recipes.createDeploying(mech, [mech, `create:cogwheel`]),
-            event.recipes.createPressing(mech, mech),
-            event.recipes.createDeploying(mech, [mech, `create:precision_mechanism`]),
-            event.recipes.createDeploying(mech, [mech, `minecraft:crafting_table`]),
-            event.recipes.createPressing(mech, mech)
-        ]).transitionalItem(mech).loops(1);
+    let mech = 'create:brass_casing'
+    event.recipes.create.sequenced_assembly([
+        Item.of(`create:mechanical_crafter`).withChance(1),
+    ], `create:brass_casing`, [
+        event.recipes.createDeploying(mech, [mech, `create:cogwheel`]),
+        event.recipes.createPressing(mech, mech),
+        event.recipes.createDeploying(mech, [mech, `create:precision_mechanism`]),
+        event.recipes.createDeploying(mech, [mech, `minecraft:crafting_table`]),
+        event.recipes.createPressing(mech, mech)
+    ]).transitionalItem(mech).loops(1);
 
     event.recipes.create.mechanical_crafting('create:flywheel', [
         ' PPP ',
