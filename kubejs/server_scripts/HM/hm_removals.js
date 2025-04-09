@@ -52,5 +52,10 @@ ServerEvents.recipes(event => {
 
 	event.remove({ input: /^exnihilosequentia:.*_pebble/ });
 
-	event.replaceInput({ input: 'minecraft:string' }, 'minecraft:string', '#forge:string')
+	event.forEachRecipe([{ type: 'minecraft:smelting' }, { type: 'minecraft:blasting' }], recipe => {
+		event.remove({ id: recipe.getId() });
+		event.custom(recipe.json).id(recipe.getId() + '_manual_only');
+	});
+
+	event.replaceInput({ input: 'minecraft:string' }, 'minecraft:string', '#forge:string');
 })
