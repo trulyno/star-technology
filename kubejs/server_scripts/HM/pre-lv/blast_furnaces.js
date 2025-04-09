@@ -48,6 +48,14 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(6);
 
+    event.recipes.gtceu.assembler('bessemer_forgery')
+        .itemInputs('gtceu:solid_machine_casing','4x gtceu:long_steel_rod','4x #gtceu:circuits/lv','create:basin','2x gtceu:potin_gear',
+            '4x gtceu:small_steel_gear','4x kubejs:ulv_robot_arm','2x kubejs:ulv_conveyor_module','2x kubejs:ulv_electric_pump')
+        .inputFluids('gtceu:steel 1152')
+        .itemOutputs('gtceu:bessemer_forgery')
+        .duration(400)
+        .EUt(10);
+
     event.remove({type: 'gtceu:primitive_blast_furnace'});
     
     const PrimBlasting = (input,output,Duration,FuelID,FuelType,ashType,FuelIDBlock,FuelTypeBlock,inputType) => {
@@ -85,5 +93,46 @@ ServerEvents.recipes(event => {
     }
     CoalType('#minecraft','coals','','#gtceu','coal_blocks',1.2,2);
     CoalType('gtceu','coke_gem','dark_','gtceu','coke_block',1,1);
+
+    event.recipes.gtceu.electric_blast_furnace('potin')
+        .itemInputs('gtceu:potin_dust')
+        .itemOutputs('gtceu:potin_ingot')
+        .duration(170)
+        .blastFurnaceTemp(1000)
+        .EUt(100);
+    
+    event.remove({type: 'gtceu:electric_blast_furnace',output: 'gtceu:steel_ingot'});
+    [{type:'iron',time:'2400',eut:100,id:'minecraft'},{type:'wrought_iron',time:'1200',eut:30,id:'gtceu'}].forEach(ferrite=>{
+    
+        event.recipes.gtceu.bessemer_forge(`bulk_steel_from_${ferrite.type}_boosted`)
+            .itemInputs(`${ferrite.id}:${ferrite.type}_block`)
+            .outputFluids('gtceu:steel 1296')
+            .duration(8.5 * ferrite.time)
+            .EUt(ferrite.eut);
+
+        [{type:'coal',id:'#gtceu:coal_dusts',multi:.9},{type:'coke',id:'#forge:dusts/coke',multi:.8},{type:'non',id:'',multi:1}].forEach(coal=>{
+        event.recipes.gtceu.bessemer_forge(`steel_from_${ferrite.type}_${coal.type}_boosted`)
+            .itemInputs(`#forge:ingots/${ferrite.type}`,`${coal.id}`)
+            .outputFluids('gtceu:steel 144')
+            .duration(ferrite.time * coal.multi)
+            .EUt(ferrite.eut);
+        })
+    });
+    
+    const burnable = (amount,BurnID,typeBurnable,duraChange,ash) => {
+    const SolidBlast = (mainOutput,outputSolid,inputSolid,dura) => {
+        event.recipes.gtceu.solid_blast_furnace(`${mainOutput}_${typeBurnable}`)
+            .itemInputs(inputSolid[0],inputSolid[1],`${amount}x ${BurnID}:${typeBurnable}`)
+            .itemOutputs(outputSolid[0],outputSolid[1],`${amount}x gtceu:tiny_${ash}ash_dust`)
+            .duration(dura * duraChange);
+    }
+    SolidBlast('andesite_alloy',['10x create:andesite_alloy','gtceu:sulfur_dust'],['2x minecraft:andesite','gtceu:sphalerite_dust'],400);
+    SolidBlast('rose_quartz-ite',['1x create:rose_quartz','gtceu:tiny_quartz_sand_dust'],['gtceu:quartzite_gem','10x minecraft:redstone'],400);
+    SolidBlast('rose_quartz',['1x create:rose_quartz','gtceu:tiny_quartz_sand_dust'],['minecraft:quartz','8x minecraft:redstone'],480);
+    }
+    burnable(2,'#minecraft','coals',1,'');
+    burnable(16,'#minecraft','poor_coals',1.5,'');
+    burnable(1,'gtceu','coke_gem',.8,'dark_');
+    
 
 });

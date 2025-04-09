@@ -5,7 +5,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('bessemer_forge')
         .category('bessemer_forge')
         .setEUIO('in')
-        .setMaxIOSize(12, 1, 3, 0)
+        .setMaxIOSize(2, 0, 1, 1)
         .setSound(GTSoundEntries.SCIENCE);
 
 });
