@@ -70,7 +70,6 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'extendedcrafting'});
     event.remove({ mod: 'sgjourney'});
     event.remove({ mod: 'jetboots'});
-    event.remove({ mod: 'ae2additions'});
 
     event.remove({ input: 'minecraft:netherite_scrap'});
     event.remove({ output: 'minecraft:netherite_scrap'});

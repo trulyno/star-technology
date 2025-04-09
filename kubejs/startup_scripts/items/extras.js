@@ -15,20 +15,4 @@ StartupEvents.registry('item', event => {
         .displayName('Multiblock Upgrade Kit')
         .texture('kubejs:item/kits/upgrade_kit');
 
-    event.create('silicon_chip')
-        .displayName('Silicon Chip')
-        .texture('kubejs:item/ae2/silicon_chip');
-
-    event.create('phosphorus_chip')
-        .displayName('Phosphorus-Doped Chip')
-        .texture('kubejs:item/ae2/phosphorus_chip');
-
-    event.create('naquadah_chip')
-        .displayName('Naquadah-Doped Chip')
-        .texture('kubejs:item/ae2/naquadah_chip');
-
-    event.create('neutronium_chip')
-        .displayName('Neutronium-Doped Chip')
-        .texture('kubejs:item/ae2/neutronium_chip');
-
 });

@@ -630,8 +630,6 @@ ServerEvents.recipes(event => {
         .EUt(2);
     event.recipes.create.filling('gtceu:treated_wood_planks', [Fluid.of('gtceu:creosote', 125), '#minecraft:planks']);
 
-    event.replaceOutput({ type: 'gtceu:cutter'}, 'ae2:certus_quartz_crystal', '2x ae2:certus_quartz_crystal');
-
 });
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {

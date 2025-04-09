@@ -102,4 +102,31 @@ ServerEvents.recipes(event => {
             .EUt(128);
     });
 
+    [// free lenses: white, l_gray, lime
+        {type: 'naquadah', n: 1, time: 900, volt: 'ev'},
+        {type: 'neutronium', n: 4, time: 500, volt: 'iv'}
+    ].forEach(wafer => {
+        event.recipes.gtceu.laser_engraver(`engrave_ae2_soc_${wafer.type}`)
+            .itemInputs(`gtceu:${wafer.type}_wafer`)
+            .notConsumable('#forge:lenses/magenta')
+            .itemOutputs(`${wafer.n}x kubejs:ae2_soc_wafer`)
+            .duration(wafer.time)
+            .EUt(global.va[wafer.volt]);
+    });
+
+    event.recipes.gtceu.cutter('ae2_soc')
+        .itemInputs('kubejs:ae2_soc_wafer')
+        .itemOutputs('6x kubejs:ae2_soc')
+        .duration(900)
+        .EUt(global.va['ev']);
+
+    ['logic', 'engineering', 'calculation'].forEach(type => {
+        event.recipes.gtceu.me_circuit_assembler(`${type}_processor_soc`)
+            .itemInputs('kubejs:ae2_soc', `ae2:printed_${type}_processor`)
+            .inputFluids('gtceu:skystone 144')
+            .itemOutputs(`8x ae2:${type}_processor`)
+            .duration(400)
+            .EUt(global.va['iv']);
+    });
+
 });

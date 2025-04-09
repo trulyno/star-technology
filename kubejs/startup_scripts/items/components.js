@@ -1,6 +1,30 @@
 
 StartupEvents.registry('item', event => {
 
+    event.create('silicon_chip')
+        .displayName('Silicon Chip')
+        .texture('kubejs:item/chips_n_wafers/empty_silicon_chip');
+
+    event.create('phosphorus_chip')
+        .displayName('Phosphorus-Doped Chip')
+        .texture('kubejs:item/chips_n_wafers/empty_phosphorus_chip');
+
+    event.create('naquadah_chip')
+        .displayName('Naquadah-Doped Chip')
+        .texture('kubejs:item/chips_n_wafers/empty_naquadah_chip');
+
+    event.create('neutronium_chip')
+        .displayName('Neutronium-Doped Chip')
+        .texture('kubejs:item/chips_n_wafers/empty_neutronium_chip');
+
+    event.create('ae2_soc_wafer')
+        .displayName('AE2 SoC Wafer')
+        .texture('kubejs:item/chips_n_wafers/ae2_soc_wafer');
+
+    event.create('ae2_soc')
+        .displayName('AE2 SoC')
+        .texture('kubejs:item/chips_n_wafers/ae2_soc_chip');
+
     event.create('3d_nand_chip')
         .displayName('3D-NAND Memory Chip Array')
         .tooltip('§7Complex NAND Logic Gate')

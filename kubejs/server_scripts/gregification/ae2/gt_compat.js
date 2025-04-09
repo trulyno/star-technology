@@ -33,6 +33,8 @@ ServerEvents.recipes(event => {
         );
     });
 
+    event.replaceOutput({ type: 'gtceu:cutter'}, 'ae2:certus_quartz_crystal', '2x ae2:certus_quartz_crystal');
+
     event.recipes.gtceu.polarizer('charged_certus')
         .itemInputs('ae2:certus_quartz_crystal')
         .itemOutputs('ae2:charged_certus_quartz_crystal')
