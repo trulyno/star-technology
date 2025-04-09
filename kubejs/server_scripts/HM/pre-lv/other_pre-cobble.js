@@ -2,44 +2,46 @@
 
 ServerEvents.recipes(event => {
 
-    const plate = (metal) => `gtceu:${metal}_plate`
+	const plate = (metal) => `gtceu:${metal}_plate`
 	const rod = (metal) => `gtceu:${metal}_rod`
 
-    // Metallurgy Rework via Create
+	// Metallurgy Rework via Create
 
-    event.remove({ id: /^create:pressing.*_ingot/ });
-    event.remove({ output: /^create_new_age.*wire/ });
+	event.remove({ id: /^create:pressing.*_ingot/ });
+	event.remove({ output: /^create_new_age.*wire/ });
 
-    const minecraft_metals = ['iron', 'copper', 'gold'];
-    const gt_metals = ['lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron'];
-    const all_metals = minecraft_metals.concat(gt_metals);
+	const minecraft_metals = ['iron', 'copper', 'gold'];
+	const gt_metals = ['lead', 'tin', 'zinc', 'bronze', 'brass', 'nickel', 'pig_iron', 'tin_alloy', 'potin', 'cupronickel', 'wrought_iron', 'cast_iron'];
+	const all_metals = minecraft_metals.concat(gt_metals);
 
-    all_metals.forEach(metal => {
-        const mod = minecraft_metals.includes(metal) ? 'minecraft' : 'gtceu';
+	all_metals.forEach(metal => {
+		const mod = minecraft_metals.includes(metal) ? 'minecraft' : 'gtceu';
 
-        event.recipes.create.pressing([`4x gtceu:${metal}_plate`], `${mod}:${metal}_block`);
-        event.recipes.create.compacting(plate(metal), `2x ${mod}:${metal}_ingot`);
+		event.recipes.create.pressing([`4x gtceu:${metal}_plate`], `${mod}:${metal}_block`);
+		event.recipes.create.compacting(plate(metal), `2x ${mod}:${metal}_ingot`);
 
-        event.recipes.create.cutting([`2x gtceu:${metal}_rod`], plate(metal));
-        event.recipes.create.pressing([`gtceu:${metal}_ring`], rod(metal));
-        event.recipes.create.pressing([`gtceu:${metal}_foil`], plate(metal));
-        event.recipes.create.cutting([`2x gtceu:${metal}_bolt`], rod(metal));
-        event.recipes.create.compacting([`gtceu:${metal}_screw`], `2x gtceu:${metal}_bolt`);
-    });
+		event.recipes.create.cutting([`2x gtceu:${metal}_rod`], plate(metal));
+		event.recipes.create.pressing([`gtceu:${metal}_ring`], rod(metal));
+		event.recipes.create.pressing([`gtceu:${metal}_foil`], plate(metal));
+		event.recipes.create.cutting([`2x gtceu:${metal}_bolt`], rod(metal));
+		event.recipes.create.compacting([`gtceu:${metal}_screw`], `2x gtceu:${metal}_bolt`);
+	});
 
-    const long_rods = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron'];
-    const double_plates = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron'];
-    const gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron'];
-    const small_gears = ['iron', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron'];
-    const rotors = ['iron', 'copper', 'lead', 'bronze', 'pig_iron'];
-    const springs = ['iron', 'copper', 'gold', 'lead', 'tin'];
-    const small_springs = ['iron', 'copper', 'gold', 'lead', 'tin'];
-    const wires = ['iron', 'copper', 'gold', 'lead', 'tin'];
-    const fine_wires = ['copper', 'gold', 'lead', 'tin', 'zinc'];
-    const fluid_pipes = ['copper', 'steel', 'lead', 'bronze', 'tin_alloy', 'potin'];
-    const item_pipes = ['tin', 'brass', 'cupronickel', 'nickel'];
+	event.recipes.create.cutting(['2x gtceu:magnetic_iron_bolt'], rod('magnetic_iron'));
 
-    const seq_assembly = (output, input, inter, sequence, loops) => {
+	const long_rods = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron'];
+	const double_plates = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron'];
+	const gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron'];
+	const small_gears = ['iron', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron'];
+	const rotors = ['iron', 'copper', 'lead', 'bronze', 'pig_iron'];
+	const springs = ['iron', 'copper', 'gold', 'lead', 'tin'];
+	const small_springs = ['iron', 'copper', 'gold', 'lead', 'tin'];
+	const wires = ['iron', 'copper', 'gold', 'lead', 'tin'];
+	const fine_wires = ['copper', 'gold', 'lead', 'tin', 'zinc'];
+	const fluid_pipes = ['copper', 'steel', 'lead', 'bronze', 'tin_alloy', 'potin'];
+	const item_pipes = ['tin', 'brass', 'cupronickel', 'nickel'];
+
+	const seq_assembly = (output, input, inter, sequence, loops) => {
 		const steps = sequence.map(step => {
 			let result;
 
@@ -196,10 +198,10 @@ ServerEvents.recipes(event => {
 			], i == 0 ? 1 : 3 * i
 		);
 	});
-    
-    //==================================================================//
 
-    event.recipes.create.mechanical_crafting('gtceu:primitive_pump', [
+	//==================================================================//
+
+	event.recipes.create.mechanical_crafting('gtceu:primitive_pump', [
 		'TNT',
 		'SVR',
 		'CLC'
@@ -236,7 +238,9 @@ ServerEvents.recipes(event => {
 		.EUt(30);
 
 	event.remove({ id: 'minecraft:charcoal' });
-	event.smelting(`kubejs:charcoal_pellet`, `#minecraft:logs_that_burn`);
+	event.smelting(`kubejs:charcoal_pellet`, `#minecraft:logs_that_burn`).id('kjs:smelting/charcoal_pellet_manual_only');
+	event.recipes.create.crushing(['2x kubejs:charcoal_pellet', Item.of('kubejs:charcoal_pellet').withChance(0.5)], 'minecraft:charcoal');
+	event.recipes.create.milling(['gtceu:charcoal_dust'], 'minecraft:charcoal');
 
 	event.remove({ id: 'thermal:rubber_3' });
 	event.recipes.create.compacting(Fluid.of('thermal:latex', 16), `8x minecraft:jungle_log`).heatRequirement('lowheated');
@@ -326,30 +330,30 @@ ServerEvents.recipes(event => {
 		S: '#forge:string'
 	});
 
-    event.recipes.create.mechanical_crafting('gtceu:ulv_barrel', [
-        'PP PP',
-        'PLRLP',
-        ' LCL ',
-        'PLTLP',
-        'PP PP'
-    ], {
-        R: 'gtceu:iron_rotor',
-        L: '#forge:stripped_logs',
-        P: 'gtceu:treated_wood_plate',
-        T: 'thermal:redstone_servo',
-        C: 'minecraft:cauldron'
-    });
+	event.recipes.create.mechanical_crafting('gtceu:ulv_barrel', [
+		'PP PP',
+		'PLRLP',
+		' LCL ',
+		'PLTLP',
+		'PP PP'
+	], {
+		R: 'gtceu:iron_rotor',
+		L: '#forge:stripped_logs',
+		P: 'gtceu:treated_wood_plate',
+		T: 'thermal:redstone_servo',
+		C: 'minecraft:cauldron'
+	});
 
-    event.replaceInput({ id: 'gtceu:shaped/coke_oven' },
-        '#forge:tools/wrenches',
-        'minecraft:furnace'
-    );
+	event.replaceInput({ id: 'gtceu:shaped/coke_oven' },
+		'#forge:tools/wrenches',
+		'minecraft:furnace'
+	);
 
-	event.remove({output: 'exnihilosequentia:porcelain_clay'});
+	event.remove({ output: 'exnihilosequentia:porcelain_clay' });
 	event.recipes.create.mixing('2x exnihilosequentia:porcelain_clay', ['2x minecraft:clay_ball', 'minecraft:bonemeal', 'gtceu:small_ash_dust'])
 
 	event.recipes.create.compacting('kubejs:unfired_raw_ceramic_casting_mold', '4x exnihilosequentia:porcelain_clay');
-	event.recipes.create.compacting(['kubejs:unfired_ball_ceramic_casting_mold','minecraft:bowl'], ['kubejs:unfired_raw_ceramic_casting_mold','minecraft:bowl']);
-	event.recipes.create.compacting(['kubejs:unfired_ingot_ceramic_casting_mold','gtceu:wood_plate'], ['kubejs:unfired_raw_ceramic_casting_mold','gtceu:wood_plate']);
+	event.recipes.create.compacting(['kubejs:unfired_ball_ceramic_casting_mold', 'minecraft:bowl'], ['kubejs:unfired_raw_ceramic_casting_mold', 'minecraft:bowl']);
+	event.recipes.create.compacting(['kubejs:unfired_ingot_ceramic_casting_mold', 'gtceu:wood_plate'], ['kubejs:unfired_raw_ceramic_casting_mold', 'gtceu:wood_plate']);
 
 });
