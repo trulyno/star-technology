@@ -33,7 +33,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["53A9F3758C218CDC"]
@@ -55,12 +55,13 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"4ED562DC235425FE"
 				"1E1DF0982ECDD7D0"
+				"4E546CE15A52D7DD"
 			]
 			id: "06780B462515CAE2"
 			rewards: [{
@@ -76,7 +77,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["06780B462515CAE2"]
@@ -94,7 +95,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 7.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4E77319DB3B30062"]
@@ -112,7 +113,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 7.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["421DF7880AD00F58"]
@@ -133,7 +134,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -182,8 +183,8 @@
 				item: "gtceu:zpm_energy_input_hatch"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 5.0d
+			x: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2587E109968EFBB4"]
@@ -252,7 +253,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -273,7 +274,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["689150D2A185216C"]
@@ -292,7 +293,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["53A9F3758C218CDC"]
@@ -335,7 +336,7 @@
 				}
 			]
 			x: -5.0d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -360,7 +361,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -424,7 +425,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["020048FAC9576691"]
@@ -462,7 +463,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3306CAE5E57839A2"]
@@ -481,7 +482,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -521,7 +522,7 @@
 			]
 			title: "Assembly Line and Research Begins"
 			x: -6.0d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -554,60 +555,6 @@
 		}
 		{
 			dependencies: ["5B72F7526494EAEC"]
-			description: ["The first tier of Capacitator, now it just needs a battery inside."]
-			id: "51DE4937635274FD"
-			rewards: [{
-				id: "1DE3A4DA7F9ED21E"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "5CE152B9D9C4BCDC"
-				item: "gtceu:empty_tier_i_battery"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["51DE4937635274FD"]
-			description: ["&5EV&r Capacitators for your Substation. These will fill quite fast."]
-			id: "5BC9DEBA51D83A33"
-			rewards: [{
-				id: "6F3500E5FE723158"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "0A399248677C0EF3"
-				item: "gtceu:ev_lapotronic_battery"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["51DE4937635274FD"]
-			description: ["&9IV&r Capacitators for your Substation. These might seem bigger, but you will be surprised at how quickly they fill."]
-			id: "1AC791ABC70E8699"
-			rewards: [{
-				id: "7A7E07C4D8CF69B5"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "39CC4C4A36912D6E"
-				item: "gtceu:iv_lapotronic_battery"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["5B72F7526494EAEC"]
 			description: ["&5EV&r Input and Output for the Substation."]
 			id: "5633ED567D7B86AA"
 			rewards: [{
@@ -630,7 +577,7 @@
 			]
 			title: "EV Substation Hatches"
 			x: -10.0d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -649,48 +596,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"084F23122E4CA277"
-				"0094C2E72105E8CA"
-				"16D1B8E5F2A87F4E"
-			]
-			description: ["&dLuV&r Battery Module."]
-			hide_dependency_lines: true
-			id: "03FF61D56AA8ED91"
-			rewards: [{
-				id: "6AC0EACF23411996"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "4A8BED0DDE320BA0"
-				item: "gtceu:lapotronic_energy_orb_cluster"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["5B72F7526494EAEC"]
-			description: ["The second tier of Capacitator, capable of containing stronger Batteries."]
-			id: "62F32607FEE899CF"
-			rewards: [{
-				id: "59F932FE04299082"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "33A8AB55BA4EECA5"
-				item: "gtceu:empty_tier_ii_battery"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -7.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
@@ -708,7 +614,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
@@ -726,7 +632,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
@@ -744,7 +650,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["127464E65103D2B0"]
@@ -770,7 +676,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -791,7 +697,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5AD5C15F6C0F4BC2"]
@@ -809,7 +715,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["67ABB3BF6D0C183B"]
@@ -1022,8 +928,9 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["61ABF5D51A3B9771"]
+			dependencies: ["4E546CE15A52D7DD"]
 			description: ["A stronger fiber based circuit board, made by layering multiple normal ones over eachother."]
+			hide_dependency_lines: true
 			id: "51C60C25C3C9C770"
 			rewards: [{
 				id: "70229204F25A9E96"
@@ -1069,47 +976,8 @@
 				item: "gtceu:luv_parallel_hatch"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["03FF61D56AA8ED91"]
-			description: ["&cZPM&r Battery Module."]
-			id: "150C7E0C42E85710"
-			rewards: [{
-				id: "7E34A85971E84A07"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "570F029AC3465189"
-				item: "gtceu:energy_module"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"150C7E0C42E85710"
-				"62F32607FEE899CF"
-			]
-			description: ["&cZPM&r Capacitator, and, you guessed it, also fills up very quickly."]
-			id: "795726537DF2E183"
-			rewards: [{
-				id: "10FFE9C25D2901FC"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "05C550C971929778"
-				item: "gtceu:zpm_lapotronic_battery"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -5.0d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6CC13BE9AD447218"]
@@ -1138,7 +1006,7 @@
 				}
 			]
 			x: 14.0d
-			y: -5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1160,7 +1028,7 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: -5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1181,7 +1049,7 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["01AF9486EA6DA792"]
@@ -1199,7 +1067,7 @@
 				type: "item"
 			}]
 			x: 14.0d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -1242,7 +1110,7 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: 1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0962C36622E385B8"]
@@ -1260,7 +1128,7 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1410,7 +1278,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["62F3093B80681573"]
@@ -1428,7 +1296,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["576C0430D0CDE409"]
@@ -1463,7 +1331,7 @@
 				item: "gtceu:zpm_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 6.0d
 			y: 5.0d
 		}
 		{
@@ -1624,27 +1492,6 @@
 			}]
 			x: 12.0d
 			y: -5.0d
-		}
-		{
-			dependencies: [
-				"70AA84848FB2A9BB"
-				"68F878EC21CA1749"
-			]
-			description: ["A really big battery, but with big batteries comes big power drain."]
-			id: "151C2D784700BD49"
-			rewards: [{
-				id: "34F8D60C9177FE48"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "374B25EB1C691ADD"
-				item: "gtceu:energy_cluster"
-				type: "item"
-			}]
-			x: 14.0d
-			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1857,27 +1704,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"62F32607FEE899CF"
-				"03FF61D56AA8ED91"
-			]
-			description: ["&dLuV&r Capacitator, also fills up very quickly."]
-			id: "10B333DE4129BDC9"
-			rewards: [{
-				id: "6FD07DEFA0ECF339"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "2FEF19F707C48B20"
-				item: "gtceu:luv_lapotronic_battery"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -7.0d
-		}
-		{
 			dependencies: ["6131A76D203DE6AB"]
 			description: ["These can replace your old Cleanroom Filters, and turn it into a Sterile Cleanroom. Do keep in mind that normal Cleanroom recipes do not work inside a Sterile Cleanroom"]
 			id: "6CC13BE9AD447218"
@@ -1921,7 +1747,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: 5.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1949,7 +1775,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1985,7 +1811,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
@@ -2011,7 +1837,7 @@
 			]
 			title: "Parallel Resource Production"
 			x: -5.0d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7FD0034E639F3B2D"]
@@ -2022,8 +1848,8 @@
 				item: "gtceu:dragonsteel_single_wire"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.0d
+			x: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["46D5CAA2666803D4"]
@@ -2035,7 +1861,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3325914DB92AEF1B"]
@@ -2051,6 +1877,91 @@
 				type: "item"
 			}]
 			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5B575348D2A871BB"
+				"4FF433145C67693F"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Solidify your Epoxy in a more durable manner."]
+			id: "45AAA2B53069E806"
+			rewards: [{
+				id: "3F8E9A77567332AE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "581445F1FCBAE363"
+				item: "gtceu:reinforced_epoxy_resin_plate"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["45AAA2B53069E806"]
+			id: "4E546CE15A52D7DD"
+			rewards: [{
+				id: "6406C35198D23644"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "60AE816A13349D32"
+					item: "gtceu:fiber_reinforced_printed_circuit_board"
+					type: "item"
+				}
+				{
+					id: "52078DB7C9B29A9E"
+					item: "gtceu:fiber_reinforced_circuit_board"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["261174370DC87FCB"]
+			description: ["Carbon and a Plastic. Each Plastic gives twice as much Fibers as the previous one."]
+			id: "4FF433145C67693F"
+			optional: true
+			rewards: [{
+				id: "046C4EC8F24182DD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "641801B89910C82D"
+				item: "gtceu:carbon_fibers"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["550DB81B8DC91730"]
+			description: ["Just some Glass and Boron, quite cheap."]
+			id: "5B575348D2A871BB"
+			optional: true
+			rewards: [{
+				id: "70A331233F13EF2E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "0E28C749EBE13073"
+				item: "gtceu:fine_borosilicate_glass_wire"
+				type: "item"
+			}]
+			x: -10.0d
 			y: 5.0d
 		}
 	]

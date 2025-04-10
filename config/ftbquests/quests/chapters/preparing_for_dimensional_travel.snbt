@@ -33,28 +33,8 @@
 				item: "gtceu:wetware_processor_mainframe"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 6.5d
-		}
-		{
-			dependencies: [
-				"5BDA17962F4630EB"
-				"707C2E9BA62A60C5"
-			]
-			description: ["This Battery takes quite some time to fill, and is great to use as a buffer because of that."]
-			id: "50835055C3D1050C"
-			rewards: [{
-				id: "49DA44A12F573352"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "32F2236E48F0431C"
-				item: "gtceu:max_battery"
-				type: "item"
-			}]
 			x: 0.0d
-			y: 4.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -141,15 +121,13 @@
 				item: "gtceu:uhv_machine_hull"
 				type: "item"
 			}]
-			x: -6.0d
+			x: 0.0d
 			y: 2.5d
 		}
 		{
 			dependencies: [
-				"707C2E9BA62A60C5"
 				"5C39B74171CC21F9"
 				"73D0DC357821B395"
-				"5BDA17962F4630EB"
 				"4F6B1F4261874B65"
 				"783865A56909D3C7"
 			]
@@ -165,8 +143,8 @@
 				item: "gtceu:uhv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 4.5d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["11D51899B980082B"]
@@ -182,8 +160,8 @@
 				item: "gtceu:uhv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 4.5d
+			x: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -202,7 +180,7 @@
 				item: "gtceu:uhv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: -8.0d
+			x: 4.0d
 			y: 4.5d
 		}
 		{
@@ -220,62 +198,8 @@
 				item: "gtceu:uv_parallel_hatch"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 7.5d
-		}
-		{
-			dependencies: [
-				"50835055C3D1050C"
-				"43A620DF574E2488"
-			]
-			description: ["A nearly infinite energy capacitator for all purposes at this point. Just one will be more then enough for your substation."]
-			id: "2BAE934A80152FA1"
-			rewards: [{
-				id: "3B236DC697D26949"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6E5EA950F103D84F"
-				item: "gtceu:uhv_ultimate_battery"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["5BDA17962F4630EB"]
-			description: ["Used for substation capacitors above &cZPM&r."]
-			id: "43A620DF574E2488"
-			rewards: [{
-				id: "398FDD5437034960"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "73CBB3A5A4690753"
-				item: "gtceu:empty_tier_iii_battery"
-				type: "item"
-			}]
 			x: 0.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["43A620DF574E2488"]
-			description: ["At this point, why not make the one below?"]
-			id: "745470CF31319CAA"
-			rewards: [{
-				id: "70A2BDF175884640"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "44A6C92C952DB065"
-				item: "gtceu:uv_lapotronic_battery"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1AC8CBF01196D1F3"]
@@ -291,8 +215,8 @@
 				item: "gtceu:highly_advanced_soc_wafer"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 0.5d
+			x: -4.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["0F7A1EA1AB52F795"]
@@ -311,8 +235,8 @@
 				item: "gtceu:neutronium_wafer"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.5d
+			x: -4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
@@ -329,7 +253,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -910,6 +834,7 @@
 		{
 			dependencies: ["2F87FC1D5BB43220"]
 			description: ["A blank slate, that with carefull processing and some luck could be inscribed with coordinates to different realms."]
+			hide_dependency_lines: true
 			id: "7A38469EAAABEAAE"
 			rewards: [{
 				id: "4262C7EF00DC2805"
@@ -922,8 +847,8 @@
 				item: "kubejs:coordinate_crystal"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.5d
+			x: 8.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
@@ -1019,8 +944,8 @@
 				item: "gtceu:component_part_assembly"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 6.5d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1209,8 +1134,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: 5.75d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			can_repeat: true
@@ -1277,8 +1202,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: 3.25d
+			x: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["630F50E03EC3D144"]
@@ -1435,8 +1360,8 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: 0.5d
+			x: 4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2EDE996312B1C69E"]

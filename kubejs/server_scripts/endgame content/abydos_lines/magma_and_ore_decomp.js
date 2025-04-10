@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:sylvanite 10000')
         .outputFluids('gtceu:tiemannite 10000')
         .outputFluids('gtceu:strontianite 5000')
-        .itemOutputs('16x gtceu:deepslate_dust')
+        .itemOutputs('80x gtceu:deepslate_dust')
         .duration(2400)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
@@ -21,19 +21,19 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:crookesite 15000')
         .outputFluids('gtceu:clausthalite 10000')
         .outputFluids('gtceu:iodargyrite 5000')
-        .itemOutputs('16x gtceu:deepslate_dust')
+        .itemOutputs('80x gtceu:deepslate_dust')
         .duration(2400)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
         ['zapolite','crookesite','clausthalite','iodargyrite','titanite','calaverite','sylvanite',
         'tiemannite','strontianite'].forEach(type=>{
             event.remove({id: `gtceu:extractor/extract_${type}_dust`});
-            event.recipes.gtceu.centrifuge(`${type}_dust_from_liquid`)
+            event.recipes.gtceu.autoclave(`raw_${type}`)
+                .itemInputs('gtceu:deepslate_dust')
                 .inputFluids(`gtceu:${type} 1000`)
-                .itemOutputs(`gtceu:${type}_dust`, `gtceu:small_${type}_dust`)
-                .outputFluids('minecraft:lava 250')
+                .itemOutputs(`gtceu:raw_${type}`)
                 .duration(160)
-                .EUt(GTValues.VHA[GTValues.IV]);
+                .EUt(GTValues.VA[GTValues.IV]);
         });
 
     //Dust to Products
