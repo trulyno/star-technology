@@ -3,5 +3,10 @@ ClientEvents.lang('en_us', event => {
 	event.renameItem('exnihilosequentia:flint_mesh', 'Refined Mesh');
 	event.renameItem('exnihilosequentia:iron_mesh', 'Reinforced Mesh');
 
-	event.renameBlock('gtceu:matchbox', 'Fire Starter');
+	// Following 3 just dont work
+	
+	event.renameItem('gtceu:matchbox', 'Fire Starter');
+	event.renameBlock('gtceu:steel_machine_casing', 'Cast Iron Machine Casing');
+	event.renameBlock('gtceu:steel_brick_casing', 'Bricked Cast Iron Casing');
+
 });

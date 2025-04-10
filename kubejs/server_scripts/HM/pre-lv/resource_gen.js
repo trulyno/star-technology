@@ -241,6 +241,15 @@ ServerEvents.recipes(event => {
 			.chancedOutput(`gtceu:${material.secondary}_dust`, 2500, 0)
 			.chancedOutput(`gtceu:${material.tertiary}_dust`, 1250, 0)
 			.duration(400);
+		event.recipes.gtceu.steam_ore_processing(`crushed_${material.primary}_ore`)
+			.itemInputs(`gtceu:crushed_${material.primary}_ore`, '2x #minecraft:coals')
+			.inputFluids('minecraft:water 1000')
+            .itemOutputs(`gtceu:${material.primary}_dust`)
+			.chancedOutput(`gtceu:${material.primary}_dust`, 5000, 0)
+			.chancedOutput(`gtceu:${material.secondary}_dust`, 2500, 0)
+			.chancedOutput(`gtceu:${material.tertiary}_dust`, 1250, 0)
+            .duration(320)
+            .EUt(GTValues.VA[GTValues.ULV]);
 	});
 
 	event.recipes.gtceu.barrel('slitake')

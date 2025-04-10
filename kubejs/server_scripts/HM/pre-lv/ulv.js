@@ -2,6 +2,24 @@
 
 ServerEvents.recipes(event => {
 
+
+
+
+    event.custom({
+        'type': 'create_new_age:energising',
+        'energy_needed': 2000,
+        'ingredients': [
+          {
+            'item': 'gtceu:iron_rod'
+          }
+        ],
+        'results': [
+          {
+            'item': 'gtceu:magnetic_iron_rod'
+          }
+        ]
+    });
+      
     ['cinder_block','polished_cinder_block','cinder_bricks'].forEach(t=>{
         event.remove({id: `dustrial_decor:${t}`});
     });

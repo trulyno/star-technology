@@ -10,6 +10,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .tiers(GTValues.ULV)
         .definition((tier, builder) =>{
             builder
-                .workableCasingRenderer('gtceu:block/casings/gcyn/industrial_steam_casing', 'gtceu:block/multiblock/tank_valve', false)
+                .workableCasingRenderer('gtceu:block/casings/gcym/industrial_steam_casing', 'gtceu:block/multiblock/tank_valve', false)
+                .abilities(PartAbility.IMPORT_FLUIDS)
             });
 });

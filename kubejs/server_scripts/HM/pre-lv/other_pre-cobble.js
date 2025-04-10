@@ -349,8 +349,8 @@ ServerEvents.recipes(event => {
 		'minecraft:furnace'
 	);
 
-	event.remove({ output: 'exnihilosequentia:porcelain_clay' });
-	event.recipes.create.mixing('2x exnihilosequentia:porcelain_clay', ['2x minecraft:clay_ball', 'minecraft:bonemeal', 'gtceu:small_ash_dust'])
+	event.remove({id: 'exnihilosequentia:ens_porcelain_clay'});
+	event.recipes.create.mixing(Item.of('exnihilosequentia:porcelain_clay',2), ['2x minecraft:clay_ball', 'minecraft:bone_meal', '1x gtceu:small_ash_dust']);
 
 	event.recipes.create.compacting('kubejs:unfired_raw_ceramic_casting_mold', '4x exnihilosequentia:porcelain_clay');
 	event.recipes.create.compacting(['kubejs:unfired_ball_ceramic_casting_mold', 'minecraft:bowl'], ['kubejs:unfired_raw_ceramic_casting_mold', 'minecraft:bowl']);

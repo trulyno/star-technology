@@ -186,7 +186,7 @@ ServerEvents.recipes(event => {
 
 			event.recipes.gtceu.rugged_alloyer(`${ore}_chunks_${fuel}`)
 				.itemInputs(`2x kubejs:${ore}_crushed_ore_chunk`, `#forge:nuggets/${metal}`, `#minecraft:${fuel}`)
-				.itemOutputs(`#forge:ingots/${metal}`, 'gtceu:ash_dust')
+				.itemOutputs(`#forge:ingots/${metal}`, 'gtceu:tiny_ash_dust')
 				.duration(200 * t * burn);
 
 			if (fuel == 'coals') {
@@ -199,11 +199,11 @@ ServerEvents.recipes(event => {
 		event.remove({ type: 'minecraft:crafting_shapeless', output: 'create:rose_quartz' });
 		event.recipes.gtceu.rugged_alloyer(`rose_quartz_${fuel}`)
 			.itemInputs('10x minecraft:redstone', 'gtceu:quartzite_gem', `2x #minecraft:${fuel}`)
-			.itemOutputs('create:rose_quartz', 'gtceu:ash_dust')
+			.itemOutputs('create:rose_quartz', 'gtceu:tiny_ash_dust')
 			.duration(600 * burn);
 		event.recipes.gtceu.rugged_alloyer(`andesite_alloy_${fuel}`)
 			.itemInputs('4x exnihilosequentia:andesite_pebble', '4x gtceu:zinc_nugget', `2x #minecraft:${fuel}`)
-			.itemOutputs('4x create:andesite_alloy', 'gtceu:ash_dust')
+			.itemOutputs('4x create:andesite_alloy', 'gtceu:tiny_ash_dust')
 			.duration(600 * burn);
 	});
 
