@@ -1497,7 +1497,7 @@
 			}]
 			title: "INFINITE WATER"
 			x: 9.5d
-			y: 15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1472BFF306FEA342"]
@@ -1796,15 +1796,14 @@
 				"59A805C314717BA0"
 				"26B8FCAD39A84649"
 			]
-			hide_dependent_lines: true
 			id: "63D792EF5D75290F"
 			tasks: [{
 				id: "1990722E39FEE28B"
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 16.5d
+			x: 9.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -1828,7 +1827,7 @@
 				item: "gtceu:ulv_stone_barrel"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 11.0d
 			y: 16.5d
 		}
 		{
@@ -1842,7 +1841,7 @@
 				type: "item"
 			}]
 			title: "COBBLE GEN"
-			x: 11.0d
+			x: 12.5d
 			y: 16.5d
 		}
 		{
@@ -1884,7 +1883,7 @@
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.5d
 			y: 10.5d
 		}
 		{
@@ -1899,7 +1898,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 10.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
@@ -2069,7 +2068,6 @@
 				"6F1BB9A99918F256"
 				"55B15054D3B78F2E"
 				"2B99C65945F68A8E"
-				"43A9AA9BB750AEA2"
 			]
 			dependency_requirement: "one_completed"
 			hide_dependent_lines: true
@@ -2113,7 +2111,6 @@
 		}
 		{
 			dependencies: ["26B8FCAD39A84649"]
-			hide_dependent_lines: true
 			id: "3ACDDC1DEF389851"
 			tasks: [
 				{
@@ -2218,7 +2215,10 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["53BA24466D74ADE2"]
+			dependencies: [
+				"0A8FE243A5A8CC64"
+				"301FF7F900A30DC7"
+			]
 			id: "12CC4B7507E55BEC"
 			shape: "rsquare"
 			tasks: [{
@@ -2226,8 +2226,8 @@
 				item: "gtceu:solid_blast_furnace"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 4.5d
+			x: 14.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6974D4ADDEA9535F"]
@@ -2325,18 +2325,14 @@
 				item: "gtceu:reinforced_blast_furnace"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: 7.5d
 		}
 		{
 			dependencies: ["50F2743FA699173A"]
+			description: ["1 may be missing hmmm...."]
 			id: "5646A9F01BD60975"
 			tasks: [
-				{
-					id: "47EBB5D6D060417A"
-					item: "gtceu:lp_steam_extractor"
-					type: "item"
-				}
 				{
 					id: "5EECCE772767FF9D"
 					item: "gtceu:lp_steam_macerator"
@@ -2358,9 +2354,9 @@
 					type: "item"
 				}
 			]
-			title: "Steam Machines"
-			x: 5.0d
-			y: 9.0d
+			title: "Low Pressure Steam Machines"
+			x: 8.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -2378,7 +2374,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["0091DD5DAE9FDF9C"]
+			dependencies: [
+				"0091DD5DAE9FDF9C"
+				"40B1212619EC3444"
+			]
 			id: "7DC45B6F1A400CFF"
 			tasks: [
 				{
@@ -2397,7 +2396,10 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["0091DD5DAE9FDF9C"]
+			dependencies: [
+				"0091DD5DAE9FDF9C"
+				"40B1212619EC3444"
+			]
 			id: "6D262ABDB7EEC605"
 			tasks: [
 				{
@@ -2426,6 +2428,7 @@
 					type: "item"
 				}
 			]
+			title: "High Pressure Steam Machines"
 			x: 15.5d
 			y: 10.5d
 		}
@@ -2441,12 +2444,12 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 7.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
 				"5F808C6A353FF66D"
-				"3149BE5A8D986443"
+				"3A3BD0ECA7FC8D38"
 			]
 			id: "08085ED3830FD51A"
 			tasks: [{
@@ -2456,10 +2459,14 @@
 			}]
 			title: "Cinder Block"
 			x: 11.0d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["410385DA7FBBD2FA"]
+			dependencies: [
+				"410385DA7FBBD2FA"
+				"40B1212619EC3444"
+				"59A805C314717BA0"
+			]
 			id: "4FB04EF25E12F5FA"
 			shape: "rsquare"
 			tasks: [{
@@ -2467,8 +2474,8 @@
 				item: "gtceu:steam_ore_factory"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 10.5d
+			x: 9.5d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -2486,7 +2493,10 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["410385DA7FBBD2FA"]
+			dependencies: [
+				"410385DA7FBBD2FA"
+				"40B1212619EC3444"
+			]
 			hide_dependent_lines: true
 			id: "43A9AA9BB750AEA2"
 			shape: "rsquare"
@@ -2495,11 +2505,14 @@
 				item: "gtceu:high_pressure_steam_hammer"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 12.0d
+			x: 11.0d
+			y: 10.5d
 		}
 		{
-			dependencies: ["1645E2B5BEFA80A3"]
+			dependencies: [
+				"5EECCE772767FF9D"
+				"3149BE5A8D986443"
+			]
 			id: "5ECB647132181811"
 			shape: "rsquare"
 			tasks: [{
@@ -2511,7 +2524,10 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["1645E2B5BEFA80A3"]
+			dependencies: [
+				"7CE5B2326A9384BB"
+				"3149BE5A8D986443"
+			]
 			id: "2C523380159EEA69"
 			shape: "rsquare"
 			tasks: [{
@@ -2519,7 +2535,7 @@
 				item: "gtceu:steam_oven"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 5.0d
 			y: 10.5d
 		}
 		{
@@ -2535,7 +2551,10 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["410385DA7FBBD2FA"]
+			dependencies: [
+				"410385DA7FBBD2FA"
+				"40B1212619EC3444"
+			]
 			id: "02C057D90BC7F0E1"
 			tasks: [{
 				id: "5C9C04486D129616"
@@ -2732,7 +2751,7 @@
 				type: "item"
 			}]
 			x: 14.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5F808C6A353FF66D"]
@@ -2744,7 +2763,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -2881,7 +2900,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -2916,7 +2935,11 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1645E2B5BEFA80A3"]
+			dependencies: [
+				"19A0099F62CB5FF1"
+				"3149BE5A8D986443"
+			]
+			hide_dependency_lines: true
 			id: "4619505A5DF24551"
 			shape: "rsquare"
 			tasks: [{
@@ -2924,8 +2947,8 @@
 				item: "gtceu:steam_kiln"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 10.5d
+			x: 5.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["684FAA520167CC51"]
@@ -3077,7 +3100,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6994BA308DC55ED2"]
@@ -3107,6 +3130,7 @@
 			dependencies: [
 				"6D8C2361716CEFCF"
 				"5F808C6A353FF66D"
+				"2553971E9363D952"
 			]
 			id: "0D18A28F0FF10EEA"
 			tasks: [{
@@ -3158,7 +3182,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2A7C8C43D6D58B93"]
@@ -3181,8 +3205,8 @@
 				item: "gtceu:ulv_advanced_composter"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 13.5d
+			x: 14.0d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -3213,17 +3237,6 @@
 			}]
 			x: 9.5d
 			y: 3.0d
-		}
-		{
-			dependencies: ["4D8EFEA7036CD327"]
-			id: "79547F5987395AF4"
-			tasks: [{
-				id: "6221142530A352E0"
-				item: "gtceu:tantalum_capacitor"
-				type: "item"
-			}]
-			x: 14.0d
-			y: 4.5d
 		}
 		{
 			dependencies: ["4936CD72CB6A7C89"]
@@ -3287,7 +3300,7 @@
 				item: "minecraft:rooted_dirt"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 8.0d
 			y: 16.5d
 		}
 		{
@@ -3336,7 +3349,7 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
+			x: 9.5d
 			y: 16.5d
 		}
 		{
@@ -3349,14 +3362,11 @@
 				type: "item"
 			}]
 			x: 17.0d
-			y: 7.5d
+			y: 4.5d
 		}
 		{
-			dependencies: [
-				"224916FFC857C099"
-				"47EBB5D6D060417A"
-			]
-			hide_dependency_lines: true
+			dependencies: ["1645E2B5BEFA80A3"]
+			description: [""]
 			id: "60FC1A065E7E0D7D"
 			tasks: [{
 				id: "3E9B53693FF7E4FE"
@@ -3365,6 +3375,33 @@
 			}]
 			x: 9.5d
 			y: 9.0d
+		}
+		{
+			dependencies: [
+				"5F808C6A353FF66D"
+				"2553971E9363D952"
+			]
+			hide_dependent_lines: true
+			id: "40B1212619EC3444"
+			tasks: [{
+				id: "39795D429EFD8D06"
+				item: "gtceu:tin_alloy_ingot"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["291A793E984F63CC"]
+			hide_dependent_lines: true
+			id: "2553971E9363D952"
+			tasks: [{
+				id: "77CD9C257EB7DC7C"
+				item: "gtceu:lp_steam_extractor"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 10.5d
 		}
 	]
 	title: "So It Begins"

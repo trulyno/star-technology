@@ -10,7 +10,8 @@ ServerEvents.recipes(event => {
 
     }
     noSmeltDustToIngot('potin');
-    noSmeltDustToIngot('red_alloy')
+    noSmeltDustToIngot('red_alloy');
+    noSmeltDustToIngot('tin_alloy');
 
     const CreateMixing = (output,inputs,heat) => {
         event.recipes.create.mixing(output, inputs).heatRequirement(`${heat}`);
@@ -18,10 +19,11 @@ ServerEvents.recipes(event => {
     CreateMixing('2x gtceu:pig_iron_dust', ['2x gtceu:iron_dust', 'gtceu:charcoal_dust'], 'lowheated');
     CreateMixing(Fluid.of('gtceu:cast_iron', 288), ['2x gtceu:crude_cast_iron_dust', 'gtceu:tiny_bismuth_dust', '2x gtceu:tiny_copper_dust'], 'superheated');
     CreateMixing('9x gtceu:potin_dust', ['6x gtceu:copper_dust','2x gtceu:tin_dust', 'gtceu:lead_dust'], 'lowheated');
+    CreateMixing('2x gtceu:tin_alloy_dust', ['gtceu:iron_dust','gtceu:tin_dust'], 'lowheated');
     CreateMixing(Fluid.of('gtceu:crude_wrought_iron', 288), ['2x gtceu:pig_iron_ingot', 'gtceu:charcoal_dust'], 'superheated');
     CreateMixing(Fluid.of('gtceu:red_alloy', 720), ['gtceu:copper_dust', '4x minecraft:redstone'], 'superheated');
 
-    ['brass', 'bronze', 'pig_iron'].forEach(dust => {
+    ['brass', 'bronze', 'pig_iron', 'tin_alloy'].forEach(dust => {
 		event
 			.blasting(`gtceu:${dust}_ingot`, `gtceu:${dust}_dust`)
 			.id(`kubejs:${dust}_dust_blasting_manual_only`);
@@ -47,6 +49,14 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:reinforced_blast_furnace')
         .duration(300)
         .EUt(6);
+
+    event.recipes.gtceu.assembler('solid_blast_furnace')
+        .itemInputs('gtceu:rugged_alloyer', '2x gtceu:double_steel_plate', '2x gtceu:steel_gear', 
+            '2x #gtceu:circuits/ulv' ,'kubejs:ulv_conveyor_module', 'kubejs:ulv_robot_arm')
+        .inputFluids('gtceu:steel 432')
+        .itemOutputs('gtceu:solid_blast_furnace')
+        .duration(300)
+        .EUt(8);
 
     event.recipes.gtceu.assembler('bessemer_forgery')
         .itemInputs('gtceu:solid_machine_casing','4x gtceu:long_steel_rod','4x #gtceu:circuits/lv','create:basin','2x gtceu:potin_gear',
@@ -102,19 +112,19 @@ ServerEvents.recipes(event => {
         .EUt(100);
     
     event.remove({type: 'gtceu:electric_blast_furnace',output: 'gtceu:steel_ingot'});
-    [{type:'iron',time:'2400',eut:100,id:'minecraft'},{type:'wrought_iron',time:'1200',eut:30,id:'gtceu'}].forEach(ferrite=>{
+    [{type:'iron',eut:100,id:'minecraft'},{type:'wrought_iron',eut:30,id:'gtceu'}].forEach(ferrite=>{
     
         event.recipes.gtceu.bessemer_forge(`bulk_steel_from_${ferrite.type}_boosted`)
             .itemInputs(`${ferrite.id}:${ferrite.type}_block`)
             .outputFluids('gtceu:steel 1296')
-            .duration(8.5 * ferrite.time)
+            .duration(8.5 * 1200)
             .EUt(ferrite.eut);
 
         [{type:'coal',id:'#gtceu:coal_dusts',multi:.9},{type:'coke',id:'#forge:dusts/coke',multi:.8},{type:'non',id:'',multi:1}].forEach(coal=>{
         event.recipes.gtceu.bessemer_forge(`steel_from_${ferrite.type}_${coal.type}_boosted`)
             .itemInputs(`#forge:ingots/${ferrite.type}`,`${coal.id}`)
             .outputFluids('gtceu:steel 144')
-            .duration(ferrite.time * coal.multi)
+            .duration(1200 * coal.multi)
             .EUt(ferrite.eut);
         })
     });
@@ -126,7 +136,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(outputSolid[0],outputSolid[1],`${amount}x gtceu:tiny_${ash}ash_dust`)
             .duration(dura * duraChange);
     }
-    SolidBlast('andesite_alloy',['10x create:andesite_alloy','gtceu:sulfur_dust'],['2x minecraft:andesite','gtceu:sphalerite_dust'],400);
+    SolidBlast('andesite_alloy',['10x create:andesite_alloy','gtceu:sulfur_dust'],['2x minecraft:andesite','2x gtceu:sphalerite_dust'],400);
     SolidBlast('rose_quartz-ite',['1x create:rose_quartz','gtceu:tiny_quartz_sand_dust'],['gtceu:quartzite_gem','10x minecraft:redstone'],400);
     SolidBlast('rose_quartz',['1x create:rose_quartz','gtceu:tiny_quartz_sand_dust'],['minecraft:quartz','8x minecraft:redstone'],480);
     }

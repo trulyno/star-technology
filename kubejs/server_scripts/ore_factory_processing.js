@@ -123,15 +123,15 @@ const primitive_processing = (event, materialObj) => {
     // });
     // Commented out in HM
     
-    event.recipes.gtceu.steam_ore_processing(`${materialObj.material}`)
-            .itemInputs(crushed_ore(materialObj.material,  1))
-            .inputFluids(fluids.water)
-            .itemOutputs(dust(materialObj.material, 1))
-            .chancedOutput(dust(materialObj.material,  1), 5000, 0)
-            .chancedOutput(dust(materialObj.secondary,  1), 2500, 0)
-            .chancedOutput(dust(materialObj.tertiary,  1), 1250, 0)
-            .duration(240)
-            .EUt(GTValues.VA[GTValues.ULV]);
+    // event.recipes.gtceu.steam_ore_processing(`${materialObj.material}`)
+    //         .itemInputs(crushed_ore(materialObj.material,  1))
+    //         .inputFluids(fluids.water)
+    //         .itemOutputs(dust(materialObj.material, 1))
+    //         .chancedOutput(dust(materialObj.material,  1), 5000, 0)
+    //         .chancedOutput(dust(materialObj.secondary,  1), 2500, 0)
+    //         .chancedOutput(dust(materialObj.tertiary,  1), 1250, 0)
+    //         .duration(240)
+    //         .EUt(GTValues.VA[GTValues.ULV]);
     // Likely comment out too and have new thing in resource gen for HM
 };
 
@@ -253,18 +253,18 @@ ServerEvents.recipes(event => {
     // });
     // Needs to be commented out in HM
 
-    event.shaped(Item.of('gtceu:steam_ore_factory'), [
-        'HRS',
-        'PBR',
-        'FRS'
-    ], {
-        H: '#forge:tools/hammers',
-        R: 'gtceu:invar_rod',
-        S: 'gtceu:invar_screw',
-        P: 'gtceu:invar_plate',
-        B: 'gtceu:steam_machine_casing',
-        F: '#forge:tools/screwdrivers'
-    });
+    // event.shaped(Item.of('gtceu:steam_ore_factory'), [
+    //     'HRS',
+    //     'PBR',
+    //     'FRS'
+    // ], {
+    //     H: '#forge:tools/hammers',
+    //     R: 'gtceu:invar_rod',
+    //     S: 'gtceu:invar_screw',
+    //     P: 'gtceu:invar_plate',
+    //     B: 'gtceu:steam_machine_casing',
+    //     F: '#forge:tools/screwdrivers'
+    // });
 
     event.shaped(Item.of('gtceu:electric_ore_factory'), [
         'GCG', 

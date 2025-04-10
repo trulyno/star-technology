@@ -28,8 +28,7 @@ ServerEvents.recipes(event => {
 		'create:crafting/kinetics/shaft',
 		'create:crafting/kinetics/belt_connector',
 		'minecraft:crafting_table',
-		'gtceu:shaped/iron_wire_single',
-		'gtceu:shaped/bronze_bricks_hull',
+		'gtceu:shaped/iron_wire_single'
 	].forEach(id => event.remove({ id: id }));
 
 	[

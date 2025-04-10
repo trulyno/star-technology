@@ -118,23 +118,6 @@ ServerEvents.recipes(event => {
 	
 		// ================================ Post Cobble-Gen, Pre-Circuit ================================
 	
-		event.recipes.create.mechanical_crafting('gtceu:bronze_brick_casing', [
-			'DDD',
-			'BBB'
-		], {
-			D: 'gtceu:double_bronze_plate',
-			B: 'minecraft:bricks'
-		});
-	
-		event.recipes.create.mechanical_crafting('gtceu:steel_brick_casing', [
-			'WSW',
-			'BBB'
-		], {
-			W: 'gtceu:double_wrought_iron_plate',
-			S: 'gtceu:double_steel_plate',
-			B: 'minecraft:bricks'
-		});
-	
 		event.recipes.create.mechanical_crafting('gtceu:latex_plantation', [
 			'RSR',
 			'PGP',
