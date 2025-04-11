@@ -124,6 +124,8 @@ ServerEvents.recipes(event => {
 			T: 'thermal:redstone_servo'
 		});
 
+	event.smelting('minecraft:slime_ball', 'thermal:slime_mushroom_spores').id('kjs:smelting/slitake_manual_only');
+
 	//Mass Removals
 
 	const ThermalRemoval = ['redstone_servo', 'device_tree_extractor', 'drill_head', 'fluid_cell_frame'];

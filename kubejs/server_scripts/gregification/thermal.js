@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(325);
 
-    event.smelting('minecraft:slime_ball', 'thermal:slime_mushroom_spores');
+    // event.smelting('minecraft:slime_ball', 'thermal:slime_mushroom_spores'); // Got Packmoded
 
     event.replaceInput({ id: 'thermal:device_water_gen' },
         'minecraft:copper_ingot',
