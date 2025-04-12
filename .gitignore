@@ -6,15 +6,17 @@
 !defaultconfigs/
 !kubejs/
 !mods/panorama/
-!scripts/
+!packmode/
 !panoramas/
+!scripts/
 
 # Add files in main directory
-!LICENSE
-!README.md
-!panorama.dat
-!.gitignore
 !.gitattributes
+!.gitignore
+!LICENSE
+!packmode_picker.bat
+!panorama.dat
+!README.md
 
 # Specific exclusion
 config/embeddium-fingerprint.json

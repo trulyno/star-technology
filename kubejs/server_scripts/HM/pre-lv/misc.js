@@ -1,13 +1,11 @@
 // packmode: hard
 
 ServerEvents.tags('item', event => {
-	const metals = [
+	[
 		'tin',
 		'zinc',
 		'lead',
-	];
-
-	metals.forEach(metal => {
+	].forEach(metal => {
 		event.removeAll(`forge:ingots/${metal}`);
 		event.removeAll(`forge:nuggets/${metal}`);
 
@@ -18,6 +16,11 @@ ServerEvents.tags('item', event => {
 	event.remove('minecraft:planks', 'gtceu:wood_plate');
 	event.remove('minecraft:planks', 'gtceu:treated_wood_plate');
 });
+
+ServerEvents.tags('block', event => {
+	event.removeAll('create:windmill_sails');
+	event.add('create:windmill_sails', [/^create:.*_sail/, 'create:sail_frame']);
+})
 
 ServerEvents.recipes(event => {
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
@@ -106,23 +109,25 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: 'gtceu:smelting/wrought_iron_nugget' });
 
-		event.replaceInput({type: 'gtceu:fluid_solidifier'}, 'gtceu:ball_casting_mold', '#kubejs:ball_casting_mold');
-		event.replaceInput({type: 'gtceu:fluid_solidifier'}, 'gtceu:ingot_casting_mold', '#kubejs:ingot_casting_mold');
-	
-		// ================================ Post Cobble-Gen, Pre-Circuit ================================
-	
-		event.recipes.create.mechanical_crafting('gtceu:latex_plantation', [
-			'RSR',
-			'PGP',
-			'BTB'
-		], {
-			R: 'gtceu:iron_rod',
-			S: 'gtceu:lead_spring',
-			P: 'gtceu:iron_plate',
-			G: '#forge:glass',
-			B: 'minecraft:bricks',
-			T: 'thermal:redstone_servo'
-		});
+	event.replaceInput({ type: 'gtceu:fluid_solidifier' }, 'gtceu:ball_casting_mold', '#kubejs:ball_casting_mold');
+	event.replaceInput({ type: 'gtceu:fluid_solidifier' }, 'gtceu:ingot_casting_mold', '#kubejs:ingot_casting_mold');
+
+	// ================================ Post Cobble-Gen, Pre-Circuit ================================
+
+	event.recipes.create.mechanical_crafting('gtceu:latex_plantation', [
+		'RSR',
+		'PGP',
+		'BTB'
+	], {
+		R: 'gtceu:iron_rod',
+		S: 'gtceu:lead_spring',
+		P: 'gtceu:iron_plate',
+		G: '#forge:glass',
+		B: 'minecraft:bricks',
+		T: 'thermal:redstone_servo'
+	});
+
+	event.smelting('minecraft:slime_ball', 'thermal:slime_mushroom_spores').id('kjs:smelting/slitake_manual_only');
 
 	//Mass Removals
 
