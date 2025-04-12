@@ -18,12 +18,14 @@ recipes:
 
   # Whether to nerf Wood crafting to 2 Planks from 1 Log, and 2 Sticks from 2 Planks.
   # Default: false
-  nerfWoodCrafting: true
+  nerfWoodCrafting: false
+  # Packmode Sensitivity
 
   # Whether to make Wood related recipes harder.
   # Excludes sticks and planks.
   # Default: false
-  hardWoodRecipes: true
+  hardWoodRecipes: false
+  # Packmode Sensitivity
 
   # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
   # Default: true
@@ -31,12 +33,14 @@ recipes:
 
   # Whether to make Redstone related recipes harder.
   # Default: false
-  hardRedstoneRecipes: true
+  hardRedstoneRecipes: false
+  # Packmode Sensitivity
 
   # Whether to make Vanilla Tools and Armor recipes harder.
   # Excludes Flint and Steel, and Buckets.
   # Default: false
-  hardToolArmorRecipes: true
+  hardToolArmorRecipes: false
+  # Packmode Sensitivity
 
   # Whether to make miscellaneous recipes harder.
   # Default: false
@@ -47,7 +51,8 @@ recipes:
 
   # Whether to nerf the Paper crafting recipe.
   # Default: true
-  nerfPaperCrafting: true
+  nerfPaperCrafting: false
+  # Packmode Sensitivity
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
   # Default: false
@@ -87,7 +92,8 @@ recipes:
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: true
-  enchantedTools: false
+  enchantedTools: true
+  # Packmode Sensitivity
 
 worldgen:
   # Rubber Tree spawn chance (decimal % per chunk)
@@ -215,7 +221,8 @@ machines:
 
   # Whether to enable World Accelerators, which accelerate ticks for surrounding Tile Entities, Crops, etc.
   # Default: true
-  enableWorldAccelerators: false
+  enableWorldAccelerators: true
+  # Packmode Sensitivity # DO NOT COMMIT until all dynamos are added to Blacklist
 
   # List of TileEntities that the World Accelerator should not accelerate.
   # GregTech TileEntities are always blocked.
@@ -288,7 +295,8 @@ machines:
   # Whether the Assembly Line should require the fluid inputs to be in order.
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
   # Default: false
-  orderedAssemblyLineFluids: true
+  orderedAssemblyLineFluids: false
+  # Packmode Sensitivity
 
   # Default maximum parallel of steam multiblocks
   # Default: 8
@@ -509,12 +517,14 @@ compat:
     # Forge Energy to GTEU ratio for converting FE to EU.
     # Only affects converters.
     # Default: 4 FE == 1 EU
-    feToEuRatio: 16
+    feToEuRatio: 4
+    # Packmode Sensitivity
 
     # GTEU to Forge Energy ratio for converting EU to FE.
     # Affects native conversion and Converters.
     # Default: 4 FE == 1 EU
-    euToFeRatio: 16
+    euToFeRatio: 4
+    # Packmode Sensitivity
 
   # Config options regarding GTCEu compatibility with AE2
   ae2:
