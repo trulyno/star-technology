@@ -222,7 +222,7 @@ machines:
   # Whether to enable World Accelerators, which accelerate ticks for surrounding Tile Entities, Crops, etc.
   # Default: true
   enableWorldAccelerators: true
-  # Packmode Sensitivity # DO NOT COMMIT until all dynamos are added to Blacklist
+  # Packmode Sensitivity
 
   # List of TileEntities that the World Accelerator should not accelerate.
   # GregTech TileEntities are always blocked.
