@@ -1656,7 +1656,7 @@
 			]
 			title: "Bronze/Brass"
 			x: -2.5d
-			y: 13.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1B5EA867C67903E4"]
@@ -1846,7 +1846,7 @@
 		}
 		{
 			dependencies: ["049DA0A4C3E5EFFF"]
-			description: ["You can scavenge this btw"]
+			description: ["You can scavenge this btw, though your hands may not be the best"]
 			id: "6A03D191A42F4F4C"
 			shape: "gear"
 			size: 1.25d
@@ -2195,7 +2195,6 @@
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			title: "Vacuum Array"
 			x: 9.5d
 			y: 4.5d
 		}
@@ -2247,6 +2246,7 @@
 			dependencies: [
 				"5F808C6A353FF66D"
 				"0C3E73B7FB53E836"
+				"6D8C2361716CEFCF"
 			]
 			hide_dependent_lines: true
 			id: "410385DA7FBBD2FA"
@@ -2732,6 +2732,7 @@
 			dependencies: [
 				"5F808C6A353FF66D"
 				"6F1BB9A99918F256"
+				"6D8C2361716CEFCF"
 			]
 			id: "2B99C65945F68A8E"
 			tasks: [{
@@ -2754,7 +2755,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["5F808C6A353FF66D"]
+			dependencies: [
+				"5F808C6A353FF66D"
+				"6D8C2361716CEFCF"
+			]
 			hide_dependent_lines: true
 			id: "291A793E984F63CC"
 			tasks: [{
@@ -2908,6 +2912,7 @@
 				"19EFB33C0B250C49"
 				"301FF7F900A30DC7"
 				"0A8FE243A5A8CC64"
+				"3A776D5D86EF8068"
 			]
 			id: "0E113E08C05B0914"
 			tasks: [{
@@ -3104,7 +3109,6 @@
 		}
 		{
 			dependencies: ["6994BA308DC55ED2"]
-			hide_dependent_lines: true
 			id: "5D444419C0FB9603"
 			tasks: [{
 				id: "24BACDDAA9779EFF"
@@ -3380,6 +3384,7 @@
 			dependencies: [
 				"5F808C6A353FF66D"
 				"2553971E9363D952"
+				"6D8C2361716CEFCF"
 			]
 			hide_dependent_lines: true
 			id: "40B1212619EC3444"
@@ -3402,6 +3407,21 @@
 			}]
 			x: 9.5d
 			y: 10.5d
+		}
+		{
+			dependencies: [
+				"224916FFC857C099"
+				"153EBFA7C41BE761"
+			]
+			dependency_requirement: "one_completed"
+			id: "18E437A527887211"
+			tasks: [{
+				id: "5708CEDD301A3A12"
+				item: "gtceu:ulv_auto_scavenger"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 13.5d
 		}
 	]
 	title: "So It Begins"

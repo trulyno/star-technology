@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:steel 432')
         .itemOutputs('gtceu:solid_blast_furnace')
         .duration(300)
-        .EUt(8);
+        .EUt(7);
 
     event.recipes.gtceu.assembler('bessemer_forgery')
         .itemInputs('gtceu:solid_machine_casing','4x gtceu:long_steel_rod','4x #gtceu:circuits/lv','create:basin','2x gtceu:potin_gear',
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:steel 1152')
         .itemOutputs('gtceu:bessemer_forgery')
         .duration(400)
-        .EUt(10);
+        .EUt(8);
 
     event.remove({type: 'gtceu:primitive_blast_furnace'});
     
@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.electric_blast_furnace('potin')
         .itemInputs('gtceu:potin_dust')
         .itemOutputs('gtceu:potin_ingot')
-        .duration(170)
+        .duration(160)
         .blastFurnaceTemp(1000)
         .EUt(100);
     

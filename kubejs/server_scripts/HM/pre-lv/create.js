@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
 	], {
 		P: 'gtceu:pig_iron_plate',
 		M: '#forge:tools/mallets',
-		R: 'gtceu:copper_small_fluid_pipe',
+		R: 'gtceu:copper_tiny_fluid_pipe',
 		F: 'gtceu:pig_iron_frame',
 		H: '#forge:tools/hammers'
 	});
@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
 	], {
 		P: 'gtceu:treated_wood_plate',
 		M: '#forge:tools/mallets',
-		A: 'gtceu:double_brass_plate',
+		A: 'gtceu:brass_plate',
 		F: 'gtceu:treated_wood_frame',
 		H: '#forge:tools/hammers'
 	});

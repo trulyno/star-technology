@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('AAAAA', 'AA@AA', 'AAAAA', '#B#B#') 
             .where('A', Predicates.blocks('gtceu:industrial_steam_casing')
 				.or(Predicates.abilities(PartAbility.STEAM_IMPORT_ITEMS).setPreviewCount(1).setMaxGlobalLimited(2))
-                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(0).setMaxGlobalLimited(2))
+                .or(Predicates.blocks('gtceu:ulv_fluid_input').setPreviewCount(1).setMaxGlobalLimited(2))
                 .or(Predicates.abilities(PartAbility.STEAM).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.STEAM_EXPORT_ITEMS).setPreviewCount(1).setMaxGlobalLimited(2)))
 			.where('#', Predicates.any())

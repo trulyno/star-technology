@@ -127,4 +127,19 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(inter, inter)
     ]).transitionalItem(inter).loops(1);
 
+    const PrimSifter = (input,mesh,output) => {
+    event.recipes.gtceu.primitive_sifter(`${input}_${mesh}`)
+        .itemInputs(`16x ${input}`)
+        .notConsumable(`exnihilosequentia:${mesh}_mesh`)
+        .itemOutputs(`8x ${output}`)
+        .duration(300)
+        .EUt(10);
+    }
+    PrimSifter('minecraft:sand','string','minecraft:coal');
+    PrimSifter('minecraft:sand','flint','minecraft:lapis_lazuli');
+    PrimSifter('minecraft:sand','iron','minecraft:diamond');
+    PrimSifter('exnihilosequentia:dust','string','minecraft:quartz');
+    PrimSifter('exnihilosequentia:dust','flint','minecraft:amethyst_shard');
+    PrimSifter('exnihilosequentia:dust','iron','minecraft:ender_pearl');
+
 });

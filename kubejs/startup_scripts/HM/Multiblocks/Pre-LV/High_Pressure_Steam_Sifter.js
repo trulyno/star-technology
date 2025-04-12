@@ -5,7 +5,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('primitive_sifter')
         .category('primitive_sifter')
         .setEUIO('in')
-        .setMaxIOSize(2, 4, 0, 0)
+        .setMaxIOSize(2, 1, 0, 0)
         .setSound(GTSoundEntries.CENTRIFUGE);
 
 });
