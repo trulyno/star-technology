@@ -50,6 +50,7 @@ ServerEvents.recipes(event => {
 	].forEach(type => event.remove({ type: type }));
 
 	event.remove({ input: /^exnihilosequentia:.*_pebble/ });
+	event.remove({ output: 'exnihilosequentia:unfired_crucible' });
 
 	event.forEachRecipe([{ type: 'minecraft:smelting' }, { type: 'minecraft:blasting' }], recipe => {
 		event.remove({ id: recipe.getId() });
