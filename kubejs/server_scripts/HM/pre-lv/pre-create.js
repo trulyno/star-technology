@@ -85,6 +85,17 @@ ServerEvents.recipes(event => {
 		C: '#forge:cobblestone'
 	});
 
+	event.shaped(Item.of('gtceu:flisnt_scythe'), [
+		'FFT',
+		'RST',
+		'  T'
+	], {
+		S: '#forge:string',
+		F: 'minecraft:flint',
+		T: '#forge:rods/wood',
+		R: 'kubejs:flint_shard'
+	});
+
 	event.shaped(Item.of('exnihilosequentia:wooden_crook'), [
 		'TT',
 		'ST',

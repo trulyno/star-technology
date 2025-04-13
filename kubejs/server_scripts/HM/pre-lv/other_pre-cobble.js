@@ -363,4 +363,16 @@ ServerEvents.recipes(event => {
 		.chancedOutput('kubejs:flint_shard', 6500, 0)
 		.duration(200);
 
+	event.recipes.create.mechanical_crafting('gtceu:ulv_advanced_composter',[
+		'PRP',
+		'PGP',
+		'ISI'
+	],{
+		P: 'gtceu:treated_wood_slab',
+		G: 'minecraft:glass',
+		R: 'gtceu:iron_gear',
+		I: 'gtceu:iron_plate',
+		S: 'thermal:redstone_servo'
+	});
+
 });

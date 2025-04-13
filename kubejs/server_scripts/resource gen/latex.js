@@ -28,18 +28,19 @@ ServerEvents.recipes(event => {
         .EUt(8);
 
     //Controller Block
-	event.shaped('gtceu:latex_plantation', [
-		'RSR',
-		'PGP',
-		'BTB'
-	], {
-		R: 'gtceu:iron_rod',
-		S: 'gtceu:lead_spring',
-		P: 'gtceu:iron_plate',
-		G: '#forge:glass',
-		B: 'minecraft:bricks',
-		T: 'thermal:redstone_servo'
-	});
+	//commented out for HM
+    // event.shaped('gtceu:latex_plantation', [
+	// 	'RSR',
+	// 	'PGP',
+	// 	'BTB'
+	// ], {
+	// 	R: 'gtceu:iron_rod',
+	// 	S: 'gtceu:lead_spring',
+	// 	P: 'gtceu:iron_plate',
+	// 	G: '#forge:glass',
+	// 	B: 'minecraft:bricks',
+	// 	T: 'thermal:redstone_servo'
+	// });
 
     //Usage
     event.recipes.gtceu.latex_plantation(`latex`)

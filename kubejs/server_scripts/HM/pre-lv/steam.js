@@ -67,6 +67,8 @@ ServerEvents.recipes(event => {
     SteamCasing('gtceu','industrial_steam_casing',false,'double_brass');
     SteamCasing('gtceu','bronze_machine_casing',false,'double_bronze');
     SteamCasing('gtceu','steel_machine_casing',false,'double_cast_iron');
+    SteamCasing('gtceu','ulv_machine_casing',false,'wrought_iron');
+
 
     const BrickedCasing = (block,brick) => {
         const material = (block == 'steel') ? 'cast_iron' : `${block}` ;

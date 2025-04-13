@@ -371,57 +371,58 @@ ServerEvents.recipes(event => {
         // .addCondition($RockBreakerCondition.INSTANCE);
     });
 
-    event.shaped(Item.of('create_new_age:carbon_brushes'), [
-        'SCS',
-        'KsK',
-        'SSS'
-    ], {
-        S: 'gtceu:steel_plate',
-        C: '#gtceu:circuits/lv',
-        K: 'minecraft:charcoal',
-        s: 'create:shaft'
-    });
-
-    event.shaped(Item.of('create_new_age:magnetite_block'), [
-        'SMS',
-        'MSM',
-        'SMS'
-    ], {
-        S: 'minecraft:stone',
-        M: 'gtceu:magnetite_dust'
-    });
-
-    event.shaped(Item.of('3x create_new_age:redstone_magnet'), [
-        'MRM',
-        'RBR',
-        'MRM'
-    ], {
-        B: 'create_new_age:magnetite_block',
-        R: 'minecraft:redstone',
-        M: 'gtceu:magnetite_dust'
-    });
-
-    event.shaped(Item.of('3x create:belt_connector'), [
-        'RRR'
-    ], {
-        R: 'gtceu:rubber_plate'
-    });
-
-    //plates
-    // ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron'].forEach(type => {
-    //     event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`);
+    // Commented out for HM
+    // event.shaped(Item.of('create_new_age:carbon_brushes'), [
+    //     'SCS',
+    //     'KsK',
+    //     'SSS'
+    // ], {
+    //     S: 'gtceu:steel_plate',
+    //     C: '#gtceu:circuits/lv',
+    //     K: 'minecraft:charcoal',
+    //     s: 'create:shaft'
     // });
+
+    // event.shaped(Item.of('create_new_age:magnetite_block'), [
+    //     'SMS',
+    //     'MSM',
+    //     'SMS'
+    // ], {
+    //     S: 'minecraft:stone',
+    //     M: 'gtceu:magnetite_dust'
+    // });
+
+    // event.shaped(Item.of('3x create_new_age:redstone_magnet'), [
+    //     'MRM',
+    //     'RBR',
+    //     'MRM'
+    // ], {
+    //     B: 'create_new_age:magnetite_block',
+    //     R: 'minecraft:redstone',
+    //     M: 'gtceu:magnetite_dust'
+    // });
+
+    // event.shaped(Item.of('3x create:belt_connector'), [
+    //     'RRR'
+    // ], {
+    //     R: 'gtceu:rubber_plate'
+    // });
+
+    // //plates
+    // // ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron'].forEach(type => {
+    // //     event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`);
+    // // });
   
     event.replaceInput({id: 'enderchests:ender_pouch'}, 'minecraft:leather', 'gtceu:carbon_fiber_plate');
-    event.shaped(Item.of('create_new_age:netherite_magnet'), [
-        'MNM',
-        'NEN',
-        'MNM'
-    ], {
-        M: 'create_new_age:fluxuateted_magnetite',
-        N: 'gtceu:neodymium_ingot',
-        E: 'gtceu:energium_dust'
-    });
+    // event.shaped(Item.of('create_new_age:netherite_magnet'), [
+    //     'MNM',
+    //     'NEN',
+    //     'MNM'
+    // ], {
+    //     M: 'create_new_age:fluxuateted_magnetite',
+    //     N: 'gtceu:neodymium_ingot',
+    //     E: 'gtceu:energium_dust'
+    // });
 
     event.recipes.thermal.lapidary_fuel('gtceu:diatron_gem', 750000);
     event.recipes.thermal.lapidary_fuel('gtceu:flawless_diatron_gem', 750000 * 2.5);

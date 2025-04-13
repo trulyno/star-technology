@@ -1333,8 +1333,8 @@
 				title: "Any #forge:tools/screwdrivers"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 0.0d
+			x: 8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1617,8 +1617,9 @@
 		{
 			dependencies: [
 				"65DA1BDA4D9A9B56"
-				"6D8C2361716CEFCF"
+				"6C9CBCF4C1B1495E"
 			]
+			dependency_requirement: "one_completed"
 			id: "60F06370DBED59EB"
 			tasks: [
 				{
@@ -1743,7 +1744,6 @@
 			dependencies: ["684FAA520167CC51"]
 			description: ["Has bug with fluid output need to fix"]
 			hide_dependent_lines: true
-			hide_until_deps_complete: true
 			id: "5D7047EF3399D10B"
 			tasks: [{
 				id: "03EDE887E0E0F5F5"
@@ -1877,7 +1877,6 @@
 		{
 			dependencies: ["50F2743FA699173A"]
 			id: "70A7945B18761012"
-			invisible: true
 			tasks: [{
 				id: "18B510DD95815457"
 				item: "gtceu:lp_steam_solid_boiler"
@@ -2732,7 +2731,7 @@
 			dependencies: [
 				"5F808C6A353FF66D"
 				"6F1BB9A99918F256"
-				"6D8C2361716CEFCF"
+				"6C9CBCF4C1B1495E"
 			]
 			id: "2B99C65945F68A8E"
 			tasks: [{
@@ -2757,7 +2756,7 @@
 		{
 			dependencies: [
 				"5F808C6A353FF66D"
-				"6D8C2361716CEFCF"
+				"6C9CBCF4C1B1495E"
 			]
 			hide_dependent_lines: true
 			id: "291A793E984F63CC"
@@ -2912,7 +2911,6 @@
 				"19EFB33C0B250C49"
 				"301FF7F900A30DC7"
 				"0A8FE243A5A8CC64"
-				"3A776D5D86EF8068"
 			]
 			id: "0E113E08C05B0914"
 			tasks: [{
@@ -2959,27 +2957,40 @@
 			dependencies: ["684FAA520167CC51"]
 			hide_dependency_lines: true
 			id: "71A523823C7ED594"
-			tasks: [{
-				id: "306B0F891D2176CA"
-				item: "create_new_age:magnetite_block"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "306B0F891D2176CA"
+					item: "create_new_age:magnetite_block"
+					type: "item"
+				}
+				{
+					id: "281980C33CD11ACF"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+			]
 			x: 8.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["19EFB33C0B250C49"]
+			dependencies: [
+				"19EFB33C0B250C49"
+				"410385DA7FBBD2FA"
+			]
 			id: "7B924B1A6E62E17E"
 			tasks: [{
 				id: "5BE1478EA295EC1B"
 				item: "create_new_age:carbon_brushes"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -1.5d
+			x: 6.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["19EFB33C0B250C49"]
+			dependencies: [
+				"19EFB33C0B250C49"
+				"410385DA7FBBD2FA"
+			]
 			id: "127C2112998C1271"
 			tasks: [{
 				id: "37F5508D1FFE4C0F"
@@ -3132,9 +3143,9 @@
 		}
 		{
 			dependencies: [
-				"6D8C2361716CEFCF"
 				"5F808C6A353FF66D"
 				"2553971E9363D952"
+				"6C9CBCF4C1B1495E"
 			]
 			id: "0D18A28F0FF10EEA"
 			tasks: [{
@@ -3384,7 +3395,7 @@
 			dependencies: [
 				"5F808C6A353FF66D"
 				"2553971E9363D952"
-				"6D8C2361716CEFCF"
+				"6C9CBCF4C1B1495E"
 			]
 			hide_dependent_lines: true
 			id: "40B1212619EC3444"
@@ -3422,6 +3433,28 @@
 			}]
 			x: -2.5d
 			y: 13.5d
+		}
+		{
+			dependencies: [
+				"19A0099F62CB5FF1"
+				"6D8C2361716CEFCF"
+			]
+			hide_dependent_lines: true
+			id: "6C9CBCF4C1B1495E"
+			tasks: [
+				{
+					id: "51E98CF2C7C224AC"
+					item: "kubejs:ingot_ceramic_casting_mold"
+					type: "item"
+				}
+				{
+					id: "03F73614F58BE5A3"
+					item: "kubejs:ball_ceramic_casting_mold"
+					type: "item"
+				}
+			]
+			x: 2.75d
+			y: 8.25d
 		}
 	]
 	title: "So It Begins"

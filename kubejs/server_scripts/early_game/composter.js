@@ -1,15 +1,16 @@
 ServerEvents.recipes(event => {
 
-    event.shaped('gtceu:ulv_advanced_composter',[
-        'PRP',
-        'PGP',
-        'ISI'],{
-        P: 'gtceu:treated_wood_slab',
-        G: 'minecraft:glass',
-        R: 'gtceu:iron_gear',
-        I: 'gtceu:iron_plate',
-        S: 'thermal:redstone_servo'
-    });
+    // Commented out for HM
+    // event.shaped('gtceu:ulv_advanced_composter',[
+    //     'PRP',
+    //     'PGP',
+    //     'ISI'],{
+    //     P: 'gtceu:treated_wood_slab',
+    //     G: 'minecraft:glass',
+    //     R: 'gtceu:iron_gear',
+    //     I: 'gtceu:iron_plate',
+    //     S: 'thermal:redstone_servo'
+    // });
 
     function composting (odds, fuel) {
         event.recipes.gtceu.composting(fuel.split(':')[1])

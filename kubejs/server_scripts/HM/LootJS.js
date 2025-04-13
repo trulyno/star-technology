@@ -24,7 +24,15 @@ LootJS.modifiers((event) => {
 			.matchMainHand(Item.of('exnihilosequentia:wooden_crook'))
 			.addLoot(
 				LootEntry.of(`minecraft:${tree}_sapling`).when(c => c.randomChance(0.15)),
-				(tree == 'jungle') && LootEntry.of('minecraft:cocoa_beans').when(c => c.randomChance(0.01)),
+				(tree == 'jungle') && LootEntry.of('minecraft:cocoa_beans').when(c => c.randomChance(0.01))
 			);
+			//below borks
+		// event
+		// 	.addBlockLootModifier(`minecraft:${tree}_leaves`)
+		// 	.matchMainHand(Item.of('gtceu:flisnt_scythe'))
+		// 	.addLoot(
+		// 		LootEntry.of(`farmersdelight:straw`).when(c => c.randomChance(0.10)),
+		// 		LootEntry.of(`kubejs:plant_fibers`).when(c => c.randomChance(0.05))
+		// 	);
 	});
 });

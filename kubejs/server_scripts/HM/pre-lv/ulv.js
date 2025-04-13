@@ -2,11 +2,12 @@
 
 ServerEvents.recipes(event => {
 
+    // ulv_machine_hull in steam helper, moved to casing helper in future
 
     event.remove({ id: 'gtceu:shapeless/iron_magnetic_stick'});
     event.custom({
         'type': 'create_new_age:energising',
-        'energy_needed': 2000,
+        'energy_needed': 7500,
         'ingredients': [
           {
             'item': 'gtceu:iron_rod'

@@ -19,7 +19,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 			GTToolType.AXE,
 			GTToolType.SWORD,
 			GTToolType.KNIFE,
-			GTToolType.FILE
+			GTToolType.FILE,
+			GTToolType.SCYTHE
 		]).build());
 
 	event.create('coke_clay')
@@ -47,10 +48,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 		.liquid(new GTFluidBuilder().temperature(1450))
         .components('18x crude_cast_iron', '1x bismuth', '2x copper')
         .color(0x696E6C)
+		.secondaryColor(0x4C5052)
         .iconSet(METALLIC)
         .flags(no_abs_recipe, not_alloy, foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, bolt_and_screw, no_decomp, no_smelt);
 
-	GTMaterials.Iron.addFlags(foil);
+	GTMaterials.Iron.addFlags(foil, fine_wire);
 	GTMaterials.Brass.addFlags(ring, foil);
 	GTMaterials.TinAlloy.addFlags(ring, foil, rotor);
 	GTMaterials.Potin.addFlags(foil, ring, small_gear);
