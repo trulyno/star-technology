@@ -214,21 +214,28 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // Plasmas
 
+    // This material is meant to place a ? symbol in a material's chemical formula
+    event.create('mystery')
+        .element(GTElements.get('mystery'));
+
     // Material modification
-    GTMaterials.Lead.addFlags(gear);
-    GTMaterials.Silver.addFlags(gear);
-    GTMaterials.Naquadah.addFlags(dense_plate);
-    GTMaterials.NaquadahEnriched.addFlags(dense_plate, rotor, gear, frame, long_rod);
-    GTMaterials.Naquadria.addFlags(dense_plate);
-    GTMaterials.Neutronium.addFlags(foil, small_gear,rotor);
-    GTMaterials.Europium.addFlags(small_spring);
-    GTMaterials.Zirconium.addFlags(fine_wire);
-    GTMaterials.Hafnium.addFlags(fine_wire); 
-    GTMaterials.RedSteel.addFlags(rod, frame);
-    GTMaterials.SterlingSilver.addFlags(rod, frame);
-    GTMaterials.NetherStar.addFlags(foil);
-    GTMaterials.Netherite.addFlags(no_decomp);
-    GTMaterials.EchoShard.addFlags(lens);
+    const matmod = (mat, flag) => {
+        GTMaterials.get(mat).addFlags(flag);
+    }
+    matmod('lead', gear);
+    matmod('silver', gear);
+    matmod('naquadah', dense_plate);
+    matmod('enriched_naquadah', [dense_plate, rotor, gear, frame, long_rod]);
+    matmod('naquadria', dense_plate);
+    matmod('neutronium', [foil, small_gear,rotor]);
+    matmod('europium', small_spring);
+    matmod('zirconium', fine_wire);
+    matmod('hafnium', fine_wire);
+    matmod('red_steel', [rod, frame]);
+    matmod('sterling_silver', [rod, frame]);
+    matmod('nether_star', foil);
+    matmod('netherite', no_decomp);
+    matmod('echo_shard', lens);
 
     // Blast Properties of periodic table metals
     const blast = global.blastProperty;
@@ -245,12 +252,150 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.NaquadahEnriched.setProperty(PropertyKey.FLUID_PIPE, new FluidPipeProperties(8000, 500, true, true, true, false));
 
     // Materials from elements
-    event.create('magnetic_zapolgium')
-        .ingot()
-        .element(GTElements.get('zapolgium'))
-        .color(0xcc00cc)
-        .iconSet(MAGNETIC)
-        .flags(rod, long_rod, magnetic);
+    const compIngot = (name, elements, color, icon, blasting, flags) => {
+        if (blasting.includes(blasting[0])){
+            event.create(name).ingot()
+                .composition(elements)
+                .color(color)
+                .iconSet(icon)
+                .flags(flags)
+                .blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
+        } else {
+            event.create(name).ingot().fluid()
+                .composition(elements)
+                .color(color)
+                .iconSet(icon)
+                .flags(flags);
+        }
+    }
+
+    const elemIngot = (name, element, color, icon, blasting, flags) => {
+        if (blasting.includes(blasting[0])){
+            event.create(name).ingot()
+                .element(GTElements.get(element))
+                .color(color)
+                .iconSet(icon)
+                .flags(flags)
+                .blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
+        } else {
+            event.create(name).ingot().fluid()
+                .element(GTElements.get(element))
+                .color(color)
+                .iconSet(icon)
+                .flags(flags);
+        }
+    }
+
+    const compIngotFluid = (name, elements, color, icon, blasting, flags) => {
+        if (blasting.includes(blasting[0])){
+            event.create(name).ingot().fluid()
+                .components(elements).color(color)
+                .iconSet(icon)
+                .flags(flags)
+                .blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
+        } else {
+            event.create(name).ingot().fluid()
+                .components(elements)
+                .color(color)
+                .iconSet(icon)
+                .flags(flags);
+        }
+    }
+
+    const elemIngotFluid = (name, color, icon, blasting, flags) => {
+        if (blasting.includes(blasting[0])){
+            event.create(name).ingot().fluid()
+                .element(GTElements.get(name))
+                .color(color).iconSet(icon)
+                .flags(flags)
+                .blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
+        } else {
+            event.create(name).ingot().fluid()
+                .element(GTElements.get(name))
+                .color(color)
+                .iconSet(icon)
+                .flags(flags);
+        }
+    }
+    
+    const compFluid = (name, elements, color, flags) => {
+        event.create(name).fluid()
+            .composition(elements)
+            .color(color)
+            .flags(flags);
+    }
+
+    const elemFluid = (name, color, flags) => {
+        event.create(name).fluid()
+            .element(GTElements.get(name))
+            .color(color)
+            .flags(flags);
+    }
+    
+    const compDustFluid = (name, elements, color, flags) => {
+        event.create(name).dust().fluid()
+            .composition(elements)
+            .color(color)
+            .flags(flags);
+    }
+
+    const elemDustFluid = (name, color, flags) => {
+        event.create(name).dust().fluid()
+            .element(GTElements.get(name))
+            .color(color)
+            .flags(flags);
+    }
+    
+    const compDust = (name, elements, color, flags) => {
+        event.create(name).dust()
+            .composition(elements)
+            .color(color)
+            .flags(flags);
+    }
+
+    const elemDust = (name, color, flags) => {
+        event.create(name).dust()
+            .element(GTElements.get(name))
+            .color(color)
+            .flags(flags);
+    }
+    
+    const compGem = (name, elements, color, icon, flags) => {
+        event.create(name).gem()
+            .composition(elements)
+            .color(color)
+            .iconSet(icon)
+            .flags(flags);
+    }
+
+    const elemGem = (name, color, icon, flags) => {
+        event.create(name).gem()
+            .element(GTElements.get(name))
+            .iconSet(icon)
+            .color(color)
+            .flags(flags);
+    }
+
+
+    elemIngot('magnetic_zapolgium', GTElements.get('zapolgium'), 0xcc00cc, MAGNETIC, [], [rod, long_rod, magnetic]);
+
+    elemIngotFluid('xeproda', 0x1a0d00, DULL, [15499, 'highest', VA('uev'), 3750], []);
+
+    elemIngotFluid('rhexis', 0x330000, DULL, [15499, 'highest', VA('uiv'), 4750], []);
+
+    elemIngotFluid('chalyblux', 0xffcccc, DULL, [15499, 'highest', VA('uev'), 5750], []);
+
+    elemIngotFluid('mythril', 0x006666, METALLIC, [11299, 'highest', VA('uhv'), 2400], [foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame]);
+
+    elemIngotFluid('adamantine', 0xe99700, METALLIC, [13299, 'highest', VA('uev'), 3000], [foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame]);
+
+    elemIngotFluid('estalt', 0xff5050, DULL, [12299, 'highest', VA('uhv'), 2600], [foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame]);
+
+    elemIngotFluid('enriched_estalt', 0xe76c6c, RADIOACTIVE, [12899, 'highest', VA('uhv'), 2800], [foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame]);
+
+    elemIngotFluid('calamatium', 0x660000, DULL, [13199, 'highest', VA('uhv'), 2750], [foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame]);
+
+    elemIngotFluid('isovol', 0x290066, DULL, [12999, 'highest', VA('uhv'), 2750], [foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame]);
 
     event.create('zapolgium')
         .ingot()
@@ -261,378 +406,97 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(plates, rod, frame)
         .fluidPipeProperties(18000, 7200, true,true,true,true);
 
-    event.create('xeproda')
-        .ingot()
-        .fluid()
-        .element(GTElements.get('xeproda'))
-        .color(0x1a0d00)
-        .iconSet(DULL)
-        .blastTemp(15499, 'highest', VA('uev'), 3750);
+    // Thermal Superconductors (twinite and higher rotor values by @richie3366)
+    const conductor = (name, elements, color, blasting, cable, rotor, flags) => {
+        if (blasting.includes(blasting[0])){
+            event.create(name).ingot().fluid()
+                .components(elements)
+                .color(color)
+                .iconSet(SHINY)
+                .flags(flags)
+                .blastTemp(blasting[0], blasting[1], blasting[2], blasting[3])
+                .cableProperties(cable[0], cable[1], cable[2], cable[3])
+                .rotorStats(rotor[0], rotor[1], rotor[2], rotor[3]);
+        } else {
+            event.create(name).ingot().fluid()
+                .components(elements)
+                .color(color)
+                .iconSet(SHINY)
+                .flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame)
+                .cableProperties(cable[0], cable[1], cable[2], cable[3])
+                .rotorStats(rotor[0], rotor[1], rotor[2], rotor[3]);
+        }
+    }
 
-    event.create('rhexis')
-        .ingot()
-        .fluid()
-        .element(GTElements.get('rhexis'))
-        .color(0x330000)
-        .iconSet(DULL)
-        .blastTemp(15499, 'highest', VA('uiv'), 4750);
+    conductor('soul_infused', ['1x invar', '2x mystery'], 0xcc9966, [], [V('lv'), 4, 0, true], [150, 130, 3, 37600]);
 
-    event.create('chalyblux')
-        .ingot()
-        .fluid()
-        .element(GTElements.get('chalyblux'))
-        .color(0xffcccc)
-        .iconSet(DULL)
-        .blastTemp(15499, 'highest', VA('uev'), 5750);
+    conductor('signalum', ['1x silver', '3x copper', '4x redstone'], 0xff3300, [1700, 'low', VA('mv'), 1200], [V('mv'), 16, 0, true], [190, 150, 3, 24000]);
 
-    event.create('mythril')
-        .ingot()
-        .fluid()
-        .element(GTElements.get('mythril'))
-        .color(0x006666)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .blastTemp(11299, 'highest', VA('uhv'), 2400)
-        .iconSet(METALLIC);
+    conductor('lumium', ['1x silver', '3x tin', '2x glowstone'], 0xffffb3, [1700, 'low', VA('hv'), 1500], [V('hv'), 16, 0, true], [220, 170, 3, 24000]);
 
-    event.create('adamantine')
-        .ingot()
-        .fluid()
-        .element(GTElements.get('adamantine'))
-        .color(0xe99700)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .blastTemp(13299, 'highest', VA('uev'), 3000)
-        .iconSet(METALLIC);
+    conductor('enderium', ['3x lead', '1x diamond', '2x ender_pearl'], 0x006666, [3500, 'low', VA('ev'), 1500], [V('ev'), 32, 0, true], [300, 190, 3, 45600]);
 
-    event.create('estalt')
-        .ingot()
-        .fluid()
-        .element(GTElements.get('estalt'))
-        .color(0xff5050)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .blastTemp(12299, 'highest', VA('uhv'), 2600)
-        .iconSet(DULL);
+    conductor('shellite', ['1x black_bronze', '3x signalum'], 0x9933ff, [4400, 'mid', VA('iv'), 1800], [V('iv'), 64, 0, true], [450, 220, 3, 37600]);
 
-    event.create('enriched_estalt')
-        .ingot()
-        .fluid()
-        .element(GTElements.get('enriched_estalt'))
-        .color(0xE76C6C)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .blastTemp(12899, 'highest', VA('uhv'), 2800)
-        .iconSet(RADIOACTIVE);
+    conductor('twinite', ['3x manganese_phosphide', '2x amethyst', '1x lumium'], 0xf66999, [5300, 'mid', VA('luv'), 2100], [V('luv'), 64, 0, true], [700, 260, 3, 24000]);
 
-    event.create('calamatium')
-        .ingot()
-        .fluid()
-        .element(GTElements.get('calamatium'))
-        .color(0x660000)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .iconSet(DULL)
-        .blastTemp(13199, 'highest', VA('uhv'), 2750);
+    conductor('dragonsteel', ['4x tungsten', '8x magnesium_diboride', '2x cadmium'], 0x3333cc, [7100, 'high', VA('zpm'), 2400], [V('zpm'), 96, 0, true], [1100, 380, 3, 32000]);
 
-    event.create('isovol')
-        .ingot()
-        .fluid()
-        .element(GTElements.get('isovol'))
-        .color(0x290066)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .iconSet(DULL)
-        .blastTemp(12999, 'highest', VA('uhv'), 2750);
+    conductor('prismalium', ['8x naquadah', '4x mercury_barium_calcium_cuprate', '7x tungsten_carbide'], 0x66ffff, [9000, 'high', VA('zpm'), 2700], [V('uv'), 48, 0, true], [1600, 470, 3, 48000]);
 
-    // This material is meant to place a ? symbol in a material's chemical formula
-    event.create('mystery')
-        .element(GTElements.get('mystery'));
+    conductor('melodium', ['2x uranium_triplatinum', '14x electrum', '3x amethyst', '4x darmstadtium', '7x europium'], 0xd9b3ff, [10000, 'higher', VA('uv'), 3000], [V('uv'), 128, 0, true], [2000, 550, 3, 64000]);
 
-    // Thermal Superconductors (twinite and higher rotor values by @richie3366
-    event.create('soul_infused')
-        .ingot(1)
-        .fluid()
-        .components('1x invar', '2x mystery') // invar and soul sand
-        .color(0xcc9966)
-        .iconSet(SHINY)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('lv'), 4, 0, true)
-        .rotorStats(150, 130, 3, 37600);
+    conductor('stellarium', ['12x neutronium', '4x melodium', '1x samarium_iron_arsenic_oxide'], 0xccffff, [10799, 'highest', VA('uhv'), 4000], [V('uhv'), 192, 0, true], [3200, 660, 3, 96000]);
 
-    event.create('signalum')
-        .ingot(1)
-        .fluid()
-        .components('1x silver', '3x copper', '4x redstone')
-        .color(0xff3300)
-        .iconSet(SHINY)
-        .blastTemp(1700, 'low', VA('mv'), 1200)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('mv'), 16, 0, true)
-        .rotorStats(190, 150, 3, 24000);
-
-    event.create('lumium')
-        .ingot(1)
-        .fluid()
-        .components('1x silver', '3x tin', '2x glowstone')
-        .color(0xffffb3)
-        .iconSet(SHINY)
-        .blastTemp(1700, 'low', VA('hv'), 1500)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('hv'), 16, 0, true)
-        .rotorStats(220, 170, 3, 24000);
-
-    event.create('enderium')
-        .ingot(1)
-        .fluid()
-        .components('3x lead', '1x diamond', '2x ender_pearl')
-        .color(0x006666)
-        .iconSet(SHINY)
-        .blastTemp(3500, 'low', VA('ev'), 1500)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('ev'), 32, 0, true)
-        .rotorStats(300, 190, 3, 45600);
-
-    event.create('shellite')
-        .ingot(1)
-        .fluid()
-        .components('1x black_bronze', '3x signalum')
-        .color(0x9933ff)
-        .iconSet(SHINY)
-        .blastTemp(4400, 'mid', VA('iv'), 1800)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('iv'), 64, 0, true)
-        .rotorStats(450, 220, 3, 37600);
-
-    event.create('twinite')
-        .ingot(1)
-        .fluid()
-        .components('3x manganese_phosphide', '2x amethyst', '1x lumium')
-        .color(0xf66999)
-        .iconSet(SHINY)
-        .blastTemp(5300, 'mid', VA('luv'), 2100)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('luv'), 64, 0, true)
-        .rotorStats(700, 260, 3, 24000);
-
-    event.create('dragonsteel')
-        .ingot(1)
-        .fluid()
-        .components('4x tungsten', '8x magnesium_diboride', '2x cadmium')
-        .color(0x3333cc)
-        .iconSet(SHINY)
-        .blastTemp(7100, 'high', VA('zpm'), 2400)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('zpm'), 96, 0, true)
-        .rotorStats(1100, 380, 3, 32000);
-
-    event.create('prismalium')
-        .ingot(1)
-        .fluid()
-        .components('8x naquadah', '4x mercury_barium_calcium_cuprate', '7x tungsten_carbide')
-        .color(0x66ffff)
-        .iconSet(SHINY)
-        .blastTemp(9000, 'high', VA('zpm'), 2700)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('uv'), 48, 0, true)
-        .rotorStats(1600, 470, 3, 48000);
-
-    event.create('melodium')
-        .ingot(1)
-        .fluid()
-        .components('2x uranium_triplatinum', '14x electrum', '3x amethyst', '4x darmstadtium', '7x europium')
-        .color(0xd9b3ff)
-        .iconSet(SHINY)
-        .blastTemp(10000, 'higher', VA('uv'), 3000)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame)
-        .cableProperties(V('uv'), 128, 0, true)
-        .rotorStats(2000, 550, 3, 64000);
-
-    event.create('stellarium')
-        .ingot(1)
-        .fluid()
-        .components('12x neutronium', '4x melodium', '1x samarium_iron_arsenic_oxide')
-        .color(0xccffff)
-        .iconSet(SHINY)
-        .blastTemp(10799, 'highest', VA('uhv'), 4000)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame, fine_wire)
-        .cableProperties(V('uhv'), 192, 0, true)
-        .rotorStats(3200, 660, 3, 96000);
-
-    event.create('ancient_runicalium')
-        .ingot(2)
-        .fluid()
-        .components('5x zapolgium', '18x stellarium', '8x zirconium')
-        .color(0xFAB922)
-        .iconSet(SHINY)
-        .blastTemp(11749, 'highest', VA('uev'), 5000)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame, fine_wire)
-        .cableProperties(V('uev'), 256, 0, true)
-        .rotorStats(6400, 720, 3, 128000);
+    conductor('ancient_runicalium', ['5x zapolgium', '18x stellarium', '8x zirconium'], 0xFAB922, [11749, 'highest', VA('uev'), 5000], [V('uev'), 256, 0, true], [6400, 720, 3, 128000]);
 
     // Nuclear Reactor Materials
-    event.create('austenitic_stainless_steel_304')
-        .ingot(1)
-        .fluid()
-        .components('35x steel', '10x chromium', '4x nickel', '1x manganese', '1x silicon')
-        .color(0x800040)
-        .blastTemp(3500, 'low', VA('ev'), 1500)
-        .iconSet(METALLIC)
-        .flags(plates, rod, frame);
+    compIngot('austenitic_stainless_steel_304', ['35x steel', '10x chromium', '4x nickel', '1x manganese', '1x silicon'], 0x800040, METALLIC, [3500, 'low', VA('ev'), 1500], [plates, rod, frame]);
 
-    event.create('inconel_625')
-        .ingot()
-        .fluid()
-        .components('7x nickel', '2x chromium', '1x steel')
-        .color(0xa3a375)
-        .blastTemp(3500, 'low', VA('ev'), 1500)
-        .iconSet(SHINY)
-        .flags(plates, rod, frame);
+    compIngot('inconel_625', ['7x nickel', '2x chromium', '1x steel'], 0xa3a375, SHINY, [3500, 'low', VA('ev'), 1500], [plates, rod, frame]);
 
-    event.create('nuclear_steam')
-        .fluid()
-        .components('1x steam', '1x mystery')
-        .color(0xcccccc)
-        .flags(no_decomp);
+    compFluid('nuclear_steam', ['1x steam', '1x mystery'], 0xcccccc, [no_decomp]);
 
-    event.create('hot_sodium_potassium')
-        .fluid()
-        .components('1x sodium_potassium', '1x mystery')
-        .color(0x82fcc3)
-        .flags(no_decomp);
+    compFluid('hot_sodium_potassium', ['1x sodium_potassium', '1x mystery'], 0x82fcc3, [no_decomp]);
 
-    event.create('hot_pcb_coolant')
-        .fluid()
-        .components('1x pcb_coolant', '1x mystery')
-        .color(0xc9ca81)
-        .flags(no_decomp);
+    compFluid('hot_pcb_coolant', ['1x pcb_coolant', '1x mystery'], 0xc9ca81, [no_decomp]);
 
     // Netherite Line
-    event.create('debris')
-        .dust()
-        .liquid()
-        .element(GTElements.get('debris'))
-        .color(0x804000)
-        .flags(no_decomp);
+    elemDustFluid('debris', 0x804000, [no_decomp]);
 
-    event.create('purified_debris')
-        .dust()
-        .components('debris')
-        .color(0xcc0000);
+    compDust('purified_debris', ['debris'], 0xcc0000, []);
 
-    // event.create('netherite')
-    //     .dust()
-    //     .components('4x debris', '4x gold')
-    //     .color(0x1a0d00)
-    //     .iconSet(DULL)
-    //     .flags(no_decomp);
+    compFluid('chlorine_trifluoride', ['1x chlorine', '3x fluorine'], 0xb3ff99, []);
+
+    compFluid('tetrachloroethylene', ['2x carbon', '4x chlorine'], 0xd966ff, []);
     
-    event.create('chlorine_trifluoride')
-        .fluid()
-        .components('1x chlorine', '3x fluorine')
-        .color(0xb3ff99);
-
-    event.create('tetrachloroethylene')
-        .fluid()
-        .components('2x carbon', '4x chlorine')
-        .color(0xd966ff);
-
     // Netherite Derivatives/Alloys
-    event.create('pure_netherite')
-        .ingot()
-        .fluid()
-        .element(GTElements.get('pure_netherite'))
-        .color(0x1a0d00)
-        .iconSet(DULL)
-        .blastTemp(5000, 'low', VA('iv'), 1200)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring);
+    elemIngotFluid('pure_netherite', 0x1a0d00, DULL, [5000, 'low', VA('iv'), 1200], [foil, gear, long_rod, plates, rod, rotor, small_gear, ring]);
 
-    event.create('magnetic_pure_netherite')
-        .ingot()
-        .element(GTElements.get('pure_netherite'))
-        .color(0x1a0d00)
-        .iconSet(MAGNETIC)
-        .flags(rod, long_rod, magnetic);
+    elemIngot('magnetic_pure_netherite', 'pure_netherite', 0x1a0d00, MAGNETIC, [], [rod, long_rod, magnetic]);
 
-    event.create('naquadic_netherite')
-        .gem(0)
-        .components('3x naquadah', '5x pure_netherite', '2x caesium', '5x cerium', '12x fluorine', '32x oxygen')
-        .color(0xffd966)
-        .iconSet(DIAMOND);
+    compGem('naquadic_netherite', ['3x naquadah', '5x pure_netherite', '2x caesium', '5x cerium', '12x fluorine', '32x oxygen'], 0xffd966, DIAMOND, []);
 
-    event.create('weapon_grade_naquadah')
-        .ingot()
-        .fluid()
-        .components('7x naquadria', '2x pure_netherite', '5x neutronium', '16x fluorine')
-        .color(0xccff33)
-        .iconSet(DULL)
-        .blastTemp(10500, 'highest', VHA('uv'), 2700)
-        .flags(foil, gear, long_rod, plates,
-            rod, rotor, small_gear, ring, frame);
+    compIngotFluid('weapon_grade_naquadah', ['7x naquadria', '2x pure_netherite', '5x neutronium', '16x fluorine'], 0xccff33, DULL, [10500, 'highest', VHA('uv'), 2700], [foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame]);
 
-    event.create('runic_laser_source_base')
-        .gem(0)
-        .components('2x naquadic_netherite', '10x tritanium', '2x trinium')
-        .color(0x00ff00)
-        .iconSet(OPAL);
+    compGem('runic_laser_source_base', ['2x naquadic_netherite', '10x tritanium', '2x trinium'], 0x00ff00, OPAL, []);
 
     // Crown Ethers
-    event.create('sulfur_dichloride')
-        .fluid()
-        .components('1x sulfur', '2x chlorine')
-        .color(0xcc0000);
+    compFluid('sulfur_dichloride', ['1x sulfur', '2x chlorine'], 0xcc0000, []);
 
-    event.create('thionyl_chloride')
-        .fluid()
-        .components('1x sulfur', '1x oxygen', '2x chlorine')
-        .color(0xffffcc);
+    compDust('thionyl_chloride', ['1x sulfur', '1x oxygen', '2x chlorine'], 0xffffcc, []);
 
-    event.create('sulfuryl_chloride')
-        .fluid()
-        .components('1x sulfur', '2x oxygen', '2x chlorine')
-        .color(0xffffcc);
+    compDust('sulfuryl_chloride', ['1x sulfur', '2x oxygen', '2x chlorine'], 0xffffcc, []);
 
-    event.create('triglycol_dichloride')
-        .fluid()
-        .components('6x carbon', '12x hydrogen', '2x oxygen', '2x chlorine')
-        .color(0xffffcc);
+    compDust('triglycol_dichloride', ['6x carbon', '12x hydrogen', '2x oxygen', '2x chlorine'], 0xffffcc, []);
 
-    event.create('ethylene_glycol')
-        .fluid()
-        .components('2x carbon', '6x hydrogen', '2x oxygen')
-        .color(0xf2f2f2);
+    compDust('ethylene_glycol', ['2x carbon', '6x hydrogen', '2x oxygen'], 0xf2f2f2, []);
 
-    event.create('diethylene_glycol')
-        .fluid()
-        .components('4x carbon', '10x hydrogen', '3x oxygen')
-        .color(0xf2f2f2);
+    compDust('diethylene_glycol', ['4x carbon', '10x hydrogen', '3x oxygen'], 0xf2f2f2, []);
 
-    event.create('triethylene_glycol')
-        .fluid()
-        .components('6x carbon', '14x hydrogen', '4x oxygen')
-        .color(0xf2f2f2);
+    compDust('triethylene_glycol', ['6x carbon', '14x hydrogen', '4x oxygen'], 0xf2f2f2, []);
 
-    event.create('ethylene_oxide')
-        .fluid()
-        .components('2x carbon', '4x hydrogen', '1x oxygen')
-        .color(0xd9d9d9);
-
-    // event.create('potassium_hydroxide')
-    //     .dust()
-    //     .components('1x potassium', '1x oxygen', '1x hydrogen')
-    //     .color(0xffcc99);
+    compDust('ethylene_oxide', ['2x carbon', '4x hydrogen', '1x oxygen'], 0xd9d9d9, []);
 
     event.create('lithium_perchlorate')
         .dust()
