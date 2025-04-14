@@ -169,7 +169,7 @@
 				item: "gtceu:lv_mixer"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.5d
 			y: -1.5d
 		}
 		{
@@ -334,7 +334,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["5D3B5EF195A3093B"]
+			dependencies: ["62CA7FD2D2ED99AB"]
 			description: [
 				"Your first Cutting Saw, made out of Cobalt Brass."
 				""
@@ -351,25 +351,36 @@
 				item: "gtceu:cobalt_brass_buzz_saw_blade"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.5d
+			x: -4.5d
+			y: 0.5d
 		}
 		{
-			dependencies: ["0E88CB5E68212006"]
-			description: ["New processing multiblock, brings new resources that will be useful."]
+			dependencies: ["367E19A8CC239553"]
+			description: [
+				"Get Cobalt Dust as byproduct of washing the Crushed Copper Ore."
+				""
+				"You will need some water..."
+			]
 			id: "5D3B5EF195A3093B"
 			rewards: [{
 				id: "6EEC913BD06C07C4"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "58AC287A9ADF2052"
-				item: "gtceu:cobalt_dust"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 2.5d
+			tasks: [
+				{
+					id: "58AC287A9ADF2052"
+					item: "gtceu:cobalt_dust"
+					type: "item"
+				}
+				{
+					id: "294FA1C9D07C8FF4"
+					item: "gtceu:crushed_copper_ore"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["234CE57A62FB8D82"]
@@ -422,8 +433,8 @@
 				item: "gtceu:lv_gas_collector"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 0.5d
+			x: -4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2AFD24A844E49C42"]
@@ -2159,6 +2170,61 @@
 			}]
 			x: 8.0d
 			y: -7.0d
+		}
+		{
+			dependencies: ["234CE57A62FB8D82"]
+			description: [
+				"This machine is useful to get some material as byproduct when washed:"
+				""
+				"- Crushed Iron ore can drop Nickel dust"
+				"- Crushed Lead ore can drop Silver dust"
+				"- Crushed Copper ore can drop Cobalt Dust"
+				""
+				"Check EMI in the Ore Processing tab to see more!!"
+			]
+			id: "367E19A8CC239553"
+			rewards: [{
+				id: "0346AB09CA1E71FE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5017ED9232C5025D"
+				item: "gtceu:lv_ore_washer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"54549EC141659C30"
+				"60F649FC6E64DFD9"
+				"5D3B5EF195A3093B"
+			]
+			description: ["To create this alloy is necessary the aluminium dust that you can obtain later..."]
+			id: "62CA7FD2D2ED99AB"
+			rewards: [{
+				id: "0D60F4C55A33891E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "249FB9A7E3BB211A"
+					item: "gtceu:cobalt_brass_ingot"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "23F3EA1DB89AD3F9"
+					item: { Count: 4, id: "gtceu:cobalt_brass_dust" }
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -0.5d
 		}
 	]
 	title: "Industrial Revolution"
