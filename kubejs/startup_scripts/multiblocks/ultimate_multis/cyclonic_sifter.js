@@ -15,6 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('cyclonic_sifter')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .appearanceBlock(GTBlocks.FUSION_GLASS)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("         ", "         ", "         ", "         ", "   BBB   ", "   CCC   ", "   BBB   ", "         ", "         ", "         ", "         ", "         ") 
             .aisle("   DDD   ", "    D    ", "    D    ", "   BBB   ", " BBBBBBB ", " CCEEECC ", " BB F BB ", "    D    ", "    D    ", "    D    ", "    D    ", "  DDDDD  ") 

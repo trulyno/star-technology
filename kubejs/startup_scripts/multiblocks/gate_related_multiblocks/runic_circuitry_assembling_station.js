@@ -15,6 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('runic_circuitry_assembling_station')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .appearanceBlock(() => Block.getBlock('kubejs:lumium_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('         ', '         ', '         ', '         ', '         ', '         ', '         ', '         ', ' LLCCCLL ', ' LLCCCLL ', ' LLCCCLL ', '         ')
             .aisle(' LLLLLLL ', ' P     P ', ' P     P ', ' P     P ', ' P     P ', ' P     P ', ' P     P ', ' LLLLLLL ', 'LP     PL', 'LP     PL', 'LP     PL', ' LLLLLLL ')

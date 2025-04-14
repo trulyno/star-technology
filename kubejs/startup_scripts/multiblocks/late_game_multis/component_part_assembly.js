@@ -15,6 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('component_part_assembly', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('component_part_assembly')
+        .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('SSSSS', 'SSSSS', ' SSS ')
             .aisle('HHBHH', 'G#A#G', ' GGG ')
