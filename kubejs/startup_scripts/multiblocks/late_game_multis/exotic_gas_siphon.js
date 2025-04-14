@@ -19,6 +19,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .recipeTypes([GTRecipeTypes.get('exotic_gas_siphon'), GTRecipeTypes.get('gas_collector')])
+        .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('          BBB          ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '          CCC          ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ') 
             .aisle('  BBB   BBDDDBB   BBB  ', '          DDD          ', '          EEE          ', '  CCC     EEE     CCC  ', '          EEE          ', '          FFF          ', '          DDD          ', '  CCC    C   C    CCC  ', '                       ', '                       ', '                       ', '  CCC                  ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ') 

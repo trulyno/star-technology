@@ -15,6 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('injection_mixer')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .appearanceBlock(() => Block.getBlock('kubejs:noble_mixing_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(" BBB ", " CCC ", " BBB ", "  B  ", "     ", "  B  ", " BBB ", "     ", "     ", "     ", "     ", "     ", "     ") 
             .aisle("BBDBB", "CDDDC", "BEEEB", " FEF ", " FGF ", " FDF ", "BDDDB", " DFD ", "  F  ", "  C  ", "  C  ", "  C  ", "  D  ") 
