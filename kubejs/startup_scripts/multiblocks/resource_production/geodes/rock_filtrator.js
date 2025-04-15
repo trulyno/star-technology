@@ -12,8 +12,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('rock_filtrator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('rock_filtrator')
-        .tooltips('§7A multiblock that can sieve through gravel and sand more precisely than a basic sieve could ever achieve, uncovering the gems hidden inside.')
-        .tooltips('Can only have §bone§r Energy Hatch')
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('SFS', 'SGS', 'SGS', 'SFS')

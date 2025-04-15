@@ -12,8 +12,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('void_extractor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('void_excavation')
-        .tooltips('§7A machine that uses the ever present abyss under your feet to extract resources. Where they come from is unknown, but there is no time for those questions.')
-        .tooltips('Can only have §bone§r Energy Hatch')
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('SSS', ' F ', ' F ', '   ', '   ', '   ')

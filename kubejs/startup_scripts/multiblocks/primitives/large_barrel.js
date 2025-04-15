@@ -12,7 +12,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_barrel', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_barrel')
-        .tooltips('§7A larger and better barrel, that can process larger amounts of items faster than the small one, along with having some new recipes.')
         .appearanceBlock(GTBlocks.TREATED_WOOD_PLANK)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('DDD', 'PPP', 'PPP', 'PPP')

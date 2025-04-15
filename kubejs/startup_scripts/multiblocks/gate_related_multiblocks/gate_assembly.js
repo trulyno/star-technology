@@ -10,8 +10,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('gate_assembly', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('gate_assembly')
-        .tooltips('§7A forge powerful enough to fuse together the parts of a stargate into one.')
-        .tooltips('Has §6Perfect Overclock')
         .recipeModifier(GTRecipeModifiers.OC_PERFECT)
         .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()	

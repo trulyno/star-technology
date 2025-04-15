@@ -12,7 +12,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_farm', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_farm')
-        .tooltips('§7An automated farm that runs during the day, providing you with some early sources of crops.')
         .appearanceBlock(GTBlocks.TREATED_WOOD_PLANK)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('PPPPP', 'F   F', 'F   F', ' FFF ')

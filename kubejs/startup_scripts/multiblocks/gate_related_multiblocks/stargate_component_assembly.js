@@ -13,8 +13,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('stargate_component_assembly', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('stargate_component_assembly')
-        .tooltips('§7A giant structure designed with the ability to create extremely strong blocks inscribed with ancient runes that hold the power to slip between the cracks in space.')
-        .tooltips('Has §6Perfect Overclock')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(() => Block.getBlock('kubejs:prismalium_casing'))
         .pattern(definition => FactoryBlockPattern.start()

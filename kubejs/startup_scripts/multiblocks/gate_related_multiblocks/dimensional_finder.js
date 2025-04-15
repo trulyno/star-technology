@@ -13,7 +13,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('dimensional_finder', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS) //Need to add a cant be rotated at all later on
         .recipeType('dimensional_finder')
-        .tooltips("§7This machine can send pulses into deep space, recording the echoes on crystals, and can sometimes triangulate a region's location based on that data.")
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('VVHVVVVVHVV', 'VVHHHHHHHVV', '           ', '           ', '           ', 'SS       SS', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ')

@@ -9,8 +9,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('dimensional_destabiliser', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('dimensional_destabiliser')
-        .tooltips('§7A mysterious structure that can stimulate cracks in space to harvest heavy elements from it that have never been observed before.')
-        .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(GCYMBlocks.CASING_STRESS_PROOF)
 		.pattern(definition => FactoryBlockPattern.start()

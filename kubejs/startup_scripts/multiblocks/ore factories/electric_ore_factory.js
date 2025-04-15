@@ -10,12 +10,9 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
-    /* Previous Electrico-Kinetic Ore Factory */
     event.create('electric_ore_factory', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('electric_ore_processing')
-        .tooltips('§7The electric all in one ore processing machine.')
-        .tooltips('Has §6Perfect Overclock')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()

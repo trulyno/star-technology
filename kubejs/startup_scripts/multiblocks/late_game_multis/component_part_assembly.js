@@ -16,7 +16,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('component_part_assembly')
         .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))
-        .tooltips('§7An assembler that can micro craft some incredibly complex components that are too detailed for a normal assembler.')
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('SSSSS', 'SSSSS', ' SSS ')
             .aisle('HHBHH', 'G#A#G', ' GGG ')

@@ -6,11 +6,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-	/* was previously kinetic_ore_factory */
+	
 	event.create('primitive_ore_factory', 'primitive')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('primitive_ore_processing')
-        .tooltips('§7Your first all in one ore processing machine. Because of how primitive it is, it can only accept manual inputs.')
 		.appearanceBlock(GTBlocks.CASING_PRIMITIVE_BRICKS)
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle(' FFF ', ' FFF ', ' FFF ', '  F  ', '     ', '     ', '     ')

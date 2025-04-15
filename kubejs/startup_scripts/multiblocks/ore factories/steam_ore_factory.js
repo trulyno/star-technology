@@ -12,7 +12,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .machine((holder) => new $SteamMulti(holder, 8))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('steam_ore_processing')
-        .tooltips('§7A slightly more advanced ore processor, that can accept inputs from busses and hatches, and because of that can be automated.')
         .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
         .appearanceBlock(GTBlocks.CASING_BRONZE_BRICKS)
         .pattern(definition => FactoryBlockPattern.start()

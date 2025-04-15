@@ -13,8 +13,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('cobbleworks', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('cobbleworks')
-        .tooltips('§7A large cube that can generate and process cobblestone into its most useful crushed forms, ready for sieving.')
-        .tooltips('Has §6Perfect Overclock')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(GCYMBlocks.CASING_STRESS_PROOF)
         .pattern(definition => FactoryBlockPattern.start()

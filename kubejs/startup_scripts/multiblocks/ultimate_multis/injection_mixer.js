@@ -14,8 +14,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('injection_mixer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('injection_mixer')
-        .tooltips('§7An advanced tier of mixer that can create more precise mixtures than the basic tier, allowing it to run better recipes.')
-        .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(() => Block.getBlock('kubejs:noble_mixing_casing'))
         .pattern(definition => FactoryBlockPattern.start()

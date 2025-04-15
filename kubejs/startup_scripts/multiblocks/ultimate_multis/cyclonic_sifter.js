@@ -14,8 +14,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('cyclonic_sifter', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('cyclonic_sifter')
-        .tooltips('§7An advanced tier of sifter that is more precise and stronger than the basic tier, allowing it to run better recipes.')
-        .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(() => Block.getBlock('kubejs:quake_proof_casing'))
         .pattern(definition => FactoryBlockPattern.start()
