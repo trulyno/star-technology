@@ -254,126 +254,70 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // Materials from elements
     const compIngot = (name, elements, color, icon, blasting, flags) => {
         if (blasting.includes(blasting[0])){
-            event.create(name).ingot()
-                .composition(elements)
-                .color(color)
-                .iconSet(icon)
-                .flags(flags)
-                .blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
+            event.create(name).ingot().components(elements).color(color).iconSet(icon).flags(flags).blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
         } else {
-            event.create(name).ingot().fluid()
-                .composition(elements)
-                .color(color)
-                .iconSet(icon)
-                .flags(flags);
+            event.create(name).ingot().fluid().components(elements).color(color).iconSet(icon).flags(flags);
         }
     }
 
     const elemIngot = (name, element, color, icon, blasting, flags) => {
         if (blasting.includes(blasting[0])){
-            event.create(name).ingot()
-                .element(GTElements.get(element))
-                .color(color)
-                .iconSet(icon)
-                .flags(flags)
-                .blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
+            event.create(name).ingot().element(GTElements.get(element)).color(color).iconSet(icon).flags(flags).blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
         } else {
-            event.create(name).ingot().fluid()
-                .element(GTElements.get(element))
-                .color(color)
-                .iconSet(icon)
-                .flags(flags);
+            event.create(name).ingot().fluid().element(GTElements.get(element)).color(color).iconSet(icon).flags(flags);
         }
     }
 
     const compIngotFluid = (name, elements, color, icon, blasting, flags) => {
         if (blasting.includes(blasting[0])){
-            event.create(name).ingot().fluid()
-                .components(elements).color(color)
-                .iconSet(icon)
-                .flags(flags)
-                .blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
+            event.create(name).ingot().fluid().components(elements).color(color).iconSet(icon).flags(flags).blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
         } else {
-            event.create(name).ingot().fluid()
-                .components(elements)
-                .color(color)
-                .iconSet(icon)
-                .flags(flags);
+            event.create(name).ingot().fluid().components(elements).color(color).iconSet(icon).flags(flags);
         }
     }
 
     const elemIngotFluid = (name, color, icon, blasting, flags) => {
         if (blasting.includes(blasting[0])){
-            event.create(name).ingot().fluid()
-                .element(GTElements.get(name))
-                .color(color).iconSet(icon)
-                .flags(flags)
-                .blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
+            event.create(name).ingot().fluid().element(GTElements.get(name)).color(color).iconSet(icon).flags(flags).blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
         } else {
-            event.create(name).ingot().fluid()
-                .element(GTElements.get(name))
-                .color(color)
-                .iconSet(icon)
-                .flags(flags);
+            event.create(name).ingot().fluid().element(GTElements.get(name)).color(color).iconSet(icon).flags(flags);
         }
     }
     
     const compFluid = (name, elements, color, flags) => {
-        event.create(name).fluid()
-            .composition(elements)
-            .color(color)
-            .flags(flags);
+        event.create(name).fluid().components(elements).color(color).flags(flags);
     }
 
     const elemFluid = (name, color, flags) => {
-        event.create(name).fluid()
-            .element(GTElements.get(name))
-            .color(color)
-            .flags(flags);
+        event.create(name).fluid().element(GTElements.get(name)).color(color).flags(flags);
     }
     
     const compDustFluid = (name, elements, color, flags) => {
-        event.create(name).dust().fluid()
-            .composition(elements)
-            .color(color)
-            .flags(flags);
+        event.create(name).dust().fluid().components(elements).color(color).flags(flags);
     }
 
     const elemDustFluid = (name, color, flags) => {
-        event.create(name).dust().fluid()
-            .element(GTElements.get(name))
-            .color(color)
-            .flags(flags);
+        event.create(name).dust().fluid().element(GTElements.get(name)).color(color).flags(flags);
     }
     
     const compDust = (name, elements, color, flags) => {
-        event.create(name).dust()
-            .composition(elements)
-            .color(color)
-            .flags(flags);
+        event.create(name).dust().components(elements).color(color).flags(flags);
+    }
+    
+    const compDustIcon = (name, elements, color, icon, flags) => {
+        event.create(name).dust().components(elements).color(color).iconSet(icon).flags(flags);
     }
 
     const elemDust = (name, color, flags) => {
-        event.create(name).dust()
-            .element(GTElements.get(name))
-            .color(color)
-            .flags(flags);
+        event.create(name).dust().element(GTElements.get(name)).color(color).flags(flags);
     }
     
     const compGem = (name, elements, color, icon, flags) => {
-        event.create(name).gem()
-            .composition(elements)
-            .color(color)
-            .iconSet(icon)
-            .flags(flags);
+        event.create(name).gem().components(elements).color(color).iconSet(icon).flags(flags);
     }
 
     const elemGem = (name, color, icon, flags) => {
-        event.create(name).gem()
-            .element(GTElements.get(name))
-            .iconSet(icon)
-            .color(color)
-            .flags(flags);
+        event.create(name).gem().element(GTElements.get(name)).iconSet(icon).color(color).flags(flags);
     }
 
 
@@ -407,24 +351,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluidPipeProperties(18000, 7200, true,true,true,true);
 
     // Thermal Superconductors (twinite and higher rotor values by @richie3366)
-    const conductor = (name, elements, color, blasting, cable, rotor, flags) => {
+    const conductor = (name, elements, color, blasting, cable, rotorstat) => {
         if (blasting.includes(blasting[0])){
-            event.create(name).ingot().fluid()
-                .components(elements)
-                .color(color)
-                .iconSet(SHINY)
-                .flags(flags)
-                .blastTemp(blasting[0], blasting[1], blasting[2], blasting[3])
-                .cableProperties(cable[0], cable[1], cable[2], cable[3])
-                .rotorStats(rotor[0], rotor[1], rotor[2], rotor[3]);
+            event.create(name).ingot().fluid().components(elements).color(color).iconSet(SHINY).flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame)
+                .blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]).cableProperties(cable[0], cable[1], cable[2], cable[3]).rotorStats(rotorstat[0], rotorstat[1], rotorstat[2], rotorstat[3]);
         } else {
-            event.create(name).ingot().fluid()
-                .components(elements)
-                .color(color)
-                .iconSet(SHINY)
-                .flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame)
-                .cableProperties(cable[0], cable[1], cable[2], cable[3])
-                .rotorStats(rotor[0], rotor[1], rotor[2], rotor[3]);
+            event.create(name).ingot().fluid().components(elements).color(color).iconSet(SHINY).flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame)
+                .cableProperties(cable[0], cable[1], cable[2], cable[3]).rotorStats(rotorstat[0], rotorstat[1], rotorstat[2], rotorstat[3]);
         }
     }
 
@@ -498,652 +431,240 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     compDust('ethylene_oxide', ['2x carbon', '4x hydrogen', '1x oxygen'], 0xd9d9d9, []);
 
-    event.create('lithium_perchlorate')
-        .dust()
-        .components('1x lithium', '1x chlorine', '4x oxygen')
-        .color(0xe6f2ff);
+    compDust('lithium_perchlorate', ['1x lithium', '1x chlorine', '4x oxygen'], 0xe6f2ff, []);
 
-    event.create('sodium_perchlorate')
-        .dust()
-        .components('1x sodium', '1x chlorine', '4x oxygen')
-        .color(0xccf2ff);
+    compDust('sodium_perchlorate', ['1x sodium', '1x chlorine', '4x oxygen'], 0xccf2ff, []);
 
-    event.create('sodium_chlorate')
-        .dust()
-        .components('1x sodium', '1x chlorine', '3x oxygen')
-        .color(0xccf2ff);
+    compDust('sodium_chlorate', ['1x sodium', '1x chlorine', '3x oxygen'], 0xccf2ff, []);
 
-    event.create('silver_oxide')
-        .dust()
-        .components('2x silver', '1x oxygen')
-        .color(0xffffff);
+    compDust('silver_oxide', ['2x silver', '1x oxygen'], 0xffffff, []);
 
-    event.create('12_crown_4')
-        .fluid()
-        .components('8x carbon', '16x hydrogen', '4x oxygen')
-        .color(0xcc6699);
+    compFluid('12_crown_4', ['8x carbon', '16x hydrogen', '4x oxygen'], 0xcc6699, []);
 
-    event.create('15_crown_5')
-        .fluid()
-        .components('10x carbon', '20x hydrogen', '5x oxygen')
-        .color(0x0099cc);
+    compFluid('15_crown_5', ['10x carbon', '20x hydrogen', '5x oxygen'], 0x0099cc, []);
 
-    event.create('18_crown_6')
-        .fluid()
-        .components('12x carbon', '24x hydrogen', '6x oxygen')
-        .color(0x99ff33);
+    compFluid('18_crown_6', ['12x carbon', '24x hydrogen', '6x oxygen'], 0x99ff33, []);
 
-    event.create('12_crown_4_li')
-        .fluid()
-        .components('1x lithium', '8x carbon', '16x hydrogen', '4x oxygen')
-        .color(0x993366)
-        .flags(no_decomp);
+    compFluid('12_crown_4_li', ['1x lithium', '8x carbon', '16x hydrogen', '4x oxygen'], 0x993366, [no_decomp]);
 
-    event.create('15_crown_5_na')
-        .fluid()
-        .components('1x sodium', '10x carbon', '20x hydrogen', '5x oxygen')
-        .color(0x006080)
-        .flags(no_decomp);
+    compFluid('15_crown_5_na', ['1x sodium', '10x carbon', '20x hydrogen', '5x oxygen'], 0x006080, [no_decomp]);
 
-    event.create('18_crown_6_k')
-        .fluid()
-        .components('1x potassium', '12x carbon', '24x hydrogen', '6x oxygen')
-        .color(0x4d9900)
-        .flags(no_decomp);
+    compFluid('18_crown_6_k', ['1x potassium', '12x carbon', '24x hydrogen', '6x oxygen'], 0x4d9900, [no_decomp]);
 
-    event.create('4_toluenesulfonyl_chloride')
-        .dust()
-        .components('7x carbon', '7x hydrogen', '2x chlorine', '2x oxygen', '1x sulfur')
-        .color(0xffcccc);
+    compDust('4_toluenesulfonyl_chloride', ['7x carbon', '7x hydrogen', '2x chlorine', '2x oxygen', '1x sulfur'], 0xffccc, []);
 
-    event.create('triethylene_glycol_ditosylate')
-        .dust()
-        .components('20x carbon', '26x hydrogen', '8x oxygen', '2x sulfur')
-        .color(0xb8b894);
+    compDust('triethylene_glycol_ditosylate', ['20x carbon', '26x hydrogen', '8x oxygen', '2x sulfur'], 0xb8b894, []);
 
-    event.create('sodium_azide')
-        .dust()
-        .components('1x sodium', '3x nitrogen')
-        .color(0xcc6699);
+    compDust('sodium_azide', ['1x sodium', '3x nitrogen'], 0xcc6699, []);
 
-    event.create('palladium_on_carbon')
-        .dust()
-        .components('1x palladium', '1x carbon')
-        .color(0xff9900);
+    compDust('palladium_on_carbon', ['1x palladium', '1x carbon'], 0xff9900, []);
 
-    event.create('sodium_p_toluenesulfonate')
-        .dust()
-        .components('7x carbon', '7x hydrogen', '1x sodium', '3x oxygen', '1x sulfur')
-        .color(0x00cc00);
+    compDust('sodium_p_toluenesulfonate', ['7x carbon', '7x hydrogen', '1x sodium', '3x oxygen', '1x sulfur'], 0x00cc00, []);
 
-    event.create('triethylene_glycol_diazide')
-        .dust()
-        .components('6x carbon', '12x hydrogen', '2x oxygen', '6x nitrogen')
-        .color(0x6666ff);
+    compDust('triethylene_glycol_diazide', ['6x carbon', '12x hydrogen', '2x oxygen', '6x nitrogen'], 0x6666ff, []);
 
-    event.create('triethylene_glycol_diamine')
-        .dust()
-        .components('6x carbon', '16x hydrogen', '2x oxygen', '2x nitrogen')
-        .color(0xcc00cc);
+    compDust('triethylene_glycol_diamine', ['6x carbon', '16x hydrogen', '2x oxygen', '2x nitrogen'], 0xcc00cc, []);
 
-    event.create('cryptand')
-        .fluid()
-        .components('18x carbon', '36x hydrogen', '6x oxygen', '2x nitrogen')
-        .color(0x993333);
+    compFluid('cryptand', ['18x carbon', '36x hydrogen', '6x oxygen', '2x nitrogen'], 0x993333, []);
 
-    event.create('cryptand_k')
-        .fluid()
-        .components('1x potassium', '18x carbon', '36x hydrogen', '6x oxygen', '2x nitrogen')
-        .color(0x602020)
-        .flags(no_decomp);
+    compFluid('cryptand_k', ['1x potassium', '18x carbon', '36x hydrogen', '6x oxygen', '2x nitrogen'], 0x602020, [no_decomp]);
 
-    event.create('cryptand_na')
-        .fluid()
-        .components('1x sodium', '18x carbon', '36x hydrogen', '6x oxygen', '2x nitrogen')
-        .color(0x602020)
-        .flags(no_decomp);
+    compFluid('cryptand_na', ['1x sodium', '18x carbon', '36x hydrogen', '6x oxygen', '2x nitrogen'], 0x602020, [no_decomp]);
 
-    event.create('cryptand_li')
-        .fluid()
-        .components('1x lithium', '18x carbon', '36x hydrogen', '6x oxygen', '2x nitrogen')
-        .color(0x602020)
-        .flags(no_decomp);
+    compFluid('cryptand_li', ['1x lithium', '18x carbon', '36x hydrogen', '6x oxygen', '2x nitrogen'], 0x602020, [no_decomp]);
 
     // Mystical Agriculture Alloys
-    event.create('inferium_steel')
-        .ingot()
-        .components('1x steel', '1x mystery')
-        .iconSet(DULL)
-        .color(0x66ff33)
-        .flags(plates, rod, no_decomp);
-
-    event.create('prudentium_steel')
-        .ingot()
-        .components('1x steel', '1x mystery')
-        .iconSet(DULL)
-        .color(0x336600)
-        .flags(plates, rod, no_decomp);
-
-    event.create('tertium_steel')
-        .ingot()
-        .components('1x steel', '1x mystery')
-        .iconSet(DULL)
-        .color(0xff6600)
-        .flags(plates, rod, no_decomp);
-
-    event.create('imperium_steel')
-        .ingot()
-        .components('1x steel', '1x mystery')
-        .iconSet(DULL)
-        .color(0x0099ff)
-        .flags(plates, rod, no_decomp);
-
-    event.create('supremium_steel')
-        .ingot()
-        .components('1x steel', '1x mystery')
-        .iconSet(DULL)
-        .color(0xff0000)
-        .flags(plates, rod, no_decomp);
-
-    event.create('awakened_supremium_steel')
-        .ingot()
-        .components('1x steel', '1x mystery')
-        .iconSet(DULL)
-        .color(0xff3300)
-        .flags(plates, rod, no_decomp);
-
-    event.create('insanium_steel')
-        .ingot()
-        .components('1x steel', '1x mystery')
-        .iconSet(DULL)
-        .color(0x9900cc)
-        .flags(plates, rod, no_decomp);
+    [
+        {tier: 'inferium', color: 0x66ff33},
+        {tier: 'prudentium', color: 0x336600},
+        {tier: 'tertium', color: 0xff6600},
+        {tier: 'imperium', color: 0x0099ff},
+        {tier: 'supremium', color: 0xff0000},
+        {tier: 'awakened_supremium', color: 0xff3300},
+        {tier: 'insanium', color: 0x9900cc},
+    ].forEach(essence => {
+        compIngot(`${essence.tier}_steel`, ['1x steel', '1x mystery'], essence.color, DULL, [], [plates, rod, no_decomp]);
+    })
 
     // Diatrons
-    event.create('diatron')
-        .gem()
-        .color(0x6699ff)
-        .iconSet(LAPIS)
-        .flags(no_decomp);
+    compGem('diatron', [], 0x6699ff, LAPIS, [no_decomp]);
 
     // Echo/Void Line
-    event.create('echo_r')
-        .element(GTElements.get('echo_r'))
-        .fluid()
-        .color(0x003333)
-        .iconSet(DULL);
+    elemFluid('echo_r', 0x003333, []);
 
-    event.create('raw_void')
-        .components('1x echo_r', '1x neutronium')
-        .ingot(1)
-        .color(0x006666)
-        .flags(no_decomp)
-        .iconSet(DULL);
+    compIngot('raw_void', ['1x echo_r', '1x neutronium'], 0x006666, DULL, [], [no_decomp]);
 
-    event.create('void')
-        .components('1x echo_r', '1x neutronium')
-        .ingot(1)
-        .blastTemp(10799, 'highest', VA('uev'), 8000)
-        .color(0x001a1a)
-        .iconSet(DULL)
-        .flags(rod, foil, plates, long_rod, frame, no_decomp);
+    compIngot('void', ['1x echo_r', '1x neutronium'], 0x001a1a, DULL, [10799, 'highest', VA('uev'), 8000], [rod, foil, plates, long_rod, frame, no_decomp]);
     
     //Extended Sculk
-    event.create('ionized_sculk')
-        .dust()
-        .color(0x061A0D)
-        .iconSet(RADIOACTIVE)
-        .flags(no_decomp);
+    compDustIcon('ionized_sculk', [], 0x061A0D, RADIOACTIVE, [no_decomp]);
 
-    event.create('sodium_over_sculk')
-        .dust()
-        .color(0x071A22)
-        .components('1x sodium','1x mystery')
-        .flags(no_decomp);
+    compDust('sodium_over_sculk', ['1x sodium','1x mystery'], 0x071A22, [no_decomp]);
     
     // Extras
-    event.create('trinaquadalloy')
-        .ingot().fluid()
-        .color(0x281832)
-        .iconSet(BRIGHT)
-        .flags(plates, rod, frame, fine_wire, foil, dense_plate)
-        .components('6x trinium', '2x naquadah', '1x carbon')
-        .blastTemp(8747, 'higher', VA('zpm'), 1200)
+    compIngotFluid('trinaquadalloy', ['6x trinium', '2x naquadah', '1x carbon'], 0x281832, BRIGHT, [8747, 'higher', VA('zpm'), 1200], [plates, rod, frame, fine_wire, foil, dense_plate]);
 
-    event.create('perchloric_acid')
-        .fluid()
-        .components('1x hydrogen', '1x chlorine', '4x oxygen')
-        .color(0xffe6e6);
+    compFluid('perchloric_acid', ['1x hydrogen', '1x chlorine', '4x oxygen'], 0xffe6e6, []);
 
-    // event.create('iodic_acid')
-    //     .fluid()
-    //     .components('1x hydrogen', '1x iodine', '3x oxygen')
-    //     .color(0xcc33ff);
+    compDust('calcium_perchlorate', ['1x calcium', '2x chlorine', '8x oxygen'], 0xffff99, []);
 
-    event.create('calcium_perchlorate')
-        .dust()
-        .components('1x calcium', '2x chlorine', '8x oxygen')
-        .color(0xffff99);
+    compFluid('silica_gel', ['1x chlorine', '1x hydrogen', '6x oxygen', '1x silicon'], 0xe6e6e6, [no_decomp]);
 
-    event.create('silica_gel')
-        .fluid()
-        .components('1x chlorine', '1x hydrogen', '6x oxygen', '1x silicon')
-        .color(0xe6e6e6)
-        .flags(no_decomp);
+    compDust('calcium_sulfate', ['1x calcium', '1x sulfur', '4x oxygen'], 0xffbf80, []);
 
-    event.create('calcium_sulfate')
-        .dust()
-        .components('1x calcium', '1x sulfur', '4x oxygen')
-        .color(0xffbf80);
+    compDust('sodium_oxide', ['2x sodium', '1x oxygen'], 0x6666ff, []);
 
-    event.create('sodium_oxide')
-        .dust()
-        .components('2x sodium', '1x oxygen')
-        .color(0x6666ff);
+    compDust('iron_selenide', ['1x iron', '1x selenium'], 0xb3ff66, []);
 
-    event.create('iron_selenide')
-        .dust()
-        .components('1x iron', '1x selenium')
-        .color(0xb3ff66);
+    compDust('strontium_oxide', ['1x strontium', '1x oxygen'], 0xffcc99, []);
 
-    event.create('strontium_oxide')
-        .dust()
-        .components('1x strontium', '1x oxygen')
-        .color(0xffcc99);
+    compDust('titanium_oxide', ['1x titanium', '2x oxygen'], 0xff66cc, []);
 
-    event.create('titanium_oxide')
-        .dust()
-        .components('1x titanium', '2x oxygen')
-        .color(0xff66cc);
+    compDust('strontium_titanium_oxide', ['1x strontium', '1x titanium', '3x oxygen'], 0xff0000, []);
 
-    event.create('strontium_titanium_oxide')
-        .dust()
-        .components('1x strontium', '1x titanium', '3x oxygen')
-        .color(0xff0000);
+    compDust('copper_chloride', ['1x copper', '1x chlorine'], 0xffffff, []);
 
-    event.create('npk_solution')
-        .fluid()
-        .color(0xb8c3f5);
+    compFluid('npk_solution', [], 0xb8c3f5, []);
 
-    event.create('copper_chloride')
-        .dust()
-        .components('1x copper', '1x chlorine');
-
-    event.create('cupric_chloride_solution')
-        .fluid()
-        .components('1x copper_chloride', '1x hydrochloric_acid')
-        .color(0x336600);
+    compFluid('cupric_chloride_solution', ['1x copper_chloride', '1x hydrochloric_acid'], 0x336600, []);
 
     // Ores and bedrock fluids
+    const compDustFluidOre = (name, elements, color, flags) => {
+        event.create(name).dust().liquid().ore(2, 1).components(elements).color(color).flags(flag);
+    }
     
-    event.create('titanite')
-        .dust()
-        .liquid()
-        .ore(2, 1)
-        .components('1x calcium', '1x titanium', '1x silicon', '5x oxygen')
-        .color(0x66ffff)
-        .flags(no_decomp);
+    const compDustOre = (name, elements, color) => {
+        event.create(name).dust().ore(2, 1).components(elements).color(color).flags(no_decomp);
+    }
+    
+    const compGemOre = (name, elements, color, icon) => {
+        event.create(name).gem().ore(2, 1).components(elements).color(color).iconSet(icon);
+    }
 
-    event.create('zapolite')
-        .dust()
-        .liquid()
-        .ore(2, 1)
-        .components('2x zapolgium', '4x iodine', '2x aluminium', '5x oxygen')
-        .color(0xcc0099)
-        .flags(no_decomp);
+    compDustFluidOre('titanite', ['1x calcium', '1x titanium', '1x silicon', '5x oxygen'], 0x66ffff, [no_decomp]);
 
-    event.create('lautarite')
-        .dust()
-        .ore(2, 1)
-        .components('1x calcium', '2x iodine', '6x oxygen')
-        .color(0x6666ff)
-        .flags(no_decomp);
+    compDustFluidOre('zapolite', ['2x zapolgium', '4x iodine', '2x aluminium', '5x oxygen'], 0xcc0099, [no_decomp]);
 
-    event.create('iodargyrite')
-        .dust()
-        .liquid()
-        .ore(2, 1)
-        .components('1x silver', '1x iodine')
-        .color(0x8080ff)
-        .flags(no_decomp);
+    compDustOre('lautarite', ['1x calcium', '2x iodine', '6x oxygen'], 0x6666ff);
 
-    event.create('clausthalite')
-        .dust()
-        .liquid()
-        .ore(2, 1)
-        .components('1x lead', '1x selenium')
-        .color(0x666633)
-        .flags(no_decomp);
+    compDustFluidOre('iodargyrite', ['1x silver', '1x iodine'], 0x8080ff, [no_decomp]);
 
-    event.create('crookesite')
-        .dust()
-        .liquid()
-        .ore(2, 1)
-        .components('7x copper', '1x thallium', '4x selenium')
-        .color(0x00ff99)
-        .flags(no_decomp);
+    compDustFluidOre('clausthalite', ['1x lead', '1x selenium'], 0x666633, [no_decomp]);
 
-    event.create('calaverite')
-        .dust()
-        .liquid()
-        .ore(2, 1)
-        .components('1x gold', '2x tellurium')
-        .color(0xcc9900)
-        .flags(no_decomp);
+    compDustFluidOre('crookesite', ['7x copper', '1x thallium', '4x selenium'], 0x00ff99, [no_decomp]);
 
-    event.create('sylvanite')
-        .dust()
-        .liquid()
-        .ore(2, 1)
-        .components('1x silver', '2x tellurium')
-        .color(0xff5050)
-        .flags(no_decomp);
+    compDustFluidOre('calaverite', ['1x gold', '2x tellurium'], 0xcc9900, [no_decomp]);
 
-    event.create('tiemannite')
-        .dust()
-        .liquid()
-        .ore(2, 1)
-        .components('1x mercury', '1x selenium')
-        .color(0xcc0066)
-        .flags(no_decomp);
+    compDustFluidOre('sylvanite', ['1x silver', '2x tellurium'], 0xff5050, [no_decomp]);
 
-    event.create('klockmannite')
-        .dust()
-        .ore(2, 1)
-        .components('1x copper', '1x selenium')
-        .color(0x009999)
-        .flags(no_decomp);
+    compDustFluidOre('tiemannite', ['1x mercury', '1x selenium'], 0xcc0066, [no_decomp]);
 
-    event.create('stibiopalladinite')
-        .dust()
-        .ore(2, 1)
-        .components('5x palladium', '2x antimony')
-        .color(0x333399)
-        .flags(no_decomp);
+    compDustOre('klockmannite', ['1x copper', '1x selenium'], 0x009999);
 
-    event.create('berzelianite')
-        .dust()
-        .ore(2, 1)
-        .components('2x copper', '1x selenium')
-        .color(0x990000)
-        .flags(no_decomp);
+    compDustOre('stibiopalladinite', ['5x palladium', '2x antimony'], 0x333399);
 
-    event.create('umangite')
-        .dust()
-        .ore(2, 1)
-        .components('3x copper', '2x selenium')
-        .color(0x006699)
-        .flags(no_decomp);
+    compFluid('berzelianite', ['2x copper', '1x selenium'], 0x990000);
 
-    event.create('aguilarite')
-        .dust()
-        .ore(2, 1)
-        .components('3x silver', '1x selenium', '1x sulfur')
-        .color(0xff5050)
-        .flags(no_decomp);
+    compFluid('umangite', ['3x copper', '2x selenium'], 0x006699);
 
-    event.create('polybasite')
-        .dust()
-        .components('12x silver', '4x copper', '2x arsenic', '13x sulfur')
-        .color(0xcc6600);
+    compFluid('aguilarite', ['3x silver', '1x selenium', '1x sulfur'], 0xff5050);
 
-    event.create('strontianite')
-        .dust()    
-        .liquid()
-        .ore(2, 1)
-        .components('1x strontium', '1x carbon', '3x oxygen')
-        .color(0xe6ffff);
+    compDustFluidOre('strontianite', ['1x strontium', '1x carbon', '3x oxygen'], 0xe6ffff, []);
 
-    event.create('celestine')
-        .gem()
-        .ore(4, 1)
-        .components('1x strontium', '1x carbon', '4x oxygen')
-        .color(0xe6ffff)
-        .iconSet(GEM_VERTICAL);
+    compGemOre('celestine', ['1x strontium', '1x carbon', '4x oxygen'], 0xe6ffff, GEM_VERTICAL);
 
-    event.create('abydos_titanite_rich_magma')
-        .liquid(new GTFluidBuilder().temperature(3520))
-        .components('6x titanite', '2x calaverite','2x sylvanite', '2x tiemannite', '1x strontianite')
-        .flags(no_decomp)    
-        .color(0xe65c00);
+    compDust('polybasite', ['12x silver', '4x copper', '2x arsenic', '13x sulfur'], 0xcc6600, []);
 
-    event.create('abydos_zapolite_rich_magma')
-        .liquid(new GTFluidBuilder().temperature(4980))
-        .components('7x zapolite', '3x crookesite', '2x clausthalite', '1x iodargyrite')
-        .color(0xff471a)
-        .flags(no_decomp);
+    const compFluidTemp = (name, heat, elements, color, flags) => {
+        event.create(name).liquid(new GTFluidBuilder().temperature(heat)).components(elements).color(color).flags(flags);
+    }
+
+    compFluidTemp('abydos_titanite_rich_magma', 3520, ['6x titanite', '2x calaverite','2x sylvanite', '2x tiemannite', '1x strontianite'], 0xe65c00, [no_decomp]);
+
+    compFluidTemp('abydos_zapolite_rich_magma', 4980, ['7x zapolite', '3x crookesite', '2x clausthalite', '1x iodargyrite'], 0xff471a, [no_decomp]);
 
     // Nether
        
         //Extended Debris
-        event.create('ancient_debris')
-            .dust()
-            .fluid()
-            .components('1x mystery')
-            .color(0x603D1A)
-            .flags(no_decomp);
+        compDustFluid('ancient_debris', ['1x mystery'], 0x603d1a, [no_decomp]);
 
-        event.create('ancient_netherite')
-            .ingot()
-            .dust()
-            .flags(plates,rod,no_decomp)
-            .components('4x gold','4x mystery')
-            .color(0x46271B)
-            .blastTemp(12349, 'low', VA('uev'), 2400);
-          
+        compIngot('ancient_netherite', ['4x gold','4x mystery'], 0x46271b, [], [12349, 'low', VA('uev'), 2400], [plates,rod,no_decomp]);
+
         //Atomic Nether Dust Line
-        event.create('atomic_nether_sludge')
-            .dust()
-            .components('1x mystery','1x mystery','1x mystery','1x mystery')
-            .color(0x883039)
-            .iconSet(RADIOACTIVE)
-            .flags(no_decomp);
+        compDustIcon('atomic_nether_sludge', ['1x mystery','1x mystery','1x mystery','1x mystery'], 0x883039, RADIOACTIVE, [no_decomp]);
 
-        event.create('deactivated_nether')
-            .dust()
-            .components('1x mystery','1x mystery')
-            .color(0x664C4C)
-            .flags(no_decomp);
+        compDust('deactivated_nether', ['1x mystery','1x mystery'], 0x664C4C, [no_decomp]);
         
-        event.create('activated_nether')
-            .dust()
-            .components('1x mystery','1x mystery')
-            .color(0xA01819)
-            .flags(no_decomp);
+        compDust('activated_nether', ['1x mystery','1x mystery'], 0xA01819, [no_decomp]);
 
         //Estalt Line
-        event.create('molten_estaltadyne_mixture')
-            .liquid(new GTFluidBuilder().temperature(3500))
-            .components('1x mystery','1x estalt','1x mystery')
-            .color(0x8E0505)
-            .flags(no_decomp);
+        compFluidTemp('molten_estaltadyne_mixture', 3500, ['1x mystery','1x estalt','1x mystery'], 0x8E0505, [no_decomp]);
 
-        event.create('estaltadyne')
-            .dust()
-            .fluid()
-            .components('4x estalt','3x titanium','2x aluminium','5x sulfur','4x oxygen')
-            .color(0x8E0535)
-            .flags(no_decomp);
+        compDustFluid('estaltadyne', ['4x estalt','3x titanium','2x aluminium','5x sulfur','4x oxygen'], 0x8E0535, [no_decomp]);
 
-        event.create('metmalic_estaltadyne')
-            .dust()
-            .components('4x estalt','3x titanium','2x aluminium','5x sulfur')
-            .color(0x8E0560)
-            .flags(no_decomp);
+        compDust('metmalic_estaltadyne', ['4x estalt','3x titanium','2x aluminium','5x sulfur'], 0x8E0560, [no_decomp]);
 
-        event.create('magnemalic_estaltadyne')
-            .dust()
-            .components('4x estalt','3x titanium','5x sulfur')
-            .color(0x8E0480)
-            .flags(no_decomp);
+        compDust('magnemalic_estaltadyne', ['4x estalt','3x titanium','5x sulfur'], 0x8E0480, [no_decomp]);
 
-        event.create('tytite_estaltadyne')
-            .dust()
-            .components('4x estalt','3x titanium')
-            .color(0x8E0340)
-            .flags(no_decomp);
+        compDust('tytite_estaltadyne', ['4x estalt','3x titanium'], 0x8E0340, [no_decomp]);
 
-        event.create('estaltadyne_hydride')
-            .dust()
-            .components('4x estalt','9x hydrogen')
-            .color(0x8E0505)
-            .flags(no_decomp);
+        compDust('estaltadyne_hydride', ['4x estalt','9x hydrogen'], 0x8E0505, [no_decomp]);
         
         //Enriched Estalt Line
-        event.create('enriched_estaltadyne_mixture')
-            .fluid()
-            .components('1x mystery','1x enriched_estalt','1x mystery')
-            .color(0xBE4747)
-            .flags(no_decomp);
+        compFluid('enriched_estaltadyne_mixture', ['1x mystery','1x enriched_estalt','1x mystery'], 0xBE4747, [no_decomp]);
 
-        event.create('enriched_estaltadyne_solution')
-            .fluid()
-            .components('1x mystery','1x enriched_estalt','1x mystery')
-            .color(0xBE4717)
-            .flags(no_decomp);
+        compFluid('enriched_estaltadyne_solution', ['1x mystery','1x enriched_estalt','1x mystery'], 0xBE4717, [no_decomp]);
 
-        event.create('enriched_estaltadyne_slurry')
-            .fluid()
-            .components('1x mystery','1x enriched_estalt','1x mystery')
-            .color(0xBE4777)
-            .flags(no_decomp);
+        compFluid('enriched_estaltadyne_slurry', ['1x mystery','1x enriched_estalt','1x mystery'], 0xBE4777, [no_decomp]);
 
-        event.create('enriched_estaltadyne_naquide_slurry_mixture')
-            .fluid()
-            .components('1x mystery','1x enriched_estalt','1x enriched_naquadah','1x mystery')
-            .color(0xBE4697)
-            .flags(no_decomp);
+        compFluid('enriched_estaltadyne_naquide_slurry_mixture', ['1x mystery','1x enriched_estalt','1x enriched_naquadah','1x mystery'], 0xBE4697, [no_decomp]);
 
-        event.create('hyper_enriched_estaltadyne_slurry_mixture')
-            .fluid()
-            .components('1x mystery','2x enriched_estalt')
-            .color(0xBE4697)
-            .flags(no_decomp);
+        compFluid('hyper_enriched_estaltadyne_slurry_mixture', ['1x mystery','2x enriched_estalt'], 0xBE4697, [no_decomp]);
         
-        event.create('hyper_enriched_estaltadyne_slurry_residue')
-            .fluid()
-            .components('1x mystery','2x enriched_estalt')
-            .color(0xBE4677)
-            .flags(no_decomp);
+        compFluid('hyper_enriched_estaltadyne_slurry_residue', ['1x mystery','2x enriched_estalt'],0xBE4677, [no_decomp]);
 
-        event.create('sodium_hyper_enriched_estaltadyne_sludge')
-            .fluid()
-            .components('2x sodium','1x mystery','2x enriched_estalt')
-            .color(0xBE4697)
-            .flags(no_decomp);
+        compFluid('sodium_hyper_enriched_estaltadyne_sludge', ['2x sodium','1x mystery','2x enriched_estalt'], 0xBE4697, [no_decomp]);
 
-        event.create('hyper_enriched_estaltadyne_concentrate')
-            .fluid()
-            .components('2x enriched_estalt','1x mystery')
-            .color(0xBE4587)
-            .flags(no_decomp);
+        compFluid('hyper_enriched_estaltadyne_concentrate', ['2x enriched_estalt','1x mystery'], 0xBE4587, [no_decomp]);
         
         //Adamantine Line
-        event.create('enriched_adamantamite_mixture')
-            .fluid()
-            .components('1x mystery','1x adamantine','1x mystery')
-            .color(0x866E4B)
-            .flags(no_decomp);
+        compFluid('enriched_adamantamite_mixture', ['1x mystery','1x adamantine','1x mystery'], 0x866E4B, [no_decomp]);
 
-        event.create('molten_adamantamite_mixture')
-            .liquid(new GTFluidBuilder().temperature(3700))
-            .components('1x mystery','1x adamantine','1x mystery')
-            .color(0x866E7B)
-            .flags(no_decomp);
+        compFluidTemp('molten_adamantamite_mixture', 3700, ['1x mystery','1x adamantine','1x mystery'], 0x866E7B, [no_decomp]);
 
-        event.create('adamantamite')
-            .dust()
-            .fluid()
-            .components('5x adamantine','4x titanium','2x iron','6x nitrogen','12x oxygen')
-            .color(0x825F2B)
-            .flags(no_decomp);
+        compDustFluid('adamantamite', ['5x adamantine','4x titanium','2x iron','6x nitrogen','12x oxygen'], 0x825F2B, [no_decomp]);
 
-        event.create('adamantamite_metaltide')
-            .dust()
-            .components('5x adamantine','4x titanium','2x iron','6x nitrogen')
-            .color(0x8F611E)
-            .flags(no_decomp);
+        compDust('adamantamite_metaltide', ['5x adamantine','4x titanium','2x iron','6x nitrogen'], 0x8F611E, [no_decomp]);
 
-        event.create('adamantamite_magnide')
-            .dust()
-            .components('5x adamantine','4x titanium','2x iron')
-            .color(0x744D13)
-            .flags(no_decomp);
+        compDust('adamantamite_magnide', ['5x adamantine','4x titanium','2x iron'], 0x744D13, [no_decomp]);
 
-        event.create('adamantamite_titite')
-            .dust()
-            .components('5x adamantine','4x titanium')
-            .color(0xB68E52)
-            .flags(no_decomp);
+        compDust('adamantamite_titite', ['5x adamantine','4x titanium'], 0xB68E52, [no_decomp]);
 
-        event.create('adamantine_5')
-            .dust()
-            .components('5x adamantine')
-            .color(0xCB9D58)
-            .flags(no_decomp);
+        compDust('adamantine_5', ['5x adamantine'], 0xCB9D58, [no_decomp]);
 
-        event.create('adamantine_hydroxide')
-            .dust()
-            .components('1x adamantine','3x hydrogen','3x oxygen')
-            .color(0xCB8858)
-            .flags(no_decomp);
+        compDust('adamantine_hydroxide', ['1x adamantine','3x hydrogen','3x oxygen'], 0xCB8858, [no_decomp]);
         
         //Mythril Line
-        event.create('enriched_mythrillic_mixture')
-            .fluid()
-            .components('1x mystery','1x mythril','1x mystery')
-            .color(0x238213)
-            .flags(no_decomp);
+        compFluid('enriched_mythrillic_mixture', ['1x mystery','1x mythril','1x mystery'], 0x238213, [no_decomp]);
         
-        event.create('molten_mythrillic_mixture')
-            .liquid(new GTFluidBuilder().temperature(3100))
-            .components('1x mystery','1x mythril','1x mystery')
-            .color(0x238342)
-            .flags(no_decomp);
+        compFluidTemp('molten_mythrillic_mixture', 3100, ['1x mystery','1x mythril','1x mystery'], 0x238342, [no_decomp]);
 
-        event.create('mythrillic')
-            .dust()
-            .fluid()
-            .components('6x mythril','6x carbon','14x hydrogen','3x zirconium','2x vanadium')
-            .color(0x238362)
-            .flags(no_decomp);
+        compDustFluid('mythrillic', ['6x mythril','6x carbon','14x hydrogen','3x zirconium','2x vanadium'], 0x238362, [no_decomp]);
 
-        event.create('mythrillic_carbinide')
-            .dust()
-            .components('6x mythril','6x carbon','3x zirconium','2x vanadium')
-            .color(0x238441)
-            .flags(no_decomp);
+        compDust('mythrillic_carbinide', ['6x mythril','6x carbon','3x zirconium','2x vanadium'], 0x238441, [no_decomp]);
 
-        event.create('mythrillic_metlide')
-            .dust()
-            .components('6x mythril','3x zirconium','2x vanadium')
-            .color(0x238451)
-            .flags(no_decomp);
+        compDust('mythrillic_metlide', ['6x mythril','3x zirconium','2x vanadium'], 0x238451, [no_decomp]);
 
-        event.create('mythrillic_metnide')
-            .dust()
-            .components('6x mythril','3x zirconium')
-            .color(0x238432)
-            .flags(no_decomp);
+        compDust('mythrillic_metnide', ['6x mythril','3x zirconium'], 0x238432, [no_decomp]);
 
-        event.create('mythrillic_hydride')
-            .dust()
-            .components('1x mythril','2x hydrogen')
-            .color(0x238338)
-            .flags(no_decomp);
+        compDust('mythrillic_hydride', ['1x mythril','2x hydrogen'], 0x238338, [no_decomp]);
         
         // Calamatium/Isovol Line
-        event.create('impure_calamatium_solution')
-            .fluid()
-            .color(0x990000);
+        compFluid('impure_calamatium_solution', [], 0x990000, []);
 
-        event.create('impure_isovol_solution')
-            .fluid()
-            .color(0x000066);
+        compFluid('impure_isovol_solution', [], 0x000066, []);
 
-        event.create('calamatium_solution')
-            .fluid()
-            .color(0xe60000);
+        compFluid('calamatium_solution', [], 0xe60000, []);
 
         event.create('isovol_solution')
             .fluid()
@@ -1151,17 +672,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
         event.create('calamatium_fluoride')
             .dust()
-            .components('1x calamatium', '2x fluorine')
+            .components(['1x calamatium', '2x fluorine'])
             .color(0xcc0066)
-            .flags(no_decomp);
+            .flags([no_decomp]);
 
         event.create('isovol_fluoride')
             .dust()
-            .components('1x isovol', '2x fluorine')
+            .components(['1x isovol', '2x fluorine'])
             .color(0x9900ff)
-            .flags(no_decomp);
+            .flags([no_decomp]);
 
-        // //Magmas
+        // Magmas
         event.create('highly_unstable_nether_magma')
             .liquid(new GTFluidBuilder().temperature(9001))
             .components('1x mystery')
