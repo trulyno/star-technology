@@ -16,6 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('manifold_centrifuge')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .appearanceBlock(() => Block.getBlock('kubejs:quake_proof_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("  D D  ", "  B B  ", "  BBB  ", "       ", "  BBB  ", "  CCC  ", "  BBB  ", "  D D  ", "       ", "       ", "       ") 
             .aisle(" D E D ", " B E B ", " BFEFB ", "  GGG  ", " BBHBB ", " CHHHC ", " B   B ", " D   D ", " D   D ", " D   D ", " DD DD ") 
