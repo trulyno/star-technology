@@ -50,14 +50,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
-    event.recipes.gtceu.chemical_plant('sulfuric_acid')
-        .itemInputs('gtceu:sulfur_dust')
-        .inputFluids('minecraft:water 4000')
-        .outputFluids('gtceu:sulfuric_acid 1000')
-        .duration(320)
-        .EUt(480)
-        .circuit(24);
-
     event.recipes.gtceu.chemical_plant('ptfe')
         .itemInputs('2x gtceu:carbon_dust')
         .inputFluids('gtceu:fluorine 4000')

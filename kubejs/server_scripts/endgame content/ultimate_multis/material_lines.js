@@ -6,8 +6,8 @@ ServerEvents.recipes(event => {
         .itemInputs('1x gtceu:boron_dust')
         .inputFluids('gtceu:nitrogen 1000')
         .itemOutputs('1x gtceu:boron_nitride_dust')
-        .duration(600)
-        .EUt(100000);
+        .duration(400)
+        .EUt(GTValues.VHA[GTValues.ZPM] * 5/6);
 
     event.recipes.gtceu.large_chemical_reactor('boron_trioxide')
         .itemInputs('2x gtceu:boron_dust')
@@ -25,12 +25,12 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.IV])
 
     // Thallium Tungstate (Shaky Casing)
-    event.recipes.gtceu.chemical_plant("thallium_tungstate")
+    event.recipes.gtceu.chemical_plant('thallium_tungstate')
         .itemInputs('1x gtceu:tungsten_dust', '2x gtceu:thallium_dust')
         .inputFluids('gtceu:oxygen 4000')
         .itemOutputs('1x gtceu:thallium_tungstate_dust')
-        .duration(900)
-        .EUt(100000);
+        .duration(560)
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
     event.recipes.gtceu.large_chemical_reactor('tungsten_trioxide')
         .itemInputs('1x gtceu:tungsten_dust')
