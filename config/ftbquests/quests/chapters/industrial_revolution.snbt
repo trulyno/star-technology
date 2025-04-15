@@ -445,6 +445,7 @@
 		{
 			dependencies: ["2AFD24A844E49C42"]
 			description: ["Turns item into their liquid forms."]
+			hide_dependent_lines: true
 			id: "7844913D9059D182"
 			rewards: [{
 				id: "6679E1A4653C52CB"
@@ -457,7 +458,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -584,7 +585,10 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["1F5CCE8CFD02903A"]
+			dependencies: [
+				"1F5CCE8CFD02903A"
+				"23C8E1371ABA986C"
+			]
 			description: ["The Electric Blast Furnace (EBF for short) is a better furnace, which you will need for most of your ingots going forward. If you are curious about how to use the EBF for &bMV&r recipes, look at the Mechanics chapter, inside the Overclock quest."]
 			icon: "gtceu:electric_blast_furnace"
 			id: "56BA79287C4DBE52"
@@ -596,61 +600,11 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			tasks: [
-				{
-					id: "74D648A7F47605A0"
-					item: "gtceu:electric_blast_furnace"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "7F5DC531E333C572"
-					item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "225C0227C18C8198"
-					item: { Count: 9, id: "gtceu:heatproof_machine_casing" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "20E3CC024E45ADE0"
-					item: { Count: 2, id: "gtceu:lv_energy_input_hatch" }
-					type: "item"
-				}
-				{
-					id: "7CA6F4141B9582C8"
-					item: "gtceu:lv_input_bus"
-					type: "item"
-				}
-				{
-					id: "26C2A736BDC1FAD9"
-					item: "gtceu:lv_input_hatch"
-					type: "item"
-				}
-				{
-					id: "3801B25C5CB79172"
-					item: "gtceu:lv_output_bus"
-					type: "item"
-				}
-				{
-					id: "59C7F30E47B821EA"
-					item: "gtceu:lv_output_hatch"
-					type: "item"
-				}
-				{
-					id: "3E7DAB71EB2E714A"
-					item: "gtceu:maintenance_hatch"
-					type: "item"
-				}
-				{
-					id: "4B47C01D2B36D72A"
-					item: "gtceu:lv_muffler_hatch"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "74D648A7F47605A0"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
 			title: "Electric Blast Furnace (EBF)"
 			x: 6.0d
 			y: -1.5d
@@ -1404,7 +1358,7 @@
 		}
 		{
 			dependencies: ["6749EECB949732DB"]
-			description: ["Kanthal Coils are the second tier of coils. All recipes in the EBF have both a minimum coil and energy tier requirement. If these conditions are not met, the EBF won't operate."]
+			description: ["Kanthal Coils are the second tier of coils."]
 			id: "0E61DC74B2E2C962"
 			rewards: [{
 				count: 2
@@ -1449,12 +1403,8 @@
 			y: -3.5d
 		}
 		{
-			dependencies: [
-				"30B2688F8387048F"
-				"33F9F93AD614C537"
-			]
+			dependencies: ["50EA5165AF923EB4"]
 			description: ["Power Hatch for your ME network."]
-			hide_dependency_lines: true
 			id: "0A98FE21C12F1199"
 			rewards: [{
 				count: 2
@@ -1469,8 +1419,8 @@
 				item: "ae2:energy_acceptor"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -8.5d
+			x: 10.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -1801,23 +1751,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["12C9427A04A2F550"]
-			description: ["A cheaper cable coating."]
-			id: "270CE5B8D718F8C2"
-			rewards: [{
-				id: "4FF5666DB3AE5E52"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "39E2C438D28BEDB7"
-				item: "gtceu:silicone_rubber_bucket"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -3.5d
-		}
-		{
 			dependencies: ["20A12F3B992762F0"]
 			id: "53E98CFC7934FA67"
 			shape: "gear"
@@ -1835,6 +1768,7 @@
 			dependencies: [
 				"1F5CCE8CFD02903A"
 				"6D23752791E9928A"
+				"23C8E1371ABA986C"
 			]
 			description: [
 				"The machine allowing you to gather all the Geodes and Gems you could need."
@@ -1881,7 +1815,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["7CA424E05FB05DFF"]
+			dependencies: [
+				"7CA424E05FB05DFF"
+				"550DB81B8DC91730"
+			]
 			description: ["Contains various precious resources that you will need later on."]
 			id: "4597B95C2F5EE106"
 			rewards: [{
@@ -1902,7 +1839,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["7CA424E05FB05DFF"]
+			dependencies: [
+				"7CA424E05FB05DFF"
+				"550DB81B8DC91730"
+			]
 			description: ["The source for Vanadium, a metal primarily used in alloys."]
 			id: "12DA5E8FA3E11AC0"
 			rewards: [{
@@ -1961,7 +1901,7 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: 0.25d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -1976,7 +1916,7 @@
 				title: "Go Check out the Applied Energistic Questbook"
 				type: "checkmark"
 			}]
-			x: 14.0d
+			x: 12.0d
 			y: -7.0d
 		}
 		{
@@ -2116,7 +2056,7 @@
 				title: "Go Read About Overclock"
 				type: "checkmark"
 			}]
-			x: 5.0d
+			x: 7.0d
 			y: -2.5d
 		}
 		{
@@ -2132,6 +2072,93 @@
 			}]
 			x: 13.0d
 			y: 5.5d
+		}
+		{
+			dependencies: [
+				"4B51B15B49620F57"
+				"333F9471F8B4E184"
+			]
+			description: [
+				"The first of many coils. Each tier of coil has better stats that impact multiple machines. Make sure to take a look at the tooltips."
+				""
+				"All recipes in the EBF have both a minimum coil and energy tier requirement. If these conditions are not met, the EBF won't operate."
+			]
+			id: "23C8E1371ABA986C"
+			rewards: [{
+				id: "5F05E3537E63DD0E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0ABD8F2602FB46E7"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7844913D9059D182"]
+			description: ["Earliest way to make this is by using an extractor."]
+			icon: "gtceu:tin_alloy_bucket"
+			id: "333F9471F8B4E184"
+			tasks: [
+				{
+					id: "6A9D974979FC6B36"
+					item: "gtceu:tin_alloy_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "195BA0A8E9685F7F"
+					type: "checkmark"
+				}
+			]
+			title: "Tin Alloy"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["12C9427A04A2F550"]
+			description: ["These &bMV&r machines will allow you to process more things. Most notably you can start to break down those fluids from your &7Void Extractor"]
+			hide_dependent_lines: true
+			id: "550DB81B8DC91730"
+			rewards: [{
+				id: "4545050297AC3C4A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2D8C878C5E9C6516"
+					item: "gtceu:mv_centrifuge"
+					type: "item"
+				}
+				{
+					id: "2602CD848084D844"
+					item: "gtceu:mv_electrolyzer"
+					type: "item"
+				}
+			]
+			title: "Better Processing Machines"
+			x: 10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["550DB81B8DC91730"]
+			id: "50EA5165AF923EB4"
+			rewards: [{
+				id: "5F58FB860D0AEFC4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3FBBA93FDD3F0190"
+				item: "ae2:sky_dust"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -7.0d
 		}
 	]
 	title: "Industrial Revolution"

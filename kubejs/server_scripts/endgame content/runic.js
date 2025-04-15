@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:runic_inscribe_manipulate')
         .duration(32000)
         .stationResearch(
-    researchRecipeBuilder => researchRecipeBuilder
+            researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('kubejs:runic_tablet_complete'))
                 .EUt(GTValues.VHA[GTValues.UV])
                 .CWUt(144)

@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+    //Controllers
+
     event.shaped(Item.of('gtceu:mechanical_sieve'), [
         'ESE',
         'PDP',
@@ -12,6 +14,12 @@ ServerEvents.recipes(event => {
         B: 'gtceu:lv_electric_motor',
         M: 'gtceu:lv_machine_hull'
     });
+
+    event.recipes.gtceu.assembler('large_sieve')
+        .itemInputs('gtceu:iv_machine_hull', '2x #gtceu:circuits/iv', '2x gtceu:double_tungsten_steel_plate' ,'4x gtceu:pure_netherite_gear')
+        .itemOutputs('gtceu:large_sieve')
+        .duration(1200)
+        .EUt(1240);
 
     // Wood Casing & Mesh crafting recipe
 
@@ -35,61 +43,42 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(16)
 
-        event.shaped(Item.of('kubejs:meshblock'), [
+    event.shaped(Item.of('kubejs:meshblock'), [
 
-            'SMS',
-            'MMM',
-            'SMS'
-        ], {
-            M: 'exnihilosequentia:string_mesh',
-            S: 'gtceu:treated_wood_rod'
-        });
-    
-        event.recipes.gtceu.assembler('start:assembler_meshblock')
-            .itemInputs('5x exnihilosequentia:string_mesh', '4x gtceu:treated_wood_rod')
-            .itemOutputs('kubejs:meshblock')
-            .circuit(6)
-            .duration(50)
-            .EUt(16)
+        'SMS',
+        'MMM',
+        'SMS'
+    ], {
+        M: 'exnihilosequentia:string_mesh',
+        S: 'gtceu:treated_wood_rod'
+    });
 
-    function mechsieve(mesh, input, outputs) {
+    event.recipes.gtceu.assembler('start:assembler_meshblock')
+        .itemInputs('5x exnihilosequentia:string_mesh', '4x gtceu:treated_wood_rod')
+        .itemOutputs('kubejs:meshblock')
+        .circuit(6)
+        .duration(50)
+        .EUt(16)
+
+    function MechanicalSieving(input, outputs) {
 
         event.recipes.gtceu.mechanical_sieve(`${input.path}_mechanical_sieve`)
-            .itemInputs(`${input}`)
-            .notConsumable(`exnihilosequentia:${mesh}_mesh`)
+            .itemInputs(`64x ${input}`)
+            .notConsumable(`exnihilosequentia:string_mesh`)
             .itemOutputs(outputs)
-            .duration(1600)
+            .duration(1200)
             .EUt(GTValues.VA[GTValues.LV])
-            //.inputStress(256)
-            //.rpm(128)
-
-    }
-
-    mechsieve('string', '128x minecraft:gravel', ['64x gtceu:crushed_copper_ore', '64x gtceu:crushed_iron_ore', '64x gtceu:crushed_tin_ore', '64x gtceu:crushed_sphalerite_ore', '64x gtceu:crushed_magnetite_ore']);
-    mechsieve('string', '128x #forge:sand', ['64x minecraft:quartz', '64x minecraft:diamond', '64x minecraft:lapis_lazuli', '64x minecraft:amethyst_shard', '64x minecraft:emerald']);
-    mechsieve('string', '128x exnihilosequentia:dust', ['64x minecraft:redstone', '16x minecraft:ender_pearl', '64x minecraft:glowstone_dust', '16x gtceu:sulfur_dust']);
-    mechsieve('string', '128x exnihilosequentia:crushed_blackstone', ['64x gtceu:crushed_galena_ore', '64x gtceu:crushed_stibnite_ore']);
-
-   //Parallel Version
-    event.recipes.gtceu.assembler('large_sieve')
-    .itemInputs('gtceu:iv_machine_hull', '2x #gtceu:circuits/iv', '2x gtceu:double_tungsten_steel_plate' ,'4x gtceu:pure_netherite_gear')
-    .itemOutputs('gtceu:large_sieve')
-    .duration(1200)
-    .EUt(1240);
-
-    function largesieve(input, outputs) {
-
-        event.recipes.gtceu.large_sieve(`${input.path}_large_sieve`)
-            .itemInputs(`${input}`)
+            
+        event.recipes.gtceu.large_sieve(`${input.path}_mechanical_sieve`)
+            .itemInputs(`48x ${input}`)
             .itemOutputs(outputs)
-            .duration(400)
-            .EUt(GTValues.VA[GTValues.EV])
-
+            .duration(1200)
+            .EUt(GTValues.VA[GTValues.LV])
     }
 
-    largesieve('64x minecraft:gravel', ['64x gtceu:crushed_copper_ore', '64x gtceu:crushed_iron_ore', '64x gtceu:crushed_tin_ore', '64x gtceu:crushed_sphalerite_ore', '64x gtceu:crushed_magnetite_ore']);
-    largesieve('64x #forge:sand', ['64x minecraft:quartz', '64x minecraft:diamond', '64x minecraft:lapis_lazuli', '64x minecraft:amethyst_shard', '64x minecraft:emerald']);
-    largesieve('64x exnihilosequentia:dust', ['64x minecraft:redstone', '16x minecraft:ender_pearl', '64x minecraft:glowstone_dust', '16x gtceu:sulfur_dust']);
-    largesieve('64x exnihilosequentia:crushed_blackstone', ['64x gtceu:crushed_galena_ore', '64x gtceu:crushed_stibnite_ore']);
+    MechanicalSieving('minecraft:gravel', ['16x gtceu:crushed_copper_ore', '16x gtceu:crushed_iron_ore', '16x gtceu:crushed_tin_ore', '16x gtceu:crushed_sphalerite_ore', '16x gtceu:crushed_magnetite_ore']);
+    MechanicalSieving('#forge:sand', ['16x minecraft:quartz', '16x minecraft:diamond', '16x minecraft:lapis_lazuli', '16x minecraft:amethyst_shard', '16x minecraft:emerald']);
+    MechanicalSieving('exnihilosequentia:dust', ['16x minecraft:redstone', '4x minecraft:ender_pearl', '16x minecraft:glowstone_dust', '4x gtceu:sulfur_dust']);
+    MechanicalSieving('exnihilosequentia:crushed_blackstone', ['16x gtceu:crushed_galena_ore', '16x gtceu:crushed_stibnite_ore']);
 
 });

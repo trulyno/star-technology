@@ -1,7 +1,7 @@
 
 StartupEvents.registry('item', event => {
 
-    const partTiers = ['uhv'/*, 'uev', 'uiv', 'uxv', 'opv'*/];
+    const partTiers = ['uhv', 'uev'/*, 'uiv', 'uxv', 'opv'*/];
 
     let tier_proper;
     partTiers.forEach(tier => {
@@ -17,7 +17,7 @@ StartupEvents.registry('item', event => {
             .tooltip('The Brains of Components');
         event.create(`${tier}_transmission_assembly`)
             .texture(`kubejs:item/component_part/${tier}_transmission_assembly`)
-            .displayName(`${tier_proper} Transimission Assembly`)
+            .displayName(`${tier_proper} Transmission Assembly`)
             .tooltip('Top Tier Gear Box');
         event.create(`${tier}_precision_drive_mechanism`)
             .texture(`kubejs:item/component_part/${tier}_precision_drive_mechanism`)

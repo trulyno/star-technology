@@ -16,6 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .tooltips('§7An apparatus crossing the boundaries between technology and magic, that can inscribe dense plates with pure singularities to write runes containing mystical powers.')
         .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .appearanceBlock(() => Block.getBlock('kubejs:lumium_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('         ', '         ', '         ', '         ', '         ', '         ', '         ', '         ', ' LLCCCLL ', ' LLCCCLL ', ' LLCCCLL ', '         ')
             .aisle(' LLLLLLL ', ' P     P ', ' P     P ', ' P     P ', ' P     P ', ' P     P ', ' P     P ', ' LLLLLLL ', 'LP     PL', 'LP     PL', 'LP     PL', ' LLLLLLL ')

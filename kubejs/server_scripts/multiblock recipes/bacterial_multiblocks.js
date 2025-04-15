@@ -5,12 +5,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1872', 'gtceu:naquadria 576')
         .itemOutputs('start_core:bacterial_runic_mutator')
         .duration(1200)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:mutagen_bucket'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(128)
-            )
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of('gtceu:mutagen_bucket'))
+        //         .EUt(GTValues.VHA[GTValues.UV])
+        //         .CWUt(128)
+        //     )
         .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.assembly_line('bacterial_breeding_vat')
@@ -18,12 +18,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1872', 'gtceu:naquadria 576')
         .itemOutputs('start_core:bacterial_breeding_vat')
         .duration(1200)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:bacteria_bucket'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(128)
-            )
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of('gtceu:bacteria_bucket'))
+        //         .EUt(GTValues.VHA[GTValues.UV])
+        //         .CWUt(128)
+        //     )
         .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.assembly_line('bacterial_hydrocarbon_harvester')
@@ -31,12 +31,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 1872', 'gtceu:naquadria 1158')
         .itemOutputs('start_core:bacterial_hydrocarbon_harvester')
         .duration(1200)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:uhv_distillery'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(128)
-            )
+        // .stationResearch(
+        //     researchRecipeBuilder => researchRecipeBuilder
+        //         .researchStack(Item.of('gtceu:uhv_distillery'))
+        //         .EUt(GTValues.VHA[GTValues.UV])
+        //         .CWUt(128)
+        //     )
         .EUt(GTValues.VHA[GTValues.UV]);
 
 

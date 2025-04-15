@@ -17,6 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .tooltips('§7An advanced tier of sifter that is more precise and stronger than the basic tier, allowing it to run better recipes.')
         .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .appearanceBlock(() => Block.getBlock('kubejs:quake_proof_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("         ", "         ", "         ", "         ", "   BBB   ", "   CCC   ", "   BBB   ", "         ", "         ", "         ", "         ", "         ") 
             .aisle("   DDD   ", "    D    ", "    D    ", "   BBB   ", " BBBBBBB ", " CCEEECC ", " BB F BB ", "    D    ", "    D    ", "    D    ", "    D    ", "  DDDDD  ") 

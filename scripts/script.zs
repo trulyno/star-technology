@@ -9,4 +9,4 @@ ReDimensionStages.restrictWithMessage("minecraft:the_end", "The Draconic Void is
 ReDimensionStages.restrictWithMessage("sgjourney:cavum_tenebrae", "Content not available", "three");
 ReDimensionStages.restrictWithMessage("sgjourney:lantea", "Content not available", "three");
 // Chunkla - universal stargate
-ReDimensionStages.restrictWithMessage("sgjourney:chunkla", "Content not available", "four");
+ReDimensionStages.restrictWithMessage("sgjourney:chulak", "Content not available", "four");

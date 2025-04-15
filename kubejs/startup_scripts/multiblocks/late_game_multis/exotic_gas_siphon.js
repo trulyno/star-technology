@@ -18,6 +18,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('exotic_gas_siphon', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes([GTRecipeTypes.get('exotic_gas_siphon'), GTRecipeTypes.get('gas_collector')])
+        .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
         .tooltips("§f§lGas Collector")
         .tooltips("§7Utilising precision filtration and molecular isolation technologies, it efficiently separates exotic compounds from ambient environments, ensuring high-purity yields for any applications.")
         .tooltips("§8-----------------------------------")

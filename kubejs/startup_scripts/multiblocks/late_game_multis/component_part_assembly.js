@@ -4,7 +4,9 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('component_part_assembly')
         .setEUIO('in')
         .setMaxIOSize(6, 1, 2, 0)
-        .setSound(GTSoundEntries.ASSEMBLER);
+        // .setHasResearchSlot(true)  need to figure out how this works
+        .setSound(GTSoundEntries.ASSEMBLER)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ASSEMBLER, FillDirection.LEFT_TO_RIGHT);
 
 });
 
@@ -13,6 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('component_part_assembly', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('component_part_assembly')
+        .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))
         .tooltips('§7An assembler that can micro craft some incredibly complex components that are too detailed for a normal assembler.')
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('SSSSS', 'SSSSS', ' SSS ')

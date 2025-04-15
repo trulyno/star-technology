@@ -17,6 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .tooltips('§7An advanced tier of mixer that can create more precise mixtures than the basic tier, allowing it to run better recipes.')
         .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .appearanceBlock(() => Block.getBlock('kubejs:noble_mixing_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(" BBB ", " CCC ", " BBB ", "  B  ", "     ", "  B  ", " BBB ", "     ", "     ", "     ", "     ", "     ", "     ") 
             .aisle("BBDBB", "CDDDC", "BEEEB", " FEF ", " FGF ", " FDF ", "BDDDB", " DFD ", "  F  ", "  C  ", "  C  ", "  C  ", "  D  ") 

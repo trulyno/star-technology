@@ -16,6 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .tooltips('§7A giant structure designed with the ability to create extremely strong blocks inscribed with ancient runes that hold the power to slip between the cracks in space.')
         .tooltips('Has §6Perfect Overclock')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
+        .appearanceBlock(() => Block.getBlock('kubejs:prismalium_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' SSS     MCM     SSS ', 'S   S           S   S', 'S   S           S   S', 'S   S           S   S', ' SSS             SSS ', '                     ', '                     ', '                     ', '                     ', '                     ', ' SSS SSS SSS SSS SSS ', 'S   S   SPPPS   S   S', 'S   S   SPPPS   S   S', 'S   S   SPPPS   S   S', ' SSS SSS SSS SSS SSS ')
             .aisle('SFFFSDDDDMCMDDDDSFFFS', ' HHH             HHH ', ' HHH             HHH ', ' HHH             HHH ', 'SFFFS           SFFFS', '  M               M  ', '  M               M  ', '                     ', '  M               M  ', '  M               M  ', 'SFFFS   SPPPS   SFFFS', ' HHHSHHHSHHHSHHHSHHH ', ' HHHSHHHSHHHSHHHSHHH ', ' HHHSHHHSHHHSHHHSHHH ', 'S   S   SPPPS   S   S')

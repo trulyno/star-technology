@@ -17,6 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .tooltips('§7An advanced tier of centrifuge that is more powerful than the basic tier, allowing it to run better recipes.')
         .tooltips('Can use §3Parallel§r hatches')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .appearanceBlock(() => Block.getBlock('kubejs:quake_proof_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("  D D  ", "  B B  ", "  BBB  ", "       ", "  BBB  ", "  CCC  ", "  BBB  ", "  D D  ", "       ", "       ", "       ") 
             .aisle(" D E D ", " B E B ", " BFEFB ", "  GGG  ", " BBHBB ", " CHHHC ", " B   B ", " D   D ", " D   D ", " D   D ", " DD DD ") 
