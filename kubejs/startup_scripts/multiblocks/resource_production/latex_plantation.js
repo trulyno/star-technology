@@ -11,6 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('latex_plantation')
         .appearanceBlock(GTBlocks.CASING_PRIMITIVE_BRICKS)
+        .tooltips('A multiblock that is way faster then the arboreal extractor for gathering latex')
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('BOB','SSS','###','###','###','#L#','###')
             .aisle('BDB','BGB','#G#','#G#','#G#','LGL','#L#')
