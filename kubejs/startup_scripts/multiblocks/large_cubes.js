@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         event.create(`t_large_${type}`, 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType(type)
-            .tooltips(`§7A larger variant of the ${type} that can process materials with more energy efficiency.`)
+            .tooltips(`§7A larger variant of the ${type.replace(/_/, ' ')} that can process materials with more energy efficiency.`)
             .tooltips('Has §6Perfect Overclock')
             .tooltips('Can only have §bone§r Energy Hatch')
             .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
