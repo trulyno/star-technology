@@ -85,17 +85,22 @@ StartupEvents.registry('item', event => {
     event.create('void_core')
         .displayName('§5Void Core')
         .texture('kubejs:item/gate_items/void_core');
+        
+    const runicPieces = [
+        { id: '1', numeral: 'I' },
+        { id: '2', numeral: 'II' },
+        { id: '3', numeral: 'III' },
+        { id: '4', numeral: 'IV' },
+        { id: '5', numeral: 'V' },
+        { id: '6', numeral: 'VI' },
+        { id: 'complete', numeral: 'Unified' }
+    ];
 
-    const runic_tablet = ['1','2','3','4','5','6','complete']
-    let fragment;
-    runic_tablet.forEach(piece =>{
-        if(piece == 'complete') {fragment = 'Unified'}
-            else{fragment = `Fragment ${piece}`};
-            event.create(`runic_tablet_${piece}`)
-                .displayName(`Runic Tablet ${fragment}`)
-                .rarity('uncommon')
-                .texture(`kubejs:item/gate_items/rune_tablet_${piece}`)
-
+    runicPieces.forEach(piece => {
+        event.create(`runic_tablet_${piece.id}`)
+            .displayName(`Runic Tablet ${piece.id === 'complete' ? piece.numeral : `Fragment ${piece.numeral}`}`)
+            .rarity('uncommon')
+            .texture(`kubejs:item/gate_items/rune_tablet_${piece.id}`);
     });
 
 });
