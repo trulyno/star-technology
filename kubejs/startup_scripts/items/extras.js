@@ -14,6 +14,7 @@ StartupEvents.registry('item', event => {
 
     event.create('multiblock_upgrade_kit')
         .displayName('Multiblock Upgrade Kit')
-        .texture('kubejs:item/kits/upgrade_kit');
+        .texture('kubejs:item/kits/upgrade_kit')
+        .tooltip('Used to upgrade some HV machines into multiblocks cabable of §6Perfect Overclock');
 
 });
