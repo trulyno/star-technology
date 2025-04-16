@@ -19,6 +19,6 @@ StartupEvents.registry('item', event => {
         event.create(`${name.toLowerCase()}_geode`)
             .displayName(`${color}${name.replace(/_/, ' ')}§r Geode`)
             .texture(`kubejs:item/resource_gen/geodes/cracked_${name.toLowerCase()}_geode`)
-            .tooltip(`A seemingly ordinary rock which hides a beautiful ${color}${name.toLowerCase().replace(/_/, ' ')}§r inside`);
+            .tooltip(`§7A seemingly ordinary rock which hides a beautiful ${color}${name.toLowerCase().replace(/_/, ' ')}§7 inside`);
     });
 });
