@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+    const id = (id) => `start:${id}`;
+
     event.shaped('gtceu:ulv_advanced_composter',[
         'PRP',
         'PGP',
@@ -9,10 +11,10 @@ ServerEvents.recipes(event => {
         R: 'gtceu:iron_gear',
         I: 'gtceu:iron_plate',
         S: 'thermal:redstone_servo'
-    });
+    }).id('start:shaped/ulv_advanced_composter');
 
     function composting (odds, fuel) {
-        event.recipes.gtceu.composting(fuel.split(':')[1])
+        event.recipes.gtceu.composting(id(fuel.split(':')[1]))
             .itemInputs(`${fuel}`)
             .chancedOutput('minecraft:bone_meal', odds, 0)
             .duration(42)

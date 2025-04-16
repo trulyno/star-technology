@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+    const id = (id) => `start:${id}`;
+
     event.shaped('gtceu:ulv_barrel',[
         'ABA',
         'ACA',
@@ -8,7 +10,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:chest',
         C: 'woodenbucket:wooden_bucket',
         D: '#minecraft:wooden_slabs'
-    });
+    }).id('start:shaped/ulv_barrel');
 
     event.shaped('gtceu:ulv_stone_barrel',[
         'ABA',
@@ -18,33 +20,35 @@ ServerEvents.recipes(event => {
             B: 'minecraft:chest',
             C: 'minecraft:bucket',
             D: 'minecraft:stone_slab'
-    });
+    }).id('start:shaped/ulv_stone_barrel');
 
-     function sbarrel(output,fluidcons,nconsfluid,circ){
-        event.recipes.gtceu.stone_barrel(`${output}`)
+    const sbarrel = (output, fluidcons, nconsfluid, circ) => {
+        event.recipes.gtceu.stone_barrel(id(`${output}`))
             .notConsumableFluid(`${nconsfluid}`)
             .inputFluids(`${fluidcons} 1000`)
-            .itemOutputs(`${output}`)
+            .itemOutputs(`minecraft:${output}`)
             .circuit(circ)
             .duration(15);
     }
-    sbarrel('minecraft:cobblestone','minecraft:water','minecraft:lava','')
-    sbarrel('minecraft:obsidian','minecraft:lava','minecraft:water',1)
-    sbarrel('minecraft:blackstone','exnihilosequentia:witch_water','minecraft:lava','')
 
-        event.recipes.gtceu.stone_barrel(`gtceu:tempered_glass`)
-            .itemInputs(`minecraft:glass`)
-            .inputFluids(`minecraft:lava 1000`)
-            .itemOutputs(`gtceu:tempered_glass`)
-            .duration(600);
+    sbarrel('cobblestone','minecraft:water','minecraft:lava','')
+    sbarrel('obsidian','minecraft:lava','minecraft:water',1)
+    sbarrel('blackstone','exnihilosequentia:witch_water','minecraft:lava','')
 
-    function barrel(output,item,fluid){
-        event.recipes.gtceu.barrel(`${output}`)
+    event.recipes.gtceu.stone_barrel(id(`tempered_glass`))
+        .itemInputs(`minecraft:glass`)
+        .inputFluids(`minecraft:lava 1000`)
+        .itemOutputs(`gtceu:tempered_glass`)
+        .duration(600);
+
+    const barrel = (output, item, fluid) => {
+        event.recipes.gtceu.barrel(id(`${output.split(':')[1]}`))
             .itemInputs(`${item}`)
             .inputFluids(`${fluid} 1000`)
             .itemOutputs(`${output}`)
             .duration(15);
     }
+
     barrel('minecraft:clay','exnihilosequentia:dust','minecraft:water')
     barrel('minecraft:mud','minecraft:dirt','minecraft:water')
     barrel('minecraft:pointed_dripstone','exnihilosequentia:crushed_dripstone','minecraft:water')
@@ -67,15 +71,14 @@ ServerEvents.recipes(event => {
         'minecraft:glow_berries','minecraft:cactus','exnihilosequentia:silkworm', '#minecraft:flowers', '#forge:seeds', '#forge:crops', '#minecraft:saplings', '#minecraft:leaves'
     ]
     compost.forEach(type => {
-        const id = type.slice(type.indexOf(':')+1)
-        event.recipes.gtceu.barrel_composting(`${id}_composting`)
+        event.recipes.gtceu.barrel_composting(id(`${type.split(':')[1]}_composting`))
             .itemInputs(`4x ${type}`)
             .itemOutputs('minecraft:dirt')
             .duration(15);
     });
 
-    function transformation(output,ncItem){
-        event.recipes.gtceu.barrel_transformation(`${output}`)
+    const transformation = (output, ncItem) => {
+        event.recipes.gtceu.barrel_transformation(id(`${output.split(':')[1]}`))
             .notConsumable(`${ncItem}`)
             .inputFluids('minecraft:water 1000')
             .outputFluids(`${output} 1000`)

@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(event => {
     const dirt = 'minecraft:dirt';
     const gravel = 'minecraft:gravel';
@@ -12,7 +11,7 @@ ServerEvents.recipes(event => {
     const rdirt = 'minecraft:rooted_dirt'
     const myc = 'minecraft:mycelium'
 
-    function sieve(mesh, chance, input, result, wlog) {
+    const sieve = (mesh, chance, input, result, wlog) => {
         event.custom({
             "type": `exnihilosequentia:sifting`,
             "input": input,
@@ -22,7 +21,7 @@ ServerEvents.recipes(event => {
                 mesh: mesh
             }],
             "waterlogged": wlog
-        })
+        }).id(`start:sifting/${input.split(':')[1]}_${result.split(':')[1]}`); // doesn't work, idk why
     }
 
     function hammer(input, result) {
