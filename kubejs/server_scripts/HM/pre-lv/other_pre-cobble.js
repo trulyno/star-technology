@@ -29,8 +29,8 @@ ServerEvents.recipes(event => {
 
 	const long_rods = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
 	const double_plates = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
-	const gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
-	const small_gears = ['iron', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
+	const gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel'];
+	const small_gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel'];
 	const rotors = ['iron', 'copper', 'lead', 'bronze', 'pig_iron', 'steel'];
 	const springs = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel', 'red_alloy'];
 	const small_springs = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel'];
@@ -82,21 +82,19 @@ ServerEvents.recipes(event => {
 		], 1
 	));
 
-	gears.forEach(metal => seq_assembly(
-		`gtceu:${metal}_gear`,
-		plate(metal),
-		'kubejs:incomplete_gear',
-		[
-			['deploy', rod(metal)],
-			'press',
-			['deploy', plate(metal)],
-		], 4
-	));
-
 	small_gears.forEach(metal => seq_assembly(
 		`gtceu:small_${metal}_gear`,
 		plate(metal),
 		'kubejs:incomplete_small_gear',
+		[
+			['deploy', rod(metal)],
+		], 2
+	));
+
+	gears.forEach(metal => seq_assembly(
+		`gtceu:${metal}_gear`,
+		`gtceu:small_${metal}_gear`,
+		'kubejs:incomplete_gear',
 		[
 			['deploy', rod(metal)],
 			['deploy', plate(metal)],
@@ -148,18 +146,37 @@ ServerEvents.recipes(event => {
 		], 2
 	));
 
+	// item_pipes.forEach(metal => {
+	// 	['small', 'normal', 'large', 'huge'].forEach((size, i) => {
+	// 		seq_assembly(
+	// 			`gtceu:${metal}_${size}_item_pipe`,
+	// 			`gtceu:${metal}_ring`,
+	// 			'kubejs:incomplete_item_pipe',
+	// 			[
+	// 				['deploy', plate(metal)],
+	// 				'press'
+	// 			], Math.floor(3 * (2 ** (i - 1))) // 1, 3, 6, 12
+	// 		);
+	// 	});
+	// });
+
 	item_pipes.forEach(metal => {
-		['small', 'normal', 'large', 'huge'].forEach((size, i) => {
-			seq_assembly(
-				`gtceu:${metal}_${size}_item_pipe`,
-				`gtceu:${metal}_ring`,
-				'kubejs:incomplete_item_pipe',
-				[
-					['deploy', plate(metal)],
-					'press'
-				], Math.floor(3 * (2 ** (i - 1))) // 1, 3, 6, 12
-			);
-		});
+		const small = `gtceu:${metal}_small_item_pipe`;
+		const normal = `gtceu:${metal}_normal_item_pipe`;
+		const large = `gtceu:${metal}_large_item_pipe`;
+		const huge = `gtceu:${metal}_huge_item_pipe`;
+
+		const inter = 'kubejs:incomplete_item_pipe';
+		const sequence = [
+			['deploy', plate(metal)],
+			'press',
+		];
+
+		seq_assembly(small, `gtceu:${metal}_foil`, inter, sequence, 1);
+		seq_assembly(normal, small, inter, sequence, 2);
+		seq_assembly(large, normal, inter, sequence, 3);
+		seq_assembly(huge, large, inter, sequence, 6);
+
 	});
 
 	fluid_pipes.forEach(metal => {
@@ -363,6 +380,18 @@ ServerEvents.recipes(event => {
 		.chancedOutput('kubejs:flint_shard', 6500, 0)
 		.duration(200);
 
+	event.shaped('gtceu:ulv_auto_scavenger',[
+		'GRG',
+		'PCP',
+		'TET'
+	],{
+		G: 'gtceu:small_bronze_gear',
+		R: 'kubejs:scavenging_rod',
+		P: 'create:precision_mechanism',
+		C: 'create:brass_casing',
+		T: 'gtceu:treated_wood_plate',
+		E: 'create:electron_tube'
+	});
 	event.recipes.create.mechanical_crafting('gtceu:ulv_advanced_composter',[
 		'PRP',
 		'PGP',

@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('solid_blast_furnace')
         .itemInputs('gtceu:rugged_alloyer', '2x gtceu:double_steel_plate', '2x gtceu:steel_gear', 
             '2x #gtceu:circuits/ulv' ,'kubejs:ulv_conveyor_module', 'kubejs:ulv_robot_arm')
-        .inputFluids('gtceu:steel 432')
+        .inputFluids('gtceu:tin_alloy 432')
         .itemOutputs('gtceu:solid_blast_furnace')
         .duration(300)
         .EUt(7);
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('bessemer_forgery')
         .itemInputs('gtceu:solid_machine_casing','4x gtceu:long_steel_rod','4x #gtceu:circuits/lv','create:basin','2x gtceu:potin_gear',
             '4x gtceu:small_steel_gear','4x kubejs:ulv_robot_arm','2x kubejs:ulv_conveyor_module','2x kubejs:ulv_electric_pump')
-        .inputFluids('gtceu:steel 1152')
+        .inputFluids('gtceu:tin_alloy 1152')
         .itemOutputs('gtceu:bessemer_forgery')
         .duration(400)
         .EUt(8);
@@ -100,8 +100,12 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:wrought_iron_block', `${amount}x ${blockID}:${blockType}`)
         .itemOutputs('gtceu:steel_block', `${amount}x gtceu:${ash}ash_dust`)
         .duration(9 * 600 * DurationMultiplier);
+    event.recipes.gtceu.primitive_blast_furnace(`steel_ingot_${type}`)
+        .itemInputs('minecraft:glass', `${amount}x ${id}:${type}`)
+        .itemOutputs('gtceu:tempered_glass', `${amount}x gtceu:tiny_${ash}ash_dust`)
+        .duration(400 * DurationMultiplier);
     }
-    CoalType('#minecraft','coals','','#gtceu','coal_blocks',1.2,2);
+    CoalType('#minecraft','coals','','#gtceu','coal_blocks',1.25,2);
     CoalType('gtceu','coke_gem','dark_','gtceu','coke_block',1,1);
 
     event.recipes.gtceu.electric_blast_furnace('potin')

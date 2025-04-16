@@ -7,5 +7,6 @@ ClientEvents.lang('en_us', event => {
 	event.renameItem('gtceu:vacuum_tube', 'Vacuum Array');
 	event.renameBlock('gtceu:steel_machine_casing', 'Cast Iron Machine Casing');
 	event.renameBlock('gtceu:steel_brick_casing', 'Bricked Cast Iron Casing');
+	event.renameItem('gtceu:tantalum_capacitor', 'Copper-Wrapped Capacitor');
 
 });

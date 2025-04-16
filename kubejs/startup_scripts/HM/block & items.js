@@ -29,7 +29,7 @@ StartupEvents.registry('item', event => {
 	event.create('charcoal_pellet')
 		.displayName('Charcoal Pellet')
 		.rarity('common')
-		.burnTime(320)
+		.burnTime(720)
 		.texture(`kubejs:item/hm/pre-lv/charcoal_pellet`);
 
 	event.create('water_bowl')

@@ -1,15 +1,16 @@
 ServerEvents.recipes(event => {
 
-    event.shaped(Item.of('gtceu:large_stone_barrel'), [
-        'PSP',
-        'IBI',
-        'PSP'
-    ], {
-        P: 'minecraft:stone',
-        S: 'gtceu:treated_wood_rod',
-        B: 'gtceu:ulv_stone_barrel',
-        I: 'gtceu:wrought_iron_plate'
-    });
+    // Commented out for HM
+    // event.shaped(Item.of('gtceu:large_stone_barrel'), [
+    //     'PSP',
+    //     'IBI',
+    //     'PSP'
+    // ], {
+    //     P: 'minecraft:stone',
+    //     S: 'gtceu:treated_wood_rod',
+    //     B: 'gtceu:ulv_stone_barrel',
+    //     I: 'gtceu:wrought_iron_plate'
+    // });
 
     event.recipes.gtceu.large_stone_barrel('lava_from_stones')
         .itemInputs('#forge:stone')

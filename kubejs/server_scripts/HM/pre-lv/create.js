@@ -505,7 +505,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createPressing(mech, mech)
 	]).transitionalItem(mech).loops(1);
 
-	event.recipes.create.mechanical_crafting('create:flywheel', [
+	event.recipes.create.mechanical_crafting('8x create:flywheel', [
 		' PPP ',
 		'PS SP',
 		'P T P',
@@ -654,7 +654,7 @@ ServerEvents.recipes(event => {
         'RWWRWWR',
         'WCPCPCW',
 		'WPWWWPW',
-        'WCWSWCW',
+        'RCWSWCR',
         'WPWWWPW',
         'WCPCPCW',
         'RWWRWWR'
@@ -816,4 +816,5 @@ ServerEvents.recipes(event => {
 	CNA.forEach(removal=>{
 		event.remove({output: `create_new_age:${removal}`})
 	});
+	event.remove({id: /^railways:mechanical_crafting\/.*_locometal_boiler/})
 });

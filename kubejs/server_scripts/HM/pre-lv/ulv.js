@@ -2,8 +2,6 @@
 
 ServerEvents.recipes(event => {
 
-    // ulv_machine_hull in steam helper, moved to casing helper in future
-
     event.remove({ id: 'gtceu:shapeless/iron_magnetic_stick'});
     event.custom({
         'type': 'create_new_age:energising',
@@ -100,6 +98,52 @@ ServerEvents.recipes(event => {
     UlvMachine('centrifuge',['#gtceu:circuits/ulv','kubejs:ulv_electric_motor','#gtceu:circuits/ulv','gtceu:red_alloy_single_cable','gtceu:ulv_machine_hull','gtceu:red_alloy_single_cable','#gtceu:circuits/ulv','kubejs:ulv_electric_motor','#gtceu:circuits/ulv']);
     UlvMachine('mixer',['#forge:glass','gtceu:cast_iron_rotor','#forge:glass','#forge:glass','kubejs:ulv_electric_motor','#forge:glass','#gtceu:circuits/ulv','gtceu:ulv_machine_hull','#gtceu:circuits/ulv']);
     UlvMachine('stirling_generator',['gtceu:tin_alloy_normal_fluid_pipe','#gtceu:circuits/ulv','gtceu:tin_alloy_normal_fluid_pipe','gtceu:cast_iron_rotor','gtceu:ulv_machine_hull','gtceu:cast_iron_rotor','kubejs:ulv_electric_motor','gtceu:red_alloy_single_cable','kubejs:ulv_electric_motor']);
+    UlvMachine('charger_4x',['gtceu:lead_quadruple_wire','minecraft:chest','gtceu:lead_quadruple_wire','gtceu:lead_quadruple_wire','gtceu:ulv_machine_hull','gtceu:lead_quadruple_wire','gtceu:red_alloy_single_cable','#gtceu:circuits/ulv','gtceu:red_alloy_single_cable']);
+    UlvMachine('battery_buffer_4x',['gtceu:lead_quadruple_wire','minecraft:chest','gtceu:lead_quadruple_wire','gtceu:lead_quadruple_wire','gtceu:ulv_machine_hull','gtceu:lead_quadruple_wire','','','']);
+    UlvMachine('battery_buffer_8x',['gtceu:lead_octal_wire','minecraft:chest','gtceu:lead_octal_wire','gtceu:lead_octal_wire','gtceu:ulv_machine_hull','gtceu:lead_octal_wire','','','']);
+    UlvMachine('battery_buffer_16x',['gtceu:lead_hex_wire','minecraft:chest','gtceu:lead_hex_wire','gtceu:lead_hex_wire','gtceu:ulv_machine_hull','gtceu:lead_hex_wire','','','']);
+    UlvMachine('transformer_1a',['','gtceu:red_alloy_single_cable','gtceu:red_alloy_single_cable','gtceu:tin_single_cable','gtceu:ulv_machine_hull','#gtceu:circuits/ulv','','gtceu:red_alloy_single_cable','gtceu:red_alloy_single_cable']);
+    UlvMachine('transformer_2a',['','gtceu:red_alloy_double_cable','gtceu:red_alloy_double_cable','gtceu:tin_double_cable','gtceu:ulv_machine_hull','#gtceu:circuits/ulv','','gtceu:red_alloy_double_cable','gtceu:red_alloy_double_cable']);
+    UlvMachine('transformer_4a',['','gtceu:red_alloy_quadruple_cable','gtceu:red_alloy_quadruple_cable','gtceu:tin_quadruple_cable','gtceu:ulv_machine_hull','#gtceu:circuits/ulv','','gtceu:red_alloy_quadruple_cable','gtceu:red_alloy_quadruple_cable']);
+    UlvMachine('transformer_16a',['','gtceu:red_alloy_hex_cable','gtceu:red_alloy_hex_cable','gtceu:tin_hex_cable','gtceu:ulv_machine_hull','#gtceu:circuits/ulv','','gtceu:red_alloy_hex_cable','gtceu:red_alloy_hex_cable']);
+    UlvMachine('machine_casing',['gtceu:wrought_iron_plate','gtceu:wrought_iron_plate','gtceu:wrought_iron_plate','gtceu:wrought_iron_plate','','gtceu:wrought_iron_plate','gtceu:wrought_iron_plate','gtceu:wrought_iron_plate','gtceu:wrought_iron_plate']);
+    UlvMachine('machine_hull',['gtceu:red_alloy_single_cable','gtceu:wrought_iron_plate','gtceu:red_alloy_single_cable','gtceu:wrought_iron_plate','gtceu:ulv_machine_casing','gtceu:wrought_iron_plate','gtceu:red_alloy_single_cable','gtceu:wrought_iron_plate','gtceu:red_alloy_single_cable']);
+
+    event.recipes.gtceu.assembler('ulv_machine_casing')
+      .itemInputs('8x gtceu:wrought_iron_plate')
+      .itemOutputs('gtceu:ulv_machine_casing')
+      .circuit(8)
+      .duration(100)
+      .EUt(2);
+
+    event.recipes.gtceu.assembler('lv_machine_casing')
+      .itemInputs('8x gtceu:steel_plate')
+      .itemOutputs('gtceu:lv_machine_casing')
+      .circuit(8)
+      .duration(100)
+      .EUt(8);
+
+    event.recipes.gtceu.assembler('ulv_machine_hull')
+      .itemInputs('gtceu:ulv_machine_casing','4x gtceu:red_alloy_single_cable')
+      .inputFluids('gtceu:glue 576')
+      .itemOutputs('gtceu:ulv_machine_hull')
+      .duration(100)
+      .EUt(2);
+
+    event.recipes.gtceu.assembler('lv_machine_hull')
+      .itemInputs('gtceu:lv_machine_casing','4x gtceu:tin_single_cable')
+      .inputFluids('gtceu:glue 576')
+      .itemOutputs('gtceu:lv_machine_hull')
+      .duration(100)
+      .EUt(8);
+
+    let cable = 'gtceu:red_alloy_single_wire'
+    event.recipes.create.sequenced_assembly([
+        Item.of(`gtceu:red_alloy_single_cable`),
+    ], cable, [
+        event.recipes.createFilling(cable, [cable, Fluid.of('gtceu:rubber 72')]),
+        event.recipes.createPressing(cable, cable)
+    ]).transitionalItem(cable).loops(3);
 
     let motor = 'gtceu:magnetic_iron_rod'
     event.recipes.create.sequenced_assembly([
@@ -196,7 +240,64 @@ ServerEvents.recipes(event => {
     UlvComponent('electric_pump',['1x gtceu:red_alloy_single_cable','1x gtceu:tin_alloy_normal_fluid_pipe','1x gtceu:cast_iron_screw','1x gtceu:cast_iron_rotor','2x gtceu:rubber_ring','1x kubejs:ulv_electric_motor'],'');
     UlvComponent('emitter',['4x gtceu:tin_rod','2x gtceu:red_alloy_single_cable','2x #gtceu:circuits/ulv','1x minecraft:prismarine_crystals'],'');
 
+    event.recipes.gtceu.assembler('ulv_battery')
+      .itemInputs('4x gtceu:copper_foil', '4x minecraft:paper', '2x gtceu:iron_single_wire')
+      .inputFluids('gtceu:glue 100')
+      .itemOutputs('3x gtceu:tantalum_capacitor')
+      .duration(120)
+      .EUt(4);
+
+    event.remove({ output: /^gtceu:.*firebox_casing/ });
+    event.remove({ output: /^gtceu:.*gearbox/ });
+    event.remove({ output: /^gtceu:.*pipe_casing/ });
+
+    const SpecialCasing = (material, tier) => {
+      event.recipes.gtceu.assembler(`gtceu:${material}_gearbox`)
+        .itemInputs(`4x gtceu:${material}_plate`, `2x gtceu:${material}_gear`, `2x gtceu:small_${material}_gear`, `gtceu:${material}_frame`)
+        .circuit(4)
+        .itemOutputs(`gtceu:${material}_gearbox`)
+        .duration(100)
+        .EUt(2 * (4 ** tier));
+
+      event.recipes.gtceu.assembler(`gtceu:${material}_firebox_casing`)
+        .itemInputs(`4x gtceu:${material}_plate`, `4x gtceu:${material}_rod`, `gtceu:${material}_frame`)
+        .circuit(2)
+        .itemOutputs(`gtceu:${material}_firebox_casing`)
+        .duration(100)
+        .EUt(2 * (4 ** tier));
+
+      event.recipes.gtceu.assembler(`gtceu:${material}_pipe_casing`)
+        .itemInputs(`4x gtceu:${material}_plate`, `4x gtceu:${material}_small_fluid_pipe`, `gtceu:${material}_frame`)
+        .circuit(3)
+        .itemOutputs(`gtceu:${material}_pipe_casing`)
+        .duration(100)
+        .EUt(2 * (4 ** tier));
+    }
+    SpecialCasing('bronze',0);
+    SpecialCasing('steel',1);
+
+    event.recipes.create.mechanical_crafting('2x gtceu:resistor', [
+      ' PPP ',
+      'WRCRW',
+      ' PPP '
+    ], {
+      P: 'minecraft:paper',
+      W: 'gtceu:copper_single_wire',
+      R: 'gtceu:sticky_resin',
+      C: 'gtceu:coke_dust'
+    });
+
+    //ulv removals
+    ['charger_4x','battery_buffer_4x','battery_buffer_8x','battery_buffer_16x','transformer_1a','transformer_2a',
+      'transformer_4a','transformer_16a','machine_casing','machine_hull'].forEach(UlvRemove=>{
+      event.remove({output: `gtceu:ulv_${UlvRemove}`});
+    });
+    //other removals
+    ['lv_machine_hull','lv_machine_casing','tantalum_capacitor'].forEach(OtherRemove=>{
+      event.remove({output: `gtceu:${OtherRemove}`});
+    });
     event.remove({id: /^gtceu:shaped\/energy_hatch/});
     event.remove({id: /^gtceu:shaped\/dynamo_hatch/});
+    event.remove({output: /^gtceu:lv_.*/});
 
 });

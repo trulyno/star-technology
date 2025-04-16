@@ -212,15 +212,9 @@ ServerEvents.recipes(event => {
 
 	event.recipes.gtceu.stone_barrel('stone_pebble')
 		.circuit(0)
-		.inputFluids('minecraft:lava 15', 'minecraft:water 1485')
-		.itemOutputs('6x exnihilosequentia:stone_pebble')
+		.inputFluids('minecraft:lava 5', 'minecraft:water 995')
+		.itemOutputs('4x exnihilosequentia:stone_pebble')
 		.duration(15);
-
-	event.recipes.gtceu.stone_barrel('stone_pebble_dust_infused')
-		.itemInputs('gtceu:stone_dust')
-		.inputFluids('minecraft:lava 5', 'minecraft:water 495')
-		.itemOutputs('8x exnihilosequentia:stone_pebble')
-		.duration(10);
 
 	event.recipes.gtceu.stone_barrel('obsidian')
 		.circuit(10)
