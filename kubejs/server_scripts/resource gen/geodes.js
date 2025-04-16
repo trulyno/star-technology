@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  const id = global.id;
+    const id = global.id;
     
   //sifting
   event.shaped('gtceu:rock_filtrator',[
@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
       A: '#gtceu:circuits/lv',
       B: 'gtceu:lv_electric_motor',
       C: 'gtceu:steel_machine_casing'
-  });
+  }).id('start:shaped/rock_filtrator');
 
   event.shaped('gtceu:rock_sifter',[
       'ABA',
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
       A: '#gtceu:circuits/luv',
       B: 'gtceu:luv_electric_motor',
       C: 'gtceu:watertight_casing'
-  });
+  }).id('start:shaped/rock_sifter');
   
   //Generalist Recipes
   event.recipes.gtceu.rock_filtrator(id('lv_geodes'))
@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
 //       D: 'gtceu:cupronickel_coil_block',
 //       E: 'gtceu:solid_machine_casing',
 //       F: 'gtceu:lv_conveyor_module'
-//     });
+//     }).id('start:shaped/heated_cracking_unit');
 
 //   event.shaped('gtceu:pressure_cracker',[
 //       'ABC',
@@ -176,7 +176,7 @@ ServerEvents.recipes(event => {
 //       D: 'gtceu:hssg_coil_block',
 //       E: 'gtceu:heatproof_machine_casing',
 //       F: 'gtceu:luv_conveyor_module'
-//   });
+//   }).id('start:shaped/pressure_cracker');
 
 //   ['diamond', 'emerald', 'ruby', 'green_sapphire', 'sapphire', 'quartzite', 'certus_quartz', 'blue_topaz', 'topaz', 'amethyst'].forEach(type => {
 //     event.recipes.gtceu.heated_cracking_unit(`${type}_cracking`)

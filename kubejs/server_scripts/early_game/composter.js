@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-
     const id = global.id;
 
     event.shaped('gtceu:ulv_advanced_composter',[

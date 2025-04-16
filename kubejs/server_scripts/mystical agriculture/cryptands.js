@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    const id = global.id;
+    const id = global.id;    
 
     event.recipes.gtceu.chemical_reactor(id('ethylene_oxide'))
         .inputFluids('gtceu:ethylene 1000', 'gtceu:oxygen 1000')

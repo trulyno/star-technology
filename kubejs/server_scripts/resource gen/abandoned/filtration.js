@@ -1,4 +1,5 @@
 /*ServerEvents.recipes(event => {
+    const id = global.id;
   
   //stone dusts
   function crush(output, input){

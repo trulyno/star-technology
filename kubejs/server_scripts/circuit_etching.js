@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     const id = global.id;
-
+    
     // etching fluid
     event.recipes.gtceu.chemical_reactor(id('copper_chloride'))
         .itemInputs('1x gtceu:copper_dust')

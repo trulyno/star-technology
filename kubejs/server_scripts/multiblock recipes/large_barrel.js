@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         S: 'gtceu:treated_wood_rod',
         B: 'gtceu:ulv_barrel',
         I: 'gtceu:wrought_iron_plate'
-    });
+    }).id('start:shaped/large_barrel');
 
     event.recipes.gtceu.large_barrel(id('witch_water'))
         .notConsumable('exnihilosequentia:mycelium_spores')
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('thermal:slime_mushroom_spores', 9500, 0)
         .duration(20);
 
-    event.shapeless(Item.of('3x minecraft:brown_mushroom'), ['minecraft:brown_mushroom_block', '#forge:tools/mortars']);
+    event.shapeless(Item.of('3x minecraft:brown_mushroom'), ['minecraft:brown_mushroom_block', '#forge:tools/mortars']).id('start:shapeless/brown_mushroom');
     event.recipes.gtceu.macerator(id('brown_mushrooms'))
         .itemInputs('minecraft:brown_mushroom_block')
         .itemOutputs('3x minecraft:brown_mushroom')
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
         .duration(45)
         .EUt(8);
 
-    event.shapeless(Item.of('3x minecraft:red_mushroom'), ['minecraft:red_mushroom_block', '#forge:tools/mortars']);
+    event.shapeless(Item.of('3x minecraft:red_mushroom'), ['minecraft:red_mushroom_block', '#forge:tools/mortars']).id('start:shapeless/red_mushroom');
     event.recipes.gtceu.macerator(id('red_mushrooms'))
         .itemInputs('minecraft:red_mushroom_block')
         .itemOutputs('3x minecraft:red_mushroom')

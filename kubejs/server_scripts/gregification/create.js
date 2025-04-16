@@ -56,8 +56,8 @@ ServerEvents.recipes(event => {
         .EUt(7);
 
     event.remove({output: 'create:andesite_alloy'});
-    event.shapeless('2x create:andesite_alloy', ['2x minecraft:iron_nugget', '2x exnihilosequentia:andesite_pebble']);
-    event.shapeless('16x create:andesite_alloy', ['4x minecraft:andesite', '5x minecraft:iron_nugget']);
+    event.shapeless('2x create:andesite_alloy', ['2x minecraft:iron_nugget', '2x exnihilosequentia:andesite_pebble']).id('start:shapeless/andesite_alloy_pebble');
+    event.shapeless('16x create:andesite_alloy', ['4x minecraft:andesite', '5x minecraft:iron_nugget']).id('start:shapeless/andesite_alloy_block');
     
     event.shaped('create:precision_mechanism', [
         'NBN',
@@ -68,6 +68,6 @@ ServerEvents.recipes(event => {
         B: 'create:large_cogwheel',
         S: 'create:cogwheel',
         P: 'gtceu:gold_plate'
-    });
+    }).id('start:shaped/precision_mechanism');
    
 });

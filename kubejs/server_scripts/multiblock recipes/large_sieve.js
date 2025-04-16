@@ -1,5 +1,6 @@
 
 // ServerEvents.recipes(event => {
+//     const id = global.id;
 
 //     event.recipes.gtceu.assembler(id('large_sieve'))
 //         .itemInputs('gtceu:iv_machine_hull', '2x #gtceu:circuits/iv', '2x gtceu:double_tungsten_steel_plate' ,'4x gtceu:pure_netherite_gear')

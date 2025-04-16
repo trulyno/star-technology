@@ -249,7 +249,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:brass_plate',
         B: 'gtceu:firebricks',
         F: '#forge:tools/screwdrivers'
-    });
+    }).id('start:shaped/primitive_ore_factory');
 
     event.shaped(Item.of('gtceu:steam_ore_factory'), [
         'HRS',
@@ -262,7 +262,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:invar_plate',
         B: 'gtceu:steam_machine_casing',
         F: '#forge:tools/screwdrivers'
-    });
+    }).id('start:shaped/steam_ore_factory');
 
     event.shaped(Item.of('gtceu:electric_ore_factory'), [
         'GCG', 
@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:steel_plate',
         L: 'gtceu:lv_machine_hull',
         W: 'gtceu:tin_single_cable'
-    });
+    }).id('start:shaped/electric_ore_factory');
 
     event.shaped(Item.of('gtceu:ore_processing_plant'), [
         'GCG',
@@ -286,7 +286,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:tungsten_carbide_plate',
         L: 'gtceu:iv_machine_hull',
         W: 'gtceu:platinum_single_cable'
-    });
+    }).id('start:shaped/ore_processing_plant');
 
     // Iterate over each tier and processable item and register the recipes
     Object.keys(oreProcessableTiers).forEach((tier) => {

@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     event.recipes.gtceu.assembly_line(id('bacterial_runic_mutator'))
         .itemInputs('gtceu:uhv_machine_hull', '4x gtceu:uhv_electric_motor', 'gtceu:zircalloy_4_gear', '2x gtceu:uhv_emitter', '4x #gtceu:circuits/uhv')

@@ -50,6 +50,6 @@ ServerEvents.recipes(event => {
         H: 'gtceu:lv_machine_hull',
         S: 'gtceu:steel_plate',
         C: '#gtceu:circuits/mv'
-    });
+    }).id('start:shaped/greenhouse');
 
 });

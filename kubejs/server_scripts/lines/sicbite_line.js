@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    const id = global.id;
+    const id = global.id;    
 
     event.recipes.gtceu.electric_blast_furnace(id('silicon_carbide'))
         .itemInputs('gtceu:silicon_dioxide_dust','2x gtceu:activated_carbon_dust')

@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    const id = global.id;
     const dirt = 'minecraft:dirt';
     const gravel = 'minecraft:gravel';
     const cdirt = 'minecraft:coarse_dirt';

@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  const id = global.id;
+    const id = global.id;
 
     //Early Rubbers
     event.custom({
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         'cookingtime': 200
       });
 
-    event.recipes.create.mixing('3x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated');
+    event.recipes.create.mixing('3x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated').id('start:create_mixing/cured_rubber');
 
     event.recipes.gtceu.alloy_smelter(id('latex_rubber'))
         .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
 		G: '#forge:glass',
 		B: 'minecraft:bricks',
 		T: 'thermal:redstone_servo'
-	});
+	}).id('start:shaped/latex_plantation');
 
     //Usage
     event.recipes.gtceu.latex_plantation(`latex`)

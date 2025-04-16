@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     const id = global.id;
-
+    
     event.recipes.gtceu.molten_destabilizing(id('molten_adamantamite_mixture'))
         .inputFluids('gtceu:molten_adamantamite_mixture 300000')
         .outputFluids('gtceu:adamantamite 200000')

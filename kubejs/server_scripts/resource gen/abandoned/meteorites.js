@@ -1,4 +1,5 @@
 // ServerEvents.recipes(event => {
+//     const id = global.id;
 
 //     /*/reflective metal //hardmode :)
 //     event.recipes.gtceu.mixer(id('reflective_metal_dust'))

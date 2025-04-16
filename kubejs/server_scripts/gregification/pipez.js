@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     const id = global.id;
-
+    
     event.remove({mod: 'pipez'});
 
     event.shaped(Item.of('8x pipez:energy_pipe'), [
@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     ], {
         P: 'gtceu:lead_plate',
         W: 'gtceu:tin_single_cable'
-    });
+    }).id('start:shaped/energy_pipe');
 
     event.shaped(Item.of('8x pipez:fluid_pipe'), [
         'PWP',
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     ], {
         P: 'gtceu:bronze_plate',
         W: 'gtceu:copper_tiny_fluid_pipe'
-    });
+    }).id('start:shaped/fluid_pipe');
 
     event.shaped(Item.of('8x pipez:item_pipe'), [
         'PWP',
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
     ], {
         P: 'gtceu:brass_plate',
         W: 'gtceu:tin_small_item_pipe'
-    });
+    }).id('start:shaped/item_pipe');
 
     event.shaped(Item.of('8x pipez:universal_pipe'), [
         'LWL',
@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
         W: 'gtceu:tin_single_cable',
         C: 'gtceu:copper_tiny_fluid_pipe',
         T: 'gtceu:tin_small_item_pipe'
-    });
+    }).id('start:shaped/universal_pipe');
 
     event.shaped(Item.of('pipez:wrench'), [
         ' P ',
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
     ], {
         P: 'gtceu:wrought_iron_plate',
         B: 'gtceu:brass_rod'
-    });
+    }).id('start:shaped/pipe_wrench');
 
     event.shaped(Item.of('pipez:basic_upgrade'), [
         'PPP',
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:invar_plate',
         U: 'gtceu:tin_small_item_pipe',
         C: 'gtceu:lv_conveyor_module'
-    });
+    }).id('start:shaped/basic_upgrade');
 
     event.shaped(Item.of('pipez:improved_upgrade'), [
         'PPP',
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:aluminium_plate',
         U: 'pipez:basic_upgrade',
         C: 'gtceu:mv_conveyor_module'
-    });
+    }).id('start:shaped/improved_upgrade');
 
     event.shaped(Item.of('pipez:advanced_upgrade'), [
         'PPP',
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:stainless_steel_plate',
         U: 'pipez:improved_upgrade',
         C: 'gtceu:hv_conveyor_module'
-    });
+    }).id('start:shaped/advanced_upgrade');
 
     event.shaped(Item.of('pipez:ultimate_upgrade'), [
         'PPP',
@@ -88,9 +88,9 @@ ServerEvents.recipes(event => {
         'PPP'
     ], {
         P: 'gtceu:titanium_plate',
-        U: 'pipez:improved_upgrade',
+        U: 'pipez:advanced_upgrade',
         C: 'gtceu:ev_conveyor_module'
-    });
+    }).id('start:shaped/ultimate_upgrade');
 
     event.shaped(Item.of('pipez:filter_destination_tool'), [
         'PPP',
@@ -101,6 +101,6 @@ ServerEvents.recipes(event => {
         R: 'minecraft:redstone',
         G: '#forge:glass_panes',
         B: '#minecraft:buttons'
-    });
+    }).id('start:shaped/filter_destination_tool');
 
 });

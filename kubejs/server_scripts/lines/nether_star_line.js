@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
     ], {
         M: 'gtceu:ball_casting_mold',
         F: '#forge:tools/files'
-    });
+    }).id('start:shaped/star_casting_mold');
 
     event.recipes.gtceu.forming_press(id('impure_nether_star'))
         .itemInputs('kubejs:fire_infused_shard', 'kubejs:ice_infused_shard', 'kubejs:lightning_infused_shard', 'kubejs:earth_infused_shard')

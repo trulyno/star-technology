@@ -3,7 +3,7 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust');
+    event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust').id('start:pressing/compressed_fireclay');
 
     event.campfireCooking('gtceu:wrought_iron_ingot', 'minecraft:iron_ingot');
 
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         'SSS'
     ], {
         S: '#minecraft:wooden_slabs'
-    });
+    }).id('start:shaped/wood_plate');
 
     //glass tube shenanigans
     event.shaped(Item.of('gtceu:glass_tube'), [
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         'PPP'
     ], {
         P: 'minecraft:glass_pane'
-    });
+    }).id('start:shaped/glass_tube');
 
     ['tiled','framed','horizontal_framed','vertical_framed'].forEach(type => {
         event.remove({ id: `create:smelting/glass_pane_from_${type}_glass_pane`})
@@ -69,11 +69,11 @@ ServerEvents.recipes(event => {
     ], {
         'D': 'gtceu:fireclay_dust',
         'M': 'gtceu:brick_wooden_form'
-    }).keepIngredient('gtceu:brick_wooden_form');
+    }).keepIngredient('gtceu:brick_wooden_form').id('start:shaped/compressed_fireclay');
 
-    event.recipes.create.pressing('gtceu:rubber_plate', 'thermal:cured_rubber');
+    event.recipes.create.pressing('gtceu:rubber_plate', 'thermal:cured_rubber').id('start:pressing/rubber_plate');
 
-    event.recipes.gtceu.fluid_solidifier(id('gtceu:raw_rubber'))
+    event.recipes.gtceu.fluid_solidifier(id('raw_rubber'))
         .inputFluids('thermal:latex 250')
         .itemOutputs('thermal:rubber')
         .duration(120)
@@ -189,7 +189,7 @@ ServerEvents.recipes(event => {
     ], {
         H: '#forge:tools/hammers',
         R: 'thermal:cured_rubber'
-    })
+    }).id('start:shaped/rubber_plate');
 
     const casing = (type,material,casing_id) => {
         event.shaped(Item.of(`2x ${casing_id}:${type}_casing`), [
@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
             F: `gtceu:${material}_frame`,
             H: '#forge:tools/hammers',
             W: '#forge:tools/wrenches'
-        });
+        }).id(`start:shaped/${type}_casing`);
 
         event.recipes.gtceu.assembler(id(`${type}_casing`))
             .itemInputs(`gtceu:${material}_plate`, `gtceu:${material}_frame`)
@@ -249,7 +249,7 @@ ServerEvents.recipes(event => {
             F: `gtceu:${material}_frame`,
             H: '#forge:tools/hammers',
             W: '#forge:tools/wrenches'
-        });
+        }).id(`start:shaped/${type}_casing`);
 
         event.recipes.gtceu.assembler(id(`${type}_casing`))
             .itemInputs(`gtceu:double_${material}_plate`, `gtceu:${material}_frame`)
@@ -280,7 +280,7 @@ ServerEvents.recipes(event => {
             P: `gtceu:${material}_plate`,
             F: `gtceu:${material}_frame`,
             R: `gtceu:${material}_rod`
-        });
+        }).id(`start:${type}_firebox_casing`);
     };
 
     firebox('enriched_naquadah','enriched_naquadah','start_core')
@@ -296,7 +296,7 @@ ServerEvents.recipes(event => {
             G:  `gtceu:${material}_gear`,
             H: '#forge:tools/hammers',
             W: '#forge:tools/wrenches'
-        });
+        }).id(`start:${type}_gearbox`);
     
         event.recipes.gtceu.assembler(id(`${material}_gearbox`))
             .itemInputs(`4x gtceu:${material}_plate`,`2x gtceu:${material}_gear`,`gtceu:${material}_frame`)
@@ -317,7 +317,7 @@ ServerEvents.recipes(event => {
             P:  `gtceu:${material}_plate`,
             F:  `gtceu:${material}_frame`,
             L:  `gtceu:${pipe}_normal_fluid_pipe`
-        });
+        }).id(`start:${type}_pipe_casing`);
     };
 
     pipe('enriched_naquadah','enriched_naquadah','naquadah','kubejs');
@@ -333,7 +333,7 @@ ServerEvents.recipes(event => {
             R:  `gtceu:${material}_rotor`,
             H: '#forge:tools/hammers',
             W: '#forge:tools/wrenches'
-        });
+        }).id(`start:${type}_engine_intake_casing`);
 
         event.recipes.gtceu.assembler(id( `${type}_engine_intake_casing`))
             .itemInputs(`2x gtceu:${material}_rotor`,`4x gtceu:${pipe}_normal_fluid_pipe`,`${used_casing}_casing`)
@@ -364,7 +364,7 @@ ServerEvents.recipes(event => {
         C: '#gtceu:circuits/lv',
         K: 'minecraft:charcoal',
         s: 'create:shaft'
-    });
+    }).id('start:shaped/carbon_brushes');
 
     event.shaped(Item.of('create_new_age:magnetite_block'), [
         'SMS',
@@ -373,7 +373,7 @@ ServerEvents.recipes(event => {
     ], {
         S: 'minecraft:stone',
         M: 'gtceu:magnetite_dust'
-    });
+    }).id('start:shaped/magnetite_block');
 
     event.shaped(Item.of('3x create_new_age:redstone_magnet'), [
         'MRM',
@@ -383,17 +383,17 @@ ServerEvents.recipes(event => {
         B: 'create_new_age:magnetite_block',
         R: 'minecraft:redstone',
         M: 'gtceu:magnetite_dust'
-    });
+    }).id('start:shaped/redstone_magnet');
 
     event.shaped(Item.of('3x create:belt_connector'), [
         'RRR'
     ], {
         R: 'gtceu:rubber_plate'
-    });
+    }).id('start:shaped/belt_connector');
 
     //plates
     ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron'].forEach(type => {
-        event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`);
+        event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`).id(`start:pressing/${type}_plate`);
     });
   
     event.replaceInput({id: 'enderchests:ender_pouch'}, 'minecraft:leather', 'gtceu:carbon_fiber_plate');
@@ -405,7 +405,7 @@ ServerEvents.recipes(event => {
         M: 'create_new_age:fluxuateted_magnetite',
         N: 'gtceu:neodymium_ingot',
         E: 'gtceu:energium_dust'
-    });
+    }).id('start:shaped/neodymium_magnet');
 
     event.recipes.thermal.lapidary_fuel('gtceu:diatron_gem', 750000);
     event.recipes.thermal.lapidary_fuel('gtceu:flawless_diatron_gem', 750000 * 2.5);
@@ -574,14 +574,14 @@ ServerEvents.recipes(event => {
     [
         'bender', 'centrifuge', 'electrolyzer', 'extruder', 'forming_press', 'lathe', 'mixer', 'ore_washer', 'sifter', 'thermal_centrifuge', 'wiremill', 'macerator', 'autoclave'
     ].forEach(machine=> {
-        event.recipes.create.item_application(`gtceu:t_large_${machine}`, [`gtceu:hv_${machine}`, 'kubejs:multiblock_upgrade_kit']);
+        event.recipes.create.item_application(`gtceu:t_large_${machine}`, [`gtceu:hv_${machine}`, 'kubejs:multiblock_upgrade_kit']).id(`start:item_application/large_${machine}`);
     });
-    event.recipes.create.item_application('gtceu:large_rock_crusher', ['gtceu:hv_rock_crusher', 'kubejs:multiblock_upgrade_kit']);
+    event.recipes.create.item_application('gtceu:large_rock_crusher', ['gtceu:hv_rock_crusher', 'kubejs:multiblock_upgrade_kit']).id('start:item_application/large_rock_crusher');
 
     // Mycelium Leather
-    event.recipes.create.pressing('kubejs:compressed_mycelium', 'kubejs:mycelium_growth');
-    event.smoking('kubejs:smoked_mycelium', 'kubejs:compressed_mycelium');
-    event.recipes.create.pressing('minecraft:leather', 'kubejs:smoked_mycelium');
+    event.recipes.create.pressing('kubejs:compressed_mycelium', 'kubejs:mycelium_growth').id('start:pressing/compressed_mycelium');
+    event.smoking('kubejs:smoked_mycelium', 'kubejs:compressed_mycelium').id('start:smoking/smoked_mycelium');
+    event.recipes.create.pressing('minecraft:leather', 'kubejs:smoked_mycelium').id('start:pressing/mycelium_leather');
 
     // Warping recipes
     [{input: 'architects_palette:abyssaline_lamp', output: 'architects_palette:hadaline_lamp'},
@@ -603,8 +603,8 @@ ServerEvents.recipes(event => {
         {input: 'minecraft:basalt', output: 'architects_palette:moonshale'},
         {input: '#minecraft:saplings', output: 'architects_palette:twisted_sapling'},
         {input: '#minecraft:leaves', output: 'architects_palette:twisted_leaves'}
-    ].forEach((prop) => {
-        event.recipes.create.haunting(Item.of(prop.output), Item.of(prop.input));
+    ].forEach(prop => {
+        event.recipes.create.haunting(Item.of(prop.output), Item.of(prop.input)).id(`start:haunting/${prop.output.split(':')[1]}`);
     });
 
     event.recipes.gtceu.circuit_assembler(id('data_dna_disk'))
@@ -657,7 +657,7 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(600);
 
-    event.recipes.create.item_application('minecraft:mycelium', ['minecraft:grass_block', 'exnihilosequentia:mycelium_spores']);
+    event.recipes.create.item_application('minecraft:mycelium', ['minecraft:grass_block', 'exnihilosequentia:mycelium_spores']).id('start:item_application/mycelium');
 
     //Tom's / Chipped Fixes
 
@@ -670,7 +670,7 @@ ServerEvents.recipes(event => {
     ], {
         P: 'gtceu:steel_plate',
         T: 'toms_storage:ts.wireless_terminal'
-    });
+    }).id('start:shaped/advanced_wireless_terminal');
 
     //Treated Wood Fixes/Additions
     event.remove({id: 'gtceu:macerator/macerate_treated_wood_chest_boat'})
@@ -684,7 +684,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:treated_wood_dust')
         .duration(98)
         .EUt(2);
-    event.recipes.create.filling('gtceu:treated_wood_planks', [Fluid.of('gtceu:creosote', 125), '#minecraft:planks']);
+    event.recipes.create.filling('gtceu:treated_wood_planks', [Fluid.of('gtceu:creosote', 125), '#minecraft:planks']).id('start:filling/treated_wood_planks');
 
     event.replaceOutput({ type: 'gtceu:cutter'}, 'ae2:certus_quartz_crystal', '2x ae2:certus_quartz_crystal');
 

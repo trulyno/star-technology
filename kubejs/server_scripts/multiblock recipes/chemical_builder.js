@@ -1,4 +1,5 @@
 // ServerEvents.recipes(event => {
+//     const id = global.id;
 
 //     event.recipes.gtceu.assembly_line(id('chemical_builder'))
 //         .itemInputs('gtceu:zpm_machine_hull', '4x gtceu:zpm_electric_motor', 'gtceu:weapon_grade_naquadah_rotor', '2x gtceu:duranium_large_fluid_pipe', '4x #gtceu:circuits/zpm')

@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         O: 'gtceu:object_holder',
         G: 'minecraft:glass',
         S: 'minecraft:smooth_stone'
-    });
+    }).id('start:shaped/classic_stargate_display');
 
     //Multiblock Recipes
     

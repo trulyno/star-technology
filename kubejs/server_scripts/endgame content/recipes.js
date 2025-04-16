@@ -197,7 +197,7 @@ ServerEvents.recipes(event => {
             N: 'gtceu:small_neutronium_gear',
             Z: 'gtceu:zalloy_gear',
             C: 'gtceu:uhv_machine_hull'
-    });
+    }).id('start:shaped/uhv_rotor_holder');
 
     event.shaped(Item.of('gtceu:uev_rotor_holder'), [
         'NZN',
@@ -207,6 +207,6 @@ ServerEvents.recipes(event => {
         N: 'gtceu:small_mythrolic_alloy_gear',
         Z: 'gtceu:starium_alloy_gear',
         C: 'gtceu:uev_machine_hull'
-});
+    }).id('start:shaped/uev_rotor_holder');
 
 });

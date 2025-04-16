@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     const dust1 = 'mysticalagriculture:inferium_essence';
     const dust2 = 'mysticalagriculture:prudentium_essence';

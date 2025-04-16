@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
         C: 'gtceu:star_steel_frame',
         F: 'ae2:fluix_crystal',
         H: 'ae2:engineering_processor'
-    });
+    }).id('start:shaped/me_controller');
 
     event.replaceInput({output: 'ae2:cell_component_4k'}, 
         'ae2:calculation_processor',
@@ -183,7 +183,7 @@ ServerEvents.recipes(event => {
             H: 'gtceu:star_steel_plate',
             J: 'ae2:annihilation_core',
             B: 'ae2:formation_core'
-        });
+        }).id('start:shaped/molecular_assembler');
 
     event.shaped(Item.of('ae2:pattern_provider'), [
             'HFH',
@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
             H: 'gtceu:star_steel_plate',
             J: 'ae2:annihilation_core',
             B: 'ae2:formation_core'
-        });
+        }).id('start:shaped/pattern_provider');
 
     event.shaped(Item.of('ae2:crafting_unit'), [
             'HFH',
@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
             F: 'ae2:calculation_processor',
             H: 'gtceu:star_steel_plate',
             B: 'ae2:fluix_glass_cable'
-        });
+        }).id('start:shaped/crafting_unit');
 
     event.shaped(Item.of('ae2:energy_acceptor'), [
             'HFH',
@@ -215,7 +215,7 @@ ServerEvents.recipes(event => {
             C: '#forge:ingots/copper',
             F: 'ae2:quartz_glass',
             H: 'gtceu:star_steel_plate',
-        });
+        }).id('start:shaped/energy_acceptor');
 
     event.shaped(Item.of('ae2:interface'), [
             'HFH',
@@ -226,7 +226,7 @@ ServerEvents.recipes(event => {
             H: 'gtceu:star_steel_plate',
             J: 'ae2:annihilation_core',
             B: 'ae2:formation_core'
-        });
+        }).id('start:shaped/me_interface');
 
     event.shaped(Item.of('ae2:drive'), [
             'HFH',
@@ -236,7 +236,7 @@ ServerEvents.recipes(event => {
             F: 'ae2:engineering_processor',
             H: 'gtceu:star_steel_plate',
             B: 'ae2:fluix_glass_cable'
-        });
+        }).id('start:shaped/me_drive');
 
     event.shaped(Item.of('ae2:condenser'), [
             'HFH',
@@ -246,7 +246,7 @@ ServerEvents.recipes(event => {
             C: 'ae2:fluix_dust',
             F: '#forge:glass',
             H: 'gtceu:star_steel_plate',
-        });
+        }).id('start:shaped/me_condenser');
 
     event.shaped(Item.of('ae2:cell_workbench'), [
             'ABA',
@@ -257,7 +257,7 @@ ServerEvents.recipes(event => {
             B: 'ae2:calculation_processor',
             C: 'gtceu:star_steel_plate',
             E: '#forge:chests/wooden'
-        });
+        }).id('start:shaped/cell_workbench');
 
     event.shaped(Item.of('ae2:spatial_io_port'), [
             'AAA',
@@ -269,7 +269,7 @@ ServerEvents.recipes(event => {
             C: 'ae2:io_port',
             D: 'gtceu:star_steel_plate',
             E: 'ae2:engineering_processor'
-        });
+        }).id('start:shaped/spatial_io_port');
 
     event.shaped(Item.of('ae2:io_port'), [
             'AAA',
@@ -281,7 +281,7 @@ ServerEvents.recipes(event => {
             C: 'ae2:fluix_glass_cable',
             D: 'gtceu:star_steel_plate',
             E: 'ae2:engineering_processor'
-        });
+        }).id('start:shaped/io_port');
 
     event.shaped(Item.of('ae2:chest'), [
             'ABA',
@@ -293,7 +293,7 @@ ServerEvents.recipes(event => {
             C: 'ae2:fluix_glass_cable',
             D: 'gtceu:star_steel_plate',
             E: '#forge:ingots/copper'
-        });
+        }).id('start:shaped/me_chest');
 
     //MEGA cells
     event.replaceInput({input: 'megacells:accumulation_processor'}, 

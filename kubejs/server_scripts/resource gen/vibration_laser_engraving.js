@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    const id = global.id;
+    const id = global.id;    
 
     event.recipes.gtceu.heat_chamber(id('tiny_purified_naquadah'))
         .itemInputs('gtceu:tiny_naquadah_dust')

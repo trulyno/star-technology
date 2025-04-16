@@ -26,6 +26,6 @@ ServerEvents.recipes(event => {
         .duration(10)
         .EUt(16);
 
-    event.recipes.create.crushing('exnihilosequentia:crushed_blackstone', 'minecraft:blackstone');
+    event.recipes.create.crushing('exnihilosequentia:crushed_blackstone', 'minecraft:blackstone').id('start:crushing/blackstone');
 
 });

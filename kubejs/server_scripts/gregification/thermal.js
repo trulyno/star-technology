@@ -32,23 +32,23 @@ ServerEvents.recipes(event => {
         G: 'gtceu:iron_gear',
         S: 'gtceu:steel_plate',
         R: 'gtceu:lv_machine_hull'
-    });
+    }).id('start:shaped/stirling_dynamo');
 
-    event.recipes.gtceu.assembler(id('gtceu:stirling_dynamo'))
+    event.recipes.gtceu.assembler(id('stirling_dynamo'))
         .itemInputs('thermal:rf_coil', 'gtceu:iron_gear', 'gtceu:lv_machine_hull')
         .itemOutputs('thermal:dynamo_stirling')
         .inputFluids('gtceu:tin_alloy 144')
         .duration(300)
         .EUt(16);
 
-    event.recipes.gtceu.assembler(id('gtceu:lapidary_dynamo'))
+    event.recipes.gtceu.assembler(id('lapidary_dynamo'))
         .itemInputs('thermal:rf_coil', 'gtceu:cobalt_brass_gear', 'gtceu:lv_machine_hull')
         .itemOutputs('thermal:dynamo_lapidary')
         .inputFluids('gtceu:tin_alloy 288')
         .duration(300)
         .EUt(30);
 
-    event.recipes.gtceu.assembler(id('gtceu:compression_dynamo'))
+    event.recipes.gtceu.assembler(id('compression_dynamo'))
         .itemInputs('thermal:rf_coil', 'gtceu:bronze_gear', 'gtceu:lv_machine_hull')
         .itemOutputs('thermal:dynamo_compression')
         .inputFluids('gtceu:tin_alloy 432')
@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:iron_plate',
         I: 'minecraft:iron_ingot'
     }
-    );
+    ).id('start:shaped/redstone_servo');
     event.shaped(Item.of('thermal:rf_coil'), [
         ' RP',
         'RBR',
@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
         R: 'gtceu:gold_rod',
         P: 'gtceu:gold_plate',
         B: 'minecraft:redstone_block'
-    });
+    }).id('start:shaped/rf_coil');
 
     event.replaceInput({ id: 'thermal:device_fisher' },
         '#forge:gears/copper',
@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
     ], {
         L: 'gtceu:lead_plate',
         E: 'gtceu:electrum_plate'
-    });
+    }).id('start:shaped/energy_cell_frame');
 
     event.shaped(Item.of('thermal:fluid_cell_frame'), [
         'BTB',
@@ -184,7 +184,7 @@ ServerEvents.recipes(event => {
         B: 'gtceu:bronze_plate',
         T: 'gtceu:tin_plate',
         G: '#forge:glass'
-    });
+    }).id('start:shaped/fluid_cell_frame');
 
     event.shaped(Item.of('thermal:machine_frame'), [
         'SSS',
@@ -193,9 +193,9 @@ ServerEvents.recipes(event => {
     ], {
         S: 'gtceu:double_stainless_steel_plate',
         B: 'gtceu:double_black_steel_plate'
-    });
+    }).id('start:shaped/machine_frame');
 
-    event.recipes.create.item_application('thermal:fluid_cell', ['thermal:fluid_cell_frame', 'create:fluid_tank']);
+    event.recipes.create.item_application('thermal:fluid_cell', ['thermal:fluid_cell_frame', 'create:fluid_tank']).id('start:item_application/fluid_cell');
 
     event.recipes.gtceu.alloy_smelter(id('fluid_cell'))
         .itemInputs('thermal:fluid_cell_frame', 'create:fluid_tank')
@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(28);
 
-    event.recipes.create.item_application('thermal:energy_cell', ['thermal:energy_cell_frame', 'minecraft:redstone_block']);
+    event.recipes.create.item_application('thermal:energy_cell', ['thermal:energy_cell_frame', 'minecraft:redstone_block']).id('start:item_application/energy_cell');
 
     event.recipes.gtceu.alloy_smelter(id('energy_cell'))
         .itemInputs('thermal:energy_cell_frame', 'minecraft:redstone_block')

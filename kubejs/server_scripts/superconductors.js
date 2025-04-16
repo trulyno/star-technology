@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     event.recipes.gtceu.macerator(id('soul_sand_dust'))
         .itemInputs('minecraft:soul_sand')
@@ -12,7 +13,7 @@ ServerEvents.recipes(event => {
             'minecraft:soul_sand',
             '#forge:tools/mortars'
         ]
-    );
+    ).id('start:shapeless/soul_sand_dust');
 
     event.recipes.gtceu.mixer(id('soul_infused_dust'))
         .itemInputs('gtceu:invar_dust', '2x thermal_extra:soul_sand_dust')

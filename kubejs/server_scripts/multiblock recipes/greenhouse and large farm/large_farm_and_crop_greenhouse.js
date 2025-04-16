@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         S: 'gtceu:treated_wood_rod',
         P: 'gtceu:treated_wood_planks',
         B: 'minecraft:bone_meal'
-    });
+    }).id('start:shaped/large_farm');
 
     [
         { name: 'minecraft:wheat', seed: 'minecraft:wheat_seeds' },

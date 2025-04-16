@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     const id = global.id;
-
+    
     const dust1 = 'mysticalagriculture:inferium_essence';
     const dust2 = 'mysticalagriculture:prudentium_essence';
     const dust3 = 'mysticalagriculture:tertium_essence';
@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
             H: `gtceu:${tier.voltage}_machine_hull`,
             M: `gtceu:${tier.voltage}_electric_pump`,
             C: `gtceu:${tier.cable}_single_cable`
-        });
+        }).id(`start:shaped/${tier.voltage}_mystical_greenhouse`);
     });
 
     [
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
             H: `gtceu:${tier.voltage}_machine_hull`,
             P: `gtceu:${tier.voltage}_electric_pump`,
             C: `gtceu:${tier.cable}_single_cable`
-        });
+        }).id(`start:shaped/${tier.voltage}_essence_burner`);
     });
 
     event.shaped(Item.of('gtceu:essence_replicator'), [
@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
         E: 'gtceu:mv_emitter',
         H: 'gtceu:heatproof_machine_casing',
         C: 'gtceu:gold_single_cable'
-    });
+    }).id('start:shaped/essence_replicator');
 
     event.shaped(Item.of('gtceu:essence_enchancer'), [
         'SAP',
@@ -208,7 +208,7 @@ ServerEvents.recipes(event => {
         E: 'gtceu:hv_emitter',
         H: 'gtceu:clean_machine_casing',
         C: 'gtceu:aluminium_single_cable'
-    });
+    }).id('start:shaped/essence_enhancer');
 
     event.recipes.gtceu.chemical_reactor(id('inferium_coal'))
         .itemInputs('minecraft:coal', 'mysticalagriculture:inferium_essence')

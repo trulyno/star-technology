@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         E: '#gtceu:circuits/lv',
         F: 'gtceu:lv_robot_arm',
         G: 'gtceu:lv_conveyor_module'
-    });
+    }).id('start:shaped/void_extractor');
 
     event.shaped('gtceu:void_excavator',[
         'ABC',
@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         E: '#gtceu:circuits/luv',
         F: 'gtceu:luv_robot_arm',
         G: 'gtceu:luv_conveyor_module'
-    });
+    }).id('start:shaped/void_excavator');
 
     event.recipes.gtceu.void_excavation(id('mining'))
         .inputFluids('gtceu:drilling_fluid 5000')
