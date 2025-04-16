@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    const id = (id) => `start:${id}`;
+    const id = global.id;
 
     event.shaped('gtceu:ulv_barrel',[
         'ABA',

@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     event.remove({not: {output: 'gtceu:uhv_ultimate_battery'},output: /gtceu:uhv.*/});
     event.remove({input: /gtceu:uhv.*/})
@@ -13,7 +14,7 @@ ServerEvents.recipes(event => {
     event.remove({output: /gtceu:max.*/})
     event.remove({input: /gtceu:max.*/})
 
-event.recipes.gtceu.packer('uhv_ultimate_battery')
+event.recipes.gtceu.packer(id('uhv_ultimate_battery'))
     .itemInputs('gtceu:uhv_ultimate_battery')
     .itemOutputs('gtceu:empty_tier_iii_battery','gtceu:max_battery')
     .circuit(2)

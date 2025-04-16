@@ -1,55 +1,55 @@
-
 ServerEvents.recipes(event => {
+    const id = global.id;
 
-    event.recipes.gtceu.polarizer('energized_gold')
+    event.recipes.gtceu.polarizer(id('energized_gold'))
         .itemInputs('minecraft:gold_ingot')
         .itemOutputs('create_new_age:overcharged_gold')
         .duration(32)
         .EUt(16)
 
-    event.recipes.gtceu.polarizer('energized_iron')
+    event.recipes.gtceu.polarizer(id('energized_iron'))
         .itemInputs('gtceu:magnetic_iron_ingot')
         .itemOutputs('create_new_age:overcharged_iron')
         .duration(16)
         .EUt(16)
 
-    event.recipes.gtceu.polarizer('energized_diamond')
+    event.recipes.gtceu.polarizer(id('energized_diamond'))
         .itemInputs('minecraft:diamond')
         .itemOutputs('create_new_age:overcharged_diamond')
         .duration(160)
         .EUt(16)
 
-    event.recipes.gtceu.bender('overcharged_iron_plate')
+    event.recipes.gtceu.bender(id('overcharged_iron_plate'))
         .itemInputs('create_new_age:overcharged_iron')
         .itemOutputs('create_new_age:overcharged_iron_sheet')
         .duration(48)
         .EUt(24);
 
-    event.recipes.gtceu.bender('overcharged_gold_plate')
+    event.recipes.gtceu.bender(id('overcharged_gold_plate'))
         .itemInputs('create_new_age:overcharged_gold')
         .itemOutputs('create_new_age:overcharged_golden_sheet')
         .duration(196)
         .EUt(24);
 
-    event.recipes.gtceu.wiremill('copper_wire')
+    event.recipes.gtceu.wiremill(id('copper_wire'))
         .itemInputs('gtceu:copper_plate')
         .itemOutputs('4x create_new_age:copper_wire')
         .duration(189)
         .EUt(7);
 
-    event.recipes.gtceu.wiremill('iron_wire')
+    event.recipes.gtceu.wiremill(id('iron_wire'))
         .itemInputs('create_new_age:overcharged_iron_sheet')
         .itemOutputs('4x create_new_age:overcharged_iron_wire')
         .duration(321)
         .EUt(7);
 
-    event.recipes.gtceu.wiremill('gold_wire')
+    event.recipes.gtceu.wiremill(id('gold_wire'))
         .itemInputs('create_new_age:overcharged_golden_sheet')
         .itemOutputs('4x create_new_age:overcharged_golden_wire')
         .duration(588)
         .EUt(7);
 
-    event.recipes.gtceu.wiremill('diamond_wire')
+    event.recipes.gtceu.wiremill(id('diamond_wire'))
         .itemInputs('create_new_age:overcharged_diamond')
         .itemOutputs('2x create_new_age:overcharged_diamond_wire')
         .duration(764)

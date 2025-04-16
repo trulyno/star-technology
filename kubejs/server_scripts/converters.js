@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(event => {
 
     event.remove({ output: /gtceu:.*_energy_converter/ });
@@ -18,11 +17,6 @@ ServerEvents.recipes(event => {
         uhv: 'stellarium',
         uev: 'ancient_runicalium'
     }
-    
-    converterCraftingRecipe('1a','single');
-    converterCraftingRecipe('4a','quadruple');
-    converterCraftingRecipe('8a','octal');
-    converterCraftingRecipe('16a','hex');
     
     function converterCraftingRecipe(amps,thickness){
         for (const [tier, superconductor] of Object.entries(ADVconverterMaterials)) {
@@ -48,6 +42,11 @@ ServerEvents.recipes(event => {
             });
         };
     };
+    
+    converterCraftingRecipe('1a','single');
+    converterCraftingRecipe('4a','quadruple');
+    converterCraftingRecipe('8a','octal');
+    converterCraftingRecipe('16a','hex');
 
     // 64A Converter Recipe
     for (const [tier, superconductor] of Object.entries(ADVconverterMaterials)) {

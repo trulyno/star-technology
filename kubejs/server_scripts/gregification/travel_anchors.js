@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(event => {
 
     event.remove({output: 'travelanchors:travel_anchor'});

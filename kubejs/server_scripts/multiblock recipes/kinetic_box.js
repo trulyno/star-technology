@@ -11,7 +11,7 @@
 //         C: 'gtceu:steel_machine_casing'
 //     });
 
-//     event.recipes.gtceu.kinetic_box('lv_stress')
+//     event.recipes.gtceu.kinetic_box(id('lv_stress'))
 //         .outputStress(1024)
 //         .EUt(32)
 //         .rpm(32);

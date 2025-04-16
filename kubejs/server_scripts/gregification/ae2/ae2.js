@@ -1,7 +1,7 @@
-
 ServerEvents.recipes(event => {
+    const id = global.id;
 
-    event.recipes.gtceu.macerator('fluix_dust')
+    event.recipes.gtceu.macerator(id('fluix_dust'))
         .itemInputs('ae2:fluix_crystal')
         .itemOutputs('ae2:fluix_dust')
         .duration(88)
@@ -17,84 +17,84 @@ ServerEvents.recipes(event => {
         'ae2:certus_quartz_crystal'
     );
 
-    event.recipes.gtceu.polarizer('charged_certus')
+    event.recipes.gtceu.polarizer(id('charged_certus'))
         .itemInputs('ae2:certus_quartz_crystal')
         .itemOutputs('ae2:charged_certus_quartz_crystal')
         .duration(200)
         .EUt(10);
 
-    event.recipes.gtceu.mixer('fluix_crystal')
+    event.recipes.gtceu.mixer(id('fluix_crystal'))
         .itemInputs('ae2:charged_certus_quartz_crystal', 'minecraft:redstone', 'minecraft:quartz')
         .inputFluids('minecraft:water 250')
         .itemOutputs('2x ae2:fluix_crystal')
         .duration(200)
         .EUt(65);
 
-    event.recipes.gtceu.alloy_smelter('printed_calculation_circuit')
+    event.recipes.gtceu.alloy_smelter(id('printed_calculation_circuit'))
         .itemInputs('gtceu:certus_quartz_plate')
         .notConsumable('ae2:calculation_processor_press')
         .itemOutputs('ae2:printed_calculation_processor')
         .duration(200)
         .EUt(65);
 
-     event.recipes.gtceu.alloy_smelter('printed_engineering_circuit')
+     event.recipes.gtceu.alloy_smelter(id('printed_engineering_circuit'))
         .itemInputs('gtceu:diamond_plate')
         .notConsumable('ae2:engineering_processor_press')
         .itemOutputs('ae2:printed_engineering_processor')
         .duration(200)
         .EUt(65);
 
-    event.recipes.gtceu.alloy_smelter('printed_logic_circuit')
+    event.recipes.gtceu.alloy_smelter(id('printed_logic_circuit'))
         .itemInputs('#forge:plates/gold')
         .notConsumable('ae2:logic_processor_press')
         .itemOutputs('ae2:printed_logic_processor')
         .duration(200)
         .EUt(65);
 
-    event.recipes.gtceu.alloy_smelter('printed_silicon')
+    event.recipes.gtceu.alloy_smelter(id('printed_silicon'))
         .itemInputs('gtceu:silicon_plate')
         .notConsumable('ae2:silicon_press')
         .itemOutputs('ae2:printed_silicon')
         .duration(200)
         .EUt(65);
 
-    event.recipes.gtceu.alloy_smelter('calculation_circuit')
+    event.recipes.gtceu.alloy_smelter(id('calculation_circuit'))
         .itemInputs('ae2:printed_calculation_processor', 'ae2:printed_silicon')
         .itemOutputs('ae2:calculation_processor')
         .duration(200)
         .EUt(65);
 
-    event.recipes.gtceu.alloy_smelter('engineering_circuit')
+    event.recipes.gtceu.alloy_smelter(id('engineering_circuit'))
         .itemInputs('ae2:printed_engineering_processor', 'ae2:printed_silicon')
         .itemOutputs('ae2:engineering_processor')
         .duration(200)
         .EUt(65);
 
-    event.recipes.gtceu.alloy_smelter('logic_circuit')
+    event.recipes.gtceu.alloy_smelter(id('logic_circuit'))
         .itemInputs('ae2:printed_logic_processor', 'ae2:printed_silicon')
         .itemOutputs('ae2:logic_processor')
         .duration(200)
         .EUt(65);
 
-    event.recipes.gtceu.forming_press('press_calculation')
+    event.recipes.gtceu.forming_press(id('press_calculation'))
         .itemInputs('gtceu:double_star_steel_plate', 'ae2:certus_quartz_crystal')
         .itemOutputs('ae2:calculation_processor_press')
         .duration(600)
         .EUt(65);
 
-    event.recipes.gtceu.forming_press('press_engineering')
+    event.recipes.gtceu.forming_press(id('press_engineering'))
         .itemInputs('gtceu:double_star_steel_plate', 'minecraft:diamond')
         .itemOutputs('ae2:engineering_processor_press')
         .duration(600)
         .EUt(65);
 
-    event.recipes.gtceu.forming_press('press_logic')
+    event.recipes.gtceu.forming_press(id('press_logic'))
         .itemInputs('gtceu:double_star_steel_plate', 'minecraft:gold_ingot')
         .itemOutputs('ae2:logic_processor_press')
         .duration(600)
         .EUt(65);
 
-    event.recipes.gtceu.forming_press('silicon_logic')
+    event.recipes.gtceu.forming_press(id('silicon_logic'))
         .itemInputs('gtceu:double_star_steel_plate', 'gtceu:silicon_dust')
         .itemOutputs('ae2:silicon_press')
         .duration(600)
@@ -155,19 +155,19 @@ ServerEvents.recipes(event => {
         '#gtceu:circuits/uhv'
     );
 
-    event.recipes.gtceu.wiremill('quartz_fiber_cables')
+    event.recipes.gtceu.wiremill(id('quartz_fiber_cables'))
         .itemInputs('minecraft:quartz')
         .itemOutputs('3x ae2:quartz_fiber')
         .duration(80)
         .EUt(16);
 
-    event.recipes.gtceu.wiremill('fluix_glass_cables')
+    event.recipes.gtceu.wiremill(id('fluix_glass_cables'))
         .itemInputs('ae2:fluix_crystal')
         .itemOutputs('4x ae2:fluix_glass_cable')
         .duration(80)
         .EUt(16);
 
-    event.recipes.gtceu.alloy_smelter('star_steel')
+    event.recipes.gtceu.alloy_smelter(id('star_steel'))
         .itemInputs('ae2:sky_dust', '2x gtceu:steel_ingot')
         .itemOutputs('3x gtceu:star_steel_ingot')
         .duration(160)

@@ -1,8 +1,8 @@
-
 ServerEvents.recipes(event => {
+    const id = global.id;
     
     //Controller Blocks 
-        event.recipes.gtceu.assembly_line('component_part_assembly')
+        event.recipes.gtceu.assembly_line(id('component_part_assembly'))
         .itemInputs('gtceu:uv_assembler','8x gtceu:uv_robot_arm','8x gtceu:uv_conveyor_module',
             '8x gtceu:uv_electric_pump', '4x #gtceu:circuits/uhv', '6x #gtceu:circuits/uv', '8x #gtceu:circuits/zpm')
         .inputFluids('gtceu:soldering_alloy 12528', 'gtceu:lubricant 750')

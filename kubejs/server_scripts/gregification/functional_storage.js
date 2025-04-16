@@ -1,5 +1,5 @@
-
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     event.remove({output: /functionalstorage:.*grade/});
     event.remove({output: /functionalstorage:fluid.*/});

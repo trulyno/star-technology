@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    const id = (id) => `start:${id}`;
+    const id = global.id;
 
     event.recipes.gtceu.coke_oven(id('sugar_coke'))
         .itemOutputs('minecraft:charcoal')

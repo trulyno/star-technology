@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     event.shaped('gtceu:void_extractor',[
         'ABC',
@@ -26,7 +27,7 @@ ServerEvents.recipes(event => {
         G: 'gtceu:luv_conveyor_module'
     });
 
-    event.recipes.gtceu.void_excavation('mining')
+    event.recipes.gtceu.void_excavation(id('mining'))
         .inputFluids('gtceu:drilling_fluid 5000')
         .chancedOutput('5x gtceu:raw_coal', 5000, 1000)
         .chancedOutput('2x minecraft:raw_gold', 4000, 750)
