@@ -104,3 +104,16 @@ ServerEvents.recipes(event => {
     CrystalDuping('end',1);
 
 });
+
+ItemEvents.rightClicked('kubejs:abydos_coordinate_crystal', event => {
+    if (event.player.isCrouching()) {
+        // works
+        event.player.tell('As you consume the echoes of the coordinate crystal, you hear voices whispering, and strange numbers appear before your eyes, along with visions of sandy dunes and a lost world.');
+        event.player.tell('');
+        event.player.tell('You have unlocked §eAbydos§r: 26-6-14-31-11-29');
+        event.item.count--
+        // nope
+        event.target.playSound(null, block.pos, 'minecraft:entity.player.levelup', "neutral");
+        event.target.playSound(null, block.pos, 'minecraft:entity.generic.eat', "neutral");
+    }
+});
