@@ -10,3 +10,14 @@ ServerEvents.recipes(event => {
         .EUt(400);
 
 });
+
+ItemEvents.rightClicked('kubejs:highly_enriched_uranium_fuel_rod', event => {
+    if (event.player.isCrouching()) {
+        event.item.count--
+        event.server.runCommandSilent(`execute as ${event.player.username} run playsound minecraft:entity.generic.eat player ${event.player.username} ~ ~ ~`);
+        event.server.scheduleInTicks(6, ctx => {
+            event.server.runCommandSilent(`execute as ${event.player.username} run playsound minecraft:entity.player.burp player ${event.player.username} ~ ~ ~`);
+            event.player.potionEffects.add('minecraft:instant_damage', 1, 99);
+        })
+    }
+});

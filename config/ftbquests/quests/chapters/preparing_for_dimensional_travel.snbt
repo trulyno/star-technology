@@ -824,29 +824,6 @@
 			y: -8.0d
 		}
 		{
-			can_repeat: true
-			dependencies: ["66D2FB63E81E03AB"]
-			description: [""]
-			icon: "minecraft:sand"
-			id: "5097F10D8D36FEB7"
-			optional: true
-			rewards: [{
-				command: "/sgjourney stargateNetwork address sgjourney:abydos"
-				elevate_perms: true
-				icon: "minecraft:sandstone"
-				id: "2DDB3CA30AB477B8"
-				title: "Abydos Phone Number"
-				type: "command"
-			}]
-			tasks: [{
-				id: "110810FCBC6D0A65"
-				title: "Get Abydos Coordinates"
-				type: "checkmark"
-			}]
-			x: 10.0d
-			y: -3.5d
-		}
-		{
 			dependencies: [
 				"664F435508073B8E"
 				"66D2FB63E81E03AB"
@@ -1234,31 +1211,6 @@
 				type: "checkmark"
 			}]
 			x: 8.0d
-			y: -10.0d
-		}
-		{
-			can_repeat: true
-			dependencies: ["2EDE996312B1C69E"]
-			icon: "ae2:singularity"
-			id: "57246BEEC82C5E15"
-			optional: true
-			rewards: [{
-				command: "/gamestage add @a one"
-				elevate_perms: true
-				icon: {
-					Count: 1
-					id: "ae2:singularity"
-					tag: { }
-				}
-				id: "48AD09B9F8B0BCA2"
-				type: "command"
-			}]
-			tasks: [{
-				id: "217A3F4E8BE2FCB0"
-				title: "Gimme My Gamestage"
-				type: "checkmark"
-			}]
-			x: 4.0d
 			y: -10.0d
 		}
 		{

@@ -1134,28 +1134,6 @@
 			y: -5.0d
 		}
 		{
-			can_repeat: true
-			dependencies: ["29DAE5F27A1D4115"]
-			icon: "minecraft:netherrack"
-			id: "6F28C09E9576D46C"
-			optional: true
-			rewards: [{
-				command: "/sgjourney stargateNetwork address minecraft:the_nether"
-				elevate_perms: true
-				icon: "minecraft:netherrack"
-				id: "0F2CF8BD081737FA"
-				title: "Nether Phone Number"
-				type: "command"
-			}]
-			tasks: [{
-				id: "7188EBC58C836E2D"
-				title: "Get Nether Coordinates"
-				type: "checkmark"
-			}]
-			x: 10.5d
-			y: 2.0d
-		}
-		{
 			dependencies: [
 				"21188AF95E6D5030"
 				"5FAD11260BC2F305"
@@ -1207,28 +1185,6 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 0.0d
-		}
-		{
-			can_repeat: true
-			dependencies: ["14479FB9FCF478D6"]
-			icon: "minecraft:end_stone"
-			id: "46436EB33C1F5816"
-			optional: true
-			rewards: [{
-				command: "/sgjourney stargateNetwork address minecraft:the_end"
-				elevate_perms: true
-				icon: "minecraft:end_stone"
-				id: "2B29FBB9D8552049"
-				title: "End Phone Number"
-				type: "command"
-			}]
-			tasks: [{
-				id: "0FC4CEAF5AD8FAF0"
-				title: "Get End Coordinates"
-				type: "checkmark"
-			}]
-			x: 8.5d
 			y: 0.0d
 		}
 		{

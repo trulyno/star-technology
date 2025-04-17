@@ -105,15 +105,23 @@ ServerEvents.recipes(event => {
 
 });
 
-ItemEvents.rightClicked('kubejs:abydos_coordinate_crystal', event => {
-    if (event.player.isCrouching()) {
-        // works
-        event.player.tell('As you consume the echoes of the coordinate crystal, you hear voices whispering, and strange numbers appear before your eyes, along with visions of sandy dunes and a lost world.');
-        event.player.tell('');
-        event.player.tell('You have unlocked §eAbydos§r: 26-6-14-31-11-29');
-        event.item.count--
-        // nope
-        event.target.playSound(null, block.pos, 'minecraft:entity.player.levelup', "neutral");
-        event.target.playSound(null, block.pos, 'minecraft:entity.generic.eat', "neutral");
-    }
-});
+const crystalfeed = (realmId, realm, stage, message) => {
+    ItemEvents.rightClicked(`kubejs:${realm}_coordinate_crystal`, event => {
+        if (event.player.isCrouching()) {
+            event.item.count--
+            event.server.runCommandSilent(`execute as ${event.player.username} run playsound minecraft:entity.generic.eat player ${event.player.username} ~ ~ ~`);
+            event.server.scheduleInTicks(6, ctx => {
+                event.server.runCommandSilent(`execute as ${event.player.username} run playsound minecraft:entity.player.burp player ${event.player.username} ~ ~ ~`);
+            })
+            event.server.scheduleInTicks(12, ctx => {
+                event.server.runCommandSilent(`execute as ${event.player.username} run playsound minecraft:entity.player.levelup player ${event.player.username} ~ ~ ~`);
+                event.player.tell(`As you consume the echoes of the coordinate crystal, you hear voices whispering, and strange numbers appear before your eyes, along with visions of ${message}.`);
+                event.player.tell('');
+                event.server.runCommand(`execute as ${event.player.username} run sgjourney stargateNetwork address ${realmId}:${realm}`);
+                event.server.runCommandSilent(`execute as ${event.player.username} run gamestage add ${event.player.username} ${stage}`);
+            })
+        }
+    });
+}
+
+crystalfeed('sgjourney', 'abydos', 'one', 'sandy dunes and a lost world buried beneath sand and dust');
