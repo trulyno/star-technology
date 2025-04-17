@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
      'furnace','alloy_smelter','rock_crusher','miner'].forEach(SteamMachineType=>{
     const SteamHM_Removals = [
         'steam_machine_casing',`${SteamTier}_steam_${SteamMachineType}`,'steam_input_hatch','bronze_machine_casing','steel_machine_casing',
-        'bronze_brick_casing','steel_brick_casing','steam_oven','steam_grinder'
+        'bronze_brick_casing','steel_brick_casing','steam_oven','steam_grinder','charcoal_pile_igniter'
     ];
     SteamHM_Removals.forEach(remove=>{
         event.remove({ output: `gtceu:${remove}`})
@@ -116,6 +116,7 @@ ServerEvents.recipes(event => {
     SteamMachine('steam_ore_factory',['kubejs:high_steam_machine_casing','gtceu:potin_gear','kubejs:high_steam_machine_casing','gtceu:tin_alloy_normal_fluid_pipe','gtceu:primitive_ore_factory','gtceu:tin_alloy_normal_fluid_pipe','kubejs:high_steam_machine_casing','createlowheated:basic_burner','kubejs:high_steam_machine_casing']);
     SteamMachine('high_pressure_steam_hammer',['kubejs:high_steam_machine_casing','minecraft:anvil','kubejs:high_steam_machine_casing','gtceu:tin_alloy_normal_fluid_pipe','gtceu:hp_steam_forge_hammer','gtceu:tin_alloy_normal_fluid_pipe','kubejs:high_steam_machine_casing','gtceu:potin_gear','kubejs:high_steam_machine_casing']);
     SteamMachine('high_pressure_steam_sifter',['kubejs:high_steam_machine_casing','exnihilosequentia:flint_mesh','kubejs:high_steam_machine_casing','gtceu:tin_alloy_normal_fluid_pipe','create:basin','gtceu:tin_alloy_normal_fluid_pipe','kubejs:high_steam_machine_casing','thermal:redstone_servo','kubejs:high_steam_machine_casing']);
+    SteamMachine('charcoal_pile_igniter',['gtceu:bronze_plate','gtceu:steel_rotor','gtceu:bronze_plate','gtceu:bronze_plate','gtceu:steam_machine_casing','gtceu:bronze_plate','minecraft:flint_and_steel','minecraft:flint_and_steel','minecraft:flint_and_steel']);
 
     SteamMachine('steam_input_hatch',['gtceu:bronze_plate','gtceu:bronze_large_fluid_pipe','gtceu:bronze_plate','gtceu:double_bronze_plate','gtceu:bronze_rotor','gtceu:double_bronze_plate','gtceu:bronze_plate','gtceu:bronze_large_fluid_pipe','gtceu:bronze_plate']);
 

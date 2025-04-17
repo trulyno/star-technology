@@ -802,6 +802,11 @@ ServerEvents.recipes(event => {
 		P: 'gtceu:double_cast_iron_plate'
 	});
 
+	event.recipes.create.crushing(['1x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:wooden_slabs');
+	event.recipes.create.crushing(['2x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:wooden_stairs');
+	event.recipes.create.crushing(['1x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:wooden_fences');
+	event.recipes.create.crushing(['3x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:planks');
+
 	// Removals
 	const CreateRemoval = ['windmill_bearing', 'spout', 'fluid_pipe', 'chute', 'depot', 'basin', 'mechanical_mixer', 'mechanical_press', 'hand_crank', 'millstone',
 		'crushing_wheel', 'smart_chute', 'fluid_tank', 'steam_engine', 'piston_extension_pole', 'mechanical_bearing', 'clockwork_bearing', 'weighted_ejector',
@@ -813,8 +818,12 @@ ServerEvents.recipes(event => {
 		event.remove({ output: `create:${item}` });
 	});
 	const CNA = ['layered_magnet','fluxuated_magnetite','energiser_t1','energiser_t2','energiser_t3','electrical_connector','generator_coil','basic_motor','advanced_motor','reinforced_motor']
-	CNA.forEach(removal=>{
+	CNA.forEach(removal => {
 		event.remove({output: `create_new_age:${removal}`})
+	});
+	const CDiesel = ['engine_piston', 'engine_silencer', 'engine_turbocharger', 'diesel_engine', 'large_diesel_engine', 'huge_diesel_engine', 'wood_chip'];
+	CDiesel.forEach(removal => {
+		event.remove({output: `createdieselgenerators:${removal}`})
 	});
 	event.remove({id: /^railways:mechanical_crafting\/.*_locometal_boiler/})
 });

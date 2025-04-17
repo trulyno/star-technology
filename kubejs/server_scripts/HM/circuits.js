@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_facility('lv_electronic_circuit')
         .itemInputs('gtceu:resin_printed_circuit_board', '3x gtceu:steel_plate', '6x gtceu:resistor',
-                    '4x #gtceu:circuits/ulv', '4x gtceu:red_alloy_single_cable', '8x gtceu:copper_bolt')
+                    '4x gtceu:vacuum_tube', '4x gtceu:red_alloy_single_cable', '8x gtceu:copper_bolt')
         .inputFluids('gtceu:soldering_alloy 216')
         .itemOutputs('gtceu:basic_electronic_circuit')
         .duration(400)
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_facility('mv_electronic_circuit')
         .itemInputs('gtceu:resin_printed_circuit_board', '3x gtceu:double_steel_plate', '8x gtceu:fine_red_alloy_wire', '4x gtceu:resistor',
-            '4x gtceu:diode', '4x #gtceu:circuits/lv', '4x gtceu:tin_single_cable', '12x gtceu:copper_bolt')
+            '4x gtceu:diode', '4x gtceu:basic_electronic_circuit', '4x gtceu:tin_single_cable', '12x gtceu:copper_bolt')
         .inputFluids('gtceu:soldering_alloy 216')
         .itemOutputs('gtceu:good_electronic_circuit')
         .duration(400)
