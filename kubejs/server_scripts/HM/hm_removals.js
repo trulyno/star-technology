@@ -52,10 +52,12 @@ ServerEvents.recipes(event => {
 	event.remove({ input: /^exnihilosequentia:.*_pebble/ });
 	event.remove({ output: 'exnihilosequentia:unfired_crucible' });
 
-	// event.forEachRecipe([{ type: 'minecraft:smelting' }, { type: 'minecraft:blasting' }], recipe => {
-	// 	event.remove({ id: recipe.getId() });
-	// 	event.custom(recipe.json).id(recipe.getId() + '_manual_only');
-	// }); Cant do this it screws ALL removal recipes
-
 	event.replaceInput({ input: 'minecraft:string' }, 'minecraft:string', '#forge:string');
+})
+
+ServerEvents.afterRecipes(event => {
+	event.forEachRecipe([{ type: 'minecraft:smelting' }, { type: 'minecraft:blasting' }], recipe => {
+		event.remove({ id: recipe.getId() });
+		event.custom(recipe.json).id(recipe.getId() + '_manual_only');
+	});
 })
