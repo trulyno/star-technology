@@ -1,4 +1,5 @@
 /*ServerEvents.recipes(event => {
+    const id = global.id;
   
   //stone dusts
   function crush(output, input){
@@ -76,21 +77,21 @@
 
   //large stone barrel
   //mixing
-  event.recipes.gtceu.large_stone_barrel('iron_mixture')
+  event.recipes.gtceu.large_stone_barrel(id('iron_mixture'))
     .inputFluids('minecraft:lava 2000')
     .itemInputs('4x gtceu:granite_dust')
     .outputFluids('gtceu:iron_mixture 3000')
     .circuit(1)
     .duration(20);
   
-  event.recipes.gtceu.large_stone_barrel('copper_mixture')
+  event.recipes.gtceu.large_stone_barrel(id('copper_mixture'))
     .inputFluids('minecraft:lava 2000')
     .itemInputs('4x gtceu:andesite_dust')
     .outputFluids('gtceu:copper_mixture 3000')
     .circuit(2)
     .duration(20);
 
-  event.recipes.gtceu.large_stone_barrel('quartz_mixture')
+  event.recipes.gtceu.large_stone_barrel(id('quartz_mixture'))
     .inputFluids('minecraft:lava 2000')
     .itemInputs('4x gtceu:diorite_dust')
     .outputFluids('gtceu:quartz_mixture 3000')
@@ -98,28 +99,28 @@
     .duration(20);
 
   //drying
-  event.recipes.gtceu.large_stone_barrel('coagulated_iron_mixture')
+  event.recipes.gtceu.large_stone_barrel(id('coagulated_iron_mixture'))
     .inputFluids('gtceu:iron_mixture 1000')
     .itemInputs('minecraft:sand')
     .itemOutputs('kubejs:coagulated_iron_mixture')
     .circuit(1)
     .duration(20);
   
-  event.recipes.gtceu.large_stone_barrel('coagulated_copper_mixture')
+  event.recipes.gtceu.large_stone_barrel(id('coagulated_copper_mixture'))
     .inputFluids('gtceu:copper_mixture 1000')
     .itemInputs('minecraft:sand')
     .itemOutputs('kubejs:coagulated_copper_mixture')
     .circuit(2)
     .duration(20);
 
-  event.recipes.gtceu.large_stone_barrel('coagulated_quartz_mixture')
+  event.recipes.gtceu.large_stone_barrel(id('coagulated_quartz_mixture'))
     .inputFluids('gtceu:quartz_mixture 1000')
     .itemInputs('minecraft:sand')
     .itemOutputs('kubejs:coagulated_quartz_mixture')
     .circuit(3)
     .duration(20);
 
-  event.recipes.gtceu.large_stone_barrel('coagulated_lava')
+  event.recipes.gtceu.large_stone_barrel(id('coagulated_lava'))
     .inputFluids('minecraft:lava 1000')
     .itemInputs('minecraft:sand')
     .itemOutputs('kubejs:coagulated_lava')

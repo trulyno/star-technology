@@ -1,5 +1,5 @@
-
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     const dust1 = 'mysticalagriculture:inferium_essence';
     const dust2 = 'mysticalagriculture:prudentium_essence';
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
             }
         }
 
-        event.recipes.gtceu.greenhouse_growing(`${type}_essence_growing`)
+        event.recipes.gtceu.greenhouse_growing(id(`${type}_essence_growing`))
             .notConsumable(`mysticalagriculture:${type}_seeds`)
             .chancedInput(dust, 1000, 0)
             .chancedOutput(`mysticalagriculture:${type}_essence`, 7500, 500)

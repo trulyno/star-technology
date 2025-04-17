@@ -8,9 +8,10 @@
 // });
 
 // ServerEvents.recipes(event => {
+//     const id = global.id;
 
 //     //Multi for greens
-//     event.recipes.gtceu.large_greens_extractor('harvesting')
+//     event.recipes.gtceu.large_greens_extractor(id('harvesting'))
 //         .notConsumable('minecraft:stone_hoe')
 //         .chancedInput('4x gtceu:fertilizer', 2500, 0)
 //         .inputFluids('minecraft:water 1000')
@@ -28,7 +29,7 @@
 //         "result": 'kubejs:ball_compost'
 //     });
 
-//     event.recipes.gtceu.large_barrel('ball_compost')
+//     event.recipes.gtceu.large_barrel(id('ball_compost'))
 //         .itemInputs('#kubejs:ball_of_greens')
 //         .inputFluids('exnihilosequentia:sea_water 1000')
 //         .itemOutputs('kubejs:ball_compost')
@@ -40,7 +41,7 @@
 //     switcher('farmersdelight:tomato_seeds', 'thermal:tomato_seeds');
 
 //     //Automating grinding
-//     event.recipes.gtceu.centrifuge('ball_plants')
+//     event.recipes.gtceu.centrifuge(id('ball_plants'))
 //         .itemInputs('kubejs:ball_plants')
 //         .chancedOutput('minecraft:bamboo', 7000, 1000)
 //         .chancedOutput('minecraft:cactus', 7000, 1000)
@@ -52,7 +53,7 @@
 //         .duration(240)
 //         .EUt(32);
 
-//     event.recipes.gtceu.centrifuge('ball_seeds')
+//     event.recipes.gtceu.centrifuge(id('ball_seeds'))
 //         .itemInputs('kubejs:ball_seeds')
 //         .chancedOutput('minecraft:wheat_seeds', 500, 1000)
 //         .chancedOutput('minecraft:pumpkin_seeds', 1000, 1000)
@@ -64,7 +65,7 @@
 //         .duration(240)
 //         .EUt(32);
 
-//     event.recipes.gtceu.centrifuge('ball_roots')
+//     event.recipes.gtceu.centrifuge(id('ball_roots'))
 //         .itemInputs('kubejs:ball_roots')
 //         .chancedOutput('minecraft:carrot', 1000, 1000)
 //         .chancedOutput('minecraft:potato', 1000, 1000)
@@ -72,7 +73,7 @@
 //         .duration(240)
 //         .EUt(32);
 
-//     event.recipes.gtceu.centrifuge('ball_compost')
+//     event.recipes.gtceu.centrifuge(id('ball_compost'))
 //         .itemInputs('kubejs:ball_compost')
 //         .chancedOutput('exnihilosequentia:mycelium_spores', 3000, 1000)
 //         .chancedOutput('thermal:slime_mushroom_spores', 5000, 1000)

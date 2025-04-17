@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     event.shaped('gtceu:void_extractor',[
         'ABC',
@@ -11,7 +12,7 @@ ServerEvents.recipes(event => {
         E: '#gtceu:circuits/lv',
         F: 'gtceu:lv_robot_arm',
         G: 'gtceu:lv_conveyor_module'
-    });
+    }).id('start:shaped/void_extractor');
 
     event.shaped('gtceu:void_excavator',[
         'ABC',
@@ -24,9 +25,9 @@ ServerEvents.recipes(event => {
         E: '#gtceu:circuits/luv',
         F: 'gtceu:luv_robot_arm',
         G: 'gtceu:luv_conveyor_module'
-    });
+    }).id('start:shaped/void_excavator');
 
-    event.recipes.gtceu.void_excavation('mining')
+    event.recipes.gtceu.void_excavation(id('mining'))
         .inputFluids('gtceu:drilling_fluid 5000')
         .chancedOutput('5x gtceu:raw_coal', 5000, 1000)
         .chancedOutput('2x minecraft:raw_gold', 4000, 750)

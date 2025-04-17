@@ -1,20 +1,21 @@
 // ServerEvents.recipes(event => {
+//     const id = global.id;
 
 //     /*/reflective metal //hardmode :)
-//     event.recipes.gtceu.mixer('reflective_metal_dust')
+//     event.recipes.gtceu.mixer(id('reflective_metal_dust'))
 //         .itemInputs('5x gtceu:aluminium_dust', '3x gtceu:steel_dust', '2x minecraft:glowstone')
 //         .itemOutputs('10x gtceu:reflective_metal_dust')
 //         .duration(240)
 //         .EUt(60);
 
-//     event.recipes.gtceu.chemical_bath('reflective_metal_cool_down_water')
+//     event.recipes.gtceu.chemical_bath(id('reflective_metal_cool_down_water'))
 //         .itemInputs('gtceu:hot_reflective_metal_ingot')
 //         .inputFluids('minecraft:water 100')
 //         .itemOutputs('gtceu:reflective_metal_ingot')
 //         .duration(400)
 //         .EUt(60);
 
-//     event.recipes.gtceu.chemical_bath('reflective_metal_cool_down_distilled_water')
+//     event.recipes.gtceu.chemical_bath(id('reflective_metal_cool_down_distilled_water'))
 //         .itemInputs('gtceu:hot_reflective_metal_ingot')
 //         .inputFluids('gtceu:distilled_water 100')
 //         .itemOutputs('gtceu:reflective_metal_ingot')
@@ -44,7 +45,7 @@
 //     });
 
 //     //scan files
-//     event.recipes.gtceu.assembler('undetermined_scan_file')
+//     event.recipes.gtceu.assembler(id('undetermined_scan_file'))
 //         .itemInputs('gtceu:phenolic_printed_circuit_board', 'gtceu:data_stick', '#forge:dyes/blue')
 //         .inputFluids('gtceu:soldering_alloy 288')
 //         .itemOutputs('kubejs:undetermined_scan_file')
@@ -66,7 +67,7 @@
 //     scan('lepidolite', 'gtceu:lithium_dust', 'helium', 6000, 512);
 //     scan('bastnasite', 'gtceu:cerium_dust', 'helium', 6000, 512);
 
-//     event.recipes.gtceu.assembler('cargo_drone')
+//     event.recipes.gtceu.assembler(id('cargo_drone'))
 //         .itemInputs('gtceu:power_thruster', '2x #gtceu:circuits/mv', 'gtceu:plastic_printed_circuit_board', '5x gtceu:double_stainless_steel_plate')
 //         .inputFluids('gtceu:soldering_alloy 288')
 //         .itemOutputs('kubejs:cargo_drone')
@@ -113,7 +114,7 @@
 //     event.remove({ id: 'ae2:inscriber/sky_stone_dust'});
 //     event.remove({ id: 'create:milling/compat/ae2/sky_stone_block'});
 
-//     event.recipes.gtceu.macerator('sky_stone_block')
+//     event.recipes.gtceu.macerator(id('sky_stone_block'))
 //         .itemInputs('ae2:sky_dust')
 //         .itemOutputs('ae2:sky_stone_block')
 //         .duration(1200)
