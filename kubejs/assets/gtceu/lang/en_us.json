@@ -641,6 +641,7 @@
     "block.gtceu.steam_casting_array": "Steam Casting Array Controller",
     "block.gtceu.steam_kiln": "Steam Kiln Controller",
     "block.gtceu.steam_liquifier": "Steam Liquifier Controller",
-    "gtceu.stirling_generator": "Stirling Generator"
+    "gtceu.stirling_generator": "Stirling Generator",
+    "gtceu.auto_scavenger": "Auto Scavenger"
 
 }

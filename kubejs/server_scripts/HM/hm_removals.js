@@ -51,6 +51,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ input: /^exnihilosequentia:.*_pebble/ });
 	event.remove({ output: 'exnihilosequentia:unfired_crucible' });
+	event.remove({ mod: 'colossalchests' });
 
 	// event.forEachRecipe([{ type: 'minecraft:smelting' }, { type: 'minecraft:blasting' }], recipe => {
 	// 	event.remove({ id: recipe.getId() });

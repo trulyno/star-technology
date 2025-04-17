@@ -167,7 +167,7 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(conv, [conv, `create:belt_connector`])
     ]).transitionalItem(conv).loops(2);
 
-    let arm = 'kubejs:ulv_electric_motor'
+    let arm = 'kubejs:ulv_electric_piston'
     event.recipes.create.sequenced_assembly([
         Item.of(`kubejs:ulv_robot_arm`),
     ], arm, [
