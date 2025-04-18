@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "daring_are_we"
+	group: "5829B93DCAFAD4B8"
+	hide_quest_until_deps_complete: true
+	icon: "gtceu:electric_blast_furnace"
+	id: "2E4A42C753D03CD3"
+	order_index: 1
+	progression_mode: "linear"
+	quest_links: [{
+		id: "09DB07A205ADC14C"
+		linked_quest: "53BA24466D74ADE2"
+		shape: "circle"
+		size: 1.5d
+		x: 0.0d
+		y: 0.0d
+	}]
+	quests: [ ]
+	title: "Daring are we?"
+}
