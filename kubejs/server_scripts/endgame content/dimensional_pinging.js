@@ -109,17 +109,12 @@ const crystalfeed = (realmId, realm, stage, message) => {
     ItemEvents.rightClicked(`kubejs:${realm}_coordinate_crystal`, event => {
         if (event.player.isCrouching()) {
             event.item.count--
-            event.server.runCommandSilent(`execute as ${event.player.username} run playsound minecraft:entity.generic.eat player ${event.player.username} ~ ~ ~`);
-            event.server.scheduleInTicks(6, ctx => {
-                event.server.runCommandSilent(`execute as ${event.player.username} run playsound minecraft:entity.player.burp player ${event.player.username} ~ ~ ~`);
-            })
-            event.server.scheduleInTicks(12, ctx => {
-                event.server.runCommandSilent(`execute as ${event.player.username} run playsound minecraft:entity.player.levelup player ${event.player.username} ~ ~ ~`);
-                event.player.tell(`As you consume the echoes of the coordinate crystal, you hear voices whispering, and strange numbers appear before your eyes, along with visions of ${message}.`);
-                event.player.tell('');
-                event.server.runCommand(`execute as ${event.player.username} run sgjourney stargateNetwork address ${realmId}:${realm}`);
-                event.server.runCommandSilent(`execute as ${event.player.username} run gamestage add ${event.player.username} ${stage}`);
-            })
+            event.server.runCommandSilent(`execute as ${event.player.username} run give ${event.player.username} kubejs:blank_coordinate_crystal`);
+            event.server.runCommandSilent(`execute as ${event.player.username} run playsound minecraft:entity.player.levelup player ${event.player.username} ~ ~ ~`);
+            event.player.tell(`As you consume the echoes of the coordinate crystal, you hear voices whispering, and strange numbers appear before your eyes, along with visions of ${message}.`);
+            event.player.tell('');
+            event.server.runCommand(`execute as ${event.player.username} run sgjourney stargateNetwork address ${realmId}:${realm}`);
+            event.server.runCommandSilent(`execute as ${event.player.username} run gamestage add ${event.player.username} ${stage}`);
         }
     });
 }
