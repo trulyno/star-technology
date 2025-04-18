@@ -1,3 +1,5 @@
+// packmode: hard
+
 JEIEvents.hideItems(event => {
 	[
 		'pickaxe',
