@@ -625,145 +625,145 @@ ServerEvents.recipes(event => {
 	});
 
 	event.recipes.create.mechanical_crafting(Item.of('create_new_age:carbon_brushes'), [
-        'RWPWR',
-        'W C W',
-        'PUsUP',
+		'RWPWR',
+		'W C W',
+		'PUsUP',
 		'W C W',
 		'RWPWR'
-    ], {
-        R: 'gtceu:cast_iron_rod',
+	], {
+		R: 'gtceu:cast_iron_rod',
 		W: 'gtceu:fine_copper_wire',
 		P: 'gtceu:cast_iron_plate',
 		C: '#minecraft:coals',
 		U: '#gtceu:circuits/ulv',
 		s: 'create:shaft'
-    });
+	});
 
 	event.recipes.create.mechanical_crafting(Item.of('2x create_new_age:electrical_connector'), [
-        'WRW',
+		'WRW',
 		'WDW',
 		'RPR'
-    ], {
+	], {
 		W: 'gtceu:fine_copper_wire',
-        R: 'gtceu:cast_iron_ring',
+		R: 'gtceu:cast_iron_ring',
 		D: 'gtceu:cast_iron_rod',
 		P: 'gtceu:cast_iron_plate'
-    });
+	});
 
 	event.recipes.create.mechanical_crafting(Item.of('2x create_new_age:generator_coil'), [
-        'RWWRWWR',
-        'WCPCPCW',
+		'RWWRWWR',
+		'WCPCPCW',
 		'WPWWWPW',
-        'RCWSWCR',
-        'WPWWWPW',
-        'WCPCPCW',
-        'RWWRWWR'
+		'RCWSWCR',
+		'WPWWWPW',
+		'WCPCPCW',
+		'RWWRWWR'
 
-    ], {
-        R: 'gtceu:cast_iron_ring',
+	], {
+		R: 'gtceu:cast_iron_ring',
 		W: 'gtceu:fine_copper_wire',
 		C: 'create_new_age:electrical_connector',
-        P: 'gtceu:cast_iron_plate',
+		P: 'gtceu:cast_iron_plate',
 		S: 'create:shaft'
-    });
+	});
 
-	event.recipes.create.compacting('create_new_age:magnetite_block', ['8x gtceu:magnetite_dust','gtceu:stone_dust']);
+	event.recipes.create.compacting('create_new_age:magnetite_block', ['8x gtceu:magnetite_dust', 'gtceu:stone_dust']);
 
-    event.recipes.create.mechanical_crafting(Item.of('4x create_new_age:redstone_magnet'), [
-        'BrB',
-        'rRr',
-        'BrB'
-    ], {
-        B: 'create_new_age:magnetite_block',
-        R: 'minecraft:redstone',
-        r: 'minecraft:redstone_block'
-    });
+	event.recipes.create.mechanical_crafting(Item.of('4x create_new_age:redstone_magnet'), [
+		'BrB',
+		'rRr',
+		'BrB'
+	], {
+		B: 'create_new_age:magnetite_block',
+		R: 'minecraft:redstone',
+		r: 'minecraft:redstone_block'
+	});
 
 	event.recipes.create.mechanical_crafting(Item.of('3x create_new_age:layered_magnet'), [
-        'IGI',
-        'GIG',
-        'RRR',
+		'IGI',
 		'GIG',
-        'IGI'
-    ], {
-        R: 'create_new_age:redstone_magnet',
+		'RRR',
+		'GIG',
+		'IGI'
+	], {
+		R: 'create_new_age:redstone_magnet',
 		G: 'create_new_age:overcharged_gold',
 		I: 'create_new_age:overcharged_iron'
-    });
+	});
 
 	event.recipes.create.mechanical_crafting(Item.of('4x create_new_age:fluxuated_magnetite'), [
-        'DMDMD',
-        'MLMLM',
-        'DMDMD',
+		'DMDMD',
 		'MLMLM',
-        'DMDMD'
-    ], {
-        L: 'create_new_age:layered_magnet',
-        M: 'gtceu:magnetite_dust',
+		'DMDMD',
+		'MLMLM',
+		'DMDMD'
+	], {
+		L: 'create_new_age:layered_magnet',
+		M: 'gtceu:magnetite_dust',
 		D: 'create_new_age:overcharged_diamond'
-    });
+	});
 
-    event.recipes.gtceu.assembler('netherite_magnet')
-        .itemInputs('create_new_age:fluxuated_magnetite')
+	event.recipes.gtceu.assembler('netherite_magnet')
+		.itemInputs('create_new_age:fluxuated_magnetite')
 		.inputFluids('gtceu:neodymium 576')
 		.itemOutputs('create_new_age:netherite_magnet')
 		.duration(200)
 		.EUt(120);
 
 	event.shaped(Item.of('3x create:belt_connector'), [
-			'RRR',
-			'HSW'
-		], {
-			R: 'gtceu:rubber_plate',
-			H: '#forge:tools/hammers',
-			S: '#forge:tools/screwdrivers',
-			W: '#forge:tools/wrenches'
-		});
+		'RRR',
+		'HSW'
+	], {
+		R: 'gtceu:rubber_plate',
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers',
+		W: '#forge:tools/wrenches'
+	});
 
 	event.recipes.create.mechanical_crafting(Item.of('3x create:belt_connector'), [
-			'RRR'
-		], {
-			R: 'gtceu:rubber_plate'
-		});
-
-	const CNA_wire = (material,energy,output) => {
-	event.custom({
-		'type': 'create_new_age:energising',
-		'energy_needed': energy,
-		'ingredients': [
-			{
-			'item': `gtceu:fine_${material}_wire`
-			}
-		],
-		'results': [
-			{
-			'item': `create_new_age:${output}`
-			}
-		]
-	});
-	}
-	CNA_wire('copper',500,'copper_wire');
-	CNA_wire('iron',1000,'overcharged_iron_wire');
-	CNA_wire('gold',2000,'overcharged_golden_wire');
-
-	const Energiser = (tier,material,prior) => {
-	event.recipes.create.mechanical_crafting(Item.of(`create_new_age:energiser_${tier}`), [
-		'PRP',
-		'USU',
-		'PGP',
-		' N '
+		'RRR'
 	], {
-		R: 'gtceu:cast_iron_rod',
-		P: 'gtceu:cast_iron_plate',
-		S: prior,
-		U: '#gtceu:circuits/ulv',
-		G: material,
-		N: 'create_new_age:electrical_connector'
+		R: 'gtceu:rubber_plate'
 	});
+
+	const CNA_wire = (material, energy, output) => {
+		event.custom({
+			'type': 'create_new_age:energising',
+			'energy_needed': energy,
+			'ingredients': [
+				{
+					'item': `gtceu:fine_${material}_wire`
+				}
+			],
+			'results': [
+				{
+					'item': `create_new_age:${output}`
+				}
+			]
+		});
 	}
-	Energiser('t1','minecraft:lightning_rod','create:shaft');
-	Energiser('t2','create_new_age:overcharged_golden_wire','create_new_age:energiser_t1');
-	Energiser('t3','create_new_age:overcharged_diamond','create_new_age:energiser_t2');
+	CNA_wire('copper', 500, 'copper_wire');
+	CNA_wire('iron', 1000, 'overcharged_iron_wire');
+	CNA_wire('gold', 2000, 'overcharged_golden_wire');
+
+	const Energiser = (tier, material, prior) => {
+		event.recipes.create.mechanical_crafting(Item.of(`create_new_age:energiser_${tier}`), [
+			'PRP',
+			'USU',
+			'PGP',
+			' N '
+		], {
+			R: 'gtceu:cast_iron_rod',
+			P: 'gtceu:cast_iron_plate',
+			S: prior,
+			U: '#gtceu:circuits/ulv',
+			G: material,
+			N: 'create_new_age:electrical_connector'
+		});
+	}
+	Energiser('t1', 'minecraft:lightning_rod', 'create:shaft');
+	Energiser('t2', 'create_new_age:overcharged_golden_wire', 'create_new_age:energiser_t1');
+	Energiser('t3', 'create_new_age:overcharged_diamond', 'create_new_age:energiser_t2');
 
 	event.recipes.create.mechanical_crafting(Item.of('create_new_age:basic_motor'), [
 		'NRN',
@@ -807,6 +807,20 @@ ServerEvents.recipes(event => {
 	event.recipes.create.crushing(['1x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:wooden_fences');
 	event.recipes.create.crushing(['3x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:planks');
 
+	event.remove({ id: 'create:crafting/kinetics/speedometer' });
+	event.recipes.shaped('create:speedometer', [
+		'RGR',
+		'SIS',
+		'ACA'
+	], {
+		R: 'minecraft:redstone',
+		G: 'minecraft:glass_pane',
+		S: 'create:shaft',
+		I: 'gtceu:iron_rod',
+		C: 'create:andesite_casing',
+		A: 'create:andesite_alloy',
+	});
+
 	// Removals
 	const CreateRemoval = ['windmill_bearing', 'spout', 'fluid_pipe', 'chute', 'depot', 'basin', 'mechanical_mixer', 'mechanical_press', 'hand_crank', 'millstone',
 		'crushing_wheel', 'smart_chute', 'fluid_tank', 'steam_engine', 'piston_extension_pole', 'mechanical_bearing', 'clockwork_bearing', 'weighted_ejector',
@@ -817,13 +831,13 @@ ServerEvents.recipes(event => {
 	CreateRemoval.forEach(item => {
 		event.remove({ output: `create:${item}` });
 	});
-	const CNA = ['layered_magnet','fluxuated_magnetite','energiser_t1','energiser_t2','energiser_t3','electrical_connector','generator_coil','basic_motor','advanced_motor','reinforced_motor']
+	const CNA = ['layered_magnet', 'fluxuated_magnetite', 'energiser_t1', 'energiser_t2', 'energiser_t3', 'electrical_connector', 'generator_coil', 'basic_motor', 'advanced_motor', 'reinforced_motor']
 	CNA.forEach(removal => {
-		event.remove({output: `create_new_age:${removal}`})
+		event.remove({ output: `create_new_age:${removal}` })
 	});
 	const CDiesel = ['engine_piston', 'engine_silencer', 'engine_turbocharger', 'diesel_engine', 'large_diesel_engine', 'huge_diesel_engine', 'wood_chip'];
 	CDiesel.forEach(removal => {
-		event.remove({output: `createdieselgenerators:${removal}`})
+		event.remove({ output: `createdieselgenerators:${removal}` })
 	});
-	event.remove({id: /^railways:mechanical_crafting\/.*_locometal_boiler/})
+	event.remove({ id: /^railways:mechanical_crafting\/.*_locometal_boiler/ })
 });
