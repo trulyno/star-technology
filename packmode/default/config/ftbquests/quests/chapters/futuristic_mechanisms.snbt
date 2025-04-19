@@ -385,7 +385,7 @@
 		{
 			dependencies: ["53A9F3758C218CDC"]
 			description: [
-				"Paralleling allows you to do more a recipea at once."
+				"Paralleling allows you to do more a recipe at once."
 				""
 				""
 				"{ \"text\": \"Read More About It Here\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"70EE9D4811A27CF2\" } }"
