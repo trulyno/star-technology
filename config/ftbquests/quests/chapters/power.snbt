@@ -2258,6 +2258,17 @@
 			x: -4.5d
 			y: -7.0d
 		}
+		{
+			dependencies: ["3EFA6C0507041E4C"]
+			id: "7D22AD72E79373D0"
+			tasks: [{
+				id: "117B30BB7144C71F"
+				item: "gtceu:coke_gem"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 6.0d
+		}
 	]
 	title: "Power"
 }

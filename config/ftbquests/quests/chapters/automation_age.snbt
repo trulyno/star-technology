@@ -13,12 +13,12 @@
 			id: "39074A560F263385"
 			linked_quest: "0F0FEE1952A3CB4F"
 			x: -9.5d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			id: "41C7252EA0A52349"
 			linked_quest: "4FF433145C67693F"
-			x: -3.5d
+			x: -1.5d
 			y: -5.0d
 		}
 	]
@@ -46,7 +46,7 @@
 				item: "gtceu:advanced_integrated_circuit"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -12.5d
 			y: -6.0d
 		}
 		{
@@ -178,7 +178,7 @@
 				type: "item"
 			}]
 			x: -12.5d
-			y: -6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
@@ -218,7 +218,7 @@
 				item: "gtceu:micro_processor"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -8.5d
 			y: -2.0d
 		}
 		{
@@ -241,8 +241,8 @@
 				item: "gtceu:microchip_processor"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -4.0d
+			x: -10.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["363F5B598683A074"]
@@ -264,7 +264,7 @@
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -6.5d
 			y: -2.0d
 		}
 		{
@@ -288,7 +288,7 @@
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -4.5d
 			y: -2.0d
 		}
 		{
@@ -330,8 +330,8 @@
 				}
 			]
 			title: "CPU Chips"
-			x: -11.5d
-			y: -5.0d
+			x: -12.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -364,8 +364,8 @@
 					type: "item"
 				}
 			]
-			x: -12.5d
-			y: -2.0d
+			x: -10.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -403,7 +403,7 @@
 			]
 			title: "Maintanence Hatch Variants"
 			x: -10.5d
-			y: -4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -520,7 +520,7 @@
 			]
 			title: "SMD's"
 			x: -5.5d
-			y: -7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
@@ -547,7 +547,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -5.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -629,11 +629,11 @@
 				}
 			]
 			title: "NanoMuscle™ Suite"
-			x: -9.5d
-			y: -11.0d
+			x: -7.5d
+			y: -9.0d
 		}
 		{
-			dependencies: ["7983F437D5B44A43"]
+			dependencies: ["3CB63B290C9EFAA2"]
 			description: ["The Cleanroom is a structure that filters inside itself, allowing for a dust free environment to achieve more precise crafting."]
 			id: "17C1292018AE363E"
 			rewards: [{
@@ -648,8 +648,8 @@
 				item: "gtceu:cleanroom"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -3.0d
+			x: -6.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
@@ -666,7 +666,7 @@
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -4.5d
 			y: -4.0d
 		}
 		{
@@ -687,7 +687,7 @@
 				item: "gtceu:micro_processor_mainframe"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -2.5d
 			y: -6.0d
 		}
 		{
@@ -751,7 +751,7 @@
 					type: "item"
 				}
 			]
-			x: -4.5d
+			x: -2.5d
 			y: -4.0d
 		}
 		{
@@ -769,7 +769,7 @@
 				item: "gtceu:enderium_single_wire"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -0.5d
 			y: -4.0d
 		}
 		{
@@ -787,7 +787,7 @@
 				item: "gtceu:enderium_ingot"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.5d
 			y: -4.0d
 		}
 		{
@@ -923,8 +923,8 @@
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -2.0d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
@@ -967,7 +967,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["22BC7BDE5E132A30"]
@@ -986,7 +986,7 @@
 				type: "checkmark"
 			}]
 			x: -8.5d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4FFD2642BC183495"]
@@ -1034,7 +1034,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1060,7 +1060,7 @@
 				type: "item"
 			}]
 			x: -12.5d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["170C262792DA7123"]
@@ -1078,8 +1078,8 @@
 				title: "Desulfurizing"
 				type: "checkmark"
 			}]
-			x: -6.5d
-			y: 4.0d
+			x: -8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1A05644388327FA4"]
@@ -1101,8 +1101,8 @@
 				item: "gtceu:cracker"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 4.0d
+			x: -10.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1130,8 +1130,8 @@
 				title: "Byproduct distilling"
 				type: "checkmark"
 			}]
-			x: -10.5d
-			y: 4.0d
+			x: -12.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["439D8AE6D3DC41AF"]
@@ -1153,7 +1153,7 @@
 				type: "item"
 			}]
 			x: -12.5d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1264,8 +1264,8 @@
 				}
 			]
 			title: "Distilling Liquid Air"
-			x: -4.5d
-			y: 4.0d
+			x: -6.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["74749B089D50329C"]
@@ -1417,7 +1417,7 @@
 				item: "gtceu:phosphorus_dust"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.5d
 			y: -4.0d
 		}
 		{
@@ -1440,7 +1440,7 @@
 				item: "gtceu:phosphate_dust"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.5d
 			y: -6.0d
 		}
 		{
@@ -1493,7 +1493,7 @@
 				item: "gtceu:ender_air_bucket"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -7.5d
 			y: 3.5d
 		}
 		{
@@ -1511,8 +1511,8 @@
 				item: "gtceu:nether_air_bucket"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 4.5d
+			x: -5.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5E1E1A4F5036A6EA"]
@@ -1529,7 +1529,7 @@
 				item: "mysticalagriculture:end_agglomeratio"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -8.5d
 			y: 3.5d
 		}
 		{
@@ -1547,8 +1547,8 @@
 				item: "mysticalagriculture:nether_agglomeratio"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 4.5d
+			x: -4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0725DE9E90815AB4"]
@@ -1565,8 +1565,8 @@
 				item: "gtceu:netherrack_dust"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 4.5d
+			x: -3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4E9FAED9D889160A"]
@@ -1583,7 +1583,7 @@
 				item: "gtceu:endstone_dust"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -9.5d
 			y: 3.5d
 		}
 		{
@@ -1601,7 +1601,7 @@
 				item: "minecraft:end_stone"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -10.5d
 			y: 3.5d
 		}
 		{
@@ -1619,11 +1619,14 @@
 				item: "minecraft:netherrack"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 4.5d
+			x: -2.5d
+			y: 3.5d
 		}
 		{
-			dependencies: ["0F0FEE1952A3CB4F"]
+			dependencies: [
+				"0F0FEE1952A3CB4F"
+				"3CB63B290C9EFAA2"
+			]
 			description: ["Now you have &8PTFE&r, you can make one of the most useful multiblocks, the Large Chemical Reactor (LCR for short). You will have so many of these by the end of the pack."]
 			hide_dependent_lines: true
 			id: "1820787D031EAB15"
@@ -1641,8 +1644,8 @@
 				type: "item"
 			}]
 			title: "Large Chemical Reactor (LCR)"
-			x: -9.5d
-			y: -0.5d
+			x: -8.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -1662,7 +1665,7 @@
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -0.5d
 			y: -6.0d
 		}
 		{
@@ -1685,7 +1688,7 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.5d
 			y: -6.0d
 		}
 		{
@@ -1703,7 +1706,7 @@
 				item: "gtceu:data_orb"
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.5d
 			y: -7.0d
 		}
 		{
@@ -1721,7 +1724,7 @@
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.5d
 			y: -6.0d
 		}
 		{
@@ -1744,7 +1747,7 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.5d
 			y: -4.0d
 		}
 		{
@@ -1773,7 +1776,7 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
+			x: 2.5d
 			y: -7.0d
 		}
 		{
@@ -1800,7 +1803,7 @@
 				}
 			]
 			title: "Nano CPU Chips"
-			x: -1.5d
+			x: 0.5d
 			y: -5.0d
 		}
 		{
@@ -1817,7 +1820,7 @@
 				item: "gtceu:epoxy_plate"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.5d
 			y: -7.0d
 		}
 		{
@@ -1912,8 +1915,8 @@
 				item: "gtceu:iv_machine_hull"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -9.0d
+			x: -4.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["7CACFC7C9101EA59"]
@@ -2001,7 +2004,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -10.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1C05C80BCB4736B6"]
@@ -2019,7 +2022,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -11.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -2037,8 +2040,8 @@
 				item: "gtceu:shellite_ingot"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -11.0d
+			x: -5.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -2068,8 +2071,8 @@
 				}
 			]
 			title: "HPIC Chips"
-			x: -3.5d
-			y: -11.0d
+			x: -4.5d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -2220,9 +2223,9 @@
 			description: [
 				"This multiblock allows you to create even more complex alloys, but will give outputs in a molten form."
 				""
-				"The ABS does both the mixing and smelting, and gives multiple units of ingots (144mb) as output because of this."
+				"The ABS does both the mixing and smelting, and gives multiple units of ingots (144mb) as output because of this while only taking 75% the time of their EBF counter-part."
 				""
-				"You will need to cool the Molten Liquids in a Vacuum Freezer."
+				"You will need to cool the Molten Liquids in a Vacuum Freezer.."
 			]
 			id: "664E782C6A24D9F1"
 			rewards: [{
@@ -2306,8 +2309,8 @@
 				title: "Go Read About Perfect Overclock"
 				type: "checkmark"
 			}]
-			x: -8.5d
-			y: 0.5d
+			x: -7.5d
+			y: -3.0d
 		}
 		{
 			id: "56B0A897E7C7C25C"
@@ -2318,7 +2321,7 @@
 				title: "positioner"
 				type: "checkmark"
 			}]
-			x: -2.5d
+			x: -3.5d
 			y: -3.0d
 		}
 		{
@@ -2358,14 +2361,13 @@
 				title: "Go Read About Chemical Skips"
 				type: "checkmark"
 			}]
-			x: -10.5d
-			y: 0.5d
+			x: -9.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
 			dependency_requirement: "one_completed"
 			description: ["In &lMechanics&r Distinct Buses are Explained"]
-			hide_dependency_lines: true
 			icon: "ftbquests:book"
 			id: "7E74A114F4054345"
 			tasks: [{
@@ -2384,7 +2386,6 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["In &lMechanics&r Lockable Fluid Hatches are Explained"]
-			hide_dependency_lines: true
 			icon: "ftbquests:book"
 			id: "171BD0E155CF98CA"
 			tasks: [{
@@ -2407,18 +2408,6 @@
 			}]
 			x: -9.5d
 			y: -9.0d
-		}
-		{
-			dependencies: ["3CB63B290C9EFAA2"]
-			icon: "gtceu:hv_electric_motor"
-			id: "7983F437D5B44A43"
-			tasks: [{
-				id: "0CA043CEC2246BB8"
-				title: "Game Changing Structures"
-				type: "checkmark"
-			}]
-			x: -8.5d
-			y: -4.0d
 		}
 	]
 	title: "Automation Age"

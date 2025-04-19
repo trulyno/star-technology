@@ -574,10 +574,7 @@
 			y: 14.0d
 		}
 		{
-			dependencies: [
-				"6373DC17B2A31150"
-				"7983F437D5B44A43"
-			]
+			dependencies: ["6373DC17B2A31150"]
 			id: "0F0FEE1952A3CB4F"
 			rewards: [{
 				count: 3
