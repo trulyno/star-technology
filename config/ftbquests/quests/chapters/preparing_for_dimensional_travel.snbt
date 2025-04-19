@@ -1365,15 +1365,16 @@
 				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
-					Icon: "gtceu:block/overlay/machine/overlay_maintenance_cleaning_emissive"
+					Icon: "create:item/experience_nugget"
 				}
 			}
 			id: "5FB0649F878A32D5"
 			tasks: [{
 				id: "154528EA5CC03F6C"
-				title: "&o&9Absorbing Hidden Knowledge"
+				title: "Absorb the Crystal's Power"
 				type: "checkmark"
 			}]
+			title: "&o&9Absorbing Hidden Knowledge"
 			x: 10.0d
 			y: -3.5d
 		}

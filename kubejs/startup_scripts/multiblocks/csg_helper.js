@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('classic_stargate_display', 'multiblock')
         .recipeType('dummy')
 		.pattern(definition => FactoryBlockPattern.start()
-            .aisle('   E  ','       ','       ','       ','       ','       ','       ')
+            .aisle('   E   ','       ','       ','       ','       ','       ','       ')
             .aisle('   D   ','       ','       ','       ','       ','       ','       ')
             .aisle('       ','       ','       ','       ','       ','       ','       ') 	
     		.aisle(' RCBCR ','CR   RC','R     R','R  @  R','C     C','RR   RR',' CRCRC ')
