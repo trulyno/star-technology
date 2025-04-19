@@ -1,13 +1,3 @@
-
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-
-    event.create('rock_sifter')
-        .category('rock_sifter')
-        .setMaxIOSize(2, 9, 1, 0)
-        .setSound(GTSoundEntries.MACERATOR);
-
-});
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('rock_sifter', 'multiblock')

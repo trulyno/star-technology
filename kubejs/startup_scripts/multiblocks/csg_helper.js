@@ -2,7 +2,6 @@
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('classic_stargate_display', 'multiblock')
         .recipeType('dummy')
-        .tooltips('§7This is not mandatory, just to assist you with building the §3Classic Stargate')
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle(' RCBCR ','CR   RC','R     R','R     R','C     C','RR   RR',' CRCRC ')
             .aisle('       ','       ','       ','       ','       ','       ','       ') 	

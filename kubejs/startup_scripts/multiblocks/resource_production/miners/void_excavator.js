@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('void_excavator', 'multiblock')
