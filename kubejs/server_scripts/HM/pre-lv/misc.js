@@ -246,6 +246,27 @@ ServerEvents.recipes(event => {
 		F: 'gtceu:bronze_frame'
 	});
 
+	event.remove({ id: 'gtceu:compressor/compress_plate_dust_obsidian' });
+	event.recipes.create.mechanical_crafting('itemcollectors:basic_collector', [
+		' P ',
+		' S ',
+		'OOO'
+	], {
+		P: 'minecraft:ender_pearl',
+		S: 'gtceu:steel_spring',
+		O: 'gtceu:obsidian_plate'
+	});
+
+	event.recipes.create.mechanical_crafting('itemcollectors:advanced_collector', [
+		' P ',
+		' S ',
+		'OOO'
+	], {
+		P: 'minecraft:ender_eye',
+		S: 'gtceu:hsla_steel_spring',
+		O: 'gtceu:obsidian_plate'
+	});
+
 	//Mass Removals
 
 	const ThermalRemoval = ['redstone_servo', 'device_tree_extractor', 'drill_head', 'fluid_cell_frame','device_rock_gen','device_water_gen'];
