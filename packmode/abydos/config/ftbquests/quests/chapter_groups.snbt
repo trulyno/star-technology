@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "1E0FC4EA21F735F7", title: "Through the Ages Regular" }
+		{ id: "03EF8417F6D21A2E", title: "Progression Tracking" }
+		{ id: "28726466D987C725", title: "Extras" }
+	]
+}

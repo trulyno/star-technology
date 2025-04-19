@@ -1,0 +1,2282 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "power"
+	group: "28726466D987C725"
+	icon: "kubejs:mv_upgrade_kit"
+	id: "10A89CD14C4DAF63"
+	order_index: 0
+	quest_links: [{
+		id: "564046CF37ECA3FE"
+		linked_quest: "7B0133D388101F68"
+		x: 4.0d
+		y: 1.0d
+	}]
+	quests: [
+		{
+			dependencies: [
+				"614071EB90CB89F5"
+				"1B32FFCDA1C87B90"
+			]
+			id: "102F057123D31D85"
+			shape: "square"
+			tasks: [{
+				id: "33E666F383CDEB87"
+				item: "thermal:dynamo_stirling"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"614071EB90CB89F5"
+				"1B32FFCDA1C87B90"
+			]
+			id: "092ACDF732CE78F0"
+			shape: "square"
+			tasks: [{
+				id: "08138C5EDF686889"
+				item: "thermal:dynamo_lapidary"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"614071EB90CB89F5"
+				"1B32FFCDA1C87B90"
+			]
+			id: "7910F6A8087A9E85"
+			shape: "square"
+			tasks: [{
+				id: "42FA990B3D4527EF"
+				item: "thermal:dynamo_compression"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["102F057123D31D85"]
+			id: "6952D4FF38BE8183"
+			shape: "square"
+			tasks: [{
+				id: "50ED326686CD73E9"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6952D4FF38BE8183"]
+			id: "3EFA6C0507041E4C"
+			shape: "square"
+			tasks: [{
+				id: "14A2104E33629DD6"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["092ACDF732CE78F0"]
+			id: "1DBE1786C8F14A9E"
+			shape: "square"
+			tasks: [{
+				id: "7140C3EA87BBDB69"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7910F6A8087A9E85"]
+			id: "28FB566FC1E35413"
+			shape: "square"
+			tasks: [{
+				id: "49A4C58ADCA7A3EC"
+				item: "gtceu:bio_diesel_bucket"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["28FB566FC1E35413"]
+			id: "7242D13C6F27BECB"
+			shape: "square"
+			tasks: [{
+				id: "5068F763D25AC096"
+				item: "thermal:refined_fuel_bucket"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7242D13C6F27BECB"]
+			id: "0C81D0F1D42C092B"
+			shape: "square"
+			tasks: [{
+				id: "1137B87A5FCDB93E"
+				item: "gtceu:diesel_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0C81D0F1D42C092B"]
+			id: "7E508B071C59EB73"
+			shape: "square"
+			tasks: [{
+				id: "06C571F6E4F9BE87"
+				item: "gtceu:cetane_boosted_diesel_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7E508B071C59EB73"]
+			id: "285392E7B24481C3"
+			shape: "square"
+			tasks: [{
+				id: "0317B1EA7A996CDC"
+				item: "gtceu:gasoline_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["285392E7B24481C3"]
+			id: "3C42ADD053314B4E"
+			shape: "square"
+			tasks: [{
+				id: "0F41AA8E415B68D4"
+				item: "gtceu:high_octane_gasoline_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"614071EB90CB89F5"
+				"7AAF2D8BC72919DB"
+			]
+			icon: "systeams:steam_dynamo"
+			id: "67452BE135FAD1C3"
+			shape: "square"
+			subtitle: "Generates twice as much as dynamos"
+			tasks: [
+				{
+					id: "7C19C4AB7C36C6FD"
+					item: "systeams:boiler_pipe"
+					type: "item"
+				}
+				{
+					id: "5DDA0D8FA6FC134A"
+					item: "systeams:steam_dynamo"
+					type: "item"
+				}
+			]
+			title: "Steam Dynamo"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Thermal Dynamos are cheaper than GregTech energy generation machines."
+				"Thermal Dynamos can be upgraded."
+				"Depending on the upgrades installed, you can get more power from a fuel than gregtech generators."
+				"Best for early game up to mid game."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "thermal:item/enderium_gear"
+				}
+			}
+			id: "614071EB90CB89F5"
+			tasks: [{
+				id: "0020A1ED81A0ACE0"
+				title: "Why use Thermal Dynamos?"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			description: [
+				"GregTech generators have more variety."
+				"Higher tier generators can generate much more energy per tick than Thermal Dynamos."
+				"Best for late mid-game and end game."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "gtceu:block/casings/signs/machine_casing_gregificationhazard"
+				}
+			}
+			id: "7DDFBCDFC3F09A6B"
+			tasks: [{
+				id: "2739B3C9FA296C7F"
+				title: "Why use GregTech energy generators?"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"3CB63B290C9EFAA2"
+				"73931EAA3EC5C9A9"
+				"05C51AB556798DB5"
+				"4F2692F874F68EF8"
+			]
+			id: "56D5E9ED8C8868FE"
+			shape: "square"
+			tasks: [{
+				id: "48522FFEDF87BD02"
+				item: "gtceu:steam_large_turbine"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"74749B089D50329C"
+				"62BA581B2918BB7B"
+				"3686ABF30E4B9ED6"
+				"121EFB24BE239D59"
+			]
+			id: "1AE561E8FE98FB21"
+			shape: "square"
+			tasks: [{
+				id: "1BCD35AE0F36FCEA"
+				item: "gtceu:large_combustion_engine"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4D9DAED52FF74B8B"
+				"53A9F3758C218CDC"
+				"1AE561E8FE98FB21"
+				"51F889E1432E4DAD"
+			]
+			id: "6624D08A013284D5"
+			shape: "square"
+			tasks: [{
+				id: "64F92C7895944392"
+				item: "gtceu:extreme_combustion_engine"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"74749B089D50329C"
+				"52FE319F5E176C37"
+				"2E47A710168F7FF8"
+				"121EFB24BE239D59"
+			]
+			id: "2B9567A9F12BC62F"
+			shape: "square"
+			tasks: [{
+				id: "687F28B3B98B6DE8"
+				item: "gtceu:gas_large_turbine"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"023794367F1B28D1"
+				"53A9F3758C218CDC"
+				"7DDFBCDFC3F09A6B"
+				"51F889E1432E4DAD"
+			]
+			id: "6622E66A2FA19BA1"
+			shape: "square"
+			tasks: [{
+				id: "0AC946F08537628E"
+				item: "gtceu:plasma_large_turbine"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"7DDFBCDFC3F09A6B"
+				"1B32FFCDA1C87B90"
+			]
+			id: "214ADEEEA6FFF4BC"
+			shape: "square"
+			tasks: [{
+				id: "6546C5ED1953EFEE"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"214ADEEEA6FFF4BC"
+				"7AAF2D8BC72919DB"
+			]
+			id: "739ACFDA803EE16C"
+			shape: "square"
+			tasks: [{
+				id: "64BD5AABF0A6F791"
+				item: "gtceu:mv_steam_turbine"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"739ACFDA803EE16C"
+				"4F2692F874F68EF8"
+			]
+			id: "05C51AB556798DB5"
+			shape: "square"
+			tasks: [{
+				id: "52E6DD1F207F854F"
+				item: "gtceu:hv_steam_turbine"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"7DDFBCDFC3F09A6B"
+				"1B32FFCDA1C87B90"
+			]
+			id: "52D3EE2184A501B8"
+			shape: "square"
+			tasks: [{
+				id: "0A5ED99285565C0C"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"52D3EE2184A501B8"
+				"7AAF2D8BC72919DB"
+			]
+			id: "031AC34BAC9179F0"
+			shape: "square"
+			tasks: [{
+				id: "1A7A31FD8179EAFA"
+				item: "gtceu:mv_combustion"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"031AC34BAC9179F0"
+				"4F2692F874F68EF8"
+			]
+			id: "3686ABF30E4B9ED6"
+			shape: "square"
+			tasks: [{
+				id: "3D23834A7ACD743F"
+				item: "gtceu:hv_combustion"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7DDFBCDFC3F09A6B"
+				"1B32FFCDA1C87B90"
+			]
+			id: "2D7AD0E25BF9F651"
+			shape: "square"
+			tasks: [{
+				id: "028204ED9995EED8"
+				item: "gtceu:lv_gas_turbine"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"2D7AD0E25BF9F651"
+				"7AAF2D8BC72919DB"
+			]
+			id: "526C13FC32CED748"
+			shape: "square"
+			tasks: [{
+				id: "3AE97B397C3364B7"
+				item: "gtceu:mv_gas_turbine"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"526C13FC32CED748"
+				"4F2692F874F68EF8"
+			]
+			id: "2E47A710168F7FF8"
+			shape: "square"
+			tasks: [{
+				id: "7E8863D217070FAB"
+				item: "gtceu:hv_gas_turbine"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"614071EB90CB89F5"
+				"1B32FFCDA1C87B90"
+			]
+			id: "08F1DEFEB060C74C"
+			shape: "square"
+			tasks: [{
+				id: "47B43BAD0AA3B791"
+				item: {
+					Count: 1
+					id: "kubejs:lv_arc_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 0.95f
+							DynamoPower: 0.5f
+							Type: "Dynamo"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"08F1DEFEB060C74C"
+				"7AAF2D8BC72919DB"
+			]
+			id: "238AD90B9828A7B0"
+			shape: "square"
+			tasks: [{
+				id: "1784B159D603DC45"
+				item: {
+					Count: 1
+					id: "kubejs:mv_arc_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 0.9f
+							DynamoPower: 0.75f
+							Type: "Dynamo"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"238AD90B9828A7B0"
+				"4F2692F874F68EF8"
+			]
+			id: "612BB2D1A5C10C7B"
+			shape: "square"
+			tasks: [{
+				id: "2B79348BC44F6C9C"
+				item: {
+					Count: 1
+					id: "kubejs:hv_arc_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 0.8f
+							DynamoPower: 1.0f
+							Type: "Dynamo"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"612BB2D1A5C10C7B"
+				"121EFB24BE239D59"
+			]
+			id: "7F229469E1A4C2EF"
+			shape: "square"
+			tasks: [{
+				id: "6B0FEFA3DD061DBB"
+				item: {
+					Count: 1
+					id: "kubejs:ev_arc_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 0.75f
+							DynamoPower: 2.0f
+							Type: "Dynamo"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"614071EB90CB89F5"
+				"1B32FFCDA1C87B90"
+			]
+			id: "7B16D5BEC4CDB611"
+			shape: "square"
+			tasks: [{
+				id: "1693CBDB66379472"
+				item: {
+					Count: 1
+					id: "kubejs:lv_mci_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 1.1f
+							Type: "Dynamo"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"7B16D5BEC4CDB611"
+				"7AAF2D8BC72919DB"
+			]
+			id: "1B43A54DA21C5F87"
+			shape: "square"
+			tasks: [{
+				id: "2DDD24ABA6AD377A"
+				item: {
+					Count: 1
+					id: "kubejs:mv_mci_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 1.25f
+							Type: "Dynamo"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"1B43A54DA21C5F87"
+				"4F2692F874F68EF8"
+			]
+			id: "206E8AD2E23335B9"
+			shape: "square"
+			tasks: [{
+				id: "1465BABECD269969"
+				item: {
+					Count: 1
+					id: "kubejs:hv_mci_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 1.5f
+							Type: "Dynamo"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"206E8AD2E23335B9"
+				"121EFB24BE239D59"
+			]
+			id: "0C6AB44DAB2C8C91"
+			shape: "square"
+			tasks: [{
+				id: "0DA081A760A80400"
+				item: {
+					Count: 1
+					id: "kubejs:ev_mci_kit"
+					tag: {
+						AugmentData: {
+							DynamoEnergy: 2.0f
+							Type: "Dynamo"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"568B71C405BD66DF"
+				"2490AD30E2772475"
+			]
+			id: "38B3A7FC309E12E2"
+			rewards: [{
+				id: "3A1BB8F69976E897"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0233177A0F6796D8"
+				item: {
+					Count: 1
+					id: "thermal:energy_cell"
+					tag: {
+						BlockEntityTag: {
+							Energy: 0
+							EnergyMax: 1000000
+							EnergyRecv: 1000
+							EnergySend: 1000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"38B3A7FC309E12E2"
+				"1B32FFCDA1C87B90"
+			]
+			id: "61E90638F79C5867"
+			shape: "square"
+			tasks: [{
+				id: "41968F3C354DAD17"
+				item: {
+					Count: 1
+					id: "kubejs:ulv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 4.0f
+							RFXfer: 4.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"38B3A7FC309E12E2"
+				"1B32FFCDA1C87B90"
+			]
+			id: "78D71074F1F5968D"
+			shape: "square"
+			tasks: [{
+				id: "563B24DA069D5083"
+				item: {
+					Count: 1
+					id: "kubejs:ulv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 6.0f
+							RFXfer: 2.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"38B3A7FC309E12E2"
+				"1B32FFCDA1C87B90"
+			]
+			id: "30280927DB01667B"
+			shape: "square"
+			tasks: [{
+				id: "1F960D6A6D6BFA4F"
+				item: {
+					Count: 1
+					id: "kubejs:ulv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 2.0f
+							RFXfer: 6.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"5B72F7526494EAEC"
+				"51F889E1432E4DAD"
+			]
+			disable_toast: true
+			id: "7539CDA12A346BFA"
+			shape: "square"
+			tasks: [{
+				id: "08C27BACFDCAC812"
+				item: "gtceu:power_substation"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"41EAECAF8750C84A"
+				"2018D0A87008C089"
+			]
+			disable_toast: true
+			id: "30F7DF961EA75625"
+			shape: "square"
+			tasks: [{
+				id: "46849E6AF5082E81"
+				item: "gtceu:ev_lapotronic_battery"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"24A620F311F03921"
+				"2018D0A87008C089"
+			]
+			disable_toast: true
+			id: "16F4A2F1DDE5B417"
+			shape: "square"
+			tasks: [{
+				id: "1097E5EE76358A7E"
+				item: "gtceu:iv_lapotronic_battery"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4E80A9EA2FE7D1BB"
+				"2CBF80C9C2CEE2AD"
+			]
+			disable_toast: true
+			id: "45E01095749CA1A4"
+			shape: "square"
+			tasks: [{
+				id: "2859BED6566C78FC"
+				item: "gtceu:luv_lapotronic_battery"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"25E6A8C21B8EAF44"
+				"2CBF80C9C2CEE2AD"
+			]
+			disable_toast: true
+			id: "3E34ACE4E9AB1289"
+			shape: "square"
+			tasks: [{
+				id: "1E78286DE3A0AEA3"
+				item: "gtceu:zpm_lapotronic_battery"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3943C484C4A83BD3"
+				"178F411F38970DAB"
+			]
+			disable_toast: true
+			id: "56EC7CA17CF63DF9"
+			shape: "square"
+			tasks: [{
+				id: "780FBFD8ACD6722A"
+				item: "gtceu:uv_lapotronic_battery"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"53A9F3758C218CDC"
+				"5D107FD21879F54B"
+			]
+			icon: "gtceu:active_transformer"
+			id: "2FCCE10E5C3E858D"
+			tasks: [
+				{
+					id: "5426A745F5BAA6DA"
+					item: "gtceu:active_transformer"
+					type: "item"
+				}
+				{
+					id: "5A6A8090E4643FE3"
+					item: "gtceu:normal_laser_pipe"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1B32FFCDA1C87B90"]
+			id: "3DB836585182F614"
+			tasks: [{
+				id: "5AFD383C58F00AFC"
+				item: "kubejs:basic_energy_core"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"3DB836585182F614"
+				"1B32FFCDA1C87B90"
+			]
+			id: "120C7AB980EAE90D"
+			tasks: [{
+				id: "587F1FE713F04F02"
+				item: "kubejs:regular_energy_core"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"120C7AB980EAE90D"
+				"7AAF2D8BC72919DB"
+			]
+			id: "6E149057874AC992"
+			tasks: [{
+				id: "264FDE7BA1BFD770"
+				item: "kubejs:intermediate_energy_core"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"6E149057874AC992"
+				"4F2692F874F68EF8"
+			]
+			id: "5B70B50435FD572D"
+			tasks: [{
+				id: "60393B8F173667FF"
+				item: "kubejs:advanced_energy_core"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"5B70B50435FD572D"
+				"121EFB24BE239D59"
+			]
+			id: "6F4474291CE8042C"
+			tasks: [{
+				id: "33CB0C708F1ACCC9"
+				item: "kubejs:elite_energy_core"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6F4474291CE8042C"
+				"51F889E1432E4DAD"
+			]
+			id: "21C399BC8BE2785F"
+			tasks: [{
+				id: "6B0B411795F0AB60"
+				item: "kubejs:ultimate_energy_core"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3DB836585182F614"]
+			id: "2C72517EAF0E4F9E"
+			tasks: [{
+				id: "284C2ED5169DA23C"
+				item: "solarflux:photovoltaic_cell_1"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["120C7AB980EAE90D"]
+			id: "590C298B843E22D5"
+			tasks: [{
+				id: "7816AA5137301A94"
+				item: "solarflux:photovoltaic_cell_2"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6E149057874AC992"]
+			id: "0035C9FAB741E166"
+			tasks: [{
+				id: "08575E0E0090D598"
+				item: "solarflux:photovoltaic_cell_3"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5B70B50435FD572D"]
+			id: "620F96D00BB9BFD0"
+			tasks: [{
+				id: "34A45E0E16ED6B9D"
+				item: "solarflux:photovoltaic_cell_4"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6F4474291CE8042C"]
+			id: "18F6E5836D82D628"
+			tasks: [{
+				id: "0453AB2CCB7F5AF0"
+				item: "solarflux:photovoltaic_cell_5"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["21C399BC8BE2785F"]
+			id: "72DDEB53C9BDDBFC"
+			tasks: [{
+				id: "192DCD37C60A6BF1"
+				item: "solarflux:photovoltaic_cell_6"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2C72517EAF0E4F9E"
+				"7AAF2D8BC72919DB"
+			]
+			id: "0C98CEC5242B2FB0"
+			tasks: [{
+				id: "0DDAB3E70391476D"
+				item: "solarflux:sp_1"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"590C298B843E22D5"
+				"7AAF2D8BC72919DB"
+			]
+			id: "4A2B54786509F5E4"
+			tasks: [{
+				id: "0F635DF4A11646AB"
+				item: "solarflux:sp_2"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0035C9FAB741E166"
+				"4F2692F874F68EF8"
+			]
+			id: "4DA961ED5AF34D63"
+			tasks: [{
+				id: "51EDB1B37B3DE1BE"
+				item: "solarflux:sp_3"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"620F96D00BB9BFD0"
+				"4F2692F874F68EF8"
+			]
+			id: "7E26E2727F86A2CE"
+			tasks: [{
+				id: "5C2DFEC63170686D"
+				item: "solarflux:sp_4"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"18F6E5836D82D628"
+				"5D107FD21879F54B"
+			]
+			id: "470AEDAED3B9A2AA"
+			tasks: [{
+				id: "794967CF7B95255A"
+				item: "solarflux:sp_5"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"72DDEB53C9BDDBFC"
+				"5D107FD21879F54B"
+			]
+			id: "723224D36C88ACA9"
+			tasks: [{
+				id: "1CED4230D5648B99"
+				item: "solarflux:sp_6"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"61E90638F79C5867"
+				"1B32FFCDA1C87B90"
+			]
+			id: "3D7D8957CA87BD5B"
+			shape: "square"
+			tasks: [{
+				id: "18CB8B8A02758B25"
+				item: {
+					Count: 1
+					id: "kubejs:lv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 8.0f
+							RFXfer: 8.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"3D7D8957CA87BD5B"
+				"7AAF2D8BC72919DB"
+			]
+			id: "491BF8666FA2A7EF"
+			shape: "square"
+			tasks: [{
+				id: "4F7E4E5D6BBB24E9"
+				item: {
+					Count: 1
+					id: "kubejs:mv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 12.0f
+							RFXfer: 12.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"491BF8666FA2A7EF"
+				"4F2692F874F68EF8"
+			]
+			id: "78B1A1CA6A212782"
+			shape: "square"
+			tasks: [{
+				id: "7C86DEF22DA4E81F"
+				item: {
+					Count: 1
+					id: "kubejs:hv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 16.0f
+							RFXfer: 16.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"78B1A1CA6A212782"
+				"121EFB24BE239D59"
+			]
+			id: "236E72B65F673929"
+			shape: "square"
+			tasks: [{
+				id: "6CDD7D73AA074B52"
+				item: {
+					Count: 1
+					id: "kubejs:ev_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 20.0f
+							RFXfer: 20.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"236E72B65F673929"
+				"51F889E1432E4DAD"
+			]
+			id: "5376F03AB2358ABD"
+			shape: "square"
+			tasks: [{
+				id: "4B65762707C83A48"
+				item: {
+					Count: 1
+					id: "kubejs:iv_rfc_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 24.0f
+							RFXfer: 24.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"78D71074F1F5968D"
+				"1B32FFCDA1C87B90"
+			]
+			id: "163EBD85D51E8A69"
+			shape: "square"
+			tasks: [{
+				id: "1D5B87DBD2522002"
+				item: {
+					Count: 1
+					id: "kubejs:lv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 10.0f
+							RFXfer: 4.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"163EBD85D51E8A69"
+				"7AAF2D8BC72919DB"
+			]
+			id: "60ABC9DCF52162F4"
+			shape: "square"
+			tasks: [{
+				id: "1FB19D7662EA6EDA"
+				item: {
+					Count: 1
+					id: "kubejs:mv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 14.0f
+							RFXfer: 6.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"60ABC9DCF52162F4"
+				"4F2692F874F68EF8"
+			]
+			id: "4ECCE25882A4F0CF"
+			shape: "square"
+			tasks: [{
+				id: "4F4D904DA92EBCB8"
+				item: {
+					Count: 1
+					id: "kubejs:hv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 18.0f
+							RFXfer: 8.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4ECCE25882A4F0CF"
+				"121EFB24BE239D59"
+			]
+			id: "70A1DC9EE2DE8423"
+			shape: "square"
+			tasks: [{
+				id: "141A8C5D70DBB669"
+				item: {
+					Count: 1
+					id: "kubejs:ev_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 22.0f
+							RFXfer: 10.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"70A1DC9EE2DE8423"
+				"51F889E1432E4DAD"
+			]
+			id: "2CFE7A1607973DFA"
+			shape: "square"
+			tasks: [{
+				id: "35F847D5B7184974"
+				item: {
+					Count: 1
+					id: "kubejs:iv_rfs_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 26.0f
+							RFXfer: 12.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"30280927DB01667B"
+				"1B32FFCDA1C87B90"
+			]
+			id: "55B9847036689E7A"
+			shape: "square"
+			tasks: [{
+				id: "3D6F579A8941E448"
+				item: {
+					Count: 1
+					id: "kubejs:lv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 4.0f
+							RFXfer: 10.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"55B9847036689E7A"
+				"7AAF2D8BC72919DB"
+			]
+			id: "029793B32E3D59C6"
+			shape: "square"
+			tasks: [{
+				id: "2E843D0C4862956E"
+				item: {
+					Count: 1
+					id: "kubejs:mv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 6.0f
+							RFXfer: 14.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"029793B32E3D59C6"
+				"4F2692F874F68EF8"
+			]
+			id: "687FD96782794F52"
+			shape: "square"
+			tasks: [{
+				id: "32E48EE4D3D005C3"
+				item: {
+					Count: 1
+					id: "kubejs:hv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 8.0f
+							RFXfer: 18.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"687FD96782794F52"
+				"121EFB24BE239D59"
+			]
+			id: "540B9FC923867850"
+			shape: "square"
+			tasks: [{
+				id: "0AC9A2FC340C52AF"
+				item: {
+					Count: 1
+					id: "kubejs:ev_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 10.0f
+							RFXfer: 22.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"540B9FC923867850"
+				"51F889E1432E4DAD"
+			]
+			id: "70336D85646A2506"
+			shape: "square"
+			tasks: [{
+				id: "3FC977BEDC5F39D8"
+				item: {
+					Count: 1
+					id: "kubejs:iv_rft_kit"
+					tag: {
+						AugmentData: {
+							RFMax: 12.0f
+							RFXfer: 26.0f
+							Type: "RF"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1820787D031EAB15"
+				"4F2692F874F68EF8"
+			]
+			id: "6BE70F5B5287034B"
+			tasks: [{
+				id: "26102F77CB1B39D6"
+				item: "fluxnetworks:flux_dust"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6BE70F5B5287034B"]
+			id: "69F43BE9D0935398"
+			tasks: [{
+				id: "77A1F9E62DE67358"
+				item: "fluxnetworks:flux_controller"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["69F43BE9D0935398"]
+			id: "63BC24882A9477FC"
+			tasks: [{
+				id: "660384F905E060F0"
+				item: "fluxnetworks:basic_flux_storage"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["69F43BE9D0935398"]
+			id: "0B5F19D1FB43ACF5"
+			tasks: [{
+				id: "4CEF6EE62E77E81C"
+				item: "fluxnetworks:flux_plug"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["69F43BE9D0935398"]
+			id: "5F0540C28B46F4B4"
+			tasks: [{
+				id: "11D42B54E7FC569D"
+				item: "fluxnetworks:flux_point"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["63BC24882A9477FC"]
+			id: "0E5CA4D9E70B6765"
+			tasks: [{
+				id: "793F4AC360E0901D"
+				item: "fluxnetworks:herculean_flux_storage"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0E5CA4D9E70B6765"]
+			id: "25E66BD9F536A3F2"
+			tasks: [{
+				id: "5ADC12CE566588F7"
+				item: "fluxnetworks:gargantuan_flux_storage"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1DBE1786C8F14A9E"
+				"4F2692F874F68EF8"
+			]
+			description: ["Diatrons are the best lapidary dynamo fuel. Even the lowest tier of diatrons has energy-positive prodution!"]
+			id: "5DDDD7D45FF6A06D"
+			tasks: [
+				{
+					id: "309ACF2504979D68"
+					item: "gtceu:diatron_gem"
+					type: "item"
+				}
+				{
+					id: "3EA7E938215E73EF"
+					item: "gtceu:flawless_diatron_gem"
+					type: "item"
+				}
+				{
+					id: "511F5D3DA96605F8"
+					item: "gtceu:exquisite_diatron_gem"
+					type: "item"
+				}
+			]
+			title: "Diatrons"
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"723224D36C88ACA9"
+				"21B905AA3AE6059F"
+			]
+			description: ["The last 2 Solar Panels are merely compressed variants of the previous ones, to allow for more compact solar setups"]
+			id: "2D9EFD27A3C32062"
+			tasks: [{
+				id: "4C72E978BB38D646"
+				item: "solarflux:sp_7"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2D9EFD27A3C32062"
+				"21B905AA3AE6059F"
+			]
+			id: "1F83DC0B3C633298"
+			tasks: [{
+				id: "7222356ABCE66FCC"
+				item: "solarflux:sp_8"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"50DED4576C89E893"
+				"38C4FC58A4482F83"
+			]
+			id: "3A485956C34C8840"
+			tasks: [{
+				id: "23098FEE229E0194"
+				item: {
+					Count: 1
+					id: "kubejs:mv_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 16.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"614071EB90CB89F5"
+				"574CA65B67D79A6E"
+				"1B32FFCDA1C87B90"
+			]
+			id: "50DED4576C89E893"
+			tasks: [{
+				id: "0B56EB7746082D00"
+				item: {
+					Count: 1
+					id: "kubejs:lv_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 4.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"759FF87FC22D814D"
+				"3A485956C34C8840"
+				"4F2692F874F68EF8"
+			]
+			id: "3FE17E376E30FFE4"
+			tasks: [{
+				id: "5F12A9B7928071B1"
+				item: {
+					Count: 1
+					id: "kubejs:hv_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 64.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"3FE17E376E30FFE4"
+				"60EB030A899ADE28"
+				"121EFB24BE239D59"
+			]
+			id: "40F4E7B58257EF09"
+			tasks: [{
+				id: "702CE165410C9FCC"
+				item: {
+					Count: 1
+					id: "kubejs:ev_upgrade_kit"
+					tag: {
+						AugmentData: {
+							BaseMod: 256.0f
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DDFBCDFC3F09A6B"]
+			description: [
+				"Each tier of rotor holder up on top of its inherent 10% efficiency bonus ([1-.1] or .9 or 90% fuel consumption), each tier up doubles consumption and power giving you a 2x energy output for 1.8x more fuel. It is always worth it if you can supply enough fuel."
+				""
+				"In other words it doubles parallels and give efficiency."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "gtceu:textures/gui/overlay/lightning_overlay_1.png"
+				}
+			}
+			id: "344260A6F9D36843"
+			tasks: [{
+				id: "04DD118048A34595"
+				title: "Rotor Holder OCs"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"344260A6F9D36843"
+				"4F2692F874F68EF8"
+			]
+			id: "754D5D2F2D109193"
+			tasks: [{
+				id: "42CCF2CFC2C51426"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Rotor Holders\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hv_rotor_holder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_rotor_holder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_rotor_holder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_rotor_holder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_rotor_holder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_rotor_holder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_rotor_holder"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1B32FFCDA1C87B90"]
+			id: "16E96E304325E38C"
+			tasks: [
+				{
+					id: "142DBCCE83CB4E3B"
+					item: "create_new_age:carbon_brushes"
+					type: "item"
+				}
+				{
+					id: "2673DE714F31DFB1"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["16E96E304325E38C"]
+			id: "729283139D778F0B"
+			tasks: [
+				{
+					id: "02793AFC1F296916"
+					item: "create_new_age:magnetite_block"
+					type: "item"
+				}
+				{
+					id: "65CC681637FA5BE5"
+					item: "create_new_age:redstone_magnet"
+					type: "item"
+				}
+				{
+					id: "2AB436D61745EA58"
+					item: "create_new_age:layered_magnet"
+					type: "item"
+				}
+				{
+					id: "2E4D558991995DF0"
+					item: "create_new_age:fluxuated_magnetite"
+					type: "item"
+				}
+				{
+					id: "511468E767E22800"
+					item: "create_new_age:netherite_magnet"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["16E96E304325E38C"]
+			description: ["Early power tranfer over long distances but can be limited."]
+			id: "45D1535F842964DA"
+			tasks: [
+				{
+					id: "434F407B512E6EB8"
+					item: "create_new_age:copper_wire"
+					type: "item"
+				}
+				{
+					id: "7F0B8E4989D939DA"
+					item: "create_new_age:overcharged_iron_wire"
+					type: "item"
+				}
+				{
+					id: "06039C2500668423"
+					item: "create_new_age:overcharged_golden_wire"
+					type: "item"
+				}
+				{
+					id: "1AB357BCFB18BA9C"
+					item: "create_new_age:overcharged_diamond_wire"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3159814B4C803169"
+				"178F411F38970DAB"
+			]
+			id: "3B5F2F81CF98BD04"
+			tasks: [{
+				id: "5DB36A91D1880179"
+				item: "gtceu:uhv_ultimate_battery"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7B0133D388101F68"
+				"121EFB24BE239D59"
+			]
+			id: "41EAECAF8750C84A"
+			tasks: [{
+				id: "24AF90BE6D218315"
+				item: "gtceu:lapotron_crystal"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"41EAECAF8750C84A"
+				"51F889E1432E4DAD"
+			]
+			id: "24A620F311F03921"
+			tasks: [{
+				id: "78C93CDB0047D366"
+				item: "gtceu:lapotronic_energy_orb"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"24A620F311F03921"
+				"0055CE82469F239C"
+			]
+			id: "4E80A9EA2FE7D1BB"
+			tasks: [{
+				id: "37E15C51DDDFB8D7"
+				item: "gtceu:lapotronic_energy_orb_cluster"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4E80A9EA2FE7D1BB"
+				"5D107FD21879F54B"
+			]
+			id: "25E6A8C21B8EAF44"
+			tasks: [{
+				id: "3192E7395C679C82"
+				item: "gtceu:energy_module"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"25E6A8C21B8EAF44"
+				"007D5B58CBF1BBE2"
+			]
+			id: "3943C484C4A83BD3"
+			tasks: [{
+				id: "59F30DA116A25EF1"
+				item: "gtceu:energy_cluster"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3943C484C4A83BD3"
+				"21B905AA3AE6059F"
+			]
+			id: "3159814B4C803169"
+			tasks: [{
+				id: "1035025AD44EBEE3"
+				item: "gtceu:max_battery"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5BDA17962F4630EB"
+				"7539CDA12A346BFA"
+			]
+			id: "178F411F38970DAB"
+			tasks: [{
+				id: "53D65FFA68E3620D"
+				item: "gtceu:empty_tier_iii_battery"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"138E77CDBA50A619"
+				"7539CDA12A346BFA"
+			]
+			id: "2CBF80C9C2CEE2AD"
+			tasks: [{
+				id: "14D896841610C86E"
+				item: "gtceu:empty_tier_ii_battery"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7539CDA12A346BFA"]
+			id: "2018D0A87008C089"
+			tasks: [{
+				id: "0CEF754E3143F0D5"
+				item: "gtceu:empty_tier_i_battery"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"64F15C7160BF5CBB"
+				"2490AD30E2772475"
+			]
+			hide_dependent_lines: true
+			icon: "kubejs:lv_universal_circuit"
+			id: "1B32FFCDA1C87B90"
+			tasks: [{
+				id: "1A1E0BA9021B4EBF"
+				title: "LV Power"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1B32FFCDA1C87B90"]
+			hide_dependent_lines: true
+			icon: "kubejs:mv_universal_circuit"
+			id: "7AAF2D8BC72919DB"
+			tasks: [{
+				id: "06A3B205812C9136"
+				title: "MV Power"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7AAF2D8BC72919DB"]
+			hide_dependent_lines: true
+			icon: "kubejs:hv_universal_circuit"
+			id: "4F2692F874F68EF8"
+			tasks: [{
+				id: "3CE8700342934626"
+				title: "HV Power"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4F2692F874F68EF8"]
+			hide_dependent_lines: true
+			icon: "kubejs:ev_universal_circuit"
+			id: "121EFB24BE239D59"
+			tasks: [{
+				id: "7C32E6DD5B0172DE"
+				title: "EV Power"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["121EFB24BE239D59"]
+			hide_dependent_lines: true
+			icon: "kubejs:iv_universal_circuit"
+			id: "51F889E1432E4DAD"
+			tasks: [{
+				id: "6D68F14C4CE64B1B"
+				title: "IV Power"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["51F889E1432E4DAD"]
+			hide_dependent_lines: true
+			icon: "kubejs:luv_universal_circuit"
+			id: "0055CE82469F239C"
+			tasks: [{
+				id: "2F6EF045C5556BE5"
+				title: "LuV Power"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0055CE82469F239C"]
+			hide_dependent_lines: true
+			icon: "kubejs:zpm_universal_circuit"
+			id: "5D107FD21879F54B"
+			tasks: [{
+				id: "52FC6219EA1AA5C6"
+				title: "ZPM Power"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D107FD21879F54B"]
+			hide_dependent_lines: true
+			icon: "kubejs:uv_universal_circuit"
+			id: "007D5B58CBF1BBE2"
+			tasks: [{
+				id: "48767E7FA86DF600"
+				title: "UV Power"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["007D5B58CBF1BBE2"]
+			dependency_requirement: "one_completed"
+			hide_dependent_lines: true
+			icon: "kubejs:uhv_universal_circuit"
+			id: "21B905AA3AE6059F"
+			tasks: [{
+				id: "3739C0B4B9C3525F"
+				title: "UHV Power"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["21B905AA3AE6059F"]
+			hide_dependent_lines: true
+			icon: "kubejs:uev_universal_circuit"
+			id: "3F34F4AC99C45E6F"
+			tasks: [{
+				id: "5C887C50FEA79C1D"
+				title: "UEV Power"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3F34F4AC99C45E6F"]
+			hide_dependent_lines: true
+			icon: "kubejs:uiv_universal_circuit"
+			id: "6FB365E6C91B482E"
+			tasks: [{
+				id: "34900E6146D45F27"
+				title: "UIV Power"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6FB365E6C91B482E"]
+			description: [
+				"&l&4I said not to worry about it.&r"
+				""
+				"- &oKindest Regards,"
+				"   &o&3&mThe Remover of Spines"
+				""
+				"{image:komarumod:textures/painting/komaru_god.png width:100 height:100 align:center}"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "komarumod:textures/painting/komaru_god.png"
+				}
+			}
+			id: "611614FF7006D32B"
+			tasks: [{
+				id: "3546E07C5D849D76"
+				title: "Dont Worry About It"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["149866CE30535DFC"]
+			id: "1A14C2F4F35806E2"
+			tasks: [{
+				id: "39240F41055A730F"
+				item: "systeams:steamier_bucket"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["67452BE135FAD1C3"]
+			id: "149866CE30535DFC"
+			tasks: [{
+				id: "460A78D746179657"
+				item: "systeams:steam_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1A14C2F4F35806E2"]
+			id: "7F720241BBC6C8BC"
+			tasks: [{
+				id: "5BF80125B453A6C6"
+				item: "systeams:steamiest_bucket"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7F720241BBC6C8BC"]
+			id: "53770EB175F44961"
+			tasks: [{
+				id: "683167B5EFBD2745"
+				item: "systeams:steamiester_bucket"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["53770EB175F44961"]
+			id: "3BD8E184D172519C"
+			tasks: [{
+				id: "686A5DFDFB3E8114"
+				item: "systeams:steamiestest_ball"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 1.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "gtceu:textures/gui/overlay/charger_slot_overlay.png"
+				}
+			}
+			id: "2490AD30E2772475"
+			tasks: [{
+				id: "77E920F0529FA4BD"
+				title: "Power throughout the tiers"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"7DDFBCDFC3F09A6B"
+				"121EFB24BE239D59"
+			]
+			description: ["Parallels can make it scale just a little."]
+			id: "29A144BD0E7C524F"
+			tasks: [{
+				id: "0D35589F9644A1F9"
+				item: "gtceu:nuclear_reactor"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3EFA6C0507041E4C"]
+			id: "7D22AD72E79373D0"
+			tasks: [{
+				id: "117B30BB7144C71F"
+				item: "gtceu:coke_gem"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 6.0d
+		}
+	]
+	title: "Power"
+}

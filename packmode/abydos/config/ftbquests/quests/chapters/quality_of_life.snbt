@@ -1,0 +1,386 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "quality_of_life"
+	group: "28726466D987C725"
+	icon: "create:crafting_blueprint"
+	id: "67F6F5055518AC4F"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Easier to build"]
+			icon: "effortlessbuilding:reach_upgrade1"
+			id: "3754DD882E5E6E37"
+			shape: "rsquare"
+			tasks: [{
+				id: "6BAA2573B24B0BD7"
+				title: "Effortless Building"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			description: ["Teleportation?"]
+			icon: "travelanchors:travel_anchor"
+			id: "2092BC62D0ABB53F"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "24453FAD009278C1"
+					item: "travelanchors:travel_anchor"
+					type: "item"
+				}
+				{
+					id: "46B3170CFFC70CD7"
+					item: "travelanchors:travel_staff"
+					type: "item"
+				}
+			]
+			title: "Travel Anchors and Travel Staff"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			description: ["I can store a LOT of a few items"]
+			icon: "functionalstorage:oak_1"
+			id: "5F17F1158F33BF30"
+			shape: "rsquare"
+			tasks: [{
+				id: "7CFC899DD7721354"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "Any #functionalstorage:drawer"
+				type: "item"
+			}]
+			title: "Functional Storage"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			description: ["Vrooom, vacuums up all your items"]
+			id: "2D522E868DFD339A"
+			shape: "rsquare"
+			tasks: [{
+				id: "322F15DEB6137FBD"
+				item: "itemcollectors:basic_collector"
+				type: "item"
+			}]
+			title: "Item Collectors"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			description: ["A good way to increase your personal inventory"]
+			id: "069CEEF34F469ADE"
+			shape: "rsquare"
+			tasks: [{
+				id: "1C116CCF53EC0709"
+				item: {
+					Count: 1
+					id: "simplybackpacks:commonbackpack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Backpacks"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			description: ["More Building"]
+			id: "7403111E2D8E1EDB"
+			shape: "rsquare"
+			tasks: [{
+				id: "036AD2025E2A209B"
+				item: "xtonesreworked:xtone_tile"
+				type: "item"
+			}]
+			title: "Xtones"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			description: ["More Building"]
+			icon: "architects_palette:abyssaline"
+			id: "5D369315B632436F"
+			shape: "rsquare"
+			tasks: [{
+				id: "633549F4F9B8A804"
+				title: "Architect's Palette"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			description: ["More Building"]
+			icon: "dustrial_decor:industrial_iron_block"
+			id: "064FA34CC2599EBE"
+			shape: "rsquare"
+			tasks: [{
+				id: "7A657F38412F3CBC"
+				title: "'Durstrial Decor"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			description: ["More Building"]
+			icon: "fantasyfurniture:nordic/bed_single"
+			id: "043100DC9FEC89E7"
+			shape: "rsquare"
+			tasks: [{
+				id: "7DB860B42FC87155"
+				title: "Fantasy Furniture"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			description: ["Write that down"]
+			id: "402F4F6E8631D2CB"
+			shape: "rsquare"
+			tasks: [{
+				id: "037092F02AD46BA6"
+				item: "create:clipboard"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			description: ["Transmit energy, items, and fluids across vast distances"]
+			id: "3232A7A69C2905D9"
+			shape: "rsquare"
+			tasks: [{
+				id: "792BCDE083DD56CF"
+				item: "laserio:laser_node"
+				type: "item"
+			}]
+			title: "LaserIO"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			description: ["More Building"]
+			id: "0A8700DFAE371A36"
+			shape: "rsquare"
+			tasks: [{
+				id: "0B344D1B6347ECA7"
+				item: {
+					Count: 1
+					id: "rechiseled:chisel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Rechiseled"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			description: ["Early systems to reduce micro-crafting"]
+			id: "6E45F559B61A2CC4"
+			shape: "rsquare"
+			tasks: [{
+				id: "4077A935C3E469E7"
+				item: "create:crafting_blueprint"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			description: ["I can FLY, the shop has these"]
+			id: "6DEDF965FFD12B7B"
+			shape: "rsquare"
+			tasks: [{
+				id: "06123F1FF50AD404"
+				item: {
+					Count: 1
+					id: "jetboots:jetboots"
+					tag: {
+						bml-item-xp: 0
+						energy: 0
+						jetboots-muffled: 1b
+						jetboots-upgrade-muffled: 1b
+						jetboots-upgrade-shock-absorber: 1b
+						jetboots-upgrade-thruster: 1b
+						max_energy: 2880000
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			description: ["Transmit items across vast distances"]
+			id: "48D2144395562A62"
+			shape: "rsquare"
+			tasks: [{
+				id: "457960EC0164CC29"
+				item: {
+					Count: 1
+					id: "enderchests:ender_chest"
+					tag: {
+						code: "000"
+						owner: "all"
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			description: ["Transmit fluids across vast distances"]
+			id: "5CA8EFB9CE8473FB"
+			shape: "rsquare"
+			tasks: [{
+				id: "02D516C817862D95"
+				item: {
+					Count: 1
+					id: "endertanks:ender_tank"
+					tag: {
+						code: "000"
+						owner: "all"
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "komarumod:textures/painting/komaru_god.png"
+				}
+			}
+			id: "3883FCBF2C286141"
+			rewards: [
+				{
+					count: 16
+					id: "5AF5AB053C826FC3"
+					item: "komarumod:komaru_powder"
+					type: "item"
+				}
+				{
+					id: "3716891B141ACB9B"
+					item: "komarumod:komaru_spawn_egg"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 3.0d
+			tasks: [
+				{
+					id: "4F7887A26E18BC9C"
+					item: "komarumod:komaru_powder"
+					type: "item"
+				}
+				{
+					id: "672B1393B2C370E5"
+					title: "Embrace the Komaru"
+					type: "checkmark"
+				}
+			]
+			title: "Komaru Cat"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: ["Easy to use transportation but your TPS may not be as nice"]
+			icon: "pipez:item_pipe"
+			id: "5DEBB63E9EE8A6B0"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "23FC4616C9936CE9"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					id: "31779798A2A0ADFC"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "24F35CD4D0B08500"
+					item: "pipez:energy_pipe"
+					type: "item"
+				}
+				{
+					id: "7DEB0F6A66FFD525"
+					item: "pipez:universal_pipe"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			description: ["A great way to interface with your storage prior to AE2"]
+			icon: "toms_storage:ts.wireless_terminal"
+			id: "5E87737A633D46AA"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "38CF53A4F1F9F2CC"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+				{
+					id: "15966988265F673A"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+				{
+					id: "7E683222B8A28565"
+					item: "toms_storage:ts.wireless_terminal"
+					type: "item"
+				}
+			]
+			title: "Tom's Simple Storage Mod"
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			description: ["From being a fake player to wirelessly sorting your base it can do a LOT"]
+			id: "6F7DBE1A83CBAE01"
+			shape: "square"
+			tasks: [{
+				id: "3597FE7ABFAC7F7F"
+				item: "modularrouters:modular_router"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			description: ["This tool can both help you do more and MOST notibly build multiblock for you by shift right clicking a controller with the blocks in your inventory."]
+			id: "2AB07DDCE44FA5D4"
+			tasks: [{
+				id: "4CECC98B96F59492"
+				item: "gtceu:terminal"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+	]
+	title: "Quality Of Life"
+}
