@@ -469,19 +469,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // Crown Ethers
     compLiquid('sulfur_dichloride', ['1x sulfur', '2x chlorine'], 0xcc0000, []);
 
-    compDust('thionyl_chloride', ['1x sulfur', '1x oxygen', '2x chlorine'], 0xffffcc, []);
+    compLiquid('thionyl_chloride', ['1x sulfur', '1x oxygen', '2x chlorine'], 0xffffcc, []);
 
-    compDust('sulfuryl_chloride', ['1x sulfur', '2x oxygen', '2x chlorine'], 0xffffcc, []);
+    compLiquid('sulfuryl_chloride', ['1x sulfur', '2x oxygen', '2x chlorine'], 0xffffcc, []);
 
-    compDust('triglycol_dichloride', ['6x carbon', '12x hydrogen', '2x oxygen', '2x chlorine'], 0xffffcc, []);
+    compLiquid('triglycol_dichloride', ['6x carbon', '12x hydrogen', '2x oxygen', '2x chlorine'], 0xffffcc, []);
 
-    compDust('ethylene_glycol', ['2x carbon', '6x hydrogen', '2x oxygen'], 0xf2f2f2, []);
+    compLiquid('ethylene_glycol', ['2x carbon', '6x hydrogen', '2x oxygen'], 0xf2f2f2, []);
 
-    compDust('diethylene_glycol', ['4x carbon', '10x hydrogen', '3x oxygen'], 0xf2f2f2, []);
+    compLiquid('diethylene_glycol', ['4x carbon', '10x hydrogen', '3x oxygen'], 0xf2f2f2, []);
 
-    compDust('triethylene_glycol', ['6x carbon', '14x hydrogen', '4x oxygen'], 0xf2f2f2, []);
+    compLiquid('triethylene_glycol', ['6x carbon', '14x hydrogen', '4x oxygen'], 0xf2f2f2, []);
 
-    compDust('ethylene_oxide', ['2x carbon', '4x hydrogen', '1x oxygen'], 0xd9d9d9, []);
+    compLiquid('ethylene_oxide', ['2x carbon', '4x hydrogen', '1x oxygen'], 0xd9d9d9, []);
 
     compDust('lithium_perchlorate', ['1x lithium', '1x chlorine', '4x oxygen'], 0xe6f2ff, []);
 
@@ -712,7 +712,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         // Magmas
         compLiquidTemp('highly_unstable_nether_magma', 9001, ['1x mystery'], 0xFFA025, [no_decomp]);
 
-        compLiquidTemp('magmatic', 14600, ['1x mystery','1x iron','1x mystery'], 0xFFD39A, [no_decomp]);
+        event.create('magmatic')
+            .components('1x mystery','1x iron','1x mystery')
+            .liquid(new GTFluidBuilder().temperature(14600))
+            .plasma()
+            .color(0xFFD39A)
+            .flags(no_decomp);
 
         compLiquidTemp('debris_rich_nether_magma', 7600, ['1x mystery'], 0x6C3628, [no_decomp]);
  
@@ -1070,21 +1075,21 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid('oxygenous_mineral_mixture', ['1x mystery'], 0x359696, [no_decomp]);
     
     //molten ores
-    compLiquidTemp('ore_mixture', 1273, ['1x mystery'], 0x575050, [no_decomp]);
+    compLiquidTemp('molten_ore_mixture', 1273, ['1x mystery'], 0x575050, [no_decomp]);
     
-    compLiquidTemp('bauxite_ore', 1160, ['1x bauxite'], 0xB5B69A, [no_decomp]);
+    compLiquidTemp('molten_bauxite_ore', 1160, ['1x bauxite'], 0xB5B69A, [no_decomp]);
     
-    compLiquidTemp('pitchblende_ore', 1160, ['1x pitchblende'], 0xAFC585, [no_decomp]);
+    compLiquidTemp('molten_pitchblende_ore', 1160, ['1x pitchblende'], 0xAFC585, [no_decomp]);
     
-    compLiquidTemp('molybdenite_ore', 1160, ['1x molybdenite'], 0xC1D0A4, [no_decomp]);
+    compLiquidTemp('molten_molybdenite_ore', 1160, ['1x molybdenite'], 0xC1D0A4, [no_decomp]);
     
-    compLiquidTemp('ilmenite_ore', 1160, ['1x ilmenite'], 0xCBA88F, [no_decomp]);
+    compLiquidTemp('molten_ilmenite_ore', 1160, ['1x ilmenite'], 0xCBA88F, [no_decomp]);
     
-    compLiquidTemp('tungstate_ore', 1160, ['1x tungstate'], 0x9CACB1, [no_decomp]);
+    compLiquidTemp('molten_tungstate_ore', 1160, ['1x tungstate'], 0x9CACB1, [no_decomp]);
     
-    compLiquidTemp('bastnasite_ore', 1160, ['1x bastnasite'],0x988E84, [no_decomp]);
+    compLiquidTemp('molten_bastnasite_ore', 1160, ['1x bastnasite'],0x988E84, [no_decomp]);
     
-    compLiquidTemp('cooperite_ore', 1160, ['1x cooperite'], 0xA4A38B, [no_decomp]);
+    compLiquidTemp('molten_cooperite_ore', 1160, ['1x cooperite'], 0xA4A38B, [no_decomp]);
 
     elemGem('purified_naquadah', 0x000807, [], [no_decomp]);
 
