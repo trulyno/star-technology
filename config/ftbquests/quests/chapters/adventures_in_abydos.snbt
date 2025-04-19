@@ -1042,7 +1042,11 @@
 				"29A86F882D68239F"
 				"78117340F3D4549A"
 			]
-			description: ["And here we go again, more Ring Blocks"]
+			description: [
+				"And here we go again, more Ring Blocks"
+				""
+				"Though this time, much stronger"
+			]
 			id: "5DADD2204991B4D5"
 			rewards: [{
 				id: "0C6EE8224B97BBA5"
@@ -1901,6 +1905,13 @@
 				"14479FB9FCF478D6"
 				"43DAD4B63603BFC3"
 			]
+			description: [
+				"A shard of the &5&l&o&mAbyss&r"
+				""
+				"Forged from echos of a void and altered stars"
+				""
+				"It must be at the heart of something strong"
+			]
 			id: "63AD0F905F2A262B"
 			shape: "gear"
 			size: 1.5d
@@ -1916,6 +1927,13 @@
 			dependencies: [
 				"29DAE5F27A1D4115"
 				"43DAD4B63603BFC3"
+			]
+			description: [
+				"A shard of the &4&l&o&mInferno&r"
+				""
+				"Forged from blinding flames and altered stars"
+				""
+				"It must be at the heart of something strong"
 			]
 			id: "5BA6FB8F852C2629"
 			shape: "gear"
@@ -1933,6 +1951,7 @@
 				"07AD6651D0B40E22"
 				"43DAD4B63603BFC3"
 			]
+			description: ["Used to contain powers just within comprehention."]
 			id: "4A0AD203617FEF0E"
 			tasks: [{
 				id: "510926669DC47CEC"
@@ -1944,6 +1963,11 @@
 		}
 		{
 			dependencies: ["509F0DE97411C0CD"]
+			description: [
+				"A refined Stargate Rod, infused with the power of the &5&o&lAbyss&r. Refined over and over."
+				""
+				"Alone it is able to rip tears in the fabric of the endless void."
+			]
 			hide_dependent_lines: true
 			id: "29A86F882D68239F"
 			tasks: [{
@@ -1956,6 +1980,11 @@
 		}
 		{
 			dependencies: ["5829828FB6290587"]
+			description: [
+				"A refined Stargate Rod, infused with the power of the &4&o&lInferno&r. Refined over and over."
+				""
+				"Alone it holds enough power to burn through the fabric of space"
+			]
 			hide_dependent_lines: true
 			id: "78117340F3D4549A"
 			tasks: [{
@@ -1968,6 +1997,7 @@
 		}
 		{
 			dependencies: ["63AD0F905F2A262B"]
+			description: ["A Stargate Rod infused with the power of the &5&oAbyss&r, though not yet refined"]
 			id: "509F0DE97411C0CD"
 			tasks: [{
 				id: "4B87905BEBE00F09"
@@ -1979,6 +2009,7 @@
 		}
 		{
 			dependencies: ["5BA6FB8F852C2629"]
+			description: ["A Stargate Rod infused with the power of the &4&oInferno&r, though not yet refined"]
 			id: "5829828FB6290587"
 			tasks: [{
 				id: "4543736298C247BE"
