@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
-
+    const id = global.id;
+    
     const dust1 = 'mysticalagriculture:inferium_essence';
     const dust2 = 'mysticalagriculture:prudentium_essence';
     const dust3 = 'mysticalagriculture:tertium_essence';
@@ -9,7 +10,7 @@ ServerEvents.recipes(event => {
     const dust7 = 'mysticalagradditions:insanium_essence';
 
     // essence recipes (SUBJECT OF CHANGE)
-    event.recipes.gtceu.mixer('inferium_essence')
+    event.recipes.gtceu.mixer(id('inferium_essence'))
         .itemInputs('gtceu:phosphorus_dust', 'gtceu:beryllium_dust')
         .inputFluids('gtceu:glowstone 144')
         .itemOutputs(dust1)
@@ -62,7 +63,7 @@ ServerEvents.recipes(event => {
         {essence: 'cerium', inputs: ['33x mysticalagriculture:topaz_essence', '48x mysticalagriculture:coal_essence', '59x mysticalagriculture:earth_essence'], energy: 6400, circuit: 31},
         {essence: 'barium', inputs: ['59x mysticalagriculture:stone_essence', '64x mysticalagriculture:sulfur_essence', '59x mysticalagriculture:nether_quartz_essence'], energy: 6400, circuit: 32}
     ].forEach(essence=> {
-        event.recipes.gtceu.mixer(`${essence.essence}_essence_mix`)
+        event.recipes.gtceu.mixer(id(`${essence.essence}_essence_mix`))
             .itemInputs(essence.inputs)
             .itemOutputs(`mysticalagriculture:${essence.essence}_essence`)
             .duration(200)
@@ -80,7 +81,7 @@ ServerEvents.recipes(event => {
         {essence: 'tungsten', base: 'barium', odds: 4000, energy: 16000},
         {essence: 'naquadah', base: 'tungsten', odds: 950, energy: 100000}
     ].forEach(essence=> {
-        event.recipes.gtceu.extractor(`${essence.essence}_essence_extraction`)
+        event.recipes.gtceu.extractor(id(`${essence.essence}_essence_extraction`))
             .itemInputs(`mysticalagriculture:${essence.base}_essence`)
             .chancedOutput(`mysticalagriculture:${essence.essence}_essence`, essence.odds, 0)
             .duration(200)
@@ -97,7 +98,7 @@ ServerEvents.recipes(event => {
         'molybdenum', 'tantalum', 'manganese', 'platinum', 'titanium', 'caesium', 'blaze', 'blizz', 'blitz',
         'basalz', 'cerium', 'chalcopyrite', 'niobium', 'tungsten', 'barium', 'naquadah'
     ].forEach(element=> {
-        event.recipes.gtceu.compressor(`${element}_seeds_recipe`)
+        event.recipes.gtceu.compressor(id(`${element}_seeds_recipe`))
             .itemInputs(`16x mysticalagriculture:${element}_essence`)
             .itemOutputs(`mysticalagriculture:${element}_seeds`)
             .duration(800)
@@ -105,7 +106,7 @@ ServerEvents.recipes(event => {
     });
 
     // Centrifuging recipes
-    event.recipes.gtceu.centrifuge('elements_from_essence')
+    event.recipes.gtceu.centrifuge(id('elements_from_essence'))
         .itemInputs(dust1)
         .chancedOutput('mysticalagriculture:air_essence', 2500, 0)
         .chancedOutput('mysticalagriculture:earth_essence', 2500, 0)
@@ -114,7 +115,7 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(80);
 
-    event.recipes.gtceu.centrifuge('life_essence_centrifuging_0')
+    event.recipes.gtceu.centrifuge(id('life_essence_centrifuging_0'))
         .itemInputs('6x mysticalagriculture:life_essence')
         .chancedOutput('mysticalagriculture:enderman_essence', 1500, 500)
         .chancedOutput('mysticalagriculture:slime_essence', 4500, 500)
@@ -123,7 +124,7 @@ ServerEvents.recipes(event => {
         .EUt(400)
         .circuit(0);
 
-    event.recipes.gtceu.centrifuge('life_essence_centrifuging_1')
+    event.recipes.gtceu.centrifuge(id('life_essence_centrifuging_1'))
         .itemInputs('32x mysticalagriculture:life_essence')
         .chancedOutput('mysticalagriculture:blaze_essence', 6500, 500)
         .chancedOutput('mysticalagriculture:blitz_essence', 1500, 500)
@@ -156,7 +157,7 @@ ServerEvents.recipes(event => {
             H: `gtceu:${tier.voltage}_machine_hull`,
             M: `gtceu:${tier.voltage}_electric_pump`,
             C: `gtceu:${tier.cable}_single_cable`
-        });
+        }).id(`start:shaped/${tier.voltage}_mystical_greenhouse`);
     });
 
     [
@@ -181,7 +182,7 @@ ServerEvents.recipes(event => {
             H: `gtceu:${tier.voltage}_machine_hull`,
             P: `gtceu:${tier.voltage}_electric_pump`,
             C: `gtceu:${tier.cable}_single_cable`
-        });
+        }).id(`start:shaped/${tier.voltage}_essence_burner`);
     });
 
     event.shaped(Item.of('gtceu:essence_replicator'), [
@@ -194,7 +195,7 @@ ServerEvents.recipes(event => {
         E: 'gtceu:mv_emitter',
         H: 'gtceu:heatproof_machine_casing',
         C: 'gtceu:gold_single_cable'
-    });
+    }).id('start:shaped/essence_replicator');
 
     event.shaped(Item.of('gtceu:essence_enchancer'), [
         'SAP',
@@ -207,15 +208,15 @@ ServerEvents.recipes(event => {
         E: 'gtceu:hv_emitter',
         H: 'gtceu:clean_machine_casing',
         C: 'gtceu:aluminium_single_cable'
-    });
+    }).id('start:shaped/essence_enhancer');
 
-    event.recipes.gtceu.chemical_reactor('inferium_coal')
+    event.recipes.gtceu.chemical_reactor(id('inferium_coal'))
         .itemInputs('minecraft:coal', 'mysticalagriculture:inferium_essence')
         .itemOutputs('mysticalagradditions:inferium_coal')
         .duration(200)
         .EUt(20);
 
-    event.recipes.gtceu.large_chemical_reactor('inferium_coal')
+    event.recipes.gtceu.large_chemical_reactor(id('inferium_coal'))
         .itemInputs('minecraft:coal', 'mysticalagriculture:inferium_essence')
         .itemOutputs('mysticalagradditions:inferium_coal')
         .duration(200)
@@ -227,26 +228,26 @@ ServerEvents.recipes(event => {
         {tier: 'imperium', lower_tier: 'tertium', energy: 80},
         {tier: 'supremium', lower_tier: 'imperium', energy: 80}
     ].forEach(tier=> {
-        event.recipes.gtceu.chemical_reactor(`${tier.tier}_coal`)
+        event.recipes.gtceu.chemical_reactor(id(`${tier.tier}_coal`))
             .itemInputs(`mysticalagradditions:${tier.lower_tier}_coal`, `mysticalagriculture:${tier.tier}_essence`)
             .itemOutputs(`mysticalagradditions:${tier.tier}_coal`)
             .duration(200)
             .EUt(tier.energy);
             
-        event.recipes.gtceu.large_chemical_reactor(`${tier.tier}_coal`)
+        event.recipes.gtceu.large_chemical_reactor(id(`${tier.tier}_coal`))
             .itemInputs(`mysticalagradditions:${tier.lower_tier}_coal`, `mysticalagriculture:${tier.tier}_essence`)
             .itemOutputs(`mysticalagradditions:${tier.tier}_coal`)
             .duration(200)
             .EUt(tier.energy);
     });
 
-    event.recipes.gtceu.chemical_reactor('insanium_coal')
+    event.recipes.gtceu.chemical_reactor(id('insanium_coal'))
         .itemInputs('mysticalagradditions:supremium_coal', 'mysticalagradditions:insanium_essence')
         .itemOutputs('mysticalagradditions:insanium_coal')
         .duration(200)
         .EUt(400);
 
-    event.recipes.gtceu.large_chemical_reactor('insanium_coal')
+    event.recipes.gtceu.large_chemical_reactor(id('insanium_coal'))
         .itemInputs('mysticalagradditions:supremium_coal', 'mysticalagradditions:insanium_essence')
         .itemOutputs('mysticalagradditions:insanium_coal')
         .duration(200)

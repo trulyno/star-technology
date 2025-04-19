@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.assembly_line('exotic_gas_siphon')
+    const id = global.id;
+    
+    event.recipes.gtceu.assembly_line(id('exotic_gas_siphon'))
         .itemInputs(
             '1x gtceu:uhv_gas_collector','64x kubejs:uepic_chip','32x gtceu:filter_casing','16x gtceu:sterilizing_filter_casing', '32x gtceu:naquadah_nonuple_fluid_pipe', 
             '16x kubejs:uhv_microfluidic_flow_valve', '8x gtceu:uhv_electric_pump', '4x gtceu:uhv_fluid_regulator', '4x gtceu:pure_netherite_rotor', '8x #gtceu:circuits/uhv',
@@ -21,7 +23,7 @@ ServerEvents.recipes(event => {
             )
         .EUt(GTValues.VHA[GTValues.UEV]);
 
-    event.recipes.gtceu.exotic_gas_siphon('overworld')
+    event.recipes.gtceu.exotic_gas_siphon(id('overworld'))
         .circuit(1)
         .outputFluids('gtceu:nitrogen 140000')
         .outputFluids('gtceu:oxygen 44000')
@@ -31,7 +33,7 @@ ServerEvents.recipes(event => {
         .dimension('minecraft:overworld')
         .duration(1000).EUt(GTValues.VA[GTValues.ZPM])
 
-    event.recipes.gtceu.exotic_gas_siphon('abydos')
+    event.recipes.gtceu.exotic_gas_siphon(id('abydos'))
         .circuit(2)
         .outputFluids('gtceu:helium_3 32000')
         .outputFluids('gtceu:argon 1500')
@@ -45,7 +47,7 @@ ServerEvents.recipes(event => {
         .dimension('sgjourney:abydos')
         .duration(1000).EUt(GTValues.VA[GTValues.ZPM]);
 
-    event.recipes.gtceu.exotic_gas_siphon('nether')
+    event.recipes.gtceu.exotic_gas_siphon(id('nether'))
         .circuit(3)
         .outputFluids('gtceu:sulfur_dioxide 15000')
         .outputFluids('gtceu:helium_3 5000')
@@ -56,7 +58,7 @@ ServerEvents.recipes(event => {
         .dimension('minecraft:the_nether')
         .duration(1000).EUt(GTValues.VA[GTValues.ZPM])
 
-    event.recipes.gtceu.exotic_gas_siphon('end')
+    event.recipes.gtceu.exotic_gas_siphon(id('end'))
         .circuit(4)
         .outputFluids('gtceu:radon 1000')
         .outputFluids('gtceu:tritium 10000')

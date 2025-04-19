@@ -1,8 +1,9 @@
 ServerEvents.recipes(event => {
+    const id = global.id;
     
     //Magma Breakdown
     
-    event.recipes.gtceu.molten_destabilizing('decomp_abydos_titanite_rich_magma')
+    event.recipes.gtceu.molten_destabilizing(id('decomp_abydos_titanite_rich_magma'))
         .inputFluids('gtceu:abydos_titanite_rich_magma 80000')
         .outputFluids('gtceu:titanite 30000')
         .outputFluids('gtceu:molten_ore_mixture 15000')
@@ -14,7 +15,7 @@ ServerEvents.recipes(event => {
         .duration(2400)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
-    event.recipes.gtceu.molten_destabilizing('decomp_abydos_zapolite_rich_magma')
+    event.recipes.gtceu.molten_destabilizing(id('decomp_abydos_zapolite_rich_magma'))
         .inputFluids('gtceu:abydos_zapolite_rich_magma 80000')
         .outputFluids('gtceu:zapolite 30000')
         .outputFluids('gtceu:molten_ore_mixture 15000')
@@ -40,14 +41,14 @@ ServerEvents.recipes(event => {
     //Titanite and Zapolite done in their own lines
     
     //Iodides
-    event.recipes.gtceu.large_chemical_reactor('lautarite_decomp')
+    event.recipes.gtceu.large_chemical_reactor(id('lautarite_decomp'))
         .itemInputs('9x gtceu:lautarite_dust')
         .inputFluids('gtceu:nitric_acid 2000')
         .itemOutputs('gtceu:calcium_dust')
         .outputFluids('gtceu:hydrogen_iodide 2000','gtceu:nitrogen_dioxide 2000','gtceu:oxygen 5000')
         .duration(200)
         .EUt(GTValues.VHA[GTValues.EV]);
-    event.recipes.gtceu.large_chemical_reactor('iodargyrite_decomp')
+    event.recipes.gtceu.large_chemical_reactor(id('iodargyrite_decomp'))
         .itemInputs('2x gtceu:iodargyrite_dust')
         .inputFluids('gtceu:hydrogen 1000')
         .itemOutputs('gtceu:silver_dust')
@@ -102,24 +103,24 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.EV]);
 
     //Tellurides
-    event.recipes.gtceu.electromagnetic_separator('sylvanite_decomp')
+    event.recipes.gtceu.electromagnetic_separator(id('sylvanite_decomp'))
         .itemInputs('3x gtceu:sylvanite_dust')
         .itemOutputs('2x gtceu:tellurium_dust','gtceu:silver_dust')
         .duration(200)
         .EUt(GTValues.VHA[GTValues.EV]);
-    event.recipes.gtceu.electromagnetic_separator('calaverite_decomp')
+    event.recipes.gtceu.electromagnetic_separator(id('calaverite_decomp'))
         .itemInputs('3x gtceu:calaverite_dust')
         .itemOutputs('2x gtceu:tellurium_dust','gtceu:gold_dust')
         .duration(200)
         .EUt(GTValues.VHA[GTValues.EV]);
 
     //carbon acid fixes
-    event.recipes.gtceu.electrolyzer('carbon_acid')
+    event.recipes.gtceu.electrolyzer(id('carbon_acid'))
         .inputFluids('gtceu:carbon_acid 1000')
         .outputFluids('minecraft:water 1000','gtceu:carbon_dioxide')
         .duration(60)
         .EUt(60);
-    event.recipes.gtceu.large_chemical_reactor('carbon_acid')
+    event.recipes.gtceu.large_chemical_reactor(id('carbon_acid'))
         .itemInputs('6x gtceu:potassium_carbonate_dust')
         .inputFluids('gtceu:hydrogen 1000')
         .itemOutputs('gtceu:potassium_dust')

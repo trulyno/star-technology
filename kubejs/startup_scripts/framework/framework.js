@@ -187,5 +187,4 @@ global.machines = (func, priority) => {
     controller.add('machine', func, priority);
 }
 
-
 global.finalize = () => {controller.register()}

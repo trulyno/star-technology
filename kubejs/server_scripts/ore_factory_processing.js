@@ -1,3 +1,4 @@
+const id = global.id;
 
 /*
  * Originally, TheLarkInn added a tag system based on RPM.
@@ -112,7 +113,7 @@ const primitive_processing = (event, materialObj) => {
         { item: '2x #gtceu:coal_dusts', duration: 320, multiplier: 1, id: 'coal_dusts' },
         { item: '2x #gtceu:coal_blocks', duration: 2880, multiplier: 10, id: 'coal_blocks' },
     ].forEach(fuel => {
-        event.recipes.gtceu.primitive_ore_processing(`${materialObj.material}/${fuel.id}`)
+        event.recipes.gtceu.primitive_ore_processing(id(`${materialObj.material}/${fuel.id}`))
             .itemInputs(crushed_ore(materialObj.material, fuel.multiplier), fuel.item)
             .inputFluids(fluids.water)
             .itemOutputs(dust(materialObj.material, fuel.multiplier))
@@ -122,7 +123,7 @@ const primitive_processing = (event, materialObj) => {
             .duration(fuel.duration);
     });
     
-    event.recipes.gtceu.steam_ore_processing(`${materialObj.material}`)
+    event.recipes.gtceu.steam_ore_processing(id(`${materialObj.material}`))
             .itemInputs(crushed_ore(materialObj.material,  1))
             .inputFluids(fluids.water)
             .itemOutputs(dust(materialObj.material, 1))
@@ -139,7 +140,7 @@ const primitive_processing = (event, materialObj) => {
  * Chances are bossted.
 */
 const electric_primitive_processing = (event, materialObj) => {
-    event.recipes.gtceu.electric_ore_processing(`${materialObj.material}`)
+    event.recipes.gtceu.electric_ore_processing(id(`${materialObj.material}`))
         .itemInputs(crushed_ore(materialObj.material, 1))
         .inputFluids(fluids.water)
         .itemOutputs(dust(materialObj.material, 1))
@@ -162,7 +163,7 @@ const electric_processing = (event, materialObj, tier) => {
         'ev': GTValues.VA[GTValues.EV]
     }
     const fluid = (tier == 'lv' || tier == 'mv') ? fluids.distilled_water : fluids.sodium_persulfate;
-    event.recipes.gtceu.electric_ore_processing(`${materialObj.material}`)
+    event.recipes.gtceu.electric_ore_processing(id(`${materialObj.material}`))
         .itemInputs(crushed_ore(materialObj.material, 1))
         .inputFluids(fluid)
         .itemOutputs(dust(materialObj.material, 1))
@@ -180,7 +181,7 @@ const electric_processing = (event, materialObj, tier) => {
 * Chances are boosted.
 */
 const plant_primitive_processing = (event, materialObj) => {
-   event.recipes.gtceu.plant_ore_processing(`${materialObj.material}`)
+   event.recipes.gtceu.plant_ore_processing(id(`${materialObj.material}`))
        .itemInputs(crushed_ore(materialObj.material, 1))
        .inputFluids(fluids.water)
        .itemOutputs(dust(materialObj.material, 1))
@@ -204,7 +205,7 @@ const plant_electric_processing = (event, materialObj, tier) => {
         'ev': GTValues.VHA[GTValues.EV]
     }
     const fluid = (tier == 'lv' || tier == 'mv') ? fluids.distilled_water : fluids.sodium_persulfate;
-    event.recipes.gtceu.plant_ore_processing(`${materialObj.material}`)
+    event.recipes.gtceu.plant_ore_processing(id(`${materialObj.material}`))
         .itemInputs(crushed_ore(materialObj.material, 1))
         .inputFluids(fluid)
         .itemOutputs(dust(materialObj.material, 1))
@@ -220,7 +221,7 @@ const plant_electric_processing = (event, materialObj, tier) => {
  * Final form of 1-step ore processing.
 */
 const plant_ore_processing = (event, materialObj) => {
-    event.recipes.gtceu.plant_ore_processing(`${materialObj.material}`)
+    event.recipes.gtceu.plant_ore_processing(id(`${materialObj.material}`))
         .itemInputs(crushed_ore(materialObj.material, 1))
         .inputFluids(fluids.sodium_persulfate_5x)
         .itemOutputs(dust(materialObj.material, 1))
@@ -248,7 +249,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:brass_plate',
         B: 'gtceu:firebricks',
         F: '#forge:tools/screwdrivers'
-    });
+    }).id('start:shaped/primitive_ore_factory');
 
     event.shaped(Item.of('gtceu:steam_ore_factory'), [
         'HRS',
@@ -261,7 +262,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:invar_plate',
         B: 'gtceu:steam_machine_casing',
         F: '#forge:tools/screwdrivers'
-    });
+    }).id('start:shaped/steam_ore_factory');
 
     event.shaped(Item.of('gtceu:electric_ore_factory'), [
         'GCG', 
@@ -273,7 +274,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:steel_plate',
         L: 'gtceu:lv_machine_hull',
         W: 'gtceu:tin_single_cable'
-    });
+    }).id('start:shaped/electric_ore_factory');
 
     event.shaped(Item.of('gtceu:ore_processing_plant'), [
         'GCG',
@@ -285,7 +286,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:tungsten_carbide_plate',
         L: 'gtceu:iv_machine_hull',
         W: 'gtceu:platinum_single_cable'
-    });
+    }).id('start:shaped/ore_processing_plant');
 
     // Iterate over each tier and processable item and register the recipes
     Object.keys(oreProcessableTiers).forEach((tier) => {

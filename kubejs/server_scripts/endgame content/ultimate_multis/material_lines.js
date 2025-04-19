@@ -1,5 +1,5 @@
-
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     // Boron Nitride (Mixing Casing)
     event.recipes.gtceu.chemical_plant("boron_nitride")
@@ -9,14 +9,14 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VHA[GTValues.ZPM] * 5/6);
 
-    event.recipes.gtceu.large_chemical_reactor('boron_trioxide')
+    event.recipes.gtceu.large_chemical_reactor(id('boron_trioxide'))
         .itemInputs('2x gtceu:boron_dust')
         .inputFluids('gtceu:oxygen 3000')
         .itemOutputs('1x gtceu:boron_trioxide_dust')
         .duration(100)
         .EUt(GTValues.VHA[GTValues.IV])
 
-    event.recipes.gtceu.large_chemical_reactor('boron_nitride')
+    event.recipes.gtceu.large_chemical_reactor(id('boron_nitride'))
         .itemInputs('1x gtceu:boron_trioxide_dust')
         .inputFluids('gtceu:ammonia 2000')
         .itemOutputs('2x gtceu:boron_nitride_dust')
@@ -32,14 +32,14 @@ ServerEvents.recipes(event => {
         .duration(560)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
-    event.recipes.gtceu.large_chemical_reactor('tungsten_trioxide')
+    event.recipes.gtceu.large_chemical_reactor(id('tungsten_trioxide'))
         .itemInputs('1x gtceu:tungsten_dust')
         .inputFluids('gtceu:oxygen 3000')
         .itemOutputs('1x gtceu:tungsten_trioxide_dust')
         .duration(400)
         .EUt(GTValues.VHA[GTValues.LuV])
 
-    event.recipes.gtceu.large_chemical_reactor('thallium_tungstate')
+    event.recipes.gtceu.large_chemical_reactor(id('thallium_tungstate'))
         .itemInputs('2x gtceu:thallium_dust', '1x gtceu:tungsten_trioxide_dust')
         .inputFluids('gtceu:oxygen 1000')
         .itemOutputs('1x gtceu:thallium_tungstate_dust')

@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     [
         {stone: 'andesite', energy: 60},
@@ -14,7 +15,7 @@ ServerEvents.recipes(event => {
         {stone: 'stone', energy: 60},
         {stone: 'tuff', energy: 7}
     ].forEach(type=> {
-        event.recipes.gtceu.large_rock_crusher(type.stone)
+        event.recipes.gtceu.large_rock_crusher(id(type.stone))
             .notConsumable(`minecraft:${type.stone}`)
             .notConsumableFluid('minecraft:water 1000')
             .notConsumableFluid('minecraft:lava 1000')
@@ -27,7 +28,7 @@ ServerEvents.recipes(event => {
         {stone: 'red_granite', energy: 960},
         {stone: 'marble', energy: 240}
     ].forEach(type=> {
-        event.recipes.gtceu.large_rock_crusher(type.stone)
+        event.recipes.gtceu.large_rock_crusher(id(type.stone))
             .notConsumable(`gtceu:${type.stone}`)
             .notConsumableFluid('minecraft:water 1000')
             .notConsumableFluid('minecraft:lava 1000')

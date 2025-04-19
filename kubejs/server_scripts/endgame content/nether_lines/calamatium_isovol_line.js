@@ -1,28 +1,28 @@
-
 ServerEvents.recipes(event => {
+    const id = global.id;
 
-    event.recipes.gtceu.chemical_plant('estalt_dissolving')
+    event.recipes.gtceu.chemical_plant(id('estalt_dissolving'))
         .itemInputs('6x gtceu:estalt_dust')
         .inputFluids('gtceu:fluoroantimonic_acid 2000')
         .outputFluids('gtceu:impure_calamatium_solution 1000', 'gtceu:impure_isovol_solution 1000', 'gtceu:fluorine 4000')
         .duration(1200)
         .EUt(100000);
 
-    event.recipes.gtceu.centrifuge('impure_calamatium_solution')
+    event.recipes.gtceu.centrifuge(id('impure_calamatium_solution'))
         .inputFluids('gtceu:impure_calamatium_solution 1000')
         .itemOutputs('4x gtceu:antimony_trifluoride_dust')
         .outputFluids('gtceu:calamatium_solution 1000')
         .duration(600)
         .EUt(100000);
 
-    event.recipes.gtceu.centrifuge('calamatium_solution')
+    event.recipes.gtceu.centrifuge(id('calamatium_solution'))
         .inputFluids('gtceu:calamatium_solution 1000')
         .itemOutputs('gtceu:calamatium_fluoride_dust')
         .outputFluids('gtceu:hydrogen 2000')
         .duration(600)
         .EUt(30000);
 
-    event.recipes.gtceu.large_chemical_reactor('calamatium_fluoride')
+    event.recipes.gtceu.large_chemical_reactor(id('calamatium_fluoride'))
         .itemInputs('gtceu:calamatium_fluoride_dust')
         .inputFluids('minecraft:water 1000')
         .itemOutputs('gtceu:calamatium_dust')
@@ -31,14 +31,14 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(30000);
 
-    event.recipes.gtceu.centrifuge('impure_isovol_solution')
+    event.recipes.gtceu.centrifuge(id('impure_isovol_solution'))
         .inputFluids('gtceu:impure_isovol_solution 1000')
         .itemOutputs('4x gtceu:antimony_trifluoride_dust')
         .outputFluids('gtceu:isovol_solution 1000')
         .duration(600)
         .EUt(100000);
 
-    event.recipes.gtceu.centrifuge('isovol_solution')
+    event.recipes.gtceu.centrifuge(id('isovol_solution'))
         .inputFluids('gtceu:isovol_solution 1000')
         .itemOutputs('gtceu:isovol_fluoride_dust')
         .outputFluids('gtceu:hydrogen 2000')
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         .EUt(30000);
 
 
-    event.recipes.gtceu.large_chemical_reactor('isovol_fluoride')
+    event.recipes.gtceu.large_chemical_reactor(id('isovol_fluoride'))
         .itemInputs('gtceu:isovol_fluoride_dust')
         .inputFluids('minecraft:water 1000')
         .itemOutputs('gtceu:isovol_dust')
