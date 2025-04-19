@@ -10,7 +10,6 @@
 
     "block.gtceu.dimensional_finder.tooltip.0": "7Get Dimensionally Pinged",
     "block.gtceu.dimensional_finder.tooltip.1": "§7This machine can send pulses into deep space, recording the echoes on crystals, and can sometimes triangulate a region's location based on that data.",
-    "gtceu.heated_cracking_unit.tooltip": "§7You are gonna need multiple Output Busses",
 
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.0": "§a§lAkreyrium §a§lProcessing",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.1": "§7A reintegration device designed to recombine Akreyrium. By folding the distinct variants of Akreyrium through a precise stabilization matrix over a crystal, a highly refined and pure version of Akreyrium can be obtained.",
@@ -84,6 +83,7 @@
 
     "block.gtceu.rock_filtrator.tooltip.0": "§7A multiblock that can sieve through gravel and sand more precisely than a basic sieve could ever achieve, uncovering the gems hidden inside.",
     "block.gtceu.rock_filtrator.tooltip.1": "Can only have §bone§r Energy Hatch",
+    "block.gtceu.rock_filtrator.tooltip.2": "§7You are gonna need multiple Output Busses",
 
     "block.gtceu.rock_sifter.tooltip.0": "§7A more powerful version of the Rock Filtrator, that can sieve materials at an astonishing speed.",
     "block.gtceu.rock_sifter.tooltip.1": "Can use §3Parallel§r hatches",
@@ -102,6 +102,7 @@
 
     "block.gtceu.void_extractor.tooltip.0": "§7A machine that uses the ever present abyss under your feet to extract resources. Where they come from is unknown, but there is no time for those questions.",
     "block.gtceu.void_extractor.tooltip.1": "Can only have §bone§r Energy Hatch",
+    "block.gtceu.void_extractor.tooltip.2": "§7You are gonna need multiple Output Busses and Hatches",
     
     "block.gtceu.essence_enchancer.tooltip.0": "§7A convoluted machine, that can infuse mystical essences with large amounts of electricity to trigger a change in their composition, making them more useful.",
     "block.gtceu.essence_enchancer.tooltip.1": "Has §6Perfect Overclock",
