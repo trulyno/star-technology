@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('mechanical_sieve')
@@ -13,6 +12,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('mechanical_sieve', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('mechanical_sieve')
+        .appearanceBlock(() => Block.getBlock('kubejs:wood_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('F   F', 'F   F', 'F   F', 'FFFFF', 'WWWWW', 'WWWWW', 'WWWWW')
             .aisle('     ', '     ', '     ', 'FWWWF', 'WMMMW', 'W   W', 'W   W')

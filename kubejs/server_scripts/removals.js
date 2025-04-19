@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    const id = global.id;
     const toRemoveOutput = ['thermal:machine_furnace', 'thermal:machine_sawmill',
         'thermal:machine_pulverizer', 'thermal:machine_insolator', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery',
         'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer', 'thermal:machine_crafter', 'thermal:machine_smelter',
@@ -86,4 +87,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'minecraft:netherite_scrap'});
     event.remove({ input: 'minecraft:ancient_debris'});
     event.remove({ output: 'minecraft:netherite_ingot'});
+
+    event.remove({ output: /manyideas_core:saw.*/});
+
 });

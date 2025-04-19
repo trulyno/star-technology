@@ -13,36 +13,35 @@ StartupEvents.registry('item', event => {
          
         event.create(`${tier}_computational_matrix`)
             .texture(`kubejs:item/component_part/${tier}_computational_matrix`)
-            .displayName(`${tier_proper} Computational Matrix`)
-            .tooltip('The Brains of Components');
+            .displayName(`${tier_proper} Computational Matrix`);
+            
         event.create(`${tier}_transmission_assembly`)
             .texture(`kubejs:item/component_part/${tier}_transmission_assembly`)
-            .displayName(`${tier_proper} Transimission Assembly`)
-            .tooltip('Top Tier Gear Box');
+            .displayName(`${tier_proper} Transmission Assembly`);
+            
         event.create(`${tier}_precision_drive_mechanism`)
             .texture(`kubejs:item/component_part/${tier}_precision_drive_mechanism`)
-            .displayName(`${tier_proper} Precision Drive Mechanism`)
-            .tooltip('Exact Speeds');
+            .displayName(`${tier_proper} Precision Drive Mechanism`);
+            
         event.create(`${tier}_microfluidic_flow_valve`)
             .texture(`kubejs:item/component_part/${tier}_microfluidic_flow_valve`)
-            .displayName(`${tier_proper} Micro-Fluidic Flow Valve`)
-            .tooltip('Just the Right Amount of Fluid');
+            .displayName(`${tier_proper} Micro-Fluidic Flow Valve`);
+
         event.create(`${tier}_super_magnetic_core`)
             .texture(`kubejs:item/component_part/${tier}_super_magnetic_core`)
-            .displayName(`${tier_proper} Super Magnetic Core`)
-            .tooltip('Most Attractive Thing Here');
+            .displayName(`${tier_proper} Super Magnetic Core`);
+            
         event.create(`${tier}_catalyst_core`)
             .texture(`kubejs:item/component_part/${tier}_catalyst_core`)
-            .displayName(`${tier_proper} Catalyst Core`)
-            .tooltip('Contained Mysticality');
+            .displayName(`${tier_proper} Catalyst Core`);
+            
         event.create(`${tier}_high_strength_panel`)
             .texture(`kubejs:item/component_part/${tier}_high_strength_panel`)
-            .displayName(`${tier_proper} High Strength Panel`)
-            .tooltip('The Strongest Plate');
+            .displayName(`${tier_proper} High Strength Panel`);
+            
         event.create(`${tier}_micropower_router`)
             .texture(`kubejs:item/component_part/${tier}_micropower_router`)
-            .displayName(`${tier_proper} Micro-Power Router`)
-            .tooltip('A Shocking Addition');
+            .displayName(`${tier_proper} Micro-Power Router`);
 
     });
 

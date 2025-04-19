@@ -59,7 +59,7 @@
 				title: "Item Bus"
 				type: "checkmark"
 			}]
-			title: "Distinct Buses"
+			title: "Distinct Busses"
 			x: -1.5d
 			y: -2.0d
 		}
@@ -129,7 +129,7 @@
 			id: "4A4275186719AD8D"
 			tasks: [{
 				id: "5948FBA874C4FE68"
-				title: "Lockable Fluid Buses"
+				title: "Lockable Fluid Hatches"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -241,6 +241,49 @@
 			}]
 			x: 1.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["0A6534BD104A2B08"]
+			description: [
+				"Parallels are a mechanic where a machine can run multiple of the same recipe at once which dramatically increases the rate at which you can do things. Though how they work is a little funky."
+				""
+				"Parallel Hatches work by consuming the maximum amperage of a tier and using that as a determinate for how many recipes it can run at once (given your parallel hatch is big enough)."
+				""
+				"Now a common misconception is that putting 2 4a or 2 16a hatches to get 8a and 32a respectively will do anything. It wont. All that does is give machines larger buffer, &4&lNOT&r greater ability."
+				""
+				"&oMore on the &nNext Page"
+				"{@pagebreak}"
+				""
+				"Another thing to note is that given multiple recipes are ran it takes slightly longer to run but this is worth it in the end since every 4x more parallels nets to 2x more efficeincy."
+				""
+				"An equation to calculate the max number of parallels and time increase at any tier is on the &n&oNext Page&r."
+				"{@pagebreak}"
+				""
+				"&nEquations&r"
+				""
+				"Amount of Parallels = min( ParallelCapability , ParallelHatchSize )"
+				""
+				"(1/(%amp)) * (4^(#ofOverclocks)) = ParallelCapabiliy"
+				""
+				"2^(#ofOverclocks) = Time Increase Multiplier of the Recipe"
+				""
+				"&nKey:&r"
+				""
+				"%amp = % of an amp the recipe consumes at it's tier, typically this is close to 100% or 50% but not always."
+				""
+				"#ofOverclocks = The number of voltage tiers your machine's &e&oSpeed&r is above the recipe require voltage."
+				""
+				"ParallelHatchSize = Maximum Parallels a Hatch can Perform (4,16,64...)"
+			]
+			icon: "gtceu:zpm_parallel_hatch"
+			id: "70EE9D4811A27CF2"
+			tasks: [{
+				id: "71769BC93B85A6BA"
+				title: "Parallelization"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
 		}
 	]
 	title: "Mechanics"

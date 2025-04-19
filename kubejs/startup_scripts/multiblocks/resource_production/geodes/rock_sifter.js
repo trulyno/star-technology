@@ -1,20 +1,10 @@
-
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-
-    event.create('rock_sifter')
-        .category('rock_sifter')
-        .setMaxIOSize(2, 9, 1, 0)
-        .setSound(GTSoundEntries.MACERATOR);
-
-});
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('rock_sifter', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('rock_filtrator')
         .appearanceBlock(GCYMBlocks.CASING_WATERTIGHT)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.PARALLEL_HATCH])
         .pattern(definition => FactoryBlockPattern.start()	
             .aisle('  BBB  ', '  CDC  ', '  CDC  ', '  CDC  ', '  CDC  ', '  CDC  ', '  BBB  ') 	
             .aisle(' BDDDB ', ' DEFED ', ' DEFED ', ' DEFED ', ' DEFED ', ' DEFED ', ' BDDDB ') 	

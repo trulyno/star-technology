@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('electric_ore_processing')
@@ -11,11 +10,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
-    /* Previous Electrico-Kinetic Ore Factory */
     event.create('electric_ore_factory', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('electric_ore_processing')
-        .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
+        .recipeModifier(GTRecipeModifiers.OC_PERFECT)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' AAA ', ' FFF ', ' FFF ', '  F  ', '     ', '     ', '     ')

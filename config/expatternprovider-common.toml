@@ -22,5 +22,5 @@ disableItemRender = false
 	custom_oversize_interface_multiplier = ["appbot:mana 2", "appflux:flux 4"]
 	#The max size of Assembler Matrix
 	#Range: 3 ~ 16
-	assembler_matrix_max_size = 6
+	assembler_matrix_max_size = 8
 

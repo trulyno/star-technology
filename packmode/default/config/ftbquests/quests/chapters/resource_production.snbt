@@ -11,12 +11,6 @@
 	progression_mode: "flexible"
 	quest_links: [
 		{
-			id: "07AEEE10574951B3"
-			linked_quest: "30B2688F8387048F"
-			x: 8.0d
-			y: -10.5d
-		}
-		{
 			id: "427772AB7DFDCDFA"
 			linked_quest: "26D3E2C0599B43B2"
 			x: -7.0d
@@ -27,12 +21,6 @@
 			linked_quest: "3AC92138809F3783"
 			x: -9.0d
 			y: -8.5d
-		}
-		{
-			id: "2A14D8A1EB6C98A2"
-			linked_quest: "5F80268C02FAD5F6"
-			x: -4.0d
-			y: 0.0d
 		}
 		{
 			id: "401EBC740289B8B1"
@@ -577,7 +565,7 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: ["14AB8F4BE7C1F8E3"]
 			id: "2309916BA68649D6"
 			tasks: [{
 				id: "5DF9BC6F11EF6360"
@@ -588,7 +576,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: ["14AB8F4BE7C1F8E3"]
 			id: "37B2D734AAEC98E8"
 			tasks: [{
 				id: "498B5F9A8334D0DF"
@@ -599,7 +587,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: ["14AB8F4BE7C1F8E3"]
 			id: "177CE1841A4C22CD"
 			tasks: [{
 				id: "0292D2058F8AE570"
@@ -610,7 +598,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: ["14AB8F4BE7C1F8E3"]
 			id: "6130CEC7942DB195"
 			tasks: [{
 				id: "4FDE22033574075D"
@@ -621,7 +609,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: ["14AB8F4BE7C1F8E3"]
 			id: "12E08BD81D4AFDF0"
 			tasks: [{
 				id: "2930EFCCB24C95A6"
@@ -632,7 +620,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: ["14AB8F4BE7C1F8E3"]
 			id: "3D51D9EE77B68083"
 			tasks: [{
 				id: "3EF24D86799451B3"
@@ -643,7 +631,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: ["14AB8F4BE7C1F8E3"]
 			id: "729800025EA0DE0F"
 			tasks: [{
 				id: "3FBA8702552915C9"
@@ -654,7 +642,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: ["14AB8F4BE7C1F8E3"]
 			id: "2931F83E28641A15"
 			tasks: [{
 				id: "06B16224E518CF9E"
@@ -665,7 +653,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: ["14AB8F4BE7C1F8E3"]
 			id: "440B9DAC6634B042"
 			tasks: [{
 				id: "1A11389A9EC7422D"
@@ -676,7 +664,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: ["14AB8F4BE7C1F8E3"]
 			id: "12A3AD9F42C2FB2F"
 			tasks: [{
 				id: "0F248D73F02F3497"
@@ -687,7 +675,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: ["14AB8F4BE7C1F8E3"]
 			id: "04044187B7B40420"
 			tasks: [{
 				id: "4BE56BBC61DCAE73"
@@ -698,7 +686,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: ["14AB8F4BE7C1F8E3"]
 			id: "451A482AC6EC5DAF"
 			tasks: [{
 				id: "19148CB2F0B3BE0D"
@@ -779,7 +767,7 @@
 		{
 			dependencies: [
 				"0094C2E72105E8CA"
-				"30B2688F8387048F"
+				"71456BC654A6D4A7"
 			]
 			id: "2C7212CEB25F4C1B"
 			tasks: [{
@@ -791,7 +779,7 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: ["14AB8F4BE7C1F8E3"]
 			id: "2D790A43980AAE68"
 			tasks: [{
 				id: "790CFC06CEB6E321"
@@ -802,7 +790,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["30B2688F8387048F"]
+			dependencies: ["71456BC654A6D4A7"]
 			id: "581C773B90C29BEF"
 			tasks: [{
 				id: "2EE225837C833A9D"
@@ -813,7 +801,7 @@
 			y: -12.5d
 		}
 		{
-			dependencies: ["30B2688F8387048F"]
+			dependencies: ["71456BC654A6D4A7"]
 			id: "07BC22F2A28126E1"
 			tasks: [{
 				id: "3B569981303AF885"
@@ -824,7 +812,7 @@
 			y: -12.5d
 		}
 		{
-			dependencies: ["30B2688F8387048F"]
+			dependencies: ["71456BC654A6D4A7"]
 			id: "0E35E757EBAA1FD8"
 			tasks: [{
 				id: "48B7F9D68ABE97B4"
@@ -835,7 +823,7 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["30B2688F8387048F"]
+			dependencies: ["71456BC654A6D4A7"]
 			id: "77584F14C573BBC1"
 			tasks: [{
 				id: "0F8709741CA14E72"
@@ -846,7 +834,7 @@
 			y: -12.0d
 		}
 		{
-			dependencies: ["30B2688F8387048F"]
+			dependencies: ["71456BC654A6D4A7"]
 			id: "33B0EC203D30977D"
 			tasks: [{
 				id: "0F81EE667907679A"
@@ -857,7 +845,7 @@
 			y: -12.0d
 		}
 		{
-			dependencies: ["30B2688F8387048F"]
+			dependencies: ["71456BC654A6D4A7"]
 			id: "47A7DAF6C3A3691C"
 			tasks: [{
 				id: "2902FAF2CD326A78"
@@ -868,7 +856,7 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["30B2688F8387048F"]
+			dependencies: ["71456BC654A6D4A7"]
 			icon: {
 				Count: 1
 				id: "gtceu:rare_ore_residue_bucket"
@@ -1595,6 +1583,10 @@
 				"With an &5EV&r Mixer you can recycle those extra ores for some more &7Molten Ore Mixture&r, with an &9IV&r Mixer you can start looping that &8Metal Mixture&r that you get."
 				""
 				"A Large Mixer is Recommended for the Job."
+				""
+				"{ \"text\": \"Large Mixer\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"113B1C2BA5D4CB7C\" } }"
+				"or"
+				"{ \"text\": \"Large Mixing Vessel\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"66BF04FC2C167FDF\" } }"
 			]
 			icon: "gtceu:ev_mixer"
 			id: "39CF5BCF84727BB3"
@@ -2466,6 +2458,27 @@
 			}]
 			x: 4.5d
 			y: -7.0d
+		}
+		{
+			id: "71456BC654A6D4A7"
+			tasks: [{
+				id: "7C6A9E3CB25E18B6"
+				item: "gtceu:void_extractor"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5F80268C02FAD5F6"]
+			id: "14AB8F4BE7C1F8E3"
+			tasks: [{
+				id: "4DFFFB3ACEB9BEAB"
+				item: "gtceu:rock_filtrator"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
 		}
 	]
 	title: "Resource Production"

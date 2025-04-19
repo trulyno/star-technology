@@ -645,7 +645,7 @@
 			dependencies: [
 				"0F29276290B9D9D1"
 				"3DB8A5E51DB80275"
-				"43DE1BCB61604947"
+				"20BDCCFD8FFEB875"
 			]
 			icon: "gtceu:raw_growth_medium_bucket"
 			id: "7E99889B3427A842"
@@ -712,7 +712,7 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["20BDCCFD8FFEB875"]
+			dependencies: ["4F91534D92E0366C"]
 			id: "43DE1BCB61604947"
 			size: 1.0d
 			tasks: [{
@@ -721,10 +721,10 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 11.5d
+			y: 13.0d
 		}
 		{
-			dependencies: ["4F91534D92E0366C"]
+			dependencies: ["43DE1BCB61604947"]
 			id: "20BDCCFD8FFEB875"
 			size: 1.0d
 			tasks: [{
@@ -733,7 +733,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 13.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [

@@ -1042,7 +1042,11 @@
 				"29A86F882D68239F"
 				"78117340F3D4549A"
 			]
-			description: ["And here we go again, more Ring Blocks"]
+			description: [
+				"And here we go again, more Ring Blocks"
+				""
+				"Though this time, much stronger"
+			]
 			id: "5DADD2204991B4D5"
 			rewards: [{
 				id: "0C6EE8224B97BBA5"
@@ -1134,28 +1138,6 @@
 			y: -5.0d
 		}
 		{
-			can_repeat: true
-			dependencies: ["29DAE5F27A1D4115"]
-			icon: "minecraft:netherrack"
-			id: "6F28C09E9576D46C"
-			optional: true
-			rewards: [{
-				command: "/sgjourney stargateNetwork address minecraft:the_nether"
-				elevate_perms: true
-				icon: "minecraft:netherrack"
-				id: "0F2CF8BD081737FA"
-				title: "Nether Phone Number"
-				type: "command"
-			}]
-			tasks: [{
-				id: "7188EBC58C836E2D"
-				title: "Get Nether Coordinates"
-				type: "checkmark"
-			}]
-			x: 10.5d
-			y: 2.0d
-		}
-		{
 			dependencies: [
 				"21188AF95E6D5030"
 				"5FAD11260BC2F305"
@@ -1189,7 +1171,7 @@
 				item: "kubejs:nether_coordinate_crystal"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 8.5d
 			y: 4.0d
 		}
 		{
@@ -1207,29 +1189,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 0.0d
-		}
-		{
-			can_repeat: true
-			dependencies: ["14479FB9FCF478D6"]
-			icon: "minecraft:end_stone"
-			id: "46436EB33C1F5816"
-			optional: true
-			rewards: [{
-				command: "/sgjourney stargateNetwork address minecraft:the_end"
-				elevate_perms: true
-				icon: "minecraft:end_stone"
-				id: "2B29FBB9D8552049"
-				title: "End Phone Number"
-				type: "command"
-			}]
-			tasks: [{
-				id: "0FC4CEAF5AD8FAF0"
-				title: "Get End Coordinates"
-				type: "checkmark"
-			}]
-			x: 8.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1669,7 +1629,7 @@
 			dependencies: [
 				"1E47910C2F2112E1"
 				"3212A3351DAD4492"
-				"43DAD4B63603BFC3"
+				"4F3EE28B3F38FC85"
 			]
 			description: ["An array of Chevrons that can store more complex data."]
 			hide_dependency_lines: true
@@ -1845,7 +1805,7 @@
 				"7AC55BA8BDD0F3D2"
 			]
 			description: [
-				"Remember how regular &3Parallel&r hatches are complex and care about maxing out amperage and your overclocks. Ya forget all of that it's just that many more of a recipe at once, no catch."
+				"Remember how regular &3Parallel&r hatches are complex and care about maxing out amperage and your overclocks. Ya forget all of that it's just that many more of a recipe at once."
 				""
 				"(Only goes on special machines, does &4NOT&r replace your normal parallel hatch)"
 			]
@@ -1945,6 +1905,13 @@
 				"14479FB9FCF478D6"
 				"43DAD4B63603BFC3"
 			]
+			description: [
+				"A shard of the &5&l&o&mAbyss&r"
+				""
+				"Forged from echos of a void and altered stars"
+				""
+				"It must be at the heart of something strong"
+			]
 			id: "63AD0F905F2A262B"
 			shape: "gear"
 			size: 1.5d
@@ -1960,6 +1927,13 @@
 			dependencies: [
 				"29DAE5F27A1D4115"
 				"43DAD4B63603BFC3"
+			]
+			description: [
+				"A shard of the &4&l&o&mInferno&r"
+				""
+				"Forged from blinding flames and altered stars"
+				""
+				"It must be at the heart of something strong"
 			]
 			id: "5BA6FB8F852C2629"
 			shape: "gear"
@@ -1977,6 +1951,7 @@
 				"07AD6651D0B40E22"
 				"43DAD4B63603BFC3"
 			]
+			description: ["Used to contain powers just within comprehention."]
 			id: "4A0AD203617FEF0E"
 			tasks: [{
 				id: "510926669DC47CEC"
@@ -1988,6 +1963,11 @@
 		}
 		{
 			dependencies: ["509F0DE97411C0CD"]
+			description: [
+				"A refined Stargate Rod, infused with the power of the &5&o&lAbyss&r. Refined over and over."
+				""
+				"Alone it is able to rip tears in the fabric of the endless void."
+			]
 			hide_dependent_lines: true
 			id: "29A86F882D68239F"
 			tasks: [{
@@ -2000,6 +1980,11 @@
 		}
 		{
 			dependencies: ["5829828FB6290587"]
+			description: [
+				"A refined Stargate Rod, infused with the power of the &4&o&lInferno&r. Refined over and over."
+				""
+				"Alone it holds enough power to burn through the fabric of space"
+			]
 			hide_dependent_lines: true
 			id: "78117340F3D4549A"
 			tasks: [{
@@ -2012,6 +1997,7 @@
 		}
 		{
 			dependencies: ["63AD0F905F2A262B"]
+			description: ["A Stargate Rod infused with the power of the &5&oAbyss&r, though not yet refined"]
 			id: "509F0DE97411C0CD"
 			tasks: [{
 				id: "4B87905BEBE00F09"
@@ -2023,6 +2009,7 @@
 		}
 		{
 			dependencies: ["5BA6FB8F852C2629"]
+			description: ["A Stargate Rod infused with the power of the &4&oInferno&r, though not yet refined"]
 			id: "5829828FB6290587"
 			tasks: [{
 				id: "4543736298C247BE"

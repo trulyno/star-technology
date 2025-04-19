@@ -43,9 +43,10 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/netherite_reinforced_mesh');
 
     //Nether Stars
-    ['Fire', 'Ice', 'Earth', 'Lightning'].forEach(type => {
+    [{type: 'Fire', color: 'c'}, {type: 'Ice', color: 'b'}, {type: 'Earth', color: '8'}, {type: 'Lightning', color: 'e'}].forEach(shard => {
+        const { type, color } = shard;
         event.create(`${type.toLowerCase()}_infused_shard`)
-            .displayName(`${type.replace(/_/, ' ')} Infused Shard`)
+            .displayName(`§${color}${type.replace(/_/, ' ')}§r Infused Shard`)
             .texture(`kubejs:item/lines/netherstar/${type.toLowerCase()}_infused_shard`);
         });
 

@@ -1,13 +1,14 @@
 
 // ServerEvents.recipes(event => {
+//     const id = global.id;
 
-//     event.recipes.gtceu.assembler('large_sieve')
+//     event.recipes.gtceu.assembler(id('large_sieve'))
 //         .itemInputs('gtceu:iv_machine_hull', '2x #gtceu:circuits/iv', '2x gtceu:double_tungsten_steel_plate' ,'4x gtceu:pure_netherite_gear')
 //         .itemOutputs('gtceu:large_sieve')
 //         .duration(1200)
 //         .EUt(1240);
 
-//     event.recipes.gtceu.large_sieve('gravel_sieving')
+//     event.recipes.gtceu.large_sieve(id('gravel_sieving'))
 //         .itemInputs('64x minecraft:gravel')
 //         .itemOutputs('64x gtceu:crushed_tin_ore', '64x gtceu:crushed_copper_ore', '64x gtceu:crushed_iron_ore', '64x gtceu:crushed_sphalerite_ore', '64x gtceu:crushed_magnetite_ore',)
 //             // '64x gtceu:crushed_chalcopyrite_ore', '64x gtceu:crushed_gold_ore', '64x gtceu:crushed_cassiterite_ore', '64x gtceu:crushed_silver_ore',
@@ -17,7 +18,7 @@
 //         .duration(400)
 //         .EUt(6400);
 
-//     event.recipes.gtceu.large_sieve('sand_sieving')
+//     event.recipes.gtceu.large_sieve(id('sand_sieving'))
 //         .itemInputs('64x minecraft:sand')
 //         .itemOutputs('64x minecraft:diamond', '64x minecraft:emerald', '64x minecraft:amethyst_shard', '64x minecraft:quartz', '64x minecraft:lapis_lazuli',)
 //             // '64x minecraft:coal', '64x gtceu:crushed_diamond_ore', '64x gtceu:crushed_quartzite_ore', '64x gtceu:crushed_green_sapphire_ore', 
@@ -28,13 +29,13 @@
 //         .duration(400)
 //         .EUt(6400);
 
-//     event.recipes.gtceu.large_sieve('dust_sieving')
+//     event.recipes.gtceu.large_sieve(id('dust_sieving'))
 //         .itemInputs('64x exnihilosequentia:dust')
 //         .itemOutputs('64x minecraft:ender_pearl', '64x minecraft:glowstone_dust', '64x minecraft:redstone', '64x gtceu:sulfur_dust',)// '64x ae2:sky_dust', '64x minecraft:echo_shard')
 //         .duration(400)
 //         .EUt(6400);
 
-//     event.recipes.gtceu.large_sieve('blackstone_sieving')
+//     event.recipes.gtceu.large_sieve(id('blackstone_sieving'))
 //         .itemInputs('64x exnihilosequentia:crushed_blackstone')
 //         .itemOutputs('64x gtceu:crushed_stibnite_ore', '64x gtceu:crushed_galena_ore',)// '64x gtceu:crushed_pentlandite_ore', '64x gtceu:crushed_bornite_ore', 
 //             // '64x gtceu:crushed_cobaltite_ore', '64x gtceu:crushed_chromite_ore', '64x gtceu:crushed_beryllium_ore', '64x gtceu:crushed_pitchblende_ore', 

@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     //Controllers
-
     event.shaped(Item.of('gtceu:mechanical_sieve'), [
         'ESE',
         'PDP',
@@ -13,9 +13,9 @@ ServerEvents.recipes(event => {
         P: 'gtceu:brass_plate',
         B: 'gtceu:lv_electric_motor',
         M: 'gtceu:lv_machine_hull'
-    });
+    }).id('start:shaped/mechanical_sieve');
 
-    event.recipes.gtceu.assembler('large_sieve')
+    event.recipes.gtceu.assembler(id('large_sieve'))
         .itemInputs('gtceu:iv_machine_hull', '2x #gtceu:circuits/iv', '2x gtceu:double_tungsten_steel_plate' ,'4x gtceu:pure_netherite_gear')
         .itemOutputs('gtceu:large_sieve')
         .duration(1200)
@@ -34,9 +34,9 @@ ServerEvents.recipes(event => {
         W: 'gtceu:treated_wood_plate',
         F: 'gtceu:treated_wood_frame',
         H: '#forge:tools/hammers'
-    });
+    }).id('start:shaped/wood_casing');
 
-    event.recipes.gtceu.assembler('start:assembler_wood_casing')
+    event.recipes.gtceu.assembler(id('wood_casing'))
         .itemInputs('4x gtceu:brass_screw', '2x gtceu:treated_wood_plate', 'gtceu:treated_wood_frame')
         .itemOutputs('2x kubejs:wood_casing')
         .circuit(6)
@@ -51,25 +51,25 @@ ServerEvents.recipes(event => {
     ], {
         M: 'exnihilosequentia:string_mesh',
         S: 'gtceu:treated_wood_rod'
-    });
+    }).id('start:shaped/mesh_block');
 
-    event.recipes.gtceu.assembler('start:assembler_meshblock')
+    event.recipes.gtceu.assembler(id('meshblock'))
         .itemInputs('5x exnihilosequentia:string_mesh', '4x gtceu:treated_wood_rod')
         .itemOutputs('kubejs:meshblock')
         .circuit(6)
         .duration(50)
         .EUt(16)
 
-    function MechanicalSieving(input, outputs) {
+    const MechanicalSieving = (input, outputs) => {
 
-        event.recipes.gtceu.mechanical_sieve(`${input.path}_mechanical_sieve`)
+        event.recipes.gtceu.mechanical_sieve(id(`${input.path}_mechanical_sieve`))
             .itemInputs(`64x ${input}`)
             .notConsumable(`exnihilosequentia:string_mesh`)
             .itemOutputs(outputs)
             .duration(1200)
             .EUt(GTValues.VA[GTValues.LV])
             
-        event.recipes.gtceu.large_sieve(`${input.path}_mechanical_sieve`)
+        event.recipes.gtceu.large_sieve(id(`${input.path}_mechanical_sieve`))
             .itemInputs(`48x ${input}`)
             .itemOutputs(outputs)
             .duration(1200)

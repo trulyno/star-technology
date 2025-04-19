@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('molten_destabilizing')
         .category('molten_destabilizing')
-        .setMaxIOSize(0, 3, 1, 12)
+        .setMaxIOSize(0, 9, 1, 6)
         .setSound(GTSoundEntries.MINER)
         .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT, FillDirection.LEFT_TO_RIGHT); //Distillation Tower Bar (Scaled Properly as Overly more Ideal)
 });
@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('molten_destabilizer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('molten_destabilizing')
-        .recipeModifier(GTRecipeModifiers.PARALLEL_HATCH)
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle('   FFF   ','         ','         ','         ','         ','   BBB   ','         ','         ','         ','         ')

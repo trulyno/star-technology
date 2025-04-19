@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     // Large Rock Crusher Recipe Type
@@ -17,9 +16,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         event.create(`t_large_${type}`, 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType(type)
-            .tooltips('Can only have §bone§f energy hatch')
-            .tooltips('Has §6Perfect Overclock')
             .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
+            .appearanceBlock(() => Block.getBlock(`kubejs:${casing}_casing`))
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle('CCC', 'CCC', 'CCC')
                 .aisle('CCC', 'C C', 'CCC')
@@ -59,9 +57,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_rock_crusher', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_rock_crusher')
-        .tooltips('Can only have §bone§f energy hatch')
-        .tooltips('Has §6Perfect Overclock')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
+        .appearanceBlock(() => Block.getBlock('kubejs:red_steel_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('CCC', 'CCC', 'CCC')
             .aisle('CCC', 'C C', 'CCC')

@@ -10,3 +10,7 @@ ReDimensionStages.restrictWithMessage("sgjourney:cavum_tenebrae", "Content not a
 ReDimensionStages.restrictWithMessage("sgjourney:lantea", "Content not available", "three");
 // Chunkla - universal stargate
 ReDimensionStages.restrictWithMessage("sgjourney:chulak", "Content not available", "four");
+// Rima, Athos, Unitas- undecided
+ReDimensionStages.restrictWithMessage("sgjourney:rima", "Content not available", "five");
+ReDimensionStages.restrictWithMessage("sgjourney:athos", "Content not available", "five");
+ReDimensionStages.restrictWithMessage("sgjourney:unitas", "Content not available", "five");

@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('heat_chamber')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('heat_chamber', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('heat_chamber')
-        .recipeModifiers([GTRecipeModifiers.OC_PERFECT_SUBTICK])
+        .recipeModifier(GTRecipeModifiers.OC_PERFECT_SUBTICK)
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('     EEE     ', '             ', '             ', '             ', '             ', '             ','     EEE     ', '             ', '             ', '             ','     EEE     ', '             ', '             ', '             ', '             ', '             ','     EEE     ')
@@ -23,7 +22,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle(' EEEEEEEEEEE ', '    I P I    ', '    I P I    ', '    I P I    ', '    I P I    ', '    I P I    ',' EEEEEEEEEEE ', '  N  AHA  N  ', '  N  AHA  N  ', '  N  AHA  N  ',' EEEEEEEEEEE ', '    I P I    ', '    I P I    ', '    I P I    ', '    I P I    ', '    I P I    ',' EEEEEEEEEEE ')
             .aisle(' EEEEEEEEEEE ', '   I  P  I   ', '   I  P  I   ', '   I  P  I   ', '   I  P  I   ', '   I  P  I   ',' EEEEEEEEEEE ', '    A A A    ', '    A A A    ', '    A A A    ',' EEEEEEEEEEE ', '   I  P  I   ', '   I  P  I   ', '   I  P  I   ', '   I  P  I   ', '   I  P  I   ',' EEEEEEEEEEE ')
             .aisle('EEEEEEEEEEEEE', '  F   P   F  ', '  F   P   F  ', '  F   P   F  ', '  F   P   F  ', '  F   P   F  ','EEEEEEEEEEEEE', '   A  A  A   ', '   A  A  A   ', '   A  A  A   ','EEEEEEEEEEEEE', '  F   P   F  ', '  F   P   F  ', '  F   P   F  ', '  F   P   F  ', '  F   P   F  ','EEEEEEEEEEEEE')
-            .aisle('EEEEEEEEEEEEE', '  G  P P  G  ', '  GPPP PPPG  ', '  GPPP PPPG  ', '  GPPP PPPG  ', '  GPPP PPPG  ','EEEEEEEEEEEEE', '   HAAAAAH   ', '   HAAAAAH   ', '   HAAAAAH   ','EEEEEEEEEEEEE', '  GPPP PPPG  ', '  GPPP PPPG  ', '  GPPP PPPG  ', '  GPPP PPPG  ', '  GPPP PPPG  ','EEEEEEEEEEEEE')
+            .aisle('EEEEEEEEEEEEE', '  G  P P  G  ', '  GPPP PPPG  ', '  GPPP PPPG  ', '  GPPP PPPG  ', '  GPPP PPPG  ','EEEEEEEEEEEEE', '   HAAAAAH   ', '   HAAAAAH   ', '   HAAAAAH   ','EEEEEEEEEEEEE', '  GPPP PPPG  ', '  GPPP PPPG  ', '  GPPP PPPG  ', '  GPPP PPPG  ', '  GPPP PPPG  ','EEEEEEMEEEEEE')
             .aisle('EEEEEEEEEEEEE', '  F   P   F  ', '  F   P   F  ', '  F   P   F  ', '  F   P   F  ', '  F   P   F  ','EEEEEEEEEEEEE', '   A  A  A   ', '   A  A  A   ', '   A  A  A   ','EEEEEEEEEEEEE', '  F   P   F  ', '  F   P   F  ', '  F   P   F  ', '  F   P   F  ', '  F   P   F  ','EEEEEEEEEEEEE')
             .aisle(' EEEEEEEEEEE ', '   I  P  I   ', '   I  P  I   ', '   I  P  I   ', '   I  P  I   ', '   I  P  I   ',' EEEEEEEEEEE ', '    A A A    ', '    A A A    ', '    A A A    ',' EEEEEEEEEEE ', '   I  P  I   ', '   I  P  I   ', '   I  P  I   ', '   I  P  I   ', '   I  P  I   ',' EEEEEEEEEEE ')
             .aisle(' EEEEEEEEEEE ', '    I P I    ', '    I P I    ', '    I P I    ', '    I P I    ', '    I P I    ',' EEEEEEEEEEE ', '  N  AHA  N  ', '  N  AHA  N  ', '  N  AHA  N  ',' EEEEEEEEEEE ', '    I P I    ', '    I P I    ', '    I P I    ', '    I P I    ', '    I P I    ',' EEEEEEEEEEE ')
@@ -33,18 +32,22 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('H', Predicates.blocks(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING.get())
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                // .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
-            .where('A', Predicates.heatingCoils())
+            .where('A', Predicates.blocks('gtceu:tritanium_coil_block'))
             .where('N', Predicates.blocks('gtceu:neutronium_frame'))
             .where('E', Predicates.blocks('kubejs:enderium_casing'))
             .where('P', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_PIPE.get()))
             .where('F', Predicates.blocks(GTBlocks.FIREBOX_TUNGSTENSTEEL.get()))
             .where('G', Predicates.blocks(GTBlocks.CASING_EXTREME_ENGINE_INTAKE.get()))
             .where('I', Predicates.blocks(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING.get()))
+            .where('M', Predicates.blocks('gtceu:uv_muffler_hatch')
+                .or(Predicates.blocks('gtceu:uhv_muffler_hatch'))
+                .or(Predicates.blocks('gtceu:uev_muffler_hatch'))
+                .or(Predicates.blocks('gtceu:uiv_muffler_hatch'))
+                .or(Predicates.blocks('gtceu:uxv_muffler_hatch'))
+                .or(Predicates.blocks('gtceu:opv_muffler_hatch')))
             .where(' ', Predicates.any())
             .build())
         .workableCasingRenderer('gtceu:block/casings/gcym/high_temperature_smelting_casing',
             'gtceu:block/multiblock/implosion_compressor', false);
-            
 });

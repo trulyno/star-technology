@@ -1,5 +1,5 @@
-
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     const gas =['_gas','']
     const material = ['mythrolic_alloy','magmada_alloy','starium_alloy','seaborgium_palladium_enriched_estalt_flerovium_alloy']
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     });
 
     //Hellforge
-    event.recipes.gtceu.hellforge('mythrolic_alloy')
+    event.recipes.gtceu.hellforge(id('mythrolic_alloy'))
         .inputFluids('gtceu:mythril 720')
         .inputFluids('gtceu:osmium 288')
         .inputFluids('gtceu:tantalum 288')
@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
         .duration(7200)
         .EUt(GTValues.VHA[GTValues.UEV]);
 
-    event.recipes.gtceu.hellforge('magmada_alloy')
+    event.recipes.gtceu.hellforge(id('magmada_alloy'))
         .inputFluids('gtceu:adamantine 576')
         .inputFluids('gtceu:neutronium 144')
         .inputFluids('gtceu:tungsten 432')
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
         .duration(6400)
         .EUt(GTValues.VHA[GTValues.UEV]);
 
-    event.recipes.gtceu.hellforge('starium_alloy')
+    event.recipes.gtceu.hellforge(id('starium_alloy'))
         .inputFluids('gtceu:nether_star_concentrate 576')
         .inputFluids('gtceu:estalt 288')
         .inputFluids('gtceu:pure_netherite 288')
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
         .duration(5120)
         .EUt(GTValues.VHA[GTValues.UEV]);
 
-    event.recipes.gtceu.hellforge('seaborgium_palladium_enriched_estalt_flerovium_alloy')
+    event.recipes.gtceu.hellforge(id('seaborgium_palladium_enriched_estalt_flerovium_alloy'))
         .inputFluids('gtceu:seaborgium 576')
         .inputFluids('gtceu:palladium 1152')
         .inputFluids('gtceu:enriched_estalt 432')
