@@ -2154,6 +2154,14 @@
 		}
 		{
 			dependencies: ["6FB365E6C91B482E"]
+			description: [
+				"&l&4I said not to worry about it.&r"
+				""
+				"- &oKindest Regards,"
+				"   &o&3&mThe Remover of Spines"
+				""
+				"{image:komarumod:textures/painting/komaru_god.png width:100 height:100 align:center}"
+			]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"

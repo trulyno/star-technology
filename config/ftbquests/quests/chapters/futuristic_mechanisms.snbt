@@ -278,7 +278,7 @@
 		}
 		{
 			dependencies: ["689150D2A185216C"]
-			description: ["An alloy made from Enderium and Lumium."]
+			description: ["Your &dLuV&r Superconductor"]
 			id: "46D5CAA2666803D4"
 			rewards: [{
 				id: "559DE76C9E59DA34"
@@ -385,31 +385,10 @@
 		{
 			dependencies: ["53A9F3758C218CDC"]
 			description: [
-				"Parallels are a mechanic where a machine can run multiple of the same recipe at once which dramatically increases the rate at which you can do things. Though how they work is a little funky."
+				"Paralleling allows you to do more a recipea at once."
 				""
-				"Parallel Hatches work by consuming the maximum amperage of a tier and using that as a determinate for how many recipes it can run at once (given your parallel hatch is big enough)."
 				""
-				"Now a common misconception is that putting 2 4a or 2 16a hatches to get 8a and 32a respectively will do anything. It wont. All that does is give machines larger buffer, &4&lNOT&r greater ability."
-				""
-				"Another thing to note is that given multiple recipes are ran it takes slightly longer to run but this is worth it in the end since every 4x more parallels nets to 2x more efficeincy."
-				""
-				"An equation to calculate the max number of parallels and time increase at any tier is on the next page."
-				""
-				"{@pagebreak}"
-				""
-				"&nEquations&r"
-				""
-				"Amount of Parallels = min(ParallelCapability , Parallel.Hatch.Size)"
-				""
-				"(1/(%amp)) * (4^(#ofOverclocks)) = ParallelCapabiliy"
-				""
-				"2^(#ofOverclocks) = Time Increase Multiplier of the Recipe"
-				""
-				"&nKey:&r"
-				""
-				"%amp = % of an amp the recipe consumes at it's tier, typically this is close to 100% or 50% but not always."
-				""
-				"#ofOverclocks = The number of voltage tiers your machine's &e&oSpeed&r is above the recipe require voltage."
+				"{ \"text\": \"Read More About It Here\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"70EE9D4811A27CF2\" } }"
 			]
 			id: "0A6534BD104A2B08"
 			rewards: [{
@@ -467,7 +446,11 @@
 		}
 		{
 			dependencies: ["3306CAE5E57839A2"]
-			description: ["A fun chemical line to close off the first Processing Lines chapter."]
+			description: [
+				"A fun chemical line to close off the first Processing Lines chapter."
+				""
+				"{ \"text\": \"Chemical Here\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3306CAE5E57839A2\" } }"
+			]
 			id: "30F3A744CD40A14A"
 			rewards: [{
 				id: "5C35BB521BF7274D"
@@ -661,7 +644,8 @@
 				"36&3CWU&r is the maximum sustainable with a bridging component."
 				"48&3CWU&r is the maximum sustainable with Abydos technology and a bridging component."
 				""
-				"Bridging explained further in the Network Switch quest."
+				"Bridging explained further in the following Quest:"
+				"{ \"text\": \"Network Switch\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0687F0D2A9EC1AA4\" } }"
 			]
 			id: "560993E111853A54"
 			rewards: [{
@@ -1194,7 +1178,7 @@
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
-			description: ["An alloy made out of Tungsten, Shellite and Twinite, creating a durable conductor."]
+			description: ["Your &cZPM&r Superconductor"]
 			id: "7FD0034E639F3B2D"
 			rewards: [{
 				id: "6AC52989D43BF4CE"
@@ -1628,7 +1612,7 @@
 		}
 		{
 			dependencies: ["36C01453717B249D"]
-			description: ["An upgraded form of Shellite, being made denser with Tungsten and Naquadah."]
+			description: ["Your &3UV&r Superconductor"]
 			id: "3325914DB92AEF1B"
 			rewards: [{
 				id: "08EF75393226D550"
@@ -1794,6 +1778,7 @@
 		}
 		{
 			dependencies: ["5026437079530A67"]
+			description: ["Used for early research with the scanner."]
 			id: "0AFCD9322EF93D5D"
 			rewards: [{
 				id: "187F37F5B7E59C74"

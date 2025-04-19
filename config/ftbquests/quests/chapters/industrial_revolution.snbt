@@ -1475,7 +1475,8 @@
 			description: [
 				"You are gonna need a lot of these."
 				""
-				"PS: The Multi-Smelter on the next page is an AMAZING way to do these fast/in bulk."
+				"PS: The linked machine is an AMAZING way to do these fast/in bulk."
+				"{ \"text\": \"Multi Smelter\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"649596731FFA9C9A\" } }"
 			]
 			id: "16A71D038D996289"
 			rewards: [{
@@ -1538,6 +1539,9 @@
 				"You'll want 2 output busses to have enough room for the Geodes"
 				""
 				"Note: You can only have 1 energy hatch on the machine. Make sure to have enough output space: 2 &7LV&r Output Busses will work."
+				""
+				"Uses Found Here:"
+				"{ \"text\": \"Geodes\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"14AB8F4BE7C1F8E3\" } }"
 			]
 			id: "5F80268C02FAD5F6"
 			rewards: [{
@@ -1565,6 +1569,9 @@
 				"Make sure to save the liquids for later as you can get more and rarer materials."
 				""
 				"Note: This machine can only take 1 energy hatch. Additionally, make sure you have enough output space: 2 &7LV&r Output Busses, and 2 &7LV&r Output Hatches will do the trick."
+				""
+				"Use Found Here:"
+				"{ \"text\": \"Void Extraction\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"71456BC654A6D4A7\" } }"
 			]
 			icon: "gtceu:void_extractor"
 			id: "30B2688F8387048F"
@@ -1643,7 +1650,15 @@
 				"7908E8C196F82F9B"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Iron (III) Chloride or Sodium Persulfate Quest Completion"]
+			description: [
+				"Get Iron (III) Chloride or Sodium Persulfate to etch your circuits."
+				""
+				"One of the following quest needs to be completed:"
+				""
+				"{ \"text\": \"Sodium Persulfate\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7908E8C196F82F9B\" } }"
+				""
+				"{ \"text\": \"Iron (III) Chloride\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"261B946701411D9C\" } }"
+			]
 			icon: "gtceu:sodium_bisulfate_dust"
 			id: "3A20504009C70217"
 			tasks: [{
@@ -1684,11 +1699,12 @@
 				"16A71D038D996289"
 				"0A98FE21C12F1199"
 			]
+			description: ["{ \"text\": \"Applied Energistics\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"369E90E2807E6776\" } }"]
 			icon: "ae2:fluix_glass_cable"
 			id: "352E17B4D7719638"
 			tasks: [{
 				id: "724697297E01E6F0"
-				title: "Go Check out the Applied Energistic Questbook"
+				title: "Go Check out Applied Energistic"
 				type: "checkmark"
 			}]
 			x: 10.0d
@@ -1775,7 +1791,11 @@
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
-			description: ["Go look at the \"Power\" chapter of the questbook to see what other options exist for power."]
+			description: [
+				"Go look at the \"Power\" chapter of the questbook to see what other options exist for power."
+				""
+				"{ \"text\": \"This will show you power at each tier\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2490AD30E2772475\" } }"
+			]
 			icon: "gtceu:tin_quadruple_cable"
 			id: "36BE4A7635DF3A1B"
 			optional: true
@@ -1808,7 +1828,7 @@
 		}
 		{
 			dependencies: ["56BA79287C4DBE52"]
-			description: ["In &lMechanics&r Overclock is Explained"]
+			description: ["{ \"text\": \"Read About Overclocking\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"34EDF98BDC245F77\" } }"]
 			icon: "ftbquests:book"
 			id: "6EBA06E5F9B25100"
 			optional: true
@@ -1822,7 +1842,7 @@
 		}
 		{
 			dependencies: ["70875F86587758D7"]
-			description: ["In &lMechanics&r Cheaper Circuit Recipes are Explained"]
+			description: ["{ \"text\": \"Read About Cheaper Circuits\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6F7EE9A1BC718801\" } }"]
 			icon: "ftbquests:book"
 			id: "14A9381889183318"
 			optional: true

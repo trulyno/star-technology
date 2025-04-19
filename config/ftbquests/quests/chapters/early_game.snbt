@@ -300,7 +300,7 @@
 				"26D3E2C0599B43B2"
 				"2D1184752D7ACA66"
 			]
-			description: ["It is recommended to make more dirt, before using up your entire starter island on these useful resources."]
+			description: ["It is recommended to make more dirt, before using up your entire starter island on this useful resource."]
 			hide_dependent_lines: true
 			icon: "minecraft:mud"
 			id: "3AC92138809F3783"
@@ -829,7 +829,13 @@
 		}
 		{
 			dependencies: ["03ACC7D2577A2C66"]
-			description: ["Barrel transformations from Ex Nihilo have been disabled, and replaced with this beautiful machine! It can soak, compost, and transform. Be sure to choose the correct \"Active Machine Mode\", in the tab on the left of the UI."]
+			description: [
+				"Barrel transformations from Ex Nihilo have been disabled, and replaced with this beautiful machine! "
+				""
+				"It can soak, compost, and transform. "
+				""
+				"Be sure to choose the correct \"&n&o&7Active Machine Mode&r\", in the tab on the left of the UI."
+			]
 			icon: "gtceu:ulv_barrel"
 			id: "2D1184752D7ACA66"
 			rewards: [{
@@ -1732,7 +1738,10 @@
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
-			description: ["Since Blazes are out of the question, a Basic Burner is needed to heat Basins. Note that you can superheat Basic Burners with an Encased Fan at max RPM, though it will burn through fuel faster."]
+			description: [
+				"Since Blazes are out of the question, a Basic Burner is needed to heat Basins. "
+				"Note that you can &6superheat&r Basic Burners with an Encased Fan at max &3RPM&r, though it will burn through fuel faster (32x)."
+			]
 			id: "3B50E73E5A176301"
 			optional: true
 			rewards: [{
@@ -1921,7 +1930,7 @@
 			description: [
 				"Witch Water can be made in a Wooden Barrel with Mycelium Spores and Water."
 				""
-				"Make sure that your Wooden Barrel is on \"Barrel Transformation\" mode. Refer to the Barrel Transformation quest for more information."
+				"Make sure that your Wooden Barrel is on \"&n&o&7Barrel Transformation&r\" mode. Refer to the Barrel Transformation quest for more information."
 			]
 			id: "7E72B9CC8631769D"
 			rewards: [{
@@ -2056,7 +2065,11 @@
 		}
 		{
 			dependencies: ["7EE1BE4043827F35"]
-			description: ["While Tempered Glass is typically made in an Arc Furnace, it can be made in a Stone Barrel with Lava and Glass. It will be needed to make the Rock Filtrator later."]
+			description: [
+				"While Tempered Glass is typically made in an Arc Furnace, it can be made in a Stone Barrel with Lava and Glass. "
+				""
+				"It will be needed to make the Rock Filtrator which is what gates the Arc Furnace."
+			]
 			id: "6D23752791E9928A"
 			rewards: [{
 				id: "4F45102228F42D4D"
@@ -2119,7 +2132,7 @@
 		}
 		{
 			dependencies: ["0742EF8F43044102"]
-			description: ["In &lMechanics&r Ghost Ciruits are Explained"]
+			description: ["{ \"text\": \"Read About Ghost Circuits\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2A608D87158DF4CB\" } }"]
 			icon: "ftbquests:book"
 			id: "0F9486CD70580835"
 			optional: true
@@ -2133,7 +2146,7 @@
 		}
 		{
 			dependencies: ["2D1184752D7ACA66"]
-			description: ["In &lMechanics&r Machine Modes are Explained"]
+			description: ["{ \"text\": \"Read About Machine Modes\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"76CD29559C341985\" } }."]
 			icon: "ftbquests:book"
 			id: "0A1BF10244D43021"
 			optional: true
@@ -2174,14 +2187,29 @@
 				"5324A7F20CA973C6"
 				"1289465781707205"
 			]
+			description: [
+				"While not required for progression, you'll no longer have to mix and &nTHEN&r smelt. Now it'll be in 1 step."
+				""
+				"If you are using steam machines, make sure to check EMI/JEI to see what other you could make use of. They can be quite handy if you dont have &7LV&r machines yet."
+			]
 			hide_dependent_lines: true
 			id: "483B101A7F71E674"
 			optional: true
-			tasks: [{
-				id: "5528994811528206"
-				item: "gtceu:lp_steam_alloy_smelter"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5528994811528206"
+					item: "gtceu:lp_steam_alloy_smelter"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "26A01D73C3A0E223"
+					item: "gtceu:hp_steam_alloy_smelter"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Steam Alloy Smelting"
 			x: 0.5d
 			y: -4.0d
 		}
@@ -2223,6 +2251,7 @@
 				"5324A7F20CA973C6"
 				"1289465781707205"
 			]
+			description: ["Larger versions of their single block counter-parts. While consuming more steam they will do 8 of a recipe at once with no increase in time making them great for bulk."]
 			id: "6B059D530FCE7428"
 			optional: true
 			tasks: [
@@ -2243,6 +2272,11 @@
 		}
 		{
 			dependencies: ["10126B9D6EC90F59"]
+			description: [
+				"Early on you can produce steam using solid fuels like charcoal, liquid fuels like creosote, or &e&lTHE SUN&r &o(only during the day)&r. High Pressure burns faster for higher Steam/tick."
+				""
+				"High Pressure and Low Pressure Steam Machines can run most &8ULV&r and &7LV&r recipes at the cost of steam instead of power making them a nice addition to your arsenal."
+			]
 			id: "1289465781707205"
 			optional: true
 			tasks: [
@@ -2271,6 +2305,7 @@
 							]
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2308,7 +2343,7 @@
 		}
 		{
 			dependencies: ["3AF688ADC18E580C"]
-			description: ["In &lMechanics&r Superconductors are Explained"]
+			description: ["{ \"text\": \"Read About Superconductors\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"18080B4F89AD24D2\" } }"]
 			icon: "ftbquests:book"
 			id: "6C5688897B6A4C42"
 			optional: true
@@ -2322,7 +2357,11 @@
 		}
 		{
 			dependencies: ["390CB178FC2D2CCC"]
-			description: ["In &lMechanics&r Multiblock Creation and Multiblock Wallsharing are Explained"]
+			description: [
+				"{ \"text\": \"Read About Multiblock Creation\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"73D5AA58DE5B72AA\" } }"
+				""
+				"{ \"text\": \"Read About Multiblock Wallsharing\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"48374090EA89E869\" } }"
+			]
 			icon: "ftbquests:book"
 			id: "26E81A8B2EB80A6C"
 			optional: true
@@ -2336,7 +2375,7 @@
 		}
 		{
 			dependencies: ["7EE1BE4043827F35"]
-			description: ["A &oMUCH&r better composter that allows you to do thing and bulk with easier automation."]
+			description: ["A &o&lMUCH&r better composter that allows you to do thing and bulk with easier automation."]
 			id: "0FD7200A8D4F09AE"
 			rewards: [{
 				id: "02B957C52A4C18CF"

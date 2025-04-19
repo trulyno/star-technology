@@ -124,7 +124,7 @@
 				"56BA79287C4DBE52"
 				"0A03B4D352DCF148"
 			]
-			description: ["Another useful alloy made in the EBF."]
+			description: ["Your &6HV&r Superconductor"]
 			id: "3F49250E7CE2E282"
 			rewards: [{
 				id: "512E1AEBD727940D"
@@ -774,7 +774,7 @@
 		}
 		{
 			dependencies: ["1DA6B3308C263A6F"]
-			description: ["An alloy forged from Ender Pearls and Diamonds, with some Lead sprinkled throughout."]
+			description: ["Your &5EV&r Superconductor"]
 			id: "5BA3F17E1C7BE599"
 			rewards: [{
 				id: "363322517E6CC58D"
@@ -1480,7 +1480,12 @@
 				"23A6938803281145"
 				"0B9C9B50CBD06F13"
 			]
-			description: ["We recommend using Mystical Agriculture to create this once you gain access to it."]
+			description: [
+				"Can be done with some fancy mixing or Mystical Agriculture."
+				""
+				""
+				"{ \"text\": \"MA Air Production\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"38351B708EBA5528\" } }"
+			]
 			id: "2B695762FC4A7686"
 			rewards: [{
 				id: "059875F4497E4EA9"
@@ -1498,7 +1503,12 @@
 		}
 		{
 			dependencies: ["0F1D766E2E2EEEB5"]
-			description: ["We recommend using Mystical Agriculture to create this once you gain access to it."]
+			description: [
+				"Can be done with some fancy mixing or Mystical Agriculture."
+				""
+				""
+				"{ \"text\": \"MA Air Production\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"38351B708EBA5528\" } }"
+			]
 			id: "23A6938803281145"
 			rewards: [{
 				id: "11386D4E5873ED47"
@@ -1693,7 +1703,11 @@
 		}
 		{
 			dependencies: ["059FD3E475A05070"]
-			description: ["Used to store patterns for the Assembly Line."]
+			description: [
+				"Used to store patterns for the Assembly Line."
+				""
+				"{ \"text\": \"Used Here\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0094C2E72105E8CA\" } }"
+			]
 			id: "507FE905D3BB8B3D"
 			rewards: [{
 				id: "542233E8F0EBA3E3"
@@ -2026,7 +2040,7 @@
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
-			description: ["A strengthened form of Signalum."]
+			description: ["Your &9IV&r Superconductor"]
 			hide_dependency_lines: true
 			id: "1C05C80BCB4736B6"
 			rewards: [{
@@ -2301,7 +2315,7 @@
 				"5B70B63D4157594F"
 			]
 			dependency_requirement: "one_completed"
-			description: ["In &lMechanics&r Perfect Overclock is Explained"]
+			description: ["{ \"text\": \"Read About Perfect Overclock\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0C78BD4A7A0B98E4\" } }"]
 			icon: "ftbquests:book"
 			id: "775AAF108AFAF707"
 			tasks: [{
@@ -2352,7 +2366,7 @@
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
-			description: ["In &lMechanics&r Large Chemical Reactors Skips are Explained"]
+			description: ["{ \"text\": \"Read About LCR Skips\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0F4C5DF2922568B2\" } }"]
 			icon: "ftbquests:book"
 			id: "4840218DA8E61B65"
 			optional: true
@@ -2367,12 +2381,12 @@
 		{
 			dependencies: ["5B70B63D4157594F"]
 			dependency_requirement: "one_completed"
-			description: ["In &lMechanics&r Distinct Buses are Explained"]
+			description: ["{ \"text\": \"Read About Distinct Busses\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2757CDEC1D8F5CCE\" } }"]
 			icon: "ftbquests:book"
 			id: "7E74A114F4054345"
 			tasks: [{
 				id: "52333CEF18B39599"
-				title: "Go Read About Distinct Buses"
+				title: "Go Read About Distinct Busses"
 				type: "checkmark"
 			}]
 			x: -3.5d
@@ -2385,7 +2399,7 @@
 				"170C262792DA7123"
 			]
 			dependency_requirement: "one_completed"
-			description: ["In &lMechanics&r Lockable Fluid Hatches are Explained"]
+			description: ["{ \"text\": \"Go Read About Lockable Fluid Hatches\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4A4275186719AD8D\" } }"]
 			icon: "ftbquests:book"
 			id: "171BD0E155CF98CA"
 			tasks: [{
@@ -2398,7 +2412,11 @@
 		}
 		{
 			dependencies: ["7B0133D388101F68"]
-			description: ["More power storage options and batteries are shown."]
+			description: [
+				"More power storage options and batteries are shown."
+				""
+				"{ \"text\": \"More Power Storage Here\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"564046CF37ECA3FE\" } }"
+			]
 			icon: "gtceu:europium_quadruple_cable"
 			id: "0B36E111D8F13F49"
 			tasks: [{

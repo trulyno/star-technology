@@ -1167,7 +1167,7 @@
 				item: "kubejs:nether_coordinate_crystal"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 8.5d
 			y: 4.0d
 		}
 		{
@@ -1185,7 +1185,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1625,7 +1625,7 @@
 			dependencies: [
 				"1E47910C2F2112E1"
 				"3212A3351DAD4492"
-				"43DAD4B63603BFC3"
+				"4F3EE28B3F38FC85"
 			]
 			description: ["An array of Chevrons that can store more complex data."]
 			hide_dependency_lines: true
@@ -1801,7 +1801,7 @@
 				"7AC55BA8BDD0F3D2"
 			]
 			description: [
-				"Remember how regular &3Parallel&r hatches are complex and care about maxing out amperage and your overclocks. Ya forget all of that it's just that many more of a recipe at once, no catch."
+				"Remember how regular &3Parallel&r hatches are complex and care about maxing out amperage and your overclocks. Ya forget all of that it's just that many more of a recipe at once."
 				""
 				"(Only goes on special machines, does &4NOT&r replace your normal parallel hatch)"
 			]

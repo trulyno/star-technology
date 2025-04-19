@@ -277,7 +277,7 @@
 		}
 		{
 			dependencies: ["5BA69EDC3C223B2C"]
-			description: ["A machine used for when the EBF just does not cut it."]
+			description: ["This thing can get &6&oREAL HOT"]
 			id: "60ECE277341A9408"
 			rewards: [{
 				id: "23F129E3F9D9FFE1"
@@ -521,7 +521,11 @@
 		}
 		{
 			dependencies: ["678B90BF2ACE2BBA"]
-			description: ["A material said to make you hear the song of the universe."]
+			description: [
+				"A material said to make you hear the song of the universe."
+				""
+				"Your Second &3UV&r Superconductor"
+			]
 			id: "52B553FDB34B1475"
 			rewards: [{
 				id: "0A7609C4179CF5A2"
@@ -543,7 +547,11 @@
 				"52B553FDB34B1475"
 				"7FD0034E639F3B2D"
 			]
-			description: ["A reinforced form of Neutronium, capable of carrying extreme amounts of energy, and resisting the force of tears in space."]
+			description: [
+				"A reinforced form of Neutronium, capable of carrying extreme amounts of energy, and resisting the force of tears in space."
+				""
+				"Your &4UHV&r Superconductor"
+			]
 			id: "253AECE450920D99"
 			rewards: [{
 				id: "70C887ECBA6B4542"
@@ -663,7 +671,7 @@
 		}
 		{
 			dependencies: ["60ECE277341A9408"]
-			description: ["A machine used to pressure cook the Stargate Rods into their complete form."]
+			description: ["A machine used to pressure cook the materials of a stargate into their complete forms."]
 			id: "59711F987DE95924"
 			rewards: [{
 				id: "1B33E52F7FEAD5E8"
@@ -884,8 +892,11 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["2EDE996312B1C69E"]
-			description: ["Visits the sands that hide remnants of an ancient race of beings, long since gone."]
+			dependencies: [
+				"2EDE996312B1C69E"
+				"5FB0649F878A32D5"
+			]
+			description: ["Visits the sands that hide the remnants of an ancient race of beings, long since gone."]
 			icon: "minecraft:sand"
 			id: "1FB502D770A4A59B"
 			rewards: [{
@@ -897,12 +908,14 @@
 			size: 1.25d
 			tasks: [{
 				dimension: "sgjourney:abydos"
+				icon: "minecraft:suspicious_sand"
 				id: "57F00393CAEA3780"
+				title: "A New Realm Awaits"
 				type: "dimension"
 			}]
 			title: "To Abydos"
-			x: 6.0d
-			y: -10.5d
+			x: 9.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
@@ -1013,9 +1026,11 @@
 		{
 			dependencies: ["2EDE996312B1C69E"]
 			description: [
-				"Attach the Interface to any part of the gate and power it. Additionally the DHD needs to be in the general area to type in the desired coordinates."
+				"Attach the Interface to the DHD. Additionally the DHD needs to be in the general area to type in the desired coordinates and link to the Gate."
 				""
-				"&7Yes, you can terminal the helper to build it for you"
+				"&7Yes, you can terminal the helper to build it for you if you so want, but... why?&r"
+				""
+				"Once built, interact &8(R-Click)&r with the base block to see it come together."
 			]
 			id: "653AD979AE4D0581"
 			optional: true
@@ -1025,8 +1040,8 @@
 				optional_task: true
 				type: "item"
 			}]
-			title: "Stargate Help"
-			x: 8.5d
+			title: "Stargate Forming Help"
+			x: 3.5d
 			y: -8.0d
 		}
 		{
@@ -1102,6 +1117,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			tasks: [{
 				id: "32F09CC44B2A4DA7"
 				item: {
@@ -1122,6 +1138,7 @@
 			id: "481D42E3473FDCED"
 			optional: true
 			rewards: [{
+				auto: "invisible"
 				command: "/execute in minecraft:overworld run tp @s 0 -72 0"
 				elevate_perms: true
 				icon: "minecraft:grass_block"
@@ -1135,8 +1152,8 @@
 				title: "So You Got Stuck"
 				type: "checkmark"
 			}]
-			x: 8.0d
-			y: -10.0d
+			x: 0.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -1145,6 +1162,7 @@
 			]
 			description: ["A new Soldering Alloy, because the old one really doesn't cut it anymore."]
 			id: "783865A56909D3C7"
+			shape: "circle"
 			tasks: [{
 				id: "4639AA5380F2CC8F"
 				item: {
@@ -1317,11 +1335,7 @@
 		}
 		{
 			dependencies: ["2EDE996312B1C69E"]
-			description: [
-				"Right Click the bottom part of the stargate (works for any) with a mallet to reset it's power NBT data to fix the issue. Make sure to let it charge up for a bit before you go dialing."
-				""
-				"These dimension crackers &lEAT&r power when on so every 3-4 times you use them (may be more often) you'll have to do this."
-			]
+			description: ["Right Click the bottom part of the stargate (works for any) with a mallet to reset it's power NBT data to fix the issue. Make sure to let it charge up for a bit before you go dialing."]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -1330,13 +1344,38 @@
 				}
 			}
 			id: "5C7AE9D421E5F674"
+			optional: true
 			tasks: [{
 				id: "205A758A70420DB8"
 				title: "\"&cNo Power&r\" ?"
 				type: "checkmark"
 			}]
-			x: 3.5d
+			x: 2.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["66D2FB63E81E03AB"]
+			description: [
+				"The hidden knowledge is ripe to be absorbed (read JEI), though would recommend making a copy first."
+				""
+				"Without the knowledge you may never find a way home and surely can't pass through the gates..."
+			]
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "gtceu:block/overlay/machine/overlay_maintenance_cleaning_emissive"
+				}
+			}
+			id: "5FB0649F878A32D5"
+			tasks: [{
+				id: "154528EA5CC03F6C"
+				title: "&o&9Absorbing Hidden Knowledge"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -3.5d
 		}
 	]
 	title: "Making the Classic Stargate"
