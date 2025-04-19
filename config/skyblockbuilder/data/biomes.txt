@@ -74,3 +74,6 @@ sgjourney:destiny
 sgjourney:lantean_deep_ocean
 sgjourney:milky_way_forest
 sgjourney:milky_way_plains
+sgjourney:rima_cracks
+sgjourney:rima_shattered_plains
+sgjourney:unitas_desert

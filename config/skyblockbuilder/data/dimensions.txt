@@ -1,8 +1,11 @@
 minecraft:overworld
+sgjourney:cavum_tenebrae
+sgjourney:athos
+sgjourney:chulak
 sgjourney:lantea
+sgjourney:rima
 minecraft:the_end
 sgjourney:abydos
-sgjourney:chulak
 minecraft:the_nether
-sgjourney:cavum_tenebrae
+sgjourney:unitas
 ae2:spatial_storage
