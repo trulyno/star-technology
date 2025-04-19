@@ -1,5 +1,5 @@
-ServerEvents.recipes(event => {
-
+// ServerEvents.recipes(event => {
+// const id = global.id
 //     event.shaped('gtceu:ulv_barrel',[
 //         'ABA',
 //         'ACA',
