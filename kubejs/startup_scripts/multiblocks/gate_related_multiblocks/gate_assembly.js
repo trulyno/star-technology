@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('gate_assembly')
         .category('gate_assembly')

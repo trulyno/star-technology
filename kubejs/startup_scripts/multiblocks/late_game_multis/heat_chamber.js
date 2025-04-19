@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('heat_chamber')
@@ -33,7 +32,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('H', Predicates.blocks(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING.get())
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                // .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('A', Predicates.blocks('gtceu:tritanium_coil_block'))
             .where('N', Predicates.blocks('gtceu:neutronium_frame'))

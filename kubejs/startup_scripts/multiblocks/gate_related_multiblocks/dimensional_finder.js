@@ -1,6 +1,3 @@
-
-//Premise being you actually need to find the next dimensions
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('dimensional_finder')
