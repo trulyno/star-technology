@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('void_excavator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('void_excavation')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' SFS ', '  E  ', '  E  ', '  E  ', '     ', '     ', '     ', '     ', '     ', '     ', '     ', '     ')

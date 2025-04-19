@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('electric_ore_factory', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('electric_ore_processing')
-        .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
+        .recipeModifier(GTRecipeModifiers.OC_PERFECT)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' AAA ', ' FFF ', ' FFF ', '  F  ', '     ', '     ', '     ')

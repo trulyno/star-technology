@@ -86,4 +86,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'minecraft:netherite_scrap'});
     event.remove({ input: 'minecraft:ancient_debris'});
     event.remove({ output: 'minecraft:netherite_ingot'});
+
+    event.remove({ output: /manyideas_core:saw.*/});
+
 });
