@@ -2,31 +2,32 @@ ServerEvents.recipes(event => {
     const id = global.id;
 
     //Early Rubbers
-    event.custom({
-        'type': 'farmersdelight:cooking',
-        'recipe_book_tab': 'misc',
-        'ingredients': [
-          {
-            'item': 'thermal:rubber'
-          },
-          {
-            'item': 'gtceu:small_sulfur_dust'
-          }
-        ],
-        'result': {
-          'item': 'thermal:cured_rubber',
-          'count': 1,
-        },
-        'cookingtime': 200
-      });
+    //commented out for HM
+    // event.custom({
+    //     'type': 'farmersdelight:cooking',
+    //     'recipe_book_tab': 'misc',
+    //     'ingredients': [
+    //       {
+    //         'item': 'thermal:rubber'
+    //       },
+    //       {
+    //         'item': 'gtceu:small_sulfur_dust'
+    //       }
+    //     ],
+    //     'result': {
+    //       'item': 'thermal:cured_rubber',
+    //       'count': 1,
+    //     },
+    //     'cookingtime': 200
+    //   });
 
-    event.recipes.create.mixing('3x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated').id('start:create_mixing/cured_rubber');
+    // event.recipes.create.mixing('3x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated').id('start:create_mixing/cured_rubber');
 
-    event.recipes.gtceu.alloy_smelter(id('latex_rubber'))
-        .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
-        .itemOutputs('3x thermal:cured_rubber')
-        .duration(240)
-        .EUt(8);
+    // event.recipes.gtceu.alloy_smelter(id('latex_rubber'))
+    //     .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
+    //     .itemOutputs('3x thermal:cured_rubber')
+    //     .duration(240)
+    //     .EUt(8);
 
     //Controller Block
 	//commented out for HM
