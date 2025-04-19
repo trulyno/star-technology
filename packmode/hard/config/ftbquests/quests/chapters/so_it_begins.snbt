@@ -2153,7 +2153,6 @@
 		}
 		{
 			dependencies: ["2E27CCDF1CEBFE28"]
-			hide_dependent_lines: true
 			id: "29C78EFA4596B27E"
 			tasks: [{
 				id: "731A05F58400D8F2"
@@ -2714,7 +2713,6 @@
 				"2D4A9BB82757960C"
 				"37340815DAE2C133"
 			]
-			hide_dependent_lines: true
 			id: "5FCECF8863271771"
 			tasks: [{
 				id: "70AF2FE5BDBD1A3C"
@@ -3128,6 +3126,7 @@
 				"5FCECF8863271771"
 				"29C78EFA4596B27E"
 			]
+			hide_dependency_lines: true
 			id: "6BF9BA9DD881787D"
 			tasks: [{
 				id: "3D46C5D0A44BDCEB"
@@ -3515,6 +3514,18 @@
 			]
 			x: 15.5d
 			y: 16.5d
+		}
+		{
+			dependencies: ["049DA0A4C3E5EFFF"]
+			hide_dependency_lines: true
+			id: "0E081489233484EC"
+			tasks: [{
+				id: "6E32763E7757DDAE"
+				item: "pipez:fluid_pipe"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 15.75d
 		}
 	]
 	title: "So It Begins"
