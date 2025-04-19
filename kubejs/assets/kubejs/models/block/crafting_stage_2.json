@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/cube_column",
+	"textures": {
+		"end": "kubejs:block/unformed_table_2_end",
+		"side": "kubejs:block/unformed_table_2_side"
+	}
+}

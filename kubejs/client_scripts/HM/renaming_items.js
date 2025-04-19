@@ -1,3 +1,5 @@
+// packmode: hard
+
 ClientEvents.lang('en_us', event => {
 	event.renameItem('exnihilosequentia:string_mesh', 'Crude Mesh');
 	event.renameItem('exnihilosequentia:flint_mesh', 'Refined Mesh');
