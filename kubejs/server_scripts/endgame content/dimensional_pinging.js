@@ -110,14 +110,39 @@ const crystalfeed = (realmId, realm, stage, message) => {
     ItemEvents.rightClicked(`kubejs:${realm}_coordinate_crystal`, event => {
         if (event.player.isCrouching()) {
             event.item.count--
-            event.server.runCommandSilent(`execute as ${event.player.username} run give ${event.player.username} kubejs:blank_coordinate_crystal`);
-            event.server.runCommandSilent(`execute as ${event.player.username} run playsound minecraft:entity.player.levelup player ${event.player.username} ~ ~ ~`);
-            event.player.tell(`As you consume the echoes of the coordinate crystal, you hear voices whispering, and strange numbers appear before your eyes, along with visions of ${message}.`);
-            event.player.tell('');
-            event.server.runCommand(`execute as ${event.player.username} run sgjourney stargateNetwork address ${realmId}:${realm}`);
-            event.server.runCommandSilent(`execute as ${event.player.username} run gamestage add ${event.player.username} ${stage}`);
+            event.server.runCommandSilent(`execute at ${event.player.username} run playsound minecraft:block.enchantment_table.use player ${event.player.username} ~ ~ ~`);
+            event.server.scheduleInTicks(15, ctx => {
+                event.player.tell(`As you consume the echoes of the coordinate crystal, you hear voices whispering, and strange numbers appear before your eyes, along with visions of ${message}.`);
+                event.server.runCommand(`execute as ${event.player.username} run sgjourney stargateNetwork address ${realmId}:${realm}`);
+                event.server.runCommandSilent(`execute as ${event.player.username} run gamestage add ${event.player.username} ${stage}`);
+                event.server.runCommandSilent(`give ${event.player.username} kubejs:coordinate_crystal`)
+                event.server.runCommandSilent(`execute at ${event.player.username} run playsound sgjourney:milky_way_chevron_encode player ${event.player.username} ~ ~ ~`);
+            })
         }
     });
 }
 
 crystalfeed('sgjourney', 'abydos', 'one', 'sandy dunes and a lost world buried beneath sand and dust');
+
+const crystalfeedTroll = (realm,special) => {
+    ItemEvents.rightClicked(`kubejs:${realm}_coordinate_crystal`, event => {
+        if (event.player.isCrouching()) {
+            event.item.count--
+            event.server.runCommandSilent(`give ${event.player.username} kubejs:coordinate_crystal`)
+            event.server.runCommandSilent(`execute at ${event.player.username} run playsound sgjourney:universe_dial_fail player ${event.player.username} ~ ~ ~`);
+            event.player.tell(`§kMaker of Gates§r is not yet pleased with you.... Patience`);
+            event.server.scheduleInTicks(20, ctx => {
+            event.player.tell(`The ${special} not ready for you`);
+            event.server.scheduleInTicks(50, ctx => {
+                event.player.potionEffects.add('minecraft:nausea', 1200, 1);
+                event.player.potionEffects.add('minecraft:mining_fatigue', 1200, 1);
+                event.server.runCommandSilent(`execute at ${event.player.username} run playsound sgjourney:milky_way_dial_fail player ${event.player.username} ~ ~ ~`);
+                event.player.tell(`Your Mind Clouds With Confusion`);
+            })
+            })
+        }
+    });
+}
+
+crystalfeedTroll('nether', '§4Infernal Hells§r are');
+crystalfeedTroll('end', '§5Echoing Abyss§r is');

@@ -60,4 +60,8 @@
 			custom_lantea_sky = true
 			#If true you will render a custom Athos sky
 			custom_athos_sky = true
+			#If true you will render a custom Unitas sky
+			custom_unitas_sky = true
+			#If true you will render a custom Rima sky
+			custom_rima_sky = true
 

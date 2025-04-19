@@ -177,8 +177,8 @@ ServerEvents.recipes(event => {
         .inputFluids('minecraft:water 39000')
         .itemOutputs('3x gtceu:borax_dust')
         .outputFluids('gtceu:sulfuric_acid 6000')
-        .duration(800)
-        .EUt((GTValues.VA[GTValues.ZPM]))
+        .duration(400)
+        .EUt((GTValues.VA[GTValues.LuV]))
 
     event.recipes.gtceu.mixer(id('thorium_plut_duranide_241'))
         .itemInputs('4x gtceu:thorium_dust', 'gtceu:duranium_dust', '3x gtceu:plutonium_241_dust')

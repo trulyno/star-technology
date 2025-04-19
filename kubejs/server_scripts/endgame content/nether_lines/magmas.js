@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         .duration(360)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
-    event.recipes.gtceu.manifold_centrifuge(id('mystical_nether_magma_deconstruction'))
+    event.recipes.gtceu.molten_destabilizing(id('mystical_nether_magma_deconstruction'))
         .inputFluids('gtceu:mystical_nether_magma 3000')
         .outputFluids('gtceu:estaltadyne_nether_magma 1000')
         .outputFluids('gtceu:adamantamite_nether_magma 1000')
@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         .duration(480)
         .EUt(GTValues.VHA[GTValues.UHV]*3/5);
 
-    event.recipes.gtceu.molten_destabilizing(id('adamantamite_nether_magma_deconstruction'))
+    event.recipes.gtceu.manifold_centrifuge(id('adamantamite_nether_magma_deconstruction'))
         .inputFluids('gtceu:adamantamite_nether_magma 10000')
         .outputFluids('gtceu:highly_unstable_nether_magma 3000')
         .outputFluids('gtceu:molten_adamantamite_mixture 6000')
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
-    event.recipes.gtceu.molten_destabilizing(id('mythrillic_nether_magma_deconstruction'))
+    event.recipes.gtceu.manifold_centrifuge(id('mythrillic_nether_magma_deconstruction'))
         .inputFluids('gtceu:mythrillic_nether_magma 10000')
         .outputFluids('gtceu:highly_unstable_nether_magma 3000')
         .outputFluids('gtceu:molten_mythrillic_mixture 6000')
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
-    event.recipes.gtceu.molten_destabilizing(id('estaltadyne_nether_magma_deconstruction'))
+    event.recipes.gtceu.manifold_centrifuge(id('estaltadyne_nether_magma_deconstruction'))
         .inputFluids('gtceu:estaltadyne_nether_magma 10000')
         .outputFluids('gtceu:highly_unstable_nether_magma 3000')
         .outputFluids('gtceu:molten_estaltadyne_mixture 6000')

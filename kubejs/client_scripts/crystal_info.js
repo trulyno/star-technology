@@ -1,7 +1,7 @@
 JEIEvents.information(event => {
 
     event.addItem('kubejs:abydos_coordinate_crystal', [
-        'Sneak and right-click with a coordinate crystal to consume it\n'
+        'Sneak and right-click with a coordinate crystal to absorb its hidden knowledge.\n'
     ]);
 
     // ['abydos'].forEach(realm => {

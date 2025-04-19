@@ -23,6 +23,12 @@
 			x: 16.0d
 			y: 3.5d
 		}
+		{
+			id: "356A14F888032D0F"
+			linked_quest: "261174370DC87FCB"
+			x: 16.0d
+			y: -3.5d
+		}
 	]
 	quests: [
 		{
@@ -93,7 +99,7 @@
 				item: "gtceu:lv_polarizer"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -10.0d
 			y: -1.5d
 		}
 		{
@@ -158,6 +164,7 @@
 		{
 			dependencies: ["234CE57A62FB8D82"]
 			description: ["Used mostly for mixing dusts into more complicated substances"]
+			hide_dependent_lines: true
 			id: "54549EC141659C30"
 			rewards: [{
 				id: "3F9D23A8F9E2DCA8"
@@ -355,8 +362,12 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["0E88CB5E68212006"]
-			description: ["New processing multiblock, brings new resources that will be useful."]
+			dependencies: [
+				"0E88CB5E68212006"
+				"7CA424E05FB05DFF"
+			]
+			dependency_requirement: "one_started"
+			description: ["Cobalt Dust can aquired through either Cobaltite Slude, the Electric Ore Factory, or simply washing Copper Ore."]
 			id: "5D3B5EF195A3093B"
 			rewards: [{
 				id: "6EEC913BD06C07C4"
@@ -439,8 +450,8 @@
 				item: "gtceu:lv_fluid_solidifier"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.5d
+			x: -8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2AFD24A844E49C42"]
@@ -457,8 +468,8 @@
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -0.5d
+			x: -8.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
@@ -526,8 +537,8 @@
 				item: "thermal_extra:soul_infused_glass"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.5d
+			x: -10.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -727,7 +738,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -925,7 +936,7 @@
 				}
 			]
 			x: 6.0d
-			y: 7.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -985,8 +996,8 @@
 				item: "gtceu:greenhouse"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 7.5d
+			x: 8.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1175,10 +1186,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"261174370DC87FCB"
-				"23D5F109B920FDE4"
-			]
+			dependencies: ["261174370DC87FCB"]
 			description: [
 				"Super Tanks store a large amount of liquids. "
 				"However, they do need Polyethylene to be made. Check the Processing lines chapter for more information."
@@ -1194,8 +1202,8 @@
 				item: "gtceu:lv_super_tank"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -6.5d
+			x: 16.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7EC83EEF3F7A89B8"]
@@ -1419,7 +1427,7 @@
 				item: "ae2:energy_acceptor"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.0d
 			y: -7.0d
 		}
 		{
@@ -1455,7 +1463,7 @@
 				}
 			]
 			title: "Inscriber Presses"
-			x: 16.0d
+			x: 14.0d
 			y: -5.5d
 		}
 		{
@@ -1467,7 +1475,8 @@
 			description: [
 				"You are gonna need a lot of these."
 				""
-				"PS: The Multi-Smelter on the next page is an AMAZING way to do these fast/in bulk."
+				"PS: The linked machine is an AMAZING way to do these fast/in bulk."
+				"{ \"text\": \"Multi Smelter\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"649596731FFA9C9A\" } }"
 			]
 			id: "16A71D038D996289"
 			rewards: [{
@@ -1501,254 +1510,8 @@
 				}
 			]
 			title: "Printed Circuits"
-			x: 14.0d
+			x: 12.0d
 			y: -5.5d
-		}
-		{
-			dependencies: ["53E98CFC7934FA67"]
-			description: ["Carbon Brushes are a good method for FE generation. For more information, check the ponder screen."]
-			id: "35D6B5C30A3A2AE0"
-			optional: true
-			rewards: [{
-				count: 2
-				id: "64BDF9C5A61F9360"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.0d
-			tasks: [
-				{
-					id: "19DAF95B3B02C898"
-					item: "create_new_age:carbon_brushes"
-					type: "item"
-				}
-				{
-					id: "1E6E55C936ADC107"
-					item: "create_new_age:generator_coil"
-					type: "item"
-				}
-			]
-			x: -10.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["35D6B5C30A3A2AE0"]
-			description: ["Allows you to charge items with create and RF, gets replaced by the Polarizer."]
-			id: "75BF415FDA4AB79F"
-			optional: true
-			rewards: [{
-				id: "132FAA64056A92B7"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5F8E186966636A72"
-				item: "create_new_age:energiser_t1"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["75BF415FDA4AB79F"]
-			id: "04876D3FDD4BE6F7"
-			optional: true
-			rewards: [{
-				id: "5D789862F72388DD"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "346FB054BF59B5F9"
-				item: "create_new_age:energiser_t2"
-				type: "item"
-			}]
-			x: -8.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["04876D3FDD4BE6F7"]
-			id: "34C1C09B74C46FC4"
-			optional: true
-			rewards: [{
-				count: 2
-				id: "530D9311FA779FD8"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			tasks: [{
-				id: "34C52DB045E6EE96"
-				item: "create_new_age:energiser_t3"
-				type: "item"
-			}]
-			x: -8.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["35D6B5C30A3A2AE0"]
-			id: "125AA2F183B4FBB9"
-			optional: true
-			rewards: [{
-				id: "63CCF2CF19EFF471"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0FE70ED313B3EB02"
-				item: "create_new_age:magnetite_block"
-				type: "item"
-			}]
-			x: -10.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["125AA2F183B4FBB9"]
-			id: "574E12BF11F87405"
-			optional: true
-			rewards: [{
-				id: "0F6620276F589F98"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "55AF0038AB45E89A"
-				item: "create_new_age:redstone_magnet"
-				type: "item"
-			}]
-			x: -10.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["574E12BF11F87405"]
-			id: "5FD374ACECB3E571"
-			optional: true
-			rewards: [{
-				id: "7F063396C160F9C5"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "79E55E81CF1C0897"
-				item: "create_new_age:layered_magnet"
-				type: "item"
-			}]
-			x: -10.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["5FD374ACECB3E571"]
-			id: "32EFD02E4B6969EC"
-			optional: true
-			rewards: [{
-				id: "3F8CD5D0B5FEE79F"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3F50D488E4667501"
-				item: "create_new_age:fluxuated_magnetite"
-				type: "item"
-			}]
-			x: -10.0d
-			y: 6.5d
-		}
-		{
-			dependencies: [
-				"2C404AE10029FCD4"
-				"32EFD02E4B6969EC"
-			]
-			id: "1510334BF8ED8EBC"
-			optional: true
-			rewards: [{
-				count: 2
-				id: "5034A8F9F0DAB02D"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			tasks: [{
-				id: "5216A845C701E1D0"
-				item: "create_new_age:netherite_magnet"
-				type: "item"
-			}]
-			x: -10.0d
-			y: 8.5d
-		}
-		{
-			dependencies: ["35D6B5C30A3A2AE0"]
-			description: ["Can be used to transfer 1,024 RF around your base. (Can go through walls)"]
-			id: "714E51B6F0863FA6"
-			optional: true
-			rewards: [{
-				id: "18BA41FB4C25940D"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "078E62C529D838AE"
-				item: "create_new_age:copper_wire"
-				type: "item"
-			}]
-			x: -9.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["714E51B6F0863FA6"]
-			description: ["Can be used to transfer 2,048 RF around your base. (Can go through walls)"]
-			id: "24EC88E9B8205348"
-			optional: true
-			rewards: [{
-				id: "1E0F138D5B9169DB"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "26494F2662579770"
-				item: "create_new_age:overcharged_iron_wire"
-				type: "item"
-			}]
-			x: -9.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["24EC88E9B8205348"]
-			description: ["Can be used to transfer 4,096 RF around your base. (Can go through walls)"]
-			id: "3CD2FE0563B226A7"
-			optional: true
-			rewards: [{
-				id: "1A538CA5A0B836AB"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "32E48F0DE5C51C94"
-				item: "create_new_age:overcharged_golden_wire"
-				type: "item"
-			}]
-			x: -9.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["3CD2FE0563B226A7"]
-			description: ["Can be used to transfer 8,192 RF around your base. (Can go through walls)"]
-			id: "539B5C30BFD9AB6B"
-			optional: true
-			rewards: [{
-				count: 2
-				id: "4FCA0EA49FE0E507"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			tasks: [{
-				id: "6CB8E160285CE446"
-				item: "create_new_age:overcharged_diamond_wire"
-				type: "item"
-			}]
-			x: -9.0d
-			y: 6.0d
 		}
 		{
 			dependencies: ["20A12F3B992762F0"]
@@ -1776,6 +1539,9 @@
 				"You'll want 2 output busses to have enough room for the Geodes"
 				""
 				"Note: You can only have 1 energy hatch on the machine. Make sure to have enough output space: 2 &7LV&r Output Busses will work."
+				""
+				"Uses Found Here:"
+				"{ \"text\": \"Geodes\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"14AB8F4BE7C1F8E3\" } }"
 			]
 			id: "5F80268C02FAD5F6"
 			rewards: [{
@@ -1792,25 +1558,41 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["1F5CCE8CFD02903A"]
+			dependencies: [
+				"1F5CCE8CFD02903A"
+				"13B656D92E651FB4"
+				"54549EC141659C30"
+			]
 			description: [
 				"Gather ore from mining and collecting the dust around you."
 				""
 				"Make sure to save the liquids for later as you can get more and rarer materials."
 				""
 				"Note: This machine can only take 1 energy hatch. Additionally, make sure you have enough output space: 2 &7LV&r Output Busses, and 2 &7LV&r Output Hatches will do the trick."
+				""
+				"Use Found Here:"
+				"{ \"text\": \"Void Extraction\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"71456BC654A6D4A7\" } }"
 			]
+			icon: "gtceu:void_extractor"
 			id: "30B2688F8387048F"
 			rewards: [{
 				id: "4B6770AF03D1B85C"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "3576D69241679C72"
-				item: "gtceu:void_extractor"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3576D69241679C72"
+					item: "gtceu:void_extractor"
+					type: "item"
+				}
+				{
+					id: "5EE01AE87D7C48C0"
+					item: "gtceu:drilling_fluid_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 2.0d
 			y: 0.5d
 		}
@@ -1868,7 +1650,15 @@
 				"7908E8C196F82F9B"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Iron (III) Chloride or Sodium Persulfate Quest Completion"]
+			description: [
+				"Get Iron (III) Chloride or Sodium Persulfate to etch your circuits."
+				""
+				"One of the following quest needs to be completed:"
+				""
+				"{ \"text\": \"Sodium Persulfate\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7908E8C196F82F9B\" } }"
+				""
+				"{ \"text\": \"Iron (III) Chloride\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"261B946701411D9C\" } }"
+			]
 			icon: "gtceu:sodium_bisulfate_dust"
 			id: "3A20504009C70217"
 			tasks: [{
@@ -1877,7 +1667,7 @@
 				type: "checkmark"
 			}]
 			x: 4.0d
-			y: 7.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["30B2688F8387048F"]
@@ -1909,14 +1699,15 @@
 				"16A71D038D996289"
 				"0A98FE21C12F1199"
 			]
+			description: ["{ \"text\": \"Applied Energistics\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"369E90E2807E6776\" } }"]
 			icon: "ae2:fluix_glass_cable"
 			id: "352E17B4D7719638"
 			tasks: [{
 				id: "724697297E01E6F0"
-				title: "Go Check out the Applied Energistic Questbook"
+				title: "Go Check out Applied Energistic"
 				type: "checkmark"
 			}]
-			x: 12.0d
+			x: 10.0d
 			y: -7.0d
 		}
 		{
@@ -2000,7 +1791,11 @@
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
-			description: ["Go look at the \"Power\" chapter of the questbook to see what other options exist for power."]
+			description: [
+				"Go look at the \"Power\" chapter of the questbook to see what other options exist for power."
+				""
+				"{ \"text\": \"This will show you power at each tier\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2490AD30E2772475\" } }"
+			]
 			icon: "gtceu:tin_quadruple_cable"
 			id: "36BE4A7635DF3A1B"
 			optional: true
@@ -2010,7 +1805,7 @@
 				type: "checkmark"
 			}]
 			x: -7.0d
-			y: -2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
@@ -2032,22 +1827,8 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["53E98CFC7934FA67"]
-			description: [""]
-			icon: "ftbquests:book"
-			id: "23D5F109B920FDE4"
-			subtitle: "Go Check Out other Questbook Pages"
-			tasks: [{
-				id: "173F13483133FB5A"
-				title: "Production Lines Questbook Page(s)"
-				type: "checkmark"
-			}]
-			x: -7.0d
-			y: -4.5d
-		}
-		{
 			dependencies: ["56BA79287C4DBE52"]
-			description: ["In &lMechanics&r Overclock is Explained"]
+			description: ["{ \"text\": \"Read About Overclocking\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"34EDF98BDC245F77\" } }"]
 			icon: "ftbquests:book"
 			id: "6EBA06E5F9B25100"
 			optional: true
@@ -2061,7 +1842,7 @@
 		}
 		{
 			dependencies: ["70875F86587758D7"]
-			description: ["In &lMechanics&r Cheaper Circuit Recipes are Explained"]
+			description: ["{ \"text\": \"Read About Cheaper Circuits\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6F7EE9A1BC718801\" } }"]
 			icon: "ftbquests:book"
 			id: "14A9381889183318"
 			optional: true
@@ -2157,8 +1938,55 @@
 				item: "ae2:sky_dust"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 6.0d
 			y: -7.0d
+		}
+		{
+			dependencies: ["2AFD24A844E49C42"]
+			description: ["There are multiple ways to make lubricant, maybe you can make use of all that excess creosote."]
+			id: "2E1E8E6F80D7665C"
+			rewards: [{
+				id: "4CF6137E21DDA137"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4A6D23D983B6852B"
+					item: "gtceu:lv_brewery"
+					type: "item"
+				}
+				{
+					id: "1B5BC7035DD0CF97"
+					item: "gtceu:lv_distillery"
+					type: "item"
+				}
+			]
+			title: "Lubricant Production"
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2E1E8E6F80D7665C"]
+			description: ["Best thing for cutting that you can get."]
+			hide_dependent_lines: true
+			icon: "gtceu:lubricant_bucket"
+			id: "13B656D92E651FB4"
+			tasks: [
+				{
+					id: "6183C6888230DF01"
+					item: "gtceu:lubricant_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1BE84B6F5997F63A"
+					type: "checkmark"
+				}
+			]
+			title: "Lubricant"
+			x: -6.0d
+			y: 2.5d
 		}
 	]
 	title: "Industrial Revolution"

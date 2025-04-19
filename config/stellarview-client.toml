@@ -17,8 +17,6 @@
 			gravitational_lensing = true
 			#Removes Stars
 			disable_stars = false
-			#Makes Stars brighter
-			bright_stars = true
 			#Enables the use of textures for stars
 			textured_stars = true
 			#Enables dust cloud rendering
@@ -26,6 +24,14 @@
 			#Specifies the max distance at which a Space Region can render
 			#Range: 1 ~ 12
 			space_region_render_distance = 8
+			#Makes sky objects dimmer when the player is near a light source
+			light_pollution = true
+			#Specifies the base brightness of stars and planets
+			#Range: 0 ~ 100
+			star_brightness = 100
+			#Specifies the base brightness of dust clouds and nebulae
+			#Range: 0 ~ 100
+			dust_cloud_brightness = 100
 
 	["Stellar View Client Config"."Overworld Config"]
 
@@ -65,6 +71,8 @@
 				#Specifies Sol Z-axis rotation
 				#Range: 0 ~ 360
 				sol_z_rotation = 0
+				#Uses the Vanilla Moon texture for rendering
+				vanilla_moon = false
 
 	["Stellar View Client Config"."Nether Config"]
 

@@ -1602,21 +1602,18 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["6EA82619EAE7BD52"]
+			dependencies: ["62E00A53137966DC"]
 			id: "381CC3C904EA46B3"
 			tasks: [{
 				id: "0B01AC443D75AF23"
 				item: "gtceu:enriched_uranium_hexafluoride_bucket"
 				type: "item"
 			}]
-			x: 16.5d
+			x: 18.0d
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"6EA82619EAE7BD52"
-				"2E2090C9313F8193"
-			]
+			dependencies: ["6EA82619EAE7BD52"]
 			id: "62E00A53137966DC"
 			tasks: [{
 				id: "57EE90D7B9DBDACB"
@@ -1633,22 +1630,25 @@
 				item: "gtceu:silver_oxide_dust"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 18.5d
 			y: -7.5d
 		}
 		{
-			dependencies: ["62E00A53137966DC"]
+			dependencies: ["568227D2ACE8D8AD"]
 			id: "55D32516F9A0CD50"
 			tasks: [{
 				id: "11AF39F793BD6F74"
 				item: "gtceu:silver_sulfate_dust"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 19.5d
 			y: -5.5d
 		}
 		{
-			dependencies: ["62E00A53137966DC"]
+			dependencies: [
+				"62E00A53137966DC"
+				"2E2090C9313F8193"
+			]
 			id: "568227D2ACE8D8AD"
 			tasks: [{
 				id: "51E2DD93C6CAB995"
@@ -1659,10 +1659,7 @@
 			y: -6.5d
 		}
 		{
-			dependencies: [
-				"568227D2ACE8D8AD"
-				"585828F1FD6ACADF"
-			]
+			dependencies: ["568227D2ACE8D8AD"]
 			id: "0E96BB78A3033BB7"
 			tasks: [{
 				id: "328FCD646CFA100B"
@@ -1679,22 +1676,25 @@
 				item: "gtceu:hydrogen_bucket"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 21.5d
 			y: -5.5d
 		}
 		{
-			dependencies: ["0E96BB78A3033BB7"]
+			dependencies: ["7CC060CF914B6D2D"]
 			id: "0B27F78DE57417D0"
 			tasks: [{
 				id: "2833EC7C53D02674"
 				item: "gtceu:hydrofluoric_acid_bucket"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 22.5d
 			y: -7.5d
 		}
 		{
-			dependencies: ["0E96BB78A3033BB7"]
+			dependencies: [
+				"0E96BB78A3033BB7"
+				"585828F1FD6ACADF"
+			]
 			id: "7CC060CF914B6D2D"
 			tasks: [{
 				id: "126A4D6F33F6FA81"
@@ -1901,10 +1901,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"305434660DA7E51D"
-				"27B8069B6301B3B7"
-			]
+			dependencies: ["305434660DA7E51D"]
 			id: "00EB62B11DF2F6B3"
 			tasks: [{
 				id: "598039EAD125EFFB"
@@ -1915,10 +1912,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"305434660DA7E51D"
-				"7E82F90A09FFDCD4"
-			]
+			dependencies: ["305434660DA7E51D"]
 			id: "6FACB904F9FEFC48"
 			tasks: [{
 				id: "4411551A8C37677A"
@@ -1935,24 +1929,24 @@
 				item: "gtceu:sulfuric_acid_bucket"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 17.5d
 			y: -4.5d
 		}
 		{
-			dependencies: ["6FACB904F9FEFC48"]
+			dependencies: ["047E341FD3467A86"]
 			id: "718019DD5406D2C6"
 			tasks: [{
 				id: "3FAE689E2071EBE7"
 				item: "gtceu:silicic_acid_bucket"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 18.5d
 			y: -2.5d
 		}
 		{
 			dependencies: [
 				"6FACB904F9FEFC48"
-				"602201333E3C0A36"
+				"7E82F90A09FFDCD4"
 			]
 			id: "047E341FD3467A86"
 			tasks: [{
@@ -1960,7 +1954,7 @@
 				item: "gtceu:seaborgium_cerium_tricarbon_octasulfate_dust"
 				type: "item"
 			}]
-			x: 18.5d
+			x: 18.0d
 			y: -3.5d
 		}
 		{
@@ -1970,35 +1964,35 @@
 				item: "gtceu:chromium_trioxide_dust"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 19.5d
 			y: -4.5d
 		}
 		{
-			dependencies: ["047E341FD3467A86"]
+			dependencies: ["29A494A2E898FEA7"]
 			id: "0547CBA98595DA1C"
 			tasks: [{
 				id: "72DDAB7F27B339FE"
 				item: "gtceu:cerium_4_sulfate_dust"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 20.5d
 			y: -4.5d
 		}
 		{
-			dependencies: ["047E341FD3467A86"]
+			dependencies: ["29A494A2E898FEA7"]
 			id: "172E44F3885D5F0F"
 			tasks: [{
 				id: "6D6B69969B256936"
 				item: "gtceu:chromium_sulfate_dust"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 20.5d
 			y: -2.5d
 		}
 		{
 			dependencies: [
 				"047E341FD3467A86"
-				"10305CB59AD15403"
+				"602201333E3C0A36"
 			]
 			id: "29A494A2E898FEA7"
 			tasks: [{
@@ -2006,18 +2000,18 @@
 				item: "gtceu:seaborgium_trisulfate_dust"
 				type: "item"
 			}]
-			x: 20.5d
+			x: 20.0d
 			y: -3.5d
 		}
 		{
-			dependencies: ["047E341FD3467A86"]
+			dependencies: ["29A494A2E898FEA7"]
 			id: "208E7DCDCCFC2224"
 			tasks: [{
 				id: "76CC4BB5C61C3EE8"
 				item: "gtceu:carbon_dioxide_bucket"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 19.5d
 			y: -2.5d
 		}
 		{
@@ -2027,24 +2021,24 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 21.5d
 			y: -2.5d
 		}
 		{
-			dependencies: ["29A494A2E898FEA7"]
+			dependencies: ["2F8298E21BE45A71"]
 			id: "2887AA404EEDA8E6"
 			tasks: [{
 				id: "6FA7990FDB187B68"
 				item: "gtceu:sulfuric_acid_bucket"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 22.5d
 			y: -4.5d
 		}
 		{
 			dependencies: [
 				"29A494A2E898FEA7"
-				"7405DB736A12A52C"
+				"10305CB59AD15403"
 			]
 			id: "2F8298E21BE45A71"
 			tasks: [{
@@ -2062,24 +2056,24 @@
 				item: "gtceu:sodium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 21.5d
+			x: 23.0d
 			y: -2.5d
 		}
 		{
-			dependencies: ["2F8298E21BE45A71"]
+			dependencies: ["55297DA306CE9CE2"]
 			id: "02678FF3104E3C4C"
 			tasks: [{
 				id: "30965A9F6BC12E64"
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 22.5d
+			x: 24.0d
 			y: -4.5d
 		}
 		{
 			dependencies: [
 				"2F8298E21BE45A71"
-				"204D80C723A1084C"
+				"7405DB736A12A52C"
 			]
 			id: "55297DA306CE9CE2"
 			tasks: [{
@@ -2097,24 +2091,24 @@
 				item: "gtceu:hydrochloric_acid_bucket"
 				type: "item"
 			}]
-			x: 23.0d
+			x: 24.5d
 			y: -2.5d
 		}
 		{
-			dependencies: ["55297DA306CE9CE2"]
+			dependencies: ["52D4B5EDABCA9420"]
 			id: "386191535FC2CE13"
 			tasks: [{
 				id: "37509965B1E6989F"
 				item: "gtceu:salt_dust"
 				type: "item"
 			}]
-			x: 24.0d
+			x: 25.5d
 			y: -4.5d
 		}
 		{
 			dependencies: [
 				"55297DA306CE9CE2"
-				"2E7AAF45F5ECC113"
+				"204D80C723A1084C"
 			]
 			id: "52D4B5EDABCA9420"
 			tasks: [{
@@ -2122,18 +2116,18 @@
 				item: "gtceu:seaborgium_dioxide_dust"
 				type: "item"
 			}]
-			x: 25.5d
+			x: 25.0d
 			y: -3.5d
 		}
 		{
-			dependencies: ["55297DA306CE9CE2"]
+			dependencies: ["52D4B5EDABCA9420"]
 			id: "632E3EF2E231A069"
 			tasks: [{
 				id: "3B6CFA81B1411C5C"
 				item: "gtceu:hydroxide_bucket"
 				type: "item"
 			}]
-			x: 24.0d
+			x: 25.5d
 			y: -2.5d
 		}
 		{
@@ -2143,22 +2137,25 @@
 				item: "gtceu:hydrogen_bucket"
 				type: "item"
 			}]
-			x: 25.0d
+			x: 26.5d
 			y: -2.5d
 		}
 		{
-			dependencies: ["52D4B5EDABCA9420"]
+			dependencies: ["3C7E223BC46DD434"]
 			id: "1A6A7DDA5E745123"
 			tasks: [{
 				id: "73789688CE9B530E"
 				item: "gtceu:steam_bucket"
 				type: "item"
 			}]
-			x: 26.0d
+			x: 27.5d
 			y: -4.5d
 		}
 		{
-			dependencies: ["52D4B5EDABCA9420"]
+			dependencies: [
+				"52D4B5EDABCA9420"
+				"2E7AAF45F5ECC113"
+			]
 			id: "3C7E223BC46DD434"
 			tasks: [{
 				id: "3D721A2BB3C5A039"
@@ -2188,24 +2185,24 @@
 				item: "gtceu:hydrochloric_acid_bucket"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 17.5d
 			y: 0.5d
 		}
 		{
-			dependencies: ["00EB62B11DF2F6B3"]
+			dependencies: ["1ACEFBC1FD59C51B"]
 			id: "5BC1BB3211BA1B14"
 			tasks: [{
 				id: "04A113EBFBB7F244"
 				item: "gtceu:platinum_raw_dust"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 18.5d
 			y: 0.5d
 		}
 		{
 			dependencies: [
 				"00EB62B11DF2F6B3"
-				"465B18502B671A6A"
+				"27B8069B6301B3B7"
 			]
 			id: "1ACEFBC1FD59C51B"
 			tasks: [{
@@ -2213,18 +2210,18 @@
 				item: "gtceu:polonium_pyrophosphate_dust"
 				type: "item"
 			}]
-			x: 18.5d
+			x: 18.0d
 			y: -0.5d
 		}
 		{
-			dependencies: ["00EB62B11DF2F6B3"]
+			dependencies: ["1ACEFBC1FD59C51B"]
 			id: "0EC76401941B6BEC"
 			tasks: [{
 				id: "667934BFF1E3AF5C"
 				item: "gtceu:pyrophosphoric_acid_bucket"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 18.5d
 			y: -1.5d
 		}
 		{
@@ -2234,24 +2231,24 @@
 				item: "gtceu:hydrochloric_acid_bucket"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 19.5d
 			y: 0.5d
 		}
 		{
-			dependencies: ["1ACEFBC1FD59C51B"]
+			dependencies: ["17CF159AE9B6F7BE"]
 			id: "2220D9304B0B4345"
 			tasks: [{
 				id: "061FAB24E4579507"
 				item: "gtceu:pyrophosphoric_acid_bucket"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 20.5d
 			y: -1.5d
 		}
 		{
 			dependencies: [
 				"1ACEFBC1FD59C51B"
-				"2495E574F3C39787"
+				"465B18502B671A6A"
 			]
 			id: "17CF159AE9B6F7BE"
 			tasks: [{
@@ -2265,7 +2262,7 @@
 		{
 			dependencies: [
 				"17CF159AE9B6F7BE"
-				"0CAA5D36AA189797"
+				"2495E574F3C39787"
 			]
 			id: "0CFEAF4BACC1110E"
 			tasks: [{
@@ -2277,14 +2274,14 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["17CF159AE9B6F7BE"]
+			dependencies: ["0CFEAF4BACC1110E"]
 			id: "16F494C520357747"
 			tasks: [{
 				id: "018CBED08F4A9B37"
 				item: "gtceu:salt_dust"
 				type: "item"
 			}]
-			x: 20.5d
+			x: 22.0d
 			y: -1.5d
 		}
 		{
@@ -2294,13 +2291,13 @@
 				item: "gtceu:sodium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 19.5d
+			x: 21.0d
 			y: 0.5d
 		}
 		{
 			dependencies: [
 				"0CFEAF4BACC1110E"
-				"31961DC2B9349B48"
+				"0CAA5D36AA189797"
 			]
 			id: "79E95A7DA69FC60A"
 			tasks: [{
@@ -2318,18 +2315,18 @@
 				item: "gtceu:carbon_monoxide_bucket"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 22.5d
 			y: 0.5d
 		}
 		{
-			dependencies: ["0CFEAF4BACC1110E"]
+			dependencies: ["79E95A7DA69FC60A"]
 			id: "20CBE9F292618AED"
 			tasks: [{
 				id: "571618BA6E186D6D"
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 23.5d
 			y: -1.5d
 		}
 		{
@@ -2339,22 +2336,25 @@
 				item: "gtceu:calcium_dust"
 				type: "item"
 			}]
-			x: 22.5d
+			x: 24.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["79E95A7DA69FC60A"]
+			dependencies: ["6290F2A582039B7F"]
 			id: "0CFB2F1E550B2557"
 			tasks: [{
 				id: "684353B05725E3DD"
 				item: "gtceu:calcium_carbonate_dust"
 				type: "item"
 			}]
-			x: 23.5d
+			x: 25.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["79E95A7DA69FC60A"]
+			dependencies: [
+				"79E95A7DA69FC60A"
+				"31961DC2B9349B48"
+			]
 			id: "6290F2A582039B7F"
 			tasks: [{
 				id: "5483880D6AEE4E32"

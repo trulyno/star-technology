@@ -108,9 +108,9 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.V[GTValues.MV]);
 
     event.recipes.gtceu.chemical_plant(id('seaborgium_cerium_tricarbon_octasulfate_restructure'))
-        .itemInputs('1x gtceu:seaborgium_cerium_tricarbon_octasulfate_dust', '2x gtceu:chromium_trioxide_dust')
+        .itemInputs('1x gtceu:seaborgium_cerium_tricarbon_octasulfate_dust', '8x gtceu:chromium_trioxide_dust')
         .outputFluids('gtceu:carbon_dioxide 3000')
-        .itemOutputs('1x gtceu:cerium_4_sulfate_dust', '1x gtceu:chromium_sulfate_dust', '1x gtceu:seaborgium_trisulfate_dust')
+        .itemOutputs('1x gtceu:cerium_4_sulfate_dust', '5x gtceu:chromium_sulfate_dust', '1x gtceu:seaborgium_trisulfate_dust')
         .duration(500)
         .EUt(GTValues.VH[GTValues.UEV]);
 
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.V[GTValues.UHV]);
 
     event.recipes.gtceu.large_chemical_reactor(id('seaborgium_trioxide_base_reaction'))
-        .itemInputs('1x gtceu:seaborgium_trioxide_dust', '2x gtceu:sodium_hydroxide_dust')
+        .itemInputs('1x gtceu:seaborgium_trioxide_dust', '6x gtceu:sodium_hydroxide_dust')
         .outputFluids('minecraft:water 1000')
         .itemOutputs('1x gtceu:sodium_seaborgate_dust')
         .duration(120)
@@ -140,7 +140,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_chemical_reactor(id('sodium_seaborgate_acid_reaction'))
         .itemInputs('1x gtceu:sodium_seaborgate_dust')
         .inputFluids('gtceu:hydrochloric_acid 2000')
-        .itemOutputs('1x gtceu:seaborgium_dioxide_dust', '2x gtceu:salt_dust')
+        .itemOutputs('1x gtceu:seaborgium_dioxide_dust', '4x gtceu:salt_dust')
         .outputFluids('gtceu:hydroxide 2000')
         .duration(140)
         .EUt(GTValues.V[GTValues.UV]);
@@ -172,8 +172,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.V[GTValues.UHV]);
 
     event.recipes.gtceu.large_chemical_reactor(id('polonium_tetrachloride_base_reaction'))
-        .itemInputs('1x gtceu:polonium_tetrachloride_dust', '4x gtceu:sodium_hydroxide_dust')
-        .itemOutputs('4x gtceu:salt_dust', '1x gtceu:polonium_hydroxide_dust')
+        .itemInputs('1x gtceu:polonium_tetrachloride_dust', '12x gtceu:sodium_hydroxide_dust')
+        .itemOutputs('8x gtceu:salt_dust', '1x gtceu:polonium_hydroxide_dust')
         .duration(2400)
         .EUt(GTValues.VA[GTValues.ZPM]);
 
@@ -232,7 +232,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor(id('hydroastatic_acid_neutralizing'))
         .inputFluids('gtceu:hydroastatic_acid 1000')
-        .itemInputs('1x gtceu:sodium_hydroxide_dust')
+        .itemInputs('3x gtceu:sodium_hydroxide_dust')
         .outputFluids('minecraft:water 1000')
         .itemOutputs('gtceu:sodium_astatide_dust')
         .duration(1600)
@@ -309,7 +309,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_chemical_reactor(id('hafnium_chlorination'))
         .itemInputs('1x gtceu:sodium_hafnate_dust')
         .inputFluids('gtceu:hydrochloric_acid 6000')
-        .outputFluids('gtceu:brackish_water 2000')
+        .outputFluids('gtceu:brackish_water 4000')
         .itemOutputs('1x gtceu:hafnium_hexachloride_dust')
         .duration(720)
         .EUt(GTValues.V[GTValues.ZPM]);

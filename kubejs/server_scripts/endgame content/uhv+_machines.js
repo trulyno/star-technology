@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     const id = global.id;
 
     event.remove({not: {output: 'gtceu:uhv_ultimate_battery'},output: /gtceu:uhv.*/});
-    event.remove({input: /gtceu:uhv.*/})
+    event.remove({not: {input: 'gtceu:uhv_ultimate_battery'},input: /gtceu:uhv.*/})
     event.remove({output: /gtceu:uev.*/})
     event.remove({input: /gtceu:uev.*/})
     event.remove({output: /gtceu:uiv.*/})
@@ -11,15 +11,8 @@ ServerEvents.recipes(event => {
     event.remove({input: /gtceu:uxv.*/})
     event.remove({output: /gtceu:opv.*/})
     event.remove({input: /gtceu:opv.*/})
-    event.remove({output: /gtceu:max.*/})
-    event.remove({input: /gtceu:max.*/})
-
-event.recipes.gtceu.packer(id('uhv_ultimate_battery'))
-    .itemInputs('gtceu:uhv_ultimate_battery')
-    .itemOutputs('gtceu:empty_tier_iii_battery','gtceu:max_battery')
-    .circuit(2)
-    .duration(200)
-    .EUt(30);
+    event.remove({not: {output: 'gtceu:max_battery'},output: /gtceu:max.*/})
+    event.remove({not: {input: 'gtceu:max_battery'},input: /gtceu:max.*/})
 
 const input = [
     {tier:'uhv',tier1under:'uv',main:'neutronium',cable:'europium',wire:'zirconium_selenide_diiodide',glass:'fusion_glass',plastic:'polyether_ether_ketone',cable1up:'cerium_tritelluride',mag:'pure_netherite',pipe:'neutronium',buzz:'neutronium',elctrlyzWire:'iron_selenide_over_strontium_titanium_oxide',chip:'gtceu:uhpic',math:'1'},

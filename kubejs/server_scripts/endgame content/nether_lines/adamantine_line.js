@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         .itemInputs('8x gtceu:magnesium_dust')
         .inputFluids('gtceu:oxygen 8000')
         .itemOutputs('4x gtceu:hot_titanium_ingot')
-        .itemOutputs('8x gtceu:magnesia_dust')
+        .itemOutputs('16x gtceu:magnesia_dust')
         .itemOutputs('5x gtceu:adamantine_5_dust')
         .duration(460)
         .blastFurnaceTemp(8000)
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:adamantine_hydroxide_dust')
         .itemInputs('3x gtceu:sodium_dust')
         .itemOutputs('gtceu:adamantine_dust')
-        .itemOutputs('3x gtceu:sodium_hydroxide_dust')
+        .itemOutputs('9x gtceu:sodium_hydroxide_dust')
         .duration(540)
         .EUt(GTValues.VHA[GTValues.UV]);
 

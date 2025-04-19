@@ -1561,6 +1561,18 @@
 			x: -2.0d
 			y: -20.0d
 		}
+		{
+			dependencies: ["75942788374CDEF3"]
+			id: "297CE2423324B92B"
+			subtitle: "Last ULV Circuit"
+			tasks: [{
+				id: "3B54565722872EC4"
+				item: "gtceu:nand_chip"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -30.5d
+		}
 	]
 	title: "Line Of Progression"
 }

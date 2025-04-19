@@ -16,13 +16,13 @@ ItemEvents.rightClicked('kubejs:highly_enriched_uranium_fuel_rod', event => {
     if (event.player.isCrouching()) {
         event.item.count--
         event.server.runCommandSilent(`execute at ${event.player.username} run playsound minecraft:entity.generic.eat player ${event.player.username} ~ ~ ~`);
-        event.server.scheduleInTicks(6, ctx => {
+        event.server.scheduleInTicks(10+Math.floor(Math.random()*300), ctx => {
             event.server.runCommandSilent(`execute at ${event.player.username} run playsound minecraft:entity.player.burp player ${event.player.username} ~ ~ ~`);
-        })
-        event.server.scheduleInTicks(6+Math.floor(Math.random()*300), ctx => {
-            event.server.runCommandSilent(`execute at ${event.player.username} run summon thermal:fire_tnt ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}`);
-            event.server.runCommandSilent(`execute at ${event.player.username} run summon minecraft:tnt ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}`);
-            event.player.potionEffects.add('minecraft:instant_damage', 1, 99);
+            event.server.scheduleInTicks(15, ctx => {
+                event.server.runCommandSilent(`execute at ${event.player.username} run summon thermal:fire_tnt ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}`);
+                event.server.runCommandSilent(`execute at ${event.player.username} run summon minecraft:tnt ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}`);
+                event.player.potionEffects.add('minecraft:instant_damage', 1, 99);
+            })
         })
     }
 });
