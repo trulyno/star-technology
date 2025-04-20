@@ -87,8 +87,6 @@ ServerEvents.recipes(event => {
         'M': 'gtceu:brick_wooden_form'
     }).keepIngredient('gtceu:brick_wooden_form').id('start:shaped/compressed_fireclay');
 
-    event.recipes.create.mixing('4x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated');
-
     event.recipes.create.pressing('gtceu:rubber_plate', 'thermal:cured_rubber').id('start:pressing/rubber_plate');
 
     event.recipes.gtceu.fluid_solidifier(id('raw_rubber'))
