@@ -724,7 +724,7 @@ ServerEvents.recipes(event => {
 
 });
 
-if (global.packmode !== 'hard'){
+if (global.packmode == 'default'){ //To easy in HM (has its own thing) and for Abydos makes player switch it upa bit
     (() => {   
 
 BlockEvents.rightClicked('minecraft:grass_block', event => {

@@ -1,15 +1,7 @@
-// packmode: hard
-// Keep Packmode bcz easier this way
-const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine');
-
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-    event.create('steam_ore_processing')
-    .category('ore_processing')
-    .setMaxIOSize(1, 4, 1, 0)
-    .setSound(GTSoundEntries.BATH);
-});
-
+if (global.packmode == 'hard'){
+        (() => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+       
     event.create('steam_ore_factory', 'multiblock')
         .machine((holder) => new $SteamMulti(holder, 8))
         .rotationState(RotationState.NON_Y_AXIS)
@@ -34,4 +26,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .build())
     .workableCasingRenderer('kubejs:block/hm/high_steam_machine_casing',
         'kubejs:block/multiblock/primitive_blast_furnace', false);
+    
 }); 
+})()
+}

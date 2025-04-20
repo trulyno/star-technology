@@ -1,14 +1,7 @@
-// packmode: hard
-// Keep Packmode bcz easier this way
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-	event.create('primitive_ore_processing')
-		.category('ore_processing')
-		.setMaxIOSize(2, 4, 1, 0)
-		.setSound(GTSoundEntries.BATH);
-});
-
+if (global.packmode == 'hard'){
+		(() => {  
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-	
+	 
 	event.create('primitive_ore_factory', 'primitive')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('primitive_ore_processing')
@@ -50,4 +43,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 				]
 			})
 		);
+	
 });
+})()
+}

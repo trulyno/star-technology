@@ -1,17 +1,7 @@
-// packmode: hard
-// Keep Packmode bcz easier this way
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-
-    event.create('electric_ore_processing')
-        .category('ore_processing')
-        .setEUIO('in')
-        .setMaxIOSize(1, 5, 1, 0)
-        .setSound(GTSoundEntries.BATH);
-
-});
-
+if (global.packmode == 'hard'){
+        (() => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-
+       
     event.create('electric_ore_factory', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('electric_ore_processing')
@@ -36,5 +26,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel',
         'kubejs:block/multiblock/primitive_blast_furnace', false);
-
+    
 });
+})()
+}
