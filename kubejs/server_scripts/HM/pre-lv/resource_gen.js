@@ -215,7 +215,7 @@ ServerEvents.recipes(event => {
 		{ primary: 'cassiterite', secondary: 'tin', tertiary: 'bismuth' },
 		{ primary: 'galena', secondary: 'sulfur', tertiary: 'silver' },
 		{ primary: 'magnetite', secondary: 'gold', tertiary: 'iron' },
-		{ primary: 'pyrite', secondary: 'sulfur', tertiary: 'tricalcium_phosphate' }
+		{ primary: 'pyrite', secondary: 'sulfur', tertiary: 'antimony' }
 	]
 
 	primitive_processing.forEach(material => {

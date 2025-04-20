@@ -11,7 +11,11 @@
 	quests: [
 		{
 			dependencies: ["16A9D8E864A18B9E"]
-			description: ["The start of any skyblock pack. Who wood have guessed."]
+			description: [
+				"The start of any skyblock pack. Who wood have guessed."
+				""
+				"If this were a skyblock that is......"
+			]
 			id: "5B3D8132C90D790B"
 			rewards: [{
 				count: 2
@@ -181,7 +185,7 @@
 		}
 		{
 			dependencies: ["16A9D8E864A18B9E"]
-			description: ["By sneaking and right-clicking Grass (the dirt one), you can get pebbles for basic stone types."]
+			description: ["Sand, Stone, and maybe a lone village Good Luck"]
 			icon: "minecraft:cobblestone"
 			id: "07CBF849162D7BDF"
 			rewards: [{
@@ -191,20 +195,12 @@
 				type: "item"
 			}]
 			size: 1.0d
-			tasks: [
-				{
-					count: 4L
-					id: "18540F033A0DC299"
-					item: { Count: 4, id: "exnihilosequentia:stone_pebble" }
-					type: "item"
-				}
-				{
-					id: "00FD763580EAA374"
-					item: "minecraft:cobblestone"
-					type: "item"
-				}
-			]
-			title: "Touching Grass"
+			tasks: [{
+				id: "00FD763580EAA374"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "No Touching Grass"
 			x: -4.5d
 			y: -4.0d
 		}
@@ -2389,6 +2385,68 @@
 			}]
 			x: 8.0d
 			y: -4.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"For Abydos Start you'll need to head there if you are to make any progress."
+				""
+				"So why do you think the overworld is where you'll want to be?"
+				""
+				"Things can be different, good luck finding some wood."
+			]
+			disable_toast: true
+			icon: "minecraft:suspicious_sand"
+			id: "546E87B308972911"
+			optional: true
+			rewards: [
+				{
+					auto: "no_toast"
+					command: "/gamestage add @s one"
+					elevate_perms: true
+					icon: "kubejs:abydos_coordinate_crystal"
+					id: "1310F5B22B09C429"
+					silent: true
+					team_reward: false
+					title: "Permission Granted"
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					command: "/execute in sgjourney:abydos run tp @s ~ 80 ~"
+					elevate_perms: true
+					icon: {
+						Count: 1
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "sgjourney:block/sandstone_hieroglyphs"
+						}
+					}
+					id: "55CFC9661C89EA3C"
+					silent: true
+					team_reward: false
+					title: "A New Realm"
+					type: "command"
+				}
+			]
+			shape: "none"
+			size: 2.5d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				disable_toast: true
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "minecraft:item/barrier"
+					}
+				}
+				id: "1BD718CBA5C6CCC9"
+				title: "Sand Time"
+				type: "dimension"
+			}]
+			x: -5.5d
+			y: -6.0d
 		}
 	]
 	title: "Early Game"
