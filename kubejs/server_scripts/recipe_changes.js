@@ -3,30 +3,32 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    // event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust').id('start:pressing/compressed_fireclay');
+    if (global.packmode !== 'hard'){
+        (() => {   
+    
+    event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust').id('start:pressing/compressed_fireclay');
 
-    // event.campfireCooking('gtceu:wrought_iron_ingot', 'minecraft:iron_ingot');
+    event.campfireCooking('gtceu:wrought_iron_ingot', 'minecraft:iron_ingot');
 
-    // event.campfireCooking('minecraft:glass', 'gtceu:glass_dust');
+    event.campfireCooking('minecraft:glass', 'gtceu:glass_dust');
 
-    // Above commented out in HM
+    event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
+        '#forge:plates/iron',
+        'gtceu:wrought_iron_plate'
+    );
+    event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
+        '#forge:rods/iron',
+        'gtceu:wrought_iron_rod'
+    );
+    event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
+        'gtceu:iron_screw',
+        'gtceu:wrought_iron_screw'
+    );
+    })()
+    }
+
 
     event.replaceInput({id: 'create:crafting/kinetics/goggles'}, '#forge:plates/gold', 'gtceu:copper_plate');
-
-
-    // event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
-    //     '#forge:plates/iron',
-    //     'gtceu:wrought_iron_plate'
-    // );
-    // event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
-    //     '#forge:rods/iron',
-    //     'gtceu:wrought_iron_rod'
-    // );
-    // event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
-    //     'gtceu:iron_screw',
-    //     'gtceu:wrought_iron_screw'
-    // );
-    // Above commented out in HM
 
     event.replaceInput({ id: 'gtceu:macerator/macerate_nether_star_lens' },
         '#forge:lenses/white',
@@ -53,60 +55,61 @@ ServerEvents.recipes(event => {
         '#minecraft:wool'
     );
 
-    //Commented out in HM
-    // event.shaped(Item.of('gtceu:wood_plate'), [
-    //     'SSS'
-    // ], {
-    //     S: '#minecraft:wooden_slabs'
-    // }).id('start:shaped/wood_plate');
-
-    //glass tube shenanigans
-    // event.shaped(Item.of('gtceu:glass_tube'), [
-    //     '   ',
-    //     'PPP',
-    //     'PPP'
-    // ], {
-    //     P: 'minecraft:glass_pane'
-    // }).id('start:shaped/glass_tube');
-
     ['tiled','framed','horizontal_framed','vertical_framed'].forEach(type => {
         event.remove({ id: `create:smelting/glass_pane_from_${type}_glass_pane`})
     });
 
-    event.remove({ id: 'create:splashing/stained_glass'})
+    event.remove({ id: 'create:splashing/stained_glass'});
 
-    // event.shaped(Item.of('8x gtceu:compressed_fireclay'), [
-    //     'DDD',
-    //     'DMD',
-    //     'DDD'
-    // ], {
-    //     'D': 'gtceu:fireclay_dust',
-    //     'M': 'gtceu:brick_wooden_form'
-    // }).keepIngredient('gtceu:brick_wooden_form').id('start:shaped/compressed_fireclay');
+    if (global.packmode !== 'hard'){
+        (() => {   
+   event.shaped(Item.of('gtceu:wood_plate'), [
+        'SSS'
+    ], {
+        S: '#minecraft:wooden_slabs'
+    }).id('start:shaped/wood_plate');
 
-    // event.recipes.create.mixing('4x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated');
+    // glass tube shenanigans
+    event.shaped(Item.of('2x gtceu:glass_tube'), [
+        '   ',
+        'PPP',
+        'PPP'
+    ], {
+        P: 'minecraft:glass_pane'
+    }).id('start:shaped/glass_tube');
 
-    // event.recipes.create.pressing('gtceu:rubber_plate', 'thermal:cured_rubber').id('start:pressing/rubber_plate');
+    event.shaped(Item.of('8x gtceu:compressed_fireclay'), [
+        'DDD',
+        'DMD',
+        'DDD'
+    ], {
+        'D': 'gtceu:fireclay_dust',
+        'M': 'gtceu:brick_wooden_form'
+    }).keepIngredient('gtceu:brick_wooden_form').id('start:shaped/compressed_fireclay');
 
-    // event.recipes.gtceu.fluid_solidifier(id('raw_rubber'))
-    //     .inputFluids('thermal:latex 250')
-    //     .itemOutputs('thermal:rubber')
-    //     .duration(120)
-    //     .EUt(8);
+    event.recipes.create.mixing('4x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated');
 
-    // event.recipes.gtceu.extractor(id('latex_extraction'))
-    //     .itemInputs('thermal:rubber')
-    //     .outputFluids('thermal:latex 250')
-    //     .duration(120)
-    //     .EUt(8);
+    event.recipes.create.pressing('gtceu:rubber_plate', 'thermal:cured_rubber').id('start:pressing/rubber_plate');
 
-    // event.recipes.gtceu.chemical_reactor(id('latex_rubber'))
-    //     .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
-    //     .outputFluids('gtceu:rubber 576')
-    //     .duration(240)
-    //     .EUt(8);
+    event.recipes.gtceu.fluid_solidifier(id('raw_rubber'))
+        .inputFluids('thermal:latex 250')
+        .itemOutputs('thermal:rubber')
+        .duration(120)
+        .EUt(8);
 
-    // Above needs commenting out in HM but fine in base
+    event.recipes.gtceu.extractor(id('latex_extraction'))
+        .itemInputs('thermal:rubber')
+        .outputFluids('thermal:latex 250')
+        .duration(120)
+        .EUt(8);
+
+    event.recipes.gtceu.chemical_reactor(id('latex_rubber'))
+        .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
+        .outputFluids('gtceu:rubber 576')
+        .duration(240)
+        .EUt(8);
+    })()
+    }    
 
     //Recipe conflict fix: ethane+chlorine
     event.remove({id: 'gtceu:chemical_reactor/vinyl_chloride_from_ethane'})
@@ -117,11 +120,15 @@ ServerEvents.recipes(event => {
         .EUt(30)
         .circuit(2);
 
-    // event.recipes.gtceu.large_chemical_reactor(id('latex_rubber'))
-    //     .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
-    //     .outputFluids('gtceu:rubber 576')
-    //     .duration(240)
-    //     .EUt(8);
+    if (global.packmode !== 'hard'){
+        (() => {   
+    event.recipes.gtceu.large_chemical_reactor(id('latex_rubber'))
+        .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
+        .outputFluids('gtceu:rubber 576')
+        .duration(240)
+        .EUt(8);
+    })()
+    }
 
     event.recipes.gtceu.extractor(id('nether_agglomeration'))
         .itemInputs('gtceu:netherrack_dust')
@@ -199,14 +206,18 @@ ServerEvents.recipes(event => {
         .duration(5)
         .EUt(30);
 
-    // event.shaped(Item.of('gtceu:rubber_plate'), [
-    //     'H',
-    //     'R',
-    //     'R'
-    // ], {
-    //     H: '#forge:tools/hammers',
-    //     R: 'thermal:cured_rubber'
-    // }).id('start:shaped/rubber_plate');
+    if (global.packmode !== 'hard'){
+        (() => {   
+    event.shaped(Item.of('gtceu:rubber_plate'), [
+        'H',
+        'R',
+        'R'
+    ], {
+        H: '#forge:tools/hammers',
+        R: 'thermal:cured_rubber'
+    }).id('start:shaped/rubber_plate');
+    })()
+    }
 
     const casing = (type,material,casing_id) => {
         event.shaped(Item.of(`2x ${casing_id}:${type}_casing`), [
@@ -372,58 +383,63 @@ ServerEvents.recipes(event => {
         // .addCondition($RockBreakerCondition.INSTANCE);
     });
 
-    // Commented out for HM
-    // event.shaped(Item.of('create_new_age:carbon_brushes'), [
-    //     'SCS',
-    //     'KsK',
-    //     'SSS'
-    // ], {
-    //     S: 'gtceu:steel_plate',
-    //     C: '#gtceu:circuits/lv',
-    //     K: 'minecraft:charcoal',
-    //     s: 'create:shaft'
-    // }).id('start:shaped/carbon_brushes');
+    if (global.packmode !== 'hard'){
+        (() => {   
+       
+    event.shaped(Item.of('create_new_age:carbon_brushes'), [
+        'SCS',
+        'KsK',
+        'SSS'
+    ], {
+        S: 'gtceu:steel_plate',
+        C: '#gtceu:circuits/lv',
+        K: 'minecraft:charcoal',
+        s: 'create:shaft'
+    }).id('start:shaped/carbon_brushes');
 
-    // event.shaped(Item.of('create_new_age:magnetite_block'), [
-    //     'SMS',
-    //     'MSM',
-    //     'SMS'
-    // ], {
-    //     S: 'minecraft:stone',
-    //     M: 'gtceu:magnetite_dust'
-    // }).id('start:shaped/magnetite_block');
+    event.shaped(Item.of('create_new_age:magnetite_block'), [
+        'SMS',
+        'MSM',
+        'SMS'
+    ], {
+        S: 'minecraft:stone',
+        M: 'gtceu:magnetite_dust'
+    }).id('start:shaped/magnetite_block');
 
-    // event.shaped(Item.of('3x create_new_age:redstone_magnet'), [
-    //     'MRM',
-    //     'RBR',
-    //     'MRM'
-    // ], {
-    //     B: 'create_new_age:magnetite_block',
-    //     R: 'minecraft:redstone',
-    //     M: 'gtceu:magnetite_dust'
-    // }).id('start:shaped/redstone_magnet');
+    event.shaped(Item.of('3x create_new_age:redstone_magnet'), [
+        'MRM',
+        'RBR',
+        'MRM'
+    ], {
+        B: 'create_new_age:magnetite_block',
+        R: 'minecraft:redstone',
+        M: 'gtceu:magnetite_dust'
+    }).id('start:shaped/redstone_magnet');
 
-    // event.shaped(Item.of('3x create:belt_connector'), [
-    //     'RRR'
-    // ], {
-    //     R: 'gtceu:rubber_plate'
-    // }).id('start:shaped/belt_connector');
+    event.shaped(Item.of('3x create:belt_connector'), [
+        'RRR'
+    ], {
+        R: 'gtceu:rubber_plate'
+    }).id('start:shaped/belt_connector');
 
-    // //plates
-    // // ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron'].forEach(type => {
-    // //     event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`).id(`start:pressing/${type}_plate`);
-    // // });
-  
+    event.shaped(Item.of('4x create_new_age:netherite_magnet'), [
+        'MNM',
+        'NEN',
+        'MNM'
+    ], {
+        M: 'create_new_age:fluxuated_magnetite',
+        N: 'gtceu:neodymium_ingot',
+        E: 'gtceu:energium_dust'
+    }).id('start:shaped/neodymium_magnet');
+
+    //plates
+    ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron'].forEach(type => {
+        event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`).id(`start:pressing/${type}_plate`);
+    });
+    })()
+    } 
+
     event.replaceInput({id: 'enderchests:ender_pouch'}, 'minecraft:leather', 'gtceu:carbon_fiber_plate');
-    // event.shaped(Item.of('create_new_age:netherite_magnet'), [
-    //     'MNM',
-    //     'NEN',
-    //     'MNM'
-    // ], {
-    //     M: 'create_new_age:fluxuateted_magnetite',
-    //     N: 'gtceu:neodymium_ingot',
-    //     E: 'gtceu:energium_dust'
-    // }).id('start:shaped/neodymium_magnet');
 
     event.recipes.thermal.lapidary_fuel('gtceu:diatron_gem', 750000);
     event.recipes.thermal.lapidary_fuel('gtceu:flawless_diatron_gem', 750000 * 2.5);
@@ -708,23 +724,27 @@ ServerEvents.recipes(event => {
 
 });
 
-//Commented out for HM
-// BlockEvents.rightClicked('minecraft:grass_block', event => {
-//     if (event.player.isCrouching() && event.player.getMainHandItem() == null) {
-//         if (Math.random() < 0.75) {
-//             event.block.popItemFromFace(Item.of('exnihilosequentia:stone_pebble'), 'up');
-//         }
-//         if (Math.random() < 0.5) {
-//             event.block.popItemFromFace(Item.of('exnihilosequentia:andesite_pebble'), 'up');
-//         }
-//         if (Math.random() < 0.5) {
-//             event.block.popItemFromFace(Item.of('exnihilosequentia:granite_pebble'), 'up');
-//         }
-//         if (Math.random() < 0.5) {
-//             event.block.popItemFromFace(Item.of('exnihilosequentia:diorite_pebble'), 'up');
-//         }
-//     } 
-// });
+if (global.packmode !== 'hard'){
+    (() => {   
+
+BlockEvents.rightClicked('minecraft:grass_block', event => {
+    if (event.player.isCrouching() && event.player.getMainHandItem() == null) {
+        if (Math.random() < 0.75) {
+            event.block.popItemFromFace(Item.of('exnihilosequentia:stone_pebble'), 'up');
+        }
+        if (Math.random() < 0.5) {
+            event.block.popItemFromFace(Item.of('exnihilosequentia:andesite_pebble'), 'up');
+        }
+        if (Math.random() < 0.5) {
+            event.block.popItemFromFace(Item.of('exnihilosequentia:granite_pebble'), 'up');
+        }
+        if (Math.random() < 0.5) {
+            event.block.popItemFromFace(Item.of('exnihilosequentia:diorite_pebble'), 'up');
+        }
+    } 
+});
+})()
+}
 
 ServerEvents.tags('block', event => {
     event.remove('mineable/pickaxe', [

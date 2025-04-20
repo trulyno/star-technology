@@ -1,5 +1,3 @@
-// packmode: hard
-
 const $FluidHatchPartMachine = Java.loadClass(
     'com.gregtechceu.gtceu.common.machine.multiblock.part.FluidHatchPartMachine'
 )

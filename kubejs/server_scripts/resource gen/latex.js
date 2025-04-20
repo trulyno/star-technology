@@ -1,48 +1,51 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
+    if (global.packmode !== 'hard'){
+        (() => {   
+    
     //Early Rubbers
-    //commented out for HM
-    // event.custom({
-    //     'type': 'farmersdelight:cooking',
-    //     'recipe_book_tab': 'misc',
-    //     'ingredients': [
-    //       {
-    //         'item': 'thermal:rubber'
-    //       },
-    //       {
-    //         'item': 'gtceu:small_sulfur_dust'
-    //       }
-    //     ],
-    //     'result': {
-    //       'item': 'thermal:cured_rubber',
-    //       'count': 1,
-    //     },
-    //     'cookingtime': 200
-    //   });
+    event.custom({
+        'type': 'farmersdelight:cooking',
+        'recipe_book_tab': 'misc',
+        'ingredients': [
+          {
+            'item': 'thermal:rubber'
+          },
+          {
+            'item': 'gtceu:small_sulfur_dust'
+          }
+        ],
+        'result': {
+          'item': 'thermal:cured_rubber',
+          'count': 1,
+        },
+        'cookingtime': 200
+      });
 
-    // event.recipes.create.mixing('3x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated').id('start:create_mixing/cured_rubber');
+    event.recipes.create.mixing('3x thermal:cured_rubber', ['3x thermal:rubber', '#forge:dusts/sulfur']).heatRequirement('lowheated').id('start:create_mixing/cured_rubber');
 
-    // event.recipes.gtceu.alloy_smelter(id('latex_rubber'))
-    //     .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
-    //     .itemOutputs('3x thermal:cured_rubber')
-    //     .duration(240)
-    //     .EUt(8);
+    event.recipes.gtceu.alloy_smelter(id('latex_rubber'))
+        .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
+        .itemOutputs('3x thermal:cured_rubber')
+        .duration(240)
+        .EUt(8);
 
-    //Controller Block
-	//commented out for HM
-    // event.shaped('gtceu:latex_plantation', [
-	// 	'RSR',
-	// 	'PGP',
-	// 	'BTB'
-	// ], {
-	// 	R: 'gtceu:iron_rod',
-	// 	S: 'gtceu:lead_spring',
-	// 	P: 'gtceu:iron_plate',
-	// 	G: '#forge:glass',
-	// 	B: 'minecraft:bricks',
-	// 	T: 'thermal:redstone_servo'
-	// }).id('start:shaped/latex_plantation');
+    // Controller Block
+    event.shaped('gtceu:latex_plantation', [
+		'RSR',
+		'PGP',
+		'BTB'
+	], {
+		R: 'gtceu:iron_rod',
+		S: 'gtceu:lead_spring',
+		P: 'gtceu:iron_plate',
+		G: '#forge:glass',
+		B: 'minecraft:bricks',
+		T: 'thermal:redstone_servo'
+	}).id('start:shaped/latex_plantation');
+    })()
+    }
 
     //Usage
     event.recipes.gtceu.latex_plantation(`latex`)

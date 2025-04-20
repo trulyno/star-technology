@@ -1,5 +1,3 @@
-// packmode: hard
-
 StartupEvents.registry('item', event => {
 	event.create('flint_shard')
 		.displayName('Flint Shard')

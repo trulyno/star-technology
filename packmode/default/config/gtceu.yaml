@@ -221,8 +221,8 @@ machines:
 
   # Whether to enable World Accelerators, which accelerate ticks for surrounding Tile Entities, Crops, etc.
   # Default: true
-  enableWorldAccelerators: true
-  # Packmode Sensitivity
+  enableWorldAccelerators: false
+  # Packmode Sensitivity, Turned to Purely False for Zeta, too many exploits
 
   # List of TileEntities that the World Accelerator should not accelerate.
   # GregTech TileEntities are always blocked.

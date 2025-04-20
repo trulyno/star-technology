@@ -1,23 +1,22 @@
-if (global.packmode !== 'hard'){
-    (() => {   
-
+// packmode: hard
+// Keep Packmode bcz easier this way
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
-    event.create('plant_ore_processing')
+    event.create('electric_ore_processing')
         .category('ore_processing')
         .setEUIO('in')
-        .setMaxIOSize(1, 6, 1, 0)
+        .setMaxIOSize(1, 5, 1, 0)
         .setSound(GTSoundEntries.BATH);
 
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
-    event.create('ore_processing_plant', 'multiblock')
+    event.create('electric_ore_factory', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('plant_ore_processing')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK])
-        .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
+        .recipeType('electric_ore_processing')
+        .recipeModifier(GTRecipeModifiers.OC_PERFECT)
+        .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' AAA ', ' FFF ', ' FFF ', '  F  ', '     ', '     ', '     ')
             .aisle('AFFFA', 'FG GF', 'F   F', ' F F ', ' FFF ', '  F  ', '  B  ')
@@ -25,20 +24,17 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('AFFFA', 'FG GF', 'F   F', ' F F ', ' FFF ', '  F  ', '  B  ')
             .aisle(' AAA ', ' FCF ', ' FFF ', '  F  ', '     ', '     ', '     ')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('F', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST.get()).setMinGlobalLimited(50)
+            .where('F', Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()).setMinGlobalLimited(50)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('M', Predicates.abilities(PartAbility.MUFFLER))
-            .where('P', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_PIPE.get()))
-            .where('G', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_GEARBOX.get()))
-            .where('A', Predicates.blocks(GTBlocks.FIREBOX_TUNGSTENSTEEL.get()))
+            .where('P', Predicates.blocks(GTBlocks.CASING_STEEL_PIPE.get()))
+            .where('G', Predicates.blocks(GTBlocks.CASING_STEEL_GEARBOX.get()))
+            .where('A', Predicates.blocks(GTBlocks.FIREBOX_STEEL.get()))
             .where('B', Predicates.blocks('gtceu:bronze_machine_casing'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel',
         'kubejs:block/multiblock/primitive_blast_furnace', false);
-        
+
 });
-})()
-}

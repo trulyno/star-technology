@@ -1,16 +1,19 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    // Commented out for HM
-    // event.shaped(Item.of('gtceu:large_farm'), [
-    //     'SPS',
-    //     'PBP',
-    //     'SPS'
-    // ], {
-    //     S: 'gtceu:treated_wood_rod',
-    //     P: 'gtceu:treated_wood_planks',
-    //     B: 'minecraft:bone_meal'
-    // }).id('start:shaped/large_farm');
+    if (global.packmode !== 'hard'){
+        (() => {   
+     event.shaped(Item.of('gtceu:large_farm'), [
+        'SPS',
+        'PBP',
+        'SPS'
+    ], {
+        S: 'gtceu:treated_wood_rod',
+        P: 'gtceu:treated_wood_planks',
+        B: 'minecraft:bone_meal'
+    }).id('start:shaped/large_farm');
+    })()
+    }   
 
     [
         { name: 'minecraft:wheat', seed: 'minecraft:wheat_seeds' },

@@ -1,6 +1,5 @@
-if (global.packmode !== 'hard'){
-	(() => {   
-
+// packmode: hard
+// Keep Packmode bcz easier this way
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 	event.create('primitive_ore_processing')
 		.category('ore_processing')
@@ -21,10 +20,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.aisle('FFFFF', 'FG GF', 'F   F', ' F F ', ' FFF ', '  F  ', '  B  ')
 			.aisle(' FFF ', ' FCF ', ' FFF ', '  F  ', '     ', '     ', '     ')
 			.where('C', Predicates.controller(Predicates.blocks(definition.get())))
-			.where('F', Predicates.blocks(GTBlocks.CASING_PRIMITIVE_BRICKS.get()).setMinGlobalLimited(30)
-				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
-				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
-				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1)))
+			.where('F', Predicates.blocks(GTBlocks.CASING_PRIMITIVE_BRICKS.get()))
 			.where('G', Predicates.blocks(GTBlocks.CASING_BRONZE_PIPE.get()))
 			.where('B', Predicates.blocks('gtceu:bronze_machine_casing'))
 			.where(' ', Predicates.any())
@@ -55,5 +51,3 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			})
 		);
 });
-})()
-}

@@ -1,4 +1,5 @@
-// packmode: default
+if (global.packmode !== 'hard'){
+    (() => {   
 
 ServerEvents.recipes(event => {
     const id = global.id;
@@ -116,3 +117,5 @@ ServerEvents.recipes(event => {
     ironType('minecraft:iron', 720, 5/6)
     ironType('gtceu:wrought_iron', 320, 3/4)
 });
+})()
+}

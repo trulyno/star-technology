@@ -1,5 +1,3 @@
-// packmode: hard
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 	event.create('high_pressure_steam_hammer', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)

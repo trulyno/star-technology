@@ -1,5 +1,3 @@
-// packmode: hard
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 	event.create('rugged_alloyer')
 		.category('rugged_alloyer')

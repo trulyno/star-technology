@@ -37,14 +37,30 @@ ServerEvents.recipes(event => {
 
     //Coordinate Crystals
     
-    event.recipes.gtceu.dimensional_finder(id('abydos_coordinate_crystal'))
-        .itemInputs('kubejs:coordinate_crystal', 'minecraft:sand', 'gtceu:uv_sensor')
-        .inputFluids('gtceu:naquadria 9072')
-        .chancedOutput('kubejs:abydos_coordinate_crystal', 250, 50)
-        .duration(12000)
-        .EUt(GTValues.VHA[GTValues.UV])
-        .dimension('minecraft:overworld');
+    if (global.packmode !== 'abydos'){
+        (() => { 
+        event.recipes.gtceu.dimensional_finder(id('abydos_coordinate_crystal'))
+            .itemInputs('kubejs:coordinate_crystal', 'minecraft:sand', 'gtceu:uv_sensor')
+            .inputFluids('gtceu:naquadria 9072')
+            .chancedOutput('kubejs:abydos_coordinate_crystal', 250, 50)
+            .duration(12000)
+            .EUt(GTValues.VHA[GTValues.UV])
+            .dimension('minecraft:overworld'); 
+        })()
+    }   
 
+    if (global.packmode == 'abydos'){
+        (() => {
+        event.recipes.gtceu.dimensional_finder(id('abydos_coordinate_crystal'))
+            .itemInputs('kubejs:coordinate_crystal', 'minecraft:sand', 'gtceu:uv_sensor')
+            .inputFluids('gtceu:naquadria 9072')
+            .chancedOutput('kubejs:abydos_coordinate_crystal', 9900, 0)
+            .duration(120)
+            .EUt(GTValues.VHA[GTValues.UV])
+            .dimension('sgjourney:abydos');
+        })()
+    }   
+    
     event.recipes.gtceu.dimensional_finder(id('nether_coordinate_crystal'))
         .itemInputs('kubejs:coordinate_crystal', 'minecraft:netherrack', 'gtceu:uhv_sensor')
         .inputFluids('minecraft:lava 5000')

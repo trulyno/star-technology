@@ -1,6 +1,3 @@
-
-// packmode: hard
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('stirling_generator')

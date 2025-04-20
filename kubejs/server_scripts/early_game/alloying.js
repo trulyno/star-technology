@@ -1,4 +1,5 @@
-// packmode: default
+if (global.packmode !== 'hard'){
+    (() => {   
 
 ServerEvents.recipes(event => {
    const id = global.id;
@@ -18,4 +19,6 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing('1x gtceu:soul_infused_ingot', ['2x thermal_extra:soul_sand_dust', '#forge:ingots/invar']).heatRequirement('lowheated').id('start:create_mixing/soul_infused');;
     event.shapeless('1x gtceu:soul_infused_dust', ['thermal_extra:soul_sand_dust', 'thermal_extra:soul_sand_dust', 'gtceu:invar_dust']).id('start:shapeless/soul_infused_dust');
 
-})
+});
+})()
+}

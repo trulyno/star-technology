@@ -1,4 +1,5 @@
-// packmode: default
+if (global.packmode !== 'hard'){
+    (() => {
 
 ServerEvents.recipes(event => {
 const id = global.id
@@ -88,3 +89,5 @@ compost.forEach(type => {
     transformation('exnihilosequentia:sea_water','#minecraft:smelts_to_glass')
     transformation('exnihilosequentia:witch_water','exnihilosequentia:mycelium_spores')
 });
+})()
+}

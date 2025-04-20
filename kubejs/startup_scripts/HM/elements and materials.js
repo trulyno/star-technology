@@ -1,5 +1,3 @@
-// packmode: hard
-
 GTCEuStartupEvents.registry('gtceu:material', event => {
 	event.create('pig_iron')
 		.ingot(1)

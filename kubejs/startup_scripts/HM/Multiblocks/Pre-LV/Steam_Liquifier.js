@@ -1,5 +1,3 @@
-// packmode: hard
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 	event.create('steam_liquifier', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)

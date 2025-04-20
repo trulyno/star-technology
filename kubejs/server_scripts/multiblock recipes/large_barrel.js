@@ -1,17 +1,20 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    // Commented out for HM
-    // event.shaped(Item.of('gtceu:large_barrel'), [
-    //     'PSP',
-    //     'IBI',
-    //     'PSP'
-    // ], {
-    //     P: 'gtceu:treated_wood_planks',
-    //     S: 'gtceu:treated_wood_rod',
-    //     B: 'gtceu:ulv_barrel',
-    //     I: 'gtceu:wrought_iron_plate'
-    // }).id('start:shaped/large_barrel');
+    if (global.packmode !== 'hard'){
+        (() => {   
+    event.shaped(Item.of('gtceu:large_barrel'), [
+        'PSP',
+        'IBI',
+        'PSP'
+    ], {
+        P: 'gtceu:treated_wood_planks',
+        S: 'gtceu:treated_wood_rod',
+        B: 'gtceu:ulv_barrel',
+        I: 'gtceu:wrought_iron_plate'
+    }).id('start:shaped/large_barrel');
+    })()
+    }
 
     event.recipes.gtceu.large_barrel(id('witch_water'))
         .notConsumable('exnihilosequentia:mycelium_spores')

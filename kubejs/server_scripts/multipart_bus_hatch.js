@@ -1,4 +1,5 @@
-// packmode: default
+if (global.packmode !== 'hard'){
+    (() => {   
 
 // Readds Multipart bus/hatch recipes removed in 1.20.1 GT 
 // for ULV and LV tiers with parity to the GTceuM assembler recipes.
@@ -30,3 +31,5 @@ ServerEvents.recipes(event => {
     });
 
 });
+})()
+}

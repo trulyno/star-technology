@@ -1,6 +1,5 @@
-if (global.packmode !== 'hard'){
-    (() => {   
-
+// packmode: hard
+// Keep Packmode bcz easier this way
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('plant_ore_processing')
@@ -40,5 +39,3 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         'kubejs:block/multiblock/primitive_blast_furnace', false);
         
 });
-})()
-}

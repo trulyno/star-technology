@@ -107,17 +107,23 @@ ServerEvents.recipes(event => {
         'minecraft:iron_ingot',
         'minecraft:copper_ingot'
     );
-    // event.remove({ id: 'thermal:redstone_servo' })
-    // event.shaped(Item.of('thermal:redstone_servo', 1), [
-    //     'RPR',
-    //     ' I ',
-    //     'RPR'
-    // ], {
-    //     R: 'minecraft:redstone',
-    //     P: 'gtceu:iron_plate',
-    //     I: 'minecraft:iron_ingot'
-    // }
-    // ).id('start:shaped/redstone_servo');
+    
+    event.remove({ id: 'thermal:redstone_servo' })
+
+    if (global.packmode !== 'hard'){
+        (() => {   
+    event.shaped(Item.of('thermal:redstone_servo', 1), [
+        'RPR',
+        ' I ',
+        'RPR'
+    ], {
+        R: 'minecraft:redstone',
+        P: 'gtceu:iron_plate',
+        I: 'minecraft:iron_ingot'
+    }
+    ).id('start:shaped/redstone_servo');
+    })()
+    }
     event.shaped(Item.of('thermal:rf_coil'), [
         ' RP',
         'RBR',
@@ -176,15 +182,20 @@ ServerEvents.recipes(event => {
         E: 'gtceu:electrum_plate'
     }).id('start:shaped/energy_cell_frame');
 
-    // event.shaped(Item.of('thermal:fluid_cell_frame'), [
-    //     'BTB',
-    //     'TGT',
-    //     'BTB'
-    // ], {
-    //     B: 'gtceu:bronze_plate',
-    //     T: 'gtceu:tin_plate',
-    //     G: '#forge:glass'
-    // }).id('start:shaped/fluid_cell_frame');
+    if (global.packmode !== 'hard'){
+        (() => {   
+    
+    event.shaped(Item.of('thermal:fluid_cell_frame'), [
+        'BTB',
+        'TGT',
+        'BTB'
+    ], {
+        B: 'gtceu:bronze_plate',
+        T: 'gtceu:tin_plate',
+        G: '#forge:glass'
+    }).id('start:shaped/fluid_cell_frame');
+    })()
+    }
 
     event.shaped(Item.of('thermal:machine_frame'), [
         'SSS',
