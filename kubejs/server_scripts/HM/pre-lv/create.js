@@ -139,13 +139,13 @@ ServerEvents.recipes(event => {
 	});
 
 	event.shaped(Item.of('create:copper_casing'), [
-		'RMR',
-		'PFP',
-		'RHR'
+		'PMP',
+		'RFR',
+		'PHP'
 	], {
 		P: 'gtceu:pig_iron_plate',
 		M: '#forge:tools/mallets',
-		R: 'gtceu:copper_tiny_fluid_pipe',
+		R: 'create:fluid_pipe',
 		F: 'gtceu:pig_iron_frame',
 		H: '#forge:tools/hammers'
 	});
@@ -322,7 +322,7 @@ ServerEvents.recipes(event => {
 		H: 'create:brass_hand'
 	});
 
-	event.shaped(Item.of('create:fluid_pipe', 3), [
+	event.shaped(Item.of('create:fluid_pipe', 12), [
 		'PFP',
 		'FPF'
 	], {
@@ -827,7 +827,7 @@ ServerEvents.recipes(event => {
 		'encased_fan', 'large_water_wheel', 'encased_chain_drive', 'gearshift', 'gantry_shaft', 'gantry_carriage', 'mechanical_drill', 'sticker', 'mechanical_saw',
 		'deployer', 'andesite_casing', 'brass_casing', 'mechanical_crafter', 'copper_casing', 'sequenced_gearshift', 'nozzle', 'adjustable_chain_gearshift', 'water_wheel',
 		'andesite_funnel', 'mechanical_arm', 'item_vault', 'flywheel', 'brass_hand', 'whisk', 'propeller', 'electron_tube', 'rotation_speed_controller', 'brass_tunnel',
-		'andesite_tunnel', 'brass_funnel', 'white_sail'];
+		'andesite_tunnel', 'brass_funnel', 'white_sail', 'mechanical_pump'];
 	CreateRemoval.forEach(item => {
 		event.remove({ output: `create:${item}` });
 	});
