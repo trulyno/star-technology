@@ -37,7 +37,7 @@
 	maxFireworkIngredientsInCrafter = 9
 	#.
 	#Allow any stonecutting recipes to be processed by a Mechanical Saw.
-	allowStonecuttingOnSaw = false
+	allowStonecuttingOnSaw = true
 	#.
 	#Allow any Druidcraft woodcutter recipes to be processed by a Mechanical Saw.
 	allowWoodcuttingOnSaw = true
@@ -348,7 +348,7 @@
 	fluidFillPlaceFluidSourceBlocks = true
 	#.
 	#Whether open-ended pipes should be allowed to place fluid sources.
-	pipesPlaceFluidSourceBlocks = false
+	pipesPlaceFluidSourceBlocks = true
 
 #.
 #Tweaks for logistical components

@@ -1,0 +1,1383 @@
+{
+	autofocus_id: "18A35D008CA73084"
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "preparing_for_dimensional_travel"
+	group: "1E0FC4EA21F735F7"
+	icon: "sgjourney:classic_stargate"
+	id: "62A72817F92AC262"
+	order_index: 4
+	progression_mode: "linear"
+	quest_links: [{
+		id: "6AA4625E98ED37B8"
+		linked_quest: "2F87FC1D5BB43220"
+		x: 4.0d
+		y: 0.5d
+	}]
+	quests: [
+		{
+			dependencies: ["4C5DBB94345FF33B"]
+			description: ["Sentience in a circuit."]
+			id: "707C2E9BA62A60C5"
+			rewards: [{
+				count: 2
+				id: "6B546AB752B83ABC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "First UHV Circuit"
+			tasks: [{
+				id: "7D57266E37ABED15"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"707C2E9BA62A60C5"
+				"02606EBF230281A3"
+			]
+			description: ["A Fusion Reactor that you will need a lot of."]
+			id: "314B6ABE72E4A438"
+			rewards: [{
+				count: 2
+				id: "6B0A97854CBB59A1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "63A31B4C5E81DA04"
+				item: "gtceu:uv_fusion_reactor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["314B6ABE72E4A438"]
+			description: [
+				"The core material for &4UHV&r."
+				""
+				"You will need gigantic amounts of this."
+			]
+			id: "5BDA17962F4630EB"
+			rewards: [{
+				count: 2
+				id: "1E040F3B6F4948C9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7451A866F7DF568E"
+				item: "gtceu:neutronium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5BDA17962F4630EB"]
+			description: ["A material used for crafting a pair of machines that you could only dream of, up until now that is."]
+			id: "3ECCE739DE8F5F2C"
+			rewards: [{
+				id: "3DA5E57A968DB4AE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1FE5F219B493E573"
+				item: "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"5BDA17962F4630EB"
+				"1A4583EB1A3D538F"
+			]
+			description: [
+				"The heart of every &4UHV&r machine"
+				""
+				"Not that you will be making a ton of those."
+			]
+			id: "5C39B74171CC21F9"
+			rewards: [{
+				id: "0183789A1E5AA702"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "488237F46BD12A0D"
+				item: "gtceu:uhv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5C39B74171CC21F9"
+				"73D0DC357821B395"
+				"4F6B1F4261874B65"
+				"783865A56909D3C7"
+			]
+			description: ["&4UHV&r power for all your machines."]
+			id: "11D51899B980082B"
+			rewards: [{
+				id: "2E474FF058F620B3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F1FA7FAE4CDE99A"
+				item: "gtceu:uhv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["11D51899B980082B"]
+			description: ["&aUEV&r recipe speeds."]
+			id: "44B43694312BAAC8"
+			rewards: [{
+				id: "439C3636390FF949"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "191E9C431286F067"
+				item: "gtceu:uhv_energy_input_hatch_4a"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"44B43694312BAAC8"
+				"0C19C040CA121E3B"
+			]
+			description: ["This hatch gives you access to &2UIV&r recipe speeds, but is locked behind Abydos."]
+			id: "581B9922CC4B457F"
+			rewards: [{
+				id: "354EE1013EA404DB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D302EA0D6EC6870"
+				item: "gtceu:uhv_energy_input_hatch_16a"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["707C2E9BA62A60C5"]
+			description: ["A Parallel Hatch that will elevate your processing power to a whole new level."]
+			id: "27E656FA93E2A1F4"
+			rewards: [{
+				id: "2FC0A2A1510D510B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "256x Parallel Hatch"
+			tasks: [{
+				id: "24F1943A992D624E"
+				item: "gtceu:uv_parallel_hatch"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1AC8CBF01196D1F3"]
+			description: ["More efficient circuit recipes."]
+			id: "3FE0B664F2D15942"
+			rewards: [{
+				id: "01E1C3C603E976E8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A3F83FB2817AD19"
+				item: "gtceu:highly_advanced_soc_wafer"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0F7A1EA1AB52F795"]
+			description: ["New Wafers, which can even more perfectly emulate the previous tiers."]
+			id: "1AC8CBF01196D1F3"
+			rewards: [{
+				count: 2
+				id: "7E64A0FD0377ABAC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "72F5DF7EB10A1938"
+				item: "gtceu:neutronium_wafer"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5BDA17962F4630EB"]
+			description: ["A new type of Boule, opening up a whole new world of possibilities."]
+			id: "0F7A1EA1AB52F795"
+			rewards: [{
+				id: "42D6FB3B7E75DE20"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B33D272E549765B"
+				item: "gtceu:neutronium_boule"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"239A0034C8425661"
+				"5BDA17962F4630EB"
+			]
+			description: ["So this is raw.. nothing?"]
+			id: "0889A97E22C484CC"
+			rewards: [{
+				id: "515734ACECDB08A0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4889E04488AC39F2"
+				item: "gtceu:raw_void_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5BA69EDC3C223B2C"]
+			description: ["This thing can get &6&oREAL HOT"]
+			id: "60ECE277341A9408"
+			rewards: [{
+				id: "23F129E3F9D9FFE1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "2BDD6909E418101F"
+				item: "gtceu:heat_chamber"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"60ECE277341A9408"
+				"0889A97E22C484CC"
+			]
+			description: ["So this is... pure nothingness? How does that even work?"]
+			id: "7A5734E3CF682EBA"
+			rewards: [{
+				count: 2
+				id: "45A0DE263D7BBCA1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1FE87B4D652A171F"
+				item: "gtceu:void_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5BA69EDC3C223B2C"
+				"7A5734E3CF682EBA"
+			]
+			description: ["This machine can roll up layers and layers of alternating foils and compress them to make Crude Stargate Rods."]
+			id: "027C5CE3CFCB5649"
+			rewards: [{
+				id: "32443F1B809654D6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1009DD7D04373375"
+				item: "gtceu:large_rotor_machine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"027C5CE3CFCB5649"
+				"4DE40B37D609B921"
+			]
+			description: ["Currently unusable because it isn't done quite yet."]
+			id: "5E9936C099FF589C"
+			rewards: [{
+				id: "05AE9E61C946D871"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1FA23DAE21C8EBF8"
+				item: "kubejs:crude_stargate_rod"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2F87FC1D5BB43220"]
+			description: ["Liquid Echo's from sources unknown."]
+			icon: {
+				Count: 1
+				id: "gtceu:echo_r_bucket"
+				tag: { }
+			}
+			id: "239A0034C8425661"
+			rewards: [{
+				id: "3F68400BC1C19CFF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0F233B828108A0AF"
+					item: "gtceu:echo_r_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7D6A01CC1134C595"
+					type: "checkmark"
+				}
+			]
+			title: "Echo Fluid"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["182D948925141764"]
+			description: ["An alloy of two very expensive elements."]
+			id: "1C515302A357B1B8"
+			rewards: [{
+				id: "7DDE8773170387CB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "462D1C2DAFBB310A"
+				item: "gtceu:naquadic_netherite_dust"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1C515302A357B1B8"]
+			description: ["A powder, that, when you listen carefully, produces weird sounds."]
+			id: "5C3AF136913CF8BE"
+			rewards: [{
+				id: "4AC09D2CB06E6B4B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "29DD5FAE5F5E0593"
+				item: "gtceu:runic_laser_source_base_dust"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5C3AF136913CF8BE"]
+			description: ["A special kind of gem, that resonates extensively."]
+			id: "3B85A08B2E08C6FC"
+			rewards: [{
+				id: "31146EC2D33D4B75"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "751CAA0FFFD5F574"
+				item: "gtceu:exquisite_runic_laser_source_base_gem"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"3B85A08B2E08C6FC"
+				"52B553FDB34B1475"
+				"253AECE450920D99"
+			]
+			description: ["A machine used to generate wave patterns. The core for some special casings that will allow you to do amazing things."]
+			id: "75F0388FAB52E0B3"
+			rewards: [{
+				count: 2
+				id: "272B5C381C3B2C9E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6FBE4B007B074145"
+				item: "kubejs:runic_wave_generator"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["75F0388FAB52E0B3"]
+			description: ["A casing to pay homage to an early contributer of the pack, keeping it going."]
+			id: "10D78E10735CD210"
+			rewards: [{
+				id: "3A14DEA6D1AA0502"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "11DEAB85B8592993"
+				item: "kubejs:laser_casing"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"10D78E10735CD210"
+				"7FFCAD92772A175F"
+			]
+			description: ["A colorfull multiblock that can inscribe ancient runes upon dense and strong materials."]
+			id: "6D169C5E35C9EF6C"
+			rewards: [{
+				count: 2
+				id: "73D4DBCF3C2B1167"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "58C2D53C66E327CB"
+				item: "gtceu:runic_circuitry_assembling_station"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["52B553FDB34B1475"]
+			description: ["The secondary &3UV&r superconductor, can hold 256 amps in a 1x cable."]
+			id: "622066696CCF9754"
+			rewards: [{
+				id: "17C57D476BB71F90"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "56BFA0DDAB4186C6"
+				item: "gtceu:melodium_single_wire"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["678B90BF2ACE2BBA"]
+			description: [
+				"A material said to make you hear the song of the universe."
+				""
+				"Your Second &3UV&r Superconductor"
+			]
+			id: "52B553FDB34B1475"
+			rewards: [{
+				id: "0A7609C4179CF5A2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "6DCB4B5D70F0A053"
+				item: "gtceu:melodium_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"678B90BF2ACE2BBA"
+				"52B553FDB34B1475"
+				"7FD0034E639F3B2D"
+			]
+			description: [
+				"A reinforced form of Neutronium, capable of carrying extreme amounts of energy, and resisting the force of tears in space."
+				""
+				"Your &4UHV&r Superconductor"
+			]
+			id: "253AECE450920D99"
+			rewards: [{
+				id: "70C887ECBA6B4542"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C144C6A0C57FED2"
+				item: "gtceu:stellarium_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["253AECE450920D99"]
+			description: ["&4UHV&r superconductor, can hold 512 amps in a 1x cable."]
+			id: "55102B0E5D0238E1"
+			rewards: [{
+				id: "664E3AF7B9872F12"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "204C763B962F836E"
+				item: "gtceu:stellarium_single_wire"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"5E9936C099FF589C"
+				"59711F987DE95924"
+			]
+			description: ["These are finished Stargate Rods, capable of resisting pressure so intense it could, for example, hold open a crack between dimensions."]
+			id: "3792C5D89B1301A0"
+			rewards: [
+				{
+					count: 2
+					id: "7B42B832CC2566A1"
+					item: "kubejs:coin"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/playsound gtceu:metal_pipe master @a"
+					elevate_perms: true
+					icon: "kubejs:stargate_rod"
+					id: "7ECEC393EDED498B"
+					silent: true
+					title: "Bonk"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "54650CBE65808315"
+				item: "kubejs:stargate_rod"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"7FFCAD92772A175F"
+				"3792C5D89B1301A0"
+			]
+			description: ["A powerfull and large multiblock that can assemble parts of a Stargate."]
+			id: "1004D6D7636E0321"
+			rewards: [{
+				count: 2
+				id: "5C62D9BF0BF46FAC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2299AC60A218E4E5"
+				item: "gtceu:stargate_component_assembly"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"6D169C5E35C9EF6C"
+				"1102670352911334"
+			]
+			description: ["Try a variety of singularities so that you don't drain yourself of 1 material"]
+			id: "0508AE03C730BE6C"
+			rewards: [{
+				id: "2B9821F0ED86771C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2B3B1DF6E853151E"
+					item: "kubejs:runic_pathway_engraved_plating"
+					type: "item"
+				}
+				{
+					id: "0D4EE0EF97FB9A90"
+					item: "kubejs:runic_engraved_plating"
+					type: "item"
+				}
+			]
+			title: "Engraved Runes"
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["60ECE277341A9408"]
+			description: ["A machine used to pressure cook the materials of a stargate into their complete forms."]
+			id: "59711F987DE95924"
+			rewards: [{
+				id: "1B33E52F7FEAD5E8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "175B360D69C79895"
+				item: "gtceu:super_pressure_heat_chamber"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5BDA17962F4630EB"]
+			description: ["A Quantum Star that has been arificially made more dense, to the point it will exert it's own gravitational force."]
+			hide_dependency_lines: true
+			id: "7FFCAD92772A175F"
+			rewards: [{
+				id: "41645C4A24DF3CD2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7ED8708DCDB4BEEA"
+				item: "gtceu:gravi_star"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"70D35B4C1D6A143D"
+				"5C7A92625D07C55D"
+				"433E2BCC63E779AF"
+			]
+			description: ["A machine with terrifying potential, that can slash open a rift in the cosmos to connect to a counterpart with just their coordinates and an &l&4IMMENSE&r amount of power."]
+			icon: "sgjourney:classic_stargate"
+			id: "2EDE996312B1C69E"
+			rewards: [{
+				count: 5
+				id: "1887167E5082E04E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Making the Classic Stargate"
+			tasks: [
+				{
+					id: "3794D8CD2FFF022C"
+					item: "sgjourney:crystal_interface"
+					type: "item"
+				}
+				{
+					id: "59EC8A1F0C3AF168"
+					item: "sgjourney:classic_dhd"
+					type: "item"
+				}
+				{
+					id: "33B632BAD77BD438"
+					item: "sgjourney:classic_stargate_base_block"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "58D3B6419E467588"
+					item: { Count: 9, id: "sgjourney:classic_stargate_chevron_block" }
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "60C5306F8C21EE23"
+					item: { Count: 14, id: "sgjourney:classic_stargate_ring_block" }
+					type: "item"
+				}
+			]
+			title: "This is what you have been waiting for"
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"664F435508073B8E"
+				"66D2FB63E81E03AB"
+			]
+			description: ["A computer capable of triangulating planet locations in real time, and opening a path to one."]
+			id: "43B5477B959B2736"
+			rewards: [{
+				count: 2
+				id: "60330B0E11A279F1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "71743E4A3E64FED2"
+				item: "kubejs:classic_stargate_computer_core"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["56D5872D2C33A9CC"]
+			description: ["The path to the sands of Abydos, inscriped on a piece of whispering gemstone."]
+			id: "66D2FB63E81E03AB"
+			rewards: [{
+				id: "37AFE192D0BE0925"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "0D5B1D6D6083AF47"
+				item: "kubejs:abydos_coordinate_crystal"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7A38469EAAABEAAE"]
+			description: ["A machine that sends signals into deep space in the hopes to enscribe the location of found dimensions and cosmic bodies onto coordinate crystals."]
+			id: "56D5872D2C33A9CC"
+			rewards: [{
+				count: 2
+				id: "6BAC26EAB6E1C58F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "14B6FCC56B147A0C"
+				item: "gtceu:dimensional_finder"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2F87FC1D5BB43220"]
+			description: ["A blank slate, that with carefull processing and some luck could be inscribed with coordinates to different realms."]
+			hide_dependency_lines: true
+			id: "7A38469EAAABEAAE"
+			rewards: [{
+				id: "4262C7EF00DC2805"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "78DA046B7DA56437"
+				item: "kubejs:coordinate_crystal"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["707C2E9BA62A60C5"]
+			description: ["A VERY strong computer"]
+			id: "664F435508073B8E"
+			rewards: [{
+				id: "5170CA1F3DC88A00"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "11FCA5CC298E1D30"
+				item: "kubejs:computational_super_matrix"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3ECCE739DE8F5F2C"]
+			description: ["A parallel EBF. Nothing needs to be said, just get it right now."]
+			id: "2EE4C6540FE3D4CF"
+			optional: true
+			rewards: [{
+				id: "173AE84D06BE0BF0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "5D2487028586DCD8"
+				item: "gtceu:mega_blast_furnace"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3ECCE739DE8F5F2C"]
+			description: ["A parallel freezer. Very much necessary to keep up with the RHF on the left."]
+			id: "17C47EC4E8337D7B"
+			optional: true
+			rewards: [{
+				id: "014A406ABD674F80"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "01A147F41AAF7876"
+				item: "gtceu:mega_vacuum_freezer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2EDE996312B1C69E"
+				"5FB0649F878A32D5"
+			]
+			description: ["Visits the sands that hide the remnants of an ancient race of beings, long since gone."]
+			icon: "minecraft:sand"
+			id: "1FB502D770A4A59B"
+			rewards: [{
+				id: "443DDB7EE2F5F57B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				dimension: "sgjourney:abydos"
+				icon: "minecraft:suspicious_sand"
+				id: "57F00393CAEA3780"
+				title: "A New Realm Awaits"
+				type: "dimension"
+			}]
+			title: "To Abydos"
+			x: 9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["707C2E9BA62A60C5"]
+			description: ["It seems components are getting a little complex now."]
+			id: "73D0DC357821B395"
+			rewards: [{
+				count: 2
+				id: "6D48716D5CB32355"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2FE87DC0C4C6A37C"
+				item: "gtceu:component_part_assembly"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0508AE03C730BE6C"
+				"1004D6D7636E0321"
+			]
+			description: ["An extremely dense and resistant block, that can resistant the force of rifts in space."]
+			id: "70D35B4C1D6A143D"
+			rewards: [{
+				id: "3B90C26F72F5A63B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "25674A557F958A6D"
+				item: "sgjourney:classic_stargate_ring_block"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"70D35B4C1D6A143D"
+				"1E47910C2F2112E1"
+			]
+			description: ["A sturdy frame for Chevrons, allowing them to be used in powerfull machines."]
+			id: "433E2BCC63E779AF"
+			rewards: [{
+				id: "3D4753FAE4D98706"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "5C4D138B748666C3"
+				item: "sgjourney:classic_stargate_chevron_block"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"70D35B4C1D6A143D"
+				"43B5477B959B2736"
+			]
+			description: ["A computer integrate into a Ring Block that can communicate with Chevrons to achieve a miracle."]
+			id: "5C7A92625D07C55D"
+			rewards: [{
+				id: "398ACC54F4F42715"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "4599AC331B04887F"
+				item: "sgjourney:classic_stargate_base_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2D713622FA2D6FCA"]
+			description: ["A Stargate Chevron, that can hold a coordinate rune inside it."]
+			id: "1E47910C2F2112E1"
+			rewards: [{
+				count: 2
+				id: "54C194A9B0DB2A89"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "36E762115EC1C647"
+				item: "kubejs:classic_chevron_disk"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2EDE996312B1C69E"]
+			description: [
+				"Attach the Interface to the DHD. Additionally the DHD needs to be in the general area to type in the desired coordinates and link to the Gate."
+				""
+				"&7Yes, you can terminal the helper to build it for you if you so want, but... why?&r"
+				""
+				"Once built, interact &8(R-Click)&r with the base block to see it come together."
+			]
+			id: "653AD979AE4D0581"
+			optional: true
+			tasks: [{
+				id: "080109B2F5298E4A"
+				item: "gtceu:classic_stargate_display"
+				optional_task: true
+				type: "item"
+			}]
+			title: "Stargate Forming Help"
+			x: 3.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1C515302A357B1B8"]
+			description: ["Gems of Netherite and Naquadah, an astronomical expense."]
+			id: "2D713622FA2D6FCA"
+			rewards: [{
+				id: "1C8DB8447086E212"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "33B7CF901768CF24"
+				item: "gtceu:exquisite_naquadic_netherite_gem"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3FC351F05F2AC743"]
+			description: ["A colorfull multiblock used for precise laser cutting to make some incredibly exotic materials."]
+			id: "1C81273869C0EC9F"
+			rewards: [{
+				id: "32925D70150DF477"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "51FFFC651CA18531"
+				item: "gtceu:vibration_laser_engraver"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"21B816D2C178C2D5"
+				"182D948925141764"
+				"5BDA17962F4630EB"
+			]
+			description: ["An alloy that haunts Beta players in their dreams. Depending on how serious you take your infrastructure, it might haunt you as well."]
+			hide_dependency_lines: true
+			id: "4DE40B37D609B921"
+			rewards: [{
+				id: "1FC4FEA09C39C1E4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7780473DF8FEE773"
+				item: {
+					Count: 1
+					id: "gtceu:weapon_grade_naquadah_ingot"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"7F4D5331B59AA5F0"
+				"3B69844600AD5430"
+				"783BDF78D6C56815"
+			]
+			description: ["Who decided to mix and match radioactive elements?"]
+			id: "4F6B1F4261874B65"
+			rewards: [{
+				id: "4CF383A332D3E16B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "32F09CC44B2A4DA7"
+				item: {
+					Count: 1
+					id: "gtceu:thorium_plut_duranide_241_ingot"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2EDE996312B1C69E"]
+			description: ["How did you break /spawn AND /home????????"]
+			icon: "minecraft:red_bed"
+			id: "481D42E3473FDCED"
+			optional: true
+			rewards: [{
+				auto: "invisible"
+				command: "/execute in minecraft:overworld run tp @s 0 -72 0"
+				elevate_perms: true
+				icon: "minecraft:grass_block"
+				id: "21A225E597A188CD"
+				silent: true
+				title: "To the overworld"
+				type: "command"
+			}]
+			tasks: [{
+				id: "10FD7D062F28C45C"
+				title: "So You Got Stuck"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"35829E28221CB70E"
+				"074A6D7A3072E11F"
+			]
+			description: ["A new Soldering Alloy, because the old one really doesn't cut it anymore."]
+			id: "783865A56909D3C7"
+			shape: "circle"
+			tasks: [{
+				id: "4639AA5380F2CC8F"
+				item: {
+					Count: 1
+					id: "gtceu:indium_tin_lead_cadmium_soldering_alloy_ingot"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["630F50E03EC3D144"]
+			description: ["Pure points of &o&lIMMENSE&r mass with which you can write runes that can perform near magic tasks."]
+			id: "1102670352911334"
+			rewards: [{
+				id: "256ED95E87DEA426"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "02E1F6A2DCF9CD07"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:gold"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6D6D20417495FCED"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:nickel"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6D1422700BCD5EDF"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:lead"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0210836066D09A35"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:iron"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1733575CA240FE1A"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:copper"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "087315C6FEF9218E"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:platinum"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7AE4D886A5F2911A"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:tin"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6F69E130B21AC5EC"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:aluminium"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "477D63A1113A02D8"
+					item: {
+						Count: 1
+						id: "extendedcrafting:singularity"
+						tag: {
+							Id: "extendedcrafting:silver"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Singularities"
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["52B553FDB34B1475"]
+			description: ["A machine with the ability to compress enormous amounts of raw elements into a single point."]
+			id: "630F50E03EC3D144"
+			rewards: [{
+				id: "3264040D4AF02053"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "216373443959C451"
+				item: "gtceu:large_quantum_compressor"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			id: "18A35D008CA73084"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "49EF150063D65456"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "1B20B3B25785E3AF"
+				title: "positioner"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2EDE996312B1C69E"]
+			description: ["Right Click the bottom part of the stargate (works for any) with a mallet to reset it's power NBT data to fix the issue. Make sure to let it charge up for a bit before you go dialing."]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "gtceu:textures/gui/overlay/charger_slot_overlay.png"
+				}
+			}
+			id: "5C7AE9D421E5F674"
+			optional: true
+			tasks: [{
+				id: "205A758A70420DB8"
+				title: "\"&cNo Power&r\" ?"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["66D2FB63E81E03AB"]
+			description: [
+				"The hidden knowledge is ripe to be absorbed (read JEI), though would recommend making a copy first."
+				""
+				"Without the knowledge you may never find a way home and surely can't pass through the gates..."
+			]
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "create:item/experience_nugget"
+				}
+			}
+			id: "5FB0649F878A32D5"
+			tasks: [{
+				id: "154528EA5CC03F6C"
+				title: "Absorb the Crystal's Power"
+				type: "checkmark"
+			}]
+			title: "&o&9Absorbing Hidden Knowledge"
+			x: 10.0d
+			y: -3.5d
+		}
+	]
+	title: "Making the Classic Stargate"
+}
