@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('large_quantum_compressor')
         .setEUIO('in')
         .setMaxIOSize(18, 1, 0, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_COMPRESS , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC);
 
 });

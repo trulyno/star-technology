@@ -22,3 +22,10 @@ ServerEvents.tags('item', event => {
 	event.add('kubejs:ball_casting_mold', 'gtceu:ball_casting_mold');
 
 });
+
+ServerEvents.tags('fluid', event => {
+
+	event.remove('create:bottomless/allow', 'minecraft:lava');
+	event.remove('create:bottomless/allow', 'minecraft:water');
+
+});

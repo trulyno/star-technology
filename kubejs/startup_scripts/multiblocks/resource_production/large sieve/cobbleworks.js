@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('cobbleworks')
         .setEUIO('in')
         .setMaxIOSize(1, 1, 2, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
 
 });
