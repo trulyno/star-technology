@@ -1,7 +1,7 @@
 // packmode: hard
 
 ServerEvents.tags('item', event => {
-    const id = global.id;
+
 	[
 		'tin',
 		'zinc',
@@ -24,6 +24,7 @@ ServerEvents.tags('block', event => {
 })
 
 ServerEvents.recipes(event => {
+    const id = global.id;
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 	// ~~~~~~~~~~~ PRE-COBBLEGEN ~~~~~~~~~~~ //
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //

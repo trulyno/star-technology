@@ -29,9 +29,9 @@ ServerEvents.recipes(event => {
     SteamIO('input',['gtceu:bronze_machine_casing','minecraft:chest']);
     SteamIO('output',['minecraft:chest','gtceu:bronze_machine_casing']);
 
-    const SteamCasing = (id,type,core,plate) => {
+    const SteamCasing = (id2,type,core,plate) => {
     if(core == false)
-    event.recipes.create.mechanical_crafting(Item.of(`${id}:${type}`, 2), [
+    event.recipes.create.mechanical_crafting(Item.of(`${id2}:${type}`, 2), [
         'PPP',
         'P P',
         'PPP'
@@ -41,12 +41,12 @@ ServerEvents.recipes(event => {
     if(core == false)
     event.recipes.gtceu.assembler(id(`${type}`))
         .itemInputs(`8x gtceu:${plate}_plate`)
-        .itemOutputs(`2x ${id}:${type}`)
+        .itemOutputs(`2x ${id2}:${type}`)
         .circuit(8)
         .duration(50)
         .EUt(4);
     if(core !== false)
-    event.recipes.create.mechanical_crafting(Item.of(`${id}:${type}`,2), [
+    event.recipes.create.mechanical_crafting(Item.of(`${id2}:${type}`,2), [
         'PSP',
         'PCP',
         'PSP'
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
     if(core !== false)
     event.recipes.gtceu.assembler(id(`${type}`))
         .itemInputs(`${core}`, `6x gtceu:${plate}_plate`, `2x gtceu:${plate}_screw`)
-        .itemOutputs(`2x ${id}:${type}`)
+        .itemOutputs(`2x ${id2}:${type}`)
         .circuit(6)
         .duration(50)
         .EUt(4);
@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
     ]).transitionalItem(inter).loops(1).id('start:sequenced_assembly/ulv_fluid_output');
 
     const PrimSifter = (input,mesh,output) => {
-    event.recipes.gtceu.primitive_sifter(id(`${input}_${mesh}`))
+    event.recipes.gtceu.primitive_sifter(id(`${output.split(':')[1]}_${mesh}`))
         .itemInputs(`16x ${input}`)
         .notConsumable(`exnihilosequentia:${mesh}_mesh`)
         .itemOutputs(`8x ${output}`)

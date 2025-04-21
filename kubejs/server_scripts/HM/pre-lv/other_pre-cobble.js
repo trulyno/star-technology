@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
 		seq_assembly(huge, large, inter, sequence, 6);
 
 		event.recipes.create.cutting(Item.of(tiny, 2), small).id(`start:cutting/${metal}_tiny_fluid_pipe`);
-	});
+	}); // breaks but why on steel pipes
 
 	['small', 'normal', 'large'].forEach((pipe, i) => { // Wooden Pipes
 		seq_assembly(

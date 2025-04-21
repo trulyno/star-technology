@@ -1,6 +1,7 @@
 // packmode: hard
 
 ServerEvents.recipes(event => {
+    const id = global.id;
 
 	// Create Recipes
 	event.recipes.shaped(Item.of('create:item_vault'), [
@@ -492,7 +493,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createPressing(prec, prec),
 		event.recipes.createDeploying(prec, [prec, `gtceu:iron_screw`]),
 		event.recipes.createPressing(prec, prec)
-	]).transitionalItem(prec).loops(4).id('start:sequenced_assembly/double_gold_plate');
+	]).transitionalItem(prec).loops(4).id('start:sequenced_assembly/precision_mechanism');
 
 	let mech = 'create:brass_casing'
 	event.recipes.create.sequenced_assembly([
@@ -703,7 +704,7 @@ ServerEvents.recipes(event => {
 		D: 'create_new_age:overcharged_diamond'
 	}).id('start:mechanical_crafter/fluxuated_magnetite');
 
-	event.recipes.gtceu.assembler(id('netherite_magnet'))
+	event.recipes.gtceu.assembler(id('neodymium_magnet'))
 		.itemInputs('create_new_age:fluxuated_magnetite')
 		.inputFluids('gtceu:neodymium 576')
 		.itemOutputs('create_new_age:netherite_magnet')

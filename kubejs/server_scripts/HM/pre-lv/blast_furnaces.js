@@ -15,7 +15,9 @@ ServerEvents.recipes(event => {
     noSmeltDustToIngot('tin_alloy');
 
     const CreateMixing = (output,inputs,heat) => {
-        event.recipes.create.mixing(output, inputs).heatRequirement(`${heat}`).id(`start:create_mixer/${output.split(':')[1]}`);
+        const idOutput = String(output)
+        const idConst = idOutput.split(':')[1];
+        event.recipes.create.mixing(output, inputs).heatRequirement(`${heat}`).id(`start:create_mixer/${idConst.split(",")[0]}`);
     }
     CreateMixing('2x gtceu:pig_iron_dust', ['2x gtceu:iron_dust', 'gtceu:charcoal_dust'], 'lowheated');
     CreateMixing(Fluid.of('gtceu:cast_iron', 288), ['2x gtceu:crude_cast_iron_dust', 'gtceu:tiny_bismuth_dust', '2x gtceu:tiny_copper_dust'], 'superheated');
@@ -71,17 +73,17 @@ ServerEvents.recipes(event => {
     
     const PrimBlasting = (input,output,Duration,FuelID,FuelType,ashType,FuelIDBlock,FuelTypeBlock,inputType) => {
         if(inputType == 'dust')
-        event.recipes.gtceu.primitive_blast_furnace(id(`${output}_${FuelType}`))
+        event.recipes.gtceu.primitive_blast_furnace(id(`${output.split(':')[1]}_${FuelType}`))
             .itemInputs(input+'_dust',`${FuelID}:${FuelType}`)
             .itemOutputs(output+'_ingot',`gtceu:tiny_${ashType}ash_dust`)
             .duration(Duration);
         else        
-        event.recipes.gtceu.primitive_blast_furnace(id(`${output}_${FuelType}`))
+        event.recipes.gtceu.primitive_blast_furnace(id(`${output.split(':')[1]}_${FuelType}`))
             .itemInputs(input+'_ingot',`${FuelID}:${FuelType}`)
             .itemOutputs(output+'_ingot',`gtceu:tiny_${ashType}ash_dust`)
             .duration(Duration);
         if(inputType == 'ingot')
-        event.recipes.gtceu.primitive_blast_furnace(id(`${output}_block_${FuelTypeBlock}`))
+        event.recipes.gtceu.primitive_blast_furnace(id(`${output.split(':')[1]}_block_${FuelTypeBlock}`))
             .itemInputs(input+'_block',`${FuelIDBlock}:${FuelTypeBlock}`)
             .itemOutputs(output+'_block',`gtceu:${ashType}ash_dust`)
             .duration(9 * Duration);
@@ -92,9 +94,9 @@ ServerEvents.recipes(event => {
     PrimBlasting('gtceu:potin','gtceu:potin',240,'#minecraft','coals','','#gtceu','coal_blocks','dust');
     PrimBlasting('gtceu:potin','gtceu:potin',160,'gtceu','coke_gem','dark_','gtceu','coke_block','dust');
 
-    const CoalType = (id,type,ash,blockID,blockType,DurationMultiplier,amount) => {
+    const CoalType = (id2,type,ash,blockID,blockType,DurationMultiplier,amount) => {
     event.recipes.gtceu.reinforced_blast_furnace(id(`steel_ingot_${type}`))
-        .itemInputs('gtceu:wrought_iron_ingot', `${amount}x ${id}:${type}`)
+        .itemInputs('gtceu:wrought_iron_ingot', `${amount}x ${id2}:${type}`)
         .itemOutputs('gtceu:steel_ingot', `${amount}x gtceu:tiny_${ash}ash_dust`)
         .duration(600 * DurationMultiplier);
     event.recipes.gtceu.reinforced_blast_furnace(id(`steel_block_${blockType}`))
@@ -102,7 +104,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:steel_block', `${amount}x gtceu:${ash}ash_dust`)
         .duration(9 * 600 * DurationMultiplier);
     event.recipes.gtceu.primitive_blast_furnace(id(`steel_ingot_${type}`))
-        .itemInputs('minecraft:glass', `${amount}x ${id}:${type}`)
+        .itemInputs('minecraft:glass', `${amount}x ${id2}:${type}`)
         .itemOutputs('gtceu:tempered_glass', `${amount}x gtceu:tiny_${ash}ash_dust`)
         .duration(400 * DurationMultiplier);
     }

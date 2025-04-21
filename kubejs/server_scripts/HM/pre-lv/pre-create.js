@@ -4,13 +4,17 @@ ServerEvents.recipes(event => {
     const id = global.id;
 
 	const replace_shaped = (output, pattern, symbols) => {
+        const idOutput = String(output);
+        const idConst = idOutput.split(':')[1];
 		event.remove({ type: "minecraft:crafting_shaped", output: output });
-		event.shaped(output, pattern, symbols).id(`start:shaped/${output.split(':')[1]}`);
+		event.shaped(output, pattern, symbols).id(`start:shaped/${idConst.split(',')[0]}`);
 	}
 
 	const replace_shapeless = (output, ingredients) => {
+        const idOutput = String(output);
+        const idConst = idOutput.split(':')[1];
 		event.remove({ type: "minecraft:crafting_shapeless", output: output });
-		event.shapeless(output, ingredients).id(`start:shapeless/${output.split(':')[1]}`);
+		event.shapeless(output, ingredients).id(`start:shapeless/${idConst.split(',')[0]}`);
 	}
 
 	// Tool Recipes
@@ -64,7 +68,7 @@ ServerEvents.recipes(event => {
 		F: 'minecraft:flint',
 		T: '#forge:rods/wood',
 		R: 'kubejs:flint_shard'
-	}).id('start:shaped/flisnt_shovel');
+	}).id('start:shaped/flisnt_pickaxe');
 
 	event.shaped(Item.of('gtceu:flisnt_sword'), [
 		' F ',
@@ -243,7 +247,8 @@ ServerEvents.recipes(event => {
 			R: '#forge:string'
 		});
 
-		replace_shaped(`2x minecraft:${log}_fence`, [
+		event.remove({ type: 'minecraft:crafting_shaped', output: `minecraft:${log}_fence` });
+		event.shaped(`2x minecraft:${log}_fence`, [
 			'PSP',
 			'PSP',
 			'PSP',
@@ -267,9 +272,11 @@ ServerEvents.recipes(event => {
 			C: 'minecraft:chest'
 		});
 
-		replace_shapeless(`2x functionalstorage:${log}_2`, [`2x functionalstorage:${log}_1`]);
+		event.remove({output: `functionalstorage:${log}_2`});
+		event.shapeless(`2x functionalstorage:${log}_2`, [`2x functionalstorage:${log}_1`]);
 
-		replace_shapeless(`2x functionalstorage:${log}_4`, [`2x functionalstorage:${log}_2`]);
+		event.remove({output: `functionalstorage:${log}_4`});
+		event.shapeless(`2x functionalstorage:${log}_4`, [`2x functionalstorage:${log}_2`]);
 		
 		event.shaped(`4x functionalstorage:${log}_4`, [
 			'DD',
