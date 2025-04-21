@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
         .EUt(global.va['ev']);
 
     ['logic', 'engineering', 'calculation'].forEach(type => {
-        event.recipes.gtceu.me_circuit_assembler(`${type}_processor_soc`)
+        event.recipes.gtceu.precise_me_circuit_assembler(`${type}_processor_soc`)
             .itemInputs('kubejs:ae2_soc', `ae2:printed_${type}_processor`)
             .inputFluids('gtceu:skystone 144')
             .itemOutputs(`8x ae2:${type}_processor`)

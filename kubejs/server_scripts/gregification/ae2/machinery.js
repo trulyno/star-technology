@@ -97,6 +97,7 @@ ServerEvents.recipes(event => {
         assembler_rem(wireless.split(':')[1], `${wireless}`, [`${base}`, 'ae2:wireless_receiver', 'ae2:dense_energy_cell', 'gtceu:circuits/hv'], 512)
     }
 
+    event.remove({output: 'ae2:spatial_io_port'})
     event.shaped(Item.of('ae2:spatial_io_port'), [
         'AAA',
         'BCB',

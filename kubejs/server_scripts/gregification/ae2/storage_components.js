@@ -22,11 +22,11 @@ ServerEvents.recipes(event => {
     storage_base('ae2:cell_component_16k', 'ae2:cell_component_4k', 'mv', 'copper');
     storage_base('ae2:cell_component_64k', 'ae2:cell_component_16k', 'hv', 'gold');
     storage_base('ae2:cell_component_256k', 'ae2:cell_component_64k', 'ev', 'aluminium');
-    storage_base('megacells:cell_component_1m', 'ae2:cell_component_256k', 'ev', 'aluminium');
-    storage_base('megacells:cell_component_4m', 'megacells:cell_component_1m', 'iv', 'platinum');
-    storage_base('megacells:cell_component_16m', 'megacells:cell_component_4m', 'luv', 'niobium_titanium');
-    storage_base('megacells:cell_component_64m', 'megacells:cell_component_16m', 'zpm', 'vanadium_gallium');
-    storage_base('megacells:cell_component_256m', 'megacells:cell_component_64m', 'uv', 'yttrium_barium_cuprate');
+    storage_base('megacells:cell_component_1m', 'ae2:cell_component_256k', 'iv', 'platinum');
+    storage_base('megacells:cell_component_4m', 'megacells:cell_component_1m', 'luv', 'niobium_titanium');
+    storage_base('megacells:cell_component_16m', 'megacells:cell_component_4m', 'zpm', 'vanadium_gallium');
+    storage_base('megacells:cell_component_64m', 'megacells:cell_component_16m', 'uv', 'yttrium_barium_cuprate');
+    storage_base('megacells:cell_component_256m', 'megacells:cell_component_64m', 'uhv', 'europium');
 
     const spatial = (tier, storage, voltage) => {
         event.remove({output: `ae2:spatial_cell_component_${tier}`})

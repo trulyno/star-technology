@@ -623,6 +623,11 @@
     "gtceu.me_circuit_assembler": "ME Circuit Assembler",
     "gtceu.me_core_assembler": "ME Core Assembler",
 
+    "block.gtceu.precise_me_core_assembler": "Precise ME Core Assembler Controller",
+
+    "gtceu.precise_me_circuit_assembler": "Precise ME Circuit Assembler",
+    "block.gtceu.precise_me_circuit_assembler": "Precise ME Circuit Assembler Controller",
+
     "material.gtceu.skystone": "Skystone",
     "material.gtceu.gold_skystone_alloy": "Gold Skystone Alloy",
     "material.gtceu.diamond_skystone_alloy": "Diamond Skystone Alloy",
