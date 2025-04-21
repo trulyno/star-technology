@@ -4,7 +4,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('dimensional_finder')
         .setEUIO('in')
         .setMaxIOSize(3, 1, 1, 0)
-        .setSound(GTSoundEntries.ARC);
+        .setProgressBar(GuiTextures.PROGRESS_BAR_REPLICATOR , FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COMPUTATION);
 
 });
 

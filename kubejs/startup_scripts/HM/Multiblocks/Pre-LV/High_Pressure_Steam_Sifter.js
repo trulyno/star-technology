@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('primitive_sifter')
         .setEUIO('in')
         .setMaxIOSize(2, 1, 0, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_SIFT, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CENTRIFUGE);
 
 });

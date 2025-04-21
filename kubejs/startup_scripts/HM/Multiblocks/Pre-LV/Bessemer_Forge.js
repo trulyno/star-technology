@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('bessemer_forge')
         .setEUIO('in')
         .setMaxIOSize(2, 0, 1, 1)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_MACERATE, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.FIRE);
 
 });

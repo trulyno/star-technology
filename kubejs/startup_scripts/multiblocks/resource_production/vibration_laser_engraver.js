@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('vibration_laser_engraver')
         .setEUIO('in')
         .setMaxIOSize(3, 3, 3, 3)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ASSEMBLER);
 
 });

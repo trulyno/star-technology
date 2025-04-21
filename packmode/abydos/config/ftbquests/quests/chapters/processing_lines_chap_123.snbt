@@ -1094,7 +1094,7 @@
 				"3082B526665B4B24"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Processing Ilmenite or Bauxite gives Rutile as byproduct, and you can electrolyze the Ilmenite dust for more Rutile yield."]
+			description: ["Processing Ilmenite or Bauxite gives Rutile as byproduct, and you can electrolyze the Bauxite dust or process Ilmenite for more Rutile yield."]
 			id: "61A21D40EC64D60E"
 			size: 1.0d
 			tasks: [{

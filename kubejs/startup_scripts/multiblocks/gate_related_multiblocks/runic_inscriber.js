@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('runic_inscribe_manipulate')
         .setEUIO('in')
         .setMaxIOSize(3, 1, 3, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_CIRCUIT , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ASSEMBLER);
 
 });

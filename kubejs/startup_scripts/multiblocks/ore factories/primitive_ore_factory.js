@@ -2,6 +2,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 	event.create('primitive_ore_processing')
 		.category('ore_processing')
 		.setMaxIOSize(2, 4, 1, 0)
+		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW , FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.BATH);
 });
 if (global.packmode !== 'hard'){
