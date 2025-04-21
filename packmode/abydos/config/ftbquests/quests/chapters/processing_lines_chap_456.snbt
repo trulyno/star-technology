@@ -2189,12 +2189,21 @@
 				"735064FE12880E7E"
 				"6FBC06172D610905"
 			]
+			icon: "gtceu:lepton_flux_akreyrium_bucket"
 			id: "03C0B34970DB1594"
-			tasks: [{
-				id: "08DF0E1A509FD4A2"
-				item: "gtceu:lepton_flux_akreyrium_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "08DF0E1A509FD4A2"
+					item: "gtceu:lepton_flux_akreyrium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "331FC0F49A49919D"
+					type: "checkmark"
+				}
+			]
+			title: "Lepton-Flux Akreyrium"
 			x: 21.5d
 			y: 9.0d
 		}
@@ -2215,6 +2224,12 @@
 				"48D8836C9CEB8D84"
 			]
 			id: "4B7A774ADE857893"
+			rewards: [{
+				count: 2
+				id: "5821754ED42B0C3C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "04DCB3F7F8B80717"
@@ -2226,34 +2241,61 @@
 		}
 		{
 			dependencies: ["54DA03D41AF36EF2"]
+			icon: "gtceu:sparse_electron_akreyrium_bucket"
 			id: "57E376D65BCE5F65"
-			tasks: [{
-				id: "1C9E1EE29E3CDFA1"
-				item: "gtceu:sparse_electron_akreyrium_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1C9E1EE29E3CDFA1"
+					item: "gtceu:sparse_electron_akreyrium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5687876A839A8030"
+					type: "checkmark"
+				}
+			]
+			title: "Electron Sparse Akreyrium"
 			x: 19.5d
 			y: 11.0d
 		}
 		{
 			dependencies: ["54DA03D41AF36EF2"]
+			icon: "gtceu:sparse_muon_akreyrium_bucket"
 			id: "723C837B04C78E6F"
-			tasks: [{
-				id: "47829C08DD925A60"
-				item: "gtceu:sparse_muon_akreyrium_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "47829C08DD925A60"
+					item: "gtceu:sparse_muon_akreyrium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "43390EABB7515104"
+					type: "checkmark"
+				}
+			]
+			title: "Muon Sparse Akreyrium"
 			x: 19.5d
 			y: 15.0d
 		}
 		{
 			dependencies: ["54DA03D41AF36EF2"]
+			icon: "gtceu:sparse_tau_akreyrium_bucket"
 			id: "6C56E39431575738"
-			tasks: [{
-				id: "5728BA53AC75FFFC"
-				item: "gtceu:sparse_tau_akreyrium_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5728BA53AC75FFFC"
+					item: "gtceu:sparse_tau_akreyrium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0E7E67E774F57E86"
+					type: "checkmark"
+				}
+			]
+			title: "Tau Sparse Akreyrium"
 			x: 19.5d
 			y: 13.0d
 		}
@@ -2308,6 +2350,11 @@
 				"6C56E39431575738"
 			]
 			id: "5A9A8A848F2B735B"
+			rewards: [{
+				id: "7887966493C1BE87"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1C74E130980A182D"
 				item: "gtceu:dense_tau_akreyrium_bucket"
@@ -2322,6 +2369,11 @@
 				"723C837B04C78E6F"
 			]
 			id: "0F6102B3CDB7097D"
+			rewards: [{
+				id: "2BB78D52433E74A3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "56797814EE2FBC0C"
 				item: "gtceu:dense_muon_akreyrium_bucket"
@@ -2336,6 +2388,11 @@
 				"57E376D65BCE5F65"
 			]
 			id: "3D51DB909365D9B3"
+			rewards: [{
+				id: "235CFD26B72ED6F9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "27CD6F2A04C22EDA"
 				item: "gtceu:dense_electron_akreyrium_bucket"
@@ -2351,8 +2408,14 @@
 				"5A9A8A848F2B735B"
 				"48D8836C9CEB8D84"
 			]
-			dependency_requirement: "one_completed"
+			icon: "gtceu:utopian_akreyrium_bucket"
 			id: "7C33054877B2DB16"
+			rewards: [{
+				count: 3
+				id: "41F26704E142DBB5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -2370,12 +2433,20 @@
 				"7C33054877B2DB16"
 			]
 			dependency_requirement: "one_completed"
+			icon: "gtceu:lepton_coalescing_superalloy_bucket"
 			id: "6E96ACA85E8C613C"
-			tasks: [{
-				id: "566BD047658DD7BE"
-				item: "gtceu:lepton_coalescing_superalloy_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "566BD047658DD7BE"
+					item: "gtceu:lepton_coalescing_superalloy_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "18F918E19B0ABBF6"
+					type: "checkmark"
+				}
+			]
 			title: "Partial Superalloy Looping"
 			x: 23.5d
 			y: 11.0d
@@ -2409,12 +2480,21 @@
 		}
 		{
 			dependencies: ["0F75B46E94D3A6C9"]
+			icon: "gtceu:alternating_phase_electron_infusion_flux_bucket"
 			id: "3FF8A91DA67DDD97"
-			tasks: [{
-				id: "04D6FDB00EA60C0C"
-				item: "gtceu:alternating_phase_electron_infusion_flux_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "04D6FDB00EA60C0C"
+					item: "gtceu:alternating_phase_electron_infusion_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "00C742C45A8C9C0A"
+					type: "checkmark"
+				}
+			]
+			title: "Alternating Electron Infused Flux"
 			x: 18.5d
 			y: 12.0d
 		}
@@ -2425,12 +2505,21 @@
 				"370603DBD82E9CD9"
 				"002CFE669BEEC0BA"
 			]
+			icon: "gtceu:brilliant_muon_infusion_flux_bucket"
 			id: "37229FB72AB997FC"
-			tasks: [{
-				id: "2C0B8FBE56F39593"
-				item: "gtceu:brilliant_muon_infusion_flux_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2C0B8FBE56F39593"
+					item: "gtceu:brilliant_muon_infusion_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6B6A59A7AE61F50F"
+					type: "checkmark"
+				}
+			]
+			title: "Brilliant Muon Infused Flux"
 			x: 18.5d
 			y: 16.0d
 		}
@@ -2440,12 +2529,21 @@
 				"6A1AFC8B87871547"
 				"1BE446D3FFD092FE"
 			]
+			icon: "gtceu:ethereal_tau_infusion_flux_bucket"
 			id: "40394150F71A72BA"
-			tasks: [{
-				id: "7848DCF73F6F622B"
-				item: "gtceu:ethereal_tau_infusion_flux_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7848DCF73F6F622B"
+					item: "gtceu:ethereal_tau_infusion_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "03099D2F5F643E54"
+					type: "checkmark"
+				}
+			]
+			title: "Ethereal Tau Infused Flux"
 			x: 18.5d
 			y: 14.0d
 		}
@@ -2534,12 +2632,21 @@
 		}
 		{
 			dependencies: ["3603BAB2512CE301"]
+			icon: "gtceu:mono_phase_electron_infusion_flux_bucket"
 			id: "0820BD4D58208353"
-			tasks: [{
-				id: "15E0A9753948B405"
-				item: "gtceu:mono_phase_electron_infusion_flux_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "15E0A9753948B405"
+					item: "gtceu:mono_phase_electron_infusion_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "268CA04EBA79D590"
+					type: "checkmark"
+				}
+			]
+			title: "Mono-Phase Electron Infused Flux"
 			x: 12.5d
 			y: 14.0d
 		}
@@ -2548,12 +2655,21 @@
 				"5873CED1371E7A3E"
 				"6FBC06172D610905"
 			]
+			icon: "gtceu:lepton_flavour_foundational_flux_bucket"
 			id: "3603BAB2512CE301"
-			tasks: [{
-				id: "1B121F0F32826FAD"
-				item: "gtceu:lepton_flavour_foundational_flux_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1B121F0F32826FAD"
+					item: "gtceu:lepton_flavour_foundational_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "738D776DA418EB80"
+					type: "checkmark"
+				}
+			]
+			title: "Lepton-Flavour Foundational Flux"
 			x: 12.5d
 			y: 16.0d
 		}
@@ -2570,12 +2686,21 @@
 		}
 		{
 			dependencies: ["011136EC6A8DCC28"]
+			icon: "gtceu:superlight_tau_infusion_flux_bucket"
 			id: "6A1AFC8B87871547"
-			tasks: [{
-				id: "2A07BBD3C2849804"
-				item: "gtceu:superlight_tau_infusion_flux_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2A07BBD3C2849804"
+					item: "gtceu:superlight_tau_infusion_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "76FCA497C9F1A82E"
+					type: "checkmark"
+				}
+			]
+			title: "Superlight Tau Infused Flux"
 			x: 16.5d
 			y: 14.0d
 		}
@@ -2584,12 +2709,21 @@
 				"7C2193203F4B0D13"
 				"0253F78B38A6F163"
 			]
+			icon: "gtceu:superheavy_tau_infusion_flux_bucket"
 			id: "1BE446D3FFD092FE"
-			tasks: [{
-				id: "64868BC2E4169A87"
-				item: "gtceu:superheavy_tau_infusion_flux_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "64868BC2E4169A87"
+					item: "gtceu:superheavy_tau_infusion_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "55ADD91A7CBE8FAD"
+					type: "checkmark"
+				}
+			]
+			title: "Superheavy Tau Infused Flux"
 			x: 17.5d
 			y: 15.0d
 		}
@@ -2611,67 +2745,121 @@
 				"011136EC6A8DCC28"
 				"6A1AFC8B87871547"
 			]
+			icon: "gtceu:heavy_tau_infusion_flux_bucket"
 			id: "0253F78B38A6F163"
-			tasks: [{
-				id: "2BA45818024298F0"
-				item: "gtceu:heavy_tau_infusion_flux_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2BA45818024298F0"
+					item: "gtceu:heavy_tau_infusion_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0EFE1B5574930B46"
+					type: "checkmark"
+				}
+			]
+			title: "Heavy Tau Infused Flux"
 			x: 15.5d
 			y: 15.0d
 		}
 		{
 			dependencies: ["3603BAB2512CE301"]
+			icon: "gtceu:light_tau_infusion_flux_bucket"
 			id: "011136EC6A8DCC28"
-			tasks: [{
-				id: "0FEB28E2757EFF7A"
-				item: "gtceu:light_tau_infusion_flux_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0FEB28E2757EFF7A"
+					item: "gtceu:light_tau_infusion_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "04922D09BE4E5ADD"
+					type: "checkmark"
+				}
+			]
+			title: "Light Tau Infused Flux"
 			x: 14.5d
 			y: 14.0d
 		}
 		{
 			dependencies: ["376BFB36EB1155EA"]
+			icon: "gtceu:radiant_muon_infusion_flux_bucket"
 			id: "629A60BEE8C1B057"
-			tasks: [{
-				id: "7470C9B5E5912CB3"
-				item: "gtceu:radiant_muon_infusion_flux_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7470C9B5E5912CB3"
+					item: "gtceu:radiant_muon_infusion_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "14712793174789D5"
+					type: "checkmark"
+				}
+			]
+			title: "Radiant Muon Infused Flux"
 			x: 19.5d
 			y: 17.0d
 		}
 		{
 			dependencies: ["002CFE669BEEC0BA"]
+			icon: "gtceu:shining_muon_infusion_flux_bucket"
 			id: "376BFB36EB1155EA"
-			tasks: [{
-				id: "1BA980C64574309F"
-				item: "gtceu:shining_muon_infusion_flux_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1BA980C64574309F"
+					item: "gtceu:shining_muon_infusion_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "515C6453EFBC16CD"
+					type: "checkmark"
+				}
+			]
+			title: "Shining Muon Infused Flux"
 			x: 18.5d
 			y: 18.0d
 		}
 		{
 			dependencies: ["370603DBD82E9CD9"]
+			icon: "gtceu:glowing_muon_infusion_flux_bucket"
 			id: "002CFE669BEEC0BA"
-			tasks: [{
-				id: "7389C5BECCA4BDB2"
-				item: "gtceu:glowing_muon_infusion_flux_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7389C5BECCA4BDB2"
+					item: "gtceu:glowing_muon_infusion_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5742E684D9FA9D18"
+					type: "checkmark"
+				}
+			]
+			title: "Glowing Muon Infused Flux"
 			x: 17.5d
 			y: 17.0d
 		}
 		{
 			dependencies: ["3603BAB2512CE301"]
+			icon: "gtceu:twinkling_muon_infusion_flux_bucket"
 			id: "370603DBD82E9CD9"
-			tasks: [{
-				id: "5DD34079899EFCCB"
-				item: "gtceu:twinkling_muon_infusion_flux_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5DD34079899EFCCB"
+					item: "gtceu:twinkling_muon_infusion_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5D5589FB305D7C21"
+					type: "checkmark"
+				}
+			]
+			title: "Twinkling Muon Infused Flux"
 			x: 16.5d
 			y: 16.0d
 		}
