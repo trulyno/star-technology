@@ -5,7 +5,7 @@ StartupEvents.registry('item', event => {
         
         event.create(`${tier}_computational_matrix`)
             .texture(`kubejs:item/component_part/${tier}_computational_matrix`)
-            .displayName(`${tier_proper} Computational Matrix`);
+            .displayName(`§${color}${tier_proper}§r Computational Matrix`);
             
         event.create(`${tier}_transmission_assembly`)
             .texture(`kubejs:item/component_part/${tier}_transmission_assembly`)

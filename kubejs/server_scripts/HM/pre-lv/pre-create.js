@@ -3,20 +3,6 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-	const replace_shaped = (output, pattern, symbols) => {
-        const idOutput = String(output);
-        const idConst = idOutput.split(':')[1];
-		event.remove({ type: "minecraft:crafting_shaped", output: output });
-		event.shaped(output, pattern, symbols).id(`start:shaped/${idConst.split(',')[0]}`);
-	}
-
-	const replace_shapeless = (output, ingredients) => {
-        const idOutput = String(output);
-        const idConst = idOutput.split(':')[1];
-		event.remove({ type: "minecraft:crafting_shapeless", output: output });
-		event.shapeless(output, ingredients).id(`start:shapeless/${idConst.split(',')[0]}`);
-	}
-
 	// Tool Recipes
 
 	event.shapeless(Item.of('minecraft:stick'), [
@@ -236,7 +222,8 @@ ServerEvents.recipes(event => {
 		'crimson',
 		'warped'
 	].forEach(log => {
-		replace_shaped(`exnihilosequentia:${log}_sieve`, [
+		event.remove({output: `exnihilosequentia:${log}_sieve`});
+		event.shaped(`exnihilosequentia:${log}_sieve`, [
 			'S S',
 			'SFS',
 			'NRN'
@@ -245,7 +232,7 @@ ServerEvents.recipes(event => {
 			F: 'gtceu:wood_frame',
 			N: `minecraft:${log}_fence`,
 			R: '#forge:string'
-		});
+		}).id(`start:shaped/ens_${log}_sieve`);
 
 		event.remove({ type: 'minecraft:crafting_shaped', output: `minecraft:${log}_fence` });
 		event.shaped(`2x minecraft:${log}_fence`, [
@@ -262,7 +249,8 @@ ServerEvents.recipes(event => {
 
 		if (log == 'bamboo') return;
 
-		replace_shaped(`functionalstorage:${log}_1`, [
+		event.remove({output: `functionalstorage:${log}_1`});
+		event.shaped(`functionalstorage:${log}_1`, [
 			'WSW',
 			'SCS',
 			'WSW'
@@ -270,7 +258,7 @@ ServerEvents.recipes(event => {
 			W: 'gtceu:iron_screw',
 			S: `minecraft:${log}_slab`,
 			C: 'minecraft:chest'
-		});
+		}).id(`start:shaped/funcstor_${log}_drawer_1x`);
 
 		event.remove({output: `functionalstorage:${log}_2`});
 		event.shapeless(`2x functionalstorage:${log}_2`, [`2x functionalstorage:${log}_1`]);
@@ -284,7 +272,8 @@ ServerEvents.recipes(event => {
 		], { D: `functionalstorage:${log}_1` }).id(`start:shaped/${log}_1_alt`);
 	});
 
-	replace_shaped(Item.of('minecraft:crafting_table'), [
+	event.remove({id: `minecraft:crafting_table`});
+	event.shaped(Item.of('minecraft:crafting_table'), [
 		'PCP',
 		'PRP'
 	], {
@@ -293,7 +282,8 @@ ServerEvents.recipes(event => {
 		R: 'gtceu:sticky_resin'
 	});
 
-	replace_shaped(Item.of('gtceu:matchbox'), [
+	event.remove({output: 'gtceu:matchbox'});
+	event.shaped(Item.of('gtceu:matchbox'), [
 		'RRR',
 		'TST',
 		' B '
@@ -302,7 +292,7 @@ ServerEvents.recipes(event => {
 		T: '#forge:rods/wooden',
 		S: 'farmersdelight:straw',
 		B: 'minecraft:bowl'
-	});
+	}).id(`start:shaped/fire_starter`);
 
 	event.remove({ id: 'minecraft:flint_and_steel' });
 	event.shapeless(Item.of('minecraft:flint_and_steel'), [
@@ -321,14 +311,15 @@ ServerEvents.recipes(event => {
 		R: 'minecraft:redstone'
 	}).id('start:shaped/rugged_alloyer');
 
-	replace_shaped(Item.of('minecraft:bowl', 2),
+	event.remove({output: 'minecraft:bowl'});
+	event.shaped(Item.of('minecraft:bowl', 2),
 		[
 			'A',
 			'B'
 		], {
 		A: '#forge:tools/knives',
 		B: '#minecraft:planks'
-	});
+	}).id(`start:shaped/bowls`);
 
 	event.shapeless(Item.of('kubejs:plant_fibers'), [
 		'#forge:tools/knives',
@@ -343,14 +334,14 @@ ServerEvents.recipes(event => {
 	event.recipes.create.cutting(['kubejs:plant_fibers'], 'farmersdelight:straw').id('start:cutting/plant_fibers');
 	event.recipes.create.cutting(['farmersdelight:straw'], 'farmersdelight:tree_bark').id('start:cutting/straw');
 
-	replace_shaped(Item.of('exnihilosequentia:string_mesh'), [
+	event.shaped(Item.of('exnihilosequentia:string_mesh'), [
 		'SSS',
 		'SCS',
 		'SSS'
 	], {
 		S: '#forge:string',
 		C: 'farmersdelight:canvas'
-	});
+	}).id(`start:shaped/ens_string_mesh`);
 
 	event.remove({ id: 'minecraft:kjs/gtceu_wood_plate' });
 
@@ -378,7 +369,8 @@ ServerEvents.recipes(event => {
 		const block = `${modBlock}:${type}bricks`;
 
 		const buckets = [
-			'gtceu:concrete_bucket',
+			{type: 'gtceu:concrete_bucket', variant: 'bucket'},
+			{type:
 			{
 				type: 'forge:partial_nbt',
 				item: 'woodenbucket:wooden_bucket',
@@ -388,7 +380,7 @@ ServerEvents.recipes(event => {
 						Amount: 1000,
 					}
 				}
-			}
+			}, variant: 'wood_bucket'}
 		]
 
 		buckets.forEach(bucket => {
@@ -398,8 +390,8 @@ ServerEvents.recipes(event => {
 				'BBB'
 			], {
 				B: item,
-				C: bucket,
-			}).id(`start:shaped/${type}bricks`);
+				C: bucket.type,
+			}).id(`start:shaped/${bucket.variant}_${type}bricks`);
 		});
 
 		event.recipes.create.compacting(block, [`4x ${item}`, Fluid.of('gtceu:concrete', 400)]).id(`start:compacting/${type}bricks`);

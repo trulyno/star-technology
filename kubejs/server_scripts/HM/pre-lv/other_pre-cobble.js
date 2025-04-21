@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
 	const small_springs = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel'];
 	const wires = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel', 'red_alloy'];
 	const fine_wires = ['copper', 'gold', 'lead', 'tin', 'zinc', 'steel', 'red_alloy'];
-	const fluid_pipes = ['copper', 'steel', 'lead', 'bronze', 'tin_alloy', 'potin', 'steel'];
+	const fluid_pipes = ['copper', 'steel', 'lead', 'bronze', 'tin_alloy', 'potin'];
 	const item_pipes = ['tin', 'brass', 'cupronickel', 'nickel'];
 
 	const seq_assembly = (output, input, inter, sequence, loops) => {
@@ -147,20 +147,6 @@ ServerEvents.recipes(event => {
 		], 2
 	));
 
-	// item_pipes.forEach(metal => {
-	// 	['small', 'normal', 'large', 'huge'].forEach((size, i) => {
-	// 		seq_assembly(
-	// 			`gtceu:${metal}_${size}_item_pipe`,
-	// 			`gtceu:${metal}_ring`,
-	// 			'kubejs:incomplete_item_pipe',
-	// 			[
-	// 				['deploy', plate(metal)],
-	// 				'press'
-	// 			], Math.floor(3 * (2 ** (i - 1))) // 1, 3, 6, 12
-	// 		);
-	// 	});
-	// });
-
 	item_pipes.forEach(metal => {
 		const small = `gtceu:${metal}_small_item_pipe`;
 		const normal = `gtceu:${metal}_normal_item_pipe`;
@@ -198,22 +184,26 @@ ServerEvents.recipes(event => {
 		seq_assembly(large, normal, inter, sequence, 3);
 		seq_assembly(huge, large, inter, sequence, 6);
 
-		event.recipes.create.cutting(Item.of(tiny, 2), small).id(`start:cutting/${metal}_tiny_fluid_pipe`);
-	}); // breaks but why on steel pipes
+		event.recipes.create.cutting(Item.of(tiny, 2), small).id(`start:sequenced_assembly/steel_tiny_fluid_pipe`);
+	});
 
-	['small', 'normal', 'large'].forEach((pipe, i) => { // Wooden Pipes
+	const WoodPipe = (size,loops,start) => {
 		seq_assembly(
-			`gtceu:wood_${pipe}_fluid_pipe`,
-			`gtceu:wood_plate`,
+			`gtceu:wood_${size}_fluid_pipe`,
+			start,
 			'kubejs:incomplete_fluid_pipe',
 			[
 				['deploy', 'gtceu:wood_plate'],
 				['deploy', 'gtceu:wood_screw'],
 				'press',
 				'cut',
-			], i == 0 ? 1 : 3 * i
+			], loops
 		);
-	});
+	}
+
+	WoodPipe('small', 1, 'gtceu:wood_plate');
+	WoodPipe('normal', 2, 'gtceu:wood_small_fluid_pipe');
+	WoodPipe('large', 3, 'gtceu:wood_normal_fluid_pipe');
 
 	//==================================================================//
 
