@@ -1,7 +1,9 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    event.shaped(Item.of('gtceu:large_farm'), [
+    if (global.packmode !== 'hard'){
+        (() => {   
+     event.shaped(Item.of('gtceu:large_farm'), [
         'SPS',
         'PBP',
         'SPS'
@@ -10,6 +12,8 @@ ServerEvents.recipes(event => {
         P: 'gtceu:treated_wood_planks',
         B: 'minecraft:bone_meal'
     }).id('start:shaped/large_farm');
+    })()
+    }   
 
     [
         { name: 'minecraft:wheat', seed: 'minecraft:wheat_seeds' },

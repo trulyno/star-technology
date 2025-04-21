@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(325);
 
-    event.smelting('minecraft:slime_ball', 'thermal:slime_mushroom_spores');
+    // event.smelting('minecraft:slime_ball', 'thermal:slime_mushroom_spores'); // Got Packmoded
 
     event.replaceInput({ id: 'thermal:device_water_gen' },
         'minecraft:copper_ingot',
@@ -107,7 +107,11 @@ ServerEvents.recipes(event => {
         'minecraft:iron_ingot',
         'minecraft:copper_ingot'
     );
+    
     event.remove({ id: 'thermal:redstone_servo' })
+
+    if (global.packmode !== 'hard'){
+        (() => {   
     event.shaped(Item.of('thermal:redstone_servo', 1), [
         'RPR',
         ' I ',
@@ -118,6 +122,8 @@ ServerEvents.recipes(event => {
         I: 'minecraft:iron_ingot'
     }
     ).id('start:shaped/redstone_servo');
+    })()
+    }
     event.shaped(Item.of('thermal:rf_coil'), [
         ' RP',
         'RBR',
@@ -176,6 +182,9 @@ ServerEvents.recipes(event => {
         E: 'gtceu:electrum_plate'
     }).id('start:shaped/energy_cell_frame');
 
+    if (global.packmode !== 'hard'){
+        (() => {   
+    
     event.shaped(Item.of('thermal:fluid_cell_frame'), [
         'BTB',
         'TGT',
@@ -185,6 +194,8 @@ ServerEvents.recipes(event => {
         T: 'gtceu:tin_plate',
         G: '#forge:glass'
     }).id('start:shaped/fluid_cell_frame');
+    })()
+    }
 
     event.shaped(Item.of('thermal:machine_frame'), [
         'SSS',

@@ -5,6 +5,9 @@ sgjourney:chulak
 sgjourney:lantea
 sgjourney:rima
 minecraft:the_end
+sgjourney:rima
+sgjourney:athos
+sgjourney:lantea
 sgjourney:abydos
 minecraft:the_nether
 sgjourney:unitas

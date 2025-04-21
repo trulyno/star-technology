@@ -8,6 +8,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 });
 
+if (global.packmode !== 'hard'){
+    (() => { 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('electric_ore_factory', 'multiblock')
@@ -38,3 +40,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         'kubejs:block/multiblock/primitive_blast_furnace', false);
 
 });
+})()
+}

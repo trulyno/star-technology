@@ -1,5 +1,8 @@
+if (global.packmode !== 'hard'){
+    (() => {   
+
 ServerEvents.recipes(event => {
-    const id = global.id;
+   const id = global.id;
 
     event.shaped(Item.of('itemcollectors:basic_collector'), [
         ' P ',
@@ -21,3 +24,5 @@ ServerEvents.recipes(event => {
     }).id('start:shaped/advanced_collectors');
 
 });
+})()
+}

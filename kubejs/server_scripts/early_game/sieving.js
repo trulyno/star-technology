@@ -1,3 +1,6 @@
+if (global.packmode !== 'hard'){
+    (() => {   
+
 ServerEvents.recipes(event => {
     const id = global.id;
     const dirt = 'minecraft:dirt';
@@ -182,4 +185,5 @@ ServerEvents.recipes(event => {
     sieve('flint', 0.25, dust, 'ae2:sky_dust', false);
 */    
 });
-
+})()
+}

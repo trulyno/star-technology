@@ -1,7 +1,10 @@
+if (global.packmode !== 'hard'){
+    (() => {   
+
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    event.recipes.gtceu.coke_oven(id('sugar_coke'))
+   event.recipes.gtceu.coke_oven(id('sugar_coke'))
         .itemOutputs('minecraft:charcoal')
         .outputFluids(Fluid.of('gtceu:creosote', 50))
         .itemInputs('8x minecraft:sugar_cane')
@@ -39,7 +42,7 @@ ServerEvents.recipes(event => {
             .itemOutputs('2x gtceu:silicon_dust', '2x gtceu:tiny_dark_ash_dust')
             .duration(1000);
 
-        event.recipes.gtceu.solid_blast_furnace(id(`steel_from_magnetite_dust/${cutFuel}`))
+       event.recipes.gtceu.solid_blast_furnace(id(`steel_from_magnetite_dust/${cutFuel}`))
             .itemInputs('7x gtceu:magnetite_dust', '2x gtceu:silicon_dust', `2x ${fuel}`)
             .itemOutputs('3x gtceu:steel_ingot', '6x gtceu:silicon_dioxide_dust', '2x gtceu:tiny_dark_ash_dust')
             .duration(1500);
@@ -114,3 +117,5 @@ ServerEvents.recipes(event => {
     ironType('minecraft:iron', 720, 5/6)
     ironType('gtceu:wrought_iron', 320, 3/4)
 });
+})()
+}

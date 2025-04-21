@@ -721,5 +721,31 @@
     "gtceu.molten_destabilizing": "Molten Destabilization",
     "block.gtceu.molten_destabilizer": "Molten Destabilizer Controller",
     "gtceu.latex_plantation": "Latex Plantation",
-    "block.gtceu.latex_plantation": "Latex Plantation Controller"
+    "block.gtceu.latex_plantation": "Latex Plantation Controller",
+
+    "block.gtceu.kiln": "Kiln",
+    "gtceu.kiln": "Kiln",
+    "block.gtceu.rugged_alloyer": "Rugged Alloyer",
+    "gtceu.rugged_alloyer": "Rugged Alloyer",
+    "material.gtceu.pig_iron": "Pig Iron",
+    "material.gtceu.coke_clay": "Coke Clay",
+    "material.gtceu.flisnt": "Flint",
+    "block.gtceu.reinforced_blast_furnace": "Reinforced Blast Furnace Controller",
+    "gtceu.reinforced_blast_furnace": "Reinforced Blast Furnace",
+    "material.gtceu.crude_cast_iron": "Crude Cast Iron",
+    "material.gtceu.crude_wrought_iron": "Crude Wrought Iron",
+    "material.gtceu.cast_iron": "Cast Iron",
+    "block.gtceu.bessemer_forgery": "Bessemer Forgery Controller",
+    "gtceu.bessemer_forge": "Bessemer Forge",
+    "block.gtceu.circuit_manufacturing_facility": "Circuit Manufacturing Facility Controller",
+    "gtceu.circuit_facility": "Circuit Facility",
+    "block.gtceu.high_pressure_steam_hammer": "High Pressure Steam Hammer Controller",
+    "block.gtceu.high_pressure_steam_sifter": "High Pressure Steam Sifter Controller",
+    "gtceu.primitive_sifter": "Primitive Sifting",
+    "block.gtceu.steam_casting_array": "Steam Casting Array Controller",
+    "block.gtceu.steam_kiln": "Steam Kiln Controller",
+    "block.gtceu.steam_liquifier": "Steam Liquifier Controller",
+    "gtceu.stirling_generator": "Stirling Generator",
+    "gtceu.auto_scavenger": "Auto Scavenger"
+
 }

@@ -1,6 +1,8 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
+    if (global.packmode !== 'hard'){
+        (() => {   
     event.shaped(Item.of('gtceu:large_stone_barrel'), [
         'PSP',
         'IBI',
@@ -11,6 +13,8 @@ ServerEvents.recipes(event => {
         B: 'gtceu:ulv_stone_barrel',
         I: 'gtceu:wrought_iron_plate'
     }).id('start:shaped/large_stone_barrel');
+    })()
+    }    
 
     event.recipes.gtceu.large_stone_barrel(id('lava_from_stones'))
         .itemInputs('#forge:stone')

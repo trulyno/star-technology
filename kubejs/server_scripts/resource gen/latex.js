@@ -1,6 +1,9 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
+    if (global.packmode !== 'hard'){
+        (() => {   
+    
     //Early Rubbers
     event.custom({
         'type': 'farmersdelight:cooking',
@@ -28,8 +31,8 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(8);
 
-    //Controller Block
-	event.shaped('gtceu:latex_plantation', [
+    // Controller Block
+    event.shaped('gtceu:latex_plantation', [
 		'RSR',
 		'PGP',
 		'BTB'
@@ -41,6 +44,8 @@ ServerEvents.recipes(event => {
 		B: 'minecraft:bricks',
 		T: 'thermal:redstone_servo'
 	}).id('start:shaped/latex_plantation');
+    })()
+    }
 
     //Usage
     event.recipes.gtceu.latex_plantation(`latex`)

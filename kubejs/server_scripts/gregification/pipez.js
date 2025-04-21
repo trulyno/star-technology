@@ -1,5 +1,8 @@
+if (global.packmode !== 'hard'){
+    (() => {   
+
 ServerEvents.recipes(event => {
-    const id = global.id;
+   const id = global.id;
     
     event.remove({mod: 'pipez'});
 
@@ -104,3 +107,5 @@ ServerEvents.recipes(event => {
     }).id('start:shaped/filter_destination_tool');
 
 });
+})()
+}

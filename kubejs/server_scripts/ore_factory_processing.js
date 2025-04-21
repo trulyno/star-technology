@@ -1,3 +1,6 @@
+if (global.packmode !== 'hard'){
+    (() => {   
+
 const id = global.id;
 
 /*
@@ -108,6 +111,7 @@ const fluids = {
  * Fuel based ore processing.
  * Blocks 10x the recipe while only 9x the duration.
 */
+
 const primitive_processing = (event, materialObj) => {
     [   { item: '2x #minecraft:coals', duration: 320, multiplier: 1, id: 'coals' },
         { item: '2x #gtceu:coal_dusts', duration: 320, multiplier: 1, id: 'coal_dusts' },
@@ -238,6 +242,8 @@ const plant_ore_processing = (event, materialObj) => {
 ServerEvents.recipes(event => {
 
     // Controllers
+    if (global.packmode !== 'hard'){
+        (() => {   
     event.shaped(Item.of('gtceu:primitive_ore_factory'), [
         'HRS',
         'PBR',
@@ -263,6 +269,8 @@ ServerEvents.recipes(event => {
         B: 'gtceu:steam_machine_casing',
         F: '#forge:tools/screwdrivers'
     }).id('start:shaped/steam_ore_factory');
+    })()
+    }
 
     event.shaped(Item.of('gtceu:electric_ore_factory'), [
         'GCG', 
@@ -304,3 +312,5 @@ ServerEvents.recipes(event => {
         });
     });
 });
+})()
+}

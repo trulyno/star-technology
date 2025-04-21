@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
       .EUt(GTValues.VHA[GTValues.MV]);
   });
   
-
+  // Scrapped
   // event.recipes.gtceu.rock_sifter(id('geode_harvesting'))
   //   .itemInputs('64x minecraft:gravel')
   //   .chancedOutput('kubejs:diamond_geode', 3500, 500)

@@ -7,7 +7,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.BATH);
 
 });
-
+if (global.packmode !== 'hard'){
+    (() => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('ore_processing_plant', 'multiblock')
@@ -37,5 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
         'kubejs:block/multiblock/primitive_blast_furnace', false);
-        
+       
 });
+})()
+} 

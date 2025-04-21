@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"particle": "minecraft:block/stripped_jungle_log_top",
+		"down": "kubejs:block/unformed_table_2_end",
+		"up": "kubejs:block/unformed_table_3_top",
+		"north": "kubejs:block/unformed_table_2_side",
+		"east": "kubejs:block/unformed_table_2_side",
+		"south": "kubejs:block/unformed_table_2_side",
+		"west": "kubejs:block/unformed_table_2_side"
+	}
+}

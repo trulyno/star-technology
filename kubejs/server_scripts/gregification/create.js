@@ -56,6 +56,8 @@ ServerEvents.recipes(event => {
         .EUt(7);
 
     event.remove({output: 'create:andesite_alloy'});
+    if (global.packmode !== 'hard'){
+        (() => {   
     event.shapeless('2x create:andesite_alloy', ['2x minecraft:iron_nugget', '2x exnihilosequentia:andesite_pebble']).id('start:shapeless/andesite_alloy_pebble');
     event.shapeless('16x create:andesite_alloy', ['4x minecraft:andesite', '5x minecraft:iron_nugget']).id('start:shapeless/andesite_alloy_block');
     
@@ -69,5 +71,6 @@ ServerEvents.recipes(event => {
         S: 'create:cogwheel',
         P: 'gtceu:gold_plate'
     }).id('start:shaped/precision_mechanism');
-   
+    })()
+    }
 });
