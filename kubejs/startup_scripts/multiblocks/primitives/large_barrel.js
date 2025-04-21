@@ -3,6 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('large_barrel')
         .category('large_barrel')
         .setMaxIOSize(2, 1, 1, 1)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_BATH , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH);
 
 });

@@ -3,6 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('void_excavation')
         .category('void_excavation')
         .setMaxIOSize(0, 6, 1, 2)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.MINER);
 
 });

@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('essence_enchancing')
         .setEUIO('in')
         .setMaxIOSize(1, 1, 0, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_MAGNET , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER);
 
 });

@@ -2,6 +2,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('dimensional_destabiliser')
         .category('dimensional_destabiliser')
         .setMaxIOSize(3, 3, 3, 3)
+		.setProgressBar(GuiTextures.PROGRESS_BAR_ASSEMBLER , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION);
 });
 

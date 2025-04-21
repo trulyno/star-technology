@@ -3,11 +3,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('solid_blast_furnace')
         .category('solid_blast_furnace')
         .setMaxIOSize(3, 3, 0, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.FURNACE);
 
     event.create('bessemer_blast_furnace')
         .category('bessemer_blast_furnace')
         .setMaxIOSize(3, 3, 0, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.FURNACE);
 })
 

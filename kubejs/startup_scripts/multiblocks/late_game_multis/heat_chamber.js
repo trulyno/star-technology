@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('heat_chamber')
         .setEUIO('in')
         .setMaxIOSize(4, 4, 4, 4)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC);
 
 });

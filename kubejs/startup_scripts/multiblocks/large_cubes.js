@@ -5,6 +5,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('large_rock_crusher')
         .setEUIO('in')
         .setMaxIOSize(1, 1, 2, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_HAMMER , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.FORGE_HAMMER);
 
 });

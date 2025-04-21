@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('super_pressure_heat_chamber')
         .setEUIO('in')
         .setMaxIOSize(3, 3, 3, 3)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_CRYSTALLIZATION , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC);
 
 });

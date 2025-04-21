@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('circuit_facility')
         .setEUIO('in')
         .setMaxIOSize(12, 1, 3, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_CIRCUIT, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.SCIENCE);
 
 });
