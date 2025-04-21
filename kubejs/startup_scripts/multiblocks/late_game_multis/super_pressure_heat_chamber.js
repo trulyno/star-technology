@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('super_pressure_heat_chamber')
@@ -14,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('super_pressure_heat_chamber', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('super_pressure_heat_chamber')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(GCYMBlocks.CASING_STRESS_PROOF)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('HHH SSS HHH', '     S     ', '    SSS    ', '    SSS    ', '   S S S   ', ' SS SSS SS ', 'SSSSSSSSSSS', ' SS SSS SS ', '   S S S   ', '    SSS    ', '    SSS    ', '     S     ', 'HHH SSS HHH')

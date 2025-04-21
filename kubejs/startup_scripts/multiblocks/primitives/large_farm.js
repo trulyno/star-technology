@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('large_farm')
@@ -22,7 +21,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('PPCPP', 'F   F', 'F   F', ' FFF ')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('P', Predicates.blocks(GTBlocks.TREATED_WOOD_PLANK.get())
-                .or(Predicates.autoAbilities(definition.getRecipeTypes())))          
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1)))          
             .where('D', Predicates.blocks('minecraft:farmland'))
             .where('F', Predicates.blocks('gtceu:treated_wood_frame'))
             .where('W', Predicates.fluids('minecraft:water'))

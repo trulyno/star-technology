@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('mechanical_sieve')
@@ -13,6 +12,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('mechanical_sieve', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('mechanical_sieve')
+        .appearanceBlock(() => Block.getBlock('kubejs:wood_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('F   F', 'F   F', 'F   F', 'FFFFF', 'WWWWW', 'WWWWW', 'WWWWW')
             .aisle('     ', '     ', '     ', 'FWWWF', 'WMMMW', 'W   W', 'W   W')
@@ -21,7 +21,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('F   F', 'F   F', 'F   F', 'FFFFF', 'WWCWW', 'WWWWW', 'WWWWW')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('W', Predicates.blocks('kubejs:wood_casing')
-                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1)))
             .where('F', Predicates.blocks('gtceu:treated_wood_frame'))     
             .where('M', Predicates.blocks('kubejs:meshblock'))

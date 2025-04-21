@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('large_stone_barrel')
@@ -20,7 +19,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('DDD', 'PCP', 'PPP', 'PPP')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('P', Predicates.blocks('minecraft:stone')
-                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(2).setPreviewCount(1)))
             .where('D', Predicates.blocks('minecraft:stone_bricks'))
             .where(' ', Predicates.air())
             .build())

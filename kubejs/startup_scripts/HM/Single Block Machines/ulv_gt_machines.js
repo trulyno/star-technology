@@ -1,5 +1,3 @@
-// packmode: hard
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 	const ulv_machine = (machine) => {
 		event.create(machine, 'simple')
@@ -8,5 +6,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 	}
 
 	ulv_machine('mixer');
+	ulv_machine('centrifuge');
 	ulv_machine('assembler');
+	ulv_machine('circuit_assembler');
+
 });

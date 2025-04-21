@@ -2,6 +2,18 @@
 
 // Coarse Dirt Scavenging
 
+const damage_tool = (event) => {
+	const { player, block, item, level } = event;
+
+	if (player.creative) return
+
+	item.damageValue++
+	if (item.damageValue >= item.maxDamage) {
+		item.count--
+		level.playSound(null, block.pos, "minecraft:entity.item.break", "blocks");
+	}
+}
+
 BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 	const { player, block, item, level } = event;
 
@@ -10,15 +22,6 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 	const dig = () => {
 		level.playSound(null, block.pos, "minecraft:block.composter.fill", "blocks");
 		player.swing();
-	}
-
-	const damage_tool = (tool) => {
-		if (tool.damageValue < tool.maxDamage) {
-			tool.damageValue++
-		} else {
-			tool.count--
-			level.playSound(null, block.pos, "minecraft:entity.item.break", "players");
-		}
 	}
 
 	if (player.getMainHandItem() == null && player.getOffHandItem() == null && player.isCrouching()) {
@@ -34,7 +37,7 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 		pop_up('minecraft:flint', 0.2);
 		pop_up('minecraft:cookie', 0.003);
 
-		damage_tool(item);
+		damage_tool(event);
 		dig();
 	};
 
@@ -44,7 +47,7 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 		pop_up('exnihilosequentia:stone_pebble', 0.2);
 		pop_up('minecraft:cookie', 0.004);
 
-		damage_tool(item);
+		damage_tool(event);
 		dig();
 	};
 
@@ -61,31 +64,6 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
 		player.swing();
 	}
 
-	const damage_tool = (tool) => {
-		if (tool.damageValue < tool.maxDamage) {
-			tool.damageValue++
-		} else {
-			tool.count--
-			level.playSound(null, block.pos, "minecraft:entity.item.break", "blocks");
-		}
-	}
-
-	if (player.getMainHandItem() == null && player.getOffHandItem() == null && player.isCrouching()) {
-		pop_up('exnihilosequentia:stone_pebble', 0.01);
-		pop_up('exnihilosequentia:andesite_pebble', 0.05);
-		pop_up('exnihilosequentia:basalt_pebble', 0.05);
-		pop_up('exnihilosequentia:blackstone_pebble', 0.05);
-		pop_up('exnihilosequentia:deepslate_pebble', 0.05);
-		pop_up('exnihilosequentia:diorite_pebble', 0.05);
-		pop_up('exnihilosequentia:granite_pebble', 0.05);
-		pop_up('exnihilosequentia:tuff_pebble', 0.05);
-		pop_up('exnihilosequentia:calcite_pebble', 0.05);
-		pop_up('exnihilosequentia:dripstone_pebble', 0.05);
-		pop_up('minecraft:cookie', 0.006);
-		player.addExhaustion(.02)
-		dig();
-	};
-
 	if (item.id == 'kubejs:basic_scavenging_rod') {
 		pop_up('exnihilosequentia:stone_pebble', 0.03);
 		pop_up('exnihilosequentia:andesite_pebble', 0.09);
@@ -98,8 +76,9 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
 		pop_up('exnihilosequentia:calcite_pebble', 0.09);
 		pop_up('exnihilosequentia:dripstone_pebble', 0.09);
 		pop_up('minecraft:cookie', 0.008);
+		player.addExhaustion(.03)
 
-		damage_tool(item);
+		damage_tool(event);
 		dig();
 	};
 
@@ -115,8 +94,9 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
 		pop_up('exnihilosequentia:calcite_pebble', 0.15);
 		pop_up('exnihilosequentia:dripstone_pebble', 0.15);
 		pop_up('minecraft:cookie', 0.01);
+		player.addExhaustion(.02)
 
-		damage_tool(item);
+		damage_tool(event);
 		dig();
 	};
 });
@@ -132,13 +112,15 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
 	const { hit, tool, get } = crucible;
 
 	BlockEvents.rightClicked(hit, event => {
-		const { player, block, level } = event;
+		const { player, block, level, item } = event;
 
 		if (!player.getMainHandItem().hasTag(tool)) return;
 		if (player.getOffHandItem() !== null) return;
 
 		block.set(get);
 		player.addItem(Item.of('gtceu:wood_dust'));
+
+		damage_tool(event);
 
 		level.playSound(null, block.pos, "minecraft:block.wood.break", "blocks");
 		player.swing();
@@ -149,32 +131,22 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
 	{ hit: 'minecraft:jungle_log', tool: 'forge:tools/saws', get: 'kubejs:crafting_stage_1' },
 	{ hit: 'kubejs:crafting_stage_1', tool: 'forge:tools/axes', get: 'kubejs:crafting_stage_2' },
 	{ hit: 'kubejs:crafting_stage_2', tool: 'forge:tools/knives', get: 'kubejs:crafting_stage_3' },
+	{ hit: 'kubejs:crafting_stage_3', tool: 'farmersdelight:canvas', get: 'minecraft:crafting_table' },
 ].forEach(table => {
 	const { hit, tool, get } = table;
 
 	BlockEvents.rightClicked(hit, event => {
-		const { player, block, level } = event;
+		const { player, block, level, item } = event;
 
-		if (!player.getMainHandItem().hasTag(tool)) return;
-		if (player.getOffHandItem() !== null) return;
+		if (!item.hasTag(tool) && item.id !== 'farmersdelight:canvas') return;
+
+		if (item.id == 'farmersdelight:canvas') item.count--;
+		if (item.hasTag(tool)) damage_tool(event);
 
 		block.set(get);
-
 		level.playSound(null, block.pos, "minecraft:block.wood.break", "blocks");
 		player.swing();
 	});
-});
-
-BlockEvents.rightClicked('kubejs:crafting_stage_3', event => {
-	const { player, block, item, level } = event;
-
-	if (item.id !== 'farmersdelight:canvas') return;
-
-	block.set('minecraft:crafting_table');
-	item.count--;
-
-	level.playSound(null, block.pos, "minecraft:item.dye.use", "blocks");
-	player.swing();
 });
 
 // Crafting Recipes
@@ -195,6 +167,13 @@ ServerEvents.recipes(event => {
 		F: 'minecraft:flint',
 		D: 'minecraft:dirt'
 	});
+
+	event.recipes.create.mixing('2x minecraft:rooted_dirt', ['2x minecraft:dirt', '1x minecraft:mangrove_roots']);
+	event.recipes.gtceu.mixer('rooted_dirt')
+		.itemInputs('minecraft:dirt', 'minecraft:mangrove_roots')
+		.itemOutputs('2x minecraft:rooted_dirt')
+		.duration(100)
+		.EUt(4);
 
 	event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '2x minecraft:flint']);
 	event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '1x minecraft:gravel']);
@@ -219,9 +198,9 @@ ServerEvents.recipes(event => {
 
 	event.recipes.gtceu.stone_barrel('stone_pebble')
 		.circuit(0)
-		.inputFluids('minecraft:lava 5', 'minecraft:water 245')
-		.itemOutputs('exnihilosequentia:stone_pebble')
-		.duration(5);
+		.inputFluids('minecraft:lava 10', 'minecraft:water 990')
+		.itemOutputs('4x exnihilosequentia:stone_pebble')
+		.duration(15);
 
 	event.recipes.gtceu.stone_barrel('obsidian')
 		.circuit(10)
@@ -236,7 +215,7 @@ ServerEvents.recipes(event => {
 		{ primary: 'cassiterite', secondary: 'tin', tertiary: 'bismuth' },
 		{ primary: 'galena', secondary: 'sulfur', tertiary: 'silver' },
 		{ primary: 'magnetite', secondary: 'gold', tertiary: 'iron' },
-		{ primary: 'pyrite', secondary: 'sulfur', tertiary: 'tricalcium_phosphate' }
+		{ primary: 'pyrite', secondary: 'sulfur', tertiary: 'antimony' }
 	]
 
 	primitive_processing.forEach(material => {
@@ -248,6 +227,15 @@ ServerEvents.recipes(event => {
 			.chancedOutput(`gtceu:${material.secondary}_dust`, 2500, 0)
 			.chancedOutput(`gtceu:${material.tertiary}_dust`, 1250, 0)
 			.duration(400);
+		event.recipes.gtceu.steam_ore_processing(`crushed_${material.primary}_ore`)
+			.itemInputs(`gtceu:crushed_${material.primary}_ore`, '2x #minecraft:coals')
+			.inputFluids('minecraft:water 1000')
+			.itemOutputs(`gtceu:${material.primary}_dust`)
+			.chancedOutput(`gtceu:${material.primary}_dust`, 5000, 0)
+			.chancedOutput(`gtceu:${material.secondary}_dust`, 2500, 0)
+			.chancedOutput(`gtceu:${material.tertiary}_dust`, 1250, 0)
+			.duration(320)
+			.EUt(GTValues.VA[GTValues.ULV]);
 	});
 
 	event.recipes.gtceu.barrel('slitake')
@@ -273,20 +261,6 @@ ServerEvents.recipes(event => {
 		.itemOutputs('1x minecraft:dirt')
 		.duration(160);
 
-	// Listed in other regions
-	// const latexType = [{ fuel: 'minecraft:bone_meal', circ: '1' }, { fuel: 'thermal:compost', circ: '2' }, { fuel: 'gtceu:fertilizer', circ: '3' }]
-	// latexType.forEach(latex => {
-	// 	event.recipes.gtceu.latex_plantation(`latex_${latex.circ}`)
-	// 		.chancedInput(`${latex.fuel}`, 2500, 0)
-	// 		.notConsumable('gtceu:iron_screw')
-	// 		.circuit(latex.circ)
-	// 		.outputFluids(`thermal:latex ${100 + 50 * latex.circ}`)
-	// 		.duration(160);
-	// });
-	// event.recipes.gtceu.latex_plantation(`latex`)
-	// 	.notConsumable('gtceu:wood_screw')
-	// 	.outputFluids(`thermal:latex 100`)
-	// 	.duration(160);
 });
 
 // Jungle Wood Stripping (Bark + Resin)

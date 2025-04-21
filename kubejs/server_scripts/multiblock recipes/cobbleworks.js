@@ -1,7 +1,7 @@
-
 ServerEvents.recipes(event => {
+    const id = global.id;
 
-    event.recipes.gtceu.assembler('cobbleworks')
+    event.recipes.gtceu.assembler(id('cobbleworks'))
         .itemInputs('gtceu:iv_machine_hull', '2x #gtceu:circuits/iv', '2x gtceu:double_maraging_steel_300_plate' ,'4x gtceu:pure_netherite_gear')
         .itemOutputs('gtceu:cobbleworks')
         .duration(1200)
@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     const overclock = [256, 512, 1024, 2048];
 
     for (let i = 0; i < 4; i++) {
-        event.recipes.gtceu.cobbleworks(`cobble_to_gravel_${i}`)
+        event.recipes.gtceu.cobbleworks(id(`cobble_to_gravel_${i}`))
             .chancedFluidInput('minecraft:water 1', 1, 0)
             .chancedFluidInput('minecraft:lava 1', 1, 0)
             .itemOutputs(`${overclock[i]}x minecraft:gravel`)
@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
             .EUt(320)
             .circuit(i);
 
-        event.recipes.gtceu.cobbleworks(`cobble_to_sand_${i + 4}`)
+        event.recipes.gtceu.cobbleworks(id(`cobble_to_sand_${i + 4}`))
             .chancedFluidInput('minecraft:water 1', 1, 0)
             .chancedFluidInput('minecraft:lava 1', 1, 0)
             .itemOutputs(`${overclock[i]}x minecraft:sand`)
@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
             .EUt(320)
             .circuit(i + 4);
 
-        event.recipes.gtceu.cobbleworks(`cobble_to_dust_${i + 8}`)
+        event.recipes.gtceu.cobbleworks(id(`cobble_to_dust_${i + 8}`))
             .chancedFluidInput('minecraft:water 1', 1, 0)
             .chancedFluidInput('minecraft:lava 1', 1, 0)
             .itemOutputs(`${overclock[i]}x exnihilosequentia:dust`)
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
             .EUt(320)
             .circuit(i + 8);
 
-        event.recipes.gtceu.cobbleworks(`blackstone_to_crushed_blackstone_${i}`)
+        event.recipes.gtceu.cobbleworks(id(`blackstone_to_crushed_blackstone_${i}`))
             .chancedFluidInput('exnihilosequentia:witch_water 1', 1, 0)
             .chancedFluidInput('minecraft:lava 1', 1, 0)
             .itemOutputs(`${overclock[i]}x exnihilosequentia:crushed_blackstone`)

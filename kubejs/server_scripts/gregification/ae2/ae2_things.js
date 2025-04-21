@@ -1,10 +1,10 @@
-
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     //AncientSkies idea
     //Uncrafting Crafting Storage/Storage Cells
     function applEn(ae2) {
-        event.recipes.gtceu.packer(`start:crafting_storage_${ae2}k_uncrafting`)
+        event.recipes.gtceu.packer(id(`crafting_storage_${ae2}k_uncrafting`))
             .itemInputs(`ae2:${ae2}k_crafting_storage`)
             .itemOutputs(`ae2:cell_component_${ae2}k`)
             .itemOutputs('ae2:crafting_unit')
@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(7);
 
-        event.recipes.gtceu.packer(`start:storage_cell_${ae2}k_uncrafting`)
+        event.recipes.gtceu.packer(id(`storage_cell_${ae2}k_uncrafting`))
             .itemInputs(`ae2:item_storage_cell_${ae2}k`)
             .itemOutputs(`ae2:cell_component_${ae2}k`)
             .itemOutputs('ae2:item_cell_housing')
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(7);
 
-        event.recipes.gtceu.packer(`start:fluid_cell${ae2}k_uncrafting`)
+        event.recipes.gtceu.packer(id(`fluid_cell${ae2}k_uncrafting`))
             .itemInputs(`ae2:fluid_storage_cell_${ae2}k`)
             .itemOutputs(`ae2:cell_component_${ae2}k`)
             .itemOutputs('ae2:fluid_cell_housing')
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
     
     function ae2mega(ae2a) {
 
-        event.recipes.gtceu.packer(`start:crafting_storage_${ae2a}_uncrafting`)
+        event.recipes.gtceu.packer(id(`crafting_storage_${ae2a}_uncrafting`))
             .itemInputs(`megacells:${ae2a}m_crafting_storage`)
             .itemOutputs(`megacells:cell_component_${ae2a}m`)
             .itemOutputs('ae2:crafting_unit')
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(7);
 
-        event.recipes.gtceu.packer(`start:storage_cell_${ae2a}_uncrafting`)
+        event.recipes.gtceu.packer(id(`storage_cell_${ae2a}_uncrafting`))
             .itemInputs(`megacells:item_storage_cell_${ae2a}m`)
             .itemOutputs(`megacells:cell_component_${ae2a}m`)
             .itemOutputs('megacells:mega_item_cell_housing')
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(7);
 
-        event.recipes.gtceu.packer(`start:fluid_cell${ae2a}_uncrafting`)
+        event.recipes.gtceu.packer(id(`fluid_cell${ae2a}_uncrafting`))
             .itemInputs(`megacells:fluid_storage_cell_${ae2a}m`)
             .itemOutputs(`megacells:cell_component_${ae2a}m`)
             .itemOutputs('megacells:mega_fluid_cell_housing')
@@ -74,14 +74,14 @@ ServerEvents.recipes(event => {
         function dyingCable(type) {
 
 
-            event.recipes.gtceu.chemical_bath(`start:${colour}_fluix_${type}`)
+            event.recipes.gtceu.chemical_bath(id(`${colour}_fluix_${type}`))
                 .itemInputs(`8x ae2:fluix_${type}`)
                 .inputFluids(`gtceu:${colour}_dye 36`)
                 .itemOutputs(`8x ae2:${colour}_${type}`)
                 .duration(280)
                 .EUt(100);
 
-            event.recipes.gtceu.chemical_bath(`start:${colour}_uncoloured_${type}`)
+            event.recipes.gtceu.chemical_bath(id(`${colour}_uncoloured_${type}`))
                 .itemInputs(`8x ae2:${colour}_${type}`)
                 .inputFluids('gtceu:chlorine 100')
                 .itemOutputs(`8x ae2:fluix_${type}`)
@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
     //Coating ae2 cables with rubber for covered cable
     function rubberType(rubber, amount) {
 
-        event.recipes.gtceu.assembler(`start:${rubber.path}_covered_cable`)
+        event.recipes.gtceu.assembler(id(`${rubber.path}_covered_cable`))
             .itemInputs(`ae2:fluix_glass_cable`)
             .inputFluids(`${rubber} ${amount}`)
             .itemOutputs(`ae2:fluix_covered_cable`)
@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
     function fluidtype(lube, mb) {
         function metaltype(wire, amount) {
 
-            event.recipes.gtceu.cutter(`start:${wire}_${lube.path}_cable_anchor`)
+            event.recipes.gtceu.cutter(id(`${wire}_${lube.path}_cable_anchor`))
                 .itemInputs(`gtceu:${wire}_single_wire`)
                 .inputFluids(`${lube} ${mb}`)
                 .itemOutputs(`${amount}x ae2:cable_anchor`)

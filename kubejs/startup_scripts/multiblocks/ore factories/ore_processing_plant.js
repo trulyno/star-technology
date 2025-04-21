@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('plant_ore_processing')
@@ -8,7 +7,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.BATH);
 
 });
-
+if (global.packmode !== 'hard'){
+    (() => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('ore_processing_plant', 'multiblock')
@@ -24,7 +24,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle(' AAA ', ' FCF ', ' FFF ', '  F  ', '     ', '     ', '     ')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('F', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST.get()).setMinGlobalLimited(50)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(2).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where('M', Predicates.abilities(PartAbility.MUFFLER))
@@ -36,5 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
         'kubejs:block/multiblock/primitive_blast_furnace', false);
-        
+       
 });
+})()
+} 

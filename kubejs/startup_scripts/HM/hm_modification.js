@@ -1,5 +1,5 @@
 // packmode: hard
-
+// Keep so doesnt bork non-HM
 BlockEvents.modification(event => {
 	const no_punch = (log) => {
 		event.modify(log, block => {

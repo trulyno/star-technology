@@ -28,8 +28,7 @@ ServerEvents.recipes(event => {
 		'create:crafting/kinetics/shaft',
 		'create:crafting/kinetics/belt_connector',
 		'minecraft:crafting_table',
-		'gtceu:shaped/iron_wire_single',
-		'gtceu:shaped/bronze_bricks_hull',
+		'gtceu:shaped/iron_wire_single'
 	].forEach(id => event.remove({ id: id }));
 
 	[
@@ -38,7 +37,8 @@ ServerEvents.recipes(event => {
 	].forEach(input => event.remove({ type: 'exnihilosequentia:harvest', input: input }));
 
 	[
-		'exnihilosequentia:silkworm',// removes silkworm obtainability
+		'exnihilosequentia:silkworm',
+		'exnihilosequentia:stone_barrel',
 		'#exnihilosequentia:crook',
 		'#exnihilosequentia:hammer',
 		'create:zinc_ingot'
@@ -50,8 +50,16 @@ ServerEvents.recipes(event => {
 	].forEach(type => event.remove({ type: type }));
 
 	event.remove({ input: /^exnihilosequentia:.*_pebble/ });
+	event.remove({ output: 'exnihilosequentia:unfired_crucible' });
+	event.remove({ mod: 'colossalchests' });
+	event.remove({ mod: 'pipez' });
 
-	event.replaceInput({ input: 'minecraft:string' },
-		'minecraft:string',            
-		'#forge:string'     )
+	event.replaceInput({ input: 'minecraft:string' }, 'minecraft:string', '#forge:string');
+})
+
+ServerEvents.afterRecipes(event => {
+	event.forEachRecipe([{ type: 'minecraft:smelting' }, { type: 'minecraft:blasting' }], recipe => {
+		event.remove({ id: recipe.getId() });
+		event.custom(recipe.json).id(recipe.getId() + '_manual_only');
+	});
 })

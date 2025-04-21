@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('runic_inscribe_manipulate')
@@ -15,6 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('runic_inscribe_manipulate')
         .recipeModifier(GTRecipeModifiers.OC_PERFECT)
+        .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
         .pattern(definition => FactoryBlockPattern.start()
         	.aisle('AAAAAAAAAAAAAAAAAAAAAAA', 'AAAAAAAAAAAAAAAAAAAAAAA', '                       ', '                       ', '                       ', '  B    B       B    B  ', '  B    B       B    B  ', '  B    B       B    B  ', '  B    B       B    B  ', '  B    B       B    B  ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ', '                       ') 	
             .aisle('AAAAAAAAAAAAAAAAAAAAAAA', 'ACCCCCCCCCCCCCCCCCCCCCA', '                       ', '                       ', '  B    B       B    B  ', '  BBBBBB       BBBBBB  ', ' CCDDDDCC     CCDDDDCC ', ' CCDDDDCC     CCDDDDCC ', ' CCDDDDCC     CCDDDDCC ', '  BBBBBB       BBBBBB  ', '  B    B       B    B  ', '                       ', '                       ', '                       ', '                       ', '          BBB          ', '                       ') 	
@@ -30,10 +30,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('D', Predicates.blocks('gtceu:fusion_glass'))	
             .where('E', Predicates.blocks('kubejs:stellarium_casing'))	
             .where('F', Predicates.blocks('kubejs:ancient_runicalium_casing'))	
-            .where('G', Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(3)
+            .where('G', Predicates.blocks('gtceu:atomic_casing')
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(3))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(3))
-                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                .or(Predicates.blocks('gtceu:atomic_casing'))) 
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))) 
             .where('H', Predicates.blocks('gtceu:superconducting_coil'))	
             .where('I', Predicates.blocks('gtceu:fusion_coil'))	
             .where('J', Predicates.abilities(PartAbility.INPUT_ENERGY))	

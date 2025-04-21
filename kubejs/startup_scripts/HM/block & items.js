@@ -1,5 +1,3 @@
-// packmode: hard
-
 StartupEvents.registry('item', event => {
 	event.create('flint_shard')
 		.displayName('Flint Shard')
@@ -29,7 +27,7 @@ StartupEvents.registry('item', event => {
 	event.create('charcoal_pellet')
 		.displayName('Charcoal Pellet')
 		.rarity('common')
-		.burnTime(320)
+		.burnTime(720)
 		.texture(`kubejs:item/hm/pre-lv/charcoal_pellet`);
 
 	event.create('water_bowl')
@@ -65,7 +63,6 @@ StartupEvents.registry('item', event => {
 		`Incomplete Small Spring`,
 		`Incomplete Single Wire`,
 		`Incomplete Fine Wire`,
-		`Incomplete Cable`,
 		`Incomplete Fluid Pipe`,
 		`Incomplete Item Pipe`,
 	]
@@ -92,6 +89,25 @@ StartupEvents.registry('item', event => {
 		.maxDamage(1024)
 		.unstackable()
 		.texture(`kubejs:item/hm/pre-lv/scavenging_rod`);
+
+	// ================================================================================== //
+
+	['Electric Motor', 'Electric Pump', 'Conveyor Module', 'Robot Arm', 'Electric Piston', 'Emitter'].forEach(ULVComp => {
+		const id = `${ULVComp.toLowerCase().replace(' ','_')}`
+		event.create(`ulv_${id}`)
+			.displayName(`ULV ${ULVComp}`)
+			.texture(`kubejs:item/hm/pre-lv/ulv_${id}`);
+	});
+
+	['Ingot', 'Ball', 'Raw'].forEach(Ceramic => {
+		event.create(`unfired_${Ceramic.toLowerCase()}_ceramic_casting_mold`)
+			.displayName(`Unfired ${Ceramic} Ceramic Casting Mold`)
+			.texture(`kubejs:item/hm/pre-lv/unfired_${Ceramic.toLowerCase()}_ceramic_casting_mold`);
+		if (Ceramic !== 'Raw')
+		event.create(`${Ceramic.toLowerCase()}_ceramic_casting_mold`)
+			.displayName(`${Ceramic} Ceramic Casting Mold`)
+			.texture(`kubejs:item/hm/pre-lv/${Ceramic.toLowerCase()}_ceramic_casting_mold`);
+	});
 
 });
 
@@ -143,6 +159,16 @@ StartupEvents.registry('block', event => {
 			.tagBlock("minecraft:mineable/axe")
 			.tagBlock("minecraft:needs_stone_tool");
 	});
+
+	event.create('high_steam_machine_casing')
+		.displayName('High Steam Machine Casing')
+		.hardness(5)
+		.resistance(1)
+		.soundType('stone')
+		.requiresTool(true)
+		.tagBlock("mineable/pickaxe")
+		.tagBlock('minecraft:needs_iron_tool')
+		.textureAll('kubejs:block/hm/high_steam_machine_casing');
 });
 
 ItemEvents.modification(event => {

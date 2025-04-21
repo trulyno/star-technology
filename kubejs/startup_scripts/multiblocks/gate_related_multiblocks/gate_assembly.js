@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('gate_assembly')
         .category('gate_assembly')
@@ -12,6 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('gate_assembly')
         .recipeModifier(GTRecipeModifiers.OC_PERFECT)
+        .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()	
             .aisle('               HHHHHHHHH               ', '               HHHHHHHHH               ', '                                       ', '                                       ', '                                       ', '                                       ', '                                       ', '                                       ', '                                       ', '                                       ', '                                       ', '               JJJJJJJJJ               ', '                                       ', '                                       ', '                                       ', '                                       ') 
             .aisle('            HHHJJJJJJJJJHHH            ', '            HHHJJJLLLJJJHHH            ', '                 KMMMK                 ', '                 KMMMK                 ', '                 KMMMK                 ', '                 K I K                 ', '                 K I K                 ', '                 K I K                 ', '                 KMMMK                 ', '                 KMMMK                 ', '                 KMMMK                 ', '            JJJJJJTTTJJJJJJ            ', '                                       ', '                                       ', '                                       ', '                                       ') 
