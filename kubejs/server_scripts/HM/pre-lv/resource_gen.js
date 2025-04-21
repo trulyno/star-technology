@@ -152,12 +152,13 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
 // Crafting Recipes
 
 ServerEvents.recipes(event => {
+    const id = global.id;
 	event.shaped(Item.of('minecraft:flint'), [
 		'SS',
 		'SS'
 	], {
 		S: 'kubejs:flint_shard'
-	});
+	}).id('start:shaped/flint');
 
 	event.remove({ id: 'minecraft:coarse_dirt' })
 	event.shaped(Item.of('minecraft:coarse_dirt', 2), [
@@ -166,17 +167,17 @@ ServerEvents.recipes(event => {
 	], {
 		F: 'minecraft:flint',
 		D: 'minecraft:dirt'
-	});
+	}).id('start:shaped/coarse_dirt');
 
-	event.recipes.create.mixing('2x minecraft:rooted_dirt', ['2x minecraft:dirt', '1x minecraft:mangrove_roots']);
-	event.recipes.gtceu.mixer('rooted_dirt')
+	event.recipes.create.mixing('2x minecraft:rooted_dirt', ['2x minecraft:dirt', '1x minecraft:mangrove_roots']).id('start:create_mixer/rooted_dirt');
+	event.recipes.gtceu.mixer(id('rooted_dirt'))
 		.itemInputs('minecraft:dirt', 'minecraft:mangrove_roots')
 		.itemOutputs('2x minecraft:rooted_dirt')
 		.duration(100)
 		.EUt(4);
 
-	event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '2x minecraft:flint']);
-	event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '1x minecraft:gravel']);
+	event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '2x minecraft:flint']).id('start:create_mixer/coarse_dirt_flint');
+	event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '1x minecraft:gravel']).id('start:create_mixer/coarse_dirt_gravel');
 
 	const stones = ['andesite', 'basalt', 'blackstone', 'deepslate', 'diorite', 'granite', 'tuff', 'calcite', 'dripstone']
 
@@ -186,7 +187,7 @@ ServerEvents.recipes(event => {
 			'PP'
 		], {
 			P: `exnihilosequentia:${stone}_pebble`
-		});
+		}).id(`start:shaped/crushed${stone}`);
 	});
 
 	event.shaped(Item.of('minecraft:cobblestone'), [
@@ -194,15 +195,15 @@ ServerEvents.recipes(event => {
 		'PP'
 	], {
 		P: 'exnihilosequentia:stone_pebble'
-	});
+	}).id('start:shaped/cobblestone');
 
-	event.recipes.gtceu.stone_barrel('stone_pebble')
+	event.recipes.gtceu.stone_barrel(id('stone_pebble'))
 		.circuit(0)
 		.inputFluids('minecraft:lava 10', 'minecraft:water 990')
 		.itemOutputs('4x exnihilosequentia:stone_pebble')
 		.duration(15);
 
-	event.recipes.gtceu.stone_barrel('obsidian')
+	event.recipes.gtceu.stone_barrel(id('obsidian'))
 		.circuit(10)
 		.inputFluids('minecraft:lava 1000', 'minecraft:water 1000')
 		.itemOutputs('minecraft:obsidian')
@@ -219,7 +220,7 @@ ServerEvents.recipes(event => {
 	]
 
 	primitive_processing.forEach(material => {
-		event.recipes.gtceu.primitive_ore_processing(`crushed_${material.primary}_ore`)
+		event.recipes.gtceu.primitive_ore_processing(id(`crushed_${material.primary}_ore`))
 			.itemInputs(`gtceu:crushed_${material.primary}_ore`, '2x #minecraft:coals')
 			.inputFluids('minecraft:water 1000')
 			.itemOutputs(`gtceu:${material.primary}_dust`)
@@ -227,7 +228,7 @@ ServerEvents.recipes(event => {
 			.chancedOutput(`gtceu:${material.secondary}_dust`, 2500, 0)
 			.chancedOutput(`gtceu:${material.tertiary}_dust`, 1250, 0)
 			.duration(400);
-		event.recipes.gtceu.steam_ore_processing(`crushed_${material.primary}_ore`)
+		event.recipes.gtceu.steam_ore_processing(id(`crushed_${material.primary}_ore`))
 			.itemInputs(`gtceu:crushed_${material.primary}_ore`, '2x #minecraft:coals')
 			.inputFluids('minecraft:water 1000')
 			.itemOutputs(`gtceu:${material.primary}_dust`)
@@ -238,25 +239,25 @@ ServerEvents.recipes(event => {
 			.EUt(GTValues.VA[GTValues.ULV]);
 	});
 
-	event.recipes.gtceu.barrel('slitake')
+	event.recipes.gtceu.barrel(id('slitake'))
 		.notConsumable('thermal:slime_mushroom_spores')
 		.inputFluids('exnihilosequentia:witch_water 200')
 		.chancedOutput('thermal:slime_mushroom_spores', 7000, 0)
 		.duration(240);
 
-	event.recipes.gtceu.barrel_transformation('soul_sand')
+	event.recipes.gtceu.barrel_transformation(id('soul_sand'))
 		.itemInputs('minecraft:sand')
 		.inputFluids('exnihilosequentia:witch_water 1000')
 		.itemOutputs('minecraft:soul_sand')
 		.duration(600);
 
-	event.recipes.gtceu.barrel_transformation('witch_water')
+	event.recipes.gtceu.barrel_transformation(id('witch_water'))
 		.chancedInput('exnihilosequentia:mycelium_spores', 5000, 0)
 		.inputFluids('minecraft:water 1000')
 		.outputFluids('exnihilosequentia:witch_water 1000')
 		.duration(800);
 
-	event.recipes.gtceu.barrel_composting('dirt')
+	event.recipes.gtceu.barrel_composting(id('dirt'))
 		.itemInputs('4x #minecraft:leaves')
 		.itemOutputs('1x minecraft:dirt')
 		.duration(160);

@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.IV])
 
     // Thallium Tungstate (Shaky Casing)
-    event.recipes.gtceu.chemical_plant('thallium_tungstate')
+    event.recipes.gtceu.chemical_plant(id('thallium_tungstate'))
         .itemInputs('1x gtceu:tungsten_dust', '2x gtceu:thallium_dust')
         .inputFluids('gtceu:oxygen 4000')
         .itemOutputs('1x gtceu:thallium_tungstate_dust')

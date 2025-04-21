@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
 		S: 'gtceu:iron_screw',
 		B: 'minecraft:barrel',
 		F: 'gtceu:iron_foil'
-	});
+	}).id('start:shaped/item_vault');
 
 	event.recipes.create.mechanical_crafting('create:mechanical_arm', [
 		'HAR',
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
 		A: 'create:andesite_alloy',
 		P: 'create:precision_mechanism',
 		C: 'create:brass_casing'
-	});
+	}).id('start:shaped/mechanical_arm');
 
 	event.recipes.shaped(Item.of('create:spout'), [
 		'PPP',
@@ -40,9 +40,9 @@ ServerEvents.recipes(event => {
 		P: 'gtceu:copper_plate',
 		R: 'gtceu:rubber_ring',
 		I: 'gtceu:copper_normal_fluid_pipe'
-	});
+	}).id('start:shaped/spout');
 
-	event.shapeless('create:shaft', ['#forge:tools/files', '2x create:andesite_alloy']);
+	event.shapeless('create:shaft', ['#forge:tools/files', '2x create:andesite_alloy']).id('start:shapeless/shaft');
 
 	event.recipes.shaped(Item.of('create:encased_chain_drive', 2), [
 		'SN ',
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
 		S: 'create:shaft',
 		C: 'create:andesite_casing',
 		N: 'minecraft:chain'
-	});
+	}).id('start:shaped/encased_chain_drive');
 
 	event.recipes.shaped(Item.of('create:adjustable_chain_gearshift', 2), [
 		'SNT',
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
 		C: 'create:andesite_casing',
 		N: 'minecraft:chain',
 		T: 'create:electron_tube'
-	});
+	}).id('start:shaped/adjustable_chain_gearshift');
 
 	event.recipes.shaped(Item.of('create:gearshift'), [
 		'RCG'
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
 		R: 'minecraft:redstone_torch',
 		C: 'create:andesite_casing',
 		G: 'create:cogwheel'
-	});
+	}).id('start:shaped/gearshift');
 
 	event.recipes.shaped(Item.of('create:sequenced_gearshift'), [
 		'RCG'
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
 		R: 'create:electron_tube',
 		C: 'create:brass_casing',
 		G: 'create:cogwheel'
-	});
+	}).id('start:shaped/sequenced_gearshift');
 
 	event.recipes.shaped(Item.of('create:depot'), [
 		'APA',
@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
 		C: 'create:andesite_casing',
 		A: 'create:andesite_alloy',
 		S: 'gtceu:iron_screw'
-	});
+	}).id('start:shaped/depot');
 
 	event.recipes.shaped(Item.of('create:fluid_tank', 2), [
 		'PGP',
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
 		G: 'minecraft:glass_pane',
 		C: 'create:copper_casing',
 		P: 'gtceu:copper_plate',
-	});
+	}).id('start:shaped/fluid_tank');
 
 	event.recipes.shaped(Item.of('create:weighted_ejector'), [
 		'DPA',
@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
 		C: 'create:depot',
 		S: 'create:shaft',
 		D: 'gtceu:gold_plate'
-	});
+	}).id('start:shaped/weighted_ejector');
 
 	event.recipes.create.mechanical_crafting('create:steam_engine', [
 		'GSG',
@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
 		A: 'create:andesite_alloy',
 		P: 'gtceu:copper_plate',
 		C: 'create:copper_casing'
-	});
+	}).id('start:shaped/steam_engine');
 
 	event.shaped(Item.of('create:andesite_casing'), [
 		'PMP',
@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
 		A: 'create:andesite_alloy',
 		F: 'gtceu:wood_frame',
 		H: '#forge:tools/hammers'
-	});
+	}).id('start:shaped/andesite_casing');
 
 	event.shaped(Item.of('create:copper_casing'), [
 		'PMP',
@@ -148,7 +148,7 @@ ServerEvents.recipes(event => {
 		R: 'create:fluid_pipe',
 		F: 'gtceu:pig_iron_frame',
 		H: '#forge:tools/hammers'
-	});
+	}).id('start:shaped/copper_casing');
 
 	event.shaped(Item.of('create:brass_casing'), [
 		'PMP',
@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
 		A: 'gtceu:brass_plate',
 		F: 'gtceu:treated_wood_frame',
 		H: '#forge:tools/hammers'
-	});
+	}).id('start:shaped/brass_casing');
 
 	event.shaped(Item.of('create:piston_extension_pole', 3), [
 		'P',
@@ -169,7 +169,7 @@ ServerEvents.recipes(event => {
 	], {
 		P: 'gtceu:wood_plate',
 		A: 'create:andesite_alloy'
-	});
+	}).id('start:shaped/piston_extension_pole');
 
 	event.shaped(Item.of('create:hand_crank'), [
 		' PA',
@@ -181,7 +181,7 @@ ServerEvents.recipes(event => {
 		A: 'create:andesite_alloy',
 		R: 'gtceu:sticky_resin',
 		G: 'gtceu:wood_gear'
-	});
+	}).id('start:shaped/hand_crank');
 
 	event.shaped(Item.of('create:mechanical_press'), [
 		'PLP',
@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
 		L: 'create:piston_extension_pole',
 		G: 'gtceu:wood_gear',
 		V: 'minecraft:anvil'
-	});
+	}).id('start:shaped/mechanical_press');
 
 	event.shaped(Item.of('create:mechanical_saw'), [
 		'MSW',
@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
 		S: 'gtceu:iron_buzz_saw_blade',
 		C: 'create:andesite_casing',
 		A: 'create:andesite_alloy'
-	});
+	}).id('start:shaped/mechanical_saw');
 
 	event.shaped(Item.of('create:millstone'), [
 		'WCM',
@@ -218,7 +218,7 @@ ServerEvents.recipes(event => {
 		G: 'create:cogwheel',
 		A: 'create:andesite_casing',
 		S: '#forge:stone'
-	});
+	}).id('start:shaped/millstone');
 
 	event.recipes.create.mechanical_crafting('create:crushing_wheel', [
 		' SSS ',
@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
 		A: 'create:andesite_casing',
 		F: 'create:shaft',
 		M: 'gtceu:wood_frame'
-	});
+	}).id('start:shaped/crushing_wheel');
 
 	event.shaped(Item.of('create:andesite_funnel', 2), [
 		'AIA',
@@ -240,7 +240,7 @@ ServerEvents.recipes(event => {
 		R: 'gtceu:rubber_plate',
 		A: 'create:andesite_alloy',
 		I: 'gtceu:iron_foil'
-	});
+	}).id('start:shaped/andesite_funnel');
 
 	event.shaped(Item.of('create:brass_funnel', 2), [
 		'PEP',
@@ -250,7 +250,7 @@ ServerEvents.recipes(event => {
 		R: 'gtceu:brass_rod',
 		E: 'create:electron_tube',
 		B: 'gtceu:rubber_plate'
-	});
+	}).id('start:shaped/brass_funnel');
 
 	event.shaped(Item.of('create:andesite_tunnel', 2), [
 		' FM',
@@ -261,7 +261,7 @@ ServerEvents.recipes(event => {
 		C: 'create:andesite_casing',
 		A: 'create:andesite_alloy',
 		M: '#forge:tools/mallets'
-	});
+	}).id('start:shaped/andesite_tunnel');
 
 	event.shaped(Item.of('create:brass_tunnel', 2), [
 		' FM',
@@ -272,7 +272,7 @@ ServerEvents.recipes(event => {
 		C: 'create:brass_casing',
 		T: 'create:electron_tube',
 		M: '#forge:tools/mallets'
-	});
+	}).id('start:shaped/brass_tunnel');
 
 	let drill = 'gtceu:double_iron_plate'
 	event.recipes.create.sequenced_assembly([
@@ -283,7 +283,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createPressing(drill, drill),
 		event.recipes.createDeploying(drill, [drill, 'gtceu:iron_plate']),
 		event.recipes.createCutting(drill, drill),
-	]).transitionalItem(drill).loops(2)
+	]).transitionalItem(drill).loops(2).id('start:sequenced_assembly/drill_head')
 
 	event.shaped(Item.of('create:mechanical_drill'), [
 		'MDH',
@@ -296,7 +296,7 @@ ServerEvents.recipes(event => {
 		C: 'create:andesite_casing',
 		D: 'thermal:drill_head',
 		A: 'create:andesite_alloy'
-	});
+	}).id('start:shaped/mechanical_drill');
 
 	event.shaped(Item.of('create:brass_hand'), [
 		'BBB',
@@ -307,7 +307,7 @@ ServerEvents.recipes(event => {
 		P: 'gtceu:brass_plate',
 		R: 'gtceu:zinc_ring',
 		A: 'create:andesite_alloy'
-	});
+	}).id('start:shaped/brass_hand');
 
 	event.shaped(Item.of('create:deployer'), [
 		'EPE',
@@ -320,7 +320,7 @@ ServerEvents.recipes(event => {
 		A: 'create:andesite_alloy',
 		C: 'create:andesite_casing',
 		H: 'create:brass_hand'
-	});
+	}).id('start:shaped/deployer');
 
 	event.shaped(Item.of('create:fluid_pipe', 12), [
 		'PFP',
@@ -328,7 +328,7 @@ ServerEvents.recipes(event => {
 	], {
 		P: 'gtceu:copper_normal_fluid_pipe',
 		F: 'gtceu:copper_foil'
-	});
+	}).id('start:shaped/fluid_pipe');
 
 	event.shaped(Item.of('create:chute', 4), [
 		'PCP',
@@ -337,7 +337,7 @@ ServerEvents.recipes(event => {
 		P: 'gtceu:iron_plate',
 		C: 'minecraft:chest',
 		H: 'minecraft:hopper'
-	});
+	}).id('start:shaped/chute');
 
 	event.shaped(Item.of('create:smart_chute'), [
 		'FTF',
@@ -346,7 +346,7 @@ ServerEvents.recipes(event => {
 		F: 'gtceu:brass_foil',
 		C: 'create:chute',
 		T: 'create:electron_tube'
-	});
+	}).id('start:shaped/smart_chute');
 
 	event.shaped(Item.of('create:water_wheel'), [
 		'PPP',
@@ -356,7 +356,7 @@ ServerEvents.recipes(event => {
 		S: 'create:shaft',
 		C: 'create:andesite_casing',
 		P: 'gtceu:wood_plate'
-	});
+	}).id('start:shaped/water_wheel');
 
 	event.recipes.create.mechanical_crafting('create:large_water_wheel', [
 		' PPP ',
@@ -368,7 +368,7 @@ ServerEvents.recipes(event => {
 		S: '#forge:rods/wooden',
 		P: 'gtceu:wood_plate',
 		W: 'create:water_wheel'
-	});
+	}).id('start:shaped/large_water_wheel');
 
 	event.shaped(Item.of('create:whisk'), [
 		'NWN',
@@ -380,7 +380,7 @@ ServerEvents.recipes(event => {
 		P: 'gtceu:iron_plate',
 		A: 'create:andesite_alloy',
 		N: 'gtceu:iron_ring'
-	});
+	}).id('start:shaped/whisk');
 
 	event.shaped(Item.of('create:cogwheel', 2), [
 		' SM',
@@ -391,7 +391,7 @@ ServerEvents.recipes(event => {
 		G: 'gtceu:wood_gear',
 		P: 'gtceu:wood_plate',
 		M: '#forge:tools/mallets'
-	});
+	}).id('start:shaped/cogwheel');
 
 	event.shaped(Item.of('create:large_cogwheel', 2), [
 		' SM',
@@ -402,7 +402,7 @@ ServerEvents.recipes(event => {
 		G: 'create:cogwheel',
 		P: 'gtceu:wood_plate',
 		M: '#forge:tools/mallets'
-	});
+	}).id('start:shaped/large_cogwheel');
 
 	event.shaped(Item.of('create:mechanical_mixer'), [
 		'MLW',
@@ -416,7 +416,7 @@ ServerEvents.recipes(event => {
 		C: 'create:andesite_casing',
 		A: 'create:andesite_alloy',
 		H: 'create:whisk'
-	});
+	}).id('start:shaped/mechanical_mixer');
 
 	event.shaped(Item.of('create:basin'), [
 		'A A',
@@ -426,7 +426,7 @@ ServerEvents.recipes(event => {
 		A: 'create:andesite_alloy',
 		C: 'minecraft:cauldron',
 		P: 'gtceu:lead_plate'
-	});
+	}).id('start:shaped/basin');
 
 	event.remove('createlowheated:basic_burner');
 	event.shaped('createlowheated:basic_burner', [
@@ -437,7 +437,7 @@ ServerEvents.recipes(event => {
 		A: 'create:andesite_alloy',
 		R: 'gtceu:lead_rod',
 		P: 'gtceu:lead_plate'
-	});
+	}).id('start:shaped/basic_burner');
 
 	event.shaped(Item.of('create:propeller'), [
 		'SAR',
@@ -450,7 +450,7 @@ ServerEvents.recipes(event => {
 		M: '#forge:tools/mallets',
 		Z: 'gtceu:zinc_plate',
 		S: 'gtceu:iron_screw'
-	});
+	}).id('start:shaped/propeller');
 
 	event.shaped(Item.of('create:encased_fan'), [
 		'RPR',
@@ -462,15 +462,15 @@ ServerEvents.recipes(event => {
 		F: 'create:propeller',
 		S: 'create:shaft',
 		C: 'create:andesite_casing'
-	});
+	}).id('start:shaped/encased_fan');
 
 	event.remove({ output: /^create:.*sand_paper/ });
 	const sandType = ['sand', 'red_sand'];
 	sandType.forEach(sand => {
-		event.recipes.create.mixing(Item.of(`1x create:${sand}_paper`).withChance(.8), ['1x farmersdelight:canvas', `1x minecraft:${sand}`, 'gtceu:sticky_resin']);
+		event.recipes.create.mixing(Item.of(`1x create:${sand}_paper`).withChance(.8), ['1x farmersdelight:canvas', `1x minecraft:${sand}`, 'gtceu:sticky_resin']).id(`start:create_mixer/${sand}_paper`);
 	});
 
-	event.recipes.create.sandpaper_polishing(Item.of('create:polished_rose_quartz').withChance(.7), 'create:rose_quartz');
+	event.recipes.create.sandpaper_polishing(Item.of('create:polished_rose_quartz').withChance(.7), 'create:rose_quartz').id('start:sandpaper_polishing/polished_rose_quartz');
 
 	event.shaped(Item.of('create:electron_tube'), [
 		'NNN',
@@ -481,7 +481,7 @@ ServerEvents.recipes(event => {
 		B: 'gtceu:copper_bolt',
 		N: 'minecraft:glass_pane',
 		Q: 'create:polished_rose_quartz'
-	});
+	}).id('start:shaped/electron_tube');
 
 	let prec = 'gtceu:double_gold_plate'
 	event.recipes.create.sequenced_assembly([
@@ -492,7 +492,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createPressing(prec, prec),
 		event.recipes.createDeploying(prec, [prec, `gtceu:iron_screw`]),
 		event.recipes.createPressing(prec, prec)
-	]).transitionalItem(prec).loops(4);
+	]).transitionalItem(prec).loops(4).id('start:sequenced_assembly/double_gold_plate');
 
 	let mech = 'create:brass_casing'
 	event.recipes.create.sequenced_assembly([
@@ -503,7 +503,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying(mech, [mech, `create:precision_mechanism`]),
 		event.recipes.createDeploying(mech, [mech, `minecraft:crafting_table`]),
 		event.recipes.createPressing(mech, mech)
-	]).transitionalItem(mech).loops(1);
+	]).transitionalItem(mech).loops(1).id('start:sequenced_assembly/mechanical_crafter');
 
 	event.recipes.create.mechanical_crafting('8x create:flywheel', [
 		' PPP ',
@@ -515,7 +515,7 @@ ServerEvents.recipes(event => {
 		T: 'create:shaft',
 		P: 'gtceu:brass_rod',
 		S: '#forge:rods/wooden'
-	});
+	}).id('start:mechanical_crafter/flywheel');
 
 	event.remove({ id: 'minecraft:minecart' });
 
@@ -527,7 +527,7 @@ ServerEvents.recipes(event => {
 		A: 'create:andesite_alloy',
 		D: 'gtceu:double_iron_plate',
 		R: 'minecraft:redstone'
-	});
+	}).id('start:mechanical_crafting/sticker');
 
 	event.shaped(Item.of('create:nozzle'), [
 		'ASA',
@@ -537,7 +537,7 @@ ServerEvents.recipes(event => {
 		A: 'create:andesite_alloy',
 		S: '#forge:string',
 		P: 'gtceu:iron_plate'
-	});
+	}).id('start:shaped/nozzle');
 
 	event.shaped(Item.of('create:white_sail', 2), [
 		'ASC',
@@ -547,7 +547,7 @@ ServerEvents.recipes(event => {
 		A: 'create:andesite_alloy',
 		S: '#forge:rods/wooden',
 		C: 'farmersdelight:canvas'
-	});
+	}).id('start:shaped/white_sail');
 
 	event.shaped(Item.of('create:mechanical_bearing'), [
 		'RPR',
@@ -559,7 +559,7 @@ ServerEvents.recipes(event => {
 		S: 'create:shaft',
 		C: 'create:andesite_casing',
 		P: '#minecraft:wooden_slabs'
-	});
+	}).id('start:shaped/mechanical_bearing');
 
 	event.shaped(Item.of('create:windmill_bearing'), [
 		'FRF',
@@ -572,11 +572,11 @@ ServerEvents.recipes(event => {
 		B: 'create:mechanical_bearing',
 		W: '#forge:tools/wrench',
 		S: 'create:shaft',
-	});
+	}).id('start:shaped/windmill_bearing');
 
 	event.shapeless(Item.of('create:clockwork_bearing'), [
 		'create:brass_casing', 'create:mechanical_bearing', 'create:electron_tube'
-	]);
+	]).id('start:shapeless/clockwork_bearing');
 
 	event.recipes.create.mechanical_crafting('create:gantry_carriage', [
 		'SPS',
@@ -586,7 +586,7 @@ ServerEvents.recipes(event => {
 		C: 'create:andesite_casing',
 		G: 'create:cogwheel',
 		P: 'minecraft:sticky_piston'
-	});
+	}).id('start:mechanical_crafting/gantry_carriage');
 
 	event.recipes.create.mechanical_crafting('create:rotation_speed_controller', [
 		'RGR',
@@ -599,7 +599,7 @@ ServerEvents.recipes(event => {
 		P: 'gtceu:brass_plate',
 		C: 'create:brass_casing',
 		M: 'create:precision_mechanism'
-	});
+	}).id('start:mechanical_crafting/rotation_speed_controller');
 
 	event.shaped(Item.of('create:gantry_shaft', 2), [
 		' RP',
@@ -609,7 +609,7 @@ ServerEvents.recipes(event => {
 		R: 'gtceu:small_redstone_dust',
 		P: 'gtceu:wood_plate',
 		S: 'create:shaft'
-	});
+	}).id('start:shaped/gantry_shaft');
 
 	event.remove({ output: 'create:super_glue' });
 	event.recipes.create.mechanical_crafting('create:super_glue', [
@@ -622,7 +622,7 @@ ServerEvents.recipes(event => {
 		N: 'minecraft:iron_nugget',
 		S: '#forge:string',
 		G: 'gtceu:rubber_ring'
-	});
+	}).id('start:mechanical_crafting/super_glue');
 
 	event.recipes.create.mechanical_crafting(Item.of('create_new_age:carbon_brushes'), [
 		'RWPWR',
@@ -637,7 +637,7 @@ ServerEvents.recipes(event => {
 		C: '#minecraft:coals',
 		U: '#gtceu:circuits/ulv',
 		s: 'create:shaft'
-	});
+	}).id('start:mechanical_crafting/carbon_brushes');
 
 	event.recipes.create.mechanical_crafting(Item.of('2x create_new_age:electrical_connector'), [
 		'WRW',
@@ -648,7 +648,7 @@ ServerEvents.recipes(event => {
 		R: 'gtceu:cast_iron_ring',
 		D: 'gtceu:cast_iron_rod',
 		P: 'gtceu:cast_iron_plate'
-	});
+	}).id('start:mechanical_crafter/electrical_connector');
 
 	event.recipes.create.mechanical_crafting(Item.of('2x create_new_age:generator_coil'), [
 		'RWWRWWR',
@@ -665,9 +665,9 @@ ServerEvents.recipes(event => {
 		C: 'create_new_age:electrical_connector',
 		P: 'gtceu:cast_iron_plate',
 		S: 'create:shaft'
-	});
+	}).id('start:mechanical_crafter/generator_coil');
 
-	event.recipes.create.compacting('create_new_age:magnetite_block', ['8x gtceu:magnetite_dust', 'gtceu:stone_dust']);
+	event.recipes.create.compacting('create_new_age:magnetite_block', ['8x gtceu:magnetite_dust', 'gtceu:stone_dust']).id('start:compacting/magnetite_block');
 
 	event.recipes.create.mechanical_crafting(Item.of('4x create_new_age:redstone_magnet'), [
 		'BrB',
@@ -677,7 +677,7 @@ ServerEvents.recipes(event => {
 		B: 'create_new_age:magnetite_block',
 		R: 'minecraft:redstone',
 		r: 'minecraft:redstone_block'
-	});
+	}).id('start:mechanical_crafter/redstone_magnet');
 
 	event.recipes.create.mechanical_crafting(Item.of('3x create_new_age:layered_magnet'), [
 		'IGI',
@@ -689,7 +689,7 @@ ServerEvents.recipes(event => {
 		R: 'create_new_age:redstone_magnet',
 		G: 'create_new_age:overcharged_gold',
 		I: 'create_new_age:overcharged_iron'
-	});
+	}).id('start:mechanical_crafter/layered_magnet');
 
 	event.recipes.create.mechanical_crafting(Item.of('4x create_new_age:fluxuated_magnetite'), [
 		'DMDMD',
@@ -701,9 +701,9 @@ ServerEvents.recipes(event => {
 		L: 'create_new_age:layered_magnet',
 		M: 'gtceu:magnetite_dust',
 		D: 'create_new_age:overcharged_diamond'
-	});
+	}).id('start:mechanical_crafter/fluxuated_magnetite');
 
-	event.recipes.gtceu.assembler('netherite_magnet')
+	event.recipes.gtceu.assembler(id('netherite_magnet'))
 		.itemInputs('create_new_age:fluxuated_magnetite')
 		.inputFluids('gtceu:neodymium 576')
 		.itemOutputs('create_new_age:netherite_magnet')
@@ -718,13 +718,13 @@ ServerEvents.recipes(event => {
 		H: '#forge:tools/hammers',
 		S: '#forge:tools/screwdrivers',
 		W: '#forge:tools/wrenches'
-	});
+	}).id('start:shaped/belt_connector');
 
 	event.recipes.create.mechanical_crafting(Item.of('3x create:belt_connector'), [
 		'RRR'
 	], {
 		R: 'gtceu:rubber_plate'
-	});
+	}).id('start:mechanical_crafter/belt_connector');
 
 	const CNA_wire = (material, energy, output) => {
 		event.custom({
@@ -740,7 +740,7 @@ ServerEvents.recipes(event => {
 					'item': `create_new_age:${output}`
 				}
 			]
-		});
+		}).id(`start:energising/${output}`);
 	}
 	CNA_wire('copper', 500, 'copper_wire');
 	CNA_wire('iron', 1000, 'overcharged_iron_wire');
@@ -759,7 +759,7 @@ ServerEvents.recipes(event => {
 			U: '#gtceu:circuits/ulv',
 			G: material,
 			N: 'create_new_age:electrical_connector'
-		});
+		}).id(`start:mechanical_crafter/energiser_${tier}`);
 	}
 	Energiser('t1', 'minecraft:lightning_rod', 'create:shaft');
 	Energiser('t2', 'create_new_age:overcharged_golden_wire', 'create_new_age:energiser_t1');
@@ -775,7 +775,7 @@ ServerEvents.recipes(event => {
 		S: 'create:shaft',
 		M: 'kubejs:ulv_electric_motor',
 		P: 'gtceu:cast_iron_plate'
-	});
+	}).id('start:mechanical_crafter/basic_motor');
 
 	event.recipes.create.mechanical_crafting(Item.of('create_new_age:advanced_motor'), [
 		'NRN',
@@ -787,7 +787,7 @@ ServerEvents.recipes(event => {
 		S: 'gtceu:cast_iron_ring',
 		M: 'create_new_age:basic_motor',
 		P: 'gtceu:cast_iron_plate'
-	});
+	}).id('start:mechanical_crafter/advanced_motor');
 
 	event.recipes.create.mechanical_crafting(Item.of('create_new_age:reinforced_motor'), [
 		'NRRRN',
@@ -800,12 +800,12 @@ ServerEvents.recipes(event => {
 		F: 'create_new_age:fluxuated_magnetite',
 		M: 'create_new_age:basic_motor',
 		P: 'gtceu:double_cast_iron_plate'
-	});
+	}).id('start:mechanical_crafter/reinforced_motor');
 
-	event.recipes.create.crushing(['1x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:wooden_slabs');
-	event.recipes.create.crushing(['2x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:wooden_stairs');
-	event.recipes.create.crushing(['1x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:wooden_fences');
-	event.recipes.create.crushing(['3x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:planks');
+	event.recipes.create.crushing(['1x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:wooden_slabs').id('start:crushing/wood_chip_slabs');
+	event.recipes.create.crushing(['2x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:wooden_stairs').id('start:crushing/wood_chip_stairs');
+	event.recipes.create.crushing(['1x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:wooden_fences').id('start:crushing/wood_chip_fences');
+	event.recipes.create.crushing(['3x createdieselgenerators:wood_chip', Item.of('createdieselgenerators:wood_chip').withChance(0.75)], '#minecraft:planks').id('start:crushing/wood_chip_planks');
 
 	event.remove({ id: 'create:crafting/kinetics/speedometer' });
 	event.recipes.shaped('create:speedometer', [
@@ -819,7 +819,7 @@ ServerEvents.recipes(event => {
 		I: 'gtceu:iron_rod',
 		C: 'create:andesite_casing',
 		A: 'create:andesite_alloy',
-	});
+	}).id('start:shaped/speedometer');
 
 	// Removals
 	const CreateRemoval = ['windmill_bearing', 'spout', 'fluid_pipe', 'chute', 'depot', 'basin', 'mechanical_mixer', 'mechanical_press', 'hand_crank', 'millstone',
