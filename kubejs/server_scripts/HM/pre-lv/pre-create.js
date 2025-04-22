@@ -334,6 +334,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.cutting(['kubejs:plant_fibers'], 'farmersdelight:straw').id('start:cutting/plant_fibers');
 	event.recipes.create.cutting(['farmersdelight:straw'], 'farmersdelight:tree_bark').id('start:cutting/straw');
 
+	event.remove({output: 'exnihilosequentia:string_mesh'})
 	event.shaped(Item.of('exnihilosequentia:string_mesh'), [
 		'SSS',
 		'SCS',
