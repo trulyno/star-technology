@@ -229,7 +229,7 @@ ServerEvents.recipes(event => {
 			.chancedOutput(`gtceu:${material.tertiary}_dust`, 1250, 0)
 			.duration(400);
 		event.recipes.gtceu.steam_ore_processing(id(`crushed_${material.primary}_ore`))
-			.itemInputs(`gtceu:crushed_${material.primary}_ore`, '2x #minecraft:coals')
+			.itemInputs(`gtceu:crushed_${material.primary}_ore`)
 			.inputFluids('minecraft:water 1000')
 			.itemOutputs(`gtceu:${material.primary}_dust`)
 			.chancedOutput(`gtceu:${material.primary}_dust`, 5000, 0)

@@ -885,22 +885,30 @@
 				}
 			}
 			id: "7D83A21F7DB27B47"
-			tasks: [{
-				id: "54862B5E215F9EFC"
-				item: {
-					Count: 1
-					id: "woodenbucket:wooden_bucket"
-					tag: {
-						Damage: 0
-						Fluid: {
-							Amount: 1000
-							FluidName: "gtceu:concrete"
+			tasks: [
+				{
+					id: "54862B5E215F9EFC"
+					item: {
+						Count: 1
+						id: "woodenbucket:wooden_bucket"
+						tag: {
+							Damage: 0
+							Fluid: {
+								Amount: 1000
+								FluidName: "gtceu:concrete"
+							}
 						}
 					}
+					match_nbt: false
+					optional_task: true
+					type: "item"
 				}
-				match_nbt: true
-				type: "item"
-			}]
+				{
+					id: "7468F53D204B429F"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 2.0d
 			y: 1.5d
 		}
