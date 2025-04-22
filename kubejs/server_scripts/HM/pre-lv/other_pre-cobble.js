@@ -184,7 +184,7 @@ ServerEvents.recipes(event => {
 		seq_assembly(large, normal, inter, sequence, 3);
 		seq_assembly(huge, large, inter, sequence, 6);
 
-		event.recipes.create.cutting(Item.of(tiny, 2), small).id(`start:sequenced_assembly/steel_tiny_fluid_pipe`);
+		event.recipes.create.cutting(Item.of(tiny, 2), small).id(`start:cutting/${metal}_tiny_fluid_pipe`);
 	});
 
 	const WoodPipe = (size,loops,start) => {
