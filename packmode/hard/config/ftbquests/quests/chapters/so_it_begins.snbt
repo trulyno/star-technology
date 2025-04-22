@@ -1637,6 +1637,7 @@
 			dependencies: [
 				"6994BA308DC55ED2"
 				"5819AF3E6CCDB826"
+				"774543EADD91A140"
 			]
 			id: "7525BDACB9A9AC41"
 			tasks: [
@@ -1752,12 +1753,20 @@
 		{
 			dependencies: ["5819AF3E6CCDB826"]
 			dependency_requirement: "one_completed"
+			icon: "thermal:latex_bucket"
 			id: "6A9AED442BB9370C"
-			tasks: [{
-				id: "6E58C21CA4DFAA71"
-				item: "thermal:latex_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6E58C21CA4DFAA71"
+					item: "thermal:latex_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "62C29B0315960F1D"
+					type: "checkmark"
+				}
+			]
 			x: -4.0d
 			y: 15.0d
 		}
@@ -1987,8 +1996,8 @@
 				item: "createlowheated:basic_burner"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 15.0d
+			x: -7.0d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -2063,7 +2072,6 @@
 		{
 			dependencies: [
 				"2A7C8C43D6D58B93"
-				"6F1BB9A99918F256"
 				"55B15054D3B78F2E"
 				"2B99C65945F68A8E"
 			]
@@ -2268,8 +2276,8 @@
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 16.5d
+			x: -5.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [

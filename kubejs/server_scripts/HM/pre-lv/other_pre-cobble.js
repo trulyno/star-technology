@@ -249,7 +249,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.milling(['gtceu:charcoal_dust'], 'minecraft:charcoal');
 
 	event.remove({ id: 'thermal:rubber_3' });
-	event.recipes.create.compacting(Fluid.of('thermal:latex', 16), `8x minecraft:jungle_log`).heatRequirement('lowheated').id('start:compacting/latex');
+	event.recipes.create.compacting(Fluid.of('thermal:latex', 20), `10x minecraft:jungle_log`).heatRequirement('lowheated').id('start:compacting/latex');
 	event.recipes.create.mixing(Fluid.of('gtceu:rubber', 288), [Fluid.of('thermal:latex', 288), '1x gtceu:sulfur_dust']).heatRequirement('superheated').id('start:create_mixer/rubber');
 	event.recipes.create.compacting(`1x thermal:cured_rubber`, Fluid.of('gtceu:rubber', 144)).id('start:compacting/rubber');
 	event.recipes.create.compacting(`1x gtceu:rubber_plate`, `2x thermal:cured_rubber`).id('start:compacting/rubber_plate');
