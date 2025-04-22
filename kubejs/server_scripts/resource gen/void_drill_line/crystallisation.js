@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(GTValues.VA[GTValues.EV]);
 
-    event.recipes.gtceu.molten_destabilizing('molten_ore_mixture')
+    event.recipes.gtceu.molten_destabilizing(id('molten_ore_mixture'))
         .inputFluids('gtceu:molten_ore_mixture 40000')
         .itemOutputs('4x gtceu:metal_mixture_dust','12x gtceu:raw_bauxite', '10x gtceu:raw_pitchblende', '8x gtceu:raw_molybdenite', '8x gtceu:raw_ilmenite', '8x gtceu:raw_bastnasite' ,'16x gtceu:raw_tungstate', '18x gtceu:raw_cooperite')
         .outputFluids('minecraft:lava 40000')

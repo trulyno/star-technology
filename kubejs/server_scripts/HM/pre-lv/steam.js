@@ -1,6 +1,7 @@
 // packmode: hard
 
 ServerEvents.recipes(event => {
+    const id = global.id;
 
     ['lp','hp'].forEach(SteamTier => {
     ['solid_boiler','liquid_boiler','solar_boiler','extractor','macerator','compressor','forge_hammer',
@@ -22,30 +23,30 @@ ServerEvents.recipes(event => {
         'C','B'
     ], {
         B: inputs[0], C: inputs[1]
-    });
+    }).id(`start:mechanical_crafter/steam${type}_bus`);
     event.remove({id: `gtceu:shaped/steam_${type}_bus`});
     }
     SteamIO('input',['gtceu:bronze_machine_casing','minecraft:chest']);
     SteamIO('output',['minecraft:chest','gtceu:bronze_machine_casing']);
 
-    const SteamCasing = (id,type,core,plate) => {
+    const SteamCasing = (id2,type,core,plate) => {
     if(core == false)
-    event.recipes.create.mechanical_crafting(Item.of(`${id}:${type}`, 2), [
+    event.recipes.create.mechanical_crafting(Item.of(`${id2}:${type}`, 2), [
         'PPP',
         'P P',
         'PPP'
     ], {
         P: `gtceu:${plate}_plate`
-    });
+    }).id(`start:shaped/${type}`);
     if(core == false)
-    event.recipes.gtceu.assembler(`${type}`)
+    event.recipes.gtceu.assembler(id(`${type}`))
         .itemInputs(`8x gtceu:${plate}_plate`)
-        .itemOutputs(`2x ${id}:${type}`)
+        .itemOutputs(`2x ${id2}:${type}`)
         .circuit(8)
         .duration(50)
         .EUt(4);
     if(core !== false)
-    event.recipes.create.mechanical_crafting(Item.of(`${id}:${type}`,2), [
+    event.recipes.create.mechanical_crafting(Item.of(`${id2}:${type}`,2), [
         'PSP',
         'PCP',
         'PSP'
@@ -53,11 +54,11 @@ ServerEvents.recipes(event => {
         P: `gtceu:${plate}_plate`,
         C: `${core}`,
         S: `gtceu:${plate}_screw`
-    });
+    }).id(`start:mechanical_crafter/${type}`);
     if(core !== false)
-    event.recipes.gtceu.assembler(`${type}`)
+    event.recipes.gtceu.assembler(id(`${type}`))
         .itemInputs(`${core}`, `6x gtceu:${plate}_plate`, `2x gtceu:${plate}_screw`)
-        .itemOutputs(`2x ${id}:${type}`)
+        .itemOutputs(`2x ${id2}:${type}`)
         .circuit(6)
         .duration(50)
         .EUt(4);
@@ -77,8 +78,8 @@ ServerEvents.recipes(event => {
             P: `gtceu:${material}_plate`,
             B: `${brick}`,
             S: `gtceu:${material}_screw`
-        });
-        event.recipes.gtceu.assembler(`${block}_brick_casing`)
+        }).id(`start:mechanical_crafter/${block}_brick_casing`);
+        event.recipes.gtceu.assembler(id(`${block}_brick_casing`))
             .itemInputs(`${brick}`, `3x gtceu:${material}_plate`, `2x gtceu:${material}_screw`)
             .itemOutputs(`gtceu:${block}_brick_casing`)
             .circuit(2)
@@ -93,7 +94,7 @@ ServerEvents.recipes(event => {
             'ABC','DEF','GHI'
         ], {
             A: inputs[0],B: inputs[1],C: inputs[2],D: inputs[3],E: inputs[4],F: inputs[5],G: inputs[6],H: inputs[7],I: inputs[8]
-        });
+        }).id(`start:mechanical_crafter/${output}`);
     }
     SteamMachine('lp_steam_solid_boiler',['gtceu:bronze_plate','gtceu:bronze_plate','gtceu:bronze_plate','gtceu:bronze_small_fluid_pipe','minecraft:furnace','gtceu:bronze_small_fluid_pipe','gtceu:double_bronze_plate','gtceu:bronze_brick_casing','gtceu:double_bronze_plate']);
     SteamMachine('hp_steam_solid_boiler',['gtceu:cast_iron_plate','gtceu:cast_iron_plate','gtceu:cast_iron_plate','gtceu:tin_alloy_small_fluid_pipe','gtceu:lp_steam_solid_boiler','gtceu:tin_alloy_small_fluid_pipe','gtceu:double_cast_iron_plate','gtceu:steel_brick_casing','gtceu:double_cast_iron_plate']);
@@ -127,7 +128,7 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(inter, [inter, `minecraft:bucket`]),
         event.recipes.createDeploying(inter, [inter, `gtceu:rubber_ring`]),
         event.recipes.createPressing(inter, inter)
-    ]).transitionalItem(inter).loops(1);
+    ]).transitionalItem(inter).loops(1).id('start:sequenced_assembly/ulv_fluid_input');
 
     event.recipes.create.sequenced_assembly([
         Item.of(`gtceu:ulv_fluid_output`),
@@ -135,10 +136,10 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(inter, [inter, `gtceu:rubber_ring`]),        
         event.recipes.createDeploying(inter, [inter, `minecraft:bucket`]),
         event.recipes.createPressing(inter, inter)
-    ]).transitionalItem(inter).loops(1);
+    ]).transitionalItem(inter).loops(1).id('start:sequenced_assembly/ulv_fluid_output');
 
     const PrimSifter = (input,mesh,output) => {
-    event.recipes.gtceu.primitive_sifter(`${input}_${mesh}`)
+    event.recipes.gtceu.primitive_sifter(id(`${output.split(':')[1]}_${mesh}`))
         .itemInputs(`16x ${input}`)
         .notConsumable(`exnihilosequentia:${mesh}_mesh`)
         .itemOutputs(`8x ${output}`)

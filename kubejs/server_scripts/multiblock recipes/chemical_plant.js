@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
-    event.recipes.gtceu.chemical_plant('ptfe')
+    event.recipes.gtceu.chemical_plant(id('ptfe'))
         .itemInputs('2x gtceu:carbon_dust')
         .inputFluids('gtceu:fluorine 4000')
         .outputFluids('gtceu:tetrafluoroethylene 1000')
