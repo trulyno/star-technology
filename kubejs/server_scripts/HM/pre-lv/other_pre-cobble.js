@@ -117,14 +117,14 @@ ServerEvents.recipes(event => {
 		`gtceu:${metal}_spring`,
 		`gtceu:long_${metal}_rod`,
 		'kubejs:incomplete_spring',
-		['press'], 2
+		['cut', 'press', 'press'], 2
 	));
 
 	small_springs.forEach(metal => seq_assembly(
 		`2x gtceu:small_${metal}_spring`,
 		`gtceu:long_${metal}_rod`,
 		'kubejs:incomplete_small_spring',
-		['cut', 'press'], 2
+		['cut', 'cut', 'press'], 2
 	));
 
 	wires.forEach(metal => seq_assembly(
@@ -395,5 +395,7 @@ ServerEvents.recipes(event => {
 		I: 'gtceu:iron_plate',
 		S: 'thermal:redstone_servo'
 	}).id('start:mechanical_crafting/ulv_advanced_composter');
+
+	event.recipes.create.mixing('8x minecraft:tuff', ['8x minecraft:gravel', Fluid.of('minecraft:lava', 100)]).heatRequirement('superheated').id('start:create_mixer/tuff');
 
 });

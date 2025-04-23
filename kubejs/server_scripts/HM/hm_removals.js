@@ -27,7 +27,9 @@ ServerEvents.recipes(event => {
 		/^create:crafting.*cogwheel.*/,
 		'create:crafting/kinetics/shaft',
 		'create:crafting/kinetics/belt_connector',
-		'gtceu:shaped/iron_wire_single'
+		'gtceu:shaped/iron_wire_single',
+		'create:splashing/soul_sand',
+		'minecraft:cookie'
 	].forEach(id => event.remove({ id: id }));
 
 	[

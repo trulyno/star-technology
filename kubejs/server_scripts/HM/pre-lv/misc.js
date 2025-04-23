@@ -280,6 +280,15 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(fluidPipez, fluidPipez)
     ]).transitionalItem(fluidPipez).loops(1);
 
+	event.remove({ output: 'architects_palette:flint_block' });
+	event.shaped(Item.of('4x architects_palette:flint_block'), [
+		'FFF',
+		'F F',
+		'FFF'
+	], {
+		F: 'minecraft:flint'
+	});
+
 	//Mass Removals
 
 	const ThermalRemoval = ['redstone_servo', 'device_tree_extractor', 'drill_head', 'fluid_cell_frame','device_rock_gen','device_water_gen'];

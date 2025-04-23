@@ -937,6 +937,7 @@
 			rewards: [{
 				auto: "enabled"
 				command: "/playsound gtceu:sus master @a"
+				elevate_perms: true
 				icon: {
 					Count: 1
 					id: "ftbquests:custom_icon"
@@ -945,6 +946,7 @@
 					}
 				}
 				id: "53FF0F0E1BEE1B52"
+				silent: true
 				type: "command"
 			}]
 			tasks: [{
@@ -1674,8 +1676,8 @@
 				item: "create:brass_casing"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 14.25d
+			x: 0.5d
+			y: 15.75d
 		}
 		{
 			dependencies: [
@@ -1714,7 +1716,7 @@
 				item: "create:copper_casing"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 0.5d
 			y: 14.25d
 		}
 		{
@@ -1723,11 +1725,18 @@
 				"311B111EA277454D"
 			]
 			id: "049DA0A4C3E5EFFF"
-			tasks: [{
-				id: "7A5DFB3A13F2636D"
-				item: "create:spout"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7A5DFB3A13F2636D"
+					item: "create:spout"
+					type: "item"
+				}
+				{
+					id: "2321A6982321702F"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+			]
 			x: 5.0d
 			y: 3.0d
 		}
@@ -1751,7 +1760,7 @@
 				"684FAA520167CC51"
 				"4917BE27976C3A9A"
 			]
-			description: ["Has bug with fluid output need to fix"]
+			description: [""]
 			hide_dependent_lines: true
 			id: "5D7047EF3399D10B"
 			tasks: [{
@@ -2992,7 +3001,10 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["684FAA520167CC51"]
+			dependencies: [
+				"684FAA520167CC51"
+				"410385DA7FBBD2FA"
+			]
 			hide_dependency_lines: true
 			id: "71A523823C7ED594"
 			tasks: [
@@ -3450,8 +3462,8 @@
 				item: "gtceu:ulv_auto_scavenger"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 12.75d
+			x: 2.75d
+			y: 14.25d
 		}
 		{
 			dependencies: [
@@ -3536,18 +3548,6 @@
 			]
 			x: 15.5d
 			y: 16.5d
-		}
-		{
-			dependencies: ["224916FFC857C099"]
-			hide_dependency_lines: true
-			id: "0E081489233484EC"
-			tasks: [{
-				id: "6E32763E7757DDAE"
-				item: "pipez:fluid_pipe"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 15.75d
 		}
 	]
 	title: "So It Begins"
