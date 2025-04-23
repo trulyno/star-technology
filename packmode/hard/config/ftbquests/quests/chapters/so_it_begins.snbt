@@ -1457,12 +1457,21 @@
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
+			icon: "gtceu:creosote_bucket"
 			id: "29DBC6F4A10C5667"
-			tasks: [{
-				id: "2A5051DA1962BF4C"
-				item: "gtceu:creosote_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2A5051DA1962BF4C"
+					item: "gtceu:creosote_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "050F938C2702F30B"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 5.0d
 			y: 6.0d
 		}
@@ -1738,7 +1747,10 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["684FAA520167CC51"]
+			dependencies: [
+				"684FAA520167CC51"
+				"4917BE27976C3A9A"
+			]
 			description: ["Has bug with fluid output need to fix"]
 			hide_dependent_lines: true
 			id: "5D7047EF3399D10B"
@@ -1764,6 +1776,7 @@
 				}
 				{
 					id: "62C29B0315960F1D"
+					optional_task: true
 					type: "checkmark"
 				}
 			]
@@ -2048,12 +2061,21 @@
 				"65DA1BDA4D9A9B56"
 				"1ABF4784F033D41A"
 			]
+			icon: "gtceu:rubber_bucket"
 			id: "4936CD72CB6A7C89"
-			tasks: [{
-				id: "75A93171F3C2053E"
-				item: "gtceu:rubber_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "75A93171F3C2053E"
+					item: "gtceu:rubber_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0260E25D0C6198B9"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: -2.5d
 			y: 16.5d
 		}
@@ -3516,7 +3538,7 @@
 			y: 16.5d
 		}
 		{
-			dependencies: ["049DA0A4C3E5EFFF"]
+			dependencies: ["224916FFC857C099"]
 			hide_dependency_lines: true
 			id: "0E081489233484EC"
 			tasks: [{

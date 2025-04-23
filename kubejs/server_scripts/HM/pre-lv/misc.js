@@ -276,7 +276,6 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(fluidPipez, [fluidPipez, `gtceu:copper_tiny_fluid_pipe`]),
 		event.recipes.createDeploying(fluidPipez, [fluidPipez, `gtceu:bronze_tiny_fluid_pipe`]),
 		event.recipes.createDeploying(fluidPipez, [fluidPipez, `gtceu:lead_tiny_fluid_pipe`]),
-        event.recipes.createFilling(fluidPipez, [fluidPipez, Fluid.of('gtceu:rubber 72')]),
 		event.recipes.createDeploying(fluidPipez, [fluidPipez, `gtceu:iron_foil`]),
         event.recipes.createPressing(fluidPipez, fluidPipez)
     ]).transitionalItem(fluidPipez).loops(1);
