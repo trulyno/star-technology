@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Enable colors
 GREEN="\033[0;36m"
@@ -14,7 +14,7 @@ echo "======================================================="
 echo -e "${RESET}"
 
 # Set up paths
-script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+script_dir="$(cd "$(dirname "$0")" && pwd)"
 default_path="$script_dir/packmode/default"
 hard_path="$script_dir/packmode/hard"
 abydos_path="$script_dir/packmode/abydos"
