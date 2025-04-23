@@ -885,22 +885,30 @@
 				}
 			}
 			id: "7D83A21F7DB27B47"
-			tasks: [{
-				id: "54862B5E215F9EFC"
-				item: {
-					Count: 1
-					id: "woodenbucket:wooden_bucket"
-					tag: {
-						Damage: 0
-						Fluid: {
-							Amount: 1000
-							FluidName: "gtceu:concrete"
+			tasks: [
+				{
+					id: "54862B5E215F9EFC"
+					item: {
+						Count: 1
+						id: "woodenbucket:wooden_bucket"
+						tag: {
+							Damage: 0
+							Fluid: {
+								Amount: 1000
+								FluidName: "gtceu:concrete"
+							}
 						}
 					}
+					match_nbt: false
+					optional_task: true
+					type: "item"
 				}
-				match_nbt: true
-				type: "item"
-			}]
+				{
+					id: "7468F53D204B429F"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 2.0d
 			y: 1.5d
 		}
@@ -929,6 +937,7 @@
 			rewards: [{
 				auto: "enabled"
 				command: "/playsound gtceu:sus master @a"
+				elevate_perms: true
 				icon: {
 					Count: 1
 					id: "ftbquests:custom_icon"
@@ -937,6 +946,7 @@
 					}
 				}
 				id: "53FF0F0E1BEE1B52"
+				silent: true
 				type: "command"
 			}]
 			tasks: [{
@@ -1449,12 +1459,21 @@
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
+			icon: "gtceu:creosote_bucket"
 			id: "29DBC6F4A10C5667"
-			tasks: [{
-				id: "2A5051DA1962BF4C"
-				item: "gtceu:creosote_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2A5051DA1962BF4C"
+					item: "gtceu:creosote_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "050F938C2702F30B"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 5.0d
 			y: 6.0d
 		}
@@ -1629,6 +1648,7 @@
 			dependencies: [
 				"6994BA308DC55ED2"
 				"5819AF3E6CCDB826"
+				"774543EADD91A140"
 			]
 			id: "7525BDACB9A9AC41"
 			tasks: [
@@ -1656,8 +1676,8 @@
 				item: "create:brass_casing"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 14.25d
+			x: 0.5d
+			y: 15.75d
 		}
 		{
 			dependencies: [
@@ -1696,7 +1716,7 @@
 				item: "create:copper_casing"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 0.5d
 			y: 14.25d
 		}
 		{
@@ -1705,11 +1725,18 @@
 				"311B111EA277454D"
 			]
 			id: "049DA0A4C3E5EFFF"
-			tasks: [{
-				id: "7A5DFB3A13F2636D"
-				item: "create:spout"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7A5DFB3A13F2636D"
+					item: "create:spout"
+					type: "item"
+				}
+				{
+					id: "2321A6982321702F"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+			]
 			x: 5.0d
 			y: 3.0d
 		}
@@ -1729,8 +1756,11 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["684FAA520167CC51"]
-			description: ["Has bug with fluid output need to fix"]
+			dependencies: [
+				"684FAA520167CC51"
+				"4917BE27976C3A9A"
+			]
+			description: [""]
 			hide_dependent_lines: true
 			id: "5D7047EF3399D10B"
 			tasks: [{
@@ -1744,12 +1774,21 @@
 		{
 			dependencies: ["5819AF3E6CCDB826"]
 			dependency_requirement: "one_completed"
+			icon: "thermal:latex_bucket"
 			id: "6A9AED442BB9370C"
-			tasks: [{
-				id: "6E58C21CA4DFAA71"
-				item: "thermal:latex_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6E58C21CA4DFAA71"
+					item: "thermal:latex_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "62C29B0315960F1D"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: -4.0d
 			y: 15.0d
 		}
@@ -1979,8 +2018,8 @@
 				item: "createlowheated:basic_burner"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 15.0d
+			x: -7.0d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -2031,12 +2070,21 @@
 				"65DA1BDA4D9A9B56"
 				"1ABF4784F033D41A"
 			]
+			icon: "gtceu:rubber_bucket"
 			id: "4936CD72CB6A7C89"
-			tasks: [{
-				id: "75A93171F3C2053E"
-				item: "gtceu:rubber_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "75A93171F3C2053E"
+					item: "gtceu:rubber_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0260E25D0C6198B9"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: -2.5d
 			y: 16.5d
 		}
@@ -2055,7 +2103,6 @@
 		{
 			dependencies: [
 				"2A7C8C43D6D58B93"
-				"6F1BB9A99918F256"
 				"55B15054D3B78F2E"
 				"2B99C65945F68A8E"
 			]
@@ -2260,8 +2307,8 @@
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 16.5d
+			x: -5.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -2954,7 +3001,10 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["684FAA520167CC51"]
+			dependencies: [
+				"684FAA520167CC51"
+				"410385DA7FBBD2FA"
+			]
 			hide_dependency_lines: true
 			id: "71A523823C7ED594"
 			tasks: [
@@ -3412,8 +3462,8 @@
 				item: "gtceu:ulv_auto_scavenger"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 12.75d
+			x: 2.75d
+			y: 14.25d
 		}
 		{
 			dependencies: [
@@ -3498,18 +3548,6 @@
 			]
 			x: 15.5d
 			y: 16.5d
-		}
-		{
-			dependencies: ["049DA0A4C3E5EFFF"]
-			hide_dependency_lines: true
-			id: "0E081489233484EC"
-			tasks: [{
-				id: "6E32763E7757DDAE"
-				item: "pipez:fluid_pipe"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 15.75d
 		}
 	]
 	title: "So It Begins"

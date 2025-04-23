@@ -117,14 +117,14 @@ ServerEvents.recipes(event => {
 		`gtceu:${metal}_spring`,
 		`gtceu:long_${metal}_rod`,
 		'kubejs:incomplete_spring',
-		['press'], 2
+		['cut', 'press', 'press'], 2
 	));
 
 	small_springs.forEach(metal => seq_assembly(
 		`2x gtceu:small_${metal}_spring`,
 		`gtceu:long_${metal}_rod`,
 		'kubejs:incomplete_small_spring',
-		['cut', 'press'], 2
+		['cut', 'cut', 'press'], 2
 	));
 
 	wires.forEach(metal => seq_assembly(
@@ -249,7 +249,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.milling(['gtceu:charcoal_dust'], 'minecraft:charcoal');
 
 	event.remove({ id: 'thermal:rubber_3' });
-	event.recipes.create.compacting(Fluid.of('thermal:latex', 16), `8x minecraft:jungle_log`).heatRequirement('lowheated').id('start:compacting/latex');
+	event.recipes.create.compacting(Fluid.of('thermal:latex', 20), `10x minecraft:jungle_log`).heatRequirement('lowheated').id('start:compacting/latex');
 	event.recipes.create.mixing(Fluid.of('gtceu:rubber', 288), [Fluid.of('thermal:latex', 288), '1x gtceu:sulfur_dust']).heatRequirement('superheated').id('start:create_mixer/rubber');
 	event.recipes.create.compacting(`1x thermal:cured_rubber`, Fluid.of('gtceu:rubber', 144)).id('start:compacting/rubber');
 	event.recipes.create.compacting(`1x gtceu:rubber_plate`, `2x thermal:cured_rubber`).id('start:compacting/rubber_plate');
@@ -395,5 +395,7 @@ ServerEvents.recipes(event => {
 		I: 'gtceu:iron_plate',
 		S: 'thermal:redstone_servo'
 	}).id('start:mechanical_crafting/ulv_advanced_composter');
+
+	event.recipes.create.mixing('8x minecraft:tuff', ['8x minecraft:gravel', Fluid.of('minecraft:lava', 100)]).heatRequirement('superheated').id('start:create_mixer/tuff');
 
 });

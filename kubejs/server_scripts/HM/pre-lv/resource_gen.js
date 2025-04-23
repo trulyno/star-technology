@@ -27,7 +27,6 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 	if (player.getMainHandItem() == null && player.getOffHandItem() == null && player.isCrouching()) {
 		pop_up('kubejs:flint_shard', 0.25);
 		pop_up('minecraft:cookie', 0.002);
-
 		player.addExhaustion(.03)
 		dig();
 	};
@@ -229,7 +228,7 @@ ServerEvents.recipes(event => {
 			.chancedOutput(`gtceu:${material.tertiary}_dust`, 1250, 0)
 			.duration(400);
 		event.recipes.gtceu.steam_ore_processing(id(`crushed_${material.primary}_ore`))
-			.itemInputs(`gtceu:crushed_${material.primary}_ore`, '2x #minecraft:coals')
+			.itemInputs(`gtceu:crushed_${material.primary}_ore`)
 			.inputFluids('minecraft:water 1000')
 			.itemOutputs(`gtceu:${material.primary}_dust`)
 			.chancedOutput(`gtceu:${material.primary}_dust`, 5000, 0)
@@ -350,4 +349,52 @@ BlockEvents.rightClicked('exnihilosequentia:dust', event => {
 
 	level.playSound(null, block.pos, "minecraft:item.bucket.fill", "blocks");
 	player.swing();
+});
+
+BlockEvents.rightClicked('minecraft:gold_block', event => {
+	const { player, block, item, hand, level } = event;
+
+	if (item.id !== 'komarumod:komaru_powder') return;
+	player.swing();
+	block.set('minecraft:cobblestone');
+
+	event.server.runCommandSilent(`execute at ${event.player.username} run summon minecraft:lightning_bolt ${Math.floor(event.block.x)} ${Math.floor(event.block.y)} ${Math.floor(event.block.z)}`);
+	event.server.scheduleInTicks(40, ctx => {
+	event.server.runCommandSilent(`execute at ${event.player.username} run summon komarumod:komaru ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}`);
+	event.server.runCommandSilent(`effect give @e[type=komarumod:komaru] minecraft:fire_resistance infinite 1 true`);
+	event.server.runCommandSilent(`effect give @e[type=komarumod:komaru] minecraft:slow_falling infinite 1 true`);
+	event.server.runCommandSilent(`effect give @e[type=komarumod:komaru] minecraft:resistance infinite 5 true`);
+	event.server.runCommandSilent(`effect give @e[type=komarumod:komaru] minecraft:regeneration infinite 5 true`);
+	});
+});
+
+BlockEvents.rightClicked('minecraft:netherite_block', event => {
+	const { player, block, item, hand, level } = event;
+
+	if (item.id !== 'komarumod:komaru_powder') return;
+	player.swing();
+	block.set('minecraft:cobblestone');
+
+	event.server.runCommandSilent(`effect clear @e[type=komarumod:komaru]`);
+	event.server.runCommandSilent(`execute at ${event.player.username} run tp @e[type=komarumod:komaru] ${Math.floor(event.player.x)} ${Math.floor(event.player.y)+200} ${Math.floor(event.player.z)}`);	
+	event.server.runCommandSilent(`execute at ${event.player.username} run summon minecraft:lightning_bolt ${Math.floor(event.block.x)} ${Math.floor(event.block.y)} ${Math.floor(event.block.z)}`);
+	event.player.potionEffects.add('minecraft:nausea', 100, 1);
+	event.player.tell(`§kTruly§r is not yet pleased with you....`);
+	event.server.scheduleInTicks(100, ctx => {
+		event.player.tell(`Now Die`);
+		event.server.scheduleInTicks(10, ctx => {	
+		event.server.scheduleInTicks(3, ctx => {
+		event.server.runCommandSilent(`execute at ${event.player.username} run summon minecraft:lightning_bolt ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}`);	
+		event.server.scheduleInTicks(3, ctx => {
+		event.server.runCommandSilent(`execute at ${event.player.username} run summon minecraft:lightning_bolt ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}`);	
+		event.server.scheduleInTicks(3, ctx => {			
+		event.server.runCommandSilent(`execute at ${event.player.username} run summon minecraft:lightning_bolt ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}`);
+		event.server.scheduleInTicks(3, ctx => {			
+		event.player.potionEffects.add('minecraft:instant_damage', 1, 99);
+	});
+	});
+	});
+	});		
+	});
+	});
 });

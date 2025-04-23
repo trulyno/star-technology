@@ -6,6 +6,7 @@ ServerEvents.tags('item', event => {
     event.add('gtceu:circuits/uiv', 'kubejs:draconic_wetware_processor_mainframe');
     event.add('gtceu:circuits/uev', 'kubejs:wetware_based_runic_neuroloom');
     event.remove('minecraft:planks', 'gtceu:treated_wood_planks');
+    event.remove('minecraft:wooden_slabs', 'gtceu:treated_wood_slab');
 
     const knifeTagRemove = ['netherite','flint','iron','diamond','golden']    
     knifeTagRemove.forEach((item)=> {

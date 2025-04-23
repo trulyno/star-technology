@@ -20,7 +20,9 @@ ServerEvents.recipes(event => {
         'createdieselgenerators:gasoline',  'ae2:charger', 'ae2:drive', 'ae2:chest', 'createdieselgenerators:pumpjack_hole', 'expatternprovider:ex_inscriber',
         'expatternprovider:ex_charger', 'expatternprovider:crystal_fixer', 'expatternprovider:canner', 'exmachinis:item_buffer', 'ae2:crystal_resonance_generator',
         'ae2:vibration_chamber', 'exnihilosequentia:mechanical_sieve', 'exnihilosequentia:mechanical_hammer', 'systeams:frost_boiler', 'exnihilosequentia:golden_mesh',
-        'expatternprovider:circuit_cutter', 'minecraft:mycelium', 'thermal:gunpowder_4', 'thermal:dirt_crafting', '#thermal:rockwool'
+        'expatternprovider:circuit_cutter', 'minecraft:mycelium', 'thermal:gunpowder_4', 'thermal:dirt_crafting', '#thermal:rockwool',
+        // Following 2 to be removed for Zeta due to exploits and bugs
+        'gtceu:me_pattern_buffer_proxy', 'gtceu:me_pattern_buffer'
     ];
     const toRemoveId = ['thermal:slime_mushroom_spores', 'thermal_extra:sticky_ball_to_paper', 'farmersdelight:paper_from_tree_bark', 'create:pressing/sugar_cane',
         'exnihilo:fluid_item/ens_slime', 'gtceu:shaped/good_circuit_board', 'thermal:rubber_from_vine', 'thermal:rubber_from_dandelion', 'thermal:smelting/cured_rubber_from_smelting',

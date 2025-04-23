@@ -69,8 +69,9 @@ StartupEvents.registry('item', event => {
 
 	parts.forEach(part =>
 		event
-			.create(to_id(part), 'create:sequenced_assembly')
+			.create(to_id(part))
 			.displayName(part)
+			.maxStackSize(64)
 			.texture('kubejs:item/hm/incomplete_parts/' + to_id(part))
 	);
 
