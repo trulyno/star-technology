@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('folding_akreyrium_stabiliser', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('folding_akreyrium_stabiliser')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.PARALLEL_HATCH])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('                 ', '        B        ', '        B        ', '        B        ', '        B        ', '        B        ', '                 ') 
