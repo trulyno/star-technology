@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         {essence: 'lapis_lazuli', inputs: ['7x mysticalagriculture:earth_essence', '4x mysticalagriculture:fire_essence', '6x mysticalagriculture:dye_essence'], energy: 400, circuit: 13},
         {essence: 'sulfur', inputs: ['23x mysticalagriculture:earth_essence', '15x mysticalagriculture:fire_essence', '6x mysticalagriculture:dye_essence'], energy: 400, circuit: 14},
         {essence: 'amethyst', inputs: ['11x mysticalagriculture:earth_essence', '3x mysticalagriculture:fire_essence', '8x mysticalagriculture:dye_essence'], energy: 400, circuit: 15},
-        {essence: 'aluminium', inputs: ['32x mysticalagriculture:earth_essence', '17x mysticalagriculture:fire_essence', '20x mysticalagriculture:water_essence'], energy: 1024, circuit: 18},
+        {essence: 'aluminum', inputs: ['32x mysticalagriculture:earth_essence', '17x mysticalagriculture:fire_essence', '20x mysticalagriculture:water_essence'], energy: 1024, circuit: 18},
         {essence: 'antimony', inputs: ['29x mysticalagriculture:earth_essence', '12x mysticalagriculture:sulfur_essence', '10x mysticalagriculture:stone_essence'], energy: 1024, circuit: 17},
         {essence: 'cobaltite', inputs: ['40x mysticalagriculture:earth_essence', '21x mysticalagriculture:dye_essence', '15x mysticalagriculture:stone_essence'], energy: 1024, circuit: 18},
         {essence: 'emerald', inputs: ['5x mysticalagriculture:aluminum_essence', '41x mysticalagriculture:dye_essence', '43x mysticalagriculture:fire_essence'], energy: 1024, circuit: 16},
