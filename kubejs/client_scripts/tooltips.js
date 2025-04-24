@@ -20,6 +20,10 @@ ItemEvents.tooltip(event => {
         text.add(2, Text.of('Has §cSubtick Parallels'));
     });
 
+    event.addAdvanced('gtceu:multi_smelter', (item, advanced, text) => {
+        text.add(2, Text.of('Has §cSubtick Parallels§ and §6Coil Parallels§r'));
+    });
+
     event.addAdvanced(/gtceu:.*_macerator/, (item, advanced, text) => {
         text.add(1, Text.of('§7Macerators only produce byproducts shown in JEI at HV or higher'));
     });

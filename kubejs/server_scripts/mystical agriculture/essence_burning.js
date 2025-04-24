@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
     const essenceSolid = (type,circ,eut,output) => {
         event.recipes.gtceu.essence_burning(id(`${type}_essence_burning_${circ}`))
             .itemInputs(`mysticalagriculture:${type}_essence`)
-            .itemOutput(output)
+            .itemOutputs(output)
             .duration(100)
             .EUt(eut)
             .circuit(circ);

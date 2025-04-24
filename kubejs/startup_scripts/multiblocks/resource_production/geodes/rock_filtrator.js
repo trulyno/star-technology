@@ -22,7 +22,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('S', Predicates.blocks('gtceu:solid_machine_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(3).setPreviewCount(2))
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1)))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1).setPreviewCount(1)))
             .where('F', Predicates.blocks('gtceu:steel_firebox_casing'))
             .where('B', Predicates.blocks('gtceu:cupronickel_coil_block'))
             .where('G', Predicates.blocks('gtceu:tempered_glass'))

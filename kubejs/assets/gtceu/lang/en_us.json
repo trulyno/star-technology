@@ -8,7 +8,7 @@
     "block.gtceu.zpm_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
     "block.gtceu.uv_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
 
-    "block.gtceu.dimensional_finder.tooltip.0": "7Get Dimensionally Pinged",
+    "block.gtceu.dimensional_finder.tooltip.0": "§7Get Dimensionally Pinged",
     "block.gtceu.dimensional_finder.tooltip.1": "§7This machine can send pulses into deep space, recording the echoes on crystals, and can sometimes triangulate a region's location based on that data.",
 
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.0": "§a§lAkreyrium §a§lProcessing",
@@ -17,6 +17,7 @@
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.3": "§6Stabilisation Matrix Lens:",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.4": "§7The folding stabiliser utilises a lens to focus the reintegration, The proper type should be chosen based on the Akreyrium variant, reinsertion is necessary after every use.",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.5": "§8-----------------------------------",
+    "block.gtceu.folding_akreyrium_stabiliser.tooltip.6": "Can use §3Parallel§r hatches",
 
     "block.gtceu.gate_assembly.tooltip.0": "§7A forge powerful enough to fuse together the parts of a stargate into one.",
     "block.gtceu.gate_assembly.tooltip.1": "Has §6Perfect Overclock",
@@ -113,7 +114,7 @@
     "block.gtceu.essence_replicator.tooltip.2": "Can use §3Parallel§r hatches",
     
     "block.gtceu.dimensional_destabiliser.tooltip.0": "§7A mysterious structure that can stimulate cracks in space to harvest heavy elements from it that have never been observed before.",
-    "block.gtceu.dimensional_destabiliser.tooltip.2": "Can use §3Parallel§r hatches",
+    "block.gtceu.dimensional_destabiliser.tooltip.1": "Can use §3Parallel§r hatches",
     
     "block.gtceu.greenhouse.tooltip.0": "§7An electrical machine that stimulates the growth of plants, flowers and saplings, allowing you to more easily farm them.",
     "block.gtceu.greenhouse.tooltip.1": "Has §6Perfect Overclock",
@@ -121,19 +122,19 @@
     "block.gtceu.latex_plantation.tooltip.0": "§7A multiblock that is way faster then the arboreal extractor for gathering latex",
     
     "block.gtceu.molten_destabilizer.tooltip.0": "§7A powerful machine that can splice complex molten chemicals into smaller chunks for processing",
-    "block.gtceu.molten_destabilizer.tooltip.2": "Can use §3Parallel§r hatches",
+    "block.gtceu.molten_destabilizer.tooltip.1": "Can use §3Parallel§r hatches",
     
     "block.gtceu.vibration_laser_engraver.tooltip.0": "§7A multiblock that uses precise lasers and vibrations to effortlessly cut and engrave gems, changing them in whatever way you need.",
     "block.gtceu.vibration_laser_engraver.tooltip.1": "Has §6Perfect Overclock",
     
     "block.gtceu.cyclonic_sifter.tooltip.0": "§7An advanced tier of sifter that is more precise and stronger than the basic tier, allowing it to run better recipes.",
-    "block.gtceu.cyclonic_sifter.tooltip.2": "Can use §3Parallel§r hatches",
+    "block.gtceu.cyclonic_sifter.tooltip.1": "Can use §3Parallel§r hatches",
     
     "block.gtceu.injection_mixer.tooltip.0": "§7An advanced tier of mixer that can create more precise mixtures than the basic tier, allowing it to run better recipes.",
-    "block.gtceu.injection_mixer.tooltip.2": "Can use §3Parallel§r hatches",
+    "block.gtceu.injection_mixer.tooltip.1": "Can use §3Parallel§r hatches",
     
     "block.gtceu.manifold_centrifuge.tooltip.0": "§7An advanced tier of centrifuge that is more powerful than the basic tier, allowing it to run better recipes.",
-    "block.gtceu.manifold_centrifuge.tooltip.2": "Can use §3Parallel§r hatches",
+    "block.gtceu.manifold_centrifuge.tooltip.1": "Can use §3Parallel§r hatches",
     
     "block.gtceu.classic_stargate_display.tooltip.0": "§7This is not a mandatory multiblock, but just exists to assist you with building the §3Classic Stargate",
     
@@ -189,9 +190,9 @@
     "block.gtceu.t_large_autoclave.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_autoclave.tooltip.2": "Can only have §bone§r Energy Hatch",
     
-    "block.gtceu.t_large_rock_crusher.tooltip.0": "§7A larger variant of the rock crusher that can process materials with more energy efficiency.",
-    "block.gtceu.t_large_rock_crusher.tooltip.1": "Has §6Perfect Overclock",
-    "block.gtceu.t_large_rock_crusher.tooltip.2": "Can only have §bone§r Energy Hatch",
+    "block.gtceu.large_rock_crusher.tooltip.0": "§7A larger variant of the rock crusher that can process materials with more energy efficiency.",
+    "block.gtceu.large_rock_crusher.tooltip.1": "Has §6Perfect Overclock",
+    "block.gtceu.large_rock_crusher.tooltip.2": "Can only have §bone§r Energy Hatch",
     
     "material.gtceu.soul_infused": "Soul Infused",
     "material.gtceu.signalum": "Signalum",

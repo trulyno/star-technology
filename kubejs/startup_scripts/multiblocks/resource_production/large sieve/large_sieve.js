@@ -17,7 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('T0O0T', 'FTTTF', 'F   F', 'F   F', 'F   F', 'F   F', 'TTTTT')
+            .aisle('TTOTT', 'FTTTF', 'F   F', 'F   F', 'F   F', 'F   F', 'TTTTT')
             .aisle('TPPPT', 'TTFTT', ' SSS ', '  S  ', '  S  ', ' SSS ', 'TTFTT')
             .aisle('TFPFT', 'TFPFT', ' SPS ', ' S S ', ' S S ', ' SPS ', 'TFIFT')
             .aisle('TTTTT', 'TTFTT', ' SSS ', '  S  ', '  S  ', ' SSS ', 'TTFTT')
@@ -32,8 +32,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('P', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_PIPE.get()))
             .where('I', Predicates.abilities(PartAbility.IMPORT_ITEMS))     
             .where('O', Predicates.abilities(PartAbility.EXPORT_ITEMS))
-            .where('0', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST.get())
-                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))) 
             .where(' ', Predicates.any())
             .build())
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',

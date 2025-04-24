@@ -807,6 +807,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			size: 1.0d
 			tasks: [{
 				id: "73D704EF2E4A92C8"

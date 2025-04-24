@@ -30,7 +30,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('D', Predicates.blocks('gtceu:fusion_glass'))
             .where('M', Predicates.blocks('gtceu:ulv_input_bus'))
             .where('X', Predicates.blocks('gtceu:fusion_glass')
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS_1X))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS_4X))
