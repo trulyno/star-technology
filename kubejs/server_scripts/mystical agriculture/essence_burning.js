@@ -10,46 +10,43 @@ ServerEvents.recipes(event => {
     const metalCryptand = 'gtceu:cryptand_na 1';
     const dust = 'gtceu:18_crown_6_k 100';
     const dustDepleted = 'gtceu:18_crown_6 100';
-    const dustCryptand = 'gtceu:cryptand_k 1';
+    const dustCryptand = 'gtceu:cryptand_k 1';      
 
-    [
-        {essence: 'water', circuit: '0', energy: '20', output: 'gtceu:distilled_water 2500'},
-        {essence: 'water', circuit: '1', energy: '20', output: 'gtceu:salt_water 5000'},
-        {essence: 'water', circuit: '2', energy: '20', output: 'exnihilosequentia:witch_water 5000'},
-        {essence: 'water', circuit: '3', energy: '20', output: 'exnihilosequentia:sea_water 5000'},
-        {essence: 'air', circuit: '0', energy: '20', output: 'gtceu:air 16000'},
-        {essence: 'air', circuit: '1', energy: '1560', output: 'gtceu:nether_air 16000'},
-        {essence: 'air', circuit: '2', energy: '1560', output: 'gtceu:ender_air 16000'},
-        {essence: 'fire', circuit: '0', energy: '400', output: 'minecraft:lava 5000'},
-        {essence: 'wood', circuit: '0', energy: '20', output: '32x minecraft:oak_log'},
-        {essence: 'wood', circuit: '1', energy: '20', output: '32x minecraft:birch_log'},
-        {essence: 'wood', circuit: '2', energy: '20', output: '32x minecraft:spruce_log'},
-        {essence: 'wood', circuit: '3', energy: '20', output: '32x minecraft:acacia_log'},
-        {essence: 'wood', circuit: '4', energy: '20', output: '32x minecraft:jungle_log'},
-        {essence: 'wood', circuit: '5', energy: '20', output: '32x minecraft:dark_oak_log'},
-        {essence: 'wood', circuit: '6', energy: '20', output: '32x minecraft:mangrove_log'},
-        {essence: 'wood', circuit: '7', energy: '20', output: '32x gtceu:rubber_log'},
-        {essence: 'wood', circuit: '8', energy: '20', output: '32x minecraft:cherry_log'}
-    ].forEach(essence=> {
-        const fluidcheck = essence.output.length
-        if(essence.output.slice(fluidcheck) == 0){
-            event.recipes.gtceu.essence_burning(id(`${essence.essence}_essence_burning_${essence.circuit}`))
-                .itemInputs(`mysticalagriculture:${essence.essence}_essence`)
-                .outputFluids(essence.output)
-                .duration(100)
-                .EUt(essence.energy)
-                .circuit(essence.circuit);
-        }
-        else{
-            event.recipes.gtceu.essence_burning(id(`${essence.essence}_essence_burning_${essence.circuit}`))
-                .itemInputs(`mysticalagriculture:${essence.essence}_essence`)
-                .itemOutput(essence.output)
-                .duration(100)
-                .EUt(essence.energy)
-                .circuit(essence.circuit);
-        }
+    const essenceFluid = (type,circ,eut,output) => {
+        event.recipes.gtceu.essence_burning(id(`${type}_essence_burning_${circ}`))
+            .itemInputs(`mysticalagriculture:${type}_essence`)
+            .outputFluids(output)
+            .duration(100)
+            .EUt(eut)
+            .circuit(circ);
+    }
+    const essenceSolid = (type,circ,eut,output) => {
+        event.recipes.gtceu.essence_burning(id(`${type}_essence_burning_${circ}`))
+            .itemInputs(`mysticalagriculture:${type}_essence`)
+            .itemOutputs(output)
+            .duration(100)
+            .EUt(eut)
+            .circuit(circ);
+    }
     
-    });
+    essenceFluid('water',0,20,'gtceu:distilled_water 2500');
+    essenceFluid('water',1,20,'gtceu:salt_water 5000');
+    essenceFluid('water',2,20,'exnihilosequentia:witch_water 5000');
+    essenceFluid('water',3,20,'exnihilosequentia:sea_water 5000');
+    essenceFluid('air',1,20,'gtceu:air 16000');
+    essenceFluid('air',2,1560,'gtceu:nether_air 16000');
+    essenceFluid('air',3,1560,'gtceu:ender_air 16000');
+    essenceFluid('fire',0,400,'minecraft:lava 5000');
+
+    essenceSolid('wood',0,20,'32x minecraft:oak_log');
+    essenceSolid('wood',1,20,'32x minecraft:birch_log');
+    essenceSolid('wood',2,20,'32x minecraft:spruce_log');
+    essenceSolid('wood',3,20,'32x minecraft:acacia_log');
+    essenceSolid('wood',4,20,'32x minecraft:jungle_log');
+    essenceSolid('wood',5,20,'32x minecraft:dark_oak_log');
+    essenceSolid('wood',6,20,'32x minecraft:mangrove_log');
+    essenceSolid('wood',7,20,'32x gtceu:rubber_log');
+    essenceSolid('wood',8,20,'32x minecraft:cherry_log');
 
     event.recipes.gtceu.essence_burning(id('dirt_essence_burning_0'))
         .itemInputs('mysticalagriculture:dirt_essence')

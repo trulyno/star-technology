@@ -230,7 +230,7 @@ ServerEvents.recipes(event => {
         }).id(`start:shaped/${type}_casing`);
 
         event.recipes.gtceu.assembler(id(`${type}_casing`))
-            .itemInputs(`gtceu:${material}_plate`, `gtceu:${material}_frame`)
+            .itemInputs(`6x gtceu:${material}_plate`, `gtceu:${material}_frame`)
             .itemOutputs(`2x ${casing_id}:${type}_casing`)
             .duration(50)
             .EUt(16)
@@ -278,7 +278,7 @@ ServerEvents.recipes(event => {
         }).id(`start:shaped/${type}_casing`);
 
         event.recipes.gtceu.assembler(id(`${type}_casing`))
-            .itemInputs(`gtceu:double_${material}_plate`, `gtceu:${material}_frame`)
+            .itemInputs(`6x gtceu:double_${material}_plate`, `gtceu:${material}_frame`)
             .itemOutputs(`2x ${casing_id}:${type}_casing`)
             .duration(50)
             .EUt(16)
@@ -724,6 +724,9 @@ ServerEvents.recipes(event => {
     event.replaceOutput({output: `${mod}:copper_nugget`},`${mod}:copper_nugget`,`gtceu:copper_nugget`);
     event.replaceOutput({output: `${mod}:zinc_nugget`},`${mod}:zinc_nugget`,`gtceu:zinc_nugget`);
     event.replaceOutput({output: `${mod}:brass_nugget`},`${mod}:brass_nugget`,`gtceu:brass_nugget`);
+    event.replaceInput({input: `${mod}:copper_nugget`},`${mod}:copper_nugget`,`gtceu:copper_nugget`);
+    event.replaceInput({input: `${mod}:zinc_nugget`},`${mod}:zinc_nugget`,`gtceu:zinc_nugget`);
+    event.replaceInput({input: `${mod}:brass_nugget`},`${mod}:brass_nugget`,`gtceu:brass_nugget`);
     }
     nuggetFixMod('create');nuggetFixMod('thermal');nuggetFixMod('exnihilosequentia');
 

@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('cyclonic_sifter', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('cyclonic_sifter')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.PARALLEL_HATCH])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(() => Block.getBlock('kubejs:quake_proof_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("         ", "         ", "         ", "         ", "   BBB   ", "   CCC   ", "   BBB   ", "         ", "         ", "         ", "         ", "         ") 

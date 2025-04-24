@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('4x gtceu:raw_realgar', 4000, 800)
         .chancedOutput('2x gtceu:raw_silver', 3500, 750)
         .outputFluids('gtceu:rare_ore_residue 400', 'gtceu:raw_ore_slurry 600')
-        .duration(720)
+        .duration(640)
         .EUt(GTValues.VA[GTValues.LV]);
 
     });

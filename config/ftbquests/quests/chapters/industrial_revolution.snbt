@@ -1859,6 +1859,7 @@
 				"4B51B15B49620F57"
 				"333F9471F8B4E184"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"The first of many coils. Each tier of coil has better stats that impact multiple machines. Make sure to take a look at the tooltips."
 				""

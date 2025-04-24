@@ -66,13 +66,13 @@ ServerEvents.recipes(event => {
             .itemInputs(`64x ${input}`)
             .notConsumable(`exnihilosequentia:string_mesh`)
             .itemOutputs(outputs)
-            .duration(1200)
+            .duration(800)
             .EUt(GTValues.VA[GTValues.LV])
             
         event.recipes.gtceu.large_sieve(id(`${input.path}_mechanical_sieve`))
             .itemInputs(`48x ${input}`)
             .itemOutputs(outputs)
-            .duration(1200)
+            .duration(800)
             .EUt(GTValues.VA[GTValues.LV])
     }
 

@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('injection_mixer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('injection_mixer')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.PARALLEL_HATCH])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(() => Block.getBlock('kubejs:noble_mixing_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(" BBB ", " CCC ", " BBB ", "  B  ", "     ", "  B  ", " BBB ", "     ", "     ", "     ", "     ", "     ", "     ") 

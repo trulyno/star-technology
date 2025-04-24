@@ -47,7 +47,8 @@ StartupEvents.registry('item', event => {
         const { type, color } = shard;
         event.create(`${type.toLowerCase()}_infused_shard`)
             .displayName(`§${color}${type.replace(/_/, ' ')}§r Infused Shard`)
-            .texture(`kubejs:item/lines/netherstar/${type.toLowerCase()}_infused_shard`);
+            .texture(`kubejs:item/lines/netherstar/${type.toLowerCase()}_infused_shard`)
+            .glow(true);
         });
 
     event.create('star_casting_mold')
@@ -60,7 +61,8 @@ StartupEvents.registry('item', event => {
         
     event.create('energized_nether_star_shard')
         .displayName('Energized Nether Star Shard')
-        .texture('kubejs:item/lines/netherstar/energized_nether_star_shard');
+        .texture('kubejs:item/lines/netherstar/energized_nether_star_shard')
+        .glow(true);
     
     //Mystical Magmas
     event.create('ancient_netherite_reinforced_mesh')
