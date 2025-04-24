@@ -761,6 +761,32 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
 })()
 }
 
+// temporary recipes
+ServerEvents.recipes(event => {
+    if (global.packmode !== 'hard'){
+        (() => {   
+    event.shaped('create:steam_engine',[
+        ' A ',
+        ' B ',
+        ' C '
+    ], {
+        A: 'gtceu:gold_plate',
+        B: 'create:andesite_alloy',
+        C: 'minecraft:copper_block'
+    }).id('start:shaped/steam_engine_temp')
+
+    event.shaped('create:steam_whistle',[
+        ' A ',
+        ' B '
+    ], {
+        A: 'gtceu:gold_plate',
+        B: 'minecraft:copper_ingot'
+    }).id('start:shaped/steam_whistle_temp')
+
+    })()
+    }
+});
+
 ServerEvents.tags('block', event => {
     event.remove('mineable/pickaxe', [
         'gtceu:ulv_barrel'
