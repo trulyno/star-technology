@@ -1144,7 +1144,11 @@
 				"64E79272B5003119"
 				"3D0F6CA8028C074B"
 			]
-			description: ["Now that you have LV Machine Hulls, you can construct a new multiblock to process your ores further. This will give you access to important resources, like gold and nickel."]
+			description: [
+				"Now that you have some Brass, you can construct a new multiblock to process your ores further."
+				""
+				"This will give you access to important resources, like gold and nickel."
+			]
 			icon: {
 				Count: 1
 				id: "gtceu:primitive_ore_factory"
@@ -1169,9 +1173,9 @@
 					type: "item"
 				}
 				{
-					count: 60L
+					count: 64L
 					id: "326A3E987EE01A79"
-					item: { Count: 60, id: "gtceu:firebricks" }
+					item: "gtceu:firebricks"
 					type: "item"
 				}
 				{
@@ -1184,51 +1188,6 @@
 					count: 4L
 					id: "0A9249930F0600BD"
 					item: { Count: 4, id: "gtceu:bronze_pipe_casing" }
-					type: "item"
-				}
-				{
-					id: "4A56F52F17C7067B"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:ulv_input_bus"
-								}
-								{
-									Count: 1b
-									id: "gtceu:lv_input_bus"
-								}
-							]
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "44107929B4E497FA"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:ulv_input_hatch"
-								}
-								{
-									Count: 1b
-									id: "gtceu:lv_input_hatch"
-								}
-							]
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "190CE6DEF3804179"
-					item: "gtceu:lv_output_bus"
 					type: "item"
 				}
 			]

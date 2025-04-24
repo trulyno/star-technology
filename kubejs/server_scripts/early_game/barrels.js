@@ -58,7 +58,7 @@ barrel('minecraft:red_mushroom_block','minecraft:brown_mushroom_block','exnihilo
 barrel('minecraft:soul_sand','#minecraft:smelts_to_glass','exnihilosequentia:witch_water')
 barrel('minecraft:soul_soil','minecraft:coarse_dirt','exnihilosequentia:witch_water')
 barrel('minecraft:blackstone','minecraft:cobblestone','exnihilosequentia:witch_water')
-barrel('minecraft:slime_block','#forge:mushrooms','exnihilosequentia:witch_water')
+barrel('minecraft:slime_block','minecraft:red_mushroom_block','exnihilosequentia:witch_water')
 barrel('minecraft:tube_coral_block','exnihilosequentia:tube_coral_larva','exnihilosequentia:sea_water')
 barrel('minecraft:brain_coral_block','exnihilosequentia:brain_coral_larva','exnihilosequentia:sea_water')
 barrel('minecraft:bubble_coral_block','exnihilosequentia:bubble_coral_larva','exnihilosequentia:sea_water')

@@ -1151,9 +1151,7 @@
 			description: [
 				"Now that you have some Brass, you can construct a new multiblock to process your ores further."
 				""
-				"This will give you access to important resources, like gold and nickel. "
-				""
-				"[ \"It can't be automated yet, but soon you can make the \", { \"text\": \"Steam Ore Factory\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7E33792C89BA85E3\" } }, \" to solve this problem.\" ]"
+				"This will give you access to important resources, like gold and nickel."
 			]
 			icon: {
 				Count: 1

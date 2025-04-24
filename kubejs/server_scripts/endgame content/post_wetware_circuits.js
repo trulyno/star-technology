@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             '24x gtceu:ruthenium_trinium_americium_neutronate_double_wire', '32x gtceu:tritanium_plate')
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 2880', 'gtceu:polyether_ether_ketone 1152', 'gtceu:sterilized_growth_medium 5000')
         .itemOutputs('kubejs:wetware_based_runic_neuroloom')
-        .duration(1800)
+        .duration(1440)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack('kubejs:computational_super_matrix')
