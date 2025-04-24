@@ -21,7 +21,7 @@ ItemEvents.tooltip(event => {
     });
 
     event.addAdvanced('gtceu:multi_smelter', (item, advanced, text) => {
-        text.add(2, Text.of('Has §cSubtick Parallels§ and §6Coil Parallels§r'));
+        text.add(2, Text.of('Has §cSubtick Parallels§r and §6Coil Parallels§r'));
     });
 
     event.addAdvanced(/gtceu:.*_macerator/, (item, advanced, text) => {
