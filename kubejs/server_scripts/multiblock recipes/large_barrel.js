@@ -28,14 +28,14 @@ ServerEvents.recipes(event => {
         .itemOutputs('minecraft:clay')
         .duration(1);
 
-    event.recipes.gtceu.large_barrel(id('to_ssand'))
+    event.recipes.gtceu.large_barrel(id('to_soul_sand'))
         .itemInputs('minecraft:sand')
         .inputFluids('exnihilosequentia:witch_water 100')
         .itemOutputs('minecraft:soul_sand')
         .duration(1);
 
     event.recipes.gtceu.large_barrel(id('to_slime'))
-        .itemInputs('#forge:mushrooms')
+        .itemInputs('minecraft:red_mushroom_block')
         .inputFluids('exnihilosequentia:witch_water 1000')
         .itemOutputs('minecraft:slime_block')
         .duration(1);
