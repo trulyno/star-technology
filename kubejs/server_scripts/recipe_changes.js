@@ -230,7 +230,7 @@ ServerEvents.recipes(event => {
         }).id(`start:shaped/${type}_casing`);
 
         event.recipes.gtceu.assembler(id(`${type}_casing`))
-            .itemInputs(`gtceu:${material}_plate`, `gtceu:${material}_frame`)
+            .itemInputs(`6x gtceu:${material}_plate`, `gtceu:${material}_frame`)
             .itemOutputs(`2x ${casing_id}:${type}_casing`)
             .duration(50)
             .EUt(16)
@@ -278,7 +278,7 @@ ServerEvents.recipes(event => {
         }).id(`start:shaped/${type}_casing`);
 
         event.recipes.gtceu.assembler(id(`${type}_casing`))
-            .itemInputs(`gtceu:double_${material}_plate`, `gtceu:${material}_frame`)
+            .itemInputs(`6x gtceu:double_${material}_plate`, `gtceu:${material}_frame`)
             .itemOutputs(`2x ${casing_id}:${type}_casing`)
             .duration(50)
             .EUt(16)

@@ -234,4 +234,6 @@ ServerEvents.recipes(event => {
         .duration(320)
         .EUt(112);
 
+    event.smelting('minecraft:slime_ball', 'thermal:slime_mushroom_spores').id('kjs:smelting/slitake');
+
 });

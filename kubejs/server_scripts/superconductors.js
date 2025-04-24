@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
         .EUt(100000);
 
     event.recipes.gtceu.mixer(id('stellarium_dust'))
-        .itemInputs('4x gtceu:melodium_dust', '1x gtceu:samarium_iron_dust')
+        .itemInputs('4x gtceu:melodium_dust', '1x gtceu:samarium_iron_arsenic_oxide_dust')
         .inputFluids('gtceu:neutronium 1728')
         .itemOutputs('17x gtceu:stellarium_dust')
         .duration(1200)

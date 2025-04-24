@@ -91,5 +91,18 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'minecraft:netherite_ingot'});
 
     event.remove({ output: /manyideas_core:saw.*/});
-
+    event.remove({ output: /create:.*_sheet/});
+    event.remove({ output: /create:.*_ingot/});
+    event.remove({ output: /create:.*_plate/});
+    event.remove({ input: /create:.*_sheet/});
+    event.remove({ input: /create:.*_ingot/});
+    event.remove({ input: /create:.*_plate/});
+    event.remove({ output: /thermal:.*_ingot/});
+    event.remove({ input: /thermal:.*_ingot/});
+    event.remove({ output: /exnihilosequentia:.*_ingot/});
+    event.remove({ input: /exnihilosequentia:.*_ingot/});
+    event.remove({ output: /thermal:.*_nugget/});
+    event.remove({ input: /thermal:.*_nugget/});
+    event.remove({ output: /exnihilosequentia:.*_nugget/});
+    event.remove({ input: /exnihilosequentia:.*_nugget/});
 });
