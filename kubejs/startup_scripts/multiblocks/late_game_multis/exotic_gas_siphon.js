@@ -17,7 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('exotic_gas_siphon', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.PARALLEL_HATCH])
         .recipeTypes([GTRecipeTypes.get('exotic_gas_siphon'), GTRecipeTypes.get('gas_collector')])
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])

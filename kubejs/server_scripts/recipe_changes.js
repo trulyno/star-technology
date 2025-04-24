@@ -431,9 +431,16 @@ ServerEvents.recipes(event => {
     }).id('start:shaped/neodymium_magnet');
 
     //plates
-    ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron'].forEach(type => {
-        event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`).id(`start:pressing/${type}_plate`);
+    [
+        {mod: 'gtceu', metals: ['lead','silver','tin','zinc', 'brass','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron']},
+        {mod: 'minecraft', metals: ['iron', 'gold', 'copper']}
+    ].forEach(type => {
+        type.metals.forEach(foo => {
+            event.recipes.create.pressing(`gtceu:${foo}_plate`,`${type.mod}:${foo}_ingot`).id(`start:pressing/${foo}_plate`);
+        });
     });
+    
+
     })()
     } 
 
@@ -753,6 +760,32 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
 });
 })()
 }
+
+// temporary recipes
+ServerEvents.recipes(event => {
+    if (global.packmode !== 'hard'){
+        (() => {   
+    event.shaped('create:steam_engine',[
+        ' A ',
+        ' B ',
+        ' C '
+    ], {
+        A: 'gtceu:gold_plate',
+        B: 'create:andesite_alloy',
+        C: 'minecraft:copper_block'
+    }).id('start:shaped/steam_engine_temp')
+
+    event.shaped('create:steam_whistle',[
+        ' A ',
+        ' B '
+    ], {
+        A: 'gtceu:gold_plate',
+        B: 'minecraft:copper_ingot'
+    }).id('start:shaped/steam_whistle_temp')
+
+    })()
+    }
+});
 
 ServerEvents.tags('block', event => {
     event.remove('mineable/pickaxe', [
