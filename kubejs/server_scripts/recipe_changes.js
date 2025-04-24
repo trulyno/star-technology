@@ -431,9 +431,16 @@ ServerEvents.recipes(event => {
     }).id('start:shaped/neodymium_magnet');
 
     //plates
-    ['lead','silver','tin','zinc','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron'].forEach(type => {
-        event.recipes.create.pressing(`gtceu:${type}_plate`,`gtceu:${type}_ingot`).id(`start:pressing/${type}_plate`);
+    [
+        {mod: 'gtceu', metals: ['lead','silver','tin','zinc', 'brass','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron']},
+        {mod: 'minecraft', metals: ['iron', 'gold', 'copper']}
+    ].forEach(type => {
+        type.metals.forEach(foo => {
+            event.recipes.create.pressing(`gtceu:${foo}_plate`,`${type.mod}:${foo}_ingot`).id(`start:pressing/${foo}_plate`);
+        });
     });
+    
+
     })()
     } 
 
