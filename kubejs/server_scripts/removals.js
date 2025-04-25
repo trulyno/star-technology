@@ -94,9 +94,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: /create:.*_sheet/});
     event.remove({ output: /create:.*_ingot/});
     event.remove({ output: /create:.*_plate/});
-    event.remove({ input: /create:.*_sheet/});
-    event.remove({ input: /create:.*_ingot/});
-    event.remove({ input: /create:.*_plate/});
+    event.replaceInput({input: 'create:copper_sheet'}, 'create:copper_sheet', 'gtceu:copper_plate');
+    event.replaceInput({input: 'create:zinc_ingot'}, 'create:zinc_ingot', 'gtceu:zinc_ingot');
     event.remove({ output: /thermal:.*_ingot/});
     event.remove({ input: /thermal:.*_ingot/});
     event.remove({ output: /exnihilosequentia:.*_ingot/});

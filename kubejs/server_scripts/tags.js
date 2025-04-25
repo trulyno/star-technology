@@ -84,6 +84,7 @@ ServerEvents.tags('item', event=>{
         /create:copper.*/,
         /create:iron.*/,
         /create:brass.*/,
+        /create:gold.*/,
         'create:powdered_obsidian'
     ]
 
