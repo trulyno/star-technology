@@ -772,7 +772,7 @@ ServerEvents.recipes(event => {
         A: 'gtceu:gold_plate',
         B: 'create:andesite_alloy',
         C: 'minecraft:copper_block'
-    }).id('start:shaped/steam_engine_temp')
+    }).id('start:shaped/steam_engine_temp');
 
     event.shaped('create:steam_whistle',[
         ' A ',
@@ -780,7 +780,17 @@ ServerEvents.recipes(event => {
     ], {
         A: 'gtceu:gold_plate',
         B: 'minecraft:copper_ingot'
-    }).id('start:shaped/steam_whistle_temp')
+    }).id('start:shaped/steam_whistle_temp');
+
+    event.shaped('create:wrench',[
+        'AA ',
+        'AB ',
+        ' C '
+    ], {
+        A: 'gtceu:gold_plate',
+        B: 'create:cogwheel',
+        C: 'minecraft:stick'
+    }).id('start:shaped/wrench');
 
     })()
     }

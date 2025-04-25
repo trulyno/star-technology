@@ -70,7 +70,9 @@ ServerEvents.recipes(event => {
         { name: 'minecraft:sunflower' },
         { name: 'minecraft:lilac' },
         { name: 'minecraft:rose_bush' },
-        { name: 'minecraft:peony' }
+        { name: 'minecraft:peony' },
+        { name: 'minecraft:sugar_cane' },
+        { name: 'minecraft:cactus' }
     ].forEach(crop => {
         event.recipes.gtceu.large_farm(id(`${crop.name.split(':')[1]}${(!crop.name.startsWith('minecraft')) ? '_' + crop.name.split(':')[0] : ''}_harvest`))
             .itemInputs(`8x ${(crop.seed) ? crop.seed : crop.name}`)

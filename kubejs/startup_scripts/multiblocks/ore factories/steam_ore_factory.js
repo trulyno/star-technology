@@ -53,7 +53,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('FFFFF', 'FG#GF', 'F###F', '#F#F#', '#FFF#', '##F##', '##B##')
             .aisle('#FFF#', '#FCF#', '#FFF#', '##F##', '#####', '#####', '#####')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-        .where('F', Predicates.blocks('kubejs:high_steam_machine_casing').setMinGlobalLimited(50)
+        .where('F', Predicates.blocks('kubejs:high_steam_machine_casing').setMinGlobalLimited(40)
             .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1).setMaxGlobalLimited(2))
             .or(Predicates.abilities(PartAbility.STEAM_IMPORT_ITEMS).setPreviewCount(1).setMaxGlobalLimited(2))
             .or(Predicates.abilities(PartAbility.STEAM).setExactLimit(1))
