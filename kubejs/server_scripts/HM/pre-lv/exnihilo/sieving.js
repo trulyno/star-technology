@@ -77,9 +77,9 @@ ServerEvents.recipes(event => {
 	sieve('flint', .6, cDrip, dust, false);
 
 	// Dust
-	sieve('string', .25, dust, 'gtceu:small_redstone_dust', false);
+	sieve('string', .35, dust, 'gtceu:small_redstone_dust', false);
 	sieve('string', .08, dust, 'gtceu:quartzite_gem', false);
-	sieve('flint', .1, dust, 'minecraft:redstone', false);
+	sieve('flint', .125, dust, 'minecraft:redstone', false);
 	sieve('flint', .03, dust, 'gtceu:raw_quartzite', false);
 
 	// Mud (temp)

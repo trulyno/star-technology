@@ -5,7 +5,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 		.pattern(definition => FactoryBlockPattern.start()
             .aisle('   D   ','       ','       ','       ','       ','       ','       ')
             .aisle('       ','       ','       ','       ','       ','       ','       ') 	
-            .aisle('  E    ','       ','       ','       ','       ','       ','       ') 	
+            .aisle('   E   ','       ','       ','       ','       ','       ','       ') 	
     		.aisle(' RCBCR ','CR   RC','R     R','R  @  R','C     C','RR   RR',' CRCRC ')
 			.where('R', Predicates.blocks('sgjourney:classic_stargate_ring_block'))
             .where('C', Predicates.blocks('sgjourney:classic_stargate_chevron_block'))

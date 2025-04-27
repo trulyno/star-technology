@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
 
 	small_springs.forEach(metal => seq_assembly(
 		`2x gtceu:small_${metal}_spring`,
-		`gtceu:long_${metal}_rod`,
+		`gtceu:${metal}_spring`,
 		'kubejs:incomplete_small_spring',
 		['cut', 'cut', 'press'], 2
 	));
@@ -284,7 +284,7 @@ ServerEvents.recipes(event => {
 		P: 'gtceu:iron_plate',
 		T: 'create:electron_tube',
 		F: 'gtceu:fine_copper_wire'
-	}).id('start:mechanical_crafting/redstone_servo'); // DUPLICATE redstone servo 1: ulv.js line 44
+	}).id('start:mechanical_crafting/redstone_servo');
 
 	event.recipes.create.mechanical_crafting('gtceu:ulv_stone_barrel', [
 		'PN NP',

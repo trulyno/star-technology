@@ -75,14 +75,14 @@ ServerEvents.recipes(event => {
         { name: 'minecraft:cactus' }
     ].forEach(crop => {
         event.recipes.gtceu.large_farm(id(`${crop.name.split(':')[1]}${(!crop.name.startsWith('minecraft')) ? '_' + crop.name.split(':')[0] : ''}_harvest`))
-            .itemInputs(`8x ${(crop.seed) ? crop.seed : crop.name}`)
+            .notConsumable(`8x ${(crop.seed) ? crop.seed : crop.name}`)
             .itemOutputs(`16x ${crop.name}`)
             .chancedOutput(`8x ${(crop.seed) ? crop.seed : crop.name}`, 5000, 0)
             .daytime()
             .duration(800);
 
         event.recipes.gtceu.crop_greenhouse(id(`${crop.name.split(':')[1]}${(!crop.name.startsWith('minecraft')) ? '_' + crop.name.split(':')[0] : ''}_harvest_no_fertilizer`))
-            .itemInputs(`8x ${(crop.seed) ? crop.seed : crop.name}`)
+            .notConsumable(`8x ${(crop.seed) ? crop.seed : crop.name}`)
             .inputFluids('minecraft:water 100')
             .itemOutputs(`16x ${crop.name}`)
             .chancedOutput(`8x ${(crop.seed) ? crop.seed : crop.name}`, 5000, 0)
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
             .circuit(0);
 
         event.recipes.gtceu.crop_greenhouse(id(`${crop.name.split(':')[1]}${(!crop.name.startsWith('minecraft')) ? '_' + crop.name.split(':')[0] : ''}_harvest_bone_meal`))
-            .itemInputs(`8x ${(crop.seed) ? crop.seed : crop.name}`)
+            .notConsumable(`8x ${(crop.seed) ? crop.seed : crop.name}`)
             .chancedInput('minecraft:bone_meal', 7500, -500)
             .inputFluids('minecraft:water 100')
             .itemOutputs(`32x ${crop.name}`)
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
             .circuit(1);
 
         event.recipes.gtceu.crop_greenhouse(id(`${crop.name.split(':')[1]}${(!crop.name.startsWith('minecraft')) ? '_' + crop.name.split(':')[0] : ''}_harvest_compost`))
-            .itemInputs(`8x ${(crop.seed) ? crop.seed : crop.name}`)
+            .notConsumable(`8x ${(crop.seed) ? crop.seed : crop.name}`)
             .chancedInput('thermal:compost', 7500, -500)
             .inputFluids('minecraft:water 100')
             .itemOutputs(`48x ${crop.name}`)
@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
             .circuit(2);
 
         event.recipes.gtceu.crop_greenhouse(id(`${crop.name.split(':')[1]}${(!crop.name.startsWith('minecraft')) ? '_' + crop.name.split(':')[0] : ''}_harvest_fertilizer`))
-            .itemInputs(`8x ${(crop.seed) ? crop.seed : crop.name}`)
+            .notConsumable(`8x ${(crop.seed) ? crop.seed : crop.name}`)
             .chancedInput('gtceu:fertilizer', 7500, -500)
             .inputFluids('minecraft:water 100')
             .itemOutputs(`64x ${crop.name}`)
