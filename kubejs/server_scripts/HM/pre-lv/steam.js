@@ -125,18 +125,19 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         Item.of(`gtceu:ulv_fluid_input`),
     ], inter, [
+        event.recipes.createPressing(inter, inter),
         event.recipes.createDeploying(inter, [inter, `minecraft:bucket`]),
         event.recipes.createDeploying(inter, [inter, `gtceu:rubber_ring`]),
         event.recipes.createPressing(inter, inter)
     ]).transitionalItem(inter).loops(1).id('start:sequenced_assembly/ulv_fluid_input');
 
-    event.recipes.create.sequenced_assembly([
-        Item.of(`gtceu:ulv_fluid_output`),
-    ], inter, [
-        event.recipes.createDeploying(inter, [inter, `gtceu:rubber_ring`]),        
-        event.recipes.createDeploying(inter, [inter, `minecraft:bucket`]),
-        event.recipes.createPressing(inter, inter)
-    ]).transitionalItem(inter).loops(1).id('start:sequenced_assembly/ulv_fluid_output');
+    event.shaped(Item.of(`gtceu:ulv_fluid_output`), [
+        'H',
+        'S'
+    ], {
+        H: `gtceu:ulv_fluid_input`,
+        S: `#forge:tools/screwdrivers`
+    });
 
     const PrimSifter = (input,mesh,output,scaler) => {
     event.recipes.gtceu.primitive_sifter(id(`${output.split(':')[1]}_${mesh}`))
