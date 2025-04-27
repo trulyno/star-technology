@@ -26,12 +26,15 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 
 	if (player.getMainHandItem() == null && player.getOffHandItem() == null && player.isCrouching()) {
 		pop_up('kubejs:flint_shard', 0.25);
+		pop_up('kubejs:flint_shard', 0.25);
 		pop_up('minecraft:cookie', 0.002);
 		player.addExhaustion(.03)
 		dig();
 	};
 
 	if (item.id == 'kubejs:basic_scavenging_rod') {
+		pop_up('kubejs:flint_shard', 0.5);
+		pop_up('minecraft:flint', 0.2);
 		pop_up('kubejs:flint_shard', 0.5);
 		pop_up('minecraft:flint', 0.2);
 		pop_up('minecraft:cookie', 0.003);
@@ -41,6 +44,8 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 	};
 
 	if (item.id == 'kubejs:scavenging_rod') {
+		pop_up('kubejs:flint_shard', 0.5);
+		pop_up('minecraft:flint', 0.5);
 		pop_up('kubejs:flint_shard', 0.5);
 		pop_up('minecraft:flint', 0.5);
 		pop_up('exnihilosequentia:stone_pebble', 0.2);

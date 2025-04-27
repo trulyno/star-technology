@@ -66,6 +66,7 @@
     "block.gtceu.primitive_ore_factory.tooltip.0": "§7Your first all in one ore processing machine. Because of how primitive it is, it can only accept manual inputs.",
     
     "block.gtceu.steam_ore_factory.tooltip.0": "§7A slightly more advanced ore processor, that can accept inputs from busses and hatches, and because of that can be automated.",
+    "block.gtceu.steam_ore_factory.tooltip.1": "§l§7Disabled till Eta release?",
 
     "block.gtceu.electric_ore_factory.tooltip.0": "§7The electric all in one ore processing machine.",
     "block.gtceu.electric_ore_factory.tooltip.1": "Has §6Perfect Overclock",
