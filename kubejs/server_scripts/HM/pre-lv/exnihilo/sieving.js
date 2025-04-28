@@ -86,6 +86,7 @@ ServerEvents.recipes(event => {
 	sieve('flint', .1, mud, 'thermal:slime_mushroom_spores', false);
 	sieve('flint', .08, mud, 'exnihilosequentia:mycelium_spores', false);
 	sieve('flint', .04, mud, 'minecraft:mangrove_propagule', false);
+	sieve('flint', .01, mud, 'minecraft:sugar_cane', false);
 
 	// Saplings
 	['acacia','birch','cherry','dark_oak','jungle','oak','spruce'].forEach(sapling=>{

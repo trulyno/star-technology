@@ -256,7 +256,7 @@ ServerEvents.recipes(event => {
 		.duration(600);
 
 	event.recipes.gtceu.barrel_transformation(id('witch_water'))
-		.chancedInput('exnihilosequentia:mycelium_spores', 5000, 0)
+		.chancedInput('exnihilosequentia:mycelium_spores', 1000, 0)
 		.inputFluids('minecraft:water 1000')
 		.outputFluids('exnihilosequentia:witch_water 1000')
 		.duration(800);
