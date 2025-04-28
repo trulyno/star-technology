@@ -34,6 +34,7 @@ ServerEvents.recipes(event => {
     .chancedOutput('kubejs:quartzite_geode', 3500, 500)
     .chancedOutput('kubejs:certus_quartz_geode', 4500, 750)
     .duration(1200)
+    .circuit(0)
     .EUt(GTValues.VHA[GTValues.LV]);
 
   event.recipes.gtceu.rock_filtrator(id('mv_geodes'))
@@ -45,6 +46,7 @@ ServerEvents.recipes(event => {
     .chancedOutput('kubejs:spessartine_geode', 3500, 500)
     .chancedOutput('kubejs:monazite_geode', 3750, 750)
     .duration(960)
+    .circuit(0)
     .EUt(GTValues.VHA[GTValues.MV]);
 
   //Specialist Recipes LV
