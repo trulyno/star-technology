@@ -708,6 +708,15 @@ ServerEvents.recipes(event => {
         });
     });
 
+    //NPK Re-add
+
+    event.recipes.gtceu.large_chemical_reactor(id('npk_solution'))
+        .itemInputs('15x gtceu:apatite_dust', '5x gtceu:potassium_dust')
+        .inputFluids('gtceu:sulfur_trioxide 288', 'gtceu:nitrogen 1000', 'gtceu:distilled_water 2200')
+        .circuit(24)
+        .outputFluids('gtceu:npk_solution 6400')
+        .EUt(280)
+        .duration(120);
 
     //Tom's / Chipped Fixes
 
