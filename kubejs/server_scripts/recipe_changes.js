@@ -625,7 +625,7 @@ ServerEvents.recipes(event => {
     [{input: 'architects_palette:abyssaline_lamp', output: 'architects_palette:hadaline_lamp'},
         {input: 'architects_palette:abyssaline_pillar', output: 'architects_palette:hadaline_pillar'},
         {input: 'architects_palette:abyssaline_bricks', output: 'architects_palette:hadaline_bricks'},
-        {input: 'architects_palette:chiseled_abyssaline_bricks', output: 'chiseled_architects_palette:chiseled_hadaline_bricks'},
+        {input: 'architects_palette:chiseled_abyssaline_bricks', output: 'architects_palette:chiseled_hadaline_bricks'},
         {input: 'architects_palette:sunstone', output: 'architects_palette:moonstone'},
         {input: 'gtceu:steel_ingot', output: 'architects_palette:unobtanium'},
         {input: 'minecraft:granite', output: 'architects_palette:onyx'},
