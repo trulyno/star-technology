@@ -600,7 +600,10 @@
 				"1F5CCE8CFD02903A"
 				"23C8E1371ABA986C"
 			]
-			description: ["The Electric Blast Furnace (EBF for short) is a better furnace, which you will need for most of your ingots going forward. If you are curious about how to use the EBF for &bMV&r recipes, look at the Mechanics chapter, inside the Overclock quest."]
+			description: [
+				"The Electric Blast Furnace (EBF for short) is a better furnace, which you will need for most of your ingots going forward. If you are curious about how to use the EBF for &bMV&r recipes "
+				"{ \"text\": \"Click Here\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"34EDF98BDC245F77\" } }"
+			]
 			icon: "gtceu:electric_blast_furnace"
 			id: "56BA79287C4DBE52"
 			rewards: [{
@@ -1914,11 +1917,13 @@
 				{
 					id: "2D8C878C5E9C6516"
 					item: "gtceu:mv_centrifuge"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2602CD848084D844"
 					item: "gtceu:mv_electrolyzer"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1955,11 +1960,13 @@
 				{
 					id: "4A6D23D983B6852B"
 					item: "gtceu:lv_brewery"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "1B5BC7035DD0CF97"
 					item: "gtceu:lv_distillery"
+					optional_task: true
 					type: "item"
 				}
 			]

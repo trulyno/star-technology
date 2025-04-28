@@ -97,8 +97,8 @@ ServerEvents.recipes(event => {
 		`gtceu:small_${metal}_gear`,
 		'kubejs:incomplete_gear',
 		[
-			['deploy', rod(metal)],
 			['deploy', plate(metal)],
+			['deploy', rod(metal)],
 		], 2
 	));
 

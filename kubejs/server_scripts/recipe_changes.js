@@ -432,7 +432,7 @@ ServerEvents.recipes(event => {
 
     //plates
     [
-        {mod: 'gtceu', metals: ['lead','silver','tin','zinc', 'brass','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron']},
+        {mod: 'gtceu', metals: ['lead','silver','tin','zinc', 'brass','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron','potin']},
         {mod: 'minecraft', metals: ['iron', 'gold', 'copper']}
     ].forEach(type => {
         type.metals.forEach(foo => {
@@ -696,6 +696,18 @@ ServerEvents.recipes(event => {
         .EUt(600);
 
     event.recipes.create.item_application('minecraft:mycelium', ['minecraft:grass_block', 'exnihilosequentia:mycelium_spores']).id('start:item_application/mycelium');
+
+    // StarT Core Cell* Emptying
+    ['drum','fluid_cell'].forEach(container=>{
+        ['enriched_naquadah','neutronium'].forEach(type=>{
+
+            event.shapeless(Item.of(`start_core:${type}_${container}`), [
+                Item.of(`start_core:${type}_${container}`).ignoreNBT()
+            ]);
+
+        });
+    });
+
 
     //Tom's / Chipped Fixes
 

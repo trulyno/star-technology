@@ -144,7 +144,7 @@ ServerEvents.recipes(event => {
         .itemInputs(`16x ${input}`)
         .notConsumable(`exnihilosequentia:${mesh}_mesh`)
         .itemOutputs(`${2*scaler}x ${output}`)
-        .duration(300)
+        .duration(600)
         .EUt(30);
     }
     PrimSifter('minecraft:sand','string','minecraft:coal',3);
