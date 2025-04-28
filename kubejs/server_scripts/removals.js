@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         'createdieselgenerators:gasoline',  'ae2:charger', 'ae2:drive', 'ae2:chest', 'createdieselgenerators:pumpjack_hole', 'expatternprovider:ex_inscriber',
         'expatternprovider:ex_charger', 'expatternprovider:crystal_fixer', 'expatternprovider:canner', 'exmachinis:item_buffer', 'ae2:crystal_resonance_generator',
         'ae2:vibration_chamber', 'exnihilosequentia:mechanical_sieve', 'exnihilosequentia:mechanical_hammer', 'systeams:frost_boiler', 'exnihilosequentia:golden_mesh',
-        'expatternprovider:circuit_cutter', 'minecraft:mycelium', 'thermal:gunpowder_4', 'thermal:dirt_crafting', '#thermal:rockwool',
+        'expatternprovider:circuit_cutter', 'minecraft:mycelium', 'thermal:gunpowder_4', 'thermal:dirt_crafting', '#thermal:rockwool', 'create:brass_block', 'create:zinc_block', 
         // Following 2 to be removed for Zeta due to exploits and bugs
         'gtceu:me_pattern_buffer_proxy', 'gtceu:me_pattern_buffer'
     ];
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         'ae2:network/blocks/spatial_io_port', 'ae2:network/blocks/io_port', 'a2:network/cables/covered_fluix', 'ae2:network/parts/quartz_fiber_part', 'ae2:network/cables/glass_fluix',
         'createdieselgenerators:basin_fermenting/magma_cream', 'gtceu:research_station/1_x_gtceu_uv_energy_input_hatch', 'gtceu:research_station/1_x_gtceu_uv_energy_output_hatch',
         'toms_storage:adv_wireless_terminal', 'megacells:mega_crafting_unit', 'gtceu:shaped/resistor_wire', 'gtceu:shaped/resistor_wire_fine', 'gtceu:shaped/resistor_wire_fine_carbon',
-        'gtceu:shaped/resistor_wire_carbon', 'gtceu:shaped/resistor_wire_charcoal'
+        'gtceu:shaped/resistor_wire_carbon', 'gtceu:shaped/resistor_wire_charcoal', 'create:crushing/diorite_recycling', 'create:milling/charcoal'
 
     ];
 
@@ -94,9 +94,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: /create:.*_sheet/});
     event.remove({ output: /create:.*_ingot/});
     event.remove({ output: /create:.*_plate/});
-    event.remove({ input: /create:.*_sheet/});
-    event.remove({ input: /create:.*_ingot/});
-    event.remove({ input: /create:.*_plate/});
+    event.replaceInput({input: 'create:copper_sheet'}, 'create:copper_sheet', 'gtceu:copper_plate');
+    event.replaceInput({input: 'create:zinc_ingot'}, 'create:zinc_ingot', 'gtceu:zinc_ingot');
     event.remove({ output: /thermal:.*_ingot/});
     event.remove({ input: /thermal:.*_ingot/});
     event.remove({ output: /exnihilosequentia:.*_ingot/});

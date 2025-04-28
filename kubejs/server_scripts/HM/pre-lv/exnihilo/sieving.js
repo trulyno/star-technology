@@ -77,15 +77,16 @@ ServerEvents.recipes(event => {
 	sieve('flint', .6, cDrip, dust, false);
 
 	// Dust
-	sieve('string', .25, dust, 'gtceu:small_redstone_dust', false);
+	sieve('string', .35, dust, 'gtceu:small_redstone_dust', false);
 	sieve('string', .08, dust, 'gtceu:quartzite_gem', false);
-	sieve('flint', .1, dust, 'minecraft:redstone', false);
+	sieve('flint', .125, dust, 'minecraft:redstone', false);
 	sieve('flint', .03, dust, 'gtceu:raw_quartzite', false);
 
 	// Mud (temp)
 	sieve('flint', .1, mud, 'thermal:slime_mushroom_spores', false);
 	sieve('flint', .08, mud, 'exnihilosequentia:mycelium_spores', false);
 	sieve('flint', .04, mud, 'minecraft:mangrove_propagule', false);
+	sieve('flint', .01, mud, 'minecraft:sugar_cane', false);
 
 	// Saplings
 	['acacia','birch','cherry','dark_oak','jungle','oak','spruce'].forEach(sapling=>{

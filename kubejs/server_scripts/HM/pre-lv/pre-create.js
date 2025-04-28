@@ -398,7 +398,7 @@ ServerEvents.recipes(event => {
 		event.recipes.create.compacting(block, [`4x ${item}`, Fluid.of('gtceu:concrete', 400)]).id(`start:compacting/${type}bricks`);
 	});
 
-	event.shaped(Item.of('kubejs:reinforced_stone_bricks'), [
+	event.shaped(Item.of('kubejs:reinforced_stone_bricks', 2), [
 		'NHN',
 		'NBN',
 		'NFN'

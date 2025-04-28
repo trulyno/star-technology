@@ -26,12 +26,15 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 
 	if (player.getMainHandItem() == null && player.getOffHandItem() == null && player.isCrouching()) {
 		pop_up('kubejs:flint_shard', 0.25);
+		pop_up('kubejs:flint_shard', 0.25);
 		pop_up('minecraft:cookie', 0.002);
 		player.addExhaustion(.03)
 		dig();
 	};
 
 	if (item.id == 'kubejs:basic_scavenging_rod') {
+		pop_up('kubejs:flint_shard', 0.5);
+		pop_up('minecraft:flint', 0.2);
 		pop_up('kubejs:flint_shard', 0.5);
 		pop_up('minecraft:flint', 0.2);
 		pop_up('minecraft:cookie', 0.003);
@@ -41,6 +44,8 @@ BlockEvents.rightClicked('minecraft:coarse_dirt', event => {
 	};
 
 	if (item.id == 'kubejs:scavenging_rod') {
+		pop_up('kubejs:flint_shard', 0.5);
+		pop_up('minecraft:flint', 0.5);
 		pop_up('kubejs:flint_shard', 0.5);
 		pop_up('minecraft:flint', 0.5);
 		pop_up('exnihilosequentia:stone_pebble', 0.2);
@@ -251,7 +256,7 @@ ServerEvents.recipes(event => {
 		.duration(600);
 
 	event.recipes.gtceu.barrel_transformation(id('witch_water'))
-		.chancedInput('exnihilosequentia:mycelium_spores', 5000, 0)
+		.chancedInput('exnihilosequentia:mycelium_spores', 1000, 0)
 		.inputFluids('minecraft:water 1000')
 		.outputFluids('exnihilosequentia:witch_water 1000')
 		.duration(800);

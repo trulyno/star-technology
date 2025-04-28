@@ -36,7 +36,20 @@
 			description: [
 				"Only break a few, you'll need some for Fibers and to get Saplings"
 				""
-				"This guide will walk you through every step if you get stuck on what is next, you &4&lCAN Softlock&r at the start if careless so read &lCarefully"
+				"This guide will walk you through every step if you get stuck on what is next, you &4&lCAN Softlock&r at the start if careless so read &lCarefully&r"
+				""
+				"How to not Softlock with 8 Dead Bushes:"
+				""
+				"4: Sticks (4-8)"
+				"- 1 For Knife"
+				"- 1 For Saw"
+				"- 2 For Axe"
+				"3: Straw (6-9)"
+				"- 1 For Saw"
+				"- 1 for Axe"
+				"- 4 For Crafting Table"
+				"1: Sapling "
+				"- (Save for Later Dont Break)"
 			]
 			icon: "minecraft:dead_bush"
 			id: "66B461268D304ADD"
@@ -180,13 +193,9 @@
 			]
 			id: "218CF08B9647CA00"
 			tasks: [{
-				icon: "exnihilosequentia:jungle_crucible"
-				id: "37FEC0B36EF9928F"
-				observe_type: 0
-				timer: 0L
-				title: "Jungle Crucible"
-				to_observe: "exnihilosequentia:jungle_crucible"
-				type: "observation"
+				id: "4927550A96E000D5"
+				item: "exnihilosequentia:jungle_crucible"
+				type: "item"
 			}]
 			title: "Man's First Hydration"
 			x: -1.0d
@@ -461,7 +470,7 @@
 		}
 		{
 			dependencies: ["184FE341A3AD7B1E"]
-			description: ["Break Cobblestone with a &o&7Hammer&r to break it down"]
+			description: ["Break Cobblestone with a &o&7Hammer&r to break it down, keep on breaking it down if needed."]
 			id: "246E67D64A5EDF08"
 			tasks: [{
 				id: "4FD3AF06EDB6D228"
@@ -872,6 +881,7 @@
 				"4C8102F3CE4F6612"
 				"54AAB5395E468898"
 			]
+			description: ["Consider using a Mortar on the Pebbles..."]
 			hide_dependent_lines: true
 			icon: {
 				Count: 1
@@ -964,6 +974,17 @@
 			]
 			description: [""]
 			id: "3DCE9199510A9223"
+			rewards: [{
+				id: "6049B8EBEA1575C9"
+				item: {
+					Count: 1
+					id: "kubejs:basic_scavenging_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "44F5A40D6C659DD6"
@@ -1622,10 +1643,7 @@
 			y: 16.5d
 		}
 		{
-			dependencies: [
-				"65DA1BDA4D9A9B56"
-				"6C9CBCF4C1B1495E"
-			]
+			dependencies: ["65DA1BDA4D9A9B56"]
 			dependency_requirement: "one_completed"
 			id: "60F06370DBED59EB"
 			tasks: [
@@ -1876,6 +1894,17 @@
 			dependencies: ["049DA0A4C3E5EFFF"]
 			description: ["You can scavenge this btw, though your hands may not be the best"]
 			id: "6A03D191A42F4F4C"
+			rewards: [{
+				id: "5A5D888D564F463A"
+				item: {
+					Count: 1
+					id: "kubejs:scavenging_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			subtitle: "If you're playing this you'll need to do this often"
@@ -2285,7 +2314,7 @@
 			dependencies: [
 				"5F808C6A353FF66D"
 				"0C3E73B7FB53E836"
-				"6D8C2361716CEFCF"
+				"6C9CBCF4C1B1495E"
 			]
 			hide_dependent_lines: true
 			id: "410385DA7FBBD2FA"
@@ -2509,6 +2538,7 @@
 			]
 			id: "4FB04EF25E12F5FA"
 			shape: "rsquare"
+			optional: true
 			tasks: [{
 				id: "5BCFE19E51AA19BC"
 				item: "gtceu:steam_ore_factory"
@@ -2519,7 +2549,7 @@
 		}
 		{
 			dependencies: ["60FC1A065E7E0D7D"]
-			description: [""]
+			description: ["Finally Balanced Alloy Ratios"]
 			id: "5F808C6A353FF66D"
 			tasks: [{
 				id: "3F722B0226F1EC90"
@@ -2987,7 +3017,7 @@
 		{
 			dependencies: [
 				"19A0099F62CB5FF1"
-				"3149BE5A8D986443"
+				"684FAA520167CC51"
 			]
 			hide_dependency_lines: true
 			id: "4619505A5DF24551"

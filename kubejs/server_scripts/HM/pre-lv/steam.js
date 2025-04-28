@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
     SteamMachine('steam_oven',['gtceu:steam_machine_casing','gtceu:small_potin_gear','gtceu:steam_machine_casing','gtceu:bronze_firebox_casing','gtceu:lp_steam_furnace','gtceu:bronze_firebox_casing','gtceu:steam_machine_casing','gtceu:bronze_large_fluid_pipe','gtceu:steam_machine_casing']);
     SteamMachine('steam_casting_array',['gtceu:industrial_steam_casing','minecraft:glass','gtceu:industrial_steam_casing','gtceu:bronze_huge_fluid_pipe','create:basin','gtceu:bronze_huge_fluid_pipe','gtceu:industrial_steam_casing','thermal:redstone_servo','gtceu:industrial_steam_casing']);
     SteamMachine('steam_liquifier',['gtceu:industrial_steam_casing','gtceu:tempered_glass','gtceu:industrial_steam_casing','gtceu:bronze_huge_fluid_pipe','gtceu:lp_steam_extractor','gtceu:bronze_huge_fluid_pipe','gtceu:industrial_steam_casing','thermal:redstone_servo','gtceu:industrial_steam_casing']);
-    SteamMachine('steam_ore_factory',['kubejs:high_steam_machine_casing','gtceu:potin_gear','kubejs:high_steam_machine_casing','gtceu:tin_alloy_normal_fluid_pipe','gtceu:primitive_ore_factory','gtceu:tin_alloy_normal_fluid_pipe','kubejs:high_steam_machine_casing','createlowheated:basic_burner','kubejs:high_steam_machine_casing']);
+    // SteamMachine('steam_ore_factory',['kubejs:high_steam_machine_casing','gtceu:potin_gear','kubejs:high_steam_machine_casing','gtceu:tin_alloy_normal_fluid_pipe','gtceu:primitive_ore_factory','gtceu:tin_alloy_normal_fluid_pipe','kubejs:high_steam_machine_casing','createlowheated:basic_burner','kubejs:high_steam_machine_casing']);  //Disabled Until Core Fix
     SteamMachine('high_pressure_steam_hammer',['kubejs:high_steam_machine_casing','minecraft:anvil','kubejs:high_steam_machine_casing','gtceu:tin_alloy_normal_fluid_pipe','gtceu:hp_steam_forge_hammer','gtceu:tin_alloy_normal_fluid_pipe','kubejs:high_steam_machine_casing','gtceu:potin_gear','kubejs:high_steam_machine_casing']);
     SteamMachine('high_pressure_steam_sifter',['kubejs:high_steam_machine_casing','exnihilosequentia:flint_mesh','kubejs:high_steam_machine_casing','gtceu:tin_alloy_normal_fluid_pipe','create:basin','gtceu:tin_alloy_normal_fluid_pipe','kubejs:high_steam_machine_casing','thermal:redstone_servo','kubejs:high_steam_machine_casing']);
     SteamMachine('charcoal_pile_igniter',['gtceu:bronze_plate','gtceu:steel_rotor','gtceu:bronze_plate','gtceu:bronze_plate','gtceu:steam_machine_casing','gtceu:bronze_plate','minecraft:flint_and_steel','minecraft:flint_and_steel','minecraft:flint_and_steel']);
@@ -125,32 +125,33 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         Item.of(`gtceu:ulv_fluid_input`),
     ], inter, [
+        event.recipes.createPressing(inter, inter),
         event.recipes.createDeploying(inter, [inter, `minecraft:bucket`]),
         event.recipes.createDeploying(inter, [inter, `gtceu:rubber_ring`]),
         event.recipes.createPressing(inter, inter)
     ]).transitionalItem(inter).loops(1).id('start:sequenced_assembly/ulv_fluid_input');
 
-    event.recipes.create.sequenced_assembly([
-        Item.of(`gtceu:ulv_fluid_output`),
-    ], inter, [
-        event.recipes.createDeploying(inter, [inter, `gtceu:rubber_ring`]),        
-        event.recipes.createDeploying(inter, [inter, `minecraft:bucket`]),
-        event.recipes.createPressing(inter, inter)
-    ]).transitionalItem(inter).loops(1).id('start:sequenced_assembly/ulv_fluid_output');
+    event.shaped(Item.of(`gtceu:ulv_fluid_output`), [
+        'H',
+        'S'
+    ], {
+        H: `gtceu:ulv_fluid_input`,
+        S: `#forge:tools/screwdrivers`
+    });
 
-    const PrimSifter = (input,mesh,output) => {
+    const PrimSifter = (input,mesh,output,scaler) => {
     event.recipes.gtceu.primitive_sifter(id(`${output.split(':')[1]}_${mesh}`))
         .itemInputs(`16x ${input}`)
         .notConsumable(`exnihilosequentia:${mesh}_mesh`)
-        .itemOutputs(`8x ${output}`)
-        .duration(300)
-        .EUt(10);
+        .itemOutputs(`${2*scaler}x ${output}`)
+        .duration(600)
+        .EUt(30);
     }
-    PrimSifter('minecraft:sand','string','minecraft:coal');
-    PrimSifter('minecraft:sand','flint','minecraft:lapis_lazuli');
-    PrimSifter('minecraft:sand','iron','minecraft:diamond');
-    PrimSifter('exnihilosequentia:dust','string','minecraft:quartz');
-    PrimSifter('exnihilosequentia:dust','flint','minecraft:amethyst_shard');
-    PrimSifter('exnihilosequentia:dust','iron','minecraft:ender_pearl');
+    PrimSifter('minecraft:sand','string','minecraft:coal',3);
+    PrimSifter('minecraft:sand','flint','minecraft:lapis_lazuli',1.5);
+    PrimSifter('minecraft:sand','iron','minecraft:diamond',.5);
+    PrimSifter('exnihilosequentia:dust','string','minecraft:quartz',3);
+    PrimSifter('exnihilosequentia:dust','flint','minecraft:amethyst_shard',1.5);
+    PrimSifter('exnihilosequentia:dust','iron','minecraft:ender_pearl',.5);
 
 });

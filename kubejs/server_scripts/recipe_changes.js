@@ -432,7 +432,7 @@ ServerEvents.recipes(event => {
 
     //plates
     [
-        {mod: 'gtceu', metals: ['lead','silver','tin','zinc', 'brass','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron']},
+        {mod: 'gtceu', metals: ['lead','silver','tin','zinc', 'brass','bronze','red_alloy','nickel','invar','soul_infused','cobalt_brass','wrought_iron','potin']},
         {mod: 'minecraft', metals: ['iron', 'gold', 'copper']}
     ].forEach(type => {
         type.metals.forEach(foo => {
@@ -625,7 +625,7 @@ ServerEvents.recipes(event => {
     [{input: 'architects_palette:abyssaline_lamp', output: 'architects_palette:hadaline_lamp'},
         {input: 'architects_palette:abyssaline_pillar', output: 'architects_palette:hadaline_pillar'},
         {input: 'architects_palette:abyssaline_bricks', output: 'architects_palette:hadaline_bricks'},
-        {input: 'architects_palette:chiseled_abyssaline_bricks', output: 'chiseled_architects_palette:chiseled_hadaline_bricks'},
+        {input: 'architects_palette:chiseled_abyssaline_bricks', output: 'architects_palette:chiseled_hadaline_bricks'},
         {input: 'architects_palette:sunstone', output: 'architects_palette:moonstone'},
         {input: 'gtceu:steel_ingot', output: 'architects_palette:unobtanium'},
         {input: 'minecraft:granite', output: 'architects_palette:onyx'},
@@ -697,6 +697,27 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.item_application('minecraft:mycelium', ['minecraft:grass_block', 'exnihilosequentia:mycelium_spores']).id('start:item_application/mycelium');
 
+    // StarT Core Cell* Emptying
+    ['drum','fluid_cell'].forEach(container=>{
+        ['enriched_naquadah','neutronium'].forEach(type=>{
+
+            event.shapeless(Item.of(`start_core:${type}_${container}`), [
+                Item.of(`start_core:${type}_${container}`).ignoreNBT()
+            ]);
+
+        });
+    });
+
+    //NPK Re-add
+
+    event.recipes.gtceu.large_chemical_reactor(id('npk_solution'))
+        .itemInputs('15x gtceu:apatite_dust', '5x gtceu:potassium_dust')
+        .inputFluids('gtceu:sulfur_trioxide 288', 'gtceu:nitrogen 1000', 'gtceu:distilled_water 2200')
+        .circuit(24)
+        .outputFluids('gtceu:npk_solution 6400')
+        .EUt(280)
+        .duration(120);
+
     //Tom's / Chipped Fixes
 
     event.replaceInput({id: 'chipped:benches/mechanist_workbench'}, 'minecraft:tnt', 'minecraft:red_concrete');
@@ -759,32 +780,6 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
 });
 })()
 }
-
-// temporary recipes
-ServerEvents.recipes(event => {
-    if (global.packmode !== 'hard'){
-        (() => {   
-    event.shaped('create:steam_engine',[
-        ' A ',
-        ' B ',
-        ' C '
-    ], {
-        A: 'gtceu:gold_plate',
-        B: 'create:andesite_alloy',
-        C: 'minecraft:copper_block'
-    }).id('start:shaped/steam_engine_temp')
-
-    event.shaped('create:steam_whistle',[
-        ' A ',
-        ' B '
-    ], {
-        A: 'gtceu:gold_plate',
-        B: 'minecraft:copper_ingot'
-    }).id('start:shaped/steam_whistle_temp')
-
-    })()
-    }
-});
 
 ServerEvents.tags('block', event => {
     event.remove('mineable/pickaxe', [

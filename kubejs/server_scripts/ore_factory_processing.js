@@ -257,18 +257,18 @@ ServerEvents.recipes(event => {
         F: '#forge:tools/screwdrivers'
     }).id('start:shaped/primitive_ore_factory');
 
-    event.shaped(Item.of('gtceu:steam_ore_factory'), [
-        'HRS',
-        'PBR',
-        'FRS'
-    ], {
-        H: '#forge:tools/hammers',
-        R: 'gtceu:invar_rod',
-        S: 'gtceu:invar_screw',
-        P: 'gtceu:invar_plate',
-        B: 'gtceu:steam_machine_casing',
-        F: '#forge:tools/screwdrivers'
-    }).id('start:shaped/steam_ore_factory');
+    // event.shaped(Item.of('gtceu:steam_ore_factory'), [   //Disabled Until Core Fix
+    //     'HRS',
+    //     'PBR',
+    //     'FRS'
+    // ], {
+    //     H: '#forge:tools/hammers',
+    //     R: 'gtceu:invar_rod',
+    //     S: 'gtceu:invar_screw',
+    //     P: 'gtceu:invar_plate',
+    //     B: 'gtceu:steam_machine_casing',
+    //     F: '#forge:tools/screwdrivers'
+    // }).id('start:shaped/steam_ore_factory');
     })()
     }
 

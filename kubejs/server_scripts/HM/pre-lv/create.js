@@ -822,6 +822,27 @@ ServerEvents.recipes(event => {
 		A: 'create:andesite_alloy',
 	}).id('start:shaped/speedometer');
 
+	const BetterCasings = (type,primary,secondary) => {
+		event.recipes.create.mechanical_crafting(Item.of(`create:${type}_casing`, 2), [
+			'PSP',
+			'SFS',
+			'PSP'
+		], {
+			P: `gtceu:${primary}_plate`,
+			F: `gtceu:${primary}_frame`,
+			S: secondary
+		}).id(`start:mechanical_crafter/${type}_casing`);
+
+		event.recipes.gtceu.assembler(id(`${type}_casing`))
+			.itemInputs(`1x gtceu:${primary}_frame`, `4x gtceu:${primary}_plate`, `4x ${secondary}`)
+			.itemOutputs(`2x create:${type}_casing`)
+			.EUt(2)
+			.duration(50);
+	}
+	BetterCasings('andesite','wood','create:andesite_alloy');
+	BetterCasings('copper','pig_iron','create:fluid_pipe');
+	BetterCasings('brass','treated_wood','gtceu:brass_plate');
+
 	// Removals
 	const CreateRemoval = ['windmill_bearing', 'spout', 'fluid_pipe', 'chute', 'depot', 'basin', 'mechanical_mixer', 'mechanical_press', 'hand_crank', 'millstone',
 		'crushing_wheel', 'smart_chute', 'fluid_tank', 'steam_engine', 'piston_extension_pole', 'mechanical_bearing', 'clockwork_bearing', 'weighted_ejector',

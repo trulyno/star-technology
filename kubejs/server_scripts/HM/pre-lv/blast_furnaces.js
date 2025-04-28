@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
     CreateMixing('9x gtceu:potin_dust', ['6x gtceu:copper_dust','2x gtceu:tin_dust', 'gtceu:lead_dust'], 'lowheated');
     CreateMixing('2x gtceu:tin_alloy_dust', ['gtceu:iron_dust','gtceu:tin_dust'], 'lowheated');
     CreateMixing(Fluid.of('gtceu:crude_wrought_iron', 288), ['2x gtceu:pig_iron_ingot', 'gtceu:charcoal_dust'], 'superheated');
-    CreateMixing(Fluid.of('gtceu:red_alloy', 720), ['gtceu:copper_dust', '4x minecraft:redstone'], 'superheated');
+    CreateMixing(Fluid.of('gtceu:red_alloy', 144), ['gtceu:copper_dust', '4x minecraft:redstone'], 'superheated');
 
     ['brass', 'bronze', 'pig_iron', 'tin_alloy'].forEach(dust => {
 		event

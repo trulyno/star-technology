@@ -2123,7 +2123,7 @@
 				"124EDCAB18E85B9D"
 				"5324A7F20CA973C6"
 			]
-			description: ["A much needed upgrade to ore processing. It's faster, and can be automated!"]
+			description: ["Disabled Until Eta"]
 			id: "7E33792C89BA85E3"
 			optional: true
 			rewards: [{

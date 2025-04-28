@@ -80,7 +80,7 @@ StartupEvents.registry('item', event => {
 	event.create('basic_scavenging_rod')
 		.displayName('Basic Scavenging Rod')
 		.rarity('common')
-		.maxDamage(256)
+		.maxDamage(384)
 		.unstackable()
 		.texture(`kubejs:item/hm/pre-lv/basic_scavenging_rod`);
 
