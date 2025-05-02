@@ -30,9 +30,9 @@ ServerEvents.recipes(event => {
 
 	const long_rods = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
 	const double_plates = ['iron', 'copper', 'gold', 'lead', 'tin', 'bronze', 'brass', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'red_alloy'];
-	const gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel'];
-	const small_gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel'];
-	const rotors = ['iron', 'copper', 'lead', 'bronze', 'pig_iron', 'steel'];
+	const gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'potin'];
+	const small_gears = ['iron', 'lead', 'bronze', 'pig_iron', 'wrought_iron', 'cast_iron', 'steel', 'potin'];
+	const rotors = ['iron', 'copper', 'lead', 'bronze', 'pig_iron', 'steel', 'cast_iron'];
 	const springs = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel', 'red_alloy'];
 	const small_springs = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel'];
 	const wires = ['iron', 'copper', 'gold', 'lead', 'tin', 'steel', 'red_alloy'];

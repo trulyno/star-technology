@@ -36,6 +36,7 @@ ServerEvents.recipes(event => {
     });
         event.remove({id: 'minecraft:blaze_powder'});
         event.remove({id: 'gtceu:shapeless/blaze_rod_to_powder'});
+        event.remove({id: 'gtceu:extractor/extract_blaze_powder'});
         event.remove({id: 'create:crushing/blaze_rod'});
 
     //new stuff
