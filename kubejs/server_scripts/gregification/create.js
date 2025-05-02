@@ -73,4 +73,6 @@ ServerEvents.recipes(event => {
     }).id('start:shaped/precision_mechanism');
     })()
     }
+
+    event.shapeless('9x create:andesite_alloy', ['create:andesite_alloy_block']).id('start:shapeless/andesite_alloy_block_decomp');
 });
