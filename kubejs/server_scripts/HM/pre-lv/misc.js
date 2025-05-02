@@ -289,6 +289,8 @@ ServerEvents.recipes(event => {
 		F: 'minecraft:flint'
 	});
 
+	event.replaceInput({output: 'minecraft:fishing_rod'}, 'gtceu:iron_ring', 'gtceu:steel_ring')
+
 	//Mass Removals
 
 	const ThermalRemoval = ['redstone_servo', 'device_tree_extractor', 'drill_head', 'fluid_cell_frame','device_rock_gen','device_water_gen'];

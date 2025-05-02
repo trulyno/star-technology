@@ -181,7 +181,6 @@ ServerEvents.recipes(event => {
 		.EUt(4);
 
 	event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '2x minecraft:flint']).id('start:create_mixer/coarse_dirt_flint');
-	event.recipes.create.mixing('3x minecraft:coarse_dirt', ['3x minecraft:dirt', '1x minecraft:gravel']).id('start:create_mixer/coarse_dirt_gravel');
 
 	const stones = ['andesite', 'basalt', 'blackstone', 'deepslate', 'diorite', 'granite', 'tuff', 'calcite', 'dripstone']
 
